@@ -10,15 +10,47 @@
           "file": "wiki_scan.py",
           "runner": "python",
           "description": "Scans all entity files and inserts [[wiki links]] for cross-referencing",
-          "docs": "Builds a name index from every entity in engine/data, then scans all text fields for unlinked mentions of other entities. Inserts [[Name]] or [[Name|display]] syntax so the Blazor WikiText renderer can turn them into clickable hyperlinks. Uses word-boundary detection to avoid false matches inside compound words.",
           "args": [
-            { "flag": "--dry-run",      "default": true,  "desc": "Preview what would be linked without writing any files (default)" },
-            { "flag": "--apply",        "default": false, "desc": "Write [[...]] syntax back to entity JSON files" },
-            { "flag": "--interactive",  "default": false, "desc": "Prompt before each insertion; y=accept, n=skip, q=quit" },
-            { "flag": "--partial",      "default": false, "desc": "Also report partial/fuzzy matches (name inside compound word)" },
-            { "flag": "--repo REPO",    "default": null,  "desc": "Limit scan to one repo folder, e.g. --repo people" },
-            { "flag": "--min-length N", "default": 4,     "desc": "Minimum entity name length to match (avoids noise like 'AI')" },
-            { "flag": "--data-dir DIR", "default": null,  "desc": "Override engine/data path" }
+            {
+              "flag": "--dry-run",
+              "default": true,
+              "desc": "Preview what would be linked without writing any files (default)"
+            },
+            {
+              "flag": "--apply",
+              "default": false,
+              "desc": "Write [[...]] syntax back to entity JSON files"
+            },
+            {
+              "flag": "--interactive",
+              "default": false,
+              "desc": "Prompt before each insertion; y=accept, n=skip, q=quit"
+            },
+            {
+              "flag": "--partial",
+              "default": false,
+              "desc": "Also report partial/fuzzy matches (name inside compound word)"
+            },
+            {
+              "flag": "--repo REPO",
+              "default": null,
+              "desc": "Limit scan to one repo folder, e.g. --repo people"
+            },
+            {
+              "flag": "--min-length N",
+              "default": 4,
+              "desc": "Minimum entity name length to match (avoids noise like 'AI')"
+            },
+            {
+              "flag": "--data-dir DIR",
+              "default": null,
+              "desc": "Override engine/data path"
+            },
+            {
+              "flag": "--since DURATION",
+              "default": null,
+              "desc": "Only scan files modified within this duration, e.g. 2h, 30m, 1d. Bare number = minutes."
+            }
           ]
         }
       ]
@@ -32,34 +64,71 @@
           "file": "consistency_check.py",
           "runner": "python",
           "description": "Cross-entity contradiction detection using local, named-reference, and semantic strategies",
-          "docs": "Checks for worldbuilding rule violations across all entity files. Catches currency inconsistencies, broken entity references, pronoun mismatches, and semantic contradictions using three complementary strategies: local field validation, named-reference resolution, and Claude-powered semantic analysis.",
           "args": [
-            { "flag": "--repo REPO",    "default": null, "desc": "Limit check to one repo folder" },
-            { "flag": "--strategy",     "default": "all","desc": "Which strategies to run: local, named, semantic, all" },
-            { "flag": "--output FILE",  "default": null, "desc": "Write report to JSON file instead of stdout" }
+            {
+              "flag": "--repo REPO",
+              "default": null,
+              "desc": "Limit check to one repo folder"
+            },
+            {
+              "flag": "--strategy",
+              "default": "all",
+              "desc": "Which strategies to run: local, named, semantic, all"
+            },
+            {
+              "flag": "--output FILE",
+              "default": null,
+              "desc": "Write report to JSON file instead of stdout"
+            }
           ]
         },
         {
           "file": "quality_rate.py",
           "runner": "python",
           "description": "Rates generated content quality across coherence, flavor, and tone dimensions",
-          "docs": "Uses Claude to score entity descriptions across multiple quality dimensions (1-10): coherence (internal logic), flavor (worldbuilding texture), tone (neo-noir appropriateness). Flags low-scoring entities for manual review or regeneration.",
           "args": [
-            { "flag": "--repo REPO",   "default": null, "desc": "Limit to one repo folder" },
-            { "flag": "--threshold N", "default": 5,    "desc": "Flag entities scoring below N (default: 5)" },
-            { "flag": "--apply",       "default": false,"desc": "Write scores back to entity JSON" }
+            {
+              "flag": "--repo REPO",
+              "default": null,
+              "desc": "Limit to one repo folder"
+            },
+            {
+              "flag": "--threshold N",
+              "default": 5,
+              "desc": "Flag entities scoring below N (default: 5)"
+            },
+            {
+              "flag": "--apply",
+              "default": false,
+              "desc": "Write scores back to entity JSON"
+            }
           ]
         },
         {
           "file": "fact_query.py",
           "runner": "python",
           "description": "Query the facts database: statistics, flagged inconsistencies, and entity search",
-          "docs": "Interface for querying the SQLite facts database produced by the fact pipeline. Shows overall stats, lists flagged contradictions, and lets you search triples by subject entity name.",
           "args": [
-            { "flag": "--stats",          "default": false, "desc": "Show database summary statistics" },
-            { "flag": "--flagged",        "default": false, "desc": "List all flagged inconsistencies" },
-            { "flag": "--entity NAME",    "default": null,  "desc": "Show all facts for a named entity" },
-            { "flag": "--db PATH",        "default": null,  "desc": "Path to facts.db file" }
+            {
+              "flag": "--stats",
+              "default": false,
+              "desc": "Show database summary statistics"
+            },
+            {
+              "flag": "--flagged",
+              "default": false,
+              "desc": "List all flagged inconsistencies"
+            },
+            {
+              "flag": "--entity NAME",
+              "default": null,
+              "desc": "Show all facts for a named entity"
+            },
+            {
+              "flag": "--db PATH",
+              "default": null,
+              "desc": "Path to facts.db file"
+            }
           ]
         }
       ]
@@ -73,63 +142,117 @@
           "file": "run_fact_pipeline.py",
           "runner": "python",
           "description": "Master orchestrator: runs all fact pipeline phases sequentially with resume support",
-          "docs": "Runs the complete fact discovery pipeline: extract → embed → cluster → score → repair. Each phase can be skipped with --skip-* flags. Supports resume from any phase if a previous run was interrupted.",
           "args": [
-            { "flag": "--skip-extract",  "default": false, "desc": "Skip phase 1 (extraction)" },
-            { "flag": "--skip-embed",    "default": false, "desc": "Skip phase 2 (embedding)" },
-            { "flag": "--skip-cluster",  "default": false, "desc": "Skip phase 3 (clustering)" },
-            { "flag": "--skip-score",    "default": false, "desc": "Skip phase 4 (scoring)" },
-            { "flag": "--skip-repair",   "default": false, "desc": "Skip phase 5 (repair)" },
-            { "flag": "--repo REPO",     "default": null,  "desc": "Limit to one repo folder" },
-            { "flag": "--concurrency N", "default": 20,    "desc": "Max concurrent API calls" }
+            {
+              "flag": "--skip-extract",
+              "default": false,
+              "desc": "Skip phase 1 (extraction)"
+            },
+            {
+              "flag": "--skip-embed",
+              "default": false,
+              "desc": "Skip phase 2 (embedding)"
+            },
+            {
+              "flag": "--skip-cluster",
+              "default": false,
+              "desc": "Skip phase 3 (clustering)"
+            },
+            {
+              "flag": "--skip-score",
+              "default": false,
+              "desc": "Skip phase 4 (scoring)"
+            },
+            {
+              "flag": "--skip-repair",
+              "default": false,
+              "desc": "Skip phase 5 (repair)"
+            },
+            {
+              "flag": "--repo REPO",
+              "default": null,
+              "desc": "Limit to one repo folder"
+            },
+            {
+              "flag": "--concurrency N",
+              "default": 20,
+              "desc": "Max concurrent API calls"
+            }
           ]
         },
         {
           "file": "fact_extract.py",
           "runner": "python",
           "description": "Phase 1: Extracts Subject-Predicate-Object triples from entity descriptions via Claude",
-          "docs": "Calls Claude for each entity to extract atomic SPO claims from description text. Stores triples in the facts SQLite database. Supports resume — already-processed entities are skipped.",
           "args": [
-            { "flag": "--repo REPO",     "default": null, "desc": "Limit to one repo folder" },
-            { "flag": "--concurrency N", "default": 20,   "desc": "Max concurrent API calls" },
-            { "flag": "--resume",        "default": true, "desc": "Skip already-processed entities (default: on)" }
+            {
+              "flag": "--repo REPO",
+              "default": null,
+              "desc": "Limit to one repo folder"
+            },
+            {
+              "flag": "--concurrency N",
+              "default": 20,
+              "desc": "Max concurrent API calls"
+            },
+            {
+              "flag": "--resume",
+              "default": true,
+              "desc": "Skip already-processed entities (default: on)"
+            }
           ]
         },
         {
           "file": "fact_embed.py",
           "runner": "python",
           "description": "Phase 2: Converts triples to 384-dimensional sentence embeddings for similarity comparison",
-          "docs": "Uses the sentence-transformers library (no API calls) to embed each triple as a dense vector. These vectors are stored in the DB and used by fact_cluster.py to group semantically similar claims.",
           "args": [
-            { "flag": "--batch-size N", "default": 64, "desc": "Embedding batch size" }
+            {
+              "flag": "--batch-size N",
+              "default": 64,
+              "desc": "Embedding batch size"
+            }
           ]
         },
         {
           "file": "fact_cluster.py",
           "runner": "python",
           "description": "Phase 3: Groups similar triples with HDBSCAN to identify equivalent claims",
-          "docs": "Runs HDBSCAN density-based clustering on the triple embeddings to group claims that say the same thing different ways. Cluster membership is written back to the DB for use in scoring.",
           "args": [
-            { "flag": "--min-cluster-size N", "default": 3, "desc": "Minimum cluster size for HDBSCAN" }
+            {
+              "flag": "--min-cluster-size N",
+              "default": 3,
+              "desc": "Minimum cluster size for HDBSCAN"
+            }
           ]
         },
         {
           "file": "fact_score.py",
           "runner": "python",
           "description": "Phase 4: Consensus voting within clusters to determine truth confidence and flag contradictions",
-          "docs": "Within each cluster, votes on which claims are true and which contradict the majority. Assigns confidence scores (0.0-1.0) and flags contradictions for review or repair.",
           "args": [
-            { "flag": "--threshold F", "default": 0.67, "desc": "Quorum threshold for consensus (default: 0.67)" }
+            {
+              "flag": "--threshold F",
+              "default": 0.67,
+              "desc": "Quorum threshold for consensus (default: 0.67)"
+            }
           ]
         },
         {
           "file": "fact_repair.py",
           "runner": "python",
           "description": "Phase 5: Auto-fixes high-confidence errors in source JSON files",
-          "docs": "Reviews flagged contradictions with confidence above the threshold and patches the source entity JSON files. Uses Claude to generate the corrected value. Always creates a backup before modifying.",
           "args": [
-            { "flag": "--confidence F", "default": 0.9,   "desc": "Minimum confidence to auto-repair (default: 0.9)" },
-            { "flag": "--dry-run",      "default": false,  "desc": "Preview repairs without modifying files" }
+            {
+              "flag": "--confidence F",
+              "default": 0.9,
+              "desc": "Minimum confidence to auto-repair (default: 0.9)"
+            },
+            {
+              "flag": "--dry-run",
+              "default": false,
+              "desc": "Preview repairs without modifying files"
+            }
           ]
         }
       ]
@@ -143,59 +266,97 @@
           "file": "run_character_regen.py",
           "runner": "python",
           "description": "Bulk character regeneration from templates with skip and batch controls",
-          "docs": "Re-generates character entities from their template data using Claude. Supports limiting by batch size and skipping specific phases. Protected characters in SKIP_CHARACTERS are never modified.",
           "args": [
-            { "flag": "--batch N",    "default": null,  "desc": "Process only N characters" },
-            { "flag": "--skip-phase", "default": null,  "desc": "Skip specific generation phase" }
+            {
+              "flag": "--batch N",
+              "default": null,
+              "desc": "Process only N characters"
+            },
+            {
+              "flag": "--skip-phase",
+              "default": null,
+              "desc": "Skip specific generation phase"
+            }
           ]
         },
         {
           "file": "assign_tiers.py",
           "runner": "python",
-          "description": "Assigns availability tier levels to characters/equipment based on corporate location",
-          "docs": "Sets the tier field (1-5) on entities based on their associated corponation and geographic location within GLMZ. Tier 1 = street-level common, Tier 5 = ultra-rare corporate.",
+          "description": "Assigns social tier levels (1-5) to characters based on role, affiliation, and location",
           "args": [
-            { "flag": "--repo REPO",  "default": null, "desc": "Limit to one repo folder" },
-            { "flag": "--dry-run",    "default": false,"desc": "Preview assignments without writing" }
+            {
+              "flag": "--repo REPO",
+              "default": null,
+              "desc": "Limit to one repo folder"
+            },
+            {
+              "flag": "--dry-run",
+              "default": false,
+              "desc": "Preview assignments without writing"
+            }
           ]
         },
         {
           "file": "generate_descriptions.py",
           "runner": "python",
-          "description": "Generates natural-language descriptions for characters and entities",
-          "docs": "Uses Claude to produce flavor-rich prose descriptions for entities that are missing them or have placeholder text. Respects world tone guidelines (neo-noir, GLMZ-specific).",
+          "description": "Generates physical descriptions and image prompts for characters and entities",
           "args": [
-            { "flag": "--repo REPO",     "default": null, "desc": "Limit to one repo folder" },
-            { "flag": "--overwrite",     "default": false,"desc": "Re-generate even if description exists" },
-            { "flag": "--concurrency N", "default": 20,   "desc": "Max concurrent API calls" }
+            {
+              "flag": "--repo REPO",
+              "default": null,
+              "desc": "Limit to one repo folder"
+            },
+            {
+              "flag": "--overwrite",
+              "default": false,
+              "desc": "Re-generate even if description exists"
+            },
+            {
+              "flag": "--concurrency N",
+              "default": 20,
+              "desc": "Max concurrent API calls"
+            }
           ]
         },
         {
           "file": "harmonize_descriptions.py",
           "runner": "python",
-          "description": "Ensures description tone and vocabulary are consistent across related entity sets",
-          "docs": "Compares descriptions within a repo for tone consistency. Entities with outlier tone scores are flagged and optionally regenerated with a harmonizing system prompt that references the established style.",
+          "description": "Adjusts character descriptions to match genetic ancestry data",
           "args": [
-            { "flag": "--repo REPO",  "default": null,  "desc": "Repo to harmonize" },
-            { "flag": "--apply",      "default": false, "desc": "Regenerate outlier descriptions" }
+            {
+              "flag": "--repo REPO",
+              "default": null,
+              "desc": "Repo to harmonize"
+            },
+            {
+              "flag": "--apply",
+              "default": false,
+              "desc": "Regenerate outlier descriptions"
+            }
           ]
         },
         {
           "file": "generate_ancestry.py",
           "runner": "python",
-          "description": "Generates character family trees and genealogical relationships",
-          "docs": "Creates ancestry records for human characters, respecting the Ubiquitous Diaspora world rule (mixed heritage from unexpected global combinations). Non-human species in NON_HUMAN_SPECIES are skipped.",
+          "description": "Assigns three-tier genetic ancestry (regions, sub-regions, nationalities) to characters",
           "args": [
-            { "flag": "--concurrency N", "default": 10, "desc": "Max concurrent API calls" }
+            {
+              "flag": "--concurrency N",
+              "default": 10,
+              "desc": "Max concurrent API calls"
+            }
           ]
         },
         {
           "file": "generate_character_images.py",
           "runner": "python",
-          "description": "Generates character portrait descriptions for image generation pipelines",
-          "docs": "Produces visual description prompts for character portraits, organized by tier and role. Output can be fed into image generation APIs.",
+          "description": "Generates character portrait images via DALL-E 3 and OpenAI",
           "args": [
-            { "flag": "--repo REPO", "default": "people", "desc": "Character repo to process" }
+            {
+              "flag": "--repo REPO",
+              "default": "people",
+              "desc": "Character repo to process"
+            }
           ]
         }
       ]
@@ -209,35 +370,30 @@
           "file": "generate_language_documents.py",
           "runner": "python",
           "description": "Creates in-world language documentation, dialects, and linguistic artifacts",
-          "docs": "Generates formal and informal language documents for GLMZ: corporate jargon guides, street slang dictionaries, dialect studies, and linguistic drift analyses across socioeconomic tiers.",
           "args": []
         },
         {
           "file": "generate_legal_documents.py",
           "runner": "python",
           "description": "Generates corporate charters, contracts, and legal frameworks",
-          "docs": "Produces in-world legal documentation: incorporation charters, employment contracts, non-disclosure agreements, and GLMZ jurisdictional frameworks. All documents reflect the corponation sovereignty theme.",
           "args": []
         },
         {
           "file": "generate_space_elevator_documents.py",
           "runner": "python",
           "description": "Creates technical documentation for the space elevator infrastructure",
-          "docs": "Generates engineering specs, maintenance logs, access control policies, and incident reports for the GLMZ space elevator system.",
           "args": []
         },
         {
           "file": "generate_snt_documents.py",
           "runner": "python",
-          "description": "Generates world lore and Synthetic Life documentation (large batch)",
-          "docs": "Large document generator producing synthetic life research papers, behavioral studies, rights advocacy documents, and corporate ownership records for E.L.F. (Electronic Life Form) entities.",
+          "description": "Generates synthetic life research papers, rights advocacy docs, and corporate ownership records (large batch)",
           "args": []
         },
         {
           "file": "generate_new_weird_quotes.py",
           "runner": "python",
           "description": "Generates ambient flavor quotes with peculiar worldbuilding elements",
-          "docs": "Produces quotable text for the encyclopedia: overheard conversations, graffiti, advertisements, and rumor-table entries. Leans into the uncanny and strange.",
           "args": []
         }
       ]
@@ -250,31 +406,37 @@
         {
           "file": "fix_description_names.py",
           "runner": "python",
-          "description": "Corrects entity name references within description text",
-          "docs": "Scans descriptions for entity names that don't match their canonical form (case errors, old names after renames, etc.) and corrects them.",
+          "description": "Corrects stale entity name references embedded in description text",
           "args": [
-            { "flag": "--dry-run", "default": false, "desc": "Preview without writing" }
+            {
+              "flag": "--dry-run",
+              "default": false,
+              "desc": "Preview without writing"
+            }
           ]
         },
         {
           "file": "migrate_guids_and_surnames.py",
           "runner": "python",
-          "description": "Bulk migration of GUIDs and surname assignments across entity files",
-          "docs": "Handles structural migrations: assigns new ULIDs where entities have placeholder IDs, and assigns surnames to characters missing them using the world's Ubiquitous Diaspora surname pool.",
+          "description": "Bulk migration: converts name-based related_entities references to GUIDs and assigns surnames",
           "args": [
-            { "flag": "--dry-run",    "default": false, "desc": "Preview without writing" },
-            { "flag": "--repo REPO",  "default": null,  "desc": "Limit to one repo folder" }
+            {
+              "flag": "--dry-run",
+              "default": false,
+              "desc": "Preview without writing"
+            },
+            {
+              "flag": "--repo REPO",
+              "default": null,
+              "desc": "Limit to one repo folder"
+            }
           ]
         },
         {
           "file": "create_corps.py",
           "runner": "python",
-          "description": "Creates corponation entities with structure, hierarchy, and operations",
-          "docs": "Generates new corporate entity files with full structure: sector, hierarchy, subsidiaries, key personnel, and cultural flavor. Each corp gets a unique ULID.",
-          "args": [
-            { "flag": "--count N",    "default": 10, "desc": "Number of corponations to create" },
-            { "flag": "--sector SEC", "default": null,"desc": "Restrict to a specific industry sector" }
-          ]
+          "description": "Creates two specific hardcoded corponation entities with structure and operations",
+          "args": []
         }
       ]
     },
@@ -283,11 +445,36 @@
       "name": "World Generation (JS)",
       "type": "js",
       "scripts": [
-        { "file": "generate_world.js",        "runner": "node", "description": "Master world generation script", "docs": "Compiles broad worldbuilding data across all categories in one pass. Run this to bootstrap a fresh world.", "args": [] },
-        { "file": "generate_world_gaps.js",   "runner": "node", "description": "Identifies and fills coverage gaps in the world", "docs": "Analyzes existing data for missing entity types and generates filler content.", "args": [] },
-        { "file": "generate_lived_world.js",  "runner": "node", "description": "Creates rich environmental and daily-life details (273KB)", "docs": "Generates the texture of everyday life in GLMZ: routines, ambient events, environmental details.", "args": [] },
-        { "file": "generate_final_21.js",     "runner": "node", "description": "Final generation pass for completion", "docs": "Runs a final sweep to fill remaining world gaps.", "args": [] },
-        { "file": "generate_outside_glmz.js", "runner": "node", "description": "Generates entities and locations outside GLMZ", "docs": "Creates the outside world: flooded Missouri, lost Kentucky, GLMZ as open prison from outside perspective.", "args": [] }
+        {
+          "file": "generate_world.js",
+          "runner": "node",
+          "description": "Master bootstrap: generates broad worldbuilding data across all categories in one pass",
+          "args": []
+        },
+        {
+          "file": "generate_world_gaps.js",
+          "runner": "node",
+          "description": "Identifies sparse repos and generates targeted filler content",
+          "args": []
+        },
+        {
+          "file": "generate_lived_world.js",
+          "runner": "node",
+          "description": "Creates rich environmental and daily-life detail documents (273KB output)",
+          "args": []
+        },
+        {
+          "file": "generate_final_21.js",
+          "runner": "node",
+          "description": "Final sweep to fill remaining world gaps after primary generation",
+          "args": []
+        },
+        {
+          "file": "generate_outside_glmz.js",
+          "runner": "node",
+          "description": "Generates entities and locations outside GLMZ — the flooded world beyond the corridor",
+          "args": []
+        }
       ]
     },
     {
@@ -295,15 +482,60 @@
       "name": "Characters (JS)",
       "type": "js",
       "scripts": [
-        { "file": "generate_runners.js",       "runner": "node", "description": "Creates freelancer/runner character entities", "docs": "Generates street-level runner characters with full profiles.", "args": [] },
-        { "file": "generate_civilians.js",     "runner": "node", "description": "Creates civilian NPC character entities", "docs": "Generates ordinary citizens across all tier levels.", "args": [] },
-        { "file": "generate_pis.js",           "runner": "node", "description": "Creates private investigator characters", "docs": "Generates PI characters with case history and contacts.", "args": [] },
-        { "file": "generate_serial_killers.js","runner": "node", "description": "Creates antagonist character entities", "docs": "Generates villain/antagonist profiles.", "args": [] },
-        { "file": "generate_elfs.js",          "runner": "node", "description": "Creates E.L.F. (Electronic Life Form) entities", "docs": "Generates synthetic humanoid entities with full psychology.", "args": [] },
-        { "file": "generate_archetypes.js",    "runner": "node", "description": "Generates character archetypes with behavioral traits", "docs": "Creates archetype templates that drive character generation.", "args": [] },
-        { "file": "generate_archetypes_1.js",  "runner": "node", "description": "Archetype generation batch 1", "docs": "", "args": [] },
-        { "file": "generate_archetypes_2.js",  "runner": "node", "description": "Archetype generation batch 2", "docs": "", "args": [] },
-        { "file": "generate_lab_specimens.js", "runner": "node", "description": "Creates experimental subject entities", "docs": "Generates lab specimen entities for the corporate bio-research sector.", "args": [] }
+        {
+          "file": "generate_runners.js",
+          "runner": "node",
+          "description": "Creates freelancer/runner operative character entities",
+          "args": []
+        },
+        {
+          "file": "generate_civilians.js",
+          "runner": "node",
+          "description": "Creates 1,024 non-runner civilian NPC character entities",
+          "args": []
+        },
+        {
+          "file": "generate_pis.js",
+          "runner": "node",
+          "description": "Creates private investigator characters with case history and contacts",
+          "args": []
+        },
+        {
+          "file": "generate_serial_killers.js",
+          "runner": "node",
+          "description": "Creates antagonist and criminal-profile character entities",
+          "args": []
+        },
+        {
+          "file": "generate_elfs.js",
+          "runner": "node",
+          "description": "Creates E.L.F. (Electronic Life Form) synthetic humanoid entities",
+          "args": []
+        },
+        {
+          "file": "generate_archetypes.js",
+          "runner": "node",
+          "description": "Writes hardcoded character archetypes covering combat, social, and moral behavioral profiles",
+          "args": []
+        },
+        {
+          "file": "generate_archetypes_1.js",
+          "runner": "node",
+          "description": "Archetype generation batch 1 — API-based supplement to hardcoded archetypes",
+          "args": []
+        },
+        {
+          "file": "generate_archetypes_2.js",
+          "runner": "node",
+          "description": "Archetype generation batch 2",
+          "args": []
+        },
+        {
+          "file": "generate_lab_specimens.js",
+          "runner": "node",
+          "description": "Creates experimental subject and research specimen entities",
+          "args": []
+        }
       ]
     },
     {
@@ -311,12 +543,42 @@
       "name": "Factions & Corps (JS)",
       "type": "js",
       "scripts": [
-        { "file": "generate_factions.js",                   "runner": "node", "description": "Creates faction/organization entities (338KB)", "docs": "Generates all major factions with structure, ideology, and membership.", "args": [] },
-        { "file": "generate_factions_expand.js",            "runner": "node", "description": "Expands faction data with additional detail", "docs": "", "args": [] },
-        { "file": "generate_faction_members.js",            "runner": "node", "description": "Assigns characters to factions", "docs": "", "args": [] },
-        { "file": "generate_subsidiaries.js",               "runner": "node", "description": "Creates corporate subsidiary entities", "docs": "", "args": [] },
-        { "file": "populate_subsidiary_descriptions.js",    "runner": "node", "description": "Adds descriptions to subsidiary entities", "docs": "", "args": [] },
-        { "file": "rebrand_through_subsidiaries.js",        "runner": "node", "description": "Updates entity brands through corporate structures", "docs": "", "args": [] }
+        {
+          "file": "generate_factions.js",
+          "runner": "node",
+          "description": "Creates faction/organization entities from hardcoded data (338KB)",
+          "args": []
+        },
+        {
+          "file": "generate_factions_expand.js",
+          "runner": "node",
+          "description": "Expands the faction roster via API with minor and regional organizations",
+          "args": []
+        },
+        {
+          "file": "generate_faction_members.js",
+          "runner": "node",
+          "description": "Generates character profiles linked to specific existing factions",
+          "args": []
+        },
+        {
+          "file": "generate_subsidiaries.js",
+          "runner": "node",
+          "description": "Creates corporate subsidiary entities linked to parent corponations",
+          "args": []
+        },
+        {
+          "file": "populate_subsidiary_descriptions.js",
+          "runner": "node",
+          "description": "Adds prose descriptions to subsidiaries created without them",
+          "args": []
+        },
+        {
+          "file": "rebrand_through_subsidiaries.js",
+          "runner": "node",
+          "description": "Updates entity branding to reflect corporate ownership changes through subsidiary structures",
+          "args": []
+        }
       ]
     },
     {
@@ -324,17 +586,72 @@
       "name": "Weapons (JS)",
       "type": "js",
       "scripts": [
-        { "file": "generate_firearms_1.js",         "runner": "node", "description": "Firearm entities batch 1 (255KB)", "docs": "", "args": [] },
-        { "file": "generate_firearms_2.js",         "runner": "node", "description": "Firearm entities batch 2 (259KB)", "docs": "", "args": [] },
-        { "file": "generate_firearms_3.js",         "runner": "node", "description": "Firearm entities batch 3 (224KB)", "docs": "", "args": [] },
-        { "file": "generate_melee.js",              "runner": "node", "description": "Melee weapon entities (212KB)", "docs": "", "args": [] },
-        { "file": "generate_sprays_and_rods.js",    "runner": "node", "description": "Spray-type and rod weapons", "docs": "", "args": [] },
-        { "file": "generate_weaponry_expand.js",    "runner": "node", "description": "Expanded weaponry generation", "docs": "", "args": [] },
-        { "file": "generate_more_weapons.js",       "runner": "node", "description": "Bulk weapon entity generation", "docs": "", "args": [] },
-        { "file": "generate_more_weapons_supplement.js", "runner": "node", "description": "Supplementary weapon generation", "docs": "", "args": [] },
-        { "file": "generate_everyday_weapons.js",   "runner": "node", "description": "Common civilian weapons and self-defense items", "docs": "", "args": [] },
-        { "file": "generate_selfdefense.js",        "runner": "node", "description": "Non-lethal self-defense equipment", "docs": "", "args": [] },
-        { "file": "tag_weapon_lethality.js",        "runner": "node", "description": "Tags weapons with lethality levels", "docs": "", "args": [] }
+        {
+          "file": "generate_firearms_1.js",
+          "runner": "node",
+          "description": "Firearm entities batch 1: pistols, revolvers, and handguns (255KB)",
+          "args": []
+        },
+        {
+          "file": "generate_firearms_2.js",
+          "runner": "node",
+          "description": "Firearm entities batch 2: rifles, shotguns, and SMGs (259KB)",
+          "args": []
+        },
+        {
+          "file": "generate_firearms_3.js",
+          "runner": "node",
+          "description": "Firearm entities batch 3: heavy weapons and specialist firearms (224KB)",
+          "args": []
+        },
+        {
+          "file": "generate_melee.js",
+          "runner": "node",
+          "description": "Melee weapon entities via Claude API (212KB)",
+          "args": []
+        },
+        {
+          "file": "generate_sprays_and_rods.js",
+          "runner": "node",
+          "description": "Spray-type, gas-delivery, and rod/staff weapon entities",
+          "args": []
+        },
+        {
+          "file": "generate_weaponry_expand.js",
+          "runner": "node",
+          "description": "Expanded weaponry generation covering underrepresented weapon types",
+          "args": []
+        },
+        {
+          "file": "generate_more_weapons.js",
+          "runner": "node",
+          "description": "Bulk weapon entity generation via Claude API",
+          "args": []
+        },
+        {
+          "file": "generate_more_weapons_supplement.js",
+          "runner": "node",
+          "description": "Supplementary weapon generation for tier and category gaps",
+          "args": []
+        },
+        {
+          "file": "generate_everyday_weapons.js",
+          "runner": "node",
+          "description": "Common civilian weapons and improvised self-defense items",
+          "args": []
+        },
+        {
+          "file": "generate_selfdefense.js",
+          "runner": "node",
+          "description": "Non-lethal and self-defense equipment and training items",
+          "args": []
+        },
+        {
+          "file": "tag_weapon_lethality.js",
+          "runner": "node",
+          "description": "Post-generation pass: tags weapons with lethality tier levels",
+          "args": []
+        }
       ]
     },
     {
@@ -342,16 +659,77 @@
       "name": "Technology & Cyberware (JS)",
       "type": "js",
       "scripts": [
-        { "file": "generate_technology_docs.js",         "runner": "node", "description": "Technology documentation and device entities (161KB)", "docs": "", "args": [] },
-        { "file": "generate_technology_expand.js",       "runner": "node", "description": "Expanded technology entity coverage (165KB)", "docs": "", "args": [] },
-        { "file": "generate_more_tech.js",               "runner": "node", "description": "Additional technology generation (145KB)", "docs": "", "args": [] },
-        { "file": "generate_more_tech_supplement.js",    "runner": "node", "description": "Technology supplement (84KB)", "docs": "", "args": [] },
-        { "file": "generate_bci_2.js",                   "runner": "node", "description": "Brain-Computer Interface technology entities", "docs": "", "args": [] },
-        { "file": "generate_bci_batch.js",               "runner": "node", "description": "BCI technology batch generation", "docs": "", "args": [] },
-        { "file": "generate_cyberlimbs_2.js",            "runner": "node", "description": "Cybernetic limb and prosthetic entities", "docs": "", "args": [] },
-        { "file": "generate_lifestyle_cyberware.js",     "runner": "node", "description": "Lifestyle-focused cyberware enhancements", "docs": "", "args": [] },
-        { "file": "generate_geneware.js",                "runner": "node", "description": "Genetic modification entities (270KB — largest)", "docs": "", "args": [] },
-        { "file": "generate_pharmaceuticals.js",         "runner": "node", "description": "Drug and medication entities", "docs": "", "args": [] }
+        {
+          "file": "generate_technology_docs.js",
+          "runner": "node",
+          "description": "Technology device entities and documentation (161KB)",
+          "args": []
+        },
+        {
+          "file": "generate_technology_expand.js",
+          "runner": "node",
+          "description": "Expanded technology entity coverage (165KB)",
+          "args": []
+        },
+        {
+          "file": "generate_more_tech.js",
+          "runner": "node",
+          "description": "Additional technology items covering specialized categories (145KB)",
+          "args": []
+        },
+        {
+          "file": "generate_more_tech_supplement.js",
+          "runner": "node",
+          "description": "Technology supplement for remaining coverage gaps (84KB)",
+          "args": []
+        },
+        {
+          "file": "generate_bci_2.js",
+          "runner": "node",
+          "description": "Brain-Computer Interface technology entities — second BCI generation pass",
+          "args": []
+        },
+        {
+          "file": "generate_bci_batch.js",
+          "runner": "node",
+          "description": "Parameterized BCI generator — takes subcategory and count as arguments",
+          "args": [
+            {
+              "flag": "subcategory",
+              "default": null,
+              "desc": "BCI subcategory to generate (positional arg)"
+            },
+            {
+              "flag": "count",
+              "default": 10,
+              "desc": "Number of entities to generate"
+            }
+          ]
+        },
+        {
+          "file": "generate_cyberlimbs_2.js",
+          "runner": "node",
+          "description": "Cybernetic limb and prosthetic entities — second generation pass",
+          "args": []
+        },
+        {
+          "file": "generate_lifestyle_cyberware.js",
+          "runner": "node",
+          "description": "Lifestyle-focused cyberware: cosmetic, social, and comfort augmentations",
+          "args": []
+        },
+        {
+          "file": "generate_geneware.js",
+          "runner": "node",
+          "description": "Genetic modification entities (270KB — largest single generator)",
+          "args": []
+        },
+        {
+          "file": "generate_pharmaceuticals.js",
+          "runner": "node",
+          "description": "Drug and pharmaceutical entities across all legal categories",
+          "args": []
+        }
       ]
     },
     {
@@ -359,17 +737,72 @@
       "name": "Synthetic Life & Automata (JS)",
       "type": "js",
       "scripts": [
-        { "file": "generate_synthetics.js",       "runner": "node", "description": "Synthetic life form entities", "docs": "", "args": [] },
-        { "file": "generate_more_synths.js",      "runner": "node", "description": "Additional synthetic creature generation (158KB)", "docs": "", "args": [] },
-        { "file": "generate_substrates.js",       "runner": "node", "description": "Substrate and biological material entities", "docs": "", "args": [] },
-        { "file": "generate_biomass_network.js",  "runner": "node", "description": "Biomass and biological network infrastructure", "docs": "", "args": [] },
-        { "file": "generate_creatures.js",        "runner": "node", "description": "Creature and animal entities (46KB)", "docs": "", "args": [] },
-        { "file": "generate_urban_wildlife.js",   "runner": "node", "description": "Urban animal and creature entities", "docs": "", "args": [] },
-        { "file": "generate_automata.js",         "runner": "node", "description": "Robot and automated entity definitions (207KB)", "docs": "", "args": [] },
-        { "file": "generate_automata_behemoths.js","runner": "node","description": "Large-scale automata and Behemoth entities (84KB)", "docs": "", "args": [] },
-        { "file": "generate_automata_domestic.js","runner": "node", "description": "Household and domestic robot entities (154KB)", "docs": "", "args": [] },
-        { "file": "generate_automata_expand.js",  "runner": "node", "description": "Expanded automata generation (50KB)", "docs": "", "args": [] },
-        { "file": "generate_scary_automata.js",   "runner": "node", "description": "Ominous and threatening automata entities", "docs": "", "args": [] }
+        {
+          "file": "generate_synthetics.js",
+          "runner": "node",
+          "description": "Synthetic life form entities — first generation pass",
+          "args": []
+        },
+        {
+          "file": "generate_more_synths.js",
+          "runner": "node",
+          "description": "Additional synthetic creature generation (158KB)",
+          "args": []
+        },
+        {
+          "file": "generate_substrates.js",
+          "runner": "node",
+          "description": "Biological substrate and growth medium entities",
+          "args": []
+        },
+        {
+          "file": "generate_biomass_network.js",
+          "runner": "node",
+          "description": "Documents describing the Biomass ecological hazard network",
+          "args": []
+        },
+        {
+          "file": "generate_creatures.js",
+          "runner": "node",
+          "description": "Biological creature and animal entities (46KB)",
+          "args": []
+        },
+        {
+          "file": "generate_urban_wildlife.js",
+          "runner": "node",
+          "description": "Urban-adapted animal and creature entities specific to GLMZ districts",
+          "args": []
+        },
+        {
+          "file": "generate_automata.js",
+          "runner": "node",
+          "description": "Robot and automated entity definitions from hardcoded data (207KB)",
+          "args": []
+        },
+        {
+          "file": "generate_automata_behemoths.js",
+          "runner": "node",
+          "description": "Iowan Behemoth and large-scale autonomous machine entities (84KB)",
+          "args": []
+        },
+        {
+          "file": "generate_automata_domestic.js",
+          "runner": "node",
+          "description": "Household and domestic robot entities (154KB)",
+          "args": []
+        },
+        {
+          "file": "generate_automata_expand.js",
+          "runner": "node",
+          "description": "Expanded automata generation for underrepresented machine categories (50KB)",
+          "args": []
+        },
+        {
+          "file": "generate_scary_automata.js",
+          "runner": "node",
+          "description": "Ominous, threatening, and horror-register automata entities",
+          "args": []
+        }
       ]
     },
     {
@@ -377,21 +810,96 @@
       "name": "Goods & Materials (JS)",
       "type": "js",
       "scripts": [
-        { "file": "generate_equipment_expand.js",         "runner": "node", "description": "General equipment expansion", "docs": "", "args": [] },
-        { "file": "generate_more_equipment.js",           "runner": "node", "description": "Bulk equipment generation (126KB)", "docs": "", "args": [] },
-        { "file": "generate_more_equipment_final.js",     "runner": "node", "description": "Final equipment batch", "docs": "", "args": [] },
-        { "file": "generate_more_equipment_supplement.js","runner": "node", "description": "Equipment supplement (40KB)", "docs": "", "args": [] },
-        { "file": "generate_more_goods.js",               "runner": "node", "description": "Consumer goods and products (261KB)", "docs": "", "args": [] },
-        { "file": "generate_consumer_goods.js",           "runner": "node", "description": "Consumer product entities", "docs": "", "args": [] },
-        { "file": "generate_materials.js",                "runner": "node", "description": "Material and resource entities (168KB)", "docs": "", "args": [] },
-        { "file": "generate_transportation.js",           "runner": "node", "description": "Vehicle and transportation entities", "docs": "", "args": [] },
-        { "file": "generate_apparel_1.js",                "runner": "node", "description": "Apparel batch 1", "docs": "", "args": [] },
-        { "file": "generate_apparel_2.js",                "runner": "node", "description": "Apparel batch 2", "docs": "", "args": [] },
-        { "file": "generate_apparel_4.js",                "runner": "node", "description": "Apparel batch 4", "docs": "", "args": [] },
-        { "file": "generate_apparel_5.js",                "runner": "node", "description": "Apparel batch 5", "docs": "", "args": [] },
-        { "file": "generate_apparel_final.js",            "runner": "node", "description": "Final apparel generation (177KB)", "docs": "", "args": [] },
-        { "file": "generate_apparel_final_2.js",          "runner": "node", "description": "Additional final apparel batch", "docs": "", "args": [] },
-        { "file": "generate_apparel_gap.js",              "runner": "node", "description": "Fills gaps in apparel coverage", "docs": "", "args": [] }
+        {
+          "file": "generate_equipment_expand.js",
+          "runner": "node",
+          "description": "General equipment expansion pass",
+          "args": []
+        },
+        {
+          "file": "generate_more_equipment.js",
+          "runner": "node",
+          "description": "Bulk equipment generation via Claude API (126KB)",
+          "args": []
+        },
+        {
+          "file": "generate_more_equipment_final.js",
+          "runner": "node",
+          "description": "Final equipment batch targeting remaining coverage gaps",
+          "args": []
+        },
+        {
+          "file": "generate_more_equipment_supplement.js",
+          "runner": "node",
+          "description": "Equipment supplement for niche and specialty items (40KB)",
+          "args": []
+        },
+        {
+          "file": "generate_more_goods.js",
+          "runner": "node",
+          "description": "Bulk consumer goods and trade products (261KB)",
+          "args": []
+        },
+        {
+          "file": "generate_consumer_goods.js",
+          "runner": "node",
+          "description": "Consumer product entities: food, clothing, and household items",
+          "args": []
+        },
+        {
+          "file": "generate_materials.js",
+          "runner": "node",
+          "description": "Material and resource entities: metals, composites, and fabrics (168KB)",
+          "args": []
+        },
+        {
+          "file": "generate_transportation.js",
+          "runner": "node",
+          "description": "Vehicle and transportation entities across all modes",
+          "args": []
+        },
+        {
+          "file": "generate_apparel_1.js",
+          "runner": "node",
+          "description": "Apparel batch 1: footwear and legwear (200 items, batch 10, resume-safe)",
+          "args": []
+        },
+        {
+          "file": "generate_apparel_2.js",
+          "runner": "node",
+          "description": "Apparel batch 2: torso and hand clothing",
+          "args": []
+        },
+        {
+          "file": "generate_apparel_4.js",
+          "runner": "node",
+          "description": "Apparel batch 4: additional garment categories",
+          "args": []
+        },
+        {
+          "file": "generate_apparel_5.js",
+          "runner": "node",
+          "description": "Apparel batch 5: final category gap-filling",
+          "args": []
+        },
+        {
+          "file": "generate_apparel_final.js",
+          "runner": "node",
+          "description": "Final apparel pass using LLMVoting to select best candidate per item (177KB)",
+          "args": []
+        },
+        {
+          "file": "generate_apparel_final_2.js",
+          "runner": "node",
+          "description": "Additional final apparel batch with revised voting parameters",
+          "args": []
+        },
+        {
+          "file": "generate_apparel_gap.js",
+          "runner": "node",
+          "description": "Fills apparel gaps for underrepresented tiers and categories",
+          "args": []
+        }
       ]
     },
     {
@@ -399,16 +907,66 @@
       "name": "Locations (JS)",
       "type": "js",
       "scripts": [
-        { "file": "generate_geography.js",          "runner": "node", "description": "Geographic regions, terrain, and world map data", "docs": "", "args": [] },
-        { "file": "generate_50_states.js",          "runner": "node", "description": "Data for 50 US states within the world", "docs": "", "args": [] },
-        { "file": "generate_canada_docs.js",        "runner": "node", "description": "Canadian location and entity documentation", "docs": "", "args": [] },
-        { "file": "generate_canadians_fine.js",     "runner": "node", "description": "Canadian character/entity refinement", "docs": "", "args": [] },
-        { "file": "generate_lost_neighborhoods.js", "runner": "node", "description": "Hidden and secret neighborhood districts", "docs": "", "args": [] },
-        { "file": "generate_restaurants.js",        "runner": "node", "description": "Dining establishment entities with faction affiliations", "docs": "", "args": [] },
-        { "file": "generate_nightclubs.js",         "runner": "node", "description": "Nightlife venue entities", "docs": "", "args": [] },
-        { "file": "generate_nightlife.js",          "runner": "node", "description": "Bulk nightlife and entertainment venues", "docs": "", "args": [] },
-        { "file": "generate_glmz_register.js",      "runner": "node", "description": "Registry and administration entities for GLMZ (73KB)", "docs": "", "args": [] },
-        { "file": "standardize_locations.js",       "runner": "node", "description": "Normalizes location references across all entities", "docs": "", "args": [] }
+        {
+          "file": "generate_geography.js",
+          "runner": "node",
+          "description": "Geographic regions, terrain types, and world map data",
+          "args": []
+        },
+        {
+          "file": "generate_50_states.js",
+          "runner": "node",
+          "description": "Generates a document describing post-collapse US regional status",
+          "args": []
+        },
+        {
+          "file": "generate_canada_docs.js",
+          "runner": "node",
+          "description": "Canadian location documentation and regional entities",
+          "args": []
+        },
+        {
+          "file": "generate_canadians_fine.js",
+          "runner": "node",
+          "description": "Canadian character profile generation",
+          "args": []
+        },
+        {
+          "file": "generate_lost_neighborhoods.js",
+          "runner": "node",
+          "description": "Abandoned, hidden, and ghost neighborhood district entities",
+          "args": []
+        },
+        {
+          "file": "generate_restaurants.js",
+          "runner": "node",
+          "description": "Dining establishment entities with faction affiliations and tier placement",
+          "args": []
+        },
+        {
+          "file": "generate_nightclubs.js",
+          "runner": "node",
+          "description": "Nightlife venue entities with faction and tier context",
+          "args": []
+        },
+        {
+          "file": "generate_nightlife.js",
+          "runner": "node",
+          "description": "Bulk nightlife and entertainment venue generation",
+          "args": []
+        },
+        {
+          "file": "generate_glmz_register.js",
+          "runner": "node",
+          "description": "Official registry and administration entities for GLMZ institutions (73KB)",
+          "args": []
+        },
+        {
+          "file": "standardize_locations.js",
+          "runner": "node",
+          "description": "Normalizes location references across all entities for consistency",
+          "args": []
+        }
       ]
     },
     {
@@ -416,24 +974,114 @@
       "name": "Documents & Lore (JS)",
       "type": "js",
       "scripts": [
-        { "file": "generate_documents_expand.js",   "runner": "node", "description": "Expanded document entity library (126KB)", "docs": "", "args": [] },
-        { "file": "generate_more_docs.js",          "runner": "node", "description": "Bulk document generation (276KB)", "docs": "", "args": [] },
-        { "file": "generate_more_docs_2.js",        "runner": "node", "description": "Document batch 2 (105KB)", "docs": "", "args": [] },
-        { "file": "generate_more_docs_3.js",        "runner": "node", "description": "Document batch 3 (32KB)", "docs": "", "args": [] },
-        { "file": "generate_quanta_docs.js",        "runner": "node", "description": "In-world documentation about Quanta currency", "docs": "", "args": [] },
-        { "file": "generate_news.js",               "runner": "node", "description": "News and media entity creation", "docs": "", "args": [] },
-        { "file": "generate_quotes.js",             "runner": "node", "description": "Quotable flavor text snippets", "docs": "", "args": [] },
-        { "file": "generate_fringe_rumors.js",      "runner": "node", "description": "Rumor and hearsay text elements", "docs": "", "args": [] },
-        { "file": "generate_contracts_2.js",        "runner": "node", "description": "Job and contract mission entities", "docs": "", "args": [] },
-        { "file": "generate_ghost_analog.js",       "runner": "node", "description": "Ghost/AI consciousness entities (147KB)", "docs": "", "args": [] },
-        { "file": "generate_ghost_weight.js",       "runner": "node", "description": "Ghost identity weight and significance entities", "docs": "", "args": [] },
-        { "file": "generate_children_paradox.js",   "runner": "node", "description": "Entities around reproductive and generational themes", "docs": "", "args": [] },
-        { "file": "generate_clone_industry.js",     "runner": "node", "description": "Cloning and replication industry entities", "docs": "", "args": [] },
-        { "file": "generate_anomalies_1.js",        "runner": "node", "description": "Mysterious phenomena entities batch 1 (132KB)", "docs": "", "args": [] },
-        { "file": "generate_anomalies_2.js",        "runner": "node", "description": "Anomalies batch 2 (114KB)", "docs": "", "args": [] },
-        { "file": "generate_inexplicable.js",       "runner": "node", "description": "Deeply unexplained world elements (171KB)", "docs": "", "args": [] },
-        { "file": "generate_paranormal.js",         "runner": "node", "description": "Paranormal phenomena entities", "docs": "", "args": [] },
-        { "file": "generate_literary_anomalies.js", "runner": "node", "description": "Thematic and narrative anomalies (67KB)", "docs": "", "args": [] }
+        {
+          "file": "generate_documents_expand.js",
+          "runner": "node",
+          "description": "Expanded document entity library from hardcoded data, skip-existing (126KB)",
+          "args": []
+        },
+        {
+          "file": "generate_more_docs.js",
+          "runner": "node",
+          "description": "Bulk document generation via Claude API (276KB — largest document batch)",
+          "args": []
+        },
+        {
+          "file": "generate_more_docs_2.js",
+          "runner": "node",
+          "description": "Document batch 2 (105KB)",
+          "args": []
+        },
+        {
+          "file": "generate_more_docs_3.js",
+          "runner": "node",
+          "description": "Document batch 3 — smallest and most targeted (32KB)",
+          "args": []
+        },
+        {
+          "file": "generate_quanta_docs.js",
+          "runner": "node",
+          "description": "In-world documents about the Quanta (Φ) currency system",
+          "args": []
+        },
+        {
+          "file": "generate_news.js",
+          "runner": "node",
+          "description": "News article and media entity generation (batch 5, 3 parallel calls, resume-safe)",
+          "args": []
+        },
+        {
+          "file": "generate_quotes.js",
+          "runner": "node",
+          "description": "Quotable flavor text snippets for world texture",
+          "args": []
+        },
+        {
+          "file": "generate_fringe_rumors.js",
+          "runner": "node",
+          "description": "Rumor, conspiracy, and hearsay document generation",
+          "args": []
+        },
+        {
+          "file": "generate_contracts_2.js",
+          "runner": "node",
+          "description": "Job contract and runner mission document entities",
+          "args": []
+        },
+        {
+          "file": "generate_ghost_analog.js",
+          "runner": "node",
+          "description": "Ghost/AI consciousness and digital entity documents (147KB)",
+          "args": []
+        },
+        {
+          "file": "generate_ghost_weight.js",
+          "runner": "node",
+          "description": "Ghost identity weight and consciousness significance documents",
+          "args": []
+        },
+        {
+          "file": "generate_children_paradox.js",
+          "runner": "node",
+          "description": "Ethical paradox documents around children and reproduction in GLMZ",
+          "args": []
+        },
+        {
+          "file": "generate_clone_industry.js",
+          "runner": "node",
+          "description": "Cloning and biological replication industry documents",
+          "args": []
+        },
+        {
+          "file": "generate_anomalies_1.js",
+          "runner": "node",
+          "description": "Mysterious phenomena entities from hardcoded descriptions (132KB)",
+          "args": []
+        },
+        {
+          "file": "generate_anomalies_2.js",
+          "runner": "node",
+          "description": "Additional anomaly documents via Claude API (114KB)",
+          "args": []
+        },
+        {
+          "file": "generate_inexplicable.js",
+          "runner": "node",
+          "description": "Deeply unexplained world elements in the inexplicable register (171KB)",
+          "args": []
+        },
+        {
+          "file": "generate_paranormal.js",
+          "runner": "node",
+          "description": "Paranormal phenomena entities — supernatural and fringe-science documents",
+          "args": []
+        },
+        {
+          "file": "generate_literary_anomalies.js",
+          "runner": "node",
+          "description": "Anomalies with literary and narrative structure (67KB)",
+          "args": []
+        }
       ]
     },
     {
@@ -441,14 +1089,65 @@
       "name": "Entertainment & Culture (JS)",
       "type": "js",
       "scripts": [
-        { "file": "generate_entertainment_1.js",        "runner": "node", "description": "Entertainment entities batch 1", "docs": "", "args": [] },
-        { "file": "generate_entertainment_2.js",        "runner": "node", "description": "Entertainment batch 2", "docs": "", "args": [] },
-        { "file": "generate_entertainment_3.js",        "runner": "node", "description": "Entertainment batch 3", "docs": "", "args": [] },
-        { "file": "generate_entertainment_4.js",        "runner": "node", "description": "Entertainment batch 4", "docs": "", "args": [] },
-        { "file": "generate_entertainment_5.js",        "runner": "node", "description": "Entertainment batch 5", "docs": "", "args": [] },
-        { "file": "generate_freelancer_culture.js",     "runner": "node", "description": "Freelancer and runner culture artifacts (52KB)", "docs": "", "args": [] },
-        { "file": "generate_freelancer_journalist.js",  "runner": "node", "description": "Journalist character entities (42KB)", "docs": "", "args": [] },
-        { "file": "generate_repo_expansion.js",         "runner": "node", "description": "Generic repository and entity expansion logic", "docs": "", "args": [] }
+        {
+          "file": "generate_entertainment_1.js",
+          "runner": "node",
+          "description": "Entertainment entities batch 1: venues and broadcast content",
+          "args": []
+        },
+        {
+          "file": "generate_entertainment_2.js",
+          "runner": "node",
+          "description": "Entertainment batch 2: sports, gaming, and competitive content",
+          "args": []
+        },
+        {
+          "file": "generate_entertainment_3.js",
+          "runner": "node",
+          "description": "Entertainment batch 3: music, art, and cultural production",
+          "args": []
+        },
+        {
+          "file": "generate_entertainment_4.js",
+          "runner": "node",
+          "description": "Entertainment batch 4: underground, illegal, and gray-market entertainment",
+          "args": []
+        },
+        {
+          "file": "generate_entertainment_5.js",
+          "runner": "node",
+          "description": "Entertainment batch 5: final entertainment coverage pass",
+          "args": []
+        },
+        {
+          "file": "generate_freelancer_culture.js",
+          "runner": "node",
+          "description": "Freelancer and runner culture artifacts and social documents (52KB)",
+          "args": []
+        },
+        {
+          "file": "generate_freelancer_journalist.js",
+          "runner": "node",
+          "description": "Freelance journalist character entities (42KB)",
+          "args": []
+        },
+        {
+          "file": "generate_repo_expansion.js",
+          "runner": "node",
+          "description": "Generic parameterized expansion: generates for any repo via CLI arguments",
+          "args": [
+            {
+              "flag": "repo",
+              "default": null,
+              "desc": "Target repo folder name (positional arg)"
+            },
+            {
+              "flag": "count",
+              "default": 10,
+              "desc": "Number of entities to generate"
+            }
+          ]
+        }
       ]
     },
     {
@@ -456,16 +1155,66 @@
       "name": "Data Utilities (JS)",
       "type": "js",
       "scripts": [
-        { "file": "cleanup_tags.js",             "runner": "node", "description": "Standardizes and removes invalid tags across entity types", "docs": "Processes weapons, cyberware, equipment, characters, and more. Removes duplicate tags, normalizes casing, and strips invalid entries.", "args": [] },
-        { "file": "fix_entity_tags.js",          "runner": "node", "description": "Corrects malformed or invalid entity tags", "docs": "", "args": [] },
-        { "file": "fix_phi_to_quanta.js",        "runner": "node", "description": "Corrects currency references from Phi to Quanta (Φ)", "docs": "One-time migration: replaces old Φ currency symbol with the correct QUANTA references throughout all entity descriptions.", "args": [] },
-        { "file": "add_firearms_to_characters.js","runner": "node", "description": "Assigns weapons from the weaponry database to characters", "docs": "", "args": [] },
-        { "file": "add_tags_to_documents.js",    "runner": "node", "description": "Batch-adds semantic tags to document entities", "docs": "", "args": [] },
-        { "file": "add_vehicle_tags.js",         "runner": "node", "description": "Tags transportation entities with category metadata", "docs": "", "args": [] },
-        { "file": "add_visual_fields.js",        "runner": "node", "description": "Adds visual representation fields (colors, icons) to entities", "docs": "", "args": [] },
-        { "file": "refactor_underscore.js",      "runner": "node", "description": "Refactors underscore-delimited field names to camelCase", "docs": "", "args": [] },
-        { "file": "cross_reference_pass.js",     "runner": "node", "description": "Cross-references entities and checks for broken links", "docs": "Validates that ID references in entity files point to existing entities. Reports broken refs.", "args": [] },
-        { "file": "extract_places.js",           "runner": "node", "description": "Extracts and indexes place and location data", "docs": "", "args": [] }
+        {
+          "file": "cleanup_tags.js",
+          "runner": "node",
+          "description": "Validates and removes unsupported tags across 24 data directories",
+          "args": []
+        },
+        {
+          "file": "fix_entity_tags.js",
+          "runner": "node",
+          "description": "Adds missing category tags and normalizes all tags in people and synthetics repos",
+          "args": []
+        },
+        {
+          "file": "fix_phi_to_quanta.js",
+          "runner": "node",
+          "description": "One-time migration: corrects old Phi/phi currency references to Quanta throughout all entity files",
+          "args": []
+        },
+        {
+          "file": "add_firearms_to_characters.js",
+          "runner": "node",
+          "description": "Assigns tier-appropriate weapons from the weaponry database to character entities",
+          "args": []
+        },
+        {
+          "file": "add_tags_to_documents.js",
+          "runner": "node",
+          "description": "Batch-adds semantic tags to document entities based on keyword pattern matching",
+          "args": []
+        },
+        {
+          "file": "add_vehicle_tags.js",
+          "runner": "node",
+          "description": "Infers and adds vehicle-type, propulsion, and domain tags to transportation entries",
+          "args": []
+        },
+        {
+          "file": "add_visual_fields.js",
+          "runner": "node",
+          "description": "Adds physical_description and visual_prompt fields to equipment, weapons, and apparel via Claude API",
+          "args": []
+        },
+        {
+          "file": "refactor_underscore.js",
+          "runner": "node",
+          "description": "Converts underscore-delimited field names to camelCase across entity files",
+          "args": []
+        },
+        {
+          "file": "cross_reference_pass.js",
+          "runner": "node",
+          "description": "Populates related_entities by finding entity name mentions in description text",
+          "args": []
+        },
+        {
+          "file": "extract_places.js",
+          "runner": "node",
+          "description": "Creates Place entries for location mentions not yet in the places repo",
+          "args": []
+        }
       ]
     }
   ]

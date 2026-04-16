@@ -52,6 +52,70 @@ $itemIndex = 0
 
 function Clamp($v, $min, $max) { [Math]::Max($min, [Math]::Min($max, $v)) }
 
+function Write-Wrapped($text, $maxWidth, $indent, $color) {
+    $words = ($text -split '\s+') | Where-Object { $_ -ne '' }
+    $line  = ''
+    foreach ($w in $words) {
+        $candidate = if ($line) { "$line $w" } else { $w }
+        if ($candidate.Length -le $maxWidth) {
+            $line = $candidate
+        } else {
+            if ($line) { Write-Host "$indent$line" -ForegroundColor $color }
+            $line = $w
+        }
+    }
+    if ($line) { Write-Host "$indent$line" -ForegroundColor $color }
+}
+
+# ---- Extract doc header from script file ------------------------------------
+function Get-ScriptDocs($s, $cat) {
+    $subDir = if ($cat.type -eq "python") { "py" } else { "js" }
+    $path   = Join-Path (Join-Path $ScriptDir $subDir) $s.file
+    if (-not (Test-Path $path)) { return "" }
+
+    $lines = Get-Content $path -ErrorAction SilentlyContinue
+    if (-not $lines) { return "" }
+
+    if ($cat.type -eq "python") {
+        # Extract text between the opening """ and closing """
+        $inDoc   = $false
+        $docLines = [System.Collections.Generic.List[string]]::new()
+        foreach ($line in $lines) {
+            if (-not $inDoc) {
+                if ($line -match '^"""') {
+                    $inDoc = $true
+                    $rest  = $line -replace '^"""', ''
+                    if ($rest -match '"""') {
+                        return ($rest -replace '""".*', '').Trim()  # single-line docstring
+                    }
+                    if ($rest.Trim()) { $docLines.Add($rest.Trim()) }
+                }
+            } else {
+                if ($line -match '"""') {
+                    $before = ($line -replace '""".*', '').Trim()
+                    if ($before) { $docLines.Add($before) }
+                    break
+                }
+                $docLines.Add($line)
+            }
+        }
+        return ($docLines -join "`n").Trim()
+    } else {
+        # JS: collect the leading // comment block
+        $docLines = [System.Collections.Generic.List[string]]::new()
+        foreach ($line in $lines) {
+            if ($line -match '^\s*//') {
+                $docLines.Add(($line -replace '^\s*//', '').Trim())
+            } elseif ($line.Trim() -eq '') {
+                continue
+            } else {
+                break
+            }
+        }
+        return ($docLines -join "`n").Trim()
+    }
+}
+
 $HR = "-" * 76
 
 # ---- Shared chrome ----------------------------------------------------------
@@ -156,6 +220,12 @@ function Render-Scripts {
         Write-Host "  $($sel.file)" -ForegroundColor $CActive
         Write-Host "  $($sel.description)" -ForegroundColor $CDesc
 
+        $docs = Get-ScriptDocs $sel $cat
+        if (-not [string]::IsNullOrWhiteSpace($docs)) {
+            Write-Host ""
+            Write-Wrapped $docs 72 "  " $CDim
+        }
+
         if ($sel.PSObject.Properties['args'] -and $sel.args.Count -gt 0) {
             Write-Host ""
             Write-Host "  ARGS:" -ForegroundColor $CKey
@@ -181,8 +251,9 @@ function Show-Docs($s, $cat) {
     Write-Host "  $($s.description)" -ForegroundColor $CNormal
     Write-Host ""
 
-    if ($s.PSObject.Properties['docs'] -and -not [string]::IsNullOrWhiteSpace($s.docs)) {
-        Write-Host $s.docs -ForegroundColor $CDesc
+    $docs = Get-ScriptDocs $s $cat
+    if (-not [string]::IsNullOrWhiteSpace($docs)) {
+        Write-Host $docs -ForegroundColor $CDesc
         Write-Host ""
     }
 
