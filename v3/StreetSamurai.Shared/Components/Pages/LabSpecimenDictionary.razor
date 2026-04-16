@@ -10,7 +10,7 @@
             <FilterBar AllTags="allTags" @bind-Filter="filter" SelectedTags="selectedTags" SelectedTagsChanged="OnTagsChanged" />
         </div>
         <div class="dict-items">
-            @foreach (var s in PagedItems)
+            @foreach (var s in SortedItems)
             {
                 <div class="list-item text-light @(editing?.Name == s.Name ? "active" : "")" @onclick="() => Edit(s)">
                     <div class="fw-bold small">@s.Name</div>
@@ -18,7 +18,6 @@
                 </div>
             }
         </div>
-        <PaginationBar CurrentPage="currentPage" TotalPages="TotalPages" OnPageChanged="p => currentPage = p" />
     </div>
 
     <div class="dict-editor">
@@ -67,7 +66,7 @@
     private List<(string name, int count)> allTags = [];
     private HashSet<string> selectedTags = [];
 
-    private IEnumerable<LabSpecimenData> FilteredItems
+    private List<LabSpecimenData> FilteredItems
     {
         get
         {
@@ -76,14 +75,10 @@
                 result = result.Where(s => s.Name.Contains(filter, StringComparison.OrdinalIgnoreCase));
             if (selectedTags.Count > 0)
                 result = result.Where(s => selectedTags.All(t => s.Tags.Contains(t)));
-            return result;
+            return result.ToList();
         }
     }
-
-    private int currentPage = 1;
-    private const int PageSize = 100;
-    private IEnumerable<LabSpecimenData> PagedItems { get { var f = FilteredItems.ToList(); var mp = Math.Max(1, (int)Math.Ceiling(f.Count / (double)PageSize)); if (currentPage > mp) currentPage = mp; return f.Skip((currentPage - 1) * PageSize).Take(PageSize); } }
-    private int TotalPages => Math.Max(1, (int)Math.Ceiling((double)FilteredItems.Count() / PageSize));
+    private List<LabSpecimenData> SortedItems => FilteredItems.OrderBy(x => x.Name).ToList();
 
     protected override void OnInitialized()
     {
@@ -101,7 +96,7 @@
     private void RebuildTags() => allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList();
     private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
     private void AddNew() { editing = new LabSpecimenData(); isNew = true; confirmDelete = false; aliasInput = ""; locationsInput = ""; }
-    private void Edit(LabSpecimenData s) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_specimens", s.Id); editing = s; originalName = s.Name; isNew = false; confirmDelete = false; aliasInput = string.Join(", ", s.Aliases); locationsInput = string.Join(", ", s.KnownLocations); }
+    private void Edit(LabSpecimenData s) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_specimens", s.Id); editing = s; originalName = s.Name; isNew = false; confirmDelete = false; aliasInput = string.Join(", ", s.Aliases); locationsInput = string.Join(", ", s.KnownLocations); if (!Nav.Uri.Contains("id=" + s.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + s.Id, forceLoad: false); }
 
     private void SaveEdit()
     {

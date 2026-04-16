@@ -57,9 +57,9 @@ public class DiRegistrationTests
     public void AllRepos_RegisteredAsExportable()
     {
         var exportables = sp.GetServices<IExportableRepository>().ToList();
-        // Should have at least 22 exportable repos
-        Assert.That(exportables.Count, Is.GreaterThanOrEqualTo(22),
-            $"Expected 22+ exportable repos, got {exportables.Count}: {string.Join(", ", exportables.Select(r => r.RepoName))}");
+        // Should have at least 25 exportable repos (added LabSpecimen, FlyoverEntity, Psionic)
+        Assert.That(exportables.Count, Is.GreaterThanOrEqualTo(25),
+            $"Expected 25+ exportable repos, got {exportables.Count}: {string.Join(", ", exportables.Select(r => r.RepoName))}");
     }
 
     [TestCase(typeof(CharacterRepository))]
@@ -84,9 +84,54 @@ public class DiRegistrationTests
     [TestCase(typeof(ContractRepository))]
     [TestCase(typeof(WorldbuildingDocRepository))]
     [TestCase(typeof(VocabularyRepository))]
+    [TestCase(typeof(LabSpecimenRepository))]
+    [TestCase(typeof(FlyoverEntityRepository))]
+    [TestCase(typeof(PsionicRepository))]
     public void Repository_IsRegistered(Type repoType)
     {
         var repo = sp.GetService(repoType);
         Assert.That(repo, Is.Not.Null, $"{repoType.Name} should be registered in DI");
+    }
+
+    [Test]
+    public void LabSpecimenRepository_IsExportable()
+    {
+        var exportables = sp.GetServices<IExportableRepository>();
+        Assert.That(exportables.Any(r => r.RepoName.Contains("lab", StringComparison.OrdinalIgnoreCase)));
+    }
+
+    [Test]
+    public void FlyoverEntityRepository_IsExportable()
+    {
+        var exportables = sp.GetServices<IExportableRepository>();
+        Assert.That(exportables.Any(r => r.RepoName.Contains("flyover", StringComparison.OrdinalIgnoreCase)));
+    }
+
+    [Test]
+    public void PsionicRepository_IsExportable()
+    {
+        var exportables = sp.GetServices<IExportableRepository>();
+        Assert.That(exportables.Any(r => r.RepoName.Contains("psionic", StringComparison.OrdinalIgnoreCase)));
+    }
+
+    [Test]
+    public void MediaService_IsRegistered()
+    {
+        var svc = sp.GetService<MediaService>();
+        Assert.That(svc, Is.Not.Null);
+    }
+
+    [Test]
+    public void ProfileService_IsRegistered()
+    {
+        var svc = sp.GetService<ProfileService>();
+        Assert.That(svc, Is.Not.Null);
+    }
+
+    [Test]
+    public void PasswordResetService_IsRegistered()
+    {
+        var svc = sp.GetService<PasswordResetService>();
+        Assert.That(svc, Is.Not.Null);
     }
 }

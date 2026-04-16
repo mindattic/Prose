@@ -241,6 +241,73 @@ public class AuthServiceTests
     // Password policy
     // ──────────────────────────────────────────────────────
 
+    // ──────────────────────────────────────────────────────
+    // GetPasswordError — returns message instead of throwing
+    // ──────────────────────────────────────────────────────
+
+    [Test]
+    public void GetPasswordError_ValidPassword_ReturnsNull()
+    {
+        Assert.That(AuthService.GetPasswordError("Secure-Pass-123!"), Is.Null);
+    }
+
+    [Test]
+    public void GetPasswordError_EmptyPassword_ReturnsError()
+    {
+        Assert.That(AuthService.GetPasswordError(""), Is.Not.Null);
+    }
+
+    [Test]
+    public void GetPasswordError_TooShort_ReturnsError()
+    {
+        Assert.That(AuthService.GetPasswordError("Ab1!567"), Is.Not.Null);
+    }
+
+    [Test]
+    public void GetPasswordError_TooLong_ReturnsError()
+    {
+        var longPass = new string('A', 68) + "b1!@a";
+        Assert.That(AuthService.GetPasswordError(longPass), Is.Not.Null);
+    }
+
+    [Test]
+    public void GetPasswordError_MissingUppercase_ReturnsError()
+    {
+        // All lowercase + digit + special
+        Assert.That(AuthService.GetPasswordError("secure-pass-123!"), Is.Not.Null);
+    }
+
+    [Test]
+    public void GetPasswordError_MissingLowercase_ReturnsError()
+    {
+        Assert.That(AuthService.GetPasswordError("SECURE-PASS-123!"), Is.Not.Null);
+    }
+
+    [Test]
+    public void GetPasswordError_MissingDigit_ReturnsError()
+    {
+        Assert.That(AuthService.GetPasswordError("Secure-Pass-Word!"), Is.Not.Null);
+    }
+
+    [Test]
+    public void GetPasswordError_MissingSpecialChar_ReturnsError()
+    {
+        Assert.That(AuthService.GetPasswordError("SecurePass123A"), Is.Not.Null);
+    }
+
+    [Test]
+    public void GetPasswordError_AllRulesMet_ReturnsNull()
+    {
+        // Upper + lower + digit + special, 8+ chars
+        Assert.That(AuthService.GetPasswordError("Abcd12!@"), Is.Null);
+    }
+
+    [Test]
+    public void GetPasswordError_InvalidChars_ReturnsError()
+    {
+        Assert.That(AuthService.GetPasswordError("Secure\0Pass1!"), Is.Not.Null);
+    }
+
     [Test]
     public void RejectsPasswordShorterThan8Characters()
     {

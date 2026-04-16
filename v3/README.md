@@ -4,7 +4,7 @@
 
 A cyberpunk narrative engine for literary fiction set in Meridian 88 -- the Great Lakes Metropolitan Zone, year 2200. A continuous 500km urban sprawl along the entire western Lake Michigan shoreline extending into Lake Superior and across the Canadian border, housing 100 million+ people in a tiered society where corponations (corporate nation-states) have replaced governments, and freelancers survive in the gaps between corporate territories.
 
-The system generates prose through a psychology-driven "facet" system -- six competing psychological voices per character that activate based on narrative context. Built on .NET 10 with dual deployment targets: Blazor Server (web) and MAUI (desktop), sharing a common component library.
+The system generates prose through a psychology-driven "facet" system -- six competing psychological voices per character that activate based on narrative context. Built on .NET 10 as a Blazor Server web application.
 
 This is not a chatbot. It is a structured writing tool with a rich HTML editor, autonomous story generation, persistent world state, and a living relationship graph. The AI generates and refines text. You control what stays and what gets rewritten.
 
@@ -19,7 +19,6 @@ v3/
   StreetSamurai.Core/          Business logic, services, models. No UI. (45 services, 22 models)
   StreetSamurai.Shared/        All Razor pages and components shared by both hosts.
   StreetSamurai.Blazor/        Blazor Server web host (.NET 10).
-  StreetSamurai.MAUI/          .NET MAUI desktop host.
   StreetSamurai.UnitTests/     200 tests across 17 test classes.
   generate_world.js            Node.js world content generation pipeline.
   RebuildCanon/                Legacy canon migration tooling.
@@ -32,7 +31,7 @@ v3/
 - Microsoft.Extensions.DependencyInjection.Abstractions 10.0.5
 - Microsoft.Extensions.Http 10.0.5 -- HttpClient factory
 
-Both hosts call `services.AddStreetSamuraiServices()` and receive the identical singleton service graph. Both hosts are kept in sync: routes, CSS, JS, and imports.
+The Blazor host calls `services.AddStreetSamuraiServices()` to register the singleton service graph.
 
 ### Architecture Patterns
 
@@ -41,7 +40,7 @@ Both hosts call `services.AddStreetSamuraiServices()` and receive the identical 
 - **Interface-backed core services** -- `IDatabaseService`, `IWorldGraphService`, and `IStoryDirectorService` interfaces enable mocking and test isolation. Registered as forwarding singletons alongside their concrete implementations.
 - **Structured error logging** -- All catch blocks log warnings via Serilog with context (file path, entity name, operation) before falling back to default behavior. No silent exception swallowing.
 - **Configurable timestamp format** -- Log files and UI timestamps use a user-selected format from `SettingsService.TimestampFormats`, stored as a .NET format string with example-based dropdown labels.
-- **CSS sync** -- Both Blazor and MAUI hosts share identical `app.css` files. Button icon spacing handled globally via `.btn > i.bi:not(:only-child) { margin-right: 6px; }`.
+- **CSS** -- Button icon spacing handled globally via `.btn > i.bi:not(:only-child) { margin-right: 6px; }`.
 
 ---
 
@@ -138,7 +137,7 @@ Repository save events fire `OnItemSaved`, which triggers automatic relationship
 
 ## Service Architecture
 
-All services are registered via `ServiceCollectionExtensions.AddStreetSamuraiServices()`. Both Blazor and MAUI hosts call this single method.
+All services are registered via `ServiceCollectionExtensions.AddStreetSamuraiServices()`. The Blazor host calls this single method.
 
 ### Startup and Eager Loading
 
@@ -1114,7 +1113,7 @@ Every NPC generated for contracts or encounters is saved as a full character. No
 ```
                     +-------------------+
                     |   UI Pages        |
-                    |  (Blazor/MAUI)    |
+                    |  (Blazor)         |
                     +--------+----------+
                              |
               +--------------+--------------+

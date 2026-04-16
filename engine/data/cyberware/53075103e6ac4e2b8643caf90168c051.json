@@ -1,0 +1,68 @@
+{
+  "id": "53075103e6ac4e2b8643caf90168c051",
+  "name": "NeoCortex Program Atlas Array",
+  "brand_name": "[[NeoCortex Industries|5d2d26e03fc6e6b9f6a32b60dfceb9ef]]",
+  "product_name": "NeoCortex Program Atlas Array",
+  "type": "cyberware",
+  "aliases": [
+    "Atlas Array",
+    "the Array",
+    "NCI-PAA-32K"
+  ],
+  "category": "neural",
+  "body_location": "cranial — full brain surface",
+  "description": "The Program Atlas Array is a full-cortex high-density electrode mesh developed by [[NeoCortex Industries|5d2d26e03fc6e6b9f6a32b60dfceb9ef]] under a classified research program that has never been publicly acknowledged. The Array lays 32,768 recording and stimulation electrodes across the entire brain surface via 256 biocompatible flex-circuit threads, achieving approximately eight times the electrode density of the NovaMind Apex — Tessera's most advanced consumer product. The device does not replace neural tissue; it maps, amplifies, and occasionally redirects it.\n\nAt full calibration, the Array provides processing speed and reaction time in the top 0.1% of recorded human performance. Pattern recognition, threat prediction, and motor coordination improvements are so pronounced that standard military aptitude testing cannot benchmark them. The Array also provides fragmentary access to passive sensory data streams — residual neural echo from the 256 threads creates an intermittent awareness of environmental data outside normal human perception. This side effect was not designed. NeoCortex considers it a consequence worth managing.\n\nThe Array was never manufactured for general installation. All known units were installed on non-consensual test subjects in [[NeoCortex Industries|5d2d26e03fc6e6b9f6a32b60dfceb9ef]] facilities between 2188 and 2196, as part of the Neural Development Program's Phase IV: Pediatric Cortical Plasticity. The research premise was that adolescent neuroplasticity allows the Array to integrate more completely than adult installation permits. The research premise was correct. The integration depth also means the Array cannot be removed without catastrophic neural damage.\n\nLong-term degradation is a known characteristic. The firmware — a proprietary NeoCortex operating system that has no public update pathway — develops instability patterns that manifest as micro-seizures, fragmented perception windows, and involuntary sensory bleed. Units installed in 2194 are now exhibiting Stage 3 degradation. NeoCortex's internal documentation suggests Stage 4 is terminal.\n\nThe Array also carries something that no other Tessera product contains: residual neural patterns from previous test subjects. The 32,768 electrode threads record at such depth that fragments of the prior occupant's cognitive patterns persist in the mesh itself — accessible as intrusive memories, emotional echoes, and occasionally as functional skill transfer. The ethical implications were documented in internal NeoCortex reports and suppressed.",
+  "manufacturer": "[[NeoCortex Industries|5d2d26e03fc6e6b9f6a32b60dfceb9ef]] (classified)",
+  "tier_availability": "Non-commercial — black project only",
+  "legality": "Does not exist (officially)",
+  "installation_requirements": "General anesthesia; craniotomy for thread placement; 6–8 hour surgical procedure; specialized NeoCortex firmware initialization required post-installation. Removal is not possible without fatal neural damage.",
+  "rejection_risk": "Low in pediatric installation. Adult installation has 40% catastrophic rejection rate. All known successful long-term installations are subjects implanted before age 18.",
+  "maintenance": "Requires firmware updates via encrypted NeoCortex relay — updates ceased in 2196 when the program was 'restructured'. Units installed before 2196 are running on degrading static firmware with no support pathway.",
+  "specifications": "{\"electrode_count\":\"32,768 distributed surface electrodes\",\"thread_count\":\"256 biocompatible flex-circuit threads\",\"electrode_density\":\"~8x NovaMind Apex benchmark\",\"coverage\":\"Full cortical surface\",\"recording_resolution\":\"Single-neuron fidelity at 40kHz\",\"stimulation_capability\":\"Precision micro-stimulation, 0.1μA resolution\",\"signal_latency\":\"0.3ms motor-to-command\",\"power_draw\":\"Passive induction, 0.8W continuous\",\"firmware\":\"NCI-OS v4.1 (last update 2196, no patch pathway)\",\"estimated_lifespan\":\"10–15 years at stable calibration; degrades from Stage 1 to Stage 4 over 20–30 years\"}",
+  "side_effects": [
+    "Micro-seizures (Stage 3+): 48–72 hour intervals, duration 3–8 seconds, not always externally visible",
+    "Fragmented perception windows: involuntary sensory data intrusion from Array's passive monitoring threads",
+    "Residual neural echo: intrusive memories and emotional fragments from prior test subjects embedded in electrode mesh",
+    "Cognitive overclock bleed: processing speed occasionally exceeds voluntary control, manifesting as involuntary threat-mapping or prediction cascade",
+    "Sleep architecture disruption: the Array partially remains active during REM, influencing dream content and occasionally recording it",
+    "Firmware instability (Stage 3+): increasingly unpredictable micro-stimulation events; some subjects report involuntary motor activation"
+  ],
+  "cultural_context": "The Atlas Array does not exist in any public catalog. Tessera has never acknowledged it. [[NeoCortex Industries|5d2d26e03fc6e6b9f6a32b60dfceb9ef]] is not listed in any regulatory filing. In [[GLMZ|019d6143a92773acabfa37c77f9cff8d]]'s underground medical community, a handful of surgeons who have encountered Array subjects recognize the electrode signature on a scan — the thread pattern is unmistakable at the right resolution — and know better than to document what they found. Among fixers and street-level operators who move in the space between corponation secrets and freelancer survival, the Program Atlas Array is legend: a piece of hardware that makes the person wearing it genuinely dangerous and genuinely dying, with no way to stop either process.",
+  "known_users": [
+    "Kyle Ellen Corbin-Vasik (Subject 7, implanted 2194, age 15)"
+  ],
+  "story_hooks": [
+    "A NeoCortex Industries researcher who worked on Phase IV — Pediatric Cortical Plasticity is trying to reach the Array subjects before Stage 4 kills them. She claims to have a firmware patch that can stabilize the degradation. The patch requires a physical connection to a NeoCortex relay station that was decommissioned in 2197 and is now inside a Tessera Sovereign Zone.",
+    "The residual neural patterns in Kyle's Array are becoming coherent. One of the prior subjects is assembling enough self to communicate — not clearly, not reliably, but with increasing persistence. The fragments suggest the prior subject knew something about what happens at Stage 4 that NeoCortex's documentation does not include.",
+    "A Tessera Veil operative is tracking Array subjects. They are not trying to recover the hardware. The Array's recording depth means the subjects' long-term memory contains fragments of NeoCortex's classified research — memories they do not know they have.",
+    "An underground surgeon in the outer wards has found a way to stabilize Stage 3 degradation using black-market electrode suppression therapy. It works for six months at a time. The materials to synthesize another treatment require a component that is only manufactured inside a Tessera sovereign zone."
+  ],
+  "street_price": "Not for sale",
+  "licensed_price": "Not for sale",
+  "tags": [
+    "neural",
+    "cyberware",
+    "experimental",
+    "classified",
+    "tessera",
+    "neocortex",
+    "bci",
+    "high-tier",
+    "degrading",
+    "corporate",
+    "black-project",
+    "memory",
+    "control"
+  ],
+  "parent_corponation": "[[NeoCortex Industries|5d2d26e03fc6e6b9f6a32b60dfceb9ef]] (Tessera subsidiary)",
+  "related_entities": [
+    "Kyle Ellen Corbin-Vasik",
+    "NeoCortex Industries",
+    "Tessera Corponation"
+  ],
+  "known_users[0]": "[[Kyle Ellen Corbin-Vasik|019d6143a648787696880f6d38d70075]] (Subject 7, implanted 2194, age 15)",
+  "story_hooks[0]": "A [[NeoCortex Industries|5d2d26e03fc6e6b9f6a32b60dfceb9ef]] researcher who worked on Phase IV — Pediatric Cortical Plasticity is trying to reach the Array subjects before Stage 4 kills them. She claims to have a firmware patch that can stabilize the degradation. The patch requires a physical connection to a NeoCortex relay station that was decommissioned in 2197 and is now inside a Tessera Sovereign Zone.",
+  "related_entities[0]": "[[Kyle Ellen Corbin-Vasik|019d6143a648787696880f6d38d70075]]",
+  "related_entities[1]": "[[NeoCortex Industries|5d2d26e03fc6e6b9f6a32b60dfceb9ef]]",
+  "related_entities[2]": "[[Tessera Corponation|019d6143a7b4745d979dcc36c3dcf32f]]"
+}

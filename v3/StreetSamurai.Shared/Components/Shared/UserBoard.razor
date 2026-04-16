@@ -6,7 +6,7 @@
 @inject NavigationManager Nav
 @implements IDisposable
 
-@if (!Access.IsReadOnlyMode && Access.CurrentUserRole != "Guest")
+@if (!Access.IsReadOnlyMode && Access.CurrentUserRole != "Visitor")
 {
     <div class="ub-wrap">
         @if (open)

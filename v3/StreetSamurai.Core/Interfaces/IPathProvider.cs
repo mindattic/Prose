@@ -2,7 +2,7 @@ namespace StreetSamurai.Core.Interfaces;
 
 /// <summary>
 /// Resolves paths to canon directories. Allows different implementations
-/// for MAUI (bundled resources) vs Blazor (file system) vs tests (temp dirs).
+/// for Blazor (file system) vs tests (temp dirs).
 /// </summary>
 public interface IPathProvider
 {

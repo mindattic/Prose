@@ -1,8 +1,8 @@
 namespace StreetSamurai.Core.Interfaces;
 
 /// <summary>
-/// Abstracts write-access checks so Shared components work in both Blazor (auth-based)
-/// and MAUI (always full access) without referencing authentication types directly.
+/// Abstracts write-access checks so Shared components work across Blazor (auth-based)
+/// and test contexts without referencing authentication types directly.
 /// </summary>
 public interface IWriteAccessProvider
 {

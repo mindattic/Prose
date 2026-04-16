@@ -380,4 +380,112 @@ public class GlobalSearchServiceTests
         Assert.That(results, Has.Count.EqualTo(1));
         Assert.That(results[0].Type, Is.EqualTo("news"));
     }
+
+    // ── New repos: LabSpecimen, FlyoverEntity, Psionic ───────────────────────
+
+    [Test]
+    public void Search_LabSpecimen_FindsByName()
+    {
+        labSpecimens.Save(new LabSpecimenData { Name = "Spliced Wraith", Classification = "Chimera" });
+
+        var results = svc.Search("Spliced Wraith");
+
+        Assert.That(results, Has.Count.EqualTo(1));
+        Assert.That(results[0].Type, Is.EqualTo("lab-specimen"));
+    }
+
+    [Test]
+    public void Search_LabSpecimen_FindsInBody()
+    {
+        labSpecimens.Save(new LabSpecimenData {
+            Name = "Unit Omega",
+            PhysicalDescription = "Six-limbed with acid secretion."
+        });
+
+        var results = svc.Search("acid secretion");
+
+        Assert.That(results, Has.Count.EqualTo(1));
+        Assert.That(results[0].Name, Is.EqualTo("Unit Omega"));
+    }
+
+    [Test]
+    public void Search_FlyoverEntity_FindsByName()
+    {
+        flyoverEntities.Save(new FlyoverEntityData { Name = "Cloud Pilgrim", Classification = "Ascended" });
+
+        var results = svc.Search("Cloud Pilgrim");
+
+        Assert.That(results, Has.Count.EqualTo(1));
+        Assert.That(results[0].Type, Is.EqualTo("flyover-entity"));
+    }
+
+    [Test]
+    public void Search_Psionic_FindsByName()
+    {
+        psionics.Save(new PsionicData { Name = "Neuroshear", Classification = "Combat" });
+
+        var results = svc.Search("Neuroshear");
+
+        Assert.That(results, Has.Count.EqualTo(1));
+        Assert.That(results[0].Type, Is.EqualTo("psionic"));
+    }
+
+    // ── SearchTiered ──────────────────────────────────────────────────────────
+
+    [Test]
+    public void SearchTiered_EmptyQuery_ReturnsBothEmpty()
+    {
+        chars.Save(new CharacterData { Name = "Vex" });
+        var (t1, t2) = svc.SearchTiered("");
+        Assert.That(t1, Is.Empty);
+        Assert.That(t2, Is.Empty);
+    }
+
+    [Test]
+    public void SearchTiered_NameMatch_AppearsInTier1()
+    {
+        chars.Save(new CharacterData { Name = "Axel Rain", Description = "Irrelevant body text." });
+
+        var (t1, t2) = svc.SearchTiered("Axel Rain");
+
+        Assert.That(t1.Any(r => r.Name == "Axel Rain"), Is.True);
+        Assert.That(t2.Any(r => r.Name == "Axel Rain"), Is.False);
+    }
+
+    [Test]
+    public void SearchTiered_BodyOnlyMatch_AppearsInTier2()
+    {
+        chars.Save(new CharacterData {
+            Name = "Random Person",
+            Description = "Expert in quantum entanglement protocols."
+        });
+
+        var (t1, t2) = svc.SearchTiered("quantum entanglement");
+
+        Assert.That(t1.Any(r => r.Name == "Random Person"), Is.False);
+        Assert.That(t2.Any(r => r.Name == "Random Person"), Is.True);
+    }
+
+    [Test]
+    public void SearchTiered_TagMatch_AppearsInTier1()
+    {
+        chars.Save(new CharacterData { Name = "Tag Target", Tags = ["psionic-adept"] });
+
+        var (t1, _) = svc.SearchTiered("psionic-adept");
+
+        Assert.That(t1.Any(r => r.Name == "Tag Target"), Is.True);
+    }
+
+    [Test]
+    public void SearchTiered_Tier1AndTier2_NeverOverlap()
+    {
+        chars.Save(new CharacterData { Name = "Overlap Test", Description = "unique body phrase here." });
+        chars.Save(new CharacterData { Name = "unique body phrase here" });
+
+        var (t1, t2) = svc.SearchTiered("unique body phrase here");
+
+        var t1Ids = t1.Select(r => r.Id).ToHashSet();
+        var t2Ids = t2.Select(r => r.Id).ToHashSet();
+        Assert.That(t1Ids.Intersect(t2Ids), Is.Empty);
+    }
 }
