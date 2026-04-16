@@ -8,9 +8,10 @@ namespace StreetSamurai.Core.Services;
 /// Indexes all named entities (characters, places, factions, corps, synthetics,
 /// technology, vocabulary). Rebuilds automatically when repos change.
 ///
-/// Supports explicit [[Name]] and [[Name|display text]] wiki-link syntax as
-/// inserted by wiki_scan.py. These are resolved first; remaining plain text
-/// segments are then auto-linked by name matching.
+/// Wiki-link syntax (as written by wiki_scan.py):
+///   [[DisplayText|entityId]]  — primary format, resolved by ID (stable across renames)
+///   [[Name]]                  — fallback, resolved by name (manual links, auto-linking)
+/// Explicit wiki links are resolved in Pass 1; remaining plain text is auto-linked in Pass 2.
 /// </summary>
 public class XrefService
 {
@@ -25,6 +26,7 @@ public class XrefService
     private readonly VocabularyRepository vocabulary;
 
     private Dictionary<string, XrefEntry> index = new(StringComparer.OrdinalIgnoreCase);
+    private Dictionary<string, XrefEntry> indexById = new(StringComparer.OrdinalIgnoreCase);
     private Regex? matchRegex;
     private readonly object syncLock = new();
 
@@ -56,7 +58,12 @@ public class XrefService
 
     private void Invalidate()
     {
-        lock (syncLock) { index = new(StringComparer.OrdinalIgnoreCase); matchRegex = null; }
+        lock (syncLock)
+        {
+            index = new(StringComparer.OrdinalIgnoreCase);
+            indexById = new(StringComparer.OrdinalIgnoreCase);
+            matchRegex = null;
+        }
     }
 
     public void EnsureBuilt()
@@ -71,11 +78,14 @@ public class XrefService
     private void RebuildIndex()
     {
         var newIndex = new Dictionary<string, XrefEntry>(StringComparer.OrdinalIgnoreCase);
+        var newIndexById = new Dictionary<string, XrefEntry>(StringComparer.OrdinalIgnoreCase);
 
         void Add(string name, string id, string type, string route, string subtitle = "")
         {
             if (string.IsNullOrWhiteSpace(name) || name.Length < 3) return;
-            newIndex.TryAdd(name, new XrefEntry(id, name, type, route, subtitle));
+            var entry = new XrefEntry(id, name, type, route, subtitle);
+            newIndex.TryAdd(name, entry);
+            newIndexById.TryAdd(id, entry);
         }
 
         foreach (var c in characters.GetAll())
@@ -115,6 +125,7 @@ public class XrefService
         }
 
         index = newIndex;
+        indexById = newIndexById;
 
         // Build regex — longest names first so e.g. "The Circuit" beats "Circuit"
         var patterns = newIndex.Keys
@@ -137,14 +148,16 @@ public class XrefService
     }
 
     /// <summary>Splits text into alternating plain and xref segments for inline rendering.
-    /// Explicit [[Name]] / [[Name|display]] wiki links are resolved first; remaining
-    /// plain text is then auto-linked by name matching.</summary>
+    /// Explicit [[DisplayText|entityId]] wiki links are resolved first by ID; plain [[Name]]
+    /// links fall back to name lookup. Remaining plain text is auto-linked in Pass 2.</summary>
     public List<TextSegment> ParseSegments(string text)
     {
         if (string.IsNullOrWhiteSpace(text)) return [new PlainSegment(text ?? "")];
         EnsureBuilt();
 
         // Pass 1 — split on explicit [[...]] wiki links
+        // Format written by wiki_scan.py: [[DisplayText|entityId]]
+        // Fallback (manual / legacy):      [[Name]]
         var pass1 = new List<TextSegment>();
         int cursor = 0;
         foreach (Match wm in WikiLinkRe.Matches(text))
@@ -152,12 +165,17 @@ public class XrefService
             if (wm.Index > cursor)
                 pass1.Add(new PlainSegment(text[cursor..wm.Index]));
 
-            var entityName = wm.Groups[1].Value.Trim();
-            var displayText = wm.Groups[2].Success ? wm.Groups[2].Value.Trim() : entityName;
-            var entry = index.GetValueOrDefault(entityName);
+            var displayText = wm.Groups[1].Value.Trim();
+            var secondPart  = wm.Groups[2].Success ? wm.Groups[2].Value.Trim() : null;
+
+            XrefEntry? entry = secondPart != null
+                ? indexById.GetValueOrDefault(secondPart)       // [[DisplayText|id]] — resolve by ID
+                  ?? index.GetValueOrDefault(secondPart)        // fallback: secondPart is a name
+                : index.GetValueOrDefault(displayText);         // [[Name]] — resolve by name
+
             pass1.Add(entry != null
                 ? new XrefSegment(displayText, entry)
-                : new PlainSegment(displayText));  // unresolved wiki link → render as plain text
+                : new PlainSegment(displayText));  // unresolved → plain text
 
             cursor = wm.Index + wm.Length;
         }

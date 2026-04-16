@@ -217,7 +217,8 @@ def find_matches(text: str, index: dict, partial: bool) -> list[tuple]:
 
 
 def apply_links(text: str, matches: list[tuple]) -> str:
-    """Replace matched spans with [[Name]] or [[Name|display]] syntax."""
+    """Replace matched spans with [[DisplayText|entityId]] syntax.
+    The entity ID is the stable reference; display text is what appeared in the source."""
     if not matches:
         return text
 
@@ -225,11 +226,7 @@ def apply_links(text: str, matches: list[tuple]) -> str:
     prev = 0
     for start, end, entry, matched_text in sorted(matches, key=lambda t: t[0]):
         result.append(text[prev:start])
-        canonical = entry["name"]
-        if matched_text.lower() == canonical.lower():
-            result.append(f"[[{canonical}]]")
-        else:
-            result.append(f"[[{canonical}|{matched_text}]]")
+        result.append(f"[[{matched_text}|{entry['id']}]]")
         prev = end
     result.append(text[prev:])
     return "".join(result)
@@ -365,7 +362,7 @@ def main():
                             accepted.append(m)
                     else:
                         accepted.append(m)
-                        print(f"    {entity_name!r} → {field}: {matched_text!r} → [[{entry['name']}]]")
+                        print(f"    {entity_name!r} → {field}: {matched_text!r} → [[{matched_text}|{entry['id']}]]")
 
                 if accepted and not args.dry_run:
                     data[field] = apply_links(text, accepted)
