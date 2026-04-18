@@ -317,6 +317,8 @@ public class XrefService
         EnsureBuilt();
 
         // Pass 1 — split on explicit [[...]] wiki links
+        // Format written by wiki_scan.py: [[DisplayText|entityId]]
+        // Fallback (manual / legacy):      [[Name]]
         var pass1 = new List<TextSegment>();
         int cursor = 0;
         foreach (Match wm in WikiLinkRe.Matches(text))
