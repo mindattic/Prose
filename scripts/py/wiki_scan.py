@@ -505,7 +505,7 @@ def main():
 
     print("=" * 60)
     print(f"Total links {'to insert' if args.dry_run else 'inserted'}: {total_links_inserted:,}")
-    print(f"Total files {'that would be' if args.dry_run else ''} modified: {total_files_modified:,}")
+    print(f"Total files {'that would be modified' if args.dry_run else 'modified'}: {total_files_modified:,}")
     print()
     if args.dry_run:
         print("Run with --apply to write changes.")

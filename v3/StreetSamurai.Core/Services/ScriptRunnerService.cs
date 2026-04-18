@@ -132,12 +132,12 @@ public class ScriptRunnerService
         process.OutputDataReceived += (_, e) =>
         {
             if (e.Data != null)
-                output.Report(new ScriptOutputLine(e.Data, false, DateTime.Now));
+                output.Report(new ScriptOutputLine(e.Data.Replace("\r", ""), false, DateTime.Now));
         };
         process.ErrorDataReceived += (_, e) =>
         {
             if (e.Data != null)
-                output.Report(new ScriptOutputLine(e.Data, true, DateTime.Now));
+                output.Report(new ScriptOutputLine(e.Data.Replace("\r", ""), true, DateTime.Now));
         };
 
         process.Start();

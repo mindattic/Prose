@@ -36,7 +36,7 @@ else
             if (seg is XrefSegment xref)
             {
                 builder.OpenElement(seq++, "a");
-                builder.AddAttribute(seq++, "href", $"/entity/{xref.Entry.Id}");
+                builder.AddAttribute(seq++, "href", $"{xref.Entry.Route}?id={xref.Entry.Id}");
                 builder.AddAttribute(seq++, "class", $"xref-link xref-{xref.Entry.Type}");
                 builder.AddAttribute(seq++, "title", string.IsNullOrWhiteSpace(xref.Entry.Subtitle)
                     ? xref.Entry.Type
