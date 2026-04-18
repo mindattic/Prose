@@ -1,7 +1,7 @@
 {
   "id": "019d6143a5d87a399b889edf096d0fc0",
   "type": "character",
-  "name": "Orion Venkatesh-Kuznetsov",
+  "name": "Chen Wei-Lin",
   "aliases": [
     "Mrs. Chen",
     "Auntie Chen",
@@ -14,7 +14,7 @@
   "age": 68,
   "status": "alive",
   "location": "The Shelf — Level 12, a cramped noodle shop called 'Chen's' wedged between a water recycler and a defunct elevator shaft, near Halsted and Chicago Ave",
-  "description": "Orion Venkatesh-Kuznetsov is a small woman who moves like she's in a permanent argument with physics — fast, efficient,\nslightly annoyed. She stands maybe 5'2\" but takes up more space than that suggests, partly because she's\nalways in motion and partly because her presence has a gravitational quality. Her face is a map of the\nShelf itself: weathered, cracked in places, but structurally sound. Her eyes are sharp and dark behind\nthick-framed glasses held together with electrical tape and spite. Her grey hair is always pinned up in\na tight bun secured with two chopsticks that she occasionally pulls out to gesture with while making a\npoint, then replaces without losing a syllable.\n\nHer hands tell two stories. They're a cook's hands now — scarred from oil splatter, calloused from\ndecades of kneading dough, knuckles swollen with arthritis she refuses to acknowledge. But if you look\nclosely, you can see the older scars underneath: the precise, symmetrical marks of someone who spent\nyears working with micro-surgical tools and augmentation circuitry. She wears no rings, no jewelry,\nnothing decorative. Her apron is always stained and she considers this a badge of honest work.\n\nFirst impression: a cranky old woman who serves good noodles and doesn't smile. Accurate impression:\na cranky old woman who serves good noodles, doesn't smile, and is quietly the most important person\non the Shelf because she feeds it, listens to it, and remembers everything.",
+  "description": "Chen Wei-Lin is a small woman who moves like she's in a permanent argument with physics — fast, efficient,\nslightly annoyed. She stands maybe 5'2\" but takes up more space than that suggests, partly because she's\nalways in motion and partly because her presence has a gravitational quality. Her face is a map of the\nShelf itself: weathered, cracked in places, but structurally sound. Her eyes are sharp and dark behind\nthick-framed glasses held together with electrical tape and spite. Her grey hair is always pinned up in\na tight bun secured with two chopsticks that she occasionally pulls out to gesture with while making a\npoint, then replaces without losing a syllable.\n\nHer hands tell two stories. They're a cook's hands now — scarred from oil splatter, calloused from\ndecades of kneading dough, knuckles swollen with arthritis she refuses to acknowledge. But if you look\nclosely, you can see the older scars underneath: the precise, symmetrical marks of someone who spent\nyears working with micro-surgical tools and augmentation circuitry. She wears no rings, no jewelry,\nnothing decorative. Her apron is always stained and she considers this a badge of honest work.\n\nFirst impression: a cranky old woman who serves good noodles and doesn't smile. Accurate impression:\na cranky old woman who serves good noodles, doesn't smile, and is quietly the most important person\non the Shelf because she feeds it, listens to it, and remembers everything.",
   "psychology": {
     "facet_weights": {
       "wound": 0.75,
@@ -87,6 +87,13 @@
       "description": "She does not speak his name. She keeps no photographs — they were all digital, stored on a device\nshe threw into the harbor the day she arrived on the Shelf. But she cooks his favorite meal (sesame\nnoodles with pork, slightly sweet) once a year, on his birthday, and serves it to whoever sits\ndown first. She never explains why the menu changed that day.",
       "emotional_core": "",
       "story_tension": ""
+    },
+    {
+      "name": "Uncle Noodle",
+      "type": "professional rival / object of contempt",
+      "description": "Chen Wei-Lin does not hate many people. Uncle Noodle is the exception. He runs a competing noodle operation on the Shelf and his existence is, to her, a personal insult. She considers him her rival in every professional sense — his broth is wrong, his noodles are the wrong thickness, his prices undercut hers through shortcuts she considers dishonest, and the fact that anyone eats there is evidence of declining standards she takes personally. She never says his name if she can help it. She refers to him as 'that man' or 'the other place.' If pressed, she will deliver a thirty-second technical critique of his technique that leaves no room for rebuttal. He leaves a bowl of soup at the corner of her block every morning. She has never acknowledged it. This is, somehow, the worst part.",
+      "emotional_core": "Professional jealousy dressed as quality standards — she's decided his success diminishes her craft",
+      "story_tension": "Uncle Noodle may be better than she admits, or he may be a front for something. Either way, she will never concede."
     },
     {
       "name": "The Shelf community",
@@ -259,6 +266,7 @@
   ],
   "registered_firearms": [],
   "related_entities": [
+    "Uncle Noodle",
     "The Unfinished Theorem",
     "The Shelf",
     "GLMZ",

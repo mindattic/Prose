@@ -4,12 +4,7 @@
   "brand_name": "Vespid",
   "product_name": "Vespid Dynamics Acoustic Mapping Drone AMD-2",
   "type": "equipment",
-  "aliases": [
-    "AMD-2",
-    "Sound Mapper",
-    "Echo Drone",
-    "Bat Bot"
-  ],
+  "aliases": [],
   "category": "drones",
   "description": "A small drone equipped with an array of ultrasonic emitters and receivers that maps enclosed spaces using echolocation, creating detailed 3D maps of rooms, corridors, and structures without line-of-sight. The AMD-2 can be launched into a building through a ventilation grate or window and will autonomously navigate the interior using its acoustic mapping to build a complete floorplan, identifying occupants by their acoustic signatures, locating electronic devices by their operational sounds, and mapping structural elements including hidden rooms and passages that may not be visible.",
   "manufacturer": "VESPID DYNAMICS",

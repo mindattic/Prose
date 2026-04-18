@@ -2,15 +2,11 @@
   "id": "019d7850c6d77bea889c5d2a50ddf7be",
   "name": "Serovance",
   "type": "pharmaceutical",
-  "aliases": [
-    "Serofix",
-    "the Mend",
-    "Softfloor"
-  ],
+  "aliases": [],
   "category": "withdrawal_aid",
   "subcategory": "serotonin_rebuilder",
   "manufacturer": "Novafold Pharmaceuticals",
-  "description": "Serovance is a long-course serotonergic restoration compound that uses SNT-precursor nutrients and selective 5-HT receptor agonism to rebuild depleted serotonin systems after prolonged stimulant, dissociative, or synthetic serotonin-flood drug use. Designed for a 90-day course, it gradually elevates baseline mood and emotional stability without producing euphoria. The experience is described as \u0027remembering what okay feels like.\u0027",
+  "description": "Serovance is a long-course serotonergic restoration compound that uses SNT-precursor nutrients and selective 5-HT receptor agonism to rebuild depleted serotonin systems after prolonged stimulant, dissociative, or synthetic serotonin-flood drug use. Designed for a 90-day course, it gradually elevates baseline mood and emotional stability without producing euphoria. The experience is described as 'remembering what okay feels like.'",
   "method_of_use": "oral",
   "effects": [
     "Gradual serotonin system restoration",
@@ -20,21 +16,21 @@
     "Restored empathy response in users depleted by long-term drug use"
   ],
   "side_effects": [
-    "Weeks 1-3: mood dip before improvement (\u0027the valley\u0027)",
+    "Weeks 1-3: mood dip before improvement ('the valley')",
     "Sexual dysfunction in approximately 30% of users",
     "Mild nausea",
-    "Rare: serotonin syndrome if combined with other serotonergic substances \u2014 potentially fatal"
+    "Rare: serotonin syndrome if combined with other serotonergic substances — potentially fatal"
   ],
   "duration": "90-day course; effects persist 6-12 months post-completion",
   "addiction_risk": "none",
   "tier_availability": "Tier 2-3",
   "legality": "prescription",
-  "street_price": "\u03A612 per day (\u03A61,080 full course)",
-  "cultural_context": "Serovance is recovery drug as long game. In Tier 2 communities with strong mutual-aid networks, Serovance courses are sometimes collectively funded for members who need them. The \u002790-day club\u0027 \u2014 people who\u0027ve completed a full course \u2014 is an informal identity in some recovery communities. Counterintuitively, it\u0027s sometimes used by people who were never addicted to drugs but whose serotonin systems were depleted by years of BCI overstimulation.",
+  "street_price": "Φ12 per day (Φ1,080 full course)",
+  "cultural_context": "Serovance is recovery drug as long game. In Tier 2 communities with strong mutual-aid networks, Serovance courses are sometimes collectively funded for members who need them. The '90-day club' — people who've completed a full course — is an informal identity in some recovery communities. Counterintuitively, it's sometimes used by people who were never addicted to drugs but whose serotonin systems were depleted by years of BCI overstimulation.",
   "story_hooks": [
-    "A character on day 45 of their Serovance course \u2014 deep in \u0027the valley\u0027 \u2014 has to make a major decision while their emotional baseline is at its lowest point",
-    "Someone discovers their Serovance supply has been cut with a compound that subtly alters the restoration target \u2014 they\u0027re being rebuilt toward a different baseline than they started with",
-    "A Tier 4 exec quietly funds a Serovance distribution program in the Shelf, and the players must figure out whether it\u0027s genuine charity or a long-term population management scheme"
+    "A character on day 45 of their Serovance course — deep in 'the valley' — has to make a major decision while their emotional baseline is at its lowest point",
+    "Someone discovers their Serovance supply has been cut with a compound that subtly alters the restoration target — they're being rebuilt toward a different baseline than they started with",
+    "A Tier 4 exec quietly funds a Serovance distribution program in the Shelf, and the players must figure out whether it's genuine charity or a long-term population management scheme"
   ],
   "tags": []
 }

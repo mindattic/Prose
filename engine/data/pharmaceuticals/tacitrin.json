@@ -2,40 +2,36 @@
   "id": "019d7850c6e076e19878ee67df5b547a",
   "name": "Tacitrin",
   "type": "pharmaceutical",
-  "aliases": [
-    "Ghost Protocol",
-    "Silentwire",
-    "Mutelink"
-  ],
+  "aliases": [],
   "category": "augment_interactive",
   "subcategory": "synth_sync_compound",
   "manufacturer": "Nightshade Pharmatech",
-  "description": "A covert tactical-grade synth-sync compound that establishes a passive, low-emission BCI link between multiple users \u2014 unlike standard sync drugs, Tacitrin\u0027s link produces no detectable wireless signal, operating entirely through SNT-to-SNT chemical resonance at close range. Linked users share a subtle awareness of each other\u0027s physical and augment states without broadcasting any detectable signal. Developed for insertion teams that need coordination without communications intercept risk. It is, technically, a pharmaceutical. Its applications are almost exclusively illegal.",
+  "description": "A covert tactical-grade synth-sync compound that establishes a passive, low-emission BCI link between multiple users — unlike standard sync drugs, Tacitrin's link produces no detectable wireless signal, operating entirely through SNT-to-SNT chemical resonance at close range. Linked users share a subtle awareness of each other's physical and augment states without broadcasting any detectable signal. Developed for insertion teams that need coordination without communications intercept risk. It is, technically, a pharmaceutical. Its applications are almost exclusively illegal.",
   "method_of_use": "sublingual",
   "effects": [
     "Silent non-wireless sync link established between dosed individuals within 3-meter proximity",
-    "Shared awareness of linked partners\u0027 augment status, physical condition, and movement intent",
+    "Shared awareness of linked partners' augment status, physical condition, and movement intent",
     "Coordination in combat or covert operations approaches trained-unit cohesion without any communication",
     "Link detects partner distress or injury instantaneously",
-    "No electromagnetic signature \u2014 undetectable by standard BCI sweep or signals intelligence"
+    "No electromagnetic signature — undetectable by standard BCI sweep or signals intelligence"
   ],
   "side_effects": [
-    "Link range limited \u2014 separation beyond 15 meters causes disorienting \u0027snap\u0027 as connection drops",
+    "Link range limited — separation beyond 15 meters causes disorienting 'snap' as connection drops",
     "Emotional state bleed between linked users under high stress",
     "Post-dose: 2-4 hours of heightened awareness of nearby augmented individuals (residual sensitivity)",
-    "Incompatible with heavily encrypted BCI systems \u2014 link attempt causes interface errors",
+    "Incompatible with heavily encrypted BCI systems — link attempt causes interface errors",
     "Rare: users with damaged SNT experience link feedback as phantom pain"
   ],
   "duration": "3-6 hours",
   "addiction_risk": "low",
   "tier_availability": "Tier 1-2",
   "legality": "illegal",
-  "street_price": "\u03A6500-700 per team set (3 doses)",
-  "cultural_context": "Tacitrin is a professional\u0027s drug \u2014 it\u0027s expensive, it requires coordination, and it\u0027s useless recreationally. It exists in the world of insertion teams, heist crews, corporate saboteurs, and resistance cells. The fact that Nightshade Pharmatech produces it is an open secret that law enforcement cannot quite act on, since Nightshade maintains plausible deniability through a labyrinthine distribution network. Among the operatives who use it, Tacitrin is spoken of with a particular reverence \u2014 the closest thing to trust you can put in a chemical.",
+  "street_price": "Φ500-700 per team set (3 doses)",
+  "cultural_context": "Tacitrin is a professional's drug — it's expensive, it requires coordination, and it's useless recreationally. It exists in the world of insertion teams, heist crews, corporate saboteurs, and resistance cells. The fact that Nightshade Pharmatech produces it is an open secret that law enforcement cannot quite act on, since Nightshade maintains plausible deniability through a labyrinthine distribution network. Among the operatives who use it, Tacitrin is spoken of with a particular reverence — the closest thing to trust you can put in a chemical.",
   "story_hooks": [
-    "A crew used Tacitrin on a job and one member died mid-operation \u2014 the survivors felt it happen, felt the link snap, and two of them haven\u0027t spoken since. Now someone is offering them the same job again, same parameters, and the question is whether the death was an accident or whether one of them caused it.",
-    "Tacitrin has been found in the system of a Tier 4 corporate security officer \u2014 suggesting that someone has been running an undetectable sync operation inside a high-security facility, coordinating from within",
-    "A new Tacitrin variant has appeared that extends the link range to 50 meters and maintains connection through standard BCI encryption \u2014 whoever synthesized this has access to Nightshade\u0027s core formulas, and Nightshade wants to know who before the variant reaches their enemies"
+    "A crew used Tacitrin on a job and one member died mid-operation — the survivors felt it happen, felt the link snap, and two of them haven't spoken since. Now someone is offering them the same job again, same parameters, and the question is whether the death was an accident or whether one of them caused it.",
+    "Tacitrin has been found in the system of a Tier 4 corporate security officer — suggesting that someone has been running an undetectable sync operation inside a high-security facility, coordinating from within",
+    "A new Tacitrin variant has appeared that extends the link range to 50 meters and maintains connection through standard BCI encryption — whoever synthesized this has access to Nightshade's core formulas, and Nightshade wants to know who before the variant reaches their enemies"
   ],
   "tags": []
 }

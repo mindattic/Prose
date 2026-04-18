@@ -1,6 +1,12 @@
 // Focus helper — used by SearchOverlay to focus the input after mount
 window.focusElement = function(el) { if (el) { el.focus(); } };
 
+// Terminal auto-scroll — used by Script Runner in Utilities
+window.scrollTerminalToBottom = function(id) {
+    var el = document.getElementById(id);
+    if (el) el.scrollTop = el.scrollHeight;
+};
+
 // Shared Google Maps API loader — deduplicates script injection across meridianMap + geoMap
 window.__gmapsLoad = function(apiKey, cb) {
     if (window.google && window.google.maps) { if (cb) cb(); return; }

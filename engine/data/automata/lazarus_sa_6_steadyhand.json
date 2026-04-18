@@ -2,11 +2,7 @@
   "name": "Lazarus SA-6 'Steadyhand'",
   "type": "automaton",
   "classification": "Medical",
-  "aliases": [
-    "Steadyhand",
-    "Scalpel Bot",
-    "The Surgeon's Ghost"
-  ],
+  "aliases": [],
   "manufacturer": "LAZARUS GROUP",
   "description": "The SA-6 is a surgical assistance automaton — a ceiling-mounted multi-arm platform that operates above the surgical table, providing instrument handling, tissue retraction, suction, irrigation, and precision cutting under the direction of a human surgeon. The SA-6 does not perform surgery. It assists — holding instruments with micron-level stability that no human hand can match, retracting tissue with force calibrated to prevent damage, and positioning camera feeds for optimal surgical visualization. The human surgeon directs every action. The machine executes with inhuman precision.\n\nLazarus designed the SA-6 after analyzing surgical error data and determining that the majority of complications arose not from poor surgical judgment but from the physical limitations of human hands — tremor, fatigue, imprecise force application, limited reach. The SA-6 eliminates these limitations while preserving human decision-making. It is a tool, not a replacement. Lazarus is emphatic about this distinction, because the alternative — fully autonomous surgical platforms — exists in prototype and terrifies the medical establishment.\n\nThe SA-6 has reduced surgical complication rates by thirty-eight percent in facilities where it is deployed. It operates continuously without fatigue, maintains sterile field integrity with mechanical reliability, and can execute maneuvers that require precision beyond human motor capability — microsurgical repairs on neural tissue, vascular anastomosis on vessels smaller than a millimeter, and implantation procedures for cyberware and geneware that require positioning accuracy measured in microns. Most major surgical procedures in Tier 3+ medical facilities are now SA-6-assisted.",
   "tier_availability": "Tier 3-4",

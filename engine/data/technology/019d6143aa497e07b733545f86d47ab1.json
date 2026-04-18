@@ -4,12 +4,7 @@
   "brand_name": "Ouroboros",
   "product_name": "Ouroboros Energy PiezoCore LD-5 Pedestrian Kinetic Harvesting Grid",
   "type": "technology",
-  "aliases": [
-    "Footprint Grid",
-    "Stomper Tiles",
-    "LD-5",
-    "Pressure Plate"
-  ],
+  "aliases": [],
   "subcategory": "energy",
   "description": "The PiezoCore LD-5 is a modular sub-pavement energy harvesting system deployed in high-foot-traffic urban zones throughout GLMZ. Each tile unit — measuring 60cm x 60cm and 4cm deep — contains a stacked array of lead-free barium titanate piezoelectric transducers encased in impact-resistant polymer composite. Foot pressure, vehicle roll-over, and even ambient vibration from nearby transit infrastructure compress the transducer stacks, generating micro-bursts of alternating current that are rectified, phase-synchronized, and fed into localized micro-grid conduits embedded in the substrate layer. A single high-traffic block in the Garnet District can sustain a continuous output of 8–14 kW under peak pedestrian load, sufficient to power adjacent street lighting, vending kiosks, and low-draw surveillance nodes without drawing from the main municipal grid.\n\nWhat distinguishes the LD-5 from earlier piezoelectric installations is its Adaptive Load Balancing Controller (ALBC), a Cinderblock AI-licensed embedded firmware that dynamically reroutes current between tiles based on real-time pressure mapping. This prevents hotspot degradation — a critical failure mode in previous-generation grids — and extends tile service life to an estimated 12 years under standard urban conditions. Tiles are color-coded by output health status and can be swapped individually without disrupting adjacent units, making maintenance viable even in GLMZ's perpetually congested commercial corridors.\n\nThe LD-5 is predominantly installed by Palladian Construction under Ouroboros Energy licensing agreements in Tier 2 and Tier 3 commercial zones, transit hubs, and arcology concourses. In lower-tier districts, independent operators sometimes purchase surplus tile units through Kelpline Logistics secondary markets, installing ad-hoc grids beneath street markets or corridor squats — feeding power to unauthorized tap networks that exist entirely outside Ouroboros's billing infrastructure.",
   "tier_availability": "Tier 2+ (black market assemblies in Tier 4)",

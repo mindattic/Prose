@@ -4,12 +4,7 @@
   "brand_name": "Tessera",
   "product_name": "Tessera Industries Optical Tap Micro-Splice OT-1",
   "type": "equipment",
-  "aliases": [
-    "Optical Tap",
-    "OT-1",
-    "Light Leech",
-    "Fiber Splice"
-  ],
+  "aliases": [],
   "category": "hacking",
   "description": "A miniature fiber-optic tap device that splices into a fiber-optic cable without interrupting service, siphoning a fraction of the light signal for interception. The OT-1 uses a precision micro-bend technique that causes a small percentage of light to escape the fiber at the tap point, where it is captured by a detector and decoded. The signal loss is so small (0.1 dB) that it falls within normal cable attenuation tolerances and is undetectable by standard network monitoring. The device is installed in 30 seconds by a trained operator and can be placed anywhere along an accessible fiber run.",
   "manufacturer": "TESSERA INDUSTRIES",

@@ -211,7 +211,13 @@ def main():
     parser.add_argument("--stats", action="store_true", help="Show pipeline statistics")
     parser.add_argument("--limit", type=int, default=50, help="Limit results")
 
+    parser.add_argument("--silent", action="store_true", help="Suppress all console output")
     args = parser.parse_args()
+    if args.silent:
+        import sys as _sys, os as _os
+        _sys.stdout = open(_os.devnull, "w")
+        _sys.stderr = open(_os.devnull, "w")
+
 
     # Route to the appropriate function based on which flag was used.
     # The order matters: --stats and --flagged take priority over a subject search.

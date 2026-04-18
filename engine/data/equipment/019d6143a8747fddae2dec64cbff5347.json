@@ -4,11 +4,7 @@
   "brand_name": "Tessera",
   "product_name": "Tessera Corponation Peripatetic Address Shell",
   "type": "equipment",
-  "aliases": [
-    "The Ghost Number",
-    "Wandering Shell",
-    "PAS Unit"
-  ],
+  "aliases": [],
   "category": "comms",
   "description": "The Peripatetic Address Shell is a signal-routing device that continuously migrates its apparent broadcast origin across GLMZ's mesh infrastructure, making its user's communications appear to originate from hundreds of different physical nodes in rapid succession. Unlike simple spoofing tools, the PAS does not fabricate false origins — it actually routes signal traffic through a shifting chain of legitimate mesh relays, each hop authenticated by the next, creating a real and traceable path that nonetheless resolves to a different apparent source every 4.3 seconds. Tessera Corponation developed it initially for their own internal security teams, who needed to conduct field communications without creating locatable transmission signatures.\n\nThe device's proprietary 'address drift' algorithm is its defining feature — it learns the relay density and traffic load of whatever urban environment it operates in, prioritizing high-traffic nodes where an additional signal is statistically invisible and deprioritizing quiet relays where anomalous traffic might trigger automated flags. The result is a communication device that hides not by going silent, but by becoming indistinguishable from the city's own noise. Users report that in dense districts, the PAS achieves what Tessera's documentation calls 'statistical anonymity' — the probability of tracing a call drops below actionable thresholds within the first two minutes of transmission.\n\nThe Shell is physically unassuming — a matte black rectangular unit worn on the forearm or kept in a jacket pocket, with a single earpiece jack and a minimal control surface. Its reputation in the field is excellent among anyone who needs to stay reachable without staying locatable, and Tessera's decision to offer a consumer-licensed version (with reduced hop frequency and mandatory registration) has only deepened the market for unlicensed units with the full drift capability intact.",
   "manufacturer": "TESSERA CORPONATION",

@@ -4,11 +4,7 @@
   "brand_name": "Tessera",
   "product_name": "Tessera Corponation Lattice Whisper Node",
   "type": "equipment",
-  "aliases": [
-    "Whisper Node",
-    "Breadcrumb",
-    "Tessera Spider"
-  ],
+  "aliases": [],
   "category": "comms",
   "description": "The Lattice Whisper Node is a self-organizing mesh repeater designed to be deployed in clusters, with each unit autonomously discovering, authenticating, and routing through its nearest neighbors to form a decentralized communication backbone that requires no fixed infrastructure. A single Node is functionally useless; a cluster of five or more creates a resilient, self-healing network that can span several city blocks, reroute around destroyed or jammed units, and sustain encrypted voice and data traffic without any connection to GLMZ's licensed mesh infrastructure. Each unit is roughly cylindrical, about the size of a thumb, and is designed to be adhered to surfaces — undersides of benches, drainage grates, the backs of signage — where it can draw parasitic power from ambient electromagnetic fields and remain active for weeks without a dedicated power source.\n\nThe Node's defining technical feature is its adaptive routing intelligence. Rather than using fixed relay paths, the cluster continuously recalculates the most signal-efficient route through its members in response to interference, unit loss, or new additions. A Node that is physically destroyed simply drops out of the network's topology within seconds, and surrounding units redistribute the load. New Nodes introduced to an existing cluster are authenticated via a shared lattice key loaded at deployment, after which they are incorporated automatically. This makes the system highly resistant to targeted disruption — eliminating one Node accomplishes almost nothing.\n\nTessera Corponation markets the Lattice Whisper Node to corporate security teams for 'temporary infrastructure deployment in low-coverage operational environments,' and it is genuinely used for this purpose. It is also, with near-equal frequency, used by resistance cells, labor organizers, and underground networks to establish communications infrastructure in districts where the licensed mesh is monitored, degraded, or deliberately throttled by municipal authorities.",
   "manufacturer": "TESSERA CORPONATION",

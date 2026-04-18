@@ -2,20 +2,17 @@
   "id": "019d7850c6ac794b9e7b3ff98acdc78f",
   "name": "Ferroxan",
   "type": "pharmaceutical",
-  "aliases": [
-    "Ironblood",
-    "Redline"
-  ],
+  "aliases": [],
   "category": "augment_interactive",
   "subcategory": "chrome_enhancer",
   "manufacturer": "Nightshade Pharmatech",
-  "description": "A vasodilating compound laced with synthetic catecholamines that floods augmented musculature and servomechanical joints with supercharged hydraulic pressure and electrical conductivity, pushing mechanical augments 30-50% beyond their rated output for a brief window. Designed originally as an emergency extraction compound for trapped workers with industrial chrome, it was rapidly weaponized by street operators. The come-down is brutal \u2014 joints seize, micro-tears form in the biological tissue anchoring the chrome to bone.",
+  "description": "A vasodilating compound laced with synthetic catecholamines that floods augmented musculature and servomechanical joints with supercharged hydraulic pressure and electrical conductivity, pushing mechanical augments 30-50% beyond their rated output for a brief window. Designed originally as an emergency extraction compound for trapped workers with industrial chrome, it was rapidly weaponized by street operators. The come-down is brutal — joints seize, micro-tears form in the biological tissue anchoring the chrome to bone.",
   "method_of_use": "injection",
   "effects": [
     "Augmented limb strength increased 30-50% beyond rated spec",
     "Reaction time for chrome-assisted movement reduced by 40ms",
     "Pain suppression in augmented regions",
-    "Thermal output from chrome increases \u2014 augments run hot"
+    "Thermal output from chrome increases — augments run hot"
   ],
   "side_effects": [
     "Anchor-point micro-tears where chrome meets bone",
@@ -28,12 +25,12 @@
   "addiction_risk": "high",
   "tier_availability": "Tier 1-2",
   "legality": "illegal",
-  "street_price": "\u03A6 180-240",
-  "cultural_context": "Called \u0027Redline\u0027 because users are literally running their chrome past the manufacturer\u0027s red-line safety threshold. A staple of Shelf pit-fighters and street enforcers who can\u0027t afford better augments and need to compete with people who have higher-grade chrome. Tier 2 mechanics joke that they can identify Ferroxan users by the joint damage on their chrome \u2014 looks like someone put a car engine through a drag race every weekend for a year.",
+  "street_price": "Φ 180-240",
+  "cultural_context": "Called 'Redline' because users are literally running their chrome past the manufacturer's red-line safety threshold. A staple of Shelf pit-fighters and street enforcers who can't afford better augments and need to compete with people who have higher-grade chrome. Tier 2 mechanics joke that they can identify Ferroxan users by the joint damage on their chrome — looks like someone put a car engine through a drag race every weekend for a year.",
   "story_hooks": [
-    "A Shelf enforcer has been running Ferroxan so long her anchor points are failing \u2014 her arm chrome is literally working loose from her humerus, and she needs one more job to pay for surgical re-anchoring before it detaches completely.",
-    "A batch of Ferroxan has been cut with an unknown compound that doesn\u0027t just overclock chrome \u2014 it seems to be rewriting servo firmware, and users are reporting their augments moving on their own after the high fades.",
-    "A Tier 3 augment technician is quietly buying Ferroxan in bulk \u2014 not to use, but to study, claiming Nightshade accidentally solved a mechanical efficiency problem that Lazarus has spent decades trying to crack legitimately."
+    "A Shelf enforcer has been running Ferroxan so long her anchor points are failing — her arm chrome is literally working loose from her humerus, and she needs one more job to pay for surgical re-anchoring before it detaches completely.",
+    "A batch of Ferroxan has been cut with an unknown compound that doesn't just overclock chrome — it seems to be rewriting servo firmware, and users are reporting their augments moving on their own after the high fades.",
+    "A Tier 3 augment technician is quietly buying Ferroxan in bulk — not to use, but to study, claiming Nightshade accidentally solved a mechanical efficiency problem that Lazarus has spent decades trying to crack legitimately."
   ],
   "tags": []
 }

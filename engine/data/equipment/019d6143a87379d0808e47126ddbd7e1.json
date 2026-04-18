@@ -4,12 +4,7 @@
   "brand_name": "Tessera",
   "product_name": "Tessera Corponation Laminated Acoustic Stratum Probe",
   "type": "equipment",
-  "aliases": [
-    "LASP",
-    "the Stratum",
-    "ear-layer",
-    "wall-ear"
-  ],
+  "aliases": [],
   "category": "sensor",
   "description": "The Laminated Acoustic Stratum Probe is a contact-based listening device engineered to isolate and reconstruct audio signals propagating through solid structural materials — concrete, reinforced polymer, steel plate, and composite building materials. It operates by pressing a laminated piezoelectric sensor array against a surface and applying a micro-vibration calibration pulse, which allows the device's signal processing core to map the acoustic transmission characteristics of that specific material. Once calibrated, it can separate target audio from structural noise, HVAC resonance, and deliberate jamming frequencies with unusual fidelity.\n\nTessera's core innovation is the stratification algorithm — rather than treating a wall as a single acoustic medium, the LASP models it as a stack of distinct material layers, each with its own transmission coefficient. A poured concrete wall with embedded rebar and a plasterboard interior finish is processed as three separate layers, and the algorithm reconstructs speech by reverse-modeling how sound waves degrade through each stratum. This allows the LASP to achieve intelligible audio recovery through walls up to 40cm of composite thickness that would defeat conventional contact microphones entirely.\n\nThe device is marketed to Tessera's corporate intelligence clients and licensed private investigators, but its real reputation was built in GLMZ's legal gray zones — the towers of the Mid-Ring where corporate tenants conduct sensitive negotiations in conference rooms they believe are acoustically sealed. Counter-surveillance consultants routinely warn their clients about the LASP specifically by name. The device has also become a tool of necessity among political organizers and union coordinators who need to confirm whether a meeting space has been compromised before speaking freely.",
   "manufacturer": "Vasquez Biocompatible Materials",

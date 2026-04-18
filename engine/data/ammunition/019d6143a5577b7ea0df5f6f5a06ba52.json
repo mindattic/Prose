@@ -2,12 +2,7 @@
   "id": "019d6143a5577b7ea0df5f6f5a06ba52",
   "name": "Arcturus High-Density Capacitor Cell ADS-HC9",
   "type": "ammunition",
-  "aliases": [
-    "ADS cell",
-    "HC9",
-    "Arcturus cap",
-    "Red cap"
-  ],
+  "aliases": [],
   "category": "energy_cell",
   "caliber": "N/A — energy cell",
   "description": "The ADS-HC9 is a high-density capacitor cell manufactured by Arcturus Defense Solutions, designed for weapons platforms that require rapid energy discharge rather than sustained output. Unlike bioelectric cells that provide steady power over many shots, the HC9 stores electrical energy in a solid-state capacitor matrix that can be dumped in millisecond-scale bursts — making it the preferred power source for railgun platforms, electromagnetic accelerators, and high-energy pulse weapons.\n\nThe cell's construction uses a layered ceramic-polymer dielectric matrix that achieves energy densities roughly three times that of conventional capacitor banks in a fraction of the volume. Each cell contains an integrated charge management system that prevents catastrophic discharge in the event of physical damage — a critical safety feature, as an uncontrolled release of the HC9's stored energy would produce an explosion equivalent to approximately 50 grams of conventional explosive. Despite this safeguard, damaged HC9 cells are treated as ordnance disposal problems rather than simple waste.\n\nThe HC9 is field-rechargeable from any compatible power source, which distinguishes it from the single-use ZD-T4 bioelectric cells. A standard recharge cycle takes approximately 45 minutes from a vehicle power tap or 4 hours from a portable solar array. This rechargeability makes the HC9 more economical over time but creates a logistics dependency on power infrastructure that bioelectric cells avoid. In extended field operations, HC9-dependent weapons become progressively less useful as recharge opportunities diminish.",

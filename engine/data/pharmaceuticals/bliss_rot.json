@@ -2,15 +2,11 @@
   "id": "019d7850c6977fee8677827071fa201c",
   "name": "Bliss Rot",
   "type": "pharmaceutical",
-  "aliases": [
-    "the rot",
-    "sweet rot",
-    "shelf candy"
-  ],
+  "aliases": [],
   "category": "street_concoction",
   "subcategory": "homebrew euphoriant",
-  "manufacturer": "Known to come from a Shelf cook called \u0027Yaya Demir\u0027 operating out of a flooded basement in the Chicago South Shelf",
-  "description": "A fermented industrial solvent base (specifically a glycol variant used in building climate systems) combined with a synthetic opioid analogue cooked from diverted hospital waste and flavored with black market sweetener to mask the chemical taste. Produces an intense euphoric warmth that Shelf residents describe as \u0027feeling like you matter.\u0027 Genuinely pleasant for approximately ninety minutes before the crash.",
+  "manufacturer": "Known to come from a Shelf cook called 'Yaya Demir' operating out of a flooded basement in the Chicago South Shelf",
+  "description": "A fermented industrial solvent base (specifically a glycol variant used in building climate systems) combined with a synthetic opioid analogue cooked from diverted hospital waste and flavored with black market sweetener to mask the chemical taste. Produces an intense euphoric warmth that Shelf residents describe as 'feeling like you matter.' Genuinely pleasant for approximately ninety minutes before the crash.",
   "method_of_use": "oral",
   "effects": [
     "intense whole-body euphoria",
@@ -30,12 +26,12 @@
   "addiction_risk": "extreme",
   "tier_availability": "Tier 1 only",
   "legality": "illegal",
-  "street_price": "\u03A65-10 per dose",
-  "cultural_context": "Bliss Rot is understood even by its users to be slowly killing them \u2014 the name is not an accident. It persists because on the Shelf, ninety minutes of genuine joy is worth more than abstract future kidney function. It\u0027s used at Shelf parties, after funerals, and on days when the weight of Tier 1 life becomes unbearable. Shelf medics call the kidney disease it causes \u0027the sweet sickness\u0027 and it\u0027s one of the leading causes of death among Shelf residents under 40.",
+  "street_price": "Φ5-10 per dose",
+  "cultural_context": "Bliss Rot is understood even by its users to be slowly killing them — the name is not an accident. It persists because on the Shelf, ninety minutes of genuine joy is worth more than abstract future kidney function. It's used at Shelf parties, after funerals, and on days when the weight of Tier 1 life becomes unbearable. Shelf medics call the kidney disease it causes 'the sweet sickness' and it's one of the leading causes of death among Shelf residents under 40.",
   "story_hooks": [
-    "Yaya Demir has been taken by corp security \u2014 no one knows why, but the Shelf community she supplied is now desperate and turning to more dangerous alternatives",
-    "A Tier 3 nephrologist has started seeing Shelf patients with an unusual kidney failure pattern and is trying to trace the cause \u2014 which requires going somewhere she\u0027s never been",
-    "Someone has started cutting Bliss Rot with a compound that makes it more addictive but accelerates the kidney damage dramatically \u2014 the timeline of the sweet sickness has compressed from years to months"
+    "Yaya Demir has been taken by corp security — no one knows why, but the Shelf community she supplied is now desperate and turning to more dangerous alternatives",
+    "A Tier 3 nephrologist has started seeing Shelf patients with an unusual kidney failure pattern and is trying to trace the cause — which requires going somewhere she's never been",
+    "Someone has started cutting Bliss Rot with a compound that makes it more addictive but accelerates the kidney damage dramatically — the timeline of the sweet sickness has compressed from years to months"
   ],
   "tags": []
 }

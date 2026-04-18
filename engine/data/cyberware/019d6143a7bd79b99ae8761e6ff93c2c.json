@@ -4,11 +4,7 @@
   "brand_name": "Helix",
   "product_name": "Helix Biosystems Sanguine Carrier Implant",
   "type": "cyberware",
-  "aliases": [
-    "Blood Wire",
-    "The Pulse Channel",
-    "Sanguine"
-  ],
+  "aliases": [],
   "category": "comms",
   "body_location": "",
   "description": "The Sanguine Carrier Implant is a subcutaneous communication device that uses the body's own cardiovascular system as a transmission medium, encoding low-bandwidth data signals onto the electrical noise of the user's heartbeat and transmitting them via conductive dermal patches to a paired receiver unit in skin-to-skin contact. Helix Biosystems originally developed the technology for their medical monitoring division — the implant's architecture derives from cardiac telemetry systems used to track patients in environments where wireless transmission was prohibited. The communication application emerged from the same research, when engineers realized the body-conducted signal was effectively invisible to any external monitoring system that wasn't physically touching the user.\n\nThe implant itself is a rice-grain-sized node placed in the forearm's subcutaneous layer during a minor outpatient procedure. It draws power from the body's ambient bioelectric field and requires no external battery. Data is encoded onto cardiac electrical patterns at a rate low enough to be indistinguishable from normal physiological noise, then transmitted through conductive contact — a handshake, a touch on the shoulder, skin contact through thin fabric. The paired receiver decodes the signal and renders it as text or audio through a connected earpiece or display. The effective bandwidth supports text messaging and simple numeric codes; voice is possible but heavily compressed.\n\nThe Sanguine Implant's most significant attribute is its absolute invisibility to conventional surveillance. There is no wireless transmission to intercept, no device to confiscate, and no signal to jam. Communication requires only physical proximity and contact — a limitation that has shaped an entire subculture of tactile signaling protocols among its users. Helix markets it for medical and accessibility applications, and the dual-use communication function exists in a legal gray zone that the company has never moved to clarify.",

@@ -2,12 +2,7 @@
   "id": "019d6143ab36721e96f47beab299ff22",
   "name": "Neuromorphic Intercept Drone NID-6 'Shepherd'",
   "type": "weapon",
-  "aliases": [
-    "Shepherd",
-    "The Crook",
-    "Mindleash",
-    "NID"
-  ],
+  "aliases": [],
   "category": "drone",
   "description": "The NID-6 is a pursuit-class drone designed to intercept augmented targets and establish a forced neural feedback loop through close-proximity broadcast. Roughly the size of a clenched fist, the Shepherd operates at extreme speed—reaching 140 km/h in short bursts—to close distance with a fleeing target before deploying a focused neuromorphic broadcast array at ranges under two meters. The broadcast generates synthetic neural noise tuned to the target's detected implant signature, overwhelming voluntary motor control and inducing a temporary dissociative state lasting 8–25 seconds depending on augmentation density.\n\nThe Shepherd's most technically sophisticated feature is its implant signature library, updated via encrypted uplink to HELIX BIOSYSTEMS' proprietary neural architecture database. Before deploying its broadcast, the drone spends approximately 1.2 seconds in passive scan mode, identifying the specific neural interface architecture present in the target and selecting the most effective noise profile from its library. Heavily augmented targets with multiple neural systems experience compounding disruption as the drone sequences through overlapping broadcast frequencies. Unaugmented targets experience moderate disorientation and nausea but are largely resistant to the motor control effects.\n\nHelix Biosystems markets the NID-6 as a 'compliance assistance platform' for corporate security and law enforcement, emphasizing its non-lethal profile and selective efficacy. Critics—particularly advocacy groups representing augmented citizens—argue that a weapon specifically designed to be more effective against augmented people represents a form of targeted discrimination, and the Shepherd has become a flashpoint in ongoing debates about augmentation rights in GLMZ.",
   "manufacturer": "HELIX BIOSYSTEMS",

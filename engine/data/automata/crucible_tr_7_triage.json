@@ -2,11 +2,7 @@
   "name": "Crucible TR-7 'Triage'",
   "type": "automaton",
   "classification": "Medical",
-  "aliases": [
-    "Triage",
-    "Field Medic",
-    "The Sorter"
-  ],
+  "aliases": [],
   "manufacturer": "CRUCIBLE INDUSTRIES",
   "description": "The TR-7 is a mass-casualty triage automaton — a six-legged platform standing 1.2 meters tall that deploys to disaster sites, building collapses, and large-scale accidents to perform rapid assessment and prioritization of casualties. It moves between victims, scanning vital signs, assessing injury severity, and attaching color-coded triage tags that indicate treatment priority. It performs this assessment in under fifteen seconds per patient and can process over two hundred casualties per hour — work that would require a team of twenty trained medics.\n\nThe TR-7 does not treat injuries. It sorts people into categories: immediate (red), delayed (yellow), minor (green), expectant (black). The last category — expectant — means the patient's injuries are incompatible with survival given available resources. The TR-7 attaches a black tag and moves on. It does this without hesitation, without emotion, without the agonizing human decision of choosing who can be saved and who cannot. Crucible designed the TR-7 specifically to remove this psychological burden from human medics, who suffer lasting trauma from triage decisions. The machine makes the same decisions and suffers nothing.\n\nThe TR-7's objectivity is both its greatest strength and its most disturbing quality. It does not consider age, identity, or social value. It assesses physiology and applies algorithms. A child and an elderly person with identical injuries receive identical tags. A corporate executive and a homeless person are sorted by the same criteria. The TR-7 is the most egalitarian machine in GLMZ, and it achieves this equality only in the context of catastrophe — the one situation where the city's rigid hierarchies temporarily dissolve into the binary of alive and dead.",
   "tier_availability": "Tier 2-3",

@@ -2,40 +2,36 @@
   "id": "019d7850c6c97082a5c6900cfbc7e47b",
   "name": "Persodrin",
   "type": "pharmaceutical",
-  "aliases": [
-    "the Peel",
-    "Hollow",
-    "Skinless"
-  ],
+  "aliases": [],
   "category": "poison_toxin",
-  "subcategory": "ego dissolution agent \u2014 identity suppression compound",
-  "manufacturer": "Unknown \u2014 believed synthesized by a former Helix Biosystems neurochemist operating independently",
-  "description": "Persodrin targets the default mode network and BCI self-model architecture simultaneously, pharmacologically dismantling the integrated sense of self \u2014 the subject loses access to their identity, their preferences, their values, and their narrative continuity. They become a functional but entirely unanchored consciousness: responsive, capable of answering questions, but with no \u0027I\u0027 to protect or lie for. Used as an interrogation tool, it is considered one of the most psychologically catastrophic substances in the GLMZ underworld.",
+  "subcategory": "ego dissolution agent — identity suppression compound",
+  "manufacturer": "Unknown — believed synthesized by a former Helix Biosystems neurochemist operating independently",
+  "description": "Persodrin targets the default mode network and BCI self-model architecture simultaneously, pharmacologically dismantling the integrated sense of self — the subject loses access to their identity, their preferences, their values, and their narrative continuity. They become a functional but entirely unanchored consciousness: responsive, capable of answering questions, but with no 'I' to protect or lie for. Used as an interrogation tool, it is considered one of the most psychologically catastrophic substances in the GLMZ underworld.",
   "method_of_use": "neural_direct",
   "effects": [
     "complete temporary dissolution of self-model and ego architecture",
     "subject is responsive and verbal but has no identity to protect",
-    "all information is volunteered freely \u2014 subject has no concept of secrets or loyalty",
+    "all information is volunteered freely — subject has no concept of secrets or loyalty",
     "subject is docile and compliant",
-    "BCI self-representation layer goes dark \u2014 subject appears as an unregistered node"
+    "BCI self-representation layer goes dark — subject appears as an unregistered node"
   ],
   "side_effects": [
-    "re-integration failure in 15-20% of subjects \u2014 the self does not fully reconstruct, leaving permanent depersonalization disorder",
-    "even successful recovery leaves subjects with profound existential disturbance \u2014 many require years of therapy",
+    "re-integration failure in 15-20% of subjects — the self does not fully reconstruct, leaving permanent depersonalization disorder",
+    "even successful recovery leaves subjects with profound existential disturbance — many require years of therapy",
     "subjects sometimes bond to the first identity they encounter post-dose, adopting it as their own (operator contamination risk)",
-    "prolonged exposure (re-dosing) causes permanent identity fragmentation \u2014 subject becomes functionally multiple or dissociative",
-    "the experience of Persodrin is described by survivors as \u0027dying without dying\u0027 \u2014 PTSD rates approach 100%"
+    "prolonged exposure (re-dosing) causes permanent identity fragmentation — subject becomes functionally multiple or dissociative",
+    "the experience of Persodrin is described by survivors as 'dying without dying' — PTSD rates approach 100%"
   ],
   "duration": "4-8 hours per dose",
   "addiction_risk": "none",
   "tier_availability": "Tier 1 only",
   "legality": "illegal",
-  "street_price": "\u03A6 3,000\u20136,000 per dose",
-  "cultural_context": "Persodrin occupies a specific cultural horror in GLMZ \u2014 even hardened operators consider its use a line. Hiring someone to use Persodrin is a statement: you don\u0027t just want information, you want to destroy a person and leave them walking. Shelf crime lords use it as punishment. Certain corpo intelligence divisions use it and then administer Lacunex to cover the session, leaving the subject with a gap and a shattered self they can\u0027t explain. There are underground support groups for survivors.",
+  "street_price": "Φ 3,000–6,000 per dose",
+  "cultural_context": "Persodrin occupies a specific cultural horror in GLMZ — even hardened operators consider its use a line. Hiring someone to use Persodrin is a statement: you don't just want information, you want to destroy a person and leave them walking. Shelf crime lords use it as punishment. Certain corpo intelligence divisions use it and then administer Lacunex to cover the session, leaving the subject with a gap and a shattered self they can't explain. There are underground support groups for survivors.",
   "story_hooks": [
-    "A Tier 3 journalist investigating corporate disappearances is found wandering the Shelf with no memory of who they are. They know something \u2014 they just don\u0027t know that they know it.",
-    "A recovery specialist is hired to find a corpo asset who was Persodrin\u0027d and released. The asset has adopted a new identity in a Shelf community and doesn\u0027t want to be found \u2014 and may not be safe to bring back.",
-    "The synthesist behind Persodrin is trying to develop an antidote \u2014 a re-integration compound that can restore identity post-dissolution. They need test subjects and are advertising in coded Shelf channels."
+    "A Tier 3 journalist investigating corporate disappearances is found wandering the Shelf with no memory of who they are. They know something — they just don't know that they know it.",
+    "A recovery specialist is hired to find a corpo asset who was Persodrin'd and released. The asset has adopted a new identity in a Shelf community and doesn't want to be found — and may not be safe to bring back.",
+    "The synthesist behind Persodrin is trying to develop an antidote — a re-integration compound that can restore identity post-dissolution. They need test subjects and are advertising in coded Shelf channels."
   ],
   "tags": []
 }

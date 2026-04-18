@@ -4,12 +4,7 @@
   "brand_name": "Saltmarsh",
   "product_name": "Saltmarsh Telecom NerveTap IQ-9 Neural Traffic Metadata Interception Node",
   "type": "technology",
-  "aliases": [
-    "The Sniffer",
-    "IQ-Tap",
-    "Nerve Hook",
-    "Signal Ghost"
-  ],
+  "aliases": [],
   "subcategory": "surveillance",
   "description": "The NerveTap IQ-9 is a passive neural-traffic interception system installed within Saltmarsh Telecom's urban mesh relay infrastructure — the same tower and repeater network that carries encrypted neural augmentation traffic between implants and cloud processing services. The IQ-9 hardware module does not decrypt intercepted transmissions; instead, it captures and logs the metadata envelope of every neural data packet passing through its relay node: transmission timing, packet size distributions, handshake signatures, signal modulation fingerprints, and the unique hardware identifiers of transmitting implants. Saltmarsh's analytics backend correlates this metadata stream to construct behavioral and social graphs without ever accessing protected communication content, sidestepping the GLMZ Neural Privacy Compact's content-protection provisions.",
   "tier_availability": "Infrastructure-level (passive; affects all neural augmentation users regardless of tier)",

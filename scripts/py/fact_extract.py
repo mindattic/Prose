@@ -233,7 +233,7 @@ async def _run_extraction_async(limit=None, repo=None, dry_run=False, concurrenc
     console.print(f"  Dry run: {dry_run}")
 
     if dry_run:
-        console.print("[yellow]Dry run — showing first 5 files that would be processed:[/yellow]")
+        console.print("[yellow]Dry run -- showing first 5 files that would be processed:[/yellow]")
         for f in files[:5]:
             console.print(f"  {f}")
         return
@@ -318,6 +318,12 @@ if __name__ == "__main__":
     parser.add_argument("--dry-run", action="store_true", help="Show what would be processed without calling API")
     parser.add_argument("--concurrency", type=int, help=f"Number of parallel API calls (default: {CONCURRENCY})")
 
+    parser.add_argument("--silent", action="store_true", help="Suppress all console output")
     args = parser.parse_args()
+    if args.silent:
+        import sys as _sys, os as _os
+        _sys.stdout = open(_os.devnull, "w")
+        _sys.stderr = open(_os.devnull, "w")
+
 
     run_extraction(limit=args.limit, repo=args.repo, dry_run=args.dry_run, concurrency=args.concurrency)

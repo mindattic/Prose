@@ -4,11 +4,7 @@
   "brand_name": "Phasalloy",
   "product_name": "Phasalloy-QD",
   "type": "substrate",
-  "aliases": [
-    "qubit-steel",
-    "coherence metal",
-    "QD alloy"
-  ],
+  "aliases": [],
   "category": "exotic",
   "description": "Phasalloy-QD is a niobium-tantalum-silicon alloy whose quantum-assembled crystalline structure supports coherent quantum superposition states in macroscopic domains at room temperature, enabling the material itself to function as a distributed quantum register — effectively a metal that computes. Individual domains can be initialized, entangled, and read out using applied electromagnetic fields, making Phasalloy-QD the substrate of choice for embedded quantum processing in physical structures. The material is simultaneously a structural metal and a quantum computational medium, with coherence times measured in milliseconds — long enough for useful computation.",
   "properties": [

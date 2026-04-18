@@ -2,15 +2,11 @@
   "id": "019d7850c6ad7f2fbff6595c23b3df3b",
   "name": "Foxfire",
   "type": "pharmaceutical",
-  "aliases": [
-    "fox",
-    "glow-cook",
-    "the shimmer"
-  ],
+  "aliases": [],
   "category": "street_concoction",
   "subcategory": "bioluminescent_psychedelic",
-  "manufacturer": "Cultivar collective known as \u0027The Garden\u0027, Gary Ruins",
-  "description": "A liquid extract brewed from genetically-drifted bioluminescent fungi cultivated in the flooded basement levels of the Gary Ruins \u2014 fungi that have been growing in contact with leached geneware runoff for decades and have mutated into something novel. The brew causes vivid phosphene hallucinations, a feeling of bodily warmth, and in some users, temporary bioluminescence of the skin and mucous membranes. The Garden treats it as a sacrament. Everyone else treats it as the cheapest trip available.",
+  "manufacturer": "Cultivar collective known as 'The Garden', Gary Ruins",
+  "description": "A liquid extract brewed from genetically-drifted bioluminescent fungi cultivated in the flooded basement levels of the Gary Ruins — fungi that have been growing in contact with leached geneware runoff for decades and have mutated into something novel. The brew causes vivid phosphene hallucinations, a feeling of bodily warmth, and in some users, temporary bioluminescence of the skin and mucous membranes. The Garden treats it as a sacrament. Everyone else treats it as the cheapest trip available.",
   "method_of_use": "oral",
   "effects": [
     "intense visual hallucinations with luminescent quality",
@@ -31,12 +27,12 @@
   "addiction_risk": "low",
   "tier_availability": "Tier 1-2",
   "legality": "illegal",
-  "street_price": "\u03A68-15 per bottle",
-  "cultural_context": "The Garden is a genuine subculture in the Gary Ruins \u2014 they\u0027ve been cultivating their fungi for thirty years and view Foxfire as a spiritual tool. They sell excess product only reluctantly, and there are counterfeit batches made by opportunists that have caused deaths. True Garden-brewed Foxfire comes in hand-sealed clay bottles with a thumbprint in the wax. The glowing skin effect has made it fashionable in certain underground art scenes.",
+  "street_price": "Φ8-15 per bottle",
+  "cultural_context": "The Garden is a genuine subculture in the Gary Ruins — they've been cultivating their fungi for thirty years and view Foxfire as a spiritual tool. They sell excess product only reluctantly, and there are counterfeit batches made by opportunists that have caused deaths. True Garden-brewed Foxfire comes in hand-sealed clay bottles with a thumbprint in the wax. The glowing skin effect has made it fashionable in certain underground art scenes.",
   "story_hooks": [
-    "A Tier 3 biotech researcher has quietly identified that the Gary fungi have developed genuinely novel enzymatic properties \u2014 someone powerful wants The Garden\u0027s location and cultivation methods, and they\u0027re not asking nicely",
-    "A user\u0027s permanent bioluminescence is spreading \u2014 it\u0027s not just cosmetic anymore, and it\u0027s attracting attention from Helix Biosystems",
-    "The Garden\u0027s eldest cultivar has died, and a succession dispute is fracturing the collective \u2014 someone needs to broker peace before the knowledge of proper cultivation dies with the conflict"
+    "A Tier 3 biotech researcher has quietly identified that the Gary fungi have developed genuinely novel enzymatic properties — someone powerful wants The Garden's location and cultivation methods, and they're not asking nicely",
+    "A user's permanent bioluminescence is spreading — it's not just cosmetic anymore, and it's attracting attention from Helix Biosystems",
+    "The Garden's eldest cultivar has died, and a succession dispute is fracturing the collective — someone needs to broker peace before the knowledge of proper cultivation dies with the conflict"
   ],
   "tags": []
 }

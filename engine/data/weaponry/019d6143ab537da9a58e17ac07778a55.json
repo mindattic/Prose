@@ -2,12 +2,7 @@
   "id": "019d6143ab537da9a58e17ac07778a55",
   "name": "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
   "type": "weapon",
-  "aliases": [
-    "Kitestring",
-    "The Leash",
-    "Overhead",
-    "Wire Eye"
-  ],
+  "aliases": [],
   "category": "drone",
   "description": "The TORSD-7 is a high-altitude tethered drone platform designed for persistent area suppression and overwatch. Unlike free-flight drones, the Kitestring operates on a conductive monofilament tether up to 180 meters in length, anchored to a ground station the size of a briefcase. The tether serves dual purposes: it provides continuous power to the drone, eliminating battery constraints, and it carries the electrothermal discharge rail that is the platform's primary weapon system. The drone maintains a stable hover via four counter-rotating ducted fans and positions itself above a target area while the ground station operator designates firing solutions through a handheld interface.\n\nThe weapon system works by charging the tether itself to extreme voltage and then releasing a directed electrothermal burst downward along a secondary projected filament fired from the drone's undercarriage. The projected filament is a ultra-fine conductive thread, weighted and aimed, that drapes across a target or target area. On contact, the ground station completes the circuit and delivers a high-amperage electrothermal pulse through the filament. The effect on unshielded human targets is immediate cardiac and neuromuscular disruption. On vehicles or electronic systems, the pulse induces catastrophic circuit failure.\n\nThe TORSD-7's distinctive silhouette — a hovering shape connected to the ground by a nearly invisible thread — has earned it a reputation for surreal, almost supernatural lethality. Victims and witnesses frequently report not understanding how or from where the strike came. Zheng-Dao Bioelectric developed the platform for infrastructure protection contracts in contested industrial zones, but the design was widely copied and the black market variant, the 'Barefoot,' strips the IFF systems and sells the ground station as a portable backpack unit.",
   "manufacturer": "ZHENG-DAO BIOELECTRIC",

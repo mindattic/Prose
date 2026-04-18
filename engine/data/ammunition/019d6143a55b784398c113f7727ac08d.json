@@ -2,12 +2,7 @@
   "id": "019d6143a55b784398c113f7727ac08d",
   "name": "Tessera Multi-Platform Liquid Propellant Cartridge TMP-40",
   "type": "ammunition",
-  "aliases": [
-    "Tessera propellant",
-    "TMP-40",
-    "Liquid cart",
-    "Juice pack"
-  ],
+  "aliases": [],
   "category": "exotic",
   "caliber": "40mL liquid propellant",
   "description": "The TMP-40 is a 40mL sealed liquid propellant cartridge manufactured by Tessera Corponation for use in electrothermal chemical weapon platforms. The cartridge contains a proprietary biphasic liquid propellant that is flash-vaporized by the weapon's capacitor bank to generate the extreme chamber pressures required for ETC ammunition. Unlike conventional solid propellant cartridges, the liquid formulation allows for variable-volume injection — the weapon can modulate how much propellant is consumed per shot, theoretically allowing an operator to trade muzzle velocity for ammunition economy.\n\nThe propellant formulation is Tessera's most closely guarded chemical secret. The biphasic compound — which separates into two immiscible layers when at rest and homogenizes when agitated by the weapon's injection pump — achieves energy densities approximately 40% higher than conventional solid propellants. This performance gap is what makes ETC weapons viable: without the TMP-40's energy density, the chamber pressures required for hypervelocity projectiles would demand impractically large propellant volumes.\n\nThe cartridge is integrated into the ETC magazine assembly, feeding propellant through a precision micro-injector that meters exact volumes per shot. Third-party propellant formulations that don't match the TMP-40's viscosity and vaporization characteristics cause injector fouling, which in ETC weapons manifests as either reduced muzzle velocity (underfueling) or catastrophic chamber detonation (overfueling). Tessera Corponation has never published the propellant specification, and reverse-engineering attempts have produced formulations that work for 10-20 shots before injector degradation begins.",

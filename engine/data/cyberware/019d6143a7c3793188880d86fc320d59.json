@@ -4,12 +4,7 @@
   "brand_name": "Ringo",
   "product_name": "Ringo Corponation Fractal Handshake Coin",
   "type": "cyberware",
-  "aliases": [
-    "The Coin",
-    "Ringo Token",
-    "FHC",
-    "Lucky Piece"
-  ],
+  "aliases": [],
   "category": "comms",
   "body_location": "",
   "description": "The Fractal Handshake Coin is a physical cryptographic authentication and one-time-use secure channel initiator disguised as an unremarkable commemorative coin — the kind sold in tourist traps and corporate lobbies across GLMZ. Embedded within the coin's interior is a fractal key generator chip, a compressed burst transmitter, and a self-destruct thermite micro-charge. When the coin is handled in a specific way — a particular sequence of pressure points applied to obverse and reverse faces — it initiates a one-time cryptographic handshake with a designated receiver, establishing a temporary, fully authenticated, end-to-end encrypted communication channel that exists for a maximum of ninety seconds before the coin destroys its own key material and becomes inert.\n\nThe channel established by the Coin is authenticated against a fractal key tree that makes replay attacks and man-in-the-middle interception mathematically intractable within the channel's operational window. No persistent infrastructure is required — the coin carries everything needed to bootstrap the secure channel from scratch. The receiver endpoint can be a hardware terminal, a compatible implant, or another Coin held by a paired party. After use, the coin is physically identical to any other commemorative coin and passes all standard contraband scans.\n\nRingo Corponation markets the Fractal Handshake Coin as a 'legacy authentication solution' for high-value executive communications, but its real market is anyone who needs to establish a provably secure channel with no pre-existing digital relationship and no persistent infrastructure — a one-time meeting between parties who have never communicated before and may never do so again.",

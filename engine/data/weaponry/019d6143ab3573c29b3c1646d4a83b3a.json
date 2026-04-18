@@ -2,12 +2,7 @@
   "id": "019d6143ab3573c29b3c1646d4a83b3a",
   "name": "Neural Feedback Carbine NFC-3 'Mirrorgun'",
   "type": "weapon",
-  "aliases": [
-    "Mirrorgun",
-    "NFC-3",
-    "The Echo",
-    "Feedback"
-  ],
+  "aliases": [],
   "category": "firearm",
   "description": "The NFC-3 does not fire a conventional projectile. It emits a tightly focused stream of encoded neural feedback signals derived from the operator's own nervous system, sampled in real time through a sensor array embedded in the grip and stock. The signal stream is amplified, phase-inverted, and projected at the target via a coherent electromagnetic emitter in the barrel. When the stream contacts a target with active neural augmentation — cybernetic nervous system components, neural interface implants, or synaptic enhancement hardware — it creates a feedback loop between the target's augmentation and the projected signal, producing effects ranging from temporary motor disruption to complete neurological shutdown depending on the intensity setting and the target's augmentation profile.\n\nRingo Corponation developed the NFC-3 as a counter-augmentation platform, responding to the tactical problem of heavily cyberware-augmented combatants who could shrug off conventional firearms due to pain suppression systems and reflex enhancements. The feedback loop exploits the fundamental architecture of neural augmentation: the more extensively a target is augmented, the more vulnerable they are to a correctly tuned feedback stream. Against fully unaugmented targets, the NFC-3 is almost entirely ineffective — the emitted signal has no neural hardware to interact with and dissipates without meaningful effect. This limitation is the weapon's defining tactical characteristic.\n\nThe grip sensor array must maintain contact with the operator's bare skin to sample the neural signal baseline. Operators wearing full gloves cannot use the weapon effectively — a deliberate design choice that Ringo Corponation defends as a safety feature preventing unauthorized use, though critics note it also makes the weapon impractical in environments requiring full protective equipment. The weapon's emitter produces a faint violet luminescence during discharge that is invisible to standard optics but detectable to augmented visual systems — a cruel irony given the weapon's primary target demographic.",
   "manufacturer": "RINGO CORPONATION",

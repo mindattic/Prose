@@ -4,13 +4,7 @@
   "brand_name": "Ouroboros",
   "product_name": "SolarHarvest OCA-6",
   "type": "technology",
-  "aliases": [
-    "SolarHarvest",
-    "OCA-6",
-    "Orbital Solar",
-    "Space Solar",
-    "Power Beam"
-  ],
+  "aliases": [],
   "subcategory": "energy",
   "description": "The SolarHarvest OCA-6 is a constellation of solar collection satellites in geosynchronous orbit that beam collected solar energy to ground-based receiving stations as focused microwave transmissions. Each satellite is a thin-film solar array measuring 2 kilometers square that collects solar radiation continuously — unimpeded by atmosphere, weather, or nighttime — and converts it to a coherent microwave beam directed at a ground receiver called a rectenna. Each satellite generates approximately 5 gigawatts of power, of which roughly 3.5 gigawatts reaches the ground after transmission losses.\n\nOuroboros operates a constellation of 12 SolarHarvest satellites, providing a combined ground-delivered power of 42 gigawatts — sufficient to power a mid-sized nation. The satellites orbit at 35,786 kilometers altitude, each locked in position above its assigned rectenna. The ground rectennas are large installations — approximately 5 kilometers in diameter — consisting of arrays of microwave-absorbing antenna elements that convert the incoming beam to electricity. The rectennas are located in designated zones outside city limits, with the generated power distributed through conventional grid infrastructure to surrounding urban areas.\n\nThe microwave transmission beam is invisible to the naked eye but absolutely lethal to anything that enters it. Each beam carries 5 gigawatts of microwave energy in a column approximately 100 meters in diameter — sufficient to vaporize an aircraft, boil a lake, or sterilize a city block in seconds. The beam paths are marked on all aviation charts and surrounded by restricted airspace, but the potential for weaponization is obvious and widely discussed. Ouroboros maintains that the satellites' targeting systems are physically incapable of directing the beam away from their assigned rectennas — a claim that security analysts consider plausible but unverifiable.",
   "tier_availability": "Tier 4",

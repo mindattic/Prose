@@ -4,12 +4,7 @@
   "brand_name": "Vantablack",
   "product_name": "Vantablack Media Hollow Tongue Relay",
   "type": "equipment",
-  "aliases": [
-    "Dead Tongue",
-    "The Hollow",
-    "VBM-HTR",
-    "Ghost Post"
-  ],
+  "aliases": [],
   "category": "comms",
   "description": "The Hollow Tongue Relay is a passive dead-drop infrastructure device disguised as an ordinary piece of urban furniture or commercial detritus — a cracked utility panel, a branded vending machine fascia, a municipal drainage marker. Internally it houses a heavily shielded, ultra-low-power mesh node that stores encrypted message packets in a write-once buffer, broadcasting nothing until a specifically keyed query device passes within two meters and triggers a silent, microsecond burst transmission. The relay never initiates contact and emits no continuous signal, making it invisible to both passive monitoring grids and active sweep protocols.",
   "manufacturer": "VANTABLACK MEDIA",

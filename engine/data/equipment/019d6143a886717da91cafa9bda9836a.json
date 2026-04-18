@@ -4,12 +4,7 @@
   "brand_name": "Zheng",
   "product_name": "Zheng-Dao Heavy Industries Seismic Sensor Network SSN-3",
   "type": "equipment",
-  "aliases": [
-    "SSN-3",
-    "Ground Ears",
-    "Tremor Net",
-    "Zheng-Dao Listener"
-  ],
+  "aliases": [],
   "category": "sensors",
   "description": "A deployable network of ground-mounted seismic sensors that detect and classify movement on and below the surface within a monitored area. Each sensor spike is driven into the ground and detects vibrations from footsteps, vehicles, tunneling activity, and structural settling. The network's AI classifies detected vibrations — distinguishing between a walking person, a running person, a vehicle, and mechanical digging — and provides the count, direction, and speed of detected movement. The system can detect a single person walking at up to 100 meters and a vehicle at up to 500 meters through ground vibration alone.",
   "manufacturer": "ZHENG-DAO HEAVY INDUSTRIES",

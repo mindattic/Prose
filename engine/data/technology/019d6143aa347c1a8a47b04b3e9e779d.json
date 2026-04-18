@@ -4,12 +4,7 @@
   "brand_name": "Axiom",
   "product_name": "Axiom Systems Automated Censorship Infrastructure",
   "type": "technology",
-  "aliases": [
-    "ACI",
-    "Content Wall",
-    "Axiom Filter",
-    "Truth Gate"
-  ],
+  "aliases": [],
   "subcategory": "communications",
   "description": "A real-time content filtering system embedded in Diaspora's communication infrastructure that identifies and suppresses information Axiom has designated as harmful, classified, or strategically disadvantageous. The ACI monitors all text, voice, image, and video content passing through Diaspora, using AI to identify prohibited content by semantic meaning rather than keyword matching — it understands what is being said, not just the words being used. Content flagged by the ACI is silently suppressed — messages fail to deliver, posts disappear, and searches return no results, all without the user receiving any indication of censorship.",
   "tier_availability": "Tier 1+",

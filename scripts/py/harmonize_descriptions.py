@@ -1,5 +1,5 @@
 """
-Ancestry Harmonizer — Adjusts physical descriptions to match genetic ancestry
+Ancestry Harmonizer -- Adjusts physical descriptions to match genetic ancestry
 
 For each character with genetic_ancestry and physical_description:
 1. Adjusts heritage-derived traits (heritage, skin_tone, complexion, eye_color)
@@ -38,11 +38,11 @@ You will receive:
 - Their genetic_ancestry (percentage breakdown by region)
 - Their current physical_description
 
-YOUR JOB — adjust heritage-derived traits:
-1. "heritage" — rewrite to accurately describe the genetic mix shown in genetic_ancestry
-2. "skin_tone" — adjust to reflect the realistic blending of their ancestry groups
-3. "complexion" — adjust facial feature descriptions to reflect the ancestry mix. Keep non-heritage details (scars, skin condition, grooming, augmentation marks)
-4. "eye_color" — adjust ONLY if currently described as a natural color. If augmented/cybernetic/implanted, keep as-is
+YOUR JOB -- adjust heritage-derived traits:
+1. "heritage" -- rewrite to accurately describe the genetic mix shown in genetic_ancestry
+2. "skin_tone" -- adjust to reflect the realistic blending of their ancestry groups
+3. "complexion" -- adjust facial feature descriptions to reflect the ancestry mix. Keep non-heritage details (scars, skin condition, grooming, augmentation marks)
+4. "eye_color" -- adjust ONLY if currently described as a natural color. If augmented/cybernetic/implanted, keep as-is
 
 PRESERVE EXACTLY (do not change these):
 - height_cm, weight_kg, build
@@ -238,7 +238,13 @@ def main():
     parser.add_argument("--dry-run", action="store_true", help="Preview without calling API")
     parser.add_argument("--force", action="store_true", help="Re-process already harmonized characters")
     parser.add_argument("--concurrency", type=int, help=f"Parallel API calls (default: {CONCURRENCY})")
+    parser.add_argument("--silent", action="store_true", help="Suppress all console output")
     args = parser.parse_args()
+    if args.silent:
+        import sys as _sys, os as _os
+        _sys.stdout = open(_os.devnull, "w")
+        _sys.stderr = open(_os.devnull, "w")
+
 
     asyncio.run(run_harmonize(
         limit=args.limit,

@@ -2,39 +2,36 @@
   "id": "019d7850c6e77e21afa21b31d65a8c2e",
   "name": "Velastrin",
   "type": "pharmaceutical",
-  "aliases": [
-    "Softchrome",
-    "Silk"
-  ],
+  "aliases": [],
   "category": "augment_interactive",
   "subcategory": "augment_sensitivity_modulator",
   "manufacturer": "Novafold Pharmaceuticals",
-  "description": "A licensed SNT-interface sensitizer that amplifies tactile and proprioceptive feedback from chrome augments, making mechanical limbs and sensory implants feel dramatically more \u0027present\u0027 and responsive. Medically prescribed for augment integration therapy \u2014 helping patients reconnect with their chrome after trauma or rejection episodes. Widely used recreationally for the sensation of feeling one\u0027s augments as extensions of self rather than attachments.",
+  "description": "A licensed SNT-interface sensitizer that amplifies tactile and proprioceptive feedback from chrome augments, making mechanical limbs and sensory implants feel dramatically more 'present' and responsive. Medically prescribed for augment integration therapy — helping patients reconnect with their chrome after trauma or rejection episodes. Widely used recreationally for the sensation of feeling one's augments as extensions of self rather than attachments.",
   "method_of_use": "oral",
   "effects": [
     "Tactile feedback from augmented limbs amplified to near-organic sensitivity",
-    "Proprioceptive clarity \u2014 augments feel precisely located in space",
+    "Proprioceptive clarity — augments feel precisely located in space",
     "Sensory augments report increased subjective richness of input",
-    "Emotional warmth associated with augmented body parts \u2014 reduced body dysmorphia",
+    "Emotional warmth associated with augmented body parts — reduced body dysmorphia",
     "Enhanced fine motor control through improved feedback loops"
   ],
   "side_effects": [
-    "Hypersensitivity \u2014 augments become painfully responsive to impact or pressure",
+    "Hypersensitivity — augments become painfully responsive to impact or pressure",
     "Emotional distress if augments are damaged or removed while dosed",
     "Mild physical dependency with prolonged use",
-    "Rebound dissociation upon cessation \u2014 augments feel \u0027dead\u0027 for 12-24 hours",
+    "Rebound dissociation upon cessation — augments feel 'dead' for 12-24 hours",
     "Contraindicated with combat-grade chrome due to pain feedback risk in injury"
   ],
   "duration": "4-6 hours",
   "addiction_risk": "moderate",
   "tier_availability": "Tier 2-3",
   "legality": "prescription",
-  "street_price": "\u03A685-120",
-  "cultural_context": "Velastrin sits at a cultural intersection in GLMZ. For augmented Tier 2 workers who\u0027ve had chrome for years and stopped feeling it, Velastrin is a way to reclaim their body. For Tier 3 users with high-end cosmetic augments, it\u0027s an experience drug \u2014 feeling expensive chrome the way it was meant to feel. There\u0027s a quiet, melancholy community of long-term augmented users who take Velastrin not to get high, but to feel whole. Therapists debate whether this is healthy adaptation or dependency.",
+  "street_price": "Φ85-120",
+  "cultural_context": "Velastrin sits at a cultural intersection in GLMZ. For augmented Tier 2 workers who've had chrome for years and stopped feeling it, Velastrin is a way to reclaim their body. For Tier 3 users with high-end cosmetic augments, it's an experience drug — feeling expensive chrome the way it was meant to feel. There's a quiet, melancholy community of long-term augmented users who take Velastrin not to get high, but to feel whole. Therapists debate whether this is healthy adaptation or dependency.",
   "story_hooks": [
-    "A Tier 3 augment therapist is prescribing Velastrin far beyond medical need \u2014 their patients are becoming dependent, but they genuinely believe the drug is therapeutic. Someone wants the therapist stopped, and it\u0027s not clear if the motive is ethical or commercial.",
-    "A Shelf fighter with extensive combat chrome has never taken Velastrin and doesn\u0027t know what they\u0027re missing \u2014 being given it for the first time mid-mission causes an unexpected emotional crisis when they feel, for the first time, how much of their original body is gone",
-    "Counterfeit Velastrin is circulating that includes a hidden secondary compound \u2014 one that makes users\u0027 augment feedback vulnerable to external BCI signal hijacking"
+    "A Tier 3 augment therapist is prescribing Velastrin far beyond medical need — their patients are becoming dependent, but they genuinely believe the drug is therapeutic. Someone wants the therapist stopped, and it's not clear if the motive is ethical or commercial.",
+    "A Shelf fighter with extensive combat chrome has never taken Velastrin and doesn't know what they're missing — being given it for the first time mid-mission causes an unexpected emotional crisis when they feel, for the first time, how much of their original body is gone",
+    "Counterfeit Velastrin is circulating that includes a hidden secondary compound — one that makes users' augment feedback vulnerable to external BCI signal hijacking"
   ],
   "tags": []
 }

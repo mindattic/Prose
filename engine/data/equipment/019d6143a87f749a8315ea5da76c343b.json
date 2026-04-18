@@ -4,12 +4,7 @@
   "brand_name": "Vespid",
   "product_name": "Vespid Dynamics Swarm Relay Beacon SRB-4",
   "type": "equipment",
-  "aliases": [
-    "SRB-4",
-    "Drone Beacon",
-    "Swarm Point",
-    "Rally Flag"
-  ],
+  "aliases": [],
   "category": "drones",
   "description": "A portable beacon that serves as a command-and-control relay point for Vespid drone swarms, extending operational range and providing a rally point for autonomous drone assets. The SRB-4 broadcasts encrypted control signals, collects sensor data from drones within range, and can serve as an autonomous command node if communication with the primary controller is lost. Multiple beacons can be networked to create a mesh of relay points covering an entire operational area. The beacon also serves as a charging station for micro-drones, with inductive pads that recharge up to four drones simultaneously.",
   "manufacturer": "VESPID DYNAMICS",

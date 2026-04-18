@@ -2,39 +2,34 @@
   "id": "019d7850c6e170ad8236cc05ee8f561a",
   "name": "Tethakon",
   "type": "pharmaceutical",
-  "aliases": [
-    "Deadweight",
-    "the Anchor",
-    "Stonedrop",
-    "Long Sleep"
-  ],
+  "aliases": [],
   "category": "poison_toxin",
-  "subcategory": "paralytic agent \u2014 CNS sedative-paralytic, extended duration",
+  "subcategory": "paralytic agent — CNS sedative-paralytic, extended duration",
   "manufacturer": "Novafold Pharmaceuticals (research compound; stolen formula in wide Shelf circulation)",
-  "description": "Tethakon is a central nervous system depressant that produces deep, graded paralysis beginning with voluntary motor function and descending through autonomic regulation over approximately 20 minutes, inducing a state of profound unresponsiveness that mimics coma while preserving core vital function at minimal levels. Unlike Myovex, Tethakon renders subjects unconscious \u2014 there is no awareness during effect \u2014 making it the preferred tool for long-duration transport and storage of unwilling subjects. The compound was originally developed by Novafold as a surgical adjunct for procedures requiring extended immobility in BCI-active patients; the formula leaked to Shelf lab networks within three years of development.",
+  "description": "Tethakon is a central nervous system depressant that produces deep, graded paralysis beginning with voluntary motor function and descending through autonomic regulation over approximately 20 minutes, inducing a state of profound unresponsiveness that mimics coma while preserving core vital function at minimal levels. Unlike Myovex, Tethakon renders subjects unconscious — there is no awareness during effect — making it the preferred tool for long-duration transport and storage of unwilling subjects. The compound was originally developed by Novafold as a surgical adjunct for procedures requiring extended immobility in BCI-active patients; the formula leaked to Shelf lab networks within three years of development.",
   "method_of_use": "injection",
   "effects": [
     "Progressive motor paralysis followed by loss of consciousness within 15-20 minutes",
     "Coma-like unresponsive state with preserved cardiac and respiratory function at minimum viable levels",
-    "BCI enters low-power standby \u2014 distress signaling is suppressed but not eliminated",
+    "BCI enters low-power standby — distress signaling is suppressed but not eliminated",
     "Dose-scalable from 4 hours to 36 hours unconsciousness"
   ],
   "side_effects": [
-    "Narrow therapeutic window \u2014 overdose causes respiratory depression and death",
+    "Narrow therapeutic window — overdose causes respiratory depression and death",
     "Subjects with BCI pain management implants may have compound interaction causing cardiac irregularity",
     "Prolonged immobility creates risk of deep vein thrombosis and pressure injury in extended doses",
-    "Recovery from long doses (18\u002B hours) includes a 4-6 hour period of extreme disorientation and motor incoordination"
+    "Recovery from long doses (18+ hours) includes a 4-6 hour period of extreme disorientation and motor incoordination"
   ],
   "duration": "4-36 hours depending on dose; recovery is gradual over 1-4 hours",
   "addiction_risk": "none",
   "tier_availability": "Tier 2-3",
   "legality": "illegal",
-  "street_price": "\u03A6700\u2013\u03A61,800 per dose",
-  "cultural_context": "Tethakon occupies a specific and grim niche in GLMZ\u0027s trafficking and coercive transport economy. Where Myovex is used for short-duration control and interrogation, Tethakon is used for moving people \u2014 across the city, across tier boundaries, out of GLMZ entirely. The Shelf\u0027s missing-persons statistics have been correlated by underground researchers with Tethakon availability in specific districts. Corpo security uses it in off-books detention operations under the euphemism \u0027sedated transport protocol.\u0027 The irony of Novafold\u0027s clean, clinical branding appearing on a compound so thoroughly embedded in human trafficking is not lost on GLMZ\u0027s underground press.",
+  "street_price": "Φ700–Φ1,800 per dose",
+  "cultural_context": "Tethakon occupies a specific and grim niche in GLMZ's trafficking and coercive transport economy. Where Myovex is used for short-duration control and interrogation, Tethakon is used for moving people — across the city, across tier boundaries, out of GLMZ entirely. The Shelf's missing-persons statistics have been correlated by underground researchers with Tethakon availability in specific districts. Corpo security uses it in off-books detention operations under the euphemism 'sedated transport protocol.' The irony of Novafold's clean, clinical branding appearing on a compound so thoroughly embedded in human trafficking is not lost on GLMZ's underground press.",
   "story_hooks": [
-    "A Shelf community organizer has been mapping Tethakon distribution points and correlating them with disappearances \u2014 the pattern points to a transport hub that is definitely not on any official map, and she has 48 hours before her data gets noticed.",
-    "A runner wakes up in a Tier 2 medical facility with no memory of the last 22 hours, a Tethakon metabolite taper in their bloodwork, and a message on their BCI from an unknown sender: \u0027They couldn\u0027t keep you. Run.\u0027",
-    "A Novafold internal security officer discovers the formula leak was not an accident \u2014 it was a deliberate release by someone inside the company, and the trafficking network that uses Tethakon has been paying that person quarterly for three years."
+    "A Shelf community organizer has been mapping Tethakon distribution points and correlating them with disappearances — the pattern points to a transport hub that is definitely not on any official map, and she has 48 hours before her data gets noticed.",
+    "A runner wakes up in a Tier 2 medical facility with no memory of the last 22 hours, a Tethakon metabolite taper in their bloodwork, and a message on their BCI from an unknown sender: 'They couldn't keep you. Run.'",
+    "A Novafold internal security officer discovers the formula leak was not an accident — it was a deliberate release by someone inside the company, and the trafficking network that uses Tethakon has been paying that person quarterly for three years."
   ],
   "tags": []
 }

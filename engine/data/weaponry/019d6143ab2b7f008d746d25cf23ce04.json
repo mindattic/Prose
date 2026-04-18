@@ -2,12 +2,7 @@
   "id": "019d6143ab2b7f008d746d25cf23ce04",
   "name": "Gauss Flechette Repeater GFR-3 'Needlerain'",
   "type": "weapon",
-  "aliases": [
-    "Needlerain",
-    "The Sewing Machine",
-    "Flechette Storm",
-    "GFR-3"
-  ],
+  "aliases": [],
   "category": "firearm",
   "description": "The GFR-3 operates on stacked linear magnetic acceleration coils arranged in a helical configuration, cycling sub-caliber tungsten-ceramic flechettes at approximately 4,200 rounds per minute. Each flechette — roughly 3mm wide and 22mm long — is ferromagnetically coated along its rear third, allowing the coil stack to grab, accelerate, and release in under 0.8 milliseconds per round. The result is a nearly silent, caseless stream of kinetic penetrators that can saturate a doorframe-sized area at close range or punch through light armor panels at distance.\n\nWhat distinguishes the GFR-3 from earlier gauss repeaters is its adaptive coil timing system, which reads barrel temperature and magnetic field saturation 200 times per second and adjusts current delivery to maintain consistent muzzle velocity even as the barrel heats. Earlier models suffered from 'velocity drift,' where rounds fired late in a magazine were significantly slower than initial rounds, producing inconsistent terminal performance. The GFR-3 solved this through TESSERA CORPONATION's proprietary FluxSync firmware, which also enables selectable dispersion patterns — tight column for armor penetration, wide fan for crowd suppression.\n\nThe weapon uses a 300-round cassette magazine that sits beneath the barrel in a bullpup configuration, giving the GFR-3 a stubby, aggressive silhouette. It has no mechanical action, no ejection port, and minimal moving parts beyond the cassette feed mechanism, which makes it exceptionally reliable in wet or contaminated environments. The lack of a traditional trigger group — replaced by a capacitive palm sensor and a pressure ring around the grip — means the weapon cannot fire if not held correctly, a feature that has made it popular with corporate security who worry about weapon retention.",
   "manufacturer": "TESSERA CORPONATION",

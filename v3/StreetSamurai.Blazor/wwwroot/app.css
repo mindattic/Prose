@@ -197,9 +197,8 @@ html, body {
     border-radius: 8px;
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 56px);
     gap: 6px;
-    min-width: 190px;
     box-shadow: 0 8px 24px rgba(0,0,0,0.5);
     animation: ub-reveal 0.14s ease both;
 }
@@ -208,7 +207,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 10px 6px 8px;
+    aspect-ratio: 1;
     border-radius: 6px;
     border: 1px solid #30363d;
     color: #c9d1d9;
@@ -1257,6 +1256,11 @@ textarea.auto-grow {
 @media (max-width: 480px) {
     .cbg-geo-win { width: 120px; }
     .cbg-geo-report { display: none; }
+    .ub-panel {
+        width: calc(100vw - 20px);
+        grid-template-columns: repeat(3, 30vw);
+        right: 0;
+    }
 }
 
 /* ── Floating artifacts — blurry glyph clusters that drift and fade ─────── */

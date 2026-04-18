@@ -4,12 +4,7 @@
   "brand_name": "Ouroboros",
   "product_name": "Ouroboros Energy VoltCarriage EC-9 Inductive Roadway Transit Pod",
   "type": "technology",
-  "aliases": [
-    "Volts",
-    "EC-nines",
-    "Sliders",
-    "Current Cars"
-  ],
+  "aliases": [],
   "subcategory": "transportation",
   "description": "The VoltCarriage EC-9 is a six-passenger autonomous ground transit pod manufactured in partnership between Ouroboros Energy and Cinderblock AI, designed to operate exclusively on Ouroboros-managed inductive charging roadway segments embedded in GLMZ's primary arterial corridors. The EC-9 carries no onboard battery system of meaningful capacity — instead, it draws continuous power from a resonant inductive coil array beneath its chassis that couples with Ouroboros's embedded road transmitter grid, receiving up to 180 kW while in motion. This design philosophy eliminates charging downtime entirely but creates absolute dependency on Ouroboros-maintained road infrastructure. The pod's Cinderblock AI piloting system manages platooning formations of up to 12 EC-9 units traveling in coordinated convoys at 110 km/h, reducing aerodynamic drag and increasing per-road-segment passenger throughput significantly.\n\nThe EC-9 operates on a subscription transit model: Ouroboros sells route access packages tiered by corridor priority, meaning that a premium subscriber's pod receives uninterrupted inductive power and convoy priority queuing, while a basic-tier pod may experience deliberate power-throttling during peak demand — slowing it to a crawl or forcing it to a holding bay while premium traffic passes. The vehicle's exterior is smooth, low-slung, and visually identical across subscription tiers by deliberate corporate policy, which Ouroboros markets as 'egalitarian design.' The pods communicate continuously with the Saltmarsh Telecom AtmoMesh network for environmental routing adjustments and with the PiezoCore LD-5 grid for energy credit accounting when the pod traverses pedestrian-adjacent surface zones.",
   "tier_availability": "Tier 1+",

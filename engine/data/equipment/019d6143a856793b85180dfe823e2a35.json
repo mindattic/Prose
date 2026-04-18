@@ -4,12 +4,7 @@
   "brand_name": "Axiom",
   "product_name": "Axiom Systems Parasitic Data Harvester PDH-3",
   "type": "equipment",
-  "aliases": [
-    "PDH-3",
-    "Data Leech",
-    "Axiom Tick",
-    "Info Vampire"
-  ],
+  "aliases": [],
   "category": "hacking",
   "description": "A device designed to be covertly attached to a target's neural interface charging cable, harvesting data from every charging session. The PDH-3 intercepts the data channel that neural interfaces use during charging to perform backup, update, and diagnostic operations, copying the transmitted data to an encrypted internal storage. Over successive charging sessions, the PDH-3 accumulates a comprehensive picture of the target's neural interface contents — communications, stored memories, access credentials, and cognitive enhancement configurations. The device is powered parasitically from the charging cable and adds no detectable load.",
   "manufacturer": "AXIOM SYSTEMS",

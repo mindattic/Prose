@@ -2,15 +2,11 @@
   "id": "019d7850c6de76cc8a9fc5b419ca55ce",
   "name": "Synthavex",
   "type": "pharmaceutical",
-  "aliases": [
-    "organ oil",
-    "the maintenance",
-    "synth keeper"
-  ],
+  "aliases": [],
   "category": "medical",
   "subcategory": "synthetic organ maintenance",
   "manufacturer": "Novafold Pharmaceuticals",
-  "description": "Synthavex is a daily maintenance compound for individuals with synthetic organ replacements \u2014 artificial hearts, lungs, kidneys, and livers that incorporate living SNT-hybrid tissue. It provides the specific enzymatic cofactors, lubricating proteins, and ionic balancers that synthetic organs require to maintain function, preventing the gradual mechanical degradation and SNT tissue death that occurs when these compounds are absent.",
+  "description": "Synthavex is a daily maintenance compound for individuals with synthetic organ replacements — artificial hearts, lungs, kidneys, and livers that incorporate living SNT-hybrid tissue. It provides the specific enzymatic cofactors, lubricating proteins, and ionic balancers that synthetic organs require to maintain function, preventing the gradual mechanical degradation and SNT tissue death that occurs when these compounds are absent.",
   "method_of_use": "oral",
   "effects": [
     "maintains synthetic organ tissue viability",
@@ -23,19 +19,19 @@
     "altered urine and sweat odor due to excretion of metabolites",
     "mild nausea in first weeks of use",
     "interactions with some natural organ medications",
-    "long-term use causes dependency \u2014 synthetic organs deteriorate rapidly without it",
+    "long-term use causes dependency — synthetic organs deteriorate rapidly without it",
     "taste disturbances"
   ],
   "duration": "24 hours",
   "addiction_risk": "none",
   "tier_availability": "All tiers",
   "legality": "prescription",
-  "street_price": "\u03A625 per day (generic); \u03A685 per day (Novafold premium)",
-  "cultural_context": "Anyone with a synthetic organ lives on Synthavex. It is life-critical in the most literal sense \u2014 miss a week and a synthetic kidney begins to fail; miss a month and it can become a source of sepsis. The cost disparity between generic and premium creates a constant low-grade anxiety for Tier 1-2 users. Nightshade Pharmatech produces a gray-market version that works but causes the distinctive metallic sweat smell that marks \u0027synth users\u0027 on the Shelf.",
+  "street_price": "Φ25 per day (generic); Φ85 per day (Novafold premium)",
+  "cultural_context": "Anyone with a synthetic organ lives on Synthavex. It is life-critical in the most literal sense — miss a week and a synthetic kidney begins to fail; miss a month and it can become a source of sepsis. The cost disparity between generic and premium creates a constant low-grade anxiety for Tier 1-2 users. Nightshade Pharmatech produces a gray-market version that works but causes the distinctive metallic sweat smell that marks 'synth users' on the Shelf.",
   "story_hooks": [
-    "A Shelf community\u0027s Synthavex supply has been cornered by a local boss who is charging extortion prices to people who will die without it",
-    "The Nightshade gray-market Synthavex contains a compound that slowly degrades SNT tissue in synthetic organs \u2014 the manufacturer knows",
-    "A character with a synthetic heart discovers their Synthavex prescription has been flagged \u2014 Lazarus will only refill it if they agree to participate in a data-sharing program about their organ\u0027s performance metrics"
+    "A Shelf community's Synthavex supply has been cornered by a local boss who is charging extortion prices to people who will die without it",
+    "The Nightshade gray-market Synthavex contains a compound that slowly degrades SNT tissue in synthetic organs — the manufacturer knows",
+    "A character with a synthetic heart discovers their Synthavex prescription has been flagged — Lazarus will only refill it if they agree to participate in a data-sharing program about their organ's performance metrics"
   ],
   "tags": []
 }

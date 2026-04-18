@@ -4,11 +4,7 @@
   "brand_name": "Helix",
   "product_name": "Helix Biosystems Metabolic Flux Monitor",
   "type": "equipment",
-  "aliases": [
-    "Flux Band",
-    "The Ticker",
-    "Helix Cuff"
-  ],
+  "aliases": [],
   "category": "utility",
   "description": "The Metabolic Flux Monitor is a wearable biosensing platform developed by Helix Biosystems for field personnel operating under extended physiological stress. Worn as a cuff on the forearm, the device continuously samples transdermal biomarker gradients — including cortisol, lactate, glucose, inflammatory cytokines, and hydration status — and synthesizes these into a real-time physiological load score displayed on a flexible e-ink surface along the outer face of the cuff. An alert system, configurable for audible, haptic, or hardwired output to connected kit, triggers when monitored values cross user-defined thresholds, flagging impending performance degradation before it becomes incapacitation.\n\nHelix designed the Flux Monitor for a dual market: elite athletic performance optimization and corporate field medicine for personnel working in hazardous environments. The underlying sensor array is derived from Helix's clinical diagnostic hardware, miniaturized and ruggedized for continuous wear. What the device does that clinical equipment cannot is contextualize — its onboard inference module correlates biomarker combinations rather than individual values, distinguishing between dehydration-induced lactate elevation and genuine muscle damage, or between acute stress response and the early signature of pharmaceutical interaction. This contextual layer makes it meaningfully more useful than simple threshold monitors.\n\nThe Flux Monitor has found a third market that Helix neither advertises nor discourages: operators who need to monitor the physiological state of personnel who cannot or will not self-report. A cuff worn by a team member under duress, in a hostage situation, or operating in conditions that preclude verbal communication provides the team lead with a continuous passive readout of that individual's status.",
   "manufacturer": "HELIX BIOSYSTEMS",

@@ -12,7 +12,7 @@ THREE CHECKING STRATEGIES:
 
 HARDCODED WORLD RULES (always checked):
   - No city police (Arcturus Civil Security only, Meridian PD dissolved 2208)
-  - Currency is Φ (Quanta), never dollars or credits
+  - Currency is Phi (Quanta), never dollars or credits
   - Iowan Behemoths are autonomous machines, not synthetic life
   - City name is GLMZ, not "Meridian City" or "Meridian 88" (only the Behemoth keeps that name)
 
@@ -46,7 +46,7 @@ from rich.progress import Progress
 
 from constants import ANTHROPIC_API_KEY, DATA_DIR, DB_PATH, CONCURRENCY, REPOS
 
-# ── Config ────────────────────────────────────────────────────────────────────
+# -- Config --------------------------------------------------------------------
 CONSISTENCY_DB_PATH = os.getenv("CONSISTENCY_DB_PATH", "consistency.db")
 HAIKU_MODEL = "claude-haiku-4-5-20251001"
 SONNET_MODEL = "claude-sonnet-4-6"
@@ -55,7 +55,7 @@ CHECKPOINT_SIZE = 30
 
 console = Console()
 
-# ── Known world rules (always checked against) ───────────────────────────────
+# -- Known world rules (always checked against) -------------------------------
 WORLD_RULES = [
     {
         "rule": "no_city_police",
@@ -65,7 +65,7 @@ WORLD_RULES = [
     },
     {
         "rule": "quanta_currency",
-        "description": "The currency of GLMZ is Φ (Quanta). Dollar signs ($), 'credits', or other generic currency names are incorrect.",
+        "description": "The currency of GLMZ is Phi (Quanta). Dollar signs ($), 'credits', or other generic currency names are incorrect.",
         "violation_type": "lore",
         "severity": "moderate",
     },
@@ -83,7 +83,7 @@ WORLD_RULES = [
     },
 ]
 
-# ── Prompts ───────────────────────────────────────────────────────────────────
+# -- Prompts -------------------------------------------------------------------
 WORLD_RULES_BLOCK = "\n".join(
     f"RULE ({r['rule']}): {r['description']}" for r in WORLD_RULES
 )
@@ -136,7 +136,7 @@ Each object has:
 If no violations found, return: []"""
 
 
-# ── Database ──────────────────────────────────────────────────────────────────
+# -- Database ------------------------------------------------------------------
 def init_consistency_db():
     """Create consistency.db tables if they don't exist."""
     conn = sqlite3.connect(CONSISTENCY_DB_PATH)
@@ -183,7 +183,7 @@ def get_consistency_connection():
     return sqlite3.connect(CONSISTENCY_DB_PATH)
 
 
-# ── File helpers ──────────────────────────────────────────────────────────────
+# -- File helpers --------------------------------------------------------------
 def get_json_files(repo=None, limit=None):
     """Get all JSON entity files, optionally filtered by repo and limited."""
     base = Path(DATA_DIR)
@@ -252,7 +252,7 @@ def entity_to_text(entity, filepath, max_chars=2500):
     return text[:max_chars]
 
 
-# ── Already-checked pairs ─────────────────────────────────────────────────────
+# -- Already-checked pairs -----------------------------------------------------
 def get_checked_files():
     """Return set of files already logged in check_log."""
     conn = get_consistency_connection()
@@ -276,7 +276,7 @@ def pair_already_logged(file_a, file_b):
     return count > 0
 
 
-# ── Parse contradiction response ──────────────────────────────────────────────
+# -- Parse contradiction response ----------------------------------------------
 def parse_contradiction_json(text):
     """Parse Claude's contradiction list. Returns list of dicts or []."""
     if "```" in text:
@@ -306,7 +306,7 @@ def parse_contradiction_json(text):
         return []
 
 
-# ── Store contradictions ──────────────────────────────────────────────────────
+# -- Store contradictions ------------------------------------------------------
 def store_contradictions(conn, file_a, name_a, file_b, name_b, contradictions):
     """Insert contradiction rows and update check_log."""
     c = conn.cursor()
@@ -363,7 +363,7 @@ def log_check(conn, entity_file, entities_checked_against, contradictions_found)
     conn.commit()
 
 
-# ── Async API calls ───────────────────────────────────────────────────────────
+# -- Async API calls -----------------------------------------------------------
 async def check_pair_via_api(text_a, text_b, name_a, name_b, client, semaphore, use_sonnet=False):
     """Ask Claude to find contradictions between two entity descriptions."""
     async with semaphore:
@@ -427,7 +427,7 @@ async def check_world_rules_via_api(text_a, name_a, client, semaphore):
     return []
 
 
-# ── Strategy helpers ──────────────────────────────────────────────────────────
+# -- Strategy helpers ----------------------------------------------------------
 def group_by_repo(files):
     """Group file list by repo (parent directory name)."""
     groups = defaultdict(list)
@@ -553,7 +553,7 @@ def find_semantic_neighbors(files, embeddings, n=SEMANTIC_NEIGHBORS):
     return neighbors
 
 
-# ── Main strategies ───────────────────────────────────────────────────────────
+# -- Main strategies -----------------------------------------------------------
 async def run_local_strategy(files, client, semaphore, conn, checked_files):
     """Check all entities within each repo against each other."""
     groups = group_by_repo(files)
@@ -806,7 +806,7 @@ async def run_world_rules_check(files, client, semaphore, conn):
     return total_violations
 
 
-# ── Main runner ───────────────────────────────────────────────────────────────
+# -- Main runner ---------------------------------------------------------------
 def run_consistency_check(strategy=None, repo=None, limit=None, concurrency=None):
     """Entry point. strategy=None means run all three."""
     asyncio.run(_run_consistency_async(strategy, repo, limit, concurrency))
@@ -855,7 +855,7 @@ async def _run_consistency_async(strategy=None, repo=None, limit=None, concurren
     show_consistency_stats()
 
 
-# ── Stats & view modes ────────────────────────────────────────────────────────
+# -- Stats & view modes --------------------------------------------------------
 def show_consistency_stats():
     """Show consistency.db statistics dashboard."""
     conn = get_consistency_connection()
@@ -949,7 +949,7 @@ def show_flagged(critical_only=False, limit=50):
     console.print(table)
 
 
-# ── CLI ───────────────────────────────────────────────────────────────────────
+# -- CLI -----------------------------------------------------------------------
 def main():
     parser = argparse.ArgumentParser(description="Cross-entity consistency checker for GLMZ worldbuilding")
 
@@ -965,7 +965,13 @@ def main():
     parser.add_argument("--critical", action="store_true", help="Show only critical contradictions")
     parser.add_argument("--stats", action="store_true", help="Show statistics dashboard only")
 
+    parser.add_argument("--silent", action="store_true", help="Suppress all console output")
     args = parser.parse_args()
+    if args.silent:
+        import sys as _sys, os as _os
+        _sys.stdout = open(_os.devnull, "w")
+        _sys.stderr = open(_os.devnull, "w")
+
 
     if args.stats:
         init_consistency_db()

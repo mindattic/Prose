@@ -4,12 +4,7 @@
   "brand_name": "Tessera",
   "product_name": "Tessera Industries Photonic Computing Architecture",
   "type": "technology",
-  "aliases": [
-    "PCA",
-    "Light Computer",
-    "Tessera Photon",
-    "Optical Brain"
-  ],
+  "aliases": [],
   "subcategory": "computing",
   "description": "A computing platform that uses photons instead of electrons for information processing, achieving computational speeds that exceed conventional electronics by a factor of 1,000 while consuming a fraction of the power. Tessera's PCA replaces silicon transistors with optical logic gates fabricated from metamaterials, routing data through waveguides at the speed of light. The architecture's primary advantage is not raw speed but parallelism — photonic processors handle millions of simultaneous operations without the heat generation that limits electronic chip density. PCA systems occupy the space of a desktop computer but deliver performance that would require a warehouse of conventional hardware.",
   "tier_availability": "Tier 4+",

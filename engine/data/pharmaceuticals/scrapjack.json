@@ -2,26 +2,21 @@
   "id": "019d7850c6d5777e971e11f7ce83c328",
   "name": "Scrapjack",
   "type": "pharmaceutical",
-  "aliases": [
-    "jack",
-    "scrap",
-    "the scrape",
-    "chrome juice"
-  ],
+  "aliases": [],
   "category": "street_concoction",
   "subcategory": "chemical_augment_scrapping_high",
   "manufacturer": "Shelf scrappers; no single manufacturer",
-  "description": "The chemical byproduct of boiling down decommissioned augmentation components \u2014 specifically the synthetic lubricant and signal-dampening fluids used in older chrome joints and actuators \u2014 reduced to a concentrated injectable. The fluid contains a complex mix of compounds including dissolved SNT-coating residue, synthetic myelin analogs, and proprietary chemical stabilizers that, when injected, create a chaotic but intense neurological experience. It\u0027s the literal scraping of discarded machines made into a drug.",
+  "description": "The chemical byproduct of boiling down decommissioned augmentation components — specifically the synthetic lubricant and signal-dampening fluids used in older chrome joints and actuators — reduced to a concentrated injectable. The fluid contains a complex mix of compounds including dissolved SNT-coating residue, synthetic myelin analogs, and proprietary chemical stabilizers that, when injected, create a chaotic but intense neurological experience. It's the literal scraping of discarded machines made into a drug.",
   "method_of_use": "injection",
   "effects": [
     "intense disorganized euphoria",
-    "fragmented sensory experiences \u2014 phantom limb sensations even without augmentation",
+    "fragmented sensory experiences — phantom limb sensations even without augmentation",
     "brief periods of extraordinary clarity alternating with confusion",
     "in augmented users: temporary overclocking of chrome with unpredictable results",
-    "sensation of \u0027becoming metal\u0027 described by users"
+    "sensation of 'becoming metal' described by users"
   ],
   "side_effects": [
-    "heavy metal toxicity with repeated use \u2014 manganese, cadmium, trace chromium",
+    "heavy metal toxicity with repeated use — manganese, cadmium, trace chromium",
     "neurological damage from inconsistent SNT-analog exposure",
     "in augmented users: permanent chrome malfunction or rejection is possible",
     "granulomatous tissue reactions at injection sites",
@@ -34,12 +29,12 @@
   "addiction_risk": "high",
   "tier_availability": "Tier 1 only",
   "legality": "illegal",
-  "street_price": "\u03A64-8 per dose",
-  "cultural_context": "Scrapjack is the drug of the Shelf\u0027s scrapper culture \u2014 people who make their living pulling apart decommissioned machines and chrome. The joke is that scrappers get paid twice for their work: once for the metal, and once for the juice. It\u0027s considered the lowest rung of the drug market, used by people who are already at the margins of the margins. Scrapjack users are called \u0027chrome-drunk\u0027 or \u0027junkers,\u0027 and the drug is associated with the particular nihilism of people who have decided they don\u0027t expect to live long anyway.",
+  "street_price": "Φ4-8 per dose",
+  "cultural_context": "Scrapjack is the drug of the Shelf's scrapper culture — people who make their living pulling apart decommissioned machines and chrome. The joke is that scrappers get paid twice for their work: once for the metal, and once for the juice. It's considered the lowest rung of the drug market, used by people who are already at the margins of the margins. Scrapjack users are called 'chrome-drunk' or 'junkers,' and the drug is associated with the particular nihilism of people who have decided they don't expect to live long anyway.",
   "story_hooks": [
-    "A batch of Scrapjack has been causing users to receive coherent data fragments \u2014 actual files, not random noise \u2014 suggesting the decommissioned hardware it was cooked from contained memory that wasn\u0027t properly wiped, and the data is sensitive",
-    "A Shelf scrapper has discovered that certain Lazarus Pharmaceuticals chrome components, when processed into Scrapjack, produce a dramatically different and far more dangerous compound \u2014 and Lazarus may have known this when they decommissioned the parts",
-    "A Tier 3 researcher studying heavy metal toxicity in Shelf populations has traced an unusual neurological condition back to Scrapjack use \u2014 the condition is devastating, but in a small number of users, it appears to have created genuine novel neural pathways"
+    "A batch of Scrapjack has been causing users to receive coherent data fragments — actual files, not random noise — suggesting the decommissioned hardware it was cooked from contained memory that wasn't properly wiped, and the data is sensitive",
+    "A Shelf scrapper has discovered that certain Lazarus Pharmaceuticals chrome components, when processed into Scrapjack, produce a dramatically different and far more dangerous compound — and Lazarus may have known this when they decommissioned the parts",
+    "A Tier 3 researcher studying heavy metal toxicity in Shelf populations has traced an unusual neurological condition back to Scrapjack use — the condition is devastating, but in a small number of users, it appears to have created genuine novel neural pathways"
   ],
   "tags": []
 }

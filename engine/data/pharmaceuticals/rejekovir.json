@@ -2,14 +2,11 @@
   "id": "019d7850c6d07a7a91f6dfe370a1711f",
   "name": "Rejekovir",
   "type": "pharmaceutical",
-  "aliases": [
-    "Peacechem",
-    "The Handshake"
-  ],
+  "aliases": [],
   "category": "augment_interactive",
   "subcategory": "rejection_cycle_breaker",
   "manufacturer": "Lazarus Pharmaceuticals",
-  "description": "A broad-spectrum immunomodulator and SNT-stabilizing compound designed to interrupt acute augment rejection cycles \u2014 the process by which a host body\u0027s immune system begins attacking its own chrome interfaces, SNT bridges, and cybernetic implants. Rejekovir suppresses the specific immune pathways responsible for chrome rejection while simultaneously releasing SNT-binding proteins that reinforce the organic-synthetic interface. It is one of the most genuinely life-saving drugs in GLMZ \u2014 rejection kills, and it kills badly.",
+  "description": "A broad-spectrum immunomodulator and SNT-stabilizing compound designed to interrupt acute augment rejection cycles — the process by which a host body's immune system begins attacking its own chrome interfaces, SNT bridges, and cybernetic implants. Rejekovir suppresses the specific immune pathways responsible for chrome rejection while simultaneously releasing SNT-binding proteins that reinforce the organic-synthetic interface. It is one of the most genuinely life-saving drugs in GLMZ — rejection kills, and it kills badly.",
   "method_of_use": "injection",
   "effects": [
     "Halts active augment rejection within 60-90 minutes",
@@ -21,20 +18,20 @@
   "side_effects": [
     "Broad immune suppression creates infection vulnerability during treatment window",
     "Nausea, fatigue, fever as rejection cycle is interrupted",
-    "Does not address root cause \u2014 rejection will resume without follow-up treatment",
+    "Does not address root cause — rejection will resume without follow-up treatment",
     "Rare anaphylactic response in patients with specific SNT genotypes",
-    "Overuse leads to immunological dependency \u2014 body stops managing chrome tolerance independently"
+    "Overuse leads to immunological dependency — body stops managing chrome tolerance independently"
   ],
   "duration": "72-96 hours (suppression window)",
   "addiction_risk": "low",
   "tier_availability": "All tiers",
   "legality": "prescription",
-  "street_price": "\u03A6600-900 (\u03A6180-220 with Tier 3\u002B insurance)",
-  "cultural_context": "Rejekovir is where GLMZ\u0027s class divide becomes lethal. In Tier 3-5, it\u0027s a covered medication \u2014 you go to a clinic, you get treated, you live. In Tier 1-2, the street price of a single dose is a week\u0027s wages, and rejection is a death sentence for those who can\u0027t afford treatment or access to Lazarus-licensed clinics. There\u0027s a thriving black market in stolen and counterfeit Rejekovir on the Shelf. Some batches are diluted to the point of uselessness. People die of rejection not because the drug doesn\u0027t exist, but because they can\u0027t afford it.",
+  "street_price": "Φ600-900 (Φ180-220 with Tier 3+ insurance)",
+  "cultural_context": "Rejekovir is where GLMZ's class divide becomes lethal. In Tier 3-5, it's a covered medication — you go to a clinic, you get treated, you live. In Tier 1-2, the street price of a single dose is a week's wages, and rejection is a death sentence for those who can't afford treatment or access to Lazarus-licensed clinics. There's a thriving black market in stolen and counterfeit Rejekovir on the Shelf. Some batches are diluted to the point of uselessness. People die of rejection not because the drug doesn't exist, but because they can't afford it.",
   "story_hooks": [
-    "A Shelf medic has been synthesizing a generic Rejekovir analog \u2014 effective, cheap, and completely illegal under Lazarus\u0027s patent protections. Lazarus has sent someone to shut the operation down, and the medic\u0027s patients will die without it.",
-    "A Tier 4 executive is experiencing rejection of a classified military-grade augment \u2014 they can\u0027t go to official medical channels without revealing the illegal implant, so they need someone to source Rejekovir and administer it quietly",
-    "A bad batch of counterfeit Rejekovir has hit the Shelf, and people are dying \u2014 the rejection continues even after treatment, and the source needs to be traced before the next wave of casualties"
+    "A Shelf medic has been synthesizing a generic Rejekovir analog — effective, cheap, and completely illegal under Lazarus's patent protections. Lazarus has sent someone to shut the operation down, and the medic's patients will die without it.",
+    "A Tier 4 executive is experiencing rejection of a classified military-grade augment — they can't go to official medical channels without revealing the illegal implant, so they need someone to source Rejekovir and administer it quietly",
+    "A bad batch of counterfeit Rejekovir has hit the Shelf, and people are dying — the rejection continues even after treatment, and the source needs to be traced before the next wave of casualties"
   ],
   "tags": []
 }

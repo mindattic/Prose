@@ -4,12 +4,7 @@
   "brand_name": "Vespid",
   "product_name": "Vespid Dynamics Autonomous Navigation Mesh",
   "type": "technology",
-  "aliases": [
-    "ANM",
-    "Sky Grid",
-    "Drone Highway",
-    "Vespid Net"
-  ],
+  "aliases": [],
   "subcategory": "transportation",
   "description": "A city-wide airspace management system that provides navigation, collision avoidance, and traffic routing for all aerial vehicles and drones in GLMZ. The ANM divides the city's airspace into navigable corridors with defined speed limits, altitude restrictions, and priority lanes, managed by a distributed AI that processes millions of flight path calculations per second. Any drone or aerial vehicle connected to the mesh receives real-time routing that optimizes for traffic flow, weather conditions, and restricted zone avoidance. Vespid operates the ANM as critical infrastructure and charges access fees that make them the city's airspace utility.",
   "tier_availability": "Tier 2+",

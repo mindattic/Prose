@@ -4,12 +4,7 @@
   "brand_name": "",
   "product_name": "",
   "type": "technology",
-  "aliases": [
-    "Micro-Grid",
-    "Power Co-op",
-    "Off-Grid",
-    "Independent Power"
-  ],
+  "aliases": [],
   "subcategory": "energy",
   "description": "Independent micro-grids are small-scale power generation and distribution networks operated by communities, organizations, or wealthy individuals who have chosen to disconnect from Ouroboros Energy's TrunkNet. A typical micro-grid combines multiple generation sources — rooftop solar panels, small wind turbines, methane digesters, salvaged fuel cells, and occasionally black-market Helion reactor components — into a local network that powers a building, a block, or a small district without any Ouroboros involvement.\n\nThe motivation for going off-grid varies. Some communities cannot afford Ouroboros's dynamic pricing and build micro-grids as an economic survival strategy. Others are organizations that require power supply independence for security reasons — a data haven, a black clinic, or a smuggling operation cannot afford to have its power controlled by a corponation that might be compelled to shut it off. A few wealthy individuals maintain micro-grids as a philosophical statement: rejecting corporate dependency on principle, even though connecting to the TrunkNet would be easier and often cheaper.\n\nOuroboros tolerates micro-grids with a studied indifference that many interpret as contempt. Their official position is that anyone who wants to generate their own power is welcome to do so, provided they don't tap Ouroboros infrastructure or sell power to Ouroboros customers. In practice, Ouroboros's circuit-level metering makes it trivially easy to detect when a building switches between TrunkNet and micro-grid power, and buildings that maintain both connections often find their TrunkNet rates increase after using micro-grid power — a practice Ouroboros attributes to 'demand variability pricing' and micro-grid operators attribute to punishment. The total micro-grid capacity in GLMZ is estimated at approximately 2% of total power consumption — enough to matter to the communities that depend on it, but not enough to threaten Ouroboros's dominance.",
   "tier_availability": "Tier 1",

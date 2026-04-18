@@ -2,12 +2,7 @@
   "id": "019d6143ab4e72aa9980aeb2efc5fdb9",
   "name": "Subsonic Cavity Charge",
   "type": "weapon",
-  "aliases": [
-    "SCC-9",
-    "Gutterpunch",
-    "The Hollow",
-    "Resonance Mine"
-  ],
+  "aliases": [],
   "category": "explosive",
   "description": "The SCC-9 is a proximity-triggered area-denial charge that functions not through fragmentation or overpressure but through the generation of precisely tuned subsonic acoustic pulses at the moment of detonation. Rather than a single explosive event, the SCC-9 produces a rapid sequence of 14 discrete pressure pulses within a 200-millisecond window, each calibrated to a frequency between 7Hz and 19Hz — the range most effective at inducing resonance in human thoracic and abdominal cavities. The result is severe internal trauma, disorientation, nausea, and in close proximity, rupture of air-filled organs without external visible injury.\n\nThe charge body contains a layered piezoelectric pulse generator surrounding a small conventional explosive core. The explosive initiates the sequence, but the piezoelectric stack shapes and amplifies the output waveform, converting raw blast energy into the structured subsonic pulse train. This conversion is approximately 60% efficient, meaning the SCC-9 produces significantly less structural damage than a comparable conventional charge — walls remain intact, infrastructure is undamaged — while maximizing biological effect. ZHENG-DAO BIOELECTRIC developed the underlying pulse architecture for industrial vibration dampening before the application was weaponized.\n\nThe SCC-9 is triggered by a passive acoustic sensor that detects footfall vibration, making it one of the few charges in GLMZ's black market that cannot be defeated by optical or thermal countermeasures. It is also extraordinarily difficult to detect passively — it emits no EM signature, no chemical trace, and its housing is ceramic composite that defeats standard metal detection. Clearance teams in the city's lower tiers have learned to treat any unidentified object on a floor as a potential SCC-9.",
   "manufacturer": "ZHENG-DAO BIOELECTRIC",

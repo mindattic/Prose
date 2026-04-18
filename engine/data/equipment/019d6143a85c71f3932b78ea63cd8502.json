@@ -4,12 +4,7 @@
   "brand_name": "Helix",
   "product_name": "Helix Biosystems Olfactory Gradient Probe",
   "type": "equipment",
-  "aliases": [
-    "OGP",
-    "the Bloodhound",
-    "Smell Stick",
-    "Gradient Wand"
-  ],
+  "aliases": [],
   "category": "sensor",
   "description": "The Olfactory Gradient Probe is a handheld chemical plume detection and source-location instrument that uses an array of 2,400 synthetic chemoreceptor filaments to identify, classify, and triangulate the origin point of airborne chemical signatures. Unlike conventional gas detectors that simply alert to the presence of a substance, the OGP maps concentration gradients across space — effectively 'smelling' which direction a scent is getting stronger — and uses that gradient data to compute a vector toward the emission source. The chemoreceptor array is modeled on vertebrate olfactory epithelium but operates at a sensitivity roughly 80 times greater than baseline human olfaction, capable of detecting compounds at parts-per-trillion concentrations.\n\nHelix Biosystems engineered the OGP originally for pharmaceutical contamination tracing in clean-room environments, but the probe's utility in field applications became rapidly apparent. The device can identify over 14,000 indexed chemical signatures including explosives precursors, specific pharmaceutical compounds, biological markers associated with stress responses (adrenaline metabolites, cortisol derivatives present in sweat), and the proprietary chemical tracers used by several major corporations to mark restricted personnel and assets. A rolling update subscription keeps the chemical index current. The probe's interface presents gradient data as a directional compass overlay with confidence percentages, and can log a full chemical environment profile for later forensic analysis.\n\nThe OGP occupies an uncomfortable legal space in GLMZ. Its capacity to detect stress-chemistry signatures means it can effectively identify frightened or nervous individuals in a crowd — a capability that law enforcement, corporate interrogators, and bounty hunters find enormously attractive and civil liberties advocates find deeply troubling. Helix markets it carefully as an 'industrial and forensic instrument,' but its presence in less scrupulous hands is an open secret.",
   "manufacturer": "HELIX BIOSYSTEMS",

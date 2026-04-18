@@ -202,6 +202,12 @@ if __name__ == "__main__":
     #   Lower = more lenient clustering. Higher = stricter, more noise points.
     parser.add_argument("--min-samples", type=int, default=2, help="Minimum samples for HDBSCAN")
 
+    parser.add_argument("--silent", action="store_true", help="Suppress all console output")
     args = parser.parse_args()
+    if args.silent:
+        import sys as _sys, os as _os
+        _sys.stdout = open(_os.devnull, "w")
+        _sys.stderr = open(_os.devnull, "w")
+
 
     run_clustering(min_cluster_size=args.min_cluster_size, min_samples=args.min_samples)

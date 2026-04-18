@@ -2,10 +2,10 @@
 Character Regeneration Pipeline
 
 Runs the full ancestry -> names -> description harmonization pipeline:
-  Step 1: generate_ancestry.py           — Assign genetic ancestry (district-weighted, skips non-humans)
-  Step 2: migrate_guids_and_surnames.py  — Regenerate surnames from ancestry (skips Kyle)
-  Step 3: migrate_guids_and_surnames.py  — Regenerate first names (50% cultural, 50% cosmopolitan, skips Kyle)
-  Step 4: harmonize_descriptions.py      — Adjust physical descriptions to match ancestry (skips Kyle)
+  Step 1: generate_ancestry.py           -- Assign genetic ancestry (district-weighted, skips non-humans)
+  Step 2: migrate_guids_and_surnames.py  -- Regenerate surnames from ancestry (skips Kyle)
+  Step 3: migrate_guids_and_surnames.py  -- Regenerate first names (50% cultural, 50% cosmopolitan, skips Kyle)
+  Step 4: harmonize_descriptions.py      -- Adjust physical descriptions to match ancestry (skips Kyle)
 
 Usage:
   python run_character_regen.py                    # Run everything
@@ -40,7 +40,13 @@ def main():
     parser.add_argument("--step", type=int, default=1, choices=[1, 2, 3, 4],
                         help="Start from step N (1=ancestry, 2=surnames, 3=first names, 4=harmonize)")
     parser.add_argument("--force", action="store_true", help="Force overwrite existing data")
+    parser.add_argument("--silent", action="store_true", help="Suppress all console output")
     args = parser.parse_args()
+    if args.silent:
+        import sys as _sys, os as _os
+        _sys.stdout = open(_os.devnull, "w")
+        _sys.stderr = open(_os.devnull, "w")
+
 
     extra = []
     if args.dry_run:
@@ -64,7 +70,7 @@ def main():
 
     if args.step <= 3:
         run_step(3,
-            "Regenerate first names — 50% cultural, 50% cosmopolitan (skips Kyle)",
+            "Regenerate first names -- 50% cultural, 50% cosmopolitan (skips Kyle)",
             [sys.executable, "migrate_guids_and_surnames.py", "--phase", "4"] + extra
         )
 

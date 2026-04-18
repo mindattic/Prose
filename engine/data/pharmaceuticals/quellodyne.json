@@ -2,15 +2,11 @@
   "id": "019d7850c6cf7522b864e2763c912f2d",
   "name": "Quellodyne",
   "type": "pharmaceutical",
-  "aliases": [
-    "Quiet",
-    "the Hush",
-    "Quell"
-  ],
+  "aliases": [],
   "category": "withdrawal_aid",
   "subcategory": "craving_suppressor",
   "manufacturer": "Novafold Pharmaceuticals",
-  "description": "Quellodyne is a selective nucleus accumbens modulator that suppresses the \u0027wanting\u0027 signal \u2014 the compulsive drive toward a substance \u2014 without affecting emotional range, pleasure capacity, or motivational function. Unlike older craving suppressors that left patients feeling affectively blunted, Quellodyne targets only the specific anticipatory dopamine signatures associated with learned substance-seeking behavior. It is the most widely prescribed withdrawal support medication in GLMZ\u0027s Tier 2-4 range.",
+  "description": "Quellodyne is a selective nucleus accumbens modulator that suppresses the 'wanting' signal — the compulsive drive toward a substance — without affecting emotional range, pleasure capacity, or motivational function. Unlike older craving suppressors that left patients feeling affectively blunted, Quellodyne targets only the specific anticipatory dopamine signatures associated with learned substance-seeking behavior. It is the most widely prescribed withdrawal support medication in GLMZ's Tier 2-4 range.",
   "method_of_use": "oral",
   "effects": [
     "Selective suppression of substance-craving impulses",
@@ -19,8 +15,8 @@
     "Mild stabilization of mood variability during withdrawal periods"
   ],
   "side_effects": [
-    "Reduced general motivation and ambition in some users (\u0027the Quiet\u0027 \u2014 a known cultural side effect)",
-    "Mild physical dependency after 6\u002B weeks of use \u2014 requires gradual taper",
+    "Reduced general motivation and ambition in some users ('the Quiet' — a known cultural side effect)",
+    "Mild physical dependency after 6+ weeks of use — requires gradual taper",
     "Occasional appetite suppression",
     "BCI users may notice subtle dampening of reward-feedback loops during skill acquisition",
     "Emotional responses to genuine positive events may feel slightly muted"
@@ -29,12 +25,12 @@
   "addiction_risk": "low",
   "tier_availability": "Tier 2-3",
   "legality": "prescription",
-  "street_price": "\u03A640 per pill (\u03A612 with Tier 3 health coverage)",
-  "cultural_context": "Quellodyne is so widely used in Tier 2 that \u0027being on Quell\u0027 carries no stigma \u2014 it\u0027s practically normalized as part of working-class recovery culture. The side effect of reduced ambition has become its own cultural touchstone: \u0027Quell-quiet\u0027 describes anyone who\u0027s stable, functional, and has stopped reaching. Corporate Tier 4 HR departments quietly screen for long-term Quellodyne use, viewing it as a marker of \u0027limited growth trajectory.\u0027 On the Shelf, it\u0027s ground up and combined with stimulants to blunt the crash cycle.",
+  "street_price": "Φ40 per pill (Φ12 with Tier 3 health coverage)",
+  "cultural_context": "Quellodyne is so widely used in Tier 2 that 'being on Quell' carries no stigma — it's practically normalized as part of working-class recovery culture. The side effect of reduced ambition has become its own cultural touchstone: 'Quell-quiet' describes anyone who's stable, functional, and has stopped reaching. Corporate Tier 4 HR departments quietly screen for long-term Quellodyne use, viewing it as a marker of 'limited growth trajectory.' On the Shelf, it's ground up and combined with stimulants to blunt the crash cycle.",
   "story_hooks": [
-    "A character has been on Quellodyne so long they\u0027ve forgotten what wanting something actually feels like \u2014 and someone needs them to want something very badly, very soon",
-    "A Shelf chemist has reverse-engineered Quellodyne but altered the selectivity threshold \u2014 their version suppresses all wanting, not just substance cravings, and it\u0027s been distributed as the legitimate product in a Tier 2 neighborhood",
-    "A Tier 4 executive discovers their entire recovery-support team has been quietly dosing communal water filtration with Quellodyne to keep the workforce \u0027stable\u0027 \u2014 and compliant"
+    "A character has been on Quellodyne so long they've forgotten what wanting something actually feels like — and someone needs them to want something very badly, very soon",
+    "A Shelf chemist has reverse-engineered Quellodyne but altered the selectivity threshold — their version suppresses all wanting, not just substance cravings, and it's been distributed as the legitimate product in a Tier 2 neighborhood",
+    "A Tier 4 executive discovers their entire recovery-support team has been quietly dosing communal water filtration with Quellodyne to keep the workforce 'stable' — and compliant"
   ],
   "tags": []
 }

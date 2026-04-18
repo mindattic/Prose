@@ -2,14 +2,11 @@
   "id": "019d7850c696781c943f9907ee8db33f",
   "name": "Bandex",
   "type": "pharmaceutical",
-  "aliases": [
-    "Wideopen",
-    "Floodgate"
-  ],
+  "aliases": [],
   "category": "augment_interactive",
   "subcategory": "BCI_bandwidth_expander",
   "manufacturer": "Helix Biosystems",
-  "description": "A compound that temporarily up-regulates the SNT interface layer between organic neural tissue and BCI hardware, dramatically increasing the bandwidth of data transfer between brain and machine. Developed by Helix as part of their SNT research program, Bandex was quietly shelved after clinical trials showed a narrow therapeutic window between \u0027significantly enhanced BCI performance\u0027 and \u0027irreversible SNT degradation.\u0027 The formula leaked and hit the street within a year. At correct dosing, Bandex allows a user to process and act on BCI data \u2014 network feeds, augment inputs, sensor arrays \u2014 at speeds that blur the line between human and machine cognition.",
+  "description": "A compound that temporarily up-regulates the SNT interface layer between organic neural tissue and BCI hardware, dramatically increasing the bandwidth of data transfer between brain and machine. Developed by Helix as part of their SNT research program, Bandex was quietly shelved after clinical trials showed a narrow therapeutic window between 'significantly enhanced BCI performance' and 'irreversible SNT degradation.' The formula leaked and hit the street within a year. At correct dosing, Bandex allows a user to process and act on BCI data — network feeds, augment inputs, sensor arrays — at speeds that blur the line between human and machine cognition.",
   "method_of_use": "neural_direct",
   "effects": [
     "BCI data throughput increased 150-300%",
@@ -19,7 +16,7 @@
     "Hackers report the ability to perceive network architecture as spatial environment"
   ],
   "side_effects": [
-    "SNT degradation at the interface layer \u2014 cumulative and irreversible",
+    "SNT degradation at the interface layer — cumulative and irreversible",
     "Cognitive bleed: BCI data intrudes into non-BCI thought (involuntary data hallucinations)",
     "Migraines from vascular pressure at SNT sites",
     "Risk of BCI system crash if bandwidth exceeds hardware limits",
@@ -29,12 +26,12 @@
   "addiction_risk": "high",
   "tier_availability": "Tier 2-3",
   "legality": "restricted",
-  "street_price": "\u03A6 350-550",
-  "cultural_context": "Helix\u0027s decision to shelve Bandex was formally attributed to safety concerns, but internal documents (leaked on the net) suggest the real reason was that Bandex worked too well \u2014 it demonstrated that SNT interfaces could be pushed far beyond their rated capacity, which threatened the company\u0027s roadmap for selling incremental BCI hardware upgrades. The drug is beloved by netrunners and information brokers for whom BCI bandwidth is directly correlated with income and survival. The SNT degradation is known and accepted \u2014 most heavy users reason that they\u0027ll have enough money to buy a full SNT replacement before the damage catches up with them.",
+  "street_price": "Φ 350-550",
+  "cultural_context": "Helix's decision to shelve Bandex was formally attributed to safety concerns, but internal documents (leaked on the net) suggest the real reason was that Bandex worked too well — it demonstrated that SNT interfaces could be pushed far beyond their rated capacity, which threatened the company's roadmap for selling incremental BCI hardware upgrades. The drug is beloved by netrunners and information brokers for whom BCI bandwidth is directly correlated with income and survival. The SNT degradation is known and accepted — most heavy users reason that they'll have enough money to buy a full SNT replacement before the damage catches up with them.",
   "story_hooks": [
-    "A Tier 3 netrunner who has been using Bandex for two years is now experiencing involuntary data hallucinations 24 hours a day \u2014 network ghosts bleeding into her vision \u2014 and she can\u0027t tell anymore which of her thoughts are hers and which are machine noise.",
-    "Helix has quietly hired a fixer to recover all existing street stock of Bandex ahead of a new product launch \u2014 suggesting their upcoming BCI hardware release has a critical vulnerability that Bandex use would expose.",
-    "A Shelf hacker discovered that at maximum Bandex effect, he briefly accessed a data layer he wasn\u0027t supposed to be able to reach \u2014 something encrypted and vast, running underneath GLMZ\u0027s civilian network \u2014 and now people with military-grade chrome are asking him very politely to forget what he saw."
+    "A Tier 3 netrunner who has been using Bandex for two years is now experiencing involuntary data hallucinations 24 hours a day — network ghosts bleeding into her vision — and she can't tell anymore which of her thoughts are hers and which are machine noise.",
+    "Helix has quietly hired a fixer to recover all existing street stock of Bandex ahead of a new product launch — suggesting their upcoming BCI hardware release has a critical vulnerability that Bandex use would expose.",
+    "A Shelf hacker discovered that at maximum Bandex effect, he briefly accessed a data layer he wasn't supposed to be able to reach — something encrypted and vast, running underneath GLMZ's civilian network — and now people with military-grade chrome are asking him very politely to forget what he saw."
   ],
   "tags": []
 }

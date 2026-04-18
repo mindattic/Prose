@@ -4,11 +4,7 @@
   "brand_name": "MindBridge",
   "product_name": "SafeLink Junior Neural Companion",
   "type": "cyberware",
-  "aliases": [
-    "SafeLink Jr",
-    "The Leash (derogatory)",
-    "Kidwire"
-  ],
+  "aliases": [],
   "category": "bci",
   "body_location": "cranial",
   "description": "The SafeLink Junior is a low-density pediatric BCI designed for children aged 6–14, featuring a soft-mesh cortical array rated for developing neural architecture. Operating at sub-threshold stimulation levels (0.003–0.12 mA), the implant provides parental monitoring overlays, educational scaffold integration, and real-time biometric distress signaling. The device incorporates a hardware-locked growth-adaptive module that automatically recalibrates electrode spacing every 90 days to accommodate cranial development, and a mandatory parental-authority tether enforced at the firmware level — parents or legal guardians retain a cryptographic kill-key that can suppress all non-essential BCI functions remotely. Tier 2 civilian licensing is required for installation, and the implant must be removed or upgraded to an adult-rated mesh by age 16 under GLMZ Pediatric Augmentation Code 7.4.\n\nThe SafeLink Junior sits at the center of one of GLMZ's most heated social debates. Advocacy groups like the Children's Neural Autonomy Collective argue the parental tether constitutes a violation of developing personhood, pointing to documented cases where abusive guardians used the kill-key to suppress distress signals during incidents of harm. Defenders — largely suburban professional families and school district administrators — counter that the device has demonstrably reduced childhood accidents, improved learning outcomes in underserved districts, and saved hundreds of lives via its emergency ping system. In lower-income corridors, refurbished SafeLink Juniors circulate without the mandatory parental tether firmware, a modification that is technically illegal but rarely prosecuted, quietly tolerated as a harm-reduction measure for children in unstable home situations.",

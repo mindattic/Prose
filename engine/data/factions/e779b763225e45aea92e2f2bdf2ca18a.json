@@ -2,27 +2,24 @@
   "id": "e779b763225e45aea92e2f2bdf2ca18a",
   "type": "faction",
   "name": "The Glass Ladder",
-  "aliases": [
-    "The Ladder",
-    "Glass"
-  ],
+  "aliases": [],
   "motto": "Every secret has a price. Ours is reasonable.",
-  "description": "A mid-sized gang operating in the corporate corridor of the Meridian Hub and adjacent arcology complexes. The Glass Ladder specializes in corporate espionage, blackmail, and industrial intelligence brokerage. They are not killers \u2014 they are leverage artists. The gang recruits from disgraced corporate middle management, washed-out BCI analysts, and corporate security contractors who realized their skills were transferable. Members typically pass as legitimate professionals. Most have clean records and maintain cover employment. The Glass Ladder\u0027s product is information: security schedules, biometric access data, executive communications, off-books financial flows. They sell to competitors, regulators they control, or directly back to the victimized corporation at a premium. Their violence is surgical and contracted out \u2014 they hire The Null Ward for anything requiring a physical presence. The gang\u0027s vulnerability is their internal information. Anyone who fully understands the network\u0027s scope could destroy it. This has made them pathologically compartmentalized and paranoid about their own people.",
+  "description": "A mid-sized gang operating in the corporate corridor of the Meridian Hub and adjacent arcology complexes. The Glass Ladder specializes in corporate espionage, blackmail, and industrial intelligence brokerage. They are not killers — they are leverage artists. The gang recruits from disgraced corporate middle management, washed-out BCI analysts, and corporate security contractors who realized their skills were transferable. Members typically pass as legitimate professionals. Most have clean records and maintain cover employment. The Glass Ladder's product is information: security schedules, biometric access data, executive communications, off-books financial flows. They sell to competitors, regulators they control, or directly back to the victimized corporation at a premium. Their violence is surgical and contracted out — they hire The Null Ward for anything requiring a physical presence. The gang's vulnerability is their internal information. Anyone who fully understands the network's scope could destroy it. This has made them pathologically compartmentalized and paranoid about their own people.",
   "ideology": "Leverage is power. Violence is crude. Information extracted cleanly and sold quietly beats any street operation. They are mercenary about politics and personally amoral about their clients.",
-  "territory": "Chicago\u0027s Meridian Hub corporate corridor and the adjacent arcology complexes. No fixed street territory \u2014 they operate in offices, server rooms, and executive suites. Three rotating safe houses in commercial districts, changed on 90-day cycles.",
+  "territory": "Chicago's Meridian Hub corporate corridor and the adjacent arcology complexes. No fixed street territory — they operate in offices, server rooms, and executive suites. Three rotating safe houses in commercial districts, changed on 90-day cycles.",
   "leadership": "",
   "methods": [
-    "Corporate espionage \u2014 infiltrating target organizations through planted employees",
-    "Blackmail \u2014 the long game, collecting leverage over years",
-    "Data brokerage \u2014 selling corporate intelligence to competing interests",
-    "Social engineering \u2014 impersonation, deep cover, relationship harvesting",
+    "Corporate espionage — infiltrating target organizations through planted employees",
+    "Blackmail — the long game, collecting leverage over years",
+    "Data brokerage — selling corporate intelligence to competing interests",
+    "Social engineering — impersonation, deep cover, relationship harvesting",
     "Subcontracting violence to specialists rather than maintaining muscle internally"
   ],
   "resources": [
     "Extensive network of corporate informants. Multiple false identity packages. BCI extraction tools. Archived leverage on approximately 200 mid-to-senior corporate executives across the GLMZ."
   ],
   "goals": [
-    "Become the GLMZ\u0027s premier intelligence brokerage. Expand into political leverage beyond pure corporate targets. Remain invisible."
+    "Become the GLMZ's premier intelligence brokerage. Expand into political leverage beyond pure corporate targets. Remain invisible."
   ],
   "size_class": "medium",
   "relationships": [
@@ -50,7 +47,7 @@
   "narrative_function": "Source of corporate secrets and leverage. Can be hired by players or be a complicating factor in corporate storylines. Their blackmail archives are a worldbuilding treasure.",
   "story_hooks": [
     "A Glass Ladder operative approaches the players with a file on someone they know",
-    "Someone in the Glass Ladder\u0027s archive wants their file destroyed \u2014 violently if necessary",
+    "Someone in the Glass Ladder's archive wants their file destroyed — violently if necessary",
     "The gang accidentally acquired information that implicates one of their own backers"
   ],
   "tags": [
@@ -65,7 +62,7 @@
   "related_entities": [],
   "known_members": [
     {
-      "name": "Zara Bautista-W\u00F3jcik-Dlamini",
+      "name": "Zara Bautista-Wójcik-Dlamini",
       "id": "019d6143a62374938e94804a033078d7",
       "role": "Affiliate",
       "status": "active",
@@ -93,14 +90,14 @@
       "notes": "Geographic/thematic match"
     },
     {
-      "name": "Rio Haraldsen-Park-Horv\u00E1th",
+      "name": "Rio Haraldsen-Park-Horváth",
       "id": "019d6143a7357ef2817e4f9d96ca0ff3",
       "role": "Affiliate",
       "status": "active",
       "notes": "Geographic/thematic match"
     },
     {
-      "name": "Reed Nwosu-Thorvaldsd\u00F3ttir",
+      "name": "Reed Nwosu-Thorvaldsdóttir",
       "id": "019d6143a63f7d239b1ed6b3ac7e4590",
       "role": "Affiliate",
       "status": "active",
@@ -114,7 +111,7 @@
       "notes": "Geographic/thematic match"
     },
     {
-      "name": "Sibusiso Tovar-Str\u00F6mqvist",
+      "name": "Sibusiso Tovar-Strömqvist",
       "id": "019d6143a5cf76e7a74296cf05d4c39f",
       "role": "Affiliate",
       "status": "active",

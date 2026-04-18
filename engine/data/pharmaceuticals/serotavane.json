@@ -2,15 +2,11 @@
   "id": "019d7850c6d6751fa5802e38ed66840a",
   "name": "Serotavane",
   "type": "pharmaceutical",
-  "aliases": [
-    "Mellow",
-    "the Tide",
-    "Sera"
-  ],
+  "aliases": [],
   "category": "withdrawal_aid",
   "subcategory": "serotonin_rebuilder_and_neural_pathway_rerouter",
-  "manufacturer": "Street chemist origin (Shelf, attributed to \u0027the Matron\u0027); now produced by multiple unlicensed labs",
-  "description": "Serotavane began as a Shelf-chemist formulation created to address the catastrophic serotonin depletion following heavy Vellichor and synthetic empathogen abuse \u2014 a growing crisis in the lower tiers that legitimate pharma had not addressed. It combines 5-HTP precursor chains, SSRI-adjacent reuptake modulation, and a novel SNT-derived component that gently promotes synaptic plasticity in habitual neural pathways, giving the brain a window of increased rewiring capacity that, when paired with behavioral reinforcement, can break the trigger-response loops underlying addiction. It is unlicensed, inconsistently formulated, but widely trusted on the Shelf.",
+  "manufacturer": "Street chemist origin (Shelf, attributed to 'the Matron'); now produced by multiple unlicensed labs",
+  "description": "Serotavane began as a Shelf-chemist formulation created to address the catastrophic serotonin depletion following heavy Vellichor and synthetic empathogen abuse — a growing crisis in the lower tiers that legitimate pharma had not addressed. It combines 5-HTP precursor chains, SSRI-adjacent reuptake modulation, and a novel SNT-derived component that gently promotes synaptic plasticity in habitual neural pathways, giving the brain a window of increased rewiring capacity that, when paired with behavioral reinforcement, can break the trigger-response loops underlying addiction. It is unlicensed, inconsistently formulated, but widely trusted on the Shelf.",
   "method_of_use": "oral",
   "effects": [
     "Gradual serotonin system restoration and mood stabilization",
@@ -21,23 +17,23 @@
     "Mild anxiolytic effect"
   ],
   "side_effects": [
-    "Batch inconsistency is the primary risk \u2014 unlicensed production means potency varies significantly",
-    "During plasticity window, users are unusually susceptible to all forms of behavioral conditioning \u2014 including negative or manipulative ones",
+    "Batch inconsistency is the primary risk — unlicensed production means potency varies significantly",
+    "During plasticity window, users are unusually susceptible to all forms of behavioral conditioning — including negative or manipulative ones",
     "Sexual side effects common: reduced libido in some, heightened in others",
-    "Serotonin syndrome risk if combined with any other serotonergic compound \u2014 potentially lethal",
+    "Serotonin syndrome risk if combined with any other serotonergic compound — potentially lethal",
     "Mild nausea in first week",
-    "The SNT component is derived from varying sources \u2014 some batches use poorly harvested tissue, causing inflammatory responses in users with autoimmune sensitivities"
+    "The SNT component is derived from varying sources — some batches use poorly harvested tissue, causing inflammatory responses in users with autoimmune sensitivities"
   ],
   "duration": "10-14 hours per dose; full course 6-10 weeks",
   "addiction_risk": "low",
   "tier_availability": "Tier 1 only",
   "legality": "illegal",
-  "street_price": "\u03A625-35 per dose depending on batch and source",
-  "cultural_context": "Serotavane is a point of genuine Shelf pride \u2014 something that came from their own people, developed outside the corporate system, that actually works. \u0027the Matron\u0027 who originally formulated it is a semi-mythic figure in Shelf recovery culture; multiple people claim to be her or to have trained under her. Novafold has twice attempted to synthesize a licensed version and been blocked by the complexity of the SNT component sourcing. Helix Biosystems is known to be studying it. The plasticity window side effect is both the drug\u0027s greatest asset and its most dangerous feature \u2014 Shelf mutual aid networks have developed informal \u0027Sera circles,\u0027 communal support groups designed to fill the plasticity window with positive social reinforcement rather than leaving users vulnerable to exploitation.",
+  "street_price": "Φ25-35 per dose depending on batch and source",
+  "cultural_context": "Serotavane is a point of genuine Shelf pride — something that came from their own people, developed outside the corporate system, that actually works. 'the Matron' who originally formulated it is a semi-mythic figure in Shelf recovery culture; multiple people claim to be her or to have trained under her. Novafold has twice attempted to synthesize a licensed version and been blocked by the complexity of the SNT component sourcing. Helix Biosystems is known to be studying it. The plasticity window side effect is both the drug's greatest asset and its most dangerous feature — Shelf mutual aid networks have developed informal 'Sera circles,' communal support groups designed to fill the plasticity window with positive social reinforcement rather than leaving users vulnerable to exploitation.",
   "story_hooks": [
-    "A cult operating in the Tier 1 zones has identified Serotavane\u0027s plasticity window as a perfect recruitment tool \u2014 they\u0027re distributing it free, with their own behavioral programming waiting on the other side of that window",
-    "The original Matron is real, elderly, and dying \u2014 and she\u0027s left the complete Serotavane formula to one person, someone who now has to decide whether to give it to Novafold (who can scale it and save lives but will monetize it), keep it on the Shelf (where it stays accessible but inconsistent), or destroy it (because of what she\u0027s discovered the SNT component actually does over multi-year use)",
-    "A Helix Biosystems researcher has gone deep undercover in Shelf recovery networks to obtain Serotavane samples \u2014 but six weeks in, they\u0027ve done a full Sera course themselves and the plasticity window has done something unexpected to their loyalty"
+    "A cult operating in the Tier 1 zones has identified Serotavane's plasticity window as a perfect recruitment tool — they're distributing it free, with their own behavioral programming waiting on the other side of that window",
+    "The original Matron is real, elderly, and dying — and she's left the complete Serotavane formula to one person, someone who now has to decide whether to give it to Novafold (who can scale it and save lives but will monetize it), keep it on the Shelf (where it stays accessible but inconsistent), or destroy it (because of what she's discovered the SNT component actually does over multi-year use)",
+    "A Helix Biosystems researcher has gone deep undercover in Shelf recovery networks to obtain Serotavane samples — but six weeks in, they've done a full Sera course themselves and the plasticity window has done something unexpected to their loyalty"
   ],
   "tags": []
 }

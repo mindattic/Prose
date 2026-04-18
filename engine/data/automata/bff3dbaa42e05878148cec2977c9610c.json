@@ -2,11 +2,7 @@
   "name": "Ouroboros SC-4 'Roomba'",
   "type": "automaton",
   "classification": "Municipal — Street Cleaning Platform",
-  "aliases": [
-    "Roomba",
-    "Street Sucker",
-    "Disc Jockey"
-  ],
+  "aliases": [],
   "manufacturer": "OUROBOROS SYSTEMS",
   "description": "The SC-4 is a disc-shaped street cleaning automaton measuring 2.5 meters in diameter and 0.6 meters in height, designed to patrol roadways and pedestrian areas during low-traffic hours, scrubbing surfaces with a combination of high-pressure water jets, chemical solvent application, and rotary brush systems mounted on its underside. The platform navigates using a combination of GPS waypoints and real-time obstacle avoidance, tracing efficient cleaning patterns across its assigned district while avoiding parked vehicles, sleeping rough-sleepers, and the accumulated detritus of urban existence.\n\nOuroboros deployed the first SC-4 units in GLMZ's corporate districts, where pristine streets are part of the brand identity that corponations project to clients and employees. The machines perform admirably in these environments — smooth surfaces, predictable obstacles, regular schedules. When the municipal authority contracted Ouroboros to deploy SC-4 units in the lower tiers, the machines encountered a different reality. Streets in the Shelf are not smooth. They are cracked, uneven, covered in improvised structures, and occupied by people who have nowhere else to go.\n\nThe SC-4's obstacle avoidance system classifies sleeping humans as 'temporary obstructions' and routes around them, which sounds humane until you learn that the 'obstruction' data — including location, time, and thermal signature — is logged and transmitted to the municipal authority. The street cleaner that politely avoids you while you sleep in a doorway is also reporting your presence to a system that may use that data to justify clearance operations. Ouroboros did not design the SC-4 to be a surveillance tool, but its data has been used as one.",
   "tier_availability": "Tier 1+",

@@ -4,12 +4,7 @@
   "brand_name": "Tessera",
   "product_name": "Tessera Corponation ArcLight PF-12 Plasma Fusion Microreactor",
   "type": "technology",
-  "aliases": [
-    "The Sun Box",
-    "PF",
-    "Tessera Torch",
-    "Little Star"
-  ],
+  "aliases": [],
   "subcategory": "energy",
   "description": "The ArcLight PF-12 is a compact deuterium-helium-3 plasma fusion microreactor designed for installation in large buildings, corporate campuses, and military installations requiring reliable, high-density power generation fully independent of external grid infrastructure. The PF-12 achieves fusion ignition through a proprietary magnetic confinement geometry Tessera designates 'oblate torus compression' — a departure from conventional tokamak design that allows the reactor vessel to fit within a 6-meter diameter, 4-meter height footprint while sustaining plasma at operational temperatures. Each PF-12 unit generates 22 megawatts of thermal output, converted to approximately 14 megawatts of net electrical output after system overhead, sufficient to power a large corporate tower or a mid-sized military forward operating base entirely off-grid.\n\nThe PF-12 is notable for its fuel logistics model as much as its engineering: helium-3 is extracted from Great Lakes basin regolith processing operations managed by Dredge Mining under an exclusive Tessera supply contract, while deuterium is produced onsite via electrolytic separation from municipal water. This dual-source fuel independence means a PF-12 installation can theoretically operate for 18 months without external resupply, a feature that makes it exceptionally attractive for high-security installations that cannot risk grid dependency. The reactor's control systems are built on a hardened Tessera-proprietary AI substrate that is explicitly not compatible with CinderBlock AI infrastructure, a deliberate architectural choice that prevents third-party monitoring or integration.\n\nThe ArcLight PF-12 is currently restricted to Tier 1 corporate installations and Arcturus Defense Solutions military clients. Tessera maintains strict control over installation, servicing, and decommissioning — no independent technicians are certified to work on PF-12 hardware, and each unit contains tamper-detection systems that trigger controlled plasma quench and irreversible component vitrification upon unauthorized access. There are unconfirmed reports of between three and seven black-market PF-12 units in operation across GLMZ, sources unknown.",
   "tier_availability": "Tier 1 / Military only",

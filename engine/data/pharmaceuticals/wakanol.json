@@ -2,15 +2,11 @@
   "id": "019d7850c6ec7c40bcc1c20d36eb4d7e",
   "name": "Wakanol",
   "type": "pharmaceutical",
-  "aliases": [
-    "Longburn",
-    "The 72",
-    "Ironwatch"
-  ],
+  "aliases": [],
   "category": "sleep_dream",
   "subcategory": "sleep_eliminator",
   "manufacturer": "Nightshade Pharmatech",
-  "description": "Wakanol is a multi-mechanism wakefulness compound that combines orexin agonism, adenosine receptor antagonism, and a proprietary SNT-derived neuroplasticity stabilizer to maintain full cognitive function for 68-76 hours without sleep. Unlike older stimulants that simply mask fatigue, Wakanol actively manages neural waste clearance through a synthetic glymphatic acceleration pathway, preventing the cognitive degradation that accumulates with sleep deprivation. The crash is total and unavoidable \u2014 a mandatory 18-22 hour sleep event follows termination.",
+  "description": "Wakanol is a multi-mechanism wakefulness compound that combines orexin agonism, adenosine receptor antagonism, and a proprietary SNT-derived neuroplasticity stabilizer to maintain full cognitive function for 68-76 hours without sleep. Unlike older stimulants that simply mask fatigue, Wakanol actively manages neural waste clearance through a synthetic glymphatic acceleration pathway, preventing the cognitive degradation that accumulates with sleep deprivation. The crash is total and unavoidable — a mandatory 18-22 hour sleep event follows termination.",
   "method_of_use": "injection",
   "effects": [
     "Full cognitive function for 68-76 hours",
@@ -30,11 +26,11 @@
   "addiction_risk": "high",
   "tier_availability": "Tier 2-3",
   "legality": "restricted",
-  "street_price": "\u03A6120 per injection",
-  "cultural_context": "Wakanol is the drug of deadlines, of desperation, and of people who are paid by the hour and can\u0027t afford to sleep. Tier 2 contract workers use it to double their billable hours before a project closes. Fixers use it to stay active during tense multi-day operations. The problem is the crash \u2014 22 hours of unconsciousness in GLMZ is 22 hours of vulnerability, and people have died during their Wakanol crash in places they shouldn\u0027t have fallen asleep.",
+  "street_price": "Φ120 per injection",
+  "cultural_context": "Wakanol is the drug of deadlines, of desperation, and of people who are paid by the hour and can't afford to sleep. Tier 2 contract workers use it to double their billable hours before a project closes. Fixers use it to stay active during tense multi-day operations. The problem is the crash — 22 hours of unconsciousness in GLMZ is 22 hours of vulnerability, and people have died during their Wakanol crash in places they shouldn't have fallen asleep.",
   "story_hooks": [
-    "A key contact went into their Wakanol crash at a critical moment \u2014 someone knew the timing and used those 20 hours to completely compromise them, their home, and everything in it.",
-    "A Tier 2 worker has been running consecutive Wakanol cycles for six months, sleeping only during the mandatory crashes. Their glymphatic system is failing and they\u0027re starting to show signs of rapid-onset neurodegeneration \u2014 but they can\u0027t afford to stop working."
+    "A key contact went into their Wakanol crash at a critical moment — someone knew the timing and used those 20 hours to completely compromise them, their home, and everything in it.",
+    "A Tier 2 worker has been running consecutive Wakanol cycles for six months, sleeping only during the mandatory crashes. Their glymphatic system is failing and they're starting to show signs of rapid-onset neurodegeneration — but they can't afford to stop working."
   ],
   "tags": []
 }

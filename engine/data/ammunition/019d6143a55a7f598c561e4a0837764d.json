@@ -2,12 +2,7 @@
   "id": "019d6143a55a7f598c561e4a0837764d",
   "name": "Ringo Corponation R-Cell Type-9 RC-9",
   "type": "ammunition",
-  "aliases": [
-    "R-Cell",
-    "RC-9",
-    "Ringo cell",
-    "Black cap"
-  ],
+  "aliases": [],
   "category": "energy_cell",
   "caliber": "N/A — energy cell",
   "description": "The RC-9 is a modular power cell manufactured by Ringo Corponation, distinguished by its adaptive output management system that automatically configures voltage, amperage, and discharge profile to match whatever weapon platform it is inserted into. Where other manufacturers produce cells optimized for specific weapon types, Ringo designed the RC-9 as a universal cell that negotiates its output parameters with the weapon's power management system upon insertion.\n\nThe adaptive system uses a short handshake protocol — approximately 0.8 seconds after insertion — during which the cell's onboard processor reads the weapon's power requirements and configures its internal switching matrix accordingly. This means an operator can carry RC-9 cells as universal spares across a mixed weapon loadout, eliminating the need to track multiple cell types. The trade-off is that the RC-9's output in any given configuration is approximately 85% as efficient as a purpose-built cell, meaning slightly fewer shots per cell and marginally higher waste heat.\n\nRingo Corponation markets the RC-9 as a logistics solution rather than a performance product, targeting military procurement officers and mercenary outfitters who value supply chain simplification over individual weapon optimization. The strategy has been remarkably successful — the RC-9 is the standard-issue power cell for several national military forces and the default procurement choice for mid-tier mercenary companies that operate diverse weapon inventories.",

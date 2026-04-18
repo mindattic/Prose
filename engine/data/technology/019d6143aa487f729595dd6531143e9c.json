@@ -4,12 +4,7 @@
   "brand_name": "Ouroboros",
   "product_name": "Ouroboros Energy Atmospheric Water Extraction Network",
   "type": "technology",
-  "aliases": [
-    "AWEN",
-    "Sky Well",
-    "Air Water",
-    "Ouroboros Tap"
-  ],
+  "aliases": [],
   "subcategory": "environmental",
   "description": "A distributed network of atmospheric condensation units that extract potable water from ambient air humidity, even in relatively dry conditions. Each unit uses thermoelectric cooling to chill surfaces below the dew point, collecting condensation that is filtered and mineralized for consumption. The network scales from building-mounted units producing hundreds of liters daily to district-scale installations that supplement conventional water infrastructure. Ouroboros deploys the system as a complement to their energy infrastructure, since the condensation units require significant power.",
   "tier_availability": "Tier 2+",

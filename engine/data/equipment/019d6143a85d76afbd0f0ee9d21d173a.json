@@ -4,12 +4,7 @@
   "brand_name": "Ironclad",
   "product_name": "Ironclad Agrisystems Deadfield Jammer — 'The Fallow'",
   "type": "equipment",
-  "aliases": [
-    "Fallow",
-    "The Deadfield",
-    "Ironclad Quiet",
-    "Crop Killer"
-  ],
+  "aliases": [],
   "category": "comms",
   "description": "Originally engineered by Ironclad Agrisystems to suppress unauthorized drone telemetry over proprietary agricultural zones, the Deadfield Jammer — commercially designated the IAS-J7 but universally known as 'The Fallow' — was quietly repurposed by the black market within eighteen months of its agricultural release. The device broadcasts a dense, low-frequency interference pattern that saturates a defined zone with signal noise, effectively silencing all unshielded radio, cellular, and short-range mesh communication within a configurable radius of up to 200 meters. Its agricultural origins mean it was designed for outdoor, wide-area use, giving it unusual range for a portable unit.\n\nThe Fallow's distinctive characteristic is its frequency-layering approach: rather than broadcasting a single jamming band, it cycles through seventeen discrete frequency profiles in a pseudo-random sequence, making it resistant to adaptive frequency-hopping radios that would otherwise punch through a static jammer. The physical unit resembles an agricultural sensor stake — a matte-green spike roughly 40cm long intended to be planted in soil or propped against a surface, drawing minimal visual attention in outdoor or industrial environments. A secondary 'harvest mode' allows the device to selectively jam only unlicensed frequencies while leaving corporate infrastructure bands open, a feature Ironclad included for regulatory compliance that has since been widely exploited.\n\nThe Fallow has become something of a blue-collar jammer — it lacks the surgical precision of military-grade suppression hardware but it's durable, cheap enough to be considered disposable, and widely available through agricultural supply chains that receive minimal scrutiny. Street crews use it for ambushes and negotiations; labor organizers use it to prevent corporate surveillance of worker meetings; and more than a few GLMZ residents have one buried in their community garden that activates on a timer.",
   "manufacturer": "IRONCLAD AGRISYSTEMS",

@@ -1,4 +1,4 @@
-"""Generate language evolution documents for the GLMZ world — how people talk in 2200."""
+"""Generate language evolution documents for the GLMZ world -- how people talk in 2200."""
 import json
 import os
 import uuid

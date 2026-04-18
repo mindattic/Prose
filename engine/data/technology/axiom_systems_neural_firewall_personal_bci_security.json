@@ -4,12 +4,7 @@
   "brand_name": "Axiom",
   "product_name": "NeuralWall NF-8",
   "type": "technology",
-  "aliases": [
-    "NeuralWall",
-    "NF-8",
-    "Brain Firewall",
-    "Mind Shield"
-  ],
+  "aliases": [],
   "subcategory": "infrastructure",
   "description": "The NeuralWall NF-8 is a software security suite running on Brain-Computer Interface hardware that protects the user's neural connection from unauthorized access, data exfiltration, and hostile signal injection. In an era where BCIs connect human brains directly to digital networks, the boundary between 'hacking a computer' and 'hacking a person' has dissolved, and neural firewall technology has become as essential as the BCI itself.\n\nThe NF-8 monitors all data entering and leaving the BCI through the NeuralMesh connection, using pattern recognition to identify potential threats: unauthorized connection attempts, data packets that contain known exploit signatures, and signals that attempt to interact with the BCI's neural interface layer — the components that directly stimulate the user's brain. The firewall can block incoming threats, quarantine suspicious data for analysis, and alert the user to attempted intrusions. Its most critical function is protecting the neural interface layer — an exploit that reaches this layer can potentially read the user's thoughts, inject false sensory experiences, or trigger involuntary motor commands.\n\nAxiom provides the NF-8 as a standard component of their BCI package, but the default configuration is basic — adequate against known threats but vulnerable to zero-day exploits and sophisticated attacks. Premium NF-8 configurations with real-time threat intelligence feeds, behavioral analysis, and dedicated security monitoring cost between 200 and 2,000 Φ per month depending on the protection tier. The security disparity between basic and premium configurations is significant: basic NF-8 users are essentially running consumer-grade antivirus on a device connected to their brain, while premium users have corporate-grade security. The implication is clear — the wealthy are harder to hack, and the poor are soft targets for neural exploitation.",
   "tier_availability": "Tier 2",

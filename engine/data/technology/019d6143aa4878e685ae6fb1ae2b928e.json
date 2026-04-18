@@ -4,12 +4,7 @@
   "brand_name": "Ouroboros",
   "product_name": "Ouroboros Energy CascadeCell Mk.IV Supercapacitor Array",
   "type": "technology",
-  "aliases": [
-    "The Torrent",
-    "CC4",
-    "Cascade Rack",
-    "Flood Banks"
-  ],
+  "aliases": [],
   "subcategory": "energy",
   "description": "The CascadeCell Mk.IV is a modular supercapacitor array system designed for rapid energy storage and discharge in high-demand urban environments. Each unit consists of 144 graphene-aerogel capacitor cells arranged in a thermally-coupled hexagonal lattice, capable of absorbing and releasing up to 8.4 megajoules within a 0.3-second discharge window. The array charges from any compatible grid tap or renewable input and can reach 90% capacity in under four minutes, making it the backbone of surge-demand management across GLMZ's lower and mid-tier districts.\n\nWhat distinguishes the Mk.IV from its predecessors is the integrated CinderBlock AI load-balancing microcontroller embedded in each rack unit, which negotiates real-time energy trades across adjacent arrays on the Ouroboros LocalGrid mesh protocol. This allows a building or installation running multiple CascadeCell units to function as a distributed energy node, selling surplus back to the grid during off-peak hours or hoarding capacity before anticipated demand spikes. The system is physically robust — encased in a Palladian-fabricated impact shell rated for seismic events up to 7.2 magnitude — and is commonly installed in basements, sub-floors, and reinforced utility corridors.\n\nThe Mk.IV is ubiquitous in Tiers 2 and 3 infrastructure, powering everything from mid-block residential towers to black-market fabrication dens. Its discharge speed makes it particularly attractive to operators who need instantaneous power: industrial door systems, electromagnetic barriers, and — less officially — rail-gun emplacements and high-wattage disruption rigs.",
   "tier_availability": "Tier 2+",

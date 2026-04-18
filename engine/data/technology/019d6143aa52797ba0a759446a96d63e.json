@@ -4,12 +4,7 @@
   "brand_name": "Tessera",
   "product_name": "Tessera Industries Femtosecond Laser Fabrication System",
   "type": "technology",
-  "aliases": [
-    "FLFS",
-    "Atom Cutter",
-    "Tessera Scalpel",
-    "Light Forge"
-  ],
+  "aliases": [],
   "subcategory": "manufacturing",
   "description": "An ultra-precision manufacturing platform that uses femtosecond laser pulses to machine materials at the atomic scale. The FLFS can cut, drill, and shape any material — including diamond, sapphire, and exotic metamaterials — with tolerances measured in nanometers. The femtosecond pulse duration (10^-15 seconds) is so short that the material is removed before thermal energy can propagate to surrounding atoms, enabling cold ablation that leaves no heat-affected zone. The system fabricates components for neural interfaces, quantum computing hardware, and metamaterial structures that cannot be manufactured by any other method.",
   "tier_availability": "Tier 4+",

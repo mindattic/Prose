@@ -2,25 +2,22 @@
   "id": "019d7850c6ab76ba951e851f8691f12c",
   "name": "Ferraxon",
   "type": "pharmaceutical",
-  "aliases": [
-    "Ironbloom",
-    "Spike"
-  ],
+  "aliases": [],
   "category": "augment_interactive",
   "subcategory": "chrome_enhancer",
   "manufacturer": "Nightshade Pharmatech",
-  "description": "A vasoactive-synthetic compound that floods chrome-tissue interfaces with an accelerant neurotransmitter analog, temporarily pushing mechanical augments 40-60% beyond their rated performance envelope. Users report their augmented limbs feeling \u0027alive\u0027 \u2014 faster, stronger, more responsive than the hardware should allow. The effect is real: firmware governors are chemically bypassed, and the chrome simply runs hot.",
+  "description": "A vasoactive-synthetic compound that floods chrome-tissue interfaces with an accelerant neurotransmitter analog, temporarily pushing mechanical augments 40-60% beyond their rated performance envelope. Users report their augmented limbs feeling 'alive' — faster, stronger, more responsive than the hardware should allow. The effect is real: firmware governors are chemically bypassed, and the chrome simply runs hot.",
   "method_of_use": "injection",
   "effects": [
     "Augmented limb strength increased 40-60% above rated spec",
     "Reflex augments operate at 1.5x design speed",
     "Thermal vision and optical augments gain increased resolution and range",
-    "Proprioceptive feedback sharpened \u2014 augments feel more integrated with body"
+    "Proprioceptive feedback sharpened — augments feel more integrated with body"
   ],
   "side_effects": [
     "Interface joint microfractures with repeated use",
-    "Hardware overheating \u2014 augments run 8-12\u00B0C above normal operating temp",
-    "Withdrawal causes augments to feel \u0027dead\u0027 or disconnected",
+    "Hardware overheating — augments run 8-12°C above normal operating temp",
+    "Withdrawal causes augments to feel 'dead' or disconnected",
     "Risk of actuator burnout in military-grade chrome",
     "Fever, sweating, elevated heart rate"
   ],
@@ -28,12 +25,12 @@
   "addiction_risk": "high",
   "tier_availability": "Tier 1-2",
   "legality": "illegal",
-  "street_price": "\u03A6180-240",
-  "cultural_context": "Ferraxon is the working muscle of the Shelf \u2014 laborers who need to hit harder in pit fights, couriers outrunning enforcers, fixers who can\u0027t afford a chrome upgrade but need one tonight. It\u0027s also quietly popular among Tier 2 dock workers who overload their lift-rigs to make quota. The name comes from the ferrous smell users report sweating out during the peak. Regulars are called \u0027spikers.\u0027",
+  "street_price": "Φ180-240",
+  "cultural_context": "Ferraxon is the working muscle of the Shelf — laborers who need to hit harder in pit fights, couriers outrunning enforcers, fixers who can't afford a chrome upgrade but need one tonight. It's also quietly popular among Tier 2 dock workers who overload their lift-rigs to make quota. The name comes from the ferrous smell users report sweating out during the peak. Regulars are called 'spikers.'",
   "story_hooks": [
-    "A Shelf pit fighter\u0027s Ferraxon supply has been cut \u2014 someone is buying it all, and the fighter needs to find out who before their next match",
-    "A Tier 2 factory worker collapses when their arm actuator burns out mid-shift from chronic Ferraxon use \u2014 but the incident report is being buried by the foreman, who\u0027s been supplying the drug to meet production targets",
-    "A cache of military-grade Ferraxon \u2014 a stronger, cleaner formulation \u2014 surfaces on the Shelf, suggesting someone in a Tier 4 or 5 facility is running a side operation"
+    "A Shelf pit fighter's Ferraxon supply has been cut — someone is buying it all, and the fighter needs to find out who before their next match",
+    "A Tier 2 factory worker collapses when their arm actuator burns out mid-shift from chronic Ferraxon use — but the incident report is being buried by the foreman, who's been supplying the drug to meet production targets",
+    "A cache of military-grade Ferraxon — a stronger, cleaner formulation — surfaces on the Shelf, suggesting someone in a Tier 4 or 5 facility is running a side operation"
   ],
   "tags": []
 }

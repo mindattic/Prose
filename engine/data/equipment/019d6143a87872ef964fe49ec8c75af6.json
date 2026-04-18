@@ -4,12 +4,7 @@
   "brand_name": "Tessera",
   "product_name": "Tessera Industries Quantum Key Generator QKG-2",
   "type": "equipment",
-  "aliases": [
-    "QKG-2",
-    "Key Maker",
-    "Quantum Lock",
-    "Tessera Key"
-  ],
+  "aliases": [],
   "category": "electronic_warfare",
   "description": "A portable device that generates quantum encryption keys for securing communications, data storage, and access control systems. The QKG-2 uses a miniaturized quantum random number generator to produce encryption keys that are mathematically proven to be uncrackable by any known or theoretically possible classical computing system. Each generated key pair is unique and entangled — compromising one half immediately invalidates the other. The device can produce 1,000 key pairs per hour and is used to secure everything from neural interface communications to physical lock systems.",
   "manufacturer": "TESSERA INDUSTRIES",

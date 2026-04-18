@@ -2,12 +2,7 @@
   "id": "019d6143ab1571d090e1940d1391e026",
   "name": "Autonomous Swarm Dispersal Unit ASDU-3 'Locust'",
   "type": "weapon",
-  "aliases": [
-    "Locust",
-    "The Cloud",
-    "Bugspray",
-    "Swarmbox"
-  ],
+  "aliases": [],
   "category": "drone",
   "description": "The ASDU-3 is a deployable canister roughly the size of a large thermos that fractures open on command or impact, releasing between 240 and 280 semi-autonomous micro-drones, each no larger than a housefly. Each drone carries a miniaturized piezoelectric charge capacitor and a rudimentary collision-guidance system slaved to a shared mesh network. On deployment, the swarm self-organizes within approximately 1.4 seconds, distributing targeting priority across all active units simultaneously. The collective operates on distributed logic rather than centralized AI, meaning the swarm cannot be disabled by neutralizing a single command node.\n\nWhat distinguishes the Locust from earlier swarm platforms is its use of inductive resonance homing — each micro-drone locks onto the bioelectric signature of warm-bodied targets, allowing it to distinguish humans from animals and, with the proper IFF token, from friendly personnel. On contact, each drone discharges its piezoelectric payload into the skin, triggering localized muscle spasm and surface-layer nerve disruption. A full swarm saturation of a single target delivers cumulative effects equivalent to repeated taser cycling. Multiple targets in an enclosed space can be simultaneously engaged.\n\nThe Locust has a significant cultural footprint in GLMZ's underworld — its indiscriminate area coverage made it notorious after the Siltway Market Incident, in which a misdeployed canister hospitalized over sixty civilians. Arcturus Defense Solutions quietly pulled the civilian variant from licensed distribution but continues fulfilling military and PMC contracts. Black market canisters, often with degraded IFF systems, circulate widely in the outer districts.",
   "manufacturer": "Iron Point Ammunition",

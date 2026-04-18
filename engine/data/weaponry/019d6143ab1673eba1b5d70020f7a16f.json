@@ -2,12 +2,7 @@
   "id": "019d6143ab1673eba1b5d70020f7a16f",
   "name": "Autonomous Swarm Dispersal Unit ASDU-4 'Locust'",
   "type": "weapon",
-  "aliases": [
-    "The Cloud",
-    "Locust Box",
-    "Swarmkit",
-    "Bug Bomb"
-  ],
+  "aliases": [],
   "category": "drone",
   "description": "The ASDU-4 is a mid-chassis autonomous swarm drone housing a colony of 200–400 micro-units, each roughly the size of a thumbnail, fabricated from carbon-composite shells and equipped with independent piezoelectric propulsion fins. Upon deployment, the colony disperses in configurable patterns—cordon, pursuit, saturation, or denial—governed by a distributed hive-logic processor that eliminates the need for a centralized command node. Each micro-unit carries a 0.8-gram shaped charge of TATP-analog high explosive capable of penetrating soft armor at contact range, delivering lethal fragmentation to unarmored targets and sustained harassment to hardened ones.\n\nWhat distinguishes the ASDU-4 from earlier swarm prototypes is its fault-tolerant mesh communication architecture. Destroying individual units does not degrade swarm cohesion; the colony reorganizes and redistributes targeting priorities in under 40 milliseconds. The swarm can navigate urban geometry autonomously using onboard LIDAR pings shared across the mesh, threading corridors, ventilation ducts, and vehicle interiors that conventional weapons cannot reach. A proprietary IFF beacon system—licensed separately—prevents friendly casualties, though bootleg units circulating in the GLMZ undermarket frequently lack this feature entirely.\n\nOperators in the field refer to deployment as 'opening the box,' and the psychological impact on targeted personnel is disproportionate to the ASDU-4's raw lethality. The sound of the swarm—a low, chittering harmonic produced by thousands of synchronized propulsion fins—has become a recognizable signature in contested districts. Several documented cases exist of entire security teams abandoning fortified positions upon auditory detection alone.",
   "manufacturer": "Ironside Armaments",

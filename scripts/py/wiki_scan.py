@@ -1,5 +1,5 @@
 """
-wiki_scan.py — StreetSamurai Wiki Link Scanner
+wiki_scan.py -- StreetSamurai Wiki Link Scanner
 
 Builds an index of all named entities, then scans every entity's text fields
 for unlinked mentions. Inserts [[Entity Name]] (or [[Entity Name|display text]])
@@ -23,6 +23,7 @@ OPTIONS
   --repo REPO       Limit scan to one repo folder (e.g. --repo people)
   --single SLUG     Scan a single entity by slug (e.g. --single kyle-ellen-corbin-vasik)
   --since DURATION  Only scan files modified within this duration (e.g. 2h, 30m, 1d)
+  --limit N         Stop after converting N entities (files with links inserted)
   --min-length N    Minimum entity name length to match (default: 4)
   --data-dir DIR    Override engine/data path (default: ../../engine/data)
   --help, -h        Show this help text and exit
@@ -87,16 +88,9 @@ except ImportError:
 
 WIKI_LINK_RE = re.compile(r'\[\[([^\]|]+)(?:\|([^\]]+))?\]\]')
 
-_DIACRITIC_MAP = str.maketrans({
-    'ø': 'o', 'Ø': 'o', 'ð': 'd', 'Ð': 'd', 'þ': 'th', 'Þ': 'th',
-    'æ': 'ae', 'Æ': 'ae', 'œ': 'oe', 'Œ': 'oe', 'ß': 'ss',
-    'ł': 'l', 'Ł': 'l', 'ı': 'i', 'ĸ': 'k', 'ŉ': 'n',
-})
-
 def to_slug(name: str) -> str:
-    """Mirror of C# JsonDirectoryRepository.ToSlug: lowercase, strip diacritics, non-alnum → hyphen."""
     import unicodedata
-    s = name.lower().strip().translate(_DIACRITIC_MAP)
+    s = name.lower().strip()
     s = ''.join(c for c in unicodedata.normalize('NFD', s)
                 if unicodedata.category(c) != 'Mn')
     return re.sub(r'[^a-z0-9]+', '-', s).strip('-')
@@ -175,11 +169,17 @@ def build_index(data_dir: Path, min_length: int) -> dict[str, dict]:
             entry = {"name": name, "id": entity_id, "repo": repo, "route": route}
             index[name.lower()] = entry
 
+            for alias in data.get("aliases", []):
+                if isinstance(alias, str) and len(alias) >= min_length:
+                    key = alias.lower()
+                    if key not in index:
+                        index[key] = {**entry, "display_name": alias}
+
     return index
 
 
 # Keys whose string values are never prose (IDs, enums, dates, short codes)
-# "name", "aliases", "title" etc. are entity identifiers — never modify them with wiki markup
+# "name", "aliases", "title" etc. are entity identifiers -- never modify them with wiki markup
 WIKI_SCAN_SKIP_KEYS = {
     "id", "name", "aliases", "title", "term", "codename", "product_name", "brand_name",
     "full_legal_name", "common_names", "headline", "type", "species", "gender", "pronouns",
@@ -226,6 +226,13 @@ def already_linked(text: str) -> set[str]:
     return result
 
 
+def is_sentence_start(text: str, start: int) -> bool:
+    """True if position `start` follows sentence-ending punctuation or is at string start.
+    Used to reject single-word capitalizations that are grammatical, not proper-noun."""
+    prefix = text[:start].rstrip(' \t')
+    return not prefix or prefix[-1] in '.!?\n'
+
+
 def find_matches(text: str, index: dict, partial: bool) -> list[tuple]:
     """Return list of (start, end, entity_entry, match_text) sorted by position.
     Longest names are matched first to avoid partial overlaps."""
@@ -244,20 +251,27 @@ def find_matches(text: str, index: dict, partial: bool) -> list[tuple]:
         if name_lower in linked:
             continue  # Already linked
 
+        is_multiword = ' ' in search_term.strip()
+
         if partial:
-            # Partial/fuzzy preview — case-insensitive, no word boundary required
+            # Partial/fuzzy preview -- case-insensitive, no word boundary required
             pattern = re.compile(re.escape(search_term), re.IGNORECASE)
         else:
-            # Exact match — case-sensitive so "face" ≠ "Face" (the archetype)
+            # Exact match -- case-sensitive so "face" != "Face" (the archetype)
             # Word boundary: not preceded/followed by [ or word char
             pattern = re.compile(r'(?<![\[\w])' + re.escape(search_term) + r'(?![\w\]])')
 
         for m in pattern.finditer(text):
             start, end = m.start(), m.end()
             matched_text = m.group(0)
-            # Proper nouns only — skip if match starts with a lowercase letter
+            # Proper nouns only -- skip if match starts with a lowercase letter
             if not partial and matched_text[0].islower():
                 continue
+            # Single-word names capitalized only by sentence position are not entity references.
+            # Multi-word names are distinctive enough that sentence-start position is irrelevant.
+            if not partial and not is_multiword and matched_text[0].isupper():
+                if is_sentence_start(text, start):
+                    continue
             # Don't overlap with already-matched spans
             if any(s <= start < e or s < end <= e for s, e in covered_spans):
                 continue
@@ -306,7 +320,7 @@ def confirm_match(entry: dict, matched_text: str, field: str, context: str) -> b
     """Prompt user to confirm a single link insertion. Returns True to accept."""
     canonical = entry["name"]
     route = entry["route"] + "?id=" + entry["id"]
-    print(f"\n  Found: {matched_text!r} → [[{canonical}]]  ({entry['repo']})")
+    print(f"\n  Found: {matched_text!r} -> [[{canonical}]]  ({entry['repo']})")
     print(f"  Route: {route}")
     print(f"  Field: {field}")
     ctx_start = max(0, context.find(matched_text) - 40)
@@ -347,9 +361,17 @@ def main():
                         metavar="N", help=f"Minimum name length (default: {WIKI_MIN_NAME_LENGTH})")
     parser.add_argument("--since", metavar="DURATION",
                         help="Only scan files modified within this duration (e.g. 2h, 30m, 1d)")
+    parser.add_argument("--limit", type=int, metavar="N",
+                        help="Stop after converting N entities (files with links inserted)")
     parser.add_argument("--data-dir", metavar="DIR",
                         help="Override engine/data path")
+    parser.add_argument("--silent", action="store_true", help="Suppress all console output")
     args = parser.parse_args()
+    if args.silent:
+        import sys as _sys, os as _os
+        _sys.stdout = open(_os.devnull, "w")
+        _sys.stderr = open(_os.devnull, "w")
+
 
     if args.apply:
         args.dry_run = False
@@ -458,7 +480,7 @@ def main():
                             accepted.append(m)
                     else:
                         accepted.append(m)
-                        print(f"    {entity_name!r} → {field}: {matched_text!r} → [[{matched_text}|{entry['id']}]]")
+                        print(f"    {entity_name!r} -> {field}: {matched_text!r} -> [[{matched_text}|{entry['id']}]]")
 
                 if accepted and not args.dry_run:
                     set_nested(data, field, apply_links(text, accepted))
@@ -471,9 +493,15 @@ def main():
                 jf.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
                 repo_files += 1
                 total_files_modified += 1
+                if args.limit and total_files_modified >= args.limit:
+                    print(f"\n    [limit reached: {args.limit} entities converted]")
+                    break
 
-        print(f"\n    → {repo_links} links {'would be' if args.dry_run else ''} inserted"
+        print(f"\n    -> {repo_links} links {'would be' if args.dry_run else ''} inserted"
               f" across {repo_files} files\n")
+
+        if args.limit and total_files_modified >= args.limit:
+            break
 
     print("=" * 60)
     print(f"Total links {'to insert' if args.dry_run else 'inserted'}: {total_links_inserted:,}")

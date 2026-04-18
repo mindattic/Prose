@@ -2,11 +2,7 @@
   "id": "019d7850c6d9751181dfd851c1ff87b2",
   "name": "Sombrevex",
   "type": "pharmaceutical",
-  "aliases": [
-    "Quietus",
-    "The Blank",
-    "Greycoat"
-  ],
+  "aliases": [],
   "category": "sleep_dream",
   "subcategory": "nightmare_suppressor",
   "manufacturer": "Lazarus Pharmaceuticals",
@@ -16,24 +12,24 @@
     "Elimination of nightmare content during sleep",
     "Preserved dream activity with neutral-to-positive emotional valence",
     "Reduced cortisol spike upon waking",
-    "Improved sleep continuity \u2014 fewer stress-interruptions"
+    "Improved sleep continuity — fewer stress-interruptions"
   ],
   "side_effects": [
     "Emotional blunting bleeds into waking hours with prolonged use",
     "Suppression of fear response during sleep can reduce waking threat-detection sensitivity",
-    "Dreams become progressively bland and affectless \u2014 some users describe \u0027grey dreams\u0027",
+    "Dreams become progressively bland and affectless — some users describe 'grey dreams'",
     "Abrupt cessation causes nightmare rebound of severe intensity"
   ],
   "duration": "8-10 hours (patch duration)",
   "addiction_risk": "moderate",
   "tier_availability": "All tiers",
   "legality": "prescription",
-  "street_price": "\u03A618 per patch (Tier 2-3); \u03A66 on Shelf (subsidized gray market)",
-  "cultural_context": "Sombrevex is quietly ubiquitous across all tiers but for different reasons. Shelf residents use it to survive the psychological aftermath of violence and chrome-rejection seizures. Tier 4 corporate workers use it to suppress performance anxiety dreams. Veterans of the corporate security wars use it to stay functional. Lazarus Pharmaceuticals lobbied hard to keep it widely available \u2014 the dependency it creates is gentle and durable, and the rebound effect on cessation ensures users rarely stop voluntarily.",
+  "street_price": "Φ18 per patch (Tier 2-3); Φ6 on Shelf (subsidized gray market)",
+  "cultural_context": "Sombrevex is quietly ubiquitous across all tiers but for different reasons. Shelf residents use it to survive the psychological aftermath of violence and chrome-rejection seizures. Tier 4 corporate workers use it to suppress performance anxiety dreams. Veterans of the corporate security wars use it to stay functional. Lazarus Pharmaceuticals lobbied hard to keep it widely available — the dependency it creates is gentle and durable, and the rebound effect on cessation ensures users rarely stop voluntarily.",
   "story_hooks": [
-    "A chrome-rejection trauma survivor stops taking Sombrevex cold-turkey and begins having nightmares so specific and detailed they appear to be memories of crimes they didn\u0027t commit \u2014 or didn\u0027t commit consciously.",
-    "Lazarus Pharmaceuticals has been embedding micro-dose behavioral conditioning agents in certain Sombrevex patch batches distributed on the Shelf \u2014 suppressing nightmares while quietly reducing aggression and resistance in the population most likely to riot.",
-    "A Tier 4 fixer who hasn\u0027t dreamed of anything frightening in four years goes off Sombrevex to process a genuine threat \u2014 and discovers their fear response has atrophied to the point where they can no longer feel danger in time to act on it."
+    "A chrome-rejection trauma survivor stops taking Sombrevex cold-turkey and begins having nightmares so specific and detailed they appear to be memories of crimes they didn't commit — or didn't commit consciously.",
+    "Lazarus Pharmaceuticals has been embedding micro-dose behavioral conditioning agents in certain Sombrevex patch batches distributed on the Shelf — suppressing nightmares while quietly reducing aggression and resistance in the population most likely to riot.",
+    "A Tier 4 fixer who hasn't dreamed of anything frightening in four years goes off Sombrevex to process a genuine threat — and discovers their fear response has atrophied to the point where they can no longer feel danger in time to act on it."
   ],
   "tags": []
 }

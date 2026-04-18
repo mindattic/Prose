@@ -2,12 +2,7 @@
   "id": "019d6143ab5872c8bc30ca5c27bf4d1a",
   "name": "Variable Impedance Rifle VIR-9 'Switchback'",
   "type": "weapon",
-  "aliases": [
-    "Switchback",
-    "VIR-9",
-    "The Tuner",
-    "Variable"
-  ],
+  "aliases": [],
   "category": "firearm",
   "description": "The VIR-9 is a linear magnetically accelerated rifle that distinguishes itself through its real-time impedance modulation system. Conventional gauss rifles fix their magnetic coil parameters at manufacture, producing a consistent velocity and terminal profile. The Switchback instead allows the operator to adjust coil impedance across a 12-stage spectrum between shots, changing the projectile's exit velocity, spin rate, and electromagnetic emission profile on the fly. A low-impedance shot exits at subsonic velocity with minimal EM signature, functioning as a near-silent precision round. Maximum impedance produces a hypervelocity dart capable of defeating most structural barriers short of military-grade composite plating.\n\nTessera Corponation developed the VIR-9 for private security forces that operate across highly variable threat environments where carrying multiple weapon systems is impractical. The 12-stage impedance selector is mounted as a rotating collar around the trigger guard, operable with the firing hand without breaking grip — a deliberate ergonomic priority that took four design iterations to achieve. The rifle feeds from a 15-round magazine of ferromagnetic tungsten darts, each identical; the variation in terminal effect is produced entirely by the electromagnetic system rather than by different projectile types.\n\nThe weapon's primary limitation is thermal management. Running sustained fire at high-impedance settings causes the coil array to overheat, and the VIR-9 includes an automatic throttle that forces a 4-second cooling interval after three consecutive maximum-impedance shots. Operators who try to bypass this limiter have destroyed the coil array, rendering the weapon inert. The black market offers bypass chips, but their reliability is disputed and their installation voids what little warranty the weapon carries.",
   "manufacturer": "TESSERA CORPONATION",

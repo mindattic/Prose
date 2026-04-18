@@ -4,12 +4,7 @@
   "brand_name": "Axiom",
   "product_name": "Axiom Systems Neural Interface Firewall NIF-3",
   "type": "equipment",
-  "aliases": [
-    "NIF-3",
-    "Brain Wall",
-    "Axiom Shield",
-    "Mind Guard"
-  ],
+  "aliases": [],
   "category": "electronic_warfare",
   "description": "A hardware security module that installs between a user's neural interface and external data connections, providing real-time monitoring and filtering of all data entering or leaving the neural implant. The NIF-3 analyzes data packets for known attack signatures, anomalous patterns, and unauthorized access attempts, blocking threats before they reach the neural interface's processing core. The firewall includes anti-intrusion countermeasures that can trace and counterattack hostile connections, and a panic-disconnect that physically severs the neural interface from all external connections in an emergency.",
   "manufacturer": "AXIOM SYSTEMS",

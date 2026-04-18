@@ -2,15 +2,11 @@
   "id": "019d7850c6987baea122e8913e573a3d",
   "name": "Cereflux",
   "type": "pharmaceutical",
-  "aliases": [
-    "head drain",
-    "cooldown",
-    "the flush"
-  ],
+  "aliases": [],
   "category": "medical",
   "subcategory": "neural inflammation reducer",
   "manufacturer": "Novafold Pharmaceuticals",
-  "description": "Cereflux is an anti-neuroinflammatory compound formulated specifically for BCI-associated cerebral edema \u2014 the swelling and microtrauma caused by sustained high-bandwidth neural-digital interface activity. It combines a targeted blood-brain barrier permeant anti-inflammatory with glymphatic drainage enhancers to clear inflammatory metabolites from neural tissue. Standard issue for anyone in a high-BCI-load profession.",
+  "description": "Cereflux is an anti-neuroinflammatory compound formulated specifically for BCI-associated cerebral edema — the swelling and microtrauma caused by sustained high-bandwidth neural-digital interface activity. It combines a targeted blood-brain barrier permeant anti-inflammatory with glymphatic drainage enhancers to clear inflammatory metabolites from neural tissue. Standard issue for anyone in a high-BCI-load profession.",
   "method_of_use": "oral",
   "effects": [
     "reduces BCI-associated cerebral edema",
@@ -30,12 +26,12 @@
   "addiction_risk": "low",
   "tier_availability": "Tier 2-3",
   "legality": "prescription",
-  "street_price": "\u03A68 per tablet (generic)",
-  "cultural_context": "Cereflux is the ibuprofen of the BCI age. Anyone who spends long hours jacked into high-bandwidth work \u2014 data laborers, operators, coders, corporate analysts \u2014 keeps a strip of Cereflux in their kit. The Tier 2 working class calls it \u0027head drain\u0027 because it feels like pressure releasing. Overuse is common and quietly encouraged by employers who\u0027d rather workers dose up than log off.",
+  "street_price": "Φ8 per tablet (generic)",
+  "cultural_context": "Cereflux is the ibuprofen of the BCI age. Anyone who spends long hours jacked into high-bandwidth work — data laborers, operators, coders, corporate analysts — keeps a strip of Cereflux in their kit. The Tier 2 working class calls it 'head drain' because it feels like pressure releasing. Overuse is common and quietly encouraged by employers who'd rather workers dose up than log off.",
   "story_hooks": [
     "A corporate analyst discovers that the Cereflux supplied by their employer contains a compound that subtly degrades BCI security protocols over time",
-    "A Shelf community is experiencing epidemic neuroinflammation \u2014 their only source of Cereflux is diluted counterfeit stock",
-    "A character\u0027s Cereflux has stopped working \u2014 their neuroinflammation is worsening despite dosing, and imaging reveals something growing around their BCI implant"
+    "A Shelf community is experiencing epidemic neuroinflammation — their only source of Cereflux is diluted counterfeit stock",
+    "A character's Cereflux has stopped working — their neuroinflammation is worsening despite dosing, and imaging reveals something growing around their BCI implant"
   ],
   "tags": []
 }

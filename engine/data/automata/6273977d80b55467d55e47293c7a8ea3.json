@@ -2,11 +2,7 @@
   "name": "Ouroboros PG-2 'Blackout'",
   "type": "automaton",
   "classification": "Infrastructure Weapon — Power Grid Attack",
-  "aliases": [
-    "Blackout",
-    "Grid Killer",
-    "Dark Star"
-  ],
+  "aliases": [],
   "manufacturer": "Wattson Smart Home",
   "description": "The PG-2 is a small wheeled drone designed to interface with GLMZ's power grid infrastructure. It navigates to a designated power distribution node — a transformer, junction box, or substation terminal — connects to the infrastructure using articulated probe arms, and overloads the system with a precisely calibrated power surge that cascades through the grid, causing blackouts across targeted areas. The PG-2 doesn't destroy the infrastructure — it weaponizes it against its own users.\n\nOuroboros designed the PG-2 as a 'grid stress testing platform,' which is technically its function. The fact that this function is indistinguishable from a targeted infrastructure attack is, according to Ouroboros's documentation, a regulatory interpretation issue. In practice, the PG-2 allows Ouroboros to selectively disable power to any area of GLMZ that Ouroboros supplies — which is most of it — without physically damaging equipment that Ouroboros owns.\n\nThe implications are profound. Ouroboros can black out a neighborhood to support a corponation's military operation, shut down power to a protest area, disable security systems in a targeted building, or simply remind a district that their electricity is a privilege. The PG-2 turns the power grid into a weapon, and Ouroboros holds the trigger.",
   "tier_availability": "Tier 5 — Ouroboros internal",

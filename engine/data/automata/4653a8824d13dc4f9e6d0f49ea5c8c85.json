@@ -2,11 +2,7 @@
   "name": "Ringo EV-3 'Watcher'",
   "type": "automaton",
   "classification": "Security",
-  "aliases": [
-    "Watcher",
-    "Eye in the Sky",
-    "Hover Eye"
-  ],
+  "aliases": [],
   "manufacturer": "RingoEye Orbital Systems",
   "description": "The EV-3 is an aerial security drone — a small quadrotor platform the size of a dinner plate that patrols interior spaces at ceiling height, providing live video and audio surveillance to security operations centers. It is quiet — Ringo invested heavily in noise-dampening rotor design — producing a soft hum that blends with building HVAC systems. Most people in EV-3-monitored buildings forget the drones are there within a week of deployment.\n\nThe EV-3 operates in fleets of six to twelve units per building, coordinated by a central management system that assigns patrol routes, charging rotations, and focus areas based on security priority. Individual units have a flight endurance of four hours before returning to rooftop charging pads, and the fleet is managed so that at least two-thirds of units are operational at any given time. The coverage is comprehensive without being constant — there are gaps, but they shift unpredictably.\n\nRingo positions the EV-3 as an alternative to fixed camera systems, which have blind spots that can be mapped and exploited. The EV-3 has no fixed route — its patrol patterns are randomized within assigned zones, making it impossible to predict where the drone will be at any given moment. This randomization is the EV-3's primary advantage over both fixed cameras and ground-based patrol automata. You cannot time your actions to a schedule that does not exist.",
   "tier_availability": "Tier 2-3",
