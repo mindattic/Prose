@@ -2,11 +2,7 @@
   "name": "Arcturus ST-4 'Verdict'",
   "type": "automaton",
   "classification": "Sentry — Automated Kill Zone",
-  "aliases": [
-    "Verdict",
-    "The Judge",
-    "No Appeal"
-  ],
+  "aliases": [],
   "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
   "description": "The ST-4 is a ceiling or wall-mounted automated turret platform housing a 7.62mm machine gun with 2,000 rounds of ammunition and a target acquisition system that can identify, track, and engage up to twelve targets simultaneously. The unit mounts to any structural surface using expansion bolts, connects to facility power or runs on internal batteries for 48 hours, and begins enforcing a kill zone within seconds of activation. Anything that enters the designated area without a valid transponder signal is engaged.\n\nThe ST-4 is the backbone of corporate facility security across GLMZ. Thousands are deployed in server rooms, executive floors, research laboratories, and warehouse facilities. The transponder-based friend-or-foe system means that employees with valid credentials pass through kill zones without incident, while intruders encounter immediate, accurate, sustained fire. The system has no negotiation mode, no warning shots, and no escalation protocol. Entry without authorization equals engagement.\n\nThe Verdict earned its name from the absolute nature of its targeting decision. Security professionals note that the ST-4's identification system has a false positive rate of 0.03% — statistically negligible until you consider the thousands of units deployed across GLMZ and the thousands of people who pass through their zones daily. That 0.03% represents real people killed by a machine that made a statistical error. Arcturus's legal position is that transponder maintenance is the employee's responsibility.",
   "tier_availability": "Tier 3+",

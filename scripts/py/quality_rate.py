@@ -11,7 +11,7 @@ HOW IT WORKS:
   4. Support multiple rounds -- final score is the mean across rounds to reduce noise
 
 WEIGHTED SCORING:
-  interest_score = specificity×0.3 + connectivity×0.2 + originality×0.3 + story_potential×0.2
+  interest_score = specificityx0.3 + connectivityx0.2 + originalityx0.3 + story_potentialx0.2
 
 USAGE:
   python quality_rate.py                    # rate all entities, 3 rounds
@@ -42,7 +42,7 @@ from rich.progress import Progress
 
 from constants import ANTHROPIC_API_KEY, DATA_DIR, CONCURRENCY, REPOS
 
-# ── Config ────────────────────────────────────────────────────────────────────
+# -- Config --------------------------------------------------------------------
 QUALITY_DB_PATH = os.getenv("QUALITY_DB_PATH", "quality.db")
 QUALITY_MODEL = "claude-haiku-4-5-20251001"
 CONTEXT_SAMPLE_SIZE = 20
@@ -50,13 +50,13 @@ CHECKPOINT_SIZE = 50
 
 console = Console()
 
-# ── System prompt ─────────────────────────────────────────────────────────────
-RATING_SYSTEM_PROMPT = """You are a worldbuilding quality evaluator for a near-future cyberpunk world called GLMZ (year 2200). Rate the entity on four 0.0-1.0 dimensions. Be critical — most entities should score 0.3-0.7. Only exceptional entities score above 0.85. Generic or vague entries score below 0.3.
+# -- System prompt -------------------------------------------------------------
+RATING_SYSTEM_PROMPT = """You are a worldbuilding quality evaluator for a near-future cyberpunk world called GLMZ (year 2200). Rate the entity on four 0.0-1.0 dimensions. Be critical -- most entities should score 0.3-0.7. Only exceptional entities score above 0.85. Generic or vague entries score below 0.3.
 
 Dimensions:
 - specificity: Is it specific and grounded, or vague and generic? (0=generic filler, 1=vivid and particular)
 - connectivity: Does it reference or relate to other entities in the world? (0=isolated, 1=richly connected)
-- originality: Is it surprising or does it feel like default worldbuilding? (0=cliché, 1=unexpected and fresh)
+- originality: Is it surprising or does it feel like default worldbuilding? (0=cliche, 1=unexpected and fresh)
 - story_potential: How much story could grow from this entity? (0=dead end, 1=many compelling threads)
 
 Return ONLY a JSON object with exactly these keys: specificity, connectivity, originality, story_potential, specificity_rationale, connectivity_rationale, originality_rationale, story_potential_rationale
@@ -76,7 +76,7 @@ Example:
 }"""
 
 
-# ── Database ──────────────────────────────────────────────────────────────────
+# -- Database ------------------------------------------------------------------
 def init_quality_db():
     """Create quality.db tables if they don't exist."""
     conn = sqlite3.connect(QUALITY_DB_PATH)
@@ -112,7 +112,7 @@ def get_quality_connection():
     return sqlite3.connect(QUALITY_DB_PATH)
 
 
-# ── File helpers ──────────────────────────────────────────────────────────────
+# -- File helpers --------------------------------------------------------------
 def get_json_files(repo=None):
     """Get all JSON entity files, optionally filtered by repo."""
     base = Path(DATA_DIR)
@@ -162,7 +162,7 @@ def build_compact_summary(entity, max_chars=300):
     return f"{name}: {desc}"[:max_chars]
 
 
-# ── Already-processed check ───────────────────────────────────────────────────
+# -- Already-processed check ---------------------------------------------------
 def get_already_rated(target_round):
     """Return set of (entity_id, round) already in quality.db."""
     conn = get_quality_connection()
@@ -173,7 +173,7 @@ def get_already_rated(target_round):
     return result
 
 
-# ── Context sampler ───────────────────────────────────────────────────────────
+# -- Context sampler -----------------------------------------------------------
 def build_context_block(all_files, current_file, sample_size=CONTEXT_SAMPLE_SIZE):
     """Sample random entities from nearby and adjacent repos for comparison context."""
     current_repo = Path(current_file).parent.name
@@ -194,7 +194,7 @@ def build_context_block(all_files, current_file, sample_size=CONTEXT_SAMPLE_SIZE
     return "\n".join(f"- {s}" for s in summaries)
 
 
-# ── JSON response parser ──────────────────────────────────────────────────────
+# -- JSON response parser ------------------------------------------------------
 def parse_rating_json(text):
     """Parse Claude's rating response. Returns dict or None on failure."""
     # Strip markdown fences
@@ -221,9 +221,9 @@ def parse_rating_json(text):
     return None
 
 
-# ── Compute weighted interest score ──────────────────────────────────────────
+# -- Compute weighted interest score ------------------------------------------
 def compute_interest_score(specificity, connectivity, originality, story_potential):
-    """Weighted average: specificity×0.3 + connectivity×0.2 + originality×0.3 + story_potential×0.2"""
+    """Weighted average: specificityx0.3 + connectivityx0.2 + originalityx0.3 + story_potentialx0.2"""
     return (
         specificity * 0.3
         + connectivity * 0.2
@@ -232,7 +232,7 @@ def compute_interest_score(specificity, connectivity, originality, story_potenti
     )
 
 
-# ── Async API call ────────────────────────────────────────────────────────────
+# -- Async API call ------------------------------------------------------------
 async def rate_entity_via_api(entity, context_block, client, semaphore):
     """Call Claude Haiku to rate a single entity. Returns parsed rating dict or None."""
     async with semaphore:
@@ -276,7 +276,7 @@ async def rate_entity_via_api(entity, context_block, client, semaphore):
     return None
 
 
-# ── Store a single rating row ─────────────────────────────────────────────────
+# -- Store a single rating row -------------------------------------------------
 def store_rating(conn, entity_id, entity_name, source_file, source_repo, rating, round_num):
     """Insert one quality_scores row."""
     s = float(max(0.0, min(1.0, rating.get("specificity", 0.5))))
@@ -297,7 +297,7 @@ def store_rating(conn, entity_id, entity_name, source_file, source_repo, rating,
     conn.commit()
 
 
-# ── Per-file async worker ─────────────────────────────────────────────────────
+# -- Per-file async worker -----------------------------------------------------
 async def process_file(filepath, all_files, client, semaphore, round_num):
     """Load entity, build context, call API, return (filepath, entity_id, entity_name, source_repo, rating)."""
     entity, entity_id, entity_name, source_repo = load_entity(filepath)
@@ -309,7 +309,7 @@ async def process_file(filepath, all_files, client, semaphore, round_num):
     return filepath, entity_id, entity_name, source_repo, rating
 
 
-# ── Main rating loop ──────────────────────────────────────────────────────────
+# -- Main rating loop ----------------------------------------------------------
 def run_rating(rounds=3, repo=None, limit=None, skip_existing=False, concurrency=None):
     """Entry point for the rating pipeline."""
     asyncio.run(_run_rating_async(rounds, repo, limit, skip_existing, concurrency))
@@ -396,7 +396,7 @@ async def _run_rating_async(rounds=3, repo=None, limit=None, skip_existing=False
     show_quality_stats()
 
 
-# ── Export mode ───────────────────────────────────────────────────────────────
+# -- Export mode ---------------------------------------------------------------
 def run_export(repo=None):
     """Write mean interest_score back to source JSON files as top-level field."""
     conn = get_quality_connection()
@@ -449,7 +449,7 @@ def run_export(repo=None):
     console.print(f"[green]Export complete: {updated} files updated, {missing} files not found.[/green]")
 
 
-# ── Stats dashboard ───────────────────────────────────────────────────────────
+# -- Stats dashboard -----------------------------------------------------------
 def show_quality_stats():
     """Show quality.db statistics dashboard."""
     conn = get_quality_connection()
@@ -472,7 +472,7 @@ def show_quality_stats():
     stats["Mean interest score"] = f"{avg:.3f}" if avg else "N/A"
 
     c.execute("SELECT COUNT(DISTINCT entity_id) FROM quality_scores WHERE interest_score >= 0.8")
-    stats["Entities scoring ≥0.8"] = c.fetchone()[0]
+    stats["Entities scoring >=0.8"] = c.fetchone()[0]
 
     c.execute("SELECT COUNT(DISTINCT entity_id) FROM quality_scores WHERE interest_score < 0.3")
     stats["Entities scoring <0.3"] = c.fetchone()[0]
@@ -540,7 +540,7 @@ def show_top_bottom(n=20, mode="top"):
     console.print(table)
 
 
-# ── CLI ───────────────────────────────────────────────────────────────────────
+# -- CLI -----------------------------------------------------------------------
 def main():
     parser = argparse.ArgumentParser(description="Rate worldbuilding entity quality (0.0-1.0)")
 
@@ -559,7 +559,13 @@ def main():
     # Export
     parser.add_argument("--export", action="store_true", help="Write mean interest_score back to source JSON files")
 
+    parser.add_argument("--silent", action="store_true", help="Suppress all console output")
     args = parser.parse_args()
+    if args.silent:
+        import sys as _sys, os as _os
+        _sys.stdout = open(_os.devnull, "w")
+        _sys.stderr = open(_os.devnull, "w")
+
 
     # View-only modes
     if args.phase == "query":

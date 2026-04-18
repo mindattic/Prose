@@ -1,9 +1,9 @@
 """
-Genetic Ancestry Generator — Three-tier system
+Genetic Ancestry Generator -- Three-tier system
 
 Assigns three levels of ancestry to all characters:
-  genetic_ancestry  — broad regions (East Asian, Northern European, etc.)
-  ancestry_detail   — nested: region → sub-region → nationality with percentages
+  genetic_ancestry  -- broad regions (East Asian, Northern European, etc.)
+  ancestry_detail   -- nested: region -> sub-region -> nationality with percentages
 
 Example output:
   genetic_ancestry: { "Northern European": 45.0, "East Asian": 35.0 }
@@ -31,9 +31,9 @@ import os
 from pathlib import Path
 from constants import DATA_DIR, NON_HUMAN_SPECIES
 
-# ══════════════════════════════════════════════════════════════════
+# ==================================================================
 # Tier 1: Broad regional weights (what % of GLMZ genetics)
-# ══════════════════════════════════════════════════════════════════
+# ==================================================================
 
 REGION_WEIGHTS = {
     "Sub-Saharan African":     0.20,
@@ -52,12 +52,12 @@ REGION_WEIGHTS = {
 
 assert abs(sum(REGION_WEIGHTS.values()) - 1.0) < 0.01
 
-# ══════════════════════════════════════════════════════════════════
-# Tier 2 → Tier 3: Sub-regions and their nationalities
-# Structure: region → { sub_region: { nationality: relative_weight } }
+# ==================================================================
+# Tier 2 -> Tier 3: Sub-regions and their nationalities
+# Structure: region -> { sub_region: { nationality: relative_weight } }
 # Weights are relative within each level (don't need to sum to 1.0,
 # they're normalized during generation)
-# ══════════════════════════════════════════════════════════════════
+# ==================================================================
 
 ANCESTRY_TREE = {
     "Sub-Saharan African": {
@@ -252,9 +252,9 @@ ANCESTRY_TREE = {
     },
 }
 
-# ══════════════════════════════════════════════════════════════════
+# ==================================================================
 # District demographic skew
-# ══════════════════════════════════════════════════════════════════
+# ==================================================================
 
 DISTRICT_MODIFIERS = {
     "The Spires": {
@@ -410,7 +410,13 @@ def main():
     parser.add_argument("--limit", type=int, help="Limit number of people")
     parser.add_argument("--dry-run", action="store_true", help="Preview without writing")
     parser.add_argument("--force", action="store_true", help="Overwrite existing ancestry")
+    parser.add_argument("--silent", action="store_true", help="Suppress all console output")
     args = parser.parse_args()
+    if args.silent:
+        import sys as _sys, os as _os
+        _sys.stdout = open(_os.devnull, "w")
+        _sys.stderr = open(_os.devnull, "w")
+
 
     char_dir = Path(DATA_DIR) / "people"
     files = sorted(glob.glob(str(char_dir / "*.json")))

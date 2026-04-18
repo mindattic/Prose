@@ -2,15 +2,11 @@
   "id": "019d7850c6ea7699a254a7ad124223fc",
   "name": "Veraphin",
   "type": "pharmaceutical",
-  "aliases": [
-    "Vaporcalm",
-    "Breathclean",
-    "Mistease"
-  ],
+  "aliases": [],
   "category": "withdrawal_aid",
   "subcategory": "rapid_withdrawal_suppressor",
   "manufacturer": "Novafold Pharmaceuticals (licensed); widely counterfeited",
-  "description": "Veraphin is an inhaled rapid-onset withdrawal suppressor \u2014 a broad-spectrum autonomic stabilizer and anxiolytic delivered via vaporizer that takes effect within 90 seconds and provides 4-6 hours of physical withdrawal symptom relief without significant psychoactive effect. Developed for emergency use when oral or patch formulations are impractical, it has become the most commonly counterfeited recovery drug in GLMZ due to its fast-acting profile and broad applicability.",
+  "description": "Veraphin is an inhaled rapid-onset withdrawal suppressor — a broad-spectrum autonomic stabilizer and anxiolytic delivered via vaporizer that takes effect within 90 seconds and provides 4-6 hours of physical withdrawal symptom relief without significant psychoactive effect. Developed for emergency use when oral or patch formulations are impractical, it has become the most commonly counterfeited recovery drug in GLMZ due to its fast-acting profile and broad applicability.",
   "method_of_use": "vapor",
   "effects": [
     "Rapid autonomic stabilization",
@@ -21,7 +17,7 @@
   ],
   "side_effects": [
     "Legitimate product: mild bronchial irritation with extended use",
-    "Counterfeit product: wildly variable \u2014 known contaminants include cheap anxiolytics, industrial solvents, and in several documented cases, active addictive compounds",
+    "Counterfeit product: wildly variable — known contaminants include cheap anxiolytics, industrial solvents, and in several documented cases, active addictive compounds",
     "Psychological dependency on the ritual of use even without chemical dependency",
     "Overuse can mask withdrawal symptoms that require medical attention"
   ],
@@ -29,12 +25,12 @@
   "addiction_risk": "low",
   "tier_availability": "All tiers",
   "legality": "prescription",
-  "street_price": "\u03A625 per cartridge (legitimate); \u03A610-15 (counterfeit, unverified)",
-  "cultural_context": "Veraphin cartridges are as recognizable in GLMZ as inhalers in an earlier era \u2014 small, discreet, seen in pockets and pouches across all tiers. The counterfeit market is enormous: Shelf labs produce knockoffs at half the price, and the quality varies from acceptable to lethal. Novafold has invested significantly in authentication packaging, which the counterfeits immediately copy. Street pharmacists have developed touch-and-taste tests for real versus fake, passed down as community knowledge.",
+  "street_price": "Φ25 per cartridge (legitimate); Φ10-15 (counterfeit, unverified)",
+  "cultural_context": "Veraphin cartridges are as recognizable in GLMZ as inhalers in an earlier era — small, discreet, seen in pockets and pouches across all tiers. The counterfeit market is enormous: Shelf labs produce knockoffs at half the price, and the quality varies from acceptable to lethal. Novafold has invested significantly in authentication packaging, which the counterfeits immediately copy. Street pharmacists have developed touch-and-taste tests for real versus fake, passed down as community knowledge.",
   "story_hooks": [
-    "A new counterfeit Veraphin batch is circulating that actually works better than the real product \u2014 someone has reverse-engineered it with improvements, and Novafold wants to find and suppress them",
-    "A character relies on Veraphin to function during a long operation \u2014 and their supply turns out to be counterfeit with an unknown additive that begins affecting them mid-mission",
-    "A Shelf medic has developed a reliable counterfeit authentication test and is sharing it freely \u2014 she\u0027s receiving threats from the counterfeit producers whose sales she\u0027s undermining"
+    "A new counterfeit Veraphin batch is circulating that actually works better than the real product — someone has reverse-engineered it with improvements, and Novafold wants to find and suppress them",
+    "A character relies on Veraphin to function during a long operation — and their supply turns out to be counterfeit with an unknown additive that begins affecting them mid-mission",
+    "A Shelf medic has developed a reliable counterfeit authentication test and is sharing it freely — she's receiving threats from the counterfeit producers whose sales she's undermining"
   ],
   "tags": []
 }

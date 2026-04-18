@@ -3,7 +3,7 @@
   "number": 68,
   "name": "Libation Corporation",
   "full_legal_name": "Libation Corporation Holdings, LLC (GLMZ Charter)",
-  "common_names": ["Libation Corp", "LibCo", "The Feed Chain"],
+  "common_names": [],
   "stock_designation": "LBC.GLMZ",
   "sector": "Hospitality, Food & Beverage, Managed Dining Infrastructure",
   "valuation": "Φ 1.2 trillion (estimated, private)",
@@ -15,7 +15,18 @@
   "key_detail": "Libation Corporation's four primary GLMZ subsidiary brands — Fine Feasts, Good Eats, Chow Trough, and Eat it! — are architecturally identical in their kitchen infrastructure. The same industrial protein paste, the same base grain compound, and the same synthetic vegetable slurry are used across all four chains. Processing, plating, branding, and ambiance are the product. The Tier 5 degustation menu at Fine Feasts and the Eat it! dispensary slot receive the same raw compound, processed through different presentation pipelines. This is not a secret Libation Corp keeps carefully. It is a secret that everyone knows and no one discusses.",
   "relationship_to_big_20": "Not among the GLMZ's twenty largest corponations by sovereign territory or military capacity, but among the top five by civilian contact hours. The average GLMZ citizen interacts with a Libation Corp subsidiary three to five times per week. This makes Libation Corp's Citizen ID scanning infrastructure one of the most comprehensive civilian monitoring systems in the Zone, second only to Copperveil Intelligence — which is not a coincidence, as the two corporations have a data-sharing agreement that Libation Corp's charter explicitly does not require them to disclose.",
   "full_text": "Libation Corporation is the GLMZ's dominant managed dining infrastructure company, operating a tiered portfolio of food service brands that collectively serve the majority of the Zone's working population. The corporation's genius — if one wishes to call it that — is not cuisine. Libation Corp makes nothing anyone would choose to eat given genuine alternatives. Its genius is the structural exploitation of social anxiety. By operating distinct brands at each citizen tier, and by enforcing those brand boundaries through ID-gated entry systems and Citizen Security personnel, Libation Corp converts the ordinary act of eating into a continuous, daily reinscription of the tier hierarchy. You are what you eat. More specifically: you eat where your tier says you eat, and where you eat tells everyone around you exactly who you are.\n\nThe corporation does not advertise this architecture. Fine Feasts marketing presents the chain as an aspirational but accessible fine dining experience. Good Eats sells reliability and value. Chow Trough's internal documentation refers to its brand as 'volume-optimized community nutrition,' which is the corporation's way of describing an industrial cafeteria experience without triggering the visceral reaction the words 'industrial cafeteria' produce in Tier 2 customers who still believe themselves to be one career advancement away from Tier 3. And Eat it! is not marketed at all — there are no advertisements for Eat it!, because the people who eat there already know where they are.\n\nThe tier segmentation is enforced by Citizen ID scanning at entry. A patron presenting a Tier 1 ID attempting entry to a Good Eats location will be redirected to the nearest Eat it! outlet by LCSS. A Tier 3 card holder attempting to enter Fine Feasts may be admitted if accompanied by a Tier 4 or Tier 5 card holder acting as their dining sponsor — a practice that Libation Corp neither officially encourages nor discourages, but whose social dynamics it is acutely aware of and benefits from considerably.",
-  "tags": ["corponation", "food", "dining", "hospitality", "tier-5", "glmz", "libation", "tier-stratified", "surveillance", "social-control"],
+  "tags": [
+    "corponation",
+    "food",
+    "dining",
+    "hospitality",
+    "tier-5",
+    "glmz",
+    "libation",
+    "tier-stratified",
+    "surveillance",
+    "social-control"
+  ],
   "related_entities": [
     "Fine Feasts",
     "Good Eats",

@@ -4,12 +4,7 @@
   "brand_name": "Axiom",
   "product_name": "Axiom Systems Diaspora Behavioral Integration Layer",
   "type": "technology",
-  "aliases": [
-    "DBIL",
-    "Behavior Layer",
-    "Axiom Nudge",
-    "Choice Engine"
-  ],
+  "aliases": [],
   "subcategory": "computing",
   "description": "A software layer embedded in the Diaspora platform that subtly influences user behavior through interface design, content sequencing, and notification timing. DBIL does not control what users see — it controls when and how they see it, using microsecond-level timing optimizations and spatial arrangement algorithms that exploit known cognitive biases to make certain actions feel more natural than others. The system can increase the probability of a specific user action by 15-30% without the user being aware of any influence. Axiom describes it as 'friction reduction' — making desired behaviors easier and undesired behaviors slightly more difficult.",
   "tier_availability": "Tier 1+",

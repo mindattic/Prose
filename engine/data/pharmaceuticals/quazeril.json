@@ -2,42 +2,37 @@
   "id": "019d7850c6ce70b6aebde85806cc1ea8",
   "name": "Quazeril",
   "type": "pharmaceutical",
-  "aliases": [
-    "Q",
-    "the quiet",
-    "flatwater",
-    "qua"
-  ],
+  "aliases": [],
   "category": "emotional_regulator",
   "subcategory": "anxiety_dampener",
   "manufacturer": "Novafold Pharmaceuticals",
-  "description": "Quazeril is the most prescribed pharmaceutical in GLMZ, a second-generation GABAergic modulator with SNT-compatible formulation that integrates with BCI wellness monitoring to maintain anxiolytic blood levels automatically. It reduces generalized anxiety, social anxiety, and situational stress responses without the sedation associated with older benzodiazepine-class compounds. Novafold markets it under the tagline \u0027Perform at peace.\u0027",
+  "description": "Quazeril is the most prescribed pharmaceutical in GLMZ, a second-generation GABAergic modulator with SNT-compatible formulation that integrates with BCI wellness monitoring to maintain anxiolytic blood levels automatically. It reduces generalized anxiety, social anxiety, and situational stress responses without the sedation associated with older benzodiazepine-class compounds. Novafold markets it under the tagline 'Perform at peace.'",
   "method_of_use": "oral",
   "effects": [
     "sustained reduction of generalized anxiety",
     "lowered cortisol and stress hormone cascade",
     "improved social ease and public function",
-    "reduced physiological anxiety symptoms \u2014 tremor, sweating, elevated heart rate",
+    "reduced physiological anxiety symptoms — tremor, sweating, elevated heart rate",
     "mild mood stabilization"
   ],
   "side_effects": [
     "physical and psychological dependence with consistent use",
     "rebound anxiety upon cessation that exceeds pre-treatment baseline",
     "emotional flattening at higher doses",
-    "reduced risk perception \u2014 users make statistically riskier decisions",
+    "reduced risk perception — users make statistically riskier decisions",
     "sexual dysfunction in approximately 30% of long-term users",
-    "BCI integration errors can cause sudden anxiolytic spikes \u2014 temporary dissociation"
+    "BCI integration errors can cause sudden anxiolytic spikes — temporary dissociation"
   ],
   "duration": "12 hours standard release; 24-hour extended release formulation available",
   "addiction_risk": "high",
   "tier_availability": "All tiers",
   "legality": "prescription",
-  "street_price": "\u03A6 8 per pill (widely available, frequently diverted from prescriptions)",
-  "cultural_context": "Quazeril is so normalized in GLMZ that not taking it is considered mildly eccentric in Tier 3-4 professional environments. Approximately 61% of the adult Tier 2-4 population has an active Quazeril prescription. On the Shelf, it\u0027s obtained through diverted prescriptions or unlicensed generic production. The drug has become a philosophical flashpoint: critics argue GLMZ\u0027s chronic anxiety is a rational response to genuine systemic danger, and Quazeril is a chemical tool of social compliance. Proponents call this conspiratorial. The argument is ongoing and largely conducted by people on Quazeril.",
+  "street_price": "Φ 8 per pill (widely available, frequently diverted from prescriptions)",
+  "cultural_context": "Quazeril is so normalized in GLMZ that not taking it is considered mildly eccentric in Tier 3-4 professional environments. Approximately 61% of the adult Tier 2-4 population has an active Quazeril prescription. On the Shelf, it's obtained through diverted prescriptions or unlicensed generic production. The drug has become a philosophical flashpoint: critics argue GLMZ's chronic anxiety is a rational response to genuine systemic danger, and Quazeril is a chemical tool of social compliance. Proponents call this conspiratorial. The argument is ongoing and largely conducted by people on Quazeril.",
   "story_hooks": [
-    "A Tier 3 mid-level corporate lawyer realizes she hasn\u0027t felt genuine fear in four years \u2014 including during situations where fear would have protected her. She wants to taper off but her job performance metrics are tied to her BCI wellness scores, which flag unmedicated anxiety as \u0027productivity risk.\u0027",
-    "The Shelf black market for Quazeril generics is controlled by a single chemist whose formula is reportedly superior to Novafold\u0027s branded product. Novafold wants him found \u2014 either acquired or silenced.",
-    "A city councillor is quietly funding a study proving Quazeril\u0027s rebound anxiety rates have been systematically underreported by Novafold. The data has gone missing, and the research team is being pressured to recant."
+    "A Tier 3 mid-level corporate lawyer realizes she hasn't felt genuine fear in four years — including during situations where fear would have protected her. She wants to taper off but her job performance metrics are tied to her BCI wellness scores, which flag unmedicated anxiety as 'productivity risk.'",
+    "The Shelf black market for Quazeril generics is controlled by a single chemist whose formula is reportedly superior to Novafold's branded product. Novafold wants him found — either acquired or silenced.",
+    "A city councillor is quietly funding a study proving Quazeril's rebound anxiety rates have been systematically underreported by Novafold. The data has gone missing, and the research team is being pressured to recant."
   ],
   "tags": []
 }

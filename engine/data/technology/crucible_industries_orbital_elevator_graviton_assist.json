@@ -4,12 +4,7 @@
   "brand_name": "Crucible",
   "product_name": "Ascent OEGA",
   "type": "technology",
-  "aliases": [
-    "Ascent",
-    "OEGA",
-    "Grav Elevator",
-    "Orbital Lift"
-  ],
+  "aliases": [],
   "subcategory": "infrastructure",
   "description": "The Ascent OEGA is a graviton-based mass reduction system integrated into orbital elevator infrastructure. Conventional space elevators rely on tensile strength of the elevator cable and centrifugal force at the counterweight to support climbing payloads. The OEGA supplements this by projecting a graduated graviton reduction field along the elevator's lower 100 kilometers, progressively reducing the effective weight of ascending payloads by up to 80% as they climb. This allows the elevator cable to carry heavier loads, the climber mechanisms to use less energy, and the entire system to achieve throughput rates impossible with purely mechanical approaches.\n\nThe system requires a chain of graviton emitter stations spaced every 5 kilometers along the elevator's lower section, each powered by its own dedicated fusion micro-reactor. The emitter stations are unmanned — maintained by autonomous drones that crawl the elevator cable like mechanical spiders, replacing cryogenic consumables and performing calibrations. The graduated field profile means that a 100-ton payload weighs 100 tons at the base, 50 tons at 50 kilometers, and 20 tons at 100 kilometers altitude, with natural orbital mechanics reducing effective weight further above the OEGA zone.\n\nCrucible Industries operates the only three orbital elevators equipped with OEGA systems: GLMZ's Spire (North America), the Mombasa Tether (East Africa), and the Shanghai Pillar (East Asia). The OEGA system is what makes these elevators economically viable — without graviton assist, the cable mass and energy requirements would make payload costs prohibitive for commercial cargo. With OEGA, the cost to orbit is approximately 45 Φ per kilogram, compared to 380 Φ per kilogram via conventional rocket launch. Crucible's control of OEGA technology gives them effective monopoly power over affordable orbital access.",
   "tier_availability": "Tier 5",

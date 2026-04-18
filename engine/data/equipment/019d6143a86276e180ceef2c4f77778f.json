@@ -4,12 +4,7 @@
   "brand_name": "Ouroboros",
   "product_name": "Ouroboros Energy Laminar Drift Transmitter",
   "type": "equipment",
-  "aliases": [
-    "The Drift",
-    "Laminar Box",
-    "OE-LDT",
-    "Current Whisperer"
-  ],
+  "aliases": [],
   "category": "comms",
   "description": "The Laminar Drift Transmitter exploits GLMZ's ubiquitous electrical grid infrastructure as a covert communications medium, encoding encrypted data packets into the laminar noise floor of standard AC power distribution lines using sub-harmonic phase modulation at amplitudes indistinguishable from natural electrical drift and interference. Any building, district, or facility connected to the city's power grid becomes a potential transmission pathway — the signal travels through walls, floors, and conduit without any wireless emission, readable only by a paired receiver physically plugged into the same grid segment. Ouroboros Energy's deep familiarity with the city's power infrastructure is not incidental to this product's design.\n\nThe transmitter unit is roughly the size of a thick paperback book and draws its own operating power from the same line it uses to transmit, requiring no separate power source. Encryption is handled by a rotating cipher keyed to grid-segment-specific electrical characteristics — the same transmission on a different grid segment decodes as noise, meaning intercepted data is useless without knowledge of the exact node it originated from. The receiver is a compact plug-in module that can be concealed behind any standard outlet panel. Communication is low-bandwidth but highly reliable, unaffected by RF jamming, signal sweeps, or wireless interdiction measures.\n\nOuroboros Energy officially sells the Laminar Drift Transmitter to building security contractors and industrial monitoring firms as a 'grid-integrated sensor telemetry solution.' The device's clandestine communications applications are, officially, entirely the responsibility of end users. Unofficially, the system is understood to be the backbone of several long-running criminal and dissident communication networks that have proven extraordinarily difficult for city security forces to locate or disrupt.",
   "manufacturer": "OUROBOROS ENERGY",

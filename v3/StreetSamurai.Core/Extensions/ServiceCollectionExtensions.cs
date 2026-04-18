@@ -103,6 +103,13 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<DatabaseService>();
         services.AddSingleton<IDatabaseService>(sp => sp.GetRequiredService<DatabaseService>());
         services.AddSingleton<XrefService>();
+        services.AddSingleton<ScriptRunnerService>();
+        services.AddSingleton<FixPhiService>();
+        services.AddSingleton<FixIdentityCorruptionService>();
+        services.AddSingleton<TagNormalizerService>();
+        services.AddSingleton<TagWeaponLethalityService>();
+        services.AddSingleton<AssignTiersService>();
+        services.AddSingleton<CrossReferenceService>();
         services.AddSingleton<GlobalSearchService>();
         services.AddSingleton<SearchTriggerService>();
         services.AddSingleton<LoreService>();

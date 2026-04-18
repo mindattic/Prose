@@ -62,7 +62,7 @@ def extract_old_name(description):
         if name and name[0].isupper() and len(name) > 1:
             return name, name
 
-    # Handle "Name — " (em dash pattern)
+    # Handle "Name -- " (em dash pattern)
     m = re.match(r"^([\w\u00C0-\u024F]+(?:[-\s][\w\u00C0-\u024F]+)*?)\s+\u2014\s", description)
     if m:
         name = m.group(1).strip()

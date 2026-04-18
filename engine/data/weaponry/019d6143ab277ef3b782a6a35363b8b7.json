@@ -2,11 +2,7 @@
   "id": "019d6143ab277ef3b782a6a35363b8b7",
   "name": "Electrostatic Flensing Projector EFP-1 'Skinreader'",
   "type": "weapon",
-  "aliases": [
-    "Skinreader",
-    "The Peeler",
-    "Static Flenser"
-  ],
+  "aliases": [],
   "category": "energy",
   "description": "The EFP-1 generates a shaped electrostatic discharge field projected through a parabolic dielectric emitter array, creating a zone of intense charge differential across a target's surface. Unlike simple stun weapons that induce muscle tetany through current passage, the EFP-1's field geometry creates lateral charge migration across the outermost dermal layers, producing a shearing electrostatic force that disrupts the adhesive protein bonds holding epithelial tissue in structural alignment. At low output, this causes intense surface pain and temporary paresthesia. At high output, the effect progresses to partial epidermal separation across exposed skin — a phenomenon the weapon's users describe with clinical understatement as 'flensing.'\n\nThe weapon's targeting system includes a passive bioelectric sensor that reads surface charge signatures to distinguish organic targets from synthetic materials, allowing the EFP-1 to selectively affect unarmored biological tissue while having reduced effect on conductive armor plating — which disperses rather than concentrates the field. This selectivity is a deliberate design feature that makes the weapon particularly effective against lightly clothed or partially armored targets while limiting its utility against fully suited opponents. The dielectric emitter array produces a characteristic crackling hiss during charge buildup, providing approximately 0.8 seconds of audible warning before discharge.\n\nZHENG-DAO BIOELECTRIC developed the EFP-1 under a crowd control contract for an unnamed municipal authority, and its design reflects an interrogation-adjacent philosophy: maximum pain compliance with survivable damage at standard settings. The high-output mode that causes epidermal separation was not in the original specification and emerged from field modifications. ZHENG-DAO officially disavows the modification but has not recalled or redesigned the units in circulation.",
   "manufacturer": "ZHENG-DAO BIOELECTRIC",

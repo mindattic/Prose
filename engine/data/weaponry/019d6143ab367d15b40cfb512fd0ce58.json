@@ -2,11 +2,7 @@
   "id": "019d6143ab367d15b40cfb512fd0ce58",
   "name": "Neuromorphic Pressure Cestus",
   "type": "weapon",
-  "aliases": [
-    "NPC-1 'Reflex'",
-    "Reflex",
-    "The Second Brain"
-  ],
+  "aliases": [],
   "category": "melee",
   "description": "The Neuromorphic Pressure Cestus is a combat glove system developed by Tessera Corponation's advanced human-machine interface division, representing a convergence of their proprietary neural feedback architecture with conventional close-combat augmentation. The cestus consists of a form-fitting composite glove with an embedded neuromorphic processing layer — a thin-film synthetic neural network printed directly onto the glove's inner surface and in direct contact with the operator's skin. This network reads the operator's own motor intention signals at the skin surface level, predicting the trajectory and timing of a strike approximately 80 milliseconds before the operator's conscious mind finalizes the movement.\n\nThis predictive capability feeds into the cestus's reactive systems: a network of micro-pneumatic pressure cells distributed across the striking surfaces inflates and reconfigures in the 80-millisecond window before impact, dynamically reshaping the glove's contact geometry to maximize force transmission for the specific strike type being thrown. A hook, a straight, an elbow, a palm strike — each receives a different pressure cell configuration optimized for that movement's biomechanical profile. The result is a weapon that makes the operator's natural fighting instincts more effective, rather than requiring them to learn a new system.\n\nTessera Corponation markets the NPC-1 as 'augmentation that learns you,' and the marketing is largely accurate — the neuromorphic layer adapts over approximately forty hours of use, progressively refining its model of the specific operator's motor patterns. An NPC-1 calibrated to one user is measurably less effective in another's hands, a feature Tessera frames as personalization but which has significant implications for theft, transfer, and the black market.",
   "manufacturer": "Cathedral Cognitive Services",

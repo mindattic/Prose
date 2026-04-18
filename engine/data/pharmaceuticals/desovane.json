@@ -2,21 +2,17 @@
   "id": "019d7850c6a27e7f993f81c279727c0a",
   "name": "Desovane",
   "type": "pharmaceutical",
-  "aliases": [
-    "Deadchrome",
-    "Ghost Glove",
-    "Nullarm"
-  ],
+  "aliases": [],
   "category": "augment_interactive",
   "subcategory": "augment_sensitivity_modulator",
   "manufacturer": "Lazarus Pharmaceuticals",
-  "description": "The pharmacological inverse of sensitizers like Velastrin, Desovane is a licensed SNT-interface suppressor that reduces or eliminates feedback from augmented systems. Medically used for pain management in patients with damaged chrome interfaces, for high-stress surgical augment procedures, and for managing hypersensitivity disorders. Its street use is more troubling: people take it to not feel their augments \u2014 for dissociation, for numbness, or to commit violence without the physical feedback of what their chrome is doing.",
+  "description": "The pharmacological inverse of sensitizers like Velastrin, Desovane is a licensed SNT-interface suppressor that reduces or eliminates feedback from augmented systems. Medically used for pain management in patients with damaged chrome interfaces, for high-stress surgical augment procedures, and for managing hypersensitivity disorders. Its street use is more troubling: people take it to not feel their augments — for dissociation, for numbness, or to commit violence without the physical feedback of what their chrome is doing.",
   "method_of_use": "dermal_patch",
   "effects": [
     "Tactile and proprioceptive feedback from augments reduced 80-100%",
     "Pain from damaged or malfunctioning chrome eliminated",
     "Psychological detachment from augmented body parts",
-    "Augments continue to function normally \u2014 user simply cannot feel them",
+    "Augments continue to function normally — user simply cannot feel them",
     "Useful for operating through augment damage that would otherwise be incapacitating"
   ],
   "side_effects": [
@@ -30,12 +26,12 @@
   "addiction_risk": "moderate",
   "tier_availability": "Tier 2-3",
   "legality": "prescription",
-  "street_price": "\u03A695-140",
-  "cultural_context": "Desovane has a dark reputation that its clinical applications don\u0027t deserve. Medically, it\u0027s essential \u2014 patients with chrome nerve damage would be in constant agony without it. On the street, it\u0027s used by people who want to be numb: trauma survivors who hate their augments, fixers who need to do violence without feeling it, and a disturbing subculture of Shelf residents who dissociate entirely from their chrome as a coping mechanism for the horror of their daily lives. Lazarus lobbies hard to keep it prescription-only but the street supply is substantial.",
+  "street_price": "Φ95-140",
+  "cultural_context": "Desovane has a dark reputation that its clinical applications don't deserve. Medically, it's essential — patients with chrome nerve damage would be in constant agony without it. On the street, it's used by people who want to be numb: trauma survivors who hate their augments, fixers who need to do violence without feeling it, and a disturbing subculture of Shelf residents who dissociate entirely from their chrome as a coping mechanism for the horror of their daily lives. Lazarus lobbies hard to keep it prescription-only but the street supply is substantial.",
   "story_hooks": [
-    "A series of violent incidents in Tier 2 are linked by a detail: the perpetrators all tested positive for Desovane, all claim they \u0027didn\u0027t feel\u0027 what they were doing. Someone may be distributing the drug specifically to create deniable violence.",
-    "A Tier 3 augment surgeon is quietly supplying Desovane to Shelf patients who can\u0027t afford legitimate pain management for their failing chrome \u2014 the practice is illegal but the need is real, and someone wants it stopped",
-    "A contact goes quiet \u2014 when found, they\u0027re on a continuous Desovane patch cycle, completely dissociated from their heavily augmented body. Someone did this to them deliberately, and the question is why they needed this person unable to feel"
+    "A series of violent incidents in Tier 2 are linked by a detail: the perpetrators all tested positive for Desovane, all claim they 'didn't feel' what they were doing. Someone may be distributing the drug specifically to create deniable violence.",
+    "A Tier 3 augment surgeon is quietly supplying Desovane to Shelf patients who can't afford legitimate pain management for their failing chrome — the practice is illegal but the need is real, and someone wants it stopped",
+    "A contact goes quiet — when found, they're on a continuous Desovane patch cycle, completely dissociated from their heavily augmented body. Someone did this to them deliberately, and the question is why they needed this person unable to feel"
   ],
   "tags": []
 }

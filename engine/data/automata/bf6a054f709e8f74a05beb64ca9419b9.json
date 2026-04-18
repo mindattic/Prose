@@ -2,11 +2,7 @@
   "name": "Arcturus DM-1 'Pallbearer'",
   "type": "automaton",
   "classification": "Disposal — Autonomous Corpse Retrieval",
-  "aliases": [
-    "Pallbearer",
-    "Body Bag",
-    "The Collector"
-  ],
+  "aliases": [],
   "manufacturer": "Raptor Aerospace Division",
   "description": "The DM-1 is designed for a function nobody wants to think about: autonomous corpse retrieval from active combat zones. The six-wheeled platform navigates battlefields, identifies deceased individuals through vital sign absence confirmation, loads them into its refrigerated cargo bay using articulated manipulator arms, and transports them to designated collection points. The DM-1 operates during and after combat operations, moving through areas that may still be under fire to recover bodies before decomposition or battlefield scavenging compromises identification.\n\nThe DM-1 is not a weapon. It is the thing that comes after the weapons are done. Its presence on a battlefield is a statement that the killing is expected to be sufficient to require industrial-scale body recovery. Arcturus deploys them in advance of major operations, pre-positioning them at staging areas as a logistical preparation step. When soldiers see Pallbearers being unloaded, they know the command structure has calculated the expected body count and prepared accordingly.\n\nThe DM-1's most disturbing operational edge case involves its vital sign confirmation system. The unit is designed to confirm death before loading — but the sensors have a margin of error. There are documented incidents of the DM-1 loading individuals who were unconscious, in shock, or in low-vital-sign states caused by augmentation malfunction. Arcturus's official documentation addresses this with the phrase 'retrieval protocol includes triage assessment with a statistical confidence interval of 99.2%,' which means that roughly one in 125 pickups might not actually be dead.",
   "tier_availability": "Tier 4+",

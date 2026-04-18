@@ -2,15 +2,11 @@
   "id": "019d7850c6b977d6ad8273757d0228e8",
   "name": "Mnemocord",
   "type": "pharmaceutical",
-  "aliases": [
-    "Dreamcap",
-    "The Recorder",
-    "Spool"
-  ],
+  "aliases": [],
   "category": "sleep_dream",
   "subcategory": "dream_recorder",
   "manufacturer": "Helix Biosystems",
-  "description": "Mnemocord is a BCI-adjunct compound that temporarily enhances the fidelity and bandwidth of the neural-digital interface during sleep, allowing a user\u0027s BCI to record dream content as structured data files playable through standard neural media formats. The resulting files are imperfect \u2014 emotionally accurate but visually impressionistic \u2014 and capture approximately 60-70% of reported dream experience. Files can be reviewed, shared, or archived.",
+  "description": "Mnemocord is a BCI-adjunct compound that temporarily enhances the fidelity and bandwidth of the neural-digital interface during sleep, allowing a user's BCI to record dream content as structured data files playable through standard neural media formats. The resulting files are imperfect — emotionally accurate but visually impressionistic — and capture approximately 60-70% of reported dream experience. Files can be reviewed, shared, or archived.",
   "method_of_use": "neural_direct",
   "effects": [
     "Dream content recorded as playable BCI media files",
@@ -19,7 +15,7 @@
     "Files shareable with other BCI users for a partial vicarious experience"
   ],
   "side_effects": [
-    "Watching your own dream recordings can cause recursive dissociation \u2014 the memory of the dream and the recording begin to blur",
+    "Watching your own dream recordings can cause recursive dissociation — the memory of the dream and the recording begin to blur",
     "Shared dream files carry emotional payload that recipients may find intrusive or traumatizing",
     "BCI bandwidth draw during recording can cause morning headaches and temporary processing lag",
     "Privacy risk: files are theoretically extractable by anyone with BCI access"
@@ -28,12 +24,12 @@
   "addiction_risk": "low",
   "tier_availability": "Tier 3-4",
   "legality": "legal",
-  "street_price": "\u03A655 per dose",
-  "cultural_context": "Dream recording has created an entirely new form of media and intimacy in GLMZ. Tier 3-4 users share dream files with partners as a form of emotional intimacy. Therapists use dream recordings in treatment. A growing underground market trades in the dream recordings of celebrities, executives, and criminals. Helix markets Mnemocord as \u0027memory preservation\u0027 but the cultural reality is far stranger \u2014 people are curating and editing their dream archives like personal film libraries.",
+  "street_price": "Φ55 per dose",
+  "cultural_context": "Dream recording has created an entirely new form of media and intimacy in GLMZ. Tier 3-4 users share dream files with partners as a form of emotional intimacy. Therapists use dream recordings in treatment. A growing underground market trades in the dream recordings of celebrities, executives, and criminals. Helix markets Mnemocord as 'memory preservation' but the cultural reality is far stranger — people are curating and editing their dream archives like personal film libraries.",
   "story_hooks": [
-    "A dream file being sold on the Shelf black market contains imagery that matches the interior of a Lazarus Pharmaceuticals classified facility \u2014 imagery the dreamer, a Tier 1 former janitor, has no waking knowledge of but may have absorbed during a work contract they no longer remember.",
-    "A grief counselor has been using Mnemocord files from deceased clients \u2014 recorded before their deaths \u2014 to provide relatives with a last, intimate connection. The practice is technically legal but ethically uncharted, and someone wants it stopped.",
-    "A hacker has developed a method to inject false content into Mnemocord recordings post-capture \u2014 manufacturing dream evidence that appears to show a target confessing to crimes they didn\u0027t commit, in the intimacy of their own unconscious mind."
+    "A dream file being sold on the Shelf black market contains imagery that matches the interior of a Lazarus Pharmaceuticals classified facility — imagery the dreamer, a Tier 1 former janitor, has no waking knowledge of but may have absorbed during a work contract they no longer remember.",
+    "A grief counselor has been using Mnemocord files from deceased clients — recorded before their deaths — to provide relatives with a last, intimate connection. The practice is technically legal but ethically uncharted, and someone wants it stopped.",
+    "A hacker has developed a method to inject false content into Mnemocord recordings post-capture — manufacturing dream evidence that appears to show a target confessing to crimes they didn't commit, in the intimacy of their own unconscious mind."
   ],
   "tags": []
 }

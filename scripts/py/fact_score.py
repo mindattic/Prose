@@ -211,6 +211,12 @@ if __name__ == "__main__":
     # 0.6 means any claim where fewer than 60% of sources agree is flagged for display.
     parser.add_argument("--min-confidence", type=float, default=0.6, help="Confidence threshold for contested claims")
 
+    parser.add_argument("--silent", action="store_true", help="Suppress all console output")
     args = parser.parse_args()
+    if args.silent:
+        import sys as _sys, os as _os
+        _sys.stdout = open(_os.devnull, "w")
+        _sys.stderr = open(_os.devnull, "w")
+
 
     run_scoring(min_confidence=args.min_confidence)

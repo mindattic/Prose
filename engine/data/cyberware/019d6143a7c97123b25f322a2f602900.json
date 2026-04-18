@@ -4,11 +4,7 @@
   "brand_name": "Tessera",
   "product_name": "Tessera Whisperline Codec",
   "type": "cyberware",
-  "aliases": [
-    "The Tessera Box",
-    "Whisperbrick",
-    "Codec Tile"
-  ],
+  "aliases": [],
   "category": "comms",
   "body_location": "",
   "description": "The Tessera Whisperline Codec is a palm-sized encryption relay that intercepts outgoing voice and data transmissions and fractures them into thousands of micro-packets, each routed through a different node in GLMZ's sprawling mesh infrastructure before reassembly at the receiving end. The reassembly key is a rolling algorithm that changes every eleven seconds, synchronized between paired units via a quantum-tick handshake that leaves no persistent record on any network node it touches. The result is a conversation that, if intercepted mid-transit, appears to be nothing more than routine telemetry noise from a dozen different municipal sensors.\n\nWhat distinguishes the Whisperline from cheaper encryption boxes is its analog fallback layer — a secondary channel that can route transmissions through legacy copper-wire infrastructure embedded in the city's oldest districts. This makes it exceptionally difficult to jam using digital suppression alone, as the signal can ghost into pre-Collapse telephone conduits that most modern interference equipment doesn't bother monitoring. The physical unit itself resembles an ordinary transit card reader, a deliberate design choice that allows it to be left in plain sight.\n\nThe Whisperline is favored by mid-tier fixers and information brokers who need reliable encrypted communication without the conspicuousness of military-grade gear. Corporate espionage teams use paired units to maintain operational security during extraction jobs, and several underground journalism collectives have adopted them as their primary editorial communication channel. The device occupies a strange middle ground — too sophisticated for street-level criminals, too unassuming for executives who prefer the status of overtly expensive encryption suites.",

@@ -4,12 +4,7 @@
   "brand_name": "Palladian",
   "product_name": "Palladian Construction AeroSkin BX-14 Adaptive Building Envelope",
   "type": "technology",
-  "aliases": [
-    "the Skin",
-    "BX-Shell",
-    "Palladian Wrap",
-    "SmartFace"
-  ],
+  "aliases": [],
   "subcategory": "environmental",
   "description": "The AeroSkin BX-14 is a modular facade system applied to existing or new structures in GLMZ, consisting of interlocking polymer-ceramic panels embedded with piezoelectric microactuators, electrochromic glazing layers, and a distributed sensor mesh. Each panel independently adjusts its opacity, thermal emissivity, and micro-ventilation apertures in response to real-time atmospheric data fed through Saltmarsh Telecom's urban sensor grid. The system effectively turns any building surface into a breathing, reactive membrane — shunting heat loads during summer inversions, capturing condensation moisture during lake-effect fog events, and hardening against the acid particulate storms that roll off the industrial northern zones two to three times per year.\n\nWhat distinguishes the BX-14 from earlier adaptive facades is its distributed Cinderblock AI sub-node architecture: each panel cluster of roughly forty units hosts a localized inference chip that makes micro-decisions without round-tripping to a central server, reducing response latency to under 80 milliseconds. The panels also harvest low-grade kinetic and thermal differential energy, feeding trickle power back into the building's grid — typically enough to offset 4–9% of common-area lighting load. Palladian markets the system as a retrofit solution, and installation crews can panel a mid-rise tower in under a week using magnetic locking rail systems.\n\nThe BX-14 is standard issue on any Tier 2 or above corporate residential tower constructed or refurbished after 2181. Below that, residents deal with raw concrete, crumbling legacy insulation, and whatever improvised vapor barriers the informal market provides. Street-level installers in the lower districts have begun harvesting decommissioned BX-12 panels from demolition sites and rigging bootleg arrays on hab-block exteriors, with mixed results — the Cinderblock sub-nodes require licensed firmware to cooperate, and unlicensed panels tend to develop erratic opacity cycling that locals call 'the Blink.'",
   "tier_availability": "Tier 2+",

@@ -2,38 +2,35 @@
   "id": "059f5807c8aa40bc9e4e60af6a786076",
   "type": "faction",
   "name": "The Ferment",
-  "aliases": [
-    "The Kitchen",
-    "Ferment"
-  ],
-  "motto": "It\u0027s not illegal if they haven\u0027t named it yet.",
-  "description": "The Ferment is a dispersed network of underground chemists, brewers, and pharmacologists operating across the GLMZ\u0027s industrial belt \u2014 particularly Gary (Indiana), the Detroit chemical corridor, and the ruins of the old Milwaukee Port Authority. The gang doesn\u0027t look like a gang. Its members present as small-batch brewers, gray-market pharmaceutical distributors, DIY biology hobbyists, and industrial chemical salvagers. The Ferment\u0027s actual business is the synthesis and distribution of compounds that exist in regulatory gray zones: synthetic food compounds that skirt pharma classification, tailored biochemicals for underground augmentation, and unlicensed pharmaceutical alternatives to corporate-controlled medicine. The gang\u0027s organizational structure is deliberately loose. There is no central leadership \u2014 only a network of chemist cells, each operating independently, all sharing synthesis protocols through encrypted relay. A cell can be destroyed without compromising the others. Their product reaches the street through legitimate-seeming small businesses: kombucha bars, gray-market supplement shops, food service operations. The Ferment is one of the primary suppliers of affordable pharmaceutical alternatives to the GLMZ\u0027s working poor.",
+  "aliases": [],
+  "motto": "It's not illegal if they haven't named it yet.",
+  "description": "The Ferment is a dispersed network of underground chemists, brewers, and pharmacologists operating across the GLMZ's industrial belt — particularly Gary (Indiana), the Detroit chemical corridor, and the ruins of the old Milwaukee Port Authority. The gang doesn't look like a gang. Its members present as small-batch brewers, gray-market pharmaceutical distributors, DIY biology hobbyists, and industrial chemical salvagers. The Ferment's actual business is the synthesis and distribution of compounds that exist in regulatory gray zones: synthetic food compounds that skirt pharma classification, tailored biochemicals for underground augmentation, and unlicensed pharmaceutical alternatives to corporate-controlled medicine. The gang's organizational structure is deliberately loose. There is no central leadership — only a network of chemist cells, each operating independently, all sharing synthesis protocols through encrypted relay. A cell can be destroyed without compromising the others. Their product reaches the street through legitimate-seeming small businesses: kombucha bars, gray-market supplement shops, food service operations. The Ferment is one of the primary suppliers of affordable pharmaceutical alternatives to the GLMZ's working poor.",
   "ideology": "Chemistry is liberation. Corporate pharma holds people hostage through patent control. The Ferment believes in accessible chemistry and the right of anyone to synthesize what their body needs.",
-  "territory": "Distributed industrial zones. Primary nodes in Gary (Indiana), Detroit\u0027s chemical corridor south of the ruins belt, and Milwaukee\u0027s collapsed port district. No street territory claimed.",
+  "territory": "Distributed industrial zones. Primary nodes in Gary (Indiana), Detroit's chemical corridor south of the ruins belt, and Milwaukee's collapsed port district. No street territory claimed.",
   "leadership": "",
   "methods": [
-    "Synthesis networks \u2014 decentralized production cells sharing protocols",
-    "Gray-market distribution \u2014 through food service fronts and supplement shops",
-    "Protocol sharing \u2014 encrypted synthesis documentation passed between affiliated chemists",
-    "Corporate formula reversal \u2014 analyzing and reproducing proprietary pharmaceutical compounds"
+    "Synthesis networks — decentralized production cells sharing protocols",
+    "Gray-market distribution — through food service fronts and supplement shops",
+    "Protocol sharing — encrypted synthesis documentation passed between affiliated chemists",
+    "Corporate formula reversal — analyzing and reproducing proprietary pharmaceutical compounds"
   ],
   "resources": [
     "Distributed synthesis equipment hidden across multiple locations. Extensive knowledge base of gray-zone chemistry. Supply relationships with industrial chemical salvagers."
   ],
   "goals": [
-    "Make pharmaceutical independence possible for the GLMZ\u0027s working population. Expand synthesis capabilities into areas currently dominated by corporate pharma. Never become centralized enough to be decapitated."
+    "Make pharmaceutical independence possible for the GLMZ's working population. Expand synthesis capabilities into areas currently dominated by corporate pharma. Never become centralized enough to be decapitated."
   ],
   "size_class": "medium",
   "relationships": [
     {
       "name": "The Gauze",
       "type": "rival",
-      "reason": "Both supply medical and pharmaceutical needs to the same underserved population; the Gauze resents the Ferment\u0027s cheaper unlicensed alternatives eroding their client base"
+      "reason": "Both supply medical and pharmaceutical needs to the same underserved population; the Gauze resents the Ferment's cheaper unlicensed alternatives eroding their client base"
     },
     {
       "name": "The Pure Hand",
       "type": "rival",
-      "reason": "The Ferment\u0027s chemical liberation ideology clashes directly with the Pure Hand\u0027s purity doctrine \u2014 both see the other as a fundamental threat"
+      "reason": "The Ferment's chemical liberation ideology clashes directly with the Pure Hand's purity doctrine — both see the other as a fundamental threat"
     },
     {
       "name": "The Reclaimed",
@@ -53,9 +50,9 @@
   ],
   "narrative_function": "Source of affordable chemicals and pharmaceuticals. Can be a quest giver (need a specific compound synthesized) or a target (corporate pharma wants them destroyed). Their ideology creates interesting moral tension.",
   "story_hooks": [
-    "A Ferment cell has synthesized something they don\u0027t fully understand",
+    "A Ferment cell has synthesized something they don't fully understand",
     "Corporate pharma has identified a synthesis node and hired contractors to shut it down",
-    "The Ferment needs a specific industrial precursor that\u0027s been locked behind corporate supply chains"
+    "The Ferment needs a specific industrial precursor that's been locked behind corporate supply chains"
   ],
   "tags": [
     "faction",
@@ -169,7 +166,7 @@
       "notes": "Direct affiliation mention in character data"
     },
     {
-      "name": "Slate Banerjee-Larsd\u00F3ttir",
+      "name": "Slate Banerjee-Larsdóttir",
       "id": "019d6143a6ca7a92b89442bb6473f5d9",
       "role": "Member",
       "status": "active",
@@ -183,7 +180,7 @@
       "notes": "Direct affiliation mention in character data"
     },
     {
-      "name": "Atlas Ciss\u00E9-Krishnamurthy",
+      "name": "Atlas Cissé-Krishnamurthy",
       "id": "019d6143a6e67dd68cb941f4c35fa725",
       "role": "Member",
       "status": "active",
@@ -211,7 +208,7 @@
       "notes": "Direct affiliation mention in character data"
     },
     {
-      "name": "Santiago Qui\u00F1ones",
+      "name": "Santiago Quiñones",
       "id": "019d6143a71d781eab0779d6a73ec737",
       "role": "Member",
       "status": "active",
@@ -225,14 +222,14 @@
       "notes": "Direct affiliation mention in character data"
     },
     {
-      "name": "Soren Lindstr\u00F6m-Thorvaldsd\u00F3ttir",
+      "name": "Soren Lindström-Thorvaldsdóttir",
       "id": "019d6143a7337428ab6a9d09b8cf3875",
       "role": "Member",
       "status": "active",
       "notes": "Direct affiliation mention in character data"
     },
     {
-      "name": "Slate Charoenphol-Ke\u00EFta",
+      "name": "Slate Charoenphol-Keïta",
       "id": "019d6143a739791a80c39f72830c921c",
       "role": "Member",
       "status": "active",

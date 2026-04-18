@@ -2,28 +2,24 @@
   "id": "019d7850c6967706a8243fa62775d7a3",
   "name": "Bandwave",
   "type": "pharmaceutical",
-  "aliases": [
-    "Broadhead",
-    "Openline",
-    "Flood"
-  ],
+  "aliases": [],
   "category": "augment_interactive",
   "subcategory": "bci_bandwidth_expander",
   "manufacturer": "Helix Biosystems",
-  "description": "A neuroactive SNT-excitatory compound that temporarily expands the data-carrying capacity of BCI neural interface pathways by stimulating the formation of additional synaptic bridges in the SNT layer. In practical terms, Bandwave lets your BCI carry more information simultaneously \u2014 more augments running at full capacity, faster data transfer between your implants and external systems, and higher resolution sensory input. Helix markets a licensed version for professionals; the street version is stronger and far less stable.",
+  "description": "A neuroactive SNT-excitatory compound that temporarily expands the data-carrying capacity of BCI neural interface pathways by stimulating the formation of additional synaptic bridges in the SNT layer. In practical terms, Bandwave lets your BCI carry more information simultaneously — more augments running at full capacity, faster data transfer between your implants and external systems, and higher resolution sensory input. Helix markets a licensed version for professionals; the street version is stronger and far less stable.",
   "method_of_use": "neural_direct",
   "effects": [
     "BCI data throughput increased 150-300%",
     "Multiple augments can operate at full capacity simultaneously without bandwidth throttling",
     "External network connection speeds dramatically increased",
-    "Sensory augment resolution maximized \u2014 vision, hearing, and proprioception at theoretical hardware limits",
+    "Sensory augment resolution maximized — vision, hearing, and proprioception at theoretical hardware limits",
     "Cognitive processing augments operate without the usual latency delays"
   ],
   "side_effects": [
-    "Sensory overload if bandwidth increase exceeds user\u0027s neural tolerance",
+    "Sensory overload if bandwidth increase exceeds user's neural tolerance",
     "Tinnitus and visual artifacts during peak effect",
     "Severe headache post-dose as SNT pathways return to baseline",
-    "SNT microlesions with repeated use \u2014 permanent bandwidth reduction over time",
+    "SNT microlesions with repeated use — permanent bandwidth reduction over time",
     "Risk of BCI cascade failure if external network input overwhelms expanded pathways",
     "Rare: inability to filter sensory input, resulting in incapacitating overstimulation"
   ],
@@ -31,12 +27,12 @@
   "addiction_risk": "moderate",
   "tier_availability": "Tier 3-4",
   "legality": "restricted",
-  "street_price": "\u03A6280-380",
-  "cultural_context": "Bandwave is the drug of the networked professional \u2014 data brokers, BCI architects, corporate intelligence operatives, and high-end fixers who need their chrome talking to everything at once. In Tier 3, it\u0027s used by people who have good augments but can\u0027t afford the premium BCI upgrades that would give them natural bandwidth. In Tier 4, it\u0027s a work drug \u2014 taken before high-stakes operations where every millisecond of data latency matters. The Helix licensed version (Bandwave-R) is prescribed for patients with SNT degradation; the street version hits harder and burns faster.",
+  "street_price": "Φ280-380",
+  "cultural_context": "Bandwave is the drug of the networked professional — data brokers, BCI architects, corporate intelligence operatives, and high-end fixers who need their chrome talking to everything at once. In Tier 3, it's used by people who have good augments but can't afford the premium BCI upgrades that would give them natural bandwidth. In Tier 4, it's a work drug — taken before high-stakes operations where every millisecond of data latency matters. The Helix licensed version (Bandwave-R) is prescribed for patients with SNT degradation; the street version hits harder and burns faster.",
   "story_hooks": [
-    "A Tier 3 data broker took too much Bandwave and their BCI began receiving a signal they weren\u0027t supposed to intercept \u2014 something encrypted, something corporate, something that people are now willing to kill to recover",
-    "Helix Biosystems is quietly aware that chronic Bandwave use causes permanent SNT degradation \u2014 the very damage that creates a market for their SNT repair products. Someone inside Helix wants this cycle exposed.",
-    "A street version of Bandwave has appeared that doesn\u0027t just expand bandwidth \u2014 it seems to be opening BCI connections to an unregistered network node. Users are accessing something, but none of them can explain what"
+    "A Tier 3 data broker took too much Bandwave and their BCI began receiving a signal they weren't supposed to intercept — something encrypted, something corporate, something that people are now willing to kill to recover",
+    "Helix Biosystems is quietly aware that chronic Bandwave use causes permanent SNT degradation — the very damage that creates a market for their SNT repair products. Someone inside Helix wants this cycle exposed.",
+    "A street version of Bandwave has appeared that doesn't just expand bandwidth — it seems to be opening BCI connections to an unregistered network node. Users are accessing something, but none of them can explain what"
   ],
   "tags": []
 }

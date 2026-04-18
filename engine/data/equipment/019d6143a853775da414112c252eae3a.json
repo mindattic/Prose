@@ -4,11 +4,7 @@
   "brand_name": "Arcturus",
   "product_name": "Arcturus Defense Solutions Tactical Mesh Suppressor",
   "type": "equipment",
-  "aliases": [
-    "The Interdict",
-    "Blackout Box",
-    "The Warden's Hand"
-  ],
+  "aliases": [],
   "category": "comms",
   "description": "The Tactical Mesh Suppressor is a portable, directional signal denial system designed to sever mesh network connectivity, encrypted comm channels, and emergency broadcast access within a defined operational envelope. Roughly the size and weight of a hardback book, it deploys as a handheld unit or mounts magnetically to surfaces and vehicles. Its suppression field is not a simple broadband jammer — the Suppressor uses Arcturus's Selective Denial Architecture to target specific protocol layers of GLMZ's civilian and corporate mesh infrastructure while leaving defined frequencies open for operator use, preventing the self-defeating blackout that affects cruder jamming equipment.\n\nThe Selective Denial Architecture is the product's defining feature and the basis of its legal classification. By suppressing at the protocol level rather than the frequency level, the Suppressor can deny mesh access, encrypted comms, and automated distress signaling simultaneously without producing the detectable jamming signature that conventional frequency-blocking devices emit. From the outside, affected devices appear to be experiencing routine connectivity degradation — the kind of outage that happens a dozen times a day across GLMZ's aging infrastructure. Only prolonged, precise spectrum analysis can distinguish a Suppressor field from genuine network failure.\n\nArcturus sells the Suppressor through its law enforcement and corporate security divisions with appropriate licensing frameworks, and the device appears regularly in the inventories of precinct security teams, corporate extraction units, and private protection details. Its presence on the black market is equally routine, and the gap between the licensed and unlicensed versions is primarily one of firmware — the licensed variant has hardcoded duration limits and automatic logging; the black-market variant does not.",
   "manufacturer": "Murmuration Systems",

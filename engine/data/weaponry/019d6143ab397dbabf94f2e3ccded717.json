@@ -2,11 +2,7 @@
   "id": "019d6143ab397dbabf94f2e3ccded717",
   "name": "Periosteal Galvanic Stress Fracture Emitter",
   "type": "weapon",
-  "aliases": [
-    "PGSFE-3",
-    "Crackerjack",
-    "The Splitter"
-  ],
+  "aliases": [],
   "category": "cyber",
   "description": "The Periosteal Galvanic Stress Fracture Emitter directs a focused beam of low-frequency alternating electrical current through the target's skeletal structure using transcutaneous capacitive coupling — no physical contact required. The current is modulated to exploit the piezoelectric properties of bone mineral, inducing microscopic oscillatory stress at the crystalline level of hydroxyapatite within cortical bone. Over a sustained engagement of thirty to ninety seconds, this mechanical fatigue accumulates until spontaneous stress fractures propagate through weight-bearing bones. The tibia and femur are primary targets at standard settings; the weapon can be retargeted to the spinal column with a firmware adjustment.\n\nThe PGSFE-3 differs from earlier galvanic bone-disruption concepts in its use of a resonance feedback loop: onboard sensors detect the acoustic signature of the target's bone structure through the return signal, allowing the emitter to continuously tune its frequency to the target's specific bone density and mineral composition. This means the weapon is self-optimizing — it gets more efficient the longer it is applied. An operator who holds a target in the beam for the full ninety-second cycle will typically induce complete bilateral tibial fracture, dropping the target without any surface wound, blood, or external sign of cause.\n\nThe emitter requires line-of-sight but penetrates most civilian clothing without attenuation. Thick metal plating — the kind found in high-end combat chassis augmentations — can shield the underlying biological bone, but few civilian-grade augments include full skeletal shielding. The weapon's power draw is substantial, and the emitter head generates significant waste heat, requiring a thirty-second cooling cycle between full engagements.",
   "manufacturer": "TESSERA CORPONATION",

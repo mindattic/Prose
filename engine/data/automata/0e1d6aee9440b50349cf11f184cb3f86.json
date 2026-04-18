@@ -2,11 +2,7 @@
   "name": "Ringo WP-6 'Nightwatch'",
   "type": "automaton",
   "classification": "Security",
-  "aliases": [
-    "Nightwatch",
-    "Prowler",
-    "The Beat"
-  ],
+  "aliases": [],
   "manufacturer": "RINGO",
   "description": "The WP-6 is a warehouse patrol automaton — a four-wheeled platform the size of a golf cart with a rotating sensor mast and a forward-mounted spotlight that sweeps back and forth as it navigates between storage aisles. It runs continuous patrol routes through warehouse and industrial spaces, scanning for unauthorized personnel, environmental hazards (fire, gas leaks, structural failures), and inventory anomalies. When it detects something irregular, it stops, illuminates the area with its spotlight, sounds an alarm, and transmits location data to the security operations center.\n\nThe WP-6 is not designed for confrontation. It has no weapons, no restraint systems, no physical capability to stop an intruder. It watches and reports. Ringo markets this as a feature — the WP-6 cannot escalate a situation, cannot use excessive force, cannot make a judgment call that ends in someone getting hurt. It is a mobile alarm system, nothing more. Security personnel respond to its alerts. The WP-6 just tells them where to go.\n\nIn practice, the WP-6 is highly effective because warehouses are boring. Human security guards patrolling vast, empty spaces at 3 AM lose alertness. The WP-6 does not. Its sensor mast detects heat signatures through stacked cargo containers, identifies gas concentrations below human detection thresholds, and notices when a pallet has been moved from its expected location. Ringo's industrial clients report theft reductions averaging forty percent after WP-6 deployment, primarily because the machine never gets bored.",
   "tier_availability": "Tier 2",

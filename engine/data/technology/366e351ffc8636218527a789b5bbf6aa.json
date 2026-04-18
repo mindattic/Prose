@@ -4,12 +4,7 @@
   "brand_name": "Vantablack",
   "product_name": "DataPike CDH-3",
   "type": "technology",
-  "aliases": [
-    "DataPike",
-    "CDH-3",
-    "Corp Highway",
-    "Fast Lane"
-  ],
+  "aliases": [],
   "subcategory": "infrastructure",
   "description": "The DataPike CDH-3 is Vantablack Media's high-bandwidth fiber optic backbone network that connects corporate facilities, data centers, and communication hubs across GLMZ and between major cities worldwide. The network uses photonic crystal fiber carrying multiplexed laser signals at 400 terabits per second per fiber strand — bandwidth sufficient to carry the entire contents of a major library in under a second. DataPike infrastructure runs through hardened conduits beneath GLMZ's streets, sharing right-of-way with Ouroboros Energy's TrunkNet but maintained by separate crews.\n\nAccess to the DataPike is sold as a premium service. While the NeuralMesh provides ubiquitous connectivity for individuals, its per-hop bandwidth and latency are inadequate for the data volumes that corponations generate. A single corporate trading floor might move more data in a minute than a NeuralMesh node handles in a day. The DataPike provides dedicated, guaranteed bandwidth with latency measured in microseconds — the kind of connection that high-frequency trading, real-time surveillance analysis, and corporate communication depend on. Access costs range from 5,000 Φ per month for a basic 10-terabit connection to 500,000 Φ per month for dedicated fiber with guaranteed latency below 10 microseconds.\n\nVantablack's ownership of the DataPike gives them a unique position in GLMZ's power structure. Every corponation that communicates, trades, or transfers data at scale does so through Vantablack's infrastructure. While the data itself is encrypted and Vantablack contractually guarantees they do not inspect customer traffic, the metadata — who communicates with whom, when, and how much data they exchange — flows through Vantablack's routing systems. This metadata, which Vantablack's privacy policy permits them to collect for 'network optimization purposes,' is arguably more valuable than the content itself.",
   "tier_availability": "Tier 3",

@@ -2,11 +2,7 @@
   "name": "TESSERA CR-12 'Whisper'",
   "type": "automaton",
   "classification": "Communications — Tactical Relay Platform",
-  "aliases": [
-    "Whisper",
-    "Signal Ghost",
-    "Mesh Node"
-  ],
+  "aliases": [],
   "manufacturer": "Clarity Meditation",
   "description": "The CR-12 is a small, disc-shaped aerial drone measuring 30 centimeters in diameter, designed to provide ad-hoc communications relay coverage in areas where fixed infrastructure has been destroyed, jammed, or was never built. Deployed in clusters of 6 to 20 units, Whispers autonomously position themselves at optimal altitudes and spacing to create a temporary mesh communications network covering up to 4 square kilometers. Each unit relays encrypted voice, data, and video feeds between ground users and can bridge connections to GLMZ's main communications backbone.\n\nTESSERA developed the CR-12 for military operations in communications-denied environments, but the platform has found its most extensive use in the Shelf and other lower-tier districts where communications infrastructure is unreliable or nonexistent. Criminal organizations, resistance cells, and community mutual-aid networks all use black-market Whisper clusters to maintain communications that bypass the monitored corporate networks. The irony is not lost on anyone: a military communications tool has become the backbone of underground civil society.\n\nThe CR-12's most valuable feature is its signal camouflage system. The relay transmissions are disguised as environmental electromagnetic noise — power line interference, appliance radiation, atmospheric static. To detection equipment, a Whisper network looks like background noise. Finding the drones requires physically spotting 30-centimeter discs hovering at altitude, usually at night, usually in the rain.",
   "tier_availability": "Tier 3+",

@@ -4,11 +4,7 @@
   "brand_name": "Tessera",
   "product_name": "Tessera Corponation Ossified Dead Drop Node",
   "type": "cyberware",
-  "aliases": [
-    "The Reliquary",
-    "Stone Post",
-    "Bone Box"
-  ],
+  "aliases": [],
   "category": "comms",
   "body_location": "",
   "description": "The Ossified Dead Drop Node is a passive communication device encased in a ceramic-composite shell engineered to be structurally and thermally indistinguishable from common urban debris — broken concrete, poured aggregate, architectural rubble. The Node contains a compressed data storage core, a short-range inductive reader interface, and a tamper-dissolution charge that renders the storage medium unreadable upon unauthorized physical breach. It holds no active transmitter. It broadcasts nothing. It simply waits.\n\nTessera's engineering philosophy here is radically conservative: the Node operates on the assumption that any active transmission, no matter how encrypted, is a liability. Instead, the Node accepts data uploads and downloads exclusively through direct inductive contact �� a paired reader passed within three centimeters of the Node's surface. The exchange takes between 0.4 and 2.1 seconds depending on payload size. The Node logs contact timestamps and can be configured to self-dissolve after a set number of accesses, a fixed time window, or upon detection of unauthorized spectral scanning above a defined threshold.\n\nNodes are typically placed by one party and retrieved or read by another — the classic dead drop model, hardened against the digital surveillance architecture of GLMZ. Tessera manufactures them ostensibly for 'secure physical data archival in high-risk construction environments,' a designation that satisfies municipal licensing requirements while doing nothing to obscure the product's actual market. They are found embedded in walls, tucked into drainage infrastructure, mortared into the gaps of older precinct buildings, and buried in parks. The city is full of them.",

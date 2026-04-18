@@ -4,11 +4,7 @@
   "brand_name": "Tessera",
   "product_name": "Tessera Corponation Stochastic Blind Ledger",
   "type": "equipment",
-  "aliases": [
-    "the Ledger",
-    "Scatter Box",
-    "Tessera Noise Book"
-  ],
+  "aliases": [],
   "category": "comms",
   "description": "The Stochastic Blind Ledger is a signal-layer encryption device that operates on a principle Tessera calls 'communicative deniability through noise parity' — in plain terms, it transmits real messages by hiding them inside statistically indistinguishable synthetic noise, making the channel appear to carry nothing but ambient electromagnetic garbage. The Ledger generates a rolling stochastic key synchronized between paired units, allowing both endpoints to extract meaningful data from what looks, to any intercepting party, like random spectrum bleed from aging infrastructure. It requires no dedicated frequency and can ride parasitically on existing signal pollution in GLMZ's notoriously cluttered electromagnetic environment.\n\nThe physical unit is a matte-black rectangular device slightly larger than a deck of cards, with no visible inputs beyond a single recessed pairing port. Operation is intentionally opaque: there are no indicators, no screens, no confirmation signals. Users simply trust the synchronized key or they don't. Tessera designed this as a feature — an interceptor who captures a Ledger unit gains nothing without the paired device and the synchronization seed, which is burned to a one-time substrate during initial pairing and cannot be reconstructed.\n\nThe Ledger occupies a peculiar legal space. Tessera sells it openly to licensed corporate communications teams as an anti-industrial-espionage tool, but the same properties that make it attractive to corporations make it equally attractive to everyone else. GLMZ's corporate security apparatus has been lobbying for stricter licensing requirements for years, so far without success — partly because several of the lobbying corps quietly use Ledgers themselves for communications they'd prefer regulators not see.",
   "manufacturer": "Vasquez Biocompatible Materials",

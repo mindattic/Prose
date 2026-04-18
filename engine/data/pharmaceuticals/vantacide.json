@@ -2,40 +2,36 @@
   "id": "019d7850c6e5769f92465a6330dcfce5",
   "name": "Vantacide",
   "type": "pharmaceutical",
-  "aliases": [
-    "Blackout",
-    "the Null",
-    "Signal Death"
-  ],
+  "aliases": [],
   "category": "poison_toxin",
-  "subcategory": "neural disruptor \u2014 BCI signal scrambler",
+  "subcategory": "neural disruptor — BCI signal scrambler",
   "manufacturer": "Nightshade Pharmatech",
-  "description": "A targeted neuroactive compound that floods the BCI\u0027s wireless transmission architecture with pharmacologically-generated electromagnetic noise, effectively jamming all BCI signal output and input. The subject\u0027s BCI becomes a useless brick \u2014 no comms, no augment control signals, no neural net access, no emergency beacon. In a society where BCI is as essential as breathing, Vantacide is a form of sensory and functional amputation.",
+  "description": "A targeted neuroactive compound that floods the BCI's wireless transmission architecture with pharmacologically-generated electromagnetic noise, effectively jamming all BCI signal output and input. The subject's BCI becomes a useless brick — no comms, no augment control signals, no neural net access, no emergency beacon. In a society where BCI is as essential as breathing, Vantacide is a form of sensory and functional amputation.",
   "method_of_use": "injection",
   "effects": [
-    "full BCI signal disruption \u2014 all wireless BCI functions offline",
+    "full BCI signal disruption — all wireless BCI functions offline",
     "augment control signals severed (chrome limbs, optical implants, and neural interfaces go dark)",
     "emergency beacon suppressed",
     "subject cut off from all network access and communications",
-    "BCI reads as \u0027offline\u0027 to external scanners \u2014 subject becomes invisible to digital tracking"
+    "BCI reads as 'offline' to external scanners — subject becomes invisible to digital tracking"
   ],
   "side_effects": [
-    "subjects with deep neural integration experience BCI severance as acute psychological pain \u2014 described as sudden deafness, blindness, and isolation simultaneously",
-    "chrome limbs default to manual mode \u2014 some advanced augments lock up entirely",
+    "subjects with deep neural integration experience BCI severance as acute psychological pain — described as sudden deafness, blindness, and isolation simultaneously",
+    "chrome limbs default to manual mode — some advanced augments lock up entirely",
     "subjects with SNT-integrated implants may experience partial seizures as SNT tissue attempts to compensate for severed signals",
-    "re-connection on drug clearance causes \u0027flood effect\u0027 \u2014 sudden re-integration of all pending signals can cause disorientation or cardiac arrhythmia",
-    "subjects without BCI are unaffected \u2014 rare in 2200"
+    "re-connection on drug clearance causes 'flood effect' — sudden re-integration of all pending signals can cause disorientation or cardiac arrhythmia",
+    "subjects without BCI are unaffected — rare in 2200"
   ],
   "duration": "3-6 hours",
   "addiction_risk": "none",
   "tier_availability": "Tier 1-2",
   "legality": "illegal",
-  "street_price": "\u03A6 500\u20131,100 per dose",
-  "cultural_context": "Used by kidnappers to prevent emergency beacon activation, by thieves to blind security-augmented guards, and by operators who need to move a target through an area without leaving a digital trace. Also used in Shelf power plays \u2014 dosing a rival\u0027s crew before a hit means they can\u0027t call for backup. The phrase \u0027Nulled out\u0027 in GLMZ street slang means completely cut off, digitally invisible, and vulnerable.",
+  "street_price": "Φ 500–1,100 per dose",
+  "cultural_context": "Used by kidnappers to prevent emergency beacon activation, by thieves to blind security-augmented guards, and by operators who need to move a target through an area without leaving a digital trace. Also used in Shelf power plays — dosing a rival's crew before a hit means they can't call for backup. The phrase 'Nulled out' in GLMZ street slang means completely cut off, digitally invisible, and vulnerable.",
   "story_hooks": [
-    "A Tier 4 executive is dosed with Vantacide at a public event \u2014 someone wants them digitally blind for exactly four hours. What happens in those four hours is the story.",
-    "A runner discovers that the Shelf neighborhood they\u0027re operating in has had its water supply micro-dosed with diluted Vantacide \u2014 someone has been BCi-blinding an entire community, and the locals don\u0027t know why.",
-    "A Nightshade chemist offers to sell the synthesis route for Vantacide to a corpo security firm. The offer is a trap \u2014 or is it?"
+    "A Tier 4 executive is dosed with Vantacide at a public event — someone wants them digitally blind for exactly four hours. What happens in those four hours is the story.",
+    "A runner discovers that the Shelf neighborhood they're operating in has had its water supply micro-dosed with diluted Vantacide — someone has been BCi-blinding an entire community, and the locals don't know why.",
+    "A Nightshade chemist offers to sell the synthesis route for Vantacide to a corpo security firm. The offer is a trap — or is it?"
   ],
   "tags": []
 }

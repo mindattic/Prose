@@ -2,12 +2,7 @@
   "id": "b26ea2f41c513108f5c80aed13018206",
   "name": "Meridian Munitions Twin PDW MTP-2 'Gemini'",
   "type": "weapon",
-  "aliases": [
-    "Gemini",
-    "MTP-2",
-    "Twin Gun",
-    "Double Tap"
-  ],
+  "aliases": [],
   "category": "smg",
   "description": "The MTP-2 Gemini is a paired weapon system — two identical micro-PDWs sold as a matched set and designed to be dual-wielded with BCI coordination. Each unit is a compact 5.7mm caseless PDW with a 15-round magazine, but the weapons' BCI systems communicate to create a unified fire-control solution. When both weapons are drawn, the smart-link allocates targeting between left and right hands, allowing the operator to engage two separate targets simultaneously.\n\nDual-wielding weapons is generally impractical — human neurology isn't optimized for independent bilateral targeting. The Gemini's BCI system compensates by handling the targeting math neurally, splitting the operator's attention between two aim points and providing independent aim-assist to each hand. The system requires extensive training and a Class 4 motor-interface BCI, but trained Gemini operators can engage two targets in different directions with the speed of a single-weapon draw.\n\nAt Φ8,000 per pair, the Gemini is a specialist system for operators with the neural hardware and training to exploit its capabilities. In untrained hands, the paired weapons offer no advantage over a single PDW with a larger magazine. In trained hands, the Gemini doubles the operator's engagement capacity at close range.",
   "manufacturer": "MERIDIAN MUNITIONS",

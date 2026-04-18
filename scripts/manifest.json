@@ -9,26 +9,26 @@
         {
           "file": "wiki_scan.py",
           "runner": "python",
-          "description": "Scans all entity files and inserts [[wiki links]] for cross-referencing",
+          "description": "Scans all entity files and inserts [[wiki links]] for cross-referencing. Uses an alias-aware index so Chen Wei-Lin and Mrs. Chen link to the same entity.",
           "args": [
             {
-              "flag": "--dry-run",
-              "default": true,
-              "desc": "Preview what would be linked without writing any files (default)"
+              "flag": "--apply",
+              "default": "false",
+              "desc": "Write [[...]] syntax back to entity JSON files (default is dry-run)"
             },
             {
-              "flag": "--apply",
-              "default": false,
-              "desc": "Write [[...]] syntax back to entity JSON files"
+              "flag": "--dry-run",
+              "default": "true",
+              "desc": "Preview what would be linked without writing any files"
             },
             {
               "flag": "--interactive",
-              "default": false,
-              "desc": "Prompt before each insertion; y=accept, n=skip, q=quit"
+              "default": "false",
+              "desc": "Prompt before each insertion: y=accept, n=skip, q=quit"
             },
             {
               "flag": "--partial",
-              "default": false,
+              "default": "false",
               "desc": "Also report partial/fuzzy matches (name inside compound word)"
             },
             {
@@ -43,18 +43,23 @@
             },
             {
               "flag": "--min-length N",
-              "default": 4,
+              "default": "4",
               "desc": "Minimum entity name length to match (avoids noise like 'AI')"
             },
             {
-              "flag": "--data-dir DIR",
+              "flag": "--limit N",
               "default": null,
-              "desc": "Override engine/data path"
+              "desc": "Stop after N files are modified"
             },
             {
-              "flag": "--since DURATION",
+              "flag": "--since DUR",
               "default": null,
-              "desc": "Only scan files modified within this duration, e.g. 2h, 30m, 1d. Bare number = minutes."
+              "desc": "Only scan files modified within this duration, e.g. 2h, 30m, 1d"
+            },
+            {
+              "flag": "--silent",
+              "default": "false",
+              "desc": "Suppress all console output"
             }
           ]
         }
@@ -84,6 +89,11 @@
               "flag": "--output FILE",
               "default": null,
               "desc": "Write report to JSON file instead of stdout"
+            },
+            {
+              "flag": "--silent",
+              "default": "false",
+              "desc": "Suppress all console output"
             }
           ]
         },
@@ -106,6 +116,11 @@
               "flag": "--apply",
               "default": false,
               "desc": "Write scores back to entity JSON"
+            },
+            {
+              "flag": "--silent",
+              "default": "false",
+              "desc": "Suppress all console output"
             }
           ]
         },
@@ -133,6 +148,11 @@
               "flag": "--db PATH",
               "default": null,
               "desc": "Path to facts.db file"
+            },
+            {
+              "flag": "--silent",
+              "default": "false",
+              "desc": "Suppress all console output"
             }
           ]
         }
@@ -182,6 +202,11 @@
               "flag": "--concurrency N",
               "default": 20,
               "desc": "Max concurrent API calls"
+            },
+            {
+              "flag": "--silent",
+              "default": "false",
+              "desc": "Suppress all console output"
             }
           ]
         },
@@ -204,6 +229,11 @@
               "flag": "--resume",
               "default": true,
               "desc": "Skip already-processed entities (default: on)"
+            },
+            {
+              "flag": "--silent",
+              "default": "false",
+              "desc": "Suppress all console output"
             }
           ]
         },
@@ -228,6 +258,11 @@
               "flag": "--min-cluster-size N",
               "default": 3,
               "desc": "Minimum cluster size for HDBSCAN"
+            },
+            {
+              "flag": "--silent",
+              "default": "false",
+              "desc": "Suppress all console output"
             }
           ]
         },
@@ -240,6 +275,11 @@
               "flag": "--threshold F",
               "default": 0.67,
               "desc": "Quorum threshold for consensus (default: 0.67)"
+            },
+            {
+              "flag": "--silent",
+              "default": "false",
+              "desc": "Suppress all console output"
             }
           ]
         },
@@ -257,6 +297,11 @@
               "flag": "--dry-run",
               "default": false,
               "desc": "Preview repairs without modifying files"
+            },
+            {
+              "flag": "--silent",
+              "default": "false",
+              "desc": "Suppress all console output"
             }
           ]
         }
@@ -281,23 +326,11 @@
               "flag": "--skip-phase",
               "default": null,
               "desc": "Skip specific generation phase"
-            }
-          ]
-        },
-        {
-          "file": "assign_tiers.py",
-          "runner": "python",
-          "description": "Assigns social tier levels (1-5) to characters based on role, affiliation, and location",
-          "args": [
-            {
-              "flag": "--repo REPO",
-              "default": null,
-              "desc": "Limit to one repo folder"
             },
             {
-              "flag": "--dry-run",
-              "default": false,
-              "desc": "Preview assignments without writing"
+              "flag": "--silent",
+              "default": "false",
+              "desc": "Suppress all console output"
             }
           ]
         },
@@ -320,6 +353,11 @@
               "flag": "--concurrency N",
               "default": 20,
               "desc": "Max concurrent API calls"
+            },
+            {
+              "flag": "--silent",
+              "default": "false",
+              "desc": "Suppress all console output"
             }
           ]
         },
@@ -337,6 +375,11 @@
               "flag": "--apply",
               "default": false,
               "desc": "Regenerate outlier descriptions"
+            },
+            {
+              "flag": "--silent",
+              "default": "false",
+              "desc": "Suppress all console output"
             }
           ]
         },
@@ -349,6 +392,11 @@
               "flag": "--concurrency N",
               "default": 10,
               "desc": "Max concurrent API calls"
+            },
+            {
+              "flag": "--silent",
+              "default": "false",
+              "desc": "Suppress all console output"
             }
           ]
         },
@@ -361,6 +409,11 @@
               "flag": "--repo REPO",
               "default": "people",
               "desc": "Character repo to process"
+            },
+            {
+              "flag": "--silent",
+              "default": "false",
+              "desc": "Suppress all console output"
             }
           ]
         }
@@ -434,6 +487,11 @@
               "flag": "--repo REPO",
               "default": null,
               "desc": "Limit to one repo folder"
+            },
+            {
+              "flag": "--silent",
+              "default": "false",
+              "desc": "Suppress all console output"
             }
           ]
         },
@@ -649,12 +707,6 @@
           "file": "generate_selfdefense.js",
           "runner": "node",
           "description": "Non-lethal and self-defense equipment and training items",
-          "args": []
-        },
-        {
-          "file": "tag_weapon_lethality.js",
-          "runner": "node",
-          "description": "Post-generation pass: tags weapons with lethality tier levels",
           "args": []
         }
       ]
@@ -1161,24 +1213,6 @@
       "type": "js",
       "scripts": [
         {
-          "file": "cleanup_tags.js",
-          "runner": "node",
-          "description": "Validates and removes unsupported tags across 24 data directories",
-          "args": []
-        },
-        {
-          "file": "fix_entity_tags.js",
-          "runner": "node",
-          "description": "Adds missing category tags and normalizes all tags in people and synthetics repos",
-          "args": []
-        },
-        {
-          "file": "fix_phi_to_quanta.js",
-          "runner": "node",
-          "description": "One-time migration: corrects old Phi/phi currency references to Quanta throughout all entity files",
-          "args": []
-        },
-        {
           "file": "add_firearms_to_characters.js",
           "runner": "node",
           "description": "Assigns tier-appropriate weapons from the weaponry database to character entities",
@@ -1206,12 +1240,6 @@
           "file": "refactor_underscore.js",
           "runner": "node",
           "description": "Converts underscore-delimited field names to camelCase across entity files",
-          "args": []
-        },
-        {
-          "file": "cross_reference_pass.js",
-          "runner": "node",
-          "description": "Populates related_entities by finding entity name mentions in description text",
           "args": []
         },
         {

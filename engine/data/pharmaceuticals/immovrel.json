@@ -2,15 +2,11 @@
   "id": "019d7850c6b1709cbea6b4bf29e99fd6",
   "name": "Immovrel",
   "type": "pharmaceutical",
-  "aliases": [
-    "balance shot",
-    "chrome immune",
-    "the modulator"
-  ],
+  "aliases": [],
   "category": "medical",
   "subcategory": "immune modulator for augmented individuals",
   "manufacturer": "Helix Biosystems",
-  "description": "Immovrel is a precision immune modulator designed for heavily augmented individuals whose immune systems have been destabilized by extensive chrome, SNT implants, and geneware \u2014 a condition called augment-induced immune dysregulation (AIID). It recalibrates immune response thresholds to tolerate high augment loads while preserving the ability to fight genuine pathogens, a balance that standard immunosuppressants like Toleryn cannot achieve at high augmentation levels.",
+  "description": "Immovrel is a precision immune modulator designed for heavily augmented individuals whose immune systems have been destabilized by extensive chrome, SNT implants, and geneware — a condition called augment-induced immune dysregulation (AIID). It recalibrates immune response thresholds to tolerate high augment loads while preserving the ability to fight genuine pathogens, a balance that standard immunosuppressants like Toleryn cannot achieve at high augmentation levels.",
   "method_of_use": "injection",
   "effects": [
     "recalibrates immune tolerance for high augment loads",
@@ -23,19 +19,19 @@
     "injection site reactions",
     "two-week recalibration period with flu-like symptoms",
     "rare severe allergic response to the modulator proteins themselves",
-    "requires precise dosing \u2014 over-modulation leaves patients vulnerable to infection",
+    "requires precise dosing — over-modulation leaves patients vulnerable to infection",
     "monthly injections required"
   ],
   "duration": "28-30 days per injection",
   "addiction_risk": "none",
   "tier_availability": "Tier 3-4",
   "legality": "prescription",
-  "street_price": "\u03A6320 per monthly injection",
-  "cultural_context": "Immovrel is for the seriously augmented \u2014 people whose chrome load is high enough that standard Toleryn alone can\u0027t manage the immune chaos. Tier 3 workers with extensive labor augments often need it by their forties. Tier 4 corporate soldiers with military-grade installs need it from day one. The monthly injection is a ritual in augment-heavy communities. On the Shelf, people who need Immovrel and can\u0027t afford it develop AIID \u2014 a slow inflammatory death.",
+  "street_price": "Φ320 per monthly injection",
+  "cultural_context": "Immovrel is for the seriously augmented — people whose chrome load is high enough that standard Toleryn alone can't manage the immune chaos. Tier 3 workers with extensive labor augments often need it by their forties. Tier 4 corporate soldiers with military-grade installs need it from day one. The monthly injection is a ritual in augment-heavy communities. On the Shelf, people who need Immovrel and can't afford it develop AIID — a slow inflammatory death.",
   "story_hooks": [
-    "A Helix Biosystems researcher has discovered that Immovrel\u0027s modulation proteins can be tuned to make the immune system attack specific augment types \u2014 a biological weapon disguised as medicine",
-    "A character with extensive chrome is developing AIID symptoms despite regular Immovrel \u2014 their augments are generating a novel inflammatory signal the drug wasn\u0027t designed to handle",
-    "The monthly Immovrel injection for a Tier 3 community has been quietly discontinued \u2014 Helix is redirecting supply to a more profitable Tier 4 contract"
+    "A Helix Biosystems researcher has discovered that Immovrel's modulation proteins can be tuned to make the immune system attack specific augment types — a biological weapon disguised as medicine",
+    "A character with extensive chrome is developing AIID symptoms despite regular Immovrel — their augments are generating a novel inflammatory signal the drug wasn't designed to handle",
+    "The monthly Immovrel injection for a Tier 3 community has been quietly discontinued — Helix is redirecting supply to a more profitable Tier 4 contract"
   ],
   "tags": []
 }

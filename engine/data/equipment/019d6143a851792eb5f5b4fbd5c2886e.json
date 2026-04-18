@@ -4,12 +4,7 @@
   "brand_name": "Arcturus",
   "product_name": "Arcturus Defense Solutions Parallax Threat Lattice",
   "type": "equipment",
-  "aliases": [
-    "PTL",
-    "the Fishnet",
-    "Parallax Rig",
-    "Ghost Grid"
-  ],
+  "aliases": [],
   "category": "sensor",
   "description": "The Parallax Threat Lattice is a multi-node passive triangulation system that deploys a network of micro-receiver pods — each no larger than a flattened thumb — across a defined area. These pods communicate via low-frequency encrypted burst transmissions, collectively building a real-time volumetric map of movement, heat displacement, and pressure differentials within the coverage zone. The system's core innovation is its use of parallax mathematics rather than direct emission scanning: rather than broadcasting a detectable signal and reading the return, each pod reads the environment's own ambient energy and computes position data by comparing fractional discrepancies between nodes. The result is a sensor network that generates no active signature and is functionally invisible to most counter-surveillance sweeps.\n\nWhat distinguishes the PTL from competitor mesh systems is its adaptive node weighting. If one or more pods are destroyed or blocked, the remaining network recalibrates its triangulation geometry within 4–6 seconds, filling the gap with interpolated data drawn from adjacent pod clusters. This makes the system unusually resilient in chaotic environments — firefights, demolition zones, collapsing infrastructure — where conventional sensor nets fail catastrophically. The lattice can track up to 40 distinct movement signatures simultaneously, tagging them with threat-probability indices updated every 200 milliseconds.\n\nPrimarily issued to Arcturus strike teams for perimeter defense during extended operations, the PTL has found significant adoption among private security contractors, corporate extraction teams, and high-end fixers who run safe houses requiring persistent area monitoring. The system's civilian black market presence is notable: modified versions with stripped authentication firmware circulate among gang leadership seeking early warning against rival incursions.",
   "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",

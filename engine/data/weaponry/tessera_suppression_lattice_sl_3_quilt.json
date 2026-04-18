@@ -2,12 +2,7 @@
   "id": "871c76903a60f292e024322d143a5fd3",
   "name": "Tessera Suppression Lattice SL-3 'Quilt'",
   "type": "weapon",
-  "aliases": [
-    "Quilt",
-    "SL-3",
-    "Lattice",
-    "The Blanket"
-  ],
+  "aliases": [],
   "category": "support",
   "description": "A networked smart-weapon system consisting of four autonomous turrets that operate as a coordinated fire group. Each turret fires 5.56mm caseless rounds and is equipped with a sensor suite that shares target data across the network. The Suppression Lattice creates interlocking fields of fire that can deny access to an area up to 400 meters in diameter.\n\nTessera designed the SL-3 for corporate facility defense where manpower is expensive and perimeter coverage is critical. A single operator with a BCI link can manage a four-turret Lattice, designating priority targets and engagement zones while the turrets' AI handles tracking and fire control. The system can also operate autonomously using pre-programmed engagement protocols.\n\nEach turret weighs 18 kg and can be deployed in under two minutes. The four-unit system uses encrypted mesh networking that maintains coordination even if individual turrets are destroyed or communication is jammed — the remaining units automatically redistribute their fire coverage to compensate for gaps.",
   "manufacturer": "TESSERA",

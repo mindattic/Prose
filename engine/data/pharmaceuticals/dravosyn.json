@@ -2,11 +2,7 @@
   "id": "019d7850c6a6768c9c1f71d250c1fd4f",
   "name": "Dravosyn",
   "type": "pharmaceutical",
-  "aliases": [
-    "Dopfloor",
-    "Baseload",
-    "D-Ground"
-  ],
+  "aliases": [],
   "category": "withdrawal_aid",
   "subcategory": "dopamine_system_restorator",
   "manufacturer": "Novafold Pharmaceuticals",
@@ -30,11 +26,11 @@
   "addiction_risk": "low",
   "tier_availability": "Tier 2-3",
   "legality": "prescription",
-  "street_price": "\u03A622 per week",
-  "cultural_context": "Dravosyn addresses what Shelf users call \u0027the gray\u0027 \u2014 the flatlined motivational state after years on Voraxin, synthetic highs, or heavy stimulant use where nothing feels worth doing. It\u0027s considered a miracle drug by some recovery advocates, but the restless peak phase in weeks 2-3 has caused problems \u2014 users in that window have elevated impulsivity and sometimes relapse or act out violently.",
+  "street_price": "Φ22 per week",
+  "cultural_context": "Dravosyn addresses what Shelf users call 'the gray' — the flatlined motivational state after years on Voraxin, synthetic highs, or heavy stimulant use where nothing feels worth doing. It's considered a miracle drug by some recovery advocates, but the restless peak phase in weeks 2-3 has caused problems — users in that window have elevated impulsivity and sometimes relapse or act out violently.",
   "story_hooks": [
-    "A contact is in the Dravosyn peak phase \u2014 unusually impulsive and energetic \u2014 and the players need to deal with them carefully before they do something irreversible",
-    "Someone in the gray after years of drug use is offered Dravosyn by a stranger with unclear motives \u2014 is it genuine help or a way to manipulate them during the vulnerable peak phase?",
+    "A contact is in the Dravosyn peak phase — unusually impulsive and energetic — and the players need to deal with them carefully before they do something irreversible",
+    "Someone in the gray after years of drug use is offered Dravosyn by a stranger with unclear motives — is it genuine help or a way to manipulate them during the vulnerable peak phase?",
     "A Shelf community has collectively decided to pool resources for a Dravosyn run for several members, and the players must source it without a prescription"
   ],
   "tags": []

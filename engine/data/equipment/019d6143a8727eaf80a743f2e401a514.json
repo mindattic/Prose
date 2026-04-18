@@ -4,11 +4,7 @@
   "brand_name": "Tessera",
   "product_name": "Tessera Corponation Ambient Signal Displacement Array",
   "type": "equipment",
-  "aliases": [
-    "The Fog Engine",
-    "Ghost Halo",
-    "The Scatter"
-  ],
+  "aliases": [],
   "category": "stealth",
   "description": "The Ambient Signal Displacement Array is a palm-sized device worn on the body or placed as a static field emitter that generates a calibrated bubble of electromagnetic interference designed not to block signals — which would itself be detectable — but to displace and scatter them in ways that mimic natural environmental noise. Where crude jammers create a dead zone that passive monitoring systems immediately flag as an anomaly, the Array samples the ambient signal environment within its operational radius and synthesizes a layered output of false signals, reflections, and interference patterns that make the area appear, to any external monitoring system, as a region of ordinary urban electromagnetic clutter.\n\nTessera developed the Array's core displacement architecture from research into urban signal mapping — specifically, the problem of predicting how dense city infrastructure affects wireless propagation. The same models that predict signal behavior can be run in reverse to generate convincing synthetic scatter. The Array updates its output profile every 200 milliseconds, adapting to changes in the ambient signal environment to maintain the illusion of naturalness. This makes it effective not only against real-time monitoring but against retrospective signal forensics, since the Array's emissions blend into baseline environmental noise in recorded data.\n\nThe device has a secondary function that its documentation quietly omits: at close range, it disrupts the short-range biometric handshake protocols that many corporate access and identification systems use to passively scan nearby individuals. This means that personnel within the Array's radius may fail to register on proximity-based attendance or identity logging systems — a function that makes the Array quietly indispensable for anyone who needs to be somewhere without their presence being logged, without the overt aggression of a full signal jam.",
   "manufacturer": "TESSERA CORPONATION",

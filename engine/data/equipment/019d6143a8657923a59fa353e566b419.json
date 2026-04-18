@@ -4,12 +4,7 @@
   "brand_name": "Pale",
   "product_name": "Pale Letter Dead Drop Terminal",
   "type": "equipment",
-  "aliases": [
-    "The Pale Box",
-    "Ghost Post",
-    "Letter Box",
-    "Cold Relay"
-  ],
+  "aliases": [],
   "category": "comms",
   "description": "The Pale Letter Dead Drop Terminal is a physically unassuming communications device — typically disguised as a piece of mundane urban infrastructure, such as an electrical junction box, a ventilation panel cover, or a section of decorative wall tile — that functions as an asynchronous, air-gapped message exchange point for operatives who cannot risk real-time communication. Messages are composed offline on an encrypted companion device, compressed into a burst transmission lasting less than 0.3 seconds, and physically transmitted to the Terminal on close approach via short-range encrypted radio. The Terminal stores the message in an isolated internal memory with no external network connection, where it waits until another authorized party approaches and pulls it down with a corresponding burst receive.\n\nThe Pale Letter's security architecture is built around the principle of temporal separation — sender and receiver never need to be in the same place at the same time, and the Terminal never connects to any network, making it undetectable by conventional signals intelligence. The device's internal clock erases stored messages on a configurable timer between two and seventy-two hours, ensuring that if a Terminal is discovered, the window for recovering its contents is narrow. Physical intrusion triggers an immediate memory wipe. The Terminal is powered by a long-life kinetic harvesting cell that draws energy from vibrations in the surrounding structure — it requires no external power and can remain dormant for years.\n\nPale Letter Terminals are manufactured in small batches by Ringo Corponation's 'grey infrastructure' division and are distributed through a network of trusted intermediaries rather than conventional retail channels. They are standard equipment for deep-cover intelligence operatives, long-running infiltration specialists, and the leadership structures of organizations that have been penetrated by surveillance operations. In GLMZ's more paranoid underground circles, a network of Pale Letter Terminals is called a 'cold line' — a communications infrastructure that exists entirely outside the city's monitored networks.",
   "manufacturer": "RINGO CORPONATION",

@@ -2,12 +2,7 @@
   "id": "019d6143ab2377889208576389dbdf77",
   "name": "Dielectric Filament Anchor Drone DFAD-1 'Cobweb'",
   "type": "weapon",
-  "aliases": [
-    "Cobweb",
-    "The Spinner",
-    "DFAD",
-    "Sticky"
-  ],
+  "aliases": [],
   "category": "drone",
   "description": "The DFAD-1 is a slow-moving, low-altitude deployment drone purpose-built to construct dielectric filament barriers in real time across doorways, corridors, stairwells, and open terrain. It carries a spool of sub-millimeter piezoelectric composite filament — nearly invisible at distances beyond two meters — which it anchors to surfaces using micro-adhesive pitons fired from an onboard pneumatic launcher. Once a filament network is constructed, any conductive surface (including human skin, wet clothing, and most cybernetic chassis components) completing a circuit across two or more strands receives a sharp, high-voltage piezoelectric discharge: non-lethal at standard settings, but sufficient to trigger involuntary muscular contraction and momentary loss of fine motor control.\n\nThe DFAD-1's operational profile is inherently architectural. It doesn't pursue targets — it re-shapes the environment to punish movement through it. Operators can pre-program specific filament geometries, or allow the drone to autonomously map a space and generate optimized barrier configurations based on room geometry and estimated foot traffic patterns. A fully deployed web in a standard corridor can process three to five contact events before filament degradation requires restringing. The drone carries enough spool material for approximately 80 meters of filament deployment.\n\nHELIX BIOSYSTEMS' involvement is non-obvious given the weapon's apparent mechanical simplicity, but the piezoelectric composite filament is a direct derivative of their synthetic tendon research program — the discharge profile was tuned to match the threshold for neuromuscular disruption without cardiac risk, a specification that required significant biological modeling.",
   "manufacturer": "HELIX BIOSYSTEMS",

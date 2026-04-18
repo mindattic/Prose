@@ -2,12 +2,7 @@
   "id": "019d6143ab4f7a2ca784ad2b9cbc699b",
   "name": "Swarm Dielectric Dispersal Node SDDN-3 'Locust'",
   "type": "weapon",
-  "aliases": [
-    "Locust",
-    "The Swarm",
-    "Buzzkill",
-    "SDDN"
-  ],
+  "aliases": [],
   "category": "drone",
   "description": "The SDDN-3 deploys a cloud of 400–600 semi-autonomous micro-drones, each no larger than a thumbnail, that distribute themselves across a designated target zone and simultaneously discharge stored dielectric energy into any conductive surface they contact. Each node carries a capacitor array charged via inductive relay from the launch canister, allowing the swarm to sustain its dispersal pattern for up to 90 seconds before terminal discharge. The drones navigate using a low-latency mesh protocol, redistributing around obstacles and reforming after partial neutralization.\n\nWhat distinguishes the SDDN-3 from conventional area-denial systems is its adaptive saturation logic. If a portion of the swarm is disrupted by EMP countermeasures or physical interference, surviving nodes reassign coverage zones in under 200 milliseconds, ensuring no gap in the dielectric envelope. Targets within the zone experience cascading surface charge buildup across armor, cybernetics, and exposed skin simultaneously, causing localized dielectric breakdown in synthetic materials and severe muscular disruption in unshielded organics.\n\nOriginally developed for infrastructure security—specifically to disable unauthorized drones encroaching on TESSERA CORPONATION server campuses—the SDDN-3 was rapidly adopted by paramilitary contractors after field operators discovered its effectiveness against augmented combatants. The swarm's characteristic low hum before dispersal has given it a grim nickname on the streets of GLMZ's industrial districts.",
   "manufacturer": "Empathic Analytics",

@@ -2,11 +2,7 @@
   "name": "Crucible ER-5 'First Response'",
   "type": "automaton",
   "classification": "Medical",
-  "aliases": [
-    "First Response",
-    "Crash Bot",
-    "The Ambulance"
-  ],
+  "aliases": [],
   "manufacturer": "CRUCIBLE INDUSTRIES",
   "description": "The ER-5 is an emergency medical response automaton — a wheeled platform the size of a gurney that deploys from fire stations and emergency service hubs, navigating to medical emergencies at speeds up to 60 km/h on dedicated emergency lanes. It arrives before human paramedics in seventy percent of urban calls and begins stabilization procedures immediately: assessing vital signs, administering basic medications from onboard dispensaries, controlling hemorrhage with automated tourniquet and compression systems, and establishing IV access with a precision needle arm that finds veins on the first attempt in ninety-eight percent of patients.\n\nThe ER-5 cannot perform surgery, cannot make complex medical decisions, and cannot transport patients. What it can do is keep people alive for the twelve to twenty minutes it takes human paramedics to arrive. In cardiac arrest cases, it delivers defibrillation and chest compressions with mechanical consistency that never degrades. In trauma cases, it stops bleeding and prevents shock. In overdose cases, it administers naloxone or appropriate antagonists based on toxicological analysis of the patient's blood chemistry from a finger-prick sample processed in 30 seconds.\n\nSince ER-5 deployment began, pre-hospital mortality in GLMZ has dropped nineteen percent. The machine arrives fast, stabilizes the patient, and holds the line until human help gets there. It has saved thousands of lives. It has also created a tiered response system — ER-5 units are deployed based on district priority, and Tier 1 districts have fewer units per capita than Tier 4 districts. The machine saves lives, but it saves some lives faster than others.",
   "tier_availability": "Tier 2-3",

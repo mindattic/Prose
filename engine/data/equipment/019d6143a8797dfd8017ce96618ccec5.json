@@ -4,11 +4,7 @@
   "brand_name": "Thornwire",
   "product_name": "Thornwire Mesh Beacon",
   "type": "equipment",
-  "aliases": [
-    "The Thorn",
-    "Scatter-Node",
-    "Briar Box"
-  ],
+  "aliases": [],
   "category": "comms",
   "description": "The Thornwire Mesh Beacon is a self-deploying micro-node array that ejects up to forty-seven semi-autonomous signal relays — each no larger than a thumbnail — across a designated area upon activation. These relays anchor themselves to surfaces using barbed micro-hooks, forming a decentralized mesh network capable of routing encrypted communications through hundreds of independent paths simultaneously. The network self-heals when nodes are destroyed or disabled, rerouting traffic within milliseconds and making it nearly impossible for signal-tracing equipment to identify the origin or terminus of any transmission.\n\nWhat distinguishes the Thornwire from conventional mesh nodes is its hostile-environment calibration. The relays are coated in a radar-absorbent ceramic compound developed in partnership with Arcturus Defense Solutions, and each node autonomously cycles through seventeen frequency bands to avoid detection sweeps. The beacon unit itself is roughly the size of a closed fist, ruggedized against EMPs with a faraday-wrapped core, and can be thrown, mounted, or buried — activating on impact, timer, or remote trigger.\n\nThe Thornwire is the backbone comms solution for insurgent cells, fixers coordinating multi-team operations, and corporate black-site security teams who need deniable communications infrastructure that leaves no central point of failure. Street-level crews prize it for its disposability — once a job is done, a single destruct signal reduces every relay to slag, leaving nothing for forensics teams to recover.",
   "manufacturer": "Mensah Protective Equipment",

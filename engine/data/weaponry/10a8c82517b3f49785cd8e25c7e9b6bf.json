@@ -2,12 +2,7 @@
   "id": "10a8c82517b3f49785cd8e25c7e9b6bf",
   "name": "Tessera Overwatch Platform OWP-3 'Panopticon'",
   "type": "weapon",
-  "aliases": [
-    "Panopticon",
-    "OWP-3",
-    "Eye of God",
-    "The Watcher"
-  ],
+  "aliases": [],
   "category": "sniper",
   "description": "A semi-autonomous sniper platform that combines a precision railgun with an AI-assisted targeting suite. The OWP-3 can be deployed in a fixed position and left to operate autonomously for up to 72 hours, using its sensor array to identify and engage designated target profiles without human intervention.\n\nThe Panopticon's AI targeting operates on a strict engagement protocol — it will only fire on targets matching pre-loaded biometric profiles, and it requires BCI confirmation from an authorized operator before engaging unregistered targets. In autonomous mode, the weapon achieves a first-round hit probability of 94% at ranges under 2km.\n\nTessera markets the OWP-3 as a force multiplier for corporate perimeter defense, but its autonomous capability has raised concerns even within GLMZ's permissive regulatory environment. Several municipal councils have attempted to ban autonomous lethal platforms, only to discover that Tessera's legal team had preemptively secured exemptions through corporate sovereignty provisions.",
   "manufacturer": "TESSERA",

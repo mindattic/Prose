@@ -2,11 +2,7 @@
   "id": "019d7850c6e376509da244f965d0724c",
   "name": "Tolerex",
   "type": "pharmaceutical",
-  "aliases": [
-    "Tol",
-    "the daily",
-    "chrome-peace"
-  ],
+  "aliases": [],
   "category": "medical",
   "subcategory": "augment rejection suppressor",
   "manufacturer": "Novafold Pharmaceuticals",
@@ -29,12 +25,12 @@
   "addiction_risk": "none",
   "tier_availability": "All tiers",
   "legality": "prescription",
-  "street_price": "\u03A612\u2013\u03A640 per week depending on formulation",
-  "cultural_context": "Tolerex or a generic equivalent is taken by the majority of augmented adults in GLMZ \u2014 estimates suggest 60\u201370% of the population. It is so mundane it has no mystique. Shelf dwellers buy gray-market generics cut with filler; Spire residents get custom-compounded monthly infusions. Missing your Tol is a social embarrassment, like forgetting to eat. Street medics keep it in bulk.",
+  "street_price": "Φ12–Φ40 per week depending on formulation",
+  "cultural_context": "Tolerex or a generic equivalent is taken by the majority of augmented adults in GLMZ — estimates suggest 60–70% of the population. It is so mundane it has no mystique. Shelf dwellers buy gray-market generics cut with filler; Spire residents get custom-compounded monthly infusions. Missing your Tol is a social embarrassment, like forgetting to eat. Street medics keep it in bulk.",
   "story_hooks": [
-    "A Shelf chemist has been selling counterfeit Tolerex \u2014 identical packaging, inert filler \u2014 and a wave of rejection cases is hitting Tier 1 clinics, but tracing the supply chain means confronting someone who has protection from above.",
-    "A corporate runner discovers their employer has been quietly substituting their Tolerex with a proprietary formulation that also logs biometric data through their chrome \u2014 every heartbeat, every location, every stress response.",
-    "Someone is hoarding Tolerex ahead of a predicted supply disruption, and the price spike on the Shelf is already killing people who can\u0027t afford to skip doses."
+    "A Shelf chemist has been selling counterfeit Tolerex — identical packaging, inert filler — and a wave of rejection cases is hitting Tier 1 clinics, but tracing the supply chain means confronting someone who has protection from above.",
+    "A corporate runner discovers their employer has been quietly substituting their Tolerex with a proprietary formulation that also logs biometric data through their chrome — every heartbeat, every location, every stress response.",
+    "Someone is hoarding Tolerex ahead of a predicted supply disruption, and the price spike on the Shelf is already killing people who can't afford to skip doses."
   ],
   "tags": []
 }

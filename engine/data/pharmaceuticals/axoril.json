@@ -2,18 +2,14 @@
   "id": "019d7850c695751a81100fad75ef91f8",
   "name": "Axoril",
   "type": "pharmaceutical",
-  "aliases": [
-    "tuner",
-    "dial-in",
-    "smooth"
-  ],
+  "aliases": [],
   "category": "medical",
   "subcategory": "BCI calibration aid",
   "manufacturer": "Lazarus Pharmaceuticals",
-  "description": "A precision neuromodulator that temporarily optimizes the electrochemical environment at BCI interface nodes, improving signal fidelity between neural tissue and digital hardware. Axoril is used before demanding BCI tasks \u2014 high-precision surgical telepresence, combat operations, complex data architecture work \u2014 to minimize latency, reduce signal noise, and improve the subjective quality of the neural-digital connection. It does not enhance capability so much as remove friction.",
+  "description": "A precision neuromodulator that temporarily optimizes the electrochemical environment at BCI interface nodes, improving signal fidelity between neural tissue and digital hardware. Axoril is used before demanding BCI tasks — high-precision surgical telepresence, combat operations, complex data architecture work — to minimize latency, reduce signal noise, and improve the subjective quality of the neural-digital connection. It does not enhance capability so much as remove friction.",
   "method_of_use": "sublingual",
   "effects": [
-    "reduces BCI signal latency by 15\u201330%",
+    "reduces BCI signal latency by 15–30%",
     "decreases neural noise at interface nodes",
     "improves sensory fidelity of digital inputs",
     "sharpens motor precision in BCI-assisted tasks",
@@ -22,20 +18,20 @@
   "side_effects": [
     "hyperfocus that can narrow attention problematically",
     "mild tremor in hands post-dose as drug clears",
-    "dysphoria if used without active BCI engagement \u2014 the calibration has nowhere to go",
+    "dysphoria if used without active BCI engagement — the calibration has nowhere to go",
     "habituation with daily use reduces effectiveness",
     "rare: interface node hypersensitivity causing pain during signal spikes"
   ],
-  "duration": "4\u20136 hours",
+  "duration": "4–6 hours",
   "addiction_risk": "moderate",
   "tier_availability": "Tier 2-3",
   "legality": "prescription",
-  "street_price": "\u03A660\u2013\u03A6120 per dose",
-  "cultural_context": "Axoril is the professional\u0027s drug \u2014 taken before a big job, a critical shift, a high-stakes negotiation conducted over BCI. It\u0027s common enough in Tier 3 corporate environments that refusing it before a major presentation is considered eccentric. The moderate addiction risk is understated in Lazarus\u0027s literature; users who tune in with Axoril regularly find unassisted BCI use feels clunky and distant by comparison. Some combat-augmented Tier 1 operators take it before jobs and can\u0027t afford to stop.",
+  "street_price": "Φ60–Φ120 per dose",
+  "cultural_context": "Axoril is the professional's drug — taken before a big job, a critical shift, a high-stakes negotiation conducted over BCI. It's common enough in Tier 3 corporate environments that refusing it before a major presentation is considered eccentric. The moderate addiction risk is understated in Lazarus's literature; users who tune in with Axoril regularly find unassisted BCI use feels clunky and distant by comparison. Some combat-augmented Tier 1 operators take it before jobs and can't afford to stop.",
   "story_hooks": [
-    "A corporate saboteur has replaced the Axoril supply in a rival company\u0027s executive suite with a lookalike that causes subtle signal distortion instead \u2014 every BCI-assisted decision made by those executives for the past month has been compromised.",
-    "A Shelf hacker has developed a physical dependency on Axoril and is taking increasingly dangerous jobs to fund the habit, each one requiring better BCI performance \u2014 and therefore more Axoril.",
-    "Lazarus is quietly funding research suggesting Axoril\u0027s addiction risk is negligible, while their internal data shows it\u0027s significantly higher than disclosed \u2014 someone has a copy of that internal data."
+    "A corporate saboteur has replaced the Axoril supply in a rival company's executive suite with a lookalike that causes subtle signal distortion instead — every BCI-assisted decision made by those executives for the past month has been compromised.",
+    "A Shelf hacker has developed a physical dependency on Axoril and is taking increasingly dangerous jobs to fund the habit, each one requiring better BCI performance — and therefore more Axoril.",
+    "Lazarus is quietly funding research suggesting Axoril's addiction risk is negligible, while their internal data shows it's significantly higher than disclosed — someone has a copy of that internal data."
   ],
   "tags": []
 }

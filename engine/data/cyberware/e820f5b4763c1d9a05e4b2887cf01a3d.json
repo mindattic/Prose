@@ -4,13 +4,7 @@
   "brand_name": "NeuralPath",
   "product_name": "LinkGuard",
   "type": "cyberware",
-  "aliases": [
-    "the Guard",
-    "civlock",
-    "paper chip",
-    "the leash",
-    "ID iron"
-  ],
+  "aliases": [],
   "category": "bci",
   "body_location": "cranial",
   "description": "The NeuralPath LinkGuard is a civic-compliance-focused consumer BCI developed in partnership with the GLMZ Municipal Authority, providing hardened identity verification, benefits disbursement integration, healthcare record linkage, tax reporting, and a tamper-evident civic credential layer on top of a functional but deliberately modest general-purpose neural mesh. Its core mesh operates at 2.8 Gbps with eight AR overlay channels, standard messaging, and payment integration, but the device's distinguishing architecture is its Civic Anchor Module — a secondary node in the temporal lobe that maintains a continuous encrypted handshake with municipal infrastructure, flagging any tampering attempt to automated enforcement systems within 11 seconds. The handshake is legally required for all recipients of municipal housing assistance, healthcare subsidies, and social income supplements, making installation effectively mandatory for a large portion of the Tier 2 population.",

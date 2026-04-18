@@ -2,39 +2,36 @@
   "id": "019d7850c6df728bac6ec254f2d6b604",
   "name": "Synveil",
   "type": "pharmaceutical",
-  "aliases": [
-    "Twinning",
-    "Meshwire"
-  ],
+  "aliases": [],
   "category": "augment_interactive",
   "subcategory": "synth_sync_compound",
   "manufacturer": "Helix Biosystems",
-  "description": "A proprietary neuroactive compound that temporarily synchronizes the BCI and augment sensory outputs of two or more individuals within close proximity, creating a shared sensory loop where tactile, proprioceptive, and augment-mediated inputs are experienced by all linked parties simultaneously. Helix markets a restricted clinical version for physical rehabilitation and couples therapy; the street version is unregulated and lacks the clinical version\u0027s safety limiters. At full synchronization, users don\u0027t just feel what the other person feels \u2014 they feel it through their augments, which amplifies and distorts the input in unpredictable ways.",
+  "description": "A proprietary neuroactive compound that temporarily synchronizes the BCI and augment sensory outputs of two or more individuals within close proximity, creating a shared sensory loop where tactile, proprioceptive, and augment-mediated inputs are experienced by all linked parties simultaneously. Helix markets a restricted clinical version for physical rehabilitation and couples therapy; the street version is unregulated and lacks the clinical version's safety limiters. At full synchronization, users don't just feel what the other person feels — they feel it through their augments, which amplifies and distorts the input in unpredictable ways.",
   "method_of_use": "injection",
   "effects": [
     "Full sensory synchronization between linked individuals",
-    "Shared proprioceptive awareness \u2014 you feel your partner\u0027s body position as your own",
+    "Shared proprioceptive awareness — you feel your partner's body position as your own",
     "Augment outputs (strength, sensory data, haptic feedback) shared across the link",
-    "Emotional bleed \u2014 strong emotions in one user register physically in the other",
+    "Emotional bleed — strong emotions in one user register physically in the other",
     "Tactical coordination benefit: linked combatants react as a single organism"
   ],
   "side_effects": [
     "Identity dissolution at high doses or long durations",
     "Sensory overload if one linked party is injured",
     "Difficulty distinguishing self from partner post-use (hours to days)",
-    "Rare cases of permanent partial sync \u2014 ongoing intrusive sensory bleed",
+    "Rare cases of permanent partial sync — ongoing intrusive sensory bleed",
     "Augment incompatibility can cause feedback loops and localized electrical burns"
   ],
   "duration": "45-90 minutes",
   "addiction_risk": "high",
   "tier_availability": "Tier 2-3",
   "legality": "restricted",
-  "street_price": "\u03A6 400-600 per pair",
-  "cultural_context": "The clinical version, sold under the Helix brand with a prescription, is used in rehabilitation clinics to help amputees bond with new chrome and in couples therapy as an intimacy tool. The street version, called \u0027Twinning,\u0027 is the drug of choice for a particular subculture that considers the dissolution of individual identity to be a spiritual experience. Tactically, small combat units have begun using it for coordination that no comm system can match \u2014 the risk is that if one member takes a critical hit, the shared pain can incapacitate the whole group.",
+  "street_price": "Φ 400-600 per pair",
+  "cultural_context": "The clinical version, sold under the Helix brand with a prescription, is used in rehabilitation clinics to help amputees bond with new chrome and in couples therapy as an intimacy tool. The street version, called 'Twinning,' is the drug of choice for a particular subculture that considers the dissolution of individual identity to be a spiritual experience. Tactically, small combat units have begun using it for coordination that no comm system can match — the risk is that if one member takes a critical hit, the shared pain can incapacitate the whole group.",
   "story_hooks": [
-    "Two street soldiers used Twinning so frequently over six months that they are now experiencing permanent partial sync \u2014 they feel each other\u0027s pain, hunger, and arousal at all times and are slowly going mad, seeking anyone who can reverse it.",
-    "A Helix executive is secretly funding a Synveil research program that goes far beyond the clinical application \u2014 attempting to create a permanent multi-person sync network of loyal operatives who share a hive-like tactical consciousness.",
-    "A black-market Synveil session goes wrong when one of the linked users is remotely assassinated mid-sync, and the other three participants experience the death \u2014 and may have absorbed a fragment of the dead person\u0027s BCI data, including information someone very powerful wants erased."
+    "Two street soldiers used Twinning so frequently over six months that they are now experiencing permanent partial sync — they feel each other's pain, hunger, and arousal at all times and are slowly going mad, seeking anyone who can reverse it.",
+    "A Helix executive is secretly funding a Synveil research program that goes far beyond the clinical application — attempting to create a permanent multi-person sync network of loyal operatives who share a hive-like tactical consciousness.",
+    "A black-market Synveil session goes wrong when one of the linked users is remotely assassinated mid-sync, and the other three participants experience the death — and may have absorbed a fragment of the dead person's BCI data, including information someone very powerful wants erased."
   ],
   "tags": []
 }

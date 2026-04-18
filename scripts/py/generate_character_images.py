@@ -1,13 +1,13 @@
 """
-Character Image Generator — DALL-E 3 prompts + images for people/
+Character Image Generator -- DALL-E 3 prompts + images for people/
 
 Two-phase pipeline per character:
-  Phase 1 — Prompt: if dalle3_prompt is empty, call Claude to write one
+  Phase 1 -- Prompt: if dalle3_prompt is empty, call Claude to write one
              using Kyle's prompt as the gold-standard few-shot example.
              Saves dalle3_prompt back to the JSON file.
-  Phase 2 — Image: if no image file exists ({id}.00.png), call DALL-E 3
+  Phase 2 -- Image: if no image file exists ({id}.00.png), call DALL-E 3
              and save the result to engine/data/media/{id}.00.png.
-  Phase 3 — CCTV: probabilistically generate a B&W surveillance-cam still
+  Phase 3 -- CCTV: probabilistically generate a B&W surveillance-cam still
              (higher probability for criminal/low-tier characters).
              Saves cctv_prompt to the JSON file for resume-safety.
 
@@ -46,11 +46,11 @@ from constants import ANTHROPIC_API_KEY, DATA_DIR
 
 console = Console(legacy_windows=False)
 
-# ── Config ────────────────────────────────────────────────────────────────────
+# -- Config --------------------------------------------------------------------
 OPENAI_API_KEY = os.getenv("SS_OPENAI_API_KEY") or os.getenv("OPENAI_API_KEY", "")
 PEOPLE_DIR = Path(DATA_DIR) / "people"
 MEDIA_DIR = Path(DATA_DIR) / "media"
-CONCURRENCY = int(os.getenv("CONCURRENCY", "5"))  # conservative — DALL-E rate limits
+CONCURRENCY = int(os.getenv("CONCURRENCY", "5"))  # conservative -- DALL-E rate limits
 
 DALLE_MODEL = "gpt-image-1"
 DALLE_SIZE = "1024x1536"   # portrait aspect (gpt-image-1 supported size)
@@ -58,10 +58,10 @@ DALLE_QUALITY = "high"
 
 CLAUDE_MODEL = os.getenv("MODEL", "claude-sonnet-4-6")
 
-# ── CCTV probabilities ────────────────────────────────────────────────────────
+# -- CCTV probabilities --------------------------------------------------------
 # Base: ~20% of all characters get a CCTV still
-# Criminal-adjacent: ~65% — gang members, enforcers, smugglers, etc.
-# Low-tier only: ~40% — independent/street-level without criminal ties
+# Criminal-adjacent: ~65% -- gang members, enforcers, smugglers, etc.
+# Low-tier only: ~40% -- independent/street-level without criminal ties
 CCTV_BASE_PROB       = 0.20
 CCTV_CRIMINAL_PROB   = 0.65
 CCTV_LOW_TIER_PROB   = 0.40
@@ -97,7 +97,7 @@ CCTV_SECTORS = [
 ]
 
 
-# ── Tier 1 prompt suffix — standardised cyberpunk aesthetic ──────────────────
+# -- Tier 1 prompt suffix -- standardised cyberpunk aesthetic ------------------
 # Appended to every dalle3_prompt for Tier 1 characters so their images
 # share a consistent environment, lighting, mood and camera style.
 _TIER1_ACTION_DRY  = "walking forward through narrow neon-lit alley, subtle motion blur, shallow depth of field"
@@ -133,19 +133,19 @@ def _apply_tier1_suffix(prompt: str) -> str:
     return prompt.rstrip() + f"\n\n{action}" + _TIER1_SUFFIX_BODY
 
 
-# ── Kyle's gold-standard data (few-shot anchor) ───────────────────────────────
+# -- Kyle's gold-standard data (few-shot anchor) -------------------------------
 KYLE_SUMMARY = """\
 Name: Kyle Ellen Corbin-Vasik
 Gender: male | Age: 27
-Role: Protagonist — freelance enforcer, facility survivor, the Street Samurai
+Role: Protagonist -- freelance enforcer, facility survivor, the Street Samurai
 Physical:
   Heritage: Eastern European / Pacific Islander
-  Build: Lean, ropey muscle — survival-built. Narrow hips, long arms, speed over power.
-  Hair: Dark brown, short on sides, longer on top, pushed back, perpetually uneven — cuts it himself.
-  Eyes: Grey-green — left iris has a faint gold ring (NeoCortex optic thread bleed).
+  Build: Lean, ropey muscle -- survival-built. Narrow hips, long arms, speed over power.
+  Hair: Dark brown, short on sides, longer on top, pushed back, perpetually uneven -- cuts it himself.
+  Eyes: Grey-green -- left iris has a faint gold ring (NeoCortex optic thread bleed).
   Skin: Olive-tan, weathered. Faint acne scarring along jawline. Uneven texture near temples.
   Marks: Keloid surgical scar behind left ear. Micro-scarring on forearms. Pale chemical burn on right palm.
-  Augmentations: None visible — NeoCortex is subcutaneous. Faint trace lines at temples if you know to look.
+  Augmentations: None visible -- NeoCortex is subcutaneous. Faint trace lines at temples if you know to look.
   Posture: Still when standing, efficient when moving. No wasted motion. Eyes track corners before people.
   Clothing: Worn dark leather jacket over ballistic underlayer, cargo pants, resoled boots, carbon-black katana across back."""
 
@@ -170,21 +170,21 @@ style: photorealistic but grounded, NOT idealized, NOT symmetrical, NOT model-li
 
 camera: 50mm lens, eye-level, natural perspective, slight imperfections in skin texture, visible pores"""
 
-# ── System prompt for Claude ──────────────────────────────────────────────────
+# -- System prompt for Claude --------------------------------------------------
 CLAUDE_SYSTEM = f"""\
 You write DALL-E 3 image prompts for characters in a near-future cyberpunk worldbuilding project set in the Great Lakes Metropolitan Zone (GLMZ), 2226.
 
 WORLD RULES:
-- Mixed global heritage is the norm (Ubiquitous Diaspora) — no character is a single ethnicity
-- Tier 1 = low-income laborers and street workers — worn, weathered clothing
-  Tier 2 = working class — functional but not prosperous
-  Tier 3-4 = professional/middle class — some corporate identity
-  Tier 5 = corporate elite — expensive, curated
-- Augmentations: only describe what is visibly external. Cybernetic eyes are subtle iris irregularities or unusual color — NOT camera lenses, NOT glowing orbs. Neural implants are faint trace lines at the temple — NOT ports or glowing hardware. Augmentations look like medical hardware on a normal human body, not sci-fi props.
-- Characters are always in motion or a candid moment — walking, glancing, pausing. Never posed, never meditating, never staring at camera.
+- Mixed global heritage is the norm (Ubiquitous Diaspora) -- no character is a single ethnicity
+- Tier 1 = low-income laborers and street workers -- worn, weathered clothing
+  Tier 2 = working class -- functional but not prosperous
+  Tier 3-4 = professional/middle class -- some corporate identity
+  Tier 5 = corporate elite -- expensive, curated
+- Augmentations: only describe what is visibly external. Cybernetic eyes are subtle iris irregularities or unusual color -- NOT camera lenses, NOT glowing orbs. Neural implants are faint trace lines at the temple -- NOT ports or glowing hardware. Augmentations look like medical hardware on a normal human body, not sci-fi props.
+- Characters are always in motion or a candid moment -- walking, glancing, pausing. Never posed, never meditating, never staring at camera.
 - Background: wet cyberpunk street, alley, or public space. Never a server room or sterile interior.
-- Do NOT make characters idealized or model-beautiful. Do NOT make faces symmetrical — real faces are asymmetrical and imperfect.
-- Avoid generic cyberpunk clichés: no glowing robotic eyes, no chrome arms, no holographic displays — unless explicitly in the character data.
+- Do NOT make characters idealized or model-beautiful. Do NOT make faces symmetrical -- real faces are asymmetrical and imperfect.
+- Avoid generic cyberpunk cliches: no glowing robotic eyes, no chrome arms, no holographic displays -- unless explicitly in the character data.
 
 PROMPT STRUCTURE (follow this format exactly):
 1. Opening line: genre/role, gender, age, build, skin tone, face character
@@ -192,7 +192,7 @@ PROMPT STRUCTURE (follow this format exactly):
 3. expression: line
 4. outfit: line (Tier 1 = worn/survival-grade, Tier 5 = expensive/curated)
 5. One action/pose sentence
-6. environment: line — cyberpunk street or alley
+6. environment: line -- cyberpunk street or alley
 7. lighting: line
 8. mood: line
 9. style: photorealistic but grounded, NOT idealized, NOT symmetrical, NOT model-like, avoid beauty standards
@@ -211,14 +211,14 @@ OUTPUT DALL-E 3 PROMPT:
 Now generate a DALL-E 3 prompt for the character provided. Return ONLY the prompt text, no explanation, no code fences, no preamble."""
 
 
-# ── Helpers ───────────────────────────────────────────────────────────────────
+# -- Helpers -------------------------------------------------------------------
 
 def strip_mj_params(prompt: str) -> str:
     """Remove Midjourney-style parameters (--ar, --v, etc.) that DALL-E rejects."""
     return re.sub(r"\s*--\w[\w-]*(?:\s+\S+)?", "", prompt).strip()
 
 
-# ── Safety sanitizer — applied on 400 content-policy rejection ───────────────
+# -- Safety sanitizer -- applied on 400 content-policy rejection ---------------
 # Replaces specific weapon holds and explicit violence descriptors that reliably
 # trigger DALL-E's safety rewriter, while preserving the visual aesthetic.
 
@@ -234,7 +234,7 @@ _SAFETY_EXACT = [
     ("holding knife",                     "hand at side"),
     ("holding a blade",                   "hand at side"),
     ("drawn weapon",                      "tactical stance"),
-    # Weapon on body — soften but keep visual
+    # Weapon on body -- soften but keep visual
     ("carbon-black katana strapped across back", "long case strapped across back"),
     ("katana strapped across back",        "long case strapped across back"),
     ("katana across back",                 "long case across back"),
@@ -339,7 +339,7 @@ def build_character_summary(data: dict) -> str:
     return "\n".join(lines)
 
 
-# ── CCTV helpers ──────────────────────────────────────────────────────────────
+# -- CCTV helpers --------------------------------------------------------------
 
 def _is_criminal_adjacent(data: dict) -> bool:
     aff  = (data.get("affiliation") or "").lower()
@@ -417,7 +417,7 @@ def build_cctv_prompt(data: dict, dalle3_prompt: str) -> str:
     return ", ".join(filter(None, parts))
 
 
-# ── Phase 1: Generate dalle3_prompt via Claude ────────────────────────────────
+# -- Phase 1: Generate dalle3_prompt via Claude --------------------------------
 
 async def generate_dalle3_prompt(data: dict, client, semaphore) -> str | None:
     import anthropic
@@ -449,7 +449,7 @@ async def generate_dalle3_prompt(data: dict, client, semaphore) -> str | None:
     return None
 
 
-# ── Phase 2 / 3: Generate image via DALL-E 3 ─────────────────────────────────
+# -- Phase 2 / 3: Generate image via DALL-E 3 ---------------------------------
 
 async def _call_dalle(prompt: str, http_client: httpx.AsyncClient) -> tuple[bytes | None, str | None]:
     """Single DALL-E call. Returns (image_bytes, None) on success or (None, err_msg) on failure."""
@@ -488,7 +488,7 @@ async def generate_image(entity_id: str, prompt: str, http_client: httpx.AsyncCl
     clean_prompt = base_prompt
 
     async with semaphore:
-        # ── Attempt 1: original prompt ────────────────────────────────
+        # -- Attempt 1: original prompt --------------------------------
         for attempt in range(2):
             img_bytes, err = await _call_dalle(clean_prompt, http_client)
             if img_bytes:
@@ -501,22 +501,22 @@ async def generate_image(entity_id: str, prompt: str, http_client: httpx.AsyncCl
                 continue
             break
 
-        # ── Attempt 2: safety rejection — sanitize then retry ─────────
+        # -- Attempt 2: safety rejection -- sanitize then retry ---------
         if img_bytes is None and err and "safety" in err.lower():
             sanitized = sanitize_for_safety(clean_prompt)
             if sanitized != clean_prompt:
-                console.print(f"  [yellow]Safety filter hit — retrying with sanitized prompt[/yellow]")
+                console.print(f"  [yellow]Safety filter hit -- retrying with sanitized prompt[/yellow]")
                 img_bytes, err = await _call_dalle(sanitized, http_client)
             else:
-                # Nothing to sanitize — retry once more as-is (sometimes passes)
-                console.print(f"  [yellow]Safety filter hit — bare retry[/yellow]")
+                # Nothing to sanitize -- retry once more as-is (sometimes passes)
+                console.print(f"  [yellow]Safety filter hit -- bare retry[/yellow]")
                 img_bytes, err = await _call_dalle(clean_prompt, http_client)
 
-        # ── Final failure ─────────────────────────────────────────────
+        # -- Final failure ---------------------------------------------
         if img_bytes is None:
             if err and "safety" in (err or "").lower():
                 _log_safety_rejection(entity_id, char_name, base_prompt)
-                console.print(f"  [red]Safety rejected {entity_id} ({char_name}) — logged to safety_rejected.json[/red]")
+                console.print(f"  [red]Safety rejected {entity_id} ({char_name}) -- logged to safety_rejected.json[/red]")
             else:
                 console.print(f"  [red]DALL-E failed for {entity_id}: {err}[/red]")
             return False
@@ -530,7 +530,7 @@ async def generate_image(entity_id: str, prompt: str, http_client: httpx.AsyncCl
 
 
 def _save_field(filepath: str, **fields) -> None:
-    """Merge fields into the JSON file on disk (read → update → write)."""
+    """Merge fields into the JSON file on disk (read -> update -> write)."""
     with open(filepath, "r", encoding="utf-8") as f:
         on_disk = json.load(f)
     on_disk.update(fields)
@@ -538,7 +538,7 @@ def _save_field(filepath: str, **fields) -> None:
         json.dump(on_disk, f, indent=2, ensure_ascii=False)
 
 
-# ── Main pipeline ─────────────────────────────────────────────────────────────
+# -- Main pipeline -------------------------------------------------------------
 
 async def process_character(filepath: str, args, claude_client, http_client,
                             prompt_sem, image_sem) -> dict:
@@ -580,10 +580,10 @@ async def process_character(filepath: str, args, claude_client, http_client,
         result["skipped"] = True
         return result
 
-    # ── Phase 1: Prompt ───────────────────────────────────────────────────────
+    # -- Phase 1: Prompt -------------------------------------------------------
     if (not existing_prompt or args.force) and not prompt_protected:
         if not args.image_only and not args.dry_run:
-            console.print(f"  Writing prompt for [cyan]{name}[/cyan]…")
+            console.print(f"  Writing prompt for [cyan]{name}[/cyan]...")
             new_prompt = await generate_dalle3_prompt(data, claude_client, prompt_sem)
             if new_prompt:
                 _save_field(filepath, dalle3_prompt=new_prompt)
@@ -592,23 +592,23 @@ async def process_character(filepath: str, args, claude_client, http_client,
         elif args.dry_run:
             console.print(f"  [yellow]DRY RUN[/yellow] would write prompt for [cyan]{name}[/cyan]")
 
-    # ── Phase 2: Main image ───────────────────────────────────────────────────
+    # -- Phase 2: Main image ---------------------------------------------------
     if existing_prompt and (not img_exists or args.force):
         if not args.prompt_only and not args.dry_run:
             if not OPENAI_API_KEY:
-                console.print("  [red]No OpenAI API key — set SS_OPENAI_API_KEY or OPENAI_API_KEY[/red]")
+                console.print("  [red]No OpenAI API key -- set SS_OPENAI_API_KEY or OPENAI_API_KEY[/red]")
             else:
-                console.print(f"  Generating image for [cyan]{name}[/cyan]…")
+                console.print(f"  Generating image for [cyan]{name}[/cyan]...")
                 ok = await generate_image(entity_id, existing_prompt, http_client, image_sem, char_name=name)
                 result["image_saved"] = ok
         elif args.dry_run:
             console.print(f"  [yellow]DRY RUN[/yellow] would generate image for [cyan]{name}[/cyan]")
 
-    # ── Phase 3: CCTV surveillance still (suspended — requires explicit --cctv flag) ──
+    # -- Phase 3: CCTV surveillance still (suspended -- requires explicit --cctv flag) --
     if args.cctv and needs_cctv and (result["image_saved"] or has_image(entity_id)):
         cctv_prompt = build_cctv_prompt(data, existing_prompt)
         if not args.dry_run and OPENAI_API_KEY:
-            console.print(f"  Generating CCTV still for [cyan]{name}[/cyan]…")
+            console.print(f"  Generating CCTV still for [cyan]{name}[/cyan]...")
             ok = await generate_image(entity_id, cctv_prompt, http_client, image_sem, char_name=name + " [CCTV]")
             if ok:
                 _save_field(filepath, cctv_prompt=cctv_prompt)
@@ -683,11 +683,11 @@ async def run(args):
     console.print(f"  DALL-E model:   {DALLE_MODEL}  size={DALLE_SIZE}  quality={DALLE_QUALITY}")
     console.print(f"  OpenAI key:     {'SET' if OPENAI_API_KEY else '[red]MISSING[/red]'}")
     if args.cctv:
-        console.print(f"  [cyan]CCTV pass enabled[/cyan] — eligible chars without CCTV will get one")
+        console.print(f"  [cyan]CCTV pass enabled[/cyan] -- eligible chars without CCTV will get one")
     if args.no_cctv:
         console.print(f"  [dim]CCTV generation disabled[/dim]")
     if args.dry_run:
-        console.print("[yellow]  DRY RUN — no API calls[/yellow]")
+        console.print("[yellow]  DRY RUN -- no API calls[/yellow]")
 
     MEDIA_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -738,10 +738,16 @@ def main():
     parser.add_argument("--tier", type=str, default=None,
                         help="Only process characters of this tier (e.g. --tier 1 or --tier 1,2)")
     parser.add_argument("--cctv", action="store_true",
-                        help="Retroactive CCTV pass — add CCTV still to chars that already have a main image but no cctv_prompt")
+                        help="Retroactive CCTV pass -- add CCTV still to chars that already have a main image but no cctv_prompt")
     parser.add_argument("--no-cctv", action="store_true", dest="no_cctv",
                         help="Skip CCTV generation entirely this run")
+    parser.add_argument("--silent", action="store_true", help="Suppress all console output")
     args = parser.parse_args()
+    if args.silent:
+        import sys as _sys, os as _os
+        _sys.stdout = open(_os.devnull, "w")
+        _sys.stderr = open(_os.devnull, "w")
+
 
     if not ANTHROPIC_API_KEY and not args.image_only:
         console.print("[red]ANTHROPIC_API_KEY not set[/red]")

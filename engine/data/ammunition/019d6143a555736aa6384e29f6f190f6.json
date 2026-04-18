@@ -2,12 +2,7 @@
   "id": "019d6143a555736aa6384e29f6f190f6",
   "name": "4mm Piezoelectric Crystal-Array Dart PCA-4",
   "type": "ammunition",
-  "aliases": [
-    "Hairline dart",
-    "PCA-4",
-    "Fracture needle",
-    "Crystal dart"
-  ],
+  "aliases": [],
   "category": "dart",
   "caliber": "4mm",
   "description": "The PCA-4 is a compressed-gas-propelled micro-dart for the PFP-7 'Hairline' platform, uniquely designed not to damage the target directly but to propagate stress fractures in whatever material the dart embeds in. Each dart contains a miniaturized piezoelectric crystal array that, upon impact, generates a precisely tuned vibrational frequency matched to the target material's resonance profile. The result is a network of micro-fractures that radiate outward from the impact point, weakening the structural integrity of the target without producing visible damage.\n\nThe dart's crystal array is programmable via 12 pre-loaded material profiles — concrete, steel, composite armor, ceramic, bone, glass, and six other common structural materials — plus a custom profile upload port that allows operators to program specific resonance frequencies for unusual targets. When the dart strikes a target, the onboard processor identifies the material contact (via impedance feedback from the crystal tips) and selects the optimal resonance frequency. The piezoelectric array then vibrates at this frequency for up to 2.4 milliseconds, propagating stress fractures along the material's natural grain structure.\n\nThe darts are loaded in 20-round rotary cassettes with individual sealing to protect the crystal arrays from contamination. The compressed-gas propulsion system produces minimal acoustic signature and no muzzle flash, making the PFP-7 and PCA-4 combination a favored sabotage tool. The darts themselves are small enough to go unnoticed in their target — a dart embedded in a structural beam or armor panel continues to weaken the material over time as ambient vibration interacts with the fracture network, potentially causing delayed structural failure hours or days after the initial shot.",

@@ -2,27 +2,23 @@
   "id": "019d7850c6cb717d993fd3a256b3a220",
   "name": "Phantex",
   "type": "pharmaceutical",
-  "aliases": [
-    "Archon",
-    "the Frame",
-    "Structured"
-  ],
+  "aliases": [],
   "category": "recreational",
   "subcategory": "BCI-synced hallucinogen / structured trip compound",
   "manufacturer": "Helix Biosystems",
-  "description": "Phantex is a novel psychedelic compound engineered specifically for BCI interaction \u2014 unlike classical hallucinogens that produce chaotic visual noise, Phantex syncs with the user\u0027s neural interface to generate coherent, navigable hallucinated environments. The BCI acts as a scaffolding system, giving the hallucination architecture and internal logic. Users describe it as \u0027a dream you can steer.\u0027 Without a BCI, Phantex produces a disorienting and unpleasant classical hallucinogenic experience.",
+  "description": "Phantex is a novel psychedelic compound engineered specifically for BCI interaction — unlike classical hallucinogens that produce chaotic visual noise, Phantex syncs with the user's neural interface to generate coherent, navigable hallucinated environments. The BCI acts as a scaffolding system, giving the hallucination architecture and internal logic. Users describe it as 'a dream you can steer.' Without a BCI, Phantex produces a disorienting and unpleasant classical hallucinogenic experience.",
   "method_of_use": "sublingual",
   "effects": [
     "BCI-scaffolded immersive hallucinations with internal narrative logic",
     "Access to symbolic or archetypal inner landscapes",
     "Profound insight experiences within the hallucinated space",
-    "Sense of communicating with aspects of one\u0027s own cognition personified",
-    "Emotional processing through symbolic encounter \u2014 users work through trauma in hallucinated metaphor"
+    "Sense of communicating with aspects of one's own cognition personified",
+    "Emotional processing through symbolic encounter — users work through trauma in hallucinated metaphor"
   ],
   "side_effects": [
     "Without BCI: chaotic and distressing unstructured hallucinations",
     "BCI integration errors can corrupt the hallucination into a feedback loop",
-    "Reality-anchoring difficulty post-experience \u2014 residual hallucinated elements persist",
+    "Reality-anchoring difficulty post-experience — residual hallucinated elements persist",
     "Risk of encountering genuinely distressing symbolic content",
     "In rare cases, Phantex has interfaced with BCI memory systems and surfaced repressed memories without consent"
   ],
@@ -30,12 +26,12 @@
   "addiction_risk": "low",
   "tier_availability": "Tier 3-4",
   "legality": "restricted",
-  "street_price": "\u03A6280 per dose",
-  "cultural_context": "Phantex has generated a subculture of \u0027Architects\u0027 \u2014 experienced users who have developed expertise in navigating and shaping their hallucinated environments. Architect guides charge significant fees to accompany first-time users through their experience. In Tier 4, therapeutic Phantex sessions with licensed Architects are a fashionable form of self-development. On the Shelf, black-market doses without BCI compatibility warnings have caused genuine psychotic breaks among users with cheap or unstable interfaces.",
+  "street_price": "Φ280 per dose",
+  "cultural_context": "Phantex has generated a subculture of 'Architects' — experienced users who have developed expertise in navigating and shaping their hallucinated environments. Architect guides charge significant fees to accompany first-time users through their experience. In Tier 4, therapeutic Phantex sessions with licensed Architects are a fashionable form of self-development. On the Shelf, black-market doses without BCI compatibility warnings have caused genuine psychotic breaks among users with cheap or unstable interfaces.",
   "story_hooks": [
-    "An Architect guide has been leading clients into a specific hallucinated location \u2014 a place she calls \u0027the Library\u0027 \u2014 that multiple unconnected clients are independently reporting in identical detail, which should be impossible",
-    "A Phantex batch has been interfacing with BCI memory systems and surfacing classified corporate data from users who were previously employed by Lazarus \u2014 someone engineered this deliberately, and Lazarus wants those users silenced",
-    "A Phantex user emerged from his session claiming to have met something in the hallucinated space that was not a product of his own mind \u2014 and the BCI log from his session shows external data access that no one can explain"
+    "An Architect guide has been leading clients into a specific hallucinated location — a place she calls 'the Library' — that multiple unconnected clients are independently reporting in identical detail, which should be impossible",
+    "A Phantex batch has been interfacing with BCI memory systems and surfacing classified corporate data from users who were previously employed by Lazarus — someone engineered this deliberately, and Lazarus wants those users silenced",
+    "A Phantex user emerged from his session claiming to have met something in the hallucinated space that was not a product of his own mind — and the BCI log from his session shows external data access that no one can explain"
   ],
   "tags": []
 }

@@ -2,25 +2,21 @@
   "id": "019d7850c6cb7a25ae244a2b4b5cd6c2",
   "name": "Pitbull",
   "type": "pharmaceutical",
-  "aliases": [
-    "bull",
-    "the dog",
-    "red dog"
-  ],
+  "aliases": [],
   "category": "street_concoction",
-  "subcategory": "bathtub stimulant \u2014 combat focus",
-  "manufacturer": "Originally developed for Shelf gang enforcers; currently produced by multiple cooks, most notably a Shelf operation called \u0027the Kennel\u0027",
-  "description": "A crude but effective combat stimulant combining stolen epinephrine, a synthetic testosterone analogue cooked from industrial precursors, and a pain-suppressing compound derived from repurposed veterinary analgesics. Designed explicitly to make people fight harder and feel less \u2014 and it works. Users experience dramatically reduced pain response and heightened aggression for a focused window of time.",
+  "subcategory": "bathtub stimulant — combat focus",
+  "manufacturer": "Originally developed for Shelf gang enforcers; currently produced by multiple cooks, most notably a Shelf operation called 'the Kennel'",
+  "description": "A crude but effective combat stimulant combining stolen epinephrine, a synthetic testosterone analogue cooked from industrial precursors, and a pain-suppressing compound derived from repurposed veterinary analgesics. Designed explicitly to make people fight harder and feel less — and it works. Users experience dramatically reduced pain response and heightened aggression for a focused window of time.",
   "method_of_use": "injection",
   "effects": [
     "pain suppression approaching anesthesia levels",
     "aggressive confidence and reduced fear response",
-    "significant physical performance enhancement \u2014 strength and speed",
+    "significant physical performance enhancement — strength and speed",
     "tunnel-vision focus on immediate physical task",
     "adrenaline-like cardiovascular surge"
   ],
   "side_effects": [
-    "cardiac stress during use \u2014 multiple documented heart attacks in users over 35",
+    "cardiac stress during use — multiple documented heart attacks in users over 35",
     "post-dose crash involves extreme pain as suppression wears off",
     "psychological aggression persisting hours after dose",
     "chronic use causes adrenal fatigue and hormonal disruption",
@@ -30,12 +26,12 @@
   "addiction_risk": "high",
   "tier_availability": "Tier 1-2",
   "legality": "illegal",
-  "street_price": "\u03A620-35 per dose",
-  "cultural_context": "Pitbull is the drug of Shelf violence \u2014 used by gang enforcers, underground fighters, and desperate people in dangerous situations. It has a reputation for making users dangerous beyond their normal capability, which is both the appeal and the terror. Shelf communities have mixed feelings: it\u0027s the reason certain people can protect their block, and it\u0027s the reason certain people become uncontrollable. Some users take it knowing they\u0027ll pay for the pain later, and do it anyway.",
+  "street_price": "Φ20-35 per dose",
+  "cultural_context": "Pitbull is the drug of Shelf violence — used by gang enforcers, underground fighters, and desperate people in dangerous situations. It has a reputation for making users dangerous beyond their normal capability, which is both the appeal and the terror. Shelf communities have mixed feelings: it's the reason certain people can protect their block, and it's the reason certain people become uncontrollable. Some users take it knowing they'll pay for the pain later, and do it anyway.",
   "story_hooks": [
-    "A Shelf enforcer on Pitbull killed three people including a bystander \u2014 now their gang is being pressured to hand them over, but the enforcer claims they don\u0027t remember it",
-    "Someone has been supplying Pitbull to increasingly young Shelf residents, and the source traces back to a gang that\u0027s deliberately destabilizing a district",
-    "An underground fight circuit has banned Pitbull after several deaths \u2014 but the ban is impossible to enforce, and a fixer needs to navigate the politics of Shelf combat sports"
+    "A Shelf enforcer on Pitbull killed three people including a bystander — now their gang is being pressured to hand them over, but the enforcer claims they don't remember it",
+    "Someone has been supplying Pitbull to increasingly young Shelf residents, and the source traces back to a gang that's deliberately destabilizing a district",
+    "An underground fight circuit has banned Pitbull after several deaths — but the ban is impossible to enforce, and a fixer needs to navigate the politics of Shelf combat sports"
   ],
   "tags": []
 }

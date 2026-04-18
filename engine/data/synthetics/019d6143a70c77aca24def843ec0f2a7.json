@@ -2,13 +2,7 @@
   "id": "019d6143a70c77aca24def843ec0f2a7",
   "type": "character",
   "name": "Uncle Noodle",
-  "aliases": [
-    "UN-7",
-    "The Noodle Man",
-    "that clanking thing on Level 5",
-    "Uncle",
-    "Flux Strömqvist-Villalobos"
-  ],
+  "aliases": [],
   "species": "robot",
   "gender": "none",
   "pronouns": "he/him (assigned by the Shelf's residents, accepted without comment)",
@@ -74,10 +68,10 @@
     },
     {
       "name": "Chen Wei-Lin",
-      "type": "neighbor / supply chain partner",
-      "description": "Mrs. Chen supplies Uncle Noodle with ingredients from her shop. Their relationship is a barter economy of food and favors that has operated without a single written agreement for fifteen years. She adjusts his treads when they wear. He saves her the first bowl every morning.",
-      "emotional_core": "Two fixtures of the Shelf recognizing each other's permanence",
-      "story_tension": "If either of them is displaced, the other loses their anchor"
+      "type": "fellow vendor / one-sided rivalry",
+      "description": "Uncle Noodle is aware that Mrs. Chen exists. He is aware that she also serves noodles. He considers this a happy coincidence — the Shelf is large and hungry enough for both of them. He saves her the first bowl every morning and leaves it at the corner of her block on his route. She has never acknowledged this. He continues anyway, operating on the principle that a bowl of soup refused is still a bowl of soup made with care. He has no concept that she considers him a professional insult. Her contempt does not compile for him.",
+      "emotional_core": "Uncomplicated goodwill aimed at someone who cannot stand him",
+      "story_tension": "Uncle Noodle's oblivious warmth toward Mrs. Chen is either the cruelest possible thing he could do to her or the kindest, depending on the day."
     },
     {
       "name": "Kyle",

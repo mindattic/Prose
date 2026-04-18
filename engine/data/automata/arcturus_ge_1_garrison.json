@@ -2,11 +2,7 @@
   "name": "Arcturus GE-1 'Garrison'",
   "type": "automaton",
   "classification": "Security",
-  "aliases": [
-    "Garrison",
-    "Gate Keeper",
-    "The Checkpoint"
-  ],
+  "aliases": [],
   "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
   "description": "The GE-1 is a vehicle checkpoint automaton — a pair of heavy bipedal units that flank a road or entrance, each standing 2.5 meters tall with integrated vehicle scanning systems and deployable road barriers. The paired units operate as a coordinated gate system: one scans approaching vehicles while the other manages the barrier. Vehicles are identified by license plate, RFID transponder, and occupant facial recognition through windshield-penetrating optical systems. Authorized vehicles pass without stopping. Unauthorized vehicles are halted by the barrier and subjected to secondary screening.\n\nThe GE-1's secondary screening is thorough and invasive. Ground-penetrating sensors check undercarriage compartments. Millimeter-wave imaging scans the vehicle interior. Chemical sniffers detect explosives, narcotics, and biological agents. The process takes ninety seconds and the vehicle occupants are required to remain inside with hands visible. The GE-1 units' size and armored appearance ensure compliance — they are designed to look like something that could tear a vehicle apart, because they can. Each unit carries a hydraulic claw arm capable of peeling open a car door like a tin can.\n\nArcturus deploys GE-1 pairs at corporate campus entrances, government facility checkpoints, and high-security district boundaries. They have replaced human-operated checkpoints almost entirely in Tier 4+ areas, primarily because they process vehicles faster, detect more contraband, and cannot be talked past, bribed, or intimidated. The GE-1 does not care who you are. It cares what the scan shows.",
   "tier_availability": "Tier 3-4",

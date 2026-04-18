@@ -2,11 +2,7 @@
   "name": "Crucible HS-2 'Hearth'",
   "type": "automaton",
   "classification": "Domestic",
-  "aliases": [
-    "Hearth",
-    "House Sitter",
-    "The Warden"
-  ],
+  "aliases": [],
   "manufacturer": "CRUCIBLE INDUSTRIES",
   "description": "The HS-2 is a home security and monitoring automaton — a wall-mounted unit resembling a large smoke detector that serves as the brain of a residential security system. It manages door locks, window sensors, motion detectors, and external cameras, providing consolidated alerts to the homeowner's personal device. Unlike standalone security systems, the HS-2 uses behavioral analysis to distinguish between routine household activity and genuine intrusion — it learns when you come home, when you leave, when the cleaning automaton runs its cycle, and stops alerting on predictable events.\n\nThe HS-2's value proposition is that it eliminates false alarms while maintaining vigilance. Traditional security systems in GLMZ generate so many false positives that most owners disable them within six months. The HS-2's false alarm rate is under two percent after its initial thirty-day learning period. When it alerts you, something is actually wrong. This reliability has made it Crucible's best-selling consumer product by a factor of three.\n\nThe HS-2 also serves as an entry point for Crucible's ecosystem. It coordinates with Crucible cleaning automata, maintenance units, and the CN-1 childcare platform, creating an integrated domestic management system. Critics note that this ecosystem lock-in means Crucible eventually controls every automated system in the home, with the HS-2 sitting at the center like a spider in a web — tracking, coordinating, and reporting everything that happens within the residence to a device that the homeowner controls but Crucible manufactured.",
   "tier_availability": "Tier 2",

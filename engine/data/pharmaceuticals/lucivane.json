@@ -2,15 +2,11 @@
   "id": "019d7850c6b77fb7833667cf5d4d48a6",
   "name": "Lucivane",
   "type": "pharmaceutical",
-  "aliases": [
-    "The Wheel",
-    "Architect",
-    "Sovra"
-  ],
+  "aliases": [],
   "category": "sleep_dream",
   "subcategory": "lucid_dream_enabler",
   "manufacturer": "Helix Biosystems",
-  "description": "Lucivane is a precision-targeted acetylcholine modulator combined with a proprietary SNT-derived signaling peptide that maintains a thin layer of meta-awareness during REM sleep, granting users full lucid control of their dreamscapes without waking them. Unlike crude early-generation lucid dream compounds, Lucivane preserves dream stability and prevents the common \u0027lucidity cascade\u0027 that collapses the dream state. Extended users develop the ability to construct elaborate persistent dream environments across multiple sleep sessions.",
+  "description": "Lucivane is a precision-targeted acetylcholine modulator combined with a proprietary SNT-derived signaling peptide that maintains a thin layer of meta-awareness during REM sleep, granting users full lucid control of their dreamscapes without waking them. Unlike crude early-generation lucid dream compounds, Lucivane preserves dream stability and prevents the common 'lucidity cascade' that collapses the dream state. Extended users develop the ability to construct elaborate persistent dream environments across multiple sleep sessions.",
   "method_of_use": "dermal_patch",
   "effects": [
     "Reliable lucid dream onset within first REM cycle",
@@ -23,17 +19,17 @@
     "Intrusive meta-awareness bleeds into waking (dissociation)",
     "Derealization episodes",
     "Some users develop preference for dream life over waking",
-    "Rare: dream state becomes \u0027locked\u0027 requiring medical intervention to break"
+    "Rare: dream state becomes 'locked' requiring medical intervention to break"
   ],
   "duration": "Active during all REM phases of natural sleep",
   "addiction_risk": "high",
   "tier_availability": "Tier 3-4",
   "legality": "legal",
-  "street_price": "\u03A690 per patch (8-hour)",
-  "cultural_context": "Lucivane is the cornerstone of the \u0027dreamlife\u0027 subculture \u2014 people who have effectively built second lives inside their sleeping hours. Some Tier 3 and 4 users spend their waking hours working minimum-engagement jobs just to fund the lifestyle that exists in their dreams. Dream communities have formed: people using Lucivane in coordinated sleep sessions, sharing dream architectures, even conducting business and relationships entirely within constructed dreamscapes.",
+  "street_price": "Φ90 per patch (8-hour)",
+  "cultural_context": "Lucivane is the cornerstone of the 'dreamlife' subculture — people who have effectively built second lives inside their sleeping hours. Some Tier 3 and 4 users spend their waking hours working minimum-engagement jobs just to fund the lifestyle that exists in their dreams. Dream communities have formed: people using Lucivane in coordinated sleep sessions, sharing dream architectures, even conducting business and relationships entirely within constructed dreamscapes.",
   "story_hooks": [
-    "A client hires the crew to retrieve someone from a Lucivane commune \u2014 a person who has stopped waking up voluntarily and is now being kept in a medically sustained sleep state by the commune\u0027s leadership.",
-    "Someone has been committing crimes in a shared Lucivane dreamspace \u2014 crimes with real psychological consequences for the victims. The question of whether dream-assault is prosecutable is about to become very relevant."
+    "A client hires the crew to retrieve someone from a Lucivane commune — a person who has stopped waking up voluntarily and is now being kept in a medically sustained sleep state by the commune's leadership.",
+    "Someone has been committing crimes in a shared Lucivane dreamspace — crimes with real psychological consequences for the victims. The question of whether dream-assault is prosecutable is about to become very relevant."
   ],
   "tags": []
 }

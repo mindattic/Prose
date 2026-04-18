@@ -2,11 +2,7 @@
   "name": "Arcturus AD-7 'Vulture'",
   "type": "automaton",
   "classification": "Aerial Drone — Persistent Overwatch",
-  "aliases": [
-    "Vulture",
-    "Eye in the Sky",
-    "Circler"
-  ],
+  "aliases": [],
   "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
   "description": "The AD-7 is a fixed-wing drone with a 4-meter wingspan that circles at altitudes between 500 and 2,000 meters, providing continuous surveillance and precision strike capability for ground operations. Its electric propulsion system is nearly silent at operational altitude, and its optical systems can read a BCI serial number from 1,500 meters. The Vulture carries two precision-guided munitions — small, but large enough to destroy a vehicle or kill everyone in a room.\n\nThe AD-7's primary value is persistence. A single Vulture can maintain station for 72 hours, watching, recording, and waiting for a target to appear. Multiple units rotating in relay can maintain continuous coverage indefinitely. The knowledge that a Vulture is overhead — and you can't see it, and you don't know if today is the day it decides to drop something — creates a constant, grinding psychological pressure that affects behavior at population scale.\n\nArcturus sells Vulture coverage as a service. Corporate clients subscribe to overwatch packages covering specific districts or facilities, and Arcturus maintains the fleet. This means the drones are always there, watching everything, and the data from their surveillance feeds is Arcturus's to sell separately. The strike capability is the headline feature, but the surveillance data is the profit center.",
   "tier_availability": "Tier 4+",

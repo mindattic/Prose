@@ -4,12 +4,7 @@
   "brand_name": "Arcturus",
   "product_name": "Arcturus Defense Solutions Thermal Parallax Reticle",
   "type": "cyberware",
-  "aliases": [
-    "Ghost Eye",
-    "TPR",
-    "the Parallax",
-    "heat reader"
-  ],
+  "aliases": [],
   "category": "sensor",
   "body_location": "",
   "description": "The Thermal Parallax Reticle is a wearable multi-spectrum ocular overlay that triangulates heat signatures across layered environmental planes simultaneously. Rather than rendering a flat thermal image, it calculates depth-indexed temperature gradients, allowing the user to distinguish a warm body crouched behind a cold concrete pillar from ambient heat bleed caused by nearby machinery. The system uses three offset micro-lens arrays mounted in a slim visor frame, feeding data into a dedicated co-processor that resolves parallax discrepancies in real time, producing a composite image accurate to within four centimeters at thirty meters range.\n\nWhat distinguishes the TPR from competing thermal optics is its adversarial modeling layer — a passive subroutine that continuously flags thermal anomalies inconsistent with the environment's baseline. A man-shaped heat signature in a cold warehouse registers differently than residual warmth from a recently vacated chair, and the Reticle annotates both with confidence scores. The co-processor also compensates for standard thermal masking countermeasures, recognizing the telltale cold-edge artifacts produced by most commercial heat-dampening suits.\n\nPrimarily fielded by Arcturus breach teams and licensed to mid-tier corporate security contractors, the TPR has found a second life among bounty hunters operating in GLMZ's industrial underbelly. In the Sump Districts, where steam vents and furnace exhausts create thermal chaos, the Reticle's noise-filtering algorithms are considered nearly indispensable. Knockoff versions circulate on the black market, but they lack the adversarial modeling layer entirely, rendering them unreliable in cluttered environments.",

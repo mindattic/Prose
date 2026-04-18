@@ -2,40 +2,36 @@
   "id": "019d7850c6bb7858bf090059ba2e5f4e",
   "name": "Mnemovex",
   "type": "pharmaceutical",
-  "aliases": [
-    "Lockdown",
-    "Sealant",
-    "Hardprint"
-  ],
+  "aliases": [],
   "category": "cognitive_enhancer",
   "subcategory": "memory_consolidation",
   "manufacturer": "Novafold Pharmaceuticals",
-  "description": "Mnemovex accelerates hippocampal memory consolidation by flooding synaptic junctions with a proprietary ensemble of BDNF analogs and acetylcholine precursors, converting short-term memory traces into durable long-term engrams within 20 minutes rather than the natural 6-8 hours. Taken immediately after a learning session, it \u0027locks\u0027 the preceding 4-6 hours of experience into near-permanent storage. Standard issue for medical students and corporate training programs.",
+  "description": "Mnemovex accelerates hippocampal memory consolidation by flooding synaptic junctions with a proprietary ensemble of BDNF analogs and acetylcholine precursors, converting short-term memory traces into durable long-term engrams within 20 minutes rather than the natural 6-8 hours. Taken immediately after a learning session, it 'locks' the preceding 4-6 hours of experience into near-permanent storage. Standard issue for medical students and corporate training programs.",
   "method_of_use": "sublingual",
   "effects": [
     "Accelerated memory consolidation (hours compressed to minutes)",
     "Enhanced recall precision of recent experiences",
     "Reduced forgetting curve over 30 days",
     "Strengthened BCI memory-tagging integration",
-    "Emotional memory is also consolidated \u2014 including stress"
+    "Emotional memory is also consolidated — including stress"
   ],
   "side_effects": [
     "Consolidates bad experiences as readily as good ones (trauma amplification risk)",
     "Vivid and intrusive recall of consolidated memories for 48-72 hours",
-    "Sleep disruption \u2014 brain resists downtime processing already-consolidated material",
+    "Sleep disruption — brain resists downtime processing already-consolidated material",
     "Headache and mild nausea",
-    "Long-term overuse: memory \u0027crowding\u0027 \u2014 difficulty forming new memories as old ones dominate"
+    "Long-term overuse: memory 'crowding' — difficulty forming new memories as old ones dominate"
   ],
   "duration": "Consolidation window: 20-40 minutes. Effects on retained memory: permanent",
   "addiction_risk": "low",
   "tier_availability": "Tier 2-3",
   "legality": "prescription",
-  "street_price": "\u03A6 25-35 per dose",
-  "cultural_context": "Mnemovex is a staple of GLMZ\u0027s competitive education and certification culture. Students take it after cram sessions. Trauma counselors have raised alarms for years about its tendency to hardwire bad experiences \u2014 there\u0027s a documented phenomenon called \u0027Lockdown grief\u0027 where someone consolidates a traumatic event and cannot process it normally. On the Shelf, it\u0027s used by fixers and couriers who need to memorize routes, faces, and codes without leaving digital records.",
+  "street_price": "Φ 25-35 per dose",
+  "cultural_context": "Mnemovex is a staple of GLMZ's competitive education and certification culture. Students take it after cram sessions. Trauma counselors have raised alarms for years about its tendency to hardwire bad experiences — there's a documented phenomenon called 'Lockdown grief' where someone consolidates a traumatic event and cannot process it normally. On the Shelf, it's used by fixers and couriers who need to memorize routes, faces, and codes without leaving digital records.",
   "story_hooks": [
-    "A witness to a corporate assassination took Mnemovex immediately after the event \u2014 meaning their memory of the killer\u0027s face is now essentially photographic and cannot be blurred by time or trauma",
-    "A student discovers that Mnemovex has locked in not just her coursework but every humiliation, every failure, every cruel word \u2014 and she\u0027s starting to come apart",
-    "A fixer is hired to retrieve a person who used Mnemovex to memorize stolen data rather than store it digitally \u2014 the data exists only inside their skull"
+    "A witness to a corporate assassination took Mnemovex immediately after the event — meaning their memory of the killer's face is now essentially photographic and cannot be blurred by time or trauma",
+    "A student discovers that Mnemovex has locked in not just her coursework but every humiliation, every failure, every cruel word — and she's starting to come apart",
+    "A fixer is hired to retrieve a person who used Mnemovex to memorize stolen data rather than store it digitally — the data exists only inside their skull"
   ],
   "tags": []
 }

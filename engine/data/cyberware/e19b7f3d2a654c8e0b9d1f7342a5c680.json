@@ -4,14 +4,7 @@
   "brand_name": "NeuralPath",
   "product_name": "PayNode",
   "type": "cyberware",
-  "aliases": [
-    "the tap",
-    "handpay",
-    "skinfund",
-    "the wallet",
-    "knuckle cash",
-    "dermacred"
-  ],
+  "aliases": [],
   "category": "convenience",
   "body_location": "subdermal hand — dorsal surface, between metacarpals of index and middle finger",
   "description": "The PayNode is a subdermal near-field transaction chip implanted in the dorsal hand, positioned to sit within 15mm of the skin surface for reliable near-field communication at standard payment terminals. The core unit is a passive NFC/biometric authentication module approximately the size of a grain of rice, paired with a slightly larger cryptographic co-processor node that handles transaction signing and security. Unlike legacy external payment devices, the PayNode authenticates via the user's unique biometric pulse signature — a combination of vascular geometry and micro-electrical skin conductance — meaning the chip cannot be used by anyone else even if somehow extracted. It supports all standard Quanta-denominated civic financial protocols, interfaces with municipal transit systems, access control networks, vending infrastructure, and peer-to-peer transfers. A linked app or BCI interface displays balance and transaction history, though the implant functions entirely offline for standard tap payments.\n\nThe PayNode is arguably the single most installed piece of cyberware in GLMZ after civic identity chips — in many Tier 1 and Tier 2 neighborhoods, cash infrastructure has deteriorated to the point where a physical wallet is useless, and external payment devices are easily stolen. Having your money literally in your hand is not a metaphor; it is a practical security consideration for anyone living in areas where muggings are common. Children in Tier 2 households often receive their first PayNode around age ten, loaded with a supervised allowance account. The gesture of payment — a casual wave of the hand over a terminal, no pause, no pocket-reaching — has become so normalized that older residents who remember external devices describe the transition as roughly equivalent to the shift from cash to cards two centuries prior.",

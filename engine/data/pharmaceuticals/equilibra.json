@@ -2,15 +2,11 @@
   "id": "019d7850c6aa77a992149316b8f3635f",
   "name": "Equilibra",
   "type": "pharmaceutical",
-  "aliases": [
-    "Flatline (positive sense)",
-    "Baseline",
-    "the Level"
-  ],
+  "aliases": [],
   "category": "withdrawal_aid",
   "subcategory": "neurochemistry_rebalancer",
   "manufacturer": "Lazarus Pharmaceuticals",
-  "description": "Equilibra is a comprehensive neurochemical rebalancing agent designed for users who have been on multiple substances over extended periods and whose baseline brain chemistry has drifted so far from normal that they no longer know what \u0027normal\u0027 feels like. It uses a slow-acting SNT-mediated multi-system recalibration approach \u2014 simultaneously adjusting dopamine, serotonin, norepinephrine, GABA, and glutamate systems toward statistical population baselines over a 6-month course. Lazarus markets it as \u0027returning you to yourself.\u0027",
+  "description": "Equilibra is a comprehensive neurochemical rebalancing agent designed for users who have been on multiple substances over extended periods and whose baseline brain chemistry has drifted so far from normal that they no longer know what 'normal' feels like. It uses a slow-acting SNT-mediated multi-system recalibration approach — simultaneously adjusting dopamine, serotonin, norepinephrine, GABA, and glutamate systems toward statistical population baselines over a 6-month course. Lazarus markets it as 'returning you to yourself.'",
   "method_of_use": "dermal_patch",
   "effects": [
     "Multi-system neurochemical recalibration",
@@ -21,21 +17,21 @@
   ],
   "side_effects": [
     "First month: profound uncertainty as unfamiliar baseline states emerge",
-    "Identity disturbance \u2014 some users report not recognizing the person they\u0027re becoming",
+    "Identity disturbance — some users report not recognizing the person they're becoming",
     "Interferes significantly with most other psychoactive substances",
     "Expensive enough that missing doses causes inconsistency problems",
-    "Rare: recalibration overshoot \u2014 landing outside normal parameters in unpredictable directions"
+    "Rare: recalibration overshoot — landing outside normal parameters in unpredictable directions"
   ],
   "duration": "6-month course; effects are intended to establish permanent new baseline",
   "addiction_risk": "none",
   "tier_availability": "Tier 3-4",
   "legality": "prescription",
-  "street_price": "\u03A6340 per month (\u03A62,040 full course)",
-  "cultural_context": "Equilibra is a Lazarus prestige product \u2014 sold to Tier 3 and 4 recovery clients with the implicit promise that you can buy back the person you were before addiction. The identity disturbance side effect is poorly advertised: many users discover that their \u0027baseline\u0027 self is someone they don\u0027t like or recognize. Recovery counselors debate whether this is a side effect or the point \u2014 the person who developed the addiction is also being recalibrated away.",
+  "street_price": "Φ340 per month (Φ2,040 full course)",
+  "cultural_context": "Equilibra is a Lazarus prestige product — sold to Tier 3 and 4 recovery clients with the implicit promise that you can buy back the person you were before addiction. The identity disturbance side effect is poorly advertised: many users discover that their 'baseline' self is someone they don't like or recognize. Recovery counselors debate whether this is a side effect or the point — the person who developed the addiction is also being recalibrated away.",
   "story_hooks": [
-    "A character three months into Equilibra is genuinely becoming someone different \u2014 old relationships, loyalties, and skills are shifting \u2014 and someone in their life wants to stop the process",
-    "A Lazarus data leak suggests the \u0027statistical population baseline\u0027 Equilibra targets has been quietly adjusted \u2014 whose definition of normal is being installed?",
-    "Someone needs to be themselves \u2014 their drug-altered self \u2014 for a specific mission, but they\u0027re mid-course on Equilibra and losing access to the person they need to be"
+    "A character three months into Equilibra is genuinely becoming someone different — old relationships, loyalties, and skills are shifting — and someone in their life wants to stop the process",
+    "A Lazarus data leak suggests the 'statistical population baseline' Equilibra targets has been quietly adjusted — whose definition of normal is being installed?",
+    "Someone needs to be themselves — their drug-altered self — for a specific mission, but they're mid-course on Equilibra and losing access to the person they need to be"
   ],
   "tags": []
 }

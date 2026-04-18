@@ -2,11 +2,7 @@
   "name": "Vantablack FH-20 'Convoy'",
   "type": "automaton",
   "classification": "Autonomous Vehicle — Heavy Freight",
-  "aliases": [
-    "Convoy",
-    "Ghost Rig",
-    "Road Train"
-  ],
+  "aliases": [],
   "manufacturer": "VANTABLACK MOBILITY",
   "description": "The FH-20 is an autonomous heavy freight vehicle — a 16-meter articulated truck with no cab, no windows, and no accommodation for human occupancy. The entire volume of the vehicle is cargo space, managed by an onboard logistics AI that optimizes load distribution, route selection, and delivery scheduling across Vantablack's freight network. Convoys operate 24 hours a day on GLMZ's elevated freight corridors, maintaining speeds of 120 km/h in close-formation platoons of up to eight units separated by 2-meter gaps — gaps maintained by vehicle-to-vehicle communication with millisecond precision.\n\nThe FH-20 represents the complete elimination of human labor from long-haul freight. There are no drivers to pay, no rest stops to schedule, no hours-of-service regulations to comply with. The trucks run until they need charging, charge for 45 minutes at automated depots, and run again. Vantablack's freight division operates over 2,000 FH-20 units, and the only humans involved are maintenance technicians and the logistics coordinators who manage the network from a single operations center.\n\nThe Convoy's most dangerous characteristic is its indifference to obstacles. The vehicle's collision avoidance system is calibrated for other vehicles and fixed infrastructure — it will brake for a stalled truck or a collapsed overpass. It will not brake for a person on the freight corridor, because people are not supposed to be on the freight corridor. The elevated routes are fenced and monitored, but desperate or reckless individuals sometimes climb onto them as shortcuts between districts. Vantablack's legal position is that unauthorized persons on freight corridors assume all risk. The FH-20's onboard sensors record the impact, the logistics AI routes around the debris, and the next unit in the platoon arrives 2 meters behind at 120 km/h.",
   "tier_availability": "Tier 3+",

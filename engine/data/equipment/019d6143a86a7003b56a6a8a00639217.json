@@ -4,12 +4,7 @@
   "brand_name": "Ringo",
   "product_name": "Ringo Corponation Spectral Fold Imager",
   "type": "equipment",
-  "aliases": [
-    "SFI",
-    "the Accordion",
-    "Fold Eye",
-    "Layer Cam"
-  ],
+  "aliases": [],
   "category": "sensor",
   "description": "The Spectral Fold Imager is a compact multi-band imaging device that captures and computationally 'unfolds' overlapping electromagnetic frequency layers to produce a single composite image containing data from visible light, near-infrared, short-wave infrared, and low-frequency microwave bands simultaneously. The device achieves this through a folded optical path — a series of micro-prism cascades that split incoming light into its constituent frequency ranges and direct each band to a dedicated sensor strip, all within a chassis roughly the size of a hardcover book. The resulting composite image, rendered on the device's high-contrast display, shows a scene with extraordinary informational density: concealed objects, heat sources, electronic emissions, and structural anomalies all visible in a single frame coded by color channel.\n\nRingo Corponation developed the SFI for their media and surveillance divisions, where the need to capture covert footage in varying light conditions without carrying multiple bulky instruments created a clear market gap. The folded optical path design — Ringo's core innovation — allowed dramatic miniaturization compared to conventional multi-spectral rigs without sacrificing image quality. The device can be operated in 'full composite' mode or narrowed to any single frequency band for targeted analysis. A machine-learning interpretation layer flags anomalies automatically: hidden compartments in walls, warm bodies behind barriers, active electronics in supposedly powered-down equipment.\n\nThe SFI has become something of a signature instrument for a specific type of GLMZ operator: the investigative journalist, the corporate intelligence analyst, the high-end infiltrator who needs to see everything a space is hiding before committing to entry. Ringo markets it through their professional imaging division with conspicuous legitimacy, but the device's surveillance capabilities are extensive enough that several districts have moved to restrict its carry without a media or investigative license.",
   "manufacturer": "Signal Wireless",

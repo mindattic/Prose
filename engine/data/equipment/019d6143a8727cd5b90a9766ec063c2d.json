@@ -4,11 +4,7 @@
   "brand_name": "Tessera",
   "product_name": "Tessera Corponation Acoustic Null Field Emitter",
   "type": "equipment",
-  "aliases": [
-    "The Silencer Box",
-    "Null Cone",
-    "Tessera Hush"
-  ],
+  "aliases": [],
   "category": "stealth",
   "description": "The Acoustic Null Field Emitter is a palm-sized device that projects a directional anti-phase sound field, effectively creating a cone of acoustic cancellation extending up to four meters from the emitter's face. Tessera Corponation's approach differs from conventional white-noise maskers by targeting the precise frequency signatures of the user's movement and speech in real time — an onboard microphone array samples incoming sound at sub-millisecond latency, generates inverted waveforms, and emits them through a phased array of micro-transducers, canceling the user's acoustic output before it propagates beyond the null cone's boundary.\n\nThe device's most technically notable characteristic is its adaptive notch filtering, which allows it to suppress the user's sounds while leaving environmental noise largely intact within the cone — meaning the user can still hear their surroundings clearly while remaining acoustically invisible to listeners outside the field. This bidirectional selectivity is computationally intensive and is the primary driver of the unit's relatively short active window on a single charge. At maximum range and fidelity, the emitter sustains approximately ninety minutes of continuous operation before requiring a recharge or cell swap.\n\nTessera developed the Emitter originally for use by their Lattice network installation crews, who frequently work in acoustically monitored corporate infrastructure. The device moved rapidly into the broader market when early production units were acquired by several high-profile extraction teams and demonstrated in field conditions. Tessera's official position is that the product is sold for 'sensitive facility maintenance applications,' a description that has satisfied regulators in three of GLMZ's six administrative sectors.",
   "manufacturer": "Vasquez Biocompatible Materials",

@@ -4,11 +4,7 @@
   "brand_name": "Helix",
   "product_name": "Helix Biosystems Cortical Depth Index",
   "type": "cyberware",
-  "aliases": [
-    "The Index",
-    "CDI",
-    "Helix Depth"
-  ],
+  "aliases": [],
   "category": "implant",
   "body_location": "",
   "description": "The Cortical Depth Index is a distributed cranial BCI system consisting of a thin-film electrode mesh draped across the cortical surface through a keyhole surgical approach, paired with a subdermal processing cluster at the temporal bone. Its primary function is continuous cognitive performance indexing — the device maps the user's real-time neural activity patterns against Helix Biosystems' proprietary 'Depth Scoring' model, which purports to quantify executive function, working memory load, pattern recognition speed, and decision-making quality into a single rolling numerical score accessible to the user through a heads-up display or haptic feedback pulse. Helix markets the CDI as the definitive tool for cognitive self-optimization, sold through a subscription model that includes access to their proprietary coaching AI, Meridian Depth Advisor.\n\nThe Depth Score has become a contested cultural artifact in GLMZ's professional class. Helix's marketing has normalized the idea of continuous cognitive self-monitoring to the point where sharing one's Depth Score in professional networking contexts is increasingly common, and several corporate HR systems have begun requesting CDI access as part of executive performance reviews. The implant's data is stored on Helix servers by default, with the user paying additional subscription fees for local-only storage options — a data ownership structure that has drawn significant regulatory scrutiny and been the subject of at least one major data breach affecting 40,000 CDI users.\n\nBelow the consumer surface, the CDI's mesh architecture makes it one of the most comprehensive passive neural monitoring systems available outside classified military hardware. Security researchers have demonstrated that the mesh can be leveraged — either through firmware modification or external signal injection — to passively record detailed cognitive event data, effectively providing a partial readout of the user's thought processes during high-activation cognitive events.",

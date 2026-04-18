@@ -2,11 +2,7 @@
   "id": "c0875f2a966de854e93df032c9ec8513",
   "name": "Arcturus Defense Solutions ARC-SL12 'Oathkeeper'",
   "type": "weapon",
-  "aliases": [
-    "Oathkeeper",
-    "ARC-SL12",
-    "The Smart Twelve"
-  ],
+  "aliases": [],
   "category": "shotgun",
   "description": "The Arcturus Defense Solutions ARC-SL12 is a semi-automatic shotgun chambered in 12 gauge with BCI smart-link integration, the same pattern-prediction system as the Harbinger, and an additional capability: automated ammunition selection. The weapon feeds from a dual-stack magazine holding six rounds of two different ammunition types — typically buckshot and slug — and the BCI system automatically selects the appropriate round based on the operator's target distance and intent.\n\nThe Oathkeeper's automated ammunition selection works by reading the operator's pre-motor targeting data through the BCI link. When the operator aims at a close target with intent to fire, the system chambers buckshot. When the operator aims at a distant target or a specific point on a target, the system chambers a slug. The transition between ammunition types takes 0.4 seconds — during which the weapon ejects the previously chambered round and feeds the selected type from the appropriate magazine column.\n\nThis system is, by most accounts, terrifyingly effective. An operator with an Oathkeeper moves through a multi-threat environment where targets are at varied distances, and the weapon automatically provides the optimal ammunition for each engagement without conscious selection. The operator simply aims and fires, and the weapon's AI handles the tactical decision of what to fire. This level of automation makes the Oathkeeper one of the most controversial weapons Arcturus produces.",
   "manufacturer": "Ironside Armaments",

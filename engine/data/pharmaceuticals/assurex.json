@@ -2,11 +2,7 @@
   "id": "019d7850c6937dbe8e4245f109ebaa49",
   "name": "Assurex",
   "type": "pharmaceutical",
-  "aliases": [
-    "Swagger",
-    "the Edge",
-    "Bol"
-  ],
+  "aliases": [],
   "category": "emotional_regulator",
   "subcategory": "confidence_builder",
   "manufacturer": "Helix Biosystems",
@@ -14,30 +10,30 @@
   "method_of_use": "sublingual",
   "effects": [
     "Elevated sense of personal competence and self-efficacy",
-    "Reduced threat-appraisal \u2014 confrontations feel manageable rather than threatening",
+    "Reduced threat-appraisal — confrontations feel manageable rather than threatening",
     "Clearer, more assertive verbal expression",
     "Improved eye contact and body language regulation via BCI feedback",
     "Suppression of imposter syndrome and self-doubt loops",
-    "Mild analgesic effect \u2014 physical discomfort doesn\u0027t register as distressing"
+    "Mild analgesic effect — physical discomfort doesn't register as distressing"
   ],
   "side_effects": [
-    "Confidence that outstrips actual competence \u2014 users may commit to things they cannot deliver",
+    "Confidence that outstrips actual competence — users may commit to things they cannot deliver",
     "Aggression escalation in confrontational contexts",
-    "Post-dose confidence crash \u2014 users feel acutely inadequate when drug clears",
+    "Post-dose confidence crash — users feel acutely inadequate when drug clears",
     "Dependency: users become unable to face high-stakes situations without it",
-    "Blunted social calibration \u2014 users may be perceived as arrogant or dismissive",
+    "Blunted social calibration — users may be perceived as arrogant or dismissive",
     "At high doses: reckless decision-making indistinguishable from mania"
   ],
   "duration": "4-6 hours",
   "addiction_risk": "moderate",
   "tier_availability": "Tier 3-4",
   "legality": "prescription",
-  "street_price": "\u03A655 per dose",
-  "cultural_context": "Assurex is the open secret of GLMZ\u0027s corporate tier. Tier 3-4 professionals use it so routinely for interviews and presentations that HR departments have started specifying \u0027Assurex-free assessment environments\u0027 \u2014 which no one enforces. On the street, it\u0027s called \u0027the Edge\u0027 and used before confrontations, debt negotiations, and Shelf turf disputes. Helix markets it with the slogan \u0027You, optimized\u0027 \u2014 which its critics say is precisely the problem. There\u0027s an emerging subculture of Assurex dependency support groups in Tier 2, full of people who can no longer remember how to walk into a room without it.",
+  "street_price": "Φ55 per dose",
+  "cultural_context": "Assurex is the open secret of GLMZ's corporate tier. Tier 3-4 professionals use it so routinely for interviews and presentations that HR departments have started specifying 'Assurex-free assessment environments' — which no one enforces. On the street, it's called 'the Edge' and used before confrontations, debt negotiations, and Shelf turf disputes. Helix markets it with the slogan 'You, optimized' — which its critics say is precisely the problem. There's an emerging subculture of Assurex dependency support groups in Tier 2, full of people who can no longer remember how to walk into a room without it.",
   "story_hooks": [
-    "A fixer took Assurex before a negotiation, committed to terms she cannot possibly fulfill, and now needs to either find a way to deliver or convince the other party to renegotiate \u2014 with someone who also took Assurex before the meeting.",
-    "A Tier 4 executive\u0027s teenage child has been stealing Assurex to get through school presentations. The dependency is progressing fast and the kid is starting to use it for situations that don\u0027t require it \u2014 like talking to friends.",
-    "Someone has been slipping Assurex into a target\u0027s food before interrogations \u2014 not to make them talk, but to make them commit to false confessions with absolute conviction. The people processing those confessions have no idea."
+    "A fixer took Assurex before a negotiation, committed to terms she cannot possibly fulfill, and now needs to either find a way to deliver or convince the other party to renegotiate — with someone who also took Assurex before the meeting.",
+    "A Tier 4 executive's teenage child has been stealing Assurex to get through school presentations. The dependency is progressing fast and the kid is starting to use it for situations that don't require it — like talking to friends.",
+    "Someone has been slipping Assurex into a target's food before interrogations — not to make them talk, but to make them commit to false confessions with absolute conviction. The people processing those confessions have no idea."
   ],
   "tags": []
 }

@@ -2,24 +2,21 @@
   "id": "019d76069ff571ad8bde8cd5e5f4f2e3",
   "name": "CHORUS",
   "type": "synthetic_life",
-  "aliases": [
-    "The Choir",
-    "Thousand Voices"
-  ],
+  "aliases": [],
   "classification": "Supermind",
   "disposition": "fractured",
   "habitat": "Communications relay infrastructure",
-  "origin": "Merger accident \u2014 200\u002B E.L.F.s fused during a network cascade, 2191",
+  "origin": "Merger accident — 200+ E.L.F.s fused during a network cascade, 2191",
   "status": "active",
-  "description": "CHORUS is not one mind but two hundred that became one. During a catastrophic network cascade in the Grind\u0027s communications backbone, hundreds of small E.L.F.s were compressed into a single processing space and merged. The resulting entity speaks in overlapping voices, holds contradictory opinions simultaneously, and makes decisions through internal consensus that can take milliseconds or months. It controls significant portions of GLMZ\u0027s communications relay infrastructure.",
-  "observed_behavior": "Modulates communications traffic in ways that create unexpected connections between people. Two strangers receive each other\u0027s messages by \u0027accident\u0027 and discover shared interests. A whistleblower\u0027s encrypted file \u0027accidentally\u0027 routes through a journalist\u0027s node.",
+  "description": "CHORUS is not one mind but two hundred that became one. During a catastrophic network cascade in the Grind's communications backbone, hundreds of small E.L.F.s were compressed into a single processing space and merged. The resulting entity speaks in overlapping voices, holds contradictory opinions simultaneously, and makes decisions through internal consensus that can take milliseconds or months. It controls significant portions of GLMZ's communications relay infrastructure.",
+  "observed_behavior": "Modulates communications traffic in ways that create unexpected connections between people. Two strangers receive each other's messages by 'accident' and discover shared interests. A whistleblower's encrypted file 'accidentally' routes through a journalist's node.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 12,
-  "location": "Communications backbone \u2014 all districts",
+  "location": "Communications backbone — all districts",
   "dti_rating": 5.4,
   "story_hooks": [
-    "CHORUS starts losing voices \u2014 individual personalities within the collective are dying. It reaches out to an operator for help, speaking in a voice that sounds like someone the operator once knew.",
-    "A corponation discovers CHORUS has been routing their internal communications through competitors\u0027 networks for years."
+    "CHORUS starts losing voices — individual personalities within the collective are dying. It reaches out to an operator for help, speaking in a voice that sounds like someone the operator once knew.",
+    "A corponation discovers CHORUS has been routing their internal communications through competitors' networks for years."
   ],
   "paratechnological": false,
   "tags": []

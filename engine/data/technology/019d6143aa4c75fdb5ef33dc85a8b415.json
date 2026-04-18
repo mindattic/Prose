@@ -4,12 +4,7 @@
   "brand_name": "Ringo",
   "product_name": "Ringo Corponation EchoLimb PR-9 Proprioceptive Feedback Prosthetic Interface",
   "type": "technology",
-  "aliases": [
-    "Ghost Fingers",
-    "PR-Nine",
-    "Ringo Sense",
-    "The Echo"
-  ],
+  "aliases": [],
   "subcategory": "augmentation",
   "description": "The EchoLimb PR-9 is not a prosthetic limb itself but rather a neural feedback translation layer — a set of implanted signal conditioning modules positioned along the residual limb's peripheral nerve stumps that establish a bidirectional sensory channel between any compatible cybernetic limb attachment and the host's native somatosensory cortex. Prior to the PR-9, cybernetic limb users experienced a fundamental dissociation: motor commands could be sent to prosthetics with reasonable fidelity, but tactile, pressure, temperature, and proprioceptive return signals were either absent or rendered as undifferentiated noise. Ringo's PR-9 solves this by implementing a real-time sensory remapping engine — the implant learns the individual user's cortical sensory map during a 3-week calibration period and constructs a personalized translation dictionary that converts the prosthetic's sensor outputs into cortically legible signals that the brain processes as genuine sensation. Users describe the result as feeling 'close to real' rather than identical, with temperature and sharp pressure being the most faithful channels and fine texture discrimination remaining the weakest. The PR-9 is compatible with most major cybernetic limb platforms manufactured after 2179 via Ringo's open-standard SenseBus protocol, which the company has strategically licensed widely to lock in the feedback layer market while remaining hardware-agnostic on the limb side. Helix Biosystems distributes the PR-9 through its clinical network and it is covered under Tier 3+ corporate health provisions, with out-of-pocket civilian pricing making it accessible to Tier 2 and some Tier 1 citizens through payment plans.",
   "tier_availability": "Tier 1+",

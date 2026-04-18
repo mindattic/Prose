@@ -1,5 +1,5 @@
 """
-Entity Description Generator — Physical Descriptions + Image Prompts
+Entity Description Generator -- Physical Descriptions + Image Prompts
 
 Generates visual descriptions and Midjourney-ready image prompts for entities
 across multiple repos (characters, weaponry, equipment, apparel, etc.).
@@ -29,14 +29,14 @@ from constants import ANTHROPIC_API_KEY, DATA_DIR, CONCURRENCY, MODEL
 
 console = Console()
 
-# ── System prompts per entity type ──────────────────────────────────────────
+# -- System prompts per entity type ------------------------------------------
 
 WORLD_CONTEXT = """WORLD RULES:
 - Set in the Great Lakes Metropolitan Zone (GLMZ), 2226
 - The Ubiquitous Diaspora: mixed global heritage is the norm
 - Augmentations range from invisible subcutaneous to chrome cyberlimbs
 - Tiers: 1-2 = wealthy corpo, 3-4 = working class, 5 = sub-grade/ungoverned
-- The symbol Φ is the QUANTA currency symbol
+- The symbol Phi is the QUANTA currency symbol
 - Iowan Behemoths are autonomous machines, NOT synthetic life
 
 CRITICAL: Return ONLY a raw JSON object with two keys: "physical_description" (object) and "image_prompt" (string).
@@ -60,7 +60,7 @@ PHYSICAL DESCRIPTION SCHEMA:
   "eye_color": "Natural or augmented",
   "skin_tone": "Complexion grounded in mixed heritage",
   "complexion": "Facial features, grooming, skin condition",
-  "distinguishing_marks": ["Scars, tattoos, burns — each a sentence"],
+  "distinguishing_marks": ["Scars, tattoos, burns -- each a sentence"],
   "visible_augmentations": "What a stranger would notice",
   "posture_movement": "How they carry themselves",
   "clothing_style": "Default appearance, tier indicators"
@@ -75,16 +75,16 @@ Given a weapon's existing JSON data, generate a detailed visual description and 
 
 PHYSICAL DESCRIPTION SCHEMA:
 {
-  "visual_profile": "What it looks like at first glance — shape, silhouette, impression",
+  "visual_profile": "What it looks like at first glance -- shape, silhouette, impression",
   "dimensions": "Length, width, height in cm. Barrel length if applicable",
-  "weight_description": "How heavy it feels in hand — light, hefty, balanced, unwieldy",
-  "primary_material": "What the body/frame is made of — polymer, steel, carbon composite, etc.",
-  "finish": "Surface treatment — matte black, brushed steel, worn chrome, battle-scarred polymer, etc.",
+  "weight_description": "How heavy it feels in hand -- light, hefty, balanced, unwieldy",
+  "primary_material": "What the body/frame is made of -- polymer, steel, carbon composite, etc.",
+  "finish": "Surface treatment -- matte black, brushed steel, worn chrome, battle-scarred polymer, etc.",
   "color_scheme": "Primary and accent colors",
-  "grip_texture": "What the handle/grip feels like — rubberized, textured polymer, wrapped cord, bare metal",
-  "distinctive_features": ["Array of unique visual details — LED indicators, heat vents, unusual barrel shape, custom engravings, wear patterns"],
-  "manufacturer_markings": "Logos, serial plates, stamps — where and how they appear",
-  "condition_typical": "How this weapon usually looks in the field — pristine, well-maintained, battle-worn, jury-rigged"
+  "grip_texture": "What the handle/grip feels like -- rubberized, textured polymer, wrapped cord, bare metal",
+  "distinctive_features": ["Array of unique visual details -- LED indicators, heat vents, unusual barrel shape, custom engravings, wear patterns"],
+  "manufacturer_markings": "Logos, serial plates, stamps -- where and how they appear",
+  "condition_typical": "How this weapon usually looks in the field -- pristine, well-maintained, battle-worn, jury-rigged"
 }
 
 IMAGE PROMPT: Midjourney-style product photo. Weapon on dark surface or held in gloved hand. Include materials, lighting (dramatic side-light), neo-noir urban aesthetic. End with --ar 3:2 --v 6""",
@@ -96,14 +96,14 @@ Given a piece of equipment/technology, generate a detailed visual description an
 
 PHYSICAL DESCRIPTION SCHEMA:
 {
-  "visual_profile": "What it looks like — shape, form factor, first impression",
+  "visual_profile": "What it looks like -- shape, form factor, first impression",
   "dimensions": "Size in cm or general size category (palm-sized, backpack-sized, vehicle-mounted)",
-  "weight_description": "How heavy — pocketable, handheld, requires carrying strap, mounted",
+  "weight_description": "How heavy -- pocketable, handheld, requires carrying strap, mounted",
   "primary_material": "Housing/body material",
   "finish": "Surface treatment and texture",
   "color_scheme": "Primary and accent colors",
-  "interface_elements": "Screens, buttons, ports, indicators — what the user interacts with",
-  "distinctive_features": ["Unique visual details — LED patterns, holographic displays, unusual form factor"],
+  "interface_elements": "Screens, buttons, ports, indicators -- what the user interacts with",
+  "distinctive_features": ["Unique visual details -- LED patterns, holographic displays, unusual form factor"],
   "manufacturer_markings": "Logos, labels, regulatory stamps",
   "condition_typical": "How it usually looks in use"
 }
@@ -117,16 +117,16 @@ Given a piece of clothing/apparel, generate a detailed visual description and im
 
 PHYSICAL DESCRIPTION SCHEMA:
 {
-  "visual_profile": "What it looks like on a person — silhouette, impression, style",
-  "fit": "How it fits the body — slim, relaxed, oversized, tailored, compression",
-  "primary_material": "Main fabric/material — synth-wool, ballistic weave, treated leather, recycled composite",
-  "texture": "How it feels and looks up close — smooth, rough, quilted, ribbed, distressed",
+  "visual_profile": "What it looks like on a person -- silhouette, impression, style",
+  "fit": "How it fits the body -- slim, relaxed, oversized, tailored, compression",
+  "primary_material": "Main fabric/material -- synth-wool, ballistic weave, treated leather, recycled composite",
+  "texture": "How it feels and looks up close -- smooth, rough, quilted, ribbed, distressed",
   "color_scheme": "Primary colors and any patterns or accent colors",
-  "closures": "How it fastens — zippers, magnetic snaps, friction-fit, buckles, none",
-  "distinctive_features": ["Unique design elements — reinforced panels, hidden pockets, integrated tech, brand logos, wear patterns"],
-  "tier_indicator": "What social tier this garment signals — Tier 1 luxury, Tier 3 functional, Tier 5 salvage",
-  "cultural_context": "What wearing this says about the person — corpo, street, military, medical, sub-grade",
-  "condition_typical": "How it usually looks when worn — pristine, broken-in, patched, weathered"
+  "closures": "How it fastens -- zippers, magnetic snaps, friction-fit, buckles, none",
+  "distinctive_features": ["Unique design elements -- reinforced panels, hidden pockets, integrated tech, brand logos, wear patterns"],
+  "tier_indicator": "What social tier this garment signals -- Tier 1 luxury, Tier 3 functional, Tier 5 salvage",
+  "cultural_context": "What wearing this says about the person -- corpo, street, military, medical, sub-grade",
+  "condition_typical": "How it usually looks when worn -- pristine, broken-in, patched, weathered"
 }
 
 IMAGE PROMPT: Midjourney-style fashion photo. Garment on a neo-noir model or displayed on dark mannequin. Moody lighting, urban backdrop. End with --ar 2:3 --v 6"""
@@ -328,5 +328,11 @@ if __name__ == "__main__":
     parser.add_argument("--dry-run", action="store_true", help="Preview without calling API")
     parser.add_argument("--concurrency", type=int, help=f"Parallel API calls (default: {CONCURRENCY})")
 
+    parser.add_argument("--silent", action="store_true", help="Suppress all console output")
     args = parser.parse_args()
+    if args.silent:
+        import sys as _sys, os as _os
+        _sys.stdout = open(_os.devnull, "w")
+        _sys.stderr = open(_os.devnull, "w")
+
     run_describe(repo=args.repo, limit=args.limit, dry_run=args.dry_run, concurrency=args.concurrency)

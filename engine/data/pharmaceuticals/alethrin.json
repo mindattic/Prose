@@ -2,39 +2,35 @@
   "id": "019d7850c6927b72bcef3741edcc8195",
   "name": "Alethrin",
   "type": "pharmaceutical",
-  "aliases": [
-    "Confession",
-    "Gospel",
-    "the Open Door"
-  ],
+  "aliases": [],
   "category": "poison_toxin",
   "subcategory": "BCI-mediated truth compulsion agent",
   "manufacturer": "Helix Biosystems (disavowed research line, now produced by gray-market chemists using leaked synthesis docs)",
-  "description": "A neuroactive compound that targets the BCI\u0027s prefrontal interface layer, suppressing the neural circuits responsible for intentional deception while leaving cognition and memory intact. Under Alethrin, subjects cannot generate deliberate falsehoods \u2014 they can refuse to speak, but any statement they make will be true as they believe it. Helix developed it for \u0027enhanced compliance therapy\u0027 before the project was publicly disavowed; the synthesis documents leaked within a year.",
+  "description": "A neuroactive compound that targets the BCI's prefrontal interface layer, suppressing the neural circuits responsible for intentional deception while leaving cognition and memory intact. Under Alethrin, subjects cannot generate deliberate falsehoods — they can refuse to speak, but any statement they make will be true as they believe it. Helix developed it for 'enhanced compliance therapy' before the project was publicly disavowed; the synthesis documents leaked within a year.",
   "method_of_use": "neural_direct",
   "effects": [
     "pharmacological suppression of deliberate deception via BCI prefrontal override",
     "full cognitive function maintained",
-    "subject experiences deception attempts as physically painful \u2014 burning sensation behind the eyes",
-    "enhances interrogator\u0027s BCI read of stress markers for verification"
+    "subject experiences deception attempts as physically painful — burning sensation behind the eyes",
+    "enhances interrogator's BCI read of stress markers for verification"
   ],
   "side_effects": [
-    "subjects with hardened BCI firewall implants may partially resist \u2014 reduced to half-truths and omissions rather than full suppression",
+    "subjects with hardened BCI firewall implants may partially resist — reduced to half-truths and omissions rather than full suppression",
     "severe psychological distress during active effect",
-    "post-dose: 30% of subjects experience 4-8 hours of compulsive truth-telling even after compound clears \u2014 cannot stop volunteering information",
+    "post-dose: 30% of subjects experience 4-8 hours of compulsive truth-telling even after compound clears — cannot stop volunteering information",
     "repeated use causes permanent reduction in capacity for social deception (blunted affect, social dysfunction)",
-    "contraindicated with Nullform or any BCI-isolation drug \u2014 interaction causes seizure"
+    "contraindicated with Nullform or any BCI-isolation drug — interaction causes seizure"
   ],
   "duration": "2-4 hours",
   "addiction_risk": "none",
   "tier_availability": "Tier 2-3",
   "legality": "illegal",
-  "street_price": "\u03A6 1,200\u20132,500 per dose",
-  "cultural_context": "The interrogation tool of choice for mid-tier corporate security, information brokers, and organized crime lieutenants who need answers fast and clean. The irony in GLMZ is that Alethrin is considered a \u0027polite\u0027 interrogation method \u2014 no physical damage, no screaming. Operators who use it often tell themselves they\u0027re being humane. Subjects disagree. The post-dose compulsive truth-telling effect has ruined careers, marriages, and cover identities.",
+  "street_price": "Φ 1,200–2,500 per dose",
+  "cultural_context": "The interrogation tool of choice for mid-tier corporate security, information brokers, and organized crime lieutenants who need answers fast and clean. The irony in GLMZ is that Alethrin is considered a 'polite' interrogation method — no physical damage, no screaming. Operators who use it often tell themselves they're being humane. Subjects disagree. The post-dose compulsive truth-telling effect has ruined careers, marriages, and cover identities.",
   "story_hooks": [
-    "A corporate spy is dosed with Alethrin during a routine security check \u2014 they don\u0027t know it. They answer every question honestly, including ones about operations their handler told them to protect. Now both the spy and the handler are burned.",
+    "A corporate spy is dosed with Alethrin during a routine security check — they don't know it. They answer every question honestly, including ones about operations their handler told them to protect. Now both the spy and the handler are burned.",
     "An information broker sells Alethrin-derived intelligence to three different clients, all of whom are now looking for the source. The broker realizes they may have sold their own location.",
-    "A Tier 3 defense attorney discovers their client was Alethrin-dosed during a corpo \u0027voluntary interview\u0027 \u2014 the confession is inadmissible, but the corps already acted on the information."
+    "A Tier 3 defense attorney discovers their client was Alethrin-dosed during a corpo 'voluntary interview' — the confession is inadmissible, but the corps already acted on the information."
   ],
   "tags": []
 }

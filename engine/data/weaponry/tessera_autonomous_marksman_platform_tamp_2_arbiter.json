@@ -2,11 +2,7 @@
   "id": "9ec718ad52c7c967e771f9e381e21b82",
   "name": "Tessera Autonomous Marksman Platform TAMP-2 'Arbiter'",
   "type": "weapon",
-  "aliases": [
-    "Arbiter",
-    "TAMP-2",
-    "Judge Machine"
-  ],
+  "aliases": [],
   "category": "dmr",
   "description": "The TAMP-2 Arbiter is a DMR designed to operate semi-autonomously from a fixed position. The weapon can be deployed on a stabilized tripod mount with its own sensor suite, power supply, and targeting AI, functioning as an unmanned precision overwatch platform. A remote operator provides engagement authorization through BCI link, but the weapon handles target detection, tracking, and firing solution calculation independently.\n\nThe Arbiter fires 7mm caseless from a precision barrel with an automated round-chambering system that maintains the weapon's readiness without human intervention. The sensor suite includes visual, thermal, and millimeter-wave radar that provides all-weather target detection at ranges exceeding the weapon's effective firing distance. The AI prioritizes targets based on threat assessment algorithms that can be pre-configured for specific operational parameters.\n\nTessera sells the TAMP-2 at Φ45,000 per unit as a force multiplier for precision overwatch. A single remote operator can manage up to four Arbiters simultaneously, providing coverage that would require four human marksmen in four separate positions. The weapon's autonomous capabilities raise the same ethical concerns as all autonomous weapons — the AI identifies and tracks targets, but a human must authorize each engagement. The authorization delay is measured in milliseconds, raising questions about how meaningful that human oversight really is.",
   "manufacturer": "TESSERA",

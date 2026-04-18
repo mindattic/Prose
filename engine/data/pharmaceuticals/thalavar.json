@@ -2,22 +2,18 @@
   "id": "019d7850c6e177c78000761af0b4073e",
   "name": "Thalavar",
   "type": "pharmaceutical",
-  "aliases": [
-    "Thal",
-    "Deepfire",
-    "the Hum"
-  ],
+  "aliases": [],
   "category": "recreational",
-  "subcategory": "neural euphoriant \u2014 BCI-interactive pleasure cascade",
+  "subcategory": "neural euphoriant — BCI-interactive pleasure cascade",
   "manufacturer": "Lazarus Pharmaceuticals",
-  "description": "Thalavar is a precision neuromodulator that interfaces directly with BCI reward-pathway firmware to trigger sustained, tiered dopamine and endorphin cascades without depleting natural reserves. Unlike crude stimulants, it maps the user\u0027s existing pleasure-response architecture and amplifies it \u2014 meaning every user\u0027s high is uniquely their own. Marketed in Tier 3-4 as a \u0027wellness supplement,\u0027 it is quietly one of Lazarus\u0027s highest-revenue products.",
+  "description": "Thalavar is a precision neuromodulator that interfaces directly with BCI reward-pathway firmware to trigger sustained, tiered dopamine and endorphin cascades without depleting natural reserves. Unlike crude stimulants, it maps the user's existing pleasure-response architecture and amplifies it — meaning every user's high is uniquely their own. Marketed in Tier 3-4 as a 'wellness supplement,' it is quietly one of Lazarus's highest-revenue products.",
   "method_of_use": "neural_direct",
   "effects": [
     "profound euphoria tailored to individual neurotype",
     "sense of deep personal wellbeing",
     "heightened appreciation of mundane experience",
     "mild sociability increase",
-    "BCI-users report visual \u0027warmth overlay\u0027 on their HUD"
+    "BCI-users report visual 'warmth overlay' on their HUD"
   ],
   "side_effects": [
     "post-dose anhedonia lasting 6-12 hours",
@@ -29,12 +25,12 @@
   "addiction_risk": "high",
   "tier_availability": "Tier 3-4",
   "legality": "prescription",
-  "street_price": "\u03A6180 per dose",
-  "cultural_context": "Thalavar is the corporate world\u0027s open secret \u2014 Tier 3 and 4 professionals use it to survive the grind, to feel something after sixty-hour weeks. It\u0027s taken at home, quietly, with a glass of something warm. Nobody talks about it at the office but everyone knows. On the Shelf, bootleg Thal cut with industrial solvents circulates as \u0027Deepfire\u0027 and causes significantly higher rates of reward-circuit lock.",
+  "street_price": "Φ180 per dose",
+  "cultural_context": "Thalavar is the corporate world's open secret — Tier 3 and 4 professionals use it to survive the grind, to feel something after sixty-hour weeks. It's taken at home, quietly, with a glass of something warm. Nobody talks about it at the office but everyone knows. On the Shelf, bootleg Thal cut with industrial solvents circulates as 'Deepfire' and causes significantly higher rates of reward-circuit lock.",
   "story_hooks": [
-    "A Tier 3 mid-manager realizes they haven\u0027t felt anything without Thalavar in eight months \u2014 and their prescription just got flagged for review after a workplace incident",
-    "Lazarus\u0027s internal data shows reward-circuit lock rates are three times higher than their published figures; someone on the research team wants to leak it",
-    "A Shelf chemist has reverse-engineered Thalavar but the bootleg version has a 1-in-40 chance of permanent anhedonia \u2014 and she\u0027s selling it anyway because people are desperate"
+    "A Tier 3 mid-manager realizes they haven't felt anything without Thalavar in eight months — and their prescription just got flagged for review after a workplace incident",
+    "Lazarus's internal data shows reward-circuit lock rates are three times higher than their published figures; someone on the research team wants to leak it",
+    "A Shelf chemist has reverse-engineered Thalavar but the bootleg version has a 1-in-40 chance of permanent anhedonia — and she's selling it anyway because people are desperate"
   ],
   "tags": []
 }

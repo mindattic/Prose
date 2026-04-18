@@ -4,14 +4,7 @@
   "brand_name": "VitaCore",
   "product_name": "NutriLog",
   "type": "cyberware",
-  "aliases": [
-    "the counter",
-    "calchip",
-    "gut reader",
-    "macrobone",
-    "the ledger",
-    "bite log"
-  ],
+  "aliases": [],
   "category": "convenience",
   "body_location": "subdermal upper abdomen (left hypochondriac region, beneath the ribcage margin)",
   "description": "The NutriLog is a passive metabolic monitoring implant that uses a combination of continuous glucose monitoring via enzymatic electrochemical sensor, gastric motility detection through piezoelectric vibration analysis, and post-absorptive blood marker spectroscopy to construct a real-time nutritional intake model. As food is consumed and absorbed, the implant builds a running log of estimated caloric intake, macronutrient ratios, micronutrient proxies, and glycemic load — with accuracy rated at plus or minus eight percent for most common food matrices. It does not require any user input; the passive sensor suite generates intake data automatically, with the user receiving summary reports through a paired device, neural mesh, or a simple LED subcutaneous display available in premium models. The implant also tracks basal metabolic rate drift over time, adjusting its intake recommendations as the user's body composition changes. A companion database, updated monthly via network sync, covers the nutritional profiles of roughly 94% of commercially available food products in GLMZ's market.",

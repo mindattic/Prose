@@ -4,12 +4,7 @@
   "brand_name": "Tessera",
   "product_name": "Tessera Industries Optical Neural Interface",
   "type": "technology",
-  "aliases": [
-    "ONI",
-    "Light Link",
-    "Tessera Bridge",
-    "Eye Wire"
-  ],
+  "aliases": [],
   "subcategory": "neural_interface",
   "description": "A neural interface that uses optogenetic technology — light-activated proteins expressed in neural tissue — instead of electrical signals to communicate with the brain. The ONI implants engineered opsins (light-sensitive proteins) into targeted neural populations, then uses arrays of microscale LEDs implanted along the brain surface to stimulate or read neural activity through light patterns. The optical approach offers dramatically higher spatial resolution than electrical interfaces, enabling communication with individual neurons rather than groups, and eliminates the electromagnetic interference issues that plague conventional implants.",
   "tier_availability": "Tier 4+",

@@ -68,7 +68,13 @@ def main():
     parser.add_argument("--concurrency", type=int)                     # Extract: parallel API calls (default 20)
 
     # Parse the command-line arguments into an object
+    parser.add_argument("--silent", action="store_true", help="Suppress all console output")
     args = parser.parse_args()
+    if args.silent:
+        import sys as _sys, os as _os
+        _sys.stdout = open(_os.devnull, "w")
+        _sys.stderr = open(_os.devnull, "w")
+
 
     # Print a banner so the user knows the pipeline is starting.
     # Rich markup: [bold red] makes the text bold and red in the terminal.

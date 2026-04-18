@@ -4,12 +4,7 @@
   "brand_name": "Ouroboros",
   "product_name": "Protocol Omega",
   "type": "technology",
-  "aliases": [
-    "Protocol Omega",
-    "Blackout Protocol",
-    "Emergency Shutoff",
-    "Grid Kill"
-  ],
+  "aliases": [],
   "subcategory": "energy",
   "description": "Protocol Omega is Ouroboros Energy's city-wide emergency power management system — a set of automated and manual procedures for managing catastrophic power disruption events. The protocol defines a hierarchy of power priority that determines which blocks, buildings, and systems receive power when total generation capacity falls below total demand. At the top of the hierarchy are Ouroboros's own facilities, followed by hospitals and life-support infrastructure, then Tier 5 corporate headquarters, then progressively lower tiers of commercial and residential consumers.\n\nThe protocol has been activated three times in GLMZ's history. The most recent activation, during the Lake Effect Storm of 2193, demonstrated both the protocol's effectiveness and its brutality. When ice damage disabled two Tokamak reactors and severed multiple TrunkNet segments simultaneously, Protocol Omega activated and began shedding load according to its priority hierarchy. Tier 5 and 4 districts maintained full power throughout the 72-hour event. Tier 3 districts experienced rolling blackouts. Tiers 2 and 1 lost power entirely for the duration. Eleven people died of exposure in unpowered lower-tier buildings during the storm — deaths that Ouroboros's official incident report attributed to 'inadequate personal preparedness' rather than power allocation decisions.\n\nThe protocol's priority hierarchy is not publicly documented. Ouroboros acknowledges that a hierarchy exists but classifies the specific rankings as proprietary, arguing that public knowledge of the hierarchy would create security vulnerabilities and encourage gaming of the system. Independent analysts have reverse-engineered the hierarchy from the 2193 event data and from smaller disruptions, and their findings confirm what everyone already suspected: power priority correlates exactly with economic value. The blocks that generate the most revenue for Ouroboros keep their lights on. Everyone else sits in the dark.",
   "tier_availability": "Tier 2",

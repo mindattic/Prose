@@ -161,6 +161,12 @@ if __name__ == "__main__":
     # --limit: Cap the number of repairs (useful for cautious, incremental fixing)
     parser.add_argument("--limit", type=int, help="Limit number of repairs")
 
+    parser.add_argument("--silent", action="store_true", help="Suppress all console output")
     args = parser.parse_args()
+    if args.silent:
+        import sys as _sys, os as _os
+        _sys.stdout = open(_os.devnull, "w")
+        _sys.stderr = open(_os.devnull, "w")
+
 
     run_repair(dry_run=args.dry_run, min_confidence=args.min_confidence, limit=args.limit)

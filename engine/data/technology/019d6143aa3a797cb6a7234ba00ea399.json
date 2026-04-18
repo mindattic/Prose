@@ -4,12 +4,7 @@
   "brand_name": "Cinderblock",
   "product_name": "Cinderblock AI GazeNet PX-11 Predictive Crowd Behavior Analytics Platform",
   "type": "technology",
-  "aliases": [
-    "The Stare",
-    "PX-Eye",
-    "Gazer",
-    "CrowdMind"
-  ],
+  "aliases": [],
   "subcategory": "surveillance",
   "description": "The GazeNet PX-11 is a distributed machine-vision surveillance platform deployed across GLMZ's public transit nodes, commercial plazas, and Tier 1 residential concourses. It operates through a mesh of 4K thermal-optical camera nodes networked into Cinderblock AI's proprietary behavioral inference engine, which analyzes micro-expressions, gait deviation, pupil dilation, and social clustering patterns in real time across crowds of up to 40,000 simultaneous subjects. The system assigns each tracked individual a Dynamic Threat Index (DTI) score updated every 0.3 seconds, flagging anomalies to corporate security dispatchers or licensed enforcement contractors without requiring facial recognition — a legal distinction that allows deployment in jurisdictions that restrict biometric identification.",
   "tier_availability": "Tier 2+ (public deployment); Tier 1 operators receive full DTI feeds",

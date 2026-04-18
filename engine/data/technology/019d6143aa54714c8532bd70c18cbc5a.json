@@ -4,12 +4,7 @@
   "brand_name": "Tessera",
   "product_name": "Tessera Industries Quantum Tunneling Data Storage",
   "type": "technology",
-  "aliases": [
-    "QTDS",
-    "Quantum Vault",
-    "Tunnel Store",
-    "Tessera Vault"
-  ],
+  "aliases": [],
   "subcategory": "computing",
   "description": "A data storage system that encodes information in quantum states of electrons held in potential wells, using quantum tunneling effects to read and write data. QTDS achieves storage densities that exceed conventional systems by a factor of 10,000, encoding a petabyte of data in a chip the size of a fingernail. The quantum encoding also provides inherent security — reading the data requires knowledge of the quantum state configuration, and unauthorized measurement collapses the data, destroying it. Information stored in QTDS is either accessible to authorized users or destroyed — there is no middle ground.",
   "tier_availability": "Tier 4+",

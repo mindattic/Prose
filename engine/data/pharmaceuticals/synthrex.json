@@ -2,15 +2,11 @@
   "id": "019d7850c6de74c9b8bf78d7521f1393",
   "name": "Synthrex",
   "type": "pharmaceutical",
-  "aliases": [
-    "Fast-track",
-    "Skipper",
-    "Rushcert"
-  ],
+  "aliases": [],
   "category": "cognitive_enhancer",
   "subcategory": "learning_acceleration",
   "manufacturer": "Helix Biosystems",
-  "description": "Synthrex is a neuroplasticity amplifier that temporarily upregulates NMDA receptor sensitivity and synaptic growth factor expression, putting the brain into a state of heightened plasticity that mirrors the learning capacity of adolescence. During its window, new motor skills, languages, technical procedures, and conceptual frameworks are acquired 3-5x faster than baseline. It was developed for accelerated military operator training but leaked into civilian markets via Helix\u0027s licensing disputes.",
+  "description": "Synthrex is a neuroplasticity amplifier that temporarily upregulates NMDA receptor sensitivity and synaptic growth factor expression, putting the brain into a state of heightened plasticity that mirrors the learning capacity of adolescence. During its window, new motor skills, languages, technical procedures, and conceptual frameworks are acquired 3-5x faster than baseline. It was developed for accelerated military operator training but leaked into civilian markets via Helix's licensing disputes.",
   "method_of_use": "injection",
   "effects": [
     "Accelerated skill acquisition (3-5x baseline)",
@@ -21,21 +17,21 @@
   ],
   "side_effects": [
     "Regression of recently learned skills if dose is interrupted mid-acquisition",
-    "Emotional volatility \u2014 heightened plasticity affects emotional regulation too",
-    "Severe cognitive fatigue post-cycle (\u0027the Hollow\u0027)",
-    "Risk of acquiring bad habits as readily as good ones \u2014 poor training during a Synthrex window is very difficult to unlearn",
+    "Emotional volatility — heightened plasticity affects emotional regulation too",
+    "Severe cognitive fatigue post-cycle ('the Hollow')",
+    "Risk of acquiring bad habits as readily as good ones — poor training during a Synthrex window is very difficult to unlearn",
     "Prolonged use causes synaptic instability"
   ],
   "duration": "4-6 hours active window",
   "addiction_risk": "moderate",
   "tier_availability": "Tier 3-4",
   "legality": "restricted",
-  "street_price": "\u03A6 90-140 per vial",
-  "cultural_context": "Synthrex is the drug of certification mills and corporate fast-track programs \u2014 a 72-hour Synthrex-assisted immersion can produce competency that normally takes six months. Helix markets it carefully, aware that regulators watch it closely. On the street it\u0027s called \u0027Fast-track\u0027 and is used by Tier 2 workers trying to qualify for Tier 3 jobs without the time or money for formal education. The \u0027Hollow\u0027 \u2014 the 12-24 hours of mental emptiness after a heavy Synthrex cycle \u2014 is considered a badge of honor in hustle culture.",
+  "street_price": "Φ 90-140 per vial",
+  "cultural_context": "Synthrex is the drug of certification mills and corporate fast-track programs — a 72-hour Synthrex-assisted immersion can produce competency that normally takes six months. Helix markets it carefully, aware that regulators watch it closely. On the street it's called 'Fast-track' and is used by Tier 2 workers trying to qualify for Tier 3 jobs without the time or money for formal education. The 'Hollow' — the 12-24 hours of mental emptiness after a heavy Synthrex cycle — is considered a badge of honor in hustle culture.",
   "story_hooks": [
-    "A Shelf runner used bootleg Synthrex to learn a corporate security system\u0027s maintenance protocols \u2014 but the bad data they trained on is now deeply wired in, and a job goes wrong because of it",
-    "A Helix researcher discovers that Synthrex\u0027s military-grade formulation is being manufactured in a Shelf lab \u2014 someone leaked the synthesis protocol, and people are going into \u0027the Hollow\u0027 and not coming out",
-    "A character needs to master a skill in 48 hours that should take years \u2014 and Synthrex is the only option, with a trainer who may or may not be teaching them correctly"
+    "A Shelf runner used bootleg Synthrex to learn a corporate security system's maintenance protocols — but the bad data they trained on is now deeply wired in, and a job goes wrong because of it",
+    "A Helix researcher discovers that Synthrex's military-grade formulation is being manufactured in a Shelf lab — someone leaked the synthesis protocol, and people are going into 'the Hollow' and not coming out",
+    "A character needs to master a skill in 48 hours that should take years — and Synthrex is the only option, with a trainer who may or may not be teaching them correctly"
   ],
   "tags": []
 }

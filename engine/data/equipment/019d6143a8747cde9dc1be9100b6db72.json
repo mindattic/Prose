@@ -4,12 +4,7 @@
   "brand_name": "Tessera",
   "product_name": "Tessera Corponation Packet Dissociation Rig",
   "type": "equipment",
-  "aliases": [
-    "PDR",
-    "Dissociator",
-    "The Scatter",
-    "Ghost Rig"
-  ],
+  "aliases": [],
   "category": "utility",
   "description": "The Packet Dissociation Rig is a compact offensive and defensive hacking platform designed around a single foundational principle: any data transmission can be made functionally unreadable if its constituent packets are distributed across enough simultaneous channels with enough temporal jitter between them. The PDR does not encrypt in the conventional sense — it dissociates. Outgoing transmissions are shredded into micro-packets and distributed across dozens of simultaneous frequencies, protocols, and mesh relay nodes with randomized timing offsets. The receiving end, running complementary TESSERA firmware, reassembles them. To any intercepting system, the transmission looks like background noise across multiple unrelated channels.\n\nThe rig itself is a matte-black unit roughly the size of a hardback novel, with a fold-out antenna array and a physical interface port for direct-connect operations. Its processing core runs TESSERA's proprietary SCATTER architecture — a dynamic algorithm that continuously adjusts dissociation parameters based on the local signal environment, making the pattern of the transmission itself unpredictable even if an adversary has characterized the method. The rig can operate in passive mode, protecting the user's own transmissions, or in active mode, where it projects dissociation interference across a local area, degrading the coherence of nearby communications it does not control.\n\nThe PDR is the standard hacking rig for TESSERA's own field operatives and is sold at significant markup to corporate security firms and licensed government intelligence units. It has a well-developed black market presence because cracked firmware removes the mandatory TESSERA backdoor — a feature the company officially denies exists but which competing intelligence services have documented extensively. The cracked version is called a Ghost Rig and commands a substantial premium over the legitimate hardware.",
   "manufacturer": "Vasquez Biocompatible Materials",

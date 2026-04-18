@@ -4,12 +4,7 @@
   "brand_name": "Tessera",
   "product_name": "Tessera Industries Optical Fiber Tap Detector OFT-1",
   "type": "equipment",
-  "aliases": [
-    "OFT-1",
-    "Fiber Finder",
-    "Tap Sweep",
-    "Line Clear"
-  ],
+  "aliases": [],
   "category": "counter-surveillance",
   "description": "A diagnostic tool that detects unauthorized taps on fiber-optic cables by measuring signal loss at micro-dB resolution — far more sensitive than standard network monitoring equipment. The OFT-1 sends a calibrated light pulse through a fiber and measures the return signal with precision that can identify the 0.1 dB loss caused by a micro-bend optical tap. The device maps the location of any detected tap to within 10 cm along the fiber run, allowing physical identification and removal. Tessera developed it as a counter to their own OT-1 optical tap — and sells both the attack and the defense.",
   "manufacturer": "Vasquez Biocompatible Materials",

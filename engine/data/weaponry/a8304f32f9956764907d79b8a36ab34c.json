@@ -2,11 +2,7 @@
   "id": "a8304f32f9956764907d79b8a36ab34c",
   "name": "Tessera Networked DMR TNDM-6 'Oracle'",
   "type": "weapon",
-  "aliases": [
-    "Oracle",
-    "TNDM-6",
-    "Prophet Rifle"
-  ],
+  "aliases": [],
   "category": "dmr",
   "description": "The TNDM-6 Oracle is Tessera's networked designated marksman rifle, extending their distributed targeting philosophy to precision engagement. When multiple Oracles are deployed, the weapons share ballistic data — wind readings from one position correct calculations at another, and target tracking data from multiple angles provides three-dimensional position estimates that no single marksman could achieve.\n\nThe Oracle fires 7mm caseless from a precision-machined barrel, and its BCI smart-scope incorporates Tessera's predictive targeting AI. The AI models target movement patterns and generates firing solutions that lead moving targets at distances where human prediction fails. When networked with other Oracles, the predictive model improves as multiple observation angles refine the target's movement vector.\n\nTessera sells the Oracle at Φ16,000 per unit, with squad packs of four available at Φ58,000. The networking protocol automatically distributes the most accurate ballistic data to the marksman with the best engagement angle, creating a dynamic fire-control solution that constantly optimizes which marksman should take which shot. In practice, Oracle teams achieve engagement rates that exceed the sum of their individual capabilities.",
   "manufacturer": "TESSERA",

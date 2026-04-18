@@ -2,11 +2,7 @@
   "name": "Lazarus APC-2 'Locust'",
   "type": "automaton",
   "classification": "Agricultural — Pest Interdiction Swarm",
-  "aliases": [
-    "Locust",
-    "Crop Cop",
-    "Green Guardian"
-  ],
+  "aliases": [],
   "manufacturer": "LAZARUS BIOWORKS",
   "description": "The APC-2 is a micro-drone swarm system deployed in GLMZ's vertical farming towers and hydroponic districts. Each individual unit is roughly the size of a human thumb — a 4-centimeter flying platform with quad-rotor propulsion and a single-use chemical payload. A standard deployment canister contains 500 units that coordinate through mesh networking to patrol agricultural volumes, identify pest organisms through spectral analysis, and neutralize them with targeted micro-doses of species-specific pesticide delivered via contact injection.\n\nLazarus developed the APC-2 to address a critical vulnerability in GLMZ's food production: the vertical farms that feed the city's population are closed ecosystems where a single pest introduction can destroy an entire crop cycle within days. Traditional pesticide application is too broad — it kills beneficial organisms alongside pests and contaminates the produce. The Locust swarm provides surgical precision, eliminating individual pest organisms while leaving everything else untouched.\n\nThe system's most impressive feature is its learning capability. When the swarm encounters an organism not in its database, it captures specimens using adhesive micro-pads and delivers them to analysis stations for classification. Over three years of deployment, the Locust network has cataloged over 2,400 pest species and subspecies in GLMZ's agricultural zones, including several that were previously unknown to entomology — engineered organisms that someone introduced deliberately to sabotage food production.",
   "tier_availability": "Tier 2+",

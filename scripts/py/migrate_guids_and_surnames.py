@@ -1,7 +1,7 @@
 """
 GUID Reference Migration + Surname Regeneration
 
-Phase 1: Build a master entity index (name → GUID) across all repos
+Phase 1: Build a master entity index (name -> GUID) across all repos
 Phase 2: Convert all related_entities, relationships, known_users, etc. from name strings to GUIDs
 Phase 3: Regenerate surnames from genetic ancestry (rarity-weighted)
 Phase 4: Re-run cross-referencing (now GUID-based)
@@ -34,12 +34,12 @@ console = Console()
 RELATIONSHIP_NAME_FIELD = "name"
 
 
-# ══════════════════════════════════════════════════════════════════
+# ==================================================================
 # Phase 1: Build master entity index
-# ══════════════════════════════════════════════════════════════════
+# ==================================================================
 
 def build_entity_index():
-    """Build a mapping of entity name → (GUID, repo, filepath)."""
+    """Build a mapping of entity name -> (GUID, repo, filepath)."""
     console.print("[bold]Phase 1: Building entity index[/bold]")
     index = {}  # name -> {id, repo, path}
     dupes = defaultdict(list)
@@ -80,9 +80,9 @@ def build_entity_index():
     return index
 
 
-# ══════════════════════════════════════════════════════════════════
+# ==================================================================
 # Phase 2: Convert references from names to GUIDs
-# ══════════════════════════════════════════════════════════════════
+# ==================================================================
 
 def convert_references_to_guids(index, dry_run=False):
     """Convert all name-based references to GUID-based references."""
@@ -176,32 +176,32 @@ def convert_references_to_guids(index, dry_run=False):
     return total_refs_converted
 
 
-# ══════════════════════════════════════════════════════════════════
+# ==================================================================
 # Phase 3: Regenerate surnames from genetic ancestry
-# ══════════════════════════════════════════════════════════════════
+# ==================================================================
 
-# Surname pools by ancestry group — real surnames, weighted toward rarer ones
+# Surname pools by ancestry group -- real surnames, weighted toward rarer ones
 SURNAME_POOLS = {
     "Sub-Saharan African": [
         "Okonkwo", "Nwosu", "Dlamini", "Mbekele", "Achebe", "Ekwensi", "Asomaning",
-        "Okafor", "Adeyemi", "Balogun", "Diallo", "Traoré", "Konaté", "Mensah",
+        "Okafor", "Adeyemi", "Balogun", "Diallo", "Traore", "Konate", "Mensah",
         "Agyemang", "Owusu", "Boateng", "Appiah", "Nkrumah", "Tamale", "Kabwit",
-        "Mwangi", "Kariuki", "Odinga", "Kamara", "Sesay", "Bangura", "Touré",
-        "Keïta", "Cissé", "Sow", "Bah", "Prempeh", "Tetteh", "Quartey",
+        "Mwangi", "Kariuki", "Odinga", "Kamara", "Sesay", "Bangura", "Toure",
+        "Keita", "Cisse", "Sow", "Bah", "Prempeh", "Tetteh", "Quartey",
     ],
     "Hispanic/Latin American": [
-        "Hernández", "Bautista", "Soriano", "Ibarra", "Espinoza", "Castañeda",
+        "Hernandez", "Bautista", "Soriano", "Ibarra", "Espinoza", "Castaneda",
         "Cervantes", "Montalvo", "Delgado", "Valenzuela", "Guerrero", "Salazar",
-        "Cardenas", "Villanueva", "Esquivel", "Sepúlveda", "Quiñones", "Jaramillo",
-        "Arredondo", "Bustamante", "Villalobos", "Cisneros", "Madrigal", "Echeverría",
-        "Zaragoza", "Trujillo", "Hinojosa", "Calvillo", "Rentería", "Tovar",
+        "Cardenas", "Villanueva", "Esquivel", "Sepulveda", "Quinones", "Jaramillo",
+        "Arredondo", "Bustamante", "Villalobos", "Cisneros", "Madrigal", "Echeverria",
+        "Zaragoza", "Trujillo", "Hinojosa", "Calvillo", "Renteria", "Tovar",
     ],
     "Northern European": [
-        "Thorvaldsdóttir", "Bergqvist", "Lindström", "Kjellberg", "Halverson",
-        "Strömqvist", "Solberg", "Haugen", "Nygaard", "Dalgaard", "Holm",
-        "Erikstad", "Vestergaard", "Möller", "Johansson", "Larsdóttir",
-        "Sigurdsson", "Árnason", "Magnúsdóttir", "Haraldsen", "Olofsson",
-        "Fredriksen", "Ingebrigtsen", "Björnsdóttir", "Kristjánsson",
+        "Thorvaldsdottir", "Bergqvist", "Lindstrom", "Kjellberg", "Halverson",
+        "Stromqvist", "Solberg", "Haugen", "Nygaard", "Dalgaard", "Holm",
+        "Erikstad", "Vestergaard", "Moller", "Johansson", "Larsdottir",
+        "Sigurdsson", "Arnason", "Magnusdottir", "Haraldsen", "Olofsson",
+        "Fredriksen", "Ingebrigtsen", "Bjornsdottir", "Kristjansson",
     ],
     "Chinese": [
         "Liang", "Zhao", "Huang", "Xu", "Zheng", "Qian", "Gao",
@@ -227,10 +227,10 @@ SURNAME_POOLS = {
         "Rahman", "Hossain", "Chowdhury", "Karunaratne", "Wickramasinghe",
     ],
     "Eastern European": [
-        "Szczypiński", "Kovalenko", "Petrović", "Krstić", "Čabarkapa",
-        "Novotný", "Wojciechowski", "Lewandowski", "Kowalczyk", "Wójcik",
+        "Szczypinski", "Kovalenko", "Petrovic", "Krstic", "Cabarkapa",
+        "Novotny", "Wojciechowski", "Lewandowski", "Kowalczyk", "Wojcik",
         "Zielinski", "Mazurek", "Volkov", "Kuznetsov", "Sokolov",
-        "Popescu", "Ionescu", "Horváth", "Kovács", "Szabó",
+        "Popescu", "Ionescu", "Horvath", "Kovacs", "Szabo",
     ],
     "Vietnamese": [
         "Tran", "Nguyen", "Pham", "Hoang", "Dang", "Le", "Vo",
@@ -288,7 +288,7 @@ SURNAME_POOLS = {
 # Map specific cultures to their surname pool
 # Cultures that share a surname pool with their region or a sibling culture
 CULTURE_TO_SURNAME_POOL = {
-    # Sub-Saharan African sub-groups → shared pool
+    # Sub-Saharan African sub-groups -> shared pool
     "Yoruba": "Sub-Saharan African", "Igbo": "Sub-Saharan African",
     "Ghanaian": "Sub-Saharan African", "Ethiopian": "Sub-Saharan African",
     "Kenyan": "Sub-Saharan African", "Somali": "Sub-Saharan African",
@@ -306,7 +306,7 @@ CULTURE_TO_SURNAME_POOL = {
     "Bangladeshi": "South Asian", "Indian": "South Asian",
     "Pakistani": "South Asian", "Sri Lankan": "South Asian",
     "Nepali": "South Asian", "Bhutanese": "South Asian",
-    # East Asian → specific pools already exist
+    # East Asian -> specific pools already exist
     "Chinese": "Chinese", "Korean": "Korean", "Japanese": "Japanese",
     # Northern European sub-groups
     "Swedish": "Northern European", "Norwegian": "Northern European",
@@ -318,7 +318,7 @@ CULTURE_TO_SURNAME_POOL = {
     "Ukrainian": "Eastern European", "Czech": "Eastern European",
     "Hungarian": "Eastern European", "Romanian": "Eastern European",
     "Serbian": "Eastern European", "Croatian": "Eastern European",
-    # Southeast Asian → specific pools already exist
+    # Southeast Asian -> specific pools already exist
     "Vietnamese": "Vietnamese", "Filipino": "Filipino",
     "Indonesian": "Indonesian", "Thai": "Thai",
     "Laotian": "Laotian", "Cambodian": "Cambodian",
@@ -353,7 +353,7 @@ def get_surname_pool(group):
     # Direct match (e.g., "Chinese", "Vietnamese")
     if group in SURNAME_POOLS:
         return SURNAME_POOLS[group]
-    # Mapped match (e.g., "Nigerian" → "Sub-Saharan African")
+    # Mapped match (e.g., "Nigerian" -> "Sub-Saharan African")
     mapped = CULTURE_TO_SURNAME_POOL.get(group, "")
     if mapped and mapped in SURNAME_POOLS:
         return SURNAME_POOLS[mapped]
@@ -375,7 +375,7 @@ def regenerate_surnames(index, dry_run=False):
     files = sorted(glob.glob(str(char_dir / "*.json")))
     updated = 0
 
-    # Build old_name → new_name mapping for later reference fixup
+    # Build old_name -> new_name mapping for later reference fixup
     name_changes = {}
 
     for fp in files:
@@ -396,8 +396,8 @@ def regenerate_surnames(index, dry_run=False):
             if not detail and not ancestry:
                 continue
 
-            # Flatten three-tier ancestry_detail to nationality → percentage
-            # e.g. {"East Asian": {"Chinese": {"Cantonese": 20.0}}} → {"Cantonese": 20.0}
+            # Flatten three-tier ancestry_detail to nationality -> percentage
+            # e.g. {"East Asian": {"Chinese": {"Cantonese": 20.0}}} -> {"Cantonese": 20.0}
             source = {}
             if detail:
                 for region, sub_regions in detail.items():
@@ -416,7 +416,7 @@ def regenerate_surnames(index, dry_run=False):
             if not source:
                 continue
 
-            # Keep first name(s) — everything before the last space-separated token
+            # Keep first name(s) -- everything before the last space-separated token
             words = old_name.split()
             if len(words) < 2:
                 continue
@@ -430,9 +430,9 @@ def regenerate_surnames(index, dry_run=False):
             rng = random.Random(data.get("id", old_name))
 
             # Determine surname format based on 2226 GLMZ demographics:
-            #   55% single surname — simplified over generations
-            #   35% hyphenated (two-part) — mixed heritage pride
-            #   10% triple-barrel — accumulated across generations
+            #   55% single surname -- simplified over generations
+            #   35% hyphenated (two-part) -- mixed heritage pride
+            #   10% triple-barrel -- accumulated across generations
             roll = rng.random()
             if roll < 0.55:
                 num_parts = 1
@@ -499,9 +499,9 @@ def regenerate_surnames(index, dry_run=False):
     return name_changes
 
 
-# ══════════════════════════════════════════════════════════════════
+# ==================================================================
 # Phase 4: Regenerate first names from genetic ancestry
-# ══════════════════════════════════════════════════════════════════
+# ==================================================================
 
 # First name pools by ancestry group
 FIRST_NAME_POOLS = {
@@ -514,7 +514,7 @@ FIRST_NAME_POOLS = {
     "Hispanic/Latin American": [
         "Alejandro", "Valentina", "Santiago", "Camila", "Mateo", "Luciana",
         "Diego", "Isadora", "Rafael", "Marisol", "Emiliano", "Ximena",
-        "Joaquín", "Paloma", "Esteban", "Daniela", "Odalys", "Renata",
+        "Joaquin", "Paloma", "Esteban", "Daniela", "Odalys", "Renata",
         "Aurelio", "Esperanza", "Ignacio", "Soledad", "Cruz", "Mariposa",
     ],
     "South Asian": [
@@ -605,7 +605,7 @@ FIRST_NAME_POOLS = {
     ],
 }
 
-# Cosmopolitan names — cross-cultural names common in 2226 GLMZ
+# Cosmopolitan names -- cross-cultural names common in 2226 GLMZ
 # Used 50% of the time regardless of ancestry
 COSMOPOLITAN_NAMES = [
     "Kai", "Nova", "Soren", "Zara", "Luca", "Mika", "Rio", "Sage",
@@ -695,9 +695,9 @@ def regenerate_first_names(index, dry_run=False):
     console.print(f"  First names regenerated: {updated}")
 
 
-# ══════════════════════════════════════════════════════════════════
+# ==================================================================
 # Main
-# ══════════════════════════════════════════════════════════════════
+# ==================================================================
 
 def main():
     import argparse
@@ -706,7 +706,13 @@ def main():
     parser.add_argument("--dry-run", action="store_true")
     parser.add_argument("--force", action="store_true", help="Force overwrite (accepted for pipeline compatibility)")
     parser.add_argument("--limit", type=int, help="Limit number of characters (accepted for pipeline compatibility)")
+    parser.add_argument("--silent", action="store_true", help="Suppress all console output")
     args = parser.parse_args()
+    if args.silent:
+        import sys as _sys, os as _os
+        _sys.stdout = open(_os.devnull, "w")
+        _sys.stderr = open(_os.devnull, "w")
+
 
     if args.phase in ("1", "all"):
         index = build_entity_index()

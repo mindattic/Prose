@@ -4,11 +4,7 @@
   "brand_name": "Ouroboros",
   "product_name": "Ouroboros Energy Tidal Frequency Dead Drop",
   "type": "equipment",
-  "aliases": [
-    "Tidal Drop",
-    "The Buoy",
-    "OE-TFDD"
-  ],
+  "aliases": [],
   "category": "comms",
   "description": "The Tidal Frequency Dead Drop is a waterproof, neutrally buoyant data storage and transmission device designed to be deployed in GLMZ's extensive subsurface water infrastructure — the drainage canals, flood management tunnels, retention basins, and tidal exchange channels that run beneath much of the city's lower districts. The device drifts passively with water flow until it reaches a pre-programmed depth or salinity threshold, at which point it anchors itself magnetically to any ferrous surface in its proximity and enters a listening state. A courier with the corresponding receiver can make contact simply by moving through the same water infrastructure within 15 meters of the deployed unit, triggering a rapid burst transmission of the stored payload over a short-range encrypted channel that exists for only the duration of the exchange — typically 1.4 to 3 seconds.\n\nOuroboros Energy developed the Tidal Frequency Dead Drop ostensibly for use in its subsurface infrastructure monitoring network, where autonomous sensor units needed a mechanism to offload collected data to maintenance personnel without requiring hardwired access points. The dead drop architecture — passive storage, triggered burst, automatic payload wipe after successful transfer — was a genuine engineering solution to a real logistics problem. It is also, with minimal modification, a near-perfect covert communication tool. The water infrastructure provides physical concealment, acoustic masking, and a delivery medium that moves payloads passively across the city without any operator involvement after initial deployment.\n\nThe device has become foundational to GLMZ's underground information economy. Operators who need to pass sensitive data across the city without courier risk deploy a Tidal Drop into the drainage system at one location and let the city's own water management infrastructure carry it to the recipient's collection point. The 72-hour operational window and automatic payload wipe on successful transfer mean that even a recovered device yields nothing actionable after the exchange has occurred.",
   "manufacturer": "Infinite Loop Recycling",

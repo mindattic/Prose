@@ -2,12 +2,7 @@
   "id": "019d6143ab3f72a6bd61e58f7bf3db03",
   "name": "Reactive Countermeasure Interceptor Drone RCID-4 'Thornwall'",
   "type": "weapon",
-  "aliases": [
-    "Thornwall",
-    "The Fence",
-    "Spinedog",
-    "Reactive Shell"
-  ],
+  "aliases": [],
   "category": "drone",
   "description": "The RCID-4 is a defensive drone platform designed not to seek targets but to occupy space. Deployed in clusters of six to twelve units, Thornwall drones form an autonomous defensive perimeter around a protected zone, person, or object. Each unit is a flattened disc approximately 18 centimeters in diameter, capable of hovering at fixed coordinates with a positional accuracy of 3 centimeters. The drone's outer rim is lined with 24 directed flechette tubes, each loaded with a single tungsten-tipped gauss-accelerated needle. When an object crosses the drone's proximity threshold at a velocity consistent with a ballistic projectile or aggressive human movement, the relevant flechette tubes fire in a directed pattern toward the intrusion vector.\n\nThe Thornwall's threat discrimination uses a combination of radar cross-section analysis and linear magnetic field disruption detection — it can distinguish a thrown object from a person walking, a running attacker from a retreating ally. The discrimination algorithm, developed by Tessera Corponation's autonomous defense division, is licensed separately from the hardware and requires subscription renewal. Operators who let their license lapse find their Thornwall clusters defaulting to a degraded 'velocity-only' discrimination mode that has been responsible for several friendly-fire incidents.\n\nWhat makes the Thornwall distinctive in the broader drone ecosystem is its role reversal — it is a weapon that does not pursue, hunt, or seek. It simply exists in space and punishes intrusion. This passive-aggressive tactical philosophy has made it enormously popular in corporate interior defense, high-value personal protection, and among wealthy paranoids who want their apartments to fight back. The cultural unease around Thornwall clusters centers on the question of accountability — when a drone fires autonomously and kills someone, the manufacturer's end-user license agreement explicitly transfers all liability to the operator.",
   "manufacturer": "Clarity Meditation",

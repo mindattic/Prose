@@ -4,12 +4,7 @@
   "brand_name": "TESSERA",
   "product_name": "QuantumLock QEC-3",
   "type": "technology",
-  "aliases": [
-    "QuantumLock",
-    "QEC-3",
-    "Q-Comm",
-    "Quantum Encrypted"
-  ],
+  "aliases": [],
   "subcategory": "infrastructure",
   "description": "The QuantumLock QEC-3 is a point-to-point communication system that uses quantum key distribution to achieve theoretically unbreakable encryption. The system relies on the fundamental properties of quantum mechanics: any attempt to intercept or measure the quantum key transmission alters the quantum states being transmitted, immediately alerting both parties to the interception attempt. This is not a mathematical encryption that might be broken by future computers — it is encryption guaranteed by the laws of physics.\n\nThe QEC-3 consists of paired terminal units connected by dedicated fiber optic lines that carry the quantum key distribution channel alongside the encrypted data channel. Each terminal contains a single-photon source, a photon detector, and the quantum random number generators that produce the encryption keys. The system generates new keys continuously, with each key used only once and discarded — a one-time pad system that would be impractical without quantum key generation to produce the enormous volume of random key material required.\n\nThe system's limitation is its requirement for a dedicated physical fiber connection between the two communicating terminals. Quantum key distribution cannot be relayed or routed through network nodes — any intermediate point would break the quantum entanglement that guarantees security. This means QEC-3 is a point-to-point system only, requiring a dedicated fiber for each communicating pair. TESSERA sells the QEC-3 for 800,000 Φ per terminal pair plus the cost of the dedicated fiber installation. At these prices, QuantumLock is used exclusively for the most sensitive communications: corponation board-to-board channels, military command links, and financial transaction verification for trades worth billions of Φ.",
   "tier_availability": "Tier 5",

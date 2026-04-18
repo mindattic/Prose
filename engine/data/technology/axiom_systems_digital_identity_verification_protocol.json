@@ -4,12 +4,7 @@
   "brand_name": "Axiom",
   "product_name": "TrueID DVP-4",
   "type": "technology",
-  "aliases": [
-    "TrueID",
-    "DVP-4",
-    "Digital ID",
-    "Identity Protocol"
-  ],
+  "aliases": [],
   "subcategory": "infrastructure",
   "description": "The TrueID DVP-4 is the digital identity verification system integrated into every BCI that confirms a user's identity for all network transactions, physical access control, financial operations, and social interactions that require authentication. TrueID generates a cryptographic identity certificate derived from the user's unique BCI hardware signature, biometric data (neural pattern, retinal scan, fingerprint, voice print), and a knowledge factor (a passphrase or neural gesture that only the user can produce). All three factors must align for identity verification to succeed.\n\nThe protocol operates continuously and transparently — the user's BCI constantly broadcasts a low-power identity beacon that nearby systems can query for verification purposes. Walking into a building, making a purchase, or accessing a network resource triggers an automatic TrueID verification that completes in under 50 milliseconds, fast enough to be imperceptible. The user does not need to present identification, swipe a card, or enter a password — their BCI handles all authentication automatically. This convenience has made TrueID the universal identity layer in GLMZ: there is no transaction, no door, no system that does not verify identity through TrueID.\n\nThe implications of universal digital identity are profound. Every interaction is logged. Every movement through a door, every purchase, every network access creates a timestamped identity record in Axiom's verification database. Axiom's privacy policy states that verification records are retained for 7 years and accessible only to the user and to authorities with valid legal process — but the definition of 'authorities' in a corporate sovereignty context includes the governing corponation of the user's residential block, the corponation that owns any building the user enters, and any organization with a valid data-sharing agreement with Axiom. The practical result is near-total surveillance disguised as convenience.",
   "tier_availability": "Tier 1",

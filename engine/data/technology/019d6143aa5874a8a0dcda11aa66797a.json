@@ -4,12 +4,7 @@
   "brand_name": "Zheng",
   "product_name": "Zheng-Dao Bioelectric FluxSpine BX-7 Kinetic Harvest Implant",
   "type": "technology",
-  "aliases": [
-    "The Eel",
-    "Spine Tap",
-    "BX",
-    "Kineharvest"
-  ],
+  "aliases": [],
   "subcategory": "energy",
   "description": "The FluxSpine BX-7 is a surgically-implanted piezoelectric energy harvesting system that extracts usable electrical power from the mechanical stress of the host's skeletal and muscular activity. A lattice of flexible piezoelectric film strips — approximately 0.3mm thick — is bonded to the periosteum of the spine, femurs, and tibiae during a four-hour implantation procedure. Each flex, step, and postural adjustment generates micro-currents that are rectified and stored in a subcutaneous lithium-ceramic buffer cell seated near the iliac crest. Under normal ambulatory conditions, the BX-7 generates between 18 and 34 milliwatts continuously — insufficient for power-hungry augmentations alone, but enough to meaningfully extend the operational life of neural interfaces, retinal overlays, and embedded comms gear.\n\nZheng-Dao's key innovation in the BX-7 over earlier kinetic harvest systems is the BioSync adaptive film calibration protocol, which uses the implant's onboard microprocessor to continuously remap which film segments are generating optimal yield based on the host's gait, posture, and activity patterns. Over approximately six weeks post-implantation, the system effectively personalizes itself to the individual, improving output by an average of 40% compared to factory defaults. The buffer cell charges conventional augmentation power sockets via a subcutaneous induction pad, eliminating the need for the host to consciously manage charging cycles.\n\nThe BX-7 is standard equipment for Tier 3 and Tier 4 citizens who carry augmentations but cannot reliably afford or access charging infrastructure. It's also heavily used in the courier, dockworker, and construction labor sectors, where high daily step counts translate to meaningful energy yields. A significant gray market exists for BX-7 units harvested from deceased donors, which carry the previous host's calibration data and require painful re-calibration procedures.",
   "tier_availability": "Tier 3+",

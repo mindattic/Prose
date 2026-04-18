@@ -298,7 +298,7 @@ public class XrefService
 
         matchRegex = new Regex(
             $@"(?<![a-zA-Z0-9\-])({string.Join("|", patterns)})(?![a-zA-Z0-9\-])",
-            RegexOptions.IgnoreCase,
+            RegexOptions.None,
             TimeSpan.FromSeconds(2));
     }
 
@@ -424,6 +424,15 @@ public class XrefService
         EnsureBuilt();
         return index.Values.DistinctBy(e => e.Id);
     }
+
+    /// <summary>Full name→entry index including aliases. Used by CrossReferenceService.</summary>
+    public IReadOnlyDictionary<string, XrefEntry> GetNameIndex()
+    {
+        EnsureBuilt();
+        return index;
+    }
+
+    public void InvalidateIndex() => Invalidate();
 }
 
 public record XrefEntry(string Id, string DisplayName, string Type, string Route, string Subtitle = "");

@@ -4,12 +4,7 @@
   "brand_name": "Zheng",
   "product_name": "Zheng-Dao Bioelectric PulseGuard CR-2 Cardiac Rhythm Stabilization Implant",
   "type": "technology",
-  "aliases": [
-    "The Ticker",
-    "CR-2",
-    "HeartLock",
-    "Zheng Pulse"
-  ],
+  "aliases": [],
   "subcategory": "medical",
   "description": "The PulseGuard CR-2 is a subdermal cardiac rhythm management implant roughly the size of a large coin, seated beneath the left clavicle via a 15-minute outpatient procedure. It combines a next-generation adaptive pacemaker with a bioelectric defibrillation module capable of delivering a precisely calibrated shock to terminate ventricular fibrillation without the energy demands that made earlier implanted defibrillators bulky and short-lived. The CR-2 harvests a portion of its operating power from the body's own bioelectric gradient using Zheng-Dao's established microcurrent harvesting architecture, supplemented by a solid-state reserve cell with a projected 12-year lifespan under normal load.\n\nWhat distinguishes the CR-2 from legacy cardiac implants is its real-time arrhythmia classification engine — a compact neuromorphic processing unit that continuously analyzes cardiac waveforms and distinguishes between benign rhythm variations (common in heavily augmented individuals whose implants introduce bioelectric interference) and genuinely dangerous arrhythmias requiring intervention. This dramatically reduces inappropriate shock delivery, which had been a leading cause of augmentation-related cardiac injury in GLMZ's densely wired population. The device communicates with Saltmarsh Telecom's health monitoring infrastructure when in range, forwarding anonymized rhythm data to Zheng-Dao's cardiac analytics network.\n\nThe CR-2 is standard issue for any citizen receiving thoracic augmentation above a certain implant density threshold, and Tier 1 corporate employees frequently receive it as a proactive measure regardless of cardiac history. In lower tiers, access is more complicated — the device is theoretically available through subsidized Tier 3 health programs, but waiting lists run 18 months or longer, and counterfeit units using inferior capacitor arrays have caused several documented deaths by delayed defibrillation. A persistent rumor in security circles holds that the CR-2's Saltmarsh data uplink can be exploited to deliver a targeted cardiac event — a claim Zheng-Dao dismisses as technically impossible and Arcturus Defense Solutions has reportedly been investigating for three years.",
   "tier_availability": "Tier 1–2 (standard issue); Tier 3 (subsidized waitlist); Grey market Tier 4+",

@@ -4,12 +4,7 @@
   "brand_name": "Vantablack",
   "product_name": "Vantablack Media Passive Emission Cartography System",
   "type": "equipment",
-  "aliases": [
-    "PECS",
-    "the Cartographer",
-    "signal map",
-    "ghost grid"
-  ],
+  "aliases": [],
   "category": "sensor",
   "description": "The Passive Emission Cartography System is a compact, non-transmitting surveillance device that builds a three-dimensional map of an environment by passively cataloguing all electromagnetic emissions present — radio frequencies, WiFi-equivalent mesh signals, cellular handshake traffic, Bluetooth-equivalent short-range protocols, and the low-frequency emissions of powered electronic equipment. Rather than actively scanning, the PECS simply listens, feeding a continuous stream of emission data into a spatial reconstruction algorithm that infers the physical layout of a space and the location of active devices within it. Over a dwell time of fifteen to thirty minutes, it produces a probabilistic floor plan accurate enough to identify rooms, corridors, and the approximate positions of networked devices and electronic equipment.\n\nVantablack's design philosophy is rooted in their media intelligence background — the system was originally developed to map the technical infrastructure of rival broadcast facilities and live event venues without physical access. The PECS produces no emissions of its own, making it essentially invisible to counter-surveillance sweeps that rely on detecting active scanning equipment. Its outputs are rendered as layered cartographic overlays, color-coded by emission type and confidence level, and can be exported to standard tactical display formats. The system cannot penetrate emission-shielded environments, but it excels at revealing the boundaries of shielded zones by mapping where emissions abruptly terminate.\n\nIn GLMZ, the PECS has migrated from Vantablack's corporate intelligence operations into the hands of extraction teams, investigative journalists, and infrastructure saboteurs. Its passive nature makes it legally ambiguous — it receives only, and its operators argue it is no different in principle from a radio receiver. Authorities contest this framing vigorously, particularly when PECS-generated maps are found in conjunction with evidence of physical infiltration.",
   "manufacturer": "VANTABLACK MEDIA",

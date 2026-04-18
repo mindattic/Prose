@@ -2,11 +2,7 @@
   "id": "8c2ce5da9668f356cb903cc4c6662ab5",
   "name": "Tessera Networked SMG TNSM-3 'Chorus'",
   "type": "weapon",
-  "aliases": [
-    "Chorus",
-    "TNSM-3",
-    "Harmony Gun"
-  ],
+  "aliases": [],
   "category": "smg",
   "description": "The TNSM-3 Chorus is the SMG variant of Tessera's networked weapons platform, sharing the TAR-12 Consensus's distributed targeting AI in a compact package designed for close-quarters team operations. When multiple Chorus units are networked, the weapons coordinate fire distribution, prevent friendly-fire incidents, and assign sectors of fire automatically based on each operator's position and facing.\n\nChambered in 4.6mm caseless with a 30-round magazine, the Chorus provides adequate individual firepower. Its true capability emerges in teams of three or more, where the networking creates a coordinated defense that covers all angles simultaneously. The BCI link provides each operator with their teammates' positions, assigned sectors, and real-time ammunition counts, enabling tactical coordination without verbal communication.\n\nThe TNSM-3 costs Φ5,000 per unit, and Tessera sells them in team packs of four with a discount to Φ18,000. The networking protocol is encrypted and self-organizing — units automatically detect and connect to other Chorus weapons within 200 meters. This simplicity of deployment makes the system practical for ad-hoc team formation, though the networking also means stolen Chorus units could potentially join an enemy's network if not properly locked.",
   "manufacturer": "TESSERA",
