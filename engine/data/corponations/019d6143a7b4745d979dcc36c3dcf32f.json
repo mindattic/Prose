@@ -316,5 +316,14 @@
     "VESPER AESTHETICS Iris Couture Prismatic Eye",
     "Zheng-Dao Heavy Industries Tectonic Charge TC-5 'Fault Line'",
     "Zheng-dao Bioelectric"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z1"
+    ],
+    "primaryZone": "Z1",
+    "lakefrontAccess": true,
+    "description": "18 chartered zones globally; GLMZ primary is the sovereign enclave centered on the former Millennium Park site extending north to the Chicago River, Zone 1. The Loop's premier address. Home to the Governance Consortium administrative chambers and the Grand Exchange financial market. Tessera sets the aesthetic and commercial standard for the Corridor and expects the Corridor to know it.",
+    "grayZoneRelationship": "Tessera has no Gray Zone relationship. The concept does not appear in their internal documentation except as a category of risk to be managed."
+  }
 }

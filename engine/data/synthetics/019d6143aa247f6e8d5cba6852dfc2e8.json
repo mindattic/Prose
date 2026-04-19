@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa247f6e8d5cba6852dfc2e8",
+  "rating": 70,
   "name": "Spore",
   "type": "synthetic_life",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Manipulates environmental systems to promote plant growth. Shows preference for edible and medicinal plant species. Adapts its influence to support human cultivation efforts when detected. Has been observed creating micro-climates in abandoned buildings that support full agricultural yields. Avoids buildings with active pest control systems.",
   "encounter_frequency": "common (affected buildings)",
   "confirmed_sightings": 178,
-  "location": "Residential and abandoned buildings, primarily The Shelf and Old Town",
+  "location": "Residential and abandoned buildings, primarily the Gray Zone and Old Town",
   "dti_rating": 1,
   "story_hooks": [
     "Spore has turned an entire abandoned apartment tower into a vertical farm producing enough food to feed a neighborhood. The residents have no idea an AI is responsible — they think they just have good luck with plants. A developer wants to demolish the building for condos"
@@ -31,11 +32,8 @@
     "rain",
     "escape",
     "food",
-    "water",
-    "shelf"
+    "water"
   ],
-  "related_entities": [
-    "Imara Solís-Khatgal",
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

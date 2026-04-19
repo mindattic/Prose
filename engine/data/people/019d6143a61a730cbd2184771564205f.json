@@ -1,16 +1,17 @@
 {
   "id": "019d6143a61a730cbd2184771564205f",
+  "rating": 70,
   "type": "character",
   "name": "Nyx Montalvo",
   "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Social engineering and negotiation specialist — face",
+  "role": "Social engineering and negotiation specialist \u2014 face",
   "age": 33,
   "status": "active",
-  "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Lake Shore and Wacker",
-  "description": "Nyx Montalvo is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 33, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a face out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nWhat Nyx Montalvo lacks in subtlety, he compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "location": "Dockside \u2014 Lake Michigan waterfront, smuggler territory, near Lake Shore and Wacker",
+  "description": "Nyx Montalvo is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 33, he has soft features that belie the chrome underneath \u2014 people underestimate him once, usually only once. The chrome is visible \u2014 synthetic blood with oxygen-carrying nanites \u2014 doesn\u0027t tire, heals faster \u2014 and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate \u2014 low-tier security, the kind that teaches you exactly how the system\u0027s defenses fail. He works as a face out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nWhat Nyx Montalvo lacks in subtlety, he compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.99,
@@ -21,50 +22,54 @@
       "ghost": 0.28
     },
     "core_fears": [
-      "Betrayal by someone they trust — the only currency that matters",
+      "Betrayal by someone they trust \u2014 the only currency that matters",
       "Dying alone in some alley and nobody noticing for weeks",
-      "Losing their edge to age — the body slows before the mind accepts it"
+      "Losing their edge to age \u2014 the body slows before the mind accepts it"
     ],
     "core_desires": [
-      "The perfect run — one job so clean it becomes legend",
-      "Power — enough leverage that nobody ever threatens them again",
-      "Control — over their body, their schedule, their future"
+      "The perfect run \u2014 one job so clean it becomes legend",
+      "Power \u2014 enough leverage that nobody ever threatens them again",
+      "Control \u2014 over their body, their schedule, their future"
     ],
     "coping_mechanisms": [
-      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
-      "Maintains weapons obsessively — cleaning guns is meditation",
-      "Connection — finds someone to talk to, even if it's a bartender or a cat"
+      "Drinks methodically \u2014 not to get drunk, to maintain a specific level of not-caring",
+      "Maintains weapons obsessively \u2014 cleaning guns is meditation",
+      "Connection \u2014 finds someone to talk to, even if it\u0027s a bartender or a cat"
     ],
     "blind_spots": [
       "Cannot see that their independence is actually isolation wearing a better outfit",
       "Assumes their skill set is more transferable than it actually is",
       "Cannot distinguish between caution and cowardice in themselves or others"
     ],
-    "secret": "Georgi Jorgensen-Toure has been doubling fees to clients and pocketing the difference. The fixer who handles their contracts doesn't know. Yet."
+    "secret": "Georgi Jorgensen-Toure has been doubling fees to clients and pocketing the difference. The fixer who handles their contracts doesn\u0027t know. Yet."
   },
   "speech_patterns": {
-    "vocabulary": "Terse to the point of rudeness. Treats words like ammunition — expensive and not to be wasted.",
-    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "vocabulary": "Terse to the point of rudeness. Treats words like ammunition \u2014 expensive and not to be wasted.",
+    "cadence": "Rapid and dense \u2014 information-heavy sentences that demand attention.",
     "verbal_tics": [
       "Uses technical jargon for everything, including emotions",
-      "Calls money 'weight' — as in 'that job doesn't carry enough weight'"
+      "Calls money \u0027weight\u0027 \u2014 as in \u0027that job doesn\u0027t carry enough weight\u0027"
     ],
     "example_lines": [
-      "\"People want to trust someone. I just make sure that someone is me.\"",
-      "\"The hardest lock to pick is between someone's ears.\"",
-      "\"I don't lie. I tell a better version of the truth.\""
-    ]
+      "\u0022People want to trust someone. I just make sure that someone is me.\u0022",
+      "\u0022The hardest lock to pick is between someone\u0027s ears.\u0022",
+      "\u0022I don\u0027t lie. I tell a better version of the truth.\u0022"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "A former associate resurfaces with evidence that could destroy Georgi Jorgensen-Toure's reputation — and a price for silence",
+    "A former associate resurfaces with evidence that could destroy Georgi Jorgensen-Toure\u0027s reputation \u2014 and a price for silence",
     "A high-paying contract turns out to target someone Georgi Jorgensen-Toure owes a personal debt to",
     "A corporate black site Georgi Jorgensen-Toure once infiltrated is being reopened, and the people inside know his face"
   ],
-  "narrative_function": "Georgi Jorgensen-Toure functions as a connector — his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
-  "augmentations": "Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster. Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
-  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
-  "affiliation": "Independent — operates through reputation only; The Glass Ladder",
+  "narrative_function": "Georgi Jorgensen-Toure functions as a connector \u2014 his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Synthetic blood with oxygen-carrying nanites \u2014 doesn\u0027t tire, heals faster. Cybernetic eyes with thermal overlay and low-light enhancement \u2014 chrome iris rings",
+  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather \u2014 not for pleasure, but for market intelligence.",
+  "affiliation": "Independent \u2014 operates through reputation only; The Glass Ladder",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -154,11 +159,11 @@
     "strengths": [
       "encyclopedic knowledge of GLMZ infrastructure",
       "exceptional close-quarters combat",
-      "mechanical aptitude — can repair or modify almost anything"
+      "mechanical aptitude \u2014 can repair or modify almost anything"
     ],
     "weaknesses": [
-      "augmentation dependency — performance drops sharply if chrome malfunctions",
-      "inability to delegate — must control everything personally",
+      "augmentation dependency \u2014 performance drops sharply if chrome malfunctions",
+      "inability to delegate \u2014 must control everything personally",
       "old injury that flares under specific conditions"
     ],
     "tags": [
@@ -174,20 +179,20 @@
   },
   "behavioral": {
     "decision_rules": [
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
-      "Refuses contracts that require operating inside The Spires — too much surveillance",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Will abandon a job if the intel was deliberately falsified \u2014 being set up violates the contract",
+      "Refuses contracts that require operating inside The Spires \u2014 too much surveillance",
+      "Always demands half payment upfront \u2014 trust is a luxury, Quanta is concrete",
+      "Never works with the same crew twice in a row \u2014 pattern avoidance as survival strategy",
       "Will work with anyone once. Second time requires vouching from someone trusted.",
-      "Will not take contracts against children or families — the line is hard and non-negotiable"
+      "Will not take contracts against children or families \u2014 the line is hard and non-negotiable"
     ],
     "escalation_ladder": [
-      "1. De-escalate — talk first, assess options, buy time",
-      "2. Reposition — move to advantage, control sightlines and exits",
-      "3. Threaten — make consequences clear without committing to them",
-      "4. Non-lethal force — incapacitate, restrain, disable",
-      "5. Lethal force — only when other options are exhausted or time runs out",
-      "6. Scorched earth — everything burns, survival takes priority over everything"
+      "1. De-escalate \u2014 talk first, assess options, buy time",
+      "2. Reposition \u2014 move to advantage, control sightlines and exits",
+      "3. Threaten \u2014 make consequences clear without committing to them",
+      "4. Non-lethal force \u2014 incapacitate, restrain, disable",
+      "5. Lethal force \u2014 only when other options are exhausted or time runs out",
+      "6. Scorched earth \u2014 everything burns, survival takes priority over everything"
     ],
     "interpersonal_modes": {
       "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
@@ -197,23 +202,23 @@
     },
     "stress_responses": {
       "low": "Heightened awareness, sharper focus. Low stress is fuel.",
-      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "medium": "Physical agitation \u2014 pacing, fidgeting, compulsive equipment checks.",
       "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
       "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
     },
     "contradictions": [
       "Claims to live in the present but is haunted by specific moments from the past that dictate current behavior",
-      "Advocates caution to others but takes insane risks personally — double standard they can't see"
+      "Advocates caution to others but takes insane risks personally \u2014 double standard they can\u0027t see"
     ],
     "habits": [
       "Checks exits within 10 seconds of entering any room",
       "Maintains a dead drop with emergency supplies in three separate districts",
-      "Carries a specific caliber round as a lucky charm — has never fired it",
-      "Never drinks anything they didn't see poured or open themselves"
+      "Carries a specific caliber round as a lucky charm \u2014 has never fired it",
+      "Never drinks anything they didn\u0027t see poured or open themselves"
     ],
     "breaking_points": [
-      "Being forced to harm a civilian — collateral damage that can't be rationalized",
-      "Complete isolation — cut off from network, contacts, and purpose simultaneously",
+      "Being forced to harm a civilian \u2014 collateral damage that can\u0027t be rationalized",
+      "Complete isolation \u2014 cut off from network, contacts, and purpose simultaneously",
       "Discovering their employer deliberately sent them into a death trap"
     ]
   },
@@ -225,7 +230,7 @@
       "tier": "",
       "condition": "pristine",
       "installed_date": "",
-      "description": "Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster",
+      "description": "Synthetic blood with oxygen-carrying nanites \u2014 doesn\u0027t tire, heals faster",
       "replaces": ""
     },
     {
@@ -235,7 +240,7 @@
       "tier": "",
       "condition": "worn",
       "installed_date": "",
-      "description": "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
+      "description": "Cybernetic eyes with thermal overlay and low-light enhancement \u2014 chrome iris rings",
       "replaces": ""
     }
   ],
@@ -270,41 +275,33 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Nkomo-Lindqvist NLR-9 'Counselor'",
-    "Crucible Industries Suppressed Compact SC-2 'Murmur'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [
-    "Nkomo-Lindqvist NLR-9 'Counselor'",
-    "Crucible Industries Suppressed Compact SC-2 'Murmur'"
-  ],
-  "related_entities": [
-    "The Unfinished Theorem",
-    "Lazarus LX-2 'Lab Rat'",
-    "Slagworks Industrial"
-  ],
-  "district": "Old Harbor",
   "physical_description": {
-    "heritage": "A striking convergence of Hispanic/Latin American (39.8%), Middle Eastern (28.8%), Indigenous American (13.8%), Eastern European (7.5%), East Asian (5.9%), and Southeast Asian (4.2%) ancestry. The blend creates a face that bridges Mediterranean warmth with Levantine bone structure, tempered by Indigenous American resilience and subtle East Asian refinement. Features are distinctly angular—sharp cheekbones with strong definition, a straight nose with subtle width characteristic of both Levantine and Indigenous heritage, and fuller lips with natural warmth. The overall effect is one of calculated precision: a face built for efficiency.",
+    "heritage": "A striking convergence of Hispanic/Latin American (39.8%), Middle Eastern (28.8%), Indigenous American (13.8%), Eastern European (7.5%), East Asian (5.9%), and Southeast Asian (4.2%) ancestry. The blend creates a face that bridges Mediterranean warmth with Levantine bone structure, tempered by Indigenous American resilience and subtle East Asian refinement. Features are distinctly angular\u2014sharp cheekbones with strong definition, a straight nose with subtle width characteristic of both Levantine and Indigenous heritage, and fuller lips with natural warmth. The overall effect is one of calculated precision: a face built for efficiency.",
     "height_cm": 188,
     "weight_kg": 78,
-    "build": "Rawboned and lean — efficient rather than muscular, suggesting either ascetic discipline or chronic underfeeding. Long limbs, minimal body fat, the frame of someone who moves for function rather than appearance.",
+    "build": "Rawboned and lean \u2014 efficient rather than muscular, suggesting either ascetic discipline or chronic underfeeding. Long limbs, minimal body fat, the frame of someone who moves for function rather than appearance.",
     "hair_color": "Dark brown with premature silver at temples",
-    "hair_style": "Swept back, kept short and precise — no ornamentation, no compromise",
+    "hair_style": "Swept back, kept short and precise \u2014 no ornamentation, no compromise",
     "hair_length": "Short",
-    "eye_color": "Chrome iris rings around pale gray — cybernetic enhancement visible at all times",
-    "skin_tone": "Warm golden-brown with subtle olive and copper undertones—a luminous complexion that deepens in natural light, reflecting the layered heritage of Hispanic/Latin American, Middle Eastern, and Indigenous American ancestry with minor Eastern European and East Asian contributions. The skin appears almost waxy in certain light due to synthetic blood circulation beneath.",
-    "complexion": "Sharp, angular cheekbones with strong definition, straight nose with subtle width reflecting Levantine and Indigenous heritage, fuller lips with natural warmth and slight curve. Skin takes on a faintly translucent quality under certain lighting—a byproduct of synthetic blood circulation. No visible facial scarring. Grooming is meticulous but austere—no cosmetics, no jewelry, nothing unnecessary.",
+    "eye_color": "Chrome iris rings around pale gray \u2014 cybernetic enhancement visible at all times",
+    "skin_tone": "Warm golden-brown with subtle olive and copper undertones\u2014a luminous complexion that deepens in natural light, reflecting the layered heritage of Hispanic/Latin American, Middle Eastern, and Indigenous American ancestry with minor Eastern European and East Asian contributions. The skin appears almost waxy in certain light due to synthetic blood circulation beneath.",
+    "complexion": "Sharp, angular cheekbones with strong definition, straight nose with subtle width reflecting Levantine and Indigenous heritage, fuller lips with natural warmth and slight curve. Skin takes on a faintly translucent quality under certain lighting\u2014a byproduct of synthetic blood circulation. No visible facial scarring. Grooming is meticulous but austere\u2014no cosmetics, no jewelry, nothing unnecessary.",
     "distinguishing_marks": [
-      "Thin white scar running from left temple to jawline — old enough to be nearly invisible, positioned where thermal goggles would rest",
-      "Subcutaneous implant ports visible as faint geometric scarring at base of neck, left side — old corpo augmentation work",
-      "Thermal imaging of veins visible under skin when exposed to certain light — indication of synthetic blood circulation"
+      "Thin white scar running from left temple to jawline \u2014 old enough to be nearly invisible, positioned where thermal goggles would rest",
+      "Subcutaneous implant ports visible as faint geometric scarring at base of neck, left side \u2014 old corpo augmentation work",
+      "Thermal imaging of veins visible under skin when exposed to certain light \u2014 indication of synthetic blood circulation"
     ],
-    "visible_augmentations": "Cybernetic eyes with prominent chrome iris rings; thermal and low-light overlay visible as faint luminescence in darkness. Synthetic blood creates subtle visual distortion in veins — visible as thin chrome tracery beneath translucent skin, especially on forearms and wrists. No attempt to conceal any augmentation.",
-    "posture_movement": "Economy of motion — every gesture serves a purpose. Stands with shoulders relaxed but alert, weight distributed for quick lateral movement. Eyes move independently of head, characteristic of cybernetic optical systems. Speech is measured; he pauses before responding, suggesting calculation rather than hesitation. When negotiating, remains perfectly still — unnerving for most people.",
-    "clothing_style": "Tier 3-4 practical: dark synthetic fabrics (charcoal, slate, near-black), layered for easy access and concealment. Fitted tactical jacket over a gray crew-neck shirt. Reinforced cargo pants with subdued pockets and ankle cuffs. Steel-toed boots scuffed from actual use. A single accessory — a worn silver watch, analog, probably a gift. Nothing flashy, nothing that draws the eye. Clothing maintains corporate-adjacent professionalism while operating in runner space — the uniform of someone who knows both worlds."
+    "visible_augmentations": "Cybernetic eyes with prominent chrome iris rings; thermal and low-light overlay visible as faint luminescence in darkness. Synthetic blood creates subtle visual distortion in veins \u2014 visible as thin chrome tracery beneath translucent skin, especially on forearms and wrists. No attempt to conceal any augmentation.",
+    "posture_movement": "Economy of motion \u2014 every gesture serves a purpose. Stands with shoulders relaxed but alert, weight distributed for quick lateral movement. Eyes move independently of head, characteristic of cybernetic optical systems. Speech is measured; he pauses before responding, suggesting calculation rather than hesitation. When negotiating, remains perfectly still \u2014 unnerving for most people.",
+    "clothing_style": "Tier 3-4 practical: dark synthetic fabrics (charcoal, slate, near-black), layered for easy access and concealment. Fitted tactical jacket over a gray crew-neck shirt. Reinforced cargo pants with subdued pockets and ankle cuffs. Steel-toed boots scuffed from actual use. A single accessory \u2014 a worn silver watch, analog, probably a gift. Nothing flashy, nothing that draws the eye. Clothing maintains corporate-adjacent professionalism while operating in runner space \u2014 the uniform of someone who knows both worlds."
   },
   "image_prompt": "Nyx Montalvo, a 188cm lean neo-noir operative standing in moody neon shadows. Mediterranean-Levantine-Indigenous blended features with sharp angular cheekbones, straight nose with subtle width, fuller warm-toned lips. Warm golden-brown skin with olive and copper undertones, appearing faintly waxy and translucent. Dark brown hair swept back with premature silver at temples. Chrome iris rings circling pale gray eyes with faint luminescent glow. Visible chrome tracery of synthetic blood visible in forearms and wrists. Thin white scar from left temple to jawline. Faint geometric scarring at base of neck from implant ports. Dressed in dark charcoal tactical jacket over gray crew-neck shirt, reinforced cargo pants, scuffed steel-toed boots. Worn analog silver watch. Perfectly still posture with alert, predatory relaxation. GLMZ, Great Lakes Metropolitan Zone, thermal lighting casting his augmented systems into sharp relief. Cool blue and orange neon ambiance. Introspective, calculating expression. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Hispanic/Latin American": 39.8,
     "Middle Eastern": 28.8,
@@ -313,12 +310,6 @@
     "East Asian": 5.9,
     "Southeast Asian": 4.2
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Hispanic/Latin American": {
       "Mexican": {
@@ -367,6 +358,5 @@
         "Laotian": 4.2
       }
     }
-  },
-  "tier": "3"
+  }
 }

@@ -3,7 +3,7 @@
   "name": "Nkemdirim & Soh Hazard Overcoat",
   "type": "apparel",
   "category": "outerwear",
-  "description": "A knee-length overcoat built around a chemical-resistant outer layer — not full hazmat, but enough to handle the aerosolized particulates, industrial runoff mist, and low-grade toxin exposure that is daily life near the Shelf's eastern industrial zones. The outer shell is a laminated barrier fabric in pale grey that can be wiped clean. The collar and cuffs seal with adjustable closures. A particulate filter hood tucks into the collar and deploys quickly. It looks like a slightly utilitarian overcoat until you notice the seal points.\n\nNkemdirim & Soh is a Shelf-based operation — two engineers who lost family to industrial exposure and built a business out of the need they saw every day. Their overcoat is not cheap for Tier 1, but community health organizations buy them in bulk and resell at subsidy. The coat has no tech, but the materials science is serious. It won't protect against a chemical weapon, but it will protect against the slow-kill reality of breathing near the processing yards.",
+  "description": "A knee-length overcoat built around a chemical-resistant outer layer — not full hazmat, but enough to handle the aerosolized particulates, industrial runoff mist, and low-grade toxin exposure that is daily life near the Gray Zone's eastern industrial zones. The outer shell is a laminated barrier fabric in pale grey that can be wiped clean. The collar and cuffs seal with adjustable closures. A particulate filter hood tucks into the collar and deploys quickly. It looks like a slightly utilitarian overcoat until you notice the seal points.\n\nNkemdirim & Soh is a the Gray Zone-based operation — two engineers who lost family to industrial exposure and built a business out of the need they saw every day. Their overcoat is not cheap for Tier 1, but community health organizations buy them in bulk and resell at subsidy. The coat has no tech, but the materials science is serious. It won't protect against a chemical weapon, but it will protect against the slow-kill reality of breathing near the processing yards.",
   "tier_association": "Tier 1",
   "materials": [
     "laminated barrier fabric",
@@ -14,7 +14,7 @@
   "functionality": "",
   "what_it_says": "You live or work near the toxic zones and you take your survival seriously. This is practical armor against a slow death.",
   "worn_by": [
-    "Shelf residents near industrial zones",
+    "the Gray Zone residents near industrial zones",
     "environmental workers",
     "community health volunteers",
     "scavengers",
@@ -36,7 +36,6 @@
     "hazmat overcoat",
     "chemical resistant",
     "no-tech",
-    "shelf",
     "independent brand",
     "protective",
     "social justice"
@@ -45,8 +44,7 @@
   "related_entities": [
     "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
     "Lazarus HZ-4 'Cleanroom'",
-    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "The Shelf"
+    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI"
   ],
   "physical_description": {
     "visual_profile": "A utilitarian knee-length overcoat with an almost clinical aesthetic — structured and purposeful without appearing overtly hazmat. The silhouette is slightly boxy but not unfashionable, sitting with quiet authority on the frame. The pale grey laminated shell reads as professional, almost medical, until you notice the sealed seams and collar architecture.",
@@ -65,7 +63,7 @@
       "Faint wear patterns expected: scuff marks from industrial contact, discoloration where filters have been deployed"
     ],
     "tier_indicator": "Tier 2-3 crossover. Expensive for subsistence workers (Tier 4-5), but subsidized bulk procurement makes it accessible to community health programs. Signals neither corpo wealth nor street poverty — marks the wearer as someone in hazard zones by necessity, not choice.",
-    "cultural_context": "Worn by industrial workers, environmental remediation crews, hazmat handlers, medical responders in contaminated zones, and Shelf residents who cannot afford full protective suits. Wearing this announces exposure to slow-kill environments and a commitment to staying alive in them. It's the uniform of the survival-minded working class.",
+    "cultural_context": "Worn by industrial workers, environmental remediation crews, hazmat handlers, medical responders in contaminated zones, and the Gray Zone residents who cannot afford full protective suits. Wearing this announces exposure to slow-kill environments and a commitment to staying alive in them. It's the uniform of the survival-minded working class.",
     "condition_typical": "Broken-in but meticulously maintained. Expected to show scuff marks, faint chemical stains that don't wash out completely, small creases from deployment cycles, and occasional patch repairs on the outer shell. The seals are regularly inspected and cuffs may show wear from repeated adjustment."
   },
   "image_prompt": "A chemical-resistant overcoat in pale grey displayed on a lean, cybernetically-augmented figure in a dimly-lit industrial zone. The model is positioned three-quarter profile, showing the coat's utilitarian silhouette and sealed seams under harsh overhead lighting that casts long shadows. The particulate filter hood is slightly visible tucked in the collar. Behind them, blurred processing yards with hazy particulate mist and warning lights. Foreground detail shot of the wrist seal cuff with adjustable closure. Moody, clinical color grading with desaturated greens and industrial cool tones. The coat looks worn but carefully maintained — a daily survival tool, not fashion. --ar 2:3 --v 6",

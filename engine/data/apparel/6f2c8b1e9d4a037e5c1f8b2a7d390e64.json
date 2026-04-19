@@ -3,7 +3,7 @@
   "name": "Solvent Driftwalker Hazmat Sneaker",
   "type": "apparel",
   "category": "footwear",
-  "description": "An unusual piece — a chemical-resistant shoe built to look like a normal athletic sneaker in faded white and grey. Where standard hazmat boots are obvious, the Driftwalker is designed for light chemical exposure environments where full protective gear would attract attention. The upper is sealed synthetic with chemical-resistant coating; the sole is acid-tolerant rubber. Worn by Shelf-side fixers and investigators who need to walk through contaminated zones without looking like they're doing a job.",
+  "description": "An unusual piece — a chemical-resistant shoe built to look like a normal athletic sneaker in faded white and grey. Where standard hazmat boots are obvious, the Driftwalker is designed for light chemical exposure environments where full protective gear would attract attention. The upper is sealed synthetic with chemical-resistant coating; the sole is acid-tolerant rubber. Worn by the Gray Zone-side fixers and investigators who need to walk through contaminated zones without looking like they're doing a job.",
   "tier_association": "Tier 3",
   "materials": [
     "chemical-resistant sealed synthetic upper",
@@ -14,7 +14,7 @@
   "functionality": "Rated for light chemical and biohazard exposure (Class 1-2). Sealed seams prevent fluid wicking. Sole resists mild acid and solvent degradation. Looks like ordinary athletic footwear.",
   "what_it_says": "You go places with something to hide about why you're there. The discretion is the point.",
   "worn_by": [
-    "Shelf investigators",
+    "the Gray Zone investigators",
     "freelance fixers",
     "environmental journalists",
     "smugglers moving through contaminated zones"
@@ -57,7 +57,7 @@
       "Inner collar has RFID-readable tag pocket"
     ],
     "tier_indicator": "Tier 3-4 functional working class. Too specialized for corpo tier, too purpose-built for street tier. Signals employment in hazardous industrial roles.",
-    "cultural_context": "Worn by Shelf-side fixers, contamination site investigators, waste processing workers, and black-market salvagers. Communicates quiet competence and field experience—someone who works in dangerous zones but doesn't advertise it. A practical choice that prioritizes anonymity over obvious protective signaling.",
+    "cultural_context": "Worn by the Gray Zone-side fixers, contamination site investigators, waste processing workers, and black-market salvagers. Communicates quiet competence and field experience—someone who works in dangerous zones but doesn't advertise it. A practical choice that prioritizes anonymity over obvious protective signaling.",
     "condition_typical": "Worn-in and subtly weathered. Never pristine, always showing faint chemical residue marks and scuff patterns. The patina of actual field use is part of the design language."
   },
   "image_prompt": "Close-up fashion shot of a white and grey Solvent Driftwalker hazmat sneaker on a figure's foot, standing on a reflective chemical-slicked industrial floor. Dark moody lighting with amber safety glow reflecting off the wet surface. Side profile shows sealed seam detail and scuffed toe. Blurred urban industrial backdrop with warning stripe patterns. Shot from low angle emphasizing tread and durability. Neo-noir urban aesthetic with subtle neon reflection on the rubber sole. --ar 2:3 --v 6",

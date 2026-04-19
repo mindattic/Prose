@@ -7,17 +7,17 @@
   "category": "soda",
   "subcategory": "spiced soda",
   "manufacturer": "Barak Street Provisions (unlicensed street brand)",
-  "description": "A fiercely spiced ginger soda with synth-baobab body — Barak is brewed in unlicensed kitchen facilities across the Shelf and distributed through informal networks. Every district's batch tastes slightly different.",
+  "description": "A fiercely spiced ginger soda with synth-baobab body — Barak is brewed in unlicensed kitchen facilities across the Gray Zone and distributed through informal networks. Every district's batch tastes slightly different.",
   "flavor_profile": "Aggressive fresh ginger heat, earthy baobab tartness, moderate sweetness, high carbonation, long warm finish",
   "tier_availability": "Tier 1-2",
   "price": "Φ0.60",
   "popularity_rank": 25,
   "slogan": "No label. All fire.",
-  "cultural_context": "Barak has no central manufacturer — it's a recipe that spread through community networks decades ago and is now produced by hundreds of independent micro-brewers. The lack of consistency is considered a feature. Finding a batch you love and tracking down who made it is a minor social ritual on the Shelf.",
+  "cultural_context": "Barak has no central manufacturer — it's a recipe that spread through community networks decades ago and is now produced by hundreds of independent micro-brewers. The lack of consistency is considered a feature. Finding a batch you love and tracking down who made it is a minor social ritual in the Gray Zone.",
   "story_hooks": [
-    "A corponation's legal team has filed a trademark claim on the Barak name and recipe, arguing it constitutes an unregistered food product. The Shelf's informal producer network is trying to figure out how to fight back.",
+    "A corponation's legal team has filed a trademark claim on the Barak name and recipe, arguing it constitutes an unregistered food product. the Gray Zone's informal producer network is trying to figure out how to fight back.",
     "One particular Barak brewer has been producing a batch that's chemically distinct — not dangerous, but it produces a mild euphoric effect. Word is spreading fast, and multiple parties want to find the source.",
-    "A Tier 4 food journalist wants to write a feature on Barak's decentralized production model. The Shelf community is divided on whether visibility helps or destroys what makes it work."
+    "A Tier 4 food journalist wants to write a feature on Barak's decentralized production model. the Gray Zone community is divided on whether visibility helps or destroys what makes it work."
   ],
   "tags": [
     "soda",
@@ -28,13 +28,11 @@
     "bar",
     "food",
     "fire",
-    "shelf",
     "tier 1",
     "tier 2"
   ],
   "parent_corponation": "",
   "related_entities": [
-    "The Shelf",
     "WELLSPRING"
   ]
 }

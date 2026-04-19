@@ -36,5 +36,14 @@
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "The Corridor",
     "Vespid Dynamics"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z1"
+    ],
+    "primaryZone": "Z1",
+    "lakefrontAccess": false,
+    "description": "Waxwing Spire District — 3.2-square-kilometer enclave in central Chicago's former Magnificent Mile corridor, Zone 1. The most-watched content in the Corridor is produced within four blocks of the old Water Tower. Waxwing understands that its environment is its product and maintains the most aesthetically controlled territory in the GLMZ.",
+    "grayZoneRelationship": "Waxwing does not cover Gray Zones and does not hire from them. Their content presents a GLMZ in which Gray Zones are not the primary reality of the majority of the population."
+  }
 }

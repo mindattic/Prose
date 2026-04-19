@@ -10,14 +10,18 @@
     "tags": []
   },
   "connections": {
-    "adjacent_to": [],
+    "adjacent_to": ["The Biomass", "Ohio Corridor", "Indiana Dead Zone", "The Missouri Wetlands"],
     "exits": [],
     "tags": []
   },
   "tags": [
     "place",
     "outside",
-    "us-state"
+    "us-state",
+    "remnants",
+    "buffer-zone"
   ],
-  "related_entities": []
+  "related_entities": ["The Biomass", "Ohio Corridor", "Grand Crossing Gate"],
+  "zone": "Z12",
+  "controllingCorponation": null
 }

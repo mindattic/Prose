@@ -3,7 +3,7 @@
   "type": "place",
   "name": "Nana Kofi's Rice Box",
   "aliases": [],
-  "description": "A rice-and-stew window in Humboldt Park Shelf. Nana Kofi Johansson-Mensah makes jollof-style rice with vat-protein in a spice blend she brought from her grandmother's kitchen and has never written down. A box is Φ4 and big enough to split between two people if neither of them is particularly hungry. The rice is real — she buys it at cost from a Circuit-tier supplier who gives her the broken grains that won't sell upmarket. Broken rice cooks better anyway, she says, and she's right.",
+  "description": "A rice-and-stew window in Humboldt Park the Gray Zone. Nana Kofi Johansson-Mensah makes jollof-style rice with vat-protein in a spice blend she brought from her grandmother's kitchen and has never written down. A box is Φ4 and big enough to split between two people if neither of them is particularly hungry. The rice is real — she buys it at cost from a Circuit-tier supplier who gives her the broken grains that won't sell upmarket. Broken rice cooks better anyway, she says, and she's right.",
   "atmosphere": {
     "sights": [],
     "sounds": [],
@@ -36,5 +36,7 @@
     "Grandmother",
     "Chimera-Null",
     "Nana Regional Corporation"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

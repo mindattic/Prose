@@ -6,11 +6,11 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Identity fabricator and document forger working from The Shelf lower levels",
+  "role": "Identity fabricator and document forger working from the Gray Zone lower levels",
   "age": 56,
   "status": "active",
-  "location": "The Shelf lower levels — her workshop is inside a legitimate print-shop called Meridian Keepsakes on the Shelf's Level 3 commercial strip, near Ashland and Division",
-  "description": "Kit Solberg is a small, round-faced woman in her mid-fifties with the unhurried quality of someone who has already survived things that should have killed her. Her skin is deep brown and she wears her grey-streaked hair in long thin braids she pins up during work hours and lets fall loose on the rare occasion she relaxes. Her fingers are perennially stained with chromatic ink residue in colors that shift with the angle of light — an occupational mark she stopped trying to remove decades ago. Her eyes have patterned irises: a geneware mod that prints faint text-like symbols in the iris ring, which she had installed as a joke about her profession and has kept because she's grown fond of it.\n\nShe has been doing this work for thirty years and has the professional satisfaction of a master craftsperson. Adefunke does not rush, does not cut corners, and charges accordingly. She refers to her forgeries as 'documents' and to real identity papers as 'originals,' a distinction she maintains with dry humor. She is not ideological about her work — she doesn't particularly care whether her clients are refugees, criminals, or corporate embarrassments, as long as their Quanta are real and they don't bring surveillance to her door. She is, however, one of the few people in the Shelf's lower levels who will offer a genuine discount to people fleeing documented abuse, which she doesn't advertise and explains, when pressed, as 'good for the market.'",
+  "location": "the Gray Zone lower levels — her workshop is inside a legitimate print-shop called Meridian Keepsakes in the Gray Zone's Level 3 commercial strip, near Ashland and Division",
+  "description": "Kit Solberg is a small, round-faced woman in her mid-fifties with the unhurried quality of someone who has already survived things that should have killed her. Her skin is deep brown and she wears her grey-streaked hair in long thin braids she pins up during work hours and lets fall loose on the rare occasion she relaxes. Her fingers are perennially stained with chromatic ink residue in colors that shift with the angle of light — an occupational mark she stopped trying to remove decades ago. Her eyes have patterned irises: a geneware mod that prints faint text-like symbols in the iris ring, which she had installed as a joke about her profession and has kept because she's grown fond of it.\n\nShe has been doing this work for thirty years and has the professional satisfaction of a master craftsperson. Adefunke does not rush, does not cut corners, and charges accordingly. She refers to her forgeries as 'documents' and to real identity papers as 'originals,' a distinction she maintains with dry humor. She is not ideological about her work — she doesn't particularly care whether her clients are refugees, criminals, or corporate embarrassments, as long as their Quanta are real and they don't bring surveillance to her door. She is, however, one of the few people in the Gray Zone's lower levels who will offer a genuine discount to people fleeing documented abuse, which she doesn't advertise and explains, when pressed, as 'good for the market.'",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -56,7 +56,7 @@
     "One of her recent identity packages has appeared in a Ferrogate Transit security breach — someone is using her work in a way that could trace back to her workshop, and she needs it stopped",
     "She is approached to fabricate documentation for someone she recognizes from thirty years ago — someone whose original disappearance she may have inadvertently facilitated"
   ],
-  "narrative_function": "Essential service provider for anyone who needs identity work — new papers, altered records, corponation employment histories, citizenship documentation. Also a source of information about who in the Shelf has needed a new identity recently and why.",
+  "narrative_function": "Essential service provider for anyone who needs identity work — new papers, altered records, corponation employment histories, citizenship documentation. Also a source of information about who in the Gray Zone has needed a new identity recently and why.",
   "augmentations": "The patterned iris geneware (text-symbol print, cosmetic). A memory-enhancement implant that gives her eidetic recall for visual detail — originally for professional accuracy, now general purpose. Slight subvocal transmitter used to communicate with her assistant without speaking aloud.",
   "daily_life": "She opens Meridian Keepsakes at 0900, handles legitimate print orders until noon — she takes this seriously and does good work — then closes for 'inventory' from 1300-1700 which is her real working hours. She eats dinner alone with a physical book, an affectation she leans into deliberately.",
   "affiliation": "Independent operator — has professional relationships with several criminal networks but belongs to none of them",
@@ -128,7 +128,7 @@
     "habits": [
       "Physical book every evening, no exceptions",
       "Tests every new ink batch on herself before a job — small marks on her inner wrist",
-      "Leaves a small data offering at the shop's primary terminal every morning for the E.L.F. she believes watches the Shelf's network"
+      "Leaves a small data offering at the shop's primary terminal every morning for the E.L.F. she believes watches the Gray Zone's network"
     ],
     "breaking_points": [
       "Someone threatening her workshop physically",
@@ -187,7 +187,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -202,11 +202,10 @@
   "related_entities": [
     "Ferrogate Transit",
     "The Marrow Market",
-    "The Shelf",
     "Residue (I Still Have Your Feed)",
     "SynapTech IrisBloom Ocular Color Modulator"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Predominantly Southeast Asian (64.4%), with significant Hispanic/Latin American (19.9%) and Sub-Saharan African (15.7%) ancestry — a product of the Ubiquitous Diaspora. The genetic blend expresses as warm medium-brown skin with golden and subtle olive undertones, broad Southeast Asian-influenced cheekbones softened by fuller facial structure from African heritage, and rounded face shape reflecting the harmonious integration of all three ancestry groups.",
     "height_cm": 155,

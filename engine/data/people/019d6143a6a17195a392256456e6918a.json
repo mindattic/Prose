@@ -1,5 +1,6 @@
 {
   "id": "019d6143a6a17195a392256456e6918a",
+  "rating": 90,
   "type": "character",
   "name": "Aponi Cardenas",
   "aliases": [],
@@ -44,7 +45,7 @@
       "Assumes people outside corporate structures are less capable of nuanced loyalty",
       "Cannot see that her caution reads to others as cold indifference"
     ],
-    "secret": "Three years ago she suppressed evidence in a case that would have exposed a Solenne-Hardt subsidiary's role in a residential displacement scheme in The Shelf — a scheme that killed eleven people through unsafe interim housing. She knew. She filed the clean report anyway. The eleven names are the first entries in the ledger."
+    "secret": "Three years ago she suppressed evidence in a case that would have exposed a Solenne-Hardt subsidiary's role in a residential displacement scheme in the Gray Zone — a scheme that killed eleven people through unsafe interim housing. She knew. She filed the clean report anyway. The eleven names are the first entries in the ledger."
   },
   "speech_patterns": {
     "vocabulary": "Precise, institutional, occasionally dry to the point of seeming robotic. Uses corporate euphemism fluently but slips into directness when tired or emotionally activated. Technical financial and legal terminology deployed without explanation.",
@@ -60,7 +61,11 @@
       "\"I'm not here to judge the decision. I'm here to document the outcome. There's a distinction, and I'd prefer we both remember it.\"",
       "\"You're asking me if I sleep well. That's a very personal question for a first meeting. The answer is no, but I don't think that's what you actually want to know.\"",
       "\"Eleven is a specific number. I'd appreciate it if you'd let me finish before you decide what it means.\""
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [
     {
@@ -89,7 +94,7 @@
     "The ledger becomes known to multiple parties simultaneously — a journalist, a fixer, and someone who was in one of the eleven files",
     "Priya is assigned to investigate a case that intersects with street-level characters she has no framework for, forcing her to operate outside institutional structures",
     "Deveraux tasks her with closing a file that, for the first time, she cannot bring herself to close",
-    "Someone from The Shelf identifies her in public as 'the woman who buried the housing case' — and they're not wrong",
+    "Someone from the Gray Zone identifies her in public as 'the woman who buried the housing case' — and they're not wrong",
     "She discovers the ledger has been copied — she doesn't know by whom, or when"
   ],
   "narrative_function": "Moral ambiguity anchor — a character who is complicit without being evil, whose redemption arc is genuinely uncertain. She bridges corporate and street-level worlds as an investigator, and her ledger functions as a potential detonator for multiple plotlines. She represents institutional harm as a slow, bureaucratic process rather than dramatic villainy.",
@@ -240,32 +245,11 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Arcturus Defense Solutions ARC-P1 'Centurion'",
-    "Crucible Industries Suppressed Compact SC-2 'Murmur'",
-    "Crucible Industries Electrostatic Whip EW-3 'Live Wire'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Meridian Core",
-    "Meridian Core",
-    "Vantablack BC-1 'Briefcase'",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "The Shelf",
-    "The Spire",
-    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
-    "The Heritage Vault",
-    "Charcoal",
-    "Chicago",
-    "Silver",
-    "Haze Johansson",
-    "Slate",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "The Pure Hand",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Slagworks Industrial"
-  ],
-  "district": "The Spires",
   "physical_description": {
     "heritage": "Truly global ancestry: Hispanic/Latin American (23.9%), Indigenous American (17.9%), East Asian (16.1%), Sub-Saharan African (15.8%), South Asian (13.2%), and Northern European (13.1%) in genuinely balanced measure. This creates a complex phenotype that resists easy categorization—warm medium-brown skin with subtle golden undertones, facial bone structure that blends multiple continental influences: moderate cheekbones with definition from East and South Asian ancestry, balanced by slightly broader face width from Indigenous American and African heritage. The overall effect is harmonious and distinctive rather than dominated by any single regional ancestry.",
     "height_cm": 168,
@@ -287,6 +271,7 @@
     "clothing_style": "Exclusively muted corporate palette: charcoal, slate grey, off-white, dark navy. High-quality tailoring, always pressed. No logos, no brand signifiers, nothing deliberately decorative. Typically wears layered button-down shirts or slim turtlenecks beneath structured blazers. Trousers are tailored and dark. Her only visible jewelry is a thin silver bracelet on her left wrist—minimalist, never removed, no engraving. Her shoes are practical corporate: leather flats or low heels, always polished black. Everything about her clothing is designed to be forgotten the moment she leaves a room. Her tier-status reads as high-functioning mid-tier professional: secure enough in her position that she doesn't need to perform wealth, strategic enough to avoid appearing threatening to those above her."
   },
   "image_prompt": "Aponi Cardenas, 168cm lean woman with warm medium-brown skin and golden undertones reflecting balanced global ancestry—Hispanic/Latin American, Indigenous American, East Asian, Sub-Saharan African, South Asian, and Northern European. Close-cropped black hair with silver threading, dark brown eyes with subtle iridescent pupil shimmer from retinal overlay. Moderate defined cheekbones blending multiple continental features, faint linear scar on left temple, composed neutral expression with fine lines mapping contained tension. Wearing tailored charcoal blazer over slate grey turtleneck, dark navy trousers, polished black leather flats. Thin silver bracelet on left wrist. Economical controlled posture, professional mid-tier corporate aesthetic. GLMZ Great Lakes Metropolitan Zone, cool corporate office lighting, cool color temperature, photorealistic character portrait, professional headshot style, sharp focus on face, neutral background, cinematic lighting --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Hispanic/Latin American": 23.9,
     "Indigenous American": 17.9,
@@ -295,12 +280,6 @@
     "South Asian": 13.2,
     "Northern European": 13.1
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Hispanic/Latin American": {
       "Mexican": {
@@ -358,6 +337,5 @@
         "Scottish": 13.1
       }
     }
-  },
-  "tier": "3"
+  }
 }

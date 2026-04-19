@@ -9,8 +9,8 @@
   "role": "Bootleg media seller, fake ID vendor",
   "age": 27,
   "status": "active",
-  "location": "The Shelf, Chatham Flats, near Halsted and Chicago Ave",
-  "description": "Kit Quartey is small and angular, with warm dark brown skin, natural hair pulled into a complicated upknot threaded with glowing fiber-optic strands — she changes the color every few days, and people use it as a mood indicator without telling her. She has bioluminescent freckle patterns across her cheekbones and nose, a geneware job she did herself from a kit at nineteen, pale blue-green that pulses very faintly in low light. She dresses for speed and pockets: wide-legged trousers, a tech vest with modular attachment points, and soft-soled boots. Her stall at The Shelf is technically a 'media restoration and archiving service' — she has a sign and everything. In practice, she sells bootleg entertainment feeds, blacklisted music archives, pre-corporate-censorship film libraries, pirated educational content, and, from a very different drawer, high-quality fabricated identity documents.\n\nKit Quartey is relentlessly cheerful in a way that is partially genuine and partially armor. She talks fast, jokes constantly, and treats every transaction like it's the beginning of a friendship — which sometimes it is. She is genuinely passionate about media piracy as a political act: she believes corporate content control is a form of cultural imprisonment and sells banned Zheng-Dao territory films with the enthusiasm of a revolutionary. The ID work is more mercenary — she's good at it, it pays well, and she does not moralize about who needs a new identity or why. She is twenty-seven and has not yet fully understood the risk she is carrying.",
+  "location": "the Gray Zone, Chatham Flats, near Halsted and Chicago Ave",
+  "description": "Kit Quartey is small and angular, with warm dark brown skin, natural hair pulled into a complicated upknot threaded with glowing fiber-optic strands — she changes the color every few days, and people use it as a mood indicator without telling her. She has bioluminescent freckle patterns across her cheekbones and nose, a geneware job she did herself from a kit at nineteen, pale blue-green that pulses very faintly in low light. She dresses for speed and pockets: wide-legged trousers, a tech vest with modular attachment points, and soft-soled boots. Her stall at the Gray Zone is technically a 'media restoration and archiving service' — she has a sign and everything. In practice, she sells bootleg entertainment feeds, blacklisted music archives, pre-corporate-censorship film libraries, pirated educational content, and, from a very different drawer, high-quality fabricated identity documents.\n\nKit Quartey is relentlessly cheerful in a way that is partially genuine and partially armor. She talks fast, jokes constantly, and treats every transaction like it's the beginning of a friendship — which sometimes it is. She is genuinely passionate about media piracy as a political act: she believes corporate content control is a form of cultural imprisonment and sells banned Zheng-Dao territory films with the enthusiasm of a revolutionary. The ID work is more mercenary — she's good at it, it pays well, and she does not moralize about who needs a new identity or why. She is twenty-seven and has not yet fully understood the risk she is carrying.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -61,7 +61,7 @@
   "narrative_function": "Access point for restricted information and fabricated documentation. Source for pre-blacklist media that may contain plot-relevant information. Can provide false identities for characters who need them. Represents the city's underground information culture.",
   "augmentations": "Bioluminescent freckle geneware (self-administered, blue-green). Fiber-optic hair threading (cosmetic, color-changeable). Optical HUD implant — basic model used for document fabrication precision work.",
   "daily_life": "Sets up mid-morning, operates until late evening, often until the market security shift changes. Eats standing up. Spends two or three hours each night sourcing new bootleg content through darknet channels and updating her fabrication templates.",
-  "affiliation": "Independent; loose network of other bootleg vendors across The Shelf and The Narrows; pays informal tribute to the Chatham Flats block protection cooperative",
+  "affiliation": "Independent; loose network of other bootleg vendors across the Gray Zone and The Narrows; pays informal tribute to the Chatham Flats block protection cooperative",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -172,7 +172,7 @@
     "Pragmatist": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -233,14 +233,13 @@
     "Chatham Flats",
     "Zheng-dao Bioelectric",
     "Palladian Construction",
-    "The Shelf",
     "Arcturus Defense Solutions",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Chicago",
     "The Pale Mile",
     "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Kaleidoscopic ancestry reflecting Sub-Saharan African (31.2%), Hispanic/Latin American (29.8%), South Asian (19.8%), East Asian (9.9%), Southeast Asian (4.8%), and Northern European (4.5%) heritage. Features show striking interblending: warm golden-bronze undertones from African and Latin heritage, defined cheekbone prominence from East and South Asian ancestry, and delicate nose bridge structure from Southeast Asian genetics. The combination creates a uniquely multifaceted appearance with luminous, complex skin harmonics that shift warmth across different light conditions.",
     "height_cm": 158,

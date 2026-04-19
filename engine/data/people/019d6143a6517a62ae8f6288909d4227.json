@@ -9,7 +9,7 @@
   "role": "Former union leader (Ferrogate Transit Workers Union), now raising two grandchildren on a reduced pension",
   "age": 68,
   "status": "active",
-  "location": "The Shelf, Block 14 — a three-room unit he shares with his grandchildren, near Western and Division",
+  "location": "the Gray Zone, Block 14 — a three-room unit he shares with his grandchildren, near Western and Division",
   "description": "Zuri Migizi is a man who was built for louder rooms than the one he currently occupies. He is tall and loose-limbed, with the kind of face that was clearly handsome and has aged into something more interesting — deep sienna complexion, heavy brow, a jaw that still juts when he is angry. He has cosmetic tiger-stripe bioluminescence on his arms and collarbone, a geneware mod he got in his forties to celebrate the Union's successful Ferrogate walkout of 2172, and which now glows a gentle amber when the building's lights go down. His natural hair has gone grey-silver and he wears it in short locs. A subvocal transceiver is implanted at his throat — old union infrastructure, technically still active.\n\nFor sixteen years Tobi was the loudest, most tenacious shop steward and eventually regional director the Ferrogate Transit Workers Union ever produced. He won three collective agreements, survived two corporate union-busting campaigns, and was personally blacklisted by two Ferrogate senior executives. Then his daughter Comfort died of an untreated pulmonary infection in 2194 — a death he attributes directly to Helix Biosystems' pharmaceutical pricing, which the union had been fighting for years — and left behind two children aged four and seven. Tobi took them without a moment's hesitation and quietly stopped being the man who changed things, because he was suddenly the man who made breakfast.",
   "psychology": {
     "facet_weights": {
@@ -60,7 +60,7 @@
   "narrative_function": "Quest giver for labor and corporate accountability storylines; access point to Ferrogate Transit insider knowledge and union network; emotionally complex figure whose activism is dormant but not dead; the grandchildren can be a vulnerability or a source of motivation",
   "augmentations": "Tiger-stripe bioluminescent geneware (arms and collarbone, amber-gold) — cosmetic, personal significance; subvocal transceiver (throat implant, FTW Union network standard issue — technically still connected)",
   "daily_life": "Gets the grandchildren — Dami, 10, and Kofi-Ren, 13 — up and fed and to their learning pods by 0730, then spends the morning doing odd-job consulting for younger union members who call him for advice. Afternoons he does building maintenance for reduced rent. Evenings are homework, dinner, and whatever drama the Block 14 neighbors bring to his door.",
-  "affiliation": "Ferrogate Transit Workers Union (retired regional director, still listed as emeritus); The Shelf Block 14 informal community network",
+  "affiliation": "Ferrogate Transit Workers Union (retired regional director, still listed as emeritus); the Gray Zone Block 14 informal community network",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -178,7 +178,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -188,7 +188,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2132 — Born on The Shelf to a Ferrogate maintenance worker and a market vendor",
+      "event": "2132 — Born on the Gray Zone to a Ferrogate maintenance worker and a market vendor",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -262,11 +262,10 @@
   "related_entities": [
     "Ferrogate Transit",
     "Helix Biosystems",
-    "The Shelf",
     "Silver",
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Sub-Saharan African (41.0%) and Indigenous American (37.9%) form the dominant genetic foundation, creating deep warm bronze-mahogany tones with golden undertones. Hispanic/Latin American (8.6%), Northern European (5.5%), Central Asian (3.6%), and Southeast Asian (3.4%) ancestry layer subtle complexity—warmth deepened by the diverse continental blend, producing luminous skin with rich depth and visual complexity across warm spectrums.",
     "height_cm": 188,

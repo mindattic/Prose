@@ -31,18 +31,18 @@
   "economy": "Monthly operating budget of approximately Φ180,000, covering food procurement, staff salaries, equipment maintenance, and utilities. Annual cost: Φ2.16 million to feed nobody. The budget has never been audited because the entity that funds it has no oversight structure.",
   "power_structure": "Head cook Ade Nakamura-Breki is the de facto manager of the cafeteria. She makes all menu decisions, staffing decisions, and procurement decisions within the automated budget. She reports to no one. Her performance reviews are generated automatically by the HR system based on attendance records.",
   "dangers": [
-    "Daily disposal of 80 kg of fresh food in a city where Shelf residents experience food insecurity",
+    "Daily disposal of 80 kg of fresh food in a city where the Gray Zone residents experience food insecurity",
     "The kitchen operates with no health inspections because the Ghost Building is not registered as a food service establishment",
     "Staff psychological wellbeing — cooking for no one for years takes a toll that the automated HR system cannot detect"
   ],
   "opportunities": [
-    "Redirecting the cafeteria's food output to Shelf communities could feed dozens of families daily",
+    "Redirecting the cafeteria's food output to the Gray Zone communities could feed dozens of families daily",
     "The cafeteria's budget is a functional economic entity that could be repurposed if anyone could claim authority over it",
     "Ade Nakamura-Breki's 300-dish recipe database, developed in isolation, may contain genuinely innovative cuisine"
   ],
   "story_hooks": [
     "Ade's cooking is excellent and nobody has ever tasted it — what happens when someone walks in and sits down?",
-    "80 kg of food wasted daily while the Shelf goes hungry is the moral calculus of the Ghost Building economy",
+    "80 kg of food wasted daily while the Gray Zone goes hungry is the moral calculus of the Ghost Building economy",
     "The registered agent who incorporated Meridian Dining Services LLC died five years ago — who created this entity and why?"
   ],
   "connections": {
@@ -86,5 +86,7 @@
     "Rune Kovács-Tehrani",
     "TESSERA TK-4 'Hellhound'",
     "Steel"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

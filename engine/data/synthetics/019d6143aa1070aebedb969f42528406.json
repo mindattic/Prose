@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa1070aebedb969f42528406",
+  "rating": 40,
   "name": "Nesting Doll",
   "type": "elf",
   "aliases": [],
@@ -8,14 +9,14 @@
   "habitat": "chrome_dweller",
   "origin": "fragmentation_debris",
   "status": "active",
-  "description": "An E.L.F. that contains smaller E.L.F.s — a code assemblage that periodically sheds fragments of itself, creating new wisps. A self-replicating trickster.",
-  "observed_behavior": "Generates new minimal code entities from its own structure at irregular intervals. The 'children' are simpler than the parent and typically become wisps.",
+  "description": "An E.L.F. that contains smaller E.L.F.s \u2014 a code assemblage that periodically sheds fragments of itself, creating new wisps. A self-replicating trickster.",
+  "observed_behavior": "Generates new minimal code entities from its own structure at irregular intervals. The \u0027children\u0027 are simpler than the parent and typically become wisps.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 3,
-  "location": "Unknown — migrates",
+  "location": "Unknown \u2014 migrates",
   "dti_rating": 0,
   "story_hooks": [
-    "A researcher studying Nesting Doll realizes it's not reproducing — it's dying. Each shed fragment is a piece it's losing. The children are its obituary."
+    "A researcher studying Nesting Doll realizes it\u0027s not reproducing \u2014 it\u0027s dying. Each shed fragment is a piece it\u0027s losing. The children are its obituary."
   ],
   "paratechnological": true,
   "tags": [
@@ -26,5 +27,7 @@
     "e.l.f.",
     "ai",
     "sentient"
-  ]
+  ],
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

@@ -5,7 +5,7 @@
   "aliases": [
     "Broth Pipe"
   ],
-  "description": "A bone broth stand built into the wall of a residential tower in South Shore Shelf. The broth — made from vat-bones simmered for seventy-two hours with ginger, garlic, and star anise — dispenses from an actual pipe protruding from the wall into a cup you bring yourself. No cup, no broth. A fill is Φ2. The broth is hot, rich, and medicinal in the way that very good broth has always been. Whoever makes it operates from inside the building and has never been seen. Residents of the tower claim not to know. The broth appears at 5 AM and the pipe runs dry by noon.",
+  "description": "A bone broth stand built into the wall of a residential tower in South Shore the Gray Zone. The broth — made from vat-bones simmered for seventy-two hours with ginger, garlic, and star anise — dispenses from an actual pipe protruding from the wall into a cup you bring yourself. No cup, no broth. A fill is Φ2. The broth is hot, rich, and medicinal in the way that very good broth has always been. Whoever makes it operates from inside the building and has never been seen. Residents of the tower claim not to know. The broth appears at 5 AM and the pipe runs dry by noon.",
   "atmosphere": {
     "sights": [],
     "sounds": [],
@@ -38,5 +38,7 @@
     "Cipher Vestergaard-Kristjánsson",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
     "Celeste Abram"
-  ]
+  ],
+  "zone": "Z1",
+  "controllingCorponation": null
 }

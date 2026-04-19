@@ -1,4 +1,4 @@
-@page "/materials"
+﻿@page "/materials"
 @using StreetSamurai.Core.Models.Canon
 @inject MaterialRepository Repo
 @inject NavigationManager Nav
@@ -23,7 +23,7 @@
     <div class="dict-editor">
         @if (editing != null)
         {
-            <EditViewToggle RepoName="substrates" Title="@(isNew ? "New Material" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)">
+            <EditViewToggle RepoName="substrates" Title="@(isNew ? "New Material" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)" Rating="@(editing?.Rating ?? 0)" RatingChanged="OnRatingChanged">
                 <HeaderButtons>
                     <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i><div class="btn-lbl"> Save</div></button>
                     @if (!isNew && !confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => confirmDelete = true"><i class="bi bi-archive"></i></button> }
@@ -32,11 +32,26 @@
                 <ChildContent>
                     <div class="d-flex flex-wrap gap-2 mb-3">
                         <div style="flex: 2; min-width: 200px;"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Name" /></div>
+                        <div style="flex: 1; min-width: 120px;"><div class="field-label">Brand Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.BrandName" /></div>
+                        <div style="flex: 1; min-width: 120px;"><div class="field-label">Product Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.ProductName" /></div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
                         <div style="flex: 1; min-width: 120px;"><div class="field-label">Category</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Category" /></div>
                         <div style="flex: 1; min-width: 100px;"><div class="field-label">Tier</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.TierAvailability" /></div>
                         <div style="flex: 1; min-width: 100px;"><div class="field-label">Cost</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Cost" /></div>
                     </div>
                     <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="3" @bind="editing.Description"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Aliases (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editAliases"></textarea></div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">Properties (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editProperties"></textarea></div>
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">Developers (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editDevelopers"></textarea></div>
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">Applications (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editApplications"></textarea></div>
+                    </div>
+                    <div class="mb-3"><div class="field-label">Story Hooks (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editStoryHooks"></textarea></div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">Image Prompt</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.MidjourneyPrompt"></textarea></div>
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">DALL-E 3 Prompt</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Dalle3Prompt"></textarea></div>
+                    </div>
                 </ChildContent>
             </EditViewToggle>
         }
@@ -54,6 +69,7 @@
     private List<(string name, int count)> allTags = [];
     private HashSet<string> selectedTags = [];
     private bool isNew, confirmDelete;
+    private string editAliases = "", editProperties = "", editDevelopers = "", editApplications = "", editStoryHooks = "";
     private List<MaterialData> FilteredItems
     {
         get
@@ -68,9 +84,9 @@
     }
     private List<MaterialData> SortedItems => FilteredItems.OrderBy(x => x.Name).ToList();
     protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); RebuildTags(); if (Nav.Uri.Contains("new=true")) AddNew(); else { var qid = Nav.Uri.Contains("id=") ? Uri.UnescapeDataString(Nav.Uri.Split(new[]{"id="}, StringSplitOptions.None).Last().Split(new[]{"&"}, StringSplitOptions.None)[0]) : ""; if (!string.IsNullOrEmpty(qid)) { var t = items.FirstOrDefault(e => e.Id == qid); if (t != null) Edit(t); } if (editing == null) { var first = items.FirstOrDefault(); if (first != null) Edit(first); } } }
-    private void AddNew() { editing = new MaterialData(); isNew = true; confirmDelete = false; }
-    private void Edit(MaterialData s) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_materials", s.Id); editing = s; originalName = s.Name; isNew = false; confirmDelete = false; if (!Nav.Uri.Contains("id=" + s.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + s.Id, forceLoad: false); }
-    private void SaveEdit() { if (editing == null || string.IsNullOrWhiteSpace(editing.Name)) return; if (!isNew && originalName != editing.Name) Repo.Delete(originalName); Repo.Save(editing); editing = null; items = Repo.GetAll(); }
+    private void AddNew() { editing = new MaterialData(); isNew = true; confirmDelete = false; editAliases = ""; editProperties = ""; editDevelopers = ""; editApplications = ""; editStoryHooks = ""; }
+    private void Edit(MaterialData s) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_materials", s.Id); editing = s; originalName = s.Name; isNew = false; confirmDelete = false; editAliases = string.Join("\n", s.Aliases); editProperties = string.Join("\n", s.Properties); editDevelopers = string.Join("\n", s.Developers); editApplications = string.Join("\n", s.Applications); editStoryHooks = string.Join("\n", s.StoryHooks); if (!Nav.Uri.Contains("id=" + s.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + s.Id, forceLoad: false); }
+    private void SaveEdit() { if (editing == null || string.IsNullOrWhiteSpace(editing.Name)) return; editing.Aliases = editAliases.Split('\n', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList(); editing.Properties = editProperties.Split('\n', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList(); editing.Developers = editDevelopers.Split('\n', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList(); editing.Applications = editApplications.Split('\n', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList(); editing.StoryHooks = editStoryHooks.Split('\n', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList(); if (!isNew && originalName != editing.Name) Repo.Delete(originalName); Repo.Save(editing); editing = null; items = Repo.GetAll(); }
     private void DoDelete() { if (editing != null) { Repo.Delete(editing.Name); editing = null; items = Repo.GetAll(); confirmDelete = false; } }
     private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
     private void RebuildTags() { allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
@@ -90,4 +106,5 @@
         }
     }
 
+    private void OnRatingChanged(double value) { if (editing == null) return; editing.Rating = value; Repo.Save(editing); }
 }

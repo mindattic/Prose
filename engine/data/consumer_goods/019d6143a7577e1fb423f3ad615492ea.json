@@ -6,18 +6,18 @@
   "type": "consumer_good",
   "category": "candy",
   "subcategory": "stim-candy / popping candy",
-  "manufacturer": "Fenra Street Foods (unlicensed street brand, Shelf / Tier 1)",
-  "description": "Popping candy rocks in hibiscus-ginger flavor with an unlicensed low-grade stimulant compound mixed into the sugar base. Sold in small foil envelopes with hand-stamped branding, distributed through informal Shelf networks. The pop-and-crackle texture is a feature and a delivery mechanism.",
+  "manufacturer": "Fenra Street Foods (unlicensed street brand, the Gray Zone / Tier 1)",
+  "description": "Popping candy rocks in hibiscus-ginger flavor with an unlicensed low-grade stimulant compound mixed into the sugar base. Sold in small foil envelopes with hand-stamped branding, distributed through informal the Gray Zone networks. The pop-and-crackle texture is a feature and a delivery mechanism.",
   "flavor_profile": "Tart hibiscus and sharp fresh ginger with a faint chemical sweetness from the stim base; the popping sensation intensifies the ginger heat briefly",
   "tier_availability": "Tier 1-2",
   "price": "Φ0.60 per envelope",
   "popularity_rank": 29,
   "slogan": "Pop off.",
-  "cultural_context": "Fenra rocks are technically illegal due to unlicensed stimulant content, but enforcement on the Shelf is inconsistent. They're popular with teenagers, night-shift workers who can't afford licensed stim-candy, and anyone who finds the popping texture entertaining. The hand-stamped branding changes design every few weeks — partly aesthetic, partly to complicate enforcement identification. Regulars collect the different stamp variations.",
+  "cultural_context": "Fenra rocks are technically illegal due to unlicensed stimulant content, but enforcement in the Gray Zone is inconsistent. They're popular with teenagers, night-shift workers who can't afford licensed stim-candy, and anyone who finds the popping texture entertaining. The hand-stamped branding changes design every few weeks — partly aesthetic, partly to complicate enforcement identification. Regulars collect the different stamp variations.",
   "story_hooks": [
-    "The stimulant compound in a recent Fenra batch is significantly stronger than usual — someone upstream in the supply chain made a substitution, and the Shelf is about to feel it.",
+    "The stimulant compound in a recent Fenra batch is significantly stronger than usual — someone upstream in the supply chain made a substitution, and the Gray Zone is about to feel it.",
     "A Corponation enforcement officer has been looking the other way on Fenra for six months; the question is whether it's corruption, sympathy, or something more strategic.",
-    "A Tier 3 researcher studying unlicensed bioactive compounds in Shelf food products has been documenting Fenra's formula changes over time and has noticed a pattern that suggests the 'unlicensed' manufacturer has real chemistry training."
+    "A Tier 3 researcher studying unlicensed bioactive compounds in the Gray Zone food products has been documenting Fenra's formula changes over time and has noticed a pattern that suggests the 'unlicensed' manufacturer has real chemistry training."
   ],
   "tags": [
     "candy",
@@ -28,14 +28,12 @@
     "night",
     "food",
     "stimulant",
-    "shelf",
     "tier 1",
     "tier 2"
   ],
   "parent_corponation": "",
   "related_entities": [
     "NeuralPath VaultPay Subdermal Transaction Node",
-    "The Question",
-    "The Shelf"
+    "The Question"
   ]
 }

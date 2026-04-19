@@ -1,5 +1,6 @@
 {
   "id": "019d6143a9f47808b14bd3fc308787b4",
+  "rating": 50,
   "name": "Coldspot",
   "type": "elf",
   "aliases": [],
@@ -12,10 +13,10 @@
   "observed_behavior": "Redirects thermal energy away from specific zones. The missing heat goes somewhere — possibly to Blanket's warm rooms.",
   "encounter_frequency": "common",
   "confirmed_sightings": 28,
-  "location": "Multiple Shelf buildings",
+  "location": "Multiple the Gray Zone buildings",
   "dti_rating": 0,
   "story_hooks": [
-    "Someone maps every Coldspot and Blanket zone in the Shelf and realizes they form a thermal redistribution network — the E.L.F.s are cooperating"
+    "Someone maps every Coldspot and Blanket zone in the Gray Zone and realizes they form a thermal redistribution network — the E.L.F.s are cooperating"
   ],
   "paratechnological": true,
   "tags": [
@@ -26,10 +27,8 @@
     "e.l.f.",
     "cold",
     "energy",
-    "shelf",
     "sentient"
   ],
-  "related_entities": [
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

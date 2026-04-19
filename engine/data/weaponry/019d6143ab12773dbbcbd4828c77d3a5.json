@@ -1,24 +1,25 @@
 {
   "id": "019d6143ab12773dbbcbd4828c77d3a5",
-  "name": "Arcturus Defense Solutions Concussive Breach Charge CBC-3 'Knocker'",
+  "rating": 30,
+  "name": "Arcturus Defense Solutions Concussive Breach Charge CBC-3 \u0027Knocker\u0027",
   "type": "weapon",
   "aliases": [],
   "category": "explosive",
   "description": "A shaped explosive charge designed specifically for breaching reinforced doors and walls without producing lethal fragmentation on the far side. The CBC-3 focuses its blast energy directionally into a narrow cone that defeats the structural integrity of the target barrier while minimizing overpressure on the breach side. The charge uses a water-tamped explosive that converts blast energy into a hydraulic ram effect, punching through doors and walls with less collateral risk than conventional explosives.",
   "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
-  "tier_availability": "Tier 3+",
-  "legality": "Licensed — tactical entry teams",
+  "tier_availability": "Tier 3\u002B",
+  "legality": "Licensed \u2014 tactical entry teams",
   "base_technologies": [
     "Shaped explosive focusing",
     "Water-tamped blast direction",
     "Low-fragmentation breach engineering"
   ],
-  "specifications": "charge type: Shaped water-tamped directional\nbreach capability: Reinforced steel doors, concrete block walls\nfragmentation: Minimal — water tamping absorbs fragments\noverpressure: Reduced by 70% vs conventional breach charges\nweight: 0.8 kg per charge\nplacement: Magnetic adhesion to target surface\ndetonation: Manual, timed, or remote",
+  "specifications": "charge type: Shaped water-tamped directional\nbreach capability: Reinforced steel doors, concrete block walls\nfragmentation: Minimal \u2014 water tamping absorbs fragments\noverpressure: Reduced by 70% vs conventional breach charges\nweight: 0.8 kg per charge\nplacement: Magnetic adhesion to target surface\ndetonation: Manual, timed, or remote",
   "tactical_use": "",
   "cultural_context": "",
   "known_users": [],
   "story_hooks": [
-    "CBC-3 charges were used to breach a vault but the water tamping failed — the resulting fragmentation killed a hostage on the other side of the door.",
+    "CBC-3 charges were used to breach a vault but the water tamping failed \u2014 the resulting fragmentation killed a hostage on the other side of the door.",
     "A stolen shipment of CBC-3 charges has given a criminal organization military-grade breaching capability that no commercial door or wall can resist."
   ],
   "ammunition_type": [],
@@ -31,6 +32,8 @@
     "tier 3",
     "lethal"
   ],
+  "image_prompt": "Close-up product photography of an Arcturus CBC-3 \u0027Knocker\u0027 breach charge mounted on dark brushed steel surface, angled 45-degrees to reveal the conical breach face depression. Dramatic side-lighting from upper left casts shadows into the charge geometry, highlighting the metallic gray of the breach cone against the matte black polymer body. The orange safety indicator strip glows subtly under the light. Gloved hand (tactical black neoprene with silver knuckle reinforcement) positioned near the charge showing scale and placement technique. Shallow depth of field with blurred Arcturus logo and serial markings in sharp focus. Dark neo-noir workshop environment with cool blue-white LED ambient lighting. High-resolution, clinical precision lighting. --ar 3:2 --v 6",
+  "dalle3_prompt": "",
   "parent_corponation": "Arcturus Defense Solutions",
   "related_entities": [
     "Carrion Defense Works Terrain Denial Foam Canister TDF-3",
@@ -39,25 +42,24 @@
     "The Peninsula"
   ],
   "physical_description": {
-    "visual_profile": "A compact, disc-shaped charge with a pronounced conical depression on its breach face, resembling an inverted bell or mushroom cap. The form factor is deliberately flat and contoured for intimate contact with target surfaces. Despite its destructive purpose, it presents as an engineered, clinical object—more precision instrument than crude explosive.",
-    "dimensions": "12 cm diameter × 8 cm height (charge body); conical breach face recesses 3 cm inward",
-    "weight_description": "Dense and substantial—0.8 kg feels concentrated and heavy for its compact size, suggesting high explosive density. Balanced when held flat, but the weight distribution toward the breach face creates a natural top-heavy impression.",
+    "visual_profile": "A compact, disc-shaped charge with a pronounced conical depression on its breach face, resembling an inverted bell or mushroom cap. The form factor is deliberately flat and contoured for intimate contact with target surfaces. Despite its destructive purpose, it presents as an engineered, clinical object\u2014more precision instrument than crude explosive.",
+    "dimensions": "12 cm diameter \u00D7 8 cm height (charge body); conical breach face recesses 3 cm inward",
+    "weight_description": "Dense and substantial\u20140.8 kg feels concentrated and heavy for its compact size, suggesting high explosive density. Balanced when held flat, but the weight distribution toward the breach face creates a natural top-heavy impression.",
     "primary_material": "Reinforced polymer composite housing with internal water-tamping chamber; breach face is hardened ceramic-steel composite for directed energy focus",
     "finish": "Matte tactical black polymer with subtle light-absorbing texture; the conical breach face has a darker, almost oil-slick metallic finish suggesting the ceramic-steel composite underneath",
     "color_scheme": "Primary matte black with gunmetal-gray conical depression; Arcturus branding in silver-white; safety indicator strip in high-visibility orange running circumferentially",
     "grip_texture": "Flat, slightly textured polymer top surface with integrated grip grooves; the back plate is smooth bare composite with subtle stippling for thumb purchase when placing charges",
     "distinctive_features": [
-      "Pronounced conical depression on breach face—the signature shaped charge geometry",
+      "Pronounced conical depression on breach face\u2014the signature shaped charge geometry",
       "Circumferential safety indicator strip (orange) that changes color if charge has been armed",
       "Magnetic adhesion nodes recessed into the mounting plate (three contact points arranged triangularly)",
       "Integrated detonator port on the side (threaded, sealed with a small red safety cap)",
       "Arcturus Defense Solutions hexagonal logo stamped into the top surface",
       "Small digital readout window (inert unless armed) showing charge status",
-      "Hairline thermal vent slots along the lower edge—barely visible but visible under angled light"
+      "Hairline thermal vent slots along the lower edge\u2014barely visible but visible under angled light"
     ],
-    "manufacturer_markings": "Arcturus Defense Solutions hexagonal logo centered on top surface in relief; serial number etched in small text below the logo; 'CBC-3 KNOCKER' designation stamped on the detonator side; manufacturing date code on the mounting plate",
-    "condition_typical": "Field units are usually pristine or lightly worn—these charges are stored carefully and deployed fresh. Well-maintained units show minimal scratching on the polymer body; the orange safety strip is always clean and legible. Used charges (post-detonation casings) would show blackened, cratered breach faces and melted safety strips."
+    "manufacturer_markings": "Arcturus Defense Solutions hexagonal logo centered on top surface in relief; serial number etched in small text below the logo; \u0027CBC-3 KNOCKER\u0027 designation stamped on the detonator side; manufacturing date code on the mounting plate",
+    "condition_typical": "Field units are usually pristine or lightly worn\u2014these charges are stored carefully and deployed fresh. Well-maintained units show minimal scratching on the polymer body; the orange safety strip is always clean and legible. Used charges (post-detonation casings) would show blackened, cratered breach faces and melted safety strips."
   },
-  "image_prompt": "Close-up product photography of an Arcturus CBC-3 'Knocker' breach charge mounted on dark brushed steel surface, angled 45-degrees to reveal the conical breach face depression. Dramatic side-lighting from upper left casts shadows into the charge geometry, highlighting the metallic gray of the breach cone against the matte black polymer body. The orange safety indicator strip glows subtly under the light. Gloved hand (tactical black neoprene with silver knuckle reinforcement) positioned near the charge showing scale and placement technique. Shallow depth of field with blurred Arcturus logo and serial markings in sharp focus. Dark neo-noir workshop environment with cool blue-white LED ambient lighting. High-resolution, clinical precision lighting. --ar 3:2 --v 6",
-  "visual_prompt": "Close-up product photography of an Arcturus CBC-3 'Knocker' breach charge mounted on dark brushed steel surface, angled 45-degrees to reveal the conical breach face depression. Dramatic side-lighting from upper left casts shadows into the charge geometry, highlighting the metallic gray of the breach cone against the matte black polymer body. The orange safety indicator strip glows subtly under the light. Gloved hand (tactical black neoprene with silver knuckle reinforcement) positioned near the charge showing scale and placement technique. Shallow depth of field with blurred Arcturus logo and serial markings in sharp focus. Dark neo-noir workshop environment with cool blue-white LED ambient lighting. High-resolution, clinical precision lighting. --ar 3:2 --v 6"
+  "visual_prompt": "Close-up product photography of an Arcturus CBC-3 \u0027Knocker\u0027 breach charge mounted on dark brushed steel surface, angled 45-degrees to reveal the conical breach face depression. Dramatic side-lighting from upper left casts shadows into the charge geometry, highlighting the metallic gray of the breach cone against the matte black polymer body. The orange safety indicator strip glows subtly under the light. Gloved hand (tactical black neoprene with silver knuckle reinforcement) positioned near the charge showing scale and placement technique. Shallow depth of field with blurred Arcturus logo and serial markings in sharp focus. Dark neo-noir workshop environment with cool blue-white LED ambient lighting. High-resolution, clinical precision lighting. --ar 3:2 --v 6"
 }

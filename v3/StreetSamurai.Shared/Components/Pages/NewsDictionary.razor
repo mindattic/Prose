@@ -1,4 +1,4 @@
-@page "/news"
+﻿@page "/news"
 @using StreetSamurai.Core.Models.Canon
 @inject NewsRepository Repo
 @inject NavigationManager Nav
@@ -23,7 +23,7 @@
     <div class="dict-editor">
         @if (editing != null)
         {
-            <EditViewToggle RepoName="news" Title="@(isNew ? "New Report" : editing.Headline)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)">
+            <EditViewToggle RepoName="news" Title="@(isNew ? "New Report" : editing.Headline)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)" Rating="@(editing?.Rating ?? 0)" RatingChanged="OnRatingChanged">
                 <HeaderButtons>
                     <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i><div class="btn-lbl"> Save</div></button>
                     @if (!isNew && !confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => confirmDelete = true"><i class="bi bi-archive"></i></button> }
@@ -96,4 +96,5 @@
         }
     }
 
+    private void OnRatingChanged(double value) { if (editing == null) return; editing.Rating = value; Repo.Save(editing); }
 }

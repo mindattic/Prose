@@ -1,4 +1,4 @@
-@page "/specimens"
+﻿@page "/specimens"
 @inject LabSpecimenRepository Repo
 @inject NavigationManager Nav
 @inject IJSRuntime JS
@@ -23,7 +23,7 @@
     <div class="dict-editor">
         @if (editing != null)
         {
-            <EditViewToggle RepoName="specimens" Title="@(isNew ? "New Lab Specimen" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)">
+            <EditViewToggle RepoName="specimens" Title="@(isNew ? "New Lab Specimen" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)" Rating="@(editing?.Rating ?? 0)" RatingChanged="OnRatingChanged">
                 <HeaderButtons>
                     <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i><div class="btn-lbl"> Save</div></button>
                     @if (!isNew && !confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => confirmDelete = true"><i class="bi bi-archive"></i></button> }
@@ -50,6 +50,11 @@
                     <div class="mb-3"><div class="field-label">Pitiable Qualities</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.PitiableQualities"></textarea></div>
                     <div class="mb-3"><div class="field-label">Pacification Protocol</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.PacificationProtocol"></textarea></div>
                     <div class="mb-3"><div class="field-label">Known Locations (comma-sep)</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="locationsInput" /></div>
+                    <div class="mb-3"><div class="field-label">Story Hooks (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editStoryHooks"></textarea></div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">Image Prompt</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.MidjourneyPrompt"></textarea></div>
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">DALL-E 3 Prompt</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Dalle3Prompt"></textarea></div>
+                    </div>
                 </ChildContent>
             </EditViewToggle>
         }
@@ -61,7 +66,7 @@
     private List<LabSpecimenData> items = [];
     private LabSpecimenData? editing;
     private bool isNew, confirmDelete;
-    private string originalName = "", aliasInput = "", locationsInput = "";
+    private string originalName = "", aliasInput = "", locationsInput = "", editStoryHooks = "";
     private string filter = "";
     private List<(string name, int count)> allTags = [];
     private HashSet<string> selectedTags = [];
@@ -95,14 +100,15 @@
 
     private void RebuildTags() => allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList();
     private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
-    private void AddNew() { editing = new LabSpecimenData(); isNew = true; confirmDelete = false; aliasInput = ""; locationsInput = ""; }
-    private void Edit(LabSpecimenData s) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_specimens", s.Id); editing = s; originalName = s.Name; isNew = false; confirmDelete = false; aliasInput = string.Join(", ", s.Aliases); locationsInput = string.Join(", ", s.KnownLocations); if (!Nav.Uri.Contains("id=" + s.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + s.Id, forceLoad: false); }
+    private void AddNew() { editing = new LabSpecimenData(); isNew = true; confirmDelete = false; aliasInput = ""; locationsInput = ""; editStoryHooks = ""; }
+    private void Edit(LabSpecimenData s) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_specimens", s.Id); editing = s; originalName = s.Name; isNew = false; confirmDelete = false; aliasInput = string.Join(", ", s.Aliases); locationsInput = string.Join(", ", s.KnownLocations); editStoryHooks = string.Join("\n", s.StoryHooks); if (!Nav.Uri.Contains("id=" + s.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + s.Id, forceLoad: false); }
 
     private void SaveEdit()
     {
         if (editing == null || string.IsNullOrWhiteSpace(editing.Name)) return;
         editing.Aliases = aliasInput.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList();
         editing.KnownLocations = locationsInput.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList();
+        editing.StoryHooks = editStoryHooks.Split('\n', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList();
         if (!isNew && originalName != editing.Name) Repo.Delete(originalName);
         Repo.Save(editing);
         editing = null;
@@ -122,4 +128,5 @@
             if (target != null) { Edit(target); StateHasChanged(); }
         }
     }
+    private void OnRatingChanged(double value) { if (editing == null) return; editing.Rating = value; Repo.Save(editing); }
 }

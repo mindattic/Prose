@@ -42,5 +42,14 @@
     "The Archive",
     "The Corridor",
     "Zheng-Dao Heavy Industries MGL-8 'Thresher'"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z8"
+    ],
+    "primaryZone": "Z8",
+    "lakefrontAccess": true,
+    "description": "Climate-controlled arcology tower cluster on the Milwaukee lakefront, Zone 8. Data storage, processing, and logistics for the northern Corridor. Silkworm grew from local Milwaukee capital during the city's industrial data infrastructure buildout — one of the few Zone 8 corponations that was not assembled by Chicago expansion.",
+    "grayZoneRelationship": "Provides data storage services to Zone 8 Gray Zone mutual organizations at cost — the most significant example of cooperative corponation-Gray Zone infrastructure in the northern Corridor."
+  }
 }

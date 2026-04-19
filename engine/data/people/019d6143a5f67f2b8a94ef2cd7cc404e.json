@@ -9,7 +9,7 @@
   "role": "Retired Ferrogate Transit union leader, now pension-dependent resident and neighborhood watchman",
   "age": 68,
   "status": "active",
-  "location": "The Shelf, Block 7 — a dense residential stack above a Ferrogate maintenance yard he used to oversee, near Kedzie and Division",
+  "location": "the Gray Zone, Block 7 — a dense residential stack above a Ferrogate maintenance yard he used to oversee, near Kedzie and Division",
   "description": "Cyrus Karunaratne-Krishnamurthy is built like a man who was once very strong and has remained sturdy through sheer refusal to accommodate gravity. He is broad-shouldered and thick-necked, with a complexion that sits between his Serbian grandfather's olive and his Igbo grandmother's deep brown, landing somewhere warm and weathered. His head is shaved smooth — he lost the hair to radiation exposure during a Ferrogate tunnel collapse in 2183 and never bothered with regrowth therapy, calling it 'a reminder to be careful.' He has a full grey beard he keeps trimmed with the same precision he once brought to union contract language. His right leg from the knee down is a no-frills industrial-grade prosthetic he chose because it was rated for heavy labor and he has never stopped thinking of himself as a laborer.\n\nHe was a transit worker for twenty-two years and a union shop steward for twelve, eventually rising to chief negotiator for the Ferrogate Workers' Brotherhood before the Brotherhood was dissolved in the company restructuring of 2191. He will tell anyone who asks — and many who don't — that the dissolution was illegal, that the arbitration was fixed, and that two of his colleagues who pushed back too hard died in 'accidents' that were never properly investigated. He lives in the same building he has lived in for thirty years, on a pension that has been quietly eroded by inflation to barely tier-2 comfort, and he supplements it by running informal neighborhood watch patrols and charging a small fee for dispute mediation between residents who don't want to involve corporate security.",
   "psychology": {
     "facet_weights": {
@@ -26,7 +26,7 @@
     ],
     "core_desires": [
       "To see the Ferrogate executives who fixed the arbitration face a real consequence before he dies",
-      "To protect the people on The Shelf from what he couldn't protect his colleagues from"
+      "To protect the people on the Gray Zone from what he couldn't protect his colleagues from"
     ],
     "coping_mechanisms": [
       "Routine and physical patrol as a way of feeling useful",
@@ -57,10 +57,10 @@
     "The compromised tunnel is nearing a critical threshold and Dragomir has to decide whether to act unilaterally, knowing what happened last time",
     "A young Ferrogate worker comes to him with documentation that the 2191 arbitration records have partially surfaced in a Ferrogate data breach — and asks him what to do with them"
   ],
-  "narrative_function": "Quest giver for labor justice plots; information source on Ferrogate infrastructure and its vulnerabilities; local color authority figure who commands genuine respect on The Shelf; represents the cost of institutional betrayal on ordinary workers",
+  "narrative_function": "Quest giver for labor justice plots; information source on Ferrogate infrastructure and its vulnerabilities; local color authority figure who commands genuine respect on the Gray Zone; represents the cost of institutional betrayal on ordinary workers",
   "augmentations": "Industrial-grade lower right leg prosthetic (heavy-rated, scuffed); subdermal comms implant (union-era model, still functional); no cosmetic mods",
-  "daily_life": "Wakes at 0500, walks the Shelf perimeter twice, eats at the same corner canteen every morning, spends afternoons doing dispute mediation or reviewing Brotherhood archive material he still believes will one day be relevant to a legal case.",
-  "affiliation": "Ferrogate Workers' Brotherhood (dissolved; he maintains its records unilaterally); The Shelf Residents' Association",
+  "daily_life": "Wakes at 0500, walks the Gray Zone perimeter twice, eats at the same corner canteen every morning, spends afternoons doing dispute mediation or reviewing Brotherhood archive material he still believes will one day be relevant to a legal case.",
+  "affiliation": "Ferrogate Workers' Brotherhood (dissolved; he maintains its records unilaterally); the Gray Zone Residents' Association",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -126,12 +126,12 @@
       "Preaches collective action but has been operating as a solitary watchman for seven years because the collective was taken from him and he hasn't rebuilt it"
     ],
     "habits": [
-      "Checks the structural integrity of The Shelf's transit connection every morning out of professional habit",
+      "Checks the structural integrity of the Gray Zone's transit connection every morning out of professional habit",
       "Keeps a handwritten log of every dispute he mediates",
       "Touches the scar on his right knee before making a major decision"
     ],
     "breaking_points": [
-      "If someone on The Shelf is hurt in a transit accident he knew was coming, he will go to Ferrogate directly and publicly, consequences be damned"
+      "If someone on the Gray Zone is hurt in a transit accident he knew was coming, he will go to Ferrogate directly and publicly, consequences be damned"
     ]
   },
   "cyberware_inventory": [
@@ -178,7 +178,7 @@
     "Code Keeper": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -188,7 +188,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Born on The Shelf to a Serbian-Igbo-Pashtun family; father was a Ferrogate tunnel crew chief",
+      "event": "Born on the Gray Zone to a Serbian-Igbo-Pashtun family; father was a Ferrogate tunnel crew chief",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -244,7 +244,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Begins informal dispute mediation and neighborhood watch on The Shelf",
+      "event": "Begins informal dispute mediation and neighborhood watch on the Gray Zone",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -265,10 +265,9 @@
     "Grandmother",
     "Ferrogate Transit",
     "Threshold",
-    "The Shelf",
     "Gravimetric Collapse Charge GCC-9"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "South Asian (36.7%), Middle Eastern (25.3%), Northern European (17.2%), Pacific Islander (16.5%), and Eastern European (4.3%) ancestry—a complex diaspora blend. The genetic mosaic manifests in warm, multi-tonal skin with golden and olive undertones throughout. South Asian prominence in cheekbone structure and facial warmth; Middle Eastern definition in jaw and brow architecture; Pacific Islander radiance softening the overall complexion; Northern European lightness in eye undertones and skin luminosity; Eastern European influences subtle in facial plane geometry.",
     "height_cm": 178,

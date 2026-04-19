@@ -9,7 +9,7 @@
   "role": "Retired Ferrogate Transit union leader living on pension and community stipends",
   "age": 71,
   "status": "active",
-  "location": "The Shelf, Precinct 4 — Apartment stack above the old Ferrogate maintenance depot, near Western and Division",
+  "location": "the Gray Zone, Precinct 4 — Apartment stack above the old Ferrogate maintenance depot, near Western and Division",
   "description": "Ingrid Lindström-Seo is a compact, high-voltage woman who has never learned to fill a room quietly. Her hair is natural and shot through with the kind of silver that arrives at the temples first and then conquers everything, worn in a structured wrap she pins with a Ferrogate union badge from 2161 — the old design, before the merger downgraded the insignia. Her geneware is minimal and aging: faint bioluminescent tracery under her forearms that pulses softly in blue when her blood pressure rises, a cosmetic choice from her forties that now serves as an involuntary emotional barometer everyone around her has learned to read. She moves quickly for her age and has the handshake of someone who spent decades using physical presence to establish authority at negotiating tables.\n\nShe is furious about her pension. Not in the vague way of someone who expected more from life, but in the precise, documented way of someone who can tell you exactly which Ferrogate Transit clause was quietly amended in 2191 to reduce survivor benefit calculations, who approved it, and what it cost her annually. She runs an informal advisory service out of her apartment — residents bring her their benefit disputes, their severance irregularities, their corponation contract fine print — and she helps them fight back. She charges nothing but accepts food. Her relationship with the Ferrogate Transit E.L.F. known as the Line-Keeper is complicated: she respects it but disputes its memory of the 2178 strike.",
   "psychology": {
     "facet_weights": {
@@ -59,7 +59,7 @@
   "narrative_function": "Labor history source; advocate and quest-giver for residents dealing with corponation benefit disputes; provides connections to transit worker networks across GLMZ; represents the grinding institutional injustice of retirement-tier poverty",
   "augmentations": "Bioluminescent subdermal tracery on forearms (cosmetic, aging, pulses blue under stress); cochlear audio enhancer (left ear, Ferrogate-issued, they dispute responsibility for maintenance); reading lens implant (right eye, consumer grade)",
   "daily_life": "Wakes to transit reports out of habit, annotates them in a physical notebook, then opens her door by 0800 for whoever needs help. Spends afternoons at the Ferrogate depot-side memorial wall, maintaining the handwritten additions to the official list of workers injured in the 2178 strike that the company's plaque omits.",
-  "affiliation": "Ferrogate Transit Pensioners Association; The Shelf Residents Collective; informal affiliation with multiple labor grievance networks",
+  "affiliation": "Ferrogate Transit Pensioners Association; the Gray Zone Residents Collective; informal affiliation with multiple labor grievance networks",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -109,7 +109,7 @@
     "escalation_ladder": [
       "Calm information gathering and documentation",
       "Formal written complaint with full citation",
-      "Public posting to The Shelf community boards",
+      "Public posting to The Gray Zone community boards",
       "Showing up in person to the relevant office, alone, with a folder"
     ],
     "interpersonal_modes": {
@@ -177,7 +177,7 @@
     "Standard Bearer": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -187,7 +187,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Born to a Senegambian-Pribilof Islands family in The Shelf district",
+      "event": "Born to a Senegambian-Pribilof Islands family in The the Gray Zone district",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -242,13 +242,12 @@
   "related_entities": [
     "Ferrogate Transit",
     "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
-    "The Shelf",
     "Pressure Drop",
     "The Fathom Line",
     "The Gradient Compact",
     "Silver"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Ubiquitous diaspora blend: East Asian (46.4%) provides dominant facial structure with high cheekbones and eye shape; Northern European (26.5%) contributes robust jawline and bone density; Southeast Asian (10.6%) adds warmth and subtle softness to features; Hispanic/Latin American (8.6%) and Sub-Saharan African (7.9%) deepen skin undertones and add richness to overall phenotype. The result is a striking warm medium-brown complexion with golden-amber undertones, angular yet approachable facial geometry, and the kind of structural strength that reads as competence rather than aggression.",
     "height_cm": 158,

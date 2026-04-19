@@ -9,8 +9,8 @@
   "role": "Route planner and backup courier — Switchback",
   "age": 23,
   "status": "active",
-  "location": "The Shelf — rents a room in a co-op housing block four buildings from Jinx's squat, near Halsted and Chicago Ave",
-  "description": "Sterling Saechao is the steady hand in a crew built on velocity. Where Jinx is instinct and adrenaline, Puck is preparation and endurance. He can't match Jinx's raw speed — nobody on the Shelf can — but he can run longer, plan better, and carry heavier packages without slowing down. He is the reason Switchback has a backup plan for every route, a dead drop on every block, and a reputation for reliability that extends beyond the Shelf.\n\nHe grew up three blocks from Jinx, in a co-op housing block held together by community labor and bureaucratic neglect. His mother was a Shelf seamstress who paid for his first augmentation — a basic reflex enhancer — by taking double shifts for eight months. He started running with Jinx at fifteen because the alternative was stacking crates in a warehouse for wages that wouldn't cover food. The running was better. The running was freedom. Seven years later, the freedom is starting to feel like a different kind of cage.\n\nPuck is tall for a courier — six-one, broad-shouldered, built more for endurance than acrobatics. He compensates with route knowledge that borders on encyclopedic. He knows every alley, every service tunnel, every timing gap in every surveillance grid on the Shelf and into Milwaukee Core. His face is open, honest, and perpetually a little worried — the face of someone who sees the problems that the enthusiastic people don't.",
+  "location": "the Gray Zone — rents a room in a co-op housing block four buildings from Jinx's squat, near Halsted and Chicago Ave",
+  "description": "Sterling Saechao is the steady hand in a crew built on velocity. Where Jinx is instinct and adrenaline, Puck is preparation and endurance. He can't match Jinx's raw speed — nobody in the Gray Zone can — but he can run longer, plan better, and carry heavier packages without slowing down. He is the reason Switchback has a backup plan for every route, a dead drop on every block, and a reputation for reliability that extends beyond the Gray Zone.\n\nHe grew up three blocks from Jinx, in a co-op housing block held together by community labor and bureaucratic neglect. His mother was a the Gray Zone seamstress who paid for his first augmentation — a basic reflex enhancer — by taking double shifts for eight months. He started running with Jinx at fifteen because the alternative was stacking crates in a warehouse for wages that wouldn't cover food. The running was better. The running was freedom. Seven years later, the freedom is starting to feel like a different kind of cage.\n\nPuck is tall for a courier — six-one, broad-shouldered, built more for endurance than acrobatics. He compensates with route knowledge that borders on encyclopedic. He knows every alley, every service tunnel, every timing gap in every surveillance grid in the Gray Zone and into Milwaukee Core. His face is open, honest, and perpetually a little worried — the face of someone who sees the problems that the enthusiastic people don't.",
   "psychology": {
     "facet_weights": {
       "wound": 0.35,
@@ -28,7 +28,7 @@
     "core_desires": [
       "To see Jinx and Dash survive long enough to build a life that doesn't require running",
       "To use what he knows — routes, logistics, infrastructure — to build something legitimate",
-      "To stop feeling guilty about wanting more than the Shelf can offer"
+      "To stop feeling guilty about wanting more than the Gray Zone can offer"
     ],
     "coping_mechanisms": [
       "Plans obsessively — if every route is mapped and every contingency prepared, the illusion of control holds",
@@ -43,7 +43,7 @@
     "secret": "He's been quietly saving money for two years. Not to leave — to buy the co-op housing block his mother lives in, so the residents can't be evicted. He is approximately 40% of the way there. Every dangerous run he takes is another deposit."
   },
   "speech_patterns": {
-    "vocabulary": "Thoughtful, grounded. Uses spatial language — routes, paths, distances. More articulate than people expect from a Shelf courier.",
+    "vocabulary": "Thoughtful, grounded. Uses spatial language — routes, paths, distances. More articulate than people expect from a the Gray Zone courier.",
     "cadence": "Steady, measured. He talks the way he runs — consistent pace, no wasted energy. Gets quieter when he disagrees.",
     "verbal_tics": [
       "Says 'Look—' when he's about to deliver an uncomfortable truth",
@@ -86,7 +86,7 @@
     "Jinx discovers Puck's savings and misinterprets it as preparation to leave"
   ],
   "narrative_function": "Puck is the voice of pragmatism and growing doubt in Switchback. He loves Jinx, loves the crew, and is increasingly certain that the life will kill them. His stories explore the tension between loyalty and self-preservation, between the adrenaline of the run and the exhaustion that follows. He is the character who asks: what comes after this?",
-  "augmentations": "Basic reflex enhancer (Shelf-installed, civilian grade). Cardiopulmonary optimizer — increases oxygen efficiency and endurance by roughly 30%. Subdermal route-mapping display on his left forearm — low-res but reliable, shows jurisdiction lines and camera positions. Reinforced knee joints (both legs) — necessary after three years of high-impact running.",
+  "augmentations": "Basic reflex enhancer (the Gray Zone-installed, civilian grade). Cardiopulmonary optimizer — increases oxygen efficiency and endurance by roughly 30%. Subdermal route-mapping display on his left forearm — low-res but reliable, shows jurisdiction lines and camera positions. Reinforced knee joints (both legs) — necessary after three years of high-impact running.",
   "daily_life": "Wakes before Jinx. Checks route conditions — weather, surveillance changes, construction that alters paths. Updates the crew's route database. Runs contracts during the day, usually the longer, steadier deliveries that require endurance rather than speed. Evenings he cooks in the co-op kitchen and brings food to Jinx's squat because she won't eat otherwise. Falls asleep reading — usually history, usually about people who built things that lasted.",
   "affiliation": "Switchback",
   "uses_facets": false,
@@ -132,7 +132,7 @@
     },
     "contradictions": [
       "He plans routes for a reckless crew and resents that his planning enables the recklessness",
-      "He wants to leave the Shelf but is saving money to anchor his family to it permanently",
+      "He wants to leave the Gray Zone but is saving money to anchor his family to it permanently",
       "He is the steadiest member of Switchback and the one most likely to leave",
       "His caution has kept the crew alive but also prevented them from growing — safety and stagnation share a border"
     ],
@@ -140,7 +140,7 @@
       "Checks weather reports three times daily — wind, rain, and temperature all affect rooftop routes",
       "Cooks the same three meals in rotation unless he's stressed, in which case the menu gets ambitious",
       "Stretches his knee joints every morning — the reinforcement helps but the original damage reminds him",
-      "Carries a physical map of the Shelf in his back pocket — analog backup for when the subdermal display glitches",
+      "Carries a physical map of the Gray Zone in his back pocket — analog backup for when the subdermal display glitches",
       "Walks the co-op perimeter every night before sleep — checking, always checking"
     ],
     "breaking_points": [
@@ -174,7 +174,7 @@
     "Face": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -190,7 +190,6 @@
     "Lazarus Pharmaceuticals NeuroPrecision Surgical BCI",
     "Switchback",
     "VitaCore SteadyField Precision Motor Implant",
-    "The Shelf",
     "Ringo DV-4 'Courier'",
     "Chicago",
     "VitaCore FlowGuard Hemodynamic Regulator",
@@ -198,7 +197,7 @@
     "Neuromorphic Pressure Cestus",
     "Honest Burger"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Predominantly Southeast Asian ancestry (70.8%) with significant Sub-Saharan African (12.2%) and smaller Northern European (6.8%), Middle Eastern (5.7%), Hispanic/Latin American (3.2%), and Eastern European (1.3%) admixture. The genetic combination creates warm medium-to-deep brown skin tones with subtle golden and reddish undertones reflecting the diverse ancestry mix. Southeast Asian facial structure dominates with defined cheekbones and jawline, enhanced by the Sub-Saharan African contribution which adds fullness to the lips and cheeks, warmth and richness to complexion. Northern European ancestry contributes subtle refinement to bone structure. Middle Eastern heritage adds depth to eye placement and brow definition. The overall phenotype is distinctly cosmopolitan, reflecting the Ubiquitous Diaspora rather than any single regional type.",
     "height_cm": 185,

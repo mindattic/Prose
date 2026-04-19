@@ -3,7 +3,7 @@
   "name": "Callow & Vex Patchwork Cargo Trouser",
   "type": "apparel",
   "category": "pants",
-  "description": "Not a manufactured product — these are second-hand cargo pants repaired and resold by the Callow & Vex depot stall in Meridian's Shelf market districts. Each pair is different: mismatched patches on the knees, replaced pocket panels in contrasting fabric, restitched seams. Structurally sound despite appearances. A patchwork pair in good condition is a minor point of pride on the Shelf.",
+  "description": "Not a manufactured product — these are second-hand cargo pants repaired and resold by the Callow & Vex depot stall in Meridian's the Gray Zone market districts. Each pair is different: mismatched patches on the knees, replaced pocket panels in contrasting fabric, restitched seams. Structurally sound despite appearances. A patchwork pair in good condition is a minor point of pride in the Gray Zone.",
   "tier_association": "Tier 1",
   "materials": [
     "mixed reclaimed canvas",
@@ -11,9 +11,9 @@
     "assorted nylon and cotton thread"
   ],
   "functionality": "none",
-  "what_it_says": "You're on the Shelf and you're making it work — or you're from Tier 2 and buying into Shelf culture deliberately.",
+  "what_it_says": "You're in the Gray Zone and you're making it work — or you're from Tier 2 and buying into the Gray Zone culture deliberately.",
   "worn_by": [
-    "Shelf residents",
+    "the Gray Zone residents",
     "scavengers",
     "street-level fixers",
     "Tier 2 workers on reduced income"
@@ -23,7 +23,7 @@
   "aug_compatible": true,
   "gene_compatible": false,
   "story_hooks": [
-    "Experienced Shelf dwellers can sometimes identify the origin of a pair's patches — a distinctive corporate fabric on a knee panel might mean the original pants came from a specific employer.",
+    "Experienced the Gray Zone dwellers can sometimes identify the origin of a pair's patches — a distinctive corporate fabric on a knee panel might mean the original pants came from a specific employer.",
     "Callow & Vex keeps rough records of what they take in; they've been quietly asked by investigators more than once to check if a specific pair passed through their stock."
   ],
   "tags": [
@@ -33,15 +33,13 @@
     "second-hand",
     "repaired",
     "cargo",
-    "shelf",
     "market-made"
   ],
   "parent_corponation": "",
   "related_entities": [
     "MERIDIAN",
     "Obafemi Szczypiński-Lautoa",
-    "Sorin Ekwensi-Balasanyan",
-    "The Shelf"
+    "Sorin Ekwensi-Balasanyan"
   ],
   "physical_description": {
     "visual_profile": "Utilitarian cargo pants with visible history — multiple fabric patches create an asymmetrical patchwork aesthetic across legs and pockets. Heavy, workwear silhouette with pronounced cargo pockets and reinforced paneling. Worn-in comfort paired with visible repair craftsmanship.",
@@ -60,10 +58,10 @@
       "One cargo pocket replaced with salvaged synth-leather",
       "Faded work-wear patina throughout"
     ],
-    "tier_indicator": "Tier 5 salvage / Tier 3 functional — signals street-level practicality and acceptance of visible repair. Wearing patched cargo shows resourcefulness, not poverty; these are valued finds on the Shelf.",
-    "cultural_context": "Street-level subculture markers — worn by maintenance workers, Shelf market dwellers, salvage runners, and those who see beauty in functional repair. Indicates engagement with secondary economy and rejection of throwaway fashion. Point of pride for those who know Callow & Vex's reputation for structural integrity.",
+    "tier_indicator": "Tier 5 salvage / Tier 3 functional — signals street-level practicality and acceptance of visible repair. Wearing patched cargo shows resourcefulness, not poverty; these are valued finds in the Gray Zone.",
+    "cultural_context": "Street-level subculture markers — worn by maintenance workers, the Gray Zone market dwellers, salvage runners, and those who see beauty in functional repair. Indicates engagement with secondary economy and rejection of throwaway fashion. Point of pride for those who know Callow & Vex's reputation for structural integrity.",
     "condition_typical": "Structurally sound with visible patching and wear. Not distressed for fashion — genuinely weathered from previous use and repair cycle. Each pair unique; expected to show multiple repair generations. Minor stains, fading, and seam stress are normal and acceptable."
   },
-  "image_prompt": "Neo-noir fashion photography of worn patchwork cargo pants displayed on dark chrome mannequin or worn by Shelf market runner with visible augmentation. Close detail on asymmetrical knee patches in contrasting fabrics — cream, rust, indigo, mesh. Moody industrial lighting with accent light catching raised seams and patch texture. Gritty urban backdrop: corrugated metal, dim neon signage, rain-slicked concrete. Shallow depth of field on patch details. Captured with documentary authenticity rather than luxury polish. --ar 2:3 --v 6",
-  "visual_prompt": "Neo-noir fashion photography of worn patchwork cargo pants displayed on dark chrome mannequin or worn by Shelf market runner with visible augmentation. Close detail on asymmetrical knee patches in contrasting fabrics — cream, rust, indigo, mesh. Moody industrial lighting with accent light catching raised seams and patch texture. Gritty urban backdrop: corrugated metal, dim neon signage, rain-slicked concrete. Shallow depth of field on patch details. Captured with documentary authenticity rather than luxury polish. --ar 2:3 --v 6"
+  "image_prompt": "Neo-noir fashion photography of worn patchwork cargo pants displayed on dark chrome mannequin or worn by the Gray Zone market runner with visible augmentation. Close detail on asymmetrical knee patches in contrasting fabrics — cream, rust, indigo, mesh. Moody industrial lighting with accent light catching raised seams and patch texture. Gritty urban backdrop: corrugated metal, dim neon signage, rain-slicked concrete. Shallow depth of field on patch details. Captured with documentary authenticity rather than luxury polish. --ar 2:3 --v 6",
+  "visual_prompt": "Neo-noir fashion photography of worn patchwork cargo pants displayed on dark chrome mannequin or worn by the Gray Zone market runner with visible augmentation. Close detail on asymmetrical knee patches in contrasting fabrics — cream, rust, indigo, mesh. Moody industrial lighting with accent light catching raised seams and patch texture. Gritty urban backdrop: corrugated metal, dim neon signage, rain-slicked concrete. Shallow depth of field on patch details. Captured with documentary authenticity rather than luxury polish. --ar 2:3 --v 6"
 }

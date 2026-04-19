@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa03779293b9077c520bbfc6",
+  "rating": 70,
   "name": "Hangman",
   "type": "elf",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Redirects voice communication to unintended recipients. The 'wrong numbers' occasionally involve conversations that are relevant to the caller's situation.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 21,
-  "location": "The Shelf, The Circuit",
+  "location": "the Gray Zone, The Circuit",
   "dti_rating": 0,
   "story_hooks": [
     "A freelancer dials a fixer and gets connected to the target of their next contract instead"
@@ -25,13 +26,9 @@
     "network sprite",
     "e.l.f.",
     "contract",
-    "shelf",
     "circuit",
     "sentient"
   ],
-  "related_entities": [
-    "Cezar Watanabe-Gyasi",
-    "The Circuit",
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

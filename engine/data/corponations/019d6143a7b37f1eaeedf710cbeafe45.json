@@ -38,5 +38,14 @@
     "The Corridor",
     "The Reclamation Authority",
     "Yannick Tofauti-Szarvásy"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z5"
+    ],
+    "primaryZone": "Z5",
+    "lakefrontAccess": false,
+    "description": "The Stonepath Transit Sovereignty — recognized infrastructure sovereignty over the former O'Hare International Airport and adjacent freight corridors in Zone 5. Handles approximately 40% of zone-wide imports arriving by air; their sovereign territory is the primary point of entry for goods from outside the GLMZ footprint.",
+    "grayZoneRelationship": "Zone 5 Gray Zones adjacent to Stonepath freight corridors are active gray-market access points. Stonepath maintains this is not their concern. The volume of gray-market throughput suggests otherwise."
+  }
 }

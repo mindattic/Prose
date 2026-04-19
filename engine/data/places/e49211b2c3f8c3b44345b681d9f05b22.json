@@ -10,14 +10,18 @@
     "tags": []
   },
   "connections": {
-    "adjacent_to": [],
+    "adjacent_to": ["Kentucky", "Indiana Dead Zone", "The Missouri Wetlands", "Denver"],
     "exits": [],
     "tags": []
   },
   "tags": [
     "place",
     "outside",
-    "trade-route"
+    "trade-route",
+    "remnants",
+    "great-lakes"
   ],
-  "related_entities": []
+  "related_entities": ["Ferrogate Cleveland Hub", "Ferrogate Erie Station", "Kentucky"],
+  "zone": "Z12",
+  "controllingCorponation": null
 }

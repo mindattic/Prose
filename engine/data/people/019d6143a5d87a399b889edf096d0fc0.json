@@ -13,8 +13,8 @@
   "role": "Noodle shop owner / informal information broker / surrogate mother figure",
   "age": 68,
   "status": "alive",
-  "location": "The Shelf — Level 12, a cramped noodle shop called 'Chen's' wedged between a water recycler and a defunct elevator shaft, near Halsted and Chicago Ave",
-  "description": "Chen Wei-Lin is a small woman who moves like she's in a permanent argument with physics — fast, efficient,\nslightly annoyed. She stands maybe 5'2\" but takes up more space than that suggests, partly because she's\nalways in motion and partly because her presence has a gravitational quality. Her face is a map of the\nShelf itself: weathered, cracked in places, but structurally sound. Her eyes are sharp and dark behind\nthick-framed glasses held together with electrical tape and spite. Her grey hair is always pinned up in\na tight bun secured with two chopsticks that she occasionally pulls out to gesture with while making a\npoint, then replaces without losing a syllable.\n\nHer hands tell two stories. They're a cook's hands now — scarred from oil splatter, calloused from\ndecades of kneading dough, knuckles swollen with arthritis she refuses to acknowledge. But if you look\nclosely, you can see the older scars underneath: the precise, symmetrical marks of someone who spent\nyears working with micro-surgical tools and augmentation circuitry. She wears no rings, no jewelry,\nnothing decorative. Her apron is always stained and she considers this a badge of honest work.\n\nFirst impression: a cranky old woman who serves good noodles and doesn't smile. Accurate impression:\na cranky old woman who serves good noodles, doesn't smile, and is quietly the most important person\non the Shelf because she feeds it, listens to it, and remembers everything.",
+  "location": "the Gray Zone — Level 12, a cramped noodle shop called 'Chen's' wedged between a water recycler and a defunct elevator shaft, near Halsted and Chicago Ave",
+  "description": "Chen Wei-Lin is a small woman who moves like she's in a permanent argument with physics — fast, efficient,\nslightly annoyed. She stands maybe 5'2\" but takes up more space than that suggests, partly because she's\nalways in motion and partly because her presence has a gravitational quality. Her face is a map of the\nthe sprawl itself: weathered, cracked in places, but structurally sound. Her eyes are sharp and dark behind\nthick-framed glasses held together with electrical tape and spite. Her grey hair is always pinned up in\na tight bun secured with two chopsticks that she occasionally pulls out to gesture with while making a\npoint, then replaces without losing a syllable.\n\nHer hands tell two stories. They're a cook's hands now — scarred from oil splatter, calloused from\ndecades of kneading dough, knuckles swollen with arthritis she refuses to acknowledge. But if you look\nclosely, you can see the older scars underneath: the precise, symmetrical marks of someone who spent\nyears working with micro-surgical tools and augmentation circuitry. She wears no rings, no jewelry,\nnothing decorative. Her apron is always stained and she considers this a badge of honest work.\n\nFirst impression: a cranky old woman who serves good noodles and doesn't smile. Accurate impression:\na cranky old woman who serves good noodles, doesn't smile, and is quietly the most important person\nin the Gray Zone because she feeds it, listens to it, and remembers everything.",
   "psychology": {
     "facet_weights": {
       "wound": 0.75,
@@ -25,7 +25,7 @@
       "ghost": 0.8
     },
     "core_fears": [
-      "That the Shelf will be 'developed' — torn down, rebuilt, gentrified into something unrecognizable",
+      "That the Gray Zone will be 'developed' — torn down, rebuilt, gentrified into something unrecognizable",
       "That she'll outlive everyone she feeds, one by one, the way she outlived her son",
       "That her rebellion — feeding people, refusing augments — is meaningless. That the machine doesn't even notice."
     ],
@@ -40,8 +40,8 @@
       "Routine — the shop opens at 5 AM, closes at midnight. The broth starts at 3 AM. The structure holds her together."
     ],
     "blind_spots": [
-      "She doesn't see how much she's become a mother figure to half the Shelf. She'd reject the label.",
-      "She underestimates her own importance — if the shop closed, the Shelf's information network would collapse",
+      "She doesn't see how much she's become a mother figure to half the Gray Zone. She'd reject the label.",
+      "She underestimates her own importance — if the shop closed, the Gray Zone's information network would collapse",
       "She thinks refusing augments makes her morally pure. It also makes her fragile, and she won't admit that."
     ],
     "secret": "She recognized the style of Kyle's training immediately — Kenshin Group military kenjutsu. She knew\nSeo had been a soldier before he was a teacher. She also knows, from overheard conversations and\ndates she quietly cross-referenced, that Seo's unit operated in the same corridor where her son\ndied. She has never confirmed it. She has never asked. She feeds Kyle every day and does not think\nabout probability."
@@ -55,7 +55,7 @@
       "You want advice? Wrong shop. You want noodles? Sit down.",
       "I don't ask where you've been. You don't ask what's in the broth. That's the arrangement.",
       "Your teacher taught you how to die with honor. I'm teaching you how to eat with regularity. Mine is more practical.",
-      "Everyone on the Shelf has a sad story. Yours is not special. Your noodles are ready.",
+      "Everyone on the Gray Zone has a sad story. Yours is not special. Your noodles are ready.",
       "I'm not worried about you. I'm worried about my inventory. Dead customers don't pay."
     ]
   },
@@ -84,27 +84,27 @@
     {
       "name": "Lin Jun-Wei (son, deceased)",
       "type": "child / permanent wound",
-      "description": "She does not speak his name. She keeps no photographs — they were all digital, stored on a device\nshe threw into the harbor the day she arrived on the Shelf. But she cooks his favorite meal (sesame\nnoodles with pork, slightly sweet) once a year, on his birthday, and serves it to whoever sits\ndown first. She never explains why the menu changed that day.",
+      "description": "She does not speak his name. She keeps no photographs — they were all digital, stored on a device\nshe threw into the harbor the day she arrived in the Gray Zone. But she cooks his favorite meal (sesame\nnoodles with pork, slightly sweet) once a year, on his birthday, and serves it to whoever sits\ndown first. She never explains why the menu changed that day.",
       "emotional_core": "",
       "story_tension": ""
     },
     {
       "name": "Uncle Noodle",
       "type": "professional rival / object of contempt",
-      "description": "Chen Wei-Lin does not hate many people. Uncle Noodle is the exception. He runs a competing noodle operation on the Shelf and his existence is, to her, a personal insult. She considers him her rival in every professional sense — his broth is wrong, his noodles are the wrong thickness, his prices undercut hers through shortcuts she considers dishonest, and the fact that anyone eats there is evidence of declining standards she takes personally. She never says his name if she can help it. She refers to him as 'that man' or 'the other place.' If pressed, she will deliver a thirty-second technical critique of his technique that leaves no room for rebuttal. He leaves a bowl of soup at the corner of her block every morning. She has never acknowledged it. This is, somehow, the worst part.",
+      "description": "Chen Wei-Lin does not hate many people. Uncle Noodle is the exception. He runs a competing noodle operation in the Gray Zone and his existence is, to her, a personal insult. She considers him her rival in every professional sense — his broth is wrong, his noodles are the wrong thickness, his prices undercut hers through shortcuts she considers dishonest, and the fact that anyone eats there is evidence of declining standards she takes personally. She never says his name if she can help it. She refers to him as 'that man' or 'the other place.' If pressed, she will deliver a thirty-second technical critique of his technique that leaves no room for rebuttal. He leaves a bowl of soup at the corner of her block every morning. She has never acknowledged it. This is, somehow, the worst part.",
       "emotional_core": "Professional jealousy dressed as quality standards — she's decided his success diminishes her craft",
       "story_tension": "Uncle Noodle may be better than she admits, or he may be a front for something. Either way, she will never concede."
     },
     {
-      "name": "The Shelf community",
+      "name": "the Gray Zone community",
       "type": "extended family / information network",
-      "description": "Half the Shelf passes through her shop every week. She remembers their orders, their names, their\ntroubles. People tell her things over noodles they wouldn't tell a priest or a therapist. She files\nit all away, never gossips, and deploys information only when someone's safety depends on it. She's\nthe central nervous system of the Shelf, and she'd be furious if anyone described her that way.",
+      "description": "Half the Gray Zone passes through her shop every week. She remembers their orders, their names, their\ntroubles. People tell her things over noodles they wouldn't tell a priest or a therapist. She files\nit all away, never gossips, and deploys information only when someone's safety depends on it. She's\nthe central nervous system of the Gray Zone, and she'd be furious if anyone described her that way.",
       "emotional_core": "",
       "story_tension": ""
     }
   ],
   "story_hooks": [
-    "The Shelf facing demolition or corporate development — her shop threatened, the community scattered",
+    "the Gray Zone facing demolition or corporate development — her shop threatened, the community scattered",
     "Someone discovers her augmentation skills and pressures her to work again — black market surgery, desperate cases",
     "Kyle learning the truth about Seo's unit and the Taipei corridor — and realizing Mrs. Chen might know",
     "Her health declining — the cost of being a natural in a world built for the augmented",
@@ -144,7 +144,7 @@
     },
     "drives": [
       "Keep the shop open",
-      "Feed the Shelf",
+      "Feed the Gray Zone",
       "Protect Kyle without admitting it"
     ],
     "thresholds": {
@@ -195,13 +195,13 @@
       "Stops talking and lets the silence do the work while her hands keep chopping",
       "Pulls the chopsticks from her hair and gestures with them — the universal Mrs. Chen warning",
       "Physically blocks the counter and makes it clear this is her territory",
-      "Deploys information she has been holding — the nuclear option from the Shelf's central nervous system"
+      "Deploys information she has been holding — the nuclear option from the Gray Zone's central nervous system"
     ],
     "interpersonal_modes": {
       "Kyle": "Feeds him, scolds him, never says she cares — the bowls say everything",
       "Dae-jung Seo": "Mourns him annually with plain rice and pickled plum left on the counter until closing",
       "Pixel": "Exasperated tolerance masking genuine worry; accepts tech repairs as payment",
-      "The Shelf": "Extended family she refuses to name as such — remembers every order, every name, every trouble"
+      "the Gray Zone": "Extended family she refuses to name as such — remembers every order, every name, every trouble"
     },
     "stress_responses": {
       "low": "Wipes the counter more aggressively, broth recipe gets more complex",
@@ -212,7 +212,7 @@
     "contradictions": [
       "Feeds the student of the man whose unit may have killed her son — forgiveness or denial, the narrative never resolves which",
       "Thinks refusing augments is moral purity while her body deteriorates from the choice",
-      "Insists she is just a cook while being the Shelf's most important intelligence node"
+      "Insists she is just a cook while being the Gray Zone's most important intelligence node"
     ],
     "habits": [
       "Starts the broth at 3 a.m., two hours before the shop opens",
@@ -252,7 +252,7 @@
     "Stoic": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -268,14 +268,13 @@
   "related_entities": [
     "Uncle Noodle",
     "The Unfinished Theorem",
-    "The Shelf",
     "GLMZ",
     "Chicago",
     "Honest Burger",
     "The Pure Hand",
     "Déjà Vu"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Complex diaspora blend: 44.3% Eastern European, 22.8% South Asian, 15.6% Northern European, 8.8% Hispanic/Latin American, 8.5% Sub-Saharan African. This genetic mosaic produces warm medium-tan skin with subtle golden and amber undertones—the result of Eastern European base with South Asian warmth and Sub-Saharan depth creating a unified, sun-weathered complexion. Facial structure bridges Central European bone geometry with South Asian softness, while the warm undertones reflect the full continental ancestry layered together.",
     "height_cm": 157,
@@ -286,7 +285,7 @@
     "hair_length": "Long (worn up)",
     "eye_color": "Dark brown, sharp and penetrating",
     "skin_tone": "Warm medium-tan with golden and amber undertones, the complexion of someone who has spent 68 years working indoors and outdoors in equal measure. The depth and warmth reflect her South Asian, Eastern European, Sub-Saharan African, and Hispanic heritage blended into a unified, sun-weathered tone.",
-    "complexion": "Weathered, with deep laugh lines around the eyes and mouth. Fine crease network across forehead and cheeks, with the characteristic subtle facial structure reflecting the blend of Central European, South Asian, and Sub-Saharan African heritage beneath the age-marked surface. Skin has the papery texture of age and low hydration common in the Shelf's recycled air. No cosmetic modifications. Minimal scarring visible on face itself.",
+    "complexion": "Weathered, with deep laugh lines around the eyes and mouth. Fine crease network across forehead and cheeks, with the characteristic subtle facial structure reflecting the blend of Central European, South Asian, and Sub-Saharan African heritage beneath the age-marked surface. Skin has the papery texture of age and low hydration common in the Gray Zone's recycled air. No cosmetic modifications. Minimal scarring visible on face itself.",
     "distinguishing_marks": [
       "Multiple small white scars on both hands from decades of cooking oil splatter and steam burns, clustered around knuckles and wrists",
       "Linear scar tissue on inner wrists and palms in precise, symmetrical patterns suggesting micro-surgical work from an earlier career phase",

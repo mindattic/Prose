@@ -4,8 +4,8 @@ namespace StreetSamurai.Core.Interfaces;
 /// Marker interface for all canon entities stored via JsonDirectoryRepository.
 /// Provides a stable unique Id (GUID) distinct from the human-readable Name.
 /// </summary>
-public interface ICanonEntity
+public interface ICanonEntity : IWorldRecord
 {
-    /// <summary>Stable unique identifier — auto-generated, never changes even if Name is edited.</summary>
-    string Id { get; set; }
+    /// <summary>Interest score 0–100. Populated by LLMVoting; editable manually.</summary>
+    double Rating { get; set; }
 }

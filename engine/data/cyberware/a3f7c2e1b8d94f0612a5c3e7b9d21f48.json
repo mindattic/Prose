@@ -7,7 +7,7 @@
   "aliases": [],
   "category": "ocular",
   "body_location": "eyes",
-  "description": "The Predator-7 is a full ocular replacement housing a dual-spectrum sensor array capable of switching between visible light, thermal, and low-light modes in under 40 milliseconds. Its onboard ballistic processor runs continuous trajectory prediction overlays, IFF tagging via encrypted Arcturus combat-net handshake, and threat-priority ranking across up to 24 simultaneous targets. A micro-gyroscope compensates for host movement, keeping targeting reticles stable during full-sprint engagements.\n\nDistributed exclusively through Arcturus Defense Solutions' licensed military and CorpSec channels, the Predator-7 is the standard-issue eye of GLMZ's private military contractors and Tier 4-5 security divisions. On the black market it commands a ferocious premium, and unauthorized units are hardware-locked with a firmware kill-switch that Arcturus can trigger remotely—a fact that hasn't stopped desperate Shelf runners from gambling on grey-market pulls.",
+  "description": "The Predator-7 is a full ocular replacement housing a dual-spectrum sensor array capable of switching between visible light, thermal, and low-light modes in under 40 milliseconds. Its onboard ballistic processor runs continuous trajectory prediction overlays, IFF tagging via encrypted Arcturus combat-net handshake, and threat-priority ranking across up to 24 simultaneous targets. A micro-gyroscope compensates for host movement, keeping targeting reticles stable during full-sprint engagements.\n\nDistributed exclusively through Arcturus Defense Solutions' licensed military and CorpSec channels, the Predator-7 is the standard-issue eye of GLMZ's private military contractors and Tier 4-5 security divisions. On the black market it commands a ferocious premium, and unauthorized units are hardware-locked with a firmware kill-switch that Arcturus can trigger remotely—a fact that hasn't stopped desperate the Gray Zone runners from gambling on grey-market pulls.",
   "manufacturer": "Meridian Neural Defense",
   "tier_availability": "Tier 3-5",
   "legality": "Military-Only",
@@ -19,9 +19,9 @@
     "Persistent threat-overlay bleed during civilian downtime — social settings feel like active combat zones",
     "Firmware kill-switch vulnerability on unauthorized units",
     "Calibration migraines during initial 2-week neural integration period",
-    "IFF misclassification errors reported in dense Shelf crowds with signal interference"
+    "IFF misclassification errors reported in dense the Gray Zone crowds with signal interference"
   ],
-  "cultural_context": "The Predator-7 is the cyberware equivalent of a status symbol among CorpSec contractors — visible from across a room by its faint red iris-ring that glows under thermal load. On the Shelf, spotting one means either a very rich or very desperate person is nearby.",
+  "cultural_context": "The Predator-7 is the cyberware equivalent of a status symbol among CorpSec contractors — visible from across a room by its faint red iris-ring that glows under thermal load. On the Gray Zone, spotting one means either a very rich or very desperate person is nearby.",
   "known_users": [
     "Arcturus Defense Solutions contracted soldiers",
     "Tier 4-5 CorpSec division commanders",
@@ -53,7 +53,6 @@
     "Lazarus LX-2 'Lab Rat'",
     "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
     "Tessera Nexus Town Car",
-    "The Shelf",
     "Vantablack-CNX"
   ]
 }

@@ -1,5 +1,6 @@
 {
   "id": "019d6143a68571f9abe7483cc8fe51ac",
+  "rating": 20,
   "type": "character",
   "name": "Obinna Erikstad-Mukherjee",
   "aliases": [],
@@ -30,7 +31,11 @@
     "vocabulary": "",
     "cadence": "",
     "verbal_tics": [],
-    "example_lines": []
+    "example_lines": [],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [],
@@ -95,19 +100,16 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Dispatch-45 'Last Word'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Meridian Core"
-  ],
-  "district": "Meridian Core",
   "physical_description": {
-    "heritage": "A striking global genetic blend from the Ubiquitous Diaspora: South Asian (26.9%), Sub-Saharan African (24.2%), Northern European (20.4%), Southeast Asian (16.2%), Hispanic/Latin American (6.5%), and East Asian (5.8%). This unique combination creates a distinctive phenotype—warm deep brown skin with golden and olive undertones from South Asian and Southeast Asian ancestry, strong defined facial structure from Sub-Saharan African genetics, refined eye shape with subtle epicanthic fold from East Asian heritage, and bone structure refinement from Northern European ancestry. The result is a face that carries multiple continents with natural harmony.",
+    "heritage": "A striking global genetic blend from the Ubiquitous Diaspora: South Asian (26.9%), Sub-Saharan African (24.2%), Northern European (20.4%), Southeast Asian (16.2%), Hispanic/Latin American (6.5%), and East Asian (5.8%). This unique combination creates a distinctive phenotype\u2014warm deep brown skin with golden and olive undertones from South Asian and Southeast Asian ancestry, strong defined facial structure from Sub-Saharan African genetics, refined eye shape with subtle epicanthic fold from East Asian heritage, and bone structure refinement from Northern European ancestry. The result is a face that carries multiple continents with natural harmony.",
     "height_cm": 178,
     "weight_kg": 82,
-    "build": "Athletic and compact, shoulders broad from decades of fieldwork, no excess fat—the kind of frame that moves efficiently through tight spaces and stays functional under stress",
+    "build": "Athletic and compact, shoulders broad from decades of fieldwork, no excess fat\u2014the kind of frame that moves efficiently through tight spaces and stays functional under stress",
     "hair_color": "Steel gray with black undertones",
     "hair_style": "Closely cropped fade, maintained weekly",
     "hair_length": "Short",
@@ -116,14 +118,15 @@
     "complexion": "Weathered but well-maintained; fine lines around the eyes and mouth from forty-two years of reading rooms and situations; strong, defined jawline reflecting Sub-Saharan African heritage; moderate-to-high cheekbones with balanced structure from South Asian and Southeast Asian genetics; clean-shaven except for thin line of stubble by evening",
     "distinguishing_marks": [
       "Thin white scar running 2cm along the left cheekbone, old enough to blend with natural skin creases",
-      "Faint burn mark on the back of the right hand, the size of a cigarette cherry—deliberately kept visible as a reminder",
+      "Faint burn mark on the back of the right hand, the size of a cigarette cherry\u2014deliberately kept visible as a reminder",
       "Small ritual scarification on the inside of the left wrist, three parallel lines, family heritage"
     ],
-    "visible_augmentations": "None visible. Keeps chrome invisible—subcutaneous neural overlay for augmented reality feeds, internal comms, encrypted data access. A stranger would notice nothing.",
-    "posture_movement": "Economical and controlled. Stands with weight balanced, never sprawling. Moves through space with deliberate intent, each gesture minimal but communicative. Listens more than talks; eyes track everything. Hands rest in lap or pockets—never exposed",
+    "visible_augmentations": "None visible. Keeps chrome invisible\u2014subcutaneous neural overlay for augmented reality feeds, internal comms, encrypted data access. A stranger would notice nothing.",
+    "posture_movement": "Economical and controlled. Stands with weight balanced, never sprawling. Moves through space with deliberate intent, each gesture minimal but communicative. Listens more than talks; eyes track everything. Hands rest in lap or pockets\u2014never exposed",
     "clothing_style": "Tier 2 corporate casual that reads as understated wealth. Charcoal wool slacks, dark fitted turtlenecks or simple dress shirts in black or gray, a worn but expensive leather jacket (Suomi make, pre-2200s). No logos, no flash. A simple stainless steel watch, nothing smart"
   },
   "image_prompt": "Portrait of Obinna Erikstad-Mukherjee, 42-year-old man with rich warm brown skin, golden and olive undertones, strong defined jawline, high cheekbones, dark brown hooded eyes with subtle East Asian fold. Steel gray hair with black undertones in tight fade. Thin white scar on left cheekbone, faint burn mark visible on right hand. Clean-shaven with evening stubble. Athletic compact build, 178cm tall. Wearing charcoal wool slacks and dark fitted turtleneck under worn expensive Suomi leather jacket, simple stainless steel watch. Economical posture, controlled movement, listening expression. Great Lakes Metropolitan Zone corporate district, 2226, cool blue-gray neo-noir lighting, subtle augmented reality interface visible in his eyes, moody and observant --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "South Asian": 26.9,
     "Sub-Saharan African": 24.2,
@@ -132,12 +135,6 @@
     "Hispanic/Latin American": 6.5,
     "East Asian": 5.8
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "South Asian": {
       "Nepali": {
@@ -191,6 +188,5 @@
         "Korean": 1.1
       }
     }
-  },
-  "tier": "3"
+  }
 }

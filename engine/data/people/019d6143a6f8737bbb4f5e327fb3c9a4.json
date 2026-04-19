@@ -9,8 +9,8 @@
   "role": "Junk merchant and scrap reseller — electronics salvage, reclaimed parts, mystery lots",
   "age": 34,
   "status": "active",
-  "location": "The Shelf, Ironvein, near Ashland and Division",
-  "description": "Nova Haugen-Xayavong is lean in the way of someone who forgets to eat when a project absorbs him — not quite gaunt but close, with long clever fingers perpetually stained in a rotating cast of lubricants and oxidized metals. His skin is a deep warm brown, his head shaved close on the sides with a dense natural coil on top that he secures with whatever is nearest, usually a reclaimed wire clip. He has bioluminescent underlining along his collarbones — a pale green glow visible in low light, bought cheap from a Helix Biosystems knockoff clinic and slightly asymmetrical, which he considers character. His stall on The Shelf is a leaning tower of crates, sorted by a taxonomy he insists is logical and that no one else has ever decoded.\n\nHe is the kind of person whose enthusiasm for obscure things is genuinely infectious — he can talk for forty minutes about the degradation patterns of third-generation synthetic capacitors and make you care. He is also deeply, constitutionally disorganized in everything except his actual technical knowledge, which is encyclopedic. He has a habit of agreeing to things in the heat of excitement and then having no memory of agreeing. He is not dishonest — he is just running seventeen threads at once and most of them are internal.",
+  "location": "the Gray Zone, Ironvein, near Ashland and Division",
+  "description": "Nova Haugen-Xayavong is lean in the way of someone who forgets to eat when a project absorbs him — not quite gaunt but close, with long clever fingers perpetually stained in a rotating cast of lubricants and oxidized metals. His skin is a deep warm brown, his head shaved close on the sides with a dense natural coil on top that he secures with whatever is nearest, usually a reclaimed wire clip. He has bioluminescent underlining along his collarbones — a pale green glow visible in low light, bought cheap from a Helix Biosystems knockoff clinic and slightly asymmetrical, which he considers character. His stall on the Gray Zone is a leaning tower of crates, sorted by a taxonomy he insists is logical and that no one else has ever decoded.\n\nHe is the kind of person whose enthusiasm for obscure things is genuinely infectious — he can talk for forty minutes about the degradation patterns of third-generation synthetic capacitors and make you care. He is also deeply, constitutionally disorganized in everything except his actual technical knowledge, which is encyclopedic. He has a habit of agreeing to things in the heat of excitement and then having no memory of agreeing. He is not dishonest — he is just running seventeen threads at once and most of them are internal.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -58,7 +58,7 @@
   ],
   "narrative_function": "Equipment source for players on a budget. Can identify salvage and unusual tech. Information source for the secondhand economy and what's been stripped from where. Comic relief with genuine depth underneath.",
   "augmentations": "Bioluminescent underlining along collarbones (cosmetic, knockoff Helix Biosystems). Cheap retinal magnification implant in left eye — functional but gives him occasional calibration headaches.",
-  "daily_life": "He sorts salvage in the early hours when The Shelf is quiet, opens his stall mid-morning, and spends most of the day simultaneously serving customers, disassembling things he finds interesting, and carrying on three separate comm conversations. He eats irregularly from Olamide's stall when he remembers.",
+  "daily_life": "He sorts salvage in the early hours when the Gray Zone is quiet, opens his stall mid-morning, and spends most of the day simultaneously serving customers, disassembling things he finds interesting, and carrying on three separate comm conversations. He eats irregularly from Olamide's stall when he remembers.",
   "affiliation": "Independent; informal relationship with Oxidian Market Vendors Guild (owes dues, keeps forgetting to pay); The Reclaimed",
   "uses_facets": false,
   "narration_voice": "",
@@ -155,7 +155,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -169,7 +169,6 @@
   "registered_firearms": [],
   "related_entities": [
     "Helix Biosystems",
-    "The Shelf",
     "Frequency",
     "Plot 17",
     "Ironvein",
@@ -180,7 +179,7 @@
     "The Pale Mile",
     "Nightlight"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Southeast Asian (73.7%) with Middle Eastern (22.9%) and Sub-Saharan African (3.4%) ancestry. Warm golden-brown skin with subtle amber and olive undertones, rich with luminosity. High cheekbones and defined facial structure reflecting strong Southeast Asian heritage; the ancestral blend creates depth across the frame with warm complexion richness.",
     "height_cm": 178,

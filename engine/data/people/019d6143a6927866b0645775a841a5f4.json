@@ -6,11 +6,11 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Sociologist studying social stratification and community formation in the Shelf zones",
+  "role": "Sociologist studying social stratification and community formation in the Gray Zone zones",
   "age": 52,
   "status": "active",
   "location": "Primarily field-based in Auburn Grist and Chatham Flats; maintains a desk at the University Spine's Institute for Urban Social Research in the Meridian Core, near State and Jackson",
-  "description": "Farid Halverson looks like someone who has been places and come back changed by them in ways she wears openly. She is a large, broad-shouldered woman with deep black skin and grey natural hair cut close, with reading lines around her eyes and a scar along her left jawline from an incident in the Shelf she does not discuss. Her Yoruba-Icelandic heritage is everywhere in her face — the strong jaw, the wide forehead, the surprising pale hazel of her eyes, which are the thing people remember. She wears functional clothes that can survive a twelve-hour fieldwork day and carries a physical notebook alongside her data equipment, which her graduate students treat as an affectation and which she defends loudly and regularly.\n\nShe has spent the last two decades embedded in the lower-tier communities of GLMZ's peripheral zones — Shelf communities, reclamation zones, the edges of the city that corponation sociology tends to treat as problems to model rather than people to know. Her work has produced four books that have made her genuinely influential in academic circles and genuinely respected in the communities she studies, a combination that is rarer than it should be. She is direct, large in presence, quick to laugh and quicker to call out what she considers intellectual dishonesty. She is also, under the professional armor, a person who has seen a great deal of suffering and carried it without adequate resources for processing it.",
+  "description": "Farid Halverson looks like someone who has been places and come back changed by them in ways she wears openly. She is a large, broad-shouldered woman with deep black skin and grey natural hair cut close, with reading lines around her eyes and a scar along her left jawline from an incident in the Gray Zone she does not discuss. Her Yoruba-Icelandic heritage is everywhere in her face — the strong jaw, the wide forehead, the surprising pale hazel of her eyes, which are the thing people remember. She wears functional clothes that can survive a twelve-hour fieldwork day and carries a physical notebook alongside her data equipment, which her graduate students treat as an affectation and which she defends loudly and regularly.\n\nShe has spent the last two decades embedded in the lower-tier communities of GLMZ's peripheral zones — the Gray Zone communities, reclamation zones, the edges of the city that corponation sociology tends to treat as problems to model rather than people to know. Her work has produced four books that have made her genuinely influential in academic circles and genuinely respected in the communities she studies, a combination that is rarer than it should be. She is direct, large in presence, quick to laugh and quicker to call out what she considers intellectual dishonesty. She is also, under the professional armor, a person who has seen a great deal of suffering and carried it without adequate resources for processing it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -47,7 +47,7 @@
       "Addressing people by name frequently in conversation"
     ],
     "example_lines": [
-      "'You want to know what the Shelf is? The Shelf is what the city decided to let happen to people it decided were acceptable losses. That's not metaphor. That's policy.'",
+      "'You want to know what the Gray Zone is? the Gray Zone is what the city decided to let happen to people it decided were acceptable losses. That's not metaphor. That's policy.'",
       "'I don't do advocacy as a researcher. I do documentation. Those communities have their own advocates. What I do is make sure no one can claim they didn't know.'"
     ]
   },
@@ -57,7 +57,7 @@
     "A new corponation urban redevelopment initiative in Chatham Flats uses language and metrics directly from her published work, repurposed in ways that will displace the communities she documented",
     "A community elder she has worked with for fifteen years has asked her to help document and preserve their oral history before a planned demolition — off the record and outside her institutional role"
   ],
-  "narrative_function": "Deep community knowledge source; introduction to Shelf communities for outsiders; potential advocate or complication when academic and community interests diverge; her research could be evidence for or against any number of political claims about the lower city",
+  "narrative_function": "Deep community knowledge source; introduction to the Gray Zone communities for outsiders; potential advocate or complication when academic and community interests diverge; her research could be evidence for or against any number of political claims about the lower city",
   "augmentations": "Subdermal audio recorder (passive, research tool, requires consent activation); color-changing hair pigment (she leaves it grey — the mod was installed at her community's insistence as a safety tool during fieldwork and she never uses the color function); no other modifications",
   "daily_life": "Several days per week in the field — attending community meetings, conducting interviews, sitting in spaces and observing with the kind of attention that is its own form of respect. Administrative days at the university involve a great deal of arguing with the ethics board about fieldwork protocols she finds paternalistic, and mentoring graduate students she takes seriously.",
   "affiliation": "University Spine — Institute for Urban Social Research (tenured, Tier 3 salary); board member of the Auburn Grist Community Advocacy Coalition in a personal capacity",
@@ -214,7 +214,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Jaw scar incident in the Shelf — she does not discuss the specifics",
+      "event": "Jaw scar incident in the Gray Zone — she does not discuss the specifics",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -250,7 +250,6 @@
     "Auburn Grist",
     "The Reclamation Assembly",
     "Chronicle",
-    "The Shelf",
     "The Heritage Vault",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",

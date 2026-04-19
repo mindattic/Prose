@@ -29,10 +29,10 @@
   "tier_availability": "Tier 1-2",
   "legality": "restricted",
   "street_price": "Φ 95 per dose",
-  "cultural_context": "Vorrathine is the drug that responsible runners don't take on team ops. It is popular in gang warfare on the Shelf because it is cheap and terrifying — a single Vorra-dosed fighter can break a defensive line through sheer overwhelming aggression. It is also the reason experienced mercenaries refuse certain contracts: 'Vorra territory' is a phrase that means the tactical situation has devolved beyond rational combat. Nightshade's legal fig leaf is threadbare, and Lazarus has lobbied twice to have it reclassified as illegal.",
+  "cultural_context": "Vorrathine is the drug that responsible runners don't take on team ops. It is popular in gang warfare in the Gray Zone because it is cheap and terrifying — a single Vorra-dosed fighter can break a defensive line through sheer overwhelming aggression. It is also the reason experienced mercenaries refuse certain contracts: 'Vorra territory' is a phrase that means the tactical situation has devolved beyond rational combat. Nightshade's legal fig leaf is threadbare, and Lazarus has lobbied twice to have it reclassified as illegal.",
   "story_hooks": [
-    "A gang war on the Shelf has escalated to catastrophic civilian casualties because one faction started dosing their fighters with Vorrathine — someone needs to cut the supply line before the Shelf becomes a killzone.",
-    "A Nightshade executive is using Vorrathine in closed clinical trials on Shelf residents recruited under false pretenses; the data they're collecting suggests a more controllable reformulation.",
+    "A gang war in the Gray Zone has escalated to catastrophic civilian casualties because one faction started dosing their fighters with Vorrathine — someone needs to cut the supply line before the Gray Zone becomes a killzone.",
+    "A Nightshade executive is using Vorrathine in closed clinical trials on the Gray Zone residents recruited under false pretenses; the data they're collecting suggests a more controllable reformulation.",
     "A runner wakes up in an alley with blood on her hands and no memory of the last two hours — she doesn't use Vorrathine, but someone may have dosed her without consent."
   ],
   "tags": [
@@ -58,7 +58,6 @@
     "moral",
     "drug",
     "stimulant",
-    "shelf",
     "circuit",
     "tier 1",
     "tier 2"
@@ -72,7 +71,6 @@
     "Nightshade Pharmatech",
     "Nnamdi Ostrowski-Faletolu",
     "The Pure Hand",
-    "The Shelf",
     "Tomas Alcala"
   ]
 }

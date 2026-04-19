@@ -3,7 +3,7 @@
   "name": "Coldseam Night Watcher's Kit",
   "type": "apparel",
   "category": "outfit",
-  "description": "Night watch on the Shelf is informal, unglamorous, and necessary — someone has to sit the perimeter of a squat block or community shelter through the cold hours, watching for raiders, Corponation enforcement sweeps, and the slower threats. This outfit is optimized for stillness, warmth, and not being seen. The outer layer is a long hooded coat in near-black charcoal, the fabric a dense synthetic weave with a matte finish that absorbs rather than reflects available light — not a designed stealth coating, just a fabric that happens to work that way, likely cut from industrial blackout curtaining. The hood is deep and structured, holding its shape when raised, with a drawstring that cinches it to a narrow opening around the face. The coat's interior has been lined with panels of salvaged thermal batting, unevenly distributed — thicker at the torso and upper arms, thinner at the forearms for dexterity. Beneath the coat, a mid-layer pullover in dark heather gray sits over a thermal base layer in faded black; the pullover's cuffs are cut long and folded back, providing extra wrist coverage when unrolled. Trousers are close-cut in dark gray, with cargo pockets at the outer thighs — both sealed with friction-closure strips rather than zippers, to minimize noise. The boots are soft-soled mid-calf, the upper in cracked matte black synthetic leather, the sole a thick rubber compound that has been scraped smooth on the outer edge for silence on metal grating. Around the neck, a face wrap in dark charcoal — a long tube of fabric that can be pulled up to cover nose and mouth or worn loose. Fingerless gloves in worn dark leather leave the fingertips free; the right glove's index finger has been cut shorter than the others, exposing the tip of a cybernetic finger — matte black, clearly older-generation chrome, the joint slightly audible when flexed. A small battered earpiece sits in the left ear, the cord disappearing under the collar.",
+  "description": "Night watch in the Gray Zone is informal, unglamorous, and necessary — someone has to sit the perimeter of a squat block or community shelter through the cold hours, watching for raiders, Corponation enforcement sweeps, and the slower threats. This outfit is optimized for stillness, warmth, and not being seen. The outer layer is a long hooded coat in near-black charcoal, the fabric a dense synthetic weave with a matte finish that absorbs rather than reflects available light — not a designed stealth coating, just a fabric that happens to work that way, likely cut from industrial blackout curtaining. The hood is deep and structured, holding its shape when raised, with a drawstring that cinches it to a narrow opening around the face. The coat's interior has been lined with panels of salvaged thermal batting, unevenly distributed — thicker at the torso and upper arms, thinner at the forearms for dexterity. Beneath the coat, a mid-layer pullover in dark heather gray sits over a thermal base layer in faded black; the pullover's cuffs are cut long and folded back, providing extra wrist coverage when unrolled. Trousers are close-cut in dark gray, with cargo pockets at the outer thighs — both sealed with friction-closure strips rather than zippers, to minimize noise. The boots are soft-soled mid-calf, the upper in cracked matte black synthetic leather, the sole a thick rubber compound that has been scraped smooth on the outer edge for silence on metal grating. Around the neck, a face wrap in dark charcoal — a long tube of fabric that can be pulled up to cover nose and mouth or worn loose. Fingerless gloves in worn dark leather leave the fingertips free; the right glove's index finger has been cut shorter than the others, exposing the tip of a cybernetic finger — matte black, clearly older-generation chrome, the joint slightly audible when flexed. A small battered earpiece sits in the left ear, the cord disappearing under the collar.",
   "tier_association": "Tier 1",
   "materials": [
     "matte charcoal industrial blackout curtain synthetic weave coat",
@@ -18,12 +18,12 @@
     "older-generation matte black cybernetic finger (personal aug)",
     "battered earpiece"
   ],
-  "functionality": "Matte blackout-fabric coat minimizes light reflection for low-profile positioning. Deep structured hood allows full concealment of face while maintaining peripheral vision. Thermal batting lining concentrates insulation at torso and upper arms while maintaining forearm dexterity. Friction-closure cargo pockets operate silently. Soft scraped-smooth boot soles reduce noise on metal grating and concrete. Fingerless gloves with shortened index finger allow full tactile sensitivity for the cybernetic finger, which likely has pressure or temperature sensing capability. Battered earpiece suggests connection to a low-power local comm network — Shelf-built, short range.",
+  "functionality": "Matte blackout-fabric coat minimizes light reflection for low-profile positioning. Deep structured hood allows full concealment of face while maintaining peripheral vision. Thermal batting lining concentrates insulation at torso and upper arms while maintaining forearm dexterity. Friction-closure cargo pockets operate silently. Soft scraped-smooth boot soles reduce noise on metal grating and concrete. Fingerless gloves with shortened index finger allow full tactile sensitivity for the cybernetic finger, which likely has pressure or temperature sensing capability. Battered earpiece suggests connection to a low-power local comm network — the Gray Zone-built, short range.",
   "what_it_says": "This person chose this watch shift. The outfit says deliberate preparation rather than emergency improvisation — the friction closures, the scraped soles, the shortened glove finger. The cybernetic finger is old and audible, which means they've had it long enough to stop being self-conscious about the sound. The earpiece says they're not alone out here — there's a network, even if it's just two other people watching two other corners.",
   "worn_by": [
-    "volunteer community night watch members in Shelf squat blocks",
-    "informal security for Shelf community shelters",
-    "scouts for Shelf resistance or mutual aid networks",
+    "volunteer community night watch members in the Gray Zone squat blocks",
+    "informal security for the Gray Zone community shelters",
+    "scouts for the Gray Zone resistance or mutual aid networks",
     "anyone whose job is to see without being seen and report without being heard"
   ],
   "manufacturer": "Self-assembled; coat fabric is cut from salvaged industrial blackout curtaining; gloves are street-market surplus; earpiece is hand-built from salvaged components",
@@ -31,9 +31,9 @@
   "aug_compatible": true,
   "gene_compatible": false,
   "story_hooks": [
-    "The earpiece connects to a Shelf-built comm network that has been inadvertently picking up encrypted signals from a nearby corponation facility — signals that someone very powerful wants to ensure no one on the Shelf ever decodes.",
+    "The earpiece connects to a the Gray Zone-built comm network that has been inadvertently picking up encrypted signals from a nearby corponation facility — signals that someone very powerful wants to ensure no one in the Gray Zone ever decodes.",
     "The night watcher saw something three nights ago that they haven't reported to anyone — not because they're hiding it, but because they don't yet know what it means, and they're waiting to see if it happens again.",
-    "The audible cybernetic finger joint is getting louder, which means the joint seal is failing — without maintenance the whole finger will lock within weeks, and the only person on the Shelf who can fix it is currently missing."
+    "The audible cybernetic finger joint is getting louder, which means the joint seal is failing — without maintenance the whole finger will lock within weeks, and the only person in the Gray Zone who can fix it is currently missing."
   ],
   "tags": [
     "apparel",
@@ -60,7 +60,6 @@
     "Ringo EV-3 'Watcher'",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "TESSERA ES-4 'Perimeter'",
-    "The Shelf",
     "VitaCore VocalStone Laryngeal Endurance System"
   ],
   "physical_description": {
@@ -82,7 +81,7 @@
       "All fabric choices optimized for light absorption rather than visibility"
     ],
     "tier_indicator": "Tier 5 sub-grade. Every piece is salvaged, repurposed, or self-assembled. No brand presence, no new manufacturing. The outfit is functional poverty — optimized for survival, not aesthetics or status.",
-    "cultural_context": "Street-level shelter security; informal perimeter watch; Shelf community survival. Wearing this signals: 'I hold ground here. I don't have corporate resources. I watch through the cold hours.' It's the outfit of someone living in ungoverned territory, someone whose augmentations are older and pieced together, someone who understands how to move unseen.",
+    "cultural_context": "Street-level shelter security; informal perimeter watch; the Gray Zone community survival. Wearing this signals: 'I hold ground here. I don't have corporate resources. I watch through the cold hours.' It's the outfit of someone living in ungoverned territory, someone whose augmentations are older and pieced together, someone who understands how to move unseen.",
     "condition_typical": "Worn and weathered as a starting point. The leather gloves are cracked and creased. The boots are scuffed. Seams show age. The coat's interior batting is lumpy with uneven settling. The cybernetic finger is visibly older-generation, with minor scratches and a slightly oxidized matte finish. This is not an outfit that looks new; it looks lived-in from day one, and that's the point."
   },
   "image_prompt": "Neo-noir fashion photograph: a lean figure in a long charcoal matte coat with deep structured hood raised, face obscured by shadow and a dark wrap pulled up to bridge of nose. The figure stands motionless against a rain-slicked industrial backdrop — rusted shipping containers, stacked pallets, cold fluorescent spill from a distant window. Left hand rests against torso, gloves visible and worn; right hand at side, cybernetic matte-black finger catching the faintest light, small audible joint articulation hinted by reflection. Dark gray trousers, soft-soled black boots with scraped heel edges. Battered earpiece visible in left ear, cord disappearing under collar into the thermal layers. Mist hangs low. No movement, complete stillness. The figure is not looking at camera — gaze is directed outward, watchful. High contrast, cool color grading, moody 2:3 portrait composition. Ambient light from distant signage and industrial floods, no direct illumination on face. --ar 2:3 --v 6",

@@ -16,18 +16,18 @@
   "functionality": "Partial acid-rain deflection, blunt impact resistance, and face-shield coverage. Horn cutouts accommodate most common geneware. No electronics. Some builds include a crude wire-mesh filter over the mouth opening.",
   "what_it_says": "You built your own armor because no one was going to give it to you.",
   "worn_by": [
-    "Shelf scrappers",
+    "the Gray Zone scrappers",
     "salvage runners",
     "Tier 1 gang enforcers",
     "acid-zone day laborers"
   ],
-  "manufacturer": "Slagside (self-made, Shelf fabrication collective)",
+  "manufacturer": "Slagside (self-made, the Gray Zone fabrication collective)",
   "price_range": "Φ8–Φ35 (materials cost; labor is sweat)",
   "aug_compatible": false,
   "gene_compatible": true,
   "story_hooks": [
-    "A recurring rivet stamp — a small triangle — appears on helmets across three different Shelf districts, suggesting a single traveling builder or a copied template with significance no one will explain.",
-    "A Tier 3 urban anthropologist is collecting these helmets for a gallery show; Shelf residents are now deliberately making them uglier to sabotage the exhibit.",
+    "A recurring rivet stamp — a small triangle — appears on helmets across three different the Gray Zone districts, suggesting a single traveling builder or a copied template with significance no one will explain.",
+    "A Tier 3 urban anthropologist is collecting these helmets for a gallery show; the Gray Zone residents are now deliberately making them uglier to sabotage the exhibit.",
     "One helmet has a sealed compartment welded into the crown. It's been passed between owners for eleven years. Nobody has opened it."
   ],
   "tags": [
@@ -38,7 +38,6 @@
     "acid-resistant",
     "tier-1",
     "gene-compatible",
-    "shelf",
     "salvage",
     "face-shield"
   ],
@@ -66,7 +65,7 @@
       "Interior bicycle tire rubber lining for shock absorption"
     ],
     "tier_indicator": "Tier 5 sub-grade salvage. Raw material cost near zero. Signals ungoverned fabrication and resource scarcity.",
-    "cultural_context": "Slagside Shelf collective — autonomous maker community operating outside corpo supply chains. Wearer is either a scrap worker, Behemoth salvager, or militant sub-grade operative. Anti-establishment signal.",
+    "cultural_context": "Slagside the Gray Zone collective — autonomous maker community operating outside corpo supply chains. Wearer is either a scrap worker, Behemoth salvager, or militant sub-grade operative. Anti-establishment signal.",
     "condition_typical": "Always weathered and patched. Fresh welds and new bolt additions common. Never pristine. Visible repair history is the design."
   },
   "image_prompt": "Brutalist salvage helmet mounted on dark industrial mannequin, shot against rust-stained concrete wall. Harsh single-source lighting from upper left reveals oxidized surface texture and protruding bolt heads. Cracked polycarbonate face shield catches light like fractured ice. Soot and metal dust visible in crevices. Gritty, tactile, dystopian. Dark amber and deep shadow color grading. --ar 2:3 --v 6",

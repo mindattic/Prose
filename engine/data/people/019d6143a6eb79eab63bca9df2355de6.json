@@ -1,5 +1,6 @@
 {
   "id": "019d6143a6eb79eab63bca9df2355de6",
+  "rating": 80,
   "type": "character",
   "name": "Diego Zaragoza-Anang",
   "aliases": [],
@@ -9,8 +10,8 @@
   "role": "Graffiti artist and underground filmmaker",
   "age": 17,
   "status": "active",
-  "location": "Highland Park Autonomous Zone, sleeps at his aunt's flat, near Michigan Ave and Walton",
-  "description": "Diego Zaragoza-Anang is all elbows and velocity — a tall, wiry teenager with dark brown skin, a close-cut fade, and his father's Ghanaian cheekbones softened by his mother's Bolivian jaw. He has a single cosmetic mod he saved for three months to afford: a cat tail in iridescent black that he swishes when he's thinking and tucks carefully into his waistband when his aunt is home. His fingers are permanently stained with aerosolized pigment in colors that shift weekly. He carries a battered recording rig everywhere — a shoulder-mounted camera array he built from three broken units cannibalized at the Brightmoor Reclamation salvage markets.\n\nDiego Zaragoza-Anang is the kind of talented that hasn't yet been shaped by knowing it, which makes his work both raw and startling — he films while he sprays, combines the visual and the documentary without quite understanding that's an unusual thing to do, and the result is a growing archive of HPAZ street art that is also an accidental ethnography of a community holding itself together. He is cocky in the way of someone who knows they're good but hasn't been tested, and genuinely kind in the way of someone raised by people who expected it. He is currently engaged in a low-grade obsessive competition with another writer whose tag, 'Çukur,' keeps appearing over or beside his own work — he hasn't decided yet if it's a rivalry or a conversation.",
+  "location": "Highland Park Autonomous Zone, sleeps at his aunt\u0027s flat, near Michigan Ave and Walton",
+  "description": "Diego Zaragoza-Anang is all elbows and velocity \u2014 a tall, wiry teenager with dark brown skin, a close-cut fade, and his father\u0027s Ghanaian cheekbones softened by his mother\u0027s Bolivian jaw. He has a single cosmetic mod he saved for three months to afford: a cat tail in iridescent black that he swishes when he\u0027s thinking and tucks carefully into his waistband when his aunt is home. His fingers are permanently stained with aerosolized pigment in colors that shift weekly. He carries a battered recording rig everywhere \u2014 a shoulder-mounted camera array he built from three broken units cannibalized at the Brightmoor Reclamation salvage markets.\n\nDiego Zaragoza-Anang is the kind of talented that hasn\u0027t yet been shaped by knowing it, which makes his work both raw and startling \u2014 he films while he sprays, combines the visual and the documentary without quite understanding that\u0027s an unusual thing to do, and the result is a growing archive of HPAZ street art that is also an accidental ethnography of a community holding itself together. He is cocky in the way of someone who knows they\u0027re good but hasn\u0027t been tested, and genuinely kind in the way of someone raised by people who expected it. He is currently engaged in a low-grade obsessive competition with another writer whose tag, \u0027\u00C7ukur,\u0027 keeps appearing over or beside his own work \u2014 he hasn\u0027t decided yet if it\u0027s a rivalry or a conversation.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -21,43 +22,47 @@
       "ghost": 0.3
     },
     "core_fears": [
-      "The HPAZ being absorbed or dissolved — losing the only place he's felt like he belongs",
+      "The HPAZ being absorbed or dissolved \u2014 losing the only place he\u0027s felt like he belongs",
       "Becoming boring, becoming safe, becoming someone who used to make things"
     ],
     "core_desires": [
       "To be taken seriously without having to get older to deserve it",
-      "To find Çukur and figure out if they're an enemy or the most interesting person he's ever met"
+      "To find \u00C7ukur and figure out if they\u0027re an enemy or the most interesting person he\u0027s ever met"
     ],
     "coping_mechanisms": [
-      "Makes something — if he's upset, he goes and sprays; the act of making is regulation",
-      "Turns everything into content — documentary distance from things that scare him"
+      "Makes something \u2014 if he\u0027s upset, he goes and sprays; the act of making is regulation",
+      "Turns everything into content \u2014 documentary distance from things that scare him"
     ],
     "blind_spots": [
-      "Films other people's vulnerability without always asking permission, because to him visibility is inherently positive",
-      "Doesn't think about the legal and physical risks of his locations clearly enough"
+      "Films other people\u0027s vulnerability without always asking permission, because to him visibility is inherently positive",
+      "Doesn\u0027t think about the legal and physical risks of his locations clearly enough"
     ],
-    "secret": "Two months ago, while filming in the drainage access corridors beneath the HPAZ, he recorded what he's pretty sure was a Ringo corporate extraction team moving something large and organic through a route that isn't on any map. He hasn't uploaded it. He's watched the raw footage seventeen times. He doesn't know what he's waiting for."
+    "secret": "Two months ago, while filming in the drainage access corridors beneath the HPAZ, he recorded what he\u0027s pretty sure was a Ringo corporate extraction team moving something large and organic through a route that isn\u0027t on any map. He hasn\u0027t uploaded it. He\u0027s watched the raw footage seventeen times. He doesn\u0027t know what he\u0027s waiting for."
   },
   "speech_patterns": {
     "vocabulary": "Fast slang, HPAZ youth vernacular, Twi words inherited from his father, Spanish phrases from his mother; switches registers abruptly when talking to adults he respects",
-    "cadence": "Rapid-fire when excited; goes unusually quiet and specific when he's being serious about the work",
+    "cadence": "Rapid-fire when excited; goes unusually quiet and specific when he\u0027s being serious about the work",
     "verbal_tics": [
-      "'You see that though?' (seeking confirmation)",
-      "'It's documented' (meaning he filmed it and it's therefore real and important)"
+      "\u0027You see that though?\u0027 (seeking confirmation)",
+      "\u0027It\u0027s documented\u0027 (meaning he filmed it and it\u0027s therefore real and important)"
     ],
     "example_lines": [
-      "'Çukur came back over my cloud piece on the Kessler junction wall, but — and this is the thing — they left a gap right where I had the negative space. They knew what I was doing. That's not beef, that's a response.'",
-      "'It's documented. Whatever Ringo is moving through those drains, it's documented. I just have to decide what that means.'"
-    ]
+      "\u0027\u00C7ukur came back over my cloud piece on the Kessler junction wall, but \u2014 and this is the thing \u2014 they left a gap right where I had the negative space. They knew what I was doing. That\u0027s not beef, that\u0027s a response.\u0027",
+      "\u0027It\u0027s documented. Whatever Ringo is moving through those drains, it\u0027s documented. I just have to decide what that means.\u0027"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "The Ringo footage — Tarquin eventually needs to tell someone, and whoever he tells gets pulled into whatever that was",
-    "Çukur reaches out, not in person but through a piece — a wall that is clearly a message to TQ specifically, with coordinates embedded in the design"
+    "The Ringo footage \u2014 Tarquin eventually needs to tell someone, and whoever he tells gets pulled into whatever that was",
+    "\u00C7ukur reaches out, not in person but through a piece \u2014 a wall that is clearly a message to TQ specifically, with coordinates embedded in the design"
   ],
-  "narrative_function": "Local color, youth perspective, mobile observer — he goes places adults can't or won't and records what's there; his footage is a resource; he can draw characters into the HPAZ community or into whatever he's currently chasing.",
+  "narrative_function": "Local color, youth perspective, mobile observer \u2014 he goes places adults can\u0027t or won\u0027t and records what\u0027s there; his footage is a resource; he can draw characters into the HPAZ community or into whatever he\u0027s currently chasing.",
   "augmentations": "Iridescent black cat tail (geneware, cosmetic); no other mods",
-  "daily_life": "School until midday (technically — attendance is irregular), works afternoons and nights on walls and filming, uploads edited cuts to underground data-shares under the handle 'TQ/HPAZ', back before dawn when possible.",
+  "daily_life": "School until midday (technically \u2014 attendance is irregular), works afternoons and nights on walls and filming, uploads edited cuts to underground data-shares under the handle \u0027TQ/HPAZ\u0027, back before dawn when possible.",
   "affiliation": "No formal collective; loosely orbiting the Highland Park Autonomous Zone youth arts program Inkwell; The Lakebed Scrapers",
   "uses_facets": false,
   "narration_voice": "",
@@ -102,31 +107,31 @@
   },
   "behavioral": {
     "decision_rules": [
-      "If you can see it, you should film it — visibility is dignity",
-      "Don't mess with other writers' pieces without leaving your tag; anonymous destruction is cowardice"
+      "If you can see it, you should film it \u2014 visibility is dignity",
+      "Don\u0027t mess with other writers\u0027 pieces without leaving your tag; anonymous destruction is cowardice"
     ],
     "escalation_ladder": [
       "Bravado and deflection",
-      "Retreating behind the camera — becomes observer rather than participant",
+      "Retreating behind the camera \u2014 becomes observer rather than participant",
       "Genuine anger, which is rare and startling given his usual energy",
       "Going completely silent and disappearing to make something"
     ],
     "interpersonal_modes": {
-      "strangers": "Confident front, quick to joke, slow to trust — assesses whether they see the HPAZ as a place or a problem first",
+      "strangers": "Confident front, quick to joke, slow to trust \u2014 assesses whether they see the HPAZ as a place or a problem first",
       "friends": "Fiercely loyal, would do genuinely stupid things for people he loves, expresses affection through showing up"
     },
     "stress_responses": {
       "low": "Makes jokes, gets louder",
       "medium": "Focuses obsessively on a specific piece or project to the exclusion of everything else",
-      "high": "Goes out to spray alone at 3am in locations that are more dangerous than he's admitting to himself"
+      "high": "Goes out to spray alone at 3am in locations that are more dangerous than he\u0027s admitting to himself"
     },
     "contradictions": [
-      "Insists he's not afraid of anything while carefully avoiding re-watching the last thirty seconds of the Ringo footage"
+      "Insists he\u0027s not afraid of anything while carefully avoiding re-watching the last thirty seconds of the Ringo footage"
     ],
     "habits": [
-      "Names every piece he completes — not publicly, just in his own log",
+      "Names every piece he completes \u2014 not publicly, just in his own log",
       "Talks to his cat tail when he thinks no one can hear him",
-      "Leaves a small tag — a single dot in the specific shade he calls 'signal orange' — on every location he films, a private archive marker"
+      "Leaves a small tag \u2014 a single dot in the specific shade he calls \u0027signal orange\u0027 \u2014 on every location he films, a private archive marker"
     ],
     "breaking_points": [
       "Watching the HPAZ be dismantled or occupied by corporate forces without being able to do anything",
@@ -135,13 +140,13 @@
   },
   "cyberware_inventory": [
     {
-      "name": "Salvage-built shoulder-mount camera array (three-unit composite, TQ's own construction)",
+      "name": "Salvage-built shoulder-mount camera array (three-unit composite, TQ\u0027s own construction)",
       "body_location": "",
       "manufacturer": "",
       "tier": "",
       "condition": "functional",
       "installed_date": "",
-      "description": "Salvage-built shoulder-mount camera array (three-unit composite, TQ's own construction)",
+      "description": "Salvage-built shoulder-mount camera array (three-unit composite, TQ\u0027s own construction)",
       "replaces": ""
     }
   ],
@@ -217,42 +222,33 @@
     }
   ],
   "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Mercy' Veterinary Tranquilizer Gun"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Highland Park Autonomous Zone",
-    "Brightmoor Reclamation",
-    "The Reclamation Assembly",
-    "The Accidental",
-    "Arcturus KS-7 'Nursery'",
-    "Ringo Corponation",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
-  ],
-  "district": "The Spires",
   "physical_description": {
-    "heritage": "Multi-continental diaspora blend: Hispanic/Latin American (32.7%), Sub-Saharan African (27.8%), Indigenous American (22.9%), Eastern European (9.4%), Northern European (7.2%). This five-way genetic convergence creates striking complexity — warm medium-brown skin with golden and subtle reddish undertones from the Latin American and Indigenous American base, deepened and enriched by Sub-Saharan African heritage. His features reflect this fusion: prominent, sculpted cheekbones with strong definition, a broad jawline showing African and Indigenous ancestry, angular structure balanced by full-featured warmth. Eyes set deep with the characteristic depth of African heritage. The overall effect is unmistakably rooted in multiple continents simultaneously.",
+    "heritage": "Multi-continental diaspora blend: Hispanic/Latin American (32.7%), Sub-Saharan African (27.8%), Indigenous American (22.9%), Eastern European (9.4%), Northern European (7.2%). This five-way genetic convergence creates striking complexity \u2014 warm medium-brown skin with golden and subtle reddish undertones from the Latin American and Indigenous American base, deepened and enriched by Sub-Saharan African heritage. His features reflect this fusion: prominent, sculpted cheekbones with strong definition, a broad jawline showing African and Indigenous ancestry, angular structure balanced by full-featured warmth. Eyes set deep with the characteristic depth of African heritage. The overall effect is unmistakably rooted in multiple continents simultaneously.",
     "height_cm": 185,
     "weight_kg": 68,
-    "build": "Wiry and angular — all lean muscle and restless energy, the build of someone who climbs and runs and rarely sits still. Long limbs, sharp shoulders, minimal body fat.",
+    "build": "Wiry and angular \u2014 all lean muscle and restless energy, the build of someone who climbs and runs and rarely sits still. Long limbs, sharp shoulders, minimal body fat.",
     "hair_color": "Natural black",
     "hair_style": "Close-cut fade with precise geometric lines, maintained weekly; no styling products, let it air-dry into clean definition",
     "hair_length": "Short",
     "eye_color": "Deep brown, almost black",
-    "skin_tone": "Rich medium-warm brown with golden undertones and subtle reddish warmth; sun-darkened from outdoor work, showing the blended warmth of Latin American and Indigenous American heritage enriched by Sub-Saharan African depth. Uneven tanning — darker on exposed areas from consistent outdoor climbing and spray-painting work.",
-    "complexion": "Clear skin with sparse acne scatter across upper back and shoulders from summer heat and outdoor sweating. Strong, sculpted cheekbones reflecting the multi-continental blend, balanced by a warm, broad jawline characteristic of African and Indigenous ancestry. No facial hair — maintains clean-shaven appearance. Permanent pigment staining on fingertips and cuticles in shifting colors: cadmium yellow, metallic silver, and hot pink traces beneath embedded aerosol dust.",
-    "visible_augmentations": "Iridescent black cat tail (living geneware implant, 40cm long) emerging from base of spine, covered in fine black fur with opalescent sheen that shifts blue-green-purple in certain light; typically tucked into waistband indoors but worn loose during work. Recording rig (shoulder-mounted camera array, three cannibalized and rewired units) carried constantly — weathered, epoxy and electrical tape construction, covered in stickers and worn paint.",
+    "skin_tone": "Rich medium-warm brown with golden undertones and subtle reddish warmth; sun-darkened from outdoor work, showing the blended warmth of Latin American and Indigenous American heritage enriched by Sub-Saharan African depth. Uneven tanning \u2014 darker on exposed areas from consistent outdoor climbing and spray-painting work.",
+    "complexion": "Clear skin with sparse acne scatter across upper back and shoulders from summer heat and outdoor sweating. Strong, sculpted cheekbones reflecting the multi-continental blend, balanced by a warm, broad jawline characteristic of African and Indigenous ancestry. No facial hair \u2014 maintains clean-shaven appearance. Permanent pigment staining on fingertips and cuticles in shifting colors: cadmium yellow, metallic silver, and hot pink traces beneath embedded aerosol dust.",
     "distinguishing_marks": [
       "Iridescent black cat tail (living geneware implant, 40cm long) emerging from base of spine, covered in fine black fur with opalescent sheen that shifts blue-green-purple in certain light; moves independently with mood and cognition",
       "Small burn scar on left forearm (5cm, linear) from salvage yard accident two years ago with hot flux capacitor; faded but visible",
       "Faint scarring on both knuckles from spray-can pressure cuts and concrete climbing lacerations"
     ],
-    "posture_movement": "Perpetually in motion — fidgeting, shifting weight, bouncing on balls of feet. When focused on work (spraying, filming, editing), goes still with meditative intensity. Climbs and moves through three-dimensional space with practiced ease; comfortable on fire escapes, ledges, scaffolding. Tail moves in counterpoint to body language: swishing when excited or thinking, tucking when anxious. Walks with slight forward lean, as if always heading somewhere interesting.",
-    "clothing_style": "Tier 4 working-class aesthetics with art-scene individualism. Oversized hoodies (paint-stained, deliberately or accidentally), slim cargo pants with deep pockets for supplies, reinforced tactical boots scuffed and weathered from climbing. Canvas satchel across chest (cannibalized courier bag, patched with fabric tape) holding spray cans, tools, backup recording media. Brightmoor reclamation puffer vest worn unzipped over hoodies. No expensive brands — salvaged, thrifted, or secondhand Highland Park market purchases. Color palette mirrors spray-paint choices — grays and blacks alternating with neon pops through thrifted windbreakers. All clothing shows work evidence: paint spatters, singe marks, climbing dust."
+    "visible_augmentations": "Iridescent black cat tail (living geneware implant, 40cm long) emerging from base of spine, covered in fine black fur with opalescent sheen that shifts blue-green-purple in certain light; typically tucked into waistband indoors but worn loose during work. Recording rig (shoulder-mounted camera array, three cannibalized and rewired units) carried constantly \u2014 weathered, epoxy and electrical tape construction, covered in stickers and worn paint.",
+    "posture_movement": "Perpetually in motion \u2014 fidgeting, shifting weight, bouncing on balls of feet. When focused on work (spraying, filming, editing), goes still with meditative intensity. Climbs and moves through three-dimensional space with practiced ease; comfortable on fire escapes, ledges, scaffolding. Tail moves in counterpoint to body language: swishing when excited or thinking, tucking when anxious. Walks with slight forward lean, as if always heading somewhere interesting.",
+    "clothing_style": "Tier 4 working-class aesthetics with art-scene individualism. Oversized hoodies (paint-stained, deliberately or accidentally), slim cargo pants with deep pockets for supplies, reinforced tactical boots scuffed and weathered from climbing. Canvas satchel across chest (cannibalized courier bag, patched with fabric tape) holding spray cans, tools, backup recording media. Brightmoor reclamation puffer vest worn unzipped over hoodies. No expensive brands \u2014 salvaged, thrifted, or secondhand Highland Park market purchases. Color palette mirrors spray-paint choices \u2014 grays and blacks alternating with neon pops through thrifted windbreakers. All clothing shows work evidence: paint spatters, singe marks, climbing dust."
   },
   "image_prompt": "Diego Zaragoza-Anang, 185cm lean angular wiry build, rich medium-warm brown skin with golden undertones sun-darkened from outdoor work, sculpted cheekbones and broad jawline, deep brown almost-black eyes, short black fade haircut with geometric precision. Multi-continental features reflecting Hispanic/Latin American, Sub-Saharan African, and Indigenous American ancestry. Iridescent black opalescent cat tail (40cm, living geneware) emerging from base of spine, shifting blue-green-purple in light, partially tucked into oversized paint-stained hoodie. Shoulder-mounted weathered recording camera rig (three cannibalized units, epoxy and tape construction) covered in stickers. Canvas satchel across chest. Slim cargo pants, reinforced tactical boots scuffed from climbing. Pigment-stained fingertips showing cadmium yellow and metallic silver. Faint burn scar on left forearm. Perpetual forward lean posture, fidgeting energy. Standing on urban fire escape or rooftop in Great Lakes Metropolitan Zone, GLMZ, neon-lit evening atmosphere with iridescent tail catching light, spray cans visible in satchel, authentic gritty street art environment, moody cool lighting with warm skin tone contrast --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Hispanic/Latin American": 32.7,
     "Sub-Saharan African": 27.8,
@@ -260,12 +256,6 @@
     "Eastern European": 9.4,
     "Northern European": 7.2
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Hispanic/Latin American": {
       "Central American": {
@@ -318,6 +308,5 @@
         "Icelandic": 3.2
       }
     }
-  },
-  "tier": "1"
+  }
 }

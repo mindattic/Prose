@@ -3,7 +3,7 @@
   "name": "Pinnacle Security Stab-Resistant Undershirt",
   "type": "apparel",
   "category": "base_layer",
-  "description": "A tight-fitting undershirt woven with para-aramid fibers that provide certified stab and slash resistance. The fabric is layered in a crosshatch pattern that catches and distributes the force of edged weapons across a wider area. The shirt covers torso and upper arms.\n\nStandard issue for patrol officers and private security working in Shelf districts where bladed weapons are more common than firearms. The Stab-Resistant Undershirt doesn't stop bullets and doesn't pretend to — it stops the knife you didn't see coming.",
+  "description": "A tight-fitting undershirt woven with para-aramid fibers that provide certified stab and slash resistance. The fabric is layered in a crosshatch pattern that catches and distributes the force of edged weapons across a wider area. The shirt covers torso and upper arms.\n\nStandard issue for patrol officers and private security working in the Gray Zone districts where bladed weapons are more common than firearms. The Stab-Resistant Undershirt doesn't stop bullets and doesn't pretend to — it stops the knife you didn't see coming.",
   "tier_association": "Tier 2",
   "materials": [
     "para-aramid fiber",
@@ -14,7 +14,7 @@
   "what_it_says": "You work where people carry blades and you've accepted that one of those blades is eventually aimed at you.",
   "worn_by": [
     "patrol officers",
-    "Shelf-district security",
+    "the Gray Zone-district security",
     "close-protection details"
   ],
   "manufacturer": "Pinnacle Security",
@@ -52,7 +52,7 @@
       "Seamless torso panel to prevent blade catch points"
     ],
     "tier_indicator": "Tier 2-3: Corporately subsidized security personnel. Expensive enough to indicate formal employment, not black-market or improvised.",
-    "cultural_context": "Worn by licensed patrol officers, private security contractors, and corpo bodyguards in mid-tier districts. Signals institutional affiliation and acceptable violence (sanctioned protective equipment). Common in Shelf districts where street-level blade combat is a recognized hazard.",
+    "cultural_context": "Worn by licensed patrol officers, private security contractors, and corpo bodyguards in mid-tier districts. Signals institutional affiliation and acceptable violence (sanctioned protective equipment). Common in the Gray Zone districts where street-level blade combat is a recognized hazard.",
     "condition_typical": "Pristine when new and regularly maintained. With use, subtle wear on collar and cuffs, possible light staining (blood washes out easily). Never visibly damaged—replacement is standard when integrity is compromised."
   },
   "image_prompt": "Close-up fashion photo of a Pinnacle Security stab-resistant undershirt on a muscular androgynous model with visible subdermal augmentation ports on the collarbone. The model is lit from the side, emphasizing the crosshatch weave pattern in sharp relief. The fabric's subtle geometric texture catches studio light, creating a diamond-grid shadow play across the chest. Dark industrial background—weathered concrete or brushed steel. The model's expression is neutral, professional. Shot in desaturated tones with cool blue-gray color grading. Details include a glimpse of the collar's precision stitching and a faint reflective safety stripe on the right shoulder. Moody, utilitarian, certified-lethal-deterrent aesthetic. --ar 2:3 --v 6",

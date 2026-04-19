@@ -3,7 +3,7 @@
   "name": "Pelikan Hi-Vis Safety Shell",
   "type": "apparel",
   "category": "jacket",
-  "description": "There is nothing subtle about this jacket and that is entirely the point. The Pelikan Hi-Vis Safety Shell is a Class 3 high-visibility rain jacket in ANSI-equivalent fluorescent yellow-green, with retroreflective silver tape at the chest, back, and arms in the standard chevron pattern. It is a lightweight shell, wind- and water-resistant, with a mesh lining and a hood that adjusts with a single cord. The Pelikan logo is small and on the chest. Everything else is light.\n\nThis is the jacket of infrastructure workers, road crews, site safety monitors, and dock workers across the Great Lakes corridor. It is also worn by anyone who needs to be seen in the dark — Shelf residents navigating dangerous transit routes sometimes wear hi-vis ironically or earnestly, as visibility is survival in certain parts of the city. Pelikan makes good shells at a working price. The reflective tape on this model catches light from a hundred meters.",
+  "description": "There is nothing subtle about this jacket and that is entirely the point. The Pelikan Hi-Vis Safety Shell is a Class 3 high-visibility rain jacket in ANSI-equivalent fluorescent yellow-green, with retroreflective silver tape at the chest, back, and arms in the standard chevron pattern. It is a lightweight shell, wind- and water-resistant, with a mesh lining and a hood that adjusts with a single cord. The Pelikan logo is small and on the chest. Everything else is light.\n\nThis is the jacket of infrastructure workers, road crews, site safety monitors, and dock workers across the Great Lakes corridor. It is also worn by anyone who needs to be seen in the dark — the Gray Zone residents navigating dangerous transit routes sometimes wear hi-vis ironically or earnestly, as visibility is survival in certain parts of the city. Pelikan makes good shells at a working price. The reflective tape on this model catches light from a hundred meters.",
   "tier_association": "Tier 1",
   "materials": [
     "polyester shell",
@@ -18,7 +18,7 @@
     "road crews",
     "dock workers",
     "site safety personnel",
-    "Shelf transit commuters",
+    "the Gray Zone transit commuters",
     "people who want to be visible in low light"
   ],
   "manufacturer": "Pelikan",
@@ -26,7 +26,7 @@
   "aug_compatible": false,
   "gene_compatible": false,
   "story_hooks": [
-    "A character uses a Pelikan hi-vis to move through a Shelf construction zone without challenge — workers in hi-vis are invisible in plain sight",
+    "A character uses a Pelikan hi-vis to move through a the Gray Zone construction zone without challenge — workers in hi-vis are invisible in plain sight",
     "Someone is using the reflective tape pattern to send coded signals; different tape configurations on different workers form a message visible from a drone overhead",
     "A Tier 5 fashion label releases a runway piece clearly inspired by the Pelikan hi-vis; the infrastructure workers whose uniform it copies find this both flattering and enraging"
   ],
@@ -64,7 +64,7 @@
       "Slightly translucent quality to fluorescent material under certain light angles"
     ],
     "tier_indicator": "Tier 3 functional / Tier 4 working-class infrastructure tool. Affordable, mass-produced, utilitarian. No luxury markers.",
-    "cultural_context": "The uniform of necessity. Road crews, dock workers, site safety monitors across the GLMZ wear this daily. Increasingly adopted by Shelf residents and unlicensed transit workers in ungoverned zones—visibility as survival strategy. Also worn ironically by corpo workers slumming in lower districts. The jacket announces: *I am working. I am visible. I exist.*",
+    "cultural_context": "The uniform of necessity. Road crews, dock workers, site safety monitors across the GLMZ wear this daily. Increasingly adopted by the Gray Zone residents and unlicensed transit workers in ungoverned zones—visibility as survival strategy. Also worn ironically by corpo workers slumming in lower districts. The jacket announces: *I am working. I am visible. I exist.*",
     "condition_typical": "Usually broken-in and weathered. Scuffs on synthetic exterior from work contact. Possible tape repairs where reflective patches have been re-glued after heavy wear. Lining may be slightly faded and pilled. Reflective strips show accumulated grime that dulls their shine until next cleaning."
   },
   "image_prompt": "A figure in a sickly-bright fluorescent yellow-green safety jacket stands under cold gray industrial lighting in a rain-slicked urban corridor, wet pavement reflecting streaks of reflected chevron tape. The retroreflective stripes glow with aggressive silver-white intensity under directional light sources. Moody, desaturated background of concrete brutalism and dark metal scaffolding. The wearer is sharp and centered; the jacket dominates the frame with its utilitarian, almost hostile visibility. Shot from mid-torso to head. --ar 2:3 --v 6",

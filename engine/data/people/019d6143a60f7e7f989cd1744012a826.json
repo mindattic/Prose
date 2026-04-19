@@ -9,8 +9,8 @@
   "role": "Structural breach and explosive ordnance specialist — demolitions expert",
   "age": 33,
   "status": "active",
-  "location": "The Shelf — lower district tenements near the old lakeshore, near Halsted and Chicago Ave",
-  "description": "Meera Song is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a demolitions expert out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Meera Song describe him as a precision instrument — point him at a problem and get out of the way.",
+  "location": "the Gray Zone — lower district tenements near the old lakeshore, near Halsted and Chicago Ave",
+  "description": "Meera Song is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a demolitions expert out of the Gray Zone, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Meera Song describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.34,
@@ -261,7 +261,7 @@
     "Arsonist": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -274,12 +274,11 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "The Shelf",
     "Chicago",
     "Slagworks Industrial",
     "GLMZ"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "South Asian-East Asian-Central Asian blend (Ubiquitous Diaspora mix: 38.4% South Asian, 33.7% East Asian, 16.5% Central Asian, 9.2% Hispanic/Latin American, 2.2% Sub-Saharan African). Features reflect this complex ancestry: warm medium brown skin with golden undertones from South and East Asian heritage, enriched by Central Asian depth and subtle warmth from Hispanic/Latin American and Sub-Saharan African components. High cheekbones and angular jawline show influence across South and East Asian ancestry. Eye shape carries Southeast Asian epicanthic fold structure blended with broader Central Asian socket depth. Facial geometry reflects the convergence of South Asian and East Asian bone structure with Central Asian weathering potential.",
     "height_cm": 188,

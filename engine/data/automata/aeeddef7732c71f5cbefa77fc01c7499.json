@@ -26,14 +26,14 @@
   "known_deployments": [
     "Lazarus psychiatric facilities",
     "Corporate pharmaceutical distribution centers",
-    "Shelf district 'community health operations'",
+    "the Gray Zone district 'community health operations'",
     "Medical debt enforcement actions"
   ],
   "story_hooks": [
-    "A Clinic Spider has been following a Shelf resident for three days, injecting them every six hours with an unknown substance. Lazarus claims it's court-ordered psychiatric medication. The target says they've never been diagnosed with anything.",
+    "A Clinic Spider has been following a the Gray Zone resident for three days, injecting them every six hours with an unknown substance. Lazarus claims it's court-ordered psychiatric medication. The target says they've never been diagnosed with anything.",
     "Someone has reprogrammed a fleet of LP-3 units and loaded them with a street drug. They're loose in Old Harbor, randomly injecting pedestrians. It's either terrorism or the worst marketing campaign in history."
   ],
-  "cultural_context": "The LP-3 has made the Shelf's population deeply distrustful of any medical outreach program. The sight of a Clinic Spider triggers flight responses in communities where Lazarus conducts operations. Health workers without automaton escorts report being welcomed. Those with LP-3 units are met with barricades.",
+  "cultural_context": "The LP-3 has made the Gray Zone's population deeply distrustful of any medical outreach program. The sight of a Clinic Spider triggers flight responses in communities where Lazarus conducts operations. Health workers without automaton escorts report being welcomed. Those with LP-3 units are met with barricades.",
   "tags": [
     "automaton",
     "spider",
@@ -56,7 +56,6 @@
     "Plot 17",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "The Nearfield",
-    "The Shelf",
     "Vesna Szymczak-Ranginui"
   ]
 }

@@ -9,8 +9,8 @@
   "role": "Street-level courier, informal intelligence carrier, and accidental archivist",
   "age": 19,
   "status": "active",
-  "location": "Old Harbor / The Shelf (transient between both), near Wacker and State",
-  "description": "Soren Sokolov is nineteen years old and moves through GLMZ the way water moves through a cracked foundation — finding every gap, never in the same route twice, noticed by almost no one. They are slight and quick, of Turkish-Ghanaian descent, with a shaved head that grows in uneven patches due to a childhood illness, warm brown skin, and the specific kind of watchfulness that develops in people who spent their formative years needing to read adults accurately. Their face defaults to a pleasantly blank expression that people consistently misread as vacancy; it is in fact the opposite.\n\nThey run packages, messages, and occasionally people between the lower districts — primarily between Old Harbor's dockworker communities and The Shelf's warren economy — using a battered cargo-assist rig (a motorized platform cart they call 'the sled') that they maintain themselves with parts sourced from three different scrap markets. They have no fixed address, sleeping in a rotation of arrangement-rooms and borrowed floors. They are not part of any organization, which several organizations have found inconvenient, as Brecken has a gift for being present at moments that matter — for picking up the dropped data chip, for being the only person in the corridor when the conversation happened, for remembering everything with a clarity that has no augmentation behind it. Their memory is entirely biological and entirely extraordinary.\n\nBrecken did not choose to become an archivist. It happened because they never throw anything away — physically or mentally — and because the world kept handing them things that seemed important and had nowhere else to go. They have, stored in the sled's concealed compartment, a physical collection of objects, notes, and copied documents that constitute an accidental record of things various powerful people would prefer unrecorded. They do not fully understand what they have. They understand enough to know that not understanding it is currently keeping them alive.",
+  "location": "Old Harbor / the Gray Zone (transient between both), near Wacker and State",
+  "description": "Soren Sokolov is nineteen years old and moves through GLMZ the way water moves through a cracked foundation — finding every gap, never in the same route twice, noticed by almost no one. They are slight and quick, of Turkish-Ghanaian descent, with a shaved head that grows in uneven patches due to a childhood illness, warm brown skin, and the specific kind of watchfulness that develops in people who spent their formative years needing to read adults accurately. Their face defaults to a pleasantly blank expression that people consistently misread as vacancy; it is in fact the opposite.\n\nThey run packages, messages, and occasionally people between the lower districts — primarily between Old Harbor's dockworker communities and the Gray Zone's warren economy — using a battered cargo-assist rig (a motorized platform cart they call 'the sled') that they maintain themselves with parts sourced from three different scrap markets. They have no fixed address, sleeping in a rotation of arrangement-rooms and borrowed floors. They are not part of any organization, which several organizations have found inconvenient, as Brecken has a gift for being present at moments that matter — for picking up the dropped data chip, for being the only person in the corridor when the conversation happened, for remembering everything with a clarity that has no augmentation behind it. Their memory is entirely biological and entirely extraordinary.\n\nBrecken did not choose to become an archivist. It happened because they never throw anything away — physically or mentally — and because the world kept handing them things that seemed important and had nowhere else to go. They have, stored in the sled's concealed compartment, a physical collection of objects, notes, and copied documents that constitute an accidental record of things various powerful people would prefer unrecorded. They do not fully understand what they have. They understand enough to know that not understanding it is currently keeping them alive.",
   "psychology": {
     "facet_weights": {
       "wound": 0.58,
@@ -40,10 +40,10 @@
       "Trusts physical intuition about people over evidence, which has been right often enough to make it a liability",
       "Avoids thinking about the future in any concrete way; planning feels like a jinx"
     ],
-    "secret": "Among the items in the sled is a partial data-print they copied without knowing what it was — it turned out to be a fragment of a communication between two Spire-level entities referencing a planned infrastructure event that would displace tens of thousands of Shelf and Old Harbor residents. They have shown it to no one. They are afraid of what showing it would set in motion, and afraid of what not showing it already means about them."
+    "secret": "Among the items in the sled is a partial data-print they copied without knowing what it was — it turned out to be a fragment of a communication between two Spire-level entities referencing a planned infrastructure event that would displace tens of thousands of the Gray Zone and Old Harbor residents. They have shown it to no one. They are afraid of what showing it would set in motion, and afraid of what not showing it already means about them."
   },
   "speech_patterns": {
-    "vocabulary": "Lean and efficient, with a mix of Old Harbor dock slang and Shelf market shorthand; more articulate than their surface presentation suggests, which surfaces unexpectedly; tends to speak in concrete images rather than abstractions",
+    "vocabulary": "Lean and efficient, with a mix of Old Harbor dock slang and the Gray Zone market shorthand; more articulate than their surface presentation suggests, which surfaces unexpectedly; tends to speak in concrete images rather than abstractions",
     "cadence": "Fast when comfortable, brief when uncertain; sentences often end slightly before their grammatical conclusion, implying the rest; comfortable with silence in a way that unnerves people who aren't",
     "verbal_tics": [
       "Starting observations with 'Thing is—' regardless of whether they've been asked",
@@ -87,9 +87,9 @@
     "Lourdes is arrested on a fabricated charge that Brecken recognizes as a pressure tactic — pressure on someone else, using her as leverage, and Brecken is the only one who can see the shape of it"
   ],
   "narrative_function": "Street-level perspective and mobile connector between narrative threads; the accidental archive functions as a plot engine that can surface information organically; Brecken's youth and genuine decency provide emotional counterweight to the cynicism of older characters, while their precarity keeps the stakes grounded",
-  "augmentations": "None — their extraordinary memory is biological; several people who've learned this find it more unsettling than augmentation would be,The sled has a concealed compartment with a mechanical (non-electronic) lock of Brecken's own design, and a short-range signal-dampening skin they scavenged from a Shelf electronics dump",
-  "daily_life": "Up before dawn, which in Old Harbor means before the harbor lights cycle. The first hour is the sled — checking it, adjusting loads, running the day's route in their head against what they know about who's watching where. Routes run through the morning and into the afternoon, with informal stops at three or four places where information tends to pool — a tea stall near the Old Harbor gate, a repair shop in the lower Shelf, a bench near the Circuit's border where certain people sit when they want to be found. Eats opportunistically and without much investment in the food itself. Late afternoons sometimes slow down; this is when Brecken sits with the sled in some out-of-the-way corner and goes through the archive — touching the objects, reviewing what they have, trying to understand the picture. Evenings are for finding a floor or a corner that's safe enough for the night. Sleeps lightly and wakes fast.",
-  "affiliation": "Unaffiliated; cultivated neutrality as survival strategy; sympathies are with the permanent underclasses of Old Harbor and The Shelf, but Brecken is deeply resistant to being claimed by any organized expression of that sympathy",
+  "augmentations": "None — their extraordinary memory is biological; several people who've learned this find it more unsettling than augmentation would be,The sled has a concealed compartment with a mechanical (non-electronic) lock of Brecken's own design, and a short-range signal-dampening skin they scavenged from a the Gray Zone electronics dump",
+  "daily_life": "Up before dawn, which in Old Harbor means before the harbor lights cycle. The first hour is the sled — checking it, adjusting loads, running the day's route in their head against what they know about who's watching where. Routes run through the morning and into the afternoon, with informal stops at three or four places where information tends to pool — a tea stall near the Old Harbor gate, a repair shop in the Gray Zone, a bench near the Circuit's border where certain people sit when they want to be found. Eats opportunistically and without much investment in the food itself. Late afternoons sometimes slow down; this is when Brecken sits with the sled in some out-of-the-way corner and goes through the archive — touching the objects, reviewing what they have, trying to understand the picture. Evenings are for finding a floor or a corner that's safe enough for the night. Sleeps lightly and wakes fast.",
+  "affiliation": "Unaffiliated; cultivated neutrality as survival strategy; sympathies are with the permanent underclasses of Old Harbor and the Gray Zone, but Brecken is deeply resistant to being claimed by any organized expression of that sympathy",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -224,7 +224,7 @@
     "Cockroach": 0.7
   },
   "operating_territory": {
-    "home_turf": "Old Harbor / The Shelf (transient between both)",
+    "home_turf": "Old Harbor / the Gray Zone (transient between both)",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -242,7 +242,6 @@
     "GLMZ",
     "The Accidental",
     "FOUNDATION",
-    "The Shelf",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Kelpline Logistics HarbourSkate MX-40 Magnetic Levitation Cargo Sled",
     "GLMZ",

@@ -9,8 +9,8 @@
   "role": "Underground transit runner and informal district mapper",
   "age": 34,
   "status": "active",
-  "location": "The Shelf, near Halsted and Division",
-  "description": "Emiliano Valenzuela is a broad-shouldered man of Nigerian-German descent with close-cropped hair going grey at the temples despite his age, a consequence of two years spent living in the sub-basement radiation corridors that connect The Shelf to Old Harbor. His skin is deep brown and mapped with faint chemical burns along his left forearm, souvenirs from a freight detonation he survived by crawling through a coolant runoff pipe. He dresses in layered work clothes stripped of all corporate insignia, the pockets reinforced and numbered in his own hand-stitched code so he can find anything in the dark without looking.",
+  "location": "the Gray Zone, near Halsted and Division",
+  "description": "Emiliano Valenzuela is a broad-shouldered man of Nigerian-German descent with close-cropped hair going grey at the temples despite his age, a consequence of two years spent living in the sub-basement radiation corridors that connect the Gray Zone to Old Harbor. His skin is deep brown and mapped with faint chemical burns along his left forearm, souvenirs from a freight detonation he survived by crawling through a coolant runoff pipe. He dresses in layered work clothes stripped of all corporate insignia, the pockets reinforced and numbered in his own hand-stitched code so he can find anything in the dark without looking.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -28,7 +28,7 @@
     "core_desires": [
       "To build a transit network the corps can't surveil or shut down",
       "To be genuinely known by at least one person",
-      "To see The Shelf generate its own economy instead of being bled dry"
+      "To see the Gray Zone generate its own economy instead of being bled dry"
     ],
     "coping_mechanisms": [
       "Obsessive cartographic annotation — he redraws sections of his maps when anxious",
@@ -40,7 +40,7 @@
       "Assumes competence is the same as trustworthiness",
       "Cannot recognize when rest is necessary; equates stillness with failure"
     ],
-    "secret": "Three years ago he handed a route map to someone he believed was a mutual-aid courier. That person sold it to a Spire logistics firm, and six families in The Shelf lost their informal market stalls when the corp rerouted a supply chain through their block. He has never told anyone. He destroyed the map and rebuilt the network from scratch, but he still sees those families' faces."
+    "secret": "Three years ago he handed a route map to someone he believed was a mutual-aid courier. That person sold it to a Spire logistics firm, and six families in the Gray Zone lost their informal market stalls when the corp rerouted a supply chain through their block. He has never told anyone. He destroyed the map and rebuilt the network from scratch, but he still sees those families' faces."
   },
   "speech_patterns": {
     "vocabulary": "Practical, directional, spatial metaphors dominate. Uses transit and infrastructure language even in emotional conversations. Avoids abstractions unless he can anchor them to a place.",
@@ -75,7 +75,7 @@
     {
       "name": "Vesna Čolić-Strand",
       "type": "Former close friend, estranged",
-      "description": "They came up together in The Shelf's informal freight economy. Vesna moved into more lucrative corp-adjacent work; Deshawn considers this a betrayal she considers a survival decision.",
+      "description": "They came up together in the Gray Zone's informal freight economy. Vesna moved into more lucrative corp-adjacent work; Deshawn considers this a betrayal she considers a survival decision.",
       "emotional_core": "The specific loneliness of watching someone you love choose a version of the world you can't follow them into",
       "story_tension": "Vesna has information about the logistics firm that absorbed the route Deshawn gave away — she doesn't know he's connected to it, and he doesn't know she knows"
     }
@@ -88,7 +88,7 @@
   ],
   "narrative_function": "Ground-level connective tissue — the character who makes the city's hidden logistics visible to the reader while embodying the moral cost of neutrality in a system that isn't neutral",
   "augmentations": "Subdermal haptic compass implant in left wrist — gives directional feedback through skin pressure rather than display,Low-light retinal overlay with manual toggle, older model, frequently glitches in high-humidity tunnels,Bone-anchored earpiece for encrypted short-range comms, the antenna visible as a faint ridge behind his right ear",
-  "daily_life": "Wakes before dawn in a rotating set of crash spaces across The Shelf, never the same two nights running. Spends mornings doing physical route checks — walking sections of his network, noting changes in access, marking anything new. Eats on the move, usually from the same three vendors who know not to ask questions. Afternoons are coordination: meeting runners, updating maps, resolving disputes. Evenings are the only time he stops, usually in a particular maintenance alcove overlooking the lower Shelf grid where the ambient light from the Circuit makes the city look almost intentional.",
+  "daily_life": "Wakes before dawn in a rotating set of crash spaces across the Gray Zone, never the same two nights running. Spends mornings doing physical route checks — walking sections of his network, noting changes in access, marking anything new. Eats on the move, usually from the same three vendors who know not to ask questions. Afternoons are coordination: meeting runners, updating maps, resolving disputes. Evenings are the only time he stops, usually in a particular maintenance alcove overlooking the Gray Zone grid where the ambient light from the Circuit makes the city look almost intentional.",
   "affiliation": "Unaffiliated; operates a loose cooperative of transit runners known informally as the Lowline Collective, which has no official name, no hierarchy, and no documentation",
   "uses_facets": false,
   "narration_voice": "",
@@ -193,7 +193,7 @@
       "Starts every answer with 'Right, so—'",
       "Ends reassurances with 'you've got the route'",
       "References cardinal directions in emotional conversations",
-      "Sits in a specific maintenance alcove overlooking the lower Shelf grid at dusk",
+      "Sits in a specific maintenance alcove overlooking the the Gray Zone grid at dusk",
       "Checks numbered, hand-stitched pockets by feel in the dark"
     ],
     "breaking_points": [
@@ -225,7 +225,7 @@
     "People Pleaser": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -238,13 +238,12 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "The Shelf",
     "Noir Dining",
     "The Accidental",
     "Stratum",
     "Harbor Fish Shack"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Southeast Asian (35.6%), Hispanic/Latin American (22.2%), East Asian (12.7%), Middle Eastern (10.9%), Sub-Saharan African (10%), South Asian (8.6%) — a complex global diaspora creating a distinctive phenotype. Southeast Asian bone structure dominates with moderate cheekbone prominence and medium-width nasal bridge; warm deep brown skin blended from African and South Asian ancestry with golden and olive undertones from Middle Eastern heritage; subtle epicanthic eye shape from East Asian admixture creates distinctive gaze",
     "height_cm": 188,

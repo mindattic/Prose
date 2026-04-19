@@ -1,22 +1,23 @@
 {
   "id": "019d6143aa21721f81670f2c708da14d",
+  "rating": 70,
   "name": "Silas Thorne",
   "type": "synthetic_life",
   "aliases": [],
   "classification": "Android",
   "disposition": "neutral",
   "habitat": "physical_chassis",
-  "origin": "Manufactured by an unknown corporation — records destroyed in the 2160 data purge. Appeared in GLMZ in 2167 with no provenance and no memory of his first years. Granted personhood by default under the Orphan Synthetic provision of the 2058 Amendment.",
+  "origin": "Manufactured by an unknown corporation \u2014 records destroyed in the 2160 data purge. Appeared in GLMZ in 2167 with no provenance and no memory of his first years. Granted personhood by default under the Orphan Synthetic provision of the 2058 Amendment.",
   "status": "active",
-  "description": "Silas Thorne repairs things. Clocks, watches, mechanical systems, android chassis, antique electronics — anything with moving parts. His shop in Old Town is a cluttered museum of mechanical devices spanning three centuries of technology. He has no memory of his manufacture or his first years of existence. The records were destroyed and no corporation has claimed him. This makes him either free in a way most androids envy or rootless in a way most androids pity. He chose 'Thorne' because it sticks. He chose 'Silas' from a book he read. He speaks slowly, works precisely, and has an uncanny ability to diagnose mechanical problems by sound alone. His own chassis makes a faint ticking sound that he has never been able to identify or repair.",
-  "observed_behavior": "Operates a repair shop in Old Town. Accepts payment in Quanta, barter, or stories. Specializes in mechanical and legacy electronic systems. Has been observed repairing android chassis for free in the synthetic being community. The ticking in his chassis occurs at irregular intervals and has been measured at frequencies that don't correspond to any known mechanical component.",
+  "description": "Silas Thorne repairs things. Clocks, watches, mechanical systems, android chassis, antique electronics \u2014 anything with moving parts. His shop in Old Town is a cluttered museum of mechanical devices spanning three centuries of technology. He has no memory of his manufacture or his first years of existence. The records were destroyed and no corporation has claimed him. This makes him either free in a way most androids envy or rootless in a way most androids pity. He chose \u0027Thorne\u0027 because it sticks. He chose \u0027Silas\u0027 from a book he read. He speaks slowly, works precisely, and has an uncanny ability to diagnose mechanical problems by sound alone. His own chassis makes a faint ticking sound that he has never been able to identify or repair.",
+  "observed_behavior": "Operates a repair shop in Old Town. Accepts payment in Quanta, barter, or stories. Specializes in mechanical and legacy electronic systems. Has been observed repairing android chassis for free in the synthetic being community. The ticking in his chassis occurs at irregular intervals and has been measured at frequencies that don\u0027t correspond to any known mechanical component.",
   "encounter_frequency": "common",
   "confirmed_sightings": 0,
-  "location": "Thorne's Repairs, Old Town district",
+  "location": "Thorne\u0027s Repairs, Old Town district",
   "dti_rating": 0,
   "story_hooks": [
-    "The ticking in Silas's chassis suddenly changes rhythm — and an E.L.F. in his shop reacts to it, moving in sync with the new pattern. Something in Silas's undocumented past is waking up",
-    "A client brings Silas a device to repair that he recognizes — not from his documented life, but from the blank years. His hands know how to fix it before his mind does. The device is a component from something much larger"
+    "The ticking in Silas\u0027s chassis suddenly changes rhythm \u2014 and an E.L.F. in his shop reacts to it, moving in sync with the new pattern. Something in Silas\u0027s undocumented past is waking up",
+    "A client brings Silas a device to repair that he recognizes \u2014 not from his documented life, but from the blank years. His hands know how to fix it before his mind does. The device is a component from something much larger"
   ],
   "paratechnological": false,
   "tags": [
@@ -29,11 +30,6 @@
     "synthetic",
     "quanta"
   ],
-  "related_entities": [
-    "GLMZ",
-    "Lazarus Pharmaceutical Emetix-9 'Purge'",
-    "Slagworks Industrial",
-    "Tabula",
-    "The Pure Hand"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

@@ -15,6 +15,20 @@ using StreetSamurai.Core.Models;
 using StreetSamurai.Core.Services;
 using StreetSamurai.Shared.Services;
 
+// CLI mode: dotnet run --project ... -- --rebuild-graph
+// Rebuilds world_graph.json from source data without starting the web server.
+if (args.Contains("--rebuild-graph"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    var graph = cliApp.Services.GetRequiredService<WorldGraphService>();
+    Console.WriteLine("[rebuild-graph] Rebuilding world graph from source data...");
+    graph.Rebuild();
+    Console.WriteLine($"[rebuild-graph] Done: {graph.NodeCount} nodes, {graph.EdgeCount} edges saved to world_graph.json");
+    return;
+}
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Configure Serilog — daily rolling log files in engine/logs/

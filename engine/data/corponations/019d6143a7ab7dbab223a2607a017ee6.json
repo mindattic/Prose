@@ -48,5 +48,16 @@
     "The Gleaner Brigades",
     "The Iowa Exclusion Zone",
     "Vuk Jorgensen-Toure"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z8",
+      "Z9",
+      "Z10"
+    ],
+    "primaryZone": "Z8",
+    "lakefrontAccess": false,
+    "description": "Regional food distribution headquarters in Milwaukee, Zone 8. Primary sovereign territory is the Iowa Exclusion Zone (approximately 145,000 square kilometers); GLMZ operations are the distribution end of the supply chain — Ironclad controls the Zone 8-10 food distribution network from Milwaukee's processing facilities to northern Corridor distribution points.",
+    "grayZoneRelationship": "Has twice restricted food distribution to Gray Zone communities in Zones 8-10 to force negotiating concessions. Both incidents are documented in Gray Zone governance archives. Neither was legally actionable. Both succeeded."
+  }
 }

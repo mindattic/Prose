@@ -1,0 +1,42 @@
+{
+  "id": "9101ee06676f841f24eac2ad4251672c",
+  "name": "Hearthstone Firearms Single-20 'Farmhand'",
+  "type": "weapon",
+  "aliases": [],
+  "category": "shotgun",
+  "description": "The Hearthstone Single-20 is a single-shot break-action shotgun chambered in 20 gauge with a 26-inch barrel and an exposed hammer. The weapon holds one round, fires it, breaks open to eject the spent shell, and accepts a new round. It is the absolute minimum viable shotgun — simpler even than the Stagecoach, with one barrel instead of two and a correspondingly lower price.\n\nThe Farmhand is the first gun many the Gray Zone families own. Its single-shot capacity is a limitation that Hearthstone reframes as a safety feature — you cannot fire more rounds than you intend to, and the break-action gives a clear visual indication of whether the weapon is loaded. For families with children, the simplicity and visual safety of the Farmhand provide comfort that more capable but more complex weapons cannot.\n\nThe 20-gauge chambering reduces recoil to a level manageable by smaller-framed adults and older teenagers, making the Farmhand the de facto training shotgun for families who can't afford separate training and defensive weapons. Children learn to shoot on it, parents keep it loaded by the door at night, and when it finally wears out, they buy another one for less than the cost of a week's protein rations.",
+  "manufacturer": "HEARTHSTONE FIREARMS",
+  "tier_availability": "Tier 1+",
+  "legality": "Legal — minimal registration required",
+  "base_technologies": [
+    "Single-shot break action",
+    "Exposed hammer",
+    "20-gauge chambering"
+  ],
+  "specifications": "caliber: 20 gauge\neffective_range: 25 meters (buckshot)\nrate_of_fire: Single-shot (break-action reload)\nmagazine_capacity: 1 round\nweight: 2.2 kg",
+  "tactical_use": "A single-shot shotgun with zero tactical flexibility. One round of 20-gauge buckshot at close range is lethal but offers no follow-up capability. The weapon's only tactical value is its simplicity — nothing can mechanically fail, and the shooter doesn't need to remember any operating procedure beyond 'break, load, close, fire.' Suitable only as a last-resort defensive weapon.",
+  "cultural_context": "The Farmhand is childhood for many the Gray Zone residents. Learning to crack open the action, drop in a shell, and snap it closed is a rite of passage that transcends the weapon's humble capabilities. In the Gray Zone culture, the Farmhand is not judged by what it can do — it is judged by who it has protected.",
+  "known_users": [
+    "the Gray Zone families",
+    "Youth training programs",
+    "Rural settlers",
+    "Absolute minimum-budget defenders"
+  ],
+  "story_hooks": [
+    "A teenager with a Farmhand holds off a group of armed intruders by bluffing with the single shot — cracking the action loudly between hiding spots to make them think multiple shooters are present.",
+    "A the Gray Zone community discovers that Hearthstone has been using recycled steel from a contaminated source for Farmhand barrels. The contamination causes barrel failure after as few as fifty shots."
+  ],
+  "ammunition_type": [
+    "20 gauge"
+  ],
+  "tags": [
+    "weapon",
+    "shotgun",
+    "single_shot",
+    "break_action",
+    "cheap",
+    "simple"
+  ],
+  "physical_description": "The Farmhand is a utilitarian break-action shotgun with a weathered steel receiver and walnut furniture worn smooth by generations of handling. The 26-inch barrel shows honest rust patina beneath worn bluing, and the exposed hammer sits proud and tactile against the simplified action. Everything about it screams economy—no frills, no safety beyond the mechanical break, just cold metal and wood designed to function in rain-slicked yards and industrial sprawl.",
+  "visual_prompt": "single-shot break-action shotgun, 20 gauge Farmhand, weathered steel receiver, walnut wood furniture, exposed hammer, gritty neo-noir product photography, worn bluing and surface rust, industrial decay aesthetic, dark studio background, moody cinematic lighting, detailed mechanical components, practical worn firearm, cyberpunk utilitarian design"
+}

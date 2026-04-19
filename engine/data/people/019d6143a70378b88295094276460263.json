@@ -9,7 +9,7 @@
   "role": "Underground press operator and anti-corporate agitator",
   "age": 27,
   "status": "active",
-  "location": "The Shelf — specifically a rented storage unit in Brewer's Spine converted into a print shop, near Pulaski and Chicago Ave",
+  "location": "the Gray Zone — specifically a rented storage unit in Brewer's Spine converted into a print shop, near Pulaski and Chicago Ave",
   "description": "Kit Tetteh-Mbekele is lean and restless, with the kind of energy that makes people in small rooms want to lean away. He's mixed-heritage Māori-Czech-Igbo, with warm brown skin, deep-set dark eyes, and hair he keeps in short locs dyed a static-white that he touches up himself with cheap geneware pigment paste. His fingers are perpetually ink-stained despite the fact that most of what he produces is digital — he runs a physical broadsheet as a deliberate political statement, because 'data can be deleted and paper can be held.' He has a bioluminescent strip along his left forearm he got at nineteen, which pulses blue-white when his heart rate elevates, which is constantly.\n\nHe is brilliant and exhausting in roughly equal measure. His publication, Null Signal, has broken three genuine scandals in the past two years — a Ferrogate Transit rate manipulation scheme, an Axiom water quality suppression in Burnside Pocket, a Palladian pharmaceutical kickback network operating through a Highland Park clinic. He is also paranoid, inconsistent about source protection, prone to publishing things before they're fully verified, and genuinely unable to tell the difference between being brave and being reckless. He loves the cause with a purity that people with more experience find either inspiring or alarming depending on the day.",
   "psychology": {
     "facet_weights": {
@@ -53,7 +53,7 @@
   },
   "relationships": [],
   "story_hooks": [
-    "He has raw data from a source inside Zheng-Dao that could prove systematic wage theft across the Shelf district — but the source has gone silent and he doesn't know if they're dead, compromised, or just scared.",
+    "He has raw data from a source inside Zheng-Dao that could prove systematic wage theft across the Gray Zone district — but the source has gone silent and he doesn't know if they're dead, compromised, or just scared.",
     "A legitimate journalist from a licensed media outlet is trying to kill his Palladian story before it breaks — and he doesn't know if she's protecting a source they share or protecting Palladian."
   ],
   "narrative_function": "Information source and story catalyst. He knows things — sometimes accurate things. He can point toward scandals, introduce contacts, and create narrative pressure through publication. He can also get people killed by publishing too fast. He's a resource with a significant liability attached.",
@@ -156,7 +156,7 @@
     "People Pleaser": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -180,7 +180,6 @@
     "Palladian Construction",
     "Zheng-dao Bioelectric",
     "WELLSPRING",
-    "The Shelf",
     "The Heritage Vault",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Chicago",
@@ -188,7 +187,7 @@
     "The Paste Bar",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Sub-Saharan African (74.6%), Southeast Asian (15.7%), East Asian (9.7%) — genetic ancestry reflects the Ubiquitous Diaspora. Deep melanated skin with warm golden undertones from dominant Sub-Saharan African heritage, with subtle structural influence from Southeast and East Asian ancestry creating refined facial geometry.",
     "height_cm": 174,

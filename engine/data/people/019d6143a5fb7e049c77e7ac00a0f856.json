@@ -10,7 +10,7 @@
   "age": 15,
   "status": "active",
   "location": "Engelheim (scholarship dormitory, Axiom Junior Technical Institute), near Clark and Belmont",
-  "description": "Koffi Quiñones-Prempeh is tall for her age, with the unfinished look of someone who grew fast and hasn't caught up to herself — long arms, broad shoulders, a habit of folding inward. Her skin is a warm medium brown, her hair grown out in loose, dense coils she hasn't cut since she left the Narrows eighteen months ago, as if cutting it would sever something. She has cosmetic patterned irises — gold hexagons on dark brown — that she got as a scholarship award and has complicated feelings about, since they're also Axiom's signature aesthetic and feel like a brand. Her clothes are always Axiom-issue scholarship kit, which she wears with quiet resentment.\n\nKoffi Quiñones-Prempeh is extraordinarily gifted with code — she taught herself cryptographic theory from pirated academic files before she was twelve, and her scholarship entrance exam flagged her in three separate categories. At the Institute she is conspicuously the poorest student, conspicuously from the Shelf, and has developed a precise, minimal social presentation — she says exactly what is necessary and no more, which her classmates read as arrogance and her instructors read as maturity. She codes for herself in the night cycle, working on projects that have nothing to do with her coursework, because she's already learned that what Axiom teaches and what she actually needs to know are different things.",
+  "description": "Koffi Quiñones-Prempeh is tall for her age, with the unfinished look of someone who grew fast and hasn't caught up to herself — long arms, broad shoulders, a habit of folding inward. Her skin is a warm medium brown, her hair grown out in loose, dense coils she hasn't cut since she left the Narrows eighteen months ago, as if cutting it would sever something. She has cosmetic patterned irises — gold hexagons on dark brown — that she got as a scholarship award and has complicated feelings about, since they're also Axiom's signature aesthetic and feel like a brand. Her clothes are always Axiom-issue scholarship kit, which she wears with quiet resentment.\n\nKoffi Quiñones-Prempeh is extraordinarily gifted with code — she taught herself cryptographic theory from pirated academic files before she was twelve, and her scholarship entrance exam flagged her in three separate categories. At the Institute she is conspicuously the poorest student, conspicuously from the Gray Zone, and has developed a precise, minimal social presentation — she says exactly what is necessary and no more, which her classmates read as arrogance and her instructors read as maturity. She codes for herself in the night cycle, working on projects that have nothing to do with her coursework, because she's already learned that what Axiom teaches and what she actually needs to know are different things.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -22,7 +22,7 @@
     },
     "core_fears": [
       "being expelled and having to return to the Narrows having proven everyone right",
-      "losing herself entirely to Axiom's shaping — becoming someone from the Shelf who now defends the corp"
+      "losing herself entirely to Axiom's shaping — becoming someone from the Gray Zone who now defends the corp"
     ],
     "core_desires": [
       "to build something that belongs only to her — code that no corporation can claim",
@@ -232,7 +232,6 @@
     "The Unfinished Theorem",
     "Engelheim",
     "TESSERA PG-2 'Signature'",
-    "The Shelf",
     "Big Rig",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Gravimetric Collapse Charge GCC-9",

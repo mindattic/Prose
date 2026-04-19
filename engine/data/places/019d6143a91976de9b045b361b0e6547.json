@@ -3,7 +3,7 @@
   "type": "place",
   "name": "Fenwick Float",
   "aliases": [],
-  "description": "Fenwick Float is a semi-permanent flotilla of linked barges, decommissioned ferry hulls, and modular platform sections anchored roughly two kilometers off the Chicago Lakeshore, accessible by water-taxi, private skiff, or the one functional mag-cable gondola that runs from a crumbling pier near the old Adler site. The Float began as an emergency housing overflow measure during the 2161 Shelf flooding crisis and was never formally dissolved — it simply accumulated residents, commerce, and eventually its own internal logic, drifting slightly with seasonal anchor adjustments but always remaining within the same rough coordinates.\n\nBecause the Float sits in jurisdictionally ambiguous water — technically under GLMZ municipal charter but practically unreachable by standard Ferrogate ground patrols — it has become a preferred location for operations that require distance from civic scrutiny. Legitimate floating restaurants and water-purification co-ops share deck space with unlicensed medical clinics, data brokerage nodes, and at least two competing smuggling operations that have achieved a workable truce. The lake wind is constant and the horizon is always visible, which residents cite with surprising frequency as reasons they stay.",
+  "description": "Fenwick Float is a semi-permanent flotilla of linked barges, decommissioned ferry hulls, and modular platform sections anchored roughly two kilometers off the Chicago Lakeshore, accessible by water-taxi, private skiff, or the one functional mag-cable gondola that runs from a crumbling pier near the old Adler site. The Float began as an emergency housing overflow measure during the 2161 the Gray Zone flooding crisis and was never formally dissolved — it simply accumulated residents, commerce, and eventually its own internal logic, drifting slightly with seasonal anchor adjustments but always remaining within the same rough coordinates.\n\nBecause the Float sits in jurisdictionally ambiguous water — technically under GLMZ municipal charter but practically unreachable by standard Ferrogate ground patrols — it has become a preferred location for operations that require distance from civic scrutiny. Legitimate floating restaurants and water-purification co-ops share deck space with unlicensed medical clinics, data brokerage nodes, and at least two competing smuggling operations that have achieved a workable truce. The lake wind is constant and the horizon is always visible, which residents cite with surprising frequency as reasons they stay.",
   "atmosphere": {
     "sights": [
       "The Float's connected platforms undulate gently in a slow, breathing rhythm, making every structure on it appear subtly, perpetually in motion.",
@@ -24,7 +24,7 @@
     "feel": "There is a looseness to Fenwick Float that the city proper cannot replicate — the sense that the rules apply differently here, or not at all, or only the ones that residents have agreed to among themselves. The constant motion underfoot is disorienting for newcomers and becomes, for long-timers, a physical reassurance. The lake horizon provides a psychological expanse that the corridor's vertical density forecloses entirely.",
     "tags": []
   },
-  "demographics": "A genuinely mixed population ranging from Tier 1 laborers who could not secure Shelf housing to deliberate off-grid professionals (data brokers, unlicensed medics, gray-market logistics coordinators) to a small number of Tier 3 residents who maintain secondary residences here for privacy reasons.",
+  "demographics": "A genuinely mixed population ranging from Tier 1 laborers who could not secure the Gray Zone housing to deliberate off-grid professionals (data brokers, unlicensed medics, gray-market logistics coordinators) to a small number of Tier 3 residents who maintain secondary residences here for privacy reasons.",
   "economy": "Tourism and food service from the restaurant barges, water purification co-op revenues, and a substantial gray-market economy centered on data brokerage, unlicensed medical services, and logistics coordination for contraband moving in and out of the Lakeshore Corridor.",
   "power_structure": "The Float has no formal governance; a rotating Harbor Committee handles platform maintenance and inter-operator disputes, but real authority is exercised by the two dominant smuggling operations — Carrion Logistics' unofficial lake division and an independent crew known as the Meridian Drift — who maintain their truce through mutual dependency.",
   "dangers": [
@@ -94,7 +94,6 @@
     "drone",
     "water",
     "lake",
-    "shelf",
     "spire"
   ],
   "related_entities": [
@@ -105,5 +104,7 @@
     "Ngozi Morimoto",
     "Vale Sow",
     "Weathervane"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

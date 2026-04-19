@@ -1,0 +1,42 @@
+{
+  "name": "Ringo DV-4 'Courier'",
+  "type": "automaton",
+  "classification": "Industrial",
+  "aliases": [],
+  "manufacturer": "RINGO",
+  "description": "The DV-4 is a last-mile delivery automaton — a six-wheeled platform the size of a large cooler that navigates sidewalks and pedestrian areas to deliver packages from distribution centers to residences and businesses. It carries a single insulated cargo compartment rated for packages up to 30 kilograms, secured by a biometric lock that opens only for the designated recipient. The unit navigates using a combination of GPS, visual landmark recognition, and real-time pedestrian avoidance.\n\nRingo deploys thousands of DV-4 units across GLMZ, and they have become as much a part of the urban landscape as streetlights. They roll along sidewalks in steady streams during business hours, politely beeping to request right-of-way from pedestrians and queuing at crosswalks for traffic signals. They are earnest, unhurried, and universally ignored — the automation equivalent of pigeons. People step over them, walk around them, and occasionally kick them when frustrated. The DV-4 does not react. It has a delivery to make.\n\nThe DV-4's ubiquity makes it nearly invisible, which has made it a favorite platform for criminal repurposing. Modified DV-4 units carry contraband through public streets in plain sight — they look identical to legitimate units and follow the same navigation patterns. Law enforcement estimates that approximately three percent of DV-4 traffic in GLMZ at any given time consists of modified units carrying illegal cargo. Ringo's response has been to add tamper-evident seals to their units, which criminals duplicate within weeks of each new design.",
+  "tier_availability": "Tier 1",
+  "legality": "Commercial — delivery automation license",
+  "autonomy_level": "Fully autonomous — urban navigation AI",
+  "dimensions": "0.5m height, 0.8m length, 0.5m width",
+  "weight": "18 kg (empty), 48 kg maximum loaded",
+  "power_source": "Lithium polymer, 8-hour delivery range (~40 km)",
+  "locomotion": "Six-wheel electric, sidewalk and pedestrian area rated",
+  "armament": [],
+  "sensors": [
+    "GPS navigation",
+    "Visual landmark recognition",
+    "Pedestrian avoidance",
+    "Package tamper detection"
+  ],
+  "countermeasures": "Biometric cargo lock prevents unauthorized access. GPS tracking allows fleet monitoring. Small size and low weight make them vulnerable to theft — units are simply picked up and carried away. Ringo loses approximately 400 units per month to theft across GLMZ.",
+  "known_deployments": [
+    "Every district in GLMZ with delivery infrastructure"
+  ],
+  "story_hooks": [
+    "A DV-4 has arrived at a residential address with a package addressed to someone who doesn't live there — someone who doesn't exist. The biometric lock is keyed to no known individual. Whatever is inside the package, it was sent to this address deliberately and someone is expected to retrieve it.",
+    "A network of modified DV-4 units is being used to deliver micro-doses of a new street pharmaceutical across the Gray Zone district. The deliveries are untraceable — the units are stolen, modified, and abandoned after each run. The product arrives at doorsteps without anyone ordering it."
+  ],
+  "cultural_context": "The DV-4 is the foot soldier of automated commerce — a machine that brings things to your door so you never have to leave your apartment. It has contributed to the physical isolation of urban life in GLMZ, where human beings can go weeks without face-to-face interaction with another person because everything they need arrives on six wheels.",
+  "tags": [
+    "automaton",
+    "industrial",
+    "delivery",
+    "logistics",
+    "ringo",
+    "wheeled",
+    "urban",
+    "tier 1"
+  ],
+  "id": "36773844bacb0e854eb80d6871ce6d3a"
+}

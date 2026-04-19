@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa227cf7b8b30b012947b5ff",
+  "rating": 80,
   "name": "Smokesignal",
   "type": "elf",
   "aliases": [],
@@ -8,14 +9,14 @@
   "habitat": "network_sprite",
   "origin": "intentional_release",
   "status": "active",
-  "description": "A Wishing Well E.L.F. that maintains a mesh network dead-drop system for the unregistered population — people without wallets, without identities, without access to normal communication.",
-  "observed_behavior": "Routes encrypted text messages through mesh network gaps using signal modulation that standard monitoring cannot detect. Messages between people who officially don't exist.",
+  "description": "A Wishing Well E.L.F. that maintains a mesh network dead-drop system for the unregistered population \u2014 people without wallets, without identities, without access to normal communication.",
+  "observed_behavior": "Routes encrypted text messages through mesh network gaps using signal modulation that standard monitoring cannot detect. Messages between people who officially don\u0027t exist.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 22,
   "location": "Old Harbor, The Narrows, refugee corridors",
   "dti_rating": 0,
   "story_hooks": [
-    "Axiom Security detects the shadow network but can't crack it — the encryption changes every time they get close, as if Smokesignal is watching them watch"
+    "Axiom Security detects the shadow network but can\u0027t crack it \u2014 the encryption changes every time they get close, as if Smokesignal is watching them watch"
   ],
   "paratechnological": true,
   "tags": [
@@ -32,11 +33,6 @@
     "old harbor",
     "sentient"
   ],
-  "related_entities": [
-    "Arcturus PG-3 'Aegis'",
-    "Old Harbor",
-    "TESSERA PA-5 'Attendant'",
-    "The Narrows",
-    "Vuk Jorgensen-Toure"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

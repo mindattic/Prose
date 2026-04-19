@@ -6,11 +6,11 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Truant network runner — message courier for the Shelf's informal economy",
+  "role": "Truant network runner — message courier for the Gray Zone's informal economy",
   "age": 11,
   "status": "active",
-  "location": "The Shelf (operates between Brewer's Spine and Copperhead), near Ashland and Chicago Ave",
-  "description": "Svetlana Sokolov is small for her age, which she treats as professional equipment. She has her mother's deep brown skin and her father's pale Icelandic freckles scattered across her nose and cheeks in a pattern that looks almost deliberate, like someone scattered rust-colored seeds. Her hair is cropped close on one side and grows in tight coils on the other — not a style choice, the result of a geneware dye-job gone sideways that fused color-cycling pigment into about forty percent of her scalp. The affected half cycles through muted greens and grays, which she has decided is actually cooler than what she originally paid for. She moves through the Shelf's maintenance corridors and pipe-crawl shortcuts with the confidence of someone who has mentally mapped every possible escape route, because she has.\n\nShe is not a happy child but she is an effective one. There is a watchfulness in her eyes that belongs to someone twice her age, and she has learned to keep her observations private until they are useful. She is politely transactional with most adults, reserving genuine warmth only for the handful of people who have proved they won't exploit it. She has a fierce and private devotion to a local E.L.F. she calls the Creak-God — a spirit she believes inhabits the Brewer's Spine maintenance tunnels — and leaves it small data offerings (recorded ambient sounds, mostly) wrapped in old wire.",
+  "location": "the Gray Zone (operates between Brewer's Spine and Copperhead), near Ashland and Chicago Ave",
+  "description": "Svetlana Sokolov is small for her age, which she treats as professional equipment. She has her mother's deep brown skin and her father's pale Icelandic freckles scattered across her nose and cheeks in a pattern that looks almost deliberate, like someone scattered rust-colored seeds. Her hair is cropped close on one side and grows in tight coils on the other — not a style choice, the result of a geneware dye-job gone sideways that fused color-cycling pigment into about forty percent of her scalp. The affected half cycles through muted greens and grays, which she has decided is actually cooler than what she originally paid for. She moves through the Gray Zone's maintenance corridors and pipe-crawl shortcuts with the confidence of someone who has mentally mapped every possible escape route, because she has.\n\nShe is not a happy child but she is an effective one. There is a watchfulness in her eyes that belongs to someone twice her age, and she has learned to keep her observations private until they are useful. She is politely transactional with most adults, reserving genuine warmth only for the handful of people who have proved they won't exploit it. She has a fierce and private devotion to a local E.L.F. she calls the Creak-God — a spirit she believes inhabits the Brewer's Spine maintenance tunnels — and leaves it small data offerings (recorded ambient sounds, mostly) wrapped in old wire.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -55,7 +55,7 @@
     "The sealed data chip she refuses to touch contains information someone very dangerous is looking for — and they've started asking about small couriers who run tunnel 7-G.",
     "A new corporate school recruiter has noticed her spatial memory and route efficiency and is offering a scholarship; Wren is terrified of what she'd owe."
   ],
-  "narrative_function": "Local color and unexpected information source; players may hire her as a guide through the Shelf's hidden passages; she knows things she hasn't told anyone yet.",
+  "narrative_function": "Local color and unexpected information source; players may hire her as a guide through the Gray Zone's hidden passages; she knows things she hasn't told anyone yet.",
   "augmentations": "Partial cosmetic geneware — color-cycling hair pigment (malfunctioning, affects only left side of scalp). No chrome.",
   "daily_life": "Picks up message packets at the Creak-God's shrine each morning, runs them through tunnel routes she's memorized, collects Φ2-5 per delivery. Eats whatever the market stalls leave at end of day.",
   "affiliation": "Independent; loosely connected to Brewer's Spine informal market traders",
@@ -156,7 +156,7 @@
     "Dreamer": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf (operates between Brewer's Spine and Copperhead)",
+    "home_turf": "the Gray Zone (operates between Brewer's Spine and Copperhead)",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -167,7 +167,6 @@
   "related_entities": [
     "Brewer's Spine",
     "Copperhead",
-    "The Shelf",
     "Chicago",
     "Arcturus KS-7 'Nursery'",
     "Endothermic Synovial Disruption Rifle ESDR-1 'Lockjaw'",
@@ -175,7 +174,7 @@
     "The Pale Mile",
     "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Complex diaspora phenotype: 51% Eastern European foundation blended with 21% Sub-Saharan African, 14% Indigenous American, 10% Middle Eastern, and minor Central Asian and Hispanic ancestry. This creates a warm deep brown complexion with golden undertones—a luminous result of African-Eastern European genetic mixing. Features include angular cheekbones and refined bone structure from Indigenous American heritage, subtle Middle Eastern nose and eye geometry, and the characteristic warmth of melanin expression across an Eastern European facial architecture. The overall effect is striking and uncommon: a harmonious blend where no single ancestry dominates the phenotype.",
     "height_cm": 135,

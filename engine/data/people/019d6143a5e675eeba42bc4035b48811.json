@@ -9,8 +9,8 @@
   "role": "Junior courier and high-risk specialist — Switchback",
   "age": 19,
   "status": "active",
-  "location": "The Shelf — crashes in Jinx's rooftop squat or on couches throughout the co-op network, near Western and Division",
-  "description": "Briar Ingebrigtsen-Matsumoto-Bautista is nineteen years old and has not yet learned that he can die. This is simultaneously his greatest asset and the thing that will most likely kill him. He is the newest member of Switchback, recruited eight months ago when Jinx caught him free-climbing a surveillance tower on a dare and realized the kid had natural talent that was going to get him killed without direction.\n\nHe grew up in the deepest part of the Shelf — the blocks where even the co-op infrastructure breaks down and the only governance is mutual aid and mutual threat. His parents are gone — father to debt labor, mother to a pharmaceutical dependency that functions as slow erasure. He has been functionally on his own since sixteen and has survived by being faster, bolder, and luckier than his circumstances should allow. Switchback gave him the first structure he's had since childhood, and he resents and craves it in equal measure.\n\nDash is lean, dark-skinned, with the coiled energy of someone who converts anxiety into motion. He has a gap-toothed grin that makes him look younger than nineteen and a scar across his left eyebrow from a fall he insists was intentional. His augmentations are minimal — he can't afford better — and he compensates with raw athleticism and a complete absence of self-preservation instinct.",
+  "location": "the Gray Zone — crashes in Jinx's rooftop squat or on couches throughout the co-op network, near Western and Division",
+  "description": "Briar Ingebrigtsen-Matsumoto-Bautista is nineteen years old and has not yet learned that he can die. This is simultaneously his greatest asset and the thing that will most likely kill him. He is the newest member of Switchback, recruited eight months ago when Jinx caught him free-climbing a surveillance tower on a dare and realized the kid had natural talent that was going to get him killed without direction.\n\nHe grew up in the deepest part of the Gray Zone — the blocks where even the co-op infrastructure breaks down and the only governance is mutual aid and mutual threat. His parents are gone — father to debt labor, mother to a pharmaceutical dependency that functions as slow erasure. He has been functionally on his own since sixteen and has survived by being faster, bolder, and luckier than his circumstances should allow. Switchback gave him the first structure he's had since childhood, and he resents and craves it in equal measure.\n\nDash is lean, dark-skinned, with the coiled energy of someone who converts anxiety into motion. He has a gap-toothed grin that makes him look younger than nineteen and a scar across his left eyebrow from a fall he insists was intentional. His augmentations are minimal — he can't afford better — and he compensates with raw athleticism and a complete absence of self-preservation instinct.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -33,17 +33,17 @@
     "coping_mechanisms": [
       "Converts emotional pain into physical risk — if he's running, he's not feeling",
       "Performs confidence to mask uncertainty — the bravado is a shell around something fragile",
-      "Maintains a wide social network on the Shelf so he's never alone long enough for the silence to get loud"
+      "Maintains a wide social network on the Gray Zone so he's never alone long enough for the silence to get loud"
     ],
     "blind_spots": [
       "Interprets protection as condescension because his parents' failure made him allergic to being managed",
       "Cannot distinguish between courage and recklessness because he's never had to survive the consequences of the difference",
       "Thinks his immunity to fear is strength when it's actually a dissociative response to prolonged trauma"
     ],
-    "secret": "He visits his mother once a month in the dependency ward of a Shelf clinic. She doesn't always recognize him. He tells Jinx and Puck he's running a solo route. He has never told anyone about these visits."
+    "secret": "He visits his mother once a month in the dependency ward of a the Gray Zone clinic. She doesn't always recognize him. He tells Jinx and Puck he's running a solo route. He has never told anyone about these visits."
   },
   "speech_patterns": {
-    "vocabulary": "Deep Shelf slang, fast and dense. References to local landmarks, community figures, and Shelf survival wisdom. Surprisingly poetic when he's not performing toughness.",
+    "vocabulary": "Deep the Gray Zone slang, fast and dense. References to local landmarks, community figures, and the Gray Zone survival wisdom. Surprisingly poetic when he's not performing toughness.",
     "cadence": "Rapid-fire, competitive. He talks like he's racing the other person to the end of the sentence.",
     "verbal_tics": [
       "Says 'bet' as confirmation — bet I can, bet I will, just bet",
@@ -53,7 +53,7 @@
     "example_lines": [
       "Bet I can clear that gap. Bet you can't. Bet that's why I'm running it and you're watching.",
       "I don't need a backup route. I need a faster one.",
-      "My mom used to say the Shelf takes care of its own. She was wrong about a lot of things but not that."
+      "My mom used to say the Gray Zone takes care of its own. She was wrong about a lot of things but not that."
     ]
   },
   "relationships": [
@@ -72,9 +72,9 @@
       "story_tension": "If Dash learns what Puck's caution actually costs — the insomnia, the worry, the routes run first — the dynamic shifts from resentment to guilt."
     },
     {
-      "name": "Shelf kids network",
+      "name": "the Gray Zone kids network",
       "type": "community / peers",
-      "description": "Dash maintains a web of relationships across the Shelf — other courier kids, fixers, lookouts, the informal intelligence network of the young and excluded. He is more connected than Jinx or Puck realize.",
+      "description": "Dash maintains a web of relationships across the Gray Zone — other courier kids, fixers, lookouts, the informal intelligence network of the young and excluded. He is more connected than Jinx or Puck realize.",
       "emotional_core": "The family he built because the one he was born into collapsed",
       "story_tension": "Some of these kids are getting recruited by worse crews for worse work. Dash knows and doesn't know what to do about it."
     }
@@ -82,12 +82,12 @@
   "story_hooks": [
     "Dash takes an unauthorized hard run to prove himself and it goes catastrophically wrong",
     "His mother's condition worsens and the clinic threatens to discharge her — he needs money fast",
-    "A Shelf kid from his network disappears, and the trail leads into territory Switchback doesn't touch",
+    "A the Gray Zone kid from his network disappears, and the trail leads into territory Switchback doesn't touch",
     "A corporate recruiter targets Dash specifically — they've been watching his runs and they want that talent"
   ],
-  "narrative_function": "Dash is youth and hunger personified — the next generation of Shelf runners coming up behind Kyle, behind Jinx, with fewer resources and more desperation. His stories ask whether courage born from having nothing to lose can survive gaining something worth protecting. He is the crew member the audience worries about most.",
+  "narrative_function": "Dash is youth and hunger personified — the next generation of the Gray Zone runners coming up behind Kyle, behind Jinx, with fewer resources and more desperation. His stories ask whether courage born from having nothing to lose can survive gaining something worth protecting. He is the crew member the audience worries about most.",
   "augmentations": "Basic grip-enhancers on fingertips only (half-install, discount hardware). Lightweight bone-density treatment in shins and forearms — reduces fracture risk from impacts. No neural augmentations — cannot afford them and is privately terrified of anything in his brain.",
-  "daily_life": "Wakes whenever he wakes. Eats whatever Puck cooked or whatever he can find. Runs routes — preferably the dangerous ones, usually the safe ones Jinx assigns. Spends free time climbing, exploring, mapping new routes by feel rather than data. Evenings he hangs with other Shelf kids, maintaining a social network that is half friendship and half intelligence-gathering. Sleeps poorly — bad dreams he won't discuss.",
+  "daily_life": "Wakes whenever he wakes. Eats whatever Puck cooked or whatever he can find. Runs routes — preferably the dangerous ones, usually the safe ones Jinx assigns. Spends free time climbing, exploring, mapping new routes by feel rather than data. Evenings he hangs with other the Gray Zone kids, maintaining a social network that is half friendship and half intelligence-gathering. Sleeps poorly — bad dreams he won't discuss.",
   "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
@@ -124,12 +124,12 @@
       "puck": "Dismissive on the surface — 'okay old head, whatever you say.' Underneath, he listens to everything Puck teaches and applies it on runs without attribution. The learning is covert because admitting it would be vulnerability.",
       "shelf_kids": "Generous, protective, slightly performative. He plays the successful courier — the one who made it, who has a crew, who eats regularly. The performance serves both pride and community. These kids need to see that it's possible.",
       "strangers": "Brash, loud, deliberately intimidating for his size. He takes up more space than his body occupies. This is camouflage — the loud kid draws attention away from the scared one.",
-      "alone": "Quiet. The bravado stops. He sits in high places and looks at the Shelf from above, and for brief moments he looks exactly as young as he is."
+      "alone": "Quiet. The bravado stops. He sits in high places and looks at the Gray Zone from above, and for brief moments he looks exactly as young as he is."
     },
     "stress_responses": {
       "low": "More bravado. Louder, bolder, more reckless. Low stress is fuel.",
       "medium": "Physical agitation — can't sit still, bounces between locations, picks fights with furniture. The energy has no constructive outlet.",
-      "high": "Withdrawal. He stops talking, stops performing, disappears into the Shelf network. The crew won't see him for hours. He's usually on a rooftop somewhere, alone.",
+      "high": "Withdrawal. He stops talking, stops performing, disappears into the Gray Zone network. The crew won't see him for hours. He's usually on a rooftop somewhere, alone.",
       "critical": "Dissociation. He describes this as 'going blank.' The world recedes, the body goes on autopilot, and the emotional content simply stops. When he comes back, he's hungry, confused, and sometimes in a location he doesn't remember reaching."
     },
     "contradictions": [
@@ -146,7 +146,7 @@
       "Visits his mother on the third Thursday of every month, never earlier, never later"
     ],
     "breaking_points": [
-      "His mother dying would remove the last connection to who he was before the Shelf made him — the grief would be annihilating",
+      "His mother dying would remove the last connection to who he was before the Gray Zone made him — the grief would be annihilating",
       "Being permanently injured and unable to run — the body is the only tool he trusts",
       "Jinx formally demoting him or removing him from the crew — rejection from the chosen family",
       "Watching a Shelf kid die doing something Dash showed them — the weight of being an accidental role model"
@@ -173,7 +173,7 @@
     "Safety First": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -187,13 +187,12 @@
   "registered_firearms": [],
   "related_entities": [
     "Switchback",
-    "The Shelf",
     "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Arcturus KS-7 'Nursery'",
     "Hearthstone Firearms Trail-357 'Pathfinder'"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Complex diaspora blend: dominant East Asian (37%) foundation with substantial Hispanic/Latin American (20.4%), South Asian (18.8%), and Eastern European (16.2%) contributions, plus Northern European (6%) and Sub-Saharan African (1.6%) traces. This creates a striking polyphonic appearance — East Asian bone structure softened by South Asian warmth, Latin American skin depth, and Eastern European facial angularity. The genetic mosaic produces someone difficult to pin to a single origin, reflecting the 2226 Ubiquitous Diaspora reality.",
     "height_cm": 172,

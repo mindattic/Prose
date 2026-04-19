@@ -1,4 +1,4 @@
-@page "/contracts"
+﻿@page "/contracts"
 @using StreetSamurai.Core.Models.Canon
 @inject ContractRepository Repo
 @inject NavigationManager Nav
@@ -23,7 +23,7 @@
     <div class="dict-editor">
         @if (editing != null)
         {
-            <EditViewToggle RepoName="contracts" Title="@(isNew ? "New Contract" : editing.Codename)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)">
+            <EditViewToggle RepoName="contracts" Title="@(isNew ? "New Contract" : editing.Codename)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)" Rating="@(editing?.Rating ?? 0)" RatingChanged="OnRatingChanged">
                 <HeaderButtons>
                     <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i><div class="btn-lbl"> Save</div></button>
                     @if (!isNew && !confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => confirmDelete = true"><i class="bi bi-archive"></i></button> }
@@ -51,6 +51,11 @@
                     <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="3" @bind="editing.Description"></textarea></div>
                     <div class="mb-3"><div class="field-label">Objective</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="2" @bind="editing.Objective"></textarea></div>
                     <div class="mb-3"><div class="field-label">Outcome</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="2" placeholder="How it ended (for completed/failed contracts)" @bind="editing.Outcome"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Complications (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editComplications"></textarea></div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">Image Prompt</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.MidjourneyPrompt"></textarea></div>
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">DALL-E 3 Prompt</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Dalle3Prompt"></textarea></div>
+                    </div>
                     <div class="card bg-black border-secondary mb-3">
                         <div class="card-header text-muted small">Required Crew Capabilities (0-10)</div>
                         <div class="card-body">
@@ -85,6 +90,7 @@
     private List<(string name, int count)> allTags = [];
     private HashSet<string> selectedTags = [];
     private bool isNew, confirmDelete;
+    private string editComplications = "";
     private List<ContractData> FilteredItems
     {
         get
@@ -99,9 +105,9 @@
     }
     private List<ContractData> SortedItems => FilteredItems.OrderBy(x => x.Codename).ToList();
     protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); RebuildTags(); if (Nav.Uri.Contains("new=true")) AddNew(); else { var qid = Nav.Uri.Contains("id=") ? Uri.UnescapeDataString(Nav.Uri.Split(new[]{"id="}, StringSplitOptions.None).Last().Split(new[]{"&"}, StringSplitOptions.None)[0]) : ""; if (!string.IsNullOrEmpty(qid)) { var t = items.FirstOrDefault(e => e.Id == qid); if (t != null) Edit(t); } if (editing == null) { var first = items.FirstOrDefault(); if (first != null) Edit(first); } } }
-    private void AddNew() { editing = new ContractData(); isNew = true; confirmDelete = false; }
-    private void Edit(ContractData c) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_contracts", c.Id); editing = c; originalCodename = c.Codename; isNew = false; confirmDelete = false; if (!Nav.Uri.Contains("id=" + c.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + c.Id, forceLoad: false); }
-    private void SaveEdit() { if (editing == null || string.IsNullOrWhiteSpace(editing.Codename)) return; if (!isNew && originalCodename != editing.Codename) Repo.Delete(originalCodename); Repo.Save(editing); editing = null; items = Repo.GetAll(); }
+    private void AddNew() { editing = new ContractData(); isNew = true; confirmDelete = false; editComplications = ""; }
+    private void Edit(ContractData c) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_contracts", c.Id); editing = c; originalCodename = c.Codename; isNew = false; confirmDelete = false; editComplications = string.Join("\n", c.Complications); if (!Nav.Uri.Contains("id=" + c.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + c.Id, forceLoad: false); }
+    private void SaveEdit() { if (editing == null || string.IsNullOrWhiteSpace(editing.Codename)) return; editing.Complications = editComplications.Split('\n', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList(); if (!isNew && originalCodename != editing.Codename) Repo.Delete(originalCodename); Repo.Save(editing); editing = null; items = Repo.GetAll(); }
     private void DoDelete() { if (editing != null) { Repo.Delete(editing.Codename); editing = null; items = Repo.GetAll(); confirmDelete = false; } }
     private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Codename, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
     private void RebuildTags() { allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
@@ -121,4 +127,5 @@
         }
     }
 
+    private void OnRatingChanged(double value) { if (editing == null) return; editing.Rating = value; Repo.Save(editing); }
 }

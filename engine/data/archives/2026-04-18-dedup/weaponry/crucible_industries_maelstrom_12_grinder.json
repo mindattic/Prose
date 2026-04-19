@@ -1,0 +1,43 @@
+{
+  "id": "f3ac22f6fd8ad026f29a84f33cac6766",
+  "name": "Crucible Industries Maelstrom-12 'Grinder'",
+  "type": "weapon",
+  "aliases": [],
+  "category": "shotgun",
+  "description": "The Crucible Industries Maelstrom-12 is a fully automatic shotgun chambered in 12 gauge, fed from a twenty-round drum magazine, with a cyclic rate of 300 rounds per minute. The weapon features a constant-recoil operating system that spreads the recoil impulse across the entire firing cycle, making automatic fire from a 12-gauge shotgun controllable — though 'controllable' is a relative term when discussing a weapon that fires five buckshot shells per second.\n\nThe Grinder is a siege weapon in a shotgun's clothing. At room-clearing distances, a sustained burst from the Maelstrom saturates an area with buckshot pellets in a density that no individual target can survive and no group of targets can avoid. The twenty-round drum empties in four seconds of continuous fire, during which time the weapon has dispersed approximately one hundred and eighty individual buckshot pellets into the target area.\n\nCrucible manufactures the Maelstrom-12 under exclusive contract for corponation military forces and high-tier facility defense. The weapon is not available on the civilian market at any price through legitimate channels. On the black market, Grinders command prices that rival small vehicles, and their appearance at any criminal scene triggers an immediate corponation response — the weapons are serialized, tracked, and actively hunted when they leave authorized custody.",
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "tier_availability": "Tier 4+",
+  "legality": "Military-restricted — unauthorized possession is a capital-class offense",
+  "base_technologies": [
+    "Fully automatic gas system",
+    "Constant-recoil mechanism",
+    "Drum magazine",
+    "Area saturation design"
+  ],
+  "specifications": "caliber: 12 gauge\neffective_range: 25 meters (automatic buckshot)\nrate_of_fire: Full automatic, 300 RPM\nmagazine_capacity: 20 rounds (drum)\nweight: 5.8 kg (loaded)",
+  "tactical_use": "A fully automatic shotgun for area denial and facility defense. The constant-recoil system makes sustained automatic fire controllable. The drum magazine provides twenty rounds of continuous fire capability. Devastatingly effective in confined spaces against multiple unarmored or lightly armored targets. Ammunition consumption is extreme — the weapon is logistically demanding. Not suitable for precision engagements.",
+  "cultural_context": "The Grinder is a bogeyman. Most people in GLMZ have never seen one and hope they never will. Its existence represents the upper boundary of conventional weapons lethality — the point where firearms technology meets industrial-scale violence. In criminal circles, claiming to have access to a Maelstrom is either a bluff or a death wish, because corponation asset recovery teams take stolen Grinders very seriously.",
+  "known_users": [
+    "Corponation military forces",
+    "Tier 4+ facility defense teams",
+    "Asset recovery (for recovering stolen units)",
+    "Extremely well-funded criminal organizations (black market)"
+  ],
+  "story_hooks": [
+    "A Grinder is used in a tunnel battle beneath the Gray Zone, and the twenty-second firefight kills more people than the district has seen die by violence in a year. The weapon is recovered — but the drum magazine has been replaced with one holding experimental ammunition.",
+    "A Crucible Industries armorer reports a Maelstrom-12 missing from inventory. The serial number doesn't match any existing weapon. Someone is manufacturing unregistered Grinders."
+  ],
+  "ammunition_type": [
+    "12 gauge"
+  ],
+  "tags": [
+    "weapon",
+    "shotgun",
+    "full_auto",
+    "military",
+    "area_denial",
+    "extreme"
+  ],
+  "physical_description": "The Maelstrom-12 is a brutalist instrument of steel and polymer, its barrel shroud wrapped in worn matte-black coating that's chipped to dull gray at the edges. The twenty-round drum magazine protrudes like a tumor, its surface etched with faded Crucible Industries branding. The weapon's frame is reinforced with welded brackets and cooling fins along the barrel, evidence of the constant-recoil system's demands—a gun built to survive its own fury.",
+  "visual_prompt": "gritty neo-noir tactical shotgun, fully automatic Maelstrom-12 with drum magazine, worn matte black steel, industrial brutalist design, product photography, rain-slicked reflections, dark studio background, weathered polymer grip, cooling fins, military hardware, detailed metal textures, cyberpunk weapon, high contrast lighting"
+}

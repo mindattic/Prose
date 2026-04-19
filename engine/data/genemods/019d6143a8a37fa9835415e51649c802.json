@@ -7,7 +7,7 @@
   "aliases": [],
   "category": "cosmetic",
   "target_system": "integumentary (high-resolution chromatophore display)",
-  "description": "The most advanced cosmetic chromatophore modification available — a dense array of individually addressable chromatophore cells that function as a biological display screen. The installation typically covers the inner forearm (a 'natural tablet') but can be placed anywhere on the body. The resolution is sufficient to display readable text, simple images, and low-frame-rate video. The display is controlled through a subdermal neural interface that accepts input from the user's thoughts or from external device connections. Common uses include displaying messages, showing maps, reading text, displaying caller ID during communications, and showing status information (time, health metrics, navigation). In the Shelf, forearm displays have replaced phones for many residents — the body IS the device. The display works by directing individual chromatophore cells to produce specific colors, creating a pixel grid in living skin.",
+  "description": "The most advanced cosmetic chromatophore modification available — a dense array of individually addressable chromatophore cells that function as a biological display screen. The installation typically covers the inner forearm (a 'natural tablet') but can be placed anywhere on the body. The resolution is sufficient to display readable text, simple images, and low-frame-rate video. The display is controlled through a subdermal neural interface that accepts input from the user's thoughts or from external device connections. Common uses include displaying messages, showing maps, reading text, displaying caller ID during communications, and showing status information (time, health metrics, navigation). In the Gray Zone, forearm displays have replaced phones for many residents — the body IS the device. The display works by directing individual chromatophore cells to produce specific colors, creating a pixel grid in living skin.",
   "source_organism": "Sepia officinalis (common cuttlefish, high-density chromatophore genes), synthetic neural display interface",
   "manufacturer": "Zheng-Dao Bioelectric",
   "tier_availability": "Tier 3+",
@@ -38,13 +38,11 @@
     "control",
     "fashion",
     "clothing",
-    "shelf",
     "tier 3"
   ],
   "related_entities": [
     "LifeWire Chroma Subdermal Display System",
     "Nnenna Vásquez-Kuosmanen",
-    "Slagworks Industrial",
-    "The Shelf"
+    "Slagworks Industrial"
   ]
 }

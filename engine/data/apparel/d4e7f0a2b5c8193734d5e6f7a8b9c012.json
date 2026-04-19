@@ -13,7 +13,7 @@
   "functionality": "Improvised waterproofing. Sealant reduces breathability significantly.",
   "what_it_says": "You know how to make things last. You also haven't had a dry day in weeks.",
   "worn_by": [
-    "older Shelf residents",
+    "older the Gray Zone residents",
     "people working near water or drainage runoff"
   ],
   "manufacturer": "Unknown canvas base, Tenex sealant (Korova Industrial)",
@@ -22,7 +22,7 @@
   "gene_compatible": false,
   "story_hooks": [
     "Tenex sealant leaves a distinctive chemical signature. Forensics can track anyone who walked through a sealed area.",
-    "An old woman's been recoating the same shoes every six months for eleven years. She knows every corner of the Shelf by what got them wet."
+    "An old woman's been recoating the same shoes every six months for eleven years. She knows every corner of the Gray Zone by what got them wet."
   ],
   "tags": [
     "apparel",
@@ -30,14 +30,12 @@
     "tier 1",
     "slip-on",
     "waterproofed",
-    "improvised",
-    "shelf"
+    "improvised"
   ],
   "parent_corponation": "",
   "related_entities": [
     "Slagworks Industrial",
     "TESSERA PG-2 'Signature'",
-    "The Shelf",
     "Yannick Tofauti-Szarvásy"
   ],
   "physical_description": {

@@ -3,7 +3,7 @@
   "name": "Halverson Insulated Bomber",
   "type": "apparel",
   "category": "jacket",
-  "description": "A classic MA-1 silhouette in a sage green nylon shell with an orange reversible lining — worn orange-side out, it's a statement; worn green-side out, it disappears into the city. Ribbed knit cuffs, collar, and waistband. Filled with recycled synthetic insulation that packs surprisingly warm for the weight. There's a single chest pocket that closes with a snap and two hand pockets with zip closures.\n\nHalverson makes workwear and casualwear for the Tier 1 and Tier 2 market without condescending to it. The Insulated Bomber is a staple — you see it in every neighborhood from the Shelf to the mid-tier commercial districts. Kids wear it to school. Mechanics wear it on cold mornings before the shop heats up. It's the jacket that exists everywhere without anyone making a fuss about it.",
+  "description": "A classic MA-1 silhouette in a sage green nylon shell with an orange reversible lining — worn orange-side out, it's a statement; worn green-side out, it disappears into the city. Ribbed knit cuffs, collar, and waistband. Filled with recycled synthetic insulation that packs surprisingly warm for the weight. There's a single chest pocket that closes with a snap and two hand pockets with zip closures.\n\nHalverson makes workwear and casualwear for the Tier 1 and Tier 2 market without condescending to it. The Insulated Bomber is a staple — you see it in every neighborhood from the Gray Zone to the mid-tier commercial districts. Kids wear it to school. Mechanics wear it on cold mornings before the shop heats up. It's the jacket that exists everywhere without anyone making a fuss about it.",
   "tier_association": "Tier 1",
   "materials": [
     "nylon shell",
@@ -14,7 +14,7 @@
   "functionality": "",
   "what_it_says": "You live in the city. You need a jacket. This is a jacket.",
   "worn_by": [
-    "Shelf residents",
+    "the Gray Zone residents",
     "Tier 1 and Tier 2 youth",
     "mechanics",
     "delivery workers",
@@ -25,9 +25,9 @@
   "aug_compatible": false,
   "gene_compatible": false,
   "story_hooks": [
-    "A specific orange-lined Halverson became a gang identifier in a Shelf neighborhood — wearing it inverted signals you're looking for work of a certain kind.",
+    "A specific orange-lined Halverson became a gang identifier in a the Gray Zone neighborhood — wearing it inverted signals you're looking for work of a certain kind.",
     "A Halverson jacket with a torn lining is found at a crime scene; something was sewn into the lining and has since been removed.",
-    "Halverson's manufacturing facility in the Shelf industrial strip is being pressured to relocate — the workers who depend on those jobs are organizing."
+    "Halverson's manufacturing facility in the Gray Zone industrial strip is being pressured to relocate — the workers who depend on those jobs are organizing."
   ],
   "tags": [
     "apparel",
@@ -43,8 +43,7 @@
   "related_entities": [
     "Nodar Kuznetsov-Adu",
     "Synaptrel",
-    "The Burden Clause",
-    "The Shelf"
+    "The Burden Clause"
   ],
   "physical_description": {
     "visual_profile": "Classic MA-1 silhouette with a slightly tapered waist and structured shoulders. The sage green exterior reads as understated urban utility, while the concealed orange lining suggests hidden boldness. Medium-weight presence on the frame without bulk.",

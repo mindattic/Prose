@@ -1,12 +1,12 @@
 {
   "id": "39062e3e57c064c27171cd6da3c76058",
   "type": "faction",
-  "name": "The Shelf Commons",
+  "name": "the Gray Zone Commons",
   "aliases": [],
   "motto": "Nobody's coming to save us. So we save each other.",
-  "description": "The Shelf Commons is the largest mutual aid network in GLMZ's lowest tier — a decentralized organization of approximately 12,000 participants (they refuse to call them 'members' because participation is fluid and nonbinding) who provide each other with food, shelter, medical care, childcare, elder care, repair services, and the hundreds of small daily assists that make survival in the Shelf possible.\n\nThe Commons operates through 'circles' — neighborhood-level groups of 50 to 200 people who know each other, trust each other, and take care of each other. Each circle maintains a shared resource pool: food stores, tool libraries, medical supplies, spare augmentation parts, clothing, and whatever else the community has in surplus. When someone needs something, they ask their circle. When a circle needs something, they ask neighboring circles. The system runs on reciprocity rather than currency — you contribute what you can, you take what you need, and the social bonds of the community enforce the balance.\n\nThe Commons has no political agenda beyond survival. It is not a resistance movement, not a reform campaign, not a revolution in waiting. It is the practical reality of poor people keeping each other alive in a city that has decided they're not worth the investment. This simplicity is its strength: the Commons persists because it works, and it works because it asks nothing of its participants except that they help when they can and accept help when they need it.",
+  "description": "the Gray Zone Commons is the largest mutual aid network in GLMZ's lowest tier — a decentralized organization of approximately 12,000 participants (they refuse to call them 'members' because participation is fluid and nonbinding) who provide each other with food, shelter, medical care, childcare, elder care, repair services, and the hundreds of small daily assists that make survival in the Gray Zone possible.\n\nThe Commons operates through 'circles' — neighborhood-level groups of 50 to 200 people who know each other, trust each other, and take care of each other. Each circle maintains a shared resource pool: food stores, tool libraries, medical supplies, spare augmentation parts, clothing, and whatever else the community has in surplus. When someone needs something, they ask their circle. When a circle needs something, they ask neighboring circles. The system runs on reciprocity rather than currency — you contribute what you can, you take what you need, and the social bonds of the community enforce the balance.\n\nThe Commons has no political agenda beyond survival. It is not a resistance movement, not a reform campaign, not a revolution in waiting. It is the practical reality of poor people keeping each other alive in a city that has decided they're not worth the investment. This simplicity is its strength: the Commons persists because it works, and it works because it asks nothing of its participants except that they help when they can and accept help when they need it.",
   "ideology": "Mutual aid is survival. The corponations won't help us. The government works for the corponations. The only resource we have is each other. The Commons' philosophy is not ideological — it's the lived experience of people who have learned that waiting for institutional help means dying.",
-  "territory": "Throughout the Shelf, organized by neighborhood circles. No central headquarters — the network is distributed by design.",
+  "territory": "Throughout the Gray Zone, organized by neighborhood circles. No central headquarters — the network is distributed by design.",
   "leadership": "No formal leadership. Circle coordinators manage local logistics, and a loose network of 'connectors' maintains relationships between circles. The most respected figure in the Commons is a woman named Mama Obi — not a title, just what everyone calls her — who has been coordinating circles for twenty-five years.",
   "methods": [
     "Neighborhood circles providing mutual aid at the local level",
@@ -18,31 +18,29 @@
   ],
   "resources": [
     "12,000 participants across hundreds of neighborhood circles",
-    "Distributed resource pools throughout the Shelf",
+    "Distributed resource pools throughout the Gray Zone",
     "Twenty-five years of institutional knowledge about community survival",
     "Community health volunteers with basic medical training",
-    "Mama Obi's relationship network spanning the entire Shelf",
-    "The trust of the Shelf's poorest communities — an asset no amount of money can buy"
+    "Mama Obi's relationship network spanning the entire the Gray Zone",
+    "The trust of the Gray Zone's poorest communities — an asset no amount of money can buy"
   ],
   "goals": [],
   "relationships": [],
   "narrative_function": "The Commons represents the most fundamental form of community — people taking care of each other because nobody else will. In a world of ideology and ambition, it is simply human.",
   "story_hooks": [
-    "Axiom has announced a 'Community Enhancement Initiative' in the Shelf — free services, improved infrastructure, corporate goodwill. The Commons recognizes it as a displacement precursor and needs to organize resistance without alienating residents who are attracted by the promised improvements.",
+    "Axiom has announced a 'Community Enhancement Initiative' in the Gray Zone — free services, improved infrastructure, corporate goodwill. The Commons recognizes it as a displacement precursor and needs to organize resistance without alienating residents who are attracted by the promised improvements.",
     "A circle has discovered that someone has been poisoning their shared food supply — not to kill, but to sicken, in a pattern that suggests someone is testing something. The circle needs to identify the source without causing panic."
   ],
   "tags": [
     "faction",
     "community",
     "mutual aid",
-    "shelf",
     "survival",
     "neighborhood",
     "grassroots"
   ],
   "related_entities": [
     "WELLSPRING",
-    "The Shelf",
     "Slagworks Industrial",
     "Zephyr Bhattacharya",
     "GLMZ"

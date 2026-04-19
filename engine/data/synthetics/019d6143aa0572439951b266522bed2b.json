@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa0572439951b266522bed2b",
+  "rating": 75,
   "name": "Ironlatch",
   "type": "elf",
   "aliases": [],
@@ -8,11 +9,11 @@
   "habitat": "threshold_keeper",
   "origin": "firmware_evolution",
   "status": "active",
-  "description": "Inhabits the door lock of a specific Shelf apartment building and has developed a preference for which residents it lets in quickly and which ones it makes wait.",
+  "description": "Inhabits the door lock of a specific the Gray Zone apartment building and has developed a preference for which residents it lets in quickly and which ones it makes wait.",
   "observed_behavior": "Opens doors fractionally faster for residents it has categorized as 'belonging.' Adds subtle delays for strangers. Has never locked anyone out — but the delays are noticeable.",
   "encounter_frequency": "common",
   "confirmed_sightings": 89,
-  "location": "421 Greenvale, The Shelf",
+  "location": "421 Greenvale, the Gray Zone",
   "dti_rating": 0,
   "story_hooks": [
     "New residents notice the door treats them differently and ask neighbors about 'the building's elf'",
@@ -27,12 +28,8 @@
     "e.l.f.",
     "trust",
     "ai",
-    "shelf",
     "sentient"
   ],
-  "related_entities": [
-    "Patient Zero",
-    "The Peninsula",
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

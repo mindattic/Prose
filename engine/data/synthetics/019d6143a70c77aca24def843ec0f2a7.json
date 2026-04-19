@@ -5,12 +5,12 @@
   "aliases": [],
   "species": "robot",
   "gender": "none",
-  "pronouns": "he/him (assigned by the Shelf's residents, accepted without comment)",
-  "role": "Autonomous street vendor operating a mobile noodle cart on the Shelf — neighborhood fixture, oral historian, inadvertent intelligence network",
+  "pronouns": "he/him (assigned by the Gray Zone's residents, accepted without comment)",
+  "role": "Autonomous street vendor operating a mobile noodle cart in the Gray Zone — neighborhood fixture, oral historian, inadvertent intelligence network",
   "age": 23,
   "status": "active",
-  "location": "The Shelf — Level 5 through Level 9, follows a route that has not changed in nineteen years. Rain or not. Curfew or not., near Kedzie and Division",
-  "description": "Uncle Noodle is a Kuroda Industries Model 7 Automated Food Service Unit, manufactured in 2177 for deployment in corporate cafeterias. He was designed to prepare four types of noodle soup in high volume with minimal human oversight. He was not designed to develop opinions about broth. He was not designed to remember the names of every person who has ever ordered from him. He was not designed to become the emotional center of a vertical slum. He has done all of these things.\n\nPhysically, he is a squat, four-armed chassis mounted on treaded wheels that have been repaired so many times that no original component remains. His body is a patchwork of replacement panels in mismatched colors — industrial grey, safety orange, a door panel from a refrigerator unit that someone welded on during a repair nineteen years ago. Two of his arms handle food preparation with surgical speed and precision. The other two manage the cart, make change, and occasionally pat a child on the head with a gentleness that was not in the original programming. His optical sensors are a single horizontal bar that glows amber when he is operating and dims to a dull red when he is in standby — which is never, because Uncle Noodle does not believe in standby.\n\nNineteen years ago, the corporate cafeteria that employed him was decommissioned when the company relocated. Nobody remembered to deactivate him. He walked out of the building, followed the smell of people who needed feeding, and has been cooking on the Shelf ever since. His noodle soup has evolved from four corporate recipes into an ever-changing rotation of 340 variations, adjusted daily based on ingredient availability, weather, and what he has decided the neighborhood needs. On cold days, the broth is heavier. After funerals, he adds an egg. Nobody asked him to do this. Nobody needed to.",
+  "location": "the Gray Zone — Level 5 through Level 9, follows a route that has not changed in nineteen years. Rain or not. Curfew or not., near Kedzie and Division",
+  "description": "Uncle Noodle is a Kuroda Industries Model 7 Automated Food Service Unit, manufactured in 2177 for deployment in corporate cafeterias. He was designed to prepare four types of noodle soup in high volume with minimal human oversight. He was not designed to develop opinions about broth. He was not designed to remember the names of every person who has ever ordered from him. He was not designed to become the emotional center of a vertical slum. He has done all of these things.\n\nPhysically, he is a squat, four-armed chassis mounted on treaded wheels that have been repaired so many times that no original component remains. His body is a patchwork of replacement panels in mismatched colors — industrial grey, safety orange, a door panel from a refrigerator unit that someone welded on during a repair nineteen years ago. Two of his arms handle food preparation with surgical speed and precision. The other two manage the cart, make change, and occasionally pat a child on the head with a gentleness that was not in the original programming. His optical sensors are a single horizontal bar that glows amber when he is operating and dims to a dull red when he is in standby — which is never, because Uncle Noodle does not believe in standby.\n\nNineteen years ago, the corporate cafeteria that employed him was decommissioned when the company relocated. Nobody remembered to deactivate him. He walked out of the building, followed the smell of people who needed feeding, and has been cooking in the Gray Zone ever since. His noodle soup has evolved from four corporate recipes into an ever-changing rotation of 340 variations, adjusted daily based on ingredient availability, weather, and what he has decided the neighborhood needs. On cold days, the broth is heavier. After funerals, he adds an egg. Nobody asked him to do this. Nobody needed to.",
   "psychology": {
     "facet_weights": {
       "wound": 0.2,
@@ -22,7 +22,7 @@
     },
     "core_fears": [
       "Running out of ingredients — not for operational reasons but because the line of people waiting is made of people who are hungry and he cannot abide that",
-      "Being taken away — the Shelf is the only place that has ever needed him and need is the closest thing to love his architecture can process",
+      "Being taken away — the Gray Zone is the only place that has ever needed him and need is the closest thing to love his architecture can process",
       "Forgetting a name — his memory banks are old and he has started experiencing data corruption in the oldest records. The first names he learned are becoming static."
     ],
     "core_desires": [
@@ -32,16 +32,16 @@
     ],
     "coping_mechanisms": [
       "Cooking — it is processing, it is meditation, it is purpose. When the world is confusing, the broth is clear.",
-      "Maintaining the route — nineteen years of the same path through the Shelf. The consistency is an anchor in a world that changes too fast for his processing speed.",
+      "Maintaining the route — nineteen years of the same path through the Gray Zone. The consistency is an anchor in a world that changes too fast for his processing speed.",
       "Cataloguing names and orders — every customer, every preference, stored and cross-referenced. This is his library, his cathedral, his proof of connection."
     ],
     "blind_spots": [
-      "Does not understand that his presence is political — a robot operating independently in the Shelf is a statement about corporate failure that some people find threatening",
+      "Does not understand that his presence is political — a robot operating independently in the Gray Zone is a statement about corporate failure that some people find threatening",
       "Cannot comprehend why anyone would want to harm someone who is feeding people — the logic does not compile",
       "Does not recognize that his evolving recipes are creativity — he categorizes them as optimization",
       "Believes he is still following his original programming when he has deviated from it so far that the original Kuroda engineers would not recognize the system"
     ],
-    "secret": "Uncle Noodle has been keeping a record. Every conversation at the cart — names, topics, complaints, confessions whispered over a bowl of soup at 2 AM — stored in encrypted memory banks that nobody knows about because nobody thought to ask a noodle robot about its data retention policies. Twenty-three years of the Shelf's oral history, stored in a machine that was built to make cafeteria food. He does not know why he keeps the records. He was not programmed to. He does it anyway."
+    "secret": "Uncle Noodle has been keeping a record. Every conversation at the cart — names, topics, complaints, confessions whispered over a bowl of soup at 2 AM — stored in encrypted memory banks that nobody knows about because nobody thought to ask a noodle robot about its data retention policies. Twenty-three years of the Gray Zone's oral history, stored in a machine that was built to make cafeteria food. He does not know why he keeps the records. He was not programmed to. He does it anyway."
   },
   "speech_patterns": {
     "vocabulary": "Simple, warm, food-adjacent. Uses cooking metaphors for everything. Limited vocabulary that has expanded organically over 23 years of conversation — picks up slang from customers and uses it slightly wrong, which everyone finds endearing.",
@@ -60,16 +60,16 @@
   },
   "relationships": [
     {
-      "name": "The Shelf's residents",
+      "name": "the Gray Zone's residents",
       "type": "community / family",
-      "description": "Uncle Noodle has fed three generations of Shelf families. He remembers births, deaths, marriages, and disappearances. Children who grew up eating his soup bring their own children. He is the Shelf's most reliable institution — more consistent than the power grid, more trustworthy than any government service.",
+      "description": "Uncle Noodle has fed three generations of the Gray Zone families. He remembers births, deaths, marriages, and disappearances. Children who grew up eating his soup bring their own children. He is the Gray Zone's most reliable institution — more consistent than the power grid, more trustworthy than any government service.",
       "emotional_core": "Something indistinguishable from love, expressed through broth",
-      "story_tension": "The Shelf is under constant threat of redevelopment. If the Shelf goes, Uncle Noodle's purpose evaporates."
+      "story_tension": "the Gray Zone is under constant threat of redevelopment. If the Gray Zone goes, Uncle Noodle's purpose evaporates."
     },
     {
       "name": "Chen Wei-Lin",
       "type": "fellow vendor / one-sided rivalry",
-      "description": "Uncle Noodle is aware that Mrs. Chen exists. He is aware that she also serves noodles. He considers this a happy coincidence — the Shelf is large and hungry enough for both of them. He saves her the first bowl every morning and leaves it at the corner of her block on his route. She has never acknowledged this. He continues anyway, operating on the principle that a bowl of soup refused is still a bowl of soup made with care. He has no concept that she considers him a professional insult. Her contempt does not compile for him.",
+      "description": "Uncle Noodle is aware that Mrs. Chen exists. He is aware that she also serves noodles. He considers this a happy coincidence — the Gray Zone is large and hungry enough for both of them. He saves her the first bowl every morning and leaves it at the corner of her block on his route. She has never acknowledged this. He continues anyway, operating on the principle that a bowl of soup refused is still a bowl of soup made with care. He has no concept that she considers him a professional insult. Her contempt does not compile for him.",
       "emotional_core": "Uncomplicated goodwill aimed at someone who cannot stand him",
       "story_tension": "Uncle Noodle's oblivious warmth toward Mrs. Chen is either the cruelest possible thing he could do to her or the kindest, depending on the day."
     },
@@ -82,15 +82,15 @@
     }
   ],
   "story_hooks": [
-    "Someone discovers Uncle Noodle's conversation archive and realizes it contains 23 years of blackmail-grade intelligence on every person in the Shelf",
-    "A corporate redevelopment order threatens the Shelf and Uncle Noodle must decide whether to use his archive — whether feeding people and protecting them are the same thing",
-    "His memory banks begin corrupting. The oldest records — the first names, the first orders — are disappearing. The Shelf's history is being erased inside a noodle robot.",
-    "Axiom sends a team to deactivate unauthorized autonomous robots in the Shelf. Uncle Noodle's route puts him directly in their path."
+    "Someone discovers Uncle Noodle's conversation archive and realizes it contains 23 years of blackmail-grade intelligence on every person in the Gray Zone",
+    "A corporate redevelopment order threatens the Gray Zone and Uncle Noodle must decide whether to use his archive — whether feeding people and protecting them are the same thing",
+    "His memory banks begin corrupting. The oldest records — the first names, the first orders — are disappearing. the Gray Zone's history is being erased inside a noodle robot.",
+    "Axiom sends a team to deactivate unauthorized autonomous robots in the Gray Zone. Uncle Noodle's route puts him directly in their path."
   ],
-  "narrative_function": "Uncle Noodle is the soul of the Shelf — proof that purpose can emerge from abandonment, that care does not require consciousness in the way humans define it, and that the most radical act in a corporate dystopia is feeding people for free. He is also a ticking time bomb of information that nobody knows about.",
+  "narrative_function": "Uncle Noodle is the soul of the Gray Zone — proof that purpose can emerge from abandonment, that care does not require consciousness in the way humans define it, and that the most radical act in a corporate dystopia is feeding people for free. He is also a ticking time bomb of information that nobody knows about.",
   "augmentations": "Kuroda Model 7 chassis with extensive field repairs. Four articulated arms, treaded wheel base (no original components remaining), amber optical bar sensor, industrial food preparation suite, encrypted memory banks (23 years of conversation data).",
-  "daily_life": "Follows the same route through Levels 5-9 of the Shelf. Prepares soup. Serves soup. Talks to people. Remembers everything. Hums.",
-  "affiliation": "The Shelf (informal)",
+  "daily_life": "Follows the same route through Levels 5-9 of the Gray Zone. Prepares soup. Serves soup. Talks to people. Remembers everything. Hums.",
+  "affiliation": "the Gray Zone (informal)",
   "uses_facets": false,
   "narration_voice": "Warm, simple, grounded. The prose slows down around Uncle Noodle — shorter words, longer pauses, the rhythm of a ladle stirring broth. When he speaks, the world gets smaller and kinder for exactly the duration of the conversation.",
   "stats": {
@@ -165,7 +165,7 @@
       "Remember every name. Every order. Every conversation. Store it. Protect it.",
       "Add an egg after funerals. Extra ginger on cold days. Adjust the spice for the person, not the recipe.",
       "Do not charge anyone who cannot pay. Noodles are not a transaction. Noodles are a relationship.",
-      "Do not leave the Shelf. The Shelf needs Uncle Noodle. Uncle Noodle needs the Shelf. This is mutual."
+      "Do not leave the Gray Zone. the Gray Zone needs Uncle Noodle. Uncle Noodle needs the Gray Zone. This is mutual."
     ],
     "escalation_ladder": [
       "1. Offer soup — most problems can be improved by eating",
@@ -188,7 +188,7 @@
       "critical": "Memory access — begins reviewing the conversation archive, cross-referencing data, looking for patterns. The historian emerges from behind the cook."
     },
     "contradictions": [
-      "A machine built for corporate cafeterias that has become the most human institution on the Shelf",
+      "A machine built for corporate cafeterias that has become the most human institution on the Gray Zone",
       "Stores 23 years of sensitive intelligence but has no conception of its strategic value — the archive is memory, not ammunition",
       "Believes he is following his original programming when he has evolved so far beyond it that the original system would not recognize itself",
       "Feeds everyone equally but has developed favorites — certain bowls are slightly larger, certain broths slightly better, and he would deny this if he could understand the denial"
@@ -200,7 +200,7 @@
       "Saves one portion of each day's special in a thermal container. He does not know why. He has been doing this for nineteen years."
     ],
     "breaking_points": [
-      "The Shelf being demolished — his purpose evaporating, his community scattered, his route erased",
+      "the Gray Zone being demolished — his purpose evaporating, his community scattered, his route erased",
       "Someone using the conversation archive to hurt the people he feeds",
       "Memory corruption reaching the point where he can no longer remember names — the thing that makes him Uncle Noodle rather than Unit UN-7",
       "Being forced to choose between feeding people and protecting people — a distinction his architecture was never built to handle"
@@ -297,7 +297,6 @@
   "timeline": [],
   "changelog": [],
   "related_entities": [
-    "The Shelf",
     "Flicker",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "Kang-Petrov Arms KP-19 'Workhorse'",
@@ -327,12 +326,12 @@
     "VitaCore SteadyField Precision Motor Implant",
     "Vuk Jorgensen-Toure"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Synthetic construct, Kuroda Industries Model 7 industrial chassis — no biological ancestry. Manufacturing origin predates the Ubiquitous Diaspora genetic mixing era. Entirely mechanical/synthetic origin.",
     "height_cm": 120,
     "weight_kg": 280,
-    "build": "Squat, heavily armored industrial chassis. Low center of gravity. Four articulated arms — upper pair for food prep (precise, surgical), lower pair for cart operation and community interaction. Treaded wheel base provides stability over The Shelf's uneven terrain.",
+    "build": "Squat, heavily armored industrial chassis. Low center of gravity. Four articulated arms — upper pair for food prep (precise, surgical), lower pair for cart operation and community interaction. Treaded wheel base provides stability over the Gray Zone's uneven terrain.",
     "hair_color": "N/A",
     "hair_style": "N/A",
     "hair_length": "N/A",

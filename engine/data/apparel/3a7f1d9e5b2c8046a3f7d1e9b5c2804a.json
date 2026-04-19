@@ -3,7 +3,7 @@
   "name": "Vantablack Operations Thermal Coat",
   "type": "apparel",
   "category": "outerwear",
-  "description": "A long insulated coat issued to Vantablack field personnel operating in cold-weather or extended outdoor conditions. The shell is a matte charcoal ripstop with a subtle corponation identifier woven into the collar lining — not a logo, just a thread pattern that reads under UV. Filled with a thin but highly effective synthetic insulation, the coat is warm without the bulk that would restrict movement or make it harder to access sidearms or equipment. Two deep hand pockets, a zippered chest pocket, and a sealed interior document pocket.\n\nThis coat signals Vantablack in a way that the average person recognizes without being able to articulate why. It's not branded. It's just cut a certain way, in a certain color, with a certain quality of fabric, worn by people who move with a certain economy. On the Shelf, seeing this coat means getting out of the way. In Tier 4 corridors, it means a meeting is happening that you're not part of.",
+  "description": "A long insulated coat issued to Vantablack field personnel operating in cold-weather or extended outdoor conditions. The shell is a matte charcoal ripstop with a subtle corponation identifier woven into the collar lining — not a logo, just a thread pattern that reads under UV. Filled with a thin but highly effective synthetic insulation, the coat is warm without the bulk that would restrict movement or make it harder to access sidearms or equipment. Two deep hand pockets, a zippered chest pocket, and a sealed interior document pocket.\n\nThis coat signals Vantablack in a way that the average person recognizes without being able to articulate why. It's not branded. It's just cut a certain way, in a certain color, with a certain quality of fabric, worn by people who move with a certain economy. On the Gray Zone, seeing this coat means getting out of the way. In Tier 4 corridors, it means a meeting is happening that you're not part of.",
   "tier_association": "Tier 4",
   "materials": [
     "matte ripstop shell",
@@ -24,7 +24,7 @@
   "aug_compatible": true,
   "gene_compatible": false,
   "story_hooks": [
-    "A Vantablack Operations Thermal Coat shows up in a Shelf secondhand market — Vantablack does not sell surplus, which means someone stripped it off a body or stole it from supply.",
+    "A Vantablack Operations Thermal Coat shows up in a the Gray Zone secondhand market — Vantablack does not sell surplus, which means someone stripped it off a body or stole it from supply.",
     "The UV-reactive identifier in this coat's collar is from a discontinued field unit — wearing it suggests either a very old coat or a very deep cover.",
     "A contact reaches out wearing one of these coats but claims to have no affiliation with Vantablack — they want help and they won't explain the coat."
   ],
@@ -44,8 +44,7 @@
     "ARCTURUS DEFENSE Bastion Subdermal Armor Mesh",
     "Arcturus Defense Solutions ChemoShield BX-2 Dermal Toxin Barrier Implant",
     "Ringo RT-4 'Oxcart'",
-    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "The Shelf"
+    "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI"
   ],
   "physical_description": {
     "visual_profile": "A sleek, utilitarian long coat with a silhouette that reads as both corporate and operationally lean. The matte charcoal finish absorbs light, creating an almost shadowlike presence on the wearer. Cut to mid-thigh, designed for authority and accessibility rather than fashion. The coat's presence is imposing without being ostentatious—instantly recognizable to those who know what to look for.",

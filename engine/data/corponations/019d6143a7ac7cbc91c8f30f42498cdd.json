@@ -36,5 +36,14 @@
     "Tessera Corponation Dermal Cipher Lattice — 'The Palimpsest'",
     "The Corridor",
     "The Suture Collective"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z4"
+    ],
+    "primaryZone": "Z4",
+    "lakefrontAccess": false,
+    "description": "Lacuna Campus — fortified biozone in the North Shore suburbs of Zone 4, built atop former industrial land. Closed-loop genomic research with no published outputs. Lacuna's research direction is not publicly known, which is unusual enough to generate both industry speculation and Helix Biosystems institutional hostility.",
+    "grayZoneRelationship": "No documented Gray Zone relationships."
+  }
 }

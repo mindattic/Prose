@@ -1,7 +1,8 @@
 {
   "id": "019d6143a66874f3b9d18f71f3c32e61",
+  "rating": 90,
   "type": "character",
-  "name": "Arjun Kulkarni-Larsdóttir",
+  "name": "Arjun Kulkarni-Larsd\u00F3ttir",
   "aliases": [],
   "species": "human",
   "gender": "female",
@@ -9,8 +10,8 @@
   "role": "Graffiti artist and unlicensed holographic muralist, works across Pilsen Veil and the Blackpipe Corridor",
   "age": 19,
   "status": "active",
-  "location": "Pilsen Veil, sleeping arrangement rotates between three friends' apartments, near Ashland and Division",
-  "description": "Arjun Kulkarni-Larsdóttir is all angles and velocity — sharp elbows, fast movements, a face that shifts rapidly between expressions as though her internal state is always a half-second ahead of social acceptability. She is dark brown with a shaved head except for a topknot she dyes rotating colors; currently it is a deep arterial red. She's had retractable claws installed on her right hand — not for combat but because she finds them useful for scoring surfaces before applying materials, and because she likes the way they look. There is a scar above her left eyebrow from a fence she didn't clear fast enough six months ago. She dresses in whatever is functional for climbing: close-fitting, layered, with many pockets.\n\nHer art is illegal, large, and impossible to ignore. She works in a hybrid medium she developed herself — a base layer of actual pigment covered by a thin holographic projector film that she fabricates from salvaged materials, which means her pieces exist in two states: the physical painting that is there whether power is running or not, and the animated layer that breathes and moves when it has charge. Her subjects are Pilsen Veil's residents — she paints the faces she sees every day at enormous scale on the walls that corporate infrastructure has turned into blank grey surfaces. She has not yet been caught, partly because she is very fast and partly because she is very good at reading which Ferrogate Transit staff are looking the other way. She is not politically articulate about what she does — she finds manifestos embarrassing — but she is absolutely certain of it.",
+  "location": "Pilsen Veil, sleeping arrangement rotates between three friends\u0027 apartments, near Ashland and Division",
+  "description": "Arjun Kulkarni-Larsd\u00F3ttir is all angles and velocity \u2014 sharp elbows, fast movements, a face that shifts rapidly between expressions as though her internal state is always a half-second ahead of social acceptability. She is dark brown with a shaved head except for a topknot she dyes rotating colors; currently it is a deep arterial red. She\u0027s had retractable claws installed on her right hand \u2014 not for combat but because she finds them useful for scoring surfaces before applying materials, and because she likes the way they look. There is a scar above her left eyebrow from a fence she didn\u0027t clear fast enough six months ago. She dresses in whatever is functional for climbing: close-fitting, layered, with many pockets.\n\nHer art is illegal, large, and impossible to ignore. She works in a hybrid medium she developed herself \u2014 a base layer of actual pigment covered by a thin holographic projector film that she fabricates from salvaged materials, which means her pieces exist in two states: the physical painting that is there whether power is running or not, and the animated layer that breathes and moves when it has charge. Her subjects are Pilsen Veil\u0027s residents \u2014 she paints the faces she sees every day at enormous scale on the walls that corporate infrastructure has turned into blank grey surfaces. She has not yet been caught, partly because she is very fast and partly because she is very good at reading which Ferrogate Transit staff are looking the other way. She is not politically articulate about what she does \u2014 she finds manifestos embarrassing \u2014 but she is absolutely certain of it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -21,42 +22,46 @@
       "ghost": 0.4
     },
     "core_fears": [
-      "Being made invisible — overlooked, dismissed, treated as not worth noticing",
+      "Being made invisible \u2014 overlooked, dismissed, treated as not worth noticing",
       "That her work is erasable and she will run out of time before she makes something that lasts"
     ],
     "core_desires": [
-      "To make Pilsen Veil's people undeniable — too large and present to be ignored",
+      "To make Pilsen Veil\u0027s people undeniable \u2014 too large and present to be ignored",
       "Speed: to move faster than the systems trying to contain her"
     ],
     "coping_mechanisms": [
-      "Action — she processes almost everything by doing something physical with her hands",
+      "Action \u2014 she processes almost everything by doing something physical with her hands",
       "Dark humor that she delivers deadpan and then watches for reactions"
     ],
     "blind_spots": [
       "She vastly underestimates the cumulative legal risk she is accumulating",
       "She reads stillness and deliberation in others as cowardice rather than strategy"
     ],
-    "secret": "Three months ago she was approached by someone claiming to be from a Palladian PR division who offered to legitimize one of her pieces — pay her, put her name on it, make it official. She almost said yes. She didn't, but the wanting haunts her because it feels like a betrayal of something she can't fully name."
+    "secret": "Three months ago she was approached by someone claiming to be from a Palladian PR division who offered to legitimize one of her pieces \u2014 pay her, put her name on it, make it official. She almost said yes. She didn\u0027t, but the wanting haunts her because it feels like a betrayal of something she can\u0027t fully name."
   },
   "speech_patterns": {
     "vocabulary": "Clipped and vernacular, Pilsen Veil street argot; becomes unexpectedly technical when discussing materials or fabrication",
-    "cadence": "Fast, with thoughts that arrive before sentences are finished — she trails off when she's already moved to the next idea",
+    "cadence": "Fast, with thoughts that arrive before sentences are finished \u2014 she trails off when she\u0027s already moved to the next idea",
     "verbal_tics": [
-      "'You clocking this?' — checking whether someone is paying attention or understanding",
-      "Clicks her retracted claws against surfaces when thinking, a rhythmic sound she doesn't notice"
+      "\u0027You clocking this?\u0027 \u2014 checking whether someone is paying attention or understanding",
+      "Clicks her retracted claws against surfaces when thinking, a rhythmic sound she doesn\u0027t notice"
     ],
     "example_lines": [
-      "'That wall on Blackpipe near the third junction? You clocking that? That grey? Ferrogate painted over Marisol's memorial six weeks after she died. Six weeks. I'm going to make them look at her face every single day until the concrete falls down.'",
-      "'I don't do manifestos. I do walls. The wall says everything I would say, and it says it louder.'"
-    ]
+      "\u0027That wall on Blackpipe near the third junction? You clocking that? That grey? Ferrogate painted over Marisol\u0027s memorial six weeks after she died. Six weeks. I\u0027m going to make them look at her face every single day until the concrete falls down.\u0027",
+      "\u0027I don\u0027t do manifestos. I do walls. The wall says everything I would say, and it says it louder.\u0027"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "One of her holographic murals has captured something in its physical layer that she didn't paint — a face in the background of a crowd scene that she is certain she did not put there, and when she enhances it she recognizes someone who disappeared from Pilsen Veil eight months ago",
-    "A Ferrogate Transit supervisor has been quietly leaving her routes clear — not random neglect but deliberate clearing — and she doesn't know if this is protection, a trap, or someone trying to use her"
+    "One of her holographic murals has captured something in its physical layer that she didn\u0027t paint \u2014 a face in the background of a crowd scene that she is certain she did not put there, and when she enhances it she recognizes someone who disappeared from Pilsen Veil eight months ago",
+    "A Ferrogate Transit supervisor has been quietly leaving her routes clear \u2014 not random neglect but deliberate clearing \u2014 and she doesn\u0027t know if this is protection, a trap, or someone trying to use her"
   ],
-  "narrative_function": "Information source on Pilsen Veil's physical layout, security patterns, and resident community; her art documents things corponations want unseen; she can access elevated and restricted spaces most people can't; potential lookout or distraction asset",
-  "augmentations": "Retractable claws (right hand, matte black, functional length); color-dye topknot (cosmetic, non-shifting — she redyes manually); basic subretinal low-light enhancement",
+  "narrative_function": "Information source on Pilsen Veil\u0027s physical layout, security patterns, and resident community; her art documents things corponations want unseen; she can access elevated and restricted spaces most people can\u0027t; potential lookout or distraction asset",
+  "augmentations": "Retractable claws (right hand, matte black, functional length); color-dye topknot (cosmetic, non-shifting \u2014 she redyes manually); basic subretinal low-light enhancement",
   "daily_life": "Sleeps late, spends afternoons in transit studying walls and mapping sight lines and security patterns, works between 2 and 5 AM when the district is quietest. Eats street food. Has a part-time job repairing personal electronics that she attends erratically.",
   "affiliation": "Unaffiliated; loosely connected to a rotating crew of three other artists she sometimes collaborates with",
   "uses_facets": false,
@@ -103,33 +108,33 @@
     "decision_rules": [
       "Always paint the people who have been made invisible",
       "Never accept money from a corponation for her work",
-      "If you can run, run — confrontation is a last option not a first one"
+      "If you can run, run \u2014 confrontation is a last option not a first one"
     ],
     "escalation_ladder": [
-      "Avoidance and speed — her first response is always to not be there",
+      "Avoidance and speed \u2014 her first response is always to not be there",
       "Deflection and misdirection",
       "Rapid physical exit from the situation",
       "Fighting only if there is genuinely no other option, and she is not confident in a fight"
     ],
     "interpersonal_modes": {
-      "strangers": "Guarded and assessing, speaks little until she has clocked someone — then shifts abruptly to openness if they pass",
-      "friends": "Loyal with the specific intensity of someone who doesn't have many; remembers everything they've told her"
+      "strangers": "Guarded and assessing, speaks little until she has clocked someone \u2014 then shifts abruptly to openness if they pass",
+      "friends": "Loyal with the specific intensity of someone who doesn\u0027t have many; remembers everything they\u0027ve told her"
     },
     "stress_responses": {
-      "low": "Plans more ambitious pieces — stress scales her ambitions upward",
-      "medium": "Goes silent and works alone, doesn't answer messages for days",
-      "high": "Reckless — takes risks she wouldn't otherwise take because stillness feels worse"
+      "low": "Plans more ambitious pieces \u2014 stress scales her ambitions upward",
+      "medium": "Goes silent and works alone, doesn\u0027t answer messages for days",
+      "high": "Reckless \u2014 takes risks she wouldn\u0027t otherwise take because stillness feels worse"
     },
     "contradictions": [
       "Deeply wants to be seen and known but has built her entire practice around anonymity; the two desires are in direct conflict and she has not resolved it"
     ],
     "habits": [
       "Maps every space she enters for exits before she does anything else",
-      "Photographs her finished work from seventeen specific angles — a ritual she performs every time without variation",
-      "Leaves a small drawn mark — a single curved line — somewhere hidden in every piece, her signature that isn't a signature"
+      "Photographs her finished work from seventeen specific angles \u2014 a ritual she performs every time without variation",
+      "Leaves a small drawn mark \u2014 a single curved line \u2014 somewhere hidden in every piece, her signature that isn\u0027t a signature"
     ],
     "breaking_points": [
-      "Watching something she has made be deliberately destroyed in front of her — she will stop thinking and act"
+      "Watching something she has made be deliberately destroyed in front of her \u2014 she will stop thinking and act"
     ]
   },
   "cyberware_inventory": [],
@@ -163,23 +168,11 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms HF-30 'Homestead'",
-    "Hearthstone Firearms Plinker-22 'Tin Can'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [
-    "Hearthstone Firearms HF-30 'Homestead'",
-    "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ],
-  "related_entities": [
-    "Ferrogate Transit",
-    "Pilsen Veil",
-    "Clearpath",
-    "Stratum",
-    "Pellucid Systems",
-    "Slagworks Industrial"
-  ],
-  "district": "The Shelf",
   "physical_description": {
     "heritage": "Dominant South Asian ancestry (51.3%) blended with significant Hispanic/Latin American (24.8%) and Southeast Asian (23.9%) heritage; the combination creates a rich phenotype with warm golden-brown skin enriched by amber and olive undertones, moderate South Asian cheekbone prominence and nose bridge structure, Southeast Asian eye shape with epicanthic fold, and Latin American warmth in overall facial proportions and coloring",
     "height_cm": 165,
@@ -195,22 +188,17 @@
       "Linear scar above left eyebrow, approximately 4cm long, pale and slightly raised, acquired six months prior from fence impact",
       "Subcutaneous scarring on right palm and inner forearm from claw installation and maintenance"
     ],
-    "visible_augmentations": "Retractable claws on right hand — matte black, metallic-finish, approximately 3.5cm extended length, visible as subtle bulges along knuckles when retracted; faint crystalline lens distortion in pupils from subretinal low-light enhancement, most noticeable in shadows",
-    "posture_movement": "Perpetually forward-leaning, weight on balls of feet even when standing still. Moves in economical bursts rather than smooth transitions. Head turns sharply; eyes scan surfaces and rooflines before looking at people. Resting expression is alert and slightly skeptical. Fidgets with small objects — paint caps, wire, fabric edges",
-    "clothing_style": "Tier 4 utilitarian — close-fitting dark synthetic layers, often black or charcoal with matte finishes to reduce reflection. Cargo pants with reinforced thigh and calf pockets, climbing harness worn as crossbody strap even indoors. Worn Ferrogate Transit utility jacket (stolen or salvaged). No corporate branding. Rubber-soled climbing shoes, always laced tight. Small tool pouch clipped to belt. Paint stains on fingers and under fingernails in multiple colors — current palette heavy on deep reds and silvers"
+    "visible_augmentations": "Retractable claws on right hand \u2014 matte black, metallic-finish, approximately 3.5cm extended length, visible as subtle bulges along knuckles when retracted; faint crystalline lens distortion in pupils from subretinal low-light enhancement, most noticeable in shadows",
+    "posture_movement": "Perpetually forward-leaning, weight on balls of feet even when standing still. Moves in economical bursts rather than smooth transitions. Head turns sharply; eyes scan surfaces and rooflines before looking at people. Resting expression is alert and slightly skeptical. Fidgets with small objects \u2014 paint caps, wire, fabric edges",
+    "clothing_style": "Tier 4 utilitarian \u2014 close-fitting dark synthetic layers, often black or charcoal with matte finishes to reduce reflection. Cargo pants with reinforced thigh and calf pockets, climbing harness worn as crossbody strap even indoors. Worn Ferrogate Transit utility jacket (stolen or salvaged). No corporate branding. Rubber-soled climbing shoes, always laced tight. Small tool pouch clipped to belt. Paint stains on fingers and under fingernails in multiple colors \u2014 current palette heavy on deep reds and silvers"
   },
-  "image_prompt": "Arjun Kulkarni-Larsdóttir, 165cm lean wiry frame, warm golden-brown skin with olive undertones from South Asian-Hispanic-Southeast Asian heritage blend, angular cheekbones, dark brown eyes with subtle epicanthic fold and faint metallic subretinal augmentation sheen, pale 4cm scar above left eyebrow. Shaved head with deep arterial red topknot, black paint stains on fingers. Wearing close-fitting matte black synthetic layers, reinforced cargo pants, worn Ferrogate Transit utility jacket, climbing harness worn as crossbody strap, rubber-soled climbing shoes. Matte black retractable claws visible on right hand. Forward-leaning posture, alert expression, weight on balls of feet. Industrial near-future megacity setting, neon-edged shadows, cold blue and warm amber lighting contrast, rain-slicked roofline or urban utility space, night cycle GLMZ 2226 --ar 2:3 --v 6",
+  "image_prompt": "Arjun Kulkarni-Larsd\u00F3ttir, 165cm lean wiry frame, warm golden-brown skin with olive undertones from South Asian-Hispanic-Southeast Asian heritage blend, angular cheekbones, dark brown eyes with subtle epicanthic fold and faint metallic subretinal augmentation sheen, pale 4cm scar above left eyebrow. Shaved head with deep arterial red topknot, black paint stains on fingers. Wearing close-fitting matte black synthetic layers, reinforced cargo pants, worn Ferrogate Transit utility jacket, climbing harness worn as crossbody strap, rubber-soled climbing shoes. Matte black retractable claws visible on right hand. Forward-leaning posture, alert expression, weight on balls of feet. Industrial near-future megacity setting, neon-edged shadows, cold blue and warm amber lighting contrast, rain-slicked roofline or urban utility space, night cycle GLMZ 2226 --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "South Asian": 51.3,
     "Hispanic/Latin American": 24.8,
     "Southeast Asian": 23.9
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "South Asian": {
       "Nepali": {
@@ -232,6 +220,5 @@
         "Javanese": 1.5
       }
     }
-  },
-  "tier": "1"
+  }
 }

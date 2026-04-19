@@ -4,7 +4,7 @@
   "type": "weapon",
   "aliases": [],
   "category": "bow",
-  "description": "A handmade recurve bow assembled from salvaged composite materials — typically automotive leaf springs, industrial cable for the string, and scrap polymer for the riser. The Gallows represents the lowest-tech weapon in GLMZ that remains genuinely lethal at range. With no electromagnetic components, no battery, no firmware, and no acoustic signature, it is invisible to every detection system in the city. It is a stick that throws smaller sticks, and in a world of networked surveillance, that simplicity is a superpower.\n\nGallows bows are built by hand in the Shelf, each one unique, each one reflecting the builder's available materials and skill level. Draw weights range from 20 to 60 kilograms depending on the spring steel used, and accuracy depends entirely on the archer's practice. The arrows are similarly improvised — metal rod shafts with filed points, stabilized with whatever passes for fletching. Despite the crude construction, a Gallows arrow through the throat kills as effectively as any precision-manufactured projectile.\n\nThe bow has become a symbol of Shelf resistance culture — a weapon that the surveillance state literally cannot see. No electronics to detect, no chemical propellant to sniff, no electromagnetic signature to track. A person with a Gallows bow and sufficient skill can kill from rooftop distance and leave no forensic trace that any automated system can process. The kill has to be investigated by humans, and there aren't enough investigators to cover the Shelf.",
+  "description": "A handmade recurve bow assembled from salvaged composite materials — typically automotive leaf springs, industrial cable for the string, and scrap polymer for the riser. The Gallows represents the lowest-tech weapon in GLMZ that remains genuinely lethal at range. With no electromagnetic components, no battery, no firmware, and no acoustic signature, it is invisible to every detection system in the city. It is a stick that throws smaller sticks, and in a world of networked surveillance, that simplicity is a superpower.\n\nGallows bows are built by hand in the Gray Zone, each one unique, each one reflecting the builder's available materials and skill level. Draw weights range from 20 to 60 kilograms depending on the spring steel used, and accuracy depends entirely on the archer's practice. The arrows are similarly improvised — metal rod shafts with filed points, stabilized with whatever passes for fletching. Despite the crude construction, a Gallows arrow through the throat kills as effectively as any precision-manufactured projectile.\n\nThe bow has become a symbol of the Gray Zone resistance culture — a weapon that the surveillance state literally cannot see. No electronics to detect, no chemical propellant to sniff, no electromagnetic signature to track. A person with a Gallows bow and sufficient skill can kill from rooftop distance and leave no forensic trace that any automated system can process. The kill has to be investigated by humans, and there aren't enough investigators to cover the Gray Zone.",
   "manufacturer": "Street Custom",
   "tier_availability": "Tier 1+",
   "legality": "Unregulated — not classified as a weapon under current GLMZ ordinances",
@@ -15,17 +15,17 @@
     "Improvised ammunition"
   ],
   "specifications": "draw weight: 20-60 kg (varies by construction)\neffective range: 30-60 meters (operator dependent)\narrow velocity: 50-80 m/s\nweight: 1-2 kg\nacoustic signature: Negligible\nelectronic signature: None",
-  "tactical_use": "Silent elimination and harassment in environments where every other weapon would be detected. Shelf archers operate from rooftops and elevated positions, firing into streets and corridors below. The weapon's lack of any electronic signature makes it impossible to trace through automated systems — investigation requires physical evidence and human detective work.",
-  "cultural_context": "The Gallows bow has become a folk icon in the Shelf. Archery practice is a community activity, and skilled archers are respected as defenders. The weapon's name references both its killing capability and the improvised gallows-frame shape of the bow when strung. 'Drawing the Gallows' is Shelf slang for taking a stand against impossible odds.",
+  "tactical_use": "Silent elimination and harassment in environments where every other weapon would be detected. the Gray Zone archers operate from rooftops and elevated positions, firing into streets and corridors below. The weapon's lack of any electronic signature makes it impossible to trace through automated systems — investigation requires physical evidence and human detective work.",
+  "cultural_context": "The Gallows bow has become a folk icon in the Gray Zone. Archery practice is a community activity, and skilled archers are respected as defenders. The weapon's name references both its killing capability and the improvised gallows-frame shape of the bow when strung. 'Drawing the Gallows' is the Gray Zone slang for taking a stand against impossible odds.",
   "known_users": [
-    "Shelf district defenders",
+    "the Gray Zone district defenders",
     "Anti-corporate resistance cells",
     "Individuals who cannot afford or access firearms",
     "At least one vigilante known as 'the Fletcher'"
   ],
   "story_hooks": [
     "A corporate executive was killed by an arrow — a sharpened metal rod fired from a Gallows bow — in the middle of a secured Tier 4 district. Every surveillance system in the area recorded nothing. The arrow came from somewhere that doesn't exist according to the building plans.",
-    "Someone is teaching archery classes in the Shelf, training dozens of residents in Gallows bow construction and marksmanship. The classes are free, the instructor is unknown, and the skill level of the graduates is suspiciously professional."
+    "Someone is teaching archery classes in the Gray Zone, training dozens of residents in Gallows bow construction and marksmanship. The classes are free, the instructor is unknown, and the skill level of the graduates is suspiciously professional."
   ],
   "ammunition_type": [
     "arrow"
@@ -35,7 +35,6 @@
     "weapon",
     "silent",
     "improvised",
-    "shelf",
     "street",
     "resistance",
     "analog",
@@ -49,8 +48,7 @@
     "GLMZ",
     "ShieldTech SB-3 'Groundstrike'",
     "TESSERA PG-2 'Signature'",
-    "The Lakeshore Corridor",
-    "The Shelf"
+    "The Lakeshore Corridor"
   ],
   "physical_description": {
     "visual_profile": "A skeletal, brutalist recurve bow with pronounced curves at both limbs. The riser is a bare amalgamation of welded steel and polymer plates, held together with visible cable ties and industrial rivets. The limbs curve back sharply, almost menacing, giving it a predatory insect silhouette. There's nothing sleek about it — every element screams improvised survival engineering.",
@@ -72,6 +70,6 @@
     "manufacturer_markings": "Unmarked or bearing only the builder's street tag burned into the riser with a heating element. Some Gallows carry initials filed into the limb or welded steel plate, but not for traceability — purely for builder pride. No serial numbers. No regulatory stamps.",
     "condition_typical": "Field-worn and deliberately maintained in that state. Minimal cleaning — rust is armor against corrosion investigation. String shows wear at nocking points, limbs display micro-cracks from stress cycling but remain structurally sound. This is a weapon that looks broken until you draw it and feel the stored energy — then it becomes brutally sophisticated."
   },
-  "image_prompt": "Product photograph of a handmade recurve bow constructed from salvaged automotive leaf springs and industrial steel, riser wrapped in worn fabric tape, bowstring frayed industrial cable. Positioned diagonally across a dark charcoal concrete surface, held at the riser by a gloved hand (black leather, chrome-reinforced knuckles suggesting neo-noir augmentation). Dramatic side-lighting from upper left, casting deep shadows along the limb curves and highlighting the rust patina and welded seams. Background soft-blurred urban neo-noir: distant neon glow suggesting rooftop perch in the Shelf district. Raw, unfinished materials contrasted against sleek gloved augmentation. Gritty, anti-corporate aesthetic. Zero polish, maximum lethality. --ar 3:2 --v 6",
-  "visual_prompt": "Product photograph of a handmade recurve bow constructed from salvaged automotive leaf springs and industrial steel, riser wrapped in worn fabric tape, bowstring frayed industrial cable. Positioned diagonally across a dark charcoal concrete surface, held at the riser by a gloved hand (black leather, chrome-reinforced knuckles suggesting neo-noir augmentation). Dramatic side-lighting from upper left, casting deep shadows along the limb curves and highlighting the rust patina and welded seams. Background soft-blurred urban neo-noir: distant neon glow suggesting rooftop perch in the Shelf district. Raw, unfinished materials contrasted against sleek gloved augmentation. Gritty, anti-corporate aesthetic. Zero polish, maximum lethality. --ar 3:2 --v 6"
+  "image_prompt": "Product photograph of a handmade recurve bow constructed from salvaged automotive leaf springs and industrial steel, riser wrapped in worn fabric tape, bowstring frayed industrial cable. Positioned diagonally across a dark charcoal concrete surface, held at the riser by a gloved hand (black leather, chrome-reinforced knuckles suggesting neo-noir augmentation). Dramatic side-lighting from upper left, casting deep shadows along the limb curves and highlighting the rust patina and welded seams. Background soft-blurred urban neo-noir: distant neon glow suggesting rooftop perch in the the Gray Zone district. Raw, unfinished materials contrasted against sleek gloved augmentation. Gritty, anti-corporate aesthetic. Zero polish, maximum lethality. --ar 3:2 --v 6",
+  "visual_prompt": "Product photograph of a handmade recurve bow constructed from salvaged automotive leaf springs and industrial steel, riser wrapped in worn fabric tape, bowstring frayed industrial cable. Positioned diagonally across a dark charcoal concrete surface, held at the riser by a gloved hand (black leather, chrome-reinforced knuckles suggesting neo-noir augmentation). Dramatic side-lighting from upper left, casting deep shadows along the limb curves and highlighting the rust patina and welded seams. Background soft-blurred urban neo-noir: distant neon glow suggesting rooftop perch in the the Gray Zone district. Raw, unfinished materials contrasted against sleek gloved augmentation. Gritty, anti-corporate aesthetic. Zero polish, maximum lethality. --ar 3:2 --v 6"
 }

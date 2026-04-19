@@ -39,7 +39,7 @@
     "Depression and substance abuse among displaced municipal workers — a quiet crisis with no support infrastructure"
   ],
   "opportunities": [
-    "Affordable, defensible housing in maintained structures — rare in the lower Shelf",
+    "Affordable, defensible housing in maintained structures — rare in the Gray Zone",
     "The Old Watch's institutional knowledge of municipal infrastructure is invaluable — they know where the pipes run, where the tunnels go, how the old city's systems actually work",
     "Ashfeld's jurisdictional grey zone allows operations that would draw attention in corporate territory",
     "The retired first responder population includes people with security, medical, and technical skills that are available for hire",
@@ -95,7 +95,6 @@
     "chase",
     "fire",
     "water",
-    "shelf",
     "circuit"
   ],
   "related_entities": [
@@ -108,5 +107,7 @@
     "Folake Bergqvist-Dlamini",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Mariposa Bustamante-Volkov"
-  ]
+  ],
+  "zone": "Z6",
+  "controllingCorponation": null
 }

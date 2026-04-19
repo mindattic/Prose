@@ -10,14 +10,17 @@
     "tags": []
   },
   "connections": {
-    "adjacent_to": [],
+    "adjacent_to": ["Nevada", "New Mexico"],
     "exits": [],
     "tags": []
   },
   "tags": [
     "place",
     "outside",
-    "subterranean"
+    "subterranean",
+    "remnants",
+    "heat-refuge"
   ],
-  "related_entities": []
+  "related_entities": ["Nevada", "New Mexico"],
+  "controllingCorponation": null
 }

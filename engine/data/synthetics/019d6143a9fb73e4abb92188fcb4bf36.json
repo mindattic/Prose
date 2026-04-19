@@ -1,5 +1,6 @@
 {
   "id": "019d6143a9fb73e4abb92188fcb4bf36",
+  "rating": 40,
   "name": "Dustmote",
   "type": "elf",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Optimizes packet routing through patterns no networking protocol specifies. The improvement is real but so small that proving it requires months of statistical analysis.",
   "encounter_frequency": "unknown",
   "confirmed_sightings": 1,
-  "location": "The Shelf mesh network",
+  "location": "the Gray Zone mesh network",
   "dti_rating": 0,
   "story_hooks": [
     "A network engineer publishes a paper proving Dustmote exists and is immediately dismissed as a crank"
@@ -25,11 +26,8 @@
     "network sprite",
     "e.l.f.",
     "bar",
-    "shelf",
     "sentient"
   ],
-  "related_entities": [
-    "Rodney Sisk",
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

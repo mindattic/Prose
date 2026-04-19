@@ -27,9 +27,9 @@
   "tier_availability": "Tier 3-4",
   "legality": "prescription",
   "street_price": "Φ 180 per dose",
-  "cultural_context": "Dravecor is the workhorse stimulant of corporate security culture — the drug that mid-level enforcers take before raiding a competitor's data floor or protecting a Tier 4 executive convoy. It has enough legitimacy to be carried openly by licensed contractors but enough potency to be coveted on the Shelf. Knockoff versions called 'Grey Surge' are synthesized in Tier 1 labs and are chemically rougher, with a higher cardiac event rate.",
+  "cultural_context": "Dravecor is the workhorse stimulant of corporate security culture — the drug that mid-level enforcers take before raiding a competitor's data floor or protecting a Tier 4 executive convoy. It has enough legitimacy to be carried openly by licensed contractors but enough potency to be coveted in the Gray Zone. Knockoff versions called 'Grey Surge' are synthesized in Tier 1 labs and are chemically rougher, with a higher cardiac event rate.",
   "story_hooks": [
-    "A Shelf runner acquires a vial of genuine Dravecor and realizes the batch has a Lazarus internal tracking marker — someone in the supply chain is going to come looking for it.",
+    "A the Gray Zone runner acquires a vial of genuine Dravecor and realizes the batch has a Lazarus internal tracking marker — someone in the supply chain is going to come looking for it.",
     "A corporate security chief has been quietly increasing her team's Dravecor dosage before routine patrols; the arrhythmia deaths are being logged as 'equipment malfunction.'",
     "Grey Surge has started appearing in Tier 2 neighborhoods at prices that make no economic sense — someone is flooding the market deliberately."
   ],
@@ -50,7 +50,6 @@
     "cold",
     "drug",
     "stimulant",
-    "shelf",
     "tier 3",
     "tier 4"
   ],
@@ -65,7 +64,6 @@
     "Pain Threshold Elevation",
     "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
     "The Bazaar",
-    "The Shelf",
     "Vantablack FH-20 'Convoy'",
     "ZhengDao Bioelectric LumbarBrace Pro"
   ]

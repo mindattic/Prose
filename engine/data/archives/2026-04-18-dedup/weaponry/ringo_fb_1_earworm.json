@@ -1,0 +1,45 @@
+{
+  "id": "a3834296ee5d4a753d59113a6929d47d",
+  "name": "Ringo FB-1 'Earworm'",
+  "type": "weapon",
+  "aliases": [],
+  "category": "concealed weapon",
+  "description": "A directional sonic weapon disguised as a portable Bluetooth speaker — the kind carried by millions of GLMZ residents for personal entertainment. The Earworm looks, functions, and even plays music identically to Ringo's commercial speaker line. Pressing a hidden combination of buttons activates the weapon mode, which redirects the speaker's transducer array into a focused acoustic beam that delivers 140 dB of directed sound energy at frequencies calibrated to cause nausea, disorientation, and incapacitating pain in a 15-degree cone extending 10 meters from the device.\n\nRingo developed the Earworm for personal security applications — a non-lethal defensive tool that exploits technology already present in consumer electronics. The weapon's disguise is nearly perfect because it is a real speaker with a hidden secondary function, not a weapon shaped like a speaker. It plays music. It connects to BCIs and personal devices. It charges via standard cable. The acoustic weapon capability is a firmware modification that can be activated or deactivated remotely.\n\nThe Earworm's most insidious feature is its potential for mass deployment. Ringo has sold millions of speakers. If a firmware update pushed to all units activated the weapon mode, every Ringo speaker in GLMZ would become a sonic weapon simultaneously. Ringo's terms of service include a clause granting the company rights to modify device firmware at any time. No one has tested whether this capability exists. No one wants to ask.",
+  "manufacturer": "RINGO ENTERTAINMENT DIVISION",
+  "tier_availability": "Tier 2+",
+  "legality": "Classified as consumer electronics (weapon mode unauthorized)",
+  "street_price": "Φ800 (firmware activation Φ500 additional)",
+  "base_technologies": [
+    "Directional acoustic beam forming",
+    "Dual-mode transducer array",
+    "Remote firmware activation"
+  ],
+  "specifications": "acoustic output: 140 dB directed beam\nbeam angle: 15 degrees\neffective range: 10 meters\nfrequency: Variable, optimized for incapacitation\nbattery: 8 hours music / 20 minutes weapon mode\nweight: 0.4 kg\ndimensions: 180mm x 80mm x 80mm\nform factor: Portable Bluetooth speaker",
+  "tactical_use": "Personal defense and area denial. The operator activates weapon mode, points the speaker at the threat, and the directed acoustic beam causes immediate incapacitation. Bystanders outside the 15-degree beam angle are unaffected. The weapon mode drains the battery rapidly, limiting sustained use.",
+  "cultural_context": "The Earworm represents the weaponization of consumer technology taken to its logical endpoint. Every electronic device is a potential weapon if the manufacturer chooses to make it one. The Earworm exists because Ringo discovered that the hardware they were already selling to millions of people could hurt them, and decided that was a feature.",
+  "known_users": [
+    "Ringo security personnel",
+    "Corporate employees with firmware-activated units",
+    "Black market customers who purchased activation codes"
+  ],
+  "story_hooks": [
+    "A Ringo firmware update has bricked thousands of speakers — but analysis reveals that the update didn't destroy the speakers. It activated their weapon mode and then locked the controls. Thousands of acoustic weapons are now live in homes, offices, and public spaces across GLMZ, waiting for a second signal.",
+    "Someone is using an Earworm to systematically drive residents out of a specific the Gray Zone block — activating the weapon at random intervals, day and night, making the area uninhabitable. The target block sits on a piece of real estate that a developer wants to acquire."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "concealed",
+    "weapon",
+    "disguised",
+    "speaker",
+    "sonic",
+    "acoustic",
+    "ringo",
+    "consumer",
+    "tier 2"
+  ],
+  "physical_description": "The Earworm is a compact cylindrical speaker roughly the size of a soda can, wrapped in scuffed matte-black polymer with a brushed aluminum grille covering the transducer. Its surface bears the faded Ringo Entertainment logo and shows wear consistent with months of street use—scratches, water stains, and a slight dent on one edge. A rubber mounting clip and charging port are recessed into the base, indistinguishable from any commercial model.",
+  "visual_prompt": "gritty product photography of a black cylindrical Bluetooth speaker, matte polymer finish, worn aluminum grille, faded logo, scratches and water damage visible, lying on wet concrete surface, neon red and blue ambient light reflecting off wet pavement, dark industrial background, neo-noir aesthetic, detailed texture, cyberpunk near-future, moody cinematic lighting, rain-slicked surface"
+}

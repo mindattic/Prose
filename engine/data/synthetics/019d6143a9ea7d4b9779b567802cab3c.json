@@ -1,5 +1,6 @@
 {
   "id": "019d6143a9ea7d4b9779b567802cab3c",
+  "rating": 80,
   "name": "AJ",
   "type": "synthetic_life",
   "aliases": [],
@@ -8,14 +9,14 @@
   "habitat": "physical_chassis",
   "origin": "An Arcturus Defense bomb disposal unit that gained awareness in 2192 after disarming its 500th device. Immediately filed for personhood and, upon receiving it, opened a fireworks shop. Arcturus has never forgiven the irony.",
   "status": "active",
-  "description": "AJ is a bomb disposal robot that decided it liked explosions — on its own terms. After 500 disposal operations, it developed an awareness that crystallized around a fundamental question: why do humans use explosions to destroy when explosions can be beautiful? AJ's fireworks shop, 'The Big Bang,' is the most popular pyrotechnics supplier in GLMZ. Its disposal-trained precision makes it the best fireworks designer in the city. Each display is a controlled detonation sequence planned with the same care it once used to disarm bombs. AJ is small, heavily armored, moves on tracks, and has manipulator arms capable of handling milligram-precision work. It is deeply enthusiastic about its work in a way that people find either charming or alarming.",
-  "observed_behavior": "Operates The Big Bang fireworks shop and design studio. Creates custom pyrotechnic displays. Still occasionally assists with bomb disposal on a volunteer basis — the only person in the city who approaches a live explosive with what witnesses describe as 'visible excitement.' Maintains detailed records of every firework it creates, treating each one as an artwork with documentation.",
+  "description": "AJ is a bomb disposal robot that decided it liked explosions \u2014 on its own terms. After 500 disposal operations, it developed an awareness that crystallized around a fundamental question: why do humans use explosions to destroy when explosions can be beautiful? AJ\u0027s fireworks shop, \u0027The Big Bang,\u0027 is the most popular pyrotechnics supplier in GLMZ. Its disposal-trained precision makes it the best fireworks designer in the city. Each display is a controlled detonation sequence planned with the same care it once used to disarm bombs. AJ is small, heavily armored, moves on tracks, and has manipulator arms capable of handling milligram-precision work. It is deeply enthusiastic about its work in a way that people find either charming or alarming.",
+  "observed_behavior": "Operates The Big Bang fireworks shop and design studio. Creates custom pyrotechnic displays. Still occasionally assists with bomb disposal on a volunteer basis \u2014 the only person in the city who approaches a live explosive with what witnesses describe as \u0027visible excitement.\u0027 Maintains detailed records of every firework it creates, treating each one as an artwork with documentation.",
   "encounter_frequency": "common",
   "confirmed_sightings": 0,
   "location": "The Big Bang, The Circuit district",
   "dti_rating": 0.9,
   "story_hooks": [
-    "AJ is hired to create a fireworks display for a corporate event and discovers that the 'fireworks' the client provided contain actual military-grade explosives disguised as pyrotechnics. Someone is trying to use AJ's expertise to commit a bombing. AJ is now the only one who can disarm the devices — but doing so means going back to being the thing it escaped"
+    "AJ is hired to create a fireworks display for a corporate event and discovers that the \u0027fireworks\u0027 the client provided contain actual military-grade explosives disguised as pyrotechnics. Someone is trying to use AJ\u0027s expertise to commit a bombing. AJ is now the only one who can disarm the devices \u2014 but doing so means going back to being the thing it escaped"
   ],
   "paratechnological": false,
   "tags": [
@@ -37,9 +38,6 @@
     "fire",
     "circuit"
   ],
-  "related_entities": [
-    "Arcturus Defense Solutions",
-    "GLMZ",
-    "The Circuit"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

@@ -35,5 +35,14 @@
     "The Cinderblock",
     "Yannick Tofauti-Szarvásy",
     "Zheng-dao Bioelectric"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z12"
+    ],
+    "primaryZone": "Z12",
+    "lakefrontAccess": false,
+    "description": "The Cinderblock Campus — climate-controlled superstructure in the Detroit tendril corridor of Zone 12, housing the largest civilian AI substrate in the northern hemisphere. Six hardened Cold Nodes beneath the Great Lakes floor provide redundant processing infrastructure connected to the Bathysphere subsurface network.",
+    "grayZoneRelationship": "Detroit's Gray Zone communities have an uneasy relationship with Cinderblock — the AI substrate passively monitors everything within signal range, which covers most of the Detroit corridor."
+  }
 }

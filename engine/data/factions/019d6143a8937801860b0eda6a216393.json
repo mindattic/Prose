@@ -4,9 +4,9 @@
   "name": "The Iron Lotus",
   "aliases": [],
   "motto": "We take care of our own.",
-  "description": "The Iron Lotus is organized crime, and it would like you to know that it's\nproviding a service. In the vacuum left by Meridian's absent public sector — no\nreal police below the Core, no social services worth the name, no courts that a\nShelf resident can access — the Iron Lotus stepped in and built a parallel\ngovernance structure made of protection rackets, patronage networks, and a very\nfirm understanding of who owns what. They run the Shelf's economy with the\nefficiency of a corporation and the personal touch of a neighborhood association\nthat will break your legs if you miss a payment.\n\nThe thing that makes the Iron Lotus complicated — and the thing that makes Kyle's\nrelationship with them complicated — is that they're not wrong about being\nnecessary. The free clinics they fund are the only healthcare most Shelf residents\nwill ever see. Their protection, while expensive, is protection — without it,\nthe Shelf would be pure chaos instead of managed chaos. They arbitrate disputes,\nmaintain a rough order, and ensure that the markets function. They are, in the\nmost cynical and literal sense, the social safety net of the lower tiers. The\nfact that the net is woven from extortion, smuggling, and occasional murder is\na moral problem that every Shelf resident has learned to file under \"the way\nthings are.\"\n\nThe Lotus is hierarchical, traditionalist, and ruthless. Its leadership — a\ncouncil of senior members called the Stems — maintains control through a\ncombination of loyalty, fear, and the simple economic reality that opposing them\nmeans losing access to everything they provide. They traffic in augments (some\nstolen, some counterfeit, some salvaged from the dead), run smuggling operations\nthrough Old Harbor, broker contract killing (Kyle's occasional employer), and\nmanage a loan-sharking operation that keeps half the Shelf in permanent debt.\nThey are parasites. They are also the immune system. The Shelf can't live with\nthem and would die without them, and that is exactly how they like it.",
+  "description": "The Iron Lotus is organized crime, and it would like you to know that it's\nproviding a service. In the vacuum left by Meridian's absent public sector — no\nreal police below the Core, no social services worth the name, no courts that a\nthe sprawl resident can access — the Iron Lotus stepped in and built a parallel\ngovernance structure made of protection rackets, patronage networks, and a very\nfirm understanding of who owns what. They run the Gray Zone's economy with the\nefficiency of a corporation and the personal touch of a neighborhood association\nthat will break your legs if you miss a payment.\n\nThe thing that makes the Iron Lotus complicated — and the thing that makes Kyle's\nrelationship with them complicated — is that they're not wrong about being\nnecessary. The free clinics they fund are the only healthcare most the Gray Zone residents\nwill ever see. Their protection, while expensive, is protection — without it,\nthe sprawl would be pure chaos instead of managed chaos. They arbitrate disputes,\nmaintain a rough order, and ensure that the markets function. They are, in the\nmost cynical and literal sense, the social safety net of the lower tiers. The\nfact that the net is woven from extortion, smuggling, and occasional murder is\na moral problem that every the Gray Zone resident has learned to file under \"the way\nthings are.\"\n\nThe Lotus is hierarchical, traditionalist, and ruthless. Its leadership — a\ncouncil of senior members called the Stems — maintains control through a\ncombination of loyalty, fear, and the simple economic reality that opposing them\nmeans losing access to everything they provide. They traffic in augments (some\nstolen, some counterfeit, some salvaged from the dead), run smuggling operations\nthrough Old Harbor, broker contract killing (Kyle's occasional employer), and\nmanage a loan-sharking operation that keeps half the Gray Zone in permanent debt.\nThey are parasites. They are also the immune system. the Gray Zone can't live with\nthem and would die without them, and that is exactly how they like it.",
   "ideology": "Pragmatic feudalism. The Iron Lotus believes in hierarchy, loyalty, and the\ntransactional nature of power. They don't pretend the world is fair — they\nbelieve it's a jungle and they're the apex predator of their particular stretch\nof it. There's a code of honor, or at least a code of conduct: don't harm\ncivilians who pay their dues, don't kill children, keep your word when dealing\nwith Lotus business. Whether this code reflects genuine ethics or just good\nbusiness practice is a question the Stems would find irrelevant. Honor and\nprofit are the same thing when you're the one defining honor.",
-  "territory": "The Shelf (primary), Old Harbor smuggling routes, and a growing footprint in the Circuit.",
+  "territory": "the Gray Zone (primary), Old Harbor smuggling routes, and a growing footprint in the Circuit.",
   "leadership": "",
   "methods": [
     "Protection rackets — pay your dues or lose access to Lotus services (and possibly your kneecaps)",
@@ -18,12 +18,12 @@
     "Corruption — Lotus money reaches into Axiom Security's lower ranks, buying blind eyes and advance warning of raids"
   ],
   "resources": [
-    "Control of the Shelf's informal economy — markets, lending, protection",
+    "Control of the Gray Zone's informal economy — markets, lending, protection",
     "The free clinics — healthcare as leverage and genuine community service simultaneously",
     "Smuggling networks through Old Harbor's waterways",
     "A stable of contract operators, including freelancers like Kyle",
     "Augment inventory — stolen, salvaged, and counterfeit tech for resale",
-    "Intelligence network — the Lotus knows what happens on the Shelf before anyone else",
+    "Intelligence network — the Lotus knows what happens in the Gray Zone before anyone else",
     "Muscle — the Thorns are well-armed, well-augmented, and well-motivated",
     "Community dependence — the most powerful resource of all"
   ],
@@ -36,7 +36,7 @@
     "Internal Lotus politics — a faction within the Stems wants to expand into more violent territory",
     "The Root's identity — who actually runs the Iron Lotus, and what do they want?",
     "A Lotus defector who knows too much and needs Kyle's protection — from the Lotus",
-    "The debt ledger — the Lotus's records of who owes what, a document that could liberate or destroy half the Shelf",
+    "The debt ledger — the Lotus's records of who owes what, a document that could liberate or destroy half the Gray Zone",
     "The uncomfortable question: if you removed the Iron Lotus, what would replace them? The answer might be worse."
   ],
   "tags": [
@@ -59,13 +59,11 @@
     "moral",
     "ethics",
     "water",
-    "shelf",
     "circuit",
     "old harbor"
   ],
   "related_entities": [
     "Frost Boudiaf",
-    "The Shelf",
     "Ash Haugen-Malhotra-Björnsdóttir",
     "Arcturus Defense Solutions Thermal Longsword TL-3 'Cauterizer'",
     "Meridian Core",

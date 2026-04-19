@@ -31,7 +31,7 @@
   "tier_availability": "Military only",
   "cost": "Φ 380,000 per kg — restricted, military contract only",
   "story_hooks": [
-    "A Vesperite-NR panel has surfaced in a Shelf-tier black market, cut into small squares and sold as 'ghost tiles' — someone raided a military shipment, and both the military and the thieves are moving through the lower tiers looking for it.",
+    "A Vesperite-NR panel has surfaced in a the Gray Zone-tier black market, cut into small squares and sold as 'ghost tiles' — someone raided a military shipment, and both the military and the thieves are moving through the lower tiers looking for it.",
     "A Spire architect incorporated Vesperite-NR into a private residence as an aesthetic feature — the owner has since disappeared, and the house appears empty from every sensor and visual angle, making investigation nearly impossible.",
     "Apex Nanofabrication's lead resonance engineer claims the negative-index lattice occasionally exhibits anomalous behavior — objects cloaked for extended periods seem to develop minor quantum decoherence effects in nearby organic tissue."
   ],
@@ -48,7 +48,6 @@
     "armor",
     "stealth",
     "drone",
-    "shelf",
     "spire"
   ],
   "related_entities": [

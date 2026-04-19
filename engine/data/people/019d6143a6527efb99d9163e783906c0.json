@@ -6,11 +6,11 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Protection racket enforcer and neighborhood tax collector, The Shelf lower levels",
+  "role": "Protection racket enforcer and neighborhood tax collector, the Gray Zone lower levels",
   "age": 44,
   "status": "active",
-  "location": "The Shelf, lower levels — operates a rotating circuit of Burnside Pocket and Blackpipe Corridor businesses, near Pulaski and Chicago Ave",
-  "description": "Wren Fassi-Wojciechowski is a big woman and she has never apologized for it — Tanzanian-Polish heritage, nearly six feet, broad through the shoulders, with a body that carries its strength like furniture: solidly, without trying. Her hair is worn in thick locs shot through with copper wire that glints when she moves, and her skin is very dark and very smooth except for a patch of scarring on her left jaw where she took something ceramic in a fight eleven years ago and kept it as a conversation piece. She dresses practically and well — not flashy, but never cheap — and has a habit of touching the scarring when she's working something out.\n\nShe is the neighborhood's collector for the Shelf Compact, an informal protection network that has run the lower levels since before she was born, and she does this job with a thoroughness that people mistake for menace until they know her better. She is not cruel. She is extremely serious. The businesses in her circuit pay on time and have done so for seven years, not because they fear her specifically but because they have seen what she does when accounts fall behind, which is to sit down with the owner and explain — in considerable detail, with full eye contact — exactly how much worse their situation could become and exactly how much it will cost her personally to allow it not to. She has a talent for making the math of compliance feel like mercy.",
+  "location": "the Gray Zone, lower levels — operates a rotating circuit of Burnside Pocket and Blackpipe Corridor businesses, near Pulaski and Chicago Ave",
+  "description": "Wren Fassi-Wojciechowski is a big woman and she has never apologized for it — Tanzanian-Polish heritage, nearly six feet, broad through the shoulders, with a body that carries its strength like furniture: solidly, without trying. Her hair is worn in thick locs shot through with copper wire that glints when she moves, and her skin is very dark and very smooth except for a patch of scarring on her left jaw where she took something ceramic in a fight eleven years ago and kept it as a conversation piece. She dresses practically and well — not flashy, but never cheap — and has a habit of touching the scarring when she's working something out.\n\nShe is the neighborhood's collector for the Gray Zone Compact, an informal protection network that has run the lower levels since before she was born, and she does this job with a thoroughness that people mistake for menace until they know her better. She is not cruel. She is extremely serious. The businesses in her circuit pay on time and have done so for seven years, not because they fear her specifically but because they have seen what she does when accounts fall behind, which is to sit down with the owner and explain — in considerable detail, with full eye contact — exactly how much worse their situation could become and exactly how much it will cost her personally to allow it not to. She has a talent for making the math of compliance feel like mercy.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -22,7 +22,7 @@
     },
     "core_fears": [
       "Becoming her predecessor, who eventually started enjoying the fear",
-      "The Shelf Compact being absorbed by a larger organization that doesn't understand the neighborhood"
+      "the Gray Zone Compact being absorbed by a larger organization that doesn't understand the neighborhood"
     ],
     "core_desires": [
       "To run her circuit like a system that works — predictable, fair by her definition, sustainable",
@@ -53,13 +53,13 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A business on her circuit is being targeted by a different criminal element that is not the Compact — she needs information about who is moving into the lower Shelf and why, and she can pay in access and goodwill",
+    "A business on her circuit is being targeted by a different criminal element that is not the Compact — she needs information about who is moving into the Gray Zone and why, and she can pay in access and goodwill",
     "One of 'her' business owners has died and left the establishment to a young relative who has no idea about the Compact arrangement — Malaika is trying to handle this as delicately as possible before Uncle hears about the disruption"
   ],
-  "narrative_function": "Antagonist or uneasy ally depending on whether player characters are in her territory, local power figure who mediates disputes, information source about the Shelf's economic underbelly, demonstration that protection rackets have their own social logic",
+  "narrative_function": "Antagonist or uneasy ally depending on whether player characters are in her territory, local power figure who mediates disputes, information source about the Gray Zone's economic underbelly, demonstration that protection rackets have their own social logic",
   "augmentations": "Subdermal impact plating — forearms and sternum, rated for small-arms blunt trauma. Joint-assist servos in both knees (injury rehabilitation, functional advantage). No cosmetic mods.",
   "daily_life": "Rises at five, exercises for ninety minutes, eats a large breakfast, walks her circuit to collect weekly payments and check on 'her' businesses, is home by eight in the evening, cooks dinner, watches old sports broadcasts, sleeps.",
-  "affiliation": "The Shelf Compact (established lower-level protection network); informal loyalty to the Compact's senior figure, an elderly man she calls Uncle who she has never met in person; Switchblade Alley",
+  "affiliation": "the Gray Zone Compact (established lower-level protection network); informal loyalty to the Compact's senior figure, an elderly man she calls Uncle who she has never met in person; Switchblade Alley",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -176,7 +176,7 @@
     "Sentinel": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -186,7 +186,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2156 — Born in Burnside Pocket, lower Shelf, to a Tanzanian transit worker and a Polish food vendor",
+      "event": "2156 — Born in Burnside Pocket, the Gray Zone, to a Tanzanian transit worker and a Polish food vendor",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -194,7 +194,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2174 — Begins working informally for the Shelf Compact as a message carrier at eighteen",
+      "event": "2174 — Begins working informally for the Gray Zone Compact as a message carrier at eighteen",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -238,7 +238,6 @@
     "Burnside Pocket",
     "The Meridian Compact for Economic Justice",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "The Shelf",
     "The Heritage Vault",
     "GLMZ",
     "The Gradient Compact",
@@ -248,7 +247,7 @@
     "IRONLIMB Spectre SV-4 Stealth Arm",
     "Flux Strömqvist-Villalobos"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "A genetic synthesis of East Asian (33.1%), North African (23.5%), and Eastern European (22.7%) ancestry, with secondary contributions from Southeast Asian (9.1%), Sub-Saharan African (7.1%), and Hispanic/Latin American (4.5%) lineages — the living embodiment of the Ubiquitous Diaspora. Her facial structure blends the angular planes and high cheekbones characteristic of East Asian heritage with the broader, warmer facial geometry of North African and Sub-Saharan ancestry. Eastern European bone structure adds width to her face and strength to her jaw. Southeast Asian and Hispanic influences soften edges throughout. The result is a uniquely calibrated fusion: sharp where East Asian influence dominates the eye area, warmed and broadened by African heritage across the cheeks and lower face, with the solid architectural quality of Slavic ancestry anchoring her overall presence.",
     "height_cm": 183,

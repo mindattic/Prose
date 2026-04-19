@@ -3,7 +3,7 @@
   "type": "place",
   "name": "The Calorie Counter",
   "aliases": [],
-  "description": "A nutrient paste dispensary in Racine that takes the concept to its logical extreme: each tube is labeled not with a flavor but with its exact caloric and nutritional content. Tube 2200 has 2200 calories. Tube 1500 has 1500. The paste tastes like chalky vanilla regardless of which tube you pick, and costs Φ0.50 per 500 calories. The owner, Dmitri Svensson-Achebe, is a former nutritional scientist who lost his corporate position and decided the Shelf needed efficient fuel, not pretend food. He is correct and joyless about it.",
+  "description": "A nutrient paste dispensary in Racine that takes the concept to its logical extreme: each tube is labeled not with a flavor but with its exact caloric and nutritional content. Tube 2200 has 2200 calories. Tube 1500 has 1500. The paste tastes like chalky vanilla regardless of which tube you pick, and costs Φ0.50 per 500 calories. The owner, Dmitri Svensson-Achebe, is a former nutritional scientist who lost his corporate position and decided the Gray Zone needed efficient fuel, not pretend food. He is correct and joyless about it.",
   "atmosphere": {
     "sights": [],
     "sounds": [],
@@ -17,7 +17,7 @@
     "tags": []
   },
   "frequented_by": [
-    "Racine Shelf residents",
+    "Racine the Gray Zone residents",
     "Long-haul corridor travelers",
     "People who view food as mathematics"
   ],
@@ -34,5 +34,7 @@
   ],
   "related_entities": [
     "Folake Bergqvist-Dlamini"
-  ]
+  ],
+  "zone": "Z7",
+  "controllingCorponation": null
 }

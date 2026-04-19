@@ -1,6 +1,6 @@
 {
   "id": "c9d2e5f3a1b4078823c4d5e6f7a8b901",
-  "name": "Coldwall Combat Boot (Shelf Cut)",
+  "name": "Coldwall Combat Boot (the Gray Zone Cut)",
   "type": "apparel",
   "category": "footwear",
   "description": "A mid-calf boot built from scrap leather panels stitched together with visible, uneven seams — some waxed thread, some monofilament pulled from cable housings. The lacing is mismatched: two different eyelet systems, one side using a knotted cord in place of a missing hook. The soles are thick and aggressive, cut from truck tire tread and bonded with contact cement.",
@@ -12,10 +12,10 @@
     "contact cement"
   ],
   "functionality": "Exceptional grip on wet metal and concrete. Ankle support is moderate.",
-  "what_it_says": "You made these yourself, or you know someone who did. The Shelf takes care of its own.",
+  "what_it_says": "You made these yourself, or you know someone who did. the Gray Zone takes care of its own.",
   "worn_by": [
     "gang members",
-    "Shelf craftspeople",
+    "the Gray Zone craftspeople",
     "anyone who can't get to a market"
   ],
   "manufacturer": "Street-made (no brand)",
@@ -24,7 +24,7 @@
   "gene_compatible": false,
   "story_hooks": [
     "The leather panels came from at least three different sources — one strip is stamped with a corporate access badge logo.",
-    "Someone in the Shelf is known for their distinctive stitching pattern. These boots can be traced back to them."
+    "Someone in the Gray Zone is known for their distinctive stitching pattern. These boots can be traced back to them."
   ],
   "tags": [
     "apparel",
@@ -32,13 +32,10 @@
     "tier 1",
     "combat boot",
     "handmade",
-    "scrap",
-    "shelf"
+    "scrap"
   ],
   "parent_corponation": "",
-  "related_entities": [
-    "The Shelf"
-  ],
+  "related_entities": [],
   "physical_description": {
     "visual_profile": "Brutalist, asymmetrical silhouette. Mid-calf height with a heavy, chunky profile. Deliberately crude construction reads as both functional and hostile—a boot that announces survival over aesthetics. The visible patchwork of leather panels creates an organic, almost modular appearance.",
     "fit": "Snug around the ankle with reinforced structure, relaxed through the calf to accommodate layered clothing or protective wraps. The sole is rigid and unbending—designed for standing, not grace.",

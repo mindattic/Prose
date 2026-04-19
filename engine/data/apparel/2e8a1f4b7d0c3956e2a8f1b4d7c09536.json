@@ -1,9 +1,9 @@
 {
   "id": "2e8a1f4b7d0c3956e2a8f1b4d7c09536",
-  "name": "Shelf Standard Rain Poncho",
+  "name": "the Gray Zone Standard Rain Poncho",
   "type": "apparel",
   "category": "outerwear",
-  "description": "A shapeless pull-over poncho in heavy-duty recycled polyurethane, available in grey, olive, and a faded rust-orange. It covers from the crown of the head to mid-thigh, has a single drawstring hood, and two slash pockets that are more or less watertight. The seams are heat-welded rather than sewn. It folds into its own small pouch. On the Shelf, where covered transit is patchy and the lakefront weather comes in fast, this is a survival item as much as a garment.\n\nThese are manufactured by several competing Shelf-adjacent micro-operations, all producing nearly identical product at the lowest possible price point. Some are stamped with brand names — Greycoast, Dura-Lo, Westpont Basics — that may or may not represent actual ongoing companies. Quality varies. The orange ones are slightly better-made than the others, according to a persistent Shelf rumor that may or may not have any basis in fact.",
+  "description": "A shapeless pull-over poncho in heavy-duty recycled polyurethane, available in grey, olive, and a faded rust-orange. It covers from the crown of the head to mid-thigh, has a single drawstring hood, and two slash pockets that are more or less watertight. The seams are heat-welded rather than sewn. It folds into its own small pouch. On the Gray Zone, where covered transit is patchy and the lakefront weather comes in fast, this is a survival item as much as a garment.\n\nThese are manufactured by several competing the Gray Zone-adjacent micro-operations, all producing nearly identical product at the lowest possible price point. Some are stamped with brand names — Greycoast, Dura-Lo, Westpont Basics — that may or may not represent actual ongoing companies. Quality varies. The orange ones are slightly better-made than the others, according to a persistent the Gray Zone rumor that may or may not have any basis in fact.",
   "tier_association": "Tier 1",
   "materials": [
     "recycled polyurethane",
@@ -11,21 +11,21 @@
     "nylon drawstring"
   ],
   "functionality": "",
-  "what_it_says": "You are on the Shelf or close to it. You bought this because you had to. You might be embarrassed by it or you might not care at all.",
+  "what_it_says": "You are in the Gray Zone or close to it. You bought this because you had to. You might be embarrassed by it or you might not care at all.",
   "worn_by": [
-    "Shelf residents",
+    "the Gray Zone residents",
     "day laborers",
     "the very poor",
     "anyone caught without better options",
     "Tier 2 workers in hazardous wet environments"
   ],
-  "manufacturer": "Various Shelf-adjacent micro-manufacturers (Greycoast, Dura-Lo, Westpont Basics)",
+  "manufacturer": "Various the Gray Zone-adjacent micro-manufacturers (Greycoast, Dura-Lo, Westpont Basics)",
   "price_range": "Φ15",
   "aug_compatible": false,
   "gene_compatible": false,
   "story_hooks": [
-    "A body was found wearing one of these — the manufacturing stamp on the inside identifies a specific Shelf block production run, which could pinpoint where the victim lived",
-    "Someone has been distributing these to Shelf residents for free, with a small symbol stamped inside each one — nobody knows who or why",
+    "A body was found wearing one of these — the manufacturing stamp on the inside identifies a specific the Gray Zone block production run, which could pinpoint where the victim lived",
+    "Someone has been distributing these to the Gray Zone residents for free, with a small symbol stamped inside each one — nobody knows who or why",
     "A Tier 4 fashion house released a 'deconstructed homage' to this poncho for Φ2,400 and the feeds are furious"
   ],
   "tags": [
@@ -36,17 +36,15 @@
     "rain gear",
     "no-tech",
     "survival wear",
-    "shelf",
     "cheap"
   ],
   "parent_corponation": "",
   "related_entities": [
     "Brecken Yılmaz-Osei",
-    "Sulfur Crown Agriculture",
-    "The Shelf"
+    "Sulfur Crown Agriculture"
   ],
   "physical_description": {
-    "visual_profile": "A formless, utilitarian silhouette that drapes loosely from shoulders to mid-thigh, reading as pure function over form. The poncho creates a tent-like profile that obscures the wearer's body entirely—deliberately anonymous and mass-produced looking. On the Shelf, this reads as survival kit, not fashion.",
+    "visual_profile": "A formless, utilitarian silhouette that drapes loosely from shoulders to mid-thigh, reading as pure function over form. The poncho creates a tent-like profile that obscures the wearer's body entirely—deliberately anonymous and mass-produced looking. On the Gray Zone, this reads as survival kit, not fashion.",
     "fit": "Completely oversized and shapeless—designed to layer over heavy clothing or augmentation rigs without constraint. The drawstring hood cinches at the crown but the body hangs baggy and unrestricted. Mobility is prioritized over silhouette.",
     "primary_material": "Heavy-duty recycled polyurethane—dense, chemical-smelling, industrial. Waterproof but plasticky, with a slight sheen that shows dirt and hand oils easily.",
     "texture": "Smooth but with a subtle granular quality from recycled content. Heat-welded seams create visible ridges that catch light. Slightly stiff when new, becoming more pliable with weathering. Prone to cracking at stress points.",
@@ -60,10 +58,10 @@
       "Crown opening reinforced to prevent tearing",
       "Micro-brand stamps (Greycoast, Dura-Lo, Westpont Basics) often faded or partially illegible"
     ],
-    "tier_indicator": "Tier 4–5. This is working-poor and sub-grade equipment. No corpo would wear it unless deep undercover. It signals economic precarity, transit dependency, and Shelf origin.",
-    "cultural_context": "Shelf dweller, transit worker, refugee, or anyone living in the ungoverned zones of the GLMZ. Wearing one announces you're used to weather, don't have access to climate-controlled spaces, and need waterproofing more than aesthetics. Also worn by corpo field teams doing intentional slumming.",
+    "tier_indicator": "Tier 4–5. This is working-poor and sub-grade equipment. No corpo would wear it unless deep undercover. It signals economic precarity, transit dependency, and the Gray Zone origin.",
+    "cultural_context": "the Gray Zone dweller, transit worker, refugee, or anyone living in the ungoverned zones of the GLMZ. Wearing one announces you're used to weather, don't have access to climate-controlled spaces, and need waterproofing more than aesthetics. Also worn by corpo field teams doing intentional slumming.",
     "condition_typical": "Worn examples show weathered seams, micro-cracking along folds, faded color, and accumulated dirt in the heat-sealed ridge-lines. Some show small patches where the material has split. The drawstring cord frays. Despite this, they remain functional—the design is built for abuse."
   },
-  "image_prompt": "A tired Shelf dweller in a faded grey Shelf Standard Rain Poncho, photographed in heavy rain under the shadow of an elevated transit line in the GLMZ industrial sector. The poncho drapes shapeless and utilitarian, drawstring hood tight around their head, obscuring their face partially. Visible augmentation seams on their neck/shoulder suggest military-grade mods. Dark, moody overhead lighting casts the scene in cool blues and greys. The background shows stacked shipping containers and water pooling on cracked pavement. The texture of the recycled polyurethane catches the wet light. Cinematic, gritty neo-noir documentary style. --ar 2:3 --v 6",
-  "visual_prompt": "A tired Shelf dweller in a faded grey Shelf Standard Rain Poncho, photographed in heavy rain under the shadow of an elevated transit line in the GLMZ industrial sector. The poncho drapes shapeless and utilitarian, drawstring hood tight around their head, obscuring their face partially. Visible augmentation seams on their neck/shoulder suggest military-grade mods. Dark, moody overhead lighting casts the scene in cool blues and greys. The background shows stacked shipping containers and water pooling on cracked pavement. The texture of the recycled polyurethane catches the wet light. Cinematic, gritty neo-noir documentary style. --ar 2:3 --v 6"
+  "image_prompt": "A tired the Gray Zone dweller in a faded grey the Gray Zone Standard Rain Poncho, photographed in heavy rain under the shadow of an elevated transit line in the GLMZ industrial sector. The poncho drapes shapeless and utilitarian, drawstring hood tight around their head, obscuring their face partially. Visible augmentation seams on their neck/shoulder suggest military-grade mods. Dark, moody overhead lighting casts the scene in cool blues and greys. The background shows stacked shipping containers and water pooling on cracked pavement. The texture of the recycled polyurethane catches the wet light. Cinematic, gritty neo-noir documentary style. --ar 2:3 --v 6",
+  "visual_prompt": "A tired the Gray Zone dweller in a faded grey the Gray Zone Standard Rain Poncho, photographed in heavy rain under the shadow of an elevated transit line in the GLMZ industrial sector. The poncho drapes shapeless and utilitarian, drawstring hood tight around their head, obscuring their face partially. Visible augmentation seams on their neck/shoulder suggest military-grade mods. Dark, moody overhead lighting casts the scene in cool blues and greys. The background shows stacked shipping containers and water pooling on cracked pavement. The texture of the recycled polyurethane catches the wet light. Cinematic, gritty neo-noir documentary style. --ar 2:3 --v 6"
 }

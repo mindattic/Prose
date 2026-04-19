@@ -5,7 +5,7 @@
   "aliases": [
     "Corridor"
   ],
-  "description": "A stretch of hallway in a Shelf residential tower in Humboldt Park that contains twenty-three vending machines, each stocked by a different person, each selling a different food item. One machine sells tamales. Another sells dumplings. Another sells calorie bars. Another sells, inexplicably, cupcakes. Over the course of six years, The Corridor evolved from a convenience into a community — residents gather in the hallway to eat, talk, trade, and argue about whose machine is best. There are no seats, so people sit on the floor, on overturned crates, on each other. The hallway smells like twenty-three different cuisines simultaneously. Nobody planned The Corridor. It planned itself.",
+  "description": "A stretch of hallway in a the Gray Zone residential tower in Humboldt Park that contains twenty-three vending machines, each stocked by a different person, each selling a different food item. One machine sells tamales. Another sells dumplings. Another sells calorie bars. Another sells, inexplicably, cupcakes. Over the course of six years, The Corridor evolved from a convenience into a community — residents gather in the hallway to eat, talk, trade, and argue about whose machine is best. There are no seats, so people sit on the floor, on overturned crates, on each other. The hallway smells like twenty-three different cuisines simultaneously. Nobody planned The Corridor. It planned itself.",
   "atmosphere": {
     "sights": [],
     "sounds": [],
@@ -19,7 +19,7 @@
     "tags": []
   },
   "frequented_by": [
-    "Humboldt Park Shelf residents",
+    "Humboldt Park the Gray Zone residents",
     "Vending machine operators",
     "Corridor socializers"
   ],
@@ -38,5 +38,7 @@
     "Kang-Petrov Arms KPS-410 'Hallway'",
     "Soren Sokolov",
     "Mariposa Bustamante-Volkov"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

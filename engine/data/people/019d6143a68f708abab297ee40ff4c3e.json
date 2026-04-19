@@ -6,10 +6,10 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Truant message runner, The Shelf streets",
+  "role": "Truant message runner, the Gray Zone streets",
   "age": 11,
   "status": "active",
-  "location": "The Shelf, Blackpipe Corridor, near Pulaski and Chicago Ave",
+  "location": "the Gray Zone, Blackpipe Corridor, near Pulaski and Chicago Ave",
   "description": "Farhan Chakraborty-Thorvaldsdóttir is small even for eleven, with deep umber skin, a gap-toothed grin she's not shy about, and natural hair sectioned into uneven puffs held together by whatever elastic she could find that morning. Her eyes are quick and dark, always cataloguing exits. She wears a patchwork jacket she stitched herself from three dead jackets — hence the alias — with pockets sewn into places no tailor would think of: the lining of the hood, behind the collar, inside the cuffs. She smells faintly of the solvent she uses to peel address-tags off packages.\n\nFarhan Chakraborty-Thorvaldsdóttir is relentlessly cheerful in a way that unsettles adults who look closely enough to see how deliberate it is. She learned early that a smiling kid gets waved through checkpoints a sullen one does not. She collects information the way other children collect toys — who owes whom, which corridor the Ferrogate patrol skips at shift change, whose E.L.F. shrine is still active in the Blackpipe utility alcove — and she stores it all behind that gap-toothed smile. She is fiercely protective of the two younger kids she runs messages with, and will not admit this even to herself.",
   "psychology": {
     "facet_weights": {
@@ -58,7 +58,7 @@
   ],
   "narrative_function": "Local color and unexpected information source; she has seen things adults don't notice because adults don't look at children. Quest giver for micro-scale street-level plots. Potential ward or contact for player characters who earn her trust.",
   "augmentations": "None. She wants cat-eye irises when she's older and has already picked the color: amber.",
-  "daily_life": "Wakes before dawn in a hot-bunk arrangement in a Blackpipe tenement crawlspace, picks up morning message bundles from three regular clients, runs routes through the Corridor and into the lower Shelf before school patrols activate, eats whatever the shrine-keeper at the Corridor E.L.F. alcove puts out for offering-overflow.",
+  "daily_life": "Wakes before dawn in a hot-bunk arrangement in a Blackpipe tenement crawlspace, picks up morning message bundles from three regular clients, runs routes through the Corridor and into the Gray Zone before school patrols activate, eats whatever the shrine-keeper at the Corridor E.L.F. alcove puts out for offering-overflow.",
   "affiliation": "Informal runner collective (the 'Patchwork Post'), loosely tolerated by Blackpipe Corridor small merchants",
   "uses_facets": false,
   "narration_voice": "",
@@ -157,7 +157,7 @@
     "Optimist": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -169,14 +169,13 @@
     "Blackpipe Corridor",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "Ferrogate Transit",
-    "The Shelf",
     "GLMZ",
     "The Peninsula",
     "Chicago",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Northern European (39.2%), South Asian (38.6%), and Eastern European (22.2%) ancestry create a striking balanced phenotype—high, pronounced cheekbones from South Asian genetics softened by Northern European bone structure, with the slightly broader facial width characteristic of Eastern European heritage; warm medium brown skin with golden undertones from the South Asian component balanced against cooler undertones from Northern and Eastern European ancestry, creating a complex warm-neutral tone; the genetic blend produces an angular, distinctive face where no single ancestry dominates",
     "height_cm": 135,

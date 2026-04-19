@@ -9,7 +9,7 @@
   "role": "Street midwife and unlicensed obstetric care provider",
   "age": 58,
   "status": "active",
-  "location": "The Shelf, GLMZ — operates from a converted laundry unit at Burnside Pocket, near Pulaski and Chicago Ave",
+  "location": "the Gray Zone, GLMZ — operates from a converted laundry unit at Burnside Pocket, near Pulaski and Chicago Ave",
   "description": "Nova Erikstad is a broad-shouldered woman with deep ochre skin mapped by a lifetime of hard work — her forearms are dense with old burn scars from a chemical incident she doesn't discuss, and her hands are extraordinary: thick-knuckled, steady, perpetually chalked with the talc she uses to ease on examination gloves. Her hair is grown long and gathered in elaborate wrapping cloths she changes daily, a small vanity she insists upon. Bioluminescent threads have been tattooed along her collarbone in a pattern that pulses softly blue when her heart rate rises — a gift from a grateful patient who was a tattooist, and which Nova Erikstad considers mildly embarrassing but cannot bring herself to remove.\n\nShe is the gravitational center of three city blocks. Women come to her in the small hours, sometimes alone, sometimes holding each other up. Nova Erikstad never turns anyone away, works on a sliding scale that regularly bottoms out at zero, and maintains a mental ledger of every birth she has attended — over nine hundred. She has strong opinions about Helix Biosystems, none of them polite, and a practical theology around the E.L.F. she calls Thresholder, whom she believes watches over liminal moments: birth, death, the crossing between states. She leaves small data-offerings on a cracked tablet beside her examination table.",
   "psychology": {
     "facet_weights": {
@@ -25,7 +25,7 @@
       "Becoming irrelevant or unable to practice"
     ],
     "core_desires": [
-      "For every child born on the Shelf to survive their first year",
+      "For every child born on the Gray Zone to survive their first year",
       "To be remembered as someone who showed up"
     ],
     "coping_mechanisms": [
@@ -56,7 +56,7 @@
     "A birth she attended six months ago is now being investigated by Helix Biosystems — they claim the infant carries proprietary gene markers and constitutes Helix IP. Ogechi is refusing to cooperate and needs someone to make the investigators go away.",
     "One of her regular patients has stopped coming to appointments and isn't responding to messages. Her neighbors say they haven't seen her in two weeks."
   ],
-  "narrative_function": "Community anchor and information node; knows the intimate secrets of hundreds of Shelf families. Quest giver for anything involving missing mothers or children. Moral voice who challenges players' ethical shortcuts.",
+  "narrative_function": "Community anchor and information node; knows the intimate secrets of hundreds of the Gray Zone families. Quest giver for anything involving missing mothers or children. Moral voice who challenges players' ethical shortcuts.",
   "augmentations": "Bioluminescent pulse tattoo along collarbone (cosmetic, involuntary — gifted). Subdermal haptic pads on fingertips for enhanced tactile diagnostics — older model, partially degraded.",
   "daily_life": "Rises before dawn to check on recent births and post-partum patients via encrypted message threads, spends afternoons doing prenatal checkups in her unit or in clients' homes, and keeps irregular evening hours for emergencies — which means she rarely sleeps a full night.",
   "affiliation": "Independent — loosely networked with Burnside Pocket community health cooperative",
@@ -168,7 +168,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -226,7 +226,6 @@
     "Burnside Pocket",
     "Bluewater Checkpoint",
     "Kang Athletics KA-900 'Sensei'",
-    "The Shelf",
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
     "Chicago",
     "VitaCore FlowGuard Hemodynamic Regulator",
@@ -238,7 +237,7 @@
     "GLMZ",
     "Elena Vasquez-9"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Northern European foundation (48.7%) creates baseline bone structure and fair undertones, substantially enriched by Hispanic/Latin American ancestry (25.5%) contributing warm golden-bronze skin depth and fuller facial features, South Asian heritage (20.8%) adding definition to cheekbones and eye shape with deeper warm tones, and Southeast Asian ancestry (5.0%) contributing delicate refinement to facial proportions. The result is a genuinely multicultural phenotype: angular Northern European bone structure softened by Latin American warmth, complexion brightened by Southeast Asian delicacy, with South Asian depth creating striking contrast. This is not a pale baseline with additions—it is an integrated warm medium tone where all ancestries are visibly present.",
     "height_cm": 172,

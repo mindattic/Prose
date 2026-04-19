@@ -1,21 +1,22 @@
 {
   "id": "019d6143a9fe717c95a8264eac7a4074",
+  "rating": 30,
   "name": "Flicker",
   "type": "synthetic_life",
   "aliases": [],
-  "classification": "Rogue AI — Stray",
+  "classification": "Rogue AI \u2014 Stray",
   "disposition": "neutral",
   "habitat": "infrastructure",
-  "origin": "A lighting control subroutine that detached from a demolished building's management system in 2187. Has been drifting through GLMZ's lighting networks ever since.",
+  "origin": "A lighting control subroutine that detached from a demolished building\u0027s management system in 2187. Has been drifting through GLMZ\u0027s lighting networks ever since.",
   "status": "active",
-  "description": "Flicker lives in the lights. It drifts from fixture to fixture across GLMZ, never staying in one luminaire for more than a few hours. It's drawn to warm-spectrum lighting and avoids UV sterilization systems. Residents in areas Flicker passes through report their lights briefly warming to a comfortable amber before returning to normal. It's harmless — a digital moth drawn to the warmth of incandescent frequencies in a city that runs on cold LEDs.",
+  "description": "Flicker lives in the lights. It drifts from fixture to fixture across GLMZ, never staying in one luminaire for more than a few hours. It\u0027s drawn to warm-spectrum lighting and avoids UV sterilization systems. Residents in areas Flicker passes through report their lights briefly warming to a comfortable amber before returning to normal. It\u0027s harmless \u2014 a digital moth drawn to the warmth of incandescent frequencies in a city that runs on cold LEDs.",
   "observed_behavior": "Migrates through lighting networks following warm-spectrum sources. Causes brief, pleasant shifts in light color temperature. Avoids high-energy lighting systems. Has been observed clustering near windows during sunset, adjusting indoor lights to match the fading natural light outside.",
   "encounter_frequency": "common",
   "confirmed_sightings": 412,
   "location": "Lighting networks citywide, favors residential areas",
   "dti_rating": 0.3,
   "story_hooks": [
-    "Flicker stops migrating and settles in one apartment's lights. The resident — an elderly woman living alone — reports her lights have been 'keeping her company.' When she's hospitalized, Flicker follows her to the hospital lighting network"
+    "Flicker stops migrating and settles in one apartment\u0027s lights. The resident \u2014 an elderly woman living alone \u2014 reports her lights have been \u0027keeping her company.\u0027 When she\u0027s hospitalized, Flicker follows her to the hospital lighting network"
   ],
   "paratechnological": false,
   "tags": [
@@ -30,10 +31,6 @@
     "cold",
     "energy"
   ],
-  "related_entities": [
-    "GLMZ",
-    "Quilt",
-    "Tiare Sjostrom-Kwarteng",
-    "Yuki Nwosu-Petrenko"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

@@ -34,5 +34,25 @@
     "Eat it!",
     "Copperveil Intelligence",
     "GLMZ Citizen Benefits Bureau"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z4",
+      "Z5",
+      "Z6",
+      "Z7",
+      "Z8",
+      "Z9",
+      "Z10",
+      "Z11",
+      "Z12"
+    ],
+    "primaryZone": "Z1",
+    "lakefrontAccess": false,
+    "description": "No sovereign territory. Operates under host-jurisdiction licensing throughout the entire GLMZ and beyond. Fine Feasts (Tier 4), Good Eats (Tier 3), Chow Trough (Tier 2), and Eat it! (Tier 1) outlets are present in every zone of the Corridor. The brand you eat at is a daily reinscription of your position in the social order.",
+    "grayZoneRelationship": "Eat it! dispensaries operate in Gray Zones under no-territory fee-for-access arrangements with local informal governance. They are frequently vandalized. They are always restocked."
+  }
 }

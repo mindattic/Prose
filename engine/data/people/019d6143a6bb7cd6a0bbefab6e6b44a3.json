@@ -9,8 +9,8 @@
   "role": "Crew lead and community defense coordinator — Last Light",
   "age": 52,
   "status": "active",
-  "location": "The Shelf — operates from a community center three blocks from Mrs. Chen's shop, near Ashland and Chicago Ave",
-  "description": "Wren Hwang is the lowest-paid runner in GLMZ and the most respected person below Tier 3. Last Light takes contracts that nobody else will touch: protecting excluded families from eviction squads, escorting debt-marked citizens through corporate checkpoints, standing between Shelf communities and the security forces that treat them as jurisdictional noise. The pay is whatever the clients can afford, which is usually nothing. Ruth doesn't care. The work is the work.\n\nShe was a public defender in GLMZ's municipal court system for eighteen years — one of the last attorneys who represented excluded citizens in jurisdictional disputes. When the court system was privatized and representation became a billable service priced beyond the excluded's reach, Ruth kept working. Pro bono. For free. The bar association suspended her license for 'unprofessional conduct.' She appealed. The appeal court was also privatized. She stopped appealing and started operating outside the legal system that had abandoned the people she served.\n\nRuth is tall, broad, with the bearing of a woman who has stood in courtrooms and stared down corporate attorneys and felt nothing but the certainty of purpose. Her hair is silver, worn natural, and her face carries the particular beauty of someone who has been angry for thirty years and hasn't let the anger eat her. She wears practical clothes and carries herself like a person who has decided what she is for and will not be moved.",
+  "location": "the Gray Zone — operates from a community center three blocks from Mrs. Chen's shop, near Ashland and Chicago Ave",
+  "description": "Wren Hwang is the lowest-paid runner in GLMZ and the most respected person below Tier 3. Last Light takes contracts that nobody else will touch: protecting excluded families from eviction squads, escorting debt-marked citizens through corporate checkpoints, standing between the Gray Zone communities and the security forces that treat them as jurisdictional noise. The pay is whatever the clients can afford, which is usually nothing. Ruth doesn't care. The work is the work.\n\nShe was a public defender in GLMZ's municipal court system for eighteen years — one of the last attorneys who represented excluded citizens in jurisdictional disputes. When the court system was privatized and representation became a billable service priced beyond the excluded's reach, Ruth kept working. Pro bono. For free. The bar association suspended her license for 'unprofessional conduct.' She appealed. The appeal court was also privatized. She stopped appealing and started operating outside the legal system that had abandoned the people she served.\n\nRuth is tall, broad, with the bearing of a woman who has stood in courtrooms and stared down corporate attorneys and felt nothing but the certainty of purpose. Her hair is silver, worn natural, and her face carries the particular beauty of someone who has been angry for thirty years and hasn't let the anger eat her. She wears practical clothes and carries herself like a person who has decided what she is for and will not be moved.",
   "psychology": {
     "facet_weights": {
       "wound": 0.55,
@@ -60,7 +60,7 @@
     {
       "name": "Josiah Pine",
       "type": "crew / field protector",
-      "description": "Josiah is Last Light's physical presence — the body that stands between excluded families and the forces that threaten them. Ruth recruited him from a Shelf community defense network. She trusts his judgment, depends on his strength, and worries about the toll the work is taking.",
+      "description": "Josiah is Last Light's physical presence — the body that stands between excluded families and the forces that threaten them. Ruth recruited him from a the Gray Zone community defense network. She trusts his judgment, depends on his strength, and worries about the toll the work is taking.",
       "emotional_core": "The partnership of people who do the same impossible work for the same impossible reasons",
       "story_tension": "Josiah is younger, angrier, and less patient with non-violent methods. Ruth's influence holds him in check. If that influence weakens, his approach changes."
     },
@@ -76,25 +76,25 @@
       "type": "neighbor / ally / anchor",
       "description": "Mrs. Chen's shop is three blocks from the community center. Ruth and Mrs. Chen have known each other for fifteen years. They share food, information, and the particular solidarity of older women who have decided what they're willing to die for.",
       "emotional_core": "The friendship of two pillars holding up the same neighborhood",
-      "story_tension": "If the Shelf is threatened, Ruth and Mrs. Chen become a unified front. The combination of Ruth's moral authority and Mrs. Chen's community trust is formidable."
+      "story_tension": "If the Gray Zone is threatened, Ruth and Mrs. Chen become a unified front. The combination of Ruth's moral authority and Mrs. Chen's community trust is formidable."
     },
     {
       "name": "Kyle",
       "type": "neighbor / occasional ally",
-      "description": "Ruth knows Kyle by reputation and occasional intersection — they operate in the same Shelf geography for different reasons. She respects his protection of the excluded and is troubled by his violence. She has never asked for his help. He has provided it anyway, twice, without being asked.",
+      "description": "Ruth knows Kyle by reputation and occasional intersection — they operate in the same the Gray Zone geography for different reasons. She respects his protection of the excluded and is troubled by his violence. She has never asked for his help. He has provided it anyway, twice, without being asked.",
       "emotional_core": "Mutual recognition across different approaches to the same problem",
       "story_tension": "If Ruth needed Kyle's kind of help — lethal help — asking would compromise everything she's built. Not asking might cost lives."
     }
   ],
   "story_hooks": [
-    "A Shelf eviction campaign targets the community center itself — Ruth must defend the operational base",
+    "A the Gray Zone eviction campaign targets the community center itself — Ruth must defend the operational base",
     "Glass Maren's offer resurfaces through an intermediary, and the funding crisis forces Ruth to reconsider",
     "A corporate security force detains a Last Light client and Ruth must navigate a legal system that no longer recognizes her authority",
     "Ruth's health deteriorates — the biosystem warnings are getting more frequent and the anger is extracting its biological price"
   ],
-  "narrative_function": "Ruth drives the stories about the cost of doing the right thing. Last Light's operations don't end in heist scores or data extraction — they end in small victories that prevent larger tragedies, paid for with exhaustion, poverty, and the slow erosion of hope. Ruth is the moral center of the Shelf runner ecosystem and the character who asks: what does it cost to be good in a world that doesn't pay for it?",
+  "narrative_function": "Ruth drives the stories about the cost of doing the right thing. Last Light's operations don't end in heist scores or data extraction — they end in small victories that prevent larger tragedies, paid for with exhaustion, poverty, and the slow erosion of hope. Ruth is the moral center of the Gray Zone runner ecosystem and the character who asks: what does it cost to be good in a world that doesn't pay for it?",
   "augmentations": "Legal database cortex — complete GLMZ jurisdictional code, precedent, and regulatory framework stored in long-term memory. Outdated now, but the institutional knowledge remains valuable. Voice amplification implant for addressing crowds and confronting security forces — her voice carries. Stress-monitoring biosystem that alerts her when her blood pressure enters dangerous territory. No combat augmentations.",
-  "daily_life": "Wakes at 0530. Checks overnight messages from community contacts for protection requests, eviction notices, or security force movements on the Shelf. Prioritizes cases with her crew. Spends the day on active protection work — legal intervention when possible, physical presence when necessary. Evenings she holds open hours at the community center for anyone who needs help navigating the system. Cooks for the crew because nobody else will. Sleeps five hours and considers it a luxury.",
+  "daily_life": "Wakes at 0530. Checks overnight messages from community contacts for protection requests, eviction notices, or security force movements in the Gray Zone. Prioritizes cases with her crew. Spends the day on active protection work — legal intervention when possible, physical presence when necessary. Evenings she holds open hours at the community center for anyone who needs help navigating the system. Cooks for the crew because nobody else will. Sleeps five hours and considers it a luxury.",
   "affiliation": "Last Light",
   "uses_facets": false,
   "narration_voice": "",
@@ -149,7 +149,7 @@
       "Checks overnight community messages before anything else — the clients come first, always",
       "Cooks at the community center every evening — the kitchen is the last thing she closes and the first thing she opens",
       "Reads legal texts before sleep — the law that no longer applies, studied like scripture",
-      "Walks the Shelf between the community center and Mrs. Chen's every morning — the route is patrol, exercise, and community visibility",
+      "Walks the Gray Zone between the community center and Mrs. Chen's every morning — the route is patrol, exercise, and community visibility",
       "Keeps a list of every person Last Light has protected — names, dates, outcomes. The list is long and she reads it when purpose wavers."
     ],
     "breaking_points": [
@@ -181,7 +181,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -197,7 +197,6 @@
   ],
   "related_entities": [
     "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "The Shelf",
     "Hearthstone Firearms Defender-38 'Snubnose'",
     "Big Rig",
     "Chicago",
@@ -207,7 +206,7 @@
     "Glass",
     "GLMZ"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Predominantly Hispanic/Latin American (49.4%) with significant East Asian (32.0%) and South Asian (18.6%) ancestry. This creates a complexion that blends warm golden and olive undertones from Latin American heritage with the subtle features of East Asian ancestry and the warmth of South Asian skin tones, resulting in a rich, multifaceted appearance. The genetic combination manifests in defined cheekbones with slight monolid influences, warm-toned skin with depth and luminosity, and facial structure that reads as distinctly multicontinental.",
     "height_cm": 183,

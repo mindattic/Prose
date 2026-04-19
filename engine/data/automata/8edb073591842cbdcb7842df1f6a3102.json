@@ -4,7 +4,7 @@
   "classification": "Parasitic Platform — Energy Theft",
   "aliases": [],
   "manufacturer": "Wattson Smart Home",
-  "description": "The PD-1 is a small disc-shaped automaton that attaches to powered infrastructure — vehicles, generators, building power systems, even personal augmentation power cells — and siphons energy. The unit clamps onto a power source using magnetic anchors, extends a probe that interfaces with the electrical system, and diverts a portion of the power output to its internal storage or to a wireless transmission system that transfers the stolen energy to a designated receiver.\n\nOuroboros designed the PD-1 for 'power grid auditing' — identifying unauthorized power taps and electrical theft across its network. The irony that the auditing tool is itself an energy thief has not been lost on anyone. In practice, the PD-1 is deployed against competitors' infrastructure, against independent power generation in the Shelf, and against any electrical system Ouroboros wants to degrade without destroying.\n\nThe most insidious application targets personal augmentations. A PD-1 attached to a person's cyberware power cell — clamped to the back of a neck, hidden under clothing — slowly drains the power supply that keeps their augmentations running. The victim experiences progressive augmentation failure: dimming enhanced vision, weakening prosthetic limbs, degrading BCI function. They go to a clinic, get their power cell replaced, and the PD-1 drains the new one too. Some victims have gone through five or six replacements before someone thinks to look for an external parasite.",
+  "description": "The PD-1 is a small disc-shaped automaton that attaches to powered infrastructure — vehicles, generators, building power systems, even personal augmentation power cells — and siphons energy. The unit clamps onto a power source using magnetic anchors, extends a probe that interfaces with the electrical system, and diverts a portion of the power output to its internal storage or to a wireless transmission system that transfers the stolen energy to a designated receiver.\n\nOuroboros designed the PD-1 for 'power grid auditing' — identifying unauthorized power taps and electrical theft across its network. The irony that the auditing tool is itself an energy thief has not been lost on anyone. In practice, the PD-1 is deployed against competitors' infrastructure, against independent power generation in the Gray Zone, and against any electrical system Ouroboros wants to degrade without destroying.\n\nThe most insidious application targets personal augmentations. A PD-1 attached to a person's cyberware power cell — clamped to the back of a neck, hidden under clothing — slowly drains the power supply that keeps their augmentations running. The victim experiences progressive augmentation failure: dimming enhanced vision, weakening prosthetic limbs, degrading BCI function. They go to a clinic, get their power cell replaced, and the PD-1 drains the new one too. Some victims have gone through five or six replacements before someone thinks to look for an external parasite.",
   "tier_availability": "Tier 3+",
   "legality": "Licensed for grid auditing; parasitic use prohibited",
   "autonomy_level": "Pre-programmed attachment and siphoning",
@@ -26,7 +26,7 @@
     "Personal augmentation sabotage (denied by Ouroboros)"
   ],
   "story_hooks": [
-    "A Shelf clinic has seen a surge in augmentation power failures — dozens of patients reporting rapid power cell drain. A tech-runner discovered a PD-1 on one of them. Someone is systematically draining the augmentations of an entire neighborhood.",
+    "A the Gray Zone clinic has seen a surge in augmentation power failures — dozens of patients reporting rapid power cell drain. A tech-runner discovered a PD-1 on one of them. Someone is systematically draining the augmentations of an entire neighborhood.",
     "A PD-1 has been attached to a critical life-support augmentation — a patient's artificial heart power supply. The device is draining the heart's battery. Removal requires steady hands because the magnetic clamps, if removed too quickly, create an electrical spike that could stop the heart."
   ],
   "cultural_context": "The PD-1 attacks augmented individuals through their dependence on power — turning the energy that keeps their chrome running into a vulnerability. It is the weapon of someone who wants to make augmented people feel helpless.",
@@ -48,7 +48,6 @@
     "Ouroboros Energy",
     "Ouroboros Energy Power Distribution Trunk Network",
     "The Pure Hand",
-    "The Shelf",
     "The Siphon Collective",
     "The Wire Taps",
     "VitaCore FlowGuard Hemodynamic Regulator"

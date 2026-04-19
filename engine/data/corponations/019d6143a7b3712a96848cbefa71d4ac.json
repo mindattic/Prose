@@ -40,5 +40,14 @@
     "The Rust Circuit",
     "VitaCore CardiaWatch Cardiac Rhythm Implant",
     "Yannick Tofauti-Szarvásy"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z6"
+    ],
+    "primaryZone": "Z6",
+    "lakefrontAccess": true,
+    "description": "The Slagworks Foundry Belt — continuous sovereign industrial zone spanning the South Chicago port district, Zone 6. Processes and recycles industrial byproducts from Ashgrave Materials and Scoria Works. Exists in a dependency relationship with its Zone 6 neighbors — they process what Ashgrave and Scoria cannot or will not.",
+    "grayZoneRelationship": "The South Chicago Gray Zones surrounding Slagworks are among the most environmentally compromised in the Corridor. Slagworks has no documented relationship with these communities."
+  }
 }

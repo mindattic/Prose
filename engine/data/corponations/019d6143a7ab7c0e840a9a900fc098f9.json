@@ -36,5 +36,14 @@
     "Sable",
     "The Meridian Compact",
     "The Reclamation Authority"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z8"
+    ],
+    "primaryZone": "Z8",
+    "lakefrontAccess": true,
+    "description": "The Ferment Quarter — 14-square-kilometer wetland-industrial zone on the southern Milwaukee lakefront, Zone 8. Experimental biotechnology research; one of the few corponation laboratories in the GLMZ that publishes research findings. Maintains formal collaboration agreements with Vellichor Institute.",
+    "grayZoneRelationship": "The Ferment Quarter's edges are permeable by Zone 8 standards. Gravemoss recruits from Milwaukee Gray Zone communities — unusual enough to be noteworthy."
+  }
 }

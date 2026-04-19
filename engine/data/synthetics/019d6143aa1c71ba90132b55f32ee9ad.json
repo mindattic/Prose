@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa1c71ba90132b55f32ee9ad",
+  "rating": 50,
   "name": "Rosemary",
   "type": "elf",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Enhances long-term potentiation signals during REM sleep. Users report vivid recall of events they had forgotten.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 4,
-  "location": "The Shelf",
+  "location": "the Gray Zone",
   "dti_rating": 0,
   "story_hooks": [
     "A trauma survivor begins remembering things they had suppressed — Rosemary doesn't distinguish between memories you want and memories you buried"
@@ -27,10 +28,8 @@
     "memory",
     "neural",
     "ai",
-    "shelf",
     "sentient"
   ],
-  "related_entities": [
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

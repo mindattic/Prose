@@ -28,9 +28,9 @@
   "tier_availability": "Tier 3-4",
   "legality": "prescription",
   "street_price": "Φ420",
-  "cultural_context": "Celerix is the drug of choice for the technically minded runner who understands pharmacokinetics — people who talk about 'stacking windows' and 'optimal timing.' In Tier 3 combat circles it has an almost aspirational quality, associated with precision and skill rather than brute force. The neural_direct delivery means you need a BCI port, which prices out the lower Shelf. Knockoffs exist but the delivery mechanism is hard to replicate safely.",
+  "cultural_context": "Celerix is the drug of choice for the technically minded runner who understands pharmacokinetics — people who talk about 'stacking windows' and 'optimal timing.' In Tier 3 combat circles it has an almost aspirational quality, associated with precision and skill rather than brute force. The neural_direct delivery means you need a BCI port, which prices out the Gray Zone. Knockoffs exist but the delivery mechanism is hard to replicate safely.",
   "story_hooks": [
-    "A street-level knockoff of Celerix is moving through the Shelf — it produces the reflex boost but causes catastrophic BCI port corrosion after three uses; someone is selling it knowingly",
+    "A street-level knockoff of Celerix is moving through the Gray Zone — it produces the reflex boost but causes catastrophic BCI port corrosion after three uses; someone is selling it knowingly",
     "A runner discovers their Celerix prescription is being used by Helix as longitudinal neural data collection without consent — the drug is also a study",
     "Two runners both dosed with Celerix face each other in a closed space; the fight comes down to who times their peak correctly"
   ],
@@ -48,14 +48,12 @@
     "control",
     "drug",
     "stimulant",
-    "shelf",
     "tier 3",
     "tier 4"
   ],
   "parent_corponation": "",
   "related_entities": [
     "Lazarus LX-2 'Lab Rat'",
-    "Neuromorphic Pressure Cestus",
-    "The Shelf"
+    "Neuromorphic Pressure Cestus"
   ]
 }

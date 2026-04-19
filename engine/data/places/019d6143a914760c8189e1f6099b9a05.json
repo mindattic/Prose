@@ -3,7 +3,7 @@
   "type": "place",
   "name": "Cicada Lawn",
   "aliases": [],
-  "description": "Cicada Lawn earned its name from the sound — a persistent, machine-generated hum that emanates from the subsidized neural relay towers lining 63rd Street, a frequency residents describe as identical to the cicada swarms that used to emerge from the old Marquette Park grounds before the topsoil was paved over for drainage infrastructure. The towers were installed by Helion Civic Services as part of a Tier 2 connectivity initiative that never reached Tier 2 quality. The signal is degraded, the bandwidth is throttled, and the hum never stops. People here have learned to sleep through it. Some claim they can no longer sleep without it.\n\nThe 63rd Street commercial corridor is the district's spine — a long, narrow channel of street-level commerce that somehow survived every wave of corporate consolidation by being too small to acquire and too stubborn to close. The storefronts are a compressed archaeology of the neighborhood's shifting demographics: halal butchers next to Korean augmentation repair shops next to Mexican synth-pharmacies next to a Polish bakery that has been in the same family for four generations and still uses flour. The signage is in nine languages. The prices are in three currencies. Nobody here has a single identity, and the corridor reflects that — a place where cultures didn't meld so much as learn to share a wall.\n\nMarquette Park itself is gone in any recognizable sense. The green space was requisitioned during the Climate Infrastructure Emergency of Year 12 and converted into a stormwater retention basin — a massive concrete depression that fills during rain events and drains slowly through pumps that are maintained on a schedule best described as aspirational. When it's dry, the basin becomes an informal market, a gathering space, a place where kids play on cracked concrete that used to be a lagoon. When it floods, the surrounding blocks flood with it. The city's drainage promises have been broken so many times that residents have stopped counting and started building their own berms.\n\nThe population is dense, working-class, and almost aggressively diverse — a neighborhood where the shared experience of being overlooked by every tier of power has created a solidarity that is practical rather than sentimental. People here fix each other's neural interfaces with secondhand parts. They share food when the supply chains stutter. They also fight, sometimes badly, because poverty compresses people and compressed people generate friction. Cicada Lawn is not a community in the greeting-card sense. It is a community in the survival sense, which is the only kind that matters in the lower Shelf.",
+  "description": "Cicada Lawn earned its name from the sound — a persistent, machine-generated hum that emanates from the subsidized neural relay towers lining 63rd Street, a frequency residents describe as identical to the cicada swarms that used to emerge from the old Marquette Park grounds before the topsoil was paved over for drainage infrastructure. The towers were installed by Helion Civic Services as part of a Tier 2 connectivity initiative that never reached Tier 2 quality. The signal is degraded, the bandwidth is throttled, and the hum never stops. People here have learned to sleep through it. Some claim they can no longer sleep without it.\n\nThe 63rd Street commercial corridor is the district's spine — a long, narrow channel of street-level commerce that somehow survived every wave of corporate consolidation by being too small to acquire and too stubborn to close. The storefronts are a compressed archaeology of the neighborhood's shifting demographics: halal butchers next to Korean augmentation repair shops next to Mexican synth-pharmacies next to a Polish bakery that has been in the same family for four generations and still uses flour. The signage is in nine languages. The prices are in three currencies. Nobody here has a single identity, and the corridor reflects that — a place where cultures didn't meld so much as learn to share a wall.\n\nMarquette Park itself is gone in any recognizable sense. The green space was requisitioned during the Climate Infrastructure Emergency of Year 12 and converted into a stormwater retention basin — a massive concrete depression that fills during rain events and drains slowly through pumps that are maintained on a schedule best described as aspirational. When it's dry, the basin becomes an informal market, a gathering space, a place where kids play on cracked concrete that used to be a lagoon. When it floods, the surrounding blocks flood with it. The city's drainage promises have been broken so many times that residents have stopped counting and started building their own berms.\n\nThe population is dense, working-class, and almost aggressively diverse — a neighborhood where the shared experience of being overlooked by every tier of power has created a solidarity that is practical rather than sentimental. People here fix each other's neural interfaces with secondhand parts. They share food when the supply chains stutter. They also fight, sometimes badly, because poverty compresses people and compressed people generate friction. Cicada Lawn is not a community in the greeting-card sense. It is a community in the survival sense, which is the only kind that matters in the Gray Zone.",
   "atmosphere": {
     "sights": [
       "Neural relay towers along 63rd Street pulsing with amber status lights that never turn green",
@@ -28,7 +28,7 @@
     "feel": "Exhausted but unbroken. Cicada Lawn has the particular energy of a place that has been promised things and learned to stop waiting. The solidarity here is real but unsentimental — people help each other because the alternative is worse, and they don't pretend it's more noble than that.",
     "tags": []
   },
-  "demographics": "One of the most ethnically diverse districts in GLMZ's lower Shelf — significant Latine, Arab, Korean, Polish, and African American populations compressed into tight blocks. Predominantly Tier 1 and Tier 2, with a growing untier-ed population in the basin-adjacent zones.",
+  "demographics": "One of the most ethnically diverse districts in GLMZ's the Gray Zone — significant Latine, Arab, Korean, Polish, and African American populations compressed into tight blocks. Predominantly Tier 1 and Tier 2, with a growing untier-ed population in the basin-adjacent zones.",
   "economy": "Street-level commerce along the 63rd corridor sustains most households — small businesses, repair shops, informal services. The augmentation repair trade is particularly strong, drawing customers from adjacent districts. The basin market operates on a barter-and-scrip economy that exists entirely outside corporate financial systems.",
   "power_structure": "No single corporate authority claims the Lawn. A loose council of corridor business owners — called the Nine Tongues for the languages represented — mediates disputes and coordinates flood response. Two competing gang structures operate in the residential blocks south of 63rd, but neither has the strength to dominate. Corporate influence is limited to the relay towers, which Helion maintains just enough to justify the data collection they enable.",
   "dangers": [
@@ -39,7 +39,7 @@
     "Supply chain disruptions that hit the corridor hard and fast"
   ],
   "opportunities": [
-    "The augmentation repair corridor is one of the best in the lower Shelf — quality work at Tier 1 prices",
+    "The augmentation repair corridor is one of the best in the Gray Zone — quality work at Tier 1 prices",
     "The Nine Tongues council is always looking for reliable security during basin market days",
     "The corridor's multilingual, multi-network nature makes it excellent for passing information without a single point of interception",
     "Helion's relay towers have exploitable firmware — someone with the right skills could turn surveillance into countersurveillance"
@@ -61,7 +61,7 @@
   },
   "frequented_by": [
     "Corridor merchants and their supply networks",
-    "Augmentation repair clients from across the lower Shelf",
+    "Augmentation repair clients from across the Gray Zone",
     "Basin market traders and scavengers",
     "Helion relay maintenance crews on quarterly visits",
     "Street-level fixers who use the corridor's multilingual chaos as cover"
@@ -90,8 +90,7 @@
     "storm",
     "survival",
     "food",
-    "water",
-    "shelf"
+    "water"
   ],
   "related_entities": [
     "Ashford Signal",
@@ -107,5 +106,7 @@
     "Gravimetric Collapse Charge GCC-9",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
     "Elena Vasquez-9"
-  ]
+  ],
+  "zone": "Z1",
+  "controllingCorponation": null
 }

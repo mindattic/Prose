@@ -34,5 +34,21 @@
     "GLMZ",
     "Tessera",
     "North Atlantic Crossing"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z5",
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z4",
+      "Z6",
+      "Z7",
+      "Z8"
+    ],
+    "primaryZone": "Z5",
+    "lakefrontAccess": false,
+    "description": "The Hyperlane Rights-of-Way — sovereign linear territories following major arterial freight routes through the southern GLMZ, analogous to Ferrogate's rail corridor sovereignty applied to surface and air freight lanes. Fascia controls the physical infrastructure of the GLMZ's surface freight network from Zone 1 through Zone 8.",
+    "grayZoneRelationship": "Gray Zones frequently encroach on Hyperlane margins. Fascia enforces exclusion zones with automated systems rather than personnel."
+  }
 }

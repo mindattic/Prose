@@ -4,7 +4,7 @@
   "category": "uniform",
   "subcategory": "corpsec_tactical",
   "manufacturer": "Arcturus Defense Solutions",
-  "description": "The standard-issue threat-response uniform for Arcturus field operatives, the FieldGuard MK-7 integrates semi-rigid trauma plates within a flexible aramid-graphene weave that hardens on impact and returns to pliability within 0.3 seconds. The deep charcoal shell is treated with Arcturus's proprietary ThermoNull coating, which scatters thermal imaging signatures and resists incendiary splash. Collar and cuff ports allow pass-through routing for standard BCI hardlines without breaking the suit's sealed integrity. Chest and back panels carry embossed Arcturus sigils in matte silver that glow faintly under specific UV spectra — a passive ID protocol used by Arcturus drones in low-light engagement zones.\n\nThe MK-7 is cut wide through the shoulder to accommodate standard chrome arm augments and includes an articulated tail gusset at the rear waistband as a baseline geneware accommodation. Operatives on the Shelf know this uniform on sight: it means Arcturus has a contract in the area, and whoever is wearing it has the legal authority to detain, restrain, and in certain sanctioned zones, use lethal force. The uniform itself is not sold commercially — possession without a valid Arcturus employment token embedded in the weave's RFID layer is a restricted-carry offense.",
+  "description": "The standard-issue threat-response uniform for Arcturus field operatives, the FieldGuard MK-7 integrates semi-rigid trauma plates within a flexible aramid-graphene weave that hardens on impact and returns to pliability within 0.3 seconds. The deep charcoal shell is treated with Arcturus's proprietary ThermoNull coating, which scatters thermal imaging signatures and resists incendiary splash. Collar and cuff ports allow pass-through routing for standard BCI hardlines without breaking the suit's sealed integrity. Chest and back panels carry embossed Arcturus sigils in matte silver that glow faintly under specific UV spectra — a passive ID protocol used by Arcturus drones in low-light engagement zones.\n\nThe MK-7 is cut wide through the shoulder to accommodate standard chrome arm augments and includes an articulated tail gusset at the rear waistband as a baseline geneware accommodation. Operatives in the Gray Zone know this uniform on sight: it means Arcturus has a contract in the area, and whoever is wearing it has the legal authority to detain, restrain, and in certain sanctioned zones, use lethal force. The uniform itself is not sold commercially — possession without a valid Arcturus employment token embedded in the weave's RFID layer is a restricted-carry offense.",
   "tier_availability": "Tier 3-4",
   "price": "Φ780",
   "augment_compatible": true,
@@ -13,7 +13,7 @@
   "legal_status": "restricted",
   "cultural_context": "The FieldGuard MK-7 is a symbol of sanctioned authority and, depending on who you ask, sanctioned violence. In Tier 1 and 2 zones, spotting one triggers a specific social response — crowds disperse, dealers pocket inventory, and people find reasons to be elsewhere. For Arcturus operatives themselves, the uniform functions as a kind of armor against the moral weight of the job: you are the uniform, the uniform is the contract.",
   "story_hooks": [
-    "A decommissioned MK-7 is found stripped of its RFID layer and sold through a Shelf black market — someone is arming civilians to impersonate Arcturus operatives, and the real Arcturus wants to know why.",
+    "A decommissioned MK-7 is found stripped of its RFID layer and sold through a the Gray Zone black market — someone is arming civilians to impersonate Arcturus operatives, and the real Arcturus wants to know why.",
     "An operative discovers their suit's ThermoNull coating has been quietly updated to also mask their vitals from Arcturus's own monitoring systems — someone inside the corp doesn't want this squad tracked.",
     "A Tier 2 labor organizer is photographed wearing a partial MK-7 uniform during a strike action, and Arcturus legal is treating it as a declaration of corporate impersonation."
   ],
@@ -39,7 +39,6 @@
     "MindBridge SpectraLens Chromatic Expansion Module",
     "Tessera Nexus Town Car",
     "The Human Baseline Alliance",
-    "The Shelf",
     "Vantablack VS-3 'Skin Job'"
   ],
   "physical_description": {

@@ -1,6 +1,6 @@
 {
   "id": "a3f7c2e1b09d4856fe23a1c7d0e58b94",
-  "name": "Scrapweld Faceguard Mk.0 (Shelf Forge)",
+  "name": "Scrapweld Faceguard Mk.0 (the Gray Zone Forge)",
   "type": "apparel",
   "category": "headwear",
   "description": "A crude half-face shield hammered from salvaged boiler plate and storm-drain grating, welded at uneven seams and buffed smooth only where it contacts skin. The surface is pitted with acid-rain scarring, and most units show improvised padding — foam strips, electrical tape, torn synth-leather — riveted along the brow bar. Eye protection is a strip of scavenged polycarbonate, yellowed and scratched, affixed with wire loops.\n\nNo two are identical. The chin strap is usually a repurposed cargo strap with a cam buckle. Some units sport crude spray-paint insignia identifying the maker's block or crew affiliation.",
@@ -13,20 +13,20 @@
     "synth-leather scraps",
     "cargo webbing"
   ],
-  "functionality": "Provides basic blunt and slash protection to the lower face; the polycarbonate strip shields eyes from acid-rain splash and debris. Not rated for ballistic or industrial chemical exposure, but better than nothing on the Shelf.",
+  "functionality": "Provides basic blunt and slash protection to the lower face; the polycarbonate strip shields eyes from acid-rain splash and debris. Not rated for ballistic or industrial chemical exposure, but better than nothing in the Gray Zone.",
   "what_it_says": "You built your own armor because no one was going to give it to you.",
   "worn_by": [
-    "Shelf scavengers",
+    "the Gray Zone scavengers",
     "block enforcers",
     "tunnel runners",
     "acid-rain laborers"
   ],
-  "manufacturer": "Self-made / Shelf Forge collectives",
+  "manufacturer": "Self-made / the Gray Zone Forge collectives",
   "price_range": "Φ2–Φ18 (barter common)",
   "aug_compatible": false,
   "gene_compatible": false,
   "story_hooks": [
-    "A specific maker's stamp — a crude fish symbol — has been appearing on guards found near crime scenes across three Shelf blocks.",
+    "A specific maker's stamp — a crude fish symbol — has been appearing on guards found near crime scenes across three the Gray Zone blocks.",
     "A runner offers the party a faceguard with a hidden cavity in the cheek plate containing a micro data chip.",
     "The polycarbonate visor on one unit is actually a fragment of a classified Axiom Systems display screen, still faintly active."
   ],
@@ -36,7 +36,6 @@
     "mask",
     "half-face",
     "tier-1",
-    "shelf",
     "scavenged",
     "self-made",
     "acid-rain",

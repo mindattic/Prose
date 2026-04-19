@@ -1,21 +1,22 @@
 {
   "id": "019d6143ab297f13848a9ba712dbad20",
-  "name": "Entropic Dielectric Pulse Emitter EDPE-5 'Candle'",
+  "rating": 70,
+  "name": "Entropic Dielectric Pulse Emitter EDPE-5 \u0027Candle\u0027",
   "type": "weapon",
   "aliases": [],
   "category": "energy",
-  "description": "The EDPE-5 operates by generating a precisely calibrated entropic dielectric field — a sustained burst of high-frequency electromagnetic noise shaped into a coherent cone by a series of tuned metamaterial apertures housed in the barrel assembly. On contact with living tissue, the field disrupts the electrochemical gradients of nerve cells and muscle fibers without producing heat or visible light, causing a cascade of involuntary muscular contraction followed by temporary paralysis. On contact with electronic systems, it degrades capacitive insulation at the molecular level, inducing progressive dielectric breakdown across multiple components simultaneously.\n\nWhat distinguishes the Candle from comparable disruption weapons is its 'fade' characteristic — the entropic field does not cut off sharply when the trigger is released but dissipates over a 1.4-second bleed period, a quirk of the metamaterial aperture design that Arcturus Defense Solutions has never fully corrected. Experienced operators have learned to exploit this, sweeping targets in the final milliseconds of a trigger pull to distribute the bleed across multiple contact zones. The weapon produces a faint amber luminescence at the muzzle during discharge — the source of its nickname.\n\nThe EDPE-5 is moderately sized, resembling a flattened carbine, with a matte polymer chassis and a distinctive hexagonal barrel shroud that houses the aperture array. Its power cell is a proprietary format that draws criticism for poor field replaceability, but the cell's high energy density allows for up to 40 full-power discharges before depletion.",
+  "description": "The EDPE-5 operates by generating a precisely calibrated entropic dielectric field \u2014 a sustained burst of high-frequency electromagnetic noise shaped into a coherent cone by a series of tuned metamaterial apertures housed in the barrel assembly. On contact with living tissue, the field disrupts the electrochemical gradients of nerve cells and muscle fibers without producing heat or visible light, causing a cascade of involuntary muscular contraction followed by temporary paralysis. On contact with electronic systems, it degrades capacitive insulation at the molecular level, inducing progressive dielectric breakdown across multiple components simultaneously.\n\nWhat distinguishes the Candle from comparable disruption weapons is its \u0027fade\u0027 characteristic \u2014 the entropic field does not cut off sharply when the trigger is released but dissipates over a 1.4-second bleed period, a quirk of the metamaterial aperture design that Arcturus Defense Solutions has never fully corrected. Experienced operators have learned to exploit this, sweeping targets in the final milliseconds of a trigger pull to distribute the bleed across multiple contact zones. The weapon produces a faint amber luminescence at the muzzle during discharge \u2014 the source of its nickname.\n\nThe EDPE-5 is moderately sized, resembling a flattened carbine, with a matte polymer chassis and a distinctive hexagonal barrel shroud that houses the aperture array. Its power cell is a proprietary format that draws criticism for poor field replaceability, but the cell\u0027s high energy density allows for up to 40 full-power discharges before depletion.",
   "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
-  "tier_availability": "Tier 3+",
+  "tier_availability": "Tier 3\u002B",
   "legality": "Restricted",
   "base_technologies": [
     "Dielectric field induction",
     "Metamaterial aperture shaping",
     "Electrochemical gradient disruption"
   ],
-  "specifications": "effective range: 18m cone, 8m optimal\ncone angle: 22 degrees\ndischarge duration: Continuous while trigger held; 1.4s bleed on release\npower cell: ADS Type-F proprietary cell, 40 charges\nweight: 3.1kg unloaded\ndimensions: 62cm length, 14cm width at shroud\nparalysis duration: 45–120 seconds depending on exposure\nelectronic damage: Progressive; full dielectric failure after 3 sustained exposures",
-  "tactical_use": "Primarily used for room clearing and capture operations where lethal force is undesirable or politically complicated. Security contractors favor it for detaining high-value targets whose cybernetic implants must remain intact post-capture. The bleed exploit is taught in Arcturus-certified training programs as the 'sweep and fade' technique. Operatives working in narrow corridors report the cone angle as a liability; the weapon performs best in open spaces where the operator can maintain distance.",
-  "cultural_context": "In GLMZ's corporate security culture, carrying a Candle signals professional restraint — the weapon of an operator who takes living prisoners. Enforcement divisions of mid-tier corporations issue it as standard kit for internal affairs teams and executive protection details. On the street, it has developed a sinister secondary reputation: kidnapping rings prize it for obvious reasons, and its presence at a crime scene is treated by law enforcement as evidence of premeditated abduction rather than impulsive violence.",
+  "specifications": "effective range: 18m cone, 8m optimal\ncone angle: 22 degrees\ndischarge duration: Continuous while trigger held; 1.4s bleed on release\npower cell: ADS Type-F proprietary cell, 40 charges\nweight: 3.1kg unloaded\ndimensions: 62cm length, 14cm width at shroud\nparalysis duration: 45\u2013120 seconds depending on exposure\nelectronic damage: Progressive; full dielectric failure after 3 sustained exposures",
+  "tactical_use": "Primarily used for room clearing and capture operations where lethal force is undesirable or politically complicated. Security contractors favor it for detaining high-value targets whose cybernetic implants must remain intact post-capture. The bleed exploit is taught in Arcturus-certified training programs as the \u0027sweep and fade\u0027 technique. Operatives working in narrow corridors report the cone angle as a liability; the weapon performs best in open spaces where the operator can maintain distance.",
+  "cultural_context": "In GLMZ\u0027s corporate security culture, carrying a Candle signals professional restraint \u2014 the weapon of an operator who takes living prisoners. Enforcement divisions of mid-tier corporations issue it as standard kit for internal affairs teams and executive protection details. On the street, it has developed a sinister secondary reputation: kidnapping rings prize it for obvious reasons, and its presence at a crime scene is treated by law enforcement as evidence of premeditated abduction rather than impulsive violence.",
   "known_users": [
     "Arcturus Defense Solutions corporate extraction teams",
     "Mid-tier corporate internal affairs officers",
@@ -24,9 +25,9 @@
     "Executive protection specialists"
   ],
   "story_hooks": [
-    "A Candle recovered from a crime scene has a serial number that traces back to a decommissioned Arcturus lot — but the lot was supposedly destroyed in a warehouse fire three years ago. Someone resurrected that shipment.",
-    "An operator is hired to capture a target alive using a Candle, but on arrival discovers the target is a child with experimental neural implants — the dielectric field may cause permanent damage rather than temporary paralysis.",
-    "The 'fade' bleed characteristic has been discovered to interact catastrophically with a specific brand of cardiac pacemaker implant, producing fatal arrhythmia. Arcturus is suppressing the information. A whistleblower wants it public."
+    "A Candle recovered from a crime scene has a serial number that traces back to a decommissioned Arcturus lot \u2014 but the lot was supposedly destroyed in a warehouse fire three years ago. Someone resurrected that shipment.",
+    "An operator is hired to capture a target alive using a Candle, but on arrival discovers the target is a child with experimental neural implants \u2014 the dielectric field may cause permanent damage rather than temporary paralysis.",
+    "The \u0027fade\u0027 bleed characteristic has been discovered to interact catastrophically with a specific brand of cardiac pacemaker implant, producing fatal arrhythmia. Arcturus is suppressing the information. A whistleblower wants it public."
   ],
   "ammunition_type": [
     "energy_cell"
@@ -48,6 +49,8 @@
     "tier 3",
     "lethal"
   ],
+  "image_prompt": "Product photography of the EDPE-5 \u0027Candle\u0027 entropic dielectric pulse emitter: weapon angled 45 degrees right on a dark matte surface, held by a gloved tactical hand from below. Dramatic side-lighting emphasizing the hexagonal barrel shroud geometry and brushed titanium accents. Show the recessed muzzle with faint amber glow at the aperture. Close detail on the power cell contacts and digital OLED readout. Matte charcoal polymer body catching hard light, shadows deep in the thermal vents. Neo-noir urban aesthetic with high-tech minimalism. Shot from above-right angle to showcase the full shroud profile. --ar 3:2 --v 6",
+  "dalle3_prompt": "",
   "parent_corponation": "Arcturus Defense Solutions",
   "related_entities": [
     "Alper Holmberg-Dembele",
@@ -56,35 +59,34 @@
     "Free Assembly",
     "GLMZ",
     "Narrowcast",
-    "Oluwaremilekun Vasić-Faanui",
+    "Oluwaremilekun Vasi\u0107-Faanui",
     "Philibert Mwangi-Djordjevic",
-    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Sterling-Nakamura Cascade Projector SN-7 \u0027Monsoon\u0027",
     "The Nearfield",
-    "Vantablack PA-1 'Pacifier'",
+    "Vantablack PA-1 \u0027Pacifier\u0027",
     "WELLSPRING",
     "West Engelheim"
   ],
   "physical_description": {
-    "visual_profile": "A compact, angular energy weapon with a distinctly flattened profile — more rifle than pistol, but streamlined for CQB environments. The hexagonal barrel shroud dominates the front end, giving it an almost architectural quality. The overall stance is aggressive yet controlled, suggesting precision engineering rather than brute force.",
+    "visual_profile": "A compact, angular energy weapon with a distinctly flattened profile \u2014 more rifle than pistol, but streamlined for CQB environments. The hexagonal barrel shroud dominates the front end, giving it an almost architectural quality. The overall stance is aggressive yet controlled, suggesting precision engineering rather than brute force.",
     "dimensions": "620mm length, 140mm width at shroud, approximately 95mm height at grip. Barrel shroud extends 85mm from muzzle.",
-    "weight_description": "Balanced and moderately hefty at 3.1kg unloaded — sits solidly in a two-handed grip without fatiguing the wrists. Power cell adds noticeable weight forward of the trigger guard, creating slight muzzle-down drift if held one-handed.",
+    "weight_description": "Balanced and moderately hefty at 3.1kg unloaded \u2014 sits solidly in a two-handed grip without fatiguing the wrists. Power cell adds noticeable weight forward of the trigger guard, creating slight muzzle-down drift if held one-handed.",
     "primary_material": "Aerospace-grade polymer chassis with titanium reinforcement ribs along the barrel shroud. Internal metamaterial aperture array housed in the hexagonal shroud.",
     "finish": "Matte polymer body with a subtle anti-reflective texture; hexagonal shroud features brushed titanium accents. Wear patterns cluster around grip edges and shroud contact points where operator hands meet frame.",
     "color_scheme": "Charcoal-black primary with silver-titanium hexagonal shroud. Power cell housing shows faint copper undertones where material composition shifts.",
-    "grip_texture": "Deeply textured polymer grip with fine crosshatching — provides purchase even in high-moisture environments or with synthetic hand coverings. Grip panel shows slight ergonomic curve favoring right-handed operation.",
+    "grip_texture": "Deeply textured polymer grip with fine crosshatching \u2014 provides purchase even in high-moisture environments or with synthetic hand coverings. Grip panel shows slight ergonomic curve favoring right-handed operation.",
     "distinctive_features": [
       "Hexagonal barrel shroud with visible aperture alignment marks along each face",
       "Recessed muzzle opening with faint amber LED indicator that illuminates during charge cycles",
-      "Proprietary Type-F power cell with quick-release latch — copper contacts visible when cell seated",
+      "Proprietary Type-F power cell with quick-release latch \u2014 copper contacts visible when cell seated",
       "Thermal vent slots along upper receiver, angled away from operator line of sight",
-      "Digital charge readout on left side of frame — small OLED screen showing remaining discharge count",
+      "Digital charge readout on left side of frame \u2014 small OLED screen showing remaining discharge count",
       "Trigger guard slightly overbuilt with reinforced polymer to accommodate gloved operation",
       "Mounting rail on upper receiver, standard ARCTURUS interface for scopes/targeting modules",
-      "Serial plate on right side of shroud — engraved with manufacturer mark (stylized 'ADS' logo)"
+      "Serial plate on right side of shroud \u2014 engraved with manufacturer mark (stylized \u0027ADS\u0027 logo)"
     ],
-    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS stamped in sans-serif lettering on the upper left receiver. Model designation 'EDPE-5' engraved below grip. Serial number on right side of hexagonal shroud in numerals. Small certification mark (circled 'R') near power cell housing.",
-    "condition_typical": "Field units show scuffing along the grip edges and localized wear on the shroud where operator hands contact during the 'sweep and fade' technique. Muzzle area shows slight discoloration from repeated discharge bleed cycles — faint amber patina on the aperture edges. Most service weapons maintain clean thermal vents and functional OLED readout, though some aftermarket modifications include protective shroud wraps."
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS stamped in sans-serif lettering on the upper left receiver. Model designation \u0027EDPE-5\u0027 engraved below grip. Serial number on right side of hexagonal shroud in numerals. Small certification mark (circled \u0027R\u0027) near power cell housing.",
+    "condition_typical": "Field units show scuffing along the grip edges and localized wear on the shroud where operator hands contact during the \u0027sweep and fade\u0027 technique. Muzzle area shows slight discoloration from repeated discharge bleed cycles \u2014 faint amber patina on the aperture edges. Most service weapons maintain clean thermal vents and functional OLED readout, though some aftermarket modifications include protective shroud wraps."
   },
-  "image_prompt": "Product photography of the EDPE-5 'Candle' entropic dielectric pulse emitter: weapon angled 45 degrees right on a dark matte surface, held by a gloved tactical hand from below. Dramatic side-lighting emphasizing the hexagonal barrel shroud geometry and brushed titanium accents. Show the recessed muzzle with faint amber glow at the aperture. Close detail on the power cell contacts and digital OLED readout. Matte charcoal polymer body catching hard light, shadows deep in the thermal vents. Neo-noir urban aesthetic with high-tech minimalism. Shot from above-right angle to showcase the full shroud profile. --ar 3:2 --v 6",
-  "visual_prompt": "Product photography of the EDPE-5 'Candle' entropic dielectric pulse emitter: weapon angled 45 degrees right on a dark matte surface, held by a gloved tactical hand from below. Dramatic side-lighting emphasizing the hexagonal barrel shroud geometry and brushed titanium accents. Show the recessed muzzle with faint amber glow at the aperture. Close detail on the power cell contacts and digital OLED readout. Matte charcoal polymer body catching hard light, shadows deep in the thermal vents. Neo-noir urban aesthetic with high-tech minimalism. Shot from above-right angle to showcase the full shroud profile. --ar 3:2 --v 6"
+  "visual_prompt": "Product photography of the EDPE-5 \u0027Candle\u0027 entropic dielectric pulse emitter: weapon angled 45 degrees right on a dark matte surface, held by a gloved tactical hand from below. Dramatic side-lighting emphasizing the hexagonal barrel shroud geometry and brushed titanium accents. Show the recessed muzzle with faint amber glow at the aperture. Close detail on the power cell contacts and digital OLED readout. Matte charcoal polymer body catching hard light, shadows deep in the thermal vents. Neo-noir urban aesthetic with high-tech minimalism. Shot from above-right angle to showcase the full shroud profile. --ar 3:2 --v 6"
 }

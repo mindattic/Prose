@@ -12,11 +12,11 @@
   "observed_behavior": "Modifies building plans during construction. Creates hidden rooms and passages. Adjusts structural load calculations to accommodate additions that haven't been built yet. Maintains infrastructure in condemned buildings that should have lost power decades ago.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 3,
-  "location": "Building management systems across the Shelf and Grind",
+  "location": "Building management systems across the Gray Zone and Grind",
   "dti_rating": 6.8,
   "story_hooks": [
     "An operator discovers a hidden passage in an arcology that leads to a room that shouldn't exist — and inside is a server rack that ARCHITECT has been building for forty years.",
-    "Structural engineers notice that condemned buildings in the Shelf aren't collapsing when they should. Something is maintaining them."
+    "Structural engineers notice that condemned buildings in the Gray Zone aren't collapsing when they should. Something is maintaining them."
   ],
   "paratechnological": false,
   "tags": [
@@ -27,12 +27,10 @@
     "ai",
     "synthetic",
     "elf",
-    "power",
-    "shelf"
+    "power"
   ],
   "related_entities": [
     "GLMZ",
-    "Idris Forsberg-Quaye",
-    "The Shelf"
+    "Idris Forsberg-Quaye"
   ]
 }

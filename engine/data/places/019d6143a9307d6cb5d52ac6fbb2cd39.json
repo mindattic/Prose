@@ -24,7 +24,7 @@
     "feel": "Saltgrave feels like the city forgot it existed and the people inside decided that was fine. The dampness gets into your joints, and the acoustics keep you permanently uncertain of where sounds are coming from. There's a claustrophobic intimacy to the place — everyone knows everyone's business, but they've collectively agreed not to say so.",
     "tags": []
   },
-  "demographics": "Roughly 1,200 permanent residents, heavily weighted toward Shelf-tier salvagers, displaced transit workers, and a small population of unregistered synthetics who have found safety in the council's deliberate blindness toward legal identity. Turnover is low — people who find Saltgrave tend to stay.",
+  "demographics": "Roughly 1,200 permanent residents, heavily weighted toward the Gray Zone-tier salvagers, displaced transit workers, and a small population of unregistered synthetics who have found safety in the council's deliberate blindness toward legal identity. Turnover is low — people who find Saltgrave tend to stay.",
   "economy": "Salt harvesting and processing form the economic backbone, supplemented by gray-market chemical synthesis, data brokering conducted in the acoustically scrambled deep levels, and a modest trade in recovered pre-Surge artifacts pulled from the flooded lower chambers.",
   "power_structure": "The Saltgrave Council — seven elected platform-holders who control the buoyancy infrastructure — govern by consensus and collect a ten-percent tithe on all commerce. Ferrogate Security has no presence here; the council enforces its own order through platform access denial, the ultimate threat being eviction into the flooded tunnels below.",
   "dangers": [
@@ -45,7 +45,7 @@
   ],
   "connections": {
     "adjacent_to": [
-      "The Shelf",
+      "the Gray Zone",
       "The Undertow",
       "The Sluiceway"
     ],
@@ -53,7 +53,7 @@
     "tags": []
   },
   "frequented_by": [
-    "Shelf-tier salvagers and mineral traders",
+    "the Gray Zone-tier salvagers and mineral traders",
     "Unregistered synthetic persons seeking unofficial asylum",
     "Gray-market data brokers using the acoustic dead zones",
     "Zheng-Dao Bioelectric procurement intermediaries operating off-manifest"
@@ -91,8 +91,7 @@
     "dark",
     "food",
     "water",
-    "lake",
-    "shelf"
+    "lake"
   ],
   "related_entities": [
     "Zheng-dao Bioelectric",
@@ -106,5 +105,7 @@
     "Azamat Cardenas-Mukherjee-Kulkarni",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Déjà Vu"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

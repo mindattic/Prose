@@ -3,7 +3,7 @@
   "type": "place",
   "name": "Beverlynn Heights",
   "aliases": [],
-  "description": "Beverlynn Heights is the anomaly that proves the rule. In a megacity where elevation is purchased through arcology construction and Spire access fees, the Ridge is naturally high ground — a geological feature, a glacial moraine that predates the city by ten thousand years. The hills that made old Beverly distinctive are still here, and in a GLMZ where low ground floods and high ground costs money, that elevation has become the district's defining asset. Beverlynn Heights sits above the waterline, above the drainage problems, above the flooding that reshapes the lower Shelf with every major storm. It is, quite literally, higher than its neighbors, and everything about the district flows from that fact.\n\nThe historic homes are the second inheritance. Beverly was one of Chicago's most architecturally significant neighborhoods — Victorian mansions, Prairie School houses, Arts and Crafts bungalows built along the ridge with the confidence of people who expected permanence. Many of these homes survived the Consolidation because they were too well-built to fall down and too beautiful to demolish without generating the kind of public outcry that even corporations prefer to avoid. The result is a residential district that looks like a preserved historical exhibit in the middle of the Shelf — tree-lined streets, actual grass lawns, homes with ornamental details that serve no function except to assert that someone once cared about beauty for its own sake.\n\nThe Irish-American cultural identity that characterized pre-Consolidation Beverly has persisted in modified form. The St. Patrick's Day parade — or its successor, the Ridge March — still happens annually, a procession through streets that would be unrecognizable to the parade's founders but stubbornly maintain the tradition. The pubs are still here, though they now serve a clientele that is more diverse than the original demographic — the Ridge's relative safety and maintained infrastructure attract residents from across the southern Shelf's ethnic spectrum, and the old Irish families have, with varying degrees of grace, accommodated the change.\n\nBeverlynn Heights is Tier 2 — a genuine, stable Tier 2, which makes it an island of relative privilege in a sea of Tier 1 and untier-ed districts. This status is maintained through a combination of property values, a functional homeowners' association that doubles as a governance body, and a quiet arrangement with Helion Civic Services that provides basic infrastructure maintenance in exchange for data access and a promise not to make trouble. The arrangement is the district's open secret and its central moral compromise: Beverlynn Heights has working streetlights and water pressure because it agreed to be monitored, and the residents who benefit from that deal try not to think too hard about what Helion does with the data, or about the neighbors who live three blocks downhill in districts where the streetlights went dark years ago.",
+  "description": "Beverlynn Heights is the anomaly that proves the rule. In a megacity where elevation is purchased through arcology construction and Spire access fees, the Ridge is naturally high ground — a geological feature, a glacial moraine that predates the city by ten thousand years. The hills that made old Beverly distinctive are still here, and in a GLMZ where low ground floods and high ground costs money, that elevation has become the district's defining asset. Beverlynn Heights sits above the waterline, above the drainage problems, above the flooding that reshapes the Gray Zone with every major storm. It is, quite literally, higher than its neighbors, and everything about the district flows from that fact.\n\nThe historic homes are the second inheritance. Beverly was one of Chicago's most architecturally significant neighborhoods — Victorian mansions, Prairie School houses, Arts and Crafts bungalows built along the ridge with the confidence of people who expected permanence. Many of these homes survived the Consolidation because they were too well-built to fall down and too beautiful to demolish without generating the kind of public outcry that even corporations prefer to avoid. The result is a residential district that looks like a preserved historical exhibit in the middle of the Gray Zone — tree-lined streets, actual grass lawns, homes with ornamental details that serve no function except to assert that someone once cared about beauty for its own sake.\n\nThe Irish-American cultural identity that characterized pre-Consolidation Beverly has persisted in modified form. The St. Patrick's Day parade — or its successor, the Ridge March — still happens annually, a procession through streets that would be unrecognizable to the parade's founders but stubbornly maintain the tradition. The pubs are still here, though they now serve a clientele that is more diverse than the original demographic — the Ridge's relative safety and maintained infrastructure attract residents from across the southern the Gray Zone's ethnic spectrum, and the old Irish families have, with varying degrees of grace, accommodated the change.\n\nBeverlynn Heights is Tier 2 — a genuine, stable Tier 2, which makes it an island of relative privilege in a sea of Tier 1 and untier-ed districts. This status is maintained through a combination of property values, a functional homeowners' association that doubles as a governance body, and a quiet arrangement with Helion Civic Services that provides basic infrastructure maintenance in exchange for data access and a promise not to make trouble. The arrangement is the district's open secret and its central moral compromise: Beverlynn Heights has working streetlights and water pressure because it agreed to be monitored, and the residents who benefit from that deal try not to think too hard about what Helion does with the data, or about the neighbors who live three blocks downhill in districts where the streetlights went dark years ago.",
   "atmosphere": {
     "sights": [
       "Victorian and Prairie School homes along the ridge, their ornamental details intact, maintained with fierce proprietary pride",
@@ -20,7 +20,7 @@
       "The wind along the moraine — higher here, colder, cleaner"
     ],
     "smells": [
-      "Trees and grass — organic, living smells that the lower Shelf does not have",
+      "Trees and grass — organic, living smells that the the Gray Zone does not have",
       "Pub interiors — wood, beer, the accumulated scent of decades of occupation",
       "Clean air — not filtered, not processed, just naturally better because of the elevation",
       "Cooking from residential kitchens — not street food, not nutri-paste, actual home-cooked meals"
@@ -28,8 +28,8 @@
     "feel": "Guilty comfort. Beverlynn Heights feels like a place that knows it has something the surrounding districts do not, and cannot fully reconcile that awareness with its enjoyment of the privilege. The beauty is real — the trees, the homes, the view — but it is beauty maintained through compromise, and the compromise is visible in the Helion monitoring nodes tucked discreetly into the historic architecture.",
     "tags": []
   },
-  "demographics": "Historically Irish-American, now increasingly diverse as the ridge's relative stability attracts residents from across the southern Shelf's ethnic spectrum. Solidly Tier 2 with some Tier 3 households along the ridge crest. Population approximately 10,000-14,000. Aging but slowly diversifying.",
-  "economy": "Property values sustain the local economy — Beverlynn Heights has the highest home values in the southern Shelf, which supports a small service economy of maintenance, renovation, and the three pubs that function as community institutions. Some residents commute to corporate employment in the Meridian Core. The homeowners' association collects dues that fund infrastructure maintenance beyond what Helion provides.",
+  "demographics": "Historically Irish-American, now increasingly diverse as the ridge's relative stability attracts residents from across the southern the Gray Zone's ethnic spectrum. Solidly Tier 2 with some Tier 3 households along the ridge crest. Population approximately 10,000-14,000. Aging but slowly diversifying.",
+  "economy": "Property values sustain the local economy — Beverlynn Heights has the highest home values in the southern the Gray Zone, which supports a small service economy of maintenance, renovation, and the three pubs that function as community institutions. Some residents commute to corporate employment in the Meridian Core. The homeowners' association collects dues that fund infrastructure maintenance beyond what Helion provides.",
   "power_structure": "The Beverlynn Heights Homeowners' Association is the governing body — officially advisory, effectively legislative. The Association negotiates directly with Helion Civic Services, manages community standards, and controls property transactions within the district through a right-of-first-refusal covenant. Association board membership is elected but practically limited to established property owners, creating a de facto oligarchy of longtime residents.",
   "dangers": [
     "The Helion monitoring arrangement — data harvested from every connected device in the district flows to corporate databases",
@@ -39,7 +39,7 @@
     "Isolation from surrounding districts, which increasingly view the Ridge with resentment rather than aspiration"
   ],
   "opportunities": [
-    "Stable, functional housing in maintained historic structures — genuine quality of life in the southern Shelf",
+    "Stable, functional housing in maintained historic structures — genuine quality of life in the southern the Gray Zone",
     "The Homeowners' Association is a functional governance model that could be studied or replicated",
     "The ridge's elevation provides line-of-sight communication advantages for anyone with the right equipment",
     "The pubs function as neutral meeting ground — the Ridge's reputation for stability makes it acceptable territory for negotiations",
@@ -62,7 +62,7 @@
   },
   "frequented_by": [
     "Homeowners' Association members and their social networks",
-    "Pub regulars from across the southern Shelf — the Ridge's neutrality draws visitors",
+    "Pub regulars from across the southern the Gray Zone — the Ridge's neutrality draws visitors",
     "Helion Civic Services maintenance crews on regular schedules",
     "Property scouts assessing ridge-crest development potential",
     "Residents of lower districts visiting for the trees, the air, and the reminder that functional neighborhoods are possible"
@@ -90,7 +90,6 @@
     "guilt",
     "chase",
     "water",
-    "shelf",
     "spire"
   ],
   "related_entities": [
@@ -102,5 +101,7 @@
     "Ouroboros Energy Helion Compact Reactor",
     "Ngozi Morimoto",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
-  ]
+  ],
+  "zone": "Z6",
+  "controllingCorponation": null
 }

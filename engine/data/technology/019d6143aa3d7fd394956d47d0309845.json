@@ -1,13 +1,14 @@
 {
   "id": "019d6143aa3d7fd394956d47d0309845",
+  "rating": 30,
   "name": "Helix Biosystems Accelerated Bone Grafting System",
   "brand_name": "Helix",
   "product_name": "Helix Biosystems Accelerated Bone Grafting System",
   "type": "technology",
   "aliases": [],
   "subcategory": "medical",
-  "description": "A medical system that fabricates custom bone grafts from the patient's own cells in 24 hours and integrates them into the skeletal system through a minimally invasive procedure. The ABGS scans the injury site, 3D-prints a bone scaffold seeded with the patient's osteoblasts, and implants it through a small incision where it bonds with existing bone within two weeks. The technology has made fractures, bone loss, and skeletal augmentation foundation work routine procedures rather than months-long recovery processes.",
-  "tier_availability": "Tier 2+",
+  "description": "A medical system that fabricates custom bone grafts from the patient\u0027s own cells in 24 hours and integrates them into the skeletal system through a minimally invasive procedure. The ABGS scans the injury site, 3D-prints a bone scaffold seeded with the patient\u0027s osteoblasts, and implants it through a small incision where it bonds with existing bone within two weeks. The technology has made fractures, bone loss, and skeletal augmentation foundation work routine procedures rather than months-long recovery processes.",
+  "tier_availability": "Tier 2\u002B",
   "developers": [
     "HELIX BIOSYSTEMS"
   ],
@@ -22,10 +23,10 @@
     "Skeletal augmentation foundation preparation",
     "Bone loss reversal"
   ],
-  "social_impact": "ABGS has made skeletal augmentation accessible by solving the foundation problem — cyberware requires bone strong enough to anchor to, and ABGS can reinforce any skeleton to augmentation-ready specifications. This has expanded the augmentation market significantly while creating new demand for bone-anchored implants that previously required natural skeletal density only a fraction of the population possessed.",
+  "social_impact": "ABGS has made skeletal augmentation accessible by solving the foundation problem \u2014 cyberware requires bone strong enough to anchor to, and ABGS can reinforce any skeleton to augmentation-ready specifications. This has expanded the augmentation market significantly while creating new demand for bone-anchored implants that previously required natural skeletal density only a fraction of the population possessed.",
   "story_hooks": [
-    "An ABGS scaffold has been fabricated with a hollow core containing a data storage device — someone is hiding information inside the bones of a willing or unwilling patient.",
-    "A black market ABGS operator is reinforcing skeletons for bare-knuckle fighters — the bone grafts make their fists capable of punching through body armor."
+    "An ABGS scaffold has been fabricated with a hollow core containing a data storage device \u2014 someone is hiding information inside the bones of a willing or unwilling patient.",
+    "A black market ABGS operator is reinforcing skeletons for bare-knuckle fighters \u2014 the bone grafts make their fists capable of punching through body armor."
   ],
   "tags": [
     "medical",
@@ -38,11 +39,6 @@
     "armor",
     "tier 2"
   ],
-  "parent_corponation": "",
-  "related_entities": [
-    "Anatoliy Faye-Nkrumah",
-    "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
-    "Eshe Pena-Baah",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

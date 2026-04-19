@@ -13,7 +13,7 @@
   "price": "Φ15.00",
   "popularity_rank": 14,
   "slogan": "Your air. Your zone.",
-  "cultural_context": "In the Shelf, full-room air recyclers are often shared between families. A personal fan filter gives you a small zone of clean air at your desk or bedside. It's individualized survival in a shared-resource environment.",
+  "cultural_context": "In the Gray Zone, full-room air recyclers are often shared between families. A personal fan filter gives you a small zone of clean air at your desk or bedside. It's individualized survival in a shared-resource environment.",
   "story_hooks": [
     "AtmoTech markets the personal fan to individuals but its filter creates a dead zone that pulls clean air from the shared room environment — one person's clean air is everyone else's dirtier air."
   ],
@@ -23,7 +23,6 @@
     "consumer_good",
     "fan",
     "filter",
-    "shelf",
     "tier_1",
     "tier_2",
     "tier_3"
@@ -31,7 +30,6 @@
   "parent_corponation": "",
   "related_entities": [
     "Hearthstone Firearms Guardian-12 'Bedside'",
-    "The Burnline",
-    "The Shelf"
+    "The Burnline"
   ]
 }

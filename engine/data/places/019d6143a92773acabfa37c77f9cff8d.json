@@ -3,7 +3,7 @@
   "type": "place",
   "name": "GLMZ",
   "aliases": [],
-  "description": "GLMZ is the official corporate-administrative designation for the continuous urban sprawl covering the entire western shore of Lake Michigan, extending north through Lake Superior's southern coast and into Canadian territory. The name derives from the 88th meridian west, the longitudinal line that roughly bisects the urban mass at its widest point near old Chicago. Nobody who lives here calls it that. To the corps it is GLMZ, a regulated economic zone. To everyone else it is the Corridor, the Spine, or just the city — singular, because after two centuries of unchecked growth, the distinction between Chicago, Milwaukee, Green Bay, and the Fox Cities dissolved into one continuous concrete nervous system stretching over 500 kilometers from the Indiana border to the Canadian frontier.\n\nThe sprawl is not uniform. The dense urban core — old Chicago, the Shelf, the Spire, the Circuit — is the heart, where 60 million people stack vertically in arcology towers and cling to the sea wall over Lake Michigan. North of the core, the density thins but never stops: Milwaukee's thirteen districts bleed into Sheboygan's industrial lakeshore, which bleeds into the Fox Cities Nexus and its 200 data centers, which bleeds into Green Bay's Lambeau Terminus, which bleeds into the contested Upper Peninsula frontier. Even the spaces between are not empty — they are filled with maglev corridors, troll bridges, ungoverned zones, and the infrastructure arteries that keep 80 million people fed, powered, and surveilled.\n\nThe population is estimated at 80 million registered citizens across all tiers. The excluded and undocumented push the real number past 100 million. GLMZ contains hundreds of named districts, neighborhoods, and zones — from the Spire's corporate apex to the Shelf's unlicensed construction jutting over the lake, from the flooded ruins of Old Harbor to the contested mining towns of the Upper Peninsula. Between and beneath them lie the ungoverned corridors — the gaps in jurisdiction where corporate sovereignty ends and nothing replaces it. The western shore of Lake Michigan is not a city that grew. It is a civilization that metastasized.",
+  "description": "GLMZ is the official corporate-administrative designation for the continuous urban sprawl covering the entire western shore of Lake Michigan, extending north through Lake Superior's southern coast and into Canadian territory. The name derives from the 88th meridian west, the longitudinal line that roughly bisects the urban mass at its widest point near old Chicago. Nobody who lives here calls it that. To the corps it is GLMZ, a regulated economic zone. To everyone else it is the Corridor, the Spine, or just the city — singular, because after two centuries of unchecked growth, the distinction between Chicago, Milwaukee, Green Bay, and the Fox Cities dissolved into one continuous concrete nervous system stretching over 500 kilometers from the Indiana border to the Canadian frontier.\n\nThe sprawl is not uniform. The dense urban core — old Chicago, the Gray Zone, the Spire, the Circuit — is the heart, where 60 million people stack vertically in arcology towers and cling to the sea wall over Lake Michigan. North of the core, the density thins but never stops: Milwaukee's thirteen districts bleed into Sheboygan's industrial lakeshore, which bleeds into the Fox Cities Nexus and its 200 data centers, which bleeds into Green Bay's Lambeau Terminus, which bleeds into the contested Upper Peninsula frontier. Even the spaces between are not empty — they are filled with maglev corridors, troll bridges, ungoverned zones, and the infrastructure arteries that keep 80 million people fed, powered, and surveilled.\n\nThe population is estimated at 80 million registered citizens across all tiers. The excluded and undocumented push the real number past 100 million. GLMZ contains hundreds of named districts, neighborhoods, and zones — from the Spire's corporate apex to the Gray Zone's unlicensed construction jutting over the lake, from the flooded ruins of Old Harbor to the contested mining towns of the Upper Peninsula. Between and beneath them lie the ungoverned corridors — the gaps in jurisdiction where corporate sovereignty ends and nothing replaces it. The western shore of Lake Michigan is not a city that grew. It is a civilization that metastasized.",
   "atmosphere": {
     "sights": [
       "Arcology towers punching through permanent haze layers",
@@ -51,7 +51,7 @@
       "The Spire (corporate apex — upper tiers)",
       "The Meridian Core (mid-tier commerce and housing)",
       "The Circuit (tech district and gray market)",
-      "The Shelf (working poor, excluded, Kyle's home)",
+      "the Gray Zone (working poor, excluded, Kyle's home)",
       "Old Harbor (flooded industrial ruins)",
       "The Threshold (Evanston — northern border of the core)",
       "Milwaukee Core (northern urban mass)",
@@ -102,7 +102,6 @@
     "refugee",
     "drone",
     "lake",
-    "shelf",
     "spire",
     "circuit",
     "old harbor"
@@ -124,5 +123,7 @@
     "Ngozi Morimoto",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
     "Tessera TK-20 Apex 'Mandate'"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

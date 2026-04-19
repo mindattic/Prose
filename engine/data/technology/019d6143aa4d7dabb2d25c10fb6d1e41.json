@@ -1,13 +1,14 @@
 {
   "id": "019d6143aa4d7dabb2d25c10fb6d1e41",
+  "rating": 80,
   "name": "Sterling-Nakamura Augmented Reality Court System",
   "brand_name": "Sterling",
   "product_name": "Sterling-Nakamura Augmented Reality Court System",
   "type": "technology",
   "aliases": [],
   "subcategory": "computing",
-  "description": "A judicial system that conducts legal proceedings entirely through augmented reality, with judges, attorneys, witnesses, and juries participating from remote locations through holographic representation. The ARCS enables courts to process cases at dramatically higher throughput than physical courtrooms, with AI-assisted evidence analysis, real-time precedent citation, and automated procedural management. The system also enables anonymous jury participation — jurors appear as avatars, protecting them from intimidation while raising questions about accountability.",
-  "tier_availability": "Tier 3+",
+  "description": "A judicial system that conducts legal proceedings entirely through augmented reality, with judges, attorneys, witnesses, and juries participating from remote locations through holographic representation. The ARCS enables courts to process cases at dramatically higher throughput than physical courtrooms, with AI-assisted evidence analysis, real-time precedent citation, and automated procedural management. The system also enables anonymous jury participation \u2014 jurors appear as avatars, protecting them from intimidation while raising questions about accountability.",
+  "tier_availability": "Tier 3\u002B",
   "developers": [
     "STERLING-NAKAMURA"
   ],
@@ -24,8 +25,8 @@
   ],
   "social_impact": "The ARCS has made justice faster and more accessible but has also stripped it of the gravity and human presence that physical courtrooms provide. Defendants face holographic prosecutors, sentences are delivered through speakers, and the entire proceeding can feel like an administrative process rather than a reckoning. Defense attorneys argue that the dehumanization of the courtroom systematically disadvantages defendants, who appear as avatars rather than flesh-and-blood people capable of eliciting empathy.",
   "story_hooks": [
-    "An ARCS proceeding was compromised — someone replaced the holographic testimony of a key witness with a deep-fake that said the opposite of what the real witness intended, and the substitution was not detected until after the verdict.",
-    "A juror in an anonymous ARCS trial has been identified through their avatar's behavioral patterns — the jury pool's anonymity has been broken, and the jurors are being contacted by parties with interest in the verdict."
+    "An ARCS proceeding was compromised \u2014 someone replaced the holographic testimony of a key witness with a deep-fake that said the opposite of what the real witness intended, and the substitution was not detected until after the verdict.",
+    "A juror in an anonymous ARCS trial has been identified through their avatar\u0027s behavioral patterns \u2014 the jury pool\u0027s anonymity has been broken, and the jurors are being contacted by parties with interest in the verdict."
   ],
   "tags": [
     "computing",
@@ -35,8 +36,6 @@
     "justice",
     "tier 3"
   ],
-  "parent_corponation": "",
-  "related_entities": [
-    "Arcturus ST-4 'Verdict'"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

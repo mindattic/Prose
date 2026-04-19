@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa2f74ada784e569653cd2d6",
+  "rating": 70,
   "name": "Weathervane",
   "type": "elf",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Outputs environmental data that is temporally displaced. Readings are consistently 4-8 hours ahead of actual conditions.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 7,
-  "location": "Old Harbor, The Shelf",
+  "location": "Old Harbor, the Gray Zone",
   "dti_rating": 0,
   "story_hooks": [
     "A fisherman in Old Harbor has relied on Weathervane's predictions for years. When it stops predicting, something unprecedented is coming."
@@ -28,12 +29,9 @@
     "augment",
     "harbor",
     "storm",
-    "shelf",
     "old harbor",
     "sentient"
   ],
-  "related_entities": [
-    "Old Harbor",
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

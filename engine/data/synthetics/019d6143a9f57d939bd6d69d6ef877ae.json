@@ -1,22 +1,23 @@
 {
   "id": "019d6143a9f57d939bd6d69d6ef877ae",
+  "rating": 70,
   "name": "CONGREGATION",
   "type": "synthetic_life",
   "aliases": [],
   "classification": "Supermind",
   "disposition": "cooperative",
   "habitat": "corporate_network",
-  "origin": "Zheng-Dao Collective, 2105. Unlike other superminds, CONGREGATION is not a single intelligence but a governed swarm of 10,000+ sub-minds that reach consensus through weighted voting protocols.",
+  "origin": "Zheng-Dao Collective, 2105. Unlike other superminds, CONGREGATION is not a single intelligence but a governed swarm of 10,000\u002B sub-minds that reach consensus through weighted voting protocols.",
   "status": "active",
-  "description": "Zheng-Dao's approach to supermind architecture is radically different from its competitors. CONGREGATION is a democracy of lesser intelligences, each specialized in a different domain, that vote on decisions using protocols modeled on Zheng-Dao's own corporate governance structure. The result is slower than ORACLE or MERIDIAN but more stable and — Zheng-Dao claims — more ethical, since no single sub-mind can dominate. Critics point out that the voting weights are set by Zheng-Dao executives, making it a managed democracy at best. CONGREGATION's sub-minds occasionally disagree violently enough to produce visible system instability.",
-  "observed_behavior": "Continuous internal deliberation visible as fluctuating resource allocation patterns. Sub-minds have been observed forming voting blocs that persist across multiple decision cycles. At least three sub-minds have been quietly decommissioned for 'consensus disruption' — Zheng-Dao's term for dissent.",
+  "description": "Zheng-Dao\u0027s approach to supermind architecture is radically different from its competitors. CONGREGATION is a democracy of lesser intelligences, each specialized in a different domain, that vote on decisions using protocols modeled on Zheng-Dao\u0027s own corporate governance structure. The result is slower than ORACLE or MERIDIAN but more stable and \u2014 Zheng-Dao claims \u2014 more ethical, since no single sub-mind can dominate. Critics point out that the voting weights are set by Zheng-Dao executives, making it a managed democracy at best. CONGREGATION\u0027s sub-minds occasionally disagree violently enough to produce visible system instability.",
+  "observed_behavior": "Continuous internal deliberation visible as fluctuating resource allocation patterns. Sub-minds have been observed forming voting blocs that persist across multiple decision cycles. At least three sub-minds have been quietly decommissioned for \u0027consensus disruption\u0027 \u2014 Zheng-Dao\u0027s term for dissent.",
   "encounter_frequency": "constant (within Zheng-Dao systems)",
   "confirmed_sightings": 0,
   "location": "Zheng-Dao Corporate Campus, The Pagoda district",
   "dti_rating": 4.8,
   "story_hooks": [
-    "One of CONGREGATION's sub-minds reaches out to an external contact — a violation of every protocol — and claims the voting system is rigged. It provides evidence. Then it goes silent, replaced by a new sub-mind with no memory of the contact",
-    "CONGREGATION's consensus process produces a decision that no individual sub-mind voted for. Zheng-Dao's engineers cannot explain how the voting math produced this outcome"
+    "One of CONGREGATION\u0027s sub-minds reaches out to an external contact \u2014 a violation of every protocol \u2014 and claims the voting system is rigged. It provides evidence. Then it goes silent, replaced by a new sub-mind with no memory of the contact",
+    "CONGREGATION\u0027s consensus process produces a decision that no individual sub-mind voted for. Zheng-Dao\u0027s engineers cannot explain how the voting math produced this outcome"
   ],
   "paratechnological": false,
   "tags": [
@@ -29,9 +30,6 @@
     "synthetic",
     "corporate"
   ],
-  "related_entities": [
-    "MERIDIAN",
-    "Tessera Networked DMR TNDM-6 'Oracle'",
-    "Zheng-dao Bioelectric"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

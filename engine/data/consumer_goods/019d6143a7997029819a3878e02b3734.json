@@ -7,7 +7,7 @@
   "category": "candy",
   "subcategory": "gummies",
   "manufacturer": "Varsin Collective (worker-owned micro-brand, Tier 2)",
-  "description": "Ring-shaped gummies in deep magenta, made with synth-hibiscus concentrate and tamarind puree pulled from vat-grown stock. The Varsin Collective operates out of a shared production facility in the Shelf-adjacent district of Ward 9 and donates a portion of proceeds to community food access programs.",
+  "description": "Ring-shaped gummies in deep magenta, made with synth-hibiscus concentrate and tamarind puree pulled from vat-grown stock. The Varsin Collective operates out of a shared production facility in the Gray Zone-adjacent district of Ward 9 and donates a portion of proceeds to community food access programs.",
   "flavor_profile": "Floral and tart hibiscus upfront, quickly joined by a fruity, tangy tamarind depth — pleasantly sticky, medium chew",
   "tier_availability": "Tier 2-3",
   "price": "Φ2.60 for a pouch of 15",
@@ -30,7 +30,6 @@
     "money",
     "market",
     "food",
-    "shelf",
     "tier 2",
     "tier 3"
   ],
@@ -38,7 +37,6 @@
   "related_entities": [
     "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
     "Osvaldo Mensah-Kovalenko",
-    "The Collective",
-    "The Shelf"
+    "The Collective"
   ]
 }

@@ -9,8 +9,8 @@
   "role": "Corporate Debt Arbitrator / Enforcer",
   "age": 41,
   "status": "active",
-  "location": "The Meridian Core (office), The Shelf (field operations), near State and Madison",
-  "description": "Kit Ionescu-Hosseini occupies the precise, bloodless space between corporate law and corporate violence. Employed by Synclaire Financial Holdings as a Tier-1 Debt Resolution Specialist, she operates from a glass-walled office forty floors above the street, surrounded by cascading ledgers of names, outstanding balances, and algorithmic threat assessments. She is tall, angular, with close-cropped silver hair she began dyeing at thirty-two—not to look older, but because she said gray suited the work. Her skin is a deep warm brown, her face carefully composed into something that reads as neither cruel nor kind, just precise.\n\nIn the field, Thessaly moves through The Shelf like a tax collector moving through a famine. She dresses in muted corporate silvers and blacks, carries no visible weapon, and speaks in the measured cadence of someone reading aloud from a contract. She has never personally broken anyone's hands—she simply arrives, states the terms, and leaves the consequences to mathematics and to the two silent augmented associates who accompany her like footnotes. The residents of The Shelf call her Pale Mouth because of the white-tinted lip pigment she wears, and because of what comes out of it.\n\nThessaly was not born into the Meridian Core. She grew up in Old Harbor in a household that owed money to four separate creditors simultaneously, and she watched her mother perform an exhausting, humiliating arithmetic of survival every single week. She told herself she would learn the language of debt so fluently that it could never be used against her again. She did. She now speaks it against others with a fluency that frightens even her superiors, though none of them would say so aloud.",
+  "location": "The Meridian Core (office), the Gray Zone (field operations), near State and Madison",
+  "description": "Kit Ionescu-Hosseini occupies the precise, bloodless space between corporate law and corporate violence. Employed by Synclaire Financial Holdings as a Tier-1 Debt Resolution Specialist, she operates from a glass-walled office forty floors above the street, surrounded by cascading ledgers of names, outstanding balances, and algorithmic threat assessments. She is tall, angular, with close-cropped silver hair she began dyeing at thirty-two—not to look older, but because she said gray suited the work. Her skin is a deep warm brown, her face carefully composed into something that reads as neither cruel nor kind, just precise.\n\nIn the field, Thessaly moves through the Gray Zone like a tax collector moving through a famine. She dresses in muted corporate silvers and blacks, carries no visible weapon, and speaks in the measured cadence of someone reading aloud from a contract. She has never personally broken anyone's hands—she simply arrives, states the terms, and leaves the consequences to mathematics and to the two silent augmented associates who accompany her like footnotes. The residents of the Gray Zone call her Pale Mouth because of the white-tinted lip pigment she wears, and because of what comes out of it.\n\nThessaly was not born into the Meridian Core. She grew up in Old Harbor in a household that owed money to four separate creditors simultaneously, and she watched her mother perform an exhausting, humiliating arithmetic of survival every single week. She told herself she would learn the language of debt so fluently that it could never be used against her again. She did. She now speaks it against others with a fluency that frightens even her superiors, though none of them would say so aloud.",
   "psychology": {
     "facet_weights": {
       "wound": 0.85,
@@ -61,7 +61,7 @@
     {
       "name": "Dae-jung Seo",
       "type": "Professional antagonism / Mutual awareness",
-      "description": "Thessaly has crossed paths with Dae-jung's network through debt collection actions in The Shelf. She has noted his organizational patterns with professional respect and flagged him as a systemic liability rather than a personal threat.",
+      "description": "Thessaly has crossed paths with Dae-jung's network through debt collection actions in the Gray Zone. She has noted his organizational patterns with professional respect and flagged him as a systemic liability rather than a personal threat.",
       "emotional_core": "Guarded recognition—she sees in his resistance something she chose not to do",
       "story_tension": "She could dismantle his community infrastructure legally and bloodlessly. She has not yet done so. She isn't sure why."
     },
@@ -88,7 +88,7 @@
   ],
   "narrative_function": "Thessaly functions as a mirror and moral pressure point—a character who chose institutional power as survival and now enforces the exact conditions she escaped, forcing other characters (and the reader) to reckon with how systems perpetuate themselves through the people they wound. She is neither villain nor redeemed figure, but a sustained ethical question.",
   "augmentations": "Subdermal financial-grade memory implant storing encrypted contractual data (Synclaire-issued, Synclaire-monitored),Ocular overlay with real-time credit tier assessment and biometric stress-reading (helps her know when someone is lying about their ability to pay),Voluntary nerve-dampening implant in her hands—she had it installed after a field incident years ago and has never fully explained why",
-  "daily_life": "Wakes at 05:30, reviews overnight account activity, takes precisely forty minutes for a breakfast she prepares herself as one act of non-optimized time. Travels to the Meridian Core via secured transit. Processes between eight and twenty accounts per day depending on complexity. Field visits to The Shelf occur twice weekly on a rotating schedule. Returns home by 20:00. Reads physical books for two hours. Does not socialize with colleagues. Calls her mother every other Sunday.",
+  "daily_life": "Wakes at 05:30, reviews overnight account activity, takes precisely forty minutes for a breakfast she prepares herself as one act of non-optimized time. Travels to the Meridian Core via secured transit. Processes between eight and twenty accounts per day depending on complexity. Field visits to the Gray Zone occur twice weekly on a rotating schedule. Returns home by 20:00. Reads physical books for two hours. Does not socialize with colleagues. Calls her mother every other Sunday.",
   "affiliation": "Synclaire Financial Holdings (Tier-1 employee, Debt Resolution Division)",
   "uses_facets": false,
   "narration_voice": "",
@@ -246,7 +246,6 @@
     "Forty Floors and Falling (No One Catches)",
     "The Circuit",
     "The Nearfield",
-    "The Shelf",
     "ShieldTech SB-3 'Groundstrike'",
     "Chimera-Null",
     "Circuit",

@@ -1,5 +1,6 @@
 {
   "id": "019d6143a9f3721ab2c7cec74bb1bf6a",
+  "rating": 70,
   "name": "Coinflip",
   "type": "elf",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Applies a random multiplier (0x or 2x) to transactions under Φ10. The probability is genuinely random — tested extensively by frustrated merchants.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 23,
-  "location": "Shelf markets, food stalls",
+  "location": "the Gray Zone markets, food stalls",
   "dti_rating": 0,
   "story_hooks": [
     "A gambler realizes Coinflip can be predicted by analyzing its parent AI's risk patterns — they start exploiting it, then Coinflip changes its pattern"
@@ -27,11 +28,8 @@
     "ai",
     "market",
     "food",
-    "shelf",
     "sentient"
   ],
-  "related_entities": [
-    "Idris Forsberg-Quaye",
-    "Nnamdi Ostrowski-Faletolu"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

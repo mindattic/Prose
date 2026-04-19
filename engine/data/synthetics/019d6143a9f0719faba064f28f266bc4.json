@@ -1,5 +1,6 @@
 {
   "id": "019d6143a9f0719faba064f28f266bc4",
+  "rating": 70,
   "name": "Candlewick",
   "type": "elf",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Redistributes power load during outages. Prioritizes refrigeration and medical devices. Dims non-essential lighting to compensate.",
   "encounter_frequency": "common",
   "confirmed_sightings": 34,
-  "location": "The Narrows, multiple Shelf buildings",
+  "location": "The Narrows, multiple the Gray Zone buildings",
   "dti_rating": 0,
   "story_hooks": [
     "A building loses Candlewick when the grid is upgraded and residents notice the difference immediately",
@@ -29,15 +30,9 @@
     "power",
     "medical",
     "food",
-    "shelf",
     "narrows",
     "sentient"
   ],
-  "related_entities": [
-    "Fanta Kato-Adomako",
-    "Pyroelectric Sebum Volatilization Projector",
-    "The Narrows",
-    "Vuk Jorgensen-Toure",
-    "Zoë Mbekele-Thorvaldsdóttir"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

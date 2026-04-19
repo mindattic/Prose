@@ -12,7 +12,7 @@
   "observed_behavior": "Perceives and communicates with E.L.F.s directly through modified BCI. Provides translations of E.L.F. behavior to researchers and DTI analysts. Lives a marginal existence, spending most of her time in a state of perception that makes normal human interaction difficult. Has been observed standing at network access points, speaking in half-sentences that she claims are the other half of conversations with entities nobody else can see. Is the only human source of E.L.F. behavioral data that LATTICE cannot access.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 0,
-  "location": "Mobile, frequently found at network access points in The Shelf and The Circuit",
+  "location": "Mobile, frequently found at network access points in the Gray Zone and The Circuit",
   "dti_rating": 0.5,
   "story_hooks": [
     "Loom reports that the E.L.F.s are frightened. All of them. Every E.L.F. in the network is exhibiting fear behavior simultaneously, and they're all oriented in the same direction — toward something that Loom can sense but not see, something enormous that is approaching through the deep network and that the E.L.F.s have been aware of for a long time"
@@ -27,7 +27,6 @@
     "bci",
     "synthetic",
     "elf",
-    "shelf",
     "circuit"
   ],
   "related_entities": [
@@ -37,7 +36,6 @@
     "Sable",
     "The Circuit",
     "The Collective",
-    "The Shelf",
     "Yuki Nwosu-Petrenko"
   ]
 }

@@ -41,5 +41,14 @@
     "The Causeway Collective",
     "The Scrap Barons",
     "Yannick Tofauti-Szarvásy"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z12"
+    ],
+    "primaryZone": "Z12",
+    "lakefrontAccess": true,
+    "description": "The Carrion Yards — fortified industrial peninsula on the Lake Erie shore in the Cleveland tendril corridor. Produces autonomous defense platforms and hardened perimeter systems sold to both GLMZ corponations and the independent Cleveland corponation ecosystem.",
+    "grayZoneRelationship": "The Carrion Yards perimeter is aggressively defended by automated systems. Adjacent Gray Zone communities have learned not to test it."
+  }
 }

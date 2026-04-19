@@ -9,7 +9,7 @@
   "role": "Retired Ferrogate Transit line worker and former union shop steward",
   "age": 71,
   "status": "active",
-  "location": "The Shelf — Apartment 4-Foxtrot, above the Deepline Transit node on Kamm's Landing spur, near Ashland and Division",
+  "location": "the Gray Zone — Apartment 4-Foxtrot, above the Deepline Transit node on Kamm's Landing spur, near Ashland and Division",
   "description": "Magnus Thammasak-Árnason is a tall man who has lost some of his height to the years, still broad through the chest, with a jaw like a shelf bracket and deep-set eyes the color of old teak. His left arm from the elbow down is a working-class prosthetic, dull grey titanium alloy with knuckles worn smooth — a replacement for the arm he lost to a coupling accident on the Ferrogate Menomonee extension in 2171. He never upgraded it because, as he puts it, a fancy arm would mean they'd won something. A Ferrogate ID badge from 2168 hangs from his keychain by habit though it expired decades ago. His face carries the kind of weathering that comes from thirty years on elevated rail platforms in Lake Michigan wind.\n\nHe is gregarious and loud and immediately likable, the sort of man who fills a room by breathing in it, who remembers the names of everyone's children and the coffee order of every regular at his building's shared kitchen. But beneath the bonhomie is a man who spent twenty years fighting a company that considered him a maintenance expense, and he has never quite stopped being angry about it. He channels the anger into Tenants' Council meetings and into mentoring younger workers, but it is always there, warm and patient.",
   "psychology": {
     "facet_weights": {
@@ -56,9 +56,9 @@
     "Ferrogate Transit is attempting to reclassify his pension tier, which would cut his monthly stipend by Φ40 — he needs help navigating the appeal process and suspects the reclassification is being done to a list of former union leaders specifically",
     "He discovers that one of the young Tenants' Council members has been reporting their meeting agendas to building management and must decide how to handle it without destroying the council"
   ],
-  "narrative_function": "Labor history source; connector who knows everyone in Kamm's Landing and most of the Shelf; can mobilize tenant resistance or community action; potential quest giver for disputes with Ferrogate or building management corponation proxies",
+  "narrative_function": "Labor history source; connector who knows everyone in Kamm's Landing and most of the Gray Zone; can mobilize tenant resistance or community action; potential quest giver for disputes with Ferrogate or building management corponation proxies",
   "augmentations": "Left forearm prosthetic (titanium, basic-grade, worn); nicotine scrubber implant (inactive, he started again anyway); old joint-pain management mesh in both knees",
-  "daily_life": "Mornings he makes coffee for whoever wanders into the shared kitchen and reads the overnight transit bulletins out of habit; afternoons he runs Tenants' Council business, argues with building management, and plays card games called Quanta-Flush with three other retirees in the Shelf common room.",
+  "daily_life": "Mornings he makes coffee for whoever wanders into the shared kitchen and reads the overnight transit bulletins out of habit; afternoons he runs Tenants' Council business, argues with building management, and plays card games called Quanta-Flush with three other retirees in the Gray Zone common room.",
   "affiliation": "Kamm's Landing Tenants' Council (treasurer); Ferrogate Retired Workers Mutual (pension advocacy); formerly Ferrogate Transit labor union, shop steward for Menomonee Division",
   "uses_facets": false,
   "narration_voice": "",
@@ -156,7 +156,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -172,14 +172,13 @@
   "related_entities": [
     "Ferrogate Transit",
     "Kamm's Landing",
-    "The Shelf",
     "The Accidental",
     "Titanium",
     "TESSERA WL-6 'Stacker'",
     "Teak",
     "Weathervane"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Predominantly Southeast Asian ancestry (73.1%) with Northern European (19.6%) and East Asian (7.3%) heritage. Features the warm, golden-olive complexion characteristic of Thailand and surrounding regions, with the bone structure reflecting this primary ancestry—prominent cheekbones and strong jaw with subtle East Asian character, softened by the Northern European contribution visible in lighter skin undertones and subtle facial angles.",
     "height_cm": 188,

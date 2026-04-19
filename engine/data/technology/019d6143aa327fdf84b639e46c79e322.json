@@ -1,12 +1,13 @@
 {
   "id": "019d6143aa327fdf84b639e46c79e322",
+  "rating": 80,
   "name": "Arcturus Defense Solutions Neural Interrogation Framework",
   "brand_name": "Arcturus",
   "product_name": "Arcturus Defense Solutions Neural Interrogation Framework",
   "type": "technology",
   "aliases": [],
   "subcategory": "surveillance",
-  "description": "A neural interface exploitation system that bypasses a subject's conscious resistance and extracts information directly from memory storage by stimulating and reading neural activity associated with specific memories. The NIF works by presenting stimuli — words, images, sounds — and monitoring the subject's neural response for recognition patterns that indicate relevant memories exist, even if the subject is actively trying to suppress them. Once a relevant memory cluster is identified, targeted stimulation forces the memory into conscious recall where it can be read through the neural interface. The process is described as feeling like someone forcing you to remember things you are trying to forget.",
+  "description": "A neural interface exploitation system that bypasses a subject\u0027s conscious resistance and extracts information directly from memory storage by stimulating and reading neural activity associated with specific memories. The NIF works by presenting stimuli \u2014 words, images, sounds \u2014 and monitoring the subject\u0027s neural response for recognition patterns that indicate relevant memories exist, even if the subject is actively trying to suppress them. Once a relevant memory cluster is identified, targeted stimulation forces the memory into conscious recall where it can be read through the neural interface. The process is described as feeling like someone forcing you to remember things you are trying to forget.",
   "tier_availability": "Tier 5",
   "developers": [
     "ARCTURUS DEFENSE SOLUTIONS",
@@ -23,10 +24,10 @@
     "Subconscious recognition detection",
     "Forced recall of suppressed memories"
   ],
-  "social_impact": "The NIF has made the neural interface a vulnerability that anyone undergoing interrogation must consider — a back door into the mind that exists in every augmented person. The existence of the technology has driven the development of neural interface security measures designed to prevent unauthorized memory access, but Arcturus's NIF is designed to defeat those measures. The result is an arms race between neural defense and neural exploitation that plays out inside the skulls of augmented individuals. Some people have chosen to de-augment rather than carry an interface that can be used against them.",
+  "social_impact": "The NIF has made the neural interface a vulnerability that anyone undergoing interrogation must consider \u2014 a back door into the mind that exists in every augmented person. The existence of the technology has driven the development of neural interface security measures designed to prevent unauthorized memory access, but Arcturus\u0027s NIF is designed to defeat those measures. The result is an arms race between neural defense and neural exploitation that plays out inside the skulls of augmented individuals. Some people have chosen to de-augment rather than carry an interface that can be used against them.",
   "story_hooks": [
-    "A subject who was interrogated using the NIF has experienced a cascade of forced memory recalls that did not stop when the interrogation ended — their neural interface is stuck in a loop of surfacing suppressed memories, including traumatic ones.",
-    "The NIF has extracted a memory from a subject that does not belong to them — it appears to be a memory transferred from another neural interface user, suggesting that memories can migrate between connected devices."
+    "A subject who was interrogated using the NIF has experienced a cascade of forced memory recalls that did not stop when the interrogation ended \u2014 their neural interface is stuck in a loop of surfacing suppressed memories, including traumatic ones.",
+    "The NIF has extracted a memory from a subject that does not belong to them \u2014 it appears to be a memory transferred from another neural interface user, suggesting that memories can migrate between connected devices."
   ],
   "tags": [
     "surveillance",
@@ -37,14 +38,6 @@
     "ubc",
     "tier 5"
   ],
-  "parent_corponation": "",
-  "related_entities": [
-    "ARCHIVE",
-    "Arcturus Defense Solutions",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "Slagworks Industrial",
-    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
-    "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Tessera Industries Memory Rounds MR-2 'Recall'"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

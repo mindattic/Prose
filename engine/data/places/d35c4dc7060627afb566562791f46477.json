@@ -10,14 +10,17 @@
     "tags": []
   },
   "connections": {
-    "adjacent_to": [],
+    "adjacent_to": ["Utah", "Nevada", "Denver", "The Trans-Canada Corridor"],
     "exits": [],
     "tags": []
   },
   "tags": [
     "place",
     "outside",
-    "sovereign-territory"
+    "sovereign-territory",
+    "remnants",
+    "survivalist"
   ],
-  "related_entities": []
+  "related_entities": ["Utah", "Denver"],
+  "controllingCorponation": null
 }

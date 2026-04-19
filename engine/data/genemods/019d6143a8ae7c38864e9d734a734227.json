@@ -7,7 +7,7 @@
   "aliases": [],
   "category": "cosmetic",
   "target_system": "integumentary (structural coloration)",
-  "description": "Introduces pangolin-derived keratin scale genes combined with morpho butterfly structural coloration to produce patches of iridescent, scale-like skin. The scales are thin, flexible, and structurally colored — they produce vivid blues, greens, and purples through light refraction rather than pigment. Common installation areas include the cheekbones, shoulders, forearms, and collarbone. Full-body coverage is possible but expensive and makes the user look genuinely non-human. The scales provide a minor defensive benefit — they're harder than normal skin — but the modification is primarily cosmetic. In the right light, a person with dragonscale catches the sun like a living gemstone. In the Shelf markets, vendors with cheekbone scales are considered fashionable and trustworthy — the modification signals someone who invests in themselves.",
+  "description": "Introduces pangolin-derived keratin scale genes combined with morpho butterfly structural coloration to produce patches of iridescent, scale-like skin. The scales are thin, flexible, and structurally colored — they produce vivid blues, greens, and purples through light refraction rather than pigment. Common installation areas include the cheekbones, shoulders, forearms, and collarbone. Full-body coverage is possible but expensive and makes the user look genuinely non-human. The scales provide a minor defensive benefit — they're harder than normal skin — but the modification is primarily cosmetic. In the right light, a person with dragonscale catches the sun like a living gemstone. In the Gray Zone markets, vendors with cheekbone scales are considered fashionable and trustworthy — the modification signals someone who invests in themselves.",
   "source_organism": "Manis pentadactyla (Chinese pangolin), Morpho menelaus (blue morpho butterfly)",
   "manufacturer": "Crucible Genomics",
   "tier_availability": "Tier 2+",
@@ -34,7 +34,6 @@
     "market",
     "fashion",
     "clothing",
-    "shelf",
     "tier 2"
   ],
   "related_entities": [
@@ -42,7 +41,6 @@
     "Crucible Genomics",
     "Magistrate Zero",
     "Sorin Ekwensi-Balasanyan",
-    "TESSERA TC-3 'Crucible'",
-    "The Shelf"
+    "TESSERA TC-3 'Crucible'"
   ]
 }

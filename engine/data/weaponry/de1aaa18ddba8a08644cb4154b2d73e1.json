@@ -16,16 +16,16 @@
   ],
   "specifications": "caliber: 12 gauge\ncapacity: 1 round\neffective range: 5-15 meters\nbarrel length: 300-500mm\nweight: 1-2 kg\nreload: Slide forward, extract, insert, slam\nfiring mechanism: Inertial (slam-fire)",
   "tactical_use": "Close-range maximum-impact engagement. The Loudmouth delivers 12-gauge firepower in the crudest possible package. Used when the operator needs the most destructive commonly available ammunition and has no access to manufactured weapons.",
-  "cultural_context": "The Loudmouth is the Shelf's great equalizer at its most extreme — a weapon that puts 12-gauge authority in the hands of anyone with Φ8 and access to a hardware store. The weapon's name is both descriptive (it is extremely loud) and metaphorical (it speaks for people who have no other voice). Slam-fire shotguns have been used in every major Shelf uprising in living memory.",
+  "cultural_context": "The Loudmouth is the Gray Zone's great equalizer at its most extreme — a weapon that puts 12-gauge authority in the hands of anyone with Φ8 and access to a hardware store. The weapon's name is both descriptive (it is extremely loud) and metaphorical (it speaks for people who have no other voice). Slam-fire shotguns have been used in every major the Gray Zone uprising in living memory.",
   "known_users": [
-    "Shelf residents (widespread)",
+    "the Gray Zone residents (widespread)",
     "Impromptu resistance groups",
     "Home defenders",
     "Anyone facing a threat that requires more than a .22"
   ],
   "story_hooks": [
-    "A Loudmouth was used in what is being called the Shelf's first successful bank robbery — a teenager with a Φ8 pipe shotgun walked into a corporate financial branch and walked out with Φ25,000. The security systems were designed to detect manufactured weapons. They didn't flag two pieces of pipe.",
-    "Loudmouth shotguns have been found with rifled inserts — short sections of properly rifled barrel pressed into the pipe bore that allow the weapon to fire slugs with actual accuracy out to 30 meters. Someone is upgrading the Shelf's arsenal with Φ2 worth of precision engineering."
+    "A Loudmouth was used in what is being called the Gray Zone's first successful bank robbery — a teenager with a Φ8 pipe shotgun walked into a corporate financial branch and walked out with Φ25,000. The security systems were designed to detect manufactured weapons. They didn't flag two pieces of pipe.",
+    "Loudmouth shotguns have been found with rifled inserts — short sections of properly rifled barrel pressed into the pipe bore that allow the weapon to fire slugs with actual accuracy out to 30 meters. Someone is upgrading the Gray Zone's arsenal with Φ2 worth of precision engineering."
   ],
   "ammunition_type": [
     "12_gauge"
@@ -35,7 +35,6 @@
     "weapon",
     "shotgun",
     "pipe gun",
-    "shelf",
     "street",
     "slam-fire",
     "12-gauge",
@@ -54,7 +53,6 @@
     "The Pure Hand",
     "The Reclamation Authority",
     "The Riveters' Round",
-    "The Shelf",
     "Vuk Yamamoto-Darko"
   ],
   "physical_description": {

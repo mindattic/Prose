@@ -6,11 +6,11 @@
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
-  "role": "Protest coordinator and mutual aid organizer serving the Shelf and Hough Reclamation districts",
+  "role": "Protest coordinator and mutual aid organizer serving the Gray Zone and Hough Reclamation districts",
   "age": 24,
   "status": "active",
   "location": "Hough Reclamation, GLMZ, near Western and Division",
-  "description": "Khalil Migizi is lean and angular with a long neck and the kind of stillness that belongs to people who grew up in crowded spaces and learned to take up exactly the amount of room they needed and no more. Their skin is deep brown with a warm undertone, and they have patterned irises — a cosmetic mod done with pigment injections, producing a geometric ring of burnt orange around the pupil that makes their gaze unsettling in photographs. Their hair is kept very short, almost shaved. They dress functionally, with a persistent preference for dark colors that won't show damage from protest conditions.\n\nKhalil Migizi has lived in Hough Reclamation their entire life and has watched three different waves of supposed 'revitalization' turn into displacement. They are twenty-four years old and already tired of promises. What they are not tired of is logistics — they have a genuine gift for coordination, for understanding how bodies move through space, how information needs to flow in chaotic conditions, how to build a supply chain out of mutual obligation and goodwill. They coordinate Shelf Mutual Aid, a network that distributes food, medical supplies, and emergency housing connections across two districts. They have a complicated relationship with attention — they need people to show up and to trust the network, but they find visibility personally uncomfortable.",
+  "description": "Khalil Migizi is lean and angular with a long neck and the kind of stillness that belongs to people who grew up in crowded spaces and learned to take up exactly the amount of room they needed and no more. Their skin is deep brown with a warm undertone, and they have patterned irises — a cosmetic mod done with pigment injections, producing a geometric ring of burnt orange around the pupil that makes their gaze unsettling in photographs. Their hair is kept very short, almost shaved. They dress functionally, with a persistent preference for dark colors that won't show damage from protest conditions.\n\nKhalil Migizi has lived in Hough Reclamation their entire life and has watched three different waves of supposed 'revitalization' turn into displacement. They are twenty-four years old and already tired of promises. What they are not tired of is logistics — they have a genuine gift for coordination, for understanding how bodies move through space, how information needs to flow in chaotic conditions, how to build a supply chain out of mutual obligation and goodwill. They coordinate the Gray Zone Mutual Aid, a network that distributes food, medical supplies, and emergency housing connections across two districts. They have a complicated relationship with attention — they need people to show up and to trust the network, but they find visibility personally uncomfortable.",
   "psychology": {
     "facet_weights": {
       "wound": 0.65,
@@ -58,7 +58,7 @@
   "narrative_function": "Resource and community connection hub, local color, someone who knows everyone in two districts and can vouch for or warn against anyone.",
   "augmentations": "Patterned irises (cosmetic, pigment injection). A cheap mesh implant in their left wrist — not a full data sleeve, more of a scheduling and coordination node that syncs with the mutual aid network's distribution software. A small sub-dermal biomonitor installed by a community clinic that tracks stress markers and sends alerts if they're in crisis territory — a condition of receiving the mutual aid network's health stipend.",
   "daily_life": "Morning distribution runs with the mutual aid network, afternoon spent at the Neighborhood Council office processing appeals and emergencies, evenings planning the next action or training new volunteers — they eat when someone puts food in front of them.",
-  "affiliation": "Shelf Mutual Aid Network (coordinator), Hough Reclamation Neighborhood Council (elected), informal ties to the Highland Park Autonomous Zone",
+  "affiliation": "the Gray Zone Mutual Aid Network (coordinator), Hough Reclamation Neighborhood Council (elected), informal ties to the Highland Park Autonomous Zone",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -174,7 +174,7 @@
     "Ringo Corponation",
     "GLMZ"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Complex multi-continental phenotype with Middle Eastern primary ancestry (32%) blended with significant Indigenous American (19.4%), Hispanic/Latin American (19.1%), and South Asian (14.6%) components, alongside Sub-Saharan African (10.3%) and East Asian (4.6%) contributions. This genetic constellation produces a warm medium-brown complexion with golden and olive undertones, facial structure that combines angular Middle Eastern features with the broader, more prominent cheekbones characteristic of Indigenous American and South Asian ancestry, and a refined bone structure that bridges all these traditions. The skin carries warmth from African heritage with richness and depth from South Asian genetics.",
     "height_cm": 171,

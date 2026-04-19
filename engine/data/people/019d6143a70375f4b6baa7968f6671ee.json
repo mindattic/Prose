@@ -9,7 +9,7 @@
   "role": "Counterfeiter specializing in Quanta currency forgeries and corporate scrip duplication",
   "age": 22,
   "status": "active",
-  "location": "The Shelf, Lower Level 9 — rents a two-room unit in the Blackpipe Corridor that doubles as his print shop, near Pulaski and Chicago Ave",
+  "location": "the Gray Zone, Lower Level 9 — rents a two-room unit in the Blackpipe Corridor that doubles as his print shop, near Pulaski and Chicago Ave",
   "description": "Drift Huitzil is whip-thin with a restless, bird-quick way of moving — he is always slightly in motion, tapping, shifting, scanning the room. He has his father's Croatian bone structure and his Malian grandmother's complexion, a warm dark brown, and he grows a patchy beard he refuses to admit is patchy. His geneware is expressive: color-shifting hair he keeps cycling through ambers and deep reds, and patterned irises that he updates seasonally through a subscription service — currently sporting a fine hexagonal grid in pale gold. He looks younger than 22 and has learned to use this strategically.\n\nHe came to counterfeiting through graphic design — he was genuinely talented, got a Tessera scholarship to an applied arts program, washed out in the second year when he couldn't keep up with the social and academic debt load, and discovered that the skills transferred perfectly to a more immediately lucrative application. He is not violent, not particularly brave, and deeply aware that he is one forensic audit away from a serious corporate jurisdiction charge. He manages this anxiety through manic productivity and a carefully cultivated reputation for quality. His work is, genuinely, exceptional. He talks about it the way a craftsman talks about joinery.",
   "psychology": {
     "facet_weights": {
@@ -56,9 +56,9 @@
     "He has accidentally produced a perfect duplicate of a limited-run Axiom scrip denomination that was supposed to be cryptographically impossible to fake — and now someone in a very expensive coat has been asking about him in the Corridor",
     "He received a commission for a very specific identity document — a Tessera internal access credential — and has no idea who ordered it or why, but the advance payment was Φ800 in real currency and he already spent half of it"
   ],
-  "narrative_function": "Local color, minor quest giver, resource for false documents or currency, point of entry into The Shelf's underground economy",
+  "narrative_function": "Local color, minor quest giver, resource for false documents or currency, point of entry into the Gray Zone's underground economy",
   "augmentations": "Color-shifting hair (geneware, subscription-tier). Patterned irises (cosmetic, seasonal subscription). Haptic enhancement in his dominant hand — originally installed for design work, increases tactile sensitivity for fine detail work.",
-  "daily_life": "Sleeps until noon, works from mid-afternoon into the early hours, takes long walks through The Shelf in the pre-dawn quiet when he needs to think; eats exclusively from a noodle vendor two corridors down.",
+  "daily_life": "Sleeps until noon, works from mid-afternoon into the early hours, takes long walks through the Gray Zone in the pre-dawn quiet when he needs to think; eats exclusively from a noodle vendor two corridors down.",
   "affiliation": "Vellichor Institute (mid-level counterfeiter specializing in quanta currency forg)",
   "uses_facets": false,
   "narration_voice": "",
@@ -98,7 +98,7 @@
       "anxious",
       "tier 1",
       "blackpipe corridor",
-      "the shelf"
+      "the Gray Zone"
     ]
   },
   "behavioral": {
@@ -159,7 +159,7 @@
     "Con Artist": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -175,7 +175,6 @@
     "Blackpipe Corridor",
     "GLMZ",
     "Grandmother",
-    "The Shelf",
     "The Quiet Room",
     "GLMZ",
     "Tessera Corponation",
@@ -186,7 +185,7 @@
     "The Pale Mile",
     "Gold"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Complex diaspora blend dominated by South Asian (42.3%) and Indigenous American (28.1%) ancestry, with significant East Asian (16.6%), Hispanic/Latin American (11.0%), and trace Sub-Saharan African (2.0%) heritage. This genetic constellation produces warm medium-brown skin with subtle golden and olive undertones, angular facial structure reflecting Indigenous American and South Asian features—pronounced cheekbones and defined jawline—with the eye shape and facial proportions showing East Asian influence. The overall appearance is a striking synthesis of these lineages rather than any single dominant heritage.",
     "height_cm": 172,

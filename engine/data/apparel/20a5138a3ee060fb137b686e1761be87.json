@@ -3,7 +3,7 @@
   "name": "Drift Collective Scrapweave Cowl",
   "type": "apparel",
   "category": "headwear",
-  "description": "A hand-assembled cowl made from salvaged fabric scraps, wire, and repurposed industrial mesh. No two are identical. Each cowl is built by its wearer or traded within Drift Collective circles as a mark of membership and resourcefulness. The construction is rough, asymmetrical, and intentionally unfinished.\n\nThe Scrapweave Cowl has no technical function beyond basic weather protection. Its value is entirely social — wearing one in Shelf districts signals affiliation with the Drift Collective's philosophy of radical self-sufficiency and rejection of corponation consumer culture.",
+  "description": "A hand-assembled cowl made from salvaged fabric scraps, wire, and repurposed industrial mesh. No two are identical. Each cowl is built by its wearer or traded within Drift Collective circles as a mark of membership and resourcefulness. The construction is rough, asymmetrical, and intentionally unfinished.\n\nThe Scrapweave Cowl has no technical function beyond basic weather protection. Its value is entirely social — wearing one in the Gray Zone districts signals affiliation with the Drift Collective's philosophy of radical self-sufficiency and rejection of corponation consumer culture.",
   "tier_association": "Tier 1",
   "materials": [
     "salvaged fabric scraps",
@@ -14,7 +14,7 @@
   "what_it_says": "You built this from what they threw away, and it means more to you than anything they sell.",
   "worn_by": [
     "Drift Collective members",
-    "Shelf DIY culture",
+    "the Gray Zone DIY culture",
     "anti-corponation activists"
   ],
   "manufacturer": "Handmade (Drift Collective)",
@@ -55,9 +55,9 @@
       "No manufacturing tags, labels, or branding—pure street identity marker"
     ],
     "tier_indicator": "Tier 5 / Sub-grade. This is deliberate anti-consumption. Wearing it signals rejection of corpo retail and alignment with ungoverned, self-sufficient communities.",
-    "cultural_context": "Drift Collective membership badge. Wearer is part of a radical decentralist movement operating in Shelf districts (poor, overlooked urban zones). Signals distrust of corporate institutions, embrace of DIY ethics, and commitment to resource autonomy. Not for sale—only earned or traded within trusted circles.",
+    "cultural_context": "Drift Collective membership badge. Wearer is part of a radical decentralist movement operating in the Gray Zone districts (poor, overlooked urban zones). Signals distrust of corporate institutions, embrace of DIY ethics, and commitment to resource autonomy. Not for sale—only earned or traded within trusted circles.",
     "condition_typical": "Intentionally worn, patched, and imperfect. Weathered from day-to-day use. Stains and fraying are expected and valued as proof of real utility. The more broken-in, the more credible the wearer."
   },
-  "image_prompt": "Close-up fashion photograph of a Drift Collective Scrapweave Cowl on a dark-skinned model with visible subcutaneous tech implants, shot in moody neon-lit Shelf district alley with rain-slick concrete backdrop. The cowl drapes asymmetrically, obscuring half the face; industrial mesh panels catch harsh red and blue streetlight. Shot from shoulder up, emphasizing the rough hand-stitched seams, frayed edges, and embedded wire framework. Gritty, unpolished aesthetic. Cinematic neo-noir street fashion. --ar 2:3 --v 6",
-  "visual_prompt": "Close-up fashion photograph of a Drift Collective Scrapweave Cowl on a dark-skinned model with visible subcutaneous tech implants, shot in moody neon-lit Shelf district alley with rain-slick concrete backdrop. The cowl drapes asymmetrically, obscuring half the face; industrial mesh panels catch harsh red and blue streetlight. Shot from shoulder up, emphasizing the rough hand-stitched seams, frayed edges, and embedded wire framework. Gritty, unpolished aesthetic. Cinematic neo-noir street fashion. --ar 2:3 --v 6"
+  "image_prompt": "Close-up fashion photograph of a Drift Collective Scrapweave Cowl on a dark-skinned model with visible subcutaneous tech implants, shot in moody neon-lit the Gray Zone district alley with rain-slick concrete backdrop. The cowl drapes asymmetrically, obscuring half the face; industrial mesh panels catch harsh red and blue streetlight. Shot from shoulder up, emphasizing the rough hand-stitched seams, frayed edges, and embedded wire framework. Gritty, unpolished aesthetic. Cinematic neo-noir street fashion. --ar 2:3 --v 6",
+  "visual_prompt": "Close-up fashion photograph of a Drift Collective Scrapweave Cowl on a dark-skinned model with visible subcutaneous tech implants, shot in moody neon-lit the Gray Zone district alley with rain-slick concrete backdrop. The cowl drapes asymmetrically, obscuring half the face; industrial mesh panels catch harsh red and blue streetlight. Shot from shoulder up, emphasizing the rough hand-stitched seams, frayed edges, and embedded wire framework. Gritty, unpolished aesthetic. Cinematic neo-noir street fashion. --ar 2:3 --v 6"
 }

@@ -4,7 +4,7 @@
   "type": "weapon",
   "aliases": [],
   "category": "shotgun",
-  "description": "The Hearthstone Youth-20 is a pump-action shotgun chambered in 20 gauge with a shortened 13-inch length of pull, a 22-inch barrel, and a four-round tubular magazine. The weapon is scaled down from full-size proportions to fit younger or smaller-framed shooters, with a reduced-weight trigger spring and a shortened pump stroke that requires less force to cycle.\n\nThe First Step is Hearthstone's answer to a grim reality: in the Shelf and peripheral territories, young people may need to use a firearm for defense, and a weapon that doesn't fit them is worse than no weapon at all. The Youth-20 is sized for adolescents and small adults, with ergonomics that allow proper technique development rather than the compensating grip and stance that full-size weapons force on undersized shooters.\n\nHearthstone's marketing for the Youth-20 is carefully balanced between practical and aspirational. They avoid depicting children with weapons but clearly communicate that the product exists for young people. The packaging includes a comprehensive safety manual, a trigger lock, and a letter to parents that reads like a careful legal document wrapped around genuine concern. The weapon is available only through licensed dealers who are required to verify that the purchaser is a legal guardian.",
+  "description": "The Hearthstone Youth-20 is a pump-action shotgun chambered in 20 gauge with a shortened 13-inch length of pull, a 22-inch barrel, and a four-round tubular magazine. The weapon is scaled down from full-size proportions to fit younger or smaller-framed shooters, with a reduced-weight trigger spring and a shortened pump stroke that requires less force to cycle.\n\nThe First Step is Hearthstone's answer to a grim reality: in the Gray Zone and peripheral territories, young people may need to use a firearm for defense, and a weapon that doesn't fit them is worse than no weapon at all. The Youth-20 is sized for adolescents and small adults, with ergonomics that allow proper technique development rather than the compensating grip and stance that full-size weapons force on undersized shooters.\n\nHearthstone's marketing for the Youth-20 is carefully balanced between practical and aspirational. They avoid depicting children with weapons but clearly communicate that the product exists for young people. The packaging includes a comprehensive safety manual, a trigger lock, and a letter to parents that reads like a careful legal document wrapped around genuine concern. The weapon is available only through licensed dealers who are required to verify that the purchaser is a legal guardian.",
   "manufacturer": "HEARTHSTONE FIREARMS",
   "tier_availability": "Tier 1+",
   "legality": "Legal — guardian purchase required; youth firearms permit",
@@ -15,15 +15,15 @@
   ],
   "specifications": "caliber: 20 gauge\neffective_range: 25 meters (buckshot)\nrate_of_fire: Pump-action\nmagazine_capacity: 4+1 rounds\nweight: 2.0 kg\nlength_of_pull: 33 cm",
   "tactical_use": "A scaled-down defensive shotgun for younger or smaller-framed users. The 20 gauge provides adequate close-range stopping power with manageable recoil. The reduced dimensions enable proper shooting technique for users who cannot operate full-size weapons. The shortened pump stroke requires less force to cycle. Same defensive capability as adult-sized 20-gauge shotguns in a smaller package.",
-  "cultural_context": "The First Step is perhaps the most polarizing weapon Hearthstone produces. In Shelf and peripheral communities, it is a necessary tool that prepares young people for a dangerous reality. In the Mids and Spires, its existence is cited as evidence that Shelf life has crossed a line that shouldn't be crossable. The weapon doesn't care about the debate. It just fits smaller hands.",
+  "cultural_context": "The First Step is perhaps the most polarizing weapon Hearthstone produces. In the Gray Zone and peripheral communities, it is a necessary tool that prepares young people for a dangerous reality. In the Mids and Spires, its existence is cited as evidence that the Gray Zone life has crossed a line that shouldn't be crossable. The weapon doesn't care about the debate. It just fits smaller hands.",
   "known_users": [
-    "Shelf adolescents",
+    "the Gray Zone adolescents",
     "Small-framed adults",
     "Family defense (youth role)",
     "Youth hunting and training programs"
   ],
   "story_hooks": [
-    "A youth defense league in the Shelf trains with First Steps and catches media attention. The resulting debate about child soldiers versus community defense threatens to change weapons policy across GLMZ.",
+    "A youth defense league in the Gray Zone trains with First Steps and catches media attention. The resulting debate about child soldiers versus community defense threatens to change weapons policy across GLMZ.",
     "A First Step is used by a teenager to defend their family — and the teenager turns out to be more capable with the weapon than anyone expected, raising questions about where they received military-grade training."
   ],
   "ammunition_type": [
@@ -35,7 +35,6 @@
     "pump_action",
     "youth",
     "scaled_down",
-    "shelf",
     "lethal"
   ],
   "parent_corponation": "",
@@ -48,10 +47,9 @@
     "Parliament",
     "Patient Zero",
     "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "Shelf Life",
+    "Gray Zone life",
     "The Hearthstone",
     "The Pure Hand",
-    "The Shelf",
     "Vuk Yamamoto-Darko"
   ],
   "physical_description": {

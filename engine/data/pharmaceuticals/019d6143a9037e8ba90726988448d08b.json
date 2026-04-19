@@ -5,8 +5,8 @@
   "aliases": [],
   "category": "combat_stimulant",
   "subcategory": "pain_suppressor",
-  "manufacturer": "Unnamed Shelf chemist (distributed under 'FC' stamp)",
-  "description": "Ferrocaine is a crude but effective street synthesis of a dissociative analgesic compound, believed to be derived from a degraded ketamine analogue base cut with a synthetic opioid receptor partial agonist. It's cooked in Shelf labs from sourced industrial precursors and sold in small crystalline capsules stamped with a crude iron cross. It works — it suppresses pain effectively — but the synthesis is inconsistent and every batch is slightly different. Shelf medics know it well because they see what it does when a batch goes wrong.",
+  "manufacturer": "Unnamed the Gray Zone chemist (distributed under 'FC' stamp)",
+  "description": "Ferrocaine is a crude but effective street synthesis of a dissociative analgesic compound, believed to be derived from a degraded ketamine analogue base cut with a synthetic opioid receptor partial agonist. It's cooked in the Gray Zone labs from sourced industrial precursors and sold in small crystalline capsules stamped with a crude iron cross. It works — it suppresses pain effectively — but the synthesis is inconsistent and every batch is slightly different. the Gray Zone medics know it well because they see what it does when a batch goes wrong.",
   "method_of_use": "oral",
   "effects": [
     "Broad pain suppression within 10-15 minutes",
@@ -27,11 +27,11 @@
   "tier_availability": "Tier 1 only",
   "legality": "illegal",
   "street_price": "Φ20 per capsule",
-  "cultural_context": "Ferrocaine is what you take when you can't afford Nullocaine and you need to keep moving. It's a Shelf fixture — every gang has a supply, every runner knows where to get it, and every Shelf medic has protocols for treating Ferrocaine OD. The iron cross stamp has become a symbol in Shelf art and tattoo culture, representing endurance and suffering accepted. The chemists who produce reliable FC are respected figures; the ones who cook inconsistent batches are blamed for deaths and sometimes violently held accountable. There's a quiet tragedy in Ferrocaine dependency — people who got hooked because they needed it to survive are now sick from the thing that kept them alive.",
+  "cultural_context": "Ferrocaine is what you take when you can't afford Nullocaine and you need to keep moving. It's a the Gray Zone fixture — every gang has a supply, every runner knows where to get it, and every the Gray Zone medic has protocols for treating Ferrocaine OD. The iron cross stamp has become a symbol in the Gray Zone art and tattoo culture, representing endurance and suffering accepted. The chemists who produce reliable FC are respected figures; the ones who cook inconsistent batches are blamed for deaths and sometimes violently held accountable. There's a quiet tragedy in Ferrocaine dependency — people who got hooked because they needed it to survive are now sick from the thing that kept them alive.",
   "story_hooks": [
-    "A batch of FC has hit the Shelf that produces reliable, clean pain suppression with no dissociation — better than pharmaceutical Nullocaine, at Φ20 a capsule. Someone with real chemistry knowledge is cooking it, and the major suppliers want to know who before they cut into their market.",
+    "A batch of FC has hit the Gray Zone that produces reliable, clean pain suppression with no dissociation — better than pharmaceutical Nullocaine, at Φ20 a capsule. Someone with real chemistry knowledge is cooking it, and the major suppliers want to know who before they cut into their market.",
     "A runner with a Ferrocaine dependency realizes their tolerance has climbed so high that therapeutic doses no longer cover combat pain — they need to either escalate to dangerous levels or find a way to detox during an active job.",
-    "The Shelf chemist behind the FC stamp has been arrested by Lazarus corporate security — not for making illegal drugs, but because the synthesis process they developed accidentally mirrors a patented Lazarus precursor reaction, and the corp wants the formula."
+    "the Gray Zone chemist behind the FC stamp has been arrested by Lazarus corporate security — not for making illegal drugs, but because the synthesis process they developed accidentally mirrors a patented Lazarus precursor reaction, and the corp wants the formula."
   ],
   "tags": [
     "combatstimulant",
@@ -51,7 +51,6 @@
     "drug",
     "stimulant",
     "alcohol",
-    "shelf",
     "tier 1"
   ],
   "parent_corponation": "",
@@ -62,7 +61,6 @@
     "Lazarus LX-2 'Lab Rat'",
     "Lazarus Pharmaceuticals",
     "Nullocaine",
-    "Slagworks Industrial",
-    "The Shelf"
+    "Slagworks Industrial"
   ]
 }

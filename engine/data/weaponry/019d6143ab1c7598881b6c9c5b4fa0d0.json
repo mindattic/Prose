@@ -1,13 +1,14 @@
 {
   "id": "019d6143ab1c7598881b6c9c5b4fa0d0",
-  "name": "Carrion Defense Works Miasma Projector MP-5 'Plague Bearer'",
+  "rating": 80,
+  "name": "Carrion Defense Works Miasma Projector MP-5 \u0027Plague Bearer\u0027",
   "type": "weapon",
   "aliases": [],
   "category": "chemical",
-  "description": "A pressurized chemical dispersal weapon that launches canisters of Carrion's proprietary incapacitant compound — a viscous aerosol that adheres to surfaces and continues to off-gas for up to six hours. The compound causes severe mucous membrane irritation, temporary blindness, and uncontrollable retching in unprotected targets. It is technically classified as non-lethal, though confined-space deployment has resulted in documented fatalities from asphyxiation. The persistent nature of the compound makes it particularly effective for area denial.",
+  "description": "A pressurized chemical dispersal weapon that launches canisters of Carrion\u0027s proprietary incapacitant compound \u2014 a viscous aerosol that adheres to surfaces and continues to off-gas for up to six hours. The compound causes severe mucous membrane irritation, temporary blindness, and uncontrollable retching in unprotected targets. It is technically classified as non-lethal, though confined-space deployment has resulted in documented fatalities from asphyxiation. The persistent nature of the compound makes it particularly effective for area denial.",
   "manufacturer": "CARRION DEFENSE WORKS",
-  "tier_availability": "Tier 2+",
-  "legality": "Licensed — riot control and area denial; Restricted — civilian",
+  "tier_availability": "Tier 2\u002B",
+  "legality": "Licensed \u2014 riot control and area denial; Restricted \u2014 civilian",
   "base_technologies": [
     "Persistent chemical aerosol formulation",
     "Pressurized canister projection",
@@ -18,8 +19,8 @@
   "cultural_context": "",
   "known_users": [],
   "story_hooks": [
-    "Someone deployed Miasma canisters in a sealed residential ventilation system in Tier 2 — forty people hospitalized, three dead, and the canisters had their serial numbers chemically erased.",
-    "A Carrion chemist has developed a variant that selectively affects people based on their blood chemistry — it only incapacitates targets with specific pharmaceutical markers."
+    "Someone deployed Miasma canisters in a sealed residential ventilation system in Tier 2 \u2014 forty people hospitalized, three dead, and the canisters had their serial numbers chemically erased.",
+    "A Carrion chemist has developed a variant that selectively affects people based on their blood chemistry \u2014 it only incapacitates targets with specific pharmaceutical markers."
   ],
   "ammunition_type": [],
   "tags": [
@@ -30,16 +31,18 @@
     "tier 2",
     "lethal"
   ],
+  "image_prompt": "Product photography: Carrion Defense Works Miasma Projector MP-5 \u0027Plague Bearer\u0027 lying on dark tactical mat, angled 45 degrees. Close-up of barrel assembly and nozzle array showing burnt patina and carbonized residue. Gloved hand (industrial grey tactical glove) gripping polymer body, fingers on dual pressure gauges. Dramatic side-lighting casting sharp shadows across ribbed grip zones and vented exhaust ports. Emphasis on industrial brutalism and chemical weathering \u2014 burnt copper nozzle tips glinting, pressure chamber aluminum showing micro-oxidation scars. Dark neo-noir urban aesthetic, matte surfaces, no reflective shine except on metal components. GLMZ-era field weathering visible throughout. --ar 3:2 --v 6",
+  "dalle3_prompt": "",
   "parent_corponation": "",
   "related_entities": [
     "Carrion Defense Works",
     "Cezar Watanabe-Gyasi",
-    "Meridian Municipal Supply TearClear TC-4 'Dispersal'"
+    "Meridian Municipal Supply TearClear TC-4 \u0027Dispersal\u0027"
   ],
   "physical_description": {
-    "visual_profile": "A brutalist, industrial dispersal weapon with a pronounced barrel assembly and bulbous pressure chamber. Resembles a hybrid between a riot launcher and a pressurized pesticide applicator — all hard angles and utilitarian bulk. The silhouette reads as deliberately ominous: wide stance, asymmetrical weight distribution, mechanical. No grace; pure function.",
+    "visual_profile": "A brutalist, industrial dispersal weapon with a pronounced barrel assembly and bulbous pressure chamber. Resembles a hybrid between a riot launcher and a pressurized pesticide applicator \u2014 all hard angles and utilitarian bulk. The silhouette reads as deliberately ominous: wide stance, asymmetrical weight distribution, mechanical. No grace; pure function.",
     "dimensions": "Overall length: 68 cm | Barrel assembly: 32 cm | Pressure chamber diameter: 11 cm | Magazine depth: 14 cm | Width at grip: 8.5 cm",
-    "weight_description": "Hefty and front-heavy when unloaded (4.1 kg fully loaded). The weight shifts forward toward the barrel, demanding two-handed control. Balanced on the magazine well, it feels purposeful and grounded — no quick-draw weapon, but stable and authoritative in sustained aim.",
+    "weight_description": "Hefty and front-heavy when unloaded (4.1 kg fully loaded). The weight shifts forward toward the barrel, demanding two-handed control. Balanced on the magazine well, it feels purposeful and grounded \u2014 no quick-draw weapon, but stable and authoritative in sustained aim.",
     "primary_material": "Reinforced injection-molded polymer frame with steel pressure chamber lining. Aluminum alloy mounting rail system. Stainless steel nozzle array and canister indexing mechanism.",
     "finish": "Matte industrial grey-black polymer body with visible stress-relief ribbing. Steel pressure chamber shows brushed finish with micro-oxidation scarring from repeated pressurization cycles. Nozzle tips feature burnt bronze patina from off-gassing residue exposure.",
     "color_scheme": "Gunmetal grey primary body | Charcoal black ribbed grip zones | Burnt copper/bronze nozzle accents | Red pressure-release valve cap (safety indicator)",
@@ -49,13 +52,12 @@
       "Spring-loaded canister indexing carousel with numeric load-state engraving (1-6)",
       "Vented exhaust ports along barrel with visible carbonized residue buildup",
       "Prominent safety interlocks with manual mechanical override (corroded brass housing)",
-      "Manufacturer serial plate stamped directly into polymer body — faded but legible",
+      "Manufacturer serial plate stamped directly into polymer body \u2014 faded but legible",
       "Custom wear marks and chemical etching on nozzle tip from persistent compound exposure",
       "Integrated mounting rail (Picatinny) scarred and salt-corroded from field deployment"
     ],
-    "manufacturer_markings": "CARRION DEFENSE WORKS logo embossed on left side of pressure chamber | Model designation 'MP-5' stamped above grip | 'PLAGUE BEARER' variant tag laser-etched on barrel shroud | Serial number and certification code on chamber flank | Hazmat/corrosive material warning symbols on both sides of grip",
-    "condition_typical": "Field-worn and chemically stained. Polymer body shows stress crazing in high-impact areas. Nozzle assembly exhibits patina from repeated off-gassing events. Pressure gauges often smudged or fogged. Magazine carousel mechanism loose from wear. This is not a pristine asset — it's a working tool showing honest battle scars."
+    "manufacturer_markings": "CARRION DEFENSE WORKS logo embossed on left side of pressure chamber | Model designation \u0027MP-5\u0027 stamped above grip | \u0027PLAGUE BEARER\u0027 variant tag laser-etched on barrel shroud | Serial number and certification code on chamber flank | Hazmat/corrosive material warning symbols on both sides of grip",
+    "condition_typical": "Field-worn and chemically stained. Polymer body shows stress crazing in high-impact areas. Nozzle assembly exhibits patina from repeated off-gassing events. Pressure gauges often smudged or fogged. Magazine carousel mechanism loose from wear. This is not a pristine asset \u2014 it\u0027s a working tool showing honest battle scars."
   },
-  "image_prompt": "Product photography: Carrion Defense Works Miasma Projector MP-5 'Plague Bearer' lying on dark tactical mat, angled 45 degrees. Close-up of barrel assembly and nozzle array showing burnt patina and carbonized residue. Gloved hand (industrial grey tactical glove) gripping polymer body, fingers on dual pressure gauges. Dramatic side-lighting casting sharp shadows across ribbed grip zones and vented exhaust ports. Emphasis on industrial brutalism and chemical weathering — burnt copper nozzle tips glinting, pressure chamber aluminum showing micro-oxidation scars. Dark neo-noir urban aesthetic, matte surfaces, no reflective shine except on metal components. GLMZ-era field weathering visible throughout. --ar 3:2 --v 6",
-  "visual_prompt": "Product photography: Carrion Defense Works Miasma Projector MP-5 'Plague Bearer' lying on dark tactical mat, angled 45 degrees. Close-up of barrel assembly and nozzle array showing burnt patina and carbonized residue. Gloved hand (industrial grey tactical glove) gripping polymer body, fingers on dual pressure gauges. Dramatic side-lighting casting sharp shadows across ribbed grip zones and vented exhaust ports. Emphasis on industrial brutalism and chemical weathering — burnt copper nozzle tips glinting, pressure chamber aluminum showing micro-oxidation scars. Dark neo-noir urban aesthetic, matte surfaces, no reflective shine except on metal components. GLMZ-era field weathering visible throughout. --ar 3:2 --v 6"
+  "visual_prompt": "Product photography: Carrion Defense Works Miasma Projector MP-5 \u0027Plague Bearer\u0027 lying on dark tactical mat, angled 45 degrees. Close-up of barrel assembly and nozzle array showing burnt patina and carbonized residue. Gloved hand (industrial grey tactical glove) gripping polymer body, fingers on dual pressure gauges. Dramatic side-lighting casting sharp shadows across ribbed grip zones and vented exhaust ports. Emphasis on industrial brutalism and chemical weathering \u2014 burnt copper nozzle tips glinting, pressure chamber aluminum showing micro-oxidation scars. Dark neo-noir urban aesthetic, matte surfaces, no reflective shine except on metal components. GLMZ-era field weathering visible throughout. --ar 3:2 --v 6"
 }

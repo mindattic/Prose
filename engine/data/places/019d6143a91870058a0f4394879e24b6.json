@@ -49,7 +49,7 @@
   "story_hooks": [
     "An Edison Grid Axiom Security officer discovers that the corporation is planning to bypass the neighborhood's power substation — routing the Grid into the metered system. The Grid Council prepares for a confrontation that could turn the district's quiet resistance into open conflict.",
     "Kyle needs information that only an active Axiom Security officer can access. The officer is Edison Grid — loyal to the community first, the corporation second. The price of the information is a favor that puts Kyle on the wrong side of people he'd rather not cross.",
-    "A Grid family's child returns from a stint in the Shelf with augments, ideas, and associations that violate everything the community stands for. The family is torn between protecting their own and maintaining the social contract that keeps the Grid functioning."
+    "A Grid family's child returns from a stint in the Gray Zone with augments, ideas, and associations that violate everything the community stands for. The family is torn between protecting their own and maintaining the social contract that keeps the Grid functioning."
   ],
   "connections": {
     "adjacent_to": [
@@ -92,8 +92,7 @@
     "rights",
     "train",
     "energy",
-    "fire",
-    "shelf"
+    "fire"
   ],
   "related_entities": [
     "TESSERA Widow Mk. III",
@@ -105,5 +104,7 @@
     "Zephyr Bhattacharya",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Kyle Ellen Corbin-Vasik"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

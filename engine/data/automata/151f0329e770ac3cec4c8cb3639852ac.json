@@ -4,7 +4,7 @@
   "classification": "Population Control Platform — Behavioral Herding",
   "aliases": [],
   "manufacturer": "Thoughtline Messaging",
-  "description": "The TP-0 is a network of small emitters, each roughly the size of a coin, embedded in urban infrastructure — lampposts, building facades, sidewalk panels, transit station walls. Individually, each emitter produces a focused beam of ultrasound that creates localized discomfort in humans: headache, nausea, skin irritation, anxiety, or an overwhelming urge to leave the area. The beams are invisible, silent to conscious perception, and leave no physical evidence of exposure.\n\nCollectively, a TP-0 network creates invisible corridors of comfort and discomfort that herd human populations along desired paths. People avoid streets where the emitters are active without knowing why — they just feel better on different streets. They congregate in areas where the emitters are off, which happen to be areas convenient for commerce, surveillance, or crowd management. They stay away from areas the corponations want empty, which happen to be areas scheduled for development, enforcement actions, or classified activity.\n\nThe Shelf district has the highest density of TP-0 emitters in GLMZ. Analysis of foot traffic data shows that pedestrian flow in the Shelf has been shaped by invisible boundaries for at least three years. Residents follow paths that are not the shortest routes to their destinations but are the routes that do not cause headaches. Markets thrive on streets where the emitters push people together. Streets adjacent to corporate development sites are mysteriously abandoned — residents describe them as feeling wrong, oppressive, haunted, without being able to articulate why.\n\nThe TP-0 does not restrict movement. You can walk anywhere you want. You just do not want to walk where the Shepherd's Crook does not want you. The distinction between cannot and do not want to is the foundation of Tessera's legal defense — and the foundation of a control system that manages the behavior of millions of people who believe they are making free choices about where to walk, where to shop, and where to live.",
+  "description": "The TP-0 is a network of small emitters, each roughly the size of a coin, embedded in urban infrastructure — lampposts, building facades, sidewalk panels, transit station walls. Individually, each emitter produces a focused beam of ultrasound that creates localized discomfort in humans: headache, nausea, skin irritation, anxiety, or an overwhelming urge to leave the area. The beams are invisible, silent to conscious perception, and leave no physical evidence of exposure.\n\nCollectively, a TP-0 network creates invisible corridors of comfort and discomfort that herd human populations along desired paths. People avoid streets where the emitters are active without knowing why — they just feel better on different streets. They congregate in areas where the emitters are off, which happen to be areas convenient for commerce, surveillance, or crowd management. They stay away from areas the corponations want empty, which happen to be areas scheduled for development, enforcement actions, or classified activity.\n\nThe the Gray Zone district has the highest density of TP-0 emitters in GLMZ. Analysis of foot traffic data shows that pedestrian flow in the Gray Zone has been shaped by invisible boundaries for at least three years. Residents follow paths that are not the shortest routes to their destinations but are the routes that do not cause headaches. Markets thrive on streets where the emitters push people together. Streets adjacent to corporate development sites are mysteriously abandoned — residents describe them as feeling wrong, oppressive, haunted, without being able to articulate why.\n\nThe TP-0 does not restrict movement. You can walk anywhere you want. You just do not want to walk where the Shepherd's Crook does not want you. The distinction between cannot and do not want to is the foundation of Tessera's legal defense — and the foundation of a control system that manages the behavior of millions of people who believe they are making free choices about where to walk, where to shop, and where to live.",
   "tier_availability": "Tier 3 — infrastructure deployment, corporate and municipal contracts",
   "legality": "Legal — classified as 'environmental comfort management' technology",
   "autonomy_level": "Network-coordinated, AI-optimized crowd flow algorithms",
@@ -23,15 +23,15 @@
   ],
   "countermeasures": "Wideband ultrasound detection reveals emitter locations. Physical removal of emitters. Ear and skin protection reduces discomfort (but does not eliminate ultrasound-induced anxiety). Awareness is the most effective countermeasure — knowing the system exists allows conscious resistance to the artificial preferences it creates.",
   "known_deployments": [
-    "Shelf district (estimated 3+ years of continuous operation)",
+    "the Gray Zone district (estimated 3+ years of continuous operation)",
     "Gulch district",
     "Multiple corporate campus perimeters"
   ],
   "story_hooks": [
-    "A researcher has mapped the TP-0 network in the Shelf and discovered that the herding patterns are pushing the population toward a specific convergence point — a location that does not appear on any map",
-    "Someone has gained access to the TP-0 network and is reprogramming it — entire blocks of the Shelf are being evacuated by invisible walls of discomfort, and nobody official has authorized it"
+    "A researcher has mapped the TP-0 network in the Gray Zone and discovered that the herding patterns are pushing the population toward a specific convergence point — a location that does not appear on any map",
+    "Someone has gained access to the TP-0 network and is reprogramming it — entire blocks of the Gray Zone are being evacuated by invisible walls of discomfort, and nobody official has authorized it"
   ],
-  "cultural_context": "The Shepherd's Crook is the automaton that makes free will feel like an illusion. It is the machine that proves what the Shelf has always suspected: that their choices are not entirely their own, that the city has been gently, invisibly steering them for years. The revelation of the TP-0 network — if it ever becomes public — would not change what the machines do. It would change what people believe about every decision they have ever made.",
+  "cultural_context": "The Shepherd's Crook is the automaton that makes free will feel like an illusion. It is the machine that proves what the Gray Zone has always suspected: that their choices are not entirely their own, that the city has been gently, invisibly steering them for years. The revelation of the TP-0 network — if it ever becomes public — would not change what the machines do. It would change what people believe about every decision they have ever made.",
   "tags": [
     "automaton",
     "population_control",
@@ -53,7 +53,6 @@
     "GLMZ",
     "ShieldTech Tandem Shock Set TSS-2 'Convergence'",
     "TESSERA CC-6 'Shepherd'",
-    "Tessera Corponation",
-    "The Shelf"
+    "Tessera Corponation"
   ]
 }

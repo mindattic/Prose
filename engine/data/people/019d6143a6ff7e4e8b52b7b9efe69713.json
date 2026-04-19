@@ -9,8 +9,8 @@
   "role": "Q-zero ghost, scrapper, and itinerant data-thief",
   "age": 17,
   "status": "active",
-  "location": "Waukegan Industrial Shelf, pipe warren sector nine, near Wacker and State",
-  "description": "Wren Möller-Montalvo is a lean teenager who moves like water finding its way downhill — always the path of least resistance, always finding the gap. They are mixed-dark, their skin a deep warm brown with a faint bioluminescent shimmer along their collarbones that they did not pay for and cannot explain, a geneware expression that surfaced at puberty from some deep ancestral combination no one has mapped. Their hair is cut close on the sides and left wild on top, dyed a persistent rust-orange that clashes magnificently with everything. Their eyes are dark with irises that shift to a green-gold in bright light. They wear clothes assembled with an engineer's practicality — lots of pockets, nothing that snags, shoes that fit.\n\nWren Möller-Montalvo has no legal identity whatsoever. They were born in a transit shelter to a mother who died of an untreated infection three years later, before any papers were filed. They grew up in the pipe warrens of the Waukegan Industrial Shelf among other Q-zeros, learning to exist in the margins of a city that has never officially acknowledged them. They are not bitter about this — or rather, they have metabolized the bitterness into something more useful: a comprehensive and functional understanding of how to extract resources from a system that believes you don't exist. They are quick, funny, and deeply lonely in a way they would violently deny.",
+  "location": "Waukegan Industrial the Gray Zone, pipe warren sector nine, near Wacker and State",
+  "description": "Wren Möller-Montalvo is a lean teenager who moves like water finding its way downhill — always the path of least resistance, always finding the gap. They are mixed-dark, their skin a deep warm brown with a faint bioluminescent shimmer along their collarbones that they did not pay for and cannot explain, a geneware expression that surfaced at puberty from some deep ancestral combination no one has mapped. Their hair is cut close on the sides and left wild on top, dyed a persistent rust-orange that clashes magnificently with everything. Their eyes are dark with irises that shift to a green-gold in bright light. They wear clothes assembled with an engineer's practicality — lots of pockets, nothing that snags, shoes that fit.\n\nWren Möller-Montalvo has no legal identity whatsoever. They were born in a transit shelter to a mother who died of an untreated infection three years later, before any papers were filed. They grew up in the pipe warrens of the Waukegan Industrial the Gray Zone among other Q-zeros, learning to exist in the margins of a city that has never officially acknowledged them. They are not bitter about this — or rather, they have metabolized the bitterness into something more useful: a comprehensive and functional understanding of how to extract resources from a system that believes you don't exist. They are quick, funny, and deeply lonely in a way they would violently deny.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -53,12 +53,12 @@
   },
   "relationships": [],
   "story_hooks": [
-    "Tokoua's encrypted Q-zero registry has accidentally captured documentation of an Axiom corponation illegal dumping operation — they don't realize what they have, but someone else does and is searching the Shelf for the source",
+    "Tokoua's encrypted Q-zero registry has accidentally captured documentation of an Axiom corponation illegal dumping operation — they don't realize what they have, but someone else does and is searching the Gray Zone for the source",
     "Their pirated neural cache chip contains fragments of a previous owner's memories and one of those fragments is a location, a code, and a name that someone very powerful wants buried"
   ],
   "narrative_function": "Information source with unique access (can go where identity-checked systems block others), quest giver for Q-zero community issues, represents the human cost of digital identity systems, potential ally for characters operating outside official channels.",
   "augmentations": "Bioluminescent shimmer along the collarbones (natural geneware expression, not installed). A pirated neural cache chip they found in a scrapper haul and installed themselves with mixed results — it stores data but occasionally dumps it at random.",
-  "daily_life": "Scavenges industrial components from the Shelf's decommissioned machinery during off-hours, sells what they can to grey-market parts dealers, and spends evenings cracking low-security data nodes for the information inside, which they trade or simply hoard.",
+  "daily_life": "Scavenges industrial components from the Gray Zone's decommissioned machinery during off-hours, sells what they can to grey-market parts dealers, and spends evenings cracking low-security data nodes for the information inside, which they trade or simply hoard.",
   "affiliation": "Loose affiliation with the Waukegan Q-zero community, no formal ties",
   "uses_facets": false,
   "narration_voice": "",
@@ -165,7 +165,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "Waukegan Industrial Shelf",
+    "home_turf": "Waukegan Industrial the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -175,7 +175,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Age 0: Born in a Waukegan Industrial Shelf transit shelter, no papers filed",
+      "event": "Age 0: Born in a Waukegan Industrial the Gray Zone transit shelter, no papers filed",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -230,7 +230,6 @@
     "The Waukegan Industrial Shelf",
     "Axiom Systems Neural Dead Drop NDD-2",
     "WELLSPRING",
-    "The Shelf",
     "Stonepath Logistics",
     "Blackpipe Corridor",
     "Lacuna Genomics",
@@ -261,7 +260,7 @@
     ],
     "visible_augmentations": "The bioluminescent geneware shimmer is visible along the collarbones and chest, most apparent in low light. No visible chrome, no external prosthetics. The pirated neural cache chip is subcutaneous at the base of the skull, hidden under hair.",
     "posture_movement": "Moves with minimal energy expenditure — a scrapper's economy of motion. Hunched slightly forward at rest, as if mid-crouch. Steps quietly, places feet with precision. Hands are restless when still. Head tilts often, listening. Leans rather than sits. Takes corners at angles.",
-    "clothing_style": "Tier 5 scrapper practical — modified surplus coveralls with additional pockets sewn in by hand, reinforced at knees and elbows. Beneath: layered thermal base (salvaged corporate merchandise, now shapeless). Feet: broken-in cargo boots with mismatched laces. A too-large Shinohara Industries jacket (stolen, probably 2219 vintage) worn open as a vest-cape. Webbing belt with a carabiner, flashlight, and lockpick set hung at various points. Everything is worn, functional, and colored by the greasy dust of the Shelf. No branding except faded logos they haven't bothered to remove."
+    "clothing_style": "Tier 5 scrapper practical — modified surplus coveralls with additional pockets sewn in by hand, reinforced at knees and elbows. Beneath: layered thermal base (salvaged corporate merchandise, now shapeless). Feet: broken-in cargo boots with mismatched laces. A too-large Shinohara Industries jacket (stolen, probably 2219 vintage) worn open as a vest-cape. Webbing belt with a carabiner, flashlight, and lockpick set hung at various points. Everything is worn, functional, and colored by the greasy dust of the Gray Zone. No branding except faded logos they haven't bothered to remove."
   },
   "image_prompt": "Wren Möller-Montalvo, lean 168cm scrapper with warm deep brown skin glowing faintly with bioluminescent green-pearl shimmer along collarbones in dim light, dark brown eyes with natural gold-green shift, fuller lips and high cheekbones reflecting African and Latin American heritage with Middle Eastern bone structure, rust-orange dyed hair with dark roots, undercut sides shaved bare, top tousled and long. Muscular from climbing, calloused hands, 5cm burn scar on left forearm, 1cm scar on right palm. Wearing modified grey surplus coveralls with sewn pockets, reinforced knees and elbows, layered thermal base underneath, mismatched-laced cargo boots, stolen vintage Shinohara Industries jacket worn open as vest-cape, webbing belt with carabiner and lockpick set. Standing in industrial GLMZ setting, hunched forward in scrapper's crouch, hands restless, head tilted listening. Greasy dust coating everything. Dusk lighting with bioluminescence subtle and ethereal. Moody, focused, economical movement. Neo-noir Great Lakes Metropolitan Zone aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {

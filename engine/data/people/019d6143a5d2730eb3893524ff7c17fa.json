@@ -1,5 +1,6 @@
 {
   "id": "019d6143a5d2730eb3893524ff7c17fa",
+  "rating": 80,
   "type": "character",
   "name": "Kai Souvannasane",
   "aliases": [],
@@ -36,7 +37,7 @@
       "Genuinely does not notice when people are in distress unless they tell him directly",
       "Underestimates how dangerous some of what he's found actually is"
     ],
-    "secret": "In a degraded archive from a dissolved corponation called Meridian Systems, he found what appears to be evidence of deliberate atmospheric manipulation during the 2110s Lakeshore Crisis — a crisis that killed an estimated 40,000 Shelf residents and is officially attributed to runaway climate cascade. He has not published it because he is not yet certain of the provenance, and because twice in the last year, people have broken into the Palimpsest looking for something."
+    "secret": "In a degraded archive from a dissolved corponation called Meridian Systems, he found what appears to be evidence of deliberate atmospheric manipulation during the 2110s Lakeshore Crisis — a crisis that killed an estimated 40,000 the Gray Zone residents and is officially attributed to runaway climate cascade. He has not published it because he is not yet certain of the provenance, and because twice in the last year, people have broken into the Palimpsest looking for something."
   },
   "speech_patterns": {
     "vocabulary": "Precise and slightly archaic, peppered with technical terminology from defunct digital systems; uses the names of dead platforms and protocols as casual reference points",
@@ -49,7 +50,11 @@
     "example_lines": [
       "'The deletion pattern on this archive is not decay. Decay is random. This is surgical.'",
       "'I don't know what it means yet. I know what it says. Those are different problems.'"
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
@@ -225,20 +230,11 @@
     }
   ],
   "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Tessera Corponation Dermal Cipher Lattice — 'The Palimpsest'",
-    "Meridian Core",
-    "The Circuit",
-    "Sediment Sound Group",
-    "Stratum",
-    "Circuit",
-    "Nightlight"
-  ],
-  "district": "The Underworld",
   "physical_description": {
     "heritage": "Complex global ancestry: Southeast Asian (35.2%) with significant Sub-Saharan African (22.6%), Northern European (22.2%), and Central Asian (20.0%) heritage creating a striking multi-continental phenotype. Southeast Asian structure dominates facial geometry with Central Asian bone prominence; Sub-Saharan African features visible in lip fullness and nasal width; Northern European genetics contribute fine bone refinement and fair skin undertones beneath deep melanation.",
     "height_cm": 193,
@@ -260,18 +256,13 @@
     "clothing_style": "Tier 3-4 academic-archival hybrid: threadbare grey linen field coat with oversized pockets and reinforced cuffs (worn since at least 2210); understated black synthetic under-shirt, frayed at collar; tan canvas work trousers with grease stains and ink marks; worn leather ankle boots resoled multiple times; always carries a leather satchel of indeterminate age holding data drives, field notebooks, and a deteriorating stylus. Refuses to update wardrobe; clothes are tools, not identity markers."
   },
   "image_prompt": "Kai Souvannasane, 193cm tall androgynous archival researcher with deep golden-brown skin reflecting Southeast Asian, Sub-Saharan African, Northern European, and Central Asian heritage blend; white short natural afro, lined face with pronounced crow's feet, sparse salt-pepper beard stubble. Dark brown eyes with faint amber ocular implant circuitry visible. Left arm replaced with anachronistic gunmetal-grey Ferrogate Transit prosthetic hand with visible clicking joints. Faint blue-green bioluminescent glow pulsing under skin on neck and upper chest—subcutaneous geneware. Burn scar on right palm. Hunched forward posture, slightly tilted head. Wearing threadbare grey linen field coat with oversized pockets, worn since 2210, black frayed synthetic undershirt, tan canvas work trousers with grease stains, resoled leather ankle boots. Holding worn leather satchel. GLMZ, Great Lakes Metropolitan Zone archive space, neon accent lighting reflecting off prosthetic limb, atmospheric depth-of-field focusing on face and implant details. Contemplative, world-weary archival worker surrounded by deteriorating data infrastructure. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Southeast Asian": 35.2,
     "Sub-Saharan African": 22.6,
     "Northern European": 22.2,
     "Central Asian": 20
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Southeast Asian": {
       "Indonesian": {
@@ -307,6 +298,5 @@
         "Turkmen": 20
       }
     }
-  },
-  "tier": "1"
+  }
 }

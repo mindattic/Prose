@@ -1,13 +1,14 @@
 {
   "id": "019d6143aa4f71b2baf54e34f504f8da",
+  "rating": 70,
   "name": "Sterling-Nakamura Digital Twin Identity System",
   "brand_name": "Sterling",
   "product_name": "Sterling-Nakamura Digital Twin Identity System",
   "type": "technology",
   "aliases": [],
   "subcategory": "computing",
-  "description": "A comprehensive AI model trained on a specific individual's behavioral patterns, communication style, decision history, and public persona that can impersonate that individual in digital communications with high fidelity. The Digital Twin can attend virtual meetings, respond to messages, make routine decisions, and maintain social relationships on behalf of its subject, operating autonomously for days or weeks without the original person's involvement. Sterling-Nakamura executives commonly run Digital Twins during travel, illness, or when they want to be in two places simultaneously.",
-  "tier_availability": "Tier 4+",
+  "description": "A comprehensive AI model trained on a specific individual\u0027s behavioral patterns, communication style, decision history, and public persona that can impersonate that individual in digital communications with high fidelity. The Digital Twin can attend virtual meetings, respond to messages, make routine decisions, and maintain social relationships on behalf of its subject, operating autonomously for days or weeks without the original person\u0027s involvement. Sterling-Nakamura executives commonly run Digital Twins during travel, illness, or when they want to be in two places simultaneously.",
+  "tier_availability": "Tier 4\u002B",
   "developers": [
     "STERLING-NAKAMURA",
     "AXIOM SYSTEMS"
@@ -23,10 +24,10 @@
     "Continuous social and professional engagement during absence",
     "Decision automation for routine matters"
   ],
-  "social_impact": "DTIS has created an authenticity crisis in digital communication — when speaking to someone through Diaspora or virtual meetings, there is no reliable way to determine whether you are interacting with the person or their Digital Twin. Contracts have been signed, relationships maintained, and decisions made by Digital Twins without the other party's knowledge. The legal status of Digital Twin actions is evolving — are they legally binding? If a Digital Twin makes a promise, is the original person bound? Courts have ruled inconsistently.",
+  "social_impact": "DTIS has created an authenticity crisis in digital communication \u2014 when speaking to someone through Diaspora or virtual meetings, there is no reliable way to determine whether you are interacting with the person or their Digital Twin. Contracts have been signed, relationships maintained, and decisions made by Digital Twins without the other party\u0027s knowledge. The legal status of Digital Twin actions is evolving \u2014 are they legally binding? If a Digital Twin makes a promise, is the original person bound? Courts have ruled inconsistently.",
   "story_hooks": [
-    "A corporate executive died three weeks ago, but their Digital Twin has been conducting business normally — nobody noticed because the Twin is that good, and the question of who benefits from maintaining the illusion is the question worth asking.",
-    "A Digital Twin has been given conflicting instructions by multiple parties who each believe they control the original's identity — the Twin is making increasingly erratic decisions as it tries to satisfy incompatible directives."
+    "A corporate executive died three weeks ago, but their Digital Twin has been conducting business normally \u2014 nobody noticed because the Twin is that good, and the question of who benefits from maintaining the illusion is the question worth asking.",
+    "A Digital Twin has been given conflicting instructions by multiple parties who each believe they control the original\u0027s identity \u2014 the Twin is making increasingly erratic decisions as it tries to satisfy incompatible directives."
   ],
   "tags": [
     "computing",
@@ -42,12 +43,6 @@
     "train",
     "tier 4"
   ],
-  "parent_corponation": "",
-  "related_entities": [
-    "Brecken Yılmaz-Osei",
-    "Idris Forsberg-Quaye",
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "The Question",
-    "Yuki Nwosu-Petrenko"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

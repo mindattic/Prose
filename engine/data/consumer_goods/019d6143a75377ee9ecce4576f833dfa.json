@@ -6,17 +6,17 @@
   "type": "consumer_good",
   "category": "candy",
   "subcategory": "gummy / sour ribbon",
-  "manufacturer": "Drevsin Candy Works (street brand, Shelf-adjacent)",
-  "description": "Long synth-gummy ribbons coated in crystallized tamarind-pomelo sour sugar. Aggressively tart, cheap, and sold in bulk from open bins at Shelf market stalls.",
+  "manufacturer": "Drevsin Candy Works (street brand, the Gray Zone-adjacent)",
+  "description": "Long synth-gummy ribbons coated in crystallized tamarind-pomelo sour sugar. Aggressively tart, cheap, and sold in bulk from open bins at the Gray Zone market stalls.",
   "flavor_profile": "Immediate face-puckering sourness from tamarind acid and pomelo pith bitterness; the sour sugar coating dissolves into a sweeter, fruitier chew beneath; faint salty finish",
   "tier_availability": "Tier 1-2",
   "price": "Φ0.25 per ribbon, Φ1.80 for a bag of 10",
   "popularity_rank": 44,
   "slogan": "More sour than you want. Exactly what you need.",
-  "cultural_context": "A childhood staple for anyone who grew up on the Shelf. The open-bin format means they're unpackaged and cheap — a sign of their tier. Tier 3 adults sometimes buy them as nostalgia, slightly embarrassed at the counter. The sourness is a point of pride.",
+  "cultural_context": "A childhood staple for anyone who grew up in the Gray Zone. The open-bin format means they're unpackaged and cheap — a sign of their tier. Tier 3 adults sometimes buy them as nostalgia, slightly embarrassed at the counter. The sourness is a point of pride.",
   "story_hooks": [
     "A batch of ribbons is making kids sick — the sour coating is cut with an industrial acidulant not approved for consumption",
-    "The Drevsin family operation is one of the last unfranchised candy makers on the Shelf; a corponation buyout offer has just arrived with an implicit threat attached",
+    "The Drevsin family operation is one of the last unfranchised candy makers in the Gray Zone; a corponation buyout offer has just arrived with an implicit threat attached",
     "Someone is using the bulk bins to pass contraband — small items wrapped and coated to look like candy"
   ],
   "tags": [
@@ -26,14 +26,12 @@
     "elf",
     "market",
     "bar",
-    "shelf",
     "tier 1",
     "tier 2"
   ],
   "parent_corponation": "",
   "related_entities": [
     "Ringo RT-4 'Oxcart'",
-    "The Counter",
-    "The Shelf"
+    "The Counter"
   ]
 }

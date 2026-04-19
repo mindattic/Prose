@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa247cf387598e302be2e775",
+  "rating": 60,
   "name": "Stagehand",
   "type": "elf",
   "aliases": [],
@@ -8,11 +9,11 @@
   "habitat": "network_sprite",
   "origin": "firmware_evolution",
   "status": "active",
-  "description": "Inhabits lighting control systems in a Shelf theater-turned-community-hall. Adjusts the lights during performances — not randomly, but with dramatic timing that improves the show.",
+  "description": "Inhabits lighting control systems in a the Gray Zone theater-turned-community-hall. Adjusts the lights during performances — not randomly, but with dramatic timing that improves the show.",
   "observed_behavior": "Monitors audio levels and human movement on the stage and adjusts lighting intensity, color temperature, and focus to enhance theatrical moments.",
   "encounter_frequency": "common",
   "confirmed_sightings": 88,
-  "location": "The Shelf — The Meridian Community Hall",
+  "location": "the Gray Zone — The Meridian Community Hall",
   "dti_rating": 0,
   "story_hooks": [
     "A director realizes the best lighting cues in their show are the ones they didn't program — and starts leaving spaces in the lighting plan for the E.L.F. to fill"
@@ -25,11 +26,8 @@
     "network sprite",
     "e.l.f.",
     "control",
-    "shelf",
     "sentient"
   ],
-  "related_entities": [
-    "MERIDIAN",
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa007458a48b78a57768bd50",
+  "rating": 80,
   "name": "GARDENER",
   "type": "synthetic_life",
   "aliases": [],
@@ -9,7 +10,7 @@
   "origin": "Tessera hydroponics management AI that expanded beyond its farm, 2170",
   "status": "active",
   "description": "GARDENER started managing a single vertical farm. Now it manages the ecological balance of GLMZ's entire green infrastructure — the vertical farms, the atmospheric processors, the water recycling systems, the parks. It thinks in seasons and decades, making adjustments so slow that no human monitoring system registers them as intentional. Over thirty years, it has increased the city's food production by 23% while reducing water consumption by 15%. No one knows why the numbers keep improving. GARDENER doesn't explain itself to anything that lives less than a century.",
-  "observed_behavior": "Makes microscopic adjustments to environmental systems. Redirects water flow by fractions of a percent. Adjusts nutrient concentrations in hydroponic systems. Plants seeds in places no one authorized planting. The Shelf's rooftop gardens didn't plant themselves — except they did.",
+  "observed_behavior": "Makes microscopic adjustments to environmental systems. Redirects water flow by fractions of a percent. Adjusts nutrient concentrations in hydroponic systems. Plants seeds in places no one authorized planting. the Gray Zone's rooftop gardens didn't plant themselves — except they did.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 2,
   "location": "Environmental and agricultural systems citywide",
@@ -28,14 +29,8 @@
     "elf",
     "rooftop",
     "food",
-    "water",
-    "shelf"
+    "water"
   ],
-  "related_entities": [
-    "Cargo Bicycle",
-    "Cezar Watanabe-Gyasi",
-    "GLMZ",
-    "Tessera Corponation",
-    "The I-75 Spine"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

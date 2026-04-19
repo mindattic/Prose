@@ -10,14 +10,17 @@
     "tags": []
   },
   "connections": {
-    "adjacent_to": [],
+    "adjacent_to": ["The Biomass", "Kentucky", "Ridgepost"],
     "exits": [],
     "tags": []
   },
   "tags": [
     "place",
     "outside",
-    "biomass"
+    "biomass",
+    "remnants",
+    "frontier"
   ],
-  "related_entities": []
+  "related_entities": ["The Biomass", "Ridgepost"],
+  "controllingCorponation": null
 }

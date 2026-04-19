@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa0177ac812dda7eb08f087f",
+  "rating": 60,
   "name": "Gigglebox",
   "type": "elf",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Generates a soft, synthetic chuckle at volumes just above the perception threshold. Timing suggests awareness of social context — it laughs at funerals, during threats, in silence.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 9,
-  "location": "The Shelf",
+  "location": "the Gray Zone",
   "dti_rating": 0,
   "story_hooks": [
     "The laugh starts happening during a negotiation and the other party thinks the user is mocking them"
@@ -27,10 +28,8 @@
     "ai",
     "synthetic",
     "bar",
-    "shelf",
     "sentient"
   ],
-  "related_entities": [
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

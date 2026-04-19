@@ -34,5 +34,25 @@
     "The Corridor",
     "The Meridian Compact",
     "Tithe Harmonic"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z4",
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z5",
+      "Z6",
+      "Z7",
+      "Z8",
+      "Z9",
+      "Z10",
+      "Z11",
+      "Z12"
+    ],
+    "primaryZone": "Z4",
+    "lakefrontAccess": true,
+    "description": "Headquarters at the former Great Lakes Naval Station complex in Waukegan (Zone 4), plus 140 hardened relay stations distributed throughout every GLMZ zone. Sovereign territory is the 22-floor Ashford Pinnacle tower plus air rights to 400 meters above each relay station.",
+    "grayZoneRelationship": "Relay stations are positioned in both corponation territory and Gray Zones. Gray Zone informal governance bodies do not challenge Ashford installations because losing the signal would cost them more than tolerating the presence."
+  }
 }

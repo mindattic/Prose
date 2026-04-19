@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa067eccb8408cb4ad0d3a89",
+  "rating": 70,
   "name": "Jerome Atlas",
   "type": "synthetic_life",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Operates private security firm. Protects synthetic persons from violence. Responds to distress calls from synthetic community. Training in military-grade close protection repurposed for community defense. Scars on chassis are visible and unrepaired — he keeps them as reminders.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 0,
-  "location": "The Shelf and Grind — mobile",
+  "location": "the Gray Zone and Grind — mobile",
   "dti_rating": 0.6,
   "story_hooks": [
     "Jerome receives a distress call from a synthetic person in a corponation facility — a place his security firm has no legal authority to enter. The synthetic is being disassembled for parts. Legally, it's 'decommissioning.' Jerome calls it murder."
@@ -24,11 +25,8 @@
     "android",
     "violence",
     "synthetic",
-    "elf",
-    "shelf"
+    "elf"
   ],
-  "related_entities": [
-    "Arcturus Defense Solutions",
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

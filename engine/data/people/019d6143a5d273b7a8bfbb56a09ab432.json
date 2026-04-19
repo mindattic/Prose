@@ -9,8 +9,8 @@
   "role": "Structural breach and explosive ordnance specialist — demolitions expert",
   "age": 40,
   "status": "active",
-  "location": "The Shelf — lower district tenements near the old lakeshore, near Ashland and Division",
-  "description": "Ivar Hong-Magnúsdóttir-Holm are broad-shouldered and heavy, carrying their weight like armor rather than burden. At 40, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a demolitions expert out of The Shelf, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIn the runner community, Ivar Hong-Magnúsdóttir-Holm are known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "location": "the Gray Zone — lower district tenements near the old lakeshore, near Ashland and Division",
+  "description": "Ivar Hong-Magnúsdóttir-Holm are broad-shouldered and heavy, carrying their weight like armor rather than burden. At 40, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a demolitions expert out of the Gray Zone, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIn the runner community, Ivar Hong-Magnúsdóttir-Holm are known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
       "wound": 0.26,
@@ -259,7 +259,7 @@
     "Prepared": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -274,7 +274,6 @@
   "registered_firearms": [],
   "related_entities": [
     "Bioelectric Muscle Fiber",
-    "The Shelf",
     "The Heritage Vault",
     "Diaspora Table",
     "Stratum",
@@ -282,7 +281,7 @@
     "Lazarus LX-2 'Lab Rat'",
     "Pellucid Systems"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Northern European (63.9%), East Asian (22.2%), South Asian (13.9%) — a balanced diaspora blend manifesting as medium-light skin with cool undertones from Nordic ancestry warmed by East and South Asian components. The genetic mix produces distinctly Nordic bone structure—high, prominent cheekbones and a broad brow ridge—softened by East Asian eye shape and South Asian fullness in the lower face and cheeks. Neither distinctly cool nor warm, the skin tone reflects all three ancestral regions equally.",
     "height_cm": 178,

@@ -9,8 +9,8 @@
   "role": "Junk merchant and scrap reseller with a specialty in pre-Consolidation artifacts",
   "age": 64,
   "status": "active",
-  "location": "The Shelf, Ironvein, near Pulaski and Chicago Ave",
-  "description": "Adaeze Calvillo-Dlamini is a compact, unhurried man with deep brown skin going papery at the temples and a magnificent white moustache he waxes every morning without exception. His left arm from the elbow down is a thirty-year-old mechanical prosthetic he has never upgraded — brushed steel with visible articulation joints, which he keeps immaculate. He dresses in layers regardless of temperature: a canvas vest with dozens of pockets, a collared work shirt, fingerless gloves on the real hand. His stall on The Shelf sprawls across three connected spaces in a converted warehouse loading bay, stacked floor-to-ceiling with pre-Consolidation electronics, salvaged machine parts, cracked data-cores, antique physical media, pre-fab furniture missing crucial components, and objects whose original function has been entirely lost to time. He catalogues everything in a physical ledger written in a cramped three-language shorthand.\n\nAdaeze Calvillo-Dlamini is a man in love with the material fact of things — their weight, their age, the way they were made. He genuinely does not think of himself as a dealer so much as a temporary custodian. He will tell you the history of an object for twenty minutes before he tells you the price, and the price will be either absurdly low because he likes you or absurdly high because he doesn't want to sell it. He is a poor businessman by most metrics and comfortable with this. He has strong opinions about everything and shares them with magnificent economy.",
+  "location": "the Gray Zone, Ironvein, near Pulaski and Chicago Ave",
+  "description": "Adaeze Calvillo-Dlamini is a compact, unhurried man with deep brown skin going papery at the temples and a magnificent white moustache he waxes every morning without exception. His left arm from the elbow down is a thirty-year-old mechanical prosthetic he has never upgraded — brushed steel with visible articulation joints, which he keeps immaculate. He dresses in layers regardless of temperature: a canvas vest with dozens of pockets, a collared work shirt, fingerless gloves on the real hand. His stall on the Gray Zone sprawls across three connected spaces in a converted warehouse loading bay, stacked floor-to-ceiling with pre-Consolidation electronics, salvaged machine parts, cracked data-cores, antique physical media, pre-fab furniture missing crucial components, and objects whose original function has been entirely lost to time. He catalogues everything in a physical ledger written in a cramped three-language shorthand.\n\nAdaeze Calvillo-Dlamini is a man in love with the material fact of things — their weight, their age, the way they were made. He genuinely does not think of himself as a dealer so much as a temporary custodian. He will tell you the history of an object for twenty minutes before he tells you the price, and the price will be either absurdly low because he likes you or absurdly high because he doesn't want to sell it. He is a poor businessman by most metrics and comfortable with this. He has strong opinions about everything and shares them with magnificent economy.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -59,7 +59,7 @@
   "narrative_function": "Treasure-map NPC. Has access to rare pre-Consolidation objects that might be mission-critical MacGuffins, old data, or historically significant items. Exceptional source of information about GLMZ's history. Gives players reasons to dig through his stock — something is always in there.",
   "augmentations": "Mechanical prosthetic arm (left, elbow-down, 30-year-old model, impeccably maintained). Reading enhancement monocle — not a true augment, a clip-on optical tool he has used for decades.",
   "daily_life": "Opens the stall late morning, spends several hours on acquisition runs through Ironvein's salvage channels, returns to sort and catalogue new items, and receives the steady trickle of regulars who come specifically to talk to him. Closes whenever he feels like it.",
-  "affiliation": "Independent. Loose friendship network with other Shelf vendors. Known to the Oxidian Market Guild but not a member.",
+  "affiliation": "Independent. Loose friendship network with other the Gray Zone vendors. Known to the Oxidian Market Guild but not a member.",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -169,7 +169,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -203,7 +203,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Established permanent stall on The Shelf",
+      "event": "Established permanent stall on the Gray Zone",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -227,7 +227,6 @@
     "Kang-Petrov Arms KP-10C 'Bullpup'"
   ],
   "related_entities": [
-    "The Shelf",
     "Ironvein",
     "The Gradient Compact",
     "Chicago",
@@ -236,7 +235,7 @@
     "Steel",
     "SynapTech ReadRoom Social Cue Enhancer"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "A genetic confluence of the Ubiquitous Diaspora: 48.5% Hispanic/Latin American warmth forms the foundation, enriched by 30.8% Sub-Saharan African depth and resilience. Indigenous American ancestry (11.6%) contributes angular bone structure and facial geometry, while 7.3% North African heritage adds further refinement to cheekbones and brow. A trace of South Asian ancestry (1.8%) rounds the blend. The result is a face that synthesizes multiple continental traditions into a singular, weathered authenticity—warm medium-to-deep brown skin that speaks to equatorial and African ancestry, shaped by the angular geometries of Indigenous and North African lineages.",
     "height_cm": 168,

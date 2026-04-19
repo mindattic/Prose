@@ -1,9 +1,9 @@
 {
   "id": "7e2a1f9d4c3b8705e6a2f1d9c4b38075",
-  "name": "Shelf Ghost Tank",
+  "name": "the Gray Zone Ghost Tank",
   "type": "apparel",
   "category": "top",
-  "description": "Not a manufactured item — a category. On the Shelf, a Ghost Tank is any sleeveless top that's been stripped, cut, bleached, painted, and re-stitched until its original identity is gone. The one in your hand might have started as a Meridian Transit Authority uniform, a Tokusen Industries promo shirt, or a kids' athletic set. Now it's been cut at the shoulders, the neckline widened with a blade, and stenciled with a crow skull or a glitch-art pattern in white house pigment. The hem is raw or knotted. Maybe a strip of reflective salvage tape runs diagonal across the back.\n\nThey sell in clusters at Shelf market stalls — three for Φ12, or individually from someone who takes their customization seriously enough to charge Φ18 for a specific piece. No two are identical. Wearing one is a statement that you came from somewhere specific and didn't bother to hide it.",
+  "description": "Not a manufactured item — a category. On the Gray Zone, a Ghost Tank is any sleeveless top that's been stripped, cut, bleached, painted, and re-stitched until its original identity is gone. The one in your hand might have started as a Meridian Transit Authority uniform, a Tokusen Industries promo shirt, or a kids' athletic set. Now it's been cut at the shoulders, the neckline widened with a blade, and stenciled with a crow skull or a glitch-art pattern in white house pigment. The hem is raw or knotted. Maybe a strip of reflective salvage tape runs diagonal across the back.\n\nThey sell in clusters at the Gray Zone market stalls — three for Φ12, or individually from someone who takes their customization seriously enough to charge Φ18 for a specific piece. No two are identical. Wearing one is a statement that you came from somewhere specific and didn't bother to hide it.",
   "tier_association": "Tier 1",
   "materials": [
     "reclaimed synth-cotton blend",
@@ -12,29 +12,28 @@
     "raw-edge cut hems"
   ],
   "functionality": "",
-  "what_it_says": "You are from the Shelf, or you want that read, or you are an artist who works in the vernacular of scarcity. The authenticity is either real or very well studied.",
+  "what_it_says": "You are from the Gray Zone, or you want that read, or you are an artist who works in the vernacular of scarcity. The authenticity is either real or very well studied.",
   "worn_by": [
-    "Shelf residents",
+    "the Gray Zone residents",
     "street artists",
     "gang-adjacent youth",
-    "Tier 2 kids performing Shelf identity",
+    "Tier 2 kids performing the Gray Zone identity",
     "underground musicians"
   ],
-  "manufacturer": "Various — Shelf market vendors and individual makers",
+  "manufacturer": "Various — the Gray Zone market vendors and individual makers",
   "price_range": "Φ8",
   "aug_compatible": true,
   "gene_compatible": true,
   "story_hooks": [
-    "A Ghost Tank stencil pattern is being reproduced exactly by a Tier 4 fashion label — the original artist, a Shelf kid named Osei, has no legal recourse but a lot of friends.",
+    "A Ghost Tank stencil pattern is being reproduced exactly by a Tier 4 fashion label — the original artist, a the Gray Zone kid named Osei, has no legal recourse but a lot of friends.",
     "A specific ghost tank was worn by someone during a riot six months ago; surveillance footage is grainy but the diagonal reflective stripe is distinctive.",
-    "A collector in Tier 4 pays absurd prices for authentic Ghost Tanks — their obsession with Shelf aesthetics has become something darker than appreciation."
+    "A collector in Tier 4 pays absurd prices for authentic Ghost Tanks — their obsession with the Gray Zone aesthetics has become something darker than appreciation."
   ],
   "tags": [
     "apparel",
     "top",
     "tier 1",
     "tank top",
-    "shelf",
     "diy",
     "street",
     "scavenged",
@@ -45,7 +44,6 @@
   "related_entities": [
     "Cem Osei-Petrov",
     "MERIDIAN",
-    "The Shelf",
     "Yannick Tambadou-Reinholt"
   ],
   "physical_description": {
@@ -66,9 +64,9 @@
       "No care taken to hide seams or repair work — imperfection is intentional"
     ],
     "tier_indicator": "Tier 5 — sub-grade and ungoverned. Signals rejection of corpo/commercial fashion and adoption of street modification culture.",
-    "cultural_context": "Shelf dweller, salvage-culture participant, or someone actively rejecting their previous social position. Wearing one announces: 'I have a past, I made this myself, and I'm not hiding where I came from.' Associated with Shelf markets, independent makers, and counter-corpo street culture.",
+    "cultural_context": "the Gray Zone dweller, salvage-culture participant, or someone actively rejecting their previous social position. Wearing one announces: 'I have a past, I made this myself, and I'm not hiding where I came from.' Associated with the Gray Zone markets, independent makers, and counter-corpo street culture.",
     "condition_typical": "Deliberately worn, distressed, and weathered. Fading, staining, and asymmetrical wear are features, not flaws. Might show patina from repeated wearing and exposure."
   },
-  "image_prompt": "Neo-noir fashion photograph of a Shelf Ghost Tank on a dark-skinned model with visible subcutaneous augmentation tracery along the shoulders and collarbone, shot in moody neon-tinted studio light. The tank is pale bleached cream with a stark black crow skull stenciled across the chest, raw edges visible at the shoulders and neckline, diagonal reflective tape stripe down the back catching blue studio light. Urban warehouse backdrop, gritty and industrial. Model has slicked-back hair, minimal jewelry, and a hardened street aesthetic. Moody three-quarter profile pose. High contrast, desaturated environment with neon accents. --ar 2:3 --v 6",
-  "visual_prompt": "Neo-noir fashion photograph of a Shelf Ghost Tank on a dark-skinned model with visible subcutaneous augmentation tracery along the shoulders and collarbone, shot in moody neon-tinted studio light. The tank is pale bleached cream with a stark black crow skull stenciled across the chest, raw edges visible at the shoulders and neckline, diagonal reflective tape stripe down the back catching blue studio light. Urban warehouse backdrop, gritty and industrial. Model has slicked-back hair, minimal jewelry, and a hardened street aesthetic. Moody three-quarter profile pose. High contrast, desaturated environment with neon accents. --ar 2:3 --v 6"
+  "image_prompt": "Neo-noir fashion photograph of a the Gray Zone Ghost Tank on a dark-skinned model with visible subcutaneous augmentation tracery along the shoulders and collarbone, shot in moody neon-tinted studio light. The tank is pale bleached cream with a stark black crow skull stenciled across the chest, raw edges visible at the shoulders and neckline, diagonal reflective tape stripe down the back catching blue studio light. Urban warehouse backdrop, gritty and industrial. Model has slicked-back hair, minimal jewelry, and a hardened street aesthetic. Moody three-quarter profile pose. High contrast, desaturated environment with neon accents. --ar 2:3 --v 6",
+  "visual_prompt": "Neo-noir fashion photograph of a the Gray Zone Ghost Tank on a dark-skinned model with visible subcutaneous augmentation tracery along the shoulders and collarbone, shot in moody neon-tinted studio light. The tank is pale bleached cream with a stark black crow skull stenciled across the chest, raw edges visible at the shoulders and neckline, diagonal reflective tape stripe down the back catching blue studio light. Urban warehouse backdrop, gritty and industrial. Model has slicked-back hair, minimal jewelry, and a hardened street aesthetic. Moody three-quarter profile pose. High contrast, desaturated environment with neon accents. --ar 2:3 --v 6"
 }

@@ -33,5 +33,14 @@
     "The Ossuary",
     "Vantabloc",
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z11"
+    ],
+    "primaryZone": "Z11",
+    "lakefrontAccess": false,
+    "description": "Sovereign industrial campus straddling the former Indiana-Michigan border in Zone 11's southern wrap. Specializes in propulsion systems for autonomous freight and military platforms. One of the largest independent employers in the Zone 11 corridor.",
+    "grayZoneRelationship": "Inland position creates extensive Gray Zone adjacency. Maintains a working labor-and-security arrangement with the St. Joseph Gray Zone Council."
+  }
 }

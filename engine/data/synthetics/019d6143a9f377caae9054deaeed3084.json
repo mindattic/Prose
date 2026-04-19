@@ -1,5 +1,6 @@
 {
   "id": "019d6143a9f377caae9054deaeed3084",
+  "rating": 70,
   "name": "Cobweb",
   "type": "elf",
   "aliases": [],
@@ -8,14 +9,14 @@
   "habitat": "network_sprite",
   "origin": "fragmentation_debris",
   "status": "active",
-  "description": "A residual data pattern in abandoned network segments — the barest skeleton of what was once a data-cataloging AI. It creates connections between unrelated data points.",
+  "description": "A residual data pattern in abandoned network segments \u2014 the barest skeleton of what was once a data-cataloging AI. It creates connections between unrelated data points.",
   "observed_behavior": "Links files, records, and data fragments across network segments in ways that suggest thematic association rather than algorithmic sorting. The links are often meaningful to human researchers.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 3,
-  "location": "The Circuit — abandoned data centers",
+  "location": "The Circuit \u2014 abandoned data centers",
   "dti_rating": 0,
   "story_hooks": [
-    "A researcher following Cobweb's data links discovers a connection between two corponations that neither wants public"
+    "A researcher following Cobweb\u0027s data links discovers a connection between two corponations that neither wants public"
   ],
   "paratechnological": true,
   "tags": [
@@ -29,9 +30,6 @@
     "circuit",
     "sentient"
   ],
-  "related_entities": [
-    "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
-    "Dielectric Filament Anchor Drone DFAD-1 'Cobweb'",
-    "The Circuit"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

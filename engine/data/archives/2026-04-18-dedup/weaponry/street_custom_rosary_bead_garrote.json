@@ -1,0 +1,43 @@
+{
+  "id": "48239404f8511c8df27311514a11f5a0",
+  "name": "Street Custom 'Rosary' Bead Garrote",
+  "type": "weapon",
+  "aliases": [],
+  "category": "concealed weapon",
+  "description": "A garrote wire concealed within a string of decorative beads worn as a bracelet or necklace. The beads are machined from tungsten carbide and threaded on a 1mm monofilament wire with breaking strength of 400 kilograms. When deployed — unclasped and drawn taut between two hands — the wire cuts through unprotected tissue in seconds, and the tungsten beads provide grip points that prevent the wire from slipping through the operator's hands.\n\nRosary garrotes are the Gray Zone craft — assembled by hand from industrial monofilament and machined beads, then disguised as costume jewelry. They are worn openly, passed through security checkpoints without comment, and carried in environments where no other weapon could enter. The Rosary exploits the most fundamental assumption of weapons screening: jewelry is not dangerous.\n\nThe weapon requires close physical contact and significant upper-body strength to deploy effectively, limiting its use to ambush or grapple scenarios. But its concealability is unmatched — a Rosary looks like a piece of inexpensive jewelry, weighs almost nothing, and shows up on X-ray as exactly what it appears to be: a string of metal beads. Only someone who recognizes the specific bead material and wire type would identify it as a weapon, and that requires expertise that most security personnel do not possess.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Unregulated — classified as jewelry (weaponized use constitutes assault)",
+  "street_price": "Φ150",
+  "base_technologies": [
+    "Monofilament wire",
+    "Tungsten carbide bead machining",
+    "Jewelry concealment"
+  ],
+  "specifications": "wire material: 1mm monofilament, 400 kg breaking strength\nbead material: Tungsten carbide, 8mm diameter\ntotal length: 60cm deployed\nweight: 85g\nform factor: Bracelet or necklace",
+  "tactical_use": "Close-quarters assassination from ambush or grapple position. The Rosary requires the operator to be behind or above the target with both hands free. Once deployed, the monofilament cuts through neck tissue faster than the target can respond. The weapon leaves a distinctive wound that experienced forensic examiners can identify.",
+  "cultural_context": "The Rosary garrote occupies a strange cultural space in the Gray Zone — it is both a weapon and a genuine piece of community jewelry. Many the Gray Zone residents wear monofilament bead strings without any intention of using them as weapons, simply because they are inexpensive and attractive. This makes identifying actual weapon-carriers impossible. The ambiguity is the point.",
+  "known_users": [
+    "the Gray Zone residents (both as jewelry and weapon)",
+    "Assassins requiring zero-detection-profile equipment",
+    "Anyone who expects to be thoroughly searched"
+  ],
+  "story_hooks": [
+    "A corporate bodyguard was killed with a Rosary garrote in a crowd — the attacker deployed the wire, made the cut, and vanished into the press of bodies in under three seconds. Security footage shows dozens of people wearing similar bead jewelry. The killer is in the footage. So are forty innocent people wearing the same accessory.",
+    "A jeweler in the Gray Zone has been arrested for manufacturing Rosary garrotes — but the arrest is cover for something else. The jeweler's client list includes names from the upper tiers, people who shouldn't know the Gray Zone exists, let alone be buying weapons from it."
+  ],
+  "ammunition_type": [],
+  "tags": [
+    "concealed",
+    "weapon",
+    "disguised",
+    "garrote",
+    "jewelry",
+    "monofilament",
+    "street",
+    "melee",
+    "tier 1"
+  ],
+  "physical_description": "A string of roughly-spherical tungsten carbide beads in dull gunmetal gray, each 8-10mm in diameter with visible machining marks and micro-scratches from assembly. The beads are threaded on nearly-invisible monofilament that catches light only when angled, and terminate in a simple brass or steel clasp, worn smooth from handling. The whole piece weighs noticeably more than costume jewelry should, and the beads clack softly against each other with the dead sound of industrial carbide.",
+  "visual_prompt": "close-up product photography of gray tungsten carbide beads on monofilament wire, brass clasp detail, gritty industrial aesthetic, worn metal texture, dark background, neo-noir lighting, shallow depth of field, street-made weapon jewelry, rain-wet surfaces, detailed macro photography, cyberpunk noir"
+}

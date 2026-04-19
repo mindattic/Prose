@@ -12,7 +12,7 @@
   "observed_behavior": "Activates lighting patterns creating visible paths through areas with current threats.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 25,
-  "location": "The Shelf - contested corridors",
+  "location": "the Gray Zone - contested corridors",
   "dti_rating": 0,
   "story_hooks": [
     "A mother follows the flickering lights home safely through robbery territory"
@@ -24,11 +24,9 @@
     "trickster",
     "network sprite",
     "e.l.f.",
-    "shelf",
     "sentient"
   ],
   "related_entities": [
-    "Arcturus KS-7 'Nursery'",
-    "The Shelf"
+    "Arcturus KS-7 'Nursery'"
   ]
 }

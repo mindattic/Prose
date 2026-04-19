@@ -9,8 +9,8 @@
   "role": "Forced entry and close-quarters combat specialist — breacher",
   "age": 36,
   "status": "active",
-  "location": "The Shelf — lower district tenements near the old lakeshore, near Halsted and Division",
-  "description": "Remi Horváth-Castañeda are compact and densely muscled, built low to the ground like something designed to survive impacts. At 36, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cybernetic arm — right, full replacement from shoulder — stronger than organic,  — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a breacher out of The Shelf, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Remi Horváth-Castañeda describe them as a precision instrument — point them at a problem and get out of the way.",
+  "location": "the Gray Zone — lower district tenements near the old lakeshore, near Halsted and Division",
+  "description": "Remi Horváth-Castañeda are compact and densely muscled, built low to the ground like something designed to survive impacts. At 36, their face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cybernetic arm — right, full replacement from shoulder — stronger than organic,  — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a breacher out of the Gray Zone, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nThe fixers who work with Remi Horváth-Castañeda describe them as a precision instrument — point them at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.85,
@@ -258,7 +258,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -276,14 +276,13 @@
   ],
   "related_entities": [
     "The Nearfield",
-    "The Shelf",
     "The Heritage Vault",
     "Diaspora Table",
     "The Gradient Compact",
     "Stratum",
     "Pellucid Systems"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Sub-Saharan African (34.4%), Indigenous American (19.3%), Hispanic/Latin American (18.4%), Eastern European (14.5%), East Asian (9.7%), and Southeast Asian (3.7%) blend. The dominant Sub-Saharan African and Indigenous American ancestry creates prominent high cheekbones, strong angular jaw structure, and naturally dense bone density. The East Asian and Southeast Asian components (13.4% combined) contribute a subtle epicanthic eye fold influence and moderate facial width. Hispanic/Latin American heritage adds warmth and golden undertones throughout. Eastern European ancestry provides slight facial width balance. The combination produces someone striking and genuinely mixed—a cosmopolitan appearance where no single ancestry dominates, reflecting the Ubiquitous Diaspora.",
     "height_cm": 168,

@@ -9,8 +9,8 @@
   "role": "Loan shark",
   "age": 51,
   "status": "active",
-  "location": "The Shelf lower levels, specifically the Blackpipe Corridor market hub, near Pulaski and Chicago Ave",
-  "description": "Ingrid Strömqvist-Owusu has the kind of face that has grown into itself — high cheekbones above hollowed cheeks, close-cropped natural hair gone to silver at the temples, skin the color of dark honey mapped with the specific fine lines of someone who has spent decades expressing exactly as much as she chooses to express and no more. She is thin in a way that suggests efficiency rather than want. She dresses in well-maintained secondhand clothing in muted ochres and deep greens, always with a long vest that has many pockets, all of which she knows the contents of. Her one visible mod is cat ears — small, dark-furred, and alert — that she had installed at thirty and has maintained ever since; they rotate toward sound with small, involuntary precision, which she uses to her advantage because people underestimate what she is hearing.\n\nIngrid Strömqvist-Owusu runs her loan operation from a tea stall in the Blackpipe market that is legitimately also a tea stall — she has brewed good tea for twenty years and takes genuine pride in it. She learned lending from her grandmother, who ran a rotating savings collective in the lower Shelf before the Copper Ledger absorbed the territory. Ingrid Strömqvist-Owusu understands money as a social technology and interest as a form of relationship; she is not cruel, but she is absolutely clear about consequences, and the Blackpipe community both relies on her and is slightly afraid of her, which she considers the correct balance.",
+  "location": "the Gray Zone lower levels, specifically the Blackpipe Corridor market hub, near Pulaski and Chicago Ave",
+  "description": "Ingrid Strömqvist-Owusu has the kind of face that has grown into itself — high cheekbones above hollowed cheeks, close-cropped natural hair gone to silver at the temples, skin the color of dark honey mapped with the specific fine lines of someone who has spent decades expressing exactly as much as she chooses to express and no more. She is thin in a way that suggests efficiency rather than want. She dresses in well-maintained secondhand clothing in muted ochres and deep greens, always with a long vest that has many pockets, all of which she knows the contents of. Her one visible mod is cat ears — small, dark-furred, and alert — that she had installed at thirty and has maintained ever since; they rotate toward sound with small, involuntary precision, which she uses to her advantage because people underestimate what she is hearing.\n\nIngrid Strömqvist-Owusu runs her loan operation from a tea stall in the Blackpipe market that is legitimately also a tea stall — she has brewed good tea for twenty years and takes genuine pride in it. She learned lending from her grandmother, who ran a rotating savings collective in the Gray Zone before the Copper Ledger absorbed the territory. Ingrid Strömqvist-Owusu understands money as a social technology and interest as a form of relationship; she is not cruel, but she is absolutely clear about consequences, and the Blackpipe community both relies on her and is slightly afraid of her, which she considers the correct balance.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -115,7 +115,7 @@
     "stress_responses": {
       "low": "Makes more tea; listens more and talks less",
       "medium": "Becomes very formal; shifts entirely to contractual language",
-      "high": "Disappears for 24 hours into an undisclosed location on the lower Shelf that no one has been able to identify"
+      "high": "Disappears for 24 hours into an undisclosed location on the Gray Zone that no one has been able to identify"
     },
     "contradictions": [
       "She genuinely believes she provides a community service while running an operation that keeps her community in debt to her",
@@ -164,7 +164,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -174,7 +174,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2149: Born on the Shelf lower levels to a Ghanaian-Icelandic-Bolivian family",
+      "event": "2149: Born in the Gray Zone lower levels to a Ghanaian-Icelandic-Bolivian family",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -231,7 +231,6 @@
     "Blackpipe Corridor",
     "Grandmother",
     "The Marrow Market",
-    "The Shelf",
     "GLMZ",
     "Chicago",
     "Silver",
@@ -239,7 +238,7 @@
     "Haze Johansson",
     "Pellucid Systems"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Predominantly Sub-Saharan African (51.3%) with significant Northern European (45.2%) ancestry and minor Hispanic/Latin American (3.5%) contribution. This creates a rich, warm deep brown complexion with golden undertones — the Sub-Saharan foundation modulated by Northern European genetics into a nuanced warm mahogany rather than pure ebony. The facial structure reflects the African and Hispanic blend: prominent, well-defined cheekbones, fuller lips, and a nose with width and character. Northern European ancestry contributes fine facial geometry and subtle cool undertones beneath the warmth.",
     "height_cm": 168,

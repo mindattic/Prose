@@ -9,7 +9,7 @@
   "role": "Synthetic rights paralegal and street-level legal advocate",
   "age": 26,
   "status": "active",
-  "location": "The Shelf, near Halsted and Division",
+  "location": "the Gray Zone, near Halsted and Division",
   "description": "Quinn Tehrani is thin in the way of someone who eats when they remember to, with warm ochre skin, wide-set eyes with patterned irises — concentric rings of gold and green that pulse very faintly when they're stressed, an involuntary response from a cosmetic mod that was supposed to only do it when they wanted. Their hair is grown out into a thick natural halo that they sometimes shove under a battered cap. They carry a battered legal tablet that's been dropped, cracked, and re-shelled so many times it is essentially a philosophy about persistence.\n\nThey work under an advocacy nonprofit called Parallel Standing, providing free legal aid to synthetic workers, ELF-adjacent communities, and anyone else the standard courts treat as property rather than persons. Quinn Tehrani has no law degree — they have a paralegal certification, six hundred hours of practical training, and an uncanny instinct for finding the procedural gap in any document. They are intensely idealistic in a way that hasn't yet been beaten flat by the world, which makes them both electric to be around and worrying to people who have been doing this longer.",
   "psychology": {
     "facet_weights": {
@@ -57,7 +57,7 @@
   ],
   "narrative_function": "Access point to the synthetic rights world and legal system underbelly — they know who has been disappeared, what cases are being buried, and which corporate legal teams are playing dirty.",
   "augmentations": "Patterned irises (concentric gold/green rings, stress-reactive pulse — unintended behavior from cosmetic mod). Subvocal comms implant for silent communication during proceedings.",
-  "daily_life": "Intake shifts three mornings a week at the Parallel Standing storefront on The Shelf, rest of their time split between case prep, street outreach to synthetic communities, and attending every public hearing they can get into.",
+  "daily_life": "Intake shifts three mornings a week at the Parallel Standing storefront on the Gray Zone, rest of their time split between case prep, street outreach to synthetic communities, and attending every public hearing they can get into.",
   "affiliation": "Parallel Standing Legal Advocacy Collective; loose affiliation with several synthetic rights organizations",
   "uses_facets": false,
   "narration_voice": "",
@@ -150,7 +150,7 @@
     "Networker": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -164,12 +164,11 @@
   "registered_firearms": [],
   "related_entities": [
     "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
-    "The Shelf",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Gold"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Predominantly Middle Eastern (56%) with substantial Sub-Saharan African (19.2%) ancestry creating a warm, luminous complexion. Central Asian heritage (10.3%) contributes angular bone structure and slight eye shape variation, while Northern European (11.1%) and Hispanic/Latin American (3.4%) ancestry add subtle undertones to iris coloration and skin depth. The genetic blend produces striking dimensional features: golden-warm skin with rich undertones, prominent cheekbones from Central Asian and Middle Eastern lineage, expressive full mouth characteristic of African heritage contribution, and complex eye coloration reflecting the full ancestry spectrum.",
     "height_cm": 168,

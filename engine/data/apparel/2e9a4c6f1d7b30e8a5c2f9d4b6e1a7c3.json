@@ -1,9 +1,9 @@
 {
   "id": "2e9a4c6f1d7b30e8a5c2f9d4b6e1a7c3",
-  "name": "Shelf Patchwork Tank (Scavenged)",
+  "name": "the Gray Zone Patchwork Tank (Scavenged)",
   "type": "apparel",
   "category": "top",
-  "description": "Not a manufactured item — this is something built from nothing. A tank top assembled from three or four mismatched fabric sources: a section of old corporate uniform fabric (the logo partially burned or bleached out), a strip of fluorescent mesh from a construction vest, and a back panel that might be repurposed synth-bag material. Whoever made it knew what they were doing — the seams hold, the armholes are clean, and someone has added a hand-stitched border along the collar in a tight cross-stitch pattern using bright orange thread. Every one of these is unique.\n\nOn the Shelf, you wear what you can get. But there's craft here — real craft. Some of these tanks end up in Tier 3 boutiques with a four-hundred-quanta markup and a story about 'authentic street construction.' The people who made them don't see a coin of that.",
+  "description": "Not a manufactured item — this is something built from nothing. A tank top assembled from three or four mismatched fabric sources: a section of old corporate uniform fabric (the logo partially burned or bleached out), a strip of fluorescent mesh from a construction vest, and a back panel that might be repurposed synth-bag material. Whoever made it knew what they were doing — the seams hold, the armholes are clean, and someone has added a hand-stitched border along the collar in a tight cross-stitch pattern using bright orange thread. Every one of these is unique.\n\nOn the Gray Zone, you wear what you can get. But there's craft here — real craft. Some of these tanks end up in Tier 3 boutiques with a four-hundred-quanta markup and a story about 'authentic street construction.' The people who made them don't see a coin of that.",
   "tier_association": "Tier 1",
   "materials": [
     "scavenged synth-cotton",
@@ -14,7 +14,7 @@
   "functionality": "",
   "what_it_says": "You make do. You also make something out of making do — there's pride in this, even if the world doesn't see it that way.",
   "worn_by": [
-    "Shelf residents",
+    "the Gray Zone residents",
     "street artists",
     "underground market vendors",
     "young people with nothing and style anyway"
@@ -25,7 +25,7 @@
   "gene_compatible": true,
   "story_hooks": [
     "The burned-out logo on the front is from a corponation that was supposedly dissolved fifteen years ago — but someone is still making uniforms with that mark.",
-    "A Tier 4 fashion house has started producing 'authentic Shelf-inspired' reproductions of this style, and the backlash from Tier 1 communities is building toward something uglier than protest.",
+    "A Tier 4 fashion house has started producing 'authentic the Gray Zone-inspired' reproductions of this style, and the backlash from Tier 1 communities is building toward something uglier than protest.",
     "A character recognizes the cross-stitch pattern as a specific maker's signature — and that maker disappeared six months ago."
   ],
   "tags": [
@@ -33,7 +33,6 @@
     "top",
     "tank",
     "tier 1",
-    "shelf",
     "scavenged",
     "patchwork",
     "handmade",
@@ -46,7 +45,6 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "TESSERA PG-2 'Signature'",
     "The Cruciform Depot",
-    "The Shelf",
     "The United Workers Front",
     "Veslemøy Achebe-Tursynov",
     "Yannick Tambadou-Reinholt"
@@ -67,9 +65,9 @@
       "Back panel possibly retains subtle creases or manufacturing marks from previous use"
     ],
     "tier_indicator": "Tier 5 origin (salvage/ungoverned construction) masquerading in Tier 3 markets; worn by people who either made it themselves or sourced it directly from makers. Tier 2 fashion tourists might pay inflated prices for 'authenticity,' unaware of actual tier context.",
-    "cultural_context": "Street-tier indicator—signals maker culture, resource ingenuity, and refusal of corporate supply chains. Worn by salvagers, Shelf residents, DIY augmentation techs, and people who value craft over consistency. Also worn ironically by corpo aesthetes seeking 'authentic street authenticity' at boutique markup. The wearer's actual tier is ambiguous—could be someone making do, or someone making a statement.",
+    "cultural_context": "Street-tier indicator—signals maker culture, resource ingenuity, and refusal of corporate supply chains. Worn by salvagers, the Gray Zone residents, DIY augmentation techs, and people who value craft over consistency. Also worn ironically by corpo aesthetes seeking 'authentic street authenticity' at boutique markup. The wearer's actual tier is ambiguous—could be someone making do, or someone making a statement.",
     "condition_typical": "Broken-in from wear but structurally sound. Seams hold without puckering. Collar border may show slight fading depending on wearer's sun exposure and laundry habits. Mesh may have minor snags but remains functional. No intentional distressing—any wear is genuine use-wear."
   },
-  "image_prompt": "Close-up fashion shot of a Shelf Patchwork Tank displayed on a dark synthetic mannequin or worn by a mixed-heritage model with subtle chrome forearm augmentation. Emphasize the three distinct fabric sections and bright orange hand-stitched collar border. Moody underground studio lighting with one cool-toned accent light hitting the fluorescent mesh section, making it glow slightly. Blurred industrial GLMZ backdrop—steel girders, faded corporate signage, neon reflecting on wet concrete. Shallow depth of field on the collar detail. Film grain to emphasize authenticity. --ar 2:3 --v 6",
-  "visual_prompt": "Close-up fashion shot of a Shelf Patchwork Tank displayed on a dark synthetic mannequin or worn by a mixed-heritage model with subtle chrome forearm augmentation. Emphasize the three distinct fabric sections and bright orange hand-stitched collar border. Moody underground studio lighting with one cool-toned accent light hitting the fluorescent mesh section, making it glow slightly. Blurred industrial GLMZ backdrop—steel girders, faded corporate signage, neon reflecting on wet concrete. Shallow depth of field on the collar detail. Film grain to emphasize authenticity. --ar 2:3 --v 6"
+  "image_prompt": "Close-up fashion shot of a the Gray Zone Patchwork Tank displayed on a dark synthetic mannequin or worn by a mixed-heritage model with subtle chrome forearm augmentation. Emphasize the three distinct fabric sections and bright orange hand-stitched collar border. Moody underground studio lighting with one cool-toned accent light hitting the fluorescent mesh section, making it glow slightly. Blurred industrial GLMZ backdrop—steel girders, faded corporate signage, neon reflecting on wet concrete. Shallow depth of field on the collar detail. Film grain to emphasize authenticity. --ar 2:3 --v 6",
+  "visual_prompt": "Close-up fashion shot of a the Gray Zone Patchwork Tank displayed on a dark synthetic mannequin or worn by a mixed-heritage model with subtle chrome forearm augmentation. Emphasize the three distinct fabric sections and bright orange hand-stitched collar border. Moody underground studio lighting with one cool-toned accent light hitting the fluorescent mesh section, making it glow slightly. Blurred industrial GLMZ backdrop—steel girders, faded corporate signage, neon reflecting on wet concrete. Shallow depth of field on the collar detail. Film grain to emphasize authenticity. --ar 2:3 --v 6"
 }

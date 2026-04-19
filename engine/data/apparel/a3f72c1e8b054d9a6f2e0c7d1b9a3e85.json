@@ -14,17 +14,17 @@
   "functionality": "Eleven attachment points accommodate improvised pouches, wire coils, and hand tools. Buckle releases under lateral pressure for quick strip. Width distributes load across the hips during heavy hauling.",
   "what_it_says": "You build what you need from what's left.",
   "worn_by": [
-    "Shelf scavengers",
+    "the Gray Zone scavengers",
     "reclaim-zone laborers",
     "off-grid mechanics",
     "salvage runners"
   ],
-  "manufacturer": "Self-made / Shelf Market-Made",
+  "manufacturer": "Self-made / the Gray Zone Market-Made",
   "price_range": "Φ4 – Φ18",
   "aug_compatible": true,
   "gene_compatible": true,
   "story_hooks": [
-    "One of the D-rings is engraved with a name — not the wearer's — and nobody on the Shelf will say whose it was.",
+    "One of the D-rings is engraved with a name — not the wearer's — and nobody in the Gray Zone will say whose it was.",
     "A particular pouch on the belt is always locked, even when the wearer is asleep.",
     "The defunct logo on the buckle is recognizable to anyone old enough to remember the Caldwell Incident."
   ],
@@ -34,7 +34,6 @@
     "belt",
     "utility",
     "tier-1",
-    "shelf",
     "salvage",
     "self-made"
   ],
@@ -42,7 +41,6 @@
   "related_entities": [
     "Brecken Yılmaz-Osei",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "The Shelf",
     "Yannick Tofauti-Szarvásy"
   ],
   "physical_description": {

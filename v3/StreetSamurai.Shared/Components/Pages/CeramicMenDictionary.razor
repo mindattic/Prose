@@ -1,4 +1,4 @@
-@page "/ceramic-men"
+﻿@page "/ceramic-men"
 @inject SyntheticLifeRepository Repo
 @inject NavigationManager Nav
 @inject IJSRuntime JS
@@ -23,7 +23,7 @@
     <div class="dict-editor">
         @if (editing != null)
         {
-            <EditViewToggle RepoName="ceramic-men" Title="@(isNew ? "New Ceramic Man" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)">
+            <EditViewToggle RepoName="ceramic-men" Title="@(isNew ? "New Ceramic Man" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)" Rating="@(editing?.Rating ?? 0)" RatingChanged="OnRatingChanged">
                 <HeaderButtons>
                     <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i><div class="btn-lbl"> Save</div></button>
                     @if (!isNew && !confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => confirmDelete = true"><i class="bi bi-archive"></i></button> }
@@ -140,4 +140,5 @@
             if (target != null) { Edit(target); StateHasChanged(); }
         }
     }
+    private void OnRatingChanged(double value) { if (editing == null) return; editing.Rating = value; Repo.Save(editing); }
 }

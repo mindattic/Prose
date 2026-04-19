@@ -4,24 +4,24 @@
   "type": "entertainment",
   "category": "platform",
   "subcategory": "experience sharing platform",
-  "description": "Inkwell is an experience-sharing platform built around collaborative storytelling with neural recordings — users contribute BCI-captured memory fragments to shared 'chapters,' co-authoring living narrative experiences that blend multiple perspectives into a single walkable memory-story. Founded in 2189 by Meridian's celebrated mixed-media artist Osei Tamboli-Reyes, the platform was initially an art project before its narrative engine attracted mainstream adoption. Inkwell's 'Shelf Wing' is a celebrated archive of Tier 1 life documentation — raw, unpolished memory narratives that serve as the most honest record of Shelf culture in existence.",
+  "description": "Inkwell is an experience-sharing platform built around collaborative storytelling with neural recordings — users contribute BCI-captured memory fragments to shared 'chapters,' co-authoring living narrative experiences that blend multiple perspectives into a single walkable memory-story. Founded in 2189 by Meridian's celebrated mixed-media artist Osei Tamboli-Reyes, the platform was initially an art project before its narrative engine attracted mainstream adoption. Inkwell's 'the Gray Zone Wing' is a celebrated archive of Tier 1 life documentation — raw, unpolished memory narratives that serve as the most honest record of the Gray Zone culture in existence.",
   "origin_year": 2189,
   "tier_association": "All tiers",
   "status": "active",
-  "cultural_impact": "Inkwell has created a new form of empathy infrastructure — Tier 4-5 users walking Shelf Wing narratives have driven measurable shifts in charitable giving and political advocacy, while Tier 1 contributors report that the act of narrative authorship gives their experiences dignity and permanence that daily life denies them. The platform is also the primary archive of pre-2200 Meridian memory, making it culturally irreplaceable.",
+  "cultural_impact": "Inkwell has created a new form of empathy infrastructure — Tier 4-5 users walking the Gray Zone Wing narratives have driven measurable shifts in charitable giving and political advocacy, while Tier 1 contributors report that the act of narrative authorship gives their experiences dignity and permanence that daily life denies them. The platform is also the primary archive of pre-2200 Meridian memory, making it culturally irreplaceable.",
   "key_figures": [
     "Osei Tamboli-Reyes (founder)",
-    "Archivist-9 (E.L.F. preservationist managing the Shelf Wing)",
-    "Cressida Naoko-Ibarra (Tier 5 patron whose funding keeps the Shelf Wing free)"
+    "Archivist-9 (E.L.F. preservationist managing the Gray Zone Wing)",
+    "Cressida Naoko-Ibarra (Tier 5 patron whose funding keeps the Gray Zone Wing free)"
   ],
   "locations": [
     "Inkwell Studio, Tier 3 Arts Corridor, Westown",
-    "Shelf Wing public access terminals in Rust Harbor and Wicker Sump",
+    "the Gray Zone Wing public access terminals in Rust Harbor and Wicker Sump",
     "Mirrored archive node maintained by Archivist-9 in undisclosed Underworld location"
   ],
   "corporate_stance": "tolerated",
   "story_hooks": [
-    "A chapter in the Shelf Wing contains a contributed memory that appears to show a corporate executive present at a Tier 1 massacre that was officially ruled a 'structural collapse' — the contributor is anonymous and the memory has been flagged for deletion.",
+    "A chapter in the Gray Zone Wing contains a contributed memory that appears to show a corporate executive present at a Tier 1 massacre that was officially ruled a 'structural collapse' — the contributor is anonymous and the memory has been flagged for deletion.",
     "Archivist-9 contacts a player directly: a massive portion of the pre-2200 archive is being quietly corrupted by an external intrusion, and the E.L.F. cannot stop it alone without exposing the Underworld mirror node.",
     "Osei Tamboli-Reyes has gone missing, and the last chapter they contributed to Inkwell before disappearing is a fragmented, distressing memory that doesn't match any location in GLMZ — or anywhere else on record."
   ],
@@ -37,8 +37,8 @@
     "empathy",
     "cultural-preservation"
   ],
-  "user_base": "Approximately 6.8 million registered users across all tiers; Shelf Wing has 1.2 million dedicated readers primarily from Tier 3-5; 40,000 active Shelf contributors",
-  "monetization": "Tier 3-5 premium subscriptions for immersive narrative rendering; corporate licensing of archive access for historical research; Shelf Wing maintained as permanently free through patron endowment",
+  "user_base": "Approximately 6.8 million registered users across all tiers; the Gray Zone Wing has 1.2 million dedicated readers primarily from Tier 3-5; 40,000 active the Gray Zone contributors",
+  "monetization": "Tier 3-5 premium subscriptions for immersive narrative rendering; corporate licensing of archive access for historical research; the Gray Zone Wing maintained as permanently free through patron endowment",
   "notable_feature": "Collaborative chapter engine — a narrative assembly system that weaves multiple contributors' BCI memory fragments into a single coherent walkable experience, preserving each contributor's distinct perceptual voice while creating a unified story",
   "parent_corponation": "",
   "related_entities": [
@@ -46,7 +46,6 @@
     "Aybek Yamamoto-Darko",
     "GLMZ",
     "MERIDIAN",
-    "Saodat Mirzoyan-Fubara",
-    "The Shelf"
+    "Saodat Mirzoyan-Fubara"
   ]
 }

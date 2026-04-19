@@ -1,4 +1,4 @@
-@page "/vocabulary"
+﻿@page "/vocabulary"
 @using StreetSamurai.Core.Models.Canon
 @inject VocabularyRepository Repo
 @inject NavigationManager Nav
@@ -58,19 +58,19 @@
 </div>
 
 @code {
-    private List<VocabularyEntry> items = [];
-    private VocabularyEntry? editing;
+    private List<VocabularyData> items = [];
+    private VocabularyData? editing;
     private bool isNew, _confirmDelete;
     private string originalTerm = "";
     private string filter = "";
     private List<(string name, int count)> allTags = [];
     private HashSet<string> selectedTags = [];
 
-    private List<VocabularyEntry> FilteredItems
+    private List<VocabularyData> FilteredItems
     {
         get
         {
-            IEnumerable<VocabularyEntry> result = items;
+            IEnumerable<VocabularyData> result = items;
             if (!string.IsNullOrWhiteSpace(filter))
                 result = result.Where(v => v.Term.Contains(filter, StringComparison.OrdinalIgnoreCase));
             if (selectedTags.Count > 0)
@@ -78,11 +78,11 @@
             return result.ToList();
         }
     }
-    private List<VocabularyEntry> SortedItems => FilteredItems.OrderBy(x => x.Term).ToList();
+    private List<VocabularyData> SortedItems => FilteredItems.OrderBy(x => x.Term).ToList();
 
     protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); RebuildTags(); if (Nav.Uri.Contains("new=true")) AddNew(); else { var qid = Nav.Uri.Contains("id=") ? Uri.UnescapeDataString(Nav.Uri.Split(new[]{"id="}, StringSplitOptions.None).Last().Split(new[]{"&"}, StringSplitOptions.None)[0]) : ""; if (!string.IsNullOrEmpty(qid)) { var t = items.FirstOrDefault(e => e.Id == qid); if (t != null) Edit(t); } } }
-    private void AddNew() { editing = new VocabularyEntry(); isNew = true; _confirmDelete = false; }
-    private void Edit(VocabularyEntry v) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_vocabulary", v.Id); editing = v; originalTerm = v.Term; isNew = false; _confirmDelete = false; if (!Nav.Uri.Contains("id=" + v.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + v.Id, forceLoad: false); }
+    private void AddNew() { editing = new VocabularyData(); isNew = true; _confirmDelete = false; }
+    private void Edit(VocabularyData v) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_vocabulary", v.Id); editing = v; originalTerm = v.Term; isNew = false; _confirmDelete = false; if (!Nav.Uri.Contains("id=" + v.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + v.Id, forceLoad: false); }
     private void SaveEdit() { if (editing == null || string.IsNullOrWhiteSpace(editing.Term)) return; if (!isNew && originalTerm != editing.Term) Repo.Delete(originalTerm); Repo.Save(editing); editing = null; items = Repo.GetAll(); }
     private void DoDelete() { if (editing == null) return; Repo.Delete(editing.Term); editing = null; _confirmDelete = false; items = Repo.GetAll(); }
     protected override async Task OnAfterRenderAsync(bool firstRender)

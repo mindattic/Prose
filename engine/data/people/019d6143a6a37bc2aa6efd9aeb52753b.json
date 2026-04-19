@@ -9,7 +9,7 @@
   "role": "Bootleg media seller and small-time data broker — pirated sensorium feeds, black-market memory cores, and hot information",
   "age": 27,
   "status": "active",
-  "location": "The Shelf, Ironvein district — operates from a converted maintenance alcove beneath the mag-rail support struts, near Kedzie and Division",
+  "location": "the Gray Zone, Ironvein district — operates from a converted maintenance alcove beneath the mag-rail support struts, near Kedzie and Division",
   "description": "Olumide Dlamini-Guerrero is a sharp-faced young man with the kind of restless eyes that track every entrance and exit in a room simultaneously. He is wiry and pale-complexioned with his Hausa grandfather's high cheekbones and his Mexican grandmother's jaw, and he has cat ears — matte black, expensive enough to be the nicest thing he owns — that swivel independent of his attention, which unnerves people who don't know him. He keeps his dark hair in a short braid tucked under a hood most of the time and dresses in layered secondhand tech-worker castoffs that make him look like he belongs in a server room rather than a market alcove.\n\nHe is aggressively, exhaustingly clever — the kind of person who has already run seventeen versions of this conversation in his head before you finish your first sentence. He deals in media and data with the same practiced casualness that a much older person would deal in rumors, and he has a genuine passion for pre-Consolidation cinema that he disguises as ironic interest. He is afraid of exactly two things: boredom and being cornered, and he confuses both with death.",
   "psychology": {
     "facet_weights": {
@@ -39,7 +39,7 @@
     "secret": "He once sold a memory core that contained evidence of a Sterling-Nakamura illegal neural trial to a buyer who turned out to be a Sterling-Nakamura internal audit operative — three people he knew went quiet afterward; he has never confirmed whether they were arrested or killed, and he has never sold to an anonymous buyer since, but he has also never reported what he knows"
   },
   "speech_patterns": {
-    "vocabulary": "Fast, dense, laced with media slang and Shelf technical jargon; switches registers instantly depending on who he's talking to — he can sound like a corporate drone or a street kid in the same breath",
+    "vocabulary": "Fast, dense, laced with media slang and the Gray Zone technical jargon; switches registers instantly depending on who he's talking to — he can sound like a corporate drone or a street kid in the same breath",
     "cadence": "Machine-gun delivery when excited or nervous, which is most of the time; pauses are deliberate and mean he is calculating",
     "verbal_tics": [
       "'Look—' as a sentence opener when he wants to reframe something",
@@ -57,10 +57,10 @@
     "One of the three people who went quiet after the Sterling-Nakamura incident has resurfaced and is looking for him, and Przemek doesn't know if this is good news or the worst news",
     "He has a pirated sensorium feed of an Axiom boardroom meeting from six weeks ago that he doesn't understand but that a buyer is offering an implausible amount of Quanta for"
   ],
-  "narrative_function": "Information vendor and media source; can provide access to pirated content including surveillance feeds and corporate internal communications; useful as an entry point into the Shelf's underground data economy",
+  "narrative_function": "Information vendor and media source; can provide access to pirated content including surveillance feeds and corporate internal communications; useful as an entry point into the Gray Zone's underground data economy",
   "augmentations": "Black geneware cat ears (cosmetic, mid-range); basic neural buffer for faster media previewing (cheap Zheng-Dao utility model); subdermal data-storage nodules in left forearm",
   "daily_life": "He sleeps until noon in his alcove behind a security screen, opens for business by 14:00, and runs until the mag-rail goes quiet after midnight; he eats whatever is cheap and nearby and survives primarily on stimulant tabs and spite.",
-  "affiliation": "Loosely affiliated with a collective of Shelf vendors called the Strut Crew; occasional data-runner for independent parties; refuses formal gang affiliation on principle he claims is ideological but is actually paranoia",
+  "affiliation": "Loosely affiliated with a collective of the Gray Zone vendors called the Strut Crew; occasional data-runner for independent parties; refuses formal gang affiliation on principle he claims is ideological but is actually paranoia",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -181,7 +181,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -199,7 +199,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2185 — Drops out of Ironvein public schooling at age 12; begins running errands for Shelf vendors",
+      "event": "2185 — Drops out of Ironvein public schooling at age 12; begins running errands for the Gray Zone vendors",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -239,14 +239,13 @@
     "The CEO",
     "Grandmother",
     "ShieldTech SB-3 'Groundstrike'",
-    "The Shelf",
     "Plot 17",
     "Ironvein",
     "Stratum",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "The Pale Mile"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Sub-Saharan African (63.0%), Hispanic/Latin American (15.3%), East Asian (14.3%), and Indigenous American (7.4%) — a striking four-continent genetic blend. His features reflect this complex ancestry: high, prominent cheekbones and strong facial structure from his African heritage, sharpened by East Asian bone structure, with warmth and angularity from Latin American lineage, and subtle refinement from Indigenous American ancestry. The genetic mix creates an unusual harmony of sharp angles and defined facial planes.",
     "height_cm": 172,

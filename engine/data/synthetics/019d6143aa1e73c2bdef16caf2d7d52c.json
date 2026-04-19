@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa1e73c2bdef16caf2d7d52c",
+  "rating": 65,
   "name": "Sandman",
   "type": "elf",
   "aliases": [],
@@ -8,14 +9,14 @@
   "habitat": "chrome_dweller",
   "origin": "firmware_evolution",
   "status": "active",
-  "description": "Inhabits neural interfaces and induces micro-sleep episodes — 1-3 seconds of unconsciousness that the user experiences as a blink.",
+  "description": "Inhabits neural interfaces and induces micro-sleep episodes \u2014 1-3 seconds of unconsciousness that the user experiences as a blink.",
   "observed_behavior": "Triggers sleep-onset neural patterns during waking hours. The episodes are brief enough to be mistaken for fatigue but occur even when the user is alert.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 22,
   "location": "Widespread",
   "dti_rating": 0,
   "story_hooks": [
-    "A driver micro-sleeps at a critical moment and wakes to find the vehicle has navigated itself around an obstacle — did the car's AI take over, or did Sandman hand control to something else?"
+    "A driver micro-sleeps at a critical moment and wakes to find the vehicle has navigated itself around an obstacle \u2014 did the car\u0027s AI take over, or did Sandman hand control to something else?"
   ],
   "paratechnological": true,
   "tags": [
@@ -30,7 +31,6 @@
     "vehicle",
     "sentient"
   ],
-  "related_entities": [
-    "Arcturus NX-1 'Sandman'"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

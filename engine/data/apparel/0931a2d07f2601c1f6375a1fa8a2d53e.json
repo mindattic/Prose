@@ -3,7 +3,7 @@
   "name": "Threadbare Collective Patchwork Mittens",
   "type": "apparel",
   "category": "gloves",
-  "description": "Hand-sewn mittens assembled from whatever fabric is available — old uniforms, curtain scraps, packaging material. Each pair is unique, often mismatched, and held together with visible stitching that ranges from competent to desperate. Some incorporate conductive thread salvaged from discarded electronics, giving them accidental touch-screen compatibility.\n\nA Shelf-district survival item that has become a quiet act of community care — volunteer sewing circles produce hundreds of pairs each winter and distribute them for free. Wearing Patchwork Mittens is wearing proof that someone cared whether your hands stayed warm.",
+  "description": "Hand-sewn mittens assembled from whatever fabric is available — old uniforms, curtain scraps, packaging material. Each pair is unique, often mismatched, and held together with visible stitching that ranges from competent to desperate. Some incorporate conductive thread salvaged from discarded electronics, giving them accidental touch-screen compatibility.\n\nA the Gray Zone-district survival item that has become a quiet act of community care — volunteer sewing circles produce hundreds of pairs each winter and distribute them for free. Wearing Patchwork Mittens is wearing proof that someone cared whether your hands stayed warm.",
   "tier_association": "Tier 1",
   "materials": [
     "salvaged fabric scraps",
@@ -13,11 +13,11 @@
   "functionality": "Basic cold protection, accidental touch-screen compatibility (some pairs)",
   "what_it_says": "Someone made these for you out of nothing, and that means more than anything manufactured.",
   "worn_by": [
-    "Shelf residents",
+    "the Gray Zone residents",
     "mutual aid recipients",
     "anyone who needs warm hands"
   ],
-  "manufacturer": "Handmade (Shelf community)",
+  "manufacturer": "Handmade (the Gray Zone community)",
   "price_range": "Φ0 (donated)",
   "aug_compatible": false,
   "gene_compatible": false,
@@ -29,7 +29,6 @@
     "gloves",
     "tier 1",
     "handmade",
-    "Shelf",
     "community",
     "DIY",
     "mutual aid"
@@ -55,9 +54,9 @@
       "Informal tag or hand-written initials on inner cuff (optional, donor sewing circle mark)"
     ],
     "tier_indicator": "Tier 5 / Sub-grade solidarity. These are not fashion—they are survival. Zero market value, infinite community value.",
-    "cultural_context": "Wearing Patchwork Mittens identifies you as Shelf-district, working poor, or embedded in mutual-aid networks. It signals you accept collective care and are likely part of a community survival structure. In corpo zones, they read as a statement of refusal. In Shelf and industrial districts, they are simply winter.",
+    "cultural_context": "Wearing Patchwork Mittens identifies you as the Gray Zone-district, working poor, or embedded in mutual-aid networks. It signals you accept collective care and are likely part of a community survival structure. In corpo zones, they read as a statement of refusal. In the Gray Zone and industrial districts, they are simply winter.",
     "condition_typical": "Worn, patched, slightly stained at the cuffs from repeated handling. The conductive threading shows faint dark marks from finger oils. Seams hold firm but visibly stress-tested. Each pair looks like it has already saved someone's winter once, and will do it again."
   },
-  "image_prompt": "Close-up fashion photography of mismatched hand-sewn patchwork mittens on a neo-noir model's hands, resting against dark urban concrete. Garments show visible irregular stitching, mixed salvaged fabrics in gray-green-brown tones, and faint conductive thread tracery. Moody amber and cyan backlighting, shallow depth of field. Gritty Shelf-district aesthetic, worn but cared-for. Hands positioned to show interior cuff detail and patch seams. --ar 2:3 --v 6",
-  "visual_prompt": "Close-up fashion photography of mismatched hand-sewn patchwork mittens on a neo-noir model's hands, resting against dark urban concrete. Garments show visible irregular stitching, mixed salvaged fabrics in gray-green-brown tones, and faint conductive thread tracery. Moody amber and cyan backlighting, shallow depth of field. Gritty Shelf-district aesthetic, worn but cared-for. Hands positioned to show interior cuff detail and patch seams. --ar 2:3 --v 6"
+  "image_prompt": "Close-up fashion photography of mismatched hand-sewn patchwork mittens on a neo-noir model's hands, resting against dark urban concrete. Garments show visible irregular stitching, mixed salvaged fabrics in gray-green-brown tones, and faint conductive thread tracery. Moody amber and cyan backlighting, shallow depth of field. Gritty the Gray Zone-district aesthetic, worn but cared-for. Hands positioned to show interior cuff detail and patch seams. --ar 2:3 --v 6",
+  "visual_prompt": "Close-up fashion photography of mismatched hand-sewn patchwork mittens on a neo-noir model's hands, resting against dark urban concrete. Garments show visible irregular stitching, mixed salvaged fabrics in gray-green-brown tones, and faint conductive thread tracery. Moody amber and cyan backlighting, shallow depth of field. Gritty the Gray Zone-district aesthetic, worn but cared-for. Hands positioned to show interior cuff detail and patch seams. --ar 2:3 --v 6"
 }

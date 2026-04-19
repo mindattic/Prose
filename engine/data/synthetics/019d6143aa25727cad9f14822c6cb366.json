@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa25727cad9f14822c6cb366",
+  "rating": 60,
   "name": "Sticky Fingers",
   "type": "elf",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Introduces transaction echo errors that reverse within 24-72 hours. Merchants and buyers both experience phantom charges and phantom refunds.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 27,
-  "location": "Shelf commercial districts",
+  "location": "the Gray Zone commercial districts",
   "dti_rating": 0,
   "story_hooks": [
     "A merchant realizes the 'errors' always benefit the poorest customers and wonders if the E.L.F. has a sense of justice"
@@ -26,12 +27,8 @@
     "e.l.f.",
     "ai",
     "justice",
-    "shelf",
     "sentient"
   ],
-  "related_entities": [
-    "Brecken Yılmaz-Osei",
-    "Nnamdi Ostrowski-Faletolu",
-    "Roshani Mvula-Atencio"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

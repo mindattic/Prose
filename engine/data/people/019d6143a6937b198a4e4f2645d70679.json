@@ -1,5 +1,6 @@
 {
   "id": "019d6143a6937b198a4e4f2645d70679",
+  "rating": 23.3,
   "type": "character",
   "name": "Sol Anang-Bergqvist",
   "aliases": [],
@@ -9,7 +10,7 @@
   "role": "Fixer - Long-term payoff jobs",
   "age": 54,
   "status": "active",
-  "location": "The Shelf, near Ashland and Chicago Ave",
+  "location": "the Gray Zone, near Ashland and Chicago Ave",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -30,7 +31,11 @@
     "vocabulary": "",
     "cadence": "",
     "verbal_tics": [],
-    "example_lines": []
+    "example_lines": [],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [],
@@ -87,7 +92,7 @@
     "Face": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -95,16 +100,11 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol",
-    "Street Custom 'Rebar Rose' Improvised Spike Mace"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Shelf",
-    "Chicago"
-  ],
-  "district": "The Shelf",
   "physical_description": {
     "heritage": "Southeast Asian (46.1%) with substantial Indigenous American (43.1%) and Central Asian (10.8%) ancestry. The genetic blend creates a striking phenotype: warm, medium-deep brown skin with golden undertones characteristic of Southeast Asian heritage, enriched by Indigenous American depth, with subtle Central Asian influences adding width and structure to the facial planes. This tri-continental mix produces a distinctive appearance that reads as neither one ancestry nor another, but a harmonious synthesis.",
     "height_cm": 168,
@@ -126,17 +126,12 @@
     "clothing_style": "Tier 3-4 practical: tailored but worn grey wool coat over dark thermal underlayers. Fatigued but maintained—seams are clean, fabric is quality. Cargo pants with reinforced pocket stitching. Unmarked boots, resoled at least twice. No jewelry except a singular stainless steel ring on the right index finger (functional, not decorative). Tends to carry a messenger bag of supple, aged leather worn soft from use."
   },
   "image_prompt": "Sol Anang-Bergqvist, 168cm tall with solid angular build, medium-deep warm brown skin with golden undertones, blend of Southeast Asian, Indigenous American, and Central Asian heritage evident in broader nose bridge and facial bone structure, dark brown eyes with amber undertones, steel grey hair with black patches worn in tight braids pinned up, fine lines around eyes and mouth, chemical exposure discoloration on left temple. Left eye subtly augmented with subcutaneous optics, silver neural interface circuitry visible along right temple, thin horizontal scar across right collarbone, circuit junction tattoo on left wrist. Wearing faded but quality grey wool coat over dark thermal layers, reinforced cargo pants, resoled boots, stainless steel ring on right index finger, aged leather messenger bag. Standing with economical precision and stillness in a shadowed neo-noir corridor of the Great Lakes Metropolitan Zone, 2226, methodical gaze cataloging surroundings, cool industrial lighting casting subtle shadows across weathered face, noir atmosphere with neon glow distant in background --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Southeast Asian": 46.1,
     "Indigenous American": 43.1,
     "Central Asian": 10.8
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Southeast Asian": {
       "Filipino": {
@@ -166,6 +161,5 @@
         "Mongolian": 2.8
       }
     }
-  },
-  "tier": "3"
+  }
 }

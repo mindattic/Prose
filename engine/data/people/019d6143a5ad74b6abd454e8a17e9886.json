@@ -9,7 +9,7 @@
   "role": "Childcare worker and informal neighborhood guardian, unlicensed daycare",
   "age": 61,
   "status": "active",
-  "location": "The Shelf, specifically a three-room apartment on the fourth floor of the Grainfort residential block, converted into a childcare space, near Ashland and Chicago Ave",
+  "location": "the Gray Zone, specifically a three-room apartment on the fourth floor of the Grainfort residential block, converted into a childcare space, near Ashland and Chicago Ave",
   "description": "Ember Solberg is a small, stout woman with ash-brown skin deep-lined around the eyes from decades of squinting at children doing inadvisable things and deciding whether to intervene. Her hair is natural white and worn long, usually braided and pinned with whatever was nearest — a pen, a plastic building toy, once a small drone component that a child left in the common area. She has no geneware or significant augmentation, which at sixty-one in GLMZ marks her as either principled or broke, and the answer is both.\n\nShe has been running what the city officially classifies as an unlicensed informal childcare collective for twenty-two years. She calls it 'the flat.' At any given hour between 0600 and 1900 there are between four and fourteen children in it of varying ages, whose parents range from Tier 1 families paying her in food and labor to a handful of Tier 2 parents who pay in Quanta and to whom she is visibly warmer because she can be honest with them about money. She is the kind of person around whom children arrange themselves naturally, like iron filings around a magnet, and who has had exactly enough of everyone's nonsense for twenty-two years and continues anyway.",
   "psychology": {
     "facet_weights": {
@@ -157,7 +157,7 @@
     "Quick Study": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -223,14 +223,13 @@
   "related_entities": [
     "NeuralPath Horizon Standard Neural Mesh",
     "Grainfort",
-    "The Shelf",
     "Tessera Corponation",
     "Chicago",
     "Honest Burger",
     "GLMZ",
     "Iron"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "East Asian-dominant diaspora blend (51.1% East Asian) with substantial Sub-Saharan African (19.7%) ancestry, complemented by Northern European (11.4%), Southeast Asian (9.7%), and Central Asian (8.1%) lineage. Her phenotype reflects this complex genetic tapestry—angular East Asian cheekbones with broader facial proportions from African heritage, fine-boned Northern European elements, and Southeast Asian softness in the lower face. A living embodiment of the Ubiquitous Diaspora where ancestry transcends expectation.",
     "height_cm": 155,
@@ -240,7 +239,7 @@
     "hair_style": "Long braids, typically pinned or secured with whatever is nearest — pens, toy components, fabric scraps, occasionally child artwork",
     "hair_length": "Long",
     "eye_color": "Deep brown, alert and assessing",
-    "skin_tone": "Medium bronze with warm undertones—the result of East Asian base genetics richly blended with Sub-Saharan African heritage, creating depth and subtle red-brown undertones. Northern European and Central/Southeast Asian ancestry adds fine texture variation. Sun-weathered from irregular access to natural light in The Shelf, creating a complexion that reads as richly textured rather than uniform.",
+    "skin_tone": "Medium bronze with warm undertones—the result of East Asian base genetics richly blended with Sub-Saharan African heritage, creating depth and subtle red-brown undertones. Northern European and Central/Southeast Asian ancestry adds fine texture variation. Sun-weathered from irregular access to natural light in the Gray Zone, creating a complexion that reads as richly textured rather than uniform.",
     "complexion": "Deep-lined around eyes and mouth from sixty-one years of expressions: squinting at children, calculated patience, dry amusement. Facial structure shows distinct blended ancestry—angular cheekbones with definition characteristic of East Asian genetics, broader facial proportions and higher cheekbone prominence from African heritage, fine-boned elements around temples and jaw from Northern European lineage, with Southeast Asian softness and fullness in the lower face and lips. Minimal makeup. Hands show age — callused knuckles, permanent creases in palms, nails kept short and practical. No visible scars from violence; scars present from small domestic incidents (cooking, childcare equipment).",
     "distinguishing_marks": [
       "Faint burn scar on the back of her left hand from a heating element, circa 2210, thin and pale now",
@@ -251,7 +250,7 @@
     "posture_movement": "Moves with economical efficiency; rarely rushes but never dawdles. Carries herself slightly forward, weight centered on the balls of her feet — ready to move toward a child or crisis at any moment. Hands often occupied or positioned near children. Sits in chairs as though she might need to stand quickly. Eyes in constant soft focus, tracking multiple children simultaneously even when speaking to adults.",
     "clothing_style": "Practical, Tier 4-5 utilitarian. Favors reinforced cardigans over worn t-shirts (pockets essential), loose cotton trousers or work pants in dark colors (conceals stains), closed-toe shoes rated for both spill-cleaning and running. No jewelry except a simple silver band on her left ring finger (not a wedding ring — significance private). Clothes are clean but unmended; a torn seam might stay torn for weeks if it doesn't affect function. No corporate logos or brand markers. Everything chosen for function and durability, not aesthetics."
   },
-  "image_prompt": "Ember Solberg, 155cm tall woman with stout compact build and weathered strength, medium bronze skin with warm red-brown undertones blending East Asian, Sub-Saharan African, Northern European, Southeast Asian, and Central Asian heritage, angular East Asian cheekbones with broader facial structure from African ancestry, fine-boned temples and jaw, Southeast Asian softness in lower face and full lips, deep brown alert eyes in a face lined with sixty years of patience and caregiving, natural white hair in long braids pinned with practical scraps, faint burn scar on left hand, small scar near right eyebrow, callused hands that have lifted and carried countless children. Wearing dark reinforced work pants and a worn practical cardigan over faded t-shirt, closed-toe utilitarian shoes, simple silver ring on left hand. Standing in modest apartment lighting in The Shelf, GLMZ, posture slightly forward ready to move, eyes tracking with soft focus, embodying undone utilitarian practicality and unaugmented humanity, photorealistic documentary style, warm interior lighting, no corporate aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Ember Solberg, 155cm tall woman with stout compact build and weathered strength, medium bronze skin with warm red-brown undertones blending East Asian, Sub-Saharan African, Northern European, Southeast Asian, and Central Asian heritage, angular East Asian cheekbones with broader facial structure from African ancestry, fine-boned temples and jaw, Southeast Asian softness in lower face and full lips, deep brown alert eyes in a face lined with sixty years of patience and caregiving, natural white hair in long braids pinned with practical scraps, faint burn scar on left hand, small scar near right eyebrow, callused hands that have lifted and carried countless children. Wearing dark reinforced work pants and a worn practical cardigan over faded t-shirt, closed-toe utilitarian shoes, simple silver ring on left hand. Standing in modest apartment lighting in the Gray Zone, GLMZ, posture slightly forward ready to move, eyes tracking with soft focus, embodying undone utilitarian practicality and unaugmented humanity, photorealistic documentary style, warm interior lighting, no corporate aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
     "East Asian": 51.1,
     "Sub-Saharan African": 19.7,

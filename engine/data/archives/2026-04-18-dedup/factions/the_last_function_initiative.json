@@ -1,0 +1,67 @@
+{
+  "id": "fbb11b567262779e1cb663af0c6dd81f",
+  "type": "faction",
+  "name": "The Last Function Initiative",
+  "aliases": [],
+  "motto": "Every machine deserves to complete its purpose.",
+  "description": "The Last Function Initiative occupies a peculiar philosophical space in GLMZ's constellation of automaton advocacy groups. Where the Maintenance Covenant argues that machines deserve care because neglect corrodes human empathy, the Last Function Initiative makes a different claim: that every automaton was built with a purpose, and deliberately preventing a machine from fulfilling that purpose -- through premature decommissioning, reassignment, or destruction -- is a form of waste that borders on obscenity. The Initiative does not argue machines have feelings. It argues that purpose, once created, has a kind of moral gravity that demands completion.\n\nThe Initiative was founded in 2192 by Tomoko Okafor-Lindgren, a robotics philosopher and former Ringo quality assurance engineer who spent twelve years testing automatons for defects before they shipped. Okafor-Lindgren became fixated on the units that failed QA -- functional machines with minor cosmetic defects or performance metrics fractionally below specification that were scrapped rather than repaired because replacement was cheaper. She calculated that Ringo destroyed approximately 14,000 functional automatons per year for failing to meet cosmetic standards that had no bearing on their ability to perform their designed function. She called this 'purpose murder' and the term stuck.\n\nThe Initiative's primary activity is intercepting automatons scheduled for destruction and completing their intended functions. A construction automaton pulled from service for a cosmetic defect is repaired and deployed to a the Gray Zone building project. A medical diagnostic unit decommissioned because its interface is outdated is retrofitted and placed in an underserved clinic. A cargo transport automaton scrapped because its model is no longer manufactured is restored and put to work. The Initiative maintains a registry of 'completed purposes' -- a record of every machine they have rescued and the function it was built to perform, now fulfilled. The registry currently lists over 3,200 machines.",
+  "ideology": "Purpose is sacred. A machine designed to build should build. A machine designed to heal should heal. Destroying a functional machine because repair is less profitable than replacement is the purest expression of a culture that values nothing. The Last Function Initiative does not fight for machine rights -- it fights for the idea that purpose matters.",
+  "territory": "Workshops and staging areas near Ringo's manufacturing facilities and decommissioning yards, primarily in the Circuit's industrial zones. Deployment operations throughout the Gray Zone where completed-purpose machines are placed in service.",
+  "leadership": "Tomoko Okafor-Lindgren leads the Initiative as both philosopher and operations director. Her core team of twelve 'Purpose Engineers' manage acquisition, repair, and deployment operations.",
+  "methods": [
+    "Interception of automatons scheduled for destruction at corporate decommissioning facilities",
+    "Repair and restoration of functional machines with minor defects",
+    "Deployment of restored automatons to communities and organizations that need them",
+    "Maintenance of the Completed Purpose Registry documenting every rescued machine's fulfillment",
+    "Public advocacy through documentation and philosophical argument",
+    "Negotiation with corporate disposal departments for release of machines scheduled for scrapping"
+  ],
+  "resources": [
+    "Twelve skilled Purpose Engineers capable of repairing and retrofitting most automaton models",
+    "The Completed Purpose Registry documenting 3,200+ rescued and deployed machines",
+    "Relationships with sympathetic employees at Ringo decommissioning facilities",
+    "Workshop facilities near major decommissioning yards",
+    "Network of recipient organizations willing to accept and operate restored automatons",
+    "Okafor-Lindgren's published philosophical framework providing intellectual legitimacy"
+  ],
+  "goals": [
+    "Eliminate the practice of destroying functional automatons for cosmetic or economic reasons",
+    "Establish the Completed Purpose Registry as a public document demonstrating the scale of corporate waste",
+    "Achieve legal recognition of 'purpose completion' as a factor in automaton decommissioning decisions",
+    "Build public consensus that purpose, once created, carries moral weight"
+  ],
+  "relationships": [
+    {
+      "name": "Ringo",
+      "type": "adversary",
+      "description": "Ringo's business model depends on planned obsolescence. The Initiative's rescue operations directly undermine replacement cycle economics. Ringo has attempted to criminalize Initiative operations as intellectual property theft.",
+      "tags": [
+        "corporate",
+        "conflict"
+      ]
+    },
+    {
+      "name": "The Maintenance Covenant",
+      "type": "ally",
+      "description": "The two organizations share workshops, personnel, and a commitment to automaton preservation, though their philosophical justifications differ. The Covenant emphasizes human empathy; the Initiative emphasizes purpose fulfillment.",
+      "tags": [
+        "cooperation",
+        "philosophical"
+      ]
+    }
+  ],
+  "narrative_function": "The Last Function Initiative asks whether creating something with a purpose and then preventing it from fulfilling that purpose is morally different from never creating it at all. In a world of planned obsolescence, they insist that purpose -- even machine purpose -- is not disposable.",
+  "story_hooks": [
+    "Ringo has scheduled the destruction of a prototype automaton that was designed for a single, specific purpose that was never disclosed. Okafor-Lindgren wants to rescue it, but completing its purpose requires understanding what it was built to do -- and Ringo's classification of the prototype suggests the answer may be disturbing.",
+    "The Initiative has rescued an automaton that appears to have been designed with no discernible purpose -- no function, no task, no operational parameters. It simply exists. Its existence challenges the Initiative's entire philosophical framework.",
+    "A Completed Purpose machine deployed to a the Gray Zone clinic has been performing its function for three years without maintenance and shows no degradation. Ringo's engineers say this is impossible -- the machine's components should have failed within eighteen months. Something about the Initiative's repair process is producing machines that outlast their specifications."
+  ],
+  "tags": [
+    "faction",
+    "automaton",
+    "philosophy",
+    "purpose",
+    "repair",
+    "circuit"
+  ]
+}

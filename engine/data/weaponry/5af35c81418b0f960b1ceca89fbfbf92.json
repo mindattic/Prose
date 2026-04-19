@@ -4,7 +4,7 @@
   "type": "weapon",
   "aliases": [],
   "category": "grenade launcher",
-  "description": "A crude single-shot launcher assembled from plumbing pipe, a shotgun firing mechanism, and whatever propellant the builder could acquire. The Thumper fires improvised projectiles — typically tin cans filled with scrap metal and a detonator, or repurposed commercial firework motors with fragmentation sleeves — at ranges between 20 and 100 meters with accuracy best described as 'in that general direction.' The weapon is dangerous to the user nearly as much as the target, with a failure rate that discourages repeat engagements.\n\nThumpers appear throughout the Shelf whenever tensions escalate to the point where residents feel the need for area weapons. They are built in garages and basements from materials that cost less than Φ50, and their improvised munitions are assembled from similarly available components. The weapons are terrifyingly effective despite their crudeness — an explosion doesn't need to be precise to be lethal, and a can full of scrap metal detonating in a crowded space achieves the same result as military fragmentation at a fraction of the cost.\n\nEvery Thumper is unique. There are no production standards, no quality control, and no two weapons that fire the same way. Operators learn their weapon's specific quirks through practice — how far left it pulls, how much the propellant charge varies between shots, whether this particular pipe has a weak seam that might split on the fourth firing. Using a Thumper is an act of faith.",
+  "description": "A crude single-shot launcher assembled from plumbing pipe, a shotgun firing mechanism, and whatever propellant the builder could acquire. The Thumper fires improvised projectiles — typically tin cans filled with scrap metal and a detonator, or repurposed commercial firework motors with fragmentation sleeves — at ranges between 20 and 100 meters with accuracy best described as 'in that general direction.' The weapon is dangerous to the user nearly as much as the target, with a failure rate that discourages repeat engagements.\n\nThumpers appear throughout the Gray Zone whenever tensions escalate to the point where residents feel the need for area weapons. They are built in garages and basements from materials that cost less than Φ50, and their improvised munitions are assembled from similarly available components. The weapons are terrifyingly effective despite their crudeness — an explosion doesn't need to be precise to be lethal, and a can full of scrap metal detonating in a crowded space achieves the same result as military fragmentation at a fraction of the cost.\n\nEvery Thumper is unique. There are no production standards, no quality control, and no two weapons that fire the same way. Operators learn their weapon's specific quirks through practice — how far left it pulls, how much the propellant charge varies between shots, whether this particular pipe has a weak seam that might split on the fourth firing. Using a Thumper is an act of faith.",
   "manufacturer": "Street Custom",
   "tier_availability": "Tier 1+",
   "legality": "Illegal — improvised explosive device",
@@ -15,16 +15,16 @@
     "Repurposed propellant systems"
   ],
   "specifications": "caliber: Variable (typically 50-80mm pipe bore)\ncapacity: 1 round\neffective range: 20-100 meters (optimistic)\nweight: 2-5 kg depending on construction\nreliability: Approximately 70% successful firing rate",
-  "tactical_use": "Desperation weapon for area denial when no better options exist. Shelf residents deploy Thumpers against incursions by hostile groups, corporate clearance operations, or rival block conflicts. The weapon's primary tactical value is psychological — the sound of an improvised grenade detonation causes trained operators to take cover, buying time for the defenders.",
-  "cultural_context": "The Thumper is a symbol of the Shelf's resourcefulness and desperation in equal measure. Building one is a community activity — neighbors contribute pipe, propellant, and scrap. Using one is a statement that the situation has become bad enough to risk blowing off your own hands. Thumper builders are respected in the Shelf the way gunsmiths were respected on historical frontiers.",
+  "tactical_use": "Desperation weapon for area denial when no better options exist. the Gray Zone residents deploy Thumpers against incursions by hostile groups, corporate clearance operations, or rival block conflicts. The weapon's primary tactical value is psychological — the sound of an improvised grenade detonation causes trained operators to take cover, buying time for the defenders.",
+  "cultural_context": "The Thumper is a symbol of the Gray Zone's resourcefulness and desperation in equal measure. Building one is a community activity — neighbors contribute pipe, propellant, and scrap. Using one is a statement that the situation has become bad enough to risk blowing off your own hands. Thumper builders are respected in the Gray Zone the way gunsmiths were respected on historical frontiers.",
   "known_users": [
-    "Shelf district block defense groups",
+    "the Gray Zone district block defense groups",
     "Improvised resistance cells",
     "Anyone desperate enough"
   ],
   "story_hooks": [
     "A Thumper round landed in a corporate security checkpoint and killed two guards. The improvised munition contained fragments of a specific alloy used only in one corponation's manufacturing process — the shrapnel was a message as much as a weapon.",
-    "Someone in the Shelf has figured out how to build Thumper rounds that deploy a chemical smoke screen instead of fragmentation — non-lethal area denial for Φ20 per shot. The recipe is spreading through the community, and corporate security is terrified of an entire district that can vanish behind smoke on command."
+    "Someone in the Gray Zone has figured out how to build Thumper rounds that deploy a chemical smoke screen instead of fragmentation — non-lethal area denial for Φ20 per shot. The recipe is spreading through the community, and corporate security is terrified of an entire district that can vanish behind smoke on command."
   ],
   "ammunition_type": [
     "improvised"
@@ -33,7 +33,6 @@
     "grenade launcher",
     "weapon",
     "improvised",
-    "shelf",
     "street",
     "explosive",
     "crude",
@@ -49,7 +48,6 @@
     "Kamala Mori-Sefa",
     "Nika Svensson-Kone",
     "The Pure Hand",
-    "The Shelf",
     "Variable Impedance Rifle VIR-9 'Switchback'"
   ],
   "physical_description": {
@@ -73,6 +71,6 @@
     "manufacturer_markings": "None official. Builders usually mark ownership with scratched initials, gang tags, or tally marks indicating rounds fired. Serial numbers are nonexistent. Occasionally a maker's symbol (stylized X, personal glyph, block tag) etched into the breach assembly.",
     "condition_typical": "Battle-worn and jury-rigged. Evidence of field repairs: fresh weld spatter near fracture sites, safety wire wrapped around suspected weak points, tape patches covering small splits. Every weapon shows the scars of its builder's learning curve and its operator's desperation."
   },
-  "image_prompt": "Close-up product photograph of a crude single-shot improvised grenade launcher made from industrial steel plumbing pipe and salvaged shotgun breach assembly. Weapon rests at angle on dark tactical fabric, harsh side-lighting emphasizing weld seams, rust bloom, and metal fatigue marks. Gloved hand (tactical glove, neon trim) gripping the wrapped barrel section. Shallow depth of field isolates the crude firing mechanism and muzzle end. Atmospheric haze of workshop dust. Industrial neo-noir aesthetic, post-industrial Shelf brutalism. Raw, dangerous, utterly without polish. --ar 3:2 --v 6",
-  "visual_prompt": "Close-up product photograph of a crude single-shot improvised grenade launcher made from industrial steel plumbing pipe and salvaged shotgun breach assembly. Weapon rests at angle on dark tactical fabric, harsh side-lighting emphasizing weld seams, rust bloom, and metal fatigue marks. Gloved hand (tactical glove, neon trim) gripping the wrapped barrel section. Shallow depth of field isolates the crude firing mechanism and muzzle end. Atmospheric haze of workshop dust. Industrial neo-noir aesthetic, post-industrial Shelf brutalism. Raw, dangerous, utterly without polish. --ar 3:2 --v 6"
+  "image_prompt": "Close-up product photograph of a crude single-shot improvised grenade launcher made from industrial steel plumbing pipe and salvaged shotgun breach assembly. Weapon rests at angle on dark tactical fabric, harsh side-lighting emphasizing weld seams, rust bloom, and metal fatigue marks. Gloved hand (tactical glove, neon trim) gripping the wrapped barrel section. Shallow depth of field isolates the crude firing mechanism and muzzle end. Atmospheric haze of workshop dust. Industrial neo-noir aesthetic, post-industrial the Gray Zone brutalism. Raw, dangerous, utterly without polish. --ar 3:2 --v 6",
+  "visual_prompt": "Close-up product photograph of a crude single-shot improvised grenade launcher made from industrial steel plumbing pipe and salvaged shotgun breach assembly. Weapon rests at angle on dark tactical fabric, harsh side-lighting emphasizing weld seams, rust bloom, and metal fatigue marks. Gloved hand (tactical glove, neon trim) gripping the wrapped barrel section. Shallow depth of field isolates the crude firing mechanism and muzzle end. Atmospheric haze of workshop dust. Industrial neo-noir aesthetic, post-industrial the Gray Zone brutalism. Raw, dangerous, utterly without polish. --ar 3:2 --v 6"
 }

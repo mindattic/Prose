@@ -3,7 +3,7 @@
   "name": "Rustwater Layering Rig",
   "type": "apparel",
   "category": "outfit",
-  "description": "A full-body survival stack built for the Shelf's acid-laced downpours. The outermost layer is a knee-length anorak cut from salvaged industrial tarp material — once corporate safety-orange, now faded to a streaky rust-and-cream, with mismatched patches of rubberized canvas heat-bonded over the shoulders and collar where the acid eats fastest. Underneath sits a dense thermal pullover in charcoal wool-synth blend, the left sleeve replaced entirely with a different fabric — darker, heavier, clearly scavenged from something else. Cargo trousers in faded olive feature six pockets, two of which are sealed with mismatched zippers, one with a strip of silver self-repair tape holding the seam together at the hip. The legs are tucked into calf-high boots with soles that have been rebuilt so many times the tread is a patchwork of different rubber compounds — black, grey, and one strip of deep red. A wide salvaged neoprene neck gaiter hangs loose around the throat, ready to pull up over the nose and mouth when rain hits. Fingerless gloves in cracked synthetic leather cover both hands, the right one reinforced across the knuckles with a strip of chrome salvage — a discarded aug-brace repurposed as protection. A battered wide-brim hat in waxed cotton, stained dark at the crown, completes the silhouette.",
+  "description": "A full-body survival stack built for the Gray Zone's acid-laced downpours. The outermost layer is a knee-length anorak cut from salvaged industrial tarp material — once corporate safety-orange, now faded to a streaky rust-and-cream, with mismatched patches of rubberized canvas heat-bonded over the shoulders and collar where the acid eats fastest. Underneath sits a dense thermal pullover in charcoal wool-synth blend, the left sleeve replaced entirely with a different fabric — darker, heavier, clearly scavenged from something else. Cargo trousers in faded olive feature six pockets, two of which are sealed with mismatched zippers, one with a strip of silver self-repair tape holding the seam together at the hip. The legs are tucked into calf-high boots with soles that have been rebuilt so many times the tread is a patchwork of different rubber compounds — black, grey, and one strip of deep red. A wide salvaged neoprene neck gaiter hangs loose around the throat, ready to pull up over the nose and mouth when rain hits. Fingerless gloves in cracked synthetic leather cover both hands, the right one reinforced across the knuckles with a strip of chrome salvage — a discarded aug-brace repurposed as protection. A battered wide-brim hat in waxed cotton, stained dark at the crown, completes the silhouette.",
   "tier_association": "Tier 1",
   "materials": [
     "salvaged industrial tarp",
@@ -17,9 +17,9 @@
     "reclaimed rubber soles"
   ],
   "functionality": "Acid-rain resistance via tarp anorak and rubberized shoulder patches. Thermal retention in the wool-synth underlayer. Six cargo pockets for tools, rations, and survival gear. Boot soles rebuilt for grip on wet industrial grating. Chrome knuckle brace doubles as impact protection. Gaiter provides respiratory filter layer in chemical environments.",
-  "what_it_says": "This person has been on the Shelf long enough to know exactly what kills you — acid rain, cold, and exposure in that order. Every layer was chosen to solve a problem. Nothing is decorative. The mismatched repairs aren't shameful; they're a record of survival. The chrome knuckle piece says they've thought about close-quarters trouble too.",
+  "what_it_says": "This person has been in the Gray Zone long enough to know exactly what kills you — acid rain, cold, and exposure in that order. Every layer was chosen to solve a problem. Nothing is decorative. The mismatched repairs aren't shameful; they're a record of survival. The chrome knuckle piece says they've thought about close-quarters trouble too.",
   "worn_by": [
-    "long-term Shelf residents",
+    "long-term the Gray Zone residents",
     "scavengers and salvage runners",
     "infrastructure squatters",
     "people who've learned the hard way"
@@ -57,8 +57,7 @@
     "Sorin Ekwensi-Balasanyan",
     "Sulfur Crown Agriculture",
     "The Pure Hand",
-    "The Seam",
-    "The Shelf"
+    "The Seam"
   ],
   "physical_description": {
     "visual_profile": "A weathered, layered survival silhouette that reads as post-industrial scavenger. The figure appears bulky and utilitarian, with visible patching and material mismatches throughout. The overall impression is someone who has rebuilt themselves from salvage—nothing matches, everything works. The wide-brim hat and neck gaiter create a wrapped, fortress-like head profile.",
@@ -80,7 +79,7 @@
       "Faded safety-orange base color creating visual story of extended outdoor exposure"
     ],
     "tier_indicator": "Tier 5 salvage. This is sub-grade territory—nothing here cost Φ in a store. Every component is scavenged, repaired, or jury-rigged. The multiple patches, mismatched materials, and chrome-knuckle reinforcement signal someone operating outside corporate supply chains.",
-    "cultural_context": "Wearing this marks you as Shelf-side—the kind of person who lives in acid rain zones and has adapted rather than evacuated. It signals practical survivor culture, community salvage networks, and familiarity with environmental hazards corporate tiers don't face. This is the uniform of water-runners, waste-sorters, and the unregistered. Wearing it in a corpo zone would mark you immediately as sub-grade.",
+    "cultural_context": "Wearing this marks you as the Gray Zone-side—the kind of person who lives in acid rain zones and has adapted rather than evacuated. It signals practical survivor culture, community salvage networks, and familiarity with environmental hazards corporate tiers don't face. This is the uniform of water-runners, waste-sorters, and the unregistered. Wearing it in a corpo zone would mark you immediately as sub-grade.",
     "condition_typical": "Always broken-in and weathered. This garment never looks pristine—it's designed to look patched and repaired. The newer condition would be 'freshly salvaged with tape still crisp'; the worn condition is 'patches fading into the base material.' Acid staining, salt residue, and water rings are expected. Any pristine-looking component stands out as a recent find."
   },
   "image_prompt": "A figure in a full Rustwater Layering Rig stands in acidic downpour under dim amber industrial lighting. The knee-length faded rust-orange anorak with visible heat-bonded grey canvas patches drapes loosely over a mismatched charcoal and black wool-synth pullover. Olive cargo trousers with silver repair tape gleam at the hip seams, tucked into multi-patched boots with patchwork rubber soles. A wide-brim waxed-cotton hat shields the face, a neoprene neck gaiter hangs ready at the throat, and fingerless gloves with chrome knuckle reinforcement grip the frame. Rain beads off treated surfaces. Moody, high-contrast lighting emphasizes every seam, patch, and salvage detail. Dark industrial backdrop—corrugated metal, sodium vapor haze, water streaks. Ultra-weathered, hyper-functional, survival aesthetic. Cinematic neo-noir street wear. --ar 2:3 --v 6",

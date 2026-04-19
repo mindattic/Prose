@@ -1,4 +1,5 @@
 using System.Text.RegularExpressions;
+using Microsoft.Extensions.Logging;
 using StreetSamurai.Core.Models.Canon;
 
 namespace StreetSamurai.Core.Services;
@@ -43,8 +44,10 @@ public class XrefService
 
     private Dictionary<string, XrefEntry> index = new(StringComparer.OrdinalIgnoreCase);
     private Dictionary<string, XrefEntry> indexById = new(StringComparer.OrdinalIgnoreCase);
-    private Regex? matchRegex;
+    private bool indexBuilt;
     private readonly object syncLock = new();
+    private readonly ILogger<XrefService> logger;
+    private List<XrefConflict> conflicts = [];
 
     public XrefService(
         CharacterRepository characters,
@@ -69,9 +72,11 @@ public class XrefService
         ConsumerGoodRepository consumerGoods,
         ContractRepository contracts,
         LabSpecimenRepository labSpecimens,
-        PsionicRepository psionics
+        PsionicRepository psionics,
+        ILogger<XrefService> logger
         )
     {
+        this.logger = logger;
         this.characters = characters;
         this.synthetics = synthetics;
         this.districts = districts;
@@ -126,7 +131,7 @@ public class XrefService
         {
             index = new(StringComparer.OrdinalIgnoreCase);
             indexById = new(StringComparer.OrdinalIgnoreCase);
-            matchRegex = null;
+            indexBuilt = false;
         }
     }
 
@@ -134,7 +139,7 @@ public class XrefService
     {
         lock (syncLock)
         {
-            if (matchRegex != null) return;
+            if (indexBuilt) return;
             RebuildIndex();
         }
     }
@@ -143,12 +148,19 @@ public class XrefService
     {
         var newIndex = new Dictionary<string, XrefEntry>(StringComparer.OrdinalIgnoreCase);
         var newIndexById = new Dictionary<string, XrefEntry>(StringComparer.OrdinalIgnoreCase);
+        var newConflicts = new List<XrefConflict>();
 
         void Add(string name, string id, string type, string route, string subtitle = "")
         {
             if (string.IsNullOrWhiteSpace(name) || name.Length < 3) return;
             var entry = new XrefEntry(id, name, type, route, subtitle);
-            newIndex.TryAdd(name, entry);
+            if (!newIndex.TryAdd(name, entry))
+            {
+                var existing = newIndex[name];
+                newConflicts.Add(new XrefConflict(name, existing, entry));
+                logger.LogWarning("Xref disambiguation conflict: \"{Name}\" claimed by {TypeA}/{IdA} and {TypeB}/{IdB}",
+                    name, existing.Type, existing.Id, type, id);
+            }
             newIndexById.TryAdd(id, entry);
         }
 
@@ -184,7 +196,7 @@ public class XrefService
         {
             var n = BestName(t.ProductName, t.Name);
             Add(n, t.Id, "technology", "/technology", t.Subcategory);
-            if (!string.IsNullOrWhiteSpace(t.ProductName) && t.Name != t.ProductName)
+            if (!string.IsNullOrWhiteSpace(t.ProductName) && !t.Name.Equals(t.ProductName, StringComparison.OrdinalIgnoreCase))
                 Add(t.Name, t.Id, "technology", "/technology", t.Subcategory);
             foreach (var a in t.Aliases) Add(a, t.Id, "technology", "/technology", t.Subcategory);
         }
@@ -206,7 +218,7 @@ public class XrefService
         {
             var n = BestName(e.ProductName, e.Name);
             Add(n, e.Id, "equipment", "/equipment", e.Category);
-            if (!string.IsNullOrWhiteSpace(e.ProductName) && e.Name != e.ProductName)
+            if (!string.IsNullOrWhiteSpace(e.ProductName) && !e.Name.Equals(e.ProductName, StringComparison.OrdinalIgnoreCase))
                 Add(e.Name, e.Id, "equipment", "/equipment", e.Category);
             foreach (var al in e.Aliases) Add(al, e.Id, "equipment", "/equipment", e.Category);
         }
@@ -214,7 +226,7 @@ public class XrefService
         {
             var n = BestName(cw.ProductName, cw.Name);
             Add(n, cw.Id, "cyberware", "/cyberware", cw.Category);
-            if (!string.IsNullOrWhiteSpace(cw.ProductName) && cw.Name != cw.ProductName)
+            if (!string.IsNullOrWhiteSpace(cw.ProductName) && !cw.Name.Equals(cw.ProductName, StringComparison.OrdinalIgnoreCase))
                 Add(cw.Name, cw.Id, "cyberware", "/cyberware", cw.Category);
             foreach (var al in cw.Aliases) Add(al, cw.Id, "cyberware", "/cyberware", cw.Category);
         }
@@ -222,7 +234,7 @@ public class XrefService
         {
             var n = BestName(g.ProductName, g.Name);
             Add(n, g.Id, "genemod", "/genemods", g.Category);
-            if (!string.IsNullOrWhiteSpace(g.ProductName) && g.Name != g.ProductName)
+            if (!string.IsNullOrWhiteSpace(g.ProductName) && !g.Name.Equals(g.ProductName, StringComparison.OrdinalIgnoreCase))
                 Add(g.Name, g.Id, "genemod", "/genemods", g.Category);
             foreach (var al in g.Aliases) Add(al, g.Id, "genemod", "/genemods", g.Category);
         }
@@ -253,7 +265,7 @@ public class XrefService
         {
             var n = BestName(m.ProductName, m.Name);
             Add(n, m.Id, "material", "/materials", m.Category);
-            if (!string.IsNullOrWhiteSpace(m.ProductName) && m.Name != m.ProductName)
+            if (!string.IsNullOrWhiteSpace(m.ProductName) && !m.Name.Equals(m.ProductName, StringComparison.OrdinalIgnoreCase))
                 Add(m.Name, m.Id, "material", "/materials", m.Category);
             foreach (var al in m.Aliases) Add(al, m.Id, "material", "/materials", m.Category);
         }
@@ -266,7 +278,7 @@ public class XrefService
         {
             var n = BestName(cg.ProductName, cg.Name);
             Add(n, cg.Id, "consumer-good", "/goods", cg.Category);
-            if (!string.IsNullOrWhiteSpace(cg.ProductName) && cg.Name != cg.ProductName)
+            if (!string.IsNullOrWhiteSpace(cg.ProductName) && !cg.Name.Equals(cg.ProductName, StringComparison.OrdinalIgnoreCase))
                 Add(cg.Name, cg.Id, "consumer-good", "/goods", cg.Category);
         }
         foreach (var c in contracts.GetAll())
@@ -287,19 +299,8 @@ public class XrefService
 
         index = newIndex;
         indexById = newIndexById;
-
-        // Build regex — longest names first so e.g. "The Circuit" beats "Circuit"
-        var patterns = newIndex.Keys
-            .OrderByDescending(n => n.Length)
-            .Select(Regex.Escape)
-            .ToArray();
-
-        if (patterns.Length == 0) { matchRegex = null; return; }
-
-        matchRegex = new Regex(
-            $@"(?<![a-zA-Z0-9\-])({string.Join("|", patterns)})(?![a-zA-Z0-9\-])",
-            RegexOptions.None,
-            TimeSpan.FromSeconds(2));
+        conflicts = newConflicts;
+        indexBuilt = true;
     }
 
     public XrefEntry? Resolve(string name)
@@ -309,16 +310,13 @@ public class XrefService
     }
 
     /// <summary>Splits text into alternating plain and xref segments for inline rendering.
-    /// Explicit [[DisplayText|entityId]] wiki links are resolved first by ID; plain [[Name]]
-    /// links fall back to name lookup. Remaining plain text is auto-linked in Pass 2.</summary>
+    /// Resolves explicit [[DisplayText|entityId]] and [[Name]] wiki links only.</summary>
     public List<TextSegment> ParseSegments(string text)
     {
         if (string.IsNullOrWhiteSpace(text)) return [new PlainSegment(text ?? "")];
         EnsureBuilt();
 
-        // Pass 1 — split on explicit [[...]] wiki links
-        // Format written by wiki_scan.py: [[DisplayText|entityId]]
-        // Fallback (manual / legacy):      [[Name]]
+        // Pass 1: resolve explicit [[WikiLink]] and [[display|id]] markup.
         var pass1 = new List<TextSegment>();
         int cursor = 0;
         foreach (Match wm in WikiLinkRe.Matches(text))
@@ -336,89 +334,64 @@ public class XrefService
 
             pass1.Add(entry != null
                 ? new XrefSegment(displayText, entry)
-                : new PlainSegment(displayText));
+                : new BrokenLinkSegment(displayText));
 
             cursor = wm.Index + wm.Length;
         }
         if (cursor < text.Length)
             pass1.Add(new PlainSegment(text[cursor..]));
 
-        if (matchRegex == null) return pass1;
-
-        // Pass 2 — auto-link plain segments by entity name
+        // Pass 2: scan PlainSegments for entity name mentions (longest-match-first NER).
+        // Sorted descending by length so "The Circuit" beats "Circuit".
+        var sortedNames = index.Keys.OrderByDescending(k => k.Length).ToList();
         var result = new List<TextSegment>();
         foreach (var seg in pass1)
         {
-            if (seg is not PlainSegment plain || string.IsNullOrWhiteSpace(plain.Text))
-            {
-                result.Add(seg);
-                continue;
-            }
-
-            int last = 0;
-            try
-            {
-                foreach (Match m in matchRegex.Matches(plain.Text))
-                {
-                    if (m.Index > last)
-                        result.Add(new PlainSegment(plain.Text[last..m.Index]));
-
-                    var entry = index.GetValueOrDefault(m.Value);
-                    result.Add(entry != null
-                        ? new XrefSegment(m.Value, entry)
-                        : new PlainSegment(m.Value));
-
-                    last = m.Index + m.Length;
-                }
-            }
-            catch (RegexMatchTimeoutException)
-            {
-                result.Add(plain);
-                continue;
-            }
-
-            if (last < plain.Text.Length)
-                result.Add(new PlainSegment(plain.Text[last..]));
+            if (seg is not PlainSegment plain) { result.Add(seg); continue; }
+            result.AddRange(ScanPlainText(plain.Text, sortedNames));
         }
-
         return result;
     }
 
-    /// <summary>Resolves only explicit [[DisplayText|id]] wiki links — no auto-linking.
-    /// Safe for structured data fields where the auto-link regex would overflow the stack.</summary>
-    public List<TextSegment> ParseWikiLinksOnly(string text)
+    private IEnumerable<TextSegment> ScanPlainText(string text, List<string> sortedNames)
     {
-        if (string.IsNullOrWhiteSpace(text)) return [new PlainSegment(text ?? "")];
-        EnsureBuilt();
-
-        var result = new List<TextSegment>();
-        int cursor = 0;
-        foreach (Match wm in WikiLinkRe.Matches(text))
+        int pos = 0;
+        int plainStart = 0;
+        while (pos < text.Length)
         {
-            if (wm.Index > cursor)
-                result.Add(new PlainSegment(text[cursor..wm.Index]));
+            // Only try matching at word boundaries (start of string or after non-word char)
+            bool atBoundary = pos == 0 || !char.IsLetterOrDigit(text[pos - 1]);
+            if (atBoundary)
+            {
+                bool matched = false;
+                foreach (var name in sortedNames)
+                {
+                    if (pos + name.Length > text.Length) continue;
+                    if (!text.AsSpan(pos, name.Length).Equals(name, StringComparison.OrdinalIgnoreCase)) continue;
+                    // Verify word boundary on the right side
+                    int end = pos + name.Length;
+                    if (end < text.Length && char.IsLetterOrDigit(text[end])) continue;
 
-            var displayText = wm.Groups[1].Value.Trim();
-            var secondPart  = wm.Groups[2].Success ? wm.Groups[2].Value.Trim() : null;
+                    if (pos > plainStart)
+                        yield return new PlainSegment(text[plainStart..pos]);
 
-            XrefEntry? entry = secondPart != null
-                ? indexById.GetValueOrDefault(secondPart)
-                  ?? index.GetValueOrDefault(secondPart)
-                : index.GetValueOrDefault(displayText);
-
-            result.Add(entry != null
-                ? new XrefSegment(displayText, entry)
-                : new PlainSegment(displayText));
-
-            cursor = wm.Index + wm.Length;
+                    yield return new XrefSegment(text.Substring(pos, name.Length), index[name]);
+                    pos = end;
+                    plainStart = pos;
+                    matched = true;
+                    break;
+                }
+                if (matched) continue;
+            }
+            pos++;
         }
-        if (cursor < text.Length)
-            result.Add(new PlainSegment(text[cursor..]));
-
-        return result;
+        if (plainStart < text.Length)
+            yield return new PlainSegment(text[plainStart..]);
     }
 
     /// <summary>All indexed entries, for typeahead / full search.</summary>
+    public IReadOnlyList<XrefConflict> GetConflicts() { EnsureBuilt(); return conflicts; }
+
     public IEnumerable<XrefEntry> AllEntries()
     {
         EnsureBuilt();
@@ -437,6 +410,9 @@ public class XrefService
 
 public record XrefEntry(string Id, string DisplayName, string Type, string Route, string Subtitle = "");
 
+public record XrefConflict(string Name, XrefEntry Winner, XrefEntry Challenger);
+
 public abstract record TextSegment(string Text);
 public record PlainSegment(string Text) : TextSegment(Text);
 public record XrefSegment(string Text, XrefEntry Entry) : TextSegment(Text);
+public record BrokenLinkSegment(string Text) : TextSegment(Text);

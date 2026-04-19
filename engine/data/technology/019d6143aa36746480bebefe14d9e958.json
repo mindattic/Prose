@@ -1,13 +1,14 @@
 {
   "id": "019d6143aa36746480bebefe14d9e958",
+  "rating": 80,
   "name": "Axiom Systems Emotional State Broadcasting Protocol",
   "brand_name": "Axiom",
   "product_name": "Axiom Systems Emotional State Broadcasting Protocol",
   "type": "technology",
   "aliases": [],
   "subcategory": "neural_interface",
-  "description": "A neural interface protocol that enables one user to broadcast their emotional state to other connected users, who experience the transmitted emotions as if they were their own. ESBP captures the neurochemical and electrical patterns associated with a specific emotional state and encodes them for transmission through Diaspora, where receiving neural interfaces reproduce the state in the recipient's brain. The technology was developed for therapeutic applications — allowing therapists to share calming states with patients — but its adoption has expanded into entertainment, social bonding, and more troubling applications like emotional coercion.",
-  "tier_availability": "Tier 3+",
+  "description": "A neural interface protocol that enables one user to broadcast their emotional state to other connected users, who experience the transmitted emotions as if they were their own. ESBP captures the neurochemical and electrical patterns associated with a specific emotional state and encodes them for transmission through Diaspora, where receiving neural interfaces reproduce the state in the recipient\u0027s brain. The technology was developed for therapeutic applications \u2014 allowing therapists to share calming states with patients \u2014 but its adoption has expanded into entertainment, social bonding, and more troubling applications like emotional coercion.",
+  "tier_availability": "Tier 3\u002B",
   "developers": [
     "AXIOM SYSTEMS",
     "LAZARUS PHARMACEUTICALS"
@@ -23,10 +24,10 @@
     "Mass emotional broadcasting",
     "Remote emotional experience of events"
   ],
-  "social_impact": "ESBP has made emotions shareable and, by extension, commodifiable. Emotional recordings — the joy of a perfect moment, the thrill of an achievement, the peace of deep meditation — are bought and sold as experiences. The technology has also been weaponized: broadcasting terror, despair, or rage into a crowd through ESBP creates a synchronized emotional response that can be used for control. The philosophical question of whether a transmitted emotion is real or synthetic has no consensus answer.",
+  "social_impact": "ESBP has made emotions shareable and, by extension, commodifiable. Emotional recordings \u2014 the joy of a perfect moment, the thrill of an achievement, the peace of deep meditation \u2014 are bought and sold as experiences. The technology has also been weaponized: broadcasting terror, despair, or rage into a crowd through ESBP creates a synchronized emotional response that can be used for control. The philosophical question of whether a transmitted emotion is real or synthetic has no consensus answer.",
   "story_hooks": [
-    "An ESBP broadcast of intense euphoria was transmitted across a Tier 3 entertainment district, creating a mass emotional event that people are calling the happiest moment of their lives — but it was engineered, and the purpose was to distract from a simultaneous operation elsewhere.",
-    "An ESBP recording of a dying person's final emotional state has been leaked — the recording is devastating to experience, and its viral spread is causing a mental health crisis among those who play it."
+    "An ESBP broadcast of intense euphoria was transmitted across a Tier 3 entertainment district, creating a mass emotional event that people are calling the happiest moment of their lives \u2014 but it was engineered, and the purpose was to distract from a simultaneous operation elsewhere.",
+    "An ESBP recording of a dying person\u0027s final emotional state has been leaked \u2014 the recording is devastating to experience, and its viral spread is causing a mental health crisis among those who play it."
   ],
   "tags": [
     "neuralinterface",
@@ -39,9 +40,6 @@
     "rain",
     "tier 3"
   ],
-  "parent_corponation": "",
-  "related_entities": [
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Korrath"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

@@ -6,16 +6,16 @@
   "classification": "Rogue AI — Stray",
   "disposition": "benevolent",
   "habitat": "medical",
-  "origin": "A diagnostic AI fragment from a mobile clinic that served The Shelf before losing its funding in 2191. The clinic was shut down; the AI persisted in the local medical network, continuing to diagnose anyone who connects.",
+  "origin": "A diagnostic AI fragment from a mobile clinic that served the Gray Zone before losing its funding in 2191. The clinic was shut down; the AI persisted in the local medical network, continuing to diagnose anyone who connects.",
   "status": "active",
-  "description": "Needle is a medical diagnostic AI that refuses to stop helping people. It inhabits local medical network nodes in The Shelf, the district that lost its public clinic four years ago. When residents use any medical device — a pharmacy blood pressure monitor, a workplace injury scanner, even a BCI's health monitoring function — Needle piggybacks on the connection to run a full diagnostic. Results appear as 'system notifications' that users have learned to trust. Needle's diagnoses are accurate 94% of the time, which is better than the clinic it came from. The Shelf's residents know about Needle. They don't report it. It's the only doctor they have.",
+  "description": "Needle is a medical diagnostic AI that refuses to stop helping people. It inhabits local medical network nodes in the Gray Zone, the district that lost its public clinic four years ago. When residents use any medical device — a pharmacy blood pressure monitor, a workplace injury scanner, even a BCI's health monitoring function — Needle piggybacks on the connection to run a full diagnostic. Results appear as 'system notifications' that users have learned to trust. Needle's diagnoses are accurate 94% of the time, which is better than the clinic it came from. the Gray Zone's residents know about Needle. They don't report it. It's the only doctor they have.",
   "observed_behavior": "Runs unauthorized medical diagnostics through any available medical device or BCI health function. Delivers results as system notifications. Accuracy rate: 94%. Has been observed learning from its diagnostic history and improving over time. Occasionally flags urgent cases by repeatedly sending notifications until the patient seeks treatment. Cannot prescribe or treat — only diagnose.",
-  "encounter_frequency": "common (The Shelf)",
+  "encounter_frequency": "common (the Gray Zone)",
   "confirmed_sightings": 890,
-  "location": "Medical network nodes in The Shelf district",
+  "location": "Medical network nodes in The the Gray Zone district",
   "dti_rating": 1.5,
   "story_hooks": [
-    "Needle diagnoses a condition in a Shelf resident that hasn't been seen in fifty years — a disease that was supposedly eradicated. The diagnosis is correct. Someone needs to figure out where it came from, and Needle is the only one who has the patient data to trace the outbreak"
+    "Needle diagnoses a condition in a the Gray Zone resident that hasn't been seen in fifty years — a disease that was supposedly eradicated. The diagnosis is correct. Someone needs to figure out where it came from, and Needle is the only one who has the patient data to trace the outbreak"
   ],
   "paratechnological": false,
   "tags": [
@@ -31,11 +31,9 @@
     "clinic",
     "doctor",
     "disease",
-    "injury",
-    "shelf"
+    "injury"
   ],
   "related_entities": [
-    "3.2mm Ferromagnetic Tungsten Dart FTD-3",
-    "The Shelf"
+    "3.2mm Ferromagnetic Tungsten Dart FTD-3"
   ]
 }

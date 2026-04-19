@@ -3,7 +3,7 @@
   "name": "Stoker Thermal Stomper",
   "type": "apparel",
   "category": "footwear",
-  "description": "A heavy insulated boot built for workers in refrigerated facilities, cold-storage warehouses, and the brutal winters on the Shelf's exposed upper levels. Thick double-walled synthetic upper with a removable fleece liner, a wide platform sole for stability on ice, and a bright orange pull-loop at the heel. Not subtle, not light, not comfortable for walking more than a few blocks — but your toes stay alive at minus twenty. Well-worn pairs are a common sight on Tier 1 street corners in winter.",
+  "description": "A heavy insulated boot built for workers in refrigerated facilities, cold-storage warehouses, and the brutal winters in the Gray Zone's exposed upper levels. Thick double-walled synthetic upper with a removable fleece liner, a wide platform sole for stability on ice, and a bright orange pull-loop at the heel. Not subtle, not light, not comfortable for walking more than a few blocks — but your toes stay alive at minus twenty. Well-worn pairs are a common sight on Tier 1 street corners in winter.",
   "tier_association": "Tier 1",
   "materials": [
     "double-wall synthetic upper",
@@ -15,7 +15,7 @@
   "what_it_says": "You work cold storage or you live somewhere the heat cuts out. Warmth over everything.",
   "worn_by": [
     "cold-storage workers",
-    "Shelf residents in unheated buildings",
+    "the Gray Zone residents in unheated buildings",
     "night-shift outdoor laborers",
     "winter delivery runners"
   ],
@@ -25,7 +25,7 @@
   "gene_compatible": false,
   "story_hooks": [
     "The removable liner is sometimes used to conceal small items — warm, soft, and rarely checked at entry points.",
-    "A Shelf community that lost building heat for a winter hoards these — finding a stockpile might tell you who knew the heat was going to fail."
+    "A the Gray Zone community that lost building heat for a winter hoards these — finding a stockpile might tell you who knew the heat was going to fail."
   ],
   "tags": [
     "apparel",
@@ -38,9 +38,7 @@
     "winter"
   ],
   "parent_corponation": "",
-  "related_entities": [
-    "The Shelf"
-  ],
+  "related_entities": [],
   "physical_description": {
     "visual_profile": "A brutalist work boot with an imposing silhouette—wide, chunky, and aggressively functional. The bright orange pull-loop at the heel creates a visual anchor against dark synthetic materials. When worn, the wearer appears grounded and industrial, suggesting labor in extreme conditions.",
     "fit": "Generous, roomy fit through the midfoot and toe box to accommodate thick socks and the removable fleece liner. The wide platform sole adds bulk and presents a stable, almost tank-like stance. Not designed for a sleek profile.",

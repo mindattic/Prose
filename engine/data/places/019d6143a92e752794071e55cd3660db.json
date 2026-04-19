@@ -41,7 +41,7 @@
     "The quiet — it can mask genuine threats that you won't see coming until they're on top of you"
   ],
   "opportunities": [
-    "World-class neural interface repair at Shelf prices — if you can get a referral",
+    "World-class neural interface repair at the Gray Zone prices — if you can get a referral",
     "Adaptive fabric that corporate retailers can't match for quality or customization",
     "A trust network that, once you're inside it, opens doors across Meridian's South Asian diaspora",
     "Real food — not nutrient paste, not synth-protein, actual spices cooked by people who learned from their grandmothers",
@@ -64,7 +64,7 @@
   "frequented_by": [
     "Local families who've lived here for generations and intend to keep doing so",
     "Neural interface patients traveling from across Meridian for unlicensed but expert repair work",
-    "Food pilgrims from the Circuit and the Shelf seeking authentic South Asian cuisine",
+    "Food pilgrims from the Circuit and the Gray Zone seeking authentic South Asian cuisine",
     "Adaptive fabric buyers — designers, fixers, and people who need clothes that do more than cover skin",
     "Nobody from Axiom Security — and the community intends to keep it that way"
   ],
@@ -96,7 +96,6 @@
     "survival",
     "food",
     "lake",
-    "shelf",
     "spire",
     "circuit"
   ],
@@ -117,5 +116,7 @@
     "Lark Sigurdsson",
     "Ash Shirazi",
     "Kyle Ellen Corbin-Vasik"
-  ]
+  ],
+  "zone": "Z3",
+  "controllingCorponation": null
 }

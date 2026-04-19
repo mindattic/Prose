@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa157d8083c406c6f9bc815a",
+  "rating": 60,
   "name": "Periscope",
   "type": "elf",
   "aliases": [],
@@ -29,8 +30,6 @@
     "escape",
     "sentient"
   ],
-  "related_entities": [
-    "Lazarus LX-2 'Lab Rat'",
-    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

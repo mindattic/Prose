@@ -9,7 +9,7 @@
   "role": "Client — hired Kyle to avenge her husband's beating",
   "age": 38,
   "status": "active",
-  "location": "The Shelf — Tier Four, three corridors south of Chen's, near Western and Division",
+  "location": "the Gray Zone — Tier Four, three corridors south of Chen's, near Western and Division",
   "description": "Nyx Saito is built like someone who has carried heavy things her entire life — broad shoulders, thick forearms, hands that look like they could crush walnuts or cradle a child with equal confidence. She came to GLMZ from the Volgograd displacement zone when she was nineteen, pregnant, speaking four words of English: 'please,' 'help,' 'work,' and 'no.' She now speaks roughly forty words of English, all of them practical. She communicates primarily through a translation app on a cracked tablet that she holds like a shield. Her face is weathered beyond her years — deep lines around her mouth, sun damage from agricultural work in the displacement camps, a scar across her left eyebrow from a piece of industrial debris. She is not soft. She is not hard. She is a woman who has been carrying impossible weight for so long that her skeleton has restructured itself around the burden. She scraped together Kyle's fee by selling her blood to a Helix BioSystems collection point three times a week for two months. Kyle took the job at half rate. She does not know this and he will never tell her.",
   "psychology": {
     "facet_weights": {
@@ -53,7 +53,7 @@
     {
       "name": "Demyan Morozov",
       "type": "husband",
-      "description": "Her anchor. Jaw wired shut, can't work, can't eat. She would burn the Shelf down for him.",
+      "description": "Her anchor. Jaw wired shut, can't work, can't eat. She would burn the Gray Zone down for him.",
       "emotional_core": "Fierce protective love",
       "story_tension": "The teeth Kyle collected are for Demyan. What does he do with them?"
     },
@@ -215,7 +215,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -229,7 +229,6 @@
   "registered_firearms": [],
   "related_entities": [
     "Helix Biosystems",
-    "The Shelf",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Arcturus Defense Solutions Combat Exoskeleton Lite CEL-3",
     "TESSERA TN-1 'Cradle'",
@@ -238,7 +237,7 @@
     "Slagworks Industrial",
     "GLMZ"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Polychromatic blend of South Asian (25%), East Asian (22.2%), Sub-Saharan African (16%), Southeast Asian (15.2%), Eastern European (11%), and Hispanic/Latin American (10.6%) ancestry. Facial structure reflects this continental convergence: broader nose with slight flare from South Asian and African heritage, defined cheekbones elevated by East Asian genetics, slightly hooded eyes characteristic of East and Southeast Asian lineage, and warm golden undertones across medium-deep brown skin from the full ancestral blend.",
     "height_cm": 168,

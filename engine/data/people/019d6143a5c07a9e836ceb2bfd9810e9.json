@@ -1,5 +1,6 @@
 {
   "id": "019d6143a5c07a9e836ceb2bfd9810e9",
+  "rating": 80,
   "type": "character",
   "name": "Ifeanyi Sesay",
   "aliases": [],
@@ -10,7 +11,7 @@
   "age": 31,
   "status": "active",
   "location": "The Meridian Core (official residence), The Circuit (operational base), near LaSalle and Jackson",
-  "description": "Ifeanyi Sesay is the kind of person whose appearance is engineered to be forgotten: medium height, medium build, features that are generically pleasant in a way that resists description. His Silesian-Nigerian heritage gives him warm brown skin and light gray-green eyes that seem slightly wrong on his face—memorable only in the moment you're looking directly at them. He keeps his hair short and neat, dresses in the Meridian Core's standard mid-tier professional palette (charcoal, slate, the occasional muted teal), and moves through spaces like someone who has rehearsed being unremarkable. His augmentations are all internal or invisible by design.\n\nOfficially, Bastian is a Level 4 Infrastructure Compliance Auditor for Heliostat Consolidated, one of the Spire's subsidiary logistics and data architecture firms. His job is to find vulnerabilities in Heliostat's own systems—and, on contract, in the systems of competitors. He is exceptionally good at this. He has three corporate commendations, a clean performance file, and a social profile calibrated to read as ambitious-but-stable. His apartment in the Meridian Core is tidy and impersonal in the way of someone who spends as little time there as possible.\n\nIn The Circuit, in a rented workspace registered to a shell persona, Bastian is Null-Seven: one of the most methodical infrastructure saboteurs operating in GLMZ. He does not work for ideology in the pure sense—he works from a specific, contained grievance that has grown tendrils. Three years ago, a Heliostat data architecture decision he flagged and documented was overridden by management. Six months later, the resulting failure cascaded into a residential power grid collapse in The Shelf that killed eleven people. The incident was classified as 'infrastructure fatigue.' His report was buried. He has been quietly, surgically dismantling Heliostat's redundancy systems ever since—not to destroy the company, but to force an audit so complete that the buried report will surface. He does not let himself examine whether this plan is rational.",
+  "description": "Ifeanyi Sesay is the kind of person whose appearance is engineered to be forgotten: medium height, medium build, features that are generically pleasant in a way that resists description. His Silesian-Nigerian heritage gives him warm brown skin and light gray-green eyes that seem slightly wrong on his face—memorable only in the moment you're looking directly at them. He keeps his hair short and neat, dresses in the Meridian Core's standard mid-tier professional palette (charcoal, slate, the occasional muted teal), and moves through spaces like someone who has rehearsed being unremarkable. His augmentations are all internal or invisible by design.\n\nOfficially, Bastian is a Level 4 Infrastructure Compliance Auditor for Heliostat Consolidated, one of the Spire's subsidiary logistics and data architecture firms. His job is to find vulnerabilities in Heliostat's own systems—and, on contract, in the systems of competitors. He is exceptionally good at this. He has three corporate commendations, a clean performance file, and a social profile calibrated to read as ambitious-but-stable. His apartment in the Meridian Core is tidy and impersonal in the way of someone who spends as little time there as possible.\n\nIn The Circuit, in a rented workspace registered to a shell persona, Bastian is Null-Seven: one of the most methodical infrastructure saboteurs operating in GLMZ. He does not work for ideology in the pure sense—he works from a specific, contained grievance that has grown tendrils. Three years ago, a Heliostat data architecture decision he flagged and documented was overridden by management. Six months later, the resulting failure cascaded into a residential power grid collapse in the Gray Zone that killed eleven people. The incident was classified as 'infrastructure fatigue.' His report was buried. He has been quietly, surgically dismantling Heliostat's redundancy systems ever since—not to destroy the company, but to force an audit so complete that the buried report will surface. He does not let himself examine whether this plan is rational.",
   "psychology": {
     "facet_weights": {
       "wound": 0.65,
@@ -36,7 +37,7 @@
       "Extreme compartmentalization—his identities are psychologically sealed",
       "Elaborate preparatory rituals before any operational action",
       "Collecting and organizing data as a substitute for emotional processing",
-      "Occasional anonymous donations to The Shelf community funds"
+      "Occasional anonymous donations to The Gray Zone community funds"
     ],
     "blind_spots": [
       "His 'contained' sabotage is creating secondary instabilities he hasn't modeled",
@@ -59,7 +60,11 @@
       "'I'm not asking you to trust me. I'm asking you to look at the data and reach your own conclusion. They're not the same request.'",
       "'Noted. I'll factor that in.'",
       "'At baseline, I'd say this is recoverable. At baseline.'"
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [
     {
@@ -85,10 +90,10 @@
     }
   ],
   "story_hooks": [
-    "The Shelf infrastructure begins showing failures that aren't Bastian's work—someone else is in the system, and their goals are not his",
+    "the Gray Zone infrastructure begins showing failures that aren't Bastian's work—someone else is in the system, and their goals are not his",
     "Heliostat's internal security assigns him to audit the very anomalies he created, placing him in an impossible position",
     "Saoirse's anonymous tip file is intercepted—Bastian has to decide whether to burn his cover to protect it",
-    "A Shelf resident who lost family in the grid collapse starts looking for answers and gets close enough to find Null-Seven's fingerprints",
+    "A the Gray Zone resident who lost family in the grid collapse starts looking for answers and gets close enough to find Null-Seven's fingerprints",
     "Bastian discovers the buried report has already been found and used—not for accountability, but as leverage in a corporate acquisition"
   ],
   "narrative_function": "Explores institutional cover-up, the ethics of individual sabotage versus systemic change, and the psychological cost of sustained double-life operation. Creates pressure points between The Circuit's underground and The Meridian Core's corporate machinery.",
@@ -165,7 +170,7 @@
     "decision_rules": [
       "Will never take an action without running probability analysis first",
       "Will always maintain behavioral separation between his two identities",
-      "Will never harm a Shelf resident directly — his sabotage targets corporate redundancy, not people",
+      "Will never harm a Gray Zone resident directly — his sabotage targets corporate redundancy, not people",
       "Will always terminate conversations he does not want to continue with 'Noted'",
       "Will never contact Saoirse unless forced — her freedom to act independently is sacred to him",
       "Will always have an exit strategy prepared before entering any operational space",
@@ -199,7 +204,7 @@
       "Eats alone to avoid conversational improvisation",
       "Runs probability models recreationally before sleep",
       "Takes circuitous routes to The Circuit workspace, never the same path twice",
-      "Makes anonymous donations to Shelf community funds after each sabotage operation"
+      "Makes anonymous donations to Gray Zone community funds after each sabotage operation"
     ],
     "breaking_points": [
       "The buried report being found and destroyed before it surfaces",
@@ -238,26 +243,11 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Meridian Core",
-    "Meridian Core",
-    "The Circuit",
-    "Ouroboros Energy Power Distribution Trunk Network",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "The Spire",
-    "The Shelf",
-    "The Heritage Vault",
-    "Charcoal",
-    "Circuit",
-    "Slate",
-    "Slagworks Industrial",
-    "GLMZ"
-  ],
-  "district": "Meridian Core",
   "physical_description": {
     "heritage": "Genetically mosaic of Sub-Saharan African (40.6%), South Asian (20.9%), Eastern European (15.2%), Middle Eastern (11.7%), and Southeast Asian (11.6%) ancestry. The phenotype reflects this polyphonic blend: West African bone structure with graceful cheekbone width meets South Asian facial proportions and Middle Eastern nose bridge definition, anchored by Eastern European undertones in jawline geometry. Southeast Asian softness tempers the overall angularity. Features resist categorical reading, shifting subtly across continental traditions depending on light and angle—high cheekbones with lateral width, straight nose with moderate bridge definition, balanced jawline with smooth angularity. The overall effect is striking equilibrium across global lineages.",
     "height_cm": 174,
@@ -277,6 +267,7 @@
     "clothing_style": "Meridian Core Tier 2-3 professional: charcoal wool trousers, slate technical shirts in breathable microfiber, muted teal or gray blazers from mid-market corpo brands (Zeiss-Luxor, Nakamura Systems). Watches a stainless steel minimalist chronometer (Braun-licensed). Shoes are black leather composite, maintained to utilitarian polish. Bag is a slim messenger in technical fabric—carries encrypted tablet, earpiece, secondary comms device, nothing personal. The effect is of someone assembling a costume from a corporate template."
   },
   "image_prompt": "Ifeanyi Sesay, 174cm tall lean professional with medium-deep warm brown skin reflecting Sub-Saharan African, South Asian, Middle Eastern, and Southeast Asian ancestry. High graceful cheekbones, straight nose with moderate bridge definition, balanced jawline. Light gray-green eyes with amber undertone. Dark brown naturally straight short hair, neatly trimmed and parted off-center. Clean-shaven, smooth complexion. Wearing charcoal wool trousers, slate technical microfiber shirt, muted teal Nakamura Systems blazer, black leather composite shoes, stainless steel minimalist chronometer. Slim technical fabric messenger bag. Standing in GLMZ Great Lakes Metropolitan Zone corporate office with soft LED ambient lighting, cool tones. Posture economical and calibrated, eyes tracking surroundings predictably. Measured, checkpoint presence. No visible augmentations though neural implants lurk beneath skin. Professional but forgettable, template-assembled appearance. Neo-noir corporate aesthetic, 2200s tech --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Sub-Saharan African": 40.6,
     "South Asian": 20.9,
@@ -284,12 +275,6 @@
     "Middle Eastern": 11.7,
     "Southeast Asian": 11.6
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Sub-Saharan African": {
       "West African": {
@@ -331,6 +316,5 @@
         "Laotian": 11.6
       }
     }
-  },
-  "tier": "3"
+  }
 }

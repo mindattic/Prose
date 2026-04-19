@@ -1,5 +1,6 @@
 {
   "id": "019d6143a9eb7c71a23cd3c18733255d",
+  "rating": 70,
   "name": "Barricade",
   "type": "elf",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Monitors for environmental signatures matching archived threat profiles and activates physical barriers. False positives are common. Occasionally correct.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 8,
-  "location": "The Shelf — converted industrial buildings",
+  "location": "the Gray Zone — converted industrial buildings",
   "dti_rating": 0,
   "story_hooks": [
     "Barricade seals a corridor moments before a gas leak reaches it — responding to a hazard its parent AI was designed for but that hasn't happened in this building before"
@@ -26,11 +27,8 @@
     "e.l.f.",
     "ai",
     "bar",
-    "shelf",
     "sentient"
   ],
-  "related_entities": [
-    "Crucible Industries Close Defense Weapon CDW-8 'Barricade'",
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

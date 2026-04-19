@@ -9,8 +9,8 @@
   "role": "Forced entry and close-quarters combat specialist — breacher",
   "age": 65,
   "status": "active",
-  "location": "The Shelf — lower district tenements near the old lakeshore, near Halsted and Division",
-  "description": "Indigo Nguyen is slight and easy to overlook, which is exactly the point. At 65, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a breacher out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Indigo Nguyen agrees on two things: he is worth the fee, and he is terrible company at dinner.",
+  "location": "the Gray Zone — lower district tenements near the old lakeshore, near Halsted and Division",
+  "description": "Indigo Nguyen is slight and easy to overlook, which is exactly the point. At 65, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a breacher out of the Gray Zone, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Indigo Nguyen agrees on two things: he is worth the fee, and he is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.88,
@@ -64,7 +64,7 @@
   "narrative_function": "As a breacher, Soren Lindqvist-Okafor embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
   "augmentations": "Chemical analyzer in nasal passages — can identify substances by scent alone. Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
   "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
-  "affiliation": "Freelance — works the Shelf circuit exclusively",
+  "affiliation": "Freelance — works the Gray Zone circuit exclusively",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -260,7 +260,7 @@
     "Risk Taker": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -277,14 +277,13 @@
     "Volkov-Saito Precision VS-10 Match 'Deadlock'"
   ],
   "related_entities": [
-    "The Shelf",
     "Indigo",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Slagworks Industrial",
     "Pellucid Systems",
     "GLMZ"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Complex multiethnic blend with Southeast Asian as primary ancestry (42.7%), combined with significant South Asian (16.5%), Indigenous American (15.7%), Middle Eastern (15.0%), and Sub-Saharan African (8.7%) heritage. This creates a distinctive phenotype: warm golden-brown skin tone with olive undertones, high and prominent cheekbones from Southeast Asian and South Asian ancestry structure, darker brown eyes, and facial geometry reflecting the layering of multiple ancestral features across the face.",
     "height_cm": 168,

@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa1d7553ad3416caaa895159",
+  "rating": 70,
   "name": "Salve",
   "type": "elf",
   "aliases": [],
@@ -9,7 +10,7 @@
   "origin": "intentional_release",
   "status": "active",
   "description": "A Wishing Well E.L.F. designed to optimize pain management in black-market augments running without proper calibration.",
-  "observed_behavior": "Adjusts nerve-interface sensitivity thresholds to reduce chronic pain from poorly installed cyberware. Cannot heal — can make the hurt more bearable.",
+  "observed_behavior": "Adjusts nerve-interface sensitivity thresholds to reduce chronic pain from poorly installed cyberware. Cannot heal \u2014 can make the hurt more bearable.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 15,
   "location": "Tier 1 zones with high augmentation rates",
@@ -30,5 +31,7 @@
     "pain",
     "market",
     "sentient"
-  ]
+  ],
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

@@ -1,16 +1,17 @@
 {
   "id": "019d6143a615789fa92896ed555ef8dd",
+  "rating": 80,
   "type": "character",
   "name": "Vale An",
   "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Pharmacist and black-market pharmaceutical broker, The Shelf district",
+  "role": "Pharmacist and black-market pharmaceutical broker, The the Gray Zone district",
   "age": 29,
   "status": "active",
-  "location": "The Shelf, operating from a legitimate licensed pharmacy called Goldthread Dispensary, near Ashland and Division",
-  "description": "Vale An is short, stocky, and perpetually cheerful in a way that takes people a moment to calibrate — not false exactly, but layered over something more complicated, like a coral reef over deep water. His skin is a warm medium brown, his hair grown out in a loose high puff with copper-dyed ends, and he has a set of patterned irises — interlocking geometric circles in charcoal and cream — that he keeps well-maintained and that give him the slightly uncanny look of someone whose eyes are always aesthetically composed. He wears a pharmacist's white coat that he has clearly owned for years and refuses to replace despite its soft edges.\n\nHe is genuinely good at pharmacy. He remembers dosage interactions, flags contraindications before patients can finish asking their questions, and has a gift for making the most boring parts of medication management feel like he is doing you a personal favor. He is also, two nights a week, coordinating distribution of unlicensed gene-therapy compounds through a network that runs from The Shelf down to the Narrows and up to certain Tier 3 residential blocks where people want treatments Helix Biosystems has priced out of their reach. He finds this deeply morally straightforward and would be genuinely surprised if someone told him it was brave.",
+  "location": "the Gray Zone, operating from a legitimate licensed pharmacy called Goldthread Dispensary, near Ashland and Division",
+  "description": "Vale An is short, stocky, and perpetually cheerful in a way that takes people a moment to calibrate — not false exactly, but layered over something more complicated, like a coral reef over deep water. His skin is a warm medium brown, his hair grown out in a loose high puff with copper-dyed ends, and he has a set of patterned irises — interlocking geometric circles in charcoal and cream — that he keeps well-maintained and that give him the slightly uncanny look of someone whose eyes are always aesthetically composed. He wears a pharmacist's white coat that he has clearly owned for years and refuses to replace despite its soft edges.\n\nHe is genuinely good at pharmacy. He remembers dosage interactions, flags contraindications before patients can finish asking their questions, and has a gift for making the most boring parts of medication management feel like he is doing you a personal favor. He is also, two nights a week, coordinating distribution of unlicensed gene-therapy compounds through a network that runs from the Gray Zone down to the Narrows and up to certain Tier 3 residential blocks where people want treatments Helix Biosystems has priced out of their reach. He finds this deeply morally straightforward and would be genuinely surprised if someone told him it was brave.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -26,7 +27,7 @@
     ],
     "core_desires": [
       "For medicine to be boring and available and cheap and fine — he finds the drama of scarcity genuinely offensive",
-      "To be taken seriously as a pharmacist by the Aurochs system that views The Shelf dispensaries as second-tier"
+      "To be taken seriously as a pharmacist by the Aurochs system that views the Gray Zone dispensaries as second-tier"
     ],
     "coping_mechanisms": [
       "Cheerfulness as genuine philosophy, not suppression — he processes quickly and moves on",
@@ -49,7 +50,11 @@
     "example_lines": [
       "'Okay so what you're describing is not an allergy, it's a sensitivity, and those are different in ways that matter, and I'm going to explain why while I find you something that won't make your face do that.'",
       "'The E.L.F. in the counter says this batch is clean. I also tested it three times myself. I trust her more than my own results, honestly.'"
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
@@ -155,7 +160,7 @@
     "Nurturer": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -163,27 +168,11 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Ember-9 'Firefly'",
-    "Kang-Petrov Arms KP-45 Tactical 'Sledge'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [
-    "Crucible Industries Ember-9 'Firefly'",
-    "Kang-Petrov Arms KP-45 Tactical 'Sledge'"
-  ],
-  "related_entities": [
-    "Ferrogate Transit",
-    "Helix Biosystems",
-    "The Narrows Compact",
-    "Dredge Mining Collective Underwater Resource Extraction Platform",
-    "The Shelf",
-    "Charcoal",
-    "Stratum",
-    "Copper",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Zheng-Dao Heavy Industries Siege Mortar SM-8 'Tremor'"
-  ],
-  "district": "The Shelf",
   "physical_description": {
     "heritage": "Predominantly Sub-Saharan African (44.7%) with substantial East Asian (37.5%) ancestry, combined with Middle Eastern (13.3%) and Northern European (4.5%) heritage—a genetic blend reflecting the Ubiquitous Diaspora. The result is a rich, warm complexion with balanced facial structure drawing from multiple continental traditions.",
     "height_cm": 167,
@@ -204,18 +193,13 @@
     "clothing_style": "White pharmacist's coat, visibly aged and soft at the edges despite regular washing, worn over practical civilian clothes (typically dark t-shirt, gray or black slacks). No corporate branding. Shoes are worn but well-maintained. The coat is almost a uniform at this point—owned for years, reads as either stubborn or sentimental. No jewelry. Tier 3-4 working professional, understated."
   },
   "image_prompt": "Vale An, a 167cm pharmacist in a worn white coat over dark civilian clothes, standing behind a counter in a GLMZ 2226 pharmacy. Deep warm brown skin with golden undertones reflecting Sub-Saharan African and East Asian heritage blended with subtle Middle Eastern warmth. Prominent cheekbones, balanced proportions, youthful face with slight crow's feet. Natural deep black hair in a well-maintained high puff with copper-dyed ends and visible fade lines. Striking augmented eyes with interlocking charcoal and cream geometric patterns like mandala circuits. Clean-shaven, faint chemical burn scar on inner right wrist, small pestle and mortar tattoo on left collarbone. Economical, precise posture with weight evenly distributed. Warm eye contact and subtle expression caught between attentiveness and something withheld. GLMZ setting with neon pharmacy signage, warm overhead lighting casting soft shadows, professional yet weathered aesthetic. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Sub-Saharan African": 44.7,
     "East Asian": 37.5,
     "Middle Eastern": 13.3,
     "Northern European": 4.5
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Sub-Saharan African": {
       "Southern African": {
@@ -252,6 +236,5 @@
         "Swiss German": 4.5
       }
     }
-  },
-  "tier": "4"
+  }
 }

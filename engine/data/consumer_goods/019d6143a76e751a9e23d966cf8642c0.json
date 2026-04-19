@@ -7,7 +7,7 @@
   "category": "household",
   "subcategory": "cleaning",
   "manufacturer": "CleanZone Products",
-  "description": "Anti-fungal spray critical in Old Harbor and lower Shelf levels where humidity and poor ventilation create constant mold problems. Spray on walls, ceilings, and surfaces. Lasts 30 days per application.",
+  "description": "Anti-fungal spray critical in Old Harbor and the Gray Zone levels where humidity and poor ventilation create constant mold problems. Spray on walls, ceilings, and surfaces. Lasts 30 days per application.",
   "flavor_profile": "Harsh chemical smell that fades to nothing after drying, leaves a slight film",
   "tier_availability": "Tier 1-2",
   "price": "Φ3.00",
@@ -16,7 +16,7 @@
   "cultural_context": "Mold is the enemy in Old Harbor. Black mold in the lungs has hospitalized thousands. MoldStop is not optional — it's survival. People spray their entire living space monthly. The smell of MoldStop is the smell of home in Old Harbor.",
   "story_hooks": [
     "CleanZone's formula is effective but the long-term respiratory effects of the spray itself are unstudied — you're trading one lung problem for a slower one.",
-    "A bio-engineered mold strain resistant to MoldStop has appeared in Shelf Block 12 — CleanZone is scrambling to reformulate."
+    "A bio-engineered mold strain resistant to MoldStop has appeared in the Gray Zone Block 12 — CleanZone is scrambling to reformulate."
   ],
   "tags": [
     "household",
@@ -25,7 +25,6 @@
     "mold",
     "anti_fungal",
     "old_harbor",
-    "shelf",
     "tier_1",
     "tier_2",
     "essential"

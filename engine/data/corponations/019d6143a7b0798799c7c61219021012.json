@@ -31,5 +31,15 @@
     "The Corridor",
     "The Maintenance Covenant",
     "The Reclamation Assembly"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z6",
+      "Z11"
+    ],
+    "primaryZone": "Z6",
+    "lakefrontAccess": false,
+    "description": "Palladian Prime — sovereign industrial zone in the Gary, Indiana ruins and extending into Zone 11's southern wrap. Materials warehousing, fabrication facilities, and the largest crane fleet in the Corridor. Palladian built most of the GLMZ's corponation facilities during the 2150-2190 construction surge and retained the territory they built on.",
+    "grayZoneRelationship": "Palladian's Gary territory borders some of Zone 6's most dangerous Gray Zones. They maintain a private security force of 2,400 personnel specifically for perimeter enforcement."
+  }
 }

@@ -1,5 +1,6 @@
 {
   "id": "019d6143a6437e7f9b7c93cede01e52d",
+  "rating": 25,
   "type": "character",
   "name": "Fatima Lahlou",
   "aliases": [],
@@ -30,7 +31,11 @@
     "vocabulary": "",
     "cadence": "",
     "verbal_tics": [],
-    "example_lines": []
+    "example_lines": [],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [],
@@ -96,16 +101,13 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Model 9 'Payday'"
-  ],
-  "registered_firearms": [],
-  "district": "Meridian Core",
-  "related_entities": [
-    "Compass Rose"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
   "physical_description": {
-    "heritage": "Complex multicontinent blend: 36.8% Hispanic/Latin American, 30.6% North African, 19.8% Sub-Saharan African, 7.9% Indigenous American, 4.9% Northern European. This genetic distribution creates phenotypic richness—warm medium-brown skin with golden undertones from the dominant Latin American and North African ancestry, deepened by Sub-Saharan African heritage warmth. Indigenous American ancestry contributes pronounced cheekbone architecture and facial structure, while the Sub-Saharan African component adds fullness to lips and broader nasal base. Northern European ancestry creates subtle undertone complexity in skin luminosity. The result is someone whose appearance reflects equatorial, subtropical, and Mediterranean genetic memory across multiple ancestral populations.",
+    "heritage": "Complex multicontinent blend: 36.8% Hispanic/Latin American, 30.6% North African, 19.8% Sub-Saharan African, 7.9% Indigenous American, 4.9% Northern European. This genetic distribution creates phenotypic richness\u2014warm medium-brown skin with golden undertones from the dominant Latin American and North African ancestry, deepened by Sub-Saharan African heritage warmth. Indigenous American ancestry contributes pronounced cheekbone architecture and facial structure, while the Sub-Saharan African component adds fullness to lips and broader nasal base. Northern European ancestry creates subtle undertone complexity in skin luminosity. The result is someone whose appearance reflects equatorial, subtropical, and Mediterranean genetic memory across multiple ancestral populations.",
     "height_cm": 172,
     "weight_kg": 64,
     "build": "Lean and efficient, minimal wasted mass. Corded muscle from years of fieldwork rather than gym aesthetics. Moves like someone who conserves energy.",
@@ -118,13 +120,14 @@
     "distinguishing_marks": [
       "Burn scar (3cm) on left jawline, pale and smooth from old healing",
       "Faint horizontal scar across right palm, approximately 5cm, consistent with a defensive wound",
-      "Small geometric tattoo (1cm) on inside left wrist — appears to be coordinates or a code in minimalist lines"
+      "Small geometric tattoo (1cm) on inside left wrist \u2014 appears to be coordinates or a code in minimalist lines"
     ],
     "visible_augmentations": "None visible. Ghost fixers typically run subcutaneous or fully internalized augmentation suites.",
-    "posture_movement": "Relaxed but never truly at rest. Eyes track exits and ambient movement. Sits with spine straight, hands visible. Moves with deliberate economy — no wasted gestures, no nervous fidgeting. Gives impression of someone listening more than speaking.",
-    "clothing_style": "Tier 3-4 functional. Unmarked grey synthetic jacket (tech-weave, practical water resistance), plain dark compression shirt underneath. Charcoal cargo pants with reinforced seams and subtle tech pockets. Military-grade boots, worn but maintained. No logos, no affiliation markers. Everything is replaceable and forgettable. Single silver ring on right index finger — appears functional, possibly a discrete data interface or auth token."
+    "posture_movement": "Relaxed but never truly at rest. Eyes track exits and ambient movement. Sits with spine straight, hands visible. Moves with deliberate economy \u2014 no wasted gestures, no nervous fidgeting. Gives impression of someone listening more than speaking.",
+    "clothing_style": "Tier 3-4 functional. Unmarked grey synthetic jacket (tech-weave, practical water resistance), plain dark compression shirt underneath. Charcoal cargo pants with reinforced seams and subtle tech pockets. Military-grade boots, worn but maintained. No logos, no affiliation markers. Everything is replaceable and forgettable. Single silver ring on right index finger \u2014 appears functional, possibly a discrete data interface or auth token."
   },
   "image_prompt": "Fatima Lahlou, GLMZ, medium warm brown skin with golden undertones reflecting Latin American and North African heritage, high prominent cheekbones from Indigenous American ancestry, deep brown alert eyes, angular refined facial structure, black hair with silver at temples in sharp undercut style, small pale burn scar on left jawline, clean-shaven. Lean 172cm build with corded muscle from fieldwork. Wearing unmarked grey tech-weave synthetic jacket, dark compression shirt, charcoal reinforced cargo pants, military-grade boots. Silver ring on right index finger. Relaxed posture with deliberate economy of movement, eyes tracking ambient space. Standing in dimly lit urban setting, neon accent lighting casting cool shadows across angular features. Mood: calm, focused, watchful. Neo-noir Great Lakes Metropolitan Zone aesthetic, high contrast lighting, cinematic depth of field --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Hispanic/Latin American": 36.8,
     "North African": 30.6,
@@ -132,12 +135,6 @@
     "Indigenous American": 7.9,
     "Northern European": 4.9
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Hispanic/Latin American": {
       "Central American": {
@@ -188,6 +185,5 @@
         "German": 0.5
       }
     }
-  },
-  "tier": "3"
+  }
 }

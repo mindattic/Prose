@@ -1,0 +1,47 @@
+{
+  "name": "Vantablack VO-1 'Looking Glass'",
+  "type": "automaton",
+  "classification": "Optical Warfare Platform — Reflection Manipulation",
+  "aliases": [],
+  "manufacturer": "VANTABLACK OPTICAL SYSTEMS",
+  "description": "The VO-1 does not exist in the way that other automata exist. It has no physical chassis, no legs, no weapons that you can touch. The VO-1 is a projected optical construct — a machine that exists only in reflective surfaces. Mirrors. Windows. Puddles. The polished steel of an elevator door. It appears as a humanoid silhouette visible only in reflections, standing in spaces where no corresponding physical entity exists. It moves independently of anything in the real environment. And it watches.\n\nThe VO-1 is Vantablack's most classified project — an automaton that operates entirely within the optical spectrum, using a network of concealed micro-projectors and metamaterial lenses embedded in building infrastructure to create a coherent reflected image that can move through any reflective surface in the installation area. The system was designed for psychological warfare: the target sees a figure in every mirror, every window, every reflective surface, following them, standing behind them, getting closer. The figure is always in the corner of the reflected space. It is always watching. It never appears when the target turns around.\n\nThe psychological effect is devastating. Targets develop acute paranoid psychosis within 72 to 96 hours of sustained exposure. They stop sleeping. They cover or destroy every reflective surface in their environment. They become convinced that the reflection is a real entity that exists in a parallel space accessed through mirrors. Several targets have been institutionalized. Two committed suicide. Vantablack considers this an acceptable operational outcome — the VO-1 is designed to destroy a person without leaving evidence of assault, and a target who destroys their own mind is a target neutralized without attributable cause.\n\nThe most disturbing field report comes from a Vantablack technician who maintained a VO-1 installation in a corporate rival's headquarters. In his debrief, he reported that during a system maintenance cycle — when all projectors were confirmed offline — he saw the figure in a bathroom mirror. Standing behind him. He turned around. Nothing there. He checked the system logs. The projectors were off. Every single one. He resigned the next day. Vantablack's internal assessment concluded that the technician experienced residual psychological contamination from proximity to the system. The technician disagrees. He says it looked at him.",
+  "tier_availability": "Tier 5 — corporate espionage tool",
+  "legality": "No specific legislation — operates in legal gray area between psychological warfare and optical illusion",
+  "autonomy_level": "System-controlled with AI-driven behavioral modeling of target psychology",
+  "dimensions": "No physical form — projected image approximately 1.8m humanoid silhouette",
+  "weight": "N/A — infrastructure-based system (projector network approximately 15 kg total)",
+  "power_source": "Building power grid (projector network), battery backup for 48 hours",
+  "locomotion": "Appears in any reflective surface within the projector network coverage area",
+  "armament": [
+    "Psychological disruption through sustained visual harassment",
+    "Sleep deprivation",
+    "Paranoid psychosis induction"
+  ],
+  "sensors": [
+    "Visual tracking of target through building camera systems",
+    "Acoustic monitoring",
+    "Behavioral analysis AI predicts target movement for optimal reflection positioning"
+  ],
+  "countermeasures": "Identification and removal of micro-projector network. Covering all reflective surfaces (effective but psychologically damaging in itself). Awareness that the system is technological, not supernatural, reduces psychological impact significantly — but does not eliminate it entirely.",
+  "known_deployments": [
+    "Confirmed use against three corporate executives (2197-2199)",
+    "Suspected deployment in political intimidation campaigns"
+  ],
+  "story_hooks": [
+    "Someone is seeing a figure in every reflection and they are losing their mind — is it a VO-1 deployment, or is something else watching?",
+    "A VO-1 system has been discovered in a residential building in the Gray Zone, targeting an entire floor of tenants. Someone paid to terrorize twenty families."
+  ],
+  "cultural_context": "The VO-1 has contributed to GLMZ's growing superstition about reflections. Mirror-breaking has increased 400% in districts where rumors of the Looking Glass have spread. Some the Gray Zone residents have adopted the practice of keeping no reflective surfaces in their homes, which psychologists describe as a rational response to an irrational world.",
+  "tags": [
+    "automaton",
+    "optical",
+    "psychological",
+    "horror",
+    "vantablack",
+    "reflection",
+    "espionage",
+    "tier 5",
+    "nightmare"
+  ],
+  "id": "31b3c528d11a7363540e6d37470539bc"
+}

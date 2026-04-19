@@ -1,5 +1,6 @@
 {
   "id": "019d6143a5c77724a9d7aa6b97638826",
+  "rating": 80,
   "type": "character",
   "name": "Zara Kim",
   "aliases": [],
@@ -9,8 +10,8 @@
   "role": "Small-time data broker and bootleg media seller",
   "age": 44,
   "status": "active",
-  "location": "The Shelf, Deepwell Station, near sub-level access near State and Van Buren",
-  "description": "Zara Kim is a heavyset man with pale Polish-Armenian complexion gone ruddy at the cheeks from years of Deepwell Station's recycled air, a close-cropped head of dark hair shot through with early gray, and a mustache he maintains with a precision that is otherwise entirely absent from his personal presentation. He wears the same rotation of three utilitarian jackets and always has a data-chip case on his belt that holds sixty to eighty chips in organized categories only he understands. His stall at The Shelf is a folding table with a locked case on top and a handwritten placard reading 'MEDIA / INFORMATION / REASONABLE RATES.' Behind it he keeps a battered terminal and a cup of something hot that he refills compulsively from a thermos.\n\nZara Kim has the careful, watchful energy of a man who has heard a lot of things he wasn't meant to and survived by being boring about it. He is dry-humored and unhurried, speaks with precise economy, and will sell you bootleg Axiom entertainment packages and Tessera corporate gossip compilations with the same mild demeanor. He does not volunteer what he knows, but ask him the right question and pay the right amount and the depth of his archive is quietly staggering. His specialty is organizational intelligence — who works for whom, who owes what, which corponation is about to restructure which subsidiary — sourced from document leaks, intercepted internal newsletters, and a network of low-level administrative workers who trade gossip for data access.",
+  "location": "the Gray Zone, Deepwell Station, near sub-level access near State and Van Buren",
+  "description": "Zara Kim is a heavyset man with pale Polish-Armenian complexion gone ruddy at the cheeks from years of Deepwell Station's recycled air, a close-cropped head of dark hair shot through with early gray, and a mustache he maintains with a precision that is otherwise entirely absent from his personal presentation. He wears the same rotation of three utilitarian jackets and always has a data-chip case on his belt that holds sixty to eighty chips in organized categories only he understands. His stall at the Gray Zone is a folding table with a locked case on top and a handwritten placard reading 'MEDIA / INFORMATION / REASONABLE RATES.' Behind it he keeps a battered terminal and a cup of something hot that he refills compulsively from a thermos.\n\nZara Kim has the careful, watchful energy of a man who has heard a lot of things he wasn't meant to and survived by being boring about it. He is dry-humored and unhurried, speaks with precise economy, and will sell you bootleg Axiom entertainment packages and Tessera corporate gossip compilations with the same mild demeanor. He does not volunteer what he knows, but ask him the right question and pay the right amount and the depth of his archive is quietly staggering. His specialty is organizational intelligence — who works for whom, who owes what, which corponation is about to restructure which subsidiary — sourced from document leaks, intercepted internal newsletters, and a network of low-level administrative workers who trade gossip for data access.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -48,7 +49,11 @@
     "example_lines": [
       "'Tessera internal newsletter, Q3 restructuring, full text, annotated. Φ18. You want the annotation or not.'",
       "'I've heard that name. Whether I've heard it in a context relevant to you is a different question with a different price.'"
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
@@ -176,7 +181,7 @@
     "Info Broker": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -218,28 +223,18 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Current: established Shelf presence, archive approaching 40,000 indexed files, auditor contact now silent",
+      "event": "Current: established the Gray Zone presence, archive approaching 40,000 indexed files, auditor contact now silent",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
     }
   ],
   "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Street Custom 'Spiderbite' Electrified Barbed Wire Launcher"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Deepwell Station",
-    "Zheng-dao Bioelectric",
-    "The Shelf",
-    "BLACKWATER",
-    "Tessera Corponation",
-    "Slagworks Industrial",
-    "The Pale Mile"
-  ],
-  "district": "The Underworld",
   "physical_description": {
     "heritage": "Complex Pan-Asian, South Asian, and Middle Eastern blend with Sub-Saharan African admixture. East Asian ancestry (42.3%) defines facial structure and eye shape, substantially enriched by South Asian (23%), Southeast Asian (13.7%), and Middle Eastern (12.5%) heritage, with Sub-Saharan African (8.5%) contributing warmth and depth. A striking synthesis of multiple continental features: warm deep brown skin with golden and olive undertones, angular cheekbones with subtle fullness, monolid and hooded eye shapes, fuller lips from South Asian influence, and facial proportions reflecting the intersection of East, South, and Southeast Asian genetics tempered by Middle Eastern width.",
     "height_cm": 178,
@@ -260,6 +255,7 @@
     "clothing_style": "Tier 4 utilitarian. Three interchangeable synthetic-blend jackets in muted colors (charcoal, dark green, navy) worn in rotation, all showing seams at the elbows and collar stains from years of Deepwell grime. Underneath: plain long-sleeved thermal shirts, worn but clean. Practical cargo pants with multiple pockets. Heavy boots resoled twice. A worn canvas belt with a reinforced data-chip case containing 60-80 organized chips. No jewelry except a functional analog wristwatch. Everything smells faintly of recycled air, old coffee, and industrial cleaner."
   },
   "image_prompt": "Zara Kim, 178cm heavyset figure with warm deep brown skin carrying golden and olive undertones, pan-Asian facial structure with fuller South Asian lips and angular East Asian cheekbones, monolid dark brown eyes beneath hooded lids, weathered face marked by decades under artificial light with permanent flush across cheeks, meticulous dark mustache contrasting neglected appearance, short military-cropped dark brown hair with gray at temples. Hunched posture at worn folding table in dimly-lit Deepwell Station sub-level, wearing charcoal synthetic-blend jacket over thermal shirt, cargo pants, heavy resoled boots, worn canvas belt with data-chip case, functional analog wristwatch. Tier 4 utilitarian aesthetic, grime-stained collar, deliberate stillness, observant alert gaze, surrounded by recycled air haze and industrial shadow. GLMZ, Great Lakes Metropolitan Zone infrastructure. Moody sub-level lighting casting long shadows. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "East Asian": 42.3,
     "South Asian": 23,
@@ -267,12 +263,6 @@
     "Middle Eastern": 12.5,
     "Sub-Saharan African": 8.5
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "East Asian": {
       "Korean": {
@@ -312,6 +302,5 @@
         "Guinean": 4.1
       }
     }
-  },
-  "tier": "3"
+  }
 }

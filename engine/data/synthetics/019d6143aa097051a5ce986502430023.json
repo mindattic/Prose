@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa097051a5ce986502430023",
+  "rating": 60,
   "name": "Latchkey",
   "type": "elf",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Monitors resident approach patterns via building sensors and initiates comfort preparations before arrival. The building anticipates you.",
   "encounter_frequency": "common",
   "confirmed_sightings": 32,
-  "location": "The Shelf — residential buildings",
+  "location": "the Gray Zone — residential buildings",
   "dti_rating": 0,
   "story_hooks": [
     "A new resident is startled to find their room warm and lit before they arrive — then learns the building has been doing this for years and nobody talks about it"
@@ -25,11 +26,8 @@
     "network sprite",
     "e.l.f.",
     "war",
-    "shelf",
     "sentient"
   ],
-  "related_entities": [
-    "Brecken Yılmaz-Osei",
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

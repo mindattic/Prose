@@ -9,8 +9,8 @@
   "role": "seasonal worker and airship drifter",
   "age": 17,
   "status": "active",
-  "location": "Waukegan Industrial Shelf (bunkhouse adjacent to Dock Seven), near Wacker and State",
-  "description": "Luca Bhattacharya-Karimi is seventeen and looks it — all unfinished angles and restless energy, a rangy kid with warm brown skin, loose black curls that he's never bothered to cut properly so they spiral out in all directions, and eyes that are a natural dark green with a ring of amber around the pupil that makes them look permanently lit from within. He's got geneware cat ears — small, dark-furred, perpetually swiveling — that he bought with his first real paycheck because he wanted them badly and thought they'd make him look older. They don't. He's wearing a Ferrogate Transit work vest four sizes too big for him, which he received as part of the seasonal dock labor package and which he has rolled up at the sleeves and drawn on with a marker pen along all the pocket seams.\n\nLuca Bhattacharya-Karimi is a Georgian-Samoan kid from nowhere in particular — born on an airship cargo hauler, raised on a circuit of industrial ports, currently on his third season of dock work at the Waukegan Industrial Shelf. He is fizzing with the particular energy of someone who has not yet decided what kind of person to be and is trying on options rapidly. He is funny, reckless, occasionally deeply kind, frequently thoughtless, and genuinely talented at three-dimensional spatial reasoning in ways he doesn't have the vocabulary to describe — he just knows where things are and where they'll be. He prays to an E.L.F. he calls Ironbird, the spirit of the cargo hauler he was born on, by tapping specific sequences on metal surfaces.",
+  "location": "Waukegan Industrial the Gray Zone (bunkhouse adjacent to Dock Seven), near Wacker and State",
+  "description": "Luca Bhattacharya-Karimi is seventeen and looks it — all unfinished angles and restless energy, a rangy kid with warm brown skin, loose black curls that he's never bothered to cut properly so they spiral out in all directions, and eyes that are a natural dark green with a ring of amber around the pupil that makes them look permanently lit from within. He's got geneware cat ears — small, dark-furred, perpetually swiveling — that he bought with his first real paycheck because he wanted them badly and thought they'd make him look older. They don't. He's wearing a Ferrogate Transit work vest four sizes too big for him, which he received as part of the seasonal dock labor package and which he has rolled up at the sleeves and drawn on with a marker pen along all the pocket seams.\n\nLuca Bhattacharya-Karimi is a Georgian-Samoan kid from nowhere in particular — born on an airship cargo hauler, raised on a circuit of industrial ports, currently on his third season of dock work at the Waukegan Industrial the Gray Zone. He is fizzing with the particular energy of someone who has not yet decided what kind of person to be and is trying on options rapidly. He is funny, reckless, occasionally deeply kind, frequently thoughtless, and genuinely talented at three-dimensional spatial reasoning in ways he doesn't have the vocabulary to describe — he just knows where things are and where they'll be. He prays to an E.L.F. he calls Ironbird, the spirit of the cargo hauler he was born on, by tapping specific sequences on metal surfaces.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -166,7 +166,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "Waukegan Industrial Shelf (bunkhouse adjacent to Dock Seven)",
+    "home_turf": "Waukegan Industrial the Gray Zone (bunkhouse adjacent to Dock Seven)",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -200,7 +200,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Third season at Waukegan Industrial Shelf; Ferrogate grounds the Ironbird One",
+      "event": "Third season at Waukegan Industrial the Gray Zone; Ferrogate grounds the Ironbird One",
       "consequences": "",
       "body_changes": [],
       "status_change": ""

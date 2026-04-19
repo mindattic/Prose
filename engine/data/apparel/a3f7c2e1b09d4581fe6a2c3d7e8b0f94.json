@@ -1,6 +1,6 @@
 {
   "id": "a3f7c2e1b09d4581fe6a2c3d7e8b0f94",
-  "name": "Patchline Shelf Thermal Inner Wrap",
+  "name": "Patchline the Gray Zone Thermal Inner Wrap",
   "type": "apparel",
   "category": "base_layer",
   "description": "Hand-cut from salvaged insulation batting and reclaimed synthetic fleece, this layered wrap is stitched in irregular panels of grey, rust-brown, and faded olive. Seams are doubled or tripled where original material was thin. Common patches include transit seat foam, medical blanket mylar, and shredded cargo netting sandwiched between outer layers.\n\nNo two are identical. Worn directly against skin, the inner surface is brushed smooth by repeated washing in gutter-filtered water. The smell of chemical damp never fully leaves.",
@@ -12,29 +12,28 @@
     "recycled cargo netting",
     "hand-spun polymer thread"
   ],
-  "functionality": "Provides basic thermal retention against Shelf cold and acid-rain damp. Mylar layers reflect body heat. No electronic function. Loose seam channels can accidentally accommodate small chrome arm cables if routed carefully.",
+  "functionality": "Provides basic thermal retention against the Gray Zone cold and acid-rain damp. Mylar layers reflect body heat. No electronic function. Loose seam channels can accidentally accommodate small chrome arm cables if routed carefully.",
   "what_it_says": "You make do with what the city throws away, and you're still alive.",
   "worn_by": [
-    "Shelf laborers",
+    "the Gray Zone laborers",
     "unhoused residents",
     "scrapyard workers",
     "tunnel runners",
-    "young Shelf kids whose parents can't afford better"
+    "young the Gray Zone kids whose parents can't afford better"
   ],
-  "manufacturer": "Self-made / Shelf community craft",
+  "manufacturer": "Self-made / the Gray Zone community craft",
   "price_range": "Φ2–Φ12 (barter common)",
   "aug_compatible": false,
   "gene_compatible": false,
   "story_hooks": [
-    "A specific patch pattern — three overlapping red transit squares — marks members of a Shelf mutual-aid network that smuggles meds past Tier 2 checkpoints.",
+    "A specific patch pattern — three overlapping red transit squares — marks members of a the Gray Zone mutual-aid network that smuggles meds past Tier 2 checkpoints.",
     "A character finds a wrap with a hidden sewn-in data chip tucked inside a mylar layer — someone's dead drop.",
-    "A Tier 4 'poverty tourism' fashion designer is selling machine-made replicas of Shelf wraps for Φ800 upspire, and someone on the Shelf just found out."
+    "A Tier 4 'poverty tourism' fashion designer is selling machine-made replicas of the Gray Zone wraps for Φ800 upspire, and someone in the Gray Zone just found out."
   ],
   "tags": [
     "apparel",
     "base_layer",
     "thermal",
-    "shelf",
     "handmade",
     "salvage",
     "tier-1",
@@ -44,7 +43,6 @@
   "related_entities": [
     "Sorin Ekwensi-Balasanyan",
     "The Gutter Prophets",
-    "The Shelf",
     "Tshiamo Vukić-Arellano"
   ],
   "physical_description": {
@@ -65,9 +63,9 @@
       "Persistent faint chemical smell (damp insulation, old foam, recycled materials)"
     ],
     "tier_indicator": "Tier 5 / sub-grade salvage wear. Marks the wearer as ungoverned or economically invisible—someone who sources their own survival gear from waste streams.",
-    "cultural_context": "Shelf community craft. Signals self-sufficiency, material scarcity, and life in the ungoverned zones. Worn by street survivors, salvage workers, and those outside corpo supply chains. The hand-made quality suggests both ingenuity and desperation—this is what you wear when corpo thermal wear is beyond reach.",
+    "cultural_context": "the Gray Zone community craft. Signals self-sufficiency, material scarcity, and life in the ungoverned zones. Worn by street survivors, salvage workers, and those outside corpo supply chains. The hand-made quality suggests both ingenuity and desperation—this is what you wear when corpo thermal wear is beyond reach.",
     "condition_typical": "Perpetually broken-in and weathered. Seams show strain; patches are visible and functional rather than aesthetic. The smell of chemical damp, old insulation, and gutter water never fully leaves. Wear patterns show highest abrasion at shoulders, elbows, and torso where it's layered under heavier gear."
   },
-  "image_prompt": "Close-up fashion shot of a Patchline Shelf Thermal Inner Wrap displayed on a muscular, weathered neo-noir mannequin or model, torso exposed. The wrap is layered with irregular grey, rust-brown, and olive-green panels, with visible double-stitched seams and embedded patches of mylar and cargo netting. Dark moody lighting from above, casting sharp shadows on the textile. Gritty urban backdrop—corroded metal wall, dim warehouse or ungoverned settlement interior. Shallow depth of field highlighting seam detail and material texture. Slight warm color grade suggesting age and chemical residue. Intimate, tactile framing emphasizing handmade quality. --ar 2:3 --v 6",
-  "visual_prompt": "Close-up fashion shot of a Patchline Shelf Thermal Inner Wrap displayed on a muscular, weathered neo-noir mannequin or model, torso exposed. The wrap is layered with irregular grey, rust-brown, and olive-green panels, with visible double-stitched seams and embedded patches of mylar and cargo netting. Dark moody lighting from above, casting sharp shadows on the textile. Gritty urban backdrop—corroded metal wall, dim warehouse or ungoverned settlement interior. Shallow depth of field highlighting seam detail and material texture. Slight warm color grade suggesting age and chemical residue. Intimate, tactile framing emphasizing handmade quality. --ar 2:3 --v 6"
+  "image_prompt": "Close-up fashion shot of a Patchline the Gray Zone Thermal Inner Wrap displayed on a muscular, weathered neo-noir mannequin or model, torso exposed. The wrap is layered with irregular grey, rust-brown, and olive-green panels, with visible double-stitched seams and embedded patches of mylar and cargo netting. Dark moody lighting from above, casting sharp shadows on the textile. Gritty urban backdrop—corroded metal wall, dim warehouse or ungoverned settlement interior. Shallow depth of field highlighting seam detail and material texture. Slight warm color grade suggesting age and chemical residue. Intimate, tactile framing emphasizing handmade quality. --ar 2:3 --v 6",
+  "visual_prompt": "Close-up fashion shot of a Patchline the Gray Zone Thermal Inner Wrap displayed on a muscular, weathered neo-noir mannequin or model, torso exposed. The wrap is layered with irregular grey, rust-brown, and olive-green panels, with visible double-stitched seams and embedded patches of mylar and cargo netting. Dark moody lighting from above, casting sharp shadows on the textile. Gritty urban backdrop—corroded metal wall, dim warehouse or ungoverned settlement interior. Shallow depth of field highlighting seam detail and material texture. Slight warm color grade suggesting age and chemical residue. Intimate, tactile framing emphasizing handmade quality. --ar 2:3 --v 6"
 }

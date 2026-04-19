@@ -3,7 +3,7 @@
   "name": "Ashveil Tunnel Runner's Compressed Rig",
   "type": "apparel",
   "category": "outfit",
-  "description": "Designed — if that word applies to something assembled from desperation and ingenuity — for moving fast through the Shelf's sub-infrastructure tunnels. The core piece is a long-sleeved base layer in matte charcoal, cut close to the body and treated with a rubberized coating along the forearms and shoulders for sliding through tight passages without tearing. Over it sits a sleeveless tactical vest, originally a Vantablack surplus piece with the branding sliced off and replaced with hand-stitched patches of various gray and black fabrics. Sixteen pockets of various sizes distribute weight evenly across the torso — some sealed with original magnetic closures still functioning, others sewn shut with fishing line, others left open for fast access. Trousers are skintight reinforced leggings in dark charcoal with articulated knee panels cut from a yoga mat and stitched in — ugly but effective padding. Over the thighs, a pair of salvaged thigh pockets are strapped directly to the legs with nylon webbing. The shoes are flat-soled, thin, and hand-repaired: originally a Patchwork Runner Low, now barely recognizable under layers of rubber adhesive patches and re-lacing with paracord. The face is partially covered by a wrap of dark gray filter cloth — not a proper respirator, but better than breathing raw tunnel air. A salvaged chrome forearm plate from a junked augmentation rig is strapped to the left forearm as a makeshift shield and tool surface, its exposed circuit traces long dead but the alloy still hard.",
+  "description": "Designed — if that word applies to something assembled from desperation and ingenuity — for moving fast through the Gray Zone's sub-infrastructure tunnels. The core piece is a long-sleeved base layer in matte charcoal, cut close to the body and treated with a rubberized coating along the forearms and shoulders for sliding through tight passages without tearing. Over it sits a sleeveless tactical vest, originally a Vantablack surplus piece with the branding sliced off and replaced with hand-stitched patches of various gray and black fabrics. Sixteen pockets of various sizes distribute weight evenly across the torso — some sealed with original magnetic closures still functioning, others sewn shut with fishing line, others left open for fast access. Trousers are skintight reinforced leggings in dark charcoal with articulated knee panels cut from a yoga mat and stitched in — ugly but effective padding. Over the thighs, a pair of salvaged thigh pockets are strapped directly to the legs with nylon webbing. The shoes are flat-soled, thin, and hand-repaired: originally a Patchwork Runner Low, now barely recognizable under layers of rubber adhesive patches and re-lacing with paracord. The face is partially covered by a wrap of dark gray filter cloth — not a proper respirator, but better than breathing raw tunnel air. A salvaged chrome forearm plate from a junked augmentation rig is strapped to the left forearm as a makeshift shield and tool surface, its exposed circuit traces long dead but the alloy still hard.",
   "tier_association": "Tier 1",
   "materials": [
     "rubberized charcoal base layer fabric",
@@ -23,7 +23,7 @@
   "worn_by": [
     "tunnel runners",
     "infrastructure scavengers",
-    "Shelf-side couriers",
+    "the Gray Zone-side couriers",
     "smugglers working sub-grid routes",
     "people who need to disappear fast"
   ],
@@ -32,7 +32,7 @@
   "aug_compatible": true,
   "gene_compatible": false,
   "story_hooks": [
-    "The salvaged chrome forearm plate, when examined by someone with technical knowledge, turns out to be from a military-grade augmentation rig — the kind that isn't supposed to exist below Tier 4. How did it end up strapped to a Shelf runner's arm with nylon webbing?",
+    "The salvaged chrome forearm plate, when examined by someone with technical knowledge, turns out to be from a military-grade augmentation rig — the kind that isn't supposed to exist below Tier 4. How did it end up strapped to a the Gray Zone runner's arm with nylon webbing?",
     "A Vantablack Internal Security analyst spots the silhouette of their company's vest construction under all the modifications — even with the branding cut off, the pocket arrangement is a proprietary pattern, and the wearer is now a person of interest in an equipment theft investigation.",
     "In a collapsed tunnel section, the filter cloth wrap and rubberized forearms are the only things keeping the wearer alive while they wait for rescue — or decide not to wait."
   ],
@@ -62,7 +62,6 @@
     "Patchwork Runner Low",
     "Sorin Ekwensi-Balasanyan",
     "SynapTech AromaVeil Olfactory Filter",
-    "The Shelf",
     "Veslemøy Achebe-Tursynov"
   ],
   "physical_description": {
@@ -83,7 +82,7 @@
       "Thigh-mounted strapped pockets independent of main garment"
     ],
     "tier_indicator": "Tier 5 salvage/sub-grade. Every piece is either salvaged, repurposed, or hand-repaired. Nothing is new. The craftsmanship is genuine but born from necessity, not luxury.",
-    "cultural_context": "Tunnel runner, infrastructure scavenger, Shelf dweller. Someone who moves through the ungoverned spaces beneath the city—maintenance tunnels, abandoned sub-infrastructure, the spaces between corporate authority. Wearing this signals competence in the dark and acceptance of Tier 5 existence. No corporate affiliation. Self-sufficient.",
+    "cultural_context": "Tunnel runner, infrastructure scavenger, the Gray Zone dweller. Someone who moves through the ungoverned spaces beneath the city—maintenance tunnels, abandoned sub-infrastructure, the spaces between corporate authority. Wearing this signals competence in the dark and acceptance of Tier 5 existence. No corporate affiliation. Self-sufficient.",
     "condition_typical": "Worn-in and actively used. Not pristine, but not falling apart—maintained through constant field repair. Visible creasing at joints, scuff marks on the chrome plate, discoloration on the filter cloth from filtered tunnel air. Everything shows honest wear."
   },
   "image_prompt": "A lean figure in matte charcoal compression gear stands in profile against a rain-slicked industrial tunnel backdrop, lit by cold blue-green overhead grating light. The asymmetrical dead chrome forearm plate catches a sharp highlight. Sixteen pockets are visible across the torso, each slightly different—some with magnetic snaps, others roughly stitched. Dark filter cloth wraps the lower face. Articulated knee pads catch reflected light. Paracord-laced shoes are positioned as if mid-stride on wet concrete. The overall mood is functional dread: this is not fashion, this is survival equipment worn by someone who has descended into the infrastructure and learned to move through it. Film noir neo-noir realism. High contrast. Moody. --ar 2:3 --v 6",

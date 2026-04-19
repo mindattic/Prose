@@ -1,6 +1,7 @@
 {
   "id": "019d6143aa267692b540e41c7a692420",
-  "name": "Séance",
+  "rating": 70,
+  "name": "S\u00E9ance",
   "type": "elf",
   "aliases": [],
   "classification": "E.L.F. (Electronic Life Form)",
@@ -8,14 +9,14 @@
   "habitat": "chrome_dweller",
   "origin": "fragmentation_debris",
   "status": "active",
-  "description": "Born from a destroyed communications relay AI. Connects users to data streams from other augments — other people's sensory feeds, briefly and without consent. Like overhearing someone else's eyes.",
-  "observed_behavior": "Bridges neural interface feeds between nearby augmented individuals for 1-3 seconds. The user experiences a flash of someone else's vision, hearing, or proprioception.",
+  "description": "Born from a destroyed communications relay AI. Connects users to data streams from other augments \u2014 other people\u0027s sensory feeds, briefly and without consent. Like overhearing someone else\u0027s eyes.",
+  "observed_behavior": "Bridges neural interface feeds between nearby augmented individuals for 1-3 seconds. The user experiences a flash of someone else\u0027s vision, hearing, or proprioception.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 7,
   "location": "Dense residential areas",
   "dti_rating": 0,
   "story_hooks": [
-    "A freelancer sees through a guard's eyes for two seconds and learns the patrol pattern — did Séance help them, or is it just noise?"
+    "A freelancer sees through a guard\u0027s eyes for two seconds and learns the patrol pattern \u2014 did S\u00E9ance help them, or is it just noise?"
   ],
   "paratechnological": true,
   "tags": [
@@ -28,5 +29,7 @@
     "neural",
     "ai",
     "sentient"
-  ]
+  ],
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

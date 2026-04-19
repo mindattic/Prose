@@ -6,11 +6,11 @@
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
-  "role": "Urban sociologist specializing in Shelf communities and informal governance, independent researcher",
+  "role": "Urban sociologist specializing in the Gray Zone communities and informal governance, independent researcher",
   "age": 36,
   "status": "active",
   "location": "Chatham Flats — lives and works embedded in the community they study, near Ashland and Division",
-  "description": "Samira Sabbagh-Hoang is compact and restless, with warm brown skin, a nose ring that cycles through three colors with their mood (a cheap cosmetic mod they've had since graduate school), and natural hair grown into a large, somewhat chaotic halo they cut themselves with kitchen scissors. They dress exclusively in layers that can be added or removed depending on which district they're moving through — they've gotten very good at reading the visual codes of neighborhoods and adjusting accordingly. Their eyes are unmodified, which in the Shelf reads as either poverty or principle; in Iphigenia's case it is both, worn with quiet stubbornness.\n\nThey have the particular energy of someone who is genuinely fascinated by people — not as subjects but as people — and communities on the Shelf can sense the difference. They've been invited to births, funerals, water-distribution arguments, and at least two ELF-shrine consecrations in districts researchers never get into. They also have a temper they've mostly learned to manage, a sharp tongue when bureaucratic abstraction is used to justify human harm, and a habit of forgetting to eat when they are deep in field notes. They are fiercely protective of the communities they work with and will refuse to share data that could harm them, which has cost them two university positions and one very lucrative Axiom contract.",
+  "description": "Samira Sabbagh-Hoang is compact and restless, with warm brown skin, a nose ring that cycles through three colors with their mood (a cheap cosmetic mod they've had since graduate school), and natural hair grown into a large, somewhat chaotic halo they cut themselves with kitchen scissors. They dress exclusively in layers that can be added or removed depending on which district they're moving through — they've gotten very good at reading the visual codes of neighborhoods and adjusting accordingly. Their eyes are unmodified, which in the Gray Zone reads as either poverty or principle; in Iphigenia's case it is both, worn with quiet stubbornness.\n\nThey have the particular energy of someone who is genuinely fascinated by people — not as subjects but as people — and communities in the Gray Zone can sense the difference. They've been invited to births, funerals, water-distribution arguments, and at least two ELF-shrine consecrations in districts researchers never get into. They also have a temper they've mostly learned to manage, a sharp tongue when bureaucratic abstraction is used to justify human harm, and a habit of forgetting to eat when they are deep in field notes. They are fiercely protective of the communities they work with and will refuse to share data that could harm them, which has cost them two university positions and one very lucrative Axiom contract.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -37,10 +37,10 @@
       "Their rejection of institutional affiliation has left them without structural protection when powerful interests push back",
       "Occasionally romanticizes survival and resilience in ways that obscure how exhausting those things are to actually live"
     ],
-    "secret": "They have a completed manuscript — three years of Shelf fieldwork — that they have not submitted for publication because one chapter contains information that could expose a particular community's informal water-reclamation network to Ferrogate Transit's legal team. They don't know how to excise the chapter without destroying the book's argument, and they don't know how to publish it without potentially destroying the network."
+    "secret": "They have a completed manuscript — three years of the Gray Zone fieldwork — that they have not submitted for publication because one chapter contains information that could expose a particular community's informal water-reclamation network to Ferrogate Transit's legal team. They don't know how to excise the chapter without destroying the book's argument, and they don't know how to publish it without potentially destroying the network."
   },
   "speech_patterns": {
-    "vocabulary": "Fluid and code-switching — fluent in several Shelf-district registers, academic vocabulary deployed sparingly and sometimes ironically; occasional Pulaar phrases from their grandmother's side",
+    "vocabulary": "Fluid and code-switching — fluent in several the Gray Zone-district registers, academic vocabulary deployed sparingly and sometimes ironically; occasional Pulaar phrases from their grandmother's side",
     "cadence": "Fast when excited, very slow and deliberate when they want someone to actually hear a specific thing",
     "verbal_tics": [
       "'Okay but wait—' (interrupts themselves as often as others)",
@@ -48,7 +48,7 @@
       "Repeating the last word of someone else's sentence as a question"
     ],
     "example_lines": [
-      "'You want to understand the Shelf? Stop studying it. Go buy a meal from the woman at the corner of Chatham and Fourth and let her talk to you. That's your methodology.'",
+      "'You want to understand the Gray Zone? Stop studying it. Go buy a meal from the woman at the corner of Chatham and Fourth and let her talk to you. That's your methodology.'",
       "'I know what the data says. I'm telling you what the data is hiding, and that's the part that matters.'"
     ]
   },
@@ -58,8 +58,8 @@
     "Ferrogate Transit has sent a representative to their grant foundation with specific questions about their research scope, and they need help determining if this is routine or targeted",
     "A community leader they've known for years approaches them asking to document something — and what they're being shown shouldn't exist according to any official record of the district"
   ],
-  "narrative_function": "Expert guide to Shelf culture, informal economy, and community politics; can open doors in low-tier districts that other academics cannot; quest giver for ethnographic retrieval missions; moral conscience character who challenges players' assumptions about poverty and agency.",
-  "augmentations": "Color-cycling nose ring (cosmetic geneware implant, low-end); nothing else — partly financial, partly they consider it meaningful to move through Shelf spaces without visible chrome.",
+  "narrative_function": "Expert guide to the Gray Zone culture, informal economy, and community politics; can open doors in low-tier districts that other academics cannot; quest giver for ethnographic retrieval missions; moral conscience character who challenges players' assumptions about poverty and agency.",
+  "augmentations": "Color-cycling nose ring (cosmetic geneware implant, low-end); nothing else — partly financial, partly they consider it meaningful to move through the Gray Zone spaces without visible chrome.",
   "daily_life": "Spends mornings walking specific routes through Chatham Flats and adjacent districts, taking informal notes; afternoons conducting interviews or attending community meetings; evenings writing, arguing with their data, and eating whatever is cheapest at the corner stalls.",
   "affiliation": "Unaffiliated — formerly University Spine Dept. of Social Systems, currently self-funded through a Palladian Research Foundation small grant and per-article journalism fees",
   "uses_facets": false,
@@ -178,19 +178,18 @@
     "Ferrogate Transit",
     "Chatham Flats",
     "FOUNDATION",
-    "The Shelf",
     "The Gradient Compact",
     "Nesting Doll",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Slagworks Industrial",
     "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Hispanic/Latin American (41.3%), Middle Eastern (35.2%), and Southeast Asian (23.5%) ancestry; the Ubiquitous Diaspora manifest in a striking blend of warm, complex features that defy singular regional categorization",
     "height_cm": 158,
     "weight_kg": 52,
-    "build": "Compact and wiry, muscular in a lean way from constant walking through the Shelf; restless energy evident in how they hold themselves",
+    "build": "Compact and wiry, muscular in a lean way from constant walking through the Gray Zone; restless energy evident in how they hold themselves",
     "hair_color": "Natural dark brown with scattered gray at temples",
     "hair_style": "Self-cut into a large, textured halo; uneven layers suggest kitchen scissors and no particular vanity about symmetry",
     "hair_length": "Long (shoulder-length and beyond)",
@@ -202,11 +201,11 @@
       "Old burn scar on the inside of left forearm, thin and pale, approximately 4cm long — story unknown but handled without self-consciousness",
       "Calluses on right hand fingers from constant handwriting and note-taking"
     ],
-    "visible_augmentations": "Only the cosmetic nose ring implant; deliberately minimal chrome presence. The lack of visible augmentation reads as either principled poverty or quiet defiance in Shelf spaces, which they leverage intentionally.",
+    "visible_augmentations": "Only the cosmetic nose ring implant; deliberately minimal chrome presence. The lack of visible augmentation reads as either principled poverty or quiet defiance in the Gray Zone spaces, which they leverage intentionally.",
     "posture_movement": "Moves with purposeful efficiency; walks slightly forward-leaning as if always mid-thought; hands gesture when talking, often holding imaginary notes. Sits cross-legged in interviews regardless of formality. Fidgets with fabric edges when listening intently.",
     "clothing_style": "Strictly layered approach: base layer is always worn, functional undershirt (neutral colors); middle layers are oversized cardigans or vests that can be removed; outer layer adapts to district code-reading (Tier 3 corporate casual in certain blocks, Tier 5 survival wear in others). All clothing is thrift-sourced, well-maintained but visibly secondhand. Shoes are good walking boots, scuffed. No jewelry except the nose ring. Small pack always carried containing notebooks, recorder, water bottle, emergency ration bar."
   },
-  "image_prompt": "Samira Sabbagh-Hoang, 158cm compact wiry frame, sits cross-legged in GLMZ Great Lakes Metropolitan Zone environment. Warm golden-amber brown skin with olive undertones, angular cheekbones and defined jawline. Shoulder-length dark brown hair with gray at temples, textured self-cut halo style. Natural warm brown unaugmented eyes, alert and intense expression. Subtle iridescent amber mood-ring nostril implant glowing in septum. Old pale burn scar visible on left forearm. Dark circles under eyes from fieldwork exhaustion. Wearing layered thrifted clothing: neutral base layer, oversized cardigan, functional outer layer. Scuffed walking boots. Small worn pack at side containing notebooks and recorder. Hands gesture expressively while speaking. Deliberately minimal augmentation aesthetic reading as quiet defiance. Foreground-leaning posture. Low-key industrial Shelf district setting, neon-tinged ambient lighting catching warm glow across cheekbones and temples. Neo-noir urban decay background. Mood: focused, restless, observant. --ar 2:3 --v 6",
+  "image_prompt": "Samira Sabbagh-Hoang, 158cm compact wiry frame, sits cross-legged in GLMZ Great Lakes Metropolitan Zone environment. Warm golden-amber brown skin with olive undertones, angular cheekbones and defined jawline. Shoulder-length dark brown hair with gray at temples, textured self-cut halo style. Natural warm brown unaugmented eyes, alert and intense expression. Subtle iridescent amber mood-ring nostril implant glowing in septum. Old pale burn scar visible on left forearm. Dark circles under eyes from fieldwork exhaustion. Wearing layered thrifted clothing: neutral base layer, oversized cardigan, functional outer layer. Scuffed walking boots. Small worn pack at side containing notebooks and recorder. Hands gesture expressively while speaking. Deliberately minimal augmentation aesthetic reading as quiet defiance. Foreground-leaning posture. Low-key industrial the Gray Zone district setting, neon-tinged ambient lighting catching warm glow across cheekbones and temples. Neo-noir urban decay background. Mood: focused, restless, observant. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 41.3,
     "Middle Eastern": 35.2,

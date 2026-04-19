@@ -1,4 +1,4 @@
-@page "/pharmaceuticals"
+﻿@page "/pharmaceuticals"
 @using StreetSamurai.Core.Models.Canon
 @inject PharmaceuticalRepository Repo
 @inject NavigationManager Nav
@@ -23,7 +23,7 @@
     <div class="dict-editor">
         @if (editing != null)
         {
-            <EditViewToggle RepoName="pharmaceuticals" Title="@(isNew ? "New Pharmaceutical" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)">
+            <EditViewToggle RepoName="pharmaceuticals" Title="@(isNew ? "New Pharmaceutical" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)" Rating="@(editing?.Rating ?? 0)" RatingChanged="OnRatingChanged">
                 <HeaderButtons>
                     <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i><div class="btn-lbl"> Save</div></button>
                     @if (!isNew && !confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => confirmDelete = true"><i class="bi bi-archive"></i></button> }
@@ -48,6 +48,16 @@
                     </div>
                     <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="3" @bind="editing.Description"></textarea></div>
                     <div class="mb-3"><div class="field-label">Cultural Context</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="2" @bind="editing.CulturalContext"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Aliases (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editAliases"></textarea></div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">Effects (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editEffects"></textarea></div>
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">Side Effects (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editSideEffects"></textarea></div>
+                    </div>
+                    <div class="mb-3"><div class="field-label">Story Hooks (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editStoryHooks"></textarea></div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">Image Prompt</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.MidjourneyPrompt"></textarea></div>
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">DALL-E 3 Prompt</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Dalle3Prompt"></textarea></div>
+                    </div>
                 </ChildContent>
             </EditViewToggle>
         }
@@ -65,6 +75,7 @@
     private List<(string name, int count)> allTags = [];
     private HashSet<string> selectedTags = [];
     private bool isNew, confirmDelete;
+    private string editAliases = "", editEffects = "", editSideEffects = "", editStoryHooks = "";
     private List<PharmaceuticalData> FilteredItems
     {
         get
@@ -79,9 +90,9 @@
     }
     private List<PharmaceuticalData> SortedItems => FilteredItems.OrderBy(x => x.Name).ToList();
     protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); RebuildTags(); if (Nav.Uri.Contains("new=true")) AddNew(); else { var qid = Nav.Uri.Contains("id=") ? Uri.UnescapeDataString(Nav.Uri.Split(new[]{"id="}, StringSplitOptions.None).Last().Split(new[]{"&"}, StringSplitOptions.None)[0]) : ""; if (!string.IsNullOrEmpty(qid)) { var t = items.FirstOrDefault(e => e.Id == qid); if (t != null) Edit(t); } if (editing == null) { var first = items.FirstOrDefault(); if (first != null) Edit(first); } } }
-    private void AddNew() { editing = new PharmaceuticalData(); isNew = true; confirmDelete = false; }
-    private void Edit(PharmaceuticalData p) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_pharmaceuticals", p.Id); editing = p; originalName = p.Name; isNew = false; confirmDelete = false; if (!Nav.Uri.Contains("id=" + p.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + p.Id, forceLoad: false); }
-    private void SaveEdit() { if (editing == null || string.IsNullOrWhiteSpace(editing.Name)) return; if (!isNew && originalName != editing.Name) Repo.Delete(originalName); Repo.Save(editing); editing = null; items = Repo.GetAll(); }
+    private void AddNew() { editing = new PharmaceuticalData(); isNew = true; confirmDelete = false; editAliases = ""; editEffects = ""; editSideEffects = ""; editStoryHooks = ""; }
+    private void Edit(PharmaceuticalData p) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_pharmaceuticals", p.Id); editing = p; originalName = p.Name; isNew = false; confirmDelete = false; editAliases = string.Join("\n", p.Aliases); editEffects = string.Join("\n", p.Effects); editSideEffects = string.Join("\n", p.SideEffects); editStoryHooks = string.Join("\n", p.StoryHooks); if (!Nav.Uri.Contains("id=" + p.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + p.Id, forceLoad: false); }
+    private void SaveEdit() { if (editing == null || string.IsNullOrWhiteSpace(editing.Name)) return; editing.Aliases = editAliases.Split('\n', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList(); editing.Effects = editEffects.Split('\n', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList(); editing.SideEffects = editSideEffects.Split('\n', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList(); editing.StoryHooks = editStoryHooks.Split('\n', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList(); if (!isNew && originalName != editing.Name) Repo.Delete(originalName); Repo.Save(editing); editing = null; items = Repo.GetAll(); }
     private void DoDelete() { if (editing != null) { Repo.Delete(editing.Name); editing = null; items = Repo.GetAll(); confirmDelete = false; } }
     private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
     private void RebuildTags() { allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
@@ -101,4 +112,5 @@
         }
     }
 
+    private void OnRatingChanged(double value) { if (editing == null) return; editing.Rating = value; Repo.Save(editing); }
 }

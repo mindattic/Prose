@@ -3,7 +3,7 @@
   "name": "Greywalk Flatboot",
   "type": "apparel",
   "category": "footwear",
-  "description": "A flat-soled ankle boot in grey synth-leather so cheap it creases white at every flex point. The seams are factory-done but barely — threads already pulling at the toe box on a new pair. Popular because they're one of the cheapest new-manufactured boots available, sold in bulk at Shelf market stalls. Most people buy two pairs at once knowing one will fail within months.",
+  "description": "A flat-soled ankle boot in grey synth-leather so cheap it creases white at every flex point. The seams are factory-done but barely — threads already pulling at the toe box on a new pair. Popular because they're one of the cheapest new-manufactured boots available, sold in bulk at the Gray Zone market stalls. Most people buy two pairs at once knowing one will fail within months.",
   "tier_association": "Tier 1",
   "materials": [
     "budget synth-leather",
@@ -13,7 +13,7 @@
   "functionality": "none",
   "what_it_says": "You're not pretending. These are what you could afford, and you're not making excuses.",
   "worn_by": [
-    "Shelf workers",
+    "the Gray Zone workers",
     "people just arriving in the city",
     "those between better options"
   ],
@@ -31,8 +31,7 @@
     "tier 1",
     "ankle boot",
     "budget",
-    "synth-leather",
-    "shelf"
+    "synth-leather"
   ],
   "parent_corponation": "",
   "related_entities": [

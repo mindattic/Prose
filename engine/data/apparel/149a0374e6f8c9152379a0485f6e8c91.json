@@ -3,7 +3,7 @@
   "name": "Myriad Collective Patchwork Varsity",
   "type": "apparel",
   "category": "jacket",
-  "description": "The Myriad Collective is a rotating group of textile artists and garment makers based in the Shelf's creative district — what passes for one. Their varsity jacket is a deliberate act of aesthetic reclamation: the classic American silhouette done in fabrics sourced from across the diaspora. One sleeve might be Kente-adjacent hand-woven cotton. The body might be a deep teal boiled wool. The leather trim on the collar and cuffs is salvage-tanned and irregular. No two are identical.\n\nThey cost almost nothing to produce and are sold at Shelf-market prices, traded, gifted, and occasionally commissioned by Tier 3 and 4 buyers who discovered them through underground fashion channels and are willing to pay significantly more than the asking price. The Collective refuses to scale. Each jacket takes about forty hours of hand labor. Wearing one is a statement about where beauty comes from and who gets to make it.",
+  "description": "The Myriad Collective is a rotating group of textile artists and garment makers based in the Gray Zone's creative district — what passes for one. Their varsity jacket is a deliberate act of aesthetic reclamation: the classic American silhouette done in fabrics sourced from across the diaspora. One sleeve might be Kente-adjacent hand-woven cotton. The body might be a deep teal boiled wool. The leather trim on the collar and cuffs is salvage-tanned and irregular. No two are identical.\n\nThey cost almost nothing to produce and are sold at the Gray Zone-market prices, traded, gifted, and occasionally commissioned by Tier 3 and 4 buyers who discovered them through underground fashion channels and are willing to pay significantly more than the asking price. The Collective refuses to scale. Each jacket takes about forty hours of hand labor. Wearing one is a statement about where beauty comes from and who gets to make it.",
   "tier_association": "Tier 1",
   "materials": [
     "mixed diaspora heritage textiles",
@@ -14,7 +14,7 @@
   "functionality": "",
   "what_it_says": "You have a relationship with beauty that doesn't require money to access — or you paid too much to acquire that relationship secondhand.",
   "worn_by": [
-    "Shelf artists",
+    "the Gray Zone artists",
     "cultural community members",
     "underground fashion followers",
     "Tier 3-4 collectors willing to pay up"
@@ -25,7 +25,7 @@
   "gene_compatible": true,
   "story_hooks": [
     "A Tier 5 fashion house has begun producing near-identical jackets at scale without credit or compensation — the Collective is deciding how to respond.",
-    "One jacket in circulation contains a hidden pocket with a handwritten note that functions as a key to a Shelf-network dead drop.",
+    "One jacket in circulation contains a hidden pocket with a handwritten note that functions as a key to a the Gray Zone-network dead drop.",
     "A Myriad Collective jacket was worn at a highly publicized protest; the corponation security footage is being used to identify and track down the wearer."
   ],
   "tags": [
@@ -46,8 +46,7 @@
     "Sterling-Nakamura Heritage Roadster",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Collective",
-    "The Reclamation Assembly",
-    "The Shelf"
+    "The Reclamation Assembly"
   ],
   "physical_description": {
     "visual_profile": "A deconstructed varsity jacket with a bold, handcrafted aesthetic. Classic American silhouette—structured shoulders, ribbed cuffs and hem—but intentionally mismatched in pattern and material. Reads as deliberately artisanal, almost quilt-like in its patchwork composition. The overall effect is both refined and raw, suggesting wealth derived from cultural appreciation rather than corpo hierarchy.",
@@ -69,6 +68,6 @@
     "cultural_context": "Signals creative identity, diaspora-aware aesthetics, and rejection of mass production. Worn by street artists, underground fashion circles, freelance designers, and corpo middle-management seeking authenticity cache. Suggests the wearer values human labor, cultural exchange, and aesthetic non-conformity over brand prestige.",
     "condition_typical": "Arrives broken-in and intentionally worn-looking. Leather softly creased, wool slightly pilled in places, buttons showing signs of previous life. No 'new' condition—the jacket is meant to feel immediately lived-in and personal. Additional wear accumulates naturally over time."
   },
-  "image_prompt": "Close-up fashion photograph of a Myriad Collective Patchwork Varsity jacket displayed on a dark-skinned model or sculptural mannequin, three-quarter view. The jacket drapes with relaxed confidence; one sleeve shows intricate hand-woven Kente-adjacent patterns in warm ochres and deep reds, the other in rich jewel-tone boiled wool. Salvaged leather collar and cuffs catch moody, diffused lighting in a Shelf-district loft studio. Vintage mismatched buttons gleam subtly. The background is industrial urban—exposed concrete, soft neon glow from a distant storefront. Shallow depth of field emphasizes fabric texture and hand-stitching detail. Cinematic, intimate, authentic. --ar 2:3 --v 6",
-  "visual_prompt": "Close-up fashion photograph of a Myriad Collective Patchwork Varsity jacket displayed on a dark-skinned model or sculptural mannequin, three-quarter view. The jacket drapes with relaxed confidence; one sleeve shows intricate hand-woven Kente-adjacent patterns in warm ochres and deep reds, the other in rich jewel-tone boiled wool. Salvaged leather collar and cuffs catch moody, diffused lighting in a Shelf-district loft studio. Vintage mismatched buttons gleam subtly. The background is industrial urban—exposed concrete, soft neon glow from a distant storefront. Shallow depth of field emphasizes fabric texture and hand-stitching detail. Cinematic, intimate, authentic. --ar 2:3 --v 6"
+  "image_prompt": "Close-up fashion photograph of a Myriad Collective Patchwork Varsity jacket displayed on a dark-skinned model or sculptural mannequin, three-quarter view. The jacket drapes with relaxed confidence; one sleeve shows intricate hand-woven Kente-adjacent patterns in warm ochres and deep reds, the other in rich jewel-tone boiled wool. Salvaged leather collar and cuffs catch moody, diffused lighting in a the Gray Zone-district loft studio. Vintage mismatched buttons gleam subtly. The background is industrial urban—exposed concrete, soft neon glow from a distant storefront. Shallow depth of field emphasizes fabric texture and hand-stitching detail. Cinematic, intimate, authentic. --ar 2:3 --v 6",
+  "visual_prompt": "Close-up fashion photograph of a Myriad Collective Patchwork Varsity jacket displayed on a dark-skinned model or sculptural mannequin, three-quarter view. The jacket drapes with relaxed confidence; one sleeve shows intricate hand-woven Kente-adjacent patterns in warm ochres and deep reds, the other in rich jewel-tone boiled wool. Salvaged leather collar and cuffs catch moody, diffused lighting in a the Gray Zone-district loft studio. Vintage mismatched buttons gleam subtly. The background is industrial urban—exposed concrete, soft neon glow from a distant storefront. Shallow depth of field emphasizes fabric texture and hand-stitching detail. Cinematic, intimate, authentic. --ar 2:3 --v 6"
 }

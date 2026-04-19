@@ -9,8 +9,8 @@
   "role": "Junk merchant and scrap reseller",
   "age": 64,
   "status": "active",
-  "location": "The Shelf, Geartown, near Halsted and Division",
-  "description": "Sable Fredriksen is a big man gone soft at the edges, with the kind of weathered dark-brown face that has accumulated sixty-four years of Geartown grime into its creases. His Burkinabé father's cheekbones sit high and prominent beneath small, watchful eyes, and the Swedish side of the family gave him an improbable red-grey beard that he refuses to trim, which is now impressively large. His left arm from the elbow down is a heavy-duty industrial prosthetic in bare gunmetal — he has never decorated it, never chromed it, and finds the idea faintly obscene. He moves slowly, deliberately, like a man who has learned that things don't need to be rushed when you know what you have.\n\nSable Fredriksen's stall on The Shelf is less a stall than an archaeology site — forty years of accumulated junk organized according to a system that exists only in his head, which he navigates with the certainty of a man walking through his own house in the dark. He is terse with strangers, generous to a fault with regulars, and holds strong opinions about the difference between junk worth keeping and junk that has given up. He prays loudly to the ELF he believes inhabits a broken micro-fabricator at the back of his stall, which he calls 'the Sleeper,' and leaves it oiling rags as offerings.",
+  "location": "the Gray Zone, Geartown, near Halsted and Division",
+  "description": "Sable Fredriksen is a big man gone soft at the edges, with the kind of weathered dark-brown face that has accumulated sixty-four years of Geartown grime into its creases. His Burkinabé father's cheekbones sit high and prominent beneath small, watchful eyes, and the Swedish side of the family gave him an improbable red-grey beard that he refuses to trim, which is now impressively large. His left arm from the elbow down is a heavy-duty industrial prosthetic in bare gunmetal — he has never decorated it, never chromed it, and finds the idea faintly obscene. He moves slowly, deliberately, like a man who has learned that things don't need to be rushed when you know what you have.\n\nSable Fredriksen's stall on the Gray Zone is less a stall than an archaeology site — forty years of accumulated junk organized according to a system that exists only in his head, which he navigates with the certainty of a man walking through his own house in the dark. He is terse with strangers, generous to a fault with regulars, and holds strong opinions about the difference between junk worth keeping and junk that has given up. He prays loudly to the ELF he believes inhabits a broken micro-fabricator at the back of his stall, which he calls 'the Sleeper,' and leaves it oiling rags as offerings.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -55,12 +55,12 @@
   "relationships": [],
   "story_hooks": [
     "The Zheng-Dao schematic has been quietly searched for — someone knows a copy left a specific facility, and the search has reached Geartown. Goran hasn't connected the dots yet, but someone looking closely will.",
-    "The Sleeper has been emitting a low-frequency signal that three other vendors on The Shelf have independently noticed. Goran believes it's a message. He might be right."
+    "The Sleeper has been emitting a low-frequency signal that three other vendors on the Gray Zone have independently noticed. Goran believes it's a message. He might be right."
   ],
   "narrative_function": "Equipment and parts source, local historian of Geartown, ELF lore through his relationship with the Sleeper. A character who has seen enough that he remembers things others have forgotten — corporate actions, neighborhood changes, people who disappeared.",
   "augmentations": "Left forearm industrial prosthetic (functional, undecorated). Subretinal low-light enhancer — 'for reading part numbers in the dark, nothing fancy.'",
   "daily_life": "Opens at dawn, when the salvage haulers come through with fresh loads. Spends mornings sorting and appraising, afternoons selling and trading, evenings doing minor repair work on salvageable items. Eats at the stall. Goes home to Geartown at dusk, walking the same route he has walked for forty years.",
-  "affiliation": "Independent; long-standing member of The Shelf informal vendor collective; deep roots in the Geartown community",
+  "affiliation": "Independent; long-standing member of the Gray Zone informal vendor collective; deep roots in the Geartown community",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -178,7 +178,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -204,7 +204,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Opened the stall on The Shelf",
+      "event": "Opened the stall on the Gray Zone",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -235,14 +235,13 @@
     "Vespid Dynamics Paralytic Aerosol Grenade PAG-2 'Sleepy Time'",
     "The Iron Lotus",
     "Zheng-dao Bioelectric",
-    "The Shelf",
     "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
     "Frequency",
     "Geartown",
     "Noir Dining",
     "Street Custom 'Mercy' Veterinary Tranquilizer Gun"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Northern European (37.3%), Hispanic/Latin American (33.1%), Southeast Asian (18.4%), and South Asian (11.2%) ancestry; creates a warm golden-brown skin tone with subtle olive undertones from the balanced, complex ancestral blend. The mix produces moderate facial structure with defined cheekbones and jawline characteristic of diverse genetic heritage.",
     "height_cm": 188,

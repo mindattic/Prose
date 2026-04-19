@@ -7,7 +7,7 @@
   "aliases": [],
   "category": "arm",
   "body_location": "arm",
-  "description": "The Raptorclaw Mk4 is a full-arm combat replacement built on a titanium-carbide endoskeleton with integrated forearm blade housing capable of deploying a 28cm monofilament-edged ceramic blade in under 0.2 seconds. Recoil-dampening hydraulic buffers run the length of the humerus analog, allowing the arm to absorb and redirect kinetic force from heavy firearms without destabilizing the shooter. Striking surfaces on the knuckle plating are reinforced with tungsten composite capable of punching through light vehicle panels.\n\nPrimarily issued to GLMC special operations and licensed to Tier 3-4 private security contractors operating in the Shelf's contested industrial zones. On the street, decommissioned units show up stripped of their restricted firmware governors, making them popular with gang enforcers who call them 'Raptors' and use them to settle territorial disputes with horrifying efficiency.",
+  "description": "The Raptorclaw Mk4 is a full-arm combat replacement built on a titanium-carbide endoskeleton with integrated forearm blade housing capable of deploying a 28cm monofilament-edged ceramic blade in under 0.2 seconds. Recoil-dampening hydraulic buffers run the length of the humerus analog, allowing the arm to absorb and redirect kinetic force from heavy firearms without destabilizing the shooter. Striking surfaces on the knuckle plating are reinforced with tungsten composite capable of punching through light vehicle panels.\n\nPrimarily issued to GLMC special operations and licensed to Tier 3-4 private security contractors operating in the Gray Zone's contested industrial zones. On the street, decommissioned units show up stripped of their restricted firmware governors, making them popular with gang enforcers who call them 'Raptors' and use them to settle territorial disputes with horrifying efficiency.",
   "manufacturer": "Resolve Behavioral Health",
   "tier_availability": "Tier 3-5",
   "legality": "Military-Only",
@@ -21,16 +21,16 @@
     "Nerve scarring at shoulder socket causing intermittent numbness in ipsilateral neck",
     "Documented aggression amplification in users running ungoverned firmware"
   ],
-  "cultural_context": "The Raptorclaw has become something of a grim status symbol in the Shelf's gang hierarchy — having a decommissioned Mk4 means you either killed someone who had one or you used to be something official. GLMC brass has launched three separate black-market crackdowns in the past decade, none of which have meaningfully reduced supply.",
+  "cultural_context": "The Raptorclaw has become something of a grim status symbol in the Gray Zone's gang hierarchy — having a decommissioned Mk4 means you either killed someone who had one or you used to be something official. GLMC brass has launched three separate black-market crackdowns in the past decade, none of which have meaningfully reduced supply.",
   "known_users": [
     "GLMC special operations soldiers",
     "Tier 3-4 licensed private security contractors",
-    "Shelf gang enforcers running stripped decommissioned units",
+    "the Gray Zone gang enforcers running stripped decommissioned units",
     "Black-market combat augmentation dealers",
     "Former military turned corporate muscle"
   ],
   "story_hooks": [
-    "A stolen shipment of ungoverned Raptorclaw Mk4s has flooded a Shelf district, and someone is paying very well to find out who pulled the heist",
+    "A stolen shipment of ungoverned Raptorclaw Mk4s has flooded a the Gray Zone district, and someone is paying very well to find out who pulled the heist",
     "A player's contact turns up dead — killed by a blade pattern that matches Raptorclaw deployment, but the registered owner has a bulletproof alibi",
     "A disgraced GLMC surgeon is offering black-market Mk4 installations in a flooded basement clinic — no questions asked"
   ],
@@ -54,7 +54,6 @@
     "Nurlan Holmberg-Dembele",
     "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
     "TESSERA WL-6 'Stacker'",
-    "The Shelf",
     "Zheng-Dao Heavy Industries MGL-8 'Thresher'"
   ]
 }

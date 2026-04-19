@@ -10,14 +10,18 @@
     "tags": []
   },
   "connections": {
-    "adjacent_to": [],
+    "adjacent_to": ["Ohio Corridor", "Kentucky", "The Missouri Wetlands"],
     "exits": [],
     "tags": []
   },
   "tags": [
     "place",
     "outside",
-    "dead-zone"
+    "dead-zone",
+    "remnants",
+    "contamination"
   ],
-  "related_entities": []
+  "related_entities": ["Ohio Corridor", "Kentucky"],
+  "zone": "Z12",
+  "controllingCorponation": null
 }

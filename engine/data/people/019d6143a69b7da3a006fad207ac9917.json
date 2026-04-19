@@ -9,8 +9,8 @@
   "role": "Numbers runner and low-level bookmaker's courier for an illegal betting syndicate",
   "age": 19,
   "status": "active",
-  "location": "The Shelf lower levels, primarily between Blackpipe Corridor and Burnside Pocket, near Ashland and Chicago Ave",
-  "description": "Arden Sefanaia is slight and quick, built like someone who learned early that the best defense is to be somewhere else before trouble registers he's present. He has his father's Polynesian bone structure — broad jaw, wide-set eyes — and his Ghanaian grandmother's coily black hair, grown out into a chaotic halo he never bothers to maintain. His irises have been modded with a tide-pattern: rings of blue-green that ripple outward slowly, a mod he saved eight months of UBC stipend to afford because he thought it would make him look memorable. He has since realized this was a professional error. A thin scar crosses his left eyebrow from a run-in he doesn't discuss.\n\nPik is bright in the animal way of someone who has never had the luxury of being stupid — fast to read a room, faster to find an exit, with a memory for numbers that his handlers find more useful than he realizes. He moves through the Shelf's lower corridors with the particular ease of someone raised in them, knows which maintenance corridors flood at high tide, which E.L.F. shrines get the most foot traffic and therefore the most witnesses. He's not cruel. He's not ambitious in the way that gets people hurt. He's nineteen and mostly trying to afford better tier food and keep his younger sister in school, and he's chosen the tools available to him.",
+  "location": "the Gray Zone lower levels, primarily between Blackpipe Corridor and Burnside Pocket, near Ashland and Chicago Ave",
+  "description": "Arden Sefanaia is slight and quick, built like someone who learned early that the best defense is to be somewhere else before trouble registers he's present. He has his father's Polynesian bone structure — broad jaw, wide-set eyes — and his Ghanaian grandmother's coily black hair, grown out into a chaotic halo he never bothers to maintain. His irises have been modded with a tide-pattern: rings of blue-green that ripple outward slowly, a mod he saved eight months of UBC stipend to afford because he thought it would make him look memorable. He has since realized this was a professional error. A thin scar crosses his left eyebrow from a run-in he doesn't discuss.\n\nPik is bright in the animal way of someone who has never had the luxury of being stupid — fast to read a room, faster to find an exit, with a memory for numbers that his handlers find more useful than he realizes. He moves through the Gray Zone's lower corridors with the particular ease of someone raised in them, knows which maintenance corridors flood at high tide, which E.L.F. shrines get the most foot traffic and therefore the most witnesses. He's not cruel. He's not ambitious in the way that gets people hurt. He's nineteen and mostly trying to afford better tier food and keep his younger sister in school, and he's chosen the tools available to him.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -39,7 +39,7 @@
     "secret": "He has been skimming. Not much — rounding down on collections, Φ8 here, Φ12 there — and putting it into a locked account under his sister's name. He's been doing it for six months and is terrified someone has already noticed."
   },
   "speech_patterns": {
-    "vocabulary": "Shelf pidgin heavy, lots of compression and dropped syllables, code-switches into formal speech when nervous as a tell",
+    "vocabulary": "the Gray Zone pidgin heavy, lots of compression and dropped syllables, code-switches into formal speech when nervous as a tell",
     "cadence": "Fast, runs sentences together, slows only when he's scared or lying",
     "verbal_tics": [
       "'Straight, straight—' as a filler",
@@ -48,12 +48,12 @@
     ],
     "example_lines": [
       "'Straight straight, I'm just the one who carries it, what's in the packet is none of my — yeah, okay, fine, what do you need?'",
-      "'She's a good kid, my sister. Bright. She should get out of the Shelf. That's the whole thing, yeah? That's the whole — that's it.'"
+      "'She's a good kid, my sister. Bright. She should get out of the Gray Zone. That's the whole thing, yeah? That's the whole — that's it.'"
     ]
   },
   "relationships": [],
   "story_hooks": [
-    "Pikoi witnessed a money handoff that connects a Shelf bookie to someone much higher up the food chain — he doesn't understand what he saw but someone knows he was there",
+    "Pikoi witnessed a money handoff that connects a the Gray Zone bookie to someone much higher up the food chain — he doesn't understand what he saw but someone knows he was there",
     "His skimming has been noticed; his handler is giving him a chance to make it right by delivering a package he's been told not to look inside"
   ],
   "narrative_function": "Local color, minor information source, potential quest hook through his precarious situation — he knows things he doesn't know he knows, and he's one bad week from making a desperate decision.",
@@ -178,7 +178,7 @@
     "Lone Wolf": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -188,7 +188,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2181 — Born on the Shelf, third sub-level, to a dockworker father and a transit operator mother",
+      "event": "2181 — Born in the Gray Zone, third sub-level, to a dockworker father and a transit operator mother",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -236,7 +236,6 @@
     "Blackpipe Corridor",
     "Burnside Pocket",
     "Grandmother",
-    "The Shelf",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "GLMZ",
     "Chicago",
@@ -245,7 +244,7 @@
     "IRONLIMB Spectre SV-4 Stealth Arm",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Pacific Islander dominant (50.8%) with substantial Hispanic/Latin American (26.3%) and Sub-Saharan African (22.9%) ancestry. The combination creates a striking phenotype: broad facial structure and warm undertones from Pacific Islander genetics, refined by the angular cheekbones and defined facial geometry of Latin American heritage, enriched by deeper skin undertones and textural qualities from Sub-Saharan African ancestry. A true Ubiquitous Diaspora blend creating warm, sun-kissed luminosity with bold, distinctive features.",
     "height_cm": 168,

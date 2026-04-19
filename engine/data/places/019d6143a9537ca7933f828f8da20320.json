@@ -23,7 +23,7 @@
     "feel": "The Vitreous Banks feel like the end of something — a place where the city's momentum finally runs out against the water. There's genuine beauty here that sits uneasily alongside desperation, and the silence between wave cycles is the kind that makes people confess things.",
     "tags": []
   },
-  "demographics": "Almost entirely Tier 1 and Shelf-adjacent residents, with a small rotating population of off-grid artists, environmental surveyors working covert contracts, and salvagers of indeterminate affiliation.",
+  "demographics": "Almost entirely Tier 1 and the Gray Zone-adjacent residents, with a small rotating population of off-grid artists, environmental surveyors working covert contracts, and salvagers of indeterminate affiliation.",
   "economy": "Subsistence-level barter economy centered on sea-glass artifact sales to Spire collectors, filtered water trading, and salvage recovery of Zheng-Dao bioelectric components that wash ashore from platform discharge.",
   "power_structure": "No formal authority; the largest stilt settlement cluster, called the Raft Council, mediates disputes informally, but Palladian Group's dormant land claim means any serious conflict invites corporate legal enforcement.",
   "dangers": [
@@ -74,7 +74,6 @@
     "drone",
     "water",
     "lake",
-    "shelf",
     "spire"
   ],
   "related_entities": [
@@ -94,5 +93,7 @@
     "Pellucid Systems",
     "Echo Boateng",
     "Nightlight"
-  ]
+  ],
+  "zone": "Z3",
+  "controllingCorponation": null
 }

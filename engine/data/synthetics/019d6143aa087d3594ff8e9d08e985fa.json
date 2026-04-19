@@ -12,7 +12,7 @@
   "observed_behavior": "Overrides access controls on specific dispensers between 0100-0400. Targets locations with high foot traffic from unregistered populations. Leaves no audit trail.",
   "encounter_frequency": "common",
   "confirmed_sightings": 89,
-  "location": "The Shelf, The Narrows, Old Harbor perimeter",
+  "location": "the Gray Zone, The Narrows, Old Harbor perimeter",
   "dti_rating": 0,
   "story_hooks": [
     "A night-shift security guard notices the pattern and has to decide whether to report it or look the other way"
@@ -30,7 +30,6 @@
     "night",
     "shelter",
     "food",
-    "shelf",
     "narrows",
     "old harbor",
     "sentient"
@@ -38,7 +37,6 @@
   "related_entities": [
     "Old Harbor",
     "TESSERA ES-4 'Perimeter'",
-    "The Narrows",
-    "The Shelf"
+    "The Narrows"
   ]
 }

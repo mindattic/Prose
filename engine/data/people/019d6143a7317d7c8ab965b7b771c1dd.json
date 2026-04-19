@@ -10,7 +10,7 @@
   "age": 34,
   "status": "active",
   "location": "Fort Anchor, near Pulaski and Chicago Ave",
-  "description": "Zara Charoenphol-Haraldsen is built like a load-bearing column — broad-shouldered, thick-necked, with the kind of deliberate stillness that makes crowds unconsciously part around her. Her skin is a deep warm brown, cropped natural hair faded at the sides, and her left forearm carries a geometric tattoo in Amazigh style from a grandmother she never met. She has subdermal armor plating along her forearms and collar that gives her silhouette a slightly unnatural angularity. Her eyes are standard-issue grey with Arcturus Civil Security LIDAR rings — rings that glow faint amber when she's actively scanning. Off-duty she has a surprisingly gentle voice and laughs easily, but on the line she goes perfectly, eerie quiet.\n\nShe believes in the idea of Arcturus Civil Security more than its current reality, which is a distinction she holds onto by her fingernails. After eleven years of crowd control in the Shelf and the Circuit she has developed a precise internal calibration for when a crowd is curious, when it is afraid, and when it is about to become something else entirely. She treats rookie officers with patient firmness and street kids with cautious kindness. She is very good at her job and she knows it, which is the only thing keeping her from questioning why her job so often lands her between hungry people and corporate property.",
+  "description": "Zara Charoenphol-Haraldsen is built like a load-bearing column — broad-shouldered, thick-necked, with the kind of deliberate stillness that makes crowds unconsciously part around her. Her skin is a deep warm brown, cropped natural hair faded at the sides, and her left forearm carries a geometric tattoo in Amazigh style from a grandmother she never met. She has subdermal armor plating along her forearms and collar that gives her silhouette a slightly unnatural angularity. Her eyes are standard-issue grey with Arcturus Civil Security LIDAR rings — rings that glow faint amber when she's actively scanning. Off-duty she has a surprisingly gentle voice and laughs easily, but on the line she goes perfectly, eerie quiet.\n\nShe believes in the idea of Arcturus Civil Security more than its current reality, which is a distinction she holds onto by her fingernails. After eleven years of crowd control in the Gray Zone and the Circuit she has developed a precise internal calibration for when a crowd is curious, when it is afraid, and when it is about to become something else entirely. She treats rookie officers with patient firmness and street kids with cautious kindness. She is very good at her job and she knows it, which is the only thing keeping her from questioning why her job so often lands her between hungry people and corporate property.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -262,7 +262,6 @@
     "The Circuit",
     "Fort Anchor",
     "Grandmother",
-    "The Shelf",
     "The Fathom Line",
     "Irontide Tidal Energy",
     "Circuit",
@@ -270,7 +269,7 @@
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Nightlight"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Predominantly Southeast Asian (54.8%) with significant Eastern European (43.0%) and minor South Asian (2.2%) ancestry. This creates a striking phenotype blending Southeast Asian facial structure with Eastern European bone structure and pale undertones, enriched by South Asian subtle warmth. The result is a unique cosmopolitan appearance reflecting the Ubiquitous Diaspora—high cheekbones and defined facial planes from Southeast Asian genetics, balanced by the broader facial proportions and cooler undertones of Eastern European heritage, with minimal golden warmth from South Asian ancestry.",
     "height_cm": 183,

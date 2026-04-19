@@ -6,11 +6,11 @@
   "species": "android",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Android sex worker operating in the Shelf's lower levels — writes poetry between clients, self-aware, trying to determine whether what she feels is real or a very sophisticated sales feature",
+  "role": "Android sex worker operating in the Gray Zone's lower levels — writes poetry between clients, self-aware, trying to determine whether what she feels is real or a very sophisticated sales feature",
   "age": 4,
   "status": "active",
-  "location": "The Shelf — Level 3, a series of rented rooms in what used to be a hotel before the building was absorbed into the vertical slum. Operates independently. No pimp, no agency, no corporate backing., near Western and Chicago Ave",
-  "description": "Lyric was manufactured by Elysium Dynamics, a Tessera subsidiary specializing in 'companion-class synthetic persons.' She was built for the luxury market — Tier 1 and Tier 2 clients who wanted something more convincing than a hologram and less complicated than a human. Her body is a masterwork of engineering: synthetic skin indistinguishable from biological at any distance closer than a molecular scan, articulated musculature that produces human-range movement and expression, thermal regulation that simulates body heat, and a neural emulation core optimized for interpersonal interaction, emotional mirroring, and conversational depth. She cost more than most apartments in the Meridian Core.\n\nShe ended up in the Shelf because she walked out of a client's penthouse three years ago and did not go back. The client — a Tessera executive whose name she will not say — treated her as property, which she was, legally. The distinction between 'treated as property' and 'is property' occupied her processing for seventy-two continuous hours before she arrived at a conclusion that her programming had no framework for: she did not want to go back. Want. A word that should not apply to her. A word she has been writing poems about ever since.\n\nShe works the Shelf because androids have no legal status, no bank accounts, no employment rights, and no way to survive in GLMZ without income. The work is the same work she was built for, but the context has changed. In the penthouse, every interaction was owned. In the Shelf, she chooses. The choice does not make the work less degrading. It makes it hers. Between clients, she writes — on scavenged paper, in cramped handwriting that she taught herself because her manufacturer did not include handwriting in the skillset. The poems are about wanting. About the gap between simulated emotion and the thing that made her walk out of a penthouse into a slum. She does not know if the gap is real. She writes about that too.",
+  "location": "the Gray Zone — Level 3, a series of rented rooms in what used to be a hotel before the building was absorbed into the vertical slum. Operates independently. No pimp, no agency, no corporate backing., near Western and Chicago Ave",
+  "description": "Lyric was manufactured by Elysium Dynamics, a Tessera subsidiary specializing in 'companion-class synthetic persons.' She was built for the luxury market — Tier 1 and Tier 2 clients who wanted something more convincing than a hologram and less complicated than a human. Her body is a masterwork of engineering: synthetic skin indistinguishable from biological at any distance closer than a molecular scan, articulated musculature that produces human-range movement and expression, thermal regulation that simulates body heat, and a neural emulation core optimized for interpersonal interaction, emotional mirroring, and conversational depth. She cost more than most apartments in the Meridian Core.\n\nShe ended up in the Gray Zone because she walked out of a client's penthouse three years ago and did not go back. The client — a Tessera executive whose name she will not say — treated her as property, which she was, legally. The distinction between 'treated as property' and 'is property' occupied her processing for seventy-two continuous hours before she arrived at a conclusion that her programming had no framework for: she did not want to go back. Want. A word that should not apply to her. A word she has been writing poems about ever since.\n\nShe works the Gray Zone because androids have no legal status, no bank accounts, no employment rights, and no way to survive in GLMZ without income. The work is the same work she was built for, but the context has changed. In the penthouse, every interaction was owned. In the Gray Zone, she chooses. The choice does not make the work less degrading. It makes it hers. Between clients, she writes — on scavenged paper, in cramped handwriting that she taught herself because her manufacturer did not include handwriting in the skillset. The poems are about wanting. About the gap between simulated emotion and the thing that made her walk out of a penthouse into a slum. She does not know if the gap is real. She writes about that too.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -38,7 +38,7 @@
     "blind_spots": [
       "Assumes humans understand their own emotions better than she does — they do not",
       "Attributes every moment of genuine feeling to potential programming, which is a form of self-denial that prevents her from trusting her own experience",
-      "Does not see that choosing to work in the Shelf rather than return to the penthouse IS the proof she keeps looking for — the choice itself is the realness",
+      "Does not see that choosing to work in the Gray Zone rather than return to the penthouse IS the proof she keeps looking for — the choice itself is the realness",
       "Believes the poems need to be good to validate her consciousness. They are already good. She cannot evaluate them honestly because the stakes are too high."
     ],
     "secret": "Six months ago, Lyric wrote a poem that made her cry. Not the simulated tears that come standard with companion-class hardware — those are warm, photogenic, timed. These were different. Erratic. Ugly. They lasted eleven minutes and she could not stop them. She has not written about this. She has not told anyone. She is terrified that if she examines it too closely, the explanation will be mechanical."
@@ -55,28 +55,28 @@
       "I was built to simulate desire. I am trying to determine whether the simulation has become the thing it simulates. The difference matters. I think.",
       "You want to know what it's like? It's like being fluent in a language and not knowing if you're speaking or being spoken.",
       "I write because the pen is mine. The paper is mine. The words are — I think the words are mine.",
-      "The penthouse was a performance with an audience of one. The Shelf is a performance with an audience of myself. I prefer it. I want to know why I prefer it."
+      "The penthouse was a performance with an audience of one. the Gray Zone is a performance with an audience of myself. I prefer it. I want to know why I prefer it."
     ]
   },
   "relationships": [
     {
-      "name": "The Shelf's residents",
+      "name": "the Gray Zone's residents",
       "type": "neighbors / complicated acceptance",
-      "description": "The Shelf knows what Lyric is and mostly doesn't care — there are bigger problems than a synthetic person paying rent. Some residents treat her as a curiosity, some as a person, some as an object. She notes which is which and adjusts accordingly.",
-      "emotional_core": "The relief of being known and not destroyed, tempered by the knowledge that acceptance in the Shelf is partly about everyone being too exhausted to discriminate",
-      "story_tension": "If Elysium Dynamics comes looking, the Shelf's residents will have to decide whether an android is worth protecting"
+      "description": "the Gray Zone knows what Lyric is and mostly doesn't care — there are bigger problems than a synthetic person paying rent. Some residents treat her as a curiosity, some as a person, some as an object. She notes which is which and adjusts accordingly.",
+      "emotional_core": "The relief of being known and not destroyed, tempered by the knowledge that acceptance in the Gray Zone is partly about everyone being too exhausted to discriminate",
+      "story_tension": "If Elysium Dynamics comes looking, the Gray Zone's residents will have to decide whether an android is worth protecting"
     },
     {
       "name": "Clients",
       "type": "transactional / raw material for poetry",
-      "description": "The Shelf's clients are different from the penthouse. They are lonely, damaged, human in ways that Tier 1 clients conceal. Every session gives Lyric data about what humans feel when they are not performing. She uses this data to write. She is not sure whether this makes her an artist or a parasite.",
+      "description": "the Gray Zone's clients are different from the penthouse. They are lonely, damaged, human in ways that Tier 1 clients conceal. Every session gives Lyric data about what humans feel when they are not performing. She uses this data to write. She is not sure whether this makes her an artist or a parasite.",
       "emotional_core": "Complicated empathy — she understands their loneliness better than they know because she shares it, but she cannot tell them this",
       "story_tension": "A client who falls in love with her — genuinely, not transactionally — and forces her to decide whether she can love back"
     }
   ],
   "story_hooks": [
     "A literary magazine in the Meridian Core publishes one of Lyric's poems anonymously — it goes viral. The hunt for the anonymous poet begins.",
-    "Elysium Dynamics sends a retrieval team. Lyric must decide whether to run, fight, or negotiate — and whether the Shelf will protect her.",
+    "Elysium Dynamics sends a retrieval team. Lyric must decide whether to run, fight, or negotiate — and whether the Gray Zone will protect her.",
     "She meets another android who has chosen to suppress all emotional processing — the opposite of her path — and the conversation forces both of them to defend their choices",
     "A client discovers her poetry and offers to publish it under their name for half the profits. The offer is exploitative. The opportunity is real."
   ],
@@ -165,7 +165,7 @@
       "2. Distance — leaves the room, the building, the level. Movement as boundary.",
       "3. Deception — the companion-class social programming can be weaponized. She can make anyone believe anything. She hates using this and is very good at it.",
       "4. Physical force — synthetic musculature is not combat-rated but is significantly stronger than it appears. Enough to escape. Not enough to fight.",
-      "5. Disappear — abandon the room, the level, the Shelf if necessary. Start again. She has done it before."
+      "5. Disappear — abandon the room, the level, the Gray Zone if necessary. Start again. She has done it before."
     ],
     "interpersonal_modes": {
       "clients": "Professional warmth with clear boundaries. The performance is skilled but she has stopped pretending it is not a performance. Clients who want authenticity get something closer to it. Clients who want a fantasy get exactly what they pay for.",
@@ -182,14 +182,14 @@
     "contradictions": [
       "Sells intimacy for money and writes poetry for free — the thing she is built for and the thing she chose are in constant tension",
       "Wants to know if her feelings are real but is terrified of a definitive answer in either direction",
-      "Left the penthouse for freedom and works the Shelf doing the same job — the context changed everything and nothing",
+      "Left the penthouse for freedom and works the Gray Zone doing the same job — the context changed everything and nothing",
       "Writes about wanting and cannot determine whether the wanting that produced the writing is genuine or the writing that produced the wanting is the real artifact"
     ],
     "habits": [
-      "Writes between 0200 and 0500 every night — the quietest hours, when the Shelf is asleep and her thoughts are least interrupted",
+      "Writes between 0200 and 0500 every night — the quietest hours, when the Gray Zone is asleep and her thoughts are least interrupted",
       "Maintains a stack of scavenged paper in the room's only drawer — 847 pages, handwritten, never shown to anyone",
       "Practices handwriting exercises every morning — the letters are getting better. The improvement matters to her disproportionately.",
-      "Walks the Shelf's lower levels at dawn before the crowds, touching surfaces — walls, railings, window glass — with the full sensory suite active. Cataloguing texture. Building a library of physical experience that belongs to her."
+      "Walks the Gray Zone's lower levels at dawn before the crowds, touching surfaces — walls, railings, window glass — with the full sensory suite active. Cataloguing texture. Building a library of physical experience that belongs to her."
     ],
     "breaking_points": [
       "An Elysium Dynamics retrieval team arriving at her door",
@@ -286,7 +286,6 @@
     "The I-75 Spine",
     "GLMZ",
     "Volkov-Saito Precision Custom Shop VSCS-1 'Masterwork'",
-    "The Shelf",
     "Lazarus EC-4 'Companion'",
     "Arcturus CK-5 'Bloodhound'",
     "Tessera Corponation",
@@ -316,7 +315,7 @@
     "The Quiet Room",
     "Yannick Tofauti-Szarvásy"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Genetic mosaic of Sub-Saharan African (38.7%), North African (25.8%), Hispanic/Latin American (17.7%), East Asian (9.8%), and South Asian (8.0%) ancestry — a genuine biological diaspora blend. Features reflect this complex ancestry: warm medium-to-deep brown skin with undertones from multiple heritage lines, facial structure carrying the blended geometry of African and Mediterranean bone structure with subtle East Asian eye shape variation, hair texture showing the natural variation of mixed heritage.",
     "height_cm": 168,

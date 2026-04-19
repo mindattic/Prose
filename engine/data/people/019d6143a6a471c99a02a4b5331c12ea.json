@@ -1,5 +1,6 @@
 {
   "id": "019d6143a6a471c99a02a4b5331c12ea",
+  "rating": 80,
   "type": "character",
   "name": "Atlas Kobayashi-Trujillo-Pham",
   "aliases": [],
@@ -9,8 +10,8 @@
   "role": "Underground filmmaker and VR experience designer",
   "age": 44,
   "status": "active",
-  "location": "The Loft, Lockhaven North — operates a pirate screening venue called the Sediment, near Fullerton and Damen",
-  "description": "Atlas Kobayashi-Trujillo-Pham is a heavyset man in his mid-forties with dark brown skin, a close-cropped beard going silver at the jaw, and the slightly unfocused look of someone who is always composing shots in their peripheral vision. He has a prosthetic left eye — not an elegant chrome implant but a visually obvious thing, matte black with a ring of amber light around the iris, which he has never had cosmetically upgraded because he likes that it makes people aware they may be recorded. He wears the same rotating set of worn high-collared coats regardless of season. He carries a battered intake recorder everywhere and the habit of pulling it out in the middle of conversations has ended several relationships.\n\nHis films are long, structurally experimental, and deeply uncomfortable — documentary and fiction entangled in ways the viewer cannot always disentangle. He is most famous for a six-hour VR experience called 'Debt Architecture' that maps a single GLMZ family's financial obligations across four generations as a navigable spatial environment, placing the viewer inside the abstract structure of inherited poverty. It has been downloaded illegally over 400,000 times and banned by three corponations. He funds himself through occasional commercial VR work he takes under a pseudonym and despises himself for.",
+  "location": "The Loft, Lockhaven North \u2014 operates a pirate screening venue called the Sediment, near Fullerton and Damen",
+  "description": "Atlas Kobayashi-Trujillo-Pham is a heavyset man in his mid-forties with dark brown skin, a close-cropped beard going silver at the jaw, and the slightly unfocused look of someone who is always composing shots in their peripheral vision. He has a prosthetic left eye \u2014 not an elegant chrome implant but a visually obvious thing, matte black with a ring of amber light around the iris, which he has never had cosmetically upgraded because he likes that it makes people aware they may be recorded. He wears the same rotating set of worn high-collared coats regardless of season. He carries a battered intake recorder everywhere and the habit of pulling it out in the middle of conversations has ended several relationships.\n\nHis films are long, structurally experimental, and deeply uncomfortable \u2014 documentary and fiction entangled in ways the viewer cannot always disentangle. He is most famous for a six-hour VR experience called \u0027Debt Architecture\u0027 that maps a single GLMZ family\u0027s financial obligations across four generations as a navigable spatial environment, placing the viewer inside the abstract structure of inherited poverty. It has been downloaded illegally over 400,000 times and banned by three corponations. He funds himself through occasional commercial VR work he takes under a pseudonym and despises himself for.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -29,33 +30,37 @@
       "To be told, once, by someone whose life he filmed that it was worth it"
     ],
     "coping_mechanisms": [
-      "Framing everything as material — distance through the lens",
+      "Framing everything as material \u2014 distance through the lens",
       "Intellectual argument as a substitute for emotional processing"
     ],
     "blind_spots": [
       "Treats the subjects of his films as having implicitly consented to his interpretation of them",
       "Does not recognize his own hunger for recognition as the primary fuel for much of his political righteousness"
     ],
-    "secret": "The family documented in 'Debt Architecture' — his most celebrated work — never gave full informed consent. His cousin helped arrange access under false pretenses. The family has since fragmented and one member, who recognized herself in the piece, has spent years trying to identify the filmmaker."
+    "secret": "The family documented in \u0027Debt Architecture\u0027 \u2014 his most celebrated work \u2014 never gave full informed consent. His cousin helped arrange access under false pretenses. The family has since fragmented and one member, who recognized herself in the piece, has spent years trying to identify the filmmaker."
   },
   "speech_patterns": {
     "vocabulary": "Dense theoretical vocabulary that he switches off entirely when charming strangers into being filmed; can sound like two different people",
     "cadence": "Discursive and circling when theorizing; abrupt and direct when asking something he actually wants",
     "verbal_tics": [
-      "'Can I ask you something?' as preamble to something he will ask regardless of the answer",
+      "\u0027Can I ask you something?\u0027 as preamble to something he will ask regardless of the answer",
       "Long humming pauses before sentences that turn out to be important"
     ],
     "example_lines": [
-      "'I don't tell stories. I excavate weight. There's a difference — stories have shapes. Weight just sits there.'",
-      "'I'll ask you one question and I'll never tell anyone who answered it. You can lie if you need to. I just need to hear the shape of the answer.'"
-    ]
+      "\u0027I don\u0027t tell stories. I excavate weight. There\u0027s a difference \u2014 stories have shapes. Weight just sits there.\u0027",
+      "\u0027I\u0027ll ask you one question and I\u0027ll never tell anyone who answered it. You can lie if you need to. I just need to hear the shape of the answer.\u0027"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "Somewhere in his archive is footage of an event that multiple powerful parties would pay or threaten to suppress — he does not know it yet but people who do are already looking for him",
-    "The family member from 'Debt Architecture' has finally tracked him down, and their first contact is either a lawsuit, a threat, or something more complex"
+    "Somewhere in his archive is footage of an event that multiple powerful parties would pay or threaten to suppress \u2014 he does not know it yet but people who do are already looking for him",
+    "The family member from \u0027Debt Architecture\u0027 has finally tracked him down, and their first contact is either a lawsuit, a threat, or something more complex"
   ],
-  "narrative_function": "Archive and witness — Ptolemy has been filming GLMZ's civilian underbelly for twenty years and his raw footage is a trove of faces, places, and events; he can provide documentary evidence, historical context, or connections to anyone he has ever pointed a lens at",
+  "narrative_function": "Archive and witness \u2014 Ptolemy has been filming GLMZ\u0027s civilian underbelly for twenty years and his raw footage is a trove of faces, places, and events; he can provide documentary evidence, historical context, or connections to anyone he has ever pointed a lens at",
   "augmentations": "Prosthetic left eye (matte black, amber-ring, recording-capable); nicotine-metabolizer implant (occupational stress management)",
   "daily_life": "Mornings spent reviewing footage and editing in a cramped Lockhaven North apartment, afternoons at the Sediment managing screenings or arguing with collaborators, evenings often spent in Pilsen Veil or Mexicantown Libre gathering material.",
   "affiliation": "Independent; Sediment underground screening collective; occasional grey-market distribution through Depth Markers network",
@@ -102,15 +107,15 @@
   "behavioral": {
     "decision_rules": [
       "Always keep a copy of everything in at least three locations",
-      "Never agree to destroy footage — you can agree to not release it, but never agree to destroy it"
+      "Never agree to destroy footage \u2014 you can agree to not release it, but never agree to destroy it"
     ],
     "escalation_ladder": [
       "Deflection through intellectual engagement",
       "Transparent acknowledgment that he is deflecting, as a disarming tactic",
-      "Genuine retreat — he is not physically brave and knows it"
+      "Genuine retreat \u2014 he is not physically brave and knows it"
     ],
     "interpersonal_modes": {
-      "strangers": "Curious, warm, visibly interested in their specific life — this is genuine and also always partly professional",
+      "strangers": "Curious, warm, visibly interested in their specific life \u2014 this is genuine and also always partly professional",
       "friends": "Demanding in the way only people with high standards can be; shows affection through blunt honesty"
     },
     "stress_responses": {
@@ -201,7 +206,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "'Debt Architecture' released through grey-market distribution; immediate ban by Axiom, Sterling-Nakamura, and Zheng-Dao",
+      "event": "\u0027Debt Architecture\u0027 released through grey-market distribution; immediate ban by Axiom, Sterling-Nakamura, and Zheng-Dao",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -216,42 +221,33 @@
     }
   ],
   "changelog": [],
-  "carried_weapons": [
-    "Forge-Smith Collective Fighting Chain 'Serpent'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Lockhaven North",
-    "The Iron Lotus",
-    "The Loft",
-    "Sediment Sound Group",
-    "Silver",
-    "Atlas",
-    "Compass Rose",
-    "GLMZ"
-  ],
-  "district": "The Shelf",
   "physical_description": {
     "heritage": "Mixed heritage from Hispanic/Latin American (42%), East Asian (20.2%), Middle Eastern (17.3%), Southeast Asian (14.3%), and South Asian (6.2%) ancestry. The blend manifests in angular cheekbones with subtle fullness, warm olive-bronze complexion with golden undertones, eye shape reflecting East Asian structure, and facial features showing the polyphonic influence of Mediterranean, Southwest Asian, and Pan-Asian genetics.",
     "height_cm": 183,
     "weight_kg": 98,
-    "build": "Heavyset with a barrel chest and thick shoulders, slightly soft around the midsection but broad-framed — the build of someone who has spent decades sitting in editing chairs and standing in darkened rooms rather than moving through the world.",
+    "build": "Heavyset with a barrel chest and thick shoulders, slightly soft around the midsection but broad-framed \u2014 the build of someone who has spent decades sitting in editing chairs and standing in darkened rooms rather than moving through the world.",
     "hair_color": "Dark brown, natural",
     "hair_style": "Close-cropped, neatly trimmed but never fussy",
     "hair_length": "Short",
     "eye_color": "Right eye: dark brown, natural; left eye: matte black prosthetic with amber ring-light iris",
     "skin_tone": "Warm olive-bronze with golden undertones, reflecting the dominant Hispanic/Latin American and East Asian ancestry tempered by Middle Eastern warmth and Southeast Asian depth. Medium depth with subtle golden radiance beneath weathered patina.",
-    "complexion": "Weathered face with pronounced laugh lines and forehead creases from decades of squinting at monitors. Angular cheekbones with East Asian structure softened by Hispanic and South Asian fullness. Subtle Mediterranean jawline influence from Middle Eastern heritage blending with the warmth of Southeast Asian undertones. Close-cropped beard salt-and-peppered at the jawline, kept meticulously groomed — the one vanity he allows himself. Slight permanent furrow between brows from concentration. Complexion shows age-related deepening across warm olive-bronze base.",
-    "visible_augmentations": "Prosthetic left eye (matte black with amber iris-ring, recording-capable), obviously non-cosmetic and maintained in deliberate non-stealth configuration. Nicotine-metabolizer implant is subcutaneous and invisible.",
-    "posture_movement": "Stands with slight forward lean, shoulders hunched as if perpetually framing a shot through his hands. Moves deliberately but without haste, economical gestures. Has the habit of turning slightly to one side in conversation to position his prosthetic eye toward the speaker — a tell that he is recording audio. Eyes rarely settle on one point; constantly scanning, assessing light and shadow.",
-    "clothing_style": "Rotates between three or four high-collared long coats (charcoal, dark brown, navy) regardless of season — vintage synthweave from the 2190s, cut loose and worn soft. Under them: plain black or grey long-sleeve shirts, often stained with coffee or solder flux. Worn Tier-4 workboots resoled multiple times. A faded canvas satchel across his chest containing his intake recorder, lens caps, and worn notebooks. No jewelry. His clothes smell like old film stock and cigarette smoke despite nicotine-metabolizer implant — ghost of a habit.",
+    "complexion": "Weathered face with pronounced laugh lines and forehead creases from decades of squinting at monitors. Angular cheekbones with East Asian structure softened by Hispanic and South Asian fullness. Subtle Mediterranean jawline influence from Middle Eastern heritage blending with the warmth of Southeast Asian undertones. Close-cropped beard salt-and-peppered at the jawline, kept meticulously groomed \u2014 the one vanity he allows himself. Slight permanent furrow between brows from concentration. Complexion shows age-related deepening across warm olive-bronze base.",
     "distinguishing_marks": [
       "Matte black prosthetic left eye with amber light-ring around iris, visibly non-cosmetic and deliberately maintained to appear obviously artificial.",
       "Faint cigarette burn scar on inside of left wrist from a 2189 studio accident, barely visible unless pointed out.",
-      "Fine webbing of scar tissue across knuckles of both hands from a Tier-5 altercation in Mexicantown in 2201 — he doesn't talk about it."
-    ]
+      "Fine webbing of scar tissue across knuckles of both hands from a Tier-5 altercation in Mexicantown in 2201 \u2014 he doesn\u0027t talk about it."
+    ],
+    "visible_augmentations": "Prosthetic left eye (matte black with amber iris-ring, recording-capable), obviously non-cosmetic and maintained in deliberate non-stealth configuration. Nicotine-metabolizer implant is subcutaneous and invisible.",
+    "posture_movement": "Stands with slight forward lean, shoulders hunched as if perpetually framing a shot through his hands. Moves deliberately but without haste, economical gestures. Has the habit of turning slightly to one side in conversation to position his prosthetic eye toward the speaker \u2014 a tell that he is recording audio. Eyes rarely settle on one point; constantly scanning, assessing light and shadow.",
+    "clothing_style": "Rotates between three or four high-collared long coats (charcoal, dark brown, navy) regardless of season \u2014 vintage synthweave from the 2190s, cut loose and worn soft. Under them: plain black or grey long-sleeve shirts, often stained with coffee or solder flux. Worn Tier-4 workboots resoled multiple times. A faded canvas satchel across his chest containing his intake recorder, lens caps, and worn notebooks. No jewelry. His clothes smell like old film stock and cigarette smoke despite nicotine-metabolizer implant \u2014 ghost of a habit."
   },
-  "image_prompt": "Atlas Kobayashi-Trujillo-Pham, 183cm heavyset broad-shouldered neo-noir male with warm olive-bronze complexion and golden undertones, reflecting blended Hispanic/Latin American, East Asian, Middle Eastern, Southeast Asian, and South Asian heritage. Angular East Asian cheekbones softened by South Asian fullness, weathered face with decades of monitor-squint lines, Mediterranean-influenced jawline. Salt-and-pepper close-cropped beard meticulously groomed. Right eye dark brown natural; left eye matte black prosthetic with glowing amber iris-ring, deliberately non-cosmetic. Dark brown short close-cropped hair. Worn charcoal synthweave long coat over grey long-sleeve shirt, faded canvas satchel across chest, resoled workboots. Standing with forward lean, shoulders hunched, posture of a cinematographer. Scarred knuckles visible. Slight permanent furrow between brows. Year 2226 Great Lakes Metropolitan Zone, moody neon-lit industrial setting, cool and warm light interplay emphasizing the prosthetic eye's glow, cinematic noir atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Atlas Kobayashi-Trujillo-Pham, 183cm heavyset broad-shouldered neo-noir male with warm olive-bronze complexion and golden undertones, reflecting blended Hispanic/Latin American, East Asian, Middle Eastern, Southeast Asian, and South Asian heritage. Angular East Asian cheekbones softened by South Asian fullness, weathered face with decades of monitor-squint lines, Mediterranean-influenced jawline. Salt-and-pepper close-cropped beard meticulously groomed. Right eye dark brown natural; left eye matte black prosthetic with glowing amber iris-ring, deliberately non-cosmetic. Dark brown short close-cropped hair. Worn charcoal synthweave long coat over grey long-sleeve shirt, faded canvas satchel across chest, resoled workboots. Standing with forward lean, shoulders hunched, posture of a cinematographer. Scarred knuckles visible. Slight permanent furrow between brows. Year 2226 Great Lakes Metropolitan Zone, moody neon-lit industrial setting, cool and warm light interplay emphasizing the prosthetic eye\u0027s glow, cinematic noir atmosphere --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Hispanic/Latin American": 42,
     "East Asian": 20.2,
@@ -259,12 +255,6 @@
     "Southeast Asian": 14.3,
     "South Asian": 6.2
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Hispanic/Latin American": {
       "Mexican": {
@@ -298,6 +288,5 @@
         "Tamil": 4.7
       }
     }
-  },
-  "tier": "3"
+  }
 }

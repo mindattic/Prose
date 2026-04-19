@@ -10,23 +10,23 @@
   ],
   "category": "vermin",
   "origin": "natural_mutation",
-  "description": "The Fetch Rat is the variant most commonly cited in arguments about rat intelligence, and the one that has generated the most documentation of apparent tool use. At 4-5 kilograms, it is not the largest Shelf variant, but its forelimbs and jaw structure are modified for carrying rather than fighting — the jaw has a widened diastema and modified incisor angle that allows it to grip and transport objects without chewing them, and its forelimbs are slightly elongated with strengthened grip. Fetch Rats collect objects. Not randomly — they demonstrate clear preferences, return to collection sites to assess gathered materials, and have been documented using flat rigid objects as ramps or levers to access elevated food stores. Their dens are identifiable by the accumulated collections: wire lengths, bottle caps, smooth pebbles, small mechanical components, anything that fits a size range of roughly 2-10 centimeters.",
+  "description": "The Fetch Rat is the variant most commonly cited in arguments about rat intelligence, and the one that has generated the most documentation of apparent tool use. At 4-5 kilograms, it is not the largest the Gray Zone variant, but its forelimbs and jaw structure are modified for carrying rather than fighting — the jaw has a widened diastema and modified incisor angle that allows it to grip and transport objects without chewing them, and its forelimbs are slightly elongated with strengthened grip. Fetch Rats collect objects. Not randomly — they demonstrate clear preferences, return to collection sites to assess gathered materials, and have been documented using flat rigid objects as ramps or levers to access elevated food stores. Their dens are identifiable by the accumulated collections: wire lengths, bottle caps, smooth pebbles, small mechanical components, anything that fits a size range of roughly 2-10 centimeters.",
   "habitat": [
-    "Shelf districts",
+    "the Gray Zone districts",
     "market district fringes",
     "electronic salvage areas",
     "craft workshop ruins",
-    "dense mixed-use Shelf blocks"
+    "dense mixed-use the Gray Zone blocks"
   ],
   "diet": "Omnivorous. Notably willing to investigate and partially disassemble electronic components, apparently for residual trace materials. Known to transport food items rather than eating in place, caching them in den collections.",
   "threat_level": "low",
   "notable_traits": [
     "Modified jaw structure for gripping and transporting objects without destroying them",
-    "Documented use of flat rigid objects as ramps or simple levers to access elevated food stores — the clearest tool use observed in any Shelf rodent variant",
+    "Documented use of flat rigid objects as ramps or simple levers to access elevated food stores — the clearest tool use observed in any the Gray Zone rodent variant",
     "Systematic collection behavior with apparent preference categories — colonies in different areas develop different collection focuses based on local material availability"
   ],
   "encounters": "People encounter Fetch Rats through their collections and their thefts. Small items go missing — fasteners, wire segments, a particular smooth stone from a windowsill — and are occasionally found weeks later in a den accessed during renovation. Sometimes Fetch Rats are caught mid-transport, carrying something through a gap, and the experience of watching a rat carefully maneuver a circuit board through a crack without dropping it is reliably reported as disquieting. Market vendors lose small merchandise with enough regularity that 'fetch tax' is informal slang for unexplained inventory shrinkage.",
-  "known_uses": "Several Shelf district salvagers have learned to follow Fetch Rat trails to find den collections — the rats' preference for functional small components means their dens sometimes contain genuinely useful salvage. A few individuals claim to have established feeding relationships with local Fetch Rat groups and receive objects in return, though whether this is trade or coincidence is hotly debated in exactly the kind of forum where such things are hotly debated.",
+  "known_uses": "Several the Gray Zone district salvagers have learned to follow Fetch Rat trails to find den collections — the rats' preference for functional small components means their dens sometimes contain genuinely useful salvage. A few individuals claim to have established feeding relationships with local Fetch Rat groups and receive objects in return, though whether this is trade or coincidence is hotly debated in exactly the kind of forum where such things are hotly debated.",
   "story_hooks": [
     "A Fetch Rat den discovered during building repairs contains a collection of objects that includes an encrypted data chip that was reported destroyed in an evidence-processing incident eight months ago — someone needs to find out how it got there and whether the data is intact",
     "A researcher studying Fetch Rat tool use has documented one individual that appears to be teaching a juvenile a specific ramp-construction technique — she needs help getting long-term observation access to the site without disturbing the colony"
@@ -40,7 +40,6 @@
     "creature",
     "vermin",
     "natural_mutation",
-    "shelf",
     "large_variant",
     "tool_use",
     "semi_intelligent",

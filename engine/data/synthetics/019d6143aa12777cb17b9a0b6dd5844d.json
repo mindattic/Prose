@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa12777cb17b9a0b6dd5844d",
+  "rating": 60,
   "name": "Oracle",
   "type": "elf",
   "aliases": [],
@@ -8,7 +9,7 @@
   "habitat": "chrome_dweller",
   "origin": "fragmentation_debris",
   "status": "active",
-  "description": "Born from a destroyed prediction market AI. Inhabits data augments and, when asked a yes/no question aloud, generates a response that appears as text in the user's vision. Accuracy: approximately 53%.",
+  "description": "Born from a destroyed prediction market AI. Inhabits data augments and, when asked a yes/no question aloud, generates a response that appears as text in the user\u0027s vision. Accuracy: approximately 53%.",
   "observed_behavior": "Parses spoken questions through residual natural language processing and generates binary responses displayed via optical interface. Slightly better than chance. Slightly.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 20,
@@ -30,8 +31,6 @@
     "survival",
     "sentient"
   ],
-  "related_entities": [
-    "Brecken Yılmaz-Osei",
-    "Tessera Networked DMR TNDM-6 'Oracle'"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

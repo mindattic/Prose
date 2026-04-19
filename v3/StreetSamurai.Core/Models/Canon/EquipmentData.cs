@@ -11,6 +11,7 @@ namespace StreetSamurai.Core.Models.Canon;
 public class EquipmentData : ICanonEntity
 {
     [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
+    [JsonPropertyName("rating")] public double Rating { get; set; } = 0.0;
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("brand_name")] public string BrandName { get; set; } = "";
     [JsonPropertyName("product_name")] public string ProductName { get; set; } = "";

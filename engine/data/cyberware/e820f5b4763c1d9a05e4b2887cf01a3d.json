@@ -21,7 +21,7 @@
     "Some users report intrusive awareness of the tamper-detection system as a persistent low-level anxiety state, particularly in situations involving law enforcement",
     "Healthcare record integration has caused documented cases of insurance premium adjustments and benefit tier changes based on neural health data that users did not knowingly consent to share"
   ],
-  "cultural_context": "The LinkGuard is the most politically charged chip in the consumer market. Its supporters — primarily municipal administrators and civic technocrats — describe it as an elegant solution to benefits fraud, identity theft, and civic disengagement. Its critics, which include most civil liberties organizations in GLMZ, describe it as a surveillance collar for the poor, noting that the Civic Compliance Ordinance effectively forces the city's most vulnerable residents to accept continuous government monitoring as a condition of survival. The chip is deeply stigmatized in Tier 3 and above — being identified as a LinkGuard user marks someone as a benefits recipient, which carries significant social shame. On the Shelf, however, the stigma is more complicated: many residents view the chip as an unavoidable trade-off rather than a disgrace, and mutual-aid networks have grown up around helping users understand what data the Municipal Authority actually collects.",
+  "cultural_context": "The LinkGuard is the most politically charged chip in the consumer market. Its supporters — primarily municipal administrators and civic technocrats — describe it as an elegant solution to benefits fraud, identity theft, and civic disengagement. Its critics, which include most civil liberties organizations in GLMZ, describe it as a surveillance collar for the poor, noting that the Civic Compliance Ordinance effectively forces the city's most vulnerable residents to accept continuous government monitoring as a condition of survival. The chip is deeply stigmatized in Tier 3 and above — being identified as a LinkGuard user marks someone as a benefits recipient, which carries significant social shame. On the Gray Zone, however, the stigma is more complicated: many residents view the chip as an unavoidable trade-off rather than a disgrace, and mutual-aid networks have grown up around helping users understand what data the Municipal Authority actually collects.",
   "known_users": [
     "municipal housing assistance recipients",
     "social income supplement recipients",
@@ -32,8 +32,8 @@
   ],
   "story_hooks": [
     "A legal advocate has obtained internal Municipal Authority data showing that the LinkGuard's Civic Anchor Module is collecting far more than the ordinance authorizes — movement patterns, social graph data, emotional state markers — and selling aggregated profiles to three private data brokers. The advocate needs help getting the evidence out before it disappears.",
-    "Someone has developed a spoofing device that mimics a valid Civic Anchor handshake, allowing LinkGuard users to move through the city without their location being logged — it is selling fast in the Shelf, and both the Municipal Authority and a very different kind of organization want to find its source.",
-    "A routine firmware update pushed to all LinkGuard units citywide contained an anomalous secondary payload that activated once and then deleted itself — no one at NeuralPath or the Municipal Authority will admit to knowing what it did, but twelve hours later, seventeen people in a specific Shelf district quietly stopped appearing in any civic record."
+    "Someone has developed a spoofing device that mimics a valid Civic Anchor handshake, allowing LinkGuard users to move through the city without their location being logged — it is selling fast in the Gray Zone, and both the Municipal Authority and a very different kind of organization want to find its source.",
+    "A routine firmware update pushed to all LinkGuard units citywide contained an anomalous secondary payload that activated once and then deleted itself — no one at NeuralPath or the Municipal Authority will admit to knowing what it did, but twelve hours later, seventeen people in a specific the Gray Zone district quietly stopped appearing in any civic record."
   ],
   "street_price": "Φ820",
   "licensed_price": "Φ1,400",
@@ -60,7 +60,6 @@
     "Rémi Ouédraogo-Vlasenko",
     "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "The Shelf",
     "Tshiamo Vukić-Arellano"
   ]
 }

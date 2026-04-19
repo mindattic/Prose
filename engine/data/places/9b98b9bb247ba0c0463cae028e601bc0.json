@@ -3,7 +3,7 @@
   "type": "place",
   "name": "Palm Leaf",
   "aliases": [],
-  "description": "A South Indian-inspired street food stall in Rogers Park Shelf serving dosas made from a fermented batter of synth-rice and synth-lentil. The dosas are thin, crispy, and served on actual palm leaf plates that the owner, Devi Lindqvist-Naidu, imports from a hydroponics operation in Indiana. A plain dosa with sambar is Φ3. A masala dosa with vat-potato filling is Φ5. The sambar is the real achievement — a complex, sour-spicy broth that Devi makes fresh each morning and that is better than it has any right to be, given the ingredients available at this price point.",
+  "description": "A South Indian-inspired street food stall in Rogers Park the Gray Zone serving dosas made from a fermented batter of synth-rice and synth-lentil. The dosas are thin, crispy, and served on actual palm leaf plates that the owner, Devi Lindqvist-Naidu, imports from a hydroponics operation in Indiana. A plain dosa with sambar is Φ3. A masala dosa with vat-potato filling is Φ5. The sambar is the real achievement — a complex, sour-spicy broth that Devi makes fresh each morning and that is better than it has any right to be, given the ingredients available at this price point.",
   "atmosphere": {
     "sights": [],
     "sounds": [],
@@ -34,5 +34,7 @@
   ],
   "related_entities": [
     "Devi Lindqvist-Naidu"
-  ]
+  ],
+  "zone": "Z3",
+  "controllingCorponation": null
 }

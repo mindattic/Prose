@@ -1,0 +1,47 @@
+{
+  "id": "e43d409a0f88d2a2dff731f22df0c209",
+  "name": "Ouroboros PD-2 'Aegis'",
+  "type": "weapon",
+  "aliases": [],
+  "category": "pistol",
+  "description": "A double-barreled derringer-format pistol chambered in .410/.45 Colt, capable of firing either shotshells or pistol rounds from its two over-under barrels. The Aegis provides maximum close-range versatility in a package small enough to conceal in an ankle holster — one barrel loaded with a .410 buckshot shell for close-range spread, one with a .45 Colt round for aimed fire. The operator selects which barrel fires first via a barrel-select switch on the frame.\n\nOuroboros designed the Aegis for people who want a backup weapon that can handle the two most common self-defense scenarios: an attacker at arm's reach (buckshot) and an attacker at room distance (pistol round). The double-barrel design means only two shots before reloading, but the combination of spread and precision in a pocket-sized package has made the Aegis the most popular backup weapon in GLMZ among security professionals and civilians alike.\n\nThe weapon's compact dimensions and dual-caliber capability have also made it popular in the Gray Zone, where .410 shotshells and .45 Colt rounds are among the most commonly available ammunition types. A Φ600 Aegis loaded with one buckshot shell and one .45 round provides a civilian with two different solutions to two different problems, in a weapon that disappears in an ankle holster and weighs less than a can of soda.",
+  "manufacturer": "OUROBOROS SYSTEMS",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — civilian self-defense permit",
+  "street_price": "Φ600",
+  "base_technologies": [
+    "Dual-caliber over-under barrel",
+    "Barrel-select firing mechanism",
+    "Compact derringer frame"
+  ],
+  "specifications": "caliber: .410 bore / .45 Colt\nbarrels: 2 (over-under)\neffective range: 5 meters (.410) / 15 meters (.45 Colt)\nweight: 0.3 kg\nlength: 140mm\nbarrel length: 75mm\naction: Double-action trigger with barrel select",
+  "tactical_use": "Last-resort backup weapon and civilian self-defense. The Aegis provides two shots of mixed capability in the smallest possible package. Security professionals carry it as a backup to their primary weapon. Civilians carry it as their only weapon.",
+  "cultural_context": "The Aegis has achieved cult status as GLMZ's 'everyone gun' — the weapon that shows up everywhere, from executive ankle holsters to the Gray Zone residents' coat pockets. Its versatility and compact size have made it the most common backup weapon in the city. 'Carrying an Aegis' is so common that it's become a metaphor for basic preparedness.",
+  "known_users": [
+    "Security professionals (backup weapon)",
+    "Civilian self-defense carriers",
+    "the Gray Zone residents",
+    "Corporate employees in lower-tier transit zones"
+  ],
+  "story_hooks": [
+    "An Aegis was used in a justified shooting that has become a cultural flashpoint — a Tier 1 resident shot a Tier 4 corporate employee in self-defense, and the subsequent legal proceedings have exposed the two-tier justice system that treats the same weapon differently depending on who carries it.",
+    "A gunsmith has discovered that a specific production run of Aegis derringers has barrels that are slightly out of alignment — the .410 barrel fires 3 degrees left of point of aim. At buckshot range it doesn't matter. At .45 Colt range, it means missing the target and hitting whatever is next to them. Ouroboros has not issued a recall."
+  ],
+  "ammunition_type": [
+    "410_bore",
+    "45_colt"
+  ],
+  "tags": [
+    "pistol",
+    "weapon",
+    "civilian",
+    "personal defense",
+    "derringer",
+    "compact",
+    "ouroboros",
+    "backup",
+    "tier 2"
+  ],
+  "physical_description": "The Aegis is a compact, utilitarian derringer with a reinforced steel frame finished in matte gunmetal gray, its surfaces scarred by handling and weathered by GLMZ humidity. Twin barrels sit vertically aligned in an over-under configuration, each marked with caliber designations worn half-smooth by repeated checking. A small brass barrel-select lever protrudes from the frame near the hammer, its edges dulled from constant use.",
+  "visual_prompt": "compact derringer pistol, matte gunmetal gray steel, over-under twin barrels, brass selector lever, weathered worn surfaces, detailed product photography, industrial gritty aesthetic, neo-noir lighting, rain-slicked metallic sheen, dark studio background, close-up macro detail, tactical utility design, StreetSamurai cyberpunk"
+}

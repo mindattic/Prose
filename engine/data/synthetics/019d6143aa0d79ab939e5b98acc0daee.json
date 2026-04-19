@@ -12,7 +12,7 @@
   "observed_behavior": "Manipulates communication metadata to increase the probability of specific people interacting. The matches are not random — they are based on compatibility patterns the parent social AI was trained on.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 11,
-  "location": "The Circuit, The Shelf",
+  "location": "The Circuit, the Gray Zone",
   "dti_rating": 0,
   "story_hooks": [
     "Two strangers who would never have met keep ending up in the same places — their augments are being directed by the same Matchmaker"
@@ -26,12 +26,10 @@
     "e.l.f.",
     "war",
     "augment",
-    "shelf",
     "circuit",
     "sentient"
   ],
   "related_entities": [
-    "The Circuit",
-    "The Shelf"
+    "The Circuit"
   ]
 }

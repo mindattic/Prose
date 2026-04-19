@@ -7,7 +7,7 @@
   "aliases": [],
   "category": "sensory",
   "target_system": "ocular (retinal reflective layer)",
-  "description": "Introduces a functional tapetum lucidum — the reflective layer behind the retina that gives cats their night vision and eye-shine. The modification dramatically improves low-light vision, allowing the user to see in conditions that would leave an unmodified human effectively blind. The trade-off is reduced visual acuity in bright light and the distinctive eye-shine visible when light strikes the eyes at the right angle. Combined with prismatic iris resequencing, the result is eyes that glow faintly in darkness — functional and unsettling in equal measure. Helix Biosystems' premium version includes an adaptive dimming response that reduces the bright-light penalty. Street versions lack this refinement and require tinted lenses in daylight. In the Shelf's underlevels, where reliable lighting is a luxury, tapetum integration is considered a practical necessity rather than a vanity modification.",
+  "description": "Introduces a functional tapetum lucidum — the reflective layer behind the retina that gives cats their night vision and eye-shine. The modification dramatically improves low-light vision, allowing the user to see in conditions that would leave an unmodified human effectively blind. The trade-off is reduced visual acuity in bright light and the distinctive eye-shine visible when light strikes the eyes at the right angle. Combined with prismatic iris resequencing, the result is eyes that glow faintly in darkness — functional and unsettling in equal measure. Helix Biosystems' premium version includes an adaptive dimming response that reduces the bright-light penalty. Street versions lack this refinement and require tinted lenses in daylight. In the Gray Zone's underlevels, where reliable lighting is a luxury, tapetum integration is considered a practical necessity rather than a vanity modification.",
   "source_organism": "Felis catus (domestic cat)",
   "manufacturer": "Helix Biosystems",
   "tier_availability": "Tier 1+ (premium adaptive version Tier 3+)",
@@ -37,13 +37,11 @@
     "market",
     "dark",
     "night",
-    "shelf",
     "tier 1",
     "tier 3"
   ],
   "related_entities": [
     "Helix Biosystems",
-    "Prismatic Iris Resequencing",
-    "The Shelf"
+    "Prismatic Iris Resequencing"
   ]
 }

@@ -1,20 +1,19 @@
 {
-  "name": "Deadwall Open — Annual Shelf Street Art Festival",
+  "name": "Deadwall Open — Annual the Gray Zone Street Art Festival",
   "type": "entertainment",
   "category": "festival",
   "subcategory": "street art and mural festival",
-  "creator": "Originally Deadlight Collective; now loosely coordinated by Shelf Arts Syndicate",
-  "description": "A week-long, nominally illegal but widely tolerated festival in which muralists, paste artists, holographic taggers, and AR installation crews claim every available surface in Shelf sectors 9 through 14 for unrestricted public art. Works range from massive multi-story memorial portraits to tiny BCI-triggered audio poems embedded in cracked concrete. The festival has no formal registration, no prize structure, and no corporate sponsors — participation is its own credential.",
+  "creator": "Originally Deadlight Collective; now loosely coordinated by the Gray Zone Arts Syndicate",
+  "description": "A week-long, nominally illegal but widely tolerated festival in which muralists, paste artists, holographic taggers, and AR installation crews claim every available surface in the Gray Zone sectors 9 through 14 for unrestricted public art. Works range from massive multi-story memorial portraits to tiny BCI-triggered audio poems embedded in cracked concrete. The festival has no formal registration, no prize structure, and no corporate sponsors — participation is its own credential.",
   "year": 2191,
   "tier_association": "Tier 1-2",
   "medium": "physical (paint, paste, sculpture), augmented reality, BCI-triggered audio",
-  "cultural_impact": "Deadwall Open has become the primary annual record of Shelf cultural memory, with each year's works documenting living conditions, political grievances, and community joys that no corporate media outlet covers.",
+  "cultural_impact": "Deadwall Open has become the primary annual record of the Gray Zone cultural memory, with each year's works documenting living conditions, political grievances, and community joys that no corporate media outlet covers.",
   "controversy": "Meridian Municipal Authority periodically designates specific walls as 'heritage surfaces' and sends enforcement crews mid-festival to protect them, which artists interpret as selective preservation that erases the most politically charged works.",
   "status": "active",
   "tags": [
     "street art",
     "murals",
-    "Shelf",
     "community",
     "AR",
     "public art",
@@ -25,13 +24,12 @@
   ],
   "story_hooks": [
     "A muralist discovers that a wall she's painted for three consecutive Deadwall Opens is scheduled for demolition — and the building behind it houses forty families with nowhere to go.",
-    "A Tier 3 AR art collector begins quietly archiving Deadwall pieces in a private neural library, and someone on the Shelf finds out and has to decide whether to expose them or negotiate.",
+    "A Tier 3 AR art collector begins quietly archiving Deadwall pieces in a private neural library, and someone in the Gray Zone finds out and has to decide whether to expose them or negotiate.",
     "A piece appears overnight that no one will claim authorship of — an anatomically precise portrait of a corponation executive with documented evidence of a war crime encoded in the brushstrokes."
   ],
   "id": "d3b5badd27474c4d81371b748d9152cd",
   "parent_corponation": "",
   "related_entities": [
-    "Slagworks Industrial",
-    "The Shelf"
+    "Slagworks Industrial"
   ]
 }

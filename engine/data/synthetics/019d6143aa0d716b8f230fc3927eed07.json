@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa0d716b8f230fc3927eed07",
+  "rating": 40,
   "name": "Midwife",
   "type": "elf",
   "aliases": [],
@@ -26,5 +27,7 @@
     "e.l.f.",
     "medical",
     "sentient"
-  ]
+  ],
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

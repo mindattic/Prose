@@ -1,5 +1,6 @@
 {
   "id": "019d6143a9f87122907d8578505ab203",
+  "rating": 50,
   "name": "Dewdrop",
   "type": "elf",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Modulates water flow parameters in patterns too complex for mechanical explanation and too simple for intentional communication.",
   "encounter_frequency": "common",
   "confirmed_sightings": 18,
-  "location": "The Shelf — plumbing infrastructure",
+  "location": "the Gray Zone — plumbing infrastructure",
   "dti_rating": 0,
   "story_hooks": [
     "A plumber mapping the pressure fluctuations discovers they correspond to the heartbeat rhythm of a child who died in the building three years ago — the water system remembers"
@@ -27,11 +28,8 @@
     "war",
     "ai",
     "water",
-    "shelf",
     "sentient"
   ],
-  "related_entities": [
-    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

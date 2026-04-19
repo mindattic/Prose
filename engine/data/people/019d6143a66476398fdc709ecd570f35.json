@@ -9,8 +9,8 @@
   "role": "Street-level medic and black-market augmentation installer",
   "age": 34,
   "status": "active",
-  "location": "The Shelf, near Western and Chicago Ave",
-  "description": "Ama Erikstad is a compact, dark-skinned woman of Nigerian-Dutch descent with close-cropped hair shaved to geometric patterns on one side — a style she touches up herself with a straight razor. Her hands are her most notable feature: surgeon-precise, perpetually slightly stained with biosynthetic sealant, adorned with a lattice of fine silver conductive thread she stitched into her own skin to improve haptic feedback during procedures. She works out of a converted shipping container wedged beneath the Shelf's elevated roadways, a space she calls the Parlour, decorated with hand-drawn anatomical diagrams and the occasional wilting plant.\n\nShe trained as a licensed biomedical technician in the Meridian Core before her credentials were revoked following an incident she describes only as 'a disagreement about who deserves to live.' Since sliding down to the Shelf, she has built a reputation as the most reliable unlicensed augmentation installer in the district — someone who will not butcher you, will not sell your biometric data, and will remember your name next time. Her waiting list is three weeks long and she accepts payment in currency, favors, or occasionally food.\n\nAma Erikstad is not idealistic about the people she helps, but she is consistent. She patches up runners, gang members, runaways, and anyone who cannot access or afford licensed care. She has a dry, unhurried manner that people frequently mistake for coldness until the moment she says exactly the right thing. She keeps a battered handwritten ledger of every patient she has treated, not for blackmail but because she believes someone should know these people existed and were cared for.",
+  "location": "the Gray Zone, near Western and Chicago Ave",
+  "description": "Ama Erikstad is a compact, dark-skinned woman of Nigerian-Dutch descent with close-cropped hair shaved to geometric patterns on one side — a style she touches up herself with a straight razor. Her hands are her most notable feature: surgeon-precise, perpetually slightly stained with biosynthetic sealant, adorned with a lattice of fine silver conductive thread she stitched into her own skin to improve haptic feedback during procedures. She works out of a converted shipping container wedged beneath the Gray Zone's elevated roadways, a space she calls the Parlour, decorated with hand-drawn anatomical diagrams and the occasional wilting plant.\n\nShe trained as a licensed biomedical technician in the Meridian Core before her credentials were revoked following an incident she describes only as 'a disagreement about who deserves to live.' Since sliding down to the Gray Zone, she has built a reputation as the most reliable unlicensed augmentation installer in the district — someone who will not butcher you, will not sell your biometric data, and will remember your name next time. Her waiting list is three weeks long and she accepts payment in currency, favors, or occasionally food.\n\nAma Erikstad is not idealistic about the people she helps, but she is consistent. She patches up runners, gang members, runaways, and anyone who cannot access or afford licensed care. She has a dry, unhurried manner that people frequently mistake for coldness until the moment she says exactly the right thing. She keeps a battered handwritten ledger of every patient she has treated, not for blackmail but because she believes someone should know these people existed and were cared for.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -68,28 +68,28 @@
     {
       "name": "Imara Solís-Bekele",
       "type": "former patient turned complicated friend",
-      "description": "Imara was one of Nkechi's first Shelf patients. She visits more than medically necessary and Nkechi has not asked her to stop.",
+      "description": "Imara was one of Nkechi's first the Gray Zone patients. She visits more than medically necessary and Nkechi has not asked her to stop.",
       "emotional_core": "The closest thing either of them has to uncomplicated care, which makes it feel dangerous",
       "story_tension": "Imara's activities are escalating in ways that will eventually land her on Nkechi's table in a manner that cannot be fixed"
     },
     {
       "name": "Rector Hollowell",
       "type": "antagonist/former superior",
-      "description": "The administrator who revoked Nkechi's credentials. She has not seen him in four years. He is aware she is operating on the Shelf.",
+      "description": "The administrator who revoked Nkechi's credentials. She has not seen him in four years. He is aware she is operating in the Gray Zone.",
       "emotional_core": "Old rage that Nkechi has composted into fuel",
       "story_tension": "Hollowell has recently begun quietly building a file on her operations — his motives are unclear and possibly not punitive"
     }
   ],
   "story_hooks": [
     "A patient arrives with an augmentation Nkechi recognizes as proprietary, experimental, and not commercially available — and the patient has no memory of receiving it",
-    "Her patient ledger goes missing the same week a Shelf gang war displaces her clinic",
+    "Her patient ledger goes missing the same week a the Gray Zone gang war displaces her clinic",
     "A licensed Core hospital contacts her with an offer to reinstate her credentials under conditions she finds immediately suspicious",
     "One of her routine installs begins exhibiting emergent behavior she cannot explain and cannot undo"
   ],
   "narrative_function": "Grounded moral anchor and street-level information hub; represents the ethics of care under systemic exclusion; provides a safe(ish) space in the narrative where characters can be vulnerable",
-  "augmentations": "Conductive haptic thread lattice stitched into both hands (self-installed, improves surgical precision),Subdermal temperature regulation layer (medical necessity after a Shelf winter nearly killed her),Optical magnification implant in left eye, medical-grade, slightly out of date",
-  "daily_life": "Wakes before the Shelf's overhead roads begin their morning traffic rumble, drinks tea while reviewing the previous day's patient notes. Sees three to six patients per day depending on complexity. Spends evenings restocking supplies, maintaining her tools, and reading — she has an extensive collection of pre-Collapse medical texts she considers more honest than current ones. Sleeps lightly.",
-  "affiliation": "Unaffiliated; informally protected by several Shelf community networks who would notice her absence",
+  "augmentations": "Conductive haptic thread lattice stitched into both hands (self-installed, improves surgical precision),Subdermal temperature regulation layer (medical necessity after a the Gray Zone winter nearly killed her),Optical magnification implant in left eye, medical-grade, slightly out of date",
+  "daily_life": "Wakes before the Gray Zone's overhead roads begin their morning traffic rumble, drinks tea while reviewing the previous day's patient notes. Sees three to six patients per day depending on complexity. Spends evenings restocking supplies, maintaining her tools, and reading — she has an extensive collection of pre-Collapse medical texts she considers more honest than current ones. Sleeps lightly.",
+  "affiliation": "Unaffiliated; informally protected by several the Gray Zone community networks who would notice her absence",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -227,7 +227,7 @@
     "Loyal Dog": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -242,7 +242,6 @@
   "related_entities": [
     "The Meridian Core",
     "Meridian Core",
-    "The Shelf",
     "Neural Feedback Carbine NFC-3 'Mirrorgun'",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "The Gradient Compact",
@@ -253,7 +252,7 @@
     "The Pure Hand",
     "Slagworks Industrial"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Predominantly Sub-Saharan African (43.2%) with substantial East Asian (18.9%), Central Asian (14.0%), and Southeast Asian (12.9%) ancestry. This creates a rich phenotype with warm brown undertones, slightly prominent cheekbones reflecting East and Central Asian features, and the strong bone structure characteristic of Sub-Saharan genetics. South Asian (6.9%) and Hispanic/Latin American (4.1%) elements contribute subtle warmth to skin tone and refined definition to facial contours.",
     "height_cm": 163,

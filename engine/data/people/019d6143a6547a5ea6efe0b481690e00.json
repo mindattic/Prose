@@ -9,8 +9,8 @@
   "role": "Local artist, cautionary tale, unlikely ally",
   "age": 34,
   "status": "alive",
-  "location": "The Shelf — three floors below Kyle, near Ashland and Division",
-  "description": "Rowan Thakur used to paint murals. Enormous ones — entire sides of buildings\non the Shelf transformed into color and fury and grief. She painted the\ndrowned temples of Old Harbor from memory. She painted the Spire as a\nneedle injecting poison into the sky. She painted faces of people who\ndisappeared during the Consolidation Wars. Axiom Industries noticed.\n\nThey didn't arrest her. That would've made her a martyr. Instead, a crew\ncaught her in an alley after a commissioned piece for the Collective.\nThey held her down and took her hands. Not her arms — her hands. Surgical.\nCorporate-clean. Left the stumps cauterized and a note: \"Axiom appreciates\nyour talent. We hope you'll redirect it.\"\n\nShe redirected it.\n\nShe went to a back-alley augment shop in the Circuit and had both arms\nreplaced from the elbow down with military-surplus combat prosthetics —\nnot hands, not delicate artist's fingers. Claws. Three curved titanium\ndigits per arm, each one as long as a chef's knife, with hydraulic grip\nstrength that can crush rebar. They are ugly, oversized, and terrifying.\nThey were designed for breaching armored doors, not holding brushes.\n\nShe paints with them anyway.\n\nShe scores the claws across surfaces — walls, metal, skin — and uses\nblood (her own, donated, sometimes not donated) mixed with industrial\npigment as paint. The murals are rougher now. Savage. Claw-marks instead\nof brushstrokes. But somehow more honest. The Shelf loves them more than\nthe old work. Axiom pretends not to notice, which means they're afraid.\n\nShe is thin, sharp-featured, with cropped dark hair that she cuts herself\n(badly, with the claws). Her eyes are the flat calm of someone who has\nalready lost the worst thing they could lose and discovered they're still\nalive. She wears sleeveless shirts so the augments are always visible —\nnot out of pride but out of refusal to hide what was done to her.",
+  "location": "the Gray Zone — three floors below Kyle, near Ashland and Division",
+  "description": "Rowan Thakur used to paint murals. Enormous ones — entire sides of buildings\nin the Gray Zone transformed into color and fury and grief. She painted the\ndrowned temples of Old Harbor from memory. She painted the Spire as a\nneedle injecting poison into the sky. She painted faces of people who\ndisappeared during the Consolidation Wars. Axiom Industries noticed.\n\nThey didn't arrest her. That would've made her a martyr. Instead, a crew\ncaught her in an alley after a commissioned piece for the Collective.\nThey held her down and took her hands. Not her arms — her hands. Surgical.\nCorporate-clean. Left the stumps cauterized and a note: \"Axiom appreciates\nyour talent. We hope you'll redirect it.\"\n\nShe redirected it.\n\nShe went to a back-alley augment shop in the Circuit and had both arms\nreplaced from the elbow down with military-surplus combat prosthetics —\nnot hands, not delicate artist's fingers. Claws. Three curved titanium\ndigits per arm, each one as long as a chef's knife, with hydraulic grip\nstrength that can crush rebar. They are ugly, oversized, and terrifying.\nThey were designed for breaching armored doors, not holding brushes.\n\nShe paints with them anyway.\n\nShe scores the claws across surfaces — walls, metal, skin — and uses\nblood (her own, donated, sometimes not donated) mixed with industrial\npigment as paint. The murals are rougher now. Savage. Claw-marks instead\nof brushstrokes. But somehow more honest. the Gray Zone loves them more than\nthe old work. Axiom pretends not to notice, which means they're afraid.\n\nShe is thin, sharp-featured, with cropped dark hair that she cuts herself\n(badly, with the claws). Her eyes are the flat calm of someone who has\nalready lost the worst thing they could lose and discovered they're still\nalive. She wears sleeveless shirts so the augments are always visible —\nnot out of pride but out of refusal to hide what was done to her.",
   "psychology": {
     "facet_weights": {
       "wound": 0.9,
@@ -63,7 +63,7 @@
     {
       "name": "Kyle",
       "type": "neighbor / mutual respect",
-      "description": "They live in the same building on the Shelf. They don't talk much.\nBut there's a recognition — two people who lost something essential\nand rebuilt themselves around the absence. Kyle sees the claws and\nunderstands discipline. Maren sees the katana and understands tools\nthat are also wounds. She once painted his silhouette on a wall\nwithout asking. He never mentioned it. They both know.",
+      "description": "They live in the same building in the Gray Zone. They don't talk much.\nBut there's a recognition — two people who lost something essential\nand rebuilt themselves around the absence. Kyle sees the claws and\nunderstands discipline. Maren sees the katana and understands tools\nthat are also wounds. She once painted his silhouette on a wall\nwithout asking. He never mentioned it. They both know.",
       "emotional_core": "",
       "story_tension": ""
     },
@@ -237,7 +237,7 @@
     "Berserker": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -257,7 +257,6 @@
     "Axiom Industries",
     "Dredge Mining Collective",
     "The Circuit",
-    "The Shelf",
     "The Spire",
     "Titanium",
     "Circuit",
@@ -267,7 +266,7 @@
     "Frost Boudiaf",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Predominantly South Asian (52.3%) with significant Southeast Asian (24.4%), Sub-Saharan African (9.1%), and Hispanic/Latin American (9.0%) ancestry, with minor Northern European (5.2%) contribution. The genetic blend manifests in warm deep brown skin with golden undertones characteristic of South Asian-African ancestry fusion. Southeast Asian ancestry contributes forward-set eye placement and prominent, defined cheekbones with characteristic width. South Asian heritage shapes the refined jawline and forward facial structure. Sub-Saharan African genetics enriches the melanin depth and warm undertone saturation. The rare Northern European contribution adds subtle dimension to the overall warm palette without creating discordance.",
     "height_cm": 168,
@@ -277,7 +276,7 @@
     "hair_style": "Cropped close to scalp, uneven and jagged — self-cut with the claws, deliberately crude",
     "hair_length": "Short",
     "eye_color": "Dark brown, flat and distant",
-    "skin_tone": "Deep warm brown with golden undertones, the direct result of South Asian-Southeast Asian-African genetic convergence. The melanin-rich substrate retains underlying richness despite Shelf-tier malnutrition and stress-pallor overlay. Complexion shows the strain of deprivation but the warm golden-bronze undertone persists beneath surface wear.",
+    "skin_tone": "Deep warm brown with golden undertones, the direct result of South Asian-Southeast Asian-African genetic convergence. The melanin-rich substrate retains underlying richness despite the Gray Zone-tier malnutrition and stress-pallor overlay. Complexion shows the strain of deprivation but the warm golden-bronze undertone persists beneath surface wear.",
     "complexion": "Sharp, prominent cheekbones with Southeast Asian width and definition; hollow cheeks from malnutrition; thin-lipped mouth. Bone structure reflects blended heritage — Southeast Asian cheekbone prominence with forward-tilted eye-set combined with South Asian jawline refinement and angular facial projection. Skin shows old bruising marks and small scars consistent with alley violence. No cosmetic modifications. Haunted expression — eyes that have witnessed amputation and chosen defiance.",
     "distinguishing_marks": [
       "Surgical cauterization scars at both wrists where hands were severed, approximately 8cm across each, pale and smooth despite trauma",
@@ -289,7 +288,7 @@
     "posture_movement": "Stands with shoulders forward, habitual defensive posture. Moves efficiently, economically — no wasted motion. The claws make her naturally careful; she doesn't gesture wildly. When painting, she becomes trance-like, body loose and focused. Her movements with the claws are deliberate and precise despite their brutal appearance. She favors her left side when resting, as if protecting something.",
     "clothing_style": "Sleeveless tank tops or cut-off shirts (Tier 5, worn-out second-hand) in dark colors to hide paint stains. Industrial cargo pants, multiple pockets, patched at the knees. No corpo branding. Heavy boots with welded metal plating on the toes. A long, battered duster coat (original color unknown) worn over everything when moving through Tier-1 areas. No jewelry except a corroded silver ring on what remains of her right thumb — possibly a pre-amputation remnant kept as a relic."
   },
-  "image_prompt": "Rowan Thakur, GLMZ, lean angular South Asian-Southeast Asian-African mixed-heritage woman with deep warm brown skin and golden undertones, prominent Southeast Asian cheekbones and forward-set dark brown eyes, sharp haunted expression. Self-cut jagged black hair close to scalp. Both arms replaced with grotesque military-surplus titanium combat prosthetics terminating in three wickedly sharp curved digits, exposed hydraulic cylinders, rust-stained gunmetal finish leaking dark fluid. Sleeveless dark tank top revealing surgical cauterization scars at wrists and forearm paint-handling scars. Pale dried blood stains on chest and neck. Industrial patched cargo pants, welded metal-plated boots. Long battered duster coat. Corroded silver ring on remaining right thumb. Standing in defensive forward-shoulder posture in dimly-lit Shelf-tier alley, neon grime-haze lighting, exhausted defiant mood, breathing paint-stained air, walls around her show her mural work, haunted but unbroken. --ar 2:3 --v 6",
+  "image_prompt": "Rowan Thakur, GLMZ, lean angular South Asian-Southeast Asian-African mixed-heritage woman with deep warm brown skin and golden undertones, prominent Southeast Asian cheekbones and forward-set dark brown eyes, sharp haunted expression. Self-cut jagged black hair close to scalp. Both arms replaced with grotesque military-surplus titanium combat prosthetics terminating in three wickedly sharp curved digits, exposed hydraulic cylinders, rust-stained gunmetal finish leaking dark fluid. Sleeveless dark tank top revealing surgical cauterization scars at wrists and forearm paint-handling scars. Pale dried blood stains on chest and neck. Industrial patched cargo pants, welded metal-plated boots. Long battered duster coat. Corroded silver ring on remaining right thumb. Standing in defensive forward-shoulder posture in dimly-lit the Gray Zone-tier alley, neon grime-haze lighting, exhausted defiant mood, breathing paint-stained air, walls around her show her mural work, haunted but unbroken. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 52.3,
     "Southeast Asian": 24.4,

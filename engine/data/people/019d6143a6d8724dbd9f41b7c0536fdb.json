@@ -1,5 +1,6 @@
 {
   "id": "019d6143a6d8724dbd9f41b7c0536fdb",
+  "rating": 70,
   "type": "character",
   "name": "Onyx Shirazi",
   "aliases": [],
@@ -43,7 +44,7 @@
     "secret": "Somadina Karlsen-Sow has a child in another city, being raised by someone else. Sends Φ2,000 monthly under an alias. Has never visited."
   },
   "speech_patterns": {
-    "vocabulary": "Shelf street dialect — layered slang, rhythm-heavy, half the meaning is in the cadence.",
+    "vocabulary": "the Gray Zone street dialect — layered slang, rhythm-heavy, half the meaning is in the cadence.",
     "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
     "verbal_tics": [
       "Uses old pre-collapse slang that nobody else remembers",
@@ -53,7 +54,11 @@
       "\"Hold still. This is going to hurt and I don't care.\"",
       "\"I can keep you alive through almost anything. What I can't do is make you grateful.\"",
       "\"Blood type? No, I don't need your blood type. I need you to stop moving.\""
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
@@ -269,22 +274,11 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Volkov-Saito Precision VSX-7 'Strelok'",
-    "Arcturus Defense Solutions ARC-SL9 'Ghost Protocol'",
-    "Osmotic Pressure Blade"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [
-    "Volkov-Saito Precision VSX-7 'Strelok'",
-    "Arcturus Defense Solutions ARC-SL9 'Ghost Protocol'"
-  ],
-  "related_entities": [
-    "Geartown",
-    "Lazarus LX-2 'Lab Rat'",
-    "Compass Rose",
-    "GLMZ"
-  ],
-  "district": "The Circuit",
   "physical_description": {
     "heritage": "Pan-global genetic mosaic: Middle Eastern (31.1%) and South Asian (22.4%) form the dominant base, creating warm olive undertones and defined bone structure. Southeast Asian (20.9%) adds subtle softness to facial proportions and eye shape. Northern European (14.6%) contributes angular cheekbones and jawline definition. Sub-Saharan African (6.1%) enriches skin depth and adds warmth to overall tone. Hispanic/Latin American (4.9%) provides subtle complexity to feature definition. The result is a striking, non-categorical phenotype: strong angular architecture softened by rounded mid-facial proportions, warm medium-deep skin with golden undertones, and eyes that reflect the blend of their full ancestry.",
     "height_cm": 188,
@@ -306,6 +300,7 @@
     "clothing_style": "Tier 3-4 functional wear. Black synth-weave cargo pants with multiple pockets for equipment. Form-fitting gray undershirt beneath a reinforced tactical vest with medical patches and subtle armor plating. Worn black boots with non-slip soles rated for surgical environments and rough terrain. A long neutral-colored coat—often leather-effect synthetic—that allows concealment of medical kit and provides some ballistic resistance. Minimal jewelry; a simple wrist display for job communications. Everything is well-maintained but shows functional wear, not fashion concern."
   },
   "image_prompt": "Onyx Shirazi, pan-global neo-noir operative, 2226. Tall lean figure (188cm) with striking warm golden-olive complexion reflecting Middle Eastern, South Asian, and Sub-Saharan heritage softened by Southeast Asian and Northern European features. Strong angular jawline and high cheekbones, slightly broad mid-face, dark brown assessing eyes with subtle epicanthic folds. Black hair with temple gray, slicked back. Full brushed chrome cybernetic right arm with visible pneumatic actuators. Thick pale surgical scar down left neck, minor burn marks visible. Wearing black synth-weave cargo pants, gray undershirt, reinforced tactical vest with medical patches, long neutral synthetic-leather coat, worn black tactical boots. Posture is balanced and efficient, gaze clinical. Standing in neon-lit surgical bay or dimly lit job briefing space, cool blue and amber lighting highlighting metallic arm and warm skin tones. GLMZ 2200s aesthetic, functional and weathered. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Middle Eastern": 31.1,
     "South Asian": 22.4,
@@ -314,12 +309,6 @@
     "Sub-Saharan African": 6.1,
     "Hispanic/Latin American": 4.9
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Middle Eastern": {
       "Arab Levantine": {
@@ -372,6 +361,5 @@
         "Ecuadorian": 1.3
       }
     }
-  },
-  "tier": "4"
+  }
 }

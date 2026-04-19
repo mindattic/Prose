@@ -9,7 +9,7 @@
   "role": "Climate refugee child — unaccompanied minor in transit",
   "age": 12,
   "status": "active",
-  "location": "Waukegan Industrial Shelf — sleeps in the migrant processing annex, spends days in the surrounding industrial lots, near Lake Shore and Navy Pier",
+  "location": "Waukegan Industrial the Gray Zone — sleeps in the migrant processing annex, spends days in the surrounding industrial lots, near Lake Shore and Navy Pier",
   "description": "Sol Árnason-Karimi-Lindström is small for twelve, with the particular watchfulness of a child who has learned to read rooms before entering them. She has her mother's wide-set eyes — very dark, with a double ring of amber at the iris edge that might be a natural mutation or might be the residue of a cheap geneware treatment she does not remember receiving. Her skin is a warm medium brown, her hair grown out unevenly from what was once a close cut, and she has a scar along the jawline from broken transit container glass that she accepts as simply part of her face. She carries a bag that is larger than seems reasonable for her size, and its contents are carefully organized: water purification tabs, a change of clothes, a notebook filled with tiny writing, and a collection of small objects she has found and kept for reasons she does not always explain.\n\nSol Árnason-Karimi-Lindström is not a sad child. She is a serious one. She has been in the Waukegan processing annex for four months, technically awaiting placement, practically forgotten by a system that has more cases than it can hold. She has mapped the entire industrial shelf by foot, knows which warehouses leave food waste accessible, which security patrols are on which rotation, and which of the adult migrants in the annex are safe to sleep near. She is not looking for someone to save her. She is looking for someone to go to Meridian Core with.",
   "psychology": {
     "facet_weights": {
@@ -60,7 +60,7 @@
   "narrative_function": "Perspective character who reveals the human cost of the city's margins. Practical guide to the Waukegan shelf's hidden geography. Unexpected information source — she has been watching and listening for four months with nothing else to do. Potential ward, companion, or moral weight for any group moving through the area.",
   "augmentations": "None — the amber iris rings may be a side effect of something, but she does not know what.",
   "daily_life": "Wakes early, eats whatever is available at the annex distribution point, then spends the day ranging the industrial shelf — mapping, observing, occasionally running small errands for adult migrants in exchange for food or information. Returns before the annex locks for the night.",
-  "affiliation": "Technically: Waukegan Industrial Shelf migrant processing annex. Practically: herself.",
+  "affiliation": "Technically: Waukegan Industrial the Gray Zone migrant processing annex. Practically: herself.",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -160,7 +160,7 @@
     "Sentinel": 0.7
   },
   "operating_territory": {
-    "home_turf": "Waukegan Industrial Shelf",
+    "home_turf": "Waukegan Industrial the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -202,7 +202,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2200 — Arrives at Waukegan Industrial Shelf processing annex; has been there four months",
+      "event": "2200 — Arrives at Waukegan Industrial the Gray Zone processing annex; has been there four months",
       "consequences": "",
       "body_changes": [],
       "status_change": ""

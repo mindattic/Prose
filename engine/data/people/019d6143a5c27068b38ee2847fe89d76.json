@@ -1,5 +1,6 @@
 {
   "id": "019d6143a5c27068b38ee2847fe89d76",
+  "rating": 26.7,
   "type": "character",
   "name": "Lark Sigurdsson",
   "aliases": [],
@@ -30,7 +31,11 @@
     "vocabulary": "",
     "cadence": "",
     "verbal_tics": [],
-    "example_lines": []
+    "example_lines": [],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [],
@@ -95,24 +100,20 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Mantis' Spring-Loaded Wrist Blade"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Circuit",
-    "Circuit"
-  ],
-  "district": "The Circuit",
   "physical_description": {
-    "heritage": "Southeast Asian dominant (68.6%) with Hispanic/Latin American (16.5%) and Northern European (14.9%) ancestry — warm medium-deep brown skin with golden undertones characteristic of Southeast Asian heritage, enriched by subtle Latin American warmth and Northern European refinement. High, prominent cheekbones and defined jawline reflect Southeast Asian bone structure with slight Latin American softness around the lower face.",
+    "heritage": "Southeast Asian dominant (68.6%) with Hispanic/Latin American (16.5%) and Northern European (14.9%) ancestry \u2014 warm medium-deep brown skin with golden undertones characteristic of Southeast Asian heritage, enriched by subtle Latin American warmth and Northern European refinement. High, prominent cheekbones and defined jawline reflect Southeast Asian bone structure with slight Latin American softness around the lower face.",
     "height_cm": 172,
     "weight_kg": 61,
-    "build": "Lean and athletic with defined shoulders and core — a body built for quick movement through crowds and quick exits from bad situations",
+    "build": "Lean and athletic with defined shoulders and core \u2014 a body built for quick movement through crowds and quick exits from bad situations",
     "hair_color": "Natural black with subtle burgundy undertones",
     "hair_style": "Sleek high ponytail pulled tight against the scalp, with two thin braids woven into the left side",
     "hair_length": "Long",
-    "eye_color": "Dark brown with a slight amber rim — natural",
+    "eye_color": "Dark brown with a slight amber rim \u2014 natural",
     "skin_tone": "Warm medium-deep brown with golden undertones, luminous and even",
     "complexion": "Clear, well-maintained skin with sharp Southeast Asian cheekbones and defined jawline softened slightly by Latin American ancestry; minimal makeup, favoring function over aesthetics",
     "distinguishing_marks": [
@@ -120,22 +121,17 @@
       "Faint burn mark on the inside of her right wrist from contact with a heated door frame during a venue evacuation",
       "Minimalist tattoo on her inner left forearm: a circuit board pattern in dark gray ink, roughly 3cm across"
     ],
-    "visible_augmentations": "Subdued — a thin line of bioluminescent circuitry visible along her left temple when light hits it at certain angles, barely noticeable. Likely subcutaneous neural interface. Fingernails appear reinforced with subtle metallic sheen.",
-    "posture_movement": "Moves with economical grace, always aware of exits and sightlines. Stands with weight balanced on the balls of her feet. Speaks in measured tones with practiced hand gestures. Rarely sits fully back in chairs — always poised for quick movement.",
-    "clothing_style": "Tier 3-4 nightlife aesthetic: fitted matte-black synthetic jacket with subtle reflective piping, charcoal combat pants with reinforced pockets and knee padding, leather ankle boots with grippy soles. Minimal jewelry — a stainless steel watch on her right wrist, a single silver ring on her left middle finger. No visible corporation branding; clothing is practical and unadorned."
+    "visible_augmentations": "Subdued \u2014 a thin line of bioluminescent circuitry visible along her left temple when light hits it at certain angles, barely noticeable. Likely subcutaneous neural interface. Fingernails appear reinforced with subtle metallic sheen.",
+    "posture_movement": "Moves with economical grace, always aware of exits and sightlines. Stands with weight balanced on the balls of her feet. Speaks in measured tones with practiced hand gestures. Rarely sits fully back in chairs \u2014 always poised for quick movement.",
+    "clothing_style": "Tier 3-4 nightlife aesthetic: fitted matte-black synthetic jacket with subtle reflective piping, charcoal combat pants with reinforced pockets and knee padding, leather ankle boots with grippy soles. Minimal jewelry \u2014 a stainless steel watch on her right wrist, a single silver ring on her left middle finger. No visible corporation branding; clothing is practical and unadorned."
   },
   "image_prompt": "Lark Sigurdsson, 172cm lean athletic Southeast Asian-dominant woman with golden-toned warm medium-deep brown skin, sharp Southeast Asian cheekbones and defined jawline, dark brown eyes with amber rim. Long black hair with burgundy undertones pulled into sleek high ponytail with two thin braids on left side. Small scar above left eyebrow, faint burn mark on right inner wrist, minimalist circuit board tattoo on left forearm. Subdued bioluminescent circuitry along left temple, reinforced metallic fingernails. Wearing fitted matte-black synthetic jacket with reflective piping, charcoal combat pants with knee padding, black leather ankle boots. Stainless steel watch on right wrist, silver ring on left middle finger. Poised stance balanced on balls of feet, alert expression. GLMZ nightlife venue setting, neon accent lighting hitting temple augmentation, moody atmospheric depth of field. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Southeast Asian": 68.6,
     "Hispanic/Latin American": 16.5,
     "Northern European": 14.9
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Southeast Asian": {
       "Indonesian": {
@@ -161,6 +157,5 @@
         "German": 1.6
       }
     }
-  },
-  "tier": "3"
+  }
 }

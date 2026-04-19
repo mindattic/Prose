@@ -3,7 +3,7 @@
   "name": "Ferrochem ChemGuard Pressline Gauntlet",
   "type": "apparel",
   "category": "gloves",
-  "description": "Heavy-duty elbow-length gauntlets in matte acid-yellow nitrile over a woven aramid liner, heat-stamped with Ferrochem's black triangle hazard marks along the cuff. The palms are triple-laminated; the fingertips reinforced with ribbed grip ridges worn smooth on older pairs. Color fades from handling — veterans' gloves run pale gold at the fingers, vivid at the wrist.\n\nStandard issue on Ferrochem processing floors and widely adopted across Tier 1-2 chemical handling jobs. Shelf workers scavenge them from disposal bins; the real ones resist acids that eat substitutes in minutes.",
+  "description": "Heavy-duty elbow-length gauntlets in matte acid-yellow nitrile over a woven aramid liner, heat-stamped with Ferrochem's black triangle hazard marks along the cuff. The palms are triple-laminated; the fingertips reinforced with ribbed grip ridges worn smooth on older pairs. Color fades from handling — veterans' gloves run pale gold at the fingers, vivid at the wrist.\n\nStandard issue on Ferrochem processing floors and widely adopted across Tier 1-2 chemical handling jobs. the Gray Zone workers scavenge them from disposal bins; the real ones resist acids that eat substitutes in minutes.",
   "tier_association": "Tier 1-2",
   "materials": [
     "nitrile triple-laminate",
@@ -15,7 +15,7 @@
   "what_it_says": "You work with materials that eat through lesser gear, and you cannot afford to stop.",
   "worn_by": [
     "chemical plant floor workers",
-    "Shelf scavengers handling reclaimed industrial waste",
+    "the Gray Zone scavengers handling reclaimed industrial waste",
     "waste processing crews",
     "unlicensed chemists"
   ],
@@ -24,8 +24,8 @@
   "aug_compatible": false,
   "gene_compatible": false,
   "story_hooks": [
-    "A pair found in a Shelf drain tunnel still has a wrist-tag with a worker ID — the worker is listed as missing on Ferrochem's internal incident log.",
-    "Knockoff versions circulate the Shelf market, indistinguishable until the acid hits — someone is deliberately flooding the market with fakes.",
+    "A pair found in a the Gray Zone drain tunnel still has a wrist-tag with a worker ID — the worker is listed as missing on Ferrochem's internal incident log.",
+    "Knockoff versions circulate the Gray Zone market, indistinguishable until the acid hits — someone is deliberately flooding the market with fakes.",
     "A Tier 3 lab inspector wears a pair under formal sleeves during a facility audit, suggesting they know something about today's inspection that the workers don't."
   ],
   "tags": [
@@ -44,8 +44,7 @@
   "related_entities": [
     "Ambrosia Fekete-Waiyaki",
     "Narrowcast",
-    "The Bazaar",
-    "The Shelf"
+    "The Bazaar"
   ],
   "physical_description": {
     "visual_profile": "Industrial-grade elbow-length gauntlets with a distinctly utilitarian silhouette. The matte acid-yellow dominates, creating high visibility on processing floors. Sharp black hazard triangles march down the cuff in rigid rows—unmistakably corporate issue. The form is slightly bulky at the wrist, tapering toward reinforced fingertips.",

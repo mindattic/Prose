@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa0e7ad7b8e9f90488783cca",
+  "rating": 70,
   "name": "Mirrorface",
   "type": "elf",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Overlays stored facial recognition data onto live visual feed. The substitutions are brief, vivid, and deeply unsettling.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 14,
-  "location": "The Circuit, The Shelf",
+  "location": "The Circuit, the Gray Zone",
   "dti_rating": 0,
   "story_hooks": [
     "A freelancer sees a dead friend's face on a stranger in a crowd and follows them — into a trap or a revelation"
@@ -25,12 +26,9 @@
     "chrome dweller",
     "e.l.f.",
     "augment",
-    "shelf",
     "circuit",
     "sentient"
   ],
-  "related_entities": [
-    "The Circuit",
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

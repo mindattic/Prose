@@ -15,12 +15,12 @@
   "functionality": "Crush-resistant ribcage lattice absorbs lateral pressure. Rebreather filters methane, silica dust, and particulate. Knee lockouts stabilize crawl positions. Spine dampeners reduce repetitive impact injury during jackhammer operation. Helmet HUD displays structural stress readouts (when functional).",
   "what_it_says": "This person works in places where the ceiling can kill you, and they've survived long enough to patch their gear more than once.",
   "worn_by": [
-    "Shelf tunnel scavengers",
+    "the Gray Zone tunnel scavengers",
     "unlicensed ore extractors",
     "infrastructure salvagers",
     "sewer network runners"
   ],
-  "manufacturer": "Ashgrain (street label, Shelf-manufactured)",
+  "manufacturer": "Ashgrain (street label, the Gray Zone-manufactured)",
   "price_range": "Φ180 – Φ420 (used/patched)",
   "aug_compatible": true,
   "gene_compatible": false,
@@ -35,7 +35,6 @@
     "mining",
     "tunneling",
     "hazard",
-    "shelf",
     "full-body",
     "rebreather",
     "industrial"

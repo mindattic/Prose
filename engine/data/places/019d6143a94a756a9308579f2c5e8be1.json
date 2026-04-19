@@ -56,7 +56,7 @@
   ],
   "connections": {
     "adjacent_to": [
-      "The Shelf",
+      "the Gray Zone",
       "Old Harbor",
       "Substation Null"
     ],
@@ -107,5 +107,7 @@
   "related_entities": [
     "Tessera Industries Void Grenade VG-1 'Black Hole'",
     "Full Clearance (The Erasure Mix)"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

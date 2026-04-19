@@ -4,17 +4,17 @@
   "category": "uniform",
   "subcategory": "corporate_office_wear",
   "manufacturer": "Daybreak Appliances",
-  "description": "Ouroboros field adjusters spend their working hours in places that corporate offices are not — accident sites, contested claim zones, post-incident industrial floors, and occasionally the outer Shelf where clients in arrears need to be located. Their uniform coat reflects this. The outer shell is a deep charcoal weatherproof membrane bonded to a thermal mid-layer, rated for GLMZ's lake-effect winters and the ambient chemical mist that drifts in from the refinery districts. The Ouroboros serpent-circle is embossed on the left chest in a self-healing polymer print that resists abrasion and fading. Breast and inner pockets are reinforced with RFID-shielded lining to protect the claim tablets and biometric scanners adjusters carry in the field.\n\nThe coat is designed to be professional enough to enter a Tier 3 business lobby and durable enough to walk a flood-damaged Tier 1 basement without destroying itself. Adjusters describe this as the coat's defining tension — it must look like it belongs in a boardroom and survive a demolition site. Most field adjusters develop a specific relationship with their coat over the years, treating it as a work tool rather than clothing. The coat is replaced on a three-year cycle by Ouroboros, and many adjusters negotiate to keep their old ones as a condition of renewal.",
+  "description": "Ouroboros field adjusters spend their working hours in places that corporate offices are not — accident sites, contested claim zones, post-incident industrial floors, and occasionally the outer the Gray Zone where clients in arrears need to be located. Their uniform coat reflects this. The outer shell is a deep charcoal weatherproof membrane bonded to a thermal mid-layer, rated for GLMZ's lake-effect winters and the ambient chemical mist that drifts in from the refinery districts. The Ouroboros serpent-circle is embossed on the left chest in a self-healing polymer print that resists abrasion and fading. Breast and inner pockets are reinforced with RFID-shielded lining to protect the claim tablets and biometric scanners adjusters carry in the field.\n\nThe coat is designed to be professional enough to enter a Tier 3 business lobby and durable enough to walk a flood-damaged Tier 1 basement without destroying itself. Adjusters describe this as the coat's defining tension — it must look like it belongs in a boardroom and survive a demolition site. Most field adjusters develop a specific relationship with their coat over the years, treating it as a work tool rather than clothing. The coat is replaced on a three-year cycle by Ouroboros, and many adjusters negotiate to keep their old ones as a condition of renewal.",
   "tier_availability": "Tier 2-3",
   "price": "Φ265",
   "augment_compatible": true,
   "geneware_compatible": false,
   "durability": "high",
   "legal_status": "legal",
-  "cultural_context": "An Ouroboros field adjuster arriving at a claim site is a complicated presence. They represent money — the possibility of a payout — and also the machinery that decides whether that payout happens. In Tier 1 and 2 communities, the coat is recognized and produces a specific social calculation: cooperate, or don't. Adjusters who work the Shelf long enough learn to read that calculation quickly.",
+  "cultural_context": "An Ouroboros field adjuster arriving at a claim site is a complicated presence. They represent money — the possibility of a payout — and also the machinery that decides whether that payout happens. In Tier 1 and 2 communities, the coat is recognized and produces a specific social calculation: cooperate, or don't. Adjusters who work the Gray Zone long enough learn to read that calculation quickly.",
   "story_hooks": [
-    "A player encounters a dead field adjuster in a Shelf building collapse — their claim tablet is locked but still transmitting.",
-    "An adjuster arrives to assess a claim that, if paid out, would destabilize a local Shelf community's relationship with a corponation.",
+    "A player encounters a dead field adjuster in a the Gray Zone building collapse — their claim tablet is locked but still transmitting.",
+    "An adjuster arrives to assess a claim that, if paid out, would destabilize a local the Gray Zone community's relationship with a corponation.",
     "Someone is impersonating an Ouroboros adjuster to gain access to post-incident sites before legitimate investigators arrive."
   ],
   "tags": [
@@ -36,8 +36,7 @@
     "GLMZ",
     "Ouroboros Energy",
     "Self-Healing Polymer",
-    "The Nearfield",
-    "The Shelf"
+    "The Nearfield"
   ],
   "physical_description": {
     "visual_profile": "A structured, authoritative coat with a professional silhouette that reads as both corporate and field-hardened. The deep charcoal creates a neutral, no-nonsense presence. The embossed Ouroboros serpent on the left chest is the only decorative element—a corporate sigil that marks the wearer as an official arbiter. The coat projects competence and institutional backing without ostentation.",

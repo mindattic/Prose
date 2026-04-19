@@ -4,7 +4,7 @@
   "type": "entertainment",
   "category": "subculture",
   "subcategory": "aug-positive community",
-  "description": "Open Architecture is a politically charged aug-positive subculture that advocates for open-source, self-installed, and community-repaired augmentation as a direct challenge to corponation control of the cyberware market. Members — called 'Open Builds' — document their own augmentation installations, share schematics through Underworld repositories, and gather at community 'build nights' in Shelf workshops where volunteer technicians perform installations and repairs outside the licensed corporate supply chain. The movement has its own internal credentialing system for technicians, called 'socket trust,' which is community-verified rather than corporate-licensed. Fashion markers include deliberately exposed chrome with visible modification seams, color-coded port covers indicating what systems are running open-source firmware, and the movement's symbol — a wrench overlaid on a circuit node — tattooed or etched near installation sites. The movement is fiercely ideological: paid corporate aug work is called 'closed flesh,' and members who switch to proprietary systems are said to have 'locked.'",
+  "description": "Open Architecture is a politically charged aug-positive subculture that advocates for open-source, self-installed, and community-repaired augmentation as a direct challenge to corponation control of the cyberware market. Members — called 'Open Builds' — document their own augmentation installations, share schematics through Underworld repositories, and gather at community 'build nights' in the Gray Zone workshops where volunteer technicians perform installations and repairs outside the licensed corporate supply chain. The movement has its own internal credentialing system for technicians, called 'socket trust,' which is community-verified rather than corporate-licensed. Fashion markers include deliberately exposed chrome with visible modification seams, color-coded port covers indicating what systems are running open-source firmware, and the movement's symbol — a wrench overlaid on a circuit node — tattooed or etched near installation sites. The movement is fiercely ideological: paid corporate aug work is called 'closed flesh,' and members who switch to proprietary systems are said to have 'locked.'",
   "origin_year": 2196,
   "tier_association": "Tier 1-2",
   "status": "active",
@@ -23,7 +23,7 @@
   "story_hooks": [
     "A critical vulnerability in a widely used Open Architecture firmware package is being exploited to brick installations remotely — and the attack pattern suggests it originated from inside the movement, not from a corporation.",
     "A socket-trust technician has gone missing after successfully reverse-engineering a piece of military-grade corporate chrome and publishing the schematics — the movement needs to know if they were taken, went into hiding, or sold out.",
-    "A Tier 3 open-build enthusiast with no Shelf connections has been using the movement's resources while secretly reporting installation locations to a corponation — and the community is debating what justice looks like when they can't call the law."
+    "A Tier 3 open-build enthusiast with no the Gray Zone connections has been using the movement's resources while secretly reporting installation locations to a corponation — and the community is debating what justice looks like when they can't call the law."
   ],
   "tags": [
     "augmentation",
@@ -31,7 +31,6 @@
     "cyberware",
     "anti-corporate",
     "Tier-1",
-    "Shelf",
     "community-tech",
     "chrome",
     "political",

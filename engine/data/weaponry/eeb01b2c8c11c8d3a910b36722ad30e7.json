@@ -4,7 +4,7 @@
   "type": "weapon",
   "aliases": [],
   "category": "revolver",
-  "description": "The Meridian Munitions Wheelgun-38 is a six-shot double-action revolver chambered in .38 Special, built with a carbon steel frame and a four-inch barrel. It is the cheapest revolver available in GLMZ, manufactured using the same cost-minimization approach that defines all Meridian Munitions products. The finish is a flat black oxide that provides minimal corrosion resistance, and the grips are hard rubber with no contouring.\n\nThe Roundhouse exists because a significant portion of GLMZ's Shelf population distrusts semi-automatic pistols. Revolvers are mechanically simpler — no magazines to lose, no slides to rack, no safeties to forget. For residents with minimal firearms training, the revolver's simplicity is its primary feature: load it, point it, pull the trigger. The heavy double-action trigger pull serves as both a safety mechanism and a quality-control compromise.\n\nThe weapon's reliability is its saving grace. Where a Payday might jam, a Roundhouse will fire. The .38 Special round provides adequate stopping power against unarmored targets, and the six-round cylinder doesn't require counting rounds or managing reloads under stress. For Shelf residents who want 'a gun that works when I need it to work,' the Roundhouse delivers on that promise and nothing more.",
+  "description": "The Meridian Munitions Wheelgun-38 is a six-shot double-action revolver chambered in .38 Special, built with a carbon steel frame and a four-inch barrel. It is the cheapest revolver available in GLMZ, manufactured using the same cost-minimization approach that defines all Meridian Munitions products. The finish is a flat black oxide that provides minimal corrosion resistance, and the grips are hard rubber with no contouring.\n\nThe Roundhouse exists because a significant portion of GLMZ's the Gray Zone population distrusts semi-automatic pistols. Revolvers are mechanically simpler — no magazines to lose, no slides to rack, no safeties to forget. For residents with minimal firearms training, the revolver's simplicity is its primary feature: load it, point it, pull the trigger. The heavy double-action trigger pull serves as both a safety mechanism and a quality-control compromise.\n\nThe weapon's reliability is its saving grace. Where a Payday might jam, a Roundhouse will fire. The .38 Special round provides adequate stopping power against unarmored targets, and the six-round cylinder doesn't require counting rounds or managing reloads under stress. For the Gray Zone residents who want 'a gun that works when I need it to work,' the Roundhouse delivers on that promise and nothing more.",
   "manufacturer": "MERIDIAN MUNITIONS",
   "tier_availability": "Tier 1+",
   "legality": "Legal — minimal registration required",
@@ -15,15 +15,15 @@
   ],
   "specifications": "caliber: .38 Special\neffective_range: 25 meters\nrate_of_fire: Double-action revolver\nmagazine_capacity: 6 rounds (cylinder)\nweight: 0.74 kg",
   "tactical_use": "A basic defensive revolver offering simplicity and reliability at the cost of capacity and reloading speed. The double-action trigger is heavy but consistent. Six rounds of .38 Special provide adequate stopping power for unarmored threats. No external safety to disengage under stress. The revolver's simplicity makes it nearly malfunction-proof in untrained hands.",
-  "cultural_context": "The Roundhouse is the Shelf purist's firearm. Its owners tend to view semi-automatic pistols with suspicion — too many moving parts, too many things that can go wrong. There's a generational divide at play: older Shelf residents overwhelmingly prefer revolvers, while younger residents gravitate toward semi-automatics. The Roundhouse is the old guard's weapon of choice.",
+  "cultural_context": "The Roundhouse is the Gray Zone purist's firearm. Its owners tend to view semi-automatic pistols with suspicion — too many moving parts, too many things that can go wrong. There's a generational divide at play: older the Gray Zone residents overwhelmingly prefer revolvers, while younger residents gravitate toward semi-automatics. The Roundhouse is the old guard's weapon of choice.",
   "known_users": [
-    "Older Shelf residents",
-    "Shelf shopkeepers",
+    "Older the Gray Zone residents",
+    "the Gray Zone shopkeepers",
     "Individuals who distrust semi-automatics",
     "Rural settlement defenders"
   ],
   "story_hooks": [
-    "An elderly Shelf shopkeeper defends their store with a Roundhouse and becomes an unlikely folk hero — but the attention draws scrutiny to their past that they've spent decades hiding.",
+    "An elderly the Gray Zone shopkeeper defends their store with a Roundhouse and becomes an unlikely folk hero — but the attention draws scrutiny to their past that they've spent decades hiding.",
     "A batch of Roundhouses is discovered with barrels bored out to accept .357 Magnum — a dangerous modification that the weapons weren't built to withstand."
   ],
   "ammunition_type": [
@@ -34,7 +34,6 @@
     "revolver",
     "simple",
     "reliable",
-    "shelf",
     "cheap",
     "lethal"
   ],
@@ -47,7 +46,6 @@
     "Slagworks Industrial",
     "Steel",
     "The Pure Hand",
-    "The Shelf",
     "Watchdog",
     "the_meridian_office_park"
   ],
@@ -71,6 +69,6 @@
     "manufacturer_markings": "MERIDIAN MUNITIONS stamped in utilitarian block letters on the left barrel. Serial number on the frame below the cylinder window. No logo flourishes—purely functional stamps.",
     "condition_typical": "Worn and pragmatic. The flat black oxide shows handling marks, micro-scratches, and minor holster wear. Not abused, but clearly a working gun that sees regular handling. No collector's care—it's a tool."
   },
-  "image_prompt": "Product photography of a matte black .38 Special revolver photographed from the three-quarter angle on a dark gunmetal surface. The gun is resting in a gloved hand wearing worn synthetic material gloves. Dramatic side-lighting from above creates sharp shadows along the cylinder and barrel, emphasizing the utilitarian geometry and flat black oxide finish. The background is deep charcoal with subtle neo-noir neon bleeding in—pale blue accent light reflecting off the hard rubber grips and steel. Close enough to see the simple iron sights and machine marks on the frame. No reflections or chrome—everything reads as industrial, functional, Shelf-tier. Cold, practical, dystopian. --ar 3:2 --v 6",
-  "visual_prompt": "Product photography of a matte black .38 Special revolver photographed from the three-quarter angle on a dark gunmetal surface. The gun is resting in a gloved hand wearing worn synthetic material gloves. Dramatic side-lighting from above creates sharp shadows along the cylinder and barrel, emphasizing the utilitarian geometry and flat black oxide finish. The background is deep charcoal with subtle neo-noir neon bleeding in—pale blue accent light reflecting off the hard rubber grips and steel. Close enough to see the simple iron sights and machine marks on the frame. No reflections or chrome—everything reads as industrial, functional, Shelf-tier. Cold, practical, dystopian. --ar 3:2 --v 6"
+  "image_prompt": "Product photography of a matte black .38 Special revolver photographed from the three-quarter angle on a dark gunmetal surface. The gun is resting in a gloved hand wearing worn synthetic material gloves. Dramatic side-lighting from above creates sharp shadows along the cylinder and barrel, emphasizing the utilitarian geometry and flat black oxide finish. The background is deep charcoal with subtle neo-noir neon bleeding in—pale blue accent light reflecting off the hard rubber grips and steel. Close enough to see the simple iron sights and machine marks on the frame. No reflections or chrome—everything reads as industrial, functional, the Gray Zone-tier. Cold, practical, dystopian. --ar 3:2 --v 6",
+  "visual_prompt": "Product photography of a matte black .38 Special revolver photographed from the three-quarter angle on a dark gunmetal surface. The gun is resting in a gloved hand wearing worn synthetic material gloves. Dramatic side-lighting from above creates sharp shadows along the cylinder and barrel, emphasizing the utilitarian geometry and flat black oxide finish. The background is deep charcoal with subtle neo-noir neon bleeding in—pale blue accent light reflecting off the hard rubber grips and steel. Close enough to see the simple iron sights and machine marks on the frame. No reflections or chrome—everything reads as industrial, functional, the Gray Zone-tier. Cold, practical, dystopian. --ar 3:2 --v 6"
 }

@@ -3,7 +3,7 @@
   "name": "Orvex Tactical MA-2 Bomber",
   "type": "apparel",
   "category": "jacket",
-  "description": "A militarized update of the classic MA-1 bomber silhouette, manufactured by Orvex for the private security and civilian tactical markets. The shell is a tight-weave ballistic nylon in matte olive or slate grey, and the interior is lined with a bright safety-orange synth-satin — the traditional reversal lining, kept for historical continuity. Ribbed knit collar, cuffs, and waistband. Multiple zip pockets including a secure document sleeve sewn into the left chest panel. The cut is boxy but not oversized — room to layer, room to move.\n\nOrvex doesn't advertise to civilians, but the MA-2 has become a staple of Tier 2 security work and Tier 3 urban-casual wear simultaneously. Private site guards buy it for function; younger residents buy it for the silhouette and the association. The jacket carries no overt branding — just a small woven label inside the collar. On the Shelf, a secondhand MA-2 is considered a score.",
+  "description": "A militarized update of the classic MA-1 bomber silhouette, manufactured by Orvex for the private security and civilian tactical markets. The shell is a tight-weave ballistic nylon in matte olive or slate grey, and the interior is lined with a bright safety-orange synth-satin — the traditional reversal lining, kept for historical continuity. Ribbed knit collar, cuffs, and waistband. Multiple zip pockets including a secure document sleeve sewn into the left chest panel. The cut is boxy but not oversized — room to layer, room to move.\n\nOrvex doesn't advertise to civilians, but the MA-2 has become a staple of Tier 2 security work and Tier 3 urban-casual wear simultaneously. Private site guards buy it for function; younger residents buy it for the silhouette and the association. The jacket carries no overt branding — just a small woven label inside the collar. On the Gray Zone, a secondhand MA-2 is considered a score.",
   "tier_association": "Tier 2",
   "materials": [
     "ballistic nylon shell",
@@ -18,7 +18,7 @@
     "site guards",
     "Tier 2 urban workers",
     "Tier 3 casual wearers",
-    "Shelf residents with secondhand access"
+    "the Gray Zone residents with secondhand access"
   ],
   "manufacturer": "Orvex Security Apparel",
   "price_range": "Φ85",
@@ -26,7 +26,7 @@
   "gene_compatible": false,
   "story_hooks": [
     "Orvex has a standing contract with three corponations for uniformed security jackets — but those contracts require a specific internal RFID tag that can be used to track wearer location. Civilian versions don't have it. Or so the packaging claims.",
-    "A counterfeit MA-2 market has emerged on the Shelf — the fakes are actually decent quality, made in unlicensed shops, and missing the document sleeve. How you tell them apart matters if you're buying for real security work.",
+    "A counterfeit MA-2 market has emerged in the Gray Zone — the fakes are actually decent quality, made in unlicensed shops, and missing the document sleeve. How you tell them apart matters if you're buying for real security work.",
     "A former Orvex quality inspector was fired after flagging a materials substitution in a corporate order. She kept a sample of the substandard lining. She wants someone to care about it."
   ],
   "tags": [
@@ -46,7 +46,6 @@
     "Nodar Kuznetsov-Adu",
     "Sterling-Nakamura Heritage Roadster",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "The Shelf",
     "VitaCore ClearCourse Addiction Suppressor"
   ],
   "physical_description": {
@@ -64,7 +63,7 @@
       "Ballistic nylon shell designed for durability and minimal maintenance"
     ],
     "tier_indicator": "Tier 2–3 crossover. Expensive enough for dedicated security professionals (Tier 2 corpo contractors), but accessible enough and aesthetically valued by working-class Tier 3 residents as aspirational tactical wear.",
-    "cultural_context": "Signals pragmatism, security work, or deliberate style-referencing. Worn by private site guards, corporate security detail, and younger residents who value the silhouette's historical weight and functional aesthetic. Carries subtle status — not flashy, but recognized. On the Shelf (secondhand market), it's a valued find indicating taste and access.",
+    "cultural_context": "Signals pragmatism, security work, or deliberate style-referencing. Worn by private site guards, corporate security detail, and younger residents who value the silhouette's historical weight and functional aesthetic. Carries subtle status — not flashy, but recognized. On the Gray Zone (secondhand market), it's a valued find indicating taste and access.",
     "condition_typical": "Usually purchased pristine and broken in over months. Well-maintained examples show minimal wear; heavily used examples develop creasing at elbows and collar, slight fading on high-friction areas. Patched versions are not uncommon in Tier 3 wear."
   },
   "image_prompt": "Fashion photography of an Orvex Tactical MA-2 Bomber in matte slate grey with bright orange lining visible at collar and cuffs, worn by a sharp-featured model with subtle chrome augmentation at the jawline. Jacket is zipped halfway, showing the structured boxy silhouette and reinforced chest pockets. Shot against a dark urban backdrop — concrete wall, moody neon blue and amber ambient lighting casting sharp shadows. Model stands at three-quarter angle, arms relaxed. Close detail shot of the woven collar label visible in secondary frame. High-contrast, cinematic lighting emphasizing the matte finish and the striking interior-exterior color contrast. Neo-noir Great Lakes Metropolitan aesthetic, Tier 2–3 security-professional mood. --ar 2:3 --v 6",

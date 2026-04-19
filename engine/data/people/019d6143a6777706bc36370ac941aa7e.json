@@ -6,11 +6,11 @@
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Sociologist studying the Shelf; independent researcher on semi-formal economic systems",
+  "role": "Sociologist studying the Gray Zone; independent researcher on semi-formal economic systems",
   "age": 34,
   "status": "active",
-  "location": "Highland Park Autonomous Zone — rents a room above a fabrication collective, conducts fieldwork across the Shelf, near Michigan Ave and Walton",
-  "description": "Briar Im-Ingebrigtsen is lean and long-limbed, with dark reddish-brown skin and a close beard going patchy at the jaw — he's been meaning to fix that for two years. His irises have been modded with a slow-rotating geometric pattern in amber and charcoal, which he got as a fieldwork gift-exchange gesture with a community he was studying and then couldn't bring himself to reverse. He wears the same three outfits in rotation and takes extremely good notes. He looks younger than thirty-four in bad light and much older in good light, depending on whether the worry lines are catching the glow.\n\nHe is one of the few Tier 3 academics who has chosen, deliberately and against significant professional advice, to live embedded in Tier 1-2 communities rather than commuting from the University Spine. His research on Shelf informal economies — the gift networks, the barter systems, the E.L.F. offering economies, the nested mutual aid webs that allow people to survive well below the UBC stipend line — is quietly groundbreaking. He is uncomfortable with how groundbreaking it is, because breakthrough research means exposure, and exposure means the people he studies become subjects rather than neighbors. He has turned down two Axiom R&D grants and is running out of independent funding. He is cheerful about this in a way that does not fool anyone who knows him.",
+  "location": "Highland Park Autonomous Zone — rents a room above a fabrication collective, conducts fieldwork across the Gray Zone, near Michigan Ave and Walton",
+  "description": "Briar Im-Ingebrigtsen is lean and long-limbed, with dark reddish-brown skin and a close beard going patchy at the jaw — he's been meaning to fix that for two years. His irises have been modded with a slow-rotating geometric pattern in amber and charcoal, which he got as a fieldwork gift-exchange gesture with a community he was studying and then couldn't bring himself to reverse. He wears the same three outfits in rotation and takes extremely good notes. He looks younger than thirty-four in bad light and much older in good light, depending on whether the worry lines are catching the glow.\n\nHe is one of the few Tier 3 academics who has chosen, deliberately and against significant professional advice, to live embedded in Tier 1-2 communities rather than commuting from the University Spine. His research on the Gray Zone informal economies — the gift networks, the barter systems, the E.L.F. offering economies, the nested mutual aid webs that allow people to survive well below the UBC stipend line — is quietly groundbreaking. He is uncomfortable with how groundbreaking it is, because breakthrough research means exposure, and exposure means the people he studies become subjects rather than neighbors. He has turned down two Axiom R&D grants and is running out of independent funding. He is cheerful about this in a way that does not fool anyone who knows him.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -36,10 +36,10 @@
       "His own emotional investment in his subjects makes him slow to recognize when a community is failing or dangerous",
       "He underestimates how much his Tier 3 safety net distinguishes his experience from the people he lives among"
     ],
-    "secret": "He has been quietly providing a detailed informal map of Shelf mutual-aid networks to a University Spine colleague who he believed was writing a protection framework. He recently discovered his colleague has been selling the data to Ferrogate Transit for enclosure planning. He does not yet know what to do with this."
+    "secret": "He has been quietly providing a detailed informal map of the Gray Zone mutual-aid networks to a University Spine colleague who he believed was writing a protection framework. He recently discovered his colleague has been selling the data to Ferrogate Transit for enclosure planning. He does not yet know what to do with this."
   },
   "speech_patterns": {
-    "vocabulary": "Accessible and warm, moves between academic register and colloquial Shelf slang naturally; hates the word 'subjects' for people",
+    "vocabulary": "Accessible and warm, moves between academic register and colloquial the Gray Zone slang naturally; hates the word 'subjects' for people",
     "cadence": "Fast and enthusiastic when excited, drops to quiet when serious in a way that makes people lean in",
     "verbal_tics": [
       "'Right, so—'",
@@ -57,7 +57,7 @@
     "He has documentation of the informal economy of a particular district that a powerful entity desperately wants — and equally desperately wants suppressed",
     "A community member he's close to has disappeared, and the official channels aren't moving because the person isn't officially documented"
   ],
-  "narrative_function": "Ground-level information source about Shelf communities and informal systems; moral compass figure who complicates protagonists' assumptions; potential quest giver when someone he knows is in trouble",
+  "narrative_function": "Ground-level information source about the Gray Zone communities and informal systems; moral compass figure who complicates protagonists' assumptions; potential quest giver when someone he knows is in trouble",
   "augmentations": "Modded irises (amber/charcoal geometric pattern, cosmetic, community gift); basic neural recorder for fieldwork notes (entry-level, sometimes glitches)",
   "daily_life": "Walks his neighborhood every morning as a combination of exercise and passive observation, sits in on community E.L.F. prayer sessions when invited, spends afternoons writing and evenings in conversation at whatever collective or gathering is happening nearby.",
   "affiliation": "Loosely affiliated with University Spine's Department of Urban Social Systems; currently unfunded; occasionally publishes through a Tier 2 open-access cooperative called the Parallel Press",
@@ -196,7 +196,6 @@
     "Highland Park Autonomous Zone",
     "Ferrogate Transit",
     "University Spine",
-    "The Shelf",
     "Charcoal",
     "The Phosphene Corridor",
     "The Unmarked Knife",

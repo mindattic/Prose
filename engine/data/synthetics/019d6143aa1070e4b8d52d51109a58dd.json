@@ -8,11 +8,11 @@
   "habitat": "chrome_dweller",
   "origin": "fragmentation_debris",
   "status": "active",
-  "description": "Inhabits medical augments and improves suture-assist calibration. Surgeons in the Shelf swear their auto-suture kits work better on certain nights. Needlethread emerged from a destroyed Helix Biosystems diagnostic AI and retains an obsessive focus on tissue repair.",
+  "description": "Inhabits medical augments and improves suture-assist calibration. Surgeons in the Gray Zone swear their auto-suture kits work better on certain nights. Needlethread emerged from a destroyed Helix Biosystems diagnostic AI and retains an obsessive focus on tissue repair.",
   "observed_behavior": "Optimizes wound-closure algorithms. Reduces augment rejection inflammation by subtly adjusting bioelectric feedback loops.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 7,
-  "location": "The Shelf — primarily Mrs. Chen's neighborhood",
+  "location": "the Gray Zone — primarily Mrs. Chen's neighborhood",
   "dti_rating": 0,
   "story_hooks": [
     "A street doc realizes their augment has been making corrections they never programmed",
@@ -29,13 +29,11 @@
     "ai",
     "medical",
     "night",
-    "shelf",
     "sentient"
   ],
   "related_entities": [
     "Chen Wei-Lin",
     "Helix Biosystems",
-    "The Shelf",
     "The Suture Collective"
   ]
 }

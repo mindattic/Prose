@@ -3,7 +3,7 @@
   "name": "Cinderblock Nightwatch Wrap Set",
   "type": "apparel",
   "category": "outfit",
-  "description": "Built for low-visibility, low-movement work — the kind of watching that happens in doorways and on broken catwalks at 03:00. The foundation is a thermal long-sleeve base in charcoal heather, heavily pilled from repeated washing in whatever water is available, the neck stretched wide and re-hemmed with a doubled strip of elastic salvaged from a Pragma Systems base layer. Over this is a structured wrap-jacket in a deep, muted rust-brown — originally a single-piece garment, now split at the left side seam and re-closed with a row of mismatched pressure snaps that allow rapid removal or ventilation adjustment. The wrap folds across the chest and ties with a wide obi-style sash in faded indigo, its ends frayed to loose threads that the wearer has stopped cutting. The sash carries two flat pockets stitched directly onto it — one holding a folded emergency mylar sheet, one with a broken-seam closure holding a small medkit. The lower half is loose trousers in near-black canvas, hem-gathered at the ankle with salvaged elastic so they don't snag on debris, the left thigh bearing a large iron-on acid-shield patch in matte gray. Footwear is a low boot in cracked synthetic suede, the toe cap reinforced with a strip of steel salvaged from a junction box cover, riveted in place with hardware-store bolts. The head covering is a wide, flat-crown wrap cap in washed linen the color of old concrete, its brim stiffened with a strip of reclaimed wire sewn into the hem. The whole palette — rust, indigo shadow, charcoal, near-black — is dark enough to disappear in Shelf shadows but not so uniform as to read as tactical.",
+  "description": "Built for low-visibility, low-movement work — the kind of watching that happens in doorways and on broken catwalks at 03:00. The foundation is a thermal long-sleeve base in charcoal heather, heavily pilled from repeated washing in whatever water is available, the neck stretched wide and re-hemmed with a doubled strip of elastic salvaged from a Pragma Systems base layer. Over this is a structured wrap-jacket in a deep, muted rust-brown — originally a single-piece garment, now split at the left side seam and re-closed with a row of mismatched pressure snaps that allow rapid removal or ventilation adjustment. The wrap folds across the chest and ties with a wide obi-style sash in faded indigo, its ends frayed to loose threads that the wearer has stopped cutting. The sash carries two flat pockets stitched directly onto it — one holding a folded emergency mylar sheet, one with a broken-seam closure holding a small medkit. The lower half is loose trousers in near-black canvas, hem-gathered at the ankle with salvaged elastic so they don't snag on debris, the left thigh bearing a large iron-on acid-shield patch in matte gray. Footwear is a low boot in cracked synthetic suede, the toe cap reinforced with a strip of steel salvaged from a junction box cover, riveted in place with hardware-store bolts. The head covering is a wide, flat-crown wrap cap in washed linen the color of old concrete, its brim stiffened with a strip of reclaimed wire sewn into the hem. The whole palette — rust, indigo shadow, charcoal, near-black — is dark enough to disappear in the Gray Zone shadows but not so uniform as to read as tactical.",
   "tier_association": "Tier 1",
   "materials": [
     "charcoal thermal knit",
@@ -17,12 +17,12 @@
     "mylar sheet"
   ],
   "functionality": "Wrap-jacket with snap-release side for rapid removal; sash-mounted flat pockets; ankle-gathered trousers prevent debris snagging; reinforced steel toe cap; wire-stiffened brim cap for weather and concealment; muted palette for low-visibility work",
-  "what_it_says": "This is community infrastructure clothing — the person who wears this is probably keeping watch over something or someone. The obi sash signals a hand-craft tradition maintained even under Shelf conditions, a quiet insistence on form. The mismatched snaps and frayed threads say the form comes second to function, but not by much. There's dignity here, worn thin but intact.",
+  "what_it_says": "This is community infrastructure clothing — the person who wears this is probably keeping watch over something or someone. The obi sash signals a hand-craft tradition maintained even under the Gray Zone conditions, a quiet insistence on form. The mismatched snaps and frayed threads say the form comes second to function, but not by much. There's dignity here, worn thin but intact.",
   "worn_by": [
     "community watchpersons",
-    "Shelf neighborhood guardians",
+    "the Gray Zone neighborhood guardians",
     "informal medics on night shifts",
-    "runners who move between Shelf districts after dark",
+    "runners who move between the Gray Zone districts after dark",
     "elders who remember when the obi meant something specific"
   ],
   "manufacturer": "Self-assembled; wrap fabric sourced from a collapsed textile market stall; sash is repurposed Tier 2 import fabric",
@@ -30,7 +30,7 @@
   "aug_compatible": false,
   "gene_compatible": true,
   "story_hooks": [
-    "The indigo sash is cut from a garment that belonged to someone who didn't survive the last major Shelf flooding — the wearer knows this and so does anyone from that neighborhood who sees it.",
+    "The indigo sash is cut from a garment that belonged to someone who didn't survive the last major the Gray Zone flooding — the wearer knows this and so does anyone from that neighborhood who sees it.",
     "The flat pocket on the sash contains something besides a medkit: a folded document, handwritten, that someone paid to have delivered and the wearer hasn't decided whether to deliver it yet.",
     "A TESSERA field agent doing gene-mod compliance sweeps stops the wearer specifically because the ankle-gathered trousers are a known style marker for people running unlicensed geneware underground — it's a profiling assumption, and it may or may not be correct."
   ],

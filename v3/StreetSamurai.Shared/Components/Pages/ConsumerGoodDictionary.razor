@@ -1,4 +1,4 @@
-@page "/goods"
+﻿@page "/goods"
 @using StreetSamurai.Core.Models.Canon
 @inject ConsumerGoodRepository Repo
 @inject NavigationManager Nav
@@ -24,7 +24,7 @@
     <div class="dict-editor">
         @if (editing != null)
         {
-            <EditViewToggle RepoName="goods" Title="@(isNew ? "New Product" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)">
+            <EditViewToggle RepoName="goods" Title="@(isNew ? "New Product" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)" Rating="@(editing?.Rating ?? 0)" RatingChanged="OnRatingChanged">
                 <HeaderButtons>
                     <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i><div class="btn-lbl"> Save</div></button>
                     @if (!isNew && !confirmDelete) { <button class="btn btn-sm btn-outline-danger" @onclick="() => confirmDelete = true"><i class="bi bi-archive"></i></button> }
@@ -33,6 +33,10 @@
                 <ChildContent>
                     <div class="d-flex flex-wrap gap-2 mb-3">
                         <div style="flex: 2; min-width: 200px;"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Name" /></div>
+                        <div style="flex: 1; min-width: 120px;"><div class="field-label">Brand Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.BrandName" /></div>
+                        <div style="flex: 1; min-width: 120px;"><div class="field-label">Product Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.ProductName" /></div>
+                    </div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
                         <div style="flex: 1; min-width: 120px;"><div class="field-label">Category</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Category" /></div>
                         <div style="flex: 1; min-width: 120px;"><div class="field-label">Subcategory</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Subcategory" /></div>
                     </div>
@@ -46,6 +50,11 @@
                     <div class="mb-3"><div class="field-label">Flavor Profile</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="2" @bind="editing.FlavorProfile"></textarea></div>
                     <div class="mb-3"><div class="field-label">Slogan</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Slogan" /></div>
                     <div class="mb-3"><div class="field-label">Cultural Context</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="2" @bind="editing.CulturalContext"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Story Hooks (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editStoryHooks"></textarea></div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">Image Prompt</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.MidjourneyPrompt"></textarea></div>
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">DALL-E 3 Prompt</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Dalle3Prompt"></textarea></div>
+                    </div>
                 </ChildContent>
             </EditViewToggle>
         }
@@ -64,6 +73,7 @@
     private List<(string name, int count)> allTags = [];
     private HashSet<string> selectedTags = [];
     private bool isNew, confirmDelete;
+    private string editStoryHooks = "";
 
     private List<ConsumerGoodData> FilteredItems
     {
@@ -80,9 +90,9 @@
     private List<ConsumerGoodData> SortedItems => FilteredItems.OrderBy(x => x.Name).ToList();
 
     protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); RebuildTags(); if (Nav.Uri.Contains("new=true")) AddNew(); else { var qid = Nav.Uri.Contains("id=") ? Uri.UnescapeDataString(Nav.Uri.Split(new[]{"id="}, StringSplitOptions.None).Last().Split(new[]{"&"}, StringSplitOptions.None)[0]) : ""; if (!string.IsNullOrEmpty(qid)) { var t = items.FirstOrDefault(e => e.Id == qid); if (t != null) Edit(t); } if (editing == null) { var first = items.FirstOrDefault(); if (first != null) Edit(first); } } }
-    private void AddNew() { editing = new ConsumerGoodData(); isNew = true; confirmDelete = false; }
-    private void Edit(ConsumerGoodData g) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_goods", g.Id); editing = g; originalName = g.Name; isNew = false; confirmDelete = false; if (!Nav.Uri.Contains("id=" + g.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + g.Id, forceLoad: false); }
-    private void SaveEdit() { if (editing == null || string.IsNullOrWhiteSpace(editing.Name)) return; if (!isNew && originalName != editing.Name) Repo.Delete(originalName); Repo.Save(editing); editing = null; items = Repo.GetAll(); }
+    private void AddNew() { editing = new ConsumerGoodData(); isNew = true; confirmDelete = false; editStoryHooks = ""; }
+    private void Edit(ConsumerGoodData g) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_goods", g.Id); editing = g; originalName = g.Name; isNew = false; confirmDelete = false; editStoryHooks = string.Join("\n", g.StoryHooks); if (!Nav.Uri.Contains("id=" + g.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + g.Id, forceLoad: false); }
+    private void SaveEdit() { if (editing == null || string.IsNullOrWhiteSpace(editing.Name)) return; editing.StoryHooks = editStoryHooks.Split('\n', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList(); if (!isNew && originalName != editing.Name) Repo.Delete(originalName); Repo.Save(editing); editing = null; items = Repo.GetAll(); }
     private void DoDelete() { if (editing != null) { Repo.Delete(editing.Name); editing = null; items = Repo.GetAll(); confirmDelete = false; } }
     private void RebuildTags() { allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
     private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
@@ -102,4 +112,5 @@
         }
     }
 
+    private void OnRatingChanged(double value) { if (editing == null) return; editing.Rating = value; Repo.Save(editing); }
 }

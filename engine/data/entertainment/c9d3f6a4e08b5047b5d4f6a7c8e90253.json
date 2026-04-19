@@ -1,10 +1,10 @@
 {
   "id": "c9d3f6a4e08b5047b5d4f6a7c8e90253",
-  "name": "Ledger — Shelf Mutual Credit & Trust Net",
+  "name": "Ledger — the Gray Zone Mutual Credit & Trust Net",
   "type": "entertainment",
   "category": "platform",
   "subcategory": "grassroots reputation and mutual credit network",
-  "description": "Ledger is the Shelf's answer to corporate reputation systems like Meridian Score and Stratum — a community-run mutual credit and trust network that operates entirely on peer attestation rather than algorithmic scoring. Built in 2191 by a collective of Tier 1 market organizers in the Ward 7 Ghost Market district, Ledger tracks not creditworthiness in the corporate sense but community trustworthiness: did you show up, did you pay your debts, did you look out for your neighbors, did you snitch. Reputation on Ledger is expressed in 'marks' — positive and negative attestations left by named community members — and a high Ledger standing can open doors to ghost market stalls, housing collectives, and mutual aid networks that no amount of Quanta can buy. The platform runs on a patchwork of donated hardware and volunteer coders and has never taken a corporate credit.",
+  "description": "Ledger is the Gray Zone's answer to corporate reputation systems like Meridian Score and Stratum — a community-run mutual credit and trust network that operates entirely on peer attestation rather than algorithmic scoring. Built in 2191 by a collective of Tier 1 market organizers in the Ward 7 Ghost Market district, Ledger tracks not creditworthiness in the corporate sense but community trustworthiness: did you show up, did you pay your debts, did you look out for your neighbors, did you snitch. Reputation on Ledger is expressed in 'marks' — positive and negative attestations left by named community members — and a high Ledger standing can open doors to ghost market stalls, housing collectives, and mutual aid networks that no amount of Quanta can buy. The platform runs on a patchwork of donated hardware and volunteer coders and has never taken a corporate credit.",
   "origin_year": 2191,
   "tier_association": "Tier 1",
   "status": "active",
@@ -15,13 +15,13 @@
     "The Ledger Council (seven rotating community representatives who arbitrate disputes)"
   ],
   "locations": [
-    "Ward 7 Ghost Market District, Shelf (origin)",
-    "Distributed across Shelf Wards 4, 7, 9, and 12",
+    "Ward 7 Ghost Market District, the Gray Zone (origin)",
+    "Distributed across the Gray Zone Wards 4, 7, 9, and 12",
     "No presence above Tier 2"
   ],
   "corporate_stance": "unaware",
   "story_hooks": [
-    "A corporate intelligence contractor has been systematically mapping Ledger's social graph to identify Shelf community leaders for preemptive disruption before a planned Shelf rezoning — and someone just found the contractor's scraper bot in the network logs.",
+    "A corporate intelligence contractor has been systematically mapping Ledger's social graph to identify the Gray Zone community leaders for preemptive disruption before a planned the Gray Zone rezoning — and someone just found the contractor's scraper bot in the network logs.",
     "A high-Ledger-standing community elder is accused of a serious betrayal by a single anonymous mark — but Ledger requires named attestations, meaning someone created a false identity to leave it, and the Ledger Council must decide how to respond without destroying the platform's integrity.",
     "A Tier 3 sociologist publishes a paper arguing Ledger's reputation model is superior to Meridian Score for predicting prosocial behavior — and now a corponation wants to license the model, and the Ledger Council has to decide what 'no' means when the offer is Φ4 million."
   ],
@@ -37,7 +37,7 @@
     "reputation-system",
     "anti-corporate"
   ],
-  "user_base": "Approximately 340,000 active users; almost exclusively Tier 1 Shelf residents, with small Tier 2 crossover among those with Shelf community ties",
+  "user_base": "Approximately 340,000 active users; almost exclusively Tier 1 the Gray Zone residents, with small Tier 2 crossover among those with the Gray Zone community ties",
   "monetization": "No monetization — sustained by donated hardware, volunteer labor, and small community levies from ghost market operators who use the platform",
   "notable_feature": "The 'Named Mark' requirement — all attestations, positive and negative, must be left under a user's real verified community identity, making reputation attacks costly and accountability genuine in a way no anonymous system can replicate",
   "parent_corponation": "",
@@ -49,7 +49,6 @@
     "Obafemi Szczypiński-Lautoa",
     "Pullman Works",
     "The Collective",
-    "The Ledger",
-    "The Shelf"
+    "The Ledger"
   ]
 }

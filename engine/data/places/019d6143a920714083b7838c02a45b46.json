@@ -52,7 +52,7 @@
       "Iron Crown (Marquette, northeast along the UP corridor)",
       "Wisconsin border zone (west, 3 kilometers)",
       "Escanaba Gateway (east, Lake Michigan shore)",
-      "GLMZ (south, via Wisconsin corridor to the Sprawl)"
+      "GLMZ (south, via Wisconsin corridor to Meridian 88)"
     ],
     "exits": [],
     "tags": []
@@ -102,5 +102,7 @@
     "The Fathom Line",
     "Chimera-Null",
     "Iron"
-  ]
+  ],
+  "zone": "Z10",
+  "controllingCorponation": null
 }

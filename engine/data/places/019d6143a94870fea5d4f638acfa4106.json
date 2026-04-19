@@ -48,7 +48,7 @@
   "story_hooks": [
     "The Vellichor Nexus is preparing an exhibition of pre-corporate Chicago artifacts — among them, documents that Tessera Corponation's legal team has demanded be removed from public display, and the Nexus directors are refusing",
     "An Arcturus live-fire demonstration went wrong — the weapon prototype is missing from the Arena, and Arcturus is conducting a silent manhunt through the residential towers rather than admit the loss publicly",
-    "A service worker commuting from the Shelf has discovered that the Nearfield's atmospheric processing system is extracting something from the lake air and storing it — not filtering it, collecting it"
+    "A service worker commuting from the Gray Zone has discovered that the Nearfield's atmospheric processing system is extracting something from the lake air and storing it — not filtering it, collecting it"
   ],
   "connections": {
     "adjacent_to": [
@@ -88,8 +88,7 @@
     "wealth",
     "market",
     "food",
-    "lake",
-    "shelf"
+    "lake"
   ],
   "related_entities": [
     "Arcturus Defense Solutions",
@@ -99,5 +98,7 @@
     "Mika Ingebrigtsen",
     "Siddharth Deshpande",
     "Déjà Vu"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

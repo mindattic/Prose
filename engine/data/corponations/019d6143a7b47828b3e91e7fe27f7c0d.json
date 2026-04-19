@@ -37,5 +37,14 @@
     "Sulfur Crown Agriculture",
     "The Arrangement",
     "The Reclamation Assembly"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z10"
+    ],
+    "primaryZone": "Z10",
+    "lakefrontAccess": true,
+    "description": "The Thornback Basin — 4,200 square kilometers of sovereign agricultural and industrial territory across the Door Peninsula and Fox River Valley, Zone 10. Agricultural chemistry, soil science, and specialty compound production derived from northern Great Lakes microbial ecosystems. Thornback maintains the Door Peninsula's farming communities as a managed resource under long-term supply agreements.",
+    "grayZoneRelationship": "Door Peninsula rural communities exist in an ambiguous relationship with Thornback that resembles corponation tenancy without formal tier classification. Thornback prefers the ambiguity; it costs less than the alternative."
+  }
 }

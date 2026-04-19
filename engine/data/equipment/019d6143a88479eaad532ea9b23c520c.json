@@ -6,7 +6,7 @@
   "type": "equipment",
   "aliases": [],
   "category": "survival",
-  "description": "A chemical oxygen generator that produces breathable air through an exothermic chemical reaction, providing 2 hours of oxygen in a device the size of a water bottle. The EOG-2 is activated by pulling a pin that initiates a sodium chlorate decomposition reaction, releasing oxygen at a controlled rate through a breathing mask. The device does not require power, has a 10-year shelf life, and operates in any environment including underwater, in toxic atmospheres, and in vacuum. It is emergency life support reduced to its simplest possible form.",
+  "description": "A chemical oxygen generator that produces breathable air through an exothermic chemical reaction, providing 2 hours of oxygen in a device the size of a water bottle. The EOG-2 is activated by pulling a pin that initiates a sodium chlorate decomposition reaction, releasing oxygen at a controlled rate through a breathing mask. The device does not require power, has a 10-year Gray Zone life, and operates in any environment including underwater, in toxic atmospheres, and in vacuum. It is emergency life support reduced to its simplest possible form.",
   "manufacturer": "ZHENG-DAO HEAVY INDUSTRIES",
   "tier_availability": "Tier 1+",
   "legality": "Unrestricted — emergency life support",
@@ -17,7 +17,7 @@
     "reaction": "Sodium chlorate decomposition",
     "output": "Medical-grade oxygen",
     "info": "controlled flow; toxic atmosphere; vacuum",
-    "shelf life": "10 years",
+    "Gray Zone life": "10 years",
     "environment": "Functions underwater",
     "weight": "0.8 kg",
     "size": "Standard water bottle dimensions",
@@ -39,12 +39,11 @@
     "control",
     "power",
     "water",
-    "shelf",
     "tier 1"
   ],
   "parent_corponation": "",
   "related_entities": [
-    "Shelf Life",
+    "Gray Zone life",
     "The Quiet Room"
   ],
   "physical_description": {

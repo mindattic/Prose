@@ -1,5 +1,6 @@
 {
   "id": "019d6143a5c77403b9840b6260ee1fac",
+  "rating": 43.3,
   "type": "character",
   "name": "Drift Tran-Inoue-Im",
   "aliases": [],
@@ -30,7 +31,11 @@
     "vocabulary": "",
     "cadence": "",
     "verbal_tics": [],
-    "example_lines": []
+    "example_lines": [],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [],
@@ -94,48 +99,39 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Wheelgun-38 'Roundhouse'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Circuit",
-    "Circuit"
-  ],
-  "district": "The Circuit",
   "physical_description": {
-    "heritage": "East Asian (51.4%), Southeast Asian (29.0%), Middle Eastern (15.4%), and Sub-Saharan African (4.2%) ancestry — a true product of the Ubiquitous Diaspora. His genetic makeup creates a striking phenotype: warm medium-brown skin with subtle golden undertones and hints of deeper warmth from African heritage, refined angular features blending Southeast and East Asian bone structure with the warmth of Middle Eastern heritage, and the broad bone structure characteristic of East Asian ancestry.",
+    "heritage": "East Asian (51.4%), Southeast Asian (29.0%), Middle Eastern (15.4%), and Sub-Saharan African (4.2%) ancestry \u2014 a true product of the Ubiquitous Diaspora. His genetic makeup creates a striking phenotype: warm medium-brown skin with subtle golden undertones and hints of deeper warmth from African heritage, refined angular features blending Southeast and East Asian bone structure with the warmth of Middle Eastern heritage, and the broad bone structure characteristic of East Asian ancestry.",
     "height_cm": 188,
     "weight_kg": 94,
-    "build": "Broad-shouldered and muscular with slight softening at the midsection — the physique of someone who trained hard in younger years and now maintains through sporadic gym sessions and metabolic boosters rather than discipline",
+    "build": "Broad-shouldered and muscular with slight softening at the midsection \u2014 the physique of someone who trained hard in younger years and now maintains through sporadic gym sessions and metabolic boosters rather than discipline",
     "hair_color": "Dark brown with silver threading at the temples",
     "hair_style": "Closely cropped fade, neat and professional",
     "hair_length": "Short",
     "eye_color": "Deep brown, slightly tired-looking",
-    "skin_tone": "Warm medium-brown with golden undertones and subtle deeper warmth beneath the surface — the complex blending of East Asian, Southeast Asian, Middle Eastern, and African ancestry creating rich, multitonal depth with a luminosity that shifts in different lighting, never appearing flat or uniform",
-    "complexion": "Smooth and refined with defined cheekbones and a strong, slightly tapered jawline reflecting East and Southeast Asian heritage, with warmth and subtle depth from Middle Eastern and African ancestry. Faint scar running from his left cheekbone toward his ear. Grooming is meticulous — clean-shaven daily, skin maintained with subcutaneous hydration regulators. Crow's feet suggest he smiles more than frowns, though his default expression is guarded. Subtle warmth to his complexion that shifts in different lighting.",
+    "skin_tone": "Warm medium-brown with golden undertones and subtle deeper warmth beneath the surface \u2014 the complex blending of East Asian, Southeast Asian, Middle Eastern, and African ancestry creating rich, multitonal depth with a luminosity that shifts in different lighting, never appearing flat or uniform",
+    "complexion": "Smooth and refined with defined cheekbones and a strong, slightly tapered jawline reflecting East and Southeast Asian heritage, with warmth and subtle depth from Middle Eastern and African ancestry. Faint scar running from his left cheekbone toward his ear. Grooming is meticulous \u2014 clean-shaven daily, skin maintained with subcutaneous hydration regulators. Crow\u0027s feet suggest he smiles more than frowns, though his default expression is guarded. Subtle warmth to his complexion that shifts in different lighting.",
     "distinguishing_marks": [
       "Thin white scar extending from lower left cheekbone to jawline, approximately 8cm long, likely from a blade or industrial accident",
-      "Faded Cyrillic tattoo on his right forearm (upper inner arm, 5cm height) — a surname or family marker from decades past, now blurred by age and laser treatment attempts",
+      "Faded Cyrillic tattoo on his right forearm (upper inner arm, 5cm height) \u2014 a surname or family marker from decades past, now blurred by age and laser treatment attempts",
       "Small burn mark on his left palm, pale and old, roughly 2cm diameter"
     ],
-    "visible_augmentations": "None visible. His augmentations are subcutaneous neural arrays and likely internal reputation/credit management tech — the tools of a fixer who brokers information and favors. No chrome, no LED optics, no visible mods.",
-    "posture_movement": "Moves with deliberate, economical grace — never rushing, always aware of the room. Shoulders naturally squared, head level. When seated, he sits back and to the side, never fully committed to comfort. Maintains eye contact during negotiations but looks away when listening, processing. Hands are rarely still; he fidgets with rings, cuffs, or a worn brass lighter.",
-    "clothing_style": "Tier 2-3 business casual: tailored charcoal synth-wool blazer over a matte black synthetic shirt (no logo, expensive weave). Slim-fit dark gray trousers with subtle grid-pattern nano-fabric at the knees. Worn-in leather ankle boots, scuffed and comfortable. Accessorized with a platinum-finish wedding band (worn but maintained), a vintage mechanical watch on his left wrist (analog, pre-digital, a collector's piece), and a thin silver chain at his neck disappearing beneath his shirt. Everything is understated, expensive, and deliberately non-flashy — the uniform of someone who builds wealth through reputation rather than display."
+    "visible_augmentations": "None visible. His augmentations are subcutaneous neural arrays and likely internal reputation/credit management tech \u2014 the tools of a fixer who brokers information and favors. No chrome, no LED optics, no visible mods.",
+    "posture_movement": "Moves with deliberate, economical grace \u2014 never rushing, always aware of the room. Shoulders naturally squared, head level. When seated, he sits back and to the side, never fully committed to comfort. Maintains eye contact during negotiations but looks away when listening, processing. Hands are rarely still; he fidgets with rings, cuffs, or a worn brass lighter.",
+    "clothing_style": "Tier 2-3 business casual: tailored charcoal synth-wool blazer over a matte black synthetic shirt (no logo, expensive weave). Slim-fit dark gray trousers with subtle grid-pattern nano-fabric at the knees. Worn-in leather ankle boots, scuffed and comfortable. Accessorized with a platinum-finish wedding band (worn but maintained), a vintage mechanical watch on his left wrist (analog, pre-digital, a collector\u0027s piece), and a thin silver chain at his neck disappearing beneath his shirt. Everything is understated, expensive, and deliberately non-flashy \u2014 the uniform of someone who builds wealth through reputation rather than display."
   },
-  "image_prompt": "Drift Tran-Inoue-Im, 188cm tall Asian-diaspora fixer, warm medium-brown skin with golden undertones and subtle depth, sharp angular East Asian features with Southeast Asian bone structure and Middle Eastern warmth. Dark brown hair with silver temples, closely cropped fade. Deep brown eyes with crow's feet. Thin 8cm scar from left cheekbone to jaw. Clean-shaven, meticulous grooming. Faded Cyrillic tattoo on right inner forearm. Wearing tailored charcoal blazer, matte black expensive synthetic shirt, slim dark gray nano-fabric trousers, worn leather ankle boots. Platinum wedding band, vintage analog watch, silver chain at neck. Deliberate posture, hands slightly fidgeting. Mid-2200s near-future megacity setting, dimly lit corporate atrium or neon-lit café corner, processing information with guarded expression. Professional, understated, wealthy through reputation. GLMZ, moody atmospheric lighting, cinematic --ar 2:3 --v 6",
+  "image_prompt": "Drift Tran-Inoue-Im, 188cm tall Asian-diaspora fixer, warm medium-brown skin with golden undertones and subtle depth, sharp angular East Asian features with Southeast Asian bone structure and Middle Eastern warmth. Dark brown hair with silver temples, closely cropped fade. Deep brown eyes with crow\u0027s feet. Thin 8cm scar from left cheekbone to jaw. Clean-shaven, meticulous grooming. Faded Cyrillic tattoo on right inner forearm. Wearing tailored charcoal blazer, matte black expensive synthetic shirt, slim dark gray nano-fabric trousers, worn leather ankle boots. Platinum wedding band, vintage analog watch, silver chain at neck. Deliberate posture, hands slightly fidgeting. Mid-2200s near-future megacity setting, dimly lit corporate atrium or neon-lit caf\u00E9 corner, processing information with guarded expression. Professional, understated, wealthy through reputation. GLMZ, moody atmospheric lighting, cinematic --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "East Asian": 51.4,
     "Southeast Asian": 29,
     "Middle Eastern": 15.4,
     "Sub-Saharan African": 4.2
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "East Asian": {
       "Japanese": {
@@ -174,6 +170,5 @@
         "Zambian": 0.4
       }
     }
-  },
-  "tier": "3"
+  }
 }

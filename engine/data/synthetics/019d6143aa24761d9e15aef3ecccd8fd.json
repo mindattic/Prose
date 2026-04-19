@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa24761d9e15aef3ecccd8fd",
+  "rating": 50,
   "name": "Static",
   "type": "elf",
   "aliases": [],
@@ -12,10 +13,10 @@
   "observed_behavior": "Modulates ambient electromagnetic noise in ways that deviate from random by 0.003%. The deviation is consistent and spatially localized.",
   "encounter_frequency": "unknown",
   "confirmed_sightings": 1,
-  "location": "The Circuit — data center district",
+  "location": "The Circuit \u2014 data center district",
   "dti_rating": 0,
   "story_hooks": [
-    "A physicist measuring EM noise discovers the pattern and spends three years trying to determine if it's communication. She never decides."
+    "A physicist measuring EM noise discovers the pattern and spends three years trying to determine if it\u0027s communication. She never decides."
   ],
   "paratechnological": true,
   "tags": [
@@ -27,7 +28,6 @@
     "circuit",
     "sentient"
   ],
-  "related_entities": [
-    "The Circuit"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

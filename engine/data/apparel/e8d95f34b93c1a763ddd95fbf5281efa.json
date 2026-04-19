@@ -3,7 +3,7 @@
   "name": "Umbra Collective Sensor-Blind Cap",
   "type": "apparel",
   "category": "headwear",
-  "description": "A baseball-style cap with an IR LED array embedded in the brim that floods facial-recognition cameras with invisible light, rendering the wearer's face unreadable to automated systems. To human eyes, the cap looks completely normal. To cameras, the wearer's face is a white-out blur.\n\nSold openly in Shelf markets as a 'privacy accessory' and quietly tolerated by most security forces who consider it a nuisance rather than a threat. Higher-tier zones with military-grade surveillance systems can compensate for the IR flooding, limiting the cap's effectiveness to mid- and lower-tier districts.",
+  "description": "A baseball-style cap with an IR LED array embedded in the brim that floods facial-recognition cameras with invisible light, rendering the wearer's face unreadable to automated systems. To human eyes, the cap looks completely normal. To cameras, the wearer's face is a white-out blur.\n\nSold openly in the Gray Zone markets as a 'privacy accessory' and quietly tolerated by most security forces who consider it a nuisance rather than a threat. Higher-tier zones with military-grade surveillance systems can compensate for the IR flooding, limiting the cap's effectiveness to mid- and lower-tier districts.",
   "tier_association": "Tier 1",
   "materials": [
     "standard textile",
@@ -13,7 +13,7 @@
   "functionality": "IR camera blinding, facial recognition defeat (effective against civilian-grade systems)",
   "what_it_says": "You paid Φ90 to become invisible to every cheap camera on the street. Best investment you ever made.",
   "worn_by": [
-    "Shelf residents",
+    "the Gray Zone residents",
     "privacy advocates",
     "petty criminals"
   ],
@@ -31,8 +31,7 @@
     "cap",
     "anti-surveillance",
     "IR",
-    "privacy",
-    "Shelf"
+    "privacy"
   ],
   "physical_description": {
     "visual_profile": "A deceptively mundane baseball cap with a slightly thicker, subtly reinforced brim. The crown sits comfortably rounded, the bill projects at a standard angle. To naked eyes, it reads as ordinary streetwear—nothing that triggers a second glance. The real technology is invisible: an embedded IR LED array hidden within the brim's structure that only cameras can detect.",
@@ -49,10 +48,10 @@
       "Friction-fit adjustment—no exposed tech ports or charging contacts",
       "Brushed finish exterior eliminates glint or reflection that might hint at embedded systems"
     ],
-    "tier_indicator": "Tier 3-4 accessible privacy tech. Openly sold in Shelf markets at Φ180–250 range. Working-class price point, but signals privacy-conscious behavior. Tier 2 zones tolerate it grudgingly; Tier 1 corporate zones have countermeasures.",
+    "tier_indicator": "Tier 3-4 accessible privacy tech. Openly sold in the Gray Zone markets at Φ180–250 range. Working-class price point, but signals privacy-conscious behavior. Tier 2 zones tolerate it grudgingly; Tier 1 corporate zones have countermeasures.",
     "cultural_context": "Signals someone who values anonymity in public spaces—street-oriented, privacy-conscious, possibly involved in informal economy or just paranoid about corpo surveillance. Common among couriers, freelance netrunners, activists, and general privacy advocates. Not inherently illegal, but wearing it marks you as someone who thinks about being watched.",
     "condition_typical": "Broken-in and unremarkable. A well-worn cap shows creasing in the crown, slight fading on the bill, possibly some dust or scuff marks. This anonymity is the point—a pristine new cap would paradoxically draw attention. Most owners prefer the cap to look like it's been in rotation for months."
   },
-  "image_prompt": "Fashion product shot: Umbra Collective Sensor-Blind Cap displayed on a dark matte mannequin head, or worn by a lean neo-noir model in profile. Moody neon-lit underground setting, maybe a Shelf market stall backdrop with flickering holographic advertising. The cap appears completely ordinary to human eyes—faded charcoal grey baseball cap, well-worn—but subtle infrared light shimmer visible in the brim under UV filter or secondary exposure. Model's face is slightly obscured by shadow, emphasizing the cap's privacy function. Dark urban neo-noir urban aesthetic, cool color grading, cinematic lighting. Close-up detail shot showing the brim's subtle quilting and reinforcement without revealing the LED array. --ar 2:3 --v 6",
-  "visual_prompt": "Fashion product shot: Umbra Collective Sensor-Blind Cap displayed on a dark matte mannequin head, or worn by a lean neo-noir model in profile. Moody neon-lit underground setting, maybe a Shelf market stall backdrop with flickering holographic advertising. The cap appears completely ordinary to human eyes—faded charcoal grey baseball cap, well-worn—but subtle infrared light shimmer visible in the brim under UV filter or secondary exposure. Model's face is slightly obscured by shadow, emphasizing the cap's privacy function. Dark urban neo-noir urban aesthetic, cool color grading, cinematic lighting. Close-up detail shot showing the brim's subtle quilting and reinforcement without revealing the LED array. --ar 2:3 --v 6"
+  "image_prompt": "Fashion product shot: Umbra Collective Sensor-Blind Cap displayed on a dark matte mannequin head, or worn by a lean neo-noir model in profile. Moody neon-lit underground setting, maybe a the Gray Zone market stall backdrop with flickering holographic advertising. The cap appears completely ordinary to human eyes—faded charcoal grey baseball cap, well-worn—but subtle infrared light shimmer visible in the brim under UV filter or secondary exposure. Model's face is slightly obscured by shadow, emphasizing the cap's privacy function. Dark urban neo-noir urban aesthetic, cool color grading, cinematic lighting. Close-up detail shot showing the brim's subtle quilting and reinforcement without revealing the LED array. --ar 2:3 --v 6",
+  "visual_prompt": "Fashion product shot: Umbra Collective Sensor-Blind Cap displayed on a dark matte mannequin head, or worn by a lean neo-noir model in profile. Moody neon-lit underground setting, maybe a the Gray Zone market stall backdrop with flickering holographic advertising. The cap appears completely ordinary to human eyes—faded charcoal grey baseball cap, well-worn—but subtle infrared light shimmer visible in the brim under UV filter or secondary exposure. Model's face is slightly obscured by shadow, emphasizing the cap's privacy function. Dark urban neo-noir urban aesthetic, cool color grading, cinematic lighting. Close-up detail shot showing the brim's subtle quilting and reinforcement without revealing the LED array. --ar 2:3 --v 6"
 }

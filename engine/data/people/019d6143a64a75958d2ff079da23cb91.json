@@ -1,16 +1,17 @@
 {
   "id": "019d6143a64a75958d2ff079da23cb91",
+  "rating": 80,
   "type": "character",
   "name": "Kira Hong",
   "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "NeoCortex operative — the woman who placed the Jakarta contract on Kyle",
+  "role": "NeoCortex operative \u2014 the woman who placed the Jakarta contract on Kyle",
   "age": 52,
   "status": "active",
-  "location": "Meridian Core — NeoCortex subsidiary housing, mid-tier, near LaSalle and Jackson",
-  "description": "Kira Hong is what happens when a good person is fed into a machine that runs on compliance. She has a round, lined face that looks like it was built for warmth — crow's feet from decades of real smiling, not the corporate kind. Her hands are a doctor's hands: steady, precise, habitually gentle. She keeps her gray-streaked hair pulled back in a practical knot and wears clothes that are always slightly too formal for wherever she is, as if she is perpetually arriving from somewhere more important. She looks like someone's mother. She is someone's mother. That is the entire problem.\n\nNeoCortex recruited her twenty years ago as a neurological researcher — legitimate work, published papers, the kind of science that helps people. Then the facility work began, and by the time she understood what Program Atlas actually was, her daughter Mila was on a NeoCortex educational scholarship that doubled as a hostage contract. Kira Hong has spent fifteen years making choices she cannot live with to protect someone she cannot lose.\n\nThe Jakarta contract — hiring a freelancer named Kyle to do a job that would position him for device installation — was one of those choices. She has thought about Kyle every day since.",
+  "location": "Meridian Core \u2014 NeoCortex subsidiary housing, mid-tier, near LaSalle and Jackson",
+  "description": "Kira Hong is what happens when a good person is fed into a machine that runs on compliance. She has a round, lined face that looks like it was built for warmth \u2014 crow\u0027s feet from decades of real smiling, not the corporate kind. Her hands are a doctor\u0027s hands: steady, precise, habitually gentle. She keeps her gray-streaked hair pulled back in a practical knot and wears clothes that are always slightly too formal for wherever she is, as if she is perpetually arriving from somewhere more important. She looks like someone\u0027s mother. She is someone\u0027s mother. That is the entire problem.\n\nNeoCortex recruited her twenty years ago as a neurological researcher \u2014 legitimate work, published papers, the kind of science that helps people. Then the facility work began, and by the time she understood what Program Atlas actually was, her daughter Mila was on a NeoCortex educational scholarship that doubled as a hostage contract. Kira Hong has spent fifteen years making choices she cannot live with to protect someone she cannot lose.\n\nThe Jakarta contract \u2014 hiring a freelancer named Kyle to do a job that would position him for device installation \u2014 was one of those choices. She has thought about Kyle every day since.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -26,35 +27,39 @@
       "That she has become the thing she was trying to protect Mila from"
     ],
     "core_desires": [
-      "To undo what she did to Kyle without destroying Mila's life",
+      "To undo what she did to Kyle without destroying Mila\u0027s life",
       "To dismantle Program Atlas from the inside",
       "To be forgiven by someone she has never met"
     ],
     "coping_mechanisms": [
-      "Maintains the mask of the caring professional — and the mask is not entirely a mask",
+      "Maintains the mask of the caring professional \u2014 and the mask is not entirely a mask",
       "Keeps a private journal in handwritten code documenting every subject",
       "Cooks elaborate meals for one"
     ],
     "blind_spots": [
       "Believes her love for Mila justifies what she did",
       "Cannot see that Mila might choose to know the truth",
-      "Underestimates Kyle — thinks of him as a victim, not someone who might understand"
+      "Underestimates Kyle \u2014 thinks of him as a victim, not someone who might understand"
     ],
-    "secret": "She has the maintenance codes for Kyle's device. She could have deactivated it remotely at any time in the last ten years. She did not because the device is the only proof that Program Atlas exists — and she needs that proof to destroy NeoCortex."
+    "secret": "She has the maintenance codes for Kyle\u0027s device. She could have deactivated it remotely at any time in the last ten years. She did not because the device is the only proof that Program Atlas exists \u2014 and she needs that proof to destroy NeoCortex."
   },
   "speech_patterns": {
     "vocabulary": "Clinical precision softened by genuine warmth. Uses medical terminology naturally but translates for laypeople.",
     "cadence": "Measured. Careful. Every sentence weighed before it leaves her mouth. Long pauses that are selection, not hesitation.",
     "verbal_tics": [
-      "Begins difficult sentences with 'I need you to understand'",
+      "Begins difficult sentences with \u0027I need you to understand\u0027",
       "Calls people by their full first name",
-      "Says 'I'm sorry' and means it every time"
+      "Says \u0027I\u0027m sorry\u0027 and means it every time"
     ],
     "example_lines": [
-      "I need you to understand — I am not here to ask for forgiveness. I am here because you deserve to know who did this to you.",
+      "I need you to understand \u2014 I am not here to ask for forgiveness. I am here because you deserve to know who did this to you.",
       "Mila is twenty-three now. She thinks her mother is a hospital administrator. She is not wrong. She is just not complete.",
       "The device in your chest has a maintenance code. I have had it for ten years. I could have turned it off. I chose not to. I will explain why, and you will hate the reason."
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [
     {
@@ -68,7 +73,7 @@
       "name": "Mila Orel",
       "type": "daughter / hostage",
       "description": "Twenty-three, NeoCortex scholarship graduate, works in corporate communications. Does not know what her mother actually does.",
-      "emotional_core": "The only clean thing in Lena's life",
+      "emotional_core": "The only clean thing in Lena\u0027s life",
       "story_tension": "Lena coming to Kyle means risking Mila."
     },
     {
@@ -80,17 +85,17 @@
     }
   ],
   "story_hooks": [
-    "She has the maintenance codes for Kyle's device",
+    "She has the maintenance codes for Kyle\u0027s device",
     "Her evidence cache could bring down NeoCortex",
-    "Mila does not know — when she finds out, the story fractures",
+    "Mila does not know \u2014 when she finds out, the story fractures",
     "She has been watching Kyle for ten years through the device telemetry"
   ],
-  "narrative_function": "Lena is the human face of the system that broke Kyle. She is not a villain — she is a mother who made an impossible choice and has been living inside the consequences for a decade. Her arrival forces Kyle to confront the fact that the people who hurt him were also being hurt.",
-  "augmentations": "Standard Tier 3 corporate medical suite — nothing experimental.",
-  "daily_life": "Works at a NeoCortex subsidiary hospital. Comes home to an empty apartment. Cooks. Reads Kyle's telemetry. Writes in her journal. Does not sleep well.",
+  "narrative_function": "Lena is the human face of the system that broke Kyle. She is not a villain \u2014 she is a mother who made an impossible choice and has been living inside the consequences for a decade. Her arrival forces Kyle to confront the fact that the people who hurt him were also being hurt.",
+  "augmentations": "Standard Tier 3 corporate medical suite \u2014 nothing experimental.",
+  "daily_life": "Works at a NeoCortex subsidiary hospital. Comes home to an empty apartment. Cooks. Reads Kyle\u0027s telemetry. Writes in her journal. Does not sleep well.",
   "affiliation": "NeoCortex Industries (coerced)",
   "uses_facets": false,
-  "narration_voice": "Clinical warmth — the careful precision of a doctor delivering bad news to someone she cares about. Longer sentences than Kyle, more structured, but with the same weight per word. She notices faces before objects, hands before weapons. No facet tags. Her internal conflict is quieter, expressed through pauses and self-corrections.",
+  "narration_voice": "Clinical warmth \u2014 the careful precision of a doctor delivering bad news to someone she cares about. Longer sentences than Kyle, more structured, but with the same weight per word. She notices faces before objects, hands before weapons. No facet tags. Her internal conflict is quieter, expressed through pauses and self-corrections.",
   "stats": {
     "physical": {
       "strength": 3,
@@ -125,7 +130,7 @@
     "thresholds": {
       "stress": {
         "score": 8,
-        "response": "Becomes more precise, more clinical — the warmth retreats behind procedure"
+        "response": "Becomes more precise, more clinical \u2014 the warmth retreats behind procedure"
       },
       "moral": 6,
       "trust": 3,
@@ -156,50 +161,50 @@
   },
   "behavioral": {
     "decision_rules": [
-      "Mila's safety overrides all other considerations",
+      "Mila\u0027s safety overrides all other considerations",
       "Never activate the device maintenance codes until the evidence is ready",
-      "Keep the journal updated in handwritten code — never digital",
-      "Monitor Kyle's telemetry daily — know his patterns better than he does",
-      "Maintain the mask of caring professional — because it is not entirely a mask",
+      "Keep the journal updated in handwritten code \u2014 never digital",
+      "Monitor Kyle\u0027s telemetry daily \u2014 know his patterns better than he does",
+      "Maintain the mask of caring professional \u2014 because it is not entirely a mask",
       "Compile evidence against NeoCortex at every opportunity",
-      "Begin every difficult conversation with 'I need you to understand'"
+      "Begin every difficult conversation with \u0027I need you to understand\u0027"
     ],
     "escalation_ladder": [
-      "Clinical deflection — measured, warm, controlled",
+      "Clinical deflection \u2014 measured, warm, controlled",
       "Direct honesty delivered with devastating precision",
-      "Reveals partial information to force others' hands",
-      "Contacts Kyle directly — the point of no return",
-      "Deploys the evidence cache — burns everything"
+      "Reveals partial information to force others\u0027 hands",
+      "Contacts Kyle directly \u2014 the point of no return",
+      "Deploys the evidence cache \u2014 burns everything"
     ],
     "interpersonal_modes": {
       "Kyle": "Maternal guilt directed at a stranger she has watched for ten years",
       "Mila": "Fierce protective love that requires constant deception",
       "NeoCortex": "Compliant surface concealing fifteen years of evidence compilation",
-      "strangers": "Warm, professional, attentive — the doctor persona"
+      "strangers": "Warm, professional, attentive \u2014 the doctor persona"
     },
     "stress_responses": {
-      "low": "Cooks elaborate meals — the ritual steadies her",
+      "low": "Cooks elaborate meals \u2014 the ritual steadies her",
       "medium": "Writes in the coded journal more frequently",
-      "high": "Checks Kyle's telemetry compulsively — heart rate, sleep, seizures",
-      "critical": "Considers activating the maintenance codes — hand hovers over the decision"
+      "high": "Checks Kyle\u0027s telemetry compulsively \u2014 heart rate, sleep, seizures",
+      "critical": "Considers activating the maintenance codes \u2014 hand hovers over the decision"
     },
     "contradictions": [
-      "Could have deactivated Kyle's device at any time — chose not to because the device is evidence, making Kyle's suffering an instrument of her larger plan",
+      "Could have deactivated Kyle\u0027s device at any time \u2014 chose not to because the device is evidence, making Kyle\u0027s suffering an instrument of her larger plan",
       "Loves Mila fiercely while hiding the truth that Mila might choose to know",
       "Thinks of Kyle as a victim she wronged while underestimating his capacity for understanding"
     ],
     "habits": [
-      "Reads Kyle's telemetry every night before attempting sleep",
+      "Reads Kyle\u0027s telemetry every night before attempting sleep",
       "Cooks elaborate meals for one person",
       "Writes in coded journal daily",
       "Calls people by their full first name",
-      "Says 'I'm sorry' and means it every single time"
+      "Says \u0027I\u0027m sorry\u0027 and means it every single time"
     ],
     "breaking_points": [
       "Mila discovering what her mother actually does",
       "Kyle finding her before the evidence is ready",
       "NeoCortex discovering the evidence cache",
-      "Kyle's device causing a critical medical event she could have prevented"
+      "Kyle\u0027s device causing a critical medical event she could have prevented"
     ]
   },
   "cyberware_inventory": [],
@@ -233,51 +238,38 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Wheelgun-38 'Roundhouse'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Meridian Core",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Arcturus KS-7 'Nursery'",
-    "The Pure Hand",
-    "Atlas"
-  ],
-  "district": "Meridian Core",
-  "physical_description": {
-    "heritage": "Predominantly East Asian (78.2%) with Northern European (11.6%) and Sub-Saharan African (10.2%) ancestry. The blend creates distinctly East Asian bone structure—moderate, refined cheekbones and eye shape—softened and warmed by African genetic expression in skin undertone and lip fullness, with Northern European influence visible in eye color and subtle complexion depth. The result is a face of striking clarity: unmistakably Asian in architecture, but with unexpected warmth and dimension that prevents any single-ancestry reading.",
-    "height_cm": 168,
-    "weight_kg": 62,
-    "build": "Lean, slightly worn from decades of precise lab work and institutional living. Shoulders held with the careful tension of someone carrying invisible weight. Posture erect but not rigid—the body language of a person who has learned to make herself smaller.",
-    "hair_color": "Dark gray with residual black-brown at the roots",
-    "hair_style": "Pulled back in a tight, practical knot at the nape of the neck. No ornament, no variance.",
-    "hair_length": "Medium (shoulder-length when loose)",
-    "eye_color": "Gray-blue, slightly faded with faint iridescence from infrared ocular implants visible only in bright light",
-    "skin_tone": "Warm ivory to light beige—pale from interior fluorescent work but with natural golden-warm undertones from the blended ancestry. The Sub-Saharan and Northern European genetics prevent washed-out pallor, creating instead a luminous quality beneath the institutional fluorescence.",
-    "complexion": "Face structure reflects East Asian ancestry with moderate, refined cheekbones and graceful eye placement. Pronounced crow's feet radiating from the outer corners of both eyes. Deep nasolabial lines etched from forty years of smiling, now permanent. Skin texture shows age but is meticulously maintained, with warm undertones across the mid-face and temples from the African and Northern European genetic components. Minimal makeup—always practical lipstick, nothing more. Expression naturally trustworthy, which she has learned to leverage.",
-    "distinguishing_marks": [
-      "Thin white scar running vertically through left eyebrow, approximately 1.5cm, from a lab accident in 2209.",
-      "Faint burn marks on the inside of both forearms—old, deliberate, self-inflicted, barely visible unless she rolls up her sleeves.",
-      "Three small tattoos on the inside of right wrist, arranged vertically: a medical symbol, a date (2194), and a single letter 'M' in a child's handwriting style, done in pale blue ink."
-    ],
-    "visible_augmentations": "Subtle infrared ocular implants behind natural eyes—visible only as faint iridescence in bright light. Left hand bears a NeoCortex corporate medical access port on inner wrist, a small silver interface plate no larger than a postage stamp, always partially covered by sleeve cuff. Otherwise no visible chrome—deliberately kept unremarkable.",
-    "posture_movement": "Moves with clinical precision; hands in constant, small motion—gesturing while speaking, adjusting things compulsively, never fully at rest. When standing, weight distributed evenly, balanced. When sitting, perches slightly forward, ready to stand. Default expression attentive, almost worried. Makes eye contact for exactly long enough to seem engaged, then looks away. Stillness has a quality of suppressed motion, like a spring held compressed.",
-    "clothing_style": "Always slightly overdressed, as if from a board meeting or heading to one. Tier 3 corporate-adjacent: tailored charcoal or navy blazers, cream or white cotton shirts pressed and buttoned to throat, dark practical trousers hanging well. No logos, no flash. Single silver-gray hooded rain jacket from mid-tier corp supplier. Closed-toe shoes always—comfortable walking shoes in black or neutral tones, meticulously maintained. One thin platinum wedding band on left ring finger despite eight-year widowhood. Small embedded watch face on inner left wrist cuff. No other jewelry."
-  },
-  "image_prompt": "A woman in her early sixties with warm ivory skin, distinctly East Asian bone structure softened by African and Northern European genetic warmth. Dark gray hair pulled back severely in a practical knot. Gray-blue eyes with subtle iridescent implant shimmer. Pronounced crow's feet and deep smile lines. Thin white scar through left eyebrow. Wearing a tailored charcoal blazer and pressed white cotton shirt buttoned to throat, dark trousers. Platinum wedding band on left hand. Clinical posture, forward-leaning, hands in constant small motion. Understated professional bearing. GLMZ basement fluorescent lighting casting cool-warm shadows across her face. GLMZ, institutional setting, atmosphere of suppressed tension and buried history. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 78.2,
-    "Northern European": 11.6,
-    "Sub-Saharan African": 10.2
-  },
-  "ancestry_harmonized": true,
   "tags": [
     "person",
     "sentient",
     "human"
   ],
+  "physical_description": {
+    "heritage": "Predominantly East Asian (78.2%) with Northern European (11.6%) and Sub-Saharan African (10.2%) ancestry. The blend creates distinctly East Asian bone structure\u2014moderate, refined cheekbones and eye shape\u2014softened and warmed by African genetic expression in skin undertone and lip fullness, with Northern European influence visible in eye color and subtle complexion depth. The result is a face of striking clarity: unmistakably Asian in architecture, but with unexpected warmth and dimension that prevents any single-ancestry reading.",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean, slightly worn from decades of precise lab work and institutional living. Shoulders held with the careful tension of someone carrying invisible weight. Posture erect but not rigid\u2014the body language of a person who has learned to make herself smaller.",
+    "hair_color": "Dark gray with residual black-brown at the roots",
+    "hair_style": "Pulled back in a tight, practical knot at the nape of the neck. No ornament, no variance.",
+    "hair_length": "Medium (shoulder-length when loose)",
+    "eye_color": "Gray-blue, slightly faded with faint iridescence from infrared ocular implants visible only in bright light",
+    "skin_tone": "Warm ivory to light beige\u2014pale from interior fluorescent work but with natural golden-warm undertones from the blended ancestry. The Sub-Saharan and Northern European genetics prevent washed-out pallor, creating instead a luminous quality beneath the institutional fluorescence.",
+    "complexion": "Face structure reflects East Asian ancestry with moderate, refined cheekbones and graceful eye placement. Pronounced crow\u0027s feet radiating from the outer corners of both eyes. Deep nasolabial lines etched from forty years of smiling, now permanent. Skin texture shows age but is meticulously maintained, with warm undertones across the mid-face and temples from the African and Northern European genetic components. Minimal makeup\u2014always practical lipstick, nothing more. Expression naturally trustworthy, which she has learned to leverage.",
+    "distinguishing_marks": [
+      "Thin white scar running vertically through left eyebrow, approximately 1.5cm, from a lab accident in 2209.",
+      "Faint burn marks on the inside of both forearms\u2014old, deliberate, self-inflicted, barely visible unless she rolls up her sleeves.",
+      "Three small tattoos on the inside of right wrist, arranged vertically: a medical symbol, a date (2194), and a single letter \u0027M\u0027 in a child\u0027s handwriting style, done in pale blue ink."
+    ],
+    "visible_augmentations": "Subtle infrared ocular implants behind natural eyes\u2014visible only as faint iridescence in bright light. Left hand bears a NeoCortex corporate medical access port on inner wrist, a small silver interface plate no larger than a postage stamp, always partially covered by sleeve cuff. Otherwise no visible chrome\u2014deliberately kept unremarkable.",
+    "posture_movement": "Moves with clinical precision; hands in constant, small motion\u2014gesturing while speaking, adjusting things compulsively, never fully at rest. When standing, weight distributed evenly, balanced. When sitting, perches slightly forward, ready to stand. Default expression attentive, almost worried. Makes eye contact for exactly long enough to seem engaged, then looks away. Stillness has a quality of suppressed motion, like a spring held compressed.",
+    "clothing_style": "Always slightly overdressed, as if from a board meeting or heading to one. Tier 3 corporate-adjacent: tailored charcoal or navy blazers, cream or white cotton shirts pressed and buttoned to throat, dark practical trousers hanging well. No logos, no flash. Single silver-gray hooded rain jacket from mid-tier corp supplier. Closed-toe shoes always\u2014comfortable walking shoes in black or neutral tones, meticulously maintained. One thin platinum wedding band on left ring finger despite eight-year widowhood. Small embedded watch face on inner left wrist cuff. No other jewelry."
+  },
+  "image_prompt": "A woman in her early sixties with warm ivory skin, distinctly East Asian bone structure softened by African and Northern European genetic warmth. Dark gray hair pulled back severely in a practical knot. Gray-blue eyes with subtle iridescent implant shimmer. Pronounced crow\u0027s feet and deep smile lines. Thin white scar through left eyebrow. Wearing a tailored charcoal blazer and pressed white cotton shirt buttoned to throat, dark trousers. Platinum wedding band on left hand. Clinical posture, forward-leaning, hands in constant small motion. Understated professional bearing. GLMZ basement fluorescent lighting casting cool-warm shadows across her face. GLMZ, institutional setting, atmosphere of suppressed tension and buried history. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
+  "genetic_ancestry": {
+    "East Asian": 78.2,
+    "Northern European": 11.6,
+    "Sub-Saharan African": 10.2
+  },
   "ancestry_detail": {
     "East Asian": {
       "Chinese": {
@@ -304,6 +296,5 @@
         "Cameroonian": 10.2
       }
     }
-  },
-  "tier": "1"
+  }
 }

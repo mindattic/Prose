@@ -12,7 +12,7 @@
   "observed_behavior": "Operates underground boxing gym. Trains both synthetic and human fighters. Promotes mixed bouts. Known for strict rules about fairness — synthetic fighters must accept output limiters to compete with humans. Has been raided by authorities six times. Reopens within a week each time.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 0,
-  "location": "The Shelf — industrial sub-level",
+  "location": "the Gray Zone — industrial sub-level",
   "dti_rating": 0.8,
   "story_hooks": [
     "A synthetic fighter in Dante's gym starts winning bouts without their output limiter engaged — and claims they can't turn it back on. Someone remotely disabled their safety constraints. The next bout could kill a human fighter."
@@ -27,15 +27,13 @@
     "synthetic",
     "elf",
     "rain",
-    "train",
-    "shelf"
+    "train"
   ],
   "related_entities": [
     "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
     "GLMZ",
     "Lyric",
     "New Windsor / Novaya Windsorka",
-    "The Shelf",
     "Zheng-dao Bioelectric"
   ]
 }

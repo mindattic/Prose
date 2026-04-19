@@ -1,16 +1,17 @@
 {
   "id": "019d6143a63e77589fbef63e74e91b3a",
+  "rating": 70,
   "type": "character",
   "name": "Frost Makwa",
   "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Covert entry and social penetration specialist — infiltrator",
+  "role": "Covert entry and social penetration specialist \u2014 infiltrator",
   "age": 32,
   "status": "active",
-  "location": "Crucible Square — open-air market, Tier 1-2 commerce, near Ashland and Chicago Ave",
-  "description": "Frost Makwa is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 32, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — internal drug synthesizer — produces combat stims and medical compounds on deman — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a infiltrator out of Crucible Square, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nWhat Frost Makwa lacks in subtlety, he compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "location": "Crucible Square \u2014 open-air market, Tier 1-2 commerce, near Ashland and Chicago Ave",
+  "description": "Frost Makwa is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 32, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible \u2014 internal drug synthesizer \u2014 produces combat stims and medical compounds on deman \u2014 and he makes no effort to hide it.\n\nMilitary training \u2014 one of the private security corps that folded during the consolidation wars \u2014 left him with skills and night terrors in equal measure. He works as a infiltrator out of Crucible Square, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nWhat Frost Makwa lacks in subtlety, he compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.54,
@@ -21,50 +22,54 @@
       "ghost": 0.73
     },
     "core_fears": [
-      "Being captured alive — death is preferable to corporate interrogation",
-      "That they're fundamentally alone and connection is just a vulnerability",
+      "Being captured alive \u2014 death is preferable to corporate interrogation",
+      "That they\u0027re fundamentally alone and connection is just a vulnerability",
       "That their reputation is built on luck, not skill, and the luck is finite"
     ],
     "core_desires": [
-      "Stability — a place to sleep that's the same place two nights running",
+      "Stability \u2014 a place to sleep that\u0027s the same place two nights running",
       "To prove everyone who dismissed them catastrophically wrong",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
+      "Enough Quanta to buy out of the life \u2014 a clean identity and passage out of GLMZ"
     ],
     "coping_mechanisms": [
-      "Control — micromanages everything within reach to compensate for the chaos everywhere else",
-      "Ritual — follows the same pre-job routine every time, superstition as structure",
-      "Isolates — retreats into their space when overwhelmed, emerges only for work"
+      "Control \u2014 micromanages everything within reach to compensate for the chaos everywhere else",
+      "Ritual \u2014 follows the same pre-job routine every time, superstition as structure",
+      "Isolates \u2014 retreats into their space when overwhelmed, emerges only for work"
     ],
     "blind_spots": [
-      "Mistakes pattern recognition for wisdom — sees connections that aren't there",
+      "Mistakes pattern recognition for wisdom \u2014 sees connections that aren\u0027t there",
       "Cannot accept help without interpreting it as leverage",
       "Mistakes loyalty for weakness in others and cynicism for strength in themselves"
     ],
-    "secret": "Kamala Larsen-Mensah killed someone who didn't deserve it on a job three years ago and has never told anyone. The face appears in dreams weekly."
+    "secret": "Kamala Larsen-Mensah killed someone who didn\u0027t deserve it on a job three years ago and has never told anyone. The face appears in dreams weekly."
   },
   "speech_patterns": {
     "vocabulary": "Quiet and precise. Every word is measured. Silence does the heavy lifting.",
-    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
+    "cadence": "Rhythmic, almost musical \u2014 the sentence structure has a pattern even when the words are brutal.",
     "verbal_tics": [
       "Uses technical jargon for everything, including emotions",
-      "Addresses people by physical traits — 'hey, tall one' or 'listen, chrome-arm'"
+      "Addresses people by physical traits \u2014 \u0027hey, tall one\u0027 or \u0027listen, chrome-arm\u0027"
     ],
     "example_lines": [
-      "\"The best disguise is being exactly who they expect to see.\"",
-      "\"I was in the building for six hours before anyone realized I didn't work there.\"",
-      "\"Security is a story people tell themselves. I'm the plot twist.\""
-    ]
+      "\u0022The best disguise is being exactly who they expect to see.\u0022",
+      "\u0022I was in the building for six hours before anyone realized I didn\u0027t work there.\u0022",
+      "\u0022Security is a story people tell themselves. I\u0027m the plot twist.\u0022"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
     "A high-paying contract turns out to target someone Kamala Larsen-Mensah owes a personal debt to",
-    "Kamala Larsen-Mensah's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
+    "Kamala Larsen-Mensah\u0027s augmentations begin malfunctioning in the field \u2014 sabotage or degradation, and either answer is bad",
     "A corporate black site Kamala Larsen-Mensah once infiltrated is being reopened, and the people inside know his face"
   ],
   "narrative_function": "As a infiltrator, Kamala Larsen-Mensah embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
-  "augmentations": "Internal drug synthesizer — produces combat stims and medical compounds on demand. Internal drug synthesizer — produces combat stims and medical compounds on demand",
-  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
-  "affiliation": "Independent — Dockside connections",
+  "augmentations": "Internal drug synthesizer \u2014 produces combat stims and medical compounds on demand. Internal drug synthesizer \u2014 produces combat stims and medical compounds on demand",
+  "daily_life": "Between contracts, maintains a cover identity \u2014 mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+  "affiliation": "Independent \u2014 Dockside connections",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -156,7 +161,7 @@
       "encyclopedic knowledge of GLMZ infrastructure"
     ],
     "weaknesses": [
-      "substance dependency — functional but fragile",
+      "substance dependency \u2014 functional but fragile",
       "trust issues that limit crew effectiveness"
     ],
     "tags": [
@@ -173,29 +178,29 @@
   "behavioral": {
     "decision_rules": [
       "Will not betray a client who paid in full, regardless of better offers",
-      "Will not take contracts against children or families — the line is hard and non-negotiable",
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract"
+      "Will not take contracts against children or families \u2014 the line is hard and non-negotiable",
+      "Never works with the same crew twice in a row \u2014 pattern avoidance as survival strategy",
+      "Always demands half payment upfront \u2014 trust is a luxury, Quanta is concrete",
+      "Will abandon a job if the intel was deliberately falsified \u2014 being set up violates the contract"
     ],
     "escalation_ladder": [
-      "1. Assess — read the situation, identify threats and advantages",
-      "2. Negotiate — try to find a solution that doesn't cost ammunition",
-      "3. Intimidate — make the cost of conflict clear",
-      "4. Precision violence — surgical, targeted, minimal collateral",
-      "5. Full engagement — overwhelming force, no half measures",
-      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+      "1. Assess \u2014 read the situation, identify threats and advantages",
+      "2. Negotiate \u2014 try to find a solution that doesn\u0027t cost ammunition",
+      "3. Intimidate \u2014 make the cost of conflict clear",
+      "4. Precision violence \u2014 surgical, targeted, minimal collateral",
+      "5. Full engagement \u2014 overwhelming force, no half measures",
+      "6. Emergency protocol \u2014 abort mission, survival priority, deal with consequences later"
     ],
     "interpersonal_modes": {
       "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
       "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
       "threats": "Cold and efficient. Emotion is a liability in combat. The response is mechanical until the threat is resolved."
     },
     "stress_responses": {
       "low": "Heightened awareness, sharper focus. Low stress is fuel.",
       "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
-      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "high": "Goes quiet. The silence is not calm \u2014 it\u0027s the sound of every contingency being evaluated simultaneously.",
       "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
     },
     "contradictions": [
@@ -204,14 +209,14 @@
       "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
     ],
     "habits": [
-      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
+      "Wears the same item of clothing for luck \u2014 a scarf, a glove, a specific pair of boots",
       "Checks exits within 10 seconds of entering any room",
-      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
-      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle"
+      "Sleeps with one hand on a weapon \u2014 has done this for so long it\u0027s not deliberate anymore",
+      "Takes a specific route home every time, varying only one block per trip \u2014 paranoia as lifestyle"
     ],
     "breaking_points": [
       "A child being put in danger as leverage against them",
-      "Complete isolation — cut off from network, contacts, and purpose simultaneously"
+      "Complete isolation \u2014 cut off from network, contacts, and purpose simultaneously"
     ]
   },
   "cyberware_inventory": [
@@ -222,7 +227,7 @@
       "tier": "",
       "condition": "pristine",
       "installed_date": "",
-      "description": "Internal drug synthesizer — produces combat stims and medical compounds on demand",
+      "description": "Internal drug synthesizer \u2014 produces combat stims and medical compounds on demand",
       "replaces": ""
     },
     {
@@ -232,7 +237,7 @@
       "tier": "",
       "condition": "refurbished",
       "installed_date": "",
-      "description": "Internal drug synthesizer — produces combat stims and medical compounds on demand",
+      "description": "Internal drug synthesizer \u2014 produces combat stims and medical compounds on demand",
       "replaces": ""
     }
   ],
@@ -265,43 +270,33 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [
-    "Hearthstone Firearms Hunter's Precision HHP-7 'Longreach'",
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
-  ],
-  "related_entities": [
-    "The Unfinished Theorem",
-    "The Nearfield",
-    "Chicago",
-    "Frost",
-    "Slagworks Industrial"
-  ],
-  "district": "The Shelf",
   "physical_description": {
-    "heritage": "Complex multihethnic blend dominated by Indigenous American ancestry (44.7%) — broad cheekbones, strong nose bridge, angular facial structure. South Asian heritage (27.1%) adds refined facial geometry and warm golden undertones. Hispanic/Latin American ancestry (16.6%) contributes warm, earthy richness. Central Asian (7.3%) enhances cheekbone prominence and facial angularity. East Asian (4.3%) provides subtle influence on eye-set and overall facial proportions. Result: warm medium-brown skin with golden, olive, and copper undertones creating luminous depth. Striking angular features with pronounced Indigenous American bone structure refined by South Asian and Central Asian cheekbone prominence.",
+    "heritage": "Complex multihethnic blend dominated by Indigenous American ancestry (44.7%) \u2014 broad cheekbones, strong nose bridge, angular facial structure. South Asian heritage (27.1%) adds refined facial geometry and warm golden undertones. Hispanic/Latin American ancestry (16.6%) contributes warm, earthy richness. Central Asian (7.3%) enhances cheekbone prominence and facial angularity. East Asian (4.3%) provides subtle influence on eye-set and overall facial proportions. Result: warm medium-brown skin with golden, olive, and copper undertones creating luminous depth. Striking angular features with pronounced Indigenous American bone structure refined by South Asian and Central Asian cheekbone prominence.",
     "height_cm": 188,
     "weight_kg": 78,
-    "build": "Lean and angular, with the precise musculature of someone who trains systematically rather than for bulk. Long limbs suggest a runner's frame — efficient rather than imposing.",
+    "build": "Lean and angular, with the precise musculature of someone who trains systematically rather than for bulk. Long limbs suggest a runner\u0027s frame \u2014 efficient rather than imposing.",
     "hair_color": "Dark brown with premature silver at the temples",
     "hair_style": "Worn short and neat, military-regulation simple",
     "hair_length": "Short",
     "eye_color": "Hazel with slight amber undertone",
-    "skin_tone": "Warm medium brown with golden, olive, and copper undertones — reflecting Indigenous American, South Asian, Hispanic, and Central Asian heritage warmth. Luminous depth from complex regional blend.",
+    "skin_tone": "Warm medium brown with golden, olive, and copper undertones \u2014 reflecting Indigenous American, South Asian, Hispanic, and Central Asian heritage warmth. Luminous depth from complex regional blend.",
     "complexion": "Pronounced cheekbones and broad, straight nose bridge characteristic of Indigenous American ancestry, enhanced by Central Asian high-cheekbone prominence. Refined facial geometry from South Asian heritage. Defined jawline. Skin is clear but bears the texture of someone who has spent time in rough conditions. Expression is controlled, rarely at rest. Fine lines around the eyes suggest squinting or sustained focus.",
     "distinguishing_marks": [
-      "Thin white scar along the left temple, barely visible unless light catches it at the right angle — old injury, professionally healed",
-      "Burn scar on the right forearm (inner side, 8cm x 4cm) — pale and mottled, consistent with chemical or thermal contact",
-      "Surgical scar running vertically along the right side of the ribcage (approximately 12cm) — clean, professional closure, approximately 5 years old"
+      "Thin white scar along the left temple, barely visible unless light catches it at the right angle \u2014 old injury, professionally healed",
+      "Burn scar on the right forearm (inner side, 8cm x 4cm) \u2014 pale and mottled, consistent with chemical or thermal contact",
+      "Surgical scar running vertically along the right side of the ribcage (approximately 12cm) \u2014 clean, professional closure, approximately 5 years old"
     ],
-    "visible_augmentations": "Chrome plating visible around the right shoulder and upper chest where the internal drug synthesizer connects to the surface — sleek titanium-alloy engineering with faint bioluminescent indicator lines that pulse softly blue when the synthesizer is active. The chrome is left exposed intentionally, a statement rather than camouflage.",
-    "posture_movement": "Moves with deliberate efficiency — no wasted motion, no fidgeting. Stands with weight balanced and slightly forward, ready to shift direction. Eyes track exits and sightlines constantly. Handshake is firm but brief. Speech is measured, with calculated pauses that suggest either precision or careful emotional suppression.",
-    "clothing_style": "Favors Tier 3-4 pragmatism — durable synthetics in dark colors (black, charcoal, deep blue) that resist wear and staining. Typically wears a fitted longline jacket with internal pockets over a simple turtleneck. Pants are tactical cut with reinforced seams. Shoes are unmarked but expensive, chosen for quiet movement and ankle support. No visible branding or status markers — the opposite of advertising. When maintaining cover, adopts identical neutrality to avoid memorable details."
+    "visible_augmentations": "Chrome plating visible around the right shoulder and upper chest where the internal drug synthesizer connects to the surface \u2014 sleek titanium-alloy engineering with faint bioluminescent indicator lines that pulse softly blue when the synthesizer is active. The chrome is left exposed intentionally, a statement rather than camouflage.",
+    "posture_movement": "Moves with deliberate efficiency \u2014 no wasted motion, no fidgeting. Stands with weight balanced and slightly forward, ready to shift direction. Eyes track exits and sightlines constantly. Handshake is firm but brief. Speech is measured, with calculated pauses that suggest either precision or careful emotional suppression.",
+    "clothing_style": "Favors Tier 3-4 pragmatism \u2014 durable synthetics in dark colors (black, charcoal, deep blue) that resist wear and staining. Typically wears a fitted longline jacket with internal pockets over a simple turtleneck. Pants are tactical cut with reinforced seams. Shoes are unmarked but expensive, chosen for quiet movement and ankle support. No visible branding or status markers \u2014 the opposite of advertising. When maintaining cover, adopts identical neutrality to avoid memorable details."
   },
-  "image_prompt": "Frost Makwa, a striking 188cm tall neo-noir operative in the GLMZ, 2226. Lean angular build with warm medium-brown skin, golden and olive undertones reflecting Indigenous American, South Asian, and Central Asian heritage. Pronounced cheekbones, broad straight nose bridge, defined jawline. Dark brown hair with silver at temples, cut short and military-neat. Hazel eyes with amber undertone, expression controlled and intensely focused. Visible white scar along left temple, burn scar on inner right forearm. Chrome titanium plating with soft blue bioluminescent lines exposed across right shoulder and upper chest where drug synthesizer connects — intentional statement piece. Wearing fitted dark charcoal longline jacket with internal pockets over simple black turtleneck, tactical-cut reinforced pants, unmarked expensive dark shoes. Stands with balanced posture, weight slightly forward, ready to move. Cold neon-lit corporate corridor or dimly lit safe house setting. Neo-noir noir lighting with blue and amber neon reflecting off chrome augmentations. Mood: calculated precision, dangerous competence, emotional suppression. --ar 2:3 --v 6",
+  "image_prompt": "Frost Makwa, a striking 188cm tall neo-noir operative in the GLMZ, 2226. Lean angular build with warm medium-brown skin, golden and olive undertones reflecting Indigenous American, South Asian, and Central Asian heritage. Pronounced cheekbones, broad straight nose bridge, defined jawline. Dark brown hair with silver at temples, cut short and military-neat. Hazel eyes with amber undertone, expression controlled and intensely focused. Visible white scar along left temple, burn scar on inner right forearm. Chrome titanium plating with soft blue bioluminescent lines exposed across right shoulder and upper chest where drug synthesizer connects \u2014 intentional statement piece. Wearing fitted dark charcoal longline jacket with internal pockets over simple black turtleneck, tactical-cut reinforced pants, unmarked expensive dark shoes. Stands with balanced posture, weight slightly forward, ready to move. Cold neon-lit corporate corridor or dimly lit safe house setting. Neo-noir noir lighting with blue and amber neon reflecting off chrome augmentations. Mood: calculated precision, dangerous competence, emotional suppression. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Indigenous American": 44.7,
     "South Asian": 27.1,
@@ -309,12 +304,6 @@
     "Central Asian": 7.3,
     "East Asian": 4.3
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Indigenous American": {
       "Plains Nations": {
@@ -367,6 +356,5 @@
         "Korean": 1.4
       }
     }
-  },
-  "tier": "3"
+  }
 }

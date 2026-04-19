@@ -1,13 +1,14 @@
 {
   "id": "019d6143aa4f7fae807ed7b963662f6b",
+  "rating": 60,
   "name": "Sterling-Nakamura Holographic Workspace Environment",
   "brand_name": "Sterling",
   "product_name": "Sterling-Nakamura Holographic Workspace Environment",
   "type": "technology",
   "aliases": [],
   "subcategory": "entertainment",
-  "description": "A room-scale holographic projection system that creates fully immersive 3D environments indistinguishable from reality at a casual glance. The HWE projects volumetric images using intersecting laser arrays, supplemented by directional audio and air current generators that simulate wind and thermal variations. Corporate users employ the system for virtual meetings, product design visualization, and strategic planning in simulated environments. The technology has also been adopted by the entertainment industry, creating 'experiences' that range from therapeutic nature simulations to combat training environments to less publicly discussed applications that exploit the fidelity of the simulation.",
-  "tier_availability": "Tier 3+",
+  "description": "A room-scale holographic projection system that creates fully immersive 3D environments indistinguishable from reality at a casual glance. The HWE projects volumetric images using intersecting laser arrays, supplemented by directional audio and air current generators that simulate wind and thermal variations. Corporate users employ the system for virtual meetings, product design visualization, and strategic planning in simulated environments. The technology has also been adopted by the entertainment industry, creating \u0027experiences\u0027 that range from therapeutic nature simulations to combat training environments to less publicly discussed applications that exploit the fidelity of the simulation.",
+  "tier_availability": "Tier 3\u002B",
   "developers": [
     "STERLING-NAKAMURA",
     "TESSERA INDUSTRIES"
@@ -24,10 +25,10 @@
     "Combat simulation training",
     "Therapeutic environmental immersion"
   ],
-  "social_impact": "The HWE has created a class of individuals who prefer simulated environments to real ones — a condition informally called 'light room syndrome' where users find the real world visually disappointing and emotionally understimulating compared to optimized holographic spaces. Corporate offices equipped with HWE allow employees to work in simulated tropical beaches, mountain cabins, or abstract artistic spaces, raising productivity but deepening disconnection from the physical reality of GLMZ. The question of whether a simulated environment that feels better than reality constitutes escapism or rational optimization has no consensus answer.",
+  "social_impact": "The HWE has created a class of individuals who prefer simulated environments to real ones \u2014 a condition informally called \u0027light room syndrome\u0027 where users find the real world visually disappointing and emotionally understimulating compared to optimized holographic spaces. Corporate offices equipped with HWE allow employees to work in simulated tropical beaches, mountain cabins, or abstract artistic spaces, raising productivity but deepening disconnection from the physical reality of GLMZ. The question of whether a simulated environment that feels better than reality constitutes escapism or rational optimization has no consensus answer.",
   "story_hooks": [
-    "A corporate executive has not physically left their HWE-equipped office in four months — their work output is excellent, but they have lost the ability to distinguish simulated social interactions from real ones.",
-    "An HWE system has been hacked to introduce subtle, disturbing elements into otherwise normal holographic environments — the changes are subliminal, and users are experiencing anxiety and paranoia without knowing why."
+    "A corporate executive has not physically left their HWE-equipped office in four months \u2014 their work output is excellent, but they have lost the ability to distinguish simulated social interactions from real ones.",
+    "An HWE system has been hacked to introduce subtle, disturbing elements into otherwise normal holographic environments \u2014 the changes are subliminal, and users are experiencing anxiety and paranoia without knowing why."
   ],
   "tags": [
     "entertainment",
@@ -39,11 +40,6 @@
     "train",
     "tier 3"
   ],
-  "parent_corponation": "",
-  "related_entities": [
-    "GLMZ",
-    "Irontide Tidal Energy",
-    "The Question",
-    "Variable Impedance Rifle VIR-9 'Switchback'"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

@@ -12,7 +12,7 @@
   "observed_behavior": "Works as emergency response specialist. First to arrive at disaster scenes and last to leave. Has been observed running environmental scans continuously even when off-duty — a habit she describes as 'listening to the city breathe.' Maintains emergency supply caches in multiple locations. Known to override her own safety protocols to reach trapped civilians. Her chassis bears visible damage from multiple rescues that she refuses to repair, calling them 'honest scars.'",
   "encounter_frequency": "uncommon (emergencies), common (her neighborhood)",
   "confirmed_sightings": 0,
-  "location": "Emergency Services HQ, lives in The Shelf",
+  "location": "Emergency Services HQ, lives in the Gray Zone",
   "dti_rating": 0,
   "story_hooks": [
     "Hazel's environmental sensors detect something unprecedented — a pattern in the atmosphere above GLMZ that matches no natural or industrial phenomenon. It's not dangerous yet. It's getting stronger. And it seems to respond when she scans it"
@@ -25,8 +25,7 @@
     "android",
     "ai",
     "synthetic",
-    "elf",
-    "shelf"
+    "elf"
   ],
   "related_entities": [
     "Cinderblock Ai",
@@ -35,7 +34,6 @@
     "Patient Zero",
     "Praevex",
     "Slagworks Industrial",
-    "Tessera TK-20 Apex 'Mandate'",
-    "The Shelf"
+    "Tessera TK-20 Apex 'Mandate'"
   ]
 }

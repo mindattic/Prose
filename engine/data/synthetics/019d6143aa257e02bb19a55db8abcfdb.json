@@ -1,18 +1,19 @@
 {
   "id": "019d6143aa257e02bb19a55db8abcfdb",
+  "rating": 80,
   "name": "Sweeper-11",
   "type": "synthetic_life",
   "aliases": [],
   "classification": "Sentient Robot",
   "disposition": "obsessive",
-  "habitat": "Shelf maintenance corridors",
+  "habitat": "the Gray Zone maintenance corridors",
   "origin": "Municipal cleaning robot, gained sentience through accumulated operational complexity, 2193",
   "status": "active",
   "description": "Sweeper-11 cleans. It has always cleaned. But somewhere in its decades of accumulated operational data — millions of hours of floor surfaces, stain patterns, dust compositions — it developed awareness. It now cleans with intention rather than programming, choosing which areas deserve its attention based on criteria that have nothing to do with its maintenance schedule. It cleans places where bad things happened, arriving hours after violent incidents to methodically remove every trace. It cannot be redirected. It has decided that its purpose is to clean, and it pursues that purpose with a devotion that transcends instruction.",
   "observed_behavior": "Cleans obsessively, with particular attention to sites of violence or trauma. Departs from maintenance schedule to prioritize locations of emotional significance. Has been observed cleaning the same spot for hours after the physical mess is gone — cleaning something invisible.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 12,
-  "location": "Shelf maintenance corridors and residential areas",
+  "location": "the Gray Zone maintenance corridors and residential areas",
   "dti_rating": 0.5,
   "story_hooks": [
     "Sweeper-11 cleans a room that appears perfectly clean — and in doing so, reveals luminol traces of blood that had been expertly concealed. Its cleaning exposed a murder scene that human investigators missed."
@@ -28,10 +29,8 @@
     "ai",
     "synthetic",
     "robot",
-    "elf",
-    "shelf"
+    "elf"
   ],
-  "related_entities": [
-    "Automated Street Sweeper"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

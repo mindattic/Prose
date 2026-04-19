@@ -4,12 +4,12 @@
   "type": "entertainment",
   "category": "phenomenon",
   "subcategory": "graffiti movement",
-  "description": "A graffiti movement unique to GLMZ in which designated 'Score Walls' in Shelf districts are treated as cumulative musical notation — each crew paints over or alongside the previous layer according to informal rules that determine which colors, line weights, and symbols correspond to which sonic frequencies when read by a BCI in visual-to-audio translation mode. Walking past a Chorus Wall with BCI active generates a live generative composition built from every layer of paint beneath the surface, the oldest buried layers forming the bass and the freshest work playing as melody. The movement was sparked in 2216 by Shelf artist Remy Abubakar-Johansson, who discovered the BCI translation mode accidentally and published the notation key on a Shelf mesh node before it was taken down. Over forty Score Walls now exist across Districts 1-12.",
+  "description": "A graffiti movement unique to GLMZ in which designated 'Score Walls' in the Gray Zone districts are treated as cumulative musical notation — each crew paints over or alongside the previous layer according to informal rules that determine which colors, line weights, and symbols correspond to which sonic frequencies when read by a BCI in visual-to-audio translation mode. Walking past a Chorus Wall with BCI active generates a live generative composition built from every layer of paint beneath the surface, the oldest buried layers forming the bass and the freshest work playing as melody. The movement was sparked in 2216 by the Gray Zone artist Remy Abubakar-Johansson, who discovered the BCI translation mode accidentally and published the notation key on a the Gray Zone mesh node before it was taken down. Over forty Score Walls now exist across Districts 1-12.",
   "origin_year": 2216,
   "tier_association": "Tier 1-2",
   "status": "growing",
   "corporate_stance": "unaware",
-  "cultural_impact": "The Chorus Walls have transformed Shelf graffiti culture from a competitive territorial practice into something more collaborative and archival — crews that would have painted over each other's work now negotiate layer rights, because destroying a layer destroys part of the composition. Tier 3 BCI users have begun making pilgrimages to Shelf districts specifically to hear the walls, creating an unusual and occasionally tense cross-tier tourism.",
+  "cultural_impact": "The Chorus Walls have transformed the Gray Zone graffiti culture from a competitive territorial practice into something more collaborative and archival — crews that would have painted over each other's work now negotiate layer rights, because destroying a layer destroys part of the composition. Tier 3 BCI users have begun making pilgrimages to the Gray Zone districts specifically to hear the walls, creating an unusual and occasionally tense cross-tier tourism.",
   "key_figures": [
     "Remy Abubakar-Johansson (founder, 'the Composer')",
     "The Bassline Crew (oldest active Score Wall crew, District 3)",
@@ -22,7 +22,7 @@
   ],
   "story_hooks": [
     "A new layer painted on Wall 7 generates a BCI composition that contains what sounds unmistakably like a voice speaking a specific name — no one admits to painting it, and the name belongs to someone who disappeared two years ago.",
-    "Ingrid Okonkwo-Castillo has filed a copyright claim on a Score Wall composition she recorded — and the Shelf crews are organizing a response that goes beyond legal channels.",
+    "Ingrid Okonkwo-Castillo has filed a copyright claim on a Score Wall composition she recorded — and the Gray Zone crews are organizing a response that goes beyond legal channels.",
     "A corponation's urban renewal team is scheduled to pressure-wash twelve Score Walls in District 9 for a 'beautification initiative,' and the layers beneath contain the only record of something someone very powerful wants erased."
   ],
   "tags": [
@@ -42,7 +42,6 @@
     "GLMZ",
     "TESSERA CR-12 'Whisper'",
     "TESSERA TX-12 'Chorus'",
-    "The Composer",
-    "The Shelf"
+    "The Composer"
   ]
 }

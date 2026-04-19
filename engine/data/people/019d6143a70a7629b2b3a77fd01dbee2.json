@@ -9,7 +9,7 @@
   "role": "Loan shark and neighborhood bookmaker",
   "age": 54,
   "status": "active",
-  "location": "The Shelf lower levels, operates from a tea shop called Ndovu & Sons in Ironvein, near Halsted and Chicago Ave",
+  "location": "the Gray Zone lower levels, operates from a tea shop called Ndovu & Sons in Ironvein, near Halsted and Chicago Ave",
   "description": "Luca Montalvo is a lean, bespectacled man of fifty-four who looks like someone's favorite uncle and has ruined more lives than he can accurately count. He is medium height with warm brown skin, a close-trimmed white beard, and the kind of eyes that seem genuinely interested in whatever you're saying. He favors clean but worn shirts in earth tones and keeps a small potted succulent on the counter of his tea shop, which he waters with ritual attention every morning. He has no visible augmentations and makes a mild point of this — old-fashioned, he says, I trust my own hands. His geneware is limited to a patterned iris modification he got when he was young, concentric rings of amber and brown that make people feel they're being watched even when he's looking elsewhere.\n\nHe has operated in Ironvein for twenty-six years. He knows exactly which families are behind on their Ferrogate bills, who has a gambling habit they're hiding from their partner, which teenagers are moving small product for which crews. He does not advertise his lending services — they advertise themselves, because when you need Φ300 before the end of the week and the Tier 2 credit system has already declined you twice, someone will tell you about Tel. His rates are usurious and his enforcement is never personal — he outsources that to a pair of young men who are efficient if not imaginative. He himself never raises his voice.",
   "psychology": {
     "facet_weights": {
@@ -21,7 +21,7 @@
       "ghost": 0.6
     },
     "core_fears": [
-      "the Shelf Syndicate deciding he's more valuable as an example than as a tributary",
+      "the Gray Zone Syndicate deciding he's more valuable as an example than as a tributary",
       "someone finding the physical ledger"
     ],
     "core_desires": [
@@ -53,12 +53,12 @@
   "relationships": [],
   "story_hooks": [
     "A borrower who died before repaying had information about a larger criminal operation — Télesphore holds the debt marker and believes it can be transferred to whatever the deceased knew",
-    "The Shelf Syndicate has sent an auditor to review his books, and the forgiven debts will appear as losses — he needs a discreet solution within seventy-two hours"
+    "the Gray Zone Syndicate has sent an auditor to review his books, and the forgiven debts will appear as losses — he needs a discreet solution within seventy-two hours"
   ],
   "narrative_function": "Quest giver when debts intersect with larger plots; pressure source when player-adjacent characters owe him money; information broker who knows everyone's financial secrets; represents the mundane cruelty of economic desperation",
   "augmentations": "Patterned iris geneware (amber/brown concentric rings); an old subdermal transaction ledger implant in his right forearm, tech so dated it's nearly decorative",
   "daily_life": "Opens the tea shop at 0700, serves genuine customers until mid-morning, then conducts lending and collection business in the back room through the afternoon, closes by 1900, spends evenings updating his books by hand in a physical ledger encrypted with a cipher only he knows.",
-  "affiliation": "Independent operator with tribute arrangements to the Ironvein Shelf Syndicate",
+  "affiliation": "Independent operator with tribute arrangements to the Ironvein the Gray Zone Syndicate",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -175,7 +175,7 @@
     "Info Broker": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -185,7 +185,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2146 — Born in Ironvein to a Shelf family with three generations of residency",
+      "event": "2146 — Born in Ironvein to a the Gray Zone family with three generations of residency",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -193,7 +193,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2164 — Began running numbers for the Ironvein Shelf Syndicate as a teenager",
+      "event": "2164 — Began running numbers for the Ironvein the Gray Zone Syndicate as a teenager",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -240,14 +240,13 @@
   "related_entities": [
     "ARCTURUS DEFENSE SentinelEar Tactical Auditory MK-II",
     "Ferrogate Transit",
-    "The Shelf",
     "Ironvein",
     "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
     "Chicago",
     "Flux Strömqvist-Villalobos",
     "The Pure Hand"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Complex Eurasian blend dominated by Central Asian (28.7%) and Middle Eastern (25.0%) ancestry, with substantial Eastern European (16.1%), Hispanic/Latin American (15.4%), and Northern European (14.8%) admixture. This creates a distinctly multicontinental phenotype: warm olive skin with golden undertones from the Central Asian-Middle Eastern core, tempered by cooler Northern European influence. Facial structure reflects the steppe-Mediterranean convergence—prominent Central Asian cheekbones, refined Eastern European jawline definition, and the subtle facial warmth characteristic of Hispanic/Latin American heritage. His features suggest a man whose ancestry traces across the old Silk Road and beyond, manifesting in balanced, harmonious proportions that read as neither distinctly 'from' any single region nor obviously mixed, but rather as a naturally occurring Ubiquitous Diaspora phenotype.",
     "height_cm": 173,

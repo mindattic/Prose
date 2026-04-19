@@ -4,7 +4,7 @@
   "type": "weapon",
   "aliases": [],
   "category": "underwater weapon",
-  "description": "A crude speargun assembled from PVC pipe, surgical tubing, and sharpened rebar, used by Shelf residents who work, hide, or fight in GLMZ's flooded lower levels. The Gutterfish operates on simple elastic propulsion — the surgical tubing is stretched to store energy, the rebar spear is seated in the PVC barrel, and releasing the retention clip fires the spear at velocities sufficient to penetrate flesh and light materials at ranges up to 5 meters underwater.\n\nGutterfish spearguns exist because the people who need underwater weapons the most are the ones who can least afford them. The Shelf's lowest levels flood regularly, and residents who refuse to evacuate — because they have nowhere to go, or because leaving means losing what little they own — need tools that work in water. The Gutterfish serves as weapon, fishing tool, and utility device. The same instrument that defends a flooded home also catches the fish that increasingly colonize GLMZ's submerged spaces, providing protein to communities that can't afford the vertical farm produce sold in upper-tier markets.\n\nEvery Gutterfish is handmade and unreliable. The surgical tubing degrades in contaminated water, the PVC cracks in cold temperatures, and the rebar spears are never straight enough for consistent accuracy. But the weapon costs Φ10 in materials and can be built by anyone with basic tools, making it the most democratic weapon in GLMZ's flooded underworld.",
+  "description": "A crude speargun assembled from PVC pipe, surgical tubing, and sharpened rebar, used by the Gray Zone residents who work, hide, or fight in GLMZ's flooded lower levels. The Gutterfish operates on simple elastic propulsion — the surgical tubing is stretched to store energy, the rebar spear is seated in the PVC barrel, and releasing the retention clip fires the spear at velocities sufficient to penetrate flesh and light materials at ranges up to 5 meters underwater.\n\nGutterfish spearguns exist because the people who need underwater weapons the most are the ones who can least afford them. the Gray Zone's lowest levels flood regularly, and residents who refuse to evacuate — because they have nowhere to go, or because leaving means losing what little they own — need tools that work in water. The Gutterfish serves as weapon, fishing tool, and utility device. The same instrument that defends a flooded home also catches the fish that increasingly colonize GLMZ's submerged spaces, providing protein to communities that can't afford the vertical farm produce sold in upper-tier markets.\n\nEvery Gutterfish is handmade and unreliable. The surgical tubing degrades in contaminated water, the PVC cracks in cold temperatures, and the rebar spears are never straight enough for consistent accuracy. But the weapon costs Φ10 in materials and can be built by anyone with basic tools, making it the most democratic weapon in GLMZ's flooded underworld.",
   "manufacturer": "Street Custom",
   "tier_availability": "Tier 1+",
   "legality": "Unregulated — classified as fishing equipment",
@@ -16,15 +16,15 @@
   ],
   "specifications": "projectile: Sharpened rebar, 40-60cm\neffective range: 5 meters underwater\npropulsion: Surgical tubing elastic\nweight: 0.5-1 kg\nlength: 60-80cm\nreliability: Variable, degrades in contaminated water",
   "tactical_use": "Close-range underwater combat and subsistence fishing in flooded environments. The Gutterfish is a tool of survival, used by people who live in spaces that the rest of the city has abandoned to the water. Its effectiveness depends entirely on the builder's skill and the operator's familiarity with their specific weapon.",
-  "cultural_context": "The Gutterfish is a symbol of adaptation at the margins. Shelf residents who carry them are people who have chosen to live in the water rather than be displaced by it. The weapon-tool represents a community that has made peace with flooding as a permanent condition and adapted their culture accordingly — including their weapons.",
+  "cultural_context": "The Gutterfish is a symbol of adaptation at the margins. the Gray Zone residents who carry them are people who have chosen to live in the water rather than be displaced by it. The weapon-tool represents a community that has made peace with flooding as a permanent condition and adapted their culture accordingly — including their weapons.",
   "known_users": [
-    "Shelf residents in flood-prone zones",
+    "the Gray Zone residents in flood-prone zones",
     "Subsistence fishers in submerged areas",
     "Anyone defending a flooded home or stash"
   ],
   "story_hooks": [
-    "A corporate dive team sent to survey flooded infrastructure in the Shelf was driven off by Gutterfish spears — three divers hit, none fatally, but the message was clear. The flooded levels belong to the people who live there, and they will defend them with rebar and rubber.",
-    "A Shelf community has organized a fishing cooperative using Gutterfish spearguns, harvesting fish from flooded transit tunnels and selling them in improvised markets. The fish are thriving in the contaminated water, and nobody is asking what the contamination is doing to the food supply."
+    "A corporate dive team sent to survey flooded infrastructure in the Gray Zone was driven off by Gutterfish spears — three divers hit, none fatally, but the message was clear. The flooded levels belong to the people who live there, and they will defend them with rebar and rubber.",
+    "A the Gray Zone community has organized a fishing cooperative using Gutterfish spearguns, harvesting fish from flooded transit tunnels and selling them in improvised markets. The fish are thriving in the contaminated water, and nobody is asking what the contamination is doing to the food supply."
   ],
   "ammunition_type": [
     "improvised_spear"
@@ -34,7 +34,6 @@
     "weapon",
     "improvised",
     "speargun",
-    "shelf",
     "street",
     "fishing",
     "survival",
@@ -50,7 +49,6 @@
     "GLMZ",
     "Lincoln Spear",
     "The I-75 Spine",
-    "The Shelf",
     "The Skinners",
     "Tomasz Wren",
     "Variable Impedance Rifle VIR-9 'Switchback'"
@@ -72,7 +70,7 @@
       "Hand-scratched serial or maker's mark on the stock (initials, notches, random etchings)",
       "Possible algae growth in grooves, especially around the firing mechanism"
     ],
-    "manufacturer_markings": "None official. Handmade weapons bear only personal marks — scratched initials, tally marks for fish caught, or ritualistic notches. Some builders carve identifying symbols into the stock to claim authorship among Shelf communities.",
+    "manufacturer_markings": "None official. Handmade weapons bear only personal marks — scratched initials, tally marks for fish caught, or ritualistic notches. Some builders carve identifying symbols into the stock to claim authorship among the Gray Zone communities.",
     "condition_typical": "Battle-worn and corroded. This is a weapon that lives in contaminated water. Surface is always slick, internal mechanisms are unreliable, and structural integrity degrades with each dive. A well-maintained example might look deliberate; a typical street example looks like salvage that somehow became lethal."
   },
   "image_prompt": "Close-up product photography of a crude DIY speargun made from PVC pipe and surgical tubing, photographed against a dark wet surface or held in a gloved, damp hand. The PVC barrel is scarred and algae-stained in murky teal-green, the surgical tubing is stretched taut and translucent, the sharpened rebar point is rust-orange and wickedly sharp. Dramatic side-lighting reveals water beading on the polymer, corrosion blooms, hairline cracks, and file marks on the projectile. The aesthetic is post-industrial, desperation-engineered, tactile wetness. Neo-noir underwater survivalism. Shallow depth of field emphasizing the dangerous tip and organic decay. --ar 3:2 --v 6",

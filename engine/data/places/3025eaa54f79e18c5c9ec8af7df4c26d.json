@@ -3,7 +3,7 @@
   "type": "place",
   "name": "Voltage",
   "aliases": [],
-  "description": "A spoken word and poetry venue in Milwaukee's Riverwest neighborhood that hosts the corridor's most intense open-mic nights, where performers have seven minutes to say whatever they need to say and the audience decides their fate with a volume-metered applause system that displays a real-time decibel reading on a screen behind the stage. Below 60 decibels: polite acknowledgment. Above 80: genuine appreciation. Above 100: the crowd is on its feet, and the performer has earned a spot on next month's headliner bill. Below 40: you leave the stage and think about what you did.\n\nVoltage was founded by a collective of Shelf poets who believed that poetry had become too comfortable and too academic, and that performing it should feel like a fight. The venue is a former electrical supply store (hence the name), and the industrial aesthetic has been maintained — exposed conduit, warehouse lighting, concrete floor. The open mic runs every Thursday and draws a crowd of regulars who take their poetry seriously and their criticism seriously and believe that the two are the same thing. The bar serves coffee and cheap wine and nothing else, because Voltage is not about the drinks.",
+  "description": "A spoken word and poetry venue in Milwaukee's Riverwest neighborhood that hosts the corridor's most intense open-mic nights, where performers have seven minutes to say whatever they need to say and the audience decides their fate with a volume-metered applause system that displays a real-time decibel reading on a screen behind the stage. Below 60 decibels: polite acknowledgment. Above 80: genuine appreciation. Above 100: the crowd is on its feet, and the performer has earned a spot on next month's headliner bill. Below 40: you leave the stage and think about what you did.\n\nVoltage was founded by a collective of the Gray Zone poets who believed that poetry had become too comfortable and too academic, and that performing it should feel like a fight. The venue is a former electrical supply store (hence the name), and the industrial aesthetic has been maintained — exposed conduit, warehouse lighting, concrete floor. The open mic runs every Thursday and draws a crowd of regulars who take their poetry seriously and their criticism seriously and believe that the two are the same thing. The bar serves coffee and cheap wine and nothing else, because Voltage is not about the drinks.",
   "atmosphere": {
     "sights": [],
     "sounds": [],
@@ -35,7 +35,6 @@
     "venue",
     "comedy",
     "spoken-word",
-    "shelf",
     "milwaukee"
   ],
   "related_entities": [
@@ -43,5 +42,7 @@
     "Reed Thorvaldsdóttir-Petrović",
     "Concrete",
     "Siddharth Deshpande"
-  ]
+  ],
+  "zone": "Z8",
+  "controllingCorponation": null
 }

@@ -3,7 +3,7 @@
   "type": "place",
   "name": "The Marrow Docks",
   "aliases": [],
-  "description": "A decaying waterfront industrial zone wedged between the southern lakefront and the elevated transit corridors of old Calumet, The Marrow Docks are what remains of a once-thriving freight hub that Carrion Logistics quietly abandoned in 2171 after rerouting its Lake Michigan operations through automated submersible lanes. The skeletal gantry cranes still stand, half-submerged, rusting into abstract sculptures the locals call 'the Bishops.' Squatter communities have colonized the cavernous warehouse interiors, stringing jury-rigged power lines between support columns and patching the corrugated walls with reclaimed polymer sheeting.\n\nBelow the waterline, a network of flooded loading bays has become a shadow economy unto itself—smugglers use the submerged tunnels to move contraband between Shelf districts and mid-tier buyers in Old Harbor. Zheng-Dao Bioelectric has been quietly purchasing surrounding parcels for two years, and displacement pressure is mounting on the dock communities, who have no legal standing to resist.",
+  "description": "A decaying waterfront industrial zone wedged between the southern lakefront and the elevated transit corridors of old Calumet, The Marrow Docks are what remains of a once-thriving freight hub that Carrion Logistics quietly abandoned in 2171 after rerouting its Lake Michigan operations through automated submersible lanes. The skeletal gantry cranes still stand, half-submerged, rusting into abstract sculptures the locals call 'the Bishops.' Squatter communities have colonized the cavernous warehouse interiors, stringing jury-rigged power lines between support columns and patching the corrugated walls with reclaimed polymer sheeting.\n\nBelow the waterline, a network of flooded loading bays has become a shadow economy unto itself—smugglers use the submerged tunnels to move contraband between the Gray Zone districts and mid-tier buyers in Old Harbor. Zheng-Dao Bioelectric has been quietly purchasing surrounding parcels for two years, and displacement pressure is mounting on the dock communities, who have no legal standing to resist.",
   "atmosphere": {
     "sights": [
       "Half-submerged crane arms draped in bioluminescent algae bloom orange and green at low tide",
@@ -52,7 +52,7 @@
   "frequented_by": [
     "Carrion Logistics shadow contractors maintaining deniable freight routes",
     "Tier 4 squatter families and their community organizers fighting displacement",
-    "Smugglers and fixers moving goods between the Shelf and Old Harbor buyers",
+    "Smugglers and fixers moving goods between the Gray Zone and Old Harbor buyers",
     "Salvage divers hunting pre-abandonment equipment in the submerged bays"
   ],
   "notable_locations": [],
@@ -81,7 +81,6 @@
     "drone",
     "water",
     "lake",
-    "shelf",
     "old harbor"
   ],
   "related_entities": [
@@ -94,5 +93,7 @@
     "The Marrow Exchange",
     "TESSERA PA-5 'Attendant'",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
-  ]
+  ],
+  "zone": "Z6",
+  "controllingCorponation": null
 }

@@ -9,8 +9,8 @@
   "role": "Street-Level Medic / Unlicensed Trauma Surgeon",
   "age": 19,
   "status": "active",
-  "location": "The Shelf, near Kedzie and Division",
-  "description": "Cleo Zielinski is slight and brown-skinned, with the kind of wiry build that comes from not eating enough rather than any athletic intention, and hands that are disproportionately steady for someone his age. His hair is cut close on the sides and left longer on top in a way that has grown out past its original shape, and he has a small scar through his left eyebrow from a job that went sideways when he was sixteen. He wears scrub-green cargo pants, a compression undershirt, and whatever outer layer is clean, with a reinforced medical bag that is older than his current career and significantly better maintained than anything else he owns.\n\nCleo Zielinski grew up in The Shelf in the orbit of a street collective that needed someone who could handle wounds and didn't ask the kind of questions that brought attention. He taught himself from salvaged medical texts, stolen clinical AR modules, and two years of shadowing a defrocked surgeon named Orsolya who operated out of a back room in exchange for silence and supply runs. Orsolya disappeared when Cleo Zielinski was seventeen—he suspects she was picked up for an unlicensed practice sweep, but has no confirmation—and he inherited her equipment, her client list, and her reputation before he was old enough to have built his own.\n\nHe is genuinely gifted in ways he cannot fully articulate, with an intuitive grasp of trauma response that exceeds his formal training by a significant margin. He is also nineteen, which means he makes decisions with a speed and confidence that occasionally substitute for the judgment he has not yet developed. He charges what people can pay, refuses to let anyone die on his table for reasons of cost, and has a growing reputation in The Shelf as someone you can trust with your life in the most literal possible sense, which is a reputation that attracts exactly the kind of trouble a nineteen-year-old should not be navigating alone.",
+  "location": "the Gray Zone, near Kedzie and Division",
+  "description": "Cleo Zielinski is slight and brown-skinned, with the kind of wiry build that comes from not eating enough rather than any athletic intention, and hands that are disproportionately steady for someone his age. His hair is cut close on the sides and left longer on top in a way that has grown out past its original shape, and he has a small scar through his left eyebrow from a job that went sideways when he was sixteen. He wears scrub-green cargo pants, a compression undershirt, and whatever outer layer is clean, with a reinforced medical bag that is older than his current career and significantly better maintained than anything else he owns.\n\nCleo Zielinski grew up in the Gray Zone in the orbit of a street collective that needed someone who could handle wounds and didn't ask the kind of questions that brought attention. He taught himself from salvaged medical texts, stolen clinical AR modules, and two years of shadowing a defrocked surgeon named Orsolya who operated out of a back room in exchange for silence and supply runs. Orsolya disappeared when Cleo Zielinski was seventeen—he suspects she was picked up for an unlicensed practice sweep, but has no confirmation—and he inherited her equipment, her client list, and her reputation before he was old enough to have built his own.\n\nHe is genuinely gifted in ways he cannot fully articulate, with an intuitive grasp of trauma response that exceeds his formal training by a significant margin. He is also nineteen, which means he makes decisions with a speed and confidence that occasionally substitute for the judgment he has not yet developed. He charges what people can pay, refuses to let anyone die on his table for reasons of cost, and has a growing reputation in the Gray Zone as someone you can trust with your life in the most literal possible sense, which is a reputation that attracts exactly the kind of trouble a nineteen-year-old should not be navigating alone.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -43,7 +43,7 @@
     "secret": "Three months ago he performed an emergency procedure on someone who later turned out to be a mid-tier enforcer for a faction he has a quiet arrangement with—an arrangement that required him to report certain kinds of injuries. He did not report it. He does not know if anyone noticed."
   },
   "speech_patterns": {
-    "vocabulary": "Medical terminology used casually and without affectation, mixed with Shelf slang; speaks faster when nervous; swears in Spanish under his breath during procedures",
+    "vocabulary": "Medical terminology used casually and without affectation, mixed with the Gray Zone slang; speaks faster when nervous; swears in Spanish under his breath during procedures",
     "cadence": "Quick and clipped in professional mode, looser and more digressive when relaxed; tends to front-load important information",
     "verbal_tics": [
       "Says 'okay, okay' as a self-steadying mechanism when assessing a situation",
@@ -81,15 +81,15 @@
     }
   ],
   "story_hooks": [
-    "Someone brings him a patient with augmentations he has never encountered—military or corporate-grade—and the injuries suggest something that should not be happening in The Shelf",
-    "He is offered a legitimate residency placement by a Meridian Core medical institution, with conditions attached that would require him to stop operating in The Shelf",
+    "Someone brings him a patient with augmentations he has never encountered—military or corporate-grade—and the injuries suggest something that should not be happening in the Gray Zone",
+    "He is offered a legitimate residency placement by a Meridian Core medical institution, with conditions attached that would require him to stop operating in the Gray Zone",
     "Orsolya surfaces—not missing, but working under a different name for a faction that has very specific ideas about what she owes them",
     "The unreported enforcer patient comes back—not for treatment, but to tell him what he has been drawn into by his silence"
   ],
   "narrative_function": "Ground-level humanity and moral clarity—Teo represents what care looks like without institutional mediation, and his youth makes the cost of that clarity visible; also functions as a node connecting multiple factions through the neutral ground of medical need",
   "augmentations": "Haptic feedback enhancement in both hands, medical-grade, installed by Orsolya—increases tactile resolution for surgical work,Basic AR overlay in right eye, medical reference only, running on a cracked license that expires periodically and requires rebooting,No defensive or offensive augmentations",
   "daily_life": "Keeps irregular hours dictated by whoever needs him. Sleeps in the back of his operating space—a converted utility room with a proper surgical lamp he is inexplicably proud of. Eats street food when he remembers to eat. Spends downtime reviewing procedures in his notebook and running through scenarios. Has a small collection of physical medical texts he treats with more care than anything else he owns. Occasionally plays cards with the collective members who look out for his space in exchange for priority treatment.",
-  "affiliation": "Loosely aligned with a Shelf street collective for mutual protection; functionally independent; has informal supply relationships with two mid-tier factions that he is careful not to let become obligations",
+  "affiliation": "Loosely aligned with a the Gray Zone street collective for mutual protection; functionally independent; has informal supply relationships with two mid-tier factions that he is careful not to let become obligations",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -196,7 +196,7 @@
     ],
     "breaking_points": [
       "Losing someone on the table because he did not know enough",
-      "Being offered a legitimate residency that requires abandoning the Shelf",
+      "Being offered a legitimate residency that requires abandoning the Gray Zone",
       "Orsolya surfacing under circumstances that reveal uncomfortable truths",
       "The unreported enforcer returning with consequences for his silence"
     ]
@@ -223,7 +223,7 @@
     "Bleeding Heart": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -237,7 +237,6 @@
   "registered_firearms": [],
   "related_entities": [
     "Meridian Core",
-    "The Shelf",
     "Plot 17",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "ShieldTech Enforcer DM-4 'Crossover'",
@@ -246,7 +245,7 @@
     "The Pure Hand",
     "Cargo Tacos"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Predominantly Eastern European (73.1%) with significant Indigenous American (16.3%) and Hispanic/Latin American (10.6%) ancestry. The genetic mix creates a striking phenotype: Eastern European bone structure dominates (high cheekbones, angular jaw, characteristic eye shape), enriched by Indigenous American and Hispanic contributions visible in warm golden-olive skin undertones, subtle broadening of cheek prominence, and hair texture showing slight wave. The combination produces a distinctly Central/Eastern European foundation with warmer, sun-adapted melanin from Americas ancestry—a phenotype suggesting Polish or Czech heritage blended with Andean and Mexican roots.",
     "height_cm": 168,

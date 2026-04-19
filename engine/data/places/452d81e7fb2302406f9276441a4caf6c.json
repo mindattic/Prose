@@ -3,7 +3,7 @@
   "type": "place",
   "name": "Quarter Finals",
   "aliases": [],
-  "description": "A competitive esports arena in Kenosha that hosts professional and amateur gaming tournaments with a physical audience, broadcast feeds, and prize pools funded by corponation sponsors who've discovered that esports demographics align perfectly with their recruitment targets. The venue seats 500 in a converted movie theater, with the original screen replaced by a massive display array showing real-time game footage and player statistics. Competitors play on a raised stage in soundproofed booths, and the energy on tournament nights is closer to a sporting event than anything else in the building's history as a cinema.\n\nQuarter Finals runs tournaments in six different competitive titles, ranging from tactical shooters to strategy games to a bizarre Shelf-invented game called Gridlock that involves managing simulated infrastructure collapses and has somehow become the most-watched esport in the corridor. The arena's owner, a former professional gamer named Chen Johansson-Ayala, retired from competition after a neural-feed injury left her with intermittent hand tremors and channeled her expertise into building the corridor's premiere competitive venue. Prize pools for major tournaments reach 25,000 Quanta, enough to make professional gaming a viable career for the top tier and a painful hobby for everyone else.",
+  "description": "A competitive esports arena in Kenosha that hosts professional and amateur gaming tournaments with a physical audience, broadcast feeds, and prize pools funded by corponation sponsors who've discovered that esports demographics align perfectly with their recruitment targets. The venue seats 500 in a converted movie theater, with the original screen replaced by a massive display array showing real-time game footage and player statistics. Competitors play on a raised stage in soundproofed booths, and the energy on tournament nights is closer to a sporting event than anything else in the building's history as a cinema.\n\nQuarter Finals runs tournaments in six different competitive titles, ranging from tactical shooters to strategy games to a bizarre the Gray Zone-invented game called Gridlock that involves managing simulated infrastructure collapses and has somehow become the most-watched esport in the corridor. The arena's owner, a former professional gamer named Chen Johansson-Ayala, retired from competition after a neural-feed injury left her with intermittent hand tremors and channeled her expertise into building the corridor's premiere competitive venue. Prize pools for major tournaments reach 25,000 Quanta, enough to make professional gaming a viable career for the top tier and a painful hobby for everyone else.",
   "atmosphere": {
     "sights": [],
     "sounds": [],
@@ -18,11 +18,11 @@
   "opportunities": [],
   "story_hooks": [],
   "connections": {
-    "adjacent_to": [],
+    "adjacent_to": ["Kenosha Crossing"],
     "exits": [],
     "tags": []
   },
-  "frequented_by": [],
+  "frequented_by": ["Chen Johansson-Ayala"],
   "notable_locations": [],
   "coordinates": {
     "lat": 42.5876,
@@ -38,5 +38,7 @@
     "circuit",
     "kenosha"
   ],
-  "related_entities": []
+  "related_entities": ["Chen Johansson-Ayala", "Hex Grid"],
+  "zone": "Z7",
+  "controllingCorponation": null
 }

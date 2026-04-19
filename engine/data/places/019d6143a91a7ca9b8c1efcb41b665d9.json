@@ -3,7 +3,7 @@
   "type": "place",
   "name": "Garfield Rack",
   "aliases": [],
-  "description": "Garfield Rack is cop country. Always was, even before GLMZ absorbed Chicago's Southwest Side and reorganized everything into tiers and jurisdictions. Old Garfield Ridge was where the city's police officers, firefighters, and municipal workers bought homes, raised families, and built a community defined by the particular solidarity of people who carry badges. When the megacity transition came, that identity didn't dissolve -- it calcified. Garfield Rack became the residential stronghold for Meridian's enforcement class: Axiom Security operatives, corporate jurisdiction officers, fire suppression contractors, and the various private police forces that keep the tier system running. They live here, in neat rows of reinforced bungalows with security-grade neural mesh and perimeter monitoring that makes the neighborhood effectively self-surveilling.\n\nMidway, the old airport, is the district's geographic anchor and its economic engine. The runways were converted decades ago into a logistics hub -- automated cargo drones launch and land in continuous rotation, distributing goods across Meridian's commercial network. The hub employs thousands, most of them Rack residents, in operations, security, and maintenance roles. The drone traffic is constant overhead, a mechanical migration pattern that residents have learned to sleep through. The noise complaints stopped years ago, not because the noise stopped, but because complaining would mean admitting that the thing that employs you is also the thing that's ruining your hearing.\n\nThe Rack's relationship with the rest of Meridian is complicated by the fact that its residents are the enforcement mechanism for a system they didn't design and don't fully benefit from. Tier 3 is the ceiling here -- comfortable enough, with corporate health coverage and retirement accounts, but forever below the Tier 4 and 5 executives whose orders they carry out. It creates a specific psychology: loyalty to the system paired with resentment of the system, expressed as a ferocious insularity. Rack residents take care of Rack residents. They don't trust the Spire, they don't sympathize with the Shelf, and they don't talk about what happens on shift. The bungalows are well-maintained. The lawns are trimmed. The silence about certain things is absolute.",
+  "description": "Garfield Rack is cop country. Always was, even before GLMZ absorbed Chicago's Southwest Side and reorganized everything into tiers and jurisdictions. Old Garfield Ridge was where the city's police officers, firefighters, and municipal workers bought homes, raised families, and built a community defined by the particular solidarity of people who carry badges. When the megacity transition came, that identity didn't dissolve -- it calcified. Garfield Rack became the residential stronghold for Meridian's enforcement class: Axiom Security operatives, corporate jurisdiction officers, fire suppression contractors, and the various private police forces that keep the tier system running. They live here, in neat rows of reinforced bungalows with security-grade neural mesh and perimeter monitoring that makes the neighborhood effectively self-surveilling.\n\nMidway, the old airport, is the district's geographic anchor and its economic engine. The runways were converted decades ago into a logistics hub -- automated cargo drones launch and land in continuous rotation, distributing goods across Meridian's commercial network. The hub employs thousands, most of them Rack residents, in operations, security, and maintenance roles. The drone traffic is constant overhead, a mechanical migration pattern that residents have learned to sleep through. The noise complaints stopped years ago, not because the noise stopped, but because complaining would mean admitting that the thing that employs you is also the thing that's ruining your hearing.\n\nThe Rack's relationship with the rest of Meridian is complicated by the fact that its residents are the enforcement mechanism for a system they didn't design and don't fully benefit from. Tier 3 is the ceiling here -- comfortable enough, with corporate health coverage and retirement accounts, but forever below the Tier 4 and 5 executives whose orders they carry out. It creates a specific psychology: loyalty to the system paired with resentment of the system, expressed as a ferocious insularity. Rack residents take care of Rack residents. They don't trust the Spire, they don't sympathize with the Gray Zone, and they don't talk about what happens on shift. The bungalows are well-maintained. The lawns are trimmed. The silence about certain things is absolute.",
   "atmosphere": {
     "sights": [
       "Rows of reinforced bungalows with security-grade perimeter arrays -- suburbia with teeth",
@@ -87,7 +87,6 @@
     "surveillance",
     "drone",
     "fire",
-    "shelf",
     "spire"
   ],
   "related_entities": [
@@ -100,5 +99,7 @@
     "Zephyr Bhattacharya",
     "Ngozi Morimoto",
     "Kyle Ellen Corbin-Vasik"
-  ]
+  ],
+  "zone": "Z1",
+  "controllingCorponation": null
 }

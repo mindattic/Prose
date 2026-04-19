@@ -3,7 +3,7 @@
   "type": "place",
   "name": "Grand Crossing Gate",
   "aliases": [],
-  "description": "Grand Crossing Gate sits at the boundary between the southern Shelf and what was once one of Chicago's most significant corridors of African American civic life. The name is a remnant and a reclamation — the original Greater Grand Crossing was a place where railroad lines crossed, and the neighborhood grew around that intersection. Now the rails are gone, replaced by maglev corridors that pass overhead without stopping, but the sense of crossroads persists. This is still a place where paths intersect, where people meet at the boundaries of different jurisdictions, different loyalties, different versions of what survival looks like.\n\nThe historic housing stock is Grand Crossing Gate's most visible inheritance — blocks of greystones and brick two-flats that were built to last a century and have, despite everything. The buildings are battered, patched, reinforced with whatever materials were available, but they are standing. Their persistence is not accidental. The civic organizations that characterized pre-Consolidation Greater Grand Crossing — the block clubs, the mutual aid societies, the church networks — did not disappear when the corporations drew their lines. They went underground, literally in some cases, and they have spent decades maintaining the neighborhood's physical infrastructure with a combination of salvaged materials, pooled labor, and a categorical refusal to let the buildings fall.\n\nThe Threshold Assembly is what these organizations became — a coalition of civic groups, church congregations, and block-level mutual aid networks that functions as Grand Crossing Gate's de facto government. The Assembly operates out of a converted greystone on what was once Cottage Grove Avenue, now called the Threshold — the street that marks the boundary between Assembly-governed territory and the ungoverned blocks to the west. The Assembly's authority is moral rather than military; they govern through reputation, mediation, and the accumulated weight of having been here longer than anyone else. Their legitimacy comes from history, and in a city where history is routinely demolished to make room for the next development cycle, that is a rare and powerful thing.\n\nThe district's danger is not internal — the Assembly keeps its territory as safe as any lower-Shelf neighborhood can be. The danger comes from the edges, where Assembly authority fades and the ungoverned blocks begin. It comes from above, where corporate interests periodically rediscover that Grand Crossing Gate's greystone housing stock sits on land that is technically unencumbered by any sovereignty claim and therefore available for acquisition. And it comes from the slow erosion of the Assembly's membership, as younger residents leave for districts with better infrastructure and the elders who remember what this place was — and what it cost to keep it — grow fewer each year.",
+  "description": "Grand Crossing Gate sits at the boundary between the southern the Gray Zone and what was once one of Chicago's most significant corridors of African American civic life. The name is a remnant and a reclamation — the original Greater Grand Crossing was a place where railroad lines crossed, and the neighborhood grew around that intersection. Now the rails are gone, replaced by maglev corridors that pass overhead without stopping, but the sense of crossroads persists. This is still a place where paths intersect, where people meet at the boundaries of different jurisdictions, different loyalties, different versions of what survival looks like.\n\nThe historic housing stock is Grand Crossing Gate's most visible inheritance — blocks of greystones and brick two-flats that were built to last a century and have, despite everything. The buildings are battered, patched, reinforced with whatever materials were available, but they are standing. Their persistence is not accidental. The civic organizations that characterized pre-Consolidation Greater Grand Crossing — the block clubs, the mutual aid societies, the church networks — did not disappear when the corporations drew their lines. They went underground, literally in some cases, and they have spent decades maintaining the neighborhood's physical infrastructure with a combination of salvaged materials, pooled labor, and a categorical refusal to let the buildings fall.\n\nThe Threshold Assembly is what these organizations became — a coalition of civic groups, church congregations, and block-level mutual aid networks that functions as Grand Crossing Gate's de facto government. The Assembly operates out of a converted greystone on what was once Cottage Grove Avenue, now called the Threshold — the street that marks the boundary between Assembly-governed territory and the ungoverned blocks to the west. The Assembly's authority is moral rather than military; they govern through reputation, mediation, and the accumulated weight of having been here longer than anyone else. Their legitimacy comes from history, and in a city where history is routinely demolished to make room for the next development cycle, that is a rare and powerful thing.\n\nThe district's danger is not internal — the Assembly keeps its territory as safe as any lower-the Gray Zone neighborhood can be. The danger comes from the edges, where Assembly authority fades and the ungoverned blocks begin. It comes from above, where corporate interests periodically rediscover that Grand Crossing Gate's greystone housing stock sits on land that is technically unencumbered by any sovereignty claim and therefore available for acquisition. And it comes from the slow erosion of the Assembly's membership, as younger residents leave for districts with better infrastructure and the elders who remember what this place was — and what it cost to keep it — grow fewer each year.",
   "atmosphere": {
     "sights": [
       "Rows of century-old greystones, patched and reinforced but still standing with stubborn dignity",
@@ -40,8 +40,8 @@
     "Medical emergencies with no nearby facilities — the closest clinic is in Engelheim, a transit ride away"
   ],
   "opportunities": [
-    "The Assembly's reputation makes Grand Crossing Gate one of the most trustworthy places in the southern Shelf for neutral meetings and negotiations",
-    "The greystone housing stock offers solid, defensible shelter — rare in the lower Shelf",
+    "The Assembly's reputation makes Grand Crossing Gate one of the most trustworthy places in the southern the Gray Zone for neutral meetings and negotiations",
+    "The greystone housing stock offers solid, defensible shelter — rare in the Gray Zone",
     "The Assembly's ledger system is a functioning alternative economy that could be expanded or replicated",
     "Church networks extend beyond the district, providing intelligence and connection channels that corporate surveillance cannot easily map",
     "Historical records maintained by the Assembly contain information about pre-Consolidation land ownership that could complicate corporate acquisition attempts"
@@ -64,7 +64,7 @@
   "frequented_by": [
     "Assembly members and civic organization leaders",
     "Block club patrol volunteers",
-    "Church congregations from across the southern Shelf",
+    "Church congregations from across the southern the Gray Zone",
     "Neutral-ground negotiators using Assembly-mediated meeting space",
     "Historians and archivists interested in pre-Consolidation records"
   ],
@@ -91,8 +91,7 @@
     "survival",
     "shelter",
     "food",
-    "water",
-    "shelf"
+    "water"
   ],
   "related_entities": [
     "The Threshold",
@@ -110,5 +109,7 @@
     "Free Assembly",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "Nesting Doll"
-  ]
+  ],
+  "zone": "Z1",
+  "controllingCorponation": null
 }

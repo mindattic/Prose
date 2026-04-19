@@ -392,6 +392,7 @@ h1:focus {
 .xref-link.xref-weapon     { color: #ff7b72; }
 .xref-link.xref-equipment  { color: #aac8f5; }
 .xref-link.xref-cyberware  { color: #d2a8ff; }
+.xref-broken { color: #f85149; border-bottom: 1px dashed #f85149; cursor: help; opacity: 0.85; }
 
 /* ── Entity Type Badges ──────────────────────────────────────────── */
 .entity-detail-type-badge,
@@ -1413,9 +1414,16 @@ textarea.auto-grow {
 }
 
 /* ── Category board tiles ──────────────────────────────────────────────── */
-.board-grid { display: flex; flex-wrap: wrap; gap: 14px; padding: 4px 0 24px; }
+.home-sections { display: flex; flex-direction: column; gap: 0; }
+.board-section { padding: 0 0 4px; }
+.board-section-label { font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #8b949e; padding: 12px 0 6px; border-top: 1px solid #21262d; }
+.board-section:first-child .board-section-label { border-top: none; padding-top: 4px; }
+.board-grid { display: flex; flex-wrap: wrap; gap: 12px; padding: 2px 0 8px; }
 .board-tile { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 110px; height: 96px; background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 12px 8px 16px; text-decoration: none; color: #e6edf3; gap: 6px; transition: background 0.12s, border-color 0.12s; position: relative; }
 .board-tile:hover { background: #1c2128; border-color: #dc3545; color: #fff; text-decoration: none; }
+.board-tile-sm { width: 94px; height: 80px; }
+.board-tile-viz .board-tile-icon { color: #58a6ff; }
+.board-tile-viz:hover { border-color: #58a6ff; }
 .board-tile-icon { font-size: 1.5rem; color: #dc3545; }
 .board-tile-name { font-size: 0.8rem; font-weight: 500; text-align: center; line-height: 1.3; }
 .board-tile-count { position: absolute; bottom: 2px; right: 10px; font-size: 0.65rem; color: #8b949e; }

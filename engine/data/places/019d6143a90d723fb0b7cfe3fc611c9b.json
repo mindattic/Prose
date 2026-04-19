@@ -3,7 +3,7 @@
   "type": "place",
   "name": "Auburn Grist",
   "aliases": [],
-  "description": "Auburn Grist is named for what it does to people. The original Auburn Gresham was a neighborhood defined by its commercial corridor — 79th Street, one of the longest continuous commercial strips on the South Side, lined with small businesses that served as both economic engines and community anchors. That corridor still exists, stretched and distorted but recognizable, and it still grinds. 79th Street in GLMZ is a processing machine — a place where labor, commerce, hustle, and desperation are fed in at one end and something like survival comes out the other. The people here call it the Grist, and they say it with the particular affection reserved for things that are killing you slowly but at least have the decency to keep you alive while doing it.\n\nThe community development organizations that defined pre-Consolidation Auburn Gresham have evolved into something between mutual aid networks and labor cooperatives. The largest is the Gristmill Collective, which operates out of a converted commercial building on 79th and manages a network of workshops, training programs, and job placement services that connect Shelf-level workers to employment opportunities in adjacent corporate territories. The Collective takes a percentage — they have to, to survive — but their rates are fair by Meridian standards, and they provide something that the corporate temp agencies do not: advocacy. When a Gristmill-placed worker is cheated on wages or injured on a job site, the Collective pursues the claim. This makes them simultaneously beloved by their workers and despised by the corporate contractors who would prefer a labor pool that does not talk back.\n\nThe 79th Street corridor itself is a study in commercial density — every available square meter occupied by some form of enterprise. Street-level storefronts sell necessities: food, clothing, tools, augmentation components. Second-floor operations run services: medical, legal, financial, educational, some of them licensed and some of them not. Rooftop operations handle the things that need sky access: drone repair, signal relay, atmospheric monitoring, and a surprising number of pigeon coops maintained by residents who use the birds for analog message delivery that no surveillance system can intercept. The corridor is loud, crowded, competitive, and alive in a way that most of the southern Shelf is not.\n\nBeneath the commercial energy, Auburn Grist carries the weight of its demographics. This is a Black neighborhood that has been a Black neighborhood for a long time, and the continuity of that identity through the Consolidation is both a source of strength and a marker of the specific neglect that Black communities in GLMZ experience. The infrastructure is worse here than in comparably populated districts. The corporate investment is lower. The transit connections are fewer. The surveillance, paradoxically, is heavier — 79th Street has one of the highest drone-to-resident ratios in the lower Shelf, deployed not to protect the residents but to monitor the commercial activity that generates taxable data for Helion's revenue models. Auburn Grist produces. Auburn Grist is watched. The correlation is not coincidental.",
+  "description": "Auburn Grist is named for what it does to people. The original Auburn Gresham was a neighborhood defined by its commercial corridor — 79th Street, one of the longest continuous commercial strips on the South Side, lined with small businesses that served as both economic engines and community anchors. That corridor still exists, stretched and distorted but recognizable, and it still grinds. 79th Street in GLMZ is a processing machine — a place where labor, commerce, hustle, and desperation are fed in at one end and something like survival comes out the other. The people here call it the Grist, and they say it with the particular affection reserved for things that are killing you slowly but at least have the decency to keep you alive while doing it.\n\nThe community development organizations that defined pre-Consolidation Auburn Gresham have evolved into something between mutual aid networks and labor cooperatives. The largest is the Gristmill Collective, which operates out of a converted commercial building on 79th and manages a network of workshops, training programs, and job placement services that connect the Gray Zone-level workers to employment opportunities in adjacent corporate territories. The Collective takes a percentage — they have to, to survive — but their rates are fair by Meridian standards, and they provide something that the corporate temp agencies do not: advocacy. When a Gristmill-placed worker is cheated on wages or injured on a job site, the Collective pursues the claim. This makes them simultaneously beloved by their workers and despised by the corporate contractors who would prefer a labor pool that does not talk back.\n\nThe 79th Street corridor itself is a study in commercial density — every available square meter occupied by some form of enterprise. Street-level storefronts sell necessities: food, clothing, tools, augmentation components. Second-floor operations run services: medical, legal, financial, educational, some of them licensed and some of them not. Rooftop operations handle the things that need sky access: drone repair, signal relay, atmospheric monitoring, and a surprising number of pigeon coops maintained by residents who use the birds for analog message delivery that no surveillance system can intercept. The corridor is loud, crowded, competitive, and alive in a way that most of the southern the Gray Zone is not.\n\nBeneath the commercial energy, Auburn Grist carries the weight of its demographics. This is a Black neighborhood that has been a Black neighborhood for a long time, and the continuity of that identity through the Consolidation is both a source of strength and a marker of the specific neglect that Black communities in GLMZ experience. The infrastructure is worse here than in comparably populated districts. The corporate investment is lower. The transit connections are fewer. The surveillance, paradoxically, is heavier — 79th Street has one of the highest drone-to-resident ratios in the Gray Zone, deployed not to protect the residents but to monitor the commercial activity that generates taxable data for Helion's revenue models. Auburn Grist produces. Auburn Grist is watched. The correlation is not coincidental.",
   "atmosphere": {
     "sights": [
       "79th Street's compressed commercial density — every surface occupied by signage, merchandise, or people",
@@ -42,14 +42,14 @@
     "Corporate contractors who blacklist workers affiliated with the Collective's advocacy programs"
   ],
   "opportunities": [
-    "The Gristmill Collective is the best labor placement network in the southern Shelf — reliable access to employment",
+    "The Gristmill Collective is the best labor placement network in the southern the Gray Zone — reliable access to employment",
     "79th Street's commercial density makes it an excellent place to source materials, services, and information",
     "The pigeon messenger network is a genuinely surveillance-proof communication system available for hire",
     "The Collective's advocacy infrastructure can be leveraged for causes beyond labor disputes",
     "Workshop training programs offer practical skills — welding, electrical, augmentation repair — in exchange for Collective membership"
   ],
   "story_hooks": [
-    "The Gristmill Collective has discovered that Helion's surveillance drones are collecting more than commercial data — they are mapping the pigeon messenger network's flight patterns, attempting to decode the analog communication system. If Helion cracks the pigeon network, the last surveillance-proof channel in the southern Shelf goes dark.",
+    "The Gristmill Collective has discovered that Helion's surveillance drones are collecting more than commercial data — they are mapping the pigeon messenger network's flight patterns, attempting to decode the analog communication system. If Helion cracks the pigeon network, the last surveillance-proof channel in the southern the Gray Zone goes dark.",
     "A Collective-placed worker was killed on a corporate job site, and the corporate contractor is claiming the death was caused by a pre-existing augmentation defect rather than site conditions. The Collective needs an independent investigation before the contractor's legal team buries the evidence.",
     "79th Street's oldest business — a barbershop that has been in continuous operation for ninety years — is closing. The owner has no successor, and the building contains something in its basement that he has been guarding since before the Consolidation. He wants to pass it to someone he trusts, but trust is in short supply."
   ],
@@ -67,7 +67,7 @@
     "Gristmill Collective workers heading to and from placement sites",
     "79th Street corridor merchants and their customers",
     "Pigeon network operators maintaining rooftop coops",
-    "Corporate labor recruiters sourcing Shelf-level workers",
+    "Corporate labor recruiters sourcing the Gray Zone-level workers",
     "Fixers using the corridor's density and analog networks for discreet communication"
   ],
   "notable_locations": [],
@@ -100,8 +100,7 @@
     "clothing",
     "drone",
     "energy",
-    "water",
-    "shelf"
+    "water"
   ],
   "related_entities": [
     "Phoenix Yoon-Villanueva",
@@ -109,5 +108,7 @@
     "The Burden Clause",
     "Ash Haugen-Malhotra-Björnsdóttir",
     "Ouroboros Energy Helion Compact Reactor"
-  ]
+  ],
+  "zone": "Z6",
+  "controllingCorponation": null
 }

@@ -4,7 +4,7 @@
   "type": "weapon",
   "aliases": [],
   "category": "spray",
-  "description": "The SafeStep PocketGuard OC-1 is the most ubiquitous self-defense product in GLMZ's lower tiers — a palm-sized aerosol canister containing a 1.2% oleoresin capsicum suspension in a water-glycol carrier. It is sold in vending machines across the Shelf alongside nutrient bars and bootleg sim-patches, requiring no license and no identification. The canister is injection-molded from recycled polymer in a standardized red-and-grey livery, with a thumb-actuated nozzle guard to prevent accidental discharge in a pocket or bag. Shelf life is rated at eighteen months, though most units cycle through their owners in far less time.\n\nThe OC-1 produces a short-range cone spray effective to approximately 1.5 meters, causing immediate lacrimation, mucosal irritation, and temporary vision impairment in unaugmented targets. It is emphatically not designed for augmented opponents — those with sealed ocular implants or respiratory filters will experience minimal effect. SafeStep's own product literature acknowledges this limitation with the phrase 'optimized for unaugmented personal safety scenarios,' which on the Shelf is understood to mean 'works on other Shelf residents and not much else.'\n\nDespite its limitations, the OC-1 is considered a civic staple. Municipal aid organizations distribute them in bulk during social unrest cycles. Social workers carry them. Children are given them by parents who cannot afford anything better. The product has been manufactured in essentially the same form for forty years, with SafeStep updating only the canister color and the compliance text on the label.",
+  "description": "The SafeStep PocketGuard OC-1 is the most ubiquitous self-defense product in GLMZ's lower tiers — a palm-sized aerosol canister containing a 1.2% oleoresin capsicum suspension in a water-glycol carrier. It is sold in vending machines across the Gray Zone alongside nutrient bars and bootleg sim-patches, requiring no license and no identification. The canister is injection-molded from recycled polymer in a standardized red-and-grey livery, with a thumb-actuated nozzle guard to prevent accidental discharge in a pocket or bag. shelf life is rated at eighteen months, though most units cycle through their owners in far less time.\n\nThe OC-1 produces a short-range cone spray effective to approximately 1.5 meters, causing immediate lacrimation, mucosal irritation, and temporary vision impairment in unaugmented targets. It is emphatically not designed for augmented opponents — those with sealed ocular implants or respiratory filters will experience minimal effect. SafeStep's own product literature acknowledges this limitation with the phrase 'optimized for unaugmented personal safety scenarios,' which in the Gray Zone is understood to mean 'works on other the Gray Zone residents and not much else.'\n\nDespite its limitations, the OC-1 is considered a civic staple. Municipal aid organizations distribute them in bulk during social unrest cycles. Social workers carry them. Children are given them by parents who cannot afford anything better. The product has been manufactured in essentially the same form for forty years, with SafeStep updating only the canister color and the compliance text on the label.",
   "manufacturer": "SAFESTEP",
   "tier_availability": "Tier 1+",
   "legality": "Legal — no license required, unrestricted civilian sale including vending machine distribution",
@@ -13,14 +13,14 @@
     "pressurized aerosol delivery",
     "recycled polymer casing"
   ],
-  "specifications": "Active agent: 1.2% oleoresin capsicum (OC)\nCarrier: water-glycol suspension\nNet weight: 42g\nCanister material: recycled injection-molded polymer\nNozzle type: thumb-guard cone spray\nEffective range: 0.5–1.5m\nSpray duration: approx. 6 seconds continuous\nShelf life: 18 months\nPrice: Φ5",
+  "specifications": "Active agent: 1.2% oleoresin capsicum (OC)\nCarrier: water-glycol suspension\nNet weight: 42g\nCanister material: recycled injection-molded polymer\nNozzle type: thumb-guard cone spray\nEffective range: 0.5–1.5m\nSpray duration: approx. 6 seconds continuous\nshelf life: 18 months\nPrice: Φ5",
   "tactical_use": "Deployed at close range during muggings, domestic disputes, and opportunistic attacks. Users are advised to spray toward the face and eyes of an unaugmented attacker and immediately create distance. The OC-1 is a deterrent and an escape tool, not a fighting weapon — it buys seconds, not victories. In confined spaces such as stairwells or transit pods, blowback onto the user is a significant risk, as the cone pattern disperses widely.",
-  "cultural_context": "On the Shelf, the OC-1 is called 'the red can' or simply 'shelf spray.' Carrying one is so normalized it carries no stigma whatsoever — it is as unremarkable as a transit card. Street wisdom holds that 'a red can won't stop chrome, but chrome doesn't usually bother with you' — a resigned acknowledgment of the product's limitations against augmented threats. Teenagers modify the nozzle guards with colored tape or stickers as a form of personalization. Finding an empty canister on the ground is considered a bad omen for the block.",
+  "cultural_context": "On the Gray Zone, the OC-1 is called 'the red can' or simply 'shelf spray.' Carrying one is so normalized it carries no stigma whatsoever — it is as unremarkable as a transit card. Street wisdom holds that 'a red can won't stop chrome, but chrome doesn't usually bother with you' — a resigned acknowledgment of the product's limitations against augmented threats. Teenagers modify the nozzle guards with colored tape or stickers as a form of personalization. Finding an empty canister on the ground is considered a bad omen for the block.",
   "known_users": [
     "Tier 1 civilian residents",
     "municipal social workers",
     "transit system staff",
-    "Shelf-based community organizations",
+    "the Gray Zone-based community organizations",
     "street vendors"
   ],
   "story_hooks": [
@@ -44,13 +44,12 @@
     "GLMZ",
     "Mika Sorel",
     "Red Circuit RC-Pit 'Dogfighter'",
-    "Shelf Life",
+    "Gray Zone life",
     "Slagworks Industrial",
     "Sorin Ekwensi-Balasanyan",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "The Iron Lotus",
     "The Pure Hand",
-    "The Shelf",
     "Tomasz Wren"
   ],
   "physical_description": {

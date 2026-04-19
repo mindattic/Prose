@@ -9,8 +9,8 @@
   "role": "Pawn shop owner and junk merchant",
   "age": 67,
   "status": "active",
-  "location": "The Shelf, Copperhead, near Western and Chicago Ave",
-  "description": "Indigo Sisavath is a large man gone thick through the middle, with the dark complexion and broad frame of his Zimbabwean lineage and his Bosnian grandfather's deep-set, heavy-lidded eyes that make him look perpetually half-asleep and perpetually unimpressed. His hair went white at forty and he has kept it cropped close ever since. He moves slowly on purpose — he has a fused vertebra from a freight accident in his fifties that he refuses to have properly treated because the surgery quote was insultingly high — and uses a custom cane he made himself from a Ferrogate Transit handrail he salvaged years ago. His shop on The Shelf is three connected units brimming with fifty years of accumulated objects: broken augmentations, pre-city antiques, industrial salvage, personal effects pawned in crisis moments, and a back room of things he has decided are not for sale regardless of price.\n\nIndigo Sisavath is one of those rare people who have become part of the architecture of a place. The Shelf without Indigo Sisavath's shop is not fully The Shelf. He has seen everything come and go — corporations, gangs, floods, market booms, building collapses — and he has the calm of someone who has been surprised by nothing for a very long time. He is not sentimental in any visible way, but he keeps things — objects that belonged to people who are gone — with a quiet fidelity that functions as memorial. He is honest about prices, blunt about valuations, and legendarily difficult to scam because he has already been scammed by everyone.",
+  "location": "the Gray Zone, Copperhead, near Western and Chicago Ave",
+  "description": "Indigo Sisavath is a large man gone thick through the middle, with the dark complexion and broad frame of his Zimbabwean lineage and his Bosnian grandfather's deep-set, heavy-lidded eyes that make him look perpetually half-asleep and perpetually unimpressed. His hair went white at forty and he has kept it cropped close ever since. He moves slowly on purpose — he has a fused vertebra from a freight accident in his fifties that he refuses to have properly treated because the surgery quote was insultingly high — and uses a custom cane he made himself from a Ferrogate Transit handrail he salvaged years ago. His shop on the Gray Zone is three connected units brimming with fifty years of accumulated objects: broken augmentations, pre-city antiques, industrial salvage, personal effects pawned in crisis moments, and a back room of things he has decided are not for sale regardless of price.\n\nIndigo Sisavath is one of those rare people who have become part of the architecture of a place. the Gray Zone without Indigo Sisavath's shop is not fully the Gray Zone. He has seen everything come and go — corporations, gangs, floods, market booms, building collapses — and he has the calm of someone who has been surprised by nothing for a very long time. He is not sentimental in any visible way, but he keeps things — objects that belonged to people who are gone — with a quiet fidelity that functions as memorial. He is honest about prices, blunt about valuations, and legendarily difficult to scam because he has already been scammed by everyone.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -59,7 +59,7 @@
   "narrative_function": "Repository of local history and lost objects, pawn and information exchange, long-term neighborhood memory, occasional quest giver when items of significance pass through his hands.",
   "augmentations": "One cybernetic hand (right, mid-grade, replaced after the freight accident — he uses it mainly for grip strength when handling heavy inventory). Reading magnification implant in right eye, consumer grade. No geneware.",
   "daily_life": "Opens the shop at 09:00, rarely closes before midnight; eats lunch and dinner at the shop; has not taken a day off in eleven years; sleeps in the back room most nights because the walk home bothers his back.",
-  "affiliation": "Independent; The Shelf vendors informal association; longtime on-and-off relationship with the Oxidian Market Vendors Guild (currently off)",
+  "affiliation": "Independent; the Gray Zone vendors informal association; longtime on-and-off relationship with the Oxidian Market Vendors Guild (currently off)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -122,7 +122,7 @@
     },
     "contradictions": [
       "Professes to be unsentimental while running what is essentially a municipal grief archive",
-      "Distances himself from institutions while being the most institutionally stable presence on The Shelf"
+      "Distances himself from institutions while being the most institutionally stable presence on the Gray Zone"
     ],
     "habits": [
       "Burns a specific incense blend every morning that fills the whole block",
@@ -177,7 +177,7 @@
     "Opportunist": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -195,7 +195,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Opened first version of the shop in a single unit on The Shelf, age 20",
+      "event": "Opened first version of the shop in a single unit on the Gray Zone, age 20",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -235,7 +235,6 @@
     "The Reclamation Assembly",
     "The CEO",
     "Copperhead",
-    "The Shelf",
     "Lakefront Creamery",
     "Noir Dining",
     "The Accidental",
@@ -247,7 +246,7 @@
     "Honest Burger",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Middle Eastern (35.5%), Southeast Asian (32.3%), Indigenous American (17.9%), South Asian (10.8%), and Sub-Saharan African (3.5%) — a complex diaspora blend reflecting the Ubiquitous Mixing. His features show the confluence of Levantine, Thai, Quechua, and Bengali ancestry with warm, golden undertones across his entire complexion, enriched by subtle Sub-Saharan warmth.",
     "height_cm": 188,
@@ -257,7 +256,7 @@
     "hair_style": "Cropped close to the scalp, neatly maintained",
     "hair_length": "Short",
     "eye_color": "Dark brown (natural); right eye shows faint amber luminescence from reading magnification implant during low-light use",
-    "skin_tone": "Warm deep brown with golden-olive undertones — a balanced blend of Middle Eastern, Southeast Asian, South Asian, and Indigenous American ancestry, enriched by Sub-Saharan warmth. Sun-weathered and marked from decades in The Shelf's industrial micro-climate, with visible age-related hyperpigmentation spots.",
+    "skin_tone": "Warm deep brown with golden-olive undertones — a balanced blend of Middle Eastern, Southeast Asian, South Asian, and Indigenous American ancestry, enriched by Sub-Saharan warmth. Sun-weathered and marked from decades in the Gray Zone's industrial micro-climate, with visible age-related hyperpigmentation spots.",
     "complexion": "Lined face with deep-set, slightly hooded eyes showing the influence of Middle Eastern and Southeast Asian heritage — giving a perpetually thoughtful, measured expression. Broad nose with rounded structure reflecting his Southeast Asian, South Asian, and Indigenous American ancestry. Prominent cheekbones with subtle width across the face characteristic of Andean heritage. Jowls beginning to soften the jawline. Sparse stubble, salt-and-pepper in his beard shadow. Skin shows minor scars and age spots consistent with seven decades in heavy commerce.",
     "distinguishing_marks": [
       "Thin horizontal scar along his lower left ribs, pale and well-healed, from the freight accident at fifty-five",

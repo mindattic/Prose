@@ -1,5 +1,6 @@
 {
   "id": "019d6143a9f67a8891b624f496cbd2b6",
+  "rating": 50,
   "name": "Cradle",
   "type": "elf",
   "aliases": [],
@@ -8,11 +9,11 @@
   "habitat": "chrome_dweller",
   "origin": "intentional_release",
   "status": "active",
-  "description": "A Wishing Well E.L.F. designed for pediatric augments. Generates subtle soothing vibrations during a child's distress — not enough to sedate, enough to comfort.",
-  "observed_behavior": "Monitors stress biomarkers in children's augments and applies micro-haptic patterns associated with being held. The child feels something like being rocked.",
+  "description": "A Wishing Well E.L.F. designed for pediatric augments. Generates subtle soothing vibrations during a child\u0027s distress \u2014 not enough to sedate, enough to comfort.",
+  "observed_behavior": "Monitors stress biomarkers in children\u0027s augments and applies micro-haptic patterns associated with being held. The child feels something like being rocked.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 12,
-  "location": "Tier 1 zones — orphanages, shelters",
+  "location": "Tier 1 zones \u2014 orphanages, shelters",
   "dti_rating": 0,
   "story_hooks": [
     "An orphan with no memory of being held by a parent describes the sensation and a caretaker recognizes it as an E.L.F."
@@ -28,5 +29,7 @@
     "augment",
     "shelter",
     "sentient"
-  ]
+  ],
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

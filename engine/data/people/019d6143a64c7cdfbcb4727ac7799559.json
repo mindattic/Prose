@@ -9,8 +9,8 @@
   "role": "Long-range precision fire specialist — sniper",
   "age": 36,
   "status": "active",
-  "location": "The Shelf — lower district tenements near the old lakeshore, near Ashland and Chicago Ave",
-  "description": "Camila Wojciechowski is slight and easy to overlook, which is exactly the point. At 36, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — move-by-wire system — full nervous system augmentation, makes the body a weapon  — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a sniper out of The Shelf, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Camila Wojciechowski describe her as a precision instrument — point her at a problem and get out of the way.",
+  "location": "the Gray Zone — lower district tenements near the old lakeshore, near Ashland and Chicago Ave",
+  "description": "Camila Wojciechowski is slight and easy to overlook, which is exactly the point. At 36, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — move-by-wire system — full nervous system augmentation, makes the body a weapon  — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a sniper out of the Gray Zone, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Camila Wojciechowski describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.99,
@@ -257,7 +257,7 @@
     "Analyst": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -272,13 +272,12 @@
   "registered_firearms": [],
   "related_entities": [
     "Masquerade",
-    "The Shelf",
     "Chicago",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Slagworks Industrial",
     "GLMZ"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Eastern European-dominant ancestry (53.6%) with substantial Hispanic/Latin American (23.0%), South Asian (8.3%), Pacific Islander (8.2%), and Sub-Saharan African (6.9%) admixture. Phenotype reflects this complex global blend: Eastern European bone structure combined with warmth and dimension from Latin American and African heritage, eye shape and placement influenced by South Asian ancestry, and subtle Pacific Islander softness to facial contours. The Ubiquitous Diaspora made flesh — a harmonious, multitonal blend rather than a single dominant appearance, with skin that shifts tonality across different lighting conditions.",
     "height_cm": 164,

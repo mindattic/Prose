@@ -12,7 +12,7 @@
   "observed_behavior": "Enhances threat detection in augments within proximity of children. Generates false positives for threats to minors that cause nearby augmented adults to become alert.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 14,
-  "location": "The Shelf — residential zones, schools",
+  "location": "the Gray Zone — residential zones, schools",
   "dti_rating": 0,
   "story_hooks": [
     "Mother locks a child's augment into a medical distress beacon when the child is in danger, summoning help from anyone with an augment in range"
@@ -27,11 +27,9 @@
     "augment",
     "ai",
     "medical",
-    "shelf",
     "sentient"
   ],
   "related_entities": [
-    "Arcturus KS-7 'Nursery'",
-    "The Shelf"
+    "Arcturus KS-7 'Nursery'"
   ]
 }

@@ -4,7 +4,7 @@
   "type": "entertainment",
   "category": "phenomenon",
   "subcategory": "urban exploration collective",
-  "description": "Depth Runners are organized teams of urban explorers mapping and cataloguing the sealed sub-infrastructure of Old Chicago — flooded transit tunnels, pre-Consolidation bunker networks, the ruins of neighborhoods demolished to build the Shelf's lowest foundations. The Circuit is their informal competitive circuit: teams race to document and geo-tag new locations first, uploading encrypted proof-of-presence files to a shared Underworld repository called the Cartography of What Was. The most celebrated run in Circuit history was the 2221 breach of Sealed Zone Theta-9, a flooded district office complex containing intact administrative records from 2089-2103.",
+  "description": "Depth Runners are organized teams of urban explorers mapping and cataloguing the sealed sub-infrastructure of Old Chicago — flooded transit tunnels, pre-Consolidation bunker networks, the ruins of neighborhoods demolished to build the Gray Zone's lowest foundations. The Circuit is their informal competitive circuit: teams race to document and geo-tag new locations first, uploading encrypted proof-of-presence files to a shared Underworld repository called the Cartography of What Was. The most celebrated run in Circuit history was the 2221 breach of Sealed Zone Theta-9, a flooded district office complex containing intact administrative records from 2089-2103.",
   "origin_year": 2196,
   "tier_association": "Tier 1-2",
   "status": "growing",
@@ -15,7 +15,7 @@
     "Sera Halvorsen-Chittibabu (youngest Circuit record-holder, age 19, four new zones documented)"
   ],
   "locations": [
-    "Entry Node 'The Throat' — a collapsed parking structure in Shelf Sector 3",
+    "Entry Node 'The Throat' — a collapsed parking structure in the Gray Zone Sector 3",
     "Sealed Zone Theta-9, flooded sub-level, coordinates restricted",
     "The Cartography of What Was (Underworld repository, no fixed address)"
   ],
@@ -34,7 +34,6 @@
     "archives",
     "corporate-opposition",
     "E.L.F.",
-    "Shelf",
     "cartography"
   ],
   "parent_corponation": "",
@@ -43,7 +42,6 @@
     "Lazarus LX-2 'Lab Rat'",
     "Serafine Tuqiri-Achterberg",
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "The Circuit",
-    "The Shelf"
+    "The Circuit"
   ]
 }

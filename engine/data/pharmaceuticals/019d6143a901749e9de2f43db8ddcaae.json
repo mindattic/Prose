@@ -28,7 +28,7 @@
   "tier_availability": "Military only",
   "legality": "military_only",
   "street_price": "Φ1,200+ per injector on black market",
-  "cultural_context": "Aurocet is the gold standard — the thing every Shelf runner has heard of and almost none have touched. When an injector appears on the black market, it moves fast and the provenance is always suspicious. Military contractors who've used it describe a qualitative difference from civilian combat drugs: not just more effective, but more coherent, like the drug and the body are finally speaking the same language. Lazarus guards the synthesis pathway aggressively — several corporate espionage operations have targeted it, and at least two Shelf chemists who got close to reverse-engineering it have disappeared.",
+  "cultural_context": "Aurocet is the gold standard — the thing every the Gray Zone runner has heard of and almost none have touched. When an injector appears on the black market, it moves fast and the provenance is always suspicious. Military contractors who've used it describe a qualitative difference from civilian combat drugs: not just more effective, but more coherent, like the drug and the body are finally speaking the same language. Lazarus guards the synthesis pathway aggressively — several corporate espionage operations have targeted it, and at least two the Gray Zone chemists who got close to reverse-engineering it have disappeared.",
   "story_hooks": [
     "A runner is offered a job that comes with two Aurocet injectors as part of the payment — the client has military connections, the job involves a Lazarus facility, and the drug itself may be evidence of something the runner shouldn't know.",
     "A street version of Aurocet is circulating — it has the right packaging and the right feel, but without BCI integration it produces uncontrolled adrenal flooding. Someone is selling military packaging around a dangerous civilian compound, and people are dying.",
@@ -51,8 +51,7 @@
     "control",
     "market",
     "drug",
-    "stimulant",
-    "shelf"
+    "stimulant"
   ],
   "parent_corponation": "Lazarus Pharmaceuticals",
   "related_entities": [

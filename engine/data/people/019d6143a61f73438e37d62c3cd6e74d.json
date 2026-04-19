@@ -1,16 +1,17 @@
 {
   "id": "019d6143a61f73438e37d62c3cd6e74d",
+  "rating": 80,
   "type": "character",
   "name": "Thandiwe Trujillo",
   "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
-  "role": "Fake ID vendor and forged document specialist — produces transit passes, corporate employment records, citizenship grades, and identity packages",
+  "role": "Fake ID vendor and forged document specialist \u2014 produces transit passes, corporate employment records, citizenship grades, and identity packages",
   "age": 41,
   "status": "active",
-  "location": "The Alban Souk, Bronzeline district — operates from a narrow print-shop front that sells legitimate business cards and event placards as a surface trade, near Western and Division",
-  "description": "Thandiwe Trujillo is the kind of person who has made themselves deliberately difficult to remember, which is a specific and cultivated skill. They are of medium height and medium build, with light-brown skin that sits at an unplaceable intersection of their Breton, Ghanaian, and Fulani inheritance, and they dress in muted colors and unremarkable cuts. The one exception is their hands, which they have had tattooed from wrist to fingertip in precise, circuit-board-fine geometric linework — not geneware, not chrome, just ink, chosen because it reminded them of the first forgery they were proud of. They keep their natural hair in a low wrap and wear plain-lensed glasses they don't need because it gives them something to do with their hands when thinking.\n\nThey are methodical, dry-humored, and possessed of a craftsperson's ego that they work hard to conceal. Every document they produce is technically flawless and they cannot resist occasionally making them beautiful — a font choice, a watermark pattern, a texture that no one asked for but that makes the thing feel real in the hand. They believe that identity should be available to everyone who needs one, and they have a deep and principled contempt for systems that make it otherwise. They have never met a citizenship algorithm they couldn't eventually beat.",
+  "location": "The Alban Souk, Bronzeline district \u2014 operates from a narrow print-shop front that sells legitimate business cards and event placards as a surface trade, near Western and Division",
+  "description": "Thandiwe Trujillo is the kind of person who has made themselves deliberately difficult to remember, which is a specific and cultivated skill. They are of medium height and medium build, with light-brown skin that sits at an unplaceable intersection of their Breton, Ghanaian, and Fulani inheritance, and they dress in muted colors and unremarkable cuts. The one exception is their hands, which they have had tattooed from wrist to fingertip in precise, circuit-board-fine geometric linework \u2014 not geneware, not chrome, just ink, chosen because it reminded them of the first forgery they were proud of. They keep their natural hair in a low wrap and wear plain-lensed glasses they don\u0027t need because it gives them something to do with their hands when thinking.\n\nThey are methodical, dry-humored, and possessed of a craftsperson\u0027s ego that they work hard to conceal. Every document they produce is technically flawless and they cannot resist occasionally making them beautiful \u2014 a font choice, a watermark pattern, a texture that no one asked for but that makes the thing feel real in the hand. They believe that identity should be available to everyone who needs one, and they have a deep and principled contempt for systems that make it otherwise. They have never met a citizenship algorithm they couldn\u0027t eventually beat.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -22,45 +23,49 @@
     },
     "core_fears": [
       "Producing a document that gets someone killed because of a flaw they should have caught",
-      "Being identified — not arrested, specifically, but having their face and name connected to their work"
+      "Being identified \u2014 not arrested, specifically, but having their face and name connected to their work"
     ],
     "core_desires": [
       "To be recognized, in some future world where it is safe, as a craftsperson",
-      "To see citizenship-tier systems dismantled entirely — they have a fully articulated political analysis and they never share it"
+      "To see citizenship-tier systems dismantled entirely \u2014 they have a fully articulated political analysis and they never share it"
     ],
     "coping_mechanisms": [
-      "Separates their work entirely from their feelings about the people they work for — the document is a technical problem and they solve technical problems",
+      "Separates their work entirely from their feelings about the people they work for \u2014 the document is a technical problem and they solve technical problems",
       "Maintains the legitimate front shop with genuine care as a way of telling themselves they exist above ground"
     ],
     "blind_spots": [
       "Their commitment to craft over speed occasionally means a client waits longer than is safe",
-      "They believe they are more invisible than they are — the tattooed hands are more memorable than they admit"
+      "They believe they are more invisible than they are \u2014 the tattooed hands are more memorable than they admit"
     ],
-    "secret": "They have been building a master false identity for themselves for eight years — not to use, or not yet, but as a contingency. The identity is so complete and so deeply embedded in multiple city registries that it would pass any check. They have never told anyone it exists. The name on it is the name they were almost given at birth before their parents changed their minds."
+    "secret": "They have been building a master false identity for themselves for eight years \u2014 not to use, or not yet, but as a contingency. The identity is so complete and so deeply embedded in multiple city registries that it would pass any check. They have never told anyone it exists. The name on it is the name they were almost given at birth before their parents changed their minds."
   },
   "speech_patterns": {
-    "vocabulary": "Precise and slightly formal; uses technical printing and documentation terminology as naturally as other people use everyday language; doesn't use contractions when discussing serious matters",
+    "vocabulary": "Precise and slightly formal; uses technical printing and documentation terminology as naturally as other people use everyday language; doesn\u0027t use contractions when discussing serious matters",
     "cadence": "Even and unhurried; long pauses are thinking, not discomfort; rarely raises their voice",
     "verbal_tics": [
       "Removes and replaces their glasses when moving from small talk to business",
-      "Says 'I see' when they don't mean agreement but mean they are filing something away",
-      "Uses 'the work' as a term for any document they produce, regardless of complexity"
+      "Says \u0027I see\u0027 when they don\u0027t mean agreement but mean they are filing something away",
+      "Uses \u0027the work\u0027 as a term for any document they produce, regardless of complexity"
     ],
     "example_lines": [
-      "'I see. The transit pass is straightforward. The employment record is not, because Sterling-Nakamura rotated their verification watermark six weeks ago and I will not give you something that fails a Tier 2 scan. Give me ten days.'",
-      "'The work is either right or it is not. There is no 'good enough for your purposes.' If it is not right, I do not release it.'"
-    ]
+      "\u0027I see. The transit pass is straightforward. The employment record is not, because Sterling-Nakamura rotated their verification watermark six weeks ago and I will not give you something that fails a Tier 2 scan. Give me ten days.\u0027",
+      "\u0027The work is either right or it is not. There is no \u0027good enough for your purposes.\u0027 If it is not right, I do not release it.\u0027"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "A document they produced three years ago has surfaced in connection with a high-profile Axiom corporate espionage case — not because it failed, but because someone used it to access a location they shouldn't have been able to access; Gwenaëlle is now a loose end in someone else's plan",
+    "A document they produced three years ago has surfaced in connection with a high-profile Axiom corporate espionage case \u2014 not because it failed, but because someone used it to access a location they shouldn\u0027t have been able to access; Gwena\u00EBlle is now a loose end in someone else\u0027s plan",
     "Someone has been submitting applications to their legitimate print shop front that are technically perfect and contain, embedded in the file metadata, a message they are not sure how to interpret",
-    "They have been approached to produce citizenship documentation for a large group of Tier-1 residents in exchange for a sum that would change their life — and the person asking has not said why so many people need to change their identity at the same time"
+    "They have been approached to produce citizenship documentation for a large group of Tier-1 residents in exchange for a sum that would change their life \u2014 and the person asking has not said why so many people need to change their identity at the same time"
   ],
-  "narrative_function": "Access point for false documentation — transit passes, employment records, full identity packages; can also identify forgeries made by others; plot-enabler for characters who need to move through GLMZ under a different name",
-  "augmentations": "Micro-precision haptic feedback overlay in fingertips (surgical, professional-grade — allows them to feel micron-level texture variations in document materials); no cosmetic modifications by deliberate choice",
+  "narrative_function": "Access point for false documentation \u2014 transit passes, employment records, full identity packages; can also identify forgeries made by others; plot-enabler for characters who need to move through GLMZ under a different name",
+  "augmentations": "Micro-precision haptic feedback overlay in fingertips (surgical, professional-grade \u2014 allows them to feel micron-level texture variations in document materials); no cosmetic modifications by deliberate choice",
   "daily_life": "They open the shop front at 09:00 and handle legitimate printing trade until noon; afternoons and evenings are for real work, conducted in the back room behind a sound-dampened partition. They never rush a commission and turn down more work than they accept.",
-  "affiliation": "Independent; pays protection to the Bronzeline Souk collective and receives legal cover in return; has long-standing professional relationships with several of The Narrows' mutual aid networks as a supplier of basic transit documentation for people in need",
+  "affiliation": "Independent; pays protection to the Bronzeline Souk collective and receives legal cover in return; has long-standing professional relationships with several of The Narrows\u0027 mutual aid networks as a supplier of basic transit documentation for people in need",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -103,15 +108,15 @@
   },
   "behavioral": {
     "decision_rules": [
-      "Does not take commissions from people they believe intend violence — they have a screening process they do not disclose",
+      "Does not take commissions from people they believe intend violence \u2014 they have a screening process they do not disclose",
       "Will not rush the work regardless of what the client offers",
-      "Takes a pro bono commission every month for someone who genuinely cannot pay — selection criteria known only to them"
+      "Takes a pro bono commission every month for someone who genuinely cannot pay \u2014 selection criteria known only to them"
     ],
     "escalation_ladder": [
-      "Surface-level legitimate business persona — prints business cards, makes small talk",
-      "Careful qualification — asks indirect questions to assess a potential client's actual situation",
-      "Technical consultation — discusses scope and timeline with complete professional seriousness",
-      "Committed production — once they take the commission, they are completely reliable and completely unreachable until delivery"
+      "Surface-level legitimate business persona \u2014 prints business cards, makes small talk",
+      "Careful qualification \u2014 asks indirect questions to assess a potential client\u0027s actual situation",
+      "Technical consultation \u2014 discusses scope and timeline with complete professional seriousness",
+      "Committed production \u2014 once they take the commission, they are completely reliable and completely unreachable until delivery"
     ],
     "interpersonal_modes": {
       "strangers": "Polite, neutral, and professionally helpful in the context of the shop front; gives very little away",
@@ -127,24 +132,24 @@
       "Holds an intensely political worldview that shapes every commission they take but would deny having political commitments if asked"
     ],
     "habits": [
-      "Handles every piece of paper and every substrate they work with bare-handed before beginning, regardless of the haptic feedback implants — they say it is habit, it is actually ritual",
-      "Leaves the shop door unlocked for exactly ten minutes after close — a signal to one specific person that they are available; they have never explained this to anyone",
+      "Handles every piece of paper and every substrate they work with bare-handed before beginning, regardless of the haptic feedback implants \u2014 they say it is habit, it is actually ritual",
+      "Leaves the shop door unlocked for exactly ten minutes after close \u2014 a signal to one specific person that they are available; they have never explained this to anyone",
       "Drinks the same tea every morning, made from a blend they import at disproportionate cost"
     ],
     "breaking_points": [
       "Learning that a document they produced was used to harm someone defenseless",
-      "Having the contingency identity discovered by anyone — this is their last line and they will do almost anything to protect it"
+      "Having the contingency identity discovered by anyone \u2014 this is their last line and they will do almost anything to protect it"
     ]
   },
   "cyberware_inventory": [
     {
-      "name": "Micro-precision haptic feedback overlay — surgical installation, fingertips bilaterally, professional document-verification configuration",
+      "name": "Micro-precision haptic feedback overlay \u2014 surgical installation, fingertips bilaterally, professional document-verification configuration",
       "body_location": "",
       "manufacturer": "",
       "tier": "",
       "condition": "functional",
       "installed_date": "",
-      "description": "Micro-precision haptic feedback overlay — surgical installation, fingertips bilaterally, professional document-verification configuration",
+      "description": "Micro-precision haptic feedback overlay \u2014 surgical installation, fingertips bilaterally, professional document-verification configuration",
       "replaces": ""
     }
   ],
@@ -180,7 +185,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2159 — Born in Bronzeline to a Breton-Ghanaian father and a Fulani-Senegalese mother",
+      "event": "2159 \u2014 Born in Bronzeline to a Breton-Ghanaian father and a Fulani-Senegalese mother",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -188,7 +193,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2174 — Apprenticed to a legitimate print shop at age 15; discovers within a year that their real talent is for reproduction, not production",
+      "event": "2174 \u2014 Apprenticed to a legitimate print shop at age 15; discovers within a year that their real talent is for reproduction, not production",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -196,7 +201,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2180 — Establishes their own shop front in the Alban Souk",
+      "event": "2180 \u2014 Establishes their own shop front in the Alban Souk",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -204,7 +209,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2185 — Produces their first complete identity package; considers it the beginning of their real career",
+      "event": "2185 \u2014 Produces their first complete identity package; considers it the beginning of their real career",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -212,7 +217,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2192 — Has their haptic overlay installed; calls it the best professional investment they have ever made",
+      "event": "2192 \u2014 Has their haptic overlay installed; calls it the best professional investment they have ever made",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -220,61 +225,45 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2200 — Present day",
+      "event": "2200 \u2014 Present day",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
     }
   ],
   "changelog": [],
-  "carried_weapons": [
-    "Nkomo-Lindqvist NL-22 'Peacemaker'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Alban Souk",
-    "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
-    "Bronzeline",
-    "PulsePoint HydraLine Fluid Balance Monitor",
-    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "NeuralPath VaultPay Subdermal Transaction Node",
-    "Circuit",
-    "The Pure Hand"
-  ],
-  "district": "The Shelf",
   "physical_description": {
-    "heritage": "A striking four-continent genetic blend: Hispanic/Latin American (35.1%) provides warm undertones and jaw definition; Sub-Saharan African (29.6%) contributes depth, lip fullness, and facial proportion; South Asian (20.1%) adds refined bone structure and eye character; Southeast Asian (15.2%) refines cheekbone architecture and eye placement. The result is a genuinely pan-diasporic complexion that transcends regional categories—warm medium brown with golden and reddish undertones that shift subtly in different light, reading as authentically mixed rather than approximating any single ancestry.",
+    "heritage": "A striking four-continent genetic blend: Hispanic/Latin American (35.1%) provides warm undertones and jaw definition; Sub-Saharan African (29.6%) contributes depth, lip fullness, and facial proportion; South Asian (20.1%) adds refined bone structure and eye character; Southeast Asian (15.2%) refines cheekbone architecture and eye placement. The result is a genuinely pan-diasporic complexion that transcends regional categories\u2014warm medium brown with golden and reddish undertones that shift subtly in different light, reading as authentically mixed rather than approximating any single ancestry.",
     "height_cm": 168,
     "weight_kg": 62,
-    "build": "Medium, lean without being angular — the economical frame of someone who moves deliberately and wastes no motion",
+    "build": "Medium, lean without being angular \u2014 the economical frame of someone who moves deliberately and wastes no motion",
     "hair_color": "Natural dark brown with graying undertones",
     "hair_style": "Low wrap, neat and tight, pulled close to the scalp",
     "hair_length": "Medium (wrapped length approximately 12-15cm when loose)",
     "eye_color": "Dark brown, unaugmented",
-    "skin_tone": "Warm medium brown—a complex four-way blend of Latin American golden warmth, African depth, South Asian refinement, and Southeast Asian luminosity; the tone occupies a sophisticated middle register with golden and reddish undertones that shift subtly in different light",
+    "skin_tone": "Warm medium brown\u2014a complex four-way blend of Latin American golden warmth, African depth, South Asian refinement, and Southeast Asian luminosity; the tone occupies a sophisticated middle register with golden and reddish undertones that shift subtly in different light",
     "complexion": "Clean-shaven face, minimal makeup, skin condition shows meticulous care with no visible scarring or blemishing; fine lines around the eyes from decades of close precision work; expression tends toward neutral watchfulness; facial features reflect the four ancestries: Southeast Asian and South Asian influence in refined cheekbone structure and eye placement; Latin American heritage in nose and jaw definition; Sub-Saharan African ancestry in lip fullness, facial proportion, and subtle width through the face",
     "distinguishing_marks": [
-      "Intricate circuit-board-fine geometric linework tattooed across both hands from wrist to fingertip in black ink — precise, intentional, covering approximately 80% of hand surface area",
+      "Intricate circuit-board-fine geometric linework tattooed across both hands from wrist to fingertip in black ink \u2014 precise, intentional, covering approximately 80% of hand surface area",
       "Faint calluses on index, middle, and ring fingers of both hands from decades of holding fine-tipped instruments"
     ],
     "visible_augmentations": "None visible. Micro-precision haptic feedback overlay is subcutaneous in fingertips and completely invisible; no chrome, no LEDs, no dermal modification by deliberate choice.",
-    "posture_movement": "Upright, economical posture with minimal wasted gesture; hands move with precision and confidence, often reaching for eyeglasses unconsciously when thinking — a tic born of habit rather than need; gait is steady and unhurried; overall bearing suggests someone who has trained themselves to be unremarkable and forgettable",
-    "clothing_style": "Muted earth tones and grays — well-maintained but deliberately nondescript clothing in functional cuts. Typically: plain cotton or linen shirts in cream, taupe, or dove gray; dark trousers with clean lines; unbranded safety glasses with clear lenses worn habitually despite not needing correction; a gray canvas work apron in the shop with multiple pockets for tools and materials. Footwear is practical: worn but clean leather flats or soft-soled shoes suitable for hours of standing at worktables. No jewelry, no adornment, no corporate branding or tier indicators — the aesthetic of someone who has trained themselves to occupy space without drawing attention."
+    "posture_movement": "Upright, economical posture with minimal wasted gesture; hands move with precision and confidence, often reaching for eyeglasses unconsciously when thinking \u2014 a tic born of habit rather than need; gait is steady and unhurried; overall bearing suggests someone who has trained themselves to be unremarkable and forgettable",
+    "clothing_style": "Muted earth tones and grays \u2014 well-maintained but deliberately nondescript clothing in functional cuts. Typically: plain cotton or linen shirts in cream, taupe, or dove gray; dark trousers with clean lines; unbranded safety glasses with clear lenses worn habitually despite not needing correction; a gray canvas work apron in the shop with multiple pockets for tools and materials. Footwear is practical: worn but clean leather flats or soft-soled shoes suitable for hours of standing at worktables. No jewelry, no adornment, no corporate branding or tier indicators \u2014 the aesthetic of someone who has trained themselves to occupy space without drawing attention."
   },
-  "image_prompt": "Thandiwe Trujillo, a 168cm lean mixed-heritage figure of complex four-continent ancestry—warm medium brown skin with golden and reddish undertones blending Hispanic/Latin American, Sub-Saharan African, South Asian, and Southeast Asian heritage. Dark brown hair with gray undertones in a neat low wrap. Refined cheekbones, dark unaugmented eyes, full lips, strong jaw definition. Wearing plain cream or dove gray cotton shirt, dark trousers, unbranded clear-lens safety glasses. Hands adorned with intricate black circuit-board geometric tattoo work covering wrist to fingertip. Steady, upright posture with precise, economical movements. Gray canvas work apron with multiple tool pockets. Worn but clean leather flats. Minimal expression, neutral watchfulness, fine lines around eyes from decades of precision work. Standing at a well-lit precision workstation in a GLMZ workshop, soft overhead lighting catching the warm tones of skin and subtle shimmer of hand tattoos. Muted, deliberate aesthetic—someone trained to be forgettable. --ar 2:3 --v 6",
+  "image_prompt": "Thandiwe Trujillo, a 168cm lean mixed-heritage figure of complex four-continent ancestry\u2014warm medium brown skin with golden and reddish undertones blending Hispanic/Latin American, Sub-Saharan African, South Asian, and Southeast Asian heritage. Dark brown hair with gray undertones in a neat low wrap. Refined cheekbones, dark unaugmented eyes, full lips, strong jaw definition. Wearing plain cream or dove gray cotton shirt, dark trousers, unbranded clear-lens safety glasses. Hands adorned with intricate black circuit-board geometric tattoo work covering wrist to fingertip. Steady, upright posture with precise, economical movements. Gray canvas work apron with multiple tool pockets. Worn but clean leather flats. Minimal expression, neutral watchfulness, fine lines around eyes from decades of precision work. Standing at a well-lit precision workstation in a GLMZ workshop, soft overhead lighting catching the warm tones of skin and subtle shimmer of hand tattoos. Muted, deliberate aesthetic\u2014someone trained to be forgettable. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Hispanic/Latin American": 35.1,
     "Sub-Saharan African": 29.6,
     "South Asian": 20.1,
     "Southeast Asian": 15.2
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Hispanic/Latin American": {
       "Central American": {
@@ -311,6 +300,5 @@
         "Khmer": 3.8
       }
     }
-  },
-  "tier": "2"
+  }
 }

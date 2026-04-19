@@ -3,7 +3,7 @@
   "name": "Selvage Strip Leggings (Scrap-Knit)",
   "type": "apparel",
   "category": "legwear",
-  "description": "Hand-knit or loomed from strips of salvaged fabric selvage and jersey offcuts, these leggings are thick, uneven, and colorful in a chaotic way — stripes and textures that follow whatever material was available. Worn under shorts, skirts, or oversized tops. Common on the Shelf among people who have a little skill and access to scrap bins. Surprisingly durable.",
+  "description": "Hand-knit or loomed from strips of salvaged fabric selvage and jersey offcuts, these leggings are thick, uneven, and colorful in a chaotic way — stripes and textures that follow whatever material was available. Worn under shorts, skirts, or oversized tops. Common in the Gray Zone among people who have a little skill and access to scrap bins. Surprisingly durable.",
   "tier_association": "Tier 1",
   "materials": [
     "salvaged fabric selvage strips",
@@ -13,11 +13,11 @@
   "functionality": "none",
   "what_it_says": "You made this, or someone you trust made this. There's skill in poverty that the upper tiers don't see.",
   "worn_by": [
-    "Shelf crafters",
-    "young women on the Shelf",
+    "the Gray Zone crafters",
+    "young women in the Gray Zone",
     "market vendors"
   ],
-  "manufacturer": "Self-made / Shelf craft market",
+  "manufacturer": "Self-made / the Gray Zone craft market",
   "price_range": "Φ3 - Φ5",
   "aug_compatible": false,
   "gene_compatible": true,
@@ -32,13 +32,10 @@
     "handmade",
     "leggings",
     "scrap",
-    "shelf",
     "knit"
   ],
   "parent_corponation": "",
-  "related_entities": [
-    "The Shelf"
-  ],
+  "related_entities": [],
   "physical_description": {
     "visual_profile": "Chunky, hand-crafted legwear with an intentionally chaotic aesthetic—irregular vertical stripes and woven texture that reads as both utilitarian and artisanal. Sits close to the leg with slight gathering at ankles. Gives an impression of resourcefulness and creative resilience.",
     "fit": "Fitted through hip and thigh, tapered at ankle with gentle bunching. Compression-adjacent without being restrictive—follows body contours while accommodating layering underneath.",
@@ -53,8 +50,8 @@
       "Likely reinforced at high-wear areas (inner thigh, calf) with patch layering",
       "Ankle cuff often unfinished or raw-edged for authentic scrap aesthetic"
     ],
-    "tier_indicator": "Tier 5 / Shelf craft—signals sub-grade maker economy, creative poverty, skilled hands",
-    "cultural_context": "Street-tier self-sufficiency; worn by Shelf dwellers, waste-stream salvagers, and anti-corpo craftspeople. Communicates rejection of mass-manufacture and investment in DIY skill. Associated with off-grid communities in the GLMZ ungoverned zones.",
+    "tier_indicator": "Tier 5 / the Gray Zone craft—signals sub-grade maker economy, creative poverty, skilled hands",
+    "cultural_context": "Street-tier self-sufficiency; worn by the Gray Zone dwellers, waste-stream salvagers, and anti-corpo craftspeople. Communicates rejection of mass-manufacture and investment in DIY skill. Associated with off-grid communities in the GLMZ ungoverned zones.",
     "condition_typical": "Worn-in from first wear—pilling expected, minor snags normalized, slight stretching at waistband over time. Patched repairs visible and accepted as part of garment evolution"
   },
   "image_prompt": "Close-up fashion shot of scrap-knit leggings on a lean, augmented model with exposed subcutaneous neck port, posed sitting cross-legged in dim warehouse lighting. Garment detail emphasizes chaotic multicolor stripes and thick, uneven hand-knit texture. Neon green industrial glow casting shadows across fabric weave. Concrete floor and metal shipping container edge in soft-focus background. Dark, moody neo-noir urban aesthetic with emphasis on tactile craftsmanship. Model wears minimal top to showcase leg styling. --ar 2:3 --v 6",

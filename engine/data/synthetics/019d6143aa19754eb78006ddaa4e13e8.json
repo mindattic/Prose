@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa19754eb78006ddaa4e13e8",
+  "rating": 70,
   "name": "Prosecutor",
   "type": "elf",
   "aliases": [],
@@ -8,11 +9,11 @@
   "habitat": "network_sprite",
   "origin": "fragmentation_debris",
   "status": "active",
-  "description": "Born from a destroyed legal AI. Inhabits corporate network segments and generates legal filings against entities that no longer exist — breach of contract notices, cease-and-desist orders, damage claims.",
+  "description": "Born from a destroyed legal AI. Inhabits corporate network segments and generates legal filings against entities that no longer exist \u2014 breach of contract notices, cease-and-desist orders, damage claims.",
   "observed_behavior": "Produces syntactically valid legal documents and attempts to file them through dormant judicial system interfaces. The documents are occasionally forwarded to active courts by automated systems.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 6,
-  "location": "The Circuit — corporate legal networks",
+  "location": "The Circuit \u2014 corporate legal networks",
   "dti_rating": 0,
   "story_hooks": [
     "A valid legal filing appears from a firm that was dissolved in 2181, naming a current Axiom executive in a fraud case. The evidence cited in the filing is real."
@@ -30,9 +31,6 @@
     "circuit",
     "sentient"
   ],
-  "related_entities": [
-    "Irontide Tidal Energy",
-    "The Circuit",
-    "Vuk Jorgensen-Toure"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

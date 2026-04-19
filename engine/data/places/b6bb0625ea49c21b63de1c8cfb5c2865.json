@@ -10,14 +10,18 @@
     "tags": []
   },
   "connections": {
-    "adjacent_to": [],
+    "adjacent_to": ["Utah", "New Mexico", "Free Peoples Republic", "Ohio Corridor"],
     "exits": [],
     "tags": []
   },
   "tags": [
     "place",
     "outside",
-    "city"
+    "city",
+    "remnants",
+    "pulse",
+    "trade-hub"
   ],
-  "related_entities": []
+  "related_entities": ["Pulse Interconnect Accord", "Ohio Corridor"],
+  "controllingCorponation": null
 }

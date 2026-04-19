@@ -9,8 +9,8 @@
   "role": "Street-level faith healer and unlicensed biotech surgeon",
   "age": 61,
   "status": "active",
-  "location": "The Shelf, near Halsted and Chicago Ave",
-  "description": "Aidana Karimov is a small, unhurried woman with copper-brown skin deeply creased by decades of fluorescent light and chemical fumes. Her white hair is braided back with strips of electrical tape — practical, she says, not decorative — and her left eye is a milky cataract she refuses to replace with an augment, though she could afford one three times over in trade. She moves through the cramped alleys of The Shelf like she owns every centimeter of them, which in the ways that matter, she does. Her clinic is a converted shipping container strung with votive candles and surgical LEDs in roughly equal measure, and the line outside it on any given morning stretches past two intersections.\n\nShe came to The Shelf forty years ago as a field medic for a labor collective that no longer exists, and she simply never left. Over time she absorbed every technique available to her: black-market bioprinting, salvaged corporate surgical protocols, folk pharmacology passed down through a network of Shelf grandmothers, and something she calls 'listening to the meat' — an intuitive diagnostic sense that younger surgeons dismiss until they watch her work. She does not advertise. She does not charge in credits. Payment is rendered in labor, food, information, or loyalty, and her ledger of favors owed to her is one of the most valuable documents on The Shelf.\n\nHer reputation has begun to leak upward into The Circuit and even into certain desperate corners of the Meridian Core, which terrifies her in ways she will not fully articulate. She has spent a lifetime being invisible to power and considers that invisibility a survival strategy, a professional asset, and a form of grace. Attention from above has only ever meant one thing in her experience: that something she has built is about to be taken.",
+  "location": "the Gray Zone, near Halsted and Chicago Ave",
+  "description": "Aidana Karimov is a small, unhurried woman with copper-brown skin deeply creased by decades of fluorescent light and chemical fumes. Her white hair is braided back with strips of electrical tape — practical, she says, not decorative — and her left eye is a milky cataract she refuses to replace with an augment, though she could afford one three times over in trade. She moves through the cramped alleys of the Gray Zone like she owns every centimeter of them, which in the ways that matter, she does. Her clinic is a converted shipping container strung with votive candles and surgical LEDs in roughly equal measure, and the line outside it on any given morning stretches past two intersections.\n\nShe came to the Gray Zone forty years ago as a field medic for a labor collective that no longer exists, and she simply never left. Over time she absorbed every technique available to her: black-market bioprinting, salvaged corporate surgical protocols, folk pharmacology passed down through a network of the Gray Zone grandmothers, and something she calls 'listening to the meat' — an intuitive diagnostic sense that younger surgeons dismiss until they watch her work. She does not advertise. She does not charge in credits. Payment is rendered in labor, food, information, or loyalty, and her ledger of favors owed to her is one of the most valuable documents on the Gray Zone.\n\nHer reputation has begun to leak upward into The Circuit and even into certain desperate corners of the Meridian Core, which terrifies her in ways she will not fully articulate. She has spent a lifetime being invisible to power and considers that invisibility a survival strategy, a professional asset, and a form of grace. Attention from above has only ever meant one thing in her experience: that something she has built is about to be taken.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -26,7 +26,7 @@
       "That her methods have caused harm she hasn't yet found"
     ],
     "core_desires": [
-      "For the people of The Shelf to be able to heal without begging",
+      "For the people of the Gray Zone to be able to heal without begging",
       "To train someone worthy to carry her knowledge forward",
       "One uninterrupted night of sleep"
     ],
@@ -68,28 +68,28 @@
     {
       "name": "Imara Solís-Bekele",
       "type": "Mentorship, complicated",
-      "description": "Imara passed through The Shelf years ago and Lourdes patched her up and taught her enough field medicine to keep herself alive. She watches Imara's trajectory with a mix of pride and dread.",
+      "description": "Imara passed through the Gray Zone years ago and Lourdes patched her up and taught her enough field medicine to keep herself alive. She watches Imara's trajectory with a mix of pride and dread.",
       "emotional_core": "The love a teacher has for a student who learned the lessons too well",
       "story_tension": "Lourdes suspects Imara is moving toward something that will get her killed and doesn't know if intervening would help or just delay the inevitable."
     },
     {
       "name": "Fenwick Oduya-Marsh",
       "type": "Recurring patient, reluctant confidant",
-      "description": "He comes to her with augment maintenance he won't trust to anyone in the Circuit. She extracts information about above-Shelf politics in exchange, framing it as idle curiosity.",
+      "description": "He comes to her with augment maintenance he won't trust to anyone in the Circuit. She extracts information about above-the Gray Zone politics in exchange, framing it as idle curiosity.",
       "emotional_core": "Mutual use dressed in genuine warmth",
       "story_tension": "He has started coming more often than his augments require. She isn't sure if he's lonely or if he's building toward asking her for something large."
     }
   ],
   "story_hooks": [
-    "A corporate medical enforcement team arrives on The Shelf with a warrant — not for her, ostensibly, but for a patient she treated who is now connected to something much larger. She must decide how much of her invisibility to spend protecting them.",
+    "A corporate medical enforcement team arrives on the Gray Zone with a warrant — not for her, ostensibly, but for a patient she treated who is now connected to something much larger. She must decide how much of her invisibility to spend protecting them.",
     "A young biotech prodigy from The Spire arrives claiming to want to apprentice with her. Their skills are genuine. Their motives are not legible.",
     "The girl she damaged fifteen years ago has come back — now an adult, now exhibiting abilities no one can explain, wanting to understand what was done to her.",
     "Her supply of a critical immunosuppressant for post-augmentation patients runs dry simultaneously across all her usual channels. Someone is cutting her off deliberately. She needs to find out who before people start rejecting their grafts."
   ],
-  "narrative_function": "Moral anchor and living institutional memory for The Shelf; represents the tension between care as radical act and care as exhaustible resource; her knowledge and her network make her a prize multiple factions want to claim or control",
+  "narrative_function": "Moral anchor and living institutional memory for the Gray Zone; represents the tension between care as radical act and care as exhaustible resource; her knowledge and her network make her a prize multiple factions want to claim or control",
   "augmentations": "Subdermal haptic feedback mesh in both hands — allows her to feel tissue density and micro-tremors during surgery,A salvaged diagnostic implant in her right forearm that she jury-rigged from three incompatible systems and that only she fully understands how to read",
   "daily_life": "Wakes before light. Boils water for coffee and for sterilization simultaneously, a habit she finds clarifying. Reviews her patient ledger — not digital, paper, coded. Clinic opens at what she calls 'when the light changes.' She works until the line is empty or her hands give out. Eats whatever is left by whoever cooked that day in the container next door. Spends an hour each evening on maintenance of her equipment and on what she privately calls her correspondence — messages relayed through a network of trusted runners to former patients and informants throughout the city. Sleeps lightly and briefly.",
-  "affiliation": "None formally. Loyalty to The Shelf as a place and a people. Informally networked with a loose federation of unlicensed medics across the lower districts.",
+  "affiliation": "None formally. Loyalty to the Gray Zone as a place and a people. Informally networked with a loose federation of unlicensed medics across the lower districts.",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -119,7 +119,7 @@
       "transparency_guardedness": 6
     },
     "drives": [
-      "Heal the Shelf",
+      "Heal the Gray Zone",
       "Pass on knowledge",
       "Remain invisible to power"
     ],
@@ -227,7 +227,7 @@
     "Judge": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -248,7 +248,6 @@
     "Meridian Core",
     "The Circuit",
     "Crucible TR-7 'Triage'",
-    "The Shelf",
     "The Spire",
     "The Fathom Line",
     "Circuit",
@@ -256,7 +255,7 @@
     "Copper",
     "Haze Johansson"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Central Asian (68.6%), Southeast Asian (12.2%), South Asian (10.3%), and Sub-Saharan African (8.9%) ancestry create a distinctly mixed phenotype. The dominant Central Asian foundation manifests in high, prominent cheekbones and slightly hooded eye shape, while Southeast and South Asian genetics contribute softer facial contours, warm golden undertones, and slightly fuller features. Sub-Saharan African ancestry enriches the skin with deep warmth and adds subtle fullness to lips and nose structure. The result is a burnished, sun-weathered complexion that speaks to decades of work across multiple climates.",
     "height_cm": 152,

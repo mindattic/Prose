@@ -9,7 +9,7 @@
   "role": "Baker. Makes real bread from real flour in a brick oven she built with her hands.",
   "age": 63,
   "status": "active",
-  "location": "Block 9, The Shelf — a ground-floor unit converted into a bakery with a brick oven built into the wall, near Ashland and Division",
+  "location": "Block 9, the Gray Zone — a ground-floor unit converted into a bakery with a brick oven built into the wall, near Ashland and Division",
   "description": "Sage Čabarkapa-Inthavong is 63 years old. Nobody uses her real name anymore, not even her. She is Auntie Flour, or The Baker, or Block 9, depending on who is speaking and how hungry they are. She is short, broad, with hands that look like they were designed for kneading dough — thick-fingered, strong, permanently dusted with flour that has worked into the creases of her skin and will not wash out and she has stopped trying.\n\nShe bakes real bread. From real flour. In a brick oven she built herself over three months from salvaged bricks and clay she mixed by hand. The oven takes up a third of her apartment. She does not care.\n\nThe flour comes from rooftop wheat grown by Plot 17 — the agricultural bot that manages the Block 9 garden cooperative. The wheat is ground by hand in a stone mill she traded six months of bread to acquire. The yeast is a sourdough culture she has maintained for 11 years. She calls it \"the old man.\"\n\nShe bakes 40 loaves a day. She loses money on every single one. The flour costs more than she charges. The fuel for the oven costs more than she charges. Her time costs more than she charges. She has a four-month waiting list. She does not take advance payment. You show up on your day, you pay what she asks, you take your bread.\n\nPeople cry when they eat it. Not because it is the best bread — it is good bread, honest bread, but it is not technically extraordinary. People cry because a human being made it with her hands. In a world of nutrient paste and synthesized carbohydrates and food printers that can replicate any flavor, a woman got up at 4 AM and mixed flour and water and salt and the old man, and she kneaded it, and she shaped it, and she put it in an oven she built, and she waited, and she pulled it out, and it is bread. A person made this. A person's hands were in this. That is why people cry.",
   "psychology": {
     "facet_weights": {
@@ -39,7 +39,7 @@
     "secret": "She can't taste bread anymore. Her sense of taste faded five years ago. She bakes by memory, by texture, by the sound the crust makes. She has not told anyone."
   },
   "speech_patterns": {
-    "vocabulary": "Plain. Direct. Shelf creole with heavy Slavic and West African cadences inherited from a grandmother and a neighborhood.",
+    "vocabulary": "Plain. Direct. the Gray Zone creole with heavy Slavic and West African cadences inherited from a grandmother and a neighborhood.",
     "cadence": "Warm and rhythmic, like kneading. Sentences have a push-pull quality.",
     "verbal_tics": [
       "Calls everyone 'baby' regardless of age or station",
@@ -63,7 +63,7 @@
     }
   ],
   "story_hooks": [
-    "A Spire food corporation has offered to buy her recipe, her culture, and her brand for Φ500,000. She said no. They're coming back with a number she can't refuse. The Shelf is organizing.",
+    "A Spire food corporation has offered to buy her recipe, her culture, and her brand for Φ500,000. She said no. They're coming back with a number she can't refuse. the Gray Zone is organizing.",
     "The old man — the sourdough culture — has changed. The bread tastes different. Better. Impossible. A microbiologist friend says the yeast has a strain in it that doesn't exist in any database. It came from the rooftop wheat. It came from Plot 17.",
     "Her oven cracked. She needs bricks. Real bricks. Not printed. Not synthesized. Real bricks from a real building. She knows where to find them — in the Underworld — but she's 63 and the Underworld is not safe."
   ],
@@ -113,14 +113,14 @@
   },
   "behavioral": {
     "decision_rules": [
-      "The bread is priced for the Shelf. Not for profit.",
+      "The bread is priced for the Gray Zone. Not for profit.",
       "No one is turned away hungry if she has bread left at end of day."
     ],
     "escalation_ladder": [
       "Feeds you",
       "Feeds you and tells you what she thinks",
       "Refuses to feed you (this has happened twice in 11 years and both times the person deserved it)",
-      "Closes the bakery for a day (nuclear option — the Shelf panics)"
+      "Closes the bakery for a day (nuclear option — the Gray Zone panics)"
     ],
     "interpersonal_modes": {
       "strangers": "Feeds them first, asks questions second. A stranger in the bakery gets bread before they get conversation.",
@@ -132,7 +132,7 @@
       "high": "Goes to Roof 3 and sits near Plot 17. Doesn't speak. The automaton doesn't either. They sit."
     },
     "contradictions": [
-      "Insists the bakery isn't political while operating the most politically significant kitchen in the Shelf"
+      "Insists the bakery isn't political while operating the most politically significant kitchen in the Gray Zone"
     ],
     "habits": [
       "Leaves a loaf on the Roof 3 railing for Plot 17 every morning",
@@ -170,7 +170,7 @@
     "Judge": 0.3
   },
   "operating_territory": {
-    "home_turf": "Block 9, The Shelf",
+    "home_turf": "Block 9, the Gray Zone",
     "familiar_zones": [
       "Block 9",
       "Rooftop Gardens"
@@ -186,7 +186,6 @@
   "related_entities": [
     "The Brick Oven",
     "Cinderblock Ai",
-    "The Shelf",
     "Resonant Microwave Denial System RMDS-4 'Crowdbreaker'",
     "Plot 17",
     "Honest Burger",
@@ -195,7 +194,7 @@
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
     "Clay"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Eastern European-Southeast Asian blend with Pacific Islander and South Asian ancestry: 51.6% Eastern European (dominant), 25.3% Southeast Asian, 12% Pacific Islander, 10.9% South Asian, 0.2% Sub-Saharan African. Phenotype reflects this primary mix—warm medium-deep brown skin with golden and olive undertones from the Southeast Asian and Pacific Islander heritage, bone structure showing defined angular cheekbones characteristic of Eastern European ancestry, with secondary facial breadth from Pacific Islander and Southeast Asian lines. The blend creates a distinctive phenotype: the structural angularity of Eastern Europe softened and warmed by the golden undertones and fuller features of Southeast Asian and Pacific Islander ancestry.",
     "height_cm": 157,

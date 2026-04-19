@@ -3,7 +3,7 @@
   "name": "Ashpile Redline Territory Patch Jacket",
   "type": "apparel",
   "category": "cultural",
-  "description": "A salvaged canvas work jacket — originally Crucible-issue, stripped of corporate markings and rebuilt as gang insignia wear. The back panel carries a hand-stitched territorial map in red and black thread, updated with spray-painted overlays marking current Shelf borders. Sleeve patches are heat-pressed and layered, each one a record of alliances, debts, and fallen members. Collar edges are reinforced with scavenged copper wire stitching.\n\nColors are deliberate: red for the Ashpile bloc, black borders indicating neutral transit corridors, yellow Xs marking contested ground. Every jacket is unique — a living document. Wearing one in wrong territory is a declaration.",
+  "description": "A salvaged canvas work jacket — originally Crucible-issue, stripped of corporate markings and rebuilt as gang insignia wear. The back panel carries a hand-stitched territorial map in red and black thread, updated with spray-painted overlays marking current the Gray Zone borders. Sleeve patches are heat-pressed and layered, each one a record of alliances, debts, and fallen members. Collar edges are reinforced with scavenged copper wire stitching.\n\nColors are deliberate: red for the Ashpile bloc, black borders indicating neutral transit corridors, yellow Xs marking contested ground. Every jacket is unique — a living document. Wearing one in wrong territory is a declaration.",
   "tier_association": "Tier 1",
   "materials": [
     "reclaimed canvas",
@@ -15,9 +15,9 @@
   "functionality": "Deep interior pockets with mag-strip closures for concealment. Collar wire doubles as antenna booster for low-band comms. Removable sleeve patches allow rapid insignia swap in hostile territory.",
   "what_it_says": "This person belongs to something, and that something has teeth.",
   "worn_by": [
-    "Shelf gang members",
+    "the Gray Zone gang members",
     "territorial bloc enforcers",
-    "Shelf community organizers",
+    "the Gray Zone community organizers",
     "survivors marking affiliation for protection"
   ],
   "manufacturer": "Self-made / Ashpile bloc collective",
@@ -34,7 +34,6 @@
     "cultural",
     "gang",
     "tier-1",
-    "shelf",
     "insignia",
     "DIY",
     "territorial",

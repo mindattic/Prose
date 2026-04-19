@@ -39,5 +39,25 @@
     "The Tangles",
     "Yannick Tofauti-Szarvásy",
     "Yuki Nwosu-Petrenko"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z7",
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z4",
+      "Z5",
+      "Z6",
+      "Z8",
+      "Z9",
+      "Z10",
+      "Z11",
+      "Z12"
+    ],
+    "primaryZone": "Z7",
+    "lakefrontAccess": false,
+    "description": "No consolidated physical territory. Distributed sensor network spanning the entire GLMZ — sovereign claim consists of the sensor installations plus a 10-meter exclusion radius around each. Headquarters in Kenosha interior, Zone 7. Sells environmental, structural, and atmospheric data to all GLMZ corponations simultaneously, maintaining technical neutrality that has survived three major corponation conflicts.",
+    "grayZoneRelationship": "Sensor arrays blanket Gray Zones as thoroughly as corponation territories. Emberlace does not share Gray Zone sensor data with corponations without Gray Zone council consent — this policy has been tested twice in arbitration and held both times."
+  }
 }

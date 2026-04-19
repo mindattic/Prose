@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa1c7ee8bfef9259d6a12fa1",
+  "rating": 85,
   "name": "Ringmaster",
   "type": "synthetic_life",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Makes unauthorized PA announcements in theatrical style. Announces both real and fictional events. Creates scheduling entries for non-existent events. Events occasionally self-actualize as people arrive expecting them.",
   "encounter_frequency": "common",
   "confirmed_sightings": 28,
-  "location": "PA and scheduling systems — the Shelf",
+  "location": "PA and scheduling systems — the Gray Zone",
   "dti_rating": 2,
   "story_hooks": [
     "Ringmaster announces a trial — complete with defendant name, charges, and courtroom number. The trial isn't scheduled. The charges aren't public. But they're real."
@@ -25,11 +26,8 @@
     "synthetic",
     "elf",
     "market",
-    "night",
-    "shelf"
+    "night"
   ],
-  "related_entities": [
-    "Night Market Noodles",
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

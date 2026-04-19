@@ -10,7 +10,7 @@
   "age": 29,
   "status": "alive",
   "location": "Meridian Core — Axiom Industries Security Division, Floor 47. Clean apartment in the corporate residential block, Level 30.",
-  "description": "Indigo Bah-Tamale moves like someone who has been evaluated her entire adult life and has decided to make every\nevaluation flawless. Not arrogant — precise. Every step measured, every gesture controlled, every\nword vetted by some internal review board that never adjourns. She is 5'8\", athletic, with the\nparticular build that comes from corporate training programs designed to maximize combat efficiency\nwithout sacrificing the professional appearance Axiom demands of its security personnel. Her black\nhair is kept in a regulation-length bob that frames a face built for stillness — high cheekbones,\ndark eyes that assess before they acknowledge, a mouth that defaults to a neutral line that gives\naway nothing.\n\nHer uniform is always immaculate. Her augments are always calibrated. Her quarterly performance\nreviews are always exceptional. She is, on paper and in practice, the model Axiom operative: a\nproduct of the Shelf who climbed out through sheer competence and disciplined compliance. The\ncorporation holds her up as proof that the system works — that anyone with talent and willingness\ncan ascend. They do not mention what she had to leave behind to do it.\n\nFirst impression: a professional. Competent, controlled, slightly cold. The kind of person you\nrespect and don't approach. Second impression, available only to those who knew her before: a\nwoman who is performing the role of herself with such precision that the performance has become\nindistinguishable from reality. She's not pretending. She's not honest either. She's something\nworse — she's forgotten where the mask ends.",
+  "description": "Indigo Bah-Tamale moves like someone who has been evaluated her entire adult life and has decided to make every\nevaluation flawless. Not arrogant — precise. Every step measured, every gesture controlled, every\nword vetted by some internal review board that never adjourns. She is 5'8\", athletic, with the\nparticular build that comes from corporate training programs designed to maximize combat efficiency\nwithout sacrificing the professional appearance Axiom demands of its security personnel. Her black\nhair is kept in a regulation-length bob that frames a face built for stillness — high cheekbones,\ndark eyes that assess before they acknowledge, a mouth that defaults to a neutral line that gives\naway nothing.\n\nHer uniform is always immaculate. Her augments are always calibrated. Her quarterly performance\nreviews are always exceptional. She is, on paper and in practice, the model Axiom operative: a\nproduct of the Gray Zone who climbed out through sheer competence and disciplined compliance. The\ncorporation holds her up as proof that the system works — that anyone with talent and willingness\ncan ascend. They do not mention what she had to leave behind to do it.\n\nFirst impression: a professional. Competent, controlled, slightly cold. The kind of person you\nrespect and don't approach. Second impression, available only to those who knew her before: a\nwoman who is performing the role of herself with such precision that the performance has become\nindistinguishable from reality. She's not pretending. She's not honest either. She's something\nworse — she's forgotten where the mask ends.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -24,7 +24,7 @@
       "That Kyle was right to leave — that his moral clarity is real and hers is theater",
       "That she has become exactly what killed the communities she grew up in — the system's enforcement arm",
       "Losing control — of her career, her emotions, her carefully constructed life. One crack and it all falls.",
-      "Being sent back to the Shelf — not physically, but spiritually. Becoming powerless again."
+      "Being sent back to the Gray Zone — not physically, but spiritually. Becoming powerless again."
     ],
     "core_desires": [
       "Security — real, permanent, unshakable. The kind that can't be taken away by a policy change or a restructuring.",
@@ -47,14 +47,14 @@
     "secret": "She keeps a file on Kyle. Not an official one — a personal file, on a private device, encrypted\nwith a key she changes monthly. Every job he takes that crosses Axiom's radar, every sighting,\nevery rumor. She's tracked his movements for five years. She tells herself it's professional\ndue diligence — knowing where a former operative operates is standard security practice. It's\nnot. She's watching him the way you watch someone who jumped off a bridge — not because you\nwant to jump, but because you need to know if they survived the fall."
   },
   "speech_patterns": {
-    "vocabulary": "Military-corporate hybrid. Clean, precise, stripped of imagery, heavy on clarity. She uses rank and protocol language even in casual conversation — it's armor. When she's caught off-guard, fragments of Shelf dialect surface ('that's gutter—' she'll start, then correct to standard phrasing immediately, furious at the slip). She never swears. She considers it imprecise.",
+    "vocabulary": "Military-corporate hybrid. Clean, precise, stripped of imagery, heavy on clarity. She uses rank and protocol language even in casual conversation — it's armor. When she's caught off-guard, fragments of the Gray Zone dialect surface ('that's gutter—' she'll start, then correct to standard phrasing immediately, furious at the slip). She never swears. She considers it imprecise.",
     "cadence": "Controlled, even, delivered at the same volume and speed regardless of content. She could be ordering dinner or ordering a tactical strike and it would sound identical. When she's angry, she gets quieter — the words get shorter, the pauses get longer, and the most dangerous Yuki is the one who stops talking entirely and just looks at you.",
     "verbal_tics": [],
     "example_lines": [
       "You left. That's your prerogative. I stayed. That's mine. We don't need to discuss it further.",
       "I sleep fine, Kyle. I sleep in a bed with clean sheets in a room with a lock. I sleep fine.",
       "The objective is clear. The method is your discretion. The timeline is not.",
-      "I didn't leave the Shelf to have opinions about the Shelf. I left to never go back.",
+      "I didn't leave the Gray Zone to have opinions about the Gray Zone. I left to never go back.",
       "You think your code makes you better than me. It doesn't. It just makes you poorer.",
       "Don't ask me if I'm happy. That's not a relevant metric."
     ]
@@ -70,14 +70,14 @@
     {
       "name": "Axiom Industries",
       "type": "employer / identity / cage",
-      "description": "Axiom is her world. It gave her augments, a career, a clean apartment, a locked door, and a\npurpose that doesn't require her to ask difficult questions as long as she doesn't look too\nclosely at the answers. It also systematically grinds the communities she came from — places\nlike the Shelf — under its operational requirements. She knows both things. She keeps them in\nseparate compartments and never lets them meet.",
+      "description": "Axiom is her world. It gave her augments, a career, a clean apartment, a locked door, and a\npurpose that doesn't require her to ask difficult questions as long as she doesn't look too\nclosely at the answers. It also systematically grinds the communities she came from — places\nlike the Gray Zone — under its operational requirements. She knows both things. She keeps them in\nseparate compartments and never lets them meet.",
       "emotional_core": "",
       "story_tension": ""
     },
     {
       "name": "Her parents (deceased)",
       "type": "origin / motivation / guilt",
-      "description": "Her father died when she was fourteen — a workplace accident at the docks that Axiom classified\nas \"operator error\" to avoid liability. Her mother died three years later, worn through by\ndouble shifts at an understaffed clinic. Yuki enlisted within months. She never says their\nnames. She sends money to maintain their graves on the Shelf, through an anonymous account,\nbecause going in person would mean seeing what she left.",
+      "description": "Her father died when she was fourteen — a workplace accident at the docks that Axiom classified\nas \"operator error\" to avoid liability. Her mother died three years later, worn through by\ndouble shifts at an understaffed clinic. Yuki enlisted within months. She never says their\nnames. She sends money to maintain their graves in the Gray Zone, through an anonymous account,\nbecause going in person would mean seeing what she left.",
       "emotional_core": "",
       "story_tension": ""
     },
@@ -93,9 +93,9 @@
     "Kyle and Yuki on opposite sides of the same job — she's protecting what he's been hired to steal",
     "Axiom orders Yuki to bring Kyle in. She has to choose between her career and the person she was before she had one.",
     "Commander Zhao discovers the private file. Yuki faces termination unless she turns Kyle in — with real intel this time.",
-    "She shows up at Mrs. Chen's noodle shop. She hasn't been to the Shelf since she left. Mrs. Chen recognizes her immediately.",
+    "She shows up at Mrs. Chen's noodle shop. She hasn't been to the Gray Zone since she left. Mrs. Chen recognizes her immediately.",
     "She reads a poem that cracks something open — and for the first time, she lets herself ask whether Kyle was right",
-    "A Shelf operation she's ordered to command — clearing the area she grew up in. The same kind of action that made Kyle leave."
+    "A the Gray Zone operation she's ordered to command — clearing the area she grew up in. The same kind of action that made Kyle leave."
   ],
   "narrative_function": "Yuki is the road not taken. She is what Kyle would be if he'd stayed with Axiom — successful,\nstable, effective, and slowly being consumed by the machine she chose. She represents the argument\nthat principles are a luxury, that pragmatism is survival, that the system is ugly but it works\nfor those willing to work it.\n\nBut she also mirrors Kyle's hypocrisy from the other side. He calls himself a samurai while doing\nmercenary work. She calls herself an officer while enforcing corporate will on communities like\nthe one she grew up in. Neither of them is fully honest about what they are. But Yuki's dishonesty\nis state-sponsored, which makes it invisible, and Kyle's is self-imposed, which makes it romantic.\nThe story should question both.\n\nShe is the tension between where you came from and what you became. She buried the same moral\ndoubts Kyle couldn't swallow. She chose pragmatism. It works. She has healthcare. She has security.\nShe has a clean ceiling to stare at for thirty-seven minutes every morning while she doesn't think\nabout whether any of it was worth it.\n\nThe question she poses to Kyle: Was leaving brave, or was it easy? Was staying cowardly, or was\nit the harder choice — to look at the machine every day and keep going? The story should make\nboth answers feel true and neither feel sufficient.",
   "augmentations": "",
@@ -173,7 +173,7 @@
       "File Kyle sightings as unconfirmed — never act on them officially",
       "Never swear — it is imprecise",
       "Compartmentalize emotions into operational focus",
-      "Never return to the Shelf for personal reasons",
+      "Never return to the Gray Zone for personal reasons",
       "Update the private encrypted file on Kyle monthly"
     ],
     "escalation_ladder": [
@@ -181,7 +181,7 @@
       "Words get shorter, pauses get longer",
       "Complete silence with sustained eye contact",
       "Tactical action executed with perfect training and zero hesitation",
-      "Breaking protocol — the mask cracks and the Shelf dialect surfaces"
+      "Breaking protocol — the mask cracks and the Gray Zone dialect surfaces"
     ],
     "interpersonal_modes": {
       "kyle": "Five years of silence; twice let him go and filed as unconfirmed; keeps the tattoo and the file and the thirty-seven minutes",
@@ -193,7 +193,7 @@
     "stress_responses": {
       "low": "Extended physical training sessions; immaculate uniform maintenance",
       "medium": "Emotional compartmentalization intensifies; poetry reading sessions lengthen",
-      "high": "The Shelf dialect surfaces involuntarily and she corrects it with fury",
+      "high": "the Gray Zone dialect surfaces involuntarily and she corrects it with fury",
       "critical": "Stares at the ceiling for thirty-seven minutes and does not think about whether any of it was worth it"
     },
     "contradictions": [
@@ -205,7 +205,7 @@
       "Physical training at 0600 daily without exception",
       "Reads poetry alone at night with the lights off — Basho, Rumi, Warsan Shire",
       "Updates encrypted personal file on Kyle with every sighting or rumor",
-      "Sends anonymous money to maintain parents graves on the Shelf",
+      "Sends anonymous money to maintain parents graves on the Gray Zone",
       "Thirty-seven minutes every morning staring at a clean ceiling"
     ],
     "breaking_points": [
@@ -257,7 +257,6 @@
     "Meridian Core",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Pullman Works",
-    "The Shelf",
     "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Clearpath",
     "Specter ID Spoofer — 'Janus Mask'",

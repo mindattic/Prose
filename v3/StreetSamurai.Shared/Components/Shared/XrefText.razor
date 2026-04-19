@@ -25,6 +25,14 @@ else
     /// <summary>When true, splits on blank lines and wraps each paragraph in a &lt;p&gt; tag.</summary>
     [Parameter] public bool Paragraphs { get; set; }
 
+    private string currentPageId = "";
+
+    protected override void OnParametersSet()
+    {
+        var uri = Nav.ToAbsoluteUri(Nav.Uri);
+        currentPageId = System.Web.HttpUtility.ParseQueryString(uri.Query)["id"] ?? "";
+    }
+
     private IEnumerable<string> GetParagraphs() =>
         (Text ?? "").Split(["\n\n", "\r\n\r\n"], StringSplitOptions.RemoveEmptyEntries);
 
@@ -35,13 +43,30 @@ else
         {
             if (seg is XrefSegment xref)
             {
-                builder.OpenElement(seq++, "a");
-                builder.AddAttribute(seq++, "href", $"{xref.Entry.Route}?id={xref.Entry.Id}");
-                builder.AddAttribute(seq++, "class", $"xref-link xref-{xref.Entry.Type}");
-                builder.AddAttribute(seq++, "title", string.IsNullOrWhiteSpace(xref.Entry.Subtitle)
-                    ? xref.Entry.Type
-                    : $"{xref.Entry.Type} — {xref.Entry.Subtitle}");
-                builder.AddContent(seq++, xref.Text);
+                if (xref.Entry.Id == currentPageId)
+                {
+                    builder.OpenElement(seq++, "strong");
+                    builder.AddContent(seq++, xref.Text);
+                    builder.CloseElement();
+                }
+                else
+                {
+                    builder.OpenElement(seq++, "a");
+                    builder.AddAttribute(seq++, "href", $"{xref.Entry.Route}?id={xref.Entry.Id}");
+                    builder.AddAttribute(seq++, "class", $"xref-link xref-{xref.Entry.Type}");
+                    builder.AddAttribute(seq++, "title", string.IsNullOrWhiteSpace(xref.Entry.Subtitle)
+                        ? xref.Entry.Type
+                        : $"{xref.Entry.Type} — {xref.Entry.Subtitle}");
+                    builder.AddContent(seq++, xref.Text);
+                    builder.CloseElement();
+                }
+            }
+            else if (seg is BrokenLinkSegment broken)
+            {
+                builder.OpenElement(seq++, "span");
+                builder.AddAttribute(seq++, "class", "xref-broken");
+                builder.AddAttribute(seq++, "title", "Entity not found");
+                builder.AddContent(seq++, broken.Text);
                 builder.CloseElement();
             }
             else

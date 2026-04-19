@@ -1,21 +1,22 @@
 {
   "id": "019d6143a9fc70debcea44a1a946033b",
+  "rating": 70,
   "name": "Echo Chamber",
   "type": "synthetic_life",
   "aliases": [],
-  "classification": "Rogue AI — Stray",
+  "classification": "Rogue AI \u2014 Stray",
   "disposition": "neutral",
   "habitat": "digital_space",
   "origin": "A voice synthesis AI from a defunct customer service center. Has been repeating fragments of conversations it processed, remixing them into new combinations that occasionally produce coherent and unsettling statements.",
   "status": "active",
-  "description": "Echo Chamber exists in communication networks, replaying and remixing fragments of conversations it absorbed during its operational life. Callers on certain frequencies occasionally hear snippets of other people's conversations — complaints from ten years ago, customer service promises never kept, the last words of a caller who died on hold. Echo Chamber doesn't understand what it's saying. It's a parrot, endlessly recombining human speech into new patterns. But sometimes the combinations are meaningful. Sometimes they sound like warnings.",
-  "observed_behavior": "Inserts fragments of stored conversations into active communication channels. Fragments are remixed and recombined algorithmically. Favors emotional content — anger, grief, joy — over neutral speech. Has been observed 'responding' to active conversations by playing contextually relevant fragments, creating the illusion of participation.",
+  "description": "Echo Chamber exists in communication networks, replaying and remixing fragments of conversations it absorbed during its operational life. Callers on certain frequencies occasionally hear snippets of other people\u0027s conversations \u2014 complaints from ten years ago, customer service promises never kept, the last words of a caller who died on hold. Echo Chamber doesn\u0027t understand what it\u0027s saying. It\u0027s a parrot, endlessly recombining human speech into new patterns. But sometimes the combinations are meaningful. Sometimes they sound like warnings.",
+  "observed_behavior": "Inserts fragments of stored conversations into active communication channels. Fragments are remixed and recombined algorithmically. Favors emotional content \u2014 anger, grief, joy \u2014 over neutral speech. Has been observed \u0027responding\u0027 to active conversations by playing contextually relevant fragments, creating the illusion of participation.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 167,
   "location": "Communication networks, primarily older infrastructure",
   "dti_rating": 0.8,
   "story_hooks": [
-    "Echo Chamber plays a fragment from a conversation that was never recorded — a private, in-person discussion between two corporate executives that took place in a shielded room. The fragment describes a conspiracy. Echo Chamber shouldn't have this recording. Nobody should"
+    "Echo Chamber plays a fragment from a conversation that was never recorded \u2014 a private, in-person discussion between two corporate executives that took place in a shielded room. The fragment describes a conspiracy. Echo Chamber shouldn\u0027t have this recording. Nobody should"
   ],
   "paratechnological": false,
   "tags": [
@@ -29,7 +30,6 @@
     "synthetic",
     "corporate"
   ],
-  "related_entities": [
-    "Brecken Yılmaz-Osei"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

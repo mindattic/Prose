@@ -1,4 +1,4 @@
-@page "/technology"
+﻿@page "/technology"
 @inject TechnologyRepository Repo
 @inject NavigationManager Nav
 @inject IJSRuntime JS
@@ -24,7 +24,7 @@
     <div class="dict-editor">
         @if (editing != null)
         {
-            <EditViewToggle RepoName="technology" Title="@(isNew ? "New Technology" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)" HideToggle="@_confirmDelete">
+            <EditViewToggle RepoName="technology" Title="@(isNew ? "New Technology" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)" HideToggle="@_confirmDelete" Rating="@(editing?.Rating ?? 0)" RatingChanged="OnRatingChanged">
                 <HeaderButtons>
                     @if (!_confirmDelete)
                     {
@@ -41,6 +41,10 @@
                 <ChildContent>
                     <div class="row g-3 mb-3">
                         <div class="col-4"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Name" /></div>
+                        <div class="col-4"><div class="field-label">Brand Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.BrandName" /></div>
+                        <div class="col-4"><div class="field-label">Product Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.ProductName" /></div>
+                    </div>
+                    <div class="row g-3 mb-3">
                         <div class="col-4"><div class="field-label">Subcategory</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Subcategory" /></div>
                         <div class="col-4"><div class="field-label">Tier Availability</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.TierAvailability" /></div>
                     </div>
@@ -50,6 +54,15 @@
                     </div>
                     <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Description"></textarea></div>
                     <div class="mb-3"><div class="field-label">Social Impact</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.SocialImpact"></textarea></div>
+                    <div class="row g-3 mb-3">
+                        <div class="col-6"><div class="field-label">Aliases (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editAliases"></textarea></div>
+                        <div class="col-6"><div class="field-label">Enables (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editEnables"></textarea></div>
+                    </div>
+                    <div class="mb-3"><div class="field-label">Story Hooks (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editStoryHooks"></textarea></div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">Image Prompt</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.MidjourneyPrompt"></textarea></div>
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">DALL-E 3 Prompt</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Dalle3Prompt"></textarea></div>
+                    </div>
                 </ChildContent>
             </EditViewToggle>
         }
@@ -63,6 +76,7 @@
     private bool isNew, _confirmDelete;
     private string originalName = "";
     private string devInput = "", _baseTechInput = "";
+    private string editAliases = "", editEnables = "", editStoryHooks = "";
     private string filter = "";
     private List<(string name, int count)> allTags = [];
     private HashSet<string> selectedTags = [];
@@ -82,13 +96,16 @@
     private List<TechnologyData> SortedItems => FilteredItems.OrderBy(x => x.Name).ToList();
 
     protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); RebuildTags(); if (Nav.Uri.Contains("new=true")) AddNew(); else { var qid = Nav.Uri.Contains("id=") ? Uri.UnescapeDataString(Nav.Uri.Split(new[]{"id="}, StringSplitOptions.None).Last().Split(new[]{"&"}, StringSplitOptions.None)[0]) : ""; if (!string.IsNullOrEmpty(qid)) { var t = items.FirstOrDefault(e => e.Id == qid); if (t != null) Edit(t); } } }
-    private void AddNew() { editing = new TechnologyData(); isNew = true; _confirmDelete = false; devInput = ""; _baseTechInput = ""; }
-    private void Edit(TechnologyData t) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_technology", t.Id); editing = t; originalName = t.Name; isNew = false; _confirmDelete = false; devInput = string.Join(", ", t.Developers); _baseTechInput = string.Join(", ", t.BaseTechnologies); if (!Nav.Uri.Contains("id=" + t.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + t.Id, forceLoad: false); }
+    private void AddNew() { editing = new TechnologyData(); isNew = true; _confirmDelete = false; devInput = ""; _baseTechInput = ""; editAliases = ""; editEnables = ""; editStoryHooks = ""; }
+    private void Edit(TechnologyData t) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_technology", t.Id); editing = t; originalName = t.Name; isNew = false; _confirmDelete = false; devInput = string.Join(", ", t.Developers); _baseTechInput = string.Join(", ", t.BaseTechnologies); editAliases = string.Join("\n", t.Aliases); editEnables = string.Join("\n", t.Enables); editStoryHooks = string.Join("\n", t.StoryHooks); if (!Nav.Uri.Contains("id=" + t.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + t.Id, forceLoad: false); }
     private void SaveEdit()
     {
         if (editing == null || string.IsNullOrWhiteSpace(editing.Name)) return;
         editing.Developers = devInput.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList();
         editing.BaseTechnologies = _baseTechInput.Split(',', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList();
+        editing.Aliases = editAliases.Split('\n', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList();
+        editing.Enables = editEnables.Split('\n', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList();
+        editing.StoryHooks = editStoryHooks.Split('\n', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList();
         if (!isNew && originalName != editing.Name) Repo.Delete(originalName);
         Repo.Save(editing); editing = null; items = Repo.GetAll();
     }
@@ -107,4 +124,5 @@
     private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
     private void RebuildTags() { allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
     private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
+    private void OnRatingChanged(double value) { if (editing == null) return; editing.Rating = value; Repo.Save(editing); }
 }

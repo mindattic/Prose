@@ -10,14 +10,17 @@
     "tags": []
   },
   "connections": {
-    "adjacent_to": [],
+    "adjacent_to": ["Utah", "Underground Phoenix", "Free Peoples Republic", "New Mexico"],
     "exits": [],
     "tags": []
   },
   "tags": [
     "place",
     "outside",
-    "us-state"
+    "us-state",
+    "remnants",
+    "wasteland"
   ],
-  "related_entities": []
+  "related_entities": ["Underground Phoenix"],
+  "controllingCorponation": null
 }

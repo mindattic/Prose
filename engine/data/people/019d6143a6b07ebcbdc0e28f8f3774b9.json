@@ -1,5 +1,6 @@
 {
   "id": "019d6143a6b07ebcbdc0e28f8f3774b9",
+  "rating": 26.7,
   "type": "character",
   "name": "Mika Dalgaard",
   "aliases": [],
@@ -30,7 +31,11 @@
     "vocabulary": "",
     "cadence": "",
     "verbal_tics": [],
-    "example_lines": []
+    "example_lines": [],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [],
@@ -93,16 +98,13 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Model 9 'Payday'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Geartown"
-  ],
-  "district": "The Circuit",
   "physical_description": {
-    "heritage": "Scandinavian-Southeast Asian-East Asian blend: Northern European foundation (49.5%) with significant Southeast Asian (25.8%) and East Asian (24.7%) ancestry creating a striking pan-diaspora phenotype. The genetic mix produces warm-toned fair skin, prominent angular cheekbones with subtle monolid characteristics, and the geometric facial structure of multi-continental heritage—a living embodiment of the Ubiquitous Diaspora.",
+    "heritage": "Scandinavian-Southeast Asian-East Asian blend: Northern European foundation (49.5%) with significant Southeast Asian (25.8%) and East Asian (24.7%) ancestry creating a striking pan-diaspora phenotype. The genetic mix produces warm-toned fair skin, prominent angular cheekbones with subtle monolid characteristics, and the geometric facial structure of multi-continental heritage\u2014a living embodiment of the Ubiquitous Diaspora.",
     "height_cm": 182,
     "weight_kg": 89,
     "build": "Athletic and broad-shouldered with lean musculature; carries himself with the economical movement of someone used to confined spaces and quick exits",
@@ -110,29 +112,24 @@
     "hair_style": "Closely cropped fade with defined lines, maintained weekly",
     "hair_length": "Short",
     "eye_color": "Deep brown with slight amber undertone",
-    "skin_tone": "Luminous warm beige—Scandinavian fairness tempered and enriched by Southeast and East Asian genetics into a neutral-warm complexion that shifts between cool and warm across his features depending on light. Higher cheekbones warm more intensely; jaw and forehead retain cooler undertones. No single descriptor fits; the blend is the point.",
-    "complexion": "High, prominent angular cheekbones with subtle but distinct epicanthic fold marking Southeast and East Asian ancestry. Strong, defined jawline reflecting Northern European heritage. Facial structure carries geometric precision across the bridge—high planes at cheekbones softening toward a squared jaw. Five o'clock shadow is his default state. No facial hair beyond dark stubble. Small scar tissue above right eyebrow from old break. Skin shows weathering of someone in his forties—premature aging from stress and poor sleep cycles—despite being only 37.",
+    "skin_tone": "Luminous warm beige\u2014Scandinavian fairness tempered and enriched by Southeast and East Asian genetics into a neutral-warm complexion that shifts between cool and warm across his features depending on light. Higher cheekbones warm more intensely; jaw and forehead retain cooler undertones. No single descriptor fits; the blend is the point.",
+    "complexion": "High, prominent angular cheekbones with subtle but distinct epicanthic fold marking Southeast and East Asian ancestry. Strong, defined jawline reflecting Northern European heritage. Facial structure carries geometric precision across the bridge\u2014high planes at cheekbones softening toward a squared jaw. Five o\u0027clock shadow is his default state. No facial hair beyond dark stubble. Small scar tissue above right eyebrow from old break. Skin shows weathering of someone in his forties\u2014premature aging from stress and poor sleep cycles\u2014despite being only 37.",
     "distinguishing_marks": [
-      "Surgical scar running 8cm along right inner forearm, pale and old—consistent with augmentation removal or installation",
-      "Faded tattoo on left wrist: circuit board pattern in deep blue, partially covered by a newer overlay of Cyrillic characters (family name in his mother's script)",
+      "Surgical scar running 8cm along right inner forearm, pale and old\u2014consistent with augmentation removal or installation",
+      "Faded tattoo on left wrist: circuit board pattern in deep blue, partially covered by a newer overlay of Cyrillic characters (family name in his mother\u0027s script)",
       "Burn scar across left knuckles, about 3cm across, from an acetylene torch accident in his twenties"
     ],
-    "visible_augmentations": "Reinforced knuckles with barely-perceptible subdermal plating visible as faint silver lines across his hands when light catches them. Faint neural interface scarring at base of skull—suggests subcutaneous array. No obvious chrome limbs or LED optics; he operates in a tier where subtlety keeps you alive.",
-    "posture_movement": "Moves with deliberate economy—never wasted motion. Tends to keep his hands visible and relaxed, a practiced tell of someone used to tense negotiations. Favors his left side slightly. Leans against walls rather than sitting; always positions himself with sightlines to exits.",
-    "clothing_style": "Tier 3-4 pragmatist. Favors dark-colored utility jackets from mid-tier manufacturers (Kessler, Vertex) with reinforced pockets and hidden compartments. Wears matte-black tactical pants with cargo thigh pockets. Steel-toed boots, scuffed and practical. A worn leather jacket over everything—old money, inherited piece that's been repaired more than once. No jewelry except a simple titanium ring on his right ring finger (no wedding band). Clothes smell faintly of machine oil and cold tobacco."
+    "visible_augmentations": "Reinforced knuckles with barely-perceptible subdermal plating visible as faint silver lines across his hands when light catches them. Faint neural interface scarring at base of skull\u2014suggests subcutaneous array. No obvious chrome limbs or LED optics; he operates in a tier where subtlety keeps you alive.",
+    "posture_movement": "Moves with deliberate economy\u2014never wasted motion. Tends to keep his hands visible and relaxed, a practiced tell of someone used to tense negotiations. Favors his left side slightly. Leans against walls rather than sitting; always positions himself with sightlines to exits.",
+    "clothing_style": "Tier 3-4 pragmatist. Favors dark-colored utility jackets from mid-tier manufacturers (Kessler, Vertex) with reinforced pockets and hidden compartments. Wears matte-black tactical pants with cargo thigh pockets. Steel-toed boots, scuffed and practical. A worn leather jacket over everything\u2014old money, inherited piece that\u0027s been repaired more than once. No jewelry except a simple titanium ring on his right ring finger (no wedding band). Clothes smell faintly of machine oil and cold tobacco."
   },
-  "image_prompt": "Mika Dalgaard, 37-year-old neo-noir operative with mixed Northern European-Southeast Asian heritage. Warm beige skin with subtle monolid eyes and high prominent cheekbones blending Scandinavian and East Asian genetics. Dark brown hair with silver threading, closely cropped fade. Deep brown eyes with amber undertone. Five o'clock shadow, weathered face with surgical scar above right eyebrow. Athletic build, 182cm tall. Wears dark matte-black tactical pants, steel-toed scuffed boots, reinforced utility jacket, worn inherited leather jacket layered over top. Hands show faint subdermal silver plating across knuckles, burn scar on left knuckles, circuit board tattoo on wrist with Cyrillic overlay. Posture tense and economical—leaning against wall, positioned toward exit sightline. Faint neural interface scarring visible at base of skull. Dimly lit neo-noir setting, cool and warm lighting playing across his features. GLMZ, Great Lakes Metropolitan Zone. Film noir atmosphere. --ar 2:3 --v 6",
+  "image_prompt": "Mika Dalgaard, 37-year-old neo-noir operative with mixed Northern European-Southeast Asian heritage. Warm beige skin with subtle monolid eyes and high prominent cheekbones blending Scandinavian and East Asian genetics. Dark brown hair with silver threading, closely cropped fade. Deep brown eyes with amber undertone. Five o\u0027clock shadow, weathered face with surgical scar above right eyebrow. Athletic build, 182cm tall. Wears dark matte-black tactical pants, steel-toed scuffed boots, reinforced utility jacket, worn inherited leather jacket layered over top. Hands show faint subdermal silver plating across knuckles, burn scar on left knuckles, circuit board tattoo on wrist with Cyrillic overlay. Posture tense and economical\u2014leaning against wall, positioned toward exit sightline. Faint neural interface scarring visible at base of skull. Dimly lit neo-noir setting, cool and warm lighting playing across his features. GLMZ, Great Lakes Metropolitan Zone. Film noir atmosphere. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Northern European": 49.5,
     "Southeast Asian": 25.8,
     "East Asian": 24.7
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Northern European": {
       "Germanic": {
@@ -161,6 +158,5 @@
         "Korean": 24.7
       }
     }
-  },
-  "tier": "3"
+  }
 }

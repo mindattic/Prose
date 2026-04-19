@@ -10,7 +10,7 @@
   "age": 37,
   "status": "active",
   "location": "The Rookery — dense vertical housing, gang-controlled, near Pulaski and Chicago Ave",
-  "description": "Farid Chakraborty is lean and angular, all sharp edges and visible tension. At 37, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — geneware muscle density treatment — looks natural, hits like chrome — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a saboteur out of The Rookery, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nFarid Chakraborty has built a reputation on reliability rather than flash — he shows up, he delivers, he collects.",
+  "description": "Farid Chakraborty is lean and angular, all sharp edges and visible tension. At 37, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — geneware muscle density treatment — looks natural, hits like chrome — and he makes no effort to hide it.\n\nHe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a saboteur out of The Rookery, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nFarid Chakraborty has built a reputation on reliability rather than flash — he shows up, he delivers, he collects.",
   "psychology": {
     "facet_weights": {
       "wound": 0.47,
@@ -271,12 +271,11 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "The Shelf",
     "Chicago",
     "Slagworks Industrial",
     "Gravimetric Collapse Charge GCC-9"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Mixed global ancestry with South Asian plurality (40.3%), significant Northern European admixture (32.5%), complemented by Sub-Saharan African (14.3%), Middle Eastern (7.3%), and East Asian (5.6%) heritage. This genetic mosaic creates a phenotype of considerable complexity: warm medium-deep brown skin with golden undertones from the South Asian-Sub-Saharan foundation, enriched by Northern European influence that deepens rather than cools the overall tone. Facial structure reflects the angular definition of South Asian and East Asian bone geometry—high, prominent cheekbones, defined nasal bridge, eye-set that speaks to multiple continental sources—softened by the fuller features inherited from Sub-Saharan and Middle Eastern ancestry. The overall effect is a face that resists easy categorization, bearing the genetic signature of the Ubiquitous Diaspora.",
     "height_cm": 178,
@@ -295,7 +294,7 @@
     ],
     "visible_augmentations": "Chrome geneware musculature visible under the skin of forearms, shoulders, and upper chest — not bulky, but with an unnatural density and subtle metallic sheen under certain lighting. The musculature moves with mechanical precision that betrays its artificial nature. No visible neural ports, optical implants, or external chrome.",
     "posture_movement": "Moves with economical precision — no wasted motion. Stands with slight forward lean, shoulders loose but alert. Natural state appears to be coiled tension; even at rest, his body reads as ready to move. Eyes track exits and structural weak points instinctively.",
-    "clothing_style": "Tier 4-5 utilitarian. Dark-colored cargo pants with reinforced panels and hidden pockets for tools. Black or charcoal synthetic jacket with asymmetrical chest pockets and articulated shoulders — brands like Cerberus Tactical or unmarked knockoffs from the Shelf. Steel-toed work boots, scuffed and worn. No corpo branding, no gang colors. Clothing is chosen for function: durability, mobility, pockets for equipment. Everything fits close enough to move but loose enough to hide things."
+    "clothing_style": "Tier 4-5 utilitarian. Dark-colored cargo pants with reinforced panels and hidden pockets for tools. Black or charcoal synthetic jacket with asymmetrical chest pockets and articulated shoulders — brands like Cerberus Tactical or unmarked knockoffs from the Gray Zone. Steel-toed work boots, scuffed and worn. No corpo branding, no gang colors. Clothing is chosen for function: durability, mobility, pockets for equipment. Everything fits close enough to move but loose enough to hide things."
   },
   "image_prompt": "Farid Chakraborty, mixed-heritage saboteur, GLMZ. Warm medium-deep brown skin with golden undertones, angular South Asian-East Asian cheekbones softened by Sub-Saharan fullness, warm brown eyes tracking exits. Dark textured hair cropped short, sharp jawline. Lean 178cm frame with inhuman chrome geneware muscle definition visible under forearms and shoulders—metallic density betraying augmentation. Wearing black Cerberus Tactical cargo jacket with asymmetrical pockets, reinforced dark pants, scuffed steel-toed boots. Visible pale burn scars in grid pattern on inner right forearm, surgical scarring on sternum. Coiled posture, economical movement, alert stance. Great Lakes Metropolitan Zone neon-lit parking structure or rooftop at night, cool blue and amber lighting casting shadows across his face. Geneware musculature catching light with subtle metallic sheen. Mood: focused, dangerous precision, ready to move. --ar 2:3 --v 6",
   "genetic_ancestry": {

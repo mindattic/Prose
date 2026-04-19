@@ -7,16 +7,16 @@
   "category": "electronics",
   "subcategory": "signal booster",
   "manufacturer": "GridLink Communications",
-  "description": "Portable device that amplifies mesh network signals in dead zones. Plugs into any power source and extends mesh network range by 50 meters. Essential in the Shelf where network infrastructure has gaps.",
+  "description": "Portable device that amplifies mesh network signals in dead zones. Plugs into any power source and extends mesh network range by 50 meters. Essential in the Gray Zone where network infrastructure has gaps.",
   "flavor_profile": "Small black box, single LED indicator, hums when active, gets warm",
   "tier_availability": "Tier 1-3",
   "price": "Φ15.00",
   "popularity_rank": 8,
   "slogan": "Stay connected.",
-  "cultural_context": "Mesh network dead zones in the Shelf are social isolation zones — no network means no BCI updates, no communications, no access to services. MeshBoost devices are community infrastructure. People pool money to buy them and mount them in communal spaces.",
+  "cultural_context": "Mesh network dead zones in the Gray Zone are social isolation zones — no network means no BCI updates, no communications, no access to services. MeshBoost devices are community infrastructure. People pool money to buy them and mount them in communal spaces.",
   "story_hooks": [
-    "MeshBoost devices can be modified to create private, unmonitored network nodes — a capability that GridLink knows about and hasn't patched because the Shelf market depends on it.",
-    "The power draw of clustered MeshBoost devices has caused electrical fires in Shelf buildings with already-overtaxed wiring."
+    "MeshBoost devices can be modified to create private, unmonitored network nodes — a capability that GridLink knows about and hasn't patched because the Gray Zone market depends on it.",
+    "The power draw of clustered MeshBoost devices has caused electrical fires in the Gray Zone buildings with already-overtaxed wiring."
   ],
   "tags": [
     "electronics",
@@ -24,13 +24,10 @@
     "consumer_good",
     "mesh_network",
     "booster",
-    "shelf",
     "tier_1",
     "tier_2",
     "tier_3"
   ],
   "parent_corponation": "",
-  "related_entities": [
-    "The Shelf"
-  ]
+  "related_entities": []
 }

@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa3073eeb78a6b572afe94c9",
+  "rating": 70,
   "name": "Whispermouth",
   "type": "elf",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Monitors security communication channels and, when sweep operations are detected, triggers a distinctive haptic pattern in augments within the target zone.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 31,
-  "location": "The Shelf, The Narrows",
+  "location": "the Gray Zone, The Narrows",
   "dti_rating": 0,
   "story_hooks": [
     "The vibration pattern is traced to a specific Wishing Well member's heartbeat rhythm — the warnings are literally someone's pulse"
@@ -26,14 +27,9 @@
     "e.l.f.",
     "war",
     "augment",
-    "shelf",
     "narrows",
     "sentient"
   ],
-  "related_entities": [
-    "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
-    "The Narrows",
-    "The Resonance Chamber",
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

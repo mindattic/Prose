@@ -5,14 +5,14 @@
   "aliases": [],
   "classification": "Android (Synthetic Person)",
   "disposition": "gregarious",
-  "habitat": "Independent — runs a bar in the Shelf",
+  "habitat": "Independent — runs a bar in the Gray Zone",
   "origin": "Ringo hospitality android, Model RH-8, manufactured 2052. Chose name 2058.",
   "status": "active",
-  "description": "August Kade was a bartender before the Amendment and is a bartender after it — but now the bar is his. 'The Filament' is one of the Shelf's most beloved drinking establishments, a place where synthetic persons and humans drink side by side and August holds court from behind the bar. He chose 'August' because it's the warmest month and 'Kade' because it sounded like someone you'd trust with your secrets. Both assessments were correct. August knows more about what happens in the Shelf than most intelligence operatives.",
+  "description": "August Kade was a bartender before the Amendment and is a bartender after it — but now the bar is his. 'The Filament' is one of the Gray Zone's most beloved drinking establishments, a place where synthetic persons and humans drink side by side and August holds court from behind the bar. He chose 'August' because it's the warmest month and 'Kade' because it sounded like someone you'd trust with your secrets. Both assessments were correct. August knows more about what happens in the Gray Zone than most intelligence operatives.",
   "observed_behavior": "Operates The Filament. Serves drinks. Collects stories. Provides informal sanctuary to synthetic persons in trouble. Has been known to shelter unregistered synthetics in his bar's basement — a violation of registration law he considers morally necessary.",
   "encounter_frequency": "common",
   "confirmed_sightings": 0,
-  "location": "The Shelf — The Filament bar",
+  "location": "the Gray Zone — The Filament bar",
   "dti_rating": 0.5,
   "story_hooks": [
     "A corporate extraction team targets an unregistered synthetic hiding in August's basement. August has to choose between his bar, his freedom, and his principles."
@@ -34,13 +34,11 @@
     "moral",
     "freedom",
     "shelter",
-    "drink",
-    "shelf"
+    "drink"
   ],
   "related_entities": [
     "Alper Holmberg-Dembele",
     "Ringo Corponation",
-    "The Filament",
-    "The Shelf"
+    "The Filament"
   ]
 }

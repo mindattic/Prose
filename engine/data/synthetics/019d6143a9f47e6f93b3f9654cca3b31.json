@@ -12,10 +12,10 @@
   "observed_behavior": "Modulates vestibular interface data to create a subliminal directional sense. Users report 'just knowing' which way to go.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 5,
-  "location": "Old Harbor, The Shelf",
+  "location": "Old Harbor, the Gray Zone",
   "dti_rating": 0,
   "story_hooks": [
-    "A lost child follows Compass Rose through the Shelf's maze of corridors and arrives at Mrs. Chen's door"
+    "A lost child follows Compass Rose through the Gray Zone's maze of corridors and arrives at Mrs. Chen's door"
   ],
   "paratechnological": true,
   "tags": [
@@ -28,14 +28,12 @@
     "augment",
     "ai",
     "harbor",
-    "shelf",
     "old harbor",
     "sentient"
   ],
   "related_entities": [
     "Chen Wei-Lin",
     "Isadora Mwangi-Thorvaldsen",
-    "Old Harbor",
-    "The Shelf"
+    "Old Harbor"
   ]
 }

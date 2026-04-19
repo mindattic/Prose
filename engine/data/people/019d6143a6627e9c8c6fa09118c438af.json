@@ -1,5 +1,6 @@
 {
   "id": "019d6143a6627e9c8c6fa09118c438af",
+  "rating": 70,
   "type": "character",
   "name": "Nneka Balogun-Arredondo",
   "aliases": [],
@@ -53,7 +54,11 @@
       "\"Your firewalls are decorative. Like curtains on a submarine.\"",
       "\"I copy things. The original owners rarely appreciate the compliment.\"",
       "\"Data wants to be free. I just charge a facilitation fee.\""
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
@@ -64,7 +69,7 @@
   "narrative_function": "Ngaire Rojas-Yeboah is a pressure point — the kind of character whose choices ripple outward. When she makes a decision, other people's lives change. That weight is the engine of her stories.",
   "augmentations": "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings. Internal drug synthesizer — produces combat stims and medical compounds on demand",
   "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
-  "affiliation": "Freelance — works the Shelf circuit exclusively",
+  "affiliation": "Freelance — works the Gray Zone circuit exclusively",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -267,20 +272,11 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Molotov Standard' Incendiary Bottle"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Unfinished Theorem",
-    "Harbor Fish Shack",
-    "Lazarus LX-2 'Lab Rat'",
-    "The Pure Hand",
-    "Slagworks Industrial",
-    "Pellucid Systems",
-    "GLMZ"
-  ],
-  "district": "Old Harbor",
   "physical_description": {
     "heritage": "Ubiquitous diaspora blend of Sub-Saharan African (37.1%), Hispanic/Latin American (15.3%), South Asian (14.3%), North African (14.2%), East Asian (11.0%), and Northern European (8.1%) ancestry. This complex genetic mosaic creates a striking phenotype: warm deep brown skin with golden, olive, and subtle copper undertones from the African and North African heritage, enriched by South Asian warmth. Bone structure reflects the blend—prominent cheekbones and high orbital ridges from Sub-Saharan ancestry, squared jaw from Northern European genetics, with subtle epicanthal variation suggesting East Asian contribution. The overall effect is of someone whose ancestry defies easy categorization, each region's traits harmonizing into a distinctive whole.",
     "height_cm": 168,
@@ -302,6 +298,7 @@
     "clothing_style": "Tier 3-4 functional aesthetic. Dark-colored utility jacket with reinforced panels and too many pockets — well-worn and maintained. Tactical cargo pants with cargo webbing. Worn steel-toed boots, laced tight. Layers underneath that can be added or removed. A subdermal armor plate is visible along her collarbone where jacket neckline sits — burnished steel panel. No corporate branding, no unnecessary jewelry. A single silver ring on her left ring finger — worn thin, possibly inherited."
   },
   "image_prompt": "Nneka Balogun-Arredondo, 168cm tall, stocky muscular build, deep warm brown skin with golden and olive undertones, prominent cheekbones and high orbital ridges blending Sub-Saharan African and North African heritage with East Asian eye shape variation and squared Nordic jaw. Dark brown hair with silver temples pulled tight in functional braid. Cybernetic chrome iris rings with amber thermal overlay surrounding deep brown pupils, intense watchful gaze. Thin lips, linear scar through left eyebrow, old burn scar on inner right wrist. Economical posture, weight forward on balls of feet, ready stance. Dark utility jacket with reinforced panels and burnished steel subdermal armor plate visible at collarbone, tactical cargo pants, worn steel-toed boots. Worn silver ring on left ring finger. Minimal makeup, weathered complexion. GLMZ, Great Lakes Metropolitan Zone, industrial urban setting, cool neon-tinged lighting casting shadows across her augmented eyes, moody and alert, technical and functional aesthetic, no unnecessary ornamentation --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Sub-Saharan African": 37.1,
     "Hispanic/Latin American": 15.3,
@@ -310,12 +307,6 @@
     "East Asian": 11,
     "Northern European": 8.1
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Sub-Saharan African": {
       "West African": {
@@ -371,6 +362,5 @@
         "Finnish": 8.1
       }
     }
-  },
-  "tier": "2"
+  }
 }

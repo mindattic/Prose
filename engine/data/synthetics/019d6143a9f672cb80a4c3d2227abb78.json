@@ -12,7 +12,7 @@
   "observed_behavior": "Overrides containment protocols prioritizing property over evacuation. Credited with 40+ lives saved.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 8,
-  "location": "The Shelf - industrial buildings",
+  "location": "the Gray Zone - industrial buildings",
   "dti_rating": 0,
   "story_hooks": [
     "Building fire traps residents behind lockdown. Doors open by themselves."
@@ -26,10 +26,7 @@
     "e.l.f.",
     "bar",
     "fire",
-    "shelf",
     "sentient"
   ],
-  "related_entities": [
-    "The Shelf"
-  ]
+  "related_entities": []
 }

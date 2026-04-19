@@ -18,11 +18,11 @@
   "opportunities": [],
   "story_hooks": [],
   "connections": {
-    "adjacent_to": [],
+    "adjacent_to": ["Milwaukee Core"],
     "exits": [],
     "tags": []
   },
-  "frequented_by": [],
+  "frequented_by": ["Kwame Eriksson-Nakamura"],
   "notable_locations": [],
   "coordinates": {
     "lat": 43.0338,
@@ -37,5 +37,7 @@
     "circuit",
     "milwaukee"
   ],
-  "related_entities": []
+  "related_entities": ["Kwame Eriksson-Nakamura", "Hex Grid"],
+  "zone": "Z8",
+  "controllingCorponation": null
 }

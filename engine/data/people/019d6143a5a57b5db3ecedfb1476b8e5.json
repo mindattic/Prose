@@ -9,8 +9,8 @@
   "role": "Retired battlefield medic (Corporate Wars), now raises two grandchildren on UBC stipend",
   "age": 69,
   "status": "active",
-  "location": "The Shelf, Unit 14-F, Sublevel 3, near sub-level access near Dearborn and Jackson",
-  "description": "Vega Guerrero is compact and precise in the way of someone who learned to work in confined spaces under pressure — her movements economical, her hands still surgeon-steady despite the arthritis she manages with black-market anti-inflammatories. She has warm amber-brown skin and close-cropped natural hair going salt-and-pepper, and her right eye is a replacement — a cheap ocular from a Shelf vendor with an iris that shifts between honey and pale gold depending on the light, giving her a slightly uncanny asymmetry she has stopped noticing. A faded Arcturus Medical Corps tattoo runs the inside of her left wrist, partially obscured by a beaded bracelet her granddaughter made.\n\nShe is not soft. She is kind, which is different. She has the manner of someone who has triaged too many bodies to waste energy on performed warmth, and she offers directness as a form of respect. She laughs loudly and without warning. She will tell you exactly what she thinks is wrong with you — medically or otherwise — and follow it immediately with an offer of food. The Shelf neighbors bring her their injuries, their medication questions, their expired prescriptions they're hoping she can identify. She helps when she can and turns no one away empty-handed.",
+  "location": "the Gray Zone, Unit 14-F, Sublevel 3, near sub-level access near Dearborn and Jackson",
+  "description": "Vega Guerrero is compact and precise in the way of someone who learned to work in confined spaces under pressure — her movements economical, her hands still surgeon-steady despite the arthritis she manages with black-market anti-inflammatories. She has warm amber-brown skin and close-cropped natural hair going salt-and-pepper, and her right eye is a replacement — a cheap ocular from a the Gray Zone vendor with an iris that shifts between honey and pale gold depending on the light, giving her a slightly uncanny asymmetry she has stopped noticing. A faded Arcturus Medical Corps tattoo runs the inside of her left wrist, partially obscured by a beaded bracelet her granddaughter made.\n\nShe is not soft. She is kind, which is different. She has the manner of someone who has triaged too many bodies to waste energy on performed warmth, and she offers directness as a form of respect. She laughs loudly and without warning. She will tell you exactly what she thinks is wrong with you — medically or otherwise — and follow it immediately with an offer of food. the Gray Zone neighbors bring her their injuries, their medication questions, their expired prescriptions they're hoping she can identify. She helps when she can and turns no one away empty-handed.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -54,14 +54,14 @@
   },
   "relationships": [],
   "story_hooks": [
-    "Okoro, her nine-year-old grandson, has been approached by a Shelf gang for recruitment and she has noticed the signs but doesn't know how to reach him",
+    "Okoro, her nine-year-old grandson, has been approached by a the Gray Zone gang for recruitment and she has noticed the signs but doesn't know how to reach him",
     "An Arcturus legal team has contacted her about the complaint she filed — not to address it, but to demand return of 'classified field documents' she supposedly took, which she did not take (but the chip in the herb pot might be what they're actually looking for)",
     "A neighbor's child has a condition she recognizes from battlefield exposure to a particular Arcturus weapons system, and she's trying to figure out who else has been affected and whether it was deliberate"
   ],
-  "narrative_function": "Local color, impromptu medical resource, war veteran perspective, emotional anchor for Shelf community stories; can provide information on Corporate Wars from ground level",
+  "narrative_function": "Local color, impromptu medical resource, war veteran perspective, emotional anchor for the Gray Zone community stories; can provide information on Corporate Wars from ground level",
   "augmentations": "Replacement right eye (cheap commercial ocular, honey-gold iris); subdermal med-monitor patch on upper chest (monitors her own vitals, installed herself from salvaged parts)",
   "daily_life": "Gets the children to school by 07:15, spends mornings on her tiny roof garden tending medicinal herbs, afternoons doing informal medical consultations for neighbors; evenings are for the children and a single glass of fermented grain spirit she allows herself.",
-  "affiliation": "Arcturus Veterans Welfare Registry (lapsed benefits); Shelf informal care network; raising grandchildren Okoro (age 9) and Yemisi (age 7)",
+  "affiliation": "Arcturus Veterans Welfare Registry (lapsed benefits); the Gray Zone informal care network; raising grandchildren Okoro (age 9) and Yemisi (age 7)",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -100,7 +100,7 @@
       "caregiver",
       "corporate whistleblower",
       "community healer",
-      "shelf resident"
+      "Gray Zone resident"
     ]
   },
   "behavioral": {
@@ -181,7 +181,7 @@
     "War Weary": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -223,7 +223,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Returns to GLMZ; moves to The Shelf",
+      "event": "Returns to GLMZ; moves to the Gray Zone",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -248,7 +248,6 @@
     "Volkov-Saito Precision VS-40 'Magistrate'"
   ],
   "related_entities": [
-    "The Shelf",
     "Arcturus Defense Solutions",
     "Pressure Drop",
     "Dearborn Forge",

@@ -3,7 +3,7 @@
   "name": "Varsen ChemBarrier Pull-On Boot",
   "type": "apparel",
   "category": "footwear",
-  "description": "A tall pull-on boot reaching mid-calf, molded from a single piece of seamless yellow-green chemical-resistant polymer. No seams means no weak points — the entire boot is one continuous shell with an interior foam liner. A compression collar at the top seals against hazmat suit legs. Ugly, functional, and instantly recognizable on anyone working the Shelf's industrial runoff zones or Tier 3 processing plants.",
+  "description": "A tall pull-on boot reaching mid-calf, molded from a single piece of seamless yellow-green chemical-resistant polymer. No seams means no weak points — the entire boot is one continuous shell with an interior foam liner. A compression collar at the top seals against hazmat suit legs. Ugly, functional, and instantly recognizable on anyone working the Gray Zone's industrial runoff zones or Tier 3 processing plants.",
   "tier_association": "Tier 2",
   "materials": [
     "seamless chemical-resistant polymer shell",
@@ -16,7 +16,7 @@
   "worn_by": [
     "waste processing workers",
     "chemical plant laborers",
-    "Shelf cleanup crews",
+    "the Gray Zone cleanup crews",
     "biohazard response contractors"
   ],
   "manufacturer": "Varsen Safety Products",
@@ -40,8 +40,7 @@
   "related_entities": [
     "Aphelion",
     "Arcturus Exo-Runner Frame",
-    "Lazarus HZ-4 'Cleanroom'",
-    "The Shelf"
+    "Lazarus HZ-4 'Cleanroom'"
   ],
   "physical_description": {
     "visual_profile": "Stark, industrial silhouette rising to mid-calf. The boot reads as a single molded form—no visible seams, joints, or construction lines. The yellow-green luminescent polymer catches light unnaturally, making the wearer's feet immediately visible in low-light industrial zones. Blocky, utilitarian, almost alien in its seamless perfection.",
@@ -60,7 +59,7 @@
       "Zero aesthetic consideration—pure function"
     ],
     "tier_indicator": "Tier 3 functional. Affordable safety equipment for industrial workers; signals hazmat-zone employment",
-    "cultural_context": "Worn by Shelf workers, processing plant employees, contamination cleanup crews, and environmental remediation teams. Marks the wearer as someone who works in the GLMZ's toxic sectors—respected for toughness, pitied for the job. Visible augmentation of baseline human vulnerability.",
+    "cultural_context": "Worn by the Gray Zone workers, processing plant employees, contamination cleanup crews, and environmental remediation teams. Marks the wearer as someone who works in the GLMZ's toxic sectors—respected for toughness, pitied for the job. Visible augmentation of baseline human vulnerability.",
     "condition_typical": "Pristine when new; quickly accumulates chemical stains, discoloration, and micro-scarring from corrosive exposure. Most worn boots show faded patches on the ankle and toe box where contact is heaviest. Interior foam may compress unevenly over time, causing fit degradation."
   },
   "image_prompt": "Varsen ChemBarrier Pull-On Boot photographed on a Tier 3 industrial worker's leg, standing in a dimly lit processing plant or contaminated warehouse. The luminescent yellow-green polymer glows unnaturally under neon sodium vapor lighting, casting sickly reflections on oil-stained concrete. Close-up of the seamless molded construction and compression collar seal. Moody, cold color grading with chemical-spill haze in the background. Dark metal grating, warning tape, dripping condensation. The boot dominates the frame—utilitarian and slightly menacing. --ar 2:3 --v 6",

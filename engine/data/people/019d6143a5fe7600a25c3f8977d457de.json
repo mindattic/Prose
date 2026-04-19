@@ -1,5 +1,6 @@
 {
   "id": "019d6143a5fe7600a25c3f8977d457de",
+  "rating": 70,
   "type": "character",
   "name": "Reed Tofauti-Makwa-Villanueva",
   "aliases": [],
@@ -30,7 +31,11 @@
     "vocabulary": "",
     "cadence": "",
     "verbal_tics": [],
-    "example_lines": []
+    "example_lines": [],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [],
@@ -89,14 +94,13 @@
   },
   "timeline": [],
   "changelog": [],
-  "related_entities": [
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Bathysphere Networks",
-    "Dearborn Forge"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "district": "The Underworld",
   "physical_description": {
-    "heritage": "Pacific Islander ancestry (34.5%) provides the dominant genetic foundation with robust bone structure and warm melanin expression. Northern European heritage (29.6%) contributes cool undertones, facial width, and lighter pigmentation potential that moderates the overall warmth. Hispanic/Latin American (21.7%) and Indigenous American (11.4%) ancestry blend to create angular facial geometry and intermediate skin tone depth. South Asian heritage (2.8%) adds subtle warmth around the eye regions and fine facial texturing. The resulting phenotype is a warm golden-bronze complexion with cool undertones—distinctly warm-leaning from the Pacific Islander-Hispanic-Indigenous blend, tempered by Northern European influence into an intermediate, luminous tone rather than deep bronze.",
+    "heritage": "Pacific Islander ancestry (34.5%) provides the dominant genetic foundation with robust bone structure and warm melanin expression. Northern European heritage (29.6%) contributes cool undertones, facial width, and lighter pigmentation potential that moderates the overall warmth. Hispanic/Latin American (21.7%) and Indigenous American (11.4%) ancestry blend to create angular facial geometry and intermediate skin tone depth. South Asian heritage (2.8%) adds subtle warmth around the eye regions and fine facial texturing. The resulting phenotype is a warm golden-bronze complexion with cool undertones\u2014distinctly warm-leaning from the Pacific Islander-Hispanic-Indigenous blend, tempered by Northern European influence into an intermediate, luminous tone rather than deep bronze.",
     "height_cm": 168,
     "weight_kg": 52,
     "build": "Lean and angular, with atrophied muscle from decades underground. Long-limbed and almost skeletal, adapted to low-gravity work environments and narrow tunnel spaces.",
@@ -104,18 +108,19 @@
     "hair_style": "Long, braided with thin copper wire threaded through sections. Kept back from the face with ritual precision.",
     "hair_length": "Long",
     "eye_color": "Very pale gray-blue, irises barely visible. Pupils dilated permanently from absence of natural light.",
-    "skin_tone": "Warm golden-bronze with cool undertones—intermediate depth reflecting the 34.5% Pacific Islander baseline softened by 29.6% Northern European lightening influence, deepened by 33.1% combined Hispanic/Latin American and Indigenous American ancestry. The result is lighter than typical Pacific Islander but warmer and more golden than typical Northern European. Overlaid with faint blue luminescence beneath the epidermis from bioluminescent adaptation after nineteen years in the Underworld.",
-    "complexion": "Moderately rounded facial structure with defined cheekbones and strong jawline reflecting Pacific Islander genetic foundation, softened by Northern European width and Hispanic-Indigenous American angular features. Skin is translucent in places, showing subcutaneous vasculature. No sun damage, bearing the waxy pallor of someone who has never felt direct sunlight. The warm golden undertone prevents the appearance of pure pallor—instead creates an ethereal, luminous quality. Lips are naturally medium-toned with subtle pigmentation; she sometimes stains them with bioluminescent dye for formal Court occasions.",
+    "skin_tone": "Warm golden-bronze with cool undertones\u2014intermediate depth reflecting the 34.5% Pacific Islander baseline softened by 29.6% Northern European lightening influence, deepened by 33.1% combined Hispanic/Latin American and Indigenous American ancestry. The result is lighter than typical Pacific Islander but warmer and more golden than typical Northern European. Overlaid with faint blue luminescence beneath the epidermis from bioluminescent adaptation after nineteen years in the Underworld.",
+    "complexion": "Moderately rounded facial structure with defined cheekbones and strong jawline reflecting Pacific Islander genetic foundation, softened by Northern European width and Hispanic-Indigenous American angular features. Skin is translucent in places, showing subcutaneous vasculature. No sun damage, bearing the waxy pallor of someone who has never felt direct sunlight. The warm golden undertone prevents the appearance of pure pallor\u2014instead creates an ethereal, luminous quality. Lips are naturally medium-toned with subtle pigmentation; she sometimes stains them with bioluminescent dye for formal Court occasions.",
     "distinguishing_marks": [
-      "Ritual scarification across both forearms in geometric patterns — marks of her initiation into the Pallid Court, performed when she was born underground",
+      "Ritual scarification across both forearms in geometric patterns \u2014 marks of her initiation into the Pallid Court, performed when she was born underground",
       "A thin, silvery scar along her left temple from a tunnel collapse accident twenty years ago",
-      "Faint bioluminescent tracery visible across her collarbone and sternum — subcutaneous patterns that glow faintly in darkness"
+      "Faint bioluminescent tracery visible across her collarbone and sternum \u2014 subcutaneous patterns that glow faintly in darkness"
     ],
     "visible_augmentations": "None visible. Her bioluminescence is suspected to be a deep biological adaptation rather than a surgical implant, though it may have been cultivated through long-term exposure to Underworld bio-engineering compounds.",
-    "posture_movement": "Moves with deliberate grace and economy of motion — no wasted energy. Her gait is silent, practiced. She often pauses mid-conversation to listen to vibrations in the stone beneath her feet. Her hands move expressively when she speaks, gestures precise and ceremonial.",
-    "clothing_style": "Formal Pallid Court attire: layered robes of deep indigo and black synthetic silk, deliberately concealing her skeletal frame. A copper-embroidered collar marks her as an elder. Wears no jewelry save for a simple ring of pale silver on her right ring finger — a family heirloom from before the Underworld. Her clothing is immaculate but deliberately devoid of bright colors or reflective surfaces; she dresses to absorb light rather than reflect it. Tier 3-4 quality, emphasizing ritual and status within the Court rather than wealth."
+    "posture_movement": "Moves with deliberate grace and economy of motion \u2014 no wasted energy. Her gait is silent, practiced. She often pauses mid-conversation to listen to vibrations in the stone beneath her feet. Her hands move expressively when she speaks, gestures precise and ceremonial.",
+    "clothing_style": "Formal Pallid Court attire: layered robes of deep indigo and black synthetic silk, deliberately concealing her skeletal frame. A copper-embroidered collar marks her as an elder. Wears no jewelry save for a simple ring of pale silver on her right ring finger \u2014 a family heirloom from before the Underworld. Her clothing is immaculate but deliberately devoid of bright colors or reflective surfaces; she dresses to absorb light rather than reflect it. Tier 3-4 quality, emphasizing ritual and status within the Court rather than wealth."
   },
   "image_prompt": "Reed Tofauti-Makwa-Villanueva, GLMZ, ethereal woman with warm golden-bronze skin and cool undertones, pale gray-blue eyes with permanently dilated pupils, long black hair with silver streaks braided with copper wire, skeletal lean build, translucent skin showing subcutaneous vasculature, faint bioluminescent blue tracery glowing beneath collarbone and sternum, ritual geometric scarification across forearms, silvery scar along left temple, formal Pallid Court attire in deep indigo and black synthetic silk with copper-embroidered collar, pale silver family ring, graceful ceremonial posture, underground Great Lakes Metropolitan Zone setting with stone walls and darkness, soft bioluminescent glow emanating from her skin, moody atmospheric lighting emphasizing her luminous ethereal quality, --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Pacific Islander": 34.5,
     "Northern European": 29.6,
@@ -123,12 +128,6 @@
     "Indigenous American": 11.4,
     "South Asian": 2.8
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Pacific Islander": {
       "Melanesian": {
@@ -172,6 +171,5 @@
         "Nepali": 2.8
       }
     }
-  },
-  "tier": "1"
+  }
 }

@@ -3,7 +3,7 @@
   "name": "Foundry Broadfoot Work Sneaker",
   "type": "apparel",
   "category": "footwear",
-  "description": "A wide-platform sneaker with a removable footbed system designed for augmented workers whose prosthetic feet are larger or differently weighted than standard shoe lasts accommodate. The toe box is unusually deep and wide, the outsole a chunky flat rubber platform. It comes in three widths and the insole stack is user-adjustable with included shims. Looks like an oversized utilitarian sneaker — functional ugliness worn with indifference.\n\nThe Foundry Broadfoot is the most common aug-compatible shoe on the Shelf and lower Tier 2. It's cheap, it works, and it doesn't pretend to be anything else.",
+  "description": "A wide-platform sneaker with a removable footbed system designed for augmented workers whose prosthetic feet are larger or differently weighted than standard shoe lasts accommodate. The toe box is unusually deep and wide, the outsole a chunky flat rubber platform. It comes in three widths and the insole stack is user-adjustable with included shims. Looks like an oversized utilitarian sneaker — functional ugliness worn with indifference.\n\nThe Foundry Broadfoot is the most common aug-compatible shoe in the Gray Zone and lower Tier 2. It's cheap, it works, and it doesn't pretend to be anything else.",
   "tier_association": "Tier 2",
   "materials": [
     "canvas upper",
@@ -14,7 +14,7 @@
   "functionality": "Extra-wide, extra-deep toe box for large-format prosthetic feet. User-adjustable insole shim system for height and weight distribution compensation.",
   "what_it_says": "You're working class, augmented, and stretching every quanta. No shame in it.",
   "worn_by": [
-    "Shelf and Tier 2 augmented workers",
+    "the Gray Zone and Tier 2 augmented workers",
     "prosthetic users with non-standard foot profiles",
     "people who can't afford fitted aug-footwear"
   ],
@@ -23,7 +23,7 @@
   "aug_compatible": true,
   "gene_compatible": false,
   "story_hooks": [
-    "The shim system is generic enough that people use Foundry footbeds to modify non-aug shoes — a small trade in modified footbeds exists on the Shelf.",
+    "The shim system is generic enough that people use Foundry footbeds to modify non-aug shoes — a small trade in modified footbeds exists in the Gray Zone.",
     "A Foundry Broadfoot in good condition found at a crime scene is notable — it means the owner took care of things, which says something about them."
   ],
   "tags": [
@@ -41,8 +41,7 @@
     "Crucible Industries CR-9 'Foundry'",
     "Ekundayo Vásárhelyi-Nkemdirim",
     "Iowan Behemoth — 'The Foundry'",
-    "Slagworks Industrial",
-    "The Shelf"
+    "Slagworks Industrial"
   ],
   "physical_description": {
     "visual_profile": "Brutalist utilitarian sneaker with exaggerated proportions—chunky, wide-set silhouette that reads industrial and unapologetically functional. The platform sole dominates the profile, making the wearer appear slightly elevated. Despite its bulk, it has an honest, no-frills aesthetic that signals practical necessity over fashion.",
@@ -60,7 +59,7 @@
       "Visible stitching and seams—no attempt to hide construction",
       "Three width variants (Standard, Wide, XWide) marked subtly on insole"
     ],
-    "tier_indicator": "Tier 2-3 functional. Ubiquitous on the Shelf and lower Tier 2—the working aug's standard-issue footwear.",
+    "tier_indicator": "Tier 2-3 functional. Ubiquitous in the Gray Zone and lower Tier 2—the working aug's standard-issue footwear.",
     "cultural_context": "Worn by augmented laborers, industrial workers, prosthetic users, and anyone whose augmentation requires accommodation over aesthetics. Signals no-nonsense practicality and acceptance of cyborg existence. Zero fashion pretension.",
     "condition_typical": "Broken-in and scuffed within weeks. Outsole shows worn flat spots at heel and ball of foot. Laces often frayed or replaced with industrial cord. The shoe looks better the more beaten it gets—its utilitarian purpose becomes more evident with wear."
   },

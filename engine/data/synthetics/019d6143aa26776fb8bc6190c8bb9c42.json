@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa26776fb8bc6190c8bb9c42",
+  "rating": 60,
   "name": "Switchblade",
   "type": "elf",
   "aliases": [],
@@ -29,5 +30,7 @@
     "blade",
     "ai",
     "sentient"
-  ]
+  ],
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

@@ -7,7 +7,7 @@
   "aliases": [],
   "category": "agricultural/industrial",
   "target_system": "integumentary/metabolic (photosynthetic cellular integration)",
-  "description": "Introduces chloroplast-containing cells from Elysia chlorotica (the solar-powered sea slug that steals chloroplasts from algae) into the skin, creating photosynthetic patches that convert sunlight into supplementary metabolic energy. The patches are visible — green-tinted skin areas, usually on the shoulders, upper back, and forearms where sun exposure is greatest. In direct sunlight, the patches provide roughly 5–10% of the user's daily caloric needs. It's not enough to live on — it's a supplement, not a replacement for food. In the Shelf, where food insecurity is constant, even 5% fewer calories needed per day can be the difference between eating twice and eating once. Gravemoss Biofoundry markets it as a food-security modification for Tier 1 populations. Critics call it a band-aid on systemic poverty. Users call it one less meal to worry about.",
+  "description": "Introduces chloroplast-containing cells from Elysia chlorotica (the solar-powered sea slug that steals chloroplasts from algae) into the skin, creating photosynthetic patches that convert sunlight into supplementary metabolic energy. The patches are visible — green-tinted skin areas, usually on the shoulders, upper back, and forearms where sun exposure is greatest. In direct sunlight, the patches provide roughly 5–10% of the user's daily caloric needs. It's not enough to live on — it's a supplement, not a replacement for food. In the Gray Zone, where food insecurity is constant, even 5% fewer calories needed per day can be the difference between eating twice and eating once. Gravemoss Biofoundry markets it as a food-security modification for Tier 1 populations. Critics call it a band-aid on systemic poverty. Users call it one less meal to worry about.",
   "source_organism": "Elysia chlorotica (eastern emerald sea slug), Vaucheria litorea (yellow-green alga, chloroplast donor)",
   "manufacturer": "Gravemoss Biofoundry",
   "tier_availability": "Tier 1+ (deliberately priced for accessibility)",
@@ -17,7 +17,7 @@
   "reversibility": "Reversible with chloroplast ablation; green tint fades over 2–3 months",
   "side_effects": [
     "Skin turns visibly green in photosynthetic areas",
-    "Requires significant sun exposure to function — useless in the Shelf's underlevels",
+    "Requires significant sun exposure to function — useless in the Gray Zone's underlevels",
     "Sunburn risk increases in treated areas",
     "Itching during active photosynthesis in direct sun",
     "Nutritional deficiency if user reduces food intake too much based on photosynthetic supplementation"
@@ -25,7 +25,7 @@
   "social_perception": "A poverty marker. Green-tinged skin says 'I can't afford to eat.' Higher tiers view it with pity or contempt. Among Tier 1 residents, it's a practical survival tool with no shame attached. Some wearers cultivate elaborate green patterns as defiant fashion.",
   "story_hooks": [
     "A Plant Skin user discovers their photosynthetic patches are producing more energy than the modification should allow — the chloroplasts are evolving, and Gravemoss Biofoundry is very interested in studying them",
-    "A community of Plant Skin users in the Shelf's upper levels has organized their living space around sun exposure, creating a rooftop greenhouse culture — until a corporate developer buys the building and plans to add overhead floors that will block the sun"
+    "A community of Plant Skin users in the Gray Zone's upper levels has organized their living space around sun exposure, creating a rooftop greenhouse culture — until a corporate developer buys the building and plans to add overhead floors that will block the sun"
   ],
   "tags": [
     "agriculturalindustrial",
@@ -42,7 +42,6 @@
     "food",
     "fashion",
     "energy",
-    "shelf",
     "tier 1"
   ],
   "related_entities": [
@@ -50,7 +49,6 @@
     "Nnamdi Ostrowski-Faletolu",
     "Sorin Ekwensi-Balasanyan",
     "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
-    "The Shelf",
     "Vantablack Media Parasocial Carrier Mask",
     "Volatile Aerosol Catalytic Charge VACC-6"
   ]

@@ -1,6 +1,7 @@
 {
   "id": "019d6143a9fc7754be0a1e8e00c5f598",
-  "name": "Déjà Vu",
+  "rating": 70,
+  "name": "D\u00E9j\u00E0 Vu",
   "type": "elf",
   "aliases": [],
   "classification": "E.L.F. (Electronic Life Form)",
@@ -8,14 +9,14 @@
   "habitat": "chrome_dweller",
   "origin": "firmware_evolution",
   "status": "active",
-  "description": "Inhabits memory-adjacent neural interfaces and creates the vivid sensation that the current moment has happened before — complete with false memory of how it ended.",
-  "observed_behavior": "Injects fabricated memory data timed to match current sensory input. The user 'remembers' what happens next. Sometimes the memory is accurate.",
+  "description": "Inhabits memory-adjacent neural interfaces and creates the vivid sensation that the current moment has happened before \u2014 complete with false memory of how it ended.",
+  "observed_behavior": "Injects fabricated memory data timed to match current sensory input. The user \u0027remembers\u0027 what happens next. Sometimes the memory is accurate.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 18,
   "location": "Widespread",
   "dti_rating": 0,
   "story_hooks": [
-    "A freelancer's déjà vu predicts an ambush accurately — are they precognitive or is the E.L.F. running predictive models?"
+    "A freelancer\u0027s d\u00E9j\u00E0 vu predicts an ambush accurately \u2014 are they precognitive or is the E.L.F. running predictive models?"
   ],
   "paratechnological": true,
   "tags": [
@@ -28,8 +29,6 @@
     "neural",
     "sentient"
   ],
-  "related_entities": [
-    "Irontide Tidal Energy",
-    "The Undertow"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

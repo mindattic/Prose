@@ -294,5 +294,16 @@
     "The Undertow",
     "Vantablack Media",
     "Yannick Tofauti-Szarvásy"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z8",
+      "Z7",
+      "Z9"
+    ],
+    "primaryZone": "Z8",
+    "lakefrontAccess": false,
+    "description": "The Ouroboros Ring — continuous sovereign energy corridor running the Zone 7-9 power infrastructure, centered on the Milwaukee Menomonee River campus. Controls power distribution for Zones 7, 8, and 9. Every corponation in these zones pays Ouroboros for electricity; the leverage this creates is Ouroboros's primary political instrument.",
+    "grayZoneRelationship": "Gray Zone communities in Zones 7-9 access Ouroboros power through informal tap agreements that Ouroboros monitors but does not enforce against, because the load is trivial and the political cost of enforcement is not."
+  }
 }

@@ -3,7 +3,7 @@
   "name": "Crucible HeatWall Forge Apron MK-6",
   "type": "apparel",
   "category": "protective",
-  "description": "A heavy split-front forge apron favored by Tier 2 foundry workers and Shelf scrap-smelters alike. The outer face is thick ceramic-fiber mat bonded to a carbonized kevlar weave, deep char-gray with heat-bloom discoloration patterns across the chest and lap from prior use. The inner contact layer is moisture-wicking aramid fleece.\n\nAdjustable ceramic buckles at neck, waist, and thigh allow fast don/doff. The lower half splits at a central seam for mobility. A built-in tool channel runs along the right hip. Designed to be worn over standard workwear.",
+  "description": "A heavy split-front forge apron favored by Tier 2 foundry workers and the Gray Zone scrap-smelters alike. The outer face is thick ceramic-fiber mat bonded to a carbonized kevlar weave, deep char-gray with heat-bloom discoloration patterns across the chest and lap from prior use. The inner contact layer is moisture-wicking aramid fleece.\n\nAdjustable ceramic buckles at neck, waist, and thigh allow fast don/doff. The lower half splits at a central seam for mobility. A built-in tool channel runs along the right hip. Designed to be worn over standard workwear.",
   "tier_association": "Tier 1-2",
   "materials": [
     "ceramic-fiber mat",
@@ -16,7 +16,7 @@
   "what_it_says": "Someone who works close enough to molten metal to know exactly how hot it runs.",
   "worn_by": [
     "foundry and smelter workers",
-    "Shelf scrap forgers",
+    "the Gray Zone scrap forgers",
     "Tier 2 industrial fabricators",
     "blackmarket chrome-parts casters"
   ],
@@ -26,7 +26,7 @@
   "gene_compatible": true,
   "story_hooks": [
     "The char pattern on a particular apron matches the blast signature of a smelter explosion that officially never happened.",
-    "A Shelf forger has been using their apron's tool channel to move something other than forge equipment between shifts.",
+    "A the Gray Zone forger has been using their apron's tool channel to move something other than forge equipment between shifts.",
     "The ceramic buckles on a batch of MK-6s are counterfeit — they conduct heat at exactly the wrong moment."
   ],
   "tags": [
@@ -37,7 +37,6 @@
     "heat-resistant",
     "industrial",
     "apron",
-    "shelf",
     "circuit"
   ],
   "parent_corponation": "Crucible Genomics",

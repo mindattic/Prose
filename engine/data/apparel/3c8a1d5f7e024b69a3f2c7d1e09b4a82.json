@@ -3,7 +3,7 @@
   "name": "Ironveil Disgraced CorpSec Bouncer's Door Rig",
   "type": "apparel",
   "category": "outfit",
-  "description": "A stripped Brightline corporate security jacket with all insignia cut off — the ghost outlines of rank patches still visible as darker rectangles on the sleeve. Underneath, a plain black compression mock-neck that hides a spinal augmentation rig up to C4. Tactical trousers with the knee-armor pockets emptied out and re-stuffed with a flask and a burner comm. One boot is standard-issue military; the other is a mismatched Shelf replacement.",
+  "description": "A stripped Brightline corporate security jacket with all insignia cut off — the ghost outlines of rank patches still visible as darker rectangles on the sleeve. Underneath, a plain black compression mock-neck that hides a spinal augmentation rig up to C4. Tactical trousers with the knee-armor pockets emptied out and re-stuffed with a flask and a burner comm. One boot is standard-issue military; the other is a mismatched the Gray Zone replacement.",
   "tier_association": "Tier 2",
   "materials": [
     "stripped ballistic-weave jacket",
@@ -18,7 +18,7 @@
     "ex-military bouncers",
     "demoted security personnel"
   ],
-  "manufacturer": "Brightline (original, defaced); mismatched Shelf replacements",
+  "manufacturer": "Brightline (original, defaced); mismatched the Gray Zone replacements",
   "price_range": "Φ20–60 assembled from remnants",
   "aug_compatible": true,
   "gene_compatible": false,
@@ -46,7 +46,7 @@
   "physical_description": {
     "visual_profile": "A deliberately desecrated uniform that screams 'former authority stripped of rank.' The jacket drapes with institutional memory—cut-away patches create a negative-space narrative of disgrace. Underneath, the compression mock-neck hints at internal augmentation without flaunting it. Asymmetrical boots ground the look in survival pragmatism.",
     "fit": "Relaxed, slightly oversized through the torso to accommodate spinal rig; compression shirt is skin-tight; trousers are tactical-cut with reinforced thighs and modified pockets",
-    "primary_material": "Jacket: ballistic weave (original Brightline synthetic-reinforced canvas, now faded); compression shirt: medical-grade spandex blend; trousers: ripstop poly-cotton with kevlar threading; boots: mismatched (military synthetic leather vs. Shelf recycled composite)",
+    "primary_material": "Jacket: ballistic weave (original Brightline synthetic-reinforced canvas, now faded); compression shirt: medical-grade spandex blend; trousers: ripstop poly-cotton with kevlar threading; boots: mismatched (military synthetic leather vs. the Gray Zone recycled composite)",
     "texture": "Jacket fabric is broken-in rough, deliberately abraded where patches were excised; compression shirt is smooth and form-fitting; trousers have a utilitarian matte finish with stress wrinkles; boots show mixed wear—one glossy and maintained, one scuffed and salvaged",
     "color_scheme": "Primary: charcoal and ash gray jacket with ghost-pale rectangular outlines where insignia lived; black compression mock-neck; slate trousers; boots are contrasting—one deep chrome-black, one gunmetal gray with streaks of oxidation",
     "closures": "Jacket: friction-fit + magnetic snaps (some deactivated); compression shirt: friction-fit; trousers: magnetic waistband with reinforced belt loops; boots: lace + velcro hybrid (one clean, one deteriorating)",
@@ -62,6 +62,6 @@
     "cultural_context": "A fallen corpo security operative; someone who was purged, demoted, or walked away. The outfit broadcasts 'I know the system and was discarded by it.' Wearing this is an act of refusal—rejecting the erasure by wearing the evidence of it. Street credibility through institutional scar tissue.",
     "condition_typical": "Deliberately weathered; the jacket is treated with intentional wear patterns (not accidental decay); the compression shirt is meticulously maintained because the augmentation inside depends on it; trousers are functional and patched at stress points; boots are a study in contrasts—one obsessively cleaned, one intentionally neglected"
   },
-  "image_prompt": "Fashion photography of a neo-noir ex-corpo bouncer in a stripped Brightline security jacket with ghost-pale patch outlines, black compression mock-neck barely concealing spinal augmentation rig, tactical trousers with modified pockets holding a burner comm and flask, one pristine military boot and one mismatched weathered Shelf replacement. Model stands in moody neon-shadow against a rain-slick GLMZ alleyway, sodium vapor overhead casting amber and deep blue. Close detail on the excised patch shadows. Cinematic, desaturated color palette with neon accent. Dark, gritty atmosphere. --ar 2:3 --v 6",
-  "visual_prompt": "Fashion photography of a neo-noir ex-corpo bouncer in a stripped Brightline security jacket with ghost-pale patch outlines, black compression mock-neck barely concealing spinal augmentation rig, tactical trousers with modified pockets holding a burner comm and flask, one pristine military boot and one mismatched weathered Shelf replacement. Model stands in moody neon-shadow against a rain-slick GLMZ alleyway, sodium vapor overhead casting amber and deep blue. Close detail on the excised patch shadows. Cinematic, desaturated color palette with neon accent. Dark, gritty atmosphere. --ar 2:3 --v 6"
+  "image_prompt": "Fashion photography of a neo-noir ex-corpo bouncer in a stripped Brightline security jacket with ghost-pale patch outlines, black compression mock-neck barely concealing spinal augmentation rig, tactical trousers with modified pockets holding a burner comm and flask, one pristine military boot and one mismatched weathered the Gray Zone replacement. Model stands in moody neon-shadow against a rain-slick GLMZ alleyway, sodium vapor overhead casting amber and deep blue. Close detail on the excised patch shadows. Cinematic, desaturated color palette with neon accent. Dark, gritty atmosphere. --ar 2:3 --v 6",
+  "visual_prompt": "Fashion photography of a neo-noir ex-corpo bouncer in a stripped Brightline security jacket with ghost-pale patch outlines, black compression mock-neck barely concealing spinal augmentation rig, tactical trousers with modified pockets holding a burner comm and flask, one pristine military boot and one mismatched weathered the Gray Zone replacement. Model stands in moody neon-shadow against a rain-slick GLMZ alleyway, sodium vapor overhead casting amber and deep blue. Close detail on the excised patch shadows. Cinematic, desaturated color palette with neon accent. Dark, gritty atmosphere. --ar 2:3 --v 6"
 }

@@ -9,8 +9,8 @@
   "role": "Anya and Demyan's daughter — witness to the Prologue violence",
   "age": 12,
   "status": "active",
-  "location": "The Shelf — Tier Four, near Western and Division",
-  "description": "Zofia Park is twelve going on forty. She has her mother's build compressed into a child's frame — square shoulders, strong hands, a jaw that sets when she is angry in a way that makes adults take a step back. She speaks perfect unaccented English because the Shelf's children learn from feeds, not parents. She translates for her mother with the weary competence of a UN interpreter. She has seen things a twelve-year-old should not see. She has cataloged them. She does not cry about them. She has a notebook where she writes down everything that happens in the Shelf — who did what to whom, who owes what, who is afraid of whom. She calls it 'homework.' It is an intelligence network maintained by a child. She followed Kyle to the loading dock because she needed to see. Not wanted — needed. She is her father's daughter: she has to understand how things work, even the terrible things. Especially the terrible things. The teeth in her hands are the heaviest thing she has ever carried.",
+  "location": "the Gray Zone — Tier Four, near Western and Division",
+  "description": "Zofia Park is twelve going on forty. She has her mother's build compressed into a child's frame — square shoulders, strong hands, a jaw that sets when she is angry in a way that makes adults take a step back. She speaks perfect unaccented English because the Gray Zone's children learn from feeds, not parents. She translates for her mother with the weary competence of a UN interpreter. She has seen things a twelve-year-old should not see. She has cataloged them. She does not cry about them. She has a notebook where she writes down everything that happens in the Gray Zone — who did what to whom, who owes what, who is afraid of whom. She calls it 'homework.' It is an intelligence network maintained by a child. She followed Kyle to the loading dock because she needed to see. Not wanted — needed. She is her father's daughter: she has to understand how things work, even the terrible things. Especially the terrible things. The teeth in her hands are the heaviest thing she has ever carried.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -67,13 +67,13 @@
     }
   ],
   "story_hooks": [
-    "Her notebook is a Shelf intelligence network maintained by a child",
+    "Her notebook is a the Gray Zone intelligence network maintained by a child",
     "She has been following Kyle for weeks — she knows his patterns",
     "She will become a recurring presence — Kyle's smallest, most persistent shadow"
   ],
-  "narrative_function": "Yuliya is the Shelf's future watching the Shelf's present and writing it down. She is what happens when a child grows up in a place where violence is weather. She is also the reader's proxy — observing Kyle from the outside, trying to make sense of him.",
+  "narrative_function": "Yuliya is the Gray Zone's future watching the Gray Zone's present and writing it down. She is what happens when a child grows up in a place where violence is weather. She is also the reader's proxy — observing Kyle from the outside, trying to make sense of him.",
   "augmentations": "None.",
-  "daily_life": "School (Shelf community education). Translating for Anya. Writing in the notebook. Following people who interest her.",
+  "daily_life": "School (the Gray Zone community education). Translating for Anya. Writing in the notebook. Following people who interest her.",
   "affiliation": "None",
   "uses_facets": false,
   "narration_voice": "",
@@ -177,7 +177,7 @@
       "Translates her mother Russian even when not asked",
       "Follows Kyle and documents his patterns",
       "Says I know as a preemptive claim before she actually knows",
-      "Catalogs who owes what and who fears whom on the Shelf"
+      "Catalogs who owes what and who fears whom on the Gray Zone"
     ],
     "breaking_points": [
       "The notebook being discovered",
@@ -209,7 +209,7 @@
     "Optimist": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -218,14 +218,13 @@
   "timeline": [],
   "changelog": [],
   "related_entities": [
-    "The Shelf",
     "Arcturus KS-7 'Nursery'",
     "TESSERA PA-5 'Attendant'",
     "The Pure Hand",
     "Lazarus IDP-1 'Teeth'",
     "Zheng-Dao Heavy Industries Space Elevator Tether System"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Eastern European-dominant mixed ancestry (47.7%) with significant East Asian heritage (39.5%), complemented by Middle Eastern genetic contributions (12.8%). The combination creates a distinctive facial structure: higher, more prominent cheekbones characteristic of East Asian ancestry, paired with a stronger jawline and nose bridge from Eastern European genetics, softened by Middle Eastern influences. Skin tone reflects this tri-continental blend — medium with warm olive-golden undertones, slightly deeper across cheekbones and nose. Eye shape shows East Asian influence with warm brown pigmentation carrying amber undertones from the broader ancestry mix.",
     "height_cm": 152,
@@ -242,7 +241,7 @@
       "Dark bruise on her right inner wrist (recent — defensive mark or restraint burn, pattern unclear)",
       "Calloused hands, especially palms and inside knuckles, inconsistent with her age"
     ],
-    "visible_augmentations": "None visible. She carries no obvious chrome, no LED implants, no subdermal armor. This absence is notable in the Shelf — she is as analog as a child can be in 2226.",
+    "visible_augmentations": "None visible. She carries no obvious chrome, no LED implants, no subdermal armor. This absence is notable in the Gray Zone — she is as analog as a child can be in 2226.",
     "posture_movement": "Moves with deliberate control, economical. No fidgeting. Sits spine-straight, even when exhausted. Walks with her shoulders slightly forward, head level, eyes tracking. Reminiscent of a hunter or a soldier in miniature. When angry, her jaw locks and her hands clench.",
     "clothing_style": "Tier Four utilitarian — worn black synth-cotton leggings, oversized gray hoodie (probably belonged to Demyan; she has grown into it partially), scuffed black runner-shoes held together with synthlace. A canvas messenger bag (khaki, faded) slung across her chest containing her notebook and writing supplies. No jewelry, no adornments, no status markers. Clothing is clean but worn, patched once at the left knee."
   },

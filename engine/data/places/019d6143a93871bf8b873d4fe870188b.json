@@ -23,7 +23,7 @@
     "feel": "The Notch presses in from all sides—walls too close, ceilings too low, alleys that dog-leg without warning. There is warmth here that is partly literal, the residual heat of industrial infrastructure, and partly the dense proximity of people who have decided to stay. Outsiders feel watched without ever seeing who watches.",
     "tags": []
   },
-  "demographics": "Predominantly Tier 4 and Shelf-adjacent residents, heavily multigenerational with deep roots in pre-Meridian labor families—Congolese, Polish, Filipino, and Haitian surnames dominating block rosters. A small enclave of unregistered synthetics lives quietly in the canal-side structures, tolerated but not acknowledged.",
+  "demographics": "Predominantly Tier 4 and the Gray Zone-adjacent residents, heavily multigenerational with deep roots in pre-Meridian labor families—Congolese, Polish, Filipino, and Haitian surnames dominating block rosters. A small enclave of unregistered synthetics lives quietly in the canal-side structures, tolerated but not acknowledged.",
   "economy": "Thermal credit skimming, gray-market BCI hardware repair, and informal labor brokering for Ringo and Carrion Logistics day contracts form the economic backbone. A modest underground market in reclaimed foundry materials feeds into Oxidian-adjacent resale networks.",
   "power_structure": "A seven-seat block captain council holds nominal authority, with a former Ringo shift supervisor named Dagna Przybylski wielding outsized influence through control of the power tap infrastructure. Ferrogate maintains a hands-off stance unless corporate property is directly threatened.",
   "dangers": [
@@ -78,8 +78,7 @@
     "market",
     "dark",
     "cold",
-    "rights",
-    "shelf"
+    "rights"
   ],
   "related_entities": [
     "Oxidative Thermal Drift Drone OTDD-4 'Ember'",
@@ -97,5 +96,7 @@
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Zephyr Bhattacharya",
     "The Wire Taps"
-  ]
+  ],
+  "zone": "Z1",
+  "controllingCorponation": null
 }

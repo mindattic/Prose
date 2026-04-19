@@ -7,7 +7,7 @@
   "aliases": [],
   "category": "medical",
   "target_system": "cardiovascular (secondary cardiac structure)",
-  "description": "Induces growth of a secondary cardiac structure — not a full second heart, but a muscular booster chamber integrated into the aortic arch that can maintain minimal circulatory function if the primary heart fails. The booster chamber is smaller, simpler, and weaker than the primary heart — it can maintain consciousness and basic organ function for 30–60 minutes, buying time for emergency medical intervention. It cannot sustain vigorous activity. The modification also includes enhanced cardiac muscle regeneration genes, allowing the primary heart to recover from damage that would be permanently disabling in an unmodified human. Helix Biosystems developed it for executives whose assassination risk warranted biological failsafes. In the Shelf, street docs install budget versions that provide 10–15 minutes of backup circulation — enough to reach a clinic.",
+  "description": "Induces growth of a secondary cardiac structure — not a full second heart, but a muscular booster chamber integrated into the aortic arch that can maintain minimal circulatory function if the primary heart fails. The booster chamber is smaller, simpler, and weaker than the primary heart — it can maintain consciousness and basic organ function for 30–60 minutes, buying time for emergency medical intervention. It cannot sustain vigorous activity. The modification also includes enhanced cardiac muscle regeneration genes, allowing the primary heart to recover from damage that would be permanently disabling in an unmodified human. Helix Biosystems developed it for executives whose assassination risk warranted biological failsafes. In the Gray Zone, street docs install budget versions that provide 10–15 minutes of backup circulation — enough to reach a clinic.",
   "source_organism": "Octopus vulgaris (common octopus, multiple-heart architecture), Danio rerio (zebrafish, cardiac regeneration)",
   "manufacturer": "Helix Biosystems (premium), various clinics (budget)",
   "tier_availability": "Tier 3+ (budget versions Tier 2)",
@@ -37,7 +37,6 @@
     "elf",
     "surgery",
     "clinic",
-    "shelf",
     "tier 2",
     "tier 3"
   ],
@@ -45,7 +44,6 @@
     "Helix Biosystems",
     "Sustrel",
     "The Gauze",
-    "The Shelf",
     "Thessaly Oduya-Varga"
   ]
 }

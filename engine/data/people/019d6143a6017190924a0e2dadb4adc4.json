@@ -9,7 +9,7 @@
   "role": "Street-level courier and excluded zone navigator, legal identity partially intact",
   "age": 24,
   "status": "active",
-  "location": "The Circuit / The Shelf (transient between both), near Halsted and Division",
+  "location": "The Circuit / the Gray Zone (transient between both), near Halsted and Division",
   "description": "Bjorn Magnúsdóttir is a small, wiry mixed-race woman — Cornish-Czech on her mother's side, Jamaican on her father's — with the particular kind of physical confidence that comes not from size but from having spent years moving through spaces that were not designed for her survival. She keeps her hair close-cropped on the sides and longer on top, usually shoved under a cap with the logo of a company that no longer exists. Her face is expressive in motion and surprisingly unreadable at rest, a combination that makes her hard to clock in a crowd. She has the faint, systematic scarring along her left forearm from an augmentation removal she paid for herself at nineteen, and she does not cover it.",
   "psychology": {
     "facet_weights": {
@@ -225,7 +225,7 @@
     "Improviser": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Circuit / The Shelf (transient between both)",
+    "home_turf": "The Circuit / the Gray Zone (transient between both)",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -239,13 +239,12 @@
   "registered_firearms": [],
   "related_entities": [
     "The Circuit",
-    "The Shelf",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Circuit",
     "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
     "Arcturus KS-7 'Nursery'"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Northern European, South Asian, Sub-Saharan African, and East Asian—a striking product of the Ubiquitous Diaspora. The 36.6% Northern European ancestry provides angular facial structure and lighter undertones; 32.6% South Asian heritage contributes warmth and facial width; 20.8% Sub-Saharan African ancestry adds depth, rich golden-brown tones, and defined bone structure; 7.7% East Asian heritage refines cheekbones and adds subtle cool undertones to skin; 2.3% Eastern European ancestry contributes minor structural nuance. The result is a complexion with substantial warmth and depth—golden-brown with layered undertones that shift subtly across her face.",
     "height_cm": 158,

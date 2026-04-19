@@ -5,8 +5,8 @@
   "aliases": [],
   "category": "recreational",
   "subcategory": "dissociative",
-  "manufacturer": "Street chemist (Shelf origin, widely copied)",
-  "description": "Nullform is a NMDA receptor antagonist and proprioceptive suppressor derived from adapted veterinary dissociatives, modified by Shelf chemists to include an SNT-interface dampener that mutes chrome feedback signals. The result is complete disconnection from bodily sensation and physical identity — users describe existing as pure thought, untethered from flesh and metal alike.",
+  "manufacturer": "Street chemist (the Gray Zone origin, widely copied)",
+  "description": "Nullform is a NMDA receptor antagonist and proprioceptive suppressor derived from adapted veterinary dissociatives, modified by the Gray Zone chemists to include an SNT-interface dampener that mutes chrome feedback signals. The result is complete disconnection from bodily sensation and physical identity — users describe existing as pure thought, untethered from flesh and metal alike.",
   "method_of_use": "injection",
   "effects": [
     "Complete proprioceptive dissociation — no sense of body, chrome, or physical location",
@@ -27,11 +27,11 @@
   "tier_availability": "Tier 1 only",
   "legality": "illegal",
   "street_price": "Φ15 per hit",
-  "cultural_context": "Nullform is the drug of the over-chromed and the body-dysphoric — Shelf residents who took military surplus augmentation to survive and now live in bodies that feel alien. 'Going Ghost' is how Tier 1 chrome-heavy workers cope with the disconnect between who they were and what they've become. There's no judgment in it. There's also no way out of the dependency loop it creates. Harm reduction workers on the Shelf consider it one of their most intractable challenges.",
+  "cultural_context": "Nullform is the drug of the over-chromed and the body-dysphoric — the Gray Zone residents who took military surplus augmentation to survive and now live in bodies that feel alien. 'Going Ghost' is how Tier 1 chrome-heavy workers cope with the disconnect between who they were and what they've become. There's no judgment in it. There's also no way out of the dependency loop it creates. Harm reduction workers in the Gray Zone consider it one of their most intractable challenges.",
   "story_hooks": [
     "A contact the party relies on has gone Ghost and doesn't come back — they're found alive but the dose was wrong and they're trapped in dissociation, unable to interface with their own body",
     "Someone is selling Nullform cut with a compound that doesn't just suppress chrome feedback — it overwrites it, allowing remote access to the user's augmentations while they're under",
-    "A Shelf community leader is secretly a heavy Nullform user; when this becomes known, the community fractures between those who understand and those who feel betrayed"
+    "A the Gray Zone community leader is secretly a heavy Nullform user; when this becomes known, the community fractures between those who understand and those who feel betrayed"
   ],
   "tags": [
     "recreational",
@@ -44,12 +44,10 @@
     "injury",
     "pain",
     "drug",
-    "shelf",
     "tier 1"
   ],
   "parent_corponation": "",
   "related_entities": [
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "The Shelf"
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'"
   ]
 }

@@ -32,7 +32,7 @@
   "tier_availability": "Military only",
   "cost": "Φ 22,000 per square meter (civilian research grade); military pricing classified",
   "story_hooks": [
-    "Vantablack-CNX is tightly export-controlled and theoretically unavailable to civilian operators — yet someone has coated an entire vehicle with it and is operating in the Shelf district, invisible to every optical and radar sensor the city has.",
+    "Vantablack-CNX is tightly export-controlled and theoretically unavailable to civilian operators — yet someone has coated an entire vehicle with it and is operating in the the Gray Zone district, invisible to every optical and radar sensor the city has.",
     "A researcher at Apex Nanofabrication has found a way to deposit Vantablack-CNX on flexible substrates — creating a wearable coating that makes the wearer effectively invisible to surveillance systems. The research has disappeared along with the researcher.",
     "A shipment of Vantablack-CNX panels listed as 'optical calibration equipment' has been cleared through civilian customs — someone with serious connections is moving military-grade stealth materials into private hands."
   ],
@@ -44,12 +44,10 @@
     "control",
     "vehicle",
     "stealth",
-    "drone",
-    "shelf"
+    "drone"
   ],
   "related_entities": [
     "Pneumatic Transit Capsule",
-    "The Pure Hand",
-    "The Shelf"
+    "The Pure Hand"
   ]
 }

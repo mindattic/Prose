@@ -3,30 +3,29 @@
   "name": "Scrap Saints' Feast",
   "type": "entertainment",
   "category": "tradition",
-  "subcategory": "shelf community celebration",
-  "description": "Scrap Saints' Feast falls on the winter solstice — the longest night of the year — and is a Shelf-born celebration of survival, ingenuity, and chosen family that has no corporate sponsor and wants none. Shelf residents spend weeks before the feast salvaging, trading, and fabricating elaborate communal meals from whatever can be sourced, bartered, or creatively repurposed — the tradition explicitly prizes resourcefulness over wealth, and 'bought clean' food is considered a mild social embarrassment. Tables are assembled in alleys, walkways, and decommissioned transit bays, lit by bioluminescent Shelf art installations, and the feast runs from sundown until the first light of the following day.",
+  "subcategory": "Gray Zone community celebration",
+  "description": "Scrap Saints' Feast falls on the winter solstice — the longest night of the year — and is a the Gray Zone-born celebration of survival, ingenuity, and chosen family that has no corporate sponsor and wants none. the Gray Zone residents spend weeks before the feast salvaging, trading, and fabricating elaborate communal meals from whatever can be sourced, bartered, or creatively repurposed — the tradition explicitly prizes resourcefulness over wealth, and 'bought clean' food is considered a mild social embarrassment. Tables are assembled in alleys, walkways, and decommissioned transit bays, lit by bioluminescent the Gray Zone art installations, and the feast runs from sundown until the first light of the following day.",
   "origin_year": 2195,
   "tier_association": "Tier 1",
   "status": "active",
-  "cultural_impact": "Scrap Saints' Feast functions as the Shelf's most important social bonding event — debts are informally settled, alliances formed, feuds temporarily suspended, and new arrivals welcomed into Shelf community for the first time, making it a genuine social institution that rivals any corporate morale program.",
+  "cultural_impact": "Scrap Saints' Feast functions as the Gray Zone's most important social bonding event — debts are informally settled, alliances formed, feuds temporarily suspended, and new arrivals welcomed into the Gray Zone community for the first time, making it a genuine social institution that rivals any corporate morale program.",
   "key_figures": [
-    "Chef-Saint Tomasz Oyelaran (legendary feast organizer, Shelf District 9)",
+    "Chef-Saint Tomasz Oyelaran (legendary feast organizer, the Gray Zone district 9)",
     "The Biolux Crew (art collective providing solstice lighting since 2198)",
     "Ximena Dragomir (food salvage networker and recipe archivist)"
   ],
   "locations": [
-    "The Long Table, Shelf District 9 transit bay",
+    "The Long Table, the Gray Zone district 9 transit bay",
     "Crow's Alley, Tier 1 West",
     "Underbelly Market corridor, District 4"
   ],
   "corporate_stance": "unaware",
   "story_hooks": [
-    "A food safety corponation inspector has been assigned to shut down the feast on health code violations — but they grew up on the Shelf, and the inspector's own grandmother used to run a table at Crow's Alley.",
-    "Someone has been poisoning the shared ingredient pool in Shelf District 4 for two years, causing a string of illnesses blamed on bad salvage — Ximena Dragomir suspects it's deliberate sabotage to discredit Shelf self-sufficiency culture.",
-    "A Tier 3 food journalist wants to write a sympathetic longform piece on the feast; the Shelf community is divided — some see it as positive visibility, others as the first step toward the tradition being co-opted, gentrified, or shut down."
+    "A food safety corponation inspector has been assigned to shut down the feast on health code violations — but they grew up in the Gray Zone, and the inspector's own grandmother used to run a table at Crow's Alley.",
+    "Someone has been poisoning the shared ingredient pool in the Gray Zone district 4 for two years, causing a string of illnesses blamed on bad salvage — Ximena Dragomir suspects it's deliberate sabotage to discredit the Gray Zone self-sufficiency culture.",
+    "A Tier 3 food journalist wants to write a sympathetic longform piece on the feast; the Gray Zone community is divided — some see it as positive visibility, others as the first step toward the tradition being co-opted, gentrified, or shut down."
   ],
   "tags": [
-    "shelf",
     "community",
     "solstice",
     "food",
@@ -38,14 +37,13 @@
     "bioluminescence"
   ],
   "date": "Winter Solstice (December 21)",
-  "origin_event": "Emerged organically in Shelf District 9 in winter 2195 when a cold snap and supply disruption left dozens of families unable to afford food. Tomasz Oyelaran organized a communal meal from pooled salvage and the concept spread district by district over the following years.",
-  "tier_observations": "Tier 1 is the full participant — preparation takes weeks, attendance is a social obligation, and the feast is a genuine community institution. Tier 2 residents with Shelf roots sometimes travel down to participate or send food contributions. Tier 3 knows about it only as a cultural curiosity. Tier 4 and 5 are entirely unaware or dismissive, though a handful of food culture enthusiasts have tried (and failed) to gain entry as observers.",
+  "origin_event": "Emerged organically in the Gray Zone district 9 in winter 2195 when a cold snap and supply disruption left dozens of families unable to afford food. Tomasz Oyelaran organized a communal meal from pooled salvage and the concept spread district by district over the following years.",
+  "tier_observations": "Tier 1 is the full participant — preparation takes weeks, attendance is a social obligation, and the feast is a genuine community institution. Tier 2 residents with the Gray Zone roots sometimes travel down to participate or send food contributions. Tier 3 knows about it only as a cultural curiosity. Tier 4 and 5 are entirely unaware or dismissive, though a handful of food culture enthusiasts have tried (and failed) to gain entry as observers.",
   "parent_corponation": "",
   "related_entities": [
     "Arcturus Defense Solutions Horizon ADS-18 'Dawnbreak'",
     "Hearthstone Firearms Youth-20 'First Step'",
     "Patient Zero",
-    "The Shelf",
     "The Voltage Saints"
   ]
 }

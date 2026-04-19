@@ -8,21 +8,21 @@
   "origin_year": 2219,
   "tier_association": "Tier 2-3",
   "status": "growing",
-  "cultural_impact": "A significant minority of Tier 2 workers now use black-market 'signal scramblers' worn behind the ear — cheap chromework called 'earmice' — and tech-adjacent social circles debate BCI firmware versions the way older generations debated privacy settings. The scrambler market in the Shelf's Wicker Node district generates an estimated Φ 2.3 million annually.",
+  "cultural_impact": "A significant minority of Tier 2 workers now use black-market 'signal scramblers' worn behind the ear — cheap chromework called 'earmice' — and tech-adjacent social circles debate BCI firmware versions the way older generations debated privacy settings. The scrambler market in the Gray Zone's Wicker Node district generates an estimated Φ 2.3 million annually.",
   "key_figures": [
     "Pale Arithmetic (collective)",
     "Dr. Saoirse Nkemdirim (NeuraLink whistleblower, disappeared 2220)",
     "Axiom Consumer Intelligence PR head Tomás Osei-Wójcik"
   ],
   "locations": [
-    "Wicker Node scrambler markets (Shelf, Tier 1)",
+    "Wicker Node scrambler markets (the Gray Zone, Tier 1)",
     "NeuraLink Meridian campus, Lakefront Tier 4 district",
     "The Pale Arithmetic dead-drop node in the Underworld"
   ],
   "corporate_stance": "opposed",
   "story_hooks": [
     "A player character's BCI begins surfacing memories they don't recognize — and the emotional tags on those memories belong to someone else's desire profile",
-    "Dr. Saoirse Nkemdirim's last encrypted message surfaces in the Underworld, addressed to a specific street address in the Shelf — the players' building",
+    "Dr. Saoirse Nkemdirim's last encrypted message surfaces in the Underworld, addressed to a specific street address in the Gray Zone — the players' building",
     "An earmice vendor in Wicker Node is selling scramblers that actually broadcast enhanced telemetry, not block it — someone is running a counter-op"
   ],
   "tags": [
@@ -38,13 +38,12 @@
     "privacy"
   ],
   "truth_status": "partially_true",
-  "believers": "Tier 2 tech workers, civil liberties advocates, Shelf hackers, anyone who read the Pale Arithmetic dump",
+  "believers": "Tier 2 tech workers, civil liberties advocates, the Gray Zone hackers, anyone who read the Pale Arithmetic dump",
   "evidence": "The Pale Arithmetic memos are real but incomplete — Lumen Protocol exists as an opt-in research program that NeuraLink quietly auto-enrolls users into via a 4,000-word terms update; the continuous broadcasting claim is false, but quarterly aggregate transmission is accurate",
   "parent_corponation": "",
   "related_entities": [
     "Lumen",
     "MERIDIAN",
-    "The Shelf",
     "Vuk Jorgensen-Toure"
   ]
 }

@@ -7,22 +7,21 @@
   "category": "street_food",
   "subcategory": "synth-protein bar",
   "manufacturer": "Kanto-Pacific Nutrition",
-  "description": "Dense rectangular nutrient block providing 400 calories, 30g protein, and full micronutrient supplementation. Available in six flavor coatings. The baseline food of the Shelf.",
+  "description": "Dense rectangular nutrient block providing 400 calories, 30g protein, and full micronutrient supplementation. Available in six flavor coatings. The baseline food of the Gray Zone.",
   "flavor_profile": "Chalky, dense, coated in a thin flavor shell — the 'chocolate' variant tastes like someone described chocolate to a machine",
   "tier_availability": "Tier 1-2",
   "price": "Φ0.80",
   "popularity_rank": 2,
   "slogan": "Everything you need. Nothing you don't.",
-  "cultural_context": "Kanto Blocks keep people alive. That's the nicest thing anyone says about them. They're distributed in Tier 1 aid packages and sold at every Shelf vendor. Eating them is survival, not dining. People who escape the Shelf never eat them again.",
+  "cultural_context": "Kanto Blocks keep people alive. That's the nicest thing anyone says about them. They're distributed in Tier 1 aid packages and sold at every the Gray Zone vendor. Eating them is survival, not dining. People who escape the Gray Zone never eat them again.",
   "story_hooks": [
     "Kanto-Pacific has been quietly reducing the micronutrient content by 3% annually for five years — a whistleblower has the lab reports.",
-    "A Shelf community kitchen has figured out how to process Kanto Blocks into something that actually tastes like food — the recipe is spreading and Kanto-Pacific wants it suppressed."
+    "A the Gray Zone community kitchen has figured out how to process Kanto Blocks into something that actually tastes like food — the recipe is spreading and Kanto-Pacific wants it suppressed."
   ],
   "tags": [
     "street_food",
     "synth_protein",
     "consumer_good",
-    "shelf",
     "tier_1",
     "tier_2",
     "survival_food",
@@ -31,7 +30,6 @@
   ],
   "parent_corponation": "",
   "related_entities": [
-    "The Human Baseline Alliance",
-    "The Shelf"
+    "The Human Baseline Alliance"
   ]
 }

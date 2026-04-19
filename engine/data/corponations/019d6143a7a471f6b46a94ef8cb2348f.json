@@ -212,7 +212,7 @@
     },
     {
       "name": "Kodiak Provisions",
-      "line_of_business": "Shelf-stable field rations repackaged as premium camping and emergency preparedness food",
+      "line_of_business": "the Gray Zone-stable field rations repackaged as premium camping and emergency preparedness food",
       "public_facing": true
     },
     {
@@ -309,5 +309,14 @@
     "The Swarm",
     "The Undertow",
     "Zheng-dao Bioelectric"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z1"
+    ],
+    "primaryZone": "Z1",
+    "lakefrontAccess": false,
+    "description": "The Coldwall Quarter — former federal district south of the Chicago Loop, now Arcturus's primary GLMZ installation and home of the Civil Security Division. Provides contracted civil security across all Zone 1 sovereign territories; secondary monitoring presence in every zone via facility security contracts.",
+    "grayZoneRelationship": "Active perimeter monitoring on all Zone 1 Gray Zone margins. Does not patrol Gray Zone interiors except under corponation contract."
+  }
 }

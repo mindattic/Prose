@@ -25,7 +25,7 @@
       "Home cooking through open windows — actual kitchens, not nutrient paste dispensers",
       "Old building smell — wood, plaster, the accumulated scent of a hundred years of habitation"
     ],
-    "feel": "Eerie normalcy. The Portico feels like a photograph from before the incorporation, preserved under glass. It provokes a specific emotion in Shelf residents who visit: grief for a way of living that they never had and that the Portico maintains only through constant, exhausting effort. Comfortable and heartbreaking in equal measure.",
+    "feel": "Eerie normalcy. The Portico feels like a photograph from before the incorporation, preserved under glass. It provokes a specific emotion in the Gray Zone residents who visit: grief for a way of living that they never had and that the Portico maintains only through constant, exhausting effort. Comfortable and heartbreaking in equal measure.",
     "tags": []
   },
   "demographics": "Roughly 60,000 residents, predominantly Tier 2 and Tier 3. Ethnically mixed but trending older — the young leave for the Circuit or the Core, and the Portico is slowly aging. A significant population of retired corporate workers who chose stability over advancement. The most functional community governance structure outside the Core.",
@@ -64,7 +64,7 @@
     "Operators and fixers seeking safe houses in an unremarkable neighborhood",
     "Film enthusiasts making pilgrimages to the Portage Theater",
     "Corporate scouts assessing the district's real estate potential",
-    "Shelf residents visiting for the novelty of seeing children play outside"
+    "the Gray Zone residents visiting for the novelty of seeing children play outside"
   ],
   "notable_locations": [],
   "coordinates": {
@@ -83,7 +83,6 @@
     "shelter",
     "chase",
     "water",
-    "shelf",
     "circuit"
   ],
   "related_entities": [
@@ -92,5 +91,7 @@
     "Mika Ingebrigtsen",
     "Zephyr Bhattacharya",
     "Kyle Ellen Corbin-Vasik"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

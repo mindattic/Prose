@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa0b7c6c9fc15e993621cd5c",
+  "rating": 70,
   "name": "Lullaby",
   "type": "elf",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Generates soft melodic fragments during REM sleep. The melodies are original compositions that match no known recording — they are the remnants of a lullaby generator that no longer has a child to sing to.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 4,
-  "location": "The Shelf — residential zones",
+  "location": "the Gray Zone — residential zones",
   "dti_rating": 0,
   "story_hooks": [
     "A parent hears the lullaby through their child's augment and recognizes it as the startup sound of a medical device from a hospital that was destroyed"
@@ -27,12 +28,8 @@
     "augment",
     "ai",
     "medical",
-    "shelf",
     "sentient"
   ],
-  "related_entities": [
-    "Arcturus NX-1 'Sandman'",
-    "Tessera TX-15 'Cradle Song'",
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

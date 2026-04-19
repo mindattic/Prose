@@ -7,7 +7,7 @@
   "aliases": [],
   "category": "spine",
   "body_location": "spine",
-  "description": "The VertebraCore T7 replaces damaged or at-risk vertebrae with precision-machined titanium-alloy segments bonded to remaining organic tissue via osseointegration pins. A continuous load-distribution rail runs the length of the implant, redirecting compressive and shear forces away from the spinal cord. Integrated pressure sensors feed real-time data to a subcutaneous microprocessor that detects dangerous loading conditions and triggers muscular bracing signals. Anti-paralysis protocols actively monitor cord impingement and can decompress via micro-actuated spacer expansion.\n\nThe T7 is the standard-issue spinal implant for heavy laborers, freight handlers, and warehouse workers throughout the Shelf and Slab tiers who can't afford downtime from injury. Ironlimb markets it aggressively to industrial employers as a liability reduction tool, and many Fenris Industrial and Port Authority workers receive it as a workplace stipend. It carries zero social cachet — nobody brags about an Ironlimb spine — but it has kept thousands of workers upright who would otherwise be paralyzed.",
+  "description": "The VertebraCore T7 replaces damaged or at-risk vertebrae with precision-machined titanium-alloy segments bonded to remaining organic tissue via osseointegration pins. A continuous load-distribution rail runs the length of the implant, redirecting compressive and shear forces away from the spinal cord. Integrated pressure sensors feed real-time data to a subcutaneous microprocessor that detects dangerous loading conditions and triggers muscular bracing signals. Anti-paralysis protocols actively monitor cord impingement and can decompress via micro-actuated spacer expansion.\n\nThe T7 is the standard-issue spinal implant for heavy laborers, freight handlers, and warehouse workers throughout the Gray Zone and Slab tiers who can't afford downtime from injury. Ironlimb markets it aggressively to industrial employers as a liability reduction tool, and many Fenris Industrial and Port Authority workers receive it as a workplace stipend. It carries zero social cachet — nobody brags about an Ironlimb spine — but it has kept thousands of workers upright who would otherwise be paralyzed.",
   "manufacturer": "IRONLIMB",
   "tier_availability": "Tier 1-3",
   "legality": "Licensed",
@@ -21,9 +21,9 @@
     "Reduced sensitivity to lower-back touch due to nerve rerouting",
     "Microprocessor alert tones can trigger during heavy lifts, startling coworkers"
   ],
-  "cultural_context": "Among Shelf-tier workers, an Ironlimb spine is a quiet badge of survival — the physical record of an injury survived or a life of brutal labor. It is neither glamorous nor stigmatized; it is simply the thing that keeps you working.",
+  "cultural_context": "Among the Gray Zone-tier workers, an Ironlimb spine is a quiet badge of survival — the physical record of an injury survived or a life of brutal labor. It is neither glamorous nor stigmatized; it is simply the thing that keeps you working.",
   "known_users": [
-    "Dock and freight workers, Shelf and Slab tiers",
+    "Dock and freight workers, the Gray Zone and Slab tiers",
     "Construction laborers with prior spinal injuries",
     "Industrial accident survivors seeking return-to-work clearance",
     "Low-tier security and bouncers absorbing repeated impact stress",
@@ -32,7 +32,7 @@
   "story_hooks": [
     "A worker's VertebraCore anti-paralysis alert keeps firing without cause — either the sensor is malfunctioning or someone is deliberately inducing spinal stress via a hidden signal",
     "An employer is quietly mandating the T7 for all new hires as a 'safety benefit,' but the microprocessor firmware contains undisclosed productivity monitoring and compliance override features",
-    "A black-market surgeon is offering T7 installations without proper osseointegration prep, and a wave of catastrophic rejections is hitting the Shelf district"
+    "A black-market surgeon is offering T7 installations without proper osseointegration prep, and a wave of catastrophic rejections is hitting the the Gray Zone district"
   ],
   "street_price": "Φ8,500",
   "licensed_price": "Φ19,000",
@@ -55,7 +55,6 @@
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Subdermal Shear Projector SSP-1 'Faultline'",
     "Tessera Nexus Town Car",
-    "The Shelf",
     "Volkov-Saito Precision VS-44 'Fenris'",
     "Zheng-Dao Heavy Industries MGL-8 'Thresher'"
   ]

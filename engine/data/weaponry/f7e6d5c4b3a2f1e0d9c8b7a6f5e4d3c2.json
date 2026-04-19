@@ -1,11 +1,11 @@
 {
   "id": "f7e6d5c4b3a2f1e0d9c8b7a6f5e4d3c2",
-  "name": "Shelf IDP-X 'Dentata'",
+  "name": "the Gray Zone IDP-X 'Dentata'",
   "type": "weapon",
   "aliases": [],
   "category": "self_defense",
-  "description": "The IDP-X is not a Lazarus product. It is not a product at all. It is a Shelf improvisation — a single shotgun shell housed in a bio-compatible silicone sleeve with a spring-loaded firing pin connected to a wireless trigger, typically a micro-transmitter worn as a ring, bracelet, or tooth implant. The user activates the trigger. The firing pin strikes the primer. The shotgun shell detonates at contact range inside the attacker's body. There is no chemical incapacitation. There is no barbed retention system. There is a 12-gauge shell and approximately zero distance between the muzzle and the target.\n\nThe IDP-X emerged in Shelf districts where the Lazarus IDP-1 'Teeth' was considered insufficient — communities where attackers had learned to check for the commercial device before assaulting their victims, or where the non-lethal incapacitation of the IDP-1 was viewed as inadequate justice for the crime. The Dentata was engineered by Shelf weaponsmiths using readily available components: a standard shotgun shell, a spring-loaded firing mechanism small enough to fit inside a medical-grade silicone housing, and a wireless micro-detonator scavenged from commercial blasting equipment. The total materials cost is under Φ20. The assembly requires basic mechanical skill and about forty minutes.\n\nThe IDP-X is, by any legal or ethical standard, a lethal weapon disguised as a medical device. It kills. That is its designed function. The Shelf communities that produce and distribute them do not dispute this. Their position, stated plainly on the hand-printed cards that accompany each unit, is: 'If the system won't protect us, the system doesn't get to decide how we protect ourselves.' CorpSec has classified the IDP-X as an illegal booby trap. Lazarus has issued statements distancing the IDP-X from their IDP-1 product line. Neither classification nor statement has reduced production. The Dentata is made in kitchens and distributed through the same networks that distribute food and medicine. It is survival technology, and the Shelf does not recognize corporate authority over survival.",
-  "manufacturer": "Shelf weaponsmiths — no single manufacturer",
+  "description": "The IDP-X is not a Lazarus product. It is not a product at all. It is a the Gray Zone improvisation — a single shotgun shell housed in a bio-compatible silicone sleeve with a spring-loaded firing pin connected to a wireless trigger, typically a micro-transmitter worn as a ring, bracelet, or tooth implant. The user activates the trigger. The firing pin strikes the primer. The shotgun shell detonates at contact range inside the attacker's body. There is no chemical incapacitation. There is no barbed retention system. There is a 12-gauge shell and approximately zero distance between the muzzle and the target.\n\nThe IDP-X emerged in the Gray Zone districts where the Lazarus IDP-1 'Teeth' was considered insufficient — communities where attackers had learned to check for the commercial device before assaulting their victims, or where the non-lethal incapacitation of the IDP-1 was viewed as inadequate justice for the crime. The Dentata was engineered by the Gray Zone weaponsmiths using readily available components: a standard shotgun shell, a spring-loaded firing mechanism small enough to fit inside a medical-grade silicone housing, and a wireless micro-detonator scavenged from commercial blasting equipment. The total materials cost is under Φ20. The assembly requires basic mechanical skill and about forty minutes.\n\nThe IDP-X is, by any legal or ethical standard, a lethal weapon disguised as a medical device. It kills. That is its designed function. the Gray Zone communities that produce and distribute them do not dispute this. Their position, stated plainly on the hand-printed cards that accompany each unit, is: 'If the system won't protect us, the system doesn't get to decide how we protect ourselves.' CorpSec has classified the IDP-X as an illegal booby trap. Lazarus has issued statements distancing the IDP-X from their IDP-1 product line. Neither classification nor statement has reduced production. The Dentata is made in kitchens and distributed through the same networks that distribute food and medicine. It is survival technology, and the Gray Zone does not recognize corporate authority over survival.",
+  "manufacturer": "the Gray Zone weaponsmiths — no single manufacturer",
   "tier_availability": "Tier 1",
   "legality": "Prohibited — classified as illegal booby trap / improvised explosive device",
   "base_technologies": [
@@ -15,17 +15,17 @@
     "Bio-compatible silicone housing"
   ],
   "specifications": "form_factor: Internal silicone sleeve with embedded shotgun shell\nactivation: Remote wireless trigger (ring, bracelet, or tooth implant transmitter)\npayload: Single 12-gauge shotgun shell (buckshot or slug)\neffective_range: Contact — 0 meters\ntrigger_range: Wireless, 5-meter effective radius\nsafety: Manual pin lock removed before use\nreusable: No — single use, destructive\nassembly_time: ~40 minutes\nmaterials_cost: Φ20\nweight: 45g",
-  "tactical_use": "Unlike the IDP-1's automatic activation, the IDP-X requires a deliberate decision from the user — the wireless trigger must be consciously activated. This was a design choice, not a limitation. Shelf weaponsmiths who developed the device argued that the decision to use lethal force should remain with the person being assaulted, not automated. The trigger is typically worn on the dominant hand as a ring with a recessed button, requiring a firm press to activate. Some variants use a bite-activated tooth implant, freeing the hands entirely. The 5-meter wireless range allows activation even if the user's hands are restrained, provided the trigger is on their person.",
-  "cultural_context": "The IDP-X is the Shelf's answer to a question that Lazarus's IDP-1 asked politely: what do you do when nobody is coming to help? The IDP-1 says 'incapacitate and wait for authorities.' The IDP-X says 'there are no authorities.' The device has become a flashpoint in the ongoing debate about Shelf autonomy — corporate legal frameworks call it murder, Shelf communities call it self-defense, and the gap between those positions is the gap between people who have security and people who don't. Emergency room personnel in Shelf-adjacent districts have been trained to recognize IDP-X injuries. There is no treatment protocol. There is a notification to next of kin.",
+  "tactical_use": "Unlike the IDP-1's automatic activation, the IDP-X requires a deliberate decision from the user — the wireless trigger must be consciously activated. This was a design choice, not a limitation. the Gray Zone weaponsmiths who developed the device argued that the decision to use lethal force should remain with the person being assaulted, not automated. The trigger is typically worn on the dominant hand as a ring with a recessed button, requiring a firm press to activate. Some variants use a bite-activated tooth implant, freeing the hands entirely. The 5-meter wireless range allows activation even if the user's hands are restrained, provided the trigger is on their person.",
+  "cultural_context": "The IDP-X is the Gray Zone's answer to a question that Lazarus's IDP-1 asked politely: what do you do when nobody is coming to help? The IDP-1 says 'incapacitate and wait for authorities.' The IDP-X says 'there are no authorities.' The device has become a flashpoint in the ongoing debate about the Gray Zone autonomy — corporate legal frameworks call it murder, the Gray Zone communities call it self-defense, and the gap between those positions is the gap between people who have security and people who don't. Emergency room personnel in the Gray Zone-adjacent districts have been trained to recognize IDP-X injuries. There is no treatment protocol. There is a notification to next of kin.",
   "known_users": [
-    "Shelf community defense networks",
+    "the Gray Zone community defense networks",
     "Independent sex workers in high-risk zones",
     "Underworld residents",
     "Distributed through mutual aid networks alongside food and medicine"
   ],
   "story_hooks": [
-    "A CorpSec raid on a Shelf apartment found forty IDP-X units in various stages of assembly. The resident claims they're for community distribution. CorpSec wants to charge them with weapons manufacturing. The neighborhood is organizing their defense — legal and otherwise.",
-    "An IDP-X activation in a Tier 3 district has killed the son of a corporate executive. The device was used in legitimate self-defense during an assault. The executive is demanding the 'manufacturer' be found and prosecuted. The Shelf is closing ranks. The case is becoming a symbol for both sides.",
+    "A CorpSec raid on a the Gray Zone apartment found forty IDP-X units in various stages of assembly. The resident claims they're for community distribution. CorpSec wants to charge them with weapons manufacturing. The neighborhood is organizing their defense — legal and otherwise.",
+    "An IDP-X activation in a Tier 3 district has killed the son of a corporate executive. The device was used in legitimate self-defense during an assault. The executive is demanding the 'manufacturer' be found and prosecuted. the Gray Zone is closing ranks. The case is becoming a symbol for both sides.",
     "Someone has modified the IDP-X design with a dead man's switch — if the user's heart rate drops below a threshold, the device fires automatically. The modification is being distributed as an 'upgrade.' The implications for anyone who falls asleep wearing one are catastrophic."
   ],
   "ammunition_type": [
@@ -38,7 +38,6 @@
     "improvised",
     "shotgun",
     "explosive",
-    "shelf",
     "community",
     "tier 1"
   ],
@@ -54,7 +53,6 @@
     "TESSERA CORPONATION Elysia Sensorum Totalis",
     "The Pure Hand",
     "The Reclamation Assembly",
-    "The Shelf",
     "Vantablack PA-1 'Pacifier'",
     "Vuk Yamamoto-Darko"
   ],
@@ -74,7 +72,7 @@
       "Manual pin lock (small indent on one end) is the only external control feature",
       "Zero external electrical components — entirely passive until wireless detonation signal received"
     ],
-    "manufacturer_markings": "Hand-printed cards accompany each unit with the statement: 'If the system won't protect us, the system doesn't get to decide how we protect ourselves.' The Dentata itself bears no markings — this is intentional. Shelf weaponsmiths produce these in residential kitchens with no corporate branding or accountability trail.",
+    "manufacturer_markings": "Hand-printed cards accompany each unit with the statement: 'If the system won't protect us, the system doesn't get to decide how we protect ourselves.' The Dentata itself bears no markings — this is intentional. the Gray Zone weaponsmiths produce these in residential kitchens with no corporate branding or accountability trail.",
     "condition_typical": "Brand new units appear clinical and perfect — indistinguishable from a medical implant fresh from a black-market bioengineer. Field units are single-use only; once activated, the device no longer exists as a discrete object. Pre-activation, a Dentata shows no wear — there is no field-worn variant because the device is not maintained or modified. It is created, distributed, concealed, and detonated."
   },
   "image_prompt": "Clinical product photography of a medical silicone implant capsule, pale beige-nude bio-compatible polymer, resting on a dark matte surface. Dramatic side-lighting with cool blue-white LED backlight revealing faint metallic glint of internal firing mechanism through translucent silicone. Shallow depth of field, macro lens perspective. Cyber-noir aesthetic — the device appears innocent, clinical, legitimately medical, but the sharp shadows and high-contrast lighting suggest something lethal beneath the surface. Include a wireless ring trigger beside the capsule, brushed steel band with recessed button. Neo-noir product catalog style, sterile and cold, shot against black carbon-weave backdrop. --ar 3:2 --v 6",

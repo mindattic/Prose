@@ -13,7 +13,7 @@
   "price": "Φ0.22",
   "popularity_rank": 1,
   "slogan": "Complete Nutrition. Every Day.",
-  "cultural_context": "The NutriBloc is not food — it is infrastructure. It is the caloric foundation of the Shelf, eaten by millions daily not because anyone likes it but because it is what the dispensary provides. Shelf cooking culture exists specifically to make NutriBloc edible.",
+  "cultural_context": "The NutriBloc is not food — it is infrastructure. It is the caloric foundation of the Gray Zone, eaten by millions daily not because anyone likes it but because it is what the dispensary provides. the Gray Zone cooking culture exists specifically to make NutriBloc edible.",
   "story_hooks": [
     "The formula hasn't changed in 14 years despite three petitions to add basic flavoring, which Ringo estimates would cost Φ0.003 per unit"
   ],
@@ -22,7 +22,6 @@
     "protein",
     "consumer_good",
     "tier_1",
-    "shelf",
     "dispensary",
     "ringo",
     "cheap",
@@ -30,7 +29,6 @@
   ],
   "parent_corponation": "ringo_agritech",
   "related_entities": [
-    "Ringo Corponation",
-    "The Shelf"
+    "Ringo Corponation"
   ]
 }

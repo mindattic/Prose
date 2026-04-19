@@ -1,13 +1,14 @@
 {
   "id": "019d6143aa3f778cbe655db02cd8837a",
+  "rating": 70,
   "name": "Helix Biosystems NeuroSalve Cortical Repair Gel NR-2200",
   "brand_name": "Helix",
   "product_name": "Helix Biosystems NeuroSalve Cortical Repair Gel NR-2200",
   "type": "technology",
   "aliases": [],
   "subcategory": "medical",
-  "description": "NeuroSalve NR-2200 is a direct-application neuroprotective and axonal repair gel formulated for use in cortical trauma, neural implant interface degradation, and surgical access wound closure in neurosurgical procedures. The gel is composed of a hyaluronic acid hydrogel carrier loaded with Helix's proprietary NeuroMatrix peptide complex — a combination of brain-derived neurotrophic factor (BDNF) analogs, laminin-mimetic peptides that guide axonal regrowth, and a proprietary molecule designated HX-22 that temporarily downregulates microglial inflammatory activation at the application site. When applied directly to exposed cortical tissue or neural implant interface zones, NR-2200 forms a sustained-release depot that delivers therapeutic concentrations of its active compounds for 21 days before full biodegradation. Independent studies have demonstrated a 67% reduction in peri-implant glial scarring — the primary cause of long-term neural implant signal degradation — when NR-2200 is applied at time of implant installation.\n\nThe NR-2200 formulation is delivered in single-use 3mL syringes with a blunt-tip cortical applicator. It is temperature-sensitive and requires cold-chain storage below 4°C, a logistical constraint that has significantly limited its availability in lower-tier zones where reliable cold storage infrastructure is inconsistent. Helix Biosystems has announced a room-temperature stable variant (designated NR-2200T) for over two years, but the product has not materialized — industry analysts suspect the company is deliberately delaying the stable formulation to protect cold-chain distribution contracts with Kelpline Logistics.\n\nNeuroSalve NR-2200 has become the gold standard for high-end neural augmentation clinics, where it is applied routinely during cortical interface installations to extend implant functional lifespan. Patients who receive implants installed with NR-2200 typically see 40% longer intervals between interface maintenance procedures compared to those without — a clinically and economically significant difference. In the chop-shop augmentation market, counterfeit NR-2200 products filled with plain hyaluronic acid gel (with no active compounds) are widespread, sold at 15% of legitimate product cost.",
-  "tier_availability": "Tier 1+ (standard); Tier 2 (limited access); Tier 3+ (counterfeit prevalent)",
+  "description": "NeuroSalve NR-2200 is a direct-application neuroprotective and axonal repair gel formulated for use in cortical trauma, neural implant interface degradation, and surgical access wound closure in neurosurgical procedures. The gel is composed of a hyaluronic acid hydrogel carrier loaded with Helix\u0027s proprietary NeuroMatrix peptide complex \u2014 a combination of brain-derived neurotrophic factor (BDNF) analogs, laminin-mimetic peptides that guide axonal regrowth, and a proprietary molecule designated HX-22 that temporarily downregulates microglial inflammatory activation at the application site. When applied directly to exposed cortical tissue or neural implant interface zones, NR-2200 forms a sustained-release depot that delivers therapeutic concentrations of its active compounds for 21 days before full biodegradation. Independent studies have demonstrated a 67% reduction in peri-implant glial scarring \u2014 the primary cause of long-term neural implant signal degradation \u2014 when NR-2200 is applied at time of implant installation.\n\nThe NR-2200 formulation is delivered in single-use 3mL syringes with a blunt-tip cortical applicator. It is temperature-sensitive and requires cold-chain storage below 4\u00B0C, a logistical constraint that has significantly limited its availability in lower-tier zones where reliable cold storage infrastructure is inconsistent. Helix Biosystems has announced a room-temperature stable variant (designated NR-2200T) for over two years, but the product has not materialized \u2014 industry analysts suspect the company is deliberately delaying the stable formulation to protect cold-chain distribution contracts with Kelpline Logistics.\n\nNeuroSalve NR-2200 has become the gold standard for high-end neural augmentation clinics, where it is applied routinely during cortical interface installations to extend implant functional lifespan. Patients who receive implants installed with NR-2200 typically see 40% longer intervals between interface maintenance procedures compared to those without \u2014 a clinically and economically significant difference. In the chop-shop augmentation market, counterfeit NR-2200 products filled with plain hyaluronic acid gel (with no active compounds) are widespread, sold at 15% of legitimate product cost.",
+  "tier_availability": "Tier 1\u002B (standard); Tier 2 (limited access); Tier 3\u002B (counterfeit prevalent)",
   "developers": [
     "HELIX BIOSYSTEMS",
     "KELPLINE LOGISTICS"
@@ -26,11 +27,11 @@
     "peri-implant scarring prevention",
     "axonal regeneration after traumatic brain injury"
   ],
-  "social_impact": "The cold-chain dependency of NR-2200 has created a stark geographic divide in neural implant quality outcomes across GLMZ. In Tier 1 and 2 districts with reliable climate-controlled medical infrastructure, augmented citizens enjoy neural interfaces that maintain signal fidelity for decades. In Tier 3 and 4 zones — where power outages are common and cold storage unreliable — the same implant models installed without functional NR-2200 begin degrading within 3-5 years, producing symptoms ranging from cognitive fog and sensory distortion to seizures. This creates a predictable maintenance revenue cycle for Helix-affiliated clinics, as lower-tier augmented citizens require increasingly frequent and expensive interface recalibration procedures. The pattern has been characterized by activist groups as 'designed obsolescence by infrastructure deprivation.'",
+  "social_impact": "The cold-chain dependency of NR-2200 has created a stark geographic divide in neural implant quality outcomes across GLMZ. In Tier 1 and 2 districts with reliable climate-controlled medical infrastructure, augmented citizens enjoy neural interfaces that maintain signal fidelity for decades. In Tier 3 and 4 zones \u2014 where power outages are common and cold storage unreliable \u2014 the same implant models installed without functional NR-2200 begin degrading within 3-5 years, producing symptoms ranging from cognitive fog and sensory distortion to seizures. This creates a predictable maintenance revenue cycle for Helix-affiliated clinics, as lower-tier augmented citizens require increasingly frequent and expensive interface recalibration procedures. The pattern has been characterized by activist groups as \u0027designed obsolescence by infrastructure deprivation.\u0027",
   "story_hooks": [
-    "A Kelpline Logistics cold-chain operator reveals that NR-2200 shipments destined for Tier 3 clinics are being systematically held at the warehouse until their thermal integrity is compromised — just enough to degrade the active compounds without triggering the temperature-log alarms, and someone at either Kelpline or Helix is coordinating it",
-    "A neural implant patient in the Tier 4 zone has been experiencing unusual sensory enhancement rather than the expected degradation — analysis reveals their counterfeit NR-2200 contained an unknown compound that is producing an entirely uncharacterized effect on cortical interface tissue, and the source of the compound is untraceable",
-    "The delayed NR-2200T room-temperature formulation actually exists and has passed internal stability testing — a Helix Biosystems insider wants to get the suppressed product data to a public health organization, but the data is stored on systems that Cinderblock AI's security protocols actively monitor"
+    "A Kelpline Logistics cold-chain operator reveals that NR-2200 shipments destined for Tier 3 clinics are being systematically held at the warehouse until their thermal integrity is compromised \u2014 just enough to degrade the active compounds without triggering the temperature-log alarms, and someone at either Kelpline or Helix is coordinating it",
+    "A neural implant patient in the Tier 4 zone has been experiencing unusual sensory enhancement rather than the expected degradation \u2014 analysis reveals their counterfeit NR-2200 contained an unknown compound that is producing an entirely uncharacterized effect on cortical interface tissue, and the source of the compound is untraceable",
+    "The delayed NR-2200T room-temperature formulation actually exists and has passed internal stability testing \u2014 a Helix Biosystems insider wants to get the suppressed product data to a public health organization, but the data is stored on systems that Cinderblock AI\u0027s security protocols actively monitor"
   ],
   "tags": [
     "medical",
@@ -52,15 +53,6 @@
     "tier 2",
     "tier 3"
   ],
-  "parent_corponation": "",
-  "related_entities": [
-    "Axolotl Regenerative Suite",
-    "Cinderblock Ai",
-    "Doru Fofana-Câmpeanu",
-    "GLMZ",
-    "Helix Biosystems",
-    "Kelpline Logistics",
-    "Marrowvault Cryogenics",
-    "WELLSPRING"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

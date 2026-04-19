@@ -1,0 +1,142 @@
+{
+  "id": "b907bfeba762c64ee4c8af02969b8f09",
+  "rating": 80,
+  "type": "character",
+  "name": "Bijou Kozlov-Aidoo",
+  "aliases": [],
+  "species": "human",
+  "gender": "",
+  "pronouns": "",
+  "role": "Private Investigator",
+  "age": 0,
+  "status": "alive",
+  "location": "A darkroom-office in Old Harbor, chemicals and prints hanging from clotheslines alongside case notes",
+  "description": "Bijou Kozlov-Aidoo investigates through the lens. Where other PIs chase data streams or neural traces, Bijou captures light on silver halide crystals and reads the truth in the chemistry. Her methods are considered antiquated by everyone who hasn\u0027t needed them, and revelatory by everyone who has.\n\nHer analog approach wasn\u0027t a philosophical choice \u2014 it was pragmatic. Twenty years ago, she discovered that digital surveillance countermeasures, which are ubiquitous in GLMZ, are calibrated exclusively to detect and defeat electronic sensors. A chemical-process camera doesn\u0027t emit electromagnetic signatures, doesn\u0027t connect to any network, and produces images that can\u0027t be remotely deleted or altered. In a world where digital evidence is routinely questioned, her chemical photographs carry a weight that pixel-based images can\u0027t match.\n\nShe operates from a converted warehouse space in Old Harbor that functions simultaneously as her office, her darkroom, and her archive. The archive is her masterpiece \u2014 decades of photographs of GLMZ\u0027s streets, buildings, and people, organized with a librarian\u0027s precision. She has been contacted by historians, journalists, and investigators who need visual evidence of the past, and her archive has proven or disproven alibis, established timelines, and documented changes to the cityscape that no digital record captured. She is, without fully intending it, becoming one of the city\u0027s most important unofficial historians.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0,
+      "ideal": 0,
+      "id": 0,
+      "shadow": 0,
+      "mask": 0,
+      "ghost": 0
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": [],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
+  },
+  "relationships": [
+    {
+      "name": "Arseniy Delgado-Opoku",
+      "type": "gallery owner",
+      "description": "Displays Bijou\u0027s non-case photographs in his Old Harbor gallery \u2014 the only person who sees her artistic work, and quietly in love with her",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "Kofi Nakamura-Singh",
+      "type": "fellow analog investigator",
+      "description": "The only other PI she fully respects \u2014 they occasionally collaborate on cases that need both eyes and feet on the ground",
+      "emotional_core": "",
+      "story_tension": ""
+    }
+  ],
+  "story_hooks": [
+    "Reviewing old photographs, Bijou notices a face appearing in the background of images taken across different districts and years \u2014 someone has been present at dozens of crime scenes and nobody noticed until now",
+    "A client wants her to photograph something in the Underbelly that hasn\u0027t been documented since the city was built \u2014 the conditions will destroy her equipment but the subject could change everything",
+    "Her archive is targeted for destruction by someone whose presence in decades of photographs constitutes evidence of crimes spanning twenty years"
+  ],
+  "narrative_function": "",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "Independent \u2014 works through word of mouth only, no mesh presence",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": []
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {},
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "tags": [
+    "character",
+    "private_investigator",
+    "photographer",
+    "analog",
+    "old_harbor",
+    "archive",
+    "human"
+  ],
+  "physical_description": {
+    "heritage": "",
+    "height_cm": 0,
+    "weight_kg": 0,
+    "build": "",
+    "hair_color": "",
+    "hair_style": "",
+    "hair_length": "",
+    "eye_color": "",
+    "skin_tone": "",
+    "complexion": "",
+    "distinguishing_marks": [],
+    "visible_augmentations": "",
+    "posture_movement": "",
+    "clothing_style": ""
+  },
+  "image_prompt": "",
+  "dalle3_prompt": "",
+  "genetic_ancestry": {},
+  "ancestry_detail": {}
+}
