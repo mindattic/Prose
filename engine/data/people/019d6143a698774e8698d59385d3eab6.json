@@ -9,8 +9,8 @@
   "role": "Black Market Pharmacist / Community Anchor",
   "age": 61,
   "status": "active",
-  "location": "The Shelf, near Ashland and Division",
-  "description": "Mika Najjar occupies a converted shipping container wedged between a collapsed overpass and a recycled-water dispensary in the lower Shelf, where she has run an unlicensed pharmacy and informal clinic for over two decades. She is a broad, deliberate woman with close-cropped silver hair, deep brown skin mapped with the faint subcutaneous tracery of outdated biomonitor implants she can no longer afford to remove. Her hands are almost always stained at the fingertips from compounding work — pigments from synthesized capsule coatings, chemical residues she's stopped trying to scrub away entirely. She dresses practically in layered work tunics and canvas aprons with too many pockets, and she moves through the Shelf's crowds with the unhurried authority of someone who knows every face and every debt.\n\nShe was, before the Meridian Core's healthcare privatization sweeps of the 2060s, a licensed pharmacist with a small legitimate dispensary. When her license was revoked under the Consolidated Medical Compliance Act — a corporate-drafted policy that effectively eliminated independent practitioners in favor of Spire-affiliated MedCorp franchises — she did not relocate or reinvent herself. She stayed, and she went underground, and she became something the district needed far more than a franchise: someone who actually knew her patients by name. Her operation is an open secret, tolerated by local enforcers partly out of genuine community loyalty and partly because Perpetua has never been above keeping careful records of what those same enforcers buy from her.\n\nShe is not sentimental about what she does. She charges what the market will bear from those who can pay and nothing from those who cannot, and she keeps a handwritten ledger — actual paper, a deliberate choice — that tracks every transaction, every favor owed, every outstanding debt in both directions. The ledger is partly practical and partly philosophical: she believes that forgetting what you owe people is the first step toward becoming the kind of person who built the world that drove her underground in the first place.",
+  "location": "the Gray Zone, near Ashland and Division",
+  "description": "Mika Najjar occupies a converted shipping container wedged between a collapsed overpass and a recycled-water dispensary in the Gray Zone, where she has run an unlicensed pharmacy and informal clinic for over two decades. She is a broad, deliberate woman with close-cropped silver hair, deep brown skin mapped with the faint subcutaneous tracery of outdated biomonitor implants she can no longer afford to remove. Her hands are almost always stained at the fingertips from compounding work — pigments from synthesized capsule coatings, chemical residues she's stopped trying to scrub away entirely. She dresses practically in layered work tunics and canvas aprons with too many pockets, and she moves through the Gray Zone's crowds with the unhurried authority of someone who knows every face and every debt.\n\nShe was, before the Meridian Core's healthcare privatization sweeps of the 2060s, a licensed pharmacist with a small legitimate dispensary. When her license was revoked under the Consolidated Medical Compliance Act — a corporate-drafted policy that effectively eliminated independent practitioners in favor of Spire-affiliated MedCorp franchises — she did not relocate or reinvent herself. She stayed, and she went underground, and she became something the district needed far more than a franchise: someone who actually knew her patients by name. Her operation is an open secret, tolerated by local enforcers partly out of genuine community loyalty and partly because Perpetua has never been above keeping careful records of what those same enforcers buy from her.\n\nShe is not sentimental about what she does. She charges what the market will bear from those who can pay and nothing from those who cannot, and she keeps a handwritten ledger — actual paper, a deliberate choice — that tracks every transaction, every favor owed, every outstanding debt in both directions. The ledger is partly practical and partly philosophical: she believes that forgetting what you owe people is the first step toward becoming the kind of person who built the world that drove her underground in the first place.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -41,10 +41,10 @@
       "She has convinced herself she has no ego investment in being needed, which is not entirely true",
       "She mistrusts augmentation so reflexively that she sometimes underserves patients who rely on it"
     ],
-    "secret": "The original Consolidated Medical Compliance Act audit that revoked her license was triggered by an anonymous tip. She has always suspected it came from a former colleague she mentored, and she has never confronted him, partly because she's not certain, and partly because he now runs the only legitimate clinic within four kilometers of the Shelf and his patients would suffer if she destroyed him."
+    "secret": "The original Consolidated Medical Compliance Act audit that revoked her license was triggered by an anonymous tip. She has always suspected it came from a former colleague she mentored, and she has never confronted him, partly because she's not certain, and partly because he now runs the only legitimate clinic within four kilometers of the Gray Zone and his patients would suffer if she destroyed him."
   },
   "speech_patterns": {
-    "vocabulary": "Precise medical terminology mixed with Shelf vernacular; she code-switches fluidly but never condescendingly. Uses declarative sentences. Rarely asks questions she doesn't already know the answer to.",
+    "vocabulary": "Precise medical terminology mixed with the Gray Zone vernacular; she code-switches fluidly but never condescendingly. Uses declarative sentences. Rarely asks questions she doesn't already know the answer to.",
     "cadence": "Slow, measured, with long pauses before significant statements. Never rushes. The pauses themselves communicate weight.",
     "verbal_tics": [
       "Begins corrections with 'Now—' followed by a pause",
@@ -64,7 +64,7 @@
       "type": "Complicated professional alliance",
       "description": "Perpetua supplies Dae-jung with medications he can't source through legitimate channels and occasionally patches up his associates; he provides a layer of informal protection she refuses to formally acknowledge. Neither trusts the other entirely.",
       "emotional_core": "Mutual respect built on mutual utility, with an undercurrent of ideological friction — she thinks he's building something that will eventually eat its own people; he thinks she's too proud to admit she needs protection.",
-      "story_tension": "If Dae-jung's operations escalate to the point of drawing Spire enforcement into the Shelf, Perpetua's clinic becomes collateral. She will have to decide whether to warn him, cut contact, or something more drastic."
+      "story_tension": "If Dae-jung's operations escalate to the point of drawing Spire enforcement into the Gray Zone, Perpetua's clinic becomes collateral. She will have to decide whether to warn him, cut contact, or something more drastic."
     },
     {
       "name": "Unnamed former colleague",
@@ -74,7 +74,7 @@
       "story_tension": "If his clinic comes under threat — corporate restructuring, gang pressure, anything — she will be forced to decide whether to help him, and the decision will require her to finally confront what she believes about him."
     },
     {
-      "name": "A rotating cast of Shelf adolescents",
+      "name": "A rotating cast of the Gray Zone adolescents",
       "type": "Informal apprentices",
       "description": "She is perpetually training two or three young people in basic compounding, triage, and record-keeping, never calling it apprenticeship, always framing it as 'helping out.'",
       "emotional_core": "The closest thing she allows herself to hope — the belief that knowledge can be passed down and that something of what she's built will survive her.",
@@ -82,16 +82,16 @@
     }
   ],
   "story_hooks": [
-    "A new synthetic compound is circulating in the Shelf with effects she can't identify from her equipment — people aren't dying, but they're changing in ways that alarm her. She needs someone with better resources to analyze it.",
+    "A new synthetic compound is circulating in the Gray Zone with effects she can't identify from her equipment — people aren't dying, but they're changing in ways that alarm her. She needs someone with better resources to analyze it.",
     "The handwritten ledger goes missing. The ledger contains information that could destroy, implicate, or protect dozens of people across multiple factions.",
     "A patient dies from something she prescribed correctly — which means either her supply chain has been compromised or someone tampered with the compound after it left her hands.",
-    "MedCorp launches a 'community health initiative' in the Shelf that is transparently designed to price her out and surveil her patient base. She has to decide how to respond without becoming the kind of person she despises.",
+    "MedCorp launches a 'community health initiative' in the Gray Zone that is transparently designed to price her out and surveil her patient base. She has to decide how to respond without becoming the kind of person she despises.",
     "Someone from her pre-underground life — a patient, a former colleague, a regulator — arrives at her container door needing help they can't get anywhere else."
   ],
-  "narrative_function": "Community anchor and moral lodestone for the Shelf; represents the tension between institutional legitimacy and genuine care; provides a grounded, unglamorous counterpoint to the district's more spectacular operators. Her ledger functions as a plot device and thematic object — the idea that someone is still keeping honest accounts in a world that has abandoned the practice.",
+  "narrative_function": "Community anchor and moral lodestone for the Gray Zone; represents the tension between institutional legitimacy and genuine care; provides a grounded, unglamorous counterpoint to the district's more spectacular operators. Her ledger functions as a plot device and thematic object — the idea that someone is still keeping honest accounts in a world that has abandoned the practice.",
   "augmentations": "Outdated subcutaneous biomonitor mesh (non-functional, too expensive to remove safely),Magnification implants in both eyes, medical grade, aging — she has to blink deliberately to shift focal depth and sometimes the calibration drifts,A single haptic feedback implant in her right index finger, used for compound consistency testing",
-  "daily_life": "Wakes before dawn to complete compounding work in the quiet, before the day's traffic begins. Opens the container at first light. Sees patients on a walk-in basis until midday, then by the informal appointment system managed by a rotating neighborhood teenager who acts as de facto receptionist. Eats one substantial meal in the early afternoon, always cooked, never from a vendor, a point of stubborn principle. Spends evenings doing inventory, updating the ledger, and occasionally sitting outside the container on a folded chair watching the Shelf's street life with the patient attention of someone conducting ongoing research into human nature. Sleeps lightly and wakes easily.",
-  "affiliation": "Independent; informally aligned with Shelf community interests; maintains transactional relationships with multiple factions without belonging to any",
+  "daily_life": "Wakes before dawn to complete compounding work in the quiet, before the day's traffic begins. Opens the container at first light. Sees patients on a walk-in basis until midday, then by the informal appointment system managed by a rotating neighborhood teenager who acts as de facto receptionist. Eats one substantial meal in the early afternoon, always cooked, never from a vendor, a point of stubborn principle. Spends evenings doing inventory, updating the ledger, and occasionally sitting outside the container on a folded chair watching the Gray Zone's street life with the patient attention of someone conducting ongoing research into human nature. Sleeps lightly and wakes easily.",
+  "affiliation": "Independent; informally aligned with the Gray Zone community interests; maintains transactional relationships with multiple factions without belonging to any",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -229,7 +229,7 @@
     "Face": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -251,16 +251,15 @@
     "The Marrow Market",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Hearthstone Firearms Youth-20 'First Step'",
-    "The Shelf",
     "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Stratum",
     "Silver",
     "Haze Johansson",
     "The Pure Hand"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
-    "heritage": "Predominantly South Asian (60%) with significant Indigenous American (22.5%) and Middle Eastern (17.5%) ancestry, reflecting the Ubiquitous Diaspora. Her genetic makeup manifests in rich deep brown skin with golden and olive undertones — the South Asian foundation warmed by Middle Eastern contribution and tempered by Indigenous American heritage. Facial bone structure shows the characteristic blend: broader cheekbones and defined jawline from Indigenous American ancestry, refined by South Asian facial architecture, with subtle Middle Eastern angularity contributing to her distinctive profile. This tri-continental blend creates a complexion with remarkable depth, weathered by Shelf sun exposure and decades of chemical handling.",
+    "heritage": "Predominantly South Asian (60%) with significant Indigenous American (22.5%) and Middle Eastern (17.5%) ancestry, reflecting the Ubiquitous Diaspora. Her genetic makeup manifests in rich deep brown skin with golden and olive undertones — the South Asian foundation warmed by Middle Eastern contribution and tempered by Indigenous American heritage. Facial bone structure shows the characteristic blend: broader cheekbones and defined jawline from Indigenous American ancestry, refined by South Asian facial architecture, with subtle Middle Eastern angularity contributing to her distinctive profile. This tri-continental blend creates a complexion with remarkable depth, weathered by the Gray Zone sun exposure and decades of chemical handling.",
     "height_cm": 168,
     "weight_kg": 82,
     "build": "Broad-shouldered and substantial, with the dense musculature of someone who has done physical labor for decades. Not heavy, but solid — her frame fills space with quiet authority. Slight forward hunch from years bent over compounding work, but she carries herself with deliberate uprightness when moving through crowds.",
@@ -268,7 +267,7 @@
     "hair_style": "Close-cropped, precise, maintained with clippers — practical and economical",
     "hair_length": "Short",
     "eye_color": "Deep brown, with faint metallic shimmer at the iris edge from magnification implants; pupils sometimes lag slightly when refocusing",
-    "skin_tone": "Deep warm brown with golden and olive undertones, the rich result of South Asian (60%), Indigenous American (22.5%), and Middle Eastern (17.5%) genetic blend, weathered by Shelf sun exposure and chemical handling",
+    "skin_tone": "Deep warm brown with golden and olive undertones, the rich result of South Asian (60%), Indigenous American (22.5%), and Middle Eastern (17.5%) genetic blend, weathered by the Gray Zone sun exposure and chemical handling",
     "complexion": "Lived-in face bearing deep creases around mouth and eyes, faint webbing of expression lines mapping decades of focused work. Facial structure distinctly reflects her ancestry: slightly broader cheekbones and strong defined jawline characteristic of Indigenous American heritage, refined by South Asian bone structure, with subtle angular definition from Middle Eastern contribution. Skin texture uneven from decades of minor chemical exposure; faint hyperpigmentation across knuckles and forearms. No makeup. Her gaze is direct and assessing.",
     "distinguishing_marks": [
       "Faint webbed subcutaneous scarring across both temples and upper chest — visible faint lines under skin where outdated biomonitor mesh is embedded, like a second circulatory system drawn in pale ink",
@@ -280,7 +279,7 @@
     "posture_movement": "Moves with deliberate economy — no wasted motion. Steps carefully through crowds as if counting invisible distances. Often still, observing. When engaged in work (compounding, examining a patient), her movements become precise and almost meditative. Sits forward, elbows on knees, when listening. Her hands are always slightly elevated when at rest, a habitual posture from decades of precision work.",
     "clothing_style": "Tier 4 practical: layered work tunics in muted colors (grays, dark blues, rust browns) over long-sleeved base shirts — protection from chemical splash more than fashion. Canvas apron with deep cargo pockets, always worn, stained with use and age. Reinforced work pants in heavy cotton, worn at the knees. Soft-soled shoes designed for standing long hours. No jewelry. A thin cord around her neck holding a small handmade charm — wood and copper wire, possibly African in origin — visible only if she leans forward. Everything well-maintained but visibly old, patched at seams, deliberately stitched by her own hand."
   },
-  "image_prompt": "Mika Najjar, 168cm tall, broad-shouldered chemical compound specialist in the Great Lakes Metropolitan Zone, 2226. Deep warm brown skin with golden and olive undertones reflecting South Asian, Indigenous American, and Middle Eastern ancestry — weathered from decades of Shelf sun and chemical work. Strong defined jawline and broad cheekbones showing Indigenous American-South Asian blend with subtle Middle Eastern angularity. Silver-gray close-cropped hair, lined face with deep creases mapping a life of focused precision work. Dark brown eyes with faint metallic implant shimmer, faint subcutaneous biomonitor mesh tracery visible at temples. Stained fingertips from compound work, white jaw scar, burn mark on left hand. Wearing layered gray work tunics, heavy canvas apron with deep pockets, reinforced cotton pants, soft-soled work shoes. Small wooden and copper-wire charm on cord at neck. Sits forward with elbows on knees in underground compounding lab, warm amber work lighting casting shadows across her assessing gaze. Hands elevated, precise and meditative. GLMZ 2200s underground aesthetic, worn practical clothing, lived-in authority. --ar 2:3 --v 6",
+  "image_prompt": "Mika Najjar, 168cm tall, broad-shouldered chemical compound specialist in the Great Lakes Metropolitan Zone, 2226. Deep warm brown skin with golden and olive undertones reflecting South Asian, Indigenous American, and Middle Eastern ancestry — weathered from decades of the Gray Zone sun and chemical work. Strong defined jawline and broad cheekbones showing Indigenous American-South Asian blend with subtle Middle Eastern angularity. Silver-gray close-cropped hair, lined face with deep creases mapping a life of focused precision work. Dark brown eyes with faint metallic implant shimmer, faint subcutaneous biomonitor mesh tracery visible at temples. Stained fingertips from compound work, white jaw scar, burn mark on left hand. Wearing layered gray work tunics, heavy canvas apron with deep pockets, reinforced cotton pants, soft-soled work shoes. Small wooden and copper-wire charm on cord at neck. Sits forward with elbows on knees in underground compounding lab, warm amber work lighting casting shadows across her assessing gaze. Hands elevated, precise and meditative. GLMZ 2200s underground aesthetic, worn practical clothing, lived-in authority. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 60,
     "Indigenous American": 22.5,

@@ -27,7 +27,7 @@
     "feel": "The Brinewell operates at a different tempo than the city above. Sound behaves wrongly here — dampened in some directions, amplified in others — and the constant ambient moisture means that every surface is slightly slick, every material slightly softened. The bioluminescent glow is beautiful in a way that feels almost manipulative, as though the place is performing serenity to compensate for its genuine precariousness.\n\nThe community here has a self-possessed insularity that isn't quite hostile but isn't warm either. Newcomers are watched. Long-termers are known by name, platform number, and skill set. The absence of reliable BCI connectivity creates a strange social texture — conversations happen face-to-face in ways that feel almost archaic, and the resulting community bonds are tighter and more fractious than anything in the networked city above.",
     "tags": []
   },
-  "demographics": "Approximately 800-1,200 permanent residents on any given cycle, with a transient population of several hundred more moving through. Heavily mixed ethnicity and origin — a significant population of second-generation migrants from Gulf Coast climate-displacement, alongside long-term Chicago Shelf overflow residents. A notable subgroup of voluntary disconnects, people who have had their BCI hardware removed or suppressed. Median tier: 1-2.",
+  "demographics": "Approximately 800-1,200 permanent residents on any given cycle, with a transient population of several hundred more moving through. Heavily mixed ethnicity and origin — a significant population of second-generation migrants from Gulf Coast climate-displacement, alongside long-term Chicago the Gray Zone overflow residents. A notable subgroup of voluntary disconnects, people who have had their BCI hardware removed or suppressed. Median tier: 1-2.",
   "economy": "Informal barter supplemented by small Φ flows from surface-side patrons. Primary economic activities include water management labor, algae cultivation and processing (sold to surface markets through intermediaries), repair and salvage work, and discreet storage and courier relay services for parties who prefer undocumented logistics. Carrion Logistics maintains informal arrangements worth an estimated Φ40,000-60,000 annually through the community.",
   "power_structure": "A loose Pump Council of seven engineers who control access to the mechanical systems theoretically holds authority, but actual governance is distributed and contentious. Platform captains hold informal sway over their immediate neighborhoods. No corponation has formal claim — Ferrogate Security has twice attempted to establish a presence and twice been encouraged to leave through means that were never officially reported.",
   "dangers": [
@@ -50,7 +50,7 @@
   ],
   "connections": {
     "adjacent_to": [
-      "The Shelf",
+      "the Gray Zone",
       "The Lakeshore Corridor",
       "The Undertow",
       "Walker's Landing"
@@ -61,7 +61,7 @@
   "frequented_by": [
     "Voluntary disconnects and BCI-suppressed individuals seeking off-grid community",
     "Carrion Logistics off-manifest couriers and their contacts",
-    "Shelf-tier residents priced out of even standard low-tier surface housing",
+    "the Gray Zone-tier residents priced out of even standard low-tier surface housing",
     "Off-books medical practitioners and their patients",
     "Salvage operators using the complex as a staging base for deeper lake infrastructure work"
   ],
@@ -99,8 +99,7 @@
     "rights",
     "food",
     "water",
-    "lake",
-    "shelf"
+    "lake"
   ],
   "related_entities": [
     "Zheng-dao Bioelectric",
@@ -116,5 +115,7 @@
     "Ringo DV-4 'Courier'",
     "Gravimetric Collapse Charge GCC-9",
     "Nightlight"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

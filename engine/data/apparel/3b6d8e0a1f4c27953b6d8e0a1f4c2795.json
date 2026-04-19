@@ -1,6 +1,6 @@
 {
   "id": "3b6d8e0a1f4c27953b6d8e0a1f4c2795",
-  "name": "Coldseam The Shelf Inventor's Workshop Full Kit",
+  "name": "Coldseam the Gray Zone Inventor's Workshop Full Kit",
   "type": "apparel",
   "category": "outfit",
   "description": "A Tier 1 original: heavy patched canvas work jacket in faded rust and grey, every pocket re-stitched with salvaged denim and sealed with mismatched industrial snaps, worn over a thermal knit base layer with hand-repaired elbow reinforcements. Loose utility trousers in oil-stained olive canvas carry zip-pocket strips and a bungee-cord tool loop at the hip. A leather-and-rubber headband holds a scratch-built flip-lens magnifier. Boots are two different brands, resoled with vulcanized rubber strips.\n\nEvery repair tells a different story. The jacket's inner lining is covered in handwritten schematics in faded marker — a living notebook.",
@@ -16,7 +16,7 @@
   "functionality": "Multi-pocket canvas jacket with industrial-snap closures, bungee tool loop at hip, flip-lens magnifier headband for fine work, vulcanized rubber resoled boots for acid-rain resistance, inner lining used as schematic notebook.",
   "what_it_says": "Everything I have, I built — including the outfit.",
   "worn_by": [
-    "Shelf inventors and tinkerers",
+    "the Gray Zone inventors and tinkerers",
     "unlicensed tech scavengers",
     "self-taught engineers in reclaimed zones"
   ],
@@ -25,14 +25,13 @@
   "aug_compatible": true,
   "gene_compatible": false,
   "story_hooks": [
-    "The schematics written inside the jacket lining describe a device that shouldn't be possible with Shelf-available materials — but the inventor is almost finished building it.",
+    "The schematics written inside the jacket lining describe a device that shouldn't be possible with the Gray Zone-available materials — but the inventor is almost finished building it.",
     "One of the mismatched boots was taken off a dead CorpSec officer; the sole still has a tracking chip embedded in it.",
     "A Tier 4 corporate talent scout has been photographing this person's workshop from a distance for weeks, debating whether to make contact."
   ],
   "tags": [
     "apparel",
     "outfit",
-    "shelf",
     "inventor",
     "scavenged",
     "self_made",

@@ -3,7 +3,7 @@
   "name": "Patchwork Scrap Trousers (Market-Made)",
   "type": "apparel",
   "category": "pants",
-  "description": "Assembled by Shelf market tailors from whatever fabric scraps are available that week — upholstery remnants, old uniform panels, hotel linen, synthetic fur offcuts, torn billboard vinyl. No two pairs are identical. The construction is functional if rough: hand-stitched seams, mismatched colors, an elastic waistband that does its best. Surprisingly warm.",
+  "description": "Assembled by the Gray Zone market tailors from whatever fabric scraps are available that week — upholstery remnants, old uniform panels, hotel linen, synthetic fur offcuts, torn billboard vinyl. No two pairs are identical. The construction is functional if rough: hand-stitched seams, mismatched colors, an elastic waistband that does its best. Surprisingly warm.",
   "tier_association": "Tier 1",
   "materials": [
     "mixed scrap fabric",
@@ -13,11 +13,11 @@
   "functionality": "none",
   "what_it_says": "You bought local. You support the people in your block who know how to make something from nothing.",
   "worn_by": [
-    "Shelf residents",
+    "the Gray Zone residents",
     "market-goers",
-    "children on the Shelf"
+    "children in the Gray Zone"
   ],
-  "manufacturer": "Various Shelf market tailors",
+  "manufacturer": "Various the Gray Zone market tailors",
   "price_range": "Φ3 - Φ7",
   "aug_compatible": false,
   "gene_compatible": true,
@@ -32,7 +32,6 @@
     "patchwork",
     "handmade",
     "market",
-    "shelf",
     "scrap"
   ],
   "parent_corponation": "",
@@ -58,7 +57,7 @@
       "Functional weathering and patina from use"
     ],
     "tier_indicator": "Tier 5 — Sub-grade/ungoverned. These signal resourcefulness and survival rather than wealth or status. A statement of self-sufficiency outside corpo supply chains.",
-    "cultural_context": "Street-level Shelf market aesthetic. Worn by Diaspora communities, independent salvage operators, artists, and those outside the corp-consumer ecosystem. Signals rejection of mass production and embrace of DIY/community textile culture. Popular among Iowan Behemoth scrappers and waste management workers.",
+    "cultural_context": "Street-level the Gray Zone market aesthetic. Worn by Diaspora communities, independent salvage operators, artists, and those outside the corp-consumer ecosystem. Signals rejection of mass production and embrace of DIY/community textile culture. Popular among Iowan Behemoth scrappers and waste management workers.",
     "condition_typical": "Perpetually broken-in and weathered. Seams show stress, patches display fading and creasing, synthetic fur sections are matted from use. Each pair accumulates its own unique wear pattern. Typical owner might reinforce weak seams or add new patches over time."
   },
   "image_prompt": "Fashion photograph of patchwork scrap trousers on a diverse, augmented model with visible subcutaneous tech-lines along the neck. Model positioned in profile against a derelict Great Lakes warehouse backdrop, neon green and sodium orange industrial lighting casting sharp shadows on the chaotic textile patches. Close-up detail showing hand-stitched seams and mismatched fabric textures. Worn leather boots visible at ankle. Moody, documentary-style neo-noir streetwear photography. Dark concrete floor, faint Φ currency advertisement on weathered wall in background. --ar 2:3 --v 6",

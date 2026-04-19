@@ -9,8 +9,8 @@
   "role": "Lower Dock Crew enforcer — Prologue survivor. Lost left arm, shattered left knee.",
   "age": 29,
   "status": "active",
-  "location": "The Shelf — lower loading docks, near Western and Division",
-  "description": "Mariposa Bustamante-Volkov is enormous — two meters, 140 kilos, sub-dermal plating across his chest and shoulders that makes him look like a man wearing a building. Before the crew he was a construction worker in the Meridian Core redevelopment zone, the kind of honest labor that builds slabs of muscle and a simple pride in being useful. He fell into the crew because Marcus was a childhood friend and childhood loyalty in the Shelf is a debt you pay with your body.\n\nKyle took his left arm off with a single rising cut and destroyed his left knee with the hand cannon. Tomasz now walks with a hydraulic brace that hisses with every step and has a surplus military arm that is technically too powerful for his frame — it dislocates his shoulder if he punches too hard.\n\nHe is the quietest member of the crew. He was quiet before Kyle too. He has a wife, Nessa, who works a food processing line on Tier Three. They have no children. Nessa wants children. Tomasz does not think he should bring children into a life where he comes home with fewer original parts each year. This is the most thoughtful thing about him and he has never said it out loud.\n\nHe didn't want to beat Demyan Morozov. He stood in the back. Kyle broke his knee anyway. He does not resent Kyle for this. He resents himself for being there.",
+  "location": "the Gray Zone — lower loading docks, near Western and Division",
+  "description": "Mariposa Bustamante-Volkov is enormous — two meters, 140 kilos, sub-dermal plating across his chest and shoulders that makes him look like a man wearing a building. Before the crew he was a construction worker in the Meridian Core redevelopment zone, the kind of honest labor that builds slabs of muscle and a simple pride in being useful. He fell into the crew because Marcus was a childhood friend and childhood loyalty in the Gray Zone is a debt you pay with your body.\n\nKyle took his left arm off with a single rising cut and destroyed his left knee with the hand cannon. Tomasz now walks with a hydraulic brace that hisses with every step and has a surplus military arm that is technically too powerful for his frame — it dislocates his shoulder if he punches too hard.\n\nHe is the quietest member of the crew. He was quiet before Kyle too. He has a wife, Nessa, who works a food processing line on Tier Three. They have no children. Nessa wants children. Tomasz does not think he should bring children into a life where he comes home with fewer original parts each year. This is the most thoughtful thing about him and he has never said it out loud.\n\nHe didn't want to beat Demyan Morozov. He stood in the back. Kyle broke his knee anyway. He does not resent Kyle for this. He resents himself for being there.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -212,7 +212,7 @@
     "Seeker": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -231,7 +231,6 @@
   "related_entities": [
     "The Meridian Core",
     "Meridian Core",
-    "The Shelf",
     "TESSERA PG-2 'Signature'",
     "NeuralPath VaultPay Subdermal Transaction Node",
     "Honest Burger",
@@ -240,7 +239,7 @@
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Slagworks Industrial"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Mixed heritage reflecting the Ubiquitous Diaspora: 46.3% Hispanic/Latin American, 24.5% South Asian, 20.5% Eastern European, and 8.7% East Asian. The dominant Latin American structure provides broad cheekbones and strong jaw foundation, while South Asian ancestry adds refined bone angularity and depth to the midface. Eastern European genetics contribute angular, chiseled features and prominent brow structure. East Asian influence subtly shapes the eye set and orbital bones. The result is a striking, architecturally complex phenotype with strong definition across all facial planes.",
     "height_cm": 200,

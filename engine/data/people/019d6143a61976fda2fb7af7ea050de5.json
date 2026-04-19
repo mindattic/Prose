@@ -1,5 +1,6 @@
 {
   "id": "019d6143a61976fda2fb7af7ea050de5",
+  "rating": 60,
   "type": "character",
   "name": "Ember Árnason-Ueda",
   "aliases": [],
@@ -55,7 +56,11 @@
       "I'm not a doctor. I want to be clear about that. I'm also the person who's going to keep you from losing that arm, so let's do both things at once.",
       "That's the easy part. The hard part is whatever put you in this situation in the first place, and that one I can't fix.",
       "You want the version where I explain the pathology or the version where I tell you what I'm going to do about it? Because I only have time for one."
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [
     {
@@ -82,7 +87,7 @@
   ],
   "story_hooks": [
     "A patient arrives with a wound pattern that matches three other cases Gavril has treated in the past month — all from different factions, all claiming different incidents, all with the same unusual tissue damage signature",
-    "The documentation he's been sitting on for two years has become newly relevant — the physician he reported is now involved in a public health initiative in The Shelf",
+    "The documentation he's been sitting on for two years has become newly relevant — the physician he reported is now involved in a public health initiative in the Gray Zone",
     "Someone has started leaving supplies outside his container door — high-quality, expensive, exactly what he's been running low on — with no note and no explanation",
     "A child patient requires a procedure that is genuinely beyond his current capability, and the nearest licensed facility has a policy that will turn them away"
   ],
@@ -234,24 +239,11 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Dispatch-45 'Last Word'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [
-    "Meridian Munitions Dispatch-45 'Last Word'"
-  ],
-  "related_entities": [
-    "Ringo Corponation Haptic Signature Recorder",
-    "Meridian Core",
-    "TESSERA PG-2 'Signature'",
-    "The Shelf",
-    "Irontide Tidal Energy",
-    "Handed",
-    "Harbor Fish Shack",
-    "Arcturus KS-7 'Nursery'",
-    "The Pure Hand"
-  ],
-  "district": "Old Harbor",
   "physical_description": {
     "heritage": "Predominantly East Asian (62.3%) with significant Sub-Saharan African (19.8%) and Middle Eastern (17.9%) ancestry; the genetic blend creates a warm, complex skin tone where East Asian luminosity meets Sub-Saharan African depth and richness, with Middle Eastern angularity defining the facial structure",
     "height_cm": 172,
@@ -272,17 +264,12 @@
     "clothing_style": "Tier 4 working-class practical: dark matte synthweave cargo pants with multiple pockets for tools and supplies; plain gray or dark blue long-sleeved fitted shirt, sometimes rolled up during work; worn black synthetic jacket with internal pockets for equipment; no visible branding; sturdy grey composite boots broken in from heavy use; overall appearance deliberately unremarkable and functional"
   },
   "image_prompt": "Ember Árnason-Ueda, GLMZ, portrait of a lean 172cm figure with warm caramel-bronze skin blending East Asian luminosity with Sub-Saharan African depth and Middle Eastern angularity; short dark brown hair close to scalp, near-black eyes with warm undertones, high prominent cheekbones, angular tapered jawline, pale undertones from sleep deprivation, faint scar from left jaw to collarbone; wearing dark matte synthweave cargo pants, fitted dark blue long-sleeved shirt, worn black synthetic jacket, grey composite boots; hands in neutral ready position with calloused fingertips; upright posture with environmental awareness in gaze; Great Lakes Metropolitan Zone neon-lit street setting, cool blue and amber lighting emphasizing warm skin tones, cinematic depth, mood of careful precision and street survival, moody atmospheric lighting --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "East Asian": 62.3,
     "Sub-Saharan African": 19.8,
     "Middle Eastern": 17.9
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "East Asian": {
       "Japanese": {
@@ -314,6 +301,5 @@
         "Iraqi": 10.6
       }
     }
-  },
-  "tier": "3"
+  }
 }

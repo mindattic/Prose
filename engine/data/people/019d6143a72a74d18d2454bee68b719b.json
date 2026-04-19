@@ -6,11 +6,11 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Street doc and trauma surgeon operating out of a converted shipping container clinic on The Shelf",
+  "role": "Street doc and trauma surgeon operating out of a converted shipping container clinic on the Gray Zone",
   "age": 52,
   "status": "active",
-  "location": "The Shelf, Brewer's Spine, near Halsted and Chicago Ave",
-  "description": "Atlas Johansson is a broad-shouldered woman with deep umber skin mapped by old scalpel scars she gave herself during teaching demonstrations, and hair grown to silver-streaked natural coils she keeps pinned with surgical clamps when she works. Her left eye is a battlefield prosthetic—matte grey iris, slightly too large for the socket, giving her a permanent look of asymmetric scrutiny. She moves with the deliberate economy of someone who has performed appendectomies in turbulent environments and knows that wasted motion costs lives.\n\nShe left the Aurochs Medical Complex after seventeen years when she refused to deny care to an uninsured dockworker whose employer had flagged him as a liability. She set up on The Shelf within six months with secondhand equipment and a reputation that spread faster than she intended. She is brisk, unsentimental, and privately devastated by every patient she loses—she lights a data candle to the local E.L.F. she calls Saint Incision after each death, leaving a recorded voice note describing what she could have done better.",
+  "location": "the Gray Zone, Brewer's Spine, near Halsted and Chicago Ave",
+  "description": "Atlas Johansson is a broad-shouldered woman with deep umber skin mapped by old scalpel scars she gave herself during teaching demonstrations, and hair grown to silver-streaked natural coils she keeps pinned with surgical clamps when she works. Her left eye is a battlefield prosthetic—matte grey iris, slightly too large for the socket, giving her a permanent look of asymmetric scrutiny. She moves with the deliberate economy of someone who has performed appendectomies in turbulent environments and knows that wasted motion costs lives.\n\nShe left the Aurochs Medical Complex after seventeen years when she refused to deny care to an uninsured dockworker whose employer had flagged him as a liability. She set up on the Gray Zone within six months with secondhand equipment and a reputation that spread faster than she intended. She is brisk, unsentimental, and privately devastated by every patient she loses—she lights a data candle to the local E.L.F. she calls Saint Incision after each death, leaving a recorded voice note describing what she could have done better.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -22,7 +22,7 @@
     },
     "core_fears": [
       "Becoming so burned out she starts making errors that kill people",
-      "Being forced out of the Shelf by corporate health inspectors"
+      "Being forced out of the Gray Zone by corporate health inspectors"
     ],
     "core_desires": [
       "To build a clinic that doesn't depend on her alone",
@@ -53,11 +53,11 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A patient died under her care and the body had a corporate RFID tag she didn't recognize — someone from above the Shelf is watching",
+    "A patient died under her care and the body had a corporate RFID tag she didn't recognize — someone from inside corponation territory is watching",
     "She's training a teenager to be her assistant, but the kid is being pressured by a local gang to spy on who comes through the clinic",
     "Helix Biosystems offered to fully equip her clinic in exchange for anonymized patient data — she hasn't said no yet"
   ],
-  "narrative_function": "Quest giver, information source, moral anchor. She has patched up half the Shelf and knows more secrets than a confessional booth. Can provide medical assistance, introduce players to community networks, or draw them into ethical dilemmas about who deserves care.",
+  "narrative_function": "Quest giver, information source, moral anchor. She has patched up half the Gray Zone and knows more secrets than a confessional booth. Can provide medical assistance, introduce players to community networks, or draw them into ethical dilemmas about who deserves care.",
   "augmentations": "One battlefield-grade ocular prosthetic (left eye, grey iris, enhanced low-light). Subdermal haptic feedback mesh in both hands for surgical sensitivity. No geneware.",
   "daily_life": "She opens the container clinic at 06:00, sees whoever shows up until she physically cannot continue, then spends an hour reviewing surgical literature on a cracked tablet before sleeping four to six hours on a cot behind a curtain.",
   "affiliation": "Independent — Brewer's Spine Community Health Cooperative (informal)",
@@ -176,7 +176,7 @@
     "Provider": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -210,7 +210,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Age 40: Established container clinic on The Shelf",
+      "event": "Age 40: Established container clinic on the Gray Zone",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -233,7 +233,6 @@
     "Aurochs Medical Complex",
     "Helix Biosystems",
     "Brewer's Spine",
-    "The Shelf",
     "Plot 17",
     "Chicago",
     "Silver",
@@ -241,7 +240,7 @@
     "Slagworks Industrial",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Complex Ubiquitous Diaspora blend: Northern European (44.2%) and Indigenous American (31.8%) form her dominant genetic foundation, creating strong structural features. Layered with significant Hispanic/Latin American (8.8%), Sub-Saharan African (8.6%), and Southeast Asian (6.6%) ancestry, her phenotype reads as distinctly 2226 — a striking synthesis rather than any single origin. Her bone structure balances Northern European angularity with Indigenous American prominence, her skin tone carries warmth from Latin American and African ancestry, and her overall presence reflects generations of global mixing.",
     "height_cm": 178,

@@ -335,5 +335,18 @@
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
     "Zheng-Dao Heavy Industries Space Elevator Tether System",
     "Zheng-dao Bioelectric"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z4",
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z8"
+    ],
+    "primaryZone": "Z4",
+    "lakefrontAccess": false,
+    "description": "28 chartered zones globally; GLMZ presence concentrated in Zone 4's Northern Operations augmentation service corridor, Zone 1 financial and executive services, and Zone 8 Milwaukee distribution. Ringo's GLMZ operations function as a consumer access corridor for augmentation and transit services rather than a primary territorial holding.",
+    "grayZoneRelationship": "Ringo augmentation service centers at Zone 4's fringes accept Tier 2 walk-in clients — functionally serving the better-resourced Gray Zone residents. These centers are the most accessible point of the corponation system for Gray Zone populations in Zones 3-5."
+  }
 }

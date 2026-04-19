@@ -1,4 +1,4 @@
-@page "/transportation"
+﻿@page "/transportation"
 @using StreetSamurai.Core.Models.Canon
 @inject TransportationRepository Repo
 @inject NavigationManager Nav
@@ -24,7 +24,7 @@
     <div class="dict-editor">
         @if (editing != null)
         {
-            <EditViewToggle RepoName="transportation" Title="@(isNew ? "New Vehicle" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)" HideToggle="@_confirmDelete">
+            <EditViewToggle RepoName="transportation" Title="@(isNew ? "New Vehicle" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)" HideToggle="@_confirmDelete" Rating="@(editing?.Rating ?? 0)" RatingChanged="OnRatingChanged">
                 <HeaderButtons>
                     @if (!_confirmDelete)
                     {
@@ -58,6 +58,12 @@
                     </div>
                     <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="4" @bind="editing.Description"></textarea></div>
                     <div class="mb-3"><div class="field-label">Common Usage</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" rows="2" @bind="editing.CommonUsage"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Aliases (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editAliases"></textarea></div>
+                    <div class="mb-3"><div class="field-label">Story Hooks (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editStoryHooks"></textarea></div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">Image Prompt</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.MidjourneyPrompt"></textarea></div>
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">DALL-E 3 Prompt</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Dalle3Prompt"></textarea></div>
+                    </div>
                 </ChildContent>
             </EditViewToggle>
         }
@@ -76,6 +82,7 @@
     private List<(string name, int count)> allTags = [];
     private HashSet<string> selectedTags = [];
     private bool isNew, _confirmDelete;
+    private string editAliases = "", editStoryHooks = "";
 
     private List<TransportationData> FilteredItems
     {
@@ -92,9 +99,9 @@
     private List<TransportationData> SortedItems => FilteredItems.OrderBy(x => x.Name).ToList();
 
     protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); RebuildTags(); if (Nav.Uri.Contains("new=true")) AddNew(); else { var qid = Nav.Uri.Contains("id=") ? Uri.UnescapeDataString(Nav.Uri.Split(new[]{"id="}, StringSplitOptions.None).Last().Split(new[]{"&"}, StringSplitOptions.None)[0]) : ""; if (!string.IsNullOrEmpty(qid)) { var t = items.FirstOrDefault(e => e.Id == qid); if (t != null) Edit(t); } if (editing == null) { var first = items.FirstOrDefault(); if (first != null) Edit(first); } } }
-    private void AddNew() { editing = new TransportationData(); isNew = true; _confirmDelete = false; }
-    private void Edit(TransportationData t) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_transportation", t.Id); editing = t; originalName = t.Name; isNew = false; _confirmDelete = false; if (!Nav.Uri.Contains("id=" + t.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + t.Id, forceLoad: false); }
-    private void SaveEdit() { if (editing == null || string.IsNullOrWhiteSpace(editing.Name)) return; if (!isNew && originalName != editing.Name) Repo.Delete(originalName); Repo.Save(editing); editing = null; items = Repo.GetAll(); }
+    private void AddNew() { editing = new TransportationData(); isNew = true; _confirmDelete = false; editAliases = ""; editStoryHooks = ""; }
+    private void Edit(TransportationData t) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_transportation", t.Id); editing = t; originalName = t.Name; isNew = false; _confirmDelete = false; editAliases = string.Join("\n", t.Aliases); editStoryHooks = string.Join("\n", t.StoryHooks); if (!Nav.Uri.Contains("id=" + t.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + t.Id, forceLoad: false); }
+    private void SaveEdit() { if (editing == null || string.IsNullOrWhiteSpace(editing.Name)) return; editing.Aliases = editAliases.Split('\n', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList(); editing.StoryHooks = editStoryHooks.Split('\n', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList(); if (!isNew && originalName != editing.Name) Repo.Delete(originalName); Repo.Save(editing); editing = null; items = Repo.GetAll(); }
     private void DoDelete() { if (editing != null) { Repo.Delete(editing.Name); editing = null; items = Repo.GetAll(); _confirmDelete = false; } }
     private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
     private void RebuildTags() { allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
@@ -114,4 +121,5 @@
         }
     }
 
+    private void OnRatingChanged(double value) { if (editing == null) return; editing.Rating = value; Repo.Save(editing); }
 }

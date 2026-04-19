@@ -6,11 +6,11 @@
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
-  "role": "Scrap reseller and junk merchant, The Shelf",
+  "role": "Scrap reseller and junk merchant, the Gray Zone",
   "age": 27,
   "status": "active",
-  "location": "The Shelf, mid-platform section, stall cluster 14, Calumet Rise, near Pulaski and Chicago Ave",
-  "description": "Bjorn Dalgaard-Appiah-Thorvaldsdóttir is compact and kinetic, always moving — sorting, stacking, testing, cataloguing. They have short-cropped natural hair dyed in shifting rings of copper and rust that match the aesthetic of their stall almost perfectly, whether deliberately or by long association. Their skin is warm umber and their hands are perpetually oil-stained in the webbing between fingers, a grime that no solvent fully removes. They have retractable utility claws — a geneware mod that gives each fingertip a short carbon-reinforced nail good for prying panels, stripping wire, and punctuating arguments. Their left eye has a technical augmentation: a magnification lens overlay that they flip down like a jeweler's loupe when inspecting components, the mechanism visible as a small copper-toned disk above the brow.\n\nBjorn Dalgaard-Appiah-Thorvaldsdóttir is chaotic and brilliant and exhausting, speaking in bursts that assume you can keep up and moving on if you can't. They have the slightly manic energy of someone who genuinely loves what they do, which in this case is finding value in things other people have abandoned. The Shelf is their element — a raised industrial platform hung with salvage like a mechanical coral reef — and they navigate it with the ease of long familiarity. They are generous with knowledge and stingy with actual goods, believing that information about a part is more valuable than the part itself. They pray loudly to a circuit-board E.L.F. shrine mounted on their overhead rack, which they've named Gunda, and credit Gunda with every good find they've made in the last four years.",
+  "location": "the Gray Zone, mid-platform section, stall cluster 14, Calumet Rise, near Pulaski and Chicago Ave",
+  "description": "Bjorn Dalgaard-Appiah-Thorvaldsdóttir is compact and kinetic, always moving — sorting, stacking, testing, cataloguing. They have short-cropped natural hair dyed in shifting rings of copper and rust that match the aesthetic of their stall almost perfectly, whether deliberately or by long association. Their skin is warm umber and their hands are perpetually oil-stained in the webbing between fingers, a grime that no solvent fully removes. They have retractable utility claws — a geneware mod that gives each fingertip a short carbon-reinforced nail good for prying panels, stripping wire, and punctuating arguments. Their left eye has a technical augmentation: a magnification lens overlay that they flip down like a jeweler's loupe when inspecting components, the mechanism visible as a small copper-toned disk above the brow.\n\nBjorn Dalgaard-Appiah-Thorvaldsdóttir is chaotic and brilliant and exhausting, speaking in bursts that assume you can keep up and moving on if you can't. They have the slightly manic energy of someone who genuinely loves what they do, which in this case is finding value in things other people have abandoned. the Gray Zone is their element — a raised industrial platform hung with salvage like a mechanical coral reef — and they navigate it with the ease of long familiarity. They are generous with knowledge and stingy with actual goods, believing that information about a part is more valuable than the part itself. They pray loudly to a circuit-board E.L.F. shrine mounted on their overhead rack, which they've named Gunda, and credit Gunda with every good find they've made in the last four years.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -21,7 +21,7 @@
       "ghost": 0.6
     },
     "core_fears": [
-      "The Shelf being cleared and redeveloped",
+      "the Gray Zone being cleared and redeveloped",
       "Losing the ability to make things work — disability, injury to their hands"
     ],
     "core_desires": [
@@ -56,7 +56,7 @@
     "The Axiom data core under their stall floor has begun emitting a faint signal — something in the scrap drop it came from was looking for it, and now something is looking near the stall.",
     "A regular customer who was an aug shop mechanic has stopped coming for parts and Pemba, who would deny caring, has quietly started asking around about what happened to them."
   ],
-  "narrative_function": "Equipment and parts source, local color for The Shelf and Calumet Rise, exposition vehicle for what's been discarded recently in the city (which tells you what's changing), comic relief, genuine warmth in a hard neighborhood.",
+  "narrative_function": "Equipment and parts source, local color for the Gray Zone and Calumet Rise, exposition vehicle for what's been discarded recently in the city (which tells you what's changing), comic relief, genuine warmth in a hard neighborhood.",
   "augmentations": "Retractable utility claws (geneware, Helix Biosystems). Left-eye magnification overlay with copper-toned external mechanism. Hair pigment cycling (cosmetic, self-maintained with market-bought gene-dye).",
   "daily_life": "Up before dawn to hit the Calumet Rise scrap drops before the other pickers arrive. Back at the stall by mid-morning to sort, test, and price the day's haul. Sells through afternoon. Spends evenings repairing salvage to increase its value before next day.",
   "affiliation": "Independent; The Oxidian Market Vendors Guild (junior associate member); regular supplier to three unlicensed aug shops",
@@ -110,7 +110,7 @@
       "Enthusiastic de-escalation attempt",
       "Getting loudly indignant in a way designed to draw crowd attention",
       "Claws out — not threatening, just visible",
-      "Shouting for the Shelf platform neighbors",
+      "Shouting for the Gray Zone platform neighbors",
       "Genuine panic-flight"
     ],
     "interpersonal_modes": {
@@ -181,7 +181,7 @@
     "Judge": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -191,7 +191,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2173 — Born in Calumet Rise to a Tibetan-Serbian family; raised in The Shelf neighborhood",
+      "event": "2173 — Born in Calumet Rise to a Tibetan-Serbian family; raised in the Gray Zone neighborhood",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -207,7 +207,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2190 — Established permanent stall on The Shelf platform",
+      "event": "2190 — Established permanent stall on the Gray Zone platform",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -246,7 +246,6 @@
   ],
   "related_entities": [
     "Calumet Rise",
-    "The Shelf",
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
     "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'",
     "The Gradient Compact",
@@ -258,7 +257,7 @@
     "The Pure Hand",
     "Tin Man"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Northern European foundation (47.8%) blended with substantial Sub-Saharan African heritage (33.0%), creating warm medium-brown skin with golden undertones. Hispanic/Latin American (9.3%), Central Asian (8.3%), and trace South Asian (1.6%) ancestry contribute to balanced facial proportions and subtle feature variation. The combination produces a striking phenotype: strong Northern European bone structure softened by Sub-Saharan African facial characteristics, with warm complexion and balanced cheekbones reflecting the full ancestral synthesis.",
     "height_cm": 162,

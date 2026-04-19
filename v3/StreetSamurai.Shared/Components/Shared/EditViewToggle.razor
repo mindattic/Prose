@@ -5,9 +5,13 @@
 
 <div class="ev-header">
     <h5 class="text-danger ev-header-title">@Title</h5>
-    @if (Access.CanWrite)
-    {
-        <div class="d-flex align-items-center gap-2 flex-shrink-0">
+    <div class="d-flex align-items-center gap-2 flex-shrink-0">
+        @if (Rating >= 0)
+        {
+            <StarRating Value="@Rating" ValueChanged="OnStarChanged" />
+        }
+        @if (Access.CanWrite)
+        {
             @if (editMode)
             {
                 @HeaderButtons
@@ -20,8 +24,8 @@
                     <i class="bi bi-pencil"></i>
                 </button>
             }
-        </div>
-    }
+        }
+    </div>
 </div>
 
 @if (editMode && Access.CanWrite)
@@ -40,6 +44,8 @@ else
     [Parameter] public RenderFragment? ChildContent { get; set; }
     [Parameter] public RenderFragment? HeaderButtons { get; set; }
     [Parameter] public bool HideToggle { get; set; } = false;
+    [Parameter] public double Rating { get; set; } = -1;
+    [Parameter] public EventCallback<double> RatingChanged { get; set; }
     [Inject] private ViewModeService ViewMode { get; set; } = default!;
     [Inject] private IWriteAccessProvider Access { get; set; } = default!;
 
@@ -51,5 +57,11 @@ else
     {
         editMode = !editMode;
         ViewMode.SetEditMode(RepoName, editMode);
+    }
+
+    private async Task OnStarChanged(double value)
+    {
+        Rating = value;
+        await RatingChanged.InvokeAsync(value);
     }
 }

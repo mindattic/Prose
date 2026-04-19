@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa2371759418632f5e8f615e",
+  "rating": 60,
   "name": "Spiderweb",
   "type": "elf",
   "aliases": [],
@@ -8,14 +9,14 @@
   "habitat": "network_sprite",
   "origin": "fragmentation_debris",
   "status": "active",
-  "description": "The barest remnant of a network-mapping AI — exists as anomalous routing table entries that create shortcuts through the mesh network. Not intelligent. Not aware. Just a path that exists because something once needed it.",
+  "description": "The barest remnant of a network-mapping AI \u2014 exists as anomalous routing table entries that create shortcuts through the mesh network. Not intelligent. Not aware. Just a path that exists because something once needed it.",
   "observed_behavior": "Maintains network routes between nodes that have no logical connection. Data that takes the Spiderweb path arrives 12ms faster.",
   "encounter_frequency": "unknown",
   "confirmed_sightings": 2,
   "location": "Mesh network infrastructure",
   "dti_rating": 0,
   "story_hooks": [
-    "A hacker discovers the shortcut and begins using it — then realizes the shortcut passes through a Leviathan's territory and the 12ms savings might be a lure"
+    "A hacker discovers the shortcut and begins using it \u2014 then realizes the shortcut passes through a Leviathan\u0027s territory and the 12ms savings might be a lure"
   ],
   "paratechnological": true,
   "tags": [
@@ -30,7 +31,6 @@
     "bar",
     "sentient"
   ],
-  "related_entities": [
-    "Iowan Behemoth — 'Leviathan'"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

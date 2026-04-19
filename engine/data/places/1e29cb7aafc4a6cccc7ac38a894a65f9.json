@@ -3,7 +3,7 @@
   "type": "place",
   "name": "Dawn Bread",
   "aliases": [],
-  "description": "A bread cart that appears outside the Oshkosh labor exchange every morning at 4:30 AM. By the time workers line up for day assignments at 5 AM, there's fresh flatbread available for Φ1 per piece. The baker, Sahara Gustafsson-Chen, starts work at 2 AM in a kitchen she shares with three other Shelf businesses on a time-rotation basis. Her bread is simple, warm, and serves a single purpose: making sure the people who do the hardest work start the day with something in their stomachs. She considers this a minimum standard of civilization, not charity.",
+  "description": "A bread cart that appears outside the Oshkosh labor exchange every morning at 4:30 AM. By the time workers line up for day assignments at 5 AM, there's fresh flatbread available for Φ1 per piece. The baker, Sahara Gustafsson-Chen, starts work at 2 AM in a kitchen she shares with three other the Gray Zone businesses on a time-rotation basis. Her bread is simple, warm, and serves a single purpose: making sure the people who do the hardest work start the day with something in their stomachs. She considers this a minimum standard of civilization, not charity.",
   "atmosphere": {
     "sights": [],
     "sounds": [],
@@ -34,5 +34,6 @@
   ],
   "related_entities": [
     "Sage Čabarkapa-Inthavong"
-  ]
+  ],
+  "controllingCorponation": null
 }

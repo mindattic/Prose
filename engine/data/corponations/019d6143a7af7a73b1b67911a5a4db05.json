@@ -34,5 +34,14 @@
     "Tessera TK-20 Apex 'Mandate'",
     "The Corridor",
     "Yuki Nwosu-Petrenko"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z4"
+    ],
+    "primaryZone": "Z4",
+    "lakefrontAccess": false,
+    "description": "No contiguous physical sovereign territory. Algorithmic trading infrastructure distributed through secured facilities in the Highland Park district of Zone 4. Functions as the GLMZ's disaster-recovery financial market and secondary exchange, activated when Zone 1 financial infrastructure is disrupted.",
+    "grayZoneRelationship": "Oracle's facilities are invisible from the street. No Gray Zone relationship."
+  }
 }

@@ -18,7 +18,7 @@
   ],
   "variants": [
     "HB-3 Standard (general purpose, precision output)",
-    "HB-3 Extended (increased bacterial density, 80-120 discharges, 10-month shelf life)",
+    "HB-3 Extended (increased bacterial density, 80-120 discharges, 10-month Gray Zone life)",
     "HB-3 Micro (half-size format for subcompact weapons, 20-40 discharges)",
     "HB-3 Shielded (additional Faraday housing for use near strong EM fields)"
   ],
@@ -43,7 +43,6 @@
     "train",
     "armor",
     "energy",
-    "shelf",
     "tier 3"
   ],
   "parent_corponation": "",

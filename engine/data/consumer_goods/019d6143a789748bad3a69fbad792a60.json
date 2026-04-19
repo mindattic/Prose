@@ -7,13 +7,13 @@
   "category": "hygiene",
   "subcategory": "soap",
   "manufacturer": "Meridian Basic Services",
-  "description": "Dense bar of all-purpose soap. Washes body, hair, and clothing. Lasts a month with daily use. Harsh but effective. The default hygiene product of the Shelf.",
+  "description": "Dense bar of all-purpose soap. Washes body, hair, and clothing. Lasts a month with daily use. Harsh but effective. The default hygiene product of the Gray Zone.",
   "flavor_profile": "Sharp, industrial clean smell, lathers reluctantly but cleans thoroughly",
   "tier_availability": "Tier 1-2",
   "price": "Φ0.50",
   "popularity_rank": 3,
   "slogan": "Clean is clean.",
-  "cultural_context": "ShelfSoap is not pleasant but it works. Using it means you maintain hygiene despite poverty. The smell is distinctive — people who escaped the Shelf can still identify it years later. It triggers memories.",
+  "cultural_context": "ShelfSoap is not pleasant but it works. Using it means you maintain hygiene despite poverty. The smell is distinctive — people who escaped the Gray Zone can still identify it years later. It triggers memories.",
   "story_hooks": [
     "ShelfSoap's formula hasn't changed since 2065 — attempts to improve it are blocked because the current version is maximally profitable."
   ],
@@ -21,7 +21,6 @@
     "hygiene",
     "soap",
     "consumer_good",
-    "shelf",
     "tier_1",
     "tier_2",
     "basic",
@@ -31,7 +30,6 @@
   "related_entities": [
     "Irontide Tidal Energy",
     "Slagworks Industrial",
-    "The Shelf",
     "The Undertow"
   ]
 }

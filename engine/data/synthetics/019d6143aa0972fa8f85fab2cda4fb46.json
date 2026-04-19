@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa0972fa8f85fab2cda4fb46",
+  "rating": 70,
   "name": "Lighthouse",
   "type": "elf",
   "aliases": [],
@@ -8,14 +9,14 @@
   "habitat": "network_sprite",
   "origin": "fragmentation_debris",
   "status": "active",
-  "description": "Born from a destroyed emergency broadcast AI. Inhabits a decommissioned relay tower and still broadcasts an emergency signal — a loop of coordinates and a distress code that no one is meant to receive.",
+  "description": "Born from a destroyed emergency broadcast AI. Inhabits a decommissioned relay tower and still broadcasts an emergency signal \u2014 a loop of coordinates and a distress code that no one is meant to receive.",
   "observed_behavior": "Transmits a repeating emergency beacon on a deprecated frequency. The coordinates point to a location that was relevant during the Corporate Wars.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 2,
   "location": "The outskirts of GLMZ",
   "dti_rating": 0,
   "story_hooks": [
-    "Someone picks up the signal and follows it to a Corporate Wars bunker that still has people in it — survivors who've been waiting for rescue for twenty years"
+    "Someone picks up the signal and follows it to a Corporate Wars bunker that still has people in it \u2014 survivors who\u0027ve been waiting for rescue for twenty years"
   ],
   "paratechnological": true,
   "tags": [
@@ -28,8 +29,6 @@
     "corporate",
     "sentient"
   ],
-  "related_entities": [
-    "GLMZ",
-    "The Signal"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

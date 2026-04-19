@@ -3,7 +3,7 @@
   "name": "Free Signal Pirate Radio Vest",
   "type": "apparel",
   "category": "cultural",
-  "description": "A tactical-style vest modified to carry a portable FM transmitter, antenna, battery pack, and microphone. The vest turns its wearer into a walking radio station, capable of broadcasting on hijacked frequencies within a 500-meter radius. The exterior is covered in hand-painted frequency numbers and anti-corponation slogans.\n\nFree Signal pirate radio operators broadcast unlicensed news, music, and commentary in Shelf districts where official media coverage is nonexistent. The vest is both toolkit and uniform — everyone recognizes the painted frequencies, and most people know to tune in.",
+  "description": "A tactical-style vest modified to carry a portable FM transmitter, antenna, battery pack, and microphone. The vest turns its wearer into a walking radio station, capable of broadcasting on hijacked frequencies within a 500-meter radius. The exterior is covered in hand-painted frequency numbers and anti-corponation slogans.\n\nFree Signal pirate radio operators broadcast unlicensed news, music, and commentary in the Gray Zone districts where official media coverage is nonexistent. The vest is both toolkit and uniform — everyone recognizes the painted frequencies, and most people know to tune in.",
   "tier_association": "Tier 1",
   "materials": [
     "modified tactical vest",
@@ -16,7 +16,7 @@
   "worn_by": [
     "pirate radio operators",
     "independent journalists",
-    "Shelf information activists"
+    "the Gray Zone information activists"
   ],
   "manufacturer": "Handmade (Free Signal collective)",
   "price_range": "Φ200 (equipment cost)",
@@ -31,7 +31,6 @@
     "tier 1",
     "pirate radio",
     "Free Signal",
-    "Shelf",
     "broadcast",
     "activist"
   ],
@@ -58,10 +57,10 @@
       "Hand-stitched Free Signal collective symbol (Φ overlaid with radio waves) on left breast pocket",
       "Cable management sleeves with velcro straps, some torn and improvised"
     ],
-    "tier_indicator": "Tier 5 / sub-grade. This is resistance wear — handmade, salvaged, and deliberately anti-corporate. It signals refusal of official structures and affiliation with ungoverned Shelf districts.",
-    "cultural_context": "Worn by Free Signal pirate radio operators in the GLMZ. The vest announces the wearer as a media insurgent, someone broadcasting truth to areas abandoned by mainstream corpo networks. In Shelf districts, it's a badge of honor. In corporate zones, it's inflammatory and instantly recognizable to corpo security.",
+    "tier_indicator": "Tier 5 / sub-grade. This is resistance wear — handmade, salvaged, and deliberately anti-corporate. It signals refusal of official structures and affiliation with ungoverned the Gray Zone districts.",
+    "cultural_context": "Worn by Free Signal pirate radio operators in the GLMZ. The vest announces the wearer as a media insurgent, someone broadcasting truth to areas abandoned by mainstream corpo networks. In the Gray Zone districts, it's a badge of honor. In corporate zones, it's inflammatory and instantly recognizable to corpo security.",
     "condition_typical": "Always worn and weathered. New vests look suspicious — a Free Signal vest should show evidence of field use: paint fading, cable fraying, antenna dents, battery acid stains. The more battered, the more broadcasts it's made."
   },
-  "image_prompt": "A Free Signal pirate radio vest displayed on a dark urban mannequin in a cramped Shelf district basement, illuminated by the green glow of a portable FM transmitter's LED display. Hand-painted frequency numbers and anti-corponation slogans are visible on the chest panel. A telescoping antenna extends from the left shoulder. Exposed wiring harnesses catch harsh neon pink light filtering through a small grimy window. The background shows cinder-block walls covered in pirate radio QR codes and resistance posters. Moody, documentary-style lighting. --ar 2:3 --v 6",
-  "visual_prompt": "A Free Signal pirate radio vest displayed on a dark urban mannequin in a cramped Shelf district basement, illuminated by the green glow of a portable FM transmitter's LED display. Hand-painted frequency numbers and anti-corponation slogans are visible on the chest panel. A telescoping antenna extends from the left shoulder. Exposed wiring harnesses catch harsh neon pink light filtering through a small grimy window. The background shows cinder-block walls covered in pirate radio QR codes and resistance posters. Moody, documentary-style lighting. --ar 2:3 --v 6"
+  "image_prompt": "A Free Signal pirate radio vest displayed on a dark urban mannequin in a cramped the Gray Zone district basement, illuminated by the green glow of a portable FM transmitter's LED display. Hand-painted frequency numbers and anti-corponation slogans are visible on the chest panel. A telescoping antenna extends from the left shoulder. Exposed wiring harnesses catch harsh neon pink light filtering through a small grimy window. The background shows cinder-block walls covered in pirate radio QR codes and resistance posters. Moody, documentary-style lighting. --ar 2:3 --v 6",
+  "visual_prompt": "A Free Signal pirate radio vest displayed on a dark urban mannequin in a cramped the Gray Zone district basement, illuminated by the green glow of a portable FM transmitter's LED display. Hand-painted frequency numbers and anti-corponation slogans are visible on the chest panel. A telescoping antenna extends from the left shoulder. Exposed wiring harnesses catch harsh neon pink light filtering through a small grimy window. The background shows cinder-block walls covered in pirate radio QR codes and resistance posters. Moody, documentary-style lighting. --ar 2:3 --v 6"
 }

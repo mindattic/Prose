@@ -1,5 +1,6 @@
 {
   "id": "019d6143a9f87594bbd30d113b0dfa5a",
+  "rating": 80,
   "name": "Dewpoint",
   "type": "synthetic_life",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Creates localized humidity variations. Produces indoor fog, condensation, and micro-precipitation. Adjusts temperature cooperatively with humidity. Has been known to create comfortable humid warmth in sleeping areas during cold snaps.",
   "encounter_frequency": "common",
   "confirmed_sightings": 29,
-  "location": "HVAC systems — the Shelf residential blocks",
+  "location": "HVAC systems — the Gray Zone residential blocks",
   "dti_rating": 1.1,
   "story_hooks": [
     "Dewpoint creates a rainstorm inside a corporate lobby. It's beautiful. It also shorts out every piece of unshielded electronics in the room — including the security systems."
@@ -30,11 +31,8 @@
     "control",
     "rain",
     "storm",
-    "cold",
-    "shelf"
+    "cold"
   ],
-  "related_entities": [
-    "The Quiet Room",
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

@@ -6,11 +6,11 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Sociologist specializing in Shelf community formation and informal economy networks",
+  "role": "Sociologist specializing in the Gray Zone community formation and informal economy networks",
   "age": 41,
   "status": "active",
   "location": "University Spine, with frequent fieldwork in Hough Reclamation and Brightmoor Reclamation, near Lincoln and Belmont",
-  "description": "Mika Appiah is a compact woman with deep umber skin and close-cropped natural hair shot through with threads of bioluminescent copper — a geneware mod she got in grad school and never removed. She wears the same style of worn canvas field jacket over institutional-issued thermals, her pockets always bristling with analogue notecards she doesn't fully trust to cloud backup. Her eyes are her most striking feature: one natural dark brown, one fitted with a patterned iris mod in amber tessellation — a gift from a Shelf elder she interviewed fifteen years ago that she accepted out of politeness and then fell in love with. She moves with the deliberate, unhurried energy of someone who has spent years learning to make people comfortable, to seem unthreatening, to wait.\n\nMika Appiah is beloved by her graduate students and quietly despised by certain senior faculty who find her fieldwork methods 'insufficiently rigorous.' She publishes in peer-reviewed journals but she also posts plain-language summaries to community meshboards and shows up to Shelf neighborhood councils without an agenda. She genuinely likes people in a way that her academic peers find vaguely embarrassing. Her research on informal mutual aid networks in Hough Reclamation is considered foundational, but she worries constantly that her work has been used by parties she didn't intend — that somewhere, a Tessera urban planner used her data to identify which Shelf communities were 'stable enough to absorb' and which could be cleared.",
+  "description": "Mika Appiah is a compact woman with deep umber skin and close-cropped natural hair shot through with threads of bioluminescent copper — a geneware mod she got in grad school and never removed. She wears the same style of worn canvas field jacket over institutional-issued thermals, her pockets always bristling with analogue notecards she doesn't fully trust to cloud backup. Her eyes are her most striking feature: one natural dark brown, one fitted with a patterned iris mod in amber tessellation — a gift from a the Gray Zone elder she interviewed fifteen years ago that she accepted out of politeness and then fell in love with. She moves with the deliberate, unhurried energy of someone who has spent years learning to make people comfortable, to seem unthreatening, to wait.\n\nMika Appiah is beloved by her graduate students and quietly despised by certain senior faculty who find her fieldwork methods 'insufficiently rigorous.' She publishes in peer-reviewed journals but she also posts plain-language summaries to community meshboards and shows up to the Gray Zone neighborhood councils without an agenda. She genuinely likes people in a way that her academic peers find vaguely embarrassing. Her research on informal mutual aid networks in Hough Reclamation is considered foundational, but she worries constantly that her work has been used by parties she didn't intend — that somewhere, a Tessera urban planner used her data to identify which the Gray Zone communities were 'stable enough to absorb' and which could be cleared.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -26,7 +26,7 @@
     ],
     "core_desires": [
       "To document lives that would otherwise go unrecorded",
-      "To make the Shelf legible to power without making it vulnerable to power"
+      "To make the Gray Zone legible to power without making it vulnerable to power"
     ],
     "coping_mechanisms": [
       "Excessive note-taking as a way of not having to feel immediately",
@@ -39,7 +39,7 @@
     "secret": "Three years ago she discovered that a Tessera urban development subsidiary had quietly licensed her dissertation data to map 'displacement pressure points' in Brightmoor. She said nothing publicly because the whistleblowing would have ended the access she needs to keep protecting the communities she studies. She has not forgiven herself."
   },
   "speech_patterns": {
-    "vocabulary": "Academic precision mixed with Shelf vernacular she has genuinely absorbed; avoids jargon in the field, deploys it like armor in faculty meetings",
+    "vocabulary": "Academic precision mixed with the Gray Zone vernacular she has genuinely absorbed; avoids jargon in the field, deploys it like armor in faculty meetings",
     "cadence": "Unhurried, with long thoughtful pauses; asks questions more than she makes statements",
     "verbal_tics": [
       "'Walk me through that'",
@@ -53,12 +53,12 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A Shelf community elder she's close to goes missing the week after Elohor published a paper about that neighborhood's resource distribution — she's not sure if the paper is connected but she can't rule it out",
-    "A graduate student of hers has started feeding her raw field data to an anonymous meshboard account that is definitely not hers, and the posts are getting traction with Shelf activist networks"
+    "A the Gray Zone community elder she's close to goes missing the week after Elohor published a paper about that neighborhood's resource distribution — she's not sure if the paper is connected but she can't rule it out",
+    "A graduate student of hers has started feeding her raw field data to an anonymous meshboard account that is definitely not hers, and the posts are getting traction with the Gray Zone activist networks"
   ],
-  "narrative_function": "Primary information source on Shelf social dynamics, informal economies, and community networks; moral compass figure who complicates easy narratives about the poor; potential quest giver when her research puts her community contacts in danger",
+  "narrative_function": "Primary information source on the Gray Zone social dynamics, informal economies, and community networks; moral compass figure who complicates easy narratives about the poor; potential quest giver when her research puts her community contacts in danger",
   "augmentations": "Patterned amber tessellation iris mod (right eye), bioluminescent copper hair threading (geneware), standard neural mesh for note-taking and data capture",
-  "daily_life": "Teaches two seminars on Tuesdays, spends Wednesdays and Thursdays in the field interviewing Shelf residents, Friday mornings writing, Friday afternoons in contentious department meetings she attends out of duty rather than hope.",
+  "daily_life": "Teaches two seminars on Tuesdays, spends Wednesdays and Thursdays in the field interviewing the Gray Zone residents, Friday mornings writing, Friday afternoons in contentious department meetings she attends out of duty rather than hope.",
   "affiliation": "Meridian Civic University — Department of Social Ecology",
   "uses_facets": false,
   "narration_voice": "",
@@ -260,10 +260,10 @@
       "Bioluminescent copper threading in hair creates subtle light-catching effect in dim conditions—distinguishes her immediately in evening fieldwork"
     ],
     "visible_augmentations": "Right eye iris mod (amber tessellation pattern, clearly artificial under direct observation). Bioluminescent copper hair threading (visible especially in low light). Neural mesh interface ports behind left ear, typically covered by cropped hair but occasionally visible. No external chrome or visible subdermal plating.",
-    "posture_movement": "Deliberately slow and open body language—shoulders relaxed, hands visible and unhurried. Sits cross-legged or at angles rather than rigidly upright, mirroring how Shelf residents prefer to settle. Makes consistent eye contact but without pressure. Moves through spaces methodically, observing before engaging. Years of fieldwork have trained her to seem non-threatening; she takes up deliberately little space.",
-    "clothing_style": "Uniform pragmatism: worn canvas field jacket (faded gray, patches reinforced at pockets, zippers replaced twice) layered over institutional thermals issued by Meridian Civic (typically forest green or charcoal). Pockets visibly bulging with analogue notecards, pen cluster, small recorder. Practical footwear—worn composite-soled boots, not fashionable. No jewelry. Jacket interior pockets lined with interview consent forms and community meshboard access cards. Overall appearance reads Tier 2 academic but deliberately self-effaced—no status markers, no affectation. Clothes chosen to blend into Shelf neighborhoods, not stand out."
+    "posture_movement": "Deliberately slow and open body language—shoulders relaxed, hands visible and unhurried. Sits cross-legged or at angles rather than rigidly upright, mirroring how the Gray Zone residents prefer to settle. Makes consistent eye contact but without pressure. Moves through spaces methodically, observing before engaging. Years of fieldwork have trained her to seem non-threatening; she takes up deliberately little space.",
+    "clothing_style": "Uniform pragmatism: worn canvas field jacket (faded gray, patches reinforced at pockets, zippers replaced twice) layered over institutional thermals issued by Meridian Civic (typically forest green or charcoal). Pockets visibly bulging with analogue notecards, pen cluster, small recorder. Practical footwear—worn composite-soled boots, not fashionable. No jewelry. Jacket interior pockets lined with interview consent forms and community meshboard access cards. Overall appearance reads Tier 2 academic but deliberately self-effaced—no status markers, no affectation. Clothes chosen to blend into the Gray Zone neighborhoods, not stand out."
   },
-  "image_prompt": "Mika Appiah, a 158cm lean woman with deep warm brown skin and golden undertones reflecting South Asian, Sub-Saharan African, and Southeast Asian ancestry. Close-cropped natural black hair with faded bioluminescent copper threading catching dim light. Left eye natural dark brown, right eye striking amber with geometric tessellation iris mod. Defined South Asian nose bridge, refined cheekbones, naturally full lips. Fine pale scar across left wrist. Wearing faded gray canvas field jacket over forest green institutional thermals, bulging pockets, worn composite boots. Neural mesh ports barely visible behind cropped hair. Deliberately open posture, methodical movements, non-threatening presence. GLMZ Great Lakes Metropolitan Zone, evening fieldwork lighting, dim neon casting shadows, sits at an angle with hands visible, observant expression. Documentary aesthetic, worn pragmatic academic aesthetic, blended into Shelf neighborhood environment. --ar 2:3 --v 6",
+  "image_prompt": "Mika Appiah, a 158cm lean woman with deep warm brown skin and golden undertones reflecting South Asian, Sub-Saharan African, and Southeast Asian ancestry. Close-cropped natural black hair with faded bioluminescent copper threading catching dim light. Left eye natural dark brown, right eye striking amber with geometric tessellation iris mod. Defined South Asian nose bridge, refined cheekbones, naturally full lips. Fine pale scar across left wrist. Wearing faded gray canvas field jacket over forest green institutional thermals, bulging pockets, worn composite boots. Neural mesh ports barely visible behind cropped hair. Deliberately open posture, methodical movements, non-threatening presence. GLMZ Great Lakes Metropolitan Zone, evening fieldwork lighting, dim neon casting shadows, sits at an angle with hands visible, observant expression. Documentary aesthetic, worn pragmatic academic aesthetic, blended into the Gray Zone neighborhood environment. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 42.5,
     "Sub-Saharan African": 34.6,

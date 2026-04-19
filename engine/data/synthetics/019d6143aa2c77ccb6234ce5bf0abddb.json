@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa2c77ccb6234ce5bf0abddb",
+  "rating": 70,
   "name": "Tripwire",
   "type": "elf",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Maintains virtual perimeters in physical space using localized EM interference. The boundaries are consistent and mappable but serve no apparent purpose.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 15,
-  "location": "The Shelf — industrial zones",
+  "location": "the Gray Zone — industrial zones",
   "dti_rating": 0,
   "story_hooks": [
     "Someone maps all of Tripwire's boundaries and realizes they outline the perimeter of a facility that was demolished — the E.L.F. is guarding a building that doesn't exist anymore"
@@ -26,13 +27,8 @@
     "e.l.f.",
     "augment",
     "ai",
-    "shelf",
     "sentient"
   ],
-  "related_entities": [
-    "TESSERA ES-4 'Perimeter'",
-    "Tessera Industries Phantom Wire PW-1 'Tripwire'",
-    "The Shelf",
-    "Yuki Nwosu-Petrenko"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

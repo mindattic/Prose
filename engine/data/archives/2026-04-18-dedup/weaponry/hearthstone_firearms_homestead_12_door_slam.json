@@ -1,0 +1,41 @@
+{
+  "id": "242ea4bff437cc83adac17e72298675f",
+  "name": "Hearthstone Firearms Homestead-12 'Door Slam'",
+  "type": "weapon",
+  "aliases": [],
+  "category": "shotgun",
+  "description": "The Hearthstone Homestead-12 is a pump-action shotgun chambered in 12 gauge with a five-round tubular magazine and an 18-inch barrel. It is the cheapest functional shotgun in GLMZ, manufactured with the same cost-conscious approach that defines Hearthstone's product line — stamped steel receiver, hardwood stock finished with lacquer rather than oil, and a bead front sight that serves as the only aiming reference.\n\nThe Door Slam is the Gray Zone home defense standard. Where the Guardian-12 pistol provides comfort, the Homestead provides capability — a 12-gauge shotgun loaded with buckshot is effective against nearly any unarmored threat at room distance, regardless of the shooter's training level. The pump action is simple to operate, visually intimidating when racked, and mechanically reliable in a way that budget semi-automatics cannot match.\n\nHearthstone sells the Homestead-12 with a box of twenty-five buckshot shells and a trigger lock. Their marketing acknowledges the weapon's real purpose without euphemism: 'When they come through the door, be on the other side of this.' The weapon sells by the tens of thousands annually and constitutes the backbone of the Gray Zone residential defense.",
+  "manufacturer": "HEARTHSTONE FIREARMS",
+  "tier_availability": "Tier 1+",
+  "legality": "Legal — minimal registration required",
+  "base_technologies": [
+    "Pump action",
+    "Stamped steel receiver",
+    "Tubular magazine"
+  ],
+  "specifications": "caliber: 12 gauge\neffective_range: 30 meters (buckshot)\nrate_of_fire: Pump-action\nmagazine_capacity: 5+1 rounds\nweight: 2.8 kg",
+  "tactical_use": "A basic pump-action shotgun for home defense. The 12-gauge buckshot pattern at room distance covers approximately 25cm, providing a forgiving hit area for stressed shooters. The pump action is manually cycled, which prevents short-stroking malfunctions common in untrained users. Effective against unarmored targets at close range. Limited by tube-magazine capacity and slow reloading.",
+  "cultural_context": "The Door Slam is the sound of the Gray Zone home defense — the distinctive racking of a pump shotgun is the most universally recognized warning sound in residential GLMZ. Families keep them behind doors and under beds. Community defense groups use them as their primary long arm. The Homestead-12 is not glamorous, but it is the weapon that protects more homes than any other.",
+  "known_users": [
+    "the Gray Zone residential households",
+    "Community defense groups",
+    "Small business owners",
+    "Rural settlement defenders"
+  ],
+  "story_hooks": [
+    "A the Gray Zone block organizes a defense drill using Homestead-12s, and the corponation that owns the building sends a cease-and-desist. The residents' refusal to comply becomes a political flashpoint.",
+    "A modified Homestead-12 with an illegal extended magazine tube and pistol grip is found at every scene of a serial vigilante's work in a the Gray Zone district."
+  ],
+  "ammunition_type": [
+    "12 gauge"
+  ],
+  "tags": [
+    "weapon",
+    "shotgun",
+    "pump_action",
+    "home_defense",
+    "cheap"
+  ],
+  "physical_description": "A utilitarian pump-action shotgun with a stamped steel receiver that shows fingerprint oils and surface corrosion in the creases. The lacquered hardwood stock is scuffed and worn pale in patches, with a faint ring stain where a previous owner's hand gripped it. An 18-inch barrel sits forward of the tubular magazine tube, both dulled to matte gray, with a simple brass bead sight catching what little light reaches it.",
+  "visual_prompt": "gritty neo-noir shotgun, pump-action 12-gauge, stamped steel receiver, worn lacquered wood furniture, industrial product photography, rain-slicked metal, brass bead sight, dark background, detailed weathering, practical worn-in finish, GLMZ aesthetic, moody lighting, shallow depth of field"
+}

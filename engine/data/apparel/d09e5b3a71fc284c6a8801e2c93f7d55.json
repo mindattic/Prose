@@ -3,7 +3,7 @@
   "name": "Radcore NeutronShield RZ-9 Reactor Entry Suit",
   "type": "apparel",
   "category": "protective",
-  "description": "A full-envelope radiation suit in matte lead-gray with fluorescent amber warning strips running diagonally across the torso and down both legs. The outer layer is woven neutron-scatter fabric — boron-filament threaded through a dense polyimide base — with a rigid chest plate housing an embedded dosimeter display visible through a small scratch-resistant window. Bulky but articulated at the hip and shoulder with accordion-fold gussets.\n\nDesigned for reactor maintenance crews working hot zones in GLMZ's aging fission grid and the contaminated industrial sectors of The Shelf. The suit's amber strips fade to cream with cumulative radiation exposure — a passive wear indicator most supervisors pretend not to notice.",
+  "description": "A full-envelope radiation suit in matte lead-gray with fluorescent amber warning strips running diagonally across the torso and down both legs. The outer layer is woven neutron-scatter fabric — boron-filament threaded through a dense polyimide base — with a rigid chest plate housing an embedded dosimeter display visible through a small scratch-resistant window. Bulky but articulated at the hip and shoulder with accordion-fold gussets.\n\nDesigned for reactor maintenance crews working hot zones in GLMZ's aging fission grid and the contaminated industrial sectors of the Gray Zone. The suit's amber strips fade to cream with cumulative radiation exposure — a passive wear indicator most supervisors pretend not to notice.",
   "tier_association": "Tier 2-3",
   "materials": [
     "boron-filament neutron-scatter weave",
@@ -18,14 +18,14 @@
     "fission grid maintenance technicians",
     "contaminated-zone remediation workers",
     "reactor safety inspectors",
-    "Shelf scavengers who got lucky enough to find one"
+    "the Gray Zone scavengers who got lucky enough to find one"
   ],
   "manufacturer": "Radcore Industrial Protection",
   "price_range": "Φ 1,200–Φ 2,800",
   "aug_compatible": false,
   "gene_compatible": false,
   "story_hooks": [
-    "A suit returned from a Shelf remediation job has a dosimeter log showing exposure levels that should have been fatal — the worker who wore it is fine, and no one can explain why.",
+    "A suit returned from a the Gray Zone remediation job has a dosimeter log showing exposure levels that should have been fatal — the worker who wore it is fine, and no one can explain why.",
     "Radcore's RZ-9 is the standard-issue suit for a reactor zone that officially doesn't exist on any GLMZ infrastructure map.",
     "The amber warning strips on a supervisor's suit haven't faded in three years of reactor work — someone has been replacing them before inspections."
   ],
@@ -50,7 +50,6 @@
     "Ringo Corponation Tandem Fold Microvan",
     "Street Custom 'Glass Garden' Caltrops",
     "Tessera Nexus Town Car",
-    "The Shelf",
     "Vantablack VS-3 'Skin Job'"
   ],
   "physical_description": {
@@ -71,7 +70,7 @@
       "Inspection tag pocket on right thigh (faded/worn)"
     ],
     "tier_indicator": "Tier 3-4 industrial working class. High-spec safety equipment supplied by employers rather than personal purchase. Maintenance crews, reactor techs, hot-zone specialists.",
-    "cultural_context": "Worn by those in the most hazardous sectors of GLMZ infrastructure—the aging GLMZ fission grid, The Shelf's contaminated zones, decommissioned reactor maintenance. Signals industrial reliability, acceptance of biological risk, and stoic occupational fatalism. The fading amber stripes are an unspoken record of cumulative exposure that most wearers avoid discussing.",
+    "cultural_context": "Worn by those in the most hazardous sectors of GLMZ infrastructure—the aging GLMZ fission grid, the Gray Zone's contaminated zones, decommissioned reactor maintenance. Signals industrial reliability, acceptance of biological risk, and stoic occupational fatalism. The fading amber stripes are an unspoken record of cumulative exposure that most wearers avoid discussing.",
     "condition_typical": "Heavily patched at stress points (shoulders, elbows, crotch gusset). Faded amber stripes indicating months of active use. Scuff marks and minor tears sealed with gray repair tape. The dosimeter window often clouded or cracked. Hem weighted with additional lead patches from field repairs."
   },
   "image_prompt": "Radcore NeutronShield RZ-9 reactor suit on a lean industrial worker model, posed in profile against a moody dark warehouse backdrop lit by sickly amber work-lights. Focus on the diagonal fluorescent warning stripes across the torso and the recessed dosimeter window on the rigid chest plate. The suit's matte lead-gray weave should show visible boron-thread texture and wear patches at the shoulders. Ambient hazard lighting from above, casting deep shadows. Cinematic, desaturated color grading with accent on the fading amber warnings. Gritty, worn-in condition visible throughout. --ar 2:3 --v 6",

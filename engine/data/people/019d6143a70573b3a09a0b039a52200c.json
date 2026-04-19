@@ -1,5 +1,6 @@
 {
   "id": "019d6143a70573b3a09a0b039a52200c",
+  "rating": 25,
   "type": "character",
   "name": "Valentina Boateng",
   "aliases": [],
@@ -9,7 +10,7 @@
   "role": "Fixer - Extraction specialist",
   "age": 47,
   "status": "active",
-  "location": "The Shelf, near Kedzie and Division",
+  "location": "the Gray Zone, near Kedzie and Division",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -30,7 +31,11 @@
     "vocabulary": "",
     "cadence": "",
     "verbal_tics": [],
-    "example_lines": []
+    "example_lines": [],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [],
@@ -85,7 +90,7 @@
     "Manipulator": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -93,14 +98,11 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Snapper-22 'Cricket'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Shelf"
-  ],
-  "district": "The Shelf",
   "physical_description": {
     "heritage": "Complex genetic blend of Hispanic/Latin American (49.9%), Sub-Saharan African (29.2%), East Asian (14.8%), and North African (6.1%) ancestry. This combination creates warm medium-brown skin with golden-reddish undertones, angular facial structure with pronounced cheekbones and strong jaw, and refined eye shape with subtle epicanthic fold influence. The multi-continental mix produces a striking, distinctly weathered appearance.",
     "height_cm": 168,
@@ -123,18 +125,13 @@
     "clothing_style": "Tier 3 utilitarian with older-model high-end components. Black reinforced cargo pants (Hegemony tactical cut, circa 2220) with structural webbing at the thighs. Charcoal matte jacket with internal holster rig visible when unbuttoned. Worn Neo-Gen combat boots, re-soled twice. A faded leather wristband on her left arm—older than her augmentations, possibly sentimental. No visible branding; she dresses for function, not status."
   },
   "image_prompt": "Valentina Boateng, 168cm lean-muscled operative with warm medium-brown weathered skin, sharp cheekbones and strong jaw reflecting mixed Hispanic/Latin American, Sub-Saharan African, East Asian and North African heritage. Steel gray hair with black roots in tight functional braid. Dark brown eyes with subtle epicanthic influence and faint amber neon threading. Surgical scar on left temple, pockmark scars on shoulders. Matt black synthetic right hand with chrome finger joints. Faint ocular neural interface glow in left eye. Subcutaneous armor plating ridges visible on ribs. Wearing black reinforced Hegemony tactical cargo pants, charcoal matte jacket, worn Neo-Gen combat boots. Faded Cyrillic wrist tattoo. Coiled, alert posture, direct intense gaze. GLMZ Great Lakes Metropolitan Zone, noir lighting with neon accent, gritty urban environment, moody cinematic atmosphere --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Hispanic/Latin American": 49.9,
     "Sub-Saharan African": 29.2,
     "East Asian": 14.8,
     "North African": 6.1
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Hispanic/Latin American": {
       "Mexican": {
@@ -167,6 +164,5 @@
         "Algerian": 1
       }
     }
-  },
-  "tier": "3"
+  }
 }

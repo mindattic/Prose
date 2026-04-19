@@ -1,9 +1,9 @@
 {
   "id": "019d6143a94a748d90e564fcbae10c64",
   "type": "place",
-  "name": "The Oxidian Shelf",
+  "name": "The Oxidian the Gray Zone",
   "aliases": [],
-  "description": "A sprawling industrial terrace suspended between two decommissioned Ringo Heavy Industries smelting complexes along the southern lakefront, The Oxidian Shelf is a patchwork of corroded gantries, salvaged hab-modules, and improvised market stalls that cling to the rusted superstructure like barnacles. Built vertically over three generations of squatter engineering, it defies both gravity and municipal zoning codes with equal indifference.\n\nOnce a staging ground for ore barges servicing the old Chicago steel corridor, the Shelf was abandoned by Ringo in 2158 and colonized almost immediately by displaced Tier 4 workers and Shelf-adjacent families fleeing encroaching Ferrogate Security cordons. Its residents have jury-rigged power from nearby Zheng-Dao Bioelectric substations and pipe treated lake water through networks of improvised conduit, creating a chaotic but functional micro-economy sustained entirely outside corporate oversight.",
+  "description": "A sprawling industrial terrace suspended between two decommissioned Ringo Heavy Industries smelting complexes along the southern lakefront, The Oxidian the Gray Zone is a patchwork of corroded gantries, salvaged hab-modules, and improvised market stalls that cling to the rusted superstructure like barnacles. Built vertically over three generations of squatter engineering, it defies both gravity and municipal zoning codes with equal indifference.\n\nOnce a staging ground for ore barges servicing the old Chicago steel corridor, the Gray Zone was abandoned by Ringo in 2158 and colonized almost immediately by displaced Tier 4 workers and the Gray Zone-adjacent families fleeing encroaching Ferrogate Security cordons. Its residents have jury-rigged power from nearby Zheng-Dao Bioelectric substations and pipe treated lake water through networks of improvised conduit, creating a chaotic but functional micro-economy sustained entirely outside corporate oversight.",
   "atmosphere": {
     "sights": [
       "Cascading tiers of welded-together hab units glowing amber and red under makeshift sodium lamp strings",
@@ -20,16 +20,16 @@
       "Fried synthetic protein and fermented fish sauce drifting from the mid-tier food corridor",
       "Lake spray carrying a faint chemical bite from upstream Zheng-Dao discharge runoff"
     ],
-    "feel": "The Oxidian Shelf hums with the exhausted vitality of people who have built something real from nothing. It feels perpetually precarious, as if the whole structure might shift underfoot, yet residents move through it with the ease of long familiarity. There is a defiant warmth here that corporate zones entirely lack.",
+    "feel": "The Oxidian the Gray Zone hums with the exhausted vitality of people who have built something real from nothing. It feels perpetually precarious, as if the whole structure might shift underfoot, yet residents move through it with the ease of long familiarity. There is a defiant warmth here that corporate zones entirely lack.",
     "tags": []
   },
-  "demographics": "Predominantly Tier 4 and Shelf-adjacent residents, with a significant population of undocumented synthetic persons and first-generation migrants from Southeast Asia, West Africa, and the Gulf Corridor. Population density is extreme, with an estimated 14,000 residents across roughly 0.4 square kilometers of vertical space.",
+  "demographics": "Predominantly Tier 4 and the Gray Zone-adjacent residents, with a significant population of undocumented synthetic persons and first-generation migrants from Southeast Asia, West Africa, and the Gulf Corridor. Population density is extreme, with an estimated 14,000 residents across roughly 0.4 square kilometers of vertical space.",
   "economy": "Driven by salvage trading, unlicensed BCI modification services, gray-market fabrication, and informal labor brokerage connecting residents to day-work in adjacent industrial zones. Φ circulates alongside barter and community credit tokens printed by local mutual aid collectives.",
   "power_structure": "A loose council of block representatives called the Gantry Board mediates disputes and negotiates collectively with Ferrogate Security to keep formal patrols off the structure. In practice, two rival salvage brokers—one human, one synthetic—hold significant economic leverage over the lower and upper tiers respectively.",
   "dangers": [
     "Structural failure is a constant risk; sections of the lower gantry have collapsed twice in the last decade, and Ringo Heavy Industries denies all liability",
     "Ferrogate Security conducts irregular sweep operations along the perimeter, ostensibly targeting unlicensed tech dealers but frequently used to pressure residents ahead of rumored corporate reclamation bids",
-    "A growing E.L.F. presence has been detected in the Shelf's pirated Zheng-Dao power infrastructure, with at least one sub-station AI exhibiting erratic emergent behavior"
+    "A growing E.L.F. presence has been detected in the Gray Zone's pirated Zheng-Dao power infrastructure, with at least one sub-station AI exhibiting erratic emergent behavior"
   ],
   "opportunities": [
     "The Gantry Board is quietly seeking outside technical help to formally sever the pirated power connection and establish an independent micro-grid before Zheng-Dao uses the illegal tap as legal pretext for a hostile infrastructure seizure",
@@ -38,7 +38,7 @@
   ],
   "story_hooks": [
     "A Gantry Board representative contacts the players after a child went missing in the lower structural warrens. Security footage shows the child following what appeared to be a luminous figure into a sealed maintenance shaft—and the E.L.F. presence in the substation has been broadcasting fragmented lullaby audio on loop for 72 hours since.",
-    "Ringo Heavy Industries has filed a surprise reclamation claim on the Oxidian Shelf's superstructure, citing a dormant 2141 lease agreement. The Gantry Board has seven days to produce counter-documentation that may or may not exist, and someone is offering the players significant Φ to make sure the filing never reaches the Palladian Group arbitration desk."
+    "Ringo Heavy Industries has filed a surprise reclamation claim on the Oxidian the Gray Zone's superstructure, citing a dormant 2141 lease agreement. The Gantry Board has seven days to produce counter-documentation that may or may not exist, and someone is offering the players significant Φ to make sure the filing never reaches the Palladian Group arbitration desk."
   ],
   "connections": {
     "adjacent_to": [
@@ -52,7 +52,7 @@
   "frequented_by": [
     "Tier 4 laborers and their families making up the permanent residential core",
     "Gray-market BCI technicians and their clients seeking off-record neural modifications",
-    "Synthetic persons living undocumented, using the Shelf's legal ambiguity as cover from Ferrogate compliance sweeps",
+    "Synthetic persons living undocumented, using the Gray Zone's legal ambiguity as cover from Ferrogate compliance sweeps",
     "Investigative journalists and Diaspora activists documenting synthetic personhood conditions in informal settlements"
   ],
   "notable_locations": [],
@@ -74,8 +74,7 @@
     "market",
     "bar",
     "water",
-    "lake",
-    "shelf"
+    "lake"
   ],
   "related_entities": [
     "Zheng-dao Bioelectric",
@@ -91,5 +90,7 @@
     "Echo Boateng",
     "Steel",
     "Déjà Vu"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

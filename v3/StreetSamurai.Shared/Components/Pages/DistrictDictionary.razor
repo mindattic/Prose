@@ -1,4 +1,4 @@
-@page "/places"
+﻿@page "/places"
 @using StreetSamurai.Core.Models.Canon
 @inject DistrictRepository Repo
 @inject SettingsService Settings
@@ -26,7 +26,7 @@
     <div class="dict-editor">
         @if (editing != null)
         {
-            <EditViewToggle RepoName="places" Title="@(isNew ? "New Place" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)" HideToggle="@_confirmDelete">
+            <EditViewToggle RepoName="places" Title="@(isNew ? "New Place" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)" HideToggle="@_confirmDelete" Rating="@(editing?.Rating ?? 0)" RatingChanged="OnRatingChanged">
                 <HeaderButtons>
                     @if (editing.Coordinates.Lat != 0)
                     {
@@ -153,4 +153,5 @@
     private void RebuildTags() { allTags = items.SelectMany(x => x.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
     private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
     private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
+    private void OnRatingChanged(double value) { if (editing == null) return; editing.Rating = value; Repo.Save(editing); }
 }

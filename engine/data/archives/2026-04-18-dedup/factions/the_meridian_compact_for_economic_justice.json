@@ -1,0 +1,53 @@
+{
+  "id": "61838a518ed7204681c6bd7c369bc92b",
+  "type": "faction",
+  "name": "The Meridian Compact for Economic Justice",
+  "aliases": [],
+  "motto": "The economy serves people. Not the other way around.",
+  "description": "The Meridian Compact for Economic Justice is a coalition organization of approximately 20,000 members that brings together labor unions, mutual aid networks, small business associations, and community organizations around a shared economic reform platform. The Compact doesn't conduct direct action — it builds consensus, coordinates strategy, and presents a unified front when negotiating with corporate and municipal power.\n\nThe Compact's platform is moderate by resistance standards but radical by corporate ones: a living wage indexed to the real cost of living at each tier, universal access to basic augmentation (not tied to employment), rent control in the Gray Zone and Circuit, breakup of corporate monopolies in essential services, and democratic representation in GLMZ's governance. None of these demands are new. What's new is that the Compact has built a coalition large enough to make them politically relevant.\n\nThe Compact is boring. It holds meetings. It circulates position papers. It conducts surveys. It maintains a database of economic conditions across tiers. It is the kind of organization that people who want revolution dismiss as useless and people who hold power watch with quiet concern, because boring organizations that build coalitions are historically more dangerous than exciting ones that build barricades.",
+  "ideology": "Economic justice within the corporate-sovereign framework is achievable through organized political pressure. The Compact is explicitly reformist — it works within the system because the alternative is civil war, and civil war in GLMZ would destroy the people it's supposed to save.",
+  "territory": "The Compact's headquarters, Coalition House, is in the Circuit. Member organizations operate across all districts.",
+  "leadership": "Coordinator Tomoko Reyes-Baptiste, a former policy analyst who has spent twenty years building the relationships that hold the Compact together. She is patient, strategic, and entirely uninterested in personal recognition.",
+  "methods": [
+    "Coalition building across labor, community, and business organizations",
+    "Economic policy development and advocacy",
+    "Political lobbying through the Meridian Quorum",
+    "Public education about economic conditions and alternatives",
+    "Data collection and analysis on economic inequality",
+    "Coordinated campaigns on specific policy demands"
+  ],
+  "resources": [
+    "20,000 members across diverse organizations",
+    "Coalition House headquarters in the Circuit",
+    "A policy team producing professional-quality economic analysis",
+    "Relationships across the political spectrum",
+    "Tomoko Reyes-Baptiste's two decades of coalition-building experience",
+    "The collective resources of member organizations"
+  ],
+  "goals": [],
+  "relationships": [
+    {
+      "name": "The United Workers Front",
+      "type": "ally",
+      "description": "The UWF is the Compact's largest member organization. The alliance gives the Compact labor muscle and gives the UWF a political platform beyond workplace issues.",
+      "tags": [
+        "political",
+        "labor"
+      ]
+    }
+  ],
+  "narrative_function": "The Compact represents the argument that boring, methodical, coalition-based organizing is the only thing that actually changes systems — and the question of whether patience is a virtue or a luxury the desperate can't afford.",
+  "story_hooks": [
+    "The Compact has enough political support to force a vote in the Meridian Quorum on augmentation access reform. If the vote passes, it would be the first time organized citizens have overridden corporate preference. Every corponation in the city is mobilizing to stop it.",
+    "Tomoko has been offered a seat on the Meridian Quorum — the first time a reform advocate has been invited into governance. Accepting means influence. It also means co-option. The Compact's members are divided."
+  ],
+  "tags": [
+    "faction",
+    "political",
+    "coalition",
+    "reform",
+    "economic",
+    "circuit",
+    "labor"
+  ]
+}

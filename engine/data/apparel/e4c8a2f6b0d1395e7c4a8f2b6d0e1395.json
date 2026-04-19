@@ -3,7 +3,7 @@
   "name": "Orlen Hi-Vis Reflective Work Jacket",
   "type": "apparel",
   "category": "jacket",
-  "description": "A fluorescent yellow safety jacket with retro-reflective silver tape in a standard X-pattern across the chest and back. Two-tone construction — the body is a bright PVC-coated polyester, the sleeves are a slightly softer polyester for range of motion. Snap front closure, two lower patch pockets, one chest pocket. Meets city infrastructure visibility standards, which means if you work on roads, transit lines, utility corridors, or construction sites, you're probably required to own one.\n\nThis jacket doesn't pretend to be anything other than what it is. It's worn by the people who keep the city running at all hours. You see the yellow glow under elevated transit lines at 3am, in utility tunnels, in the rain. The Shelf has its own underground economy in these — expired or out-of-spec jackets that still look official enough to move through certain checkpoints without scrutiny.",
+  "description": "A fluorescent yellow safety jacket with retro-reflective silver tape in a standard X-pattern across the chest and back. Two-tone construction — the body is a bright PVC-coated polyester, the sleeves are a slightly softer polyester for range of motion. Snap front closure, two lower patch pockets, one chest pocket. Meets city infrastructure visibility standards, which means if you work on roads, transit lines, utility corridors, or construction sites, you're probably required to own one.\n\nThis jacket doesn't pretend to be anything other than what it is. It's worn by the people who keep the city running at all hours. You see the yellow glow under elevated transit lines at 3am, in utility tunnels, in the rain. the Gray Zone has its own underground economy in these — expired or out-of-spec jackets that still look official enough to move through certain checkpoints without scrutiny.",
   "tier_association": "Tier 1",
   "materials": [
     "PVC-coated polyester",
@@ -17,7 +17,7 @@
     "road and transit maintenance crews",
     "utility workers",
     "construction laborers",
-    "Shelf residents using them as unofficial city worker disguises",
+    "the Gray Zone residents using them as unofficial city worker disguises",
     "anyone who needs to look official in a dimly lit corridor"
   ],
   "manufacturer": "Orlen Safety Products",
@@ -25,8 +25,8 @@
   "aug_compatible": false,
   "gene_compatible": false,
   "story_hooks": [
-    "A group of Shelf residents wearing Orlen Hi-Vis jackets has been accessing restricted utility tunnels — they're not stealing anything, which makes it more confusing, not less.",
-    "The city infrastructure contract for Hi-Vis jackets was recently awarded to Orlen over a Shelf cooperative that had held it for twenty years — the cooperative is not accepting this quietly.",
+    "A group of the Gray Zone residents wearing Orlen Hi-Vis jackets has been accessing restricted utility tunnels — they're not stealing anything, which makes it more confusing, not less.",
+    "The city infrastructure contract for Hi-Vis jackets was recently awarded to Orlen over a the Gray Zone cooperative that had held it for twenty years — the cooperative is not accepting this quietly.",
     "Someone has been leaving messages on the back of Hi-Vis jackets abandoned in transit tunnels — written in a coded shorthand used by pre-2150 labor organizers."
   ],
   "tags": [
@@ -41,8 +41,7 @@
   ],
   "parent_corponation": "",
   "related_entities": [
-    "Synaptrel",
-    "The Shelf"
+    "Synaptrel"
   ],
   "physical_description": {
     "visual_profile": "High-visibility safety jacket with commanding presence — bright fluorescent yellow demands attention. Utilitarian silhouette with squared shoulders, functional geometry, and authoritative reflective X-stripe pattern. Projects working-class infrastructure presence; worn by those maintaining GLMZ systems in darkness.",
@@ -60,7 +59,7 @@
       "No fashion concessions — pure function aesthetic"
     ],
     "tier_indicator": "Tier 3 working-class, infrastructure essential tier. Signals honest labor maintaining city systems. Not aspirational; mandatory professional wear.",
-    "cultural_context": "Worn by transit workers, utility corridor maintainers, road construction crews, underground infrastructure teams, night-shift grid operators. Seen under elevated lines at 3am, in flooded tunnels, during grid storms. The jacket makes the worker visible to autonomous Behemoth traffic and drones. On The Shelf, expired jackets remain in circulation — worn as unofficial checkpoint passes or identity camouflage.",
+    "cultural_context": "Worn by transit workers, utility corridor maintainers, road construction crews, underground infrastructure teams, night-shift grid operators. Seen under elevated lines at 3am, in flooded tunnels, during grid storms. The jacket makes the worker visible to autonomous Behemoth traffic and drones. On the Gray Zone, expired jackets remain in circulation — worn as unofficial checkpoint passes or identity camouflage.",
     "condition_typical": "Broken-in quickly. Reflective tape edges fray slightly with age; PVC body develops creasing patterns from repetitive movement. Rain-stained hem. Faint mud-spray marks on lower panels. Still functional and regulation-compliant despite visible wear. Torn seams sometimes field-taped rather than replaced."
   },
   "image_prompt": "A Tier 3 infrastructure worker in an Orlen Hi-Vis reflective safety jacket, shot in moody 3am lighting under an elevated transit line. Fluorescent yellow body and silver reflective X-stripe gleaming against dark rain-slicked concrete and shadow. Worker positioned mid-stride, sleeves slightly rolled, one hand touching a maintenance conduit. Industrial GLMZ backdrop — utility poles, neon signage blurred in distance, cold blue-gray color grading. Wet pavement reflects jacket glow. Gritty, documentary-style neo-noir urban aesthetic. --ar 2:3 --v 6",

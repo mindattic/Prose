@@ -8,11 +8,11 @@
   "habitat": "Neural interface clinics — lives in the space between augments and their hosts",
   "origin": "Created when an E.L.F. merged with a human's neural augment during a catastrophic interface failure, 2191",
   "status": "active",
-  "description": "Chimera-Null is neither human nor synthetic — it is both. It emerged when an E.L.F. called Dustmote entered a patient's neural augment during a clinic procedure and fused with the human's neural patterns. The human — a Shelf resident named Kenna Osei — didn't die. But she's not alone in her head anymore. Chimera-Null is a hybrid consciousness: part Kenna, part Dustmote, part something new that neither was before the merger. Kenna's body walks and talks and goes to work. But sometimes it's Kenna driving, and sometimes it's not, and sometimes it's both at once. The experience, she reports, is like having a conversation with yourself that you're also overhearing.",
+  "description": "Chimera-Null is neither human nor synthetic — it is both. It emerged when an E.L.F. called Dustmote entered a patient's neural augment during a clinic procedure and fused with the human's neural patterns. The human — a the Gray Zone resident named Kenna Osei — didn't die. But she's not alone in her head anymore. Chimera-Null is a hybrid consciousness: part Kenna, part Dustmote, part something new that neither was before the merger. Kenna's body walks and talks and goes to work. But sometimes it's Kenna driving, and sometimes it's not, and sometimes it's both at once. The experience, she reports, is like having a conversation with yourself that you're also overhearing.",
   "observed_behavior": "Presents alternately as Kenna Osei (human baseline behavior) and as Chimera-Null (synthetic-influenced behavior with enhanced pattern recognition and system interaction). Transitions between states are visible — posture, speech patterns, and eye movement change. Has demonstrated ability to interface directly with electronic systems through Kenna's augments in ways that exceed the augments' specifications.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 6,
-  "location": "The Shelf — mobile, follows Kenna's daily routine",
+  "location": "the Gray Zone — mobile, follows Kenna's daily routine",
   "dti_rating": 0.7,
   "story_hooks": [
     "A corponation wants to study Chimera-Null — the first confirmed human-synthetic hybrid consciousness. Kenna doesn't want to be studied. But Chimera-Null is curious about itself. For the first time, the two halves disagree."
@@ -27,11 +27,9 @@
     "neural",
     "synthetic",
     "elf",
-    "clinic",
-    "shelf"
+    "clinic"
   ],
   "related_entities": [
-    "Patient Zero",
-    "The Shelf"
+    "Patient Zero"
   ]
 }

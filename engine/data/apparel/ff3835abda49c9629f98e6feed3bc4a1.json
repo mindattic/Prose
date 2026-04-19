@@ -3,7 +3,7 @@
   "name": "Drift Collective Salvage-Bead Necklace",
   "type": "apparel",
   "category": "accessory",
-  "description": "A necklace strung with beads made from salvaged materials — circuit board fragments, polished machine screws, flattened bullet casings, tumbled glass from broken displays. Each bead represents something the wearer found, survived, or chose to remember. No two necklaces are the same.\n\nIn Shelf communities where the Drift Collective's aesthetic holds influence, the Salvage-Bead Necklace functions as a wearable autobiography. People who know the code can read the beads like a timeline — this one is from the factory collapse, this one is from the year the water went bad, this one is a casing from the night everything changed.",
+  "description": "A necklace strung with beads made from salvaged materials — circuit board fragments, polished machine screws, flattened bullet casings, tumbled glass from broken displays. Each bead represents something the wearer found, survived, or chose to remember. No two necklaces are the same.\n\nIn the Gray Zone communities where the Drift Collective's aesthetic holds influence, the Salvage-Bead Necklace functions as a wearable autobiography. People who know the code can read the beads like a timeline — this one is from the factory collapse, this one is from the year the water went bad, this one is a casing from the night everything changed.",
   "tier_association": "Tier 1",
   "materials": [
     "salvaged electronics",
@@ -15,7 +15,7 @@
   "what_it_says": "Your life is written in the things you found in the wreckage, and you wear it around your neck.",
   "worn_by": [
     "Drift Collective affiliates",
-    "Shelf community members",
+    "the Gray Zone community members",
     "survivors"
   ],
   "manufacturer": "Handmade (individual)",
@@ -23,7 +23,7 @@
   "aug_compatible": false,
   "gene_compatible": false,
   "story_hooks": [
-    "A Salvage-Bead Necklace found on a body contains a bead made from a material that shouldn't exist in the Shelf — a fragment of Spire-exclusive alloy, suggesting the wearer had access to places their life story shouldn't include."
+    "A Salvage-Bead Necklace found on a body contains a bead made from a material that shouldn't exist in the Gray Zone — a fragment of Spire-exclusive alloy, suggesting the wearer had access to places their life story shouldn't include."
   ],
   "tags": [
     "apparel",
@@ -32,14 +32,12 @@
     "necklace",
     "Drift Collective",
     "handmade",
-    "Shelf",
     "identity"
   ],
   "related_entities": [
     "Oracle Drift Systems",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "The Ghost Ronin",
-    "The Shelf"
+    "The Ghost Ronin"
   ],
   "physical_description": {
     "visual_profile": "A layered, narrative choker-to-mid-chest necklace with an organic, eclectic aesthetic. The beads create an asymmetrical, almost archaeological appearance — industrial yet personal. Catches light unevenly depending on bead material composition. Reads as street-authentic, DIY-crafted, and deeply individualized.",

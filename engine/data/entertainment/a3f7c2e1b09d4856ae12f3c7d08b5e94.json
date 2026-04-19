@@ -4,11 +4,11 @@
   "type": "entertainment",
   "category": "conspiracy",
   "subcategory": "BCI paranoia",
-  "description": "Street-level theorists on the Shelf and in Tier 2 maintenance districts claim that NovaClade Biosystems embeds a secondary signal — called the Nullsong — into standard BCI firmware updates, cycling emotional suppression states timed to election periods and labor disputes. A Tier 2 comms technician named Brecken Osei-Tran documented anomalous carrier frequencies in the 2.7 kHz range during the 2219 Transit Workers' Arbitration and published her findings on the Underworld node known as Ashgrave Hollow before disappearing. The theory holds that the signal doesn't manufacture emotions but dampens the threshold for civic outrage, making populations measurably less likely to organize. A partial internal audit leaked through a synthetic whistleblower in 2221 confirmed irregular carrier activity but attributed it to 'legacy noise artifacts.'",
+  "description": "Street-level theorists in the Gray Zone and in Tier 2 maintenance districts claim that NovaClade Biosystems embeds a secondary signal — called the Nullsong — into standard BCI firmware updates, cycling emotional suppression states timed to election periods and labor disputes. A Tier 2 comms technician named Brecken Osei-Tran documented anomalous carrier frequencies in the 2.7 kHz range during the 2219 Transit Workers' Arbitration and published her findings on the Underworld node known as Ashgrave Hollow before disappearing. The theory holds that the signal doesn't manufacture emotions but dampens the threshold for civic outrage, making populations measurably less likely to organize. A partial internal audit leaked through a synthetic whistleblower in 2221 confirmed irregular carrier activity but attributed it to 'legacy noise artifacts.'",
   "origin_year": 2219,
   "tier_association": "Tier 1-2",
   "status": "growing",
-  "cultural_impact": "A significant minority of Shelf residents now refuse firmware updates entirely, running degraded BCIs that make them slower in augmented workspaces and flagged as security risks by corporate HR screening. The phrase 'singing clean' has entered Shelf slang to mean someone who's gone update-free.",
+  "cultural_impact": "A significant minority of the Gray Zone residents now refuse firmware updates entirely, running degraded BCIs that make them slower in augmented workspaces and flagged as security risks by corporate HR screening. The phrase 'singing clean' has entered the Gray Zone slang to mean someone who's gone update-free.",
   "key_figures": [
     "Brecken Osei-Tran",
     "NovaClade PR Director Callum Ferreira-Oduya",
@@ -17,11 +17,11 @@
   "locations": [
     "Ashgrave Hollow (Underworld node)",
     "NovaClade Biosystems Tower, Tier 4 North Corridor",
-    "Shelf District 7 community clinic"
+    "the Gray Zone district 7 community clinic"
   ],
   "corporate_stance": "opposed",
   "story_hooks": [
-    "A player character begins experiencing the Nullsong in reverse — inexplicable surges of rage — after a botched third-party firmware patch from a Shelf black-market BCI doc.",
+    "A player character begins experiencing the Nullsong in reverse — inexplicable surges of rage — after a botched third-party firmware patch from a the Gray Zone black-market BCI doc.",
     "Brecken Osei-Tran is found alive but her BCI has been wiped to factory state; she has no memory of her research and no apparent desire to recover it.",
     "NovaClade hires the crew to discredit a second technician who independently replicated Osei-Tran's findings — but the job offer itself arrives through an anonymous channel with no corporate trace."
   ],
@@ -31,14 +31,13 @@
     "firmware",
     "emotional suppression",
     "labor",
-    "Shelf",
     "carrier signal",
     "corporate surveillance",
     "whistleblower",
     "Underworld"
   ],
   "truth_status": "partially_true",
-  "believers": "Shelf residents, labor organizers, anti-corporate activists, off-grid BCI users, Tier 2 technicians with signal analysis backgrounds",
+  "believers": "the Gray Zone residents, labor organizers, anti-corporate activists, off-grid BCI users, Tier 2 technicians with signal analysis backgrounds",
   "evidence": "Brecken Osei-Tran's published frequency logs (still archived on Ashgrave Hollow), the leaked partial audit with its contested 'noise artifact' explanation, measurable statistical dip in strike activity during documented update rollout windows",
   "parent_corponation": "",
   "related_entities": [
@@ -46,7 +45,6 @@
     "Eshe Pena-Baah",
     "Fenwick Oduya-Marsh",
     "Korrath",
-    "The Shelf",
     "The Signal",
     "The Threshold",
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"

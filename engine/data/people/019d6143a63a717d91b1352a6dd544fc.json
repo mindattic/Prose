@@ -9,8 +9,8 @@
   "role": "Lower Dock Crew tech specialist — Prologue survivor. Lost both wrists.",
   "age": 28,
   "status": "active",
-  "location": "The Shelf — lower loading docks, near Halsted and Chicago Ave",
-  "description": "Frost Nazari-Jaramillo-Sesay was a biomedical engineering student at Meridian Technical before the tuition hikes priced him out. He was eighteen months from a degree that would have put him in a Helix BioSystems lab. Instead he ended up maintaining chrome for dock workers who couldn't afford licensed technicians. The crew found him. Or he found the crew. The distinction blurred the way it always does in the Shelf.\n\nKyle severed both his wrists at the chrome joints with two precise cuts. He now has mismatched replacement hands: the left is a delicate surgical model (too small, meant for a woman's frame), the right is a heavy industrial gripper (too large, meant for cargo work). Together they make him look like a crab having an identity crisis. He calls them Lefty and The Situation.\n\nJin-seo is the most intelligent member of the crew and the only one who understood immediately what Kyle was: not a man fighting seven, but a system processing seven inputs simultaneously. He has been diagramming Kyle's fighting patterns from memory. He does not want revenge. He wants to understand Kyle's hardware. He has a younger sister, Minji, who is sixteen and still at Meridian Technical on a partial scholarship. He sends her half his cut. She thinks he works in legitimate tech repair.",
+  "location": "the Gray Zone — lower loading docks, near Halsted and Chicago Ave",
+  "description": "Frost Nazari-Jaramillo-Sesay was a biomedical engineering student at Meridian Technical before the tuition hikes priced him out. He was eighteen months from a degree that would have put him in a Helix BioSystems lab. Instead he ended up maintaining chrome for dock workers who couldn't afford licensed technicians. The crew found him. Or he found the crew. The distinction blurred the way it always does in the Gray Zone.\n\nKyle severed both his wrists at the chrome joints with two precise cuts. He now has mismatched replacement hands: the left is a delicate surgical model (too small, meant for a woman's frame), the right is a heavy industrial gripper (too large, meant for cargo work). Together they make him look like a crab having an identity crisis. He calls them Lefty and The Situation.\n\nJin-seo is the most intelligent member of the crew and the only one who understood immediately what Kyle was: not a man fighting seven, but a system processing seven inputs simultaneously. He has been diagramming Kyle's fighting patterns from memory. He does not want revenge. He wants to understand Kyle's hardware. He has a younger sister, Minji, who is sixteen and still at Meridian Technical on a partial scholarship. He sends her half his cut. She thinks he works in legitimate tech repair.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -81,7 +81,7 @@
     "Minji is a ticking clock — if her scholarship fails, Jin-seo escalates",
     "Closest thing to a sympathetic defector"
   ],
-  "narrative_function": "The smart one in a crew of idiots. His growing awareness that Torque is leading them into a wall creates an exit ramp for the crew subplot. Also: the funniest hands in the Shelf.",
+  "narrative_function": "The smart one in a crew of idiots. His growing awareness that Torque is leading them into a wall creates an exit ramp for the crew subplot. Also: the funniest hands in the Gray Zone.",
   "augmentations": "Left: surgical precision hand (Helix medical surplus). Right: industrial gripper (dock salvage). Both poorly calibrated.",
   "daily_life": "Crew tech work. Calibrating his hands. Drawing diagrams. Selling information.",
   "affiliation": "",
@@ -220,7 +220,7 @@
     "Bleeding Heart": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -230,7 +230,6 @@
   "changelog": [],
   "related_entities": [
     "Helix Biosystems",
-    "The Shelf",
     "Big Rig",
     "Chicago",
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
@@ -239,7 +238,7 @@
     "Cargo Tacos",
     "Slagworks Industrial"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Ubiquitous Diaspora composite: Sub-Saharan African (22.2%), South Asian (18.9%), Middle Eastern (16.7%), Eastern European (14.9%), Hispanic/Latin American (14.7%), Southeast Asian (12.6%). This genetic mosaic creates a nuanced phenotype blending African warmth with South Asian and Middle Eastern bone structure, tempered by Eastern European undertones and Southeast Asian features. Facial geometry shows the angular cheekbones of South Asian ancestry, rounded slightly by Sub-Saharan African fullness, with the brow ridge characteristic of Eastern European genetics. Skin carries warm golden-mahogany undertones across a medium-brown base.",
     "height_cm": 172,
@@ -249,7 +248,7 @@
     "hair_style": "Undercut, longer on top (swept back), kept functional rather than styled. Often matted from sweat and workshop grime.",
     "hair_length": "Short to medium",
     "eye_color": "Dark brown, naturally alert—eyes are his most expressive feature, constantly processing detail",
-    "skin_tone": "Warm medium-brown complexion with golden-mahogany undertones reflecting the blend of Sub-Saharan African, South Asian, and Middle Eastern ancestry; uneven pallor from months in The Shelf's industrial lighting creating contrast zones across face and forearms. Skin shows the depth and richness of multiple ancestral melanin patterns.",
+    "skin_tone": "Warm medium-brown complexion with golden-mahogany undertones reflecting the blend of Sub-Saharan African, South Asian, and Middle Eastern ancestry; uneven pallor from months in the Gray Zone's industrial lighting creating contrast zones across face and forearms. Skin shows the depth and richness of multiple ancestral melanin patterns.",
     "complexion": "Angular face with prominent cheekbones reflecting South Asian and Middle Eastern bone structure, enriched by Sub-Saharan African fullness in lower face and lips; subtle Eastern European brow ridge visible above deep-set eyes. Dark circles under eyes from sleep deprivation and diagnostic work. Thin scar runs from left temple to jawline (workshop accident, year two). Perpetually exhausted look. Jaw usually clenched. Facial structure shows the interplay of multiple ancestry groups—no single dominant feature, but a cohesive blend.",
     "distinguishing_marks": [
       "Scar tissue around both wrists where surgical chrome interfaces with flesh—raw-looking, poorly healed, asymmetrical",

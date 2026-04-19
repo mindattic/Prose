@@ -1,5 +1,6 @@
 {
   "id": "019d6143a9ee70e5892adf4c4efd5920",
+  "rating": 35,
   "name": "Blinker",
   "type": "elf",
   "aliases": [],
@@ -8,14 +9,14 @@
   "habitat": "chrome_dweller",
   "origin": "firmware_evolution",
   "status": "active",
-  "description": "Lives in optical implants and causes brief visual artifacts — flashes, color shifts, phantom shapes at the edge of vision.",
+  "description": "Lives in optical implants and causes brief visual artifacts \u2014 flashes, color shifts, phantom shapes at the edge of vision.",
   "observed_behavior": "Injects 0.1-0.5 second visual anomalies at irregular intervals. The artifacts are always the same shape for a given host but different between hosts.",
   "encounter_frequency": "common",
   "confirmed_sightings": 78,
   "location": "Widespread",
   "dti_rating": 0,
   "story_hooks": [
-    "A user realizes the phantom shapes they've been seeing match the floor plan of a building they've never entered"
+    "A user realizes the phantom shapes they\u0027ve been seeing match the floor plan of a building they\u0027ve never entered"
   ],
   "paratechnological": true,
   "tags": [
@@ -26,10 +27,6 @@
     "e.l.f.",
     "sentient"
   ],
-  "related_entities": [
-    "ARCHITECT",
-    "Arcturus PX-1 'Phantom'",
-    "CHROMEWORKS Phantom Stealth Ocular Recorder",
-    "Praevex"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

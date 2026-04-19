@@ -3,7 +3,7 @@
   "type": "place",
   "name": "The Bench",
   "aliases": [],
-  "description": "Not a restaurant, not a cart, not a stand — just a bench in a Rockford park where someone leaves a cooler full of sandwiches every morning at 7 AM. Vat-protein on synth-bread, individually wrapped, free. The cooler is always clean, the sandwiches are always fresh, and nobody has ever seen who delivers it. Rockford Shelf residents call it The Bench and treat it with a reverence usually reserved for religious sites. Taking more than one sandwich is technically possible and socially unthinkable. The Bench has operated for three years. Nobody knows who funds it.",
+  "description": "Not a restaurant, not a cart, not a stand — just a bench in a Rockford park where someone leaves a cooler full of sandwiches every morning at 7 AM. Vat-protein on synth-bread, individually wrapped, free. The cooler is always clean, the sandwiches are always fresh, and nobody has ever seen who delivers it. Rockford the Gray Zone residents call it The Bench and treat it with a reverence usually reserved for religious sites. Taking more than one sandwich is technically possible and socially unthinkable. The Bench has operated for three years. Nobody knows who funds it.",
   "atmosphere": {
     "sights": [],
     "sounds": [],
@@ -17,7 +17,7 @@
     "tags": []
   },
   "frequented_by": [
-    "Rockford Shelf residents",
+    "Rockford the Gray Zone residents",
     "Morning park visitors",
     "People who need exactly one sandwich"
   ],
@@ -34,5 +34,6 @@
   ],
   "related_entities": [
     "Soren Sokolov"
-  ]
+  ],
+  "controllingCorponation": null
 }

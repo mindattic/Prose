@@ -1,7 +1,8 @@
 {
   "id": "019d6143a6fe7cceb904aead71814be1",
+  "rating": 80,
   "type": "character",
-  "name": "Orion Thorvaldsdóttir",
+  "name": "Orion Thorvaldsd\u00F3ttir",
   "aliases": [],
   "species": "human",
   "gender": "male",
@@ -10,7 +11,7 @@
   "age": 19,
   "status": "active",
   "location": "Brightmoor Reclamation, squats in an abandoned Ferrogate Transit relay station, near Halsted and Division",
-  "description": "Orion Thorvaldsdóttir is a skinny nineteen-year-old with the kind of energy that only reads as charisma or catastrophe depending on the day. He's all long limbs and fast hands, hair in a dozen thin braids dyed alternating orange and white that he keeps tied back while working. His geneware is cheap and obviously DIY-adjacent — cat ears that didn't integrate quite right and sit slightly asymmetrical on his head, one a little higher than the other, which he claims is intentional but isn't. His fingertips are perpetually stained with chromatic aerosol pigment in colors that don't exist in the standard spectrum.\n\nWhat he does with a wall is extraordinary. Orion Thorvaldsdóttir paints living murals — his aerosol formulas include bioluminescent reactive compounds he mixes himself from salvaged materials, so his work changes with light conditions, breathing and shifting from dawn to dusk to full dark when it blazes. He's been arrested four times by Ferrogate Transit security for unauthorized installation on their infrastructure. He considers this a metric of success. Offstage he is loud, impatient, genuinely sweet when he trusts someone, and absolutely certain he is going to be famous someday. He is probably right.",
+  "description": "Orion Thorvaldsd\u00F3ttir is a skinny nineteen-year-old with the kind of energy that only reads as charisma or catastrophe depending on the day. He\u0027s all long limbs and fast hands, hair in a dozen thin braids dyed alternating orange and white that he keeps tied back while working. His geneware is cheap and obviously DIY-adjacent \u2014 cat ears that didn\u0027t integrate quite right and sit slightly asymmetrical on his head, one a little higher than the other, which he claims is intentional but isn\u0027t. His fingertips are perpetually stained with chromatic aerosol pigment in colors that don\u0027t exist in the standard spectrum.\n\nWhat he does with a wall is extraordinary. Orion Thorvaldsd\u00F3ttir paints living murals \u2014 his aerosol formulas include bioluminescent reactive compounds he mixes himself from salvaged materials, so his work changes with light conditions, breathing and shifting from dawn to dusk to full dark when it blazes. He\u0027s been arrested four times by Ferrogate Transit security for unauthorized installation on their infrastructure. He considers this a metric of success. Offstage he is loud, impatient, genuinely sweet when he trusts someone, and absolutely certain he is going to be famous someday. He is probably right.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -21,43 +22,47 @@
       "ghost": 0.3
     },
     "core_fears": [
-      "Obscurity — making work no one ever sees or remembers",
+      "Obscurity \u2014 making work no one ever sees or remembers",
       "Becoming boring, becoming safe, becoming like the corporate murals he despises"
     ],
     "core_desires": [
-      "To paint something so large and so permanent it can't be removed without destroying the structure beneath it",
-      "Recognition — not fame exactly, but to be known"
+      "To paint something so large and so permanent it can\u0027t be removed without destroying the structure beneath it",
+      "Recognition \u2014 not fame exactly, but to be known"
     ],
     "coping_mechanisms": [
       "Working through the night until a problem has been replaced by a completed piece",
       "The Residue collective as surrogate family"
     ],
     "blind_spots": [
-      "Doesn't recognize exploitation — will do enormous amounts of free work for people who express sufficient admiration",
+      "Doesn\u0027t recognize exploitation \u2014 will do enormous amounts of free work for people who express sufficient admiration",
       "Genuinely cannot assess his own physical limits"
     ],
-    "secret": "He has been anonymously commissioned three times through an encrypted channel to paint specific imagery on specific walls in Brightmoor — imagery he thought was his own idea. He started to notice the pattern after the third job. The payment arrives in Φ before he even confirms. He has not told Residue."
+    "secret": "He has been anonymously commissioned three times through an encrypted channel to paint specific imagery on specific walls in Brightmoor \u2014 imagery he thought was his own idea. He started to notice the pattern after the third job. The payment arrives in \u03A6 before he even confirms. He has not told Residue."
   },
   "speech_patterns": {
-    "vocabulary": "Fast, slangy, mixes Finnish-Sahel patois from his grandmother's household with street GLMZ creole. Uses 'dead' as highest praise.",
+    "vocabulary": "Fast, slangy, mixes Finnish-Sahel patois from his grandmother\u0027s household with street GLMZ creole. Uses \u0027dead\u0027 as highest praise.",
     "cadence": "Quick, overlapping itself, trails off when he loses the thread then picks up somewhere unexpected.",
     "verbal_tics": [
-      "'No but listen—'",
-      "'That's dead, that's actually dead'",
-      "Starts sentences with 'Okay so—' even when continuing a thought"
+      "\u0027No but listen\u2014\u0027",
+      "\u0027That\u0027s dead, that\u0027s actually dead\u0027",
+      "Starts sentences with \u0027Okay so\u2014\u0027 even when continuing a thought"
     ],
     "example_lines": [
-      "'No but listen — the wall was already half-collapsed and I was like, okay so, that's the piece, right? The collapse is the piece. I just added light.'",
-      "'That mural by the Ferrogate junction? Dead. That one is dead. I did it in four hours and they painted over it in six and I've been thinking about it every day since because that's the only review that matters.'"
-    ]
+      "\u0027No but listen \u2014 the wall was already half-collapsed and I was like, okay so, that\u0027s the piece, right? The collapse is the piece. I just added light.\u0027",
+      "\u0027That mural by the Ferrogate junction? Dead. That one is dead. I did it in four hours and they painted over it in six and I\u0027ve been thinking about it every day since because that\u0027s the only review that matters.\u0027"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "The anonymous commissions are getting stranger — the imagery he's been asked to paint, he's starting to realize, forms a map when overlaid. A map of something under Brightmoor.",
-    "Ferrogate Transit has issued a formal cease-and-desist with his name on it — his real name, which he has never used publicly. Someone told them.",
-    "A Tier 3 gallery in Grand Corridor wants to offer him a show — the first legitimate institutional interest he's ever received — and the terms feel wrong in ways he can't quite articulate"
+    "The anonymous commissions are getting stranger \u2014 the imagery he\u0027s been asked to paint, he\u0027s starting to realize, forms a map when overlaid. A map of something under Brightmoor.",
+    "Ferrogate Transit has issued a formal cease-and-desist with his name on it \u2014 his real name, which he has never used publicly. Someone told them.",
+    "A Tier 3 gallery in Grand Corridor wants to offer him a show \u2014 the first legitimate institutional interest he\u0027s ever received \u2014 and the terms feel wrong in ways he can\u0027t quite articulate"
   ],
-  "narrative_function": "Local color and street-level information source about Brightmoor and surrounding reclamation zones; knows which walls belong to whom in the informal territorial sense; his murals sometimes contain encoded messages for the community — he doesn't always know whose messages.",
+  "narrative_function": "Local color and street-level information source about Brightmoor and surrounding reclamation zones; knows which walls belong to whom in the informal territorial sense; his murals sometimes contain encoded messages for the community \u2014 he doesn\u0027t always know whose messages.",
   "augmentations": "DIY-installed cat ears (asymmetrical integration, functional but imprecise); chromatic nail enhancement (fingers cycle color slowly, cheap consumer grade)",
   "daily_life": "Sleeps until noon, spends afternoons sourcing materials and scouting locations, goes out after midnight to work; attends Residue meetings sporadically when he remembers.",
   "affiliation": "Loosely affiliated with a graffiti collective called Residue; occasional work for Brightmoor Reclamation community boards (paid in food and materials)",
@@ -103,18 +108,18 @@
   },
   "behavioral": {
     "decision_rules": [
-      "Never paint over someone else's existing work without permission",
-      "Always finish what you start on a wall — leaving a piece incomplete is worse than not starting",
-      "Don't sell to corponations. They'll put your face on their lobby and call it community investment."
+      "Never paint over someone else\u0027s existing work without permission",
+      "Always finish what you start on a wall \u2014 leaving a piece incomplete is worse than not starting",
+      "Don\u0027t sell to corponations. They\u0027ll put your face on their lobby and call it community investment."
     ],
     "escalation_ladder": [
       "Talking fast and louder",
-      "Physical restlessness — starts pacing, can't stay still",
+      "Physical restlessness \u2014 starts pacing, can\u0027t stay still",
       "Bolting the situation entirely and processing alone",
       "In genuine crisis: goes very quiet, which alarms people who know him"
     ],
     "interpersonal_modes": {
-      "strangers": "Immediately too much — enthusiastic, attention-seeking, performing confidence he's mostly assembled from habit",
+      "strangers": "Immediately too much \u2014 enthusiastic, attention-seeking, performing confidence he\u0027s mostly assembled from habit",
       "friends": "Tender and loyal, shares everything, asks for help badly but sincerely"
     },
     "stress_responses": {
@@ -124,12 +129,12 @@
     },
     "contradictions": [
       "Despises corporate art and institutional validation but desperately wants to be seen and recognized",
-      "Claims to paint for the community but makes unilateral decisions about what the community's walls should say"
+      "Claims to paint for the community but makes unilateral decisions about what the community\u0027s walls should say"
     ],
     "habits": [
-      "Leaves a small tag — a tiny void symbol — somewhere hidden in every mural as a signature",
+      "Leaves a small tag \u2014 a tiny void symbol \u2014 somewhere hidden in every mural as a signature",
       "Talks to ELF shrines he passes while working, updates them on the piece like a running commentary",
-      "Eats almost nothing while on a project, then eats enormously when it's done"
+      "Eats almost nothing while on a project, then eats enormously when it\u0027s done"
     ],
     "breaking_points": [
       "One of his murals being used without permission in corporate branding",
@@ -138,23 +143,23 @@
   },
   "cyberware_inventory": [
     {
-      "name": "DIY geneware cat ears (asymmetrical, partial integration — purchased from unlicensed bodmod stall)",
+      "name": "DIY geneware cat ears (asymmetrical, partial integration \u2014 purchased from unlicensed bodmod stall)",
       "body_location": "",
       "manufacturer": "",
       "tier": "",
       "condition": "functional",
       "installed_date": "",
-      "description": "DIY geneware cat ears (asymmetrical, partial integration — purchased from unlicensed bodmod stall)",
+      "description": "DIY geneware cat ears (asymmetrical, partial integration \u2014 purchased from unlicensed bodmod stall)",
       "replaces": ""
     },
     {
-      "name": "Chromatic nail enhancement — consumer grade, slow color cycle",
+      "name": "Chromatic nail enhancement \u2014 consumer grade, slow color cycle",
       "body_location": "",
       "manufacturer": "",
       "tier": "",
       "condition": "functional",
       "installed_date": "",
-      "description": "Chromatic nail enhancement — consumer grade, slow color cycle",
+      "description": "Chromatic nail enhancement \u2014 consumer grade, slow color cycle",
       "replaces": ""
     }
   ],
@@ -187,27 +192,13 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Snapper-22 'Cricket'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [
-    "Meridian Munitions Snapper-22 'Cricket'"
-  ],
-  "related_entities": [
-    "Brightmoor Reclamation",
-    "Ferrogate Transit",
-    "Grand Corridor",
-    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
-    "The Reclamation Assembly",
-    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "GLMZ",
-    "The Pure Hand",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
-  ],
-  "district": "The Shelf",
   "physical_description": {
-    "heritage": "Northern European, Sub-Saharan African, South Asian, and East Asian mixed ancestry — a striking global blend. The combination creates warm, deep brown skin with subtle golden undertones from the South Asian and East Asian components, enriched by the darker pigmentation from Sub-Saharan African heritage (47.4% Northern European providing lighter undertone variation), creating a complex, multifaceted complexion that shifts warmly under artificial light with pronounced depth and dimension.",
+    "heritage": "Northern European, Sub-Saharan African, South Asian, and East Asian mixed ancestry \u2014 a striking global blend. The combination creates warm, deep brown skin with subtle golden undertones from the South Asian and East Asian components, enriched by the darker pigmentation from Sub-Saharan African heritage (47.4% Northern European providing lighter undertone variation), creating a complex, multifaceted complexion that shifts warmly under artificial light with pronounced depth and dimension.",
     "height_cm": 178,
     "weight_kg": 62,
     "build": "Wiry and lean with long limbs; the build of someone who moves constantly and eats inconsistently. Defined shoulders and forearms from repetitive spraying motions, minimal body fat.",
@@ -215,30 +206,25 @@
     "hair_style": "Thin braids, typically pulled back with salvaged wire or fabric scraps while working; loose and chaotic when down",
     "hair_length": "Medium, past shoulder length when unbraided",
     "eye_color": "Deep brown with warm golden undertones, reflecting the balanced interplay of Sub-Saharan African, South Asian, and East Asian heritage",
-    "skin_tone": "Warm deep brown with golden undertones and subtle lighter variations from Northern European genetics — a rich, multifaceted blend creating a complexion that glows warmly under artificial light with pronounced depth and natural dimension across the face",
-    "complexion": "Rounded to angular facial structure reflecting the diverse ancestral blend — higher cheekbones characteristic of East and South Asian genetics, complemented by broader facial proportions influenced by Sub-Saharan African heritage, softened by Northern European genetic contribution. Deep warm brown base with golden warmth. Perpetually sleep-deprived appearance with dark under-eye circles. Skin shows the wear of late-night work and inconsistent hygiene — occasional aerosol chemical burns on cheeks and neck from spray blowback. Fingers stained with chromatic pigments in impossible hues (electric purple, synthetic cyan, neon lime) that don't wash out completely.",
+    "skin_tone": "Warm deep brown with golden undertones and subtle lighter variations from Northern European genetics \u2014 a rich, multifaceted blend creating a complexion that glows warmly under artificial light with pronounced depth and natural dimension across the face",
+    "complexion": "Rounded to angular facial structure reflecting the diverse ancestral blend \u2014 higher cheekbones characteristic of East and South Asian genetics, complemented by broader facial proportions influenced by Sub-Saharan African heritage, softened by Northern European genetic contribution. Deep warm brown base with golden warmth. Perpetually sleep-deprived appearance with dark under-eye circles. Skin shows the wear of late-night work and inconsistent hygiene \u2014 occasional aerosol chemical burns on cheeks and neck from spray blowback. Fingers stained with chromatic pigments in impossible hues (electric purple, synthetic cyan, neon lime) that don\u0027t wash out completely.",
     "distinguishing_marks": [
       "Chemical burn scars on right cheekbone from early aerosol experimentation, roughly 2cm in length, slightly raised and discolored",
-      "Ferrogate Transit security marker tattoo on left wrist (mandatory after second arrest) — small geometric symbol in black ink",
+      "Ferrogate Transit security marker tattoo on left wrist (mandatory after second arrest) \u2014 small geometric symbol in black ink",
       "Accidental spray-paint splatter scar on left hand webbing, iridescent pigment still faintly visible under skin"
     ],
-    "visible_augmentations": "Asymmetrically positioned DIY cat ears mounted on skull via subdermal anchors — left ear sits approximately 0.5cm higher than right, both with slight rotational drift during movement. Ears are cheap cosmetic grade (synthetic cartilage, basic servo motors) with visible misalignment that Orion claims is intentional. Fingertips display slow-cycling chromatic nail enhancement (consumer-grade bioelectric implants) that shift through unnatural color gradients — currently cycling through violet-to-magenta-to-cyan range.",
-    "posture_movement": "Restless and kinetic; rarely still for more than seconds. Moves with purpose and speed, shoulders slightly forward. Hands are constantly in motion even at rest — fingers flexing, gesturing, mimicking spray motions. When concentrating on art, enters a state of complete focus that contrasts sharply with baseline hyperactivity. Default expression is wide-eyed enthusiasm or mischievous intensity.",
-    "clothing_style": "Tier 5 utilitarian with deliberate aesthetic flair. Typically wears paint-splattered cargo pants (multiple pockets for materials, cuffs stained with permanent chromatic residue) and oversized thrifted tech-company t-shirts from defunct 2180s-era startups. Layered jackets salvaged from Brightmoor recyclers — current favorite is a faded synthetic-fiber windbreaker with LED panel strips rewired (malfunctioning, blinks irregularly). Worn canvas sneakers with custom-painted soles. Carries a salvaged military-grade harness vest modified to hold aerosol cans, brushes, and chemical bottles. Heavy reliance on found/salvaged accessories: wire bracelets, scrap-metal rings, a cracked safety visor worn pushed up on forehead."
+    "visible_augmentations": "Asymmetrically positioned DIY cat ears mounted on skull via subdermal anchors \u2014 left ear sits approximately 0.5cm higher than right, both with slight rotational drift during movement. Ears are cheap cosmetic grade (synthetic cartilage, basic servo motors) with visible misalignment that Orion claims is intentional. Fingertips display slow-cycling chromatic nail enhancement (consumer-grade bioelectric implants) that shift through unnatural color gradients \u2014 currently cycling through violet-to-magenta-to-cyan range.",
+    "posture_movement": "Restless and kinetic; rarely still for more than seconds. Moves with purpose and speed, shoulders slightly forward. Hands are constantly in motion even at rest \u2014 fingers flexing, gesturing, mimicking spray motions. When concentrating on art, enters a state of complete focus that contrasts sharply with baseline hyperactivity. Default expression is wide-eyed enthusiasm or mischievous intensity.",
+    "clothing_style": "Tier 5 utilitarian with deliberate aesthetic flair. Typically wears paint-splattered cargo pants (multiple pockets for materials, cuffs stained with permanent chromatic residue) and oversized thrifted tech-company t-shirts from defunct 2180s-era startups. Layered jackets salvaged from Brightmoor recyclers \u2014 current favorite is a faded synthetic-fiber windbreaker with LED panel strips rewired (malfunctioning, blinks irregularly). Worn canvas sneakers with custom-painted soles. Carries a salvaged military-grade harness vest modified to hold aerosol cans, brushes, and chemical bottles. Heavy reliance on found/salvaged accessories: wire bracelets, scrap-metal rings, a cracked safety visor worn pushed up on forehead."
   },
-  "image_prompt": "GLMZ portrait of Orion Thorvaldsdóttir, 178cm lean wiry figure with complex warm deep brown skin with golden undertones reflecting global ancestry blend. Dark natural braids with neon orange and white DIY dye, loosely framing defined cheekbones. Deep warm brown eyes with perpetual sleep-deprived dark circles. Asymmetrical DIY cat ears with servo motors mounted via subdermal anchors on shaved sides of head. Chemical burn scars visible on right cheek, ferrogate transit tattoo on left wrist. Fingers stained with impossible chromatic pigments (electric purple, synthetic cyan, neon lime), fingertips displaying slow-cycling violet-magenta-cyan bioelectric nail implants. Wearing oversized faded 2180s tech startup t-shirt splattered with paint residue, recycled synthetic-fiber windbreaker with malfunctioning LED strips, paint-stained cargo pants, worn custom-painted canvas sneakers. Salvaged military harness vest with aerosol cans and brushes. Wire bracelets, scrap-metal rings, cracked safety visor pushed up on forehead. Restless kinetic posture, hands in motion, wide-eyed mischievous intensity. Neon underground art studio setting with harsh blue and pink LED lighting casting complex shadows across mixed-heritage features. Gritty, lived-in aesthetic with spray-paint murals in background. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ portrait of Orion Thorvaldsd\u00F3ttir, 178cm lean wiry figure with complex warm deep brown skin with golden undertones reflecting global ancestry blend. Dark natural braids with neon orange and white DIY dye, loosely framing defined cheekbones. Deep warm brown eyes with perpetual sleep-deprived dark circles. Asymmetrical DIY cat ears with servo motors mounted via subdermal anchors on shaved sides of head. Chemical burn scars visible on right cheek, ferrogate transit tattoo on left wrist. Fingers stained with impossible chromatic pigments (electric purple, synthetic cyan, neon lime), fingertips displaying slow-cycling violet-magenta-cyan bioelectric nail implants. Wearing oversized faded 2180s tech startup t-shirt splattered with paint residue, recycled synthetic-fiber windbreaker with malfunctioning LED strips, paint-stained cargo pants, worn custom-painted canvas sneakers. Salvaged military harness vest with aerosol cans and brushes. Wire bracelets, scrap-metal rings, cracked safety visor pushed up on forehead. Restless kinetic posture, hands in motion, wide-eyed mischievous intensity. Neon underground art studio setting with harsh blue and pink LED lighting casting complex shadows across mixed-heritage features. Gritty, lived-in aesthetic with spray-paint murals in background. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Northern European": 47.4,
     "Sub-Saharan African": 23.5,
     "South Asian": 14.9,
     "East Asian": 14.2
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Northern European": {
       "British Isles": {
@@ -277,6 +263,5 @@
         "Korean": 5.1
       }
     }
-  },
-  "tier": "1"
+  }
 }

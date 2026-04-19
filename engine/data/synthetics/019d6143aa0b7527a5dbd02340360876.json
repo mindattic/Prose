@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa0b7527a5dbd02340360876",
+  "rating": 65,
   "name": "Magnet",
   "type": "elf",
   "aliases": [],
@@ -26,7 +27,6 @@
     "e.l.f.",
     "sentient"
   ],
-  "related_entities": [
-    "Patient Zero"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

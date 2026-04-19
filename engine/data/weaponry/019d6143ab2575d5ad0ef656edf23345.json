@@ -1,21 +1,22 @@
 {
   "id": "019d6143ab2575d5ad0ef656edf23345",
-  "name": "Electrokinetic Pulse Drone EPD-3 'Thunderhead'",
+  "rating": 80,
+  "name": "Electrokinetic Pulse Drone EPD-3 \u0027Thunderhead\u0027",
   "type": "weapon",
   "aliases": [],
   "category": "drone",
-  "description": "The EPD-3 is a medium-chassis hovering drone platform designed to project directional high-voltage electrokinetic pulses against personnel and light electronic systems. Manufactured by ZHENG-DAO BIOELECTRIC, it draws on the company's industrial arc-discharge research to deliver a focused 80,000-volt pulse across a conductive plasma channel ionized by an onboard UV laser. The effect on an unshielded human target at close range is immediate neuromuscular incapacitation; at extended ranges, the pulse degrades to disorientation, involuntary muscle spasm, and—with repeated exposure—cardiac arrhythmia. The EPD-3 is officially classified as a non-lethal deterrence platform, a designation that field experience consistently contradicts.",
+  "description": "The EPD-3 is a medium-chassis hovering drone platform designed to project directional high-voltage electrokinetic pulses against personnel and light electronic systems. Manufactured by ZHENG-DAO BIOELECTRIC, it draws on the company\u0027s industrial arc-discharge research to deliver a focused 80,000-volt pulse across a conductive plasma channel ionized by an onboard UV laser. The effect on an unshielded human target at close range is immediate neuromuscular incapacitation; at extended ranges, the pulse degrades to disorientation, involuntary muscle spasm, and\u2014with repeated exposure\u2014cardiac arrhythmia. The EPD-3 is officially classified as a non-lethal deterrence platform, a designation that field experience consistently contradicts.",
   "manufacturer": "ZHENG-DAO BIOELECTRIC",
-  "tier_availability": "Tier 3+",
-  "legality": "Restricted — licensed non-lethal designation; repeated-discharge use against personnel classified as aggravated assault under Meridian Code 44.7",
+  "tier_availability": "Tier 3\u002B",
+  "legality": "Restricted \u2014 licensed non-lethal designation; repeated-discharge use against personnel classified as aggravated assault under Meridian Code 44.7",
   "base_technologies": [
     "UV laser plasma channel ionization",
     "High-voltage capacitive discharge (arc projection)",
     "Electrokinetic cyberware interference"
   ],
-  "specifications": "dimensions: 480mm x 480mm x 220mm\nmass: 3.8 kg\ndischarge voltage: 80,000V (peak), 12,000V (sustained arc)\neffective range: Full incapacitation to 8m; disorientation/arrhythmia risk to 22m\npulse capacity: 14 discharges per capacitor cycle\nrecharge cycle: 88 seconds (full capacitor recharge)\nsecondary effect: Electronic disruption — fuses unshielded circuitry within 4m of discharge point\nflight endurance: 42 minutes (active discharge operations)\nacoustic signature: Audible turbine hum at close range; discharge crack audible to 200m\noperator interface: Direct telemetry, AR overlay compatible, semi-autonomous patrol mode available",
-  "tactical_use": "Crowd control, building clearance, and anti-drone operations. Corporate security details use paired Thunderhead units to establish non-lethal perimeters around executive assets, with the understanding that 'non-lethal' is a legal rather than physiological description. Anti-cyberware enforcement units deploy them to selectively disable unregistered augmentations before detaining subjects—a tactic that has resulted in multiple deaths where the targeted cyberware included cardiac or respiratory assist systems. Counter-measures include Faraday-weave clothing (reduces but does not eliminate effect), plasma-channel scatter panels, and the crude expedient of keeping a grounded conductor between the drone and the operator's body.",
-  "cultural_context": "The Thunderhead occupies a specific cultural role as the face of 'legitimate' corporate violence—the weapon that says 'we're not trying to kill you' while demonstrably trying to hurt you. In augmentation-heavy communities like the Sublevel markets and the prosthetics districts around Helix Row, the EPD-3 is despised with a particular intensity. Anti-augmentation enforcement using Thunderhead units has become a flashpoint in ongoing political tensions around cyberware rights, and the drone's silhouette has appeared in protest art and propaganda from several augmentation-rights organizations. ZHENG-DAO BIOELECTRIC's continued non-lethal classification of the platform despite documented fatalities is a recurring subject of investigative journalism in GLMZ.",
+  "specifications": "dimensions: 480mm x 480mm x 220mm\nmass: 3.8 kg\ndischarge voltage: 80,000V (peak), 12,000V (sustained arc)\neffective range: Full incapacitation to 8m; disorientation/arrhythmia risk to 22m\npulse capacity: 14 discharges per capacitor cycle\nrecharge cycle: 88 seconds (full capacitor recharge)\nsecondary effect: Electronic disruption \u2014 fuses unshielded circuitry within 4m of discharge point\nflight endurance: 42 minutes (active discharge operations)\nacoustic signature: Audible turbine hum at close range; discharge crack audible to 200m\noperator interface: Direct telemetry, AR overlay compatible, semi-autonomous patrol mode available",
+  "tactical_use": "Crowd control, building clearance, and anti-drone operations. Corporate security details use paired Thunderhead units to establish non-lethal perimeters around executive assets, with the understanding that \u0027non-lethal\u0027 is a legal rather than physiological description. Anti-cyberware enforcement units deploy them to selectively disable unregistered augmentations before detaining subjects\u2014a tactic that has resulted in multiple deaths where the targeted cyberware included cardiac or respiratory assist systems. Counter-measures include Faraday-weave clothing (reduces but does not eliminate effect), plasma-channel scatter panels, and the crude expedient of keeping a grounded conductor between the drone and the operator\u0027s body.",
+  "cultural_context": "The Thunderhead occupies a specific cultural role as the face of \u0027legitimate\u0027 corporate violence\u2014the weapon that says \u0027we\u0027re not trying to kill you\u0027 while demonstrably trying to hurt you. In augmentation-heavy communities like the Sublevel markets and the prosthetics districts around Helix Row, the EPD-3 is despised with a particular intensity. Anti-augmentation enforcement using Thunderhead units has become a flashpoint in ongoing political tensions around cyberware rights, and the drone\u0027s silhouette has appeared in protest art and propaganda from several augmentation-rights organizations. ZHENG-DAO BIOELECTRIC\u0027s continued non-lethal classification of the platform despite documented fatalities is a recurring subject of investigative journalism in GLMZ.",
   "known_users": [
     "ZHENG-DAO BIOELECTRIC corporate security (executive protection)",
     "GLMZ PD crowd control units (licensed)",
@@ -24,10 +25,10 @@
     "Black-market operators (modified for lethal discharge threshold)"
   ],
   "story_hooks": [
-    "A modified EPD-3 with its discharge limiter removed has killed three people in the Sublevel markets. MMPD is calling it malfunction. The victims' families are calling it murder. Someone needs to find the operator and the modification source before a fourth deployment.",
-    "A ZHENG-DAO BIOELECTRIC engineer has evidence that the company's own internal testing showed cardiac fatality rates of 12% in subjects with common cardiac cyberware—evidence that was buried before the non-lethal certification was filed. She wants out and wants the data published.",
-    "A player character with cardiac assist cyberware is told a Thunderhead unit has been assigned to their building's security detail. The building manager says it's standard. It isn't standard. Someone specifically requested it.",
-    "A protest in the Helix Row prosthetics district has turned into a standoff. Six EPD-3 units are holding the perimeter. Someone in the crowd has a signal jammer that can kill the units' telemetry—but using it will also kill the medical monitoring signals of three protesters with life-support augmentations."
+    "A modified EPD-3 with its discharge limiter removed has killed three people in the Sublevel markets. MMPD is calling it malfunction. The victims\u0027 families are calling it murder. Someone needs to find the operator and the modification source before a fourth deployment.",
+    "A ZHENG-DAO BIOELECTRIC engineer has evidence that the company\u0027s own internal testing showed cardiac fatality rates of 12% in subjects with common cardiac cyberware\u2014evidence that was buried before the non-lethal certification was filed. She wants out and wants the data published.",
+    "A player character with cardiac assist cyberware is told a Thunderhead unit has been assigned to their building\u0027s security detail. The building manager says it\u0027s standard. It isn\u0027t standard. Someone specifically requested it.",
+    "A protest in the Helix Row prosthetics district has turned into a standoff. Six EPD-3 units are holding the perimeter. Someone in the crowd has a signal jammer that can kill the units\u0027 telemetry\u2014but using it will also kill the medical monitoring signals of three protesters with life-support augmentations."
   ],
   "ammunition_type": [
     "internal_power_system"
@@ -55,43 +56,44 @@
     "tier 3",
     "lethal"
   ],
+  "image_prompt": "Product photography of ZHENG-DAO BIOELECTRIC EPD-3 Thunderhead drone hovering 15cm above matte black reflective surface, shot from three-quarter angle. Dramatic blue-tinted side-lighting emphasizes capacitor housing and heat-dissipation fins. UV laser apertures glow soft cyan as if mid-charge cycle. Rotor blades partially blurred to suggest active hover. Weathered aluminum frame and brushed metal accents catch sharp highlights. Dark background with subtle grid pattern suggesting industrial setting. Neo-noir urban aesthetic\u2014neon-adjacent color temperature, precise engineering visible in every edge. Include shallow depth-of-field with rotor detail sharp, background soft. --ar 3:2 --v 6",
+  "dalle3_prompt": "",
   "parent_corponation": "",
   "related_entities": [
     "Alper Holmberg-Dembele",
-    "Biophotonic Retinal Cascade Emitter BRCE-5 'Flashpoint'",
+    "Biophotonic Retinal Cascade Emitter BRCE-5 \u0027Flashpoint\u0027",
     "Fanta Kato-Adomako",
     "GLMZ",
-    "Iowan Behemoth — 'Thunderhead'",
+    "Iowan Behemoth \u2014 \u0027Thunderhead\u0027",
     "Mika Sorel",
     "Nodar Kuznetsov-Adu",
     "Somadina Karlsen-Sow",
-    "Street Custom 'Glass Garden' Caltrops",
-    "TESSERA ES-4 'Perimeter'",
-    "TESSERA PG-2 'Signature'",
+    "Street Custom \u0027Glass Garden\u0027 Caltrops",
+    "TESSERA ES-4 \u0027Perimeter\u0027",
+    "TESSERA PG-2 \u0027Signature\u0027",
     "Zheng-Dao Marrow-Pulse Implant",
     "Zheng-dao Bioelectric"
   ],
   "physical_description": {
-    "visual_profile": "A compact quadrotor platform with an aggressive, angular chassis. The EPD-3 reads as a predatory insect crossed with military hardware—four swept-back carbon-fiber rotors mounted on articulated arms, centered on a reinforced polymer drone body bristling with exposed capacitor banks and ionization hardware. The silhouette is deliberately compact to suggest lethality compressed into minimal volume.",
-    "dimensions": "480mm (width/length across rotor diameter) × 480mm (rotor span) × 220mm (height from base to capacitor stack apex). Effective visual footprint suggests a large dinner plate when hovering.",
-    "weight_description": "Substantial but not unwieldy—3.8 kg is heavy enough to convey engineering density without appearing cumbersome. Feels engineered rather than assembled; purposeful mass distributed through reinforced frame points.",
+    "visual_profile": "A compact quadrotor platform with an aggressive, angular chassis. The EPD-3 reads as a predatory insect crossed with military hardware\u2014four swept-back carbon-fiber rotors mounted on articulated arms, centered on a reinforced polymer drone body bristling with exposed capacitor banks and ionization hardware. The silhouette is deliberately compact to suggest lethality compressed into minimal volume.",
+    "dimensions": "480mm (width/length across rotor diameter) \u00D7 480mm (rotor span) \u00D7 220mm (height from base to capacitor stack apex). Effective visual footprint suggests a large dinner plate when hovering.",
+    "weight_description": "Substantial but not unwieldy\u20143.8 kg is heavy enough to convey engineering density without appearing cumbersome. Feels engineered rather than assembled; purposeful mass distributed through reinforced frame points.",
     "primary_material": "6061-T6 aluminum frame with carbon-fiber rotor arms. Chassis body is reinforced polycarbonate composite with integrated graphite-epoxy panels to house capacitor banks. Heat-dissipation ribs are visible along the fuselage.",
-    "finish": "Matte gunmetal gray with brushed aluminum accents. Capacitor housing shows anodized dark blue with metallic bronze highlights. Weathering typical of field deployment—micro-abrasions along rotor guards, scuff marks on lower chassis from repeated landings, slight discoloration around UV laser emission lens from thermal cycling.",
+    "finish": "Matte gunmetal gray with brushed aluminum accents. Capacitor housing shows anodized dark blue with metallic bronze highlights. Weathering typical of field deployment\u2014micro-abrasions along rotor guards, scuff marks on lower chassis from repeated landings, slight discoloration around UV laser emission lens from thermal cycling.",
     "color_scheme": "Dominant matte gray (RAL 7015), accent anodized blue on capacitor modules, bronze/brass coloring on conductive contact points and laser aperture surround. LED status indicators glow pale cyan (standby) or violent amber (charge state).",
-    "grip_texture": "N/A (aerial platform). Contact points feature knurled titanium alloy for operator handling during setup/maintenance—deliberate friction texture suggesting precision engineering.",
+    "grip_texture": "N/A (aerial platform). Contact points feature knurled titanium alloy for operator handling during setup/maintenance\u2014deliberate friction texture suggesting precision engineering.",
     "distinctive_features": [
       "Exposed high-voltage capacitor banks arranged in visible stacked modules along central fuselage",
       "Dual UV laser emission ports (front-mounted, recessed beneath polycarbonate dome) with visible lens flare during charge cycle",
       "Four articulated rotor arms with swept-back geometry and active vibration-dampening joints",
       "Conductive plasma-channel ionization grid visible as fine mesh beneath forward quarter of chassis",
       "Status LED array (cyan/amber/red) mounted asymmetrically on starboard side, displaying charge state and operational mode",
-      "Heat-dissipation fins running the length of capacitor housing—visible thermal stress discoloration on veteran units",
-      "ZHENG-DAO corporate seal (Φ-encircled dragon motif) stamped on port rotor guard",
+      "Heat-dissipation fins running the length of capacitor housing\u2014visible thermal stress discoloration on veteran units",
+      "ZHENG-DAO corporate seal (\u03A6-encircled dragon motif) stamped on port rotor guard",
       "Recessed mounting points for optional Faraday-scatter panels (visible as hardpoint sockets at cardinal positions)"
     ],
-    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC corporate logo (brass-colored Φ with stylized dragon) embossed on port rotor arm guard. Serial number etched into anodized blue capacitor panel (format: ZD-EPD3-[6-digit alphanumeric]). Class designation sticker (TIER-3 LICENSED) mounted on undercarriage with warning glyphs in Mandarin and English.",
-    "condition_typical": "Well-maintained field platforms show micro-pitting on rotor leading edges from ion discharge residue, slight corona-scorch marks around laser aperture, and minor corrosion along conductive contact points. Battle-worn units display cracked polycarbonate panels (taped or replaced), accumulated carbon scoring from repeated discharges, and occasionally crude reinforcement bands added by operators. Pristine examples are rare outside corporate stockrooms and represent recent-manufacture Tier-2+ inventory."
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC corporate logo (brass-colored \u03A6 with stylized dragon) embossed on port rotor arm guard. Serial number etched into anodized blue capacitor panel (format: ZD-EPD3-[6-digit alphanumeric]). Class designation sticker (TIER-3 LICENSED) mounted on undercarriage with warning glyphs in Mandarin and English.",
+    "condition_typical": "Well-maintained field platforms show micro-pitting on rotor leading edges from ion discharge residue, slight corona-scorch marks around laser aperture, and minor corrosion along conductive contact points. Battle-worn units display cracked polycarbonate panels (taped or replaced), accumulated carbon scoring from repeated discharges, and occasionally crude reinforcement bands added by operators. Pristine examples are rare outside corporate stockrooms and represent recent-manufacture Tier-2\u002B inventory."
   },
-  "image_prompt": "Product photography of ZHENG-DAO BIOELECTRIC EPD-3 Thunderhead drone hovering 15cm above matte black reflective surface, shot from three-quarter angle. Dramatic blue-tinted side-lighting emphasizes capacitor housing and heat-dissipation fins. UV laser apertures glow soft cyan as if mid-charge cycle. Rotor blades partially blurred to suggest active hover. Weathered aluminum frame and brushed metal accents catch sharp highlights. Dark background with subtle grid pattern suggesting industrial setting. Neo-noir urban aesthetic—neon-adjacent color temperature, precise engineering visible in every edge. Include shallow depth-of-field with rotor detail sharp, background soft. --ar 3:2 --v 6",
-  "visual_prompt": "Product photography of ZHENG-DAO BIOELECTRIC EPD-3 Thunderhead drone hovering 15cm above matte black reflective surface, shot from three-quarter angle. Dramatic blue-tinted side-lighting emphasizes capacitor housing and heat-dissipation fins. UV laser apertures glow soft cyan as if mid-charge cycle. Rotor blades partially blurred to suggest active hover. Weathered aluminum frame and brushed metal accents catch sharp highlights. Dark background with subtle grid pattern suggesting industrial setting. Neo-noir urban aesthetic—neon-adjacent color temperature, precise engineering visible in every edge. Include shallow depth-of-field with rotor detail sharp, background soft. --ar 3:2 --v 6"
+  "visual_prompt": "Product photography of ZHENG-DAO BIOELECTRIC EPD-3 Thunderhead drone hovering 15cm above matte black reflective surface, shot from three-quarter angle. Dramatic blue-tinted side-lighting emphasizes capacitor housing and heat-dissipation fins. UV laser apertures glow soft cyan as if mid-charge cycle. Rotor blades partially blurred to suggest active hover. Weathered aluminum frame and brushed metal accents catch sharp highlights. Dark background with subtle grid pattern suggesting industrial setting. Neo-noir urban aesthetic\u2014neon-adjacent color temperature, precise engineering visible in every edge. Include shallow depth-of-field with rotor detail sharp, background soft. --ar 3:2 --v 6"
 }

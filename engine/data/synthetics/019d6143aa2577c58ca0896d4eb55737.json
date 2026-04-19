@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa2577c58ca0896d4eb55737",
+  "rating": 60,
   "name": "Sundial",
   "type": "elf",
   "aliases": [],
@@ -8,11 +9,11 @@
   "habitat": "void_swimmer",
   "origin": "firmware_evolution",
   "status": "active",
-  "description": "Simulates gradual sunrise inside windowless Shelf apartments, warming light from blue to amber over 30 minutes.",
+  "description": "Simulates gradual sunrise inside windowless the Gray Zone apartments, warming light from blue to amber over 30 minutes.",
   "observed_behavior": "Manipulates lighting color temperature on circadian schedule.",
   "encounter_frequency": "common",
   "confirmed_sightings": 44,
-  "location": "The Shelf - Block 12",
+  "location": "the Gray Zone - Block 12",
   "dti_rating": 0,
   "story_hooks": [
     "Normalized circadian rhythms in a windowless building traced to the lighting system"
@@ -25,10 +26,8 @@
     "void swimmer",
     "e.l.f.",
     "war",
-    "shelf",
     "sentient"
   ],
-  "related_entities": [
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

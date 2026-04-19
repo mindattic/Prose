@@ -3,7 +3,7 @@
   "name": "Drekk ChemWall Acid-Environment Full Suit",
   "type": "apparel",
   "category": "protective",
-  "description": "Matte black with high-visibility acid-yellow chevrons across the shoulders and thighs, the ChemWall is a one-piece chemical barrier suit made from Drekk's proprietary ViperSkin — a chlorosulfonated polyethylene outer shell bonded to a closed-cell foam thermal liner. Designed for Shelf acid-rain zones and Circuit-level industrial cleaning crews. The silhouette is bulky, utilitarian, and carries no pretense.\n\nThe integrated hood is sealed with a bayonet-lock visor ring accepting standard 40mm filter canisters. Taped seams run in bright yellow contrast stitching for visual inspection. Integrated tail-exit gusset at rear seam for gene-compatible wearers.",
+  "description": "Matte black with high-visibility acid-yellow chevrons across the shoulders and thighs, the ChemWall is a one-piece chemical barrier suit made from Drekk's proprietary ViperSkin — a chlorosulfonated polyethylene outer shell bonded to a closed-cell foam thermal liner. Designed for the Gray Zone acid-rain zones and Circuit-level industrial cleaning crews. The silhouette is bulky, utilitarian, and carries no pretense.\n\nThe integrated hood is sealed with a bayonet-lock visor ring accepting standard 40mm filter canisters. Taped seams run in bright yellow contrast stitching for visual inspection. Integrated tail-exit gusset at rear seam for gene-compatible wearers.",
   "tier_association": "Tier 1-3",
   "materials": [
     "ViperSkin chlorosulfonated polyethylene",
@@ -15,7 +15,7 @@
   "functionality": "Resists pH 0–2 acid splash and prolonged acid-rain exposure; bayonet-lock visor accepts standard industrial filter canisters; rear gusset accommodates tail geneware without compromising the chemical seal; integrated over-boot sole rated for caustic floor spills.",
   "what_it_says": "You go into places that eat through anything cheaper.",
   "worn_by": [
-    "Shelf acid-zone scrap runners",
+    "the Gray Zone acid-zone scrap runners",
     "Circuit industrial cleaning crews",
     "municipal hazmat responders",
     "chemical plant maintenance workers"
@@ -26,7 +26,7 @@
   "gene_compatible": true,
   "story_hooks": [
     "A cleaning crew member finds a sealed document packet fused inside a corroded drainage pipe — still legible, and someone very powerful wants it back.",
-    "The ViperSkin compound has a known failure mode at temperatures above 60°C; a batch was shipped to Shelf workers without the recall notice.",
+    "The ViperSkin compound has a known failure mode at temperatures above 60°C; a batch was shipped to the Gray Zone workers without the recall notice.",
     "A gene-compatible worker with a prehensile tail used the rear gusset to smuggle out biosamples from a restricted chemical site — and now needs help disappearing."
   ],
   "tags": [
@@ -64,7 +64,7 @@
       "Matte finish to prevent light-reflection in hazardous chemical environments"
     ],
     "tier_indicator": "Tier 4-5 functional. Affordable working-class equipment with zero luxury markers. Drekk Heavy Fabrication is a mid-tier industrial supplier, not haute couture.",
-    "cultural_context": "Signals hazmat technician, Circuit-level industrial crew, Shelf-zone salvager, or sub-grade chemical processing worker. Wearing this outside contamination zones reads as either off-shift exhaustion or deliberate anti-corporate posturing.",
+    "cultural_context": "Signals hazmat technician, Circuit-level industrial crew, the Gray Zone-zone salvager, or sub-grade chemical processing worker. Wearing this outside contamination zones reads as either off-shift exhaustion or deliberate anti-corporate posturing.",
     "condition_typical": "Weathered and patched. Outer shell shows acid-etch marks, scuffed matte finish, and discolored seam tape from repeated exposure. Thermal liner compressed and slightly torn at high-friction zones. Still functional and seal-rated, but visibly lived-in."
   },
   "image_prompt": "A hazmat technician in a full matte-black ViperSkin ChemWall suit with acid-yellow chevron stripes and high-visibility taped seams, standing in a rain-slicked industrial processing corridor. The integrated hood is sealed, visor ring catching harsh amber industrial lighting. Chlorine-green mist curls around the figure's boots. Dark concrete walls streaked with chemical burns. Moody, desaturated color grading with acid-yellow as the only saturated accent. Shot from a low angle to emphasize the bulky, protective silhouette. --ar 2:3 --v 6",

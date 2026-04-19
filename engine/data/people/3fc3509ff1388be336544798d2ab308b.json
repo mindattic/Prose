@@ -4,11 +4,11 @@
   "type": "character",
   "aliases": [],
   "role": "Private Investigator",
-  "description": "Ioane Traoré-Thakur runs Bright Path Recovery, the most effective missing-child operation on the Shelf. She is forty-seven years old, Swedish-Malian heritage evident in her honey-brown skin and angular features, and she has been doing this work for twenty-two years — ever since her own younger sister vanished into the Shelf's underworld and was never found.\n\nHer method is fundamentally relational. She has spent two decades building a network of contacts among the people who see everything but are never asked: street vendors, waste collectors, tunnel dwellers, feral children, shelter workers, and the quiet army of grandmothers who sit on Shelf stoops watching the world. When a child goes missing, Amara activates this network like a nervous system, and information flows to her from a thousand points simultaneously. No technology can replicate what she's built because it's based on trust, and trust takes years.\n\nThe work pays well — desperate parents will mortgage everything for their child's return — and Amara charges on a sliding scale, taking corporate rates from those who can afford it and working for free for those who can't. She is chronically exhausted, carries the psychological weight of every child she's failed to find, and refuses to take a vacation because every day off is a day someone's kid is still out there. Her junior associates worry about her. They're right to worry.",
+  "description": "Ioane Traoré-Thakur runs Bright Path Recovery, the most effective missing-child operation in the Gray Zone. She is forty-seven years old, Swedish-Malian heritage evident in her honey-brown skin and angular features, and she has been doing this work for twenty-two years — ever since her own younger sister vanished into the Gray Zone's underworld and was never found.\n\nHer method is fundamentally relational. She has spent two decades building a network of contacts among the people who see everything but are never asked: street vendors, waste collectors, tunnel dwellers, feral children, shelter workers, and the quiet army of grandmothers who sit on the Gray Zone stoops watching the world. When a child goes missing, Amara activates this network like a nervous system, and information flows to her from a thousand points simultaneously. No technology can replicate what she's built because it's based on trust, and trust takes years.\n\nThe work pays well — desperate parents will mortgage everything for their child's return — and Amara charges on a sliding scale, taking corporate rates from those who can afford it and working for free for those who can't. She is chronically exhausted, carries the psychological weight of every child she's failed to find, and refuses to take a vacation because every day off is a day someone's kid is still out there. Her junior associates worry about her. They're right to worry.",
   "affiliation": "Bright Path Recovery — her own firm, employing three junior associates",
   "tier": "3",
   "location": "A converted ground-floor storefront in the Narrows, deliberately non-threatening — children's drawings on the walls, tea always available, near Milwaukee and North Ave",
-  "specialization": "Locating runaway minors and kidnap victims, specializing in Shelf-level disappearances",
+  "specialization": "Locating runaway minors and kidnap victims, specializing in the Gray Zone-level disappearances",
   "methods": [
     "Building trust networks with street kids who act as her eyes and ears",
     "Maintaining relationships with shelter operators, clinic workers, and food distribution points",
@@ -17,7 +17,7 @@
     "Gentle interrogation techniques designed for traumatized subjects"
   ],
   "notable_cases": [
-    "Recovered eleven children from a labor trafficking ring operating out of a fabrication shop in Geartown — the largest single recovery in Shelf history",
+    "Recovered eleven children from a labor trafficking ring operating out of a fabrication shop in Geartown — the largest single recovery in the Gray Zone history",
     "Found a runaway teenager who had been missing for two years by identifying the specific brand of street food they couldn't stop buying",
     "Reunited a family separated during a district evacuation after a chemical spill, tracking them across three tiers"
   ],
@@ -43,7 +43,7 @@
   ],
   "story_hooks": [
     "A child Amara recovered years ago has gone missing again — but this time they left voluntarily, and finding them means confronting whether recovery was the right choice in the first place",
-    "Someone is systematically killing her network of street-kid informants, and she can't go to CorpSec because they don't investigate Shelf murders",
+    "Someone is systematically killing her network of street-kid informants, and she can't go to CorpSec because they don't investigate the Gray Zone murders",
     "She receives credible information that her missing sister is alive, somewhere in the Underbelly, after twenty-two years"
   ],
   "tags": [
@@ -54,7 +54,6 @@
     "missing_persons",
     "children",
     "narrows",
-    "shelf",
     "sentient",
     "human"
   ],
@@ -65,7 +64,6 @@
   "registered_firearms": [],
   "related_entities": [
     "The Narrows Compact",
-    "The Shelf",
     "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "The Heritage Vault",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
@@ -84,7 +82,7 @@
     "eye_color": "Deep brown with warm hazel undertones and fine lines radiating from the corners",
     "skin_tone": "Warm golden-brown with balanced undertones reflecting the dominant blend of Sub-Saharan African, Pacific Islander, and South Asian ancestry. Rich, even complexion with natural depth, subtle olive warmth, and the sun-weathered patina of street work.",
     "complexion": "Angular features with high cheekbones and prominent jawline influenced by West African heritage, softened slightly by broader face structure from East and Southeast Asian ancestry. Dark, expressive eyes set wide-spaced, reflecting the multicultural genetic heritage. Minimal makeup. Skin shows the weathering of two decades of street work: sun damage, stress lines around the eyes and mouth. A faint scar tissue across her left cheekbone from a childhood incident. Hands are calloused, nails kept short and unpainted.",
-    "visible_augmentations": "None visible. Any augmentations she carries are subcutaneous — possibly a low-grade neural logger or location tracker, but nothing chrome, nothing that would make her stand out on the Shelf. She keeps her modifications invisible intentionally; trust requires appearing human and vulnerable.",
+    "visible_augmentations": "None visible. Any augmentations she carries are subcutaneous — possibly a low-grade neural logger or location tracker, but nothing chrome, nothing that would make her stand out in the Gray Zone. She keeps her modifications invisible intentionally; trust requires appearing human and vulnerable.",
     "posture_movement": "She moves with the economical gait of someone who has walked thousands of miles through the city. Her posture is forward-leaning, alert but not tense — a listening posture. She sits at the edge of chairs, ready to stand. Her hands gesture when she talks, a Malian inheritance. Her eyes track movement habitually; she notices everything but tries not to appear to be watching.",
     "clothing_style": "Tier 3-4 practical wear. Dark colors — black, charcoal, deep indigo — that hide the grime of fieldwork. Usually: fitted black cargo pants with multiple pockets, a long-sleeved shirt or lightweight sweater (thermal-rated for Milwaukee winters), good walking boots (currently a pair of Resolute-brand tactical boots, scuffed and re-soled twice). She owns one professional blazer for meetings with wealthy clients, but it hangs unworn most days. She wears a watch — an older Casio, not flashy — and minimal jewelry except for a thin silver ring on her right index finger, a gift from her sister before the disappearance. No augmentation-ware visible; no corpo branding.",
     "distinguishing_marks": [

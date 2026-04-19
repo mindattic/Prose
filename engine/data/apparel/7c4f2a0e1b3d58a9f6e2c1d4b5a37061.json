@@ -3,7 +3,7 @@
   "name": "Splitseam Wool-Analog Tube Socks",
   "type": "apparel",
   "category": "clothing",
-  "description": "Thick-ribbed tube socks in a mottled grey-black, hand-darned at the heel with a different-colored thread — someone used whatever orange yarn they had. The elastic at the cuff is shot on one sock, so it sags mid-calf. Warm enough for a Shelf winter if you layer two pairs.",
+  "description": "Thick-ribbed tube socks in a mottled grey-black, hand-darned at the heel with a different-colored thread — someone used whatever orange yarn they had. The elastic at the cuff is shot on one sock, so it sags mid-calf. Warm enough for a the Gray Zone winter if you layer two pairs.",
   "tier_association": "Tier 1",
   "materials": [
     "recycled wool-analog fiber",
@@ -23,7 +23,7 @@
   "aug_compatible": false,
   "gene_compatible": false,
   "story_hooks": [
-    "The orange darning thread is the exact shade used by a specific Shelf gang as a color marker — wearing these in the wrong block is a mistake.",
+    "The orange darning thread is the exact shade used by a specific the Gray Zone gang as a color marker — wearing these in the wrong block is a mistake.",
     "Sold in pairs at the Ruck Market, they sometimes come with the previous owner's name scratched into the sole with a pin."
   ],
   "tags": [
@@ -51,9 +51,9 @@
       "Evidence of multiple repairs or patch attempts"
     ],
     "tier_indicator": "Tier 4-5 functional/salvage. These are survival wear, not fashion.",
-    "cultural_context": "Street-tier, sub-grade. Worn by people in the Shelf or industrial zones who repair what they have rather than replace it. No corporate branding, no aug-integration. Pure necessity.",
+    "cultural_context": "Street-tier, sub-grade. Worn by people in the Gray Zone or industrial zones who repair what they have rather than replace it. No corporate branding, no aug-integration. Pure necessity.",
     "condition_typical": "Weathered, patched, one-of-a-kind. These look like they've been through winters. The orange darn is a badge of prolonged use."
   },
-  "image_prompt": "Closeup fashion shot of mismatched wool-analog tube socks on a tired industrial worker's feet, one slouching lower than the other, the bright orange darned heel catching hard neon light. Dark concrete floor, steam rising in background. Gritty GLMZ Shelf aesthetic. Shot from waist-down, moody blue-orange lighting. --ar 2:3 --v 6",
-  "visual_prompt": "Closeup fashion shot of mismatched wool-analog tube socks on a tired industrial worker's feet, one slouching lower than the other, the bright orange darned heel catching hard neon light. Dark concrete floor, steam rising in background. Gritty GLMZ Shelf aesthetic. Shot from waist-down, moody blue-orange lighting. --ar 2:3 --v 6"
+  "image_prompt": "Closeup fashion shot of mismatched wool-analog tube socks on a tired industrial worker's feet, one slouching lower than the other, the bright orange darned heel catching hard neon light. Dark concrete floor, steam rising in background. Gritty GLMZ the Gray Zone aesthetic. Shot from waist-down, moody blue-orange lighting. --ar 2:3 --v 6",
+  "visual_prompt": "Closeup fashion shot of mismatched wool-analog tube socks on a tired industrial worker's feet, one slouching lower than the other, the bright orange darned heel catching hard neon light. Dark concrete floor, steam rising in background. Gritty GLMZ the Gray Zone aesthetic. Shot from waist-down, moody blue-orange lighting. --ar 2:3 --v 6"
 }

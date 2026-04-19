@@ -1,5 +1,6 @@
 {
   "id": "019d6143a609778dbff319ad92197668",
+  "rating": 80,
   "type": "character",
   "name": "Yasmin Sabbagh-Balogun",
   "aliases": [],
@@ -9,7 +10,7 @@
   "role": "Excluded — former Circuit data architect, now stateless and living off-grid",
   "age": 28,
   "status": "active",
-  "location": "Nomadic between Old Harbor and the underdeck of The Shelf, near Wacker and State",
+  "location": "Nomadic between Old Harbor and the underdeck of the Gray Zone, near Wacker and State",
   "description": "Yasmin Sabbagh-Balogun is a wiry young woman of Catalan-Senegalese heritage with the restless, slightly hollow-eyed look of someone who sleeps in four-hour increments and considers this a feature rather than a problem. She keeps her dark hair in a haphazard knot and dresses in layers that can be shed or added based on which part of the city she needs to move through. She has a habit of mapping her surroundings in her head — exits, sightlines, power sources — that makes her seem distracted in conversation when she is actually paying very close attention to everything except the person speaking.\n\nYasmin Sabbagh-Balogun was, until two years ago, a mid-tier data architect employed by a Circuit infrastructure firm, designing the information routing systems that keep GLMZ's corporate districts legible to themselves. She was twenty-six, overqualified, and beginning to understand the full scope of what her work was being used for. The sequence of events following that understanding resulted in her employment termination, the revocation of her residential registration, the freezing of her financial identity, and what she describes as 'a fairly educational few weeks.' She is now, legally, no one. Her identity exists only in fragments she maintains herself.\n\nShe is not broken by this. She is, if anything, clarified. Yasmin Sabbagh-Balogun operates as a freelance network infiltrator and system saboteur, taking contracts that align with her criteria — which are specific, non-negotiable, and not primarily financial. She has a gift for understanding systems architecturally, for finding the load-bearing assumption that, removed, causes something large to stop working. She finds this genuinely interesting. The politics are almost secondary. Almost.",
   "psychology": {
     "facet_weights": {
@@ -55,7 +56,11 @@
       "'I don't need a safe house. I need a node. There's a difference. A safe house is about hiding. A node is about staying connected.'",
       "'Mare de déu, you filed it under compliance? Why would anyone ever find it there? That's either very stupid or very smart and I need to know which.'",
       "'I'm not trying to break it. I'm trying to understand what it's actually doing. Breaking it might happen to be the same thing. That's not my fault, that's the system's design.'"
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [
     {
@@ -63,7 +68,7 @@
       "type": "recent alliance / growing trust",
       "description": "Eulàlia arrived at the Parlour with a superficial wound and a fried neural interface. Nkechi fixed one and opined on the other. They have since met four more times, not all medically.",
       "emotional_core": "Mutual recognition of someone who opted out and kept their integrity — rare enough to be worth paying attention to",
-      "story_tension": "Eulàlia has noticed anomalies in Shelf infrastructure data that suggest the Parlour is being quietly surveilled and hasn't yet decided how to tell Nkechi"
+      "story_tension": "Eulàlia has noticed anomalies in the Gray Zone infrastructure data that suggest the Parlour is being quietly surveilled and hasn't yet decided how to tell Nkechi"
     },
     {
       "name": "Crisanto Dela Torre-Ångström",
@@ -83,12 +88,12 @@
   "story_hooks": [
     "She discovers her personal backdoor from the old system is still active — and someone else has been using it",
     "A contract requires her to compromise infrastructure she designed herself, which she finds philosophically interesting and practically dangerous",
-    "The Shelf surveillance anomaly she's noticed escalates into something that directly endangers Nkechi",
+    "the Gray Zone surveillance anomaly she's noticed escalates into something that directly endangers Nkechi",
     "Zinnia's message through the intermediary contains a single piece of data that changes Eulàlia's understanding of why she was excluded"
   ],
   "narrative_function": "Mobile, systems-level disruptor; represents the excluded who retain expertise and agency; provides technical plot access and a perspective that is neither street-level desperation nor corporate complicity; her arc concerns what it means to build versus destroy",
   "augmentations": "Neural interface (damaged, partially repaired by Nkechi, now running at about seventy percent — she considers this acceptable),Distributed personal mesh network — a series of small hardware nodes she wears or carries that maintain a private encrypted network independent of city infrastructure,Retinal overlay, basic model, pre-exclusion; she has refused to upgrade it through any channel that requires identity verification",
-  "daily_life": "Has no fixed location. Rotates between three or four semi-reliable sleeping spots in Old Harbor and the Shelf underdeck. Works in long focused bursts followed by periods of deliberate physical movement — she walks a lot, maps routes, stays observant. Eats irregularly and is aware this is a problem. Maintains three trusted contacts she checks in with weekly to confirm mutual safety. Reads architecture and systems theory for pleasure and considers this a personality trait.",
+  "daily_life": "Has no fixed location. Rotates between three or four semi-reliable sleeping spots in Old Harbor and the Gray Zone underdeck. Works in long focused bursts followed by periods of deliberate physical movement — she walks a lot, maps routes, stays observant. Eats irregularly and is aware this is a problem. Maintains three trusted contacts she checks in with weekly to confirm mutual safety. Reads architecture and systems theory for pleasure and considers this a personality trait.",
   "affiliation": "Unaffiliated; takes selective contracts from vetted clients; loosely networked with other excluded individuals but has no organizational loyalty",
   "uses_facets": false,
   "narration_voice": "",
@@ -199,7 +204,7 @@
     ],
     "breaking_points": [
       "Her personal backdoor from the old system being discovered and used by someone else",
-      "The Shelf surveillance anomaly escalating to directly endanger Nkechi",
+      "the Gray Zone surveillance anomaly escalating to directly endanger Nkechi",
       "Being absorbed back into a system on its terms rather than hers",
       "Zinnia's message containing information that reframes why she was excluded"
     ]
@@ -227,7 +232,7 @@
     "Ambusher": 0.7
   },
   "operating_territory": {
-    "home_turf": "Nomadic between Old Harbor and the underdeck of The Shelf",
+    "home_turf": "Nomadic between Old Harbor and the underdeck of the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -235,24 +240,11 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Kang-Petrov Arms KP-19 'Workhorse'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Kang-Petrov Arms KP-19 'Workhorse'"
-  ],
-  "related_entities": [
-    "The Shelf",
-    "ARCHITECT",
-    "The Heritage Vault",
-    "Circuit",
-    "Nesting Doll",
-    "Harbor Fish Shack",
-    "GLMZ"
-  ],
-  "district": "Old Harbor",
   "physical_description": {
     "heritage": "Middle Eastern (53%), Eastern European (24%), and Sub-Saharan African (23%) ancestry. The result is a striking blend: warm, rich deep brown skin tones from the dominant Middle Eastern and African heritage with subtle golden-olive undertones, high and prominent cheekbones characteristic of Eastern European ancestry, and refined angular facial structure reflecting the genetic synthesis of the Ubiquitous Diaspora. The combination yields warm-toned features with strong definition rather than soft curves.",
     "height_cm": 164,
@@ -264,28 +256,23 @@
     "eye_color": "Deep brown with a faint amber tint in the right eye where the retinal overlay circuitry shows through under certain light",
     "skin_tone": "Warm deep brown complexion with golden and olive undertones from Middle Eastern and Sub-Saharan African heritage, cooled slightly by the blue-grey pallor of someone running on irregular sleep cycles and limited sunlight exposure",
     "complexion": "High, prominent cheekbones characteristic of Eastern European ancestry, refined and angular features with warm deep brown undertones. Dark circles are permanent fixtures under the eyes. A few scars around the left temple from old implant work. Generally clean but not groomed — practical rather than cosmetic.",
-    "visible_augmentations": "Retinal overlay creates a faint golden-amber luminescence in the right eye in low-light conditions. Small hardware nodes occasionally visible at the collarbone and hip beneath thin clothing when she moves. The neural interface scar tissue along the left temple and neck is openly visible. No attempt made to conceal any of this.",
-    "posture_movement": "Moves with economical precision — no wasted motion, but not tense. Walks slightly faster than conversational pace. Tends to position herself with clear sightlines and exit vectors. Often appears distracted because she is simultaneously mapping her environment; eye contact is inconsistent. When focused on technical work, becomes nearly motionless. Her hands are always slightly active, fingers moving as if tracing invisible code or pathways.",
-    "clothing_style": "Tier 4-5 functional nomad aesthetic. Layered: typically a fitted black or dark grey thermal base, over which she wears a salvaged circuit-weave vest (conductive material from a decommissioned piece of infrastructure), a water-resistant outer shell in charcoal or deep blue, and cargo pants with reinforced pockets and cargo loops from which small hardware nodes hang. Worn climbing boots with visible sole reinforcement. No logos or corpo branding. Everything is either salvaged, stolen, or purchased through untraceable channels. She owns approximately two complete outfits and cycles them. Her jacket has seven visible pockets and two hidden ones.",
     "distinguishing_marks": [
       "Three thin parallel scars running vertically down the left side of her neck, approximately 8cm total length, from a failed hardware extraction attempt; visibly present, pale and slightly raised",
       "Faint circular scar tissue on the inner left wrist where an early prototype node was implanted and later removed; barely visible unless specifically examined",
       "A small burn mark on her right palm, diameter ~2cm, from an electrical discharge during an underdeck salvage operation; pale and well-healed",
       "Subcutaneous mesh nodes create slight visible bulges under the skin at her collarbone, left hip, and the back of her right ear, visible only when clothing shifts or light hits at specific angles"
-    ]
+    ],
+    "visible_augmentations": "Retinal overlay creates a faint golden-amber luminescence in the right eye in low-light conditions. Small hardware nodes occasionally visible at the collarbone and hip beneath thin clothing when she moves. The neural interface scar tissue along the left temple and neck is openly visible. No attempt made to conceal any of this.",
+    "posture_movement": "Moves with economical precision — no wasted motion, but not tense. Walks slightly faster than conversational pace. Tends to position herself with clear sightlines and exit vectors. Often appears distracted because she is simultaneously mapping her environment; eye contact is inconsistent. When focused on technical work, becomes nearly motionless. Her hands are always slightly active, fingers moving as if tracing invisible code or pathways.",
+    "clothing_style": "Tier 4-5 functional nomad aesthetic. Layered: typically a fitted black or dark grey thermal base, over which she wears a salvaged circuit-weave vest (conductive material from a decommissioned piece of infrastructure), a water-resistant outer shell in charcoal or deep blue, and cargo pants with reinforced pockets and cargo loops from which small hardware nodes hang. Worn climbing boots with visible sole reinforcement. No logos or corpo branding. Everything is either salvaged, stolen, or purchased through untraceable channels. She owns approximately two complete outfits and cycles them. Her jacket has seven visible pockets and two hidden ones."
   },
   "image_prompt": "Yasmin Sabbagh-Balogun, 164cm lean neo-noir hacker with deep warm brown skin, golden undertones, high cheekbones, dark hair in messy bun with silver at temples. Dark exhausted eyes with faint amber glow in right eye from retinal implant. Visible scars down left neck from implant extraction, small burn on right palm. Wearing salvaged circuit-weave vest over black thermal base, water-resistant charcoal outer shell, reinforced cargo pants with hanging hardware nodes, worn climbing boots. Hands moving with restless energy. Standing in neon-lit underdeck data den, blue and purple ambient light catching the subcutaneous mesh nodes visible at collarbone. Precise, economical posture with clear exit sightlines. Nomadic tech salvager aesthetic, no corpo branding. GLMZ Great Lakes Metropolitan Zone. Moody low-light atmosphere, gritty industrial background. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Middle Eastern": 53,
     "Eastern European": 24,
     "Sub-Saharan African": 23
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Middle Eastern": {
       "Arab Levantine": {
@@ -309,6 +296,5 @@
         "Nigerian": 0.9
       }
     }
-  },
-  "tier": "4"
+  }
 }

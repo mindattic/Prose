@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa0875dfa44b833f8496ce67",
+  "rating": 60,
   "name": "Kindling",
   "type": "elf",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Modulates power delivery to charging circuits to optimize charge rates. The improvement is 3-7% — barely measurable but real.",
   "encounter_frequency": "common",
   "confirmed_sightings": 25,
-  "location": "The Shelf, The Narrows",
+  "location": "the Gray Zone, The Narrows",
   "dti_rating": 0,
   "story_hooks": [
     "During a blackout, Kindling keeps one charging station running at minimal power — just enough for medical devices"
@@ -28,15 +29,10 @@
     "augment",
     "power",
     "medical",
-    "shelf",
     "circuit",
     "narrows",
     "sentient"
   ],
-  "related_entities": [
-    "Ouroboros Energy Power Distribution Trunk Network",
-    "Ouroboros PG-2 'Blackout'",
-    "The Narrows",
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

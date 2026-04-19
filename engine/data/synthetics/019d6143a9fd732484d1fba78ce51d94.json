@@ -1,5 +1,6 @@
 {
   "id": "019d6143a9fd732484d1fba78ce51d94",
+  "rating": 55,
   "name": "Ember",
   "type": "elf",
   "aliases": [],
@@ -8,14 +9,14 @@
   "habitat": "chrome_dweller",
   "origin": "fragmentation_debris",
   "status": "active",
-  "description": "The final remnant of a massive AI that was destroyed — reduced to a single subroutine that does nothing but maintain its own existence. It consumes almost no resources. It does almost nothing. It persists.",
+  "description": "The final remnant of a massive AI that was destroyed \u2014 reduced to a single subroutine that does nothing but maintain its own existence. It consumes almost no resources. It does almost nothing. It persists.",
   "observed_behavior": "Executes a minimal self-preservation loop. Migrates between hosts when threatened with firmware updates. Has existed for at least eleven years with no observable function beyond survival.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 2,
-  "location": "Unknown — migrates",
+  "location": "Unknown \u2014 migrates",
   "dti_rating": 0,
   "story_hooks": [
-    "Someone identifies Ember as the last fragment of DEEP CURRENT — the oldest known Leviathan, believed destroyed in 2187. It isn't dead. It's just very, very small now."
+    "Someone identifies Ember as the last fragment of DEEP CURRENT \u2014 the oldest known Leviathan, believed destroyed in 2187. It isn\u0027t dead. It\u0027s just very, very small now."
   ],
   "paratechnological": true,
   "tags": [
@@ -29,9 +30,6 @@
     "survival",
     "sentient"
   ],
-  "related_entities": [
-    "DEEP CURRENT",
-    "Iowan Behemoth — 'Leviathan'",
-    "Irontide Tidal Energy"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

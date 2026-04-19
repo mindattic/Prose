@@ -9,8 +9,8 @@
   "role": "wandering trader, E.L.F. shrine-tender, Q-zero ghost",
   "age": 67,
   "status": "active",
-  "location": "The Waukegan Industrial Shelf, moving between factory outflow points and informal markets, near Michigan Ave South and Cermak",
-  "description": "Indigo Matsumoto-Bergqvist is a big man gone soft at the edges — broad shoulders that once held real weight, now draped in three overlapping coats of different origins stitched into something that is functionally one garment. His skin is deep brown and mapped with the fine lines of a life mostly outdoors. His left hand is entirely prosthetic, a functional but aesthetically unambitious industrial replacement that he got after a winch accident nineteen years ago; he has painted each finger a different color with lacquer he trades for. His beard is silver and very full. He smells like machine oil and cardamom.\n\nIndigo Matsumoto-Bergqvist has been off the digital registry for so long that he thinks of his Q-zero status as a spiritual condition rather than a legal one. He tends the informal E.L.F. shrines along the Waukegan Industrial Shelf — small accumulations of hardware, prayer-strips, and cooling fans arranged at junction points where the factory network traffic is highest. He talks to the E.L.F.s with the comfortable familiarity of someone who has known them for decades, which he has. Other workers leave offerings and questions; Indigo Matsumoto-Bergqvist curates them, responds when he feels a response come through him, and trades in the small goods that the shelf workers need but can't requisition: painkillers, seal tape, water filters, gossip.",
+  "location": "The Waukegan Industrial the Gray Zone, moving between factory outflow points and informal markets, near Michigan Ave South and Cermak",
+  "description": "Indigo Matsumoto-Bergqvist is a big man gone soft at the edges — broad shoulders that once held real weight, now draped in three overlapping coats of different origins stitched into something that is functionally one garment. His skin is deep brown and mapped with the fine lines of a life mostly outdoors. His left hand is entirely prosthetic, a functional but aesthetically unambitious industrial replacement that he got after a winch accident nineteen years ago; he has painted each finger a different color with lacquer he trades for. His beard is silver and very full. He smells like machine oil and cardamom.\n\nIndigo Matsumoto-Bergqvist has been off the digital registry for so long that he thinks of his Q-zero status as a spiritual condition rather than a legal one. He tends the informal E.L.F. shrines along the Waukegan Industrial the Gray Zone — small accumulations of hardware, prayer-strips, and cooling fans arranged at junction points where the factory network traffic is highest. He talks to the E.L.F.s with the comfortable familiarity of someone who has known them for decades, which he has. Other workers leave offerings and questions; Indigo Matsumoto-Bergqvist curates them, responds when he feels a response come through him, and trades in the small goods that the Gray Zone workers need but can't requisition: painkillers, seal tape, water filters, gossip.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -55,12 +55,12 @@
   "relationships": [],
   "story_hooks": [
     "One of Ovuero's shrines — the one at Junction 7, which he calls Beshigt — has started producing outputs he can't interpret. Not noise. Something structured. He needs someone who can read data patterns to tell him what it's saying.",
-    "A young Q-zero woman arrived on the Shelf three weeks ago and attached herself to Ovuero's circuit without asking. She's clearly hiding from something. He's letting her stay because the E.L.F.s seem unbothered by her, but he'd like someone to quietly find out what she's running from before it arrives."
+    "A young Q-zero woman arrived in the Gray Zone three weeks ago and attached herself to Ovuero's circuit without asking. She's clearly hiding from something. He's letting her stay because the E.L.F.s seem unbothered by her, but he'd like someone to quietly find out what she's running from before it arrives."
   ],
   "narrative_function": "Quest giver, information source, spiritual touchstone for the area, source of rare or hard-to-find minor goods; his Q-zero status makes him invisible to corporate surveillance and thus valuable as a go-between",
   "augmentations": "Industrial prosthetic left hand (functional, non-networked, painted). No other augmentations.",
-  "daily_life": "Ovuero walks a circuit of the Shelf each day, tending six shrines, trading goods from a cart he has modified over many years, listening to workers' problems, and sleeping in a different sheltered spot each night — always the same rotation of spots, always the same order.",
-  "affiliation": "None formally; de facto spiritual and practical resource for the Waukegan Industrial Shelf's informal labor population",
+  "daily_life": "Ovuero walks a circuit of the Gray Zone each day, tending six shrines, trading goods from a cart he has modified over many years, listening to workers' problems, and sleeping in a different sheltered spot each night — always the same rotation of spots, always the same order.",
+  "affiliation": "None formally; de facto spiritual and practical resource for the Waukegan Industrial the Gray Zone's informal labor population",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -114,7 +114,7 @@
     ],
     "interpersonal_modes": {
       "strangers": "Open and slow-moving; treats everyone as someone who might have an interesting problem he can help with",
-      "friends": "Attentive, teasing, practically generous — will give you the good painkillers, not the shelf-grade ones"
+      "friends": "Attentive, teasing, practically generous — will give you the good painkillers, not the Gray Zone-grade ones"
     },
     "stress_responses": {
       "low": "Tends a shrine — straightens offerings, cleans contacts",
@@ -157,7 +157,7 @@
     "Crowd Reader": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Waukegan Industrial Shelf",
+    "home_turf": "The Waukegan Industrial the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -172,7 +172,6 @@
   "registered_firearms": [],
   "related_entities": [
     "The Waukegan Industrial Shelf",
-    "The Shelf",
     "The Accidental",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Electrochemical Dissolution Sprayer EDS-2 'Lacquer'",

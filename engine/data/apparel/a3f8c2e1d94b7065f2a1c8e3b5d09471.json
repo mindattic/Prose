@@ -3,7 +3,7 @@
   "name": "Holstrom Lakefront Parka",
   "type": "apparel",
   "category": "outerwear",
-  "description": "A serious working parka designed for the brutal winter winds that come screaming off Lake Michigan through the Shelf and lower Tier 2 corridors. Cut long to the mid-thigh, it features a quilted recycled-fiber shell in faded olive or slate gray, with a massive hood that cinches down to a face-width opening via toggle cord. The exterior is treated with a durable water repellent finish that gets re-applied every season — or doesn't, and the coat just gets heavier when wet. Interior has two deep hand-warmer pockets and a chest pocket sized for a commlink. The stitching is thick and doubled at stress points.\n\nHolstrom is a mid-tier Scandinavian-heritage brand that set up manufacturing in the corridor decades ago. Their parkas are not stylish. They are warm. The fill is a synthetic duck-down analog rated to minus twenty Celsius, and the outer fabric is tough enough to shrug off light debris and the occasional grabbed fence. Shelf residents layer these over everything in winter. Couriers swear by them. You see them at bus stops, at processing plant gates, at Tier 2 market stalls — functional, honest, slightly shapeless.",
+  "description": "A serious working parka designed for the brutal winter winds that come screaming off Lake Michigan through the Gray Zone and lower Tier 2 corridors. Cut long to the mid-thigh, it features a quilted recycled-fiber shell in faded olive or slate gray, with a massive hood that cinches down to a face-width opening via toggle cord. The exterior is treated with a durable water repellent finish that gets re-applied every season — or doesn't, and the coat just gets heavier when wet. Interior has two deep hand-warmer pockets and a chest pocket sized for a commlink. The stitching is thick and doubled at stress points.\n\nHolstrom is a mid-tier Scandinavian-heritage brand that set up manufacturing in the corridor decades ago. Their parkas are not stylish. They are warm. The fill is a synthetic duck-down analog rated to minus twenty Celsius, and the outer fabric is tough enough to shrug off light debris and the occasional grabbed fence. the Gray Zone residents layer these over everything in winter. Couriers swear by them. You see them at bus stops, at processing plant gates, at Tier 2 market stalls — functional, honest, slightly shapeless.",
   "tier_association": "Tier 2",
   "materials": [
     "recycled polyester shell",
@@ -14,7 +14,7 @@
   "functionality": "",
   "what_it_says": "You dress for the weather, not for appearances. Practicality over everything.",
   "worn_by": [
-    "Shelf residents",
+    "the Gray Zone residents",
     "Tier 2 workers",
     "couriers",
     "dock workers",
@@ -47,8 +47,7 @@
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Corridor",
     "The Heritage Vault",
-    "The Pure Hand",
-    "The Shelf"
+    "The Pure Hand"
   ],
   "physical_description": {
     "visual_profile": "A utilitarian mid-thigh-length parka with a commanding presence. The silhouette is deliberately boxy and unfitted—designed for layering and movement rather than form. The oversized hood dominates the upper profile, structured to collapse down into a face-width tunnel. Overall impression is rugged functionality: a garment that announces its purpose before aesthetics.",
@@ -68,7 +67,7 @@
       "Sleeve cuffs are designed to overlay glove cuffs without bunching"
     ],
     "tier_indicator": "Tier 2-3 functional wear. Not luxury, not salvage—this is the uniform of workers, couriers, and lower-management corpo staff who face the weather as part of their job.",
-    "cultural_context": "Wearing a Holstrom signals: 'I work outdoors in the GLMZ winter. I have a steady job. I don't have time for fashion, and I don't care.' It's a badge of Shelf resident, Great Lakes laborer, courier network veteran. The parka says you understand the region's climate and have the stability to own proper gear.",
+    "cultural_context": "Wearing a Holstrom signals: 'I work outdoors in the GLMZ winter. I have a steady job. I don't have time for fashion, and I don't care.' It's a badge of the Gray Zone resident, Great Lakes laborer, courier network veteran. The parka says you understand the region's climate and have the stability to own proper gear.",
     "condition_typical": "Parkas are worn broken-in: the DWR coating has dulled and patched, small tears are often rewoven rather than patched, the toggle cord may be frayed, interior lining shows creasing from repeated layering, stitching may be slightly visible where the outer shell has thinned from friction."
   },
   "image_prompt": "A weathered Holstrom Lakefront Parka in faded olive on a dark mannequin or model against an industrial urban backdrop. Heavy shadows from overhead warehouse or corridor lighting. The parka's hood is drawn tight but not closed, revealing the face-width opening. Visible stitching and quilted texture catches side lighting. Frost or moisture droplets on the outer shell. The setting is a Tier 2 corridor or Lake Michigan shelf—concrete, chain-link fence, distant industrial buildings in the background. Cinematic, moody, winter light. The parka dominates the frame, utilitarian and uncompromising. --ar 2:3 --v 6",

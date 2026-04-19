@@ -36,5 +36,14 @@
     "The Corridor",
     "The Crucible",
     "Yannick Tofauti-Szarvásy"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z6"
+    ],
+    "primaryZone": "Z6",
+    "lakefrontAccess": true,
+    "description": "The Crucible Belt — 14-kilometer industrial strip along the Gary, Indiana lakefront, Zone 6. Heavy fabrication and raw materials processing. In chronic territorial dispute with Ashgrave Materials over Calumet lakefront access rights; eleven formal arbitrations in thirty years have produced eleven agreements neither party has honored.",
+    "grayZoneRelationship": "No formal Gray Zone relationships. Scoria's perimeter security is less sophisticated than Ashgrave's and generates more Gray Zone incidents as a result."
+  }
 }

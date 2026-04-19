@@ -9,9 +9,9 @@
   ],
   "category": "vermin",
   "origin": "natural_mutation",
-  "description": "The Vault Rat is the largest confirmed brown rat variant in the Shelf districts, averaging 6-8 kilograms with documented specimens exceeding 11 kilograms. The body is barrel-chested and low to the ground, with a broad flat skull that has widened over generations to accommodate enlarged jaw musculature. The fur is a dense, mottled gray-brown with a distinctive pale saddle marking across the shoulders. The tail is thick, muscular, and often scarred from territorial disputes — old-timers say you can read a Vault Rat's history in its tail.",
+  "description": "The Vault Rat is the largest confirmed brown rat variant in the the Gray Zone districts, averaging 6-8 kilograms with documented specimens exceeding 11 kilograms. The body is barrel-chested and low to the ground, with a broad flat skull that has widened over generations to accommodate enlarged jaw musculature. The fur is a dense, mottled gray-brown with a distinctive pale saddle marking across the shoulders. The tail is thick, muscular, and often scarred from territorial disputes — old-timers say you can read a Vault Rat's history in its tail.",
   "habitat": [
-    "Shelf districts",
+    "the Gray Zone districts",
     "collapsed building foundations",
     "sealed sub-basements",
     "old parking structures"
@@ -24,7 +24,7 @@
     "Thick skull provides genuine resistance to blunt impact, creating a subculture of frustrated extermination workers"
   ],
   "encounters": "Most encounters happen when someone opens a sealed room or storage locker they haven't accessed in months. A Vault Rat bull will stand its ground and vocalize — a low rattling hiss — before charging if the intruder doesn't retreat. Night workers in collapsed district buildings occasionally hear the deep thudding sound of Vault Rats working on metal containers in the dark below them.",
-  "known_uses": "Shelf district pit-fighting rings use Vault Rat bulls as opponents for smaller trained animals. Some families keep juvenile Vault Rats as aggressive deterrents, though this is genuinely dangerous — adults are not domesticable.",
+  "known_uses": "the Gray Zone district pit-fighting rings use Vault Rat bulls as opponents for smaller trained animals. Some families keep juvenile Vault Rats as aggressive deterrents, though this is genuinely dangerous — adults are not domesticable.",
   "story_hooks": [
     "A sealed sub-basement that supposedly contains refugee supplies from the 2180 Kentucky flood has been claimed by a Vault Rat colony — someone needs to get in there without a firefight",
     "An unusually large Vault Rat has been spotted wearing a crude wire collar. No one knows who put it there or why."
@@ -36,7 +36,6 @@
     "creature",
     "vermin",
     "natural_mutation",
-    "shelf",
     "large_variant"
   ]
 }

@@ -1,5 +1,6 @@
 {
   "id": "019d6143a6d47d3583fdc2a8751e003a",
+  "rating": 30,
   "type": "character",
   "name": "Orion Deshpande",
   "aliases": [],
@@ -30,7 +31,11 @@
     "vocabulary": "",
     "cadence": "",
     "verbal_tics": [],
-    "example_lines": []
+    "example_lines": [],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [],
@@ -95,46 +100,38 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Meridian Core"
-  ],
-  "district": "Meridian Core",
-  "physical_description": {
-    "heritage": "South Asian dominant (62.9%) with significant Hispanic/Latin American (24.9%) and Eastern European (12.2%) ancestry. Strong South Asian bone structure blended with Latin American warmth creates rich golden undertones and defined angularity. Eastern European heritage adds subtle coolness and facial structure refinement. A sophisticated genetic synthesis of subcontinental, Iberian-influenced, and Central European characteristics.",
-    "height_cm": 172,
-    "weight_kg": 62,
-    "build": "Lean and angular with defined musculature; maintained through discipline rather than bulk. High center of gravity, built for mobility and sustained physical exertion rather than power.",
-    "hair_color": "Platinum blonde with dark roots showing—deliberately maintained to suggest either neglect or a statement about corporate authenticity",
-    "hair_style": "Slicked back into a tight high ponytail, secured with a minimalist chrome clip",
-    "hair_length": "Long",
-    "eye_color": "Dark brown with mild heterochromia—left eye shows faint amber threading, likely subcutaneous neural interface indicators",
-    "skin_tone": "Warm medium-deep brown with golden-olive undertones. Rich luminous complexion reflecting dominant South Asian heritage warmed by Hispanic/Latin American influence, subtly cooled by Eastern European undertones. Sun-kissed glow suggesting time under natural light despite Tier 1 indoor lifestyle.",
-    "complexion": "Strong defined cheekbones with balanced angularity characteristic of South Asian-Eastern European blend, prominent jawline softened by Latin warmth. Skin shows the precision of someone using high-end dermal maintenance. A faint scar runs along her left temple, partially hidden by hairline.",
-    "distinguishing_marks": [
-      "Thin white scar along left temple, approximately 3cm, likely from blunt-force trauma—partially concealed by hairline",
-      "Faint burn mark on inside of right wrist, roughly 2cm diameter, consistent with industrial accident or interrogation scar",
-      "Zheng-Dao corporate sigil tattooed on right collarbone in matte black ink with subtle iridescent overlay—visible when neck is exposed"
-    ],
-    "visible_augmentations": "None immediately obvious. However, the amber threading in her left eye and subtle micro-expressions suggest subcutaneous neural interface hardware. Very little visible chrome—suggesting Zheng-Dao's investment in discrete, high-end internal modifications rather than showboat augmentations.",
-    "posture_movement": "Precise and economical. She moves with the coiled readiness of someone trained in violence, but masks it under a veneer of corporate polish. Handshakes are firm but brief. She rarely fidgets; instead, her eyes do most of the work—scanning rooms systematically, calculating angles. When seated, she maintains an open posture that nonetheless keeps her center of gravity low.",
-    "clothing_style": "Tier 1 corporate minimalist. Typically wears tailored black or charcoal blazers over understated base layers—often Zheng-Dao-aligned brands with subtle sigils. Prefers fitted tactical pants with hidden pockets over skirts. Footwear is always practical: matte-black neural-responsive shoes that adjust to terrain. Jewelry is minimal—a simple platinum band on her right ring finger and understated earrings that double as neural interface nodes. Her overall aesthetic reads as 'lethal efficiency wrapped in corporate respectability.'"
-  },
-  "image_prompt": "Orion Deshpande, 172cm lean angular woman with warm medium-deep golden-brown skin reflecting South Asian-Hispanic-Eastern European heritage blend. Platinum blonde hair with dark roots slicked back in tight ponytail, secured with chrome clip. Dark brown eyes with amber neural interface threading in left eye. Defined cheekbones, prominent jawline, faint 3cm scar along left temple hidden by hairline. Matte black Zheng-Dao corporate sigil tattoo on right collarbone. Wearing tailored black blazer over understated base layer, fitted tactical pants, matte-black neural-responsive shoes. Minimal platinum jewelry including ring and neural interface earrings. Coiled posture suggesting trained violence masked under corporate polish. Precise economical movement, scanning gaze. Corporate minimalist aesthetic with lethal efficiency. GLMZ Great Lakes Metropolitan Zone setting, neon-tinged office lighting, cold professional atmosphere, depth of field focusing on her calculating expression --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "South Asian": 62.9,
-    "Hispanic/Latin American": 24.9,
-    "Eastern European": 12.2
-  },
-  "ancestry_harmonized": true,
   "tags": [
     "person",
     "sentient",
     "human"
   ],
+  "physical_description": {
+    "heritage": "South Asian dominant (62.9%) with significant Hispanic/Latin American (24.9%) and Eastern European (12.2%) ancestry. Strong South Asian bone structure blended with Latin American warmth creates rich golden undertones and defined angularity. Eastern European heritage adds subtle coolness and facial structure refinement. A sophisticated genetic synthesis of subcontinental, Iberian-influenced, and Central European characteristics.",
+    "height_cm": 172,
+    "weight_kg": 62,
+    "build": "Lean and angular with defined musculature; maintained through discipline rather than bulk. High center of gravity, built for mobility and sustained physical exertion rather than power.",
+    "hair_color": "Platinum blonde with dark roots showing\u2014deliberately maintained to suggest either neglect or a statement about corporate authenticity",
+    "hair_style": "Slicked back into a tight high ponytail, secured with a minimalist chrome clip",
+    "hair_length": "Long",
+    "eye_color": "Dark brown with mild heterochromia\u2014left eye shows faint amber threading, likely subcutaneous neural interface indicators",
+    "skin_tone": "Warm medium-deep brown with golden-olive undertones. Rich luminous complexion reflecting dominant South Asian heritage warmed by Hispanic/Latin American influence, subtly cooled by Eastern European undertones. Sun-kissed glow suggesting time under natural light despite Tier 1 indoor lifestyle.",
+    "complexion": "Strong defined cheekbones with balanced angularity characteristic of South Asian-Eastern European blend, prominent jawline softened by Latin warmth. Skin shows the precision of someone using high-end dermal maintenance. A faint scar runs along her left temple, partially hidden by hairline.",
+    "distinguishing_marks": [
+      "Thin white scar along left temple, approximately 3cm, likely from blunt-force trauma\u2014partially concealed by hairline",
+      "Faint burn mark on inside of right wrist, roughly 2cm diameter, consistent with industrial accident or interrogation scar",
+      "Zheng-Dao corporate sigil tattooed on right collarbone in matte black ink with subtle iridescent overlay\u2014visible when neck is exposed"
+    ],
+    "visible_augmentations": "None immediately obvious. However, the amber threading in her left eye and subtle micro-expressions suggest subcutaneous neural interface hardware. Very little visible chrome\u2014suggesting Zheng-Dao\u0027s investment in discrete, high-end internal modifications rather than showboat augmentations.",
+    "posture_movement": "Precise and economical. She moves with the coiled readiness of someone trained in violence, but masks it under a veneer of corporate polish. Handshakes are firm but brief. She rarely fidgets; instead, her eyes do most of the work\u2014scanning rooms systematically, calculating angles. When seated, she maintains an open posture that nonetheless keeps her center of gravity low.",
+    "clothing_style": "Tier 1 corporate minimalist. Typically wears tailored black or charcoal blazers over understated base layers\u2014often Zheng-Dao-aligned brands with subtle sigils. Prefers fitted tactical pants with hidden pockets over skirts. Footwear is always practical: matte-black neural-responsive shoes that adjust to terrain. Jewelry is minimal\u2014a simple platinum band on her right ring finger and understated earrings that double as neural interface nodes. Her overall aesthetic reads as \u0027lethal efficiency wrapped in corporate respectability.\u0027"
+  },
+  "image_prompt": "Orion Deshpande, 172cm lean angular woman with warm medium-deep golden-brown skin reflecting South Asian-Hispanic-Eastern European heritage blend. Platinum blonde hair with dark roots slicked back in tight ponytail, secured with chrome clip. Dark brown eyes with amber neural interface threading in left eye. Defined cheekbones, prominent jawline, faint 3cm scar along left temple hidden by hairline. Matte black Zheng-Dao corporate sigil tattoo on right collarbone. Wearing tailored black blazer over understated base layer, fitted tactical pants, matte-black neural-responsive shoes. Minimal platinum jewelry including ring and neural interface earrings. Coiled posture suggesting trained violence masked under corporate polish. Precise economical movement, scanning gaze. Corporate minimalist aesthetic with lethal efficiency. GLMZ Great Lakes Metropolitan Zone setting, neon-tinged office lighting, cold professional atmosphere, depth of field focusing on her calculating expression --ar 2:3 --v 6",
+  "dalle3_prompt": "",
+  "genetic_ancestry": {
+    "South Asian": 62.9,
+    "Hispanic/Latin American": 24.9,
+    "Eastern European": 12.2
+  },
   "ancestry_detail": {
     "South Asian": {
       "Nepali": {
@@ -159,6 +156,5 @@
         "Sorbian": 7.1
       }
     }
-  },
-  "tier": "3"
+  }
 }

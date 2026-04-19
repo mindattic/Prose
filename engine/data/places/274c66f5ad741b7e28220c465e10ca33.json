@@ -5,7 +5,7 @@
   "aliases": [
     "Crumb"
   ],
-  "description": "A bakery — using the term loosely — in a converted closet in Uptown Shelf. Ada Johansson-Kimathi bakes flatbread from synth-flour on a salvaged pizza stone heated by an electric element. The bread is Φ1 per piece, and she makes thirty pieces a day, which is all the element can handle before it overheats. The bread is warm, slightly charred, and somehow better than it has any right to be. She also sells a spread made from processed legume paste that she seasons with cumin and lemon juice. Bread plus spread is Φ2 and constitutes the most dignified meal available in Uptown for under Φ5.",
+  "description": "A bakery — using the term loosely — in a converted closet in Uptown the Gray Zone. Ada Johansson-Kimathi bakes flatbread from synth-flour on a salvaged pizza stone heated by an electric element. The bread is Φ1 per piece, and she makes thirty pieces a day, which is all the element can handle before it overheats. The bread is warm, slightly charred, and somehow better than it has any right to be. She also sells a spread made from processed legume paste that she seasons with cumin and lemon juice. Bread plus spread is Φ2 and constitutes the most dignified meal available in Uptown for under Φ5.",
   "atmosphere": {
     "sights": [],
     "sounds": [],
@@ -19,7 +19,7 @@
     "tags": []
   },
   "frequented_by": [
-    "Uptown Shelf residents",
+    "Uptown the Gray Zone residents",
     "Morning bread line regulars"
   ],
   "notable_locations": [],
@@ -35,5 +35,7 @@
   ],
   "related_entities": [
     "Ada Johansson-Kimathi"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

@@ -5,7 +5,7 @@
   "aliases": [],
   "category": "personal_ground",
   "manufacturer": "Various (mass-produced)",
-  "description": "A heavy-duty bicycle with an attached cargo box or flatbed, human-powered or electric-assisted. The cargo bike is the vehicle of Tier 1 commerce — if you're selling something, fixing something, or delivering something in the Shelf or the Narrows, you're probably pedaling a cargo bike to do it. They're slow, heavy, exhausting, and absolutely essential. The people who ride them are the muscles of the street economy, burning calories they can barely afford to replace.",
+  "description": "A heavy-duty bicycle with an attached cargo box or flatbed, human-powered or electric-assisted. The cargo bike is the vehicle of Tier 1 commerce — if you're selling something, fixing something, or delivering something in the Gray Zone or the Narrows, you're probably pedaling a cargo bike to do it. They're slow, heavy, exhausting, and absolutely essential. The people who ride them are the muscles of the street economy, burning calories they can barely afford to replace.",
   "propulsion": "Human power with optional electric assist motor",
   "speed": "15 km/h (human), 25 km/h (electric assist)",
   "capacity": "1 rider + 100 kg cargo",
@@ -26,7 +26,6 @@
     "power",
     "bar",
     "vehicle",
-    "shelf",
     "narrows",
     "tier 1",
     "tier 2",
@@ -40,8 +39,7 @@
   ],
   "parent_corponation": "",
   "related_entities": [
-    "The Narrows",
-    "The Shelf"
+    "The Narrows"
   ],
   "physical_description": "A utilitarian steel-frame bicycle with reinforced welds and a welded cargo box or flat deck mounted over the rear wheel, designed to carry 50-100kg of freight. The frame is bare metal or chipped black paint, rust blooming at joints, with mismatched tires and hand-bent cargo racks held together with wire and brackets salvaged from other machines. Electric-assist models carry a weathered lithium pack zip-tied to the downtube, wiring taped and re-taped; human-powered variants are leaner, meaner, stripped to essential geometry.",
   "visual_prompt": "gritty cargo bicycle with steel frame and rusted welds, heavy-duty cargo box, chipped black paint, mismatched tires, wire reinforcement, cyberpunk street delivery vehicle, neo-noir product photography, industrial decay, rain-slicked metal, dark studio background, detailed weathering, functional brutalism, shallow depth of field"

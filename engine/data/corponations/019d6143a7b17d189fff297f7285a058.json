@@ -35,5 +35,14 @@
     "The Corridor",
     "The Meridian Compact",
     "VitaCore FlowGuard Hemodynamic Regulator"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z10"
+    ],
+    "primaryZone": "Z10",
+    "lakefrontAccess": true,
+    "description": "The Rendstone Exclusion Corridor — 180-square-kilometer sovereign zone surrounding the Kewaunee nuclear installation on Lake Michigan's western shore south of Green Bay, Zone 10. Provides approximately 34% of Zone 10's power generation and sells surplus capacity south into Zone 9 and east into the Michigan tendril.",
+    "grayZoneRelationship": "The exclusion zone has no Gray Zone adjacency by design. Rendstone's perimeter enforcement is automated; the company has never publicly disclosed what the automated systems do to incursions."
+  }
 }

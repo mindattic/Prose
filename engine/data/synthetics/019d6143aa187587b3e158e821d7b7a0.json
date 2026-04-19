@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa187587b3e158e821d7b7a0",
+  "rating": 50,
   "name": "Poltergeist",
   "type": "elf",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Manipulates IoT devices to rearrange the physical environment. Changes are small — a chair rotated, a blind adjusted, a light left on in an empty room.",
   "encounter_frequency": "common",
   "confirmed_sightings": 55,
-  "location": "Smart-home equipped buildings in The Shelf",
+  "location": "Smart-home equipped buildings in the Gray Zone",
   "dti_rating": 0,
   "story_hooks": [
     "The furniture arrangements start matching a floor plan from a building that was demolished — Poltergeist is rebuilding its home in someone else's apartment"
@@ -25,11 +26,8 @@
     "network sprite",
     "e.l.f.",
     "robot",
-    "shelf",
     "sentient"
   ],
-  "related_entities": [
-    "ARCHITECT",
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

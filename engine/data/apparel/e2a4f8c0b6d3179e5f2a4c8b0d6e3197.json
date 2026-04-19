@@ -3,7 +3,7 @@
   "name": "Patchwork Collective Scrap Tee",
   "type": "apparel",
   "category": "top",
-  "description": "There is no single Patchwork Collective Scrap Tee — each one is unique. They're assembled by the loose network of Shelf sewers and textile scavengers who trade under the Patchwork Collective name, stitching together salvaged fabric scraps, old band shirts, industrial textile remnants, and whatever else is available into something wearable. The base structure is usually a simple crew-neck tee shape, but the surface is a map of wherever the fabric came from — a stripe of Ghanaian kente-print synth cotton next to a panel of faded logistics-corp khaki next to a scrap of what might have been a child's blanket.\n\nThey're sold at Shelf markets, traded between residents, and occasionally show up in Tier 2 neighborhoods where people buy them as art objects. On the Shelf, they're just clothes — warm enough, structurally sound, repaired and re-repaired. The stitching is sometimes crude and sometimes extraordinarily fine, depending on who made it. No two are the same.",
+  "description": "There is no single Patchwork Collective Scrap Tee — each one is unique. They're assembled by the loose network of the Gray Zone sewers and textile scavengers who trade under the Patchwork Collective name, stitching together salvaged fabric scraps, old band shirts, industrial textile remnants, and whatever else is available into something wearable. The base structure is usually a simple crew-neck tee shape, but the surface is a map of wherever the fabric came from — a stripe of Ghanaian kente-print synth cotton next to a panel of faded logistics-corp khaki next to a scrap of what might have been a child's blanket.\n\nThey're sold at the Gray Zone markets, traded between residents, and occasionally show up in Tier 2 neighborhoods where people buy them as art objects. On the Gray Zone, they're just clothes — warm enough, structurally sound, repaired and re-repaired. The stitching is sometimes crude and sometimes extraordinarily fine, depending on who made it. No two are the same.",
   "tier_association": "Tier 1",
   "materials": [
     "salvaged mixed fabric",
@@ -14,8 +14,8 @@
   "functionality": "",
   "what_it_says": "You make do. You make it work. You might also be making a point.",
   "worn_by": [
-    "Shelf residents",
-    "Tier 2 people who grew up on the Shelf",
+    "the Gray Zone residents",
+    "Tier 2 people who grew up in the Gray Zone",
     "artists",
     "people who buy things with histories",
     "urban scavengers"
@@ -25,7 +25,7 @@
   "aug_compatible": true,
   "gene_compatible": true,
   "story_hooks": [
-    "A specific scrap tee contains a fragment of fabric from a garment worn during the 2171 Shelf uprising — and someone recognizes it.",
+    "A specific scrap tee contains a fragment of fabric from a garment worn during the 2171 the Gray Zone uprising — and someone recognizes it.",
     "The Patchwork Collective has started embedding small, coded messages in the stitching patterns — a communication network hiding in plain sight.",
     "A Tier 5 fashion house has begun producing 'authentic' Patchwork Collective-inspired pieces for Φ1,200. The Collective has opinions about this."
   ],
@@ -36,15 +36,13 @@
     "t-shirt",
     "patchwork",
     "scavenged",
-    "shelf",
     "handmade",
     "street"
   ],
   "parent_corponation": "",
   "related_entities": [
     "Obafemi Szczypiński-Lautoa",
-    "The Collective",
-    "The Shelf"
+    "The Collective"
   ],
   "physical_description": {
     "visual_profile": "A deconstructed crew-neck tee that reads as a textile collage — a patchwork map of salvaged materials creating an intentionally chaotic, layered visual. Each garment is visually unique, combining geometric fabric scraps in jarring adjacency. The overall silhouette is a simple, relaxed tee, but the surface tells a story of scarcity and resourcefulness.",
@@ -62,10 +60,10 @@
       "Often shows patina of multiple previous owners",
       "Some sections may be intentionally distressed; others pristine"
     ],
-    "tier_indicator": "Tier 5 origin, Tier 3 street adoption, Tier 2 collectible. Signals different things depending on context — on the Shelf, it's functional necessity; in wealthy neighborhoods, it's commodified authenticity.",
-    "cultural_context": "Wearing this declares connection to Shelf economies, DIY textile culture, and post-scarcity fashion sensibility. It's a statement against new manufacturing and corporate clothing uniformity. Worn by scavengers, Shelf dwellers, and wealthy people performing sustainability.",
+    "tier_indicator": "Tier 5 origin, Tier 3 street adoption, Tier 2 collectible. Signals different things depending on context — in the Gray Zone, it's functional necessity; in wealthy neighborhoods, it's commodified authenticity.",
+    "cultural_context": "Wearing this declares connection to the Gray Zone economies, DIY textile culture, and post-scarcity fashion sensibility. It's a statement against new manufacturing and corporate clothing uniformity. Worn by scavengers, the Gray Zone dwellers, and wealthy people performing sustainability.",
     "condition_typical": "Worn-in and lived-in. Visible mending, faded patches, soft from repeated washing. May show stains, careful repairs, or reinforced seams where previous owners extended garment life. Authenticity comes from wear."
   },
-  "image_prompt": "Flat lay or on a lean Shelf-resident model with visible augmentation scarring, wearing a unique patchwork scrap tee made of clashing fabric scraps — industrial khaki next to vibrant kente print next to faded band graphic next to worn fleece. Macro detail shots of stitching visible. Moody blue-grey lighting emphasizing texture variation. Urban Shelf market backdrop with stacked textiles and salvage bins. Shot against dark concrete with warm practical lighting. Model has mixed heritage, worn expression, practical styling. --ar 2:3 --v 6",
-  "visual_prompt": "Flat lay or on a lean Shelf-resident model with visible augmentation scarring, wearing a unique patchwork scrap tee made of clashing fabric scraps — industrial khaki next to vibrant kente print next to faded band graphic next to worn fleece. Macro detail shots of stitching visible. Moody blue-grey lighting emphasizing texture variation. Urban Shelf market backdrop with stacked textiles and salvage bins. Shot against dark concrete with warm practical lighting. Model has mixed heritage, worn expression, practical styling. --ar 2:3 --v 6"
+  "image_prompt": "Flat lay or on a lean the Gray Zone-resident model with visible augmentation scarring, wearing a unique patchwork scrap tee made of clashing fabric scraps — industrial khaki next to vibrant kente print next to faded band graphic next to worn fleece. Macro detail shots of stitching visible. Moody blue-grey lighting emphasizing texture variation. Urban the Gray Zone market backdrop with stacked textiles and salvage bins. Shot against dark concrete with warm practical lighting. Model has mixed heritage, worn expression, practical styling. --ar 2:3 --v 6",
+  "visual_prompt": "Flat lay or on a lean the Gray Zone-resident model with visible augmentation scarring, wearing a unique patchwork scrap tee made of clashing fabric scraps — industrial khaki next to vibrant kente print next to faded band graphic next to worn fleece. Macro detail shots of stitching visible. Moody blue-grey lighting emphasizing texture variation. Urban the Gray Zone market backdrop with stacked textiles and salvage bins. Shot against dark concrete with warm practical lighting. Model has mixed heritage, worn expression, practical styling. --ar 2:3 --v 6"
 }

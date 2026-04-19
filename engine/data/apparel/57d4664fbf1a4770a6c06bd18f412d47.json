@@ -1,17 +1,17 @@
 {
-  "name": "Driftclean Shelf Best Dress Coat",
+  "name": "Driftclean the Gray Zone Best Dress Coat",
   "type": "apparel",
   "category": "formal_wear",
   "subcategory": "dress coat",
   "manufacturer": "Unknown (secondhand, origin unverifiable)",
-  "description": "A knee-length dress coat that has passed through at least three owners, its original color somewhere between charcoal and rust depending on the light. The lining has been replaced once with mismatched poly-satin, and the lapels are hand-pressed with a hot pipe rather than an iron. The buttons don't match but they're all accounted for. On the Shelf, this is what you wear to a funeral, a custody hearing, or the one job interview where something real is at stake.\n\nNo augment ports, no smart fabric, no climate regulation. What it offers is dignity on a budget measured in single-digit Quanta. People who wear this coat know what it costs to look clean when your building's water pressure fails every third day. The slight sheen at the elbows isn't intentional. Neither is the careful, nearly invisible mending at the right shoulder seam. Both are noticed by everyone in the room, and no one says anything.",
+  "description": "A knee-length dress coat that has passed through at least three owners, its original color somewhere between charcoal and rust depending on the light. The lining has been replaced once with mismatched poly-satin, and the lapels are hand-pressed with a hot pipe rather than an iron. The buttons don't match but they're all accounted for. On the Gray Zone, this is what you wear to a funeral, a custody hearing, or the one job interview where something real is at stake.\n\nNo augment ports, no smart fabric, no climate regulation. What it offers is dignity on a budget measured in single-digit Quanta. People who wear this coat know what it costs to look clean when your building's water pressure fails every third day. The slight sheen at the elbows isn't intentional. Neither is the careful, nearly invisible mending at the right shoulder seam. Both are noticed by everyone in the room, and no one says anything.",
   "tier_availability": "Tier 1-2",
   "price": "Φ8",
   "augment_compatible": false,
   "geneware_compatible": false,
   "durability": "low",
   "legal_status": "legal",
-  "cultural_context": "On the Shelf, formal wear is almost always secondhand. This coat represents the act of trying — of insisting on being taken seriously in a city that has structurally decided not to. Shelf communities often share formal wear communally, passing coats between neighbors for hearings, ceremonies, and occasions. Wearing it is a statement of effort, not wealth.",
+  "cultural_context": "On the Gray Zone, formal wear is almost always secondhand. This coat represents the act of trying — of insisting on being taken seriously in a city that has structurally decided not to. the Gray Zone communities often share formal wear communally, passing coats between neighbors for hearings, ceremonies, and occasions. Wearing it is a statement of effort, not wealth.",
   "story_hooks": [
     "The coat has a Tier 3 transit pass sewn into the lining from a previous owner — still valid, and registered to someone who disappeared three years ago.",
     "A character borrowing this coat for a Lazarus insurance appeal hearing notices the previous owner's name embroidered in the collar: someone they once knew.",
@@ -19,7 +19,6 @@
   ],
   "tags": [
     "secondhand",
-    "shelf",
     "formal",
     "dress coat",
     "mended",
@@ -38,7 +37,6 @@
     "Meridian Municipal Supply MMS-S1 'Sparker' [FIELD IMPROVISED",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
     "The Quiet Room",
-    "The Shelf",
     "VitaCore LinguaSync Real-Time Translation Implant",
     "Zoë Mbekele-Thorvaldsdóttir"
   ],
@@ -58,10 +56,10 @@
       "Absence of any augment ports or tech integration",
       "Faint stains at hem and cuffs that speak to street-level living"
     ],
-    "tier_indicator": "Tier 3-4 functional. Signals not poverty but precarity—the wearer has chosen to invest their limited Quanta in dignity rather than chrome. On the Shelf, this is luxury.",
-    "cultural_context": "Worn by people for whom formal wear is a borrowed tool. Custody hearings, job interviews, funerals, community ceremonies. Represents the act of insisting on being taken seriously despite structural neglect. Often communally shared within Shelf networks—this specific coat may have been worn by three neighbors in the last year.",
+    "tier_indicator": "Tier 3-4 functional. Signals not poverty but precarity—the wearer has chosen to invest their limited Quanta in dignity rather than chrome. On the Gray Zone, this is luxury.",
+    "cultural_context": "Worn by people for whom formal wear is a borrowed tool. Custody hearings, job interviews, funerals, community ceremonies. Represents the act of insisting on being taken seriously despite structural neglect. Often communally shared within the Gray Zone networks—this specific coat may have been worn by three neighbors in the last year.",
     "condition_typical": "Broken-in and carefully maintained. Patched where necessary with invisible stitching. Never pristine, never abandoned. Shows the specific wear patterns of someone who launders by hand and hangs carefully to dry."
   },
-  "image_prompt": "Neo-noir fashion photograph: a weathered knee-length coat displayed on a dark mannequin or worn by a gaunt figure under industrial sodium lighting. The charcoal-rust fabric catches uneven light, revealing careful hand-pressed lapels and the subtle sheen of mismatched cream lining. Close detail of worn elbows and barely-visible shoulder seam repair. Urban backdrop: a Shelf residential tower, cracked concrete, or dimly-lit laundromat. Moody, high-contrast lighting that emphasizes the coat's texture and history. The overall mood is dignified poverty—something worn to insist on being seen. Cinematic, gritty, documentary-like quality. --ar 2:3 --v 6",
-  "visual_prompt": "Neo-noir fashion photograph: a weathered knee-length coat displayed on a dark mannequin or worn by a gaunt figure under industrial sodium lighting. The charcoal-rust fabric catches uneven light, revealing careful hand-pressed lapels and the subtle sheen of mismatched cream lining. Close detail of worn elbows and barely-visible shoulder seam repair. Urban backdrop: a Shelf residential tower, cracked concrete, or dimly-lit laundromat. Moody, high-contrast lighting that emphasizes the coat's texture and history. The overall mood is dignified poverty—something worn to insist on being seen. Cinematic, gritty, documentary-like quality. --ar 2:3 --v 6"
+  "image_prompt": "Neo-noir fashion photograph: a weathered knee-length coat displayed on a dark mannequin or worn by a gaunt figure under industrial sodium lighting. The charcoal-rust fabric catches uneven light, revealing careful hand-pressed lapels and the subtle sheen of mismatched cream lining. Close detail of worn elbows and barely-visible shoulder seam repair. Urban backdrop: a the Gray Zone residential tower, cracked concrete, or dimly-lit laundromat. Moody, high-contrast lighting that emphasizes the coat's texture and history. The overall mood is dignified poverty—something worn to insist on being seen. Cinematic, gritty, documentary-like quality. --ar 2:3 --v 6",
+  "visual_prompt": "Neo-noir fashion photograph: a weathered knee-length coat displayed on a dark mannequin or worn by a gaunt figure under industrial sodium lighting. The charcoal-rust fabric catches uneven light, revealing careful hand-pressed lapels and the subtle sheen of mismatched cream lining. Close detail of worn elbows and barely-visible shoulder seam repair. Urban backdrop: a the Gray Zone residential tower, cracked concrete, or dimly-lit laundromat. Moody, high-contrast lighting that emphasizes the coat's texture and history. The overall mood is dignified poverty—something worn to insist on being seen. Cinematic, gritty, documentary-like quality. --ar 2:3 --v 6"
 }

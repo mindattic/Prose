@@ -9,8 +9,8 @@
   "role": "Corporate Wars veteran, retired Axiom security contractor, pension-dependent resident",
   "age": 68,
   "status": "active",
-  "location": "The Shelf, Block 7, stall 7-F (lives in a converted shipping container unit), near Halsted and Division",
-  "description": "Slate Björnsdóttir-Kwon is a lean, angular man with close-cropped grey hair and the particular economy of movement that marks people trained to conserve energy over long distances. His skin is dark brown with pronounced keloid scarring across his right shoulder and clavicle — he does not cover it and does not explain it to strangers. He has cosmetic geneware: a cat's tail, russet-orange with a dark tip, that he got as a joke in 2168 when his unit was celebrating surviving the Kessler Corridor engagement. He has kept it because it amuses him that it annoys people who expect a veteran to be more serious. His left hand has a visible subdermal port on the back where a tactical datalink was removed — the flesh around it never quite healed smooth.\n\nSlate Björnsdóttir-Kwon served twelve years as an Axiom ground contractor during the Corporate Wars, and he came back from them with a pension that covers his container unit on The Shelf, two meals a day if he is careful, and nothing else. He is not bitter about this in the operatic way — he is bitter in the quiet, functional way of someone who made his peace with it and is now simply watching to see what happens next. He runs a small informal counseling operation for other veterans on The Shelf, not because anyone asked him to or pays him to, but because he watched two friends die from nothing that could have been prevented if anyone had been paying attention. He has no license, no credentials, and a long waiting list.",
+  "location": "the Gray Zone, Block 7, stall 7-F (lives in a converted shipping container unit), near Halsted and Division",
+  "description": "Slate Björnsdóttir-Kwon is a lean, angular man with close-cropped grey hair and the particular economy of movement that marks people trained to conserve energy over long distances. His skin is dark brown with pronounced keloid scarring across his right shoulder and clavicle — he does not cover it and does not explain it to strangers. He has cosmetic geneware: a cat's tail, russet-orange with a dark tip, that he got as a joke in 2168 when his unit was celebrating surviving the Kessler Corridor engagement. He has kept it because it amuses him that it annoys people who expect a veteran to be more serious. His left hand has a visible subdermal port on the back where a tactical datalink was removed — the flesh around it never quite healed smooth.\n\nSlate Björnsdóttir-Kwon served twelve years as an Axiom ground contractor during the Corporate Wars, and he came back from them with a pension that covers his container unit on the Gray Zone, two meals a day if he is careful, and nothing else. He is not bitter about this in the operatic way — he is bitter in the quiet, functional way of someone who made his peace with it and is now simply watching to see what happens next. He runs a small informal counseling operation for other veterans on the Gray Zone, not because anyone asked him to or pays him to, but because he watched two friends die from nothing that could have been prevented if anyone had been paying attention. He has no license, no credentials, and a long waiting list.",
   "psychology": {
     "facet_weights": {
       "wound": 0.75,
@@ -55,12 +55,12 @@
   "relationships": [],
   "story_hooks": [
     "Axiom has quietly begun reclassifying certain pension categories for Corporate Wars veterans, and several people in Boubacar's network are about to lose their housing support — he needs someone to navigate Axiom's bureaucratic labyrinth who isn't flagged in their system",
-    "A new veteran has arrived on The Shelf who Boubacar recognizes as someone from his unit — someone who should be dead, per Axiom's official records of the final engagement",
+    "A new veteran has arrived on the Gray Zone who Boubacar recognizes as someone from his unit — someone who should be dead, per Axiom's official records of the final engagement",
     "The stress-hormone regulator implant he cannot remove is an Axiom-issue model that a recent exposé suggests was used to collect biometric loyalty data — he needs to know if his is active and what it has been transmitting"
   ],
-  "narrative_function": "Veteran perspective and emotional grounding; can provide military history of the Corporate Wars from a ground-level view; gateway to the veteran community on The Shelf; also a portrait of what Axiom does to the people who survive its service. Can be a quest giver around veteran welfare issues.",
+  "narrative_function": "Veteran perspective and emotional grounding; can provide military history of the Corporate Wars from a ground-level view; gateway to the veteran community on the Gray Zone; also a portrait of what Axiom does to the people who survive its service. Can be a quest giver around veteran welfare issues.",
   "augmentations": "Russet-orange cat tail (geneware, cosmetic, installed 2168); removed tactical datalink (scar tissue port on left hand dorsum); stress-hormone regulator implant in the medulla — standard Axiom issue, he cannot afford to have it removed and is not sure he wants to",
-  "daily_life": "Wakes before dawn and walks the full perimeter of The Shelf — partly exercise, partly reconnaissance that he knows is unnecessary but cannot stop. Holds informal sessions with veterans through the late morning. Afternoons he repairs things for neighbors in exchange for food or supplies. He prays briefly each evening to the ELF he believes inhabits the Shelf's power grid, which he has named Ogun, leaving it a small piece of wire bent into a shape he never explains.",
+  "daily_life": "Wakes before dawn and walks the full perimeter of the Gray Zone — partly exercise, partly reconnaissance that he knows is unnecessary but cannot stop. Holds informal sessions with veterans through the late morning. Afternoons he repairs things for neighbors in exchange for food or supplies. He prays briefly each evening to the ELF he believes inhabits the Gray Zone's power grid, which he has named Ogun, leaving it a small piece of wire bent into a shape he never explains.",
   "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
@@ -189,7 +189,7 @@
     "Stoic": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -239,7 +239,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Contract ends; moves to The Shelf on pension support; begins informal veteran counseling",
+      "event": "Contract ends; moves to the Gray Zone on pension support; begins informal veteran counseling",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -256,12 +256,11 @@
     "Hearthstone Firearms Sentinel-9 'Block Watch'"
   ],
   "related_entities": [
-    "The Shelf",
     "GLMZ",
     "Slate",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "East Asian (45.6%), Sub-Saharan African (22.8%), Northern European (18.2%), Southeast Asian (9.1%), Indigenous American (4.3%) — a striking diaspora blend. High angular cheekbones with East Asian characteristics blend with a broad nose bridge reflecting African and Southeast Asian heritage. Deep-set warm brown eyes with amber undertones sit in a face shaped by Northern European jawline structure and subtle Indigenous American features. The overall phenotype is distinctive: warm medium-brown skin with golden undertones and subtle depth, creating a cohesive complexity that defies any single regional classification.",
     "height_cm": 178,

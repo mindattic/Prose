@@ -21,7 +21,7 @@
     "Some users report a persistent sense of temporal disorientation — the subjective feeling that nights are very short — that fades but never fully disappears",
     "Rare: insomnia-like resistance to sleep onset if the user attempts to sleep significantly earlier or later than their calibrated window; system learns new schedules within 2 weeks"
   ],
-  "cultural_context": "The RestCycle has become a quiet class signifier in GLMZ, but not in the direction one might expect. In Tier 2 and 3 communities, having a RestCycle is simply practical — it is a tool for surviving the economy, and no one raises an eyebrow. In Tier 4 and 5, it has been standard for long enough that not having one is the unusual choice, associated either with principled anti-implant sentiment or with the kind of performative 'natural living' that only the very wealthy can afford. On the Shelf, RestCycles are common but often older models acquired secondhand or via unlicensed installation — the hardware functions the same, but without PulsePoint's warranty support, users sometimes end up stuck in calibration loops or with firmware that hasn't been updated in years, producing the 'zip sleep' phenomenon where the implant aggressively compresses sleep to under 3 hours, leaving users functional but grinding down over months. The ethics of the RestCycle are a minor but persistent subject of public health debate: critics argue it normalizes a relationship with the body as a productivity machine to be optimized, while defenders note that for Tier 1 parents working two jobs, four hours of quality sleep versus six hours of bad sleep is simply a better life.",
+  "cultural_context": "The RestCycle has become a quiet class signifier in GLMZ, but not in the direction one might expect. In Tier 2 and 3 communities, having a RestCycle is simply practical — it is a tool for surviving the economy, and no one raises an eyebrow. In Tier 4 and 5, it has been standard for long enough that not having one is the unusual choice, associated either with principled anti-implant sentiment or with the kind of performative 'natural living' that only the very wealthy can afford. On the Gray Zone, RestCycles are common but often older models acquired secondhand or via unlicensed installation — the hardware functions the same, but without PulsePoint's warranty support, users sometimes end up stuck in calibration loops or with firmware that hasn't been updated in years, producing the 'zip sleep' phenomenon where the implant aggressively compresses sleep to under 3 hours, leaving users functional but grinding down over months. The ethics of the RestCycle are a minor but persistent subject of public health debate: critics argue it normalizes a relationship with the body as a productivity machine to be optimized, while defenders note that for Tier 1 parents working two jobs, four hours of quality sleep versus six hours of bad sleep is simply a better life.",
   "known_users": [
     "Tier 2 workers holding multiple jobs who need to reclaim waking hours",
     "Tier 3 and 4 professionals in competitive fields where productivity is identity",
@@ -31,10 +31,10 @@
   ],
   "story_hooks": [
     "A rash of RestCycle users in a Tier 2 district are reporting identical, specific nightmares — not vague anxiety dreams but a precise, shared narrative that repeats. PulsePoint's response is a firmware patch that suppresses REM reporting. Someone wants to know what's in that dream before it disappears.",
-    "A secondhand RestCycle acquired on the Shelf turns out to still be synced to its previous owner's health profile — a person who disappeared six months ago. The sleep data logged in the device tells a story about the weeks before they vanished.",
+    "A secondhand RestCycle acquired in the Gray Zone turns out to still be synced to its previous owner's health profile — a person who disappeared six months ago. The sleep data logged in the device tells a story about the weeks before they vanished.",
     "A city health bureau proposal would mandate RestCycles for all municipal workers to reduce overtime costs. The players are hired — by different clients with opposing interests — to influence the outcome of the vote."
   ],
-  "street_price": "ΦΦΦ 1,100–ΦΦΦ 1,600 (unlicensed installation; secondhand units available on Shelf markets for ΦΦΦ 300–ΦΦΦ 500, condition variable)",
+  "street_price": "ΦΦΦ 1,100–ΦΦΦ 1,600 (unlicensed installation; secondhand units available on the Gray Zone markets for ΦΦΦ 300–ΦΦΦ 500, condition variable)",
   "licensed_price": "ΦΦΦ 2,400–ΦΦΦ 3,200 at PulsePoint-certified clinics; employer wellness plan coverage common in Tier 3-4 corporate employment",
   "tags": [
     "cyberware",
@@ -59,7 +59,6 @@
     "Tessera TAR-12 'Consensus'",
     "Tessera TK-20 Apex 'Mandate'",
     "The Filament",
-    "The Human Baseline Alliance",
-    "The Shelf"
+    "The Human Baseline Alliance"
   ]
 }

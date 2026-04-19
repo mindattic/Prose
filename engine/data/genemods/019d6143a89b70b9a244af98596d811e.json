@@ -7,7 +7,7 @@
   "aliases": [],
   "category": "cosmetic",
   "target_system": "skeletal (cranial antler growth with annual shed)",
-  "description": "A variant of horn induction that produces true antlers — branching, deciduous structures that shed and regrow annually. Unlike horns, which are permanent keratin structures, antlers are bone that grows covered in living velvet tissue, hardens, sheds its velvet, and then drops off entirely each year before regrowing. The annual cycle is compressed from deer's 12-month natural cycle to approximately 4 months in the human installation — the user grows antlers over 6–8 weeks, wears them for 8–10 weeks, and then sheds them over 2 weeks before the cycle restarts. The shedding phase produces significant cranial discomfort and leaves the user temporarily antler-less, which some find liberating and others find distressing. Shed antlers from modified humans are collected, carved, and sold as art objects and jewelry. An entire cottage industry exists around antler collection in the Shelf.",
+  "description": "A variant of horn induction that produces true antlers — branching, deciduous structures that shed and regrow annually. Unlike horns, which are permanent keratin structures, antlers are bone that grows covered in living velvet tissue, hardens, sheds its velvet, and then drops off entirely each year before regrowing. The annual cycle is compressed from deer's 12-month natural cycle to approximately 4 months in the human installation — the user grows antlers over 6–8 weeks, wears them for 8–10 weeks, and then sheds them over 2 weeks before the cycle restarts. The shedding phase produces significant cranial discomfort and leaves the user temporarily antler-less, which some find liberating and others find distressing. Shed antlers from modified humans are collected, carved, and sold as art objects and jewelry. An entire cottage industry exists around antler collection in the Gray Zone.",
   "source_organism": "Cervus elaphus (red deer), Rangifer tarandus (reindeer, rapid growth variant)",
   "manufacturer": "Helix Biosystems",
   "tier_availability": "Tier 2+",
@@ -32,11 +32,9 @@
     "geneware",
     "crime",
     "elf",
-    "shelf",
     "tier 2"
   ],
   "related_entities": [
-    "Axolotl Regenerative Suite",
-    "The Shelf"
+    "Axolotl Regenerative Suite"
   ]
 }

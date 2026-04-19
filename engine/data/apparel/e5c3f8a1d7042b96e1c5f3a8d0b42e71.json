@@ -3,7 +3,7 @@
   "name": "Veldtmann RadCore Reactor Zone Enclosure Suit",
   "type": "apparel",
   "category": "protective",
-  "description": "A Tier 3 radiation enclosure suit for reactor maintenance and contaminated Shelf zones. The outer shell is dense lead-composite polyfilm in matte institutional yellow, stenciled with Veldtmann's black chevron and dosimeter attachment points at chest, wrist, and collar. Inner layers are triple-sealed with radiation-dampening aerogel batting and a moisture barrier.\n\nThe integrated helmet is hard-shelled polycarb with a leaded-glass visor. All seams are pressure-bonded and color-coded for inspection — red seams indicate primary radiation barriers. Rated RAD-IV for gamma and beta exposure.",
+  "description": "A Tier 3 radiation enclosure suit for reactor maintenance and contaminated the Gray Zone zones. The outer shell is dense lead-composite polyfilm in matte institutional yellow, stenciled with Veldtmann's black chevron and dosimeter attachment points at chest, wrist, and collar. Inner layers are triple-sealed with radiation-dampening aerogel batting and a moisture barrier.\n\nThe integrated helmet is hard-shelled polycarb with a leaded-glass visor. All seams are pressure-bonded and color-coded for inspection — red seams indicate primary radiation barriers. Rated RAD-IV for gamma and beta exposure.",
   "tier_association": "Tier 2-3",
   "materials": [
     "lead-composite polyfilm outer shell",
@@ -16,7 +16,7 @@
   "what_it_says": "Someone who goes into the places the rest of the city pretends don't exist.",
   "worn_by": [
     "reactor maintenance crews",
-    "Shelf contamination zone workers",
+    "the Gray Zone contamination zone workers",
     "hazmat response teams",
     "decontamination contractors",
     "unlicensed isotope salvagers"
@@ -26,9 +26,9 @@
   "aug_compatible": false,
   "gene_compatible": false,
   "story_hooks": [
-    "A suit returned from a Shelf contamination zone registered exposure levels that would require the area to be restricted — but no official restriction was ever filed.",
+    "A suit returned from a the Gray Zone contamination zone registered exposure levels that would require the area to be restricted — but no official restriction was ever filed.",
     "The dosimeter on a reactor worker's suit has been spoofed to read low; someone doesn't want the actual exposure logged.",
-    "Veldtmann quietly recalled this batch number two months ago but never collected the suits already distributed to Shelf contractors."
+    "Veldtmann quietly recalled this batch number two months ago but never collected the suits already distributed to the Gray Zone contractors."
   ],
   "tags": [
     "apparel",
@@ -59,7 +59,7 @@
       "Reinforced articulation panels at elbows, knees, and groin for increased protection in high-exposure zones"
     ],
     "tier_indicator": "Tier 3 functional corporate equipment—standardized safety gear for working-class industrial maintenance personnel employed by corpo subsidiaries",
-    "cultural_context": "Worn by reactor maintenance workers, contaminated zone salvagers, and sub-level infrastructure personnel. Signals employment in hazardous corporate infrastructure roles. The suit implies exposure to unstable Shelf zones or legacy nuclear facilities—not casual streetwear but recognizable and respected among industrial workers.",
+    "cultural_context": "Worn by reactor maintenance workers, contaminated zone salvagers, and sub-level infrastructure personnel. Signals employment in hazardous corporate infrastructure roles. The suit implies exposure to unstable the Gray Zone zones or legacy nuclear facilities—not casual streetwear but recognizable and respected among industrial workers.",
     "condition_typical": "Usually worn with visible dosimeter wear marks, minor paint scuffs on the yellow exterior from industrial handling, and faint radiation-detection tape residue at seams. The suit is periodically pressure-tested; successful tests leave visible inspection stamps. Most units show 3-5 years of weathered use despite being regularly decontaminated."
   },
   "image_prompt": "A Tier 3 neo-noir worker in a dense yellow Veldtmann RadCore Reactor Zone Enclosure Suit with integrated hard polycarb helmet and leaded-glass visor, standing in a dimly lit contaminated industrial facility. The suit's matte yellow shell reflects cool fluorescent overhead lighting, with red seams and black chevron logos clearly visible. The helmet's amber-tinted visor casts an eerie glow. Industrial background: corroded metal walls, warning striping, dosimeter equipment. Gritty, utilitarian aesthetic. Shot from mid-thigh up, dramatic side-lighting emphasizing the suit's protective geometry and technical seams. Film grain, moody color grading. --ar 2:3 --v 6",

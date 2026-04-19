@@ -9,7 +9,7 @@
   "role": "Junk merchant and scrap reseller",
   "age": 22,
   "status": "active",
-  "location": "The Shelf, Brightmoor Reclamation, near Ashland and Chicago Ave",
+  "location": "the Gray Zone, Brightmoor Reclamation, near Ashland and Chicago Ave",
   "description": "Zen Truong is small and fast-moving, with the wiry physicality of someone who has spent years climbing through reclamation sites. Her skin is warm brown with a reddish undertone, her eyes a vivid amber with a starburst pattern that's natural — she's been offered money to sell them twice and refused both times. She has cat ears, small and dark brown, the geneware obviously budget-tier — one of them doesn't track sound as naturally as the other and occasionally flicks at random — but she wears them without apology. Her clothes are layered, practical, and assembled from different sources: a Ferrogate Transit worker vest over a Palladian-logo shirt with the logo melted off, cargo pants with pockets she has modified herself.\n\nZen Truong pushes a heavily loaded magnetic-suspension cart through Brightmoor Reclamation's scrap corridors with the territorial confidence of someone who knows every crack in every wall. She's young enough that some people underestimate her and old enough that she's used to it. She has a fast and somewhat overwhelming personality — she talks in compressed bursts, bounces between topics, and has an almost savant-level ability to identify the value and origin of electronic components by sight. She will argue prices with a ferocity completely disproportionate to the amounts involved. She has never been robbed twice by the same person.",
   "psychology": {
     "facet_weights": {
@@ -59,7 +59,7 @@
   ],
   "narrative_function": "Equipment source, local explorer, potential guide to Brightmoor's reclamation depths. She knows what's been dumped and where, which makes her incidentally aware of what corporations are discarding — which sometimes includes things they'd prefer stayed discarded.",
   "augmentations": "Budget-tier cat ears (geneware, one slightly malfunctioning). Subdermal grip-pads on her palms and fingers — makes climbing and carrying significantly easier. No other augmentations; she saves most of what she earns.",
-  "daily_life": "Pre-dawn scavenging runs through Brightmoor Reclamation's freshest deposition zones, then hauling and sorting through morning, then selling from her cart in The Shelf market corridor from midday until her stock is gone or she's too tired to argue anymore.",
+  "daily_life": "Pre-dawn scavenging runs through Brightmoor Reclamation's freshest deposition zones, then hauling and sorting through morning, then selling from her cart in the Gray Zone market corridor from midday until her stock is gone or she's too tired to argue anymore.",
   "affiliation": "Independent; pays informal dues to a Brightmoor scrap-territory collective she doesn't fully trust",
   "uses_facets": false,
   "narration_voice": "",
@@ -159,7 +159,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -177,7 +177,6 @@
     "Dredge Mining Collective",
     "The Reclamation Assembly",
     "Palladian Construction",
-    "The Shelf",
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
     "Pressure Drop",
     "Stratum",
@@ -187,7 +186,7 @@
     "Tin Man",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Sub-Saharan African (44.1%), Southeast Asian (30.5%), and East Asian (25.4%) ancestry — a rich tricontinent genetic blend resulting in deep warm brown skin with golden undertones, distinctive Southeast Asian facial structure with East Asian eye shape, and the lean athletic frame characteristic of her mixed heritage",
     "height_cm": 157,

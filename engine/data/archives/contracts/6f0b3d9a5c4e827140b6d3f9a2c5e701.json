@@ -1,0 +1,35 @@
+{
+  "id": "6f0b3d9a5c4e827140b6d3f9a2c5e701",
+  "name": "Signal Break",
+  "type": "contract",
+  "codename": "DEAD AIR",
+  "contract_tier": "Ghost",
+  "posted_by": "Unknown — contract presented to specific freelancer directly through an intermediary with no verifiable identity; no dead drop, no broker chain",
+  "target": "Identity unknown — referred to in the contract materials only as 'the Archivist Node'",
+  "objective": "The target is a living person who functions as a central memory for a specific broker network. Terminate. All notes, personal archives, and biological memory with them.",
+  "location": "Unknown — contract materials include a partial location key that requires the freelancer to develop the rest",
+  "payout": "Negotiated — opening offer described as 'sufficient.' No figure given.",
+  "deadline": "null",
+  "complications": [
+    "The posting entity's identity is completely opaque — no vouching chain, no broker aggregation, no dead drop. The contract was delivered personally. This means either someone powerful enough to operate without the Signal Network's infrastructure, or a trap",
+    "The target's identity and location are partially encrypted and require the freelancer to complete an intelligence-gathering phase before the contract can even be executed — they may learn things during that phase that change the calculus",
+    "Ghost-tier contracts carry no social infrastructure of enforcement — no broker to arbitrate disputes, no reputation consequence for non-completion, no recourse on either side"
+  ],
+  "moral_weight": "grey",
+  "description": "Presented directly. No posting board, no dead drop, no broker — someone who knows who you are and how to reach you handed you a contract without leaving a trace of having done so. The target is described in functional terms: a person who serves as an irreplaceable memory node for a broker network, meaning they hold information — relationships, operational histories, contractor identities — that exists nowhere else. The request is to remove that person entirely, with emphasis on the word 'entirely.'\n\nThe 'Archivist Node' is a real function in the Signal Network's informal architecture — some regions develop individuals who serve as trusted aggregators, holding information on behalf of brokers who prefer distributed memory over hardware storage. Killing one is a serious act, equivalent to burning down an irreplaceable community library. What the freelancer cannot know from the contract materials alone is whether this specific Archivist Node is being removed because they're a threat, because someone wants to collapse the broker network they support, or because they know something specific that a specific party wants buried. The partial location key the contract provides is itself information — working out where it points will tell the freelancer something about who posted this, if they know how to read the geography.",
+  "story_hooks": [
+    "The Archivist Node, once located, turns out to know about the freelancer — about their history, their actual identity, possibly things the freelancer would prefer stayed buried. The question becomes whether the node is a threat to them personally or whether someone else has decided to frame it that way",
+    "Completing the location-development phase puts the freelancer in contact with the broker network the Archivist supports — those brokers will notice the inquiry, and some of them will draw the correct conclusion about what's coming"
+  ],
+  "related_entities": [],
+  "tags": [
+    "contract",
+    "tier-ghost",
+    "elimination",
+    "signal-network",
+    "grey-morality",
+    "identity-unknown",
+    "broker-warfare",
+    "direct-delivery"
+  ]
+}

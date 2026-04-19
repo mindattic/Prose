@@ -6,11 +6,11 @@
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Pawn shop owner and small-time data broker, The Shelf",
+  "role": "Pawn shop owner and small-time data broker, the Gray Zone",
   "age": 44,
   "status": "active",
-  "location": "The Shelf, Lockhaven South, near Pulaski and Chicago Ave",
-  "description": "Mika Möller-Saidov is lean and angular, with pale Finnish features gone weathered and a close-cropped beard that grows in two distinct textures — fine near the jaw, tightly coiled at the chin — which he finds philosophically appropriate. His eyes are his most augmented feature: full iris replacements in deep amber with a second ring of pale gold that pulses faintly when he's running an active scan, which is often. He dresses in layers of neutral secondhand corporate wear — the kind of mid-tier Tessera office clothes that people pawn when they fall down a tier — and he always looks like someone who has somewhere slightly more important to be.\n\nMika Möller-Saidov runs 'Ouédraogo Reclaimed' out of a ground-floor shopfront on The Shelf, a narrow commercial strip of Lockhaven South where the building facades are stacked with second-story additions that block most of the sky. He buys, appraises, and resells everything from broken augmentations to family heirlooms to encrypted data cores he's willing to crack for a fee. He is precisely as trustworthy as the deal requires and not one degree more. He speaks in short declarative sentences and has a gift for making people feel he is giving them a fair deal even when he isn't — not through deception exactly, but through a kind of confident, unhurried correctness that makes haggling feel like arguing with a scale.",
+  "location": "the Gray Zone, Lockhaven South, near Pulaski and Chicago Ave",
+  "description": "Mika Möller-Saidov is lean and angular, with pale Finnish features gone weathered and a close-cropped beard that grows in two distinct textures — fine near the jaw, tightly coiled at the chin — which he finds philosophically appropriate. His eyes are his most augmented feature: full iris replacements in deep amber with a second ring of pale gold that pulses faintly when he's running an active scan, which is often. He dresses in layers of neutral secondhand corporate wear — the kind of mid-tier Tessera office clothes that people pawn when they fall down a tier — and he always looks like someone who has somewhere slightly more important to be.\n\nMika Möller-Saidov runs 'Ouédraogo Reclaimed' out of a ground-floor shopfront on the Gray Zone, a narrow commercial strip of Lockhaven South where the building facades are stacked with second-story additions that block most of the sky. He buys, appraises, and resells everything from broken augmentations to family heirlooms to encrypted data cores he's willing to crack for a fee. He is precisely as trustworthy as the deal requires and not one degree more. He speaks in short declarative sentences and has a gift for making people feel he is giving them a fair deal even when he isn't — not through deception exactly, but through a kind of confident, unhurried correctness that makes haggling feel like arguing with a scale.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -55,12 +55,12 @@
   "relationships": [],
   "story_hooks": [
     "Someone pawned a data core three weeks ago and never came back to reclaim it. Dragan cracked it out of professional curiosity and found something that is making him very uncomfortable — he wants it out of his shop without it being traceable back to him.",
-    "A regular customer was found dead in an alley near The Shelf. Among their effects was a pawn ticket for Dragan's shop. He's not a suspect yet, but he will be if anyone looks closely at what the ticket was for."
+    "A regular customer was found dead in an alley near the Gray Zone. Among their effects was a pawn ticket for Dragan's shop. He's not a suspect yet, but he will be if anyone looks closely at what the ticket was for."
   ],
   "narrative_function": "Data broker and fence — can provide information, identify items of unknown origin, connect players to buyers or sellers. Morally neutral information source. Can be hired, bribed, or persuaded but not easily fooled.",
   "augmentations": "Amber iris replacements with active scanning function (appraisal overlay, material composition read). Subdermal RFID skimmer in right palm — technically illegal, registered as a 'merchant verification tool.' Mild neural buffer for data processing.",
   "daily_life": "Opens the shop mid-morning, spends afternoons appraising new inventory and meeting with people who want things looked at quietly, closes late and eats whatever is convenient from nearby stalls.",
-  "affiliation": "Independent; informal information trade network with two other Shelf brokers; occasional Axiom corporate salvage contracts (freelance, arms-length); The Reclaimed",
+  "affiliation": "Independent; informal information trade network with two other the Gray Zone brokers; occasional Axiom corporate salvage contracts (freelance, arms-length); The Reclaimed",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -157,7 +157,7 @@
     "Opportunist": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -171,7 +171,6 @@
   "registered_firearms": [],
   "related_entities": [
     "Lockhaven South",
-    "The Shelf",
     "Tessera Corponation",
     "Blackmarket",
     "Kang-Petrov Arms KPM-15R 'Reclaim'",
@@ -180,7 +179,7 @@
     "The Pale Mile",
     "Gold"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Dominant Middle Eastern ancestry (38.7%) forms the foundation, woven through with significant Southeast Asian (14.9%), East Asian (14.6%), and Central Asian (12.2%) heritage, tempered by Northern European (10.4%) and Hispanic/Latin American (9.2%) components — a truly global genetic mosaic creating subtle complexity across facial structure, skin tone, and feature blending",
     "height_cm": 178,

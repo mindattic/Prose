@@ -16,10 +16,10 @@
   ],
   "specifications": "caliber: 20mm acoustic\ncapacity: 1 round\nacoustic output: 160 dB at 1 meter\naudible range: 3 kilometers\nactivation altitude: 50 meters (adjustable to ground-level)\nweight: 0.2 kg\nlength: 140mm",
   "tactical_use": "Emergency signaling and improvised area denial. Ground-level detonation creates a disorienting blast that buys 5-10 seconds of confusion. Multiple rounds fired in sequence can create sustained acoustic disruption. Not designed for combat but frequently used in it.",
-  "cultural_context": "The Screamer is the Shelf's cheapest force multiplier. At Φ8 per round, even the poorest residents can afford a handful. Block defense groups stockpile them as early-warning systems, firing Screamers when hostile groups enter their territory. The wailing sound has become the Shelf's air-raid siren — when you hear it, something bad is coming.",
+  "cultural_context": "The Screamer is the Gray Zone's cheapest force multiplier. At Φ8 per round, even the poorest residents can afford a handful. Block defense groups stockpile them as early-warning systems, firing Screamers when hostile groups enter their territory. The wailing sound has become the Gray Zone's air-raid siren — when you hear it, something bad is coming.",
   "known_users": [
     "Civilian self-defense",
-    "Shelf block defense groups",
+    "the Gray Zone block defense groups",
     "Night-shift workers in dangerous districts",
     "Runners and couriers as emergency escape tools"
   ],
@@ -38,7 +38,6 @@
     "personal",
     "ringo",
     "safety",
-    "shelf",
     "tier 1",
     "non_lethal"
   ],
@@ -52,8 +51,7 @@
     "Street Custom 'Choir Boy' Ultrasonic Emitter",
     "TESSERA PG-2 'Signature'",
     "Tessera Industries Data Spike DS-1 'Upload'",
-    "The Riveters' Round",
-    "The Shelf"
+    "The Riveters' Round"
   ],
   "physical_description": {
     "visual_profile": "A sleek, compact flare gun with a futuristic signal-device aesthetic — part personal safety equipment, part improvised weapon. The Screamer has the silhouette of a minimalist handheld launcher: cylindrical breech with a tapered, slightly flared muzzle. Its form factor suggests civilian origin rather than military hardening, yet the engineering is precise and purposeful.",

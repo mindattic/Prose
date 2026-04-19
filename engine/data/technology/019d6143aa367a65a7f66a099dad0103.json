@@ -1,13 +1,14 @@
 {
   "id": "019d6143aa367a65a7f66a099dad0103",
+  "rating": 70,
   "name": "Axiom Systems Emotion Recognition and Analysis Network",
   "brand_name": "Axiom",
   "product_name": "Axiom Systems Emotion Recognition and Analysis Network",
   "type": "technology",
   "aliases": [],
   "subcategory": "surveillance",
-  "description": "A surveillance system that analyzes facial micro-expressions, voice tonality, body language, biometric stress indicators, and neural interface emotional metadata to determine the emotional state of observed individuals in real-time. ERAN processes feeds from cameras, microphones, and biometric sensors to generate an emotional profile for every person in its coverage area, flagging anomalous emotional states — concealed hostility, deceptive behavior, unusual stress, or emotionally incongruent presentation — for human review. The system claims 89% accuracy for basic emotional states and 71% accuracy for deception detection.",
-  "tier_availability": "Tier 3+",
+  "description": "A surveillance system that analyzes facial micro-expressions, voice tonality, body language, biometric stress indicators, and neural interface emotional metadata to determine the emotional state of observed individuals in real-time. ERAN processes feeds from cameras, microphones, and biometric sensors to generate an emotional profile for every person in its coverage area, flagging anomalous emotional states \u2014 concealed hostility, deceptive behavior, unusual stress, or emotionally incongruent presentation \u2014 for human review. The system claims 89% accuracy for basic emotional states and 71% accuracy for deception detection.",
+  "tier_availability": "Tier 3\u002B",
   "developers": [
     "AXIOM SYSTEMS",
     "STERLING-NAKAMURA"
@@ -23,10 +24,10 @@
     "Hostile intent identification",
     "Emotional anomaly flagging"
   ],
-  "social_impact": "ERAN has extended surveillance from actions to emotions — it is no longer sufficient to control your behavior in monitored spaces; you must also control your feelings, or at least your physiological expression of them. The system has created a performative emotional layer in public life where people in ERAN-monitored zones consciously manage their facial expressions, voice patterns, and body language. This emotional self-censorship has measurable psychological effects, and the zones where ERAN operates have higher rates of anxiety disorders — ironically, the emotional surveillance creates the emotional anomalies it is designed to detect.",
+  "social_impact": "ERAN has extended surveillance from actions to emotions \u2014 it is no longer sufficient to control your behavior in monitored spaces; you must also control your feelings, or at least your physiological expression of them. The system has created a performative emotional layer in public life where people in ERAN-monitored zones consciously manage their facial expressions, voice patterns, and body language. This emotional self-censorship has measurable psychological effects, and the zones where ERAN operates have higher rates of anxiety disorders \u2014 ironically, the emotional surveillance creates the emotional anomalies it is designed to detect.",
   "story_hooks": [
-    "ERAN has flagged a cluster of individuals in a Tier 3 commercial district who are all displaying identical emotional patterns — not similar, identical, as if their emotional responses are synchronized or externally driven.",
-    "A player character needs to move through an ERAN-monitored zone while concealing hostile intent — they must either defeat the emotional analysis through training, or find a way to spoof their biometric emotional indicators."
+    "ERAN has flagged a cluster of individuals in a Tier 3 commercial district who are all displaying identical emotional patterns \u2014 not similar, identical, as if their emotional responses are synchronized or externally driven.",
+    "A player character needs to move through an ERAN-monitored zone while concealing hostile intent \u2014 they must either defeat the emotional analysis through training, or find a way to spoof their biometric emotional indicators."
   ],
   "tags": [
     "surveillance",
@@ -38,8 +39,6 @@
     "control",
     "tier 3"
   ],
-  "parent_corponation": "",
-  "related_entities": [
-    "Street Custom 'Four Horsemen' Pipe Pepperbox"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

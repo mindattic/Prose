@@ -1,21 +1,22 @@
 {
   "id": "019d6143ab2d7effa5968120cff27b09",
-  "name": "Helical Vortex Penetrator HVP-4 'Corkscrew'",
+  "rating": 30,
+  "name": "Helical Vortex Penetrator HVP-4 \u0027Corkscrew\u0027",
   "type": "weapon",
   "aliases": [],
   "category": "firearm",
-  "description": "The HVP-4 fires a magnetically stabilized tungsten-ceramic projectile wrapped in a rotating electromagnetic sheath that induces a tight helical spin at velocities exceeding 4,200 meters per second. Unlike conventional rifling, the spin is not imparted by barrel grooves but by a series of phased electromagnetic coils along the accelerator rail that fire in precise sequence, allowing the rotation rate to be tuned dynamically via a thumb-wheel adjuster on the receiver. At maximum spin, the projectile generates a secondary vacuum vortex behind its path capable of destabilizing soft tissue and lightweight armor panels through torsional shear stress alone.\n\nWhat distinguishes the Corkscrew from conventional railguns is its Torsional Cavity Induction system — a secondary coil near the muzzle imparts a brief counter-rotating field to the projectile's outer ceramic sleeve just before exit. This causes the sleeve to fracture in a controlled spiral pattern mid-flight, releasing the denser tungsten penetrator core with an enhanced rotational wobble that defeats layered composite armor by exploiting the angular gaps between laminate sheets. The result is a weapon that transitions from a clean penetrator at close range to a tumbling, spiraling wound-maker at extended distances.\n\nThe HVP-4 is a long, ungainly rifle with a pronounced coil housing that runs the length of the barrel, giving it a corrugated, industrial appearance. It runs hot — sustained fire without the integrated coolant sleeve risks coil burnout — but in the hands of a trained operator it is regarded as one of the most mechanically elegant anti-materiel solutions available outside of military procurement channels.",
+  "description": "The HVP-4 fires a magnetically stabilized tungsten-ceramic projectile wrapped in a rotating electromagnetic sheath that induces a tight helical spin at velocities exceeding 4,200 meters per second. Unlike conventional rifling, the spin is not imparted by barrel grooves but by a series of phased electromagnetic coils along the accelerator rail that fire in precise sequence, allowing the rotation rate to be tuned dynamically via a thumb-wheel adjuster on the receiver. At maximum spin, the projectile generates a secondary vacuum vortex behind its path capable of destabilizing soft tissue and lightweight armor panels through torsional shear stress alone.\n\nWhat distinguishes the Corkscrew from conventional railguns is its Torsional Cavity Induction system \u2014 a secondary coil near the muzzle imparts a brief counter-rotating field to the projectile\u0027s outer ceramic sleeve just before exit. This causes the sleeve to fracture in a controlled spiral pattern mid-flight, releasing the denser tungsten penetrator core with an enhanced rotational wobble that defeats layered composite armor by exploiting the angular gaps between laminate sheets. The result is a weapon that transitions from a clean penetrator at close range to a tumbling, spiraling wound-maker at extended distances.\n\nThe HVP-4 is a long, ungainly rifle with a pronounced coil housing that runs the length of the barrel, giving it a corrugated, industrial appearance. It runs hot \u2014 sustained fire without the integrated coolant sleeve risks coil burnout \u2014 but in the hands of a trained operator it is regarded as one of the most mechanically elegant anti-materiel solutions available outside of military procurement channels.",
   "manufacturer": "Iron Point Ammunition",
-  "tier_availability": "Tier 4+",
-  "legality": "Restricted — Anti-materiel classification, requires ADS-issued operator license",
+  "tier_availability": "Tier 4\u002B",
+  "legality": "Restricted \u2014 Anti-materiel classification, requires ADS-issued operator license",
   "base_technologies": [
     "Linear magnetic acceleration",
     "Torsional electromagnetic induction",
     "Phased coil sequencing"
   ],
-  "specifications": "projectile: Tungsten-ceramic composite, 12.7mm helical-sleeve penetrator\nmuzzle velocity: 4,200 m/s at maximum coil output\neffective range: 950m penetrator mode / 400m tumble-induction mode\ncoil stages: 14\npower source: Dual ADS-Cell Type-7 capacitor banks\nweight: 6.8 kg unloaded\nmagazine: 12-round ceramic-sleeve cassette\nheat threshold: 8 rounds rapid-fire before mandatory coolant purge\nspin rate range: 12,000–220,000 RPM (adjustable)\nintegrated systems: Coolant sleeve, coil-health indicator, spin-rate digital display",
-  "tactical_use": "Operators typically deploy the HVP-4 in overwatch roles, using penetrator mode against hardened targets — vehicle plating, reinforced doors, light drones — and switching to tumble mode when engaging personnel in soft armor at mid-range. The spin-rate adjuster allows experienced shooters to dial specific armor-defeat profiles on the fly. Corporate security details have documented its use in hostage-denial scenarios where conventional ammunition would risk over-penetration through walls. The weapon's weight and heat limitations mean it is rarely carried as a primary arm; it is most commonly found slung across the back of a dedicated heavy-support operator who transitions to a sidearm for close-quarters work.",
-  "cultural_context": "The Corkscrew has developed a reputation as a craftsman's weapon — complex, demanding, and deeply satisfying to those who master it. In GLMZ's licensed arms culture, owning an HVP-4 signals technical literacy and financial investment rather than simple aggression. Workshop-district gunsmiths treat it with near-reverence, and the subculture of Corkscrew tuners — operators who swap coil configurations and ceramic sleeve compounds to optimize specific defeat profiles — has produced a secondary market for custom components that rivals the primary weapon in value. It is also associated with Arcturus's mercenary contractor network, and spotting the corrugated barrel on a stranger is widely understood as a signal that the individual is a professional rather than a street-level threat.",
+  "specifications": "projectile: Tungsten-ceramic composite, 12.7mm helical-sleeve penetrator\nmuzzle velocity: 4,200 m/s at maximum coil output\neffective range: 950m penetrator mode / 400m tumble-induction mode\ncoil stages: 14\npower source: Dual ADS-Cell Type-7 capacitor banks\nweight: 6.8 kg unloaded\nmagazine: 12-round ceramic-sleeve cassette\nheat threshold: 8 rounds rapid-fire before mandatory coolant purge\nspin rate range: 12,000\u2013220,000 RPM (adjustable)\nintegrated systems: Coolant sleeve, coil-health indicator, spin-rate digital display",
+  "tactical_use": "Operators typically deploy the HVP-4 in overwatch roles, using penetrator mode against hardened targets \u2014 vehicle plating, reinforced doors, light drones \u2014 and switching to tumble mode when engaging personnel in soft armor at mid-range. The spin-rate adjuster allows experienced shooters to dial specific armor-defeat profiles on the fly. Corporate security details have documented its use in hostage-denial scenarios where conventional ammunition would risk over-penetration through walls. The weapon\u0027s weight and heat limitations mean it is rarely carried as a primary arm; it is most commonly found slung across the back of a dedicated heavy-support operator who transitions to a sidearm for close-quarters work.",
+  "cultural_context": "The Corkscrew has developed a reputation as a craftsman\u0027s weapon \u2014 complex, demanding, and deeply satisfying to those who master it. In GLMZ\u0027s licensed arms culture, owning an HVP-4 signals technical literacy and financial investment rather than simple aggression. Workshop-district gunsmiths treat it with near-reverence, and the subculture of Corkscrew tuners \u2014 operators who swap coil configurations and ceramic sleeve compounds to optimize specific defeat profiles \u2014 has produced a secondary market for custom components that rivals the primary weapon in value. It is also associated with Arcturus\u0027s mercenary contractor network, and spotting the corrugated barrel on a stranger is widely understood as a signal that the individual is a professional rather than a street-level threat.",
   "known_users": [
     "Arcturus licensed contractors",
     "Corporate anti-materiel specialists",
@@ -24,10 +25,10 @@
     "GLMZ enforcement units (restricted pool)"
   ],
   "story_hooks": [
-    "A Corkscrew configured with a non-standard ceramic sleeve compound is recovered at a crime scene — the compound traces back to a LAZARUS PHARMACEUTICALS research lab with no documented weapons program.",
-    "An Arcturus operator license is found to have been issued posthumously, meaning someone is legally carrying an HVP-4 under a dead person's credentials.",
-    "A workshop-district tuner claims to have achieved a coil configuration that allows the HVP-4 to defeat the new-generation IRONCLAD AGRISYSTEMS harvester-armor plating — and multiple factions want the formula before it reaches open market.",
-    "The spin-rate display on a recovered HVP-4 has been modified to encode encrypted messages visible only at a specific RPM readout — someone is using the weapon as a dead-drop communication device."
+    "A Corkscrew configured with a non-standard ceramic sleeve compound is recovered at a crime scene \u2014 the compound traces back to a LAZARUS PHARMACEUTICALS research lab with no documented weapons program.",
+    "An Arcturus operator license is found to have been issued posthumously, meaning someone is legally carrying an HVP-4 under a dead person\u0027s credentials.",
+    "A workshop-district tuner claims to have achieved a coil configuration that allows the HVP-4 to defeat the new-generation IRONCLAD AGRISYSTEMS harvester-armor plating \u2014 and multiple factions want the formula before it reaches open market.",
+    "The spin-rate display on a recovered HVP-4 has been modified to encode encrypted messages visible only at a specific RPM readout \u2014 someone is using the weapon as a dead-drop communication device."
   ],
   "ammunition_type": [
     "12.7mm Helical-Sleeve Penetrator HSP-127",
@@ -55,49 +56,50 @@
     "tier 4",
     "lethal"
   ],
+  "image_prompt": "Product photograph of the Helical Vortex Penetrator HVP-4 \u0027Corkscrew\u0027 anti-materiel rifle laid across a dark brushed-steel surface. The weapon is angled to showcase the full corrugated coil housing running the barrel length, with dramatic side-lighting revealing the segmented texture and thermal stress marks. The muzzle compensator points toward frame right. A gloved hand in dark tactical polymer grips the receiver, fingers positioned near the spin-rate adjustment wheel. The digital spin-rate display glows pale cyan, reading \u0027145,000 RPM\u0027. The coil-health indicator strip shows amber coloration from recent sustained fire. Moody dark background with industrial concrete visible. Cinematic lighting emphasizes the weapon\u0027s industrial brutality and mechanical complexity. Neo-noir military aesthetic. 2226 GLMZ manufacturing quality. --ar 3:2 --v 6",
+  "dalle3_prompt": "",
   "parent_corponation": "Arcturus Defense Solutions",
   "related_entities": [
     "Arcturus Defense Solutions",
     "Breck Tannen",
     "CHROMEWORKS FlexSheath Graphene Spinal Wrap",
-    "Endocrine Cascade Volatilization Lance ECVL-5 'Burnout'",
+    "Endocrine Cascade Volatilization Lance ECVL-5 \u0027Burnout\u0027",
     "GLMZ",
-    "Helix Cortex Laminate — 'The Second Skin'",
+    "Helix Cortex Laminate \u2014 \u0027The Second Skin\u0027",
     "Ihaia Nystrom-Keita",
-    "Iowan Behemoth — 'Ironclad'",
+    "Iowan Behemoth \u2014 \u0027Ironclad\u0027",
     "Ironclad Agrisystems",
     "Kadiatou Bergstrom-Konate",
-    "Lazarus Pharmaceutical Emetix-9 'Purge'",
+    "Lazarus Pharmaceutical Emetix-9 \u0027Purge\u0027",
     "Lazarus Pharmaceuticals",
-    "Ringo AX-12 'Harvester'",
+    "Ringo AX-12 \u0027Harvester\u0027",
     "Sinan Vasquez-Chatterjee",
-    "Subdermal Shear Projector SSP-1 'Faultline'",
+    "Subdermal Shear Projector SSP-1 \u0027Faultline\u0027",
     "The Pure Hand",
-    "Vantablack PA-1 'Pacifier'",
+    "Vantablack PA-1 \u0027Pacifier\u0027",
     "Yuki Nwosu-Petrenko"
   ],
   "physical_description": {
-    "visual_profile": "A long, imposing anti-materiel rifle with a distinctly industrial aesthetic. The dominant feature is a heavily corrugated coil housing that runs nearly the full length of the barrel, giving the weapon a ribbed, almost segmented appearance — like a mechanical serpent or industrial heat exchanger. The overall silhouette is angular and purposeful, with minimal ergonomic flourish. It reads as brutally functional rather than elegant.",
+    "visual_profile": "A long, imposing anti-materiel rifle with a distinctly industrial aesthetic. The dominant feature is a heavily corrugated coil housing that runs nearly the full length of the barrel, giving the weapon a ribbed, almost segmented appearance \u2014 like a mechanical serpent or industrial heat exchanger. The overall silhouette is angular and purposeful, with minimal ergonomic flourish. It reads as brutally functional rather than elegant.",
     "dimensions": "Overall length: 142 cm | Barrel with coil housing: 96 cm | Receiver width: 8 cm | Magazine well depth: 6 cm",
     "weight_description": "Hefty and front-heavy. The 6.8 kg mass is concentrated forward in the coil array, creating a pronounced muzzle-down bias that demands shoulder support and proper bracing. It feels like shouldering a steel pipe loaded with precision machinery.",
     "primary_material": "Aluminum-titanium alloy chassis with ductile-iron coil housings. The capacitor banks are encased in reinforced polymer. Barrel insert is hardened steel with embedded electromagnetic coils.",
-    "finish": "Matte gunmetal gray with industrial charcoal accents. The coil housing bears a fine crosshatch texture from manufacturing — not polished away, left as functional wear. Capacitor casing is deep black polymer with a slight sheen from thermal cycling.",
+    "finish": "Matte gunmetal gray with industrial charcoal accents. The coil housing bears a fine crosshatch texture from manufacturing \u2014 not polished away, left as functional wear. Capacitor casing is deep black polymer with a slight sheen from thermal cycling.",
     "color_scheme": "Charcoal gray (primary) with matte black accents. Subtle steel gray highlights on coil edges and the receiver rail. The spin-rate adjustment wheel is anodized in pale gunmetal.",
     "grip_texture": "Textured polymer grip with deep knurling for gloved or augmented hands. The receiver rail has a rubberized microdot pattern. The adjustment wheel on the receiver is knurled steel with minimal grip resistance.",
     "distinctive_features": [
       "Corrugated coil housing with 14 visible segmented sections running the barrel length",
       "Digital spin-rate display (small LED array) mounted on the right receiver side in bright cyan numerals",
-      "Coil-health indicator strip running along the top of the housing — changes from green to amber to red under heat stress",
+      "Coil-health indicator strip running along the top of the housing \u2014 changes from green to amber to red under heat stress",
       "Integrated coolant sleeve jacket with visible thermal cycling stress marks and faint heat-discoloration rings",
       "Thumb-wheel spin-rate adjuster on the receiver (pale gunmetal, deeply knurled)",
-      "Dual capacitor bank housings visible beneath the receiver — black polymer with faint power-indicator LEDs",
-      "Muzzle compensator designed for torsional bleed-off — multi-angled vanes with slight carbon scoring",
+      "Dual capacitor bank housings visible beneath the receiver \u2014 black polymer with faint power-indicator LEDs",
+      "Muzzle compensator designed for torsional bleed-off \u2014 multi-angled vanes with slight carbon scoring",
       "Ceramic-sleeve cassette magazine dock (12 rounds) with reinforced polymer feed guide",
       "Charging handle positioned far rearward, minimalist steel loop design"
     ],
-    "manufacturer_markings": "Iron Point Ammunition logo stamped in serif font on the left receiver side above the magazine well. Serial designation 'HVP-4' etched in sharp sans-serif below. 'CORKSCREW' designation stamped smaller on the coil housing mid-barrel. ADS certification stamp on the capacitor bank cover — a small circular embossed mark.",
-    "condition_typical": "Battle-worn and thermally stressed. The coil housing shows faint burn marks and minor pitting where coolant has boiled away. The muzzle compensator bears carbon scoring and micro-chipping. The grip shows wear patterns from gloved and augmented hands. The digital display is often dimmed or flickering from field use. Despite abuse, the weapon maintains mechanical integrity — it is built to sustain punishment."
+    "manufacturer_markings": "Iron Point Ammunition logo stamped in serif font on the left receiver side above the magazine well. Serial designation \u0027HVP-4\u0027 etched in sharp sans-serif below. \u0027CORKSCREW\u0027 designation stamped smaller on the coil housing mid-barrel. ADS certification stamp on the capacitor bank cover \u2014 a small circular embossed mark.",
+    "condition_typical": "Battle-worn and thermally stressed. The coil housing shows faint burn marks and minor pitting where coolant has boiled away. The muzzle compensator bears carbon scoring and micro-chipping. The grip shows wear patterns from gloved and augmented hands. The digital display is often dimmed or flickering from field use. Despite abuse, the weapon maintains mechanical integrity \u2014 it is built to sustain punishment."
   },
-  "image_prompt": "Product photograph of the Helical Vortex Penetrator HVP-4 'Corkscrew' anti-materiel rifle laid across a dark brushed-steel surface. The weapon is angled to showcase the full corrugated coil housing running the barrel length, with dramatic side-lighting revealing the segmented texture and thermal stress marks. The muzzle compensator points toward frame right. A gloved hand in dark tactical polymer grips the receiver, fingers positioned near the spin-rate adjustment wheel. The digital spin-rate display glows pale cyan, reading '145,000 RPM'. The coil-health indicator strip shows amber coloration from recent sustained fire. Moody dark background with industrial concrete visible. Cinematic lighting emphasizes the weapon's industrial brutality and mechanical complexity. Neo-noir military aesthetic. 2226 GLMZ manufacturing quality. --ar 3:2 --v 6",
-  "visual_prompt": "Product photograph of the Helical Vortex Penetrator HVP-4 'Corkscrew' anti-materiel rifle laid across a dark brushed-steel surface. The weapon is angled to showcase the full corrugated coil housing running the barrel length, with dramatic side-lighting revealing the segmented texture and thermal stress marks. The muzzle compensator points toward frame right. A gloved hand in dark tactical polymer grips the receiver, fingers positioned near the spin-rate adjustment wheel. The digital spin-rate display glows pale cyan, reading '145,000 RPM'. The coil-health indicator strip shows amber coloration from recent sustained fire. Moody dark background with industrial concrete visible. Cinematic lighting emphasizes the weapon's industrial brutality and mechanical complexity. Neo-noir military aesthetic. 2226 GLMZ manufacturing quality. --ar 3:2 --v 6"
+  "visual_prompt": "Product photograph of the Helical Vortex Penetrator HVP-4 \u0027Corkscrew\u0027 anti-materiel rifle laid across a dark brushed-steel surface. The weapon is angled to showcase the full corrugated coil housing running the barrel length, with dramatic side-lighting revealing the segmented texture and thermal stress marks. The muzzle compensator points toward frame right. A gloved hand in dark tactical polymer grips the receiver, fingers positioned near the spin-rate adjustment wheel. The digital spin-rate display glows pale cyan, reading \u0027145,000 RPM\u0027. The coil-health indicator strip shows amber coloration from recent sustained fire. Moody dark background with industrial concrete visible. Cinematic lighting emphasizes the weapon\u0027s industrial brutality and mechanical complexity. Neo-noir military aesthetic. 2226 GLMZ manufacturing quality. --ar 3:2 --v 6"
 }

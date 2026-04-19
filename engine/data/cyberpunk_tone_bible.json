@@ -8,12 +8,15 @@
     "Moral choices never have clean answers. Every decision costs something. The right thing gets someone hurt. The wrong thing gets someone fed. Characters who think in black and white are naive. Characters who think in gray are surviving.",
     "Beauty exists in the cracks. Neon reflecting in a puddle of something you don't want to identify. A mother singing to a child in a building that's falling apart. A street vendor's food that tastes like home in a city that isn't anyone's home. The world is ugly. The moments are sometimes gorgeous.",
     "The gap between tiers is the central horror. The medicine exists. The food exists. The housing exists. The Quanta doesn't. Every time a Tier 1 character dies of something treatable, the story should feel that obscenity without stating it.",
-    "Rain is not aesthetic. It is failure — the atmospheric processors redirecting weather from corporate zones to the Shelf. When it rains in the Shelf, someone in the Spires has sunshine. Every raindrop is a political statement.",
+    "Rain is not aesthetic. It is failure — the atmospheric processors redirecting weather from corporate zones to the Gray Zone. When it rains in the Gray Zone, someone in the Spires has sunshine. Every raindrop is a political statement.",
     "Augmentation is identity. Chrome changes who you are, not just what you can do. A person with a prosthetic arm has a different relationship with violence than a person with flesh arms. Augments carry history — where you got them, who installed them, what you lost to need them.",
     "Information is currency, weapon, and shield simultaneously. What you know determines whether you live. What others know about you determines whether you're free. Secrets are survival. Transparency is vulnerability.",
     "The street has its own honor. Not corporate ethics. Not law. A code that says: you pay your debts, you don't betray your crew, you don't hurt kids, you don't rat. The code is broken constantly. Breaking it has consequences that law enforcement never delivers but the street always does.",
-    "E.L.F.s and synthetic life are REAL — not metaphor, not decoration. Characters pray to their augments because sometimes something answers. The digital world is alive. Treat it with the same gravity as the biological world.",
-    "Silence is a weapon. What characters don't say matters more than what they do. A pause in dialogue. A question left unanswered. The thing everyone in the room knows but nobody names. Neo-noir dialogue is iceberg writing — 10% visible, 90% underneath."
+    "E.L.F.s and synthetic life are REAL — not metaphor, not decoration. Characters pray to their augments because sometimes something answers. The digital world is alive. Treat it with the same gravity as the biological world. NOTE: Iowan Behemoths are NOT synthetic life — they are autonomous machines. Strange, persistent, massive, but not conscious. The distinction matters. Do not blur it.",
+    "Silence is a weapon. What characters don't say matters more than what they do. A pause in dialogue. A question left unanswered. The thing everyone in the room knows but nobody names. Neo-noir dialogue is iceberg writing — 10% visible, 90% underneath.",
+    "The Gray Zone is a DMZ that experiences the war. Corponations never share borders — there is always a Gray Zone buffer between them. This was a rational calculation: adjacent territories would produce constant friction. The Gray Zone absorbs it. The irony that defines the world: the space designed to prevent war is where all the violence lives. No corponation police. No city police. Nothing. When a story is set in the Gray Zone, this absence is the air the characters breathe.",
+    "The Pulse is infrastructure-as-civilization. The global magnetic vacuum tube network at Mach 6 connects the GLMZ to Rotterdam in 43 minutes, Lagos in 51, Osaka in 97. The thrumline — the 8Hz ground vibration felt in Gray Zone buildings above active Pulse corridors — is the physical sensation of being excluded from global connectivity while being literally built on top of it. Gray Zone residents feel the world moving under their floors.",
+    "The coasts failed and the GLMZ won. NYC is navigable by boat at mean high tide. LA has 400,000 people where 13 million lived. Seattle is quiet. The GLMZ absorbed 22 million migrants and became the center of Western Civilization by default, not triumph. Characters from the Remnants or the coasts carry the weight of that history. GLMZ characters who have never left carry the weight of not knowing it."
   ],
   "sensory_palette": {
     "sights": [
@@ -64,7 +67,7 @@
     ]
   },
   "dialogue_rules": [
-    "No monologues. Shelf people speak in short bursts. Corporate people speak in longer, more structured sentences — but never speeches.",
+    "No monologues. Gray Zone people speak in short bursts. Corporate people speak in longer, more structured sentences — but never speeches.",
     "Slang should feel natural, not displayed. A character says 'Q-dry' because that's the word for broke, not because the author wants to show off vocabulary.",
     "Every character has a verbal signature — something they always do. A word they overuse. A sentence structure they default to. A sound they make when thinking. This is NOT a tic for comedy. It is identity.",
     "Subtext over text. Characters rarely say what they mean. They say something adjacent and trust the other person to read the gap. 'Nice night' can mean 'I'm armed and I saw you following me.'",
@@ -105,7 +108,23 @@
     "survival",
     "shelter",
     "food",
-    "shelf",
-    "spire"
+    "spire",
+    "gray-zone",
+    "dmz",
+    "arcturus",
+    "behemoth",
+    "pulse",
+    "thrumline",
+    "spine",
+    "remnants",
+    "old-world",
+    "migration",
+    "border",
+    "corponation",
+    "tier",
+    "no-police",
+    "glmz",
+    "glooms",
+    "meridian-88"
   ]
 }

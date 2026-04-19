@@ -1,0 +1,40 @@
+{
+  "id": "b195b224aec2f040afe9c7400688b8c3",
+  "name": "Ringo Applied Sciences HarmonicShield Environmental Sound System",
+  "brand_name": "Ringo",
+  "product_name": "HarmonicShield ESS-7",
+  "type": "technology",
+  "aliases": [],
+  "subcategory": "acoustics",
+  "description": "The HarmonicShield ESS-7 is an environmental acoustic management system that creates zones of precisely controlled sound within urban spaces -- capable of generating areas of complete silence, masking ambient noise, projecting localized soundscapes, and shaping acoustic environments with a precision that makes traditional sound insulation obsolete. The system uses distributed arrays of micro-speakers and microphones to sample, process, and counter-project sound waves in real time, creating destructive interference patterns that cancel unwanted noise while allowing desired sounds to pass through unaffected.\n\nRingo markets the HarmonicShield as a quality-of-life technology for upper-tier residential and commercial spaces. A HarmonicShield installation can create a perfectly silent bedroom adjacent to an active nightclub, a private conversation zone in a crowded public space, or an entire office floor where each workstation exists in its own acoustic bubble. The technology has become standard in Tier 4 and Tier 5 construction, where the expectation of acoustic perfection is absolute -- the wealthy do not tolerate unwanted sound, and the HarmonicShield ensures they never have to.\n\nThe HarmonicShield's unintended consequence has been the acoustic segregation of GLMZ. Upper-tier districts wrapped in HarmonicShield installations exist in curated soundscapes where the noise of the city -- the industrial grinding, the crowd noise, the sirens, the construction -- is simply absent. Lower-tier districts, by contrast, absorb all the acoustic pollution that the upper tiers reject, plus the displaced noise from HarmonicShield installations that must push rejected sound somewhere. the Gray Zone is measurably louder than it was before HarmonicShield deployment, and the hearing damage rates among lower-tier residents have increased correspondingly. Sound, like everything else in GLMZ, flows downhill.",
+  "tier_availability": "Tier 4+ (residential); Tier 3+ (commercial)",
+  "developers": [
+    "RINGO APPLIED SCIENCES"
+  ],
+  "base_technologies": [
+    "Active noise cancellation at scale",
+    "Distributed micro-speaker arrays",
+    "Real-time acoustic environment modeling"
+  ],
+  "enables": [
+    "Zone-based acoustic environment control",
+    "Complete noise elimination in defined spaces",
+    "Private conversation zones in public areas",
+    "Acoustic segregation of urban districts",
+    "Localized soundscape projection"
+  ],
+  "social_impact": "The HarmonicShield has made silence a luxury commodity in GLMZ. The upper tiers exist in acoustic perfection while the lower tiers drown in the noise the wealthy refuse to hear. This acoustic inequality tracks economic inequality precisely -- the poorest neighborhoods are the loudest, and the loudest neighborhoods produce the most hearing damage, and hearing damage reduces employability, creating a feedback loop where noise itself becomes a mechanism of economic oppression. Ringo's marketing materials do not mention this. Ringo's engineering documents acknowledge it as 'acoustic displacement' and classify it as an externality.",
+  "story_hooks": [
+    "A HarmonicShield installation in a Tier 4 residential tower has been hacked to do the opposite of its intended function -- amplifying and focusing all ambient sound into the residents' apartments at dangerous volumes. The attack is attributed to a the Gray Zone activist group protesting acoustic displacement, but the technical sophistication suggests corporate involvement.",
+    "A Ringo engineer has discovered that the displaced noise from HarmonicShield installations, when analyzed as an aggregate signal, contains patterns that should not exist -- as if the combined acoustic output of the city is carrying an encoded message that no one intentionally placed there."
+  ],
+  "tags": [
+    "technology",
+    "acoustics",
+    "environmental",
+    "ringo",
+    "noise-control",
+    "quality-of-life",
+    "inequality"
+  ]
+}

@@ -1,5 +1,6 @@
 {
   "id": "019d6143a5ee74a8914f20f27a5ea6e9",
+  "rating": 70,
   "type": "character",
   "name": "Briar Tofauti-Adu",
   "aliases": [],
@@ -9,8 +10,8 @@
   "role": "High-speed vehicle operations specialist — wheelman",
   "age": 33,
   "status": "active",
-  "location": "The Shelf — lower district tenements near the old lakeshore, near Ashland and Division",
-  "description": "Briar Tofauti-Adu is slight and easy to overlook, which is exactly the point. At 33, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cranial bomb defuser — specialized implant that detects and neutralizes cortex b — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a wheelman out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Briar Tofauti-Adu agrees on two things: he is worth the fee, and he is terrible company at dinner.",
+  "location": "the Gray Zone — lower district tenements near the old lakeshore, near Ashland and Division",
+  "description": "Briar Tofauti-Adu is slight and easy to overlook, which is exactly the point. At 33, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cranial bomb defuser — specialized implant that detects and neutralizes cortex b — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a wheelman out of the Gray Zone, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Briar Tofauti-Adu agrees on two things: he is worth the fee, and he is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.35,
@@ -53,7 +54,11 @@
       "\"Get in, sit down, hold on. Questions can wait until we're not being shot at.\"",
       "\"This vehicle has been modified for speed, armor, and my personal comfort. Two of those help you.\"",
       "\"I know every street in this district the way you know your own face.\""
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
@@ -259,7 +264,7 @@
     "Risk Taker": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -267,18 +272,11 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Widowmaker' Rigged Power Tool",
-    "Street-Custom Loaded Pipe 'Bell Ringer'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Nearfield",
-    "The Shelf",
-    "Slagworks Industrial",
-    "GLMZ"
-  ],
-  "district": "The Shelf",
   "physical_description": {
     "heritage": "Central Asian dominant (58.1%) with significant Pacific Islander (27.6%) and South Asian (14.3%) heritage. The genetic blend creates striking phenotypic complexity: warm golden-bronze undertones from Central Asian steppe ancestry layered with sun-kissed warmth from Pacific Islander heritage, refined by South Asian facial geometry. The combination produces a warm, weathered appearance with pronounced cheekbones and strong jawline—a face shaped by multiple continental bloodlines that reads as both austere and vital.",
     "height_cm": 172,
@@ -301,17 +299,12 @@
     "clothing_style": "Tier 3-4 utilitarian. Matte-black reinforced jacket with integrated comms pockets, custom-fitted for concealed hardware. Underneath: gray synthetic undershirt designed for rapid cooling. Worn cargo pants in dark gray with cargo pockets reinforced for equipment — no corporate logos, no flash. Steel-toed boots with grip-soled treads, scuffed from actual use. A thin chain with a non-functional key around his neck — the only personal item, kept for reasons he won't explain."
   },
   "image_prompt": "Briar Tofauti-Adu, 172cm lean neo-noir operative with Central Asian-Pacific Islander-South Asian heritage, warm bronze-gold skin with golden undertones, pronounced high cheekbones, strong jawline, dark brown hair with gray at temples cut short at 2cm. Deep brown eyes with chrome surgical scarring around sockets. Visible chrome cranial implant circuitry at left temple in geometric patterns, subcutaneous wiring traces on neck and upper chest. Thin scar along left temple, chemical burn mark on right forearm, webbed scarring on right wrist, Cyrillic tattoo on left collarbone. Clean-shaven, military-precise grooming. Wearing matte-black reinforced jacket with integrated pockets, gray synthetic undershirt, dark gray reinforced cargo pants, steel-toed scuffed boots, thin chain with non-functional key. Economical posture, alert and composed. GLMZ Great Lakes Metropolitan Zone, sitting in dimly-lit facility with neon accent lighting, hands steady and ready, the uncanny calm of someone three steps ahead. Cinematic, gritty, utilitarian aesthetic --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Central Asian": 58.1,
     "Pacific Islander": 27.6,
     "South Asian": 14.3
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Central Asian": {
       "Turkic": {
@@ -347,6 +340,5 @@
         "Nepali": 2.2
       }
     }
-  },
-  "tier": "3"
+  }
 }

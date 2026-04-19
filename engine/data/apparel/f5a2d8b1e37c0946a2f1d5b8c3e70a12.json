@@ -3,7 +3,7 @@
   "name": "Ironveil Chrome-Scrap Street Set",
   "type": "apparel",
   "category": "outfit",
-  "description": "This outfit is where Shelf survival meets the aesthetic of the aug-yards — the salvage zones where stripped chrome and discarded cyberware get broken down for parts. The wearer has built their look around that world deliberately. A close-fitting long-sleeve shirt in dark graphite, made from a heavy thermal weave with aug-channel seams running along both arms — the channels are empty, not functional, but the shirt was built for chrome-users and found its way down to the Shelf. Over it hangs a sleeveless vest constructed from layered strips of salvaged materials: sections of conveyor belt rubber, cut canvas, pieces of what was once a ballistic panel, all stitched and riveted together into a rough asymmetric armor-vest that sits heavier on the left side. Salvaged chrome components — a single non-functional forearm housing stripped of its internals, worn as a bracer on the right arm; a defunct sensor ring worn as a thick wrist cuff on the left — accessorize without augmenting, a visual claim on a world that's financially out of reach. Straight-leg trousers in charcoal industrial denim, the right knee blown out and re-patched with black rubber, are tucked into mid-calf lace-up boots with thick composite soles, the leather upper cracked and re-treated until it's almost matte black. A close-cropped knit beanie in faded black, hand-stitched with a small geometric pattern in rust thread at the cuff, sits low over the ears.",
+  "description": "This outfit is where the Gray Zone survival meets the aesthetic of the aug-yards — the salvage zones where stripped chrome and discarded cyberware get broken down for parts. The wearer has built their look around that world deliberately. A close-fitting long-sleeve shirt in dark graphite, made from a heavy thermal weave with aug-channel seams running along both arms — the channels are empty, not functional, but the shirt was built for chrome-users and found its way down to the Gray Zone. Over it hangs a sleeveless vest constructed from layered strips of salvaged materials: sections of conveyor belt rubber, cut canvas, pieces of what was once a ballistic panel, all stitched and riveted together into a rough asymmetric armor-vest that sits heavier on the left side. Salvaged chrome components — a single non-functional forearm housing stripped of its internals, worn as a bracer on the right arm; a defunct sensor ring worn as a thick wrist cuff on the left — accessorize without augmenting, a visual claim on a world that's financially out of reach. Straight-leg trousers in charcoal industrial denim, the right knee blown out and re-patched with black rubber, are tucked into mid-calf lace-up boots with thick composite soles, the leather upper cracked and re-treated until it's almost matte black. A close-cropped knit beanie in faded black, hand-stitched with a small geometric pattern in rust thread at the cuff, sits low over the ears.",
   "tier_association": "Tier 1",
   "materials": [
     "heavy thermal weave with aug-channel seams",
@@ -23,7 +23,7 @@
   "worn_by": [
     "Aug-yard scavengers",
     "chrome-strippers",
-    "Shelf youth with aug aspirations",
+    "the Gray Zone youth with aug aspirations",
     "unlicensed cyberware brokers",
     "anyone who moves between the aug trade and the street"
   ],
@@ -34,7 +34,7 @@
   "story_hooks": [
     "One of the salvaged chrome pieces isn't as non-functional as the wearer believes — a faint signal is still broadcasting from the sensor ring, and someone is tracking it.",
     "A Tier 4 chrome-surgeon notices the aug-channel shirt and offers a deal: functional installation of salvaged chrome in exchange for a favor that sounds too easy.",
-    "The geometric pattern on the beanie is a territorial marker from a Shelf crew that no longer exists — and an older resident recognizes it, with complicated feelings."
+    "The geometric pattern on the beanie is a territorial marker from a the Gray Zone crew that no longer exists — and an older resident recognizes it, with complicated feelings."
   ],
   "tags": [
     "apparel",
@@ -52,7 +52,6 @@
   "related_entities": [
     "Ezio Kaboré-Malhotra",
     "Immaculée Dalgaard-Nwosu",
-    "The Shelf",
     "The Wire Taps",
     "Tiare Nishi-Anim",
     "Veslemøy Achebe-Tursynov"
@@ -74,8 +73,8 @@
       "Hand-stitched geometric pattern in rust thread at beanie cuff",
       "Riveted construction throughout vest with mixed material textures"
     ],
-    "tier_indicator": "Tier 5 sub-grade / ungoverned Shelf aesthetic — deliberately salvage-forward, wearing aug-yard materials as both survival and statement. No access to functional chrome, but claiming visual proximity to the augmentation world.",
-    "cultural_context": "Aug-yard scavenger or Shelf dweller. This outfit signals someone who lives in salvage zones, understands chrome disassembly, and has built identity around the materials that corpo-tier discards. It's anti-wealth display — a refusal to hide poverty, instead weaponizing it as aesthetic and knowledge. Wears the breakdown as armor.",
+    "tier_indicator": "Tier 5 sub-grade / ungoverned the Gray Zone aesthetic — deliberately salvage-forward, wearing aug-yard materials as both survival and statement. No access to functional chrome, but claiming visual proximity to the augmentation world.",
+    "cultural_context": "Aug-yard scavenger or the Gray Zone dweller. This outfit signals someone who lives in salvage zones, understands chrome disassembly, and has built identity around the materials that corpo-tier discards. It's anti-wealth display — a refusal to hide poverty, instead weaponizing it as aesthetic and knowledge. Wears the breakdown as armor.",
     "condition_typical": "Heavily worn, deliberately patched, weathered but maintained. Nothing is pristine; everything shows use. The vest looks hand-constructed (because it is); the boots show repeated re-treatment; the beanie shows hand-stitching. Worn not despite decay, but because of it — decay is the medium."
   },
   "image_prompt": "Neo-noir fashion photograph: lean figure in profile against a dark industrial backdrop, wearing a graphite thermal base layer with visible arm-channel seams beneath an asymmetric salvage-strip vest constructed from riveted rubber, canvas, and ballistic-panel fragments. Defunct chrome forearm housing visible as bracer on right arm; thick sensor-ring cuff on left wrist. Charcoal industrial denim with black-rubber patched right knee, tucked into cracked matte-black leather boots. Hand-knit beanie with rust geometric stitching detail. Moody sidelit photography emphasizing texture contrast between smooth compression fabric and rough salvage materials, chrome catching cool light. Gritty aug-yard or warehouse setting with exposed metal and shadow. Subject positioned as if mid-scavenge, emanating Tier 5 street authenticity. --ar 2:3 --v 6",

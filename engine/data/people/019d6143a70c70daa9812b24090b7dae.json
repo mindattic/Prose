@@ -9,7 +9,7 @@
   "role": "Tech scavenger / reluctant sidekick / Q-zero survivalist",
   "age": 19,
   "status": "alive",
-  "location": "The Shelf — Level 12, Unit 1207, near Wacker and State",
+  "location": "the Gray Zone — Level 12, Unit 1207, near Wacker and State",
   "description": "Mika Petrović is a controlled explosion of salvaged technology and nervous energy. They're slight — 5'6\", wiry,\nthe kind of build that comes from skipping meals when a project gets interesting. Their skin is a light\nbrown, perpetually smudged with solder flux and thermal paste, and their natural hair (what's left of\nit) is buzzed short on the right side, grown out in uneven dark curls on the left, and streaked with\na color that changes monthly depending on what dye they've scavenged. Currently: a violent, glitchy\nmagenta that's already fading to pink at the roots.\n\nThe augments are the first thing you notice. Mika Petrović's left eye is a salvaged Axiom Industries corporate\nscanner — matte black, slightly too large for the socket, with a faint amber ring that pulses when it's\nprocessing. It was designed to scan inventory in a warehouse. Mika Petrović repurposed it to read security\nsystems, identify augmentation models, and spot structural weaknesses in hardware. It also gives them\nsplitting headaches when it overclocks, which it does constantly because they pushed it past its specs.\nTheir right hand and forearm are aftermarket — a patchwork prosthetic cobbled from three different\nmanufacturer lines, matte grey with visible seams where the components don't quite match. It works\nbeautifully. It looks like a junk drawer. Their ears are studded with micro-receivers that pick up\nlocal comm frequencies, and there's a thin data-port scar behind their right ear where they hard-jack\ninto systems.\n\nFirst impression: an annoying kid who won't shut up and has too many blinking lights on their body.\nDeeper impression: a desperately clever person who has turned themselves into a Swiss Army knife because\nbeing useful is the only survival strategy they trust.",
   "psychology": {
     "facet_weights": {
@@ -45,7 +45,7 @@
     "secret": "They found their parents. Six months ago, a deep-net data scrape turned up matching biometric records\nin a NovaCorp offshore manufacturing facility in the Mindanao Economic Zone. Alive. Working. Not\nlooking for their child. Pixel has the facility's address saved in an encrypted file they open\nsometimes at 3 AM and then close without doing anything. They have not told anyone."
   },
   "speech_patterns": {
-    "vocabulary": "Dense with tech jargon, slang, neologisms. They use technical metaphors for emotional states — 'I'm overclocking,' 'my buffer's full,' 'that's a hard reboot situation.' They've invented personal slang that nobody else uses but everyone on the Shelf has learned to parse. Heavy use of rhetorical questions that they answer themselves.",
+    "vocabulary": "Dense with tech jargon, slang, neologisms. They use technical metaphors for emotional states — 'I'm overclocking,' 'my buffer's full,' 'that's a hard reboot situation.' They've invented personal slang that nobody else uses but everyone in the Gray Zone has learned to parse. Heavy use of rhetorical questions that they answer themselves.",
     "cadence": "Rapid-fire, barely pausing for breath. Sentences pile up like components on a workbench. They interrupt themselves, double back, follow tangents, and somehow arrive at the point through the scenic route. When they're scared or lying, they speed up. When they're genuinely processing something emotional, they slow down — and the sudden silence is alarming because it's so rare.",
     "verbal_tics": [],
     "example_lines": [
@@ -85,7 +85,7 @@
     "Pixel's augments failing catastrophically — the scanner eye, the arm. What happens when the machine body breaks?",
     "Someone powerful noticing Pixel's skills and trying to recruit them — the temptation of corporate stability",
     "Pixel following Kyle on a job and seeing what he actually does — the violence, the code, the reality behind the quiet neighbor",
-    "Pixel building something genuinely dangerous — accidentally or on purpose — that draws corporate attention to the Shelf",
+    "Pixel building something genuinely dangerous — accidentally or on purpose — that draws corporate attention to the Gray Zone",
     "The neural interface's 'skip' getting worse — losing seconds becoming losing minutes, then hours"
   ],
   "narrative_function": "Pixel is Kyle's mirror — same orphan origin, opposite coping strategy. Where Kyle retreated into\ndiscipline and silence, Pixel exploded outward into noise and technology. They represent the question:\nwhat would Kyle have become without Seo? Not worse, necessarily — just different. Pixel survived\nwithout a code, without a mentor, without a sword. They survived by being useful, by being fast, by\nbeing loud enough that no one could ignore them.\n\nPixel also represents the generation that inherited the Consolidation Wars without fighting them.\nThey don't have Kyle's martial trauma or Seo's guilt or Mrs. Chen's grief. They have something\narguably worse: they grew up in the aftermath and were told this was normal. Their rebellion isn't\nphilosophical — it's practical. They scavenge and hack and build because the system wasn't designed\nto include them, so they'll include themselves.\n\nThe question Pixel poses to Kyle: Can you protect someone who doesn't fight the way you do? Can\nyour code accommodate someone whose weapon is a soldering iron instead of a sword?",
@@ -202,7 +202,7 @@
       "The scanner eye or prosthetic arm failing catastrophically",
       "Kyle actually disappearing the way everyone else has",
       "Being confronted with the parents file by someone who found it",
-      "Building something genuinely dangerous that draws corporate attention to the Shelf"
+      "Building something genuinely dangerous that draws corporate attention to the Gray Zone"
     ]
   },
   "cyberware_inventory": [],
@@ -211,7 +211,7 @@
     "secondary_weapon": "",
     "armor": "",
     "vehicle": "",
-    "residence": "The Shelf — Level 12, Unit 1207",
+    "residence": "the Gray Zone — Level 12, Unit 1207",
     "clothing_style": "",
     "favorite_drink": "",
     "favorite_food": "",
@@ -228,7 +228,7 @@
     "Protector": 0.6
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -246,7 +246,6 @@
   ],
   "related_entities": [
     "Axiom Industries",
-    "The Shelf",
     "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "The Ghost Ronin",
     "TESSERA WL-6 'Stacker'",
@@ -259,7 +258,7 @@
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
     "Iron"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Eastern European dominant (62.3%) with significant East Asian (18.7%), Sub-Saharan African (12.2%), and South Asian (6.8%) ancestry. Facial structure combines Eastern European angularity—defined cheekbones and sharp jawline—with the softer eye contours of East Asian heritage. Skin tone reflects the full diaspora blend: warm golden-brown base with bronze undertones bridging African and South Asian warmth, cooled subtly by Eastern European genetics. Overall phenotype distinctly mixed-heritage, bearing visible markers of the Ubiquitous Diaspora.",
     "height_cm": 168,

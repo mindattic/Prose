@@ -56,5 +56,15 @@
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
     "Ximena Bautista-Nwosu",
     "Yannick Tofauti-Szarvásy"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z1",
+      "Z8"
+    ],
+    "primaryZone": "Z1",
+    "lakefrontAccess": false,
+    "description": "22 chartered zones globally; GLMZ presence through Zone 1 financial and commercial operations and a Zone 8 Milwaukee bioelectric research campus. The GLMZ Behavioral Cognitive Futures Market (ZCFM) — one of three major behavioral prediction exchanges alongside Tessera's TBX and Arcturus's ATPM — operates from the Zone 1 installation.",
+    "grayZoneRelationship": "Zheng-dao's behavioral futures market derives significant predictive value from Gray Zone population behavior. Data is acquired through Pellucid Systems resale agreements."
+  }
 }

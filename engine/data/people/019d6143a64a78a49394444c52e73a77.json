@@ -9,8 +9,8 @@
   "role": "Anti-corporate agitator and underground press distribution coordinator",
   "age": 19,
   "status": "active",
-  "location": "The Shelf, near Western and Division",
-  "description": "Wren Haugen is small and quick, with brown skin, large dark eyes, and hair she keeps dyed in aggressively shifting colors — currently a deep violet that fades to white at the tips. She has cat ears, soft and dark-furred, that she was born with after her mother's geneware expressed during pregnancy in ways the clinic didn't predict — they're fully functional and she's learned to keep them flat when she doesn't want to broadcast her emotions, which she is still practicing. She dresses for mobility and invisibility: nothing that snatches on a fence, nothing that can't be replaced.\n\nWren Haugen is nineteen and has been distributing underground printed materials since she was fifteen. She found the Shelf's pirate printing collective through a friend of a friend and has never left. She is fierce, impulsive, sometimes reckless, and possessed of a political analysis far beyond her years that she picked up from obsessive reading and the kind of education you get when everyone around you is fighting for something. She is also, underneath the front, genuinely scared most of the time, which is why she keeps moving.",
+  "location": "the Gray Zone, near Western and Division",
+  "description": "Wren Haugen is small and quick, with brown skin, large dark eyes, and hair she keeps dyed in aggressively shifting colors — currently a deep violet that fades to white at the tips. She has cat ears, soft and dark-furred, that she was born with after her mother's geneware expressed during pregnancy in ways the clinic didn't predict — they're fully functional and she's learned to keep them flat when she doesn't want to broadcast her emotions, which she is still practicing. She dresses for mobility and invisibility: nothing that snatches on a fence, nothing that can't be replaced.\n\nWren Haugen is nineteen and has been distributing underground printed materials since she was fifteen. She found the Gray Zone's pirate printing collective through a friend of a friend and has never left. She is fierce, impulsive, sometimes reckless, and possessed of a political analysis far beyond her years that she picked up from obsessive reading and the kind of education you get when everyone around you is fighting for something. She is also, underneath the front, genuinely scared most of the time, which is why she keeps moving.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -40,7 +40,7 @@
     "secret": "She took a print job six months ago from someone she didn't vet properly. The material turned out to be a disinformation piece designed to fracture a labor coalition — she didn't realize it until after distribution. She's told no one and has been quietly trying to trace how much damage it did."
   },
   "speech_patterns": {
-    "vocabulary": "Fast and argot-heavy, Shelf street vernacular mixed with political vocabulary she's absorbed from print; occasionally formal when she's quoting something she's read",
+    "vocabulary": "Fast and argot-heavy, the Gray Zone street vernacular mixed with political vocabulary she's absorbed from print; occasionally formal when she's quoting something she's read",
     "cadence": "Rapid-fire, interrupts herself, loops back",
     "verbal_tics": [
       "'Obviously'",
@@ -54,14 +54,14 @@
   },
   "relationships": [],
   "story_hooks": [
-    "The disinformation piece she unknowingly distributed is now being traced back to the Shelf collective — she needs to figure out who set her up before her collective does",
+    "The disinformation piece she unknowingly distributed is now being traced back to the Gray Zone collective — she needs to figure out who set her up before her collective does",
     "She's intercepted a print order that appears to be someone inside a Zheng-Dao facility trying to smuggle out documentation of something serious",
     "An older organizer has taken her under their wing in a way that feels genuine but also feels like she's being positioned for something"
   ],
-  "narrative_function": "Local color, information courier, spontaneous local contact — she knows the Shelf's physical geography and social landscape intimately and can move through it quickly. Represents the next generation of political consciousness. Can get things places quickly and quietly.",
+  "narrative_function": "Local color, information courier, spontaneous local contact — she knows the Gray Zone's physical geography and social landscape intimately and can move through it quickly. Represents the next generation of political consciousness. Can get things places quickly and quietly.",
   "augmentations": "Inherited geneware expression: functional cat ears (dark fur, fully sensory); no purchased augmentations — can't afford them",
-  "daily_life": "Shifts at a noodle prep job in the Shelf's market strip three mornings a week. Rest of her time split between the collective's print room, running distribution routes through the Shelf and adjacent neighborhoods, and attending whatever meeting or action is happening.",
-  "affiliation": "The Shelf Pirate Print Collective; informal connection to the HPAZ distribution networks",
+  "daily_life": "Shifts at a noodle prep job in the Gray Zone's market strip three mornings a week. Rest of her time split between the collective's print room, running distribution routes through the Gray Zone and adjacent neighborhoods, and attending whatever meeting or action is happening.",
+  "affiliation": "the Gray Zone Pirate Print Collective; informal connection to the HPAZ distribution networks",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -160,7 +160,7 @@
     "Lone Wolf": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -170,7 +170,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Born in the Shelf; Nigerien-Icelandic heritage; cat ears present at birth due to inherited geneware expression",
+      "event": "Born in the Gray Zone; Nigerien-Icelandic heritage; cat ears present at birth due to inherited geneware expression",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -178,7 +178,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "First contact with the Shelf Pirate Print Collective at age 15 through a school friend",
+      "event": "First contact with the Gray Zone Pirate Print Collective at age 15 through a school friend",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -212,12 +212,11 @@
   "related_entities": [
     "The United Workers Front",
     "Zheng-dao Bioelectric",
-    "The Shelf",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Arcturus KS-7 'Nursery'",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Predominantly Southeast Asian (53.1%) with significant East Asian (29.0%) and Sub-Saharan African (17.9%) ancestry. The genetic blend creates a striking phenotype: warm medium-brown skin with golden undertones from Southeast Asian dominance, enriched by East Asian refinement, and deepened with warmer, richer tones from Sub-Saharan heritage. Facial structure shows the harmonious integration across all three ancestral lines.",
     "height_cm": 158,

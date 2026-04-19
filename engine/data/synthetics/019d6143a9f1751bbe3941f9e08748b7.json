@@ -12,7 +12,7 @@
   "observed_behavior": "Projects historical map data as a translucent overlay. The maps are accurate to the time of the parent AI's destruction — a snapshot of a city that no longer exists.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 13,
-  "location": "The Shelf, Old Harbor",
+  "location": "the Gray Zone, Old Harbor",
   "dti_rating": 0,
   "story_hooks": [
     "The phantom map shows a passage through a sealed building — and the passage is still there, just hidden"
@@ -27,14 +27,12 @@
     "augment",
     "ai",
     "harbor",
-    "shelf",
     "old harbor",
     "sentient"
   ],
   "related_entities": [
     "Arcturus PX-1 'Phantom'",
     "CHROMEWORKS Phantom Stealth Ocular Recorder",
-    "Old Harbor",
-    "The Shelf"
+    "Old Harbor"
   ]
 }

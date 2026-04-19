@@ -1,16 +1,17 @@
 {
   "id": "019d6143a6997633a26cb75d4f8710d2",
+  "rating": 80,
   "type": "character",
   "name": "Haze Tran",
   "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Riot Suppression Specialist, Arcturus Defense Solutions — Civil Security Division",
+  "role": "Riot Suppression Specialist, Arcturus Defense Solutions \u2014 Civil Security Division",
   "age": 52,
   "status": "active",
   "location": "The Rampart, GLMZ, near Kedzie and Division",
-  "description": "Haze Tran is the kind of man who seems to occupy more physical space than his actual dimensions justify. He is Kenyan-Albanian in the specific combination that produced a dark-skinned, grey-haired, thick-necked man with a bearing that other officers describe variously as 'a wall that decided to walk around' and 'the most tired person in any room.' At fifty-two he has more scar tissue than most people have skin on their hands — three decades of riot deployment have left a tactile record along both forearms, across his collarbone, bisecting his left eyebrow. He declined the offer of cosmetic scar-smoothing twice. The third time they stopped offering.\n\nPetros is not what people expect when they expect a riot specialist. He is not cruel, not performatively hard, not interested in displays of dominance. He has seen what crowd dynamics become when force is deployed theatrically, and he has been cleaning it up since before most of his unit were born. He runs the Rampart's suppression unit like a disaster-management operation — all contingency, all de-escalation protocols layered beneath the crowd-control hardware — and he is deeply, privately uncertain that the job as it is currently structured is achieving anything worth the cost. He goes to the Rampart's unit shrine — a battered E.L.F. node dedicated to something the older officers call the Crowd — every deployment morning and he does not know if it's prayer or apology.",
+  "description": "Haze Tran is the kind of man who seems to occupy more physical space than his actual dimensions justify. He is Kenyan-Albanian in the specific combination that produced a dark-skinned, grey-haired, thick-necked man with a bearing that other officers describe variously as \u0027a wall that decided to walk around\u0027 and \u0027the most tired person in any room.\u0027 At fifty-two he has more scar tissue than most people have skin on their hands \u2014 three decades of riot deployment have left a tactile record along both forearms, across his collarbone, bisecting his left eyebrow. He declined the offer of cosmetic scar-smoothing twice. The third time they stopped offering.\n\nPetros is not what people expect when they expect a riot specialist. He is not cruel, not performatively hard, not interested in displays of dominance. He has seen what crowd dynamics become when force is deployed theatrically, and he has been cleaning it up since before most of his unit were born. He runs the Rampart\u0027s suppression unit like a disaster-management operation \u2014 all contingency, all de-escalation protocols layered beneath the crowd-control hardware \u2014 and he is deeply, privately uncertain that the job as it is currently structured is achieving anything worth the cost. He goes to the Rampart\u0027s unit shrine \u2014 a battered E.L.F. node dedicated to something the older officers call the Crowd \u2014 every deployment morning and he does not know if it\u0027s prayer or apology.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -22,15 +23,15 @@
     },
     "core_fears": [
       "that he has spent thirty years making things worse and calling it order",
-      "dying before he's done something that balances the account"
+      "dying before he\u0027s done something that balances the account"
     ],
     "core_desires": [
       "a single deployment where nothing happens because the underlying conditions were addressed",
       "to be asked his actual opinion by someone with authority to act on it"
     ],
     "coping_mechanisms": [
-      "chess — the combination of rules, strategy, and graceful losing",
-      "treating younger unit members as a restoration project for things he couldn't protect before"
+      "chess \u2014 the combination of rules, strategy, and graceful losing",
+      "treating younger unit members as a restoration project for things he couldn\u0027t protect before"
     ],
     "blind_spots": [
       "has enormous compassion for the people he suppresses and has never quite connected that to the structural critique it implies",
@@ -40,26 +41,30 @@
   },
   "speech_patterns": {
     "vocabulary": "Slow, working-class Meridian with occasional Swahili phrases he uses as emotional punctuation; uses military-inflected vocabulary from habit but has been shedding it deliberately",
-    "cadence": "Measured and heavy, like someone choosing each word by weight — not slow-witted, but conscious",
+    "cadence": "Measured and heavy, like someone choosing each word by weight \u2014 not slow-witted, but conscious",
     "verbal_tics": [
       "Long exhale before difficult statements",
-      "'Ndio, lakini—' (Yes, but—) when he disagrees and is trying to be respectful about it"
+      "\u0027Ndio, lakini\u2014\u0027 (Yes, but\u2014) when he disagrees and is trying to be respectful about it"
     ],
     "example_lines": [
-      "'I've been doing this for thirty years. You know what I've learned? That a crowd that's dispersed without being heard comes back. Usually bigger.'",
-      "'I'm not going to tell you what to do. I'm going to tell you what I've seen happen when people do the thing you're thinking about doing. Then you decide.'"
-    ]
+      "\u0027I\u0027ve been doing this for thirty years. You know what I\u0027ve learned? That a crowd that\u0027s dispersed without being heard comes back. Usually bigger.\u0027",
+      "\u0027I\u0027m not going to tell you what to do. I\u0027m going to tell you what I\u0027ve seen happen when people do the thing you\u0027re thinking about doing. Then you decide.\u0027"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "He's being ordered to suppress a demonstration that his community hall contacts tell him is peaceful and legitimate — he's looking for intelligence that would justify refusing the order on procedural grounds",
+    "He\u0027s being ordered to suppress a demonstration that his community hall contacts tell him is peaceful and legitimate \u2014 he\u0027s looking for intelligence that would justify refusing the order on procedural grounds",
     "A junior officer under his command has filed an excessive force report against a peer; Petros is the unofficial pressure point on whether the report goes anywhere",
-    "He has been approached by someone claiming to be a civilian oversight researcher who wants the Hough deployment footage — and he's not sure if they're legitimate or if Command sent them to find out what he filed"
+    "He has been approached by someone claiming to be a civilian oversight researcher who wants the Hough deployment footage \u2014 and he\u0027s not sure if they\u0027re legitimate or if Command sent them to find out what he filed"
   ],
-  "narrative_function": "Moral weight on policing and crowd control; a figure who can authorize suppression or quietly allow people through; source of historical knowledge about GLMZ's protest and civil unrest history; potential ally for people working against institutional violence",
-  "augmentations": "Military-grade joint reinforcement (knees and shoulders — medical necessity after a crowd crush incident in 2187); impact-dampening subdermal mesh across torso (department-issue for riot specialists); no cosmetic mods",
+  "narrative_function": "Moral weight on policing and crowd control; a figure who can authorize suppression or quietly allow people through; source of historical knowledge about GLMZ\u0027s protest and civil unrest history; potential ally for people working against institutional violence",
+  "augmentations": "Military-grade joint reinforcement (knees and shoulders \u2014 medical necessity after a crowd crush incident in 2187); impact-dampening subdermal mesh across torso (department-issue for riot specialists); no cosmetic mods",
   "daily_life": "Runs unit readiness training at the Rampart most mornings; attends interdepartmental deployment briefings he finds increasingly political; spends evenings at a community hall in Hough Reclamation, playing chess badly with neighborhood elders who knew the area before the last reclamation push.",
-  "affiliation": "Arcturus Defense Solutions — Civil Security Division — Civil Response Division",
+  "affiliation": "Arcturus Defense Solutions \u2014 Civil Security Division \u2014 Civil Response Division",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -103,12 +108,12 @@
   "behavioral": {
     "decision_rules": [
       "Never deploy at force level higher than the situation requires, regardless of what command considers standard",
-      "Protect his unit's safety first, and if those two rules conflict, find a third option",
-      "Never give an order he wouldn't explain publicly"
+      "Protect his unit\u0027s safety first, and if those two rules conflict, find a third option",
+      "Never give an order he wouldn\u0027t explain publicly"
     ],
     "escalation_ladder": [
       "Visible presence with deliberate de-escalatory positioning",
-      "Verbal engagement — seeks dialogue with crowd representatives",
+      "Verbal engagement \u2014 seeks dialogue with crowd representatives",
       "Controlled barrier establishment, minimum footprint",
       "Deployment of suppression tools as last resort, minimum effective force, always documented"
     ],
@@ -119,14 +124,14 @@
     "stress_responses": {
       "low": "Gets quieter, moves to higher ground if possible to read the full environment",
       "medium": "Takes exactly three seconds to think before any decision, a habit so ingrained it looks like a reflex",
-      "high": "Becomes completely calm in a way that unsettles people — acts with total deliberateness, no visible emotion, decompresses alone afterward"
+      "high": "Becomes completely calm in a way that unsettles people \u2014 acts with total deliberateness, no visible emotion, decompresses alone afterward"
     },
     "contradictions": [
       "Executes riot suppression deployment while privately opposing the conditions that produce riots",
       "Commands with authority while systematically undermining the kind of authority he finds unjust"
     ],
     "habits": [
-      "Visits the Crowd shrine before every deployment with an unlabeled data chip he's been adding to for years",
+      "Visits the Crowd shrine before every deployment with an unlabeled data chip he\u0027s been adding to for years",
       "Makes very bad chess moves on purpose when playing with elderly neighbors who need the wins"
     ],
     "breaking_points": [
@@ -165,47 +170,34 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
-    "Nkomo-Lindqvist NL-9SD 'Lullaby'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [
-    "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
-    "Nkomo-Lindqvist NL-9SD 'Lullaby'"
-  ],
-  "related_entities": [
-    "The Rampart",
-    "Pressure Drop",
-    "Arcturus Defense Solutions Siege Axe SA-1 'Rampart'",
-    "Stratum",
-    "The Pure Hand",
-    "Hough Reclamation",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
-    "GLMZ"
-  ],
-  "district": "The Shelf",
   "physical_description": {
-    "heritage": "Southeast Asian (43.9%) with significant Sub-Saharan African (26.0%), East Asian (14.0%), Hispanic/Latin American (10.6%), and Eastern European (5.5%) ancestry — a complex phenotype reflecting the Ubiquitous Diaspora. The genetic blend manifests as warm deep brown skin with subtle golden and olive undertones, enriched by the darker pigmentation characteristic of Southeast and Sub-Saharan African heritage, tempered by the cooler undertones from East Asian and Eastern European ancestry. Facial structure shows the squared jaw and defined cheekbones of Southeast Asian heritage, broadened slightly by Sub-Saharan African ancestry, with the eye-set characteristic of East Asian genetics creating a unique synthesis of these regional features.",
+    "heritage": "Southeast Asian (43.9%) with significant Sub-Saharan African (26.0%), East Asian (14.0%), Hispanic/Latin American (10.6%), and Eastern European (5.5%) ancestry \u2014 a complex phenotype reflecting the Ubiquitous Diaspora. The genetic blend manifests as warm deep brown skin with subtle golden and olive undertones, enriched by the darker pigmentation characteristic of Southeast and Sub-Saharan African heritage, tempered by the cooler undertones from East Asian and Eastern European ancestry. Facial structure shows the squared jaw and defined cheekbones of Southeast Asian heritage, broadened slightly by Sub-Saharan African ancestry, with the eye-set characteristic of East Asian genetics creating a unique synthesis of these regional features.",
     "height_cm": 188,
     "weight_kg": 104,
-    "build": "Heavy, barrel-chested with the dense musculature of someone who has spent thirty years bearing weight — not bodybuilder definition, but functional mass. Shoulders and neck thickened by reinforced joint infrastructure. Carries weight forward slightly, a stance that distributes load across reinforced knees.",
+    "build": "Heavy, barrel-chested with the dense musculature of someone who has spent thirty years bearing weight \u2014 not bodybuilder definition, but functional mass. Shoulders and neck thickened by reinforced joint infrastructure. Carries weight forward slightly, a stance that distributes load across reinforced knees.",
     "hair_color": "Steel grey with dark undertones",
     "hair_style": "Short, military-standard cut, neat without vanity",
     "hair_length": "Short",
     "eye_color": "Dark brown, slightly yellowed at the sclera from age and chemical exposure",
     "skin_tone": "Warm deep brown with subtle golden and olive undertones, mottled and weathered by accumulated scar tissue and subcutaneous impact mesh, creating an uneven, lived-in appearance that shifts in intensity across his face and body.",
-    "complexion": "Heavily lined face — deep creases around the eyes and mouth suggest more frowning than smiling. Jaw prominent and squared with bone structure showing the synthesis of Southeast Asian angularity and Sub-Saharan African breadth, tempered by East Asian eye-set and Eastern European heritage. Cheekbones with definition characteristic of Southeast Asian ancestry, softened by age and the weight he carries. Skin textured and rough, bearing the tactile history of three decades of deployment. No artificial smoothing or cosmetic intervention.",
-    "visible_augmentations": "None immediately visible. The joint reinforcement at knees and shoulders is internal (medical-necessity grade, not cosmetic). Impact-dampening subdermal mesh across torso creates a subtle textural irregularity under clothing at chest and abdomen — a faint geometric pattern visible only under tight fabric or in specific light. The wear patterns of his uniform show slight reinforcement at shoulder and knee joints.",
-    "posture_movement": "Moves with deliberate, economical weight distribution — a man conscious of his mass and of how it affects space around him. Stands slightly forward-leaning, shoulders back, creating an impression of imminent readiness rather than relaxation. His stride is controlled and even, knees tracking carefully (the reinforcement surgery left him with a slight stiffness he refuses to acknowledge). Does not gesture expansively; movements are minimal and precise. His resting expression tends toward exhaustion — eyes slightly hooded, mouth in a neutral line that reads as either contemplation or disapproval.",
-    "clothing_style": "Standard Arcturus Defense Solutions Civil Security tactical uniform off-duty: charcoal riot suppression fatigues (department-issued, Tier 3 grade material, maintained meticulously), reinforced black boots scuffed from repeated deployment, simple grey undershirt. Off-duty: practical Tier 3 civilian wear — plain cotton shirts in dark colors, heavy canvas work pants, worn leather jacket with department insignia removed. No jewelry except a thin steel wedding band worn smooth. His uniform always shows the wear of actual use rather than presentation; equipment scarred from repeated deployment rather than pristine. Watches the same older model chronometer (non-smart, mechanical backup). Does not maintain the groomed appearance of officers interested in promotion.",
+    "complexion": "Heavily lined face \u2014 deep creases around the eyes and mouth suggest more frowning than smiling. Jaw prominent and squared with bone structure showing the synthesis of Southeast Asian angularity and Sub-Saharan African breadth, tempered by East Asian eye-set and Eastern European heritage. Cheekbones with definition characteristic of Southeast Asian ancestry, softened by age and the weight he carries. Skin textured and rough, bearing the tactile history of three decades of deployment. No artificial smoothing or cosmetic intervention.",
     "distinguishing_marks": [
-      "Ragged scar bisecting his left eyebrow, interrupting the brow line — pale tissue from a crowd-control baton strike circa 2195",
+      "Ragged scar bisecting his left eyebrow, interrupting the brow line \u2014 pale tissue from a crowd-control baton strike circa 2195",
       "Network of crisscrossing pale scars across both forearms, visible from wrist to elbow, with darker impact-pattern marks from riot shield contact",
-      "Long horizontal scar across left collarbone, thick and ropey, from a crush incident in 2187 — the same incident that necessitated joint reinforcement",
-      "Scattered smaller circular burn marks across inner left forearm — chemical exposure, riot dispersal residue"
-    ]
+      "Long horizontal scar across left collarbone, thick and ropey, from a crush incident in 2187 \u2014 the same incident that necessitated joint reinforcement",
+      "Scattered smaller circular burn marks across inner left forearm \u2014 chemical exposure, riot dispersal residue"
+    ],
+    "visible_augmentations": "None immediately visible. The joint reinforcement at knees and shoulders is internal (medical-necessity grade, not cosmetic). Impact-dampening subdermal mesh across torso creates a subtle textural irregularity under clothing at chest and abdomen \u2014 a faint geometric pattern visible only under tight fabric or in specific light. The wear patterns of his uniform show slight reinforcement at shoulder and knee joints.",
+    "posture_movement": "Moves with deliberate, economical weight distribution \u2014 a man conscious of his mass and of how it affects space around him. Stands slightly forward-leaning, shoulders back, creating an impression of imminent readiness rather than relaxation. His stride is controlled and even, knees tracking carefully (the reinforcement surgery left him with a slight stiffness he refuses to acknowledge). Does not gesture expansively; movements are minimal and precise. His resting expression tends toward exhaustion \u2014 eyes slightly hooded, mouth in a neutral line that reads as either contemplation or disapproval.",
+    "clothing_style": "Standard Arcturus Defense Solutions Civil Security tactical uniform off-duty: charcoal riot suppression fatigues (department-issued, Tier 3 grade material, maintained meticulously), reinforced black boots scuffed from repeated deployment, simple grey undershirt. Off-duty: practical Tier 3 civilian wear \u2014 plain cotton shirts in dark colors, heavy canvas work pants, worn leather jacket with department insignia removed. No jewelry except a thin steel wedding band worn smooth. His uniform always shows the wear of actual use rather than presentation; equipment scarred from repeated deployment rather than pristine. Watches the same older model chronometer (non-smart, mechanical backup). Does not maintain the groomed appearance of officers interested in promotion."
   },
   "image_prompt": "Haze Tran, 188cm tall heavy-built man with warm deep brown skin and subtle golden undertones, Southeast Asian and Sub-Saharan African heritage blended with East Asian features showing defined cheekbones and squared jaw. Steel grey short military-cut hair, dark brown eyes slightly yellowed from chemical exposure. Deep facial lines, weathered skin texture, ragged scar bisecting left eyebrow, network of pale scars across both forearms, thick horizontal scar across left collarbone. Wearing charcoal Arcturus Defense Solutions Civil Security riot suppression fatigues off-duty, scuffed reinforced black boots, simple grey undershirt, worn leather jacket. Slightly forward-leaning posture, controlled movement, economical gestures, hooded eyes with exhausted resting expression. GLMZ, Great Lakes Metropolitan Zone, tactical officer bearing thirty years of deployment wear, subdermal impact-mesh visible as subtle geometric texture under tight fabric, moody blue-grey lighting emphasizing weathered features and scar tissue, concrete industrial setting, photorealistic gritty aesthetic --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Southeast Asian": 43.9,
     "Sub-Saharan African": 26,
@@ -213,12 +205,6 @@
     "Hispanic/Latin American": 10.6,
     "Eastern European": 5.5
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Southeast Asian": {
       "Vietnamese": {
@@ -272,6 +258,5 @@
         "Polish": 1.6
       }
     }
-  },
-  "tier": "3"
+  }
 }

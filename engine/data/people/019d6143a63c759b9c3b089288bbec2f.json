@@ -1,5 +1,6 @@
 {
   "id": "019d6143a63c759b9c3b089288bbec2f",
+  "rating": 70,
   "type": "character",
   "name": "Rune Taualagi",
   "aliases": [],
@@ -10,7 +11,7 @@
   "age": 65,
   "status": "active",
   "location": "Crucible Square — open-air market, Tier 1-2 commerce, near Halsted and Chicago Ave",
-  "description": "Rune Taualagi is lean and angular, all sharp edges and visible tension. At 65, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a surveillance specialist out of Crucible Square, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented surveillance specialist in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
+  "description": "Rune Taualagi is lean and angular, all sharp edges and visible tension. At 65, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nHe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a surveillance specialist out of Crucible Square, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented surveillance specialist in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.86,
@@ -53,7 +54,11 @@
       "\"I've been watching you for three days. You should close your curtains.\"",
       "\"Information is the only commodity that appreciates with age.\"",
       "\"Everyone thinks they're careful. Nobody is careful enough.\""
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
@@ -264,19 +269,11 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Shelf",
-    "Chicago",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Slagworks Industrial",
-    "Pellucid Systems",
-    "GLMZ"
-  ],
-  "district": "The Shelf",
   "physical_description": {
     "heritage": "Complex diaspora blend: Southeast Asian (37.8%), Pacific Islander (28.2%), Hispanic/Latin American (15.3%), Middle Eastern (12.8%), Sub-Saharan African (5.9%). Features reflect this multifaceted ancestry — warm bronze skin with golden and amber undertones from Southeast Asian and Pacific Islander heritage, high cheekbones and eye shape influenced by Southeast Asian ancestry, prominent jaw structure with subtle width from Pacific Islander and Hispanic lineage, and facial bone structure showing depth and richness from Middle Eastern and African heritage markers.",
     "height_cm": 178,
@@ -292,13 +289,14 @@
       "Chrome circuitry visible at both temples — silver-gray neural interface ports running from jawline to hairline, installed with functional brutality and minimal cosmetic finish.",
       "Jagged scar tissue along the right jawline where the adrenaline pump was grafted, silvery-white and slightly raised.",
       "Thin burn marks running down the inside of both forearms — old electrical contact scars from early maintenance mistakes.",
-      "A faded tattoo on his left shoulder blade: a runner's marker from the Shelf, now barely visible under sun damage."
+      "A faded tattoo on his left shoulder blade: a runner's marker from the Gray Zone, now barely visible under sun damage."
     ],
     "visible_augmentations": "Chrome neural interface ports at temples and jawline are immediately obvious — deliberate, unapologetic exposure. The synthetic muscle fiber in his legs creates a subtle visual discontinuity in his calf definition and bulk. His movements are too fast, too precise for his age — the wired reflexes betray their presence in micro-adjustments and reaction speed.",
     "posture_movement": "Stands with weight balanced, always ready to move. His gait is economical and quick, though he favors flat ground and visibly tenses on stairs — a tell that his leg augmentations don't handle inclines well. His head moves in small, precise rotations, scanning. Even at rest, his hands are never still — fidgeting with a contract chip, a surveillance scanner, something. A man wound too tight.",
     "clothing_style": "Tier 3-4 functional wear with no pretense of style. Dark gray or black reinforced cargo pants with multiple pockets and a faint sheen of wear-resistant coating. A faded black synth-cotton shirt, sleeves pushed to the elbows to expose the augmentation scars — a statement of acceptance. Over it, a worn grey synthetic jacket with internal cable management and reinforced pockets for surveillance gear. Utilitarian boots, scuffed and re-soled multiple times. No jewelry, no chrome accents. Everything worn, everything practical, nothing decorative."
   },
   "image_prompt": "Rune Taualagi, 65-year-old neo-noir operative, 178cm tall, lean angular build with visible muscle definition. Warm bronze-gold skin with golden and amber undertones reflecting Southeast Asian, Pacific Islander, Hispanic, Middle Eastern, and African heritage. High Southeast Asian cheekbones, prominent sharp jaw with Pacific Islander width, deep weathered facial lines, dark brown alert eyes. Steel gray hair with black roots, closely trimmed military-precise cut. Chrome neural interface ports visible at temples and jawline running to neck, silvery-gray and functional. Jagged scarring along right jaw from adrenaline pump graft. Thin electrical burn scars on inner forearms. Faded tattoo on left shoulder blade. Synthetic muscle fiber in legs creates subtle calf definition asymmetry. Standing in balanced ready posture, slightly tense. Wearing faded black synth-cotton shirt with pushed-up sleeves exposing augmentation scars, worn grey synthetic jacket with reinforced pockets, dark cargo pants with wear-resistant coating, scuffed utilitarian boots. No jewelry, practical everything. Hands fidgeting with surveillance gear. GLMZ, Great Lakes Metropolitan Zone, dimly lit tech-noir interior with neon accents casting shadows across weathered face, moody contemplative expression, gritty realism, cinematic lighting --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Southeast Asian": 37.8,
     "Pacific Islander": 28.2,
@@ -306,12 +304,6 @@
     "Middle Eastern": 12.8,
     "Sub-Saharan African": 5.9
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Southeast Asian": {
       "Thai": {
@@ -364,6 +356,5 @@
         "Kenyan": 1.1
       }
     }
-  },
-  "tier": "3"
+  }
 }

@@ -16,7 +16,7 @@
   "armament": "None. Gravity is weapon enough.",
   "common_usage": "Desperate emergency transport, smuggling, accessing locations with no other approach, proving a point.",
   "story_hooks": [
-    "A meat drone operator has been running a clandestine air ambulance service in The Shelf, saving lives at the risk of their own",
+    "A meat drone operator has been running a clandestine air ambulance service in the Gray Zone, saving lives at the risk of their own",
     "Someone straps a bomb to a meat drone and the entire improvised air transport network gets cracked down on — killing the ambulance service too"
   ],
   "tags": [
@@ -28,7 +28,6 @@
     "bar",
     "desperate",
     "drone",
-    "shelf",
     "tier 1",
     "cargo",
     "civilian",
@@ -41,8 +40,7 @@
   "related_entities": [
     "Arcturus Defense Solutions",
     "Arcturus Mule Cargo Drone",
-    "Crucible ER-5 'First Response'",
-    "The Shelf"
+    "Crucible ER-5 'First Response'"
   ],
   "physical_description": "A battered Arcturus Mule cargo drone, its matte gray composite hull scarred by impact marks and patched with mismatched industrial tape. The cargo bay has been gutted and replaced with a welded-steel seat frame bolted directly to the frame, fitted with frayed nylon straps and a single cracked safety harness that looks like it was salvaged from something else entirely. Exposed wiring and hastily-soldered battery connections run along the underside, still dripping residue from whatever adhesive holds them in place.",
   "visual_prompt": "battered gray cargo drone with human seat welded inside, exposed wiring, industrial tape patches, cracked safety harness, worn composite hull, rain-slicked metal, product photography, gritty cyberpunk, neo-noir, dark moody lighting, detailed wear and corrosion, desperate jury-rigged engineering, dark background"

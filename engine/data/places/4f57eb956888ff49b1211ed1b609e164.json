@@ -34,7 +34,6 @@
     "nightlife",
     "venue",
     "music",
-    "shelf",
     "green-bay"
   ],
   "related_entities": [
@@ -46,5 +45,7 @@
     "Steel",
     "Slagworks Industrial",
     "Pellucid Systems"
-  ]
+  ],
+  "zone": "Z10",
+  "controllingCorponation": null
 }

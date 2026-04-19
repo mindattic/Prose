@@ -3,7 +3,7 @@
   "name": "Dustveil Patchwork Ghost Operative Set",
   "type": "apparel",
   "category": "outfit",
-  "description": "At first glance this is a Tier 1 survivor's layered coat — mismatched panels of deep olive, charcoal, and faded indigo stitched together in a pattern that reads as poverty-mended patchwork. The truth is that each panel is a distinct material chosen for a specific function: the olive sections are scanner-absorbing Vantex weave, the charcoal panels are impact-dispersing flex-armor rated for small-caliber glancing hits, and the indigo patches are thermal-bleed fabric that suppresses body-heat signature. Underneath, a long-sleeved base layer in washed-out grey features gene-compatible back paneling — the rear seam splits along a reinforced zip from collar to waist, accommodating a broad range of geneware spinal or wing configurations without compromising the coat's silhouette. Slim-cut trousers in deep slate carry four concealed internal pockets, each with sound-dampened closures. The footwear is deliberate contrast: battered high-top boots with mismatched lace colors, a classic Shelf aesthetic that completes the poverty read while concealing a hardened composite sole and a toe-cap rated for door-breach kicks. A wide-brim hat in sun-faded olive with a low crown completes the silhouette, obscuring facial geometry from overhead surveillance drones.",
+  "description": "At first glance this is a Tier 1 survivor's layered coat — mismatched panels of deep olive, charcoal, and faded indigo stitched together in a pattern that reads as poverty-mended patchwork. The truth is that each panel is a distinct material chosen for a specific function: the olive sections are scanner-absorbing Vantex weave, the charcoal panels are impact-dispersing flex-armor rated for small-caliber glancing hits, and the indigo patches are thermal-bleed fabric that suppresses body-heat signature. Underneath, a long-sleeved base layer in washed-out grey features gene-compatible back paneling — the rear seam splits along a reinforced zip from collar to waist, accommodating a broad range of geneware spinal or wing configurations without compromising the coat's silhouette. Slim-cut trousers in deep slate carry four concealed internal pockets, each with sound-dampened closures. The footwear is deliberate contrast: battered high-top boots with mismatched lace colors, a classic the Gray Zone aesthetic that completes the poverty read while concealing a hardened composite sole and a toe-cap rated for door-breach kicks. A wide-brim hat in sun-faded olive with a low crown completes the silhouette, obscuring facial geometry from overhead surveillance drones.",
   "tier_association": "Tier 1-2",
   "materials": [
     "Vantex scanner-absorbing weave",
@@ -14,10 +14,10 @@
     "composite-reinforced boot sole"
   ],
   "functionality": "Multi-function patchwork panels (scanner absorption, impact dispersion, thermal suppression), gene-compatible rear seam, four internal sound-dampened trouser pockets, door-breach composite toe, wide-brim drone-obscuring hat",
-  "what_it_says": "This outfit is a lie told in fabric. It performs destitution with surgical accuracy while concealing serious capability. Runners who wear it are either operating deep in Shelf territory where appearing resourced is dangerous, or they're professionals who understand that the best camouflage in GLMZ is looking like someone nobody wants to look at twice.",
+  "what_it_says": "This outfit is a lie told in fabric. It performs destitution with surgical accuracy while concealing serious capability. Runners who wear it are either operating deep in the Gray Zone territory where appearing resourced is dangerous, or they're professionals who understand that the best camouflage in GLMZ is looking like someone nobody wants to look at twice.",
   "worn_by": [
     "deep-cover infiltration runners",
-    "Shelf-side operatives",
+    "the Gray Zone-side operatives",
     "runners with geneware modifications requiring concealment",
     "poverty-passing social engineers"
   ],
@@ -41,7 +41,7 @@
     "thermal-suppression",
     "gene-compatible",
     "deep-cover",
-    "shelf-side",
+    "Gray Zone-side",
     "needlebone"
   ],
   "parent_corponation": "",
@@ -77,7 +77,7 @@
       "Scanner-absorbing panels invisible to standard recon drones"
     ],
     "tier_indicator": "Visually reads as Tier 5 sub-grade salvage; functionally a Tier 1-2 custom operative set. The disguise is the point—wealthy enough to commission unlicensed fabrication, street-smart enough to make it look worthless.",
-    "cultural_context": "Worn by ghosts, fixers, independent operators, and anyone who needs to move through the GLMZ without drawing algorithmic attention. Signals 'I know what I'm doing and I can't be scanned.' Associated with Needlebone collective aesthetics—Shelf culture mixed with off-grid operational necessity. Not corpo, not military, not governable.",
+    "cultural_context": "Worn by ghosts, fixers, independent operators, and anyone who needs to move through the GLMZ without drawing algorithmic attention. Signals 'I know what I'm doing and I can't be scanned.' Associated with Needlebone collective aesthetics—the Gray Zone culture mixed with off-grid operational necessity. Not corpo, not military, not governable.",
     "condition_typical": "Deliberately weathered and patched, appearing field-worn from first wear. Frays are intentional. Wear patterns are strategized. It should look like it's been through ten deployments, not five days of wear."
   },
   "image_prompt": "A lean figure in a patchwork ghost operative coat photographed in harsh neon shadows—olive, charcoal, and indigo panels creating fragmented silhouette against industrial concrete backdrop. Low-brim hat casts deep shadow across face, revealing only jawline and neck. Mismatched boot laces catch stray light. Moody cyan and rust ambient lighting. The composition emphasizes visual noise and broken geometry. Shot from 3/4 angle, slightly overhead to show how the panels defeat surveillance. Dark urban warehouse setting, faded graffiti barely visible. Fashion editorial meets tactical documentation. --ar 2:3 --v 6",

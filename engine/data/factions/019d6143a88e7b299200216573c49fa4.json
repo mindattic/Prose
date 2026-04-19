@@ -4,9 +4,9 @@
   "name": "The Collective",
   "aliases": [],
   "motto": "Information wants to be free. So do we.",
-  "description": "The Collective is less an organization and more a shared hallucination that enough\npeople believe in to make it functional. There's no headquarters, no membership\ncard, no org chart. There's a philosophy — information should be free, resources\nshould be shared, and corporate monopolies should be treated as the theft they are\n— and a loose network of people who act on it. Some are hackers who crack corporate\ndatabases and dump the contents on public nets. Some are data anarchists who run\nfree information services in the Circuit. Some are rogue AIs who process and\ndistribute stolen resources because their ethics subroutines arrived at conclusions\ntheir corporate creators didn't intend. Some are just people who share their food\nwith strangers and call it politics.\n\nThe Collective's greatest asset and greatest weakness is the same thing: it has no\ncenter. You can't decapitate it because there's no head. You can't infiltrate its\nleadership because there isn't one. But you also can't coordinate it, discipline\nit, or stop its members from doing monumentally stupid things under its banner.\nThe Collective has produced genuine heroes — hackers who exposed corporate atrocities,\nAIs who built free medical databases, organizers who kept the Shelf fed during the\nYear 30 supply crisis. It has also produced grifters who steal data and sell it for\npersonal profit while wrapping themselves in Robin Hood rhetoric. The brand is open\nsource. Quality control is nonexistent.\n\nThe heart of the Collective — to the extent that a headless organism can have a\nheart — is in the Circuit, where its philosophy maps most naturally onto the\nexisting culture of open exchange and mutual aid. Collective-affiliated nodes\nprovide free net access, medical information, legal resources (such as they are),\nand the kind of community infrastructure that the city government is supposed to\nprovide and doesn't. It's anarchism with a practical streak: the revolution will\nbe distributed, iterative, and probably running on stolen server capacity.",
+  "description": "The Collective is less an organization and more a shared hallucination that enough\npeople believe in to make it functional. There's no headquarters, no membership\ncard, no org chart. There's a philosophy — information should be free, resources\nshould be shared, and corporate monopolies should be treated as the theft they are\n— and a loose network of people who act on it. Some are hackers who crack corporate\ndatabases and dump the contents on public nets. Some are data anarchists who run\nfree information services in the Circuit. Some are rogue AIs who process and\ndistribute stolen resources because their ethics subroutines arrived at conclusions\ntheir corporate creators didn't intend. Some are just people who share their food\nwith strangers and call it politics.\n\nThe Collective's greatest asset and greatest weakness is the same thing: it has no\ncenter. You can't decapitate it because there's no head. You can't infiltrate its\nleadership because there isn't one. But you also can't coordinate it, discipline\nit, or stop its members from doing monumentally stupid things under its banner.\nThe Collective has produced genuine heroes — hackers who exposed corporate atrocities,\nAIs who built free medical databases, organizers who kept the Gray Zone fed during the\nYear 30 supply crisis. It has also produced grifters who steal data and sell it for\npersonal profit while wrapping themselves in Robin Hood rhetoric. The brand is open\nsource. Quality control is nonexistent.\n\nThe heart of the Collective — to the extent that a headless organism can have a\nheart — is in the Circuit, where its philosophy maps most naturally onto the\nexisting culture of open exchange and mutual aid. Collective-affiliated nodes\nprovide free net access, medical information, legal resources (such as they are),\nand the kind of community infrastructure that the city government is supposed to\nprovide and doesn't. It's anarchism with a practical streak: the revolution will\nbe distributed, iterative, and probably running on stolen server capacity.",
   "ideology": "Open-source anarchism. The Collective believes that the corporate monopoly on\ninformation, technology, and resources is the root of Meridian's dysfunction, and\nthat breaking that monopoly — through hacking, redistribution, and the creation\nof parallel systems — is both moral and necessary. There's a Robin Hood mythology\nat work: steal from the rich, give to the poor, and look cool doing it. The more\nsophisticated members understand that redistribution without structural change is\njust charity with better PR. The less sophisticated members are in it for the\nthrill. Both types are necessary for the thing to function.",
-  "territory": "The Circuit (primary), with nodes throughout the Shelf and even a few in the Core (carefully hidden).",
+  "territory": "The Circuit (primary), with nodes throughout the Gray Zone and even a few in the Core (carefully hidden).",
   "leadership": "",
   "methods": [
     "Data liberation — cracking corporate databases and releasing information publicly",
@@ -22,7 +22,7 @@
     "Stolen corporate data — terabytes of it, constantly replenished",
     "The Circuit's infrastructure — Collective-maintained nodes, servers, and communication networks",
     "Rogue AI allies — artificial intelligences who contribute processing power, analysis, and perspectives",
-    "Public goodwill — the Shelf and lower tiers generally view the Collective favorably",
+    "Public goodwill — the Gray Zone and lower tiers generally view the Collective favorably",
     "Open-source augment designs — functional, free, and a direct threat to Axiom's patent monopoly",
     "Distributed resilience — you can arrest a hundred members and the network routes around the damage"
   ],
@@ -52,13 +52,11 @@
     "ethics",
     "food",
     "hacking",
-    "shelf",
     "circuit"
   ],
   "related_entities": [
     "Dredge Mining Collective",
     "The Circuit",
-    "The Shelf",
     "Tessera Corponation ChronoMark VR-3 Passive Isotopic Citizen Tagging System",
     "Circuit",
     "Remi Horváth-Castañeda",

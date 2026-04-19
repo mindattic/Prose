@@ -9,8 +9,8 @@
   "role": "Precision elimination specialist — ghost",
   "age": 29,
   "status": "active",
-  "location": "The Shelf — lower district tenements near the old lakeshore, near Halsted and Chicago Ave",
-  "description": "Rowan Boateng is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 29, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Rowan Boateng plans to keep it that way. He works as a ghost out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nRowan Boateng has built a reputation on reliability rather than flash — he shows up, he delivers, he collects.",
+  "location": "the Gray Zone — lower district tenements near the old lakeshore, near Halsted and Chicago Ave",
+  "description": "Rowan Boateng is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 29, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Rowan Boateng plans to keep it that way. He works as a ghost out of the Gray Zone, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nRowan Boateng has built a reputation on reliability rather than flash — he shows up, he delivers, he collects.",
   "psychology": {
     "facet_weights": {
       "wound": 0.24,
@@ -259,7 +259,7 @@
     "Ghost": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -272,14 +272,13 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "The Shelf",
     "Kel Adeyemi-Strand",
     "Chicago",
     "The Pure Hand",
     "Slagworks Industrial",
     "Pellucid Systems"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Predominantly Sub-Saharan African (53.8%) with significant Northern European (24.7%), South Asian (18.3%), and Southeast Asian (3.2%) ancestry. This creates a striking phenotype: rich deep brown skin with warm golden undertones, angular facial structure with prominent cheekbones from South Asian lineage blended with the broad, powerful features of Sub-Saharan African genetics. Northern European ancestry contributes lighter undertones and a slightly sharper nose bridge, while Southeast Asian ancestry adds subtle refinement to the overall bone structure. The result is a rare confluence of robust strength and distinctive angular elegance.",
     "height_cm": 178,

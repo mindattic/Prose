@@ -46,5 +46,18 @@
     "The Ledger",
     "The Reclamation Assembly",
     "Yuki Nwosu-Petrenko"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z4",
+      "Z5"
+    ],
+    "primaryZone": "Z1",
+    "lakefrontAccess": false,
+    "description": "Distributed sovereign access-control infrastructure throughout the southern GLMZ. Tollgate holds sovereign rights-of-way at key transit choke points and levies access fees that function as informal taxation without the political liabilities of formal governance. No contiguous territory; control exercised through infrastructure rather than land.",
+    "grayZoneRelationship": "Tollgate systems at Gray Zone entry points are the primary physical manifestation of corponation authority that most Gray Zone residents encounter in daily movement."
+  }
 }

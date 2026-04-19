@@ -7,13 +7,13 @@
   "category": "hygiene",
   "subcategory": "water treatment",
   "manufacturer": "Meridian Basic Services",
-  "description": "Effervescent tablets that purify one liter of water each. Essential in the Shelf where water infrastructure is unreliable. Drop the tablet, wait ten minutes, drink safely.",
+  "description": "Effervescent tablets that purify one liter of water each. Essential in the Gray Zone where water infrastructure is unreliable. Drop the tablet, wait ten minutes, drink safely.",
   "flavor_profile": "Slight chlorine taste that dissipates after 30 minutes, leaves water clear",
   "tier_availability": "Tier 1-2",
   "price": "Φ0.10",
   "popularity_rank": 1,
   "slogan": "Safe water. Every time.",
-  "cultural_context": "In the Shelf, AquaPure tablets are as fundamental as breathing. Water from Shelf taps is not reliably safe. Everyone carries tablets. Running out is a genuine emergency. They're distributed free during health crises but normally cost money. Φ0.10 per liter adds up when you're already poor.",
+  "cultural_context": "In the Gray Zone, AquaPure tablets are as fundamental as breathing. Water from the Gray Zone taps is not reliably safe. Everyone carries tablets. Running out is a genuine emergency. They're distributed free during health crises but normally cost money. Φ0.10 per liter adds up when you're already poor.",
   "story_hooks": [
     "Meridian Basic Services has a monopoly on water purification — they've blocked cheaper alternatives from reaching the market through regulatory capture.",
     "The tablets work, but long-term use of the purification compound may have health effects that haven't been studied because studying them would threaten the product."
@@ -23,7 +23,6 @@
     "water",
     "consumer_good",
     "purification",
-    "shelf",
     "tier_1",
     "tier_2",
     "essential",
@@ -33,7 +32,6 @@
   "related_entities": [
     "MERIDIAN",
     "The Bazaar",
-    "The Shelf",
     "The Wire Taps"
   ]
 }

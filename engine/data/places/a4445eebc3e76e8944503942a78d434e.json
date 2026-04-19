@@ -3,7 +3,7 @@
   "type": "place",
   "name": "Lucky Jade Noodle House",
   "aliases": [],
-  "description": "A noodle house in Chinatown that bridges the gap between Shelf-tier ramen and actual cuisine. The noodles are hand-pulled — owner Wei Lindqvist-Tanaka employs two noodle pullers who work in the window so passersby can watch the dough stretch and fold. The broth is a twenty-four-hour pork-style stock made from vat-bones and aromatics. A bowl of pulled noodles in broth with sliced vat-pork belly is Φ12. The menu has thirty items, ranging from dan dan noodles to cold sesame noodles, each between Φ8 and Φ15. Wei's mother started the shop; Wei expanded it from four seats to twenty-two. The noodle pullers are the marketing department, and they're the best in the corridor.",
+  "description": "A noodle house in Chinatown that bridges the gap between the Gray Zone-tier ramen and actual cuisine. The noodles are hand-pulled — owner Wei Lindqvist-Tanaka employs two noodle pullers who work in the window so passersby can watch the dough stretch and fold. The broth is a twenty-four-hour pork-style stock made from vat-bones and aromatics. A bowl of pulled noodles in broth with sliced vat-pork belly is Φ12. The menu has thirty items, ranging from dan dan noodles to cold sesame noodles, each between Φ8 and Φ15. Wei's mother started the shop; Wei expanded it from four seats to twenty-two. The noodle pullers are the marketing department, and they're the best in the corridor.",
   "atmosphere": {
     "sights": [],
     "sounds": [],
@@ -35,5 +35,7 @@
   "related_entities": [
     "Lacuna Genomics",
     "Arcturus KS-7 'Nursery'"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

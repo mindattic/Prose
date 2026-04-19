@@ -6,7 +6,7 @@
   "type": "technology",
   "aliases": [],
   "subcategory": "medical",
-  "description": "The OculaRegen CR-5 is a single-use bioengineered corneal reconstruction film developed by Helix Biosystems for treating traumatic corneal damage, chemical burns, and the increasingly common 'augmentation erosion' syndrome caused by poorly fitted optical implants degrading the host corneal tissue. The CR-5 consists of a 0.1mm amniotic membrane analog layered with corneal epithelial stem cell precursors and a dissolvable photopolymer scaffold that maintains precise curvature geometry during the initial 72-hour adhesion window. The film is applied directly to the debrided corneal surface under local anesthetic in a procedure taking under 15 minutes, requiring no sutures — the photopolymer scaffold bonds to residual stromal tissue via UV-activated adhesion chemistry and then slowly transfers structural load to the growing epithelium before fully dissolving over 3–5 days.\n\nThe CR-5's most significant technical advancement over predecessor products like the CR-3 and competing films from Novafold is its incorporation of a gradient refractive index layer within the photopolymer scaffold, allowing the film to simultaneously correct moderate refractive errors during the healing period. Patients with corneal damage frequently experience severe uncorrected vision during recovery; the CR-5 effectively serves as a therapeutic contact lens and regenerative scaffold simultaneously. The stem cell precursor layer is derived from a proprietary Helix Biosystems allogeneic cell line, meaning the product requires no donor matching and can be deployed from standard refrigerated storage with a 6-month shelf life.\n\nIn GLMZ's context of widespread optical augmentation, the CR-5 has become the standard of care for managing what the medical community calls 'implant aftermath' — the ocular surface damage left behind when optical augments are removed, fail, or are forcibly extracted. Ripperdocs performing unauthorized augment extractions rely heavily on CR-5 films obtained through gray-market channels, and Helix Biosystems has an active (if poorly enforced) diversion-monitoring program tracking serial numbers.",
+  "description": "The OculaRegen CR-5 is a single-use bioengineered corneal reconstruction film developed by Helix Biosystems for treating traumatic corneal damage, chemical burns, and the increasingly common 'augmentation erosion' syndrome caused by poorly fitted optical implants degrading the host corneal tissue. The CR-5 consists of a 0.1mm amniotic membrane analog layered with corneal epithelial stem cell precursors and a dissolvable photopolymer scaffold that maintains precise curvature geometry during the initial 72-hour adhesion window. The film is applied directly to the debrided corneal surface under local anesthetic in a procedure taking under 15 minutes, requiring no sutures — the photopolymer scaffold bonds to residual stromal tissue via UV-activated adhesion chemistry and then slowly transfers structural load to the growing epithelium before fully dissolving over 3–5 days.\n\nThe CR-5's most significant technical advancement over predecessor products like the CR-3 and competing films from Novafold is its incorporation of a gradient refractive index layer within the photopolymer scaffold, allowing the film to simultaneously correct moderate refractive errors during the healing period. Patients with corneal damage frequently experience severe uncorrected vision during recovery; the CR-5 effectively serves as a therapeutic contact lens and regenerative scaffold simultaneously. The stem cell precursor layer is derived from a proprietary Helix Biosystems allogeneic cell line, meaning the product requires no donor matching and can be deployed from standard refrigerated storage with a 6-month Gray Zone life.\n\nIn GLMZ's context of widespread optical augmentation, the CR-5 has become the standard of care for managing what the medical community calls 'implant aftermath' — the ocular surface damage left behind when optical augments are removed, fail, or are forcibly extracted. Ripperdocs performing unauthorized augment extractions rely heavily on CR-5 films obtained through gray-market channels, and Helix Biosystems has an active (if poorly enforced) diversion-monitoring program tracking serial numbers.",
   "tier_availability": "Tier 2+",
   "developers": [
     "HELIX BIOSYSTEMS",
@@ -42,7 +42,6 @@
     "elf",
     "corporate",
     "market",
-    "shelf",
     "tier 2"
   ],
   "parent_corponation": "",
@@ -55,7 +54,7 @@
     "Nurlan Holmberg-Dembele",
     "Ouroboros Energy Helion Compact Reactor",
     "Réginald Asomaning-Čabarkapa",
-    "Shelf Life",
+    "Gray Zone life",
     "Tessera Nexus Town Car"
   ]
 }

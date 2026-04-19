@@ -3,7 +3,7 @@
   "type": "place",
   "name": "The Cinder Nave",
   "aliases": [],
-  "description": "The Cinder Nave is what happens when a structure meant for transcendence becomes infrastructure for survival. The building at its core is a massive neo-Gothic Catholic cathedral dating to the early twentieth century — Our Lady of the Perpetual Flame — which survived the 2097 Chicago firestorm, the subsequent flooding of its lower nave, and a century of urban decay with its primary stone structure essentially intact, its stained-glass long gone and its interior a gutted shell. It sits in what is technically the boundary zone between the Shelf's upper tier and the lower reaches of the South Side, in a neighborhood that the official city zoning maps classify as a transitional remediation corridor — civic planning language for 'we have given up on this.'\n\nSometime in the 2140s the cathedral was colonized by a community of Shelf-tier residents who recognized that its stone walls, its height, and its structural integrity made it one of the most defensible and durable buildings within a two-kilometer radius. The lower nave, flooded to about knee-depth and home to a remarkable algal ecosystem that provides a modest but consistent food supplement, was sealed off and designated communal resource space. The upper nave, choir loft, and crossing were built out over decades into a multi-story vertical living and working community of approximately eight hundred people, with additional overflow population sheltering in the cathedral's attached rectory, school building, and a cluster of parasitic structures that have grown onto the cathedral's exterior like architectural barnacles.\n\nThe Cinder Nave takes its name from the blackened stone of the cathedral's exterior, scorched in the 2097 fire and never cleaned, and from the nave's current aesthetic — the interior walls are still scorched above the renovation line, and the community has incorporated the charred texture into its visual identity, lining interior walkways with cinder-block planters, using ash-grey in its painted murals, and maintaining a central fire in the crossing that burns continuously in a salvaged iron basin. There is a spiritual community here, loosely organized and interfaith, that tends the fire and runs the Nave's primary mediation and conflict resolution services. They are not a formal religious body and resist any such characterization, but they are the closest thing the Cinder Nave has to a moral center, and their influence on community governance is substantial.",
+  "description": "The Cinder Nave is what happens when a structure meant for transcendence becomes infrastructure for survival. The building at its core is a massive neo-Gothic Catholic cathedral dating to the early twentieth century — Our Lady of the Perpetual Flame — which survived the 2097 Chicago firestorm, the subsequent flooding of its lower nave, and a century of urban decay with its primary stone structure essentially intact, its stained-glass long gone and its interior a gutted shell. It sits in what is technically the boundary zone between the Gray Zone's upper tier and the lower reaches of the South Side, in a neighborhood that the official city zoning maps classify as a transitional remediation corridor — civic planning language for 'we have given up on this.'\n\nSometime in the 2140s the cathedral was colonized by a community of the Gray Zone-tier residents who recognized that its stone walls, its height, and its structural integrity made it one of the most defensible and durable buildings within a two-kilometer radius. The lower nave, flooded to about knee-depth and home to a remarkable algal ecosystem that provides a modest but consistent food supplement, was sealed off and designated communal resource space. The upper nave, choir loft, and crossing were built out over decades into a multi-story vertical living and working community of approximately eight hundred people, with additional overflow population sheltering in the cathedral's attached rectory, school building, and a cluster of parasitic structures that have grown onto the cathedral's exterior like architectural barnacles.\n\nThe Cinder Nave takes its name from the blackened stone of the cathedral's exterior, scorched in the 2097 fire and never cleaned, and from the nave's current aesthetic — the interior walls are still scorched above the renovation line, and the community has incorporated the charred texture into its visual identity, lining interior walkways with cinder-block planters, using ash-grey in its painted murals, and maintaining a central fire in the crossing that burns continuously in a salvaged iron basin. There is a spiritual community here, loosely organized and interfaith, that tends the fire and runs the Nave's primary mediation and conflict resolution services. They are not a formal religious body and resist any such characterization, but they are the closest thing the Cinder Nave has to a moral center, and their influence on community governance is substantial.",
   "atmosphere": {
     "sights": [
       "The cathedral's massive scorched exterior rising incongruously from the surrounding low-rise ruins and improvised structures, still visibly Gothic in its proportions despite decades of modification",
@@ -24,10 +24,10 @@
       "Cooking, human habitation, and the particular compressed smell of a dense vertical community — food, bodies, laundry, and the ongoing business of living",
       "Old stone and the faint mineral smell of water-damaged masonry — the smell of the building itself, unchanged since the fire"
     ],
-    "feel": "The Cinder Nave produces an immediate and powerful emotional response in nearly every visitor — the combination of the building's scale, its acoustic properties, its central fire, and its dense human habitation creates something that resists straightforward categorization. It is simultaneously a ruin, a home, a community, and something that feels almost intentionally sacred despite the entirely pragmatic origins of its current use. Residents move through the space with an ease that comes from deep familiarity, and the community's norms — the fire-tenders' quiet authority, the mediation culture, the shared stewardship of the algal floor — create a social texture that is notably different from other Shelf-tier communities. Outsiders are watched with curiosity rather than hostility, but the watching is thorough.",
+    "feel": "The Cinder Nave produces an immediate and powerful emotional response in nearly every visitor — the combination of the building's scale, its acoustic properties, its central fire, and its dense human habitation creates something that resists straightforward categorization. It is simultaneously a ruin, a home, a community, and something that feels almost intentionally sacred despite the entirely pragmatic origins of its current use. Residents move through the space with an ease that comes from deep familiarity, and the community's norms — the fire-tenders' quiet authority, the mediation culture, the shared stewardship of the algal floor — create a social texture that is notably different from other the Gray Zone-tier communities. Outsiders are watched with curiosity rather than hostility, but the watching is thorough.",
     "tags": []
   },
-  "demographics": "Approximately eight hundred permanent residents, overwhelmingly Tier 4 with some Tier 3 skilled workers, drawn from a wide range of ethnic and national backgrounds reflecting the Shelf's demographic diversity. The fire-tending community is interfaith and multiethnic. A small number of synthetic persons live here under informal community protection and are integrated into the community's daily life.",
+  "demographics": "Approximately eight hundred permanent residents, overwhelmingly Tier 4 with some Tier 3 skilled workers, drawn from a wide range of ethnic and national backgrounds reflecting the Gray Zone's demographic diversity. The fire-tending community is interfaith and multiethnic. A small number of synthetic persons live here under informal community protection and are integrated into the community's daily life.",
   "economy": "The algal ecosystem in the lower nave provides a supplemental food source and a small trade good — the community cultivates and sells specific algal strains with pharmaceutical and nutritional applications to buyers in the South Side and the Lakeshore Corridor. Primary income is through labor export — Nave residents working in the industrial and service economies of adjacent districts — and through a modest trade in artisan goods produced in the community workshops built into the side aisles. The fire-tenders provide mediation services for a requested contribution, not a fixed fee.",
   "power_structure": "Community governance is conducted through a general assembly that meets weekly in the crossing, with the fire-tenders holding a formal advisory role and significant informal moral authority. There is no relationship with Ferrogate Security — the community manages its own security through a rotating watch system. No corponation holds any contractual relationship with the Nave, a status that is actively maintained as a matter of community principle.",
   "dangers": [
@@ -48,7 +48,7 @@
   ],
   "connections": {
     "adjacent_to": [
-      "The Shelf",
+      "the Gray Zone",
       "The South Side",
       "West Pulldown",
       "The Stockyard"
@@ -57,7 +57,7 @@
     "tags": []
   },
   "frequented_by": [
-    "Shelf and South Side residents using the community's mediation services",
+    "the Gray Zone and South Side residents using the community's mediation services",
     "Buyers from Lakeshore Corridor pharmaceutical networks purchasing algal strains",
     "Synthetic persons seeking informal sanctuary and community integration",
     "Researchers and Diaspora journalists documenting the community as a civil society case study",
@@ -109,8 +109,7 @@
     "shelter",
     "food",
     "fire",
-    "lake",
-    "shelf"
+    "lake"
   ],
   "related_entities": [
     "Arcturus Defense Solutions",
@@ -127,5 +126,7 @@
     "Glass",
     "The Iron Choir",
     "Iron"
-  ]
+  ],
+  "zone": "Z1",
+  "controllingCorponation": null
 }

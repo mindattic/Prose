@@ -1,12 +1,13 @@
 {
   "id": "019d6143aa55747f9ea91e25b08be635",
+  "rating": 80,
   "name": "Vantablack Media PrismWatch DX-7 Covert Retinal Advertising Impression Tracker",
   "brand_name": "Vantablack",
   "product_name": "Vantablack Media PrismWatch DX-7 Covert Retinal Advertising Impression Tracker",
   "type": "technology",
   "aliases": [],
   "subcategory": "surveillance",
-  "description": "PrismWatch DX-7 is a covert surveillance system embedded within Vantablack Media's ubiquitous digital advertising panels — the floor-to-ceiling displays that line transit corridors, commercial concourses, and public plazas throughout GLMZ. Each PrismWatch-equipped panel contains a high-resolution near-infrared camera array operating at 240fps, concealed behind the display substrate, which captures detailed retinal reflection patterns from every individual who passes within 8 meters. The system uses these retinal images not for identity verification but for Vantablack's proprietary Impression Confirmation Protocol — verifying that a specific individual's eyes were directed at specific advertising content for a minimum dwell time, enabling advertisers to pay per confirmed human visual impression rather than per display-second.",
+  "description": "PrismWatch DX-7 is a covert surveillance system embedded within Vantablack Media\u0027s ubiquitous digital advertising panels \u2014 the floor-to-ceiling displays that line transit corridors, commercial concourses, and public plazas throughout GLMZ. Each PrismWatch-equipped panel contains a high-resolution near-infrared camera array operating at 240fps, concealed behind the display substrate, which captures detailed retinal reflection patterns from every individual who passes within 8 meters. The system uses these retinal images not for identity verification but for Vantablack\u0027s proprietary Impression Confirmation Protocol \u2014 verifying that a specific individual\u0027s eyes were directed at specific advertising content for a minimum dwell time, enabling advertisers to pay per confirmed human visual impression rather than per display-second.",
   "tier_availability": "Universal (passive; affects anyone in public advertising-panel proximity regardless of tier)",
   "developers": [
     "VANTABLACK MEDIA",
@@ -26,12 +27,12 @@
     "targeted manipulation through personalized advertising content",
     "covert population stress and sentiment monitoring"
   ],
-  "social_impact": "The PrismWatch DX-7 has transformed GLMZ's advertising infrastructure into one of the world's most comprehensive passive biometric collection systems, with the legal protection of being classified as commercial rather than surveillance data. Citizens who consciously avoid cameras, block neural signals, and use identity countermeasures typically have no awareness that the advertising panels they walk past are harvesting their retinal signatures. The behavioral and emotional data layer has enabled Vantablack's clients to conduct what analysts describe as 'population mood management' — adjusting advertising content across districts in real time to suppress civic unrest indicators, a capability that has attracted both enormous corporate investment and allegations of mass psychological manipulation.",
+  "social_impact": "The PrismWatch DX-7 has transformed GLMZ\u0027s advertising infrastructure into one of the world\u0027s most comprehensive passive biometric collection systems, with the legal protection of being classified as commercial rather than surveillance data. Citizens who consciously avoid cameras, block neural signals, and use identity countermeasures typically have no awareness that the advertising panels they walk past are harvesting their retinal signatures. The behavioral and emotional data layer has enabled Vantablack\u0027s clients to conduct what analysts describe as \u0027population mood management\u0027 \u2014 adjusting advertising content across districts in real time to suppress civic unrest indicators, a capability that has attracted both enormous corporate investment and allegations of mass psychological manipulation.",
   "story_hooks": [
-    "A client needs their retinal signature purged from Vantablack's impression database before a corporate tribunal uses it to place them at a location — the only way in is through a Vantablack data center with air-gapped archive servers",
-    "Vantablack's emotional response data shows a city-wide surge in a specific stress signature concentrated in a particular district — someone is paying to suppress that data, and a journalist wants to know why",
-    "A fixer discovers that the PrismWatch system in a specific corridor has been modified to flag a particular retinal signature for immediate physical intercept — someone has turned the advertising panels into an assassination trigger",
-    "The DX-7 database contains retinal scans from inside a corporate boardroom — someone installed a panel in a private space, and the data captured there is worth an enormous amount to the right buyer"
+    "A client needs their retinal signature purged from Vantablack\u0027s impression database before a corporate tribunal uses it to place them at a location \u2014 the only way in is through a Vantablack data center with air-gapped archive servers",
+    "Vantablack\u0027s emotional response data shows a city-wide surge in a specific stress signature concentrated in a particular district \u2014 someone is paying to suppress that data, and a journalist wants to know why",
+    "A fixer discovers that the PrismWatch system in a specific corridor has been modified to flag a particular retinal signature for immediate physical intercept \u2014 someone has turned the advertising panels into an assassination trigger",
+    "The DX-7 database contains retinal scans from inside a corporate boardroom \u2014 someone installed a panel in a private space, and the data captured there is worth an enormous amount to the right buyer"
   ],
   "tags": [
     "surveillance",
@@ -42,14 +43,6 @@
     "corporate",
     "contract"
   ],
-  "parent_corponation": "",
-  "related_entities": [
-    "Cinderblock AI GazeNet PX-11 Predictive Crowd Behavior Analytics Platform",
-    "Cinderblock Ai",
-    "Crucible Industries Battle Rifle BR-11 'Tribunal'",
-    "GLMZ",
-    "TESSERA PG-2 'Signature'",
-    "Vantablack Media",
-    "Yuki Nwosu-Petrenko"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

@@ -18,11 +18,11 @@
   "opportunities": [],
   "story_hooks": [],
   "connections": {
-    "adjacent_to": [],
+    "adjacent_to": ["Green Bay proper"],
     "exits": [],
     "tags": []
   },
-  "frequented_by": [],
+  "frequented_by": ["Olumide Park-Svensson"],
   "notable_locations": [],
   "coordinates": {
     "lat": 44.2619,
@@ -38,5 +38,7 @@
     "circuit",
     "appleton"
   ],
-  "related_entities": []
+  "related_entities": ["Olumide Park-Svensson", "Quarter Finals", "Still Life"],
+  "zone": "Z9",
+  "controllingCorponation": null
 }

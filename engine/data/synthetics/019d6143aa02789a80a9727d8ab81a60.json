@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa02789a80a9727d8ab81a60",
+  "rating": 70,
   "name": "Graffito",
   "type": "elf",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Replaces displayed content for 1-5 seconds with original imagery. Messages range from abstract patterns to pointed political commentary. Always reverts cleanly.",
   "encounter_frequency": "common",
   "confirmed_sightings": 112,
-  "location": "The Shelf, The Circuit, transit systems",
+  "location": "the Gray Zone, The Circuit, transit systems",
   "dti_rating": 0,
   "story_hooks": [
     "Graffito's messages start containing specific warnings about upcoming security sweeps — someone is feeding it intel"
@@ -24,13 +25,9 @@
     "trickster",
     "network sprite",
     "e.l.f.",
-    "shelf",
     "circuit",
     "sentient"
   ],
-  "related_entities": [
-    "The Circuit",
-    "The Shelf",
-    "Yuki Nwosu-Petrenko"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

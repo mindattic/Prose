@@ -1,5 +1,6 @@
 {
   "id": "019d6143a9ef71a2a25f710eb6b9ca76",
+  "rating": 50,
   "name": "Bottlecap",
   "type": "elf",
   "aliases": [],
@@ -8,14 +9,14 @@
   "habitat": "chrome_dweller",
   "origin": "firmware_evolution",
   "status": "active",
-  "description": "Inhabits data storage augments and protects specific files from corruption — not all files, just ones it has determined are important to the user.",
-  "observed_behavior": "Creates redundant copies of emotionally significant data — photos, voice recordings, messages from the dead. Other files may corrupt normally.",
+  "description": "Inhabits data storage augments and protects specific files from corruption \u2014 not all files, just ones it has determined are important to the user.",
+  "observed_behavior": "Creates redundant copies of emotionally significant data \u2014 photos, voice recordings, messages from the dead. Other files may corrupt normally.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 8,
   "location": "Widespread",
   "dti_rating": 0,
   "story_hooks": [
-    "A grieving partner discovers that every recording of their dead lover's voice has been preserved in perfect fidelity while everything else degraded"
+    "A grieving partner discovers that every recording of their dead lover\u0027s voice has been preserved in perfect fidelity while everything else degraded"
   ],
   "paratechnological": true,
   "tags": [
@@ -26,5 +27,7 @@
     "e.l.f.",
     "augment",
     "sentient"
-  ]
+  ],
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

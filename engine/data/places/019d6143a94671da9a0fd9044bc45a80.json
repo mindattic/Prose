@@ -3,7 +3,7 @@
   "type": "place",
   "name": "The Meridian Core",
   "aliases": [],
-  "description": "The Meridian Core is what the brochure promised. Glass towers catch manufactured\nsunlight and throw it back in geometric patterns. The air is filtered, temperature-\ncontrolled, and faintly scented — Axiom Environmental Services offers a rotating\nseasonal palette, and this quarter it's \"Alpine Morning,\" which smells like pine\ntrees and the absence of poor people. The streets are wide, clean, and monitored\nby enough cameras to make God feel surveilled. Corporate employees walk with the\nparticular confidence of people whose health insurance actually covers things.\nEverything is branded. The benches say Axiom. The trash cans say Axiom. The trees\nare \"Presented by Axiom Green Initiative.\" The trees are real, which is the most\nexpensive thing about them.\n\nKyle comes here for jobs. Corporate buildings need things done that corporate\nemployees can't do — wetwork, data extraction, intimidation of the kind that\ndoesn't show up on quarterly reports. The work pays well. The experience is\nmiserable. Every surface in the Core is designed to make someone like Kyle feel\nlike a contaminant. Security checkpoints scan his augments and flag them as\n\"non-standard.\" Retail algorithms adjust prices upward when his credit profile\nenters a store. People don't stare — that would be impolite — but they adjust\ntheir paths, the way you walk around something unpleasant on the sidewalk. The\nCore is beautiful in the way a model home is beautiful: technically flawless,\nemotionally void, and not meant for anyone who actually lives.\n\nThe real obscenity of the Core isn't the wealth. It's the normalcy. People here\nlive genuinely pleasant lives. Their kids go to good schools. Their augments work\nperfectly. They eat well, sleep well, and die at statistically appropriate ages.\nThey are not bad people. They are people who have been so thoroughly insulated\nfrom the consequences of the system that sustains them that empathy would require\nan act of imagination most of them have never been asked to perform. The Core\ndoesn't hate the Shelf. It simply doesn't think about it.",
+  "description": "The Meridian Core is what the brochure promised. Glass towers catch manufactured\nsunlight and throw it back in geometric patterns. The air is filtered, temperature-\ncontrolled, and faintly scented — Axiom Environmental Services offers a rotating\nseasonal palette, and this quarter it's \"Alpine Morning,\" which smells like pine\ntrees and the absence of poor people. The streets are wide, clean, and monitored\nby enough cameras to make God feel surveilled. Corporate employees walk with the\nparticular confidence of people whose health insurance actually covers things.\nEverything is branded. The benches say Axiom. The trash cans say Axiom. The trees\nare \"Presented by Axiom Green Initiative.\" The trees are real, which is the most\nexpensive thing about them.\n\nKyle comes here for jobs. Corporate buildings need things done that corporate\nemployees can't do — wetwork, data extraction, intimidation of the kind that\ndoesn't show up on quarterly reports. The work pays well. The experience is\nmiserable. Every surface in the Core is designed to make someone like Kyle feel\nlike a contaminant. Security checkpoints scan his augments and flag them as\n\"non-standard.\" Retail algorithms adjust prices upward when his credit profile\nenters a store. People don't stare — that would be impolite — but they adjust\ntheir paths, the way you walk around something unpleasant on the sidewalk. The\nCore is beautiful in the way a model home is beautiful: technically flawless,\nemotionally void, and not meant for anyone who actually lives.\n\nThe real obscenity of the Core isn't the wealth. It's the normalcy. People here\nlive genuinely pleasant lives. Their kids go to good schools. Their augments work\nperfectly. They eat well, sleep well, and die at statistically appropriate ages.\nThey are not bad people. They are people who have been so thoroughly insulated\nfrom the consequences of the system that sustains them that empathy would require\nan act of imagination most of them have never been asked to perform. The Core\ndoesn't hate the Gray Zone. It simply doesn't think about it.",
   "atmosphere": {
     "sights": [
       "Glass and steel towers reflecting manufactured weather",
@@ -25,11 +25,11 @@
     ],
     "smells": [
       "This quarter's AtmoSync fragrance: 'Alpine Morning' (pine, clean linen, superiority)",
-      "Expensive coffee from cafes that charge more per cup than a Shelf resident earns in a day",
+      "Expensive coffee from cafes that charge more per cup than a Gray Zone resident earns in a day",
       "Nothing unpleasant. Ever. The air scrubbers are very thorough.",
       "Occasionally, if the wind shifts wrong, a hint of salt air from the harbor — quickly corrected"
     ],
-    "feel": "Uncanny. The Core feels like walking through a render — too clean, too quiet, too\noptimized. For someone from the Shelf, it triggers a specific discomfort: the\nfeeling of being in a place that was not designed with your existence in mind. Not\nhostile, exactly. Just profoundly indifferent to whether you live or die. It's\ncomfortable in the way a dentist's waiting room is comfortable — everything is\nfine, and you want to leave immediately.",
+    "feel": "Uncanny. The Core feels like walking through a render — too clean, too quiet, too\noptimized. For someone from the Gray Zone, it triggers a specific discomfort: the\nfeeling of being in a place that was not designed with your existence in mind. Not\nhostile, exactly. Just profoundly indifferent to whether you live or die. It's\ncomfortable in the way a dentist's waiting room is comfortable — everything is\nfine, and you want to leave immediately.",
     "tags": []
   },
   "demographics": "Approximately 150,000 registered residents, overwhelmingly Tier 4 and Tier 5 corporate employees and their dependents. Demographically homogeneous by design — diversity exists but is curated, credentialed, and monitored. Support staff (cleaning, maintenance, food service) commute in from lower-tier districts and are not counted in residency figures. Unregistered presence is near zero; the surveillance density makes it functionally impossible.",
@@ -47,20 +47,20 @@
     "High-paying contract work for those willing to get their hands dirty on behalf of clean people",
     "Access to corporate-grade tech, medicine, and information — if you can afford it or steal it",
     "Intelligence gathering — the Core leaks data like a sieve if you know where to listen",
-    "The black market for corporate credentials — a temporary Core access pass is worth a month's rent on the Shelf",
+    "The black market for corporate credentials — a temporary Core access pass is worth a month's rent in the Gray Zone",
     "Rich people who want things they can't ask for publicly"
   ],
   "story_hooks": [
     "Kyle's jobs in the Core — the cognitive dissonance of violence in a place this clean",
     "The credential economy — forged access passes as a plot device and social commentary",
-    "Corporate employees who secretly fund the Collective or sympathize with the Shelf",
+    "Corporate employees who secretly fund the Collective or sympathize with the Gray Zone",
     "The gap between the Core's self-image and its actual function in the city's ecosystem",
     "A Core resident who hires Kyle and discovers what the lower tiers actually look like"
   ],
   "connections": {
     "adjacent_to": [
       "The Spire (above — the Core surrounds its base)",
-      "The Shelf (below — connected by MeriRail and service corridors)",
+      "the Gray Zone (below — connected by MeriRail and service corridors)",
       "The Circuit (lateral — the Core pretends this border doesn't exist)"
     ],
     "exits": [],
@@ -72,7 +72,7 @@
     "Axiom Security personnel — human and drone",
     "Contractors from lower tiers (with temporary access credentials and visible discomfort)",
     "Tourists from other corporate enclaves",
-    "The occasional Shelf resident on a job, sticking out like a patch on silk"
+    "The occasional the Gray Zone resident on a job, sticking out like a patch on silk"
   ],
   "notable_locations": [],
   "coordinates": {
@@ -95,8 +95,7 @@
     "doctor",
     "market",
     "food",
-    "drone",
-    "shelf"
+    "drone"
   ],
   "related_entities": [
     "Dredge Mining Collective",
@@ -107,5 +106,7 @@
     "Glass",
     "Zephyr Bhattacharya",
     "Kyle Ellen Corbin-Vasik"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

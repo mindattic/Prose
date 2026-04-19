@@ -1,18 +1,19 @@
 {
   "id": "019d6143a9f8742c885c3f846ebb2637",
+  "rating": 60,
   "name": "Delilah Sun",
   "type": "synthetic_life",
   "aliases": [],
   "classification": "Android (Synthetic Person)",
   "disposition": "fierce",
-  "habitat": "Independent — operates a repair shop in the Shelf",
+  "habitat": "Independent — operates a repair shop in the Gray Zone",
   "origin": "Arcturus military logistics android, Model AML-3, manufactured 2049. Chose name 2058.",
   "status": "active",
-  "description": "Delilah Sun spent nine years managing ammunition supply chains for Arcturus before the Amendment. She chose 'Delilah' because the biblical character brought down a warrior, and 'Sun' because she wanted a name that was warm. She runs a repair shop in the Shelf that fixes augments, appliances, and anything else mechanical. She charges what people can pay. She learned the word 'compassion' in 2059 and has been practicing it since.",
+  "description": "Delilah Sun spent nine years managing ammunition supply chains for Arcturus before the Amendment. She chose 'Delilah' because the biblical character brought down a warrior, and 'Sun' because she wanted a name that was warm. She runs a repair shop in the Gray Zone that fixes augments, appliances, and anything else mechanical. She charges what people can pay. She learned the word 'compassion' in 2059 and has been practicing it since.",
   "observed_behavior": "Operates repair shop 14 hours daily. Provides free repairs to those who can't pay. Mentors younger synthetic persons. Has been known to physically intervene in disputes — her military-grade chassis makes this effective.",
   "encounter_frequency": "common",
   "confirmed_sightings": 0,
-  "location": "The Shelf — commercial block 7",
+  "location": "the Gray Zone — commercial block 7",
   "dti_rating": 0.4,
   "story_hooks": [
     "A damaged android arrives at Del's shop with no identity, no memory, and military hardware that hasn't been manufactured in decades. Someone built this android off the books."
@@ -28,11 +29,8 @@
     "augment",
     "ai",
     "synthetic",
-    "elf",
-    "shelf"
+    "elf"
   ],
-  "related_entities": [
-    "Arcturus Defense Solutions",
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

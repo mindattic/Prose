@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa0272beb09343fb7d2ef35f",
+  "rating": 60,
   "name": "Glass Jar",
   "type": "elf",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Creates neural state captures during extreme physiological stress.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 2,
-  "location": "The Shelf",
+  "location": "the Gray Zone",
   "dti_rating": 0,
   "story_hooks": [
     "A widow recovers her husbands last neural snapshot"
@@ -26,11 +27,8 @@
     "e.l.f.",
     "augment",
     "neural",
-    "shelf",
     "sentient"
   ],
-  "related_entities": [
-    "TESSERA Widow Mk. III",
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

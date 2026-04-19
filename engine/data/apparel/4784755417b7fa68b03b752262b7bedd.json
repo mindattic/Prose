@@ -3,7 +3,7 @@
   "name": "Nomura Streetwear Signal Beanie",
   "type": "apparel",
   "category": "headwear",
-  "description": "A knitted beanie with conductive thread woven into the fabric that acts as a passive antenna for short-range mesh network communication. From the outside, it looks like an ordinary beanie in dark colors. The conductive threading is invisible to casual inspection but extends the wearer's personal comm range by approximately 40%.\n\nPopular in Shelf districts where official comm infrastructure is unreliable or surveilled. The Signal Beanie lets users connect to local mesh networks without carrying visible tech that might attract attention from security patrols.",
+  "description": "A knitted beanie with conductive thread woven into the fabric that acts as a passive antenna for short-range mesh network communication. From the outside, it looks like an ordinary beanie in dark colors. The conductive threading is invisible to casual inspection but extends the wearer's personal comm range by approximately 40%.\n\nPopular in the Gray Zone districts where official comm infrastructure is unreliable or surveilled. The Signal Beanie lets users connect to local mesh networks without carrying visible tech that might attract attention from security patrols.",
   "tier_association": "Tier 1",
   "materials": [
     "synthetic knit",
@@ -13,7 +13,7 @@
   "functionality": "Passive mesh network antenna, +40% comm range extension",
   "what_it_says": "You look like everyone else on the street, but you're hearing conversations they can't reach.",
   "worn_by": [
-    "Shelf residents",
+    "the Gray Zone residents",
     "mesh network users",
     "street-level operatives"
   ],
@@ -22,7 +22,7 @@
   "aug_compatible": true,
   "gene_compatible": false,
   "story_hooks": [
-    "A batch of Signal Beanies sold at a Shelf market are found to be relaying all mesh traffic to an unknown third party — someone turned anonymity tools into surveillance devices."
+    "A batch of Signal Beanies sold at a the Gray Zone market are found to be relaying all mesh traffic to an unknown third party — someone turned anonymity tools into surveillance devices."
   ],
   "tags": [
     "apparel",
@@ -37,7 +37,7 @@
     "The Signal"
   ],
   "physical_description": {
-    "visual_profile": "A fitted, unassuming knit beanie that sits low on the head with a slight slouch. Clean lines, minimal branding. Appears deliberately anonymous—the kind of everyday headwear you'd see in any Shelf district or corpo transit hub.",
+    "visual_profile": "A fitted, unassuming knit beanie that sits low on the head with a slight slouch. Clean lines, minimal branding. Appears deliberately anonymous—the kind of everyday headwear you'd see in any the Gray Zone district or corpo transit hub.",
     "fit": "Snug around the crown and ears, with a relaxed drape at the back. Stretches to accommodate most head sizes without bunching. The fabric has subtle give but holds shape without elastic bands.",
     "primary_material": "Blended synth-wool base (60% recycled polyester, 40% lab-grown wool analog) with conductive carbon-thread interwoven throughout in a grid pattern too fine to see with the naked eye",
     "texture": "Smooth, uniform knit on the exterior with a faint ribbed vertical pattern. Soft to the touch despite the embedded conductive filament. Interior has a brushed fleece lining for warmth and to conceal the tech architecture.",
@@ -52,7 +52,7 @@
       "Lightweight enough for extended wear without fatigue"
     ],
     "tier_indicator": "Tier 3-4 functional. Affordable enough for working-class adoption (estimated Φ40-80 range), but the tech integration marks it as above survival-grade. Too practical to be luxury.",
-    "cultural_context": "Worn by Shelf district residents, mesh network activists, independent couriers, off-grid workers, and anyone avoiding corpo surveillance infrastructure. Signals self-sufficiency and distrust of official systems without being ostentatious. Common in ungoverned zones and fringe communities.",
+    "cultural_context": "Worn by the Gray Zone district residents, mesh network activists, independent couriers, off-grid workers, and anyone avoiding corpo surveillance infrastructure. Signals self-sufficiency and distrust of official systems without being ostentatious. Common in ungoverned zones and fringe communities.",
     "condition_typical": "Broken-in but maintained. Shows subtle wear at the seams and back panel after months of use, but the conductive threads remain intact. May have minor pilling or fading from weathering and mesh protocol traffic."
   },
   "image_prompt": "A neo-noir fashion product shot of a matte charcoal Nomura Signal Beanie on a dark-skinned model with chrome neck circuitry visible beneath the jawline. Beanie pulled low, obscuring eyes in shadow. Shot against a gritty brick wall with neon green mesh network visualizations barely visible in the air around the head, suggesting active signal transmission. Moody cyan and amber rim lighting. Close-up detail shot showing the ribbed knit texture and brushed interior. Dark studio backdrop with subtle rain reflections. High contrast, neo-noir urban aesthetic. --ar 2:3 --v 6",

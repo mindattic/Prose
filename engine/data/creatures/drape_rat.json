@@ -11,7 +11,7 @@
   "origin": "natural_mutation",
   "description": "At first glance, a Drape Rat looks like a standard large rat. The difference becomes apparent when it spreads — a loose membrane of thin skin stretched between its elongated forelimbs and flanks allows it to glide short distances, typically 4-8 meters, from elevated positions. This is not true flight, and the membrane is not the dramatic wing structure of a flying squirrel — it looks more like excess skin, almost pathological, until the animal launches. Drape Rats are around 3-4 kilograms, lean and long-bodied, with oversized hind claws adapted for ceiling-surface grip. They are pale tan with dark eye rings that give them an unsettling hollow-eyed appearance.",
   "habitat": [
-    "Shelf districts",
+    "the Gray Zone districts",
     "open-floor warehouse ruins",
     "market hall ceilings",
     "multi-story collapse zones",
@@ -24,8 +24,8 @@
     "Oversized hind claws allow sustained inverted grip on rough ceiling surfaces",
     "Pack hunting behavior — multiple Drape Rats will herd prey beneath a ceiling position before one or more drop"
   ],
-  "encounters": "The classic Drape Rat encounter is the unseen drop — something hits a person from above in a dark space, there's a confusion of claws and movement, and it's gone before they understand what happened. In well-lit spaces they are more cautious, and residents sometimes spot the dark shapes clinging to warehouse ceilings overhead, watching. Street children in the Shelf call the habit of looking up before entering a dark building 'doing a drape check.'",
-  "known_uses": "Their glide membranes are used in craft jewelry and small decorative items by some Shelf artisans. A very small number of people have successfully kept juvenile Drape Rats as unusual companions, though adults rarely tolerate handling.",
+  "encounters": "The classic Drape Rat encounter is the unseen drop — something hits a person from above in a dark space, there's a confusion of claws and movement, and it's gone before they understand what happened. In well-lit spaces they are more cautious, and residents sometimes spot the dark shapes clinging to warehouse ceilings overhead, watching. Street children in the Gray Zone call the habit of looking up before entering a dark building 'doing a drape check.'",
+  "known_uses": "Their glide membranes are used in craft jewelry and small decorative items by some the Gray Zone artisans. A very small number of people have successfully kept juvenile Drape Rats as unusual companions, though adults rarely tolerate handling.",
   "story_hooks": [
     "A market hall has become effectively inaccessible after dark due to a large Drape Rat colony in the ceiling grid — the stall holders are losing income and want a solution that doesn't wreck the structure",
     "Someone found a Drape Rat with a small canister attached to its membrane via crude wire harness — the canister contains something"
@@ -38,7 +38,6 @@
     "creature",
     "vermin",
     "natural_mutation",
-    "shelf",
     "large_variant",
     "aerial",
     "pack_hunter"

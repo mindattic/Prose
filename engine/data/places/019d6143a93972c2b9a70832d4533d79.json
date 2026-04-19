@@ -67,7 +67,7 @@
   ],
   "connections": {
     "adjacent_to": [
-      "The Shelf (connected by the Underpass — a converted drainage tunnel)",
+      "the Gray Zone (connected by the Underpass — a converted drainage tunnel)",
       "The Meridian Core (hard border — security checkpoint, heavily monitored)",
       "Old Harbor (water access — smuggling routes)"
     ],
@@ -126,5 +126,7 @@
     "Lark Sigurdsson",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Kyle Ellen Corbin-Vasik"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

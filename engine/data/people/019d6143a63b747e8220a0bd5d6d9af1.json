@@ -9,8 +9,8 @@
   "role": "Field protector and physical security — Last Light",
   "age": 30,
   "status": "active",
-  "location": "The Shelf — rooms in the community center when he's not sleeping at whatever client location needs overnight security, near Western and Division",
-  "description": "Cipher Vestergaard-Kristjánsson stands between excluded people and the things that hurt them. That's the job. Everything else — the pay, the recognition, the future — is negotiable. Josiah is six-two, built like a person who does physical work because physical work needs doing, and carries himself with the controlled energy of someone who learned early that being big and Black on the Shelf means every interaction starts with someone else's assumptions about your intentions.\n\nHe grew up in a Shelf community defense collective — neighbors who organized to protect their block when corporate security treated the area as an unregulated zone. His mother ran the collective. His father was killed by a private security contractor during a jurisdictional sweep when Josiah was eleven. The contractor faced no charges because the Shelf exists in a governance gap where accountability is a luxury the excluded cannot afford. Josiah learned two things from this: violence is the language the powerful speak, and the powerless need someone who can translate.\n\nRuth recruited him from the community defense network three years ago. He came because Ruth's approach — legal frameworks, documented resistance, non-violent intervention — was more sustainable than the collective's escalating confrontations with security forces. He stays because Ruth is the most principled person he has ever met and because the work, even underfunded and exhausting, feels like the only honest thing left.",
+  "location": "the Gray Zone — rooms in the community center when he's not sleeping at whatever client location needs overnight security, near Western and Division",
+  "description": "Cipher Vestergaard-Kristjánsson stands between excluded people and the things that hurt them. That's the job. Everything else — the pay, the recognition, the future — is negotiable. Josiah is six-two, built like a person who does physical work because physical work needs doing, and carries himself with the controlled energy of someone who learned early that being big and Black in the Gray Zone means every interaction starts with someone else's assumptions about your intentions.\n\nHe grew up in a the Gray Zone community defense collective — neighbors who organized to protect their block when corporate security treated the area as an unregulated zone. His mother ran the collective. His father was killed by a private security contractor during a jurisdictional sweep when Josiah was eleven. The contractor faced no charges because the Gray Zone exists in a governance gap where accountability is a luxury the excluded cannot afford. Josiah learned two things from this: violence is the language the powerful speak, and the powerless need someone who can translate.\n\nRuth recruited him from the community defense network three years ago. He came because Ruth's approach — legal frameworks, documented resistance, non-violent intervention — was more sustainable than the collective's escalating confrontations with security forces. He stays because Ruth is the most principled person he has ever met and because the work, even underfunded and exhausting, feels like the only honest thing left.",
   "psychology": {
     "facet_weights": {
       "wound": 0.65,
@@ -80,13 +80,13 @@
     }
   ],
   "story_hooks": [
-    "The security contractor who killed Josiah's father appears on a Shelf patrol — the past becomes present and the restraint faces its ultimate test",
+    "The security contractor who killed Josiah's father appears on a the Gray Zone patrol — the past becomes present and the restraint faces its ultimate test",
     "A protection case requires physical confrontation that Ruth's legal methods cannot resolve — Josiah must choose between Ruth's rules and the client's safety",
-    "Community defense collectives across the Shelf begin organizing and want Josiah to lead — the scale increases but the resources don't",
+    "Community defense collectives across the Gray Zone begin organizing and want Josiah to lead — the scale increases but the resources don't",
     "Josiah takes a severe beating protecting a client and must recover while the work doesn't stop — the body's limits versus the mission's demands"
   ],
   "narrative_function": "Josiah embodies the physical cost of non-violent resistance — the bruises, the restraint, the barely contained fury of a strong man who chooses not to fight back because the cause requires it. His stories explore the tension between justice and anger, between his father's death and Ruth's principles, between the violence he's capable of and the peace he's chosen.",
-  "augmentations": "Reinforced skeletal structure in arms, shoulders, and ribcage — installed by a Shelf surgeon after a beating during a community defense action. The augmentation was paid for by a community fund. Dermal toughening on forearms and hands — not armor, but sufficient to absorb impacts. No neural or cognitive augmentations — Josiah doesn't trust anything in his brain that he didn't put there.",
+  "augmentations": "Reinforced skeletal structure in arms, shoulders, and ribcage — installed by a the Gray Zone surgeon after a beating during a community defense action. The augmentation was paid for by a community fund. Dermal toughening on forearms and hands — not armor, but sufficient to absorb impacts. No neural or cognitive augmentations — Josiah doesn't trust anything in his brain that he didn't put there.",
   "daily_life": "Wakes early. Physical training in the community center's back room — functional, practical, focused on endurance and restraint. Reviews the day's protection assignments from Ruth. Accompanies clients through checkpoints, provides physical security during eviction confrontations, and patrols the blocks around the community center. Evenings he maintains the center's physical infrastructure — repairs, security improvements, the practical work of keeping a building functional on no budget. Eats at the community kitchen. Sleeps when the clients are safe.",
   "affiliation": "Last Light",
   "uses_facets": false,
@@ -136,7 +136,7 @@
       "He is built for violence and committed to non-violence — the body and the principle are in permanent tension",
       "He absorbed hits as evidence for legal cases in a legal system that no longer functions — the sacrifice serves a mechanism that's already broken",
       "He has his father's killer's name and does nothing with it — the restraint that honors Ruth's teaching is also the restraint that prevents justice for his father",
-      "He wants a Shelf that doesn't need Last Light while knowing that his identity depends on the Shelf needing him"
+      "He wants a Shelf that doesn't need Last Light while knowing that his identity depends on the Gray Zone needing him"
     ],
     "habits": [
       "Physical training every morning — controlled, specific, focused on restraint as much as strength",
@@ -176,7 +176,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -194,12 +194,11 @@
   ],
   "related_entities": [
     "Dredge Mining Collective",
-    "The Shelf",
     "Arcturus KS-7 'Nursery'",
     "Honest Burger",
     "Lead"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Northern European (40.3%) and Eastern European (34.8%) form the genetic foundation, creating cool-toned baseline features. Substantial secondary ancestry from Eastern Europe adds Slavic cheekbone prominence. Sub-Saharan African (9.4%), Central Asian (6.9%), Hispanic/Latin American (5.8%), and South Asian (2.8%) contributions create phenotypic warmth and depth. The result: warm light-to-medium brown skin with golden undertones, higher and more angular cheekbones from Northern/Eastern European and Central Asian mix, broader nasal bridge and fuller lips from African heritage, eye structure reflecting the layered ancestry with darker pigmentation throughout.",
     "height_cm": 188,
@@ -216,9 +215,9 @@
       "Scars across the knuckles of both hands — white, layered, consistent with impact trauma and healing",
       "Thin white line across his left collarbone, surgical, from the skeletal reinforcement procedure"
     ],
-    "visible_augmentations": "The reinforced skeletal structure does not produce visible chrome or obvious augmentation markers — it was installed subcutaneously by a Shelf surgeon. What is visible: the forearm dermal toughening appears as subtle discoloration and slightly thickened skin texture on both forearms and hands, creating a faint matte finish that catches light differently than natural skin. The area has a faint silvery-grey undertone where subcutaneous reinforcement sits beneath the epidermis. Not obvious to casual observation, but apparent to anyone who knows what to look for.",
+    "visible_augmentations": "The reinforced skeletal structure does not produce visible chrome or obvious augmentation markers — it was installed subcutaneously by a the Gray Zone surgeon. What is visible: the forearm dermal toughening appears as subtle discoloration and slightly thickened skin texture on both forearms and hands, creating a faint matte finish that catches light differently than natural skin. The area has a faint silvery-grey undertone where subcutaneous reinforcement sits beneath the epidermis. Not obvious to casual observation, but apparent to anyone who knows what to look for.",
     "posture_movement": "Stands with weight evenly distributed, knees slightly bent — always ready to move in any direction. Walks with controlled deliberation, each step purposeful. Does not gesture expansively; movements are economical and precise. Eyes track his environment constantly. When still, he has the coiled readiness of a person trained in physical protection — not tense, but present.",
-    "clothing_style": "Tier 4 practical — durable, functional, clearly chosen for utility over appearance. Wears reinforced cargo pants in dark grey or black, often with visible tool loops and patches from repeated repair. Thermal underlayers beneath loose-fit synthetic shirts in muted colors (charcoal, slate, faded black). A weathered canvas work jacket, Shelf-modified with added pockets and reinforced seams. Worn combat boots, kept meticulously maintained. No jewelry or personal adornment. Clothing shows evidence of frequent physical activity — small tears repaired with industrial stitching, fabric worn pale at stress points. Everything fits loosely enough to allow full range of motion."
+    "clothing_style": "Tier 4 practical — durable, functional, clearly chosen for utility over appearance. Wears reinforced cargo pants in dark grey or black, often with visible tool loops and patches from repeated repair. Thermal underlayers beneath loose-fit synthetic shirts in muted colors (charcoal, slate, faded black). A weathered canvas work jacket, the Gray Zone-modified with added pockets and reinforced seams. Worn combat boots, kept meticulously maintained. No jewelry or personal adornment. Clothing shows evidence of frequent physical activity — small tears repaired with industrial stitching, fabric worn pale at stress points. Everything fits loosely enough to allow full range of motion."
   },
   "image_prompt": "Cipher Vestergaard-Kristjánsson, 188cm tall athletic build, warm medium-brown skin with golden undertones, high angular cheekbones blending Northern European and Central Asian features with broader nose and full lips from African heritage, dark brown eyes, short black close-cropped hair. GLMZ Great Lakes Metropolitan Zone. Wears reinforced dark grey cargo pants, muted charcoal synthetic shirt under weathered canvas work jacket modified with extra pockets, combat boots. Subtle silvery-grey dermal toughening visible on forearms and hands from subcutaneous augmentation. Faint surgical scar across left collarbone, thin white scar along left jaw. Stands with coiled readiness, weight evenly distributed, completely present and alert. No excess movement. Industrial repair stitching visible on worn clothing. Neon-lit urban environment, cool-toned neo-noir lighting casting subtle highlights on richly pigmented warm skin, cinematic, moody, professional security operative aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {

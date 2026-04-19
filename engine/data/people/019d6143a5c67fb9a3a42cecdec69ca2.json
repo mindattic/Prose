@@ -1,5 +1,6 @@
 {
   "id": "019d6143a5c67fb9a3a42cecdec69ca2",
+  "rating": 20,
   "type": "character",
   "name": "Phoenix Magnúsdóttir",
   "aliases": [],
@@ -9,7 +10,7 @@
   "role": "Fixer - Desperate jobs only",
   "age": 59,
   "status": "active",
-  "location": "The Shelf, near Pulaski and Chicago Ave",
+  "location": "the Gray Zone, near Pulaski and Chicago Ave",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -30,7 +31,11 @@
     "vocabulary": "",
     "cadence": "",
     "verbal_tics": [],
-    "example_lines": []
+    "example_lines": [],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [],
@@ -87,7 +92,7 @@
     "Face": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -95,17 +100,11 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Nkomo-Lindqvist NL-22 'Peacemaker'",
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
-    "Forge-Smith Collective Fighting Chain 'Serpent'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Shelf",
-    "Chicago"
-  ],
-  "district": "The Shelf",
   "physical_description": {
     "heritage": "East Asian (33.9%) / Northern European (25.5%) / Middle Eastern (17.2%) / Sub-Saharan African (14.9%) / Hispanic/Latin American (5.5%) / Eastern European (3.0%) — a truly global diaspora blend reflecting the Ubiquitous mixing of the 2220s. The genetic combination creates a richly complex phenotype: warm medium-deep brown skin with balanced undertones from East Asian, Middle Eastern, and Sub-Saharan African ancestry, subtle golden warmth from Hispanic heritage, anchored by Northern European and Eastern European genetic markers. The result is a unique, lived-in warmth that defies easy categorization.",
     "height_cm": 183,
@@ -128,6 +127,7 @@
     "clothing_style": "Tier 4-5 practicality. Worn charcoal long-coat with reinforced elbow patches, synthetic leather underneath. Black thermal underlayer visible at collar. Cargo pants with multiple pockets, Φ200 knockoff boots resoled twice. A faded Milwaukee Wolves sports cap from the 2180s he never removes. Single stainless steel ring on left hand — no identifying marks. Layers suggest someone always ready to move quickly."
   },
   "image_prompt": "Portrait of Phoenix Magnúsdóttir, 183cm tall, lean weathered build, warm medium-deep brown skin with balanced East Asian, Middle Eastern, Sub-Saharan African undertones. Salt-and-pepper grey short hair, faded Milwaukee Wolves cap worn low. Deep lined face with strong jaw, subtle Asian cheekbones, substantial brow ridge. Amber-brown eyes with faint neon-green circuit tracery around left iris. Silvery burn scar running from left temple to jawline. Three-day stubble, sun-damaged skin with slight pockmarking. Chrome-capped knuckles on right hand. Worn charcoal long-coat with reinforced elbows, black thermal collar visible, cargo pants. Stainless steel ring on left hand. Sits with back to wall, hands relaxed. Synthetic cigarette smoke curling. GLMZ, gritty Great Lakes Metropolitan Zone setting, cool neon and practical lighting, mood of practiced calm and street-worn experience. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "East Asian": 33.9,
     "Northern European": 25.5,
@@ -136,12 +136,6 @@
     "Hispanic/Latin American": 5.5,
     "Eastern European": 3
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "East Asian": {
       "Korean": {
@@ -200,6 +194,5 @@
         "Hungarian": 0.4
       }
     }
-  },
-  "tier": "3"
+  }
 }

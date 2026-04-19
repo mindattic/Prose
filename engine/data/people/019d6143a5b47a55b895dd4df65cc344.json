@@ -9,8 +9,8 @@
   "role": "Logistics, safe house management, and community network — Last Light",
   "age": 27,
   "status": "active",
-  "location": "The Shelf — maintains a small apartment above the community center that doubles as Last Light's operational hub, near Western and Division",
-  "description": "Ivana Banerjee is the reason Last Light functions at all. She manages the logistics of a pro-bono protection operation in a community with no resources — safe house rotations, transport arrangements, community contact networks, supply chains for medical kits and food, client scheduling, and the thousand administrative details that separate a functioning crew from three idealists shouting into the void. She does this with a budget that wouldn't cover a week's coffee for a corporate crew, and she does it well.\n\nShe came to the Shelf from the Milwaukee Core working class — her parents ran a small printing business that went under when the corporate district's digital infrastructure made physical printing economically impossible. The family relocated to the Shelf when Anya was seventeen. She watched her parents lose everything they'd built — not to malice, but to the indifferent machinery of corporate progress that treats small businesses as statistical noise. She finished her education through Shelf community programs, developed organizational skills through necessity, and joined Last Light because Ruth Agada was the first person she'd met who responded to systemic injustice with organized resistance rather than resignation.\n\nAnya is compact, precise, with dark hair pulled back and the permanently alert expression of someone managing too many moving pieces. She carries a tablet everywhere — the device is her operational hub, containing contact networks, resource inventories, safe house statuses, and the scheduling system that keeps Last Light's operations from collapsing. She dresses practically, sleeps insufficiently, and eats whatever's closest. She is burning out. She knows this. She hasn't stopped because stopping would be worse.",
+  "location": "the Gray Zone — maintains a small apartment above the community center that doubles as Last Light's operational hub, near Western and Division",
+  "description": "Ivana Banerjee is the reason Last Light functions at all. She manages the logistics of a pro-bono protection operation in a community with no resources — safe house rotations, transport arrangements, community contact networks, supply chains for medical kits and food, client scheduling, and the thousand administrative details that separate a functioning crew from three idealists shouting into the void. She does this with a budget that wouldn't cover a week's coffee for a corporate crew, and she does it well.\n\nShe came to the Gray Zone from the Milwaukee Core working class — her parents ran a small printing business that went under when the corporate district's digital infrastructure made physical printing economically impossible. The family relocated to the Gray Zone when Anya was seventeen. She watched her parents lose everything they'd built — not to malice, but to the indifferent machinery of corporate progress that treats small businesses as statistical noise. She finished her education through the Gray Zone community programs, developed organizational skills through necessity, and joined Last Light because Ruth Agada was the first person she'd met who responded to systemic injustice with organized resistance rather than resignation.\n\nAnya is compact, precise, with dark hair pulled back and the permanently alert expression of someone managing too many moving pieces. She carries a tablet everywhere — the device is her operational hub, containing contact networks, resource inventories, safe house statuses, and the scheduling system that keeps Last Light's operations from collapsing. She dresses practically, sleeps insufficiently, and eats whatever's closest. She is burning out. She knows this. She hasn't stopped because stopping would be worse.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -74,7 +74,7 @@
     {
       "name": "Community contacts (network of approximately 40 people)",
       "type": "operational network / lifeline",
-      "description": "Forty people across the Shelf and into Milwaukee Core who provide Last Light with information, safe house access, transport, and occasional supplies. Anya maintains every relationship personally. Each contact is a thread in a web that keeps the operation alive.",
+      "description": "Forty people across the Gray Zone and into Milwaukee Core who provide Last Light with information, safe house access, transport, and occasional supplies. Anya maintains every relationship personally. Each contact is a thread in a web that keeps the operation alive.",
       "emotional_core": "The distributed trust that makes the impossible possible",
       "story_tension": "The network is only as strong as Anya's ability to maintain it. If she collapses, the threads drop one by one, and Last Light's operational capacity unravels."
     }
@@ -174,7 +174,7 @@
     "Bleeding Heart": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -193,7 +193,6 @@
     "Dredge Mining Collective",
     "The Iron Lotus",
     "Ashford Signal",
-    "The Shelf",
     "Plot 17",
     "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Vantablack Media",
@@ -201,7 +200,7 @@
     "Endocrine Cascade Volatilization Lance ECVL-5 'Burnout'",
     "Lead"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Eastern European (50.8%), South Asian (26.8%), East Asian (14.0%), Sub-Saharan African (8.4%) — a striking cosmopolitan blend. Features reflect this complex mix: angular facial structure with high, prominent cheekbones characteristic of Eastern European ancestry, balanced with the warmer undertones and defined nose bridge from South Asian ancestry, softened by East Asian bone structure and enriched by Sub-Saharan African heritage in lip fullness and facial warmth.",
     "height_cm": 162,
@@ -220,7 +219,7 @@
     ],
     "visible_augmentations": "None visible. Communication suite and eidetic memory implants are subcutaneous neural arrays — not externally apparent. Wears a discrete ear-bud communicator on her right ear, easily mistaken for standard audio tech.",
     "posture_movement": "Perpetually alert posture, shoulders slightly forward. Moves with efficiency rather than grace — quick, purposeful steps. Frequently distracted by incoming communications, eyes tracking tablet or mid-distance into AR interface space. Fidgets with stylus or tablet edge when stationary. Rarely fully relaxes.",
-    "clothing_style": "Tier 3-4 working class, heavily practical. Standard black or gray utility pants with multiple pockets, worn comfortable not fashionable. Fitted long-sleeve shirts in muted colors (charcoal, navy, dark green) — layers for temperature control and concealment of biomonitor. Worn synthetic jacket, weathered but well-maintained. Practical boots suitable for moving through the Shelf's unstable infrastructure. A single piece of jewelry: thin silver chain necklace, gift from parents before they died, worn under clothing. Minimal styling — function over appearance."
+    "clothing_style": "Tier 3-4 working class, heavily practical. Standard black or gray utility pants with multiple pockets, worn comfortable not fashionable. Fitted long-sleeve shirts in muted colors (charcoal, navy, dark green) — layers for temperature control and concealment of biomonitor. Worn synthetic jacket, weathered but well-maintained. Practical boots suitable for moving through the Gray Zone's unstable infrastructure. A single piece of jewelry: thin silver chain necklace, gift from parents before they died, worn under clothing. Minimal styling — function over appearance."
   },
   "image_prompt": "Ivana Banerjee, 162cm tall compact wiry frame, warm golden-bronze skin blending Eastern European, South Asian, East Asian, and Sub-Saharan African heritage. Angular high cheekbones, defined jawline, fuller lips, dark brown eyes with warm amber undertones. Dark brown hair pulled back tight in functional ponytail. Fatigue shadows under eyes, slight tension lines. Wearing fitted charcoal long-sleeve shirt under weathered synthetic jacket, black utility pants with multiple pockets, worn practical boots. Discrete ear-bud communicator on right ear. Thin silver chain necklace barely visible under shirt collar. Perpetually alert posture, shoulders slightly forward. Hand near tablet interface, fidgeting with stylus. Small pale scar barely visible on left temple. GLMZ Great Lakes Metropolitan Zone setting, moody neon-lit background with holographic interface glow, cinematic lighting emphasizing her exhaustion and focused intensity, urban dystopian atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {

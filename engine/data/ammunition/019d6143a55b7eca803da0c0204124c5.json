@@ -5,18 +5,18 @@
   "aliases": [],
   "category": "dart",
   "caliber": "4mm",
-  "description": "The PZO-4 is a black market modification of the legitimate PGM-4 gel micro-bead, produced by street-level armorers who replace the standard piezoelectric crystal array with higher-output crystals salvaged from industrial actuators. The resulting bead delivers approximately three times the electrical discharge of a standard PGM-4, converting the CDP-2 'Bruiser' from a technically-non-lethal capillary disruption tool into a weapon capable of cardiac arrest at close range.\n\nThe modification process is crude but effective. Street armorers crack open legitimate PGM-4 charge packs, extract the beads, dissolve the gel matrix to access the crystal array, replace the crystals, re-encapsulate in fresh gel, and reseal the charge pack. The resulting product is visually identical to a standard PGM-4 and passes cursory inspection, but the electrical output is far beyond the weapon's designed parameters. The CDP-2's charge settings — originally Non-lethal, Standard, and Overcharge — become Standard-lethal, Extremely-lethal, and Weapon-damaging when loaded with PZO-4 beads.\n\nThe overcharged crystals also generate more heat during the piezoelectric activation, which degrades the gel matrix faster and reduces the bead's shelf life from 18 months to approximately 3 months. Expired PZO-4 beads have been known to activate prematurely in the magazine, producing electrical discharge inside the weapon that can injure the operator. The quality variance between street armorers means that PZO-4 beads from different sources can differ dramatically in output and reliability.",
+  "description": "The PZO-4 is a black market modification of the legitimate PGM-4 gel micro-bead, produced by street-level armorers who replace the standard piezoelectric crystal array with higher-output crystals salvaged from industrial actuators. The resulting bead delivers approximately three times the electrical discharge of a standard PGM-4, converting the CDP-2 'Bruiser' from a technically-non-lethal capillary disruption tool into a weapon capable of cardiac arrest at close range.\n\nThe modification process is crude but effective. Street armorers crack open legitimate PGM-4 charge packs, extract the beads, dissolve the gel matrix to access the crystal array, replace the crystals, re-encapsulate in fresh gel, and reseal the charge pack. The resulting product is visually identical to a standard PGM-4 and passes cursory inspection, but the electrical output is far beyond the weapon's designed parameters. The CDP-2's charge settings — originally Non-lethal, Standard, and Overcharge — become Standard-lethal, Extremely-lethal, and Weapon-damaging when loaded with PZO-4 beads.\n\nThe overcharged crystals also generate more heat during the piezoelectric activation, which degrades the gel matrix faster and reduces the bead's Gray Zone life from 18 months to approximately 3 months. Expired PZO-4 beads have been known to activate prematurely in the magazine, producing electrical discharge inside the weapon that can injure the operator. The quality variance between street armorers means that PZO-4 beads from different sources can differ dramatically in output and reliability.",
   "manufacturer": "Unlicensed street armorer production",
   "tier_availability": "Black market only",
   "legality": "Prohibited — modified lethal ammunition, unlicensed manufacturing",
-  "specifications": "weight_per_round: 0.9g\nmuzzle_velocity: 210 m/s (unchanged from PGM-4)\npenetration_rating: None (non-penetrating)\nelectrical_output: ~3x standard PGM-4\neffective_against: Biological targets at close range, cardiac arrest capable\ncountermeasures: Same as PGM-4 (rigid armor, heavy clothing, Faraday weave)\nhazard: 3-month shelf life, premature activation risk in expired beads",
+  "specifications": "weight_per_round: 0.9g\nmuzzle_velocity: 210 m/s (unchanged from PGM-4)\npenetration_rating: None (non-penetrating)\nelectrical_output: ~3x standard PGM-4\neffective_against: Biological targets at close range, cardiac arrest capable\ncountermeasures: Same as PGM-4 (rigid armor, heavy clothing, Faraday weave)\nhazard: 3-month Gray Zone life, premature activation risk in expired beads",
   "compatible_weapons": [
     "Capillary Disruption Pistol CDP-2 'Bruiser'"
   ],
   "variants": [
-    "PZO-4 Standard (3x overcharge, 3-month shelf life)",
-    "PZO-4 Ultra (5x overcharge, 1-month shelf life, high weapon damage rate)",
-    "PZO-4 Stable (2x overcharge, 6-month shelf life, compromise variant)"
+    "PZO-4 Standard (3x overcharge, 3-month Gray Zone life)",
+    "PZO-4 Ultra (5x overcharge, 1-month Gray Zone life, high weapon damage rate)",
+    "PZO-4 Stable (2x overcharge, 6-month Gray Zone life, compromise variant)"
   ],
   "cultural_context": "The PZO-4 represents the street economy's answer to a weapon that was designed to be less-lethal: operators who need a concealable lethal sidearm that leaves no penetrating wound find the CDP-2 loaded with PZO-4 beads to be ideal for close-range assassination where the cause of death needs to look like cardiac arrest. The modification industry is distributed across dozens of independent armorers, each with their own technique and quality standard, which means PZO-4 reliability is essentially a function of whose hands made them. Experienced operators maintain relationships with specific armorers and refuse to buy PZO-4 beads from unknown sources.",
   "story_hooks": [
@@ -34,8 +34,7 @@
     "medical",
     "market",
     "clothing",
-    "armor",
-    "shelf"
+    "armor"
   ],
   "parent_corponation": "",
   "related_entities": [
@@ -43,7 +42,7 @@
     "Alper Holmberg-Dembele",
     "Capillary Disruption Pistol CDP-2 'Bruiser'",
     "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
-    "Shelf Life",
+    "Gray Zone life",
     "Tessera Nexus Town Car",
     "The Pure Hand"
   ]

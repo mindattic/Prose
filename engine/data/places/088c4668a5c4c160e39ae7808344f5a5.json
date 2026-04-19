@@ -34,7 +34,6 @@
     "nightlife",
     "arena",
     "fighting",
-    "shelf",
     "chicago"
   ],
   "related_entities": [
@@ -42,5 +41,7 @@
     "Carrion Defense Works",
     "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
     "Ngozi Morimoto"
-  ]
+  ],
+  "zone": "Z1",
+  "controllingCorponation": null
 }

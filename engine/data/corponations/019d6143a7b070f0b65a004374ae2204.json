@@ -35,5 +35,14 @@
     "The Steel Shore",
     "The Warden",
     "Warden"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z9"
+    ],
+    "primaryZone": "Z9",
+    "lakefrontAccess": true,
+    "description": "The Drift Yards — 34 semi-permanent floating platforms anchored along the Zone 9 coastline, plus exclusive rights to several hundred square kilometers of undeveloped shoreline maintained as managed conservation zone. Commercial fishing licensing, marine survey, and sustainable harvest management for the northern lake zone.",
+    "grayZoneRelationship": "Zone 9 coastal Gray Zone communities hold traditional fishing rights predating Pelican Drift's sovereign claims. Legal status is unresolved; the practical accommodation is that Pelican Drift does not enforce against subsistence-scale fishing."
+  }
 }

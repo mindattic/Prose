@@ -1,7 +1,8 @@
 {
   "id": "019d6143a68470cdaff4cf9ed6640ead",
+  "rating": 70,
   "type": "character",
-  "name": "Sterling Björnsdóttir-Saidov",
+  "name": "Sterling Bj\u00F6rnsd\u00F3ttir-Saidov",
   "aliases": [],
   "species": "human",
   "gender": "male",
@@ -10,7 +11,7 @@
   "age": 29,
   "status": "active",
   "location": "Kenwood Gate, near North Ave and Damen",
-  "description": "Sterling Björnsdóttir-Saidov is the kind of person you forget while he is still in the room. Medium height, lean, with warm brown skin and features that sit in a pleasant unremarkable arrangement — nothing that catches the eye or holds it. His most notable feature is his eyes: irises modded to a pale silver-grey with a faint concentric ring pattern, the visible marker of his optical augmentation suite. He favors nondescript corporate casual clothing in muted greens and greys, nothing that reads as either security or civilian from a distance.\n\nHe is genuinely intellectually curious — absorbed by patterns, systems, the way data accumulates into narrative. He treats surveillance as a kind of archaeology, layering behavioral records until a person's life emerges in cross-section. He does not think of this as an invasion. He has thought carefully about whether it should bother him and arrived at a complicated peace with it that he occasionally revisits at 3 a.m. He is quick to laugh, slow to trust, and has a gift for seeming entirely present in a conversation while processing something else entirely.",
+  "description": "Sterling Bj\u00F6rnsd\u00F3ttir-Saidov is the kind of person you forget while he is still in the room. Medium height, lean, with warm brown skin and features that sit in a pleasant unremarkable arrangement \u2014 nothing that catches the eye or holds it. His most notable feature is his eyes: irises modded to a pale silver-grey with a faint concentric ring pattern, the visible marker of his optical augmentation suite. He favors nondescript corporate casual clothing in muted greens and greys, nothing that reads as either security or civilian from a distance.\n\nHe is genuinely intellectually curious \u2014 absorbed by patterns, systems, the way data accumulates into narrative. He treats surveillance as a kind of archaeology, layering behavioral records until a person\u0027s life emerges in cross-section. He does not think of this as an invasion. He has thought carefully about whether it should bother him and arrived at a complicated peace with it that he occasionally revisits at 3 a.m. He is quick to laugh, slow to trust, and has a gift for seeming entirely present in a conversation while processing something else entirely.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -21,7 +22,7 @@
       "ghost": 0.3
     },
     "core_fears": [
-      "Being truly known by someone — the surveillance reversed",
+      "Being truly known by someone \u2014 the surveillance reversed",
       "That his work enables harm he will never see the downstream consequences of"
     ],
     "core_desires": [
@@ -34,34 +35,38 @@
       "Obsessive data journaling in an encrypted personal log"
     ],
     "blind_spots": [
-      "Assumes he is more objective than he is — his pattern recognition is shaped by Tessera's algorithmic priorities without his full awareness",
+      "Assumes he is more objective than he is \u2014 his pattern recognition is shaped by Tessera\u0027s algorithmic priorities without his full awareness",
       "Undervalues the emotional and social dimensions of the people he surveils, reducing them to behavioral data"
     ],
-    "secret": "He has been quietly maintaining a personal archive of surveillance footage that Tessera has flagged for deletion — incidents involving Bureau misconduct, use-of-force irregularities, and at least one event he believes was a staged incident. He doesn't know why he is keeping it. He tells himself it is an intellectual exercise."
+    "secret": "He has been quietly maintaining a personal archive of surveillance footage that Tessera has flagged for deletion \u2014 incidents involving Bureau misconduct, use-of-force irregularities, and at least one event he believes was a staged incident. He doesn\u0027t know why he is keeping it. He tells himself it is an intellectual exercise."
   },
   "speech_patterns": {
     "vocabulary": "Precise, analytical language with occasional lapses into unexpectedly lyrical observation. Uses data and systems metaphors naturally. Slips into Yoruba diminutives when comfortable.",
     "cadence": "Thoughtful pacing with a habit of pausing before answering, as if running the question through an internal filter first.",
     "verbal_tics": [
-      "'Structurally speaking...' as a sentence opener when about to disagree",
+      "\u0027Structurally speaking...\u0027 as a sentence opener when about to disagree",
       "Repeats key words quietly under his breath before saying them aloud"
     ],
     "example_lines": [
-      "I don't spy on people. I document behavioral patterns over time. The distinction matters to me even if it doesn't matter to you.",
-      "You think no one was watching that corner at 2 a.m. on the 14th. I understand why you'd think that.",
-      "Structurally speaking, what you're describing is not a crime. Whether it becomes one depends on who's reviewing the logs."
-    ]
+      "I don\u0027t spy on people. I document behavioral patterns over time. The distinction matters to me even if it doesn\u0027t matter to you.",
+      "You think no one was watching that corner at 2 a.m. on the 14th. I understand why you\u0027d think that.",
+      "Structurally speaking, what you\u0027re describing is not a crime. Whether it becomes one depends on who\u0027s reviewing the logs."
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "He contacts someone obliquely — a hand-delivered physical note, no digital trail — to say he has seen something in the surveillance record they would want to know about, and he is not sure he should keep it to himself.",
+    "He contacts someone obliquely \u2014 a hand-delivered physical note, no digital trail \u2014 to say he has seen something in the surveillance record they would want to know about, and he is not sure he should keep it to himself.",
     "He has flagged someone as a person of interest based on behavioral pattern analysis and is beginning to suspect his own algorithm is being gamed to target them unfairly.",
-    "His personal archive of deleted footage is discovered by Tessera's internal security — and he needs it extracted before they trace it back to him."
+    "His personal archive of deleted footage is discovered by Tessera\u0027s internal security \u2014 and he needs it extracted before they trace it back to him."
   ],
-  "narrative_function": "Information broker figure — not a corrupt one, but someone who has seen things and processed them. Can provide surveillance records, behavioral profiles, or the observation that something the players think is hidden has actually been logged. Also a window into the ethical murk of surveillance capitalism.",
-  "augmentations": "Patterned silver-grey irises with concentric ring modding (cosmetic overlay on functional optical augmentation). Optical recording and enhancement suite — extended zoom, low-light processing, micro-expression analysis overlay. Subvocal communication implant for silent field reporting.",
+  "narrative_function": "Information broker figure \u2014 not a corrupt one, but someone who has seen things and processed them. Can provide surveillance records, behavioral profiles, or the observation that something the players think is hidden has actually been logged. Also a window into the ethical murk of surveillance capitalism.",
+  "augmentations": "Patterned silver-grey irises with concentric ring modding (cosmetic overlay on functional optical augmentation). Optical recording and enhancement suite \u2014 extended zoom, low-light processing, micro-expression analysis overlay. Subvocal communication implant for silent field reporting.",
   "daily_life": "Arrives at the Kenwood Gate watch station at 0600, reviews overnight flag queue, begins live monitoring rotation for his designated sector grid. Eats lunch at his station. Leaves at 1800 and almost always walks home through a different route, observing the street as a habit he cannot turn off.",
-  "affiliation": "Tessera Compliance Bureau — Kenwood Gate Regional Watch Division",
+  "affiliation": "Tessera Compliance Bureau \u2014 Kenwood Gate Regional Watch Division",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -106,7 +111,7 @@
     "decision_rules": [
       "Verify independently before acting on any single data point",
       "Never put anything sensitive in a Tessera-networked system",
-      "Protect the archive — even from himself if necessary"
+      "Protect the archive \u2014 even from himself if necessary"
     ],
     "escalation_ladder": [
       "Passive observation and data collection",
@@ -114,13 +119,13 @@
       "Direct contact only when the risk of inaction exceeds the risk of exposure"
     ],
     "interpersonal_modes": {
-      "strangers": "Pleasant and entirely opaque — friendly surface, nothing given away, categorizing them the whole time",
+      "strangers": "Pleasant and entirely opaque \u2014 friendly surface, nothing given away, categorizing them the whole time",
       "friends": "Attentive and genuinely warm, remembers everything they have ever told him, occasionally unsettling in how much he recalls"
     },
     "stress_responses": {
       "low": "Becomes more analytical, retreats into data",
       "medium": "Goes very quiet, walks, processes alone",
-      "high": "Freezes briefly then acts with cold efficiency — shuts down emotional processing until the threat is resolved"
+      "high": "Freezes briefly then acts with cold efficiency \u2014 shuts down emotional processing until the threat is resolved"
     },
     "contradictions": [
       "Deeply values privacy as an abstract principle while spending his professional life violating it",
@@ -129,7 +134,7 @@
     "habits": [
       "Takes a different route home every day and logs it in his personal journal",
       "Leaves a small digital mandala as a data offering at the local ELF shrine each morning",
-      "Eats the same lunch every day — creature of habit in everything he controls"
+      "Eats the same lunch every day \u2014 creature of habit in everything he controls"
     ],
     "breaking_points": [
       "Discovering that his surveillance directly caused serious harm to an innocent person",
@@ -138,13 +143,13 @@
   },
   "cyberware_inventory": [
     {
-      "name": "Optical augmentation suite — enhanced zoom, low-light processing, micro-expression overlay",
+      "name": "Optical augmentation suite \u2014 enhanced zoom, low-light processing, micro-expression overlay",
       "body_location": "",
       "manufacturer": "",
       "tier": "",
       "condition": "functional",
       "installed_date": "",
-      "description": "Optical augmentation suite — enhanced zoom, low-light processing, micro-expression overlay",
+      "description": "Optical augmentation suite \u2014 enhanced zoom, low-light processing, micro-expression overlay",
       "replaces": ""
     },
     {
@@ -200,7 +205,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Age 20 — Recruited by Tessera Compliance Bureau out of a data analytics certificate program",
+      "event": "Age 20 \u2014 Recruited by Tessera Compliance Bureau out of a data analytics certificate program",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -208,7 +213,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Age 24 — Promoted to Kenwood Gate Regional Watch Division after exemplary pattern-flagging record",
+      "event": "Age 24 \u2014 Promoted to Kenwood Gate Regional Watch Division after exemplary pattern-flagging record",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -216,7 +221,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Age 26 — Began quietly archiving flagged-for-deletion footage after witnessing a use-of-force irregularity",
+      "event": "Age 26 \u2014 Began quietly archiving flagged-for-deletion footage after witnessing a use-of-force irregularity",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -224,52 +229,38 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Age 29 — Current: archive contains 847 archived incidents, growing",
+      "event": "Age 29 \u2014 Current: archive contains 847 archived incidents, growing",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
     }
   ],
   "changelog": [],
-  "carried_weapons": [
-    "Arcturus Defense Solutions ADM-10 'Overseer'",
-    "Hearthstone Firearms Plinker-22 'Tin Can'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [
-    "Arcturus Defense Solutions ADM-10 'Overseer'",
-    "Hearthstone Firearms Plinker-22 'Tin Can'"
-  ],
-  "related_entities": [
-    "Kenwood Gate",
-    "The Quiet Room",
-    "Tessera Corponation",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Silver",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Hearthstone Firearms Trail-357 'Pathfinder'",
-    "Compass Rose",
-    "The Pale Mile"
-  ],
-  "district": "The Circuit",
   "physical_description": {
-    "heritage": "Genetically complex blend across Eurasian and African ancestry: 29.3% East Asian, 22.3% Central Asian, 15.3% Eastern European, 13.0% Indigenous American, 11.1% South Asian, and 9.0% Sub-Saharan African. This combination creates a phenotype reflecting multiple continental trade routes—the warm medium-brown skin with golden-olive undertones bridges East Asian and Central Asian genetics with Sub-Saharan ancestry, while Indigenous American heritage contributes subtle high cheekbone structure. Facial geometry shows balanced synthesis: slightly broader cheekbones softened by Eastern European and East Asian bone structure, creating features that resist easy categorization or memorability.",
+    "heritage": "Genetically complex blend across Eurasian and African ancestry: 29.3% East Asian, 22.3% Central Asian, 15.3% Eastern European, 13.0% Indigenous American, 11.1% South Asian, and 9.0% Sub-Saharan African. This combination creates a phenotype reflecting multiple continental trade routes\u2014the warm medium-brown skin with golden-olive undertones bridges East Asian and Central Asian genetics with Sub-Saharan ancestry, while Indigenous American heritage contributes subtle high cheekbone structure. Facial geometry shows balanced synthesis: slightly broader cheekbones softened by Eastern European and East Asian bone structure, creating features that resist easy categorization or memorability.",
     "height_cm": 173,
     "weight_kg": 68,
     "build": "Lean and economical, minimal muscle definition but functionally efficient; the posture of someone who sits for extended periods but maintains baseline fitness through deliberate discipline rather than enthusiasm",
     "hair_color": "Natural deep brown, almost black",
-    "hair_style": "Short, practical, close-cropped on the sides with slightly more length on top — styled for minimal maintenance and maximum non-distinctiveness",
+    "hair_style": "Short, practical, close-cropped on the sides with slightly more length on top \u2014 styled for minimal maintenance and maximum non-distinctiveness",
     "hair_length": "Short",
     "eye_color": "Pale silver-grey with concentric ring modding pattern visible across both irises; appears almost luminescent under direct light",
     "skin_tone": "Warm medium brown with golden-olive undertone, reflecting the blending of East Asian, Central Asian, South Asian, and Sub-Saharan African ancestry",
-    "complexion": "Clean-shaven or with minimal stubble, features arranged in balanced geometry reflecting mixed Eurasian-African-Indigenous ancestry—slightly broader cheekbones from Indigenous American and Sub-Saharan heritage softened by East Asian and Eastern European bone structure, neither sharp nor soft, slightly asymmetrical in a way that resists memory. Skin shows the faint puffiness of someone who works night-adjacent shifts and drinks too much coffee. No visible blemishes or damage.",
+    "complexion": "Clean-shaven or with minimal stubble, features arranged in balanced geometry reflecting mixed Eurasian-African-Indigenous ancestry\u2014slightly broader cheekbones from Indigenous American and Sub-Saharan heritage softened by East Asian and Eastern European bone structure, neither sharp nor soft, slightly asymmetrical in a way that resists memory. Skin shows the faint puffiness of someone who works night-adjacent shifts and drinks too much coffee. No visible blemishes or damage.",
     "distinguishing_marks": [
-      "Faint pale scar along the right temple, approximately 3cm long, barely visible unless light catches it at specific angle — appears to be old surgical work"
+      "Faint pale scar along the right temple, approximately 3cm long, barely visible unless light catches it at specific angle \u2014 appears to be old surgical work"
     ],
     "visible_augmentations": "Pale silver-grey irises with concentric ring patterning across both eyes are immediately apparent upon direct eye contact; the modding creates a faint luminescent quality under artificial light. No external chrome, subdermal plates, or visible mechanical integration. Augmentation suite is entirely internal except for cosmetic iris modification.",
-    "posture_movement": "Moves with deliberate economy of motion; sits with spine neutral and shoulders relaxed, the posture of professional observers trained to remain unobtrusive. Eyes are in constant subtle motion — scanning, tracking, cataloging — even during casual conversation. Hands gesture minimally. When walking, maintains steady pace with occasional 90-degree turns as if mentally plotting grid coordinates. Gives impression of being physically present while mentally distributed across multiple data streams.",
-    "clothing_style": "Corporate casual, aggressively nondescript — muted greens, greys, charcoal, and stone tones. Generic poly-blend button-ups from mid-tier retailers, well-maintained but not fashionable. Dark grey trousers. Comfortable low-profile shoes suitable for extended wear. No visible branding or status markers. Clothing reads as 'background,' intentionally occupying no visual hierarchy. Tier 3-4 professional without aspiration toward higher or lower."
+    "posture_movement": "Moves with deliberate economy of motion; sits with spine neutral and shoulders relaxed, the posture of professional observers trained to remain unobtrusive. Eyes are in constant subtle motion \u2014 scanning, tracking, cataloging \u2014 even during casual conversation. Hands gesture minimally. When walking, maintains steady pace with occasional 90-degree turns as if mentally plotting grid coordinates. Gives impression of being physically present while mentally distributed across multiple data streams.",
+    "clothing_style": "Corporate casual, aggressively nondescript \u2014 muted greens, greys, charcoal, and stone tones. Generic poly-blend button-ups from mid-tier retailers, well-maintained but not fashionable. Dark grey trousers. Comfortable low-profile shoes suitable for extended wear. No visible branding or status markers. Clothing reads as \u0027background,\u0027 intentionally occupying no visual hierarchy. Tier 3-4 professional without aspiration toward higher or lower."
   },
-  "image_prompt": "Sterling Björnsdóttir-Saidov, mixed-heritage professional with warm medium-brown skin and golden-olive undertones reflecting East Asian, Central Asian, South Asian, and Sub-Saharan African ancestry. Slight high cheekbones softened by Eastern European bone structure. Short deep brown hair, close-cropped sides with length on top. Pale silver-grey eyes with luminescent concentric ring augmentation patterns, faintly glowing under neon light. Faint old surgical scar barely visible on right temple. Clean-shaven, night-shift puffiness under eyes. Wearing muted grey poly-blend button-up shirt and charcoal trousers, corporate nondescript styling. Neutral posture, deliberate economical movements, scanning gaze. Sitting in dimly-lit neo-noir office or data hub, surrounded by soft blue-green interface glow, professional surveillance aesthetic. GLMZ Great Lakes Metropolitan Zone. Cool atmospheric lighting catching the luminescence of augmented irises. --ar 2:3 --v 6",
+  "image_prompt": "Sterling Bj\u00F6rnsd\u00F3ttir-Saidov, mixed-heritage professional with warm medium-brown skin and golden-olive undertones reflecting East Asian, Central Asian, South Asian, and Sub-Saharan African ancestry. Slight high cheekbones softened by Eastern European bone structure. Short deep brown hair, close-cropped sides with length on top. Pale silver-grey eyes with luminescent concentric ring augmentation patterns, faintly glowing under neon light. Faint old surgical scar barely visible on right temple. Clean-shaven, night-shift puffiness under eyes. Wearing muted grey poly-blend button-up shirt and charcoal trousers, corporate nondescript styling. Neutral posture, deliberate economical movements, scanning gaze. Sitting in dimly-lit neo-noir office or data hub, surrounded by soft blue-green interface glow, professional surveillance aesthetic. GLMZ Great Lakes Metropolitan Zone. Cool atmospheric lighting catching the luminescence of augmented irises. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "East Asian": 29.3,
     "Central Asian": 22.3,
@@ -278,12 +269,6 @@
     "South Asian": 11.1,
     "Sub-Saharan African": 9
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "East Asian": {
       "Korean": {
@@ -337,6 +322,5 @@
         "Rwandan": 1.2
       }
     }
-  },
-  "tier": "3"
+  }
 }

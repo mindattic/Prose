@@ -3,7 +3,7 @@
   "type": "place",
   "name": "Volkov's",
   "aliases": [],
-  "description": "Volkov's is a bar in Green Bay's industrial Shelf district that has been operating continuously since 2161, making it one of the oldest establishments in the northern corridor. The original Volkov — Pyotr Volkov-Asante — opened it in a decommissioned meat locker attached to a processing plant. The processing plant is gone. The meat locker remains, and so does the cold. Volkov's is kept at a permanent 4 degrees Celsius, partly because the refrigeration system is embedded in the walls and would cost more to remove than to run, and partly because the current owner — Pyotr's granddaughter, Zoya Volkov-Otieno — believes that a cold bar keeps its patrons honest. People who are cold don't linger without purpose. They drink, they talk, they do their business, and they leave. Zoya respects efficiency.\n\nThe bar caters to the factory workers and shipping crews who keep Green Bay's manufacturing corridor operational. These are Tier 1 workers doing Tier 0 labor — the kind of physical, dangerous, exhausting work that machines could theoretically do but that remains cheaper to assign to humans who need the Φ badly enough to risk their bodies. Volkov's is where these workers decompress, which means it is occasionally violent, frequently loud, and always honest about the cost of the work that pays for the drinks. The walls are covered in plaques bearing the names of workers killed in industrial accidents. There are 341 plaques. Zoya adds new ones personally.\n\nThe useful thing about Volkov's, from a freelancer's perspective, is that factory workers see everything. Shipping manifests, production schedules, security rotations, waste disposal patterns — the granular operational data of Green Bay's industrial base passes through the hands of the people drinking at Volkov's. Zoya doesn't trade information herself, but she doesn't prevent her customers from doing so, and she maintains a strict policy of not remembering faces. The cold helps. People in heavy coats with their collars up all look the same.",
+  "description": "Volkov's is a bar in Green Bay's industrial the Gray Zone district that has been operating continuously since 2161, making it one of the oldest establishments in the northern corridor. The original Volkov — Pyotr Volkov-Asante — opened it in a decommissioned meat locker attached to a processing plant. The processing plant is gone. The meat locker remains, and so does the cold. Volkov's is kept at a permanent 4 degrees Celsius, partly because the refrigeration system is embedded in the walls and would cost more to remove than to run, and partly because the current owner — Pyotr's granddaughter, Zoya Volkov-Otieno — believes that a cold bar keeps its patrons honest. People who are cold don't linger without purpose. They drink, they talk, they do their business, and they leave. Zoya respects efficiency.\n\nThe bar caters to the factory workers and shipping crews who keep Green Bay's manufacturing corridor operational. These are Tier 1 workers doing Tier 0 labor — the kind of physical, dangerous, exhausting work that machines could theoretically do but that remains cheaper to assign to humans who need the Φ badly enough to risk their bodies. Volkov's is where these workers decompress, which means it is occasionally violent, frequently loud, and always honest about the cost of the work that pays for the drinks. The walls are covered in plaques bearing the names of workers killed in industrial accidents. There are 341 plaques. Zoya adds new ones personally.\n\nThe useful thing about Volkov's, from a freelancer's perspective, is that factory workers see everything. Shipping manifests, production schedules, security rotations, waste disposal patterns — the granular operational data of Green Bay's industrial base passes through the hands of the people drinking at Volkov's. Zoya doesn't trade information herself, but she doesn't prevent her customers from doing so, and she maintains a strict policy of not remembering faces. The cold helps. People in heavy coats with their collars up all look the same.",
   "atmosphere": {
     "sights": [
       "Breath visible in the air — Volkov's is cold enough to see your own exhalations year-round",
@@ -60,7 +60,6 @@
     "bar",
     "nightlife",
     "tier 1",
-    "shelf",
     "green_bay",
     "industrial",
     "memorial"
@@ -71,5 +70,7 @@
     "Irontide Tidal Energy",
     "The Pure Hand",
     "Echo Boateng"
-  ]
+  ],
+  "zone": "Z10",
+  "controllingCorponation": null
 }

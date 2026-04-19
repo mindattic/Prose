@@ -1,16 +1,17 @@
 {
   "id": "019d6143a63174558e8d6ffb765812bf",
+  "rating": 80,
   "type": "character",
   "name": "Phoenix Truong",
   "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Sociologist specializing in Shelf subcultures and informal economies",
+  "role": "Sociologist specializing in the Gray Zone subcultures and informal economies",
   "age": 41,
   "status": "active",
   "location": "University Spine, Calumet Rise satellite office, near Lincoln and Addison",
-  "description": "Phoenix Truong is a compact woman with close-cropped natural hair shot through with thin copper-dyed streaks she's had since her doctorate — a cosmetic mod she's never updated because she likes that it's dated. Her skin is deep brown, her eyes augmented with patterned irises in concentric amber rings that she tells students are 'functional, not decorative' though they are purely decorative. She carries a battered fieldwork satchel covered in data-patch stickers from Tier 1 and 2 communities she's embedded with, and she smells faintly of the Shelf's characteristic mix of fry oil and ozone.\n\nPhoenix Truong is warm in the field and terse at faculty meetings, a distinction colleagues find jarring. She is deeply respected by her research subjects in ways the university administration finds uncomfortable — she's been known to halt publication of her own papers when community members asked her to, citing ethics over career. Her laugh is sudden and loud, her criticism precise and unwelcome. She genuinely loves the people she studies, which some of her peers consider a methodological problem.",
+  "description": "Phoenix Truong is a compact woman with close-cropped natural hair shot through with thin copper-dyed streaks she's had since her doctorate — a cosmetic mod she's never updated because she likes that it's dated. Her skin is deep brown, her eyes augmented with patterned irises in concentric amber rings that she tells students are 'functional, not decorative' though they are purely decorative. She carries a battered fieldwork satchel covered in data-patch stickers from Tier 1 and 2 communities she's embedded with, and she smells faintly of the Gray Zone's characteristic mix of fry oil and ozone.\n\nPhoenix Truong is warm in the field and terse at faculty meetings, a distinction colleagues find jarring. She is deeply respected by her research subjects in ways the university administration finds uncomfortable — she's been known to halt publication of her own papers when community members asked her to, citing ethics over career. Her laugh is sudden and loud, her criticism precise and unwelcome. She genuinely loves the people she studies, which some of her peers consider a methodological problem.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -49,16 +50,20 @@
       "'Look — you can't study precarity from a temperature-controlled office. You just can't.'",
       "'That's not quite right. The informal quanta networks predate UBC by forty years. The stipend didn't create them, it just gave them more volume.'",
       "'I don't speak for my research subjects. I carry their words carefully and try not to drop them.'"
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
     "A community elder she has known for fifteen years has vanished — the official record says voluntary relocation, but his neighbors say that's impossible",
-    "Her grant is up for renewal and the funding body wants her to reframe her findings in a way that would cast Shelf residents as a 'social risk factor' — she refuses, and the pressure is escalating",
+    "Her grant is up for renewal and the funding body wants her to reframe her findings in a way that would cast the Gray Zone residents as a 'social risk factor' — she refuses, and the pressure is escalating",
     "A graduate student of hers has gone fully embedded in a Calumet Rise community and stopped responding to university communications",
     "Data from her longitudinal study has been quietly subpoenaed by Ferrogate Transit in connection with a rezoning case"
   ],
-  "narrative_function": "Information source on Shelf communities, Tier 1-2 culture, informal economies; potential quest giver for community-based investigations; moral compass in discussions of research ethics; bridge between academic and street worlds.",
+  "narrative_function": "Information source on the Gray Zone communities, Tier 1-2 culture, informal economies; potential quest giver for community-based investigations; moral compass in discussions of research ethics; bridge between academic and street worlds.",
   "augmentations": "Patterned amber irises (cosmetic). Sub-dermal field recorder in left forearm — records audio/environmental data, university-issued. Minor joint reinforcement in both knees from years of fieldwork walking.",
   "daily_life": "Spends three days a week in Calumet Rise conducting longitudinal community interviews, the other two at the university writing, arguing with the IRB, and running a graduate seminar she considers the best course offered at the institution.",
   "affiliation": "University Spine — Meridian Institute of Social Futures; informal community ties to Calumet Rise residents",
@@ -228,28 +233,11 @@
     }
   ],
   "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KP-45 Tactical 'Sledge'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [
-    "Kang-Petrov Arms KP-45 Tactical 'Sledge'"
-  ],
-  "related_entities": [
-    "Ferrogate Transit",
-    "University Spine",
-    "Calumet Rise",
-    "The Nearfield",
-    "The Shelf",
-    "Pressure Drop",
-    "The Gradient Compact",
-    "Underground Phoenix",
-    "Kessler Kinetics Vaultstreak R7 Runner Leg",
-    "Copper",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
-  ],
-  "district": "The Laceworks",
   "physical_description": {
     "heritage": "Southeast Asian plurality (42.3%) blended with significant South Asian (31.1%) and Eastern European (26.6%) ancestry. The genetic combination creates warm medium-brown skin with golden and subtle olive undertones. Her features reflect the Southeast Asian plurality—angular cheekbones, slightly almond-shaped eye structure—enriched by South Asian facial architecture and reinforced by Eastern European bone structure. Cheekbones are notably angular with slight Southeast Asian tapering, while underlying jaw and brow structure shows the broader Eastern European skeletal geometry. The blend is distinctly cosmopolitan, marking her as product of the Ubiquitous Diaspora.",
     "height_cm": 158,
@@ -270,17 +258,12 @@
     "clothing_style": "Tier 2 academic-adjacent: worn high-quality field gear aged into softness. Carhartt canvas work pants, vintage merino wool sweaters, sturdy walking boots (currently scuffed, several years old). The battered fieldwork satchel is non-negotiable — canvas with leather trim, covered in data-patch stickers from communities she's embedded with. Minimal jewelry. No corporate branding. Her style reads as 'too invested in the work to care about fashion,' which is partly true and partly carefully maintained."
   },
   "image_prompt": "Portrait of Phoenix Truong, a 158cm Southeast Asian-South Asian-Eastern European mixed heritage woman in her 30s, GLMZ. Warm medium-brown skin with golden olive undertones, angular Southeast Asian cheekbones tapering into broader Eastern European bone structure. Short textured deep brown hair with faded copper streaks. Her most striking feature: augmented concentric amber ring irises against dark brown sclera, unnaturally patterned and immediately noticeable. Weathered complexion from fieldwork, few lines around intense eyes. Compact wiry build, slight shoulder rounding from years of heavy satchel carrying. Wearing aged high-quality Carhartt work pants, soft merino wool sweater, scuffed sturdy walking boots. Battered canvas fieldwork satchel with leather trim covered in community data-patch stickers visible over one shoulder. Faint linear scar visible on left forearm. No makeup. Economical posture, leaning forward slightly, unconsciously touching left forearm. Purpose-driven movement captured mid-stride. Great Lakes Metropolitan Zone industrial architecture and neon grid lighting in soft focus background. Documentary realism meets neo-noir urban aesthetic. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Southeast Asian": 42.3,
     "South Asian": 31.1,
     "Eastern European": 26.6
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Southeast Asian": {
       "Filipino": {
@@ -307,6 +290,5 @@
         "Hungarian": 6.1
       }
     }
-  },
-  "tier": "1"
+  }
 }

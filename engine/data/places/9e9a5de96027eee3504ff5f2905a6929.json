@@ -3,7 +3,7 @@
   "type": "place",
   "name": "The Gravel Pit",
   "aliases": [],
-  "description": "The Gravel Pit occupies the basement of a condemned residential tower in Pilsen Slab, accessible through a service entrance that hasn't had a functioning lock since 2187. The ceiling is low enough that anyone over 180 centimeters learns to duck within the first visit or wears the lesson on their forehead. The bar is a sheet of industrial plating balanced on cinder blocks. The drinks are measured in confidence rather than precision, and the house pour is a grain alcohol blend that regulars call Pavement — not because of the taste, which is worse than pavement, but because of what it does to you on the way home.\n\nWhat makes the Gravel Pit essential is Maret. Maret Johansson-Afolabi tends bar six nights a week and has done so for eleven years. She is sixty-three years old, built like a dock pylon, and knows more about the freelance economy of southern Meridian than any fixer operating above Tier 2. She doesn't sell information — she trades it, and only to people she's decided deserve it. The evaluation process is opaque. Some runners have been coming to the Pit for years and Maret still treats them like strangers. Others walk in once and leave with a contract. Her judgment is personal, idiosyncratic, and almost never wrong.\n\nThe back corner of the Pit, behind a curtain made from welded-together pull tabs, is where the real business happens. It's not a back room — it's a back corner with a curtain, which is the Shelf version of a back room. Fixers meet runners here. Debts get settled. Occasionally someone doesn't walk out, and Maret adds another pull tab to the curtain. The Gravel Pit doesn't pretend to be anything. It is a hole in the ground where dangerous people drink cheap poison and make arrangements that keep the Shelf's economy turning. It is honest about this in a way that more expensive establishments cannot afford to be.",
+  "description": "The Gravel Pit occupies the basement of a condemned residential tower in Pilsen Slab, accessible through a service entrance that hasn't had a functioning lock since 2187. The ceiling is low enough that anyone over 180 centimeters learns to duck within the first visit or wears the lesson on their forehead. The bar is a sheet of industrial plating balanced on cinder blocks. The drinks are measured in confidence rather than precision, and the house pour is a grain alcohol blend that regulars call Pavement — not because of the taste, which is worse than pavement, but because of what it does to you on the way home.\n\nWhat makes the Gravel Pit essential is Maret. Maret Johansson-Afolabi tends bar six nights a week and has done so for eleven years. She is sixty-three years old, built like a dock pylon, and knows more about the freelance economy of southern Meridian than any fixer operating above Tier 2. She doesn't sell information — she trades it, and only to people she's decided deserve it. The evaluation process is opaque. Some runners have been coming to the Pit for years and Maret still treats them like strangers. Others walk in once and leave with a contract. Her judgment is personal, idiosyncratic, and almost never wrong.\n\nThe back corner of the Pit, behind a curtain made from welded-together pull tabs, is where the real business happens. It's not a back room — it's a back corner with a curtain, which is the Gray Zone version of a back room. Fixers meet runners here. Debts get settled. Occasionally someone doesn't walk out, and Maret adds another pull tab to the curtain. The Gravel Pit doesn't pretend to be anything. It is a hole in the ground where dangerous people drink cheap poison and make arrangements that keep the Gray Zone's economy turning. It is honest about this in a way that more expensive establishments cannot afford to be.",
   "atmosphere": {
     "sights": [
       "Low concrete ceiling stained with decades of condensation and smoke residue",
@@ -34,7 +34,7 @@
     "tags": []
   },
   "frequented_by": [
-    "Shelf-tier freelancers looking for work",
+    "the Gray Zone-tier freelancers looking for work",
     "Fixers who operate below the Circuit's notice",
     "Off-duty dock workers from Old Harbor",
     "Runners between jobs, stretching their last Φ"
@@ -60,7 +60,6 @@
     "bar",
     "nightlife",
     "tier 1",
-    "shelf",
     "pilsen_slab",
     "fixer",
     "contracts"
@@ -73,5 +72,7 @@
     "Rio Morimoto-Citlali-Bouzid",
     "Frost Makwa",
     "Briar Hwang"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

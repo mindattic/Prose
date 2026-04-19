@@ -3,7 +3,7 @@
   "type": "place",
   "name": "Engelheim",
   "aliases": [],
-  "description": "Engelheim is the place where things pass through. The old 63rd and Halsted transit hub — once the commercial heart of Englewood — has been rebuilt, expanded, and rebuilt again into a multi-level transit interchange that connects the southern Shelf districts to the Meridian Core's lower tiers. Four maglev lines converge here, plus a surface-level bus grid and an informal network of unlicensed transit vehicles that fill the gaps the official system refuses to serve. The interchange is the district's heart, its economy, and its curse: everything flows through Engelheim, but very little stays.\n\nThe transit nexus dominates the landscape. Its upper levels are corporate-managed space — Helion Transit Authority signage, functioning surveillance, automated fare enforcement, and the particular sterility of infrastructure maintained for throughput rather than habitation. Below the fare gates, the station's lower concourses have become a permanent market and gathering space — the kind of informal settlement that grows in transit infrastructure the way moss grows on stone. Vendors sell food, repairs, information, and temporary shelter in the corridors beneath the platforms. The transit police nominally patrol these lower levels but have reached an unspoken accommodation with the market operators: commerce continues as long as the trains run on time and nothing happens that generates a report.\n\nAround the nexus, the district radiates outward in concentric rings of decreasing investment. The blocks immediately adjacent benefit from foot traffic and transit access — small businesses, flophouses, clinics, the services that travelers need. Two blocks out, the investment drops sharply. Three blocks out, Engelheim begins to resemble West Engelheim — vacancy, improvised shelter, the architecture of disinvestment. The targeted reinvestment that characterized pre-Consolidation Englewood has been replaced by targeted extraction: the transit hub generates revenue that flows upward through Helion's balance sheets while the surrounding neighborhood receives exactly enough maintenance to prevent the kind of collapse that would interrupt service.\n\nEngelheim has a reputation as a dangerous district, and it is — but the danger is specific rather than general. The transit nexus itself is relatively safe, because too many corporate interests depend on its function. The danger lives in the rings beyond the nexus, where the jurisdiction is muddled and the population is transient enough that disappearances go unrecorded. Fixers, runners, and street operators use Engelheim as a waypoint precisely because of this transience — it is easy to arrive, conduct business, and leave without establishing a pattern. Kyle has passed through Engelheim more times than he can count. Everyone has. That is its nature: a place defined by passage, not by presence.",
+  "description": "Engelheim is the place where things pass through. The old 63rd and Halsted transit hub — once the commercial heart of Englewood — has been rebuilt, expanded, and rebuilt again into a multi-level transit interchange that connects the southern the Gray Zone districts to the Meridian Core's lower tiers. Four maglev lines converge here, plus a surface-level bus grid and an informal network of unlicensed transit vehicles that fill the gaps the official system refuses to serve. The interchange is the district's heart, its economy, and its curse: everything flows through Engelheim, but very little stays.\n\nThe transit nexus dominates the landscape. Its upper levels are corporate-managed space — Helion Transit Authority signage, functioning surveillance, automated fare enforcement, and the particular sterility of infrastructure maintained for throughput rather than habitation. Below the fare gates, the station's lower concourses have become a permanent market and gathering space — the kind of informal settlement that grows in transit infrastructure the way moss grows on stone. Vendors sell food, repairs, information, and temporary shelter in the corridors beneath the platforms. The transit police nominally patrol these lower levels but have reached an unspoken accommodation with the market operators: commerce continues as long as the trains run on time and nothing happens that generates a report.\n\nAround the nexus, the district radiates outward in concentric rings of decreasing investment. The blocks immediately adjacent benefit from foot traffic and transit access — small businesses, flophouses, clinics, the services that travelers need. Two blocks out, the investment drops sharply. Three blocks out, Engelheim begins to resemble West Engelheim — vacancy, improvised shelter, the architecture of disinvestment. The targeted reinvestment that characterized pre-Consolidation Englewood has been replaced by targeted extraction: the transit hub generates revenue that flows upward through Helion's balance sheets while the surrounding neighborhood receives exactly enough maintenance to prevent the kind of collapse that would interrupt service.\n\nEngelheim has a reputation as a dangerous district, and it is — but the danger is specific rather than general. The transit nexus itself is relatively safe, because too many corporate interests depend on its function. The danger lives in the rings beyond the nexus, where the jurisdiction is muddled and the population is transient enough that disappearances go unrecorded. Fixers, runners, and street operators use Engelheim as a waypoint precisely because of this transience — it is easy to arrive, conduct business, and leave without establishing a pattern. Kyle has passed through Engelheim more times than he can count. Everyone has. That is its nature: a place defined by passage, not by presence.",
   "atmosphere": {
     "sights": [
       "The transit nexus rising like a concrete cathedral — platforms stacked four levels high, maglev lines threading through like steel arteries",
@@ -28,7 +28,7 @@
     "feel": "Impermanent. Engelheim feels like a place that exists in motion — remove the people passing through and there would be nothing here but infrastructure and vacancy. There is energy in the transit flow, but it is borrowed energy, and when the last train runs each night, the district exhales into something quieter and more honest and significantly more dangerous.",
     "tags": []
   },
-  "demographics": "Transient population makes accurate demographics impossible. Residential population in the outer rings is predominantly African American, Tier 1 and untier-ed, continuous with the demographics of adjacent districts. The transit nexus itself sees the full spectrum of the lower Shelf passing through daily.",
+  "demographics": "Transient population makes accurate demographics impossible. Residential population in the outer rings is predominantly African American, Tier 1 and untier-ed, continuous with the demographics of adjacent districts. The transit nexus itself sees the full spectrum of the Gray Zone passing through daily.",
   "economy": "Transit-dependent. The nexus generates significant revenue for Helion Transit Authority, none of which is reinvested locally. The lower concourse market operates on an informal economy. Adjacent blocks subsist on traveler services — food, repair, temporary shelter, information brokerage. Beyond the second ring, the economy is indistinguishable from West Engelheim's salvage-and-barter system.",
   "power_structure": "Helion Transit Authority controls the nexus and its immediate perimeter. Beyond that, authority fragments. The lower concourse market is managed by a broker collective called the Platform, which allocates vendor space and mediates disputes. In the outer rings, authority defaults to whoever can hold it — block-level strongmen, gang affiliates, or in some cases, no one at all.",
   "dangers": [
@@ -40,7 +40,7 @@
     "The Platform's enforcement arm, which maintains market order through methods that do not appear in any handbook"
   ],
   "opportunities": [
-    "The transit nexus is the best-connected point in the southern Shelf — four maglev lines means four directions of escape",
+    "The transit nexus is the best-connected point in the southern the Gray Zone — four maglev lines means four directions of escape",
     "The lower concourse market is an excellent place to buy, sell, or trade information without establishing a traceable pattern",
     "Helion's biometric data collection creates a valuable intelligence resource for anyone who can access the transit authority's databases",
     "The Platform is always hiring security for high-value vendor operations during peak transit hours",
@@ -56,13 +56,13 @@
       "West Engelheim",
       "Grand Crossing Gate",
       "Auburn Grist",
-      "The Shelf"
+      "the Gray Zone"
     ],
     "exits": [],
     "tags": []
   },
   "frequented_by": [
-    "Transit commuters from across the southern Shelf",
+    "Transit commuters from across the southern the Gray Zone",
     "Lower concourse vendors and their supply chains",
     "Fixers and runners using the nexus as a waypoint",
     "Helion Transit Authority staff and enforcement drones",
@@ -93,8 +93,7 @@
     "shelter",
     "escape",
     "food",
-    "drone",
-    "shelf"
+    "drone"
   ],
   "related_entities": [
     "The Interchange",
@@ -107,5 +106,7 @@
     "Déjà Vu",
     "Imani Owusu",
     "Kyle Ellen Corbin-Vasik"
-  ]
+  ],
+  "zone": "Z1",
+  "controllingCorponation": null
 }

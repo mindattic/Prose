@@ -34,7 +34,7 @@
   "cost": "Φ2,400 per gram (medical-grade sheet); Φ8,000 per unit (pre-formed implant blanks)",
   "story_hooks": [
     "A batch of Synaptex-OC implants has been contaminated somewhere in the supply chain — instead of integrating cleanly, they are triggering aggressive inflammatory responses six weeks post-implant. Dozens of patients across the city are in crisis, and BioForge Labs is burying the recall to protect a product launch.",
-    "Black-market Synaptex-OC is being sold in the Shelf at one-tenth the price — but it's been synthesized without the anti-rejection protein coating. People are having it implanted by unlicensed surgeons, and the tissue bonding is going catastrophically wrong in ways that are difficult to reverse.",
+    "Black-market Synaptex-OC is being sold in the Gray Zone at one-tenth the price — but it's been synthesized without the anti-rejection protein coating. People are having it implanted by unlicensed surgeons, and the tissue bonding is going catastrophically wrong in ways that are difficult to reverse.",
     "A runner discovers their own Synaptex-OC neural bridge contains an undocumented secondary conductive layer — someone has been passively recording their neural traffic for months. The data has already left the city."
   ],
   "tags": [
@@ -49,14 +49,12 @@
     "elf",
     "medical",
     "market",
-    "shelf",
     "tier 3",
     "tier 4"
   ],
   "related_entities": [
     "Lazarus LX-2 'Lab Rat'",
     "Tessera Industries Memory Rounds MR-2 'Recall'",
-    "The Filament",
-    "The Shelf"
+    "The Filament"
   ]
 }

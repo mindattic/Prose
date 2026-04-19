@@ -9,8 +9,8 @@
   "role": "Lower Dock Crew runner — Prologue survivor. Jaw shattered, rebuilt with chrome.",
   "age": 22,
   "status": "active",
-  "location": "The Shelf — lower loading docks, near Halsted and Chicago Ave",
-  "description": "Milena Souvannavong-Kovalenko came to the Shelf from the Lagos Resettlement Corridor when he was fourteen, one of four hundred thousand climate migrants processed through GLMZ's intake system in a single year. He speaks four languages, none of them quietly. He is the youngest of the crew and the only one who tried to run from Kyle. Kyle caught him in three steps.\n\nThe chrome jaw replacement doesn't quite fit — it gives him a permanent underbite and makes a clicking sound when he talks. He compensates by talking constantly, as if the noise proves the jaw still works. Before the Prologue he was fast and cocky. Now he is fast and nervous. The cockiness is trying to grow back but keeps running into the memory of Kyle walking through the front door like death filling out a timesheet.\n\nDayo has a mother, Folake, who runs a food stall on Tier Four selling jollof rice that is genuinely the best thing in the lower Shelf. She knows Dayo is in the crew. She does not approve. Every Sunday she feeds him and tells him his father would be ashamed. His father died in the Lagos floods. Dayo was six. He does not remember his father well enough to know if she's right, and that is the thing that actually hurts.",
+  "location": "the Gray Zone — lower loading docks, near Halsted and Chicago Ave",
+  "description": "Milena Souvannavong-Kovalenko came to the Gray Zone from the Lagos Resettlement Corridor when he was fourteen, one of four hundred thousand climate migrants processed through GLMZ's intake system in a single year. He speaks four languages, none of them quietly. He is the youngest of the crew and the only one who tried to run from Kyle. Kyle caught him in three steps.\n\nThe chrome jaw replacement doesn't quite fit — it gives him a permanent underbite and makes a clicking sound when he talks. He compensates by talking constantly, as if the noise proves the jaw still works. Before the Prologue he was fast and cocky. Now he is fast and nervous. The cockiness is trying to grow back but keeps running into the memory of Kyle walking through the front door like death filling out a timesheet.\n\nDayo has a mother, Folake, who runs a food stall on Tier Four selling jollof rice that is genuinely the best thing in the Gray Zone. She knows Dayo is in the crew. She does not approve. Every Sunday she feeds him and tells him his father would be ashamed. His father died in the Lagos floods. Dayo was six. He does not remember his father well enough to know if she's right, and that is the thing that actually hurts.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -58,9 +58,9 @@
     {
       "name": "Folake Adeyemi",
       "type": "mother",
-      "description": "Jollof rice stall, Tier Four. Feeds the Shelf. Disapproves of everything Dayo does Monday through Saturday.",
+      "description": "Jollof rice stall, Tier Four. Feeds the Gray Zone. Disapproves of everything Dayo does Monday through Saturday.",
       "emotional_core": "Love expressed as disappointment",
-      "story_tension": "Folake's stall is a Shelf institution. If the crew brings trouble to her door, Dayo breaks."
+      "story_tension": "Folake's stall is a the Gray Zone institution. If the crew brings trouble to her door, Dayo breaks."
     },
     {
       "name": "Yuliya Morozova",
@@ -72,7 +72,7 @@
   ],
   "story_hooks": [
     "The Yuliya connection — he protected her without knowing why",
-    "Folake's stall as a Shelf hub",
+    "Folake's stall as a the Gray Zone hub",
     "The clicking jaw as audio signature",
     "Four languages makes him useful to people who need translators"
   ],
@@ -216,7 +216,7 @@
     "Charmer": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -232,7 +232,6 @@
   "related_entities": [
     "Ashford Signal",
     "The United Workers Front",
-    "The Shelf",
     "TESSERA PG-2 'Signature'",
     "GLMZ",
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
@@ -242,7 +241,7 @@
     "SynapTech ReadRoom Social Cue Enhancer",
     "GLMZ"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Eastern European (40.8%) with significant Southeast Asian (22.5%) and East Asian (12.4%) ancestry, blended with Sub-Saharan African (9.3%), Hispanic/Latin American (7.5%), and South Asian (7.5%) heritage. The dominant Eastern European structure combines with Southeast Asian facial geometry—sharp cheekbones and hooded eyes—while Sub-Saharan African and South Asian ancestry adds warmth and depth to skin tone and feature complexity. A striking Ubiquitous Diaspora combination.",
     "height_cm": 178,

@@ -3,7 +3,7 @@
   "name": "Slagside Rivet-Crown Face Shield",
   "type": "apparel",
   "category": "headwear",
-  "description": "Hammered from salvaged industrial press plates and bent into rough face coverage, the Rivet-Crown is a Shelf staple — ugly, functional, and unmistakably hand-made. Mismatched rivet heads hold overlapping panels of grey and rust-orange scrap steel, with a scratched polycarbonate visor strip salvaged from a defunct transit shelter. The forehead brace is wrapped in friction tape over reclaimed foam padding.\n\nNo two are identical. Chin straps are knotted cord or stripped wire depending on the maker's day. Acid-rain pitting marks every surface.",
+  "description": "Hammered from salvaged industrial press plates and bent into rough face coverage, the Rivet-Crown is a the Gray Zone staple — ugly, functional, and unmistakably hand-made. Mismatched rivet heads hold overlapping panels of grey and rust-orange scrap steel, with a scratched polycarbonate visor strip salvaged from a defunct transit shelter. The forehead brace is wrapped in friction tape over reclaimed foam padding.\n\nNo two are identical. Chin straps are knotted cord or stripped wire depending on the maker's day. Acid-rain pitting marks every surface.",
   "tier_association": "Tier 1",
   "materials": [
     "salvaged press-plate steel",
@@ -12,22 +12,22 @@
     "foam offcut padding",
     "braided cord or stripped wire"
   ],
-  "functionality": "Provides basic ballistic and acid-rain splash protection for the face; the polycarbonate strip offers partial eye shielding. No electronics, no seals — just mass between the wearer's face and the Shelf's hazards.",
+  "functionality": "Provides basic ballistic and acid-rain splash protection for the face; the polycarbonate strip offers partial eye shielding. No electronics, no seals — just mass between the wearer's face and the Gray Zone's hazards.",
   "what_it_says": "You build what you need from what's left, and you don't apologize for it.",
   "worn_by": [
-    "Shelf scavengers",
+    "the Gray Zone scavengers",
     "tunnel runners",
     "unlicensed fighters",
     "dockside brawlers"
   ],
-  "manufacturer": "Self-made / Shelf market stalls",
+  "manufacturer": "Self-made / the Gray Zone market stalls",
   "price_range": "Φ2 – Φ18",
   "aug_compatible": false,
   "gene_compatible": false,
   "story_hooks": [
     "A specific rivet pattern on one shield matches the stamp of a Crucible fab-floor press reported stolen three years ago — the trail leads somewhere uncomfortable.",
-    "A Shelf fixer uses an identical shield as a calling card; when one turns up on a body in Circuit, it means the fixer left it as a message.",
-    "A collector in Tier 4 is paying well over market for 'authentic Shelf ironwork' — the buyers don't know what they're funding."
+    "A the Gray Zone fixer uses an identical shield as a calling card; when one turns up on a body in Circuit, it means the fixer left it as a message.",
+    "A collector in Tier 4 is paying well over market for 'authentic the Gray Zone ironwork' — the buyers don't know what they're funding."
   ],
   "tags": [
     "apparel",
@@ -37,7 +37,6 @@
     "scrap",
     "self-made",
     "acid-rain protection",
-    "shelf",
     "aug-incompatible"
   ],
   "parent_corponation": "",
@@ -65,7 +64,7 @@
       "Rust-orange oxidation patina, especially around fasteners"
     ],
     "tier_indicator": "Tier 5 — sub-grade/ungoverned. This is pure salvage-tier aesthetics. Zero corporate finish, zero mass production. Signals someone operating outside formal economy.",
-    "cultural_context": "Worn by Shelf dwellers, scrappers, autonomous-zone workers, and those in ungoverned districts. Indicates self-reliance, rejection of corpo supply chains, and comfort with DIY augmentation culture. Signals toughness and practical necessity over style—but also craftsmanship pride within constraints.",
+    "cultural_context": "Worn by the Gray Zone dwellers, scrappers, autonomous-zone workers, and those in ungoverned districts. Indicates self-reliance, rejection of corpo supply chains, and comfort with DIY augmentation culture. Signals toughness and practical necessity over style—but also craftsmanship pride within constraints.",
     "condition_typical": "Heavily weathered and patched. Visor typically clouded and micro-scratched from use. Friction tape fraying at edges. Rust actively blooming in seams. Looks like it's been through seasons of acid rain and daily impact. Chinstrap often re-knotted or spliced with additional cord."
   },
   "image_prompt": "Close-up fashion shot of a Slagside Rivet-Crown Face Shield mounted on a dark industrial mannequin head, three-quarter view. Emphasize the hammered steel texture, acid-rain pitting, and overlapping mismatched panels. Polycarbonate visor catches moody violet-amber neon glow reflected from rain-slick urban backdrop. Harsh side-lighting reveals every tool mark and rivet head. Background: blurred GLMZ skyline at night, water-stained concrete underpass, faint holographic graffiti. Gritty, tactile, survival-focused. Shot in cinematic neo-noir realism style. --ar 2:3 --v 6",

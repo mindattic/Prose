@@ -6,10 +6,10 @@
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Truant message runner, The Shelf",
+  "role": "Truant message runner, the Gray Zone",
   "age": 11,
   "status": "active",
-  "location": "The Shelf, Garfield Rack, near Ashland and Chicago Ave",
+  "location": "the Gray Zone, Garfield Rack, near Ashland and Chicago Ave",
   "description": "Mariposa Guerrero is a scrawny, dark-skinned boy with close-cropped hair that he's attempted to dye in patches — copper at the temples, greenish-black at the crown — using stolen salon gel that only half-worked. His left eye has a cracked retinal overlay from a secondhand aug he installed himself using a cracked tutorial, giving that eye a faint grid shimmer when he's excited or scared. He wears a vest with too many pockets, each one holding something he's convinced will be useful someday: a dead ELF token, three different brand of protein tabs, a bent stylus. He moves like a sparrow — quick, diagonal, always watching exits.\n\nMariposa Guerrero is relentlessly optimistic in the way only children who've had to practice it deliberately can be. He runs messages between market stalls, repair shops, and mid-tier residents who don't trust the corp relay networks, collecting Φ1-2 per run. He narrates his own life in his head as if he's a documentary subject, which makes him unexpectedly articulate about his circumstances when asked. He worships a minor ELF he calls 'Knuckle' that he believes lives in a cracked streetlight on his corner.",
   "psychology": {
     "facet_weights": {
@@ -37,10 +37,10 @@
       "drastically overestimates his own invisibility — adults notice him more than he thinks",
       "doesn't recognize when he's being used by older runners"
     ],
-    "secret": "He witnessed a Tessera logistics officer accepting a bribe from a Shelf gang lieutenant three weeks ago and recorded four seconds of it on his glitching retinal overlay before it crashed. He hasn't told anyone because he doesn't know what it's worth yet — and he's been asking careful questions to find out."
+    "secret": "He witnessed a Tessera logistics officer accepting a bribe from a the Gray Zone gang lieutenant three weeks ago and recorded four seconds of it on his glitching retinal overlay before it crashed. He hasn't told anyone because he doesn't know what it's worth yet — and he's been asking careful questions to find out."
   },
   "speech_patterns": {
-    "vocabulary": "Street-clipped, mixes Shelf slang with surprisingly formal documentary-style observations. Uses 'allegedly' and 'as documented' ironically.",
+    "vocabulary": "Street-clipped, mixes the Gray Zone slang with surprisingly formal documentary-style observations. Uses 'allegedly' and 'as documented' ironically.",
     "cadence": "Fast and breathless when excited, deliberate and serious when he wants to be taken seriously.",
     "verbal_tics": [
       "'As documented—'",
@@ -167,7 +167,7 @@
     "Diplomat": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -177,7 +177,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Born in Garfield Rack to a Shelf family; mother works laundry logistics, father unknown",
+      "event": "Born in Garfield Rack to a the Gray Zone family; mother works laundry logistics, father unknown",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -212,7 +212,6 @@
     "Garfield Rack",
     "The Marrow Market",
     "Sulfur Crown Agriculture",
-    "The Shelf",
     "Axiom Industries",
     "LifeWire LumiFace Bioluminescent Subdermal Accent",
     "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
@@ -222,7 +221,7 @@
     "Lazarus LX-2 'Lab Rat'",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Complex Pan-Global ancestry with balanced contributions across multiple continents. Hispanic/Latin American heritage (31.9%) forms the foundational phenotype, enriched by significant South Asian (18.5%), Sub-Saharan African (15.6%), East Asian (14.2%), North African (12.8%), and Southeast Asian (7.0%) components. This creates a distinctive phenotype: warm medium-brown skin with golden undertones and subtle reddish warmth, facial structure combining Latin American cheekbone prominence with South Asian and East Asian eye shape characteristics, and the fine facial proportions reflecting the balanced multi-regional blend.",
     "height_cm": 142,

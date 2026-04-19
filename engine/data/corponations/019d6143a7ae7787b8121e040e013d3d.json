@@ -39,5 +39,14 @@
     "Tessera Corponation ChronoMark VR-3 Passive Isotopic Citizen Tagging System",
     "The Reclamation Assembly",
     "The Undertow"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z12"
+    ],
+    "primaryZone": "Z12",
+    "lakefrontAccess": false,
+    "description": "Nightshade Campus — 9-square-kilometer pharmaceutical research facility embedded within the Detroit Reclamation Zone of Zone 12's Michigan tendril corridor. Operates in Detroit's regulatory ambiguity, conducting research that Zone 1-3 corponation governance would not permit.",
+    "grayZoneRelationship": "Detroit's Gray Zone communities are Nightshade's primary clinical test population. The relationship is transactional and not voluntary in any meaningful sense."
+  }
 }

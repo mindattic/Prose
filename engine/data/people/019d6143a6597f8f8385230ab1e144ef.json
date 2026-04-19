@@ -6,10 +6,10 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Blackmail specialist and information extortionist operating across the Shelf lower levels",
+  "role": "Blackmail specialist and information extortionist operating across the Gray Zone lower levels",
   "age": 53,
   "status": "active",
-  "location": "The Shelf lower levels — moves between a rented room in Burnside Pocket and a regular table at a bar called The Gradual Slope in Gage Circuit, near Halsted and Division",
+  "location": "the Gray Zone lower levels — moves between a rented room in Burnside Pocket and a regular table at a bar called The Gradual Slope in Gage Circuit, near Halsted and Division",
   "description": "Bogdana Zaragoza-Pathak is a tall, angular woman whose grey-streaked hair is worn in an elaborate upswept style that she refreshes every three days without fail — it is her single visible vanity. Her skin is deep brown and she wears it without modification; the wrinkles at her eyes and the set of her jaw are, she believes, assets. She looks like someone's formidable aunt, which is the point. Her irises are unmodded dark brown. The only chrome visible is a thin hearing-enhancement strip behind her left ear, which is not what it appears — it's also a directional audio recorder of her own build.\n\nBogdana Zaragoza-Pathak is a listener, constitutionally and professionally. In conversation she gives total, focused attention, the kind that makes people feel seen and valued and consequently say more than they planned. She is not cruel and is not a sadist — she treats blackmail as a long-term relationship, not a one-time extraction, and is genuinely interested in her subjects as people. This is both her gift and the thing that has occasionally made her hesitate when she shouldn't. She has been in this business long enough to have files on people who are now grandparents, and she considers their ongoing silence a form of legacy management.",
   "psychology": {
     "facet_weights": {
@@ -56,7 +56,7 @@
     "A longtime subject of her blackmail has decided they'd rather destroy her than keep paying, and she needs help understanding the threat before it arrives",
     "She approaches players because her archive has recorded something recent and dangerous — something she didn't go looking for — and she needs people with capabilities she doesn't have to help her understand what she has"
   ],
-  "narrative_function": "Information source of extreme depth; potential blackmailer of players or their contacts; can be an unlikely ally if her files contain something players need; represents the long institutional memory of the Shelf's criminal ecosystem.",
+  "narrative_function": "Information source of extreme depth; potential blackmailer of players or their contacts; can be an unlikely ally if her files contain something players need; represents the long institutional memory of the Gray Zone's criminal ecosystem.",
   "augmentations": "Directional audio recorder disguised as a hearing enhancement strip (custom build). Eidetic memory augmentation — lower-tier, consumer-accessible, helps her recall audio and visual detail precisely. Thin haptic contact-skin on her palm — can feel the temperature and pulse of someone's hand during a handshake.",
   "daily_life": "Mornings spent reviewing and updating her files in the Burnside Pocket room. Afternoons at The Gradual Slope, where she listens, drinks slowly, and is known as a pleasant regular. Evenings are for communications — sending reminders, arranging meetings, reviewing new material.",
   "affiliation": "Independent — maintains a loose alliance with a data broker network called the Curators, though she predates their founding and considers herself their ancestor",
@@ -127,7 +127,7 @@
       "Craves genuine connection while having built an entire life that makes genuine connection impossible"
     ],
     "habits": [
-      "Takes one long walk each morning through a different part of the Shelf — observing, remembering",
+      "Takes one long walk each morning through a different part of the Gray Zone — observing, remembering",
       "Leaves data offerings at the E.L.F. shrine in The Gradual Slope — she's superstitious that the bar's resident spirit keeps her conversations unrecorded by others"
     ],
     "breaking_points": [
@@ -189,7 +189,7 @@
     "Risk Taker": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -208,7 +208,6 @@
   "related_entities": [
     "Burnside Pocket",
     "Gage Circuit",
-    "The Shelf",
     "Mireille & The Hollow Saints",
     "Crucible Industries Volt Knuckle VK-1 'Jawbreaker'",
     "Circuit",
@@ -216,7 +215,7 @@
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
     "IRONLIMB Spectre SV-4 Stealth Arm"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Complex global heritage: South Asian (31.8%), Eastern European (24.9%), Hispanic/Latin American (20.7%), East Asian (14.4%), Sub-Saharan African (8.2%). The convergence creates striking contradictions — South Asian warmth and fullness blended with Eastern European bone structure, Hispanic/Latin undertones threading through a complexion enriched by Sub-Saharan African depth, with East Asian refinement in the eye set and cheekbones. A face that speaks to the Ubiquitous Diaspora.",
     "height_cm": 178,

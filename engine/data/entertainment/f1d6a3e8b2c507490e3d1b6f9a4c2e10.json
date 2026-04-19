@@ -5,18 +5,18 @@
   "category": "song",
   "subcategory": "funeral_standard",
   "aliases": [],
-  "description": "Composed in 2195 by vocalist and composer Adaeze Solís-Bergström, initially for the funeral of her brother — a Tier 1 maintenance worker killed in a conduit collapse — 'Iron Meridian (The Long Walk Home)' has since become the dominant funeral standard for Shelf and Circuit communities across GLMZ. The song is slow and immense, built on a foundation of low brass and bowed metal percussion with Solís-Bergström's voice moving through it like something that has survived great damage. The lyrics describe the city as both killer and keeper — the iron and concrete that took the dead also gave them shelter, work, identity — and the chorus is less a comfort than an acknowledgment: 'You walked the long way. You walked the whole way. The city knows your weight.' It does not promise anything beyond or after. It simply witnesses.\n\nThe song exists in two distinct community versions: the Shelf version, performed a cappella by whoever is present and willing, with no fixed key or tempo — it adjusts to the singers, not the other way around — and the Circuit version, which retains Solís-Bergström's original instrumentation and is performed by local musicians at community halls. A Tier 3 orchestral arrangement was released in 2208 by a chamber ensemble, and while Solís-Bergström approved it, she stated publicly that it was 'beautiful and wrong in the way that comfort is sometimes wrong.' Vantablack Media has left the song alone, which is widely understood as a rare act of corporate self-awareness rather than oversight.",
+  "description": "Composed in 2195 by vocalist and composer Adaeze Solís-Bergström, initially for the funeral of her brother — a Tier 1 maintenance worker killed in a conduit collapse — 'Iron Meridian (The Long Walk Home)' has since become the dominant funeral standard for the Gray Zone and Circuit communities across GLMZ. The song is slow and immense, built on a foundation of low brass and bowed metal percussion with Solís-Bergström's voice moving through it like something that has survived great damage. The lyrics describe the city as both killer and keeper — the iron and concrete that took the dead also gave them shelter, work, identity — and the chorus is less a comfort than an acknowledgment: 'You walked the long way. You walked the whole way. The city knows your weight.' It does not promise anything beyond or after. It simply witnesses.\n\nThe song exists in two distinct community versions: the Gray Zone version, performed a cappella by whoever is present and willing, with no fixed key or tempo — it adjusts to the singers, not the other way around — and the Circuit version, which retains Solís-Bergström's original instrumentation and is performed by local musicians at community halls. A Tier 3 orchestral arrangement was released in 2208 by a chamber ensemble, and while Solís-Bergström approved it, she stated publicly that it was 'beautiful and wrong in the way that comfort is sometimes wrong.' Vantablack Media has left the song alone, which is widely understood as a rare act of corporate self-awareness rather than oversight.",
   "creator": "Adaeze Solís-Bergström",
   "distributor": "self-released",
   "tier_availability": "All tiers",
   "legality": "legal",
   "genre": "Grief Folk / Funeral Standard",
   "medium": "mixed",
-  "audience": "Primarily Tier 1 and Tier 2 mourners and funeral communities; known across all tiers; the a cappella Shelf version is sung by anyone who knew the deceased regardless of musical ability; the Circuit version requires local musicians; the Tier 3 arrangement is performed at civic memorials",
-  "cultural_impact": "The song has done something rare in GLMZ: it has crossed the tier boundary not through commercial success but through grief, which moves freely where currency does not. Tier 3 residents who have lost family on the Shelf know it. Tier 4 residents who grew up Circuit know it. It has even been performed, quietly and without announcement, at two Tier 5 private memorials — a fact that leaked to the mesh and generated more discussion than any corporate music event that year. The line 'The city knows your weight' has become a common memorial inscription on the Shelf, scratched into walls and conduit housings near places where workers died. Adaeze Solís-Bergström, now in her sixties, still attends Shelf funerals when asked and still sings.",
+  "audience": "Primarily Tier 1 and Tier 2 mourners and funeral communities; known across all tiers; the a cappella the Gray Zone version is sung by anyone who knew the deceased regardless of musical ability; the Circuit version requires local musicians; the Tier 3 arrangement is performed at civic memorials",
+  "cultural_impact": "The song has done something rare in GLMZ: it has crossed the tier boundary not through commercial success but through grief, which moves freely where currency does not. Tier 3 residents who have lost family in the Gray Zone know it. Tier 4 residents who grew up Circuit know it. It has even been performed, quietly and without announcement, at two Tier 5 private memorials — a fact that leaked to the mesh and generated more discussion than any corporate music event that year. The line 'The city knows your weight' has become a common memorial inscription in the Gray Zone, scratched into walls and conduit housings near places where workers died. Adaeze Solís-Bergström, now in her sixties, still attends the Gray Zone funerals when asked and still sings.",
   "creator_bio_note": "Adaeze Solís-Bergström was born Tier 1, trained herself on recordings salvaged from a flooded archive, and has never signed with a label.",
   "known_fans": [
-    "Shelf and Circuit funeral communities",
+    "the Gray Zone and Circuit funeral communities",
     "labor memorial organizers",
     "grief counselors in unlicensed Tier 1 clinics",
     "Tier 3 residents with working-class roots",
@@ -24,8 +24,8 @@
     "Adaeze Solís-Bergström's extensive personal network across all tiers she has visited for funerals"
   ],
   "story_hooks": [
-    "Adaeze Solís-Bergström is asked to sing at the funeral of a Tier 5 executive whose family insists he 'came from nothing' — the Shelf community knows he didn't, and knows what he did to get where he ended up, and Solís-Bergström must decide whether the song belongs to everyone or only to those who earned it.",
-    "Someone is selling an unauthorized neural-feed version of the song, algorithmically generated to mimic Solís-Bergström's voice, and licensing it to corporate memorial services — the real composer finds out at a Shelf funeral where the bereaved family paid for what they thought was the real thing.",
+    "Adaeze Solís-Bergström is asked to sing at the funeral of a Tier 5 executive whose family insists he 'came from nothing' — the Gray Zone community knows he didn't, and knows what he did to get where he ended up, and Solís-Bergström must decide whether the song belongs to everyone or only to those who earned it.",
+    "Someone is selling an unauthorized neural-feed version of the song, algorithmically generated to mimic Solís-Bergström's voice, and licensing it to corporate memorial services — the real composer finds out at a the Gray Zone funeral where the bereaved family paid for what they thought was the real thing.",
     "A player character must attend a funeral in a community that is not their own; knowing — or not knowing — when to join the a cappella chorus of 'Iron Meridian' is the difference between being accepted and being revealed as an outsider."
   ],
   "tags": [
@@ -34,7 +34,6 @@
     "song",
     "funeral_standard",
     "grief_folk",
-    "shelf",
     "circuit",
     "memorial",
     "adaeze_solis-bergstrom",
@@ -52,7 +51,6 @@
     "TESSERA TX-12 'Chorus'",
     "The Circuit",
     "The Consensus",
-    "The Shelf",
     "Vantablack Media"
   ]
 }

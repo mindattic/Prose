@@ -1,4 +1,4 @@
-@page "/entertainment"
+﻿@page "/entertainment"
 @inject EntertainmentRepository Repo
 @inject NavigationManager Nav
 @inject IJSRuntime JS
@@ -24,7 +24,7 @@
     <div class="dict-editor">
         @if (editing != null)
         {
-            <EditViewToggle RepoName="entertainment" Title="@(isNew ? "New Entry" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)" HideToggle="@_confirmDelete">
+            <EditViewToggle RepoName="entertainment" Title="@(isNew ? "New Entry" : editing.Name)" Json="@System.Text.Json.JsonSerializer.Serialize(editing)" HideToggle="@_confirmDelete" Rating="@(editing?.Rating ?? 0)" RatingChanged="OnRatingChanged">
                 <HeaderButtons>
                     @if (!_confirmDelete)
                     {
@@ -42,8 +42,12 @@
                     <div class="row g-3 mb-3">
                         <div class="col-3"><div class="field-label">Name</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Name" /></div>
                         <div class="col-3"><div class="field-label">Category</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Category" /></div>
+                        <div class="col-3"><div class="field-label">Subcategory</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Subcategory" /></div>
                         <div class="col-3"><div class="field-label">Genre</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Genre" /></div>
+                    </div>
+                    <div class="row g-3 mb-3">
                         <div class="col-3"><div class="field-label">Medium</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Medium" /></div>
+                        <div class="col-3"><div class="field-label">Audience</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Audience" /></div>
                     </div>
                     <div class="row g-3 mb-3">
                         <div class="col-3"><div class="field-label">Creator</div><input type="text" class="form-control form-control-sm bg-dark text-light border-secondary" @bind="editing.Creator" /></div>
@@ -53,6 +57,15 @@
                     </div>
                     <div class="mb-3"><div class="field-label">Description</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Description"></textarea></div>
                     <div class="mb-3"><div class="field-label">Cultural Impact</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.CulturalImpact"></textarea></div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">Aliases (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editAliases"></textarea></div>
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">Known Fans (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editKnownFans"></textarea></div>
+                    </div>
+                    <div class="mb-3"><div class="field-label">Story Hooks (one per line)</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editStoryHooks"></textarea></div>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">Image Prompt</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.MidjourneyPrompt"></textarea></div>
+                        <div style="flex: 1; min-width: 200px;"><div class="field-label">DALL-E 3 Prompt</div><textarea class="form-control bg-dark text-light border-secondary auto-grow" @bind="editing.Dalle3Prompt"></textarea></div>
+                    </div>
                 </ChildContent>
             </EditViewToggle>
         }
@@ -68,6 +81,7 @@
     private string filter = "";
     private List<(string name, int count)> allTags = [];
     private HashSet<string> selectedTags = [];
+    private string editAliases = "", editKnownFans = "", editStoryHooks = "";
 
     private List<EntertainmentData> FilteredItems
     {
@@ -86,11 +100,14 @@
     protected override void OnInitialized() { Repo.Reload(); items = Repo.GetAll(); RebuildTags(); if (Nav.Uri.Contains("new=true")) AddNew(); else { var qid = Nav.Uri.Contains("id=") ? Uri.UnescapeDataString(Nav.Uri.Split(new[]{"id="}, StringSplitOptions.None).Last().Split(new[]{"&"}, StringSplitOptions.None)[0]) : ""; if (!string.IsNullOrEmpty(qid)) { var t = items.FirstOrDefault(e => e.Id == qid); if (t != null) Edit(t); } } }
     private void RebuildTags() { allTags = items.SelectMany(e => e.Tags).GroupBy(t => t).Select(g => (g.Key, g.Count())).OrderBy(t => t.Key).ToList(); }
     private void OnTagsChanged(HashSet<string> tags) { selectedTags = tags; }
-    private void AddNew() { editing = new EntertainmentData(); isNew = true; _confirmDelete = false; }
-    private void Edit(EntertainmentData e) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_entertainment", e.Id); editing = e; originalName = e.Name; isNew = false; _confirmDelete = false; if (!Nav.Uri.Contains("id=" + e.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + e.Id, forceLoad: false); }
+    private void AddNew() { editing = new EntertainmentData(); isNew = true; _confirmDelete = false; editAliases = ""; editKnownFans = ""; editStoryHooks = ""; }
+    private void Edit(EntertainmentData e) { _ = JS.InvokeVoidAsync("localStorage.setItem", "ss_sel_entertainment", e.Id); editing = e; originalName = e.Name; isNew = false; _confirmDelete = false; editAliases = string.Join("\n", e.Aliases); editKnownFans = string.Join("\n", e.KnownFans); editStoryHooks = string.Join("\n", e.StoryHooks); if (!Nav.Uri.Contains("id=" + e.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + e.Id, forceLoad: false); }
     private void SaveEdit()
     {
         if (editing == null || string.IsNullOrWhiteSpace(editing.Name)) return;
+        editing.Aliases = editAliases.Split('\n', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList();
+        editing.KnownFans = editKnownFans.Split('\n', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList();
+        editing.StoryHooks = editStoryHooks.Split('\n', StringSplitOptions.TrimEntries | StringSplitOptions.RemoveEmptyEntries).ToList();
         if (!isNew && originalName != editing.Name) Repo.Delete(originalName);
         Repo.Save(editing); editing = null; items = Repo.GetAll(); RebuildTags();
     }
@@ -107,4 +124,5 @@
         }
     }
     private List<(string name, string json)> GetExportEntries() => items.Select(e => (e.Name, System.Text.Json.JsonSerializer.Serialize(e))).ToList();
+    private void OnRatingChanged(double value) { if (editing == null) return; editing.Rating = value; Repo.Save(editing); }
 }

@@ -6,10 +6,10 @@
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
-  "role": "Childcare worker and after-school program coordinator at a community center in The Shelf",
+  "role": "Childcare worker and after-school program coordinator at a community center in the Gray Zone",
   "age": 28,
   "status": "active",
-  "location": "The Shelf — Clearpath Community Node, a converted transit shed that serves as a childcare center, food pantry, and meeting space, near Ashland and Division",
+  "location": "the Gray Zone — Clearpath Community Node, a converted transit shed that serves as a childcare center, food pantry, and meeting space, near Ashland and Division",
   "description": "Echo Bautista is compact and energetic, built like someone who has spent years crouching to a child's eye level and then standing up quickly to manage chaos. Their skin is warm brown, their hair a natural cloud of deep black shot through with self-maintaining bioluminescent streaks of soft green — a geneware mod they got as a teenager and have never changed because the children love it and they love the children. They have their Ghanaian father's broad cheekbones and their Iranian mother's sharp nose, and they wear expressions that shift fast: delight to concern to focused calm, all in the span of a breath. Their hands are always slightly stained with paint or chalk or both.\n\nEcho Bautista runs on conviction and substandard coffee. They believe — with a firmness that sometimes looks like stubbornness and sometimes looks like the only sane response to GLMZ — that children are the one non-negotiable. Whatever the Corponations decide, whatever the district politics do, whatever the power cuts and the overcrowding and the data poverty do, the kids at Clearpath are going to have three meals today and a clean place to learn and an adult who will not disappear on them. They are funny in a dry, quick way that children respond to immediately. Adults who underestimate them because of their warmth make a reliable and often entertaining mistake.",
   "psychology": {
     "facet_weights": {
@@ -180,7 +180,7 @@
     "Optimist": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -190,7 +190,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Born in The Shelf to a Ghanaian transit worker and an Iranian medical technician",
+      "event": "Born in the Gray Zone to a Ghanaian transit worker and an Iranian medical technician",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -228,7 +228,6 @@
   "related_entities": [
     "The Iron Lotus",
     "Clearpath",
-    "The Shelf",
     "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "The Pellucid Span",
     "The Gradient Compact",
@@ -241,7 +240,7 @@
     "GLMZ",
     "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Hispanic/Latin American (56.5%) with substantial Sub-Saharan African ancestry (28.2%), complemented by Northern European heritage (15.3%). This creates a warm, rich complexion with golden-brown undertones—a sophisticated blend of Caribbean and Latin warmth with deeper melanin presence and subtle cool undertones from Northern European ancestry.",
     "height_cm": 158,

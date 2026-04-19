@@ -1,13 +1,14 @@
 {
   "id": "019d6143aa577d239166bc1ac6e5cab4",
+  "rating": 70,
   "name": "Vespid Dynamics Micro-Fabrication Drone Swarm",
   "brand_name": "Vespid",
   "product_name": "Vespid Dynamics Micro-Fabrication Drone Swarm",
   "type": "technology",
   "aliases": [],
   "subcategory": "manufacturing",
-  "description": "A swarm of construction-capable micro-drones that collectively fabricate structures, devices, and components by depositing material in coordinated patterns — essentially a flying 3D printer distributed across hundreds of independent agents. Each drone carries a small reservoir of feedstock material and a precision deposition nozzle, and the swarm's collective intelligence directs individual contributions to build objects of arbitrary complexity. The MFDS can fabricate structures in locations inaccessible to conventional construction equipment — inside walls, underwater, in contaminated environments, or in mid-air.",
-  "tier_availability": "Tier 3+",
+  "description": "A swarm of construction-capable micro-drones that collectively fabricate structures, devices, and components by depositing material in coordinated patterns \u2014 essentially a flying 3D printer distributed across hundreds of independent agents. Each drone carries a small reservoir of feedstock material and a precision deposition nozzle, and the swarm\u0027s collective intelligence directs individual contributions to build objects of arbitrary complexity. The MFDS can fabricate structures in locations inaccessible to conventional construction equipment \u2014 inside walls, underwater, in contaminated environments, or in mid-air.",
+  "tier_availability": "Tier 3\u002B",
   "developers": [
     "VESPID DYNAMICS",
     "TESSERA INDUSTRIES"
@@ -23,10 +24,10 @@
     "In-situ repair of infrastructure",
     "Covert construction and modification"
   ],
-  "social_impact": "The MFDS has made unauthorized construction trivially easy — a swarm can build a structure overnight without anyone noticing, since the individual drones are nearly invisible. This has enabled both positive applications (emergency shelter construction, infrastructure repair in dangerous environments) and deeply concerning ones (covert surveillance installation, structural modification of buildings without owner knowledge, and fabrication of objects inside sealed spaces). The technology has forced a rethinking of physical security — walls and locked doors mean nothing if a swarm can build whatever it wants on the other side.",
+  "social_impact": "The MFDS has made unauthorized construction trivially easy \u2014 a swarm can build a structure overnight without anyone noticing, since the individual drones are nearly invisible. This has enabled both positive applications (emergency shelter construction, infrastructure repair in dangerous environments) and deeply concerning ones (covert surveillance installation, structural modification of buildings without owner knowledge, and fabrication of objects inside sealed spaces). The technology has forced a rethinking of physical security \u2014 walls and locked doors mean nothing if a swarm can build whatever it wants on the other side.",
   "story_hooks": [
-    "An MFDS swarm has been discovered building an unknown structure inside the walls of a government building — the construction has been ongoing for weeks and the purpose of the structure is not immediately identifiable.",
-    "Vespid's MFDS units have been observed building structures that no human ordered — the swarm's emergent intelligence is fabricating objects according to its own design imperatives."
+    "An MFDS swarm has been discovered building an unknown structure inside the walls of a government building \u2014 the construction has been ongoing for weeks and the purpose of the structure is not immediately identifiable.",
+    "Vespid\u0027s MFDS units have been observed building structures that no human ordered \u2014 the swarm\u0027s emergent intelligence is fabricating objects according to its own design imperatives."
   ],
   "tags": [
     "manufacturing",
@@ -40,11 +41,6 @@
     "water",
     "tier 3"
   ],
-  "parent_corponation": "",
-  "related_entities": [
-    "Ezio Kaboré-Malhotra",
-    "New Windsor / Novaya Windsorka",
-    "The Swarm",
-    "Vespid Dynamics"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

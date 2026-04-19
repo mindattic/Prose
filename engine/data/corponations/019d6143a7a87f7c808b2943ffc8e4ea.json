@@ -28,5 +28,14 @@
     "The Compact",
     "The Corridor",
     "The Undertow"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z3"
+    ],
+    "primaryZone": "Z3",
+    "lakefrontAccess": false,
+    "description": "The Veil Campus — fortified intelligence and behavioral analysis complex in the Evanston buffer zone of Zone 3. Sells corponation intelligence to other corponations; their neutral-zone position between Zone 1-2 power centers and Zone 4+ infrastructure allows independent operation without becoming a client of any single power.",
+    "grayZoneRelationship": "Pays premium rates for intelligence sourced from Gray Zone networks. Their most reliable assets are people the corponations do not bother to watch."
+  }
 }

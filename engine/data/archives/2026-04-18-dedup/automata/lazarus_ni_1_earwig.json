@@ -1,0 +1,48 @@
+{
+  "name": "Lazarus NI-1 'Earwig'",
+  "type": "automaton",
+  "classification": "Infiltration Platform — Neural Intrusion",
+  "aliases": [],
+  "manufacturer": "LAZARUS BIOMEDICAL (BLACK PROJECT)",
+  "description": "The NI-1 is a centipede-form automaton approximately 4 centimeters in length and 3 millimeters in diameter, designed to enter the human body through the ear canal and interface directly with the auditory nerve. It moves with a fluid, peristaltic motion that produces no sound — targets do not feel it enter. The unit's segmented body is composed of biocompatible polymer over a flexible titanium spine, and each segment contains microactuators that allow it to navigate the curves of the ear canal without damaging tissue. It anchors itself to the tympanic membrane using molecular adhesion pads and extends a hairline neural probe through the membrane into the middle ear cavity.\n\nOnce seated, the Earwig can transmit audio directly into the target's perception — voices, sounds, commands that only the host can hear. It can also receive, monitoring the host's vocalized and subvocalized speech through bone conduction. The host cannot remove it without surgical intervention. Attempts to extract the unit manually trigger a defensive response: the Earwig releases a microdose of a paralytic compound that causes the host to lose motor control for approximately ninety seconds, during which it repositions itself deeper in the canal.\n\nThe psychological effect is the primary weapon. Hosts report hearing whispered instructions they cannot ignore, sounds that drive them toward paranoia and compliance, and a persistent low-frequency hum that disrupts sleep. Long-term hosts develop a dependency on the Earwig's audio feed — the silence when it stops transmitting is described as worse than the intrusion. Lazarus denies the NI-1 exists. Recovered units have been found in three assassinated political figures and one corporate whistleblower.",
+  "tier_availability": "Tier 5 — black market only",
+  "legality": "Prohibited under all Meridian Accords — classified as torture device",
+  "autonomy_level": "Semi-autonomous with remote operator guidance",
+  "dimensions": "4cm length, 3mm diameter, 0.8g mass",
+  "weight": "0.8 g",
+  "power_source": "Bioelectric harvesting from host tissue, indefinite operational life",
+  "locomotion": "Peristaltic segmented movement, molecular adhesion pads",
+  "armament": [
+    "Neural audio injection",
+    "Paralytic microdose (90-second motor inhibition)",
+    "Subvocal monitoring"
+  ],
+  "sensors": [
+    "Bone conduction microphone",
+    "Thermal gradient navigation",
+    "Tissue density mapping"
+  ],
+  "countermeasures": "Surgical extraction under general anesthesia by a specialist familiar with the design. Strong magnetic fields can disrupt the unit's navigation temporarily. EMP will destroy it but risks collateral damage to the host's inner ear structures.",
+  "known_deployments": [
+    "Three confirmed political assassinations (2196-2199)",
+    "One corporate whistleblower silencing (2198)",
+    "Rumored use in interrogation facilities"
+  ],
+  "story_hooks": [
+    "Someone is hearing voices that no one else can hear — and the voices are giving them instructions to kill a specific person",
+    "A dead man was found with an Earwig still active in his ear canal, still receiving transmissions from an operator who does not know the host is dead"
+  ],
+  "cultural_context": "The Earwig is the reason people in the Gray Zone cover their ears when they sleep. It is the reason parents check their children's ear canals every morning. It is probably an urban legend for most of the population — but for the people who know it is real, it represents the ultimate violation of bodily autonomy.",
+  "tags": [
+    "automaton",
+    "infiltration",
+    "neural",
+    "horror",
+    "lazarus",
+    "torture",
+    "assassination",
+    "tier 5",
+    "nightmare"
+  ],
+  "id": "1630dcb5bf2291024c88290aeb4171e5"
+}

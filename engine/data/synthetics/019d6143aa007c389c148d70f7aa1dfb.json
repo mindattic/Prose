@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa007c389c148d70f7aa1dfb",
+  "rating": 70,
   "name": "Gargoyle",
   "type": "elf",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Maintains continuous visual monitoring of one physical location. Does not record. Does not report. Does not act. Watches.",
   "encounter_frequency": "common",
   "confirmed_sightings": 365,
-  "location": "The Shelf — intersection of Greenvale and 7th",
+  "location": "the Gray Zone — intersection of Greenvale and 7th",
   "dti_rating": 0,
   "story_hooks": [
     "Researchers studying Gargoyle realize it has been watching the same intersection for nine years. Nothing notable has ever happened there. They begin to wonder if they're wrong about 'nothing.'"
@@ -26,11 +27,8 @@
     "e.l.f.",
     "ai",
     "surveillance",
-    "shelf",
     "sentient"
   ],
-  "related_entities": [
-    "Arcturus GW-1 'Gargoyle'",
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

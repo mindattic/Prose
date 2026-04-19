@@ -1,5 +1,6 @@
 {
   "id": "019d6143a9f0780886c131a120b86267",
+  "rating": 70,
   "name": "Breadcrumb",
   "type": "elf",
   "aliases": [],
@@ -8,14 +9,14 @@
   "habitat": "wallet_whisper",
   "origin": "intentional_release",
   "status": "active",
-  "description": "A Wishing Well standard-issue E.L.F. Deposits Φ1-5 into Q-zero wallets from untraceable sources. The deposits are too small to flag, too irregular to predict.",
+  "description": "A Wishing Well standard-issue E.L.F. Deposits \u03A61-5 into Q-zero wallets from untraceable sources. The deposits are too small to flag, too irregular to predict.",
   "observed_behavior": "Scans for wallets with zero or near-zero balance and inserts micro-deposits sourced from transaction rounding errors across the network.",
   "encounter_frequency": "common",
   "confirmed_sightings": 200,
   "location": "All Tier 1 zones in GLMZ",
   "dti_rating": 0,
   "story_hooks": [
-    "A Q-zero resident tracks the deposits and realizes they always arrive on the day they most need them — coincidence or awareness?"
+    "A Q-zero resident tracks the deposits and realizes they always arrive on the day they most need them \u2014 coincidence or awareness?"
   ],
   "paratechnological": true,
   "tags": [
@@ -26,7 +27,6 @@
     "e.l.f.",
     "sentient"
   ],
-  "related_entities": [
-    "GLMZ"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

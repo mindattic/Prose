@@ -58,7 +58,7 @@ public class ModelTagTests
     public void ArchetypeData_HasTags() => AssertHasTags(new ArchetypeData());
 
     [Test]
-    public void VocabularyEntry_HasTags() => AssertHasTags(new VocabularyEntry());
+    public void VocabularyData_HasTags() => AssertHasTags(new VocabularyData());
 
     [Test]
     public void QuoteData_HasTags() => AssertHasTags(new QuoteData());

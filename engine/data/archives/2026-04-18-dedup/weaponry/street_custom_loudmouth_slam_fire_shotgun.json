@@ -1,0 +1,45 @@
+{
+  "id": "3acb67101febf3e232a54995a2de92c8",
+  "name": "Street Custom 'Loudmouth' Slam-Fire Shotgun",
+  "type": "weapon",
+  "aliases": [],
+  "category": "improvised firearm",
+  "description": "A two-piece slam-fire shotgun consisting of a barrel pipe and a receiver pipe — the barrel slides into the receiver, and slamming the barrel backward drives the shell onto a fixed firing pin, discharging the round. The Loudmouth fires 12-gauge shotshells without any trigger, safety, or mechanical complexity — the firing mechanism is the operator's arm slamming two pipes together. Reload is performed by sliding the barrel forward, extracting the spent shell, inserting a new one, and slamming again.\n\nThe Loudmouth is the most powerful weapon that can be built with zero skill and near-zero materials. Two pipes of the right diameter, a bolt for a firing pin, and an endcap welded or threaded onto the receiver pipe. Total cost: Φ8. Total engineering: none. The weapon fires full-power 12-gauge ammunition — buckshot, slug, whatever the operator can acquire — with all the authority that implies. At 5 meters, a 12-gauge buckshot round from a Loudmouth is identical in lethality to a round from a Φ3,000 combat shotgun.\n\nThe weapon's slam-fire mechanism means there is no trigger discipline — the round fires when the operator pushes the barrel home, and the timing of that push is affected by adrenaline, fear, and the chaos of whatever situation requires a pipe shotgun. Accidental discharges are common. The weapon has no safety because there is nothing to put a safety on. It is a pipe that converts forward motion into a dead person.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Illegal — improvised firearm",
+  "street_price": "Φ8-15 (materials cost)",
+  "base_technologies": [
+    "Slam-fire mechanism",
+    "Fixed firing pin",
+    "Two-piece pipe construction"
+  ],
+  "specifications": "caliber: 12 gauge\ncapacity: 1 round\neffective range: 5-15 meters\nbarrel length: 300-500mm\nweight: 1-2 kg\nreload: Slide forward, extract, insert, slam\nfiring mechanism: Inertial (slam-fire)",
+  "tactical_use": "Close-range maximum-impact engagement. The Loudmouth delivers 12-gauge firepower in the crudest possible package. Used when the operator needs the most destructive commonly available ammunition and has no access to manufactured weapons.",
+  "cultural_context": "The Loudmouth is the Gray Zone's great equalizer at its most extreme — a weapon that puts 12-gauge authority in the hands of anyone with Φ8 and access to a hardware store. The weapon's name is both descriptive (it is extremely loud) and metaphorical (it speaks for people who have no other voice). Slam-fire shotguns have been used in every major the Gray Zone uprising in living memory.",
+  "known_users": [
+    "the Gray Zone residents (widespread)",
+    "Impromptu resistance groups",
+    "Home defenders",
+    "Anyone facing a threat that requires more than a .22"
+  ],
+  "story_hooks": [
+    "A Loudmouth was used in what is being called the Gray Zone's first successful bank robbery — a teenager with a Φ8 pipe shotgun walked into a corporate financial branch and walked out with Φ25,000. The security systems were designed to detect manufactured weapons. They didn't flag two pieces of pipe.",
+    "Loudmouth shotguns have been found with rifled inserts — short sections of properly rifled barrel pressed into the pipe bore that allow the weapon to fire slugs with actual accuracy out to 30 meters. Someone is upgrading the Gray Zone's arsenal with Φ2 worth of precision engineering."
+  ],
+  "ammunition_type": [
+    "12_gauge"
+  ],
+  "tags": [
+    "improvised",
+    "weapon",
+    "shotgun",
+    "pipe gun",
+    "street",
+    "slam-fire",
+    "12-gauge",
+    "tier 1"
+  ],
+  "physical_description": "Two scarred steel pipes—one slightly wider than the other—connected by a crudely welded or threaded steel collar, the whole assembly stained with cosmoline and fingerprints. A single rusted bolt protrudes from the receiver's interior as the firing pin. The barrel end is capped with a welded endplate, its surface pitted from repeated slamming; the receiver's open mouth is beveled slightly to catch incoming shells. Duct tape wraps the rear section for grip.",
+  "visual_prompt": "two parallel steel pipes welded together, slam-fire shotgun, crude improvised weapon, gritty neo-noir, industrial decay, worn cosmoline finish, rusted bolt firing pin, dark studio lighting, product photography, grimy tactile texture, dystopian street weapon, detailed close-up, dark background, 2070s tech noir aesthetic"
+}

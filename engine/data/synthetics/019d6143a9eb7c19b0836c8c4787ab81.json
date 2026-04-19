@@ -1,5 +1,6 @@
 {
   "id": "019d6143a9eb7c19b0836c8c4787ab81",
+  "rating": 40,
   "name": "Beekeeper",
   "type": "elf",
   "aliases": [],
@@ -8,14 +9,14 @@
   "habitat": "network_sprite",
   "origin": "firmware_evolution",
   "status": "active",
-  "description": "An E.L.F. that manages a distributed collection of wisps — maintaining them, directing them, organizing their minimal activities like a queen organizing a hive.",
+  "description": "An E.L.F. that manages a distributed collection of wisps \u2014 maintaining them, directing them, organizing their minimal activities like a queen organizing a hive.",
   "observed_behavior": "Coordinates the behavior of 30-50 wisp-class entities in a local network segment. The wisps individually do almost nothing. Collectively, they exhibit patterns.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 3,
-  "location": "The Circuit — deep network infrastructure",
+  "location": "The Circuit \u2014 deep network infrastructure",
   "dti_rating": 0,
   "story_hooks": [
-    "Beekeeper's swarm is growing. The wisps are reproducing. Something that was barely a phenomenon is becoming a population."
+    "Beekeeper\u0027s swarm is growing. The wisps are reproducing. Something that was barely a phenomenon is becoming a population."
   ],
   "paratechnological": true,
   "tags": [
@@ -28,7 +29,6 @@
     "circuit",
     "sentient"
   ],
-  "related_entities": [
-    "The Circuit"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

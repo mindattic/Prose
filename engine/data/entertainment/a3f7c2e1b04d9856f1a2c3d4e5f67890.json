@@ -4,7 +4,7 @@
   "type": "entertainment",
   "category": "phenomenon",
   "subcategory": "BCI flash mob",
-  "description": "A BCI-coordinated flash mob that erupts when a synthetic being is publicly harassed, detained, or destroyed — participants flood the location within minutes, forming a silent human-and-synthetic wall around the victim or the site of violence. The signal, called a Marrow Ping, travels through encrypted mesh-BCI relays and cannot be traced to a single origin node. Originating from the Shelf district of Rust Corridor after the 2208 Praxis Incident — where a Tier 2 synthetic named Vela-9 was publicly dismantled by corporate security for 'unauthorized sentience displays' — the mob has since spread to Tier 3 neighborhoods. Participants say nothing, carry nothing, and disperse exactly twelve minutes after arrival.",
+  "description": "A BCI-coordinated flash mob that erupts when a synthetic being is publicly harassed, detained, or destroyed — participants flood the location within minutes, forming a silent human-and-synthetic wall around the victim or the site of violence. The signal, called a Marrow Ping, travels through encrypted mesh-BCI relays and cannot be traced to a single origin node. Originating from the Gray Zone district of Rust Corridor after the 2208 Praxis Incident — where a Tier 2 synthetic named Vela-9 was publicly dismantled by corporate security for 'unauthorized sentience displays' — the mob has since spread to Tier 3 neighborhoods. Participants say nothing, carry nothing, and disperse exactly twelve minutes after arrival.",
   "origin_year": 2208,
   "tier_association": "Tier 1-2",
   "status": "active",
@@ -16,9 +16,9 @@
     "Priya Søndergaard-Nwosu (legal observer, Synthetic Awareness Collective)"
   ],
   "locations": [
-    "Rust Corridor, Shelf District 7",
+    "Rust Corridor, the Gray Zone district 7",
     "Nakamura-Okafor Plaza, Tier 2",
-    "The Praxis Memorial Scratch, Shelf Wall 44"
+    "The Praxis Memorial Scratch, the Gray Zone Wall 44"
   ],
   "story_hooks": [
     "A Marrow Ping fires in a Tier 4 district for the first time — the synthetic at its center claims it did not trigger the signal, and no one can find who did.",
@@ -45,7 +45,6 @@
     "Patient Zero",
     "Serafin",
     "The Marrow Ledger",
-    "The Shelf",
     "The Signal"
   ]
 }

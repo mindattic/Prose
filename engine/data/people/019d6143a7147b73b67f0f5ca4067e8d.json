@@ -10,7 +10,7 @@
   "age": 34,
   "status": "active",
   "location": "The Circuit, mobile — maintains three rotating safe-house nodes, near North Ave and Damen",
-  "description": "Nyx Sefanaia-Moala is lean and angular, with the kind of economy of movement that suggests someone who has spent years navigating spaces not built for human occupation. Her hair is shaved close on the sides and kept longer on top, currently dyed a flat, non-reflective black that she maintains with the same pragmatism she applies to everything. Her eyes are a pale grey-green that people sometimes mistake for augmented; they are not. She is Croatian-Swedish by heritage, raised in a migrant enclave on the Shelf that no longer exists, having been demolished to make way for a data-routing hub in 2178. She considers this formative.\n\nNyx Sefanaia-Moala's trade is spatial knowledge — specifically, the gap between the official map of GLMZ and the actual city, which she has spent twelve years documenting. She sells access routes to runners needing to avoid surveillance corridors, sells structural data to architects with clients who need rooms that don't appear on building permits, and occasionally sells nothing at all to people she finds interesting, just to see what they do with it. She works from a custom-built rig she calls the Palimpsest — a layered mapping system that overlays historical city data, real-time sensor feeds, and her own hand-annotated surveys into a single navigable model. It is, by any reasonable assessment, the most comprehensive private map of GLMZ in existence.\n\nShe is not warm, exactly, but she is fair, and in The Circuit those two things are often confused. She has a reputation for absolute accuracy — if Nyx Sefanaia-Moala says a tunnel is passable, it is passable; if she says a route is burned, it is burned — and she guards that reputation with a ferocity that has ended at least two professional relationships and one that was something more. She experiences the city as a text to be read rather than a place to be inhabited, which gives her a clarity about GLMZ's power structures that people with more emotional investment sometimes cannot achieve, and which occasionally makes her feel like a ghost walking through a city she refuses to belong to.",
+  "description": "Nyx Sefanaia-Moala is lean and angular, with the kind of economy of movement that suggests someone who has spent years navigating spaces not built for human occupation. Her hair is shaved close on the sides and kept longer on top, currently dyed a flat, non-reflective black that she maintains with the same pragmatism she applies to everything. Her eyes are a pale grey-green that people sometimes mistake for augmented; they are not. She is Croatian-Swedish by heritage, raised in a migrant enclave in the Gray Zone that no longer exists, having been demolished to make way for a data-routing hub in 2178. She considers this formative.\n\nNyx Sefanaia-Moala's trade is spatial knowledge — specifically, the gap between the official map of GLMZ and the actual city, which she has spent twelve years documenting. She sells access routes to runners needing to avoid surveillance corridors, sells structural data to architects with clients who need rooms that don't appear on building permits, and occasionally sells nothing at all to people she finds interesting, just to see what they do with it. She works from a custom-built rig she calls the Palimpsest — a layered mapping system that overlays historical city data, real-time sensor feeds, and her own hand-annotated surveys into a single navigable model. It is, by any reasonable assessment, the most comprehensive private map of GLMZ in existence.\n\nShe is not warm, exactly, but she is fair, and in The Circuit those two things are often confused. She has a reputation for absolute accuracy — if Nyx Sefanaia-Moala says a tunnel is passable, it is passable; if she says a route is burned, it is burned — and she guards that reputation with a ferocity that has ended at least two professional relationships and one that was something more. She experiences the city as a text to be read rather than a place to be inhabited, which gives her a clarity about GLMZ's power structures that people with more emotional investment sometimes cannot achieve, and which occasionally makes her feel like a ghost walking through a city she refuses to belong to.",
   "psychology": {
     "facet_weights": {
       "wound": 0.61,
@@ -22,7 +22,7 @@
     },
     "core_fears": [
       "Being mapped — having someone understand her internal architecture the way she understands the city's",
-      "That the Shelf enclave's erasure was a preview, and that everything she documents will also be demolished and forgotten",
+      "That the Gray Zone enclave's erasure was a preview, and that everything she documents will also be demolished and forgotten",
       "Becoming so useful to powerful people that she loses the ability to refuse them"
     ],
     "core_desires": [
@@ -41,7 +41,7 @@
       "Her obsession with completeness means she holds information past the point where releasing it would have helped",
       "Believes her professional detachment protects her from being manipulated, when in fact it creates a specific and exploitable vulnerability"
     ],
-    "secret": "The Palimpsest contains a complete map of a sub-level beneath the old Shelf enclave — a space she discovered after the demolition that was clearly inhabited, clearly hidden, and clearly abandoned in a hurry. She has never sold this information. She goes there alone, sometimes, and sits in the dark with the remains of people who lived where her childhood was, and she does not examine why."
+    "secret": "The Palimpsest contains a complete map of a sub-level beneath the old the Gray Zone enclave — a space she discovered after the demolition that was clearly inhabited, clearly hidden, and clearly abandoned in a hurry. She has never sold this information. She goes there alone, sometimes, and sits in the dark with the remains of people who lived where her childhood was, and she does not examine why."
   },
   "speech_patterns": {
     "vocabulary": "Spatial and architectural metaphors dominate; technical precision; minimal emotional vocabulary, not from coldness but from genuine under-development of that register; occasional Croatian words when her guard is down",
@@ -87,7 +87,7 @@
     "The Palimpsest detects a new structure appearing in real-time beneath The Circuit — not construction, but emergence, as if something already built is being revealed — and the signature matches nothing in any historical record",
     "A corporation offers Vesna an extraordinary sum for her complete Meridian Core data set; the offer is so large it functions as a threat",
     "Someone begins systematically destroying the physical locations Vesna uses as survey anchors — they are working from a map that should not exist, tracking her methodology",
-    "A child from the demolished Shelf enclave contacts Vesna — somehow knowing she mapped it — asking if she knows what happened to their family",
+    "A child from the demolished the Gray Zone enclave contacts Vesna — somehow knowing she mapped it — asking if she knows what happened to their family",
     "Vesna discovers that sub-level 9 beneath the Meridian Core is not abandoned. It is occupied. The occupants have been there for years. They have their own map, and it shows spaces that Vesna has not found."
   ],
   "narrative_function": "Information infrastructure and spatial knowledge hub for mid-tier operations; represents the city's layered history and the violence of institutional forgetting; her completeness drive creates natural story engines around what she knows and what she refuses to share",
@@ -184,7 +184,7 @@
     "stress_responses": {
       "low": "Extended survey walks through the city, sometimes for hours",
       "medium": "Palimpsest annotation sessions become longer and more obsessive",
-      "high": "Visits the sub-level beneath the old Shelf enclave and sits alone in the dark",
+      "high": "Visits the sub-level beneath the old the Gray Zone enclave and sits alone in the dark",
       "critical": "Considers releasing the complete Meridian Core data set regardless of consequences"
     },
     "contradictions": [
@@ -250,7 +250,6 @@
     "Meridian Core",
     "PulsePoint ScentSig Personal Biochemical Scent Node",
     "The Circuit",
-    "The Shelf",
     "TESSERA PG-2 'Signature'",
     "The Heritage Vault",
     "Crucible Industries Cryogenic Projector CP-7 'Absolute'",

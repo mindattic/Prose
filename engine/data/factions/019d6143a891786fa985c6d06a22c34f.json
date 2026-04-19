@@ -4,7 +4,7 @@
   "name": "The Gleaner Brigades",
   "aliases": [],
   "motto": "The crop belongs to whoever is hungry enough to take it.",
-  "description": "The Gleaner Brigades are loosely organized resistance cells that conduct food raids into the Iowa Exclusion Zone. They are not a single organization — there is no central command, no unified leadership, no shared ideology beyond the conviction that starving children in a world of industrial plenty is an obscenity worth dying to correct.\n\nEach Brigade is typically 8-15 people: a mix of experienced operators, freerunners, combat medics, and drivers. They stage from border towns along the western edge of GLMZ, cross the smart-wire fence using methods ranging from crude (insulated bolt cutters) to sophisticated (frequency-matched EM cloaks that fool the sensors for 90 seconds), and navigate the IEZ on foot or in shielded ground vehicles to reach grain silos, processing stations, or unharvested crop sectors. The operation is straightforward in concept and nightmarish in execution: get in, take food, get out before the Behemoths find you.\n\nMortality rates are approximately 15% per raid. Every Gleaner knows this. They go anyway. On the Shelf, a successful Iowa run feeds a block for a month. The mathematics of hunger are more compelling than the mathematics of survival.",
+  "description": "The Gleaner Brigades are loosely organized resistance cells that conduct food raids into the Iowa Exclusion Zone. They are not a single organization — there is no central command, no unified leadership, no shared ideology beyond the conviction that starving children in a world of industrial plenty is an obscenity worth dying to correct.\n\nEach Brigade is typically 8-15 people: a mix of experienced operators, freerunners, combat medics, and drivers. They stage from border towns along the western edge of GLMZ, cross the smart-wire fence using methods ranging from crude (insulated bolt cutters) to sophisticated (frequency-matched EM cloaks that fool the sensors for 90 seconds), and navigate the IEZ on foot or in shielded ground vehicles to reach grain silos, processing stations, or unharvested crop sectors. The operation is straightforward in concept and nightmarish in execution: get in, take food, get out before the Behemoths find you.\n\nMortality rates are approximately 15% per raid. Every Gleaner knows this. They go anyway. On the Gray Zone, a successful Iowa run feeds a block for a month. The mathematics of hunger are more compelling than the mathematics of survival.",
   "ideology": "Food is not property. Calories produced by automated machines on land stolen from displaced communities belong to the people those communities became. The Gleaners do not consider what they do to be theft. They consider it recovery.",
   "territory": "No fixed territory — operate from staging areas along the GLMZ's western border",
   "leadership": "",
@@ -12,13 +12,13 @@
     "Military-style insertion into the Iowa Exclusion Zone",
     "Electronic warfare against Behemoth sensor systems",
     "Rapid extraction of bulk grain and processed food stocks",
-    "Distribution through Shelf community networks — never sold, always given",
+    "Distribution through the Gray Zone community networks — never sold, always given",
     "Recruitment through hunger — no one has to convince a starving person to steal food"
   ],
   "resources": [
     "Salvaged Behemoth components (from previous raids) repurposed as sensor countermeasures",
     "Shielded ground vehicles modified to survive chemical exposure and drone pursuit",
-    "Community support — the Shelf's population provides safe houses, medical care, and information",
+    "Community support — the Gray Zone's population provides safe houses, medical care, and information",
     "Reputation — Gleaner veterans are the most respected operators below Tier 3"
   ],
   "goals": [],
@@ -44,14 +44,12 @@
     "survival",
     "hunger",
     "food",
-    "drone",
-    "shelf"
+    "drone"
   ],
   "related_entities": [
     "The Iowa Exclusion Zone",
     "Arcturus Defense Solutions SAR-3 'Warden'",
     "Frequency",
-    "The Shelf",
     "Sable Keïta-Suzuki",
     "Iowan Behemoth Agricultural Platform",
     "GLMZ"

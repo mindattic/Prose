@@ -3,7 +3,7 @@
   "name": "Nakamura-Voss NV-7 Patrol Vest",
   "type": "apparel",
   "category": "jacket",
-  "description": "A tactical vest worn by private security contractors and building security throughout the mid-tiers. Constructed from a dense ballistic-weave nylon with soft armor panels integrated into the front and back — rated for low-velocity rounds and blade resistance, though Nakamura-Voss is careful never to make specific performance claims in their marketing materials. MOLLE webbing runs along the chest and sides for attachment of pouches and accessories. Available in black, slate grey, and a dark navy used by several corponation security divisions.\n\nThe NV-7 is the visual shorthand for 'armed private security' throughout GLMZ. It reads as authority in the mid-tiers and as threat in the Shelf. The soft armor panels are removable for laundering, and the vest itself is reasonably comfortable for all-day wear — a small mercy for the people who spend twelve-hour shifts in them.",
+  "description": "A tactical vest worn by private security contractors and building security throughout the mid-tiers. Constructed from a dense ballistic-weave nylon with soft armor panels integrated into the front and back — rated for low-velocity rounds and blade resistance, though Nakamura-Voss is careful never to make specific performance claims in their marketing materials. MOLLE webbing runs along the chest and sides for attachment of pouches and accessories. Available in black, slate grey, and a dark navy used by several corponation security divisions.\n\nThe NV-7 is the visual shorthand for 'armed private security' throughout GLMZ. It reads as authority in the mid-tiers and as threat in the Gray Zone. The soft armor panels are removable for laundering, and the vest itself is reasonably comfortable for all-day wear — a small mercy for the people who spend twelve-hour shifts in them.",
   "tier_association": "Tier 3",
   "materials": [
     "ballistic-weave nylon",
@@ -25,7 +25,7 @@
   "aug_compatible": true,
   "gene_compatible": false,
   "story_hooks": [
-    "A shipment of NV-7 vests was diverted before reaching a corporate client — they've shown up in a Shelf neighborhood, which means someone is arming up for something.",
+    "A shipment of NV-7 vests was diverted before reaching a corporate client — they've shown up in a the Gray Zone neighborhood, which means someone is arming up for something.",
     "The replacement armor panels sold officially are standard-rated; a black-market supplier is selling panels with significantly higher ratings using stolen corponation materials.",
     "A security contractor was shot while wearing a properly certified NV-7 — the round went through. Someone has been quietly swapping real panels for dummy inserts in the supply chain."
   ],
@@ -43,7 +43,6 @@
   "related_entities": [
     "GLMZ",
     "The Riveters' Round",
-    "The Shelf",
     "The United Workers Front",
     "Veslemøy Achebe-Tursynov"
   ],
@@ -64,7 +63,7 @@
       "Slightly longer rear tail for additional coverage when seated"
     ],
     "tier_indicator": "Tier 2-3 boundary. Accessible to mid-tier security contractors and corpo divisions, signaling competence and training rather than luxury. Ubiquitous enough to be recognized as standard-issue, not aspirational.",
-    "cultural_context": "The uniform of armed private security, building protection, and low-level corpo enforcement. Wearing it identifies the wearer as someone with authority to enforce rules on corporate or contracted property. On the Shelf (Tier 5), it reads as a threat or as evidence of collaboration.",
+    "cultural_context": "The uniform of armed private security, building protection, and low-level corpo enforcement. Wearing it identifies the wearer as someone with authority to enforce rules on corporate or contracted property. On the Gray Zone (Tier 5), it reads as a threat or as evidence of collaboration.",
     "condition_typical": "Worn-in but well-maintained. Regular users keep it clean and functional, with possible wear on the zipper pull and minor scuffing on the armor panel edges. Dust and minor stains from urban environments are common. Some patches or replaced straps may appear on older units."
   },
   "image_prompt": "Professional tactical gear photograph of a Nakamura-Voss NV-7 patrol vest displayed on a dark mannequin or worn by a neo-noir security contractor model. Matte black ballistic-weave nylon with visible MOLLE webbing grid across chest and sides, subtle quilted armor panel definition. Front zipper detail visible. Moody studio lighting with blue-tinted side rim light. Urban dystopian warehouse or corporate building interior backdrop. Dark gray concrete or industrial metal surfaces. Small product nameplate or branding visible. Clean, catalog-ready presentation emphasizing authority and functionality. --ar 2:3 --v 6",

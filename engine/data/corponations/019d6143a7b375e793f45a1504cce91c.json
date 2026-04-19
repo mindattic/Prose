@@ -36,5 +36,16 @@
     "Ouroboros Energy",
     "Slagworks Industrial",
     "Tender Collapse"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z8",
+      "Z9",
+      "Z10"
+    ],
+    "primaryZone": "Z8",
+    "lakefrontAccess": false,
+    "description": "The Crown Territories — discontinuous network of 23 agricultural and remediation zones across Zones 8-10. Former industrial brewing infrastructure converted to large-scale fermentation-based food production using the same equipment. Zone 8 sovereign territory is the most densely populated outside of Chicago, because industrial food production at scale requires human workers.",
+    "grayZoneRelationship": "Employs Gray Zone labor from Zones 8-10 on short-term contracts that are technically renewable and practically permanent."
+  }
 }

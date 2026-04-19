@@ -6,7 +6,7 @@ namespace StreetSamurai.Core.Models.Canon;
 /// <summary>
 /// Strongly-typed facet definition. One per psychological voice.
 /// </summary>
-public class FacetData : ICanonEntity
+public class FacetData : IWorldRecord
 {
     [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("name")] public string Name { get; set; } = "";

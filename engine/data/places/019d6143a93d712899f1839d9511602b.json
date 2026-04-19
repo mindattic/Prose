@@ -24,7 +24,7 @@
     "feel": "The Nave feels precarious and ancient simultaneously — like squatting inside something that should have surrendered long ago but stubbornly hasn't. Every surface is slightly damp. The platforms shift and creak with the lake's mood, and newcomers instinctively keep one hand near something solid. It is a place for people who need to disappear, even briefly.",
     "tags": []
   },
-  "demographics": "Permanent population of roughly 80-120 off-grid residents — former dock workers, Shelf refugees, unlicensed salvagers, and a handful of synthetic persons avoiding registration sweeps. Transient smugglers, couriers, and data-runners pass through daily.",
+  "demographics": "Permanent population of roughly 80-120 off-grid residents — former dock workers, the Gray Zone refugees, unlicensed salvagers, and a handful of synthetic persons avoiding registration sweeps. Transient smugglers, couriers, and data-runners pass through daily.",
   "economy": "The Nave survives on docking fees for unlicensed watercraft, a cut of smuggled cargo passing through its dive-locks, and a small but thriving trade in salvaged pre-Consolidation artifacts pulled from the submerged transept.",
   "power_structure": "A loose council of the five longest-resident families nominally governs, but practical authority belongs to a salvage operator known as Brine — a former Carrion Logistics diver who controls the pump systems and therefore everyone's survival.",
   "dangers": [
@@ -56,7 +56,7 @@
     "Unlicensed lake salvagers",
     "Off-grid synthetic persons avoiding registration",
     "Smugglers and gray-market couriers",
-    "Shelf refugees seeking shelter below the authorities' sight lines"
+    "the Gray Zone refugees seeking shelter below the authorities' sight lines"
   ],
   "notable_locations": [
     {
@@ -89,8 +89,7 @@
     "shelter",
     "refugee",
     "water",
-    "lake",
-    "shelf"
+    "lake"
   ],
   "related_entities": [
     "Helix Biosystems",
@@ -108,5 +107,7 @@
     "Glass",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "Nightlight"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

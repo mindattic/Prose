@@ -28,7 +28,7 @@
   "tier_availability": "Tier 2-3",
   "legality": "restricted",
   "street_price": "Φ160",
-  "cultural_context": "Duravex is the workhorse drug of the mercenary community — unglamorous, functional, and widely used. Long-haul couriers, extraction teams, and anyone running a multi-stage operation reaches for it. The dermal patch delivery makes it subtle and consistent, which matters for operational security. On the Shelf it's valued by workers in brutal physical jobs as much as by runners — the legality line between 'labor enhancement' and 'combat stimulant' is blurry, and Novafold lobbies hard to keep it that way. 'Iron Miles' refers to the feeling of being able to keep moving long past when your body should have quit.",
+  "cultural_context": "Duravex is the workhorse drug of the mercenary community — unglamorous, functional, and widely used. Long-haul couriers, extraction teams, and anyone running a multi-stage operation reaches for it. The dermal patch delivery makes it subtle and consistent, which matters for operational security. On the Gray Zone it's valued by workers in brutal physical jobs as much as by runners — the legality line between 'labor enhancement' and 'combat stimulant' is blurry, and Novafold lobbies hard to keep it that way. 'Iron Miles' refers to the feeling of being able to keep moving long past when your body should have quit.",
   "story_hooks": [
     "A courier who's been running on Duravex for a week straight to hit a deadline collapses delivering critical data — they're alive but the data hasn't been received, and someone is waiting for it",
     "Novafold's Duravex supply chain has been compromised; a contaminant in the adhesive matrix is causing delayed cardiac events 72 hours after use — the company knows and is suppressing it",
@@ -45,7 +45,6 @@
     "drug",
     "stimulant",
     "water",
-    "shelf",
     "tier 2",
     "tier 3"
   ],
@@ -55,7 +54,6 @@
     "Novafold Pharmaceuticals",
     "Ringo DV-4 'Courier'",
     "TESSERA ES-4 'Perimeter'",
-    "The Shelf",
     "ZhengDao Bioelectric LumbarBrace Pro"
   ]
 }

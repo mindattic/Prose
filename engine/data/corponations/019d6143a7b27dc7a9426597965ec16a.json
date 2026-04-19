@@ -37,5 +37,25 @@
     "The Signal",
     "Vantablack Media",
     "Yannick Tofauti-Szarvásy"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z4",
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z5",
+      "Z6",
+      "Z7",
+      "Z8",
+      "Z9",
+      "Z10",
+      "Z11",
+      "Z12"
+    ],
+    "primaryZone": "Z4",
+    "lakefrontAccess": true,
+    "description": "Waukegan lakefront relay hub plus 4,400 sovereign signal zones distributed throughout the GLMZ. Controls approximately 67% of data traffic north of Zone 2. Primary headquarters at the Waukegan lakefront complex; relay architecture threads through every zone in the Corridor.",
+    "grayZoneRelationship": "Provides limited bandwidth to Gray Zone communities at steep markup through reseller agreements with Gray Zone councils. The bandwidth is real. The 'limited' is adjustable based on political circumstances."
+  }
 }

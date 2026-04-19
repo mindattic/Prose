@@ -1,5 +1,6 @@
 {
   "id": "019d6143a5b274e5bc109b1d5b123116",
+  "rating": 70,
   "type": "character",
   "name": "Phoenix Yoon-Villanueva",
   "aliases": [],
@@ -43,7 +44,7 @@
     "secret": "Aminata Vargas-Baffour sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation."
   },
   "speech_patterns": {
-    "vocabulary": "Shelf street dialect — layered slang, rhythm-heavy, half the meaning is in the cadence.",
+    "vocabulary": "the Gray Zone street dialect — layered slang, rhythm-heavy, half the meaning is in the cadence.",
     "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
     "verbal_tics": [
       "Ends statements with 'yeah?' — not a question, a dare",
@@ -53,7 +54,11 @@
       "\"I know a person who knows a person. That's not evasion — that's the service.\"",
       "\"My commission is fifteen percent. You're welcome to find someone cheaper. You won't find someone better.\"",
       "\"The job isn't dangerous. The people involved are dangerous. The job is just logistics.\""
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
@@ -263,30 +268,22 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Holdout-380 'Ankle Biter'",
-    "Forge-Smith Collective Carbon Machete 'Cane Cutter'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Underground Phoenix",
-    "Slagworks Industrial",
-    "Pellucid Systems",
-    "Compass Rose",
-    "GLMZ"
-  ],
-  "district": "The Circuit",
   "physical_description": {
     "heritage": "A striking genetic mosaic where Sub-Saharan African (36.4%) and Hispanic/Latin American (39%) ancestries form the dominant visual foundation—warm, deep, and luminous—while East Asian heritage (13.9%) contributes refined geometric precision to facial architecture. Eastern European ancestry (9.1%) introduces subtle structural undertones and cool undertones that play across his features, with trace Pacific Islander heritage (1.6%) adding refinement to the overall blend. The result is a unified phenotype where no single ancestry dominates but instead creates seamless integration: African depth and warmth, Latin vitality and fullness, East Asian angularity and eye-set, European cool undertones, all converging into an authentically post-national appearance.",
     "height_cm": 192,
     "weight_kg": 78,
     "build": "Lean and angular, built for endurance rather than power. Long limbs suggest a runner's physiology — minimal excess mass, efficient musculature. Carries himself with the coiled stillness of someone trained to move precisely when required.",
-    "skin_tone": "Deep warm brown with luminous golden undertones—a sophisticated blend where Sub-Saharan and Hispanic ancestries create the primary rich foundation, enriched by East Asian warmth that adds structure and depth to the cheekbones and bridge of nose. Eastern European heritage introduces subtle cooling at the periphery and temple areas. The skin has natural radiance with golden highlights that shift across facial planes, particularly pronounced along high cheekbones and browbones, darker around eye sockets and jawline, creating visual depth and complexity. The overall effect is warm luminosity with cool structural undertones—a living map of genetic layering.",
-    "complexion": "Scarred face — not disfiguring but clearly marked with damage. Facial structure reflects precise blending of Sub-Saharan African fullness and warmth, Hispanic vitality in the lips and cheek prominence, East Asian geometric refinement in the eye-set and jaw angles, and Eastern European coolness in the overall bone structure. Pronounced high cheekbones catch light distinctly with warm golden notes; defined jawline has strong architectural presence; dark expressive eyes set deep beneath prominent brows with the slightly rounded eye shape characteristic of African and East Asian blending; nose bridge structured and warm. A jagged line runs from left temple to jawline, approximately 10cm — pale and well-healed, suggesting blade work. Smaller puckered scar on right cheekbone, approximately 0.8cm diameter, consistent with high-caliber exit wound with radiating tissue damage. Thin scar bisects his upper left lip, approximately 3cm, from close-contact trauma. Grooming is precise and minimal — clean-shaven, no cosmetic work to hide the marks. Eyes have a flat, observant quality. Jaw set in a way that suggests old tension.",
-    "eye_color": "Dark brown with subtle amber undertone",
     "hair_color": "Dark brown, naturally textured",
     "hair_style": "Kept short and functional, no ornamentation",
     "hair_length": "Short",
+    "eye_color": "Dark brown with subtle amber undertone",
+    "skin_tone": "Deep warm brown with luminous golden undertones—a sophisticated blend where Sub-Saharan and Hispanic ancestries create the primary rich foundation, enriched by East Asian warmth that adds structure and depth to the cheekbones and bridge of nose. Eastern European heritage introduces subtle cooling at the periphery and temple areas. The skin has natural radiance with golden highlights that shift across facial planes, particularly pronounced along high cheekbones and browbones, darker around eye sockets and jawline, creating visual depth and complexity. The overall effect is warm luminosity with cool structural undertones—a living map of genetic layering.",
+    "complexion": "Scarred face — not disfiguring but clearly marked with damage. Facial structure reflects precise blending of Sub-Saharan African fullness and warmth, Hispanic vitality in the lips and cheek prominence, East Asian geometric refinement in the eye-set and jaw angles, and Eastern European coolness in the overall bone structure. Pronounced high cheekbones catch light distinctly with warm golden notes; defined jawline has strong architectural presence; dark expressive eyes set deep beneath prominent brows with the slightly rounded eye shape characteristic of African and East Asian blending; nose bridge structured and warm. A jagged line runs from left temple to jawline, approximately 10cm — pale and well-healed, suggesting blade work. Smaller puckered scar on right cheekbone, approximately 0.8cm diameter, consistent with high-caliber exit wound with radiating tissue damage. Thin scar bisects his upper left lip, approximately 3cm, from close-contact trauma. Grooming is precise and minimal — clean-shaven, no cosmetic work to hide the marks. Eyes have a flat, observant quality. Jaw set in a way that suggests old tension.",
     "distinguishing_marks": [
       "Jagged scar from left temple to left jawline, approximately 10cm, suggests blade work or shrapnel — pale and well-healed",
       "Puckered circular scar on right cheekbone, approximately 0.8cm diameter, consistent with high-caliber exit wound — tissue damage radiates outward",
@@ -298,6 +295,7 @@
     "clothing_style": "Tier 3-4 practical streetwear. Matte black synth-leather jacket with minimal branding — utility cut, designed for concealment and quick movement. Beneath, charcoal gray compression shirt (subcutaneous interface point, barely visible). Dark tactical trousers with redistribution pockets. Worn black boots, military-grade, well-maintained. No jewelry, no visible tracking devices. Clothing shows signs of regular wear but is meticulously kept. No corporate logos or gang affiliations. The aesthetic reads as 'ghost' — designed to be forgotten five seconds after he passes."
   },
   "image_prompt": "A 192cm lean, angular figure in GLMZ, mixed-heritage male with deep warm brown skin bearing luminous golden undertones. Dark brown naturally textured hair kept short and functional. Face mapped with scars: jagged line from left temple to jawline, puckered circular scar on right cheekbone from exit wound, thin scar bisecting upper lip. Facial structure shows African depth and warmth, Hispanic fullness, East Asian geometric refinement in eye-set, Eastern European cool undertones. Prominent high cheekbones, defined jawline, dark expressive eyes set deep beneath prominent brows. Clean-shaven, no cosmetic concealment of scars. Matte gunmetal vocal modulator visible at throat base with subtle LED indicator. Wearing matte black synth-leather utility jacket, charcoal gray compression shirt beneath, dark tactical trousers, worn military-grade black boots. Faint burn scarring visible on right hand dorsal surface. Posture is coiled stillness, weight balanced, shoulders alert, hands visible at sides. Flat observant gaze, jaw set with old tension. Background: neon-lit urban sprawl, GLMZ streetscape, cool blue and amber lighting. Mood: dangerous precision, ghost operative in motion. Neo-noir urban aesthetic, photorealistic, cinematic depth. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Hispanic/Latin American": 39,
     "Sub-Saharan African": 36.4,
@@ -305,12 +303,6 @@
     "Eastern European": 9.1,
     "Pacific Islander": 1.6
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Hispanic/Latin American": {
       "Mexican": {
@@ -354,6 +346,5 @@
         "Hawaiian": 1.6
       }
     }
-  },
-  "tier": "3"
+  }
 }

@@ -1,9 +1,9 @@
 {
   "id": "a3f7c2e1b09d4856fe23a7c1d0e58b94",
-  "name": "Coldseam Retired Spire Slummer's Shelf Day Set",
+  "name": "Coldseam Retired Spire Slummer's the Gray Zone Day Set",
   "type": "apparel",
   "category": "outfit",
-  "description": "A bespoke Coldseam overcoat — once Φ4,000 worth of pressed wool-analog and chrome-thread piping — now patched at both elbows with Shelf-grade duct tape and re-hemmed with mismatched thread. Worn over a stained Tier 3 dress shirt with the collar button missing and synth-leather trousers gone gray at the knees. The shoes are still Caelum IX pressure-forms, which is the tell.",
+  "description": "A bespoke Coldseam overcoat — once Φ4,000 worth of pressed wool-analog and chrome-thread piping — now patched at both elbows with the Gray Zone-grade duct tape and re-hemmed with mismatched thread. Worn over a stained Tier 3 dress shirt with the collar button missing and synth-leather trousers gone gray at the knees. The shoes are still Caelum IX pressure-forms, which is the tell.",
   "tier_association": "Tier 1",
   "materials": [
     "reclaimed wool-analog",
@@ -19,13 +19,13 @@
     "exiled corp loyalists",
     "burned fixers with old money habits"
   ],
-  "manufacturer": "Coldseam (original); Shelf repairs by unknown hands",
+  "manufacturer": "Coldseam (original); the Gray Zone repairs by unknown hands",
   "price_range": "Φ40–80 secondhand (was Φ4,200 new)",
   "aug_compatible": true,
   "gene_compatible": false,
   "story_hooks": [
     "The coat's interior lining still has an encrypted Spire access chip sewn into the hem — its owner doesn't know it still works.",
-    "Someone on the Shelf recognizes the chrome-thread piping pattern and knows exactly which corponation this person used to run."
+    "Someone in the Gray Zone recognizes the chrome-thread piping pattern and knows exactly which corponation this person used to run."
   ],
   "tags": [
     "apparel",
@@ -33,7 +33,6 @@
     "unique_character_look",
     "tier1",
     "fallen_elite",
-    "shelf",
     "storytelling_piece",
     "weathered_luxury"
   ],
@@ -42,7 +41,6 @@
     "PulsePoint MoodGlyph Affective Display Implant",
     "Slagworks Industrial",
     "TESSERA CORPONATION Aegis CorpSec Hardened Security BCI",
-    "The Shelf",
     "Tshiamo Vukić-Arellano"
   ],
   "physical_description": {
@@ -62,9 +60,9 @@
       "Caelum IX pressure-form shoes — the expensive holdout, still pristine relative to outfit"
     ],
     "tier_indicator": "Tier 3 functional wear masquerading as Tier 1-2 heritage. The overcoat screams former wealth; everything else screams current poverty. Mixed signals that read as 'fallen' rather than 'never had.'",
-    "cultural_context": "Spire Slummer — someone who once occupied corporate housing (evident from Coldseam ownership) and has since dropped into the Shelf (mid-level ungoverned zones). Likely trades on former status or education. The refusal to discard Caelum IX shoes suggests stubborn pride or genuine attachment to last remaining asset. Military or medical background possible (pressure-forms indicate past augmentation access).",
+    "cultural_context": "Spire Slummer — someone who once occupied corporate housing (evident from Coldseam ownership) and has since dropped into the Gray Zone (mid-level ungoverned zones). Likely trades on former status or education. The refusal to discard Caelum IX shoes suggests stubborn pride or genuine attachment to last remaining asset. Military or medical background possible (pressure-forms indicate past augmentation access).",
     "condition_typical": "Worn, patched, stained, fading. Not deliberately distressed — this is genuine weathering and repair from lack of resources. Maintained but not cared-for. The overcoat is dry-cleaned once annually if at all; the rest is hand-washed in cold water."
   },
-  "image_prompt": "A figure in a battered charcoal Coldseam overcoat with visible silver duct tape patches at both elbows, worn over a faded cream dress shirt with a missing collar button and gray-kneed synth-leather trousers. Feet in pristine matte-black Caelum IX pressure-form shoes. Standing under cold neon light in a Shelf corridor, rain-slicked concrete behind. Overcoat catches moody blue-gray light along its chrome-thread piping. Model has mixed heritage features, augmentation ports visible at neck/jawline. Fashion photography but documentary-realist style. Cinematic, slightly desaturated palette. --ar 2:3 --v 6",
-  "visual_prompt": "A figure in a battered charcoal Coldseam overcoat with visible silver duct tape patches at both elbows, worn over a faded cream dress shirt with a missing collar button and gray-kneed synth-leather trousers. Feet in pristine matte-black Caelum IX pressure-form shoes. Standing under cold neon light in a Shelf corridor, rain-slicked concrete behind. Overcoat catches moody blue-gray light along its chrome-thread piping. Model has mixed heritage features, augmentation ports visible at neck/jawline. Fashion photography but documentary-realist style. Cinematic, slightly desaturated palette. --ar 2:3 --v 6"
+  "image_prompt": "A figure in a battered charcoal Coldseam overcoat with visible silver duct tape patches at both elbows, worn over a faded cream dress shirt with a missing collar button and gray-kneed synth-leather trousers. Feet in pristine matte-black Caelum IX pressure-form shoes. Standing under cold neon light in a the Gray Zone corridor, rain-slicked concrete behind. Overcoat catches moody blue-gray light along its chrome-thread piping. Model has mixed heritage features, augmentation ports visible at neck/jawline. Fashion photography but documentary-realist style. Cinematic, slightly desaturated palette. --ar 2:3 --v 6",
+  "visual_prompt": "A figure in a battered charcoal Coldseam overcoat with visible silver duct tape patches at both elbows, worn over a faded cream dress shirt with a missing collar button and gray-kneed synth-leather trousers. Feet in pristine matte-black Caelum IX pressure-form shoes. Standing under cold neon light in a the Gray Zone corridor, rain-slicked concrete behind. Overcoat catches moody blue-gray light along its chrome-thread piping. Model has mixed heritage features, augmentation ports visible at neck/jawline. Fashion photography but documentary-realist style. Cinematic, slightly desaturated palette. --ar 2:3 --v 6"
 }

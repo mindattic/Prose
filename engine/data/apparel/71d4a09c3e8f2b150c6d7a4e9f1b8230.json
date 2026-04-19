@@ -3,7 +3,7 @@
   "name": "Strikeshield Dynamics BDA-9 Blast Disposal Suit",
   "type": "apparel",
   "category": "protective",
-  "description": "Bulky, olive-drab full-body blast attenuation suit with articulated composite panels over a shear-thickening fluid underlayer. The outer shell is matte-finished boron carbide over polycarbonate, with a distinctive quilted appearance from the fluid-pack underlayer beneath. Helmet is integrated, full-face, with heads-up display and filtered external audio. Weighs 34 kilograms unassisted.\n\nMost BDA-9 wearers use a lightweight servo-assist undersuit — sold separately. The suit accommodates spinal rigs and neural ports but requires pre-fitting for any significant chrome augmentation. Tier 3-4 municipal bomb disposal units use it; black-market versions stripped of the tracking transponder show up occasionally on Shelf fixers.",
+  "description": "Bulky, olive-drab full-body blast attenuation suit with articulated composite panels over a shear-thickening fluid underlayer. The outer shell is matte-finished boron carbide over polycarbonate, with a distinctive quilted appearance from the fluid-pack underlayer beneath. Helmet is integrated, full-face, with heads-up display and filtered external audio. Weighs 34 kilograms unassisted.\n\nMost BDA-9 wearers use a lightweight servo-assist undersuit — sold separately. The suit accommodates spinal rigs and neural ports but requires pre-fitting for any significant chrome augmentation. Tier 3-4 municipal bomb disposal units use it; black-market versions stripped of the tracking transponder show up occasionally on the Gray Zone fixers.",
   "tier_association": "Tier 3-4",
   "materials": [
     "boron carbide composite panels",
@@ -17,7 +17,7 @@
   "worn_by": [
     "municipal bomb disposal technicians",
     "corporate security EOD specialists",
-    "black-market Shelf operators",
+    "black-market the Gray Zone operators",
     "Tier 3-4 law enforcement"
   ],
   "manufacturer": "Strikeshield Dynamics (licensed corponation contractor)",
@@ -25,7 +25,7 @@
   "aug_compatible": true,
   "gene_compatible": false,
   "story_hooks": [
-    "A BDA-9 with its transponder removed turned up on a Shelf fixer — the suit's integrity log still contains encrypted data from its last authorized deployment, and someone wants it erased.",
+    "A BDA-9 with its transponder removed turned up on a the Gray Zone fixer — the suit's integrity log still contains encrypted data from its last authorized deployment, and someone wants it erased.",
     "A Tier 3 disposal tech discovers her suit's real-time location feed has been accessed by a private corponation account, not her employer — she's been surveilled on every job for two years.",
     "The shear-thickening fluid in a batch of BDA-9 suits has been diluted during manufacture; the suits will pass visual inspection but fail under live blast conditions."
   ],

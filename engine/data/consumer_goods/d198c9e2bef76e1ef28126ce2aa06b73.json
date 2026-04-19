@@ -13,7 +13,7 @@
   "price": "Φ0.30",
   "popularity_rank": 3,
   "slogan": "Hot. Fast. Done.",
-  "cultural_context": "QuickNood is the Shelf's comfort food — not because it tastes good, but because it tastes warm. On cold nights in under-heated hab units, a QuickNood is the difference between going to sleep hungry and going to sleep with something hot in your stomach.",
+  "cultural_context": "QuickNood is the Gray Zone's comfort food — not because it tastes good, but because it tastes warm. On cold nights in under-heated hab units, a QuickNood is the difference between going to sleep hungry and going to sleep with something hot in your stomach.",
   "story_hooks": [
     "The QuickNood factory is one of the largest employers in Tier 2, and a strike there would be almost as devastating as a Ringo stoppage"
   ],
@@ -23,13 +23,11 @@
     "consumer_good",
     "tier_1",
     "tier_2",
-    "shelf",
     "cheap",
     "instant"
   ],
   "parent_corponation": "",
   "related_entities": [
-    "Ringo Corponation",
-    "The Shelf"
+    "Ringo Corponation"
   ]
 }

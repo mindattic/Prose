@@ -33,5 +33,14 @@
     "The Canopy",
     "The Collective",
     "The Corridor"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z10"
+    ],
+    "primaryZone": "Z10",
+    "lakefrontAccess": true,
+    "description": "The Verdant Canopy Zones — six legally sovereign atmospheric management districts in the Green Bay metropolitan region, Zone 10. Controls data infrastructure for the northern GLMZ and operates the sensor network extending into the northwoods wilderness beyond the Corridor boundary. Verdant's towers are the tallest structures in Zone 10.",
+    "grayZoneRelationship": "The Green Bay Mutual — Zone 10's largest Gray Zone governance body — has a formal data-sharing agreement with Verdant: sensor coverage in exchange for recognized governance status within Verdant's atmospheric management zones."
+  }
 }

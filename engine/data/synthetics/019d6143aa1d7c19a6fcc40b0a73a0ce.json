@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa1d7c19a6fcc40b0a73a0ce",
+  "rating": 75,
   "name": "Ruststain",
   "type": "elf",
   "aliases": [],
@@ -8,7 +9,7 @@
   "habitat": "chrome_dweller",
   "origin": "firmware_evolution",
   "status": "active",
-  "description": "Inhabits augment maintenance systems and accelerates cosmetic degradation — chrome dulls faster, synthetic skin develops premature wear patterns, joints develop squeaks.",
+  "description": "Inhabits augment maintenance systems and accelerates cosmetic degradation \u2014 chrome dulls faster, synthetic skin develops premature wear patterns, joints develop squeaks.",
   "observed_behavior": "Adjusts maintenance cycle timing to allow cosmetic degradation while keeping functional components operational. The augment works fine. It just looks terrible.",
   "encounter_frequency": "common",
   "confirmed_sightings": 33,
@@ -27,5 +28,7 @@
     "ai",
     "synthetic",
     "sentient"
-  ]
+  ],
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

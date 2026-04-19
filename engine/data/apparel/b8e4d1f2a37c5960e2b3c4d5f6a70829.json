@@ -3,7 +3,7 @@
   "name": "Lazarus Street RipDoc Full Surgical Rig",
   "type": "apparel",
   "category": "outfit",
-  "description": "Ash-white poly-sealed surgical coat, hem cut asymmetrically to clear digitigrade legs or tail mods, over a moisture-wicking antimicrobial underlayer in pale green. Reinforced cuffs seal tight against chrome wrists; the back panel unzips into a sterile drape. Cargo trousers with instrument loops and an integrated knee pad — for crouching over a patient on a Shelf floor. Scuffed mag-closure boots with fluid-barrier soles.\n\nA battered AR visor mounted on a worn headband serves as surgical display. Nitrile-analog gloves are permanently clipped to the left breast pocket. Nothing matches. Everything works.",
+  "description": "Ash-white poly-sealed surgical coat, hem cut asymmetrically to clear digitigrade legs or tail mods, over a moisture-wicking antimicrobial underlayer in pale green. Reinforced cuffs seal tight against chrome wrists; the back panel unzips into a sterile drape. Cargo trousers with instrument loops and an integrated knee pad — for crouching over a patient on a the Gray Zone floor. Scuffed mag-closure boots with fluid-barrier soles.\n\nA battered AR visor mounted on a worn headband serves as surgical display. Nitrile-analog gloves are permanently clipped to the left breast pocket. Nothing matches. Everything works.",
   "tier_association": "Tier 1-2",
   "materials": [
     "poly-sealed antimicrobial coat fabric",
@@ -17,7 +17,7 @@
   "worn_by": [
     "street ripperdocs",
     "unlicensed augmentation surgeons",
-    "Shelf clinic medics",
+    "the Gray Zone clinic medics",
     "black-market gene therapy practitioners"
   ],
   "manufacturer": "Evergreen Wellness",
@@ -26,7 +26,7 @@
   "gene_compatible": true,
   "story_hooks": [
     "The coat's serial number traces back to a Pellucid BioSeal licensed surgical set — reported stolen from a Tier 4 gene clinic three years ago.",
-    "A ripperdoc in this kit is the only person in the Shelf who knows how to remove a specific brand of corporate tracker implant.",
+    "A ripperdoc in this kit is the only person in the Gray Zone who knows how to remove a specific brand of corporate tracker implant.",
     "The AR visor still has the previous owner's patient files cached — including someone very powerful who needed very quiet surgery."
   ],
   "tags": [
@@ -48,7 +48,6 @@
     "Arcturus Exo-Runner Frame",
     "Pellucid Systems",
     "Slagworks Industrial",
-    "The Shelf",
     "The Underlayer Collective",
     "VitaCore LinguaSync Real-Time Translation Implant"
   ],
@@ -70,9 +69,9 @@
       "Fluid barrier soles on boots with non-slip tread pattern"
     ],
     "tier_indicator": "Tier 5 / Sub-grade—this is street medicine equipment, affordable and salvageable, owned by practitioners outside corpo medical networks.",
-    "cultural_context": "Worn by Shelf doctors, black-market surgeons, and emergency medics in the ungoverned zones of the GLMZ. The wearer is someone who performs urgent surgery in unsafe conditions—infection control is a luxury they've engineered into fabric, not infrastructure. Signifies practical expertise, risk tolerance, and marginalization from official healthcare.",
+    "cultural_context": "Worn by the Gray Zone doctors, black-market surgeons, and emergency medics in the ungoverned zones of the GLMZ. The wearer is someone who performs urgent surgery in unsafe conditions—infection control is a luxury they've engineered into fabric, not infrastructure. Signifies practical expertise, risk tolerance, and marginalization from official healthcare.",
     "condition_typical": "Heavily broken-in and weathered. Stains (some unidentifiable) on the coat hem and boot soles; visible mending on pockets and seams; the AR visor flickers intermittently; wrist seals show wear grooves from hundreds of seal/unseals; gloves at the breast pocket are yellowed and frayed at the edges."
   },
-  "image_prompt": "A street medic in a battered ash-white poly-sealed surgical coat with pale green underlayer, standing under harsh neon surgical lighting in a cramped Shelf clinic. The coat's asymmetrical hem clears digitigrade augmentation. Cargo trousers with worn knee pads, scuffed mag-closure boots with fluid residue. AR visor headband sits askew, display flickering faintly red. Nitrile gloves clipped to breast pocket. Dark urban clinic backdrop with exposed pipes and biosensor readouts. Moody cyan and amber shadows. Worn, functional, alive. --ar 2:3 --v 6",
-  "visual_prompt": "A street medic in a battered ash-white poly-sealed surgical coat with pale green underlayer, standing under harsh neon surgical lighting in a cramped Shelf clinic. The coat's asymmetrical hem clears digitigrade augmentation. Cargo trousers with worn knee pads, scuffed mag-closure boots with fluid residue. AR visor headband sits askew, display flickering faintly red. Nitrile gloves clipped to breast pocket. Dark urban clinic backdrop with exposed pipes and biosensor readouts. Moody cyan and amber shadows. Worn, functional, alive. --ar 2:3 --v 6"
+  "image_prompt": "A street medic in a battered ash-white poly-sealed surgical coat with pale green underlayer, standing under harsh neon surgical lighting in a cramped the Gray Zone clinic. The coat's asymmetrical hem clears digitigrade augmentation. Cargo trousers with worn knee pads, scuffed mag-closure boots with fluid residue. AR visor headband sits askew, display flickering faintly red. Nitrile gloves clipped to breast pocket. Dark urban clinic backdrop with exposed pipes and biosensor readouts. Moody cyan and amber shadows. Worn, functional, alive. --ar 2:3 --v 6",
+  "visual_prompt": "A street medic in a battered ash-white poly-sealed surgical coat with pale green underlayer, standing under harsh neon surgical lighting in a cramped the Gray Zone clinic. The coat's asymmetrical hem clears digitigrade augmentation. Cargo trousers with worn knee pads, scuffed mag-closure boots with fluid residue. AR visor headband sits askew, display flickering faintly red. Nitrile gloves clipped to breast pocket. Dark urban clinic backdrop with exposed pipes and biosensor readouts. Moody cyan and amber shadows. Worn, functional, alive. --ar 2:3 --v 6"
 }

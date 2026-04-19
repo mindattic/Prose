@@ -53,7 +53,7 @@
   },
   "relationships": [],
   "story_hooks": [
-    "Her sister has pawned something at Constant's shop on The Shelf — something of their mother's — and word has reached Sabine through the vendor network. She needs someone to help her recover it quietly before the standard resale period expires.",
+    "Her sister has pawned something at Constant's shop on the Gray Zone — something of their mother's — and word has reached Sabine through the vendor network. She needs someone to help her recover it quietly before the standard resale period expires.",
     "A Helix Biosystems rep has approached her about designing a line of 'clinically certified geneware-compatible garments' under a Helix brand license — which would mean real money and distribution, but also corporate oversight of her designs and a non-compete that would kill her independent work. She's been agonizing over it for two weeks."
   ],
   "narrative_function": "Social hub and neighborhood gossip network node, equipment and clothing source for characters needing aug-compatible gear, potential quest giver for problems involving the Souk community.",
@@ -226,13 +226,12 @@
     "The Alban Souk",
     "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
     "Bronzeline",
-    "The Shelf",
     "Arcturus KS-7 'Nursery'",
     "Corner Slice",
     "The Pure Hand",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Predominantly Southeast Asian (62.6%, primarily Vietnamese/Thai/Indonesian ancestry) with significant East Asian heritage (23.5%), Northern European (7.0%), North African (4.3%), and Hispanic/Latin American (2.6%) ancestry—a complex global blend reflected in warm-toned golden-brown skin with subtle olive undertones and refined facial structure",
     "height_cm": 168,

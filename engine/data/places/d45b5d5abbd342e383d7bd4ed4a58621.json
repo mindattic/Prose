@@ -3,7 +3,7 @@
   "type": "place",
   "name": "The Echo Chamber",
   "aliases": [],
-  "description": "The Echo Chamber is a subterranean venue and communication dead zone occupying three former utility rooms beneath a decommissioned maglev substation in the lower [[The Shelf|Shelf]]. The structure's original function was EM isolation — the substation required shielding to prevent its switching equipment from interfering with adjacent BCI-dependent infrastructure — and when the substation was decommissioned in 2197, the shielding remained because removing it was expensive and nobody in the [[The Shelf|Shelf]]'s contracting chain was willing to pay. What entered that vacuum was stranger than anyone expected.\n\nInside the [[Echo Chamber]], signals do not escape. This is the fundamental property from which everything else follows. BCI transmissions, surveillance broadcasts, network handshakes, location pings — anything electromagnetic that enters the Chamber's shielded perimeter bounces back. The shielding is not perfect, but it is close [[Serenol|enough]] to perfect that the practical effect is containment: what you broadcast inside comes back to you. Corporate surveillance drones that fly the [[The Shelf|Shelf]]'s lower corridors register a dead zone at the Chamber's location — not interference, not jamming, just absence. A silence shaped like a room.\n\nTwo communities have claimed this silence for their own purposes, and they coexist in uneasy truce.\n\nThe first community is operational: runners, fixers, and anyone who needs a conversation that does not exist in any surveillance archive. The Echo Chamber is the [[The Shelf|Shelf]]'s most reliable secure meeting location precisely because it does not jam signals — jamming is detectable — but instead bounces them back, producing nothing a monitoring system can distinguish from the natural EM noise of the city. You cannot hold a meeting with offsite parties from inside the Chamber, but any conversation conducted within its walls is, by physical law, unrecorded by anything outside its walls.\n\nThe second community is stranger. A subculture of BCI-enabled individuals — musicians, ritualists, the curious, and a significant number of people who do not describe what they do with language the outside world would recognize — uses the echo effect not as a security feature but as a medium. Inside the Chamber, what you broadcast comes back. A thought transmitted through a BCI returns to its sender, slightly delayed, slightly transformed by the reflection geometry of the room. When multiple BCI-enabled individuals broadcast simultaneously, their transmissions intermingle on the bounce, returning to each sender as a composite of everyone's broadcast filtered through everyone else's. The community calls this listening to the room. What they hear in it is their own business.\n\nThe echo effect has a known cognitive hazard. Extended BCI broadcasting inside the Chamber, especially by individuals whose neural interface integration is deep [[Serenol|enough]] that broadcast and thought are not cleanly separated, produces a feedback phenomenon in which the returned signal cannot be distinguished from a new thought. People describe losing track of which ideas are original and which are echoes. Several individuals have spent hours in the Chamber and emerged believing they had had profound realizations that turned out to be, on reflection, their own earlier thoughts returned to them in unfamiliar order. The community treats this as a feature. Operational users treat it as a reason to keep meetings short.",
+  "description": "The Echo Chamber is a subterranean venue and communication dead zone occupying three former utility rooms beneath a decommissioned maglev substation in the lower [[the Gray Zone|the Gray Zone]]. The structure's original function was EM isolation — the substation required shielding to prevent its switching equipment from interfering with adjacent BCI-dependent infrastructure — and when the substation was decommissioned in 2197, the shielding remained because removing it was expensive and nobody in the [[the Gray Zone|the Gray Zone]]'s contracting chain was willing to pay. What entered that vacuum was stranger than anyone expected.\n\nInside the [[Echo Chamber]], signals do not escape. This is the fundamental property from which everything else follows. BCI transmissions, surveillance broadcasts, network handshakes, location pings — anything electromagnetic that enters the Chamber's shielded perimeter bounces back. The shielding is not perfect, but it is close [[Serenol|enough]] to perfect that the practical effect is containment: what you broadcast inside comes back to you. Corporate surveillance drones that fly the [[the Gray Zone|the Gray Zone]]'s lower corridors register a dead zone at the Chamber's location — not interference, not jamming, just absence. A silence shaped like a room.\n\nTwo communities have claimed this silence for their own purposes, and they coexist in uneasy truce.\n\nThe first community is operational: runners, fixers, and anyone who needs a conversation that does not exist in any surveillance archive. The Echo Chamber is the [[the Gray Zone|the Gray Zone]]'s most reliable secure meeting location precisely because it does not jam signals — jamming is detectable — but instead bounces them back, producing nothing a monitoring system can distinguish from the natural EM noise of the city. You cannot hold a meeting with offsite parties from inside the Chamber, but any conversation conducted within its walls is, by physical law, unrecorded by anything outside its walls.\n\nThe second community is stranger. A subculture of BCI-enabled individuals — musicians, ritualists, the curious, and a significant number of people who do not describe what they do with language the outside world would recognize — uses the echo effect not as a security feature but as a medium. Inside the Chamber, what you broadcast comes back. A thought transmitted through a BCI returns to its sender, slightly delayed, slightly transformed by the reflection geometry of the room. When multiple BCI-enabled individuals broadcast simultaneously, their transmissions intermingle on the bounce, returning to each sender as a composite of everyone's broadcast filtered through everyone else's. The community calls this listening to the room. What they hear in it is their own business.\n\nThe echo effect has a known cognitive hazard. Extended BCI broadcasting inside the Chamber, especially by individuals whose neural interface integration is deep [[Serenol|enough]] that broadcast and thought are not cleanly separated, produces a feedback phenomenon in which the returned signal cannot be distinguished from a new thought. People describe losing track of which ideas are original and which are echoes. Several individuals have spent hours in the Chamber and emerged believing they had had profound realizations that turned out to be, on reflection, their own earlier thoughts returned to them in unfamiliar order. The community treats this as a feature. Operational users treat it as a reason to keep meetings short.",
   "atmosphere": {
     "sights": [
       "Three rooms connected by doorways with the frames stripped out — industrial concrete walls with the shielding mesh visible beneath peeling paint",
@@ -33,7 +33,7 @@
     "The absence of surveillance cuts both ways: what happens inside is unrecorded, which means accountability for violence is also unrecorded"
   ],
   "opportunities": [
-    "The most reliable unmonitored meeting space on the Shelf — operational value is high",
+    "The most reliable unmonitored meeting space in the Gray Zone — operational value is high",
     "The BCI community has developed techniques for navigating the echo effect that have practical applications for deep-integration operators",
     "Physical recording device sweeps are a recurring contract — clients pay well to verify the space is clean before a meeting"
   ],
@@ -44,7 +44,7 @@
   ],
   "connections": {
     "adjacent_to": [
-      "The Shelf (lower Shelf service infrastructure)",
+      "the Gray Zone (the Gray Zone service infrastructure)",
       "The Anchor Block sorting facility"
     ],
     "exits": [],
@@ -75,7 +75,6 @@
     "bci",
     "surveillance",
     "secure",
-    "shelf",
     "secret",
     "ritual",
     "echo",
@@ -83,7 +82,8 @@
   ],
   "related_entities": [
     "GLMZ",
-    "The Shelf",
     "Arcturus Civil Security"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

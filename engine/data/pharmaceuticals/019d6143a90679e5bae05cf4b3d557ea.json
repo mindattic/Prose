@@ -27,10 +27,10 @@
   "tier_availability": "Tier 2-3",
   "legality": "restricted",
   "street_price": "Φ90 per patch",
-  "cultural_context": "Nullocaine patches are everywhere on the Shelf because violence is everywhere. A runner wearing one is gambling — the patch might keep them in a fight they should have fled, and they'll only find out how bad the damage is when they're safe and it wears off. Medics in Tier 2 clinics have a name for the pattern: 'Null crash,' the moment a patient who walked in under their own power suddenly collapses as sensation returns. Several Shelf legends involve fighters who fought on with Null patches over wounds that should have killed them.",
+  "cultural_context": "Nullocaine patches are everywhere in the Gray Zone because violence is everywhere. A runner wearing one is gambling — the patch might keep them in a fight they should have fled, and they'll only find out how bad the damage is when they're safe and it wears off. Medics in Tier 2 clinics have a name for the pattern: 'Null crash,' the moment a patient who walked in under their own power suddenly collapses as sensation returns. Several the Gray Zone legends involve fighters who fought on with Null patches over wounds that should have killed them.",
   "story_hooks": [
     "A mercenary completes an entire extraction op, delivers her package, collects payment, and collapses in the elevator — Nullocaine masked a punctured lung and two broken ribs she never knew she had.",
-    "Someone is selling counterfeit Nullocaine patches that contain a tracking compound instead of the active ingredient — whoever is running the operation has real-time location data on every runner in the Shelf who bought from that batch.",
+    "Someone is selling counterfeit Nullocaine patches that contain a tracking compound instead of the active ingredient — whoever is running the operation has real-time location data on every runner in the Gray Zone who bought from that batch.",
     "A Tier 4 executive has been using prescription Nullocaine for years to manage chronic pain, and now lives in a state of complete pain insensibility — making them extraordinarily dangerous and impossible to interrogate."
   ],
   "tags": [
@@ -50,7 +50,6 @@
     "market",
     "drug",
     "stimulant",
-    "shelf",
     "tier 2",
     "tier 3"
   ],
@@ -61,7 +60,6 @@
     "Lazarus LX-2 'Lab Rat'",
     "Novafold Pharmaceuticals",
     "Sorin Ekwensi-Balasanyan",
-    "The Shelf",
     "Zheng-Dao Bioelectric Chemoreceptive Dermal Patch"
   ]
 }

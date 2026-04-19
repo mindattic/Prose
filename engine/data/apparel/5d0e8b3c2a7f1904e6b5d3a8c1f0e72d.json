@@ -1,9 +1,9 @@
 {
   "id": "5d0e8b3c2a7f1904e6b5d3a8c1f0e72d",
-  "name": "Shelf Patchwork Tank — Open Seam",
+  "name": "the Gray Zone Patchwork Tank — Open Seam",
   "type": "apparel",
   "category": "top",
-  "description": "Not manufactured — assembled. This tank top is the product of necessity and improvisation: panels of mismatched synth-fabric stitched together with visible seams in contrasting thread, the raw edges deliberately left open or bound in a different material entirely. Each one is unique. The one in hand might have a faded green mesh back, a yellow-white ribbed front, and shoulder straps cut from a repurposed safety harness. The stitching is uneven but functional. Shelf vendors sell them by the dozen from folded stacks under tarps.\n\nOn the Shelf, this is just a shirt. In Tier 3 clubs and underground art spaces, it's been reclaimed as aesthetic — people pay more for the 'authentic' ones than for the mass-produced knockoffs that imitate the look without the history. Real Shelf residents find that deeply irritating.",
+  "description": "Not manufactured — assembled. This tank top is the product of necessity and improvisation: panels of mismatched synth-fabric stitched together with visible seams in contrasting thread, the raw edges deliberately left open or bound in a different material entirely. Each one is unique. The one in hand might have a faded green mesh back, a yellow-white ribbed front, and shoulder straps cut from a repurposed safety harness. The stitching is uneven but functional. the Gray Zone vendors sell them by the dozen from folded stacks under tarps.\n\nOn the Gray Zone, this is just a shirt. In Tier 3 clubs and underground art spaces, it's been reclaimed as aesthetic — people pay more for the 'authentic' ones than for the mass-produced knockoffs that imitate the look without the history. Real the Gray Zone residents find that deeply irritating.",
   "tier_association": "Tier 1",
   "materials": [
     "reclaimed synth-fabric panels",
@@ -12,20 +12,20 @@
     "mixed thread"
   ],
   "functionality": "",
-  "what_it_says": "Either you live on the Shelf, or you want people to think you understand what that means — and those two things are not the same.",
+  "what_it_says": "Either you live in the Gray Zone, or you want people to think you understand what that means — and those two things are not the same.",
   "worn_by": [
-    "Shelf residents",
+    "the Gray Zone residents",
     "street artists",
     "underground scene participants",
-    "Tier 3 youth affecting Shelf aesthetic"
+    "Tier 3 youth affecting the Gray Zone aesthetic"
   ],
-  "manufacturer": "Various — Shelf market vendors, individual makers",
+  "manufacturer": "Various — the Gray Zone market vendors, individual makers",
   "price_range": "Φ6",
   "aug_compatible": true,
   "gene_compatible": true,
   "story_hooks": [
-    "A particular tank made from fabric cut from a Vantablack contractor's disposed uniform has been circulating the Shelf — whoever's wearing it keeps getting followed.",
-    "A Tier 3 boutique is selling machine-produced 'artisanal' versions at Φ180 and attributing them to a fictional Shelf artist — someone on the Shelf just found out.",
+    "A particular tank made from fabric cut from a Vantablack contractor's disposed uniform has been circulating the Gray Zone — whoever's wearing it keeps getting followed.",
+    "A Tier 3 boutique is selling machine-produced 'artisanal' versions at Φ180 and attributing them to a fictional the Gray Zone artist — someone in the Gray Zone just found out.",
     "The mismatched thread on a specific tank spells something in a old gang cipher that even the seller didn't know was there."
   ],
   "tags": [
@@ -35,14 +35,12 @@
     "tank top",
     "patchwork",
     "scavenged",
-    "shelf",
     "street",
     "handmade"
   ],
   "parent_corponation": "",
   "related_entities": [
     "Ngaire Kuznetsov-Adu",
-    "The Shelf",
     "The Underlayer Collective",
     "Yannick Tambadou-Reinholt"
   ],
@@ -62,10 +60,10 @@
       "Asymmetrical fit and panel sizing",
       "Hand-assembled quality—slight imperfections structural"
     ],
-    "tier_indicator": "Tier 5 authentic / Tier 3 appropriation. Genuine Shelf pieces signal survival and necessity. Reproductions in Tier 3 spaces signal aesthetic adoption and irony.",
-    "cultural_context": "Street/Shelf origin. Wearing authentic = sub-grade or ungoverned status. Wearing reproduction = Tier 3 artisan credibility play. Real Shelf residents recognize the difference immediately.",
+    "tier_indicator": "Tier 5 authentic / Tier 3 appropriation. Genuine the Gray Zone pieces signal survival and necessity. Reproductions in Tier 3 spaces signal aesthetic adoption and irony.",
+    "cultural_context": "Street/the Gray Zone origin. Wearing authentic = sub-grade or ungoverned status. Wearing reproduction = Tier 3 artisan credibility play. Real the Gray Zone residents recognize the difference immediately.",
     "condition_typical": "Weathered, patched, stained. Fabric degradation visible. Stitching loose in places. Fading uneven. No two examples identical. Authentic wear is the point."
   },
-  "image_prompt": "Close-up fashion photography of a Shelf Patchwork Tank on a lean, mixed-heritage model with visible augmentation ports on collarbone. Garment displays mismatched synth-fabric panels in faded greens, yellowed whites, and grays, with visible contrasting thread stitching and raw edges. Overhead moody industrial lighting casts sharp shadows across seams. Gritty urban backdrop—stacked cargo containers, worn concrete wall. Model's expression neutral, almost defiant. Grain and slight color shift to emphasize authenticity and age. --ar 2:3 --v 6",
-  "visual_prompt": "Close-up fashion photography of a Shelf Patchwork Tank on a lean, mixed-heritage model with visible augmentation ports on collarbone. Garment displays mismatched synth-fabric panels in faded greens, yellowed whites, and grays, with visible contrasting thread stitching and raw edges. Overhead moody industrial lighting casts sharp shadows across seams. Gritty urban backdrop—stacked cargo containers, worn concrete wall. Model's expression neutral, almost defiant. Grain and slight color shift to emphasize authenticity and age. --ar 2:3 --v 6"
+  "image_prompt": "Close-up fashion photography of a the Gray Zone Patchwork Tank on a lean, mixed-heritage model with visible augmentation ports on collarbone. Garment displays mismatched synth-fabric panels in faded greens, yellowed whites, and grays, with visible contrasting thread stitching and raw edges. Overhead moody industrial lighting casts sharp shadows across seams. Gritty urban backdrop—stacked cargo containers, worn concrete wall. Model's expression neutral, almost defiant. Grain and slight color shift to emphasize authenticity and age. --ar 2:3 --v 6",
+  "visual_prompt": "Close-up fashion photography of a the Gray Zone Patchwork Tank on a lean, mixed-heritage model with visible augmentation ports on collarbone. Garment displays mismatched synth-fabric panels in faded greens, yellowed whites, and grays, with visible contrasting thread stitching and raw edges. Overhead moody industrial lighting casts sharp shadows across seams. Gritty urban backdrop—stacked cargo containers, worn concrete wall. Model's expression neutral, almost defiant. Grain and slight color shift to emphasize authenticity and age. --ar 2:3 --v 6"
 }

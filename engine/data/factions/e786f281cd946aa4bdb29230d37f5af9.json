@@ -4,10 +4,10 @@
   "name": "The Reclamation Assembly",
   "aliases": [],
   "motto": "This ground was ours before it was theirs. It will be ours again.",
-  "description": "The Reclamation Assembly is a housing rights organization of approximately 10,000 members that fights against corporate displacement of lower-tier residents — the practice of 'revitalizing' (demolishing) Shelf and Circuit neighborhoods to build higher-tier commercial and residential developments. In a city where the corponations own the ground and lease it to residents on terms that can be changed at quarterly review, the Assembly argues that long-term residence creates a moral (if not legal) claim to the space you've made your home.\n\nThe Assembly's tactics include legal challenges to displacement orders, organized resistance to demolition (members physically occupy buildings scheduled for demolition, daring corporate security to evict them on camera), community land trusts (pooling resources to lease land collectively, making displacement more expensive for the corponations), and mutual aid for displaced families. They win some fights and lose most, but their visibility makes displacement politically costly enough that some corponations choose to develop elsewhere rather than face the public relations consequences.\n\nThe Assembly is popular in the Shelf and Circuit, where displacement anxiety is constant and the Assembly's willingness to physically stand in front of a demolition crew gives tangible form to resistance that most people only feel as helplessness.",
+  "description": "The Reclamation Assembly is a housing rights organization of approximately 10,000 members that fights against corporate displacement of lower-tier residents — the practice of 'revitalizing' (demolishing) the Gray Zone and Circuit neighborhoods to build higher-tier commercial and residential developments. In a city where the corponations own the ground and lease it to residents on terms that can be changed at quarterly review, the Assembly argues that long-term residence creates a moral (if not legal) claim to the space you've made your home.\n\nThe Assembly's tactics include legal challenges to displacement orders, organized resistance to demolition (members physically occupy buildings scheduled for demolition, daring corporate security to evict them on camera), community land trusts (pooling resources to lease land collectively, making displacement more expensive for the corponations), and mutual aid for displaced families. They win some fights and lose most, but their visibility makes displacement politically costly enough that some corponations choose to develop elsewhere rather than face the public relations consequences.\n\nThe Assembly is popular in the Gray Zone and Circuit, where displacement anxiety is constant and the Assembly's willingness to physically stand in front of a demolition crew gives tangible form to resistance that most people only feel as helplessness.",
   "ideology": "Home is a right, not a privilege. People who have built lives in a place — who have raised children, buried parents, built community — have a claim to that place that supersedes corporate property rights. The Assembly's politics are rooted in the oldest human conviction: this is our home, and you can't take it.",
-  "territory": "Active in every Shelf and Circuit neighborhood facing displacement. The Assembly's headquarters is a community center in the Shelf that has itself been the subject of three displacement attempts.",
-  "leadership": "Organizer-in-Chief Abigail Nakamura-Okonkwo, a Shelf resident who became an activist when her own building was condemned for 'structural remediation' (demolition for a corporate parking facility). She stopped the demolition. She's been stopping them ever since.",
+  "territory": "Active in every the Gray Zone and Circuit neighborhood facing displacement. The Assembly's headquarters is a community center in the Gray Zone that has itself been the subject of three displacement attempts.",
+  "leadership": "Organizer-in-Chief Abigail Nakamura-Okonkwo, a the Gray Zone resident who became an activist when her own building was condemned for 'structural remediation' (demolition for a corporate parking facility). She stopped the demolition. She's been stopping them ever since.",
   "methods": [
     "Legal challenges to corporate displacement orders",
     "Physical occupation of buildings scheduled for demolition",
@@ -19,7 +19,7 @@
   "resources": [
     "10,000 members with deep community connections",
     "Legal team specializing in housing and property law",
-    "A network of community organizers across the Shelf and Circuit",
+    "A network of community organizers across the Gray Zone and Circuit",
     "Media relationships that ensure displacement stories get coverage",
     "Abigail Nakamura-Okonkwo's organizational skill and moral authority",
     "The willingness of members to physically resist displacement"
@@ -28,7 +28,7 @@
   "relationships": [],
   "narrative_function": "The Assembly represents the most basic political claim: the right to stay where you are. In a city built on displacement, this is radical.",
   "story_hooks": [
-    "Axiom has announced the largest displacement project in GLMZ history — the demolition of an entire Shelf sector to build a new corporate campus. The Assembly is organizing the largest resistance action in its history. The players are asked to choose a side.",
+    "Axiom has announced the largest displacement project in GLMZ history — the demolition of an entire the Gray Zone sector to build a new corporate campus. The Assembly is organizing the largest resistance action in its history. The players are asked to choose a side.",
     "An Assembly community land trust has been infiltrated by a corporate agent who is systematically sabotaging the trust's legal standing. Abigail suspects someone on the inside but can't prove it without risking the trust."
   ],
   "tags": [
@@ -36,13 +36,11 @@
     "political",
     "housing",
     "displacement",
-    "shelf",
     "circuit",
     "community"
   ],
   "related_entities": [
     "Brightmoor Reclamation",
-    "The Shelf",
     "Circuit",
     "Zephyr Bhattacharya",
     "GLMZ"

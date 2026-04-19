@@ -50,7 +50,7 @@
   ],
   "connections": {
     "adjacent_to": [
-      "The Shelf",
+      "the Gray Zone",
       "The Slagshore",
       "The Steelyard",
       "The South Side"
@@ -59,7 +59,7 @@
     "tags": []
   },
   "frequented_by": [
-    "Permanent residents and their extended family and social networks from the broader Shelf community",
+    "Permanent residents and their extended family and social networks from the broader the Gray Zone community",
     "Salvagers and materials recovery specialists working the submerged infrastructure",
     "Civil rights legal advocates monitoring the Compact test case proceedings",
     "Ringo Heavy Industries survey and legal teams conducting external assessment operations",
@@ -94,8 +94,7 @@
     "rights",
     "drone",
     "water",
-    "lake",
-    "shelf"
+    "lake"
   ],
   "related_entities": [
     "Unregistered",
@@ -112,5 +111,7 @@
     "Odina Asomaning-Raghavan",
     "Echo Boateng",
     "Ringo Corponation"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

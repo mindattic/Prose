@@ -38,5 +38,14 @@
     "Pirjo Asante-Ulukhan",
     "SynapTech VocalShift Laryngeal Tone Modulator",
     "The Corridor"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z5"
+    ],
+    "primaryZone": "Z5",
+    "lakefrontAccess": false,
+    "description": "The Marrowvault Preserve — vast underground sovereign facility beneath the western Chicago suburbs of Zone 5. Long-term biological preservation for corponation executives and high-tier citizens. The most secure and least visible sovereign territory in the GLMZ — most Zone 5 residents above it have no idea it exists.",
+    "grayZoneRelationship": "No interface with Gray Zone communities. The Marrowvault's surface footprint is a parking structure."
+  }
 }

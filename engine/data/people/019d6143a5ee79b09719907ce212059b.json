@@ -1,5 +1,6 @@
 {
   "id": "019d6143a5ee79b09719907ce212059b",
+  "rating": 70,
   "type": "character",
   "name": "Sol Migizi",
   "aliases": [],
@@ -10,7 +11,7 @@
   "age": 34,
   "status": "active",
   "location": "The Circuit — neon-lit entertainment and vice district, near Milwaukee and North Ave",
-  "description": "Sol Migizi is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 34, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a street samurai out of The Circuit, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Sol Migizi agrees on two things: he is worth the fee, and he is terrible company at dinner.",
+  "description": "Sol Migizi is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 34, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nHe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a street samurai out of The Circuit, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Sol Migizi agrees on two things: he is worth the fee, and he is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.22,
@@ -53,7 +54,11 @@
       "\"I don't get paid to have opinions about the target. I get paid to make them stop moving.\"",
       "\"Chrome doesn't make you faster. Training makes you faster. Chrome just means you survive learning.\"",
       "\"You want philosophy, hire a professor. You want someone dead by morning, hire me.\""
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
@@ -265,24 +270,11 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Street-Custom Memory Alloy Butterfly Knife 'Quicksilver'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [
-    "Hearthstone Firearms Watchtower Rifle HWR-4 'Vigil'",
-    "Hearthstone Firearms Guardian-12 'Bedside'"
-  ],
-  "related_entities": [
-    "The Circuit",
-    "The Shelf",
-    "Circuit",
-    "Slagworks Industrial",
-    "Compass Rose",
-    "GLMZ"
-  ],
-  "district": "The Circuit",
   "physical_description": {
     "heritage": "Indigenous American (47.3%) forms the foundation with Middle Eastern (33.2%) and South Asian (11.7%) creating a striking triadic blend, with minor Northern European (4.4%) and Southeast Asian (3.4%) contributions. Features reflect this dominant mix — warm olive-bronze skin with subtle golden and amber undertones from the Indigenous and Middle Eastern ancestry, high and prominent cheekbones with slight facial width characteristic of Indigenous genetics, lean jaw with angular definition from Middle Eastern and South Asian structure. Eyes show depth and slight epicanthic shape variation from Southeast Asian genetics. Bone structure speaks to the confluence of multiple continents — strong and economical, built for endurance rather than bulk.",
     "height_cm": 188,
@@ -294,16 +286,17 @@
     "eye_color": "Chrome iris rings over dark brown — augmented for thermal and low-light overlay",
     "skin_tone": "Warm olive-bronze with golden and amber undertones — the result of dominant Indigenous American (47.3%) and Middle Eastern (33.2%) ancestry, with South Asian (11.7%) warmth creating depth and subtle red undertones. Weathered from nocturnal living and sun-scarred hands. Deeper in complexion with a subtle warm glow that suggests equatorial and continental origins.",
     "complexion": "Strong, defined bone structure reflecting Indigenous American and Middle Eastern ancestry — high, very prominent cheekbones with slight width across the face characteristic of Indigenous genetics, lean angular jaw refined by Middle Eastern structure with South Asian angularity. Skin texture marked by years of environmental exposure. Stubble perpetually two days old. Fine lines around the eyes from years of squinting at sights and scopes. No grooming vanity — functional cleanliness only.",
-    "visible_augmentations": "Right forearm shows visible smartgun link interface — matte chrome housing with faint LED indicators beneath the skin surface. Chrome iris rings visible in both eyes, catching light with slight metallic sheen. Subdermal interface ports on inner wrists, barely raised beneath scarred skin.",
     "distinguishing_marks": [
       "Thin scar along left temple, barely visible, running from brow to hairline — old blade work",
       "Burn scar across inner left forearm in an irregular patch — electrical contact, three years old",
       "Tattoo on right collarbone: circuit-board geometric pattern in matte black ink, professional work, Tier 3 quality"
     ],
+    "visible_augmentations": "Right forearm shows visible smartgun link interface — matte chrome housing with faint LED indicators beneath the skin surface. Chrome iris rings visible in both eyes, catching light with slight metallic sheen. Subdermal interface ports on inner wrists, barely raised beneath scarred skin.",
     "posture_movement": "Stands economically, weight balanced on balls of feet. Moves with precise, minimal motion — every gesture calculated. Hands always visible and loose. Head movements deliberate. Default expression neutral bordering on cold. When focused, entire posture tightens to predatory readiness.",
     "clothing_style": "Tier 3-4 street samurai aesthetic. Black reinforced synth-weave jacket with internal weapon clips and modified pockets. Fitted tactical pants with cargo reinforcement. Steel-toed boots broken in and re-soled twice. No logos or crew insignia — anonymous by design. Worn leather gloves (fingerless right glove to access smartgun interface). Simple titanium-alloy watch, old model, reliable. Everything maintained obsessively."
   },
   "image_prompt": "Sol Migizi, 188cm tall street samurai in 2226 GLMZ, warm olive-bronze skin with golden-amber undertones reflecting Indigenous American and Middle Eastern heritage, high prominent cheekbones with lean angular jaw, dark eyes with chrome iris rings showing thermal overlay augmentation, black hair braided back with silver at temples, two-day stubble, thin scar along left temple, burn scar on inner forearm, circuit-board tattoo on right collarbone. Wearing matte black reinforced synth-weave tactical jacket with visible smartgun interface on right forearm, fitted tactical pants, steel-toed boots, fingerless leather gloves on right hand. Stands economically balanced on balls of feet, hands loose and visible, default expression cold and neutral. Nocturnal near-future megacity setting with neon rim lighting casting blue-purple shadows, rain-slicked street reflected in chrome surfaces, predatory readiness in posture --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Indigenous American": 47.3,
     "Middle Eastern": 33.2,
@@ -311,12 +304,6 @@
     "Northern European": 4.4,
     "Southeast Asian": 3.4
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Indigenous American": {
       "Andean": {
@@ -368,6 +355,5 @@
         "Thai": 0.8
       }
     }
-  },
-  "tier": "3"
+  }
 }

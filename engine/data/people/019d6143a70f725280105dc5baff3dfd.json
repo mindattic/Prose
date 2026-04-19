@@ -1,5 +1,6 @@
 {
   "id": "019d6143a70f725280105dc5baff3dfd",
+  "rating": 80,
   "type": "character",
   "name": "Koda Makwa",
   "aliases": [],
@@ -37,7 +38,7 @@
       "Her rigor can function as a barrier to the urgency that change sometimes requires — she is better at analysis than at crisis",
       "Has normalized a level of institutional compromise that younger researchers recognize as capture even when she doesn't"
     ],
-    "secret": "Twelve years ago she reviewed an early-generation Axiom autonomous decision system and passed it with minor reservations. That system, in modified form, now handles resource allocation for three Shelf districts. She has tracked the harm it has caused, in her notebook, every month for twelve years. She has never published this connection. She is not sure if she is protecting herself or protecting the field from the damage her admission would do — and she is not sure those are different things."
+    "secret": "Twelve years ago she reviewed an early-generation Axiom autonomous decision system and passed it with minor reservations. That system, in modified form, now handles resource allocation for three the Gray Zone districts. She has tracked the harm it has caused, in her notebook, every month for twelve years. She has never published this connection. She is not sure if she is protecting herself or protecting the field from the damage her admission would do — and she is not sure those are different things."
   },
   "speech_patterns": {
     "vocabulary": "Extremely precise — will stop mid-sentence to correct her own word choice; no filler words; Spanish appears in private or emotional moments; uses passive constructions when discussing her own failures",
@@ -50,7 +51,11 @@
     "example_lines": [
       "'The review process functioned exactly as designed. That is the problem. When the design is wrong, a functioning process produces reliable harm.'",
       "'I have been saying this for nine years. I have records. Shall I retrieve them, or would you prefer we discuss what has changed since the last time you ignored them?'"
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
@@ -170,23 +175,11 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Mockingbird' Voice-Activated Trap Gun"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Helix Biosystems",
-    "University Spine",
-    "Meridian Core",
-    "Gage Circuit",
-    "The Nearfield",
-    "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
-    "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
-    "The Quiet Room",
-    "Circuit",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
-  ],
-  "district": "Meridian Core",
   "physical_description": {
     "heritage": "Predominantly Indigenous American (61.5%) with significant Hispanic/Latin American (20%) and Northern European (18.5%) ancestry. This genetic combination produces warm medium-brown skin with subtle copper and golden undertones, the prominent cheekbones and defined facial structure characteristic of Indigenous American descent, refined through Hispanic/Latin American heritage expression, and tempered by Northern European genetic contribution. The result is a striking, high-cheekboned face with warm undertones that seem to glow from within.",
     "height_cm": 172,
@@ -206,17 +199,12 @@
     "clothing_style": "Expensive minimalism. Neutral palette: charcoal, black, cream, dark grey. Tailored wool trousers, linen shirts, fitted blazers from mid-tier corpo brands that signal competence without ostentation. Quality leather belt, no visible jewelry except a thin silver watch (analog, mechanical — another deliberate choice). Her single physical notebook is leather-bound, worn, carried in a canvas messenger bag. Every choice reads as either principle or long habit — the distinction is intentionally unclear."
   },
   "image_prompt": "Koda Makwa, a striking woman of 172cm lean build with warm medium-brown skin and subtle copper undertones, high Indigenous American cheekbones refined by Hispanic and Northern European heritage, dark brown unmodified eyes, short white hair with natural dark roots, precise and close-cropped. Thin pale scar barely visible along left jawline. Wearing tailored charcoal wool trousers, cream linen shirt, fitted black blazer from mid-tier corpo brand, quality leather belt, analog silver mechanical watch. No augmentations, no chrome. Posture perfectly straight, economical movements, sitting with exact precision. Leather-bound notebook in worn canvas messenger bag. Minimal expression, thirty years of controlled emotion visible in fine lines around eyes and mouth. GLMZ, Great Lakes Metropolitan Zone, Tier 1-2 corporate space, cool overhead lighting casting subtle shadows across her face, emphasizing cheekbone structure and scar, professional and composed demeanor, principle and habit indistinguishable --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Indigenous American": 61.5,
     "Hispanic/Latin American": 20,
     "Northern European": 18.5
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Indigenous American": {
       "Great Lakes Nations": {
@@ -242,6 +230,5 @@
         "English": 3.1
       }
     }
-  },
-  "tier": "4"
+  }
 }

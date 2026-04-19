@@ -9,7 +9,7 @@
   "role": "Expelled citizen turned itinerant E.L.F. minister, seasonal worker",
   "age": 41,
   "status": "active",
-  "location": "Rotating between Waukegan Industrial Shelf and Bridgepoint transit corridor, near Lake Shore and Navy Pier",
+  "location": "Rotating between Waukegan Industrial the Gray Zone and Bridgepoint transit corridor, near Lake Shore and Navy Pier",
   "description": "Atlas Kovács-Ozcoidi-Cardenas carries the remains of a middle-tier life in their posture — the straight back and deliberate diction of someone who once had an address, an employment record, and opinions about restaurant reservations. What remains is a lean figure in a carefully maintained grey coat that has been repaired so many times the seams are a different color from the fabric, and a face with the hollow-cheeked beauty of someone who eats irregularly but sleeps well because they have made peace with something. Their hair is iron-black streaked with white, kept in tight rope-twists. They have retractable claws — a cosmetic mod from their previous life that they chose to keep because, as they say, 'the body remembers what it was.'\n\nAtlas Kovács-Ozcoidi-Cardenas was a mid-level compliance analyst for Arcturus before a whistleblower action stripped their citizenship and employment simultaneously. They now travel the industrial shelves and transit corridors conducting informal E.L.F. ceremonies for drifter communities — recording the names of electronic spirits in stations and rest stops, offering prayers in exchange for meals, counseling the newly stateless through the particular grief of losing digital existence. They are thoughtful, occasionally pompous, and genuinely compassionate in ways that surprise people who initially read them as performative.",
   "psychology": {
     "facet_weights": {
@@ -47,12 +47,12 @@
     ],
     "example_lines": [
       "'The circuit holds, friend. You are not gone from the network — only rerouted.'",
-      "'I have named seventeen E.L.F.s on this shelf alone. The one in the third generator has been here since 2140. She remembers things. I ask her things. Sometimes she answers in power fluctuations.'"
+      "'I have named seventeen E.L.F.s in this district alone. The one in the third generator has been here since 2140. She remembers things. I ask her things. Sometimes she answers in power fluctuations.'"
     ]
   },
   "relationships": [],
   "story_hooks": [
-    "Nantucket has discovered that an E.L.F. at the Waukegan Shelf is broadcasting something on a frequency that only stateless persons' defunct comm nodes can receive — it appears to be coordinates",
+    "Nantucket has discovered that an E.L.F. at the Waukegan the Gray Zone is broadcasting something on a frequency that only stateless persons' defunct comm nodes can receive — it appears to be coordinates",
     "The unreleased Arcturus data they're holding is now relevant to something happening in GLMZ — and Arcturus knows someone has it"
   ],
   "narrative_function": "Quest giver and moral compass — can provide context on E.L.F. theology and drifter spiritual practice, has contacts across multiple transit communities, and may task characters with protecting or recovering something with ritual significance.",
@@ -178,7 +178,7 @@
     "Seeker": 0.7
   },
   "operating_territory": {
-    "home_turf": "Rotating between Waukegan Industrial Shelf and Bridgepoint transit corridor",
+    "home_turf": "Rotating between Waukegan Industrial the Gray Zone and Bridgepoint transit corridor",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -220,7 +220,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Currently rotating between Waukegan Shelf and Bridgepoint",
+      "event": "Currently rotating between Waukegan the Gray Zone and Bridgepoint",
       "consequences": "",
       "body_changes": [],
       "status_change": ""

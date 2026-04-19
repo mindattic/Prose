@@ -1,11 +1,11 @@
 {
   "id": "019d6513b7c27a4285b5d482c71a8bfa",
-  "name": "RUNMARK: Shelf Parkour AR Challenge",
+  "name": "RUNMARK: the Gray Zone Parkour AR Challenge",
   "type": "entertainment",
   "category": "game",
   "subcategory": "augmented reality urban exploration",
   "aliases": [],
-  "description": "RUNMARK overlays a procedurally generated parkour challenge course onto the real physical architecture of GLMZ's lower tiers, using BCI-linked AR to project glowing waypoints, timing gates, and obstacle indicators onto actual buildings, ledges, pipes, and transit infrastructure. Players physically run the course in real space, with the game tracking movement through a mesh of passive city sensors and personal BCI positioning data. The game became a genuine subculture on the Shelf, where players developed proprietary routes called 'marks' that they traded, sold, and sometimes died attempting.",
+  "description": "RUNMARK overlays a procedurally generated parkour challenge course onto the real physical architecture of GLMZ's lower tiers, using BCI-linked AR to project glowing waypoints, timing gates, and obstacle indicators onto actual buildings, ledges, pipes, and transit infrastructure. Players physically run the course in real space, with the game tracking movement through a mesh of passive city sensors and personal BCI positioning data. The game became a genuine subculture in the Gray Zone, where players developed proprietary routes called 'marks' that they traded, sold, and sometimes died attempting.",
   "creator": "",
   "distributor": "",
   "tier_availability": "Tier 1-2",
@@ -18,13 +18,12 @@
   "story_hooks": [
     "A legendary RUNMARK mark known as the 'Lachine Spiral' has never been successfully completed — but someone has just posted a route file claiming to be the original creator's final intended version, and the coordinates pass through a building that doesn't appear on any public map.",
     "A RUNMARK champion is approached by a courier broker who wants to hire her not for delivery work, but to run a specific mark at a specific time — as a distraction.",
-    "The game's passive sensor network, it turns out, has been quietly building a comprehensive real-time map of every structural weakness in Shelf infrastructure — and someone has been accessing that data for years."
+    "The game's passive sensor network, it turns out, has been quietly building a comprehensive real-time map of every structural weakness in the Gray Zone infrastructure — and someone has been accessing that data for years."
   ],
   "tags": [],
   "related_entities": [
     "Emeka Johansson-Orozco",
     "GLMZ",
-    "Ringo DV-4 'Courier'",
-    "The Shelf"
+    "Ringo DV-4 'Courier'"
   ]
 }

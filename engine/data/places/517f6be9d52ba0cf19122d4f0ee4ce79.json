@@ -3,7 +3,7 @@
   "type": "place",
   "name": "Green Bay Community Table",
   "aliases": [],
-  "description": "A long table — literally, a twelve-meter table built from reclaimed lumber — set up in the courtyard of a former school in Green Bay's east side. Every evening at 6 PM, volunteers from four different mutual aid groups bring whatever they've cooked and lay it out. Some of it is good. Some of it is survival-grade. All of it is free. You sit, you eat, you talk to whoever sits next to you. The Table has become the de facto community center for Green Bay's Shelf, not because anyone planned it but because feeding people together turns strangers into neighbors.",
+  "description": "A long table — literally, a twelve-meter table built from reclaimed lumber — set up in the courtyard of a former school in Green Bay's east side. Every evening at 6 PM, volunteers from four different mutual aid groups bring whatever they've cooked and lay it out. Some of it is good. Some of it is survival-grade. All of it is free. You sit, you eat, you talk to whoever sits next to you. The Table has become the de facto community center for Green Bay's the Gray Zone, not because anyone planned it but because feeding people together turns strangers into neighbors.",
   "atmosphere": {
     "sights": [],
     "sounds": [],
@@ -17,7 +17,7 @@
     "tags": []
   },
   "frequented_by": [
-    "Green Bay Shelf residents",
+    "Green Bay the Gray Zone residents",
     "Families",
     "Mutual aid volunteers",
     "Lonely people"
@@ -35,5 +35,7 @@
   ],
   "related_entities": [
     "Green Bay Mutual Aid Coalition"
-  ]
+  ],
+  "zone": "Z10",
+  "controllingCorponation": null
 }

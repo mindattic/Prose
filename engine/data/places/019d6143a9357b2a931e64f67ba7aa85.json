@@ -48,7 +48,7 @@
     "bioluminescent algae strains with undocumented pharmaceutical properties",
     "flooded lower levels contain intact pre-collapse data vaults",
     "off-grid medical services with no corporate reporting",
-    "smuggling routes connecting to Old Harbor and The Shelf",
+    "smuggling routes connecting to Old Harbor and the Gray Zone",
     "communities willing to hide individuals from corporate surveillance"
   ],
   "story_hooks": [
@@ -61,7 +61,7 @@
   "connections": {
     "adjacent_to": [
       "Old Harbor",
-      "The Shelf",
+      "the Gray Zone",
       "Substation Null"
     ],
     "exits": [],
@@ -119,7 +119,6 @@
     "rights",
     "water",
     "lake",
-    "shelf",
     "old harbor"
   ],
   "related_entities": [
@@ -131,5 +130,7 @@
     "SynapTech IrisBloom Ocular Color Modulator",
     "Odina Asomaning-Raghavan",
     "Gravitic Shear Pistol GSP-7 'Tidal'"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

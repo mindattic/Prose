@@ -3,7 +3,7 @@
   "name": "Reclaimed Territory Squatter's Vest",
   "type": "apparel",
   "category": "cultural",
-  "description": "A high-visibility safety vest — the kind found at any construction site — modified with spray-painted building numbers and block designations marking the squatter communities the wearer has lived in. Each number represents a building occupied, defended, and eventually lost to demolition or eviction. The vest is worn over everything.\n\nIn Shelf communities where housing instability is the norm, the Squatter's Vest is a record of survival. The numbers aren't addresses — they're battle scars. Wearers recognize each other's histories at a glance and know exactly how many times someone has been displaced.",
+  "description": "A high-visibility safety vest — the kind found at any construction site — modified with spray-painted building numbers and block designations marking the squatter communities the wearer has lived in. Each number represents a building occupied, defended, and eventually lost to demolition or eviction. The vest is worn over everything.\n\nIn the Gray Zone communities where housing instability is the norm, the Squatter's Vest is a record of survival. The numbers aren't addresses — they're battle scars. Wearers recognize each other's histories at a glance and know exactly how many times someone has been displaced.",
   "tier_association": "Tier 1",
   "materials": [
     "modified safety vest",
@@ -29,7 +29,6 @@
     "cultural",
     "tier 1",
     "squatter",
-    "Shelf",
     "housing",
     "displacement",
     "survival"
@@ -55,7 +54,7 @@
       "Scuff marks, burn marks, or chemical stains from street living conditions"
     ],
     "tier_indicator": "Tier 5 salvage and sub-grade cultural marker. The vest itself is mass-produced and worthless; its value lies entirely in the personal narrative spray-painted across its surface.",
-    "cultural_context": "Exclusive to Shelf communities and ungoverned squatter zones within the GLMZ. Wearing one signals homelessness, housing instability, community resilience, and a history of anti-corporate land resistance. Recognized immediately by other displaced persons; a badge of survival rather than shame. In some neighborhoods, specific building numbers carry legendary status—sites of legendary holdouts or long-term communes.",
+    "cultural_context": "Exclusive to the Gray Zone communities and ungoverned squatter zones within the GLMZ. Wearing one signals homelessness, housing instability, community resilience, and a history of anti-corporate land resistance. Recognized immediately by other displaced persons; a badge of survival rather than shame. In some neighborhoods, specific building numbers carry legendary status—sites of legendary holdouts or long-term communes.",
     "condition_typical": "Always worn and weathered. Paint faded in UV-exposed areas, newer numbers fresher and more vibrant. Edges softened by repeated folding. Reflective trim dulled but still functional. The garment improves—gains meaning—with wear and time."
   },
   "image_prompt": "Close-up fashion shot of a Reclaimed Territory Squatter's Vest on a lean, androgynous model with visible tattoos and subcutaneous implant scars. Vest worn over layered thermal wear, spray-painted building numbers glowing under harsh sodium streetlight in a condemned building's shadow. Each number sharp and readable—some fresh chrome paint, some faded to ghosts. Reflective trim catching emergency lighting. Moody, documentary-style urban portrait with shallow depth of field focusing on the painted numbers. Dark concrete wall backdrop, rain-slicked and graffitied. --ar 2:3 --v 6",

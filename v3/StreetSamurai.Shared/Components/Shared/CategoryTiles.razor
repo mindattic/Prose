@@ -24,57 +24,133 @@
 @inject ConsumerGoodRepository GoodsRepo
 @inject ContractRepository ContractRepo
 
-<div class="board-grid">
-    <a href="/board/characters" class="board-tile">
-        <i class="bi bi-people-fill board-tile-icon"></i>
-        <div class="board-tile-name">Characters</div>
-        <span class="board-tile-count">@(charCount)</span>
-    </a>
-    <a href="/board/organizations" class="board-tile">
-        <i class="bi bi-buildings board-tile-icon"></i>
-        <div class="board-tile-name">Organizations</div>
-        <span class="board-tile-count">@(orgCount)</span>
-    </a>
-    <a href="/board/gear" class="board-tile">
-        <i class="bi bi-tools board-tile-icon"></i>
-        <div class="board-tile-name">Gear</div>
-        <span class="board-tile-count">@(gearCount)</span>
-    </a>
-    <a href="/board/world" class="board-tile">
-        <i class="bi bi-globe2 board-tile-icon"></i>
-        <div class="board-tile-name">World</div>
-        <span class="board-tile-count">@(worldCount)</span>
-    </a>
-    <a href="/board/culture" class="board-tile">
-        <i class="bi bi-palette2 board-tile-icon"></i>
-        <div class="board-tile-name">Culture</div>
-        <span class="board-tile-count">@(cultureCount)</span>
-    </a>
-    <a href="/board/tools" class="board-tile">
-        <i class="bi bi-grid-3x3-gap board-tile-icon"></i>
-        <div class="board-tile-name">Tools</div>
-    </a>
-    <a href="contracts" class="board-tile">
-        <i class="bi bi-file-earmark-check board-tile-icon"></i>
-        <div class="board-tile-name">Contracts</div>
-        <span class="board-tile-count">@contractCount</span>
-    </a>
+<div class="home-sections">
+
+    @* ── Repositories ──────────────────────────────────────────────── *@
+    <div class="board-section">
+        <div class="board-section-label">Repositories</div>
+        <div class="board-grid">
+            <a href="/board/characters" class="board-tile">
+                <i class="bi bi-people-fill board-tile-icon"></i>
+                <div class="board-tile-name">Characters</div>
+                <span class="board-tile-count">@charCount</span>
+            </a>
+            <a href="/board/organizations" class="board-tile">
+                <i class="bi bi-buildings board-tile-icon"></i>
+                <div class="board-tile-name">Organizations</div>
+                <span class="board-tile-count">@orgCount</span>
+            </a>
+            <a href="/board/gear" class="board-tile">
+                <i class="bi bi-tools board-tile-icon"></i>
+                <div class="board-tile-name">Gear</div>
+                <span class="board-tile-count">@gearCount</span>
+            </a>
+            <a href="/board/world" class="board-tile">
+                <i class="bi bi-globe2 board-tile-icon"></i>
+                <div class="board-tile-name">World</div>
+                <span class="board-tile-count">@worldCount</span>
+            </a>
+            <a href="/board/culture" class="board-tile">
+                <i class="bi bi-palette2 board-tile-icon"></i>
+                <div class="board-tile-name">Culture</div>
+                <span class="board-tile-count">@cultureCount</span>
+            </a>
+            <a href="contracts" class="board-tile">
+                <i class="bi bi-file-earmark-check board-tile-icon"></i>
+                <div class="board-tile-name">Contracts</div>
+                <span class="board-tile-count">@contractCount</span>
+            </a>
+        </div>
+    </div>
+
+    @* ── World Data ─────────────────────────────────────────────────── *@
+    <div class="board-section">
+        <div class="board-section-label">World Data</div>
+        <div class="board-grid">
+            <a href="quotes" class="board-tile board-tile-sm">
+                <i class="bi bi-quote board-tile-icon"></i>
+                <div class="board-tile-name">Quotes</div>
+                <span class="board-tile-count">@quoteCount</span>
+            </a>
+            <a href="vocabulary" class="board-tile board-tile-sm">
+                <i class="bi bi-chat-quote board-tile-icon"></i>
+                <div class="board-tile-name">Vocabulary</div>
+                <span class="board-tile-count">@vocabCount</span>
+            </a>
+            <a href="archetypes" class="board-tile board-tile-sm">
+                <i class="bi bi-person-bounding-box board-tile-icon"></i>
+                <div class="board-tile-name">Archetypes</div>
+                <span class="board-tile-count">@archetypeCount</span>
+            </a>
+            <a href="rules" class="board-tile board-tile-sm">
+                <i class="bi bi-book board-tile-icon"></i>
+                <div class="board-tile-name">World Rules</div>
+            </a>
+        </div>
+    </div>
+
+    @* ── Visualizations ─────────────────────────────────────────────── *@
+    <div class="board-section">
+        <div class="board-section-label">Visualizations</div>
+        <div class="board-grid">
+            <a href="graph" class="board-tile board-tile-sm board-tile-viz">
+                <i class="bi bi-diagram-3 board-tile-icon"></i>
+                <div class="board-tile-name">World Graph</div>
+            </a>
+            <a href="map" class="board-tile board-tile-sm board-tile-viz">
+                <i class="bi bi-map-fill board-tile-icon"></i>
+                <div class="board-tile-name">Map</div>
+            </a>
+            <a href="heritage" class="board-tile board-tile-sm board-tile-viz">
+                <i class="bi bi-tree-fill board-tile-icon"></i>
+                <div class="board-tile-name">Heritage</div>
+            </a>
+        </div>
+    </div>
+
+    @* ── Tools ──────────────────────────────────────────────────────── *@
+    <div class="board-section">
+        <div class="board-section-label">Tools</div>
+        <div class="board-grid">
+            <a href="dashboard" class="board-tile board-tile-sm">
+                <i class="bi bi-speedometer2 board-tile-icon"></i>
+                <div class="board-tile-name">Dashboard</div>
+            </a>
+            <a href="write" class="board-tile board-tile-sm">
+                <i class="bi bi-pen board-tile-icon"></i>
+                <div class="board-tile-name">Write Story</div>
+            </a>
+            <a href="stories" class="board-tile board-tile-sm">
+                <i class="bi bi-journal-richtext board-tile-icon"></i>
+                <div class="board-tile-name">Stories</div>
+            </a>
+            <a href="facts" class="board-tile board-tile-sm">
+                <i class="bi bi-lightbulb board-tile-icon"></i>
+                <div class="board-tile-name">Fact Discovery</div>
+            </a>
+        </div>
+    </div>
+
 </div>
 
 @code {
     int charCount, orgCount, gearCount, worldCount, cultureCount, contractCount;
+    int quoteCount, vocabCount, archetypeCount;
 
     protected override void OnInitialized()
     {
-        charCount    = CharRepo.GetAll().Count + SynthRepo.GetAll().Count + ArchetypeRepo.GetAll().Count;
+        charCount    = CharRepo.GetAll().Count + SynthRepo.GetAll().Count;
         orgCount     = CorpRepo.GetAll().Count + SubsidiaryRepo.GetAll().Count + FactionRepo.GetAll().Count;
         gearCount    = WeaponRepo.GetAll().Count + AmmoRepo.GetAll().Count + CyberRepo.GetAll().Count
                      + EquipRepo.GetAll().Count + ApparelRepo.GetAll().Count + GenemodRepo.GetAll().Count
                      + PharmaRepo.GetAll().Count;
         worldCount   = DistrictRepo.GetAll().Count + TransportRepo.GetAll().Count + MaterialRepo.GetAll().Count
                      + TechRepo.GetAll().Count + AutomatonRepo.GetAll().Count;
-        cultureCount = DocRepo.GetAll().Count + QuoteRepo.GetAll().Count + VocabRepo.GetAll().Count
-                     + NewsRepo.GetAll().Count + EntertainmentRepo.GetAll().Count + GoodsRepo.GetAll().Count;
-        contractCount = ContractRepo.GetAll().Count;
+        cultureCount = DocRepo.GetAll().Count + NewsRepo.GetAll().Count
+                     + EntertainmentRepo.GetAll().Count + GoodsRepo.GetAll().Count;
+        contractCount  = ContractRepo.GetAll().Count;
+        quoteCount     = QuoteRepo.GetAll().Count;
+        vocabCount     = VocabRepo.GetAll().Count;
+        archetypeCount = ArchetypeRepo.GetAll().Count;
     }
 }

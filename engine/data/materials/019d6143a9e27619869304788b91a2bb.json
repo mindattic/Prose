@@ -6,7 +6,7 @@
   "type": "substrate",
   "aliases": [],
   "category": "composite",
-  "description": "A porous graphene oxide filtration membrane developed by BioForge Labs specifically for point-of-use water purification in low-infrastructure environments. Puraflo-G membranes use precisely controlled sub-nanometer pore geometries to reject dissolved heavy metals, biological contaminants, and industrial particulates while passing clean water at practical flow rates without pressurization. The membrane is produced in robust, field-replaceable cartridge formats designed to survive the rough handling of Shelf-level distribution.",
+  "description": "A porous graphene oxide filtration membrane developed by BioForge Labs specifically for point-of-use water purification in low-infrastructure environments. Puraflo-G membranes use precisely controlled sub-nanometer pore geometries to reject dissolved heavy metals, biological contaminants, and industrial particulates while passing clean water at practical flow rates without pressurization. The membrane is produced in robust, field-replaceable cartridge formats designed to survive the rough handling of the Gray Zone-level distribution.",
   "properties": [
     "sub-nanometer pore precision",
     "heavy metal rejection",
@@ -21,7 +21,7 @@
     "Apex Nanofabrication"
   ],
   "applications": [
-    "Shelf-district drinking water filtration units",
+    "the Gray Zone-district drinking water filtration units",
     "field medic water purification kits",
     "emergency disaster response water systems",
     "agricultural irrigation contaminant removal",
@@ -30,9 +30,9 @@
   "tier_availability": "All tiers",
   "cost": "Φ18 per cartridge unit",
   "story_hooks": [
-    "The primary Puraflo-G supplier to three Shelf districts has begun quietly reducing membrane pore quality in replacement cartridges — clean water tests are passing on paper but long-term heavy metal accumulation is showing up in clinic data.",
+    "The primary Puraflo-G supplier to three the Gray Zone districts has begun quietly reducing membrane pore quality in replacement cartridges — clean water tests are passing on paper but long-term heavy metal accumulation is showing up in clinic data.",
     "A BioForge Labs research note leaks suggesting Puraflo-G membranes can be modified to selectively filter out pharmaceutical compounds, meaning someone could use them to strip medication from a district's water supply.",
-    "Counterfeit Puraflo-G cartridges flooded the Shelf market after a supply disruption — they look identical but offer no meaningful filtration, and people are getting sick."
+    "Counterfeit Puraflo-G cartridges flooded the Gray Zone market after a supply disruption — they look identical but offer no meaningful filtration, and people are getting sick."
   ],
   "tags": [
     "composite",
@@ -43,11 +43,9 @@
     "clinic",
     "market",
     "drink",
-    "water",
-    "shelf"
+    "water"
   ],
   "related_entities": [
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "The Shelf"
+    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ]
 }

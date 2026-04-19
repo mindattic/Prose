@@ -1,5 +1,6 @@
 {
   "id": "019d6143a687770e81049b758c97cc48",
+  "rating": 80,
   "type": "character",
   "name": "Britt Appiah-Tran",
   "aliases": [],
@@ -48,11 +49,15 @@
     "example_lines": [
       "'Leave it. I'll have it back by Thursday. Don't ask me twice, I only answer once.'",
       "'Your shirt says three things and none of them are what you told me. But that's fine. I wash shirts, not stories.'"
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "A regular customer hasn't picked up their laundry in three weeks — bag number 47 is still on the shelf, and Orsolya is starting to worry",
+    "A regular customer hasn't picked up their laundry in three weeks — bag number 47 is still in the Gray Zone, and Orsolya is starting to worry",
     "Tessera rezoning agents have begun offering her building's residents buyout packages; she's the only one organizing resistance, and someone has started leaving threatening messages in her drain filters"
   ],
   "narrative_function": "Neighborhood anchor and information repository — she knows every resident's rhythms. Quest giver for domestic mysteries, a trustworthy source for who's new, who's gone, who's hiding something.",
@@ -159,32 +164,11 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
-    "Meridian Munitions Snapper-22 'Cricket'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [
-    "Hearthstone Firearms Scout Rifle HSR-10 'Wanderer'",
-    "Meridian Munitions Snapper-22 'Cricket'"
-  ],
-  "related_entities": [
-    "Hamtramck Enclave",
-    "Ringo Corponation Adrenal Sequencing Patch",
-    "Grandmother",
-    "The CEO",
-    "Vantablack Media Confessor Tap — 'The Booth'",
-    "The Shelf",
-    "Patience",
-    "Tessera Corponation",
-    "Silver",
-    "The Pure Hand",
-    "Lazarus IDP-1 'Teeth'",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Arcturus Defense Solutions ETF-3 'Mantis'",
-    "The Pale Mile",
-    "Arcturus CK-5 'Bloodhound'"
-  ],
-  "district": "The Shelf",
   "physical_description": {
     "heritage": "Sub-Saharan African (29.6%), Northern European (21.1%), Eastern European (19.3%), Southeast Asian (15.6%), East Asian (8.9%), Hispanic/Latin American (5.5%)—a genuinely mixed ancestry that manifests in her facial structure as a sophisticated blend of multiple bone structures. Sub-Saharan African heritage contributes to her warm, rich skin tone, fuller cheekbones, and broader nasal bridge. Northern and Eastern European ancestry adds subtle complexity to her complexion warmth and moderate facial prominence. Southeast and East Asian heritage shapes her eye structure, contributes to cheekbone prominence, and influences her overall facial geometry. The combined effect is a face that reads as globally mixed—full-featured yet angular in places, warm-toned yet dimensionally complex.",
     "height_cm": 168,
@@ -208,6 +192,7 @@
     "clothing_style": "Practical Tier 4 working-class. Wears heavy cotton or synthetic-blend work pants in grey or dark blue, always with multiple pockets. Usually a loose, oversized button-up shirt in white, cream, or faded patterns—often borrowed from or donated by laundry customers—worn open over a fitted undershirt. A heavy canvas apron, faded from years of bleach and wear, with deep pockets and water stains. Worn-in athletic shoes with orthopedic insoles, usually generic Tier 4 brands. A thin gold chain necklace with a small cross pendant, inherited. A simple wristwatch with a fabric strap, the face cracked but still functional. No jewelry beyond the watch and necklace. Hair held up with whatever implements are closest—functional, never decorative."
   },
   "image_prompt": "Britt Appiah-Tran, 54-year-old woman with rich warm brown skin with golden undertones and scattered freckling, mixed-heritage facial structure combining fuller cheekbones and broader nose from Sub-Saharan ancestry with subtle Eastern European bone structure and Southeast Asian eye placement. Black hair with silver-grey streaking at temples, pulled up hastily with a chopstick. Dark amber eyes, direct and observant. Deep creases around eyes and mouth from decades of work. Medical-grade wrist joint augmentations visible at both wrists. Worn work uniform: faded canvas apron over oversized cream button-up shirt, grey work pants, worn orthopedic shoes. Blue-grey staining visible in fingernail beds, linear scars on left forearm, small crescent scar barely visible on right temple. Standing in industrial laundry facility with warm overhead lighting casting shadows across her weathered features. Matter-of-fact posture, economical movement, watchful expression. GLMZ, realistic working-class aesthetic, naturalistic lighting, gritty atmospheric --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Sub-Saharan African": 29.6,
     "Northern European": 21.1,
@@ -216,12 +201,6 @@
     "East Asian": 8.9,
     "Hispanic/Latin American": 5.5
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Sub-Saharan African": {
       "Southern African": {
@@ -265,6 +244,5 @@
         "Nicaraguan": 0.1
       }
     }
-  },
-  "tier": "1"
+  }
 }

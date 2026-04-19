@@ -1,0 +1,78 @@
+{
+  "id": "983ae7ee3bb4ff8ab31b0af343f313a7",
+  "type": "faction",
+  "name": "The Tideborn Compact",
+  "aliases": [],
+  "motto": "The ocean took our homes. It will not take our names.",
+  "description": "The Tideborn Compact is a diaspora heritage militia representing the descendants of Pacific Island nations lost to rising sea levels during the 21st and 22nd centuries -- Tuvalu, Kiribati, the Marshall Islands, parts of Fiji, Tonga, and dozens of smaller island communities whose names survive only in the memories of their displaced populations. The Compact exists to preserve the cultural identities of these drowned nations, protect their displaced communities within GLMZ, and pursue recognition and reparations from the corporate entities whose industrial ancestors contributed to the climate catastrophe that destroyed their homelands.\n\nThe Compact was formalized in 2167 after a series of violent confrontations between Pacific Islander communities in the Gray Zone and corporate development teams attempting to demolish the cultural district known as Little Oceania -- a cluster of the Gray Zone neighborhoods where displaced islander families had recreated fragments of their lost homelands through architecture, language, food, and ceremony. When Crucible Industries announced plans to raze Little Oceania for an industrial expansion, the communities organized into a militia that physically blocked demolition equipment for thirty-seven days. Crucible eventually rerouted the expansion, and the resistance crystallized into the Tideborn Compact -- an organization dedicated to ensuring that no corporate interest would ever again threaten what remained of their cultures.\n\nThe Compact maintains approximately 2,200 active militia members trained in both combat and cultural preservation. Every member learns to fight, but every member also learns at least one traditional skill -- navigation by stars, traditional boat building, oral history, ceremonial practice, or one of the fourteen surviving Pacific languages spoken within the Compact. The organization operates on the principle that cultural survival and physical defense are inseparable -- that a people who cannot protect their neighborhood cannot protect their identity, and a people who forget their identity have nothing worth protecting.",
+  "ideology": "The nations of the Pacific were murdered by industrial civilization's refusal to reckon with its own consequences. The corponations that rule GLMZ are the inheritors of that civilization and its debts. The Tideborn Compact demands acknowledgment, reparation, and the sovereign right of drowned nations to persist as cultural entities even without territory. Identity is not geography -- it is memory, language, and the refusal to disappear.",
+  "territory": "Little Oceania district in the Gray Zone -- a cluster of neighborhoods where Pacific Islander diaspora communities have maintained cultural presence for decades. The Compact also controls access to several coastal areas in Old Harbor where traditional fishing and navigation practices continue.",
+  "leadership": "The Compact is led by a council of elders called the Navigators, representing each of the major displaced island nations. The current senior Navigator is Mere Tekauata-Vunipola, a 78-year-old woman born on one of the last inhabited atolls of Tuvalu before its final evacuation in 2152. Her authority is absolute on matters of cultural preservation and considerable on matters of defense.",
+  "methods": [
+    "Armed militia patrols of Little Oceania and surrounding districts",
+    "Cultural preservation programs including language schools, traditional craft workshops, and oral history archives",
+    "Legal advocacy for recognition of drowned nations as sovereign cultural entities",
+    "Direct action against corporate development that threatens diaspora communities",
+    "Traditional navigation and seamanship training as both cultural practice and practical skill",
+    "Coalition building with other diaspora communities in GLMZ"
+  ],
+  "resources": [
+    "2,200 trained militia members with combat and cultural preservation skills",
+    "Little Oceania -- a culturally significant district with deep community roots",
+    "Oral history archives preserving the knowledge and languages of fourteen drowned nations",
+    "Traditional watercraft capable of coastal navigation without electronic systems",
+    "Strong community bonds and mutual aid networks within Pacific Islander diaspora",
+    "Legal team pursuing reparations claims through the Meridian Quorum"
+  ],
+  "goals": [
+    "Permanent legal protection for Little Oceania and other diaspora cultural districts",
+    "Formal recognition of drowned Pacific nations as sovereign cultural entities within GLMZ's legal framework",
+    "Reparations from corporate successors to the industrial entities responsible for sea level rise",
+    "Preservation of all fourteen surviving Pacific languages and their associated cultural practices"
+  ],
+  "relationships": [
+    {
+      "name": "Crucible Industries",
+      "type": "enemy",
+      "description": "Crucible's attempted demolition of Little Oceania created the Compact. The relationship remains hostile, with Crucible viewing the district as wasted industrial real estate and the Compact viewing Crucible as a direct threat to their survival.",
+      "tags": [
+        "corporate",
+        "conflict",
+        "territory"
+      ]
+    },
+    {
+      "name": "Other diaspora communities",
+      "type": "ally",
+      "description": "The Compact has built coalitions with Bengali, Maldivian, and Dutch diaspora communities who share the experience of homeland loss to rising seas.",
+      "tags": [
+        "community",
+        "solidarity"
+      ]
+    },
+    {
+      "name": "The Meridian Drift",
+      "type": "partner",
+      "description": "Compact navigators sometimes serve as Pilots for the Drift, their traditional wayfinding skills proving invaluable for inter-city maritime routes.",
+      "tags": [
+        "cooperation",
+        "maritime"
+      ]
+    }
+  ],
+  "narrative_function": "The Tideborn Compact embodies the long memory of climate catastrophe -- the fact that the drowned nations did not disappear but persist as living cultures demanding accountability from the civilization that destroyed their homes. They are a reminder that the world GLMZ was built upon had consequences, and those consequences have names and faces.",
+  "story_hooks": [
+    "A Compact elder has died, and with her the last fluent speaker of a language spoken by a nation of 11,000 people. Neural recordings of her language exist but are stored on a TESSERA archive that the Compact cannot access. Recovering the recordings before they are purged is a matter of cultural life and death.",
+    "Crucible Industries has filed new development plans that would bisect Little Oceania with a cargo transit corridor. The Compact is preparing for another standoff, but this time Crucible has contracted Arcturus security forces.",
+    "A Compact navigator serving as a Drift Pilot has discovered the coordinates of a submerged atoll that was once part of Tuvalu -- and sonar readings suggest structures beneath the water that should not exist. Something was built on the atoll before it sank, and it was not built by islanders."
+  ],
+  "tags": [
+    "faction",
+    "militia",
+    "diaspora",
+    "cultural",
+    "pacific-islander",
+    "old-harbor",
+    "heritage"
+  ]
+}

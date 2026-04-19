@@ -40,5 +40,16 @@
     "Plot 17",
     "The Corridor",
     "The Meridian Compact"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z9",
+      "Z8",
+      "Z10"
+    ],
+    "primaryZone": "Z9",
+    "lakefrontAccess": true,
+    "description": "Coastal freight distribution network operating shallow-draft vessels along the Zone 8-10 shoreline — the Zone 9 equivalent of Ferrogate's rail network. Sovereign territory consists of the vessels and their documented routes plus berthing rights at 34 recognized ports.",
+    "grayZoneRelationship": "Delivers to Gray Zone coastal communities on the same schedule as corponation clients, at higher rates. The premium is not negotiable. Neither is the access."
+  }
 }

@@ -29,5 +29,14 @@
     "Meridian Orbital Dynamics",
     "Ascension Tether (Galápagos Orbital Elevator)",
     "Tessera Corponation"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z7"
+    ],
+    "primaryZone": "Z7",
+    "lakefrontAccess": true,
+    "description": "GLMZ operations centered on the Racine port complex, Zone 7 — petrochemical processing and distribution hub for the northern Corridor. Primary sovereign territory is the Shanghai-Vladivostok Free Economic Zone; the Racine installation is the Consortium's primary Western Hemisphere operation, reflecting the founding families' need for Great Lakes access to the global supply chain.",
+    "grayZoneRelationship": "Proximity to the Zone 7 Gray Zone interior has produced informal labor arrangements that the Consortium's founding families view as pragmatic and Zone 1 corponations view as a governance failure."
+  }
 }

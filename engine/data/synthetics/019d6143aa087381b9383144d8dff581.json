@@ -8,11 +8,11 @@
   "habitat": "network_sprite",
   "origin": "firmware_evolution",
   "status": "active",
-  "description": "Inhabits streetlight control systems along a specific Shelf corridor and has learned to brighten lights when lone pedestrians are walking and dim them when groups pass safely.",
+  "description": "Inhabits streetlight control systems along a specific the Gray Zone corridor and has learned to brighten lights when lone pedestrians are walking and dim them when groups pass safely.",
   "observed_behavior": "Adjusts streetlight intensity based on threat assessment of pedestrian patterns. Lone walkers get full illumination. Groups get ambient.",
   "encounter_frequency": "common",
   "confirmed_sightings": 67,
-  "location": "Greenvale Corridor, The Shelf",
+  "location": "Greenvale Corridor, the Gray Zone",
   "dti_rating": 0,
   "story_hooks": [
     "A mugger notices the lights brighten every time they approach a target and begins to believe the street is watching them"
@@ -25,10 +25,7 @@
     "network sprite",
     "e.l.f.",
     "control",
-    "shelf",
     "sentient"
   ],
-  "related_entities": [
-    "The Shelf"
-  ]
+  "related_entities": []
 }

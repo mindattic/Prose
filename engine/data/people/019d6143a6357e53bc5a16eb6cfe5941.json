@@ -9,8 +9,8 @@
   "role": "Lower Dock Crew lookout — Prologue survivor. Jaw destroyed, refuses replacement.",
   "age": 25,
   "status": "active",
-  "location": "The Shelf — lower loading docks, near Kedzie and Division",
-  "description": "Aidana Oh-Nazari was the crew's lookout. He didn't see Kyle coming. Nobody did. Kyle shattered his jaw with the flat of the blade and Isaak has refused to get it replaced. He wears a wrap around the lower half of his face and communicates through hand signals and a battered datapad.\n\nThe crew thinks this is trauma. It's not. Isaak has discovered that silence gives him power he never had when he talked. People project meaning onto his stillness. They assume depth. Isaak is using Kyle's violence as a personal rebrand.\n\nBefore the crew, Isaak was a library aide at the Shelf Community Archive — one of the last physical book collections in the lower tiers. He read constantly. Philosophy, psychology, military history. He joined Marcus's crew because the library closed and reading doesn't pay. He is the most educated person in the crew by a significant margin and the only one who has read about what Kyle is. He found references to experimental neural enhancement programs in declassified corporate documents. He does not share this with the crew.\n\nIsaak has no family in GLMZ. His parents are in the Busan Resettlement Zone. He sends them nothing because they don't know he's alive. He let them believe he died in transit. It was easier.",
+  "location": "the Gray Zone — lower loading docks, near Kedzie and Division",
+  "description": "Aidana Oh-Nazari was the crew's lookout. He didn't see Kyle coming. Nobody did. Kyle shattered his jaw with the flat of the blade and Isaak has refused to get it replaced. He wears a wrap around the lower half of his face and communicates through hand signals and a battered datapad.\n\nThe crew thinks this is trauma. It's not. Isaak has discovered that silence gives him power he never had when he talked. People project meaning onto his stillness. They assume depth. Isaak is using Kyle's violence as a personal rebrand.\n\nBefore the crew, Isaak was a library aide at the Gray Zone Community Archive — one of the last physical book collections in the lower tiers. He read constantly. Philosophy, psychology, military history. He joined Marcus's crew because the library closed and reading doesn't pay. He is the most educated person in the crew by a significant margin and the only one who has read about what Kyle is. He found references to experimental neural enhancement programs in declassified corporate documents. He does not share this with the crew.\n\nIsaak has no family in GLMZ. His parents are in the Busan Resettlement Zone. He sends them nothing because they don't know he's alive. He let them believe he died in transit. It was easier.",
   "psychology": {
     "facet_weights": {
       "wound": 0.2,
@@ -216,7 +216,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -235,7 +235,6 @@
   ],
   "related_entities": [
     "Coherent Radiation Scalpel CRS-7 'Suture'",
-    "The Shelf",
     "Noir Dining",
     "The Ghost Ronin",
     "Marcus Okafor-7",
@@ -243,7 +242,7 @@
     "Atlas",
     "GLMZ"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Tri-continental ancestry from Central Asia (34.2%), Middle East (36.7%), and East Asia (29.1%). This blend produces a striking phenotype: warm olive-bronze skin with golden undertones from the Middle Eastern and Central Asian components, refined by East Asian bone structure. High, prominent cheekbones and subtle epicanthic eye folds reflect the East Asian contribution, while a refined nose bridge and facial proportions show robust Central Asian and Persian genetics softened by East Asian delicacy. The result is distinctly West/Central Asian with refined East Asian architecture—angular, defined, and unmistakably cosmopolitan.",
     "height_cm": 172,

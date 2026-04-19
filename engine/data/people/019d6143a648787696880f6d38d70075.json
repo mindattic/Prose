@@ -1,5 +1,6 @@
 {
   "id": "019d6143a648787696880f6d38d70075",
+  "rating": 80,
   "type": "character",
   "name": "Kyle Ellen Corbin-Vasik",
   "aliases": [
@@ -60,7 +61,11 @@
       "The blade does not lie. Only the hand holding it.",
       "I maintain the hardware. The hardware maintains me. We have an arrangement.",
       "She had three exits and chose the one that required trust. Interesting."
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [
     {
@@ -80,9 +85,9 @@
     {
       "name": "Chen Wei-Lin",
       "type": "neighbor / anchor",
-      "description": "Mrs. Chen runs a shop in the Shelf. She feeds Kyle, patches his clothes, and pretends not to notice the blood.",
+      "description": "Mrs. Chen runs a shop in the Gray Zone. She feeds Kyle, patches his clothes, and pretends not to notice the blood.",
       "emotional_core": "Unconditional care that Kyle does not know how to receive",
-      "story_tension": "If the Shelf is threatened, Kyle will burn everything to protect her."
+      "story_tension": "If the Gray Zone is threatened, Kyle will burn everything to protect her."
     },
     {
       "name": "Pixel",
@@ -98,29 +103,6 @@
     "His escape may have been engineered — an unwitting field test",
     "The neural patterns of dead test subjects in his firmware are becoming more vivid"
   ],
-  "physical_description": {
-    "heritage": "Eastern European / Pacific Islander (Corbin — Anglo-Slavic; Vasik — Czech-Polynesian)",
-    "height_cm": 180,
-    "weight_kg": 77,
-    "build": "Lean, ropey muscle — not gym-built, survival-built. Narrow hips, long arms, a frame designed for speed over power.",
-    "hair_color": "Dark brown, almost black",
-    "hair_style": "Short on the sides, longer on top, perpetually pushed back. Uneven — he cuts it himself with a blade.",
-    "hair_length": "Short",
-    "eye_color": "Grey-green — the left iris has a faint gold ring from the NeoCortex array's optic thread bleed",
-    "skin_tone": "Olive-tan, weathered. The kind of complexion that doesn't burn but doesn't glow either — it just endures.",
-    "complexion": "Clean-shaven. Faint acne scarring along the jawline. Skin texture slightly uneven around the temples where the electrode array interfaces subcutaneously.",
-    "distinguishing_marks": [
-      "Surgical scar — 4cm, behind the left ear, where the primary NeoCortex insertion port was cut. Poorly healed, keloid ridge.",
-      "Micro-scarring along both forearms — faint parallel lines from years of self-maintaining subcutaneous electrode threads with improvised tools.",
-      "Faded chemical burn on the right hand, palm side — pharmaceutical stabilizer spill. The skin is smooth and pale there, like wax.",
-      "No tattoos. No cosmetic augmentations. He does not decorate the hardware."
-    ],
-    "visible_augmentations": "None visible at first glance — the NeoCortex array is subcutaneous. On close inspection: faint trace lines under the skin at the temples, barely visible unless you know what to look for. The left pupil dilates fractionally slower than the right.",
-    "posture_movement": "Still when standing, efficient when moving. No wasted motion. Walks like someone who learned to navigate spaces where being noticed gets you killed. Hands stay loose and low. When he enters a room, his eyes track the corners before the people.",
-    "clothing_style": "Dark, functional, layered. Worn leather jacket over ballistic-weave underlayer. Cargo pants with reinforced knees. Boots that have been resoled three times. Nothing branded, nothing new. The katana rides across his back in a matte-black friction sheath."
-  },
-  "image_prompt": "Neo-noir male, 27, lean athletic build, olive-tan skin, dark brown hair short on sides longer on top pushed back, grey-green eyes with faint gold ring in left iris, faint surgical scar behind left ear, micro-scarring on forearms, worn dark leather jacket over tactical underlayer, cargo pants, resoled combat boots, carbon-black katana across back in matte friction sheath, standing in rain-slicked neon-lit alley, clinical stillness, hands loose at sides, eyes scanning corners, photorealistic, cinematic lighting, GLMZ 2200 aesthetic, no visible cybernetics, gritty urban environment, atmospheric fog, high detail --ar 2:3 --v 6",
-  "dalle3_prompt": "neo-noir cyberpunk enforcer, male 27, lean muscular build, olive-tan skin, rough and imperfect face, asymmetrical features, slightly crooked nose, uneven jawline, subtle under-eye fatigue, small facial scars on cheek and bridge of nose, faint stubble, tired but dangerous eyes, grey-green with faint gold ring in left iris\n\nhair: short dark brown, uneven, spiked but messy and clumped from rain, not styled, irregular hairline\n\nexpression: cold, focused, emotionally restrained, slightly hardened, not heroic, not attractive, grounded realism\n\noutfit: dark leather jacket with tactical padding and attachments, worn but maintained, partially open over fitted dark shirt, utility belt with holster, reinforced gloves, holding pistol low in right hand, carbon-black katana strapped across back\n\nwalking forward through narrow neon-lit alley, rain falling, droplets streaking through frame, subtle motion blur, shallow depth of field\n\nenvironment: dense cyberpunk alley, high-end district, teal and cyan dominant lighting with magenta accents, glowing signage and advertisements, clean but wet surfaces, reflective pavement, light fog, blurred background figures\n\nlighting: cinematic neon rim lighting, face partially shadowed but readable, sharp highlights, strong color contrast, volumetric light through rain, reflections across ground\n\nmood: controlled, dangerous, professional, corporate dystopia, sleek but hostile, capitalism-saturated environment\n\nstyle: photorealistic but grounded, NOT idealized, NOT symmetrical, NOT model-like, avoid beauty standards\n\ncamera: 50mm lens, eye-level, natural perspective, slight imperfections in skin texture, visible pores",
   "narrative_function": "Kyle is the lens through which the reader experiences the GLMZ. His experimental hardware makes him perceive the world at a different speed and resolution, driving the prose style — tight, sensory, fragmented. His central contradiction: the facility made him a weapon, but he uses that weapon to protect the vulnerable.",
   "augmentations": "Experimental NeoCortex Program Atlas array — 32,768 electrodes, 256 threads, 8x standard density. Degrading firmware. Gives cognitive speed, reaction time, fragmentary sensory access.",
   "daily_life": "Freelance enforcement, retrieval, problem-solving for the excluded. Maintains hardware with salvaged tools.",
@@ -266,7 +248,7 @@
       "tier": "military prototype",
       "condition": "functional",
       "installed_date": "2194",
-      "description": "Light ballistic mesh woven under the skin. Stops small-caliber rounds and most bladed weapons. Visible as faint geometric patterns under certain lighting. Kyle did not know he had this until a knife failed to penetrate his ribs during a Shelf altercation at age 18.",
+      "description": "Light ballistic mesh woven under the skin. Stops small-caliber rounds and most bladed weapons. Visible as faint geometric patterns under certain lighting. Kyle did not know he had this until a knife failed to penetrate his ribs during a the Gray Zone altercation at age 18.",
       "replaces": "nothing — subdermal layer"
     },
     {
@@ -283,7 +265,6 @@
   "belongings": {
     "primary_weapon": "Torii Security Group Katana TSK-1 'Silence'",
     "secondary_weapon": "Torii Security Group Compact Combat Shotgun TSS-3 'Chorus'",
-    "sidearm": "Kang-Petrov Arms KP-19 'Coda'",
     "armor": "",
     "vehicle": "",
     "residence": "The Pivot — Unit 2F, 1554 W Chicago Ave / 801 N Ashland, West Town sector",
@@ -303,7 +284,7 @@
   "operating_territory": {
     "home_turf": "The Pivot — West Town / Circuit boundary",
     "familiar_zones": [
-      "The Shelf",
+      "the Gray Zone",
       "The Circuit",
       "West Town sector"
     ],
@@ -328,14 +309,14 @@
       "date": "2195-09",
       "story_id": "backstory",
       "event": "Escaped the NeoCortex facility during a breach event. Circumstances unclear — possibly engineered.",
-      "consequences": "Became a street-level refugee on the Shelf. Hardware began degrading without facility maintenance.",
+      "consequences": "Became a street-level refugee in the Gray Zone. Hardware began degrading without facility maintenance.",
       "body_changes": [],
       "status_change": ""
     },
     {
       "date": "2196-01",
       "story_id": "backstory",
-      "event": "Found by Dae-jung Seo on the Shelf. Seo began training Kyle in blade work and the code.",
+      "event": "Found by Dae-jung Seo in the Gray Zone. Seo began training Kyle in blade work and the code.",
       "consequences": "Gained discipline, purpose, and a moral framework. Inherited the katana and its obligations.",
       "body_changes": [],
       "status_change": ""
@@ -351,41 +332,46 @@
     {
       "date": "2200-present",
       "story_id": "active",
-      "event": "Operating as freelance enforcer from the Shelf. Hardware degradation accelerating. Stabilizer doses increasing.",
+      "event": "Operating as freelance enforcer from the Gray Zone. Hardware degradation accelerating. Stabilizer doses increasing.",
       "consequences": "Estimated 18-24 months before permanent neural damage without intervention.",
       "body_changes": [],
       "status_change": ""
     }
   ],
   "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KP-19 'Coda'"
-  ],
-  "registered_firearms": [
-    "Kang-Petrov Arms KP-19 'Coda'"
-  ],
-  "related_entities": [
-    "Pixel",
-    "The Shelf",
-    "The Pivot",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Aphelion",
-    "Chicago",
-    "Neural Palate",
-    "Atlas",
-    "Slagworks Industrial"
-  ],
-  "district": "West Town",
-  "genetic_ancestry": {
-    "East Asian": 43.6,
-    "Northern European": 39.9,
-    "Eastern European": 16.5
-  },
   "tags": [
     "person",
     "sentient",
     "human"
   ],
+  "physical_description": {
+    "heritage": "Eastern European / Pacific Islander (Corbin — Anglo-Slavic; Vasik — Czech-Polynesian)",
+    "height_cm": 180,
+    "weight_kg": 77,
+    "build": "Lean, ropey muscle — not gym-built, survival-built. Narrow hips, long arms, a frame designed for speed over power.",
+    "hair_color": "Dark brown, almost black",
+    "hair_style": "Short on the sides, longer on top, perpetually pushed back. Uneven — he cuts it himself with a blade.",
+    "hair_length": "Short",
+    "eye_color": "Grey-green — the left iris has a faint gold ring from the NeoCortex array's optic thread bleed",
+    "skin_tone": "Olive-tan, weathered. The kind of complexion that doesn't burn but doesn't glow either — it just endures.",
+    "complexion": "Clean-shaven. Faint acne scarring along the jawline. Skin texture slightly uneven around the temples where the electrode array interfaces subcutaneously.",
+    "distinguishing_marks": [
+      "Surgical scar — 4cm, behind the left ear, where the primary NeoCortex insertion port was cut. Poorly healed, keloid ridge.",
+      "Micro-scarring along both forearms — faint parallel lines from years of self-maintaining subcutaneous electrode threads with improvised tools.",
+      "Faded chemical burn on the right hand, palm side — pharmaceutical stabilizer spill. The skin is smooth and pale there, like wax.",
+      "No tattoos. No cosmetic augmentations. He does not decorate the hardware."
+    ],
+    "visible_augmentations": "None visible at first glance — the NeoCortex array is subcutaneous. On close inspection: faint trace lines under the skin at the temples, barely visible unless you know what to look for. The left pupil dilates fractionally slower than the right.",
+    "posture_movement": "Still when standing, efficient when moving. No wasted motion. Walks like someone who learned to navigate spaces where being noticed gets you killed. Hands stay loose and low. When he enters a room, his eyes track the corners before the people.",
+    "clothing_style": "Dark, functional, layered. Worn leather jacket over ballistic-weave underlayer. Cargo pants with reinforced knees. Boots that have been resoled three times. Nothing branded, nothing new. The katana rides across his back in a matte-black friction sheath."
+  },
+  "image_prompt": "Neo-noir male, 27, lean athletic build, olive-tan skin, dark brown hair short on sides longer on top pushed back, grey-green eyes with faint gold ring in left iris, faint surgical scar behind left ear, micro-scarring on forearms, worn dark leather jacket over tactical underlayer, cargo pants, resoled combat boots, carbon-black katana across back in matte friction sheath, standing in rain-slicked neon-lit alley, clinical stillness, hands loose at sides, eyes scanning corners, photorealistic, cinematic lighting, GLMZ 2200 aesthetic, no visible cybernetics, gritty urban environment, atmospheric fog, high detail --ar 2:3 --v 6",
+  "dalle3_prompt": "neo-noir cyberpunk enforcer, male 27, lean muscular build, olive-tan skin, rough and imperfect face, asymmetrical features, slightly crooked nose, uneven jawline, subtle under-eye fatigue, small facial scars on cheek and bridge of nose, faint stubble, tired but dangerous eyes, grey-green with faint gold ring in left iris\n\nhair: short dark brown, uneven, spiked but messy and clumped from rain, not styled, irregular hairline\n\nexpression: cold, focused, emotionally restrained, slightly hardened, not heroic, not attractive, grounded realism\n\noutfit: dark leather jacket with tactical padding and attachments, worn but maintained, partially open over fitted dark shirt, utility belt with holster, reinforced gloves, holding pistol low in right hand, carbon-black katana strapped across back\n\nwalking forward through narrow neon-lit alley, rain falling, droplets streaking through frame, subtle motion blur, shallow depth of field\n\nenvironment: dense cyberpunk alley, high-end district, teal and cyan dominant lighting with magenta accents, glowing signage and advertisements, clean but wet surfaces, reflective pavement, light fog, blurred background figures\n\nlighting: cinematic neon rim lighting, face partially shadowed but readable, sharp highlights, strong color contrast, volumetric light through rain, reflections across ground\n\nmood: controlled, dangerous, professional, corporate dystopia, sleek but hostile, capitalism-saturated environment\n\nstyle: photorealistic but grounded, NOT idealized, NOT symmetrical, NOT model-like, avoid beauty standards\n\ncamera: 50mm lens, eye-level, natural perspective, slight imperfections in skin texture, visible pores",
+  "genetic_ancestry": {
+    "East Asian": 43.6,
+    "Northern European": 39.9,
+    "Eastern European": 16.5
+  },
   "ancestry_detail": {
     "East Asian": {
       "Japanese": {
@@ -412,6 +398,5 @@
         "Romanian": 16.5
       }
     }
-  },
-  "tier": "1"
+  }
 }

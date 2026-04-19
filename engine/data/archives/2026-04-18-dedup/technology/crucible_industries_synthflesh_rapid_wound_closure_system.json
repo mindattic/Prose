@@ -1,0 +1,40 @@
+{
+  "id": "c9d1e3d221d7fd4627f544e3bdf8de1a",
+  "name": "Crucible Industries SynthFlesh Rapid Wound Closure System",
+  "brand_name": "Crucible",
+  "product_name": "SynthFlesh RWC-2",
+  "type": "technology",
+  "aliases": [],
+  "subcategory": "biotechnology",
+  "description": "The SynthFlesh RWC-2 is a man-portable bioprinting system that prints living tissue directly onto wounds in field conditions -- a pressurized canister containing a suspension of universal donor stem cells, growth factors, and a biocompatible scaffold matrix that, when sprayed onto damaged tissue, bonds with the wound surface and begins generating replacement skin, muscle, and connective tissue within minutes. The process is not true healing -- SynthFlesh produces a functional tissue patch that integrates with the body's own repair mechanisms, providing structural closure and infection prevention while the body's natural healing completes the repair underneath.\n\nCrucible developed SynthFlesh for battlefield medicine, where the need to close wounds quickly and keep combatants operational outweighs the need for surgical precision. A single RWC-2 canister contains enough material for approximately six major wound closures or twenty minor ones, and the application requires no medical training -- point at the wound, spray until covered, wait ninety seconds for the tissue matrix to bond. Arcturus field medics describe SynthFlesh as the most significant advancement in battlefield medicine since antibiotics, noting that it has reduced the combat mortality rate from penetrating trauma by approximately 40% in units equipped with it.\n\nThe technology's limitations are significant. SynthFlesh cannot repair organs, reconstruct bone, or address internal bleeding. The tissue it produces is functional but aesthetically poor -- healed SynthFlesh wounds leave distinctive smooth, slightly translucent patches that look and feel different from natural skin. Long-term studies have raised concerns about SynthFlesh tissue's tendency to continue growing after the wound has closed, producing keloid-like overgrowths that require surgical removal. And the universal donor stem cells occasionally trigger immune responses in recipients with certain genetic profiles, producing inflammation that can be worse than the original wound. Despite these limitations, SynthFlesh has become standard equipment for corporate security forces, underground combat medics, and anyone who expects to get shot and would prefer not to die from it.",
+  "tier_availability": "Tier 3+ (military/security); Tier 2+ (black market)",
+  "developers": [
+    "CRUCIBLE INDUSTRIES"
+  ],
+  "base_technologies": [
+    "Universal donor stem cell suspension",
+    "Biocompatible scaffold matrix",
+    "Field-deployable tissue bonding agents"
+  ],
+  "enables": [
+    "Rapid wound closure in field conditions without surgical training",
+    "40% reduction in penetrating trauma mortality",
+    "Continuous combatant operability despite injury",
+    "Emergency tissue repair for civilian trauma",
+    "Black-market battlefield medicine"
+  ],
+  "social_impact": "SynthFlesh has changed the economy of violence in GLMZ. Injuries that were previously debilitating or fatal are now survivable with a spray canister, which has made physical violence simultaneously less deadly and more common. The knowledge that SynthFlesh can close most wounds has lowered the psychological threshold for armed confrontation -- combatants are more willing to risk injury when they know a spray can fix it. Paradoxically, the technology that saves lives has made life cheaper by making damage more easily repaired.",
+  "story_hooks": [
+    "A batch of black-market SynthFlesh has been contaminated with cells that are not universal donor stem cells -- they are tailored cells designed to integrate with the recipient's body and then produce a specific protein. Someone is using battlefield medicine as a delivery system for an unknown biological agent.",
+    "A the Gray Zone combatant who has used SynthFlesh on over thirty wounds has developed tissue overgrowths that have begun to display properties not found in human tissue -- the accumulated SynthFlesh in their body is evolving, and the changes are accelerating."
+  ],
+  "tags": [
+    "technology",
+    "bioprinting",
+    "medical",
+    "crucible",
+    "battlefield",
+    "portable",
+    "wound-care"
+  ]
+}

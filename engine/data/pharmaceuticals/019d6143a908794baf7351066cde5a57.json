@@ -29,9 +29,9 @@
   "tier_availability": "Military only",
   "legality": "military_only",
   "street_price": "Φ8,000 per dose (black market)",
-  "cultural_context": "Strathex exists in the urban mythology of the Shelf and mid-tiers as the thing that makes military operators into something other than human. Runners speak of facing Strathex-dosed soldiers with the same register they discuss fighting combat chassis — as something categorically different. Black market doses circulate rarely and expensively, often pulled from dead soldiers. The Helix defense division denies the specific formula and the name. Among Tier 4-5 security professionals who know it's real, possession of a single dose represents both an extraordinary capability and an extraordinary risk.",
+  "cultural_context": "Strathex exists in the urban mythology of the Gray Zone and mid-tiers as the thing that makes military operators into something other than human. Runners speak of facing Strathex-dosed soldiers with the same register they discuss fighting combat chassis — as something categorically different. Black market doses circulate rarely and expensively, often pulled from dead soldiers. The Helix defense division denies the specific formula and the name. Among Tier 4-5 security professionals who know it's real, possession of a single dose represents both an extraordinary capability and an extraordinary risk.",
   "story_hooks": [
-    "A Shelf runner acquires a dose of Strathex from a dead soldier's kit and doesn't know what it is — they just know the soldier was frightening and this was in his chest pocket",
+    "A the Gray Zone runner acquires a dose of Strathex from a dead soldier's kit and doesn't know what it is — they just know the soldier was frightening and this was in his chest pocket",
     "Helix's military contract division has lost a shipment of Strathex — six doses unaccounted for — and is running a covert recovery operation that looks, from the outside, like a series of murders",
     "A crew is hired to hit a target who they're told is corporate security; they arrive to find someone dosed with Strathex, and now they need to survive long enough to understand why someone burned a military-grade asset on what looked like a routine job"
   ],
@@ -51,14 +51,12 @@
     "pain",
     "market",
     "drug",
-    "stimulant",
-    "shelf"
+    "stimulant"
   ],
   "parent_corponation": "",
   "related_entities": [
     "Helix Biosystems",
     "Lazarus LX-2 'Lab Rat'",
-    "Sergeant Major Yuki Tanaka",
-    "The Shelf"
+    "Sergeant Major Yuki Tanaka"
   ]
 }

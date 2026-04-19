@@ -3,7 +3,7 @@
   "name": "Patchskin Drift Coat",
   "type": "apparel",
   "category": "outfit",
-  "description": "A long, dramatic coat that is less a single garment than a living document of the Shelf — every panel a different salvaged fabric, stitched and fused into a floor-length silhouette that somehow holds together. Dark panels of industrial rubber sheeting alternate with sections of waxed sailcloth, synthetic suede in faded ochre, and several squares of what was once a high-visibility vest, now so oxidized it reads as deep amber rather than yellow. The lining is a quilt of mismatched thermal emergency blankets, crinkled and reflective on the inside, visible through the wide lapels. The coat closes with a mismatched run of fasteners — two toggles, three large snaps, and a length of paracord threaded through grommets at the center. Beneath it, a long-sleeve thermal undershirt in off-white sits tucked into straight-cut trousers in deep charcoal that have been hemmed unevenly — one leg slightly shorter than the other after a repair. The trouser knees are patched with iron-on synthetic leather. Feet are in rubber overshoes — bright orange, institutional, clearly salvaged from a flood-response kit — worn over a thin pair of insulated socks. On the head, a deep-crown beanie in black wool-synth, hand-darned at the brim with mismatched thread in three colors. Hands are bare except for a single fingerless compression glove on the left hand. One ear carries a salvaged audio driver — a small speaker housing repurposed as an earring, trailing a thin wire that disappears into the coat's collar.",
+  "description": "A long, dramatic coat that is less a single garment than a living document of the Gray Zone — every panel a different salvaged fabric, stitched and fused into a floor-length silhouette that somehow holds together. Dark panels of industrial rubber sheeting alternate with sections of waxed sailcloth, synthetic suede in faded ochre, and several squares of what was once a high-visibility vest, now so oxidized it reads as deep amber rather than yellow. The lining is a quilt of mismatched thermal emergency blankets, crinkled and reflective on the inside, visible through the wide lapels. The coat closes with a mismatched run of fasteners — two toggles, three large snaps, and a length of paracord threaded through grommets at the center. Beneath it, a long-sleeve thermal undershirt in off-white sits tucked into straight-cut trousers in deep charcoal that have been hemmed unevenly — one leg slightly shorter than the other after a repair. The trouser knees are patched with iron-on synthetic leather. Feet are in rubber overshoes — bright orange, institutional, clearly salvaged from a flood-response kit — worn over a thin pair of insulated socks. On the head, a deep-crown beanie in black wool-synth, hand-darned at the brim with mismatched thread in three colors. Hands are bare except for a single fingerless compression glove on the left hand. One ear carries a salvaged audio driver — a small speaker housing repurposed as an earring, trailing a thin wire that disappears into the coat's collar.",
   "tier_association": "Tier 1",
   "materials": [
     "industrial rubber sheeting",
@@ -19,11 +19,11 @@
     "salvaged audio driver housing"
   ],
   "functionality": "Patchwork rubber and waxed panels provide acid-rain and moisture resistance. Thermal blanket lining retains body heat significantly in cold industrial zones. Wide lapels and deep pockets (four interior, two exterior) store survival essentials. Rubber overshoes add waterproofing over worn footwear. Beanie provides head warmth. Salvaged audio driver earring may still receive low-frequency signals on certain deprecated broadcast bands.",
-  "what_it_says": "There is unmistakable style here — not despite the poverty but through it. The coat is a statement: I am still here, I am still building, I am still making something out of nothing. The patchwork is too deliberate to be purely accidental. This person has an eye, even if they have nothing else. On the Shelf, that coat is recognized. People know it, and by extension they know the person wearing it.",
+  "what_it_says": "There is unmistakable style here — not despite the poverty but through it. The coat is a statement: I am still here, I am still building, I am still making something out of nothing. The patchwork is too deliberate to be purely accidental. This person has an eye, even if they have nothing else. On the Gray Zone, that coat is recognized. People know it, and by extension they know the person wearing it.",
   "worn_by": [
-    "Shelf creatives and makers",
+    "the Gray Zone creatives and makers",
     "community figures and informal leaders",
-    "people who've been on the Shelf long enough to develop a signature",
+    "people who've been in the Gray Zone long enough to develop a signature",
     "wanderers and drifters with deep local knowledge"
   ],
   "manufacturer": "Entirely self-constructed over years; ongoing project",
@@ -31,7 +31,7 @@
   "aug_compatible": false,
   "gene_compatible": true,
   "story_hooks": [
-    "The coat is locally famous enough that someone has offered to buy it — a Tier 4 fashion collector who sees 'authentic Shelf art' — and the offer is more money than the wearer has ever seen, but the coat IS them.",
+    "The coat is locally famous enough that someone has offered to buy it — a Tier 4 fashion collector who sees 'authentic the Gray Zone art' — and the offer is more money than the wearer has ever seen, but the coat IS them.",
     "The salvaged audio driver earring picks up a signal it shouldn't — a repeating encrypted burst on a frequency that was supposed to go dark three years ago.",
     "One of the fabric panels in the coat is cut from the uniform of a corponation employee who disappeared — and a corporate investigator just recognized it."
   ],
@@ -54,7 +54,6 @@
     "Nodar Kuznetsov-Adu",
     "Tessera Suppression Lattice SL-3 'Quilt'",
     "The Pure Hand",
-    "The Shelf",
     "Veslemøy Achebe-Tursynov"
   ],
   "physical_description": {
@@ -76,7 +75,7 @@
       "Salvaged audio driver repurposed as earring with thin wire trailing into coat collar"
     ],
     "tier_indicator": "Tier 5 / Sub-grade salvage culture. This is not wealth—this is necessity elevated to aesthetic. Every material is reclaimed, every repair is visible and intentional. A Tier 1 corpo would see this as unfinished; the wearer sees it as a living record.",
-    "cultural_context": "Identifies the wearer as Shelf-dweller or ungoverned-zone nomad. Someone who operates outside formal supply chains and has made a philosophy out of salvage. The visible repairs and mismatches signal expertise in survival, not poverty—this is someone who has learned to make systems work with what's available. Possibly involved in informal networks, shelter-rotation, or off-grid communities. Not military (too personal), not corporate (too improvised), not street-gang (too individualized). This is autonomous survival aesthetic.",
+    "cultural_context": "Identifies the wearer as the Gray Zone-dweller or ungoverned-zone nomad. Someone who operates outside formal supply chains and has made a philosophy out of salvage. The visible repairs and mismatches signal expertise in survival, not poverty—this is someone who has learned to make systems work with what's available. Possibly involved in informal networks, shelter-rotation, or off-grid communities. Not military (too personal), not corporate (too improvised), not street-gang (too individualized). This is autonomous survival aesthetic.",
     "condition_typical": "Permanently in a state of active repair and wear. The coat is described as an 'ongoing project,' so the wearer expects new patches, new stitching, new fasteners appearing regularly. Nothing about this garment is meant to be pristine or preserved—it's meant to be used, patched, and used again. The uneven trouser hem suggests recent emergency repair. This is clothing that proves its worth through visible use."
   },
   "image_prompt": "Neo-noir fashion photograph of a tall, lean figure wearing a floor-length patchwork coat constructed from industrial rubber, waxed sailcloth, faded ochre synthetic suede, and oxidized amber high-visibility panels. The coat's wide lapels reveal crinkled silver emergency blanket lining. Mismatched fasteners (toggles, snaps, paracord) run down the center. Beneath: off-white thermal undershirt tucked into uneven charcoal trousers with synthetic leather knee patches. Bright orange institutional overshoes. Black wool-synth beanie with visible three-color hand-darning at the brim. Single fingerless compression glove on left hand. Small salvaged audio driver earring on one ear with trailing wire. Dark moody lighting emphasizing texture and patching. Urban industrial backdrop—concrete, shadow, neon glow. Subject standing in three-quarter pose, coat fabric catching light to reveal layered materials. The overall mood is resilient, autonomous, and thoroughly worn. Shot from mid-thigh up. --ar 2:3 --v 6",

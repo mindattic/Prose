@@ -37,5 +37,14 @@
     "The Sullen Reach",
     "Tidal Meridian",
     "VitaCore HydraSync Fluid Balance Monitor"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z9"
+    ],
+    "primaryZone": "Z9",
+    "lakefrontAccess": true,
+    "description": "Platform farm network extending up to 15 kilometers from the Sheboygan shoreline, Zone 9. Largest aquaculture installation in the Great Lakes, producing approximately 60% of the Corridor's farmed fish and significant algae-derived protein supply.",
+    "grayZoneRelationship": "Supplies food to Zone 9 Gray Zone communities at below-market rates under bloc access agreements — a calculated investment in shoreline corridor goodwill."
+  }
 }

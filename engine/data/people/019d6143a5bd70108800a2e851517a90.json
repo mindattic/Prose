@@ -9,8 +9,8 @@
   "role": "airship drifter, seasonal worker, minor smuggler's runner",
   "age": 16,
   "status": "active",
-  "location": "Waukegan Industrial Shelf — sleeps in the cargo bays of docked airships when they can, otherwise the shelf's lower maintenance tunnels, near Wacker and State",
-  "description": "Ulf Kristjánsson-Ingebrigtsen is small for their age, wiry, with the kind of stillness that comes from learning early that drawing attention is expensive. Their skin is warm brown, their hair a short natural cloud they dye the tips bioluminescent green when they can afford the pigment drops — which is not often. They have no mods beyond the green tips and a single geneware cat ear on the left side, the right ear perfectly human, because the second ear was a package deal they could only afford half of. They find this funny. They carry a cracked data-tablet in a waterproof sleeve and a folding tool roll with maintenance implements inside.\n\nUlf Kristjánsson-Ingebrigtsen was born on an airship — literally, between ports, to parents who were themselves drifters. Their mother is somewhere on the southern hyperlane circuit; they parted ways two years ago in circumstances they don't fully explain. They have been working the Waukegan Shelf since, picking up day labor in cargo loading, airship maintenance, and occasionally running small packages for traders who don't ask them to know what's inside. They are not naive — they know what some of those packages probably are — but they have developed a careful moral accounting system: nothing that hurts people who didn't choose it. They are teaching themselves to read Ferrogate maintenance schematics from a salvaged manual, with the ambition of becoming a licensed airship tech before they turn twenty.",
+  "location": "Waukegan Industrial the Gray Zone — sleeps in the cargo bays of docked airships when they can, otherwise the Gray Zone's lower maintenance tunnels, near Wacker and State",
+  "description": "Ulf Kristjánsson-Ingebrigtsen is small for their age, wiry, with the kind of stillness that comes from learning early that drawing attention is expensive. Their skin is warm brown, their hair a short natural cloud they dye the tips bioluminescent green when they can afford the pigment drops — which is not often. They have no mods beyond the green tips and a single geneware cat ear on the left side, the right ear perfectly human, because the second ear was a package deal they could only afford half of. They find this funny. They carry a cracked data-tablet in a waterproof sleeve and a folding tool roll with maintenance implements inside.\n\nUlf Kristjánsson-Ingebrigtsen was born on an airship — literally, between ports, to parents who were themselves drifters. Their mother is somewhere on the southern hyperlane circuit; they parted ways two years ago in circumstances they don't fully explain. They have been working the Waukegan the Gray Zone since, picking up day labor in cargo loading, airship maintenance, and occasionally running small packages for traders who don't ask them to know what's inside. They are not naive — they know what some of those packages probably are — but they have developed a careful moral accounting system: nothing that hurts people who didn't choose it. They are teaching themselves to read Ferrogate maintenance schematics from a salvaged manual, with the ambition of becoming a licensed airship tech before they turn twenty.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -21,7 +21,7 @@
       "ghost": 0.3
     },
     "core_fears": [
-      "Being stuck on the Shelf forever, watching the ships leave without them",
+      "Being stuck on the Gray Zone forever, watching the ships leave without them",
       "That their mother is dead and they will never know for certain"
     ],
     "core_desires": [
@@ -58,7 +58,7 @@
   ],
   "narrative_function": "Ground-level view of youth survival in transit spaces; can provide access to airship cargo schedules and docking information; represents the generation growing up entirely outside corporate structure.",
   "augmentations": "Geneware: one cat ear (left side only, the matching right never installed); bioluminescent hair tips (green, intermittent — needs pigment drops to maintain)",
-  "daily_life": "Wakes early to queue for day labor postings at the Shelf's loading bay boards; afternoons spent studying salvaged technical manuals; evenings at the communal fire near Dock Seven where airship crews sometimes share food.",
+  "daily_life": "Wakes early to queue for day labor postings at the Gray Zone's loading bay boards; afternoons spent studying salvaged technical manuals; evenings at the communal fire near Dock Seven where airship crews sometimes share food.",
   "affiliation": "Loosely connected to the airship drifter circuit; no formal caravan",
   "uses_facets": false,
   "narration_voice": "",
@@ -154,7 +154,7 @@
     "Risk Taker": 0.9
   },
   "operating_territory": {
-    "home_turf": "Waukegan Industrial Shelf",
+    "home_turf": "Waukegan Industrial the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -170,7 +170,6 @@
   "related_entities": [
     "Canopy Station Nine",
     "Ferrogate Transit",
-    "The Shelf",
     "The Meridian Drift",
     "The Waukegan Industrial Shelf",
     "Circuit",

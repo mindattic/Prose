@@ -46,7 +46,7 @@
   "connections": {
     "adjacent_to": [
       "Deep Underworld fissure network, south of Depth 12",
-      "The deep geological formation beneath the Shelf district"
+      "The deep geological formation beneath the Gray Zone district"
     ],
     "exits": [
       {
@@ -99,5 +99,6 @@
     "Bathysphere Networks",
     "Iowan Behemoth Agricultural Platform",
     "Briar Hwang"
-  ]
+  ],
+  "controllingCorponation": null
 }

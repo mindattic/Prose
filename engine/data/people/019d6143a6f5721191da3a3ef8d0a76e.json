@@ -10,7 +10,7 @@
   "age": 47,
   "status": "active",
   "location": "University Spine, Deepwell Station archival annex, near sub-level access near LaSalle and Congress",
-  "description": "Nova Delgado-Touré-Boateng is a broad-shouldered man who has gone soft in the middle from years of sedentary archival work, with warm brown skin and close-cut hair that has gone gray at the temples in a way he finds interesting rather than alarming. He keeps his irises modded to a deep violet — a choice from his twenties he still actively likes — and his hands are always moving when he talks, tracing patterns in the air that correspond to phonemic structures or grammar trees only he can see. He has retractive claws on his right hand only, a half-finished geneware modification he stopped partway through when the artist moved districts; he has been meaning to complete it for eight years.\n\nHe studies languages that did not exist before GLMZ — the creoles that emerged on the Shelf, the signal-argot that E.L.F.s appear to use between devices, the gestural metalanguage that developed among deaf communities in the lower transit corridors without any central design. He approaches these systems with the devotion of someone who believes language is the truest form of evidence about how people actually live, not how they are recorded as living. He is mild-mannered in ways that make people underestimate how deeply unusual his research is, and he has built a quiet career on the gap between what institutions think he studies and what he actually studies.",
+  "description": "Nova Delgado-Touré-Boateng is a broad-shouldered man who has gone soft in the middle from years of sedentary archival work, with warm brown skin and close-cut hair that has gone gray at the temples in a way he finds interesting rather than alarming. He keeps his irises modded to a deep violet — a choice from his twenties he still actively likes — and his hands are always moving when he talks, tracing patterns in the air that correspond to phonemic structures or grammar trees only he can see. He has retractive claws on his right hand only, a half-finished geneware modification he stopped partway through when the artist moved districts; he has been meaning to complete it for eight years.\n\nHe studies languages that did not exist before GLMZ — the creoles that emerged in the Gray Zone, the signal-argot that E.L.F.s appear to use between devices, the gestural metalanguage that developed among deaf communities in the lower transit corridors without any central design. He approaches these systems with the devotion of someone who believes language is the truest form of evidence about how people actually live, not how they are recorded as living. He is mild-mannered in ways that make people underestimate how deeply unusual his research is, and he has built a quiet career on the gap between what institutions think he studies and what he actually studies.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -47,15 +47,15 @@
     ],
     "example_lines": [
       "'The E.L.F.s are not being religious when they accept offerings. Or rather — that distinction, religious versus functional, is one we invented and they are not obligated to observe it. Which is to say, the offerings work, and we do not fully know why, and that is more interesting than either explanation.'",
-      "'Every language is a record of what a community had to survive. What the Shelf creoles are telling you, if you know how to listen, is a complete history of what those tiers have been through. Which is quite a lot.'"
+      "'Every language is a record of what a community had to survive. What the Gray Zone creoles are telling you, if you know how to listen, is a complete history of what those tiers have been through. Which is quite a lot.'"
     ]
   },
   "relationships": [],
   "story_hooks": [
     "The E.L.F. distress signal he has decoded creates an urgent clock — he needs help verifying his interpretation and then needs someone to act on it before the Palladian update rolls out",
-    "He is approached by a community in the lower Shelf transit corridors asking him to document their gestural metalanguage before a corridor renovation destroys the physical context in which it evolved"
+    "He is approached by a community in the Gray Zone transit corridors asking him to document their gestural metalanguage before a corridor renovation destroys the physical context in which it evolved"
   ],
-  "narrative_function": "Translation resource and knowledge broker — he is the character most likely to be able to interpret E.L.F. behavior, Shelf creole communications, or unusual signal patterns. He can be brought in to decode something no one else can read, and his Palladian connection creates potential complications.",
+  "narrative_function": "Translation resource and knowledge broker — he is the character most likely to be able to interpret E.L.F. behavior, the Gray Zone creole communications, or unusual signal patterns. He can be brought in to decode something no one else can read, and his Palladian connection creates potential complications.",
   "augmentations": "Violet patterned irises (cosmetic mod, deep violet with radial fracture pattern). Retractable claws, right hand only (geneware, incomplete modification). Acoustic enhancement implant in both ears, calibrated for infrasonic and ultrasonic frequency ranges to capture the full spectrum of E.L.F. signal emissions.",
   "daily_life": "He spends mornings in the annex with headphones and signal logs, mapping E.L.F. communication patterns from overnight device traffic. Afternoons he teaches and advises graduate students. He has a standing weekly dinner with a group of colleagues that has been running for eleven years and which he considers the most important social institution in his life.",
   "affiliation": "University Spine — Department of Linguistics and Communication Systems; informal consulting relationship with Palladian (they use his E.L.F. communication analysis to design better device UI, which he finds uncomfortable but accepts)",
@@ -203,7 +203,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "First paper on emergent Shelf creole syntax; attracted both academic attention and one angry letter from a Tessera communications officer",
+      "event": "First paper on emergent the Gray Zone creole syntax; attracted both academic attention and one angry letter from a Tessera communications officer",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -235,7 +235,6 @@
     "Deepwell Station",
     "Ashford Signal",
     "Palladian Construction",
-    "The Shelf",
     "GLMZ",
     "Lacuna Genomics",
     "SynapTech IrisBloom Ocular Color Modulator",
@@ -265,7 +264,7 @@
     "posture_movement": "Sits slightly forward when focused, with shoulders rounded inward. Hands move constantly during speech — tracing complex patterns in the air with fingers and wrists, mapping out grammar structures and phonemic relationships that only he can see. These hand movements are precise and purposeful, almost ritualistic. Walks with deliberate pace, unhurried. Has developed a habit of tilting his head slightly when listening, as if his acoustic implants are actively tuning.",
     "clothing_style": "Tier 2-3 hybrid: University-issue smart-weave clothing mixed with personal pieces. Usually wears loose linen or cotton shirts (sleeves rolled to mid-forearm, showing the incomplete right-hand modification) in neutral tones — cream, gray, soft blues. Trousers are practical, often University-branded. Jacket is a well-worn charcoal wool blazer with reinforced elbows, suggesting years of leaning on archival terminals. Carries a worn leather satchel with visible signal-logging equipment. Shoes are practical and broken-in. Overall appearance suggests comfort with institutional affiliation but resistance to full corporate compliance — he looks professorial rather than corporate, invested in his work rather than his appearance."
   },
-  "image_prompt": "Nova Delgado-Touré-Boateng, a 183cm linguist in 2226 neo-noir Great Lakes Metropolitan Zone. Warm deep-brown skin with complex golden undertones reflecting mixed Sub-Saharan African, Latin American, Southeast Asian and Eastern European heritage. Dark brown hair with silver at temples, close-cropped. Striking deep violet cosmetic iris modification with radial fracture pattern. Strong prominent cheekbones and jaw, lined face showing concentration, clean-shaven. Right hand visible with incomplete dark gray-black retractive claw apparatus showing mechanical edges and junction scarring. Small faded Shelf-Creole tattoo on left wrist. Fine scar along left temple. Wearing rolled-sleeve cream linen shirt over practical University-branded trousers, charcoal wool blazer with reinforced elbows, carrying worn leather signal-logging satchel. Sitting slightly forward with rounded shoulders at archival terminal in dim institutional annex lighting. Hands gesturing expressively in air, mapping phonemic patterns. Tired but sharp expression. Over-ear acoustic enhancement headphones visible. Professorial rather than corporate aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Nova Delgado-Touré-Boateng, a 183cm linguist in 2226 neo-noir Great Lakes Metropolitan Zone. Warm deep-brown skin with complex golden undertones reflecting mixed Sub-Saharan African, Latin American, Southeast Asian and Eastern European heritage. Dark brown hair with silver at temples, close-cropped. Striking deep violet cosmetic iris modification with radial fracture pattern. Strong prominent cheekbones and jaw, lined face showing concentration, clean-shaven. Right hand visible with incomplete dark gray-black retractive claw apparatus showing mechanical edges and junction scarring. Small faded the Gray Zone-Creole tattoo on left wrist. Fine scar along left temple. Wearing rolled-sleeve cream linen shirt over practical University-branded trousers, charcoal wool blazer with reinforced elbows, carrying worn leather signal-logging satchel. Sitting slightly forward with rounded shoulders at archival terminal in dim institutional annex lighting. Hands gesturing expressively in air, mapping phonemic patterns. Tired but sharp expression. Over-ear acoustic enhancement headphones visible. Professorial rather than corporate aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 46.2,
     "Eastern European": 18.2,

@@ -3,7 +3,7 @@
   "type": "place",
   "name": "Irongate Flats",
   "aliases": [],
-  "description": "Irongate Flats occupies a compressed strip of reclaimed industrial land along the Chicago River's northern fork, sandwiched between the elevated rail infrastructure of an active Carrion Logistics freight line overhead and a retaining wall that separates it from the Shelf's lower drainage channels below. The neighborhood grew organically from a cluster of heavy equipment storage yards and machine shops that never fully cleared out after the industrial consolidations of the 2130s, and the result is a dense, low-rise district that feels structurally halfway between a permanent settlement and a long-term encampment — corrugated metal facades bolted onto older brick structures, rooftop additions built from salvaged freight containers, covered walkways strung between buildings to shelter the narrow streets from the constant rain of rust and grit shaken loose by freight trains passing overhead.\n\nThe approximately four thousand people who live in Irongate Flats are predominantly Tier 3 and Tier 4 workers in the industrial and logistics trades — welders, fabricators, machine diagnosticians, BCI-assisted heavy equipment operators, and the considerable support infrastructure that keeps them housed, fed, medicated, and functional. There is a rough competence to daily life here that outsiders sometimes mistake for roughness of another kind: people know their tools, know their neighbors, and know the difference between a problem they can fix themselves and one that requires help. The local economy is substantially cash-equivalent, with most transactions conducted through a neighborhood-managed Diaspora sub-mesh that runs parallel to the main network and keeps local transaction records out of corponation analytics.\n\nThe freight line overhead is both the district's primary liability and its primary economic driver. Carrion Logistics pays a nominal easement fee to a neighborhood association that uses the funds to maintain the retaining wall infrastructure and the covered walkways. In exchange, Carrion maintains a hands-off policy toward the community that represents a meaningful departure from the corponation's usual practices — a relationship maintained through careful cultivation and a shared understanding that the most experienced equipment specialists in the region live directly below the freight line and keep it running smoothly.",
+  "description": "Irongate Flats occupies a compressed strip of reclaimed industrial land along the Chicago River's northern fork, sandwiched between the elevated rail infrastructure of an active Carrion Logistics freight line overhead and a retaining wall that separates it from the Gray Zone's lower drainage channels below. The neighborhood grew organically from a cluster of heavy equipment storage yards and machine shops that never fully cleared out after the industrial consolidations of the 2130s, and the result is a dense, low-rise district that feels structurally halfway between a permanent settlement and a long-term encampment — corrugated metal facades bolted onto older brick structures, rooftop additions built from salvaged freight containers, covered walkways strung between buildings to shelter the narrow streets from the constant rain of rust and grit shaken loose by freight trains passing overhead.\n\nThe approximately four thousand people who live in Irongate Flats are predominantly Tier 3 and Tier 4 workers in the industrial and logistics trades — welders, fabricators, machine diagnosticians, BCI-assisted heavy equipment operators, and the considerable support infrastructure that keeps them housed, fed, medicated, and functional. There is a rough competence to daily life here that outsiders sometimes mistake for roughness of another kind: people know their tools, know their neighbors, and know the difference between a problem they can fix themselves and one that requires help. The local economy is substantially cash-equivalent, with most transactions conducted through a neighborhood-managed Diaspora sub-mesh that runs parallel to the main network and keeps local transaction records out of corponation analytics.\n\nThe freight line overhead is both the district's primary liability and its primary economic driver. Carrion Logistics pays a nominal easement fee to a neighborhood association that uses the funds to maintain the retaining wall infrastructure and the covered walkways. In exchange, Carrion maintains a hands-off policy toward the community that represents a meaningful departure from the corponation's usual practices — a relationship maintained through careful cultivation and a shared understanding that the most experienced equipment specialists in the region live directly below the freight line and keep it running smoothly.",
   "atmosphere": {
     "sights": [
       "Covered streets in perpetual industrial twilight, lit by strings of work lights and neon business signage in a dozen languages",
@@ -48,7 +48,7 @@
   ],
   "connections": {
     "adjacent_to": [
-      "The Shelf",
+      "the Gray Zone",
       "The South Side",
       "The Stockyard",
       "The Rust Circuit"
@@ -104,8 +104,7 @@
     "rights",
     "train",
     "shelter",
-    "food",
-    "shelf"
+    "food"
   ],
   "related_entities": [
     "Arcturus Defense Solutions",
@@ -120,5 +119,7 @@
     "The Pure Hand",
     "Arcturus Defense Solutions ETF-3 'Mantis'",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

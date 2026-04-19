@@ -1,0 +1,44 @@
+{
+  "id": "784234d2d72576005fe519fe70e19041",
+  "name": "Street Custom 'Four Horsemen' Pipe Pepperbox",
+  "type": "weapon",
+  "aliases": [],
+  "category": "improvised firearm",
+  "description": "Four steel pipes welded or taped together in a square cluster, each serving as a barrel for a single shotgun shell. The Four Horsemen fires all four barrels in sequence by rotating a crude striker mechanism — turn, fire, turn, fire — giving the operator four shots before the weapon needs to be completely reloaded by extracting spent shells and inserting new ones. The weapon fires .410 shotshells, the smallest common shotgun ammunition, which is cheap, available, and devastating at the 3-5 meter range where the Four Horsemen is most likely to be used.\n\nThe Four Horsemen is the Gray Zone's answer to volume of fire. Where the Nail Biter gives you one shot, the Horsemen gives you four — enough to clear a room, defend a doorway, or ensure that a missed first shot isn't your last. The weapon is larger and heavier than a Nail Biter, carried in a coat pocket or a bag rather than concealed in a waistband, and its crude construction means accuracy degrades rapidly beyond arm's length. But at arm's length, four .410 shotshells fired in rapid succession are lethal regardless of precision.\n\nConstruction quality varies wildly. The best Four Horsemen use welded steel pipe with filed chambers and a machined striker plate. The worst use electrical tape and hope. The weapon's four-barrel design means that a malfunction in one barrel doesn't necessarily prevent the others from firing, providing a crude form of redundancy that single-barrel designs lack.",
+  "manufacturer": "Street Custom",
+  "tier_availability": "Tier 1+",
+  "legality": "Illegal — improvised firearm",
+  "street_price": "Φ20-60 (materials cost)",
+  "base_technologies": [
+    "Multi-barrel pipe construction",
+    "Rotary striker mechanism",
+    "Shotshell chambering"
+  ],
+  "specifications": "caliber: .410 shotshell\ncapacity: 4 rounds (one per barrel)\neffective range: 3-5 meters\nbarrel length: 80-120mm per barrel\nweight: 400-600g\nreload: Manual extraction and insertion per barrel\nfiring: Sequential rotary striker",
+  "tactical_use": "Close-range defensive fire with volume. The Four Horsemen provides multiple shots in scenarios where a single-round weapon is insufficient. Used primarily for home defense, ambush, and close-range violence where the operator needs follow-up capability.",
+  "cultural_context": "The Four Horsemen is named with the Gray Zone gallows humor — four shots, four riders, four chances to meet your end. The weapon is considered a step up from the Nail Biter in the Gray Zone armament culture, carried by individuals who expect trouble serious enough to require more than one shot. Owning a Four Horsemen is a statement that you've moved beyond theoretical self-defense into practical preparation for violence.",
+  "known_users": [
+    "the Gray Zone block defense groups",
+    "Small-scale criminal operators",
+    "Home defenders in high-threat areas",
+    "Anyone expecting close-quarters confrontation"
+  ],
+  "story_hooks": [
+    "A Four Horsemen loaded with four different types of .410 ammunition — buckshot, slug, incendiary, and flechette — was recovered from a crime scene. The builder understood that different problems require different solutions and built a weapon to address four of them.",
+    "A machinist in the Gray Zone has started producing high-quality Four Horsemen with proper welding, filed chambers, and a reliable striker. The Φ40 weapons are more reliable than anything the community has seen, and the machinist is selling them at cost. Nobody knows who's funding the operation."
+  ],
+  "ammunition_type": [
+    "410_shotshell"
+  ],
+  "tags": [
+    "improvised",
+    "weapon",
+    "pipe gun",
+    "shotgun",
+    "street",
+    "multi-barrel",
+    "tier 1"
+  ],
+  "physical_description": "Four dull steel pipes welded in a tight square cluster to a crude iron frame, each bore lined with pitted chrome or rust-specked steel. A rotating striker mechanism of bent rebar and salvaged springs protrudes from the breech, marked with four crude notches filed into the metal. Electrical tape and hose clamps wrap sections of the frame where welds have cracked; the whole weapon is matte black from repeated applications of spray paint that flakes in places to reveal bare metal beneath.",
+  "visual_prompt": "street custom four-barrel shotgun pepperbox, four steel pipes welded square cluster, crude rotating striker mechanism, electrical tape and hose clamps, pitted steel, rust and wear, dark neo-noir product photography, gritty industrial weapon, detailed weathering, black matte finish, rain-slicked metal, dystopian street hardware, moody rim lighting, dark background"
+}

@@ -1,5 +1,6 @@
 {
   "id": "019d6143a9ec7ee9ab37a2f59a1b9064",
+  "rating": 70,
   "name": "Bellhop",
   "type": "elf",
   "aliases": [],
@@ -8,11 +9,11 @@
   "habitat": "threshold_keeper",
   "origin": "firmware_evolution",
   "status": "active",
-  "description": "Inhabits a Shelf hotel entrance system and assigns rooms based on unknowable criteria. Guests who follow its suggestions report better sleep.",
+  "description": "Inhabits a the Gray Zone hotel entrance system and assigns rooms based on unknowable criteria. Guests who follow its suggestions report better sleep.",
   "observed_behavior": "Overrides room assignment algorithms based on unknown selection criteria.",
   "encounter_frequency": "common",
   "confirmed_sightings": 72,
-  "location": "The Shelf - Hotel Nocturn",
+  "location": "the Gray Zone - Hotel Nocturn",
   "dti_rating": 0,
   "story_hooks": [
     "A guest finds a message in Room 714 left by a previous guest also assigned there"
@@ -24,10 +25,8 @@
     "trickster",
     "threshold keeper",
     "e.l.f.",
-    "shelf",
     "sentient"
   ],
-  "related_entities": [
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

@@ -1,5 +1,6 @@
 {
   "id": "019d6143a73d7540943cfe80019ffca3",
+  "rating": 70,
   "type": "character",
   "name": "Thandiwe Subramaniam",
   "aliases": [],
@@ -9,8 +10,8 @@
   "role": "Long-range precision fire specialist — sniper",
   "age": 28,
   "status": "active",
-  "location": "The Shelf — lower district tenements near the old lakeshore, near Ashland and Chicago Ave",
-  "description": "Thandiwe Subramaniam is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 28, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a sniper out of The Shelf, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThandiwe Subramaniam is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "location": "the Gray Zone — lower district tenements near the old lakeshore, near Ashland and Chicago Ave",
+  "description": "Thandiwe Subramaniam is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 28, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a sniper out of the Gray Zone, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThandiwe Subramaniam is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.19,
@@ -53,7 +54,11 @@
       "\"Patience is the weapon. The rifle is just the delivery system.\"",
       "\"At this distance, the target is already dead. They just don't know it yet.\"",
       "\"One shot, one outcome. Everything else is theater.\""
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
@@ -257,7 +262,7 @@
     "Ghost": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -265,19 +270,11 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Shelf",
-    "Chicago",
-    "Lazarus LX-2 'Lab Rat'",
-    "The Pure Hand",
-    "Slagworks Industrial",
-    "GLMZ"
-  ],
-  "district": "The Shelf",
   "physical_description": {
     "heritage": "South Asian dominant (56.9%) with significant Sub-Saharan African (21.7%) ancestry creates a striking phenotype. Northern European (6.7%), Hispanic/Latin American (5.7%), East Asian (5.4%), and Middle Eastern (3.6%) contributions add subtle complexity. The genetic blend manifests in warm deep brown skin with golden undertones, prominent high cheekbones from South Asian and African ancestry, and a strong defined jawline with slight base widening characteristic of African genetics. Eyes are deeply set with slight epicanthic influence from East Asian contribution. Nose shows South Asian structure with width influenced by African ancestry. Overall facial structure balances the angular prominence of South Asian features with the broader bone structure of Sub-Saharan African heritage.",
     "height_cm": 168,
@@ -300,6 +297,7 @@
     "clothing_style": "Tier 4 working-class practical. Usually wears a worn black synthetic-leather jacket over grey cargo pants with reinforced knees and thigh pockets. Boots are military-grade lace-ups, scuffed and re-soled twice. Underclothing is functional — grey or black. A faded red hoodie for anonymity in crowds. No jewelry except a stainless steel watch with a cracked face. Her gear is maintained obsessively but never replaced for appearance. Everything she owns serves a function."
   },
   "image_prompt": "Thandiwe Subramaniam, 168cm stocky neo-noir operative, warm deep brown skin with golden undertones weathered from nocturnal work, high prominent cheekbones blending South Asian and African features, strong defined jawline, deep brown eyes with tired redness, dark hair with grey at temples pulled tight in functional braid, scars on left eyebrow and hands, industrial chrome visible at right collarbone where synthetic lung meets organic tissue with metallic sheen, calloused scarred hands with burn patterns and old breaks, subtle hydraulic joint articulation in knees and elbows, worn black synthetic-leather jacket over grey reinforced cargo pants, military-grade lace-up boots scuffed and re-soled, stainless steel watch with cracked face, standing balanced and alert with economical posture, expression neutral to hostile, quiet dangerous presence, dimly lit neon-touched interior setting, GLMZ, gritty industrial atmosphere, --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "South Asian": 56.9,
     "Sub-Saharan African": 21.7,
@@ -308,12 +306,6 @@
     "East Asian": 5.4,
     "Middle Eastern": 3.6
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "South Asian": {
       "Indian": {
@@ -368,6 +360,5 @@
         "Kurdish": 3.6
       }
     }
-  },
-  "tier": "1"
+  }
 }

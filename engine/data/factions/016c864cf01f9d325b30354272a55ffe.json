@@ -4,10 +4,10 @@
   "name": "The Patchwork Kitchen",
   "aliases": [],
   "motto": "At this table, you're not a tier number. You're hungry, and there's food.",
-  "description": "The Patchwork Kitchen is a network of community kitchens — 23 locations across the Shelf, Circuit, and Old Harbor — that provide free or pay-what-you-can meals to anyone who walks in. Founded sixteen years ago by a retired chef named Abuela Lucia Cortez-Obi (everyone calls her Abuela, regardless of whether they're related), the Patchwork Kitchen began as a single pot of stew served from a Shelf apartment and has grown into the largest community feeding program in GLMZ.\n\nThe kitchens serve 8,000 meals a day — breakfast, lunch, and dinner — prepared by a rotating staff of 400 volunteers who cook in donated facilities using ingredients sourced from urban farms, food rescue operations, and donations from sympathetic businesses. The food is not institutional slop. Abuela's culinary standards are non-negotiable: every meal is prepared with the same care she'd give a plate in the fine dining restaurants where she once worked. This insistence on quality is central to the Kitchen's philosophy: dignity is not a luxury, and feeding people well is not the same as just feeding them.\n\nThe Patchwork Kitchen is politically neutral — Abuela will feed anyone, including corporate security officers, gang members, and the operatives of every faction in this document. Her kitchens are recognized safe zones where violence is not tolerated and grudges are checked at the door. This neutrality, maintained by Abuela's terrifying maternal authority and the practical reality that everyone in the Shelf depends on the Kitchen at some point, makes the Patchwork Kitchen the closest thing to sacred ground that the Shelf possesses.",
+  "description": "The Patchwork Kitchen is a network of community kitchens — 23 locations across the Gray Zone, Circuit, and Old Harbor — that provide free or pay-what-you-can meals to anyone who walks in. Founded sixteen years ago by a retired chef named Abuela Lucia Cortez-Obi (everyone calls her Abuela, regardless of whether they're related), the Patchwork Kitchen began as a single pot of stew served from a the Gray Zone apartment and has grown into the largest community feeding program in GLMZ.\n\nThe kitchens serve 8,000 meals a day — breakfast, lunch, and dinner — prepared by a rotating staff of 400 volunteers who cook in donated facilities using ingredients sourced from urban farms, food rescue operations, and donations from sympathetic businesses. The food is not institutional slop. Abuela's culinary standards are non-negotiable: every meal is prepared with the same care she'd give a plate in the fine dining restaurants where she once worked. This insistence on quality is central to the Kitchen's philosophy: dignity is not a luxury, and feeding people well is not the same as just feeding them.\n\nThe Patchwork Kitchen is politically neutral — Abuela will feed anyone, including corporate security officers, gang members, and the operatives of every faction in this document. Her kitchens are recognized safe zones where violence is not tolerated and grudges are checked at the door. This neutrality, maintained by Abuela's terrifying maternal authority and the practical reality that everyone in the Gray Zone depends on the Kitchen at some point, makes the Patchwork Kitchen the closest thing to sacred ground that the Gray Zone possesses.",
   "ideology": "People need to eat. Everything else — politics, ideology, faction loyalty — can wait until after the meal. Abuela's philosophy is radical in its simplicity: feed people, respect them, and let the rest sort itself out.",
-  "territory": "23 kitchen locations across the Shelf, Circuit, and Old Harbor. The original kitchen — still operating from the same Shelf apartment, now expanded — is the network's heart.",
-  "leadership": "Abuela Lucia Cortez-Obi, age 72, whose authority in the Shelf transcends any faction, gang, or corponation. She leads through force of personality, culinary excellence, and the absolute conviction that nobody in her kitchens will be mistreated.",
+  "territory": "23 kitchen locations across the Gray Zone, Circuit, and Old Harbor. The original kitchen — still operating from the same the Gray Zone apartment, now expanded — is the network's heart.",
+  "leadership": "Abuela Lucia Cortez-Obi, age 72, whose authority in the Gray Zone transcends any faction, gang, or corponation. She leads through force of personality, culinary excellence, and the absolute conviction that nobody in her kitchens will be mistreated.",
   "methods": [
     "Daily meal service at 23 locations",
     "Volunteer-staffed kitchens with professional culinary standards",
@@ -21,7 +21,7 @@
     "400 volunteer cooks and kitchen staff",
     "Food sourcing networks across the lower tiers",
     "Abuela's culinary expertise and moral authority",
-    "Recognition as neutral ground by virtually every faction in the Shelf",
+    "Recognition as neutral ground by virtually every faction in the Gray Zone",
     "The gratitude of thousands of people who would be hungry without the Kitchen"
   ],
   "goals": [],
@@ -29,14 +29,13 @@
   "narrative_function": "The Patchwork Kitchen is proof that the simplest forms of care are the most powerful — that feeding people with dignity is an act of resistance against a system that treats them as expendable.",
   "story_hooks": [
     "Someone has poisoned the food at one of the Patchwork Kitchen locations. Twelve people are hospitalized. Abuela needs to find who did this and why before the Kitchens lose the community trust that keeps them running — and before she finds the responsible party and does something that can't be undone.",
-    "A corporate development project is claiming the building that houses the original Kitchen. Abuela isn't moving. The developer has legal authority. The Shelf is watching to see which force is stronger: corporate law or a 72-year-old woman with a ladle and the loyalty of 8,000 hungry people."
+    "A corporate development project is claiming the building that houses the original Kitchen. Abuela isn't moving. The developer has legal authority. the Gray Zone is watching to see which force is stronger: corporate law or a 72-year-old woman with a ladle and the loyalty of 8,000 hungry people."
   ],
   "tags": [
     "faction",
     "community",
     "food",
     "mutual aid",
-    "shelf",
     "circuit",
     "old harbor",
     "kitchen",
@@ -45,7 +44,6 @@
   "related_entities": [
     "Frost Boudiaf",
     "Mariposa Guerrero",
-    "The Shelf",
     "The Peninsula",
     "Ulf Kristjánsson-Ingebrigtsen",
     "Circuit",

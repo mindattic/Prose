@@ -3,7 +3,7 @@
   "name": "Rolen Depot Utility Trouser",
   "type": "apparel",
   "category": "pants",
-  "description": "Simple, no-frills work trousers in dark brown or black, sold by the pallet-load to Tier 1 and Tier 2 employers for issue to shift workers. Straight cut, flat front, two side pockets and two back pockets. The fabric is coarse and stiff when new and takes months of washing to soften. Ubiquitous on the Shelf.",
+  "description": "Simple, no-frills work trousers in dark brown or black, sold by the pallet-load to Tier 1 and Tier 2 employers for issue to shift workers. Straight cut, flat front, two side pockets and two back pockets. The fabric is coarse and stiff when new and takes months of washing to soften. Ubiquitous in the Gray Zone.",
   "tier_association": "Tier 1",
   "materials": [
     "coarse poly-cotton blend",
@@ -14,7 +14,7 @@
   "worn_by": [
     "shift laborers",
     "entry-level warehouse staff",
-    "Shelf residents",
+    "the Gray Zone residents",
     "anyone on a tight budget"
   ],
   "manufacturer": "Rolen Basic Goods",
@@ -23,7 +23,7 @@
   "gene_compatible": false,
   "story_hooks": [
     "Rolen Depot trousers are sold in bulk by gray-market resellers — a batch with an unusual dye lot might trace back to a corporate stockroom theft.",
-    "Because they're so generic, they're sometimes deliberately chosen by people who want to disappear into a crowd on the Shelf."
+    "Because they're so generic, they're sometimes deliberately chosen by people who want to disappear into a crowd in the Gray Zone."
   ],
   "tags": [
     "apparel",
@@ -35,9 +35,7 @@
     "uniform"
   ],
   "parent_corponation": "",
-  "related_entities": [
-    "The Shelf"
-  ],
+  "related_entities": [],
   "physical_description": {
     "visual_profile": "Utilitarian silhouette with zero aesthetic pretension—a straight, unflinching column of fabric from hip to ankle. The cut suggests function over form: practical, forgettable, deliberately generic. On-body, they read as pure work uniform: the visual signature of shift labor in the GLMZ.",
     "fit": "Straight leg, relaxed through the thigh with no taper. Flat front waistband sits at natural waist. Intentionally designed to accommodate layering underneath and repetitive movement. Zero vanity in the drape.",

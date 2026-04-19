@@ -1,27 +1,39 @@
 {
   "id": "6f0b3d9a5c4e827140b6d3f9a2c5e701",
-  "name": "Signal Break",
+  "codename": "DEAD AIR DROP",
   "type": "contract",
-  "codename": "DEAD AIR",
-  "contract_tier": "Ghost",
-  "posted_by": "Unknown — contract presented to specific freelancer directly through an intermediary with no verifiable identity; no dead drop, no broker chain",
-  "target": "Identity unknown — referred to in the contract materials only as 'the Archivist Node'",
+  "client": "",
+  "client_tier": "",
+  "category": "",
+  "description": "Presented directly. No posting board, no dead drop, no broker \u2014 someone who knows who you are and how to reach you handed you a contract without leaving a trace of having done so. The target is described in functional terms: a person who serves as an irreplaceable memory node for a broker network, meaning they hold information \u2014 relationships, operational histories, contractor identities \u2014 that exists nowhere else. The request is to remove that person entirely, with emphasis on the word \u0027entirely.\u0027\n\nThe \u0027Archivist Node\u0027 is a real function in the Signal Network\u0027s informal architecture \u2014 some regions develop individuals who serve as trusted aggregators, holding information on behalf of brokers who prefer distributed memory over hardware storage. Killing one is a serious act, equivalent to burning down an irreplaceable community library. What the freelancer cannot know from the contract materials alone is whether this specific Archivist Node is being removed because they\u0027re a threat, because someone wants to collapse the broker network they support, or because they know something specific that a specific party wants buried. The partial location key the contract provides is itself information \u2014 working out where it points will tell the freelancer something about who posted this, if they know how to read the geography.",
   "objective": "The target is a living person who functions as a central memory for a specific broker network. Terminate. All notes, personal archives, and biological memory with them.",
-  "location": "Unknown — contract materials include a partial location key that requires the freelancer to develop the rest",
-  "payout": "Negotiated — opening offer described as 'sufficient.' No figure given.",
-  "deadline": "null",
+  "location": "Unknown \u2014 contract materials include a partial location key that requires the freelancer to develop the rest",
+  "target": "Identity unknown \u2014 referred to in the contract materials only as \u0027the Archivist Node\u0027",
+  "opposition": "",
+  "payout": "Negotiated \u2014 opening offer described as \u0027sufficient.\u0027 No figure given.",
+  "bonuses": [],
   "complications": [
-    "The posting entity's identity is completely opaque — no vouching chain, no broker aggregation, no dead drop. The contract was delivered personally. This means either someone powerful enough to operate without the Signal Network's infrastructure, or a trap",
-    "The target's identity and location are partially encrypted and require the freelancer to complete an intelligence-gathering phase before the contract can even be executed — they may learn things during that phase that change the calculus",
-    "Ghost-tier contracts carry no social infrastructure of enforcement — no broker to arbitrate disputes, no reputation consequence for non-completion, no recourse on either side"
+    "The posting entity\u0027s identity is completely opaque \u2014 no vouching chain, no broker aggregation, no dead drop. The contract was delivered personally. This means either someone powerful enough to operate without the Signal Network\u0027s infrastructure, or a trap",
+    "The target\u0027s identity and location are partially encrypted and require the freelancer to complete an intelligence-gathering phase before the contract can even be executed \u2014 they may learn things during that phase that change the calculus",
+    "Ghost-tier contracts carry no social infrastructure of enforcement \u2014 no broker to arbitrate disputes, no reputation consequence for non-completion, no recourse on either side"
   ],
-  "moral_weight": "grey",
-  "description": "Presented directly. No posting board, no dead drop, no broker — someone who knows who you are and how to reach you handed you a contract without leaving a trace of having done so. The target is described in functional terms: a person who serves as an irreplaceable memory node for a broker network, meaning they hold information — relationships, operational histories, contractor identities — that exists nowhere else. The request is to remove that person entirely, with emphasis on the word 'entirely.'\n\nThe 'Archivist Node' is a real function in the Signal Network's informal architecture — some regions develop individuals who serve as trusted aggregators, holding information on behalf of brokers who prefer distributed memory over hardware storage. Killing one is a serious act, equivalent to burning down an irreplaceable community library. What the freelancer cannot know from the contract materials alone is whether this specific Archivist Node is being removed because they're a threat, because someone wants to collapse the broker network they support, or because they know something specific that a specific party wants buried. The partial location key the contract provides is itself information — working out where it points will tell the freelancer something about who posted this, if they know how to read the geography.",
-  "story_hooks": [
-    "The Archivist Node, once located, turns out to know about the freelancer — about their history, their actual identity, possibly things the freelancer would prefer stayed buried. The question becomes whether the node is a threat to them personally or whether someone else has decided to frame it that way",
-    "Completing the location-development phase puts the freelancer in contact with the broker network the Archivist supports — those brokers will notice the inquiry, and some of them will draw the correct conclusion about what's coming"
-  ],
-  "related_entities": [],
+  "required_capabilities": {
+    "combat": 0,
+    "stealth": 0,
+    "hacking": 0,
+    "social": 0,
+    "medical": 0,
+    "tech": 0,
+    "transport": 0,
+    "demolitions": 0,
+    "surveillance": 0,
+    "linguistics": 0
+  },
+  "crew_size": "",
+  "difficulty": "",
+  "time_limit": "",
+  "status": "open",
+  "outcome": "",
   "tags": [
     "contract",
     "tier-ghost",
@@ -31,5 +43,7 @@
     "identity-unknown",
     "broker-warfare",
     "direct-delivery"
-  ]
+  ],
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

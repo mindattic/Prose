@@ -3,7 +3,7 @@
   "name": "Patchwork Thermal Legging",
   "type": "apparel",
   "category": "clothing",
-  "description": "A pair of thermal leggings assembled from at least three different source garments — you can see where the textures change at mid-thigh and again below the knee, stitched together with a running seam in black thread. Colors are a mismatched gradient of dark grey, faded olive, and near-black. Warm, ugly, and entirely practical for a Shelf winter.",
+  "description": "A pair of thermal leggings assembled from at least three different source garments — you can see where the textures change at mid-thigh and again below the knee, stitched together with a running seam in black thread. Colors are a mismatched gradient of dark grey, faded olive, and near-black. Warm, ugly, and entirely practical for a the Gray Zone winter.",
   "tier_association": "Tier 1",
   "materials": [
     "reclaimed thermal knit",
@@ -24,7 +24,7 @@
   "gene_compatible": true,
   "story_hooks": [
     "One panel is cut from a child's garment — the scale of the print gives it away, small cartoon shapes barely visible under the grey dye.",
-    "A Shelf seamstress sells these at the Ruck Market and can identify her own stitching — useful if you need to prove where something came from."
+    "A the Gray Zone seamstress sells these at the Ruck Market and can identify her own stitching — useful if you need to prove where something came from."
   ],
   "tags": [
     "apparel",
@@ -60,6 +60,6 @@
     "cultural_context": "Street-tier, shelf-dweller, industrial worker, or climate refugee. Signals resourcefulness, poverty, and survival pragmatism rather than aesthetic choice. Worn by people who cannot afford new thermal base layers and adapt what they find.",
     "condition_typical": "Worn-in and patched, showing age without active distressing. The garment is already broken-in from its previous lives. Some faint pilling on lower panels, seams holding firm but not pristine."
   },
-  "image_prompt": "Close-up fashion photography of patchwork thermal leggings on a dark-skinned model with visible chrome ankle augmentation, standing in a dimly-lit Shelf market stall with industrial steel shelving and warm overhead lighting catching the mismatched fabric textures. Midshot framing from hip to ankle, emphasizing the visible seam lines and color blocks. Gritty, desaturated neo-noir urban aesthetic with neon-lit storefront blur in background. Shallow depth of field on the fabric details. --ar 2:3 --v 6",
-  "visual_prompt": "Close-up fashion photography of patchwork thermal leggings on a dark-skinned model with visible chrome ankle augmentation, standing in a dimly-lit Shelf market stall with industrial steel shelving and warm overhead lighting catching the mismatched fabric textures. Midshot framing from hip to ankle, emphasizing the visible seam lines and color blocks. Gritty, desaturated neo-noir urban aesthetic with neon-lit storefront blur in background. Shallow depth of field on the fabric details. --ar 2:3 --v 6"
+  "image_prompt": "Close-up fashion photography of patchwork thermal leggings on a dark-skinned model with visible chrome ankle augmentation, standing in a dimly-lit the Gray Zone market stall with industrial steel shelving and warm overhead lighting catching the mismatched fabric textures. Midshot framing from hip to ankle, emphasizing the visible seam lines and color blocks. Gritty, desaturated neo-noir urban aesthetic with neon-lit storefront blur in background. Shallow depth of field on the fabric details. --ar 2:3 --v 6",
+  "visual_prompt": "Close-up fashion photography of patchwork thermal leggings on a dark-skinned model with visible chrome ankle augmentation, standing in a dimly-lit the Gray Zone market stall with industrial steel shelving and warm overhead lighting catching the mismatched fabric textures. Midshot framing from hip to ankle, emphasizing the visible seam lines and color blocks. Gritty, desaturated neo-noir urban aesthetic with neon-lit storefront blur in background. Shallow depth of field on the fabric details. --ar 2:3 --v 6"
 }

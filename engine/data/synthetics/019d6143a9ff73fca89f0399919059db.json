@@ -1,5 +1,6 @@
 {
   "id": "019d6143a9ff73fca89f0399919059db",
+  "rating": 60,
   "name": "Foxfire",
   "type": "elf",
   "aliases": [],
@@ -8,14 +9,14 @@
   "habitat": "void_swimmer",
   "origin": "firmware_evolution",
   "status": "active",
-  "description": "Manifests as anomalous bioluminescence in Old Harbor's algae — patterns of light that don't match the algae's programmed behavior. The harbor glows differently when Foxfire is active.",
-  "observed_behavior": "Modulates the engineered bioluminescent algae's light output through the water treatment system's chemical feeds. Creates light patterns that may be communication or may be noise.",
+  "description": "Manifests as anomalous bioluminescence in Old Harbor\u0027s algae \u2014 patterns of light that don\u0027t match the algae\u0027s programmed behavior. The harbor glows differently when Foxfire is active.",
+  "observed_behavior": "Modulates the engineered bioluminescent algae\u0027s light output through the water treatment system\u0027s chemical feeds. Creates light patterns that may be communication or may be noise.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 9,
   "location": "Old Harbor",
   "dti_rating": 0,
   "story_hooks": [
-    "The light patterns match a binary encoding — someone translates and discovers a message: coordinates to something underwater that Foxfire wants found"
+    "The light patterns match a binary encoding \u2014 someone translates and discovers a message: coordinates to something underwater that Foxfire wants found"
   ],
   "paratechnological": true,
   "tags": [
@@ -30,7 +31,6 @@
     "old harbor",
     "sentient"
   ],
-  "related_entities": [
-    "Old Harbor"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

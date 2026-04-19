@@ -13,10 +13,10 @@
   "price": "Φ10.00",
   "popularity_rank": 5,
   "slogan": "Power when you need it.",
-  "cultural_context": "Power reliability varies by tier. In the Shelf, outages are frequent and PowerCells are lifelines. People charge them opportunistically — at work, at transit stations, anywhere with a socket. A dead PowerCell is a minor emergency.",
+  "cultural_context": "Power reliability varies by tier. In the Gray Zone, outages are frequent and PowerCells are lifelines. People charge them opportunistically — at work, at transit stations, anywhere with a socket. A dead PowerCell is a minor emergency.",
   "story_hooks": [
     "VoltWorks batteries have a firmware-limited lifespan — they stop holding charge after 18 months regardless of actual cell condition. A hacker community has developed a firmware bypass.",
-    "Counterfeit PowerCells with unstable chemistry have caused fires in Shelf housing blocks."
+    "Counterfeit PowerCells with unstable chemistry have caused fires in the Gray Zone housing blocks."
   ],
   "tags": [
     "household",
@@ -33,7 +33,6 @@
   "parent_corponation": "",
   "related_entities": [
     "Adaeze Volkov-Tuilagi",
-    "The Shelf",
     "Zheng-Dao Heavy Industries Portable Fusion Battery PFB-2"
   ]
 }

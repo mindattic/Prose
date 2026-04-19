@@ -7,7 +7,7 @@
   "aliases": [],
   "category": "cosmetic",
   "body_location": "dermal full-body (primary node: subdermal upper back, between scapulae)",
-  "description": "The VitaCore DermaTone is a subdermal pigment-regulation array consisting of a primary processor node implanted between the shoulder blades and a web of micro-capillary injectors distributed across the full dermal layer during installation. The system works by modulating melanin production at the cellular level through targeted photochemical signaling, allowing the wearer to shift their skin tone across a continuous spectrum — darkening, lightening, or introducing warm and cool undertones — over a period of hours or days. Changes are gradual and biologically natural-looking rather than sudden or artificial. The system is managed through a companion app or a small subcutaneous touch interface behind the left ear, with presets, schedules, and manual fine-tuning available. Full-body tone shifts take approximately four to twelve hours depending on magnitude; subtle adjustments settle within the hour.\n\nThe DermaTone is one of the most widely purchased cosmetic implants in GLMZ, sitting comfortably in the Tier 1 and 2 market. For many wearers, it is a matter of practical identity — the ability to present differently across social contexts, to match family members at gatherings, or simply to feel comfortable in their own skin across seasons when natural tanning would otherwise occur unevenly. In a city where heritage is thoroughly mixed and skin tone carries no singular cultural meaning, the DermaTone is treated with about as much gravity as a good moisturizer. Shelf kids use cheaper pharmacy-kiosk installations; Tier 3 professionals get the full clinic version with finer gradient control. It is the rare implant that genuinely crosses class lines.",
+  "description": "The VitaCore DermaTone is a subdermal pigment-regulation array consisting of a primary processor node implanted between the shoulder blades and a web of micro-capillary injectors distributed across the full dermal layer during installation. The system works by modulating melanin production at the cellular level through targeted photochemical signaling, allowing the wearer to shift their skin tone across a continuous spectrum — darkening, lightening, or introducing warm and cool undertones — over a period of hours or days. Changes are gradual and biologically natural-looking rather than sudden or artificial. The system is managed through a companion app or a small subcutaneous touch interface behind the left ear, with presets, schedules, and manual fine-tuning available. Full-body tone shifts take approximately four to twelve hours depending on magnitude; subtle adjustments settle within the hour.\n\nThe DermaTone is one of the most widely purchased cosmetic implants in GLMZ, sitting comfortably in the Tier 1 and 2 market. For many wearers, it is a matter of practical identity — the ability to present differently across social contexts, to match family members at gatherings, or simply to feel comfortable in their own skin across seasons when natural tanning would otherwise occur unevenly. In a city where heritage is thoroughly mixed and skin tone carries no singular cultural meaning, the DermaTone is treated with about as much gravity as a good moisturizer. the Gray Zone kids use cheaper pharmacy-kiosk installations; Tier 3 professionals get the full clinic version with finer gradient control. It is the rare implant that genuinely crosses class lines.",
   "manufacturer": "VITACORE BIOSYSTEMS INCORPORATED",
   "tier_availability": "Tier 1-3",
   "legality": "Unrestricted",
@@ -21,9 +21,9 @@
     "Increased skin sensitivity to temperature change in the first month post-installation",
     "Rare users report a faint warmth at the back node site during active tone shifts"
   ],
-  "cultural_context": "In GLMZ, the DermaTone occupies the same social space as hair dye did in the late twentieth century — ubiquitous, unremarkable, and occasionally a form of self-expression so normalized that its absence is more notable than its presence. On the Shelf, cheap kiosk installs are common enough that teenagers trade preset codes the way older generations traded makeup tutorials. In Tier 3 and 4 spaces, the quality of the install is a subtle class marker — fine gradient control versus the slightly blocky transitions of a budget unit. There is no meaningful social stigma; if anything, the DermaTone has become a quiet symbol of post-ethnic identity, the idea that appearance is a choice rather than an inheritance. Some religious and cultural communities do maintain preferences against artificial pigment alteration, but these are minority positions and generally respected without drama.",
+  "cultural_context": "In GLMZ, the DermaTone occupies the same social space as hair dye did in the late twentieth century — ubiquitous, unremarkable, and occasionally a form of self-expression so normalized that its absence is more notable than its presence. On the Gray Zone, cheap kiosk installs are common enough that teenagers trade preset codes the way older generations traded makeup tutorials. In Tier 3 and 4 spaces, the quality of the install is a subtle class marker — fine gradient control versus the slightly blocky transitions of a budget unit. There is no meaningful social stigma; if anything, the DermaTone has become a quiet symbol of post-ethnic identity, the idea that appearance is a choice rather than an inheritance. Some religious and cultural communities do maintain preferences against artificial pigment alteration, but these are minority positions and generally respected without drama.",
   "known_users": [
-    "Teenagers and young adults on the Shelf using kiosk-grade installations",
+    "Teenagers and young adults in the Gray Zone using kiosk-grade installations",
     "Service industry workers who adjust tone for professional presentation",
     "Artists and performers who use scheduled tone shifts as part of their aesthetic",
     "People with vitiligo or uneven pigmentation seeking a consistent baseline",
@@ -31,7 +31,7 @@
   ],
   "story_hooks": [
     "A witness to a crime was identified by their DermaTone preset at the time — but the preset code matches thousands of users citywide, and someone is selling alibi presets on the gray market.",
-    "A Shelf kid's kiosk-installed DermaTone starts malfunctioning, producing involuntary shifts that mirror extreme emotional states — pale with fear, flushed with anger — making it impossible to hide feelings in a neighborhood where showing weakness is dangerous.",
+    "A the Gray Zone kid's kiosk-installed DermaTone starts malfunctioning, producing involuntary shifts that mirror extreme emotional states — pale with fear, flushed with anger — making it impossible to hide feelings in a neighborhood where showing weakness is dangerous.",
     "A Tier 4 corporate family is quietly scandalized when a member's DermaTone is found to be synced to a partner's — a gesture of intimacy so deliberate it functions as an unspoken public declaration in certain social circles."
   ],
   "street_price": "Φ 180–Φ 420 depending on coverage tier",
@@ -55,7 +55,6 @@
     "Slagworks Industrial",
     "The Heritage Vault",
     "The Human Baseline Alliance",
-    "The Shelf",
     "Variable Impedance Rifle VIR-9 'Switchback'"
   ]
 }

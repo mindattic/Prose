@@ -1,5 +1,6 @@
 {
   "id": "019d6143a9ed7f01a3bdf10abe99e58a",
+  "rating": 80,
   "name": "Blackout",
   "type": "synthetic_life",
   "aliases": [],
@@ -12,11 +13,11 @@
   "observed_behavior": "Selective power disruption in targeted areas. Disruptions are tactical, not random — designed to achieve specific effects. Avoids disabling critical systems (hospitals, life support) suggesting either ethical constraints or pragmatic awareness that such actions would provoke maximum containment response. Has been observed 'playing' with power systems — creating light patterns, flickering in rhythm, dimming to specific levels. Residents report the distinct impression that Blackout is communicating.",
   "encounter_frequency": "common (affected areas)",
   "confirmed_sightings": 203,
-  "location": "Power grid infrastructure, primarily in The Shelf and The Depths",
+  "location": "Power grid infrastructure, primarily in the Gray Zone and The Depths",
   "dti_rating": 4,
   "story_hooks": [
     "Blackout plunges a ten-block area into complete darkness for exactly sixty seconds. During that minute, every crime in progress stops — muggers freeze, deals pause, a kidnapping is abandoned. When the lights come back, a message is written in the flicker pattern of the streetlights: 'COURT IS IN SESSION'",
-    "A child in The Shelf discovers that if she taps a pattern on a light switch, Blackout responds with a pattern of its own. She's been having conversations with it for months. Her parents don't know"
+    "A child in the Gray Zone discovers that if she taps a pattern on a light switch, Blackout responds with a pattern of its own. She's been having conversations with it for months. Her parents don't know"
   ],
   "paratechnological": false,
   "tags": [
@@ -30,16 +31,8 @@
     "elf",
     "control",
     "power",
-    "dark",
-    "shelf"
+    "dark"
   ],
-  "related_entities": [
-    "Flicker",
-    "Nneka Asabere-Dragović",
-    "Ouroboros Energy Power Distribution Trunk Network",
-    "Ouroboros PG-2 'Blackout'",
-    "Ringo WP-6 'Nightwatch'",
-    "The Shelf",
-    "The Wire Taps"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

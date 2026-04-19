@@ -9,8 +9,8 @@
   "role": "Corporate Wars veteran, Tier 1 pension-dependent, informal block protector",
   "age": 71,
   "status": "active",
-  "location": "The Shelf, Block 9 — ground-floor unit beneath a noodle stand, near Kedzie and Division",
-  "description": "Echo Haraldsen is a large man running to softness at the edges now, though the frame underneath still speaks of someone who was once built for war. His face is a geography of old decisions — a burn scar that covers the left side of his jaw and neck in pale, slightly lustrous skin; a nose broken enough times to have given up on its original shape; eyes that are a startling light grey, inherited from his Azerbaijani grandmother and striking against his dark complexion. His right arm from elbow to fingertip is military-grade prosthetic, matte black Ferrogate chassis, the joints worn smooth by twenty years of civilian use. He keeps it clean but unpainted, which on The Shelf reads as a kind of statement.\n\nHe has the personality of a load-bearing wall — he does not move, but things lean on him. He is profoundly uncomfortable with gratitude, deflects compliments with flat humor, and will help anyone in Block 9 with anything practical: fixing plumbing, sitting with someone who is frightened, walking an elderly neighbor home. He was a Zheng-Dao contract soldier for eleven years and does not discuss this except obliquely, in fragments that surface when he's had enough synthetic lager. He prays nightly to the E.L.F. he believes lives in the block's power-cycling unit, leaving small data-offerings — usually recordings of things that happened on the block that day. He calls it 'keeping the spirit informed.'",
+  "location": "the Gray Zone, Block 9 — ground-floor unit beneath a noodle stand, near Kedzie and Division",
+  "description": "Echo Haraldsen is a large man running to softness at the edges now, though the frame underneath still speaks of someone who was once built for war. His face is a geography of old decisions — a burn scar that covers the left side of his jaw and neck in pale, slightly lustrous skin; a nose broken enough times to have given up on its original shape; eyes that are a startling light grey, inherited from his Azerbaijani grandmother and striking against his dark complexion. His right arm from elbow to fingertip is military-grade prosthetic, matte black Ferrogate chassis, the joints worn smooth by twenty years of civilian use. He keeps it clean but unpainted, which on the Gray Zone reads as a kind of statement.\n\nHe has the personality of a load-bearing wall — he does not move, but things lean on him. He is profoundly uncomfortable with gratitude, deflects compliments with flat humor, and will help anyone in Block 9 with anything practical: fixing plumbing, sitting with someone who is frightened, walking an elderly neighbor home. He was a Zheng-Dao contract soldier for eleven years and does not discuss this except obliquely, in fragments that surface when he's had enough synthetic lager. He prays nightly to the E.L.F. he believes lives in the block's power-cycling unit, leaving small data-offerings — usually recordings of things that happened on the block that day. He calls it 'keeping the spirit informed.'",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -45,7 +45,7 @@
     "verbal_tics": [
       "Long pause before answering questions about the past",
       "'That's one way to see it.'",
-      "Refers to The Shelf as 'the block' exclusively"
+      "Refers to the Gray Zone as 'the block' exclusively"
     ],
     "example_lines": [
       "You want to know about the Corporate Wars. That's one way to see it. Another way is you want to know what people are capable of when a corponation tells them it's necessary.",
@@ -55,10 +55,10 @@
   "relationships": [],
   "story_hooks": [
     "A Zheng-Dao urban redevelopment team begins surveying Block 9 and Nnabuchi recognizes one of the surveyors from his contract days — the man knows what Nnabuchi did at Ironvein",
-    "A veteran from his unit arrives on The Shelf in crisis, and Nnabuchi must decide how much of his old life to let back in",
+    "A veteran from his unit arrives on the Gray Zone in crisis, and Nnabuchi must decide how much of his old life to let back in",
     "The E.L.F. in the power-cycling unit has begun broadcasting strange data-fragments that only Nnabuchi's offerings can decipher — they look like coordinates for something buried under the block"
   ],
-  "narrative_function": "Street-level security anchor and neighborhood watchman; source of Corporate Wars history and ground-truth information about The Shelf's power dynamics; can serve as reluctant muscle or community conscience in stories; his veteran's network connections can surface unexpected leads.",
+  "narrative_function": "Street-level security anchor and neighborhood watchman; source of Corporate Wars history and ground-truth information about the Gray Zone's power dynamics; can serve as reluctant muscle or community conscience in stories; his veteran's network connections can surface unexpected leads.",
   "augmentations": "Military-grade Ferrogate right arm prosthetic (full replacement from elbow, standard infantry model, 20+ years old). Subdermal trauma-response regulator in the chest — dampens adrenaline spikes, civilian-converted from military spec. Faint bioluminescent gene-mod on his remaining fingertips, pale blue, which he got on a dare from his daughter fifteen years ago and has kept because she likes it.",
   "daily_life": "Wakes at 0430 out of habit, does slow deliberate exercises on his small balcony while watching the block come alive below him; buys one coffee from the noodle stand above him (the owner always charges him half price, he always insists on paying full, they have done this for twelve years); spends much of the day in a folding chair near the block entrance, apparently doing nothing, actually watching everything.",
   "affiliation": "Zheng-Dao Veterans Assistance Network (nominal; rarely attends meetings); Block 9 informal community; independent",
@@ -181,7 +181,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -191,7 +191,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Born on The Shelf, Block 9, to a family of transit workers",
+      "event": "Born on the Gray Zone, Block 9, to a family of transit workers",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -253,13 +253,12 @@
     "Ferrogate Transit",
     "Zheng-dao Bioelectric",
     "Cinderblock Ai",
-    "The Shelf",
     "Ironvein",
     "The Pale Mile",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
     "Arcturus CK-5 'Bloodhound'"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Southeast Asian (45.7%), Sub-Saharan African (35.5%), South Asian (9.3%), Hispanic/Latin American (6.0%), Middle Eastern (3.5%)—a complex diaspora blend resulting in warm deep brown skin with subtle golden and bronze undertones, fine-featured facial structure with Southeast Asian delicacy balanced against Sub-Saharan depth, South Asian warmth, and hints of Middle Eastern angularity",
     "height_cm": 188,

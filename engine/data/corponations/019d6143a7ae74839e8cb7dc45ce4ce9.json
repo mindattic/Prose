@@ -36,5 +36,14 @@
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "The Corridor",
     "The Meridian Compact"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z2"
+    ],
+    "primaryZone": "Z2",
+    "lakefrontAccess": true,
+    "description": "The Novafold Medical Sovereign Zone — anchored by the Novafold Grand Campus in Lincoln Park, Zone 2. Zone 2's planned pharmaceutical residential district: employee housing, research facilities, and hospitality centers occupy a continuous enclave designed to demonstrate what a city looks like when it functions.",
+    "grayZoneRelationship": "Novafold's campus edges are hard borders. The contrast between the campus interior and the Argyle Street Gray Zone immediately adjacent is a recurring subject of Mirrorwell and Vantablack content."
+  }
 }

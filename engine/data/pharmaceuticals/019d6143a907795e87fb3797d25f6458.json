@@ -29,7 +29,7 @@
   "tier_availability": "Tier 2-3",
   "legality": "legal",
   "street_price": "Φ85",
-  "cultural_context": "Praevex is the gateway drug of the combat pharmaceutical world — legal, relatively affordable, and normalized enough that licensed security workers take it before shifts the way office workers drink coffee. Its legitimacy makes it the first combat stim most runners try, and its mild profile makes it the baseline by which harder compounds are compared. On the Shelf it's used by people who can't afford anything stronger and by people disciplined enough to know that operating at natural peak is often enough. Novafold's decision to keep it legal and cheap is a calculated long-term market strategy — Praevex users become Novafold brand loyalists.",
+  "cultural_context": "Praevex is the gateway drug of the combat pharmaceutical world — legal, relatively affordable, and normalized enough that licensed security workers take it before shifts the way office workers drink coffee. Its legitimacy makes it the first combat stim most runners try, and its mild profile makes it the baseline by which harder compounds are compared. On the Gray Zone it's used by people who can't afford anything stronger and by people disciplined enough to know that operating at natural peak is often enough. Novafold's decision to keep it legal and cheap is a calculated long-term market strategy — Praevex users become Novafold brand loyalists.",
   "story_hooks": [
     "A Novafold executive is pushing to reclassify Praevex as prescription-only — the internal memo explaining why has leaked, and it implies they've found a long-term dependency mechanism they didn't disclose at approval",
     "A runner realizes every crew they've worked with in the last year uses Praevex from the same distributor — and the distributor is keeping a list of who buys it, which amounts to a roster of active operators in the district",
@@ -47,7 +47,6 @@
     "drink",
     "drug",
     "stimulant",
-    "shelf",
     "tier 2",
     "tier 3"
   ],
@@ -60,7 +59,6 @@
     "Novafold Pharmaceuticals",
     "Patient Zero",
     "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
-    "The Human Baseline Alliance",
-    "The Shelf"
+    "The Human Baseline Alliance"
   ]
 }

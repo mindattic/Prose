@@ -9,8 +9,8 @@
   "role": "Information trader and intelligence analyst — broker",
   "age": 65,
   "status": "active",
-  "location": "The Shelf — lower district tenements near the old lakeshore, near Kedzie and Division",
-  "description": "Cipher Delgado-Nygaard is lean and angular, all sharp edges and visible tension. At 65, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — bioware adrenaline regulator — keeps calm under fire, controlled hormone release — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a broker out of The Shelf, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nCipher Delgado-Nygaard has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
+  "location": "the Gray Zone — lower district tenements near the old lakeshore, near Kedzie and Division",
+  "description": "Cipher Delgado-Nygaard is lean and angular, all sharp edges and visible tension. At 65, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — bioware adrenaline regulator — keeps calm under fire, controlled hormone release — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a broker out of the Gray Zone, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nCipher Delgado-Nygaard has survived long enough in the runner game to be either very good or very lucky, and she cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.97,
@@ -257,7 +257,7 @@
     "Info Broker": 0.6
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -272,12 +272,11 @@
     "Kang-Petrov Arms KP-10C 'Bullpup'"
   ],
   "related_entities": [
-    "The Shelf",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
     "Felix Roundtree"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Ubiquitous Diaspora phenotype: Primary Hispanic/Latin American ancestry (57.7%) with significant Northern European (20.5%), Sub-Saharan African (17.8%), and Indigenous American (4.0%) genetic contribution. The combination creates a warm-toned complexion with strong bone structure—angular cheekbones and prominent facial architecture reflecting the blend of Latin American and indigenous heritage, enriched by Sub-Saharan African features in facial proportions and lip fullness, tempered by Northern European influences in eye shape and lighter undertones.",
     "height_cm": 168,

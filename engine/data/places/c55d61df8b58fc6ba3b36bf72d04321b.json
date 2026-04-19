@@ -10,7 +10,7 @@
     "tags": []
   },
   "connections": {
-    "adjacent_to": [],
+    "adjacent_to": ["Kentucky", "Huntsville", "New Orleans", "Ridgepost"],
     "exits": [],
     "tags": []
   },
@@ -18,7 +18,10 @@
     "place",
     "outside",
     "biomass",
-    "ecological-hazard"
+    "ecological-hazard",
+    "remnants",
+    "engineered-vegetation"
   ],
-  "related_entities": []
+  "related_entities": ["Ridgepost", "Huntsville", "Kentucky"],
+  "controllingCorponation": null
 }

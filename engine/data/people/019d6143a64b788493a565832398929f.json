@@ -1,5 +1,6 @@
 {
   "id": "019d6143a64b788493a565832398929f",
+  "rating": 70,
   "type": "character",
   "name": "Haze Asomaning",
   "aliases": [],
@@ -10,7 +11,7 @@
   "age": 59,
   "status": "active",
   "location": "The Underbelly — sub-street tunnels and maintenance corridors, near sub-level access near Dearborn and Jackson",
-  "description": "Haze Asomaning is lean and angular, all sharp edges and visible tension. At 59, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and he makes no effort to hide it.\n\nHe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a smuggler out of The Underbelly, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nHaze Asomaning has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
+  "description": "Haze Asomaning is lean and angular, all sharp edges and visible tension. At 59, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and he makes no effort to hide it.\n\nHe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a smuggler out of The Underbelly, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nHaze Asomaning has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.74,
@@ -53,7 +54,11 @@
       "\"Contraband is just cargo that hasn't been properly introduced to the right people.\"",
       "\"Every border is a suggestion. Every checkpoint is a negotiation.\"",
       "\"I move things from where they are to where they need to be. The legality is your problem.\""
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
@@ -269,24 +274,11 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Backfire' Weaponized Exhaust System",
-    "Street-Custom Loaded Pipe 'Bell Ringer'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Masquerade",
-    "The Shelf",
-    "The Heritage Vault",
-    "Diaspora Table",
-    "Dearborn Forge",
-    "Stratum",
-    "Lazarus LX-2 'Lab Rat'",
-    "Slagworks Industrial",
-    "Felix Roundtree",
-    "Pellucid Systems"
-  ],
-  "district": "The Underworld",
   "physical_description": {
     "heritage": "Complex global diaspora blend: Northern European (28.3%), Southeast Asian (23.4%), Sub-Saharan African (22.5%), Hispanic/Latin American (18.2%), East Asian (5.8%), Indigenous American (1.8%). Features reflect this intricate multi-continental heritage — warm medium-brown skin with olive and golden undertones from the layered ancestry, bone structure showing both Southeast Asian and Sub-Saharan African prominence with Northern European eye geometry, creating a uniquely balanced phenotype where no single ancestry dominates but all contribute to dimensional facial planes and warm, complex skin depth.",
     "height_cm": 178,
@@ -308,6 +300,7 @@
     "clothing_style": "Tier 4-5 practical: unmarked dark gray synth-weave jacket with reinforced stitching, pockets modified for gear distribution. Black compression shirt underneath. Cargo pants in matte charcoal with multiple thigh pockets — worn fabric in high-friction areas. Boots: scuffed black tactical grade, laces wrapped tight. No logos, no status markers, nothing that reflects wealth or corporate affiliation. Layers designed for temperature variance in sub-street work. Single worn paracord bracelet on left wrist."
   },
   "image_prompt": "Haze Asomaning, lean 178cm figure in dark practical synth-weave jacket and charcoal cargo pants, standing in neon-lit sub-street environment, GLMZ. Warm medium-brown skin with olive undertones, weathered angular face with prominent cheekbones reflecting Southeast Asian and Sub-Saharan African heritage blended with Northern European bone structure. Dark gray shoulder-length hair pulled back tight. Left eye dark brown natural, right eye cybernetic titanium housing with amber glow. Salt-and-pepper stubble, faded temple-to-cheekbone scar visible. Subdermal chrome plating at neck junction. Thin white scars on face from years of sub-street work. Asymmetrical stance, weight favoring left side, shoulders forward, constant scanning gaze. Scuffed tactical boots, worn paracord bracelet. Standing in shadow and neon reflection, no corporate markers, functional and unmarked gear. Moody cinematic lighting, cool blues and warm amber neon, slightly grainy texture. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Northern European": 28.3,
     "Southeast Asian": 23.4,
@@ -316,12 +309,6 @@
     "East Asian": 5.8,
     "Indigenous American": 1.8
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Northern European": {
       "Scandinavian": {
@@ -381,6 +368,5 @@
         "Aymara": 0.7
       }
     }
-  },
-  "tier": "3"
+  }
 }

@@ -354,7 +354,7 @@ public class GlobalSearchServiceTests
     [Test]
     public void Search_VocabularyRepo_FindsByTerm()
     {
-        vocabulary.Save(new VocabularyEntry {
+        vocabulary.Save(new VocabularyData {
             Term = "Ghost Protocol",
             Definition = "A technique for erasing one's digital footprint."
         });

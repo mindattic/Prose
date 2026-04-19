@@ -16,7 +16,7 @@
     "sounds": [
       "Radio chatter from Civic Guard patrols — coded, disciplined, professional",
       "The mechanical sounds of maintained infrastructure — pumps cycling, generators humming, systems that work",
-      "Children playing in streets that feel safe enough for unsupervised play — a sound extinct in most of the Shelf",
+      "Children playing in streets that feel safe enough for unsupervised play — a sound extinct in most of the Gray Zone",
       "Checkpoint procedure — questions, ID verification, the particular tone of authority exercised at a boundary",
       "Silence between the sounds — Mount Greenvault is quiet in the way that guarded places are quiet"
     ],
@@ -26,11 +26,11 @@
       "Backyard grills — the domestic smell of a neighborhood that can afford to have cookouts",
       "Gun oil — faint but present, the olfactory signature of a community that is armed and maintains its weapons"
     ],
-    "feel": "Safe and suffocating. Mount Greenvault provides something that almost nowhere else in the lower Shelf can offer — genuine physical security, functioning services, maintained infrastructure. The cost is absolute conformity to the Civic Guard's authority and the community's norms, and a boundary between inside and outside that does not bend. It feels like being inside a lifeboat that will not take on more passengers.",
+    "feel": "Safe and suffocating. Mount Greenvault provides something that almost nowhere else in the Gray Zone can offer — genuine physical security, functioning services, maintained infrastructure. The cost is absolute conformity to the Civic Guard's authority and the community's norms, and a boundary between inside and outside that does not bend. It feels like being inside a lifeboat that will not take on more passengers.",
     "tags": []
   },
-  "demographics": "Predominantly white, working-class, with deep roots in municipal law enforcement and fire services. The most demographically homogeneous district in the southern Shelf — a homogeneity maintained through checkpoint access control. Tier 2, self-classified. Population approximately 6,000-8,000.",
-  "economy": "Self-sustaining through a combination of internal labor exchange, Civic Guard service credits, and limited external trade. Some residents commute to employment in corporate security firms, bringing income and intelligence back to the district. The vehicle fleet is a significant economic asset — Mount Greenvault operates one of the few functional motor pools in the lower Shelf, which generates trade value with adjacent districts.",
+  "demographics": "Predominantly white, working-class, with deep roots in municipal law enforcement and fire services. The most demographically homogeneous district in the southern the Gray Zone — a homogeneity maintained through checkpoint access control. Tier 2, self-classified. Population approximately 6,000-8,000.",
+  "economy": "Self-sustaining through a combination of internal labor exchange, Civic Guard service credits, and limited external trade. Some residents commute to employment in corporate security firms, bringing income and intelligence back to the district. The vehicle fleet is a significant economic asset — Mount Greenvault operates one of the few functional motor pools in the Gray Zone, which generates trade value with adjacent districts.",
   "power_structure": "The Greenvault Civic Guard governs with military-adjacent hierarchy — a commanding officer, a chain of command, and departmental divisions (security, infrastructure, supply, medical). The CO position has been held by the same retired police commander for fourteen years. Authority is total within the district and zero outside it. The Guard's legitimacy is based on competence and the social contract that residents accept: protection in exchange for compliance.",
   "dangers": [
     "The checkpoint system creates enemies — excluded residents of adjacent districts view Mount Greenvault with justified resentment",
@@ -40,7 +40,7 @@
     "External threats are assessed through a law-enforcement lens that may not recognize non-traditional dangers"
   ],
   "opportunities": [
-    "The Civic Guard's institutional knowledge of security, infrastructure, and emergency response is the best in the southern Shelf",
+    "The Civic Guard's institutional knowledge of security, infrastructure, and emergency response is the best in the southern the Gray Zone",
     "The vehicle fleet can be hired for transport operations that require ground mobility",
     "Mount Greenvault's functioning infrastructure makes it a potential staging area for operations in adjacent districts",
     "The district's isolation has made it a blind spot for corporate surveillance — what happens inside the checkpoints stays inside",
@@ -90,8 +90,7 @@
     "vehicle",
     "train",
     "survival",
-    "fire",
-    "shelf"
+    "fire"
   ],
   "related_entities": [
     "Vale Migizi-Thammasak",
@@ -104,5 +103,7 @@
     "Glass",
     "Slagworks Industrial",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
-  ]
+  ],
+  "zone": "Z6",
+  "controllingCorponation": null
 }

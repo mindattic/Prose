@@ -44,7 +44,7 @@
     "The lakefront — The Canopy's treated shoreline is the only accessible clean water on the North Shore, and clean water has value"
   ],
   "story_hooks": [
-    "A Canopy resident — a Tessera board member — has requested a discreet meeting with someone from the Shelf, through intermediaries. The agenda is sealed. The urgency is real.",
+    "A Canopy resident — a Tessera board member — has requested a discreet meeting with someone from the Gray Zone, through intermediaries. The agenda is sealed. The urgency is real.",
     "A former staff member, 'rotated' after nine years of service, has surfaced in the Circuit with a neural recording device that was never supposed to leave the estate grounds",
     "The Canopy's perimeter security logged an intrusion that the system immediately reclassified as a false positive. The reclassification was manual. Someone inside authorized it."
   ],
@@ -88,7 +88,6 @@
     "fire",
     "water",
     "lake",
-    "shelf",
     "circuit"
   ],
   "related_entities": [
@@ -104,5 +103,7 @@
     "Axiom Systems Cortical Bomb CB-1 'Leash'",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'",
     "Elena Vasquez-9"
-  ]
+  ],
+  "zone": "Z3",
+  "controllingCorponation": null
 }

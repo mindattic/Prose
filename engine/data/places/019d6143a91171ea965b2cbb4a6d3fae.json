@@ -54,7 +54,7 @@
     "adjacent_to": [
       "McKinley Flats",
       "New Stockton",
-      "The Shelf",
+      "the Gray Zone",
       "Garfield Rack"
     ],
     "exits": [],
@@ -97,5 +97,7 @@
     "Stratum",
     "VitaCore FlowGuard Hemodynamic Regulator",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
-  ]
+  ],
+  "zone": "Z1",
+  "controllingCorponation": null
 }

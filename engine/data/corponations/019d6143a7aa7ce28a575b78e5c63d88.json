@@ -33,5 +33,25 @@
     "The Corridor",
     "The Fathom Line",
     "Toluwani Przhevalskyj-Mboyo"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z5",
+      "Z1",
+      "Z2",
+      "Z3",
+      "Z4",
+      "Z6",
+      "Z7",
+      "Z8",
+      "Z9",
+      "Z10",
+      "Z11",
+      "Z12"
+    ],
+    "primaryZone": "Z5",
+    "lakefrontAccess": false,
+    "description": "The Ferrogate Corridor — 1,400 kilometers of sovereign right-of-way encompassing all operated rail lines plus 50-meter exclusion zones on each side, threading through every GLMZ zone. Primary hub at the former O'Hare International Airport (now GLMZ Interzone Freight Exchange) and Union Station. The only corponation in the Corridor whose territory is formally topological rather than geographic.",
+    "grayZoneRelationship": "Rail lines pass through Gray Zones without stopping — the corridor is sovereign regardless of what surrounds it. Gray Zone communities near Ferrogate lines use proximity for unofficial loading, which Ferrogate tolerates below a volume threshold they have never published."
+  }
 }

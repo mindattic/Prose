@@ -147,7 +147,7 @@ public class StoryDirectorService : IStoryDirectorService
             var districts = db.Districts;
             var location = districts.Count > 0
                 ? districts[Random.Shared.Next(districts.Count)].Name
-                : "The Shelf";
+                : "the Gray Zone";
             story.Location = location;
 
             // Phase 4: Generate outline with mandatory battle beat + world consequences.
@@ -248,7 +248,7 @@ public class StoryDirectorService : IStoryDirectorService
             outlineSvc.MarkBeatWritten(outline, existingBeat.BeatIndex);
 
         // Re-initialize story state from existing beats
-        var location = story.Location ?? "The Shelf";
+        var location = story.Location ?? "the Gray Zone";
         storyState.InitializeCharacter(story.ProjectId, story.Protagonist, location);
         foreach (var c in story.Characters.Where(c => c != story.Protagonist))
             storyState.InitializeCharacter(story.ProjectId, c);

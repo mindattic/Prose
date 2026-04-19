@@ -1,0 +1,46 @@
+{
+  "id": "46034df55c5afa42f64bdaf2766b402f",
+  "name": "Arcturus BW-3 'Bonesaw'",
+  "type": "weapon",
+  "aliases": [],
+  "category": "stun weapon",
+  "description": "A stun baton measuring 55 centimeters in length, delivering a focused electrical discharge through a hardened contact head designed for direct application. Unlike probe-based stun weapons, the BW-3 requires physical contact, which Arcturus markets as a feature — the weapon is a melee tool for close-quarters control that combines blunt-force impact with electrical incapacitation. The discharge cycles at 20 pulses per second, creating a sustained shock effect that continues as long as the contact head remains pressed against the target.\n\nThe BW-3 is standard equipment in Arcturus-managed detention facilities and has a reputation for misuse that Arcturus has done nothing to address. The weapon's sustained-contact design means it can be applied to a restrained subject for any duration the operator chooses, and the 20-pulse-per-second cycle creates a specific kind of pain that subjects describe as having their nervous system rewritten in real time. Detention oversight reports have documented BW-3 application lasting minutes against restrained detainees — far beyond any tactical justification.",
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "tier_availability": "Tier 2+",
+  "legality": "Licensed — security and detention personnel",
+  "street_price": "Φ900",
+  "base_technologies": [
+    "Pulsed electrical discharge",
+    "Impact-hardened contact head",
+    "Sustained application cycling"
+  ],
+  "specifications": "length: 55cm\ncontact discharge: 40,000 volts, 20 pulses/second\npower source: Rechargeable cell, 200 applications per charge\nimpact rating: Equivalent to aluminum baseball bat\nweight: 0.8 kg",
+  "tactical_use": "Close-quarters subject control in detention, crowd control, and security operations. The BW-3 combines the deterrent effect of a visible melee weapon with electrical incapacitation capability. Primarily used against unarmed or restrained subjects.",
+  "cultural_context": "The BW-3 is the weapon most associated with institutional violence in GLMZ. Detention survivors describe it with the kind of specificity that indicates trauma — the exact sound it makes, the precise sensation, the way the pulses feel different depending on where the contact head is applied. 'Getting the bonesaw' is the Gray Zone slang for any experience of systematic, methodical cruelty.",
+  "known_users": [
+    "Arcturus detention facility guards",
+    "Corporate security response teams",
+    "Private security firms",
+    "Known to be available on black market for Φ500"
+  ],
+  "story_hooks": [
+    "A former detention guard has come forward with BW-3 application logs showing that specific detainees were subjected to sustained electrical discharge on a schedule — not as punishment, but as what appears to be a systematic experiment in pain tolerance mapping.",
+    "Modified BW-3 units have appeared in the Gray Zone with the safety limiters removed, allowing discharge levels that cause cardiac arrest. They're being sold for Φ200, and someone is flooding the market deliberately."
+  ],
+  "ammunition_type": [
+    "energy_cell"
+  ],
+  "tags": [
+    "stun",
+    "weapon",
+    "melee",
+    "electrical",
+    "baton",
+    "arcturus",
+    "detention",
+    "violence",
+    "tier 2"
+  ],
+  "physical_description": "A 55cm hardened polymer baton with a reinforced grip wrapped in worn synthetic rubber, its surface scarred from repeated use and impact. The contact head is a flattened disc of oxidized copper-alloy, crackling faintly when powered, with scorch marks radiating outward from years of electrical discharge. A recessed power cell runs the length of the shaft, visible through gaps in the casing where the housing has cracked and been patched with electrical tape.",
+  "visual_prompt": "Arcturus BW-3 Bonesaw stun baton, 55cm hardened polymer melee weapon, worn rubber grip, oxidized copper contact head with scorch marks, electrical discharge scarring, industrial neo-noir, gritty product photography, dark background, detailed close-up, cyberpunk detention facility equipment, rain-slicked, dystopian near-future"
+}

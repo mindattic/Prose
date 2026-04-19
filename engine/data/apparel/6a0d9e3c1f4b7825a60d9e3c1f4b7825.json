@@ -3,7 +3,7 @@
   "name": "Broad-Stripe Knit Track Pants (Worn)",
   "type": "apparel",
   "category": "pants",
-  "description": "A common item in Shelf thrift bins — wide-leg knit track pants in faded colors, usually with a contrast stripe down each leg that has seen better days. The elastic waistband is stretched out and often cinched with a cord or safety pin. Soft, comfortable, and completely unpretentious. Once a Tier 2 athletic brand's budget line; now a Shelf staple.",
+  "description": "A common item in the Gray Zone thrift bins — wide-leg knit track pants in faded colors, usually with a contrast stripe down each leg that has seen better days. The elastic waistband is stretched out and often cinched with a cord or safety pin. Soft, comfortable, and completely unpretentious. Once a Tier 2 athletic brand's budget line; now a the Gray Zone staple.",
   "tier_association": "Tier 1",
   "materials": [
     "degraded poly-knit",
@@ -13,8 +13,8 @@
   "functionality": "none",
   "what_it_says": "Comfort over everything. You're not performing for anyone.",
   "worn_by": [
-    "Shelf residents at rest",
-    "elderly Shelf residents",
+    "the Gray Zone residents at rest",
+    "elderly the Gray Zone residents",
     "anyone who values comfort over appearance"
   ],
   "manufacturer": "Probably Corvex Sportswear (defunct budget line) / origin unclear",
@@ -22,7 +22,7 @@
   "aug_compatible": true,
   "gene_compatible": true,
   "story_hooks": [
-    "A specific colorway of these pants was issued to residents of a Shelf block shelter ten years ago — wearing them marks you as a survivor of whatever happened there.",
+    "A specific colorway of these pants was issued to residents of a the Gray Zone block shelter ten years ago — wearing them marks you as a survivor of whatever happened there.",
     "Someone has sewn a slim, flat object into the waistband casing — it's been passed through four owners without anyone noticing."
   ],
   "tags": [
@@ -32,7 +32,6 @@
     "track pants",
     "knit",
     "comfortable",
-    "shelf",
     "thrift",
     "worn"
   ],
@@ -58,8 +57,8 @@
       "Interior waistband seam visible from stretching",
       "Slight bagging at knees from repeated sitting"
     ],
-    "tier_indicator": "Tier 5 / Shelf economy. Once Tier 2 athletic budget line; now exclusively found in thrift, salvage, or sub-grade circulation.",
-    "cultural_context": "Shelf dweller, gig worker, or someone who values comfort over presentation. Worn by people cycling through Corvex athletic lines before they hit the thrift bins—construction workers, warehouse staff, night-shift service jobs. No aspirational content. Signals practical utility and detachment from consumption cycles.",
+    "tier_indicator": "Tier 5 / the Gray Zone economy. Once Tier 2 athletic budget line; now exclusively found in thrift, salvage, or sub-grade circulation.",
+    "cultural_context": "the Gray Zone dweller, gig worker, or someone who values comfort over presentation. Worn by people cycling through Corvex athletic lines before they hit the thrift bins—construction workers, warehouse staff, night-shift service jobs. No aspirational content. Signals practical utility and detachment from consumption cycles.",
     "condition_typical": "Weathered and patched. Expect stretched waistband, faded color, minor staining, pilling, and worn hem. The drawcord is often replaced or secured with safety pins. Seams may show slight fraying. Completely worn-in, not broken-down—it's just *tired*."
   },
   "image_prompt": "Worn Corvex Sportswear track pants on a lean, angular neo-noir figure in dim neon warehouse lighting. Wide-leg knit silhouette with faded charcoal base and dulled contrast stripe running down each leg. Drawcord cinched with visible safety pin at waistband. Pilling visible at hip and inner thigh. Shot from waist-down against a weathered metal wall with green biolume accent light casting shadows. Dark, moody, unglamorous. --ar 2:3 --v 6",

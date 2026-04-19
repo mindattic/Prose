@@ -1,0 +1,78 @@
+{
+  "id": "eef11fbb25b56d4c14f336cd895912a8",
+  "type": "faction",
+  "name": "The Open Syllabus",
+  "aliases": [],
+  "motto": "What they don't teach you is what they don't want you to know.",
+  "description": "The Open Syllabus is an underground education collective operating illegal schools throughout the Gray Zone and lower Circuit, providing instruction in subjects that the corporate-controlled education system has deliberately excluded from its curriculum: critical history, independent scientific methodology, civil rights law, corporate structure analysis, and what the Syllabus calls 'systems literacy' -- the ability to understand how the interlocking corporate, political, and technological systems of GLMZ actually function and whose interests they serve. In a city where education is a corporate product designed to produce compliant workers, the Open Syllabus produces something far more dangerous: people who ask questions.\n\nThe Syllabus was founded in 2191 by a consortium of fired educators -- teachers dismissed from corporate school systems for deviating from approved curricula. The triggering event was the 2190 Education Standardization Act, a Meridian Quorum regulation written by TESSERA lobbyists that mandated all educational institutions follow a corporate-approved curriculum emphasizing vocational training, brand literacy, and what critics called 'compliance conditioning.' History courses were stripped of any content that cast corporate governance in an unfavorable light. Science education was restructured around corporate research priorities. Critical thinking modules were replaced with 'productive reasoning' -- a pedagogical framework that taught students to solve problems within existing systems rather than question the systems themselves.\n\nThe dismissed educators refused to stop teaching. They established informal schools in community spaces, private homes, and any location that could hold a dozen students and a teacher for a few hours. The network grew as demand proved insatiable -- parents who recognized the corporate curriculum's limitations, young adults seeking education beyond vocational training, and older residents who had lived through enough history to know when it was being erased. Today, the Open Syllabus operates approximately forty active classroom sites serving an estimated 6,000 students ranging from children to senior citizens, with a teaching corps of over 200 educators, many of them volunteers who maintain legitimate employment while teaching for the Syllabus after hours.",
+  "ideology": "Education is not workforce development. It is the cultivation of the capacity to think independently, question authority, and understand the systems that shape one's life. Corporate education produces workers. The Open Syllabus produces citizens -- and in a city without citizenship, that is a revolutionary act.",
+  "territory": "Approximately forty classroom sites rotating through community spaces, private homes, and sympathetic businesses throughout the Gray Zone and lower Circuit. No permanent facilities -- the Syllabus moves its classrooms regularly to avoid detection.",
+  "leadership": "The Syllabus is coordinated by a body called the Faculty, consisting of senior educators who set curriculum standards and manage logistics. The Faculty's Chair is Professor Adaeze Obi-Rasmussen, a former university historian whose published work on corporate governance history was classified as 'seditious misinformation' under the Education Standardization Act.",
+  "methods": [
+    "Rotating classroom sites in community spaces, private homes, and sympathetic businesses",
+    "Curriculum development in banned subjects including critical history and systems analysis",
+    "Teacher training programs that prepare volunteers for underground instruction",
+    "Physical textbooks and printed materials that cannot be remotely deleted or altered",
+    "Mentorship networks that connect students with professionals willing to share practical knowledge",
+    "Public lectures disguised as community gatherings to avoid education regulations"
+  ],
+  "resources": [
+    "Over 200 active educators including volunteers with legitimate day jobs",
+    "Approximately 6,000 students across all age ranges",
+    "Physical libraries of printed texts that preserve suppressed historical and scientific material",
+    "Curriculum materials developed outside corporate editorial control",
+    "Network of sympathetic community spaces willing to host rotating classrooms",
+    "Graduate network of former students now in positions throughout GLMZ's social structure"
+  ],
+  "goals": [
+    "Provide comprehensive education in critical thinking and systems literacy to anyone willing to learn",
+    "Preserve historical and scientific knowledge that corporate curricula have erased or distorted",
+    "Build a generation of GLMZ residents capable of understanding and challenging the systems that govern them",
+    "Eventually establish legitimate educational institutions outside corporate curricular control"
+  ],
+  "relationships": [
+    {
+      "name": "TESSERA Industries",
+      "type": "enemy",
+      "description": "TESSERA authored the Education Standardization Act and views the Syllabus as a direct threat to its investment in compliant workforce development. TESSERA's legal division classifies Syllabus operations as intellectual property theft and unlicensed vocational training.",
+      "tags": [
+        "corporate",
+        "conflict",
+        "education"
+      ]
+    },
+    {
+      "name": "The Dead Air Collective",
+      "type": "partner",
+      "description": "Dead Air broadcasts educational programming developed by Syllabus teachers, extending the Collective's reach far beyond its physical classrooms.",
+      "tags": [
+        "media",
+        "cooperation",
+        "education"
+      ]
+    },
+    {
+      "name": "The Suture Collective",
+      "type": "ally",
+      "description": "The Syllabus trains Suture's field medics in medical theory and practice, while Suture practitioners teach Syllabus students practical healthcare skills.",
+      "tags": [
+        "mutual-aid",
+        "education"
+      ]
+    }
+  ],
+  "narrative_function": "The Open Syllabus represents the conviction that knowledge is the precondition for freedom -- that a population trained to accept the world as given cannot change it, and that the most subversive act in a corporate city is teaching people to think for themselves.",
+  "story_hooks": [
+    "A Syllabus teacher has been arrested and charged with seditious instruction -- a crime that carries a ten-year corporate labor assignment. The evidence is a cache of printed history texts that document pre-corporate Meridian governance. The trial will set a precedent for whether independent education is legal.",
+    "A Syllabus graduate now working inside TESSERA's education division has discovered plans to implement mandatory neural-download learning modules that would make independent study unnecessary -- and would give TESSERA the ability to shape what every student in GLMZ knows and believes.",
+    "The Syllabus has obtained a complete pre-Collapse university library archive on physical media. The archive contains scientific and historical material that contradicts decades of corporate-approved narratives. Distributing it would be transformative -- and would make the Syllabus the most hunted organization in GLMZ."
+  ],
+  "tags": [
+    "faction",
+    "education",
+    "underground",
+    "knowledge",
+    "circuit",
+    "resistance"
+  ]
+}

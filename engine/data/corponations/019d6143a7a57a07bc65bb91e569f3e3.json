@@ -37,5 +37,14 @@
     "Saltmarsh Telecom",
     "Tender Collapse",
     "The Corridor"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z∞"
+    ],
+    "primaryZone": "Z∞",
+    "lakefrontAccess": true,
+    "description": "The Bathysphere Deep Territories — 12,000 square kilometers of sovereign subsurface space beneath Lake Michigan, extending 40 meters below the lake bed. Bathysphere Hub primary installation sits 40 meters below the lake surface near the former Chicago lakefront. The sole sovereign entity of Zone ∞ and the most strategically critical infrastructure corponation in the Corridor.",
+    "grayZoneRelationship": "Operates below-market access agreements with Gray Zone councils for subsurface data and power connectivity. The fees are modest; the dependency is absolute."
+  }
 }

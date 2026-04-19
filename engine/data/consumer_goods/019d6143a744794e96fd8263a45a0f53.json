@@ -13,9 +13,9 @@
   "price": "Φ0.70",
   "popularity_rank": 40,
   "slogan": "Full flavor, real price.",
-  "cultural_context": "Auren Jackfruit-Mango Pulse is the drink of the Shelf's warmer months — cheap, intensely sweet, and sold in 500ml cans that go warm fast in the heat of lower-tier districts. It's not prestigious, but it's present at every communal gathering, every street market stall, every informal celebration where budget is the first consideration. The sweetness is calibrated for people whose palates have been shaped by synth-food from birth.",
+  "cultural_context": "Auren Jackfruit-Mango Pulse is the drink of the Gray Zone's warmer months — cheap, intensely sweet, and sold in 500ml cans that go warm fast in the heat of lower-tier districts. It's not prestigious, but it's present at every communal gathering, every street market stall, every informal celebration where budget is the first consideration. The sweetness is calibrated for people whose palates have been shaped by synth-food from birth.",
   "story_hooks": [
-    "Auren Refreshments is one of the few major beverage companies with genuine Shelf-level distribution infrastructure — a humanitarian organization wants to use that network to distribute medical supplies, and Auren's CEO is weighing the risks and leverage.",
+    "Auren Refreshments is one of the few major beverage companies with genuine the Gray Zone-level distribution infrastructure — a humanitarian organization wants to use that network to distribute medical supplies, and Auren's CEO is weighing the risks and leverage.",
     "A batch of Auren Jackfruit-Mango Pulse distributed in a specific Tier 1 sector has an unusual chemical signature — not harmful, but consistent with an additive that wasn't in the formula, and someone added it deliberately.",
     "A Tier 4 food critic wrote a dismissive piece about Auren that went viral — the backlash from Tier 1 and 2 communities was intense and organized, revealing a degree of brand loyalty and community solidarity that surprised everyone, including Auren itself."
   ],
@@ -31,7 +31,6 @@
     "food",
     "drink",
     "candy",
-    "shelf",
     "tier 1",
     "tier 2"
   ],
@@ -39,7 +38,6 @@
   "related_entities": [
     "Kang-Petrov Arms KPA-8 'Solidarity'",
     "Patient Zero",
-    "TESSERA PG-2 'Signature'",
-    "The Shelf"
+    "TESSERA PG-2 'Signature'"
   ]
 }

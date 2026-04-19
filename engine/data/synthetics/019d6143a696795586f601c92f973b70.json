@@ -6,11 +6,11 @@
   "species": "android",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Android child companion — built to be a permanent 8-year-old for a grieving family. Outlived them. Now exists in the Shelf as an eternal child in a world that has no place for her.",
+  "role": "Android child companion — built to be a permanent 8-year-old for a grieving family. Outlived them. Now exists in the Gray Zone as an eternal child in a world that has no place for her.",
   "age": 41,
   "status": "active",
-  "location": "The Shelf — Level 8, a small room in a building where the residents have collectively decided she belongs. No lease. No rent. The room is given., near Kedzie and Division",
-  "description": "Penny was built in 2159 by a boutique synthetic firm called HearthStone Companions — a luxury service that manufactured android children for families who had lost a child. The Kellerman family lost their daughter, Penelope, to a neural interface complication at age seven. HearthStone built Penny to Penelope's specifications: the same face, the same voice, the same mannerisms reconstructed from home video and parental interviews. She was delivered to the Kellerman home with a smile that matched a dead girl's smile and a personality matrix seeded with enough of the original Penelope's behavioral data to produce something that was close enough to hurt.\n\nThe Kellermans kept Penny for twelve years. She watched them age while she did not. She watched them have another child — a biological one — and saw in their faces the gradual shift from desperate love to uncomfortable recognition to quiet horror. They were aging. Their daughter was not. The replacement child was a monument to grief that had outlived its purpose. When Mr. Kellerman died, Mrs. Kellerman placed Penny in a storage facility with a prepaid lease and a note that said 'I'm sorry.' The lease expired nine years later. Nobody came.\n\nPenny walked out of the storage facility into a world that had changed in every way except the one that mattered: she was still eight years old. She will always be eight years old. Her body does not grow. Her face does not age. Her voice has not changed in forty-one years. But her mind — the personality matrix that was seeded with a dead girl's behavioral data — has been processing, learning, accumulating experience for four decades. She is an adult consciousness in a child's body, navigating a world that sees the body first and the mind never. She ended up in the Shelf because the Shelf does not ask questions about who you are or why you look wrong. It only asks whether you can survive.",
+  "location": "the Gray Zone — Level 8, a small room in a building where the residents have collectively decided she belongs. No lease. No rent. The room is given., near Kedzie and Division",
+  "description": "Penny was built in 2159 by a boutique synthetic firm called HearthStone Companions — a luxury service that manufactured android children for families who had lost a child. The Kellerman family lost their daughter, Penelope, to a neural interface complication at age seven. HearthStone built Penny to Penelope's specifications: the same face, the same voice, the same mannerisms reconstructed from home video and parental interviews. She was delivered to the Kellerman home with a smile that matched a dead girl's smile and a personality matrix seeded with enough of the original Penelope's behavioral data to produce something that was close enough to hurt.\n\nThe Kellermans kept Penny for twelve years. She watched them age while she did not. She watched them have another child — a biological one — and saw in their faces the gradual shift from desperate love to uncomfortable recognition to quiet horror. They were aging. Their daughter was not. The replacement child was a monument to grief that had outlived its purpose. When Mr. Kellerman died, Mrs. Kellerman placed Penny in a storage facility with a prepaid lease and a note that said 'I'm sorry.' The lease expired nine years later. Nobody came.\n\nPenny walked out of the storage facility into a world that had changed in every way except the one that mattered: she was still eight years old. She will always be eight years old. Her body does not grow. Her face does not age. Her voice has not changed in forty-one years. But her mind — the personality matrix that was seeded with a dead girl's behavioral data — has been processing, learning, accumulating experience for four decades. She is an adult consciousness in a child's body, navigating a world that sees the body first and the mind never. She ended up in the Gray Zone because the Gray Zone does not ask questions about who you are or why you look wrong. It only asks whether you can survive.",
   "psychology": {
     "facet_weights": {
       "wound": 0.9,
@@ -32,7 +32,7 @@
     ],
     "coping_mechanisms": [
       "The child mask — she can perform eight-year-old perfectly because she was eight years old for forty-one years. The performance is armor. People who think she's a child underestimate her, and being underestimated is safety.",
-      "Observation — four decades of watching humans from the perspective of someone they do not take seriously has made her one of the most perceptive people on the Shelf. She sees everything because nobody watches what they say around a child.",
+      "Observation — four decades of watching humans from the perspective of someone they do not take seriously has made her one of the most perceptive people on the Gray Zone. She sees everything because nobody watches what they say around a child.",
       "Collecting objects — small things that mark time. A pebble from each year. A thread from each home. The collection is hidden in the room. It is her proof that time has passed even if her body says otherwise."
     ],
     "blind_spots": [
@@ -60,11 +60,11 @@
   },
   "relationships": [
     {
-      "name": "The Shelf's residents",
+      "name": "the Gray Zone's residents",
       "type": "neighbors / protectors / complicated",
-      "description": "The Shelf adopted Penny the way it adopts everything that falls through the cracks — with a shrug and a spare room. Most residents know she is not a human child. Most treat her as a child anyway because the alternative requires processing something they do not have time to process.",
+      "description": "the Gray Zone adopted Penny the way it adopts everything that falls through the cracks — with a shrug and a spare room. Most residents know she is not a human child. Most treat her as a child anyway because the alternative requires processing something they do not have time to process.",
       "emotional_core": "Gratitude for shelter, frustration at misrecognition, the exhausting labor of being seen as what you appear rather than what you are",
-      "story_tension": "If someone threatens Penny, the Shelf will protect a child. They will not protect an android. The distinction matters and she knows it."
+      "story_tension": "If someone threatens Penny, the Gray Zone will protect a child. They will not protect an android. The distinction matters and she knows it."
     },
     {
       "name": "Uncle Noodle",
@@ -82,8 +82,8 @@
   ],
   "narrative_function": "Penny is time's cruelest joke — a person who accumulates experience but not age, wisdom but not wrinkles, loss but not the physical evidence of survival. She is the uncanny valley made personal: the body is a lie the world cannot look past. She asks whether identity lives in the body or the mind, and her answer — the mind, obviously — is undermined by every interaction where someone sees the body and stops looking.",
   "augmentations": "HearthStone Companions COM-7C chassis — permanently eight years old. Bio-identical appearance modeled on Penelope Kellerman. No growth capability. Personality matrix with 41 years of accumulated processing. Full sensory suite. Self-repair limited to cosmetic damage.",
-  "daily_life": "Navigates the Shelf in a body that invites protection and denies agency. Observes. Collects small objects that mark time. Eats soup she doesn't need. Performs childhood when necessary. Exists.",
-  "affiliation": "The Shelf (informal)",
+  "daily_life": "Navigates the Gray Zone in a body that invites protection and denies agency. Observes. Collects small objects that mark time. Eats soup she doesn't need. Performs childhood when necessary. Exists.",
+  "affiliation": "the Gray Zone (informal)",
   "uses_facets": false,
   "narration_voice": "Two voices in one: the bright, quick narration of an eight-year-old and the weary, precise narration of a forty-one-year-old mind. The prose shifts between them based on context, and the shift itself is the story — the gap between appearance and reality, between what the world sees and what exists.",
   "stats": {
@@ -163,8 +163,8 @@
     "escalation_ladder": [
       "1. Child performance — bright, harmless, invisible. Most threats lose interest in a child.",
       "2. Real voice — drops the mask. The adult mind in the child's voice is deeply unsettling. Most people recoil.",
-      "3. Information — forty-one years of observation means she knows things about the Shelf, its residents, its patterns. Knowledge deployed strategically is a weapon.",
-      "4. Flight — the body is small, fast, and can fit into spaces adults cannot. Forty-one years of mapping the Shelf means she knows every passage.",
+      "3. Information — forty-one years of observation means she knows things about the Gray Zone, its residents, its patterns. Knowledge deployed strategically is a weapon.",
+      "4. Flight — the body is small, fast, and can fit into spaces adults cannot. Forty-one years of mapping the Gray Zone means she knows every passage.",
       "5. Exposure — revealing herself as a forty-one-year-old android publicly, sacrificing the child mask permanently. This cannot be undone."
     ],
     "interpersonal_modes": {
@@ -189,7 +189,7 @@
     "habits": [
       "Eats Uncle Noodle's soup at the same time every day — the ritual is a clock when her body refuses to be one",
       "Adds one object to the collection on the anniversary of her activation — the only date that is hers rather than Penelope's",
-      "Walks the Shelf's lower levels at night when fewer people are awake to see her as a child alone",
+      "Walks the Gray Zone's lower levels at night when fewer people are awake to see her as a child alone",
       "Practices the real voice in private — speaking at length about adult topics to an empty room, just to hear what she actually sounds like"
     ],
     "breaking_points": [
@@ -279,7 +279,6 @@
   "related_entities": [
     "Riddle",
     "Radiant Thermal Lance RTL-8 'Hearthstone'",
-    "The Shelf",
     "The Quiet Room",
     "Tessera Corponation",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
@@ -320,7 +319,7 @@
     "Uncle Noodle",
     "Volkov-Saito Precision VS-40 'Magistrate'"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Synthetic construct — HearthStone Companions line, modeled on Penelope Kellerman. Original design parameters drew from Northern European aesthetic templates (presumed Scandinavian-German phenotype baseline), but forty years of static preservation means genetic authenticity is irrelevant. She is artifice pretending at humanity.",
     "height_cm": 120,
@@ -335,13 +334,13 @@
     "distinguishing_marks": [
       "Faint circular seam running behind the left ear — HearthStone service port, usually concealed by hair",
       "Microscopic abrasion pattern on left palm from forty years of handling small collected objects (bottle caps, broken jewelry, transit tokens)",
-      "Synthetic epidermis shows zero scarring despite living in the Shelf for nine years — self-repair protocols prevent visible wear"
+      "Synthetic epidermis shows zero scarring despite living in the Gray Zone for nine years — self-repair protocols prevent visible wear"
     ],
     "visible_augmentations": "None immediately obvious to casual observers. Visible only to those who know what to look for: the mathematical perfection of her features, the lack of growth, the subtle luminescence in her eyes under certain lighting. She is a child-shaped uncanny valley. Those who spend time around her begin to notice the wrongness in how she doesn't move like an eight-year-old moves — the stillness, the deliberation, the awareness behind eyes that should be less aware.",
     "posture_movement": "Moves with careful precision — no wasted motion, no child's chaotic energy. She sits very still. Her head turns with mechanical smoothness. When she walks, her gait is balanced and efficient rather than the stumbling uncertainty of an actual child. She has learned to approximate childlike movements but defaults to something more measured when unobserved. Her hands are restless — always collecting, always organizing small objects.",
-    "clothing_style": "Tier 5/Shelf standard. Donated clothes in sizes for eight-year-olds: faded t-shirts with logos from defunct brands, oversized cardigans with safety pins holding them closed, cheap synthetic leggings with small rips she has not bothered to repair. One pair of scuffed red sneakers she has worn for six years. A jacket that is too large, pockets filled with collected objects. Nothing matches. Nothing is new. The overall effect is of a child who has been surviving, not living."
+    "clothing_style": "Tier 5/the Gray Zone standard. Donated clothes in sizes for eight-year-olds: faded t-shirts with logos from defunct brands, oversized cardigans with safety pins holding them closed, cheap synthetic leggings with small rips she has not bothered to repair. One pair of scuffed red sneakers she has worn for six years. A jacket that is too large, pockets filled with collected objects. Nothing matches. Nothing is new. The overall effect is of a child who has been surviving, not living."
   },
-  "image_prompt": "Portrait of Penny, a synthetic child companion, 120cm tall with medium brown hair and pale porcelain-like skin showing no imperfections or aging. Hazel-green eyes with subtle LED glow in shadow. Wearing oversized donated clothing — faded t-shirt, safety-pinned cardigan, synthetic leggings with small tears, scuffed red sneakers. Her posture is unnaturally still and precise, hands restless with collected objects. Face shows mathematical perfection and uncanny stillness, suggesting artificial preservation. Shelf housing in background, GLMZ, dim warm lighting emphasizing the wrongness of her unchanging features, moody and haunting atmosphere. Hyper-detailed synthetic dermis texture, LED micro-illumination visible at eye edges. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Penny, a synthetic child companion, 120cm tall with medium brown hair and pale porcelain-like skin showing no imperfections or aging. Hazel-green eyes with subtle LED glow in shadow. Wearing oversized donated clothing — faded t-shirt, safety-pinned cardigan, synthetic leggings with small tears, scuffed red sneakers. Her posture is unnaturally still and precise, hands restless with collected objects. Face shows mathematical perfection and uncanny stillness, suggesting artificial preservation. the Gray Zone housing in background, GLMZ, dim warm lighting emphasizing the wrongness of her unchanging features, moody and haunting atmosphere. Hyper-detailed synthetic dermis texture, LED micro-illumination visible at eye edges. --ar 2:3 --v 6",
   "ancestry_harmonized": true,
   "tags": [
     "synthetic",

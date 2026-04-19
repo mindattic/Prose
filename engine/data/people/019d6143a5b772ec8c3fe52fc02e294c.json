@@ -9,8 +9,8 @@
   "role": "Network intrusion and digital warfare specialist — netrunner",
   "age": 25,
   "status": "active",
-  "location": "The Shelf — lower district tenements near the old lakeshore, near Halsted and Chicago Ave",
-  "description": "Luca Kabwit-Okonkwo is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 25, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a netrunner out of The Shelf, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nLuca Kabwit-Okonkwo operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "location": "the Gray Zone — lower district tenements near the old lakeshore, near Halsted and Chicago Ave",
+  "description": "Luca Kabwit-Okonkwo is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 25, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a netrunner out of the Gray Zone, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nLuca Kabwit-Okonkwo operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.92,
@@ -259,7 +259,7 @@
     "Manipulator": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -273,13 +273,12 @@
   ],
   "registered_firearms": [],
   "related_entities": [
-    "The Shelf",
     "Chicago",
     "Neuromorphic Pressure Cestus",
     "Slagworks Industrial",
     "GLMZ"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Predominantly Sub-Saharan African (60.3%) with substantial South Asian (27.0%) influence, creating a striking genetic blend. Minor Eastern European (6.4%) and Middle Eastern (6.3%) ancestry add subtle undertones. The combination produces warm, deep tones with layered complexity — African richness interwoven with South Asian warmth and faint Mediterranean undertones.",
     "height_cm": 188,

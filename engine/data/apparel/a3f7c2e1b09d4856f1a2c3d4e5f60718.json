@@ -3,7 +3,7 @@
   "name": "Ashwall Ironblood Claimant's Colors Jacket",
   "type": "apparel",
   "category": "cultural",
-  "description": "A heavy-canvas moto-cut jacket in oxidized burgundy, worn by members of the Ironblood Shelf gang network. Back panel features hand-embroidered territorial sigils in copper wire thread — specific stitch patterns denote block, rank, and kill-count by those who know how to read them. Front lapels bear heat-pressed patch clusters: faction crest, allied crew marks, and a narrow black stripe for each year of standing.\n\nCuffs are raw-cut and re-stitched with salvaged industrial webbing. Most jackets show deliberate acid-bleach scoring along the left shoulder — a ritual mark applied upon initiation. No two are identical; forgeries are spotted immediately by the asymmetry of authentic hand-work.",
+  "description": "A heavy-canvas moto-cut jacket in oxidized burgundy, worn by members of the Ironblood the Gray Zone gang network. Back panel features hand-embroidered territorial sigils in copper wire thread — specific stitch patterns denote block, rank, and kill-count by those who know how to read them. Front lapels bear heat-pressed patch clusters: faction crest, allied crew marks, and a narrow black stripe for each year of standing.\n\nCuffs are raw-cut and re-stitched with salvaged industrial webbing. Most jackets show deliberate acid-bleach scoring along the left shoulder — a ritual mark applied upon initiation. No two are identical; forgeries are spotted immediately by the asymmetry of authentic hand-work.",
   "tier_association": "Tier 1",
   "materials": [
     "reclaimed heavy canvas",
@@ -13,10 +13,10 @@
     "scrap leather collar trim"
   ],
   "functionality": "Reinforced canvas provides mild blunt-force protection. Interior pocket sewn for blade or compact tool. Aug-compatible left sleeve has snap-out panel for chrome arm clearance.",
-  "what_it_says": "I am claimed, I am known, and the Shelf knows exactly where I stand.",
+  "what_it_says": "I am claimed, I am known, and the Gray Zone knows exactly where I stand.",
   "worn_by": [
     "Ironblood gang members",
-    "Shelf territory enforcers",
+    "the Gray Zone territory enforcers",
     "long-standing crew veterans"
   ],
   "manufacturer": "Self-made / collective crew craft",
@@ -26,13 +26,12 @@
   "story_hooks": [
     "A runner finds a jacket with seven kill-stripes abandoned in a neutral zone — someone wants it found.",
     "A Tier 3 fashion designer is caught selling 'authentic Ironblood aesthetic' knock-offs upstack; the crew wants a conversation.",
-    "A new arrival on the Shelf is offered a jacket with no patches yet — a blank slate invitation with strings attached."
+    "A new arrival in the Gray Zone is offered a jacket with no patches yet — a blank slate invitation with strings attached."
   ],
   "tags": [
     "apparel",
     "cultural",
     "gang",
-    "shelf",
     "tier-1",
     "territorial",
     "handmade",
@@ -47,7 +46,6 @@
     "Nkechi Alvarado-Ostrowski",
     "Sorin Ekwensi-Balasanyan",
     "The Bleach Boys",
-    "The Shelf",
     "Universal Pathogen Resistance"
   ],
   "physical_description": {
@@ -66,7 +64,7 @@
       "Oxidized burgundy patina suggesting age and street weathering"
     ],
     "tier_indicator": "Tier 4-5 street/sub-grade. Handmade collective craft, not commercial manufacture. Signals ungoverned gang affiliation and earned standing.",
-    "cultural_context": "Ironblood Shelf gang network member. Wearing this jacket is a direct claim to territorial control, crew loyalty, and personal combat history. The embroidered sigils and patch marks serve as a resume for those who can read gang heraldry. Forgery is a serious offense.",
+    "cultural_context": "Ironblood the Gray Zone gang network member. Wearing this jacket is a direct claim to territorial control, crew loyalty, and personal combat history. The embroidered sigils and patch marks serve as a resume for those who can read gang heraldry. Forgery is a serious offense.",
     "condition_typical": "Deliberately worn and weathered. Canvas shows fading, acid scarring, and patina. Patches may be newer or older depending on wearer's tenure. Stitching intentionally irregular to prove hand-craft authenticity. Looks lived-in and battle-marked."
   },
   "image_prompt": "Close-fitting fashion shot of an Ashwall Ironblood Claimant's Colors Jacket on a lean neo-noir model with visible augmentation scars. Heavy oxidized burgundy canvas moto-cut jacket with hand-embroidered copper sigils visible on back panel. Front shows layered patch clusters and black stripe tally marks. Acid-bleached ritual scarring visible on left shoulder. Raw-edged cuffs with industrial webbing. Moody neon-lit warehouse backdrop, cool blue and amber lighting emphasizing metallic thread and weathered texture. Shallow depth of field on embroidery detail. Gritty, street-level perspective. --ar 2:3 --v 6",

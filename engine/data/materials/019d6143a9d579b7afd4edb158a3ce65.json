@@ -33,7 +33,7 @@
   "tier_availability": "Tier 2-3",
   "cost": "Φ380 per square meter (raw mesh); Φ890 per square meter (garment-integrated)",
   "story_hooks": [
-    "Aeromesh-7 is heavily regulated — civilian-grade is rated to stop a knife and a low-velocity round, but a black-market variant with military-spec shear response has been circulating in the Shelf. Someone is manufacturing it in a basement fab-shop using stolen Tessera process files.",
+    "Aeromesh-7 is heavily regulated — civilian-grade is rated to stop a knife and a low-velocity round, but a black-market variant with military-spec shear response has been circulating in the Gray Zone. Someone is manufacturing it in a basement fab-shop using stolen Tessera process files.",
     "A fixer hires the crew to recover a prototype Aeromesh-7 variant that Tessera claims can stop a 12mm armor-piercing round at concealable thickness. The problem: the prototype is already being worn by someone who doesn't want to give it back.",
     "A Veilweave Textiles designer approaches the crew — she's been embedding tracking threads into Aeromesh garments sold to a specific clientele and has been quietly mapping where they go. She has information that could destroy several powerful people, and she needs help before Tessera finds out what she's done."
   ],
@@ -46,7 +46,6 @@
     "market",
     "vehicle",
     "armor",
-    "shelf",
     "tier 2",
     "tier 3"
   ],
@@ -55,7 +54,6 @@
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
     "Subdermal Shear Projector SSP-1 'Faultline'",
     "Tessera Corponation",
-    "Tessera Nexus Town Car",
-    "The Shelf"
+    "Tessera Nexus Town Car"
   ]
 }

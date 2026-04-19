@@ -1,5 +1,6 @@
 {
   "id": "019d6143a6067825becb43733669cfb8",
+  "rating": 25,
   "type": "character",
   "name": "Briar Arakawa",
   "aliases": [],
@@ -9,7 +10,7 @@
   "role": "Fixer - Moral contracts only",
   "age": 62,
   "status": "active",
-  "location": "The Shelf, near Halsted and Chicago Ave",
+  "location": "the Gray Zone, near Halsted and Chicago Ave",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -30,7 +31,11 @@
     "vocabulary": "",
     "cadence": "",
     "verbal_tics": [],
-    "example_lines": []
+    "example_lines": [],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [],
@@ -85,7 +90,7 @@
     "Manipulator": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -93,15 +98,11 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Shelf",
-    "Chicago"
-  ],
-  "district": "The Shelf",
   "physical_description": {
     "heritage": "Tricontinent blend with dominant South Asian (26.2%), Middle Eastern (25.3%), and East Asian (24.7%) ancestry, anchored by Pacific Islander warmth (18.0%) and subtle Northern European fairness (5.8%). The genetic mix creates striking angular cheekbones and defined facial structure from South Asian-Middle Eastern bone architecture, refined and sharpened by East Asian heritage, while Pacific Islander genetics add warm golden undertones and broader facial width. Northern European ancestry manifests as subtle fairness in skin luminosity rather than overt paleness.",
     "height_cm": 168,
@@ -124,6 +125,7 @@
     "clothing_style": "Tier 3-4 practical wear: reinforced dark denim jacket with internal pockets, gray thermal base layer, heavy-duty canvas pants with cargo pockets. Black steel-toed boots, scuffed and well-maintained. Minimal jewelry—only a simple silver ring on left ring finger. No corp branding; all clothing is utilitarian, durable, and sourced from secondary markets. Watch is mechanical, not digital."
   },
   "image_prompt": "Portrait of Briar Arakawa, a 168cm stocky woman with broad shoulders and functional muscle tone, standing in GLMZ Great Lakes Metropolitan Zone. Medium steel-gray hair with dark roots pulled tight in practical braid. Deep brown assessing eyes. Warm bronze skin with golden-amber undertones reflecting tricontinent ancestry—sharp South Asian-Middle Eastern cheekbones refined by East Asian heritage, warmed by Pacific Islander genetics into prominent, defined facial structure. Weathered complexion with visible sun damage, pronounced laugh lines, thin white scar from left cheekbone to jawline, faded geometric tattoo on right forearm. Wearing reinforced dark denim jacket over gray thermal layer, heavy-duty canvas pants, black steel-toed boots. Simple silver ring on left ring finger. Mechanical watch. Standing forward on balls of feet, direct gaze, economical posture. Dystopian urban background with neon glow, shadows emphasizing facial angles and scars. Cinematic lighting highlighting warm bronze undertones and character lines. Serious, composed expression. Neo-noir utilitarian aesthetic. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "South Asian": 26.2,
     "Middle Eastern": 25.3,
@@ -131,12 +133,6 @@
     "Pacific Islander": 18,
     "Northern European": 5.8
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "South Asian": {
       "Pakistani": {
@@ -171,6 +167,5 @@
         "Irish": 2.6
       }
     }
-  },
-  "tier": "3"
+  }
 }

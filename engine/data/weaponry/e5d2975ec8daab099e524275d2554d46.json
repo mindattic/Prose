@@ -4,7 +4,7 @@
   "type": "weapon",
   "aliases": [],
   "category": "concealed weapon",
-  "description": "A single-shot firearm built into an oversized ring worn on the index or middle finger, firing a .22 short round from a barrel concealed within the ring's decorative setting. The weapon is activated by pressing the palm-side trigger plate with the thumb while the hand is clenched into a fist. The round fires forward from the ring face, roughly aligned with a pointing gesture. Accuracy is nonexistent beyond 2 meters, but at contact range — pressed against a target's body during a handshake, an embrace, or a struggle — the weapon is lethal.\n\nLast Word rings are handmade in the Shelf by jeweler-gunsmiths who have combined their crafts into a single, desperate art form. Each ring is unique, built around whatever firing mechanism and barrel stock the maker can acquire. The external appearance ranges from crude metal bands to surprisingly sophisticated designs that mimic legitimate jewelry. The best makers produce rings that pass casual inspection, with firing mechanisms hidden behind gemstone settings that swivel aside to reveal the barrel.\n\nThe weapon has a grim reputation because of the circumstances of its use. Nobody carries a ring gun as a primary weapon. It is the weapon you carry when you expect to be searched, expect to be held at gunpoint, and expect that the only chance you'll get is when someone comes close enough to touch. It is named the Last Word because it is intended to be used when every other option has been exhausted.",
+  "description": "A single-shot firearm built into an oversized ring worn on the index or middle finger, firing a .22 short round from a barrel concealed within the ring's decorative setting. The weapon is activated by pressing the palm-side trigger plate with the thumb while the hand is clenched into a fist. The round fires forward from the ring face, roughly aligned with a pointing gesture. Accuracy is nonexistent beyond 2 meters, but at contact range — pressed against a target's body during a handshake, an embrace, or a struggle — the weapon is lethal.\n\nLast Word rings are handmade in the Gray Zone by jeweler-gunsmiths who have combined their crafts into a single, desperate art form. Each ring is unique, built around whatever firing mechanism and barrel stock the maker can acquire. The external appearance ranges from crude metal bands to surprisingly sophisticated designs that mimic legitimate jewelry. The best makers produce rings that pass casual inspection, with firing mechanisms hidden behind gemstone settings that swivel aside to reveal the barrel.\n\nThe weapon has a grim reputation because of the circumstances of its use. Nobody carries a ring gun as a primary weapon. It is the weapon you carry when you expect to be searched, expect to be held at gunpoint, and expect that the only chance you'll get is when someone comes close enough to touch. It is named the Last Word because it is intended to be used when every other option has been exhausted.",
   "manufacturer": "Street Custom",
   "tier_availability": "Tier 1+",
   "legality": "Illegal — disguised weapon",
@@ -16,16 +16,16 @@
   ],
   "specifications": "caliber: .22 Short\ncapacity: 1 round\neffective range: Contact to 2 meters\nweight: 30-60g depending on construction\nform factor: Oversized ring, worn on index or middle finger",
   "tactical_use": "Absolute last-resort weapon for contact-range use when all other options have failed. The Last Word is carried as insurance against scenarios where the user will be disarmed, restrained, or cornered. Its single round must count.",
-  "cultural_context": "The Last Word ring is a Shelf institution. Owning one means you live in a world where you might need to kill someone with your hands. The rings are sometimes given as gifts between people who work dangerous jobs — runners, couriers, debt collectors — as a gesture that says 'I want you to come home.' The craftsmanship of the ring reflects the maker's regard for the wearer.",
+  "cultural_context": "The Last Word ring is a the Gray Zone institution. Owning one means you live in a world where you might need to kill someone with your hands. The rings are sometimes given as gifts between people who work dangerous jobs — runners, couriers, debt collectors — as a gesture that says 'I want you to come home.' The craftsmanship of the ring reflects the maker's regard for the wearer.",
   "known_users": [
-    "Shelf residents in high-risk occupations",
+    "the Gray Zone residents in high-risk occupations",
     "Runners and couriers",
     "Individuals under active threat",
     "Anyone who expects to be searched"
   ],
   "story_hooks": [
-    "A corporate security executive was killed by a .22 Short round fired at contact range during what appeared to be a handshake. The shooter was a Shelf resident who had been brought in for 'questioning.' Nobody checked the rings.",
-    "A master ring-maker in the Shelf has started producing Last Words with a twist — the ring contains a microphone and transmitter that activates when the firing mechanism is charged, broadcasting a final recording to a preset recipient. People are using them to send messages from beyond the grave."
+    "A corporate security executive was killed by a .22 Short round fired at contact range during what appeared to be a handshake. The shooter was a the Gray Zone resident who had been brought in for 'questioning.' Nobody checked the rings.",
+    "A master ring-maker in the Gray Zone has started producing Last Words with a twist — the ring contains a microphone and transmitter that activates when the firing mechanism is charged, broadcasting a final recording to a preset recipient. People are using them to send messages from beyond the grave."
   ],
   "ammunition_type": [
     "22_short"
@@ -37,7 +37,6 @@
     "ring",
     "jewelry",
     "street",
-    "shelf",
     "assassination",
     "tier 1",
     "lethal"
@@ -57,8 +56,7 @@
     "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
     "The Boilermaker",
     "The Pure Hand",
-    "The Riveters' Round",
-    "The Shelf"
+    "The Riveters' Round"
   ],
   "physical_description": {
     "visual_profile": "An oversized signet or statement ring that could plausibly pass as avant-garde jewelry at casual glance. The form factor is deliberately deceptive — it reads as an expensive accessory rather than a weapon, with the barrel concealed behind a swiveling gemstone setting or ornamental face. The ring sits heavy on the finger, slightly unbalanced toward the palm side.",
@@ -77,7 +75,7 @@
       "Firing pin mechanism partially visible inside setting if closely inspected",
       "Varying quality of metal joins and welding — higher-end rings show seamless work, street versions show obvious seams"
     ],
-    "manufacturer_markings": "Street Custom rings rarely bear maker identification externally — this is intentional for plausible deniability. Makers often stamp a personal symbol or initials inside the band, invisible unless ring is removed. Some high-end jeweler-gunsmiths carve microscopic initials near the setting hinge. Black-market rings may bear nothing, or cryptic maker's marks that function as authentication tokens in the Shelf underworld.",
+    "manufacturer_markings": "Street Custom rings rarely bear maker identification externally — this is intentional for plausible deniability. Makers often stamp a personal symbol or initials inside the band, invisible unless ring is removed. Some high-end jeweler-gunsmiths carve microscopic initials near the setting hinge. Black-market rings may bear nothing, or cryptic maker's marks that function as authentication tokens in the Gray Zone underworld.",
     "condition_typical": "Even new examples show hand-fabrication marks under magnification. Field-worn rings develop distinctive micro-damage patterns: light scratches on the setting from repeated swivel access, discoloration around the trigger plate from sweat and oils, faint impression marks on the band where the ring was gripped during practice firing. Well-maintained examples show protective patina, while neglected ones develop corrosion at metal joins. The setting mechanism becomes slightly loose with use, developing a faint click if swiveled with pressure."
   },
   "image_prompt": "Close-up product photography of an oversized statement ring resting on dark matte surface and cradled in a gloved hand (latex or synthetic material). Ring features a swiveling gemstone setting with gunmetal or brushed steel band. Side-lighting at 45 degrees reveals fine fabrication details and micro-scratches on the setting. Dramatic shadows emphasize the ring's weight and the geometric precision of hidden mechanisms. Shallow depth of field focuses on the setting face, softly rendering the band. Neo-noir color grading: cool blues and gunmetal grays with slight neon accent on the gemstone. Include subtle reflection in the polished surface beneath. Gritty, noir aesthetic suggesting street craftsmanship and desperate concealment. No identifying marks visible. --ar 3:2 --v 6",

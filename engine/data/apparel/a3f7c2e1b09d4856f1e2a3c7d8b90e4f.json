@@ -3,7 +3,7 @@
   "name": "Deepcore RadSkin Tunnel Worker Suit MK-2",
   "type": "apparel",
   "category": "protective",
-  "description": "Mottled grey-green with orange reflective banding, the RadSkin is a full-body soft-shell suit built for Shelf-level tunnel crews working contaminated substrata. The outer layer is bonded graphene-weave over a lead-flex membrane, visibly patched at the knees and elbows where previous owners added scrap ceramic tile reinforcement. Interior seams are sealed with pressure tape, yellowed from use. Wrist and ankle closures are ratchet-cinch rubber rings. The hood integrates a filtered face port with a cracked polycarbonate visor — often replaced with aftermarket lenses.",
+  "description": "Mottled grey-green with orange reflective banding, the RadSkin is a full-body soft-shell suit built for the Gray Zone-level tunnel crews working contaminated substrata. The outer layer is bonded graphene-weave over a lead-flex membrane, visibly patched at the knees and elbows where previous owners added scrap ceramic tile reinforcement. Interior seams are sealed with pressure tape, yellowed from use. Wrist and ankle closures are ratchet-cinch rubber rings. The hood integrates a filtered face port with a cracked polycarbonate visor — often replaced with aftermarket lenses.",
   "tier_association": "Tier 1",
   "materials": [
     "lead-flex membrane",
@@ -15,12 +15,12 @@
   "functionality": "Provides moderate gamma and beta radiation shielding rated for contaminated zones up to 3.2 mSv/hr. Integrated boot cuffs seal against ground pooling. Not rated for alpha emitters without supplemental respirator. Patch-repair extends suit life but degrades shielding uniformity.",
   "what_it_says": "You work the deep tunnels, you breathe the bad air, and you don't expect anyone to replace your gear when it fails.",
   "worn_by": [
-    "Shelf tunnel crews",
+    "the Gray Zone tunnel crews",
     "unauthorized salvage workers",
     "contaminated-zone infrastructure laborers",
     "desperate freelancers"
   ],
-  "manufacturer": "Deepcore (street label, Shelf-manufactured)",
+  "manufacturer": "Deepcore (street label, the Gray Zone-manufactured)",
   "price_range": "Φ80–Φ210 (used/patched), Φ340 new",
   "aug_compatible": false,
   "gene_compatible": false,
@@ -36,7 +36,6 @@
     "radiation",
     "tunneling",
     "tier-1",
-    "shelf",
     "industrial",
     "full-body",
     "aug-incompatible"
@@ -65,7 +64,7 @@
       "Ratchet-cinch closures designed for one-handed operation in gloves"
     ],
     "tier_indicator": "Tier 5 salvage/sub-grade. Deepcore is a street label manufacturing shelf-level protective gear. This suit is built from reclaimed and recycled materials, patched with scrap, and worn by tunnel crews operating in ungoverned contaminated zones.",
-    "cultural_context": "Worn by Shelf-tier tunnel workers, scavengers, and hazmat cleanup crews operating in the GLMZ's deep infrastructure. Signals someone who works in brutal, high-risk conditions for minimal compensation. A badge of survival and grit, not status. The visible patches and age marks tell a story of multiple owners and countless hours in toxic environments.",
+    "cultural_context": "Worn by the Gray Zone-tier tunnel workers, scavengers, and hazmat cleanup crews operating in the GLMZ's deep infrastructure. Signals someone who works in brutal, high-risk conditions for minimal compensation. A badge of survival and grit, not status. The visible patches and age marks tell a story of multiple owners and countless hours in toxic environments.",
     "condition_typical": "Weathered and well-patched. Never pristine—these suits accumulate damage, staining, and repairs. The visor cracks are normal; replacement is routine. Pressure tape seams yellow and fray with use. Ceramic patches collect chips and gaps. A 'good' one is simply one that still seals and doesn't leak."
   },
   "image_prompt": "Full-body shot of weathered grey-green and orange Deepcore RadSkin suit on a lean figure in a dimly-lit underground tunnel set. Moody blue-green fluorescent lighting casting harsh shadows on the graphene-weave surface. Close detail visible on yellowed pressure-tape seams, ceramic tile patches at knees and elbows, and the cracked polycarbonate visor reflecting dim light. Reflective orange banding catching strobe light. Background shows rough concrete tunnel walls, rust stains, and industrial piping. Gritty, utilitarian, lived-in aesthetic. --ar 2:3 --v 6",

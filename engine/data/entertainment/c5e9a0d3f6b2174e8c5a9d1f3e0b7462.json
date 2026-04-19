@@ -5,27 +5,27 @@
   "category": "song",
   "subcategory": "work_song",
   "aliases": [],
-  "description": "No one knows who wrote 'Manifold Hours (The Long Three)' — the song predates any documented authorship, with the earliest confirmed recording dating to 2187 from a maintenance crew in the Shelf's sub-level pipe network, captured on a cracked audio logger left running by accident. The song is structured around the 'long three': the three-hour shift extension that Shelf maintenance workers are legally compelled to accept under emergency infrastructure contracts, which are invoked so routinely they have ceased to feel like emergencies. The melody is a slow, deliberate drone with a call-and-response structure — a lead voice intoning the verse, a chorus of however many workers happen to be present answering. It works in tunnels. It works in boiler rooms. It works in the dark.\n\nThe instrumentation, when any is present, tends toward whatever is available: metal pipes struck with wrenches, the rhythmic hiss of pressure valves, the low harmonic resonance of maintenance shafts. Ethnomusicologists at the Meridian Institute of Cultural Studies have documented over sixty regional variations across the city's maintenance infrastructure. The song has no definitive version. Its lyrics shift to name local hazards, local supervisors, local dead. The constant across all variations is the final line of each chorus: 'Three more hours, then we're even' — a phrase understood by every Shelf worker to be a lie everyone agrees to believe to get through the shift.",
+  "description": "No one knows who wrote 'Manifold Hours (The Long Three)' — the song predates any documented authorship, with the earliest confirmed recording dating to 2187 from a maintenance crew in the Gray Zone's sub-level pipe network, captured on a cracked audio logger left running by accident. The song is structured around the 'long three': the three-hour shift extension that the Gray Zone maintenance workers are legally compelled to accept under emergency infrastructure contracts, which are invoked so routinely they have ceased to feel like emergencies. The melody is a slow, deliberate drone with a call-and-response structure — a lead voice intoning the verse, a chorus of however many workers happen to be present answering. It works in tunnels. It works in boiler rooms. It works in the dark.\n\nThe instrumentation, when any is present, tends toward whatever is available: metal pipes struck with wrenches, the rhythmic hiss of pressure valves, the low harmonic resonance of maintenance shafts. Ethnomusicologists at the Meridian Institute of Cultural Studies have documented over sixty regional variations across the city's maintenance infrastructure. The song has no definitive version. Its lyrics shift to name local hazards, local supervisors, local dead. The constant across all variations is the final line of each chorus: 'Three more hours, then we're even' — a phrase understood by every the Gray Zone worker to be a lie everyone agrees to believe to get through the shift.",
   "creator": "various",
   "distributor": "pirate_feed",
   "tier_availability": "Tier 1+",
   "legality": "gray_market",
-  "genre": "Shelf work song, maintenance folk, industrial oral tradition",
+  "genre": "the Gray Zone work song, maintenance folk, industrial oral tradition",
   "medium": "live",
-  "audience": "Shelf maintenance workers, sub-level infrastructure crews, Tier 2 factory workers, labor historians, underground folk revivalists",
-  "cultural_impact": "The song functions as a living document of Shelf labor conditions, its variations cataloguing grievances, accidents, and deaths that never appear in official records. Labor historians consider it one of the most significant primary sources for understanding life in GLMZ's infrastructure underclass. Corporate legal teams have intermittently attempted to classify certain versions as 'incitement material' due to lyrics naming specific supervisors or corporate contractors, but the song's anonymous and collective nature makes suppression impossible. Above the Shelf, it is known primarily through a 2214 folk revival cover by Tier 3 artist Emeka Lindström-Bautista, which sanitized the lyrics and sold moderately well — an act that Shelf workers regard as somewhere between tribute and theft.",
+  "audience": "the Gray Zone maintenance workers, sub-level infrastructure crews, Tier 2 factory workers, labor historians, underground folk revivalists",
+  "cultural_impact": "The song functions as a living document of the Gray Zone labor conditions, its variations cataloguing grievances, accidents, and deaths that never appear in official records. Labor historians consider it one of the most significant primary sources for understanding life in GLMZ's infrastructure underclass. Corporate legal teams have intermittently attempted to classify certain versions as 'incitement material' due to lyrics naming specific supervisors or corporate contractors, but the song's anonymous and collective nature makes suppression impossible. Above the Gray Zone, it is known primarily through a 2214 folk revival cover by Tier 3 artist Emeka Lindström-Bautista, which sanitized the lyrics and sold moderately well — an act that the Gray Zone workers regard as somewhere between tribute and theft.",
   "known_fans": [
-    "Shelf maintenance crews",
+    "the Gray Zone maintenance crews",
     "sub-level infrastructure workers",
     "labor historians",
     "Tier 2 union halls",
     "underground folk revivalists",
-    "civil engineers with Shelf origins",
+    "civil engineers with the Gray Zone origins",
     "ethnomusicologists"
   ],
   "story_hooks": [
     "A character working a maintenance contract deep in the sub-levels hears a version of the song that names someone who, according to official records, never existed — a worker whose identity appears to have been deliberately scrubbed.",
-    "The Meridian Institute of Cultural Studies commissions a character to locate and document regional variations of the song; the project puts them in contact with Shelf communities who view the documentation with deep suspicion.",
+    "The Meridian Institute of Cultural Studies commissions a character to locate and document regional variations of the song; the project puts them in contact with the Gray Zone communities who view the documentation with deep suspicion.",
     "A corporate safety inspector discovers that the specific variations of the song sung in a particular maintenance sector have been encoding information about a covered-up structural failure for years — and that someone has been listening."
   ],
   "tags": [
@@ -33,7 +33,6 @@
     "music",
     "song",
     "work_song",
-    "shelf",
     "labor",
     "oral_tradition",
     "folk",
@@ -56,7 +55,6 @@
     "Slagworks Industrial",
     "SynapTech IrisBloom Ocular Color Modulator",
     "TESSERA TX-12 'Chorus'",
-    "The Resonance Communion",
-    "The Shelf"
+    "The Resonance Communion"
   ]
 }

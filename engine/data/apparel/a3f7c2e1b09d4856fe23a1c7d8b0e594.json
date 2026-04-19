@@ -3,7 +3,7 @@
   "name": "Scrapwall Faceguard MK-0",
   "type": "apparel",
   "category": "headwear",
-  "description": "A salvaged half-face shield cobbled from reclaimed industrial polycarbonate, corrugated sheet steel, and strips of chemical-resistant gasket rubber. The surface is scratched and acid-pocked, with mismatched bolt hardware and improvised foam padding taped inside with medical adhesive. Usually grey or rust-orange from oxidation, sometimes with crude spray tags from Shelf crews.\n\nThe lower face panel pivots upward on a repurposed hinge, locking with a bent wire clasp. The eye slit is reinforced with a strip of cracked welding glass that filters UV but not much else.",
+  "description": "A salvaged half-face shield cobbled from reclaimed industrial polycarbonate, corrugated sheet steel, and strips of chemical-resistant gasket rubber. The surface is scratched and acid-pocked, with mismatched bolt hardware and improvised foam padding taped inside with medical adhesive. Usually grey or rust-orange from oxidation, sometimes with crude spray tags from the Gray Zone crews.\n\nThe lower face panel pivots upward on a repurposed hinge, locking with a bent wire clasp. The eye slit is reinforced with a strip of cracked welding glass that filters UV but not much else.",
   "tier_association": "Tier 1",
   "materials": [
     "reclaimed polycarbonate",
@@ -13,22 +13,22 @@
     "medical adhesive tape",
     "cracked welding glass"
   ],
-  "functionality": "Provides basic protection against acid splash, flying debris, and blunt strikes. The pivoting lower panel allows eating or speaking without full removal. Welding glass strip reduces UV glare from the Shelf's exposed smelting operations.",
+  "functionality": "Provides basic protection against acid splash, flying debris, and blunt strikes. The pivoting lower panel allows eating or speaking without full removal. Welding glass strip reduces UV glare from the Gray Zone's exposed smelting operations.",
   "what_it_says": "You build what you need from what you find, and you don't expect anyone to give you better.",
   "worn_by": [
-    "Shelf scrappers",
+    "the Gray Zone scrappers",
     "acid-zone foragers",
     "tunnel runners",
     "Tier 1 gang lookouts"
   ],
-  "manufacturer": "Self-made / unnamed Shelf fabricators",
+  "manufacturer": "Self-made / unnamed the Gray Zone fabricators",
   "price_range": "Φ 2–Φ 18 (barter common)",
   "aug_compatible": false,
   "gene_compatible": false,
   "story_hooks": [
     "A specific bolt pattern on the cheekguard matches hardware from a collapsed MagRail support — someone knows which section fell and when.",
-    "The welding glass strip is tinted a rare amber color only produced by one now-defunct Shelf foundry, making this a potential artifact or evidence.",
-    "The spray tag on the forehead plate is a Shelf crew mark for a gang that officially doesn't exist anymore — but someone is still wearing their colors."
+    "The welding glass strip is tinted a rare amber color only produced by one now-defunct the Gray Zone foundry, making this a potential artifact or evidence.",
+    "The spray tag on the forehead plate is a the Gray Zone crew mark for a gang that officially doesn't exist anymore — but someone is still wearing their colors."
   ],
   "tags": [
     "apparel",
@@ -37,7 +37,6 @@
     "half-face",
     "salvage",
     "tier-1",
-    "shelf",
     "acid-protection",
     "self-made",
     "gene-compatible-false"
@@ -66,10 +65,10 @@
       "Bent wire clasp mechanism for panel lock",
       "Corrugated steel reinforcement visible at edges"
     ],
-    "tier_indicator": "Tier 5 salvage — pure ungoverned-shelf fabrication. No polish, no safety certifications, no corporate branding. Built from found materials in a scrap yard or Shelf workshop.",
-    "cultural_context": "Worn by scroungers, Shelf dwellers, industrial salvage workers, and street-level enforcers in the GLMZ underbelly. Signals survival, desperation, blue-collar hazard work, or crew affiliation. Suggests exposure to chemical/industrial hazards and a person comfortable operating outside corpo infrastructure.",
-    "condition_typical": "Perpetually weathered and damaged. Never pristine. Appears to have been through multiple near-death situations. Wearer likely makes field repairs with more tape and improvised fasteners. May have fresh graffiti from recent Shelf crew activity."
+    "tier_indicator": "Tier 5 salvage — pure ungoverned-shelf fabrication. No polish, no safety certifications, no corporate branding. Built from found materials in a scrap yard or the Gray Zone workshop.",
+    "cultural_context": "Worn by scroungers, the Gray Zone dwellers, industrial salvage workers, and street-level enforcers in the GLMZ underbelly. Signals survival, desperation, blue-collar hazard work, or crew affiliation. Suggests exposure to chemical/industrial hazards and a person comfortable operating outside corpo infrastructure.",
+    "condition_typical": "Perpetually weathered and damaged. Never pristine. Appears to have been through multiple near-death situations. Wearer likely makes field repairs with more tape and improvised fasteners. May have fresh graffiti from recent the Gray Zone crew activity."
   },
-  "image_prompt": "A Tier 5 salvage headwear photograph: A battered Scrapwall Faceguard MK-0 mounted on a dark weathered mannequin or worn by a hardened Shelf worker with visible subcutaneous augmentation scars. Extreme close-up on the scratched polycarbonate shield and cracked welding glass, showing oxidized corrosion and crude spray-paint tags. Harsh neon-blue and industrial sodium-light cinema lighting emphasizing pitting and damage. Gritty urban backdrop: corrugated metal wall, shipping container, or abandoned factory interior. Shallow depth of field on the eye slit. Moody, dystopian, tactile. --ar 2:3 --v 6",
-  "visual_prompt": "A Tier 5 salvage headwear photograph: A battered Scrapwall Faceguard MK-0 mounted on a dark weathered mannequin or worn by a hardened Shelf worker with visible subcutaneous augmentation scars. Extreme close-up on the scratched polycarbonate shield and cracked welding glass, showing oxidized corrosion and crude spray-paint tags. Harsh neon-blue and industrial sodium-light cinema lighting emphasizing pitting and damage. Gritty urban backdrop: corrugated metal wall, shipping container, or abandoned factory interior. Shallow depth of field on the eye slit. Moody, dystopian, tactile. --ar 2:3 --v 6"
+  "image_prompt": "A Tier 5 salvage headwear photograph: A battered Scrapwall Faceguard MK-0 mounted on a dark weathered mannequin or worn by a hardened the Gray Zone worker with visible subcutaneous augmentation scars. Extreme close-up on the scratched polycarbonate shield and cracked welding glass, showing oxidized corrosion and crude spray-paint tags. Harsh neon-blue and industrial sodium-light cinema lighting emphasizing pitting and damage. Gritty urban backdrop: corrugated metal wall, shipping container, or abandoned factory interior. Shallow depth of field on the eye slit. Moody, dystopian, tactile. --ar 2:3 --v 6",
+  "visual_prompt": "A Tier 5 salvage headwear photograph: A battered Scrapwall Faceguard MK-0 mounted on a dark weathered mannequin or worn by a hardened the Gray Zone worker with visible subcutaneous augmentation scars. Extreme close-up on the scratched polycarbonate shield and cracked welding glass, showing oxidized corrosion and crude spray-paint tags. Harsh neon-blue and industrial sodium-light cinema lighting emphasizing pitting and damage. Gritty urban backdrop: corrugated metal wall, shipping container, or abandoned factory interior. Shallow depth of field on the eye slit. Moody, dystopian, tactile. --ar 2:3 --v 6"
 }

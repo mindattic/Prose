@@ -1,5 +1,6 @@
 {
   "id": "019d6143a5ef794fbe2491587134eedf",
+  "rating": 40,
   "type": "character",
   "name": "Sable Odinga-Nakamura-Valenzuela",
   "aliases": [],
@@ -30,7 +31,11 @@
     "vocabulary": "",
     "cadence": "",
     "verbal_tics": [],
-    "example_lines": []
+    "example_lines": [],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [],
@@ -93,20 +98,13 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Battle Rifle BR-11 'Tribunal'",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [
-    "Crucible Industries Battle Rifle BR-11 'Tribunal'",
-    "Nkomo-Lindqvist NL-22 'Peacemaker'"
-  ],
-  "related_entities": [
-    "Geartown"
-  ],
-  "district": "The Circuit",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (75.9%) with significant East Asian (11.4%) and Hispanic/Latin American (10.0%) ancestry, plus trace Southeast Asian (2.7%). This blend produces rich warm brown undertones with subtle amber and golden notes—a deep, warm bronze complexion reflecting his strong African genetic foundation, enriched by East Asian bone structure and Latin American warmth.",
+    "heritage": "Predominantly Sub-Saharan African (75.9%) with significant East Asian (11.4%) and Hispanic/Latin American (10.0%) ancestry, plus trace Southeast Asian (2.7%). This blend produces rich warm brown undertones with subtle amber and golden notes\u2014a deep, warm bronze complexion reflecting his strong African genetic foundation, enriched by East Asian bone structure and Latin American warmth.",
     "height_cm": 178,
     "weight_kg": 82,
     "build": "Broad-shouldered and thick-necked, muscular but softened by age and desk work. Carries weight in his torso; forearms remain corded and strong.",
@@ -115,29 +113,24 @@
     "hair_length": "Medium (collar-length)",
     "eye_color": "Dark brown with deep gray shot through the iris",
     "skin_tone": "Deep warm bronze with amber and golden undertones; weathered from decades of varied climates and urban exposure. Reflects Sub-Saharan African dominance with East Asian and Latin American warmth creating subtle richness in the hue.",
-    "complexion": "Strong, broad jawline with balanced angularity and rounded fullness reflecting his diverse ancestry—African width and prominence softened by East Asian and Latin American contours. Lines around the eyes and mouth from decades of negotiation and command. Slight scar tissue on his left cheekbone. Five o'clock shadow across a face that carries both angular and rounded features. Meticulous grooming otherwise.",
+    "complexion": "Strong, broad jawline with balanced angularity and rounded fullness reflecting his diverse ancestry\u2014African width and prominence softened by East Asian and Latin American contours. Lines around the eyes and mouth from decades of negotiation and command. Slight scar tissue on his left cheekbone. Five o\u0027clock shadow across a face that carries both angular and rounded features. Meticulous grooming otherwise.",
     "distinguishing_marks": [
       "Thin horizontal scar across his left cheekbone, approximately 3cm, from a knife fight in his thirties",
       "Network of pale burn scars across his right shoulder and upper arm, partially obscured by clothing",
-      "Tattoo on his inner left wrist: a Scandinavian rune (ᚦ, Thurisaz) in faded black ink, likely 30+ years old"
+      "Tattoo on his inner left wrist: a Scandinavian rune (\u16A6, Thurisaz) in faded black ink, likely 30\u002B years old"
     ],
     "visible_augmentations": "Military-grade smartwatch on right wrist with discrete Arcturus corporate logo. Slight neural port scarring behind right ear, barely visible unless hair is pulled back.",
-    "posture_movement": "Moves with deliberate economy—no wasted motion. Stands with shoulders squared, a habit from military life. Handshakes are firm and brief. Leans back when listening, eyes narrow slightly when calculating.",
-    "clothing_style": "Tier 1-2 corporate military aesthetic: charcoal wool slacks, pressed crisply; gray or black dress shirts with reinforced polymer weave (ballistic-rated). Dark tactical jacket (Arcturus-branded, understated embroidery). Black leather combat boots, polished to mirror finish. Small Φ currency clip on belt."
+    "posture_movement": "Moves with deliberate economy\u2014no wasted motion. Stands with shoulders squared, a habit from military life. Handshakes are firm and brief. Leans back when listening, eyes narrow slightly when calculating.",
+    "clothing_style": "Tier 1-2 corporate military aesthetic: charcoal wool slacks, pressed crisply; gray or black dress shirts with reinforced polymer weave (ballistic-rated). Dark tactical jacket (Arcturus-branded, understated embroidery). Black leather combat boots, polished to mirror finish. Small \u03A6 currency clip on belt."
   },
-  "image_prompt": "Sable Odinga-Nakamura-Valenzuela, 55-year-old corporate military operative, GLMZ. Deep warm bronze skin with golden-amber undertones, strong broad jawline with balanced angularity, dark brown eyes shot with gray. Steel gray slicked-back pomaded hair, collar-length. Thin scar across left cheekbone, five o'clock shadow. Wearing charcoal wool slacks and reinforced gray dress shirt under dark Arcturus-branded tactical jacket. Black polished combat boots. Military-grade smartwatch on right wrist. Standing with squared shoulders and deliberate posture in a dimly lit corporate tower office, narrow-eyed and calculating. Moody, cool neo-noir lighting with blue-gray neon accents. Weathered face of command, subtle burn scar network on right shoulder barely visible. Professional, dangerous, mid-career--ar 2:3 --v 6",
+  "image_prompt": "Sable Odinga-Nakamura-Valenzuela, 55-year-old corporate military operative, GLMZ. Deep warm bronze skin with golden-amber undertones, strong broad jawline with balanced angularity, dark brown eyes shot with gray. Steel gray slicked-back pomaded hair, collar-length. Thin scar across left cheekbone, five o\u0027clock shadow. Wearing charcoal wool slacks and reinforced gray dress shirt under dark Arcturus-branded tactical jacket. Black polished combat boots. Military-grade smartwatch on right wrist. Standing with squared shoulders and deliberate posture in a dimly lit corporate tower office, narrow-eyed and calculating. Moody, cool neo-noir lighting with blue-gray neon accents. Weathered face of command, subtle burn scar network on right shoulder barely visible. Professional, dangerous, mid-career--ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Sub-Saharan African": 75.9,
     "East Asian": 11.4,
     "Hispanic/Latin American": 10,
     "Southeast Asian": 2.7
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Sub-Saharan African": {
       "Southern African": {
@@ -169,6 +162,5 @@
         "Thai": 0.8
       }
     }
-  },
-  "tier": "3"
+  }
 }

@@ -283,5 +283,14 @@
     "The Corridor",
     "The Swarm",
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z3"
+    ],
+    "primaryZone": "Z3",
+    "lakefrontAccess": false,
+    "description": "The Lazarus Compound — pharmaceutical manufacturing and research enclave in the Evanston buffer zone of Zone 3. Specializes in longevity therapeutics and cellular regeneration compounds. Zone 3 positioning provides access to Vellichor Institute research pipelines while maintaining distance from Zone 1-2 competitor surveillance.",
+    "grayZoneRelationship": "Runs clinical trials in Zone 3 Gray Zone communities. Compensation is above market; consent documentation is comprehensive; outcomes are not shared with participants."
+  }
 }

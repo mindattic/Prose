@@ -3,7 +3,7 @@
   "name": "Duskrow Moto Jacket",
   "type": "apparel",
   "category": "jacket",
-  "description": "A motorcycle jacket built for the Shelf and lower Tier 2, where looking hard is sometimes the only armor you've got. The Duskrow is made from bonded synth-hide — not leather, not pretending to be — in a flat, worn-in black with faint horizontal ribbing across the shoulders and forearms. The cut is boxy enough to move in, with an asymmetric zip closure, two chest pockets with snap flaps, and a wide lapel collar that can be turned up against the wind off the lake. Pre-scuffed at the elbows. That's not a flaw. That's the design.\n\nPeople who wear the Duskrow aren't trying to impress anyone at a Tier 3 wine bar. They're couriers, fixers, gig workers who ride secondhand mopeds through the Shelf's cracked-asphalt corridors. The jacket shows up in markets, in dive bars, in the back of dispatch vans. It holds its shape after a fall. It doesn't crack in the cold. It's the kind of jacket you hand down.",
+  "description": "A motorcycle jacket built for the Gray Zone and lower Tier 2, where looking hard is sometimes the only armor you've got. The Duskrow is made from bonded synth-hide — not leather, not pretending to be — in a flat, worn-in black with faint horizontal ribbing across the shoulders and forearms. The cut is boxy enough to move in, with an asymmetric zip closure, two chest pockets with snap flaps, and a wide lapel collar that can be turned up against the wind off the lake. Pre-scuffed at the elbows. That's not a flaw. That's the design.\n\nPeople who wear the Duskrow aren't trying to impress anyone at a Tier 3 wine bar. They're couriers, fixers, gig workers who ride secondhand mopeds through the Gray Zone's cracked-asphalt corridors. The jacket shows up in markets, in dive bars, in the back of dispatch vans. It holds its shape after a fall. It doesn't crack in the cold. It's the kind of jacket you hand down.",
   "tier_association": "Tier 1",
   "materials": [
     "bonded synth-hide",
@@ -13,7 +13,7 @@
   "functionality": "",
   "what_it_says": "You don't have much, but you've got a code — and you've been around long enough that the jacket shows it.",
   "worn_by": [
-    "Shelf couriers",
+    "the Gray Zone couriers",
     "gig workers",
     "low-tier fixers",
     "street market vendors",
@@ -24,8 +24,8 @@
   "aug_compatible": false,
   "gene_compatible": false,
   "story_hooks": [
-    "A jacket matching this description was worn by the only witness to a Shelf-level corporate dump — now someone is buying up every Duskrow in that colorway from secondhand stalls, looking for the right one.",
-    "The original Duskrow factory in the lower Shelf burned down six years ago; what's sold now is knockoffs of knockoffs, but an original pre-fire jacket has cult status among collectors.",
+    "A jacket matching this description was worn by the only witness to a the Gray Zone-level corporate dump — now someone is buying up every Duskrow in that colorway from secondhand stalls, looking for the right one.",
+    "The original Duskrow factory in the Gray Zone burned down six years ago; what's sold now is knockoffs of knockoffs, but an original pre-fire jacket has cult status among collectors.",
     "A courier dies wearing one and the jacket ends up in a lost-and-found bin — the inside lining has a name and a locker number stitched into it."
   ],
   "tags": [
@@ -35,7 +35,7 @@
     "motorcycle jacket",
     "synth-hide",
     "street",
-    "shelf life",
+    "Gray Zone life",
     "normal clothes"
   ],
   "parent_corponation": "",
@@ -44,7 +44,6 @@
     "Meridian Munitions Dispatch-45 'Last Word'",
     "Ringo DV-4 'Courier'",
     "Synaptrel",
-    "The Shelf",
     "Tomasz Wren",
     "VitaCore ClearCourse Addiction Suppressor"
   ],
@@ -64,9 +63,9 @@
       "No visible branding or Duskrow marks"
     ],
     "tier_indicator": "Lower Tier 2 / Upper Tier 3 — expensive enough to signal investment, cheap enough to not fear losing it",
-    "cultural_context": "Courier culture, gig economy workers, Shelf riders. The jacket says: 'I work for a living, I've eaten concrete, I don't need validation.' Street credibility without affectation.",
+    "cultural_context": "Courier culture, gig economy workers, the Gray Zone riders. The jacket says: 'I work for a living, I've eaten concrete, I don't need validation.' Street credibility without affectation.",
     "condition_typical": "Broken-in immediately. Scuffs deepen with wear. Minor tears at stress points become badges. Never looks pristine; always looks reliable."
   },
-  "image_prompt": "Duskrow Moto Jacket on a lean androgynous model with visible subcutaneous implant traces along the neck, shot from chest-up against a rain-slicked concrete wall in the GLMZ Shelf district. Moody sodium-vapor amber lighting casting hard shadows. The jacket's asymmetric zip partially open, lapel turned up. Model's expression flat, direct. Background: blurred neon storefront, wet asphalt, late evening. Shallow depth of field on the jacket's shoulder ribbing and elbows. Cinematic, documentary-adjacent. --ar 2:3 --v 6",
-  "visual_prompt": "Duskrow Moto Jacket on a lean androgynous model with visible subcutaneous implant traces along the neck, shot from chest-up against a rain-slicked concrete wall in the GLMZ Shelf district. Moody sodium-vapor amber lighting casting hard shadows. The jacket's asymmetric zip partially open, lapel turned up. Model's expression flat, direct. Background: blurred neon storefront, wet asphalt, late evening. Shallow depth of field on the jacket's shoulder ribbing and elbows. Cinematic, documentary-adjacent. --ar 2:3 --v 6"
+  "image_prompt": "Duskrow Moto Jacket on a lean androgynous model with visible subcutaneous implant traces along the neck, shot from chest-up against a rain-slicked concrete wall in the GLMZ the Gray Zone district. Moody sodium-vapor amber lighting casting hard shadows. The jacket's asymmetric zip partially open, lapel turned up. Model's expression flat, direct. Background: blurred neon storefront, wet asphalt, late evening. Shallow depth of field on the jacket's shoulder ribbing and elbows. Cinematic, documentary-adjacent. --ar 2:3 --v 6",
+  "visual_prompt": "Duskrow Moto Jacket on a lean androgynous model with visible subcutaneous implant traces along the neck, shot from chest-up against a rain-slicked concrete wall in the GLMZ the Gray Zone district. Moody sodium-vapor amber lighting casting hard shadows. The jacket's asymmetric zip partially open, lapel turned up. Model's expression flat, direct. Background: blurred neon storefront, wet asphalt, late evening. Shallow depth of field on the jacket's shoulder ribbing and elbows. Cinematic, documentary-adjacent. --ar 2:3 --v 6"
 }

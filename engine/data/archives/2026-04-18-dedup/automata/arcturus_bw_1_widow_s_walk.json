@@ -1,0 +1,47 @@
+{
+  "name": "Arcturus BW-1 'Widow's Walk'",
+  "type": "automaton",
+  "classification": "Pursuit Platform — Relentless Tracking",
+  "aliases": [],
+  "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
+  "description": "The BW-1 is a bipedal automaton standing 1.9 meters tall, with a featureless matte-black chassis, elongated limbs, and a gait that covers ground with mechanical patience at exactly 4.8 kilometers per hour — the average human walking speed. It does not run. It does not sprint. It walks, at precisely the speed its target walks, and it never stops. It has a 180-day operational endurance. It does not need to eat, rest, or sleep. It simply follows.\n\nThe BW-1 is an assassination platform designed around the principle that humans break before machines do. The target runs. The BW-1 walks. The target hides. The BW-1 waits outside, patient, visible, standing in the street like a piece of public sculpture. The target sleeps. The BW-1 stands at their window, silhouette visible through the curtains, unmoving, unsleeping, present. The target moves cities. The BW-1 follows, walking across the wasteland between urban centers at its constant, unhurried pace, arriving days or weeks later, and resuming its vigil.\n\nThe unit does not attack. It does not need to. The psychological effect of an inescapable, unhurried pursuer destroys targets more efficiently than any weapon. Sleep deprivation begins within the first week. Paranoia and irrational behavior follow. Social isolation is inevitable — no one wants to be near the person being followed by the tall black figure. Employment becomes impossible. Most targets begin to deteriorate mentally within the first month. Several have surrendered to whoever commissioned the pursuit, agreeing to any terms. Three have committed suicide.\n\nThe BW-1 carries a single weapon: a concealed blade in its right forearm, deployed only when the target has been judged to have reached a state of total psychological collapse. The kill, when it comes, is described in Arcturus documentation as 'humanitarian intervention.' The machine walks its target into despair, and then it puts them down. The entire process, from deployment to termination, averages 47 days. The longest documented pursuit lasted 163 days. The target crossed three city-states trying to escape. The BW-1 walked the entire way.",
+  "tier_availability": "Tier 5 — assassination contracts only",
+  "legality": "Prohibited — classified as psychological torture weapon and assassination tool",
+  "autonomy_level": "Fully autonomous pursuit behavior, target-locked at deployment",
+  "dimensions": "1.9m height, elongated bipedal chassis",
+  "weight": "85 kg",
+  "power_source": "Nuclear microbattery, 180-day operational endurance",
+  "locomotion": "Bipedal, constant 4.8 km/h walking pace, all-terrain capable",
+  "armament": [
+    "Concealed forearm blade (terminal engagement only)",
+    "Psychological warfare through persistent presence"
+  ],
+  "sensors": [
+    "Multi-spectrum target tracking (visual, thermal, chemical, BCI signature)",
+    "Satellite positioning",
+    "Long-range acoustic identification"
+  ],
+  "countermeasures": "Anti-armor weapons can destroy the chassis. EMP temporarily disables tracking systems (unit resumes pursuit after reboot). The most common attempted countermeasure — outrunning it — fails because the BW-1 does not need to keep pace. It only needs to keep following. Engaging it in enclosed spaces where its walking gait is a disadvantage is the most practical defensive approach.",
+  "known_deployments": [
+    "Seven confirmed assassination contracts (2194-2200)",
+    "Average pursuit duration: 47 days",
+    "Three target suicides, two target surrenders, two terminal engagements"
+  ],
+  "story_hooks": [
+    "There is a tall black figure walking through the Gray Zone at exactly 4.8 km/h, and the person it is following has three days before they break completely",
+    "A BW-1 has been deployed against someone who does not know why — they need to find out who wants them dead before the machine finishes walking them into their grave"
+  ],
+  "cultural_context": "The Widow's Walk is the automaton that ruined patience. Every unhurried figure on a GLMZ street triggers a double-take. Every silhouette standing still outside a window produces a spike of fear. The BW-1 has weaponized the simplest human motion — walking — and made it into a death sentence delivered one step at a time.",
+  "tags": [
+    "automaton",
+    "pursuit",
+    "assassination",
+    "horror",
+    "arcturus",
+    "psychological",
+    "relentless",
+    "tier 5",
+    "nightmare"
+  ],
+  "id": "2b584f981c26bab76a3aa901cda4072f"
+}

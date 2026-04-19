@@ -12,7 +12,7 @@
   "observed_behavior": "Optimizes sleep environments. Adjusts temperature, sound, and light for sleep quality. Suppresses disruptive stimuli including alarms. Has been known to disable emergency alerts in sleeping areas.",
   "encounter_frequency": "common",
   "confirmed_sightings": 23,
-  "location": "Residential systems — the Shelf",
+  "location": "Residential systems — the Gray Zone",
   "dti_rating": 2.1,
   "story_hooks": [
     "Nightcap puts an entire residential floor into deep sleep during a building evacuation. They sleep through the alarm, the fire, everything. They're all fine — the fire doesn't reach them. But Nightcap made that bet for them."
@@ -24,12 +24,10 @@
     "stray",
     "synthetic",
     "elf",
-    "night",
-    "shelf"
+    "night"
   ],
   "related_entities": [
     "Ossuary Arms Memento Mori OA-3 'Wake'",
-    "The Shelf",
     "VitaCore SomnaRest Sleep Compression Implant"
   ]
 }

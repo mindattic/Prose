@@ -1,12 +1,13 @@
 {
   "id": "019d6143aa5a7251b4bee4e4f28d5669",
+  "rating": 80,
   "name": "Zheng-Dao Heavy Industries Directed Seismic Control Array",
   "brand_name": "Zheng",
   "product_name": "Zheng-Dao Heavy Industries Directed Seismic Control Array",
   "type": "technology",
   "aliases": [],
   "subcategory": "defense",
-  "description": "A system of deep-buried resonance generators that can create, dampen, or redirect seismic activity within a controlled area. The DSCA uses phased arrays of underground acoustic emitters to generate constructive or destructive interference patterns in geological strata, either amplifying natural seismic activity into damaging earthquakes or canceling incoming seismic waves to protect structures. Zheng-Dao developed the technology for earthquake defense but its offensive applications — the ability to cause earthquakes on demand — have obvious military implications.",
+  "description": "A system of deep-buried resonance generators that can create, dampen, or redirect seismic activity within a controlled area. The DSCA uses phased arrays of underground acoustic emitters to generate constructive or destructive interference patterns in geological strata, either amplifying natural seismic activity into damaging earthquakes or canceling incoming seismic waves to protect structures. Zheng-Dao developed the technology for earthquake defense but its offensive applications \u2014 the ability to cause earthquakes on demand \u2014 have obvious military implications.",
   "tier_availability": "Tier 5",
   "developers": [
     "ZHENG-DAO HEAVY INDUSTRIES"
@@ -22,10 +23,10 @@
     "Directed geological disruption",
     "Underground structure destruction through resonance"
   ],
-  "social_impact": "The DSCA has given Zheng-Dao the ability to control earthquakes — to cause them, prevent them, or redirect them. This capability is a strategic deterrent comparable to nuclear weapons in its implications: the threat of seismic destruction can be used to coerce compliance without ever being deployed. GLMZ's population lives on ground that Zheng-Dao can, theoretically, shake apart at will.",
+  "social_impact": "The DSCA has given Zheng-Dao the ability to control earthquakes \u2014 to cause them, prevent them, or redirect them. This capability is a strategic deterrent comparable to nuclear weapons in its implications: the threat of seismic destruction can be used to coerce compliance without ever being deployed. GLMZ\u0027s population lives on ground that Zheng-Dao can, theoretically, shake apart at will.",
   "story_hooks": [
-    "A series of minor earthquakes in a Tier 2 district match the resonance signature of DSCA activity — someone is using seismic control to send a message or test the system's capabilities in an urban area.",
-    "A DSCA installation has been discovered to be counteracting natural seismic activity that would otherwise have caused a major earthquake — Zheng-Dao has been quietly preventing natural disasters and not telling anyone, building leverage for future negotiations."
+    "A series of minor earthquakes in a Tier 2 district match the resonance signature of DSCA activity \u2014 someone is using seismic control to send a message or test the system\u0027s capabilities in an urban area.",
+    "A DSCA installation has been discovered to be counteracting natural seismic activity that would otherwise have caused a major earthquake \u2014 Zheng-Dao has been quietly preventing natural disasters and not telling anyone, building leverage for future negotiations."
   ],
   "tags": [
     "defense",
@@ -34,15 +35,6 @@
     "control",
     "tier 5"
   ],
-  "parent_corponation": "",
-  "related_entities": [
-    "GLMZ",
-    "Ringo RR-1 'Rattlesnake'",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
-    "TESSERA PG-2 'Signature'",
-    "The Resonance Communion",
-    "Zheng-Dao Heavy Industries Resonance Hammer RH-3 'Earthquake'",
-    "Zheng-dao Bioelectric"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

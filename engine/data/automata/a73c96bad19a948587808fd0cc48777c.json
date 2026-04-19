@@ -4,7 +4,7 @@
   "classification": "Experimental — Autonomous Test Subject",
   "aliases": [],
   "manufacturer": "BrightSmile Dental Care",
-  "description": "The LX-2 is a small quadruped automaton — roughly rat-sized — designed as an autonomous pharmaceutical test platform. Hundreds of them roam Lazarus testing facilities, each carrying a micro-pump system that continuously administers experimental drug compounds into a synthetic biological substrate mounted in their chassis. The substrate mimics human tissue response, allowing Lazarus to test drug interactions, dosage thresholds, and toxic effects without human subjects. Officially.\n\nThe LX-2's biological substrate is more sophisticated than Lazarus publicly acknowledges. Internal documents revealed by whistleblowers indicate that the substrate includes lab-grown neural tissue — not enough for sentience or sensation, but enough to produce measurable pain-analog responses that Lazarus uses to calibrate analgesic effectiveness. The Lab Rats feel something when they're being tested. Whether that something constitutes pain is a question Lazarus has spent considerable legal resources ensuring never reaches a courtroom.\n\nThe units that escape the laboratory — and they do escape, regularly, through ventilation systems and drain pipes — become a particular kind of urban wildlife. Shelf residents encounter rat-sized automata wandering through their walls, occasionally leaking pharmaceutical compounds from damaged micro-pump systems. The compounds range from harmless to hallucinogenic to toxic, depending on what the unit was testing when it escaped. Lazarus considers escaped units a negligible biosecurity risk. The Shelf residents who wake up hallucinating because a robot rat leaked experimental psychoactives into their water supply disagree.",
+  "description": "The LX-2 is a small quadruped automaton — roughly rat-sized — designed as an autonomous pharmaceutical test platform. Hundreds of them roam Lazarus testing facilities, each carrying a micro-pump system that continuously administers experimental drug compounds into a synthetic biological substrate mounted in their chassis. The substrate mimics human tissue response, allowing Lazarus to test drug interactions, dosage thresholds, and toxic effects without human subjects. Officially.\n\nThe LX-2's biological substrate is more sophisticated than Lazarus publicly acknowledges. Internal documents revealed by whistleblowers indicate that the substrate includes lab-grown neural tissue — not enough for sentience or sensation, but enough to produce measurable pain-analog responses that Lazarus uses to calibrate analgesic effectiveness. The Lab Rats feel something when they're being tested. Whether that something constitutes pain is a question Lazarus has spent considerable legal resources ensuring never reaches a courtroom.\n\nThe units that escape the laboratory — and they do escape, regularly, through ventilation systems and drain pipes — become a particular kind of urban wildlife. the Gray Zone residents encounter rat-sized automata wandering through their walls, occasionally leaking pharmaceutical compounds from damaged micro-pump systems. The compounds range from harmless to hallucinogenic to toxic, depending on what the unit was testing when it escaped. Lazarus considers escaped units a negligible biosecurity risk. the Gray Zone residents who wake up hallucinating because a robot rat leaked experimental psychoactives into their water supply disagree.",
   "tier_availability": "N/A — laboratory equipment",
   "legality": "Licensed as research equipment",
   "autonomy_level": "Autonomous navigation within facility (and beyond, when escaped)",
@@ -20,16 +20,16 @@
     "Chemical self-monitoring",
     "Return-to-base navigation (frequently malfunctions)"
   ],
-  "countermeasures": "Small enough to be physically destroyed by any means. The pharmaceutical payload is the primary hazard — avoid contact with fluids leaking from damaged units. Cat-sized predator automata are sold in the Shelf specifically for catching escaped LX-2 units.",
+  "countermeasures": "Small enough to be physically destroyed by any means. The pharmaceutical payload is the primary hazard — avoid contact with fluids leaking from damaged units. Cat-sized predator automata are sold in the Gray Zone specifically for catching escaped LX-2 units.",
   "known_deployments": [
     "Lazarus research facilities",
-    "Escaped units throughout the Shelf and Underworld (ongoing)"
+    "Escaped units throughout the Gray Zone and Underworld (ongoing)"
   ],
   "story_hooks": [
-    "A nest of escaped LX-2 units has been found in a Shelf building's walls. Dozens of them, all leaking different compounds into the building's water system. The residents have been unknowingly exposed to an experimental drug cocktail for weeks. The effects are starting to manifest.",
-    "A specific escaped LX-2 unit is carrying a compound that Lazarus considers extremely valuable — a breakthrough analgesic that could be worth billions. Lazarus wants the rat back. They're sending retrieval teams into the Shelf for a robot the size of a person's hand."
+    "A nest of escaped LX-2 units has been found in a the Gray Zone building's walls. Dozens of them, all leaking different compounds into the building's water system. The residents have been unknowingly exposed to an experimental drug cocktail for weeks. The effects are starting to manifest.",
+    "A specific escaped LX-2 unit is carrying a compound that Lazarus considers extremely valuable — a breakthrough analgesic that could be worth billions. Lazarus wants the rat back. They're sending retrieval teams into the Gray Zone for a robot the size of a person's hand."
   ],
-  "cultural_context": "The LX-2 has given the Shelf a literal plague of pharmaceutical-leaking robot rats. The phrase 'Lazarus rat' is used to describe anything small, unwanted, and potentially hazardous. The units have become part of the Shelf's ecosystem — predator automata sold to catch them represent an entire micro-economy.",
+  "cultural_context": "The LX-2 has given the Gray Zone a literal plague of pharmaceutical-leaking robot rats. The phrase 'Lazarus rat' is used to describe anything small, unwanted, and potentially hazardous. The units have become part of the Gray Zone's ecosystem — predator automata sold to catch them represent an entire micro-economy.",
   "tags": [
     "automaton",
     "experimental",
@@ -38,7 +38,6 @@
     "laboratory",
     "lazarus",
     "corporate",
-    "shelf",
     "tier 1"
   ],
   "id": "a73c96bad19a948587808fd0cc48777c",
@@ -47,7 +46,6 @@
     "Lazarus Pharmaceuticals",
     "Ossuary Arms Memento Mori OA-3 'Wake'",
     "Street Custom 'Molotov Standard' Incendiary Bottle",
-    "The Packet Rats",
-    "The Shelf"
+    "The Packet Rats"
   ]
 }

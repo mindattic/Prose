@@ -9,8 +9,8 @@
   "role": "Excluded / Off-Grid Medic",
   "age": 29,
   "status": "active",
-  "location": "The Shelf (transient, moves between zones), near Halsted and Division",
-  "description": "Yemi Szabó in any database that matters. Danish and Igbo, compact and angular, with the particular alertness of someone who has learned to assess exits before they assess people. They keep their hair shaved close, wear clothing chosen for pockets and durability rather than warmth, and move through The Shelf and surrounding zones in a pattern deliberately irregular enough to prevent easy tracking. Their face carries old scarring along the jaw from an incident they describe as 'an administrative disagreement' and do not elaborate on. They have no legal identity — not purged like some, but never properly established, a bureaucratic ghost who aged out of a temporary shelter system at eighteen into a city that had no record they'd ever existed.\n\nSøren learned medicine the way people learn most things on The Shelf: by necessity, from whoever would teach them, and through trial and error that sometimes had irreversible consequences. They are not a doctor. They are something more useful in their ecosystem — a person who can stitch, set, administer, and diagnose without requiring identification, insurance, or the kind of paperwork that flags someone's location to an enforcement database. They operate out of a rotating series of semi-permanent locations: a converted storage unit, a sympathetic shopkeeper's back room, the gutted lower level of a building that should have been demolished two years ago. Word of mouth only. No signs. No fixed schedule.\n\nSøren is not ideologically committed to any particular vision of revolution or reform. They are committed to the person in front of them not dying. This makes them invaluable to almost everyone and trusted completely by almost no one, because a medic who treats everyone is a medic who might treat your enemy. They have learned to live with this. They have learned to live with most things.",
+  "location": "the Gray Zone (transient, moves between zones), near Halsted and Division",
+  "description": "Yemi Szabó in any database that matters. Danish and Igbo, compact and angular, with the particular alertness of someone who has learned to assess exits before they assess people. They keep their hair shaved close, wear clothing chosen for pockets and durability rather than warmth, and move through the Gray Zone and surrounding zones in a pattern deliberately irregular enough to prevent easy tracking. Their face carries old scarring along the jaw from an incident they describe as 'an administrative disagreement' and do not elaborate on. They have no legal identity — not purged like some, but never properly established, a bureaucratic ghost who aged out of a temporary shelter system at eighteen into a city that had no record they'd ever existed.\n\nSøren learned medicine the way people learn most things on the Gray Zone: by necessity, from whoever would teach them, and through trial and error that sometimes had irreversible consequences. They are not a doctor. They are something more useful in their ecosystem — a person who can stitch, set, administer, and diagnose without requiring identification, insurance, or the kind of paperwork that flags someone's location to an enforcement database. They operate out of a rotating series of semi-permanent locations: a converted storage unit, a sympathetic shopkeeper's back room, the gutted lower level of a building that should have been demolished two years ago. Word of mouth only. No signs. No fixed schedule.\n\nSøren is not ideologically committed to any particular vision of revolution or reform. They are committed to the person in front of them not dying. This makes them invaluable to almost everyone and trusted completely by almost no one, because a medic who treats everyone is a medic who might treat your enemy. They have learned to live with this. They have learned to live with most things.",
   "psychology": {
     "facet_weights": {
       "wound": 0.81,
@@ -41,10 +41,10 @@
     "blind_spots": [
       "Their distrust of institutions is so thorough it sometimes prevents them from accessing resources that could genuinely help",
       "Reads attachment as threat so reliably that they preemptively distance from people who are actually safe",
-      "Underestimates their own influence on The Shelf's informal social fabric",
+      "Underestimates their own influence on the Gray Zone's informal social fabric",
       "Conflates 'no permanent location' with 'no vulnerability' — they are findable to anyone who knows how to ask"
     ],
-    "secret": "Six months ago, Søren treated a man who died on their table — a Shelf enforcer who had been attacking residents. Søren worked to save him with full effort and he died anyway. They have not resolved how they feel about this. In their coded records he is listed as 'Patient 41 — outcome: negative.' They think about him more than anyone they've saved."
+    "secret": "Six months ago, Søren treated a man who died on their table — a the Gray Zone enforcer who had been attacking residents. Søren worked to save him with full effort and he died anyway. They have not resolved how they feel about this. In their coded records he is listed as 'Patient 41 — outcome: negative.' They think about him more than anyone they've saved."
   },
   "speech_patterns": {
     "vocabulary": "Efficient, clinical when discussing medicine, surprisingly dry and oblique on personal topics. Minimal pleasantries. Uses 'you' a lot — keeps focus external. Medical terminology deployed without jargon-flattening, which can read as either respect for the listener's intelligence or indifference to their comprehension.",
@@ -93,7 +93,7 @@
     "Someone offers Søren a legal identity — and the cost attached to it",
     "Patient 41's family member arrives at the current place, not knowing who they're talking to"
   ],
-  "narrative_function": "Excluded perspective anchor — a character who operates entirely outside institutional structures, not by choice but by circumstance, and who has built something genuinely valuable in that gap. They provide access to The Shelf's underside for other characters and plotlines, and their 'treat everyone' principle creates natural story friction. Their unresolved relationship with Patient 41 seeds moral complexity that resists easy resolution.",
+  "narrative_function": "Excluded perspective anchor — a character who operates entirely outside institutional structures, not by choice but by circumstance, and who has built something genuinely valuable in that gap. They provide access to the Gray Zone's underside for other characters and plotlines, and their 'treat everyone' principle creates natural story friction. Their unresolved relationship with Patient 41 seeds moral complexity that resists easy resolution.",
   "augmentations": "None — cannot access augmentation legally, and distrusts back-alley neural work after witnessing complications; has a deep philosophical discomfort with anything that could be tracked or remotely accessed,Uses external medical tools extensively: a battered portable diagnostic wand, a hand-calibrated micro-suture kit, a pharmacological reference drive they compiled from stolen and traded sources",
   "daily_life": "No fixed morning. Moves location every ten to fourteen days. Spends actual clinic hours — usually afternoon into late night — treating whoever shows up. Spends mornings sourcing supplies through informal trade networks, sometimes traveling to The Circuit or Old Harbor for specific materials. Eats irregularly, always the same few foods that are cheap, dense, and available everywhere. Annotates patient records in the evening. Sleeps lightly. Has a small collection of pressed plants from every location they've stayed in, carried in a battered envelope — the closest thing they have to a home archive.",
   "affiliation": "None. Deliberately, carefully, none.",
@@ -230,7 +230,7 @@
     "Bleeding Heart": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf (transient",
+    "home_turf": "the Gray Zone (transient",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -244,12 +244,11 @@
   "registered_firearms": [],
   "related_entities": [
     "The Undertow",
-    "The Shelf",
     "The Gradient Compact",
     "Big Rig",
     "Irontide Tidal Energy"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Complex mixed ancestry: Eastern European foundation (49.7%) interwoven with Sub-Saharan African (17.3%), East Asian (17.2%), Pacific Islander (9.5%), and South Asian (6.3%). This genetic combination produces a phenotype that resists categorization—warm deep bronze skin with olive-gold undertones, angular cheekbones and defined jawline shaped by East Asian and Pacific Islander structure, and the rich depth of Sub-Saharan heritage throughout. A person who embodies the Ubiquitous Diaspora: ancestry rendered visible as layered human complexity.",
     "height_cm": 168,

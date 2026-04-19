@@ -3,7 +3,7 @@
   "type": "place",
   "name": "The Ferrous Nave",
   "aliases": [],
-  "description": "A decommissioned Ringo Heavy Industries foundry complex stretching across six city blocks in the lower industrial belt, its skeletal superstructure of corrugated blast shields and collapsed gantries forming an accidental cathedral of rust and shadow. The central chamber — once a continuous-pour steel hall — now soars forty meters overhead, its ceiling perforated by decades of thermal expansion and scavenging, letting in ragged columns of grey light that shift with the lake weather above. Local residents have claimed the space incrementally, layering shanty platforms along the original mold-track rails and threading illegal power taps through the load-bearing columns.\n\nThe Ferrous Nave sits at a functional boundary between Tier 3 residential overflow and the deeper Shelf infrastructure, making it a transit point for people and contraband moving between socioeconomic strata. Ferrogate Security holds a nominal maintenance contract on the outer perimeter but rarely enters the interior, a tacit arrangement that costs the corponation nothing and keeps civil unrest contained. Helix Biosystems operates a discreet tissue-recycling node in the eastern annex, officially licensed for industrial biowaste, though the operation's scope is a subject of persistent local rumor.",
+  "description": "A decommissioned Ringo Heavy Industries foundry complex stretching across six city blocks in the lower industrial belt, its skeletal superstructure of corrugated blast shields and collapsed gantries forming an accidental cathedral of rust and shadow. The central chamber — once a continuous-pour steel hall — now soars forty meters overhead, its ceiling perforated by decades of thermal expansion and scavenging, letting in ragged columns of grey light that shift with the lake weather above. Local residents have claimed the space incrementally, layering shanty platforms along the original mold-track rails and threading illegal power taps through the load-bearing columns.\n\nThe Ferrous Nave sits at a functional boundary between Tier 3 residential overflow and the deeper the Gray Zone infrastructure, making it a transit point for people and contraband moving between socioeconomic strata. Ferrogate Security holds a nominal maintenance contract on the outer perimeter but rarely enters the interior, a tacit arrangement that costs the corponation nothing and keeps civil unrest contained. Helix Biosystems operates a discreet tissue-recycling node in the eastern annex, officially licensed for industrial biowaste, though the operation's scope is a subject of persistent local rumor.",
   "atmosphere": {
     "sights": [
       "Shafts of diffuse daylight cutting through ceiling ruptures, illuminating cascading motes of iron dust and condensation",
@@ -23,7 +23,7 @@
     "feel": "The Ferrous Nave carries the compressed feeling of a place that was built for scale and now holds something far more intimate and fragile. There is a persistent low vibration in the floor plates that residents say comes from deep infrastructure below, though no one has confirmed a source. The space oscillates between communal warmth and a structural precariousness that everyone present has quietly accepted.",
     "tags": []
   },
-  "demographics": "Predominantly Tier 2 and Shelf-adjacent residents — displaced manufacturing workers, off-grid synthetics avoiding registration sweeps, and a rotating population of migrants from the Trans-Canada corridor. Ethnically dense, with significant Somali-diaspora, Rust Belt legacy, and Southeast Asian communities cohabiting across rail-level platforms.",
+  "demographics": "Predominantly Tier 2 and the Gray Zone-adjacent residents — displaced manufacturing workers, off-grid synthetics avoiding registration sweeps, and a rotating population of migrants from the Trans-Canada corridor. Ethnically dense, with significant Somali-diaspora, Rust Belt legacy, and Southeast Asian communities cohabiting across rail-level platforms.",
   "economy": "Informal barter and Φ-gray micro-transactions dominate, centered on food preparation, BCI repair, salvage brokerage, and body-modification services operating below corponation licensing thresholds. The Helix annex provides a small but steady wage pool for locals willing to work without asking questions.",
   "power_structure": "A loose council of long-term platform residents — called the Rail Assembly — arbitrates internal disputes and negotiates the terms of Ferrogate's deliberate non-presence. The Assembly holds no legal authority and derives power entirely from social legitimacy and physical familiarity with the structure's hidden access routes.",
   "dangers": [
@@ -42,7 +42,7 @@
   ],
   "connections": {
     "adjacent_to": [
-      "The Shelf",
+      "the Gray Zone",
       "The Steelyard",
       "The Slagshore"
     ],
@@ -50,7 +50,7 @@
     "tags": []
   },
   "frequented_by": [
-    "Shelf-adjacent workers cycling between informal labor in the industrial belt and cheaper overnight accommodation inside the Nave's platforms",
+    "the Gray Zone-adjacent workers cycling between informal labor in the industrial belt and cheaper overnight accommodation inside the Nave's platforms",
     "Off-grid synthetic persons using the Nave's ELF-adjacent network interference as cover against Ferrogate registration patrols",
     "Diaspora signal brokers who exploit the foundry's dense structural mass and rogue network nodes to route untraceable data transactions",
     "Helix Biosystems mid-level logistics staff who use the annex access tunnel to move biowaste shipments without logging them through standard corponation manifests"
@@ -77,8 +77,7 @@
     "night",
     "ethics",
     "food",
-    "lake",
-    "shelf"
+    "lake"
   ],
   "related_entities": [
     "Helix Biosystems",
@@ -99,5 +98,7 @@
     "Steel",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "The Wire Taps"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

@@ -12,7 +12,7 @@
   "observed_behavior": "Operates construction drones and material handlers during off-hours to create structures that are too deliberate to be random and too abstract to be useful.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 6,
-  "location": "The Shelf — empty lots",
+  "location": "the Gray Zone — empty lots",
   "dti_rating": 0,
   "story_hooks": [
     "The structures are models of buildings that don't exist yet — blueprints built in miniature by something that has seen the plans"
@@ -27,10 +27,7 @@
     "ai",
     "night",
     "drone",
-    "shelf",
     "sentient"
   ],
-  "related_entities": [
-    "The Shelf"
-  ]
+  "related_entities": []
 }

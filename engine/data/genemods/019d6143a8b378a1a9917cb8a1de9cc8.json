@@ -7,7 +7,7 @@
   "aliases": [],
   "category": "medical",
   "target_system": "integumentary (environmental toxin detection display)",
-  "description": "A specialized chromatophore patch — typically installed on the back of the hand or inner wrist — that changes color in response to environmental toxins, airborne pathogens, and dangerous chemical concentrations. The patch contains modified cells that bind to specific chemical markers and trigger a visible color change: green for safe, yellow for elevated contamination, orange for dangerous levels, red for immediately life-threatening. The detection is passive and continuous — the patch is always monitoring the air the user breathes and the surfaces they touch. Gravemoss Biofoundry developed it as a living environmental sensor for workers in contaminated zones. In the Shelf, where air and water quality vary block by block and hour by hour, the Canary Skin has become a survival tool. Groups of Canary Skin users crossing the same area create a real-time environmental quality map visible to anyone watching their hands.",
+  "description": "A specialized chromatophore patch — typically installed on the back of the hand or inner wrist — that changes color in response to environmental toxins, airborne pathogens, and dangerous chemical concentrations. The patch contains modified cells that bind to specific chemical markers and trigger a visible color change: green for safe, yellow for elevated contamination, orange for dangerous levels, red for immediately life-threatening. The detection is passive and continuous — the patch is always monitoring the air the user breathes and the surfaces they touch. Gravemoss Biofoundry developed it as a living environmental sensor for workers in contaminated zones. In the Gray Zone, where air and water quality vary block by block and hour by hour, the Canary Skin has become a survival tool. Groups of Canary Skin users crossing the same area create a real-time environmental quality map visible to anyone watching their hands.",
   "source_organism": "Sepia officinalis (common cuttlefish, chromatophore base), engineered chemosensory receptor cells",
   "manufacturer": "Gravemoss Biofoundry",
   "tier_availability": "Tier 1+ (subsidized for hazardous-area residents)",
@@ -21,7 +21,7 @@
     "Constant yellow readings in polluted areas cause chronic anxiety",
     "Patch sensitivity decreases over time, requiring recalibration every 6 months"
   ],
-  "social_perception": "Practical, valued, and slightly depressing. Canary Skin is a poverty-adjacent modification — you have it because you live somewhere the air might kill you. In clean corporate environments, the patch stays green and is irrelevant. In the Shelf, it's the first thing people check when they wake up.",
+  "social_perception": "Practical, valued, and slightly depressing. Canary Skin is a poverty-adjacent modification — you have it because you live somewhere the air might kill you. In clean corporate environments, the patch stays green and is irrelevant. In the Gray Zone, it's the first thing people check when they wake up.",
   "story_hooks": [
     "A block of Canary Skin users all flash red simultaneously — something has been released in their neighborhood, and the patches detected it before any official sensor did",
     "A Canary Skin patch begins detecting a compound that isn't in its calibration database — something new is in the air, and Gravemoss Biofoundry has no record of it"
@@ -37,7 +37,6 @@
     "food",
     "poison",
     "water",
-    "shelf",
     "tier 1"
   ],
   "related_entities": [
@@ -46,7 +45,6 @@
     "Sorin Ekwensi-Balasanyan",
     "SynapTech BreathWatch Air Quality Monitor",
     "The Pure Hand",
-    "The Shelf",
     "Zheng-Dao Bioelectric Chemoreceptive Dermal Patch"
   ]
 }

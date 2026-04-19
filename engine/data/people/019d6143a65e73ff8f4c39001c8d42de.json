@@ -9,8 +9,8 @@
   "role": "Underground Data Broker / Informal District Mapper",
   "age": 34,
   "status": "active",
-  "location": "Old Harbor, occasionally The Shelf, near Michigan Ave and Roosevelt",
-  "description": "Leszek Nurzhanov is a broad-shouldered man with deep umber skin, close-cropped natural hair going prematurely silver at the temples, and eyes that never quite settle on any single point in a room—always cataloguing, always measuring distances. His left arm from elbow to fingertip is a salvaged industrial prosthetic, mismatched plating in gunmetal grey and corroded copper that he has never bothered to cosmetically upgrade, wearing the patchwork as a kind of credential. He dresses in layered thermals and a faded orange dockworker's vest covered in hand-stitched pockets, each one holding something specific he could name without looking.\n\nHe grew up in Old Harbor when it still had functioning fish processing infrastructure, the child of a Kenyan maritime engineer father and a Norwegian logistics coordinator mother who both disappeared into the corporate restructuring that gutted the district's working economy. Leszek Nurzhanov survived by learning what the city planners never published: the actual geography of GLMZ, the tunnels under The Shelf that don't appear on any civic map, the blind spots in The Circuit's surveillance grid, the forgotten loading bays along the Harbor that still connect to the Meridian Core's service infrastructure. He sells this knowledge in careful, calibrated portions.\n\nHis reputation is for scrupulous neutrality—he will sell maps and routing data to almost anyone, and almost everyone in the mid-tier underworld knows it, which means he has accumulated a precarious kind of protection through mutual dependency. He lives in a converted cold-storage unit he has made surprisingly livable, its walls covered in hand-drawn maps that are more accurate than anything in any city database, and he trusts almost no one completely, including himself.",
+  "location": "Old Harbor, occasionally the Gray Zone, near Michigan Ave and Roosevelt",
+  "description": "Leszek Nurzhanov is a broad-shouldered man with deep umber skin, close-cropped natural hair going prematurely silver at the temples, and eyes that never quite settle on any single point in a room—always cataloguing, always measuring distances. His left arm from elbow to fingertip is a salvaged industrial prosthetic, mismatched plating in gunmetal grey and corroded copper that he has never bothered to cosmetically upgrade, wearing the patchwork as a kind of credential. He dresses in layered thermals and a faded orange dockworker's vest covered in hand-stitched pockets, each one holding something specific he could name without looking.\n\nHe grew up in Old Harbor when it still had functioning fish processing infrastructure, the child of a Kenyan maritime engineer father and a Norwegian logistics coordinator mother who both disappeared into the corporate restructuring that gutted the district's working economy. Leszek Nurzhanov survived by learning what the city planners never published: the actual geography of GLMZ, the tunnels under the Gray Zone that don't appear on any civic map, the blind spots in The Circuit's surveillance grid, the forgotten loading bays along the Harbor that still connect to the Meridian Core's service infrastructure. He sells this knowledge in careful, calibrated portions.\n\nHis reputation is for scrupulous neutrality—he will sell maps and routing data to almost anyone, and almost everyone in the mid-tier underworld knows it, which means he has accumulated a precarious kind of protection through mutual dependency. He lives in a converted cold-storage unit he has made surprisingly livable, its walls covered in hand-drawn maps that are more accurate than anything in any city database, and he trusts almost no one completely, including himself.",
   "psychology": {
     "facet_weights": {
       "wound": 0.72,
@@ -82,7 +82,7 @@
   ],
   "story_hooks": [
     "A map he sold years ago resurfaces as evidence in a corporate tribunal, and he is subpoenaed as a witness with no legal identity protection",
-    "He discovers a district that is not on any of his maps—a section of infrastructure beneath The Shelf that appears to have been deliberately erased from civic records",
+    "He discovers a district that is not on any of his maps—a section of infrastructure beneath the Gray Zone that appears to have been deliberately erased from civic records",
     "The anonymous Spire buyer requests a map of Mwangi's own cold-storage building, down to the interior dimensions",
     "Someone begins selling maps with his markings and his errors—either a copy of his work or proof that someone has been inside his home"
   ],
@@ -199,7 +199,7 @@
     "breaking_points": [
       "The anonymous Spire buyer requesting a map of his own home",
       "A sold map surfacing as evidence in a corporate tribunal",
-      "Discovering the erased district beneath the Shelf",
+      "Discovering the erased district beneath the Gray Zone",
       "Confirmation about his mother's defection"
     ]
   },
@@ -245,7 +245,6 @@
     "Frost Boudiaf",
     "Meridian Core",
     "The Circuit",
-    "The Shelf",
     "The Blind",
     "Crucible Industries Battle Rifle BR-11 'Tribunal'",
     "Stratum",

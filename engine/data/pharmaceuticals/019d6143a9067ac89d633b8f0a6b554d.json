@@ -28,7 +28,7 @@
   "tier_availability": "Tier 2-3",
   "legality": "restricted",
   "street_price": "Φ190",
-  "cultural_context": "Nullthar has a grim reputation even among runners who use it regularly — the Shelf saying is 'Nullthar tells you you're fine while you bleed out.' Stories circulate of fighters who walked out of a firefight on Nullthar only to collapse two blocks later, having fought through a ruptured spleen. It's considered the drug of desperate people and serious professionals, with very little overlap between those groups. Novafold maintains it's a pain management tool and points to the dosing instructions.",
+  "cultural_context": "Nullthar has a grim reputation even among runners who use it regularly — the Gray Zone saying is 'Nullthar tells you you're fine while you bleed out.' Stories circulate of fighters who walked out of a firefight on Nullthar only to collapse two blocks later, having fought through a ruptured spleen. It's considered the drug of desperate people and serious professionals, with very little overlap between those groups. Novafold maintains it's a pain management tool and points to the dosing instructions.",
   "story_hooks": [
     "A runner on Nullthar wins a fight against impossible odds and walks away — and dies in an alley three minutes later from injuries they never felt; someone needs to recover the data they were carrying",
     "A Novafold whistleblower claims the restricted formula was deliberately made more dependency-forming than the original military spec, and the evidence is in a distribution manifest",
@@ -51,7 +51,6 @@
     "drug",
     "stimulant",
     "fire",
-    "shelf",
     "tier 2",
     "tier 3"
   ],
@@ -63,7 +62,6 @@
     "Novafold Pharmaceuticals",
     "Nurlan Holmberg-Dembele",
     "Philibert Mwangi-Djordjevic",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "The Shelf"
+    "SynapTech ReadRoom Social Cue Enhancer"
   ]
 }

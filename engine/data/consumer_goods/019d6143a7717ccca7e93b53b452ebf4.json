@@ -13,7 +13,7 @@
   "price": "Φ1.80",
   "popularity_rank": 4,
   "slogan": "The one worth the extra sixty.",
-  "cultural_context": "The Spicy Kimchi is considered a small luxury in the Shelf — it's the pack you buy when you got paid. Tier 3 residents eat it ironically, then keep eating it because it's genuinely good.",
+  "cultural_context": "The Spicy Kimchi is considered a small luxury in the Gray Zone — it's the pack you buy when you got paid. Tier 3 residents eat it ironically, then keep eating it because it's genuinely good.",
   "story_hooks": [
     "The kimchi flavor packet contains a proprietary fermentation culture that Park Family Foods guards fiercely — a biotech firm wants to reverse-engineer it for pharmaceutical applications."
   ],
@@ -21,7 +21,6 @@
     "street_food",
     "instant_noodles",
     "consumer_good",
-    "shelf",
     "tier_1",
     "tier_2",
     "premium_variant"
@@ -29,7 +28,6 @@
   "parent_corponation": "",
   "related_entities": [
     "Kennel",
-    "Sterling-Nakamura Heritage Roadster",
-    "The Shelf"
+    "Sterling-Nakamura Heritage Roadster"
   ]
 }

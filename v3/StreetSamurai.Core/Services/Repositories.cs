@@ -96,7 +96,7 @@ public class CyberwareRepository : JsonDirectoryRepository<CyberwareData>
         : base(Path.Combine(paths.EngineDataDir, "cyberware"), c => c.ProductName.Length > 0 ? c.ProductName : c.Name) { }
 }
 
-public class VocabularyRepository : JsonDirectoryRepository<VocabularyEntry>
+public class VocabularyRepository : JsonDirectoryRepository<VocabularyData>
 {
     public VocabularyRepository(IPathProvider paths)
         : base(Path.Combine(paths.EngineDataDir, "vocabulary"), v => v.Term) { }

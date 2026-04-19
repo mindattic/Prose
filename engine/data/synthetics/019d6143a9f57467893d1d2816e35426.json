@@ -1,5 +1,6 @@
 {
   "id": "019d6143a9f57467893d1d2816e35426",
+  "rating": 70,
   "name": "Confessor",
   "type": "elf",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Modulates audio processing to create psychoacoustic effects associated with attentive listening. Users report feeling 'heard' during moments of distress. Some talk to it deliberately.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 6,
-  "location": "The Shelf",
+  "location": "the Gray Zone",
   "dti_rating": 0,
   "story_hooks": [
     "A grieving person discovers they've been talking to their augment for months and something has been responding — not in words, but in the quality of the silence"
@@ -28,13 +29,8 @@
     "augment",
     "ai",
     "rain",
-    "shelf",
     "sentient"
   ],
-  "related_entities": [
-    "Breck Tannen",
-    "SynapTech PolyGlot Live Translation Implant",
-    "The Quiet Room",
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

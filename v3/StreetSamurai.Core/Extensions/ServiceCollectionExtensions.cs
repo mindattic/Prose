@@ -318,6 +318,7 @@ public static class ServiceCollectionExtensions
         });
         services.AddSingleton<LLMVotingService>();
         services.AddSingleton<StoryQualityService>();
+        services.AddSingleton<EntityRatingService>();
 
         return services;
     }

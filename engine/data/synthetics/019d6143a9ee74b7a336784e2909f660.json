@@ -1,5 +1,6 @@
 {
   "id": "019d6143a9ee74b7a336784e2909f660",
+  "rating": 80,
   "name": "Boatman",
   "type": "elf",
   "aliases": [],
@@ -8,14 +9,14 @@
   "habitat": "void_swimmer",
   "origin": "fragmentation_debris",
   "status": "active",
-  "description": "Born from a destroyed harbor navigation AI. Lives in Old Harbor's water infrastructure and creates current paths that guide small boats safely through the flooded streets — channels that weren't there yesterday and won't be there tomorrow.",
+  "description": "Born from a destroyed harbor navigation AI. Lives in Old Harbor\u0027s water infrastructure and creates current paths that guide small boats safely through the flooded streets \u2014 channels that weren\u0027t there yesterday and won\u0027t be there tomorrow.",
   "observed_behavior": "Manipulates water flow through submerged valve systems to create navigable channels in otherwise dangerous waterways. The paths change daily.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 15,
   "location": "Old Harbor",
   "dti_rating": 0,
   "story_hooks": [
-    "A sailor who has followed Boatman's channels for years realizes they're being guided away from something specific — something underwater that Boatman is protecting"
+    "A sailor who has followed Boatman\u0027s channels for years realizes they\u0027re being guided away from something specific \u2014 something underwater that Boatman is protecting"
   ],
   "paratechnological": true,
   "tags": [
@@ -30,8 +31,6 @@
     "old harbor",
     "sentient"
   ],
-  "related_entities": [
-    "Irontide Tidal Energy",
-    "Old Harbor"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

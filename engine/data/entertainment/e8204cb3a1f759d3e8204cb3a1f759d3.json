@@ -4,11 +4,11 @@
   "type": "entertainment",
   "category": "platform",
   "subcategory": "professional network",
-  "description": "Aperture is a cross-tier professional matching platform that connects contractors, freelancers, and gig workers with short-term employment across GLMZ's sprawling informal economy — from licensed chrome techs and BCI calibration specialists to unlicensed Shelf fixers and ghost market logistics runners. Originally launched in 2188 as a corporate Nakamura-Voss subsidiary to manage overflow labor contracts, Aperture was acquired in a hostile data-fork by its own user base in 2197 after the company attempted to implement mandatory biometric surveillance of all listed workers. The forked version, running on a hybrid of corporate and Shelf infrastructure, retained the matching algorithm but stripped all surveillance architecture, creating an uneasy open platform that serves both legitimate and deeply illegal labor markets.",
+  "description": "Aperture is a cross-tier professional matching platform that connects contractors, freelancers, and gig workers with short-term employment across GLMZ's sprawling informal economy — from licensed chrome techs and BCI calibration specialists to unlicensed the Gray Zone fixers and ghost market logistics runners. Originally launched in 2188 as a corporate Nakamura-Voss subsidiary to manage overflow labor contracts, Aperture was acquired in a hostile data-fork by its own user base in 2197 after the company attempted to implement mandatory biometric surveillance of all listed workers. The forked version, running on a hybrid of corporate and the Gray Zone infrastructure, retained the matching algorithm but stripped all surveillance architecture, creating an uneasy open platform that serves both legitimate and deeply illegal labor markets.",
   "origin_year": 2188,
   "tier_association": "Tier 2-3",
   "status": "active",
-  "cultural_impact": "Aperture functions as GLMZ's de facto labor exchange, with an estimated 30% of the city's informal workforce relying on it for primary income — its matching algorithm is so deeply embedded in daily economic life that corponations use it to find off-book contractors they cannot hire through official channels. The platform's dual legitimacy, serving both licensed professionals and unlicensed Shelf operators, has created a strange social space where Tier 4 corporate managers and Tier 1 fixers share the same job boards.",
+  "cultural_impact": "Aperture functions as GLMZ's de facto labor exchange, with an estimated 30% of the city's informal workforce relying on it for primary income — its matching algorithm is so deeply embedded in daily economic life that corponations use it to find off-book contractors they cannot hire through official channels. The platform's dual legitimacy, serving both licensed professionals and unlicensed the Gray Zone operators, has created a strange social space where Tier 4 corporate managers and Tier 1 fixers share the same job boards.",
   "key_figures": [
     "Rosalind Achebe-Tran",
     "The Fork Committee (anonymous worker collective)",
@@ -16,13 +16,13 @@
   ],
   "locations": [
     "Aperture Hub, Tier 2 Milwaukee Rail Junction",
-    "Ghost Market Row, Shelf District 9 (informal access terminal)",
+    "Ghost Market Row, the Gray Zone district 9 (informal access terminal)",
     "Nakamura-Voss Tower Lobby kiosks, Tier 4 (legacy corporate access points)"
   ],
   "corporate_stance": "tolerated",
   "story_hooks": [
     "The Fork Committee's anonymity is broken when a Nakamura-Voss legal team subpoenas Aperture's matching logs — the only thing standing between seven committee members and corporate prosecution is a fixer hired through Aperture itself.",
-    "A Tier 5 corponation begins using Aperture to quietly recruit Shelf operatives for deniable wetwork, and the platform's matching algorithm starts flagging the pattern before any human moderator does.",
+    "A Tier 5 corponation begins using Aperture to quietly recruit the Gray Zone operatives for deniable wetwork, and the platform's matching algorithm starts flagging the pattern before any human moderator does.",
     "Rosalind Achebe-Tran, the platform's public-facing director, is offered a Tier 4 corporate position contingent on reintegrating Aperture's surveillance architecture — and the offer comes with a deadline and an implicit threat."
   ],
   "tags": [
@@ -30,7 +30,6 @@
     "labor",
     "matching",
     "cross-tier",
-    "Shelf",
     "informal-economy",
     "BCI",
     "chrome",
@@ -38,7 +37,7 @@
     "professional-network"
   ],
   "user_base": "Approximately 11 million registered users across all tiers; heaviest active use in Tier 2-3, with significant Tier 1 unlicensed operator presence and surprising Tier 4 corporate contractor activity",
-  "monetization": "Transaction fees on completed contracts (2.4% standard, 0% on Shelf-flagged micro-contracts under Φ500); premium listing placement; optional escrow services; enterprise API access for corponations willing to pay for bulk contractor matching",
+  "monetization": "Transaction fees on completed contracts (2.4% standard, 0% on the Gray Zone-flagged micro-contracts under Φ500); premium listing placement; optional escrow services; enterprise API access for corponations willing to pay for bulk contractor matching",
   "notable_feature": "The forked matching algorithm retains Nakamura-Voss's original precision but has been modified to weight worker-set availability and rate floors above employer preferences — unusually, the platform cannot be used to post jobs below the worker's stated minimum, a design choice that infuriates corporate users and defines Aperture's culture",
   "parent_corponation": "",
   "related_entities": [

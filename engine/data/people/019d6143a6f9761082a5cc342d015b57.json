@@ -9,7 +9,7 @@
   "role": "Underground press operator and anti-corporate agitator",
   "age": 27,
   "status": "active",
-  "location": "The Shelf, operating a mobile print node out of a converted food-stall chassis, near Ashland and Division",
+  "location": "the Gray Zone, operating a mobile print node out of a converted food-stall chassis, near Ashland and Division",
   "description": "Briar Baek is wiry and perpetually in motion, with warm terracotta skin, loose natural curls he dyes in rotating colors — currently a deep arterial red — and bioluminescent tattoos along his collarbones that pulse faintly blue when his heart rate rises (an unlicensed geneware side effect he never had properly stabilized). He is almost always seen wearing multiple layers of breathable mesh, pockets stuffed with data chips, print cartridges, and folded broadsheets still warm from the press. His eyes are quick and rarely meet anyone's gaze for long — not from shyness, but from constant peripheral threat assessment.\n\nThéo runs Ghostprint, a one-person underground broadsheet that covers what no licensed outlet will: corporate safety violations, enclave demolition orders, disappeared activists, synthetic-person abuse by Axiom security contractors. He writes fast and loose and brilliant, trading some accuracy for urgency, a habit that has landed him in trouble more than once. He believes — genuinely, almost religiously — that information is the only weapon that cannot be confiscated if you distribute it fast enough.",
   "psychology": {
     "facet_weights": {
@@ -39,7 +39,7 @@
     "secret": "Three months ago he received a data package from an anonymous Axiom insider containing evidence of a systematic illegal organ harvesting operation in Tier 1 zones. He hasn't published it because he cannot verify it — and because he's terrified it's a plant designed to discredit him. He's been sitting on it, and the weight is eating him alive."
   },
   "speech_patterns": {
-    "vocabulary": "Rapid-fire, journalistic shorthand mixed with Shelf street slang and occasional formal French phrases inherited from his grandparents; loves compound sentences that go one clause too far",
+    "vocabulary": "Rapid-fire, journalistic shorthand mixed with the Gray Zone street slang and occasional formal French phrases inherited from his grandparents; loves compound sentences that go one clause too far",
     "cadence": "Fast, enthusiastic, tends to talk over his own pauses — he edits in real time as he speaks",
     "verbal_tics": [
       "'Off the record or on?'",
@@ -58,8 +58,8 @@
   ],
   "narrative_function": "Information source and potential investigative ally; his archives contain explosive material that factions across the city would pay or threaten to access; represents the free press as a fragile, human-powered institution; can serve as a quest giver when a story requires legs he doesn't have.",
   "augmentations": "Unstabilized bioluminescent tattoo geneware (collarbones, pulses blue under stress); basic neural text buffer implant for rapid transcription — cheap model, causes mild headaches after sustained use; no other chrome",
-  "daily_life": "Moves his print chassis to a new Shelf location every two to three days; spends mornings gathering tips and conducting brief street interviews, afternoons writing and typesetting, evenings distributing physical copies and pushing encrypted digital versions to darknet nodes.",
-  "affiliation": "Ghostprint Independent Press (self-operated); informal ties to the Shelf Residents' Assembly; receives tips from contacts across five zones",
+  "daily_life": "Moves his print chassis to a new the Gray Zone location every two to three days; spends mornings gathering tips and conducting brief street interviews, afternoons writing and typesetting, evenings distributing physical copies and pushing encrypted digital versions to darknet nodes.",
+  "affiliation": "Ghostprint Independent Press (self-operated); informal ties to the Gray Zone Residents' Assembly; receives tips from contacts across five zones",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -178,7 +178,7 @@
     "Arsonist": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -188,7 +188,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Born in the Shelf to a logistics worker and a street medic",
+      "event": "Born in the Gray Zone to a logistics worker and a street medic",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -237,12 +237,11 @@
   ],
   "related_entities": [
     "Graviton Compression Emitter GCE-3 'Flatline'",
-    "The Shelf",
     "TESSERA CORPONATION Axiom CorpSec Cognition Hardened BCI",
     "Nesting Doll",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "East Asian (34.5%) / Indigenous American (31.4%) / Sub-Saharan African (18.5%) / Northern European (12.8%) / South Asian (2.8%) — a striking global convergence creating distinctive phenotypic markers: warm medium-deep brown skin with golden and reddish undertones, facial structure blending East Asian angularity with Indigenous American and Sub-Saharan African broader cheekbones and orbital structure, creating a uniquely balanced aesthetic that reflects four continents",
     "height_cm": 172,

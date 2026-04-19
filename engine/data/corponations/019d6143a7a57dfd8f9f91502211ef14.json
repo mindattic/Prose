@@ -39,5 +39,15 @@
     "Verdant Systems",
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
     "Yannick Tofauti-Szarvásy"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z6",
+      "Z11"
+    ],
+    "primaryZone": "Z6",
+    "lakefrontAccess": true,
+    "description": "The Ashgrave Synthesis Corridor — continuous industrial zone from South Chicago through Gary and Hammond along the southern Lake Michigan shore, extending east through Michigan City into the Zone 11 southern wrap. The largest single contiguous corponation territory in the GLMZ by land area. Most polluted sovereign zone in the Corridor.",
+    "grayZoneRelationship": "Ashgrave territory is the lakefront industrial strip. The neighborhoods behind their facilities are Zone 6 Gray Zones — the most dangerous in the Corridor. Ashgrave maintains no formal relationship with these communities."
+  }
 }

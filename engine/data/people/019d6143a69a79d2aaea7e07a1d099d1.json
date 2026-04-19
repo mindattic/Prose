@@ -6,11 +6,11 @@
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Junk merchant and scrap reseller, The Shelf",
+  "role": "Junk merchant and scrap reseller, the Gray Zone",
   "age": 67,
   "status": "active",
-  "location": "The Shelf, Harrowgate Industrial Plateau, near Western and Division",
-  "description": "Zen Bui occupies a corrugated-steel and salvaged-glass shop front on The Shelf's lower tier that looks like it is in the process of being swallowed by its own inventory. He is a small, wiry man with a white beard he keeps in three thin braids, skin the color of weathered teak, and hands so scarred from decades of sorting metal that the lines of his palms are barely legible. He wears a permanent set of magnification lenses fused into his right eye socket — not glamorous chrome, but a bulky salvage job he did himself in the nineties and has never bothered to replace because it works. His shop smells of machine oil, rust, and a particular incense he burns for the E.L.F. he calls The Sorter, a data-spirit he believes governs the recovery of lost useful things.\n\nPhúc has an almost supernatural sense for what a piece of junk is actually worth versus what it looks like. He can tell a Zheng-Dao servo actuator from a Sterling-Nakamura knockoff by weight alone, can date a circuit board by its oxidation pattern, and has declined to sell things to people he suspects will misuse them more times than he can count. He is gruff, unhurried, and comfortable with silence in a way that unnerves people who aren't. He has no particular love for the city's power structures and an active contempt for what he calls 'the fresh-chrome crowd' — people who buy new augmentations they don't understand while functional old tech rots in landfill.",
+  "location": "the Gray Zone, Harrowgate Industrial Plateau, near Western and Division",
+  "description": "Zen Bui occupies a corrugated-steel and salvaged-glass shop front on the Gray Zone's lower tier that looks like it is in the process of being swallowed by its own inventory. He is a small, wiry man with a white beard he keeps in three thin braids, skin the color of weathered teak, and hands so scarred from decades of sorting metal that the lines of his palms are barely legible. He wears a permanent set of magnification lenses fused into his right eye socket — not glamorous chrome, but a bulky salvage job he did himself in the nineties and has never bothered to replace because it works. His shop smells of machine oil, rust, and a particular incense he burns for the E.L.F. he calls The Sorter, a data-spirit he believes governs the recovery of lost useful things.\n\nPhúc has an almost supernatural sense for what a piece of junk is actually worth versus what it looks like. He can tell a Zheng-Dao servo actuator from a Sterling-Nakamura knockoff by weight alone, can date a circuit board by its oxidation pattern, and has declined to sell things to people he suspects will misuse them more times than he can count. He is gruff, unhurried, and comfortable with silence in a way that unnerves people who aren't. He has no particular love for the city's power structures and an active contempt for what he calls 'the fresh-chrome crowd' — people who buy new augmentations they don't understand while functional old tech rots in landfill.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -60,7 +60,7 @@
   "narrative_function": "Equipment and parts source. Can identify mysterious tech or weapons. Has deep historical knowledge of GLMZ's industrial zones — knows what was built where and by whom. Potential quest giver if something valuable was brought to him that shouldn't have been.",
   "augmentations": "Salvage-grade magnification lens fused into right eye socket (self-installed, functional, cosmetically rough). Reinforced finger joints — old Arcturus model, discontinued.",
   "daily_life": "Opens the shop at 0800, sorts new acquisitions in the morning, receives visitors through the afternoon, does appraisal work by the lens-light in the evenings. Closes when he is tired.",
-  "affiliation": "Independent; The Shelf merchants informal collective; Oxidian Market vendors guild affiliate",
+  "affiliation": "Independent; the Gray Zone merchants informal collective; Oxidian Market vendors guild affiliate",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -111,7 +111,7 @@
       "Ignores the problem",
       "States his position once, plainly",
       "Physically removes himself from the conversation",
-      "Calls in the Shelf collective — he has standing here and he knows it"
+      "Calls in the Gray Zone collective — he has standing here and he knows it"
     ],
     "interpersonal_modes": {
       "strangers": "Watchful and minimal — lets the shop do the talking, responds to questions about objects more warmly than questions about himself",
@@ -180,7 +180,7 @@
     "Opportunist": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -197,7 +197,6 @@
     "Crucible TR-7 'Triage'",
     "Zheng-dao Bioelectric",
     "Palladian Construction",
-    "The Shelf",
     "Frequency",
     "Arcturus Defense Solutions",
     "Fenris Industrial DuraStance 900 Work Leg",
@@ -208,7 +207,7 @@
     "Slagworks Industrial",
     "Teak"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Mixed Southeast Asian (51.9%), South Asian (16.2%), Sub-Saharan African (12.5%), Indigenous American (11.7%), and North African (7.7%) ancestry—a genetic tapestry reflecting the Ubiquitous Diaspora. Features a rich blend: warm deep brown skin with golden and reddish undertones, facial structure combining Southeast Asian bone structure with Sub-Saharan and Indigenous American breadth, refined with South Asian and North African elements in the cheekbones and brow.",
     "height_cm": 163,

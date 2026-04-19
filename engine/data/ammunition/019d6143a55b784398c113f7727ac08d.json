@@ -17,13 +17,13 @@
   "variants": [
     "TMP-40 Standard (biphasic, general purpose)",
     "TMP-40 Arctic (modified viscosity for cold-weather operation to -40C)",
-    "TMP-40 High-Energy (increased density, 20% more shots per cartridge, 12-month shelf life)",
+    "TMP-40 High-Energy (increased density, 20% more shots per cartridge, 12-month Gray Zone life)",
     "TMP-40 Training (reduced energy density, lower chamber pressure, extended weapon life)"
   ],
   "cultural_context": "The TMP-40 represents Tessera Corponation's consumables strategy at its most effective — the liquid propellant cartridge is the razor blade to the ETC weapon's razor handle. Operators who invest in ETC platforms are permanently locked into Tessera's propellant supply chain, and Tessera prices accordingly. On the black market, TMP-40 cartridges trade at a premium that reflects not just scarcity but the absence of viable alternatives. The few independent chemists who have attempted to produce compatible propellant have either been acquired by Tessera, threatened by Tessera, or suffered laboratory accidents that may or may not have been coincidental. Among operators, 'Tessera tax' is slang for any ongoing consumable cost that a manufacturer has engineered into a weapon system.",
   "story_hooks": [
     "A chemist has successfully reverse-engineered the TMP-40 formulation and is selling compatible cartridges at 30% of Tessera's price — the cartridges work, but Tessera's internal security has dispatched a team to shut down the operation, and the chemist is looking for protection.",
-    "A sealed crate of TMP-40 cartridges has been in storage for three years — well past shelf life — and is being sold at discount on the black market, but the degraded propellant has an unpredictable vaporization curve that turns every shot into a coin flip between normal fire and chamber detonation."
+    "A sealed crate of TMP-40 cartridges has been in storage for three years — well past Gray Zone life — and is being sold at discount on the black market, but the degraded propellant has an unpredictable vaporization curve that turns every shot into a coin flip between normal fire and chamber detonation."
   ],
   "tags": [
     "exotic",
@@ -39,7 +39,6 @@
     "explosive",
     "energy",
     "fire",
-    "shelf",
     "tier 3"
   ],
   "parent_corponation": "Tessera Corponation",
@@ -50,7 +49,7 @@
     "Free Assembly",
     "Godfrey Nkemezue-Torghayev",
     "Lacunal",
-    "Shelf Life",
+    "Gray Zone life",
     "Tessera Corponation",
     "Tympanic Membrane Galvanic Rupture Carbine",
     "Vantablack Media Orphan Signal Cartridge",

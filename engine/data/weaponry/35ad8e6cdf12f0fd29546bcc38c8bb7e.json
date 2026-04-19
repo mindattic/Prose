@@ -4,7 +4,7 @@
   "type": "weapon",
   "aliases": [],
   "category": "pistol",
-  "description": "The Hearthstone Sentinel-9 is a full-size semi-automatic pistol chambered in 9x19mm, representing Hearthstone's attempt to move upmarket from their Shelf-focused product line. The frame is reinforced polymer with steel slide rails, the barrel is conventionally rifled rather than the cast barrels found in their budget offerings, and the trigger is a clean striker-fired mechanism with an acceptable pull weight.\n\nThe Sentinel-9 costs roughly three times what a Payday costs and delivers roughly ten times the performance. For Shelf residents who have saved enough to upgrade from disposable firearms, it represents the entry point into 'real' gun ownership — a weapon that can be maintained, accessorized, and relied upon over years of use rather than months. Hearthstone designed it as a bridge product: familiar enough to their existing customer base to feel accessible, competent enough to earn respect outside Shelf districts.\n\nThe Block Watch nickname emerged from community defense groups in upper-Shelf neighborhoods who pooled resources to equip their members with Sentinel-9s instead of the usual assortment of Paydays and Tin Cans. The improvement in reliability and accuracy was immediate and measurable, and the Sentinel-9 became a symbol of Shelf communities investing in their own protection.",
+  "description": "The Hearthstone Sentinel-9 is a full-size semi-automatic pistol chambered in 9x19mm, representing Hearthstone's attempt to move upmarket from their the Gray Zone-focused product line. The frame is reinforced polymer with steel slide rails, the barrel is conventionally rifled rather than the cast barrels found in their budget offerings, and the trigger is a clean striker-fired mechanism with an acceptable pull weight.\n\nThe Sentinel-9 costs roughly three times what a Payday costs and delivers roughly ten times the performance. For the Gray Zone residents who have saved enough to upgrade from disposable firearms, it represents the entry point into 'real' gun ownership — a weapon that can be maintained, accessorized, and relied upon over years of use rather than months. Hearthstone designed it as a bridge product: familiar enough to their existing customer base to feel accessible, competent enough to earn respect outside the Gray Zone districts.\n\nThe Block Watch nickname emerged from community defense groups in upper-the Gray Zone neighborhoods who pooled resources to equip their members with Sentinel-9s instead of the usual assortment of Paydays and Tin Cans. The improvement in reliability and accuracy was immediate and measurable, and the Sentinel-9 became a symbol of the Gray Zone communities investing in their own protection.",
   "manufacturer": "HEARTHSTONE FIREARMS",
   "tier_availability": "Tier 2+",
   "legality": "Legal — standard registration",
@@ -14,17 +14,17 @@
     "Conventionally rifled barrel"
   ],
   "specifications": "caliber: 9x19mm\neffective_range: 40 meters\nrate_of_fire: Semi-automatic\nmagazine_capacity: 15 rounds\nweight: 0.72 kg",
-  "tactical_use": "A competent full-size duty pistol at an accessible price point. Reliable enough for sustained use and accurate enough for aimed fire at moderate distances. Compatible with standard accessory rails. Represents a significant capability upgrade over Shelf-tier disposable firearms while remaining affordable for budget-conscious buyers.",
-  "cultural_context": "The Block Watch is a point of pride in upper-Shelf communities. Community defense groups that carry Sentinel-9s are seen as organized and serious — a step above the ad-hoc armed presence of Payday-carrying individuals. The weapon represents aspiration: the desire to protect one's neighborhood with something worthy of the effort.",
+  "tactical_use": "A competent full-size duty pistol at an accessible price point. Reliable enough for sustained use and accurate enough for aimed fire at moderate distances. Compatible with standard accessory rails. Represents a significant capability upgrade over the Gray Zone-tier disposable firearms while remaining affordable for budget-conscious buyers.",
+  "cultural_context": "The Block Watch is a point of pride in upper-the Gray Zone communities. Community defense groups that carry Sentinel-9s are seen as organized and serious — a step above the ad-hoc armed presence of Payday-carrying individuals. The weapon represents aspiration: the desire to protect one's neighborhood with something worthy of the effort.",
   "known_users": [
-    "Shelf community defense groups",
-    "Upper-Shelf residents",
+    "the Gray Zone community defense groups",
+    "Upper-the Gray Zone residents",
     "Budget-conscious first-time serious gun buyers",
     "Small business security"
   ],
   "story_hooks": [
-    "A Shelf community defense group armed with Block Watches confronts a corponation enforcement team and refuses to stand down. The standoff becomes a media event that forces uncomfortable questions about who provides security in the Shelf.",
-    "Hearthstone is offering subsidized Sentinel-9s to Shelf community groups — but the subsidy is funded by a corponation with interests in the neighborhood. The weapons come with strings attached."
+    "A the Gray Zone community defense group armed with Block Watches confronts a corponation enforcement team and refuses to stand down. The standoff becomes a media event that forces uncomfortable questions about who provides security in the Gray Zone.",
+    "Hearthstone is offering subsidized Sentinel-9s to the Gray Zone community groups — but the subsidy is funded by a corponation with interests in the neighborhood. The weapons come with strings attached."
   ],
   "ammunition_type": [
     "9x19mm"
@@ -33,7 +33,6 @@
     "weapon",
     "pistol",
     "community",
-    "shelf",
     "affordable",
     "reliable",
     "lethal"
@@ -47,7 +46,6 @@
     "Radiant Thermal Lance RTL-8 'Hearthstone'",
     "TESSERA CORPONATION Sentinel Executive Security BCI",
     "The Hearthstone",
-    "The Shelf",
     "Zheng-Dao Bioelectric Galvanic Resuscitation Frame — 'The Pallbearer's Daughter'"
   ],
   "physical_description": {

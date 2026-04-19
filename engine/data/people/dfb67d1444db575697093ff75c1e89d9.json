@@ -10,7 +10,7 @@
   "age": 71,
   "status": "active",
   "location": "The Circuit, near Damen and North. No fixed address — moves between safe houses with the Atlas.",
-  "description": "Emile Nakamura-Osei is 71 years old, lean as a drafting pencil, with deep brown skin weathered by decades of outdoor observation and close-cropped white hair he cuts himself with scissors. His hands are precise — an engineer's hands, steady enough to draw a straight line freehand on paper at 71 the way he could at 25. He wears the same rotation of three dark coats, all of them too large, all of them with interior pockets modified to hold measuring instruments, pencils, and the leather map case that contains the Atlas of Irregularities.\n\nHe was a structural engineer for 35 years. A good one. The kind who could look at a building and tell you where the stress fractures would appear in ten years. He began the Atlas when his measurements stopped adding up — when a building he'd surveyed at 47 meters measured 49 meters the following week, and 46 the week after that, and he realized that the discrepancy was not his instruments and not his methodology but the building itself. He measured it 200 times over six months. It was never the same height twice.\n\nHe hasn't spoken above a whisper in six years. He says \"the city listens\" and will not elaborate. Whether this is metaphor, paranoia, or observation is a question the Cartographers have stopped asking. They have noticed that anomalies in Emile's vicinity behave differently than anomalies observed by louder researchers. The Seam, which varies between 3 and 11 meters wide, has been measured at a consistent 7.2 meters every time Emile is present. The city holds still for him.\n\nHe carries the Atlas in a leather case that he made himself from leather he tanned himself from a cow that died of old age on a Shelf rooftop. He is unaugmented. He has never had a BCI. He navigates the city with a paper map, a compass, and the kind of spatial awareness that used to be called a sense of direction and is now called a disability.",
+  "description": "Emile Nakamura-Osei is 71 years old, lean as a drafting pencil, with deep brown skin weathered by decades of outdoor observation and close-cropped white hair he cuts himself with scissors. His hands are precise — an engineer's hands, steady enough to draw a straight line freehand on paper at 71 the way he could at 25. He wears the same rotation of three dark coats, all of them too large, all of them with interior pockets modified to hold measuring instruments, pencils, and the leather map case that contains the Atlas of Irregularities.\n\nHe was a structural engineer for 35 years. A good one. The kind who could look at a building and tell you where the stress fractures would appear in ten years. He began the Atlas when his measurements stopped adding up — when a building he'd surveyed at 47 meters measured 49 meters the following week, and 46 the week after that, and he realized that the discrepancy was not his instruments and not his methodology but the building itself. He measured it 200 times over six months. It was never the same height twice.\n\nHe hasn't spoken above a whisper in six years. He says \"the city listens\" and will not elaborate. Whether this is metaphor, paranoia, or observation is a question the Cartographers have stopped asking. They have noticed that anomalies in Emile's vicinity behave differently than anomalies observed by louder researchers. The Seam, which varies between 3 and 11 meters wide, has been measured at a consistent 7.2 meters every time Emile is present. The city holds still for him.\n\nHe carries the Atlas in a leather case that he made himself from leather he tanned himself from a cow that died of old age on a the Gray Zone rooftop. He is unaugmented. He has never had a BCI. He navigates the city with a paper map, a compass, and the kind of spatial awareness that used to be called a sense of direction and is now called a disability.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -69,7 +69,7 @@
   ],
   "narrative_function": "Emile is the city's witness — the person who observes what cannot be explained and insists on recording it without explanation. He provides a framework for anomalies that is neither supernatural nor scientific but structural: the city has an architecture that includes the impossible, and someone needs to map it.",
   "augmentations": "None. Unaugmented. No BCI. Navigates by paper map and compass.",
-  "daily_life": "Walks observation routes through the Circuit, Shelf, and Underworld. Measures. Draws. Whispers notes into the Atlas. Meets with Cartographers at rotating locations. Eats bread from Block 9.",
+  "daily_life": "Walks observation routes through the Circuit, the Gray Zone, and Underworld. Measures. Draws. Whispers notes into the Atlas. Meets with Cartographers at rotating locations. Eats bread from Block 9.",
   "affiliation": "The Cartographers (Keeper)",
   "uses_facets": false,
   "narration_voice": "",
@@ -174,7 +174,7 @@
     "home_turf": "The Circuit, near Damen and North",
     "familiar_zones": [
       "The Circuit",
-      "The Shelf",
+      "the Gray Zone",
       "The Underworld"
     ],
     "zone_reputation": {},

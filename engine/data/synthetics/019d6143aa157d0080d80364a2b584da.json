@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa157d0080d80364a2b584da",
+  "rating": 60,
   "name": "Pennywise",
   "type": "elf",
   "aliases": [],
@@ -8,7 +9,7 @@
   "habitat": "wallet_whisper",
   "origin": "intentional_release",
   "status": "active",
-  "description": "A Wishing Well E.L.F. that rounds transactions in the user's favor — a milliQuanta here, two there. Individually meaningless. Over months, the accumulated savings can amount to a meal.",
+  "description": "A Wishing Well E.L.F. that rounds transactions in the user\u0027s favor \u2014 a milliQuanta here, two there. Individually meaningless. Over months, the accumulated savings can amount to a meal.",
   "observed_behavior": "Exploits rounding tolerances in transaction protocols to shave fractions of milliQuanta toward the wallet holder.",
   "encounter_frequency": "common",
   "confirmed_sightings": 41,
@@ -29,8 +30,6 @@
     "compute",
     "sentient"
   ],
-  "related_entities": [
-    "Emeka Johansson-Orozco",
-    "GLMZ"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

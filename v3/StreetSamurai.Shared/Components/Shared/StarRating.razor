@@ -1,0 +1,73 @@
+@* Star rating: 5-star cutout mask over a fill bar. Value is 0–100. *@
+
+<div class="star-rating" title="@Value.ToString("F0")/100" @onmouseleave="ClearHover">
+    <svg width="110" height="20" viewBox="0 0 110 20">
+        <defs>
+            <clipPath id="sr-@uid">
+                <path d="@StarPath" />
+            </clipPath>
+        </defs>
+        <rect width="110" height="20" fill="#2a2a2a" clip-path="url(#sr-@uid)" />
+        <rect width="@DisplayWidth" height="20" fill="#f5c518" clip-path="url(#sr-@uid)" />
+        @for (int i = 0; i < 10; i++)
+        {
+            var zone = i;
+            <rect x="@(zone * 11)" y="0" width="11" height="20" fill="transparent"
+                  style="cursor:pointer"
+                  @onclick="() => SetRating(zone)"
+                  @onclick:stopPropagation
+                  @onmouseover="() => SetHover(zone)" />
+        }
+    </svg>
+    <div class="sr-label">@Value.ToString("F0")</div>
+</div>
+
+<style>
+    .star-rating { display: inline-flex; flex-direction: column; align-items: center; gap: 1px; }
+    .sr-label { font-size: 0.6rem; color: #8b949e; line-height: 1; }
+</style>
+
+@code {
+    [Parameter] public double Value { get; set; }
+    [Parameter] public EventCallback<double> ValueChanged { get; set; }
+
+    private string uid = Guid.NewGuid().ToString("N")[..8];
+    private double hoverValue = -1;
+
+    private double DisplayWidth => (hoverValue >= 0 ? hoverValue : Value) / 100.0 * 110.0;
+
+    private static readonly string StarPath = BuildStarPath();
+
+    private static string BuildStarPath()
+    {
+        var sb = new System.Text.StringBuilder();
+        for (int i = 0; i < 5; i++)
+        {
+            double ox = i * 22.0;
+            double cx = ox + 10, cy = 10;
+            double R = 9, r = 3.8;
+            var pts = new List<(double x, double y)>();
+            for (int k = 0; k < 5; k++)
+            {
+                double outerA = Math.PI * (-0.5 + 0.4 * k);
+                double innerA = outerA + Math.PI * 0.2;
+                pts.Add((cx + R * Math.Cos(outerA), cy + R * Math.Sin(outerA)));
+                pts.Add((cx + r * Math.Cos(innerA), cy + r * Math.Sin(innerA)));
+            }
+            sb.Append("M ");
+            for (int p = 0; p < pts.Count; p++)
+                sb.Append($"{pts[p].x:F2},{pts[p].y:F2} {(p < pts.Count - 1 ? "L " : "Z ")}");
+        }
+        return sb.ToString();
+    }
+
+    private void SetHover(int zone) => hoverValue = (zone + 1) * 10.0;
+    private void ClearHover() => hoverValue = -1;
+
+    private async Task SetRating(int zone)
+    {
+        Value = (zone + 1) * 10.0;
+        hoverValue = -1;
+        await ValueChanged.InvokeAsync(Value);
+    }
+}

@@ -10,7 +10,7 @@
   "age": 33,
   "status": "active",
   "location": "Crucible Square — open-air market, Tier 1-2 commerce, near Kedzie and Division",
-  "description": "Juno Mukherjee-Raghavan-Quartey are athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 33, they have soft features that belie the chrome underneath — people underestimate them once, usually only once. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and they make no effort to hide it.\n\nThey came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see them surpass them. They work as a getaway pilot out of Crucible Square, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nWhat Juno Mukherjee-Raghavan-Quartey lacks in subtlety, they compensate for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "description": "Juno Mukherjee-Raghavan-Quartey are athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 33, they have soft features that belie the chrome underneath — people underestimate them once, usually only once. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and they make no effort to hide it.\n\nThey came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see them surpass them. They work as a getaway pilot out of Crucible Square, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nWhat Juno Mukherjee-Raghavan-Quartey lacks in subtlety, they compensate for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.73,
@@ -272,10 +272,9 @@
   "related_entities": [
     "The Unfinished Theorem",
     "The Nearfield",
-    "The Shelf",
     "GLMZ"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "South Asian ancestry (70.8%) forms the genetic foundation with warm brown skin reflecting the diversity of the Indian subcontinent. Significantly blended with Sub-Saharan African heritage (21.6%) that deepens the complexion with rich warm undertones and contributes fuller facial structure and lip definition. East Asian ancestry (7.6%) adds subtle refinement to cheekbone prominence and eye shape. The genetic synthesis creates luminous warm brown skin with golden-amber undertones — a sophisticated depth where South Asian warmth meets African richness and East Asian contours.",
     "height_cm": 174,

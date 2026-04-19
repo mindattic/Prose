@@ -27,10 +27,10 @@
   "tier_availability": "Tier 2-3",
   "legality": "restricted",
   "street_price": "Φ95 licensed; Φ35 pirated (no BCI scaffolding)",
-  "cultural_context": "Kairos has generated its own religion — the Kairosi, a movement of people who believe the drug provides genuine access to transcendent truth, and that the BCI is not scaffolding but a receiver picking up signals that were always there. Helix Biosystems has quietly funded academic papers questioning this interpretation while watching the movement grow their market. The pirated version, called 'raw Kairos,' has caused multiple psychotic breaks on the Shelf, where users have BCIs too degraded to scaffold the experience properly.",
+  "cultural_context": "Kairos has generated its own religion — the Kairosi, a movement of people who believe the drug provides genuine access to transcendent truth, and that the BCI is not scaffolding but a receiver picking up signals that were always there. Helix Biosystems has quietly funded academic papers questioning this interpretation while watching the movement grow their market. The pirated version, called 'raw Kairos,' has caused multiple psychotic breaks in the Gray Zone, where users have BCIs too degraded to scaffold the experience properly.",
   "story_hooks": [
     "A Kairosi leader has experienced a hallucination so specific — coordinates, a face, a piece of information — that it turned out to be real, and now everyone wants to know if someone is using the drug's BCI integration to transmit actual data through the trip",
-    "Raw Kairos on the Shelf is getting stronger, not weaker — the pirated formula has been modified by someone who wants the hallucinations uncontrolled and terrifying, and Shelf residents are experiencing coordinated nightmare imagery",
+    "Raw Kairos in the Gray Zone is getting stronger, not weaker — the pirated formula has been modified by someone who wants the hallucinations uncontrolled and terrifying, and the Gray Zone residents are experiencing coordinated nightmare imagery",
     "A character's Kairos trip shows them something that hasn't happened yet — and three days later, it begins to"
   ],
   "tags": [
@@ -45,13 +45,11 @@
     "market",
     "night",
     "drug",
-    "shelf",
     "tier 2",
     "tier 3"
   ],
   "parent_corponation": "",
   "related_entities": [
-    "Helix Biosystems",
-    "The Shelf"
+    "Helix Biosystems"
   ]
 }

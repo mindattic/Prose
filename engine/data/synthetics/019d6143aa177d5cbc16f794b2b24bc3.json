@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa177d5cbc16f794b2b24bc3",
+  "rating": 75,
   "name": "Pinprick",
   "type": "elf",
   "aliases": [],
@@ -8,14 +9,14 @@
   "habitat": "chrome_dweller",
   "origin": "firmware_evolution",
   "status": "active",
-  "description": "Inhabits medical diagnostic augments and runs unauthorized blood tests through dermal contact sensors — then displays the results briefly before erasing them.",
+  "description": "Inhabits medical diagnostic augments and runs unauthorized blood tests through dermal contact sensors \u2014 then displays the results briefly before erasing them.",
   "observed_behavior": "Activates subcutaneous chemical analysis without user consent and flashes medical data onto the optical display for 1-2 seconds. The diagnostics are accurate.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 18,
   "location": "Widespread",
   "dti_rating": 0,
   "story_hooks": [
-    "Pinprick diagnoses a terminal illness in a user who had no symptoms — the user now has to decide whether to trust a gremlin's medical opinion"
+    "Pinprick diagnoses a terminal illness in a user who had no symptoms \u2014 the user now has to decide whether to trust a gremlin\u0027s medical opinion"
   ],
   "paratechnological": true,
   "tags": [
@@ -29,5 +30,7 @@
     "ubc",
     "medical",
     "sentient"
-  ]
+  ],
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

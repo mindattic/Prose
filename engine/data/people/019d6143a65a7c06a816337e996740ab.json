@@ -10,7 +10,7 @@
   "age": 38,
   "status": "active",
   "location": "The Spire, near Michigan Ave and Chicago Ave",
-  "description": "Siddharth Raghavan is the kind of person who has designed the systems that keep other people alive without ever having met those people. She is mixed French-Nigerian, lean and angular, with close-cropped natural hair and the particular stillness of someone whose mind is always several steps ahead of the room. She dresses in structured, expensive minimalism — the corporate elite aesthetic of someone who wants to signal power through restraint — and wears a full-forearm neural interface sleeve on her right arm that she rarely removes even in social settings. Her office on the forty-second floor of The Spire looks out over the entire city, a view she has described in internal documents as 'operationally useful' and has never once described as beautiful.\n\nMireille designs the infrastructure of GLMZ — water reclamation routing, power grid distribution, transit corridor optimization, environmental filtration zoning. She is extraordinarily good at this work. She is also the person who decides, through the dry mathematics of resource allocation, which districts receive redundant systems and which receive single points of failure. The Shelf has exactly one filtration node. Old Harbor's power grid has a designed load ceiling that ensures brownouts during peak demand. These are not accidents. They are her work, signed off with her credentials, rationalized through efficiency models she wrote herself.\n\nShe entered the corporate track from a scholarship program at seventeen, having grown up in a mid-tier Circuit neighborhood that has since been rezoned into a logistics hub. She has not been back. She has told herself many things about what that means. She has a partner she sees on weekends, a curated social life within The Spire's residential tier, and a locked private project folder on her workstation that she opens at 2 a.m. when she can't sleep, containing infrastructure redesigns for the city as it could exist — equitable, redundant, built for the people who actually live in it. She has never submitted any of it.",
+  "description": "Siddharth Raghavan is the kind of person who has designed the systems that keep other people alive without ever having met those people. She is mixed French-Nigerian, lean and angular, with close-cropped natural hair and the particular stillness of someone whose mind is always several steps ahead of the room. She dresses in structured, expensive minimalism — the corporate elite aesthetic of someone who wants to signal power through restraint — and wears a full-forearm neural interface sleeve on her right arm that she rarely removes even in social settings. Her office on the forty-second floor of The Spire looks out over the entire city, a view she has described in internal documents as 'operationally useful' and has never once described as beautiful.\n\nMireille designs the infrastructure of GLMZ — water reclamation routing, power grid distribution, transit corridor optimization, environmental filtration zoning. She is extraordinarily good at this work. She is also the person who decides, through the dry mathematics of resource allocation, which districts receive redundant systems and which receive single points of failure. the Gray Zone has exactly one filtration node. Old Harbor's power grid has a designed load ceiling that ensures brownouts during peak demand. These are not accidents. They are her work, signed off with her credentials, rationalized through efficiency models she wrote herself.\n\nShe entered the corporate track from a scholarship program at seventeen, having grown up in a mid-tier Circuit neighborhood that has since been rezoned into a logistics hub. She has not been back. She has told herself many things about what that means. She has a partner she sees on weekends, a curated social life within The Spire's residential tier, and a locked private project folder on her workstation that she opens at 2 a.m. when she can't sleep, containing infrastructure redesigns for the city as it could exist — equitable, redundant, built for the people who actually live in it. She has never submitted any of it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.55,
@@ -82,7 +82,7 @@
     }
   ],
   "story_hooks": [
-    "The single filtration node serving The Shelf begins showing stress fractures in its load data — data that only Mireille can read correctly, and which suggests catastrophic failure within weeks unless rerouted through channels she would have to personally authorize",
+    "The single filtration node serving the Gray Zone begins showing stress fractures in its load data — data that only Mireille can read correctly, and which suggests catastrophic failure within weeks unless rerouted through channels she would have to personally authorize",
     "The disappeared whistleblower resurfaces, not dead but rebuilt — augmented, off-grid, and in possession of the original coalition documents with Mireille's non-signature conspicuously preserved",
     "Mireille's private redesign folder is accessed from outside her credentials — someone inside The Spire has read everything she's built in secret, and has left no message, only a read receipt",
     "A catastrophic infrastructure failure occurs in a district that Mireille's models predicted as safe — the failure pattern matches none of her designs, suggesting someone else has been modifying the system beneath her"
@@ -198,7 +198,7 @@
       "Pauses before using someone's name, as if confirming the right file"
     ],
     "breaking_points": [
-      "The Shelf filtration node reaching catastrophic failure on her watch",
+      "the Gray Zone filtration node reaching catastrophic failure on her watch",
       "The disappeared whistleblower resurfacing with the original documents",
       "Her private folder being accessed by someone inside the Spire",
       "Nadira obtaining infrastructure documents with Mireille's signature"
@@ -245,7 +245,6 @@
     "Ouroboros Energy Power Distribution Trunk Network",
     "Volkov-Saito Precision VS-40 'Magistrate'",
     "The Spire",
-    "The Shelf",
     "TESSERA PG-2 'Signature'",
     "Plot 17",
     "The Quiet Room",

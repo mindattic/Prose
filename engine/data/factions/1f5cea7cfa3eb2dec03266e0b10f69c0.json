@@ -4,25 +4,25 @@
   "name": "The Rust Prophets Reformation",
   "aliases": [],
   "motto": "The old prophets read the rust. We read what comes after.",
-  "description": "The Rust Prophets Reformation is a splinter sect that broke from the original Rust Prophets in 2194 over a fundamental theological disagreement: where the Rust Prophets see decay as sacred — entropy as the voice of the divine — the Reformation argues that decay is merely the first half of a cycle, and that what matters is what grows from the rust. This seemingly minor doctrinal difference produced a schism that turned violent, and the Reformation now operates as an independent movement with roughly 3,000 adherents, mostly in the Shelf and the Underworld.\n\nThe Reformation's practice centers on what they call 'growth rituals' — ceremonies conducted in places where old infrastructure is being reclaimed by nature or repurposed by human necessity. They worship in abandoned buildings where moss grows through concrete, in Underworld tunnels where fungi colonize old pipes, in Shelf structures where residents have built new spaces from the corpses of old ones. Their theology holds that the divine is not in the breaking but in the remaking — that God is a recycler, not a destroyer.\n\nThis theology gives the Reformation a surprisingly constructive character for a group that emerged from a tradition of entropy-worship. Members are often involved in Shelf construction and repair, reclaiming materials from abandoned structures, building community infrastructure from salvage. They're the people who turn a collapsed building into a community garden, an abandoned subway tunnel into a living space, a pile of industrial scrap into a water filtration system. Their skills are practical, their labor is free, and their presence in a Shelf neighborhood is generally welcomed even by people who think their theology is nonsense.",
+  "description": "The Rust Prophets Reformation is a splinter sect that broke from the original Rust Prophets in 2194 over a fundamental theological disagreement: where the Rust Prophets see decay as sacred — entropy as the voice of the divine — the Reformation argues that decay is merely the first half of a cycle, and that what matters is what grows from the rust. This seemingly minor doctrinal difference produced a schism that turned violent, and the Reformation now operates as an independent movement with roughly 3,000 adherents, mostly in the Gray Zone and the Underworld.\n\nThe Reformation's practice centers on what they call 'growth rituals' — ceremonies conducted in places where old infrastructure is being reclaimed by nature or repurposed by human necessity. They worship in abandoned buildings where moss grows through concrete, in Underworld tunnels where fungi colonize old pipes, in the Gray Zone structures where residents have built new spaces from the corpses of old ones. Their theology holds that the divine is not in the breaking but in the remaking — that God is a recycler, not a destroyer.\n\nThis theology gives the Reformation a surprisingly constructive character for a group that emerged from a tradition of entropy-worship. Members are often involved in the Gray Zone construction and repair, reclaiming materials from abandoned structures, building community infrastructure from salvage. They're the people who turn a collapsed building into a community garden, an abandoned subway tunnel into a living space, a pile of industrial scrap into a water filtration system. Their skills are practical, their labor is free, and their presence in a the Gray Zone neighborhood is generally welcomed even by people who think their theology is nonsense.",
   "ideology": "Decay is not the end but the beginning of renewal. The divine manifests not in entropy but in what emerges from entropy — in the new life that grows from rot, the new structures built from rubble, the new communities that form in abandoned spaces. The Reformation rejects the original Rust Prophets' fatalism in favor of an active theology of rebuilding.",
-  "territory": "Throughout the Shelf and Underworld, wherever abandoned infrastructure meets human ingenuity. No permanent temples — the Reformation considers any site of active reclamation to be sacred ground.",
+  "territory": "Throughout the Gray Zone and Underworld, wherever abandoned infrastructure meets human ingenuity. No permanent temples — the Reformation considers any site of active reclamation to be sacred ground.",
   "leadership": "Prophet-Builder Keiko Alvarez-Baptiste, who led the schism from the original Rust Prophets and nearly died in the violence that followed. She leads by example — she's a skilled structural engineer who spends more time with a welding torch than a pulpit.",
   "methods": [
     "Growth rituals conducted at sites of active reclamation and rebuilding",
     "Community construction projects — building infrastructure from salvaged materials",
-    "Salvage operations in abandoned structures throughout the Shelf and Underworld",
-    "Teaching practical construction and repair skills to Shelf residents",
+    "Salvage operations in abandoned structures throughout the Gray Zone and Underworld",
+    "Teaching practical construction and repair skills to the Gray Zone residents",
     "Material aid — providing building materials and labor to communities in need",
     "Theological debate with the original Rust Prophets (which occasionally turns violent)"
   ],
   "resources": [
     "3,000 adherents with strong practical construction skills",
-    "Deep knowledge of Shelf and Underworld infrastructure",
+    "Deep knowledge of the Gray Zone and Underworld infrastructure",
     "Stockpiles of salvaged building materials",
     "Community goodwill in neighborhoods where they've built infrastructure",
     "Keiko Alvarez-Baptiste's structural engineering expertise",
-    "A network of reclaimed spaces throughout the Shelf"
+    "A network of reclaimed spaces throughout the Gray Zone"
   ],
   "goals": [],
   "relationships": [
@@ -39,19 +39,17 @@
   "narrative_function": "The Reformation asks whether faith can be practical — whether theology matters if the people holding it are the ones rebuilding your neighborhood.",
   "story_hooks": [
     "The Reformation has discovered something in an Underworld tunnel they were reclaiming — a sealed chamber that predates GLMZ's founding, containing technology nobody can identify. Keiko wants to open it. The original Rust Prophets want it left to decay. Someone else wants it kept sealed for different reasons entirely.",
-    "A Shelf neighborhood where the Reformation has been building is being 'revitalized' by Axiom. The Reformation built the infrastructure that made the neighborhood livable, and now the corporation wants to demolish it for luxury development."
+    "A the Gray Zone neighborhood where the Reformation has been building is being 'revitalized' by Axiom. The Reformation built the infrastructure that made the neighborhood livable, and now the corporation wants to demolish it for luxury development."
   ],
   "tags": [
     "faction",
     "religious",
     "construction",
-    "shelf",
     "underworld",
     "salvage",
     "community"
   ],
   "related_entities": [
-    "The Shelf",
     "TESSERA CORPONATION Anima Vox Consciousness Expansion Suite",
     "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Piezoelectric Fracture Pistol PFP-7 'Hairline'",

@@ -47,7 +47,7 @@
     "adjacent_to": [
       "The Slagshore",
       "The South Side",
-      "The Shelf"
+      "the Gray Zone"
     ],
     "exits": [],
     "tags": []
@@ -105,11 +105,12 @@
     "Ash Im",
     "Frost Sigurdsson-Morimoto",
     "TESSERA PA-5 'Attendant'",
-    "Haze Johansson",
     "Ringo Corponation",
     "Echo Boateng",
     "Zephyr Bhattacharya",
     "Elena Vasquez-9",
     "Iron"
-  ]
+  ],
+  "zone": "Z6",
+  "controllingCorponation": null
 }

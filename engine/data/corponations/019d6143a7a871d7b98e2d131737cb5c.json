@@ -42,5 +42,15 @@
     "The Heritage Vault",
     "The Iron Lotus",
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z6",
+      "Z∞"
+    ],
+    "primaryZone": "Z6",
+    "lakefrontAccess": false,
+    "description": "11 sovereign subterranean installations beneath the Zone 6 substrate, extending into Lake Michigan subsurface. Accesses geothermal and deep-water energy sources; controls the subsurface energy infrastructure for Zone 6 industrial operations. In active territorial dispute with Bathysphere Networks over subsurface boundary claims.",
+    "grayZoneRelationship": "Zone 6 Gray Zone communities access Cinderfall power through informal tap agreements that Cinderfall tolerates — the load is minimal and the political cost of enforcement exceeds the benefit."
+  }
 }

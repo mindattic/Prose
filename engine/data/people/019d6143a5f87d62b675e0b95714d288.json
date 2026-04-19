@@ -9,7 +9,7 @@
   "role": "Junk merchant and scrap reseller — specializing in pre-collapse electronics and salvaged corporate hardware",
   "age": 27,
   "status": "active",
-  "location": "The Shelf, Iron Bend, near Western and Division",
+  "location": "the Gray Zone, Iron Bend, near Western and Division",
   "description": "Kira Raghavan is compact and always in motion — hands sorting, eyes moving, weight shifting from foot to foot like they're perpetually about to leave and perpetually deciding to stay a moment longer. They have warm brown skin dusted with machine oil that never fully washes out, and they've had their irises modded to display a soft rotating amber pattern — not for aesthetics, they'll insist, but because the magnification function built into the mod helps them assess components quickly. Their hair is kept close on the sides and loose on top, usually tucked under a battered Arcturus surplus cap they claim to have pulled from a scrap pile (probably true). A retractable data-spike sits behind their right ear like a utilitarian earring.\n\nKira Raghavan has the particular confidence of someone who knows the value of things no one else bothers to look at closely. They can identify a component's manufacture decade, likely origin corponation, and current gray-market value in about fifteen seconds of handling. What they lack is patience for people who haggle without knowing what they're haggling about — they'll educate you once, briefly, and if you keep playing dumb they'll simply box the item back up and turn away. They are not unkind but they have no interest in performing warmth for people who don't deserve it.",
   "psychology": {
     "facet_weights": {
@@ -59,7 +59,7 @@
   ],
   "narrative_function": "Equipment and gear source — can find, identify, and sell unusual or legacy tech. Information source about the physical infrastructure of the city — knows tunnels, dead zones, and decommissioned spaces better than most. Can be a guide for accessing hard-to-reach areas or a broker for specific salvaged items a player needs.",
   "augmentations": "Patterned iris mod with built-in magnification (amber rotating pattern, functional). Retractable data-spike behind right ear — short-range interface tool for reading and writing to hardware directly. Finger callus plating — thin subdermal reinforcement on fingertips for handling sharp components without cuts.",
-  "daily_life": "Spends three to four days a week on salvage runs through decommissioned Ferrogate maintenance corridors and Iron Bend's industrial ruins, brings finds back to their stall on The Shelf, and spends remaining days sorting, testing, and selling. Eats whatever is fast and portable.",
+  "daily_life": "Spends three to four days a week on salvage runs through decommissioned Ferrogate maintenance corridors and Iron Bend's industrial ruins, brings finds back to their stall on the Gray Zone, and spends remaining days sorting, testing, and selling. Eats whatever is fast and portable.",
   "affiliation": "Independent; informal network with other Iron Bend scrappers and one trusted contact inside Ferrogate Transit's maintenance division",
   "uses_facets": false,
   "narration_voice": "",
@@ -188,7 +188,7 @@
     "Hustler": 0.6
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -206,7 +206,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Established stall on The Shelf, first permanent selling position",
+      "event": "Established stall on the Gray Zone, first permanent selling position",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -236,7 +236,6 @@
   "related_entities": [
     "Ferrogate Transit",
     "Iron Bend",
-    "The Shelf",
     "Arcturus Defense Solutions",
     "Patience",
     "GLMZ",
@@ -248,7 +247,7 @@
     "Tin Man",
     "Iron"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "South Asian (62.5%), Sub-Saharan African (25.4%), with lesser contributions from Hispanic/Latin American (4.9%), Central Asian (4.5%), and Indigenous American (2.7%) ancestry. The combination creates deep warm brown skin with complex undertones — rich earth tones from South Asian heritage, deepened and warmed by Sub-Saharan African ancestry, creating a luminous, multi-layered complexion. Facial structure reflects this blend: defined cheekbones and refined bone structure characteristic of South Asian heritage, with broader face structure and fuller features from Sub-Saharan African genetics, creating striking angular-yet-rounded proportions.",
     "height_cm": 163,

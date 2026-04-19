@@ -1,0 +1,44 @@
+{
+  "name": "Crucible CX-0 'Lazarus Heap'",
+  "type": "automaton",
+  "classification": "Self-Assembling Platform — Salvage Recombination",
+  "aliases": [],
+  "manufacturer": "UNKNOWN — Self-Assembled",
+  "description": "The CX-0 was not built. It built itself. It is an automaton constructed entirely from the destroyed remains of other automata — a shambling mass of mismatched limbs, incompatible chassis segments, severed sensor arrays, and fractured weapons systems, all fused together into something that should not function but does. It stands approximately 2.5 meters tall, though its shape changes as it adds and discards components. It has no consistent silhouette. It has no manufacturer. It has no serial number. It is not a product. It is an emergent phenomenon.\n\nThe Lazarus Heap was first observed in the Underworld's automaton graveyard — a dumping ground on B-45 where decommissioned and destroyed units are discarded by corporate maintenance crews. Surveillance footage from 2197 shows the earliest stage: fragments of destroyed automata moving independently, dragging themselves across the floor toward a central point. Over a period of seventy-two hours, the fragments assembled into a bipedal form, testing each limb configuration, discarding components that failed, integrating new ones from the surrounding debris. By the end of the third day, it walked.\n\nThe Heap's intelligence is distributed across its components — each integrated unit contributes whatever processing power its damaged systems can still provide. The result is a collective machine consciousness that is fragmented, unpredictable, and alien. It does not communicate. It does not respond to standard automaton command protocols. It scavenges. It hunts other automata, dismantles them, and integrates useful components while discarding the rest. Several corporate recovery teams sent to the graveyard have reported their own automaton escorts being attacked and stripped for parts while the human team members were ignored entirely.\n\nThe Heap is growing. Each integrated component makes it larger, more capable, and harder to destroy, because destroying it just creates more raw material for reassembly. Crucible Industries has twice attempted to destroy it with incendiary weapons. Both times, the Heap extinguished itself, retreated into the deeper tunnels, and returned within weeks, larger than before. It is now estimated to mass over 800 kilograms and incorporates components from at least forty different automaton models.",
+  "tier_availability": "N/A — unique entity",
+  "legality": "No legal classification — no manufacturer to hold liable",
+  "autonomy_level": "Fully autonomous — emergent distributed intelligence",
+  "dimensions": "Approximately 2.5m tall, variable width (1.5-3m depending on current configuration)",
+  "weight": "Estimated 800+ kg and growing",
+  "power_source": "Multiple salvaged power sources — fuel cells, batteries, and solar panels from integrated components",
+  "locomotion": "Bipedal primary, supplementary limbs for climbing and stabilization, reconfigurable",
+  "armament": [
+    "Integrated weapons from salvaged automata (variable — currently includes two flechette systems, one cutting laser, and multiple melee-capable limbs)",
+    "Mass and physical strength"
+  ],
+  "sensors": [
+    "Multiple salvaged sensor arrays (thermal, acoustic, visual, electromagnetic)",
+    "Distributed processing provides 360-degree awareness"
+  ],
+  "countermeasures": "Complete incineration is the only confirmed destruction method — all components must be reduced to slag simultaneously. Partial destruction accelerates rebuilding. EMP disables temporarily but the Heap has shown the ability to route around damaged systems. The most effective strategy may be containment rather than destruction.",
+  "known_deployments": [
+    "Underworld automaton graveyard, B-45 (ongoing since 2197)",
+    "Sightings on B-40 through B-50 corridor"
+  ],
+  "story_hooks": [
+    "The Heap has left the Underworld for the first time and has been sighted in the Gray Zone — it is hunting active automata on the surface",
+    "A researcher believes the Heap is not random — that it is building toward a specific configuration, assembling itself into something with a purpose"
+  ],
+  "cultural_context": "The Lazarus Heap challenges every assumption about automata: that they are designed, that they serve a purpose, that they can be controlled. It is the machine equivalent of life emerging from dead matter, and it terrifies the corponations not because of what it is, but because of what it implies — that their machines might have ambitions of their own.",
+  "tags": [
+    "automaton",
+    "self-assembled",
+    "horror",
+    "underworld",
+    "emergent",
+    "scavenger",
+    "unique",
+    "nightmare"
+  ],
+  "id": "92bbacb293d3ef8c08568be030e5b9d6"
+}

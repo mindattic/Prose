@@ -27,11 +27,11 @@
   "tier_availability": "Tier 3-4",
   "legality": "prescription",
   "street_price": "Φ180 per autoinjector",
-  "cultural_context": "Adrenyx is what corporate security teams pop before breaching a hostile floor. It's considered a 'clean' combat drug — respectable enough that Tier 3 middle managers who run weekend militia cosplay also acquire it. On the Shelf, stolen Adrenyx autoinjectors are currency, traded for food or weapons. Street users often mistime dosing because they lack the training to read the onset window.",
+  "cultural_context": "Adrenyx is what corporate security teams pop before breaching a hostile floor. It's considered a 'clean' combat drug — respectable enough that Tier 3 middle managers who run weekend militia cosplay also acquire it. On the Gray Zone, stolen Adrenyx autoinjectors are currency, traded for food or weapons. Street users often mistime dosing because they lack the training to read the onset window.",
   "story_hooks": [
     "A runner finds a crate of Adrenyx autoinjectors with Lazarus lot numbers that don't exist in any public database — suggesting a black-budget formulation more potent than the commercial version.",
     "A corporate security captain is burning through her Adrenyx prescription at three times normal rate, and her supervisor needs to know if she's compromised or just scared.",
-    "The Shelf version of Adrenyx has been cut with a dopaminergic compound that creates euphoria alongside the surge — someone is deliberately engineering addiction into the street supply."
+    "the Gray Zone version of Adrenyx has been cut with a dopaminergic compound that creates euphoria alongside the surge — someone is deliberately engineering addiction into the street supply."
   ],
   "tags": [
     "combatstimulant",
@@ -51,7 +51,6 @@
     "drug",
     "stimulant",
     "explosive",
-    "shelf",
     "tier 3",
     "tier 4"
   ],
@@ -63,7 +62,6 @@
     "Lazarus Pharmaceuticals",
     "Lazarus Pharmaceuticals Adrenal Phantom Graft — 'The Surge'",
     "Ouroboros Energy ThermalSink UR-3 District Waste Heat Exchange Network",
-    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
-    "The Shelf"
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'"
   ]
 }

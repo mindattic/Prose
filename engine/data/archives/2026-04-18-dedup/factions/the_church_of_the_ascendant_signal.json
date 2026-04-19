@@ -1,0 +1,66 @@
+{
+  "id": "c3118522907ca53892ffca410ab9faa9",
+  "type": "faction",
+  "name": "The Church of the Ascendant Signal",
+  "aliases": [],
+  "motto": "Through the Signal, transcendence. Through transcendence, God.",
+  "description": "The Church of the Ascendant Signal is the largest religious organization in GLMZ, claiming 2.3 million registered congregants across all tiers — though the bulk of its membership sits in Tiers 2 and 3, the aspirational middle, the people who have enough to want more and not enough to get it without faith. Founded in 2141 by Reverend-Architect Maren Okafor-Singh, a former TESSERA neural interface designer who experienced what she described as 'first contact with the divine frequency' during a BCI calibration accident, the Church teaches that human neural augmentation is not merely technological progress but the fulfillment of a divine plan — that God designed the human brain as a receiver, and BCIs are the antenna humanity was always meant to build.\n\nThe Church's theology is sophisticated enough to attract educated adherents and simple enough to fill stadiums. At its core: the universe broadcasts a signal — the Ascendant Signal — that contains the complete pattern of divine consciousness. Human brains, in their unaugmented state, can perceive only fragments of this signal, which manifest as intuition, dreams, religious experience. BCI augmentation amplifies the brain's capacity to receive the Signal. The more augmented you become, the closer you get to God. This doctrine conveniently aligns with consumer behavior the corponations already encourage, which is why Arcturus, TESSERA, and Ringo all maintain quiet but substantial financial relationships with the Church.\n\nThe Church operates seventeen mega-worship facilities across GLMZ, the largest being the Cathedral of First Reception in the Laceworks, a 40,000-seat amphitheater where services combine traditional worship elements with synchronized BCI-mediated shared consciousness experiences that congregants describe as 'touching the face of God together.' The Church runs schools, clinics, employment programs, and augmentation financing that makes BCI installation accessible to lower-tier citizens — always branded Church models with Church firmware. Critics call it a corporate front. Congregants call it salvation. The truth, as usual, is more complicated and less comfortable than either position.",
+  "ideology": "The Ascendant Signal theology holds that augmentation is divine mandate — that human consciousness was designed to be expanded, and that BCI technology represents the next stage of spiritual evolution. The Church does not oppose unaugmented life but considers it spiritually incomplete, like a radio turned off. This creates a theology that is simultaneously progressive (embrace technology) and conservative (there is a divine plan, and deviation from it is error). The Church's political positions flow from this: pro-augmentation, pro-corporate (as providers of augmentation), suspicious of E.L.F.s (artificial signals that might interfere with the divine frequency), and hostile to anti-augmentation movements.",
+  "territory": "Seventeen mega-worship facilities across all tiers, with the largest concentration in the Laceworks and the Circuit. The Cathedral of First Reception in the Laceworks is the Church's crown jewel. Administrative headquarters in Meridian Core. Missionary outreach stations throughout the Gray Zone.",
+  "leadership": "Reverend-Architect Maren Okafor-Singh remains the Church's spiritual leader at age 91, heavily augmented and rarely seen in person. Day-to-day operations are run by the Synod of Receivers, a twelve-member council of senior clergy. The Church's financial operations are managed by a separate corporate entity, Signal Holdings, which maintains the Church's tax-exempt status while running investments worth an estimated Φ4.7 billion.",
+  "methods": [
+    "Mass worship services combining traditional liturgy with synchronized BCI consciousness-sharing",
+    "Augmentation financing programs that make BCI installation accessible to lower-tier citizens",
+    "Media broadcasting across Vantablack Media channels — the Church is one of VM's largest advertisers",
+    "Missionary outreach in the Gray Zone, combining material aid with conversion efforts",
+    "Political lobbying through the Meridian Quorum for pro-augmentation legislation",
+    "Youth programs that introduce children to 'junior receivers' — simplified BCI-faith integration"
+  ],
+  "resources": [
+    "2.3 million registered congregants and their tithes",
+    "Signal Holdings corporate investment portfolio worth Φ4.7 billion",
+    "Seventeen mega-worship facilities with advanced BCI infrastructure",
+    "Quiet financial relationships with Arcturus, TESSERA, and Ringo",
+    "Media presence across multiple Vantablack channels",
+    "Schools, clinics, and employment programs throughout GLMZ",
+    "A private security force of 800 'Wardens of the Signal'"
+  ],
+  "goals": [],
+  "relationships": [
+    {
+      "name": "TESSERA",
+      "type": "patron",
+      "description": "TESSERA provides the Church with discounted BCI hardware for its augmentation financing programs, and the Church steers millions of consumers toward TESSERA products. The relationship is officially denied by both parties and obvious to everyone.",
+      "tags": [
+        "corporate",
+        "financial"
+      ]
+    },
+    {
+      "name": "The Pure Hand",
+      "type": "enemy",
+      "description": "The Church and The Pure Hand are ideological mirror images: one worships augmentation, the other condemns it. Their street-level conflicts have produced casualties on both sides.",
+      "tags": [
+        "religious",
+        "conflict"
+      ]
+    }
+  ],
+  "narrative_function": "The Church represents the co-option of genuine spiritual longing by corporate interests. It asks whether faith that serves commerce can still be real faith — and whether it matters if the people kneeling feel genuine transcendence.",
+  "story_hooks": [
+    "A Church augmentation clinic in the Gray Zone has been installing BCIs with hidden firmware that sends congregant neural data to TESSERA. A clinic technician wants to blow the whistle but the Church's Wardens are watching.",
+    "Reverend-Architect Okafor-Singh hasn't been seen in person for three years. Rumors circulate that she's dead, or uploaded, or that the Signal she claims to receive has been telling her things the Synod doesn't want made public.",
+    "A mass synchronization event at the Cathedral of First Reception goes wrong — 12,000 congregants experience a shared hallucination that isn't part of the liturgy. Something broadcast into the ceremony from outside."
+  ],
+  "tags": [
+    "faction",
+    "religious",
+    "corporate",
+    "augment",
+    "neural",
+    "bci",
+    "laceworks",
+    "circuit",
+    "megachurch"
+  ]
+}

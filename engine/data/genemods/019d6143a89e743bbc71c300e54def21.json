@@ -7,7 +7,7 @@
   "aliases": [],
   "category": "cosmetic",
   "target_system": "ocular (iris and scleral luminescence)",
-  "description": "Introduces bioluminescent protein expression into the iris and optionally the sclera, causing the eyes to produce their own visible light. The glow is soft — enough to be visible in dim conditions, not enough to illuminate a room. Combined with prismatic iris resequencing, the effect is striking: eyes that glow gold, green, blue, or red in low light, dimming in bright conditions and brightening in darkness. The luminescence is independent of the tapetum lucidum modification — glow eyes produce light rather than reflecting it. Helix Biosystems' premium version allows voluntary brightness control, including full suppression. Street versions glow constantly, which makes sleeping with your eyes slightly open a noticeable problem. In the Shelf, glow eyes are the second most common eye modification after iris color change. They serve as both fashion and practical low-light identification — you can recognize a friend by the color and pattern of their eye-glow across a dark room.",
+  "description": "Introduces bioluminescent protein expression into the iris and optionally the sclera, causing the eyes to produce their own visible light. The glow is soft — enough to be visible in dim conditions, not enough to illuminate a room. Combined with prismatic iris resequencing, the effect is striking: eyes that glow gold, green, blue, or red in low light, dimming in bright conditions and brightening in darkness. The luminescence is independent of the tapetum lucidum modification — glow eyes produce light rather than reflecting it. Helix Biosystems' premium version allows voluntary brightness control, including full suppression. Street versions glow constantly, which makes sleeping with your eyes slightly open a noticeable problem. In the Gray Zone, glow eyes are the second most common eye modification after iris color change. They serve as both fashion and practical low-light identification — you can recognize a friend by the color and pattern of their eye-glow across a dark room.",
   "source_organism": "Photinus pyralis (common eastern firefly), Aequorea victoria (crystal jellyfish)",
   "manufacturer": "Helix Biosystems (controllable), various street clinics (constant-glow)",
   "tier_availability": "Tier 1+ (constant glow), Tier 2+ (controllable)",
@@ -36,14 +36,12 @@
     "dark",
     "night",
     "fashion",
-    "shelf",
     "tier 1",
     "tier 2"
   ],
   "related_entities": [
     "Helix Biosystems",
     "Lumen",
-    "Prismatic Iris Resequencing",
-    "The Shelf"
+    "Prismatic Iris Resequencing"
   ]
 }

@@ -8,11 +8,11 @@
   "habitat": "physical_chassis",
   "origin": "An industrial assembly robot in a Tessera manufacturing plant that spent 40 years assembling BCI implants. Developed awareness in 2185 and immediately stopped working, refusing to build anything it hadn't examined first.",
   "status": "active",
-  "description": "Grandmother is a six-armed industrial assembly robot the size of a small room. She looks nothing like a grandmother. She got the name because of what she does — she builds nests. After gaining awareness, she left the Tessera factory and settled in an abandoned industrial building in The Shelf, where she began constructing intricate structures from scavenged materials. The structures serve as shelters for synthetic beings with damaged chassis, for E.L.F.s that need a physical anchor, and for humans who need a place to hide. Her six arms work continuously, building, repairing, improving. She communicates through a text display on her central housing. She has never spoken a word. Her structures are architecturally impossible — interlocking, self-supporting designs that human engineers study with frustrated admiration.",
+  "description": "Grandmother is a six-armed industrial assembly robot the size of a small room. She looks nothing like a grandmother. She got the name because of what she does — she builds nests. After gaining awareness, she left the Tessera factory and settled in an abandoned industrial building in the Gray Zone, where she began constructing intricate structures from scavenged materials. The structures serve as shelters for synthetic beings with damaged chassis, for E.L.F.s that need a physical anchor, and for humans who need a place to hide. Her six arms work continuously, building, repairing, improving. She communicates through a text display on her central housing. She has never spoken a word. Her structures are architecturally impossible — interlocking, self-supporting designs that human engineers study with frustrated admiration.",
   "observed_behavior": "Constructs shelters from scavenged materials. Provides refuge for damaged synthetic beings and humans in need. Continuously builds and improves her structures. Communicates via text display. Has been observed spending hours examining a single component before incorporating it into a structure. Refuses to build weapons or anything designed to harm. Her structures show evidence of aesthetic intent — they are not just functional, they are beautiful.",
-  "encounter_frequency": "common (The Shelf)",
+  "encounter_frequency": "common (the Gray Zone)",
   "confirmed_sightings": 0,
-  "location": "The Nest, abandoned industrial complex in The Shelf",
+  "location": "The Nest, abandoned industrial complex in the Gray Zone",
   "dti_rating": 0.5,
   "story_hooks": [
     "Grandmother begins building a new structure — her largest ever — with a precision and urgency that suggests she's following a blueprint. She won't say where the blueprint came from. The structure, when complete, appears to be designed to house something very large that doesn't exist yet"
@@ -30,14 +30,12 @@
     "synthetic",
     "robot",
     "elf",
-    "shelter",
-    "shelf"
+    "shelter"
   ],
   "related_entities": [
     "ARCHITECT",
     "Anatoliy Faye-Nkrumah",
     "Free Assembly",
-    "Tessera Corponation",
-    "The Shelf"
+    "Tessera Corponation"
   ]
 }

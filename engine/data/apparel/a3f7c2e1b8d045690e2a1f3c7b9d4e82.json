@@ -3,7 +3,7 @@
   "name": "Ferrochem AcidWall Pro MK-4 Full Enclosure Suit",
   "type": "apparel",
   "category": "protective",
-  "description": "Full-body enclosure suit in corroded-mustard yellow with black chemical-resistance banding at all seams. Triple-laminate shell of vulcanized polyimide over woven aramid, with a bonded inner moisture-wicking membrane. Visor hood integrates a filtered air intake mounted left-shoulder. Common on Shelf salvage crews working flooded industrial basements where acid pooling is standard.\n\nSeam tape is factory-applied in neon orange — when it fades to white, the suit's primary seal integrity is compromised. Most Shelf workers ignore this. Wrist and ankle cuffs cinch via ratchet buckles, leaving room for basic chrome cuffs beneath.",
+  "description": "Full-body enclosure suit in corroded-mustard yellow with black chemical-resistance banding at all seams. Triple-laminate shell of vulcanized polyimide over woven aramid, with a bonded inner moisture-wicking membrane. Visor hood integrates a filtered air intake mounted left-shoulder. Common on the Gray Zone salvage crews working flooded industrial basements where acid pooling is standard.\n\nSeam tape is factory-applied in neon orange — when it fades to white, the suit's primary seal integrity is compromised. Most the Gray Zone workers ignore this. Wrist and ankle cuffs cinch via ratchet buckles, leaving room for basic chrome cuffs beneath.",
   "tier_association": "Tier 1-2",
   "materials": [
     "vulcanized polyimide shell",
@@ -15,7 +15,7 @@
   "functionality": "Rated for pH 1–13 splash and immersion up to 40 minutes. Integrated shoulder air-intake runs through a replaceable carbon-block filter cartridge. Ratchet cuff seals accommodate basic chrome prosthetics. Internal BCI port slot on hood collar allows neural comms while fully enclosed.",
   "what_it_says": "You work in places that will kill you slowly, and you know exactly how much protection you can actually afford.",
   "worn_by": [
-    "Shelf salvage crews",
+    "the Gray Zone salvage crews",
     "chemical waste haulers",
     "unlicensed demolition workers",
     "Tier 2 industrial cleaners"
@@ -26,7 +26,7 @@
   "gene_compatible": false,
   "story_hooks": [
     "A salvager's suit seal tape has been white for three weeks — she can't afford a replacement and is showing early acid-burn scarring on her wrists.",
-    "A batch of counterfeit MK-4 suits hit the Shelf market — identical labeling, half the chemical resistance rating, and workers are dying.",
+    "A batch of counterfeit MK-4 suits hit the Gray Zone market — identical labeling, half the chemical resistance rating, and workers are dying.",
     "Someone found a sealed MK-4 suit in a flooded basement with a body inside — the suit is undamaged, but the person inside died of something else entirely."
   ],
   "tags": [
@@ -34,7 +34,6 @@
     "protective",
     "hazmat",
     "chemical-resistance",
-    "shelf",
     "industrial",
     "full-enclosure",
     "tier1",
@@ -46,7 +45,6 @@
     "Dzemal Acholonu-Patagiri",
     "Helix Cortex Laminate — 'The Second Skin'",
     "Ilhan Nakamura-Bello",
-    "The Shelf",
     "Vantablack VS-3 'Skin Job'"
   ],
   "physical_description": {
@@ -65,7 +63,7 @@
       "Black chemical-resistance banding reinforce all high-stress seams"
     ],
     "tier_indicator": "Tier 5 salvage/Tier 4 working-class. Gray-market surplus industrial equipment. Affordable to street crews but not aspirational.",
-    "cultural_context": "Shelf worker, salvage crew, acid-flooded industrial basement explorer. Wearing this signals you work in hazardous conditions for subsistence wages. It's practical, not fashionable—a uniform of necessity rather than choice.",
+    "cultural_context": "the Gray Zone worker, salvage crew, acid-flooded industrial basement explorer. Wearing this signals you work in hazardous conditions for subsistence wages. It's practical, not fashionable—a uniform of necessity rather than choice.",
     "condition_typical": "Weathered and corroded. Seam tape faded to white (ignored). Possible tears or patched sections. Visor scratched from debris. Ratchet buckles stiff from salt corrosion. Stains from acid splash or mineral deposits. Despite wear, still functional because it was built cheap and durable."
   },
   "image_prompt": "A weathered Tier 5 salvage worker wearing a corroded mustard-yellow Ferrochem AcidWall Pro MK-4 full enclosure suit with black chemical-resistance seam banding and faded white seam tape. Integrated visor hood with shoulder-mounted air intake. Ratchet buckles visible at wrists and ankles. Chrome cybercuff barely visible beneath cuff. Dark industrial basement backdrop, flooded water reflecting overhead neon. Moody cyan and amber lighting casting harsh shadows. Suit texture emphasizes wear and corrosion. Cinematic, gritty neo-noir urban aesthetic. --ar 2:3 --v 6",

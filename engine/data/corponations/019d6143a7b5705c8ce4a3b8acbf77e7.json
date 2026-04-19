@@ -35,5 +35,14 @@
     "The Shore Dogs",
     "Vantablack-CNX",
     "Vellichor"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z3"
+    ],
+    "primaryZone": "Z3",
+    "lakefrontAccess": true,
+    "description": "The Vellichor Campus — sprawling lakeside research enclave on the northern Chicago shoreline in Evanston, Zone 3. Occupies the former Northwestern University site. One of three functioning university-sovereigns in the Corridor. Admission by examination; residency by affiliation; Tier classification formally irrelevant within campus boundaries.",
+    "grayZoneRelationship": "Admits Gray Zone applicants at the same examination standard as all others. The Tier 1 acceptance rate is documented at 0.003%. The Institute considers this proof of meritocracy."
+  }
 }

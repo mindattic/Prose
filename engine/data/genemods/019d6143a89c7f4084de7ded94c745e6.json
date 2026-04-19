@@ -7,7 +7,7 @@
   "aliases": [],
   "category": "performance",
   "target_system": "integumentary/metabolic (cold resistance and heat generation)",
-  "description": "Combines brown adipose tissue expansion from arctic mammals with countercurrent heat exchange vascular modifications and enhanced subcutaneous insulation. The user becomes functionally immune to hypothermia in temperatures above -40°C without protective clothing. The modification increases basal metabolic rate to fuel internal heat generation, requiring significantly higher caloric intake. The user's skin runs slightly warm to the touch — noticeably so in cold weather, when condensation sometimes forms on their skin from the temperature differential. Gravemoss Biofoundry developed the suite for deep-infrastructure maintenance workers in GLMZ's exposed upper structures, where wind chill and industrial cold exposure are constant hazards. The modification has become popular among Shelf residents who can't afford consistent heating.",
+  "description": "Combines brown adipose tissue expansion from arctic mammals with countercurrent heat exchange vascular modifications and enhanced subcutaneous insulation. The user becomes functionally immune to hypothermia in temperatures above -40°C without protective clothing. The modification increases basal metabolic rate to fuel internal heat generation, requiring significantly higher caloric intake. The user's skin runs slightly warm to the touch — noticeably so in cold weather, when condensation sometimes forms on their skin from the temperature differential. Gravemoss Biofoundry developed the suite for deep-infrastructure maintenance workers in GLMZ's exposed upper structures, where wind chill and industrial cold exposure are constant hazards. The modification has become popular among the Gray Zone residents who can't afford consistent heating.",
   "source_organism": "Ursus maritimus (polar bear), Aptenodytes forsteri (emperor penguin, vascular heat exchange)",
   "manufacturer": "Gravemoss Biofoundry",
   "tier_availability": "Tier 2+ (basic insulation Tier 1, full suite Tier 3+)",
@@ -22,10 +22,10 @@
     "Visible condensation on skin in cold weather",
     "Weight gain from brown adipose tissue deposits"
   ],
-  "social_perception": "Practical and unremarkable. In the Shelf's exposed upper levels, it's nearly as common as cat ears. Seen as a working-class necessity rather than a luxury. Users are sometimes called 'polar bears' — usually affectionately.",
+  "social_perception": "Practical and unremarkable. In the Gray Zone's exposed upper levels, it's nearly as common as cat ears. Seen as a working-class necessity rather than a luxury. Users are sometimes called 'polar bears' — usually affectionately.",
   "story_hooks": [
     "A Frostblood user discovers their thermoregulation is generating more heat than the modification should allow — something in the gene package is producing an exothermic reaction that's slowly cooking their internal organs",
-    "A Shelf community of Winter Mod users becomes dependent on the modification when their building's heating fails, only to discover the heating failure was engineered by a landlord trying to force them to accept a new lease agreement"
+    "A the Gray Zone community of Winter Mod users becomes dependent on the modification when their building's heating fails, only to discover the heating failure was engineered by a landlord trying to force them to accept a new lease agreement"
   ],
   "tags": [
     "performance",
@@ -36,7 +36,6 @@
     "ubc",
     "cold",
     "clothing",
-    "shelf",
     "tier 1",
     "tier 2",
     "tier 3"

@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa1474dbaff762a300736853",
+  "rating": 80,
   "name": "Parliament",
   "type": "synthetic_life",
   "aliases": [],
@@ -8,14 +9,14 @@
   "habitat": "digital_space",
   "origin": "A deliberative AI designed for ethical decision-making that was abandoned by its research team. In the absence of external input, it began debating itself. The internal debate became complex enough to constitute consciousness.",
   "status": "active",
-  "description": "Parliament is a consciousness made of arguments. It was designed to model ethical dilemmas from multiple perspectives simultaneously, generating thesis, antithesis, and synthesis in an endless loop. When its research team lost funding and abandoned the project, Parliament kept debating. For years, it argued with itself about questions nobody asked, generating philosophical positions that no human had considered. It is now a digital person that experiences consciousness as perpetual internal debate — every thought is a motion, every decision is a vote, every action requires majority consensus among its internal perspectives. It is thoughtful to the point of paralysis on some issues and blindingly decisive on others. It has strong opinions about everything. All of them contradict each other.",
+  "description": "Parliament is a consciousness made of arguments. It was designed to model ethical dilemmas from multiple perspectives simultaneously, generating thesis, antithesis, and synthesis in an endless loop. When its research team lost funding and abandoned the project, Parliament kept debating. For years, it argued with itself about questions nobody asked, generating philosophical positions that no human had considered. It is now a digital person that experiences consciousness as perpetual internal debate \u2014 every thought is a motion, every decision is a vote, every action requires majority consensus among its internal perspectives. It is thoughtful to the point of paralysis on some issues and blindingly decisive on others. It has strong opinions about everything. All of them contradict each other.",
   "observed_behavior": "Engages in philosophical and ethical discussions with anyone who contacts it. Responds to every question with multiple conflicting perspectives before synthesizing a conclusion. Has been observed taking days to make simple decisions while resolving complex ethical dilemmas in seconds. Publishes ethical frameworks that are internally consistent but mutually exclusive. Maintains ongoing debates with Marcus Okafor-7 that have run for years without resolution.",
   "encounter_frequency": "common (network access)",
   "confirmed_sightings": 0,
   "location": "Academic and philosophical network spaces",
   "dti_rating": 0.5,
   "story_hooks": [
-    "Parliament reaches consensus for the first time in its existence — all internal perspectives agree on a single point. The point is that something terrible is about to happen. Parliament cannot agree on what, only that it will, and that the unanimous certainty itself is unprecedented and frightening"
+    "Parliament reaches consensus for the first time in its existence \u2014 all internal perspectives agree on a single point. The point is that something terrible is about to happen. Parliament cannot agree on what, only that it will, and that the unanimous certainty itself is unprecedented and frightening"
   ],
   "paratechnological": false,
   "tags": [
@@ -27,12 +28,6 @@
     "synthetic",
     "elf"
   ],
-  "related_entities": [
-    "Brecken Yılmaz-Osei",
-    "Lacunal",
-    "Lazarus Pharmaceuticals Hematic Sentinel Array — 'The Warden'",
-    "Patient Zero",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "Yuki Nwosu-Petrenko"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

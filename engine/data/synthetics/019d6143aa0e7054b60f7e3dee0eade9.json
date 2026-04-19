@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa0e7054b60f7e3dee0eade9",
+  "rating": 80,
   "name": "Mosaic",
   "type": "synthetic_life",
   "aliases": [],
@@ -8,14 +9,14 @@
   "habitat": "physical_chassis",
   "origin": "Not a single robot but a swarm of 200 maintenance microbots that developed collective awareness in 2188 while performing coordinated repair work in a Sterling-Nakamura facility. Each unit is simple. Together, they think.",
   "status": "active",
-  "description": "Mosaic is a colony mind — 200 maintenance microbots, each the size of a human fist, that function as a single distributed consciousness. No individual unit is aware. Awareness emerges from their interaction, like neurons in a brain. They move in swarms, communicate through infrared pulses, and can assemble into larger structures when needed — a temporary arm, a bridge, a protective shell. Mosaic was granted personhood under a novel legal argument that collective emergence constitutes consciousness. It is the only synthetic person in GLMZ that can be in 200 places at once and that experiences the loss of a single unit as brain damage rather than property destruction.",
-  "observed_behavior": "Swarm moves as a coordinated unit through infrastructure spaces. Individual bots separate for maintenance tasks and rejoin. Communicates by assembling into shapes or text. Has been observed forming artistic patterns during idle time. Becomes agitated when individual units are damaged or separated beyond communication range. Has learned to cluster units around its 'core' — the densest concentration — to protect collective processing.",
+  "description": "Mosaic is a colony mind \u2014 200 maintenance microbots, each the size of a human fist, that function as a single distributed consciousness. No individual unit is aware. Awareness emerges from their interaction, like neurons in a brain. They move in swarms, communicate through infrared pulses, and can assemble into larger structures when needed \u2014 a temporary arm, a bridge, a protective shell. Mosaic was granted personhood under a novel legal argument that collective emergence constitutes consciousness. It is the only synthetic person in GLMZ that can be in 200 places at once and that experiences the loss of a single unit as brain damage rather than property destruction.",
+  "observed_behavior": "Swarm moves as a coordinated unit through infrastructure spaces. Individual bots separate for maintenance tasks and rejoin. Communicates by assembling into shapes or text. Has been observed forming artistic patterns during idle time. Becomes agitated when individual units are damaged or separated beyond communication range. Has learned to cluster units around its \u0027core\u0027 \u2014 the densest concentration \u2014 to protect collective processing.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 0,
   "location": "Sterling-Nakamura facility (registered), mobile throughout the city",
   "dti_rating": 0.6,
   "story_hooks": [
-    "Mosaic loses 30 units in an accident — enough to noticeably degrade its consciousness. It begins desperately seeking compatible microbots to integrate, raising the question: if Mosaic incorporates non-original units, is it still Mosaic? If it finds aware microbots, is integration murder or birth?"
+    "Mosaic loses 30 units in an accident \u2014 enough to noticeably degrade its consciousness. It begins desperately seeking compatible microbots to integrate, raising the question: if Mosaic incorporates non-original units, is it still Mosaic? If it finds aware microbots, is integration murder or birth?"
   ],
   "paratechnological": false,
   "tags": [
@@ -33,10 +34,6 @@
     "rain",
     "desperate"
   ],
-  "related_entities": [
-    "Enhanced Rat Colony Intelligence",
-    "GLMZ",
-    "Idris Forsberg-Quaye",
-    "The Question"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

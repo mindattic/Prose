@@ -9,7 +9,7 @@
   "role": "Junk merchant and scrap reseller — salvage, broken augmentations, mystery components",
   "age": 44,
   "status": "active",
-  "location": "The Shelf, Harrowgate Industrial Plateau, near Halsted and Division",
+  "location": "the Gray Zone, Harrowgate Industrial Plateau, near Halsted and Division",
   "description": "Rune Phommasack-Delgado is a stocky, perpetually grease-smudged man whose Indonesian-Ethiopian features have been weathered by twenty years of Harrowgate's industrial air into something that looks carved rather than grown. He has a magnificent mustache he tends with more care than anything else in his life, and his left eye is a salvaged optical implant three generations out of date that gives everything a faint amber tint and occasionally displays error codes in his peripheral vision that he's learned to ignore. His hands are enormous and scarred, and he can identify a component by touch alone in the dark. His stall is a magnificent catastrophe: towers of sorted scrap in a system only he understands, with handwritten price tags that rarely match what he actually charges.\n\nRune Phommasack-Delgado is irrepressibly cheerful in the way that only someone who has completely stopped expecting things to go well can be. He finds everything slightly funny, including disasters, including his own. He narrates his life as if it's a story he's telling to someone who will appreciate it later. He genuinely loves salvage — not for profit, which is good because he's terrible at profit, but because every broken thing is a puzzle and he likes puzzles. He has an encyclopedic knowledge of augmentation components from five different decades and will talk about them at length to anyone who doesn't flee quickly enough. He is not stupid. He is simply constitutionally incapable of prioritizing money over curiosity.",
   "psychology": {
     "facet_weights": {
@@ -159,7 +159,7 @@
     "Opportunist": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -175,14 +175,13 @@
   "related_entities": [
     "Harrowgate Industrial Plateau",
     "The Marrow Market",
-    "The Shelf",
     "Noir Dining",
     "Chimera-Null",
     "Crucible Industries Volt Knuckle VK-1 'Jawbreaker'",
     "The Pure Hand",
     "Tin Man"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Ubiquitous Diaspora ancestry: 37% Hispanic/Latin American, 33.5% Sub-Saharan African, 12.7% Southeast Asian, 8.3% East Asian, 5.8% North African, and 2.7% South Asian. His features reflect this intricate blend: warm deep bronze skin with golden and reddish undertones from the combined African, Latin American, and Southeast Asian heritage; broad cheekbones and defined facial structure from East Asian and Southeast Asian ancestry; facial proportions that echo Latin American and North African lineage. The result is a richly textured phenotype marked by warm, complex undertones rather than a single dominant heritage.",
     "height_cm": 172,

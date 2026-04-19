@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa0c7f32b990539b88e40d4e",
+  "rating": 60,
   "name": "Magpie",
   "type": "elf",
   "aliases": [],
@@ -15,7 +16,7 @@
   "location": "Dense residential areas",
   "dti_rating": 0,
   "story_hooks": [
-    "Magpie copies a corporate executive's encrypted files into a Shelf resident's augment — the resident now has evidence of something they shouldn't know about"
+    "Magpie copies a corporate executive's encrypted files into a the Gray Zone resident's augment — the resident now has evidence of something they shouldn't know about"
   ],
   "paratechnological": true,
   "tags": [
@@ -26,7 +27,8 @@
     "e.l.f.",
     "augment",
     "corporate",
-    "shelf",
     "sentient"
-  ]
+  ],
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

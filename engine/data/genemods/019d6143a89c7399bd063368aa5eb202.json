@@ -7,7 +7,7 @@
   "aliases": [],
   "category": "cosmetic",
   "target_system": "skeletal/integumentary (auricular cartilage restructuring)",
-  "description": "Restructures the human pinna into feline-form ears positioned higher on the skull, complete with independent muscular control allowing the ears to rotate, flatten, and perk. The modification replaces the original ear structure entirely — this is not ears on top of ears, it's a full auricular rebuild. The ears are covered in short fur with color options matching or contrasting the user's hair. They provide mildly enhanced directional hearing as a functional bonus. Cat ears are the single most popular radical cosmetic modification in GLMZ, cutting across all tiers and demographics. In the Shelf, cat-eared residents outnumber unmodified-eared residents in some blocks. The ears move expressively — they flatten when the user is annoyed, perk when interested, and swivel toward sounds automatically — which makes them functionally an emotional broadcast system. Some users love this. Some learn to consciously control the ear movements to mask their feelings. Some never bother.",
+  "description": "Restructures the human pinna into feline-form ears positioned higher on the skull, complete with independent muscular control allowing the ears to rotate, flatten, and perk. The modification replaces the original ear structure entirely — this is not ears on top of ears, it's a full auricular rebuild. The ears are covered in short fur with color options matching or contrasting the user's hair. They provide mildly enhanced directional hearing as a functional bonus. Cat ears are the single most popular radical cosmetic modification in GLMZ, cutting across all tiers and demographics. In the Gray Zone, cat-eared residents outnumber unmodified-eared residents in some blocks. The ears move expressively — they flatten when the user is annoyed, perk when interested, and swivel toward sounds automatically — which makes them functionally an emotional broadcast system. Some users love this. Some learn to consciously control the ear movements to mask their feelings. Some never bother.",
   "source_organism": "Felis catus (domestic cat), Caracal caracal (caracal, tufted variant)",
   "manufacturer": "Helix Biosystems (standard), Lacuna Genomics (luxury tufted variants)",
   "tier_availability": "Tier 1+",
@@ -35,13 +35,11 @@
     "elf",
     "control",
     "clinic",
-    "shelf",
     "tier 1"
   ],
   "related_entities": [
     "GLMZ",
     "SynapTech PolyGlot Live Translation Implant",
-    "The Shelf",
     "The Wire Taps"
   ]
 }

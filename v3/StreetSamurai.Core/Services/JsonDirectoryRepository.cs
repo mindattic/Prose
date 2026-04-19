@@ -70,14 +70,14 @@ public partial class JsonDirectoryRepository<T> : IExportableRepository where T 
     {
         if (string.IsNullOrEmpty(id)) return null;
         return GetAll().FirstOrDefault(item =>
-            item is ICanonEntity entity && entity.Id == id);
+            item is IWorldRecord record && record.Id == id);
     }
 
     public void Save(T item)
     {
         var name = _nameSelector(item);
         // Use entity ID for filename (GUIDv7 = chronological sort)
-        var id = (item as ICanonEntity)?.Id ?? Slugify(name);
+        var id = (item as IWorldRecord)?.Id ?? Slugify(name);
         var filePath = Path.Combine(directory, $"{id}.json");
 
         // With GUID-based filenames, the file path is stable (ID doesn't change on rename).
@@ -201,14 +201,14 @@ public partial class JsonDirectoryRepository<T> : IExportableRepository where T 
             var json = File.ReadAllText(filePath);
             var item = JsonSerializer.Deserialize<T>(json, jsonOptions);
 
-            // Auto-assign Id if entity implements ICanonEntity and has no persisted id
-            if (item is ICanonEntity entity)
+            // Auto-assign Id if record has no persisted id
+            if (item is IWorldRecord record)
             {
                 var node = JsonNode.Parse(json);
                 var hasId = node?["id"]?.GetValue<string>() is { Length: > 0 };
                 if (!hasId)
                 {
-                    entity.Id = Guid.CreateVersion7().ToString("N");
+                    record.Id = Guid.CreateVersion7().ToString("N");
                     File.WriteAllText(filePath, JsonSerializer.Serialize(item, jsonOptions));
                 }
             }

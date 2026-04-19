@@ -3,7 +3,7 @@
   "type": "place",
   "name": "The Cinderblock",
   "aliases": [],
-  "description": "The Cinderblock occupies what was once a dense residential neighborhood on Chicago's near west side, a zone that experienced three separate corponation industrial fires in the 2140s and 2150s — two attributed to Axiom Industries chemical storage failures and one to what the official Palladian Group report called 'an uncontrolled energetic event' at a Palladian-contracted demolition site. None of the fires were fully suppressed. They burned into each other. The result was twenty-two blocks of structural scorching so severe that the buildings didn't collapse — they carbonized. The Cinderblock is a neighborhood of standing burned buildings, their walls intact but black, their interiors gutted, their windows hollow. It looks like a city that died upright.\n\nIn the three decades since the last fire, the Cinderblock has been recolonized. Not rebuilt — recolonized. People moved back into the carbonized structures because the Shelf was worse and the Cinderblock was free. They hung tarps where windows were. They ran extension cables from illegal taps on the Axiom substations that caused the original fires. They built markets in ground floors where the charring was shallow enough to be scraped away and the concrete still held. By 2200, roughly eight thousand people live in the Cinderblock, in structures that every structural survey says should not be occupied and that nobody is paying for structural surveys to actually condemn.\n\nThe ash is everywhere. It doesn't go away. It settles in hair and lungs and the food you cook and the water you drink, because the water filtration in the Cinderblock is inadequate and the ash is still leaching into groundwater from the deeper burn zones. Respiratory illness rates are the highest in GLMZ. Life expectancy in the Cinderblock is eleven years below the city median. The community health workers who operate the three informal clinics in the zone have submitted fourteen formal petitions to the GLMZ Municipal Authority requesting remediation funding. They have received three form-letter responses.",
+  "description": "The Cinderblock occupies what was once a dense residential neighborhood on Chicago's near west side, a zone that experienced three separate corponation industrial fires in the 2140s and 2150s — two attributed to Axiom Industries chemical storage failures and one to what the official Palladian Group report called 'an uncontrolled energetic event' at a Palladian-contracted demolition site. None of the fires were fully suppressed. They burned into each other. The result was twenty-two blocks of structural scorching so severe that the buildings didn't collapse — they carbonized. The Cinderblock is a neighborhood of standing burned buildings, their walls intact but black, their interiors gutted, their windows hollow. It looks like a city that died upright.\n\nIn the three decades since the last fire, the Cinderblock has been recolonized. Not rebuilt — recolonized. People moved back into the carbonized structures because the Gray Zone was worse and the Cinderblock was free. They hung tarps where windows were. They ran extension cables from illegal taps on the Axiom substations that caused the original fires. They built markets in ground floors where the charring was shallow enough to be scraped away and the concrete still held. By 2200, roughly eight thousand people live in the Cinderblock, in structures that every structural survey says should not be occupied and that nobody is paying for structural surveys to actually condemn.\n\nThe ash is everywhere. It doesn't go away. It settles in hair and lungs and the food you cook and the water you drink, because the water filtration in the Cinderblock is inadequate and the ash is still leaching into groundwater from the deeper burn zones. Respiratory illness rates are the highest in GLMZ. Life expectancy in the Cinderblock is eleven years below the city median. The community health workers who operate the three informal clinics in the zone have submitted fourteen formal petitions to the GLMZ Municipal Authority requesting remediation funding. They have received three form-letter responses.",
   "atmosphere": {
     "sights": [
       "Rows of carbonized buildings standing intact, their facades black and textured like charcoal, windows gaping",
@@ -27,7 +27,7 @@
     "feel": "The Cinderblock produces a specific kind of exhaustion in visitors that is not physical. It is the exhaustion of sustained injustice made visible and permanent. The burned buildings do not let you forget what happened here. They are the evidence, still standing, still black, still leaching into the water table. Residents have developed a complex relationship with this — some find the burned walls galvanizing, proof of what was done that cannot be demolished or redeveloped away. Others find it suffocating.\n\nThere is, underneath the exhaustion, something fierce. The community clinics are extraordinary. The murals are extraordinary. The mutual aid networks that keep eight thousand people fed and medicated in a zone that no corponation or municipal authority will meaningfully support are extraordinary. The Cinderblock is a place where people are surviving something that was done to them, and doing it together.",
     "tags": []
   },
-  "demographics": "Predominantly Tier 1 and Shelf-level residents, many of whom were displaced from other zones and settled here because it was the only place available. High proportion of elderly residents who were present during the original fires and chose not to leave. Significant population of community health workers, mutual aid organizers, and activist-journalists operating on minimal resources. A growing population of younger residents who were born here and have no other home to reference.",
+  "demographics": "Predominantly Tier 1 and the Gray Zone-level residents, many of whom were displaced from other zones and settled here because it was the only place available. High proportion of elderly residents who were present during the original fires and chose not to leave. Significant population of community health workers, mutual aid organizers, and activist-journalists operating on minimal resources. A growing population of younger residents who were born here and have no other home to reference.",
   "economy": "Informal and mutual. Ground-floor markets trade in food, medication, and salvaged materials. The community health clinics operate on a combination of donation, barter, and sporadic grey-market pharmaceutical supply. Some residents earn Φ doing contract labor in adjacent zones — the Cinderblock is close enough to Axiom industrial sites that there is a grim irony in residents commuting to work for the company whose storage failures burned their homes. A small underground economy in ash-processed industrial byproducts, some of which have legitimate chemical value, provides additional income.",
   "power_structure": "The Block Council — informal, non-elected, composed of the longest-tenured residents and the heads of the three community clinics — coordinates mutual aid and external negotiations. There is no enforcement mechanism; the Block Council operates on moral authority alone. Ferrogate Security maintains a perimeter contract but does not operate inside the Cinderblock, a fact that is simultaneously a protection (no corponation security inside) and a vulnerability (no enforcement if something bad happens). Axiom Industries and Palladian Group both maintain legal teams whose primary function is ensuring the fire liability cases from the 2140s and 2150s remain unresolved.",
   "dangers": [
@@ -48,7 +48,7 @@
   ],
   "connections": {
     "adjacent_to": [
-      "The Shelf",
+      "the Gray Zone",
       "The South Side",
       "West Garfield Hollow",
       "The Hermosa Line"
@@ -100,8 +100,7 @@
     "food",
     "drink",
     "fire",
-    "water",
-    "shelf"
+    "water"
   ],
   "related_entities": [
     "Axiom Industries",
@@ -118,5 +117,7 @@
     "Zephyr Bhattacharya",
     "Slagworks Industrial",
     "The Wire Taps"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

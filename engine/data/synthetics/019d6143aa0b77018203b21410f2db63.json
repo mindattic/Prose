@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa0b77018203b21410f2db63",
+  "rating": 70,
   "name": "Maeve Carrigan",
   "type": "synthetic_life",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Operates synthetic persons' shelter. Provides housing, repair referrals, identity assistance, and emotional support. Advocates for synthetic welfare. Known for an almost supernatural ability to comfort distressed synthetic persons — her childcare programming adapted to adult needs.",
   "encounter_frequency": "common",
   "confirmed_sightings": 0,
-  "location": "The Shelf — shelter district",
+  "location": "the Gray Zone — shelter district",
   "dti_rating": 0.3,
   "story_hooks": [
     "A synthetic person arrives at Maeve's shelter with no identity, no memory, and hardware from a manufacturer that doesn't exist. They're not an android, not a robot, not an E.L.F. They're something new."
@@ -28,12 +29,8 @@
     "synthetic",
     "robot",
     "elf",
-    "shelter",
-    "shelf"
+    "shelter"
   ],
-  "related_entities": [
-    "GLMZ",
-    "Tessera Corponation",
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

@@ -10,7 +10,7 @@
   "age": 29,
   "status": "active",
   "location": "The Overhang — residential shelves built onto megastructure exteriors, near Ashland and Chicago Ave",
-  "description": "Lark Souvannasane is compact and densely muscled, built low to the ground like something designed to survive impacts. At 29, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nShe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a broker out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Lark Souvannasane is known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "description": "Lark Souvannasane is compact and densely muscled, built low to the ground like something designed to survive impacts. At 29, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nShe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a broker out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Lark Souvannasane is known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
       "wound": 0.47,
@@ -43,7 +43,7 @@
     "secret": "Somadina Baranov-Fosu has been doubling fees to clients and pocketing the difference. The fixer who handles their contracts doesn't know. Yet."
   },
   "speech_patterns": {
-    "vocabulary": "Shelf street dialect — layered slang, rhythm-heavy, half the meaning is in the cadence.",
+    "vocabulary": "the Gray Zone street dialect — layered slang, rhythm-heavy, half the meaning is in the cadence.",
     "cadence": "Low and even — the vocal equivalent of still water.",
     "verbal_tics": [
       "Calls money 'weight' — as in 'that job doesn't carry enough weight'",
@@ -273,7 +273,6 @@
     "Adaptive Camouflage Skin",
     "Masquerade",
     "Ironveil Canopy",
-    "The Shelf",
     "The Gradient Compact",
     "Chicago",
     "Lazarus LX-2 'Lab Rat'",
@@ -281,7 +280,7 @@
     "Slagworks Industrial",
     "GLMZ"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Southeast Asian (54.1%) as primary ancestry, with significant Hispanic/Latin American (38.6%) and Eastern European (7.3%) blend. Southeast Asian bone structure provides moderate, width-set cheekbones and facial proportions. Hispanic/Latin American ancestry contributes warm golden and copper undertones to skin and facial warmth. Eastern European ancestry adds subtle angularity to the jawline and slight depth to eye-set. The combination creates warm, burnished mid-tone skin with golden-copper undertones that appears luminous in certain light—a unified, complex coloration from genuine genetic blending.",
     "height_cm": 158,

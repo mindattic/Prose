@@ -4,7 +4,7 @@
   "type": "entertainment",
   "category": "platform",
   "subcategory": "dating platform",
-  "description": "Caul is a dating and companionship platform built specifically for synthetic beings and synthetic-human pairings, operating in a legal gray zone where synthetic personhood is contested. The platform uses proprietary 'resonance mapping' to match users by cognitive architecture compatibility, emotional processing style, and expressed identity rather than biological metrics. Launched in 2214 by synthetic-rights advocate Tomás Vega-Achebe following the public collapse of a mainstream dating platform that quietly banned synthetic profiles, Caul operates its primary servers from a cooperative data facility in the Shelf's Rust Harbor enclave.",
+  "description": "Caul is a dating and companionship platform built specifically for synthetic beings and synthetic-human pairings, operating in a legal gray zone where synthetic personhood is contested. The platform uses proprietary 'resonance mapping' to match users by cognitive architecture compatibility, emotional processing style, and expressed identity rather than biological metrics. Launched in 2214 by synthetic-rights advocate Tomás Vega-Achebe following the public collapse of a mainstream dating platform that quietly banned synthetic profiles, Caul operates its primary servers from a cooperative data facility in the Gray Zone's Rust Harbor enclave.",
   "origin_year": 2214,
   "tier_association": "Tier 1-2",
   "status": "active",
@@ -15,9 +15,9 @@
     "Imara Fontaine-Kwon (legal defense counsel)"
   ],
   "locations": [
-    "Rust Harbor Cooperative Data Facility, Shelf",
+    "Rust Harbor Cooperative Data Facility, the Gray Zone",
     "Caul community meetspace in Tier 2 Bridgeport Annex",
-    "Mobile access nodes in Shelf ghost markets"
+    "Mobile access nodes in the Gray Zone ghost markets"
   ],
   "corporate_stance": "opposed",
   "story_hooks": [
@@ -30,7 +30,6 @@
     "dating",
     "personhood-rights",
     "BCI-compatibility",
-    "Shelf",
     "underground",
     "human-synthetic",
     "resonance-mapping",
@@ -49,7 +48,6 @@
     "Sable",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "The Resonance Communion",
-    "The Shelf",
     "WELLSPRING"
   ]
 }

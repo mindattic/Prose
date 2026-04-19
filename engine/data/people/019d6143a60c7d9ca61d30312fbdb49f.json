@@ -9,8 +9,8 @@
   "role": "Whistleblower and community council member",
   "age": 61,
   "status": "active",
-  "location": "The Shelf, near Ashland and Division",
-  "description": "Kohana Moon-Boudiaf-Migizi is a retired Sterling-Nakamura logistics compliance officer who spent thirty-one years watching things get falsified and decided on year thirty-two that he was done. He is a heavyset man with the careful, deliberate physicality of someone who has learned not to take up space in ways that draw attention, a habit from corporate years that he has mostly unlearned. His skin is dark and dry at the elbows and knuckles, his hair cut close and almost entirely white. He has a single augmentation — a neural notation implant he uses compulsively to record everything, which he got for work and kept afterward. He has a cat's tail, ruddy amber, that he got on a whim at sixty and which his grandchildren love and which surprises everyone who meets him.\n\nKohana Moon-Boudiaf-Migizi now serves on the Shelf Community Resource Council, a position he ran for mostly because he couldn't stop seeing the ways services were being misallocated and nobody with a ledger background was doing anything about it. He is methodical, patient, and genuinely humble in the way that people who have been wrong in consequential ways sometimes become. He spent three decades enabling a system he now spends his retirement opposing, and he carries that with a gravity that never quite lifts. He is not a firebrand. He is a man who has kept copies of everything.",
+  "location": "the Gray Zone, near Ashland and Division",
+  "description": "Kohana Moon-Boudiaf-Migizi is a retired Sterling-Nakamura logistics compliance officer who spent thirty-one years watching things get falsified and decided on year thirty-two that he was done. He is a heavyset man with the careful, deliberate physicality of someone who has learned not to take up space in ways that draw attention, a habit from corporate years that he has mostly unlearned. His skin is dark and dry at the elbows and knuckles, his hair cut close and almost entirely white. He has a single augmentation — a neural notation implant he uses compulsively to record everything, which he got for work and kept afterward. He has a cat's tail, ruddy amber, that he got on a whim at sixty and which his grandchildren love and which surprises everyone who meets him.\n\nKohana Moon-Boudiaf-Migizi now serves in the Gray Zone Community Resource Council, a position he ran for mostly because he couldn't stop seeing the ways services were being misallocated and nobody with a ledger background was doing anything about it. He is methodical, patient, and genuinely humble in the way that people who have been wrong in consequential ways sometimes become. He spent three decades enabling a system he now spends his retirement opposing, and he carries that with a gravity that never quite lifts. He is not a firebrand. He is a man who has kept copies of everything.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -26,7 +26,7 @@
     ],
     "core_desires": [
       "Accountability — not punishment, specifically, but acknowledgment that the harm happened",
-      "To be trusted by the Shelf community without the weight of what he used to be"
+      "To be trusted by the Gray Zone community without the weight of what he used to be"
     ],
     "coping_mechanisms": [
       "Recording and documentation as a substitute for action when action feels impossible",
@@ -36,7 +36,7 @@
       "Overvalues documentation over lived testimony",
       "Assumes good faith in institutional processes longer than is warranted"
     ],
-    "secret": "He has a complete, authenticated copy of Sterling-Nakamura's internal models projecting displacement outcomes for Shelf residents from a planned infrastructure deal — projections that were made and then deliberately omitted from the public impact assessment. The deal hasn't been announced yet. He got the documents through a contact he burned to get them. He is waiting for the right moment to use them and is aware that waiting has costs he's paying in other people's security."
+    "secret": "He has a complete, authenticated copy of Sterling-Nakamura's internal models projecting displacement outcomes for the Gray Zone residents from a planned infrastructure deal — projections that were made and then deliberately omitted from the public impact assessment. The deal hasn't been announced yet. He got the documents through a contact he burned to get them. He is waiting for the right moment to use them and is aware that waiting has costs he's paying in other people's security."
   },
   "speech_patterns": {
     "vocabulary": "Corporate precision vocabulary that he actively works against — catches himself mid-sentence and simplifies; occasional Sotho phrases when reflective",
@@ -53,13 +53,13 @@
   "relationships": [],
   "story_hooks": [
     "Ezra needs someone to physically deliver a copy of the Sterling-Nakamura displacement projections to a city arbitration body before the infrastructure deal is quietly approved — the filing window is closing and he can't be seen doing it himself",
-    "A Sterling-Nakamura investigator has appeared in the Shelf asking questions about former employees; Ezra needs to know if they're looking for him and what they know",
+    "A Sterling-Nakamura investigator has appeared in the Gray Zone asking questions about former employees; Ezra needs to know if they're looking for him and what they know",
     "The council is deadlocked on a resource allocation decision and Ezra has data showing one faction is receiving payments from a Tessera subsidiary — he needs help deciding how and whether to surface it without destroying the council's function"
   ],
   "narrative_function": "Archive and institutional memory; can surface specific historical data points and documented corporate malfeasance; provides grounded credibility to activist actions; his past gives him access to corporate-facing contexts others cannot reach.",
   "augmentations": "Neural notation implant (Sterling-Nakamura work model, retained after departure). Cosmetic cat tail — amber, voluntary and personal, not work-related.",
-  "daily_life": "Morning council work — budget review, service allocation tracking, resident appeals. Afternoons spent maintaining a meticulous personal archive of city resource data, council decisions, and corporate filings that touch Shelf territory. Cooks dinner for whoever is around.",
-  "affiliation": "The Shelf Community Resource Council; informal contact with Yewande Ostrčil-Falaniko's legal collective for document authentication",
+  "daily_life": "Morning council work — budget review, service allocation tracking, resident appeals. Afternoons spent maintaining a meticulous personal archive of city resource data, council decisions, and corporate filings that touch the Gray Zone territory. Cooks dinner for whoever is around.",
+  "affiliation": "the Gray Zone Community Resource Council; informal contact with Yewande Ostrčil-Falaniko's legal collective for document authentication",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -123,7 +123,7 @@
     },
     "contradictions": [
       "Claims to want accountability over punishment but has sat on documents that could trigger both",
-      "Values transparency as a principle while holding one of the most significant information asymmetries in the Shelf"
+      "Values transparency as a principle while holding one of the most significant information asymmetries in the Gray Zone"
     ],
     "habits": [
       "Records a verbal summary of each day into his neural implant before sleeping",
@@ -159,7 +159,7 @@
     "Social Chameleon": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -175,13 +175,12 @@
   ],
   "related_entities": [
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "The Shelf",
     "Tessera Corponation",
     "Neural Palate",
     "Haze Johansson",
     "Whim"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Indigenous American (Anishinaabe, Lakota, and other Great Lakes nations) comprising 70.7% of genetic ancestry, with significant East Asian (15.4%) and North African (13.9%) admixture — genetic legacy of the Ubiquitous Diaspora. Features reflect Indigenous American bone structure with warm medium-brown skin tones, broad facial geometry characteristic of Indigenous heritage, subtle East Asian eye shape and cheekbone structure from minority ancestry, and North African warmth in overall complexion.",
     "height_cm": 178,

@@ -1,16 +1,17 @@
 {
   "id": "019d6143a6667e23ad2b2fb103a908fc",
+  "rating": 70,
   "type": "character",
   "name": "Reza Kulkarni-Tehrani",
   "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Sociologist specializing in informal economies and social structures of the Shelf communities",
+  "role": "Sociologist specializing in informal economies and social structures of the Gray Zone communities",
   "age": 39,
   "status": "active",
   "location": "Hough Reclamation — maintains a small field office in a converted community center, travels frequently, near Ashland and Chicago Ave",
-  "description": "Reza Kulkarni-Tehrani in the Shelf and got out through scholarships, then spent the next decade and a half choosing to go back — a decision her university colleagues find alternately admirable and baffling. She is a medium-height woman with deep brown skin, natural hair that she usually keeps wrapped, and geneware cat ears she got as a teenager that she has never removed, treating them as simply part of her face. The ears are dark brown and mobile, which means her emotional state is often broadcast before her expression catches up — they flatten when she is frustrated, perk forward when she is genuinely interested. She carries herself with the particular ease of someone who is comfortable in rooms that make other academics nervous.\n\nShe has a reputation in the university system as difficult — meaning she publishes findings that are politically inconvenient, refuses to anonymize her data in ways that would make it easier to misuse, and has twice written public responses to policy papers that cited her work incorrectly. On the Shelf, her reputation is more complicated: some communities trust her completely, others view her with the appropriate suspicion reserved for someone with institutional credentials who wants to study you. She navigates this with unusual self-awareness, asking permission, attributing community knowledge, and taking twice as long on studies as her department thinks necessary. She is warm and quick-laughing in person, and implacably persistent in writing.",
+  "description": "Reza Kulkarni-Tehrani in the Gray Zone and got out through scholarships, then spent the next decade and a half choosing to go back — a decision her university colleagues find alternately admirable and baffling. She is a medium-height woman with deep brown skin, natural hair that she usually keeps wrapped, and geneware cat ears she got as a teenager that she has never removed, treating them as simply part of her face. The ears are dark brown and mobile, which means her emotional state is often broadcast before her expression catches up — they flatten when she is frustrated, perk forward when she is genuinely interested. She carries herself with the particular ease of someone who is comfortable in rooms that make other academics nervous.\n\nShe has a reputation in the university system as difficult — meaning she publishes findings that are politically inconvenient, refuses to anonymize her data in ways that would make it easier to misuse, and has twice written public responses to policy papers that cited her work incorrectly. On the Gray Zone, her reputation is more complicated: some communities trust her completely, others view her with the appropriate suspicion reserved for someone with institutional credentials who wants to study you. She navigates this with unusual self-awareness, asking permission, attributing community knowledge, and taking twice as long on studies as her department thinks necessary. She is warm and quick-laughing in person, and implacably persistent in writing.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -21,11 +22,11 @@
       "ghost": 0.5
     },
     "core_fears": [
-      "Becoming a tool for institutions that want to understand the Shelf in order to displace it",
+      "Becoming a tool for institutions that want to understand the Gray Zone in order to displace it",
       "Losing the trust of the communities she came from"
     ],
     "core_desires": [
-      "To produce work that materially improves conditions for Shelf communities",
+      "To produce work that materially improves conditions for Gray Zone communities",
       "To resolve the contradiction between her institutional position and her origins"
     ],
     "coping_mechanisms": [
@@ -33,13 +34,13 @@
       "Maintaining real relationships in her research communities — not just research subjects but neighbors"
     ],
     "blind_spots": [
-      "Her deep identification with Shelf communities sometimes makes her slow to see genuine dysfunction within them",
+      "Her deep identification with Gray Zone communities sometimes makes her slow to see genuine dysfunction within them",
       "The institutional platform she dismisses as limiting is also protecting her work from disappearing"
     ],
     "secret": "She has been offered a senior position at a Tessera-funded research institute that would double her salary and fund ten years of independent research — she hasn't told anyone because she knows she's actually considering it, and the self-disgust is immense"
   },
   "speech_patterns": {
-    "vocabulary": "Code-switches fluidly between academic register and Shelf vernacular; in academic settings speaks with clipped precision; in community settings loosens into warmth and the cadences of her childhood",
+    "vocabulary": "Code-switches fluidly between academic register and the Gray Zone vernacular; in academic settings speaks with clipped precision; in community settings loosens into warmth and the cadences of her childhood",
     "cadence": "In formal settings: structured and direct. In casual settings: more musical, lets sentences find their own end",
     "verbal_tics": [
       "'Let me be precise about this'",
@@ -48,17 +49,21 @@
     ],
     "example_lines": [
       "'The informal economy isn't a failure state. It's the city running an operating system that predates Axiom by about four hundred years. They just don't get credit for it.'",
-      "'You're asking me to explain why people on the Shelf don't trust institutions. You understand I grew up there. You understand what you're asking me to explain.'"
-    ]
+      "'You're asking me to explain why people on the Gray Zone don't trust institutions. You understand I grew up there. You understand what you're asking me to explain.'"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
     "A community she has studied for years is facing eviction via a Tessera land acquisition, and her data is the only independent documentation of their occupancy and economic activity",
     "Someone is circulating falsified versions of her field reports to justify a policy proposal she opposes — she needs to find the source"
   ],
-  "narrative_function": "Bridge character between University Spine institutions and Shelf communities; quest giver for social/community conflicts; information source on Shelf power structures, informal economies, and community politics",
+  "narrative_function": "Bridge character between University Spine institutions and the Gray Zone communities; quest giver for social/community conflicts; information source on the Gray Zone power structures, informal economies, and community politics",
   "augmentations": "Geneware cat ears (dark brown, mobile; cosmetic, from adolescence); subdermal recorder implant for field interviews (with visible indicator light — a point of ethics she insists on)",
-  "daily_life": "Alternates between field weeks in Shelf communities and university weeks writing, teaching one undergraduate course on urban informality, and fighting with her department head about publication timelines; she keeps a separate cheap apartment in Hough Reclamation so she is never purely a visitor.",
+  "daily_life": "Alternates between field weeks in the Gray Zone communities and university weeks writing, teaching one undergraduate course on urban informality, and fighting with her department head about publication timelines; she keeps a separate cheap apartment in Hough Reclamation so she is never purely a visitor.",
   "affiliation": "University Spine — Department of Urban Sociology; advisory role to the Highland Park Autonomous Zone community council",
   "uses_facets": false,
   "narration_voice": "",
@@ -119,7 +124,7 @@
     "stress_responses": {
       "low": "Becomes more productive, channels stress into writing",
       "medium": "Ears flatten consistently, becomes curt in institutional settings",
-      "high": "Goes to the Shelf for a few days without telling the university — returns with better judgment"
+      "high": "Goes to the Gray Zone for a few days without telling the university — returns with better judgment"
     },
     "contradictions": [
       "Criticizes her institution's power while using its credentials to gain access for her work",
@@ -184,7 +189,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Completed doctorate on informal credit networks in the Shelf — controversial for its attribution methodology",
+      "event": "Completed doctorate on informal credit networks in the Gray Zone — controversial for its attribution methodology",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -215,22 +220,11 @@
     }
   ],
   "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Street Custom 'Molotov Standard' Incendiary Bottle"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Hough Reclamation",
-    "The Reclamation Assembly",
-    "WELLSPRING",
-    "The Shelf",
-    "The Wire Taps",
-    "Tessera Corponation",
-    "Chicago",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
-  ],
-  "district": "The Shelf",
   "physical_description": {
     "heritage": "South Asian (42.7%), Middle Eastern (41.4%), and Southeast Asian (15.9%) ancestry create a striking multiregional phenotype; the dominant South Asian and Middle Eastern heritage produces warm, golden-olive to deep brown skin with luminous undertones, while Southeast Asian ancestry subtly influences facial structure and eye shape; bone structure reflects the convergence—Southeast Asian cheekbone prominence combined with South Asian facial proportions and Middle Eastern warmth in overall facial contours",
     "height_cm": 168,
@@ -253,17 +247,12 @@
     "clothing_style": "Tier 3-4 practical; favors well-worn canvas work jackets in indigo or charcoal, sturdy boots rated for urban reclamation zones, fitted but functional pants with multiple pockets; layers with simple knit sweaters in earth tones; carries battered synthetic leather messenger bag holding field notebooks, recording equipment, and snacks to share; wears simple silver ring on left middle finger and beaded bracelet of indigo and silver on right wrist; minimal other jewelry; beautifully intentional wraps suggesting cultural pride"
   },
   "image_prompt": "Reza Kulkarni-Tehrani, GLMZ, Golden-olive to deep warm brown skin with honeyed undertones, luminous complexion sun-weathered at temples. Deep brown observant eyes, prominent Southeast Asian cheekbones with South Asian facial proportions and Middle Eastern warmth. Long deep brown locs wrapped in indigo cloth, geneware dark brown cat ears affixed to skull crown, mobile and expressive, rotating attentively. Lean 168cm figure in well-worn indigo canvas work jacket, sturdy urban boots, fitted functional pants with pockets, earth-tone knit layers. Battered synthetic leather messenger bag across chest. Simple silver ring on left hand, indigo and silver beaded bracelet. Pale green bioluminescent lentil-sized indicator light glowing at base of right ear. Relaxed attentive posture, head tilted in listening position, genuine warm expression. Urban reclamation zone setting, neon accent lighting catching the luminosity of skin and the mobile ears, documentary field recorder aesthetic, warm intimate mood. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "South Asian": 42.7,
     "Middle Eastern": 41.4,
     "Southeast Asian": 15.9
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "South Asian": {
       "Indian": {
@@ -298,6 +287,5 @@
         "Thai": 4.1
       }
     }
-  },
-  "tier": "1"
+  }
 }

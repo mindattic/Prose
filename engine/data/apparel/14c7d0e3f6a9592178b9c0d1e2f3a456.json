@@ -3,7 +3,7 @@
   "name": "Ironfoot Reclaim Boot (Wide Last)",
   "type": "apparel",
   "category": "footwear",
-  "description": "A wide-last boot designed to fit augmented feet with basic chrome or prosthetic extensions — one of the few Shelf-made options that acknowledges not everyone has standard anatomy. The upper is reclaimed leather in irregular browns and blacks, the sole a thick slab of recycled polymer. Sizes are approximate; a cloth tag inside lists three measurements and says 'closest fit wins.'",
+  "description": "A wide-last boot designed to fit augmented feet with basic chrome or prosthetic extensions — one of the few the Gray Zone-made options that acknowledges not everyone has standard anatomy. The upper is reclaimed leather in irregular browns and blacks, the sole a thick slab of recycled polymer. Sizes are approximate; a cloth tag inside lists three measurements and says 'closest fit wins.'",
   "tier_association": "Tier 1",
   "materials": [
     "reclaimed leather",
@@ -13,11 +13,11 @@
   "functionality": "Wide last accommodates basic augmented or prosthetic feet. No tech integration.",
   "what_it_says": "You've got chrome and you're not hiding it. You also can't afford the Velasca aug-boot, so this is what fits.",
   "worn_by": [
-    "augmented Shelf workers",
+    "augmented the Gray Zone workers",
     "veterans on basic support",
     "anyone with non-standard feet"
   ],
-  "manufacturer": "Ironfoot Workshop (Shelf-based)",
+  "manufacturer": "Ironfoot Workshop (the Gray Zone-based)",
   "price_range": "Φ15 - Φ25",
   "aug_compatible": true,
   "gene_compatible": false,
@@ -32,7 +32,6 @@
     "aug-compatible",
     "wide last",
     "salvage",
-    "shelf",
     "prosthetic-friendly"
   ],
   "parent_corponation": "",
@@ -40,7 +39,7 @@
     "Kweku Osei-Tamboli"
   ],
   "physical_description": {
-    "visual_profile": "A sturdy, deliberately asymmetrical silhouette that reads as utilitarian and uncompromising. The boot sits ankle-high with a pronounced toe box, shaped to accommodate augmented feet without pressure points. Has the honest, assembled-from-salvage appearance of Shelf craftsmanship — no designer pretense, just function.",
+    "visual_profile": "A sturdy, deliberately asymmetrical silhouette that reads as utilitarian and uncompromising. The boot sits ankle-high with a pronounced toe box, shaped to accommodate augmented feet without pressure points. Has the honest, assembled-from-salvage appearance of the Gray Zone craftsmanship — no designer pretense, just function.",
     "fit": "Wide last throughout the foot and instep; compression-resistant to allow for swelling around prosthetic joints and chrome fixtures. The calf opening is generous and unstructured, allowing for easy on-and-off around mechanical components.",
     "primary_material": "Reclaimed leather (mixed hides stitched together) with visible seams and color variations; thick slab sole of recycled thermopolymer (grey, worn-smooth in patches)",
     "texture": "Leather is rough, creased, and weathered — some areas show original wear from prior owners, others freshly abraded. Sole has a tactile, slightly grippy surface with visible aggregate trapped in the polymer.",
@@ -53,7 +52,7 @@
       "Slight cant inward at the heel to accommodate common servo-alignment of lower-leg augmentations",
       "Drainage holes punched near the ankle — explicit acknowledgment that chrome gets wet"
     ],
-    "tier_indicator": "Tier 5 / Shelf-made — high functionality, zero luxury finish. Accessible price point (Φ40-60 range), designed by and for the augmented underclass",
+    "tier_indicator": "Tier 5 / the Gray Zone-made — high functionality, zero luxury finish. Accessible price point (Φ40-60 range), designed by and for the augmented underclass",
     "cultural_context": "Worn by dock workers, salvage operators, and chrome-modded residents of ungoverned districts. Signals rejection of corpo fashion standards and comfort with visible modification. Non-judgmental toward augmentation.",
     "condition_typical": "Worn-in from day one — the irregularity is the point. Leather develops deeper creases; sole gradually polishes from use. Some owners patch the uppers with industrial tape or additional leather scraps, creating increasingly unique variations"
   },

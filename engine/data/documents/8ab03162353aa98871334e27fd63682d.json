@@ -5,9 +5,8 @@
   "author": "Water Treatment Monitoring System",
   "date": "unknown",
   "classification": "restricted",
-  "description": "Sensor readings from the Shelf water supply showing a compound that the system cannot identify. The compound appears for 4 hours every 11 days on a precise schedule. It is not harmful. Chemical analysis returns: \"STRUCTURE: [UNRESOLVABLE]. ORIGIN: [UNRESOLVABLE]. RECOMMENDATION: [NO DATA].\"",
+  "description": "Sensor readings from the Gray Zone water supply showing a compound that the system cannot identify. The compound appears for 4 hours every 11 days on a precise schedule. It is not harmful. Chemical analysis returns: \"STRUCTURE: [UNRESOLVABLE]. ORIGIN: [UNRESOLVABLE]. RECOMMENDATION: [NO DATA].\"",
   "related_entities": [
-    "The Shelf",
     "Origin"
   ],
   "credibility": "unconfirmed",
@@ -22,7 +21,7 @@
     "incomplete",
     "data log",
     "water treatment",
-    "the shelf",
+    "the Gray Zone",
     "unknown compound",
     "schedule",
     "anomaly"

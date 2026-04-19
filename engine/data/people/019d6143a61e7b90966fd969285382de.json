@@ -1,5 +1,6 @@
 {
   "id": "019d6143a61e7b90966fd969285382de",
+  "rating": 23.3,
   "type": "character",
   "name": "Elsa Rahman",
   "aliases": [],
@@ -9,7 +10,7 @@
   "role": "Fixer - Medical contracts",
   "age": 45,
   "status": "active",
-  "location": "The Shelf, near Ashland and Chicago Ave",
+  "location": "the Gray Zone, near Ashland and Chicago Ave",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -30,7 +31,11 @@
     "vocabulary": "",
     "cadence": "",
     "verbal_tics": [],
-    "example_lines": []
+    "example_lines": [],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [],
@@ -88,7 +93,7 @@
     "Manipulator": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -96,15 +101,11 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Shelf",
-    "Chicago"
-  ],
-  "district": "The Shelf",
   "physical_description": {
     "heritage": "Predominantly East Asian (34.2%) with substantial Northern European (23.5%), South Asian (14.9%), Southeast Asian (14.9%), and Middle Eastern (12.5%) ancestry; a striking global blend reflecting the Ubiquitous Diaspora with almond-shaped eyes and high cheekbones from East and Southeast Asian heritage, warm medium-brown skin with subtle golden and olive undertones from the South Asian and Middle Eastern admixture, and refined facial structure influenced by Northern European genetics",
     "height_cm": 172,
@@ -115,7 +116,7 @@
     "hair_length": "Medium",
     "eye_color": "Light hazel with amber flecks",
     "skin_tone": "Medium warm brown with golden-olive undertones; luminous quality from the multifaceted blend of East Asian, South Asian, Southeast Asian, and Middle Eastern ancestry creating subtle warm and cool undertones in the complexion",
-    "complexion": "Weathered but maintained; fine lines around the eyes from years of concentration; minimal cosmetics; skin shows the wear of chemical exposure and years navigating The Shelf's environmental hazards; high, prominent cheekbones characteristic of East and Southeast Asian heritage blended with the softer facial contours influenced by South Asian genetics; subtle warmth to the face that catches light, enhanced by the warm undertones of her mixed ancestry",
+    "complexion": "Weathered but maintained; fine lines around the eyes from years of concentration; minimal cosmetics; skin shows the wear of chemical exposure and years navigating the Gray Zone's environmental hazards; high, prominent cheekbones characteristic of East and Southeast Asian heritage blended with the softer facial contours influenced by South Asian genetics; subtle warmth to the face that catches light, enhanced by the warm undertones of her mixed ancestry",
     "distinguishing_marks": [
       "Thin white scar running from the corner of her right eye to her cheekbone, sustained during a black-market surgery extraction gone wrong circa 2203",
       "Faded tattoo on her left inner forearm: a stylized caduceus wrapped in circuit lines, marking her allegiance to the underground medical collective",
@@ -123,9 +124,10 @@
     ],
     "visible_augmentations": "Modified right hand: chromatic fingers with articulated joints capable of micro-precision work; a subtle neural interface port at the base of her skull concealed by her braid, visible only when hair is pulled aside; faint subcutaneous bioluminescent network visible under the skin of her right forearm when activated (used for low-light surgical work)",
     "posture_movement": "Moves with deliberate, economical grace; hands are always slightly active, fingers twitching through practiced gestures even at rest; maintains steady eye contact; speaks in measured tones with minimal wasted breath; carries tension in her shoulders that only releases when she's focused on a task",
-    "clothing_style": "Tier 3-4 utilitarian: reinforced gray synthetic jacket with internal pockets for tools and implant diagnostics; dark cargo pants with utility webbing; worn leather fingerless gloves over her left hand only; steel-toed boots with custom orthotic inserts for standing through long procedures; a medical-grade respirator hangs loose around her neck (air quality on The Shelf is unreliable); no corporate branding, but visible wear patterns suggest expensive maintenance; a single piece of jewelry: a Scandinavian silver ring on her right index finger (her augmented hand), family heirloom"
+    "clothing_style": "Tier 3-4 utilitarian: reinforced gray synthetic jacket with internal pockets for tools and implant diagnostics; dark cargo pants with utility webbing; worn leather fingerless gloves over her left hand only; steel-toed boots with custom orthotic inserts for standing through long procedures; a medical-grade respirator hangs loose around her neck (air quality on the Gray Zone is unreliable); no corporate branding, but visible wear patterns suggest expensive maintenance; a single piece of jewelry: a Scandinavian silver ring on her right index finger (her augmented hand), family heirloom"
   },
   "image_prompt": "Elsa Rahman, 172cm tall, athletic lean build, GLMZ, portrait of a biracial East Asian-Northern European-South Asian woman with warm medium-brown skin, golden-olive undertones, almond eyes with light hazel iris and amber flecks, high cheekbones, dark brown hair with silver at temples pulled in tight practical braid, weathered complexion with fine lines, thin white scar from right eye corner to cheekbone, faded circuit-caduceus tattoo on left forearm, three-point burn scar on right hand. Right hand augmented with chromatic precision fingers and micro-articulated joints. Subtle neural interface port at skull base concealed by braid. Faint bioluminescent network visible under right forearm skin. Wearing reinforced gray synthetic utility jacket, dark cargo pants with webbing, worn leather fingerless gloves on left hand only, steel-toed boots, medical-grade respirator around neck, Scandinavian silver ring on right index finger. Posture deliberate and economical, hands active with practiced gestures, tension in shoulders, steady gaze. Low-light surgical setting with cool blue and warm amber industrial lighting, worn workshop environment, moody atmospheric neo-noir urban aesthetic. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "East Asian": 34.2,
     "Northern European": 23.5,
@@ -133,12 +135,6 @@
     "Southeast Asian": 14.9,
     "Middle Eastern": 12.5
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "East Asian": {
       "Chinese": {
@@ -186,6 +182,5 @@
         "Kurdish": 4.5
       }
     }
-  },
-  "tier": "3"
+  }
 }

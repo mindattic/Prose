@@ -1,16 +1,17 @@
 {
   "id": "019d6143a6ba73239be67049892db8ce",
+  "rating": 80,
   "type": "character",
   "name": "Zofia Cervantes",
   "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Urban planner and sociologist studying informal settlement patterns on the Shelf",
+  "role": "Urban planner and sociologist studying informal settlement patterns in the Gray Zone",
   "age": 41,
   "status": "active",
   "location": "University Spine, with frequent fieldwork in Chatham Flats and Hough Reclamation, near Lincoln and Clark",
-  "description": "Zofia Cervantes is a broad-shouldered woman with deep brown skin and close-cropped silver-streaked hair she's had since her late twenties—a stress response she refuses to reverse, wearing it like a badge. Her eyes carry geneware patterned irises that shift between amber and rust-red, a gift to herself after her tenure review. She maps space the way other people breathe: constantly, involuntarily, rotating the geometry of every room she enters. She dresses in field-practical layers, always with at least one pocket stuffed with data wafers and a collapsible survey drone no bigger than her fist.\n\nShe is warm in person but relentlessly precise in argument, the kind of academic who will sit with a Shelf resident for three hours learning how they navigate a flooded block and then spend three more weeks turning that knowledge into policy language that nobody in power will read. She is not cynical about this—or she has trained herself not to be. She believes in documentation as a form of justice, that to name a place accurately is to insist on its existence.",
+  "description": "Zofia Cervantes is a broad-shouldered woman with deep brown skin and close-cropped silver-streaked hair she's had since her late twenties—a stress response she refuses to reverse, wearing it like a badge. Her eyes carry geneware patterned irises that shift between amber and rust-red, a gift to herself after her tenure review. She maps space the way other people breathe: constantly, involuntarily, rotating the geometry of every room she enters. She dresses in field-practical layers, always with at least one pocket stuffed with data wafers and a collapsible survey drone no bigger than her fist.\n\nShe is warm in person but relentlessly precise in argument, the kind of academic who will sit with a the Gray Zone resident for three hours learning how they navigate a flooded block and then spend three more weeks turning that knowledge into policy language that nobody in power will read. She is not cynical about this—or she has trained herself not to be. She believes in documentation as a form of justice, that to name a place accurately is to insist on its existence.",
   "psychology": {
     "facet_weights": {
       "wound": 0.55,
@@ -36,7 +37,7 @@
       "Assumes goodwill in people who cite her work, even when their motives are extractive",
       "Underestimates how much her institutional position insulates her from the conditions she studies"
     ],
-    "secret": "Three years ago she was approached by a Tessera urban development officer who offered her research funding in exchange for a private data set identifying which Shelf communities had the weakest legal claim to their land. She declined but did not report the approach — and she has recently discovered that the officer obtained essentially the same data through a graduate student she supervised."
+    "secret": "Three years ago she was approached by a Tessera urban development officer who offered her research funding in exchange for a private data set identifying which the Gray Zone communities had the weakest legal claim to their land. She declined but did not report the approach — and she has recently discovered that the officer obtained essentially the same data through a graduate student she supervised."
   },
   "speech_patterns": {
     "vocabulary": "Academic but accessible; she code-switches fluently between research register and plain speech depending on who she is talking to; uses spatial metaphors constantly",
@@ -46,16 +47,20 @@
       "Draws invisible diagrams in the air with one finger while explaining"
     ],
     "example_lines": [
-      "'The Shelf isn't a failure of planning. It's the product of very deliberate planning — just not planning for the people who live there.'",
+      "'the Gray Zone isn't a failure of planning. It's the product of very deliberate planning — just not planning for the people who live there.'",
       "'I have seven hundred hours of interviews in that archive. Seven hundred hours of people describing their own city. You tell me that doesn't count as data.'"
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
     "Her missing graduate student — the one who may have leaked data to Tessera — has gone quiet and she is worried enough to ask for help finding them",
     "She has discovered that a section of Hough Reclamation she documented as vacant contains a thriving undocumented community that was deliberately hidden from city records, and she does not yet know why"
   ],
-  "narrative_function": "Quest giver and information source; she knows the physical and social geography of the Shelf better than almost anyone and can direct players toward hidden communities, forgotten infrastructure, or the human cost behind a corporate development plan",
+  "narrative_function": "Quest giver and information source; she knows the physical and social geography of the Gray Zone better than almost anyone and can direct players toward hidden communities, forgotten infrastructure, or the human cost behind a corporate development plan",
   "augmentations": "Geneware patterned irises (amber-to-rust shift); subdermal haptic feedback layer on fingertips for reading topographic data prints; standard neural lace for research access",
   "daily_life": "Mornings she teaches a graduate seminar on post-flood urbanism, afternoons she is usually in the field with a survey drone and a voice recorder, talking to anyone who will talk back. Evenings she writes, revises, and argues with her research partner over shared feeds.",
   "affiliation": "University Spine — Meridian Institute for Settlement Studies; occasional contract work for Tessera urban development division",
@@ -208,7 +213,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Published 'The Shelf Speaks,' a landmark study that briefly made her a public figure and a target of Tessera legal scrutiny",
+      "event": "Published 'the Gray Zone Speaks,' a landmark study that briefly made her a public figure and a target of Tessera legal scrutiny",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -231,24 +236,11 @@
     }
   ],
   "changelog": [],
-  "carried_weapons": [
-    "Forge-Smith Collective Thundermouth Double 'Old Testament'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Hough Reclamation",
-    "University Spine",
-    "Chatham Flats",
-    "The Reclamation Assembly",
-    "Tessera Corponation",
-    "Silver",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Nesting Doll",
-    "IRONLIMB Spectre SV-4 Stealth Arm",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
-  ],
-  "district": "The Laceworks",
   "physical_description": {
     "heritage": "Predominantly Hispanic/Latin American (54.9%) with significant Eastern European (28.4%), Central Asian (10.3%), and Pacific Islander (6.4%) ancestry—a striking blend creating warm medium bronze skin with golden undertones, angular Eastern European cheekbones softened by Latin American fullness, and Pacific Islander warmth in skin depth; the convergence produces a uniquely balanced face where Slavic bone structure meets Latin American and Central Asian roundness",
     "height_cm": 174,
@@ -270,18 +262,13 @@
     "clothing_style": "Tier 3-4 field practical: reinforced cargo jacket (Tessera-branded, three years old, meticulously maintained), moisture-wicking undershirt, heavy canvas trousers with oversized thigh and cargo pockets, ankle-height tactical boots rated for water ingress. Layers vary by season but always include at least one vest with internal padding for sensor arrays. Her watch is a ruggedized research-grade unit with mapping overlay. Worn leather satchel, university-issued, packed with survey equipment. Everything is well-used but not shabby—maintained like tools that matter."
   },
   "image_prompt": "Zofia Cervantes, a 174cm researcher with a powerlifter's broad-shouldered frame, stands in GLMZ Great Lakes Metropolitan Zone. Her warm medium bronze skin with golden undertones reflects blended Hispanic/Latin American, Eastern European, Central Asian, and Pacific Islander heritage. Angular Slavic cheekbones soften into fuller Latin American features; her squared jaw and prominent cheekbones create striking geometry. Deep black hair streaked with deliberate silver-white runs close-cropped and precisely cut. Her most striking feature: geneware-patterned irises shift between amber and rust-red, catching light unnaturally. A faint 2cm surgical scar marks her right temple where neural lace installed; thin whitened lines scar her index and middle fingertips from haptic calibration. She wears a meticulously maintained Tessera reinforced cargo jacket, moisture-wicking undershirt, heavy canvas cargo trousers, and ankle-height tactical boots. A ruggedized research-grade watch and worn leather university satchel complete her outfit. Her posture is upright and deliberate; her hands gesture constantly, describing spatial geometry. Mood: focused intensity, confident fieldwork professionalism. Setting: dimly lit field station or urban survey location with soft overhead lighting casting shadows across her angular features, emphasizing her hybrid heritage and enhanced eyes. Neo-noir urban aesthetic, detailed but gritty, realistic textures. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Hispanic/Latin American": 54.9,
     "Eastern European": 28.4,
     "Central Asian": 10.3,
     "Pacific Islander": 6.4
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Hispanic/Latin American": {
       "South American": {
@@ -327,6 +314,5 @@
         "Kiribati": 0.7
       }
     }
-  },
-  "tier": "3"
+  }
 }

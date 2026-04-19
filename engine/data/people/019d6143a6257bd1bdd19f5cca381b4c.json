@@ -1,5 +1,6 @@
 {
   "id": "019d6143a6257bd1bdd19f5cca381b4c",
+  "rating": 80,
   "type": "character",
   "name": "Soraya Rhee",
   "aliases": [],
@@ -40,7 +41,7 @@
       "Assumes people want the funny version of him and never offers anything deeper",
       "Cannot recognize when someone is genuinely worried about him versus managing him"
     ],
-    "secret": "He turned down a corporate demolition contract three years ago that would have set him up for life. The target was a housing block on the Shelf. He has never told anyone why he said no."
+    "secret": "He turned down a corporate demolition contract three years ago that would have set him up for life. The target was a housing block in the Gray Zone. He has never told anyone why he said no."
   },
   "speech_patterns": {
     "vocabulary": "Working-class Midwest, salted with technical demolition jargon that he drops into casual conversation. Swears creatively and often.",
@@ -54,7 +55,11 @@
       "So here's the thing about thermite — it doesn't care what you built. It only cares about melting point.",
       "I'm not the brains. I'm not the face. I'm the guy who makes doors where there weren't doors before.",
       "You wanna know if I'm okay? Pal, I've been not-okay since before you were born. I just got good at it."
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [
     {
@@ -82,12 +87,12 @@
   "story_hooks": [
     "His ex-wife contacts him — she's in debt to a corp and needs extraction. The personal and professional collide.",
     "A job requires demolishing a building he helped construct in his legitimate career — ghosts of the life he left",
-    "The Shelf kids he teaches get caught up in something dangerous, and the volunteer becomes the operator",
+    "the Gray Zone kids he teaches get caught up in something dangerous, and the volunteer becomes the operator",
     "His hands start shaking — age, nerve damage, or something worse. The clock starts on his career."
   ],
   "narrative_function": "Harlan is the heart of the Thermite Collective — the emotional counterweight to Vesper's clinical precision. His stories explore the tension between competence and self-destruction, between the steady hand that builds perfect charges and the unsteady life outside the work. He humanizes the crew.",
   "augmentations": "Haptic feedback implants in both hands — allow him to sense material density, structural stress points, and vibration patterns through touch. Two prosthetic fingers (left hand, ring and pinky) replaced after a detonation accident seven years ago. Internal air filtration system for working with chemical compounds.",
-  "daily_life": "Spends mornings in his workshop fabricating custom charges and breaching tools. Afternoons are crew meetings or reconnaissance with Vesper. Evenings he drinks at a bar called The Rivet near the foundry district — the bartender knows his name, his order, and his limit. Weekends he volunteers teaching basic electrical work to Shelf kids through a community program, though he'd punch anyone who called it charity.",
+  "daily_life": "Spends mornings in his workshop fabricating custom charges and breaching tools. Afternoons are crew meetings or reconnaissance with Vesper. Evenings he drinks at a bar called The Rivet near the foundry district — the bartender knows his name, his order, and his limit. Weekends he volunteers teaching basic electrical work to the Gray Zone kids through a community program, though he'd punch anyone who called it charity.",
   "affiliation": "The Thermite Collective",
   "uses_facets": false,
   "narration_voice": "",
@@ -148,7 +153,7 @@
     "breaking_points": [
       "A civilian casualty from his work would end him — not his career, him. He would not recover.",
       "Losing Vesper would remove the structure that keeps his life functional",
-      "If the Shelf kids he teaches were harmed because of his runner connections, the guilt would be annihilating",
+      "If the Gray Zone kids he teaches were harmed because of his runner connections, the guilt would be annihilating",
       "His hands failing — tremors, nerve damage, anything that takes away precision — would strip him of the only identity he trusts"
     ]
   },
@@ -183,26 +188,11 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Street Custom 'Molotov Standard' Incendiary Bottle"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Ashford Signal",
-    "The Shelf",
-    "Timekeeper",
-    "Big Rig",
-    "The Foundry Kitchen",
-    "Honest Burger",
-    "VitaCore FlowGuard Hemodynamic Regulator",
-    "Chromeworks Silhouette-S Ghost Walker Leg",
-    "The Pure Hand",
-    "Tin Man",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Slagworks Industrial"
-  ],
-  "district": "The Circuit",
   "physical_description": {
     "heritage": "Northern European, Middle Eastern, and East Asian blend in near-equal measure. Northern European ancestry (40.3%) contributes structural bone definition and fair undertones to the base palette. Middle Eastern heritage (34.8%) adds warmth, facial fullness, and depth to the complexion. East Asian genetics (24.9%) shape the eye structure, cheekbone prominence, and overall facial proportions into a harmonious tri-continental synthesis.",
     "height_cm": 188,
@@ -225,17 +215,12 @@
     "clothing_style": "Tier 4 working-class aesthetic with functional touches. Usually wears reinforced gray or charcoal work shirts (Titan Industries brand — durable, cheap, ubiquitous) with the sleeves rolled to show forearms. Heavy canvas pants with cargo pockets, well-worn Rockport steel-toed boots. Over this, a scorched and stained Carhartt jacket (brown, at least fifteen years old) or a reinforced tactical vest with tool loops when heading to sites. A beaten leather bracelet on his right wrist — no visible significance, just worn smooth. No jewelry beyond a faded wedding band on his right hand that he hasn't bothered removing."
   },
   "image_prompt": "Soraya Rhee, weathered 188cm tall blue-collar worker in GLMZ, warm medium bronze skin with golden undertones blending Northern European, Middle Eastern, and East Asian ancestry. Deep brown amber-flecked eyes, squared jaw with high prominent cheekbones, dark brown hair with salt-and-pepper gray at temples, short practical cut. Thick muscular build with functional density and slight paunch. Rolled-up sleeves revealing chemical burn scars across both forearms in white-pink scar tissue. Matte black synthetic prosthetic fingers (ring and pinky) on left hand with chrome articulation and inactive micro-LEDs. Wearing worn charcoal Titan Industries work shirt, heavy cargo pants, scorched brown Carhartt jacket with tool loops, steel-toed boots. Beaten leather bracelet, faded wedding band. Weathered face with deep lines, small scar through left eyebrow. Workshop environment with low industrial lighting, metallic surfaces, faint chemical haze. Posture relaxed but alert, hands gesture with precise economy. Mood: competent, tired, reliable. Industrial neo-noir aesthetic, gritty realism --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Northern European": 40.3,
     "Middle Eastern": 34.8,
     "East Asian": 24.9
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Northern European": {
       "Germanic": {
@@ -269,6 +254,5 @@
         "Cantonese": 4.3
       }
     }
-  },
-  "tier": "1"
+  }
 }

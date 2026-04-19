@@ -36,5 +36,14 @@
     "Tessera Networked DMR TNDM-6 'Oracle'",
     "The Pellucid Span",
     "Vesna Čolić-Strand"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z3"
+    ],
+    "primaryZone": "Z3",
+    "lakefrontAccess": true,
+    "description": "The Pellucid Atrium — 12-square-kilometer campus in the Rogers Park lakefront district of Zone 3. Predictive analytics and behavioral modeling, specializing in Gray Zone market data. Pellucid knows what happens between sovereign territories and sells that knowledge to anyone with the Quanta to pay.",
+    "grayZoneRelationship": "Pellucid's primary product is information about Gray Zones. They pay Gray Zone residents for behavioral data through a distributed micro-payment system that most participants do not fully understand they have enrolled in."
+  }
 }

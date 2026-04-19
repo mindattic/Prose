@@ -7,7 +7,7 @@
   "aliases": [],
   "category": "defensive",
   "target_system": "skeletal/integumentary (retractable keratinous claw formation)",
-  "description": "Replaces the fingernails with retractable claws housed in modified nail beds. In retracted position, the claws lie flat and appear as slightly thick, curved fingernails. When deployed through a flexion trigger in the fingertips, they extend 2–3 cm beyond the fingertip — curved, sharp, and strong enough to score wood, leather, and light metal. The claws are keratinous like fingernails but significantly denser, with a self-sharpening growth pattern that maintains the edge. They're not weapons capable of penetrating body armor, but in close combat they're effective slashing tools. The modification is popular in the Shelf as a discreet self-defense option that requires no equipment and can't be confiscated. Combined with cat ears and a tail, the claws complete a feline body modification suite that a significant portion of GLMZ's population has adopted.",
+  "description": "Replaces the fingernails with retractable claws housed in modified nail beds. In retracted position, the claws lie flat and appear as slightly thick, curved fingernails. When deployed through a flexion trigger in the fingertips, they extend 2–3 cm beyond the fingertip — curved, sharp, and strong enough to score wood, leather, and light metal. The claws are keratinous like fingernails but significantly denser, with a self-sharpening growth pattern that maintains the edge. They're not weapons capable of penetrating body armor, but in close combat they're effective slashing tools. The modification is popular in the Gray Zone as a discreet self-defense option that requires no equipment and can't be confiscated. Combined with cat ears and a tail, the claws complete a feline body modification suite that a significant portion of GLMZ's population has adopted.",
   "source_organism": "Felis catus (domestic cat), Panthera onca (jaguar, enhanced claw density)",
   "manufacturer": "Helix Biosystems, various street clinics",
   "tier_availability": "Tier 2+",
@@ -22,7 +22,7 @@
     "Accidental deployment during gripping — scratching partners, damaging clothing, scoring furniture",
     "Claws must be maintained — broken claws are painful and take weeks to regrow"
   ],
-  "social_perception": "Common and unremarkable in the Shelf. Cat claws are part of the feline modification package that defines GLMZ's aesthetic. Corporate environments require claws to remain retracted. In practice, most claw users deploy them so rarely that the modification is invisible in daily life.",
+  "social_perception": "Common and unremarkable in the Gray Zone. Cat claws are part of the feline modification package that defines GLMZ's aesthetic. Corporate environments require claws to remain retracted. In practice, most claw users deploy them so rarely that the modification is invisible in daily life.",
   "story_hooks": [
     "A claw user's keratin composition is altered by a contaminated gene package — their claws are now producing a mild paralytic compound on their edges, a feature that wasn't in the installation spec",
     "Claw marks at a crime scene are analyzed for keratin protein signature, identifying the attacker as definitively as a fingerprint — retractable claws leave unique trace evidence"
@@ -44,14 +44,12 @@
     "cold",
     "clothing",
     "armor",
-    "shelf",
     "tier 2"
   ],
   "related_entities": [
     "Auricula Felis Modification",
     "GLMZ",
     "Praevex",
-    "TESSERA PG-2 'Signature'",
-    "The Shelf"
+    "TESSERA PG-2 'Signature'"
   ]
 }

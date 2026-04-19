@@ -3,7 +3,7 @@
   "type": "place",
   "name": "Substation Null",
   "aliases": [],
-  "description": "Substation Null is a decommissioned power relay hub occupying several interconnected levels beneath the northern stretch of The Shelf, accessible through maintenance tunnels, a handful of unofficial entry points, and one known surface entrance that most people who use it pretend doesn't exist. Originally constructed to manage power distribution for a now-demolished industrial sector, the station was officially abandoned during the infrastructure consolidation of the 2040s and subsequently removed from city maintenance records — an omission that was either bureaucratic error or deliberate, depending on who you ask.",
+  "description": "Substation Null is a decommissioned power relay hub occupying several interconnected levels beneath the northern stretch of the Gray Zone, accessible through maintenance tunnels, a handful of unofficial entry points, and one known surface entrance that most people who use it pretend doesn't exist. Originally constructed to manage power distribution for a now-demolished industrial sector, the station was officially abandoned during the infrastructure consolidation of the 2040s and subsequently removed from city maintenance records — an omission that was either bureaucratic error or deliberate, depending on who you ask.",
   "atmosphere": {
     "sights": [
       "Enormous decommissioned transformer housings repurposed as walls, rooms, and structural supports",
@@ -56,7 +56,7 @@
   ],
   "connections": {
     "adjacent_to": [
-      "The Shelf",
+      "the Gray Zone",
       "The Laceworks",
       "Old Harbor"
     ],
@@ -107,11 +107,12 @@
     "power",
     "debt",
     "tunnel",
-    "refugee",
-    "shelf"
+    "refugee"
   ],
   "related_entities": [
     "Tariq Mansour",
     "Bathysphere Networks"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

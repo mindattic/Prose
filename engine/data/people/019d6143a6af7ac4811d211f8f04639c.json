@@ -9,8 +9,8 @@
   "role": "Former Spire-tier bioethics executive / Exiled community medic",
   "age": 67,
   "status": "active",
-  "location": "The Shelf, near Halsted and Chicago Ave",
-  "description": "Lyric Bhattacharya is a large man gone soft at the edges, with the posture of someone who once commanded rooms and has since chosen not to. His skin is the pale ochre of long indoor living, his hands enormous and steady, his white hair kept short and his beard grown out in the way of a man who has stopped performing for an audience that no longer exists. He wears the same rotation of practical clothes—heavy canvas, worn but clean—and carries a battered medical kit that is more capable than it looks because he has modified it himself over eleven years of field use in The Shelf.\n\nRector spent twenty-two years as Director of Bioethical Compliance at Vantara BioSystems, one of The Spire's three major augmentation conglomerates. He was the man who signed off on clinical trial parameters, who sat across from regulators and explained why the variance in adverse outcome data was within acceptable bounds, who used the language of ethics as a procedural instrument. He was not unintelligent about what he was doing. He did it anyway. The specific incident that ended his career is documented in sealed corporate arbitration records: a neural augmentation trial in the lower districts in which forty-three participants experienced cascading cognitive degradation, eighteen of whom died. Rector had flagged the risk internally fourteen months prior. The flag was overruled. He signed the continuation anyway.\n\nHe was not prosecuted. He was quietly exited, his Spire access revoked, his identity scrubbed from Vantara's public materials. He went to The Shelf because he didn't know where else to go, and he stayed because someone needed stitches and he was the only one there with the knowledge. That was eleven years ago. He has since become the closest thing The Shelf has to a neighborhood doctor, working from a converted storage unit he calls the Surgery, accepting payment in food, labor, or nothing. He does not talk about his past. Everyone in The Shelf knows anyway.",
+  "location": "the Gray Zone, near Halsted and Chicago Ave",
+  "description": "Lyric Bhattacharya is a large man gone soft at the edges, with the posture of someone who once commanded rooms and has since chosen not to. His skin is the pale ochre of long indoor living, his hands enormous and steady, his white hair kept short and his beard grown out in the way of a man who has stopped performing for an audience that no longer exists. He wears the same rotation of practical clothes—heavy canvas, worn but clean—and carries a battered medical kit that is more capable than it looks because he has modified it himself over eleven years of field use in the Gray Zone.\n\nRector spent twenty-two years as Director of Bioethical Compliance at Vantara BioSystems, one of The Spire's three major augmentation conglomerates. He was the man who signed off on clinical trial parameters, who sat across from regulators and explained why the variance in adverse outcome data was within acceptable bounds, who used the language of ethics as a procedural instrument. He was not unintelligent about what he was doing. He did it anyway. The specific incident that ended his career is documented in sealed corporate arbitration records: a neural augmentation trial in the lower districts in which forty-three participants experienced cascading cognitive degradation, eighteen of whom died. Rector had flagged the risk internally fourteen months prior. The flag was overruled. He signed the continuation anyway.\n\nHe was not prosecuted. He was quietly exited, his Spire access revoked, his identity scrubbed from Vantara's public materials. He went to the Gray Zone because he didn't know where else to go, and he stayed because someone needed stitches and he was the only one there with the knowledge. That was eleven years ago. He has since become the closest thing the Gray Zone has to a neighborhood doctor, working from a converted storage unit he calls the Surgery, accepting payment in food, labor, or nothing. He does not talk about his past. Everyone in the Gray Zone knows anyway.",
   "psychology": {
     "facet_weights": {
       "wound": 0.95,
@@ -38,9 +38,9 @@
     "blind_spots": [
       "His guilt sometimes makes him over-treat, taking on cases beyond his current resources because he cannot bear to decline",
       "Assumes people who offer him help have ulterior motives because he spent decades in a world where they always did",
-      "Does not recognize that his presence in The Shelf has become its own form of influence"
+      "Does not recognize that his presence in the Gray Zone has become its own form of influence"
     ],
-    "secret": "He still has access to his old Vantara internal credentials—a backdoor the company doesn't know survived his exit. He has used it once in eleven years, to pull trial data for a Shelf resident who was experiencing delayed-onset cognitive degradation from a Vantara product. He told himself it was the last time. He keeps the access because he knows it won't be."
+    "secret": "He still has access to his old Vantara internal credentials—a backdoor the company doesn't know survived his exit. He has used it once in eleven years, to pull trial data for a the Gray Zone resident who was experiencing delayed-onset cognitive degradation from a Vantara product. He told himself it was the last time. He keeps the access because he knows it won't be."
   },
   "speech_patterns": {
     "vocabulary": "Medical precision mixed with deliberate plainness—he has consciously stripped corporate euphemism from his speech as an ongoing practice, and catches himself when it slips back in",
@@ -75,20 +75,20 @@
     {
       "name": "Vantara BioSystems (institution)",
       "type": "Former employer / Ongoing haunting",
-      "description": "Vantara has begun a new round of augmentation trials. Rector has seen the early data in street-level adverse reactions before any official documentation exists. He is the only person in The Shelf who knows what the pattern means.",
+      "description": "Vantara has begun a new round of augmentation trials. Rector has seen the early data in street-level adverse reactions before any official documentation exists. He is the only person in the Gray Zone who knows what the pattern means.",
       "emotional_core": "The specific horror of recognition—of watching yourself repeat",
       "story_tension": "He has information that could stop a second disaster. Using it requires revealing how he got it."
     }
   ],
   "story_hooks": [
     "The Vantara trial data in his head matches the profile of the original forty-three almost exactly—someone inside is running the same experiment again, and Rector may be the only person who can prove it before the threshold is crossed",
-    "A young Shelf resident presents with cognitive symptoms Rector recognizes from his sealed trial files—and the resident has no history of Vantara augmentation, which means the vector is something new",
+    "A young the Gray Zone resident presents with cognitive symptoms Rector recognizes from his sealed trial files—and the resident has no history of Vantara augmentation, which means the vector is something new",
     "Someone from the original forty-three trial cases finds their way to the Surgery—not for treatment, but because they've been looking for Rector for eleven years",
     "He is offered a legitimate medical resource—supplies, equipment, funding—by a Spire-adjacent organization, and has to determine whether the offer is genuine charity or an attempt to bring him back into institutional orbit"
   ],
   "narrative_function": "Rector functions as the story's moral weight anchor—a character who has done genuine institutional harm and is living inside the long, non-redemptive work of trying to be useful anyway. He resists the redemption arc structure by refusing to let himself be redeemed, which makes him a vehicle for exploring what accountability looks like when there is no absolution available.",
   "augmentations": "Haptic-feedback surgical assist implants in both hands—installed during his Vantara years for precision work, now the only augmentations he retains and maintains with deep ambivalence,A Vantara-branded neural medical reference implant he has repeatedly tried to have removed; two surgeons in The Circuit told him the extraction risk outweighs the benefit at his age",
-  "daily_life": "Wakes early, opens the Surgery by 07:00. Sees patients through the morning on a first-come basis. Midday he does supply runs through The Shelf's informal trade networks, bartering services for materials. Afternoons are for follow-up visits to patients who cannot come to him. Evenings he updates his physical patient records—no digital storage, a deliberate choice—and reads medical literature he accesses through a Circuit library terminal once weekly. Sleeps in a cot in the back of the Surgery. Has not left The Shelf in four years.",
+  "daily_life": "Wakes early, opens the Surgery by 07:00. Sees patients through the morning on a first-come basis. Midday he does supply runs through the Gray Zone's informal trade networks, bartering services for materials. Afternoons are for follow-up visits to patients who cannot come to him. Evenings he updates his physical patient records—no digital storage, a deliberate choice—and reads medical literature he accesses through a Circuit library terminal once weekly. Sleeps in a cot in the back of the Surgery. Has not left the Gray Zone in four years.",
   "affiliation": "Unaffiliated (formerly Vantara BioSystems, Spire-tier; affiliation terminated)",
   "uses_facets": false,
   "narration_voice": "",
@@ -187,11 +187,11 @@
     "contradictions": [
       "Current work may be self-absolution rather than genuine repair — and he cannot fully determine which",
       "Keeps the Vantara credentials because he knows the promise of 'last time' is a lie",
-      "His presence in the Shelf has become its own form of influence — the thing he fled"
+      "His presence in the Gray Zone has become its own form of influence — the thing he fled"
     ],
     "habits": [
       "Opens the Surgery by 07:00 every day",
-      "Does supply runs through the Shelf's trade networks midday",
+      "Does supply runs through the Gray Zone's trade networks midday",
       "Makes afternoon follow-up visits to patients who cannot come to him",
       "Updates physical patient records every evening — no digital storage",
       "Reads medical literature from a Circuit library terminal once weekly"
@@ -225,7 +225,7 @@
     "Pragmatist": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -240,7 +240,6 @@
   "related_entities": [
     "The Threshold",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "The Shelf",
     "The Spire",
     "Threshold",
     "Big Rig",
@@ -251,7 +250,7 @@
     "Déjà Vu",
     "The Pale Mile"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Mixed ancestry reflecting the Ubiquitous Diaspora: predominantly South Asian (61.5%) with substantial Central Asian heritage (30.7%), smaller contributions from Sub-Saharan African (4.5%) and East Asian (3.3%) lineages. This combination creates warm, deep undertones with complexity—the rich brown of South Asian genetics enriched by Central Asian warmth, with subtle warmth from African ancestry and slight narrowing of the eye shape from East Asian contribution. Facial structure is distinctly blended: high, prominent cheekbones from Central Asian heritage balanced by fuller lips and broader nasal bridge from South Asian genetics, with slightly wider-set eyes reflecting the East Asian element, creating a face that carries the geography of multiple continents.",
     "height_cm": 188,

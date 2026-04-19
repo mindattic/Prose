@@ -1,5 +1,6 @@
 {
   "id": "019d6143a5f070899aa7d50e0f703f3b",
+  "rating": 80,
   "type": "character",
   "name": "Orion Dalgaard-Okada",
   "aliases": [],
@@ -9,7 +10,7 @@
   "role": "Lower Dock Crew muscle — Prologue survivor. Right arm removed.",
   "age": 27,
   "status": "active",
-  "location": "The Shelf — lower loading docks, near Halsted and Chicago Ave",
+  "location": "the Gray Zone — lower loading docks, near Halsted and Chicago Ave",
   "description": "Orion Dalgaard-Okada is the crew's pretty boy and he knows it. Before the Prologue he had matching Arcturus Defense Solutions Type-4 combat prosthetics — the nicest hardware anyone in the lower docks had ever seen. He stole them from a corporate shipment. Kyle removed the right one by driving the katana through the shoulder actuator and twisting. Devante now has a Tier 1 replacement that is three shades lighter than his skin and makes a grinding noise. He paints it to match. It keeps chipping.\n\nDevante grew up in the Spire. His family had money — his mother was a Tessera marketing executive, his father a corporate attorney. Devante was supposed to be Tier 4. He was expelled from Meridian Academy at sixteen for stealing augment components from the school's biotech lab. His family cut him off. He fell five tiers in two years. He joined Marcus's crew because it was the only place where his stolen hardware made him somebody.\n\nHe has a younger brother, Kofi, who is still in the Spire, still in the family, still on track. They don't speak. Devante watches Kofi's social feeds obsessively. Kofi just got engaged to a Helix BioSystems junior executive. Devante was not invited.",
   "psychology": {
     "facet_weights": {
@@ -42,7 +43,7 @@
     "secret": "The Arcturus arm Kyle took has a serial number that traces back to a corporate shipment reported stolen. If Arcturus tracks it, the trail leads to Devante."
   },
   "speech_patterns": {
-    "vocabulary": "Spire diction that he tries to bury under Shelf slang. Brand names. Appearance commentary. The vocabulary of someone who was raised with money and is performing poverty.",
+    "vocabulary": "Spire diction that he tries to bury under the Gray Zone slang. Brand names. Appearance commentary. The vocabulary of someone who was raised with money and is performing poverty.",
     "cadence": "Whiny when the arm comes up, which is always. Polished when he forgets to pretend.",
     "verbal_tics": [
       "Touches the painted arm self-consciously",
@@ -52,7 +53,11 @@
     "example_lines": [
       "This replacement is three shades too light. THREE. I had matched Arcturus Type-4s. Do you know what those cost?",
       "Kofi's getting married. I saw it on his feed. Nice girl. Helix money. Good for him. *long pause* ...Whatever."
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [
     {
@@ -171,7 +176,7 @@
     "stress_responses": {
       "low": "Repaints the arm, complains about chrome quality, name-drops brands",
       "medium": "Long sleeves come out, stops letting people see the mismatch, humor turns bitter",
-      "high": "Spire accent breaks through completely, stops performing Shelf identity",
+      "high": "Spire accent breaks through completely, stops performing the Gray Zone identity",
       "critical": "Stares at Kofi's feed in silence — the mask drops and there is just a kid who lost everything"
     },
     "contradictions": [
@@ -189,7 +194,7 @@
     "breaking_points": [
       "Kofi reaching out or appearing in person",
       "The stolen Arcturus serial number being traced back to him",
-      "Someone from the Spire recognizing him in the Shelf",
+      "Someone from the Spire recognizing him in the Gray Zone",
       "The replacement arm failing completely in a fight — losing both arms to Kyle's legacy"
     ]
   },
@@ -216,7 +221,7 @@
     "Tactician": 0.7
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -224,27 +229,11 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
-    "Meridian Munitions Dispatch-45 'Last Word'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [
-    "Crucible Industries Field Marksman Rifle FMR-8 'Sentinel'",
-    "Meridian Munitions Dispatch-45 'Last Word'"
-  ],
-  "related_entities": [
-    "Arcturus Defense Solutions",
-    "Helix Biosystems",
-    "The Open Syllabus",
-    "The Iron Lotus",
-    "The Spire",
-    "The Shelf",
-    "Tessera Corponation",
-    "Chicago",
-    "Arcturus KS-7 'Nursery'",
-    "Marcus Okafor-7"
-  ],
-  "district": "The Shelf",
   "physical_description": {
     "heritage": "Predominantly East Asian (61.5%) with significant Sub-Saharan African (22.1%) and South Asian (16.4%) ancestry. A striking genetic blend showcasing East Asian bone structure layered with African facial features and South Asian warmth undertones. High cheekbones and almond-shaped eyes from East Asian heritage combine with a broader nasal structure and fuller lips from Sub-Saharan African ancestry, balanced by a defined jawline reflecting South Asian genetic influence.",
     "height_cm": 182,
@@ -266,17 +255,12 @@
     "clothing_style": "Hodgepodge Tier 4-5 salvage: faded neon-stripe tank top or loose synthetic shirt worn open over a thermal undershirt, industrial cargo pants with multiple pockets (most empty), worn-out neo-leather boots. A hand-stitched Arcturus Defense patch sewn onto his jacket sleeve — a bitter joke. Sometimes wears a long coat to hide the mismatched arms. Cheap jewelry: a chain necklace, a ring with a cracked stone. Everything clean but worn."
   },
   "image_prompt": "Orion Dalgaard-Okada, GLMZ, mixed-heritage male with East Asian-dominant features (61.5% East Asian, 22.1% Sub-Saharan African, 16.4% South Asian). Warm golden-brown skin, high cheekbones, almond-shaped deep brown eyes, fuller lips, defined jawline. Athletic lean build, 182cm tall. Short dark brown hair. Left arm: sleek matte-black Arcturus Type-4 combat prosthetic with blue LED tracery and articulation joints. Right arm: worn gray-plastic Tier 1 surplus prosthetic, chipped and cracked. Shoulder scar visible. Wearing faded neon-stripe tank top over thermal undershirt, industrial cargo pants, worn neo-leather boots. Chain necklace, cracked-stone ring. Dark circles under eyes, tightness around mouth showing strain. Leaning against industrial wall, favoring left side. Expression weary but composed. Moody neo-noir dock setting, neon glow and shadow contrast, gritty atmospheric lighting --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "East Asian": 61.5,
     "Sub-Saharan African": 22.1,
     "South Asian": 16.4
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "East Asian": {
       "Korean": {
@@ -307,6 +291,5 @@
         "Bangladeshi": 9.4
       }
     }
-  },
-  "tier": "1"
+  }
 }

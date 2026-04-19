@@ -15,7 +15,7 @@ namespace StreetSamurai.Core.Models.Canon;
 /// overlap means they might act like one. Tags connect archetypes to themes,
 /// locations, factions, and situations.
 /// </summary>
-public class ArchetypeData : ICanonEntity
+public class ArchetypeData : IWorldRecord
 {
     [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("name")] public string Name { get; set; } = "";
@@ -31,8 +31,6 @@ public class ArchetypeData : ICanonEntity
     [JsonPropertyName("similar_to")] public List<ArchetypeSimilarity> SimilarTo { get; set; } = [];
     [JsonPropertyName("opposite_of")] public List<string> OppositeOf { get; set; } = [];
     [JsonPropertyName("tags")] public List<string> Tags { get; set; } = [];
-    [JsonPropertyName("image_prompt")] public string MidjourneyPrompt { get; set; } = "";
-    [JsonPropertyName("dalle3_prompt")] public string Dalle3Prompt { get; set; } = "";
 }
 
 /// <summary>

@@ -5,8 +5,8 @@
   "aliases": [],
   "category": "augment_interactive",
   "subcategory": "rejection_cycle_breaker",
-  "manufacturer": "Street lab (Shelf synthesis, origin unknown)",
-  "description": "A crude but effective Shelf-synthesized SNT-bonding compound, Interfacin works differently from clinical rejection treatments — rather than suppressing the immune response, it chemically accelerates the organic-synthetic bonding process at chrome interfaces, forcing the body to accept augments before rejection can fully establish. The process is painful, imprecise, and leaves scar tissue at interface junctions. It is also available for approximately one-tenth the cost of legitimate treatment, which is why it exists.",
+  "manufacturer": "Street lab (the Gray Zone synthesis, origin unknown)",
+  "description": "A crude but effective the Gray Zone-synthesized SNT-bonding compound, Interfacin works differently from clinical rejection treatments — rather than suppressing the immune response, it chemically accelerates the organic-synthetic bonding process at chrome interfaces, forcing the body to accept augments before rejection can fully establish. The process is painful, imprecise, and leaves scar tissue at interface junctions. It is also available for approximately one-tenth the cost of legitimate treatment, which is why it exists.",
   "method_of_use": "injection",
   "effects": [
     "Forces rapid organic acceptance of chrome interfaces over 4-8 hours",
@@ -28,11 +28,11 @@
   "tier_availability": "Tier 1 only",
   "legality": "illegal",
   "street_price": "Φ60-90",
-  "cultural_context": "Interfacin is what you use when you're rejecting and you can't afford Rejekovir. It's not a good option — the scar tissue it leaves behind quietly degrades augment performance over years, and the pain of treatment is legendary. But it keeps people alive. On the Shelf, being able to source Interfacin quickly is a matter of survival, and the chemists who produce it occupy an ambivalent social role: they're saving lives with a product that damages the people it saves. Most Shelf medics carry it despite its illegal status.",
+  "cultural_context": "Interfacin is what you use when you're rejecting and you can't afford Rejekovir. It's not a good option — the scar tissue it leaves behind quietly degrades augment performance over years, and the pain of treatment is legendary. But it keeps people alive. On the Gray Zone, being able to source Interfacin quickly is a matter of survival, and the chemists who produce it occupy an ambivalent social role: they're saving lives with a product that damages the people it saves. Most the Gray Zone medics carry it despite its illegal status.",
   "story_hooks": [
-    "The primary Interfacin chemist in a Shelf district has disappeared — and rejection cases are backing up with nowhere to go. Finding the chemist, or their formula, is suddenly a community emergency.",
-    "Someone is systematically contaminating Interfacin supply in a specific Shelf sector — the batches look right but fail at the critical bonding stage. People are dying, and it's not random: someone wants chrome users in this district dead or disabled.",
-    "A Tier 3 augment surgeon, operating illegally on the Shelf, has been quietly improving the Interfacin formula — their version works without the scarring. Lazarus Pharmaceuticals has noticed the reduction in Rejekovir sales in the area and sent someone to investigate"
+    "The primary Interfacin chemist in a the Gray Zone district has disappeared — and rejection cases are backing up with nowhere to go. Finding the chemist, or their formula, is suddenly a community emergency.",
+    "Someone is systematically contaminating Interfacin supply in a specific the Gray Zone sector — the batches look right but fail at the critical bonding stage. People are dying, and it's not random: someone wants chrome users in this district dead or disabled.",
+    "A Tier 3 augment surgeon, operating illegally in the Gray Zone, has been quietly improving the Interfacin formula — their version works without the scarring. Lazarus Pharmaceuticals has noticed the reduction in Rejekovir sales in the area and sent someone to investigate"
   ],
   "tags": []
 }

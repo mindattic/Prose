@@ -3,7 +3,7 @@
   "name": "Ashpile Stitch-Thermal Underlayer",
   "type": "apparel",
   "category": "base_layer",
-  "description": "Hand-stitched from salvaged insulation batting, reclaimed synth-fleece strips, and scavenged thermal foil remnants, this underlayer is a patchwork of mismatched gray, rust, and industrial yellow. Every seam is doubled by hand with waxed thread — some sections re-stitched three or four times over. The surface is uneven, lumpy in places, but it holds heat against Shelf cold and acid-rain damp with stubborn efficiency. Worn edges are bound with whatever ribbon or cord was available.",
+  "description": "Hand-stitched from salvaged insulation batting, reclaimed synth-fleece strips, and scavenged thermal foil remnants, this underlayer is a patchwork of mismatched gray, rust, and industrial yellow. Every seam is doubled by hand with waxed thread — some sections re-stitched three or four times over. The surface is uneven, lumpy in places, but it holds heat against the Gray Zone cold and acid-rain damp with stubborn efficiency. Worn edges are bound with whatever ribbon or cord was available.",
   "tier_association": "Tier 1",
   "materials": [
     "reclaimed synth-fleece",
@@ -12,10 +12,10 @@
     "waxed hand-stitch thread",
     "mismatched binding cord"
   ],
-  "functionality": "Passive thermal retention against sub-zero Shelf temperatures and acid-rain moisture; no smart features, no power draw — just layered insulation that works when the grid doesn't.",
+  "functionality": "Passive thermal retention against sub-zero the Gray Zone temperatures and acid-rain moisture; no smart features, no power draw — just layered insulation that works when the grid doesn't.",
   "what_it_says": "You make do with what the city throws away, and you've gotten very good at it.",
   "worn_by": [
-    "Shelf residents",
+    "the Gray Zone residents",
     "scavengers",
     "unhoused workers",
     "kids who inherited their parents' patch jobs"
@@ -27,13 +27,12 @@
   "story_hooks": [
     "A distinctive patch of orange industrial foil matches a scrap found at a sealed-off collapse site — someone was there when the building came down.",
     "The inner lining contains a hand-sewn pocket with a folded paper note in a language the wearer can't read.",
-    "A Shelf kid trades one of these to a Tier 3 journalist who's going undercover — it's the most honest thing they've ever worn."
+    "A the Gray Zone kid trades one of these to a Tier 3 journalist who's going undercover — it's the most honest thing they've ever worn."
   ],
   "tags": [
     "apparel",
     "base_layer",
     "thermal",
-    "shelf",
     "hand-made",
     "survival",
     "low-tech",
@@ -62,9 +61,9 @@
       "Frayed edges and distressed wear suggesting extended use in harsh conditions"
     ],
     "tier_indicator": "Tier 5 — Sub-grade salvage wear. No manufacturing overhead, no brand recognition, purely self-crafted survival gear.",
-    "cultural_context": "Marks the wearer as Shelf-dweller or ungoverned zone resident. The aesthetic communicates acceptance of hardship and self-sufficiency through hand-labor. Wearing this signals either poverty or deliberate rejection of corpo supply chains. Associated with acid-rain communities, cold-storage zones, and off-grid survival networks.",
+    "cultural_context": "Marks the wearer as the Gray Zone-dweller or ungoverned zone resident. The aesthetic communicates acceptance of hardship and self-sufficiency through hand-labor. Wearing this signals either poverty or deliberate rejection of corpo supply chains. Associated with acid-rain communities, cold-storage zones, and off-grid survival networks.",
     "condition_typical": "Perpetually worn-in and patched. Shows signs of repeated thermal stress and acid-rain exposure. Some seams are visibly re-worked. Thermal foil is peeling or absent in high-friction areas. The garment is never pristine — it's a living, evolving piece of repair work."
   },
-  "image_prompt": "A weathered figure wearing a visibly hand-stitched thermal underlayer in mismatched gray, rust, and industrial yellow patches. The garment is lumpy with salvaged insulation, covered in double and triple hand-stitched seams with waxed thread. Close-up detail of frayed binding and re-stitched sections. Dark urban backdrop with acid-rain ambiance, moody cyan and amber neon casting harsh shadows. The model's posture is functional, utilitarian. Shot on dark, worn mannequin or real figure in dimly-lit Shelf district setting. Textured, gritty aesthetic highlighting poverty and resilience. --ar 2:3 --v 6",
-  "visual_prompt": "A weathered figure wearing a visibly hand-stitched thermal underlayer in mismatched gray, rust, and industrial yellow patches. The garment is lumpy with salvaged insulation, covered in double and triple hand-stitched seams with waxed thread. Close-up detail of frayed binding and re-stitched sections. Dark urban backdrop with acid-rain ambiance, moody cyan and amber neon casting harsh shadows. The model's posture is functional, utilitarian. Shot on dark, worn mannequin or real figure in dimly-lit Shelf district setting. Textured, gritty aesthetic highlighting poverty and resilience. --ar 2:3 --v 6"
+  "image_prompt": "A weathered figure wearing a visibly hand-stitched thermal underlayer in mismatched gray, rust, and industrial yellow patches. The garment is lumpy with salvaged insulation, covered in double and triple hand-stitched seams with waxed thread. Close-up detail of frayed binding and re-stitched sections. Dark urban backdrop with acid-rain ambiance, moody cyan and amber neon casting harsh shadows. The model's posture is functional, utilitarian. Shot on dark, worn mannequin or real figure in dimly-lit the Gray Zone district setting. Textured, gritty aesthetic highlighting poverty and resilience. --ar 2:3 --v 6",
+  "visual_prompt": "A weathered figure wearing a visibly hand-stitched thermal underlayer in mismatched gray, rust, and industrial yellow patches. The garment is lumpy with salvaged insulation, covered in double and triple hand-stitched seams with waxed thread. Close-up detail of frayed binding and re-stitched sections. Dark urban backdrop with acid-rain ambiance, moody cyan and amber neon casting harsh shadows. The model's posture is functional, utilitarian. Shot on dark, worn mannequin or real figure in dimly-lit the Gray Zone district setting. Textured, gritty aesthetic highlighting poverty and resilience. --ar 2:3 --v 6"
 }

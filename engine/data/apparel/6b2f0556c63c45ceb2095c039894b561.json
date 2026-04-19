@@ -4,21 +4,20 @@
   "category": "formal_wear",
   "subcategory": "single_jacket",
   "manufacturer": "Ashvale Basics / gray market resale",
-  "description": "A single-button jacket in dark navy synth-polyester blend, originally manufactured as part of a Tier 2 office uniform line and now circulating through resale markets in significant volume. The construction is utilitarian — fused interfacing rather than stitched, a single internal pocket, and shoulder seams that sit slightly wide on most frames. The lining is a slick beige acetate that catches static. Despite its origins, the jacket reads as intentionally formal from a distance, which is the point.\n\nAt Φ22, this is the most common 'occasion jacket' on the Shelf and lower Tier 2. It appears at everything from corponation subsidiary job fairs to Ouroboros insurance dispute mediations to community hall weddings. Augment-incompatible by design, though many owners have cut their own port-access slits into the back panel and hemmed the edges with iron-on tape.",
+  "description": "A single-button jacket in dark navy synth-polyester blend, originally manufactured as part of a Tier 2 office uniform line and now circulating through resale markets in significant volume. The construction is utilitarian — fused interfacing rather than stitched, a single internal pocket, and shoulder seams that sit slightly wide on most frames. The lining is a slick beige acetate that catches static. Despite its origins, the jacket reads as intentionally formal from a distance, which is the point.\n\nAt Φ22, this is the most common 'occasion jacket' in the Gray Zone and lower Tier 2. It appears at everything from corponation subsidiary job fairs to Ouroboros insurance dispute mediations to community hall weddings. Augment-incompatible by design, though many owners have cut their own port-access slits into the back panel and hemmed the edges with iron-on tape.",
   "tier_availability": "Tier 1-2",
   "price": "Φ22",
   "augment_compatible": false,
   "geneware_compatible": false,
   "durability": "low",
   "legal_status": "legal",
-  "cultural_context": "Recognized by anyone who grew up on the Shelf as 'the hearing jacket' or 'the interview jacket' — there's only a few styles that circulate at this price point and everyone knows them. Wearing one signals you're doing your best with what you have. Some Tier 3 people feel vague discomfort when they see it; they wore the same jacket once.",
+  "cultural_context": "Recognized by anyone who grew up in the Gray Zone as 'the hearing jacket' or 'the interview jacket' — there's only a few styles that circulate at this price point and everyone knows them. Wearing one signals you're doing your best with what you have. Some Tier 3 people feel vague discomfort when they see it; they wore the same jacket once.",
   "story_hooks": [
     "A synthetic being attending their personhood classification hearing has been advised by their advocate to wear something that reads as 'human formal' — this jacket is what they could afford.",
     "Two strangers at a Tier 2 job fair recognize each other's identical jackets and share a moment of wordless solidarity before the recruiter calls the first name.",
     "A Tier 4 corponation HR rep pulls a candidate's jacket subtly to check the label during a handshake — and what she does with that information defines her character."
   ],
   "tags": [
-    "shelf",
     "Tier 1",
     "Tier 2",
     "jacket",
@@ -37,8 +36,7 @@
     "Ouroboros Energy",
     "Patient Zero",
     "Pyroelectric Sebum Volatilization Projector",
-    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
-    "The Shelf"
+    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'"
   ],
   "physical_description": {
     "visual_profile": "A crisp, austere single-button blazer that reads formal despite its mass-produced origins. Dark navy creates authority; the silhouette is slightly boxy and institutional. From a distance it passes for office wear. Up close, the construction shortcuts become apparent—fused rather than sculpted, with a utilitarian precision that feels bureaucratic rather than tailored.",
@@ -56,7 +54,7 @@
       "Buttonhole tension often causes slight puckering over time"
     ],
     "tier_indicator": "Tier 1-2 accessible; functionally Tier 3. The gray-market resale network keeps it in constant circulation—Φ22 places it in the 'affordable formal' category where aspiration meets budget reality.",
-    "cultural_context": "Called 'the hearing jacket' or 'the interview jacket' on the Shelf—shorthand for 'doing your best with what you have.' Ubiquitous at job fairs, mediation hearings, community events, and family occasions where formality is required but budget is tight. Tier 1 corpo wearers regard it with polite distance. Tier 3 workers recognize themselves in it.",
+    "cultural_context": "Called 'the hearing jacket' or 'the interview jacket' in the Gray Zone—shorthand for 'doing your best with what you have.' Ubiquitous at job fairs, mediation hearings, community events, and family occasions where formality is required but budget is tight. Tier 1 corpo wearers regard it with polite distance. Tier 3 workers recognize themselves in it.",
     "condition_typical": "New examples are pristine but cheap-feeling. Worn examples show softened sheen at collar, cuffs, and button area from handling. Static cling leaves acetate lining slightly creased. Many feature obvious back-panel alterations for augment compatibility, reducing perceived value further."
   },
   "image_prompt": "Ashvale navy synth-polyester blazer on a mixed-heritage neo-noir model, posed in harsh fluorescent overhead lighting against a gray concrete wall. Single button fastened. Slight shimmer of the cheap acetate lining visible at cuff and collar. One worn example shows crude iron-on tape hemming at a visible port-access slit in the back panel. Moody GLMZ bureaucratic aesthetic—corporate mediocrity rendered as formal wear. Dark background, cool color grading. --ar 2:3 --v 6",

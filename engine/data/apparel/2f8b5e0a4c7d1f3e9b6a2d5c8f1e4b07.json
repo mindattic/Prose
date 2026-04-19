@@ -19,7 +19,7 @@
     "GridPatch infrastructure workers",
     "Tier 2-3 power plant technicians",
     "independent electricians",
-    "Shelf salvagers working live infrastructure"
+    "the Gray Zone salvagers working live infrastructure"
   ],
   "manufacturer": "Veldtmann (corponation)",
   "price_range": "Φ65–Φ120 per pair",
@@ -27,7 +27,7 @@
   "gene_compatible": false,
   "story_hooks": [
     "A pair is recovered near a sabotaged MagRail relay — the voltage rating badge has been scraped off, suggesting someone wanted the gloves untraceable.",
-    "Counterfeit Veldtmann ArcShields have been circulating on the Shelf; they look identical but fail at 8kV — workers have died wearing them.",
+    "Counterfeit Veldtmann ArcShields have been circulating in the Gray Zone; they look identical but fail at 8kV — workers have died wearing them.",
     "A Tier 3 electrical inspector keeps a pair in their desk drawer despite working a desk job — they haven't explained why to anyone."
   ],
   "tags": [
@@ -48,8 +48,7 @@
     "Fanta Kato-Adomako",
     "NeuralPath VaultPay Subdermal Transaction Node",
     "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Ringo Heavy Transit MagRail Levitation Transport Network",
-    "The Shelf"
+    "Ringo Heavy Transit MagRail Levitation Transport Network"
   ],
   "physical_description": {
     "visual_profile": "Heavy-duty work gloves with a utilitarian aesthetic—mid-forearm length, structured hand shape, industrial presence. Matte gunmetal exterior reads as serious protective gear, the orange stitching providing high-visibility accent lines that catch light along knuckle articulation points.",

@@ -9,8 +9,8 @@
   "role": "Junk merchant and scrap reseller with a sideline in bootleg media and low-grade fake ID components",
   "age": 24,
   "status": "active",
-  "location": "The Shelf, Stall 14-B, Ironvein, near Ashland and Division",
-  "description": "Nyx Migizi-Soriano is short and wiry with the restless energy of someone who has never fully slept — his dark eyes are always moving, cataloguing, pricing. He has a narrow face, chipped front tooth, and a bioluminescent geneware mod that makes the veins along his temples and forearms glow faint blue-green when his heart rate rises, which is frequently. He wears it like a tell in a card game and has learned to lean into it: people assume he is nervous when he is actually just excited, and that miscalculation has served him well. His stall is an organized chaos that only he can navigate — stacked crates of salvaged tech components, mismatched cables, cracked data wafers, three broken cleaning drones he keeps meaning to repair, and a small shrine to the ELF he calls Pickup, which inhabits a battered scanner unit he uses for component identification.\n\nHe is twenty-four and operates with the confidence of someone who has survived entirely on cleverness and the ability to find value in things others discard. He is funny in a fast, deflecting way that keeps people from asking questions, and generous with his time in ways that make him seem like a friend before you realize you have agreed to something. He grew up in the Stockyard, knows The Shelf like cartography, and has ambitions he rarely admits — he wants, genuinely, to own a real shop someday, with walls.",
+  "location": "the Gray Zone, Stall 14-B, Ironvein, near Ashland and Division",
+  "description": "Nyx Migizi-Soriano is short and wiry with the restless energy of someone who has never fully slept — his dark eyes are always moving, cataloguing, pricing. He has a narrow face, chipped front tooth, and a bioluminescent geneware mod that makes the veins along his temples and forearms glow faint blue-green when his heart rate rises, which is frequently. He wears it like a tell in a card game and has learned to lean into it: people assume he is nervous when he is actually just excited, and that miscalculation has served him well. His stall is an organized chaos that only he can navigate — stacked crates of salvaged tech components, mismatched cables, cracked data wafers, three broken cleaning drones he keeps meaning to repair, and a small shrine to the ELF he calls Pickup, which inhabits a battered scanner unit he uses for component identification.\n\nHe is twenty-four and operates with the confidence of someone who has survived entirely on cleverness and the ability to find value in things others discard. He is funny in a fast, deflecting way that keeps people from asking questions, and generous with his time in ways that make him seem like a friend before you realize you have agreed to something. He grew up in the Stockyard, knows the Gray Zone like cartography, and has ambitions he rarely admits — he wants, genuinely, to own a real shop someday, with walls.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -160,7 +160,7 @@
     "Hustler": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -194,7 +194,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Secured stall 14-B at The Shelf through Guild junior associate arrangement",
+      "event": "Secured stall 14-B at the Gray Zone through Guild junior associate arrangement",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -216,11 +216,10 @@
   "related_entities": [
     "The Stockyard",
     "Axiom Systems Data Exfiltration Wafer DEW-1",
-    "The Shelf",
     "Ironvein",
     "Nightlight"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Multiethnic blend reflecting Ubiquitous Diaspora ancestry: Hispanic/Latin American (25.4%), South Asian (25.2%), Indigenous American (14.6%), Sub-Saharan African (14.0%), Southeast Asian (10.9%), and Eastern European (9.9%). This genetic mosaic produces striking phenotypic complexity — facial structure anchored by Indigenous American prominence with South Asian refinement, skin tone a sophisticated interplay of warm golden undertones from Hispanic heritage layered with deeper earthy richness from Sub-Saharan and South Asian ancestry, eye shape and form reflecting Southeast Asian influence, cheekbones and jawline carved with cross-cultural precision. Overall features resist simple categorization, marking him as distinctly post-national.",
     "height_cm": 168,

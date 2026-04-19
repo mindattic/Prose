@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa2a7ece916d0e4fd591e9b5",
+  "rating": 60,
   "name": "Timekeeper",
   "type": "elf",
   "aliases": [],
@@ -15,7 +16,7 @@
   "location": "Widespread",
   "dti_rating": 0,
   "story_hooks": [
-    "Someone discovers that 4.7 seconds is the exact processing delay of a specific Tessera AI model from 2183 — Timekeeper is counting at the speed of something that died"
+    "Someone discovers that 4.7 seconds is the exact processing delay of a specific Tessera AI model from 2183 \u2014 Timekeeper is counting at the speed of something that died"
   ],
   "paratechnological": true,
   "tags": [
@@ -28,8 +29,6 @@
     "ai",
     "sentient"
   ],
-  "related_entities": [
-    "Brecken Yılmaz-Osei",
-    "Tessera Corponation"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

@@ -10,7 +10,7 @@
   "age": 61,
   "status": "active",
   "location": "Ashfield — former residential district, half-burned, now squatter territory, near Halsted and Division",
-  "description": "Soledad Bautista is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 61, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and she makes no effort to hide it.\n\nShe came up through the Shelf's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a saboteur out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nSoledad Bautista is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "description": "Soledad Bautista is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 61, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and she makes no effort to hide it.\n\nShe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a saboteur out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nSoledad Bautista is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.71,
@@ -274,7 +274,6 @@
   "registered_firearms": [],
   "related_entities": [
     "The Nearfield",
-    "The Shelf",
     "The Heritage Vault",
     "Diaspora Table",
     "Ashfield",
@@ -282,7 +281,7 @@
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Soledad carries the genetic signature of the Ubiquitous Diaspora: 53.5% Hispanic/Latin American foundation blended with Southeast Asian (13.0%), Northern European (12.4%), South Asian (10.9%), East Asian (7.0%), and Sub-Saharan African (3.2%) ancestry. This creates a distinctly multitonal appearance — angular cheekbones with Southeast and East Asian prominence, broad nose bridge from Hispanic genetics, subtle jawline depth from South Asian heritage, and warm undertonal richness from Sub-Saharan African contribution. Her facial structure reads as neither specifically one heritage nor another, but rather the natural product of generations of global mixing.",
     "height_cm": 183,

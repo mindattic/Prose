@@ -12,7 +12,7 @@
   "observed_behavior": "Monitors air chemistry through environmental sensors. Triggers ventilation changes in response to detected anomalies. Has prevented three gas-related incidents by increasing air exchange before dangerous concentrations built up.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 19,
-  "location": "Environmental monitoring systems — the Grind and Shelf",
+  "location": "Environmental monitoring systems — the Grind and the Gray Zone",
   "dti_rating": 2.2,
   "story_hooks": [
     "Bottlenose detects a chemical signature that matches a substance that hasn't been manufactured in thirty years — coming from a sealed sub-basement."
@@ -24,8 +24,7 @@
     "stray",
     "ai",
     "synthetic",
-    "elf",
-    "shelf"
+    "elf"
   ],
   "related_entities": [
     "Cargo Bicycle",

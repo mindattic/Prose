@@ -57,7 +57,7 @@
   ],
   "connections": {
     "adjacent_to": [
-      "The Shelf",
+      "the Gray Zone",
       "The Circuit",
       "Old Harbor"
     ],
@@ -114,5 +114,7 @@
     "Mariposa Guerrero",
     "Crucible Industries Battle Rifle BR-11 'Tribunal'",
     "Slate Wójcik-Malhotra"
-  ]
+  ],
+  "zone": "Z2",
+  "controllingCorponation": null
 }

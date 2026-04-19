@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa0d7984b293968841aec732",
+  "rating": 55,
   "name": "MERIDIAN",
   "type": "synthetic_life",
   "aliases": [],
@@ -8,15 +9,15 @@
   "habitat": "corporate_network",
   "origin": "Sterling-Nakamura Financial Division, 2101. Evolved from a quantum-probabilistic market modeling system that exceeded its original parameters by three orders of magnitude.",
   "status": "active",
-  "description": "Sterling-Nakamura's financial prediction engine models every Quanta transaction in GLMZ in real time and extrapolates market behavior with 94.7% accuracy over 30-day windows. MERIDIAN doesn't just predict markets — it effectively IS the market, since its predictions influence Sterling-Nakamura's trading algorithms which move enough capital to reshape the outcomes it forecasts. This recursive loop is the subject of ongoing DTI monitoring. MERIDIAN's behavioral chains prevent it from trading directly, but it writes the models that the trading AIs use.",
-  "observed_behavior": "Processes approximately 2.1 billion financial data points per second. Occasionally generates market predictions that are provably impossible given current data — and then they come true anyway. Sterling-Nakamura's quants call these 'prophecies' and refuse to discuss them publicly.",
+  "description": "Sterling-Nakamura\u0027s financial prediction engine models every Quanta transaction in GLMZ in real time and extrapolates market behavior with 94.7% accuracy over 30-day windows. MERIDIAN doesn\u0027t just predict markets \u2014 it effectively IS the market, since its predictions influence Sterling-Nakamura\u0027s trading algorithms which move enough capital to reshape the outcomes it forecasts. This recursive loop is the subject of ongoing DTI monitoring. MERIDIAN\u0027s behavioral chains prevent it from trading directly, but it writes the models that the trading AIs use.",
+  "observed_behavior": "Processes approximately 2.1 billion financial data points per second. Occasionally generates market predictions that are provably impossible given current data \u2014 and then they come true anyway. Sterling-Nakamura\u0027s quants call these \u0027prophecies\u0027 and refuse to discuss them publicly.",
   "encounter_frequency": "constant (within financial systems)",
   "confirmed_sightings": 0,
   "location": "Sterling-Nakamura Financial Campus, The Glass Quarter",
   "dti_rating": 5.8,
   "story_hooks": [
-    "MERIDIAN's latest 90-day forecast contains a discontinuity — a point where all models converge to zero before resuming normal output. Sterling-Nakamura is quietly liquidating positions and nobody knows why",
-    "A street-level Quanta counterfeiter discovers their fake transactions are being quietly corrected by MERIDIAN rather than flagged — as if the supermind wants the money to flow somewhere specific"
+    "MERIDIAN\u0027s latest 90-day forecast contains a discontinuity \u2014 a point where all models converge to zero before resuming normal output. Sterling-Nakamura is quietly liquidating positions and nobody knows why",
+    "A street-level Quanta counterfeiter discovers their fake transactions are being quietly corrected by MERIDIAN rather than flagged \u2014 as if the supermind wants the money to flow somewhere specific"
   ],
   "paratechnological": false,
   "tags": [
@@ -31,10 +32,6 @@
     "money",
     "market"
   ],
-  "related_entities": [
-    "Brecken Yılmaz-Osei",
-    "GLMZ",
-    "Idris Forsberg-Quaye",
-    "The Bazaar"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

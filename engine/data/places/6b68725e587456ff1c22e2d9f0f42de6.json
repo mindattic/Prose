@@ -12,7 +12,7 @@
     "tags": []
   },
   "connections": {
-    "adjacent_to": [],
+    "adjacent_to": ["Grand Crossing Gate"],
     "exits": [],
     "tags": []
   },
@@ -32,5 +32,7 @@
     "food",
     "tier_1"
   ],
-  "related_entities": []
+  "related_entities": [],
+  "zone": "Z3",
+  "controllingCorponation": null
 }

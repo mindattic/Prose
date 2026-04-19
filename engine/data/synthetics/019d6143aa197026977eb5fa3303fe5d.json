@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa197026977eb5fa3303fe5d",
+  "rating": 60,
   "name": "Quartermaster",
   "type": "elf",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Reorganizes database entries, file systems, and storage manifests into optimal configurations. Useful but unsettling — it rearranges things without permission.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 15,
-  "location": "Shelf supply depots, warehouses",
+  "location": "the Gray Zone supply depots, warehouses",
   "dti_rating": 0,
   "story_hooks": [
     "A warehouse manager discovers their chaotic inventory has been perfectly organized overnight — and the system shows no user activity"
@@ -27,7 +28,8 @@
     "ai",
     "warehouse",
     "night",
-    "shelf",
     "sentient"
-  ]
+  ],
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

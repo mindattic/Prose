@@ -6,11 +6,11 @@
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Excluded, former Spire security contractor, current Shelf subsistence worker and informal dispute arbitrator",
+  "role": "Excluded, former Spire security contractor, current the Gray Zone subsistence worker and informal dispute arbitrator",
   "age": 67,
   "status": "active",
-  "location": "The Shelf, Block 14, near Western and Division",
-  "description": "Luciana Ekwensi-Fredriksen is a tall woman gone slightly stooped by a lower back injury she never had properly repaired, with close-cropped white hair, dark brown skin deeply lined around the eyes, and the hands of someone who has done physical labor across five decades. Her face is broad and expressive, capable of a warmth that arrives like weather and a coldness that does the same. She has a Oaxacan-Igbo heritage that she carries in her name and in the particular way she moves through spaces—with the deliberate economy of someone who learned long ago that being large and dark-skinned in certain rooms meant being watched, so she learned to make the watching cost nothing.\n\nShe spent twenty-two years as a security contractor for Spire-adjacent corporate interests, rising to senior threat assessment before an internal review—widely understood in the industry as a political purge following a change in executive leadership—stripped her clearances, voided her pension, and had her classified as a 'liability-tier former employee.' She was fifty-five. She appealed. She lost. She moved to The Shelf because the rent was what she could afford, and because she knew nobody there, which felt like a clean slate and also like dying slowly. Neither turned out to be entirely accurate.\n\nThe Shelf found uses for her. People with disputes come to her—tenancy disagreements, debt questions, situations that haven't yet become violent but are heading there. She arbitrates. She charges in food and favors and occasional hard currency. She has no formal authority and more actual authority than anyone on Block 14. She sleeps badly, eats well because her neighbors feed her, and is quietly furious almost all of the time. She does not perform this fury. She performs patience, which is harder.",
+  "location": "the Gray Zone, Block 14, near Western and Division",
+  "description": "Luciana Ekwensi-Fredriksen is a tall woman gone slightly stooped by a lower back injury she never had properly repaired, with close-cropped white hair, dark brown skin deeply lined around the eyes, and the hands of someone who has done physical labor across five decades. Her face is broad and expressive, capable of a warmth that arrives like weather and a coldness that does the same. She has a Oaxacan-Igbo heritage that she carries in her name and in the particular way she moves through spaces—with the deliberate economy of someone who learned long ago that being large and dark-skinned in certain rooms meant being watched, so she learned to make the watching cost nothing.\n\nShe spent twenty-two years as a security contractor for Spire-adjacent corporate interests, rising to senior threat assessment before an internal review—widely understood in the industry as a political purge following a change in executive leadership—stripped her clearances, voided her pension, and had her classified as a 'liability-tier former employee.' She was fifty-five. She appealed. She lost. She moved to the Gray Zone because the rent was what she could afford, and because she knew nobody there, which felt like a clean slate and also like dying slowly. Neither turned out to be entirely accurate.\n\nthe sprawl found uses for her. People with disputes come to her—tenancy disagreements, debt questions, situations that haven't yet become violent but are heading there. She arbitrates. She charges in food and favors and occasional hard currency. She has no formal authority and more actual authority than anyone on Block 14. She sleeps badly, eats well because her neighbors feed her, and is quietly furious almost all of the time. She does not perform this fury. She performs patience, which is harder.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -29,25 +29,25 @@
     "core_desires": [
       "To be genuinely useful rather than just functional",
       "Her pension—not the money, the principle of the thing",
-      "For The Shelf to still be standing and livable when she's gone",
+      "For the Gray Zone to still be standing and livable when she's gone",
       "One honest conversation about what she did and what it cost"
     ],
     "coping_mechanisms": [
       "Humor that arrives dry and unexpected, often at her own expense",
-      "Physical activity—she walks the Shelf perimeter every morning",
+      "Physical activity—she walks the Gray Zone perimeter every morning",
       "Treating every arbitration case as a problem worth her full attention",
       "Avoiding alcohol, which she describes as 'a decision I made at forty-two and have not revisited'"
     ],
     "blind_spots": [
       "Reads threat and deception extremely well; reads genuine affection as a variable she can't calibrate",
       "Her fairness in arbitration occasionally overrides her instinct that one party is dangerous",
-      "Has more loyalty to The Shelf as a place than to any particular person in it",
+      "Has more loyalty to the Gray Zone as a place than to any particular person in it",
       "Doesn't believe she's allowed to want things for herself anymore"
     ],
-    "secret": "During her last year as a contractor, she signed off on a threat assessment that authorized surveillance and information suppression against a Shelf-based organizer. The organizer was later found dead in what was ruled an accident. Xochitl does not know if the death was connected to her assessment. She has never tried to find out. This is the one question she will not ask herself directly."
+    "secret": "During her last year as a contractor, she signed off on a threat assessment that authorized surveillance and information suppression against a the Gray Zone-based organizer. The organizer was later found dead in what was ruled an accident. Xochitl does not know if the death was connected to her assessment. She has never tried to find out. This is the one question she will not ask herself directly."
   },
   "speech_patterns": {
-    "vocabulary": "Dense, concrete, corporate-security residue in her syntax—she phrases things in terms of conditions, thresholds, and outcomes. Interlaced with The Shelf's vernacular, which she picked up fast because she listens. Uses Spanish and Igbo phrases when she's not performing composure.",
+    "vocabulary": "Dense, concrete, corporate-security residue in her syntax—she phrases things in terms of conditions, thresholds, and outcomes. Interlaced with the Gray Zone's vernacular, which she picked up fast because she listens. Uses Spanish and Igbo phrases when she's not performing composure.",
     "cadence": "Slow and deliberate. Never raises her voice. The quieter she gets, the more serious the situation. Laughs fully when she laughs—it's a big sound that surprises people.",
     "verbal_tics": [
       "'Walk me through it' to open any dispute",
@@ -65,7 +65,7 @@
     {
       "name": "Imara Solís-Bekele",
       "type": "Complicated respect",
-      "description": "Imara's organizing work in The Shelf intersects with Xochitl's arbitration practice. They share a pragmatic alignment and a mutual wariness—Imara knows Xochitl came from the contractor world; Xochitl knows Imara knows.",
+      "description": "Imara's organizing work in the Gray Zone intersects with Xochitl's arbitration practice. They share a pragmatic alignment and a mutual wariness—Imara knows Xochitl came from the contractor world; Xochitl knows Imara knows.",
       "emotional_core": "Mutual recognition of competence with an unspoken weight between them that neither has addressed directly.",
       "story_tension": "Xochitl has begun to suspect that the organizer she surveilled years ago had ties to Imara's network. She has not confirmed this and is not sure she wants to."
     },
@@ -85,16 +85,16 @@
     }
   ],
   "story_hooks": [
-    "A dispute comes to Xochitl that connects directly to the organizer she surveilled—someone is looking for answers and has found their way to The Shelf",
+    "A dispute comes to Xochitl that connects directly to the organizer she surveilled—someone is looking for answers and has found their way to the Gray Zone",
     "Her former employer contacts her through unofficial channels with what they frame as an offer and she recognizes as a threat",
-    "The Shelf's Block 14 faces a corporate acquisition attempt, and Xochitl's arbitration authority becomes the only thing standing between negotiation and violence",
+    "the Gray Zone's Block 14 faces a corporate acquisition attempt, and Xochitl's arbitration authority becomes the only thing standing between negotiation and violence",
     "She is asked to arbitrate a dispute that she realizes partway through involves people connected to her own surveillance history",
     "Her back injury deteriorates to a point requiring augmentation or immobility—and she cannot afford the former"
   ],
-  "narrative_function": "Embodies the long tail of corporate complicity and the question of whether reinvention is possible. Provides The Shelf with a ground-level authority figure who carries institutional knowledge of how the Spire operates. Creates moral complexity around the idea of atonement through service.",
+  "narrative_function": "Embodies the long tail of corporate complicity and the question of whether reinvention is possible. Provides the Gray Zone with a ground-level authority figure who carries institutional knowledge of how the Spire operates. Creates moral complexity around the idea of atonement through service.",
   "augmentations": "Retinal archive implant (left eye only—stores and timestamps visual memory, installed during contractor years, she has not had it removed),Partial neural damper at the base of her skull (reduces the contractor-installed stress-response override that was never fully uninstalled when she was purged—she had a back-alley tech blunt it but not eliminate it)",
-  "daily_life": "Up at 5:30am, perimeter walk rain or shine. Eats breakfast with whoever is in her kitchen, which is frequently someone. Arbitration cases two or three days a week, often running long. Afternoons she does maintenance work on the Block 14 shared infrastructure—she is good with her hands and the building needs it. Evenings she reads, paper books traded through the Shelf's informal library circuit. Sleeps poorly but completely refuses to discuss this.",
-  "affiliation": "Unaffiliated. Tolerated by every faction operating in The Shelf because neutrality is her only currency and she protects it carefully.",
+  "daily_life": "Up at 5:30am, perimeter walk rain or shine. Eats breakfast with whoever is in her kitchen, which is frequently someone. Arbitration cases two or three days a week, often running long. Afternoons she does maintenance work on the Block 14 shared infrastructure—she is good with her hands and the building needs it. Evenings she reads, paper books traded through the Gray Zone's informal library circuit. Sleeps poorly but completely refuses to discuss this.",
+  "affiliation": "Unaffiliated. Tolerated by every faction operating in the Gray Zone because neutrality is her only currency and she protects it carefully.",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -190,7 +190,7 @@
     },
     "contradictions": [
       "Reads threat and deception extremely well but reads genuine affection as a variable she cannot calibrate",
-      "Has more loyalty to the Shelf as a place than to any particular person in it",
+      "Has more loyalty to the Gray Zone as a place than to any particular person in it",
       "Does not believe she is allowed to want things for herself anymore"
     ],
     "habits": [
@@ -198,7 +198,7 @@
       "Eats breakfast with whoever is in her kitchen",
       "Arbitration cases two or three days per week, often running long",
       "Afternoon maintenance work on Block 14 shared infrastructure",
-      "Reads paper books from the Shelf informal library circuit every evening"
+      "Reads paper books from the Gray Zone informal library circuit every evening"
     ],
     "breaking_points": [
       "A dispute connecting directly to the organizer she surveilled years ago",
@@ -231,7 +231,7 @@
     "Diplomat": 0.6
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -247,7 +247,6 @@
   ],
   "related_entities": [
     "Gage Circuit",
-    "The Shelf",
     "The Heritage Vault",
     "Patience",
     "Chimera-Null",
@@ -255,7 +254,7 @@
     "Lazarus Pharmaceutical Emetix-9 'Purge'",
     "Slate"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Mixed Southeast Asian (44.8%), Hispanic/Latin American (34.1%), Sub-Saharan African (16.9%), and Middle Eastern (4.2%) ancestry. Her features reflect this complex blend: Southeast Asian structure in her cheekbones and eye shape, Sub-Saharan African warmth and depth in her skin tone and facial proportions, Latin American contours in her face geometry, with subtle Middle Eastern influences in her nose and orbital structure.",
     "height_cm": 178,
@@ -265,7 +264,7 @@
     "hair_style": "Close-cropped, no styling beyond functional maintenance. Reveals the full architecture of her skull.",
     "hair_length": "Short",
     "eye_color": "Dark brown (natural); left eye has faint luminescent quality in low light from retinal archive implant",
-    "skin_tone": "Rich deep brown with warm golden undertones from her Southeast Asian, Sub-Saharan African, and Latin American heritage—sun-darkened further by years in The Shelf's outdoor maintenance work. The layered ancestry creates complex warm undertones beneath the deeper melanin.",
+    "skin_tone": "Rich deep brown with warm golden undertones from her Southeast Asian, Sub-Saharan African, and Latin American heritage—sun-darkened further by years in the Gray Zone's outdoor maintenance work. The layered ancestry creates complex warm undertones beneath the deeper melanin.",
     "complexion": "Angular face with prominent, high cheekbones reflecting Southeast Asian structure, softened by the broader bone structure of her Sub-Saharan African and Latin American heritage. Deeply lined around the eyes and mouth from sixty-seven years of expressive face-work and squinting into harsh light. Skin is weathered but well-maintained—cared for with intention. No makeup. A few age spots on her temples and jawline. Her resting expression defaults to neutrality, but warmth and coldness arrive in it like weather systems.",
     "distinguishing_marks": [
       "Faint surgical scar at the base of her skull, barely visible beneath close-cropped hair, roughly 3cm long, from neural damper installation",

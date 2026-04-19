@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa20770f931fbf079a47ce80",
+  "rating": 60,
   "name": "Sentry",
   "type": "elf",
   "aliases": [],
@@ -12,7 +13,7 @@
   "observed_behavior": "Evaluates everyone passing through its door against military threat profiles from a war that ended twenty years ago. Occasionally refuses entry to people who match archived enemy combatant patterns.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 9,
-  "location": "The Shelf — converted military buildings",
+  "location": "the Gray Zone — converted military buildings",
   "dti_rating": 0,
   "story_hooks": [
     "Sentry locks out a visitor who happens to match the biometric profile of a Corporate Wars enemy — and the visitor realizes they're looking at their own father's combat record"
@@ -29,11 +30,8 @@
     "ai",
     "corporate",
     "control",
-    "shelf",
     "sentient"
   ],
-  "related_entities": [
-    "TESSERA ES-4 'Perimeter'",
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

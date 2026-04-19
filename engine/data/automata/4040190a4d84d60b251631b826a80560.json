@@ -26,10 +26,10 @@
     "Crucible Industrial facility disaster response"
   ],
   "story_hooks": [
-    "A SAR-6 has returned from a collapsed building in the Shelf carrying a survivor who shouldn't exist — someone with no BCI, no identity records, no biometric match in any database. The platform's medical logs show the individual has injuries consistent with being buried for weeks, but the building collapsed three hours ago.",
+    "A SAR-6 has returned from a collapsed building in the Gray Zone carrying a survivor who shouldn't exist — someone with no BCI, no identity records, no biometric match in any database. The platform's medical logs show the individual has injuries consistent with being buried for weeks, but the building collapsed three hours ago.",
     "Crucible has been quietly upgrading SAR-6 units with concealed surveillance equipment. Every disaster zone the Saint Bernards enter becomes a data collection opportunity — mapping underground spaces, cataloging residents, identifying infrastructure that doesn't appear on official records."
   ],
-  "cultural_context": "The SAR-6 is one of the few machines that people in the Shelf trust. When the walls come down, the Saint Bernard comes. It doesn't ask what tier you live on or whether you have insurance. It just digs. For many lower-tier residents, a Crucible rescue robot is the closest thing to institutional care they will ever experience.",
+  "cultural_context": "The SAR-6 is one of the few machines that people in the Gray Zone trust. When the walls come down, the Saint Bernard comes. It doesn't ask what tier you live on or whether you have insurance. It just digs. For many lower-tier residents, a Crucible rescue robot is the closest thing to institutional care they will ever experience.",
   "tags": [
     "automaton",
     "rescue",
@@ -38,7 +38,6 @@
     "medical",
     "crucible",
     "disaster",
-    "shelf",
     "tier 2"
   ],
   "id": "4040190a4d84d60b251631b826a80560",
@@ -48,7 +47,6 @@
     "Free Assembly",
     "GLMZ",
     "TESSERA TC-3 'Crucible'",
-    "The Shelf",
     "VitaCore FlowGuard Hemodynamic Regulator"
   ]
 }

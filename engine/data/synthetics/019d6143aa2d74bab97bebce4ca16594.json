@@ -1,5 +1,6 @@
 {
   "id": "019d6143aa2d74bab97bebce4ca16594",
+  "rating": 80,
   "name": "Turnstile",
   "type": "elf",
   "aliases": [],
@@ -15,7 +16,7 @@
   "location": "GLMZ transit system",
   "dti_rating": 0,
   "story_hooks": [
-    "A data analyst accesses Turnstile's count and discovers it has been maintaining the most accurate population census of the Shelf for eight years — better than any official count"
+    "A data analyst accesses Turnstile's count and discovers it has been maintaining the most accurate population census of the Gray Zone for eight years — better than any official count"
   ],
   "paratechnological": true,
   "tags": [
@@ -25,11 +26,8 @@
     "threshold keeper",
     "e.l.f.",
     "augment",
-    "shelf",
     "sentient"
   ],
-  "related_entities": [
-    "GLMZ",
-    "The Shelf"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

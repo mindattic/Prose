@@ -62,7 +62,8 @@ public class XrefServiceTests
             chars, synths, districts, factions, corps, technology, vocabulary,
             weaponry, ammunition, equipment, cyberware, genemods, transportation,
             automata, subsidiaries, entertainment, apparel, materials,
-            pharmaceuticals, consumerGoods, contracts, labSpecimens, psionics);
+            pharmaceuticals, consumerGoods, contracts, labSpecimens, psionics,
+            Microsoft.Extensions.Logging.Abstractions.NullLogger<XrefService>.Instance);
     }
 
     [TearDown]
@@ -269,12 +270,12 @@ public class XrefServiceTests
         Assert.That(result!.Type, Is.EqualTo("synthetic"));
     }
 
-    // ── VocabularyEntry uses Term ─────────────────────────────────────────────
+    // ── VocabularyData uses Term ─────────────────────────────────────────────
 
     [Test]
     public void Resolve_VocabularyTerm_ReturnsEntry()
     {
-        vocabulary.Save(new VocabularyEntry { Term = "Ghosting", Definition = "Erasing your digital trail." });
+        vocabulary.Save(new VocabularyData { Term = "Ghosting", Definition = "Erasing your digital trail." });
 
         var result = svc.Resolve("Ghosting");
 

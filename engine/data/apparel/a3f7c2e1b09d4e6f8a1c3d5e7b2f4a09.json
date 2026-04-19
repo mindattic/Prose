@@ -1,6 +1,6 @@
 {
   "id": "a3f7c2e1b09d4e6f8a1c3d5e7b2f4a09",
-  "name": "Scrapweld Buckle-Visor MK-1 Shelf Shield",
+  "name": "Scrapweld Buckle-Visor MK-1 the Gray Zone Shield",
   "type": "apparel",
   "category": "headwear",
   "description": "A face shield cobbled from salvaged welding visor glass, stripped conveyor belt straps, and flattened tin from industrial drums. The lens is amber-tinted, cracked at one corner, patched with resin that has yellowed with acid rain exposure. Riveted buckles replace the original adjustment mechanism. The frame shows multiple weld beads where it has been broken and re-joined. Smells faintly of solder flux and rust inhibitor.",
@@ -15,19 +15,19 @@
   "functionality": "Blocks particulate and acid-rain splash across the full face. The amber lens filters harsh UV from industrial arc flares. Chin strap buckles allow rapid removal. No electronics — zero power draw.",
   "what_it_says": "You built your own protection because no one was going to sell it to you.",
   "worn_by": [
-    "Shelf scrappers",
+    "the Gray Zone scrappers",
     "acid-zone salvagers",
     "unlicensed welders",
     "tunnel runners",
     "Tier 1 street workers"
   ],
-  "manufacturer": "Self-made / Scrapweld (informal Shelf fabricator collective)",
+  "manufacturer": "Self-made / Scrapweld (informal the Gray Zone fabricator collective)",
   "price_range": "Φ8–Φ30 (barter common)",
   "aug_compatible": false,
   "gene_compatible": false,
   "story_hooks": [
     "The resin patch over the cracked lens was applied the night after someone threw an acid flask at the wearer — the crack is a record of a near-miss.",
-    "A specific rivet pattern on the chin strap is a Shelf gang identifier — wearing it in the wrong zone is a provocation.",
+    "A specific rivet pattern on the chin strap is a the Gray Zone gang identifier — wearing it in the wrong zone is a provocation.",
     "A Tier 4 industrial designer photographed one of these for a 'raw aesthetic' fashion editorial, and the original maker is furious."
   ],
   "tags": [
@@ -36,7 +36,6 @@
     "visor",
     "face-shield",
     "tier-1",
-    "shelf",
     "self-made",
     "salvage",
     "acid-protection",
@@ -66,7 +65,7 @@
       "No branding—pure utilitarian function"
     ],
     "tier_indicator": "Tier 5 sub-grade salvage. This is ungoverned-sector gear, fabricated from industrial waste by informal collectives. No corporation would manufacture or endorse this.",
-    "cultural_context": "Signals someone operating in the Shelf (sub-grade industrial zones). Worn by scrappers, informal fabricators, black-market welders, and those who live outside corpo infrastructure. Conveys self-sufficiency, technical competency, and a willingness to work with dangerous equipment. A badge of survival rather than status.",
+    "cultural_context": "Signals someone operating in the Gray Zone (sub-grade industrial zones). Worn by scrappers, informal fabricators, black-market welders, and those who live outside corpo infrastructure. Conveys self-sufficiency, technical competency, and a willingness to work with dangerous equipment. A badge of survival rather than status.",
     "condition_typical": "Perpetually weathered and patched. Users expect cosmetic damage and ongoing maintenance. The shield looks better the more scars it carries—each weld bead is a story of field repair."
   },
   "image_prompt": "A Tier 5 neo-noir scavenger wearing the Scrapweld Buckle-Visor MK-1, face obscured by the amber-tinted welding shield. Close-up shot emphasizing the cracked lens, visible weld seams, and rusted rivets. Dark industrial warehouse backdrop with overhead warning lights casting amber and red shadows. Moody, grainy texture suggesting acid rain-weathered surfaces. Shot against a grimy metal wall, one visible augmented hand adjusting the visor strap. --ar 2:3 --v 6",

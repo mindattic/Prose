@@ -7,13 +7,13 @@
   "category": "beverage",
   "subcategory": "coffee",
   "manufacturer": "Old Harbor Roasting Collective",
-  "description": "Concentrated chicory-based coffee substitute in a 100ml squeeze bottle. Mix with hot water at any ratio. Real coffee is Tier 3+; ShelfBrew is what the Shelf drinks instead. Bitter, dark, and caffeinated through added synthetic caffeine.",
+  "description": "Concentrated chicory-based coffee substitute in a 100ml squeeze bottle. Mix with hot water at any ratio. Real coffee is Tier 3+; ShelfBrew is what the Gray Zone drinks instead. Bitter, dark, and caffeinated through added synthetic caffeine.",
   "flavor_profile": "Intensely bitter, earthy, with roasted grain undertones. Not coffee. Not trying to be coffee. Its own thing.",
   "tier_availability": "Tier 1-2",
   "price": "Φ0.60",
   "popularity_rank": 4,
   "slogan": "It's not coffee. It's better than nothing.",
-  "cultural_context": "ShelfBrew is the morning ritual for millions. The taste is an acquired one that Shelf residents defend with surprising passion. Tier 3 visitors who try it grimace. Shelf residents who try real coffee for the first time often find it too mild.",
+  "cultural_context": "ShelfBrew is the morning ritual for millions. The taste is an acquired one that the Gray Zone residents defend with surprising passion. Tier 3 visitors who try it grimace. the Gray Zone residents who try real coffee for the first time often find it too mild.",
   "story_hooks": [
     "The Old Harbor Roasting Collective maintains that chicory coffee has more character than real coffee — a position that is either deeply held conviction or very good marketing for a product born of necessity"
   ],
@@ -23,14 +23,12 @@
     "consumer_good",
     "tier_1",
     "tier_2",
-    "shelf",
     "chicory",
     "morning_ritual"
   ],
   "parent_corponation": "",
   "related_entities": [
     "Old Harbor",
-    "Patient Zero",
-    "The Shelf"
+    "Patient Zero"
   ]
 }

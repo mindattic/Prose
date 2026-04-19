@@ -1,5 +1,6 @@
 {
   "id": "019d6143a64472e5bb123a1ab9fc13ed",
+  "rating": 30,
   "type": "character",
   "name": "Ember Bergqvist-Ozcoidi",
   "aliases": [],
@@ -9,7 +10,7 @@
   "role": "Fixer - Dojo-connected",
   "age": 43,
   "status": "active",
-  "location": "The Shelf, near Kedzie and Division",
+  "location": "the Gray Zone, near Kedzie and Division",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -30,7 +31,11 @@
     "vocabulary": "",
     "cadence": "",
     "verbal_tics": [],
-    "example_lines": []
+    "example_lines": [],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [],
@@ -85,7 +90,7 @@
     "Manipulator": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -93,14 +98,11 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Compact-7 'Rat Trap'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Shelf"
-  ],
-  "district": "The Shelf",
   "physical_description": {
     "heritage": "Predominantly East Asian (46.8%) with substantial Middle Eastern (24.8%) and Indigenous American (19.4%) ancestry, creating a striking tricontinent blend. The facial structure reflects East Asian primary features—moderate cheekbones with slight forward projection, straight nose bridge, angular jawline—enriched and warmed by Middle Eastern bone structure and Indigenous American depth in facial proportions. Southeast Asian (3.9%), Hispanic/Latin American (2.8%), and Northern European (2.3%) provide subtle undertones in skin warmth and minor feature variation. The synthesis creates a distinctly pan-Asian appearance with warm, earthy undertones from the Americas and Middle East",
     "height_cm": 185,
@@ -119,9 +121,10 @@
     ],
     "visible_augmentations": "None visible. Fixer's trade demands discretion; any augmentations are subcutaneous or neural. However, his bearing and reaction time suggest possible spinal reinforcement or proprioceptive enhancement",
     "posture_movement": "Centered and economical. Moves with the deliberate calm of someone trained to defuse or escalate on demand. Hands rest naturally at sides; eyes scan slowly, habitually. When speaking to clients or allies, maintains relaxed but alert posture—neither threatening nor submissive",
-    "clothing_style": "Tier 3 practical: well-maintained charcoal or navy long-sleeve henley or structured shirt (breathable synth-blend, likely a local maker), dark tailored trousers with minimal pockets (items stored in hidden rig beneath jacket), minimal jewelry—a simple gunmetal bracelet on left wrist, possibly Faraday-threaded. Outer layer: fitted tactical jacket in grey or black, unbuttoned, showing tools and harness without screaming 'armed.' Boots are scuffed but maintained: durable synth-leather. Overall effect: a man who blends into mid-tier Shelf crowds but carries himself with professional authority"
+    "clothing_style": "Tier 3 practical: well-maintained charcoal or navy long-sleeve henley or structured shirt (breathable synth-blend, likely a local maker), dark tailored trousers with minimal pockets (items stored in hidden rig beneath jacket), minimal jewelry—a simple gunmetal bracelet on left wrist, possibly Faraday-threaded. Outer layer: fitted tactical jacket in grey or black, unbuttoned, showing tools and harness without screaming 'armed.' Boots are scuffed but maintained: durable synth-leather. Overall effect: a man who blends into mid-tier the Gray Zone crowds but carries himself with professional authority"
   },
-  "image_prompt": "GLMZ, a 43-year-old mixed-heritage fixer named Ember Bergqvist-Ozcoidi with East Asian primary features and warm Indigenous American-Middle Eastern depth, golden-bronze skin with olive undertones, deep brown observant eyes, dark brown hair with silver at temples worn short and precise. 185cm tall, athletic lean build with functional muscle definition. Clean-shaven, angular jawline and moderate cheekbones, fine lines from four decades of work. Thin white scar across left knuckles, small circular burn scar on right forearm, faint Sankofa tattoo on inner left wrist. Wearing charcoal henley under fitted grey tactical jacket unbuttoned to show harness and tools, dark tailored trousers, scuffed synth-leather boots, simple gunmetal bracelet. Centered posture, economical movement, deliberate calm bearing. Standing in shadowed Great Lakes Metro mid-tier Shelf environment, cool neon undertones mixing with warm ambient lighting, professional and controlled, neither threatening nor submissive, hands naturally at sides, slow scanning gaze. Mood: seasoned operative, reliable and discreet --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, a 43-year-old mixed-heritage fixer named Ember Bergqvist-Ozcoidi with East Asian primary features and warm Indigenous American-Middle Eastern depth, golden-bronze skin with olive undertones, deep brown observant eyes, dark brown hair with silver at temples worn short and precise. 185cm tall, athletic lean build with functional muscle definition. Clean-shaven, angular jawline and moderate cheekbones, fine lines from four decades of work. Thin white scar across left knuckles, small circular burn scar on right forearm, faint Sankofa tattoo on inner left wrist. Wearing charcoal henley under fitted grey tactical jacket unbuttoned to show harness and tools, dark tailored trousers, scuffed synth-leather boots, simple gunmetal bracelet. Centered posture, economical movement, deliberate calm bearing. Standing in shadowed Great Lakes Metro mid-tier the Gray Zone environment, cool neon undertones mixing with warm ambient lighting, professional and controlled, neither threatening nor submissive, hands naturally at sides, slow scanning gaze. Mood: seasoned operative, reliable and discreet --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "East Asian": 46.8,
     "Middle Eastern": 24.8,
@@ -130,12 +133,6 @@
     "Hispanic/Latin American": 2.8,
     "Northern European": 2.3
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "East Asian": {
       "Chinese": {
@@ -181,6 +178,5 @@
         "Austrian": 0.3
       }
     }
-  },
-  "tier": "3"
+  }
 }

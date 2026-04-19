@@ -1,0 +1,57 @@
+{
+  "id": "1889702cad764b9fa51416a8d9b76c93",
+  "name": "Ferrogate Transit Gradient Inertial Distribution System",
+  "brand_name": "Ferrogate Transit",
+  "product_name": "GIDS-4 Gradient Inertial Distribution System",
+  "type": "technology",
+  "aliases": ["GIDS", "gradient drive", "inertial padding"],
+  "subcategory": "transportation",
+  "description": "The engineering solution to the most basic problem in high-speed tube transit: at Mach 6, accelerating from rest in 11 kilometers requires approximately 189 meters per second squared — nineteen times Earth's gravitational acceleration. No biological organism survives 19g. The GIDS-4 is why they do.\n\nThe principle is not mysticism. It is electromagnetism applied at scale.\n\nA conventional vehicle accelerates its passengers by contact: the floor accelerates, the seat accelerates, the seat back presses against the passenger's spine, the passenger's spine transmits force to the torso, and so on through the body. Every contact surface is a pressure point. At 19g, every pressure point is a crushing force.\n\nThe GIDS-4 eliminates contact as the primary force transfer mechanism. The superconducting coil arrays embedded in the slug's interior walls generate a field gradient that penetrates the full cross-section of the passenger cabin. This field acts on every ferromagnetic and conductive component simultaneously — seat frames, floor panels, structural members, the metallic components of every augmentation and BCI implant distributed through the passengers' bodies. The field does not push the slug's shell and wait for the shell to push the seats and wait for the seats to push the people. It pushes everything at once.\n\nThe result is distributed inertial loading. Instead of 19g transmitted through two contact points — seat back and floor — the force is spread across every conductive component in the passenger's body. A fully augmented Tier 4 passenger with skeletal reinforcement, neural mesh, and circulatory augments may have seventy or more ferromagnetic components distributed through their body. Each one receives and transmits the field's acceleration force independently. The net sensation is approximately 0.3g — roughly the feeling of standing in an ascending elevator, sustained for the 47 seconds of the acceleration phase.\n\nThe system is not perfect. Passengers without augmentations — rare in the GLMZ, more common in cargo-adjacent personal slugs with Remnant transit waivers — experience higher effective acceleration because the field has fewer body-internal components to couple to. Ferrogate's internal documentation acknowledges an effective ceiling of 0.9g for unaugmented passengers in GIDS-4 equipped slugs. The public documentation does not include this figure. The public documentation does not mention augmentation as a variable at all.\n\nThe 8 Hz vibration that passengers feel throughout transit is a residual artifact of the GIDS coil switching frequency — the field cycles 8 times per second as each coil section hands off to the next. Engineers refer to this as 'coil tick.' Passengers call it the pulse of the tube. People standing over Pulse corridors in the Gray Zone feel it through the ground.",
+  "tier_availability": "Infrastructure — integrated into all Ferrogate Transit passenger slugs. Not sold separately.",
+  "developers": [
+    "Ferrogate Transit (Advanced Propulsion Division)",
+    "Sterling-Nakamura (superconducting interior coil fabrication)",
+    "Tessera Industries (field gradient computation arrays)"
+  ],
+  "base_technologies": [
+    "Superconducting electromagnetic field generation",
+    "Distributed ferromagnetic coupling across augmented anatomy",
+    "Real-time field gradient modulation (8 Hz switching)",
+    "Coil-to-coil handoff sequencing",
+    "Passenger augmentation inventory via pre-boarding BCI scan"
+  ],
+  "enables": [
+    "Human survival at 19g nominal acceleration",
+    "Mach 6 transit with subjective 0.3g passenger experience",
+    "Practical high-speed tube transit for augmented population",
+    "The Pulse network as viable passenger infrastructure"
+  ],
+  "social_impact": "The GIDS-4 is the invisible prerequisite for everything the Pulse represents. Without it, the Pulse is a cargo system. The engineering works because the population is augmented — the system depends on metallic implants distributed through passenger bodies to distribute force. The GLMZ's augmentation culture and the Pulse transit network are not separate phenomena. One made the other possible. The corponation that controls augmentation implant standards effectively controls the physics of comfortable transit. Tessera Industries has been aware of this for forty years. They have not publicized it.",
+  "story_hooks": [
+    "A passenger boarding a personal slug discloses no augmentations on their BCI manifest — the GIDS-4 scan shows no ferromagnetic coupling points. Either they have no implants (nearly impossible for a Tier 3+), or their implants are shielded. The slug departs anyway. The acceleration phase will clarify things.",
+    "Gray Zone maintenance workers who regularly access Pulse corridor inspection tunnels report long-term physiological effects from sustained 8 Hz field exposure — bone density changes, metallic taste, unusual augmentation behavior. Ferrogate's occupational health documentation does not list these as known risks.",
+    "A GIDS-4 coil array in a Chicago-Rotterdam slug malfunctions at kilometer 3 of the acceleration phase, transitioning from distributed field propulsion to shell-contact propulsion. The slug is at Mach 2.5. The coil array has 8.5 kilometers of acceleration left."
+  ],
+  "tags": [
+    "transportation",
+    "technology",
+    "pulse",
+    "ferrogate",
+    "inertial",
+    "augmentation",
+    "maglev",
+    "physics",
+    "infrastructure",
+    "gray-zone",
+    "thrumline"
+  ],
+  "parent_corponation": "Ferrogate Transit",
+  "related_entities": [
+    "Ferrogate Transit",
+    "Chicago Station",
+    "Pulse Interconnect Accord",
+    "Sterling-Nakamura",
+    "Tessera Industries",
+    "The Pulse: Global Magnetic Transit and the Infrastructure of a Connected World"
+  ]
+}

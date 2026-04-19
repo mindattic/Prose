@@ -32,5 +32,14 @@
     "Spire Sequence No. 13 (Sovereign Edition)",
     "The Corridor",
     "WELLSPRING"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z2"
+    ],
+    "primaryZone": "Z2",
+    "lakefrontAccess": false,
+    "description": "The Rictus Pleasure Corridor — 14-kilometer strip of sovereign entertainment territory in the Lakeview district, Zone 2, anchored by the Wrigley Field Entertainment Complex. The GLMZ's dominant entertainment corponation engineers spaces that feel open and permissive while maintaining comprehensive surveillance. The feeling of permission is the product.",
+    "grayZoneRelationship": "Operates content-gathering operations in Gray Zones that feed their 'authentic experience' product lines. Gray Zone residents are frequently unaware they are being filmed for commercial distribution."
+  }
 }

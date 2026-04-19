@@ -1,0 +1,42 @@
+{
+  "id": "26bbbebcd13fcca57b6b74b11aa84974",
+  "name": "Crucible Industries Talon-5 'Jackknife'",
+  "type": "weapon",
+  "aliases": [],
+  "category": "pistol",
+  "description": "The Crucible Industries Talon-5 is a slim single-stack semi-automatic pistol chambered in 5.7x28mm, designed around the high-velocity PDW cartridge for maximum penetration in a handgun platform. The weapon is unusually flat — barely two centimeters wide — with a flush-fit magazine and low-profile sights optimized for pocket and waistband carry.\n\nThe 5.7x28mm round was originally designed for personal defense weapons and gives the Talon-5 a unique advantage: the high-velocity, small-caliber projectile penetrates soft body armor that stops conventional pistol rounds. This makes the Jackknife a favorite among operators who expect their targets to be wearing protection. The trade-off is reduced terminal energy against unarmored tissue compared to larger calibers.\n\nCrucible positions the Talon-5 as a 'threat-adapted concealment weapon' — a polite way of describing a gun designed to kill people wearing armor. The weapon's slim profile makes it genuinely easy to conceal, and its armor-defeating capability makes it genuinely dangerous. This combination has made it a subject of ongoing regulatory debate, with the Gray Zone and Mid district security advocating for reclassification as a restricted weapon.",
+  "manufacturer": "CRUCIBLE INDUSTRIES",
+  "tier_availability": "Tier 3+",
+  "legality": "Legal — under regulatory review for potential restriction",
+  "base_technologies": [
+    "High-velocity PDW cartridge",
+    "Slim single-stack design",
+    "Armor-penetrating profile"
+  ],
+  "specifications": "caliber: 5.7x28mm\neffective_range: 50 meters\nrate_of_fire: Semi-automatic\nmagazine_capacity: 20 rounds\nweight: 0.58 kg",
+  "tactical_use": "A concealable pistol optimized for armor penetration. The 5.7x28mm round defeats Level II and IIIA soft body armor at close range, making this weapon effective against protected targets that conventional pistol calibers cannot address. The slim profile enables deep concealment. Less effective against unarmored targets than larger caliber alternatives due to reduced terminal energy.",
+  "cultural_context": "The Jackknife is controversial. the Gray Zone security forces hate it because it renders their standard-issue body armor ineffective. Crucible Industries defends it as a legitimate self-defense tool for citizens facing armored threats. The debate has become a proxy for larger arguments about the arms race between personal protection and personal armament in GLMZ.",
+  "known_users": [
+    "Operators expecting armored targets",
+    "Deep-concealment specialists",
+    "Independent contractors",
+    "Black market demand is high"
+  ],
+  "story_hooks": [
+    "A new regulation banning 5.7x28mm handguns is about to pass — and someone is buying every Talon-5 they can find before the ban takes effect. The question is why they need hundreds of armor-piercing pistols.",
+    "A the Gray Zone security guard is killed by a Talon-5 round that penetrated his vest. The weapon is traced to a registered owner in the Spires who claims it was stolen — three months ago, unreported."
+  ],
+  "ammunition_type": [
+    "5.7x28mm"
+  ],
+  "tags": [
+    "weapon",
+    "pistol",
+    "armor_piercing",
+    "concealed",
+    "controversial",
+    "slim"
+  ],
+  "physical_description": "The Talon-5 is a razor-thin instrument of matte gunmetal and polymer, its profile barely wider than a playing card. Worn grip stippling shows dark stains from acid rain and use; the flush-fit magazine sits flush against the frame like a surgical implant. Low-profile sights are etched and scarred, paired with a short dustcover that bears Crucible's faded logo.",
+  "visual_prompt": "Crucible Industries Talon-5 pistol, ultra-slim single-stack semi-automatic, matte gunmetal finish, worn polymer grip, product photography, gritty neo-noir, detailed close-up, rain-slicked industrial background, neon reflection, acid-weathered metal, high-velocity PDW weapon, cyberpunk aesthetic, dark moody lighting, professional gun photography, GLMZ street samurai gear"
+}

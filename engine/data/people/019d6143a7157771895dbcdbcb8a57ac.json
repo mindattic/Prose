@@ -1,5 +1,6 @@
 {
   "id": "019d6143a7157771895dbcdbcb8a57ac",
+  "rating": 30,
   "type": "character",
   "name": "Atlas Nazari-Hinojosa",
   "aliases": [],
@@ -9,7 +10,7 @@
   "role": "Fixer - Network of sub-fixers",
   "age": 56,
   "status": "active",
-  "location": "The Shelf, near Western and Chicago Ave",
+  "location": "the Gray Zone, near Western and Chicago Ave",
   "description": "",
   "psychology": {
     "facet_weights": {
@@ -30,7 +31,11 @@
     "vocabulary": "",
     "cadence": "",
     "verbal_tics": [],
-    "example_lines": []
+    "example_lines": [],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [],
@@ -87,7 +92,7 @@
     "Face": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -95,16 +100,11 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Plinker-22 'Tin Can'",
-    "Street-Custom Rebar Shiv 'Tetanus Kiss'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Shelf",
-    "Chicago"
-  ],
-  "district": "The Shelf",
   "physical_description": {
     "heritage": "Complex diaspora blend: 48.2% Hispanic/Latin American, 20.9% Middle Eastern, 14.5% South Asian, 11.4% Indigenous American, and 5.0% Sub-Saharan African. This genetic combination creates her striking angular architecture—pronounced cheekbones and defined jaw from Hispanic/Latin and Middle Eastern ancestry, softened and warmed by South Asian facial geometry. Indigenous American ancestry contributes sharp angular features and rich earth-tone undertones. The Sub-Saharan African component adds luminosity and warm undertones that glow beneath her skin. The result is a face of compelling contradictions: sharp and soft simultaneously, with intelligent depth that reflects her complex ancestry.",
     "height_cm": 168,
@@ -127,6 +127,7 @@
     "clothing_style": "Tier 3-4 pragmatist. Dark gray or charcoal reinforced jacket (Khao-brand, durable synthleather with hidden pockets for data-slips and payment devices) worn over plain black crew-neck underlayer. Fitted tactical cargo pants in dark blue with reinforced knees. Worn leather work boots, resoled multiple times. A chunky stainless steel watch on her left wrist—old, pre-collapse model, still runs on mechanical gears. No corporate logos. No jewelry except the watch and a thin platinum band on her left ring finger (old, worn smooth)."
   },
   "image_prompt": "Atlas Nazari-Hinojosa, 168cm tall woman with broad shoulders and athletic build, steel gray hair in tight braid, warm bronze skin with golden and olive undertones blending Hispanic, Middle Eastern, South Asian, Indigenous, and Sub-Saharan African heritage. Angular face with pronounced carved cheekbones, strong jaw, deep brown eyes with amber flecks. Pale 8cm scar running from left temple to ear. Dark indigo Māori ta moko pattern on left temple. Weathered hands with calloused fingers and old burn scar. Wearing dark charcoal Khao synthleather jacket over black crew-neck, tactical dark blue cargo pants with reinforced knees, worn leather work boots. Old stainless steel mechanical watch on left wrist, platinum band on ring finger. Direct, assessing gaze. Sitting at table with elbows down, hands busy with data-slips. Neon-lit GLMZ office setting, 2226, cool blue and amber lighting casting shadows across her featured scarring and tattoos. Neo-noir noir atmosphere, worn and practical aesthetic. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Hispanic/Latin American": 48.2,
     "Middle Eastern": 20.9,
@@ -134,12 +135,6 @@
     "Indigenous American": 11.4,
     "Sub-Saharan African": 5
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Hispanic/Latin American": {
       "Central American": {
@@ -181,6 +176,5 @@
         "Nigerian": 0.3
       }
     }
-  },
-  "tier": "3"
+  }
 }

@@ -47,7 +47,7 @@ public class FacetRulesData
     [JsonPropertyName("rotation")] public string Rotation { get; set; } = "";
 }
 
-public class MotifData : ICanonEntity
+public class MotifData : IWorldRecord
 {
     [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("name")] public string Name { get; set; } = "";
@@ -84,6 +84,7 @@ public class CharacterProfileData
 public class WorldbuildingDocument : ICanonEntity
 {
     [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
+    [JsonPropertyName("rating")] public double Rating { get; set; } = 0.0;
     [JsonPropertyName("file_name")] public string FileName { get; set; } = "";
     [JsonPropertyName("title")] public string Title { get; set; } = "";
     [JsonPropertyName("category")] public string Category { get; set; } = "";
@@ -104,6 +105,7 @@ public class WorldbuildingDocument : ICanonEntity
 public class CorponationData : ICanonEntity
 {
     [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
+    [JsonPropertyName("rating")] public double Rating { get; set; } = 0.0;
     [JsonPropertyName("number")] public int Number { get; set; }
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("full_legal_name")] public string FullLegalName { get; set; } = "";

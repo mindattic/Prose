@@ -1,5 +1,6 @@
 @using System.Text.Json
 @inject XrefService Xref
+@inject NavigationManager Nav
 
 @if (!string.IsNullOrEmpty(Json))
 {
@@ -108,6 +109,14 @@
         _ => Esc(val.ToString()),
     };
 
+    private string currentPageId = "";
+
+    protected override void OnParametersSet()
+    {
+        var uri = Nav.ToAbsoluteUri(Nav.Uri);
+        currentPageId = System.Web.HttpUtility.ParseQueryString(uri.Query)["id"] ?? "";
+    }
+
     private string FormatStr(string s)
     {
         if (string.IsNullOrWhiteSpace(s)) return "<span style=\"color:#8b949e;font-style:italic\">\u2014</span>";
@@ -117,10 +126,21 @@
         {
             if (seg is XrefSegment xrefSeg)
             {
-                var title = string.IsNullOrWhiteSpace(xrefSeg.Entry.Subtitle)
-                    ? Esc(xrefSeg.Entry.Type)
-                    : $"{Esc(xrefSeg.Entry.Type)} \u2014 {Esc(xrefSeg.Entry.Subtitle)}";
-                sb.Append($"<a href=\"/entity/{Esc(xrefSeg.Entry.Id)}\" class=\"xref-link xref-{Esc(xrefSeg.Entry.Type)}\" title=\"{title}\">{Esc(xrefSeg.Text)}</a>");
+                if (xrefSeg.Entry.Id == currentPageId)
+                {
+                    sb.Append($"<strong>{Esc(xrefSeg.Text)}</strong>");
+                }
+                else
+                {
+                    var title = string.IsNullOrWhiteSpace(xrefSeg.Entry.Subtitle)
+                        ? Esc(xrefSeg.Entry.Type)
+                        : $"{Esc(xrefSeg.Entry.Type)} \u2014 {Esc(xrefSeg.Entry.Subtitle)}";
+                    sb.Append($"<a href=\"{Esc(xrefSeg.Entry.Route)}?id={Esc(xrefSeg.Entry.Id)}\" class=\"xref-link xref-{Esc(xrefSeg.Entry.Type)}\" title=\"{title}\">{Esc(xrefSeg.Text)}</a>");
+                }
+            }
+            else if (seg is BrokenLinkSegment broken)
+            {
+                sb.Append($"<span class=\"xref-broken\" title=\"Entity not found\">{Esc(broken.Text)}</span>");
             }
             else
             {

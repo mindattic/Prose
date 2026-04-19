@@ -4,8 +4,8 @@
   "type": "character",
   "aliases": [],
   "role": "Private Investigator",
-  "description": "Kofi Nakamura-Singh is a throwback to an era that probably never existed the way he imagines it. Sixty-three years old, lean and weathered, with deep brown skin, close-cropped gray hair, and eyes that have seen enough human misery to fill a library. He wears the same long coat every day regardless of weather and conducts his investigations with methods so archaic that younger PIs openly mock him — until they need someone who can find a person who has deliberately erased their digital existence, at which point Kofi becomes the only game in town.\n\nHis office is a monument to pre-digital methodology: corkboards with physical photographs connected by colored string, filing cabinets stuffed with handwritten case notes, a desk scarred by decades of coffee rings and cigarette burns. He has no BCI. He refuses augmentation of any kind. His clients are almost exclusively Shelf residents who can't afford the flashier investigators and who come to him because someone's grandmother told them about the old man on Burnside who found her son when nobody else would look.\n\nDespite his reputation as a fossil, Kofi's solve rate on missing persons cases is quietly extraordinary — north of 80% over a thirty-year career. The secret is patience. He will watch a building for seventy-two hours. He will interview the same witness nine times. He will walk a route until his feet bleed. He understands something that technology-dependent investigators don't: that most people hide in habits, not data, and habits are visible to anyone willing to watch long enough.",
-  "affiliation": "Independent — solo practice, Shelf Level 2",
+  "description": "Kofi Nakamura-Singh is a throwback to an era that probably never existed the way he imagines it. Sixty-three years old, lean and weathered, with deep brown skin, close-cropped gray hair, and eyes that have seen enough human misery to fill a library. He wears the same long coat every day regardless of weather and conducts his investigations with methods so archaic that younger PIs openly mock him — until they need someone who can find a person who has deliberately erased their digital existence, at which point Kofi becomes the only game in town.\n\nHis office is a monument to pre-digital methodology: corkboards with physical photographs connected by colored string, filing cabinets stuffed with handwritten case notes, a desk scarred by decades of coffee rings and cigarette burns. He has no BCI. He refuses augmentation of any kind. His clients are almost exclusively the Gray Zone residents who can't afford the flashier investigators and who come to him because someone's grandmother told them about the old man on Burnside who found her son when nobody else would look.\n\nDespite his reputation as a fossil, Kofi's solve rate on missing persons cases is quietly extraordinary — north of 80% over a thirty-year career. The secret is patience. He will watch a building for seventy-two hours. He will interview the same witness nine times. He will walk a route until his feet bleed. He understands something that technology-dependent investigators don't: that most people hide in habits, not data, and habits are visible to anyone willing to watch long enough.",
+  "affiliation": "Independent — solo practice, the Gray Zone Level 2",
   "tier": "3",
   "location": "A one-room office above a noodle shop on Burnside Corridor, frosted glass door with his name stenciled in gold leaf that's been peeling since 2187",
   "specialization": "Missing persons, infidelity cases, old-fashioned footwork investigations",
@@ -17,7 +17,7 @@
     "Paper-trail analysis — actual paper, when it exists"
   ],
   "notable_cases": [
-    "Found the missing daughter of a Shelf-level mechanic by walking the Narrows for six straight days asking questions nobody else thought to ask",
+    "Found the missing daughter of a the Gray Zone-level mechanic by walking the Narrows for six straight days asking questions nobody else thought to ask",
     "Exposed a Tier 3 marriage counselor who was selling client session recordings to blackmailers",
     "Tracked a con artist across four districts using nothing but witness descriptions and shoe leather"
   ],
@@ -51,7 +51,6 @@
     "private_investigator",
     "noir",
     "analog",
-    "shelf",
     "missing_persons",
     "human"
   ]

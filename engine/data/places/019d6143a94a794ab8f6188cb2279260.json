@@ -3,7 +3,7 @@
   "type": "place",
   "name": "The Pellucid Gate",
   "aliases": [],
-  "description": "Anchored three kilometers offshore in Lake Michigan, The Pellucid Gate is a massive former Axiom Industries deepwater logistics platform repurposed into a semi-autonomous free-port node that processes cargo, data, and persons outside the direct jurisdiction of any single corponation. Its above-water structure is a striking and deliberate contrast to the industrial megacity visible on the horizon: all tempered polymer panels and prismatic solar membranes that scatter lake light into shifting spectral patterns across the platform decks.\n\nOperating under a complex charter negotiated between Axiom, the Palladian Group, and three independent maritime collectives, the Gate has evolved into something its original architects did not intend—a genuine neutral ground where Tier 1 Spire executives broker deals with Shelf-level smugglers, synthetic rights advocates hold hearings beyond municipal law, and E.L.F. researchers conduct experiments that would be illegal on shore. Its population is transient almost entirely, with fewer than 400 permanent staff and thousands passing through weekly.",
+  "description": "Anchored three kilometers offshore in Lake Michigan, The Pellucid Gate is a massive former Axiom Industries deepwater logistics platform repurposed into a semi-autonomous free-port node that processes cargo, data, and persons outside the direct jurisdiction of any single corponation. Its above-water structure is a striking and deliberate contrast to the industrial megacity visible on the horizon: all tempered polymer panels and prismatic solar membranes that scatter lake light into shifting spectral patterns across the platform decks.\n\nOperating under a complex charter negotiated between Axiom, the Palladian Group, and three independent maritime collectives, the Gate has evolved into something its original architects did not intend—a genuine neutral ground where Tier 1 Spire executives broker deals with the Gray Zone-level smugglers, synthetic rights advocates hold hearings beyond municipal law, and E.L.F. researchers conduct experiments that would be illegal on shore. Its population is transient almost entirely, with fewer than 400 permanent staff and thousands passing through weekly.",
   "atmosphere": {
     "sights": [
       "Prismatic light fracturing constantly across white polymer decks as solar membrane panels flex in lake wind",
@@ -74,7 +74,6 @@
     "rights",
     "water",
     "lake",
-    "shelf",
     "spire"
   ],
   "related_entities": [
@@ -94,5 +93,7 @@
     "Briar Hwang",
     "Zephyr Bhattacharya",
     "Ngozi Morimoto"
-  ]
+  ],
+  "zone": "Z3",
+  "controllingCorponation": null
 }

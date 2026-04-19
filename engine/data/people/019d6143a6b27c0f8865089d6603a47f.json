@@ -9,8 +9,8 @@
   "role": "Lower Dock Crew member — Prologue survivor. Lost fingers, most teeth.",
   "age": 33,
   "status": "active",
-  "location": "The Shelf — lower loading docks, near Halsted and Chicago Ave",
-  "description": "Indigo Wickramasinghe-Delgado-Wickramasinghe is the angriest person in the Lower Dock Crew and possibly in the Shelf. He lost three fingers on his right hand to the katana and most of his upper teeth to the flat of the blade. His replacement fingers are industrial salvage — thick, clumsy, meant for cargo work. His dental work is Tier 1 ceramic that doesn't match, giving him a checkerboard smile he refuses to show.\n\nRodney grew up in the Exclusion Zone between Gary and Hammond — the same ungoverned corridors Kyle survived as a child, though they never crossed paths. He has a daughter, Keisha (age 9), from a relationship that ended when the mother, Trina, relocated to the Milwaukee Zone. Rodney has not seen Keisha in two years. He sends messages. Keisha responds with single-word answers. He reads each one forty times.\n\nOf all the crew, Rodney is the most likely to do something stupid and solo. He has the least to lose and the most anger. He went back to the loading dock the day after the Prologue and collected Kyle's spent shell casings. He keeps them in a jar on his shelf. He does not know why. He looks at them every night. They are the closest thing he has to a relationship with the man who broke him.",
+  "location": "the Gray Zone — lower loading docks, near Halsted and Chicago Ave",
+  "description": "Indigo Wickramasinghe-Delgado-Wickramasinghe is the angriest person in the Lower Dock Crew and possibly in the Gray Zone. He lost three fingers on his right hand to the katana and most of his upper teeth to the flat of the blade. His replacement fingers are industrial salvage — thick, clumsy, meant for cargo work. His dental work is Tier 1 ceramic that doesn't match, giving him a checkerboard smile he refuses to show.\n\nRodney grew up in the Exclusion Zone between Gary and Hammond — the same ungoverned corridors Kyle survived as a child, though they never crossed paths. He has a daughter, Keisha (age 9), from a relationship that ended when the mother, Trina, relocated to the Milwaukee Zone. Rodney has not seen Keisha in two years. He sends messages. Keisha responds with single-word answers. He reads each one forty times.\n\nOf all the crew, Rodney is the most likely to do something stupid and solo. He has the least to lose and the most anger. He went back to the loading dock the day after the Prologue and collected Kyle's spent shell casings. He keeps them in a jar on his shelf. He does not know why. He looks at them every night. They are the closest thing he has to a relationship with the man who broke him.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -213,7 +213,7 @@
     "Quick Study": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -223,7 +223,6 @@
   "changelog": [],
   "related_entities": [
     "Forge-Smith Collective Barbed Trident 'Reef Breaker'",
-    "The Shelf",
     "Coherent Radiation Scalpel CRS-7 'Suture'",
     "ARCTURUS DEFENSE Bastion Subdermal Armor Mesh",
     "Chicago",
@@ -232,7 +231,7 @@
     "Lazarus IDP-1 'Teeth'",
     "Cargo Tacos"
   ],
-  "district": "The Shelf",
+  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Sub-Saharan African (42.2%), South Asian (34.9%), and Hispanic/Latin American (22.9%) ancestry — a genetic mosaic reflecting the Ubiquitous Diaspora. The dominant Sub-Saharan ancestry grounds his deeper complexion and broader facial structure, while significant South Asian heritage contributes warmth and angular definition to his cheekbones and nose bridge. Hispanic/Latin American ancestry adds subtle warmth and facial width. His appearance is a true three-continent blend, weathered by dock labor and industrial exposure.",
     "height_cm": 178,

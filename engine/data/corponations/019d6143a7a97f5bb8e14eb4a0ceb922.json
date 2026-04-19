@@ -292,5 +292,14 @@
     "The Sullen Reach",
     "The Third Rail",
     "Thornback Agrichemical"
-  ]
+  ],
+  "glmzTerritory": {
+    "zones": [
+      "Z6"
+    ],
+    "primaryZone": "Z6",
+    "lakefrontAccess": false,
+    "description": "Crucible Campus — reclaimed industrial land along the Calumet River in Zone 6. Genomic research and commercial gene therapy services for the GLMZ's industrial workforce. Zone 6 positioning is deliberate: their primary patient population is the workforce most exposed to Ashgrave and Slagworks industrial effluent.",
+    "grayZoneRelationship": "Provides discounted gene therapy services to Zone 6 Gray Zone residents. Medical access is leverage; Crucible maintains detailed records of which communities owe them."
+  }
 }

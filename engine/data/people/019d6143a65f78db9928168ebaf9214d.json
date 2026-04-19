@@ -1,5 +1,6 @@
 {
   "id": "019d6143a65f78db9928168ebaf9214d",
+  "rating": 80,
   "type": "character",
   "name": "Kit Quiñones",
   "aliases": [],
@@ -9,8 +10,8 @@
   "role": "Street-level medic and black-market augmentation surgeon",
   "age": 41,
   "status": "active",
-  "location": "The Shelf, near Kedzie and Division",
-  "description": "Kit Quiñones is a broad-shouldered Ghanaian-British woman whose hands are her most remarkable feature — the left is entirely her own, calloused and ink-stained at the fingertips; the right is a matte-black prosthetic she built herself from salvaged components, its fingers capable of sub-millimeter precision that no organic hand could match. She keeps her locs pinned back tight when she works and loose when she doesn't want to be found, and the distinction matters more than people realize. Her clinic is a converted shipping container stacked midway up the Shelf's residential tiers, marked only by a strip of orange adhesive tape across the door frame — a color that locals have learned means someone inside might still be alive.",
+  "location": "the Gray Zone, near Kedzie and Division",
+  "description": "Kit Quiñones is a broad-shouldered Ghanaian-British woman whose hands are her most remarkable feature — the left is entirely her own, calloused and ink-stained at the fingertips; the right is a matte-black prosthetic she built herself from salvaged components, its fingers capable of sub-millimeter precision that no organic hand could match. She keeps her locs pinned back tight when she works and loose when she doesn't want to be found, and the distinction matters more than people realize. Her clinic is a converted shipping container stacked midway up the Gray Zone's residential tiers, marked only by a strip of orange adhesive tape across the door frame — a color that locals have learned means someone inside might still be alive.",
   "psychology": {
     "facet_weights": {
       "wound": 0.72,
@@ -26,7 +27,7 @@
       "That her son, who she placed with relatives in Accra, will one day come looking for her and find only what she has become"
     ],
     "core_desires": [
-      "To build a real clinic — sterile, supplied, staffed — that the Shelf's residents don't have to be ashamed to enter",
+      "To build a real clinic — sterile, supplied, staffed — that the Gray Zone's residents don't have to be ashamed to enter",
       "To be regarded as a doctor again, not a fixer or a backroom cutter",
       "Absolution she has never asked for and wouldn't know how to accept"
     ],
@@ -54,7 +55,11 @@
       "'What I won't do is close that without cleaning it first. You can be angry about the time or you can keep the hand. Those are your options.'",
       "'That's a fair question. The augmentation is functional. Whether it's good work — that I can't tell you until we see how it integrates.'",
       "'I've got saline, two units of syn-blood, and whatever you brought with you. We'll make it work. We usually do.'"
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [
     {
@@ -81,14 +86,14 @@
   ],
   "story_hooks": [
     "A patient arrives with an augmentation she has never seen before — military-grade, still networked, and actively transmitting to somewhere in the Meridian Core",
-    "Her clinic's orange tape marker starts appearing on other doors in the Shelf — someone is using her symbol for something, and people are following it",
+    "Her clinic's orange tape marker starts appearing on other doors in the Gray Zone — someone is using her symbol for something, and people are following it",
     "A message arrives from Accra. Her son is eighteen now. He has questions.",
     "The falsified death certificate surfaces in a corporate legal proceeding that has nothing to do with her — but her name is in the file"
   ],
   "narrative_function": "Moral anchor and information hub for street-level characters; represents the cost of principled survival in a system designed to grind it out; her clinic is a narrative waypoint where disparate characters can intersect",
   "augmentations": "Right arm prosthetic (self-built): matte-black titanium-polymer composite, sub-millimeter surgical precision mode, haptic feedback calibrated to replicate fine tissue sensation, concealed compartment in the forearm housing emergency pharmaceuticals,Ocular overlay (left eye only): medical HUD with vitals reading, vein mapping, augmentation diagnostic interface — old model, slightly flickering at the edges",
-  "daily_life": "Nadira wakes before the Shelf's ambient light cycle shifts to morning and spends the first hour of the day doing maintenance on her prosthetic and reviewing whatever cases came in overnight. She eats once, usually mid-afternoon, usually something she can hold in one hand while doing something else. Her evenings are her most consistent time — she keeps a window that faces west and watches what passes for a sunset through the industrial haze. She sleeps lightly and always with her prosthetic attached.",
-  "affiliation": "Unaffiliated — fiercely independent, though she has an informal network of other street medics across the Shelf and into Old Harbor",
+  "daily_life": "Nadira wakes before the Gray Zone's ambient light cycle shifts to morning and spends the first hour of the day doing maintenance on her prosthetic and reviewing whatever cases came in overnight. She eats once, usually mid-afternoon, usually something she can hold in one hand while doing something else. Her evenings are her most consistent time — she keeps a window that faces west and watches what passes for a sunset through the industrial haze. She sleeps lightly and always with her prosthetic attached.",
+  "affiliation": "Unaffiliated — fiercely independent, though she has an informal network of other street medics across the Gray Zone and into Old Harbor",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -169,7 +174,7 @@
       "'What I won't do is—' — firm professional boundary",
       "Uses 'we' instead of 'I' — distributes the weight",
       "Goes silent, hands keep working at measured pace",
-      "Contacts her informal medic network across the Shelf and Old Harbor"
+      "Contacts her informal medic network across the Gray Zone and Old Harbor"
     ],
     "interpersonal_modes": {
       "Fenwick Oduya-Marsh": "Mutual usefulness edged with wariness — he knows more about her past than she realizes",
@@ -189,7 +194,7 @@
       "Assumes competence equals trustworthiness — has been burned by this and will be burned again"
     ],
     "habits": [
-      "Wakes before the Shelf's light cycle and maintains her prosthetic first thing",
+      "Wakes before the Gray Zone's light cycle and maintains her prosthetic first thing",
       "Eats once mid-afternoon, usually one-handed while doing something else",
       "Watches the sunset through industrial haze from the west-facing window",
       "Sleeps with prosthetic attached — always",
@@ -223,7 +228,7 @@
     "Provider": 0.9
   },
   "operating_territory": {
-    "home_turf": "The Shelf",
+    "home_turf": "the Gray Zone",
     "familiar_zones": [],
     "zone_reputation": {},
     "no_go_zones": [],
@@ -231,28 +236,18 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Guardian-12 'Bedside'",
-    "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Meridian Core",
-    "Meridian Core",
-    "The Shelf",
-    "The Peninsula",
-    "Big Rig",
-    "The Pure Hand",
-    "Slagworks Industrial"
-  ],
-  "district": "The Shelf",
   "physical_description": {
     "heritage": "Mixed heritage from Southeast Asian (47.3%), Hispanic/Latin American (33.9%), Sub-Saharan African (9.2%), and Eastern European (9.1%) ancestry. Her features reflect this complex diaspora: warm medium-deep brown skin with subtle golden undertones, high cheekbones with gentle width from her Southeast Asian and Latin heritage, and a slightly squared jawline influenced by Eastern European ancestry blended with the warmth of African heritage.",
     "height_cm": 173,
     "weight_kg": 78,
     "build": "Broad-shouldered and muscular through the chest and back, with the dense, functional physique of someone who works with their hands for a living. Her frame carries the weight of practical strength rather than bulk.",
     "hair_color": "Natural black with early grey threading through",
-    "hair_style": "Long locs, typically pinned tight at the back of her head during work; worn loose and flowing when moving through the Shelf incognito",
+    "hair_style": "Long locs, typically pinned tight at the back of her head during work; worn loose and flowing when moving through the Gray Zone incognito",
     "hair_length": "Long",
     "eye_color": "Natural dark brown (right eye); left eye features a subtle medical HUD overlay with faint amber and blue diagnostic glyphs visible in low light",
     "skin_tone": "Warm medium-deep brown with golden undertones, reflecting the dominant Southeast Asian and Hispanic/Latin American heritage with subtle warmth from Sub-Saharan African ancestry and complexity from Eastern European genetics",
@@ -268,6 +263,7 @@
     "clothing_style": "Tier 4 street-functional — well-maintained but heavily worn. Typically a fitted dark-grey or charcoal utility vest with reinforced pockets for pharmaceuticals and surgical tools over a long-sleeved black shirt (sleeves rolled to the elbow on her left, fitted close on her right to accommodate the prosthetic). Cargo pants in grey or navy with multiple tool belts. Worn leather work gloves on her left hand; the right prosthetic is often left bare for precision work. Her boots are practical military-surplus grade, scuffed but recently resoled. A faded surgical mask hangs loose around her neck at all times — a constant reminder of her work. No jewelry except a plain steel watchband on her prosthetic wrist."
   },
   "image_prompt": "Kit Quiñones, 173cm tall woman with warm deep brown skin with golden undertones, Southeast Asian and Hispanic heritage evident in high cheekbones and warm complexion, natural black hair with grey threading worn in long locs pinned at the back. Muscular broad-shouldered build from hands-on work. Dark brown natural right eye; left eye glows faintly with amber and blue medical HUD overlay in shadow. Right arm is matte-black titanium-polymer prosthetic from mid-forearm down with articulated precision fingers, bare and showing minor wear marks. Pale surgical scar visible on right temple, faded collarbone scar, ink-stained fingertips on left hand. Wearing practical tier 4 street gear: dark charcoal utility vest with reinforced pockets over long-sleeved black shirt, left sleeve rolled to elbow, right fitted for prosthetic. Grey cargo pants, military-surplus scuffed boots, worn leather work gloves on left hand. Faded surgical mask hanging loose around neck. Steel watchband on prosthetic wrist. Standing in moody neon-lit underground clinic environment, late night, dim amber and cool blue emergency lighting, GLMZ Great Lakes Metropolitan Zone aesthetic, moving with deliberate economical posture ready to lean into work, serious weathered expression of someone who has survived trauma --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Southeast Asian": 47.3,
     "Hispanic/Latin American": 33.9,
@@ -275,12 +271,6 @@
     "Eastern European": 9.1,
     "South Asian": 0.5
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Southeast Asian": {
       "Thai": {
@@ -323,6 +313,5 @@
         "Punjabi Pakistani": 0.5
       }
     }
-  },
-  "tier": "3"
+  }
 }
