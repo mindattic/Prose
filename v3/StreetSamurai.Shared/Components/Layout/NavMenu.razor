@@ -142,6 +142,9 @@
             "world-health"    => new("Tools",         "/board/tools",         "World Health",      "bi-grid-3x3-gap", "bi-heart-pulse"),
             "data-repair"     => new("Tools",         "/board/tools",         "Data Repair",       "bi-grid-3x3-gap", "bi-tools"),
             "generators"      => new("Tools",         "/board/tools",         "Generator Console", "bi-grid-3x3-gap", "bi-terminal"),
+            "stories"         => new("Tools",         "/board/tools",         "Stories",           "bi-grid-3x3-gap", "bi-pencil-square"),
+            _ when seg == "write" || seg.StartsWith("write/")
+                              => new("Tools",         "/board/tools",         "Write Story",       "bi-grid-3x3-gap", "bi-pencil-fill"),
             "contracts"       => new(null,            null,                   "Contracts",       null,                   "bi-file-earmark-text"),
             "characters"      => new("Characters",    "/board/characters",    "People",          "bi-people-fill",       "bi-person"),
             "synthetics"      => new("Characters",    "/board/characters",    "Synthetic Life",  "bi-people-fill",       "bi-cpu-fill"),

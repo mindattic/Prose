@@ -66698,3 +66698,990 @@ System.Text.Json.JsonException: 'L' is an invalid start of a value. Path: $ | Li
 2026-04-19 08:49:36PM [WRN] Xref disambiguation conflict: "LULLABY" claimed by synthetic/019d6143aa0b7c6c9fc15e993621cd5c and contract/019d6143a7a27444b466bffaed500678
 2026-04-19 08:49:36PM [WRN] Xref disambiguation conflict: "TOOTH FAIRY" claimed by synthetic/019d6143aa2b7fdd9bd7b2b784cd69be and contract/019d6143a7a3703cb376aaa175a3cbbc
 2026-04-19 08:49:36PM [WRN] Xref disambiguation conflict: "MIRROR MIRROR" claimed by synthetic/019d6143aa0e7a6eb7959983618cc2e1 and contract/019d6143a7a37a619fcef93b0e85fe14
+2026-04-19 08:58:40PM [INF] StreetSamurai Blazor host started
+2026-04-19 08:59:06PM [INF] EntityRatingService: RateAllAsync starting
+2026-04-19 08:59:06PM [INF] EntityRating: scoring 1205 character entities with 10 personas each
+2026-04-19 08:59:06PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 08:59:06PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 08:59:06PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 08:59:06PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 08:59:06PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 08:59:20PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:14.6784615"
+2026-04-19 08:59:20PM [WRN] EntityRating: character 'Soren Hinojosa-Agyemang-Achebe' — all 10 votes were null/zero, skipping
+2026-04-19 08:59:20PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 08:59:20PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 08:59:20PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 08:59:20PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 08:59:21PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 08:59:39PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:18.7536703"
+2026-04-19 08:59:41PM [WRN] EntityRating: character 'Tatiana Popescu-Yoon' — all 10 votes were null/zero, skipping
+2026-04-19 08:59:41PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 08:59:41PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 08:59:41PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 08:59:41PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 08:59:41PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 08:59:59PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:18.5886535"
+2026-04-19 08:59:59PM [WRN] EntityRating: character 'Mika Thakur' — all 10 votes were null/zero, skipping
+2026-04-19 08:59:59PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 08:59:59PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 08:59:59PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 08:59:59PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 08:59:59PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:00:17PM [INF] LLMVoting: scored vote complete — overall=7.0/10, failing=, duration="00:00:18.0135370"
+2026-04-19 09:00:17PM [INF] EntityRating: character 'Rafael Thakur' → 70 (1 new votes, 1 total, avg=7.00/10)
+2026-04-19 09:00:17PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:00:17PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:00:17PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:00:17PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:00:17PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:00:39PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:21.3671163"
+2026-04-19 09:00:39PM [WRN] EntityRating: character 'Rohan Khoury-Mukherjee-Hossain' — all 10 votes were null/zero, skipping
+2026-04-19 09:00:39PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:00:39PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:00:39PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:00:39PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:00:39PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:01:02PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:23.3970299"
+2026-04-19 09:01:02PM [WRN] EntityRating: character 'Rune Mbekele' — all 10 votes were null/zero, skipping
+2026-04-19 09:01:02PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:01:02PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:01:02PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:01:02PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:01:02PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:01:17PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:14.8238935"
+2026-04-19 09:01:17PM [WRN] EntityRating: character 'Vega Cho-Magnúsdóttir' — all 10 votes were null/zero, skipping
+2026-04-19 09:01:17PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:01:17PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:01:17PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:01:17PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:01:17PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:01:36PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:19.6601810"
+2026-04-19 09:01:36PM [WRN] EntityRating: character 'Imran Árnason-Haugen-Kittichai' — all 10 votes were null/zero, skipping
+2026-04-19 09:01:36PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:01:37PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:01:37PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:01:37PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:01:37PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:01:58PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:22.0605350"
+2026-04-19 09:01:58PM [WRN] EntityRating: character 'Taslima Dalgaard' — all 10 votes were null/zero, skipping
+2026-04-19 09:01:58PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:01:59PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:01:59PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:01:59PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:01:59PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:02:11PM [INF] LLMVoting: scored vote complete — overall=3.3/10, failing=INTEREST, duration="00:00:12.9767986"
+2026-04-19 09:02:11PM [INF] EntityRating: character 'Haze Johansson' → 33.3 (3 new votes, 3 total, avg=3.33/10)
+2026-04-19 09:02:11PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:02:12PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:02:12PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:02:12PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:02:12PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:02:33PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:21.6446888"
+2026-04-19 09:02:33PM [WRN] EntityRating: character 'Phoenix Zidane-Phommasack' — all 10 votes were null/zero, skipping
+2026-04-19 09:02:33PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:02:33PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:02:33PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:02:33PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:02:33PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:02:54PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:21.3047657"
+2026-04-19 09:02:54PM [WRN] EntityRating: character 'Obinna Cissé-Trujillo' — all 10 votes were null/zero, skipping
+2026-04-19 09:02:54PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:02:55PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:02:55PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:02:55PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:02:55PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:03:09PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:14.3186741"
+2026-04-19 09:03:09PM [WRN] EntityRating: character 'Aleksei Solberg' — all 10 votes were null/zero, skipping
+2026-04-19 09:03:09PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:03:09PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:03:09PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:03:09PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:03:09PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:03:27PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:18.4679579"
+2026-04-19 09:03:27PM [WRN] EntityRating: character 'Liv Olofsson-Tamale-Mensah' — all 10 votes were null/zero, skipping
+2026-04-19 09:03:27PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:03:27PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:03:27PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:03:27PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:03:27PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:03:50PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:22.8113797"
+2026-04-19 09:03:50PM [WRN] EntityRating: character 'Zephyr Okada-Madrigal' — all 10 votes were null/zero, skipping
+2026-04-19 09:03:50PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:03:50PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:03:50PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:03:50PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:03:50PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:04:04PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:14.2277649"
+2026-04-19 09:04:04PM [WRN] EntityRating: character 'Adaeze Okonkwo-Subramaniam' — all 10 votes were null/zero, skipping
+2026-04-19 09:04:04PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:04:04PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:04:04PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:04:04PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:04:04PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:04:18PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:13.5541450"
+2026-04-19 09:04:18PM [WRN] EntityRating: character 'Kit Solberg' — all 10 votes were null/zero, skipping
+2026-04-19 09:04:18PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:04:18PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:04:18PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:04:18PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:04:18PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:04:39PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:21.3003752"
+2026-04-19 09:04:39PM [WRN] EntityRating: character 'Szymon Chakraborty-Balasanyan-Mensah' — all 10 votes were null/zero, skipping
+2026-04-19 09:04:39PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:04:39PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:04:39PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:04:39PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:04:39PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:04:59PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:19.5512567"
+2026-04-19 09:04:59PM [WRN] EntityRating: character 'Ember Kjellberg-Bouzid' — all 10 votes were null/zero, skipping
+2026-04-19 09:04:59PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:04:59PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:04:59PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:04:59PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:04:59PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:05:13PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:14.6206488"
+2026-04-19 09:05:13PM [WRN] EntityRating: character 'Reed Traoré' — all 10 votes were null/zero, skipping
+2026-04-19 09:05:13PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:05:13PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:05:13PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:05:13PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:05:14PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:05:33PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:19.7742675"
+2026-04-19 09:05:33PM [WRN] EntityRating: character 'Sterling Holm-Venkatesh-Hernández' — all 10 votes were null/zero, skipping
+2026-04-19 09:05:33PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:05:33PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:05:33PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:05:33PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:05:33PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:05:53PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:19.8989689"
+2026-04-19 09:05:53PM [WRN] EntityRating: character 'Bjorn Nazari' — all 10 votes were null/zero, skipping
+2026-04-19 09:05:53PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:05:53PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:05:53PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:05:53PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:05:53PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:06:09PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:16.0912338"
+2026-04-19 09:06:09PM [WRN] EntityRating: character 'Kai Olofsson' — all 10 votes were null/zero, skipping
+2026-04-19 09:06:09PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:06:09PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:06:09PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:06:09PM [WRN] LLMVoting: scored voter Voter-7 (groq) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:06:09PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:06:09PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:06:18PM [DBG] Saving story project 019da8a378587fbdacc153b3b63404dc to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\019da8a378587fbdacc153b3b63404dc\story.json
+2026-04-19 09:06:29PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:19.8312291"
+2026-04-19 09:06:29PM [WRN] EntityRating: character 'Vega Guerrero' — all 10 votes were null/zero, skipping
+2026-04-19 09:06:29PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:06:29PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:06:29PM [WRN] LLMVoting: scored voter Voter-7 (groq) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:06:29PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:06:29PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:06:29PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:06:49PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:20.0535512"
+2026-04-19 09:06:49PM [WRN] EntityRating: character 'Idris Szabó' — all 10 votes were null/zero, skipping
+2026-04-19 09:06:49PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:06:49PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:06:49PM [WRN] LLMVoting: scored voter Voter-7 (groq) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:06:49PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:06:49PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:06:49PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:07:04PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:14.6791651"
+2026-04-19 09:07:04PM [WRN] EntityRating: character 'Saanvi Bhattacharya' — all 10 votes were null/zero, skipping
+2026-04-19 09:07:04PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:07:04PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:07:04PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:07:04PM [WRN] LLMVoting: scored voter Voter-7 (groq) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:07:04PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:07:04PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:07:23PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:19.6032624"
+2026-04-19 09:07:23PM [WRN] EntityRating: character 'Zara Takahashi' — all 10 votes were null/zero, skipping
+2026-04-19 09:07:23PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:07:23PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:07:23PM [WRN] LLMVoting: scored voter Voter-7 (groq) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:07:23PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:07:23PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:07:24PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:07:45PM [INF] LLMVoting: scored vote complete — overall=7.0/10, failing=, duration="00:00:21.6558865"
+2026-04-19 09:07:45PM [INF] EntityRating: character 'Jabari Mwangi-Masoe-Yun' → 70 (1 new votes, 1 total, avg=7.00/10)
+2026-04-19 09:07:45PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:07:45PM [WRN] LLMVoting: scored voter Voter-7 (groq) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:07:45PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:07:45PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:07:45PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:07:45PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:08:04PM [INF] LLMVoting: scored vote complete — overall=3.0/10, failing=INTEREST, duration="00:00:19.2381838"
+2026-04-19 09:08:04PM [INF] EntityRating: character 'Arc Sigurdsson-Wickramasinghe' → 30 (1 new votes, 1 total, avg=3.00/10)
+2026-04-19 09:08:04PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:08:04PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:08:04PM [WRN] LLMVoting: scored voter Voter-7 (groq) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:08:04PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:08:04PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:08:04PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:08:24PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:19.7846430"
+2026-04-19 09:08:24PM [WRN] EntityRating: character 'Flux Petrović' — all 10 votes were null/zero, skipping
+2026-04-19 09:08:24PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:08:24PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:08:24PM [WRN] LLMVoting: scored voter Voter-7 (groq) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:08:24PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:08:24PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:08:27PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:08:46PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:22.3015729"
+2026-04-19 09:08:46PM [WRN] EntityRating: character 'Vale Migizi-Thammasak' — all 10 votes were null/zero, skipping
+2026-04-19 09:08:46PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:08:47PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:08:47PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:08:47PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:08:47PM [WRN] LLMVoting: scored voter Voter-7 (groq) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:08:47PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:09:03PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:16.5237246"
+2026-04-19 09:09:03PM [WRN] EntityRating: character 'Rowan Montalvo' — all 10 votes were null/zero, skipping
+2026-04-19 09:09:03PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:09:03PM [WRN] LLMVoting: scored voter Voter-7 (groq) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:09:03PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:09:03PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:09:03PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:09:03PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:09:20PM [INF] LLMVoting: scored vote complete — overall=0.0/10, failing=INTEREST, duration="00:00:17.4013828"
+2026-04-19 09:09:20PM [WRN] EntityRating: character 'Rehana Mukherjee-Venkatesh' — all 10 votes were null/zero, skipping
+2026-04-19 09:09:20PM [INF] LLMVoting: starting scored vote — dimensions=1, voters=10
+2026-04-19 09:09:20PM [WRN] LLMVoting: scored voter Voter-9 (openrouter) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:09:20PM [WRN] LLMVoting: scored voter Voter-7 (groq) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 429 (Too Many Requests).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:09:20PM [WRN] LLMVoting: scored voter Voter-10 (fireworks) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:09:21PM [WRN] LLMVoting: scored voter Voter-3 (gemini) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 404 (Not Found).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallGeminiAsync(String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 137
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 78
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:09:21PM [WRN] LLMVoting: scored voter Voter-8 (together) failed
+System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallOpenAiCompatibleAsync(String providerId, String key, String model, String system, String user, Int32 maxTokens, Double temperature, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 197
+   at MindAttic.LLMVoting.Providers.LlmVotingProvider.CallAsync(String providerId, String systemPrompt, String userMessage, Int32 maxTokens, Double temperature, VoterProfile voterOverrides, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Providers\LlmVotingProvider.cs:line 80
+   at MindAttic.LLMVoting.LLMVotingService.CallScoredVoterAsync(VoterProfile voter, ScoredVoteRequest request, CancellationToken ct) in D:\Projects\MindAttic\LLMVoting\LLMVoting\Services\LLMVotingService.cs:line 322
+2026-04-19 09:10:27PM [INF] StreetSamurai Blazor host started

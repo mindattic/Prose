@@ -1,5 +1,7 @@
 {
   "id": "019d6143a59e7ae698e4ff8d0dc4cba4",
+  "rating": 70,
+  "vote_count": 1,
   "type": "character",
   "name": "Rafael Thakur",
   "aliases": [],
@@ -10,7 +12,7 @@
   "age": 52,
   "status": "active",
   "location": "Hamtramck Enclave, stall 14 of the Crossthread Arcade, near Halsted and Division",
-  "description": "Rafael Thakur is a broad-shouldered woman whose posture speaks of decades bent over a sewing frame, though she straightens with a dignity that makes customers feel they've walked into a proper establishment, not a six-by-eight closet crammed with bolt ends and hanging half-finished coats. Her skin is very dark, her hair close-cropped and silver at the temples, and she wears a pair of magnification implants over her eyes that give her a slightly owlish look — two rings of amber-tinted glass that whir faintly when she focuses. She has cosmetic scale-patterning on the backs of her hands, a faint iridescent green that she claims she got 'back when I had more optimism and fewer bills.' Her fingers move constantly whether she's working or not, small pinching and pulling gestures that drive her regulars affectionately mad.\n\nShe treats every garment as a confidence. She will not rush. She will not cut corners. She speaks her mind about fabric choices with the unflinching authority of someone who has seen ten thousand hems fail, and her critiques are offered without cruelty but also without softening — 'That synthetic stretch will pill in three washes, I don't care what the vendor told you.' She keeps a small shrine to the E.L.F. she calls Grandmother Needle in the back of her stall, a tangle of old thread wound around a salvaged sewing-machine motor, and she mutters brief prayers to it before beginning any complicated job.",
+  "description": "Rafael Thakur is a broad-shouldered woman whose posture speaks of decades bent over a sewing frame, though she straightens with a dignity that makes customers feel they\u0027ve walked into a proper establishment, not a six-by-eight closet crammed with bolt ends and hanging half-finished coats. Her skin is very dark, her hair close-cropped and silver at the temples, and she wears a pair of magnification implants over her eyes that give her a slightly owlish look \u2014 two rings of amber-tinted glass that whir faintly when she focuses. She has cosmetic scale-patterning on the backs of her hands, a faint iridescent green that she claims she got \u0027back when I had more optimism and fewer bills.\u0027 Her fingers move constantly whether she\u0027s working or not, small pinching and pulling gestures that drive her regulars affectionately mad.\n\nShe treats every garment as a confidence. She will not rush. She will not cut corners. She speaks her mind about fabric choices with the unflinching authority of someone who has seen ten thousand hems fail, and her critiques are offered without cruelty but also without softening \u2014 \u0027That synthetic stretch will pill in three washes, I don\u0027t care what the vendor told you.\u0027 She keeps a small shrine to the E.L.F. she calls Grandmother Needle in the back of her stall, a tangle of old thread wound around a salvaged sewing-machine motor, and she mutters brief prayers to it before beginning any complicated job.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -33,32 +35,36 @@
       "Recites the names of her teachers like a litany when anxious"
     ],
     "blind_spots": [
-      "Assumes people who dress poorly don't care about themselves, misreads genuine poverty as apathy",
+      "Assumes people who dress poorly don\u0027t care about themselves, misreads genuine poverty as apathy",
       "Cannot recognize when her bluntness causes lasting hurt rather than useful correction"
     ],
-    "secret": "She has been quietly altering the uniforms of Ferrogate Transit workers at cost — hiding small pockets, loosening restrictive seams, making tiny changes that make long shifts bearable. She does this because her late partner died of a stress-related cardiac event while on a Ferrogate shift and she has never forgiven the company, but this is the only revenge she allows herself."
+    "secret": "She has been quietly altering the uniforms of Ferrogate Transit workers at cost \u2014 hiding small pockets, loosening restrictive seams, making tiny changes that make long shifts bearable. She does this because her late partner died of a stress-related cardiac event while on a Ferrogate shift and she has never forgiven the company, but this is the only revenge she allows herself."
   },
   "speech_patterns": {
     "vocabulary": "Precise and practical; uses textile metaphors for everything; slips into Zulu diminutives when moved or angry",
     "cadence": "Measured and deliberate, with long pauses before judgment calls",
     "verbal_tics": [
-      "'Pull it straight before you cut'",
+      "\u0027Pull it straight before you cut\u0027",
       "Clicks her tongue before disagreeing"
     ],
     "example_lines": [
-      "'Bring it back in four days. Not three. Four.'",
-      "'This seam is a lie someone told you and you believed it. Let me show you what a real seam looks like.'",
-      "'Grandmother Needle doesn't bless hurry. Neither do I.'"
-    ]
+      "\u0027Bring it back in four days. Not three. Four.\u0027",
+      "\u0027This seam is a lie someone told you and you believed it. Let me show you what a real seam looks like.\u0027",
+      "\u0027Grandmother Needle doesn\u0027t bless hurry. Neither do I.\u0027"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "A customer brought in a coat for alteration and Abeke found something sewn into the lining — she hasn't opened it, but she hasn't turned it in either",
-    "Her arthritis has progressed to the point where she needs a surgery she can't afford; she's considering selling the shop to a Tessera-affiliated retail chain that wants the stall space, but doing so would displace six other vendors in the Arcade who depend on foot traffic she generates"
+    "A customer brought in a coat for alteration and Abeke found something sewn into the lining \u2014 she hasn\u0027t opened it, but she hasn\u0027t turned it in either",
+    "Her arthritis has progressed to the point where she needs a surgery she can\u0027t afford; she\u0027s considering selling the shop to a Tessera-affiliated retail chain that wants the stall space, but doing so would displace six other vendors in the Arcade who depend on foot traffic she generates"
   ],
   "narrative_function": "Local color and community anchor; knows everyone in the Enclave and their circumstances; can serve as an information source about neighborhood dynamics, a quest giver for small personal errands, or a moment of warmth and groundedness in a harsh city",
   "augmentations": "Magnification ocular rings (utility, not cosmetic); cosmetic scale-patterning on hands (iridescent green); arthritic-relief micro-stim patches worn on both wrists, changed daily",
-  "daily_life": "Opens her stall at 07:00, takes a single thirty-minute lunch break eating rice and smoked fish she brings from home, closes at 20:00 — never later, never earlier. Spends the last hour of each day doing inventory and leaving a small data-packet offering at the E.L.F. shrine.",
+  "daily_life": "Opens her stall at 07:00, takes a single thirty-minute lunch break eating rice and smoked fish she brings from home, closes at 20:00 \u2014 never later, never earlier. Spends the last hour of each day doing inventory and leaving a small data-packet offering at the E.L.F. shrine.",
   "affiliation": "Independent; informal member of the Hamtramck Enclave Stall-Keepers Collective",
   "uses_facets": false,
   "narration_voice": "",
@@ -101,7 +107,7 @@
   },
   "behavioral": {
     "decision_rules": [
-      "Never promise a timeline she can't keep",
+      "Never promise a timeline she can\u0027t keep",
       "Never work on something she suspects was stolen without asking one direct question first",
       "Always charge less than she should for elderly customers"
     ],
@@ -109,7 +115,7 @@
       "Polite redirection",
       "Blunt statement of displeasure",
       "Firm refusal and pointing at the door",
-      "Absolute silence — she simply stops acknowledging the person exists"
+      "Absolute silence \u2014 she simply stops acknowledging the person exists"
     ],
     "interpersonal_modes": {
       "strangers": "Professionally courteous, slightly guarded, assessing",
@@ -118,10 +124,10 @@
     "stress_responses": {
       "low": "Works faster and hums to herself",
       "medium": "Becomes very quiet and very precise",
-      "high": "Sets down whatever she's holding, goes to the shrine, stands there for five minutes without speaking"
+      "high": "Sets down whatever she\u0027s holding, goes to the shrine, stands there for five minutes without speaking"
     },
     "contradictions": [
-      "Insists she doesn't miss her late partner and has moved on, but has not changed the arrangement of the back shelf since his death"
+      "Insists she doesn\u0027t miss her late partner and has moved on, but has not changed the arrangement of the back shelf since his death"
     ],
     "habits": [
       "Pins three needles to her collar at the start of every day and returns them at the end",
@@ -129,7 +135,7 @@
     ],
     "breaking_points": [
       "Watching someone deliberately damage a garment",
-      "Being called a 'little tailor' or any other diminutive of her trade"
+      "Being called a \u0027little tailor\u0027 or any other diminutive of her trade"
     ]
   },
   "cyberware_inventory": [
@@ -209,7 +215,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Partner Deon died during a Ferrogate shift; she began quietly altering transit workers' uniforms shortly after",
+      "event": "Partner Deon died during a Ferrogate shift; she began quietly altering transit workers\u0027 uniforms shortly after",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -224,21 +230,13 @@
     }
   ],
   "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Plinker-22 'Tin Can'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Hamtramck Enclave",
-    "Grandmother",
-    "Tessera Corponation",
-    "Silver",
-    "Glass",
-    "The Pure Hand"
-  ],
-  "district": "the Gray Zone",
   "physical_description": {
-    "heritage": "Cosmopolitan genetic blend reflecting the Ubiquitous Diaspora: South Asian (25.9%), Hispanic/Latin American (25.6%), East Asian (23.4%), Southeast Asian (13.2%), and Sub-Saharan African (11.9%) ancestry. The nearly equal distribution of South Asian and Hispanic/Latin American ancestry creates a balanced foundation, significantly enhanced by East and Southeast Asian features. This multi-continental mix produces distinctive phenotypic markers: prominent high cheekbones and slightly elevated eye placement from East-Southeast Asian ancestry, warm golden-bronze skin undertones from South Asian and Hispanic/Latin American heritage, Sub-Saharan depth in skin richness, and a unique blend of facial structure that resists singular categorization—distinctly cosmopolitan.",
+    "heritage": "Cosmopolitan genetic blend reflecting the Ubiquitous Diaspora: South Asian (25.9%), Hispanic/Latin American (25.6%), East Asian (23.4%), Southeast Asian (13.2%), and Sub-Saharan African (11.9%) ancestry. The nearly equal distribution of South Asian and Hispanic/Latin American ancestry creates a balanced foundation, significantly enhanced by East and Southeast Asian features. This multi-continental mix produces distinctive phenotypic markers: prominent high cheekbones and slightly elevated eye placement from East-Southeast Asian ancestry, warm golden-bronze skin undertones from South Asian and Hispanic/Latin American heritage, Sub-Saharan depth in skin richness, and a unique blend of facial structure that resists singular categorization\u2014distinctly cosmopolitan.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Broad-shouldered and substantial, with the forward-rounded posture of someone who has spent decades hunched over precision work; strong core and forearms, softer through the middle from age and sedentary labor",
@@ -247,16 +245,17 @@
     "hair_length": "Short",
     "eye_color": "Deep brown, partially obscured by amber-tinted magnification implant rings",
     "skin_tone": "Warm golden-bronze complexion with honeyed undertones, reflecting the balanced warmth of South Asian and Hispanic/Latin American ancestry deepened and enriched by Sub-Saharan African heritage, with the subtle clarity that East and Southeast Asian ancestry contributes to overall skin luminosity",
-    "complexion": "Lined face showing age with dignity; deep crow's feet from decades of squinting; prominent high cheekbones reflecting East and Southeast Asian ancestry structure softened and warmed by South Asian fullness and Hispanic/Latin American robustness; warm golden-bronze skin with luminous undertone characteristic of the five-ancestry blend; no visible blemishes or breakouts",
+    "complexion": "Lined face showing age with dignity; deep crow\u0027s feet from decades of squinting; prominent high cheekbones reflecting East and Southeast Asian ancestry structure softened and warmed by South Asian fullness and Hispanic/Latin American robustness; warm golden-bronze skin with luminous undertone characteristic of the five-ancestry blend; no visible blemishes or breakouts",
     "distinguishing_marks": [
       "Cosmetic iridescent green scale-patterning on the backs of both hands, faint and deliberately understated, described by the wearer as a relic of younger optimism",
       "Fine white threading of old scars across both palms consistent with needle-prick accumulation over fifty years of sewing work"
     ],
-    "visible_augmentations": "Twin magnification ocular rings mounted over eyes—amber-tinted glass bezels that whir audibly during focus adjustment, giving a slight owlish quality; daily-rotated micro-stim patches visible on both wrists, typically flesh-colored or neutral-tone adhesive strips beneath rolled sleeves",
-    "posture_movement": "Carries herself with deliberate dignity despite spinal curvature from occupational posture; walks with a slight forward lean; hands are in near-constant motion—pinching, pulling, and fingering imaginary fabric even at rest; movements are economical and precise, never wasted",
-    "clothing_style": "Practical Tier 3-4 working aesthetic: well-maintained but unpretentious. Typically wears a fitted cotton work dress or tunic in neutral tones (charcoal, taupe, dark indigo) with a fitted linen apron bearing multiple deep pockets worn over the top. Wrists typically bare or wearing the stim patches. Feet in worn but expertly maintained leather slip-ons. No jewelry except a single thin silver band on her left ring finger. Her own clothes are impeccably mended—a living advertisement of her craft."
+    "visible_augmentations": "Twin magnification ocular rings mounted over eyes\u2014amber-tinted glass bezels that whir audibly during focus adjustment, giving a slight owlish quality; daily-rotated micro-stim patches visible on both wrists, typically flesh-colored or neutral-tone adhesive strips beneath rolled sleeves",
+    "posture_movement": "Carries herself with deliberate dignity despite spinal curvature from occupational posture; walks with a slight forward lean; hands are in near-constant motion\u2014pinching, pulling, and fingering imaginary fabric even at rest; movements are economical and precise, never wasted",
+    "clothing_style": "Practical Tier 3-4 working aesthetic: well-maintained but unpretentious. Typically wears a fitted cotton work dress or tunic in neutral tones (charcoal, taupe, dark indigo) with a fitted linen apron bearing multiple deep pockets worn over the top. Wrists typically bare or wearing the stim patches. Feet in worn but expertly maintained leather slip-ons. No jewelry except a single thin silver band on her left ring finger. Her own clothes are impeccably mended\u2014a living advertisement of her craft."
   },
-  "image_prompt": "Rafael Thakur, a 168cm master tailor in her fifties with warm golden-bronze skin blending South Asian, Hispanic, East Asian, Southeast Asian, and Sub-Saharan African heritage. Prominent high cheekbones, lined face with dignity, deep crow's feet, dark charcoal hair with silver temples. Twin amber-tinted magnification ocular implants mounted over deep brown eyes with slight owlish quality. Broad-shouldered build with forward posture from decades of precision work. Wearing fitted charcoal cotton work dress with fitted linen apron bearing deep pockets, rolled sleeves showing flesh-colored micro-stim patches. Faint iridescent green scale-patterning visible on backs of both hands; fine white scars across palms. Worn leather slip-ons, single thin silver band on left ring finger. Standing in a 2226 neo-noir great-lakeside workshop with soft industrial lighting, hands in motion performing delicate sewing work, atmosphere of meticulous craftsmanship and earned experience. Film noir color grading, realistic portrait --ar 2:3 --v 6",
+  "image_prompt": "Rafael Thakur, a 168cm master tailor in her fifties with warm golden-bronze skin blending South Asian, Hispanic, East Asian, Southeast Asian, and Sub-Saharan African heritage. Prominent high cheekbones, lined face with dignity, deep crow\u0027s feet, dark charcoal hair with silver temples. Twin amber-tinted magnification ocular implants mounted over deep brown eyes with slight owlish quality. Broad-shouldered build with forward posture from decades of precision work. Wearing fitted charcoal cotton work dress with fitted linen apron bearing deep pockets, rolled sleeves showing flesh-colored micro-stim patches. Faint iridescent green scale-patterning visible on backs of both hands; fine white scars across palms. Worn leather slip-ons, single thin silver band on left ring finger. Standing in a 2226 neo-noir great-lakeside workshop with soft industrial lighting, hands in motion performing delicate sewing work, atmosphere of meticulous craftsmanship and earned experience. Film noir color grading, realistic portrait --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "South Asian": 25.9,
     "Hispanic/Latin American": 25.6,
@@ -264,12 +263,6 @@
     "Southeast Asian": 13.2,
     "Sub-Saharan African": 11.9
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "South Asian": {
       "Nepali": {
@@ -310,6 +303,5 @@
         "Gabonese": 7
       }
     }
-  },
-  "tier": "2"
+  }
 }
