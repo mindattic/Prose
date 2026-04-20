@@ -1428,6 +1428,14 @@ textarea.auto-grow {
 .board-tile-name { font-size: 0.8rem; font-weight: 500; text-align: center; line-height: 1.3; }
 .board-tile-count { position: absolute; bottom: 2px; right: 10px; font-size: 0.65rem; color: #8b949e; }
 
+/* ── Fact Discovery ─────────────────────────────────────────────────────── */
+.fact-stat-card { background:#1c2128; border-radius:6px; padding:10px 12px; text-align:center; }
+.fact-stat-label { font-size:0.65rem; text-transform:uppercase; letter-spacing:0.08em; color:#8b949e; }
+.fact-stat-value { font-size:1.4rem; font-weight:700; line-height:1.2; }
+.fact-flag-row { padding:8px 12px; border-left-width:3px !important; border-left-style:solid; background:#161b22; margin-bottom:1px; }
+.fact-flag-source { font-size:0.65rem; color:#444d56; margin-top:3px; font-family:monospace; }
+.fact-vote-result { font-size:0.72rem; padding:3px 6px; background:#0d1117; border-radius:3px; }
+
 /* ── Topnav split dropdown (label = board link, caret = toggle) ─────────── */
 .topnav-split-drop { display: inline-flex; align-items: stretch; }
 .topnav-split-caret { padding: 0 5px !important; min-width: unset !important; }

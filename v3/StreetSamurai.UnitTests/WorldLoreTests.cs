@@ -311,12 +311,15 @@ public class WorldLoreTests
         var paths = new TestPathProviderWithRoot(xrefTempDir);
         xrefChars = new(paths);
         xrefFactions = new(paths);
+        var xrefSettings = new SettingsService(xrefTempDir);
+        xrefSettings.EnablePlainTextNer = true;
         xrefSvc = new XrefService(
             xrefChars, new(paths), new(paths), xrefFactions, new(paths), new(paths),
             new(paths), new(paths), new(paths), new(paths), new(paths), new(paths),
             new(paths), new(paths), new(paths), new(paths), new(paths), new(paths),
             new(paths), new(paths), new(paths), new(paths), new(paths),
-            Microsoft.Extensions.Logging.Abstractions.NullLogger<XrefService>.Instance);
+            Microsoft.Extensions.Logging.Abstractions.NullLogger<XrefService>.Instance,
+            xrefSettings);
     }
 
     [OneTimeTearDown]

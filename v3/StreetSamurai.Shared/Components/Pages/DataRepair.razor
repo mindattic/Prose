@@ -1,0 +1,226 @@
+@page "/data-repair"
+@inject DataRepairService Repair
+@implements IDisposable
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h4 class="text-danger mb-0">Data Repair</h4>
+    <div class="d-flex gap-2 align-items-center">
+        @if (Repair.IsRunning)
+        {
+            @if (Repair.IsPaused)
+            {
+                <button class="btn btn-sm btn-outline-success" @onclick="Repair.Resume">
+                    <i class="bi bi-play-fill"></i> Resume
+                </button>
+            }
+            else
+            {
+                <button class="btn btn-sm btn-outline-secondary" @onclick="Repair.Pause">
+                    <i class="bi bi-pause-fill"></i> Pause
+                </button>
+            }
+            <button class="btn btn-sm btn-outline-danger" @onclick="Repair.Cancel">
+                <i class="bi bi-stop-fill"></i> Cancel
+            </button>
+        }
+        else
+        {
+            @if (Repair.DryRun)
+            {
+                <span class="badge bg-secondary me-1"><i class="bi bi-eye"></i> Preview Mode</span>
+            }
+            else
+            {
+                <span class="badge bg-warning text-dark me-1"><i class="bi bi-pencil-fill"></i> Write Mode</span>
+            }
+            <button class="btn btn-sm btn-outline-warning" @onclick="StartRun" disabled="@Repair.IsRunning">
+                <i class="bi bi-tools"></i> @(Repair.DryRun ? "Preview" : "Apply")
+            </button>
+        }
+    </div>
+</div>
+
+@* Progress bar *@
+@if (Repair.IsRunning)
+{
+    var p = Repair.Progress;
+    var pct = p.Total > 0 ? (int)(100.0 * p.Processed / p.Total) : 0;
+    <div class="mb-3 p-3 rounded" style="background:#1c2128;">
+        <div class="d-flex justify-content-between small text-muted mb-1">
+            <span class="@(Repair.IsPaused ? "text-muted" : "text-warning")">@p.Phase @(p.Current.Length > 0 ? "— " + p.Current : "")</span>
+            <span>@p.Processed.ToString("N0") / @p.Total.ToString("N0")</span>
+        </div>
+        <div class="progress" style="height:3px;">
+            <div class="progress-bar @(Repair.IsPaused ? "bg-secondary" : "bg-warning")" style="width:@pct%"></div>
+        </div>
+    </div>
+}
+
+<div class="row g-3 mb-3">
+    @* Tool toggles *@
+    <div class="col-md-5">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted"><i class="bi bi-toggles"></i> Tools</div>
+            <div class="card-body">
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="chkFactRepair"
+                           checked="@enableFactRepair" @onchange="@(e => enableFactRepair = (bool)(e.Value ?? false))"
+                           disabled="@Repair.IsRunning" />
+                    <label class="form-check-label" for="chkFactRepair">
+                        <span class="text-warning fw-semibold">Fact Repair</span>
+                        <div class="small text-muted">Writes high-confidence fact consensus values back to source JSON files. Requires facts.db from Fact Discovery.</div>
+                    </label>
+                </div>
+                @if (enableFactRepair)
+                {
+                    <div class="ms-4 mb-3 d-flex align-items-center gap-2">
+                        <span class="small text-muted">Min confidence:</span>
+                        <input type="range" class="form-range" style="width:80px;" min="60" max="100" step="5"
+                               value="@((int)(factConfidence * 100))"
+                               @onchange="@(e => factConfidence = int.Parse(e.Value?.ToString() ?? "90") / 100.0)" />
+                        <span class="small text-muted">@((int)(factConfidence * 100))%</span>
+                    </div>
+                }
+
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="chkTerritory"
+                           checked="@enableTerritory" @onchange="@(e => enableTerritory = (bool)(e.Value ?? false))"
+                           disabled="@Repair.IsRunning" />
+                    <label class="form-check-label" for="chkTerritory">
+                        <span class="text-info fw-semibold">Territory Assignment</span>
+                        <div class="small text-muted">Adds <code>glmzTerritory</code> to corponation files using the static zone map. Skips corps already assigned.</div>
+                    </label>
+                </div>
+
+                <div class="form-check mb-2">
+                    <input class="form-check-input" type="checkbox" id="chkZone"
+                           checked="@enableZoneInfer" @onchange="@(e => enableZoneInfer = (bool)(e.Value ?? false))"
+                           disabled="@Repair.IsRunning" />
+                    <label class="form-check-label" for="chkZone">
+                        <span class="text-success fw-semibold">Zone Inference</span>
+                        <div class="small text-muted">Infers <code>zone</code> from lat/lng coordinates for place files that have coordinates but no zone.</div>
+                    </label>
+                </div>
+
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="chkWiki"
+                           checked="@enableWikiLinks" @onchange="@(e => enableWikiLinks = (bool)(e.Value ?? false))"
+                           disabled="@Repair.IsRunning" />
+                    <label class="form-check-label" for="chkWiki">
+                        <span class="text-danger fw-semibold">Wiki Link Writer</span>
+                        <div class="small text-muted">Scans entity description/body text and inserts <code>[[Name]]</code> for unlinked entity mentions. Safe to re-run (won't double-link).</div>
+                    </label>
+                </div>
+
+                <div class="border-top border-secondary pt-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="chkDry"
+                               checked="@dryRun" @onchange="@(e => dryRun = (bool)(e.Value ?? true))"
+                               disabled="@Repair.IsRunning" />
+                        <label class="form-check-label small" for="chkDry">
+                            <strong>Dry Run</strong> — preview changes without writing files
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* Stats *@
+    <div class="col-md-7">
+        <div class="card bg-dark text-light border-secondary mb-3">
+            <div class="card-header text-muted"><i class="bi bi-bar-chart"></i> Results</div>
+            <div class="card-body">
+                <div class="row g-2">
+                    <div class="col">
+                        <div class="fact-stat-card">
+                            <div class="fact-stat-label">Facts Repaired</div>
+                            <div class="fact-stat-value text-warning">@Repair.FactsRepaired</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="fact-stat-card">
+                            <div class="fact-stat-label">Territories</div>
+                            <div class="fact-stat-value text-info">@Repair.TerritoriesAssigned</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="fact-stat-card">
+                            <div class="fact-stat-label">Zones Inferred</div>
+                            <div class="fact-stat-value text-success">@Repair.ZonesInferred</div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="fact-stat-card">
+                            <div class="fact-stat-label">Wiki Links</div>
+                            <div class="fact-stat-value text-danger">@Repair.WikiLinksInserted</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @* Change log *@
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted d-flex justify-content-between">
+                <span><i class="bi bi-list-ul"></i> Change Log</span>
+                <span class="badge bg-secondary">@Repair.ChangeLog.Count entries</span>
+            </div>
+            <div class="card-body p-0" style="max-height:300px;overflow-y:auto;font-family:monospace;">
+                @if (Repair.ChangeLog.Count == 0)
+                {
+                    <div class="text-muted text-center py-3 small" style="font-family:inherit;">Run a preview or apply to see changes here.</div>
+                }
+                else
+                {
+                    @foreach (var entry in Repair.ChangeLog.AsEnumerable().Reverse().Take(200))
+                    {
+                        var color = entry.Contains("[DRY RUN]") ? "text-muted" :
+                                    entry.Contains("Error")     ? "text-danger" :
+                                    entry.Contains("[Fact")     ? "text-warning" :
+                                    entry.Contains("[Territory]") ? "text-info" :
+                                    entry.Contains("[Zone]")    ? "text-success" :
+                                    entry.Contains("[Wiki]")    ? "#f78166" : "text-light";
+                        <div class="px-3 py-1 border-bottom border-secondary border-opacity-10 small" style="color:@color;">@entry</div>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private bool enableFactRepair  = true;
+    private bool enableTerritory   = true;
+    private bool enableZoneInfer   = true;
+    private bool enableWikiLinks   = true;
+    private bool dryRun            = true;
+    private double factConfidence  = 0.9;
+
+    protected override void OnInitialized()
+    {
+        Repair.StateChanged += OnStateChanged;
+    }
+
+    private void OnStateChanged() => InvokeAsync(StateHasChanged);
+
+    private async Task StartRun()
+    {
+        Repair.RunFactRepair          = enableFactRepair;
+        Repair.RunTerritoryAssignment = enableTerritory;
+        Repair.RunZoneInference       = enableZoneInfer;
+        Repair.RunWikiLinkWriter      = enableWikiLinks;
+        Repair.DryRun                 = dryRun;
+        Repair.FactRepairMinConfidence = factConfidence;
+        StateHasChanged();
+        _ = Repair.RunAsync();
+        await Task.Yield();
+    }
+
+    public void Dispose()
+    {
+        Repair.StateChanged -= OnStateChanged;
+        if (Repair.IsRunning && !Repair.IsPaused)
+            Repair.Pause();
+    }
+}

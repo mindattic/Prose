@@ -24,7 +24,7 @@
                 <div class="col-md-6"><label class="form-label text-muted small">Core Theme</label><input class="form-control form-control-sm bg-dark text-light border-secondary" @bind="bible.CoreTheme" /></div>
                 <div class="col-md-6"><label class="form-label text-muted small">Core Hook</label><input class="form-control form-control-sm bg-dark text-light border-secondary" @bind="bible.CoreHook" /></div>
             </div>
-            <div class="mb-2"><label class="form-label text-muted small">Setting</label><textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="2" @bind="bible.Setting"></textarea></div>
+            <div class="mb-2"><label class="form-label text-muted small">Setting (JSON)</label><textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="2" @bind="bibleSettingText"></textarea></div>
             <div class="mb-2"><label class="form-label text-muted small">Protagonist</label><input class="form-control form-control-sm bg-dark text-light border-secondary" @bind="bible.Protagonist" /></div>
             <div class="mb-2"><label class="form-label text-muted small">Arc</label><textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="2" @bind="bible.Arc"></textarea></div>
             <button class="btn btn-sm btn-success" @onclick="SaveBible"><i class="bi bi-floppy"></i><div class="btn-lbl"> Save</div></button>
@@ -37,7 +37,7 @@
                 @if (bible.Tone.Length > 0) { <div><strong>Tone:</strong> @bible.Tone</div> }
                 @if (bible.CoreTheme.Length > 0) { <div><strong>Core Theme:</strong> @bible.CoreTheme</div> }
                 @if (bible.CoreHook.Length > 0) { <div><strong>Core Hook:</strong> @bible.CoreHook</div> }
-                @if (bible.Setting.Length > 0) { <div><strong>Setting:</strong> @bible.Setting</div> }
+                @if (bibleSettingText.Length > 0) { <div><strong>Setting:</strong> @bibleSettingText</div> }
                 @if (bible.Protagonist.Length > 0) { <div><strong>Protagonist:</strong> @bible.Protagonist</div> }
                 @if (bible.Arc.Length > 0) { <div><strong>Arc:</strong> @bible.Arc</div> }
             </div>
@@ -120,6 +120,7 @@
     private List<MotifData> motifs = [];
     private bool editBible, _editRules;
     private string filter = "";
+    private string bibleSettingText = "";
 
     private IEnumerable<MotifData> FilteredMotifs => string.IsNullOrWhiteSpace(filter)
         ? motifs
@@ -135,6 +136,8 @@
         bible = StoryBibleRepo.Get();
         rules = LitRulesRepo.Get();
         motifs = MotifRepo.GetAll();
+        bibleSettingText = bible.Setting.ValueKind != System.Text.Json.JsonValueKind.Undefined
+            ? bible.Setting.ToString() : "";
         rulesPov = rules.Structural.Pov;
         _rulesPace = rules.Structural.Pace;
         _rulesEnding = rules.Structural.Ending;

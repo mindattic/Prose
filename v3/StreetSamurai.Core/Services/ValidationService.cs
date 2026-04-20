@@ -239,6 +239,20 @@ public class ValidationService
             if (json.EndsWith("```")) json = json[..^3];
             json = json.Trim();
 
+            // Some providers wrap JSON in prose — extract the array if present
+            if (!json.StartsWith("[") && !json.StartsWith("{"))
+            {
+                var start = json.IndexOf('[');
+                var end = json.LastIndexOf(']');
+                if (start >= 0 && end > start)
+                    json = json[start..(end + 1)];
+                else
+                {
+                    log.LogDebug("Provider {Provider} returned prose instead of JSON — treating as clean", providerName);
+                    return [];
+                }
+            }
+
             var parsed = System.Text.Json.JsonSerializer.Deserialize<List<RawCanonIssue>>(json,
                 new System.Text.Json.JsonSerializerOptions { PropertyNameCaseInsensitive = true });
 

@@ -159,7 +159,13 @@ public class MultiLlmService
         req.Content = new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json");
 
         var res = await http.SendAsync(req, ct);
-        res.EnsureSuccessStatusCode();
+        if (!res.IsSuccessStatusCode)
+        {
+            var errorBody = await res.Content.ReadAsStringAsync(ct);
+            var snippet = errorBody.Length > 300 ? errorBody[..300] : errorBody;
+            throw new HttpRequestException(
+                $"{provider.Name} {(int)res.StatusCode} {res.ReasonPhrase}: {snippet}");
+        }
         var json = await res.Content.ReadAsStringAsync(ct);
         var doc = JsonDocument.Parse(json);
         return doc.RootElement.GetProperty("choices")[0].GetProperty("message").GetProperty("content").GetString() ?? "";
@@ -182,7 +188,11 @@ public class MultiLlmService
         req.Content = new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json");
 
         var res = await http.SendAsync(req, ct);
-        res.EnsureSuccessStatusCode();
+        if (!res.IsSuccessStatusCode)
+        {
+            var err = await res.Content.ReadAsStringAsync(ct);
+            throw new HttpRequestException($"{provider.Name} {(int)res.StatusCode}: {(err.Length > 300 ? err[..300] : err)}");
+        }
         var json = await res.Content.ReadAsStringAsync(ct);
         var doc = JsonDocument.Parse(json);
         return doc.RootElement.GetProperty("content")[0].GetProperty("text").GetString() ?? "";
@@ -207,7 +217,11 @@ public class MultiLlmService
         req.Content = new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json");
 
         var res = await http.SendAsync(req, ct);
-        res.EnsureSuccessStatusCode();
+        if (!res.IsSuccessStatusCode)
+        {
+            var err = await res.Content.ReadAsStringAsync(ct);
+            throw new HttpRequestException($"{provider.Name} {(int)res.StatusCode}: {(err.Length > 300 ? err[..300] : err)}");
+        }
         var json = await res.Content.ReadAsStringAsync(ct);
         var doc = JsonDocument.Parse(json);
         return doc.RootElement.GetProperty("candidates")[0].GetProperty("content").GetProperty("parts")[0].GetProperty("text").GetString() ?? "";
@@ -230,7 +244,11 @@ public class MultiLlmService
         req.Content = new StringContent(JsonSerializer.Serialize(payload), Encoding.UTF8, "application/json");
 
         var res = await http.SendAsync(req, ct);
-        res.EnsureSuccessStatusCode();
+        if (!res.IsSuccessStatusCode)
+        {
+            var err = await res.Content.ReadAsStringAsync(ct);
+            throw new HttpRequestException($"{provider.Name} {(int)res.StatusCode}: {(err.Length > 300 ? err[..300] : err)}");
+        }
         var json = await res.Content.ReadAsStringAsync(ct);
         var doc = JsonDocument.Parse(json);
         return doc.RootElement.GetProperty("message").GetProperty("content")[0].GetProperty("text").GetString() ?? "";

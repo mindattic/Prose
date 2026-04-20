@@ -47,6 +47,7 @@ public class XrefService
     private bool indexBuilt;
     private readonly object syncLock = new();
     private readonly ILogger<XrefService> logger;
+    private readonly SettingsService settings;
     private List<XrefConflict> conflicts = [];
 
     public XrefService(
@@ -73,10 +74,12 @@ public class XrefService
         ContractRepository contracts,
         LabSpecimenRepository labSpecimens,
         PsionicRepository psionics,
-        ILogger<XrefService> logger
+        ILogger<XrefService> logger,
+        SettingsService settings
         )
     {
         this.logger = logger;
+        this.settings = settings;
         this.characters = characters;
         this.synthetics = synthetics;
         this.districts = districts;
@@ -342,7 +345,9 @@ public class XrefService
             pass1.Add(new PlainSegment(text[cursor..]));
 
         // Pass 2: scan PlainSegments for entity name mentions (longest-match-first NER).
-        // Sorted descending by length so "The Circuit" beats "Circuit".
+        if (!settings.EnablePlainTextNer)
+            return pass1;
+
         var sortedNames = index.Keys.OrderByDescending(k => k.Length).ToList();
         var result = new List<TextSegment>();
         foreach (var seg in pass1)

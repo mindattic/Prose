@@ -56,16 +56,16 @@ window.meridianMap = {
         }
     },
 
-    _hoverInfoWindow: null,
+    _placeInfoWindow: null,
 
     loadPlaces: function (places) {
         var map = this.map;
         var self = this;
         var isDark = this.currentTheme === 'dark';
-        if (!this._hoverInfoWindow) {
-            this._hoverInfoWindow = new google.maps.InfoWindow({ disableAutoPan: true });
+        if (!this._placeInfoWindow) {
+            this._placeInfoWindow = new google.maps.InfoWindow();
         }
-        var infoWindow = this._hoverInfoWindow;
+        var infoWindow = this._placeInfoWindow;
 
         places.forEach(function (p) {
             var style = self._markerStyles[p.cat] || self._markerStyles['default'];
@@ -92,19 +92,19 @@ window.meridianMap = {
             marker._labelText = p.name;
             marker._category = p.cat;
 
-            // Tooltip on hover
-            var tooltipContent = '<div style="font-family:Outfit,sans-serif;max-width:280px;padding:4px;">' +
-                '<div style="font-weight:600;color:#dc3545;font-size:13px;margin-bottom:4px;">' + p.name + '</div>' +
-                '<div style="font-size:10px;color:#8b949e;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:4px;">' + (p.cat || 'place') + '</div>' +
-                (p.desc ? '<div style="font-size:12px;color:#333;line-height:1.4;">' + p.desc + '</div>' : '') +
+            // Popover on click — stays open, contains a link to the entity page
+            var entityUrl = p.id ? '/places?id=' + encodeURIComponent(p.id) : '/places';
+            var popoverContent =
+                '<div style="font-family:Outfit,sans-serif;max-width:280px;padding:4px 2px;">' +
+                '<div style="font-weight:600;color:#dc3545;font-size:13px;margin-bottom:3px;">' + p.name + '</div>' +
+                '<div style="font-size:10px;color:#8b949e;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:6px;">' + (p.cat || 'place') + '</div>' +
+                (p.desc ? '<div style="font-size:12px;color:#444;line-height:1.45;margin-bottom:8px;">' + p.desc + '</div>' : '') +
+                '<a href="' + entityUrl + '" style="font-size:11px;color:#58a6ff;text-decoration:none;font-weight:500;">Open in Encyclopedia →</a>' +
                 '</div>';
 
-            marker.addListener('mouseover', function () {
-                infoWindow.setContent(tooltipContent);
+            marker.addListener('click', function () {
+                infoWindow.setContent(popoverContent);
                 infoWindow.open(map, marker);
-            });
-            marker.addListener('mouseout', function () {
-                infoWindow.close();
             });
 
             self.placeMarkers.push(marker);
@@ -227,8 +227,8 @@ window.meridianMap = {
         if (!el) return;
 
         this.map = new google.maps.Map(el, {
-            center: { lat: 42.2, lng: -87.85 },
-            zoom: 9,
+            center: { lat: 43.1, lng: -87.90 },
+            zoom: 8,
             disableDefaultUI: true,
             zoomControl: true,
             mapTypeControl: false,
@@ -251,7 +251,7 @@ window.meridianMap = {
         });
 
         this._drawCorridor();
-        this._drawDistricts();
+        this._drawZones();
         this._drawCityMarkers();
     },
 
@@ -298,131 +298,339 @@ window.meridianMap = {
         });
     },
 
-    _drawDistricts: function () {
+    _drawZones: function () {
         var map = this.map;
         var layers = this.districtLayers;
 
-        // District definitions — approximate Chicago-area polygons
-        // These overlap intentionally to show the vertical layering of tiers
-
-        var districts = [
+        // Corponation sovereign territories + gray zones along The Spine (Z1–Z10+)
+        // Polygons hug the western Lake Michigan coastline; gray zones are ungoverned buffer strips
+        var zones = [
+            // Z11 — Southern Wrap: Indiana Arc around the base of Lake Michigan
             {
-                name: 'The Shelf',
-                tier: 'Tier 1',
-                color: '#dc3545', // red
+                id: 'Z11',
+                name: 'Z11 — Southern Wrap / Indiana Arc',
+                corps: 'Ashgrave Eastern Ops · Dunes Extraction Cooperative · Hearthstone Heavy Industries',
+                tier: 'Industrial',
+                color: '#ff7b72',
+                opacity: 0.11,
+                paths: [
+                    { lat: 41.620, lng: -87.530 },
+                    { lat: 41.580, lng: -87.290 },
+                    { lat: 41.645, lng: -86.960 },
+                    { lat: 41.775, lng: -86.660 },
+                    { lat: 41.900, lng: -86.650 },
+                    { lat: 41.900, lng: -86.910 },
+                    { lat: 41.785, lng: -87.110 },
+                    { lat: 41.678, lng: -87.530 }
+                ]
+            },
+            // Z6 — South Side Chicago + Gary + Hammond industrial arc
+            {
+                id: 'Z6',
+                name: 'Z6 — South Side / Gary Industrial Arc',
+                corps: 'Ashgrave Materials · Slagworks Industrial · Scoria Works · Cinderfall Energy',
+                tier: 'Industrial',
+                color: '#f85149',
+                opacity: 0.14,
+                paths: [
+                    { lat: 41.840, lng: -87.575 },
+                    { lat: 41.826, lng: -87.533 },
+                    { lat: 41.720, lng: -87.516 },
+                    { lat: 41.628, lng: -87.528 },
+                    { lat: 41.620, lng: -87.530 },
+                    { lat: 41.626, lng: -87.650 },
+                    { lat: 41.630, lng: -87.825 },
+                    { lat: 41.762, lng: -87.832 },
+                    { lat: 41.840, lng: -87.786 }
+                ]
+            },
+            // Gray Zone: Z6 ↔ Z1
+            {
+                id: 'GZ6-1',
+                name: 'Gray Zone — Z6 / Z1 Buffer',
+                corps: 'Ungoverned territory',
+                tier: 'Gray Zone',
+                color: '#8b949e',
+                opacity: 0.09,
+                paths: [
+                    { lat: 41.840, lng: -87.575 },
+                    { lat: 41.840, lng: -87.786 },
+                    { lat: 41.852, lng: -87.779 },
+                    { lat: 41.852, lng: -87.597 }
+                ]
+            },
+            // Z1 — Chicago Loop / Meridian Core (elite hub, Tessera Grand Exchange)
+            {
+                id: 'Z1',
+                name: 'Z1 — Chicago Loop / Meridian Core',
+                corps: 'Tessera · Arcturus (Coldwall) · Axiom Kinetics · Waxwing Neuromedia',
+                tier: 'Elite',
+                color: '#e6edf3',
                 opacity: 0.15,
-                // South Side + far West Side — ground level, the foundation
                 paths: [
-                    { lat: 41.92, lng: -87.76 },
-                    { lat: 41.92, lng: -87.58 },
-                    { lat: 41.82, lng: -87.54 },
-                    { lat: 41.72, lng: -87.54 },
-                    { lat: 41.64, lng: -87.56 },
-                    { lat: 41.64, lng: -87.68 },
-                    { lat: 41.72, lng: -87.76 },
-                    { lat: 41.78, lng: -87.80 },
-                    { lat: 41.85, lng: -87.80 }
+                    { lat: 41.852, lng: -87.597 },
+                    { lat: 41.921, lng: -87.614 },
+                    { lat: 41.921, lng: -87.763 },
+                    { lat: 41.852, lng: -87.779 }
                 ]
             },
+            // Z5 — West Suburbs (inland; no lake access)
             {
-                name: 'The Circuit',
-                tier: 'Tier 2-3',
-                color: '#f0883e', // orange
-                opacity: 0.12,
-                // Broad working ring — Pilsen, Bridgeport, Logan Square, Humboldt Park
-                paths: [
-                    { lat: 41.97, lng: -87.72 },
-                    { lat: 41.97, lng: -87.63 },
-                    { lat: 41.92, lng: -87.60 },
-                    { lat: 41.84, lng: -87.60 },
-                    { lat: 41.82, lng: -87.64 },
-                    { lat: 41.84, lng: -87.70 },
-                    { lat: 41.88, lng: -87.74 },
-                    { lat: 41.93, lng: -87.74 }
-                ]
-            },
-            {
-                name: 'Old Harbor',
-                tier: 'Tier 2',
-                color: '#58a6ff', // blue
-                opacity: 0.15,
-                // Southern lakefront — Navy Pier south through Calumet
-                paths: [
-                    { lat: 41.90, lng: -87.61 },
-                    { lat: 41.90, lng: -87.58 },
-                    { lat: 41.86, lng: -87.54 },
-                    { lat: 41.74, lng: -87.52 },
-                    { lat: 41.66, lng: -87.53 },
-                    { lat: 41.66, lng: -87.56 },
-                    { lat: 41.73, lng: -87.56 },
-                    { lat: 41.82, lng: -87.58 },
-                    { lat: 41.87, lng: -87.60 }
-                ]
-            },
-            {
-                name: 'The Laceworks',
-                tier: 'Tier 3-4',
-                color: '#a371f7', // purple
-                opacity: 0.12,
-                // North Side — Lakeview, Lincoln Square, Andersonville, Uptown
-                paths: [
-                    { lat: 42.02, lng: -87.70 },
-                    { lat: 42.02, lng: -87.63 },
-                    { lat: 41.98, lng: -87.63 },
-                    { lat: 41.95, lng: -87.64 },
-                    { lat: 41.94, lng: -87.66 },
-                    { lat: 41.95, lng: -87.70 },
-                    { lat: 41.98, lng: -87.71 }
-                ]
-            },
-            {
-                name: 'Meridian Core',
-                tier: 'Tier 3-4',
-                color: '#e6edf3', // white
+                id: 'Z5',
+                name: 'Z5 — West Suburbs / Oak Park / Cicero',
+                corps: 'Ferrogate Transit · Marrowvault Cryogenics · Stonepath Logistics',
+                tier: 'Mid-Low',
+                color: '#79c0ff',
                 opacity: 0.10,
-                // The Loop — compact downtown
                 paths: [
-                    { lat: 41.895, lng: -87.645 },
-                    { lat: 41.895, lng: -87.620 },
-                    { lat: 41.875, lng: -87.620 },
-                    { lat: 41.875, lng: -87.640 },
-                    { lat: 41.880, lng: -87.645 }
+                    { lat: 41.852, lng: -87.779 },
+                    { lat: 41.921, lng: -87.763 },
+                    { lat: 41.921, lng: -87.998 },
+                    { lat: 41.852, lng: -87.998 }
                 ]
             },
+            // Gray Zone: Z1 ↔ Z2
             {
-                name: 'The Spires',
-                tier: 'Tier 4-5',
-                color: '#d2a8ff', // gold/lavender
-                opacity: 0.10,
-                // Gold Coast, Mag Mile, Lake Shore Drive north — plus tower tops everywhere
+                id: 'GZ1-2',
+                name: 'Gray Zone — Z1 / Z2 Buffer',
+                corps: 'Ungoverned territory',
+                tier: 'Gray Zone',
+                color: '#8b949e',
+                opacity: 0.09,
                 paths: [
-                    { lat: 41.92, lng: -87.635 },
-                    { lat: 41.92, lng: -87.615 },
-                    { lat: 41.895, lng: -87.615 },
-                    { lat: 41.895, lng: -87.625 },
-                    { lat: 41.90, lng: -87.635 }
+                    { lat: 41.921, lng: -87.614 },
+                    { lat: 41.921, lng: -87.763 },
+                    { lat: 41.934, lng: -87.754 },
+                    { lat: 41.934, lng: -87.625 }
+                ]
+            },
+            // Z2 — Gold Coast / Lakeview / Uptown
+            {
+                id: 'Z2',
+                name: 'Z2 — Gold Coast / Lakeview / Uptown',
+                corps: 'Helix Biosystems · Novafold Pharma · Rictus Entertainment · Vespid Dynamics',
+                tier: 'High',
+                color: '#d2a8ff',
+                opacity: 0.13,
+                paths: [
+                    { lat: 41.934, lng: -87.625 },
+                    { lat: 41.997, lng: -87.643 },
+                    { lat: 41.997, lng: -87.744 },
+                    { lat: 41.934, lng: -87.754 }
+                ]
+            },
+            // Gray Zone: Z2 ↔ Z3
+            {
+                id: 'GZ2-3',
+                name: 'Gray Zone — Z2 / Z3 Buffer',
+                corps: 'Ungoverned territory',
+                tier: 'Gray Zone',
+                color: '#8b949e',
+                opacity: 0.09,
+                paths: [
+                    { lat: 41.997, lng: -87.643 },
+                    { lat: 41.997, lng: -87.744 },
+                    { lat: 42.011, lng: -87.750 },
+                    { lat: 42.011, lng: -87.652 }
+                ]
+            },
+            // Z3 — Rogers Park / Evanston
+            {
+                id: 'Z3',
+                name: 'Z3 — Rogers Park / Evanston',
+                corps: 'Vellichor Institute · Pellucid Systems',
+                tier: 'Mid-High',
+                color: '#58a6ff',
+                opacity: 0.13,
+                paths: [
+                    { lat: 42.011, lng: -87.652 },
+                    { lat: 42.110, lng: -87.695 },
+                    { lat: 42.110, lng: -87.796 },
+                    { lat: 42.011, lng: -87.750 }
+                ]
+            },
+            // Gray Zone: Z3 ↔ Z4
+            {
+                id: 'GZ3-4',
+                name: 'Gray Zone — Z3 / Z4 Buffer',
+                corps: 'Ungoverned territory',
+                tier: 'Gray Zone',
+                color: '#8b949e',
+                opacity: 0.09,
+                paths: [
+                    { lat: 42.110, lng: -87.695 },
+                    { lat: 42.110, lng: -87.796 },
+                    { lat: 42.126, lng: -87.803 },
+                    { lat: 42.126, lng: -87.707 }
+                ]
+            },
+            // Z4 — North Shore / Waukegan corridor
+            {
+                id: 'Z4',
+                name: 'Z4 — North Shore / Waukegan Corridor',
+                corps: 'Saltmarsh Telecom · Ashford Signal · Oracle Drift · Ringo (Northern Ops)',
+                tier: 'Mid',
+                color: '#3fb950',
+                opacity: 0.12,
+                paths: [
+                    { lat: 42.126, lng: -87.707 },
+                    { lat: 42.235, lng: -87.768 },
+                    { lat: 42.378, lng: -87.848 },
+                    { lat: 42.378, lng: -87.978 },
+                    { lat: 42.126, lng: -87.908 }
+                ]
+            },
+            // Gray Zone: Z4 ↔ Z7 (IL/WI state-seam — historically the widest gray zone)
+            {
+                id: 'GZ4-7',
+                name: 'Gray Zone — Z4 / Z7 Buffer (IL/WI State Seam)',
+                corps: 'Ungoverned — IL/WI bureaucratic gap',
+                tier: 'Gray Zone',
+                color: '#8b949e',
+                opacity: 0.13,
+                paths: [
+                    { lat: 42.378, lng: -87.848 },
+                    { lat: 42.378, lng: -87.978 },
+                    { lat: 42.415, lng: -87.988 },
+                    { lat: 42.415, lng: -87.858 }
+                ]
+            },
+            // Z7 — Kenosha / Racine corridor
+            {
+                id: 'Z7',
+                name: 'Z7 — Kenosha / Racine Corridor',
+                corps: 'Liang-Petrova Consortium · Dredge Mining Collective · Emberlace Systems',
+                tier: 'Low-Mid',
+                color: '#d29922',
+                opacity: 0.12,
+                paths: [
+                    { lat: 42.415, lng: -87.858 },
+                    { lat: 42.574, lng: -87.822 },
+                    { lat: 42.787, lng: -87.798 },
+                    { lat: 42.787, lng: -87.995 },
+                    { lat: 42.415, lng: -87.988 }
+                ]
+            },
+            // Gray Zone: Z7 ↔ Z8
+            {
+                id: 'GZ7-8',
+                name: 'Gray Zone — Z7 / Z8 Buffer',
+                corps: 'Ungoverned territory',
+                tier: 'Gray Zone',
+                color: '#8b949e',
+                opacity: 0.09,
+                paths: [
+                    { lat: 42.787, lng: -87.798 },
+                    { lat: 42.787, lng: -87.995 },
+                    { lat: 42.808, lng: -88.001 },
+                    { lat: 42.808, lng: -87.806 }
+                ]
+            },
+            // Z8 — Milwaukee (2nd city of The Spine)
+            {
+                id: 'Z8',
+                name: 'Z8 — Milwaukee',
+                corps: 'Ouroboros Energy · Sulfur Crown Agriculture · Ironclad Agrisystems · Gravemoss Biofoundry · Silkworm Data',
+                tier: 'Mid (2nd City)',
+                color: '#56d364',
+                opacity: 0.12,
+                paths: [
+                    { lat: 42.808, lng: -87.806 },
+                    { lat: 42.904, lng: -87.854 },
+                    { lat: 43.047, lng: -87.903 },
+                    { lat: 43.242, lng: -87.880 },
+                    { lat: 43.242, lng: -88.118 },
+                    { lat: 42.808, lng: -88.062 }
+                ]
+            },
+            // Gray Zone: Z8 ↔ Z9
+            {
+                id: 'GZ8-9',
+                name: 'Gray Zone — Z8 / Z9 Buffer',
+                corps: 'Ungoverned territory',
+                tier: 'Gray Zone',
+                color: '#8b949e',
+                opacity: 0.09,
+                paths: [
+                    { lat: 43.242, lng: -87.880 },
+                    { lat: 43.242, lng: -88.118 },
+                    { lat: 43.264, lng: -88.110 },
+                    { lat: 43.264, lng: -87.889 }
+                ]
+            },
+            // Z9 — Ozaukee / Sheboygan coastal corridor
+            {
+                id: 'Z9',
+                name: 'Z9 — Ozaukee / Sheboygan Coastal Corridor',
+                corps: 'Crestfall Aquaculture · Irontide Tidal Energy · Kelpline Logistics · Pelican Drift Aquatics',
+                tier: 'Low',
+                color: '#1f6feb',
+                opacity: 0.12,
+                paths: [
+                    { lat: 43.264, lng: -87.889 },
+                    { lat: 43.514, lng: -87.760 },
+                    { lat: 43.767, lng: -87.726 },
+                    { lat: 43.767, lng: -87.944 },
+                    { lat: 43.264, lng: -88.010 }
+                ]
+            },
+            // Gray Zone: Z9 ↔ Z10
+            {
+                id: 'GZ9-10',
+                name: 'Gray Zone — Z9 / Z10 Buffer',
+                corps: 'Ungoverned territory',
+                tier: 'Gray Zone',
+                color: '#8b949e',
+                opacity: 0.09,
+                paths: [
+                    { lat: 43.767, lng: -87.726 },
+                    { lat: 43.767, lng: -87.944 },
+                    { lat: 43.793, lng: -87.950 },
+                    { lat: 43.793, lng: -87.735 }
+                ]
+            },
+            // Z10 — Green Bay metro + Fox Valley + Door Peninsula
+            {
+                id: 'Z10',
+                name: 'Z10 — Green Bay Metro / Fox Valley / Door Peninsula',
+                corps: 'Thornback Agrichemical · Verdant Systems · Rendstone Nuclear · Coldwater Logistics',
+                tier: 'Major City',
+                color: '#ffa657',
+                opacity: 0.13,
+                paths: [
+                    { lat: 43.793, lng: -87.735 },
+                    { lat: 44.115, lng: -87.642 },
+                    { lat: 44.385, lng: -87.565 },
+                    { lat: 44.562, lng: -87.654 },
+                    { lat: 44.575, lng: -88.058 },
+                    { lat: 44.575, lng: -88.228 },
+                    { lat: 43.793, lng: -87.963 }
                 ]
             }
         ];
 
-        districts.forEach(function (d) {
+        zones.forEach(function (d) {
+            var isGray = d.tier === 'Gray Zone';
             var polygon = new google.maps.Polygon({
                 paths: d.paths,
                 strokeColor: d.color,
-                strokeOpacity: 0.6,
-                strokeWeight: 1.5,
+                strokeOpacity: isGray ? 0.3 : 0.65,
+                strokeWeight: isGray ? 1 : 1.5,
                 fillColor: d.color,
                 fillOpacity: d.opacity,
                 map: map
             });
 
-            // Info window on click
             var infoWindow = new google.maps.InfoWindow();
             polygon.addListener('click', function (e) {
+                var corpsHtml = (d.corps === 'Ungoverned territory' || d.corps.startsWith('Ungoverned'))
+                    ? '<span style="font-size:11px;color:#777;font-style:italic;display:block;margin-top:4px;">Ungoverned — gray market access</span>'
+                    : '<span style="font-size:11px;color:#555;display:block;margin-top:4px;">' + d.corps + '</span>';
                 infoWindow.setContent(
-                    '<div style="color:#0d1117;font-family:Outfit,sans-serif;padding:4px;">' +
-                    '<strong style="color:#dc3545;">' + d.name + '</strong><br>' +
-                    '<span style="font-size:12px;color:#555;">' + d.tier + '</span>' +
+                    '<div style="color:#0d1117;font-family:Outfit,sans-serif;padding:4px;max-width:320px;">' +
+                    '<strong style="color:' + d.color + ';">' + d.name + '</strong>' +
+                    '<br><span style="font-size:10px;color:#8b949e;text-transform:uppercase;letter-spacing:0.5px;">' + d.tier + '</span>' +
+                    corpsHtml +
                     '</div>'
                 );
                 infoWindow.setPosition(e.latLng);
@@ -431,26 +639,26 @@ window.meridianMap = {
 
             layers.push(polygon);
 
-            // District label
-            var bounds = new google.maps.LatLngBounds();
-            d.paths.forEach(function (p) { bounds.extend(p); });
-            var center = bounds.getCenter();
-
-            var labelMarker = new google.maps.Marker({
-                position: center,
-                map: map,
-                label: {
-                    text: d.name,
-                    color: d.color,
-                    fontSize: '10px',
-                    fontFamily: 'Outfit, sans-serif',
-                    fontWeight: '600'
-                },
-                icon: { path: 'M 0,0', scale: 0 }
-            });
-            labelMarker._districtColor = d.color;
-            labelMarker._labelText = d.name;
-            window.meridianMap.districtLabels.push(labelMarker);
+            if (!isGray) {
+                var bounds = new google.maps.LatLngBounds();
+                d.paths.forEach(function (p) { bounds.extend(p); });
+                var center = bounds.getCenter();
+                var labelMarker = new google.maps.Marker({
+                    position: center,
+                    map: map,
+                    label: {
+                        text: d.id,
+                        color: d.color,
+                        fontSize: '10px',
+                        fontFamily: 'Outfit, sans-serif',
+                        fontWeight: '600'
+                    },
+                    icon: { path: 'M 0,0', scale: 0 }
+                });
+                labelMarker._districtColor = d.color;
+                labelMarker._labelText = d.id;
+                window.meridianMap.districtLabels.push(labelMarker);
+            }
         });
     }
 };

@@ -1,69 +1,129 @@
 @page "/facts"
 @inject FactDiscoveryService Facts
+@inject FactExtractionService Extraction
+@inject FactResolutionService Resolution
+@inject SettingsService SettingsSvc
+@implements IDisposable
 
-<h4 class="text-danger mb-3">Fact Discovery</h4>
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h4 class="text-danger mb-0">Fact Discovery</h4>
+    <div class="d-flex gap-2 align-items-center">
+        @if (Extraction.IsRunning)
+        {
+            @if (Extraction.IsPaused)
+            {
+                <button class="btn btn-sm btn-outline-success" @onclick="Extraction.Resume">
+                    <i class="bi bi-play-fill"></i> Resume
+                </button>
+            }
+            else
+            {
+                <button class="btn btn-sm btn-outline-secondary" @onclick="Extraction.Pause">
+                    <i class="bi bi-pause-fill"></i> Pause
+                </button>
+            }
+            <button class="btn btn-sm btn-outline-danger" @onclick="CancelExtraction">
+                <i class="bi bi-stop-fill"></i> Cancel
+            </button>
+        }
+        else if (confirmRun)
+        {
+            <span class="small text-warning me-1">Replace existing data?</span>
+            <button class="btn btn-sm btn-warning" @onclick="StartExtraction">Yes, run</button>
+            <button class="btn btn-sm btn-outline-secondary" @onclick="@(() => confirmRun = false)">No</button>
+        }
+        else
+        {
+            <button class="btn btn-sm btn-outline-warning" @onclick="@(() => confirmRun = true)"
+                    disabled="@(!SettingsSvc.ApiKey.Length.Equals(SettingsSvc.ApiKey.Length) || string.IsNullOrWhiteSpace(SettingsSvc.ApiKey))">
+                <i class="bi bi-play-fill"></i> Run Extraction
+            </button>
+        }
+    </div>
+</div>
 
-@if (!Facts.IsAvailable)
+@* Progress bar *@
+@if (Extraction.IsRunning)
 {
-    <div class="card bg-dark text-light border-secondary">
-        <div class="card-body text-center py-5">
-            <i class="bi bi-database-slash" style="font-size: 3rem; color: var(--bs-secondary);"></i>
-            <p class="mt-3 text-muted">Fact database not found. Run the Python pipeline first:</p>
-            <code class="text-info">cd v3/python && python run_fact_pipeline.py</code>
+    var p = Extraction.Progress;
+    var pct = p.Total > 0 ? (int)(100.0 * p.Processed / p.Total) : 0;
+    var barColor = Extraction.IsPaused ? "bg-secondary" : "bg-warning";
+    var phaseColor = Extraction.IsPaused ? "text-muted" : "text-warning";
+    <div class="mb-3 p-3 rounded" style="background:#1c2128;">
+        <div class="d-flex justify-content-between small text-muted mb-1">
+            <span class="@phaseColor">@p.Phase @(p.Current.Length > 0 ? "— " + p.Current : "")</span>
+            <span>@p.Processed.ToString("N0") / @p.Total.ToString("N0")</span>
+        </div>
+        <div class="progress" style="height:3px;">
+            <div class="progress-bar @barColor" style="width:@pct%"></div>
         </div>
     </div>
 }
-else
+
+@* No data placeholder *@
+@if (!Facts.IsAvailable && !Extraction.IsRunning)
 {
-    <div class="row g-3 mb-3">
-        <div class="col-md-2">
-            <div class="card bg-dark text-light border-secondary text-center p-3">
-                <div class="text-muted small">Triples</div>
-                <div class="text-danger fs-4 fw-bold">@stats.TotalTriples.ToString("N0")</div>
+    <div class="card bg-dark text-light border-secondary">
+        <div class="card-body text-center py-5">
+            <i class="bi bi-lightbulb" style="font-size:3rem;color:var(--bs-secondary);"></i>
+            <p class="mt-3 text-muted">No fact database found.</p>
+            <p class="small text-muted">Click <strong>Run Extraction</strong> to extract SPO triples from all world entities via Claude Haiku. This requires an API key and takes 15-30 minutes.</p>
+        </div>
+    </div>
+}
+
+@* Main content — shown when DB exists *@
+@if (Facts.IsAvailable)
+{
+    @* Stats strip *@
+    <div class="row g-2 mb-3">
+        <div class="col">
+            <div class="fact-stat-card">
+                <div class="fact-stat-label">Triples</div>
+                <div class="fact-stat-value text-danger">@stats.TotalTriples.ToString("N0")</div>
             </div>
         </div>
-        <div class="col-md-2">
-            <div class="card bg-dark text-light border-secondary text-center p-3">
-                <div class="text-muted small">Sources</div>
-                <div class="text-info fs-4 fw-bold">@stats.SourceFiles.ToString("N0")</div>
+        <div class="col">
+            <div class="fact-stat-card">
+                <div class="fact-stat-label">Sources</div>
+                <div class="fact-stat-value text-info">@stats.SourceFiles.ToString("N0")</div>
             </div>
         </div>
-        <div class="col-md-2">
-            <div class="card bg-dark text-light border-secondary text-center p-3">
-                <div class="text-muted small">Clusters</div>
-                <div class="fs-4 fw-bold">@stats.Clusters.ToString("N0")</div>
+        <div class="col">
+            <div class="fact-stat-card">
+                <div class="fact-stat-label">Consensus</div>
+                <div class="fact-stat-value text-success">@stats.ConsensussClaims.ToString("N0")</div>
             </div>
         </div>
-        <div class="col-md-2">
-            <div class="card bg-dark text-light border-secondary text-center p-3">
-                <div class="text-muted small">Consensus</div>
-                <div class="text-success fs-4 fw-bold">@stats.ConsensussClaims.ToString("N0")</div>
+        <div class="col">
+            <div class="fact-stat-card">
+                <div class="fact-stat-label">Flagged</div>
+                <div class="fact-stat-value text-warning">@stats.FlaggedInconsistencies.ToString("N0")</div>
             </div>
         </div>
-        <div class="col-md-2">
-            <div class="card bg-dark text-light border-secondary text-center p-3">
-                <div class="text-muted small">Flagged</div>
-                <div class="text-warning fs-4 fw-bold">@stats.FlaggedInconsistencies.ToString("N0")</div>
+        <div class="col">
+            <div class="fact-stat-card">
+                <div class="fact-stat-label">Dismissed</div>
+                <div class="fact-stat-value text-muted">@stats.Repaired.ToString("N0")</div>
             </div>
         </div>
-        <div class="col-md-2">
-            <div class="card bg-dark text-light border-secondary text-center p-3">
-                <div class="text-muted small">Confidence</div>
-                <div class="fs-4 fw-bold">@(stats.AverageConfidence > 0 ? stats.AverageConfidence.ToString("P0") : "—")</div>
+        <div class="col">
+            <div class="fact-stat-card">
+                <div class="fact-stat-label">Avg Confidence</div>
+                <div class="fact-stat-value">@(stats.AverageConfidence > 0 ? stats.AverageConfidence.ToString("P0") : "—")</div>
             </div>
         </div>
     </div>
 
     <div class="row g-3">
-        <div class="col-md-6">
-            <div class="card bg-dark text-light border-secondary">
-                <div class="card-header text-muted">
-                    <i class="bi bi-search"></i> Query Facts
-                </div>
+        @* Left: query *@
+        <div class="col-md-5">
+            <div class="card bg-dark text-light border-secondary h-100">
+                <div class="card-header text-muted"><i class="bi bi-search"></i> Query Facts</div>
                 <div class="card-body">
                     <div class="input-group mb-3">
                         <input type="text" class="form-control bg-dark text-light border-secondary"
-                               placeholder="Search subject..." @bind="searchQuery" @bind:event="oninput"
+                               placeholder="Entity name…" @bind="searchQuery" @bind:event="oninput"
                                @onkeydown="@(e => { if (e.Key == "Enter") Search(); })" />
                         <button class="btn btn-outline-danger" @onclick="Search">
                             <i class="bi bi-search"></i>
@@ -72,52 +132,117 @@ else
 
                     @if (searchResults.Count > 0)
                     {
-                        <table class="table table-dark table-sm">
-                            <thead><tr><th>Subject</th><th>Predicate</th><th>Value</th><th>Confidence</th><th>Sources</th></tr></thead>
-                            <tbody>
-                                @foreach (var r in searchResults)
-                                {
-                                    var confClass = r.Confidence >= 0.8 ? "text-success" : r.Confidence >= 0.6 ? "text-warning" : "text-danger";
+                        <div style="max-height:480px;overflow-y:auto;">
+                            <table class="table table-dark table-sm mb-0">
+                                <thead>
                                     <tr>
-                                        <td class="small">@r.Subject</td>
-                                        <td class="small text-info">@r.Predicate</td>
-                                        <td class="small">@r.Value</td>
-                                        <td class="small @confClass">@r.Confidence.ToString("P0")</td>
-                                        <td class="small text-muted">@r.AgreeSources/@r.TotalSources</td>
+                                        <th class="small">Predicate</th>
+                                        <th class="small">Value</th>
+                                        <th class="small text-end">Conf</th>
+                                        <th class="small text-end">Src</th>
                                     </tr>
-                                }
-                            </tbody>
-                        </table>
+                                </thead>
+                                <tbody>
+                                    @foreach (var r in searchResults)
+                                    {
+                                        var cc = r.Confidence >= 0.8 ? "text-success" : r.Confidence >= 0.6 ? "text-warning" : "text-danger";
+                                        <tr>
+                                            <td class="small text-info">@r.Predicate</td>
+                                            <td class="small">@r.Value</td>
+                                            <td class="small @cc text-end">@r.Confidence.ToString("P0")</td>
+                                            <td class="small text-muted text-end">@r.AgreeSources/@r.TotalSources</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="small text-muted mt-2">@searchResults.Count result(s) for "@lastSearch"</div>
+                    }
+                    else if (lastSearch.Length > 0)
+                    {
+                        <div class="text-muted small text-center py-3">No facts found for "@lastSearch"</div>
                     }
                 </div>
             </div>
         </div>
 
-        <div class="col-md-6">
+        @* Right: flagged inconsistencies *@
+        <div class="col-md-7">
             <div class="card bg-dark text-light border-secondary">
-                <div class="card-header text-muted d-flex justify-content-between">
+                <div class="card-header text-muted d-flex justify-content-between align-items-center">
                     <span><i class="bi bi-exclamation-triangle"></i> Flagged Inconsistencies</span>
-                    <span class="badge bg-warning">@flagged.Count</span>
+                    <div class="d-flex align-items-center gap-2">
+                        <span class="small text-muted">≥</span>
+                        <input type="range" class="form-range" style="width:80px;" min="0" max="100" step="10"
+                               value="@((int)(confidenceFilter * 100))"
+                               @onchange="OnConfidenceChanged" />
+                        <span class="small text-muted">@((int)(confidenceFilter * 100))%</span>
+                        <span class="badge bg-warning text-dark">@flagged.Count</span>
+                    </div>
                 </div>
-                <div class="card-body" style="max-height: 500px; overflow-y: auto;">
+                <div class="card-body p-0" style="max-height:540px;overflow-y:auto;">
                     @if (flagged.Count == 0)
                     {
-                        <div class="text-muted text-center py-3">No flagged inconsistencies</div>
+                        <div class="text-muted text-center py-4">
+                            <i class="bi bi-check-circle text-success"></i> No active inconsistencies
+                        </div>
                     }
                     else
                     {
                         @foreach (var f in flagged)
                         {
-                            var confClass = f.Confidence >= 0.9 ? "text-success" : f.Confidence >= 0.7 ? "text-warning" : "text-danger";
-                            <div class="mb-2 p-2 rounded" style="background: #1c2128;">
-                                <div class="small fw-bold">@f.EntityName</div>
-                                <div class="small">
-                                    @f.Predicate:
-                                    <span class="text-danger">@f.IncorrectValue</span>
-                                    <i class="bi bi-arrow-right mx-1"></i>
-                                    <span class="text-success">@f.CorrectValue</span>
+                            var cc = f.Confidence >= 0.9 ? "border-success" : f.Confidence >= 0.7 ? "border-warning" : "border-danger";
+                            var isResolving = resolving.Contains(f.Id);
+                            resolutionResults.TryGetValue(f.Id, out var voteResult);
+                            <div class="fact-flag-row border-start @cc">
+                                <div class="d-flex justify-content-between align-items-start gap-2">
+                                    <div class="flex-grow-1 min-w-0">
+                                        <span class="small fw-bold text-light">@f.EntityName</span>
+                                        <span class="small text-muted ms-2">@f.Predicate</span>
+                                        <div class="small mt-1">
+                                            <span class="text-danger">@f.IncorrectValue</span>
+                                            <i class="bi bi-arrow-right mx-1 text-muted"></i>
+                                            <span class="text-success">@f.CorrectValue</span>
+                                            <span class="text-muted ms-2">(@f.Confidence.ToString("P0"))</span>
+                                        </div>
+                                        <div class="fact-flag-source">@Path.GetFileName(f.SourceFile)</div>
+                                    </div>
+                                    <div class="d-flex gap-1 flex-shrink-0">
+                                        @if (Resolution.HasProviders)
+                                        {
+                                            <button class="btn btn-link btn-sm text-info p-0" title="Ask LLMs to decide"
+                                                    disabled="@isResolving"
+                                                    @onclick="() => Resolve(f)">
+                                                @if (isResolving)
+                                                {
+                                                    <span class="spinner-border spinner-border-sm"></span>
+                                                }
+                                                else
+                                                {
+                                                    <i class="bi bi-stars"></i>
+                                                }
+                                            </button>
+                                        }
+                                        <button class="btn btn-link btn-sm text-muted p-0" title="Dismiss"
+                                                @onclick="() => Dismiss(f.Id)">
+                                            <i class="bi bi-x-lg"></i>
+                                        </button>
+                                    </div>
                                 </div>
-                                <div class="small text-muted">Confidence: <span class="@confClass">@f.Confidence.ToString("P0")</span></div>
+                                @if (voteResult != null)
+                                {
+                                    var voteClass = voteResult.MinorityWon ? "text-warning" : "text-success";
+                                    var voteIcon  = voteResult.MinorityWon ? "bi-exclamation-triangle" : "bi-check-circle";
+                                    <div class="fact-vote-result mt-1">
+                                        <i class="bi @voteIcon @voteClass me-1"></i>
+                                        <span class="@voteClass">@voteResult.WinningValue</span>
+                                        <span class="text-muted ms-1">(@voteResult.VoterCount model(s), @voteResult.ConsensusStrength.ToString("P0"))</span>
+                                        @if (voteResult.MinorityWon)
+                                        {
+                                            <span class="text-warning ms-1">— source file may need correction</span>
+                                        }
+                                    </div>
+                                }
                             </div>
                         }
                     }
@@ -128,23 +253,108 @@ else
 }
 
 @code {
-    private FactStats stats = new();
-    private string searchQuery = "";
-    private List<ConsensusClaim> searchResults = [];
-    private List<FlaggedFact> flagged = [];
+    private FactStats    stats          = new();
+    private string       searchQuery    = "";
+    private string       lastSearch     = "";
+    private List<ConsensusClaim>          searchResults     = [];
+    private List<FlaggedFact>             flagged           = [];
+    private HashSet<int>                  resolving         = [];
+    private Dictionary<int, ResolutionResult> resolutionResults = [];
+    private double confidenceFilter = 0;
+    private bool confirmRun = false;
 
     protected override void OnInitialized()
     {
-        if (Facts.IsAvailable)
+        Extraction.StateChanged += OnExtractionStateChanged;
+        RefreshData();
+    }
+
+    private void RefreshData()
+    {
+        if (!Facts.IsAvailable) return;
+        stats   = Facts.GetStats();
+        flagged = Facts.GetFlagged(200, confidenceFilter);
+    }
+
+    private void OnExtractionStateChanged()
+    {
+        InvokeAsync(() =>
         {
-            stats = Facts.GetStats();
-            flagged = Facts.GetFlagged(50);
-        }
+            if (!Extraction.IsRunning)
+                RefreshData();
+            StateHasChanged();
+        });
+    }
+
+    private async Task StartExtraction()
+    {
+        confirmRun = false;
+        StateHasChanged();
+        _ = Extraction.RunAsync(resume: false);
+        await Task.Yield();
+    }
+
+    private void CancelExtraction()
+    {
+        Extraction.Cancel();
     }
 
     private void Search()
     {
         if (string.IsNullOrWhiteSpace(searchQuery)) return;
-        searchResults = Facts.QuerySubject(searchQuery);
+        lastSearch    = searchQuery.Trim();
+        searchResults = Facts.QuerySubject(lastSearch);
+    }
+
+    private void Dismiss(int id)
+    {
+        Facts.MarkDismissed(id);
+        resolutionResults.Remove(id);
+        flagged = Facts.GetFlagged(200, confidenceFilter);
+        stats   = Facts.GetStats();
+    }
+
+    private async Task Resolve(FlaggedFact fact)
+    {
+        resolving.Add(fact.Id);
+        StateHasChanged();
+        try
+        {
+            var result = await Resolution.ResolveAsync(fact);
+            resolutionResults[fact.Id] = result;
+            flagged = Facts.GetFlagged(200, confidenceFilter);
+            stats   = Facts.GetStats();
+        }
+        catch (Exception ex)
+        {
+            resolutionResults[fact.Id] = new ResolutionResult
+            {
+                FlagId       = fact.Id,
+                WinningValue = "Error: " + ex.Message,
+                QuorumReached = false,
+            };
+        }
+        finally
+        {
+            resolving.Remove(fact.Id);
+            StateHasChanged();
+        }
+    }
+
+    private void OnConfidenceChanged(ChangeEventArgs e)
+    {
+        if (int.TryParse(e.Value?.ToString(), out var val))
+        {
+            confidenceFilter = val / 100.0;
+            flagged = Facts.GetFlagged(200, confidenceFilter);
+        }
+    }
+
+    public void Dispose()
+    {
+        Extraction.StateChanged -= OnExtractionStateChanged;
+        // Auto-pause when navigating away — Resume button appears on return
+        if (Extraction.IsRunning && !Extraction.IsPaused)
+            Extraction.Pause();
     }
 }

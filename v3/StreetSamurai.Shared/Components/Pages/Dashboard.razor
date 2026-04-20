@@ -9,9 +9,80 @@
 @inject ITtsService Tts
 @inject TriviaService TriviaSvc
 @inject IWriteAccessProvider Access
+@inject StoryDirectorService Director
+@implements IDisposable
 
 
 <div class="row g-3 mt-2">
+
+    @* ── Story Engine ────────────────────────────────────── *@
+    @if (Access.CanWrite)
+    {
+        <div class="col-12">
+            <div class="card bg-dark text-light border-secondary">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <span class="text-danger fw-semibold"><i class="bi bi-book-half me-1"></i>Story Engine</span>
+                    <a href="stories" class="text-info small text-decoration-none">Open Stories →</a>
+                </div>
+                <div class="card-body py-2">
+                    @if (Director.IsGenerating)
+                    {
+                        <div class="d-flex align-items-center gap-3 flex-wrap">
+                            <div class="spinner-border spinner-border-sm text-danger flex-shrink-0"></div>
+                            <div class="flex-grow-1" style="min-width:0;">
+                                @if (Director.CurrentStory != null)
+                                {
+                                    <div class="d-flex flex-wrap gap-2 small mb-1">
+                                        <span><span class="text-muted">Protagonist</span> <span class="text-light fw-semibold">@Director.CurrentStory.Protagonist</span></span>
+                                        @if (Director.CurrentStory.Characters.Count > 0)
+                                        {
+                                            <span class="text-muted">|</span>
+                                            <span><span class="text-muted">Cast</span> <span class="text-light">@string.Join(", ", Director.CurrentStory.Characters)</span></span>
+                                        }
+                                        @if (!string.IsNullOrEmpty(Director.CurrentStory.Location))
+                                        {
+                                            <span class="text-muted">|</span>
+                                            <span><span class="text-muted">Zone</span> <span class="text-light">@Director.CurrentStory.Location</span></span>
+                                        }
+                                    </div>
+                                }
+                                <div class="small text-warning">@Director.ProgressMessage</div>
+                                @if (Director.ProgressTotal > 0)
+                                {
+                                    <div class="progress mt-1" style="height:3px;">
+                                        <div class="progress-bar bg-danger" style="width:@(Director.ProgressCurrent * 100 / Director.ProgressTotal)%"></div>
+                                    </div>
+                                    <div class="small text-muted mt-1">Beat @Director.ProgressCurrent / @Director.ProgressTotal</div>
+                                }
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        var recent = stories.FirstOrDefault();
+                        <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+                            @if (recent != null)
+                            {
+                                <div class="small">
+                                    <span class="text-muted">Last story:</span>
+                                    <a href="write/@recent.Id" class="text-light fst-italic text-decoration-none ms-1">@recent.Title</a>
+                                    <span class="badge bg-secondary ms-2" style="font-size:0.6rem;">@recent.Status</span>
+                                </div>
+                            }
+                            else
+                            {
+                                <span class="small text-muted">No stories yet.</span>
+                            }
+                            <a href="stories" class="btn btn-sm btn-outline-danger">
+                                <i class="bi bi-lightning me-1"></i>Generate Story
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    }
+
     @if (Access.CanWrite)
     {
         @* ── Stories ────────────────────────────────────────── *@
@@ -118,7 +189,14 @@
             .ToList();
         orphanCount = allNodes.Count(n => string.IsNullOrWhiteSpace(n.Id) || string.IsNullOrWhiteSpace(n.Name)
             || Graph.GetAllEdges(n.Id).Count == 0);
+
+        Director.OnProgress += OnDirectorProgress;
     }
+
+    private void OnDirectorProgress(DirectorProgress _) =>
+        InvokeAsync(StateHasChanged);
+
+    public void Dispose() => Director.OnProgress -= OnDirectorProgress;
 
     private string[] triviaRing = [];
     private int triviaPos;

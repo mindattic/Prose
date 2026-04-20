@@ -29,7 +29,14 @@
                     @if (!_confirmDelete)
                     {
                         <button class="btn btn-sm btn-success" @onclick="SaveEdit"><i class="bi bi-floppy"></i><div class="btn-lbl"> Save</div></button>
-                        @if (!isNew) { <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-archive"></i></button> }
+                        @if (!isNew)
+                        {
+                            <button class="btn btn-sm btn-outline-primary" title="Generate a story with this character as protagonist"
+                                    @onclick="GenerateStory">
+                                <i class="bi bi-lightning"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-danger" @onclick="() => _confirmDelete = true"><i class="bi bi-archive"></i></button>
+                        }
                     }
                     else
                     {
@@ -235,6 +242,12 @@
         // Story
         editStoryHooks = string.Join("\n", c.StoryHooks);
         if (!Nav.Uri.Contains("id=" + c.Id)) Nav.NavigateTo(Nav.Uri.Split('?')[0] + "?id=" + c.Id, forceLoad: false);
+    }
+
+    private void GenerateStory()
+    {
+        if (editing == null) return;
+        Nav.NavigateTo("/stories?protagonist=" + Uri.EscapeDataString(editing.Name));
     }
 
     private void SaveEdit()

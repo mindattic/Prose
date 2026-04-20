@@ -18,7 +18,7 @@ public class ClaudeService : ILlmService
     public ClaudeService(HttpClient http, SettingsService settings, ILogger<ClaudeService> log)
     {
         this.http = http;
-        http.Timeout = TimeSpan.FromMinutes(3);
+        http.Timeout = TimeSpan.FromMinutes(10);
         this.settings = settings;
         this.log = log;
     }

@@ -1,0 +1,212 @@
+@page "/char-pipeline"
+@inject CharacterPipelineService Pipeline
+@inject SettingsService Settings
+@implements IDisposable
+
+<div class="d-flex justify-content-between align-items-center mb-3">
+    <h4 class="text-danger mb-0">Character Pipeline</h4>
+    <div class="d-flex gap-2 align-items-center">
+        @if (Pipeline.IsRunning)
+        {
+            @if (Pipeline.IsPaused)
+            {
+                <button class="btn btn-sm btn-outline-success" @onclick="Pipeline.Resume">
+                    <i class="bi bi-play-fill"></i> Resume
+                </button>
+            }
+            else
+            {
+                <button class="btn btn-sm btn-outline-secondary" @onclick="Pipeline.Pause">
+                    <i class="bi bi-pause-fill"></i> Pause
+                </button>
+            }
+            <button class="btn btn-sm btn-outline-danger" @onclick="Pipeline.Cancel">
+                <i class="bi bi-stop-fill"></i> Cancel
+            </button>
+        }
+        else if (confirmRun)
+        {
+            <span class="small text-warning me-1">This will modify entity JSON files.</span>
+            <button class="btn btn-sm btn-warning" @onclick="StartRun">Yes, run</button>
+            <button class="btn btn-sm btn-outline-secondary" @onclick="@(() => confirmRun = false)">Cancel</button>
+        }
+        else
+        {
+            <button class="btn btn-sm btn-outline-warning" @onclick="@(() => confirmRun = true)"
+                    disabled="@string.IsNullOrWhiteSpace(Settings.ApiKey)">
+                <i class="bi bi-play-fill"></i> Run Pipeline
+            </button>
+        }
+    </div>
+</div>
+
+@* Progress bar *@
+@if (Pipeline.IsRunning)
+{
+    var p = Pipeline.Progress;
+    var pct = p.Total > 0 ? (int)(100.0 * p.Processed / p.Total) : 0;
+    var barColor = Pipeline.IsPaused ? "bg-secondary" : "bg-warning";
+    var phaseColor = Pipeline.IsPaused ? "text-muted" : "text-warning";
+    <div class="mb-3 p-3 rounded" style="background:#1c2128;">
+        <div class="d-flex justify-content-between small text-muted mb-1">
+            <span class="@phaseColor">@p.Phase @(p.Current.Length > 0 ? "— " + p.Current : "")</span>
+            <span>@p.Processed.ToString("N0") / @p.Total.ToString("N0")</span>
+        </div>
+        <div class="progress" style="height:3px;">
+            <div class="progress-bar @barColor" style="width:@pct%"></div>
+        </div>
+    </div>
+}
+
+<div class="row g-3">
+    @* Left: step configuration *@
+    <div class="col-md-5">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted"><i class="bi bi-gear"></i> Steps</div>
+            <div class="card-body">
+                <div class="mb-3">
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="chkAncestry"
+                               checked="@enableAncestry" @onchange="@(e => enableAncestry = (bool)(e.Value ?? false))"
+                               disabled="@Pipeline.IsRunning" />
+                        <label class="form-check-label" for="chkAncestry">
+                            <span class="text-info fw-semibold">Step 1 — Ancestry</span>
+                            <div class="small text-muted mt-1">Assigns genetic heritage percentages to characters based on zone. Skips automata and ceramic men. Unexpected global combinations per Ubiquitous Diaspora.</div>
+                        </label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="chkDesc"
+                               checked="@enableDesc" @onchange="@(e => enableDesc = (bool)(e.Value ?? false))"
+                               disabled="@Pipeline.IsRunning" />
+                        <label class="form-check-label" for="chkDesc">
+                            <span class="text-warning fw-semibold">Step 2 — Descriptions</span>
+                            <div class="small text-muted mt-1">Generates <code>physical_description</code> + <code>image_prompt</code> via Claude Haiku. Runs on characters, weapons, apparel, and equipment. Batches of 6.</div>
+                        </label>
+                    </div>
+                    <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" id="chkHarm"
+                               checked="@enableHarmonize" @onchange="@(e => enableHarmonize = (bool)(e.Value ?? false))"
+                               disabled="@Pipeline.IsRunning" />
+                        <label class="form-check-label" for="chkHarm">
+                            <span class="text-success fw-semibold">Step 3 — Harmonize</span>
+                            <div class="small text-muted mt-1">Re-aligns hair, skin, and features in descriptions that contradict assigned ancestry. Only modifies inconsistent characters.</div>
+                        </label>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" id="chkLoad"
+                               checked="@enableLoadouts" @onchange="@(e => enableLoadouts = (bool)(e.Value ?? false))"
+                               disabled="@Pipeline.IsRunning" />
+                        <label class="form-check-label" for="chkLoad">
+                            <span class="text-danger fw-semibold">Step 4 — Loadouts</span>
+                            <div class="small text-muted mt-1">Assigns <code>equipment_carried</code> arrays to characters based on role and archetype. Skips characters already equipped.</div>
+                        </label>
+                    </div>
+                </div>
+                <div class="border-top border-secondary pt-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="chkForce"
+                               checked="@forceRewrite" @onchange="@(e => forceRewrite = (bool)(e.Value ?? false))"
+                               disabled="@Pipeline.IsRunning" />
+                        <label class="form-check-label small text-muted" for="chkForce">
+                            Force rewrite existing fields
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    @* Right: results *@
+    <div class="col-md-7">
+        <div class="card bg-dark text-light border-secondary">
+            <div class="card-header text-muted"><i class="bi bi-bar-chart"></i> Results</div>
+            <div class="card-body">
+                @if (!Pipeline.IsRunning && Pipeline.AncestryUpdated == 0 && Pipeline.DescGenerated == 0)
+                {
+                    <div class="text-muted text-center py-4">
+                        <i class="bi bi-person-badge" style="font-size:2.5rem;opacity:0.3;"></i>
+                        <p class="mt-2 small">Configure steps and click Run Pipeline to begin.</p>
+                        <p class="small text-muted">Requires Claude API key. Steps that encounter already-populated fields are skipped automatically unless Force Rewrite is enabled.</p>
+                    </div>
+                }
+                else
+                {
+                    <div class="row g-2 mb-3">
+                        <div class="col">
+                            <div class="fact-stat-card">
+                                <div class="fact-stat-label">Ancestry</div>
+                                <div class="fact-stat-value text-info">@Pipeline.AncestryUpdated.ToString("N0")</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="fact-stat-card">
+                                <div class="fact-stat-label">Descriptions</div>
+                                <div class="fact-stat-value text-warning">@Pipeline.DescGenerated.ToString("N0")</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="fact-stat-card">
+                                <div class="fact-stat-label">Harmonized</div>
+                                <div class="fact-stat-value text-success">@Pipeline.Harmonized.ToString("N0")</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="fact-stat-card">
+                                <div class="fact-stat-label">Loadouts</div>
+                                <div class="fact-stat-value text-danger">@Pipeline.LoadoutsAssigned.ToString("N0")</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="fact-stat-card">
+                                <div class="fact-stat-label">Skipped</div>
+                                <div class="fact-stat-value text-muted">@Pipeline.Skipped.ToString("N0")</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small text-muted">
+                        Pipeline phase: <span class="text-light">@Pipeline.Progress.Phase</span>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private bool confirmRun    = false;
+    private bool enableAncestry  = true;
+    private bool enableDesc      = true;
+    private bool enableHarmonize = true;
+    private bool enableLoadouts  = true;
+    private bool forceRewrite    = false;
+
+    protected override void OnInitialized()
+    {
+        Pipeline.StateChanged += OnStateChanged;
+    }
+
+    private void OnStateChanged() =>
+        InvokeAsync(StateHasChanged);
+
+    private async Task StartRun()
+    {
+        confirmRun = false;
+        var steps = new HashSet<CharacterPipelineService.Step>();
+        if (enableAncestry)  steps.Add(CharacterPipelineService.Step.Ancestry);
+        if (enableDesc)      steps.Add(CharacterPipelineService.Step.Descriptions);
+        if (enableHarmonize) steps.Add(CharacterPipelineService.Step.Harmonize);
+        if (enableLoadouts)  steps.Add(CharacterPipelineService.Step.Loadouts);
+        Pipeline.EnabledSteps = steps;
+        Pipeline.ForceRewrite = forceRewrite;
+        StateHasChanged();
+        _ = Pipeline.RunAsync();
+        await Task.Yield();
+    }
+
+    public void Dispose()
+    {
+        Pipeline.StateChanged -= OnStateChanged;
+        if (Pipeline.IsRunning && !Pipeline.IsPaused)
+            Pipeline.Pause();
+    }
+}

@@ -1,5 +1,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using System.Net;
 using MindAttic.LLMVoting;
 using MindAttic.LLMVoting.Providers;
 using StreetSamurai.Core.Interfaces;
@@ -116,6 +117,12 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<MarkdownService>();
         services.AddSingleton<ViewModeService>();
         services.AddSingleton<FactDiscoveryService>();
+        services.AddSingleton<FactExtractionService>();
+        services.AddSingleton<FactResolutionService>();
+        services.AddSingleton<StoryMethodologyService>();
+        services.AddSingleton<CharacterPipelineService>();
+        services.AddSingleton<WorldConsistencyService>();
+        services.AddSingleton<DataRepairService>();
         services.AddSingleton<SceneContextBuilder>();
         services.AddSingleton<ConsequenceService>();
         services.AddSingleton<AmbientAnomalyService>();
@@ -183,8 +190,23 @@ public static class ServiceCollectionExtensions
         });
 
         // LLM services — multi-provider with router
-        services.AddHttpClient<ClaudeService>();
-        services.AddHttpClient<OpenAiService>();
+        // PooledConnectionLifetime prevents stale socket reuse: Anthropic's TLS terminator
+        // silently closes idle connections; without a lifetime the pool reuses the dead socket,
+        // and every retry in the same attempt window hits the same dead connection.
+        services.AddHttpClient<ClaudeService>()
+            .ConfigurePrimaryHttpMessageHandler(() => new SocketsHttpHandler
+            {
+                PooledConnectionLifetime = TimeSpan.FromMinutes(2),
+                PooledConnectionIdleTimeout = TimeSpan.FromSeconds(90),
+                ConnectTimeout = TimeSpan.FromSeconds(30),
+            });
+        services.AddHttpClient<OpenAiService>()
+            .ConfigurePrimaryHttpMessageHandler(() => new SocketsHttpHandler
+            {
+                PooledConnectionLifetime = TimeSpan.FromMinutes(2),
+                PooledConnectionIdleTimeout = TimeSpan.FromSeconds(90),
+                ConnectTimeout = TimeSpan.FromSeconds(30),
+            });
         services.AddHttpClient<DallEService>();
         services.AddSingleton<LlmRouter>(sp => new LlmRouter(
             sp.GetRequiredService<ClaudeService>(),

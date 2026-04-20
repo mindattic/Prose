@@ -214,7 +214,13 @@
                                 <div class="d-flex align-items-start gap-2 border-start border-secondary ps-2 ms-2 mt-1 @(b.Written ? "opacity-50" : "")">
                                     <span class="badge @(b.Written ? "bg-success" : "bg-secondary") mt-1" style="min-width: 24px;">@(b.BeatIndex + 1)</span>
                                     <div class="flex-grow-1">
-                                        <div class="small fw-bold">@b.Title</div>
+                                        <div class="d-flex align-items-center gap-2 flex-wrap">
+                                            <div class="small fw-bold">@b.Title</div>
+                                            @if (!string.IsNullOrEmpty(b.StructureRole))
+                                            {
+                                                <span class="badge" style="font-size:0.6rem;background:@(b.SceneType=="sequel"?"#1f4e79":"#3d1f00");color:@(b.SceneType=="sequel"?"#58a6ff":"#f0883e");">@b.StructureRole</span>
+                                            }
+                                        </div>
                                         <div class="small text-muted">@b.Goal</div>
                                         @if (b.Seeds.Count > 0) { <small class="text-info">Seeds: @string.Join(", ", b.Seeds)</small> }
                                     </div>
@@ -233,8 +239,18 @@
                         @foreach (var arc in currentOutline.CharacterArcs)
                         {
                             <div class="small border-start border-secondary ps-2 ms-2 mt-1">
-                                <span class="fw-bold">@arc.Character:</span> @arc.StartState → @arc.EndState
-                                <div class="text-muted">Turning point: @arc.TurningPoint (Cost: @arc.Cost)</div>
+                                <span class="fw-bold text-light">@arc.Character</span>
+                                @if (!string.IsNullOrEmpty(arc.Want) || !string.IsNullOrEmpty(arc.Need))
+                                {
+                                    <div class="d-flex gap-3 mt-1 flex-wrap">
+                                        @if (!string.IsNullOrEmpty(arc.Want))
+                                        { <span><span class="text-warning" style="font-size:0.7rem;">WANT</span> <span class="text-muted">@arc.Want</span></span> }
+                                        @if (!string.IsNullOrEmpty(arc.Need))
+                                        { <span><span class="text-info" style="font-size:0.7rem;">NEED</span> <span class="text-muted">@arc.Need</span></span> }
+                                    </div>
+                                }
+                                <div class="text-muted mt-1">@arc.StartState → @arc.EndState</div>
+                                <div class="text-muted" style="font-size:0.75rem;">Turning point: @arc.TurningPoint · Cost: @arc.Cost</div>
                             </div>
                         }
                     }

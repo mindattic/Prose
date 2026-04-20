@@ -58,12 +58,15 @@ public class XrefServiceTests
         pharmaceuticals = new(paths); consumerGoods = new(paths); contracts = new(paths);
         labSpecimens = new(paths); psionics = new(paths);
 
+        var settings = new SettingsService(tempDir);
+        settings.EnablePlainTextNer = true;
         svc = new XrefService(
             chars, synths, districts, factions, corps, technology, vocabulary,
             weaponry, ammunition, equipment, cyberware, genemods, transportation,
             automata, subsidiaries, entertainment, apparel, materials,
             pharmaceuticals, consumerGoods, contracts, labSpecimens, psionics,
-            Microsoft.Extensions.Logging.Abstractions.NullLogger<XrefService>.Instance);
+            Microsoft.Extensions.Logging.Abstractions.NullLogger<XrefService>.Instance,
+            settings);
     }
 
     [TearDown]

@@ -164,6 +164,15 @@
                             }
                         </div>
                     </div>
+                    <div class="col-md-4">
+                        <label class="form-label text-muted">Plain-text dynamic entity linking (NER). Disable until link quality improves.</label>
+                        <div class="form-check form-switch mt-1">
+                            <input type="checkbox" class="form-check-input" id="enableNer"
+                                   checked="@SettingsSvc.EnablePlainTextNer"
+                                   @onchange="e => SettingsSvc.EnablePlainTextNer = (bool)(e.Value ?? false)" />
+                            <label class="form-check-label text-muted small" for="enableNer">Dynamic entity linking (NER)</label>
+                        </div>
+                    </div>
                     @* Publish button removed — deploying via Azure CI/CD *@
                 </div>
                 @if (brokenFiles.Count > 0)
