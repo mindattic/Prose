@@ -1,5 +1,6 @@
 {
   "id": "019d6143a72377fb8f4f7dff9cbf9be4",
+  "rating": 0,
   "type": "character",
   "name": "Mehdi Agyemang-Arredondo",
   "aliases": [],
@@ -10,15 +11,15 @@
   "age": 34,
   "status": "active",
   "location": "Kessler Interchange, transit hub level 4, near Milwaukee and Damen",
-  "description": "Mehdi Agyemang-Arredondo is a broad-shouldered woman with deep umber skin and close-cropped natural hair threaded with copper wire implants that catch the platform lights when she turns her head. Her left eye is a standard-issue Ferrogate tactical unit — flat gray iris with a faint targeting reticle that glows amber when she's scanning — but her right eye is entirely her own, warm brown and quick to crinkle with exhaustion or irritation. She wears her transit security uniform like armor, every crease deliberate, badge always centered. Off-shift she becomes almost unrecognizable, softer somehow, though the copper threads remain.\n\nMehdi Agyemang-Arredondo has the particular weariness of someone who has spent eleven years asking people to please move away from the yellow line. She is not cruel, not corrupt, not heroic — she is simply present, day after day, in a job that rewards no one. She has a sharp eye for trouble three seconds before it starts and a stubborn reluctance to escalate past what the situation actually needs. Her coworkers call her Brick because she doesn't move.",
+  "description": "Mehdi Agyemang-Arredondo is a broad-shouldered woman with deep umber skin and close-cropped natural hair threaded with copper wire implants that catch the platform lights when she turns her head. Her left eye is a standard-issue Ferrogate tactical unit \u2014 flat gray iris with a faint targeting reticle that glows amber when she\u0027s scanning \u2014 but her right eye is entirely her own, warm brown and quick to crinkle with exhaustion or irritation. She wears her transit security uniform like armor, every crease deliberate, badge always centered. Off-shift she becomes almost unrecognizable, softer somehow, though the copper threads remain.\n\nMehdi Agyemang-Arredondo has the particular weariness of someone who has spent eleven years asking people to please move away from the yellow line. She is not cruel, not corrupt, not heroic \u2014 she is simply present, day after day, in a job that rewards no one. She has a sharp eye for trouble three seconds before it starts and a stubborn reluctance to escalate past what the situation actually needs. Her coworkers call her Brick because she doesn\u0027t move.",
   "psychology": {
     "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.4,
+      "wound": 0.5800000000000001,
+      "ideal": 0.5,
       "id": 0.3,
-      "shadow": 0.2,
+      "shadow": 0.16000000000000003,
       "mask": 0.6,
-      "ghost": 0.4
+      "ghost": 0.5300000000000001
     },
     "core_fears": [
       "becoming the kind of officer she despises",
@@ -26,7 +27,7 @@
     ],
     "core_desires": [
       "for the job to mean something on a scale she can actually see",
-      "a transit system that doesn't punish the poor for existing"
+      "a transit system that doesn\u0027t punish the poor for existing"
     ],
     "coping_mechanisms": [
       "routine and ritual",
@@ -35,32 +36,36 @@
     ],
     "blind_spots": [
       "assumes institutional reform is still possible if you stay long enough",
-      "underestimates how often her 'de-escalation' reads as threat to people who've been hurt by uniforms before"
+      "underestimates how often her \u0027de-escalation\u0027 reads as threat to people who\u0027ve been hurt by uniforms before"
     ],
-    "secret": "Three years ago she witnessed a supervisor falsify an incident report to cover a use-of-force complaint. She said nothing. The survivor was deported to a labor sector. She still has the real footage saved on a dead-drop drive she hasn't decided what to do with."
+    "secret": "Three years ago she witnessed a supervisor falsify an incident report to cover a use-of-force complaint. She said nothing. The survivor was deported to a labor sector. She still has the real footage saved on a dead-drop drive she hasn\u0027t decided what to do with."
   },
   "speech_patterns": {
-    "vocabulary": "Clipped, professional, with sudden moments of blunt warmth. Uses transit jargon naturally. Doesn't swear on duty; does, fluently, off it.",
+    "vocabulary": "Clipped, professional, with sudden moments of blunt warmth. Uses transit jargon naturally. Doesn\u0027t swear on duty; does, fluently, off it.",
     "cadence": "Measured and unhurried, like someone conserving energy for the long shift",
     "verbal_tics": [
-      "'Move along' as a reflex filler",
-      "Exhales through her nose when she's deciding something",
-      "'You understand me?' at the end of instructions"
+      "\u0027Move along\u0027 as a reflex filler",
+      "Exhales through her nose when she\u0027s deciding something",
+      "\u0027You understand me?\u0027 at the end of instructions"
     ],
     "example_lines": [
-      "'You understand me? I'm not asking where you're going, I'm asking you to step back from the door.'",
-      "'The Interchange E.L.F. — old Stile — she doesn't like raised voices. I don't either. We're very similar that way.'",
-      "'I've been standing on this platform since before you knew what a platform was. I have seen every version of this situation. Step back.'"
-    ]
+      "\u0027You understand me? I\u0027m not asking where you\u0027re going, I\u0027m asking you to step back from the door.\u0027",
+      "\u0027The Interchange E.L.F. \u2014 old Stile \u2014 she doesn\u0027t like raised voices. I don\u0027t either. We\u0027re very similar that way.\u0027",
+      "\u0027I\u0027ve been standing on this platform since before you knew what a platform was. I have seen every version of this situation. Step back.\u0027"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "She's been tracking a pattern — every third Tuesday, a specific freight car arrives at Kessler containing fewer registered passengers than left the origin station. She suspects trafficking but can't get her supervisor to file the report.",
-    "The dead-drop drive with the falsified incident report is about to become relevant — the deported survivor's family has found a journalist, and Yemisi has to decide whether to surface."
+    "She\u0027s been tracking a pattern \u2014 every third Tuesday, a specific freight car arrives at Kessler containing fewer registered passengers than left the origin station. She suspects trafficking but can\u0027t get her supervisor to file the report.",
+    "The dead-drop drive with the falsified incident report is about to become relevant \u2014 the deported survivor\u0027s family has found a journalist, and Yemisi has to decide whether to surface."
   ],
-  "narrative_function": "Local authority figure — not corrupt enough to be a villain, not idealistic enough to be a hero. Can provide information about transit routes, recent incidents, missing persons who passed through the Interchange. A stabilizing presence in chaotic scenes. May request help off the books when official channels fail her.",
-  "augmentations": "One Ferrogate-issue tactical eye (right eye natural). Copper wire neural threading through scalp — originally a cosmetic mod, now doubles as a low-grade sensory booster she paid to have upgraded on installment. Subdermal transit ID chip (standard Ferrogate issue).",
-  "daily_life": "Twelve-hour rotating shifts at Kessler Interchange, mostly crowd management, fare disputes, and hauling unconscious UBC recipients out of stairwells. On rest days she tends a small hydroponic shelf in her Calumet Rise apartment and attends an E.L.F. devotional circle that prays to the spirit said to inhabit the Interchange's oldest turnstile.",
+  "narrative_function": "Local authority figure \u2014 not corrupt enough to be a villain, not idealistic enough to be a hero. Can provide information about transit routes, recent incidents, missing persons who passed through the Interchange. A stabilizing presence in chaotic scenes. May request help off the books when official channels fail her.",
+  "augmentations": "One Ferrogate-issue tactical eye (right eye natural). Copper wire neural threading through scalp \u2014 originally a cosmetic mod, now doubles as a low-grade sensory booster she paid to have upgraded on installment. Subdermal transit ID chip (standard Ferrogate issue).",
+  "daily_life": "Twelve-hour rotating shifts at Kessler Interchange, mostly crowd management, fare disputes, and hauling unconscious UBC recipients out of stairwells. On rest days she tends a small hydroponic shelf in her Calumet Rise apartment and attends an E.L.F. devotional circle that prays to the spirit said to inhabit the Interchange\u0027s oldest turnstile.",
   "affiliation": "Ferrogate Transit Security, Level 4 Officer; The Interchange",
   "uses_facets": false,
   "narration_voice": "",
@@ -106,11 +111,11 @@
     "decision_rules": [
       "De-escalate first, always",
       "Protect civilians before property, always",
-      "Never falsify a report — but also, don't volunteer inconvenient truths upward"
+      "Never falsify a report \u2014 but also, don\u0027t volunteer inconvenient truths upward"
     ],
     "escalation_ladder": [
       "Verbal warning, calm and clear",
-      "Physical positioning — placing herself between the problem and bystanders",
+      "Physical positioning \u2014 placing herself between the problem and bystanders",
       "Restraint hold",
       "Call for backup before reaching for anything harder"
     ],
@@ -121,7 +126,7 @@
     "stress_responses": {
       "low": "Goes quieter and more deliberate",
       "medium": "Falls into full professional mode, all warmth suspended",
-      "high": "Calm to the point of eerie — her voice drops half a register"
+      "high": "Calm to the point of eerie \u2014 her voice drops half a register"
     },
     "contradictions": [
       "Believes in institutional reform but has personally enabled an institutional cover-up",
@@ -139,23 +144,23 @@
   },
   "cyberware_inventory": [
     {
-      "name": "Ferrogate tactical eye (right socket) — standard issue, amber HUD, crowd-density overlay",
+      "name": "Ferrogate tactical eye (right socket) \u2014 standard issue, amber HUD, crowd-density overlay",
       "body_location": "",
       "manufacturer": "",
       "tier": "",
       "condition": "functional",
       "installed_date": "",
-      "description": "Ferrogate tactical eye (right socket) — standard issue, amber HUD, crowd-density overlay",
+      "description": "Ferrogate tactical eye (right socket) \u2014 standard issue, amber HUD, crowd-density overlay",
       "replaces": ""
     },
     {
-      "name": "Cosmetic copper wire scalp threading — modified with low-grade sensory amplifier (personal purchase, installment plan)",
+      "name": "Cosmetic copper wire scalp threading \u2014 modified with low-grade sensory amplifier (personal purchase, installment plan)",
       "body_location": "",
       "manufacturer": "",
       "tier": "",
       "condition": "functional",
       "installed_date": "",
-      "description": "Cosmetic copper wire scalp threading — modified with low-grade sensory amplifier (personal purchase, installment plan)",
+      "description": "Cosmetic copper wire scalp threading \u2014 modified with low-grade sensory amplifier (personal purchase, installment plan)",
       "replaces": ""
     },
     {
@@ -200,7 +205,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Age 23 — Hired by Ferrogate Transit Security after two years on UBC",
+      "event": "Age 23 \u2014 Hired by Ferrogate Transit Security after two years on UBC",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -208,7 +213,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Age 28 — Promoted to Level 4 Officer, Kessler Interchange permanent post",
+      "event": "Age 28 \u2014 Promoted to Level 4 Officer, Kessler Interchange permanent post",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -216,7 +221,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Age 31 — Witnessed supervisor falsify use-of-force incident report; said nothing",
+      "event": "Age 31 \u2014 Witnessed supervisor falsify use-of-force incident report; said nothing",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -224,7 +229,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Age 32 — Joined E.L.F. devotional circle focused on Stile, the Interchange spirit",
+      "event": "Age 32 \u2014 Joined E.L.F. devotional circle focused on Stile, the Interchange spirit",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -232,49 +237,40 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Age 34 — Currently tracking the Tuesday freight anomaly",
+      "event": "Age 34 \u2014 Currently tracking the Tuesday freight anomaly",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
     }
   ],
   "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Fang-9 'Switchblade'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [
-    "Crucible Industries Fang-9 'Switchblade'"
-  ],
-  "related_entities": [
-    "Kessler Interchange",
-    "Ferrogate Transit",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Copper",
-    "Origin",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
-  ],
-  "district": "The Circuit",
   "physical_description": {
-    "heritage": "Mehdi's ancestry is a vibrant synthesis across three continents: Hispanic/Latin American (31.1%) and North African (29.1%) form the primary foundation, contributing to bone structure and facial geometry, while Sub-Saharan African ancestry (18.3%) deepens skin tone and adds to overall presence. Indigenous American heritage (10.2%) shapes cheekbone prominence and facial proportions, East Asian ancestry (9.0%) adds subtle eye shape characteristics, and South Asian elements (2.3%) create fine layering in features — a truly global genetic synthesis that defies simple categorization.",
+    "heritage": "Mehdi\u0027s ancestry is a vibrant synthesis across three continents: Hispanic/Latin American (31.1%) and North African (29.1%) form the primary foundation, contributing to bone structure and facial geometry, while Sub-Saharan African ancestry (18.3%) deepens skin tone and adds to overall presence. Indigenous American heritage (10.2%) shapes cheekbone prominence and facial proportions, East Asian ancestry (9.0%) adds subtle eye shape characteristics, and South Asian elements (2.3%) create fine layering in features \u2014 a truly global genetic synthesis that defies simple categorization.",
     "height_cm": 178,
     "weight_kg": 82,
-    "build": "Broad-shouldered and muscular without being lean — a frame built for standing eight hours at a platform's edge, moving crowds without relying on speed. Solid, grounded, resistant.",
+    "build": "Broad-shouldered and muscular without being lean \u2014 a frame built for standing eight hours at a platform\u0027s edge, moving crowds without relying on speed. Solid, grounded, resistant.",
     "hair_color": "Natural deep black with copper wire threading",
     "hair_style": "Close-cropped natural, parted slightly off-center, copper wire implants woven through scalp in deliberate patterns that catch light",
     "hair_length": "Short",
     "eye_color": "Left eye: flat gray tactical unit with amber targeting reticle; Right eye: warm brown, natural",
-    "skin_tone": "Deep warm bronze with golden undertones — a rich, radiant blend reflecting North African warmth and Hispanic/Latin American heritage, significantly deepened by Sub-Saharan African ancestry, with subtle dimension from Indigenous American and East Asian genetics, creating an even complexion that darkens with sun exposure",
-    "complexion": "Weathered but maintained — minimal makeup, skin shows sun exposure and fatigue lines around the eyes and mouth, prominent high cheekbones with strong flare from Indigenous American and North African ancestry, straight nose bridge with moderate width from blended heritage, subtle eye shape influenced by East Asian ancestry, grooming is utilitarian rather than decorative",
+    "skin_tone": "Deep warm bronze with golden undertones \u2014 a rich, radiant blend reflecting North African warmth and Hispanic/Latin American heritage, significantly deepened by Sub-Saharan African ancestry, with subtle dimension from Indigenous American and East Asian genetics, creating an even complexion that darkens with sun exposure",
+    "complexion": "Weathered but maintained \u2014 minimal makeup, skin shows sun exposure and fatigue lines around the eyes and mouth, prominent high cheekbones with strong flare from Indigenous American and North African ancestry, straight nose bridge with moderate width from blended heritage, subtle eye shape influenced by East Asian ancestry, grooming is utilitarian rather than decorative",
     "distinguishing_marks": [
       "Faint scar along the left temple where the tactical eye was installed, visible only at certain angles",
-      "Small tattoo on the inside of her right wrist — a stylized turnstile wheel, faded from repeated washing",
+      "Small tattoo on the inside of her right wrist \u2014 a stylized turnstile wheel, faded from repeated washing",
       "Callus pattern on both palms from years of crowd control and rail-bracing"
     ],
-    "visible_augmentations": "Left eye is clearly prosthetic — flat gray iris with faint amber targeting reticle visible when scanning. Copper wire threading visible across the scalp, catching platform lighting. Subdermal transit ID chip is not externally visible. The tactical eye marks her as working security; the copper wires suggest either old-school chrome aesthetic or repurposed cosmetic modification.",
-    "posture_movement": "Stands with weight distributed evenly, shoulders relaxed but ready — a stance of presence rather than tension. Moves deliberately, economically, never rushed. Scans crowds with a methodical side-to-side head turn. Hands rest naturally, one often on duty belt. When off-shift, the posture loosens slightly but the attentiveness never fully leaves.",
-    "clothing_style": "On-shift: Ferrogate Transit Security uniform (dark gray-blue with reflective striping, institutional cut, every seam crisp, badge centered at chest, duty belt with restraints and scanner). Off-shift: worn but maintained clothing from mid-tier retailers — fitted dark jeans, plain t-shirts in muted colors, a long synthetic jacket that's been repaired at the seams. Practical shoes with decent tread. No jewelry except a small pin on her off-shift jacket: an E.L.F. circle symbol."
+    "visible_augmentations": "Left eye is clearly prosthetic \u2014 flat gray iris with faint amber targeting reticle visible when scanning. Copper wire threading visible across the scalp, catching platform lighting. Subdermal transit ID chip is not externally visible. The tactical eye marks her as working security; the copper wires suggest either old-school chrome aesthetic or repurposed cosmetic modification.",
+    "posture_movement": "Stands with weight distributed evenly, shoulders relaxed but ready \u2014 a stance of presence rather than tension. Moves deliberately, economically, never rushed. Scans crowds with a methodical side-to-side head turn. Hands rest naturally, one often on duty belt. When off-shift, the posture loosens slightly but the attentiveness never fully leaves.",
+    "clothing_style": "On-shift: Ferrogate Transit Security uniform (dark gray-blue with reflective striping, institutional cut, every seam crisp, badge centered at chest, duty belt with restraints and scanner). Off-shift: worn but maintained clothing from mid-tier retailers \u2014 fitted dark jeans, plain t-shirts in muted colors, a long synthetic jacket that\u0027s been repaired at the seams. Practical shoes with decent tread. No jewelry except a small pin on her off-shift jacket: an E.L.F. circle symbol."
   },
   "image_prompt": "Mehdi Agyemang-Arredondo, transit security officer, 2226 neo-noir, deep warm bronze skin with golden undertones, prominent high cheekbones, straight nose bridge, blended global heritage features, close-cropped natural black hair with copper wire threading woven through scalp catching neon light, left eye cybernetic gray prosthetic with amber targeting reticle, right eye warm brown, athletic muscular build, 178cm tall, slight temple scar from eye installation, wearing crisp dark gray-blue Ferrogate Transit Security uniform with reflective striping and duty belt, standing at subway platform edge with methodical posture, station lighting casting sharp shadows, alert scan of crowd, industrial metal and fluorescent ambiance, gritty neo-noir atmosphere, professional security presence, detailed fabric texture on uniform, faint turnstile tattoo on wrist visible, utilitarian grooming --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Hispanic/Latin American": 31.1,
     "North African": 29.1,
@@ -283,12 +279,6 @@
     "East Asian": 9,
     "South Asian": 2.3
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Hispanic/Latin American": {
       "Caribbean": {
@@ -343,6 +333,5 @@
         "Bangladeshi": 0.2
       }
     }
-  },
-  "tier": "3"
+  }
 }

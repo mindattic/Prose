@@ -43,15 +43,19 @@ public class OutlineService
         var locationContext = location != null ? db.GetDistrictContext(location) : "";
         var literaryRules = db.GetLiteraryRulesPrompt();
 
+        var methodology = new StoryMethodologyService();
+        var methodologyPrompt = methodology.GetOutlineMethodologyPrompt(targetBeats);
+
         var jsonExample = """
-            {"title":"working title","logline":"one-sentence summary","theme":"thematic question",
+            {"title":"working title","logline":"one-sentence summary","theme":"thematic argument (not just a topic — a claim that the story tests)",
             "acts":[{"act_number":1,"name":"act name","purpose":"what this act does",
             "beats":[{"beat_index":0,"title":"beat title","goal":"what happens","characters_present":["names"],
             "location":"where","emotional_arc":"reader feeling","stakes":"at risk",
             "seeds":["planted threads"],"payoffs":["resolved threads"],
-            "facet_hint":"wound/ideal/id/shadow/mask/ghost","tension":5}]}],
-            "character_arcs":[{"character":"name","start_state":"beginning","end_state":"end",
-            "turning_point":"the moment","cost":"the price"}],
+            "facet_hint":"wound/ideal/id/shadow/mask/ghost","tension":5,
+            "structure_role":"Catalyst","scene_type":"scene"}]}],
+            "character_arcs":[{"character":"name","want":"external conscious goal","need":"internal unconscious truth",
+            "start_state":"beginning","end_state":"end","turning_point":"the moment","cost":"the price"}],
             "seeds_and_payoffs":[{"seed":"planted","planted_in_beat":0,"payoff":"resolved","payoff_in_beat":8}]}
             """;
 
@@ -67,11 +71,14 @@ public class OutlineService
             LITERARY RULES:
             {literaryRules}
 
+            {methodologyPrompt}
+
             Generate a story outline as a JSON object matching this structure:
             {jsonExample}
 
             Design for {targetBeats} beats across 3 acts (setup/confrontation/resolution).
-            Every seed must have a payoff. Every character must have an arc.
+            Every seed must have a payoff. Every character must have an arc with both Want and Need.
+            Assign structure_role and scene_type to every beat.
             Return ONLY the JSON.
             """;
 
@@ -288,12 +295,16 @@ public class OutlineBeat
     [JsonPropertyName("payoffs")] public List<string> Payoffs { get; set; } = [];
     [JsonPropertyName("facet_hint")] public string FacetHint { get; set; } = "";
     [JsonPropertyName("tension")] public int Tension { get; set; }
+    [JsonPropertyName("structure_role")] public string StructureRole { get; set; } = "";
+    [JsonPropertyName("scene_type")] public string SceneType { get; set; } = "scene";
     [JsonIgnore] public bool Written { get; set; }
 }
 
 public class CharacterArc
 {
     [JsonPropertyName("character")] public string Character { get; set; } = "";
+    [JsonPropertyName("want")] public string Want { get; set; } = "";
+    [JsonPropertyName("need")] public string Need { get; set; } = "";
     [JsonPropertyName("start_state")] public string StartState { get; set; } = "";
     [JsonPropertyName("end_state")] public string EndState { get; set; } = "";
     [JsonPropertyName("turning_point")] public string TurningPoint { get; set; } = "";

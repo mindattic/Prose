@@ -75,6 +75,12 @@ public class StoryDirectorService : IStoryDirectorService
 
     public event Action<DirectorProgress>? OnProgress;
 
+    public bool IsGenerating { get; private set; }
+    public AutonomousStory? CurrentStory { get; private set; }
+    public string ProgressMessage { get; private set; } = "";
+    public int ProgressCurrent { get; private set; }
+    public int ProgressTotal { get; private set; }
+
     public StoryDirectorService(
         ILlmService llm, DatabaseService db, WorldGraphService graph,
         FacetService facets, OutlineService outline, AgendaEngine agenda,
@@ -124,6 +130,8 @@ public class StoryDirectorService : IStoryDirectorService
     {
         log.LogInformation("=== SurpriseMeAsync: Starting autonomous story generation ===");
         var story = new AutonomousStory();
+        IsGenerating = true;
+        CurrentStory = story;
 
         try
         {
@@ -212,6 +220,105 @@ public class StoryDirectorService : IStoryDirectorService
             SaveCheckpoint(story);
             Report($"Generation failed — partial story saved ({story.Beats.Count} beats)", story.Beats.Count, 0);
         }
+        finally
+        {
+            IsGenerating = false;
+            CurrentStory = null;
+        }
+
+        return story;
+    }
+
+    /// <summary>
+    /// Generate a story with a specific character forced as protagonist.
+    /// "Drop in on any character and pick up with what they are doing."
+    /// All other pipeline logic is identical to SurpriseMeAsync.
+    /// </summary>
+    public async Task<AutonomousStory> SurpriseMeForAsync(string characterName, CancellationToken ct = default)
+    {
+        log.LogInformation("=== SurpriseMeForAsync: Starting story for protagonist={Protagonist} ===", characterName);
+        var story = new AutonomousStory();
+        IsGenerating = true;
+        CurrentStory = story;
+
+        try
+        {
+            Report("Building cast...");
+            var allChars = db.Characters;
+            var protagonist = allChars.FirstOrDefault(c => c.Name.Equals(characterName, StringComparison.OrdinalIgnoreCase))
+                ?? new CharacterData { Name = characterName };
+
+            var supporting = new List<string>();
+            foreach (var rel in protagonist.Relationships.Take(3))
+            {
+                var relChar = allChars.FirstOrDefault(c => c.Name == rel.Name && c.Status != "dead");
+                if (relChar != null) supporting.Add(relChar.Name);
+            }
+            while (supporting.Count < 2)
+            {
+                var random = allChars
+                    .Where(c => c.Name != protagonist.Name && !supporting.Contains(c.Name) && c.Status != "dead")
+                    .OrderBy(_ => Random.Shared.Next()).FirstOrDefault();
+                if (random == null) break;
+                supporting.Add(random.Name);
+            }
+
+            var cast = (protagonist: protagonist.Name, all: new List<string> { protagonist.Name }.Concat(supporting).ToList());
+            story.Protagonist = cast.protagonist;
+            story.Characters = cast.all;
+
+            Report("Finding conflicts...");
+            var premises = await agenda.GenerateScenePremisesAsync(cast.all, ct: ct);
+            var premise = premises.FirstOrDefault()?.Premise
+                ?? $"{cast.protagonist} receives a contract that forces them to confront something they've been avoiding.";
+            story.Premise = premise;
+
+            var districts = db.Districts;
+            var location = districts.Count > 0
+                ? districts[Random.Shared.Next(districts.Count)].Name : "the Gray Zone";
+            story.Location = location;
+
+            Report("Architecting story arc...");
+            var consequenceContext = consequences.BuildConsequenceContext(cast.protagonist);
+            var battlePremise = premise
+                + "\n\nIMPORTANT: GLMZ is a dangerous world. This story MUST include at least one battle/combat/violent conflict scene."
+                + (consequenceContext.Length > 0 ? $"\n\nWORLD CONSEQUENCES FROM PREVIOUS STORIES:\n{consequenceContext}" : "");
+            var outline = await outlineSvc.GenerateOutlineAsync(battlePremise, cast.all, location, 8, ct);
+            story.Outline = outline;
+
+            var projectId = Guid.NewGuid().ToString("N")[..12];
+            story.ProjectId = projectId;
+            if (string.IsNullOrEmpty(story.Title)) story.Title = outline.Title;
+
+            Report("Reviewing story arc...");
+            try { story.OutlineReview = await outlineReview.ReviewAsync(outline, ct); }
+            catch { /* non-blocking — outline review is best-effort */ }
+
+            SaveCheckpoint(story);
+
+            storyState.InitializeCharacter(projectId, cast.protagonist, location);
+            foreach (var c in cast.all.Where(c => c != cast.protagonist))
+                storyState.InitializeCharacter(projectId, c);
+
+            await WritBeatsWithResilience(story, outline, cast, location, ct);
+        }
+        catch (OperationCanceledException)
+        {
+            log.LogWarning("Story generation cancelled — saving partial story");
+            story.FailureReason = "Cancelled by user";
+            SaveCheckpoint(story);
+        }
+        catch (Exception ex)
+        {
+            log.LogError(ex, "Story generation failed for protagonist={Protagonist}", characterName);
+            story.FailureReason = $"Pipeline failure: {ex.Message}";
+            SaveCheckpoint(story);
+        }
+        finally
+        {
+            IsGenerating = false;
+            CurrentStory = null;
+        }
 
         return story;
     }
@@ -232,29 +339,39 @@ public class StoryDirectorService : IStoryDirectorService
             story.ProjectId, story.Beats.Count);
 
         story.FailureReason = null; // Clear previous failure
+        IsGenerating = true;
+        CurrentStory = story;
 
-        // Load or use existing outline
-        var outline = story.Outline ?? outlineSvc.Load(story.ProjectId);
-        if (outline == null || outline.Acts.Count == 0)
+        try
         {
-            log.LogError("Cannot resume — no outline found for {ProjectId}", story.ProjectId);
-            story.FailureReason = "No outline available to resume from";
-            return story;
+            // Load or use existing outline
+            var outline = story.Outline ?? outlineSvc.Load(story.ProjectId);
+            if (outline == null || outline.Acts.Count == 0)
+            {
+                log.LogError("Cannot resume — no outline found for {ProjectId}", story.ProjectId);
+                story.FailureReason = "No outline available to resume from";
+                return story;
+            }
+            story.Outline = outline;
+
+            // Mark already-written beats
+            foreach (var existingBeat in story.Beats)
+                outlineSvc.MarkBeatWritten(outline, existingBeat.BeatIndex);
+
+            // Re-initialize story state from existing beats
+            var location = story.Location ?? "the Gray Zone";
+            storyState.InitializeCharacter(story.ProjectId, story.Protagonist, location);
+            foreach (var c in story.Characters.Where(c => c != story.Protagonist))
+                storyState.InitializeCharacter(story.ProjectId, c);
+
+            var cast = (protagonist: story.Protagonist, all: story.Characters);
+            await WritBeatsWithResilience(story, outline, cast, location, ct);
         }
-        story.Outline = outline;
-
-        // Mark already-written beats
-        foreach (var existingBeat in story.Beats)
-            outlineSvc.MarkBeatWritten(outline, existingBeat.BeatIndex);
-
-        // Re-initialize story state from existing beats
-        var location = story.Location ?? "the Gray Zone";
-        storyState.InitializeCharacter(story.ProjectId, story.Protagonist, location);
-        foreach (var c in story.Characters.Where(c => c != story.Protagonist))
-            storyState.InitializeCharacter(story.ProjectId, c);
-
-        var cast = (protagonist: story.Protagonist, all: story.Characters);
-        await WritBeatsWithResilience(story, outline, cast, location, ct);
+        finally
+        {
+            IsGenerating = false;
+            CurrentStory = null;
+        }
 
         return story;
     }
@@ -435,6 +552,8 @@ public class StoryDirectorService : IStoryDirectorService
                     Title = beat.Title,
                     Text = beatText,
                     Act = act.ActNumber,
+                    StructureRole = beat.StructureRole,
+                    SceneType = beat.SceneType,
                 };
                 story.Beats.Add(newBeat);
 
@@ -529,6 +648,12 @@ public class StoryDirectorService : IStoryDirectorService
         var totalBeats = outline.Acts.SelectMany(a => a.Beats).Count();
         var pacing = PacingService.GetPacing(beat.BeatIndex, totalBeats, beat.Goal);
 
+        // Structural role — tells the LLM the beat's named narrative position and scene type
+        var methodology = new StoryMethodologyService();
+        var structuralGuidance = !string.IsNullOrEmpty(beat.StructureRole)
+            ? $"STRUCTURAL ROLE: {beat.StructureRole.ToUpperInvariant()}\nSCENE TYPE: {beat.SceneType?.ToUpperInvariant() ?? "SCENE"} — {(beat.SceneType == "sequel" ? "React → Dilemma → Decision. No action until the decision is made." : "Goal → Conflict → Disaster (yes-but or no-and). Never a clean yes.")}"
+            : methodology.GetBeatGenerationGuidance(beat.BeatIndex, totalBeats);
+
         // Thematic enrichment: pull context snippets, vocabulary, quotes, and motifs from ALL repos
         var thematicContext = thematicIndex.BuildBeatContext(beat.Goal, beat.Title, beat.Location ?? location);
 
@@ -563,6 +688,7 @@ public class StoryDirectorService : IStoryDirectorService
         var qualityDirectives = quality.GetImprovementDirectives();
 
         var fullOutlineContext = outlineContext
+            + (structuralGuidance.Length > 0 ? "\n\n" + structuralGuidance : "")
             + (thematicContext.Length > 0 ? "\n\n" + thematicContext : "")
             + (behaviorContext.Length > 0 ? "\n\n" + behaviorContext : "")
             + (physicalContext.Length > 0 ? "\n\n" + physicalContext : "")
@@ -781,8 +907,13 @@ public class StoryDirectorService : IStoryDirectorService
         return lines.Count <= 1 ? "" : string.Join("\n", lines);
     }
 
-    private void Report(string message, int current = 0, int total = 0) =>
+    private void Report(string message, int current = 0, int total = 0)
+    {
+        ProgressMessage = message;
+        ProgressCurrent = current;
+        ProgressTotal = total;
         OnProgress?.Invoke(new DirectorProgress { Message = message, CurrentBeat = current, TotalBeats = total });
+    }
 }
 
 public class DirectorProgress
@@ -818,6 +949,8 @@ public class GeneratedStoryBeat
     public string Title { get; set; } = "";
     public string Text { get; set; } = "";
     public int Act { get; set; }
+    public string StructureRole { get; set; } = "";
+    public string SceneType { get; set; } = "scene";
     /// <summary>Possible next beats — populated after pipeline completes.</summary>
     public List<BeatSuggestion> Suggestions { get; set; } = [];
 }

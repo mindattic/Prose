@@ -82,9 +82,15 @@
             @foreach (var beat in liveBeats)
             {
                 <div class="mt-3 border-start border-danger ps-3">
-                    <div class="d-flex justify-content-between">
+                    <div class="d-flex align-items-center justify-content-between gap-2 flex-wrap">
                         <small class="text-danger fw-bold">Act @beat.Act — @beat.Title</small>
-                        <small class="text-muted">Beat @(beat.BeatIndex + 1)</small>
+                        <div class="d-flex align-items-center gap-2">
+                            @if (!string.IsNullOrEmpty(beat.StructureRole))
+                            {
+                                <span class="badge" style="font-size:0.6rem;background:@(beat.SceneType=="sequel"?"#1f4e79":"#3d1f00");color:@(beat.SceneType=="sequel"?"#58a6ff":"#f0883e");">@beat.StructureRole</span>
+                            }
+                            <small class="text-muted">Beat @(beat.BeatIndex + 1)</small>
+                        </div>
                     </div>
                     <div class="small mt-1" style="font-family: Georgia, serif; line-height: 1.7; white-space: pre-wrap; max-height: 150px; overflow-y: auto;">@beat.Text</div>
                 </div>
@@ -262,6 +268,48 @@ else if (!generating)
         var project = new StoryProject();
         Repo.SaveProject(project);
         Nav.NavigateTo($"/write/{project.Id}");
+    }
+
+    [SupplyParameterFromQuery(Name = "protagonist")]
+    public string? ProtagonistParam { get; set; }
+
+    protected override void OnParametersSet()
+    {
+        if (!string.IsNullOrWhiteSpace(ProtagonistParam) && !generating)
+            _ = SurpriseMeFor(ProtagonistParam);
+    }
+
+    private async Task SurpriseMeFor(string characterName)
+    {
+        generating = true;
+        liveBeats.Clear();
+        progressMessage = $"Starting story for {characterName}...";
+        progressCurrent = 0;
+        _progressTotal = 0;
+        cts = new CancellationTokenSource();
+        StateHasChanged();
+
+        try
+        {
+            autonomousStory = await Director.SurpriseMeForAsync(characterName, cts.Token);
+
+            if (autonomousStory.Complete)
+            {
+                var project = new StoryProject
+                {
+                    Id = autonomousStory.ProjectId,
+                    Title = autonomousStory.Title,
+                    Characters = autonomousStory.Characters,
+                    Html = ConvertToHtml(autonomousStory),
+                    Status = Constants.Status.Draft,
+                };
+                Repo.SaveProject(project);
+                projects = Repo.ListProjects();
+            }
+        }
+        catch (OperationCanceledException) { progressMessage = "Cancelled."; }
+        catch (Exception ex) { progressMessage = $"Error: {ex.Message}"; }
+        finally { generating = false; StateHasChanged(); }
     }
 
     private async Task SurpriseMe()

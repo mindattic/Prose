@@ -80,6 +80,7 @@ else
         var places = PlaceRepo.GetAll()
             .Where(p => p.Coordinates.Lat != 0 && p.Coordinates.Lng != 0)
             .Select(p => new {
+                id = p.Id,
                 name = p.Name,
                 lat = p.Coordinates.Lat,
                 lng = p.Coordinates.Lng,

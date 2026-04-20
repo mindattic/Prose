@@ -14,7 +14,8 @@ public class StoryBibleData
     [JsonPropertyName("tone")] public string Tone { get; set; } = "";
     [JsonPropertyName("core_theme")] public string CoreTheme { get; set; } = "";
     [JsonPropertyName("core_hook")] public string CoreHook { get; set; } = "";
-    [JsonPropertyName("setting")] public string Setting { get; set; } = "";
+    // The setting field in story_bible.json is a rich nested object — use JsonElement to accept any shape
+    [JsonPropertyName("setting")] public JsonElement Setting { get; set; }
     [JsonPropertyName("protagonist")] public string Protagonist { get; set; } = "";
     [JsonPropertyName("arc")] public string Arc { get; set; } = "";
     [JsonPropertyName("themes")] public List<string> Themes { get; set; } = [];
