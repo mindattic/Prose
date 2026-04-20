@@ -72,6 +72,7 @@ public class StoryDirectorService : IStoryDirectorService
     private readonly OutlineReviewService outlineReview;
     private readonly StoryQualityService quality;
     private readonly FacetEvolutionService facetEvolution;
+    private readonly CanonGroundingService canonGrounding;
 
     public event Action<DirectorProgress>? OnProgress;
 
@@ -93,7 +94,7 @@ public class StoryDirectorService : IStoryDirectorService
         DialogueService dialogue, ArcTrackerService arcTracker,
         ContinuityValidatorService continuityValidator, SuggestionEngineService suggestions,
         OutlineReviewService outlineReview, StoryQualityService quality,
-        FacetEvolutionService facetEvolution)
+        FacetEvolutionService facetEvolution, CanonGroundingService canonGrounding)
     {
         this.llm = llm;
         this.db = db;
@@ -119,6 +120,7 @@ public class StoryDirectorService : IStoryDirectorService
         this.outlineReview = outlineReview;
         this.quality = quality;
         this.facetEvolution = facetEvolution;
+        this.canonGrounding = canonGrounding;
     }
 
     /// <summary>
@@ -615,7 +617,7 @@ public class StoryDirectorService : IStoryDirectorService
         log.LogInformation("=== Story complete: title={Title}, protagonist={Protagonist}, beats={BeatCount}, chars={TextLen} ===",
             story.Title, story.Protagonist, story.Beats.Count, story.FullText.Length);
 
-        // Quality evaluation — multi-LLM feedback loop (fire-and-forget to not block the caller)
+        // Quality evaluation + canon grounding — fire-and-forget, do not block the caller
         Report("Evaluating story quality...");
         _ = Task.Run(async () =>
         {
@@ -630,6 +632,24 @@ public class StoryDirectorService : IStoryDirectorService
             catch (Exception ex)
             {
                 log.LogWarning(ex, "Quality evaluation failed — not blocking story return");
+            }
+
+            try
+            {
+                var grounding = await canonGrounding.AnalyzeAndScaffoldAsync(
+                    story.FullText,
+                    sourceContext: $"story:{story.ProjectId} \"{story.Title}\"",
+                    ct: default);
+                story.CanonGrounding = grounding;
+                SaveCheckpoint(story);
+                if (grounding.EntitiesScaffolded > 0)
+                    log.LogInformation(
+                        "Canon grounding: scaffolded {Count} new stub(s) from story '{Title}'",
+                        grounding.EntitiesScaffolded, story.Title);
+            }
+            catch (Exception ex)
+            {
+                log.LogWarning(ex, "Canon grounding failed — not blocking story return");
             }
         });
     }
@@ -669,6 +689,7 @@ public class StoryDirectorService : IStoryDirectorService
         var behaviorContext = behaviorPredict.BuildBehaviorContext(
             projectId, charsInBeat, beat.Location ?? location, beat.Goal, beat.Tension);
 
+        var canonFacts = BuildCanonFacts(charsForBeat, beat.Location ?? location);
         var paragraphs = allText.ToList();
         var beatGoal = goalOverride ?? beat.Goal;
         if (!string.IsNullOrEmpty(dialogueConstraints))
@@ -683,6 +704,7 @@ public class StoryDirectorService : IStoryDirectorService
                 Premise = beatGoal,
                 Characters = beat.CharactersPresent.Count > 0 ? beat.CharactersPresent : cast.all,
                 Location = beat.Location ?? location,
+                CanonFacts = canonFacts,
             }, ct);
 
             if (string.IsNullOrEmpty(story.Title) || story.Title == "Outline generation failed")
@@ -705,7 +727,43 @@ public class StoryDirectorService : IStoryDirectorService
         return await starter.ContinueAsync(
             paragraphs, beatGoal, null, beat.Location ?? location,
             beat.CharactersPresent.Count > 0 ? beat.CharactersPresent : cast.all,
-            storyConstraints, knowledgeConstraints, eventContext, fullOutlineContext, ct);
+            storyConstraints, knowledgeConstraints, eventContext, fullOutlineContext,
+            canonFacts, ct);
+    }
+
+    /// <summary>
+    /// Build a hard-constraint canon facts block for the given characters and location.
+    /// Injected into every beat prompt so the LLM cannot invent undocumented relationships.
+    /// </summary>
+    private string BuildCanonFacts(List<string> characterNames, string location)
+    {
+        var sb = new System.Text.StringBuilder();
+        sb.AppendLine("== CANON FACTS — HARD CONSTRAINTS ==");
+        sb.AppendLine("The following is DOCUMENTED CANON for every entity in this scene.");
+        sb.AppendLine("Do NOT invent names, family members, relationships, history, or attributes");
+        sb.AppendLine("beyond what is listed here. If a relationship is not documented below,");
+        sb.AppendLine("it does not exist — write around it rather than fabricating it.");
+        sb.AppendLine();
+
+        var seen = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+        foreach (var name in characterNames.Distinct(StringComparer.OrdinalIgnoreCase))
+        {
+            var nodeId = graph.ResolveId(name);
+            if (nodeId == null || !seen.Add(nodeId)) continue;
+            var brief = graph.GetEntityBrief(nodeId);
+            if (!string.IsNullOrWhiteSpace(brief))
+                sb.AppendLine(brief).AppendLine();
+        }
+
+        var locId = graph.ResolveId(location);
+        if (locId != null && seen.Add(locId))
+        {
+            var locBrief = graph.GetEntityBrief(locId);
+            if (!string.IsNullOrWhiteSpace(locBrief))
+                sb.AppendLine(locBrief).AppendLine();
+        }
+
+        return sb.ToString();
     }
 
     private string StoriesDir => paths.StoriesDir;
@@ -941,6 +999,7 @@ public class AutonomousStory
     public StoryOutline? Outline { get; set; }
     public OutlineReviewResult? OutlineReview { get; set; }
     public StoryQualityReport? QualityReport { get; set; }
+    public CanonGroundingResult? CanonGrounding { get; set; }
     public List<GeneratedStoryBeat> Beats { get; set; } = [];
     public string FullText { get; set; } = "";
     public bool Complete { get; set; }

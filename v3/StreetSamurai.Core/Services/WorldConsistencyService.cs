@@ -39,7 +39,7 @@ public class WorldConsistencyService : PipelineServiceBase
 
     private static readonly string[] AllDirs =
     [
-        "people", "synthetics", "automata", "ceramic_men", "creatures",
+        "people", "synthetics", "automata", "creatures",
         "corponations", "subsidiaries", "factions",
         "places", "weaponry", "ammunition", "cyberware", "equipment",
         "apparel", "genemods", "pharmaceuticals", "transportation",

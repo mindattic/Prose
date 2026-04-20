@@ -162,6 +162,8 @@ public class StoryStarterService
             CHARACTERS:
             {characterContext}
 
+            {(!string.IsNullOrWhiteSpace(request.CanonFacts) ? request.CanonFacts : "")}
+
             WORLD DETAILS:
             {worldFlavor}
             """;
@@ -336,7 +338,8 @@ public class StoryStarterService
         List<string> existingParagraphs, string prompt, string? mood, string? location,
         List<string> characters, string? storyConstraints = null,
         string? knowledgeConstraints = null, string? eventContext = null,
-        string? outlineContext = null, CancellationToken ct = default)
+        string? outlineContext = null, string? canonFacts = null,
+        CancellationToken ct = default)
     {
         log.LogInformation("ContinueAsync: paragraphs={ParagraphCount}, characters=[{Characters}], location={Location}",
             existingParagraphs.Count, string.Join(", ", characters), location ?? "none");
@@ -387,6 +390,8 @@ public class StoryStarterService
             {(locationContext.Length > 0 ? $"LOCATION:\n{locationContext}" : "")}
 
             {(characterContext.Length > 0 ? $"CHARACTERS:\n{characterContext}" : "")}
+
+            {(canonFacts?.Length > 0 ? canonFacts : "")}
 
             {(storyConstraints?.Length > 0 ? storyConstraints : "")}
 
@@ -547,6 +552,7 @@ public record StoryStarterRequest
     public string? Mood { get; init; }
     public string? Location { get; init; }
     public List<string> Characters { get; init; } = [];
+    public string? CanonFacts { get; init; }
 }
 
 public record GeneratedOpening

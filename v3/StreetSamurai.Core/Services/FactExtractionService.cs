@@ -31,7 +31,7 @@ public class FactExtractionService
 
     private static readonly string[] EntityDirs =
     [
-        "people", "synthetics", "automata", "ceramic_men", "creatures",
+        "people", "synthetics", "automata", "creatures",
         "corponations", "subsidiaries", "factions",
         "places", "flyover_entities", "wasteland_entities",
         "weaponry", "ammunition", "cyberware", "equipment",

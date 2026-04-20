@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "timeout": 60,
+            "statusMessage": "Running WorldValidation...",
+            "command": "node -e \"let d='';process.stdin.on('data',c=>d+=c);process.stdin.on('end',()=>{const i=JSON.parse(d);const fp=i.tool_input?.file_path??'';if(fp.includes('engine') && fp.includes('data')){require('child_process').execSync('cd \\\"D:/Projects/MindAttic/StreetSamurai/v3\\\" && dotnet test StreetSamurai.UnitTests/StreetSamurai.UnitTests.csproj --filter \\\"Category=WorldValidation\\\" --logger \\\"console;verbosity=normal\\\" --no-build',{stdio:\\\"inherit\\\"});}});\""
+          }
+        ]
+      }
+    ]
+  }
+}
