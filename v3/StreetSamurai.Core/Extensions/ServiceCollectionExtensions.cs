@@ -341,6 +341,8 @@ public static class ServiceCollectionExtensions
         });
         services.AddSingleton<LLMVotingService>();
         services.AddSingleton<StoryQualityService>();
+        services.AddSingleton<CanonGroundingService>();
+        services.AddSingleton<WorldOracleService>();
         services.AddSingleton<EntityRatingService>();
 
         return services;

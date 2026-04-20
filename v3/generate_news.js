@@ -166,7 +166,7 @@ const BATCHES = [
 - 1 article about the mass driver network launch (high-speed cargo system)
 - 1 article about Axiom's corporate scandal — executive arrested, paid restitution, walked free
 - 1 article about biocomputing breakthrough merging organic and silicon processing
-- 1 article about first documented E.L.F. (Emergent Life Form) sighting`
+- 1 article about first documented E.L.F. (Electronic Life Form) sighting`
   },
   {
     id: 10, yearRange: '2145-2155', category_mix: 'crime, terrorism, social',
@@ -281,7 +281,7 @@ WORLD CONTEXT:
 - BCI (Brain-Computer Interface) technology is ubiquitous — NovaMind is the dominant brand
 - SNT (Synthetic Neural Thread) is a revolutionary BCI advancement
 - Synthetics/androids exist and fight for rights — ARIA-7 was the first personhood case
-- E.L.F. (Emergent Life Forms) are mysterious digital entities
+- E.L.F. (Electronic Life Forms) are mysterious digital entities
 - Chrome Prayer is a spiritual practice involving technology
 - Iron Choir Singing is a mysterious auditory phenomenon
 - Runners are freelance operatives who take contracts — extraction, data theft, smuggling, protection, sabotage

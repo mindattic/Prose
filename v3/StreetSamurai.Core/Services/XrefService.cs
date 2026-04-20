@@ -161,8 +161,12 @@ public class XrefService
             {
                 var existing = newIndex[name];
                 newConflicts.Add(new XrefConflict(name, existing, entry));
-                logger.LogWarning("Xref disambiguation conflict: \"{Name}\" claimed by {TypeA}/{IdA} and {TypeB}/{IdB}",
-                    name, existing.Type, existing.Id, type, id);
+                if (existing.Type == type)
+                    logger.LogWarning("Xref disambiguation conflict: \"{Name}\" claimed by {TypeA}/{IdA} and {TypeB}/{IdB}",
+                        name, existing.Type, existing.Id, type, id);
+                else
+                    logger.LogDebug("Xref cross-type overlap: \"{Name}\" claimed by {TypeA}/{IdA} and {TypeB}/{IdB}",
+                        name, existing.Type, existing.Id, type, id);
             }
             newIndexById.TryAdd(id, entry);
         }

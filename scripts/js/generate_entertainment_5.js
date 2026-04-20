@@ -134,7 +134,7 @@ const WORLD_CONTEXT = `Setting: GLMZ, years 2183-2226. A megacity in the Great L
 
 Ubiquitous Diaspora: By 2200, humanity is fully racially interbred. There are no distinct ethnic groups — everyone is mixed heritage from unexpected global combinations. Names, cultural practices, and aesthetics blend freely across all traditions. "Exotic" has no meaning when everything is heritage.
 
-Technology: BCI (brain-computer interfaces) are common. Augmentation (cyberware/chrome) ranges from basic to military-grade. Geneware allows cosmetic and functional genetic modification (tails, bioluminescence, fur, horns, wings that don't work). Synthetics are artificial beings. E.L.F.s (Emergent Life Forms) are digital intelligences. The Underworld is the deep net / dark web equivalent.
+Technology: BCI (brain-computer interfaces) are common. Augmentation (cyberware/chrome) ranges from basic to military-grade. Geneware allows cosmetic and functional genetic modification (tails, bioluminescence, fur, horns, wings that don't work). Synthetics are artificial beings. E.L.F.s (Electronic Life Forms) are digital intelligences. The Underworld is the deep net / dark web equivalent.
 
 Corponations are sovereign corporate entities that function as nation-states. They control most infrastructure, media, and commerce. Street culture exists in resistance to and alongside corporate dominance.
 
