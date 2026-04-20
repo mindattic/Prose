@@ -327,7 +327,7 @@ public class StoryDirectorService : IStoryDirectorService
     /// Resume a previously failed or partially generated story from its last checkpoint.
     /// Loads the saved outline and continues from the first unwritten beat.
     /// </summary>
-    public async Task<AutonomousStory> ResumeStoryAsync(AutonomousStory story, CancellationToken ct = default)
+    public async Task<AutonomousStory> ResumeStoryAsync(AutonomousStory story, string? nextBeatGoalOverride = null, CancellationToken ct = default)
     {
         if (story.Complete)
         {
@@ -365,7 +365,7 @@ public class StoryDirectorService : IStoryDirectorService
                 storyState.InitializeCharacter(story.ProjectId, c);
 
             var cast = (protagonist: story.Protagonist, all: story.Characters);
-            await WritBeatsWithResilience(story, outline, cast, location, ct);
+            await WritBeatsWithResilience(story, outline, cast, location, ct, nextBeatGoalOverride);
         }
         finally
         {
@@ -386,7 +386,7 @@ public class StoryDirectorService : IStoryDirectorService
     private async Task WritBeatsWithResilience(
         AutonomousStory story, StoryOutline outline,
         (string protagonist, List<string> all) cast, string location,
-        CancellationToken ct)
+        CancellationToken ct, string? nextBeatGoalOverride = null)
     {
         var allText = story.Beats.Select(b => b.Text).ToList();
         var totalBeats = outline.Acts.SelectMany(a => a.Beats).Count();
@@ -394,6 +394,7 @@ public class StoryDirectorService : IStoryDirectorService
         var arcValidations = new List<ArcValidation>();
         // Collect suggestion tasks — awaited at the end with a timeout before final checkpoint
         var suggestionTasks = new List<(GeneratedStoryBeat beat, Task<List<BeatSuggestion>> task)>();
+        bool firstUnwritten = true;
 
         foreach (var act in outline.Acts)
         {
@@ -413,13 +414,19 @@ public class StoryDirectorService : IStoryDirectorService
                 string? beatText = null;
                 Exception? lastError = null;
 
+                // Apply the user-chosen suggestion direction to the first unwritten beat only
+                var goalOverride = (firstUnwritten && !string.IsNullOrEmpty(nextBeatGoalOverride))
+                    ? $"CHOSEN DIRECTION: {nextBeatGoalOverride}\n\n{beat.Goal}"
+                    : null;
+                firstUnwritten = false;
+
                 // Retry loop: try twice on transient failures
                 for (int attempt = 1; attempt <= 2; attempt++)
                 {
                     try
                     {
                         beatText = await GenerateSingleBeat(
-                            story, outline, beat, cast, location, allText, projectId, arcValidations, ct);
+                            story, outline, beat, cast, location, allText, projectId, arcValidations, ct, goalOverride);
                         break; // Success — exit retry loop
                     }
                     catch (TaskCanceledException ex) when (!ct.IsCancellationRequested && attempt < 2)
@@ -632,7 +639,7 @@ public class StoryDirectorService : IStoryDirectorService
         AutonomousStory story, StoryOutline outline, OutlineBeat beat,
         (string protagonist, List<string> all) cast, string location,
         List<string> allText, string projectId, List<ArcValidation> arcValidations,
-        CancellationToken ct)
+        CancellationToken ct, string? goalOverride = null)
     {
         var storyConstraints = storyState.BuildConstraints(projectId);
         var knowledgeConstraints = knowledge.BuildPovConstraints(projectId, cast.protagonist);
@@ -663,7 +670,7 @@ public class StoryDirectorService : IStoryDirectorService
             projectId, charsInBeat, beat.Location ?? location, beat.Goal, beat.Tension);
 
         var paragraphs = allText.ToList();
-        var beatGoal = beat.Goal;
+        var beatGoal = goalOverride ?? beat.Goal;
         if (!string.IsNullOrEmpty(dialogueConstraints))
             beatGoal += "\n\n" + dialogueConstraints;
         if (!string.IsNullOrEmpty(conversationGoals))

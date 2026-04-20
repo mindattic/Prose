@@ -352,7 +352,7 @@ else if (!generating)
 
     private void CancelGeneration() => cts?.Cancel();
 
-    private async Task ResumeCheckpoint(AutonomousStory checkpoint)
+    private async Task ResumeCheckpoint(AutonomousStory checkpoint, string? nextBeatGoal = null)
     {
         generating = true;
         liveBeats = new List<GeneratedStoryBeat>(checkpoint.Beats);
@@ -365,7 +365,7 @@ else if (!generating)
 
         try
         {
-            autonomousStory = await Director.ResumeStoryAsync(checkpoint, cts.Token);
+            autonomousStory = await Director.ResumeStoryAsync(checkpoint, nextBeatGoal, cts.Token);
 
             if (autonomousStory.Complete)
             {
@@ -435,11 +435,10 @@ else if (!generating)
     private void PickSuggestion(int index)
     {
         if (suggestionSource == null || index >= suggestedBeats.Count) return;
-        // Resume the story with the chosen suggestion as the next beat goal
         var chosen = suggestedBeats[index];
         suggestedBeats.Clear();
-        // TODO: inject chosen.Description as the next beat goal into the resume flow
-        _ = ResumeCheckpoint(suggestionSource);
+        var goalOverride = $"{chosen.Title}: {chosen.Description}";
+        _ = ResumeCheckpoint(suggestionSource, goalOverride);
     }
 
     private void ClearSuggestions() => suggestedBeats.Clear();

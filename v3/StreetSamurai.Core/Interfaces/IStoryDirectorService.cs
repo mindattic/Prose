@@ -14,7 +14,7 @@ public interface IStoryDirectorService
 
     Task<AutonomousStory> SurpriseMeAsync(CancellationToken ct = default);
     Task<AutonomousStory> SurpriseMeForAsync(string characterName, CancellationToken ct = default);
-    Task<AutonomousStory> ResumeStoryAsync(AutonomousStory story, CancellationToken ct = default);
+    Task<AutonomousStory> ResumeStoryAsync(AutonomousStory story, string? nextBeatGoalOverride = null, CancellationToken ct = default);
     AutonomousStory? LoadCheckpoint(string projectId);
     List<AutonomousStory> ListCheckpoints();
 }

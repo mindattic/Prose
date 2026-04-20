@@ -8,12 +8,15 @@ namespace StreetSamurai.Core.Services;
 /// <summary>
 /// Crowd-sources entity interest ratings via LLMVoting.
 ///
-/// Each entity is rated by 10 randomly-generated GLMZ resident personas. Their individual
-/// INTEREST scores (1–10) are averaged — null and zero votes (timeouts, errors) are excluded.
-/// The final score is stored as Rating on a 0–100 scale.
+/// Each voting run adds 10 personas per entity — scores ACCUMULATE across runs rather than
+/// replacing. Over many runs the total vote pool grows toward thousands of personas and the
+/// distribution naturally converges: genuinely interesting entries float up, mediocre ones
+/// settle in the middle, dull ones sink.
 ///
-/// Run RateAllAsync() for a full fresh vote on everything.
-/// Run RateUnratedAsync() to only score entities still at Rating == 0.
+/// VoteCount tracks the total ballots cast. Rating is the running weighted average (0–100).
+///
+/// Run RateAllAsync() to add another round of votes to every entity.
+/// Run RateUnratedAsync() to only score entities with no votes yet.
 /// GetAllRated() returns the cross-repo leaderboard sorted by Rating descending.
 /// </summary>
 public class EntityRatingService
@@ -129,8 +132,8 @@ public class EntityRatingService
     }
 
     /// <summary>
-    /// Rate every entity across all repos. Overwrites existing ratings.
-    /// Each entity is voted on by 10 randomly-selected GLMZ resident personas.
+    /// Add another round of votes to every entity. Scores accumulate — run repeatedly
+    /// to grow the total vote pool and converge toward a natural interest distribution.
     /// </summary>
     public async Task RateAllAsync(CancellationToken ct = default)
     {
@@ -152,14 +155,14 @@ public class EntityRatingService
     /// <summary>
     /// Returns all rated entities (Rating > 0) across all repos, sorted by Rating descending.
     /// </summary>
-    public IEnumerable<(string Name, string Type, string Route, string Id, double Rating)> GetAllRated()
+    public IEnumerable<(string Name, string Type, string Route, string Id, double Rating, int VoteCount)> GetAllRated()
     {
-        var results = new List<(string Name, string Type, string Route, string Id, double Rating)>();
+        var results = new List<(string Name, string Type, string Route, string Id, double Rating, int VoteCount)>();
 
         void Collect<T>(List<T> entities, Func<T, string> name, string type, string route) where T : ICanonEntity
         {
             foreach (var e in entities.Where(e => e.Rating > 0))
-                results.Add((name(e), type, route, e.Id, e.Rating));
+                results.Add((name(e), type, route, e.Id, e.Rating, e.VoteCount));
         }
 
         Collect(characters.GetAll(),     e => e.Name,     "character",     "/characters");
@@ -273,13 +276,20 @@ public class EntityRatingService
                     continue;
                 }
 
-                // Scale 1–10 → 10–100, round to 1 decimal
-                var avg = validScores.Average();
-                entity.Rating = Math.Round(avg * 10.0, 1);
+                // Accumulate: blend new votes into the running weighted average
+                // oldSum is recovered from the stored rating (Rating = avg*10, avg = sum/count)
+                var oldCount = entity.VoteCount;
+                var oldSum   = oldCount > 0 ? (entity.Rating / 10.0) * oldCount : 0.0;
+                var newCount = oldCount + validScores.Count;
+                var newAvg   = (oldSum + validScores.Sum()) / newCount;
+
+                entity.Rating    = Math.Round(newAvg * 10.0, 1);
+                entity.VoteCount = newCount;
                 save(entity);
 
-                log.LogInformation("EntityRating: {Type} '{Name}' → {Rating} ({Valid}/{Total} valid votes, avg={Avg:F2}/10)",
-                    typeName, name, entity.Rating, validScores.Count, VotersPerEntity, avg);
+                log.LogInformation(
+                    "EntityRating: {Type} '{Name}' → {Rating} ({NewVotes} new votes, {TotalVotes} total, avg={Avg:F2}/10)",
+                    typeName, name, entity.Rating, validScores.Count, newCount, newAvg);
             }
             catch (Exception ex)
             {

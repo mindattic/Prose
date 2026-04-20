@@ -13,6 +13,7 @@ public class NewsData : ICanonEntity
 {
     [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("rating")] public double Rating { get; set; } = 0.0;
+    [JsonPropertyName("vote_count")] public int VoteCount { get; set; } = 0;
     [JsonPropertyName("headline")] public string Headline { get; set; } = "";
     [JsonPropertyName("type")] public string Type { get; set; } = "news";
     [JsonPropertyName("date")] public string Date { get; set; } = "";

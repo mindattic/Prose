@@ -7,7 +7,14 @@
     <div class="top-rated-header">
         <div>
             <span class="top-rated-title">Most Interesting</span>
-            <span class="top-rated-sub">Crowd-rated by @VotersPerRun LLM personas</span>
+            @if (totalVotes > 0)
+            {
+                <span class="top-rated-sub">@totalVotes.ToString("N0") votes cast across @entries.Count entries</span>
+            }
+            else
+            {
+                <span class="top-rated-sub">Accumulates toward natural interest distribution</span>
+            }
         </div>
         @if (Access.CanWrite)
         {
@@ -19,10 +26,10 @@
                 }
                 else
                 {
-                    <button class="btn btn-sm btn-outline-danger" @onclick="RunAll" title="Re-rate all entries with 10 LLM personas each">
-                        <i class="bi bi-stars"></i> Run Voting
+                    <button class="btn btn-sm btn-outline-danger" @onclick="RunAll" title="Add 10 more votes per entity — accumulates over time">
+                        <i class="bi bi-stars"></i> Add Votes
                     </button>
-                    <button class="btn btn-sm btn-outline-secondary" @onclick="RunUnrated" title="Rate only entries with no score yet">
+                    <button class="btn btn-sm btn-outline-secondary" @onclick="RunUnrated" title="Rate only entries with no votes yet">
                         <i class="bi bi-plus-circle"></i> Rate New
                     </button>
                 }
@@ -47,6 +54,7 @@
                     </span>
                     <span class="tr-name">@e.Name</span>
                     <span class="tr-type text-muted">@e.Type</span>
+                    <span class="tr-votes text-muted">@e.VoteCount</span>
                     <span class="tr-score">@e.Rating.ToString("F0")</span>
                 </a>
                 rank++;
@@ -61,20 +69,20 @@
     .top-rated-title { font-size: 0.9rem; font-weight: 700; color: #e6edf3; margin-right: 10px; }
     .top-rated-sub { font-size: 0.7rem; color: #8b949e; }
     .top-rated-list { display: flex; flex-direction: column; }
-    .top-rated-row { display: grid; grid-template-columns: 36px 120px 1fr 90px 40px; align-items: center; gap: 8px; padding: 5px 14px; text-decoration: none; color: #e6edf3; border-bottom: 1px solid #21262d; transition: background 0.1s; }
+    .top-rated-row { display: grid; grid-template-columns: 36px 120px 1fr 90px 44px 40px; align-items: center; gap: 8px; padding: 5px 14px; text-decoration: none; color: #e6edf3; border-bottom: 1px solid #21262d; transition: background 0.1s; }
     .top-rated-row:hover { background: #1c2128; text-decoration: none; color: #e6edf3; }
     .tr-rank { font-size: 0.7rem; color: #8b949e; text-align: right; }
     .tr-bar-wrap { height: 6px; background: #21262d; border-radius: 3px; overflow: hidden; }
     .tr-bar { display: block; height: 100%; background: linear-gradient(90deg, #f5c518 0%, #e8a000 100%); border-radius: 3px; }
     .tr-name { font-size: 0.82rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
     .tr-type { font-size: 0.65rem; color: #8b949e; text-align: right; }
+    .tr-votes { font-size: 0.6rem; color: #8b949e; text-align: right; }
     .tr-score { font-size: 0.75rem; font-weight: 700; color: #f5c518; text-align: right; }
 </style>
 
 @code {
-    private const int VotersPerRun = 10;
-
-    private List<(string Name, string Type, string Route, string Id, double Rating)> entries = [];
+    private List<(string Name, string Type, string Route, string Id, double Rating, int VoteCount)> entries = [];
+    private int totalVotes;
     private bool running;
     private string statusMsg = "";
     private CancellationTokenSource? cts;
@@ -84,6 +92,7 @@
     private void Reload()
     {
         entries = Rater.GetAllRated().Take(100).ToList();
+        totalVotes = entries.Sum(e => e.VoteCount);
     }
 
     private async Task RunAll()
