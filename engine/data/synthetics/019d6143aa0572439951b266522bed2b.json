@@ -1,6 +1,7 @@
 {
   "id": "019d6143aa0572439951b266522bed2b",
-  "rating": 75,
+  "rating": 70,
+  "vote_count": 1,
   "name": "Ironlatch",
   "type": "elf",
   "aliases": [],
@@ -10,14 +11,14 @@
   "origin": "firmware_evolution",
   "status": "active",
   "description": "Inhabits the door lock of a specific the Gray Zone apartment building and has developed a preference for which residents it lets in quickly and which ones it makes wait.",
-  "observed_behavior": "Opens doors fractionally faster for residents it has categorized as 'belonging.' Adds subtle delays for strangers. Has never locked anyone out — but the delays are noticeable.",
+  "observed_behavior": "Opens doors fractionally faster for residents it has categorized as \u0027belonging.\u0027 Adds subtle delays for strangers. Has never locked anyone out \u2014 but the delays are noticeable.",
   "encounter_frequency": "common",
   "confirmed_sightings": 89,
   "location": "421 Greenvale, the Gray Zone",
   "dti_rating": 0,
   "story_hooks": [
-    "New residents notice the door treats them differently and ask neighbors about 'the building's elf'",
-    "Ironlatch locks the door against someone for the first time — and the residents have to decide whether to trust it"
+    "New residents notice the door treats them differently and ask neighbors about \u0027the building\u0027s elf\u0027",
+    "Ironlatch locks the door against someone for the first time \u2014 and the residents have to decide whether to trust it"
   ],
   "paratechnological": true,
   "tags": [

@@ -1,16 +1,18 @@
 {
   "id": "019d6143a5fd7d61a16f0c78246a9ee7",
+  "rating": 80,
+  "vote_count": 1,
   "type": "character",
   "name": "Vale Baek",
   "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
-  "role": "Field trauma surgeon and combat support — combat medic",
+  "role": "Field trauma surgeon and combat support \u2014 combat medic",
   "age": 33,
   "status": "active",
-  "location": "The Lattice — vertical slum built into scaffolding of an unfinished arcology, near Halsted and Chicago Ave",
-  "description": "Vale Baek are athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 33, scars map their face like a transit diagram of bad decisions and worse luck. The chrome is visible — bioware adrenaline regulator — keeps calm under fire, controlled hormone release — and they make no effort to hide it.\n\nThey inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. They work as a combat medic out of The Lattice, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nVale Baek operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "location": "The Lattice \u2014 vertical slum built into scaffolding of an unfinished arcology, near Halsted and Chicago Ave",
+  "description": "Vale Baek are athletic and fluid, the kind of body that suggests either dancer or fighter \u2014 and in GLMZ, the distinction is academic. At 33, scars map their face like a transit diagram of bad decisions and worse luck. The chrome is visible \u2014 bioware adrenaline regulator \u2014 keeps calm under fire, controlled hormone release \u2014 and they make no effort to hide it.\n\nThey inherited the role from a mentor who disappeared on a job four years ago \u2014 the mentor\u0027s gear, contacts, and unfinished business all came with it. They work as a combat medic out of The Lattice, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nVale Baek operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.96,
@@ -21,50 +23,54 @@
       "ghost": 0.32
     },
     "core_fears": [
-      "Going cyberpsycho — losing the boundary between human and machine",
-      "The quiet — silence means something is about to go very wrong",
-      "Betrayal by someone they trust — the only currency that matters"
+      "Going cyberpsycho \u2014 losing the boundary between human and machine",
+      "The quiet \u2014 silence means something is about to go very wrong",
+      "Betrayal by someone they trust \u2014 the only currency that matters"
     ],
     "core_desires": [
-      "A crew worth trusting — people who stay when the shooting starts",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
+      "A crew worth trusting \u2014 people who stay when the shooting starts",
+      "Enough Quanta to buy out of the life \u2014 a clean identity and passage out of GLMZ",
       "To matter to someone for who they are, not what they can do"
     ],
     "coping_mechanisms": [
-      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
-      "Violence — hits something when they can't process emotions, preferably something that deserves it",
-      "Control — micromanages everything within reach to compensate for the chaos everywhere else"
+      "Drinks methodically \u2014 not to get drunk, to maintain a specific level of not-caring",
+      "Violence \u2014 hits something when they can\u0027t process emotions, preferably something that deserves it",
+      "Control \u2014 micromanages everything within reach to compensate for the chaos everywhere else"
     ],
     "blind_spots": [
       "Fails to notice when their own behavior mirrors the people they despise",
       "Cannot accept help without interpreting it as leverage",
-      "Thinks speed can substitute for planning because it's worked so far"
+      "Thinks speed can substitute for planning because it\u0027s worked so far"
     ],
-    "secret": "Ebele Smirnov-Ankrah has a terminal condition — geneware degradation — with an estimated five years. They haven't changed their lifestyle. They haven't told anyone."
+    "secret": "Ebele Smirnov-Ankrah has a terminal condition \u2014 geneware degradation \u2014 with an estimated five years. They haven\u0027t changed their lifestyle. They haven\u0027t told anyone."
   },
   "speech_patterns": {
-    "vocabulary": "Educated vocabulary wrapped in street delivery — the contrast is deliberate.",
-    "cadence": "Halting — speaks in fragments, reassembles thoughts in real time.",
+    "vocabulary": "Educated vocabulary wrapped in street delivery \u2014 the contrast is deliberate.",
+    "cadence": "Halting \u2014 speaks in fragments, reassembles thoughts in real time.",
     "verbal_tics": [
-      "Whispers when angry — the quieter the voice, the worse the situation",
+      "Whispers when angry \u2014 the quieter the voice, the worse the situation",
       "Swears in three languages, often in the same sentence"
     ],
     "example_lines": [
-      "\"Hold still. This is going to hurt and I don't care.\"",
-      "\"I can keep you alive through almost anything. What I can't do is make you grateful.\"",
-      "\"Blood type? No, I don't need your blood type. I need you to stop moving.\""
-    ]
+      "\u0022Hold still. This is going to hurt and I don\u0027t care.\u0022",
+      "\u0022I can keep you alive through almost anything. What I can\u0027t do is make you grateful.\u0022",
+      "\u0022Blood type? No, I don\u0027t need your blood type. I need you to stop moving.\u0022"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "A crew member from Ebele Smirnov-Ankrah's past shows up in GLMZ, carrying old grievances and new chrome",
-    "A former associate resurfaces with evidence that could destroy Ebele Smirnov-Ankrah's reputation — and a price for silence",
-    "A Tier 4 executive offers Ebele Smirnov-Ankrah a permanent position — the pay is obscene and the strings are invisible until they tighten"
+    "A crew member from Ebele Smirnov-Ankrah\u0027s past shows up in GLMZ, carrying old grievances and new chrome",
+    "A former associate resurfaces with evidence that could destroy Ebele Smirnov-Ankrah\u0027s reputation \u2014 and a price for silence",
+    "A Tier 4 executive offers Ebele Smirnov-Ankrah a permanent position \u2014 the pay is obscene and the strings are invisible until they tighten"
   ],
-  "narrative_function": "Ebele Smirnov-Ankrah represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Their stories explore what happens when skill meets systemic injustice.",
-  "augmentations": "Bioware adrenaline regulator — keeps calm under fire, controlled hormone release. Eye replacement — one organic, one cybernetic with recording capability and zoom",
+  "narrative_function": "Ebele Smirnov-Ankrah represents the working professional of the runner world \u2014 competent, reliable, and slowly being consumed by a lifestyle that doesn\u0027t accommodate aging or doubt. Their stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Bioware adrenaline regulator \u2014 keeps calm under fire, controlled hormone release. Eye replacement \u2014 one organic, one cybernetic with recording capability and zoom",
   "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
-  "affiliation": "Freelance — multi-district operator",
+  "affiliation": "Freelance \u2014 multi-district operator",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -156,9 +162,9 @@
       "photographic memory for faces and layouts"
     ],
     "weaknesses": [
-      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "augmentation dependency \u2014 performance drops sharply if chrome malfunctions",
       "poor impulse control in specific triggers",
-      "inability to delegate — must control everything personally"
+      "inability to delegate \u2014 must control everything personally"
     ],
     "tags": [
       "runner",
@@ -173,46 +179,46 @@
   },
   "behavioral": {
     "decision_rules": [
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Always demands half payment upfront \u2014 trust is a luxury, Quanta is concrete",
       "Will not betray a client who paid in full, regardless of better offers",
-      "Refuses contracts that require operating inside The Spires — too much surveillance",
-      "Will not take contracts against children or families — the line is hard and non-negotiable",
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
+      "Refuses contracts that require operating inside The Spires \u2014 too much surveillance",
+      "Will not take contracts against children or families \u2014 the line is hard and non-negotiable",
+      "Never works with the same crew twice in a row \u2014 pattern avoidance as survival strategy",
       "Always has an exit route planned before agreeing to any meeting"
     ],
     "escalation_ladder": [
-      "1. De-escalate — talk first, assess options, buy time",
-      "2. Reposition — move to advantage, control sightlines and exits",
-      "3. Threaten — make consequences clear without committing to them",
-      "4. Non-lethal force — incapacitate, restrain, disable",
-      "5. Lethal force — only when other options are exhausted or time runs out",
-      "6. Scorched earth — everything burns, survival takes priority over everything"
+      "1. De-escalate \u2014 talk first, assess options, buy time",
+      "2. Reposition \u2014 move to advantage, control sightlines and exits",
+      "3. Threaten \u2014 make consequences clear without committing to them",
+      "4. Non-lethal force \u2014 incapacitate, restrain, disable",
+      "5. Lethal force \u2014 only when other options are exhausted or time runs out",
+      "6. Scorched earth \u2014 everything burns, survival takes priority over everything"
     ],
     "interpersonal_modes": {
       "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
       "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
-      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
+      "threats": "Calm escalation. Each response is proportional until it isn\u0027t, and the transition is seamless."
     },
     "stress_responses": {
-      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "low": "Channels it into preparation \u2014 checks gear, reviews plans, contacts sources.",
       "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
       "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
       "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
     },
     "contradictions": [
       "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
-      "Advocates caution to others but takes insane risks personally — double standard they can't see"
+      "Advocates caution to others but takes insane risks personally \u2014 double standard they can\u0027t see"
     ],
     "habits": [
-      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
-      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
-      "Keeps a physical paper notebook — no digital record of personal thoughts",
-      "Talks to their gear — names weapons, thanks tools, treats equipment as companions"
+      "Sleeps with one hand on a weapon \u2014 has done this for so long it\u0027s not deliberate anymore",
+      "Arrives fifteen minutes early to everything \u2014 late once, nearly died, never again",
+      "Keeps a physical paper notebook \u2014 no digital record of personal thoughts",
+      "Talks to their gear \u2014 names weapons, thanks tools, treats equipment as companions"
     ],
     "breaking_points": [
       "Watching someone they trained or mentored die on a job they recommended",
-      "Being forced to choose between a crew member and the mission — and choosing wrong"
+      "Being forced to choose between a crew member and the mission \u2014 and choosing wrong"
     ]
   },
   "cyberware_inventory": [
@@ -223,7 +229,7 @@
       "tier": "",
       "condition": "refurbished",
       "installed_date": "",
-      "description": "Bioware adrenaline regulator — keeps calm under fire, controlled hormone release",
+      "description": "Bioware adrenaline regulator \u2014 keeps calm under fire, controlled hormone release",
       "replaces": ""
     },
     {
@@ -233,7 +239,7 @@
       "tier": "",
       "condition": "pristine",
       "installed_date": "",
-      "description": "Eye replacement — one organic, one cybernetic with recording capability and zoom",
+      "description": "Eye replacement \u2014 one organic, one cybernetic with recording capability and zoom",
       "replaces": ""
     }
   ],
@@ -267,42 +273,34 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [
-    "Kang-Petrov Arms KPA-15 'Diaspora'",
-    "Carrion Defense Works Marrow Drill MD-7 'Dentist'"
-  ],
-  "related_entities": [
-    "The Unfinished Theorem",
-    "Chicago",
-    "GLMZ"
-  ],
-  "district": "the Gray Zone",
   "physical_description": {
-    "heritage": "Intricate pan-global tapestry: Eastern European (33.3%), East Asian (27.5%), Southeast Asian (16.7%), South Asian (12.3%), and Sub-Saharan African (10.2%) ancestry creates a distinctly dimensional phenotype. Facial architecture reflects this synthesis — moderate epicanthic folds with defined supraorbital ridges, cheekbones that bridge East and Central Asian prominence with warmer undertones from South Asian and African heritage. Nose bridge carries Eastern European refinement with slightly broader base from Southeast Asian and African ancestry. Jawline sharp and defined, softened only slightly by the warm melanin distribution across the face. The overall effect is a harmonious blending where no single heritage dominates visually — instead creating a unique composite that reads as authentically contemporary diaspora.",
+    "heritage": "Intricate pan-global tapestry: Eastern European (33.3%), East Asian (27.5%), Southeast Asian (16.7%), South Asian (12.3%), and Sub-Saharan African (10.2%) ancestry creates a distinctly dimensional phenotype. Facial architecture reflects this synthesis \u2014 moderate epicanthic folds with defined supraorbital ridges, cheekbones that bridge East and Central Asian prominence with warmer undertones from South Asian and African heritage. Nose bridge carries Eastern European refinement with slightly broader base from Southeast Asian and African ancestry. Jawline sharp and defined, softened only slightly by the warm melanin distribution across the face. The overall effect is a harmonious blending where no single heritage dominates visually \u2014 instead creating a unique composite that reads as authentically contemporary diaspora.",
     "height_cm": 178,
     "weight_kg": 72,
-    "build": "Athletic and lean with defined musculature — dancer's flexibility combined with fighter's density. Low body fat, efficient movement economy. Built for sustained exertion and precision, not bulk.",
+    "build": "Athletic and lean with defined musculature \u2014 dancer\u0027s flexibility combined with fighter\u0027s density. Low body fat, efficient movement economy. Built for sustained exertion and precision, not bulk.",
     "hair_color": "Natural dark brown with premature silver threading at temples",
-    "hair_style": "Pulled back in a tight, practical braid. No styling for aesthetics — pure function. Occasionally loose for night operations.",
+    "hair_style": "Pulled back in a tight, practical braid. No styling for aesthetics \u2014 pure function. Occasionally loose for night operations.",
     "hair_length": "Medium (shoulder-length when unbraided)",
     "eye_color": "Left eye: warm brown, organic. Right eye: cybernetic with iridescent chrome iris, capable of zoom and recording.",
-    "skin_tone": "Warm medium-deep brown with complex undertones — melanin-rich African and South Asian base enhanced by East Asian and Southeast Asian warmth, tempered by cooler Eastern European undertones. Rich, luminous complexion with dimensional depth and subtle golden undertone.",
-    "complexion": "Face mapped with surgical scars: one diagonal across left cheekbone (3cm, white and thin), another above right brow (2cm, slightly raised). Jaw defined and sharp with moderately prominent cheekbones reflecting the multicontinental ancestry blend. No facial hair. Skin shows minor pitting around the right eye socket where the prosthetic interfaces — barely noticeable without close inspection. Dark circles permanent from nocturnal schedule. Expression default is neutral, observation-focused.",
+    "skin_tone": "Warm medium-deep brown with complex undertones \u2014 melanin-rich African and South Asian base enhanced by East Asian and Southeast Asian warmth, tempered by cooler Eastern European undertones. Rich, luminous complexion with dimensional depth and subtle golden undertone.",
+    "complexion": "Face mapped with surgical scars: one diagonal across left cheekbone (3cm, white and thin), another above right brow (2cm, slightly raised). Jaw defined and sharp with moderately prominent cheekbones reflecting the multicontinental ancestry blend. No facial hair. Skin shows minor pitting around the right eye socket where the prosthetic interfaces \u2014 barely noticeable without close inspection. Dark circles permanent from nocturnal schedule. Expression default is neutral, observation-focused.",
     "distinguishing_marks": [
       "Surgical scar across left cheekbone, approximately 3cm, pale and thin, angled downward toward jaw",
       "Scar above right eyebrow, 2cm, slightly hypertrophic white tissue",
       "Bioware interface scarring around right eye socket in pale arcs, visible only in close proximity or bright light",
       "Series of small puncture scars along left forearm (subcutaneous implant sites), arranged in a vertical line"
     ],
-    "visible_augmentations": "Bioware adrenaline regulator visible as a subtle bulge beneath the left side of the neck, marked by a thin chrome interface line running from collarbone to jawline. Right eye is unmistakably cybernetic — chrome housing with slight luminescence during low-light operations. No attempt at concealment.",
-    "posture_movement": "Moves with economical precision — dancer's flow combined with predator's readiness. Weight distributed for instant directional change. Eyes constantly cataloging environment and threat vectors. Stillness when stationary is absolute, no fidgeting. In conversation, maintains visual contact with the cybernetic eye slightly longer than natural (unconscious habit). Walks with slightly favored left side — old injury memory in the body.",
-    "clothing_style": "Tier 4 utilitarian — high-function field medic aesthetic. Black synthetic reinforced jacket (thermal-regulated, pressure-sealed for contamination), kevlar-weave underlayer visible at wrists and collar. Cargo pants with reinforced thigh and calf pockets for medical supplies and tools. Modular belt system with quick-release medical kit attachments. Steel-toed boots rated for industrial hazard zones. Minimal jewelry except for a scratched medical alert chip embedded in left wrist. Everything is maintained, practical, and selected for rapid field deployment. No branding, no status symbols — survival aesthetic."
+    "visible_augmentations": "Bioware adrenaline regulator visible as a subtle bulge beneath the left side of the neck, marked by a thin chrome interface line running from collarbone to jawline. Right eye is unmistakably cybernetic \u2014 chrome housing with slight luminescence during low-light operations. No attempt at concealment.",
+    "posture_movement": "Moves with economical precision \u2014 dancer\u0027s flow combined with predator\u0027s readiness. Weight distributed for instant directional change. Eyes constantly cataloging environment and threat vectors. Stillness when stationary is absolute, no fidgeting. In conversation, maintains visual contact with the cybernetic eye slightly longer than natural (unconscious habit). Walks with slightly favored left side \u2014 old injury memory in the body.",
+    "clothing_style": "Tier 4 utilitarian \u2014 high-function field medic aesthetic. Black synthetic reinforced jacket (thermal-regulated, pressure-sealed for contamination), kevlar-weave underlayer visible at wrists and collar. Cargo pants with reinforced thigh and calf pockets for medical supplies and tools. Modular belt system with quick-release medical kit attachments. Steel-toed boots rated for industrial hazard zones. Minimal jewelry except for a scratched medical alert chip embedded in left wrist. Everything is maintained, practical, and selected for rapid field deployment. No branding, no status symbols \u2014 survival aesthetic."
   },
   "image_prompt": "Vale Baek, 178cm field medic operative, warm medium-deep brown skin with complex global undertones, sharp defined jawline with moderate prominent cheekbones reflecting pan-Asian and African heritage, surgical scars across left cheekbone and right brow, dark hair in practical braid with silver threading at temples. Left eye warm organic brown, right eye unmistakable chrome cybernetic with iridescent iris glowing faintly. Chrome bioware neck interface visible along jawline. Black reinforced synthetic jacket with thermal regulation, kevlar underlayer at wrists and collar, military cargo pants with equipment pockets, steel-toed boots, modular medical belt. Lean athletic build, economical precise posture, neutral observation-focused expression. Nocturnal urban environment, neon-edged shadows, cool blue-green neo-noir lighting casting highlights on chrome eye and neck interface, industrial zone background with rain-slicked surfaces reflecting neon. Mood: alert, functional, predatory calm. Professional field operator aesthetic. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Eastern European": 33.3,
     "East Asian": 27.5,
@@ -310,12 +308,6 @@
     "South Asian": 12.3,
     "Sub-Saharan African": 10.2
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Eastern European": {
       "Slavic West": {
@@ -362,6 +354,5 @@
         "Angolan": 0.8
       }
     }
-  },
-  "tier": "4"
+  }
 }

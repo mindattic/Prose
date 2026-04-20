@@ -1,51 +1,116 @@
 {
   "id": "885426804bb5981dca0b3642b577e741",
-  "name": "Juno Citlali",
+  "rating": 90,
+  "vote_count": 1,
   "type": "character",
+  "name": "Juno Citlali",
   "aliases": [],
+  "species": "human",
+  "gender": "",
+  "pronouns": "",
   "role": "Private Investigator",
-  "description": "Juno Citlali doesn't investigate cases the way other PIs do. She doesn't chase data or neural trails or physical evidence. She chases debts — the invisible web of obligations, favors, and social contracts that binds the people of GLMZ's lower tiers into a functional community in the absence of institutional support.\n\nIn a city where CorpSec serves corporate interests and formal justice is a luxury of the upper tiers, the lower tiers have developed their own systems of order. Wanjiku sits at the center of one such system — a vast, informal network of mutual obligation that she has spent thirty years cultivating. She has helped people find jobs, settle disputes, secure housing, obtain medical care, and navigate bureaucracy, and every act of help creates a debt. Not a financial debt — a social one. And when Wanjiku needs information, access, or assistance for an investigation, she calls in those debts with the precision of a banker calling in loans.\n\nHer method is uniquely effective for lower-tier investigations because it operates entirely within the trust economy that these communities have built for themselves. Her informants aren't paid — they're repaying kindness. Her access isn't purchased — it's earned. And her investigations don't disrupt the community fabric because she is the community fabric. She is simultaneously an investigator, a mediator, a counselor, and an informal judge, and the people who live in her territory understand that keeping Wanjiku happy is essential to keeping their community functional.",
-  "affiliation": "Independent — operates through an intricate personal economy of debts and favors",
-  "tier": "3",
-  "location": "A parlor in Crucible Square that functions as a combination office, tea house, and informal court — people come to settle debts, ask favors, and request investigations, near Ashland and Division",
-  "specialization": "Leveraging social debts and obligation networks to locate people and solve cases",
-  "methods": [
-    "Calling in favors from a decades-spanning network of people who owe her",
-    "Tracking people through their debt relationships — everyone owes someone",
-    "Mediating disputes as a cover for gathering intelligence from both sides",
-    "Using the favor economy to access places and information that money can't buy",
-    "Maintaining a mental ledger of who owes what to whom across the lower tiers"
-  ],
-  "notable_cases": [
-    "Found a missing debtor by calling in seven consecutive favors — each person owed her something and paid it by providing one piece of the puzzle",
-    "Resolved a three-family feud in the Narrows by revealing that the original grievance was based on forged evidence — then charged all three families in favors",
-    "Located a witness to a Tier 3 murder who had gone into hiding by tracking the chain of people who had helped them disappear — every helper owed someone who owed Wanjiku"
-  ],
-  "equipment": [
-    "An old-fashioned ledger book — handwritten, coded in a personal cipher, containing decades of favor records",
-    "A tea set that she brings to every meeting — the ritual of tea is her interrogation technique",
-    "A reputation so well-established that her name opens doors without her being present",
-    "An umbrella with a concealed blade — she's had to defend herself exactly twice in thirty years",
-    "Reading glasses she doesn't need — she uses the act of putting them on and taking them off as a conversational pacing tool"
-  ],
-  "personality": "Wanjiku is sixty-one years old, Kenyan-Swedish-Ghanaian heritage, with rich dark skin, silver-streaked hair she wears in an elaborate wrap, and the demeanor of someone's favorite aunt — warm, knowing, and slightly terrifying when you realize how much she knows about you. She operates in the spaces between formal institutions, in the human economy of debts, favors, obligations, and gratitude that has existed since before money. She never threatens. She never raises her voice. She simply reminds you that she helped you once, and asks if you'd be willing to help her now. The ask is always reasonable. The refusal is always unwise.",
+  "age": 0,
+  "status": "alive",
+  "location": "A parlor in Crucible Square that functions as a combination office, tea house, and informal court \u2014 people come to settle debts, ask favors, and request investigations, near Ashland and Division",
+  "description": "Juno Citlali doesn\u0027t investigate cases the way other PIs do. She doesn\u0027t chase data or neural trails or physical evidence. She chases debts \u2014 the invisible web of obligations, favors, and social contracts that binds the people of GLMZ\u0027s lower tiers into a functional community in the absence of institutional support.\n\nIn a city where CorpSec serves corporate interests and formal justice is a luxury of the upper tiers, the lower tiers have developed their own systems of order. Wanjiku sits at the center of one such system \u2014 a vast, informal network of mutual obligation that she has spent thirty years cultivating. She has helped people find jobs, settle disputes, secure housing, obtain medical care, and navigate bureaucracy, and every act of help creates a debt. Not a financial debt \u2014 a social one. And when Wanjiku needs information, access, or assistance for an investigation, she calls in those debts with the precision of a banker calling in loans.\n\nHer method is uniquely effective for lower-tier investigations because it operates entirely within the trust economy that these communities have built for themselves. Her informants aren\u0027t paid \u2014 they\u0027re repaying kindness. Her access isn\u0027t purchased \u2014 it\u0027s earned. And her investigations don\u0027t disrupt the community fabric because she is the community fabric. She is simultaneously an investigator, a mediator, a counselor, and an informal judge, and the people who live in her territory understand that keeping Wanjiku happy is essential to keeping their community functional.",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0,
+      "ideal": 0,
+      "id": 0,
+      "shadow": 0,
+      "mask": 0,
+      "ghost": 0
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": [],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
+  },
   "relationships": [
     {
       "name": "Mama Ito",
       "type": "peer",
-      "description": "The soup kitchen operator shares Wanjiku's social territory — they coordinate informally to ensure no one falls through the cracks"
+      "description": "The soup kitchen operator shares Wanjiku\u0027s social territory \u2014 they coordinate informally to ensure no one falls through the cracks",
+      "emotional_core": "",
+      "story_tension": ""
     },
     {
       "name": "Magistrate Dalila Pena-Frimpong",
       "type": "reluctant admirer",
-      "description": "A Tier 3 arbitration judge who privately acknowledges that Wanjiku's informal justice system is more effective than the formal one"
+      "description": "A Tier 3 arbitration judge who privately acknowledges that Wanjiku\u0027s informal justice system is more effective than the formal one",
+      "emotional_core": "",
+      "story_tension": ""
     }
   ],
   "story_hooks": [
-    "Someone is forging debts in Wanjiku's name — claiming she owes them favors she never incurred — and the forgeries are good enough to fool people who should know better",
-    "A favor she called in twenty years ago has unexpected consequences — the person who repaid the debt did something terrible to fulfill it, and Wanjiku has to confront her responsibility",
-    "The favor economy is being infiltrated by a corporation that wants to weaponize social debt as a control mechanism — and Wanjiku is the only person who can see the pattern"
+    "Someone is forging debts in Wanjiku\u0027s name \u2014 claiming she owes them favors she never incurred \u2014 and the forgeries are good enough to fool people who should know better",
+    "A favor she called in twenty years ago has unexpected consequences \u2014 the person who repaid the debt did something terrible to fulfill it, and Wanjiku has to confront her responsibility",
+    "The favor economy is being infiltrated by a corporation that wants to weaponize social debt as a control mechanism \u2014 and Wanjiku is the only person who can see the pattern"
   ],
+  "narrative_function": "",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "Independent \u2014 operates through an intricate personal economy of debts and favors",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": []
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {},
+  "operating_territory": {
+    "home_turf": "A parlor in Crucible Square that functions as a combination office",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
   "tags": [
     "person",
     "character",
@@ -57,23 +122,11 @@
     "sentient",
     "human"
   ],
-  "carried_weapons": [
-    "Nkomo-Lindqvist NL-22 'Peacemaker'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Crucible Industries Ceramic Stiletto CS-4 'Phantom Needle'",
-    "Tessera Industries Void Grenade VG-1 'Black Hole'",
-    "Neural Palate",
-    "Zheng-Dao Heavy Industries Rail Pistol RP-2 'Verdict'",
-    "GLMZ"
-  ],
-  "district": "the Gray Zone",
   "physical_description": {
-    "heritage": "Southeast Asian (32.5%) with significant Indigenous American (30.2%), Northern European (18.0%), East Asian (12.4%), and Hispanic/Latin American (6.9%) ancestry. The combination creates a striking cross-continental appearance—high cheekbones and facial structure from Southeast Asian and Indigenous American ancestry blend with the slightly broader nasal bridge characteristic of Indigenous heritage, softened by East Asian orbital structure and Northern European bone definition. The result is an unmistakably mixed-heritage phenotype with warm golden-bronze undertones that shift between amber and mahogany in different light.",
+    "heritage": "Southeast Asian (32.5%) with significant Indigenous American (30.2%), Northern European (18.0%), East Asian (12.4%), and Hispanic/Latin American (6.9%) ancestry. The combination creates a striking cross-continental appearance\u2014high cheekbones and facial structure from Southeast Asian and Indigenous American ancestry blend with the slightly broader nasal bridge characteristic of Indigenous heritage, softened by East Asian orbital structure and Northern European bone definition. The result is an unmistakably mixed-heritage phenotype with warm golden-bronze undertones that shift between amber and mahogany in different light.",
     "height_cm": 168,
     "weight_kg": 62,
-    "build": "Lean and economical, with the posture of someone who has spent decades sitting and listening. Shoulders slightly rounded from years at a desk or low table. No excess movement — everything purposeful.",
+    "build": "Lean and economical, with the posture of someone who has spent decades sitting and listening. Shoulders slightly rounded from years at a desk or low table. No excess movement \u2014 everything purposeful.",
     "hair_color": "Dark brown with silver-grey threading at the temples and crown",
     "hair_style": "Worn in a neat crown of thin braids, wrapped with indigo thread at the ends. Practical, deliberate, not decorative.",
     "hair_length": "Medium (shoulder-length when unbraided)",
@@ -83,13 +136,14 @@
     "distinguishing_marks": [
       "Fine scar tissue along the left cheekbone, approximately 3cm, from a knife wound sustained around age twenty-five",
       "Faded tattoo on the inner right wrist: a simple circle with three internal lines, marking her induction into the Crucible Square mutual aid collective at age thirty",
-      "Calluses on her hands from decades of handling paper ledgers and physical currency (Φ notes and coins), particularly on the thumb and forefinger of her right hand"
+      "Calluses on her hands from decades of handling paper ledgers and physical currency (\u03A6 notes and coins), particularly on the thumb and forefinger of her right hand"
     ],
-    "visible_augmentations": "None visible. Any augmentations she carries are subcutaneous and deliberately hidden — consistent with her philosophy that trust is built on presence, not performance.",
-    "posture_movement": "Sits with perfect stillness, rarely fidgets. Moves with economical precision. Her gaze is direct and unwavering — she makes people uncomfortable because she watches rather than speaks. When she does move, it is slow and deliberate, designed to not startle or intimidate. Her hands are usually folded in her lap or on the table in front of her.",
-    "clothing_style": "Tier 3-4 practical: well-maintained but worn linen shirts in cream or grey, often layered with a rust-colored vest or indigo wrap. Loose black trousers with deep pockets. A long coat in charcoal wool, patched at the elbows, worn year-round. She favors natural fabrics and muted colors — nothing that draws attention. Her clothes smell faintly of tea, paper, and incense. No corpo branding, no corporate augmentation displays. Everything about her presentation says 'trust me because I am not selling anything.'"
+    "visible_augmentations": "None visible. Any augmentations she carries are subcutaneous and deliberately hidden \u2014 consistent with her philosophy that trust is built on presence, not performance.",
+    "posture_movement": "Sits with perfect stillness, rarely fidgets. Moves with economical precision. Her gaze is direct and unwavering \u2014 she makes people uncomfortable because she watches rather than speaks. When she does move, it is slow and deliberate, designed to not startle or intimidate. Her hands are usually folded in her lap or on the table in front of her.",
+    "clothing_style": "Tier 3-4 practical: well-maintained but worn linen shirts in cream or grey, often layered with a rust-colored vest or indigo wrap. Loose black trousers with deep pockets. A long coat in charcoal wool, patched at the elbows, worn year-round. She favors natural fabrics and muted colors \u2014 nothing that draws attention. Her clothes smell faintly of tea, paper, and incense. No corpo branding, no corporate augmentation displays. Everything about her presentation says \u0027trust me because I am not selling anything.\u0027"
   },
   "image_prompt": "Juno Citlali, 2226 neo-noir Great Lakes Metropolitan Zone. Mixed-heritage woman with Southeast Asian, Indigenous American, Northern European, East Asian, and Latin American ancestry. Warm golden-bronze skin with amber undertones. High pronounced cheekbones, slightly broad nasal bridge, alert dark brown eyes with subtle eye shape from East Asian genetics. Dark brown hair with silver threading at temples, worn in neat shoulder-length braids wrapped with indigo thread. Faint scar tissue visible on left cheekbone. Seated in perfect stillness, unwavering direct gaze. Wearing cream linen shirt layered with rust-colored vest, black loose trousers, charcoal wool long coat with patched elbows. Hands folded deliberately. Muted, natural color palette. No corporate augmentations visible. Mood: trustworthy, observant, deliberate. Low ambient lighting casting warm shadows. Tea and paper scent suggested in composition. Tier 3-4 worn practical clothing. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Southeast Asian": 32.5,
     "Indigenous American": 30.2,
@@ -97,7 +151,6 @@
     "East Asian": 12.4,
     "Hispanic/Latin American": 6.9
   },
-  "ancestry_harmonized": true,
   "ancestry_detail": {
     "Southeast Asian": {
       "Indonesian": {
@@ -142,8 +195,5 @@
         "Mexican": 1.6
       }
     }
-  },
-  "operating_territory": {
-    "home_turf": "A parlor in Crucible Square that functions as a combination office"
   }
 }

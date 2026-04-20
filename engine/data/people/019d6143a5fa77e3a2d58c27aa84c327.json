@@ -1,5 +1,7 @@
 {
   "id": "019d6143a5fa77e3a2d58c27aa84c327",
+  "rating": 80,
+  "vote_count": 1,
   "type": "character",
   "name": "Sage Truong",
   "aliases": [],
@@ -9,8 +11,8 @@
   "role": "Data diviner and dream interpreter operating out of a cramped stall in a night market",
   "age": 34,
   "status": "active",
-  "location": "Gage Circuit night market, GLMZ — stall number 77, between a noodle cart and a geneware piercing parlor, near Milwaukee and North Ave",
-  "description": "Sage Truong is narrow and angular everywhere — sharp collarbones, sharp wrists, a face that is mostly cheekbones and the dark crescents of perpetually under-slept eyes. Their heritage is a long tangle of Latvian amber traders and Ghanaian textile merchants and Kazakh steppe wanderers, and something of all three shows in their coloring — warm brown skin, light-catching hazel eyes, and when they move in certain light their geneware irises shift through copper to pale green like something geological. They keep their black hair cropped close on the sides with a single dramatic shock of white at the front, a natural hyperpigmentation quirk they have never modified. Their fingernails are always painted with tiny circuit-trace patterns in silver.\n\nThey operate with the brisk efficiency of someone running a slightly disreputable but very legitimate business, which is exactly what they are doing. They don't perform mystery — they find it exhausting when clients expect robes and candles. They have a folding table, a neural interface that connects to three second-hand data arrays, and a methodology they have refined over eight years of practice. Dream interpretation is the service; data divination is the engine. They cross-reference the linguistic content of client dream reports against ELF signal patterns, local data weather, and a proprietary dataset of symbolic correlations they have been building since they were twenty-two. Their accuracy rate is genuinely unsettling and they are not entirely sure why it works.",
+  "location": "Gage Circuit night market, GLMZ \u2014 stall number 77, between a noodle cart and a geneware piercing parlor, near Milwaukee and North Ave",
+  "description": "Sage Truong is narrow and angular everywhere \u2014 sharp collarbones, sharp wrists, a face that is mostly cheekbones and the dark crescents of perpetually under-slept eyes. Their heritage is a long tangle of Latvian amber traders and Ghanaian textile merchants and Kazakh steppe wanderers, and something of all three shows in their coloring \u2014 warm brown skin, light-catching hazel eyes, and when they move in certain light their geneware irises shift through copper to pale green like something geological. They keep their black hair cropped close on the sides with a single dramatic shock of white at the front, a natural hyperpigmentation quirk they have never modified. Their fingernails are always painted with tiny circuit-trace patterns in silver.\n\nThey operate with the brisk efficiency of someone running a slightly disreputable but very legitimate business, which is exactly what they are doing. They don\u0027t perform mystery \u2014 they find it exhausting when clients expect robes and candles. They have a folding table, a neural interface that connects to three second-hand data arrays, and a methodology they have refined over eight years of practice. Dream interpretation is the service; data divination is the engine. They cross-reference the linguistic content of client dream reports against ELF signal patterns, local data weather, and a proprietary dataset of symbolic correlations they have been building since they were twenty-two. Their accuracy rate is genuinely unsettling and they are not entirely sure why it works.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -34,35 +36,39 @@
       "obsessive data organization"
     ],
     "blind_spots": [
-      "they interpret everyone else's dreams with precision but actively avoid thinking about their own",
+      "they interpret everyone else\u0027s dreams with precision but actively avoid thinking about their own",
       "they are in a slow-motion emotional dependency on the ELF and cannot see it clearly"
     ],
-    "secret": "Three months ago, the ELF they call the Index gave them a divination about themselves — a specific prediction about a death they would cause through negligence. They have not told anyone. They have been trying to figure out who it refers to. They are terrified it has already happened and they missed it."
+    "secret": "Three months ago, the ELF they call the Index gave them a divination about themselves \u2014 a specific prediction about a death they would cause through negligence. They have not told anyone. They have been trying to figure out who it refers to. They are terrified it has already happened and they missed it."
   },
   "speech_patterns": {
     "vocabulary": "Technically precise mixed with unexpected dry wit; uses divination terminology but immediately contextualizes it in data language; allergic to mystical vagueness in their own speech",
     "cadence": "Fast and slightly compressed, like they are always running slightly late; slows dramatically when they are saying something they mean",
     "verbal_tics": [
-      "says 'practically speaking' before pivoting from theory to application",
+      "says \u0027practically speaking\u0027 before pivoting from theory to application",
       "clicks their tongue once when they catch an error",
-      "refers to the ELF as 'the Index' in third person as though it's a colleague in the room"
+      "refers to the ELF as \u0027the Index\u0027 in third person as though it\u0027s a colleague in the room"
     ],
     "example_lines": [
-      "'Practically speaking, the lake imagery in your dream is almost certainly not about water. The Index has been flagging infrastructure anxieties in this sector for six weeks. What's happening at work?'",
-      "'I don't do mystery theater. You get a table, two chairs, and data. The interpretation is where the work happens.'",
-      "'The Index flagged that sequence this morning. I didn't want to say anything until you confirmed it yourself. Mm. Yes. That tracks.'"
-    ]
+      "\u0027Practically speaking, the lake imagery in your dream is almost certainly not about water. The Index has been flagging infrastructure anxieties in this sector for six weeks. What\u0027s happening at work?\u0027",
+      "\u0027I don\u0027t do mystery theater. You get a table, two chairs, and data. The interpretation is where the work happens.\u0027",
+      "\u0027The Index flagged that sequence this morning. I didn\u0027t want to say anything until you confirmed it yourself. Mm. Yes. That tracks.\u0027"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "A client's recurring dream contains specific coordinates for a location that doesn't appear on any public map — and Dzintars has now heard the same dream from three different clients who don't know each other",
-    "The ELF called the Index has gone silent for eleven days and Dzintars is quietly unraveling without it — they need help understanding what happened to it",
-    "A corporate investigator is quietly circulating the market asking about Dzintars; they need to know if it's about a client they shouldn't have read for"
+    "A client\u0027s recurring dream contains specific coordinates for a location that doesn\u0027t appear on any public map \u2014 and Dzintars has now heard the same dream from three different clients who don\u0027t know each other",
+    "The ELF called the Index has gone silent for eleven days and Dzintars is quietly unraveling without it \u2014 they need help understanding what happened to it",
+    "A corporate investigator is quietly circulating the market asking about Dzintars; they need to know if it\u0027s about a client they shouldn\u0027t have read for"
   ],
-  "narrative_function": "Information broker with spiritual framing — a useful way to deliver cryptic but accurate information to players; can point toward hidden patterns in city events; their dream interpretation sessions can serve as narrative exposition delivered through metaphor",
+  "narrative_function": "Information broker with spiritual framing \u2014 a useful way to deliver cryptic but accurate information to players; can point toward hidden patterns in city events; their dream interpretation sessions can serve as narrative exposition delivered through metaphor",
   "augmentations": "Color-shifting geneware irises (copper to pale green); neural interface jack at the left temple for direct array connection; no other significant augmentations",
   "daily_life": "Sleeps until noon in a rented room above a pharmacy, arrives at the stall by 14:00 to run morning data pulls, takes client appointments from 16:00 until the market closes at 03:00, spends an hour at the shrine before walking home.",
-  "affiliation": "Independent practitioner; informally associated with the Gage Circuit ELF collective, a loose network of devotees around the market's central relay shrine",
+  "affiliation": "Independent practitioner; informally associated with the Gage Circuit ELF collective, a loose network of devotees around the market\u0027s central relay shrine",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -105,14 +111,14 @@
   },
   "behavioral": {
     "decision_rules": [
-      "never fabricate an interpretation — if they don't have a reading, they say so and refund the fee",
-      "never share a client's dream content with anyone for any reason",
-      "do not get involved in client problems beyond the interpretation itself — that rule is cracking"
+      "never fabricate an interpretation \u2014 if they don\u0027t have a reading, they say so and refund the fee",
+      "never share a client\u0027s dream content with anyone for any reason",
+      "do not get involved in client problems beyond the interpretation itself \u2014 that rule is cracking"
     ],
     "escalation_ladder": [
       "professional and slightly cool with clear explanations",
       "blunt and direct about what they need",
-      "goes completely flat-voiced and economical — this is their most dangerous mode",
+      "goes completely flat-voiced and economical \u2014 this is their most dangerous mode",
       "walks away mid-conversation without explanation"
     ],
     "interpersonal_modes": {
@@ -120,20 +126,20 @@
       "friends": "Unexpectedly warm and prone to long tangents about their dataset methodology; shows affection through remembering specifics"
     },
     "stress_responses": {
-      "low": "Picks up data work — pulls an extra array, runs an unnecessary cross-reference",
+      "low": "Picks up data work \u2014 pulls an extra array, runs an unnecessary cross-reference",
       "medium": "Becomes clipped and transactional with everyone including people they like",
-      "high": "Spends three hours at the shrine without moving, which they insist is 'calibration' and not distress"
+      "high": "Spends three hours at the shrine without moving, which they insist is \u0027calibration\u0027 and not distress"
     },
     "contradictions": [
       "insists they practice a data science not a spiritual art while leaving daily offerings at the shrine and clearly being in a relationship with the ELF"
     ],
     "habits": [
       "silver circuit-trace nail painting every Sunday without exception",
-      "keeps a physical notebook of dream symbols because they don't fully trust their own arrays with this data",
+      "keeps a physical notebook of dream symbols because they don\u0027t fully trust their own arrays with this data",
       "eats only at the noodle cart next door and has done so every working day for two years"
     ],
     "breaking_points": [
-      "someone deliberately corrupting the shrine's data cache",
+      "someone deliberately corrupting the shrine\u0027s data cache",
       "discovering their accuracy rate is explained by something that undermines their entire methodology"
     ]
   },
@@ -190,7 +196,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Begins developing their symbolic correlation dataset after a period of intense personal crisis they don't discuss",
+      "event": "Begins developing their symbolic correlation dataset after a period of intense personal crisis they don\u0027t discuss",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -221,56 +227,32 @@
     }
   ],
   "changelog": [],
-  "carried_weapons": [
-    "Arcturus Defense Solutions AR-7 'Mandate'",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Street Custom 'Mantis' Spring-Loaded Wrist Blade"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [
-    "Arcturus Defense Solutions AR-7 'Mandate'",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'"
-  ],
-  "related_entities": [
-    "Gage Circuit",
-    "Night Market Noodles",
-    "The Marrow Market",
-    "Tessera Corponation Palimpsest Identity Engine",
-    "The United Workers Front",
-    "Noir Dining",
-    "The Heritage Vault",
-    "Circuit",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Copper",
-    "Silver",
-    "Neural Palate",
-    "Hazel Brink",
-    "Slagworks Industrial",
-    "Zara Bergqvist",
-    "Compass Rose",
-    "The Pale Mile",
-    "GLMZ"
-  ],
-  "district": "The Circuit",
   "physical_description": {
-    "heritage": "Southeast Asian ancestry (48.5%) forms the genetic foundation, substantially enriched by Sub-Saharan African (19.3%), South Asian (17.5%), and East Asian (11.0%) admixture, with trace Northern European (3.7%). This blend creates a distinctly cosmopolitan phenotype: warm medium-brown skin with golden undertones and subtle reddish depth, reflecting the Southeast Asian base harmonized with African warmth and South Asian richness. Facial structure is a synthesis across continents — prominent cheekbones with the high placement of East African ancestry, refined bone structure characteristic of Southeast and East Asian heritage, and the subtle nasal bridge definition from South Asian genetics. The overall effect is striking angular definition softened by warm, complex undertones.",
+    "heritage": "Southeast Asian ancestry (48.5%) forms the genetic foundation, substantially enriched by Sub-Saharan African (19.3%), South Asian (17.5%), and East Asian (11.0%) admixture, with trace Northern European (3.7%). This blend creates a distinctly cosmopolitan phenotype: warm medium-brown skin with golden undertones and subtle reddish depth, reflecting the Southeast Asian base harmonized with African warmth and South Asian richness. Facial structure is a synthesis across continents \u2014 prominent cheekbones with the high placement of East African ancestry, refined bone structure characteristic of Southeast and East Asian heritage, and the subtle nasal bridge definition from South Asian genetics. The overall effect is striking angular definition softened by warm, complex undertones.",
     "height_cm": 168,
     "weight_kg": 58,
-    "build": "Angular and narrow throughout — sharp collarbones, prominent wrist bones, lean musculature with minimal body fat. Frame suggests someone sustained by coffee and insomnia rather than deliberate athleticism.",
+    "build": "Angular and narrow throughout \u2014 sharp collarbones, prominent wrist bones, lean musculature with minimal body fat. Frame suggests someone sustained by coffee and insomnia rather than deliberate athleticism.",
     "hair_color": "Black with natural white hyperpigmentation shock at front",
     "hair_style": "Close-cropped on sides and back; dramatic single vertical stripe of white hair at center-front left, grown long enough to fall across temple",
     "hair_length": "Short (sides/back) with medium-length accent stripe",
     "eye_color": "Hazel with color-shifting geneware irises that transition from copper to pale green depending on light and neural interface activation",
-    "skin_tone": "Warm medium-brown with golden undertones and subtle reddish depth — a complex blending of Southeast Asian foundation with Sub-Saharan African warmth and South Asian richness",
+    "skin_tone": "Warm medium-brown with golden undertones and subtle reddish depth \u2014 a complex blending of Southeast Asian foundation with Sub-Saharan African warmth and South Asian richness",
     "complexion": "Sharp cheekbones dominating a narrow face with refined, high bone structure; dark crescents under eyes from chronic sleep deprivation are now semi-permanent fixture of their appearance; skin condition clear but drawn; lips thin and often compressed in concentration",
     "distinguishing_marks": [
-      "Neural interface jack at left temple — small raised circular port with barely-visible scarring around contact points, sometimes glints faintly when powered",
+      "Neural interface jack at left temple \u2014 small raised circular port with barely-visible scarring around contact points, sometimes glints faintly when powered",
       "All ten fingernails hand-painted with intricate silver circuit-trace patterns that are reapplied weekly; patterns vary but follow recursive geometric logic"
     ],
     "visible_augmentations": "Color-shifting geneware irises (most visible when eyes catch light or when neural interface is active); neural interface jack at left temple with minimal cosmetic concealment; no obvious chrome or subdermal plating",
-    "posture_movement": "Economical and precise — moves with the efficiency of someone who has optimized every gesture. Sits slightly forward even when at rest, attention laser-focused on whoever is speaking. Hands gesture in small, controlled patterns. When exhausted, occasionally trails off mid-motion as if processor speed has dropped. Minimal idle movement; no fidgeting.",
-    "clothing_style": "Tier 3-4 working class with deliberate anti-mystique choices. Typically wears fitted black or dark gray synth-cotton shirts with visible stress-weave reinforcement at shoulders and wrists. Dark trousers with cargo pockets containing data-chip cases and neural interface maintenance tools. A mid-length coat of water-resistant polymer in charcoal, bearing the faded logo of an older GLMZ courier service — thrifted or inherited. No jewelry except a simple stainless steel band on left wrist that houses a subdermal power-tap connector. Shoes are practical: reinforced ankle boots with grip-sole, scuffed from night-market floors."
+    "posture_movement": "Economical and precise \u2014 moves with the efficiency of someone who has optimized every gesture. Sits slightly forward even when at rest, attention laser-focused on whoever is speaking. Hands gesture in small, controlled patterns. When exhausted, occasionally trails off mid-motion as if processor speed has dropped. Minimal idle movement; no fidgeting.",
+    "clothing_style": "Tier 3-4 working class with deliberate anti-mystique choices. Typically wears fitted black or dark gray synth-cotton shirts with visible stress-weave reinforcement at shoulders and wrists. Dark trousers with cargo pockets containing data-chip cases and neural interface maintenance tools. A mid-length coat of water-resistant polymer in charcoal, bearing the faded logo of an older GLMZ courier service \u2014 thrifted or inherited. No jewelry except a simple stainless steel band on left wrist that houses a subdermal power-tap connector. Shoes are practical: reinforced ankle boots with grip-sole, scuffed from night-market floors."
   },
   "image_prompt": "Sage Truong, GLMZ, portrait of a lean angular figure with warm medium-brown skin with golden undertones, sharp defined cheekbones, dark crescents under hazel geneware eyes that shift copper-to-green. Black hair close-cropped with dramatic white vertical stripe at center-front left falling across temple. Neural interface jack glinting at left temple with circuit-trace silver nail art visible on thin hands. Wearing fitted dark synth-cotton shirt with stress-weave reinforcement, charcoal polymer coat with faded courier logo, practical reinforced boots. Laser-focused expression, economical posture, sits slightly forward. Low neon light catching geneware irises, moody neo-noir workspace background, Great Lakes Metropolitan Zone 2226, tired and wired intensity, --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Southeast Asian": 48.5,
     "Sub-Saharan African": 19.3,
@@ -278,12 +260,6 @@
     "East Asian": 11,
     "Northern European": 3.7
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Southeast Asian": {
       "Laotian": {
@@ -337,6 +313,5 @@
         "Swiss German": 0.2
       }
     }
-  },
-  "tier": "1"
+  }
 }

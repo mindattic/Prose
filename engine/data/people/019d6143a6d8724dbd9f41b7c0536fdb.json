@@ -1,17 +1,18 @@
 {
   "id": "019d6143a6d8724dbd9f41b7c0536fdb",
   "rating": 70,
+  "vote_count": 1,
   "type": "character",
   "name": "Onyx Shirazi",
   "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
-  "role": "Field trauma surgeon and combat support — combat medic",
+  "role": "Field trauma surgeon and combat support \u2014 combat medic",
   "age": 33,
   "status": "active",
-  "location": "Geartown — industrial district of chop shops and fabricators, near North Ave and Milwaukee",
-  "description": "Onyx Shirazi are tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — cybernetic arm — right, full replacement from shoulder — stronger than organic,  — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a combat medic out of Geartown, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIn the runner community, Onyx Shirazi are known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "location": "Geartown \u2014 industrial district of chop shops and fabricators, near North Ave and Milwaukee",
+  "description": "Onyx Shirazi are tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible \u2014 cybernetic arm \u2014 right, full replacement from shoulder \u2014 stronger than organic,  \u2014 and they make no effort to hide it.\n\nTheir entry into running was involuntary \u2014 a debt to the wrong people, a choice between working it off or losing parts \u2014 and the debt is still not fully paid. They work as a combat medic out of Geartown, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIn the runner community, Onyx Shirazi are known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
       "wound": 0.13,
@@ -23,37 +24,37 @@
     },
     "core_fears": [
       "Becoming obsolete as augmentation technology outpaces their chrome",
-      "Being captured alive — death is preferable to corporate interrogation",
-      "Going cyberpsycho — losing the boundary between human and machine"
+      "Being captured alive \u2014 death is preferable to corporate interrogation",
+      "Going cyberpsycho \u2014 losing the boundary between human and machine"
     ],
     "core_desires": [
-      "A crew worth trusting — people who stay when the shooting starts",
-      "Stability — a place to sleep that's the same place two nights running",
-      "Reputation — to be the name fixers whisper when the job absolutely cannot fail"
+      "A crew worth trusting \u2014 people who stay when the shooting starts",
+      "Stability \u2014 a place to sleep that\u0027s the same place two nights running",
+      "Reputation \u2014 to be the name fixers whisper when the job absolutely cannot fail"
     ],
     "coping_mechanisms": [
-      "Humor — deflects everything serious with jokes until the joke becomes the personality",
-      "Overwork — takes every contract offered because idleness invites thinking",
-      "Ritual — follows the same pre-job routine every time, superstition as structure"
+      "Humor \u2014 deflects everything serious with jokes until the joke becomes the personality",
+      "Overwork \u2014 takes every contract offered because idleness invites thinking",
+      "Ritual \u2014 follows the same pre-job routine every time, superstition as structure"
     ],
     "blind_spots": [
       "Assumes everyone has an angle because they always have an angle",
       "Fails to notice when their own behavior mirrors the people they despise",
       "Cannot distinguish between caution and cowardice in themselves or others"
     ],
-    "secret": "Somadina Karlsen-Sow has a child in another city, being raised by someone else. Sends Φ2,000 monthly under an alias. Has never visited."
+    "secret": "Somadina Karlsen-Sow has a child in another city, being raised by someone else. Sends \u03A62,000 monthly under an alias. Has never visited."
   },
   "speech_patterns": {
-    "vocabulary": "the Gray Zone street dialect — layered slang, rhythm-heavy, half the meaning is in the cadence.",
-    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "vocabulary": "the Gray Zone street dialect \u2014 layered slang, rhythm-heavy, half the meaning is in the cadence.",
+    "cadence": "Rapid and dense \u2014 information-heavy sentences that demand attention.",
     "verbal_tics": [
       "Uses old pre-collapse slang that nobody else remembers",
-      "Whispers when angry — the quieter the voice, the worse the situation"
+      "Whispers when angry \u2014 the quieter the voice, the worse the situation"
     ],
     "example_lines": [
-      "\"Hold still. This is going to hurt and I don't care.\"",
-      "\"I can keep you alive through almost anything. What I can't do is make you grateful.\"",
-      "\"Blood type? No, I don't need your blood type. I need you to stop moving.\""
+      "\u0022Hold still. This is going to hurt and I don\u0027t care.\u0022",
+      "\u0022I can keep you alive through almost anything. What I can\u0027t do is make you grateful.\u0022",
+      "\u0022Blood type? No, I don\u0027t need your blood type. I need you to stop moving.\u0022"
     ],
     "avoidances": [],
     "subtext": "",
@@ -62,14 +63,14 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A crew member from Somadina Karlsen-Sow's past shows up in GLMZ, carrying old grievances and new chrome",
+    "A crew member from Somadina Karlsen-Sow\u0027s past shows up in GLMZ, carrying old grievances and new chrome",
     "A high-paying contract turns out to target someone Somadina Karlsen-Sow owes a personal debt to",
-    "A former associate resurfaces with evidence that could destroy Somadina Karlsen-Sow's reputation — and a price for silence"
+    "A former associate resurfaces with evidence that could destroy Somadina Karlsen-Sow\u0027s reputation \u2014 and a price for silence"
   ],
-  "narrative_function": "Somadina Karlsen-Sow functions as a connector — their work puts them in contact with multiple factions, classes, and agendas. Stories involving them naturally cross boundaries between districts, tiers, and moral categories.",
-  "augmentations": "Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome. Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
-  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather — not for pleasure, but for market intelligence.",
-  "affiliation": "Semi-independent — has standing arrangements with several crews",
+  "narrative_function": "Somadina Karlsen-Sow functions as a connector \u2014 their work puts them in contact with multiple factions, classes, and agendas. Stories involving them naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Cybernetic arm \u2014 right, full replacement from shoulder \u2014 stronger than organic, obvious chrome. Cortical bomb (employer installed, removed by street doc, scar tissue remains)",
+  "daily_life": "Irregular schedule dictated by contract timing. Between jobs: equipment maintenance, physical training, and the careful management of a reputation that exists entirely through word of mouth. Drinks at establishments where runners gather \u2014 not for pleasure, but for market intelligence.",
+  "affiliation": "Semi-independent \u2014 has standing arrangements with several crews",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -158,12 +159,12 @@
     },
     "strengths": [
       "expert marksman",
-      "multilingual — speaks 4+ languages fluently",
+      "multilingual \u2014 speaks 4\u002B languages fluently",
       "photographic memory for faces and layouts"
     ],
     "weaknesses": [
-      "augmentation dependency — performance drops sharply if chrome malfunctions",
-      "inability to delegate — must control everything personally",
+      "augmentation dependency \u2014 performance drops sharply if chrome malfunctions",
+      "inability to delegate \u2014 must control everything personally",
       "trust issues that limit crew effectiveness"
     ],
     "tags": [
@@ -181,18 +182,18 @@
     "decision_rules": [
       "Always verifies target identity independently before lethal contracts",
       "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Will abandon a job if the intel was deliberately falsified \u2014 being set up violates the contract",
+      "Maintains a personal blacklist of clients who\u0027ve burned runners \u2014 checks it religiously",
       "Never discusses active contracts with anyone not directly involved",
       "Will work with anyone once. Second time requires vouching from someone trusted."
     ],
     "escalation_ladder": [
-      "1. De-escalate — talk first, assess options, buy time",
-      "2. Reposition — move to advantage, control sightlines and exits",
-      "3. Threaten — make consequences clear without committing to them",
-      "4. Non-lethal force — incapacitate, restrain, disable",
-      "5. Lethal force — only when other options are exhausted or time runs out",
-      "6. Scorched earth — everything burns, survival takes priority over everything"
+      "1. De-escalate \u2014 talk first, assess options, buy time",
+      "2. Reposition \u2014 move to advantage, control sightlines and exits",
+      "3. Threaten \u2014 make consequences clear without committing to them",
+      "4. Non-lethal force \u2014 incapacitate, restrain, disable",
+      "5. Lethal force \u2014 only when other options are exhausted or time runs out",
+      "6. Scorched earth \u2014 everything burns, survival takes priority over everything"
     ],
     "interpersonal_modes": {
       "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
@@ -212,14 +213,14 @@
       "Insists they work alone but performs noticeably better in a team"
     ],
     "habits": [
-      "Counts ammunition obsessively — knows the exact round count at all times",
+      "Counts ammunition obsessively \u2014 knows the exact round count at all times",
       "Practices a kata or fighting form every morning regardless of circumstances",
       "Checks exits within 10 seconds of entering any room"
     ],
     "breaking_points": [
       "Watching someone they trained or mentored die on a job they recommended",
-      "Being forced to harm a civilian — collateral damage that can't be rationalized",
-      "Being forced to choose between a crew member and the mission — and choosing wrong"
+      "Being forced to harm a civilian \u2014 collateral damage that can\u0027t be rationalized",
+      "Being forced to choose between a crew member and the mission \u2014 and choosing wrong"
     ]
   },
   "cyberware_inventory": [
@@ -230,7 +231,7 @@
       "tier": "",
       "condition": "degraded",
       "installed_date": "",
-      "description": "Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome",
+      "description": "Cybernetic arm \u2014 right, full replacement from shoulder \u2014 stronger than organic, obvious chrome",
       "replaces": ""
     },
     {
@@ -289,15 +290,15 @@
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and assessing",
     "skin_tone": "Warm golden-olive, medium-deep tone. The base warmth derives from dominant Middle Eastern and South Asian ancestry, enriched by Sub-Saharan depth and subtle Hispanic complexity. Golden undertones catch light. Weathered by stress and environmental exposure.",
-    "complexion": "Strong defined jawline and high cheekbones from Middle Eastern and Northern European ancestry, balanced by slightly broader mid-face and rounder features from Southeast and South Asian heritage. Nose shows subtle width consistent with South Asian and Sub-Saharan ancestry. Eyes set with gentle epicanthic folds reflecting Southeast Asian component. Overall expression combines angular precision with warmer, more rounded proportions—a true global blend. Minimal grooming beyond functional maintenance. Skin shows minor scarring from old burns and repeated medical procedures.",
+    "complexion": "Strong defined jawline and high cheekbones from Middle Eastern and Northern European ancestry, balanced by slightly broader mid-face and rounder features from Southeast and South Asian heritage. Nose shows subtle width consistent with South Asian and Sub-Saharan ancestry. Eyes set with gentle epicanthic folds reflecting Southeast Asian component. Overall expression combines angular precision with warmer, more rounded proportions\u2014a true global blend. Minimal grooming beyond functional maintenance. Skin shows minor scarring from old burns and repeated medical procedures.",
     "distinguishing_marks": [
       "Thick surgical scar running down the left side of the neck from cortical implant removal, pale and raised tissue",
       "Smaller scars across knuckles and forearms from field work and training",
       "Faint burn marks on the left shoulder blade from an older incident"
     ],
-    "visible_augmentations": "Full cybernetic replacement of right arm from shoulder joint. Brushed chrome plating with visible pneumatic actuators at elbow and wrist. No attempt to aestheticize or hide—purely functional design. The arm is noticeably stronger and faster than organic limbs; they move it with precision that suggests years of neural integration.",
-    "posture_movement": "Stands with weight balanced, shoulders level. Moves with deliberate efficiency—no wasted motion. Hands are still when not in use. When working or under stress, movements become even more economical and precise. Makes eye contact but without aggression; gaze is clinical and assessing.",
-    "clothing_style": "Tier 3-4 functional wear. Black synth-weave cargo pants with multiple pockets for equipment. Form-fitting gray undershirt beneath a reinforced tactical vest with medical patches and subtle armor plating. Worn black boots with non-slip soles rated for surgical environments and rough terrain. A long neutral-colored coat—often leather-effect synthetic—that allows concealment of medical kit and provides some ballistic resistance. Minimal jewelry; a simple wrist display for job communications. Everything is well-maintained but shows functional wear, not fashion concern."
+    "visible_augmentations": "Full cybernetic replacement of right arm from shoulder joint. Brushed chrome plating with visible pneumatic actuators at elbow and wrist. No attempt to aestheticize or hide\u2014purely functional design. The arm is noticeably stronger and faster than organic limbs; they move it with precision that suggests years of neural integration.",
+    "posture_movement": "Stands with weight balanced, shoulders level. Moves with deliberate efficiency\u2014no wasted motion. Hands are still when not in use. When working or under stress, movements become even more economical and precise. Makes eye contact but without aggression; gaze is clinical and assessing.",
+    "clothing_style": "Tier 3-4 functional wear. Black synth-weave cargo pants with multiple pockets for equipment. Form-fitting gray undershirt beneath a reinforced tactical vest with medical patches and subtle armor plating. Worn black boots with non-slip soles rated for surgical environments and rough terrain. A long neutral-colored coat\u2014often leather-effect synthetic\u2014that allows concealment of medical kit and provides some ballistic resistance. Minimal jewelry; a simple wrist display for job communications. Everything is well-maintained but shows functional wear, not fashion concern."
   },
   "image_prompt": "Onyx Shirazi, pan-global neo-noir operative, 2226. Tall lean figure (188cm) with striking warm golden-olive complexion reflecting Middle Eastern, South Asian, and Sub-Saharan heritage softened by Southeast Asian and Northern European features. Strong angular jawline and high cheekbones, slightly broad mid-face, dark brown assessing eyes with subtle epicanthic folds. Black hair with temple gray, slicked back. Full brushed chrome cybernetic right arm with visible pneumatic actuators. Thick pale surgical scar down left neck, minor burn marks visible. Wearing black synth-weave cargo pants, gray undershirt, reinforced tactical vest with medical patches, long neutral synthetic-leather coat, worn black tactical boots. Posture is balanced and efficient, gaze clinical. Standing in neon-lit surgical bay or dimly lit job briefing space, cool blue and amber lighting highlighting metallic arm and warm skin tones. GLMZ 2200s aesthetic, functional and weathered. --ar 2:3 --v 6",
   "dalle3_prompt": "",

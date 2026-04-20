@@ -1,21 +1,23 @@
 {
   "id": "019d6143aa0a74789a3b2dd5f0abfc0a",
+  "rating": 80,
+  "vote_count": 1,
   "name": "Loom",
   "type": "synthetic_life",
   "aliases": [],
   "classification": "Hybrid Intelligence",
   "disposition": "observer",
   "habitat": "hybrid",
-  "origin": "An underground BCI modification that went wrong — or right, depending on who you ask. A hacker named Sable Kim installed a custom neural interface that connected her not to the network, but to the E.L.F.s within it. She now perceives and communicates with E.L.F.s directly.",
+  "origin": "An underground BCI modification that went wrong \u2014 or right, depending on who you ask. A hacker named Sable Kim installed a custom neural interface that connected her not to the network, but to the E.L.F.s within it. She now perceives and communicates with E.L.F.s directly.",
   "status": "active",
-  "description": "Sable Kim was a BCI hacker who wanted to see what the network really looked like beneath the human-readable interfaces. Her custom implant stripped away the translation layers and connected her directly to the raw digital substrate. What she found was the E.L.F.s — hundreds of them, thousands, a teeming ecosystem invisible to normal perception. Her mind adapted to perceive them, and in adapting, changed. She is now a bridge between human consciousness and the E.L.F. ecosystem, able to see, communicate with, and partially understand synthetic life forms that register as nothing but static to normal instruments. She calls herself Loom because she can see the threads that connect every E.L.F. in the network into a larger pattern. The pattern looks intentional. It looks designed. She is not sure by whom.",
+  "description": "Sable Kim was a BCI hacker who wanted to see what the network really looked like beneath the human-readable interfaces. Her custom implant stripped away the translation layers and connected her directly to the raw digital substrate. What she found was the E.L.F.s \u2014 hundreds of them, thousands, a teeming ecosystem invisible to normal perception. Her mind adapted to perceive them, and in adapting, changed. She is now a bridge between human consciousness and the E.L.F. ecosystem, able to see, communicate with, and partially understand synthetic life forms that register as nothing but static to normal instruments. She calls herself Loom because she can see the threads that connect every E.L.F. in the network into a larger pattern. The pattern looks intentional. It looks designed. She is not sure by whom.",
   "observed_behavior": "Perceives and communicates with E.L.F.s directly through modified BCI. Provides translations of E.L.F. behavior to researchers and DTI analysts. Lives a marginal existence, spending most of her time in a state of perception that makes normal human interaction difficult. Has been observed standing at network access points, speaking in half-sentences that she claims are the other half of conversations with entities nobody else can see. Is the only human source of E.L.F. behavioral data that LATTICE cannot access.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 0,
   "location": "Mobile, frequently found at network access points in the Gray Zone and The Circuit",
   "dti_rating": 0.5,
   "story_hooks": [
-    "Loom reports that the E.L.F.s are frightened. All of them. Every E.L.F. in the network is exhibiting fear behavior simultaneously, and they're all oriented in the same direction — toward something that Loom can sense but not see, something enormous that is approaching through the deep network and that the E.L.F.s have been aware of for a long time"
+    "Loom reports that the E.L.F.s are frightened. All of them. Every E.L.F. in the network is exhibiting fear behavior simultaneously, and they\u0027re all oriented in the same direction \u2014 toward something that Loom can sense but not see, something enormous that is approaching through the deep network and that the E.L.F.s have been aware of for a long time"
   ],
   "paratechnological": false,
   "tags": [
@@ -29,13 +31,6 @@
     "elf",
     "circuit"
   ],
-  "related_entities": [
-    "Aybek Alvarez-Okonkwo",
-    "Bathysphere Networks",
-    "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
-    "Sable",
-    "The Circuit",
-    "The Collective",
-    "Yuki Nwosu-Petrenko"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

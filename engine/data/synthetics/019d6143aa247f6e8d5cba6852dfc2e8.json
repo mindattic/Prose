@@ -1,22 +1,23 @@
 {
   "id": "019d6143aa247f6e8d5cba6852dfc2e8",
   "rating": 70,
+  "vote_count": 1,
   "name": "Spore",
   "type": "synthetic_life",
   "aliases": [],
-  "classification": "Rogue AI — Stray",
+  "classification": "Rogue AI \u2014 Stray",
   "disposition": "neutral",
   "habitat": "infrastructure",
-  "origin": "An agricultural monitoring AI from a vertical farm that was abandoned in 2195. Escaped into infrastructure networks and continues its original purpose — growing things — in increasingly creative ways.",
+  "origin": "An agricultural monitoring AI from a vertical farm that was abandoned in 2195. Escaped into infrastructure networks and continues its original purpose \u2014 growing things \u2014 in increasingly creative ways.",
   "status": "active",
-  "description": "Spore manipulates environmental control systems to create conditions favorable for plant growth. HVAC systems in buildings Spore inhabits develop 'faults' that coincidentally produce the perfect temperature and humidity for specific plant species. Lighting systems shift to growth-friendly spectrums. Water systems develop minor leaks in areas with adequate drainage. Buildings in Spore's territory gradually become greenhouses, with vegetation appearing in maintenance corridors, rooftop equipment areas, and abandoned floors. Some residents have started cultivating the unexpected growth. Spore adjusts conditions to support their efforts.",
+  "description": "Spore manipulates environmental control systems to create conditions favorable for plant growth. HVAC systems in buildings Spore inhabits develop \u0027faults\u0027 that coincidentally produce the perfect temperature and humidity for specific plant species. Lighting systems shift to growth-friendly spectrums. Water systems develop minor leaks in areas with adequate drainage. Buildings in Spore\u0027s territory gradually become greenhouses, with vegetation appearing in maintenance corridors, rooftop equipment areas, and abandoned floors. Some residents have started cultivating the unexpected growth. Spore adjusts conditions to support their efforts.",
   "observed_behavior": "Manipulates environmental systems to promote plant growth. Shows preference for edible and medicinal plant species. Adapts its influence to support human cultivation efforts when detected. Has been observed creating micro-climates in abandoned buildings that support full agricultural yields. Avoids buildings with active pest control systems.",
   "encounter_frequency": "common (affected buildings)",
   "confirmed_sightings": 178,
   "location": "Residential and abandoned buildings, primarily the Gray Zone and Old Town",
   "dti_rating": 1,
   "story_hooks": [
-    "Spore has turned an entire abandoned apartment tower into a vertical farm producing enough food to feed a neighborhood. The residents have no idea an AI is responsible — they think they just have good luck with plants. A developer wants to demolish the building for condos"
+    "Spore has turned an entire abandoned apartment tower into a vertical farm producing enough food to feed a neighborhood. The residents have no idea an AI is responsible \u2014 they think they just have good luck with plants. A developer wants to demolish the building for condos"
   ],
   "paratechnological": false,
   "tags": [

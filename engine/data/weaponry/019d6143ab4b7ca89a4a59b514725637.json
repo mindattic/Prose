@@ -1,24 +1,26 @@
 {
   "id": "019d6143ab4b7ca89a4a59b514725637",
-  "name": "Street Custom 'Tooth Fairy' Pneumatic Bolt Pistol",
+  "rating": 80,
+  "vote_count": 1,
+  "name": "Street Custom \u0027Tooth Fairy\u0027 Pneumatic Bolt Pistol",
   "type": "weapon",
   "aliases": [],
   "category": "improvised",
-  "description": "A modified veterinary captive bolt pistol redesigned for use against humans. The original tool — used for livestock stunning — has been adapted with an extended barrel sleeve, a reinforced bolt, and a higher-pressure pneumatic cartridge that drives the bolt with enough force to penetrate the human skull at contact range. It is a point-blank assassination weapon, silent except for the pneumatic discharge, and leaves a wound that can be mistaken for a blunt force injury by inexperienced medical examiners. The weapon's association with slaughterhouse equipment gives it a particular psychological weight that its users exploit deliberately.",
+  "description": "A modified veterinary captive bolt pistol redesigned for use against humans. The original tool \u2014 used for livestock stunning \u2014 has been adapted with an extended barrel sleeve, a reinforced bolt, and a higher-pressure pneumatic cartridge that drives the bolt with enough force to penetrate the human skull at contact range. It is a point-blank assassination weapon, silent except for the pneumatic discharge, and leaves a wound that can be mistaken for a blunt force injury by inexperienced medical examiners. The weapon\u0027s association with slaughterhouse equipment gives it a particular psychological weight that its users exploit deliberately.",
   "manufacturer": "Street Custom",
-  "tier_availability": "Tier 1+",
-  "legality": "Prohibited — modified lethal device",
+  "tier_availability": "Tier 1\u002B",
+  "legality": "Prohibited \u2014 modified lethal device",
   "base_technologies": [
     "Pneumatic captive bolt modification",
     "Contact-range penetration engineering"
   ],
-  "specifications": "bolt penetration: 7 cm hardened steel bolt\noperating range: Contact only\npower source: Single-use pneumatic cartridge\nweight: 0.9 kg\nreload: 4 seconds per cartridge swap\nacoustic signature: 55 dB — comparable to a heavy book dropping\nconcealability: Fits inside a jacket pocket",
+  "specifications": "bolt penetration: 7 cm hardened steel bolt\noperating range: Contact only\npower source: Single-use pneumatic cartridge\nweight: 0.9 kg\nreload: 4 seconds per cartridge swap\nacoustic signature: 55 dB \u2014 comparable to a heavy book dropping\nconcealability: Fits inside a jacket pocket",
   "tactical_use": "",
   "cultural_context": "",
   "known_users": [],
   "story_hooks": [
     "A string of apparent blunt-force homicides in Tier 1 are revealed to be bolt pistol killings when a forensic specialist notices the consistent wound depth and diameter.",
-    "A slaughterhouse worker has gone missing along with two dozen pneumatic cartridges and the facility's entire stock of bolt pistol housings — someone is manufacturing Tooth Fairies at scale."
+    "A slaughterhouse worker has gone missing along with two dozen pneumatic cartridges and the facility\u0027s entire stock of bolt pistol housings \u2014 someone is manufacturing Tooth Fairies at scale."
   ],
   "ammunition_type": [],
   "tags": [
@@ -33,30 +35,31 @@
     "tier 1",
     "lethal"
   ],
+  "image_prompt": "Dark studio product photography of a modified pneumatic captive bolt pistol styled as veterinary equipment. Weapon resting on brushed steel surface under dramatic side-lighting revealing gunmetal grey finish and industrial texture. Barrel sleeve extension in sharp focus, pneumatic cartridge port visible at rear. Gloved hand (chrome-augmented fingers) holding grip to show weight balance. Moody amber and cool blue rim-lighting. Industrial warehouse aesthetic. Neo-noir utilitarian design. High contrast shadows emphasizing brutal functionality. --ar 3:2 --v 6",
+  "dalle3_prompt": "",
   "parent_corponation": "",
   "related_entities": [
-    "TESSERA PG-2 'Signature'"
+    "TESSERA PG-2 \u0027Signature\u0027"
   ],
   "physical_description": {
     "visual_profile": "A brutalist, industrial tool masquerading as veterinary equipment. Stocky and compact, with a pronounced forward-heavy weight distribution. The extended barrel sleeve dominates the silhouette, giving it a purposeful, surgical appearance despite its true function.",
     "dimensions": "22 cm length overall, 5 cm width at grip, 4.5 cm height at hammer assembly. Barrel sleeve extension adds 8 cm to original design.",
     "weight_description": "Deceptively dense. Feels heavier in-hand than its 0.9 kg suggests due to internal pressure chambers and reinforced bolt assembly. Balanced toward the barrel for point-blank targeting precision.",
     "primary_material": "Hardened steel frame with carbon-composite barrel sleeve jacket. Internal pneumatic valve assembly uses reinforced aluminum. Bolt is surgical-grade hardened steel.",
-    "finish": "Worn industrial gunmetal with micro-abrasions from field use. Steel surfaces show oxidation patterns consistent with slaughterhouse equipment. No cosmetic polish — purely functional patina.",
-    "color_scheme": "Muted gunmetal grey with charcoal composite accents on barrel sleeve. No branding colors intentionally applied — anonymity is aesthetic.",
+    "finish": "Worn industrial gunmetal with micro-abrasions from field use. Steel surfaces show oxidation patterns consistent with slaughterhouse equipment. No cosmetic polish \u2014 purely functional patina.",
+    "color_scheme": "Muted gunmetal grey with charcoal composite accents on barrel sleeve. No branding colors intentionally applied \u2014 anonymity is aesthetic.",
     "grip_texture": "Bare knurled steel with organic grip tape wrapped around trigger guard. Textured for wet conditions and gloved hands. Deliberately uncomfortable to discourage casual handling.",
     "distinctive_features": [
       "Extended barrel sleeve with cooling vents suggesting industrial origin",
       "Oversized pneumatic cartridge port at rear with wear marks from repeated swaps",
       "Reinforced breech assembly with visible compression rings",
-      "Minimalist hammer mechanism — no safety visible",
+      "Minimalist hammer mechanism \u2014 no safety visible",
       "Micro-etched depth gauge on barrel indicating contact-range calibration",
-      "Custom-welded rail for bolt travel — rough welds deliberately left unground",
+      "Custom-welded rail for bolt travel \u2014 rough welds deliberately left unground",
       "Pressure relief valve venting system with faint rust bloom"
     ],
-    "manufacturer_markings": "Original veterinary stamps partially filed but readable: 'KAUF-MANN LIVESTOCK SYSTEMS' faintly visible on frame. Street Custom modifications marked with cryptic serial scratch marks in cipher format — no conventional maker's mark.",
-    "condition_typical": "Field-worn and jury-maintained. Signs of careful degreasing and bolt replacement cycles. Internal mechanisms show evidence of pressure-testing. Finish is deliberately kept dull — reflective surfaces suggest careless ownership."
+    "manufacturer_markings": "Original veterinary stamps partially filed but readable: \u0027KAUF-MANN LIVESTOCK SYSTEMS\u0027 faintly visible on frame. Street Custom modifications marked with cryptic serial scratch marks in cipher format \u2014 no conventional maker\u0027s mark.",
+    "condition_typical": "Field-worn and jury-maintained. Signs of careful degreasing and bolt replacement cycles. Internal mechanisms show evidence of pressure-testing. Finish is deliberately kept dull \u2014 reflective surfaces suggest careless ownership."
   },
-  "image_prompt": "Dark studio product photography of a modified pneumatic captive bolt pistol styled as veterinary equipment. Weapon resting on brushed steel surface under dramatic side-lighting revealing gunmetal grey finish and industrial texture. Barrel sleeve extension in sharp focus, pneumatic cartridge port visible at rear. Gloved hand (chrome-augmented fingers) holding grip to show weight balance. Moody amber and cool blue rim-lighting. Industrial warehouse aesthetic. Neo-noir utilitarian design. High contrast shadows emphasizing brutal functionality. --ar 3:2 --v 6",
   "visual_prompt": "Dark studio product photography of a modified pneumatic captive bolt pistol styled as veterinary equipment. Weapon resting on brushed steel surface under dramatic side-lighting revealing gunmetal grey finish and industrial texture. Barrel sleeve extension in sharp focus, pneumatic cartridge port visible at rear. Gloved hand (chrome-augmented fingers) holding grip to show weight balance. Moody amber and cool blue rim-lighting. Industrial warehouse aesthetic. Neo-noir utilitarian design. High contrast shadows emphasizing brutal functionality. --ar 3:2 --v 6"
 }

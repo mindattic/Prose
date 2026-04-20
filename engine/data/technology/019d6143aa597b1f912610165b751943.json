@@ -1,12 +1,14 @@
 {
   "id": "019d6143aa597b1f912610165b751943",
+  "rating": 30,
+  "vote_count": 1,
   "name": "Zheng-Dao Heavy Industries Asteroid Mining Operations",
   "brand_name": "Zheng",
   "product_name": "Zheng-Dao Heavy Industries Asteroid Mining Operations",
   "type": "technology",
   "aliases": [],
   "subcategory": "space",
-  "description": "A space-based mining program that captures near-Earth asteroids and processes them in orbit for mineral resources, using the space elevator to transport refined materials to the surface. Zheng-Dao's asteroid mining operations target metallic asteroids containing platinum group metals, rare earth elements, and iron-nickel alloys in quantities that dwarf terrestrial reserves. A single captured asteroid can contain more platinum than has been mined in all of human history, and the operational costs are justified by the extraordinary concentration of valuable materials.",
+  "description": "A space-based mining program that captures near-Earth asteroids and processes them in orbit for mineral resources, using the space elevator to transport refined materials to the surface. Zheng-Dao\u0027s asteroid mining operations target metallic asteroids containing platinum group metals, rare earth elements, and iron-nickel alloys in quantities that dwarf terrestrial reserves. A single captured asteroid can contain more platinum than has been mined in all of human history, and the operational costs are justified by the extraordinary concentration of valuable materials.",
   "tier_availability": "Tier 5",
   "developers": [
     "ZHENG-DAO HEAVY INDUSTRIES"
@@ -22,10 +24,10 @@
     "Space-based material processing",
     "Strategic independence from terrestrial mining"
   ],
-  "social_impact": "Asteroid mining has the potential to make every terrestrial mineral resource irrelevant — a single successful capture operation delivers more material than decades of conventional mining. This potential has created both extraordinary corporate value for Zheng-Dao and existential anxiety for the terrestrial mining industry, including Dredge Mining Collective. The first successful large-scale asteroid mineral delivery will crash commodity prices globally and reshape the economics of material production.",
+  "social_impact": "Asteroid mining has the potential to make every terrestrial mineral resource irrelevant \u2014 a single successful capture operation delivers more material than decades of conventional mining. This potential has created both extraordinary corporate value for Zheng-Dao and existential anxiety for the terrestrial mining industry, including Dredge Mining Collective. The first successful large-scale asteroid mineral delivery will crash commodity prices globally and reshape the economics of material production.",
   "story_hooks": [
-    "Zheng-Dao's first major asteroid capture is approaching processing completion — the asteroid contains an estimated 500 years' worth of global platinum supply, and its arrival on the surface will destroy the platinum market overnight.",
-    "An asteroid capture operation has gone wrong — the captured asteroid is in a degrading orbit and Zheng-Dao is scrambling to determine whether it will be processed in time or become an extinction-level impact threat."
+    "Zheng-Dao\u0027s first major asteroid capture is approaching processing completion \u2014 the asteroid contains an estimated 500 years\u0027 worth of global platinum supply, and its arrival on the surface will destroy the platinum market overnight.",
+    "An asteroid capture operation has gone wrong \u2014 the captured asteroid is in a degrading orbit and Zheng-Dao is scrambling to determine whether it will be processed in time or become an extinction-level impact threat."
   ],
   "tags": [
     "space",
@@ -37,10 +39,6 @@
     "night",
     "tier 5"
   ],
-  "parent_corponation": "",
-  "related_entities": [
-    "Dredge Mining Collective",
-    "Patient Zero",
-    "Zheng-dao Bioelectric"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

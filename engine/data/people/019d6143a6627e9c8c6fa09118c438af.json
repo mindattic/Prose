@@ -1,17 +1,18 @@
 {
   "id": "019d6143a6627e9c8c6fa09118c438af",
   "rating": 70,
+  "vote_count": 1,
   "type": "character",
   "name": "Nneka Balogun-Arredondo",
   "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Corporate espionage and data exfiltration — data thief",
+  "role": "Corporate espionage and data exfiltration \u2014 data thief",
   "age": 41,
   "status": "active",
-  "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Lake Shore and Wacker",
-  "description": "Nneka Balogun-Arredondo is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 41, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a data thief out of Old Harbor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Nneka Balogun-Arredondo is known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "location": "Old Harbor \u2014 repurposed shipping infrastructure turned black market hub, near Lake Shore and Wacker",
+  "description": "Nneka Balogun-Arredondo is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 41, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible \u2014 cybernetic eyes with thermal overlay and low-light enhancement \u2014 chrome iris rin \u2014 and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago \u2014 the mentor\u0027s gear, contacts, and unfinished business all came with it. She works as a data thief out of Old Harbor, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Nneka Balogun-Arredondo is known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -23,37 +24,37 @@
     },
     "core_fears": [
       "Dying alone in some alley and nobody noticing for weeks",
-      "That they're fundamentally alone and connection is just a vulnerability",
-      "Their past catching up — debts, enemies, broken promises"
+      "That they\u0027re fundamentally alone and connection is just a vulnerability",
+      "Their past catching up \u2014 debts, enemies, broken promises"
     ],
     "core_desires": [
-      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
+      "Reputation \u2014 to be the name fixers whisper when the job absolutely cannot fail",
+      "Enough Quanta to buy out of the life \u2014 a clean identity and passage out of GLMZ",
       "To build something that outlasts the next contract cycle"
     ],
     "coping_mechanisms": [
-      "Maintains weapons obsessively — cleaning guns is meditation",
-      "Exercises compulsively — the body must be ready, always",
-      "Overwork — takes every contract offered because idleness invites thinking"
+      "Maintains weapons obsessively \u2014 cleaning guns is meditation",
+      "Exercises compulsively \u2014 the body must be ready, always",
+      "Overwork \u2014 takes every contract offered because idleness invites thinking"
     ],
     "blind_spots": [
       "Overestimates their own abilities in situations outside their specialty",
       "Cannot accept help without interpreting it as leverage",
       "Mistakes loyalty for weakness in others and cynicism for strength in themselves"
     ],
-    "secret": "Ngaire Rojas-Yeboah maintains a second identity — a completely clean civilian persona with a lease, a job history, and a social profile. It's their exit strategy."
+    "secret": "Ngaire Rojas-Yeboah maintains a second identity \u2014 a completely clean civilian persona with a lease, a job history, and a social profile. It\u0027s their exit strategy."
   },
   "speech_patterns": {
-    "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
-    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
+    "vocabulary": "Old-fashioned formal diction \u2014 sounds like they learned to speak from pre-collapse recordings.",
+    "cadence": "Rhythmic, almost musical \u2014 the sentence structure has a pattern even when the words are brutal.",
     "verbal_tics": [
-      "Ends statements with 'yeah?' — not a question, a dare",
-      "Addresses people by physical traits — 'hey, tall one' or 'listen, chrome-arm'"
+      "Ends statements with \u0027yeah?\u0027 \u2014 not a question, a dare",
+      "Addresses people by physical traits \u2014 \u0027hey, tall one\u0027 or \u0027listen, chrome-arm\u0027"
     ],
     "example_lines": [
-      "\"Your firewalls are decorative. Like curtains on a submarine.\"",
-      "\"I copy things. The original owners rarely appreciate the compliment.\"",
-      "\"Data wants to be free. I just charge a facilitation fee.\""
+      "\u0022Your firewalls are decorative. Like curtains on a submarine.\u0022",
+      "\u0022I copy things. The original owners rarely appreciate the compliment.\u0022",
+      "\u0022Data wants to be free. I just charge a facilitation fee.\u0022"
     ],
     "avoidances": [],
     "subtext": "",
@@ -62,14 +63,14 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A crew member from Ngaire Rojas-Yeboah's past shows up in GLMZ, carrying old grievances and new chrome",
+    "A crew member from Ngaire Rojas-Yeboah\u0027s past shows up in GLMZ, carrying old grievances and new chrome",
     "A high-paying contract turns out to target someone Ngaire Rojas-Yeboah owes a personal debt to",
-    "Ngaire Rojas-Yeboah is offered a contract that would clear all their debts — the target is someone they respect"
+    "Ngaire Rojas-Yeboah is offered a contract that would clear all their debts \u2014 the target is someone they respect"
   ],
-  "narrative_function": "Ngaire Rojas-Yeboah is a pressure point — the kind of character whose choices ripple outward. When she makes a decision, other people's lives change. That weight is the engine of her stories.",
-  "augmentations": "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings. Internal drug synthesizer — produces combat stims and medical compounds on demand",
-  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
-  "affiliation": "Freelance — works the Gray Zone circuit exclusively",
+  "narrative_function": "Ngaire Rojas-Yeboah is a pressure point \u2014 the kind of character whose choices ripple outward. When she makes a decision, other people\u0027s lives change. That weight is the engine of her stories.",
+  "augmentations": "Cybernetic eyes with thermal overlay and low-light enhancement \u2014 chrome iris rings. Internal drug synthesizer \u2014 produces combat stims and medical compounds on demand",
+  "daily_life": "Keeps a rigid daily structure \u2014 wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Freelance \u2014 works the Gray Zone circuit exclusively",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -157,14 +158,14 @@
       "loyalty_break": 7
     },
     "strengths": [
-      "multilingual — speaks 4+ languages fluently",
+      "multilingual \u2014 speaks 4\u002B languages fluently",
       "ability to remain calm under fire",
-      "social chameleon — adapts to any environment"
+      "social chameleon \u2014 adapts to any environment"
     ],
     "weaknesses": [
-      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "augmentation dependency \u2014 performance drops sharply if chrome malfunctions",
       "chronic insomnia affecting long-term performance",
-      "inability to delegate — must control everything personally"
+      "inability to delegate \u2014 must control everything personally"
     ],
     "tags": [
       "runner",
@@ -179,19 +180,19 @@
   },
   "behavioral": {
     "decision_rules": [
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Will abandon a job if the intel was deliberately falsified \u2014 being set up violates the contract",
+      "Never works with the same crew twice in a row \u2014 pattern avoidance as survival strategy",
+      "Maintains a personal blacklist of clients who\u0027ve burned runners \u2014 checks it religiously",
       "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
-      "Will not take contracts against children or families — the line is hard and non-negotiable"
+      "Will not take contracts against children or families \u2014 the line is hard and non-negotiable"
     ],
     "escalation_ladder": [
-      "1. Assess — read the situation, identify threats and advantages",
-      "2. Negotiate — try to find a solution that doesn't cost ammunition",
-      "3. Intimidate — make the cost of conflict clear",
-      "4. Precision violence — surgical, targeted, minimal collateral",
-      "5. Full engagement — overwhelming force, no half measures",
-      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+      "1. Assess \u2014 read the situation, identify threats and advantages",
+      "2. Negotiate \u2014 try to find a solution that doesn\u0027t cost ammunition",
+      "3. Intimidate \u2014 make the cost of conflict clear",
+      "4. Precision violence \u2014 surgical, targeted, minimal collateral",
+      "5. Full engagement \u2014 overwhelming force, no half measures",
+      "6. Emergency protocol \u2014 abort mission, survival priority, deal with consequences later"
     ],
     "interpersonal_modes": {
       "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
@@ -200,7 +201,7 @@
       "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
     },
     "stress_responses": {
-      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "low": "Channels it into preparation \u2014 checks gear, reviews plans, contacts sources.",
       "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
       "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
       "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
@@ -211,14 +212,14 @@
       "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language"
     ],
     "habits": [
-      "Carries a specific caliber round as a lucky charm — has never fired it",
-      "Counts ammunition obsessively — knows the exact round count at all times",
-      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
+      "Carries a specific caliber round as a lucky charm \u2014 has never fired it",
+      "Counts ammunition obsessively \u2014 knows the exact round count at all times",
+      "Sleeps with one hand on a weapon \u2014 has done this for so long it\u0027s not deliberate anymore",
       "Checks exits within 10 seconds of entering any room"
     ],
     "breaking_points": [
-      "Running out of options — no contacts, no money, no safe house, no way out",
-      "Being forced to harm a civilian — collateral damage that can't be rationalized"
+      "Running out of options \u2014 no contacts, no money, no safe house, no way out",
+      "Being forced to harm a civilian \u2014 collateral damage that can\u0027t be rationalized"
     ]
   },
   "cyberware_inventory": [
@@ -229,7 +230,7 @@
       "tier": "",
       "condition": "degraded",
       "installed_date": "",
-      "description": "Cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rings",
+      "description": "Cybernetic eyes with thermal overlay and low-light enhancement \u2014 chrome iris rings",
       "replaces": ""
     },
     {
@@ -239,7 +240,7 @@
       "tier": "",
       "condition": "worn",
       "installed_date": "",
-      "description": "Internal drug synthesizer — produces combat stims and medical compounds on demand",
+      "description": "Internal drug synthesizer \u2014 produces combat stims and medical compounds on demand",
       "replaces": ""
     }
   ],
@@ -278,24 +279,24 @@
     "human"
   ],
   "physical_description": {
-    "heritage": "Ubiquitous diaspora blend of Sub-Saharan African (37.1%), Hispanic/Latin American (15.3%), South Asian (14.3%), North African (14.2%), East Asian (11.0%), and Northern European (8.1%) ancestry. This complex genetic mosaic creates a striking phenotype: warm deep brown skin with golden, olive, and subtle copper undertones from the African and North African heritage, enriched by South Asian warmth. Bone structure reflects the blend—prominent cheekbones and high orbital ridges from Sub-Saharan ancestry, squared jaw from Northern European genetics, with subtle epicanthal variation suggesting East Asian contribution. The overall effect is of someone whose ancestry defies easy categorization, each region's traits harmonizing into a distinctive whole.",
+    "heritage": "Ubiquitous diaspora blend of Sub-Saharan African (37.1%), Hispanic/Latin American (15.3%), South Asian (14.3%), North African (14.2%), East Asian (11.0%), and Northern European (8.1%) ancestry. This complex genetic mosaic creates a striking phenotype: warm deep brown skin with golden, olive, and subtle copper undertones from the African and North African heritage, enriched by South Asian warmth. Bone structure reflects the blend\u2014prominent cheekbones and high orbital ridges from Sub-Saharan ancestry, squared jaw from Northern European genetics, with subtle epicanthal variation suggesting East Asian contribution. The overall effect is of someone whose ancestry defies easy categorization, each region\u0027s traits harmonizing into a distinctive whole.",
     "height_cm": 168,
     "weight_kg": 78,
     "build": "Stocky and densely muscled, built like someone who trains methodically. Shoulders broad and forward-set. Forearms thick with functional muscle, hands large-knuckled and calloused from years of physical work and gear maintenance.",
     "hair_color": "Dark brown with premature silver threading at the temples",
     "hair_style": "Pulled back tight in a functional braid, practical rather than styled",
     "hair_length": "Long",
-    "eye_color": "Cybernetic — chrome iris rings surrounding deep brown biological pupils. Thermal overlay visible as faint amber warming beneath the metallic surface.",
+    "eye_color": "Cybernetic \u2014 chrome iris rings surrounding deep brown biological pupils. Thermal overlay visible as faint amber warming beneath the metallic surface.",
     "skin_tone": "Deep warm brown with golden, olive, and subtle copper undertones, reflecting the layered blend of Sub-Saharan African, North African, South Asian, Hispanic/Latin American, East Asian, and Northern European ancestry",
-    "complexion": "Weathered and clean. Minimal makeup. A small scar bisects her left eyebrow — old, well-healed. Jaw is squared and prominent with Northern European influence in the bone structure. High cheekbones and pronounced orbital ridges suggest Sub-Saharan African heritage. Subtle eye shape variation hints at East Asian genetics. Expression rests in neutral watchfulness, lips thin and rarely smiling.",
+    "complexion": "Weathered and clean. Minimal makeup. A small scar bisects her left eyebrow \u2014 old, well-healed. Jaw is squared and prominent with Northern European influence in the bone structure. High cheekbones and pronounced orbital ridges suggest Sub-Saharan African heritage. Subtle eye shape variation hints at East Asian genetics. Expression rests in neutral watchfulness, lips thin and rarely smiling.",
     "distinguishing_marks": [
       "Linear scar running vertically through her left eyebrow, approximately 2cm long, pale against darker skin",
-      "Burn scar on the inside of her right wrist — roughly 4cm diameter, circular, silvered and old",
-      "Faint track marks along both inner elbows, well-concealed but present under close inspection — from decades of subcutaneous injection work"
+      "Burn scar on the inside of her right wrist \u2014 roughly 4cm diameter, circular, silvered and old",
+      "Faint track marks along both inner elbows, well-concealed but present under close inspection \u2014 from decades of subcutaneous injection work"
     ],
     "visible_augmentations": "Chrome cybernetic eyes with visible iris rings that catch light. The enhancement hardware sits flush with the orbital bone but unmistakably artificial. No attempt to disguise or blend them. The internal drug synthesizer leaves no visible external evidence.",
-    "posture_movement": "Stands with weight slightly forward on the balls of her feet — ready posture. Movements are economical and deliberate, no wasted motion. Hands are usually occupied with something — a tool, a device, a cigarette — rarely at rest. When still, she maintains 360-degree awareness, head turning in measured sweeps.",
-    "clothing_style": "Tier 3-4 functional aesthetic. Dark-colored utility jacket with reinforced panels and too many pockets — well-worn and maintained. Tactical cargo pants with cargo webbing. Worn steel-toed boots, laced tight. Layers underneath that can be added or removed. A subdermal armor plate is visible along her collarbone where jacket neckline sits — burnished steel panel. No corporate branding, no unnecessary jewelry. A single silver ring on her left ring finger — worn thin, possibly inherited."
+    "posture_movement": "Stands with weight slightly forward on the balls of her feet \u2014 ready posture. Movements are economical and deliberate, no wasted motion. Hands are usually occupied with something \u2014 a tool, a device, a cigarette \u2014 rarely at rest. When still, she maintains 360-degree awareness, head turning in measured sweeps.",
+    "clothing_style": "Tier 3-4 functional aesthetic. Dark-colored utility jacket with reinforced panels and too many pockets \u2014 well-worn and maintained. Tactical cargo pants with cargo webbing. Worn steel-toed boots, laced tight. Layers underneath that can be added or removed. A subdermal armor plate is visible along her collarbone where jacket neckline sits \u2014 burnished steel panel. No corporate branding, no unnecessary jewelry. A single silver ring on her left ring finger \u2014 worn thin, possibly inherited."
   },
   "image_prompt": "Nneka Balogun-Arredondo, 168cm tall, stocky muscular build, deep warm brown skin with golden and olive undertones, prominent cheekbones and high orbital ridges blending Sub-Saharan African and North African heritage with East Asian eye shape variation and squared Nordic jaw. Dark brown hair with silver temples pulled tight in functional braid. Cybernetic chrome iris rings with amber thermal overlay surrounding deep brown pupils, intense watchful gaze. Thin lips, linear scar through left eyebrow, old burn scar on inner right wrist. Economical posture, weight forward on balls of feet, ready stance. Dark utility jacket with reinforced panels and burnished steel subdermal armor plate visible at collarbone, tactical cargo pants, worn steel-toed boots. Worn silver ring on left ring finger. Minimal makeup, weathered complexion. GLMZ, Great Lakes Metropolitan Zone, industrial urban setting, cool neon-tinged lighting casting shadows across her augmented eyes, moody and alert, technical and functional aesthetic, no unnecessary ornamentation --ar 2:3 --v 6",
   "dalle3_prompt": "",

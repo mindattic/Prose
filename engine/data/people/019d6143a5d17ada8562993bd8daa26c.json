@@ -1,5 +1,7 @@
 {
   "id": "019d6143a5d17ada8562993bd8daa26c",
+  "rating": 80,
+  "vote_count": 1,
   "type": "character",
   "name": "Vale Shirazi",
   "aliases": [],
@@ -10,7 +12,7 @@
   "age": 34,
   "status": "active",
   "location": "Geartown, Gage Circuit, near Damen and Armitage",
-  "description": "Vale Shirazi is lean in the way of someone who forgets to eat, with warm brown skin, close-cropped dark hair, and irises that cycle through amber-to-green gradient depending on his mod's mood-reading settings — a gift from a client who couldn't pay in quanta. He dresses in soft, unthreatening fabrics (the neural calibration chair is already stressful enough) and keeps his workspace warm-lit and quiet, with small potted moss installations along the walls that patients are encouraged to touch. He has an almost preternatural ability to make people feel safe within minutes of meeting him.\n\nHe trained under Helix Biosystems' neural integration division but went independent when he realized corporate calibration protocols optimized for hardware performance rather than patient wellbeing — they wanted efficient augments, not healthy people. Now he runs a small private practice in Geartown, catering to working-class clients who've had cheap installs go wrong: phantom limb feedback, dream-layer bleed from neural laces, identity drift after major cognitive augmentation. He's part technician, part therapist, part grief counselor for people who don't recognize themselves anymore.",
+  "description": "Vale Shirazi is lean in the way of someone who forgets to eat, with warm brown skin, close-cropped dark hair, and irises that cycle through amber-to-green gradient depending on his mod\u0027s mood-reading settings \u2014 a gift from a client who couldn\u0027t pay in quanta. He dresses in soft, unthreatening fabrics (the neural calibration chair is already stressful enough) and keeps his workspace warm-lit and quiet, with small potted moss installations along the walls that patients are encouraged to touch. He has an almost preternatural ability to make people feel safe within minutes of meeting him.\n\nHe trained under Helix Biosystems\u0027 neural integration division but went independent when he realized corporate calibration protocols optimized for hardware performance rather than patient wellbeing \u2014 they wanted efficient augments, not healthy people. Now he runs a small private practice in Geartown, catering to working-class clients who\u0027ve had cheap installs go wrong: phantom limb feedback, dream-layer bleed from neural laces, identity drift after major cognitive augmentation. He\u0027s part technician, part therapist, part grief counselor for people who don\u0027t recognize themselves anymore.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -21,7 +23,7 @@
       "ghost": 0.4
     },
     "core_fears": [
-      "Accidentally damaging someone's sense of self permanently during calibration",
+      "Accidentally damaging someone\u0027s sense of self permanently during calibration",
       "Being so good at reading people that no one ever reads him"
     ],
     "core_desires": [
@@ -33,34 +35,38 @@
       "Over-invests in client wellbeing to fill his own relational void"
     ],
     "blind_spots": [
-      "His therapeutic warmth is partly performed — he doesn't always feel what he projects, and this bothers him more than he admits",
+      "His therapeutic warmth is partly performed \u2014 he doesn\u0027t always feel what he projects, and this bothers him more than he admits",
       "He avoids his own neural calibration checkups"
     ],
-    "secret": "During his time at Helix Biosystems, he ran an unauthorized calibration on a teenage patient that went beyond his sanctioned parameters — he improved the kid's outcomes dramatically, but he accessed emotional memory architecture he had no clearance to touch. He knows what that teenager's worst memory feels like, and he's never told anyone."
+    "secret": "During his time at Helix Biosystems, he ran an unauthorized calibration on a teenage patient that went beyond his sanctioned parameters \u2014 he improved the kid\u0027s outcomes dramatically, but he accessed emotional memory architecture he had no clearance to touch. He knows what that teenager\u0027s worst memory feels like, and he\u0027s never told anyone."
   },
   "speech_patterns": {
-    "vocabulary": "Precise but gentle. Uses second-person framing to give clients agency ('what you might be feeling' rather than 'you feel'). Avoids technical jargon in conversation, saves it for documentation.",
+    "vocabulary": "Precise but gentle. Uses second-person framing to give clients agency (\u0027what you might be feeling\u0027 rather than \u0027you feel\u0027). Avoids technical jargon in conversation, saves it for documentation.",
     "cadence": "Unhurried. Comfortable with silence. Speaks in full sentences, rarely trails off.",
     "verbal_tics": [
-      "'Take your time with that'",
-      "'That's a reasonable response to what your system is doing'",
-      "Small affirming sounds — 'mm' — when listening"
+      "\u0027Take your time with that\u0027",
+      "\u0027That\u0027s a reasonable response to what your system is doing\u0027",
+      "Small affirming sounds \u2014 \u0027mm\u0027 \u2014 when listening"
     ],
     "example_lines": [
-      "'The hardware's doing exactly what it should. What we're calibrating is the relationship between you and it.'",
-      "'Most people feel like strangers to themselves for the first few weeks. That's not a malfunction. That's adaptation.'"
-    ]
+      "\u0027The hardware\u0027s doing exactly what it should. What we\u0027re calibrating is the relationship between you and it.\u0027",
+      "\u0027Most people feel like strangers to themselves for the first few weeks. That\u0027s not a malfunction. That\u0027s adaptation.\u0027"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "A client disclosed something during a session that sounds like witness testimony to a corporate crime — Caspian is legally and ethically bound by confidentiality, but the information could save lives",
-    "His mood-reading iris mod is picking up something in a new client that doesn't match their stated symptoms — the discrepancy is subtle but Caspian knows what fear looks like",
+    "A client disclosed something during a session that sounds like witness testimony to a corporate crime \u2014 Caspian is legally and ethically bound by confidentiality, but the information could save lives",
+    "His mood-reading iris mod is picking up something in a new client that doesn\u0027t match their stated symptoms \u2014 the discrepancy is subtle but Caspian knows what fear looks like",
     "His old Helix supervisor has tracked him down, not to punish him for the unauthorized calibration, but to recruit him for something worse"
   ],
   "narrative_function": "Information source on augmentation culture, therapist-figure who can surface character backstory organically, potential quest giver when a client reveals something dangerous during calibration.",
-  "augmentations": "Gradient mood-responsive iris mod (amber-green spectrum). Thin-band neural lace for interface work. Geneware: faint bioluminescent undertone in his forearms, visible only in dim light — a side effect of an experimental procedure he tested on himself.",
+  "augmentations": "Gradient mood-responsive iris mod (amber-green spectrum). Thin-band neural lace for interface work. Geneware: faint bioluminescent undertone in his forearms, visible only in dim light \u2014 a side effect of an experimental procedure he tested on himself.",
   "daily_life": "He takes four clients per day maximum, each session two hours. Spends evenings writing up case notes in a personal archive he intends to eventually publish as an independent clinical study on post-augmentation psychological drift.",
-  "affiliation": "Independent — informal referral network with several Geartown augmentation shops",
+  "affiliation": "Independent \u2014 informal referral network with several Geartown augmentation shops",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -103,9 +109,9 @@
   },
   "behavioral": {
     "decision_rules": [
-      "Client wellbeing is primary — institutional interest is secondary",
+      "Client wellbeing is primary \u2014 institutional interest is secondary",
       "Never push a calibration session beyond what the patient can emotionally handle that day",
-      "Document everything, even what he shouldn't have done"
+      "Document everything, even what he shouldn\u0027t have done"
     ],
     "escalation_ladder": [
       "Gentle redirection",
@@ -113,20 +119,20 @@
       "Ends the session, offers to reschedule, will not be moved"
     ],
     "interpersonal_modes": {
-      "strangers": "Attentive and warm but professionally boundaried — asks good questions, reveals little about himself",
+      "strangers": "Attentive and warm but professionally boundaried \u2014 asks good questions, reveals little about himself",
       "friends": "Surprisingly funny, self-deprecating, occasionally lets his exhaustion show"
     },
     "stress_responses": {
       "low": "Slows down further, speaks more carefully",
-      "medium": "Goes into clinical mode — emotions shelved, problem-solving foregrounded",
-      "high": "Leaves. Physically removes himself and doesn't return until he's recalibrated."
+      "medium": "Goes into clinical mode \u2014 emotions shelved, problem-solving foregrounded",
+      "high": "Leaves. Physically removes himself and doesn\u0027t return until he\u0027s recalibrated."
     },
     "contradictions": [
       "Professionally expert at helping others integrate their augmentations but personally avoids his own maintenance",
       "Believes in emotional honesty as therapeutic principle but masks his own feelings constantly"
     ],
     "habits": [
-      "Touches the moss installations himself before each session — he says it's for clients but it's for him",
+      "Touches the moss installations himself before each session \u2014 he says it\u0027s for clients but it\u0027s for him",
       "Re-reads old case notes before sleeping, looking for patterns"
     ],
     "breaking_points": [
@@ -136,33 +142,33 @@
   },
   "cyberware_inventory": [
     {
-      "name": "Thin-band neural lace — standard interface, calibration work capability",
+      "name": "Thin-band neural lace \u2014 standard interface, calibration work capability",
       "body_location": "",
       "manufacturer": "",
       "tier": "",
       "condition": "functional",
       "installed_date": "",
-      "description": "Thin-band neural lace — standard interface, calibration work capability",
+      "description": "Thin-band neural lace \u2014 standard interface, calibration work capability",
       "replaces": ""
     },
     {
-      "name": "Gradient mood-responsive iris modification (amber-to-green spectrum) — gifted by former patient",
+      "name": "Gradient mood-responsive iris modification (amber-to-green spectrum) \u2014 gifted by former patient",
       "body_location": "",
       "manufacturer": "",
       "tier": "",
       "condition": "functional",
       "installed_date": "",
-      "description": "Gradient mood-responsive iris modification (amber-to-green spectrum) — gifted by former patient",
+      "description": "Gradient mood-responsive iris modification (amber-to-green spectrum) \u2014 gifted by former patient",
       "replaces": ""
     },
     {
-      "name": "Bioluminescent subdermal undertone (forearms) — experimental geneware, self-administered",
+      "name": "Bioluminescent subdermal undertone (forearms) \u2014 experimental geneware, self-administered",
       "body_location": "",
       "manufacturer": "",
       "tier": "",
       "condition": "functional",
       "installed_date": "",
-      "description": "Bioluminescent subdermal undertone (forearms) — experimental geneware, self-administered",
+      "description": "Bioluminescent subdermal undertone (forearms) \u2014 experimental geneware, self-administered",
       "replaces": ""
     }
   ],
@@ -229,52 +235,40 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Age 34: Current — small but stable practice, growing research archive",
+      "event": "Age 34: Current \u2014 small but stable practice, growing research archive",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
     }
   ],
   "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Defender-38 'Snubnose'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Helix Biosystems",
-    "Gage Circuit",
-    "Void Ring VR-0 'Phantom Limb'",
-    "Geartown",
-    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
-    "Witness",
-    "Circuit",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Neural Palate",
-    "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
-    "Drift"
-  ],
-  "district": "The Circuit",
   "physical_description": {
-    "heritage": "Complex diaspora blend: 39.7% Middle Eastern and 39.6% Hispanic/Latin American form the foundation, with meaningful contributions from South Asian (7.6%), East Asian (7.5%), and Southeast Asian (5.6%) ancestry. This creates a warm, golden-brown complexion with the high cheekbones and angular structure characteristic of Middle Eastern and Hispanic heritage, softened by South Asian fullness through the lower face and subtle East/Southeast Asian eye shape. The result is a face that reads as genuinely pan-global — symmetrical, warmly toned, with dark expressive eyes that carry both Mediterranean intensity and East Asian depth.",
+    "heritage": "Complex diaspora blend: 39.7% Middle Eastern and 39.6% Hispanic/Latin American form the foundation, with meaningful contributions from South Asian (7.6%), East Asian (7.5%), and Southeast Asian (5.6%) ancestry. This creates a warm, golden-brown complexion with the high cheekbones and angular structure characteristic of Middle Eastern and Hispanic heritage, softened by South Asian fullness through the lower face and subtle East/Southeast Asian eye shape. The result is a face that reads as genuinely pan-global \u2014 symmetrical, warmly toned, with dark expressive eyes that carry both Mediterranean intensity and East Asian depth.",
     "height_cm": 178,
     "weight_kg": 68,
-    "build": "Lean and linear, almost ascetic — the body of someone whose nervous system consumes calories faster than his mouth remembers to eat. Slight forward shoulder curve from hours hunched over calibration interfaces.",
+    "build": "Lean and linear, almost ascetic \u2014 the body of someone whose nervous system consumes calories faster than his mouth remembers to eat. Slight forward shoulder curve from hours hunched over calibration interfaces.",
     "hair_color": "Black",
     "hair_style": "Close-cropped, precise fade maintained every three weeks at a Tier-3 barber on Milwaukee Ave",
     "hair_length": "Short",
     "eye_color": "Gradient mood-responsive: natural deep brown base cycling to amber-gold (calm), green (focused/engaged), or warm orange (stressed). Heterochromic effect increases under blue-spectrum light.",
-    "skin_tone": "Warm golden-brown with honeyed undertones — the luminous result of Middle Eastern and Hispanic heritage blending with South Asian depth. Even tone across face and body, neither pale nor deeply dark, but richly warm with subtle golden radiance that catches light.",
-    "complexion": "Clean-shaven, minimal scarring except faint neural port scars at left temple (well-concealed unless he pulls his hair back). Slight caffeine-shadows under eyes. Strong angular cheekbones with warm depth reflecting the balanced Middle Eastern-Hispanic foundation, softened by South Asian fullness through the lower face and subtle East Asian eye geometry. Skin carries faint bioluminescent quality in dim light — barely perceptible blue-green glow in forearms and along jawline from experimental geneware.",
+    "skin_tone": "Warm golden-brown with honeyed undertones \u2014 the luminous result of Middle Eastern and Hispanic heritage blending with South Asian depth. Even tone across face and body, neither pale nor deeply dark, but richly warm with subtle golden radiance that catches light.",
+    "complexion": "Clean-shaven, minimal scarring except faint neural port scars at left temple (well-concealed unless he pulls his hair back). Slight caffeine-shadows under eyes. Strong angular cheekbones with warm depth reflecting the balanced Middle Eastern-Hispanic foundation, softened by South Asian fullness through the lower face and subtle East Asian eye geometry. Skin carries faint bioluminescent quality in dim light \u2014 barely perceptible blue-green glow in forearms and along jawline from experimental geneware.",
     "distinguishing_marks": [
       "Linear scar running 2cm behind left ear, surgical-clean, where first neural interface array was installed at age 22.",
-      "Faint bioluminescence visible along both forearms in low-light conditions — no defined pattern, more like constellations of subcutaneous glow distributed along vein pathways.",
+      "Faint bioluminescence visible along both forearms in low-light conditions \u2014 no defined pattern, more like constellations of subcutaneous glow distributed along vein pathways.",
       "Thin horizontal mark on inside of right wrist where he tested a prototype haptic feedback sensor on himself (subsequently removed)."
     ],
-    "visible_augmentations": "Gradient iris mod is immediately visible upon eye contact — distinctly artificial color-shift, though calibrated to look biological rather than chrome. Bioluminescent undertone in forearms only visible in dim light or during evening sessions. Neural port scars at temple are subtle unless actively pointed out. No external chrome or obvious prosthetics.",
-    "posture_movement": "Moves with deliberate slowness, as if perpetually conscious of not startling people in his chair. Sits forward slightly when listening, hands open and visible. Minimal fidgeting. Speaks in even, measured tone. Walks with careful, grounded steps — no wasted motion.",
-    "clothing_style": "Tier-3 functional: soft linen and cotton blend tunics in warm neutrals (cream, sage, warm gray) layered over fitted undershirts. Loose-fitting canvas trousers in charcoal or navy. Worn leather ankle boots resoled three times. A single lab coat in natural cotton (not sterile white — warm off-white) hangs in his office. Minimal jewelry except a simple matte-black titanium bracelet worn over the bioluminescent forearm scar. Aesthetically communicates: 'I am not trying to impress you, I am trying to help you feel safe.'"
+    "visible_augmentations": "Gradient iris mod is immediately visible upon eye contact \u2014 distinctly artificial color-shift, though calibrated to look biological rather than chrome. Bioluminescent undertone in forearms only visible in dim light or during evening sessions. Neural port scars at temple are subtle unless actively pointed out. No external chrome or obvious prosthetics.",
+    "posture_movement": "Moves with deliberate slowness, as if perpetually conscious of not startling people in his chair. Sits forward slightly when listening, hands open and visible. Minimal fidgeting. Speaks in even, measured tone. Walks with careful, grounded steps \u2014 no wasted motion.",
+    "clothing_style": "Tier-3 functional: soft linen and cotton blend tunics in warm neutrals (cream, sage, warm gray) layered over fitted undershirts. Loose-fitting canvas trousers in charcoal or navy. Worn leather ankle boots resoled three times. A single lab coat in natural cotton (not sterile white \u2014 warm off-white) hangs in his office. Minimal jewelry except a simple matte-black titanium bracelet worn over the bioluminescent forearm scar. Aesthetically communicates: \u0027I am not trying to impress you, I am trying to help you feel safe.\u0027"
   },
   "image_prompt": "Vale Shirazi, 178cm lean neo-noir technician with warm golden-brown skin reflecting Middle Eastern-Hispanic heritage blended with South Asian and East Asian ancestry. Deep brown eyes with artificial amber-gold gradient iris modification, visible under dim light. Clean-shaven angular face with high cheekbones and soft lower face structure. Black close-cropped fade haircut. Wearing soft cream linen tunic layered over fitted undershirt, charcoal canvas trousers, worn leather ankle boots. Matte-black titanium bracelet on wrist. Faint bioluminescent blue-green glow barely visible along forearms in low light. Subtle neural port scars at left temple. Posture is deliberate and grounded, hands visible and open. Setting: dimly-lit neural calibration clinic or tech workspace, cool blue-spectrum lighting revealing the subcutaneous bioluminescence. GLMZ, measured calm demeanor, professional care-giver aesthetic. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Middle Eastern": 39.7,
     "Hispanic/Latin American": 39.6,
@@ -282,12 +276,6 @@
     "East Asian": 7.5,
     "Southeast Asian": 5.6
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Middle Eastern": {
       "Arab Levantine": {
@@ -332,6 +320,5 @@
         "Vietnamese": 3.5
       }
     }
-  },
-  "tier": "3"
+  }
 }

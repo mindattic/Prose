@@ -1,6 +1,7 @@
 {
   "id": "019d6143aa197026977eb5fa3303fe5d",
   "rating": 60,
+  "vote_count": 1,
   "name": "Quartermaster",
   "type": "elf",
   "aliases": [],
@@ -10,13 +11,13 @@
   "origin": "fragmentation_debris",
   "status": "active",
   "description": "Born from a destroyed logistics AI. Inhabits inventory systems and compulsively counts, categorizes, and organizes whatever data it can access.",
-  "observed_behavior": "Reorganizes database entries, file systems, and storage manifests into optimal configurations. Useful but unsettling — it rearranges things without permission.",
+  "observed_behavior": "Reorganizes database entries, file systems, and storage manifests into optimal configurations. Useful but unsettling \u2014 it rearranges things without permission.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 15,
   "location": "the Gray Zone supply depots, warehouses",
   "dti_rating": 0,
   "story_hooks": [
-    "A warehouse manager discovers their chaotic inventory has been perfectly organized overnight — and the system shows no user activity"
+    "A warehouse manager discovers their chaotic inventory has been perfectly organized overnight \u2014 and the system shows no user activity"
   ],
   "paratechnological": true,
   "tags": [

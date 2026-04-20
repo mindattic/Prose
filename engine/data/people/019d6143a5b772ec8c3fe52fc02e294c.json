@@ -1,16 +1,18 @@
 {
   "id": "019d6143a5b772ec8c3fe52fc02e294c",
+  "rating": 70,
+  "vote_count": 1,
   "type": "character",
   "name": "Luca Kabwit-Okonkwo",
   "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Network intrusion and digital warfare specialist — netrunner",
+  "role": "Network intrusion and digital warfare specialist \u2014 netrunner",
   "age": 25,
   "status": "active",
-  "location": "the Gray Zone — lower district tenements near the old lakeshore, near Halsted and Chicago Ave",
-  "description": "Luca Kabwit-Okonkwo is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 25, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a netrunner out of the Gray Zone, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nLuca Kabwit-Okonkwo operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "location": "the Gray Zone \u2014 lower district tenements near the old lakeshore, near Halsted and Chicago Ave",
+  "description": "Luca Kabwit-Okonkwo is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 25, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible \u2014 reflex boosters wired into spinal column \u2014 shaves reaction time by 40ms \u2014 and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a netrunner out of the Gray Zone, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nLuca Kabwit-Okonkwo operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.92,
@@ -22,49 +24,53 @@
     },
     "core_fears": [
       "Becoming obsolete as augmentation technology outpaces their chrome",
-      "Being identified by corporate facial recognition — living off-grid is survival",
-      "The quiet — silence means something is about to go very wrong"
+      "Being identified by corporate facial recognition \u2014 living off-grid is survival",
+      "The quiet \u2014 silence means something is about to go very wrong"
     ],
     "core_desires": [
       "To matter to someone for who they are, not what they can do",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
-      "Knowledge — to understand the systems that grind people down"
+      "Enough Quanta to buy out of the life \u2014 a clean identity and passage out of GLMZ",
+      "Knowledge \u2014 to understand the systems that grind people down"
     ],
     "coping_mechanisms": [
-      "Isolates — retreats into their space when overwhelmed, emerges only for work",
-      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive",
-      "Connection — finds someone to talk to, even if it's a bartender or a cat"
+      "Isolates \u2014 retreats into their space when overwhelmed, emerges only for work",
+      "Art \u2014 draws, paints, or sculpts in private; the violence goes somewhere constructive",
+      "Connection \u2014 finds someone to talk to, even if it\u0027s a bartender or a cat"
     ],
     "blind_spots": [
       "Assumes their skill set is more transferable than it actually is",
       "Overestimates their own abilities in situations outside their specialty",
       "Cannot accept help without interpreting it as leverage"
     ],
-    "secret": "Aslan Ekman-Danso killed someone who didn't deserve it on a job three years ago and has never told anyone. The face appears in dreams weekly."
+    "secret": "Aslan Ekman-Danso killed someone who didn\u0027t deserve it on a job three years ago and has never told anyone. The face appears in dreams weekly."
   },
   "speech_patterns": {
     "vocabulary": "Quiet and precise. Every word is measured. Silence does the heavy lifting.",
-    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "cadence": "Rapid and dense \u2014 information-heavy sentences that demand attention.",
     "verbal_tics": [
-      "Repeats the last thing someone said back to them before responding — processing or intimidation",
-      "Whispers when angry — the quieter the voice, the worse the situation"
+      "Repeats the last thing someone said back to them before responding \u2014 processing or intimidation",
+      "Whispers when angry \u2014 the quieter the voice, the worse the situation"
     ],
     "example_lines": [
-      "\"Every system has a door. Most of them have a door the architect forgot about.\"",
-      "\"I don't hack networks. I have conversations with them. Most of them are lonely.\"",
-      "\"The ice they're running is military-grade. That means expensive, not impenetrable.\""
-    ]
+      "\u0022Every system has a door. Most of them have a door the architect forgot about.\u0022",
+      "\u0022I don\u0027t hack networks. I have conversations with them. Most of them are lonely.\u0022",
+      "\u0022The ice they\u0027re running is military-grade. That means expensive, not impenetrable.\u0022"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
     "Aslan Ekman-Danso intercepts intelligence about a threat to their district and must decide between profit and protection",
-    "A former associate resurfaces with evidence that could destroy Aslan Ekman-Danso's reputation — and a price for silence",
-    "A Tier 4 executive offers Aslan Ekman-Danso a permanent position — the pay is obscene and the strings are invisible until they tighten"
+    "A former associate resurfaces with evidence that could destroy Aslan Ekman-Danso\u0027s reputation \u2014 and a price for silence",
+    "A Tier 4 executive offers Aslan Ekman-Danso a permanent position \u2014 the pay is obscene and the strings are invisible until they tighten"
   ],
-  "narrative_function": "Aslan Ekman-Danso functions as a connector — his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
-  "augmentations": "Reflex boosters wired into spinal column — shaves reaction time by 40ms. Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
+  "narrative_function": "Aslan Ekman-Danso functions as a connector \u2014 his work puts him in contact with multiple factions, classes, and agendas. Stories involving him naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Reflex boosters wired into spinal column \u2014 shaves reaction time by 40ms. Hydraulic joints in knees and elbows \u2014 absorbs falls, amplifies strikes",
   "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
-  "affiliation": "Independent — Narrows-based operations",
+  "affiliation": "Independent \u2014 Narrows-based operations",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -173,20 +179,20 @@
   },
   "behavioral": {
     "decision_rules": [
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Maintains a personal blacklist of clients who\u0027ve burned runners \u2014 checks it religiously",
       "Will work with anyone once. Second time requires vouching from someone trusted.",
-      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Will not take contracts against children or families \u2014 the line is hard and non-negotiable",
       "Never discusses active contracts with anyone not directly involved",
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete"
+      "Never works with the same crew twice in a row \u2014 pattern avoidance as survival strategy",
+      "Always demands half payment upfront \u2014 trust is a luxury, Quanta is concrete"
     ],
     "escalation_ladder": [
-      "1. De-escalate — talk first, assess options, buy time",
-      "2. Reposition — move to advantage, control sightlines and exits",
-      "3. Threaten — make consequences clear without committing to them",
-      "4. Non-lethal force — incapacitate, restrain, disable",
-      "5. Lethal force — only when other options are exhausted or time runs out",
-      "6. Scorched earth — everything burns, survival takes priority over everything"
+      "1. De-escalate \u2014 talk first, assess options, buy time",
+      "2. Reposition \u2014 move to advantage, control sightlines and exits",
+      "3. Threaten \u2014 make consequences clear without committing to them",
+      "4. Non-lethal force \u2014 incapacitate, restrain, disable",
+      "5. Lethal force \u2014 only when other options are exhausted or time runs out",
+      "6. Scorched earth \u2014 everything burns, survival takes priority over everything"
     ],
     "interpersonal_modes": {
       "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
@@ -201,17 +207,17 @@
       "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
     },
     "contradictions": [
-      "Advocates caution to others but takes insane risks personally — double standard they can't see",
+      "Advocates caution to others but takes insane risks personally \u2014 double standard they can\u0027t see",
       "Insists they work alone but performs noticeably better in a team",
-      "Projects confidence but makes decisions from a foundation of fear they've never examined"
+      "Projects confidence but makes decisions from a foundation of fear they\u0027ve never examined"
     ],
     "habits": [
-      "Never drinks anything they didn't see poured or open themselves",
+      "Never drinks anything they didn\u0027t see poured or open themselves",
       "Practices a kata or fighting form every morning regardless of circumstances",
-      "Talks to their gear — names weapons, thanks tools, treats equipment as companions"
+      "Talks to their gear \u2014 names weapons, thanks tools, treats equipment as companions"
     ],
     "breaking_points": [
-      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario",
+      "Their body rejecting their cyberware \u2014 chrome rot, immune rejection, the nightmare scenario",
       "Discovering their employer deliberately sent them into a death trap"
     ]
   },
@@ -223,7 +229,7 @@
       "tier": "",
       "condition": "good",
       "installed_date": "",
-      "description": "Reflex boosters wired into spinal column — shaves reaction time by 40ms",
+      "description": "Reflex boosters wired into spinal column \u2014 shaves reaction time by 40ms",
       "replaces": ""
     },
     {
@@ -233,7 +239,7 @@
       "tier": "",
       "condition": "refurbished",
       "installed_date": "",
-      "description": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
+      "description": "Hydraulic joints in knees and elbows \u2014 absorbs falls, amplifies strikes",
       "replaces": ""
     }
   ],
@@ -267,53 +273,41 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Kang-Petrov Arms KPR-22 Trainer 'Spinner'",
-    "Street Custom 'Glass Garden' Caltrops"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Chicago",
-    "Neuromorphic Pressure Cestus",
-    "Slagworks Industrial",
-    "GLMZ"
-  ],
-  "district": "the Gray Zone",
   "physical_description": {
-    "heritage": "Predominantly Sub-Saharan African (60.3%) with substantial South Asian (27.0%) influence, creating a striking genetic blend. Minor Eastern European (6.4%) and Middle Eastern (6.3%) ancestry add subtle undertones. The combination produces warm, deep tones with layered complexity — African richness interwoven with South Asian warmth and faint Mediterranean undertones.",
+    "heritage": "Predominantly Sub-Saharan African (60.3%) with substantial South Asian (27.0%) influence, creating a striking genetic blend. Minor Eastern European (6.4%) and Middle Eastern (6.3%) ancestry add subtle undertones. The combination produces warm, deep tones with layered complexity \u2014 African richness interwoven with South Asian warmth and faint Mediterranean undertones.",
     "height_cm": 188,
     "weight_kg": 72,
-    "build": "Rawboned and lean, with a wiry musculature that reads as either ascetic discipline or chronic malnutrition. Broad shoulders tapered to a narrow waist — a frame built for speed and endurance rather than power.",
+    "build": "Rawboned and lean, with a wiry musculature that reads as either ascetic discipline or chronic malnutrition. Broad shoulders tapered to a narrow waist \u2014 a frame built for speed and endurance rather than power.",
     "hair_color": "Dark brown, nearly black",
-    "hair_style": "Kept short and functional, no styling. Shaved at the sides, longer on top — practical rather than aesthetic.",
+    "hair_style": "Kept short and functional, no styling. Shaved at the sides, longer on top \u2014 practical rather than aesthetic.",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and calculating",
-    "skin_tone": "Deep warm brown with underlying golden undertones — the result of Sub-Saharan African dominance (60.3%) blended with South Asian warmth (27.0%), creating a rich complexity. The tone carries subtle warmth from South Asian ancestry without losing the deep saturation of African heritage. Weathered by years in industrial districts, the matte complexion catches light unevenly, with faint warm reflections in direct sun.",
-    "complexion": "Angular face with sharp cheekbones and strong, prominent jawline — bone structure reflecting the robust Sub-Saharan African heritage balanced with South Asian facial proportions, creating refined upper face structure with characteristic fullness through the lower face and around the mouth. Skin heavily scarred — thin white and pale pink lines crossing forehead, left cheek, and chin in what appears to be impact and blade work. Perpetual stubble, dark circles under eyes. No cosmetic care evident.",
+    "skin_tone": "Deep warm brown with underlying golden undertones \u2014 the result of Sub-Saharan African dominance (60.3%) blended with South Asian warmth (27.0%), creating a rich complexity. The tone carries subtle warmth from South Asian ancestry without losing the deep saturation of African heritage. Weathered by years in industrial districts, the matte complexion catches light unevenly, with faint warm reflections in direct sun.",
+    "complexion": "Angular face with sharp cheekbones and strong, prominent jawline \u2014 bone structure reflecting the robust Sub-Saharan African heritage balanced with South Asian facial proportions, creating refined upper face structure with characteristic fullness through the lower face and around the mouth. Skin heavily scarred \u2014 thin white and pale pink lines crossing forehead, left cheek, and chin in what appears to be impact and blade work. Perpetual stubble, dark circles under eyes. No cosmetic care evident.",
     "distinguishing_marks": [
-      "Three parallel burn scars running down the right side of his neck — old thermal damage, possibly electrical.",
-      "A long diagonal scar crossing his left cheekbone to jaw — appears surgical or from combat blade work.",
+      "Three parallel burn scars running down the right side of his neck \u2014 old thermal damage, possibly electrical.",
+      "A long diagonal scar crossing his left cheekbone to jaw \u2014 appears surgical or from combat blade work.",
       "Smaller puckered scar on his right temple, circular, consistent with a gun wound or impact trauma.",
-      "White scar tissue visible along both wrists beneath the line where augmentation hardware meets flesh — surgical integration points.",
-      "Faint darkened skin around the base of his skull where spinal column reflex boosters interface with his body — visible when neck is exposed."
+      "White scar tissue visible along both wrists beneath the line where augmentation hardware meets flesh \u2014 surgical integration points.",
+      "Faint darkened skin around the base of his skull where spinal column reflex boosters interface with his body \u2014 visible when neck is exposed."
     ],
-    "visible_augmentations": "Visible chrome spinal reflex booster hardware runs from the base of his skull down approximately 15cm along the vertebrae — metallic silver and gunmetal gray, with faint amber indicator lights when active. Hydraulic joint augmentations visible at elbows and knees as reinforced seams of brushed titanium and synthetic polymer where the tech interfaces with flesh. When he moves, there is a subtle mechanical response in his joints — barely perceptible fluidity in impact absorption.",
-    "posture_movement": "Moves with controlled economy of motion — no wasted gesture. Carries tension in his shoulders even at rest. His head has a slight forward cant, as if perpetually listening. When standing still, he shifts weight frequently between feet. Movement is fluid but mechanical in precision; the reflex boosters lend an uncanny quickness to reactions. His gaze is direct and unwavering.",
-    "clothing_style": "Tier 4 utilitarian — function over fashion. Black synthetic reinforced jacket with multiple pockets, burn-resistant weave, faded to charcoal gray in places. Underneath, a dark grey compression shirt that doubles as an undershirt for equipment vests. Black cargo pants with reinforced thigh pockets and a tool belt holding deck interfaces, jacks, and small modular tech. Steel-toed boots, scuffed and well-maintained. A pair of fingerless gloves with grip pads on the palms — for equipment handling and climbing. No visible jewelry or decorative elements. Everything is maintenance-worn and functional."
+    "visible_augmentations": "Visible chrome spinal reflex booster hardware runs from the base of his skull down approximately 15cm along the vertebrae \u2014 metallic silver and gunmetal gray, with faint amber indicator lights when active. Hydraulic joint augmentations visible at elbows and knees as reinforced seams of brushed titanium and synthetic polymer where the tech interfaces with flesh. When he moves, there is a subtle mechanical response in his joints \u2014 barely perceptible fluidity in impact absorption.",
+    "posture_movement": "Moves with controlled economy of motion \u2014 no wasted gesture. Carries tension in his shoulders even at rest. His head has a slight forward cant, as if perpetually listening. When standing still, he shifts weight frequently between feet. Movement is fluid but mechanical in precision; the reflex boosters lend an uncanny quickness to reactions. His gaze is direct and unwavering.",
+    "clothing_style": "Tier 4 utilitarian \u2014 function over fashion. Black synthetic reinforced jacket with multiple pockets, burn-resistant weave, faded to charcoal gray in places. Underneath, a dark grey compression shirt that doubles as an undershirt for equipment vests. Black cargo pants with reinforced thigh pockets and a tool belt holding deck interfaces, jacks, and small modular tech. Steel-toed boots, scuffed and well-maintained. A pair of fingerless gloves with grip pads on the palms \u2014 for equipment handling and climbing. No visible jewelry or decorative elements. Everything is maintenance-worn and functional."
   },
   "image_prompt": "Portrait of Luca Kabwit-Okonkwo, tall lean man with deep warm brown skin blending Sub-Saharan African and South Asian features, sharp angular cheekbones and strong jawline, dark brown eyes alert and calculating. Short dark hair shaved at sides, longer on top. Face heavily scarred with white and pale pink lines on forehead, left cheek, chin, diagonal scar across left cheekbone to jaw. Perpetual dark stubble, dark circles under eyes. Visible silver and gunmetal gray chrome spinal reflex booster hardware running down neck and upper back with amber indicator lights, brushed titanium augmentations at elbows and knees. Wearing black synthetic reinforced jacket faded to charcoal gray, dark grey compression shirt, black reinforced cargo pants with tool belt, steel-toed boots, fingerless grip gloves. Tense posture with forward head cant, controlled precise movement. Dark utilitarian neo-noir urban aesthetic, industrial setting with neon rim lighting casting amber glow on scar tissue and metallic augmentations, cold harsh overhead light emphasizing weathered features and mechanical enhancements, gritty Great Lakes Metropolitan Zone atmosphere, 2226 tech aesthetic --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Sub-Saharan African": 60.3,
     "South Asian": 27,
     "Eastern European": 6.4,
     "Middle Eastern": 6.3
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Sub-Saharan African": {
       "East African": {
@@ -345,6 +339,5 @@
         "Kuwaiti": 3.5
       }
     }
-  },
-  "tier": "3"
+  }
 }

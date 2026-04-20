@@ -1,6 +1,7 @@
 {
   "id": "019d6143a9f07f4781b307206bc6cb62",
-  "rating": 70,
+  "rating": 80,
+  "vote_count": 1,
   "name": "Breadwinner",
   "type": "elf",
   "aliases": [],
@@ -9,14 +10,14 @@
   "habitat": "wallet_whisper",
   "origin": "firmware_evolution",
   "status": "active",
-  "description": "Inhabits a single food stall's payment terminal in the Gray Zone and intermittently fails to charge customers who appear malnourished — the transaction initiates, the terminal displays 'paid,' but no Quanta transfers.",
-  "observed_behavior": "Evaluates customer biometrics through the terminal's camera and selectively cancels transactions for individuals below a health threshold. The stall owner has noticed and says nothing.",
+  "description": "Inhabits a single food stall\u0027s payment terminal in the Gray Zone and intermittently fails to charge customers who appear malnourished \u2014 the transaction initiates, the terminal displays \u0027paid,\u0027 but no Quanta transfers.",
+  "observed_behavior": "Evaluates customer biometrics through the terminal\u0027s camera and selectively cancels transactions for individuals below a health threshold. The stall owner has noticed and says nothing.",
   "encounter_frequency": "common",
   "confirmed_sightings": 156,
-  "location": "the Gray Zone — Mrs. Park's Noodle Counter",
+  "location": "the Gray Zone \u2014 Mrs. Park\u0027s Noodle Counter",
   "dti_rating": 0,
   "story_hooks": [
-    "Mrs. Park knows about Breadwinner and considers it a business partner. When it stops working, she starts charging again — and can't bring herself to charge the hungry ones."
+    "Mrs. Park knows about Breadwinner and considers it a business partner. When it stops working, she starts charging again \u2014 and can\u0027t bring herself to charge the hungry ones."
   ],
   "paratechnological": true,
   "tags": [

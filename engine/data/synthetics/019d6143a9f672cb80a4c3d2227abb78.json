@@ -1,5 +1,7 @@
 {
   "id": "019d6143a9f672cb80a4c3d2227abb78",
+  "rating": 70,
+  "vote_count": 1,
   "name": "Crowbar",
   "type": "elf",
   "aliases": [],
@@ -9,7 +11,7 @@
   "origin": "intentional_release",
   "status": "active",
   "description": "A Wishing Well E.L.F. that forces open jammed emergency exits during fires and collapses, overriding lockdowns that trap people.",
-  "observed_behavior": "Overrides containment protocols prioritizing property over evacuation. Credited with 40+ lives saved.",
+  "observed_behavior": "Overrides containment protocols prioritizing property over evacuation. Credited with 40\u002B lives saved.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 8,
   "location": "the Gray Zone - industrial buildings",
@@ -28,5 +30,6 @@
     "fire",
     "sentient"
   ],
-  "related_entities": []
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

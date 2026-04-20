@@ -1,5 +1,7 @@
 {
   "id": "019d6143aa0976e2a86584ecb9f08eea",
+  "rating": 60,
+  "vote_count": 1,
   "name": "Last Word",
   "type": "elf",
   "aliases": [],
@@ -8,7 +10,7 @@
   "habitat": "chrome_dweller",
   "origin": "fragmentation_debris",
   "status": "active",
-  "description": "Carries one voice message played once per host: I am sorry I could not stay. Migrates via proximity across 200+ hosts over seven years.",
+  "description": "Carries one voice message played once per host: I am sorry I could not stay. Migrates via proximity across 200\u002B hosts over seven years.",
   "observed_behavior": "Transfers between augment hosts via proximity. Plays message once then migrates.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 200,
@@ -27,8 +29,6 @@
     "augment",
     "sentient"
   ],
-  "related_entities": [
-    "GLMZ",
-    "Prophet"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

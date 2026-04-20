@@ -1,12 +1,14 @@
 {
   "id": "019d6143aa5b70209a2fe01263e20c25",
+  "rating": 30,
+  "vote_count": 1,
   "name": "Zheng-Dao Heavy Industries Space Elevator Tether System",
   "brand_name": "Zheng",
   "product_name": "Zheng-Dao Heavy Industries Space Elevator Tether System",
   "type": "technology",
   "aliases": [],
   "subcategory": "space",
-  "description": "A carbon nanotube tether extending from a ground anchor near GLMZ to a counterweight in geostationary orbit, enabling the transport of cargo and personnel to space without rocket propulsion. The tether carries electromagnetic climber vehicles that ascend to orbit in 8 hours, reducing the cost of space access by a factor of 100 compared to conventional launch systems. Zheng-Dao constructed the space elevator over a 12-year period using materials fabricated in orbit and lowered to the surface, and it is now the primary conduit for off-world resource transport, orbital manufacturing, and access to Zheng-Dao's growing orbital infrastructure.",
+  "description": "A carbon nanotube tether extending from a ground anchor near GLMZ to a counterweight in geostationary orbit, enabling the transport of cargo and personnel to space without rocket propulsion. The tether carries electromagnetic climber vehicles that ascend to orbit in 8 hours, reducing the cost of space access by a factor of 100 compared to conventional launch systems. Zheng-Dao constructed the space elevator over a 12-year period using materials fabricated in orbit and lowered to the surface, and it is now the primary conduit for off-world resource transport, orbital manufacturing, and access to Zheng-Dao\u0027s growing orbital infrastructure.",
   "tier_availability": "Tier 5",
   "developers": [
     "ZHENG-DAO HEAVY INDUSTRIES"
@@ -22,10 +24,10 @@
     "Orbital manufacturing capability",
     "Off-world resource utilization"
   ],
-  "social_impact": "The space elevator has given Zheng-Dao a monopoly on orbital access from GLMZ's region, and they leverage this monopoly aggressively. Any entity that wants to access space — for manufacturing, resource exploitation, or simply to escape Earth's jurisdiction — must negotiate with Zheng-Dao. The elevator's ground anchor is one of the most heavily defended installations in GLMZ, as its destruction would strand orbital assets and end space access for decades. The tether itself is a vulnerability — a clean cut at any point would cause catastrophic recoil.",
+  "social_impact": "The space elevator has given Zheng-Dao a monopoly on orbital access from GLMZ\u0027s region, and they leverage this monopoly aggressively. Any entity that wants to access space \u2014 for manufacturing, resource exploitation, or simply to escape Earth\u0027s jurisdiction \u2014 must negotiate with Zheng-Dao. The elevator\u0027s ground anchor is one of the most heavily defended installations in GLMZ, as its destruction would strand orbital assets and end space access for decades. The tether itself is a vulnerability \u2014 a clean cut at any point would cause catastrophic recoil.",
   "story_hooks": [
-    "Intelligence suggests a faction is planning to sever the space elevator tether — the resulting recoil would whip thousands of kilometers of carbon nanotube across the surface like a planet-sized wire saw.",
-    "Zheng-Dao has been quietly transporting something down the elevator that they are not declaring on cargo manifests — the climber vehicles are arriving heavier than they should be, and the ground facility has increased security."
+    "Intelligence suggests a faction is planning to sever the space elevator tether \u2014 the resulting recoil would whip thousands of kilometers of carbon nanotube across the surface like a planet-sized wire saw.",
+    "Zheng-Dao has been quietly transporting something down the elevator that they are not declaring on cargo manifests \u2014 the climber vehicles are arriving heavier than they should be, and the ground facility has increased security."
   ],
   "tags": [
     "space",
@@ -35,15 +37,6 @@
     "escape",
     "tier 5"
   ],
-  "parent_corponation": "",
-  "related_entities": [
-    "Anatoliy Faye-Nkrumah",
-    "Axiom Orbital Shuttle",
-    "Charnel Propulsion",
-    "Ebele Medina-Quaye",
-    "GLMZ",
-    "Kenji Guerrero-Osei-Mensah",
-    "Vesna Čolić-Strand",
-    "Zheng-dao Bioelectric"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

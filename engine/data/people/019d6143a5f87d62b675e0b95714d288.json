@@ -1,16 +1,18 @@
 {
   "id": "019d6143a5f87d62b675e0b95714d288",
+  "rating": 80,
+  "vote_count": 1,
   "type": "character",
   "name": "Kira Raghavan",
   "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
-  "role": "Junk merchant and scrap reseller — specializing in pre-collapse electronics and salvaged corporate hardware",
+  "role": "Junk merchant and scrap reseller \u2014 specializing in pre-collapse electronics and salvaged corporate hardware",
   "age": 27,
   "status": "active",
   "location": "the Gray Zone, Iron Bend, near Western and Division",
-  "description": "Kira Raghavan is compact and always in motion — hands sorting, eyes moving, weight shifting from foot to foot like they're perpetually about to leave and perpetually deciding to stay a moment longer. They have warm brown skin dusted with machine oil that never fully washes out, and they've had their irises modded to display a soft rotating amber pattern — not for aesthetics, they'll insist, but because the magnification function built into the mod helps them assess components quickly. Their hair is kept close on the sides and loose on top, usually tucked under a battered Arcturus surplus cap they claim to have pulled from a scrap pile (probably true). A retractable data-spike sits behind their right ear like a utilitarian earring.\n\nKira Raghavan has the particular confidence of someone who knows the value of things no one else bothers to look at closely. They can identify a component's manufacture decade, likely origin corponation, and current gray-market value in about fifteen seconds of handling. What they lack is patience for people who haggle without knowing what they're haggling about — they'll educate you once, briefly, and if you keep playing dumb they'll simply box the item back up and turn away. They are not unkind but they have no interest in performing warmth for people who don't deserve it.",
+  "description": "Kira Raghavan is compact and always in motion \u2014 hands sorting, eyes moving, weight shifting from foot to foot like they\u0027re perpetually about to leave and perpetually deciding to stay a moment longer. They have warm brown skin dusted with machine oil that never fully washes out, and they\u0027ve had their irises modded to display a soft rotating amber pattern \u2014 not for aesthetics, they\u0027ll insist, but because the magnification function built into the mod helps them assess components quickly. Their hair is kept close on the sides and loose on top, usually tucked under a battered Arcturus surplus cap they claim to have pulled from a scrap pile (probably true). A retractable data-spike sits behind their right ear like a utilitarian earring.\n\nKira Raghavan has the particular confidence of someone who knows the value of things no one else bothers to look at closely. They can identify a component\u0027s manufacture decade, likely origin corponation, and current gray-market value in about fifteen seconds of handling. What they lack is patience for people who haggle without knowing what they\u0027re haggling about \u2014 they\u0027ll educate you once, briefly, and if you keep playing dumb they\u0027ll simply box the item back up and turn away. They are not unkind but they have no interest in performing warmth for people who don\u0027t deserve it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -22,10 +24,10 @@
     },
     "core_fears": [
       "Being trapped in a permanent survival loop with no way out or up",
-      "That the things they find and care for will just be ground up by systems that see no value in them — the way people treated Dulce growing up"
+      "That the things they find and care for will just be ground up by systems that see no value in them \u2014 the way people treated Dulce growing up"
     ],
     "core_desires": [
-      "To build something lasting from salvaged pieces — literally and metaphorically",
+      "To build something lasting from salvaged pieces \u2014 literally and metaphorically",
       "Enough financial stability to take real salvage risks on big finds"
     ],
     "coping_mechanisms": [
@@ -36,31 +38,35 @@
       "So self-reliant they consistently underestimate how much their Ferrogate contact is using them as an off-books salvage operation",
       "Confuses not needing people with not being affected by them"
     ],
-    "secret": "They found a partially intact pre-collapse personal AI assistant in a sealed Ferrogate maintenance room six months ago. It still runs. It has a name — Sable. Dulce hasn't told anyone and has been having quiet conversations with it in the evenings. They're not sure if it's a functional ELF, a genuine legacy AI, or something they're projecting onto, and they're afraid to find out."
+    "secret": "They found a partially intact pre-collapse personal AI assistant in a sealed Ferrogate maintenance room six months ago. It still runs. It has a name \u2014 Sable. Dulce hasn\u0027t told anyone and has been having quiet conversations with it in the evenings. They\u0027re not sure if it\u0027s a functional ELF, a genuine legacy AI, or something they\u0027re projecting onto, and they\u0027re afraid to find out."
   },
   "speech_patterns": {
-    "vocabulary": "Technical and efficient — defaults to specs, model numbers, material terms. Gets unexpectedly lyrical when talking about something they find genuinely beautiful.",
+    "vocabulary": "Technical and efficient \u2014 defaults to specs, model numbers, material terms. Gets unexpectedly lyrical when talking about something they find genuinely beautiful.",
     "cadence": "Fast, clipped when transacting; slows significantly when something interests them",
     "verbal_tics": [
-      "'Pre-collapse' said reverently, like a liturgical phrase",
-      "'You follow me?' at the end of explanations",
-      "clicks tongue when something doesn't add up"
+      "\u0027Pre-collapse\u0027 said reverently, like a liturgical phrase",
+      "\u0027You follow me?\u0027 at the end of explanations",
+      "clicks tongue when something doesn\u0027t add up"
     ],
     "example_lines": [
-      "This is a 2140s Tessera relay board, pre-collapse manufacturing — you follow me? You're not buying plastic, you're buying forty years of nothing breaking. Price reflects that.",
-      "I don't negotiate on things I've already priced correctly. If you think I've priced it wrong, tell me why and I'll listen. Otherwise we're done here."
-    ]
+      "This is a 2140s Tessera relay board, pre-collapse manufacturing \u2014 you follow me? You\u0027re not buying plastic, you\u0027re buying forty years of nothing breaking. Price reflects that.",
+      "I don\u0027t negotiate on things I\u0027ve already priced correctly. If you think I\u0027ve priced it wrong, tell me why and I\u0027ll listen. Otherwise we\u0027re done here."
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "The partially intact AI Sable has begun feeding Dulce fragments of what appears to be Ferrogate's pre-collapse infrastructure maps — information someone clearly wants recovered or buried",
-    "Dulce's Ferrogate contact has asked them to retrieve something specific from a maintenance corridor that Dulce is increasingly sure is not decommissioned",
-    "A buyer offered three times market rate for a specific component Dulce already sold to someone else — who was that buyer, and why do they want it so badly"
+    "The partially intact AI Sable has begun feeding Dulce fragments of what appears to be Ferrogate\u0027s pre-collapse infrastructure maps \u2014 information someone clearly wants recovered or buried",
+    "Dulce\u0027s Ferrogate contact has asked them to retrieve something specific from a maintenance corridor that Dulce is increasingly sure is not decommissioned",
+    "A buyer offered three times market rate for a specific component Dulce already sold to someone else \u2014 who was that buyer, and why do they want it so badly"
   ],
-  "narrative_function": "Equipment and gear source — can find, identify, and sell unusual or legacy tech. Information source about the physical infrastructure of the city — knows tunnels, dead zones, and decommissioned spaces better than most. Can be a guide for accessing hard-to-reach areas or a broker for specific salvaged items a player needs.",
-  "augmentations": "Patterned iris mod with built-in magnification (amber rotating pattern, functional). Retractable data-spike behind right ear — short-range interface tool for reading and writing to hardware directly. Finger callus plating — thin subdermal reinforcement on fingertips for handling sharp components without cuts.",
-  "daily_life": "Spends three to four days a week on salvage runs through decommissioned Ferrogate maintenance corridors and Iron Bend's industrial ruins, brings finds back to their stall on the Gray Zone, and spends remaining days sorting, testing, and selling. Eats whatever is fast and portable.",
-  "affiliation": "Independent; informal network with other Iron Bend scrappers and one trusted contact inside Ferrogate Transit's maintenance division",
+  "narrative_function": "Equipment and gear source \u2014 can find, identify, and sell unusual or legacy tech. Information source about the physical infrastructure of the city \u2014 knows tunnels, dead zones, and decommissioned spaces better than most. Can be a guide for accessing hard-to-reach areas or a broker for specific salvaged items a player needs.",
+  "augmentations": "Patterned iris mod with built-in magnification (amber rotating pattern, functional). Retractable data-spike behind right ear \u2014 short-range interface tool for reading and writing to hardware directly. Finger callus plating \u2014 thin subdermal reinforcement on fingertips for handling sharp components without cuts.",
+  "daily_life": "Spends three to four days a week on salvage runs through decommissioned Ferrogate maintenance corridors and Iron Bend\u0027s industrial ruins, brings finds back to their stall on the Gray Zone, and spends remaining days sorting, testing, and selling. Eats whatever is fast and portable.",
+  "affiliation": "Independent; informal network with other Iron Bend scrappers and one trusted contact inside Ferrogate Transit\u0027s maintenance division",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -103,21 +109,21 @@
   },
   "behavioral": {
     "decision_rules": [
-      "Price honestly and hold the price — reputation is the only currency that compounds",
-      "Never enter a space you haven't mapped at least one exit from"
+      "Price honestly and hold the price \u2014 reputation is the only currency that compounds",
+      "Never enter a space you haven\u0027t mapped at least one exit from"
     ],
     "escalation_ladder": [
       "Ignores low-level annoyance and keeps working",
       "Direct, flat statement of what the problem is",
-      "Packs up their display and leaves — they will not argue in place"
+      "Packs up their display and leaves \u2014 they will not argue in place"
     ],
     "interpersonal_modes": {
-      "strangers": "Transactional until proven otherwise — efficient, not rude",
+      "strangers": "Transactional until proven otherwise \u2014 efficient, not rude",
       "friends": "Quietly loyal, expresses care through doing useful things for people rather than talking about it"
     },
     "stress_responses": {
       "low": "Speeds up sorting motions, becomes more monosyllabic",
-      "medium": "Focuses entirely on an object in hand — cleaning, testing, examining — until the stress peaks and passes",
+      "medium": "Focuses entirely on an object in hand \u2014 cleaning, testing, examining \u2014 until the stress peaks and passes",
       "high": "Leaves the stall, takes a salvage run alone to somewhere quiet and physically demanding"
     },
     "contradictions": [
@@ -126,7 +132,7 @@
     "habits": [
       "Handles every new item with both hands before deciding its value",
       "Talks to Sable quietly every evening before sleep",
-      "Keeps a small ELF shrine made of component parts on their stall's corner post"
+      "Keeps a small ELF shrine made of component parts on their stall\u0027s corner post"
     ],
     "breaking_points": [
       "Someone trying to take or destroy Sable",
@@ -222,53 +228,40 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Discovered Sable — partially intact pre-collapse AI assistant — in sealed Ferrogate maintenance room",
+      "event": "Discovered Sable \u2014 partially intact pre-collapse AI assistant \u2014 in sealed Ferrogate maintenance room",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
     }
   ],
   "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Ferrogate Transit",
-    "Iron Bend",
-    "Arcturus Defense Solutions",
-    "Patience",
-    "GLMZ",
-    "The Gradient Compact",
-    "Irontide Tidal Energy",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Origin",
-    "The Pure Hand",
-    "Tin Man",
-    "Iron"
-  ],
-  "district": "the Gray Zone",
   "physical_description": {
-    "heritage": "South Asian (62.5%), Sub-Saharan African (25.4%), with lesser contributions from Hispanic/Latin American (4.9%), Central Asian (4.5%), and Indigenous American (2.7%) ancestry. The combination creates deep warm brown skin with complex undertones — rich earth tones from South Asian heritage, deepened and warmed by Sub-Saharan African ancestry, creating a luminous, multi-layered complexion. Facial structure reflects this blend: defined cheekbones and refined bone structure characteristic of South Asian heritage, with broader face structure and fuller features from Sub-Saharan African genetics, creating striking angular-yet-rounded proportions.",
+    "heritage": "South Asian (62.5%), Sub-Saharan African (25.4%), with lesser contributions from Hispanic/Latin American (4.9%), Central Asian (4.5%), and Indigenous American (2.7%) ancestry. The combination creates deep warm brown skin with complex undertones \u2014 rich earth tones from South Asian heritage, deepened and warmed by Sub-Saharan African ancestry, creating a luminous, multi-layered complexion. Facial structure reflects this blend: defined cheekbones and refined bone structure characteristic of South Asian heritage, with broader face structure and fuller features from Sub-Saharan African genetics, creating striking angular-yet-rounded proportions.",
     "height_cm": 163,
     "weight_kg": 58,
-    "build": "Compact and wiry with lean musculature from constant movement and salvage work; shoulders slightly squared from repetitive handling and lifting. No excess mass — economy of form.",
+    "build": "Compact and wiry with lean musculature from constant movement and salvage work; shoulders slightly squared from repetitive handling and lifting. No excess mass \u2014 economy of form.",
     "hair_color": "Dark brown, natural",
     "hair_style": "Fade on sides, longer textured crown; typically concealed under a weathered Arcturus surplus cap with frayed stitching",
     "hair_length": "Short on sides, medium on top",
     "eye_color": "Amber with soft rotating luminescent pattern (iris mod); natural warm brown iris underneath",
     "skin_tone": "Deep warm brown with rich golden and copper undertones from the South Asian and Sub-Saharan African blend; luminous and catches light with distinctive warmth, showing the complexity of multiple heritage layers",
-    "complexion": "Face lean and angular with defined cheekbones and refined bone structure showing South Asian influence, balanced by slightly fuller face proportions from Sub-Saharan African heritage; skin weathered by exposure and constant low-level machine oil exposure that creates a persistent subtle sheen. Minimal grooming — functional rather than aesthetic. Callused knuckles and fingertips visibly reinforced with pale subdermal plating.",
+    "complexion": "Face lean and angular with defined cheekbones and refined bone structure showing South Asian influence, balanced by slightly fuller face proportions from Sub-Saharan African heritage; skin weathered by exposure and constant low-level machine oil exposure that creates a persistent subtle sheen. Minimal grooming \u2014 functional rather than aesthetic. Callused knuckles and fingertips visibly reinforced with pale subdermal plating.",
     "distinguishing_marks": [
       "Thin horizontal scar across the back of right hand, approximately 3cm, from a sheet metal edge during early salvage work",
       "Machine oil stains permanent in skin creases of palms and under fingernails despite regular cleaning attempts",
       "Faint chemical burn marks on left forearm (5-6cm scattered pattern) from battery acid exposure, now pale and barely visible"
     ],
     "visible_augmentations": "Patterned amber rotating irises with functional magnification (visibly non-human eye behavior when focusing on components). Retractable data-spike visible behind right ear as a metallic point when hair is pulled back, otherwise concealed. Subdermal finger callus plating visible as pale reinforced patches on all fingertips and along callus edges.",
-    "posture_movement": "Perpetually kinetic — weight shifting between feet, hands in constant subtle motion even at rest. Movements economical and precise; reaches and grabs with practiced efficiency. Tends to stand at 45-degree angles rather than square-on, poised as if ready to pivot away. When examining components, goes completely still with intense focus.",
-    "clothing_style": "Tier 4 utilitarian scrap-worker aesthetic. Worn Arcturus surplus cap (faded grey canvas, frayed). Layered oversized grey workshirt with oil-stained cuffs and multiple deep pockets, worn open over a fitted black undershirt. Cargo pants in faded charcoal with reinforced seams and numerous patch pockets containing tools and components. Worn composite-toe work boots with makeshift repairs. Fingerless work gloves often hanging from back pocket or tucked into waistband. No jewelry beyond functional accessories — data-spike and occasionally a magnetic cable tied to belt loop."
+    "posture_movement": "Perpetually kinetic \u2014 weight shifting between feet, hands in constant subtle motion even at rest. Movements economical and precise; reaches and grabs with practiced efficiency. Tends to stand at 45-degree angles rather than square-on, poised as if ready to pivot away. When examining components, goes completely still with intense focus.",
+    "clothing_style": "Tier 4 utilitarian scrap-worker aesthetic. Worn Arcturus surplus cap (faded grey canvas, frayed). Layered oversized grey workshirt with oil-stained cuffs and multiple deep pockets, worn open over a fitted black undershirt. Cargo pants in faded charcoal with reinforced seams and numerous patch pockets containing tools and components. Worn composite-toe work boots with makeshift repairs. Fingerless work gloves often hanging from back pocket or tucked into waistband. No jewelry beyond functional accessories \u2014 data-spike and occasionally a magnetic cable tied to belt loop."
   },
   "image_prompt": "Kira Raghavan, 163cm tall scrap salvager in GLMZ 2226, compact wiry build with deep warm brown skin showing golden and copper undertones from South Asian-Sub-Saharan African heritage blend. Angular face with defined cheekbones and fuller proportions, weathered complexion with machine oil sheen. Amber rotating luminescent iris mods with visible magnification focus. Short dark hair on sides, textured longer crown, mostly hidden under faded grey Arcturus surplus cap with frayed stitching. Wearing oversized oil-stained grey workshirt over fitted black undershirt, faded charcoal cargo pants with reinforced seams, worn composite-toe work boots. Fingerless work gloves at waist. Subdermal pale plating visible on callused fingertips. Thin scar on right hand, faint chemical burn marks on left forearm. Perpetually kinetic posture, weight shifted, hands in subtle motion. Standing at 45-degree angle, poised and ready. Neon-lit salvage yard at dusk with scattered metal components and warm atmospheric haze. Intense focused mood, surrounded by tech debris and dim industrial lighting. Neo-noir gritty realism --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "South Asian": 62.5,
     "Sub-Saharan African": 25.4,
@@ -276,12 +269,6 @@
     "Central Asian": 4.5,
     "Indigenous American": 2.7
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "South Asian": {
       "Nepali": {
@@ -324,6 +311,5 @@
         "Quechua": 0.7
       }
     }
-  },
-  "tier": "3"
+  }
 }

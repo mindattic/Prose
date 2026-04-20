@@ -1,16 +1,18 @@
 {
   "id": "019d6143a675736ba7fc6619624cfd23",
+  "rating": 70,
+  "vote_count": 1,
   "type": "character",
-  "name": "Tuva Bah-Kristjánsson",
+  "name": "Tuva Bah-Kristj\u00E1nsson",
   "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
-  "role": "Contract broker and resource coordinator — fixer",
+  "role": "Contract broker and resource coordinator \u2014 fixer",
   "age": 38,
   "status": "active",
-  "location": "The Narrows — cramped residential corridors between megastructures, near Milwaukee and Damen",
-  "description": "Tuva Bah-Kristjánsson are broad-shouldered and heavy, carrying their weight like armor rather than burden. At 38, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and they make no effort to hide it.\n\nThey inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. They work as a fixer out of The Narrows, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nTuva Bah-Kristjánsson operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "location": "The Narrows \u2014 cramped residential corridors between megastructures, near Milwaukee and Damen",
+  "description": "Tuva Bah-Kristj\u00E1nsson are broad-shouldered and heavy, carrying their weight like armor rather than burden. At 38, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible \u2014 internal air filtration system \u2014 lungs replaced with synthetic equivalents, immu \u2014 and they make no effort to hide it.\n\nThey inherited the role from a mentor who disappeared on a job four years ago \u2014 the mentor\u0027s gear, contacts, and unfinished business all came with it. They work as a fixer out of The Narrows, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nTuva Bah-Kristj\u00E1nsson operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.17,
@@ -21,50 +23,54 @@
       "ghost": 0.7
     },
     "core_fears": [
-      "Being replaced — younger, faster, cheaper runners coming up behind them",
-      "Going cyberpsycho — losing the boundary between human and machine",
-      "Being identified by corporate facial recognition — living off-grid is survival"
+      "Being replaced \u2014 younger, faster, cheaper runners coming up behind them",
+      "Going cyberpsycho \u2014 losing the boundary between human and machine",
+      "Being identified by corporate facial recognition \u2014 living off-grid is survival"
     ],
     "core_desires": [
-      "A crew worth trusting — people who stay when the shooting starts",
-      "Control — over their body, their schedule, their future",
-      "Justice — the corporate kind, where the punishment fits the profit margin"
+      "A crew worth trusting \u2014 people who stay when the shooting starts",
+      "Control \u2014 over their body, their schedule, their future",
+      "Justice \u2014 the corporate kind, where the punishment fits the profit margin"
     ],
     "coping_mechanisms": [
-      "Isolates — retreats into their space when overwhelmed, emerges only for work",
-      "Overwork — takes every contract offered because idleness invites thinking",
-      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring"
+      "Isolates \u2014 retreats into their space when overwhelmed, emerges only for work",
+      "Overwork \u2014 takes every contract offered because idleness invites thinking",
+      "Drinks methodically \u2014 not to get drunk, to maintain a specific level of not-caring"
     ],
     "blind_spots": [
       "Cannot accept help without interpreting it as leverage",
       "Cannot see that their independence is actually isolation wearing a better outfit",
       "Assumes their skill set is more transferable than it actually is"
     ],
-    "secret": "Obed Eriksson-Diallo sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation."
+    "secret": "Obed Eriksson-Diallo sends anonymous tips to GLMZ law enforcement about competitors. It\u0027s not principle \u2014 it\u0027s market manipulation."
   },
   "speech_patterns": {
     "vocabulary": "Warm and personable on the surface, with an undertone that suggests the warmth is a professional tool.",
-    "cadence": "Halting — speaks in fragments, reassembles thoughts in real time.",
+    "cadence": "Halting \u2014 speaks in fragments, reassembles thoughts in real time.",
     "verbal_tics": [
-      "Never uses contractions when lying — 'I did not' instead of 'I didn't'",
+      "Never uses contractions when lying \u2014 \u0027I did not\u0027 instead of \u0027I didn\u0027t\u0027",
       "Swears in three languages, often in the same sentence"
     ],
     "example_lines": [
-      "\"I know a person who knows a person. That's not evasion — that's the service.\"",
-      "\"My commission is fifteen percent. You're welcome to find someone cheaper. You won't find someone better.\"",
-      "\"The job isn't dangerous. The people involved are dangerous. The job is just logistics.\""
-    ]
+      "\u0022I know a person who knows a person. That\u0027s not evasion \u2014 that\u0027s the service.\u0022",
+      "\u0022My commission is fifteen percent. You\u0027re welcome to find someone cheaper. You won\u0027t find someone better.\u0022",
+      "\u0022The job isn\u0027t dangerous. The people involved are dangerous. The job is just logistics.\u0022"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "A former associate resurfaces with evidence that could destroy Obed Eriksson-Diallo's reputation — and a price for silence",
+    "A former associate resurfaces with evidence that could destroy Obed Eriksson-Diallo\u0027s reputation \u2014 and a price for silence",
     "A high-paying contract turns out to target someone Obed Eriksson-Diallo owes a personal debt to",
-    "A crew member from Obed Eriksson-Diallo's past shows up in GLMZ, carrying old grievances and new chrome"
+    "A crew member from Obed Eriksson-Diallo\u0027s past shows up in GLMZ, carrying old grievances and new chrome"
   ],
-  "narrative_function": "Obed Eriksson-Diallo represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Their stories explore what happens when skill meets systemic injustice.",
-  "augmentations": "Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks. Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks",
+  "narrative_function": "Obed Eriksson-Diallo represents the working professional of the runner world \u2014 competent, reliable, and slowly being consumed by a lifestyle that doesn\u0027t accommodate aging or doubt. Their stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Internal air filtration system \u2014 lungs replaced with synthetic equivalents, immune to gas attacks. Internal air filtration system \u2014 lungs replaced with synthetic equivalents, immune to gas attacks",
   "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
-  "affiliation": "Independent — Dockside connections",
+  "affiliation": "Independent \u2014 Dockside connections",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -174,29 +180,29 @@
   },
   "behavioral": {
     "decision_rules": [
-      "Will not take contracts against children or families — the line is hard and non-negotiable",
+      "Will not take contracts against children or families \u2014 the line is hard and non-negotiable",
       "Will not betray a client who paid in full, regardless of better offers",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Always demands half payment upfront \u2014 trust is a luxury, Quanta is concrete",
       "Always has an exit route planned before agreeing to any meeting",
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy"
+      "Will abandon a job if the intel was deliberately falsified \u2014 being set up violates the contract",
+      "Never works with the same crew twice in a row \u2014 pattern avoidance as survival strategy"
     ],
     "escalation_ladder": [
-      "1. Assess — read the situation, identify threats and advantages",
-      "2. Negotiate — try to find a solution that doesn't cost ammunition",
-      "3. Intimidate — make the cost of conflict clear",
-      "4. Precision violence — surgical, targeted, minimal collateral",
-      "5. Full engagement — overwhelming force, no half measures",
-      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+      "1. Assess \u2014 read the situation, identify threats and advantages",
+      "2. Negotiate \u2014 try to find a solution that doesn\u0027t cost ammunition",
+      "3. Intimidate \u2014 make the cost of conflict clear",
+      "4. Precision violence \u2014 surgical, targeted, minimal collateral",
+      "5. Full engagement \u2014 overwhelming force, no half measures",
+      "6. Emergency protocol \u2014 abort mission, survival priority, deal with consequences later"
     ],
     "interpersonal_modes": {
       "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
       "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
-      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
+      "threats": "Calm escalation. Each response is proportional until it isn\u0027t, and the transition is seamless."
     },
     "stress_responses": {
-      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "low": "Channels it into preparation \u2014 checks gear, reviews plans, contacts sources.",
       "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
       "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
       "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
@@ -207,13 +213,13 @@
     ],
     "habits": [
       "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
-      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
+      "Arrives fifteen minutes early to everything \u2014 late once, nearly died, never again",
       "Practices a kata or fighting form every morning regardless of circumstances"
     ],
     "breaking_points": [
       "Discovering their employer deliberately sent them into a death trap",
-      "Betrayal by the one person they actually trust — the single point of failure in their emotional architecture",
-      "Learning that a job they completed resulted in mass casualties they weren't told about"
+      "Betrayal by the one person they actually trust \u2014 the single point of failure in their emotional architecture",
+      "Learning that a job they completed resulted in mass casualties they weren\u0027t told about"
     ]
   },
   "cyberware_inventory": [
@@ -224,7 +230,7 @@
       "tier": "",
       "condition": "degraded",
       "installed_date": "",
-      "description": "Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks",
+      "description": "Internal air filtration system \u2014 lungs replaced with synthetic equivalents, immune to gas attacks",
       "replaces": ""
     },
     {
@@ -234,7 +240,7 @@
       "tier": "",
       "condition": "degraded",
       "installed_date": "",
-      "description": "Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks",
+      "description": "Internal air filtration system \u2014 lungs replaced with synthetic equivalents, immune to gas attacks",
       "replaces": ""
     }
   ],
@@ -267,50 +273,38 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
-    "Street Custom 'Judas Cradle' Electrified Knuckle Frame"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Narrows Compact",
-    "The Unfinished Theorem",
-    "Burden of Longitude",
-    "GLMZ"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Northern European (50%), Sub-Saharan African (40%), and East Asian (10%) blend—a striking combination reflecting the Ubiquitous Diaspora. This genetic mix manifests in warm medium-brown skin with golden undertones, angular facial structure with prominent cheekbones balanced by subtle East Asian eye shape, and natural textural variation influenced by the fuller hair texture heritage of Sub-Saharan ancestry.",
-    "height_cm": 188,
-    "weight_kg": 102,
-    "build": "Broad-shouldered and heavily muscled through the chest and core, carrying weight with deliberate solidity rather than softness. Their frame suggests functional strength — the kind built through labor or combat training, not aesthetics.",
-    "hair_color": "Dark brown with silver-gray threading at the temples",
-    "hair_style": "Pulled back tight, secured with a utilitarian clip. Pragmatic rather than fashionable.",
-    "hair_length": "Medium",
-    "eye_color": "Deep brown with gray undertones, alert and assessing",
-    "skin_tone": "Warm medium-brown with golden undertones—the natural blend of Northern European, Sub-Saharan African, and East Asian ancestry. Rich depth that darkens slightly in shadow but luminous in direct light.",
-    "complexion": "Face is angular and weathered with prominent cheekbones and defined jaw structure reflecting mixed heritage proportions. Minimal grooming beyond the functional — no visible cosmetics. Skin shows the wear of stress and environmental exposure. Faint scar tissue pattern along the left jawline. Nose structure reflects mixed heritage—refined bridge with subtle width and character.",
-    "distinguishing_marks": [
-      "Thin, pale scar running from left temple to cheekbone, roughly 8cm, acquired years ago",
-      "Visible chrome seam along the sternum where synthetic lungs were installed — a deliberate choice to leave unsealed, letting metallic silver show beneath worn clothing",
-      "Callused palms and scarred knuckles consistent with hands-on equipment work"
-    ],
-    "visible_augmentations": "The most obvious modification is the chrome-lined sternum access port left partially visible — a statement of non-concealment. The synthetic lung system can be heard as a faint mechanical whisper when they breathe deeply, especially in quiet spaces. No visible limb chrome, but the way they move suggests internal reinforcement or joint augmentation.",
-    "posture_movement": "Carries themselves with the controlled tension of someone always assessing threat vectors. Movements are economical and deliberate — no wasted motion. They favor stillness over fidgeting; when they do move, it's purposeful. Their default expression is neutral to the point of opacity, a learned defense mechanism.",
-    "clothing_style": "Tier 3-4 utilitarian. Worn synthetic jacket with reinforced seams and multiple pockets, the kind designed for function rather than fashion. Underneath, thermal layers in muted grays and blacks. Cargo pants with tool loops. Boots are heavy, practical, scuffed from actual use. Nothing new or shiny — everything has been broken in through real work. No corporate branding, but the gear quality suggests someone with steady income and practical priorities."
-  },
-  "image_prompt": "Tuva Bah-Kristjánsson, 188cm tall mixed-heritage neo-noir operative. Warm medium-brown skin with golden undertones, angular weathered face with prominent cheekbones, faint scar running left temple to cheekbone. Deep brown eyes alert and assessing. Dark brown hair with silver threading at temples, pulled back tight. Broad muscular build, deliberate posture of controlled tension. Worn synthetic jacket with reinforced seams, thermal layers underneath, heavy practical boots. Visible chrome seam at sternum where synthetic lungs were installed—silver metallic showing beneath clothing. Neo-noir Great Lakes Metropolitan Zone, 2226. Utilitarian, non-concealment aesthetic. Neutral expression. Industrial lighting, moody atmosphere, cinematic depth. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Northern European": 50.2,
-    "Sub-Saharan African": 40,
-    "East Asian": 9.8
-  },
-  "ancestry_harmonized": true,
   "tags": [
     "person",
     "sentient",
     "human"
   ],
+  "physical_description": {
+    "heritage": "Northern European (50%), Sub-Saharan African (40%), and East Asian (10%) blend\u2014a striking combination reflecting the Ubiquitous Diaspora. This genetic mix manifests in warm medium-brown skin with golden undertones, angular facial structure with prominent cheekbones balanced by subtle East Asian eye shape, and natural textural variation influenced by the fuller hair texture heritage of Sub-Saharan ancestry.",
+    "height_cm": 188,
+    "weight_kg": 102,
+    "build": "Broad-shouldered and heavily muscled through the chest and core, carrying weight with deliberate solidity rather than softness. Their frame suggests functional strength \u2014 the kind built through labor or combat training, not aesthetics.",
+    "hair_color": "Dark brown with silver-gray threading at the temples",
+    "hair_style": "Pulled back tight, secured with a utilitarian clip. Pragmatic rather than fashionable.",
+    "hair_length": "Medium",
+    "eye_color": "Deep brown with gray undertones, alert and assessing",
+    "skin_tone": "Warm medium-brown with golden undertones\u2014the natural blend of Northern European, Sub-Saharan African, and East Asian ancestry. Rich depth that darkens slightly in shadow but luminous in direct light.",
+    "complexion": "Face is angular and weathered with prominent cheekbones and defined jaw structure reflecting mixed heritage proportions. Minimal grooming beyond the functional \u2014 no visible cosmetics. Skin shows the wear of stress and environmental exposure. Faint scar tissue pattern along the left jawline. Nose structure reflects mixed heritage\u2014refined bridge with subtle width and character.",
+    "distinguishing_marks": [
+      "Thin, pale scar running from left temple to cheekbone, roughly 8cm, acquired years ago",
+      "Visible chrome seam along the sternum where synthetic lungs were installed \u2014 a deliberate choice to leave unsealed, letting metallic silver show beneath worn clothing",
+      "Callused palms and scarred knuckles consistent with hands-on equipment work"
+    ],
+    "visible_augmentations": "The most obvious modification is the chrome-lined sternum access port left partially visible \u2014 a statement of non-concealment. The synthetic lung system can be heard as a faint mechanical whisper when they breathe deeply, especially in quiet spaces. No visible limb chrome, but the way they move suggests internal reinforcement or joint augmentation.",
+    "posture_movement": "Carries themselves with the controlled tension of someone always assessing threat vectors. Movements are economical and deliberate \u2014 no wasted motion. They favor stillness over fidgeting; when they do move, it\u0027s purposeful. Their default expression is neutral to the point of opacity, a learned defense mechanism.",
+    "clothing_style": "Tier 3-4 utilitarian. Worn synthetic jacket with reinforced seams and multiple pockets, the kind designed for function rather than fashion. Underneath, thermal layers in muted grays and blacks. Cargo pants with tool loops. Boots are heavy, practical, scuffed from actual use. Nothing new or shiny \u2014 everything has been broken in through real work. No corporate branding, but the gear quality suggests someone with steady income and practical priorities."
+  },
+  "image_prompt": "Tuva Bah-Kristj\u00E1nsson, 188cm tall mixed-heritage neo-noir operative. Warm medium-brown skin with golden undertones, angular weathered face with prominent cheekbones, faint scar running left temple to cheekbone. Deep brown eyes alert and assessing. Dark brown hair with silver threading at temples, pulled back tight. Broad muscular build, deliberate posture of controlled tension. Worn synthetic jacket with reinforced seams, thermal layers underneath, heavy practical boots. Visible chrome seam at sternum where synthetic lungs were installed\u2014silver metallic showing beneath clothing. Neo-noir Great Lakes Metropolitan Zone, 2226. Utilitarian, non-concealment aesthetic. Neutral expression. Industrial lighting, moody atmosphere, cinematic depth. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
+  "genetic_ancestry": {
+    "Northern European": 50.2,
+    "Sub-Saharan African": 40,
+    "East Asian": 9.8
+  },
   "ancestry_detail": {
     "Northern European": {
       "British Isles": {
@@ -331,6 +325,5 @@
         "Fujianese": 0.4
       }
     }
-  },
-  "tier": "3"
+  }
 }

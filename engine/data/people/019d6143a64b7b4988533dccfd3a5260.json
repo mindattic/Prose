@@ -1,16 +1,18 @@
 {
   "id": "019d6143a64b7b4988533dccfd3a5260",
+  "rating": 70,
+  "vote_count": 1,
   "type": "character",
-  "name": "Flux Thorvaldsdóttir",
+  "name": "Flux Thorvaldsd\u00F3ttir",
   "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Evidence removal and scene sanitation — cleaner",
+  "role": "Evidence removal and scene sanitation \u2014 cleaner",
   "age": 45,
   "status": "active",
-  "location": "The Narrows — cramped residential corridors between megastructures, near Armitage and Milwaukee",
-  "description": "Flux Thorvaldsdóttir is slight and easy to overlook, which is exactly the point. At 45, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a cleaner out of The Narrows, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nFlux Thorvaldsdóttir operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "location": "The Narrows \u2014 cramped residential corridors between megastructures, near Armitage and Milwaukee",
+  "description": "Flux Thorvaldsd\u00F3ttir is slight and easy to overlook, which is exactly the point. At 45, his face carries the layered heritage of generations of diaspora mixing \u2014 features that resist easy categorization and reward attention. The chrome is visible \u2014 smartgun link in right forearm \u2014 interfaces directly with compatible weapons \u2014 and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a cleaner out of The Narrows, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nFlux Thorvaldsd\u00F3ttir operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.96,
@@ -21,50 +23,54 @@
       "ghost": 0.85
     },
     "core_fears": [
-      "Being captured alive — death is preferable to corporate interrogation",
-      "Betrayal by someone they trust — the only currency that matters",
-      "Losing their edge to age — the body slows before the mind accepts it"
+      "Being captured alive \u2014 death is preferable to corporate interrogation",
+      "Betrayal by someone they trust \u2014 the only currency that matters",
+      "Losing their edge to age \u2014 the body slows before the mind accepts it"
     ],
     "core_desires": [
-      "A crew worth trusting — people who stay when the shooting starts",
-      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ"
+      "A crew worth trusting \u2014 people who stay when the shooting starts",
+      "Reputation \u2014 to be the name fixers whisper when the job absolutely cannot fail",
+      "Enough Quanta to buy out of the life \u2014 a clean identity and passage out of GLMZ"
     ],
     "coping_mechanisms": [
-      "Overwork — takes every contract offered because idleness invites thinking",
-      "Connection — finds someone to talk to, even if it's a bartender or a cat",
-      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring"
+      "Overwork \u2014 takes every contract offered because idleness invites thinking",
+      "Connection \u2014 finds someone to talk to, even if it\u0027s a bartender or a cat",
+      "Drinks methodically \u2014 not to get drunk, to maintain a specific level of not-caring"
     ],
     "blind_spots": [
       "Mistakes loyalty for weakness in others and cynicism for strength in themselves",
-      "Thinks speed can substitute for planning because it's worked so far",
-      "Mistakes pattern recognition for wisdom — sees connections that aren't there"
+      "Thinks speed can substitute for planning because it\u0027s worked so far",
+      "Mistakes pattern recognition for wisdom \u2014 sees connections that aren\u0027t there"
     ],
     "secret": "Liora Mori-Sefa murdered their mentor to take their position and contacts. It was staged as a job gone wrong. The guilt has calcified into something worse than guilt."
   },
   "speech_patterns": {
-    "vocabulary": "Multilingual fragments — switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
+    "vocabulary": "Multilingual fragments \u2014 switches languages mid-thought, not for privacy but because some concepts only fit in specific tongues.",
     "cadence": "Staccato bursts separated by calculating silences.",
     "verbal_tics": [
-      "Uses 'we' instead of 'I' — either royal or dissociative, nobody asks",
-      "Whispers when angry — the quieter the voice, the worse the situation"
+      "Uses \u0027we\u0027 instead of \u0027I\u0027 \u2014 either royal or dissociative, nobody asks",
+      "Whispers when angry \u2014 the quieter the voice, the worse the situation"
     ],
     "example_lines": [
-      "\"I make problems disappear. The mess is temporary. The clean is permanent.\"",
-      "\"There was never anyone here. There was never anything here. Are we clear?\"",
-      "\"Forensics is a conversation between evidence and investigators. I end that conversation.\""
-    ]
+      "\u0022I make problems disappear. The mess is temporary. The clean is permanent.\u0022",
+      "\u0022There was never anyone here. There was never anything here. Are we clear?\u0022",
+      "\u0022Forensics is a conversation between evidence and investigators. I end that conversation.\u0022"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "A crew member from Liora Mori-Sefa's past shows up in GLMZ, carrying old grievances and new chrome",
+    "A crew member from Liora Mori-Sefa\u0027s past shows up in GLMZ, carrying old grievances and new chrome",
     "Liora Mori-Sefa discovers a job they completed last year was a setup for something much larger and much worse",
-    "Liora Mori-Sefa is offered a contract that would clear all their debts — the target is someone they respect"
+    "Liora Mori-Sefa is offered a contract that would clear all their debts \u2014 the target is someone they respect"
   ],
-  "narrative_function": "Liora Mori-Sefa is a pressure point — the kind of character whose choices ripple outward. When he makes a decision, other people's lives change. That weight is the engine of his stories.",
-  "augmentations": "Smartgun link in right forearm — interfaces directly with compatible weapons. Geneware muscle density treatment — looks natural, hits like chrome",
-  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
-  "affiliation": "Semi-independent — recurring contracts with mid-tier fixers",
+  "narrative_function": "Liora Mori-Sefa is a pressure point \u2014 the kind of character whose choices ripple outward. When he makes a decision, other people\u0027s lives change. That weight is the engine of his stories.",
+  "augmentations": "Smartgun link in right forearm \u2014 interfaces directly with compatible weapons. Geneware muscle density treatment \u2014 looks natural, hits like chrome",
+  "daily_life": "Keeps a rigid daily structure \u2014 wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Semi-independent \u2014 recurring contracts with mid-tier fixers",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -153,10 +159,10 @@
     },
     "strengths": [
       "natural leadership presence",
-      "mechanical aptitude — can repair or modify almost anything"
+      "mechanical aptitude \u2014 can repair or modify almost anything"
     ],
     "weaknesses": [
-      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "augmentation dependency \u2014 performance drops sharply if chrome malfunctions",
       "difficulty with authority figures"
     ],
     "tags": [
@@ -174,41 +180,41 @@
     "decision_rules": [
       "Will work with anyone once. Second time requires vouching from someone trusted.",
       "Will not betray a client who paid in full, regardless of better offers",
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy"
+      "Maintains a personal blacklist of clients who\u0027ve burned runners \u2014 checks it religiously",
+      "Never works with the same crew twice in a row \u2014 pattern avoidance as survival strategy"
     ],
     "escalation_ladder": [
-      "1. Assess — read the situation, identify threats and advantages",
-      "2. Negotiate — try to find a solution that doesn't cost ammunition",
-      "3. Intimidate — make the cost of conflict clear",
-      "4. Precision violence — surgical, targeted, minimal collateral",
-      "5. Full engagement — overwhelming force, no half measures",
-      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+      "1. Assess \u2014 read the situation, identify threats and advantages",
+      "2. Negotiate \u2014 try to find a solution that doesn\u0027t cost ammunition",
+      "3. Intimidate \u2014 make the cost of conflict clear",
+      "4. Precision violence \u2014 surgical, targeted, minimal collateral",
+      "5. Full engagement \u2014 overwhelming force, no half measures",
+      "6. Emergency protocol \u2014 abort mission, survival priority, deal with consequences later"
     ],
     "interpersonal_modes": {
       "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
       "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
       "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
     },
     "stress_responses": {
       "low": "Heightened awareness, sharper focus. Low stress is fuel.",
-      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "medium": "Physical agitation \u2014 pacing, fidgeting, compulsive equipment checks.",
       "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
       "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
     },
     "contradictions": [
       "Values loyalty intensely but has betrayed someone in the past to survive",
-      "Advocates caution to others but takes insane risks personally — double standard they can't see"
+      "Advocates caution to others but takes insane risks personally \u2014 double standard they can\u0027t see"
     ],
     "habits": [
-      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle",
-      "Talks to their gear — names weapons, thanks tools, treats equipment as companions",
-      "Counts ammunition obsessively — knows the exact round count at all times"
+      "Takes a specific route home every time, varying only one block per trip \u2014 paranoia as lifestyle",
+      "Talks to their gear \u2014 names weapons, thanks tools, treats equipment as companions",
+      "Counts ammunition obsessively \u2014 knows the exact round count at all times"
     ],
     "breaking_points": [
-      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario",
-      "Losing their primary augmentation — the one that defines their professional identity"
+      "Their body rejecting their cyberware \u2014 chrome rot, immune rejection, the nightmare scenario",
+      "Losing their primary augmentation \u2014 the one that defines their professional identity"
     ]
   },
   "cyberware_inventory": [
@@ -219,7 +225,7 @@
       "tier": "",
       "condition": "good",
       "installed_date": "",
-      "description": "Smartgun link in right forearm — interfaces directly with compatible weapons",
+      "description": "Smartgun link in right forearm \u2014 interfaces directly with compatible weapons",
       "replaces": ""
     },
     {
@@ -229,7 +235,7 @@
       "tier": "",
       "condition": "refurbished",
       "installed_date": "",
-      "description": "Geneware muscle density treatment — looks natural, hits like chrome",
+      "description": "Geneware muscle density treatment \u2014 looks natural, hits like chrome",
       "replaces": ""
     }
   ],
@@ -262,53 +268,39 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Angry Mary' Aerosol Flamethrower"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Narrows Compact",
-    "The Heritage Vault",
-    "Diaspora Table",
-    "Stratum",
-    "Slagworks Industrial",
-    "Pellucid Systems",
-    "GLMZ"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Predominantly East Asian (50.9%) with substantial Middle Eastern (36.0%) and notable Sub-Saharan African (13.1%) ancestry. The result is a phenotype that blends East Asian bone structure with Middle Eastern depth and African warmth — a genuinely mixed-heritage appearance reflecting the Ubiquitous Diaspora. Features carry the precision of East Asian genetics tempered by the richness of Middle Eastern and African undertones.",
-    "height_cm": 168,
-    "weight_kg": 62,
-    "build": "Lean and economical, deceptively compact. Geneware muscle density treatment gives his frame a corded, efficient quality — no excess, all functional. Moves like someone who has learned to take impact without broadcasting it.",
-    "hair_color": "Dark brown, threaded with premature silver at temples",
-    "hair_style": "Pulled back tight, practical. Kept short enough not to interfere with work.",
-    "hair_length": "Short",
-    "eye_color": "Dark brown, alert and measuring",
-    "skin_tone": "Deep warm golden-brown — East Asian undertones enriched by Middle Eastern depth and African warmth creating a sophisticated, even tone with subtle luminosity. Not pale, not dark, but a complex blending that reads as naturally intermediate.",
-    "complexion": "Angular face with defined cheekbones and precise jawline reflecting East Asian structure deepened by Middle Eastern and African features. Eyes set with characteristic East Asian geometry but warmed by broader facial proportions. Skin is weathered but meticulously maintained — the grooming of someone who understands that invisibility requires not looking neglected. No facial hair. Small white scar through left eyebrow, clean edge. Two thin parallel scars on right cheekbone, deliberately preserved rather than removed.",
-    "distinguishing_marks": [
-      "White surgical scar running through left eyebrow, approximately 2cm, edge clean",
-      "Two parallel scars on right cheekbone beneath eye, each roughly 1.5cm, deliberate preservation suggests they serve as personal marks or reminders",
-      "Faint burn marks on left inner wrist, barely visible, old enough to be nearly healed",
-      "Small tattoo on inside of right forearm near smartgun link — geometric pattern, private placement"
-    ],
-    "visible_augmentations": "Smartgun link in right forearm — visible as a raised port array beneath the skin with faint neural interface scarring. The chrome is polished stainless, no attempt to conceal it. Geneware muscle density treatment is invisible but evident in the way muscle definition appears without obvious bulk — functional rather than aesthetic augmentation.",
-    "posture_movement": "Still. Conserves motion. Walks with minimal upper body movement, lets hips lead. Stands in corners when stationary, back always positioned with sightline control. Doesn't fidget. His stillness is his primary invisibility asset — easier to overlook someone who isn't performing visibility.",
-    "clothing_style": "Tier 3-4 utilitarian. Charcoal gray tech-weave utility jacket with reinforced forearm panels — practical, worn enough to be invisible but maintained. Black cargo pants with custom pockets. Steel-toed boots, scuffed but functional. Thin high-neck undershirt in black, covers any subdermal scarring. No branding visible. Everything selected for silence — no rustling fabrics, muted colors, nothing that broadcasts presence."
-  },
-  "image_prompt": "Flux Thorvaldsdóttir, androgynous operative with mixed East Asian, Middle Eastern, and Sub-Saharan African heritage, deep warm golden-brown skin tone with angular cheekbones and precise jawline. Dark brown eyes with alert, measuring gaze. Dark brown hair with silver at temples, pulled back tight. Visible smartgun link port array in right forearm with polished stainless chrome. White scar through left eyebrow, two parallel scars on right cheekbone. Lean 168cm frame with corded muscle definition from geneware enhancement. Wearing charcoal gray tech-weave utility jacket with reinforced forearm panels, black cargo pants, scuffed steel-toed boots, high-neck black undershirt. Standing in corner with minimal posture, back to wall, sightline control position. GLMZ Great Lakes Metropolitan Zone setting, neon-lit industrial backdrop, moody shadows, cool blue-gray lighting with accent highlights on augmentation ports. Expression neutral and measured. Silent operative aesthetic, invisible in plainness, functional over flashy. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "East Asian": 50.9,
-    "Middle Eastern": 36,
-    "Sub-Saharan African": 13.1
-  },
-  "ancestry_harmonized": true,
   "tags": [
     "person",
     "sentient",
     "human"
   ],
+  "physical_description": {
+    "heritage": "Predominantly East Asian (50.9%) with substantial Middle Eastern (36.0%) and notable Sub-Saharan African (13.1%) ancestry. The result is a phenotype that blends East Asian bone structure with Middle Eastern depth and African warmth \u2014 a genuinely mixed-heritage appearance reflecting the Ubiquitous Diaspora. Features carry the precision of East Asian genetics tempered by the richness of Middle Eastern and African undertones.",
+    "height_cm": 168,
+    "weight_kg": 62,
+    "build": "Lean and economical, deceptively compact. Geneware muscle density treatment gives his frame a corded, efficient quality \u2014 no excess, all functional. Moves like someone who has learned to take impact without broadcasting it.",
+    "hair_color": "Dark brown, threaded with premature silver at temples",
+    "hair_style": "Pulled back tight, practical. Kept short enough not to interfere with work.",
+    "hair_length": "Short",
+    "eye_color": "Dark brown, alert and measuring",
+    "skin_tone": "Deep warm golden-brown \u2014 East Asian undertones enriched by Middle Eastern depth and African warmth creating a sophisticated, even tone with subtle luminosity. Not pale, not dark, but a complex blending that reads as naturally intermediate.",
+    "complexion": "Angular face with defined cheekbones and precise jawline reflecting East Asian structure deepened by Middle Eastern and African features. Eyes set with characteristic East Asian geometry but warmed by broader facial proportions. Skin is weathered but meticulously maintained \u2014 the grooming of someone who understands that invisibility requires not looking neglected. No facial hair. Small white scar through left eyebrow, clean edge. Two thin parallel scars on right cheekbone, deliberately preserved rather than removed.",
+    "distinguishing_marks": [
+      "White surgical scar running through left eyebrow, approximately 2cm, edge clean",
+      "Two parallel scars on right cheekbone beneath eye, each roughly 1.5cm, deliberate preservation suggests they serve as personal marks or reminders",
+      "Faint burn marks on left inner wrist, barely visible, old enough to be nearly healed",
+      "Small tattoo on inside of right forearm near smartgun link \u2014 geometric pattern, private placement"
+    ],
+    "visible_augmentations": "Smartgun link in right forearm \u2014 visible as a raised port array beneath the skin with faint neural interface scarring. The chrome is polished stainless, no attempt to conceal it. Geneware muscle density treatment is invisible but evident in the way muscle definition appears without obvious bulk \u2014 functional rather than aesthetic augmentation.",
+    "posture_movement": "Still. Conserves motion. Walks with minimal upper body movement, lets hips lead. Stands in corners when stationary, back always positioned with sightline control. Doesn\u0027t fidget. His stillness is his primary invisibility asset \u2014 easier to overlook someone who isn\u0027t performing visibility.",
+    "clothing_style": "Tier 3-4 utilitarian. Charcoal gray tech-weave utility jacket with reinforced forearm panels \u2014 practical, worn enough to be invisible but maintained. Black cargo pants with custom pockets. Steel-toed boots, scuffed but functional. Thin high-neck undershirt in black, covers any subdermal scarring. No branding visible. Everything selected for silence \u2014 no rustling fabrics, muted colors, nothing that broadcasts presence."
+  },
+  "image_prompt": "Flux Thorvaldsd\u00F3ttir, androgynous operative with mixed East Asian, Middle Eastern, and Sub-Saharan African heritage, deep warm golden-brown skin tone with angular cheekbones and precise jawline. Dark brown eyes with alert, measuring gaze. Dark brown hair with silver at temples, pulled back tight. Visible smartgun link port array in right forearm with polished stainless chrome. White scar through left eyebrow, two parallel scars on right cheekbone. Lean 168cm frame with corded muscle definition from geneware enhancement. Wearing charcoal gray tech-weave utility jacket with reinforced forearm panels, black cargo pants, scuffed steel-toed boots, high-neck black undershirt. Standing in corner with minimal posture, back to wall, sightline control position. GLMZ Great Lakes Metropolitan Zone setting, neon-lit industrial backdrop, moody shadows, cool blue-gray lighting with accent highlights on augmentation ports. Expression neutral and measured. Silent operative aesthetic, invisible in plainness, functional over flashy. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
+  "genetic_ancestry": {
+    "East Asian": 50.9,
+    "Middle Eastern": 36,
+    "Sub-Saharan African": 13.1
+  },
   "ancestry_detail": {
     "East Asian": {
       "Chinese": {
@@ -340,6 +332,5 @@
         "Kenyan": 0.1
       }
     }
-  },
-  "tier": "1"
+  }
 }

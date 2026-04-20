@@ -1,12 +1,14 @@
 {
   "id": "019d6143aa5b700bb808bbe26668d64e",
+  "rating": 50,
+  "vote_count": 2,
   "name": "Zheng-Dao Heavy Industries Zero-Point Energy Research Platform",
   "brand_name": "Zheng",
   "product_name": "Zheng-Dao Heavy Industries Zero-Point Energy Research Platform",
   "type": "technology",
   "aliases": [],
   "subcategory": "energy",
-  "description": "An experimental physics research facility investigating the extraction of usable energy from quantum vacuum fluctuations — the fundamental energy inherent in empty space itself. The ZPERP has demonstrated energy extraction at laboratory scale, producing measurable power output from what appears to be nothing, but the process requires more energy to initiate than it produces in current configurations. Zheng-Dao's research roadmap projects net positive energy extraction within a decade, which would represent a literally infinite energy source. The physics community is divided on whether the research is groundbreaking or a measurement error.",
+  "description": "An experimental physics research facility investigating the extraction of usable energy from quantum vacuum fluctuations \u2014 the fundamental energy inherent in empty space itself. The ZPERP has demonstrated energy extraction at laboratory scale, producing measurable power output from what appears to be nothing, but the process requires more energy to initiate than it produces in current configurations. Zheng-Dao\u0027s research roadmap projects net positive energy extraction within a decade, which would represent a literally infinite energy source. The physics community is divided on whether the research is groundbreaking or a measurement error.",
   "tier_availability": "Tier 5",
   "developers": [
     "ZHENG-DAO HEAVY INDUSTRIES"
@@ -22,10 +24,10 @@
     "Post-scarcity energy economics",
     "Unlimited power for all applications"
   ],
-  "social_impact": "The ZPERP represents either the most important physics discovery in human history or an extremely expensive measurement error, and the distinction has multi-trillion-credit implications. If zero-point energy extraction becomes viable, every existing energy technology — fusion, solar, geothermal — becomes obsolete overnight. Ouroboros Energy, Zheng-Dao's energy competitor, has invested heavily in discrediting the research while simultaneously pursuing their own zero-point program in secret.",
+  "social_impact": "The ZPERP represents either the most important physics discovery in human history or an extremely expensive measurement error, and the distinction has multi-trillion-credit implications. If zero-point energy extraction becomes viable, every existing energy technology \u2014 fusion, solar, geothermal \u2014 becomes obsolete overnight. Ouroboros Energy, Zheng-Dao\u0027s energy competitor, has invested heavily in discrediting the research while simultaneously pursuing their own zero-point program in secret.",
   "story_hooks": [
-    "The ZPERP has achieved net positive energy extraction in a single test run — the result has been classified immediately, and the research team has been isolated from outside contact.",
-    "A ZPERP experiment produced an unexpected side effect — a localized region of space where physical constants appear to be slightly different from normal, suggesting that manipulating vacuum energy alters the fabric of reality."
+    "The ZPERP has achieved net positive energy extraction in a single test run \u2014 the result has been classified immediately, and the research team has been isolated from outside contact.",
+    "A ZPERP experiment produced an unexpected side effect \u2014 a localized region of space where physical constants appear to be slightly different from normal, suggesting that manipulating vacuum energy alters the fabric of reality."
   ],
   "tags": [
     "energy",
@@ -35,10 +37,6 @@
     "night",
     "tier 5"
   ],
-  "parent_corponation": "",
-  "related_entities": [
-    "Irontide Tidal Energy",
-    "Ouroboros Energy",
-    "Zheng-dao Bioelectric"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

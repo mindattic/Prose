@@ -1,16 +1,18 @@
 {
   "id": "019d6143a62b7d8d958111b3281be654",
+  "rating": 70,
+  "vote_count": 1,
   "type": "character",
-  "name": "Chidi Lahlou-Čabarkapa",
+  "name": "Chidi Lahlou-\u010Cabarkapa",
   "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Corporate espionage and data exfiltration — data thief",
+  "role": "Corporate espionage and data exfiltration \u2014 data thief",
   "age": 52,
   "status": "active",
-  "location": "Ashfield — former residential district, half-burned, now squatter territory, near Halsted and Chicago Ave",
-  "description": "Chidi Lahlou-Čabarkapa is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 52, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — neural dampener — blocks external hacking attempts, passive ice in the brain — and he makes no effort to hide it.\n\nHe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a data thief out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Chidi Lahlou-Čabarkapa is known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "location": "Ashfield \u2014 former residential district, half-burned, now squatter territory, near Halsted and Chicago Ave",
+  "description": "Chidi Lahlou-\u010Cabarkapa is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 52, there\u0027s something unfinished about his face, like a sculpture the artist walked away from \u2014 striking rather than beautiful. The chrome is visible \u2014 neural dampener \u2014 blocks external hacking attempts, passive ice in the brain \u2014 and he makes no effort to hide it.\n\nHe came up through the Gray Zone\u0027s informal apprentice system, learning the trade from runners who didn\u0027t survive long enough to see him surpass them. He works as a data thief out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Chidi Lahlou-\u010Cabarkapa is known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
       "wound": 0.48,
@@ -23,48 +25,52 @@
     "core_fears": [
       "Losing control of their own body to a hacker or malfunctioning cyberware",
       "Dying alone in some alley and nobody noticing for weeks",
-      "Going cyberpsycho — losing the boundary between human and machine"
+      "Going cyberpsycho \u2014 losing the boundary between human and machine"
     ],
     "core_desires": [
-      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
-      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
-      "Power — enough leverage that nobody ever threatens them again"
+      "Enough Quanta to buy out of the life \u2014 a clean identity and passage out of GLMZ",
+      "Reputation \u2014 to be the name fixers whisper when the job absolutely cannot fail",
+      "Power \u2014 enough leverage that nobody ever threatens them again"
     ],
     "coping_mechanisms": [
-      "Connection — finds someone to talk to, even if it's a bartender or a cat",
-      "Art — draws, paints, or sculpts in private; the violence goes somewhere constructive",
-      "Overwork — takes every contract offered because idleness invites thinking"
+      "Connection \u2014 finds someone to talk to, even if it\u0027s a bartender or a cat",
+      "Art \u2014 draws, paints, or sculpts in private; the violence goes somewhere constructive",
+      "Overwork \u2014 takes every contract offered because idleness invites thinking"
     ],
     "blind_spots": [
       "Assumes everyone has an angle because they always have an angle",
-      "Trusts technology more than people — machines don't betray",
+      "Trusts technology more than people \u2014 machines don\u0027t betray",
       "Assumes the worst in corporate people, missing the rare ones who could be allies"
     ],
     "secret": "Ihaia Mori-Sefa witnessed a massacre during a corporate dispute and has evidence stored in a dead drop. Publishing it would expose powerful people. Keeping it is leverage and liability."
   },
   "speech_patterns": {
-    "vocabulary": "Terse to the point of rudeness. Treats words like ammunition — expensive and not to be wasted.",
+    "vocabulary": "Terse to the point of rudeness. Treats words like ammunition \u2014 expensive and not to be wasted.",
     "cadence": "Staccato bursts separated by calculating silences.",
     "verbal_tics": [
-      "Whispers when angry — the quieter the voice, the worse the situation",
+      "Whispers when angry \u2014 the quieter the voice, the worse the situation",
       "Uses technical jargon for everything, including emotions"
     ],
     "example_lines": [
-      "\"Your firewalls are decorative. Like curtains on a submarine.\"",
-      "\"I copy things. The original owners rarely appreciate the compliment.\"",
-      "\"Data wants to be free. I just charge a facilitation fee.\""
-    ]
+      "\u0022Your firewalls are decorative. Like curtains on a submarine.\u0022",
+      "\u0022I copy things. The original owners rarely appreciate the compliment.\u0022",
+      "\u0022Data wants to be free. I just charge a facilitation fee.\u0022"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "Ihaia Mori-Sefa's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
+    "Ihaia Mori-Sefa\u0027s augmentations begin malfunctioning in the field \u2014 sabotage or degradation, and either answer is bad",
     "A high-paying contract turns out to target someone Ihaia Mori-Sefa owes a personal debt to",
-    "Ihaia Mori-Sefa is offered a contract that would clear all their debts — the target is someone they respect"
+    "Ihaia Mori-Sefa is offered a contract that would clear all their debts \u2014 the target is someone they respect"
   ],
   "narrative_function": "As a data thief, Ihaia Mori-Sefa embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
-  "augmentations": "Neural dampener — blocks external hacking attempts, passive ICE in the brain. Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
+  "augmentations": "Neural dampener \u2014 blocks external hacking attempts, passive ICE in the brain. Hydraulic joints in knees and elbows \u2014 absorbs falls, amplifies strikes",
   "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
-  "affiliation": "Freelance — multi-district operator",
+  "affiliation": "Freelance \u2014 multi-district operator",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -153,11 +159,11 @@
     },
     "strengths": [
       "pain tolerance beyond normal limits",
-      "multilingual — speaks 4+ languages fluently"
+      "multilingual \u2014 speaks 4\u002B languages fluently"
     ],
     "weaknesses": [
       "old injury that flares under specific conditions",
-      "augmentation dependency — performance drops sharply if chrome malfunctions",
+      "augmentation dependency \u2014 performance drops sharply if chrome malfunctions",
       "difficulty with authority figures"
     ],
     "tags": [
@@ -173,42 +179,42 @@
   },
   "behavioral": {
     "decision_rules": [
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
+      "Maintains a personal blacklist of clients who\u0027ve burned runners \u2014 checks it religiously",
       "Always verifies target identity independently before lethal contracts",
-      "Refuses contracts that require operating inside The Spires — too much surveillance",
+      "Refuses contracts that require operating inside The Spires \u2014 too much surveillance",
       "Never discusses active contracts with anyone not directly involved"
     ],
     "escalation_ladder": [
-      "1. Assess — read the situation, identify threats and advantages",
-      "2. Negotiate — try to find a solution that doesn't cost ammunition",
-      "3. Intimidate — make the cost of conflict clear",
-      "4. Precision violence — surgical, targeted, minimal collateral",
-      "5. Full engagement — overwhelming force, no half measures",
-      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+      "1. Assess \u2014 read the situation, identify threats and advantages",
+      "2. Negotiate \u2014 try to find a solution that doesn\u0027t cost ammunition",
+      "3. Intimidate \u2014 make the cost of conflict clear",
+      "4. Precision violence \u2014 surgical, targeted, minimal collateral",
+      "5. Full engagement \u2014 overwhelming force, no half measures",
+      "6. Emergency protocol \u2014 abort mission, survival priority, deal with consequences later"
     ],
     "interpersonal_modes": {
       "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
       "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
-      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
+      "threats": "Calm escalation. Each response is proportional until it isn\u0027t, and the transition is seamless."
     },
     "stress_responses": {
-      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "low": "Channels it into preparation \u2014 checks gear, reviews plans, contacts sources.",
       "medium": "Withdrawal. Conversations become monosyllabic. Focus narrows to the immediate problem.",
-      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "high": "Goes quiet. The silence is not calm \u2014 it\u0027s the sound of every contingency being evaluated simultaneously.",
       "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
     },
     "contradictions": [
       "Values loyalty intensely but has betrayed someone in the past to survive",
-      "Advocates caution to others but takes insane risks personally — double standard they can't see"
+      "Advocates caution to others but takes insane risks personally \u2014 double standard they can\u0027t see"
     ],
     "habits": [
       "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
-      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
-      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle"
+      "Sleeps with one hand on a weapon \u2014 has done this for so long it\u0027s not deliberate anymore",
+      "Takes a specific route home every time, varying only one block per trip \u2014 paranoia as lifestyle"
     ],
     "breaking_points": [
-      "Running out of options — no contacts, no money, no safe house, no way out",
+      "Running out of options \u2014 no contacts, no money, no safe house, no way out",
       "Watching someone they trained or mentored die on a job they recommended"
     ]
   },
@@ -220,7 +226,7 @@
       "tier": "",
       "condition": "refurbished",
       "installed_date": "",
-      "description": "Neural dampener — blocks external hacking attempts, passive ICE in the brain",
+      "description": "Neural dampener \u2014 blocks external hacking attempts, passive ICE in the brain",
       "replaces": ""
     },
     {
@@ -230,7 +236,7 @@
       "tier": "",
       "condition": "worn",
       "installed_date": "",
-      "description": "Hydraulic joints in knees and elbows — absorbs falls, amplifies strikes",
+      "description": "Hydraulic joints in knees and elbows \u2014 absorbs falls, amplifies strikes",
       "replaces": ""
     }
   ],
@@ -263,45 +269,34 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower",
-    "Forge-Smith Collective Obsidian Composite Macuahuitl 'Black Teeth'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Unfinished Theorem",
-    "The Nearfield",
-    "Ashfield",
-    "Chicago",
-    "Burden of Longitude",
-    "Neural Palate",
-    "Lazarus LX-2 'Lab Rat'",
-    "Slagworks Industrial",
-    "Pellucid Systems"
-  ],
-  "district": "the Gray Zone",
   "physical_description": {
-    "heritage": "North African (28.3%), Sub-Saharan African (25.4%), South Asian (21.1%), Eastern European (19.1%), and Indigenous American (6.1%) ancestry. This complex genetic blend creates a striking phenotype: deep warm brown skin with layered undertones—golden warmth from North African and South Asian heritage, enriched by mahogany depth from Sub-Saharan African ancestry, with subtle olive complexity from Eastern European genetics. The Indigenous American component adds slight architectural width to the face. High cheekbones and angular structure from North African and South Asian lineages balance against a broader jaw from Sub-Saharan African genetics. The result is a face of considerable symmetry with pronounced bone structure.",
+    "heritage": "North African (28.3%), Sub-Saharan African (25.4%), South Asian (21.1%), Eastern European (19.1%), and Indigenous American (6.1%) ancestry. This complex genetic blend creates a striking phenotype: deep warm brown skin with layered undertones\u2014golden warmth from North African and South Asian heritage, enriched by mahogany depth from Sub-Saharan African ancestry, with subtle olive complexity from Eastern European genetics. The Indigenous American component adds slight architectural width to the face. High cheekbones and angular structure from North African and South Asian lineages balance against a broader jaw from Sub-Saharan African genetics. The result is a face of considerable symmetry with pronounced bone structure.",
     "height_cm": 188,
     "weight_kg": 98,
-    "build": "Broad-shouldered and heavy, muscular without definition — the weight distributed across a frame built for impact absorption. Chest and shoulders dominate; legs are thick and rooted. Carries himself like someone used to absorbing punishment.",
+    "build": "Broad-shouldered and heavy, muscular without definition \u2014 the weight distributed across a frame built for impact absorption. Chest and shoulders dominate; legs are thick and rooted. Carries himself like someone used to absorbing punishment.",
     "hair_color": "Dark brown, graying at temples",
     "hair_style": "Cropped close to scalp, functional, no styling. Salt-and-pepper stubble visible on the sides.",
     "hair_length": "Short",
     "eye_color": "Dark brown, warm undertone",
-    "skin_tone": "Deep warm brown with golden and copper undertones, weathered by sun exposure and Ashfield's particulate air. Rich underlying complexion layered with industrial patina—ashy surface over burnished depth beneath.",
-    "complexion": "Face is broad and angular with pronounced high cheekbones and strong bone definition reflecting the North African and South Asian components, balanced against a heavier, wider jaw from Sub-Saharan African and Indigenous American heritage. Nose broken once and reset imperfectly. Weathered skin with acne scars across shoulders and chest. Mouth set in a neutral line. Eyes are sharp despite the tired creases around them — calculating, not kind.",
+    "skin_tone": "Deep warm brown with golden and copper undertones, weathered by sun exposure and Ashfield\u0027s particulate air. Rich underlying complexion layered with industrial patina\u2014ashy surface over burnished depth beneath.",
+    "complexion": "Face is broad and angular with pronounced high cheekbones and strong bone definition reflecting the North African and South Asian components, balanced against a heavier, wider jaw from Sub-Saharan African and Indigenous American heritage. Nose broken once and reset imperfectly. Weathered skin with acne scars across shoulders and chest. Mouth set in a neutral line. Eyes are sharp despite the tired creases around them \u2014 calculating, not kind.",
     "distinguishing_marks": [
-      "Surgical scar running 3 inches along the right temple where the neural dampener was installed — chrome visible beneath thin skin",
-      "Burn scar across the left forearm, circa 5 inches, pale and old — third-degree, healed without grafting",
+      "Surgical scar running 3 inches along the right temple where the neural dampener was installed \u2014 chrome visible beneath thin skin",
+      "Burn scar across the left forearm, circa 5 inches, pale and old \u2014 third-degree, healed without grafting",
       "Tattoo on right chest: circuit board pattern, faded black ink, circa 20 years old",
       "Laceration scar on left eyebrow, white and thin, pulls the brow slightly higher"
     ],
-    "visible_augmentations": "Neural dampener chrome visible at right temple — a silver-gray subcutaneous ridge running temple to hairline, occasionally catching light. Hydraulic joints in elbows and knees are invisible until movement — slight mechanical precision in joint articulation, faint hydraulic hiss under stress.",
-    "posture_movement": "Stands rooted, weight distributed evenly across both feet — a defensive stance become default. Moves economically, no wasted motion. Shoulders slightly forward, creating a compact silhouette. When sitting, he's coiled rather than relaxed. Turns his whole body to look at things rather than just his head — old habit, neural dampener limits certain directional vulnerabilities.",
-    "clothing_style": "Tier 4-5 utilitarian: reinforced cargo pants in charcoal synth-cotton, pockets weighted with tools and dead drop keys. Worn synthetic leather jacket over a plain dark thermal shirt with the collar cut away to expose the neural dampener scar. Combat boots, scuffed, re-soled twice. No visible logos or corporate wear. Everything is maintenance-ready, replaceable, unremarkable — the uniform of someone who moves through ungoverned space and doesn't want to be remembered."
+    "visible_augmentations": "Neural dampener chrome visible at right temple \u2014 a silver-gray subcutaneous ridge running temple to hairline, occasionally catching light. Hydraulic joints in elbows and knees are invisible until movement \u2014 slight mechanical precision in joint articulation, faint hydraulic hiss under stress.",
+    "posture_movement": "Stands rooted, weight distributed evenly across both feet \u2014 a defensive stance become default. Moves economically, no wasted motion. Shoulders slightly forward, creating a compact silhouette. When sitting, he\u0027s coiled rather than relaxed. Turns his whole body to look at things rather than just his head \u2014 old habit, neural dampener limits certain directional vulnerabilities.",
+    "clothing_style": "Tier 4-5 utilitarian: reinforced cargo pants in charcoal synth-cotton, pockets weighted with tools and dead drop keys. Worn synthetic leather jacket over a plain dark thermal shirt with the collar cut away to expose the neural dampener scar. Combat boots, scuffed, re-soled twice. No visible logos or corporate wear. Everything is maintenance-ready, replaceable, unremarkable \u2014 the uniform of someone who moves through ungoverned space and doesn\u0027t want to be remembered."
   },
   "image_prompt": "GLMZ, deep-skinned man of mixed global heritage with warm brown complexion and golden undertones, age-weathered face with high cheekbones and strong jaw structure, dark brown eyes with calculating gaze, short dark hair graying at temples with stubble. Surgical scar and chrome visible at right temple from neural dampener implant. Broad-shouldered muscular build, 188cm tall, rooted defensive posture. Wearing reinforced charcoal cargo pants and worn synthetic leather jacket over dark thermal shirt with cut collar exposing neural tech scar. Scuffed combat boots. Industrial burn scar on left forearm visible. Tattoo of circuit pattern on chest. Standing in dim industrial setting, particulate air around him, cool neon backlighting catching the chrome of his augmentations, moody and dangerous atmosphere. Neo-noir mercenary aesthetic. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "North African": 28.3,
     "Sub-Saharan African": 25.4,
@@ -309,12 +304,6 @@
     "Eastern European": 19.1,
     "Indigenous American": 6.1
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "North African": {
       "Maghreb": {
@@ -356,6 +345,5 @@
         "Quechua": 6.1
       }
     }
-  },
-  "tier": "2"
+  }
 }

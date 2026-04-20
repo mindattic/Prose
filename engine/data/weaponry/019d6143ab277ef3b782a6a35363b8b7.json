@@ -1,32 +1,34 @@
 {
   "id": "019d6143ab277ef3b782a6a35363b8b7",
-  "name": "Electrostatic Flensing Projector EFP-1 'Skinreader'",
+  "rating": 80,
+  "vote_count": 1,
+  "name": "Electrostatic Flensing Projector EFP-1 \u0027Skinreader\u0027",
   "type": "weapon",
   "aliases": [],
   "category": "energy",
-  "description": "The EFP-1 generates a shaped electrostatic discharge field projected through a parabolic dielectric emitter array, creating a zone of intense charge differential across a target's surface. Unlike simple stun weapons that induce muscle tetany through current passage, the EFP-1's field geometry creates lateral charge migration across the outermost dermal layers, producing a shearing electrostatic force that disrupts the adhesive protein bonds holding epithelial tissue in structural alignment. At low output, this causes intense surface pain and temporary paresthesia. At high output, the effect progresses to partial epidermal separation across exposed skin — a phenomenon the weapon's users describe with clinical understatement as 'flensing.'\n\nThe weapon's targeting system includes a passive bioelectric sensor that reads surface charge signatures to distinguish organic targets from synthetic materials, allowing the EFP-1 to selectively affect unarmored biological tissue while having reduced effect on conductive armor plating — which disperses rather than concentrates the field. This selectivity is a deliberate design feature that makes the weapon particularly effective against lightly clothed or partially armored targets while limiting its utility against fully suited opponents. The dielectric emitter array produces a characteristic crackling hiss during charge buildup, providing approximately 0.8 seconds of audible warning before discharge.\n\nZHENG-DAO BIOELECTRIC developed the EFP-1 under a crowd control contract for an unnamed municipal authority, and its design reflects an interrogation-adjacent philosophy: maximum pain compliance with survivable damage at standard settings. The high-output mode that causes epidermal separation was not in the original specification and emerged from field modifications. ZHENG-DAO officially disavows the modification but has not recalled or redesigned the units in circulation.",
+  "description": "The EFP-1 generates a shaped electrostatic discharge field projected through a parabolic dielectric emitter array, creating a zone of intense charge differential across a target\u0027s surface. Unlike simple stun weapons that induce muscle tetany through current passage, the EFP-1\u0027s field geometry creates lateral charge migration across the outermost dermal layers, producing a shearing electrostatic force that disrupts the adhesive protein bonds holding epithelial tissue in structural alignment. At low output, this causes intense surface pain and temporary paresthesia. At high output, the effect progresses to partial epidermal separation across exposed skin \u2014 a phenomenon the weapon\u0027s users describe with clinical understatement as \u0027flensing.\u0027\n\nThe weapon\u0027s targeting system includes a passive bioelectric sensor that reads surface charge signatures to distinguish organic targets from synthetic materials, allowing the EFP-1 to selectively affect unarmored biological tissue while having reduced effect on conductive armor plating \u2014 which disperses rather than concentrates the field. This selectivity is a deliberate design feature that makes the weapon particularly effective against lightly clothed or partially armored targets while limiting its utility against fully suited opponents. The dielectric emitter array produces a characteristic crackling hiss during charge buildup, providing approximately 0.8 seconds of audible warning before discharge.\n\nZHENG-DAO BIOELECTRIC developed the EFP-1 under a crowd control contract for an unnamed municipal authority, and its design reflects an interrogation-adjacent philosophy: maximum pain compliance with survivable damage at standard settings. The high-output mode that causes epidermal separation was not in the original specification and emerged from field modifications. ZHENG-DAO officially disavows the modification but has not recalled or redesigned the units in circulation.",
   "manufacturer": "ZHENG-DAO BIOELECTRIC",
-  "tier_availability": "Tier 2+ (crowd control variant); Black market (high-output modification)",
+  "tier_availability": "Tier 2\u002B (crowd control variant); Black market (high-output modification)",
   "legality": "Licensed (crowd control variant); Prohibited (high-output modification)",
   "base_technologies": [
     "Shaped electrostatic discharge projection",
     "Bioelectric surface charge sensing",
     "Dielectric field geometry control"
   ],
-  "specifications": "emitter array: Parabolic dielectric array, 7-element\nfield modes: Compliance (pain induction) / Suppression (tetany + disorientation) / Flense (epidermal separation, modified)\ntarget discrimination: Passive bioelectric sensor, organic vs. conductive surface\neffective range: Up to 12 m (optimal field coherence)\ncone width at 12m: Approximately 1.4 m\ncharge buildup warning: ~0.8 seconds audible\npower source: High-density capacitor bank, 24 compliance / 12 suppression / 6 flense shots\nweight: 2.1 kg\nlength: 46 cm",
-  "tactical_use": "Enforcement operators use the EFP-1 in compliance mode for crowd dispersal and suspect restraint, exploiting the pain response to force submission without lasting injury at standard settings. Suppression mode is used for incapacitating targets who resist compliance. The flense modification is employed by black-market users for interrogation and targeted punishment — it is rarely used in open combat due to the charge buildup warning. Operators learn to angle the parabolic array to maximize field coherence against partially covered targets, directing the effect toward exposed skin.",
-  "cultural_context": "In GLMZ, the EFP-1 is the weapon most closely associated with institutional violence — the kind wielded by enforcement bodies rather than street combatants. Its crowd-control origin means civilians recognize it as a symbol of authority being applied to bodies. The fact that ZHENG-DAO disavows the high-output modification while it proliferates freely has become a minor political flashpoint; activist groups in the lower districts call it 'plausible deniability with a charge buildup.' Carrying a modified EFP-1 signals affiliation with enforcement culture gone rogue — ex-officers, disgraced security contractors, or corporate interrogators working without oversight.",
+  "specifications": "emitter array: Parabolic dielectric array, 7-element\nfield modes: Compliance (pain induction) / Suppression (tetany \u002B disorientation) / Flense (epidermal separation, modified)\ntarget discrimination: Passive bioelectric sensor, organic vs. conductive surface\neffective range: Up to 12 m (optimal field coherence)\ncone width at 12m: Approximately 1.4 m\ncharge buildup warning: ~0.8 seconds audible\npower source: High-density capacitor bank, 24 compliance / 12 suppression / 6 flense shots\nweight: 2.1 kg\nlength: 46 cm",
+  "tactical_use": "Enforcement operators use the EFP-1 in compliance mode for crowd dispersal and suspect restraint, exploiting the pain response to force submission without lasting injury at standard settings. Suppression mode is used for incapacitating targets who resist compliance. The flense modification is employed by black-market users for interrogation and targeted punishment \u2014 it is rarely used in open combat due to the charge buildup warning. Operators learn to angle the parabolic array to maximize field coherence against partially covered targets, directing the effect toward exposed skin.",
+  "cultural_context": "In GLMZ, the EFP-1 is the weapon most closely associated with institutional violence \u2014 the kind wielded by enforcement bodies rather than street combatants. Its crowd-control origin means civilians recognize it as a symbol of authority being applied to bodies. The fact that ZHENG-DAO disavows the high-output modification while it proliferates freely has become a minor political flashpoint; activist groups in the lower districts call it \u0027plausible deniability with a charge buildup.\u0027 Carrying a modified EFP-1 signals affiliation with enforcement culture gone rogue \u2014 ex-officers, disgraced security contractors, or corporate interrogators working without oversight.",
   "known_users": [
     "Municipal enforcement units (crowd control variant)",
     "ZHENG-DAO BIOELECTRIC corporate security",
     "Ex-enforcement contractors operating off-books",
     "Corporate interrogation specialists",
-    "Lower-district resistance groups who've captured and modified enforcement units"
+    "Lower-district resistance groups who\u0027ve captured and modified enforcement units"
   ],
   "story_hooks": [
-    "A ZHENG-DAO internal memo surfaces proving the corporation knew about the flense modification before it 'emerged' in the field — someone leaked it and is now being hunted.",
-    "A municipal enforcement unit is found using modified EFP-1s against a labor protest; the players are hired either to document the incident or to make the evidence disappear, depending on who's paying.",
-    "A series of bodies with EFP-1 flense damage appear in a district where no enforcement units operate — someone is using a modified weapon for targeted killings and framing institutional actors.",
+    "A ZHENG-DAO internal memo surfaces proving the corporation knew about the flense modification before it \u0027emerged\u0027 in the field \u2014 someone leaked it and is now being hunted.",
+    "A municipal enforcement unit is found using modified EFP-1s against a labor protest; the players are hired either to document the incident or to make the evidence disappear, depending on who\u0027s paying.",
+    "A series of bodies with EFP-1 flense damage appear in a district where no enforcement units operate \u2014 someone is using a modified weapon for targeted killings and framing institutional actors.",
     "ZHENG-DAO offers the players a contract to recover all modified EFP-1 units from a specific black-market supply chain, but the players discover the corporation wants them back to reverse-engineer and legitimize the modification."
   ],
   "ammunition_type": [
@@ -55,22 +57,24 @@
     "tier 2",
     "less_lethal"
   ],
+  "image_prompt": "Product photography of ZHENG-DAO EFP-1 Skinreader electrostatic projector held in gloved tactical hands against dark matte background. Dramatic side-lighting emphasizes the parabolic dielectric emitter array with visible faint electrical shimmer/corona effect around the dish. Charcoal gray matte finish contrasts with brushed aluminum ring detail. Small amber LED indicator glowing at grip. Close-up focus on the seven-element concentric emitter geometry with subtle heat discoloration. Neo-noir enforcement aesthetic, clinical but menacing. Cool color temperature lighting with accent highlights on metallic elements. --ar 3:2 --v 6",
+  "dalle3_prompt": "",
   "parent_corponation": "",
   "related_entities": [
-    "Arcturus Defense Solutions NociStrike NS-3 'Flense'",
-    "Biophotonic Retinal Cascade Emitter BRCE-5 'Flashpoint'",
+    "Arcturus Defense Solutions NociStrike NS-3 \u0027Flense\u0027",
+    "Biophotonic Retinal Cascade Emitter BRCE-5 \u0027Flashpoint\u0027",
     "GLMZ",
     "Irontide Tidal Energy",
-    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Meridian Municipal Supply TearClear TC-4 \u0027Dispersal\u0027",
     "Nenad Vargas-Baffour",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 \u0027Compliance\u0027",
     "The Nearfield",
     "Zheng-dao Bioelectric"
   ],
   "physical_description": {
-    "visual_profile": "A brutalist directed-energy weapon with a distinctive parabolic dish front — resembles a compact satellite emitter or medical radiator crossed with a riot control projector. The silhouette is aggressive but asymmetrical, front-heavy with the emitter array dominating the profile.",
+    "visual_profile": "A brutalist directed-energy weapon with a distinctive parabolic dish front \u2014 resembles a compact satellite emitter or medical radiator crossed with a riot control projector. The silhouette is aggressive but asymmetrical, front-heavy with the emitter array dominating the profile.",
     "dimensions": "46 cm length overall; parabolic emitter array face approximately 18 cm diameter; grip section 12 cm; width at widest point (emitter) 20 cm",
-    "weight_description": "Hefty but balanced — 2.1 kg sits forward in the emitter assembly, requiring forearm support during sustained aiming. Feels purposeful and planted in hand rather than quick-handling.",
+    "weight_description": "Hefty but balanced \u2014 2.1 kg sits forward in the emitter assembly, requiring forearm support during sustained aiming. Feels purposeful and planted in hand rather than quick-handling.",
     "primary_material": "Hardened aluminum frame with embedded dielectric polymer emitter array; capacitor bank housing in reinforced thermoplastic composite",
     "finish": "Matte charcoal with brushed aluminum accents around emitter ring; high-wear areas show bare metal where gloved hands grip repeatedly",
     "color_scheme": "Charcoal gray primary with silver/aluminum emitter ring; control interfaces in subdued amber LED",
@@ -79,15 +83,14 @@
       "Seven-element parabolic dielectric array with visible concentric rings creating a hypnotic target-like appearance",
       "Capacitor bank heat vents along the barrel, arranged in a linear pattern with faint scorch marks from discharge heat",
       "Charge buildup indicator: small amber LED that brightens during capacitor cycling",
-      "Mode selector dial at grip rear with three positions marked by raised detents (Compliance/Suppression/Flense — though only first two are officially labeled)",
+      "Mode selector dial at grip rear with three positions marked by raised detents (Compliance/Suppression/Flense \u2014 though only first two are officially labeled)",
       "Bioelectric sensor ports (small circular apertures) on either side of the emitter array, slightly recessed",
       "Discharge corona points visible as tiny metallic studs around the emitter perimeter",
       "Weathering and small burn marks on the emitter dish surface consistent with field use",
       "Serial number and ZHENG-DAO BIOELECTRIC logo laser-etched into the aluminum receiver"
     ],
-    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC logo (stylized lightning-bolt-through-helix symbol) stamped on left side of receiver; serial plate mounted on grip backstrap; 'EFP-1 SKINREADER' designator engraved (not official — field modification marker)",
+    "manufacturer_markings": "ZHENG-DAO BIOELECTRIC logo (stylized lightning-bolt-through-helix symbol) stamped on left side of receiver; serial plate mounted on grip backstrap; \u0027EFP-1 SKINREADER\u0027 designator engraved (not official \u2014 field modification marker)",
     "condition_typical": "Well-maintained enforcement variants show minimal wear; black-market modified units bear scorch marks, crude aftermarket capacitor venting, and evidence of field-stripping for charge tuning"
   },
-  "image_prompt": "Product photography of ZHENG-DAO EFP-1 Skinreader electrostatic projector held in gloved tactical hands against dark matte background. Dramatic side-lighting emphasizes the parabolic dielectric emitter array with visible faint electrical shimmer/corona effect around the dish. Charcoal gray matte finish contrasts with brushed aluminum ring detail. Small amber LED indicator glowing at grip. Close-up focus on the seven-element concentric emitter geometry with subtle heat discoloration. Neo-noir enforcement aesthetic, clinical but menacing. Cool color temperature lighting with accent highlights on metallic elements. --ar 3:2 --v 6",
   "visual_prompt": "Product photography of ZHENG-DAO EFP-1 Skinreader electrostatic projector held in gloved tactical hands against dark matte background. Dramatic side-lighting emphasizes the parabolic dielectric emitter array with visible faint electrical shimmer/corona effect around the dish. Charcoal gray matte finish contrasts with brushed aluminum ring detail. Small amber LED indicator glowing at grip. Close-up focus on the seven-element concentric emitter geometry with subtle heat discoloration. Neo-noir enforcement aesthetic, clinical but menacing. Cool color temperature lighting with accent highlights on metallic elements. --ar 3:2 --v 6"
 }

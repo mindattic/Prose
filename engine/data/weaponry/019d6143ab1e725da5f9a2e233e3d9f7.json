@@ -1,10 +1,12 @@
 {
   "id": "019d6143ab1e725da5f9a2e233e3d9f7",
+  "rating": 80,
+  "vote_count": 1,
   "name": "Catalytic Vapor Dispersal Charge CVDC-5",
   "type": "weapon",
   "aliases": [],
   "category": "explosive",
-  "description": "The CVDC-5 operates by rupturing a pressurized internal canister that releases a heavier-than-air catalytic vapor across a defined radius — typically 8 to 12 meters depending on atmospheric conditions. The vapor itself is inert on dispersal; ignition is triggered by a secondary piezoelectric pulse emitted from the casing 1.4 seconds after rupture, which causes rapid oxidative chain-reaction combustion throughout the suspended aerosol. The result is a brief, intensely hot flash-burn event that consumes oxygen in the area and reaches temperatures exceeding 900°C for approximately 0.6 seconds before dissipating entirely. Unlike conventional incendiaries, it leaves no persistent flame, no structural scorch, and almost no thermal residue.\n\nWhat makes the CVDC-5 distinctive is the near-invisibility of its effect profile. Security sensors calibrated for conventional explosive signatures — overpressure, optical flash, shrapnel impact — frequently fail to register the detonation until personnel casualties are already logged. The vapor is odorless and colorless. To an unaugmented observer, the charge simply sits on a surface and then, without warning, everyone in the room is dead. Augmented users with thermal overlays can sometimes detect the dispersal cloud if they know what to look for, but the 1.4-second ignition window leaves almost no reaction time.\n\nArcTurus Defense Solutions developed the CVDC-5 as a room-denial and hostage-rescue inversion tool — the idea being that it could neutralize a contained space without collateral structural damage to high-value facilities. That logic has since been appropriated enthusiastically by extraction teams, corporate saboteurs, and certain factions within the GLMZ underground who appreciate that the charge is effectively undetectable post-deployment if the ventilation systems are running.",
+  "description": "The CVDC-5 operates by rupturing a pressurized internal canister that releases a heavier-than-air catalytic vapor across a defined radius \u2014 typically 8 to 12 meters depending on atmospheric conditions. The vapor itself is inert on dispersal; ignition is triggered by a secondary piezoelectric pulse emitted from the casing 1.4 seconds after rupture, which causes rapid oxidative chain-reaction combustion throughout the suspended aerosol. The result is a brief, intensely hot flash-burn event that consumes oxygen in the area and reaches temperatures exceeding 900\u00B0C for approximately 0.6 seconds before dissipating entirely. Unlike conventional incendiaries, it leaves no persistent flame, no structural scorch, and almost no thermal residue.\n\nWhat makes the CVDC-5 distinctive is the near-invisibility of its effect profile. Security sensors calibrated for conventional explosive signatures \u2014 overpressure, optical flash, shrapnel impact \u2014 frequently fail to register the detonation until personnel casualties are already logged. The vapor is odorless and colorless. To an unaugmented observer, the charge simply sits on a surface and then, without warning, everyone in the room is dead. Augmented users with thermal overlays can sometimes detect the dispersal cloud if they know what to look for, but the 1.4-second ignition window leaves almost no reaction time.\n\nArcTurus Defense Solutions developed the CVDC-5 as a room-denial and hostage-rescue inversion tool \u2014 the idea being that it could neutralize a contained space without collateral structural damage to high-value facilities. That logic has since been appropriated enthusiastically by extraction teams, corporate saboteurs, and certain factions within the GLMZ underground who appreciate that the charge is effectively undetectable post-deployment if the ventilation systems are running.",
   "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
   "tier_availability": "Military only",
   "legality": "Prohibited",
@@ -13,20 +15,20 @@
     "Catalytic aerosol oxidation",
     "Pressurized binary-stage dispersal"
   ],
-  "specifications": "weight: 1.1 kg\ndispersal radius: 8–12 meters (open air), 4–6 meters (enclosed)\nignition delay: 1.4 seconds post-rupture\npeak temperature: ~920°C (0.6-second burn window)\ncasing material: Ablative ceramic composite\ntrigger mechanism: Piezoelectric ignition pulse, remote detonation optional\nresidual signature: Minimal — low thermal trace, no shrapnel pattern\nshelf life: 18 months sealed, 6 hours once canister integrity is broken",
-  "tactical_use": "Operators deploy the CVDC-5 by rolling or placing it into a target space — under a door, through a ventilation duct, or dropped from above through a ceiling breach. The charge is non-threatening in appearance and size, roughly resembling a standard industrial sensor housing. Teams using it typically withdraw to cover before the 1.4-second window closes. It is favored for close-quarters facility clearance where collateral structural damage would compromise extraction routes or alert neighboring security nodes. Some operators use it in tandem with door-seal charges to create fully contained burn events in server rooms or holding cells.",
-  "cultural_context": "The CVDC-5 occupies an uneasy place in GLMZ's weapon culture. Because it leaves no blast crater, no fire, and no obvious cause of death beyond rapid oxygen deprivation and flash-burn trauma, it has become associated with deniable corporate wet work — the kind of job where the client needs the bodies to look ambiguous. Street operators who've encountered its aftermath call it 'the clean kill' with a mix of professional admiration and genuine unease. Carrying one marks a person as either deep-tier military contractor or someone with very specific, very expensive connections. It is not a weapon anyone finds in a crate.",
+  "specifications": "weight: 1.1 kg\ndispersal radius: 8\u201312 meters (open air), 4\u20136 meters (enclosed)\nignition delay: 1.4 seconds post-rupture\npeak temperature: ~920\u00B0C (0.6-second burn window)\ncasing material: Ablative ceramic composite\ntrigger mechanism: Piezoelectric ignition pulse, remote detonation optional\nresidual signature: Minimal \u2014 low thermal trace, no shrapnel pattern\nshelf life: 18 months sealed, 6 hours once canister integrity is broken",
+  "tactical_use": "Operators deploy the CVDC-5 by rolling or placing it into a target space \u2014 under a door, through a ventilation duct, or dropped from above through a ceiling breach. The charge is non-threatening in appearance and size, roughly resembling a standard industrial sensor housing. Teams using it typically withdraw to cover before the 1.4-second window closes. It is favored for close-quarters facility clearance where collateral structural damage would compromise extraction routes or alert neighboring security nodes. Some operators use it in tandem with door-seal charges to create fully contained burn events in server rooms or holding cells.",
+  "cultural_context": "The CVDC-5 occupies an uneasy place in GLMZ\u0027s weapon culture. Because it leaves no blast crater, no fire, and no obvious cause of death beyond rapid oxygen deprivation and flash-burn trauma, it has become associated with deniable corporate wet work \u2014 the kind of job where the client needs the bodies to look ambiguous. Street operators who\u0027ve encountered its aftermath call it \u0027the clean kill\u0027 with a mix of professional admiration and genuine unease. Carrying one marks a person as either deep-tier military contractor or someone with very specific, very expensive connections. It is not a weapon anyone finds in a crate.",
   "known_users": [
     "ADS black-site extraction teams",
-    "Corporate internal security cleaners ('auditors')",
+    "Corporate internal security cleaners (\u0027auditors\u0027)",
     "High-tier fixers specializing in deniable operations",
-    "Rogue ADS procurement officer 'Cavendish'",
-    "The cleaner archetype known in underground circles as 'the Sommelier'"
+    "Rogue ADS procurement officer \u0027Cavendish\u0027",
+    "The cleaner archetype known in underground circles as \u0027the Sommelier\u0027"
   ],
   "story_hooks": [
-    "A coroner in GLMZ's lower wards keeps flagging deaths that look like sudden cardiac events but match the CVDC-5's burn signature — someone is using the weapon on civilians and covering it as natural causes.",
-    "A player character's contact dies in a locked room with no blast damage and no apparent cause. The only witness is a building AI that logged a brief 'sensor anomaly' 1.4 seconds before the contact's vitals flatlined.",
-    "An ADS logistics manifest surfaces on the black market listing a shipment of CVDC-5 units consigned to a buyer in the civilian residential sector — someone is planning something that doesn't involve a military target.",
+    "A coroner in GLMZ\u0027s lower wards keeps flagging deaths that look like sudden cardiac events but match the CVDC-5\u0027s burn signature \u2014 someone is using the weapon on civilians and covering it as natural causes.",
+    "A player character\u0027s contact dies in a locked room with no blast damage and no apparent cause. The only witness is a building AI that logged a brief \u0027sensor anomaly\u0027 1.4 seconds before the contact\u0027s vitals flatlined.",
+    "An ADS logistics manifest surfaces on the black market listing a shipment of CVDC-5 units consigned to a buyer in the civilian residential sector \u2014 someone is planning something that doesn\u0027t involve a military target.",
     "A street-level chemist claims she can synthesize the catalytic compound from industrial precursors available in any agri-district. She wants protection. Several parties want her silenced."
   ],
   "ammunition_type": [
@@ -47,39 +49,40 @@
     "fire",
     "lethal"
   ],
+  "image_prompt": "Close-up product photograph of a cylindrical ceramic composite charge pod, approximately 12 cm tall, matte charcoal-gray finish, resting on a dark tactical surface or held in a gloved tactical hand against shadow. Dramatic side-lighting reveals minimal surface texture and the subtle pressure-relief terminus. Emphasize the deceptive, industrial-sensor appearance of the casing. Cool-temperature lighting dominates; hint of thermal vignetting around the edges suggesting latent energy. Neo-noir military-equipment aesthetic, clinical and austere. No visible branding beyond subtle recessed logo. Environment: dark metallic background, shallow depth of field. Aspect ratio 3:2, v6 quality --ar 3:2 --v 6",
+  "dalle3_prompt": "",
   "parent_corponation": "Arcturus Defense Solutions",
   "related_entities": [
     "Arcturus Defense Solutions",
-    "Arcturus UW-8 'Barracuda'",
+    "Arcturus UW-8 \u0027Barracuda\u0027",
     "GLMZ",
     "Kamala Mori-Sefa",
-    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Meridian Municipal Supply TearClear TC-4 \u0027Dispersal\u0027",
     "Nenad Vargas-Baffour",
     "Gray Zone life",
     "Sweeper-11",
-    "TESSERA PG-2 'Signature'",
+    "TESSERA PG-2 \u0027Signature\u0027",
     "The Quiet Room",
     "Vantablack-CNX"
   ],
   "physical_description": {
-    "visual_profile": "A deceptively inert-looking cylindrical pod, roughly the size of a clenched fist. Its featureless exterior suggests industrial sensor hardware rather than weaponry — deliberately mundane, designed to blend into technical environments. The casing tapers slightly at one end where the pressurized canister terminus sits. No visible trigger mechanism, no obvious ignition points.",
+    "visual_profile": "A deceptively inert-looking cylindrical pod, roughly the size of a clenched fist. Its featureless exterior suggests industrial sensor hardware rather than weaponry \u2014 deliberately mundane, designed to blend into technical environments. The casing tapers slightly at one end where the pressurized canister terminus sits. No visible trigger mechanism, no obvious ignition points.",
     "dimensions": "Height: 12 cm, Diameter: 6 cm, Barrel equivalent: N/A (spheroid charge body)",
-    "weight_description": "Compact and dense — feels heavier than its modest size suggests due to the pressurized internal canister and catalytic payload. Roughly 1.1 kg sits comfortably in a gloved palm but carries the heft of concentrated lethality.",
-    "primary_material": "Ablative ceramic composite casing — engineered to rupture cleanly at predetermined pressure thresholds without fragmenting into secondary shrapnel. The ceramic is fused with carbon-fiber lattice reinforcement.",
-    "finish": "Matte charcoal-gray with a barely perceptible surface texture — intentionally non-reflective to avoid catching light or thermal imaging. The finish is industrial and austere, designed to mimic the appearance of commercial-grade pressure vessels.",
+    "weight_description": "Compact and dense \u2014 feels heavier than its modest size suggests due to the pressurized internal canister and catalytic payload. Roughly 1.1 kg sits comfortably in a gloved palm but carries the heft of concentrated lethality.",
+    "primary_material": "Ablative ceramic composite casing \u2014 engineered to rupture cleanly at predetermined pressure thresholds without fragmenting into secondary shrapnel. The ceramic is fused with carbon-fiber lattice reinforcement.",
+    "finish": "Matte charcoal-gray with a barely perceptible surface texture \u2014 intentionally non-reflective to avoid catching light or thermal imaging. The finish is industrial and austere, designed to mimic the appearance of commercial-grade pressure vessels.",
     "color_scheme": "Matte gray-black primary, with a minimal accent stripe (industrial yellow or neutral silver) marking the canister terminus. No branding paint; markings are recessed.",
-    "grip_texture": "Smooth ceramic composite exterior — slightly cool to touch, frictionless. Not designed for a traditional grip; operators typically cradle it or palm it briefly before placement.",
+    "grip_texture": "Smooth ceramic composite exterior \u2014 slightly cool to touch, frictionless. Not designed for a traditional grip; operators typically cradle it or palm it briefly before placement.",
     "distinctive_features": [
       "Recessed pressure-release valve cap at the crown (concealed unless inspected closely)",
-      "Faint hairline seam running the casing length — indicates ablative panel construction",
+      "Faint hairline seam running the casing length \u2014 indicates ablative panel construction",
       "Minute thermal-compensation grooves etched into the surface (functional, not decorative)",
       "A subtle asymmetry at the terminus where piezoelectric ignition module sits just beneath the casing",
       "No visible safety mechanisms or armed/disarmed indicators",
       "Post-deployment, surface may show slight stress fracturing from internal pressure"
     ],
-    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS logo — a small, recessed stamp near the base, barely legible without magnification. Serial plate is internal-only, sealed beneath the casing. No external warning labels or legality stamps (military-grade suppressors).",
-    "condition_typical": "Field units appear pristine and factory-sealed, as shelf-life degradation is critical; once deployed or canister integrity is breached, the charge becomes inert within 6 hours. Never field-scarred or battle-worn — either functional or expended."
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS logo \u2014 a small, recessed stamp near the base, barely legible without magnification. Serial plate is internal-only, sealed beneath the casing. No external warning labels or legality stamps (military-grade suppressors).",
+    "condition_typical": "Field units appear pristine and factory-sealed, as shelf-life degradation is critical; once deployed or canister integrity is breached, the charge becomes inert within 6 hours. Never field-scarred or battle-worn \u2014 either functional or expended."
   },
-  "image_prompt": "Close-up product photograph of a cylindrical ceramic composite charge pod, approximately 12 cm tall, matte charcoal-gray finish, resting on a dark tactical surface or held in a gloved tactical hand against shadow. Dramatic side-lighting reveals minimal surface texture and the subtle pressure-relief terminus. Emphasize the deceptive, industrial-sensor appearance of the casing. Cool-temperature lighting dominates; hint of thermal vignetting around the edges suggesting latent energy. Neo-noir military-equipment aesthetic, clinical and austere. No visible branding beyond subtle recessed logo. Environment: dark metallic background, shallow depth of field. Aspect ratio 3:2, v6 quality --ar 3:2 --v 6",
   "visual_prompt": "Close-up product photograph of a cylindrical ceramic composite charge pod, approximately 12 cm tall, matte charcoal-gray finish, resting on a dark tactical surface or held in a gloved tactical hand against shadow. Dramatic side-lighting reveals minimal surface texture and the subtle pressure-relief terminus. Emphasize the deceptive, industrial-sensor appearance of the casing. Cool-temperature lighting dominates; hint of thermal vignetting around the edges suggesting latent energy. Neo-noir military-equipment aesthetic, clinical and austere. No visible branding beyond subtle recessed logo. Environment: dark metallic background, shallow depth of field. Aspect ratio 3:2, v6 quality --ar 3:2 --v 6"
 }

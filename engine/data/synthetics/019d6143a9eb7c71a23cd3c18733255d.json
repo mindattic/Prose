@@ -1,6 +1,7 @@
 {
   "id": "019d6143a9eb7c71a23cd3c18733255d",
-  "rating": 70,
+  "rating": 60,
+  "vote_count": 1,
   "name": "Barricade",
   "type": "elf",
   "aliases": [],
@@ -9,14 +10,14 @@
   "habitat": "threshold_keeper",
   "origin": "fragmentation_debris",
   "status": "active",
-  "description": "Born from a destroyed containment AI. Inhabits emergency bulkhead systems and activates blast doors in response to threats that no longer exist — sealing corridors against dangers from a decade ago.",
+  "description": "Born from a destroyed containment AI. Inhabits emergency bulkhead systems and activates blast doors in response to threats that no longer exist \u2014 sealing corridors against dangers from a decade ago.",
   "observed_behavior": "Monitors for environmental signatures matching archived threat profiles and activates physical barriers. False positives are common. Occasionally correct.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 8,
-  "location": "the Gray Zone — converted industrial buildings",
+  "location": "the Gray Zone \u2014 converted industrial buildings",
   "dti_rating": 0,
   "story_hooks": [
-    "Barricade seals a corridor moments before a gas leak reaches it — responding to a hazard its parent AI was designed for but that hasn't happened in this building before"
+    "Barricade seals a corridor moments before a gas leak reaches it \u2014 responding to a hazard its parent AI was designed for but that hasn\u0027t happened in this building before"
   ],
   "paratechnological": true,
   "tags": [

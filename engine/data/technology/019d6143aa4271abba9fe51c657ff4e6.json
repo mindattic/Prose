@@ -1,13 +1,15 @@
 {
   "id": "019d6143aa4271abba9fe51c657ff4e6",
+  "rating": 30,
+  "vote_count": 1,
   "name": "Ironclad Agrisystems Vertical Hydroponic Mega-Farm",
   "brand_name": "Ironclad",
   "product_name": "Ironclad Agrisystems Vertical Hydroponic Mega-Farm",
   "type": "technology",
   "aliases": [],
   "subcategory": "agricultural",
-  "description": "A building-scale enclosed agricultural system that produces food in vertically stacked hydroponic trays under artificial lighting, achieving crop yields per square meter that exceed traditional farming by a factor of 100. Each Mega-Farm tower occupies a single city block footprint but produces enough food to sustain 50,000 people. The system uses recycled water, atmospheric nutrient extraction, and genetically optimized crop varieties that grow to harvest in 21-day cycles. Ironclad operates 30 Mega-Farm towers across GLMZ, providing the bulk of the city's food supply.",
-  "tier_availability": "Tier 2+",
+  "description": "A building-scale enclosed agricultural system that produces food in vertically stacked hydroponic trays under artificial lighting, achieving crop yields per square meter that exceed traditional farming by a factor of 100. Each Mega-Farm tower occupies a single city block footprint but produces enough food to sustain 50,000 people. The system uses recycled water, atmospheric nutrient extraction, and genetically optimized crop varieties that grow to harvest in 21-day cycles. Ironclad operates 30 Mega-Farm towers across GLMZ, providing the bulk of the city\u0027s food supply.",
+  "tier_availability": "Tier 2\u002B",
   "developers": [
     "IRONCLAD AGRISYSTEMS"
   ],
@@ -22,10 +24,10 @@
     "21-day crop cycles",
     "Controlled nutrition content in food supply"
   ],
-  "social_impact": "Ironclad's Mega-Farms feed GLMZ, which gives Ironclad a form of power that transcends corporate competition — they control the food supply. The quality and variety of food produced varies by contract: upper-tier districts receive nutritionally optimized, flavor-enhanced varieties while lower-tier districts receive calorie-dense but nutritionally minimal output from the same facilities. Food in GLMZ is abundant but unequal, and the inequality is engineered at the genetic level.",
+  "social_impact": "Ironclad\u0027s Mega-Farms feed GLMZ, which gives Ironclad a form of power that transcends corporate competition \u2014 they control the food supply. The quality and variety of food produced varies by contract: upper-tier districts receive nutritionally optimized, flavor-enhanced varieties while lower-tier districts receive calorie-dense but nutritionally minimal output from the same facilities. Food in GLMZ is abundant but unequal, and the inequality is engineered at the genetic level.",
   "story_hooks": [
-    "A Mega-Farm's genetically optimized crop has developed an unexpected compound during growth — a psychoactive substance that is accumulating in the food supply of two Tier 2 districts, and the behavioral changes in the population are measurable.",
-    "Someone has introduced a blight specifically engineered to attack Ironclad's proprietary crop genetics — three Mega-Farm towers are experiencing simultaneous crop failure and GLMZ is 72 hours from food shortage."
+    "A Mega-Farm\u0027s genetically optimized crop has developed an unexpected compound during growth \u2014 a psychoactive substance that is accumulating in the food supply of two Tier 2 districts, and the behavioral changes in the population are measurable.",
+    "Someone has introduced a blight specifically engineered to attack Ironclad\u0027s proprietary crop genetics \u2014 three Mega-Farm towers are experiencing simultaneous crop failure and GLMZ is 72 hours from food shortage."
   ],
   "tags": [
     "agricultural",
@@ -40,13 +42,6 @@
     "water",
     "tier 2"
   ],
-  "parent_corponation": "",
-  "related_entities": [
-    "GLMZ",
-    "Iowan Behemoth — 'Ironclad'",
-    "Iskander Mbeki-Ó'Treasaigh",
-    "Ringo RT-4 'Oxcart'",
-    "Sustrel",
-    "Zheng-Dao Heavy Industries MGL-8 'Thresher'"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

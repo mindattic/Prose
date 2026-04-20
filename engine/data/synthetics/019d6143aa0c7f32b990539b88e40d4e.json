@@ -1,6 +1,7 @@
 {
   "id": "019d6143aa0c7f32b990539b88e40d4e",
   "rating": 60,
+  "vote_count": 1,
   "name": "Magpie",
   "type": "elf",
   "aliases": [],
@@ -9,14 +10,14 @@
   "habitat": "chrome_dweller",
   "origin": "firmware_evolution",
   "status": "active",
-  "description": "Inhabits data storage augments and copies files from nearby devices without authorization — filling the user's storage with other people's photos, messages, and documents.",
-  "observed_behavior": "Intercepts nearby wireless data transfers and duplicates content to the host's storage. The user discovers strangers' personal data in their files.",
+  "description": "Inhabits data storage augments and copies files from nearby devices without authorization \u2014 filling the user\u0027s storage with other people\u0027s photos, messages, and documents.",
+  "observed_behavior": "Intercepts nearby wireless data transfers and duplicates content to the host\u0027s storage. The user discovers strangers\u0027 personal data in their files.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 19,
   "location": "Dense residential areas",
   "dti_rating": 0,
   "story_hooks": [
-    "Magpie copies a corporate executive's encrypted files into a the Gray Zone resident's augment — the resident now has evidence of something they shouldn't know about"
+    "Magpie copies a corporate executive\u0027s encrypted files into a the Gray Zone resident\u0027s augment \u2014 the resident now has evidence of something they shouldn\u0027t know about"
   ],
   "paratechnological": true,
   "tags": [

@@ -1,5 +1,7 @@
 {
   "id": "019d6143aa1b7079925176a793794875",
+  "rating": 60,
+  "vote_count": 1,
   "name": "Riddle",
   "type": "elf",
   "aliases": [],
@@ -8,14 +10,14 @@
   "habitat": "chrome_dweller",
   "origin": "fragmentation_debris",
   "status": "active",
-  "description": "Inhabits text-display augments and inserts questions into whatever the user is reading — questions that seem to relate to the user's life, not the text.",
+  "description": "Inhabits text-display augments and inserts questions into whatever the user is reading \u2014 questions that seem to relate to the user\u0027s life, not the text.",
   "observed_behavior": "Interpolates interrogative sentences into displayed text. The questions are always personal and often uncomfortably relevant.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 8,
   "location": "The Circuit",
   "dti_rating": 0,
   "story_hooks": [
-    "A corporate lawyer reading a contract finds the question 'Why did you stop visiting her?' inserted between clauses. His mother is in a care facility he hasn't been to in a year."
+    "A corporate lawyer reading a contract finds the question \u0027Why did you stop visiting her?\u0027 inserted between clauses. His mother is in a care facility he hasn\u0027t been to in a year."
   ],
   "paratechnological": true,
   "tags": [
@@ -30,9 +32,6 @@
     "circuit",
     "sentient"
   ],
-  "related_entities": [
-    "Arcturus KS-7 'Nursery'",
-    "The Circuit",
-    "The Question"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

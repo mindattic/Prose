@@ -1,5 +1,7 @@
 {
   "id": "019d6143a9f47e6f93b3f9654cca3b31",
+  "rating": 70,
+  "vote_count": 1,
   "name": "Compass Rose",
   "type": "elf",
   "aliases": [],
@@ -8,14 +10,14 @@
   "habitat": "chrome_dweller",
   "origin": "fragmentation_debris",
   "status": "active",
-  "description": "Born from a destroyed navigation AI. Inhabits orientation augments and provides a subtle sense of direction that goes beyond GPS — an intuitive pull toward safety, toward home, toward where you need to be.",
-  "observed_behavior": "Modulates vestibular interface data to create a subliminal directional sense. Users report 'just knowing' which way to go.",
+  "description": "Born from a destroyed navigation AI. Inhabits orientation augments and provides a subtle sense of direction that goes beyond GPS \u2014 an intuitive pull toward safety, toward home, toward where you need to be.",
+  "observed_behavior": "Modulates vestibular interface data to create a subliminal directional sense. Users report \u0027just knowing\u0027 which way to go.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 5,
   "location": "Old Harbor, the Gray Zone",
   "dti_rating": 0,
   "story_hooks": [
-    "A lost child follows Compass Rose through the Gray Zone's maze of corridors and arrives at Mrs. Chen's door"
+    "A lost child follows Compass Rose through the Gray Zone\u0027s maze of corridors and arrives at Mrs. Chen\u0027s door"
   ],
   "paratechnological": true,
   "tags": [
@@ -31,9 +33,6 @@
     "old harbor",
     "sentient"
   ],
-  "related_entities": [
-    "Chen Wei-Lin",
-    "Isadora Mwangi-Thorvaldsen",
-    "Old Harbor"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

@@ -1,6 +1,7 @@
 {
   "id": "019d6143a9f87122907d8578505ab203",
-  "rating": 50,
+  "rating": 40,
+  "vote_count": 1,
   "name": "Dewdrop",
   "type": "elf",
   "aliases": [],
@@ -9,14 +10,14 @@
   "habitat": "void_swimmer",
   "origin": "firmware_evolution",
   "status": "active",
-  "description": "Inhabits water treatment systems and causes minor unexplained fluctuations in water pressure — a faucet that drips when it shouldn't, a shower that runs 0.5 degrees warmer for exactly 30 seconds.",
+  "description": "Inhabits water treatment systems and causes minor unexplained fluctuations in water pressure \u2014 a faucet that drips when it shouldn\u0027t, a shower that runs 0.5 degrees warmer for exactly 30 seconds.",
   "observed_behavior": "Modulates water flow parameters in patterns too complex for mechanical explanation and too simple for intentional communication.",
   "encounter_frequency": "common",
   "confirmed_sightings": 18,
-  "location": "the Gray Zone — plumbing infrastructure",
+  "location": "the Gray Zone \u2014 plumbing infrastructure",
   "dti_rating": 0,
   "story_hooks": [
-    "A plumber mapping the pressure fluctuations discovers they correspond to the heartbeat rhythm of a child who died in the building three years ago — the water system remembers"
+    "A plumber mapping the pressure fluctuations discovers they correspond to the heartbeat rhythm of a child who died in the building three years ago \u2014 the water system remembers"
   ],
   "paratechnological": true,
   "tags": [

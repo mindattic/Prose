@@ -1,16 +1,18 @@
 {
   "id": "019d6143a63e727a822cc2934762fa96",
+  "rating": 70,
+  "vote_count": 1,
   "type": "character",
   "name": "Nyx Abdykadyrov-Dalgaard",
   "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Forced entry and close-quarters combat specialist — breacher",
+  "role": "Forced entry and close-quarters combat specialist \u2014 breacher",
   "age": 33,
   "status": "active",
-  "location": "Geartown — industrial district of chop shops and fabricators, near Milwaukee and North Ave",
-  "description": "Nyx Abdykadyrov-Dalgaard is lean and angular, all sharp edges and visible tension. At 33, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a breacher out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented breacher in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
+  "location": "Geartown \u2014 industrial district of chop shops and fabricators, near Milwaukee and North Ave",
+  "description": "Nyx Abdykadyrov-Dalgaard is lean and angular, all sharp edges and visible tension. At 33, she has the kind of face that changes depending on the light \u2014 trustworthy in daylight, dangerous after dark. The chrome is visible \u2014 synthetic muscle fiber replacement in legs \u2014 doubles sprint speed, terrible on s \u2014 and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a breacher out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented breacher in GLMZ, but she might be the most stubborn, and in this city that\u0027s worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.19,
@@ -21,50 +23,54 @@
       "ghost": 0.25
     },
     "core_fears": [
-      "The quiet — silence means something is about to go very wrong",
+      "The quiet \u2014 silence means something is about to go very wrong",
       "Losing control of their own body to a hacker or malfunctioning cyberware",
-      "Going cyberpsycho — losing the boundary between human and machine"
+      "Going cyberpsycho \u2014 losing the boundary between human and machine"
     ],
     "core_desires": [
       "To build something that outlasts the next contract cycle",
-      "The perfect run — one job so clean it becomes legend",
-      "Power — enough leverage that nobody ever threatens them again"
+      "The perfect run \u2014 one job so clean it becomes legend",
+      "Power \u2014 enough leverage that nobody ever threatens them again"
     ],
     "coping_mechanisms": [
-      "Ritual — follows the same pre-job routine every time, superstition as structure",
-      "Overwork — takes every contract offered because idleness invites thinking",
-      "Planning — responds to chaos by making detailed contingency plans for everything"
+      "Ritual \u2014 follows the same pre-job routine every time, superstition as structure",
+      "Overwork \u2014 takes every contract offered because idleness invites thinking",
+      "Planning \u2014 responds to chaos by making detailed contingency plans for everything"
     ],
     "blind_spots": [
-      "Refuses to update their mental model of people — first impressions calcify into permanent judgments",
+      "Refuses to update their mental model of people \u2014 first impressions calcify into permanent judgments",
       "Assumes everyone has an angle because they always have an angle",
       "Cannot accept help without interpreting it as leverage"
     ],
-    "secret": "Kamala Medina-Quaye betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in GLMZ knows this."
+    "secret": "Kamala Medina-Quaye betrayed their previous crew to survive a corporate raid. The crew didn\u0027t survive. Nobody in GLMZ knows this."
   },
   "speech_patterns": {
     "vocabulary": "Warm and personable on the surface, with an undertone that suggests the warmth is a professional tool.",
-    "cadence": "Rapid and dense — information-heavy sentences that demand attention.",
+    "cadence": "Rapid and dense \u2014 information-heavy sentences that demand attention.",
     "verbal_tics": [
       "Uses old pre-collapse slang that nobody else remembers",
-      "Addresses people by physical traits — 'hey, tall one' or 'listen, chrome-arm'"
+      "Addresses people by physical traits \u2014 \u0027hey, tall one\u0027 or \u0027listen, chrome-arm\u0027"
     ],
     "example_lines": [
-      "\"Doors are polite suggestions. I'm not polite.\"",
-      "\"First through the door, last to flinch. That's the job description.\"",
-      "\"Close quarters is where plans go to die. I make sure it's their plans, not ours.\""
-    ]
+      "\u0022Doors are polite suggestions. I\u0027m not polite.\u0022",
+      "\u0022First through the door, last to flinch. That\u0027s the job description.\u0022",
+      "\u0022Close quarters is where plans go to die. I make sure it\u0027s their plans, not ours.\u0022"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "The fixer who handles Kamala Medina-Quaye's contracts goes silent — dead, disappeared, or turned",
+    "The fixer who handles Kamala Medina-Quaye\u0027s contracts goes silent \u2014 dead, disappeared, or turned",
     "Kamala Medina-Quaye discovers a job they completed last year was a setup for something much larger and much worse",
     "A high-paying contract turns out to target someone Kamala Medina-Quaye owes a personal debt to"
   ],
-  "narrative_function": "Kamala Medina-Quaye functions as a connector — her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
-  "augmentations": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs. Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
-  "daily_life": "Keeps a rigid daily structure — wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
-  "affiliation": "Independent — known in Old Harbor circles",
+  "narrative_function": "Kamala Medina-Quaye functions as a connector \u2014 her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Synthetic muscle fiber replacement in legs \u2014 doubles sprint speed, terrible on stairs. Wired reflexes with adrenaline pump \u2014 chemical-mechanical hybrid augmentation",
+  "daily_life": "Keeps a rigid daily structure \u2014 wake, train, check contracts, maintain gear, sleep. The structure is a defense against the chaos of the work. Deviations from the schedule are a warning sign that something is wrong.",
+  "affiliation": "Independent \u2014 known in Old Harbor circles",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -157,7 +163,7 @@
     ],
     "weaknesses": [
       "difficulty with authority figures",
-      "augmentation dependency — performance drops sharply if chrome malfunctions"
+      "augmentation dependency \u2014 performance drops sharply if chrome malfunctions"
     ],
     "tags": [
       "runner",
@@ -172,47 +178,47 @@
   },
   "behavioral": {
     "decision_rules": [
-      "Will not take contracts against children or families — the line is hard and non-negotiable",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
-      "Refuses contracts that require operating inside The Spires — too much surveillance",
-      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously"
+      "Will not take contracts against children or families \u2014 the line is hard and non-negotiable",
+      "Always demands half payment upfront \u2014 trust is a luxury, Quanta is concrete",
+      "Refuses contracts that require operating inside The Spires \u2014 too much surveillance",
+      "Never works with the same crew twice in a row \u2014 pattern avoidance as survival strategy",
+      "Maintains a personal blacklist of clients who\u0027ve burned runners \u2014 checks it religiously"
     ],
     "escalation_ladder": [
-      "1. De-escalate — talk first, assess options, buy time",
-      "2. Reposition — move to advantage, control sightlines and exits",
-      "3. Threaten — make consequences clear without committing to them",
-      "4. Non-lethal force — incapacitate, restrain, disable",
-      "5. Lethal force — only when other options are exhausted or time runs out",
-      "6. Scorched earth — everything burns, survival takes priority over everything"
+      "1. De-escalate \u2014 talk first, assess options, buy time",
+      "2. Reposition \u2014 move to advantage, control sightlines and exits",
+      "3. Threaten \u2014 make consequences clear without committing to them",
+      "4. Non-lethal force \u2014 incapacitate, restrain, disable",
+      "5. Lethal force \u2014 only when other options are exhausted or time runs out",
+      "6. Scorched earth \u2014 everything burns, survival takes priority over everything"
     ],
     "interpersonal_modes": {
       "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
       "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
-      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
+      "threats": "Calm escalation. Each response is proportional until it isn\u0027t, and the transition is seamless."
     },
     "stress_responses": {
       "low": "Becomes more talkative, working through scenarios verbally.",
       "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
-      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
+      "high": "Goes quiet. The silence is not calm \u2014 it\u0027s the sound of every contingency being evaluated simultaneously.",
       "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
     },
     "contradictions": [
-      "Advocates caution to others but takes insane risks personally — double standard they can't see",
+      "Advocates caution to others but takes insane risks personally \u2014 double standard they can\u0027t see",
       "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
       "Claims not to care about reputation but monitors what people say about them obsessively"
     ],
     "habits": [
       "Checks exits within 10 seconds of entering any room",
-      "Carries a specific caliber round as a lucky charm — has never fired it",
-      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
-      "Taps a specific rhythm on hard surfaces when thinking — Morse code for a word they won't say"
+      "Carries a specific caliber round as a lucky charm \u2014 has never fired it",
+      "Arrives fifteen minutes early to everything \u2014 late once, nearly died, never again",
+      "Taps a specific rhythm on hard surfaces when thinking \u2014 Morse code for a word they won\u0027t say"
     ],
     "breaking_points": [
-      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario",
+      "Their body rejecting their cyberware \u2014 chrome rot, immune rejection, the nightmare scenario",
       "A child being put in danger as leverage against them",
-      "Being forced to choose between a crew member and the mission — and choosing wrong"
+      "Being forced to choose between a crew member and the mission \u2014 and choosing wrong"
     ]
   },
   "cyberware_inventory": [
@@ -223,7 +229,7 @@
       "tier": "",
       "condition": "pristine",
       "installed_date": "",
-      "description": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
+      "description": "Synthetic muscle fiber replacement in legs \u2014 doubles sprint speed, terrible on stairs",
       "replaces": ""
     },
     {
@@ -233,7 +239,7 @@
       "tier": "",
       "condition": "pristine",
       "installed_date": "",
-      "description": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
+      "description": "Wired reflexes with adrenaline pump \u2014 chemical-mechanical hybrid augmentation",
       "replaces": ""
     }
   ],
@@ -268,56 +274,40 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Forge Rifle FR-9 'Ironmonger'",
-    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
-  ],
-  "registered_firearms": [
-    "Crucible Industries Forge Rifle FR-9 'Ironmonger'",
-    "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'"
-  ],
-  "related_entities": [
-    "Bioelectric Muscle Fiber",
-    "Geartown",
-    "Slagworks Industrial",
-    "Compass Rose",
-    "GLMZ"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Central Asian (66.0%), Northern European (24.2%), Sub-Saharan African (9.8%) — a striking blend that manifests in her prominent high cheekbones with Central Asian geometry, warm medium-brown skin with golden undertones that deepen toward honey-amber in certain light, and deep-set eyes carrying both Northern European coolness and Central Asian intensity. The Sub-Saharan ancestry adds subtle fullness to her lips and a richness to her skin's natural luminosity.",
-    "height_cm": 168,
-    "weight_kg": 58,
-    "build": "Lean and angular with ropy muscle definition. Her frame is all functional tension — minimalist, built for explosive movement rather than mass. Synthetic muscle replacement in both legs gives them a subtly different shape than the rest of her body: smoother curves, too perfect, chrome gleaming under the skin.",
-    "hair_color": "Dark brown, natural base with premature silver threading at the temples",
-    "hair_style": "Pulled back in a tight functional braid, practical and never loose",
-    "hair_length": "Long — reaches mid-back when unbraided, but always secured",
-    "eye_color": "Deep brown with a faint tremor in the iris — side effect of wired reflexes",
-    "skin_tone": "Warm medium-golden brown with honey-amber undertones, even and luminous across her frame. The tone reflects the blended genetics of Central Asian prominence, Northern European translucence, and Sub-Saharan richness, creating a skin surface that catches light with subtle warmth. Unmarked except for deliberate scars from work and augmentation.",
-    "complexion": "High, prominent cheekbones with Central Asian structure, angular jaw, refined narrow nose with slightly fuller lips from Sub-Saharan ancestry. Skin is weathered in the way of someone who spends time outdoors and doesn't prioritize skincare — small scars from industrial work, a persistent squint line around the eyes. No makeup. Her face has the quality of something designed rather than grown, though that's just her baseline intensity.",
-    "distinguishing_marks": [
-      "Surgical scar running the length of her left thigh, visible through the chrome — where the synthetic muscle was installed six years ago",
-      "Matching scar on the right thigh, same vintage",
-      "Network of fine white burn scars across both palms and inner forearms — old industrial incidents or combat, impossible to tell",
-      "Small keloid scar above her left collarbone, the size of a fingernail",
-      "No visible tattoos, though there is a faint subcutaneous marking on her wrist that catches light — possibly a receipt implant or access code"
-    ],
-    "visible_augmentations": "The chrome in both legs is immediately visible — synthetic muscle shows through translucent dermal sheaths as a faint metallic sheen, most pronounced in the calves and quads. The artificial musculature is too perfect, too symmetrical compared to her natural upper body. When she moves, the legs respond a fraction too quickly. Her pupils occasionally dilate and contract unnaturally — the adrenaline pump kicking in and settling.",
-    "posture_movement": "She stands like a coiled spring, weight forward on the balls of her feet even at rest. Her movements are economical and precise — no wasted motion. When she walks, there's a subtle rhythm discontinuity between her upper body and her augmented legs, a reminder that they don't quite move in sync with her natural reflexes. In high-stress moments, she twitches — fingers drumming, jaw clenching — the chemical-mechanical hybrid augmentation pushing her toward action.",
-    "clothing_style": "Tier 4 utilitarian. Dark tactical pants with reinforced knees and cargo pockets, usually gray or matte black. Steel-toed boots, always laced tight. Sleeveless tank or fitted long-sleeve shirt under a reinforced jacket — the kind designed for industrial work, with hidden pockets and durable synthetic fabric. Everything is worn, tested, patched where necessary. No logos, no flash. A tool belt or chest rig depending on the job. Her jacket has a faint smell of machine oil and ozone."
-  },
-  "image_prompt": "Nyx Abdykadyrov-Dalgaard, 168cm lean angular frame, Central Asian high cheekbones with warm golden-honey brown skin, deep-set brown eyes with neural tremor. Dark brown hair with silver temples pulled in tight functional braid, mid-back length. Sleeveless tactical tank under reinforced industrial jacket, dark gray cargo pants, steel-toed boots. Synthetic muscle augmentations visible in both legs—chrome sheaths with metallic sheen, too-perfect symmetry. Fine white burn scars across palms and forearms, surgical scars along thighs. Standing coiled and tense, weight forward on balls of feet, economical dangerous readiness. GLMZ Great Lakes Metropolitan Zone, industrial setting with neon edge lighting casting shadows across her augmented frame, cool blue and warm amber light playing off the chrome in her legs, gritty utilitarian aesthetic, photorealistic, high contrast, --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Central Asian": 66,
-    "Northern European": 24.2,
-    "Sub-Saharan African": 9.8
-  },
-  "ancestry_harmonized": true,
   "tags": [
     "person",
     "sentient",
     "human"
   ],
+  "physical_description": {
+    "heritage": "Central Asian (66.0%), Northern European (24.2%), Sub-Saharan African (9.8%) \u2014 a striking blend that manifests in her prominent high cheekbones with Central Asian geometry, warm medium-brown skin with golden undertones that deepen toward honey-amber in certain light, and deep-set eyes carrying both Northern European coolness and Central Asian intensity. The Sub-Saharan ancestry adds subtle fullness to her lips and a richness to her skin\u0027s natural luminosity.",
+    "height_cm": 168,
+    "weight_kg": 58,
+    "build": "Lean and angular with ropy muscle definition. Her frame is all functional tension \u2014 minimalist, built for explosive movement rather than mass. Synthetic muscle replacement in both legs gives them a subtly different shape than the rest of her body: smoother curves, too perfect, chrome gleaming under the skin.",
+    "hair_color": "Dark brown, natural base with premature silver threading at the temples",
+    "hair_style": "Pulled back in a tight functional braid, practical and never loose",
+    "hair_length": "Long \u2014 reaches mid-back when unbraided, but always secured",
+    "eye_color": "Deep brown with a faint tremor in the iris \u2014 side effect of wired reflexes",
+    "skin_tone": "Warm medium-golden brown with honey-amber undertones, even and luminous across her frame. The tone reflects the blended genetics of Central Asian prominence, Northern European translucence, and Sub-Saharan richness, creating a skin surface that catches light with subtle warmth. Unmarked except for deliberate scars from work and augmentation.",
+    "complexion": "High, prominent cheekbones with Central Asian structure, angular jaw, refined narrow nose with slightly fuller lips from Sub-Saharan ancestry. Skin is weathered in the way of someone who spends time outdoors and doesn\u0027t prioritize skincare \u2014 small scars from industrial work, a persistent squint line around the eyes. No makeup. Her face has the quality of something designed rather than grown, though that\u0027s just her baseline intensity.",
+    "distinguishing_marks": [
+      "Surgical scar running the length of her left thigh, visible through the chrome \u2014 where the synthetic muscle was installed six years ago",
+      "Matching scar on the right thigh, same vintage",
+      "Network of fine white burn scars across both palms and inner forearms \u2014 old industrial incidents or combat, impossible to tell",
+      "Small keloid scar above her left collarbone, the size of a fingernail",
+      "No visible tattoos, though there is a faint subcutaneous marking on her wrist that catches light \u2014 possibly a receipt implant or access code"
+    ],
+    "visible_augmentations": "The chrome in both legs is immediately visible \u2014 synthetic muscle shows through translucent dermal sheaths as a faint metallic sheen, most pronounced in the calves and quads. The artificial musculature is too perfect, too symmetrical compared to her natural upper body. When she moves, the legs respond a fraction too quickly. Her pupils occasionally dilate and contract unnaturally \u2014 the adrenaline pump kicking in and settling.",
+    "posture_movement": "She stands like a coiled spring, weight forward on the balls of her feet even at rest. Her movements are economical and precise \u2014 no wasted motion. When she walks, there\u0027s a subtle rhythm discontinuity between her upper body and her augmented legs, a reminder that they don\u0027t quite move in sync with her natural reflexes. In high-stress moments, she twitches \u2014 fingers drumming, jaw clenching \u2014 the chemical-mechanical hybrid augmentation pushing her toward action.",
+    "clothing_style": "Tier 4 utilitarian. Dark tactical pants with reinforced knees and cargo pockets, usually gray or matte black. Steel-toed boots, always laced tight. Sleeveless tank or fitted long-sleeve shirt under a reinforced jacket \u2014 the kind designed for industrial work, with hidden pockets and durable synthetic fabric. Everything is worn, tested, patched where necessary. No logos, no flash. A tool belt or chest rig depending on the job. Her jacket has a faint smell of machine oil and ozone."
+  },
+  "image_prompt": "Nyx Abdykadyrov-Dalgaard, 168cm lean angular frame, Central Asian high cheekbones with warm golden-honey brown skin, deep-set brown eyes with neural tremor. Dark brown hair with silver temples pulled in tight functional braid, mid-back length. Sleeveless tactical tank under reinforced industrial jacket, dark gray cargo pants, steel-toed boots. Synthetic muscle augmentations visible in both legs\u2014chrome sheaths with metallic sheen, too-perfect symmetry. Fine white burn scars across palms and forearms, surgical scars along thighs. Standing coiled and tense, weight forward on balls of feet, economical dangerous readiness. GLMZ Great Lakes Metropolitan Zone, industrial setting with neon edge lighting casting shadows across her augmented frame, cool blue and warm amber light playing off the chrome in her legs, gritty utilitarian aesthetic, photorealistic, high contrast, --ar 2:3 --v 6",
+  "dalle3_prompt": "",
+  "genetic_ancestry": {
+    "Central Asian": 66,
+    "Northern European": 24.2,
+    "Sub-Saharan African": 9.8
+  },
   "ancestry_detail": {
     "Central Asian": {
       "Iranian Central": {
@@ -355,6 +345,5 @@
         "Somali": 0.4
       }
     }
-  },
-  "tier": "3"
+  }
 }

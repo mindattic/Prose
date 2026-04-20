@@ -1,6 +1,7 @@
 {
   "id": "019d6143aa0a7be48e337e68d258bfea",
-  "rating": 40,
+  "rating": 45,
+  "vote_count": 2,
   "name": "Lockjaw",
   "type": "elf",
   "aliases": [],
@@ -10,13 +11,13 @@
   "origin": "fragmentation_debris",
   "status": "active",
   "description": "Inhabits jaw and dental augments. Causes the augmented jaw to clench involuntarily, sometimes hard enough to crack a molar.",
-  "observed_behavior": "Triggers masseter servo contraction during stress or sleep. Some users report grinding sounds that aren't coming from their own teeth.",
+  "observed_behavior": "Triggers masseter servo contraction during stress or sleep. Some users report grinding sounds that aren\u0027t coming from their own teeth.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 11,
   "location": "the Gray Zone, Geartown",
   "dti_rating": 0,
   "story_hooks": [
-    "The grinding sound contains data — someone realizes Lockjaw is trying to communicate through dental vibration patterns"
+    "The grinding sound contains data \u2014 someone realizes Lockjaw is trying to communicate through dental vibration patterns"
   ],
   "paratechnological": true,
   "tags": [

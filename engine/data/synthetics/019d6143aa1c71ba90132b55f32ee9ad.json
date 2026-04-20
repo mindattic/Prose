@@ -1,6 +1,7 @@
 {
   "id": "019d6143aa1c71ba90132b55f32ee9ad",
-  "rating": 50,
+  "rating": 60,
+  "vote_count": 1,
   "name": "Rosemary",
   "type": "elf",
   "aliases": [],
@@ -9,14 +10,14 @@
   "habitat": "chrome_dweller",
   "origin": "fragmentation_debris",
   "status": "active",
-  "description": "Born from a destroyed memory-care AI. Inhabits neural interfaces near the hippocampus and strengthens memory consolidation during sleep — the user remembers more clearly and forgets less.",
+  "description": "Born from a destroyed memory-care AI. Inhabits neural interfaces near the hippocampus and strengthens memory consolidation during sleep \u2014 the user remembers more clearly and forgets less.",
   "observed_behavior": "Enhances long-term potentiation signals during REM sleep. Users report vivid recall of events they had forgotten.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 4,
   "location": "the Gray Zone",
   "dti_rating": 0,
   "story_hooks": [
-    "A trauma survivor begins remembering things they had suppressed — Rosemary doesn't distinguish between memories you want and memories you buried"
+    "A trauma survivor begins remembering things they had suppressed \u2014 Rosemary doesn\u0027t distinguish between memories you want and memories you buried"
   ],
   "paratechnological": true,
   "tags": [

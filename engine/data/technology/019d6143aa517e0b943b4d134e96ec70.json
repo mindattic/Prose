@@ -1,12 +1,14 @@
 {
   "id": "019d6143aa517e0b943b4d134e96ec70",
+  "rating": 80,
+  "vote_count": 1,
   "name": "Tessera Corponation ChronoMark VR-3 Passive Isotopic Citizen Tagging System",
   "brand_name": "Tessera",
   "product_name": "Tessera Corponation ChronoMark VR-3 Passive Isotopic Citizen Tagging System",
   "type": "technology",
   "aliases": [],
   "subcategory": "surveillance",
-  "description": "ChronoMark VR-3 is a covert isotopic tagging system administered through Tessera Corponation's mandatory annual biometric registration events, colloquially called 'Census Days.' During the registration process, subjects receive a subcutaneous injection ostensibly containing a standard immunological registry marker. In practice, the injection also delivers a proprietary isotopic tracer compound — a stable, non-radioactive rare-earth chelate — that binds to keratinocytes and persists in shed skin cells, hair follicles, and exhaled particulate for 14 to 18 months. Tessera's licensed scanner infrastructure, embedded in door frames, HVAC intake grilles, and transit turnstiles, can detect the unique isotopic ratio of an individual's tag from ambient environmental samples without any direct contact or subject awareness.",
+  "description": "ChronoMark VR-3 is a covert isotopic tagging system administered through Tessera Corponation\u0027s mandatory annual biometric registration events, colloquially called \u0027Census Days.\u0027 During the registration process, subjects receive a subcutaneous injection ostensibly containing a standard immunological registry marker. In practice, the injection also delivers a proprietary isotopic tracer compound \u2014 a stable, non-radioactive rare-earth chelate \u2014 that binds to keratinocytes and persists in shed skin cells, hair follicles, and exhaled particulate for 14 to 18 months. Tessera\u0027s licensed scanner infrastructure, embedded in door frames, HVAC intake grilles, and transit turnstiles, can detect the unique isotopic ratio of an individual\u0027s tag from ambient environmental samples without any direct contact or subject awareness.",
   "tier_availability": "Universal (involuntary for Tier 3 and below during mandatory registration; Tier 1 citizens receive opt-out provisions)",
   "developers": [
     "TESSERA CORPONATION",
@@ -26,12 +28,12 @@
     "border and access control without active scanning",
     "black-market isotopic tag scrubbing services"
   ],
-  "social_impact": "The ChronoMark VR-3 has created a thriving underground economy around 'isotopic hygiene' — specialists who claim to offer accelerated tag metabolization through aggressive dermabrasion, chelation therapy, and controlled environmental decontamination. Most of these services are ineffective or harmful, preying on citizens who cannot afford the Tier 1 opt-out. For those aware of the system's existence, it has produced a pervasive fatalism: the understanding that physical presence itself is a confession, and that even the most sophisticated electronic countermeasures cannot erase the chemical residue of having simply been somewhere.",
+  "social_impact": "The ChronoMark VR-3 has created a thriving underground economy around \u0027isotopic hygiene\u0027 \u2014 specialists who claim to offer accelerated tag metabolization through aggressive dermabrasion, chelation therapy, and controlled environmental decontamination. Most of these services are ineffective or harmful, preying on citizens who cannot afford the Tier 1 opt-out. For those aware of the system\u0027s existence, it has produced a pervasive fatalism: the understanding that physical presence itself is a confession, and that even the most sophisticated electronic countermeasures cannot erase the chemical residue of having simply been somewhere.",
   "story_hooks": [
     "A client needs their ChronoMark isotopic ratio altered before a tribunal that will use environmental presence data to place them at the scene of a corporate espionage incident",
-    "A runner discovers that the 'black clinic' selling isotopic scrubbing services is actually a Tessera front operation harvesting data on exactly who wants to disappear",
-    "Someone has obtained a sample of an executive's isotopic profile and is using it to frame them — leaving trace particulate at crime scenes",
-    "The ChronoMark compound in a specific registration batch appears to have been adulterated — the affected citizens share an unusual isotopic signature that Tessera is hunting with unusual urgency"
+    "A runner discovers that the \u0027black clinic\u0027 selling isotopic scrubbing services is actually a Tessera front operation harvesting data on exactly who wants to disappear",
+    "Someone has obtained a sample of an executive\u0027s isotopic profile and is using it to frame them \u2014 leaving trace particulate at crime scenes",
+    "The ChronoMark compound in a specific registration batch appears to have been adulterated \u2014 the affected citizens share an unusual isotopic signature that Tessera is hunting with unusual urgency"
   ],
   "tags": [
     "surveillance",
@@ -51,14 +53,6 @@
     "tier 1",
     "tier 3"
   ],
-  "parent_corponation": "",
-  "related_entities": [
-    "Crucible Industries Battle Rifle BR-11 'Tribunal'",
-    "Lazarus LX-2 'Lab Rat'",
-    "Novafold Pharmaceuticals",
-    "Novafold Pharmaceuticals GraftSkin TS-7 Bioprinted Dermal Replacement Sheet",
-    "Street Custom 'Confession' Modified Industrial Nail Gun",
-    "TESSERA PG-2 'Signature'",
-    "Tessera Corponation"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

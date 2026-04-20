@@ -1,10 +1,12 @@
 {
   "id": "019d6143ab357ca39399685da6bfb437",
+  "rating": 80,
+  "vote_count": 1,
   "name": "Neurochemical Dispersal Grenade",
   "type": "weapon",
   "aliases": [],
   "category": "explosive",
-  "description": "The NDG-2 is a non-lethal area-denial grenade that disperses a proprietary aerosolized neurochemical agent developed by LAZARUS PHARMACEUTICALS under contract for GLMZ's crowd management divisions. On detonation, a binary chemical initiator mixes two stable precursor compounds within the grenade body during a 1.2-second reaction phase, generating the active agent — a synthetic GABAergic compound designated LZR-7 — immediately before aerosol dispersal. This binary approach means the grenade can be stored indefinitely without degradation, solving a persistent shelf-life problem in legacy chemical ordnance.\n\nLZR-7 acts on the central nervous system through inhalation and dermal absorption, inducing acute disorientation, short-term anterograde amnesia, and motor coordination failure within 8–15 seconds of exposure. Effects last 12–40 minutes depending on body mass and respiratory rate. The compound is theoretically non-lethal at standard doses, but LAZARUS PHARMACEUTICALS' internal trials — several of which were conducted without subject consent, according to leaked documents — showed a 3–7% fatality rate in subjects with compromised respiratory systems or certain genetic profiles. This data was suppressed.",
+  "description": "The NDG-2 is a non-lethal area-denial grenade that disperses a proprietary aerosolized neurochemical agent developed by LAZARUS PHARMACEUTICALS under contract for GLMZ\u0027s crowd management divisions. On detonation, a binary chemical initiator mixes two stable precursor compounds within the grenade body during a 1.2-second reaction phase, generating the active agent \u2014 a synthetic GABAergic compound designated LZR-7 \u2014 immediately before aerosol dispersal. This binary approach means the grenade can be stored indefinitely without degradation, solving a persistent shelf-life problem in legacy chemical ordnance.\n\nLZR-7 acts on the central nervous system through inhalation and dermal absorption, inducing acute disorientation, short-term anterograde amnesia, and motor coordination failure within 8\u201315 seconds of exposure. Effects last 12\u201340 minutes depending on body mass and respiratory rate. The compound is theoretically non-lethal at standard doses, but LAZARUS PHARMACEUTICALS\u0027 internal trials \u2014 several of which were conducted without subject consent, according to leaked documents \u2014 showed a 3\u20137% fatality rate in subjects with compromised respiratory systems or certain genetic profiles. This data was suppressed.",
   "manufacturer": "Lazarus Compound Operations",
   "tier_availability": "Military only / Black market (rare)",
   "legality": "Prohibited (civilian) / Restricted (licensed security forces)",
@@ -13,9 +15,9 @@
     "Aerosol dispersal mechanisms",
     "GABAergic neurochemical agents"
   ],
-  "specifications": "weight: 280g\ndiameter: 58mm\nactive agent: LZR-7 synthetic GABAergic compound\nreaction phase: 1.2 seconds post-activation\ndispersal radius: 8m effective, 14m trace exposure\nonset time: 8–15 seconds post-exposure\neffect duration: 12–40 minutes\nshelf life: Indefinite (binary precursor design)\nantidote: LZR-Counteragent 3 (LAZARUS proprietary, restricted supply)",
-  "tactical_use": "Used for crowd dispersal, hostage extraction, and covert incapacitation. Security forces deploy NDG-2s into enclosed spaces — transit hubs, protest corridors, corporate lobbies — to incapacitate occupants without structural damage. In covert operations, a single NDG-2 through a ventilation intake can neutralize an entire floor before a team enters. Operators must wear sealed respiratory filtration; partial-filter masks provide insufficient protection. The amnesia effect makes the NDG-2 particularly valued in extraction operations where witnesses must not retain reliable memories.",
-  "cultural_context": "The NDG-2 is one of GLMZ's most politically charged weapons. LAZARUS PHARMACEUTICALS markets it as a humane crowd-control solution, and licensed security forces use that framing publicly. But the suppressed fatality data has circulated in activist networks for years, and the grenade's association with the city's most violent protest crackdowns has made it a symbol of corporate-state violence. In lower-tier communities, the phrase 'getting blanked' refers to any situation where someone is rendered helpless by institutional power. The antidote is controlled supply, held exclusively by LAZARUS — a fact that critics call deliberate leverage.",
+  "specifications": "weight: 280g\ndiameter: 58mm\nactive agent: LZR-7 synthetic GABAergic compound\nreaction phase: 1.2 seconds post-activation\ndispersal radius: 8m effective, 14m trace exposure\nonset time: 8\u201315 seconds post-exposure\neffect duration: 12\u201340 minutes\nshelf life: Indefinite (binary precursor design)\nantidote: LZR-Counteragent 3 (LAZARUS proprietary, restricted supply)",
+  "tactical_use": "Used for crowd dispersal, hostage extraction, and covert incapacitation. Security forces deploy NDG-2s into enclosed spaces \u2014 transit hubs, protest corridors, corporate lobbies \u2014 to incapacitate occupants without structural damage. In covert operations, a single NDG-2 through a ventilation intake can neutralize an entire floor before a team enters. Operators must wear sealed respiratory filtration; partial-filter masks provide insufficient protection. The amnesia effect makes the NDG-2 particularly valued in extraction operations where witnesses must not retain reliable memories.",
+  "cultural_context": "The NDG-2 is one of GLMZ\u0027s most politically charged weapons. LAZARUS PHARMACEUTICALS markets it as a humane crowd-control solution, and licensed security forces use that framing publicly. But the suppressed fatality data has circulated in activist networks for years, and the grenade\u0027s association with the city\u0027s most violent protest crackdowns has made it a symbol of corporate-state violence. In lower-tier communities, the phrase \u0027getting blanked\u0027 refers to any situation where someone is rendered helpless by institutional power. The antidote is controlled supply, held exclusively by LAZARUS \u2014 a fact that critics call deliberate leverage.",
   "known_users": [
     "GLMZ crowd management divisions",
     "LAZARUS PHARMACEUTICALS private security",
@@ -24,9 +26,9 @@
     "Anti-protest enforcement units"
   ],
   "story_hooks": [
-    "A player wakes up with no memory of the last six hours. A spent NDG-2 casing is on the floor nearby. Something was taken — or done — during the blank.",
+    "A player wakes up with no memory of the last six hours. A spent NDG-2 casing is on the floor nearby. Something was taken \u2014 or done \u2014 during the blank.",
     "The suppressed LAZARUS trial data surfaces in full, naming specific subjects and locations. Someone wants it buried again, and the journalist holding it is already missing.",
-    "The antidote supply for an NDG-2 mass deployment at a protest has been stolen before it could be administered to affected civilians. LAZARUS wants it recovered quietly — but the thief wants to expose why the antidote was needed at all."
+    "The antidote supply for an NDG-2 mass deployment at a protest has been stolen before it could be administered to affected civilians. LAZARUS wants it recovered quietly \u2014 but the thief wants to expose why the antidote was needed at all."
   ],
   "ammunition_type": [
     "self_contained_charge"
@@ -47,35 +49,36 @@
     "market",
     "lethal"
   ],
+  "image_prompt": "Product photography of a neurochemical dispersal grenade, matte gunmetal gray sphere 58mm diameter, resting on black carbon composite surface. Top-down angle showing recessed activation plunger with pale cyan accent ring glowing subtly. Dramatic side-lighting casting sharp shadow, emphasizing smooth polymer texture and hairline equatorial separation groove. Latex-gloved hand entering frame from left, fingertip approaching activation zone. Clinical laboratory aesthetic, cool cyan and steel tones, slight depth-of-field blur on background. LAZARUS \u03A6 symbol visible on upper hemisphere. Neo-noir corporate pharmaceutical styling, moody and controlled. Suggest precision engineering and synthetic chemistry. --ar 3:2 --v 6",
+  "dalle3_prompt": "",
   "parent_corponation": "Lazarus Pharmaceuticals",
   "related_entities": [
     "GLMZ",
     "Lazarus Pharmaceuticals",
     "Magpie",
-    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
+    "Meridian Municipal Supply TearClear TC-4 \u0027Dispersal\u0027",
     "Gray Zone life",
     "Tabula",
-    "Volkov-Saito Precision VS-R44 Heritage 'Legacy'"
+    "Volkov-Saito Precision VS-R44 Heritage \u0027Legacy\u0027"
   ],
   "physical_description": {
-    "visual_profile": "A compact spherical grenade with a subtle industrial aesthetic. The body appears smooth and purposeful, neither aggressive nor innocuous — designed to blend into the hands of authorized operators. A central activation mechanism sits recessed slightly into the upper hemisphere, surrounded by faint circular grip indentations. The overall impression is clinical, pharmaceutical rather than militaristic.",
+    "visual_profile": "A compact spherical grenade with a subtle industrial aesthetic. The body appears smooth and purposeful, neither aggressive nor innocuous \u2014 designed to blend into the hands of authorized operators. A central activation mechanism sits recessed slightly into the upper hemisphere, surrounded by faint circular grip indentations. The overall impression is clinical, pharmaceutical rather than militaristic.",
     "dimensions": "58mm diameter sphere; activation plunger extends 12mm above surface when armed",
-    "weight_description": "Hefty for its size — 280g creates a solid, deliberate feel in the palm. Balanced weight distribution makes it sit naturally in a closed fist without rolling. Feels engineered rather than thrown.",
+    "weight_description": "Hefty for its size \u2014 280g creates a solid, deliberate feel in the palm. Balanced weight distribution makes it sit naturally in a closed fist without rolling. Feels engineered rather than thrown.",
     "primary_material": "Composite polymer shell with internal steel reaction chamber housing binary precursor compartments. Polymer exterior rated for pressure containment and thermal stress.",
-    "finish": "Matte technical gray with subtle surface texture — not glossy, designed to minimize reflection and visual attention. Polymer has a faint industrial sheen where wear patterns show from handling.",
+    "finish": "Matte technical gray with subtle surface texture \u2014 not glossy, designed to minimize reflection and visual attention. Polymer has a faint industrial sheen where wear patterns show from handling.",
     "color_scheme": "Matte gunmetal gray dominant; recessed activation zone features pale cyan accent ring (indicating binary compound status and LAZARUS branding). Small band of darker charcoal at equator marks precursor separation line.",
-    "grip_texture": "Textured polymer with microscopic grip nodes — feels slightly tacky, engineered to prevent accidental dropping even in wet conditions or with synthetic fiber gloves. Surface has subtle warmth from material composition.",
+    "grip_texture": "Textured polymer with microscopic grip nodes \u2014 feels slightly tacky, engineered to prevent accidental dropping even in wet conditions or with synthetic fiber gloves. Surface has subtle warmth from material composition.",
     "distinctive_features": [
-      "Recessed activation plunger with subtle cyan illumination ring (passive — indicates armed status)",
+      "Recessed activation plunger with subtle cyan illumination ring (passive \u2014 indicates armed status)",
       "Faint circular grip indentations across upper hemisphere",
       "Hairline separation groove at equatorial centerline (visual indicator of binary chamber division)",
       "Tiny pressure relief valve vent (barely visible, pinhead-sized)",
       "Serial microprint band beneath equatorial groove",
       "Slight iridescent quality to polymer under angled light (anti-counterfeit coating)"
     ],
-    "manufacturer_markings": "LAZARUS COMPOUND OPERATIONS logo — minimalist geometric Φ symbol integrated into cyan accent ring. Below equator: tiny embossed text 'NDG-2 | LZR-7 | RESTRICTED' in sans-serif font. Serial number printed in microtext on bottom pole.",
+    "manufacturer_markings": "LAZARUS COMPOUND OPERATIONS logo \u2014 minimalist geometric \u03A6 symbol integrated into cyan accent ring. Below equator: tiny embossed text \u0027NDG-2 | LZR-7 | RESTRICTED\u0027 in sans-serif font. Serial number printed in microtext on bottom pole.",
     "condition_typical": "Field-deployed examples show wear on grip texture from gloved handling and faint discoloration from exposure to solvents and sweat. Activation rings occasionally show micro-scratches. Well-maintained examples are virtually pristine; heavily used units retain gray finish but lose tactile grip texture on high-contact areas."
   },
-  "image_prompt": "Product photography of a neurochemical dispersal grenade, matte gunmetal gray sphere 58mm diameter, resting on black carbon composite surface. Top-down angle showing recessed activation plunger with pale cyan accent ring glowing subtly. Dramatic side-lighting casting sharp shadow, emphasizing smooth polymer texture and hairline equatorial separation groove. Latex-gloved hand entering frame from left, fingertip approaching activation zone. Clinical laboratory aesthetic, cool cyan and steel tones, slight depth-of-field blur on background. LAZARUS Φ symbol visible on upper hemisphere. Neo-noir corporate pharmaceutical styling, moody and controlled. Suggest precision engineering and synthetic chemistry. --ar 3:2 --v 6",
-  "visual_prompt": "Product photography of a neurochemical dispersal grenade, matte gunmetal gray sphere 58mm diameter, resting on black carbon composite surface. Top-down angle showing recessed activation plunger with pale cyan accent ring glowing subtly. Dramatic side-lighting casting sharp shadow, emphasizing smooth polymer texture and hairline equatorial separation groove. Latex-gloved hand entering frame from left, fingertip approaching activation zone. Clinical laboratory aesthetic, cool cyan and steel tones, slight depth-of-field blur on background. LAZARUS Φ symbol visible on upper hemisphere. Neo-noir corporate pharmaceutical styling, moody and controlled. Suggest precision engineering and synthetic chemistry. --ar 3:2 --v 6"
+  "visual_prompt": "Product photography of a neurochemical dispersal grenade, matte gunmetal gray sphere 58mm diameter, resting on black carbon composite surface. Top-down angle showing recessed activation plunger with pale cyan accent ring glowing subtly. Dramatic side-lighting casting sharp shadow, emphasizing smooth polymer texture and hairline equatorial separation groove. Latex-gloved hand entering frame from left, fingertip approaching activation zone. Clinical laboratory aesthetic, cool cyan and steel tones, slight depth-of-field blur on background. LAZARUS \u03A6 symbol visible on upper hemisphere. Neo-noir corporate pharmaceutical styling, moody and controlled. Suggest precision engineering and synthetic chemistry. --ar 3:2 --v 6"
 }

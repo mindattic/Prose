@@ -1,16 +1,18 @@
 {
   "id": "019d6143a6de70b09391a0ff4e654f83",
+  "rating": 80,
+  "vote_count": 1,
   "type": "character",
   "name": "Aditya Ekwensi",
   "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Crew lead and strategic operations director — The Margin Call",
+  "role": "Crew lead and strategic operations director \u2014 The Margin Call",
   "age": 47,
   "status": "active",
-  "location": "Meridian Core — maintains an office suite in a mid-tier commercial building under a shell consulting company, near State and Monroe",
-  "description": "Aditya Ekwensi a Senior Director of Competitive Intelligence. The title meant he ran the division that stole other corporations' secrets. He was exceptional at it — methodical, patient, and possessed of an institutional understanding of corporate psychology that no street runner can replicate. When Veridian's internal politics turned and his division was restructured (a euphemism for purged), Sterling walked out with his knowledge, his augmentations, and the understanding that the corporate world would eventually need him again, but on his terms.\n\nThe Margin Call operates as a freelance corporate intelligence unit — three ex-corpo operators who conduct espionage, counter-espionage, and strategic disruption for clients who want corporate-quality work without corporate-traceable assets. They dress like executives, think like executives, and deploy tradecraft that was developed in corporate intelligence labs rather than learned on the streets. This makes them simultaneously more effective and more alien than traditional runner crews.\n\nSterling is tall, lean, immaculately groomed, with silver at the temples that he maintains because it communicates authority. He wears tailored suits in every operational context — the suit is the cover identity, the operational tool, and the psychological armor. His face is pleasant, forgettable, and optimized — subtle dermal work that makes him the platonic ideal of a trustworthy executive. He has the handshake of a man who has closed billion-credit deals and the eyes of a man who has destroyed careers for strategic advantage.",
+  "location": "Meridian Core \u2014 maintains an office suite in a mid-tier commercial building under a shell consulting company, near State and Monroe",
+  "description": "Aditya Ekwensi a Senior Director of Competitive Intelligence. The title meant he ran the division that stole other corporations\u0027 secrets. He was exceptional at it \u2014 methodical, patient, and possessed of an institutional understanding of corporate psychology that no street runner can replicate. When Veridian\u0027s internal politics turned and his division was restructured (a euphemism for purged), Sterling walked out with his knowledge, his augmentations, and the understanding that the corporate world would eventually need him again, but on his terms.\n\nThe Margin Call operates as a freelance corporate intelligence unit \u2014 three ex-corpo operators who conduct espionage, counter-espionage, and strategic disruption for clients who want corporate-quality work without corporate-traceable assets. They dress like executives, think like executives, and deploy tradecraft that was developed in corporate intelligence labs rather than learned on the streets. This makes them simultaneously more effective and more alien than traditional runner crews.\n\nSterling is tall, lean, immaculately groomed, with silver at the temples that he maintains because it communicates authority. He wears tailored suits in every operational context \u2014 the suit is the cover identity, the operational tool, and the psychological armor. His face is pleasant, forgettable, and optimized \u2014 subtle dermal work that makes him the platonic ideal of a trustworthy executive. He has the handshake of a man who has closed billion-credit deals and the eyes of a man who has destroyed careers for strategic advantage.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -21,54 +23,58 @@
       "ghost": 0.3
     },
     "core_fears": [
-      "That he is still fundamentally a corporate man playing at independence — that the rebellion is just another career move",
+      "That he is still fundamentally a corporate man playing at independence \u2014 that the rebellion is just another career move",
       "That his crew trusts him with their lives based on a persona that is itself a corporate product",
       "That the corporations he left will eventually consider the Margin Call a sufficient threat to eliminate rather than hire"
     ],
     "core_desires": [
       "To prove that he can outperform the corporate system that created him while operating outside it",
-      "To build a power base that makes him untouchable — not through violence but through the same leverage that corporations use",
+      "To build a power base that makes him untouchable \u2014 not through violence but through the same leverage that corporations use",
       "To never answer to a board, a restructuring committee, or an institutional agenda again"
     ],
     "coping_mechanisms": [
-      "Treats every social interaction as an operation — the constant strategizing prevents genuine vulnerability",
-      "Maintains corporate aesthetics as a form of control — the suit, the office, the schedule are a framework he understands",
-      "Deflects personal questions with professional analysis — ask him how he feels and he'll tell you how the market feels"
+      "Treats every social interaction as an operation \u2014 the constant strategizing prevents genuine vulnerability",
+      "Maintains corporate aesthetics as a form of control \u2014 the suit, the office, the schedule are a framework he understands",
+      "Deflects personal questions with professional analysis \u2014 ask him how he feels and he\u0027ll tell you how the market feels"
     ],
     "blind_spots": [
-      "He evaluates everything through a corporate lens — people are assets, relationships are portfolios, trust is a risk metric. This makes him effective and inhuman.",
+      "He evaluates everything through a corporate lens \u2014 people are assets, relationships are portfolios, trust is a risk metric. This makes him effective and inhuman.",
       "He cannot recognize when his crew needs emotional leadership because emotional leadership was never part of the corporate toolkit",
-      "His confidence in corporate tradecraft makes him dismissive of street-level intelligence, which operates on different rules he doesn't fully understand"
+      "His confidence in corporate tradecraft makes him dismissive of street-level intelligence, which operates on different rules he doesn\u0027t fully understand"
     ],
     "secret": "He was not restructured. He was given a choice: accept reassignment to a black project that would have required him to target civilian infrastructure, or resign with prejudice. He resigned. The black project is still operational. He has files on it. He has done nothing with them."
   },
   "speech_patterns": {
-    "vocabulary": "Corporate, strategic, polished. He speaks in the language of boardrooms — value propositions, risk matrices, stakeholder alignment. It's not affectation; it's his native tongue.",
+    "vocabulary": "Corporate, strategic, polished. He speaks in the language of boardrooms \u2014 value propositions, risk matrices, stakeholder alignment. It\u0027s not affectation; it\u0027s his native tongue.",
     "cadence": "Smooth, controlled, deliberately paced to maximize impact. He never rushes. He never stammers. Every sentence is pre-structured.",
     "verbal_tics": [
-      "Uses 'let's reframe' when someone says something he disagrees with — redirecting, not arguing",
-      "Refers to problems as 'exposures' — 'we have a client exposure' means 'we might be compromised'",
-      "Says 'operationally speaking' to separate emotional content from strategic analysis"
+      "Uses \u0027let\u0027s reframe\u0027 when someone says something he disagrees with \u2014 redirecting, not arguing",
+      "Refers to problems as \u0027exposures\u0027 \u2014 \u0027we have a client exposure\u0027 means \u0027we might be compromised\u0027",
+      "Says \u0027operationally speaking\u0027 to separate emotional content from strategic analysis"
     ],
     "example_lines": [
-      "Let's reframe. You're not asking me to steal from a corporation. You're asking me to relocate an asset from a party that can afford the loss to a party that needs the gain. The ethics are accounting.",
+      "Let\u0027s reframe. You\u0027re not asking me to steal from a corporation. You\u0027re asking me to relocate an asset from a party that can afford the loss to a party that needs the gain. The ethics are accounting.",
       "Operationally speaking, trust is a depreciating asset. You have to reinvest or it goes to zero.",
       "I left the corporate world. I did not leave corporate thinking. The thinking is what makes this work."
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [
     {
       "name": "Lise Arnault",
       "type": "crew / infiltration and social engineering",
-      "description": "Lise is Sterling's counterpart — equally polished, equally corporate, but where he thinks strategically, she thinks psychologically. They are the most effective team in GLMZ for high-level social infiltration and they both know it.",
+      "description": "Lise is Sterling\u0027s counterpart \u2014 equally polished, equally corporate, but where he thinks strategically, she thinks psychologically. They are the most effective team in GLMZ for high-level social infiltration and they both know it.",
       "emotional_core": "Mutual professional admiration that functions as intimacy in a context where actual intimacy is a security risk",
       "story_tension": "Lise has begun questioning whether the Margin Call is different from a corporation or just a smaller one. Sterling cannot afford to hear this question."
     },
     {
       "name": "Kev Ostrowski",
       "type": "crew / technical operations and extraction",
-      "description": "Kev is the crew's hands — the one who handles physical security, technical penetration, and the messy reality of operations that Sterling plans from an office. Sterling respects Kev's skills and is slightly uncomfortable with his directness.",
-      "emotional_core": "Complementary opposition — Sterling plans, Kev executes, and the gap between planning and execution is where trust lives",
+      "description": "Kev is the crew\u0027s hands \u2014 the one who handles physical security, technical penetration, and the messy reality of operations that Sterling plans from an office. Sterling respects Kev\u0027s skills and is slightly uncomfortable with his directness.",
+      "emotional_core": "Complementary opposition \u2014 Sterling plans, Kev executes, and the gap between planning and execution is where trust lives",
       "story_tension": "Kev is the crew member most likely to call Sterling on his corporate detachment. The confrontation is overdue."
     },
     {
@@ -82,12 +88,12 @@
   "story_hooks": [
     "The black project Sterling refused resurfaces and its targets are people the Margin Call is contracted to protect",
     "A corporate client turns out to be a front for Veridian, and Sterling must decide whether to burn the operation or play both sides",
-    "Lise's questioning of the crew's ethics becomes a crisis when a contract requires choosing between profit and principle",
-    "A former colleague from Veridian contacts Sterling with a proposition that could make the Margin Call untouchable — or destroy it"
+    "Lise\u0027s questioning of the crew\u0027s ethics becomes a crisis when a contract requires choosing between profit and principle",
+    "A former colleague from Veridian contacts Sterling with a proposition that could make the Margin Call untouchable \u2014 or destroy it"
   ],
-  "narrative_function": "Sterling brings the corporate espionage genre to GLMZ. His stories are about information as a weapon, about institutions as living organisms, and about the invisible war between corporations that determines the visible reality of the city. He is the character who understands the system from the inside and chooses to exploit it from the outside — not out of principle, but out of pragmatism.",
-  "augmentations": "Cognitive enhancement suite (Veridian corporate tier) — accelerated strategic processing, pattern recognition, and memory compartmentalization. Dermal optimization — subtle facial restructuring for maximum social trust metrics. Encrypted internal communication array (corporate-grade, self-maintaining). Stress-dampening endocrine regulator that maintains physiological calm during high-stakes social interactions.",
-  "daily_life": "Wakes at 0500. Reads financial analysis, corporate filings, and jurisdictional regulatory changes over breakfast — always at the same restaurant, always the same table. Arrives at the office by 0700. Manages active operations, client relationships, and crew tasking throughout the day. Evenings are intelligence synthesis — connecting the day's information into the larger strategic picture. Attends corporate social functions under cover identities to maintain access to the ecosystem. Sleeps six hours exactly.",
+  "narrative_function": "Sterling brings the corporate espionage genre to GLMZ. His stories are about information as a weapon, about institutions as living organisms, and about the invisible war between corporations that determines the visible reality of the city. He is the character who understands the system from the inside and chooses to exploit it from the outside \u2014 not out of principle, but out of pragmatism.",
+  "augmentations": "Cognitive enhancement suite (Veridian corporate tier) \u2014 accelerated strategic processing, pattern recognition, and memory compartmentalization. Dermal optimization \u2014 subtle facial restructuring for maximum social trust metrics. Encrypted internal communication array (corporate-grade, self-maintaining). Stress-dampening endocrine regulator that maintains physiological calm during high-stakes social interactions.",
+  "daily_life": "Wakes at 0500. Reads financial analysis, corporate filings, and jurisdictional regulatory changes over breakfast \u2014 always at the same restaurant, always the same table. Arrives at the office by 0700. Manages active operations, client relationships, and crew tasking throughout the day. Evenings are intelligence synthesis \u2014 connecting the day\u0027s information into the larger strategic picture. Attends corporate social functions under cover identities to maintain access to the ecosystem. Sleeps six hours exactly.",
   "affiliation": "Copperveil Intelligence (executive-level crew lead and strategic operations director)",
   "uses_facets": false,
   "narration_voice": "",
@@ -104,25 +110,25 @@
   },
   "behavioral": {
     "decision_rules": [
-      "Will not accept contracts from his former employer — Veridian is the one client the Margin Call will not serve",
-      "Will always maintain plausible deniability for the crew — if an operation is exposed, the trail dies at the shell company",
-      "Will not deploy lethal force as a first option — killing creates liability, and liability is expensive",
-      "Will treat every client relationship as temporary — permanent loyalty is a corporate trap he has already escaped",
-      "Will compensate crew above market rate with performance incentives — the corporate compensation model works because alignment works",
+      "Will not accept contracts from his former employer \u2014 Veridian is the one client the Margin Call will not serve",
+      "Will always maintain plausible deniability for the crew \u2014 if an operation is exposed, the trail dies at the shell company",
+      "Will not deploy lethal force as a first option \u2014 killing creates liability, and liability is expensive",
+      "Will treat every client relationship as temporary \u2014 permanent loyalty is a corporate trap he has already escaped",
+      "Will compensate crew above market rate with performance incentives \u2014 the corporate compensation model works because alignment works",
       "Will never attend an unsecured meeting without running counter-surveillance for 48 hours prior"
     ],
     "escalation_ladder": [
-      "1. Information — deploy intelligence that changes the adversary's calculus. Knowledge is the first weapon.",
-      "2. Leverage — social, financial, reputational. Apply pressure through channels the adversary values.",
-      "3. Exposure — threaten to make information public. The corporate world runs on reputation; threatening reputation is threatening survival.",
-      "4. Disruption — sabotage operations, communications, or financial flows. Make the adversary too busy to threaten you.",
-      "5. Extraction — remove the crew from the situation entirely. Disappear into the corporate ecosystem like fish into water.",
-      "6. Escalation — engage Kev for physical solutions. Sterling does not handle violence personally. He authorizes it."
+      "1. Information \u2014 deploy intelligence that changes the adversary\u0027s calculus. Knowledge is the first weapon.",
+      "2. Leverage \u2014 social, financial, reputational. Apply pressure through channels the adversary values.",
+      "3. Exposure \u2014 threaten to make information public. The corporate world runs on reputation; threatening reputation is threatening survival.",
+      "4. Disruption \u2014 sabotage operations, communications, or financial flows. Make the adversary too busy to threaten you.",
+      "5. Extraction \u2014 remove the crew from the situation entirely. Disappear into the corporate ecosystem like fish into water.",
+      "6. Escalation \u2014 engage Kev for physical solutions. Sterling does not handle violence personally. He authorizes it."
     ],
     "interpersonal_modes": {
-      "lise": "Collaborative, respectful, strategically open. He shares analysis with Lise before it's complete because her psychological lens sharpens his strategic one. The dynamic looks like a partnership. Underneath, he's managing her the way he managed subordinates at Veridian.",
-      "kev": "Professional, slightly distant. He briefs Kev thoroughly and trusts the execution but cannot fully bridge the gap between the office and the field. Kev's directness makes him uncomfortable because it bypasses the layers Sterling operates through.",
-      "clients": "The full corporate persona — warm, authoritative, trustworthy. The dermal optimization and cognitive enhancement make him supernaturally convincing. Clients sign because they believe. What they believe is carefully constructed.",
+      "lise": "Collaborative, respectful, strategically open. He shares analysis with Lise before it\u0027s complete because her psychological lens sharpens his strategic one. The dynamic looks like a partnership. Underneath, he\u0027s managing her the way he managed subordinates at Veridian.",
+      "kev": "Professional, slightly distant. He briefs Kev thoroughly and trusts the execution but cannot fully bridge the gap between the office and the field. Kev\u0027s directness makes him uncomfortable because it bypasses the layers Sterling operates through.",
+      "clients": "The full corporate persona \u2014 warm, authoritative, trustworthy. The dermal optimization and cognitive enhancement make him supernaturally convincing. Clients sign because they believe. What they believe is carefully constructed.",
       "street_runners": "Cordially dismissive. He respects their courage and considers their tradecraft primitive. This blind spot is his most dangerous."
     },
     "stress_responses": {
@@ -132,23 +138,23 @@
       "critical": "He opens the black project files. Reads them. Closes them. Puts them away. He has done this four times. Each time, the reading lasts longer."
     },
     "contradictions": [
-      "He left corporate life but recreated it in miniature — the Margin Call is a corporation of three with Sterling as CEO",
+      "He left corporate life but recreated it in miniature \u2014 the Margin Call is a corporation of three with Sterling as CEO",
       "He values independence but manages his crew with the same techniques Veridian used to manage him",
-      "He has files on a black project that threatens civilians and has chosen not to act — the inaction is both pragmatic and cowardly",
-      "His corporate persona is so effective that he's lost track of which responses are genuine and which are optimized — the dermal work and the cognitive enhancement have blurred the line"
+      "He has files on a black project that threatens civilians and has chosen not to act \u2014 the inaction is both pragmatic and cowardly",
+      "His corporate persona is so effective that he\u0027s lost track of which responses are genuine and which are optimized \u2014 the dermal work and the cognitive enhancement have blurred the line"
     ],
     "habits": [
-      "Reads financial analysis over breakfast — the same restaurant, the same table, the same order. The routine is cover and comfort simultaneously.",
-      "Adjusts his cuffs before speaking in any meeting — a centering gesture that signals the persona is in place",
-      "Maintains the shell company's cover with genuine attention — tax filings, client records, office maintenance. The fiction is thorough.",
+      "Reads financial analysis over breakfast \u2014 the same restaurant, the same table, the same order. The routine is cover and comfort simultaneously.",
+      "Adjusts his cuffs before speaking in any meeting \u2014 a centering gesture that signals the persona is in place",
+      "Maintains the shell company\u0027s cover with genuine attention \u2014 tax filings, client records, office maintenance. The fiction is thorough.",
       "Reviews the black project files quarterly. Does nothing with them. The review is a ritual whose purpose he refuses to examine.",
-      "Calls his crew 'the team' never 'my crew' — the corporate instinct to minimize possessive language is automatic"
+      "Calls his crew \u0027the team\u0027 never \u0027my crew\u0027 \u2014 the corporate instinct to minimize possessive language is automatic"
     ],
     "breaking_points": [
-      "The black project becoming public and Sterling's inaction being exposed — the moral failure made visible",
-      "Losing Lise or Kev because a plan he designed failed — the strategic mind confronted with human cost",
-      "Veridian directly threatening the Margin Call — the corporation he left proving it never released him",
-      "Being forced to choose between profit and protecting civilians targeted by the black project — the moment the corporate mind hits the moral wall"
+      "The black project becoming public and Sterling\u0027s inaction being exposed \u2014 the moral failure made visible",
+      "Losing Lise or Kev because a plan he designed failed \u2014 the strategic mind confronted with human cost",
+      "Veridian directly threatening the Margin Call \u2014 the corporation he left proving it never released him",
+      "Being forced to choose between profit and protecting civilians targeted by the black project \u2014 the moment the corporate mind hits the moral wall"
     ]
   },
   "cyberware_inventory": [],
@@ -180,45 +186,32 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Arcturus Defense Solutions SAR-3 'Warden'",
-    "Hearthstone Firearms Defender-38 'Snubnose'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [
-    "Arcturus Defense Solutions SAR-3 'Warden'",
-    "Hearthstone Firearms Defender-38 'Snubnose'"
-  ],
-  "related_entities": [
-    "Meridian Core",
-    "Sterling-Nakamura Executive Defense Pistol EDP-1 'Handshake'",
-    "Vantablack-CNX",
-    "VERIDIAN GHOST",
-    "Vantablack VS-3 'Skin Job'",
-    "Lazarus LX-2 'Lab Rat'",
-    "Silver",
-    "Déjà Vu"
-  ],
-  "district": "Meridian Core",
   "physical_description": {
-    "heritage": "Pan-diaspora blend dominated by Sub-Saharan African (37.3%) genetics creating strong bone structure and depth, substantially enriched by South Asian (24.5%) heritage adding refined facial proportions and mid-face fullness, with significant Southeast Asian (18.2%) contribution softening features and adding warm golden undertones. Middle Eastern ancestry (12.2%) defines jawline strength and contributes warm amber tones, while Eastern European (5.1%) and Hispanic/Latin American (2.7%) heritage add subtle complexity to overall phenotype. The result is striking genetic diversity — deep African structural foundation layered with South and Southeast Asian softness, warm Middle Eastern definition, and subtle cool undertones from Eastern European ancestry.",
+    "heritage": "Pan-diaspora blend dominated by Sub-Saharan African (37.3%) genetics creating strong bone structure and depth, substantially enriched by South Asian (24.5%) heritage adding refined facial proportions and mid-face fullness, with significant Southeast Asian (18.2%) contribution softening features and adding warm golden undertones. Middle Eastern ancestry (12.2%) defines jawline strength and contributes warm amber tones, while Eastern European (5.1%) and Hispanic/Latin American (2.7%) heritage add subtle complexity to overall phenotype. The result is striking genetic diversity \u2014 deep African structural foundation layered with South and Southeast Asian softness, warm Middle Eastern definition, and subtle cool undertones from Eastern European ancestry.",
     "height_cm": 188,
     "weight_kg": 79,
-    "build": "Lean and naturally tall with deliberate postural control — no excess muscle mass, but the kind of structured fitness that comes from discipline rather than vanity. Shoulders held level, core engaged at rest.",
+    "build": "Lean and naturally tall with deliberate postural control \u2014 no excess muscle mass, but the kind of structured fitness that comes from discipline rather than vanity. Shoulders held level, core engaged at rest.",
     "hair_color": "Dark brown with intentional silver at temples",
-    "hair_style": "Conservative executive cut — precisely maintained, parted, no product visible. The silver is never dyed out; it's strategically maintained as a trust signal.",
+    "hair_style": "Conservative executive cut \u2014 precisely maintained, parted, no product visible. The silver is never dyed out; it\u0027s strategically maintained as a trust signal.",
     "hair_length": "Short",
-    "eye_color": "Deep warm brown with subtle neural interface points at the iris periphery — visible only under direct light",
-    "skin_tone": "Rich medium-deep mahogany-bronze complexion with warm golden undertones — the depth reflecting substantial Sub-Saharan and South Asian ancestry, the golden warmth from Middle Eastern and Southeast Asian heritage blending seamlessly. Skin has natural radiance, even luminosity, and striking visual depth from authentic genetic diversity rather than optimization.",
-    "complexion": "Facially symmetrical in a way that reads as subtly artificial — dermal optimization has refined minor asymmetries while preserving authentic genetic character. Strong, defined bone structure characteristic of African heritage with the refined facial proportions of South Asian ancestry. Fuller mid-face from Southeast Asian genetics, strong jawline accentuated by Middle Eastern heritage. Skin is clear, moisturized, unmarred. The subtle over-symmetry of optimization is evident only to trained eyes, while the authentic genetic complexity of his mixed heritage remains visually striking — creating memorable professionalism layered with genuine human diversity.",
+    "eye_color": "Deep warm brown with subtle neural interface points at the iris periphery \u2014 visible only under direct light",
+    "skin_tone": "Rich medium-deep mahogany-bronze complexion with warm golden undertones \u2014 the depth reflecting substantial Sub-Saharan and South Asian ancestry, the golden warmth from Middle Eastern and Southeast Asian heritage blending seamlessly. Skin has natural radiance, even luminosity, and striking visual depth from authentic genetic diversity rather than optimization.",
+    "complexion": "Facially symmetrical in a way that reads as subtly artificial \u2014 dermal optimization has refined minor asymmetries while preserving authentic genetic character. Strong, defined bone structure characteristic of African heritage with the refined facial proportions of South Asian ancestry. Fuller mid-face from Southeast Asian genetics, strong jawline accentuated by Middle Eastern heritage. Skin is clear, moisturized, unmarred. The subtle over-symmetry of optimization is evident only to trained eyes, while the authentic genetic complexity of his mixed heritage remains visually striking \u2014 creating memorable professionalism layered with genuine human diversity.",
     "distinguishing_marks": [
-      "A thin, pale scar runs along the left clavicle — approximately 8cm long, consistent with surgical access or combat knife work from 15+ years prior",
+      "A thin, pale scar runs along the left clavicle \u2014 approximately 8cm long, consistent with surgical access or combat knife work from 15\u002B years prior",
       "Nearly invisible microinjection ports along the interior of both wrists, partially concealed by custom cufflinks"
     ],
-    "visible_augmentations": "The augmentations are designed for invisibility. Neural interface points around the iris are visible only in specific lighting. The dermal optimization work is evident only to someone trained to recognize it — subtle over-symmetry, perfect skin tone, minimal pore visibility. To most observers, he simply looks like a well-maintained 47-year-old executive. The cufflinks occasionally catch light to reveal circular ports, but this reads as high-end jewelry.",
-    "posture_movement": "Moves with the economy of someone who has trained to control every gesture. No fidgeting, no wasted motion. When seated, perfectly still — the kind of stillness that suggests internal processing rather than relaxation. Handshake is firm, duration exactly 2-3 seconds, grip pressure calibrated. Eye contact is constant but not aggressive. Speech is measured, with deliberate pauses that communicate confidence and control.",
-    "clothing_style": "Tailored suits in charcoal, navy, and dark gray — custom fit, likely Tier 1-2 corpo clothiers. Shirts are white, cream, or pale blue, always pressed to knife-edge precision. Ties are muted, expensive, subtle. Shoes are Italian leather, polished to mirror finish. Watches are understated — either vintage Rolex or modern minimalist design. Cufflinks in brushed steel or gold. The overall presentation is 'senior director who has moved between three multinational corporations' — the uniform of legitimate power. Even when conducting street operations, the suit remains; it is his camouflage and his weapon."
+    "visible_augmentations": "The augmentations are designed for invisibility. Neural interface points around the iris are visible only in specific lighting. The dermal optimization work is evident only to someone trained to recognize it \u2014 subtle over-symmetry, perfect skin tone, minimal pore visibility. To most observers, he simply looks like a well-maintained 47-year-old executive. The cufflinks occasionally catch light to reveal circular ports, but this reads as high-end jewelry.",
+    "posture_movement": "Moves with the economy of someone who has trained to control every gesture. No fidgeting, no wasted motion. When seated, perfectly still \u2014 the kind of stillness that suggests internal processing rather than relaxation. Handshake is firm, duration exactly 2-3 seconds, grip pressure calibrated. Eye contact is constant but not aggressive. Speech is measured, with deliberate pauses that communicate confidence and control.",
+    "clothing_style": "Tailored suits in charcoal, navy, and dark gray \u2014 custom fit, likely Tier 1-2 corpo clothiers. Shirts are white, cream, or pale blue, always pressed to knife-edge precision. Ties are muted, expensive, subtle. Shoes are Italian leather, polished to mirror finish. Watches are understated \u2014 either vintage Rolex or modern minimalist design. Cufflinks in brushed steel or gold. The overall presentation is \u0027senior director who has moved between three multinational corporations\u0027 \u2014 the uniform of legitimate power. Even when conducting street operations, the suit remains; it is his camouflage and his weapon."
   },
   "image_prompt": "Aditya Ekwensi, 47-year-old senior corporate executive, 188cm tall, lean athletic build. Rich mahogany-bronze skin with warm golden undertones reflecting Sub-Saharan African, South Asian, Southeast Asian, Middle Eastern, and Eastern European heritage. Strong defined African bone structure refined by South Asian proportions, fuller mid-face from Southeast Asian genetics, strong jawline from Middle Eastern heritage. Deep warm brown eyes with barely visible neural interface points. Dark brown hair with distinguished silver at temples, conservative executive cut. Perfectly symmetrical face suggesting subtle dermal optimization. Thin pale 8cm scar along left clavicle. Wearing custom tailored charcoal suit, white pressed shirt, muted expensive tie, brushed steel cufflinks concealing microinjection ports. Italian leather shoes polished to mirror finish. Seated in high-rise office with floor-to-ceiling windows, city lights glowing at dusk beyond. Posture perfectly still, completely controlled. Neutral professional expression. Cool corporate lighting with slight warm amber from city glow. GLMZ, Great Lakes Metropolitan Zone. Photograph quality, photorealistic, cinematic, professional corporate portraiture --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Sub-Saharan African": 37.3,
     "South Asian": 24.5,
@@ -227,12 +220,6 @@
     "Eastern European": 5.1,
     "Hispanic/Latin American": 2.7
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Sub-Saharan African": {
       "West African": {
@@ -285,6 +272,5 @@
         "Mexican": 0.5
       }
     }
-  },
-  "tier": "5"
+  }
 }

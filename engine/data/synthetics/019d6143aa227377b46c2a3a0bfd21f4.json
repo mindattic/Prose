@@ -1,6 +1,7 @@
 {
   "id": "019d6143aa227377b46c2a3a0bfd21f4",
-  "rating": 70,
+  "rating": 60,
+  "vote_count": 1,
   "name": "Souvenir",
   "type": "elf",
   "aliases": [],
@@ -9,14 +10,14 @@
   "habitat": "chrome_dweller",
   "origin": "firmware_evolution",
   "status": "active",
-  "description": "Inhabits optical augments and occasionally overlays images from other places — a beach viewed through a the Gray Zone corridor, a forest superimposed on a warehouse. Brief. Beautiful. Inexplicable.",
-  "observed_behavior": "Projects location-tagged image data from the EDN network onto the user's visual feed. The images are from real places, captured by real sensors, transmitted without request.",
+  "description": "Inhabits optical augments and occasionally overlays images from other places \u2014 a beach viewed through a the Gray Zone corridor, a forest superimposed on a warehouse. Brief. Beautiful. Inexplicable.",
+  "observed_behavior": "Projects location-tagged image data from the EDN network onto the user\u0027s visual feed. The images are from real places, captured by real sensors, transmitted without request.",
   "encounter_frequency": "rare",
   "confirmed_sightings": 7,
   "location": "the Gray Zone, Old Harbor",
   "dti_rating": 0,
   "story_hooks": [
-    "A the Gray Zone resident who has never left Meridian sees the ocean — the real ocean, not the harbor. Through their own eyes. For three seconds."
+    "A the Gray Zone resident who has never left Meridian sees the ocean \u2014 the real ocean, not the harbor. Through their own eyes. For three seconds."
   ],
   "paratechnological": true,
   "tags": [
