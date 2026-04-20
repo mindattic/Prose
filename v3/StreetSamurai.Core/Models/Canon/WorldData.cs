@@ -86,6 +86,7 @@ public class WorldbuildingDocument : ICanonEntity
 {
     [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("rating")] public double Rating { get; set; } = 0.0;
+    [JsonPropertyName("vote_count")] public int VoteCount { get; set; } = 0;
     [JsonPropertyName("file_name")] public string FileName { get; set; } = "";
     [JsonPropertyName("title")] public string Title { get; set; } = "";
     [JsonPropertyName("category")] public string Category { get; set; } = "";
@@ -107,6 +108,7 @@ public class CorponationData : ICanonEntity
 {
     [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("rating")] public double Rating { get; set; } = 0.0;
+    [JsonPropertyName("vote_count")] public int VoteCount { get; set; } = 0;
     [JsonPropertyName("number")] public int Number { get; set; }
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("full_legal_name")] public string FullLegalName { get; set; } = "";

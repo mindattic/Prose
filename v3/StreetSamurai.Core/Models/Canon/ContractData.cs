@@ -13,6 +13,7 @@ public class ContractData : ICanonEntity
 {
     [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("rating")] public double Rating { get; set; } = 0.0;
+    [JsonPropertyName("vote_count")] public int VoteCount { get; set; } = 0;
     [JsonPropertyName("codename")] public string Codename { get; set; } = "";
     [JsonPropertyName("type")] public string Type { get; set; } = "contract";
     [JsonPropertyName("client")] public string Client { get; set; } = "";

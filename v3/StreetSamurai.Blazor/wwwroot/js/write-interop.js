@@ -65,6 +65,36 @@ window.writeInterop = {
         }
     },
 
+    scrollToSection: function (id, sectionIndex) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        if (el.contentEditable === 'true') {
+            // Rich mode: find the Nth <hr> and scroll the element after it into view
+            const hrs = el.querySelectorAll('hr');
+            if (sectionIndex === 0) {
+                el.scrollTop = 0;
+            } else if (sectionIndex <= hrs.length) {
+                hrs[sectionIndex - 1].scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        } else {
+            // Raw mode: find the Nth occurrence of '======' and scroll to that line
+            const delimiter = '======';
+            let pos = -1;
+            for (let i = 0; i < sectionIndex; i++) {
+                pos = el.value.indexOf(delimiter, pos + 1);
+                if (pos === -1) break;
+            }
+            if (sectionIndex === 0) {
+                el.scrollTop = 0;
+            } else if (pos !== -1) {
+                const linesBefore = el.value.substring(0, pos).split('\n').length - 1;
+                const lineHeight = parseInt(getComputedStyle(el).lineHeight) || 20;
+                el.scrollTop = linesBefore * lineHeight;
+            }
+            el.focus();
+        }
+    },
+
     replaceRange: function (id, start, end, text) {
         const el = document.getElementById(id);
         if (!el) return "";

@@ -1396,10 +1396,7 @@
 
     private async Task ScrollToSection(int sectionIndex)
     {
-        // In rich mode, scroll to the Nth chapter break in the contenteditable
-        // In raw mode, scroll to the Nth ====== delimiter
-        // For now, a simple approach: focus the editor and scroll to approximate position
-        await FocusEditorEnd(); // TODO: precise section scrolling via JS interop
+        await JS.InvokeVoidAsync("writeInterop.scrollToSection", "story-surface", sectionIndex);
     }
 
     private void RefreshSceneEntities()

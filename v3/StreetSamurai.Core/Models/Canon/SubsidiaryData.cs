@@ -13,6 +13,7 @@ public class SubsidiaryData : ICanonEntity
 {
     [JsonPropertyName("id")] public string Id { get; set; } = Guid.CreateVersion7().ToString("N");
     [JsonPropertyName("rating")] public double Rating { get; set; } = 0.0;
+    [JsonPropertyName("vote_count")] public int VoteCount { get; set; } = 0;
     [JsonPropertyName("name")] public string Name { get; set; } = "";
     [JsonPropertyName("type")] public string Type { get; set; } = "subsidiary";
     [JsonPropertyName("parent_corponation")] public string ParentCorponation { get; set; } = "";

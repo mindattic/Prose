@@ -1421,9 +1421,12 @@ textarea.auto-grow {
 .board-grid { display: flex; flex-wrap: wrap; gap: 12px; padding: 2px 0 8px; }
 .board-tile { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 110px; height: 96px; background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 12px 8px 16px; text-decoration: none; color: #e6edf3; gap: 6px; transition: background 0.12s, border-color 0.12s; position: relative; }
 .board-tile:hover { background: #1c2128; border-color: #dc3545; color: #fff; text-decoration: none; }
-.board-tile-sm { width: 94px; height: 80px; }
 .board-tile-viz .board-tile-icon { color: #58a6ff; }
 .board-tile-viz:hover { border-color: #58a6ff; }
+.board-tile-data .board-tile-icon { color: #d9a030; }
+.board-tile-data:hover { border-color: #d9a030; }
+.board-tile-tool .board-tile-icon { color: #3fb950; }
+.board-tile-tool:hover { border-color: #3fb950; }
 .board-tile-icon { font-size: 1.5rem; color: #dc3545; }
 .board-tile-name { font-size: 0.8rem; font-weight: 500; text-align: center; line-height: 1.3; }
 .board-tile-count { position: absolute; bottom: 2px; right: 10px; font-size: 0.65rem; color: #8b949e; }
