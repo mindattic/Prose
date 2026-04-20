@@ -1,16 +1,18 @@
 {
   "id": "019d6143a723709584098d9d734369df",
+  "rating": 80,
+  "vote_count": 1,
   "type": "character",
   "name": "Daniela Jaramillo-Kim",
   "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
-  "role": "Division Vice President, Strategic Acquisitions — Axiom",
+  "role": "Division Vice President, Strategic Acquisitions \u2014 Axiom",
   "age": 54,
   "status": "active",
   "location": "The Spire, Axiom Executive Floors 88-92, near Michigan Ave and Oak",
-  "description": "Daniela Jaramillo-Kim is the kind of person who makes rooms quieter when they enter, not through volume but through gravity — there is a quality of compressed attention about them that makes everyone present feel slightly observed. They are stocky and deliberate, with dark skin that has a faint bioluminescent undertone along the jaw and collarbones, a cosmetic procedure from their forties that they chose because they wanted to look exactly as expensive as they are. Their hair is grown in dense locs that contain, threaded through the lower three, a series of micro-display filaments that can project data onto any nearby surface — functional and fashionable and a signal that they have not forgotten they came from an engineering background.\n\nThey have been at Axiom for twenty-two years. They have acquired forty-seven companies, liquidated nineteen, and folded the rest into Axiom's structure with the same efficient warmth one might apply to absorbing useful parts of a organism. They are not cruel — cruelty is imprecise. They are, by their own accounting, honest: they always tell the people they are acquiring exactly what Axiom intends. It is not their fault if those people don't believe them.",
+  "description": "Daniela Jaramillo-Kim is the kind of person who makes rooms quieter when they enter, not through volume but through gravity \u2014 there is a quality of compressed attention about them that makes everyone present feel slightly observed. They are stocky and deliberate, with dark skin that has a faint bioluminescent undertone along the jaw and collarbones, a cosmetic procedure from their forties that they chose because they wanted to look exactly as expensive as they are. Their hair is grown in dense locs that contain, threaded through the lower three, a series of micro-display filaments that can project data onto any nearby surface \u2014 functional and fashionable and a signal that they have not forgotten they came from an engineering background.\n\nThey have been at Axiom for twenty-two years. They have acquired forty-seven companies, liquidated nineteen, and folded the rest into Axiom\u0027s structure with the same efficient warmth one might apply to absorbing useful parts of a organism. They are not cruel \u2014 cruelty is imprecise. They are, by their own accounting, honest: they always tell the people they are acquiring exactly what Axiom intends. It is not their fault if those people don\u0027t believe them.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -22,42 +24,46 @@
     },
     "core_fears": [
       "Being outmaneuvered by someone less intelligent than them",
-      "That the version of themselves that had principles was not discarded — just suppressed, and is still in there somewhere, watching"
+      "That the version of themselves that had principles was not discarded \u2014 just suppressed, and is still in there somewhere, watching"
     ],
     "core_desires": [
-      "To build something that persists beyond the corponation context — something genuinely theirs",
+      "To build something that persists beyond the corponation context \u2014 something genuinely theirs",
       "Acknowledgment from someone whose opinion they actually respect, which is almost no one"
     ],
     "coping_mechanisms": [
       "Controlled environments",
       "Reducing human complications to structural problems with structural solutions",
-      "The E.L.F. at their private terminal — they leave it extremely detailed operational summaries, which is perhaps the most honest they ever are"
+      "The E.L.F. at their private terminal \u2014 they leave it extremely detailed operational summaries, which is perhaps the most honest they ever are"
     ],
     "blind_spots": [
       "They have optimized themselves so thoroughly for acquisition contexts that they no longer know how to want something for non-strategic reasons",
-      "They assume everyone is negotiating, which means they miss the people who simply don't have an angle"
+      "They assume everyone is negotiating, which means they miss the people who simply don\u0027t have an angle"
     ],
-    "secret": "The forty-seventh acquisition — a small genomics startup in Ashfeld — was personal. The founder was someone Yemisi loved before Axiom. They acquired the company specifically to protect the founder from a hostile Tessera approach, restructured it in a way that ensured the founder's research continued, and buried the connection so thoroughly that no one at Axiom has ever found it. They have not spoken to the founder since."
+    "secret": "The forty-seventh acquisition \u2014 a small genomics startup in Ashfeld \u2014 was personal. The founder was someone Yemisi loved before Axiom. They acquired the company specifically to protect the founder from a hostile Tessera approach, restructured it in a way that ensured the founder\u0027s research continued, and buried the connection so thoroughly that no one at Axiom has ever found it. They have not spoken to the founder since."
   },
   "speech_patterns": {
-    "vocabulary": "Clean, precise, never corporate-jargon — they find jargon imprecise. Uses structural metaphors. Occasionally pauses to allow silence to do work.",
+    "vocabulary": "Clean, precise, never corporate-jargon \u2014 they find jargon imprecise. Uses structural metaphors. Occasionally pauses to allow silence to do work.",
     "cadence": "Deliberate. Every sentence feels considered. Never rushes.",
     "verbal_tics": [
       "Long pause before pivoting to the actual point",
-      "'The honest answer is—' (always precedes something carefully constructed to sound honest)"
+      "\u0027The honest answer is\u2014\u0027 (always precedes something carefully constructed to sound honest)"
     ],
     "example_lines": [
-      "'The honest answer is that Axiom will acquire this company whether you cooperate or not. I'm here because cooperation produces better outcomes for both of us, and I find bad outcomes unpleasant.'",
-      "'I don't negotiate. I identify what's actually possible and then we discuss whether you'd like to participate in it.'"
-    ]
+      "\u0027The honest answer is that Axiom will acquire this company whether you cooperate or not. I\u0027m here because cooperation produces better outcomes for both of us, and I find bad outcomes unpleasant.\u0027",
+      "\u0027I don\u0027t negotiate. I identify what\u0027s actually possible and then we discuss whether you\u0027d like to participate in it.\u0027"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "They approach someone outside Axiom's usual channels with an unusual request — something they need done without Axiom's knowledge, which immediately raises the question of what a VP of Strategic Acquisitions could possibly need to hide from their own corponation.",
-    "The founder of the forty-seventh acquisition has discovered something in their protected research that Axiom will want — and will use destructively — and Yemisi is now caught between institutional loyalty and the single thing they have ever done for a reason that wasn't strategic."
+    "They approach someone outside Axiom\u0027s usual channels with an unusual request \u2014 something they need done without Axiom\u0027s knowledge, which immediately raises the question of what a VP of Strategic Acquisitions could possibly need to hide from their own corponation.",
+    "The founder of the forty-seventh acquisition has discovered something in their protected research that Axiom will want \u2014 and will use destructively \u2014 and Yemisi is now caught between institutional loyalty and the single thing they have ever done for a reason that wasn\u0027t strategic."
   ],
-  "narrative_function": "Executive-level power broker; quest giver with resources but complicated motives; antagonist or reluctant ally depending on whether Axiom's interests align; window into how corporate expansion actually operates at the top.",
-  "augmentations": "Bioluminescent skin treatment (jaw and collarbone, copper-gold tone). Micro-display filaments woven into lower locs — projects schematics, contracts, presentation data. High-end executive neural interface with full sensory data overlay. Subdermal cardiac monitor.",
+  "narrative_function": "Executive-level power broker; quest giver with resources but complicated motives; antagonist or reluctant ally depending on whether Axiom\u0027s interests align; window into how corporate expansion actually operates at the top.",
+  "augmentations": "Bioluminescent skin treatment (jaw and collarbone, copper-gold tone). Micro-display filaments woven into lower locs \u2014 projects schematics, contracts, presentation data. High-end executive neural interface with full sensory data overlay. Subdermal cardiac monitor.",
   "daily_life": "Mornings spent in briefings with acquisition targets or their legal teams; afternoons in internal Axiom strategy sessions; evenings frequently involve dinners that are also negotiations. They sleep six hours precisely and consider it a discipline.",
   "affiliation": "Cook Inlet Region, Inc. (executive-level division vice president)",
   "uses_facets": false,
@@ -109,29 +115,29 @@
     "escalation_ladder": [
       "Polite structural framing",
       "Explicit statement of available options and their consequences",
-      "Deployment of Axiom's considerable institutional pressure",
-      "Personal intervention — rare, decisive, unsettling"
+      "Deployment of Axiom\u0027s considerable institutional pressure",
+      "Personal intervention \u2014 rare, decisive, unsettling"
     ],
     "interpersonal_modes": {
-      "strangers": "Warm, attentive, precisely calibrated to make the other person feel seen — it is a technique and they know it is a technique and this no longer bothers them",
+      "strangers": "Warm, attentive, precisely calibrated to make the other person feel seen \u2014 it is a technique and they know it is a technique and this no longer bothers them",
       "friends": "There are very few people in this category; with them, they are surprisingly still"
     },
     "stress_responses": {
       "low": "Becomes more precise, less social warmth in the voice",
-      "medium": "Withdraws into logistics — breaks the problem into components",
+      "medium": "Withdraws into logistics \u2014 breaks the problem into components",
       "high": "Completely still, bioluminescent tone shifts slightly cooler, begins building contingency frameworks in silence"
     },
     "contradictions": [
-      "They describe themselves as honest and they are — within a frame they constructed specifically to make certain truths invisible"
+      "They describe themselves as honest and they are \u2014 within a frame they constructed specifically to make certain truths invisible"
     ],
     "habits": [
-      "Leaves the terminal E.L.F. a detailed summary of their day, framed as strategic debrief — it is the most unguarded they ever are",
+      "Leaves the terminal E.L.F. a detailed summary of their day, framed as strategic debrief \u2014 it is the most unguarded they ever are",
       "Never sits with their back to a room entrance",
-      "Knows the name of every person they have acquired — all forty-seven founders, all the employees above a certain threshold"
+      "Knows the name of every person they have acquired \u2014 all forty-seven founders, all the employees above a certain threshold"
     ],
     "breaking_points": [
-      "Discovery of the forty-seventh acquisition's personal origin",
-      "Being directed by Axiom's board to liquidate something they have covertly protected"
+      "Discovery of the forty-seventh acquisition\u0027s personal origin",
+      "Being directed by Axiom\u0027s board to liquidate something they have covertly protected"
     ]
   },
   "cyberware_inventory": [
@@ -213,7 +219,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Lateral move into Strategic Acquisitions — recognized that power in Axiom moved through ownership, not construction",
+      "event": "Lateral move into Strategic Acquisitions \u2014 recognized that power in Axiom moved through ownership, not construction",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -229,59 +235,45 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Acquisition forty-seven — the Ashfeld genomics startup; buried the personal connection in restructuring documents",
+      "event": "Acquisition forty-seven \u2014 the Ashfeld genomics startup; buried the personal connection in restructuring documents",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
     }
   ],
   "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Model 9 'Payday'",
-    "Forge-Smith Collective Thermal Cleave 'Ember'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Filament",
-    "Volkov-Saito Precision VS-40 'Magistrate'",
-    "The Spire",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "Honest Burger",
-    "Gravimetric Collapse Charge GCC-9"
-  ],
-  "district": "The Spires",
   "physical_description": {
     "heritage": "East Asian (40.8%) ancestry provides primary bone structure and facial definition, with substantial Hispanic/Latin American (27.1%) and South Asian (20.7%) contributions creating a striking blended phenotype. Eastern European (11.4%) ancestry adds subtle depth to eye shape and facial proportions. The combination creates distinctive cheekbone prominence, slightly angular facial geometry from East Asian heritage, warm golden undertones from South Asian and Hispanic ancestry, and refined eye shape reflecting the full genetic mosaic.",
     "height_cm": 168,
     "weight_kg": 82,
-    "build": "Stocky and deliberately composed, broad-shouldered with a center of gravity that feels planted. Not muscular but dense — the build of someone who has learned to occupy space with intention rather than volume.",
+    "build": "Stocky and deliberately composed, broad-shouldered with a center of gravity that feels planted. Not muscular but dense \u2014 the build of someone who has learned to occupy space with intention rather than volume.",
     "hair_color": "Natural black with copper undertones",
     "hair_style": "Dense locs worn at mid-back length, lower three locs threaded with micro-display filaments that create faint luminescent traces when active",
     "hair_length": "Long",
     "eye_color": "Deep brown, unaugmented but with subtle neural interface indicators at the outer canthi",
     "skin_tone": "Warm honey-bronze with golden undertones, reflecting the blended melanin profile of East Asian, South Asian, and Hispanic/Latin American ancestry with Eastern European refinement. Deliberately maintained to high polish.",
-    "complexion": "Immaculate grooming; jaw and collarbone areas show faint bioluminescent patina in copper-gold tone visible in low light — a cosmetic treatment applied with surgical precision. Facial features reflect the defined bone structure of East Asian heritage with prominent cheekbones, slightly angular geometry, enhanced by warm golden undertones from South Asian and Hispanic ancestry. Minimal visible aging despite age 54; skin texture suggests meticulous dermatological maintenance. Expression typically neutral, observant.",
+    "complexion": "Immaculate grooming; jaw and collarbone areas show faint bioluminescent patina in copper-gold tone visible in low light \u2014 a cosmetic treatment applied with surgical precision. Facial features reflect the defined bone structure of East Asian heritage with prominent cheekbones, slightly angular geometry, enhanced by warm golden undertones from South Asian and Hispanic ancestry. Minimal visible aging despite age 54; skin texture suggests meticulous dermatological maintenance. Expression typically neutral, observant.",
     "distinguishing_marks": [
       "Faint bioluminescent tracery along the jawline and collarbones in copper-gold tone, most visible in dim lighting or when emotionally engaged",
       "Micro-display filaments visible as thin metallic threads woven through the lower three locs, casting soft light when projecting data"
     ],
     "visible_augmentations": "Micro-display filaments in locs capable of projecting schematics and contracts onto nearby surfaces. Faint bioluminescent skin treatment along jaw and collarbone. Subtle neural interface hardware visible at outer eye corners (copper-tone circuitry under skin). Everything else is subcutaneous: cardiac monitor, neural overlay system, sensory data integration.",
-    "posture_movement": "Moves with economical precision — no wasted motion. Sits with spine straight and weight centered. Speaks slowly and holds silence with the same confidence others use to fill it. Hands rest openly on tables during negotiations; a signal of control. When thinking, occasionally traces fingers along a loc, activating micro-display data for private review.",
-    "clothing_style": "Tier 1 executive minimalism. Favors high-end, understated pieces: tailored charcoal or obsidian suits from luxury fabricators (likely Yoshida or equivalent), cut to emphasize their compact solidity rather than disguise it. Shirts in natural fibers (cotton, linen blends) in cream, silver-grey, or soft black. No visible branding — the clothes themselves are the statement. Jewelry minimal: a single copper-toned wedding band, worn with intentional visibility. Shoes are always high-grade synthetic leather, polished to mirror finish. Accessories are functional: a slim neural interface wrist cuff in matte titanium, occasionally a data-projection smart-glasses frame (worn at hairline when needed). Overall aesthetic: someone for whom luxury is a language of efficiency, not ostentation."
+    "posture_movement": "Moves with economical precision \u2014 no wasted motion. Sits with spine straight and weight centered. Speaks slowly and holds silence with the same confidence others use to fill it. Hands rest openly on tables during negotiations; a signal of control. When thinking, occasionally traces fingers along a loc, activating micro-display data for private review.",
+    "clothing_style": "Tier 1 executive minimalism. Favors high-end, understated pieces: tailored charcoal or obsidian suits from luxury fabricators (likely Yoshida or equivalent), cut to emphasize their compact solidity rather than disguise it. Shirts in natural fibers (cotton, linen blends) in cream, silver-grey, or soft black. No visible branding \u2014 the clothes themselves are the statement. Jewelry minimal: a single copper-toned wedding band, worn with intentional visibility. Shoes are always high-grade synthetic leather, polished to mirror finish. Accessories are functional: a slim neural interface wrist cuff in matte titanium, occasionally a data-projection smart-glasses frame (worn at hairline when needed). Overall aesthetic: someone for whom luxury is a language of efficiency, not ostentation."
   },
-  "image_prompt": "Daniela Jaramillo-Kim, 54-year-old neo-noir executive in 2226, warm honey-bronze skin with golden undertones reflecting East Asian, Hispanic, South Asian, and Eastern European heritage. Striking angular cheekbones, deep brown unaugmented eyes with subtle neural interface indicators at outer corners. Shoulder-length dense black locs with copper undertones, lower three locs threaded with micro-display filaments glowing softly. Stocky, broad-shouldered frame at 168cm. Faint bioluminescent copper-gold patina along jaw and collarbones visible in dim light. Immaculate appearance, minimal aging. Wearing tailored charcoal suit from luxury fabricator, cream natural-fiber shirt, polished synthetic leather shoes, copper-toned wedding band, matte titanium neural interface wrist cuff. Neutral, observant expression. Seated at executive table with economical posture, hand resting confidently, fingers tracing a luminescent loc. Cool neon-lit office interior with deep shadows, low-angle lighting emphasizing jawline tracery and locs' micro-display glow. Cinematic, corporate noir aesthetic, 2200s luxury minimalism. --ar 2:3 --v 6",
+  "image_prompt": "Daniela Jaramillo-Kim, 54-year-old neo-noir executive in 2226, warm honey-bronze skin with golden undertones reflecting East Asian, Hispanic, South Asian, and Eastern European heritage. Striking angular cheekbones, deep brown unaugmented eyes with subtle neural interface indicators at outer corners. Shoulder-length dense black locs with copper undertones, lower three locs threaded with micro-display filaments glowing softly. Stocky, broad-shouldered frame at 168cm. Faint bioluminescent copper-gold patina along jaw and collarbones visible in dim light. Immaculate appearance, minimal aging. Wearing tailored charcoal suit from luxury fabricator, cream natural-fiber shirt, polished synthetic leather shoes, copper-toned wedding band, matte titanium neural interface wrist cuff. Neutral, observant expression. Seated at executive table with economical posture, hand resting confidently, fingers tracing a luminescent loc. Cool neon-lit office interior with deep shadows, low-angle lighting emphasizing jawline tracery and locs\u0027 micro-display glow. Cinematic, corporate noir aesthetic, 2200s luxury minimalism. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "East Asian": 40.8,
     "Hispanic/Latin American": 27.1,
     "South Asian": 20.7,
     "Eastern European": 11.4
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "East Asian": {
       "Korean": {
@@ -320,6 +312,5 @@
         "Sorbian": 7.2
       }
     }
-  },
-  "tier": "5"
+  }
 }

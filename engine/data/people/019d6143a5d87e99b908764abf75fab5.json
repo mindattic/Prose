@@ -1,16 +1,18 @@
 {
   "id": "019d6143a5d87e99b908764abf75fab5",
+  "rating": 80,
+  "vote_count": 1,
   "type": "character",
-  "name": "Nova Möller",
+  "name": "Nova M\u00F6ller",
   "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
-  "role": "Infrastructure disruption and industrial sabotage — saboteur",
+  "role": "Infrastructure disruption and industrial sabotage \u2014 saboteur",
   "age": 43,
   "status": "active",
-  "location": "The Circuit — neon-lit entertainment and vice district, near Fullerton and Damen",
-  "description": "Nova Möller are lean and angular, all sharp edges and visible tension. At 43, they have soft features that belie the chrome underneath — people underestimate them once, usually only once. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and they make no effort to hide it.\n\nThey came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see them surpass them. They work as a saboteur out of The Circuit, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Nova Möller are one of the ones who actually does it.",
+  "location": "The Circuit \u2014 neon-lit entertainment and vice district, near Fullerton and Damen",
+  "description": "Nova M\u00F6ller are lean and angular, all sharp edges and visible tension. At 43, they have soft features that belie the chrome underneath \u2014 people underestimate them once, usually only once. The chrome is visible \u2014 wired reflexes with adrenaline pump \u2014 chemical-mechanical hybrid augmentation \u2014 and they make no effort to hide it.\n\nThey came up through the Gray Zone\u0027s informal apprentice system, learning the trade from runners who didn\u0027t survive long enough to see them surpass them. They work as a saboteur out of The Circuit, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nIn a city full of people who talk about what they\u0027ll do, Nova M\u00F6ller are one of the ones who actually does it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.35,
@@ -22,49 +24,53 @@
     },
     "core_fears": [
       "Dying alone in some alley and nobody noticing for weeks",
-      "Being captured alive — death is preferable to corporate interrogation",
-      "Losing their edge to age — the body slows before the mind accepts it"
+      "Being captured alive \u2014 death is preferable to corporate interrogation",
+      "Losing their edge to age \u2014 the body slows before the mind accepts it"
     ],
     "core_desires": [
       "To find the person who burned them and make it educational",
-      "Power — enough leverage that nobody ever threatens them again",
-      "Justice — the corporate kind, where the punishment fits the profit margin"
+      "Power \u2014 enough leverage that nobody ever threatens them again",
+      "Justice \u2014 the corporate kind, where the punishment fits the profit margin"
     ],
     "coping_mechanisms": [
-      "Overwork — takes every contract offered because idleness invites thinking",
-      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
-      "Connection — finds someone to talk to, even if it's a bartender or a cat"
+      "Overwork \u2014 takes every contract offered because idleness invites thinking",
+      "Drinks methodically \u2014 not to get drunk, to maintain a specific level of not-caring",
+      "Connection \u2014 finds someone to talk to, even if it\u0027s a bartender or a cat"
     ],
     "blind_spots": [
       "Believes their trauma makes them special instead of recognizing it as damage to manage",
       "Cannot distinguish between caution and cowardice in themselves or others",
       "Assumes everyone has an angle because they always have an angle"
     ],
-    "secret": "Chiamaka Aguilar-Annan sends anonymous tips to GLMZ law enforcement about competitors. It's not principle — it's market manipulation."
+    "secret": "Chiamaka Aguilar-Annan sends anonymous tips to GLMZ law enforcement about competitors. It\u0027s not principle \u2014 it\u0027s market manipulation."
   },
   "speech_patterns": {
-    "vocabulary": "Educated vocabulary wrapped in street delivery — the contrast is deliberate.",
-    "cadence": "Low and even — the vocal equivalent of still water.",
+    "vocabulary": "Educated vocabulary wrapped in street delivery \u2014 the contrast is deliberate.",
+    "cadence": "Low and even \u2014 the vocal equivalent of still water.",
     "verbal_tics": [
-      "Addresses people by physical traits — 'hey, tall one' or 'listen, chrome-arm'",
+      "Addresses people by physical traits \u2014 \u0027hey, tall one\u0027 or \u0027listen, chrome-arm\u0027",
       "Uses technical jargon for everything, including emotions"
     ],
     "example_lines": [
-      "\"I don't break things. I introduce structural critiques.\"",
-      "\"The most effective sabotage looks like bad luck.\"",
-      "\"Everything has a weakness. Infrastructure has thousands.\""
-    ]
+      "\u0022I don\u0027t break things. I introduce structural critiques.\u0022",
+      "\u0022The most effective sabotage looks like bad luck.\u0022",
+      "\u0022Everything has a weakness. Infrastructure has thousands.\u0022"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "A former associate resurfaces with evidence that could destroy Chiamaka Aguilar-Annan's reputation — and a price for silence",
-    "A Tier 4 executive offers Chiamaka Aguilar-Annan a permanent position — the pay is obscene and the strings are invisible until they tighten",
-    "Chiamaka Aguilar-Annan is offered a contract that would clear all their debts — the target is someone they respect"
+    "A former associate resurfaces with evidence that could destroy Chiamaka Aguilar-Annan\u0027s reputation \u2014 and a price for silence",
+    "A Tier 4 executive offers Chiamaka Aguilar-Annan a permanent position \u2014 the pay is obscene and the strings are invisible until they tighten",
+    "Chiamaka Aguilar-Annan is offered a contract that would clear all their debts \u2014 the target is someone they respect"
   ],
-  "narrative_function": "Chiamaka Aguilar-Annan functions as a connector — their work puts them in contact with multiple factions, classes, and agendas. Stories involving them naturally cross boundaries between districts, tiers, and moral categories.",
-  "augmentations": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation. Reflex boosters wired into spinal column — shaves reaction time by 40ms",
-  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
-  "affiliation": "Independent — known in Old Harbor circles",
+  "narrative_function": "Chiamaka Aguilar-Annan functions as a connector \u2014 their work puts them in contact with multiple factions, classes, and agendas. Stories involving them naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Wired reflexes with adrenaline pump \u2014 chemical-mechanical hybrid augmentation. Reflex boosters wired into spinal column \u2014 shaves reaction time by 40ms",
+  "daily_life": "Between contracts, maintains a cover identity \u2014 mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+  "affiliation": "Independent \u2014 known in Old Harbor circles",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -172,27 +178,27 @@
   },
   "behavioral": {
     "decision_rules": [
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete",
+      "Always demands half payment upfront \u2014 trust is a luxury, Quanta is concrete",
       "Will not betray a client who paid in full, regardless of better offers",
-      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
-      "Will not take contracts against children or families — the line is hard and non-negotiable"
+      "Maintains a personal blacklist of clients who\u0027ve burned runners \u2014 checks it religiously",
+      "Will not take contracts against children or families \u2014 the line is hard and non-negotiable"
     ],
     "escalation_ladder": [
-      "1. Assess — read the situation, identify threats and advantages",
-      "2. Negotiate — try to find a solution that doesn't cost ammunition",
-      "3. Intimidate — make the cost of conflict clear",
-      "4. Precision violence — surgical, targeted, minimal collateral",
-      "5. Full engagement — overwhelming force, no half measures",
-      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+      "1. Assess \u2014 read the situation, identify threats and advantages",
+      "2. Negotiate \u2014 try to find a solution that doesn\u0027t cost ammunition",
+      "3. Intimidate \u2014 make the cost of conflict clear",
+      "4. Precision violence \u2014 surgical, targeted, minimal collateral",
+      "5. Full engagement \u2014 overwhelming force, no half measures",
+      "6. Emergency protocol \u2014 abort mission, survival priority, deal with consequences later"
     ],
     "interpersonal_modes": {
       "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
       "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
       "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
     },
     "stress_responses": {
-      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
+      "low": "Channels it into preparation \u2014 checks gear, reviews plans, contacts sources.",
       "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
       "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
       "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
@@ -200,17 +206,17 @@
     "contradictions": [
       "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
       "Presents as emotionless professional but is deeply affected by collateral damage",
-      "Projects confidence but makes decisions from a foundation of fear they've never examined"
+      "Projects confidence but makes decisions from a foundation of fear they\u0027ve never examined"
     ],
     "habits": [
       "Saves a percentage of every payment in physical Quanta, hidden in the walls of their space",
-      "Counts ammunition obsessively — knows the exact round count at all times",
-      "Never drinks anything they didn't see poured or open themselves"
+      "Counts ammunition obsessively \u2014 knows the exact round count at all times",
+      "Never drinks anything they didn\u0027t see poured or open themselves"
     ],
     "breaking_points": [
-      "Learning that a job they completed resulted in mass casualties they weren't told about",
+      "Learning that a job they completed resulted in mass casualties they weren\u0027t told about",
       "Discovering their employer deliberately sent them into a death trap",
-      "Losing their primary augmentation — the one that defines their professional identity"
+      "Losing their primary augmentation \u2014 the one that defines their professional identity"
     ]
   },
   "cyberware_inventory": [
@@ -221,7 +227,7 @@
       "tier": "",
       "condition": "refurbished",
       "installed_date": "",
-      "description": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
+      "description": "Wired reflexes with adrenaline pump \u2014 chemical-mechanical hybrid augmentation",
       "replaces": ""
     },
     {
@@ -231,7 +237,7 @@
       "tier": "",
       "condition": "refurbished",
       "installed_date": "",
-      "description": "Reflex boosters wired into spinal column — shaves reaction time by 40ms",
+      "description": "Reflex boosters wired into spinal column \u2014 shaves reaction time by 40ms",
       "replaces": ""
     }
   ],
@@ -263,50 +269,39 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Wheelgun-38 'Roundhouse'",
-    "Street Custom 'Ghostwriter' Grafitti Flamethrower"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "The Circuit",
-    "Circuit",
-    "Pellucid Systems"
-  ],
-  "district": "The Circuit",
   "physical_description": {
-    "heritage": "Complex polychromatic blend: 51% Northern European foundation provides cool undertones and fine facial geometry, while 18% Middle Eastern heritage adds warmth and angular structure. 16% East Asian ancestry introduces subtle eye shape refinement and skin saturation, with 14% Eastern European heritage contributing additional cool undertones. The result is a genuinely mixed phenotype where no single ancestry dominates visually—sophisticated interplay of cool Northern/Eastern European undertones with warm Middle Eastern and East Asian saturation, creating a dynamic medium complexion that shifts subtly in different light.",
+    "heritage": "Complex polychromatic blend: 51% Northern European foundation provides cool undertones and fine facial geometry, while 18% Middle Eastern heritage adds warmth and angular structure. 16% East Asian ancestry introduces subtle eye shape refinement and skin saturation, with 14% Eastern European heritage contributing additional cool undertones. The result is a genuinely mixed phenotype where no single ancestry dominates visually\u2014sophisticated interplay of cool Northern/Eastern European undertones with warm Middle Eastern and East Asian saturation, creating a dynamic medium complexion that shifts subtly in different light.",
     "height_cm": 174,
     "weight_kg": 62,
-    "build": "Lean and angular with visible musculature — wiry rather than bulky, all efficiency. No excess mass; every pound serves function. Posture suggests coiled readiness.",
+    "build": "Lean and angular with visible musculature \u2014 wiry rather than bulky, all efficiency. No excess mass; every pound serves function. Posture suggests coiled readiness.",
     "hair_color": "Dark brown, naturally, with irregular silver streaks (stress-induced premature graying, not dyed)",
-    "hair_style": "Short, practical undercut — left side shaved to the scalp, longer on top, always pulled back or gelled. Maintenance takes 5 minutes.",
+    "hair_style": "Short, practical undercut \u2014 left side shaved to the scalp, longer on top, always pulled back or gelled. Maintenance takes 5 minutes.",
     "hair_length": "Short",
     "eye_color": "Warm brown, alert and calculating",
-    "skin_tone": "Medium complexion with balanced cool-to-warm undertones—Northern European coolness and Eastern European pallor tempered by warm saturation from Middle Eastern and East Asian heritage. Complex, shifting subtly in different light, neither purely cool nor warm but dynamically blended.",
-    "complexion": "Sharp, prominent cheekbones from Northern European and Middle Eastern lineage, angular jawline with subtle width reflecting East Asian genetics. Slight epicanthic fold visible in eye shape from East Asian ancestry contribution. Minimal facial hair—clean-shaven or precise 2-day stubble. Skin bears the wear of stress: fine lines around the eyes, slight tension in the jaw. No cosmetic work; they've never cared enough to hide age.",
-    "visible_augmentations": "Wired reflex system — visible chrome threading at the wrists and neck. Thin metallic ports gleam beneath the skin at the base of the skull. Adrenaline pump injection sites visible as small silvered nodules along the collarbone. When they move quickly, there's an audible faint mechanical hum from the spinal column augmentation. They make zero effort to conceal any of it.",
+    "skin_tone": "Medium complexion with balanced cool-to-warm undertones\u2014Northern European coolness and Eastern European pallor tempered by warm saturation from Middle Eastern and East Asian heritage. Complex, shifting subtly in different light, neither purely cool nor warm but dynamically blended.",
+    "complexion": "Sharp, prominent cheekbones from Northern European and Middle Eastern lineage, angular jawline with subtle width reflecting East Asian genetics. Slight epicanthic fold visible in eye shape from East Asian ancestry contribution. Minimal facial hair\u2014clean-shaven or precise 2-day stubble. Skin bears the wear of stress: fine lines around the eyes, slight tension in the jaw. No cosmetic work; they\u0027ve never cared enough to hide age.",
     "distinguishing_marks": [
-      "Surgical scars at the base of the skull, barely visible under short hair — chrome reflex rig entry points, thin white lines running down the back of the neck.",
-      "Thin linear scars on both inner wrists — equipment interface scarring from early augmentation work, deliberately kept visible.",
-      "Burn scar on left shoulder blade, about 3cm across — chemical solvent from a job gone wrong, pale and mottled against their skin tone."
+      "Surgical scars at the base of the skull, barely visible under short hair \u2014 chrome reflex rig entry points, thin white lines running down the back of the neck.",
+      "Thin linear scars on both inner wrists \u2014 equipment interface scarring from early augmentation work, deliberately kept visible.",
+      "Burn scar on left shoulder blade, about 3cm across \u2014 chemical solvent from a job gone wrong, pale and mottled against their skin tone."
     ],
-    "posture_movement": "Moves with controlled precision — no wasted motion. Sits slightly forward, weight balanced on the balls of their feet. When still, there's visible tension in the shoulders and hands. They have a habit of flexing their fingers in rapid sequences, testing the chrome's response. Eye contact is direct and unwavering. Breathing is shallow and controlled, even at rest.",
-    "clothing_style": "Tier 4 utilitarian — practical, durable, dark. Black synthweave cargo pants with reinforced knees and thigh pockets. Fitted charcoal compression shirts designed for augmentation visibility and concealment (they choose visibility). Worn leather jacket over everything, pre-collapse era or good knockoff, treated with hydrophobic coating. Scuffed tactical boots with grip soles. No jewelry except a simple matte-black band on the right index finger. Clothing shows wear but is always maintained."
+    "visible_augmentations": "Wired reflex system \u2014 visible chrome threading at the wrists and neck. Thin metallic ports gleam beneath the skin at the base of the skull. Adrenaline pump injection sites visible as small silvered nodules along the collarbone. When they move quickly, there\u0027s an audible faint mechanical hum from the spinal column augmentation. They make zero effort to conceal any of it.",
+    "posture_movement": "Moves with controlled precision \u2014 no wasted motion. Sits slightly forward, weight balanced on the balls of their feet. When still, there\u0027s visible tension in the shoulders and hands. They have a habit of flexing their fingers in rapid sequences, testing the chrome\u0027s response. Eye contact is direct and unwavering. Breathing is shallow and controlled, even at rest.",
+    "clothing_style": "Tier 4 utilitarian \u2014 practical, durable, dark. Black synthweave cargo pants with reinforced knees and thigh pockets. Fitted charcoal compression shirts designed for augmentation visibility and concealment (they choose visibility). Worn leather jacket over everything, pre-collapse era or good knockoff, treated with hydrophobic coating. Scuffed tactical boots with grip soles. No jewelry except a simple matte-black band on the right index finger. Clothing shows wear but is always maintained."
   },
-  "image_prompt": "Nova Möller, GLMZ, lean 174cm augmented operative with mixed Northern European-Middle Eastern-East Asian-Eastern European heritage. Medium warm-cool complexion, sharp cheekbones, subtle epicanthic eye shape, warm brown alert eyes. Dark brown hair with silver streaks, shaved left undercut. Visible chrome threading at wrists and neck, silvered nodules along collarbone, surgical scars at base of skull. Pale burn scar on left shoulder blade. Dark utilitarian: black cargo pants, fitted charcoal compression shirt revealing augmentation, worn leather jacket, scuffed tactical boots. Simple matte-black band on right index finger. Posture coiled, controlled precision, shallow breathing, direct unwavering gaze. Neon-lit Great Lakes Metropolitan Zone interior, cool blue-amber lighting catching chrome ports, shadows emphasizing angular features and augmentation marks, mood: dangerous calm focus --ar 2:3 --v 6",
+  "image_prompt": "Nova M\u00F6ller, GLMZ, lean 174cm augmented operative with mixed Northern European-Middle Eastern-East Asian-Eastern European heritage. Medium warm-cool complexion, sharp cheekbones, subtle epicanthic eye shape, warm brown alert eyes. Dark brown hair with silver streaks, shaved left undercut. Visible chrome threading at wrists and neck, silvered nodules along collarbone, surgical scars at base of skull. Pale burn scar on left shoulder blade. Dark utilitarian: black cargo pants, fitted charcoal compression shirt revealing augmentation, worn leather jacket, scuffed tactical boots. Simple matte-black band on right index finger. Posture coiled, controlled precision, shallow breathing, direct unwavering gaze. Neon-lit Great Lakes Metropolitan Zone interior, cool blue-amber lighting catching chrome ports, shadows emphasizing angular features and augmentation marks, mood: dangerous calm focus --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Northern European": 51.3,
     "Middle Eastern": 18.1,
     "East Asian": 16.2,
     "Eastern European": 14.4
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Northern European": {
       "Germanic": {
@@ -339,6 +334,5 @@
         "Belarusian": 2.5
       }
     }
-  },
-  "tier": "1"
+  }
 }

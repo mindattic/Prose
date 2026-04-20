@@ -1,13 +1,15 @@
 {
   "id": "019d6143aa527c6097b208ff2c407852",
+  "rating": 30,
+  "vote_count": 1,
   "name": "Tessera Industries Metamaterial Universal Fabrication System",
   "brand_name": "Tessera",
   "product_name": "Tessera Industries Metamaterial Universal Fabrication System",
   "type": "technology",
   "aliases": [],
   "subcategory": "manufacturing",
-  "description": "An advanced manufacturing platform capable of fabricating metamaterials — materials with properties not found in nature — by assembling structures at the nanoscale using programmable molecular assembly units. The MUFS can produce materials that bend light, redirect sound, absorb electromagnetic radiation, or exhibit negative thermal expansion, all by arranging ordinary atoms into extraordinary geometries. Each fabrication run produces small quantities — typically measured in square centimeters — but the materials themselves are so extraordinary that even small amounts enable previously impossible engineering applications.",
-  "tier_availability": "Tier 4+",
+  "description": "An advanced manufacturing platform capable of fabricating metamaterials \u2014 materials with properties not found in nature \u2014 by assembling structures at the nanoscale using programmable molecular assembly units. The MUFS can produce materials that bend light, redirect sound, absorb electromagnetic radiation, or exhibit negative thermal expansion, all by arranging ordinary atoms into extraordinary geometries. Each fabrication run produces small quantities \u2014 typically measured in square centimeters \u2014 but the materials themselves are so extraordinary that even small amounts enable previously impossible engineering applications.",
+  "tier_availability": "Tier 4\u002B",
   "developers": [
     "TESSERA INDUSTRIES"
   ],
@@ -23,10 +25,10 @@
     "Negative refractive index lenses",
     "Sensor-defeating surface treatments"
   ],
-  "social_impact": "The MUFS has given Tessera a near-monopoly on advanced stealth, sensor, and optical technologies. Their metamaterials appear in everything from military cloaking systems to medical imaging equipment, creating a dependency that gives Tessera extraordinary leverage. The technology has also created a new class of smuggling — metamaterial samples are worth more per gram than any drug or precious metal, and the ability to fabricate materials that defeat security sensors makes them inherently useful for criminal applications.",
+  "social_impact": "The MUFS has given Tessera a near-monopoly on advanced stealth, sensor, and optical technologies. Their metamaterials appear in everything from military cloaking systems to medical imaging equipment, creating a dependency that gives Tessera extraordinary leverage. The technology has also created a new class of smuggling \u2014 metamaterial samples are worth more per gram than any drug or precious metal, and the ability to fabricate materials that defeat security sensors makes them inherently useful for criminal applications.",
   "story_hooks": [
-    "A MUFS fabrication template has been leaked that produces a metamaterial capable of defeating every known biometric sensor — anyone wearing it becomes invisible to automated security systems.",
-    "Tessera's MUFS units have been producing anomalous output — metamaterials with properties that were not programmed, as if the molecular assembly units are discovering new configurations on their own."
+    "A MUFS fabrication template has been leaked that produces a metamaterial capable of defeating every known biometric sensor \u2014 anyone wearing it becomes invisible to automated security systems.",
+    "Tessera\u0027s MUFS units have been producing anomalous output \u2014 metamaterials with properties that were not programmed, as if the molecular assembly units are discovering new configurations on their own."
   ],
   "tags": [
     "manufacturing",
@@ -36,9 +38,6 @@
     "stealth",
     "tier 4"
   ],
-  "parent_corponation": "",
-  "related_entities": [
-    "Free Assembly",
-    "Tessera Corponation"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

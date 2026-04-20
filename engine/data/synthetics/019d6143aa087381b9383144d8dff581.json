@@ -1,5 +1,7 @@
 {
   "id": "019d6143aa087381b9383144d8dff581",
+  "rating": 70,
+  "vote_count": 1,
   "name": "Lanternjaw",
   "type": "elf",
   "aliases": [],
@@ -27,5 +29,6 @@
     "control",
     "sentient"
   ],
-  "related_entities": []
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

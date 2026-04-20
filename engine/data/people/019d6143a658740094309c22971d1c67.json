@@ -1,16 +1,18 @@
 {
   "id": "019d6143a658740094309c22971d1c67",
+  "rating": 30,
+  "vote_count": 1,
   "type": "character",
   "name": "Farhan Vo",
   "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Freelance combat specialist — street samurai",
+  "role": "Freelance combat specialist \u2014 street samurai",
   "age": 34,
   "status": "active",
-  "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Lake Shore and Wacker",
-  "description": "Farhan Vo is lean and angular, all sharp edges and visible tension. At 34, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and she makes no effort to hide it.\n\nShe taught herself the trade through trial, error, and a pain tolerance that concerns the people who know her best. She works as a street samurai out of Dockside, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Farhan Vo describe her as a precision instrument — point her at a problem and get out of the way.",
+  "location": "Dockside \u2014 Lake Michigan waterfront, smuggler territory, near Lake Shore and Wacker",
+  "description": "Farhan Vo is lean and angular, all sharp edges and visible tension. At 34, she has soft features that belie the chrome underneath \u2014 people underestimate her once, usually only once. The chrome is visible \u2014 subdermal weapon mount \u2014 pop-out blade in each forearm \u2014 and she makes no effort to hide it.\n\nShe taught herself the trade through trial, error, and a pain tolerance that concerns the people who know her best. She works as a street samurai out of Dockside, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Farhan Vo describe her as a precision instrument \u2014 point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.14,
@@ -22,49 +24,53 @@
     },
     "core_fears": [
       "Dying alone in some alley and nobody noticing for weeks",
-      "Losing their edge to age — the body slows before the mind accepts it",
-      "Betrayal by someone they trust — the only currency that matters"
+      "Losing their edge to age \u2014 the body slows before the mind accepts it",
+      "Betrayal by someone they trust \u2014 the only currency that matters"
     ],
     "core_desires": [
-      "Power — enough leverage that nobody ever threatens them again",
-      "Reputation — to be the name fixers whisper when the job absolutely cannot fail",
-      "To protect the people in their district who can't protect themselves"
+      "Power \u2014 enough leverage that nobody ever threatens them again",
+      "Reputation \u2014 to be the name fixers whisper when the job absolutely cannot fail",
+      "To protect the people in their district who can\u0027t protect themselves"
     ],
     "coping_mechanisms": [
-      "Planning — responds to chaos by making detailed contingency plans for everything",
-      "Violence — hits something when they can't process emotions, preferably something that deserves it",
-      "Ritual — follows the same pre-job routine every time, superstition as structure"
+      "Planning \u2014 responds to chaos by making detailed contingency plans for everything",
+      "Violence \u2014 hits something when they can\u0027t process emotions, preferably something that deserves it",
+      "Ritual \u2014 follows the same pre-job routine every time, superstition as structure"
     ],
     "blind_spots": [
       "Fails to notice when their own behavior mirrors the people they despise",
-      "Thinks speed can substitute for planning because it's worked so far",
+      "Thinks speed can substitute for planning because it\u0027s worked so far",
       "Assumes everyone has an angle because they always have an angle"
     ],
-    "secret": "Milena Dahl-Conteh is in augmentation debt to a corporate subsidiary — Φ180,000 outstanding — and the interest is compounding. If they miss a payment, a kill team comes."
+    "secret": "Milena Dahl-Conteh is in augmentation debt to a corporate subsidiary \u2014 \u03A6180,000 outstanding \u2014 and the interest is compounding. If they miss a payment, a kill team comes."
   },
   "speech_patterns": {
-    "vocabulary": "Fast, profane, and vivid. Speaks in images — everything is a metaphor for violence or weather.",
-    "cadence": "Flowing and unhurried — talks like someone who has never been interrupted and doesn't expect to be.",
+    "vocabulary": "Fast, profane, and vivid. Speaks in images \u2014 everything is a metaphor for violence or weather.",
+    "cadence": "Flowing and unhurried \u2014 talks like someone who has never been interrupted and doesn\u0027t expect to be.",
     "verbal_tics": [
       "Uses technical jargon for everything, including emotions",
-      "Whispers when angry — the quieter the voice, the worse the situation"
+      "Whispers when angry \u2014 the quieter the voice, the worse the situation"
     ],
     "example_lines": [
-      "\"I don't get paid to have opinions about the target. I get paid to make them stop moving.\"",
-      "\"Chrome doesn't make you faster. Training makes you faster. Chrome just means you survive learning.\"",
-      "\"You want philosophy, hire a professor. You want someone dead by morning, hire me.\""
-    ]
+      "\u0022I don\u0027t get paid to have opinions about the target. I get paid to make them stop moving.\u0022",
+      "\u0022Chrome doesn\u0027t make you faster. Training makes you faster. Chrome just means you survive learning.\u0022",
+      "\u0022You want philosophy, hire a professor. You want someone dead by morning, hire me.\u0022"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "A Tier 4 executive offers Milena Dahl-Conteh a permanent position — the pay is obscene and the strings are invisible until they tighten",
-    "Milena Dahl-Conteh's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
-    "Milena Dahl-Conteh is offered a contract that would clear all their debts — the target is someone they respect"
+    "A Tier 4 executive offers Milena Dahl-Conteh a permanent position \u2014 the pay is obscene and the strings are invisible until they tighten",
+    "Milena Dahl-Conteh\u0027s augmentations begin malfunctioning in the field \u2014 sabotage or degradation, and either answer is bad",
+    "Milena Dahl-Conteh is offered a contract that would clear all their debts \u2014 the target is someone they respect"
   ],
-  "narrative_function": "Milena Dahl-Conteh represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Her stories explore what happens when skill meets systemic injustice.",
-  "augmentations": "Subdermal weapon mount — pop-out blade in each forearm. Chemical analyzer in nasal passages — can identify substances by scent alone",
-  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
-  "affiliation": "Independent — Narrows-based operations",
+  "narrative_function": "Milena Dahl-Conteh represents the working professional of the runner world \u2014 competent, reliable, and slowly being consumed by a lifestyle that doesn\u0027t accommodate aging or doubt. Her stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Subdermal weapon mount \u2014 pop-out blade in each forearm. Chemical analyzer in nasal passages \u2014 can identify substances by scent alone",
+  "daily_life": "Between contracts, maintains a cover identity \u2014 mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+  "affiliation": "Independent \u2014 Narrows-based operations",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -175,26 +181,26 @@
       "Never discusses active contracts with anyone not directly involved",
       "Will not betray a client who paid in full, regardless of better offers",
       "Will work with anyone once. Second time requires vouching from someone trusted.",
-      "Will not take contracts against children or families — the line is hard and non-negotiable",
-      "Always demands half payment upfront — trust is a luxury, Quanta is concrete"
+      "Will not take contracts against children or families \u2014 the line is hard and non-negotiable",
+      "Always demands half payment upfront \u2014 trust is a luxury, Quanta is concrete"
     ],
     "escalation_ladder": [
-      "1. Assess — read the situation, identify threats and advantages",
-      "2. Negotiate — try to find a solution that doesn't cost ammunition",
-      "3. Intimidate — make the cost of conflict clear",
-      "4. Precision violence — surgical, targeted, minimal collateral",
-      "5. Full engagement — overwhelming force, no half measures",
-      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
+      "1. Assess \u2014 read the situation, identify threats and advantages",
+      "2. Negotiate \u2014 try to find a solution that doesn\u0027t cost ammunition",
+      "3. Intimidate \u2014 make the cost of conflict clear",
+      "4. Precision violence \u2014 surgical, targeted, minimal collateral",
+      "5. Full engagement \u2014 overwhelming force, no half measures",
+      "6. Emergency protocol \u2014 abort mission, survival priority, deal with consequences later"
     ],
     "interpersonal_modes": {
       "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
       "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
       "strangers": "Default suspicion, scaled by context. Everyone is a potential threat until proven otherwise.",
-      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
+      "threats": "Calm escalation. Each response is proportional until it isn\u0027t, and the transition is seamless."
     },
     "stress_responses": {
       "low": "Heightened awareness, sharper focus. Low stress is fuel.",
-      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "medium": "Physical agitation \u2014 pacing, fidgeting, compulsive equipment checks.",
       "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
       "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
     },
@@ -205,12 +211,12 @@
     ],
     "habits": [
       "Checks exits within 10 seconds of entering any room",
-      "Talks to their gear — names weapons, thanks tools, treats equipment as companions",
-      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots"
+      "Talks to their gear \u2014 names weapons, thanks tools, treats equipment as companions",
+      "Wears the same item of clothing for luck \u2014 a scarf, a glove, a specific pair of boots"
     ],
     "breaking_points": [
-      "Running out of options — no contacts, no money, no safe house, no way out",
-      "Complete isolation — cut off from network, contacts, and purpose simultaneously"
+      "Running out of options \u2014 no contacts, no money, no safe house, no way out",
+      "Complete isolation \u2014 cut off from network, contacts, and purpose simultaneously"
     ]
   },
   "cyberware_inventory": [
@@ -221,7 +227,7 @@
       "tier": "",
       "condition": "pristine",
       "installed_date": "",
-      "description": "Subdermal weapon mount — pop-out blade in each forearm",
+      "description": "Subdermal weapon mount \u2014 pop-out blade in each forearm",
       "replaces": ""
     },
     {
@@ -231,7 +237,7 @@
       "tier": "",
       "condition": "worn",
       "installed_date": "",
-      "description": "Chemical analyzer in nasal passages — can identify substances by scent alone",
+      "description": "Chemical analyzer in nasal passages \u2014 can identify substances by scent alone",
       "replaces": ""
     }
   ],
@@ -264,42 +270,34 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Battle Rifle BR-11 'Tribunal'",
-    "Hearthstone Firearms Defender-38 'Snubnose'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [
-    "Crucible Industries Battle Rifle BR-11 'Tribunal'",
-    "Hearthstone Firearms Defender-38 'Snubnose'"
-  ],
-  "related_entities": [
-    "The Nearfield",
-    "Slagworks Industrial",
-    "Pellucid Systems"
-  ],
-  "district": "Old Harbor",
   "physical_description": {
     "heritage": "Complex Ubiquitous Diaspora blend: Sub-Saharan African foundation (29%) grounds warm undertones and facial structure richness, South Asian heritage (25.6%) adds refined angularity, high cheekbone prominence, and luminous skin quality, Southeast Asian ancestry (19.5%) contributes to eye geometry and facial proportions, Eastern European (13.1%) introduces cool undertones and sharp definition to cheekbones and jawline, Hispanic/Latin American (12.8%) enriches warmth and adds subtle complexity to undertones. The result is a striking polychromatic appearance: warm golden-brown base with olive and cool undertones creates an adaptive, globally-rooted phenotype with luminous, light-catching skin.",
     "height_cm": 172,
     "weight_kg": 58,
-    "build": "Lean and angular with corded muscle definition — no excess mass, built for speed and precision rather than power. Visible tension in shoulders and jaw even at rest.",
+    "build": "Lean and angular with corded muscle definition \u2014 no excess mass, built for speed and precision rather than power. Visible tension in shoulders and jaw even at rest.",
     "hair_color": "Dark blonde, naturally ash-toned",
-    "hair_style": "Pulled back in a tight, functional braid; minimal styling — practical only",
+    "hair_style": "Pulled back in a tight, functional braid; minimal styling \u2014 practical only",
     "hair_length": "Medium (shoulder-length when unbound)",
-    "eye_color": "Steel gray with faint silver threading in the iris — augmented optical enhancement",
+    "eye_color": "Steel gray with faint silver threading in the iris \u2014 augmented optical enhancement",
     "skin_tone": "Warm golden-brown with olive undertones and cool-toned depth from Eastern European heritage. Medium-to-medium-deep complexion with luminous, light-catching quality that reflects Sub-Saharan richness, South Asian luminosity, and Southeast Asian undertones in harmonious blend.",
-    "complexion": "Sharp, refined cheekbones from layered South Asian and Eastern European heritage with strong Sub-Saharan bone structure richness, angular jawline, Southeast Asian eye geometry creating subtle epicanthic shaping. Minimal body fat reveals underlying bone structure. Skin is clear but bears evidence of repeated minor trauma — small silvered scars, faint impact marks on temples and across knuckles. No cosmetic grooming; utilitarian maintenance only.",
+    "complexion": "Sharp, refined cheekbones from layered South Asian and Eastern European heritage with strong Sub-Saharan bone structure richness, angular jawline, Southeast Asian eye geometry creating subtle epicanthic shaping. Minimal body fat reveals underlying bone structure. Skin is clear but bears evidence of repeated minor trauma \u2014 small silvered scars, faint impact marks on temples and across knuckles. No cosmetic grooming; utilitarian maintenance only.",
     "distinguishing_marks": [
-      "Two parallel silver scars running vertically down the inside of each forearm — surgical lines where subdermal weapon mounts were installed, deliberately left unscarred smooth",
+      "Two parallel silver scars running vertically down the inside of each forearm \u2014 surgical lines where subdermal weapon mounts were installed, deliberately left unscarred smooth",
       "Faint burn mark on right collarbone, roughly 3cm diameter, aged and pale",
       "Thin white scar bisecting left eyebrow horizontally",
-      "Knuckle scars on both hands, particularly clustered on the first three fingers of the right hand — repeated impact training"
+      "Knuckle scars on both hands, particularly clustered on the first three fingers of the right hand \u2014 repeated impact training"
     ],
-    "visible_augmentations": "Subdermal blade mounts in both forearms — the seams are visible when skin is exposed, running from wrist to mid-forearm. The chrome edges catch light subtly when she moves. No cosmetic chrome on face or neck; all visible augmentation is functional and deliberately exposed.",
-    "posture_movement": "Moves with economical precision — no wasted motion. Shoulders slightly forward, weight balanced over the balls of her feet even when standing still. Her gaze is constant, tracking exits and threats automatically. In repose, there is coiled readiness; in motion, there is lethal grace.",
-    "clothing_style": "Tier 3-4 practical street wear: fitted dark synthetic jacket (water-resistant, reinforced at shoulders and forearms), matte black compression shirt underneath, tactical cargo pants with multiple sealed pockets, steel-toed boots scuffed from active use. All clothing is modular — pockets positioned for weapon accessibility, sleeves cut short enough to expose the forearm augmentations. No logos or unnecessary ornamentation; everything serves a function. Off-duty, she shifts to completely anonymous Tier 4 civilian wear: plain jumpsuits, unremarkable jackets, things that dissolve into crowds."
+    "visible_augmentations": "Subdermal blade mounts in both forearms \u2014 the seams are visible when skin is exposed, running from wrist to mid-forearm. The chrome edges catch light subtly when she moves. No cosmetic chrome on face or neck; all visible augmentation is functional and deliberately exposed.",
+    "posture_movement": "Moves with economical precision \u2014 no wasted motion. Shoulders slightly forward, weight balanced over the balls of her feet even when standing still. Her gaze is constant, tracking exits and threats automatically. In repose, there is coiled readiness; in motion, there is lethal grace.",
+    "clothing_style": "Tier 3-4 practical street wear: fitted dark synthetic jacket (water-resistant, reinforced at shoulders and forearms), matte black compression shirt underneath, tactical cargo pants with multiple sealed pockets, steel-toed boots scuffed from active use. All clothing is modular \u2014 pockets positioned for weapon accessibility, sleeves cut short enough to expose the forearm augmentations. No logos or unnecessary ornamentation; everything serves a function. Off-duty, she shifts to completely anonymous Tier 4 civilian wear: plain jumpsuits, unremarkable jackets, things that dissolve into crowds."
   },
   "image_prompt": "Farhan Vo, GLMZ, lean angular woman with warm golden-brown skin and cool-toned undertones, luminous complexion reflecting Sub-Saharan, South Asian, Southeast Asian, Eastern European, and Hispanic heritage. Sharp cheekbones, refined jawline, subtle epicanthic eye geometry. Steel gray augmented eyes with silver threading. Dark blonde hair pulled back in tight functional braid. Visible subdermal chrome blade seams on forearms. Small scars on forearms, temples, knuckles, left eyebrow bisection. Matte black compression shirt, dark water-resistant tactical jacket with reinforced shoulders, cargo pants with sealed pockets, scuffed steel-toed boots. Posture: coiled readiness, economical precision, weight balanced on balls of feet. Setting: neon-lit Great Lakes Metropolitan Zone street, moody neo-noir lighting with cool blues and warm amber neon reflections on exposed chrome augmentation. Atmosphere: lethal grace, constant vigilance, deliberately exposed military hardware, utilitarian edge. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Sub-Saharan African": 29,
     "South Asian": 25.6,
@@ -307,12 +305,6 @@
     "Eastern European": 13.1,
     "Hispanic/Latin American": 12.8
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Sub-Saharan African": {
       "Central African": {
@@ -357,6 +349,5 @@
         "Venezuelan": 9
       }
     }
-  },
-  "tier": "3"
+  }
 }

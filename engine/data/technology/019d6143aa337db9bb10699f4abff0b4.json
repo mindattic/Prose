@@ -1,13 +1,15 @@
 {
   "id": "019d6143aa337db9bb10699f4abff0b4",
+  "rating": 80,
+  "vote_count": 1,
   "name": "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
   "brand_name": "Arcturus",
   "product_name": "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
   "type": "technology",
   "aliases": [],
   "subcategory": "surveillance",
-  "description": "SentinelSkin VS-4 is a surveillance technology embedded directly into building materials during construction or renovation — a piezoelectric polymer film laminated into drywall composite, concrete panels, and flooring underlayment that functions as a continuous distributed microphone array. The film is 0.3mm thick, visually indistinguishable from standard construction material, and draws power parasitically from the building's structural vibration and ambient acoustic energy, requiring no dedicated wiring. When activated by Arcturus's base station hardware installed in building electrical panels, the VS-4 membrane can reconstruct three-dimensional acoustic maps of interior spaces, isolating individual voice sources and filtering ambient noise to achieve intelligible speech capture through multiple walls.",
-  "tier_availability": "Tier 2+ buildings (standard in new Tier 1 corporate construction; increasingly common in Tier 2 residential; rare in Tier 3 and below due to construction quality)",
+  "description": "SentinelSkin VS-4 is a surveillance technology embedded directly into building materials during construction or renovation \u2014 a piezoelectric polymer film laminated into drywall composite, concrete panels, and flooring underlayment that functions as a continuous distributed microphone array. The film is 0.3mm thick, visually indistinguishable from standard construction material, and draws power parasitically from the building\u0027s structural vibration and ambient acoustic energy, requiring no dedicated wiring. When activated by Arcturus\u0027s base station hardware installed in building electrical panels, the VS-4 membrane can reconstruct three-dimensional acoustic maps of interior spaces, isolating individual voice sources and filtering ambient noise to achieve intelligible speech capture through multiple walls.",
+  "tier_availability": "Tier 2\u002B buildings (standard in new Tier 1 corporate construction; increasingly common in Tier 2 residential; rare in Tier 3 and below due to construction quality)",
   "developers": [
     "ARCTURUS DEFENSE SOLUTIONS",
     "PALLADIAN CONSTRUCTION"
@@ -26,12 +28,12 @@
     "litigation evidence fabrication",
     "building-wide voice command interface infrastructure"
   ],
-  "social_impact": "SentinelSkin VS-4 has made the concept of a private conversation within GLMZ's corporate-managed building stock effectively obsolete for anyone below Tier 1. Because the technology is embedded during construction and disclosed only in building lease agreements' technical appendices, most residents have no awareness they are being continuously monitored. The practical effect has been a chilling transformation of social behavior in domestic spaces — support networks, labor organizing, and personal relationships have migrated to outdoor locations, signal-shielded venues, or encrypted subvocal communication, creating new social geographies organized around the absence of walls.",
+  "social_impact": "SentinelSkin VS-4 has made the concept of a private conversation within GLMZ\u0027s corporate-managed building stock effectively obsolete for anyone below Tier 1. Because the technology is embedded during construction and disclosed only in building lease agreements\u0027 technical appendices, most residents have no awareness they are being continuously monitored. The practical effect has been a chilling transformation of social behavior in domestic spaces \u2014 support networks, labor organizing, and personal relationships have migrated to outdoor locations, signal-shielded venues, or encrypted subvocal communication, creating new social geographies organized around the absence of walls.",
   "story_hooks": [
-    "A fixer is hired to sweep an apartment for surveillance — and discovers that the VS-4 substrate runs through every wall; the only solution is to gut the building or never speak above a whisper",
-    "Leaked VS-4 acoustic data from a Tier 1 corporate residential tower contains fragments of a conversation that could destabilize a major merger — multiple parties are hunting the source",
-    "A building manager offers to sell selective gaps in the VS-4 monitoring record — for a price — to a tenant who needs a clean alibi",
-    "Someone has figured out how to inject false audio into a VS-4 network, fabricating conversations that never happened and feeding them to Arcturus's law enforcement clients as evidence"
+    "A fixer is hired to sweep an apartment for surveillance \u2014 and discovers that the VS-4 substrate runs through every wall; the only solution is to gut the building or never speak above a whisper",
+    "Leaked VS-4 acoustic data from a Tier 1 corporate residential tower contains fragments of a conversation that could destabilize a major merger \u2014 multiple parties are hunting the source",
+    "A building manager offers to sell selective gaps in the VS-4 monitoring record \u2014 for a price \u2014 to a tenant who needs a clean alibi",
+    "Someone has figured out how to inject false audio into a VS-4 network, fabricating conversations that never happened and feeding them to Arcturus\u0027s law enforcement clients as evidence"
   ],
   "tags": [
     "surveillance",
@@ -47,16 +49,6 @@
     "tier 2",
     "tier 3"
   ],
-  "parent_corponation": "",
-  "related_entities": [
-    "Arcturus Defense Solutions",
-    "Bioacoustic Communication Membrane",
-    "Biometric Denial Charge BDC-1",
-    "GLMZ",
-    "Lacunal",
-    "Palladian Construction",
-    "Palladian Construction AeroSkin BX-14 Adaptive Building Envelope",
-    "TESSERA CR-12 'Whisper'",
-    "WELLSPRING"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

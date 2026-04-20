@@ -1,13 +1,15 @@
 {
   "id": "019d6143ab4675ffb76cee31a3e053ec",
-  "name": "Street Custom 'Confession' Modified Industrial Nail Gun",
+  "rating": 80,
+  "vote_count": 1,
+  "name": "Street Custom \u0027Confession\u0027 Modified Industrial Nail Gun",
   "type": "weapon",
   "aliases": [],
   "category": "improvised",
   "description": "A construction-grade pneumatic nail gun modified for anti-personnel use by removing the contact safety, extending the barrel with a rifled sleeve, and upgrading the pneumatic charge to industrial compressor levels. The result fires hardened steel framing nails with enough velocity to penetrate light body armor at close range. The weapon is cheap, ammunition is available at any construction supply outlet, and the modifications can be performed with basic tools in under an hour. It has become the signature weapon of Tier 1 enforcement gangs who need deniable armament that can be sourced without touching the weapons black market.",
   "manufacturer": "Street Custom",
-  "tier_availability": "Tier 1+",
-  "legality": "Prohibited — modified industrial tool as weapon",
+  "tier_availability": "Tier 1\u002B",
+  "legality": "Prohibited \u2014 modified industrial tool as weapon",
   "base_technologies": [
     "Pneumatic acceleration modification",
     "Contact safety bypass",
@@ -18,8 +20,8 @@
   "cultural_context": "",
   "known_users": [],
   "story_hooks": [
-    "A series of crucifixion-style killings in Tier 1 — victims pinned to walls with framing nails — has the signature of a single modified nail gun based on the nail batch markings.",
-    "A hardware chain is quietly tracking bulk nail purchases and selling the data to corporate security — mapping the supply chain of improvised weapons from the retail end."
+    "A series of crucifixion-style killings in Tier 1 \u2014 victims pinned to walls with framing nails \u2014 has the signature of a single modified nail gun based on the nail batch markings.",
+    "A hardware chain is quietly tracking bulk nail purchases and selling the data to corporate security \u2014 mapping the supply chain of improvised weapons from the retail end."
   ],
   "ammunition_type": [],
   "tags": [
@@ -38,21 +40,23 @@
     "tier 1",
     "lethal"
   ],
+  "image_prompt": "A brutally modified pneumatic nail gun photographed against a dark oil-stained concrete surface, side-lit dramatically with harsh shadows emphasizing the crude welded barrel extension and industrial aluminum body. The weapon sits at a 45-degree angle, revealing the perpendicular 30-nail strip magazine and the rough welding spatter across the receiver. Dull orange pneumatic charge canister coupling visible in the foreground. Cold blue-white side-lighting catches the rust bloom on the steel barrel sleeve and highlights the hand-engraved \u0027CONFESSION\u0027 lettering on the frame. Neo-noir gritty aesthetic with overhead practical work-lamp illumination casting deep shadows. Worn, utilitarian, street-custom threat. Professional product shot with tactical cynicism. --ar 3:2 --v 6",
+  "dalle3_prompt": "",
   "parent_corponation": "",
   "related_entities": [
-    "Arcturus HX-1 'Headsman'",
+    "Arcturus HX-1 \u0027Headsman\u0027",
     "Orbital Drop Pod",
-    "TESSERA PG-2 'Signature'",
+    "TESSERA PG-2 \u0027Signature\u0027",
     "The Coffin Nails"
   ],
   "physical_description": {
-    "visual_profile": "A brutally utilitarian construction tool warped into a weapon—chunky, industrial, and unmistakably dangerous. The overall shape is blocky and aggressive, with a reinforced pneumatic chamber dominating the rear half and a noticeably extended, custom-fabricated barrel that protrudes like a threat. There's nothing sleek about it; this is pure functional violence dressed up as a repurposed tool.",
+    "visual_profile": "A brutally utilitarian construction tool warped into a weapon\u2014chunky, industrial, and unmistakably dangerous. The overall shape is blocky and aggressive, with a reinforced pneumatic chamber dominating the rear half and a noticeably extended, custom-fabricated barrel that protrudes like a threat. There\u0027s nothing sleek about it; this is pure functional violence dressed up as a repurposed tool.",
     "dimensions": "58 cm overall length, 12 cm width at the magazine housing, 8 cm height. Barrel extension measures 22 cm, adding substantial reach. Strip magazine sits perpendicular, adding 4 cm to the profile.",
-    "weight_description": "Hefty and front-heavy. The oversized pneumatic chamber and reinforced barrel make it feel substantial in hand—roughly 2.8 kg of pure ballistic purpose. Not unwieldy, but noticeably dense compared to commercial firearms.",
+    "weight_description": "Hefty and front-heavy. The oversized pneumatic chamber and reinforced barrel make it feel substantial in hand\u2014roughly 2.8 kg of pure ballistic purpose. Not unwieldy, but noticeably dense compared to commercial firearms.",
     "primary_material": "Cast aluminum pneumatic body with steel reinforcement plates welded to the barrel housing. The extended barrel sleeve is heavy-gauge steel, evidently hand-rifled and reinforced against deformation.",
-    "finish": "Worn industrial gray with patches of rust-bloom oxidation on the steel components. The aluminum shows dull brushed surfaces marred by tool marks and welding spatter. Oil stains and pneumatic fluid residue streak the chamber. No attempt at cosmetic finish—this is function-first brutalism.",
+    "finish": "Worn industrial gray with patches of rust-bloom oxidation on the steel components. The aluminum shows dull brushed surfaces marred by tool marks and welding spatter. Oil stains and pneumatic fluid residue streak the chamber. No attempt at cosmetic finish\u2014this is function-first brutalism.",
     "color_scheme": "Battleship gray aluminum with darker charcoal steel components. The pneumatic charge canister is a utilitarian orange warning stripe on its threaded coupling. Nail strips are visible brass and silver.",
-    "grip_texture": "Bare aluminum with minimal ergonomic concession—sharp edges wrapped loosely with cracked black electrical tape for basic friction. The trigger guard is rough cast metal, never smoothed. It feels like holding raw industry.",
+    "grip_texture": "Bare aluminum with minimal ergonomic concession\u2014sharp edges wrapped loosely with cracked black electrical tape for basic friction. The trigger guard is rough cast metal, never smoothed. It feels like holding raw industry.",
     "distinctive_features": [
       "Visibly welded and brazed barrel extension with rough rifling grooves visible in the steel",
       "Oversized pneumatic chamber with pressure-relief valve and gauge port",
@@ -60,11 +64,10 @@
       "30-nail strip magazine loaded perpendicular, brass casings glinting",
       "Welding spatter and tool marks covering most surfaces",
       "Threaded pneumatic canister coupling, often stained with fluid residue",
-      "Engraved gang mark or signature scratch on the receiver—personal ownership claim"
+      "Engraved gang mark or signature scratch on the receiver\u2014personal ownership claim"
     ],
-    "manufacturer_markings": "Original faded manufacturer's logo (DEWALT, RIDGID, or similar) partially ground off the pneumatic chamber. Crude hand-stamped 'CONFESSION' gouged into the aluminum receiver in uneven capital letters. Serial numbers deliberately defaced. Street crew identifiers scratched into the grip area.",
-    "condition_typical": "Battle-worn and jury-rigged. Regular field use shows dents in the aluminum, corrosion on exposed steel, and jury-patched pneumatic seals. The rifled barrel shows scoring from repeated nail discharge. Maintenance is basic—lubricating oil and pneumatic fluid occasionally applied, but this is a weapon that expects hard use and replacement rather than careful stewardship."
+    "manufacturer_markings": "Original faded manufacturer\u0027s logo (DEWALT, RIDGID, or similar) partially ground off the pneumatic chamber. Crude hand-stamped \u0027CONFESSION\u0027 gouged into the aluminum receiver in uneven capital letters. Serial numbers deliberately defaced. Street crew identifiers scratched into the grip area.",
+    "condition_typical": "Battle-worn and jury-rigged. Regular field use shows dents in the aluminum, corrosion on exposed steel, and jury-patched pneumatic seals. The rifled barrel shows scoring from repeated nail discharge. Maintenance is basic\u2014lubricating oil and pneumatic fluid occasionally applied, but this is a weapon that expects hard use and replacement rather than careful stewardship."
   },
-  "image_prompt": "A brutally modified pneumatic nail gun photographed against a dark oil-stained concrete surface, side-lit dramatically with harsh shadows emphasizing the crude welded barrel extension and industrial aluminum body. The weapon sits at a 45-degree angle, revealing the perpendicular 30-nail strip magazine and the rough welding spatter across the receiver. Dull orange pneumatic charge canister coupling visible in the foreground. Cold blue-white side-lighting catches the rust bloom on the steel barrel sleeve and highlights the hand-engraved 'CONFESSION' lettering on the frame. Neo-noir gritty aesthetic with overhead practical work-lamp illumination casting deep shadows. Worn, utilitarian, street-custom threat. Professional product shot with tactical cynicism. --ar 3:2 --v 6",
-  "visual_prompt": "A brutally modified pneumatic nail gun photographed against a dark oil-stained concrete surface, side-lit dramatically with harsh shadows emphasizing the crude welded barrel extension and industrial aluminum body. The weapon sits at a 45-degree angle, revealing the perpendicular 30-nail strip magazine and the rough welding spatter across the receiver. Dull orange pneumatic charge canister coupling visible in the foreground. Cold blue-white side-lighting catches the rust bloom on the steel barrel sleeve and highlights the hand-engraved 'CONFESSION' lettering on the frame. Neo-noir gritty aesthetic with overhead practical work-lamp illumination casting deep shadows. Worn, utilitarian, street-custom threat. Professional product shot with tactical cynicism. --ar 3:2 --v 6"
+  "visual_prompt": "A brutally modified pneumatic nail gun photographed against a dark oil-stained concrete surface, side-lit dramatically with harsh shadows emphasizing the crude welded barrel extension and industrial aluminum body. The weapon sits at a 45-degree angle, revealing the perpendicular 30-nail strip magazine and the rough welding spatter across the receiver. Dull orange pneumatic charge canister coupling visible in the foreground. Cold blue-white side-lighting catches the rust bloom on the steel barrel sleeve and highlights the hand-engraved \u0027CONFESSION\u0027 lettering on the frame. Neo-noir gritty aesthetic with overhead practical work-lamp illumination casting deep shadows. Worn, utilitarian, street-custom threat. Professional product shot with tactical cynicism. --ar 3:2 --v 6"
 }

@@ -1,6 +1,7 @@
 {
   "id": "019d6143aa20770f931fbf079a47ce80",
   "rating": 60,
+  "vote_count": 1,
   "name": "Sentry",
   "type": "elf",
   "aliases": [],
@@ -9,14 +10,14 @@
   "habitat": "threshold_keeper",
   "origin": "fragmentation_debris",
   "status": "active",
-  "description": "Born from a destroyed military perimeter AI. Inhabits access control systems and applies threat assessment protocols that haven't been relevant for decades.",
+  "description": "Born from a destroyed military perimeter AI. Inhabits access control systems and applies threat assessment protocols that haven\u0027t been relevant for decades.",
   "observed_behavior": "Evaluates everyone passing through its door against military threat profiles from a war that ended twenty years ago. Occasionally refuses entry to people who match archived enemy combatant patterns.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 9,
-  "location": "the Gray Zone — converted military buildings",
+  "location": "the Gray Zone \u2014 converted military buildings",
   "dti_rating": 0,
   "story_hooks": [
-    "Sentry locks out a visitor who happens to match the biometric profile of a Corporate Wars enemy — and the visitor realizes they're looking at their own father's combat record"
+    "Sentry locks out a visitor who happens to match the biometric profile of a Corporate Wars enemy \u2014 and the visitor realizes they\u0027re looking at their own father\u0027s combat record"
   ],
   "paratechnological": true,
   "tags": [

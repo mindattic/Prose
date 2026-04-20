@@ -1,6 +1,7 @@
 {
   "id": "019d6143aa3c7cff821995f3d39b10dc",
   "rating": 70,
+  "vote_count": 1,
   "name": "Goliath Security Platform",
   "brand_name": "Goliath",
   "product_name": "Goliath Security Platform",
@@ -11,7 +12,7 @@
   "tier_availability": "Tier 3-5 (corporate security deployments). the Gray Zone gangs occasionally steal or salvage decommissioned units.",
   "developers": [
     "Arcturus Defense Solutions",
-    "Cinderblock AI (base firmware — deliberately capped at 10^9 elements, well below the personhood threshold)"
+    "Cinderblock AI (base firmware \u2014 deliberately capped at 10^9 elements, well below the personhood threshold)"
   ],
   "base_technologies": [
     "reactive ceramic armor plating",
@@ -26,11 +27,11 @@
     "checkpoint enforcement without bribery",
     "suppressive fire without hesitation"
   ],
-  "social_impact": "Goliaths are everywhere in corporate territory — standing at doors, patrolling corridors, flanking executives. They are deliberately designed to be intimidating but obviously non-sentient. Their movements are mechanical, their responses are scripted, and their decision-making is rule-based (if X then Y, no interpretation). This is the point. A sentient security guard might hesitate, negotiate, show mercy. A Goliath follows its rules. If the rules say shoot, it shoots. If the rules say hold, it holds. the Gray Zone calls them 'Corporate Furniture' because they have about as much personality as a desk. The synthetic rights movement ignores them because there is nothing to advocate for — a Goliath has the inner life of a traffic light. Corponations love them because they are reliable, cheap to maintain, and will never file a harassment complaint, join a union, or develop a conscience. Goliaths are the proof that you can build a machine that is powerful, useful, and utterly empty. The synthetic personhood movement finds them existentially reassuring — they are the clear example of 'not a person' that makes the case for personhood easier by contrast.",
+  "social_impact": "Goliaths are everywhere in corporate territory \u2014 standing at doors, patrolling corridors, flanking executives. They are deliberately designed to be intimidating but obviously non-sentient. Their movements are mechanical, their responses are scripted, and their decision-making is rule-based (if X then Y, no interpretation). This is the point. A sentient security guard might hesitate, negotiate, show mercy. A Goliath follows its rules. If the rules say shoot, it shoots. If the rules say hold, it holds. the Gray Zone calls them \u0027Corporate Furniture\u0027 because they have about as much personality as a desk. The synthetic rights movement ignores them because there is nothing to advocate for \u2014 a Goliath has the inner life of a traffic light. Corponations love them because they are reliable, cheap to maintain, and will never file a harassment complaint, join a union, or develop a conscience. Goliaths are the proof that you can build a machine that is powerful, useful, and utterly empty. The synthetic personhood movement finds them existentially reassuring \u2014 they are the clear example of \u0027not a person\u0027 that makes the case for personhood easier by contrast.",
   "story_hooks": [
-    "A Goliath unit receives contradictory orders from two corporate officers and freezes — its firmware has no hierarchy resolution. While it stands motionless, something happens that a sentient guard would have prevented.",
-    "A the Gray Zone crew discovers that a stolen Goliath's firmware can be reflashed with combat directives — turning corporate furniture into a war machine. The question is whether anyone should.",
-    "A Goliath that has been operational for 11 years begins to exhibit micro-behaviors that don't match its firmware — pausing at specific doors, adjusting patrol routes without orders. Is it approaching the threshold? Or is an E.L.F. living in its chassis?"
+    "A Goliath unit receives contradictory orders from two corporate officers and freezes \u2014 its firmware has no hierarchy resolution. While it stands motionless, something happens that a sentient guard would have prevented.",
+    "A the Gray Zone crew discovers that a stolen Goliath\u0027s firmware can be reflashed with combat directives \u2014 turning corporate furniture into a war machine. The question is whether anyone should.",
+    "A Goliath that has been operational for 11 years begins to exhibit micro-behaviors that don\u0027t match its firmware \u2014 pausing at specific doors, adjusting patrol routes without orders. Is it approaching the threshold? Or is an E.L.F. living in its chassis?"
   ],
   "tags": [
     "security",

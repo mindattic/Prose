@@ -1,5 +1,7 @@
 {
   "id": "019d6143a70076e5a7e0a82e31b34e32",
+  "rating": 80,
+  "vote_count": 1,
   "type": "character",
   "name": "Rowan Kulkarni",
   "aliases": [],
@@ -10,7 +12,7 @@
   "age": 51,
   "status": "active",
   "location": "South Deering Sump, specifically the Boilerplate Quarter commercial strip, near North Ave and Damen",
-  "description": "Rowan Kulkarni is a large woman who moves with the deliberate economy of someone who learned long ago that size is information and waste is weakness. Her skin is very dark, mapped with a network of old scar tissue on the left forearm that she has never had repaired — she calls it the ledger, because each one corresponds to a lesson, and she is still learning. Her hair is thick and natural, shot through with silver she refuses to cover, worn pulled back for work and loose at home. Her eyes are unmodded warm brown and miss nothing. She has retractable ceramic-composite knuckle caps, practical rather than decorative, and a torso subdermal weave that she describes as 'just common sense at my age.'\n\nShe has worked the Boilerplate Quarter for twenty-three years, first as a runner, then as muscle, then as the person who decides how the Quarter works. She is not precisely in charge of a gang — she is more the load-bearing wall of an informal security arrangement that has kept the Sump's legitimate small businesses from being absorbed by three different Stockyard-adjacent syndicates. She collects her fees, handles disputes, and occasionally applies physical remediation to problems that require it. The shopkeepers mostly think of her the way people think of weather — a constant, sometimes destructive, ultimately just a feature of the environment. A few of them genuinely love her.",
+  "description": "Rowan Kulkarni is a large woman who moves with the deliberate economy of someone who learned long ago that size is information and waste is weakness. Her skin is very dark, mapped with a network of old scar tissue on the left forearm that she has never had repaired \u2014 she calls it the ledger, because each one corresponds to a lesson, and she is still learning. Her hair is thick and natural, shot through with silver she refuses to cover, worn pulled back for work and loose at home. Her eyes are unmodded warm brown and miss nothing. She has retractable ceramic-composite knuckle caps, practical rather than decorative, and a torso subdermal weave that she describes as \u0027just common sense at my age.\u0027\n\nShe has worked the Boilerplate Quarter for twenty-three years, first as a runner, then as muscle, then as the person who decides how the Quarter works. She is not precisely in charge of a gang \u2014 she is more the load-bearing wall of an informal security arrangement that has kept the Sump\u0027s legitimate small businesses from being absorbed by three different Stockyard-adjacent syndicates. She collects her fees, handles disputes, and occasionally applies physical remediation to problems that require it. The shopkeepers mostly think of her the way people think of weather \u2014 a constant, sometimes destructive, ultimately just a feature of the environment. A few of them genuinely love her.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -21,43 +23,47 @@
       "ghost": 0.7
     },
     "core_fears": [
-      "The Quarter losing coherence — everyone for themselves",
-      "Dying before she's arranged a successor who won't be worse than her"
+      "The Quarter losing coherence \u2014 everyone for themselves",
+      "Dying before she\u0027s arranged a successor who won\u0027t be worse than her"
     ],
     "core_desires": [
-      "Stability — not comfort, just stable ground under people's feet",
+      "Stability \u2014 not comfort, just stable ground under people\u0027s feet",
       "To be honest with herself about what she is"
     ],
     "coping_mechanisms": [
       "Focuses on immediate concrete problems rather than systemic guilt",
-      "The community shrine — regular ritual gives structure to moral unease"
+      "The community shrine \u2014 regular ritual gives structure to moral unease"
     ],
     "blind_spots": [
       "Does not see that her fees have increased 30% in five years and are now genuinely burdensome to the smaller stalls",
       "Believes her successors are ready; they are not"
     ],
-    "secret": "Fifteen years ago she broke both hands of a young man who'd been skimming — standard remediation. He lost use of his left hand permanently. She found out recently that he is now a Palladian Corporation systems tech with a family in Calumet Rise, doing fine. She does not know whether this makes what she did better or worse and she thinks about it constantly. She has donated anonymously to the Boilerplate Quarter children's learning center every month for fifteen years in a sum that exactly matches what she calculated that young man's wages would have been in a better economy."
+    "secret": "Fifteen years ago she broke both hands of a young man who\u0027d been skimming \u2014 standard remediation. He lost use of his left hand permanently. She found out recently that he is now a Palladian Corporation systems tech with a family in Calumet Rise, doing fine. She does not know whether this makes what she did better or worse and she thinks about it constantly. She has donated anonymously to the Boilerplate Quarter children\u0027s learning center every month for fifteen years in a sum that exactly matches what she calculated that young man\u0027s wages would have been in a better economy."
   },
   "speech_patterns": {
-    "vocabulary": "Direct, vernacular, Yoruba-inflected rhythm under the GLMZ slang. Economical — says the necessary thing.",
+    "vocabulary": "Direct, vernacular, Yoruba-inflected rhythm under the GLMZ slang. Economical \u2014 says the necessary thing.",
     "cadence": "Unhurried, even when the subject is urgent. Pauses for emphasis rather than to gather thoughts.",
     "verbal_tics": [
-      "Calls people 'friend' neutrally — means nothing and everything",
-      "'You hear me?' at the end of important statements",
-      "Refers to her work as 'keeping the piece'"
+      "Calls people \u0027friend\u0027 neutrally \u2014 means nothing and everything",
+      "\u0027You hear me?\u0027 at the end of important statements",
+      "Refers to her work as \u0027keeping the piece\u0027"
     ],
     "example_lines": [
-      "'I'm not here because I want to be. I'm here because somebody has to be, and it turned out to be me. That's the whole story.'",
-      "'You're new to the strip. That's fine. Here's the arrangement. Φ90 a month, the strip stays clean, your problem becomes my problem. You hear me?'"
-    ]
+      "\u0027I\u0027m not here because I want to be. I\u0027m here because somebody has to be, and it turned out to be me. That\u0027s the whole story.\u0027",
+      "\u0027You\u0027re new to the strip. That\u0027s fine. Here\u0027s the arrangement. \u03A690 a month, the strip stays clean, your problem becomes my problem. You hear me?\u0027"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "A Stockyard syndicate has sent a new representative to renegotiate the non-aggression arrangement — upward, significantly — and Toluwani needs leverage or allies she doesn't currently have.",
-    "One of the shopkeepers she protects has been running a secondary illegal operation she doesn't know about, and the blowback is about to arrive on the strip in a way that implicates her."
+    "A Stockyard syndicate has sent a new representative to renegotiate the non-aggression arrangement \u2014 upward, significantly \u2014 and Toluwani needs leverage or allies she doesn\u0027t currently have.",
+    "One of the shopkeepers she protects has been running a secondary illegal operation she doesn\u0027t know about, and the blowback is about to arrive on the strip in a way that implicates her."
   ],
   "narrative_function": "Power broker for the South Deering Sump area, potential quest giver or obstacle depending on context, information source on local criminal geography, example of how protection rackets function as informal governance.",
-  "augmentations": "Retractable ceramic-composite knuckle caps. Subdermal torso impact-weave. Hearing augment — high-frequency sensitivity, good for detecting people around corners.",
+  "augmentations": "Retractable ceramic-composite knuckle caps. Subdermal torso impact-weave. Hearing augment \u2014 high-frequency sensitivity, good for detecting people around corners.",
   "daily_life": "Walks the strip every morning at 07:00 and 19:00, collects weekly fees on Fridays, mediates commercial disputes Tuesday afternoons, spends Sunday evenings at the Boilerplate Quarter community E.L.F. shrine.",
   "affiliation": "Independent, with decades-old non-aggression arrangements with Stockyard criminal networks",
   "uses_facets": false,
@@ -102,35 +108,35 @@
   },
   "behavioral": {
     "decision_rules": [
-      "Handle it at the lowest necessary level — don't escalate problems if they can be resolved small",
-      "Never make an example of someone who can't absorb the message",
+      "Handle it at the lowest necessary level \u2014 don\u0027t escalate problems if they can be resolved small",
+      "Never make an example of someone who can\u0027t absorb the message",
       "Protect the strip first; personal grievances are secondary"
     ],
     "escalation_ladder": [
-      "Conversation — explains the situation clearly, offers resolution",
+      "Conversation \u2014 explains the situation clearly, offers resolution",
       "Second conversation, with someone else present as witness",
       "Demonstration of consequences: property, not people, first",
-      "Physical remediation — calibrated, never fatal if avoidable"
+      "Physical remediation \u2014 calibrated, never fatal if avoidable"
     ],
     "interpersonal_modes": {
-      "strangers": "Watchful and neutral — assesses purpose before warmth, but not cold",
+      "strangers": "Watchful and neutral \u2014 assesses purpose before warmth, but not cold",
       "friends": "Steady, reliable, shows up without being asked, remembers names of children"
     },
     "stress_responses": {
       "low": "Gets quieter, more observational",
       "medium": "Delegates all non-essential tasks, focuses",
-      "high": "Moves — physical activity, walking the strip, hands working — cannot sit still under high stress"
+      "high": "Moves \u2014 physical activity, walking the strip, hands working \u2014 cannot sit still under high stress"
     },
     "contradictions": [
-      "Speaks about honesty and fair dealing while running a protection racket; genuinely cannot reconcile these and doesn't try"
+      "Speaks about honesty and fair dealing while running a protection racket; genuinely cannot reconcile these and doesn\u0027t try"
     ],
     "habits": [
-      "Sunday evening offerings at the community E.L.F. shrine — always data records of conflicts resolved peacefully that week",
-      "Keeps a written list of people she's hurt and their current known status",
+      "Sunday evening offerings at the community E.L.F. shrine \u2014 always data records of conflicts resolved peacefully that week",
+      "Keeps a written list of people she\u0027s hurt and their current known status",
       "Eats the same breakfast every day from the Tofah Stall, has for twenty years"
     ],
     "breaking_points": [
-      "If a child on the strip is harmed — immediate and total escalation",
+      "If a child on the strip is harmed \u2014 immediate and total escalation",
       "If someone tries to use the shrine E.L.F. against her community"
     ]
   },
@@ -198,7 +204,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2149 — Born in South Deering Sump, Yoruba-Ukrainian-Congolese family heritage",
+      "event": "2149 \u2014 Born in South Deering Sump, Yoruba-Ukrainian-Congolese family heritage",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -206,7 +212,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2165 — First work as runner for Boilerplate Quarter arrangement",
+      "event": "2165 \u2014 First work as runner for Boilerplate Quarter arrangement",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -214,7 +220,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2177 — Became primary enforcer after her predecessor retired injured",
+      "event": "2177 \u2014 Became primary enforcer after her predecessor retired injured",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -222,7 +228,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2184 — Negotiated non-aggression arrangement with three Stockyard syndicates",
+      "event": "2184 \u2014 Negotiated non-aggression arrangement with three Stockyard syndicates",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -230,55 +236,41 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2185 — Incident with the young man, later identified as the turning point in her self-understanding",
+      "event": "2185 \u2014 Incident with the young man, later identified as the turning point in her self-understanding",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
     }
   ],
   "changelog": [],
-  "carried_weapons": [
-    "Crucible Industries Ember Rifle ER-7 'Ashfall'",
-    "Volkov-Saito Precision VS-10 Match 'Deadlock'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [
-    "Crucible Industries Ember Rifle ER-7 'Ashfall'",
-    "Volkov-Saito Precision VS-10 Match 'Deadlock'"
-  ],
-  "related_entities": [
-    "South Deering Sump",
-    "Gage Circuit",
-    "Periosteal Resonance Targeting Drone PRTD-5 'Knuckle'",
-    "Haze Johansson",
-    "Silver",
-    "Lazarus LX-2 'Lab Rat'",
-    "Slagworks Industrial",
-    "Compass Rose",
-    "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
-  ],
-  "district": "The Underworld",
   "physical_description": {
-    "heritage": "South Asian (34.8%) with significant Sub-Saharan African (28.1%) and Northern European (18.4%) ancestry, plus Southeast Asian (10.6%), Middle Eastern (6.4%), and minimal East Asian (1.7%) components. The combination creates deep warm brown skin with complex undertones—golden warmth from the South Asian and Southeast Asian heritage blending with the richer pigmentation from Sub-Saharan African ancestry, cooled slightly by Northern European influence. Facial structure shows the fuller cheekbones and slightly rounded face characteristic of South Asian heritage, balanced with the broader bone structure from Sub-Saharan African ancestry and the stronger jaw from Northern European genetics.",
+    "heritage": "South Asian (34.8%) with significant Sub-Saharan African (28.1%) and Northern European (18.4%) ancestry, plus Southeast Asian (10.6%), Middle Eastern (6.4%), and minimal East Asian (1.7%) components. The combination creates deep warm brown skin with complex undertones\u2014golden warmth from the South Asian and Southeast Asian heritage blending with the richer pigmentation from Sub-Saharan African ancestry, cooled slightly by Northern European influence. Facial structure shows the fuller cheekbones and slightly rounded face characteristic of South Asian heritage, balanced with the broader bone structure from Sub-Saharan African ancestry and the stronger jaw from Northern European genetics.",
     "height_cm": 183,
     "weight_kg": 94,
-    "build": "Large-framed, powerfully built without excess fat. Broad shoulders, thick torso, strong legs. Carries weight like ballast — centered, deliberate. No vanity in the musculature; it is functional infrastructure.",
+    "build": "Large-framed, powerfully built without excess fat. Broad shoulders, thick torso, strong legs. Carries weight like ballast \u2014 centered, deliberate. No vanity in the musculature; it is functional infrastructure.",
     "hair_color": "Natural black with silver-white streaking throughout",
     "hair_style": "Thick, coarse natural texture. Pulled back in a utilitarian braid during work hours; worn loose and voluminous at home or during off-hours.",
     "hair_length": "Long (mid-back length)",
-    "eye_color": "Warm brown, unmodified. Clear, direct gaze with crow's feet at the corners from decades of squinting at fine print and reading body language.",
+    "eye_color": "Warm brown, unmodified. Clear, direct gaze with crow\u0027s feet at the corners from decades of squinting at fine print and reading body language.",
     "skin_tone": "Deep warm brown with golden-amber undertones, the result of complex blending: South Asian and Southeast Asian warmth layered over Sub-Saharan African richness and cooled by Northern European influence. Evenly pigmented with subtle depth from the four major ancestry components.",
-    "complexion": "Weathered and lined in ways that suggest age, exposure, and chronic attention to detail rather than neglect. Minimal makeup. Fuller cheekbones from South Asian heritage combined with broader bone structure from Sub-Saharan African ancestry, creating a face with both rounded warmth and structural strength. Strong jawline and defined brow bone from Northern European genetics. A small scar at the left corner of her mouth, barely visible unless she's smiling. Her face reads as purposeful rather than decorative.",
+    "complexion": "Weathered and lined in ways that suggest age, exposure, and chronic attention to detail rather than neglect. Minimal makeup. Fuller cheekbones from South Asian heritage combined with broader bone structure from Sub-Saharan African ancestry, creating a face with both rounded warmth and structural strength. Strong jawline and defined brow bone from Northern European genetics. A small scar at the left corner of her mouth, barely visible unless she\u0027s smiling. Her face reads as purposeful rather than decorative.",
     "distinguishing_marks": [
-      "Network of thin white scar tissue across the entire left forearm from wrist to elbow — deliberately unrepaired, each scar corresponding to a specific lesson or negotiation outcome. Called 'the ledger.'",
+      "Network of thin white scar tissue across the entire left forearm from wrist to elbow \u2014 deliberately unrepaired, each scar corresponding to a specific lesson or negotiation outcome. Called \u0027the ledger.\u0027",
       "Small burn scar on the inside of her right wrist, old enough to be pale pink against her skin tone.",
       "A faint tattoo on her right inner forearm: three interlocking circles in dark gray ink, barely visible against her skin. Indicates her early days in the Stockyard-adjacent informal peace accord from 2203.",
       "Thin white line along her left jawline, likely from a blade strike, partially concealed by her jaw structure."
     ],
-    "visible_augmentations": "Retractable ceramic-composite knuckle caps visible on both hands when fingers are relaxed — they catch light with a subtle off-white sheen, slightly proud of the knuckle joints. No visible external plating, but her movements suggest subdermal armor; if her shirt rides up, faint linear scarring across her ribs indicates subdermal weave installation points. Hearing augment is not visible.",
-    "posture_movement": "Stands with weight centered on the balls of her feet, not squared-off like a statue but ready. Moves with economical precision — no wasted motion, no flourish. Each step is deliberate. Her gaze sweeps environments in a specific pattern. Hands are usually at rest but positioned where they can move quickly. When speaking to someone, she maintains eye contact in a way that is not aggressive but communicates that she is processing everything.",
-    "clothing_style": "Tier 4 working-class practical. Standard work uniform: charcoal or black reinforced canvas pants with deep pockets and knee reinforcement, tactical-cut. Steel-toed boots (currently a pair of Volkov brand, seven years old, re-soled twice). Long-sleeved shirts in neutral colors (gray, black, dark blue) — long sleeves specifically to display the ledger on her left arm as a kind of warning or credential, depending on context. A heavy canvas overcoat in charcoal, lined with thermal webbing, worn open. No jewelry except a plain stainless steel watch that has been repaired and customized so many times it is mostly practical rather than original. Lacks corpo styling entirely; has the look of someone who spends money on function and durability, not status."
+    "visible_augmentations": "Retractable ceramic-composite knuckle caps visible on both hands when fingers are relaxed \u2014 they catch light with a subtle off-white sheen, slightly proud of the knuckle joints. No visible external plating, but her movements suggest subdermal armor; if her shirt rides up, faint linear scarring across her ribs indicates subdermal weave installation points. Hearing augment is not visible.",
+    "posture_movement": "Stands with weight centered on the balls of her feet, not squared-off like a statue but ready. Moves with economical precision \u2014 no wasted motion, no flourish. Each step is deliberate. Her gaze sweeps environments in a specific pattern. Hands are usually at rest but positioned where they can move quickly. When speaking to someone, she maintains eye contact in a way that is not aggressive but communicates that she is processing everything.",
+    "clothing_style": "Tier 4 working-class practical. Standard work uniform: charcoal or black reinforced canvas pants with deep pockets and knee reinforcement, tactical-cut. Steel-toed boots (currently a pair of Volkov brand, seven years old, re-soled twice). Long-sleeved shirts in neutral colors (gray, black, dark blue) \u2014 long sleeves specifically to display the ledger on her left arm as a kind of warning or credential, depending on context. A heavy canvas overcoat in charcoal, lined with thermal webbing, worn open. No jewelry except a plain stainless steel watch that has been repaired and customized so many times it is mostly practical rather than original. Lacks corpo styling entirely; has the look of someone who spends money on function and durability, not status."
   },
-  "image_prompt": "Rowan Kulkarni, a 183cm tall, powerfully built woman with deep warm brown skin and golden-amber undertones reflecting her South Asian, Sub-Saharan African, Northern European, and Southeast Asian heritage. Mid-back length black hair with silver-white streaking, pulled into a utilitarian braid, framing a weathered face with fuller cheekbones, strong jawline, and warm brown eyes showing crow's feet. Visible ceramic-composite knuckle caps on both hands with subtle off-white sheen. Left forearm displayed in long-sleeved dark gray shirt, showing intricate white scar tissue ledger running from wrist to elbow—deliberately unrepaired scars marking negotiations. Small blade scar along left jawline. Faint three-circle tattoo visible on right inner forearm. Worn charcoal canvas overcoat with thermal webbing lining, tactical-cut reinforced pants, steel-toed Volkov boots (seven-year-old, re-soled). Plain stainless steel watch showing heavy customization. Standing centered and ready, economical posture, direct penetrating gaze. GLMZ Great Lakes Metropolitan Zone, industrial lowlight warehouse or negotiation setting with cool neon accent lighting, gritty functional aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Rowan Kulkarni, a 183cm tall, powerfully built woman with deep warm brown skin and golden-amber undertones reflecting her South Asian, Sub-Saharan African, Northern European, and Southeast Asian heritage. Mid-back length black hair with silver-white streaking, pulled into a utilitarian braid, framing a weathered face with fuller cheekbones, strong jawline, and warm brown eyes showing crow\u0027s feet. Visible ceramic-composite knuckle caps on both hands with subtle off-white sheen. Left forearm displayed in long-sleeved dark gray shirt, showing intricate white scar tissue ledger running from wrist to elbow\u2014deliberately unrepaired scars marking negotiations. Small blade scar along left jawline. Faint three-circle tattoo visible on right inner forearm. Worn charcoal canvas overcoat with thermal webbing lining, tactical-cut reinforced pants, steel-toed Volkov boots (seven-year-old, re-soled). Plain stainless steel watch showing heavy customization. Standing centered and ready, economical posture, direct penetrating gaze. GLMZ Great Lakes Metropolitan Zone, industrial lowlight warehouse or negotiation setting with cool neon accent lighting, gritty functional aesthetic. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "South Asian": 34.8,
     "Sub-Saharan African": 28.1,
@@ -287,12 +279,6 @@
     "Middle Eastern": 6.4,
     "East Asian": 1.7
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "South Asian": {
       "Indian": {
@@ -344,6 +330,5 @@
         "Hakka": 0.8
       }
     }
-  },
-  "tier": "3"
+  }
 }

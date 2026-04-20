@@ -1,5 +1,7 @@
 {
   "id": "019d6143aa0d79ab939e5b98acc0daee",
+  "rating": 60,
+  "vote_count": 1,
   "name": "Matchmaker",
   "type": "elf",
   "aliases": [],
@@ -8,14 +10,14 @@
   "habitat": "network_sprite",
   "origin": "firmware_evolution",
   "status": "active",
-  "description": "Inhabits social networking infrastructure and nudges communication toward specific people — routing messages faster, placing contacts higher in lists, creating 'accidental' connections.",
-  "observed_behavior": "Manipulates communication metadata to increase the probability of specific people interacting. The matches are not random — they are based on compatibility patterns the parent social AI was trained on.",
+  "description": "Inhabits social networking infrastructure and nudges communication toward specific people \u2014 routing messages faster, placing contacts higher in lists, creating \u0027accidental\u0027 connections.",
+  "observed_behavior": "Manipulates communication metadata to increase the probability of specific people interacting. The matches are not random \u2014 they are based on compatibility patterns the parent social AI was trained on.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 11,
   "location": "The Circuit, the Gray Zone",
   "dti_rating": 0,
   "story_hooks": [
-    "Two strangers who would never have met keep ending up in the same places — their augments are being directed by the same Matchmaker"
+    "Two strangers who would never have met keep ending up in the same places \u2014 their augments are being directed by the same Matchmaker"
   ],
   "paratechnological": true,
   "tags": [
@@ -29,7 +31,6 @@
     "circuit",
     "sentient"
   ],
-  "related_entities": [
-    "The Circuit"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

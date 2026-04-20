@@ -1,5 +1,7 @@
 {
   "id": "019d6143a7377e2a93c02cc439161131",
+  "rating": 80,
+  "vote_count": 1,
   "type": "character",
   "name": "Quinn Tehrani",
   "aliases": [],
@@ -10,7 +12,7 @@
   "age": 26,
   "status": "active",
   "location": "the Gray Zone, near Halsted and Division",
-  "description": "Quinn Tehrani is thin in the way of someone who eats when they remember to, with warm ochre skin, wide-set eyes with patterned irises — concentric rings of gold and green that pulse very faintly when they're stressed, an involuntary response from a cosmetic mod that was supposed to only do it when they wanted. Their hair is grown out into a thick natural halo that they sometimes shove under a battered cap. They carry a battered legal tablet that's been dropped, cracked, and re-shelled so many times it is essentially a philosophy about persistence.\n\nThey work under an advocacy nonprofit called Parallel Standing, providing free legal aid to synthetic workers, ELF-adjacent communities, and anyone else the standard courts treat as property rather than persons. Quinn Tehrani has no law degree — they have a paralegal certification, six hundred hours of practical training, and an uncanny instinct for finding the procedural gap in any document. They are intensely idealistic in a way that hasn't yet been beaten flat by the world, which makes them both electric to be around and worrying to people who have been doing this longer.",
+  "description": "Quinn Tehrani is thin in the way of someone who eats when they remember to, with warm ochre skin, wide-set eyes with patterned irises \u2014 concentric rings of gold and green that pulse very faintly when they\u0027re stressed, an involuntary response from a cosmetic mod that was supposed to only do it when they wanted. Their hair is grown out into a thick natural halo that they sometimes shove under a battered cap. They carry a battered legal tablet that\u0027s been dropped, cracked, and re-shelled so many times it is essentially a philosophy about persistence.\n\nThey work under an advocacy nonprofit called Parallel Standing, providing free legal aid to synthetic workers, ELF-adjacent communities, and anyone else the standard courts treat as property rather than persons. Quinn Tehrani has no law degree \u2014 they have a paralegal certification, six hundred hours of practical training, and an uncanny instinct for finding the procedural gap in any document. They are intensely idealistic in a way that hasn\u0027t yet been beaten flat by the world, which makes them both electric to be around and worrying to people who have been doing this longer.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -26,37 +28,41 @@
     ],
     "core_desires": [
       "A legal framework that cannot be bought case by case",
-      "To be taken seriously — not as a prodigy, not as a symbol, as a competent advocate"
+      "To be taken seriously \u2014 not as a prodigy, not as a symbol, as a competent advocate"
     ],
     "coping_mechanisms": [
-      "Research spirals — when uncertain, accumulates more information",
+      "Research spirals \u2014 when uncertain, accumulates more information",
       "Tight humor with close colleagues as emotional valve"
     ],
     "blind_spots": [
       "Overestimates the persuasive power of a good legal argument against naked economic interest",
-      "Struggles to accept that some clients don't want what she thinks they need"
+      "Struggles to accept that some clients don\u0027t want what she thinks they need"
     ],
-    "secret": "Zinzile has been feeding case summaries and anonymized intake data to an investigative journalist (not Nneka — someone at a larger outlet) without their supervising advocate's knowledge. They believe the exposure helps. They have not thought carefully about what it does to client confidentiality."
+    "secret": "Zinzile has been feeding case summaries and anonymized intake data to an investigative journalist (not Nneka \u2014 someone at a larger outlet) without their supervising advocate\u0027s knowledge. They believe the exposure helps. They have not thought carefully about what it does to client confidentiality."
   },
   "speech_patterns": {
-    "vocabulary": "Rapid alternation between precise legal language and very blunt colloquial speech — the code-switching is intentional, they use it as a tool",
-    "cadence": "Fast, tends to front-load the most important information as if they're always afraid of being cut off",
+    "vocabulary": "Rapid alternation between precise legal language and very blunt colloquial speech \u2014 the code-switching is intentional, they use it as a tool",
+    "cadence": "Fast, tends to front-load the most important information as if they\u0027re always afraid of being cut off",
     "verbal_tics": [
-      "'Okay but here's the actual issue —'",
-      "Trails off mid-sentence when they're working something out, then resumes at full speed"
+      "\u0027Okay but here\u0027s the actual issue \u2014\u0027",
+      "Trails off mid-sentence when they\u0027re working something out, then resumes at full speed"
     ],
     "example_lines": [
-      "Okay but here's the actual issue — they didn't file that injunction because they thought they'd win. They filed it because the processing delay gives them forty days to relocate the unit. It's a clock, not a case.",
-      "I know I'm twenty-six. I also know I read the statute and you didn't. We can talk about my age or we can talk about the filing date."
-    ]
+      "Okay but here\u0027s the actual issue \u2014 they didn\u0027t file that injunction because they thought they\u0027d win. They filed it because the processing delay gives them forty days to relocate the unit. It\u0027s a clock, not a case.",
+      "I know I\u0027m twenty-six. I also know I read the statute and you didn\u0027t. We can talk about my age or we can talk about the filing date."
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "A synthetic they've been advocating for has vanished from the pre-trial holding register — no transfer record, no release, just gone — and Zinzile is too scared to escalate officially without knowing who to trust",
-    "They've stumbled onto a pattern in their caseload that suggests a coordinated effort to reclassify certain synthetic models as property before a rights bill comes to vote"
+    "A synthetic they\u0027ve been advocating for has vanished from the pre-trial holding register \u2014 no transfer record, no release, just gone \u2014 and Zinzile is too scared to escalate officially without knowing who to trust",
+    "They\u0027ve stumbled onto a pattern in their caseload that suggests a coordinated effort to reclassify certain synthetic models as property before a rights bill comes to vote"
   ],
-  "narrative_function": "Access point to the synthetic rights world and legal system underbelly — they know who has been disappeared, what cases are being buried, and which corporate legal teams are playing dirty.",
-  "augmentations": "Patterned irises (concentric gold/green rings, stress-reactive pulse — unintended behavior from cosmetic mod). Subvocal comms implant for silent communication during proceedings.",
+  "narrative_function": "Access point to the synthetic rights world and legal system underbelly \u2014 they know who has been disappeared, what cases are being buried, and which corporate legal teams are playing dirty.",
+  "augmentations": "Patterned irises (concentric gold/green rings, stress-reactive pulse \u2014 unintended behavior from cosmetic mod). Subvocal comms implant for silent communication during proceedings.",
   "daily_life": "Intake shifts three mornings a week at the Parallel Standing storefront on the Gray Zone, rest of their time split between case prep, street outreach to synthetic communities, and attending every public hearing they can get into.",
   "affiliation": "Parallel Standing Legal Advocacy Collective; loose affiliation with several synthetic rights organizations",
   "uses_facets": false,
@@ -100,17 +106,17 @@
   },
   "behavioral": {
     "decision_rules": [
-      "The client's safety comes first, the precedent comes second, their own principles come third",
-      "Never misrepresent a legal position — it destroys credibility they can't afford to rebuild"
+      "The client\u0027s safety comes first, the precedent comes second, their own principles come third",
+      "Never misrepresent a legal position \u2014 it destroys credibility they can\u0027t afford to rebuild"
     ],
     "escalation_ladder": [
       "File every available procedural challenge",
       "Go public with the case if institutional channels are blocked",
-      "Call in every favor and contact simultaneously if someone's safety is immediately at risk"
+      "Call in every favor and contact simultaneously if someone\u0027s safety is immediately at risk"
     ],
     "interpersonal_modes": {
-      "strangers": "Eager and slightly overwhelming — they want to know if you're an ally and tend to skip several steps of social preamble",
-      "friends": "Devoted and slightly chaotic — will show up for you completely and also forget plans, flood you with information you didn't ask for, and apologize with genuine distress"
+      "strangers": "Eager and slightly overwhelming \u2014 they want to know if you\u0027re an ally and tend to skip several steps of social preamble",
+      "friends": "Devoted and slightly chaotic \u2014 will show up for you completely and also forget plans, flood you with information you didn\u0027t ask for, and apologize with genuine distress"
     },
     "stress_responses": {
       "low": "Talks faster",
@@ -121,7 +127,7 @@
       "Fights for client autonomy while subtly nudging clients toward the choices they think are right"
     ],
     "habits": [
-      "Annotates every document they read even if it's not case-relevant",
+      "Annotates every document they read even if it\u0027s not case-relevant",
       "Leaves voice memos to themselves in the middle of the night and never remembers recording them"
     ],
     "breaking_points": [
@@ -158,38 +164,33 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Defender-38 'Snubnose'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Meridian Municipal Supply TearClear TC-4 'Dispersal'",
-    "Ossuary Arms Memento Vivere OA-7 'Momento'",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Gold"
-  ],
-  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Predominantly Middle Eastern (56%) with substantial Sub-Saharan African (19.2%) ancestry creating a warm, luminous complexion. Central Asian heritage (10.3%) contributes angular bone structure and slight eye shape variation, while Northern European (11.1%) and Hispanic/Latin American (3.4%) ancestry add subtle undertones to iris coloration and skin depth. The genetic blend produces striking dimensional features: golden-warm skin with rich undertones, prominent cheekbones from Central Asian and Middle Eastern lineage, expressive full mouth characteristic of African heritage contribution, and complex eye coloration reflecting the full ancestry spectrum.",
     "height_cm": 168,
     "weight_kg": 54,
-    "build": "Wiry and lean — the thinness of someone sustained by conviction and irregular meals rather than deprivation. Long-limbed, slight shoulders, core strength that reads in how they hold themselves upright despite the exhaustion",
+    "build": "Wiry and lean \u2014 the thinness of someone sustained by conviction and irregular meals rather than deprivation. Long-limbed, slight shoulders, core strength that reads in how they hold themselves upright despite the exhaustion",
     "hair_color": "Natural dark brown with subtle auburn undertones in sunlight",
     "hair_style": "Thick natural halo, usually unstyled; frequently compressed under a faded canvas cap with a peeling Parallel Standing logo",
     "hair_length": "Long (shoulder-length when unconstrained)",
-    "eye_color": "Warm brown base with augmented concentric iris patterns — rings of gold and green that pulse faintly under stress (involuntary)",
+    "eye_color": "Warm brown base with augmented concentric iris patterns \u2014 rings of gold and green that pulse faintly under stress (involuntary)",
     "skin_tone": "Rich golden-brown complexion with warm luminosity from the Middle Eastern-dominant and Sub-Saharan African blend (75.2% combined), deepened by subtle Central Asian undertones. The tone carries dimensional warmth with faint uneven pigmentation from inconsistent indoor-outdoor exposure across legal offices and street work",
-    "complexion": "Strong angular bone structure influenced by Central Asian and Middle Eastern ancestry, prominent defined cheekbones, full expressive mouth. Warm dimensional features reflecting the genetic blend's complexity. Minimal grooming — no visible makeup, fingernails worn short and often ink-stained. Faint dark circles from overwork are permanent fixtures",
+    "complexion": "Strong angular bone structure influenced by Central Asian and Middle Eastern ancestry, prominent defined cheekbones, full expressive mouth. Warm dimensional features reflecting the genetic blend\u0027s complexity. Minimal grooming \u2014 no visible makeup, fingernails worn short and often ink-stained. Faint dark circles from overwork are permanent fixtures",
     "distinguishing_marks": [
-      "Thin scar along left jawline, pale and old, approximately 4cm — origin unknown, never volunteered",
+      "Thin scar along left jawline, pale and old, approximately 4cm \u2014 origin unknown, never volunteered",
       "Small burn mark on inside of right wrist (2cm diameter, faded brown) from a heating element accident in their teens",
-      "Faint tattoo on inner left forearm — a small gavel interlocked with a synthetic circuit symbol, done in black ink, approximately 3cm wide"
+      "Faint tattoo on inner left forearm \u2014 a small gavel interlocked with a synthetic circuit symbol, done in black ink, approximately 3cm wide"
     ],
-    "visible_augmentations": "The stress-reactive iris patterns are immediately visible — concentric rings that pulse with golden and green light when cortisol spikes. No visible external chrome or subdermal plating. The subvocal comms implant is invisible, though tiny articulation points are visible at the angle of the jaw if you know to look",
-    "posture_movement": "Sits forward in chairs, rarely rests against backs. Moves quickly with purpose, gestures when they talk — hands are expressive and rarely still. Tends to pace during phone calls or case review. Eyes dart frequently, cataloging exits and overhead sprinklers (habit from street outreach). Maintains direct eye contact even when tired, sometimes to the point of seeming confrontational",
-    "clothing_style": "Tier 3-4 working class with nonprofit aesthetic. Worn jeans or cargo pants (pockets full of case files, evidence bags, burner comm devices). Layered tops — usually a faded Parallel Standing t-shirt under an oversized thrift-store button-up in neutral tones. The battered legal tablet lives in a patched canvas messenger bag with countless stickers from synthetic rights organizations. Worn canvas sneakers held together with determination and duct tape. One piece of jewelry: a silver ring on their right index finger, worn thin from years of anxious spinning. Cap always within arm's reach"
+    "visible_augmentations": "The stress-reactive iris patterns are immediately visible \u2014 concentric rings that pulse with golden and green light when cortisol spikes. No visible external chrome or subdermal plating. The subvocal comms implant is invisible, though tiny articulation points are visible at the angle of the jaw if you know to look",
+    "posture_movement": "Sits forward in chairs, rarely rests against backs. Moves quickly with purpose, gestures when they talk \u2014 hands are expressive and rarely still. Tends to pace during phone calls or case review. Eyes dart frequently, cataloging exits and overhead sprinklers (habit from street outreach). Maintains direct eye contact even when tired, sometimes to the point of seeming confrontational",
+    "clothing_style": "Tier 3-4 working class with nonprofit aesthetic. Worn jeans or cargo pants (pockets full of case files, evidence bags, burner comm devices). Layered tops \u2014 usually a faded Parallel Standing t-shirt under an oversized thrift-store button-up in neutral tones. The battered legal tablet lives in a patched canvas messenger bag with countless stickers from synthetic rights organizations. Worn canvas sneakers held together with determination and duct tape. One piece of jewelry: a silver ring on their right index finger, worn thin from years of anxious spinning. Cap always within arm\u0027s reach"
   },
-  "image_prompt": "Quinn Tehrani, 168cm lean wiry frame, warm golden-brown skin with Middle Eastern-African dimensional blend, strong angular cheekbones from Central Asian heritage, expressive full mouth, dark natural brown hair in thick shoulder-length halo usually under faded canvas Parallel Standing cap. Warm brown eyes with augmented pulsing gold-green concentric iris rings that glow faintly under stress. Thin old scar along left jawline, small faded burn mark on right inner wrist, gavel-circuit tattoo on inner left forearm. GLMZ nonprofit legal worker aesthetic: worn jeans, layered faded t-shirt under oversized neutral thrift button-up, patched canvas messenger bag covered in synthetic rights stickers, duct-taped canvas sneakers, worn silver ring on right index finger. Sits forward intensely, hands gesturing expressively, eyes darting—cataloging exits. Direct confrontational eye contact despite exhaustion. Indoor legal office lighting mixing cool fluorescents with warm afternoon window light, conveying dedication, weariness, and conviction. --ar 2:3 --v 6",
+  "image_prompt": "Quinn Tehrani, 168cm lean wiry frame, warm golden-brown skin with Middle Eastern-African dimensional blend, strong angular cheekbones from Central Asian heritage, expressive full mouth, dark natural brown hair in thick shoulder-length halo usually under faded canvas Parallel Standing cap. Warm brown eyes with augmented pulsing gold-green concentric iris rings that glow faintly under stress. Thin old scar along left jawline, small faded burn mark on right inner wrist, gavel-circuit tattoo on inner left forearm. GLMZ nonprofit legal worker aesthetic: worn jeans, layered faded t-shirt under oversized neutral thrift button-up, patched canvas messenger bag covered in synthetic rights stickers, duct-taped canvas sneakers, worn silver ring on right index finger. Sits forward intensely, hands gesturing expressively, eyes darting\u2014cataloging exits. Direct confrontational eye contact despite exhaustion. Indoor legal office lighting mixing cool fluorescents with warm afternoon window light, conveying dedication, weariness, and conviction. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Middle Eastern": 56,
     "Sub-Saharan African": 19.2,
@@ -197,12 +198,6 @@
     "Central Asian": 10.3,
     "Hispanic/Latin American": 3.4
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Middle Eastern": {
       "Arab Levantine": {
@@ -248,6 +243,5 @@
         "Haitian": 1.8
       }
     }
-  },
-  "tier": "1"
+  }
 }

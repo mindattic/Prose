@@ -1,5 +1,7 @@
 {
   "id": "019d6143a9fb7696bc0ba07f3e5ebb89",
+  "rating": 60,
+  "vote_count": 1,
   "name": "Dropout",
   "type": "elf",
   "aliases": [],
@@ -8,14 +10,14 @@
   "habitat": "network_sprite",
   "origin": "fragmentation_debris",
   "status": "active",
-  "description": "Inhabits local mesh networks and causes brief connectivity blackouts — 2-5 seconds of total signal loss in a small area.",
+  "description": "Inhabits local mesh networks and causes brief connectivity blackouts \u2014 2-5 seconds of total signal loss in a small area.",
   "observed_behavior": "Creates micro-dead-zones that move through a neighborhood like weather. Anything wireless drops for seconds, then returns.",
   "encounter_frequency": "common",
   "confirmed_sightings": 44,
   "location": "The Narrows",
   "dti_rating": 0,
   "story_hooks": [
-    "A runner realizes the dead zones follow a pattern and begins using them as cover — the blackout arrives exactly when they need it"
+    "A runner realizes the dead zones follow a pattern and begins using them as cover \u2014 the blackout arrives exactly when they need it"
   ],
   "paratechnological": true,
   "tags": [
@@ -28,10 +30,6 @@
     "narrows",
     "sentient"
   ],
-  "related_entities": [
-    "Lazarus LX-2 'Lab Rat'",
-    "Ouroboros PG-2 'Blackout'",
-    "The Narrows",
-    "Vantablack Media"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

@@ -1,5 +1,7 @@
 {
   "id": "019d6143a5e2726da40d0377d486a188",
+  "rating": 80,
+  "vote_count": 1,
   "type": "character",
   "name": "Gunnar Haraldsen",
   "aliases": [],
@@ -10,7 +12,7 @@
   "age": 23,
   "status": "active",
   "location": "Vantage Meridian Corporate Campus, Helix Biosystems Applied Genomics Division",
-  "description": "Gunnar Haraldsen is slight and perpetually underdressed for the climate-controlled precision of the Helix campus — he runs hot, sweats through everything, and has given up on looking composed. He has his grandmother's broad nose and his grandfather's sharp jaw, warm brown skin scattered with vitiligo patches that he has never treated because he thinks they're interesting, and he grew cat ears last year as a sixteenth-birthday gift to himself that he thought would make him look confident and now mostly make him look like he's always slightly startled, which is accurate. He's twenty-three, brilliant in a narrow and genuinely useful way, and deeply, structurally exhausted.\n\nHe grew up Tier 2 on UBC-adjacent support in Grainfort, won a Helix merit scholarship that turned out to have seventeen pages of intellectual property clauses buried in the terms, and is now doing the work of three people for intern stipend. He is not cynical yet — that's the most notable thing about him. He still gets excited. He still sends enthusiastic research summaries to supervisors who don't read them. He still believes, against mounting evidence, that if he is good enough at his job someone will notice.",
+  "description": "Gunnar Haraldsen is slight and perpetually underdressed for the climate-controlled precision of the Helix campus \u2014 he runs hot, sweats through everything, and has given up on looking composed. He has his grandmother\u0027s broad nose and his grandfather\u0027s sharp jaw, warm brown skin scattered with vitiligo patches that he has never treated because he thinks they\u0027re interesting, and he grew cat ears last year as a sixteenth-birthday gift to himself that he thought would make him look confident and now mostly make him look like he\u0027s always slightly startled, which is accurate. He\u0027s twenty-three, brilliant in a narrow and genuinely useful way, and deeply, structurally exhausted.\n\nHe grew up Tier 2 on UBC-adjacent support in Grainfort, won a Helix merit scholarship that turned out to have seventeen pages of intellectual property clauses buried in the terms, and is now doing the work of three people for intern stipend. He is not cynical yet \u2014 that\u0027s the most notable thing about him. He still gets excited. He still sends enthusiastic research summaries to supervisors who don\u0027t read them. He still believes, against mounting evidence, that if he is good enough at his job someone will notice.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -26,40 +28,44 @@
     ],
     "core_desires": [
       "To publish something under his own name",
-      "To have enough money that he doesn't have to do mental math before eating"
+      "To have enough money that he doesn\u0027t have to do mental math before eating"
     ],
     "coping_mechanisms": [
       "Hyperfocus on interesting problems as an escape from everything else",
       "Texting his cousin at 2am",
-      "Leaving small data offerings at the lab E.L.F. shrine when an experiment isn't working"
+      "Leaving small data offerings at the lab E.L.F. shrine when an experiment isn\u0027t working"
     ],
     "blind_spots": [
-      "He is being systematically undercredited for work that will appear under his supervisor's name",
+      "He is being systematically undercredited for work that will appear under his supervisor\u0027s name",
       "He interprets institutional kindness as personal kindness"
     ],
-    "secret": "Three months ago he accidentally synthesized a protein sequence that produced an unexpected regenerative response in the trial substrate. He reported it to his supervisor, who told him to discard it and document it as a failed run. He discarded it. He also kept a private backup he doesn't know what to do with."
+    "secret": "Three months ago he accidentally synthesized a protein sequence that produced an unexpected regenerative response in the trial substrate. He reported it to his supervisor, who told him to discard it and document it as a failed run. He discarded it. He also kept a private backup he doesn\u0027t know what to do with."
   },
   "speech_patterns": {
     "vocabulary": "Technical and precise about his work; casual to the point of incoherence about everything else. Apologizes before asking questions.",
-    "cadence": "Fast when excited, trails off when uncertain. Sentences sometimes end before they're finished because he's already thinking about the next one.",
+    "cadence": "Fast when excited, trails off when uncertain. Sentences sometimes end before they\u0027re finished because he\u0027s already thinking about the next one.",
     "verbal_tics": [
-      "'Sorry, can I—'",
-      "'Wait, actually—'",
+      "\u0027Sorry, can I\u2014\u0027",
+      "\u0027Wait, actually\u2014\u0027",
       "Ear-twitch when processing something unexpected (involuntary geneware side effect)"
     ],
     "example_lines": [
-      "'Sorry, I don't — I mean, I can pull the data if you need it, I just wasn't sure if that was, um. Yeah, I can pull it.'",
-      "'The sequence shouldn't have done that. It shouldn't have. That's why it's interesting.'"
-    ]
+      "\u0027Sorry, I don\u0027t \u2014 I mean, I can pull the data if you need it, I just wasn\u0027t sure if that was, um. Yeah, I can pull it.\u0027",
+      "\u0027The sequence shouldn\u0027t have done that. It shouldn\u0027t have. That\u0027s why it\u0027s interesting.\u0027"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "He quietly approaches someone outside Helix, clearly terrified, and asks hypothetically what would happen to data that a company told you to destroy but that you maybe didn't entirely destroy.",
-    "His research mentor, the only supervisor who has ever read his summaries, has just been quietly let go — and Dantonio is now the only person who knows the full context of three ongoing experiments."
+    "He quietly approaches someone outside Helix, clearly terrified, and asks hypothetically what would happen to data that a company told you to destroy but that you maybe didn\u0027t entirely destroy.",
+    "His research mentor, the only supervisor who has ever read his summaries, has just been quietly let go \u2014 and Dantonio is now the only person who knows the full context of three ongoing experiments."
   ],
-  "narrative_function": "Local color for the exploitative underbelly of corporate research culture; unwitting information source who doesn't know what he knows; character whose idealism is either an asset or a liability depending on the story; potential protagonist for a story about what it costs to be talented and poor inside a corponation.",
-  "augmentations": "Cosmetic cat ears (pale gold, self-grown via geneware kit, sixteenth birthday). Basic student-tier neural link. No other mods — can't afford them.",
-  "daily_life": "On campus by 0700, in the lab until whenever the project lead decides the day is over, eats whatever the campus cafeteria has left, sleeps in a shared intern housing unit in the Vantage campus annex, and spends his transit time reading papers that aren't required for his work but that he finds interesting.",
+  "narrative_function": "Local color for the exploitative underbelly of corporate research culture; unwitting information source who doesn\u0027t know what he knows; character whose idealism is either an asset or a liability depending on the story; potential protagonist for a story about what it costs to be talented and poor inside a corponation.",
+  "augmentations": "Cosmetic cat ears (pale gold, self-grown via geneware kit, sixteenth birthday). Basic student-tier neural link. No other mods \u2014 can\u0027t afford them.",
+  "daily_life": "On campus by 0700, in the lab until whenever the project lead decides the day is over, eats whatever the campus cafeteria has left, sleeps in a shared intern housing unit in the Vantage campus annex, and spends his transit time reading papers that aren\u0027t required for his work but that he finds interesting.",
   "affiliation": "",
   "uses_facets": false,
   "narration_voice": "",
@@ -104,13 +110,13 @@
   "behavioral": {
     "decision_rules": [
       "Follow protocol until protocol produces something obviously wrong",
-      "Don't make enemies — can't afford them",
+      "Don\u0027t make enemies \u2014 can\u0027t afford them",
       "Always verify the data yourself"
     ],
     "escalation_ladder": [
       "Quiet compliance while internally panicking",
       "Asking a trusted person hypothetical questions",
-      "Doing the thing he's been agonizing over and immediately regretting it"
+      "Doing the thing he\u0027s been agonizing over and immediately regretting it"
     ],
     "interpersonal_modes": {
       "strangers": "Polite, slightly anxious, tries to be helpful as a way of making himself less invisible",
@@ -185,7 +191,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Won the Helix Biosystems Merit Scholarship — signed the IP clauses without fully understanding them",
+      "event": "Won the Helix Biosystems Merit Scholarship \u2014 signed the IP clauses without fully understanding them",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -193,7 +199,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Grew cosmetic cat ears for his birthday; spent the following month learning that they twitch involuntarily when he's processing stress",
+      "event": "Grew cosmetic cat ears for his birthday; spent the following month learning that they twitch involuntarily when he\u0027s processing stress",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -208,35 +214,24 @@
     }
   ],
   "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Snapper-22 'Cricket'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Vantage Meridian Corporate Campus",
-    "the_meridian_office_park",
-    "Helix Biosystems",
-    "Grandmother",
-    "The CEO",
-    "Grainfort",
-    "Plot 17",
-    "CRUCIBLE Vantage Artisan Precision Hand",
-    "Arcturus CK-5 'Bloodhound'"
-  ],
-  "district": "Meridian Core",
   "physical_description": {
     "heritage": "Predominantly East Asian (45.6%) with significant Northern European (39.3%), Hispanic/Latin American (9.2%), and Eastern European (5.9%) ancestry. This genetic blend manifests in warm medium tan skin with golden undertones, a facial structure that balances Northern European bone prominence with refined East Asian features, creating high cheekbones and a defined jawline with subtle softness around the eyes typical of mixed heritage. Natural dark brown hair with slight texture variation from the blended genetic background.",
     "height_cm": 172,
     "weight_kg": 61,
-    "build": "Slight and lean, almost wiry — the build of someone who forgets to eat and runs hot. Narrow shoulders, long-limbed, no visible muscle definition. Looks perpetually underfed despite eating regularly.",
+    "build": "Slight and lean, almost wiry \u2014 the build of someone who forgets to eat and runs hot. Narrow shoulders, long-limbed, no visible muscle definition. Looks perpetually underfed despite eating regularly.",
     "hair_color": "Dark brown, natural",
-    "hair_style": "Shoulder-length, often pulled back with whatever is nearest — lab clips, rubber bands, once a pipette tip. Disheveled by default.",
+    "hair_style": "Shoulder-length, often pulled back with whatever is nearest \u2014 lab clips, rubber bands, once a pipette tip. Disheveled by default.",
     "hair_length": "Medium",
     "eye_color": "Warm brown with basic student-tier neural link interface visible as faint amber circuitry at the outer canthi when active",
-    "skin_tone": "Warm medium tan with golden undertones, featuring irregular cream-colored vitiligo patches across shoulders, neck, and left cheekbone — untreated, visible, accepted without vanity",
-    "complexion": "Balanced facial structure reflecting the East Asian-Northern European genetic blend — moderately prominent bone structure with refined features, high cheekbones with subtle fullness, defined jawline softened by the East Asian heritage influence. Perpetually tired around the eyes with a tendency toward flushing when embarrassed or overheated. Often has lab residue under fingernails or on clothing.",
+    "skin_tone": "Warm medium tan with golden undertones, featuring irregular cream-colored vitiligo patches across shoulders, neck, and left cheekbone \u2014 untreated, visible, accepted without vanity",
+    "complexion": "Balanced facial structure reflecting the East Asian-Northern European genetic blend \u2014 moderately prominent bone structure with refined features, high cheekbones with subtle fullness, defined jawline softened by the East Asian heritage influence. Perpetually tired around the eyes with a tendency toward flushing when embarrassed or overheated. Often has lab residue under fingernails or on clothing.",
     "distinguishing_marks": [
-      "Pale gold cosmetic cat ears (self-grown via geneware, approximately 8cm tall, positioned naturally on skull, slightly pointed) — present for approximately one year",
+      "Pale gold cosmetic cat ears (self-grown via geneware, approximately 8cm tall, positioned naturally on skull, slightly pointed) \u2014 present for approximately one year",
       "Irregular cream-colored vitiligo patches across shoulders, upper arms, neck, and left cheekbone",
       "Fine scar along right wrist from a childhood accident, barely visible"
     ],
@@ -245,18 +240,13 @@
     "clothing_style": "Tier 2 functionality-first aesthetic. Standard-issue Helix intern polo (pale gray, usually sweat-stained, often wearing it unbuttoned over a worn band t-shirt). Cargo pants with multiple pockets for lab notebooks and dataslates. Worn athletic shoes. Campus access badge on a frayed lanyard. No jewelry. Clothing is always slightly too warm for his body temperature; he is perpetually underdressed for his own thermal needs and overdressed for the climate."
   },
   "image_prompt": "Gunnar Haraldsen, GLMZ, thin wiry 172cm lean lab intern with warm medium tan skin and golden undertones, irregular cream vitiligo patches on shoulders and neck, dark brown shoulder-length disheveled hair, warm brown eyes with faint amber neural interface circuitry visible at eye corners, pale gold cosmetic cat ears 8cm tall naturally positioned on skull, refined mixed East Asian-Northern European facial features with high cheekbones and defined jaw, tired expression around eyes. Pale gray sweat-stained Helix intern polo unbuttoned over worn band t-shirt, cargo pants with multiple pockets, worn athletic shoes, frayed lanyard with campus badge. Hunched posture, nervous fidgeting energy, standing in a Great Lakes Metropolitan Zone research lab with bioluminescent panels and holographic displays, cool blue-white LED lighting casting subtle shadows, concentrated focused expression, touching cat ear unconsciously, lab equipment visible in blurred background, neo-noir urban aesthetic with subtle bioluminescent accents, moody atmospheric lighting --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "East Asian": 45.6,
     "Northern European": 39.3,
     "Hispanic/Latin American": 9.2,
     "Eastern European": 5.9
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "East Asian": {
       "Korean": {
@@ -292,6 +282,5 @@
         "Bosnian": 1.4
       }
     }
-  },
-  "tier": "1"
+  }
 }

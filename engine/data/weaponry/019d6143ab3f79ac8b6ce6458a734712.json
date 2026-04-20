@@ -1,21 +1,23 @@
 {
   "id": "019d6143ab3f79ac8b6ce6458a734712",
-  "name": "Reactive Foam Charge RFC-11 'Bloat'",
+  "rating": 70,
+  "vote_count": 1,
+  "name": "Reactive Foam Charge RFC-11 \u0027Bloat\u0027",
   "type": "weapon",
   "aliases": [],
   "category": "explosive",
-  "description": "The RFC-11 is an industrial demolition device repurposed from construction technology, manufactured openly by Palladian Construction under its 'controlled demolition solutions' catalog but widely diverted to armed use through commercial procurement loopholes. The device contains two separated chemical reservoirs: a proprietary polyurethane-explosive compound and a catalytic accelerant. When the charge activates, the two compounds mix and expand rapidly into a dense, adhesive foam that fills the target cavity — a pipe junction, door mechanism, wall void, or vehicle undercarriage — before detonating. The foam cures to approximately 40% of its expansion volume in 1.8 seconds, then detonates, directing the majority of its blast force inward along the path of least resistance.",
+  "description": "The RFC-11 is an industrial demolition device repurposed from construction technology, manufactured openly by Palladian Construction under its \u0027controlled demolition solutions\u0027 catalog but widely diverted to armed use through commercial procurement loopholes. The device contains two separated chemical reservoirs: a proprietary polyurethane-explosive compound and a catalytic accelerant. When the charge activates, the two compounds mix and expand rapidly into a dense, adhesive foam that fills the target cavity \u2014 a pipe junction, door mechanism, wall void, or vehicle undercarriage \u2014 before detonating. The foam cures to approximately 40% of its expansion volume in 1.8 seconds, then detonates, directing the majority of its blast force inward along the path of least resistance.",
   "manufacturer": "PALLADIAN CONSTRUCTION",
-  "tier_availability": "Tier 2+ (commercial) / Tier 1 (modified combat variants, street market)",
+  "tier_availability": "Tier 2\u002B (commercial) / Tier 1 (modified combat variants, street market)",
   "legality": "Licensed for demolition use; combat modification is Prohibited; base unit sold legally with contractor certification",
   "base_technologies": [
     "Reactive binary foam expansion",
     "Directed cavity detonation",
     "Chemical catalyst timing"
   ],
-  "specifications": "weight: 520g (dual-reservoir unit)\nexpansion volume: Up to 8 liters from 0.4-liter reservoir\ncure time before detonation: 1.8 seconds (factory default, field-adjustable 0.5–6s)\nblast yield: Equivalent to 200g RDX, directed inward\nadhesion: Bonds to concrete, metal, synthetics, and organic tissue on contact\neffective use cases: Breaching reinforced doors, disabling vehicle axles, collapsing internal wall structures\nhazard: Adhesion to operator skin is a documented field fatality cause",
-  "tactical_use": "The RFC-11 is used primarily for breaching and structural disruption. Operators inject the nozzle into a door's locking mechanism or a wall's structural joint, activate the charge, and retreat. The foam expands to fill the cavity, then detonates inward — tearing the mechanism apart from inside rather than requiring a shaped charge on the exterior surface, which is often monitored or armored. Modified combat variants are thrown like grenades, the foam adhering to whatever surface or person it contacts before detonating. The adhesive property makes it particularly feared in close quarters.",
-  "cultural_context": "Bloat started as a construction site tool and its street evolution is a story of industrial supply chain failure. Palladian Construction's contractor certification program is notoriously easy to falsify, and RFC-11 units move through hardware distribution networks in bulk. In GLMZ's outer districts, where buildings are perpetually under renovation, Bloat is common enough that experienced operators check door mechanisms before forcing entry. There is a subculture of modified RFC use among demolition graffiti artists who use low-yield variants to blow decorative cavities into corporate facade panels — a practice known as 'bloat-tagging.'",
+  "specifications": "weight: 520g (dual-reservoir unit)\nexpansion volume: Up to 8 liters from 0.4-liter reservoir\ncure time before detonation: 1.8 seconds (factory default, field-adjustable 0.5\u20136s)\nblast yield: Equivalent to 200g RDX, directed inward\nadhesion: Bonds to concrete, metal, synthetics, and organic tissue on contact\neffective use cases: Breaching reinforced doors, disabling vehicle axles, collapsing internal wall structures\nhazard: Adhesion to operator skin is a documented field fatality cause",
+  "tactical_use": "The RFC-11 is used primarily for breaching and structural disruption. Operators inject the nozzle into a door\u0027s locking mechanism or a wall\u0027s structural joint, activate the charge, and retreat. The foam expands to fill the cavity, then detonates inward \u2014 tearing the mechanism apart from inside rather than requiring a shaped charge on the exterior surface, which is often monitored or armored. Modified combat variants are thrown like grenades, the foam adhering to whatever surface or person it contacts before detonating. The adhesive property makes it particularly feared in close quarters.",
+  "cultural_context": "Bloat started as a construction site tool and its street evolution is a story of industrial supply chain failure. Palladian Construction\u0027s contractor certification program is notoriously easy to falsify, and RFC-11 units move through hardware distribution networks in bulk. In GLMZ\u0027s outer districts, where buildings are perpetually under renovation, Bloat is common enough that experienced operators check door mechanisms before forcing entry. There is a subculture of modified RFC use among demolition graffiti artists who use low-yield variants to blow decorative cavities into corporate facade panels \u2014 a practice known as \u0027bloat-tagging.\u0027",
   "known_users": [
     "Licensed demolition contractors",
     "Outer district breaching crews",
@@ -24,9 +26,9 @@
     "Vehicle theft operations"
   ],
   "story_hooks": [
-    "A Palladian Construction regional manager is running a side operation selling combat-modified RFC-11s through a shell contractor — a building inspector just found evidence in a collapsed structure that wasn't supposed to collapse.",
-    "A string of armored vehicle disablements in the transit corridor all used RFC-11s injected into axle housings — the precision suggests someone with demolition training, not street operators.",
-    "A bloat-tag collective accidentally used a combat-modified unit obtained from a street dealer — the resulting explosion killed two people and the group is now being hunted by both the street dealer and the authorities."
+    "A Palladian Construction regional manager is running a side operation selling combat-modified RFC-11s through a shell contractor \u2014 a building inspector just found evidence in a collapsed structure that wasn\u0027t supposed to collapse.",
+    "A string of armored vehicle disablements in the transit corridor all used RFC-11s injected into axle housings \u2014 the precision suggests someone with demolition training, not street operators.",
+    "A bloat-tag collective accidentally used a combat-modified unit obtained from a street dealer \u2014 the resulting explosion killed two people and the group is now being hunted by both the street dealer and the authorities."
   ],
   "ammunition_type": [
     "self_contained_charge"
@@ -51,10 +53,12 @@
     "tier 2",
     "less_lethal"
   ],
+  "image_prompt": "Product photograph of the RFC-11 \u0027Bloat\u0027 demolition charge, front three-quarter view, resting on a dark brushed-steel workshop surface. Gloved hand (tactical black leather, visible cybernetic fingers with LED palm circuitry) grips the device firmly, finger positioned near trigger guard. Sharp side-lighting from the left reveals texture on polymer body and casts deep shadows across dual reservoirs. Orange pressure indicator domes glow faintly under light. Background is a dark industrial concrete wall with subtle GLMZ corporate stenciling. Shallow depth of field keeps focus on nozzle tip and pressure gauges. Color grading emphasizes cool grays and dangerous orange accents. Neo-noir urban aesthetic: functional brutalism, no romance, pure industrial lethality. --ar 3:2 --v 6",
+  "dalle3_prompt": "",
   "parent_corponation": "",
   "related_entities": [
     "Alper Inoue-Aidoo",
-    "Ezio Kaboré-Malhotra",
+    "Ezio Kabor\u00E9-Malhotra",
     "GLMZ",
     "Galvanic Interstitial Fluid Displacement Lance",
     "Kamala Nystrom-Keita",
@@ -64,24 +68,23 @@
   "physical_description": {
     "visual_profile": "A compact dual-chamber cylindrical device resembling an industrial caulking gun crossed with a demolition tool. Two stacked reservoirs dominate the body, connected by visible pressure-regulation tubing. The nozzle assembly protrudes forward like a reinforced applicator tip. Overall impression: purpose-built, industrial, deliberately unglamorous.",
     "dimensions": "23cm length overall, 8cm width at widest (dual reservoirs), 6cm depth. Nozzle extension adds 4cm. Trigger guard spans 5cm vertically.",
-    "weight_description": "Deceptively dense — feels balanced but substantial in hand when fully loaded (520g). The dual reservoirs create a slightly front-heavy bias that steadies aim but requires controlled grip pressure to manage recoil during activation.",
+    "weight_description": "Deceptively dense \u2014 feels balanced but substantial in hand when fully loaded (520g). The dual reservoirs create a slightly front-heavy bias that steadies aim but requires controlled grip pressure to manage recoil during activation.",
     "primary_material": "Reinforced polymer composite body (fire-resistant polyamide blend) with internal steel pressure vessels. Nozzle assembly is hardened aluminum with tungsten carbide tip.",
-    "finish": "Industrial matte gray with functional black accents. Surfaces are deliberately unpolished — scratches, minor gouges, and wear marks are intentional design cues signaling durability over aesthetics. Some units show light oxidation on metal components.",
+    "finish": "Industrial matte gray with functional black accents. Surfaces are deliberately unpolished \u2014 scratches, minor gouges, and wear marks are intentional design cues signaling durability over aesthetics. Some units show light oxidation on metal components.",
     "color_scheme": "Gunmetal gray primary with charcoal black grip panels and safety collar. High-visibility orange pressure indicators on reservoir coupling. Palladian Construction branding in white stencil.",
     "grip_texture": "Textured polymer grip with subtle ribs for secure handling in wet or gloved conditions. The trigger guard is wrapped in thin rubber gasket material to dampen vibration during high-pressure actuation.",
     "distinctive_features": [
-      "Dual transparent pressure gauges on each reservoir showing chemical levels — greenish-tinted polycarbonate domes",
+      "Dual transparent pressure gauges on each reservoir showing chemical levels \u2014 greenish-tinted polycarbonate domes",
       "Yellow-and-black hazard striping along the nozzle shroud",
-      "Manual catalyst-timing dial on the right side (adjustable 0.5–6 second curing window)",
-      "Pressure relief valve positioned prominently on the top — small brass nipple with tension spring",
+      "Manual catalyst-timing dial on the right side (adjustable 0.5\u20136 second curing window)",
+      "Pressure relief valve positioned prominently on the top \u2014 small brass nipple with tension spring",
       "Serial plate with Palladian Construction logo and contractor certification codes stamped on left side",
-      "Faint residue staining (dried polyurethane foam) around nozzle edges — evidence of field use",
+      "Faint residue staining (dried polyurethane foam) around nozzle edges \u2014 evidence of field use",
       "Chemical compatibility warnings laser-etched on both sides",
       "Integrated safety pin tether (bright red synthetic cord) looped through trigger guard"
     ],
-    "manufacturer_markings": "Palladian Construction logo (angular geometric 'P') stamped in white on upper left reservoir. Serial number and 'RFC-11 BLOAT' designation engraved below. Contractor certification plate on grip. Patent markings and chemical warning symbols stenciled on right side. Some street-market variants have markings deliberately defaced or over-painted.",
+    "manufacturer_markings": "Palladian Construction logo (angular geometric \u0027P\u0027) stamped in white on upper left reservoir. Serial number and \u0027RFC-11 BLOAT\u0027 designation engraved below. Contractor certification plate on grip. Patent markings and chemical warning symbols stenciled on right side. Some street-market variants have markings deliberately defaced or over-painted.",
     "condition_typical": "Well-maintained commercial units show minimal wear. Street-market combat variants are noticeably battle-scarred: nozzle tips often bent or damaged from impact use, grip panels scuffed or repaired with electrical tape, pressure gauges clouded from repeated blast cycles, and reservoir couplings showing stress fractures sealed with adhesive putty. Field-modified units frequently have the timing dial super-glued in fixed positions or the safety pin missing entirely."
   },
-  "image_prompt": "Product photograph of the RFC-11 'Bloat' demolition charge, front three-quarter view, resting on a dark brushed-steel workshop surface. Gloved hand (tactical black leather, visible cybernetic fingers with LED palm circuitry) grips the device firmly, finger positioned near trigger guard. Sharp side-lighting from the left reveals texture on polymer body and casts deep shadows across dual reservoirs. Orange pressure indicator domes glow faintly under light. Background is a dark industrial concrete wall with subtle GLMZ corporate stenciling. Shallow depth of field keeps focus on nozzle tip and pressure gauges. Color grading emphasizes cool grays and dangerous orange accents. Neo-noir urban aesthetic: functional brutalism, no romance, pure industrial lethality. --ar 3:2 --v 6",
-  "visual_prompt": "Product photograph of the RFC-11 'Bloat' demolition charge, front three-quarter view, resting on a dark brushed-steel workshop surface. Gloved hand (tactical black leather, visible cybernetic fingers with LED palm circuitry) grips the device firmly, finger positioned near trigger guard. Sharp side-lighting from the left reveals texture on polymer body and casts deep shadows across dual reservoirs. Orange pressure indicator domes glow faintly under light. Background is a dark industrial concrete wall with subtle GLMZ corporate stenciling. Shallow depth of field keeps focus on nozzle tip and pressure gauges. Color grading emphasizes cool grays and dangerous orange accents. Neo-noir urban aesthetic: functional brutalism, no romance, pure industrial lethality. --ar 3:2 --v 6"
+  "visual_prompt": "Product photograph of the RFC-11 \u0027Bloat\u0027 demolition charge, front three-quarter view, resting on a dark brushed-steel workshop surface. Gloved hand (tactical black leather, visible cybernetic fingers with LED palm circuitry) grips the device firmly, finger positioned near trigger guard. Sharp side-lighting from the left reveals texture on polymer body and casts deep shadows across dual reservoirs. Orange pressure indicator domes glow faintly under light. Background is a dark industrial concrete wall with subtle GLMZ corporate stenciling. Shallow depth of field keeps focus on nozzle tip and pressure gauges. Color grading emphasizes cool grays and dangerous orange accents. Neo-noir urban aesthetic: functional brutalism, no romance, pure industrial lethality. --ar 3:2 --v 6"
 }

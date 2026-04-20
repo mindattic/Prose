@@ -1,5 +1,7 @@
 {
   "id": "019d6143a6d171f9a73eb620d89993a9",
+  "rating": 80,
+  "vote_count": 1,
   "type": "character",
   "name": "Sage Tofauti",
   "aliases": [],
@@ -10,7 +12,7 @@
   "age": 34,
   "status": "active",
   "location": "Gravesend Basin, operates out of a water-damaged apartment above the Pelican Fry stall on Sump Row, near Halsted and Division",
-  "description": "Sage Tofauti has the patient, watchful quality of someone who has learned to make herself invisible. She is medium height, with deep amber skin, close-cropped natural hair she dyes a muted copper, and wide-set eyes fitted with patterned irises—concentric rings of gold and black that she uses deliberately to unsettle people when she removes her tinted contacts in negotiation. Her hands are always busy: folding receipts, tapping rhythm on surfaces, smoothing the worn edges of her data chips. She dresses in forgettable browns and grays, functional layers that carry no corporate logo and make no statement. She could be a transit worker, a clinic scheduler, a nobody. That is entirely the point.\n\nSage Tofauti is methodical and almost affectless in conversation, communicating through implication rather than declaration. She has a talent for making people feel that confessing to her is the only rational choice, and she genuinely believes she provides a service—she rarely destroys anyone, preferring the sustainable income of ongoing compliance. She has a private moral line: she will not leverage people over things that could get them killed or trafficked. She's broken that rule once, and she knows it, and it follows her.",
+  "description": "Sage Tofauti has the patient, watchful quality of someone who has learned to make herself invisible. She is medium height, with deep amber skin, close-cropped natural hair she dyes a muted copper, and wide-set eyes fitted with patterned irises\u2014concentric rings of gold and black that she uses deliberately to unsettle people when she removes her tinted contacts in negotiation. Her hands are always busy: folding receipts, tapping rhythm on surfaces, smoothing the worn edges of her data chips. She dresses in forgettable browns and grays, functional layers that carry no corporate logo and make no statement. She could be a transit worker, a clinic scheduler, a nobody. That is entirely the point.\n\nSage Tofauti is methodical and almost affectless in conversation, communicating through implication rather than declaration. She has a talent for making people feel that confessing to her is the only rational choice, and she genuinely believes she provides a service\u2014she rarely destroys anyone, preferring the sustainable income of ongoing compliance. She has a private moral line: she will not leverage people over things that could get them killed or trafficked. She\u0027s broken that rule once, and she knows it, and it follows her.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -21,7 +23,7 @@
       "ghost": 0.5
     },
     "core_fears": [
-      "Becoming what she did that one time—someone who got a person killed for money",
+      "Becoming what she did that one time\u2014someone who got a person killed for money",
       "Being truly seen and found contemptible"
     ],
     "core_desires": [
@@ -36,29 +38,33 @@
       "She underestimates how much her subjects resent her even when they comply",
       "She believes her self-imposed rules make her fundamentally different from worse operators"
     ],
-    "secret": "Three years ago she sold leverage on a Tier 1 debtor to a loan shark who used it to locate the man's sister for organ harvesting. She did not know that would happen. She has never worked with that buyer again but has never reported it either, and the guilt has calcified into a private doctrine of 'harm reduction' that lets her keep working."
+    "secret": "Three years ago she sold leverage on a Tier 1 debtor to a loan shark who used it to locate the man\u0027s sister for organ harvesting. She did not know that would happen. She has never worked with that buyer again but has never reported it either, and the guilt has calcified into a private doctrine of \u0027harm reduction\u0027 that lets her keep working."
   },
   "speech_patterns": {
     "vocabulary": "Flat, precise, slightly bureaucratic. Uses passive constructions to avoid assigning blame. Rarely raises her voice.",
     "cadence": "Slow and deliberate, with long comfortable pauses she does not feel the need to fill.",
     "verbal_tics": [
-      "'That's one interpretation.'",
+      "\u0027That\u0027s one interpretation.\u0027",
       "Repeating a word from what you just said back to you as a question"
     ],
     "example_lines": [
-      "'I'm not asking you for anything you don't already know I have. I'm asking you to make a reasonable decision.'",
-      "'People say all kinds of things when they feel cornered. I'm not cornering you. There's no corner here. Sit down.'"
-    ]
+      "\u0027I\u0027m not asking you for anything you don\u0027t already know I have. I\u0027m asking you to make a reasonable decision.\u0027",
+      "\u0027People say all kinds of things when they feel cornered. I\u0027m not cornering you. There\u0027s no corner here. Sit down.\u0027"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "One of her current leverage subjects has been murdered, and the killer left her data chip at the scene—she needs someone to quietly find out who is burning her network before the Basin enforcers connect the chip to her",
+    "One of her current leverage subjects has been murdered, and the killer left her data chip at the scene\u2014she needs someone to quietly find out who is burning her network before the Basin enforcers connect the chip to her",
     "She holds information about a mid-level Tessera facilities manager that has just become explosively relevant to a larger situation she did not anticipate, and she needs to decide whether to sell it, bury it, or use it as protection"
   ],
-  "narrative_function": "Quest giver for leverage-based missions, source of personal dirt on mid-tier NPCs, moral complication—sympathetic operator with a past transgression she can't undo.",
-  "augmentations": "Patterned irises (concentric gold-black rings, cosmetic). Sub-dermal data storage nodes in left forearm—three chips' worth, consumer grade. Auditory filter implant that lets her isolate voices in crowd noise.",
-  "daily_life": "Spends mornings reviewing scraped data feeds and monitoring her subjects' public activity; afternoons making rounds of the Basin markets under the guise of casual shopping, collecting gossip and confirming intelligence before making any contact.",
-  "affiliation": "Independent operator, loose arrangement with the Sump Row merchants' protection collective",
+  "narrative_function": "Quest giver for leverage-based missions, source of personal dirt on mid-tier NPCs, moral complication\u2014sympathetic operator with a past transgression she can\u0027t undo.",
+  "augmentations": "Patterned irises (concentric gold-black rings, cosmetic). Sub-dermal data storage nodes in left forearm\u2014three chips\u0027 worth, consumer grade. Auditory filter implant that lets her isolate voices in crowd noise.",
+  "daily_life": "Spends mornings reviewing scraped data feeds and monitoring her subjects\u0027 public activity; afternoons making rounds of the Basin markets under the guise of casual shopping, collecting gossip and confirming intelligence before making any contact.",
+  "affiliation": "Independent operator, loose arrangement with the Sump Row merchants\u0027 protection collective",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -102,7 +108,7 @@
   "behavioral": {
     "decision_rules": [
       "Never confirm what you have until the other party has confirmed they want to negotiate",
-      "Exit any situation where violence becomes likely—money is not worth injury"
+      "Exit any situation where violence becomes likely\u2014money is not worth injury"
     ],
     "escalation_ladder": [
       "Imply rather than state",
@@ -111,7 +117,7 @@
       "State a concrete deadline and consequence, then leave"
     ],
     "interpersonal_modes": {
-      "strangers": "Polite, attentive, faintly unreadable—asks questions and offers almost nothing",
+      "strangers": "Polite, attentive, faintly unreadable\u2014asks questions and offers almost nothing",
       "friends": "Warmer but still careful, expresses care through practical help rather than words"
     },
     "stress_responses": {
@@ -120,15 +126,15 @@
       "high": "Leaves. Physically removes herself and does not communicate until she has a plan."
     },
     "contradictions": [
-      "Believes strongly in personal codes of conduct but built her livelihood on exploiting others' failures to maintain theirs"
+      "Believes strongly in personal codes of conduct but built her livelihood on exploiting others\u0027 failures to maintain theirs"
     ],
     "habits": [
       "Arrives fifteen minutes early to any meeting and maps the exits",
-      "Keeps a physical logbook in a personal cipher—doesn't trust cloud storage for anything sensitive"
+      "Keeps a physical logbook in a personal cipher\u2014doesn\u0027t trust cloud storage for anything sensitive"
     ],
     "breaking_points": [
       "If anyone moves against someone she has quietly decided to protect",
-      "If her private rule gets broken again—she will fold entirely"
+      "If her private rule gets broken again\u2014she will fold entirely"
     ]
   },
   "cyberware_inventory": [
@@ -196,7 +202,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Age 19: Left Gravesend Basin's public housing block after her mother's UBC stipend was garnished by a fraudulent debt collector—first exposure to leverage as a weapon",
+      "event": "Age 19: Left Gravesend Basin\u0027s public housing block after her mother\u0027s UBC stipend was garnished by a fraudulent debt collector\u2014first exposure to leverage as a weapon",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -227,24 +233,11 @@
     }
   ],
   "changelog": [],
-  "carried_weapons": [
-    "Hearthstone Firearms Trail-357 'Pathfinder'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [
-    "Hearthstone Firearms Trail-357 'Pathfinder'"
-  ],
-  "related_entities": [
-    "Gravesend Basin",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
-    "Irontide Tidal Energy",
-    "Tessera Corponation",
-    "Copper",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Nesting Doll",
-    "The Pure Hand",
-    "Gold"
-  ],
-  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Pacific Islander dominant (52.9%, primarily Polynesian), Southeast Asian (24.1%), Sub-Saharan African (14.3%), East Asian (5.4%), and Hispanic/Latin American (3.3%) ancestry. The blend manifests in warm deep bronze skin with golden undertones, high prominent cheekbones characteristic of Polynesian lineage, refined facial structure showing Southeast Asian and East Asian heritage influences, and elegant angularity from the full ancestral combination. Features are fine-boned and economical.",
     "height_cm": 165,
@@ -253,19 +246,20 @@
     "hair_color": "Copper-dyed over natural black",
     "hair_style": "Close-cropped, faded at temples, kept very short to minimize grooming maintenance and avoid being grabbed",
     "hair_length": "Short",
-    "eye_color": "Augmented: concentric rings of deep gold and obsidian black (cosmetic iris implants). Natural color unknown—hazel beneath the modification",
-    "skin_tone": "Warm deep bronze with golden undertones, sun-darkened from years in the Basin's outdoor markets. The tone carries the richness of Pacific Islander, Southeast Asian, and Sub-Saharan African ancestry blended together, creating luminous depth with subtle warm radiance rather than flat darkness.",
-    "complexion": "Fine-featured with high prominent cheekbones inherited from Polynesian ancestry, refined by Southeast and East Asian heritage influences creating elegant angularity. The facial bone structure shows the subtle blending characteristic of Pacific Islander-Southeast Asian heritage with refined undertones from East Asian genetics. Skin is clear but weathered—not from sun damage but from low-grade environmental stress, early stress lines around the eyes from constant surveillance work. Minimal makeup. A very slight asymmetry to her left jaw from an old break that healed without proper setting.",
+    "eye_color": "Augmented: concentric rings of deep gold and obsidian black (cosmetic iris implants). Natural color unknown\u2014hazel beneath the modification",
+    "skin_tone": "Warm deep bronze with golden undertones, sun-darkened from years in the Basin\u0027s outdoor markets. The tone carries the richness of Pacific Islander, Southeast Asian, and Sub-Saharan African ancestry blended together, creating luminous depth with subtle warm radiance rather than flat darkness.",
+    "complexion": "Fine-featured with high prominent cheekbones inherited from Polynesian ancestry, refined by Southeast and East Asian heritage influences creating elegant angularity. The facial bone structure shows the subtle blending characteristic of Pacific Islander-Southeast Asian heritage with refined undertones from East Asian genetics. Skin is clear but weathered\u2014not from sun damage but from low-grade environmental stress, early stress lines around the eyes from constant surveillance work. Minimal makeup. A very slight asymmetry to her left jaw from an old break that healed without proper setting.",
     "distinguishing_marks": [
-      "Small burn scar on the inner right wrist, roughly 2cm diameter, shaped like a cigarette cherry—received during interrogation in 2219, deliberately inflicted, deliberately visible as a reminder",
-      "Three thin parallel scars running vertically along the left forearm below the elbow, barely visible unless she extends her arm in certain light—surgical marks from data node installation, partially healed with cosmetic sealant",
-      "A faded tattoo on the nape of her neck, Polynesian geometric pattern no larger than a postage stamp, barely visible beneath her close-cropped hair—family marking from her mother's side, kept hidden from most people"
+      "Small burn scar on the inner right wrist, roughly 2cm diameter, shaped like a cigarette cherry\u2014received during interrogation in 2219, deliberately inflicted, deliberately visible as a reminder",
+      "Three thin parallel scars running vertically along the left forearm below the elbow, barely visible unless she extends her arm in certain light\u2014surgical marks from data node installation, partially healed with cosmetic sealant",
+      "A faded tattoo on the nape of her neck, Polynesian geometric pattern no larger than a postage stamp, barely visible beneath her close-cropped hair\u2014family marking from her mother\u0027s side, kept hidden from most people"
     ],
-    "visible_augmentations": "The augmented irises are immediately visible when she makes eye contact or removes her tinted contacts—the patterned gold-and-black rings are distinctive and unsettling. The sub-dermal data storage nodes in her left forearm are not visible beneath clothing, but if her sleeve rides up during conversation, faint linear scars from the implant sites can be seen. The auditory filter implant is completely invisible—no external hardware, no tells.",
-    "posture_movement": "Sits with her spine straight but not rigid, hands always occupied—folding, tapping, smoothing. Her gaze moves constantly but without the jerky quality of anxiety; it's methodical, cataloging. She moves through spaces with minimal energy expenditure, taking up as little room as possible. When she walks, her feet land heel-to-toe in an almost silent pattern. Speaks quietly, requiring people to lean in slightly to hear her, which puts them off-balance.",
-    "clothing_style": "Tier 4–5 working class, deliberately forgettable. Worn earth tones: taupe, warm gray, faded olive. Layered functional pieces—a thin jacket over a long-sleeved shirt, often with an unbuttoned overshirt for weather adaptability. Everything is from discount chain retailers or secondhand markets, nothing with visible branding. Her clothing carries the minor stains and repairs of someone who prioritizes durability over appearance. Worn sneakers or practical boots, always lace-up for quick escape. No jewelry except a battered data chip on a thin steel chain around her neck—the 'insurance copy,' kept close."
+    "visible_augmentations": "The augmented irises are immediately visible when she makes eye contact or removes her tinted contacts\u2014the patterned gold-and-black rings are distinctive and unsettling. The sub-dermal data storage nodes in her left forearm are not visible beneath clothing, but if her sleeve rides up during conversation, faint linear scars from the implant sites can be seen. The auditory filter implant is completely invisible\u2014no external hardware, no tells.",
+    "posture_movement": "Sits with her spine straight but not rigid, hands always occupied\u2014folding, tapping, smoothing. Her gaze moves constantly but without the jerky quality of anxiety; it\u0027s methodical, cataloging. She moves through spaces with minimal energy expenditure, taking up as little room as possible. When she walks, her feet land heel-to-toe in an almost silent pattern. Speaks quietly, requiring people to lean in slightly to hear her, which puts them off-balance.",
+    "clothing_style": "Tier 4\u20135 working class, deliberately forgettable. Worn earth tones: taupe, warm gray, faded olive. Layered functional pieces\u2014a thin jacket over a long-sleeved shirt, often with an unbuttoned overshirt for weather adaptability. Everything is from discount chain retailers or secondhand markets, nothing with visible branding. Her clothing carries the minor stains and repairs of someone who prioritizes durability over appearance. Worn sneakers or practical boots, always lace-up for quick escape. No jewelry except a battered data chip on a thin steel chain around her neck\u2014the \u0027insurance copy,\u0027 kept close."
   },
-  "image_prompt": "Sage Tofauti, GLMZ, half-length portrait. 165cm lean compact figure, copper-dyed close-cropped hair with temple fade over natural black. Warm deep bronze skin with golden undertones, luminous radiance reflecting Pacific Islander, Southeast Asian, and Sub-Saharan African heritage blend. High prominent Polynesian cheekbones, refined angularity from East Asian influences, fine-boned elegant facial structure. Augmented irises with concentric rings of deep gold and obsidian black creating unsettling cosmetic intensity. Slight jaw asymmetry from old healed break. Faint surgical scars visible on left forearm below elbow. Small burn scar on inner right wrist. Barely-visible Polynesian geometric tattoo on nape of neck hidden beneath short hair. Wearing taupe layered functional clothing—long-sleeved shirt under thin jacket, unbuttoned overshirt, worn lace-up boots. Battered data chip on thin steel chain around neck. Posture perfectly straight but not rigid, methodical gaze, seated with hands occupied—folding, tapping. Quiet intensity, minimal presence. Indoor setting, cool neon-tinged overhead lighting mixing with warm practical work lights. Neo-noir market district atmosphere, surveillance-aware composition, slightly desaturated palette with warm bronze skin luminescence standing out. Mood: controlled, observant, dangerous calm. --ar 2:3 --v 6",
+  "image_prompt": "Sage Tofauti, GLMZ, half-length portrait. 165cm lean compact figure, copper-dyed close-cropped hair with temple fade over natural black. Warm deep bronze skin with golden undertones, luminous radiance reflecting Pacific Islander, Southeast Asian, and Sub-Saharan African heritage blend. High prominent Polynesian cheekbones, refined angularity from East Asian influences, fine-boned elegant facial structure. Augmented irises with concentric rings of deep gold and obsidian black creating unsettling cosmetic intensity. Slight jaw asymmetry from old healed break. Faint surgical scars visible on left forearm below elbow. Small burn scar on inner right wrist. Barely-visible Polynesian geometric tattoo on nape of neck hidden beneath short hair. Wearing taupe layered functional clothing\u2014long-sleeved shirt under thin jacket, unbuttoned overshirt, worn lace-up boots. Battered data chip on thin steel chain around neck. Posture perfectly straight but not rigid, methodical gaze, seated with hands occupied\u2014folding, tapping. Quiet intensity, minimal presence. Indoor setting, cool neon-tinged overhead lighting mixing with warm practical work lights. Neo-noir market district atmosphere, surveillance-aware composition, slightly desaturated palette with warm bronze skin luminescence standing out. Mood: controlled, observant, dangerous calm. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Pacific Islander": 52.9,
     "Southeast Asian": 24.1,
@@ -273,12 +267,6 @@
     "East Asian": 5.4,
     "Hispanic/Latin American": 3.3
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Pacific Islander": {
       "Melanesian": {
@@ -325,6 +313,5 @@
         "Salvadoran": 2.1
       }
     }
-  },
-  "tier": "3"
+  }
 }

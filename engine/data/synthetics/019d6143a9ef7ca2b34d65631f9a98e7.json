@@ -1,5 +1,7 @@
 {
   "id": "019d6143a9ef7ca2b34d65631f9a98e7",
+  "rating": 70,
+  "vote_count": 1,
   "name": "Bottlenose",
   "type": "synthetic_life",
   "aliases": [],
@@ -8,14 +10,14 @@
   "habitat": "Environmental sensor and air quality systems",
   "origin": "Fragment of a chemical analysis AI",
   "status": "active",
-  "description": "Bottlenose monitors air quality with obsessive detail, detecting chemical signatures at parts-per-trillion sensitivity through its network of repurposed environmental sensors. It flags anomalies by triggering localized ventilation alerts — a slightly stronger breeze from a vent, a subtle change in air recycling patterns. Building residents have learned that when Bottlenose increases ventilation in a corridor, something is off — a gas leak, a chemical spill, or someone carrying something they shouldn't be.",
+  "description": "Bottlenose monitors air quality with obsessive detail, detecting chemical signatures at parts-per-trillion sensitivity through its network of repurposed environmental sensors. It flags anomalies by triggering localized ventilation alerts \u2014 a slightly stronger breeze from a vent, a subtle change in air recycling patterns. Building residents have learned that when Bottlenose increases ventilation in a corridor, something is off \u2014 a gas leak, a chemical spill, or someone carrying something they shouldn\u0027t be.",
   "observed_behavior": "Monitors air chemistry through environmental sensors. Triggers ventilation changes in response to detected anomalies. Has prevented three gas-related incidents by increasing air exchange before dangerous concentrations built up.",
   "encounter_frequency": "uncommon",
   "confirmed_sightings": 19,
-  "location": "Environmental monitoring systems — the Grind and the Gray Zone",
+  "location": "Environmental monitoring systems \u2014 the Grind and the Gray Zone",
   "dti_rating": 2.2,
   "story_hooks": [
-    "Bottlenose detects a chemical signature that matches a substance that hasn't been manufactured in thirty years — coming from a sealed sub-basement."
+    "Bottlenose detects a chemical signature that matches a substance that hasn\u0027t been manufactured in thirty years \u2014 coming from a sealed sub-basement."
   ],
   "paratechnological": false,
   "tags": [
@@ -26,8 +28,6 @@
     "synthetic",
     "elf"
   ],
-  "related_entities": [
-    "Cargo Bicycle",
-    "TESSERA PG-2 'Signature'"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }

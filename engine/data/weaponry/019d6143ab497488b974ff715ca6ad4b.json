@@ -1,24 +1,26 @@
 {
   "id": "019d6143ab497488b974ff715ca6ad4b",
-  "name": "Street Custom 'Molotov Standard' Incendiary Bottle",
+  "rating": 70,
+  "vote_count": 1,
+  "name": "Street Custom \u0027Molotov Standard\u0027 Incendiary Bottle",
   "type": "weapon",
   "aliases": [],
   "category": "improvised",
-  "description": "The oldest improvised weapon still in active use — a glass bottle filled with flammable liquid with a cloth wick. In 2200, the Molotov has evolved: Tier 1 chemists mix industrial solvents with gelling agents to create sticky napalm variants that burn hotter, longer, and cling to surfaces. The weapon remains effective against vehicles, barricades, and personnel because fire does not care about armor ratings or augmentation levels. It is the great equalizer of asymmetric conflict.",
+  "description": "The oldest improvised weapon still in active use \u2014 a glass bottle filled with flammable liquid with a cloth wick. In 2200, the Molotov has evolved: Tier 1 chemists mix industrial solvents with gelling agents to create sticky napalm variants that burn hotter, longer, and cling to surfaces. The weapon remains effective against vehicles, barricades, and personnel because fire does not care about armor ratings or augmentation levels. It is the great equalizer of asymmetric conflict.",
   "manufacturer": "Street Custom",
-  "tier_availability": "Tier 1+",
-  "legality": "Prohibited — improvised incendiary",
+  "tier_availability": "Tier 1\u002B",
+  "legality": "Prohibited \u2014 improvised incendiary",
   "base_technologies": [
     "Basic combustion chemistry",
     "Gelling agent formulation"
   ],
-  "specifications": "fuel: Gelled industrial solvent mix\nburn temperature: 800-1200°C depending on formulation\nburn duration: 30-90 seconds\nsplash radius: 2-3 meters\nweight: 0.5-1 kg\ncost: Φ2-10 in materials\nconstruction time: 5 minutes",
+  "specifications": "fuel: Gelled industrial solvent mix\nburn temperature: 800-1200\u00B0C depending on formulation\nburn duration: 30-90 seconds\nsplash radius: 2-3 meters\nweight: 0.5-1 kg\ncost: \u03A62-10 in materials\nconstruction time: 5 minutes",
   "tactical_use": "",
   "cultural_context": "",
   "known_users": [],
   "story_hooks": [
-    "A coordinated Molotov attack using a new adhesive gel formulation has set an entire corporate checkpoint ablaze — the gel cannot be extinguished with water and sticks to riot shields.",
-    "A chemist in Tier 1 has developed a Molotov formula that burns with a specific color based on chemical additives — gangs are using color-coded fire as territorial signals visible across districts."
+    "A coordinated Molotov attack using a new adhesive gel formulation has set an entire corporate checkpoint ablaze \u2014 the gel cannot be extinguished with water and sticks to riot shields.",
+    "A chemist in Tier 1 has developed a Molotov formula that burns with a specific color based on chemical additives \u2014 gangs are using color-coded fire as territorial signals visible across districts."
   ],
   "ammunition_type": [],
   "tags": [
@@ -36,21 +38,23 @@
     "tier 1",
     "lethal"
   ],
+  "image_prompt": "Product photograph of a street-custom Molotov incendiary bottle on dark concrete surface, angled to show amber gelled fuel sloshing inside clear glass. Hand in worn black tactical glove reaches toward bottle from frame edge. Cotton wick protrudes from neck, slightly charred and frayed. Dramatic side-lighting from industrial LED highlights viscous fuel texture and glass reflections. Gritty, worn aesthetic with slight chemical residue visible on bottle exterior. Dark neo-noir environment, moody amber and shadow tones. Shallow depth of field focusing on wick and bottle mouth. --ar 3:2 --v 6",
+  "dalle3_prompt": "",
   "parent_corponation": "",
   "related_entities": [
-    "Dielectric Filament Anchor Drone DFAD-1 'Cobweb'",
+    "Dielectric Filament Anchor Drone DFAD-1 \u0027Cobweb\u0027",
     "Dragan Petersen-Bah",
-    "Kang-Petrov Arms KPM-6 'Equalizer'",
+    "Kang-Petrov Arms KPM-6 \u0027Equalizer\u0027",
     "Sinan Haugen-Coulibaly"
   ],
   "physical_description": {
-    "visual_profile": "A simple glass bottle silhouette with an asymmetrical, hand-wrapped cloth wick protruding from the neck — deceptively crude yet purposeful. The amber or clear glass catches light, revealing the viscous amber-to-dark fluid sloshing inside. No refinement, pure street pragmatism.",
+    "visual_profile": "A simple glass bottle silhouette with an asymmetrical, hand-wrapped cloth wick protruding from the neck \u2014 deceptively crude yet purposeful. The amber or clear glass catches light, revealing the viscous amber-to-dark fluid sloshing inside. No refinement, pure street pragmatism.",
     "dimensions": "Height: 18-24 cm, Diameter: 8-10 cm (bottle body), Wick extends 3-5 cm above rim",
-    "weight_description": "Substantial but not unwieldy — 0.5-1 kg of dense, sloshing liquid gives it a satisfying heft without fatigue. Balanced low, stable when held.",
+    "weight_description": "Substantial but not unwieldy \u2014 0.5-1 kg of dense, sloshing liquid gives it a satisfying heft without fatigue. Balanced low, stable when held.",
     "primary_material": "Salvaged or mass-produced glass bottle (common liquor or industrial containers), cotton or synthetic cloth wick, polymeric thread or wire wrapping at neck",
-    "finish": "Raw, unrefined — glass shows fingerprints and dust. Cloth wick is slightly singed at edges from testing or handling. Minimal protection on bottle body; some examples show threadbare wrapping at stress points.",
+    "finish": "Raw, unrefined \u2014 glass shows fingerprints and dust. Cloth wick is slightly singed at edges from testing or handling. Minimal protection on bottle body; some examples show threadbare wrapping at stress points.",
     "color_scheme": "Amber or clear glass revealing deep amber, dark orange, or rust-red gelled fuel inside. Wick is off-white, cream, or charred gray. Wrapping around neck in dull blacks, grays, or industrial tape colors.",
-    "grip_texture": "Bare or wrapped glass — smooth, cool, slightly oily from fuel residue. Cloth wrapping at neck provides minimal grip texture, rough hemp or synthetic binding.",
+    "grip_texture": "Bare or wrapped glass \u2014 smooth, cool, slightly oily from fuel residue. Cloth wrapping at neck provides minimal grip texture, rough hemp or synthetic binding.",
     "distinctive_features": [
       "Visible fuel meniscus sloshing behind glass",
       "Hand-wrapped cloth wick with frayed edges",
@@ -60,9 +64,8 @@
       "Wear marks from repeated handling and transport in pockets or satchels",
       "Translucent polymer tape or electrical wrap reinforcing weak points"
     ],
-    "manufacturer_markings": "None intentional — some bottles retain original manufacturer logos (beer, industrial solvent brands) beneath the fuel staining. Street chemists sometimes scratch initials or small symbols into glass for personal marking.",
-    "condition_typical": "Deliberately rough — scuffed glass, singed wick, minor leakage stains at cap or neck. Appears hastily assembled, ready for immediate deployment. No attempt at cosmetic finish; pure functionality."
+    "manufacturer_markings": "None intentional \u2014 some bottles retain original manufacturer logos (beer, industrial solvent brands) beneath the fuel staining. Street chemists sometimes scratch initials or small symbols into glass for personal marking.",
+    "condition_typical": "Deliberately rough \u2014 scuffed glass, singed wick, minor leakage stains at cap or neck. Appears hastily assembled, ready for immediate deployment. No attempt at cosmetic finish; pure functionality."
   },
-  "image_prompt": "Product photograph of a street-custom Molotov incendiary bottle on dark concrete surface, angled to show amber gelled fuel sloshing inside clear glass. Hand in worn black tactical glove reaches toward bottle from frame edge. Cotton wick protrudes from neck, slightly charred and frayed. Dramatic side-lighting from industrial LED highlights viscous fuel texture and glass reflections. Gritty, worn aesthetic with slight chemical residue visible on bottle exterior. Dark neo-noir environment, moody amber and shadow tones. Shallow depth of field focusing on wick and bottle mouth. --ar 3:2 --v 6",
   "visual_prompt": "Product photograph of a street-custom Molotov incendiary bottle on dark concrete surface, angled to show amber gelled fuel sloshing inside clear glass. Hand in worn black tactical glove reaches toward bottle from frame edge. Cotton wick protrudes from neck, slightly charred and frayed. Dramatic side-lighting from industrial LED highlights viscous fuel texture and glass reflections. Gritty, worn aesthetic with slight chemical residue visible on bottle exterior. Dark neo-noir environment, moody amber and shadow tones. Shallow depth of field focusing on wick and bottle mouth. --ar 3:2 --v 6"
 }

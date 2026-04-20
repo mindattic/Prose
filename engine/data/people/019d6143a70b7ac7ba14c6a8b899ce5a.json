@@ -1,5 +1,7 @@
 {
   "id": "019d6143a70b7ac7ba14c6a8b899ce5a",
+  "rating": 80,
+  "vote_count": 1,
   "type": "character",
   "name": "Lark Taualagi-Fredriksen-Mbekele",
   "aliases": [],
@@ -9,8 +11,8 @@
   "role": "gene-mod body artist and tattoo artist",
   "age": 19,
   "status": "active",
-  "location": "Hamtramck Enclave — works out of a studio called 'Derma' on the Enclave's main commercial strip, near Halsted and Chicago Ave",
-  "description": "Lark Taualagi-Fredriksen-Mbekele is nineteen and operates at the velocity of someone who knows they are good and cannot wait for the world to confirm it. She is compact and energetic, her dark skin extensively modified with her own work: bioluminescent subcutaneous patterns run from her collarbones to her wrists in interlocking Yoruba adinkra symbols and Polynesian wave-forms, her Māori grandfather's heritage made literal on her body, the two visual languages coexisting in something that is recognizably neither and entirely her own. She has retractable claw mods on her right hand — practical for fine-work and also, she admits, because they look excellent — and her irises are modified to display the Enclave's coordinates in tiny glowing text, a joke that is also a statement of belonging.\n\nShe apprenticed at Derma at fifteen, doing cleanup and equipment sterilization. By seventeen she was doing bioluminescent pattern work. Now she is the reason people come to Derma specifically — her reputation spreading through the Hamtramck Enclave's dense social networks faster than she can accommodate the demand. She is brash and funny and has opinions about everything, delivered with the cheerful certainty of someone who has not yet been wrong enough times to become cautious. She is also, underneath the performance of confidence, deeply serious about her craft in a way she rarely lets people see directly.",
+  "location": "Hamtramck Enclave \u2014 works out of a studio called \u0027Derma\u0027 on the Enclave\u0027s main commercial strip, near Halsted and Chicago Ave",
+  "description": "Lark Taualagi-Fredriksen-Mbekele is nineteen and operates at the velocity of someone who knows they are good and cannot wait for the world to confirm it. She is compact and energetic, her dark skin extensively modified with her own work: bioluminescent subcutaneous patterns run from her collarbones to her wrists in interlocking Yoruba adinkra symbols and Polynesian wave-forms, her M\u0101ori grandfather\u0027s heritage made literal on her body, the two visual languages coexisting in something that is recognizably neither and entirely her own. She has retractable claw mods on her right hand \u2014 practical for fine-work and also, she admits, because they look excellent \u2014 and her irises are modified to display the Enclave\u0027s coordinates in tiny glowing text, a joke that is also a statement of belonging.\n\nShe apprenticed at Derma at fifteen, doing cleanup and equipment sterilization. By seventeen she was doing bioluminescent pattern work. Now she is the reason people come to Derma specifically \u2014 her reputation spreading through the Hamtramck Enclave\u0027s dense social networks faster than she can accommodate the demand. She is brash and funny and has opinions about everything, delivered with the cheerful certainty of someone who has not yet been wrong enough times to become cautious. She is also, underneath the performance of confidence, deeply serious about her craft in a way she rarely lets people see directly.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -21,44 +23,48 @@
       "ghost": 0.2
     },
     "core_fears": [
-      "that her talent is real but not enough — that she will hit a ceiling she cannot skill her way through",
+      "that her talent is real but not enough \u2014 that she will hit a ceiling she cannot skill her way through",
       "losing the Enclave as a home to slow gentrification or corporate rezoning"
     ],
     "core_desires": [
-      "to design a gene-mod that becomes culturally significant — something that enters the visual language of the city",
-      "for her parents (both mid-tier corporate, both skeptical of her path) to see what she's built"
+      "to design a gene-mod that becomes culturally significant \u2014 something that enters the visual language of the city",
+      "for her parents (both mid-tier corporate, both skeptical of her path) to see what she\u0027s built"
     ],
     "coping_mechanisms": [
-      "redirects anxiety into work — books herself solid when afraid",
+      "redirects anxiety into work \u2014 books herself solid when afraid",
       "uses humor as a firewall against vulnerability"
     ],
     "blind_spots": [
       "believes charm and skill can navigate situations that actually require patience and political understanding",
-      "does not take seriously the Helix Biosystems certification entanglement she's in"
+      "does not take seriously the Helix Biosystems certification entanglement she\u0027s in"
     ],
-    "secret": "She has been secretly developing an unlicensed bioluminescent geneware mod — a pattern that responds to specific emotional states rather than just ambient neural activity — using a combination of pirated Helix code and original synthesis. It works. It is also completely illegal, and if Helix Biosystems discovers it they will own it under her certification contract."
+    "secret": "She has been secretly developing an unlicensed bioluminescent geneware mod \u2014 a pattern that responds to specific emotional states rather than just ambient neural activity \u2014 using a combination of pirated Helix code and original synthesis. It works. It is also completely illegal, and if Helix Biosystems discovers it they will own it under her certification contract."
   },
   "speech_patterns": {
-    "vocabulary": "Fast, colloquial, dense with Hamtramck Enclave slang and Yoruba expressions she uses as punctuation. Switches to precise technical language when discussing the work — the register-shift is startling.",
-    "cadence": "Rapid-fire in conversation, with overlapping ideas. Slows down completely when she's being serious, which is the tell.",
+    "vocabulary": "Fast, colloquial, dense with Hamtramck Enclave slang and Yoruba expressions she uses as punctuation. Switches to precise technical language when discussing the work \u2014 the register-shift is startling.",
+    "cadence": "Rapid-fire in conversation, with overlapping ideas. Slows down completely when she\u0027s being serious, which is the tell.",
     "verbal_tics": [
-      "'I'm not even joking' (said when she is 100% joking)",
-      "'okay but technically—' (when correcting something she cares about)"
+      "\u0027I\u0027m not even joking\u0027 (said when she is 100% joking)",
+      "\u0027okay but technically\u2014\u0027 (when correcting something she cares about)"
     ],
     "example_lines": [
-      "'Helix wants me to pay licensing fees on work I designed myself with techniques they've never published. Okay but technically that means I invented something they haven't, which, yes.'",
-      "'Every piece I put on someone is a conversation between where they're from and where they're going. I'm not a printer. I'm a translator.'"
-    ]
+      "\u0027Helix wants me to pay licensing fees on work I designed myself with techniques they\u0027ve never published. Okay but technically that means I invented something they haven\u0027t, which, yes.\u0027",
+      "\u0027Every piece I put on someone is a conversation between where they\u0027re from and where they\u0027re going. I\u0027m not a printer. I\u0027m a translator.\u0027"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "Her unlicensed emotional-response geneware mod has been noticed — a client posted a discreet video of the pattern responding to grief at a funeral and it has attracted attention from a Helix Biosystems IP enforcement agent who is now quietly investigating who did the work.",
-    "Someone came into Derma asking for a specific pattern that Temi recognized immediately — it's a marking used by a network she's heard rumors about, and the client insisted it was 'just aesthetic.' She did the work and now she's not sure."
+    "Her unlicensed emotional-response geneware mod has been noticed \u2014 a client posted a discreet video of the pattern responding to grief at a funeral and it has attracted attention from a Helix Biosystems IP enforcement agent who is now quietly investigating who did the work.",
+    "Someone came into Derma asking for a specific pattern that Temi recognized immediately \u2014 it\u0027s a marking used by a network she\u0027s heard rumors about, and the client insisted it was \u0027just aesthetic.\u0027 She did the work and now she\u0027s not sure."
   ],
-  "narrative_function": "Social connector — knows everyone young in the Enclave and most people who move through it; access point for geneware information and modification services; represents the generation that has grown up entirely inside GLMZ's reality; can be quest giver for anything touching the Enclave's community politics.",
-  "augmentations": "Extensive self-applied bioluminescent subcutaneous patterns (own work). Retractable claw mods on right hand (function and aesthetics). Coordinate-display iris mods. Scent gland enhancement — she chose a specific compound she describes as 'like the Enclave smells when it rains.'",
-  "daily_life": "Opens Derma at noon, works clients until 20:00, spends evenings with a rotating group of Enclave peers, researches new geneware techniques late at night on pirated Helix Biosystems technical manuals she's compiled over four years.",
-  "affiliation": "Derma studio (Hamtramck Enclave); loose affiliation with Helix Biosystems through their licensed geneware supply chain — she is technically a certified Helix applicator, which she finds both useful and ideologically uncomfortable",
+  "narrative_function": "Social connector \u2014 knows everyone young in the Enclave and most people who move through it; access point for geneware information and modification services; represents the generation that has grown up entirely inside GLMZ\u0027s reality; can be quest giver for anything touching the Enclave\u0027s community politics.",
+  "augmentations": "Extensive self-applied bioluminescent subcutaneous patterns (own work). Retractable claw mods on right hand (function and aesthetics). Coordinate-display iris mods. Scent gland enhancement \u2014 she chose a specific compound she describes as \u0027like the Enclave smells when it rains.\u0027",
+  "daily_life": "Opens Derma at noon, works clients until 20:00, spends evenings with a rotating group of Enclave peers, researches new geneware techniques late at night on pirated Helix Biosystems technical manuals she\u0027s compiled over four years.",
+  "affiliation": "Derma studio (Hamtramck Enclave); loose affiliation with Helix Biosystems through their licensed geneware supply chain \u2014 she is technically a certified Helix applicator, which she finds both useful and ideologically uncomfortable",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -101,16 +107,16 @@
   },
   "behavioral": {
     "decision_rules": [
-      "never applies a modification she hasn't researched thoroughly — the bravado stops at the skin",
+      "never applies a modification she hasn\u0027t researched thoroughly \u2014 the bravado stops at the skin",
       "always gets explicit consent for design choices, even minor ones"
     ],
     "escalation_ladder": [
       "joke that also makes the point",
       "direct statement without the joke",
-      "becomes very still and very cold — the humor vanishes completely"
+      "becomes very still and very cold \u2014 the humor vanishes completely"
     ],
     "interpersonal_modes": {
-      "strangers": "performs confidence and warmth — genuine but amplified for first contact",
+      "strangers": "performs confidence and warmth \u2014 genuine but amplified for first contact",
       "friends": "drops the performance, is funnier and more uncertain and more real"
     },
     "stress_responses": {
@@ -124,10 +130,10 @@
     ],
     "habits": [
       "sketches designs on her own arms with a washable stylus while thinking",
-      "greets the E.L.F. she believes inhabits Derma's autoclave with a specific three-tap ritual before starting any session"
+      "greets the E.L.F. she believes inhabits Derma\u0027s autoclave with a specific three-tap ritual before starting any session"
     ],
     "breaking_points": [
-      "someone treating a client's modification as a novelty or joke",
+      "someone treating a client\u0027s modification as a novelty or joke",
       "Helix Biosystems claiming credit for or ownership of her work"
     ]
   },
@@ -160,47 +166,33 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Street Custom 'Mockingbird' Voice-Activated Trap Gun"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Hamtramck Enclave",
-    "Helix Biosystems",
-    "The CEO",
-    "Tessera Industries Quantum Entanglement Detonator QED-1 'Certainty'",
-    "Plot 17",
-    "Kang-Petrov Arms KP-19 'Workhorse'",
-    "The Heritage Vault",
-    "The Gradient Compact",
-    "Chimera-Null",
-    "Chicago",
-    "SynapTech IrisBloom Ocular Color Modulator",
-    "Gravimetric Collapse Charge GCC-9",
-    "Slagworks Industrial"
-  ],
-  "district": "the Gray Zone",
   "physical_description": {
     "heritage": "Pacific Islander (41.5%) with Southeast Asian (19.4%), Sub-Saharan African (12.5%), Hispanic/Latin American (10.7%), South Asian (9.3%), and Middle Eastern (6.6%) ancestry. Genetic mosaic creates warm deep-brown skin with golden, reddish, and olive undertones. Features blend the broader facial structure and fuller lips from Pacific Islander and Sub-Saharan African heritage with Southeast Asian eye shape and bone structure, South Asian cheekbone prominence, and Middle Eastern warmth. Overall phenotype: luminous deep warm-brown complexion with balanced, expressive features reflecting complex global ancestry.",
     "height_cm": 158,
     "weight_kg": 52,
-    "build": "Compact and wiry, muscle definition visible in forearms and shoulders from precision handwork. Low body fat. Moves with economical grace — no wasted motion.",
+    "build": "Compact and wiry, muscle definition visible in forearms and shoulders from precision handwork. Low body fat. Moves with economical grace \u2014 no wasted motion.",
     "hair_color": "Natural black with deep indigo undertones, color-shifted by bioluminescent pattern bleed",
     "hair_style": "Closely braided in geometric patterns; often worn in a high crown with loose synthetic extensions threaded through",
     "hair_length": "Medium (braids reach mid-back)",
-    "eye_color": "Deep dark brown base with embedded coordinate display — tiny cyan glowing numerals (latitude/longitude) visible in iris under low light",
+    "eye_color": "Deep dark brown base with embedded coordinate display \u2014 tiny cyan glowing numerals (latitude/longitude) visible in iris under low light",
     "skin_tone": "Deep warm brown with golden, reddish, and olive undertones. Rich luminosity from subcutaneous bioluminescent work, creating iridescent sheen at certain angles.",
-    "complexion": "Clear, youthful. Fuller cheekbones and broader facial structure from Pacific Islander and Sub-Saharan African heritage. Almond-shaped eyes with subtle epicanthic fold from Southeast Asian component. Wider nose bridge with full, expressive lips. Warm, animated expression — eyebrows mobile, smile quick and genuine. Hands show fine calluses and occasional minor chemical burns from geneware handling.",
-    "visible_augmentations": "Retractable claw mods on right hand (4cm bone-white carbide tips, housed under normal nail beds; extends with visible finger joint articulation). Coordinate-display irises visible only under direct light or eye contact. Subcutaneous bioluminescent patterns visible across exposed skin — active in low light, dormant in bright daylight. Faint iridescent sheen to skin under certain angles from pigment suspension.",
+    "complexion": "Clear, youthful. Fuller cheekbones and broader facial structure from Pacific Islander and Sub-Saharan African heritage. Almond-shaped eyes with subtle epicanthic fold from Southeast Asian component. Wider nose bridge with full, expressive lips. Warm, animated expression \u2014 eyebrows mobile, smile quick and genuine. Hands show fine calluses and occasional minor chemical burns from geneware handling.",
     "distinguishing_marks": [
       "Extensive bioluminescent subcutaneous patterns across collarbones, shoulders, and both wrists in interlocking Yoruba adinkra symbols (wisdom knots, strength glyphs) and Polynesian wave-forms in pale cyan and deep indigo that glow softly in darkness",
       "Radial scar pattern on right inner forearm (3cm long, faint) from first failed claw mod installation at age 16",
-      "Chemical burn mark on left palm, barely visible, shaped like a droplet — 'proof of concept' from early bioluminescent pigment testing"
+      "Chemical burn mark on left palm, barely visible, shaped like a droplet \u2014 \u0027proof of concept\u0027 from early bioluminescent pigment testing"
     ],
-    "posture_movement": "Stands and sits slightly forward-leaning, as if always mid-thought. Hand gestures precise and economical. Right hand frequently unconsciously extends/retracts claws during conversation. Walks with quick, confident stride. Eyes track details obsessively — color palettes, symmetry, proportion.",
-    "clothing_style": "Tier 3-4 hybrid. Favors sleeveless or minimal-sleeve tops to showcase arm work (often custom-fitted, tailored pieces from Enclave makers). High-waisted cargo pants or modified coveralls in matte synthetics with visible utility pockets and tool loops. Reinforced leather gloves for client work, often removed and worn loose around wrists. Heavy-soled boots suitable for standing 8+ hours. Minimal jewelry — her body is her ornament. Occasional Helix Biosystems branded gear (hoodies, base layers) worn ironically. Scent is distinctive: rain-ozone-metal baseline from scent gland mod, often overlaid with bioluminescent pigment solvent."
+    "visible_augmentations": "Retractable claw mods on right hand (4cm bone-white carbide tips, housed under normal nail beds; extends with visible finger joint articulation). Coordinate-display irises visible only under direct light or eye contact. Subcutaneous bioluminescent patterns visible across exposed skin \u2014 active in low light, dormant in bright daylight. Faint iridescent sheen to skin under certain angles from pigment suspension.",
+    "posture_movement": "Stands and sits slightly forward-leaning, as if always mid-thought. Hand gestures precise and economical. Right hand frequently unconsciously extends/retracts claws during conversation. Walks with quick, confident stride. Eyes track details obsessively \u2014 color palettes, symmetry, proportion.",
+    "clothing_style": "Tier 3-4 hybrid. Favors sleeveless or minimal-sleeve tops to showcase arm work (often custom-fitted, tailored pieces from Enclave makers). High-waisted cargo pants or modified coveralls in matte synthetics with visible utility pockets and tool loops. Reinforced leather gloves for client work, often removed and worn loose around wrists. Heavy-soled boots suitable for standing 8\u002B hours. Minimal jewelry \u2014 her body is her ornament. Occasional Helix Biosystems branded gear (hoodies, base layers) worn ironically. Scent is distinctive: rain-ozone-metal baseline from scent gland mod, often overlaid with bioluminescent pigment solvent."
   },
   "image_prompt": "Portrait of Lark, a 158cm compact geneware technician in GLMZ, shot in low-light studio setting. Deep warm brown skin with golden and reddish undertones glowing softly. Pacific Islander and Sub-Saharan African broader facial structure with Southeast Asian almond eyes displaying tiny cyan coordinate glyphs in irises. Wider nose bridge, full expressive lips. Black hair with indigo undertones in tight geometric braids pulled into high crown with synthetic extensions. Sleeveless fitted top showcasing bioluminescent Yoruba adinkra symbols and Polynesian wave-forms glowing pale cyan and indigo across collarbones, shoulders, and wrists. Visible right hand extended with bone-white retractable carbide claw mods. Subcutaneous bioluminescent patterns create faint iridescent sheen across skin. Quick, genuine expression. Minimalist utilitarian aesthetic. Rain-ozone-metal atmospheric scent suggested by composed, precise posture. Neo-noir futurism meets genetic artistry. High contrast lighting emphasizing bioluminescence. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Pacific Islander": 41.5,
     "Southeast Asian": 19.4,
@@ -209,12 +201,6 @@
     "South Asian": 9.3,
     "Middle Eastern": 6.6
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Pacific Islander": {
       "Melanesian": {
@@ -273,6 +259,5 @@
         "Iraqi": 0.2
       }
     }
-  },
-  "tier": "3"
+  }
 }

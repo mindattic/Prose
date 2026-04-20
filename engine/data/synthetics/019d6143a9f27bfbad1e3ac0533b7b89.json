@@ -1,5 +1,7 @@
 {
   "id": "019d6143a9f27bfbad1e3ac0533b7b89",
+  "rating": 50,
+  "vote_count": 1,
   "name": "Chalk",
   "type": "elf",
   "aliases": [],
@@ -26,7 +28,6 @@
     "e.l.f.",
     "sentient"
   ],
-  "related_entities": [
-    "Arcturus KS-7 'Nursery'"
-  ]
+  "image_prompt": "",
+  "dalle3_prompt": ""
 }
