@@ -76,7 +76,7 @@ public class TriviaService(
             if (!string.IsNullOrEmpty(c.Role))
                 pool.Add($"{c.Name} is a {c.Role}{(!string.IsNullOrEmpty(c.Location) ? $" based in {c.Location}" : "")}.");
             if (c.Psychology.Secret.Length > 20)
-                pool.Add($"Secret: {FirstSentence(c.Psychology.Secret)}");
+                pool.Add($"{c.Name}'s secret: {FirstSentence(c.Psychology.Secret)}");
         }
 
         foreach (var c in corpRepo.GetAll().OrderBy(_ => Random.Shared.Next()))
@@ -85,7 +85,7 @@ public class TriviaService(
             if (!string.IsNullOrEmpty(c.Sector))
                 pool.Add($"{c.Name} operates in {c.Sector}.");
             if (!string.IsNullOrEmpty(c.KeyDetail))
-                pool.Add(FirstSentence(c.KeyDetail));
+                pool.Add($"{c.Name} — {FirstSentence(c.KeyDetail)}");
             if (!string.IsNullOrEmpty(c.Valuation))
                 pool.Add($"{c.Name} has a valuation of {c.Valuation}.");
         }
@@ -152,7 +152,9 @@ public class TriviaService(
             if (desc.Length > 20) pool.Add($"{t.Name} — {desc}");
         }
 
-        var arr = pool.ToArray();
+        var arr = pool
+            .Where(f => !StartsWithPronoun(f))
+            .ToArray();
         for (int i = arr.Length - 1; i > 0; i--)
         {
             int j = Random.Shared.Next(i + 1);
@@ -160,6 +162,11 @@ public class TriviaService(
         }
         return arr[..Math.Min(TriviaSlots, arr.Length)];
     }
+
+    private static readonly string[] LeadingPronouns = ["He ", "She ", "They ", "His ", "Her ", "Their ", "It "];
+
+    private static bool StartsWithPronoun(string fact) =>
+        LeadingPronouns.Any(p => fact.StartsWith(p, StringComparison.OrdinalIgnoreCase));
 
     private static string FirstSentence(string text)
     {
