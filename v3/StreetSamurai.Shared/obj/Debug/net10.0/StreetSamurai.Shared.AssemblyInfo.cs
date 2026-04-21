@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StreetSamurai.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a9c0269559de247392882e61765414b5a75ec1db")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ab19cd3a0b8f0beeba8801ce179a42de38504160")]
 [assembly: System.Reflection.AssemblyProductAttribute("StreetSamurai.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StreetSamurai.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
