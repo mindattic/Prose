@@ -197,61 +197,7 @@
                 }
                 else if (currentOutline != null)
                 {
-                    <h6 class="text-danger">@currentOutline.Title</h6>
-                    <p class="small text-muted">@currentOutline.Logline</p>
-                    <p class="small text-info">Theme: @currentOutline.Theme</p>
-
-                    @foreach (var act in currentOutline.Acts)
-                    {
-                        <div class="mb-3">
-                            <div class="fw-bold text-warning">Act @act.ActNumber: @act.Name</div>
-                            <small class="text-muted">@act.Purpose</small>
-                            @foreach (var beat in act.Beats)
-                            {
-                                var b = beat;
-                                <div class="d-flex align-items-start gap-2 border-start border-secondary ps-2 ms-2 mt-1 @(b.Written ? "opacity-50" : "")">
-                                    <span class="badge @(b.Written ? "bg-success" : "bg-secondary") mt-1" style="min-width: 24px;">@(b.BeatIndex + 1)</span>
-                                    <div class="flex-grow-1">
-                                        <div class="d-flex align-items-center gap-2 flex-wrap">
-                                            <div class="small fw-bold">@b.Title</div>
-                                            @if (!string.IsNullOrEmpty(b.StructureRole))
-                                            {
-                                                <span class="badge" style="font-size:0.6rem;background:@(b.SceneType=="sequel"?"#1f4e79":"#3d1f00");color:@(b.SceneType=="sequel"?"#58a6ff":"#f0883e");">@b.StructureRole</span>
-                                            }
-                                        </div>
-                                        <div class="small text-muted">@b.Goal</div>
-                                        @if (b.Seeds.Count > 0) { <small class="text-info">Seeds: @string.Join(", ", b.Seeds)</small> }
-                                    </div>
-                                    @if (!b.Written)
-                                    {
-                                        <button class="btn btn-sm btn-outline-danger" @onclick="() => WriteBeatFromOutline(b)"><div class="btn-lbl">Write</div></button>
-                                    }
-                                </div>
-                            }
-                        </div>
-                    }
-
-                    @if (currentOutline.CharacterArcs.Any())
-                    {
-                        <div class="field-label text-danger mt-3">Character Arcs</div>
-                        @foreach (var arc in currentOutline.CharacterArcs)
-                        {
-                            <div class="small border-start border-secondary ps-2 ms-2 mt-1">
-                                <span class="fw-bold text-light">@arc.Character</span>
-                                @if (!string.IsNullOrEmpty(arc.Want) || !string.IsNullOrEmpty(arc.Need))
-                                {
-                                    <div class="d-flex gap-3 mt-1 flex-wrap">
-                                        @if (!string.IsNullOrEmpty(arc.Want))
-                                        { <span><span class="text-warning" style="font-size:0.7rem;">WANT</span> <span class="text-muted">@arc.Want</span></span> }
-                                        @if (!string.IsNullOrEmpty(arc.Need))
-                                        { <span><span class="text-info" style="font-size:0.7rem;">NEED</span> <span class="text-muted">@arc.Need</span></span> }
-                                    </div>
-                                }
-                                <div class="text-muted mt-1">@arc.StartState → @arc.EndState</div>
-                                <div class="text-muted" style="font-size:0.75rem;">Turning point: @arc.TurningPoint · Cost: @arc.Cost</div>
-                            </div>
-                        }
-                    }
+                    <StoryShapeChart Outline="currentOutline" OnWriteBeat="WriteBeatFromOutline" />
                 }
                 else
                 {
@@ -502,7 +448,7 @@
 
             @* Preview pane: hidden on mobile when editing, always shown on desktop *@
             <div class="col-12 col-md-6 @(viewMode == "editor" ? "d-none d-md-block" : "")">
-                <div class="border border-secondary rounded" style="height: calc(100vh - 345px); overflow-y: auto;">
+                <div id="preview-scroll-container" class="border border-secondary rounded" style="height: calc(100vh - 345px); overflow-y: auto;">
                     <div id="md-preview" class="story-preview-print bg-white text-dark p-4" style="font-family: Georgia, serif; font-size: 16px; line-height: 2; max-width: 700px; margin: 0 auto;">
                         <p style="color:#6c757d;text-align:center;padding:2rem;font-style:italic;">Preview</p>
                     </div>
@@ -511,6 +457,15 @@
 
         </div>
 
+        @* ── Story Shape Progress ───────────────────────── *@
+        @if (currentOutline != null)
+        {
+            <div class="mt-1 border border-secondary rounded px-2 pt-1 pb-0" style="background:#0d1117;">
+                <StoryShapeChart Outline="currentOutline"
+                                 Compact="true"
+                                 TrackScrollOf="preview-scroll-container" />
+            </div>
+        }
 
         @* ── Image Insert Panel ────────────────────────── *@
         @* ── Image Insert Modal ─────────────────────── *@
@@ -876,6 +831,7 @@
             if (loaded != null) project = loaded;
         }
         storyText = project.Html;
+        currentOutline = OutlineSvc.Load(project.Id);
         validationResults = LoadValidation();
         if (validationResults.Count > 0) showValidateModal = true;
         UpdateWordCount();
@@ -891,7 +847,10 @@
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
         if (firstRender)
+        {
             await JS.InvokeVoidAsync("writeInterop.initMdPreview", "story-surface", "md-preview");
+            await JS.InvokeVoidAsync("writeInterop.syncScroll", "story-surface", "preview-scroll-container");
+        }
     }
 
     // ── JS Callbacks ──

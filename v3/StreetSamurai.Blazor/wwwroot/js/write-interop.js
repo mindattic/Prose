@@ -145,6 +145,47 @@ window.writeInterop = {
         return true;
     },
 
+    // ── Scroll sync: editor ↔ preview ↔ story shape ─────────
+
+    syncScroll: function (editorId, previewWrapperId) {
+        const editor  = document.getElementById(editorId);
+        const preview = document.getElementById(previewWrapperId);
+        if (!editor || !preview) return;
+
+        // Remove stale listeners from a previous init
+        if (editor._scrollSyncFn)  editor .removeEventListener('scroll', editor._scrollSyncFn);
+        if (preview._scrollSyncFn) preview.removeEventListener('scroll', preview._scrollSyncFn);
+
+        const frac = (el) => {
+            const max = el.scrollHeight - el.clientHeight;
+            return max > 0 ? el.scrollTop / max : 0;
+        };
+        const apply = (el, f) => {
+            const max = el.scrollHeight - el.clientHeight;
+            if (max > 0) el.scrollTop = f * max;
+        };
+
+        // Separate flags so each pane suppresses its own re-entry
+        let lockEditor = false, lockPreview = false;
+
+        editor._scrollSyncFn = () => {
+            if (lockEditor) return;
+            lockPreview = true;
+            apply(preview, frac(editor));
+            requestAnimationFrame(() => { lockPreview = false; });
+        };
+
+        preview._scrollSyncFn = () => {
+            if (lockPreview) return;
+            lockEditor = true;
+            apply(editor, frac(preview));
+            requestAnimationFrame(() => { lockEditor = false; });
+        };
+
+        editor .addEventListener('scroll', editor._scrollSyncFn,  { passive: true });
+        preview.addEventListener('scroll', preview._scrollSyncFn, { passive: true });
+    },
+
     // ── Markdown preview (client-side via marked.js) ────────
 
     initMdPreview: function (editorId, previewId) {
