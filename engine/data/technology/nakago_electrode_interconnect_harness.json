@@ -1,0 +1,35 @@
+{
+  "id": "nakago_electrode_interconnect_harness",
+  "name": "Nakago Electrode Interconnect Harness",
+  "type": "technology",
+  "subcategory": "electrical_interconnect",
+  "aliases": [
+    "electrode leads",
+    "the wiring",
+    "nakago harness",
+    "lead set"
+  ],
+  "description": "The electrical interconnect system that routes harvested charge from both energy systems — the TENG mune film and the PZT shingane core — through channels in the nakago (tang) to the tsuka module's supercapacitor bank. The harness consists of silver-epoxy electrode leads bonded to each harvesting system, a rectification and conditioning circuit to convert the high-voltage AC output of both systems to DC before storage, and the nakago interface contacts that mate with corresponding contacts in the tsuka module.\n\nBoth the PZT shingane and the TENG film generate high-voltage AC output (40–600V peak from the PZT, 80–400V peak from the TENG film). These voltages must be rectified to DC and stepped down before the supercapacitor bank can store them. The conditioning circuit handles this — it is embedded in the nakago channel alongside the leads, potted in structural epoxy for vibration resistance. The circuit is small enough (approximately 2cm³ total volume) to fit in the nakago channel without compromising blade structural integrity.\n\nThe harness is not a user-serviceable component under normal conditions. It is replaced as a complete unit when lead continuity fails (detectable as reduced charging efficiency across both systems simultaneously) or when the interface contacts oxidize.",
+  "specifications": "Lead material: silver-epoxy composite, 0.3mm conductor\nRectification: dual full-wave bridge circuits (one per harvesting system)\nConditioning: step-down converter, adjustable output 2.0–2.7V for supercapacitor bank\nInterface contacts: gold-plated copper, nakago-end; spring-loaded mate in tsuka module\nPotting compound: structural epoxy, Shore D 85\nOperating voltage: input 40–600V AC; output 2.0–2.7V DC\nContinuity resistance: <0.5 ohm full harness",
+  "cost": {
+    "part_only": "Φ 450 (custom-fabricated from off-the-shelf silver-epoxy lead stock and discrete rectifier components)",
+    "installation_labor": "Φ 800–1,400 (bladesmith with electronics experience; requires partial disassembly, lead bonding, potting, and continuity testing)",
+    "total_installed": "Φ 1,250–1,850",
+    "availability": "Component-level parts are commercially available (silver-epoxy leads, rectifier bridges, step-down converters). The challenge is the specialized installation: very few bladesmiths have both the metallurgical skill to disassemble and reassemble the blade and the electronics knowledge to build and test the circuit.",
+    "notes": "Service life: indefinite if the blade is maintained correctly. Failure mode: oxidized contacts (fixable with contact cleaner), broken lead from blade flex (requires full replacement). Inspect annually under heavy use."
+  },
+  "tags": [
+    "technology",
+    "electrical",
+    "interconnect",
+    "nakago",
+    "maintenance-item",
+    "silence-component"
+  ],
+  "related_entities": [
+    "'Silence' — Dae-jung Seo's Custom Katana",
+    "Graphene Ultracapacitor Tsuka Module",
+    "TENG Triboelectric Nanogenerator Mune Film",
+    "PZT Piezoelectric Composite Shingane Core"
+  ]
+}

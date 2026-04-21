@@ -1,0 +1,31 @@
+{
+  "id": "silence_tsuba_tungsten_carbide",
+  "name": "Tungsten Carbide Tsuba — Silence",
+  "type": "equipment",
+  "subcategory": "blade_fitting",
+  "aliases": [
+    "the guard",
+    "tsuba",
+    "Silence guard"
+  ],
+  "description": "The hand guard fitted to Silence — a flat oval disc of tungsten carbide with no ornamentation on the external faces. Tungsten carbide (WC) is one of the hardest materials in engineering use (Vickers hardness ~2,200), harder than hardened steel by a factor of four. The choice of material was Seo's: a tsuba is the surface that stops an opponent's blade from sliding up into your hand during a bind. Seo wanted a guard that would never be cut through. Tungsten carbide cannot be cut with a blade. It can be shattered by sufficient impact from a harder material, but no opponent carrying a conventional weapon is going to shatter a WC guard.\n\nThe disc is flat oval, approximately 6cm across the major axis and 5cm across the minor. No decorative carving, no inlay, no finish treatment beyond the inherent grey of the carbide. The TSK serial number that was originally etched on the inner curve has been filed down by Kyle — he removed the designation when it became irrelevant. What remains is a faint rectangular scar in the carbide where the serial was, visible on close inspection.\n\nThe guard is fitted to the blade at the habaki junction and secured by the tsuka assembly. It can be removed without tools once the tsuka is detached.",
+  "specifications": "Material: tungsten carbide (WC), sintered\nHardness: approximately 2,200 HV (Vickers)\nDimensions: 60mm major axis x 50mm minor axis x 8mm thickness\nWeight: approximately 180g\nFinish: none — natural carbide grey\nFitting: habaki-mounted, tsuka-secured",
+  "cost": {
+    "part_only": "Φ 750 (custom machined by a competent CNC operator with carbide tooling; WC is difficult to machine)",
+    "installation_labor": "Φ 150–300 (fitting to specific habaki geometry; experienced bladesmith)",
+    "total_installed": "Φ 900–1,050",
+    "availability": "Any machine shop with carbide-grade CNC tooling can produce this to spec. The limiting factor is finding an operator willing to do custom blade work. Industrial and tooling shops are the best source.",
+    "notes": "Effectively indestructible under normal combat use. No maintenance required. Replace only if cracked by extreme impact (uncommon under typical conditions)."
+  },
+  "tags": [
+    "equipment",
+    "blade-fitting",
+    "tsuba",
+    "tungsten-carbide",
+    "guard",
+    "silence-component"
+  ],
+  "related_entities": [
+    "'Silence' — Dae-jung Seo's Custom Katana"
+  ]
+}

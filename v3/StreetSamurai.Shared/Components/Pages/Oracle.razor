@@ -1,5 +1,5 @@
 @page "/oracle"
-@inject WorldOracleService Oracle
+@inject WorldOracleService OracleService
 @implements IDisposable
 
 <h4 class="text-danger mb-1">World Oracle</h4>
@@ -118,7 +118,7 @@
         StateHasChanged();
         try
         {
-            var answer = await Oracle.AskAsync(q, cts.Token);
+            var answer = await OracleService.AskAsync(q, cts.Token);
             history.Insert(0, answer);
         }
         catch (OperationCanceledException) { }

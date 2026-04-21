@@ -381,7 +381,12 @@ window.writeInterop = {
             const el = document.getElementById(id);
             if (!el) return;
             el.focus();
-            document.execCommand('formatBlock', false, '<' + tag + '>');
+            if (this._savedRange) {
+                const sel = window.getSelection();
+                sel.removeAllRanges();
+                sel.addRange(this._savedRange);
+            }
+            try { document.execCommand('formatBlock', false, '<' + tag + '>'); } catch (e) { }
             this._notifyChange(el);
         },
 
@@ -389,7 +394,12 @@ window.writeInterop = {
             const el = document.getElementById(id);
             if (!el) return;
             el.focus();
-            document.execCommand(command, false, null);
+            if (this._savedRange) {
+                const sel = window.getSelection();
+                sel.removeAllRanges();
+                sel.addRange(this._savedRange);
+            }
+            try { document.execCommand(command, false, null); } catch (e) { }
             this._notifyChange(el);
         },
 

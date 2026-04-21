@@ -1,0 +1,59 @@
+{
+  "id": "teng_triboelectric_nanogenerator_mune_film",
+  "name": "TENG Triboelectric Nanogenerator Mune Film",
+  "brand_name": "Cascades Energy Systems",
+  "product_name": "Cascades TNG-7 Blade-Surface Triboelectric Nanogenerator Film",
+  "type": "technology",
+  "aliases": [
+    "TENG film",
+    "triboelectric film",
+    "drag skin",
+    "friction layer",
+    "the dry coat"
+  ],
+  "subcategory": "energy_harvesting",
+  "description": "A flexible, micron-scale multilayer film that converts sliding mechanical contact — friction between the coated surface and any counterpart material — directly into electrical charge through triboelectric separation. When two dissimilar materials slide against each other, electrons transfer from one surface to the other; the TENG film is engineered to maximize this charge transfer and collect it through a patterned electrode array printed on the film's backing layer, from which it routes to the supercapacitor bank integrated into the tsuka.\n\nTriboelectricity is one of the oldest known electrical phenomena — the amber-and-wool static electricity observed since antiquity — but controlled at nanoscale allows it to be a practical power source. The TNG-7 film achieves this through a nanostructured PTFE (polytetrafluoroethylene) surface layer over a fluorinated ethylene propylene triboelectric active layer, separated from the patterned aluminum electrode grid by a nylon spacer mesh that allows controlled deformation. When the mune drags across any surface harder than approximately 3 Mohs (concrete, steel, rebar, vehicle panels, rough stone, asphalt), the surface-to-film contact and separation cycle generates charge pulses that the electrode array harvests continuously. A full-pressure drag across ten meters of concrete produces approximately 0.8–1.4 millijoules, depending on drag speed, pressure, and surface texture. The supercapacitor bank charges proportionally.\n\nCritical limitation — humidity sensitivity:\nTriboelectric generation requires dry contact. Water films between the TENG surface and the counterpart material act as a conductive bridge that bleeds charge before collection — effectively shorting the generator. At ambient humidity above approximately 70%, TENG film output drops by 60–80%. In active rain or standing water contact, TENG generation approaches zero. In GLMZ's Great Lakes climate — persistent lake-effect humidity, frequent rain, heavy seasonal fog — this is the defining operational constraint of the drag-charging system:\n\n  In dry covered spaces (underground levels, parking structures, industrial floors, building interiors): TENG generation is full-efficiency — the blade charges rapidly on any drag.\n  In open-air humid conditions without rain: reduced efficiency, still useful with sustained drag.\n  In active rain: TENG generation ceases. The blade must charge exclusively through clash-loading the piezoelectric spine.\n\nThis weather dependency is not a manufacturing defect. It is a known characteristic that Torii's Advanced Weapons Division chose to retain because the alternative (a hermetically sealed surface coating) would have eliminated the drag-sparking behavior that made Seo's custom blade tactically distinctive. The film is designed to shed water rapidly — the surface has a contact angle above 150° (superhydrophobic) — but recovery from saturation requires 30–60 seconds of air exposure.",
+  "energy_type": "Triboelectric — contact electrification between dissimilar surfaces converts kinetic energy of relative motion directly to electrical charge.",
+  "historical_development": "Triboelectric nanogenerators were first demonstrated in laboratory settings in the early 21st century (Wang et al., 2012) as a potential ambient energy harvesting technology. Early commercial applications focused on wearable electronics harvesting from walking motion. The blade-surface application was Dae-jung Seo's adaptation — integrating Cascades' film into a traditionally constructed laminate blade — and is believed to be the first application of TENG technology to a combat weapon platform. The key engineering insight was that a blade being dragged across a surface creates a high-pressure, high-velocity relative motion event orders of magnitude more energetic than a footstep. The challenge was making a film robust enough to survive the mechanical abuse of repeated hard-surface contact while maintaining triboelectric efficiency.",
+  "specifications": "Film thickness: 180–220 microns total stack\nActive layer: nanostructured PTFE over FEP triboelectric contact surface\nElectrode layer: patterned aluminum grid, 40-micron linewidth\nOutput voltage: 80–400V AC (peak-to-peak, before rectification)\nOutput current: 2–15 mA peak during active drag\nDC power after rectification and conditioning: 0.5–4 mW continuous during drag\nHumidity threshold: >70% ambient = significant output degradation\nOperating temperature: -20°C to +120°C\nSurface hardness requirement of counterpart: ≥3 Mohs for effective generation\nService life: ~400 heavy drag cycles before electrode delamination begins; field-resurfaceable",
+  "tier_availability": "Tier 4+ — research and military prototype applications. No civilian commercial version of the blade-surface formulation exists.",
+  "developers": [
+    "CASCADES ENERGY SYSTEMS",
+    "TORII SECURITY GROUP — Advanced Weapons Division (integration specification)"
+  ],
+  "enables": [
+    "Continuous charge accumulation during blade drag against hard surfaces",
+    "Pyrophoric spark amplification from underlying ferrocerium substrate during high-pressure drag",
+    "Visual and acoustic drag signature (sparks + screech) as combat mode indicator",
+    "Weather-dependent tactical charging: reliable indoors, degraded in rain"
+  ],
+  "limitations": [
+    "Humidity and rain suppress output to near zero — this is the blade's primary tactical weakness",
+    "Film degrades through cumulative heavy-contact cycles — periodic resurfacing required",
+    "High output voltage requires rectification and conditioning before supercapacitor storage",
+    "Zero output in standing water or sustained rain — operator must rely on clash-charging (piezo spine) in wet conditions"
+  ],
+  "tags": [
+    "technology",
+    "energy-harvesting",
+    "triboelectric",
+    "TENG",
+    "blade-surface",
+    "weather-dependent",
+    "torii",
+    "cascades"
+  ],
+  "related_entities": [
+    "Torii Security Group Katana TSK-4",
+    "Ferrocerium-Titanium Pyrophoric Alloy",
+    "PZT Piezoelectric Composite Shingane Core",
+    "Cascades Energy Systems"
+  ],
+  "cost": {
+    "part_only": "Φ 1,400 per resurfacing kit (single application)",
+    "installation_labor": "Self-applicable with care — adhesion tools and surface prep required. Professional application recommended: Φ 300–600 additional.",
+    "total_installed": "Φ 1,400–2,000",
+    "availability": "Cascades Energy Systems distributes to military and licensed research contractors only. Gray market access through defense contractor intermediaries. 2–4 week lead time typical.",
+    "notes": "~400 heavy drag cycles before electrode delamination begins. Field-resurfaceable without removing the blade from service."
+  }
+}

@@ -4,19 +4,19 @@
   "type": "weapon",
   "aliases": [],
   "category": "shotgun",
-  "description": "A compact combat shotgun produced by Torii Security Group as a limited custom commission — one of three ever made, built as a companion piece to the TSK-1 'Silence' katana series. The TSS-3 is not a standard catalog item. It was developed in response to a specific request from Kyle Ellen Corbin-Vasik, who wanted a close-range firearm that could be operated one-handed, paired with the katana in low-clearance engagements where the blade couldn't reach first. The design mirrors the TSK-1's aesthetic — matte black ceramic-composite chassis, dark steel action, the same red-lined grip texture that Torii uses as its house signature. At 48cm with the stock folded, it disappears under a coat.\n\nThe barrel is cut to the legal minimum for GLMZ compact classification, which is shorter than legal everywhere else. The action has been modified for reduced felt recoil — necessary when firing one-handed while maintaining grip on a meter-long blade in the other hand. The magazine accepts four rounds of 12-gauge. The chamber is designed to cycle reliably even when the operator's hand is blood-slicked, a consideration Torii's armorer apparently included without being asked.\n\nThe name 'Chorus' was applied by Kyle, not the manufacturer. The katana is Silence. The shotgun is what follows Silence when Silence wasn't enough.",
+  "description": "A compact combat shotgun in the Torii Security Group TSS-3 line — a commercial Tier 3 offering sold through licensed distributors in GLMZ and across the Pulse network. The TSS-3 is not a bespoke weapon: it is a production model, available by order, priced accordingly. What makes Kyle’s unit distinctive is the bird’s-head grip — a sharply recurved grip profile without a stock, giving the weapon the silhouette of a large revolver at the cost of extended-range control. The bird’s-head configuration ships as a factory option on the TSS-3; Kyle ordered it specifically for one-handed operation. At 48cm total, it disappears under a coat.\n\nThe barrel is cut to the GLMZ compact firearm legal minimum. The action cycles reliably one-handed. The chamber and feed ramp are factory-treated for adverse conditions — blood-slicked hands, wet environments, extreme cold. The magazine accepts four rounds of 12-gauge. The grip texture is Torii’s signature red-line crosshatch. The bird’s-head curves sharply backward — the back of the grip nearly parallel to the barrel line — so the hand sits under the bore rather than behind it. This places the recoil directly up the wrist rather than rotating the muzzle. You can hold it on target through the blast.\n\nThe name Chorus was Kyle’s. The katana is Silence. The shotgun is what follows Silence when Silence was not enough.",
   "manufacturer": "Torii Security Group",
-  "tier_availability": "Custom commission — not available for purchase",
-  "legality": "Legal — GLMZ compact firearm classification",
-  "street_price": "N/A — not for sale",
+  "tier_availability": "Tier 3 — commercial production. Available by order through Torii Security Group licensed distributors. Bird’s-head grip configuration is a factory option, not a custom modification.",
+  "legality": "Legal — GLMZ compact firearm classification. Requires Tier 2 commercial arms license, available to corporate employees and licensed contractors.",
+  "street_price": "Φ 3,200 base model; Φ 3,800 with bird’s-head grip option and adverse-condition chamber treatment",
   "base_technologies": [
     "Compact folding-stock frame",
     "One-hand-operable action",
     "Reduced-recoil cycling mechanism",
     "Ceramic-composite chassis (matched to TSK-1 aesthetic)"
   ],
-  "specifications": "caliber: 12-gauge\ncapacity: 4+1 rounds\neffective range: Contact to 15 meters\nbarrel length: 360mm (legal minimum)\noverall length: 480mm (stock folded) / 720mm (stock extended)\nweight: 2.1kg unloaded\naction: Semi-automatic, gas-operated\nfinish: Matte black ceramic-composite chassis, dark steel action, red-line grip texture",
-  "tactical_use": "Close-quarters companion to the TSK-1 katana. Deployed when the blade reaches a threshold it cannot cross — armored targets, entrenched opponents, multiple close contacts. Designed for one-hand operation so the katana can remain in the other hand. Four rounds means four choices. Kyle reportedly fires it rarely and considers each shot a failure of planning.",
+  "specifications": "caliber: 12-gauge\ncapacity: 4+1 rounds\neffective range: Contact to 15 meters\nbarrel length: 360mm (legal minimum)\noverall length: 480mm (stock folded) / 720mm (stock extended)\nweight: 2.1kg unloaded\naction: Semi-automatic, gas-operated\ngrip: Bird’s-head configuration (factory option) — no stock, sharply recurved\nfinish: Matte black ceramic-composite chassis, dark steel action, red-line crosshatch grip texture",
+  "tactical_use": "Close-quarters companion to the katana. Deployed when the blade reaches a threshold it cannot cross — armored targets, entrenched opponents, multiple close contacts. Designed for one-hand operation so the katana can remain in the other hand. Four rounds means four choices. Kyle reportedly fires it rarely and considers each shot a failure of planning.",
   "cultural_context": "The shotgun occupies an interesting philosophical position in Kyle's loadout: the katana is his identity, his discipline, the thing he chose. The shotgun is an admission. That there are situations the blade cannot solve, that sometimes the elegant answer isn't available, that the world doesn't arrange itself around the weapon you prefer. That Kyle carries it at all — a concession his character doesn't make easily — says something about how seriously he has learned to take being alive.",
   "known_users": [
     "Kyle Ellen Corbin-Vasik"
@@ -41,27 +41,29 @@
     "sidearm",
     "commissioned",
     "chorus",
-    "silence_companion"
+    "birds_head_grip",
+    "commercial"
   ],
   "related_entities": [
     "Kyle Ellen Corbin-Vasik",
-    "Torii Security Group Katana TSK-1 'Silence'",
+    "'Silence' — Dae-jung Seo's Custom Katana",
     "Torii Security Group"
   ],
   "physical_description": {
-    "visual_profile": "Compact and undecorated. Matte black ceramic-composite chassis with folding stock collapsed flush against the receiver. The Torii red-line grip texture — the same pattern as the katana handle — runs along the pistol grip and forend. At first glance it reads as a high-end tactical tool with no unnecessary elements. The 'Chorus' marking is minimal: small, clean, milled directly into the receiver rather than engraved or applied.",
+    "visual_profile": "Compact and undecorated. Matte black ceramic-composite chassis with no stock — the bird’s-head grip curves sharply backward under the receiver, giving the weapon a silhouette closer to a large revolver than a shotgun. The Torii red-line grip texture runs along the bird’s-head curve and the abbreviated forend. At first glance it reads as a sidearm until you see the bore diameter. The Chorus marking is minimal: small, clean, milled into the receiver.",
     "dimensions": "480mm folded. 720mm extended. 360mm barrel.",
     "weight_description": "2.1kg unloaded. Designed to be carried. Heavy enough to feel real, light enough not to remind you it's there.",
     "primary_material": "Ceramic-composite chassis over steel action. Same material specification as the TSK-1 katana components.",
     "finish": "Matte black throughout. No reflective surfaces. Red accent line in grip texture — the only color.",
     "color_scheme": "Black with red accent. Minimal. Intentional.",
-    "grip_texture": "Torii's signature red-line crosshatch pattern — angular, aggressive, functional. Identical to the katana handle grip.",
+    "grip_texture": "Bird’s-head configuration — sharply recurved grip without stock. Hand sits below and behind the bore rather than behind it; recoil travels up the wrist rather than rotating the muzzle. Torii red-line crosshatch texture on the full grip surface.",
     "distinctive_features": [
-      "Red-line grip texture matching TSK-1 'Silence' katana",
-      "'Chorus' milled into receiver in small clean lettering",
-      "Folding stock designed for coat-carry at 480mm",
-      "Action modified for reliable one-hand cycling",
-      "Chamber and feed ramp treated for blood-slicked operation"
+      "Bird’s-head grip — no stock, sharply recurved, sidearm-profile silhouette",
+      "Red-line Torii crosshatch texture on bird’s-head grip and forend",
+      "Chorus milled into receiver in small clean lettering",
+      "480mm total length — conceals under a standard coat",
+      "Chamber and feed ramp treated for adverse conditions including blood-slick",
+      "Action cycling tuned for reliable one-hand operation"
     ],
     "manufacturer_markings": "Small TSG logo on receiver. 'TSS-3' designation. 'Chorus' milled into left side of receiver.",
     "condition_typical": "Well-maintained. Shows careful use — clean action, no cosmetic wear from casual handling. Kyle treats it like a tool he respects but doesn't enjoy."

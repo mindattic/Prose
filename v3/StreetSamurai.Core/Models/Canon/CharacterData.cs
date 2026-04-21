@@ -75,6 +75,37 @@ public class CharacterData : ICanonEntity
     [JsonPropertyName("genetic_ancestry")] public Dictionary<string, double> GeneticAncestry { get; set; } = new();
     /// <summary>Three-tier ancestry detail: region → sub-region → nationality with percentages.</summary>
     [JsonPropertyName("ancestry_detail")] public Dictionary<string, Dictionary<string, Dictionary<string, double>>> AncestryDetail { get; set; } = new();
+    /// <summary>Active and passive BCI abilities powered by the bio-battery system.</summary>
+    [JsonPropertyName("neural_abilities")] public List<NeuralAbilityDefinition> NeuralAbilities { get; set; } = [];
+    /// <summary>Bio-battery system parameters — caloric conversion, depletion thresholds, recovery rules.</summary>
+    [JsonPropertyName("bio_battery")] public BioBatteryDefinition? BioBattery { get; set; }
+}
+
+/// <summary>
+/// A BCI ability powered by the bio-battery. Passive abilities run continuously at low cost.
+/// Active abilities are triggered and cost a fixed percentage per use.
+/// </summary>
+public class NeuralAbilityDefinition
+{
+    [JsonPropertyName("name")] public string Name { get; set; } = "";
+    [JsonPropertyName("cost_percent")] public int CostPercent { get; set; }
+    [JsonPropertyName("description")] public string Description { get; set; } = "";
+    [JsonPropertyName("overdrawn_risk")] public string OverdrawnRisk { get; set; } = "";
+    /// <summary>True = runs automatically when battery allows. False = deliberately triggered.</summary>
+    [JsonPropertyName("passive")] public bool Passive { get; set; }
+}
+
+/// <summary>
+/// Bio-battery system parameters. The battery converts calories to electrical energy.
+/// What was eaten before a fight sets the ceiling — there is no refueling mid-combat.
+/// </summary>
+public class BioBatteryDefinition
+{
+    /// <summary>How food choices translate to starting charge percentage.</summary>
+    [JsonPropertyName("max_capacity_description")] public string MaxCapacityDescription { get; set; } = "";
+    /// <summary>Percent threshold → consequence description. Keys: "60", "40", "20", "10", "0".</summary>
+    [JsonPropertyName("depletion_thresholds")] public Dictionary<string, string> DepletionThresholds { get; set; } = new();
+    [JsonPropertyName("recovery")] public string Recovery { get; set; } = "";
 }
 
 /// <summary>

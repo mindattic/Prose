@@ -1,0 +1,33 @@
+{
+  "id": "tsukaito_cord_silence",
+  "name": "Tsukaito Wrap Cord — Silence",
+  "type": "equipment",
+  "subcategory": "blade_fitting",
+  "aliases": [
+    "tsukaito",
+    "handle wrap",
+    "cord",
+    "tsuka wrap"
+  ],
+  "description": "The binding cord wrapped around the tsuka (handle) of Silence in the traditional tsukaito pattern — a diagonal crosshatch that provides grip texture and secures the underlying handle structure. On Silence, the tsukaito wraps the graphene ultracapacitor module housing rather than a traditional wooden core, and carries a secondary function: the cord is woven loosely enough that the electroluminescence of the charged bank is faintly visible through the weave in low light.\n\nThe cord is a high-tenacity polymer braid — not silk or cotton as in traditional construction, but a material that resists sweat, blood, and repeated high-grip use without stretching or fraying. It is midnight black with no contrast marking. Traditional tsukaito uses decorative diamonds formed by the crossing pattern; on Silence the pattern is functional and tight, prioritizing grip surface area over aesthetics.\n\nKyle rewraps the tsukaito approximately once per year or when the cord shows fraying at high-contact points. He does this himself. It takes about forty minutes and a specific tension he has had to learn through failure — too tight and the wrap damps the luminescence below useful visibility; too loose and it slips under hard grip pressure.",
+  "specifications": "Material: high-tenacity polymer braid\nColor: midnight black\nLength per application: approximately 6 meters (standard katana tsuka)\nPattern: traditional tsukaito diamond crosshatch\nFunction: grip surface + luminescence diffuser for supercapacitor charge indicator",
+  "cost": {
+    "part_only": "Φ 120 per spool (sufficient for 2–3 applications)",
+    "installation_labor": "Self-applied. First application without prior experience: 2–3 hours. Kyle applies in approximately 40 minutes.",
+    "total_installed": "Φ 120 (self-applied)",
+    "availability": "Traditional swordsmithing supply channels. Available from specialist suppliers in GLMZ's artisan districts without licensing requirements.",
+    "notes": "Consumable. Replace annually under heavy use or when grip texture becomes visibly worn. Improper tension affects luminescence readability."
+  },
+  "tags": [
+    "equipment",
+    "blade-fitting",
+    "tsukaito",
+    "handle-wrap",
+    "consumable",
+    "silence-component"
+  ],
+  "related_entities": [
+    "'Silence' — Dae-jung Seo's Custom Katana",
+    "Graphene Ultracapacitor Tsuka Module"
+  ]
+}
