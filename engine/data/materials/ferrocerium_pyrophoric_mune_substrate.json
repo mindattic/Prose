@@ -1,0 +1,51 @@
+{
+  "id": "ferrocerium_pyrophoric_mune_substrate",
+  "name": "Ferrocerium-Titanium Pyrophoric Alloy (Blade Spine Substrate)",
+  "brand_name": "PyroSpine",
+  "product_name": "Ferrocerium-Titanium Pyrophoric Alloy — Mune-Grade Substrate",
+  "type": "substrate",
+  "aliases": [
+    "pyrophoric substrate",
+    "spark alloy",
+    "mune metal",
+    "firewire steel",
+    "flint metal"
+  ],
+  "category": "alloy",
+  "description": "A structural alloy engineered to undergo controlled pyrophoric oxidation on hard surface contact — generating high-temperature sparks (900–1400°C) through the same mechanism as a ferrocerium fire-starting rod, but formulated for structural integration into cutting-edge composite blade spines. Standard ferrocerium is 70% cerium mischmetal, 30% iron; this variant replaces a portion of the iron matrix with titanium and vanadium to improve tensile strength and oxidation control without eliminating the pyrophoric behavior. The result is a material that behaves as a structural metal under normal loading and handling, but produces dense shower sparks when dragged hard against steel, concrete, asphalt, rebar, or any surface with sufficient surface hardness to abrade the oxide skin.\n\nIn the context of the Torii TSK series blade spine construction, this alloy forms the intermediate substrate layer between the structural carbon-fiber reinforced polymer backing and the TENG (triboelectric nanogenerator) film coating on the mune. The pyrophoric behavior is not the primary energy-harvesting mechanism — the TENG film handles triboelectric charge generation — but serves three secondary functions: (1) it produces the distinctive visual and acoustic signature when the blade is dragged (the sparks are real and hot, and the sound is a bone-resonant screech that steel alone would not produce); (2) the ablative oxidation creates a continuously self-refreshing abrasive surface that prevents the TENG film from glazing over with use; (3) the localized heat spikes at contact points can ignite accelerant-class aerosols or propellants near the blade path, which is an unintended but documented side effect in environments where spray solvents, lubricants, or pressurized gas are present.\n\nThe alloy fatigues through use — each drag strips a microscopic layer of material as the pyrophoric particles oxidize and detach. A blade spine under heavy tactical use requires resurfacing or replacement every 200–400 drag-charge cycles, depending on surface hardness. This creates the expected maintenance rhythm for the TSK series.",
+  "properties": [
+    "pyrophoric_oxidation_on_abrasion",
+    "high_spark_temperature_900_to_1400C",
+    "structural_load_bearing",
+    "self_refreshing_abrasive_surface",
+    "ablative_fatigue_under_repeated_drag",
+    "acoustic_resonance_on_hard_contact",
+    "titanium_vanadium_matrix_for_tensile_strength"
+  ],
+  "developers": [
+    "Torii Security Group — Advanced Weapons Division (blade application)",
+    "Cascades Energy Systems (TENG film interface specification)"
+  ],
+  "known_applications": [
+    "Custom katana 'Silence' — mune substrate (Dae-jung Seo, one of a kind)",
+    "Industrial ignition surfaces",
+    "Pyrotechnic initiation systems",
+    "Emergency fire-starting tool inserts"
+  ],
+  "tags": [
+    "material",
+    "alloy",
+    "pyrophoric",
+    "ferrocerium",
+    "blade-spine",
+    "spark",
+    "torii"
+  ],
+  "cost": {
+    "part_only": "Φ 2,800",
+    "installation_labor": "Φ 2,000–3,200 (bladesmith only — substrate bonding to mune structure requires full disassembly)",
+    "total_installed": "Φ 4,800–6,000",
+    "availability": "Available from pyrophoric materials suppliers in the mining and demolition sectors — the substrate formulation is not weapon-specific and can be sourced without arms licensing. The difficult part is finding a bladesmith willing and capable of bonding it to a blade mune.",
+    "notes": "Ablative but long-lived under normal use. Heavy sustained drag on abrasive surfaces depletes faster. Monitor spark intensity and particle size for depletion indicators."
+  }
+}

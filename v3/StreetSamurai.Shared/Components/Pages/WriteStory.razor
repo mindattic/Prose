@@ -1204,8 +1204,11 @@
 
     // ── Formatting ──
 
-    private async Task FormatBlock(string tag) =>
-        await JS.InvokeVoidAsync("writeInterop.richEditor.formatBlock", "story-surface", tag);
+    private async Task FormatBlock(string tag)
+    {
+        try { await JS.InvokeVoidAsync("writeInterop.richEditor.formatBlock", "story-surface", tag); }
+        catch { }
+    }
 
     private async Task FormatInline(string command) =>
         await JS.InvokeVoidAsync("writeInterop.richEditor.formatInline", "story-surface", command);

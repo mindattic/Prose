@@ -30,6 +30,14 @@ public record CombatSceneRequest
 
     /// <summary>Optional: specific opening move or inciting action ("the door blows in", "Kyle draws first").</summary>
     public string OpeningBeat { get; init; } = "";
+
+    /// <summary>
+    /// Starting consumable resources per canonical character name.
+    /// When populated, the writer tracks ammo, grenades, and neural charge across every beat
+    /// and enforces hard limits (no firing empty weapons, no abilities past flatline threshold).
+    /// Leave empty to disable resource tracking for this scene.
+    /// </summary>
+    public Dictionary<string, CombatantResources> InitialResources { get; init; } = [];
 }
 
 /// <summary>
@@ -86,6 +94,9 @@ public record GeneratedCombatScene
     public List<CombatBeat> Beats { get; init; } = [];
     public DateTime Generated { get; init; } = DateTime.UtcNow;
     public string FullText => string.Join("\n\n", Beats.Select(b => b.Text));
+    /// <summary>Resource state after all beats. Populated only when InitialResources were provided.</summary>
+    public Dictionary<string, CombatantResources> FinalResources =>
+        Beats.Count > 0 ? Beats[^1].ResourceSnapshot : [];
 }
 
 /// <summary>
@@ -102,6 +113,34 @@ public record CombatBeat
     public string ActingSide { get; init; } = "";
     /// <summary>Accumulated wound/damage state after this beat — informs the next beat's constraints.</summary>
     public string DamageState { get; init; } = "";
+    /// <summary>Resource state snapshot at the end of this beat — ammo counts, grenade inventory, neural charge.</summary>
+    public Dictionary<string, CombatantResources> ResourceSnapshot { get; init; } = [];
+}
+
+/// <summary>
+/// Consumable resources for one combatant entering or mid-fight.
+/// Ammo is tracked per weapon name. Bio-battery is a 0–100 percentage; the ceiling is set
+/// by what the character ate before the fight — caloric conversion, not plugging into a wall.
+/// </summary>
+public record CombatantResources
+{
+    /// <summary>Rounds remaining keyed by weapon name, e.g. "Chorus" → 4, "XB-7 Silence" → 6.</summary>
+    public Dictionary<string, int> AmmoByWeapon { get; init; } = [];
+    public List<GrenadeStock> Grenades { get; init; } = [];
+    /// <summary>Bio-battery charge 0–100. Caloric conversion determines the starting ceiling.</summary>
+    public int BioBatteryPercent { get; init; } = 100;
+    /// <summary>Pre-fight nutrition context — sets the hard ceiling. "full meal 2h ago", "skipped breakfast", etc.</summary>
+    public string MealContext { get; init; } = "";
+}
+
+/// <summary>
+/// One type of grenade in the current inventory. Count depletes permanently on use.
+/// </summary>
+public record GrenadeStock
+{
+    public string Type { get; init; } = "";
+    public string Effect { get; init; } = "";
+    public int Count { get; init; }
 }
 
 /// <summary>Streaming progress event raised as combat beats are generated.</summary>

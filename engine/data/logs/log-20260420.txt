@@ -55610,3 +55610,52 @@ System.Net.Http.HttpRequestException: Response status code does not indicate suc
 2026-04-20 10:26:21AM [WRN] Xref disambiguation conflict: "LULLABY" claimed by synthetic/019d6143aa0b7c6c9fc15e993621cd5c and contract/019d6143a7a27444b466bffaed500678
 2026-04-20 10:26:21AM [WRN] Xref disambiguation conflict: "TOOTH FAIRY" claimed by synthetic/019d6143aa2b7fdd9bd7b2b784cd69be and contract/019d6143a7a3703cb376aaa175a3cbbc
 2026-04-20 10:26:21AM [WRN] Xref disambiguation conflict: "MIRROR MIRROR" claimed by synthetic/019d6143aa0e7a6eb7959983618cc2e1 and contract/019d6143a7a37a619fcef93b0e85fe14
+2026-04-20 06:27:42PM [INF] StreetSamurai Blazor host started
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "Specter" claimed by character/019d6143a6dd7de69343150d0a09b4b4 and synthetic/019d6143aa23797c900950c9065ac2fd
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "Candlewick" claimed by synthetic/019d6143a9f0719faba064f28f266bc4 and place/2ddabc621f93524f53b3e0d84489486e
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "Kindling" claimed by synthetic/019d6143aa0875dfa44b833f8496ce67 and place/65be16c3138b5d3c3c991e65d84143c4
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "Ridgeline" claimed by synthetic/019d6143aa1b7864b657936050eeab74 and place/7b5d38c9c4faf84177f7156002cf6010
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "Switchback" claimed by synthetic/019d6143aa257268b2437229db4d062a and place/c5134e1495795dfe46568112c937ede7
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "Undertow" claimed by synthetic/019d7606a0097c2cab6b9dcca96b691d and place/d15fda1fdf2c43e3d8d96ba4f06e86e8
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "The Filament" claimed by place/aeaceaa878a79342301d3b4cbd78a9dc and faction/019d6143a89070a19c9bb784793f481b
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "The Undertow" claimed by place/019d6143a9527863ad656674299d38ba and faction/c7be3b067eabab1cc7565d18e7077434
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "The Threshold" claimed by place/ac9746806c13a9130830bfc66b451fc4 and faction/781e4c1cef4357cbf1a32338d46bb79a
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "The Quiet Room" claimed by place/951e752307ac519e2ef0cfd84d098473 and faction/c826026a3df42ef40baef989edea0f57
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "Cradle" claimed by synthetic/019d6143a9f67a8891b624f496cbd2b6 and vocabulary/019d6143aa9974709e3360c85cf9b8e9
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "Crucible" claimed by synthetic/019d6143a9f778c49b90326952fc0b4f and vocabulary/019d6143aa9a7ecb9eebfa0311a4f25b
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "Drift" claimed by place/40765db54d6b29bd1c455677422142f4 and vocabulary/019d6143aaa17cec8b36549dcfb312fe
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "Glitch" claimed by synthetic/019d6143aa027526a8c1d5f5e7e521e3 and vocabulary/019d6143aab175c4b07116ae01f47bc1
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "Lighthouse" claimed by synthetic/019d6143aa0972fa8f85fab2cda4fb46 and vocabulary/019d6143aac37b1793ca48c82f6df4d3
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "Skinwalker" claimed by synthetic/019d6143aa2173f9bee411e15c371c19 and vocabulary/019d6143aaf272ec8ceb9183572d8c90
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "Static" claimed by synthetic/019d6143aa24761d9e15aef3ecccd8fd and vocabulary/019d6143aaf971f8a65a9bcdb4fb3aa3
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "The Canopy" claimed by place/019d6143a9377fcab7213894f2fbd0ff and vocabulary/019d6143ab00700a973c31eed8cd952c
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "The Burnline" claimed by place/019d6143a93677dfa1bb4ee09eb5c704 and vocabulary/019d6143ab007031b8238ca9b9121d88
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "The Lattice" claimed by place/019d6143a9447e348c7f880d03dfd5af and vocabulary/019d6143ab01721db127bf13922d061c
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "The Collective" claimed by faction/019d6143a88e7b299200216573c49fa4 and vocabulary/019d6143ab017a4aa8d1bca3b5d3832b
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "The Gatemouth" claimed by place/019d6143a93f747b9a2533e1baa35ffb and vocabulary/019d6143ab017dc4a00253b45ecb4d00
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "The Perch" claimed by place/019d6143a94b701eb1e64ae9724efd96 and vocabulary/019d6143ab027198a7120822958d19a6
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "The Narrows" claimed by place/019d6143a9487b0e9b1563f753f313c9 and vocabulary/019d6143ab0277cb9390a780a026daa7
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "The Undertow" claimed by place/019d6143a9527863ad656674299d38ba and vocabulary/019d6143ab037766bd9d060793fcad57
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "Threshold" claimed by place/019d6143a95572ac9d2d78751976f2cb and vocabulary/019d6143ab0377d186ca0d0e421eca9f
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "Toll Collector" claimed by synthetic/019d6143aa2b7b909a450c23770e34a2 and vocabulary/019d6143ab077851b53012b3ec56134e
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "Voltage" claimed by place/3025eaa54f79e18c5c9ec8af7df4c26d and vocabulary/019d6143ab0c7c8bb03691c5aa3200dc
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "Lumen" claimed by synthetic/019d6143a64d703ea5beff0c37fea8a9 and cyberware/51e6a09c3d78bf142c90e847d2f3a160
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "Clean Hands" claimed by vocabulary/019d6143aa8f73c3a40609bd58e8f48c and entertainment/019d6513b76e734f9702c716a9412f2e
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "The Seam" claimed by place/b43a4971e5b2f34a785112ce21de7392 and entertainment/2e9f5c1d8a4b037f6e2c9d5a1b8f4e70
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "Witness" claimed by synthetic/40eea323f1d6a4bf3c62bfc26c771c55 and entertainment/3d9f5a2c8e1b047f6d3a9c5e2f8b1d04
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "CLEAN SIGNAL" claimed by vocabulary/019d6143aa907bab9e99854269c22c4d and entertainment/5f2a8e0c1b7d34a9e5c0f6823d9b1e47
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "Stratum" claimed by cyberware/b84e1f62a3075dc9e4b2f0817a6d3c59 and entertainment/c5d2a8f01e7b3946ad5c2e8f1b0d7c39
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "Obsidian" claimed by place/4c82950b6d63c6a60c2bae3ecd9e9d6c and material/0db4cbbf483ecaa42037198a1c48cbac
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "Foxfire" claimed by synthetic/019d6143a9ff73fca89f0399919059db and pharmaceutical/019d7850c6ad7f2fbff6595c23b3df3b
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "LULLABY" claimed by synthetic/019d6143aa0b7c6c9fc15e993621cd5c and contract/019d6143a7a27444b466bffaed500678
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "TOOTH FAIRY" claimed by synthetic/019d6143aa2b7fdd9bd7b2b784cd69be and contract/019d6143a7a3703cb376aaa175a3cbbc
+2026-04-20 06:28:04PM [DBG] Xref cross-type overlap: "MIRROR MIRROR" claimed by synthetic/019d6143aa0e7a6eb7959983618cc2e1 and contract/019d6143a7a37a619fcef93b0e85fe14
+2026-04-20 07:15:46PM [INF] StreetSamurai Blazor host started
+2026-04-20 07:17:33PM [DBG] Saving story project 019dad5fdb77766b9d548fb43a11be18 to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\019dad5fdb77766b9d548fb43a11be18\story.json
+2026-04-20 07:17:33PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-20 07:17:33PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=4096, temp=0.2, systemLen=1860, userLen=24826
+2026-04-20 07:18:35PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=14674
+2026-04-20 07:18:35PM [DBG] Entity extraction skipped — LLM returned truncated JSON (expected during regeneration)
+2026-04-20 07:19:21PM [DBG] Saving story project 019dad5fdb77766b9d548fb43a11be18 to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\019dad5fdb77766b9d548fb43a11be18\story.json
+2026-04-20 07:20:37PM [INF] StreetSamurai Blazor host started
+2026-04-20 07:21:05PM [DBG] Saving story project 019dad5fdb77766b9d548fb43a11be18 to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\019dad5fdb77766b9d548fb43a11be18\story.json

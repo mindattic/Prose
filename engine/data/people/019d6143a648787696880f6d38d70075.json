@@ -232,6 +232,26 @@
   },
   "cyberware_inventory": [
     {
+      "name": "Modified Cardiac Regulator",
+      "body_location": "thoracic — bonded to myocardium, primary interface port at left lateral throat",
+      "manufacturer": "Torii Security Group Medical Division (base unit) — firmware modified by Dae-jung Seo, maintained by Kyle",
+      "tier": "Tier 4 base, Tier 5 custom firmware",
+      "condition": "functional — firmware is non-standard, unsupported by any manufacturer",
+      "installed_date": "2196 (age 17, elective — Seo's requirement before weapons training began)",
+      "description": "Standard cardiac regulators pace and monitor heart rhythm, intervening during arrhythmia or arrest. Kyle's unit runs custom firmware written by Seo and maintained by Kyle himself — no manufacturer update has ever been applied. Standard restart behavior: cardiac event detected, restart sequence initiates within 8–12 seconds. Kyle's firmware: on detection of flatline, a 240-second countdown begins before restart sequence executes. This is not a bug. This is the False Death Protocol. The regulator also exposes a documented interface point at the left lateral throat — the same point used for firmware maintenance. Any edge contact with sufficient charge (including Silence's passive disruption mode) to this interface will crash the firmware into a safe-mode flatline state that triggers the 240-second timer. Kyle can initiate this himself, deliberately, or an opponent can initiate it by finding the interface. The device is also targetable by Silence's active discharge for reboot — clearing the crash and restarting the heart immediately. This creates the full bidirectional capability: the blade can stop the heart by crashing the regulator, and restart it by rebooting the firmware.",
+      "replaces": "organic cardiac regulation"
+    },
+    {
+      "name": "Cerebral Oxygenation Assist",
+      "body_location": "carotid sheath — bilateral, passive",
+      "manufacturer": "unknown — facility-installed",
+      "tier": "military prototype",
+      "condition": "functional",
+      "installed_date": "2194 (age 15, non-consensual — NeoCortex program)",
+      "description": "A passive hydraulic assist device threaded into the carotid artery sheath, bilaterally. On detection of cardiac arrest or cessation of normal perfusion pressure, the device activates an independent mechanical pump that maintains minimal but sufficient cerebral blood flow to prevent hypoxic injury. Operates on a self-contained electrochemical cell with approximately 8 minutes of reserve. The NeoCortex program installed this as a safeguard against test subjects dying from cardiac complications during high-load trials — it was not altruistic. Kyle did not know he had it until Seo found the interface points during a post-training medical check. The device is what makes the False Death Protocol survivable: without it, 240 seconds of cardiac arrest would produce permanent brain damage. With it, he wakes up with a headache.",
+      "replaces": "nothing — supplementary to cardiac system"
+    },
+    {
       "name": "NeoCortex Program Atlas Array",
       "body_location": "cranial — full brain surface",
       "manufacturer": "NeoCortex Division (classified)",
@@ -263,7 +283,7 @@
     }
   ],
   "belongings": {
-    "primary_weapon": "Torii Security Group Katana TSK-1 'Silence'",
+    "primary_weapon": "'Silence' — Dae-jung Seo's Custom Katana",
     "secondary_weapon": "Torii Security Group Compact Combat Shotgun TSS-3 'Chorus'",
     "armor": "",
     "vehicle": "",
@@ -273,7 +293,15 @@
     "favorite_food": "",
     "stimulant": "",
     "comm_device": "",
-    "signature_gear": [],
+    "signature_gear": [
+      {
+        "name": "Corundum Draw Strop",
+        "worn_location": "inner left forearm — worn over the skin, secured by narrow titanium-wire braid straps",
+        "material": "Aluminum oxide (corundum, Al₂O₃) ceramic face plate, Mohs 9, microporous surface texture. Backed by a thin carbon-fiber composite shell. Secured with two titanium-wire braid loops — not buckled, not velcro, not breakaway. Stays on.",
+        "origin": "Custom — made by Seo, passed to Kyle with the blade. No commercial equivalent. No one makes these.",
+        "description": "A slim bracer worn on the inner left forearm, contact face inward. The corundum surface is triboelectrically positive and hard enough (Mohs 9) to abrade Silence's ferrocerium-titanium mune substrate on every draw stroke. The contact generates sparks and triboelectric charge simultaneously — the PTFE TENG film on the blade's mune is strongly triboelectrically negative, maximizing charge separation. Three to four deliberate passes before an engagement provides meaningful precharge; a single fast-draw pass still registers on the hamon. The device is entirely passive — no electronics, no power draw, no maintenance beyond keeping the ceramic face free of debris. To anyone watching, the gesture reads as a corrupted chiburi — the classical post-cut blade-cleaning motion — performed in reverse. Seo designed it that way."
+      }
+    ],
     "pharmaceuticals": [],
     "other": {}
   },
@@ -367,6 +395,54 @@
   },
   "image_prompt": "Neo-noir male, 27, lean athletic build, olive-tan skin, dark brown hair short on sides longer on top pushed back, grey-green eyes with faint gold ring in left iris, faint surgical scar behind left ear, micro-scarring on forearms, worn dark leather jacket over tactical underlayer, cargo pants, resoled combat boots, carbon-black katana across back in matte friction sheath, standing in rain-slicked neon-lit alley, clinical stillness, hands loose at sides, eyes scanning corners, photorealistic, cinematic lighting, GLMZ 2200 aesthetic, no visible cybernetics, gritty urban environment, atmospheric fog, high detail --ar 2:3 --v 6",
   "dalle3_prompt": "neo-noir cyberpunk enforcer, male 27, lean muscular build, olive-tan skin, rough and imperfect face, asymmetrical features, slightly crooked nose, uneven jawline, subtle under-eye fatigue, small facial scars on cheek and bridge of nose, faint stubble, tired but dangerous eyes, grey-green with faint gold ring in left iris\n\nhair: short dark brown, uneven, spiked but messy and clumped from rain, not styled, irregular hairline\n\nexpression: cold, focused, emotionally restrained, slightly hardened, not heroic, not attractive, grounded realism\n\noutfit: dark leather jacket with tactical padding and attachments, worn but maintained, partially open over fitted dark shirt, utility belt with holster, reinforced gloves, holding pistol low in right hand, carbon-black katana strapped across back\n\nwalking forward through narrow neon-lit alley, rain falling, droplets streaking through frame, subtle motion blur, shallow depth of field\n\nenvironment: dense cyberpunk alley, high-end district, teal and cyan dominant lighting with magenta accents, glowing signage and advertisements, clean but wet surfaces, reflective pavement, light fog, blurred background figures\n\nlighting: cinematic neon rim lighting, face partially shadowed but readable, sharp highlights, strong color contrast, volumetric light through rain, reflections across ground\n\nmood: controlled, dangerous, professional, corporate dystopia, sleek but hostile, capitalism-saturated environment\n\nstyle: photorealistic but grounded, NOT idealized, NOT symmetrical, NOT model-like, avoid beauty standards\n\ncamera: 50mm lens, eye-level, natural perspective, slight imperfections in skin texture, visible pores",
+  "neural_abilities": [
+    {
+      "name": "Ballistic Precognition",
+      "cost_percent": 4,
+      "description": "The NeoCortex array reads micro-tremors in an opponent's musculature, weapon barrel micro-alignment, trigger finger tension, and atmospheric pressure displacement in the milliseconds before a round fires. Kyle does not dodge bullets — he vacates the space the bullet will occupy before the trigger pulls. This is not reaction speed. It is prediction. The read happens at a level below conscious thought; his body is already moving when the decision to fire forms in the shooter's mind. Under focus he can track multiple shooters simultaneously. The ability is passive when the array is running at normal load.",
+      "overdrawn_risk": "Below 20% bio-battery, trajectory reads arrive late or not at all. A missed read at that charge level is potentially fatal — he moves into the bullet instead of out of its path.",
+      "passive": true
+    },
+    {
+      "name": "Neural Overdrive",
+      "cost_percent": 25,
+      "description": "Pushes the array past its rated ceiling. For approximately four seconds, Kyle operates at three times normal human reaction speed relative to his perceived environment. The world slows. He does not. Cost is severe and non-negotiable: 25% bio-battery per activation. The hardware was never calibrated for repeated overdrive use — the third activation in any 24-hour window risks micro-seizure. He knows this. He uses it anyway when there is no other option.",
+      "overdrawn_risk": "Micro-seizure. Temporary loss of fine motor control, visual artifacts, 3-5 second recovery window during which he is completely vulnerable. The hardware does not recover quickly.",
+      "passive": false
+    },
+    {
+      "name": "Augmentation Signature Read",
+      "cost_percent": 5,
+      "description": "The array identifies and maps an opponent's cyberware by the electromagnetic signature it produces — motor buses, neural bridges, optic relays, cardiac regulators. Kyle knows which arm is chrome, where the BCI interface sits, and what the implant manufacturer's documented failure mode looks like. This makes Silence exponentially more dangerous: he knows exactly where to cut to short the system. A single precise contact to the right interface point ends the fight.",
+      "overdrawn_risk": "At very low bio-battery, the read becomes noisy — false positives, missed signatures, incorrect body-location mapping. Acting on a false read against a fully-fleshed opponent changes everything about the engagement.",
+      "passive": false
+    },
+    {
+      "name": "Sensory Amplification",
+      "cost_percent": 3,
+      "description": "Boosts the array's sensory intake beyond passive baseline — heartbeat tracking through walls, thermal differential reading across a room, directional hearing precise enough to identify which floor someone is on by their footfall pattern. Ongoing cost while active. Sustained amplification while simultaneously running other abilities compounds depletion rapidly.",
+      "overdrawn_risk": "Sensory overload if sustained past 15% bio-battery — all sensory channels spike simultaneously. Effectively blind and deaf for 2-3 seconds.",
+      "passive": false
+    },
+    {
+      "name": "False Death Protocol",
+      "cost_percent": 0,
+      "description": "A specific NeoCortex signal sequence sends a controlled crash command to the modified cardiac regulator firmware — heart stops, regulator enters safe-mode flatline, 240-second restart timer begins. The Cerebral Oxygenation Assist activates automatically, maintaining minimal brain perfusion for the duration. Kyle presents as clinically dead: no pulse, no cardiac output, falling body temperature. Standard vital-sign scanners at checkpoints, perimeter sensors, and most medical-grade detectors read confirmed death. After 240 seconds, the regulator executes its restart sequence and the heart resumes. Kyle wakes up. The protocol can also be externally triggered — the cardiac regulator interface point at the left lateral throat is accessible to Silence's passive disruption mode. An opponent who knows the interface location can crash the regulator. Kyle has never confirmed whether anyone else knows this is possible.",
+      "overdrawn_risk": "The Cerebral Oxygenation Assist has approximately 8 minutes of reserve. At 240 seconds Kyle is safe. If the restart fails — firmware corruption, hardware fault, interrupted restart sequence — the assist runs out at 480 seconds and brain damage begins. Kyle has tested this once. He did not enjoy the experience.",
+      "passive": false
+    }
+  ],
+  "bio_battery": {
+    "max_capacity_description": "The NeoCortex array draws power via caloric conversion — the body metabolizes food and a fraction of the energy is shunted to the battery. Starting charge is determined by what was eaten and when: high-protein/high-fat meal 2-3 hours before action = 100% capacity. Light meal or protein bar = 70-80%. Processed food, fast food = 60-70%. Skipped meal = 50-60%. Alcohol reduces max by 15% regardless of food intake. The battery cannot be topped off mid-combat — there is no refueling while fighting.",
+    "depletion_thresholds": {
+      "0": "FLATLINE RISK. The reserve systems the battery is drawing from are the systems that regulate heartbeat and breathing. Continued neural activation risks cardiac event. Kyle knows what this threshold feels like. He has been here before. He does not recommend it.",
+      "10": "CRITICAL. Precognition offline. All active abilities suspended. Visual static. The hardware is drawing from reserve systems. Minor tremor in fine motor control.",
+      "20": "WARNING. Precognition reads are unreliable — occasionally arrives late, occasionally misses. Neural Overdrive is forbidden at this threshold; activation risks micro-seizure. Minor visual artifacts begin.",
+      "40": "Precognition response latency increases by approximately 50ms — still effective, slightly delayed. All abilities available but cost compounds faster.",
+      "60": "Full capability. Ballistic precognition is crisp and reliable. All abilities available."
+    },
+    "recovery": "Cannot recover mid-combat — the body cannot metabolize food fast enough to matter during a fight. Post-combat: glucose and caloric intake begins recovery at approximately 5% per 15 minutes at rest. Full recovery from 0% requires 3-4 hours and a full meal."
+  },
   "genetic_ancestry": {
     "East Asian": 43.6,
     "Northern European": 39.9,
