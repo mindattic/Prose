@@ -735,7 +735,31 @@ a.entity-tag-link:hover { background: #30363d; color: #e6edf3; border-color: #58
     letter-spacing: 0.05em;
 }
 
+/* ── Markdown textarea editor ───────────────────────── */
+.md-editor {
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    tab-size: 2;
+    caret-color: #dc3545;
+}
+.md-editor:focus { box-shadow: none !important; outline: none; }
+
 /* ── Rich editor surface ─────────────────────────────── */
+.rich-editor blockquote {
+    border-left: 3px solid #6c757d;
+    margin: 0.5em 0;
+    padding: 0.4em 0 0.4em 1em;
+    color: #adb5bd;
+    font-style: italic;
+}
+.story-preview-print blockquote {
+    border-left: 3px solid #6c757d;
+    margin: 0.5em 0;
+    padding: 0.4em 0 0.4em 1em;
+    color: #4a5568;
+    font-style: italic;
+}
+.story-preview-print blockquote > p { margin-bottom: 0; }
 .rich-editor {
     font-family: Georgia, serif;
     font-size: 16px;

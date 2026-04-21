@@ -23,7 +23,7 @@ public class BeatGeneratorService
         CancellationToken ct = default)
     {
         var supportingVoices = string.Join("\n", supportingFacets.Select(f =>
-            $"- {f.Label}: {f.VoiceTone}. May surface as italicized inner thoughts — the character arguing with themselves."));
+            $"- {f.VoiceTone}. May surface as italicized inner thoughts."));
 
         var coreMemories = string.Join("\n", leadFacet.CoreMemories.Select(m => $"  - {m}"));
 

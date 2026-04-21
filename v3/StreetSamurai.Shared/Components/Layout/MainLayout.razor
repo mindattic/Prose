@@ -98,11 +98,16 @@
     private async ValueTask OnLocationChanging(LocationChangingContext ctx)
     {
         navPending = true;
-        if (Random.Shared.NextDouble() < 0.10)
+        var isWritePage = ctx.TargetLocation.Contains("/stories/write/", StringComparison.OrdinalIgnoreCase)
+                       || Nav.Uri.Contains("/stories/write/", StringComparison.OrdinalIgnoreCase);
+        if (!isWritePage)
         {
-            try { await JS.InvokeVoidAsync("__tvStaticShow"); } catch { }
+            if (Random.Shared.NextDouble() < 0.10)
+            {
+                try { await JS.InvokeVoidAsync("__tvStaticShow"); } catch { }
+            }
+            try { await JS.InvokeVoidAsync("__loaderShow", 0); } catch { }
         }
-        try { await JS.InvokeVoidAsync("__loaderShow", 0); } catch { }
     }
 
     private void OnLocationChanged(object? sender, Microsoft.AspNetCore.Components.Routing.LocationChangedEventArgs e)

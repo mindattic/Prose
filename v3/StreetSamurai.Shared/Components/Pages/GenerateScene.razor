@@ -261,7 +261,7 @@ else if (generatedScene != null)
             Html = $"<p>{System.Net.WebUtility.HtmlEncode(generatedScene.FullText).Replace("\n\n", "</p><p>").Replace("\n", "<br>")}</p>",
         };
         Repo.SaveProject(project);
-        Nav.NavigateTo($"/write/{project.Id}");
+        Nav.NavigateTo($"/stories/write/{project.Id}");
     }
 
     private void Reset()

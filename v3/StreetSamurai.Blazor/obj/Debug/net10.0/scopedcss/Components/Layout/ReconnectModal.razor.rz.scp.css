@@ -41,9 +41,7 @@
 }
 
 #components-reconnect-modal[b-10ny18vs6i]::backdrop {
-    background-color: rgba(0, 0, 0, 0.4);
-    animation: components-reconnect-modal-fadeInOpacity-b-10ny18vs6i 0.5s ease-in-out;
-    opacity: 1;
+    display: none;
 }
 
 @keyframes components-reconnect-modal-slideUp-b-10ny18vs6i {

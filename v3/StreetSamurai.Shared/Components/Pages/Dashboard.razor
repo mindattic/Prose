@@ -65,7 +65,7 @@
                             {
                                 <div class="small">
                                     <span class="text-muted">Last story:</span>
-                                    <a href="write/@recent.Id" class="text-light fst-italic text-decoration-none ms-1">@recent.Title</a>
+                                    <a href="stories/write/@recent.Id" class="text-light fst-italic text-decoration-none ms-1">@recent.Title</a>
                                     <span class="badge bg-secondary ms-2" style="font-size:0.6rem;">@recent.Status</span>
                                 </div>
                             }
@@ -98,14 +98,14 @@
                         @foreach (var s in stories.Take(6))
                         {
                             <div class="d-flex justify-content-between border-bottom border-secondary py-1">
-                                <a href="write/@s.Id" class="text-light text-decoration-none small fst-italic">@s.Title</a>
+                                <a href="stories/write/@s.Id" class="text-light text-decoration-none small fst-italic">@s.Title</a>
                                 <span class="badge bg-secondary" style="font-size: 0.6rem;">@s.Status</span>
                             </div>
                         }
                     }
                     else
                     {
-                        <small class="text-muted">No stories yet. <a href="write" class="text-info">Write one.</a></small>
+                        <small class="text-muted">No stories yet. <a href="stories" class="text-info">Write one.</a></small>
                     }
                 </div>
             </div>
