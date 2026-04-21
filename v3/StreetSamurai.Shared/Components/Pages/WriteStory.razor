@@ -1,5 +1,4 @@
-@page "/write"
-@page "/write/{ProjectId}"
+@page "/stories/write/{ProjectId}"
 @attribute [Authorize(Roles = "Contributor,Administrator")]
 @using StreetSamurai.Core.Models
 @using StreetSamurai.Core.Interfaces
@@ -31,8 +30,7 @@
     <input type="text" class="form-control form-control-sm bg-dark text-danger border-secondary fw-bold flex-grow-1"
            style="font-family: Georgia, serif; font-size: 1rem; height: 32px;"
            placeholder="Untitled"
-           @bind="project.Title"
-           @bind:after="Save" />
+           @bind="project.Title" />
     <button class="btn btn-sm btn-danger text-nowrap" style="height: 32px;" @onclick="ForceSave">
         <i class="bi bi-floppy"></i><div class="btn-lbl"> Save</div>
     </button>
@@ -452,26 +450,22 @@
 }
 
 @* ── Formatting Toolbar ────────────────────────────────── *@
-@if (viewMode == "editor")
-{
 <div class="d-flex gap-1 mb-1 align-items-center" style="overflow-x: auto; white-space: nowrap; padding-top: 3px; padding-bottom: 3px;">
-    <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("h1")' title="Heading 1" style="font-weight: bold;"><div class="btn-lbl">H1</div></button>
-    <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("h2")' title="Heading 2" style="font-weight: bold;"><div class="btn-lbl">H2</div></button>
-    <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("h3")' title="Heading 3" style="font-weight: bold;"><div class="btn-lbl">H3</div></button>
-    <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("p")' title="Paragraph"><div class="btn-lbl">P</div></button>
+    <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("h1")' title="Heading 1 (# )"><div class="btn-lbl">H1</div></button>
+    <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("h2")' title="Heading 2 (## )"><div class="btn-lbl">H2</div></button>
+    <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("h3")' title="Heading 3 (### )"><div class="btn-lbl">H3</div></button>
+    <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("p")' title="Remove heading"><div class="btn-lbl">P</div></button>
     <span class="text-secondary mx-1">|</span>
-    <button class="btn btn-outline-secondary tb" @onclick='() => FormatInline("bold")' title="Bold"><i class="bi bi-type-bold"></i></button>
-    <button class="btn btn-outline-secondary tb" @onclick='() => FormatInline("italic")' title="Italic"><i class="bi bi-type-italic"></i></button>
-    <button class="btn btn-outline-secondary tb" @onclick='() => FormatInline("underline")' title="Underline"><i class="bi bi-type-underline"></i></button>
-    <button class="btn btn-outline-secondary tb" @onclick='() => FormatInline("strikethrough")' title="Strikethrough"><i class="bi bi-type-strikethrough"></i></button>
+    <button class="btn btn-outline-secondary tb" @onclick='() => FormatInline("bold")' title="Bold (**text**)"><i class="bi bi-type-bold"></i></button>
+    <button class="btn btn-outline-secondary tb" @onclick='() => FormatInline("italic")' title="Italic (*text*)"><i class="bi bi-type-italic"></i></button>
+    <button class="btn btn-outline-secondary tb" @onclick='() => FormatInline("strikethrough")' title="Strikethrough (~~text~~)"><i class="bi bi-type-strikethrough"></i></button>
     <span class="text-secondary mx-1">|</span>
-    <button class="btn btn-outline-secondary tb" @onclick='() => FormatList("unordered")' title="Bullet list"><i class="bi bi-list-ul"></i></button>
-    <button class="btn btn-outline-secondary tb" @onclick='() => FormatList("ordered")' title="Numbered list"><i class="bi bi-list-ol"></i></button>
-    <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("blockquote")' title="Quote"><i class="bi bi-quote"></i></button>
-    <button class="btn btn-outline-secondary tb" @onclick="InsertHorizontalRule" title="Scene break"><i class="bi bi-dash-lg"></i></button>
-    <button class="btn btn-outline-secondary tb" @onclick="() => showImageInsert = !showImageInsert" title="Insert image"><i class="bi bi-image"></i></button>
+    <button class="btn btn-outline-secondary tb" @onclick='() => FormatList("unordered")' title="Bullet list (- )"><i class="bi bi-list-ul"></i></button>
+    <button class="btn btn-outline-secondary tb" @onclick='() => FormatList("ordered")' title="Numbered list (1. )"><i class="bi bi-list-ol"></i></button>
+    <button class="btn btn-outline-secondary tb" @onclick='() => FormatBlock("blockquote")' title="Blockquote (> )"><i class="bi bi-quote"></i></button>
+    <button class="btn btn-outline-secondary tb" @onclick="InsertHorizontalRule" title="Scene break (---)"><i class="bi bi-dash-lg"></i></button>
+    <button class="btn btn-outline-secondary tb" @onclick="() => showImageInsert = !showImageInsert" title="Insert image ![alt](url)"><i class="bi bi-image"></i></button>
     <span class="text-secondary mx-1">|</span>
-    @* Entity link toggle removed — use right-click > Ask instead *@
     <button class="btn @(showSceneSidebar ? "btn-outline-danger" : "btn-outline-secondary") tb" @onclick="() => showSceneSidebar = !showSceneSidebar" title="Scene sidebar"><i class="bi bi-diagram-3"></i></button>
     <div class="dropdown d-inline-block">
         <button class="btn btn-outline-secondary tb dropdown-toggle" type="button" data-bs-toggle="dropdown" title="Export">
@@ -487,16 +481,36 @@
         </ul>
     </div>
 </div>
-}
 
 <div class="row g-2">
     <div class="@(showSceneSidebar ? "col-md-8" : "col-12")">
-        @if (viewMode == "editor")
-        {
-            <div id="story-surface" class="form-control bg-dark text-light border-secondary rich-editor @(showLinks ? "" : "hide-links")"
-                 contenteditable="true" style="min-height: calc(100vh - 300px); overflow-y: scroll; overflow-x: hidden;"
-                 @onclick="() => { showContextMenu = false; showImageInsert = false; }"></div>
-        }
+
+        @* ── Split pane: editor left, preview right on desktop ── *@
+        <div class="row g-1 mb-1">
+
+            @* Editor pane: full width on mobile (hidden when preview mode), half on desktop always *@
+            <div class="col-12 col-md-6 @(viewMode == "preview" ? "d-none d-md-block" : "")">
+                <textarea id="story-surface" class="form-control bg-dark text-light border-secondary md-editor"
+                          style="height: calc(100vh - 345px); resize: none; overflow-y: auto; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 14px; line-height: 1.6;"
+                          spellcheck="true" autocorrect="off" autocapitalize="off"
+                          @bind="storyText"
+                          @bind:event="oninput"
+                          @bind:after="OnMarkdownChanged"
+                          @onmouseup="OnTextareaInteract"
+                          @onkeyup="OnTextareaInteract"></textarea>
+            </div>
+
+            @* Preview pane: hidden on mobile when editing, always shown on desktop *@
+            <div class="col-12 col-md-6 @(viewMode == "editor" ? "d-none d-md-block" : "")">
+                <div class="border border-secondary rounded" style="height: calc(100vh - 345px); overflow-y: auto;">
+                    <div id="md-preview" class="story-preview-print bg-white text-dark p-4" style="font-family: Georgia, serif; font-size: 16px; line-height: 2; max-width: 700px; margin: 0 auto;">
+                        <p style="color:#6c757d;text-align:center;padding:2rem;font-style:italic;">Preview</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
 
         @* ── Image Insert Panel ────────────────────────── *@
         @* ── Image Insert Modal ─────────────────────── *@
@@ -532,40 +546,6 @@
             </div>
         }
 
-        @* ── Right-click context menu ──────────────────── *@
-        @if (showContextMenu)
-        {
-            <div class="position-fixed bg-dark border border-secondary rounded shadow-lg py-1"
-                 style="z-index: 1070; top: @(ctxMenuTop)px; left: @(ctxMenuLeft)px; min-width: 160px;">
-                <button class="btn btn-sm btn-dark text-light d-block w-100 text-start px-3 py-1" @onclick="OpenSuggestAlternatives" disabled="@(!hasSelection)">
-                    <i class="bi bi-lightbulb text-warning me-2"></i><div class="btn-lbl">Suggest Alternatives</div>
-                </button>
-                <button class="btn btn-sm btn-dark text-light d-block w-100 text-start px-3 py-1" @onclick="ReadSelected" disabled="@(narrating || !hasSelection)">
-                    <i class="bi bi-volume-up text-info me-2"></i><div class="btn-lbl">Read Selected</div>
-                </button>
-                <button class="btn btn-sm btn-dark text-light d-block w-100 text-start px-3 py-1" @onclick="ReadAll" disabled="@narrating">
-                    <i class="bi bi-megaphone text-info me-2"></i><div class="btn-lbl">Read All</div>
-                </button>
-            </div>
-        }
-
-        @if (viewMode == "preview")
-        {
-            @if (string.IsNullOrWhiteSpace(printHtml))
-            {
-                <div class="text-muted d-flex align-items-center justify-content-center" style="min-height: 40vh;">
-                    Nothing to preview — write something first.
-                </div>
-            }
-            else
-            {
-                <div class="border border-secondary rounded" style="height: calc(100vh - 300px); overflow-y: auto;">
-                    <div class="story-preview-print bg-white text-dark p-4" style="font-family: Georgia, serif; font-size: 16px; line-height: 2; max-width: 700px; margin: 0 auto;">
-                        @((MarkupString)printHtml)
-                    </div>
-                </div>
-            }
-        }
 
         @* ── Audio Player ──────────────────────────── *@
         <AudioPlayer @ref="audioPlayer"
@@ -597,9 +577,9 @@
             <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[inhales deeply]")'><div class="btn-lbl">deep inhale</div></button>
         </div>
 
-        @* ── Bottom bar: view toggle left, Ask/Write right ── *@
+        @* ── Bottom bar: view toggle left (mobile only), Ask/Write right ── *@
         <div class="d-flex align-items-center mt-1">
-            <div class="btn-group">
+            <div class="btn-group d-flex d-md-none">
                 <button class="btn btn-sm @(viewMode == "editor" ? "btn-danger" : "btn-outline-secondary")" style="width: 100px;" @onclick='() => SwitchViewMode("editor")'><i class="bi bi-brush"></i><div class="btn-lbl"> Editor</div></button>
                 <button class="btn btn-sm @(viewMode == "preview" ? "btn-danger" : "btn-outline-secondary")" style="width: 100px;" @onclick='() => SwitchViewMode("preview")'><i class="bi bi-printer"></i><div class="btn-lbl"> Preview</div></button>
             </div>
@@ -825,11 +805,6 @@
     private string imageBase64 = "";
     private string imageAlt = "";
 
-    // ── Context menu ──
-    private bool showContextMenu;
-    private double ctxMenuTop;
-    private double ctxMenuLeft;
-
     // ── Entity extraction ──
     private bool extracting;
     private string? graphStatus;
@@ -868,12 +843,8 @@
     private List<CanonIssue> validationResults = [];
 
     // ── Editor ──
-    private bool showLinks;
-    private string viewMode = "editor"; // "editor" or "preview"
-    private string richHtml = "";
+    private string viewMode = "editor"; // "editor" or "preview" (mobile only; desktop shows both)
     private string printHtml = "";
-    private DotNetObjectReference<WriteStory>? editorRef;
-    private bool richEditorInitialized;
 
     // ── Scene sidebar ──
     private bool showSceneSidebar;
@@ -891,8 +862,6 @@
         List<(string id, string name)> locations,
         List<(string id, string name, string nodeType)> items);
 
-    // ── Auto-save ──
-    private System.Threading.Timer? saveTimer;
     private bool dirty;
     private bool hasExistingText => !string.IsNullOrWhiteSpace(storyText);
 
@@ -906,8 +875,7 @@
             var loaded = Repo.LoadProject(ProjectId);
             if (loaded != null) project = loaded;
         }
-        richHtml = project.Html;
-        storyText = project.PlainText;
+        storyText = project.Html;
         validationResults = LoadValidation();
         if (validationResults.Count > 0) showValidateModal = true;
         UpdateWordCount();
@@ -916,42 +884,39 @@
         if (string.IsNullOrEmpty(ProjectId))
         {
             Repo.SaveProject(project);
-            Nav.NavigateTo($"/write/{project.Id}", replace: true);
+            Nav.NavigateTo($"/stories/write/{project.Id}", replace: true);
         }
     }
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
-        if (firstRender || (!richEditorInitialized && viewMode == "editor"))
-            await InitRichEditor();
-    }
-
-    private async Task InitRichEditor()
-    {
-        if (viewMode != "editor") return;
-        editorRef?.Dispose();
-        editorRef = DotNetObjectReference.Create(this);
-        await JS.InvokeVoidAsync("writeInterop.richEditor.init", "story-surface", editorRef, richHtml);
-        richEditorInitialized = true;
-
-        var allNodes = Graph.AllNodes();
-        var entities = allNodes.Where(n => n.Name.Length >= 3)
-            .Select(n => new { name = n.Name, id = n.Id, nodeType = n.NodeType }).ToArray();
-        await JS.InvokeVoidAsync("writeInterop.richEditor.buildEntityIndex", (object)entities);
+        if (firstRender)
+            await JS.InvokeVoidAsync("writeInterop.initMdPreview", "story-surface", "md-preview");
     }
 
     // ── JS Callbacks ──
 
-    [JSInvokable]
-    public void OnRichContentChanged(string html, string plainText)
+    private void OnMarkdownChanged()
     {
-        richHtml = html;
-        storyText = plainText;
         dirty = true;
         saved = false;
         UpdateWordCount();
-        saveTimer?.Dispose();
-        saveTimer = new System.Threading.Timer(_ => { if (dirty) InvokeAsync(Save); }, null, 2000, Timeout.Infinite);
+    }
+
+    private async Task OnTextareaInteract()
+    {
+        try
+        {
+            var sel = await JS.InvokeAsync<SelectionInfo>("writeInterop.getSelection", "story-surface");
+            var text = sel?.Text ?? "";
+            if (text != currentSelection)
+            {
+                currentSelection = text;
+                hasSelection = !string.IsNullOrWhiteSpace(currentSelection);
+                StateHasChanged();
+            }
+        }
+        catch { }
     }
 
     [JSInvokable]
@@ -965,26 +930,6 @@
     [JSInvokable] public void OnNodeClicked(string nodeId) => OnEntityClicked(nodeId);
     [JSInvokable] public Task OnNodeExpand(string nodeId) { OnEntityClicked(nodeId); return Task.CompletedTask; }
     [JSInvokable] public void OnBackgroundClicked() { detailNode = null; StateHasChanged(); }
-
-    [JSInvokable]
-    public void OnEditorContextMenu(double top, double left)
-    {
-        ctxMenuTop = top;
-        ctxMenuLeft = left;
-        showContextMenu = true;
-        StateHasChanged();
-    }
-
-    [JSInvokable]
-    public async Task OnSelectionChanged(string selectedText)
-    {
-        currentSelection = selectedText;
-        var wordCount = string.IsNullOrWhiteSpace(selectedText) ? 0
-            : selectedText.Split([' ', '\n', '\r', '\t'], StringSplitOptions.RemoveEmptyEntries).Length;
-        var had = hasSelection;
-        hasSelection = wordCount >= 3;
-        if (had != hasSelection) await InvokeAsync(StateHasChanged);
-    }
 
     // ── Command Execution ──
 
@@ -1135,8 +1080,6 @@
         UpdateWordCount();
         dirty = true;
         saved = false;
-        saveTimer?.Dispose();
-        saveTimer = new System.Threading.Timer(_ => { if (dirty) InvokeAsync(Save); }, null, 2000, Timeout.Infinite);
     }
 
     private void UpdateWordCount() =>
@@ -1147,8 +1090,7 @@
 
     private void Save()
     {
-        // richHtml is kept in sync by OnRichContentChanged (JS callback on every edit)
-        project.Html = richHtml;
+        project.Html = storyText;
         project.Modified = DateTime.UtcNow;
         Repo.SaveProject(project);
         saved = true;
@@ -1157,14 +1099,14 @@
 
     private async Task ForceSave()
     {
-        // Pull latest HTML from the rich editor before saving
-        if (viewMode == "editor" && richEditorInitialized)
+        // Read directly from DOM to catch any content not yet flushed via oninput binding
+        try
         {
-            richHtml = await JS.InvokeAsync<string>("writeInterop.richEditor.getHtml", "story-surface");
-            storyText = await JS.InvokeAsync<string>("writeInterop.richEditor.getPlainText", "story-surface");
+            var domText = await JS.InvokeAsync<string>("writeInterop.getText", "story-surface");
+            if (!string.IsNullOrEmpty(domText)) storyText = domText;
         }
+        catch { }
         Save();
-        if (hasExistingText && storyText != lastExtractedText) _ = RunExtractionAsync();
     }
 
     // ── Editor helpers ──
@@ -1172,67 +1114,60 @@
     private async Task SetEditorText(string text)
     {
         storyText = text;
-        richHtml = TextToHtml(text);
-        if (viewMode == "editor")
-            await JS.InvokeVoidAsync("writeInterop.richEditor.setHtml", "story-surface", richHtml);
+        printHtml = Markdown.RenderToPrintHtml(storyText);
+        await JS.InvokeVoidAsync("writeInterop.setText", "story-surface", text);
     }
 
     private async Task AppendEditorText(string text)
     {
-        var html = TextToHtml(text);
-        if (viewMode == "editor")
-        {
-            await JS.InvokeVoidAsync("writeInterop.richEditor.appendHtml", "story-surface", html);
-            richHtml = await JS.InvokeAsync<string>("writeInterop.richEditor.getHtml", "story-surface");
-            storyText = await JS.InvokeAsync<string>("writeInterop.richEditor.getPlainText", "story-surface");
-        }
-        else
-        {
-            richHtml += html;
-            storyText += "\n\n" + text;
-        }
+        storyText += (storyText.Length > 0 && !storyText.EndsWith("\n\n") ? "\n\n" : "") + text;
+        printHtml = Markdown.RenderToPrintHtml(storyText);
+        await JS.InvokeVoidAsync("writeInterop.setText", "story-surface", storyText);
     }
 
-    private async Task FocusEditorEnd()
-    {
-        if (viewMode == "preview") return;
+    private async Task FocusEditorEnd() =>
         await JS.InvokeVoidAsync("writeInterop.focusEnd", "story-surface");
-    }
-
-    private async Task AutoLinkEntities() =>
-        await JS.InvokeVoidAsync("writeInterop.richEditor.highlightEntities", "story-surface");
 
     // ── Formatting ──
 
     private async Task FormatBlock(string tag)
     {
-        try { await JS.InvokeVoidAsync("writeInterop.richEditor.formatBlock", "story-surface", tag); }
+        var prefix = tag switch { "h1" => "# ", "h2" => "## ", "h3" => "### ", "blockquote" => "> ", _ => "" };
+        try { storyText = await JS.InvokeAsync<string>("writeInterop.richEditor.mdPrefixLine", "story-surface", prefix); }
         catch { }
+        printHtml = Markdown.RenderToPrintHtml(storyText);
     }
 
-    private async Task FormatInline(string command) =>
-        await JS.InvokeVoidAsync("writeInterop.richEditor.formatInline", "story-surface", command);
+    private async Task FormatInline(string command)
+    {
+        var (pre, suf) = command switch { "bold" => ("**", "**"), "italic" => ("*", "*"), "strikethrough" => ("~~", "~~"), _ => ("", "") };
+        if (pre.Length == 0) return;
+        try { storyText = await JS.InvokeAsync<string>("writeInterop.richEditor.mdWrapSelection", "story-surface", pre, suf); }
+        catch { }
+        printHtml = Markdown.RenderToPrintHtml(storyText);
+    }
 
     private async Task FormatList(string type)
     {
-        var cmd = type == "ordered" ? "insertOrderedList" : "insertUnorderedList";
-        await JS.InvokeVoidAsync("writeInterop.richEditor.formatInline", "story-surface", cmd);
+        var prefix = type == "ordered" ? "1. " : "- ";
+        try { storyText = await JS.InvokeAsync<string>("writeInterop.richEditor.mdPrefixLine", "story-surface", prefix); }
+        catch { }
+        printHtml = Markdown.RenderToPrintHtml(storyText);
     }
 
-    private async Task InsertHorizontalRule() =>
-        await JS.InvokeVoidAsync("writeInterop.richEditor.insertHr", "story-surface");
-
-    private async Task ToggleLinks()
+    private async Task InsertHorizontalRule()
     {
-        showLinks = !showLinks;
-        await JS.InvokeVoidAsync("writeInterop.richEditor.toggleLinks", "story-surface", showLinks);
+        storyText = await JS.InvokeAsync<string>("writeInterop.richEditor.mdWrapSelection", "story-surface", "\n\n---\n\n", "");
+        printHtml = Markdown.RenderToPrintHtml(storyText);
     }
 
     private async Task DoInsertImage()
     {
         if (string.IsNullOrWhiteSpace(imageBase64)) return;
         var src = NormalizeImageSrc(imageBase64);
-        await JS.InvokeVoidAsync("writeInterop.richEditor.insertImage", "story-surface", src, imageAlt);
+        var md = $"![{imageAlt}]({src})";
+        storyText = await JS.InvokeAsync<string>("writeInterop.richEditor.mdWrapSelection", "story-surface", md, "");
+        printHtml = Markdown.RenderToPrintHtml(storyText);
         imageBase64 = "";
         imageAlt = "";
         showImageInsert = false;
@@ -1246,66 +1181,16 @@
         return $"data:image/png;base64,{trimmed}";
     }
 
-    private async Task InsertTag(string tag) =>
-        await JS.InvokeVoidAsync("writeInterop.richEditor.insertAtCursor", "story-surface", tag);
-
-    private async Task SwitchViewMode(string mode)
+    private async Task InsertTag(string tag)
     {
-        if (mode == viewMode) return;
+        storyText = await JS.InvokeAsync<string>("writeInterop.richEditor.mdWrapSelection", "story-surface", tag, "");
+        printHtml = Markdown.RenderToPrintHtml(storyText);
+    }
 
-        if (viewMode == "editor" && richEditorInitialized)
-        {
-            // Save the HTML and get plain text for the print view
-            richHtml = await JS.InvokeAsync<string>("writeInterop.richEditor.getHtml", "story-surface");
-            storyText = await JS.InvokeAsync<string>("writeInterop.richEditor.getPlainText", "story-surface");
-            richEditorInitialized = false;
-        }
-
+    private void SwitchViewMode(string mode)
+    {
         viewMode = mode;
-
-        if (mode == "preview")
-        {
-            // Strip interactive elements from the rich HTML for clean book preview
-            printHtml = BuildPrintHtml(richHtml);
-        }
-
         StateHasChanged();
-
-        if (mode == "editor") { await Task.Delay(50); await InitRichEditor(); }
-    }
-
-    /// <summary>Strip entity links, ElevenLabs tags, and other interactive markup for print view.</summary>
-    private static string BuildPrintHtml(string richHtml)
-    {
-        if (string.IsNullOrWhiteSpace(richHtml)) return "";
-        var html = richHtml;
-        // Strip entity link spans — keep inner text
-        html = System.Text.RegularExpressions.Regex.Replace(html,
-            @"<span[^>]*class=""entity-link[^""]*""[^>]*>(.*?)</span>", "$1");
-        // Strip ElevenLabs tag spans
-        html = System.Text.RegularExpressions.Regex.Replace(html,
-            @"<span[^>]*class=""elevenlabs-tag[^""]*""[^>]*>.*?</span>", "");
-        // Strip facet tag spans
-        html = System.Text.RegularExpressions.Regex.Replace(html,
-            @"<span[^>]*class=""facet-tag[^""]*""[^>]*>.*?</span>", "");
-        // Strip all [bracket] tags — TTS/audio directions not for print
-        html = System.Text.RegularExpressions.Regex.Replace(html, @"\[[^\]]+\]", "");
-        // Strip all {brace} tags — legacy format
-        html = System.Text.RegularExpressions.Regex.Replace(html, @"\{[^}]+\}", "");
-        // Clean up double spaces
-        html = System.Text.RegularExpressions.Regex.Replace(html, @"  +", " ");
-        return html;
-    }
-
-    private string TextToHtml(string text)
-    {
-        if (string.IsNullOrWhiteSpace(text)) return "";
-        // Decode unicode escapes like \u0022 \u0027 etc before processing
-        text = System.Text.RegularExpressions.Regex.Replace(text, @"\\u([0-9a-fA-F]{4})",
-            m => ((char)Convert.ToInt32(m.Groups[1].Value, 16)).ToString());
-        var paragraphs = text.Split(["\n\n", "\r\n\r\n"], StringSplitOptions.RemoveEmptyEntries);
-        return string.Join("", paragraphs.Select(p =>
-            $"<p>{System.Net.WebUtility.HtmlEncode(p.Trim()).Replace("&#39;", "'").Replace("&#x27;", "'").Replace("\r\n", "<br>").Replace("\n", "<br>")}</p>"));
     }
 
     // ── Post-generation hook ──
@@ -1452,11 +1337,11 @@
         var loaded = Repo.LoadProject(id);
         if (loaded == null) return;
         project = loaded;
-        richHtml = project.Html;
-        storyText = project.PlainText;
+        storyText = project.Html;
+        printHtml = Markdown.RenderToPrintHtml(storyText);
         error = null;
         UpdateWordCount();
-        Nav.NavigateTo($"/write/{id}", replace: true);
+        Nav.NavigateTo($"/stories/write/{id}", replace: true);
     }
 
     private string SafeFilename(string ext) =>
@@ -1464,19 +1349,20 @@
 
     private async Task ExportAsTxt()
     {
-        var text = Export.ToPlainText(project.Title, richHtml);
+        var text = $"{project.Title}\n\n{Markdown.StripToPlainText(storyText)}";
         await JS.InvokeVoidAsync("writeInterop.downloadText", SafeFilename(".txt"), text);
     }
 
     private async Task ExportAsMd()
     {
-        var md = Export.ToMarkdown(project.Title, richHtml);
+        var md = $"# {project.Title}\n\n{storyText}";
         await JS.InvokeVoidAsync("writeInterop.downloadText", SafeFilename(".md"), md);
     }
 
     private async Task ExportAsPdf()
     {
-        var html = Export.ToPrintHtml(project.Title, richHtml, project.Characters);
+        var rendered = Markdown.RenderToPrintHtml(storyText);
+        var html = Export.ToPrintHtml(project.Title, rendered, project.Characters);
         await JS.InvokeVoidAsync("writeInterop.openPrintWindow", html);
     }
 
@@ -1504,23 +1390,24 @@
     {
         if (hasExistingText) Save();
         project = new StoryProject();
-        richHtml = "";
+        Repo.SaveProject(project);
         storyText = "";
+        printHtml = "";
         error = null;
         saved = false;
         wordCount = 0;
-        Nav.NavigateTo("/write", replace: true);
+        Nav.NavigateTo($"/stories/write/{project.Id}", replace: true);
     }
 
     // ── Audio ──
 
     private async Task ReadSelected()
     {
-        showContextMenu = false;
+
         if (narrating) return;
         try
         {
-            var surfaceId = viewMode == "editor" ? "story-surface" : "story-surface-raw";
+            var surfaceId = "story-surface";
             var sel = await JS.InvokeAsync<SelectionInfo>("writeInterop.getSelection", surfaceId);
             if (sel != null && !string.IsNullOrWhiteSpace(sel.Text))
                 await NarrateText(sel.Text);
@@ -1530,7 +1417,7 @@
 
     private async Task ReadAll()
     {
-        showContextMenu = false;
+
         if (narrating || !hasExistingText) return;
         await NarrateText(storyText);
     }
@@ -1717,9 +1604,9 @@
         if (string.IsNullOrEmpty(issue.StoryText) || string.IsNullOrEmpty(issue.CanonTruth)) return;
 
         // Replace the contradicting text in the editor with the canon truth
-        richHtml = richHtml.Replace(issue.StoryText, issue.CanonTruth);
         storyText = storyText.Replace(issue.StoryText, issue.CanonTruth);
-        await JS.InvokeVoidAsync("writeInterop.richEditor.setHtml", "story-surface", richHtml);
+        printHtml = Markdown.RenderToPrintHtml(storyText);
+        await JS.InvokeVoidAsync("writeInterop.setText", "story-surface", storyText);
         Save();
         validationResults.RemoveAt(idx);
         SaveValidationState();
@@ -1759,9 +1646,9 @@
         if (string.IsNullOrEmpty(issue.StoryText)) return;
 
         // Replace story text with the chosen alternative
-        richHtml = richHtml.Replace(issue.StoryText, altText);
         storyText = storyText.Replace(issue.StoryText, altText);
-        await JS.InvokeVoidAsync("writeInterop.richEditor.setHtml", "story-surface", richHtml);
+        printHtml = Markdown.RenderToPrintHtml(storyText);
+        await JS.InvokeVoidAsync("writeInterop.setText", "story-surface", storyText);
         Save();
         validationResults.RemoveAt(idx);
         SaveValidationState();
@@ -1798,7 +1685,7 @@
 
     private async Task OpenSuggestAlternatives()
     {
-        showContextMenu = false;
+
         if (string.IsNullOrWhiteSpace(currentSelection)) return;
         altOriginalText = currentSelection;
         suggestedAlts.Clear();
@@ -1848,9 +1735,9 @@
 
     private async Task ApplyAlternative(string altText)
     {
-        richHtml = richHtml.Replace(altOriginalText, altText);
         storyText = storyText.Replace(altOriginalText, altText);
-        await JS.InvokeVoidAsync("writeInterop.richEditor.setHtml", "story-surface", richHtml);
+        printHtml = Markdown.RenderToPrintHtml(storyText);
+        await JS.InvokeVoidAsync("writeInterop.setText", "story-surface", storyText);
         Save();
         showAlternativesModal = false;
     }
@@ -1859,9 +1746,7 @@
 
     public void Dispose()
     {
-        if (dirty) { project.Html = richHtml; Repo.SaveProject(project); }
-        saveTimer?.Dispose();
-        editorRef?.Dispose();
+        if (dirty) { project.Html = storyText; Repo.SaveProject(project); }
         miniGraphRef?.Dispose();
     }
 

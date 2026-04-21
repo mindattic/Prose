@@ -261,13 +261,13 @@ else if (!generating)
         InvokeAsync(StateHasChanged);
     }
 
-    private void OpenProject(string id) => Nav.NavigateTo($"/write/{id}");
+    private void OpenProject(string id) => Nav.NavigateTo($"/stories/write/{id}");
 
     private void CreateNew()
     {
         var project = new StoryProject();
         Repo.SaveProject(project);
-        Nav.NavigateTo($"/write/{project.Id}");
+        Nav.NavigateTo($"/stories/write/{project.Id}");
     }
 
     [SupplyParameterFromQuery(Name = "protagonist")]
@@ -342,7 +342,7 @@ else if (!generating)
                 projects = Repo.ListProjects();
 
                 // Navigate to the new story
-                Nav.NavigateTo($"/write/{project.Id}");
+                Nav.NavigateTo($"/stories/write/{project.Id}");
             }
         }
         catch (OperationCanceledException) { progressMessage = "Cancelled."; }
@@ -380,7 +380,7 @@ else if (!generating)
                 Repo.SaveProject(project);
                 projects = Repo.ListProjects();
                 LoadFailedCheckpoints();
-                Nav.NavigateTo($"/write/{project.Id}");
+                Nav.NavigateTo($"/stories/write/{project.Id}");
             }
             else
             {

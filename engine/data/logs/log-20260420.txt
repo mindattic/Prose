@@ -55659,3 +55659,41 @@ System.Net.Http.HttpRequestException: Response status code does not indicate suc
 2026-04-20 07:19:21PM [DBG] Saving story project 019dad5fdb77766b9d548fb43a11be18 to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\019dad5fdb77766b9d548fb43a11be18\story.json
 2026-04-20 07:20:37PM [INF] StreetSamurai Blazor host started
 2026-04-20 07:21:05PM [DBG] Saving story project 019dad5fdb77766b9d548fb43a11be18 to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\019dad5fdb77766b9d548fb43a11be18\story.json
+2026-04-20 09:14:43PM [INF] StreetSamurai Blazor host started
+2026-04-20 09:15:03PM [DBG] Saving story project 019dadd1b377794290af7243cc694fa3 to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\019dadd1b377794290af7243cc694fa3\story.json
+2026-04-20 09:46:07PM [INF] StreetSamurai Blazor host started
+2026-04-20 09:47:13PM [DBG] Saving story project 019dad5fdb77766b9d548fb43a11be18 to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\019dad5fdb77766b9d548fb43a11be18\story.json
+2026-04-20 10:02:43PM [INF] StreetSamurai Blazor host started
+2026-04-20 10:03:02PM [DBG] Saving story project 019dadfd9dcb731280b77a39dcaf3a3d to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\019dadfd9dcb731280b77a39dcaf3a3d\story.json
+2026-04-20 10:03:27PM [DBG] Saving story project 019dad5fdb77766b9d548fb43a11be18 to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\019dad5fdb77766b9d548fb43a11be18\story.json
+2026-04-20 10:10:13PM [DBG] Saving story project 019dad5fdb77766b9d548fb43a11be18 to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\019dad5fdb77766b9d548fb43a11be18\story.json
+2026-04-20 10:19:01PM [INF] StreetSamurai Blazor host started
+2026-04-20 10:19:35PM [DBG] Saving story project 019dad5fdb77766b9d548fb43a11be18 to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\019dad5fdb77766b9d548fb43a11be18\story.json
+2026-04-20 10:21:35PM [DBG] Saving story project 019dad5fdb77766b9d548fb43a11be18 to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\019dad5fdb77766b9d548fb43a11be18\story.json
+2026-04-20 10:29:49PM [INF] StreetSamurai Blazor host started
+2026-04-20 10:30:22PM [DBG] Saving story project 019dad5fdb77766b9d548fb43a11be18 to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\019dad5fdb77766b9d548fb43a11be18\story.json
+2026-04-20 10:30:22PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-20 10:30:22PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=4096, temp=0.2, systemLen=1860, userLen=24292
+2026-04-20 10:30:47PM [DBG] Saving story project 019dad5fdb77766b9d548fb43a11be18 to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\019dad5fdb77766b9d548fb43a11be18\story.json
+2026-04-20 10:30:47PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-20 10:30:47PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=4096, temp=0.2, systemLen=1860, userLen=24300
+2026-04-20 10:31:21PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=14545
+2026-04-20 10:31:21PM [DBG] Entity extraction skipped — LLM returned truncated JSON (expected during regeneration)
+2026-04-20 10:31:45PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=14616
+2026-04-20 10:31:45PM [DBG] Entity extraction skipped — LLM returned truncated JSON (expected during regeneration)
+2026-04-20 10:36:57PM [DBG] Saving story project 019dad5fdb77766b9d548fb43a11be18 to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\019dad5fdb77766b9d548fb43a11be18\story.json
+2026-04-20 10:36:57PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-20 10:36:57PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=4096, temp=0.2, systemLen=1860, userLen=24280
+2026-04-20 10:36:59PM [DBG] Saving story project 019dad5fdb77766b9d548fb43a11be18 to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\019dad5fdb77766b9d548fb43a11be18\story.json
+2026-04-20 10:38:10PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=14648
+2026-04-20 10:38:10PM [DBG] Entity extraction skipped — LLM returned truncated JSON (expected during regeneration)
+2026-04-20 10:39:47PM [DBG] Saving story project 019dad5fdb77766b9d548fb43a11be18 to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\019dad5fdb77766b9d548fb43a11be18\story.json
+2026-04-20 10:39:47PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-20 10:39:47PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=4096, temp=0.2, systemLen=1860, userLen=24273
+2026-04-20 10:40:48PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=14737
+2026-04-20 10:40:48PM [DBG] Entity extraction skipped — LLM returned truncated JSON (expected during regeneration)
+2026-04-20 10:41:35PM [DBG] Saving story project 019d6143ab61752da68e0bc71595cd6c to D:\Projects\MindAttic\StreetSamurai\engine\data\stories\019d6143ab61752da68e0bc71595cd6c\story.json
+2026-04-20 10:41:35PM [DBG] LlmRouter dispatching to provider=claude
+2026-04-20 10:41:35PM [DBG] Claude request: model=claude-sonnet-4-6, maxTokens=4096, temp=0.2, systemLen=1860, userLen=76363
+2026-04-20 10:42:52PM [INF] Claude response: model=claude-sonnet-4-6, responseLen=16023
+2026-04-20 10:42:52PM [DBG] Entity extraction skipped — LLM returned truncated JSON (expected during regeneration)

@@ -41,6 +41,11 @@ window.writeInterop = {
         };
     },
 
+    getText: function (id) {
+        const el = document.getElementById(id);
+        return el ? el.value : '';
+    },
+
     setText: function (id, text) {
         const el = document.getElementById(id);
         if (!el) return;
@@ -138,6 +143,45 @@ window.writeInterop = {
         win.document.write(html);
         win.document.close();
         return true;
+    },
+
+    // ── Markdown preview (client-side via marked.js) ────────
+
+    initMdPreview: function (editorId, previewId) {
+        const editor = document.getElementById(editorId);
+        const preview = document.getElementById(previewId);
+        if (!editor || !preview) return;
+
+        const render = () => {
+            const text = editor.value || '';
+            preview.innerHTML = text.trim()
+                ? marked.parse(text)
+                : '<p style="color:#6c757d;text-align:center;padding:2rem;font-style:italic;">Preview</p>';
+        };
+        if (editor._mdPreviewFn) editor.removeEventListener('input', editor._mdPreviewFn);
+        editor._mdPreviewFn = render;
+        editor.addEventListener('input', render);
+        render();
+
+        const wrap = (pre, suf) => {
+            const s = editor.selectionStart, e = editor.selectionEnd;
+            const sel = editor.value.substring(s, e);
+            editor.value = editor.value.substring(0, s) + pre + sel + suf + editor.value.substring(e);
+            editor.selectionStart = s + pre.length;
+            editor.selectionEnd = e + pre.length;
+            editor.dispatchEvent(new Event('input', { bubbles: true }));
+        };
+        if (editor._mdKeyFn) editor.removeEventListener('keydown', editor._mdKeyFn);
+        editor._mdKeyFn = (ev) => {
+            if (!ev.ctrlKey && !ev.metaKey) return;
+            if (ev.key === 'b' || ev.key === 'B') { ev.preventDefault(); wrap('**', '**'); }
+            else if (ev.key === 'i' || ev.key === 'I') { ev.preventDefault(); wrap('*', '*'); }
+            else if (ev.key === 'u' || ev.key === 'U') { ev.preventDefault(); wrap('<u>', '</u>'); }
+            else if (ev.key === 'z' || ev.key === 'Z' || ev.key === 'y' || ev.key === 'Y') {
+                setTimeout(render, 0);
+            }
+        };
+        editor.addEventListener('keydown', editor._mdKeyFn);
     },
 
     // ── Rich editor (contenteditable) ───────────────────────
