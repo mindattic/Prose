@@ -2,7 +2,7 @@
   "id": "019d6143a5ec76f69fdaed955c84589f",
   "rating": 70,
   "type": "character",
-  "name": "Sable Benali",
+  "name": "Karim Benali",
   "aliases": [],
   "species": "human",
   "gender": "male",
@@ -11,7 +11,7 @@
   "age": 41,
   "status": "active",
   "location": "the Gray Zone — Tier Four, bedridden, near Kedzie and Division",
-  "description": "Sable Benali was a large man before the beating — a cargo handler at the Gray Zone's loading platforms, the kind of work that builds slabs of muscle across the back and shoulders. He is still large, but the architecture has shifted. His jaw is wired shut with medical-grade titanium pins visible through the skin of his cheeks like rivets in a hull. He communicates through a vocoder pad strapped to his wrist that converts typed text to flat, mechanical speech. His eyes are the part that didn't break — dark, warm, patient. He looks at his wife like she invented sunlight. He looks at his daughter like she is the reason sunlight matters. When Kyle's teeth arrive, delivered by a trembling Yuliya, Sable Benali will hold them in his palm for a long time. Then he will laugh. The vocoder will translate it as a series of monotone ha-ha-ha sounds. It will be the funniest and saddest thing in the Gray Zone that night.",
+  "description": "Karim Benali was a large man before the beating — a cargo handler at the Gray Zone's loading platforms, the kind of work that builds slabs of muscle across the back and shoulders. He is still large, but the architecture has shifted. His jaw is wired shut with medical-grade titanium pins visible through the skin of his cheeks like rivets in a hull. He communicates through a vocoder pad strapped to his wrist that converts typed text to flat, mechanical speech. His eyes are the part that didn't break — dark, warm, patient. He looks at his wife like she invented sunlight. He looks at his daughter like she is the reason sunlight matters. When Kyle's teeth arrive, delivered by a trembling Yuliya, Karim Benali will hold them in his palm for a long time. Then he will laugh. The vocoder will translate it as a series of monotone ha-ha-ha sounds. It will be the funniest and saddest thing in the Gray Zone that night.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -249,7 +249,7 @@
     "posture_movement": "Bedridden immobility has compressed him into the mattress. When he moves, it is careful, economical — minimal jaw motion. His eyes track with intense focus and warmth. Hands move with precision when typing or sketching; they are the only parts of him still capable of unguarded expression.",
     "clothing_style": "Worn undershirt or medical gown, Tier 4 basics. When receiving visitors, he may wear a loose button-up over the gown — nothing elaborate. Everything loose-fitting to accommodate the wiring and to avoid pressure on healing tissue. Practical, colorless."
   },
-  "image_prompt": "Sable Benali, a 188cm North African-heritage cargo handler recovering in a 2226 medical bed, deep warm brown skin with pallid undertones from confinement, strong prominent cheekbones and angular jaw structure with Eastern European refinement, dark brown eyes intense and focused. Titanium jaw reconstruction pins visible as metal rivets symmetrically piercing both cheeks through partially healed skin, linear scarring along left temple and cheekbone, faint yellowing bruises on right side of face. Dark brown hair graying at temples, combed back and unkempt. Medical vocoder pad strapped to left wrist with black polymer casing and speaker grille. Broad-shouldered atrophying build, wearing loose medical gown, careful economical posture in bed, hands precise and expressive on vocoder keyboard. Utilitarian medical tech juxtaposed against brutal injury, warm intense gaze, GLMZ 2200s hospital setting with soft clinical lighting emphasizing scarring and augmentation, intimate portrait of recovery --ar 2:3 --v 6",
+  "image_prompt": "Karim Benali, a 188cm North African-heritage cargo handler recovering in a 2226 medical bed, deep warm brown skin with pallid undertones from confinement, strong prominent cheekbones and angular jaw structure with Eastern European refinement, dark brown eyes intense and focused. Titanium jaw reconstruction pins visible as metal rivets symmetrically piercing both cheeks through partially healed skin, linear scarring along left temple and cheekbone, faint yellowing bruises on right side of face. Dark brown hair graying at temples, combed back and unkempt. Medical vocoder pad strapped to left wrist with black polymer casing and speaker grille. Broad-shouldered atrophying build, wearing loose medical gown, careful economical posture in bed, hands precise and expressive on vocoder keyboard. Utilitarian medical tech juxtaposed against brutal injury, warm intense gaze, GLMZ 2200s hospital setting with soft clinical lighting emphasizing scarring and augmentation, intimate portrait of recovery --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "North African": 79.8,

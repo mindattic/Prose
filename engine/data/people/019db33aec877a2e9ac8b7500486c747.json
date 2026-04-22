@@ -1,0 +1,170 @@
+{
+  "id": "019db33aec877a2e9ac8b7500486c747",
+  "rating": 0,
+  "vote_count": 0,
+  "type": "character",
+  "name": "Seo",
+  "aliases": [],
+  "species": "human",
+  "gender": "",
+  "pronouns": "",
+  "role": "",
+  "age": 0,
+  "status": "alive",
+  "location": "",
+  "description": "Auto-scaffolded. First mentioned: \u0022the blade that Seo handed to him with both hands the way you hand someone a thing that matters\u0022",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0,
+      "ideal": 0,
+      "id": 0,
+      "shadow": 0,
+      "mask": 0,
+      "ghost": 0
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": [],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
+  },
+  "relationships": [
+    {
+      "name": "",
+      "type": "trained Kyle in blade work",
+      "description": "trained Kyle in blade work",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "",
+      "type": "gave Kyle his katana",
+      "description": "gave Kyle his katana",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "",
+      "type": "listed as program consultant on Ferrogate BioSystems manifest",
+      "description": "listed as program consultant on Ferrogate BioSystems manifest",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "",
+      "type": "contribution record active from 2189 through 2193",
+      "description": "contribution record active from 2189 through 2193",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "",
+      "type": "status listed as deceased, file closed",
+      "description": "status listed as deceased, file closed",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "his funeral",
+      "type": "Kyle was not informed",
+      "description": "Kyle was not informed of his funeral",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "",
+      "type": "connected to the program that produced Kyle and Seven",
+      "description": "connected to the program that produced Kyle and Seven",
+      "emotional_core": "",
+      "story_tension": ""
+    }
+  ],
+  "story_hooks": [],
+  "narrative_function": "",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": []
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {},
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "tags": [
+    "auto-scaffolded",
+    "needs-review"
+  ],
+  "physical_description": {
+    "heritage": "",
+    "height_cm": 0,
+    "weight_kg": 0,
+    "build": "",
+    "hair_color": "",
+    "hair_style": "",
+    "hair_length": "",
+    "eye_color": "",
+    "skin_tone": "",
+    "complexion": "",
+    "distinguishing_marks": [],
+    "visible_augmentations": "",
+    "posture_movement": "",
+    "clothing_style": ""
+  },
+  "image_prompt": "",
+  "dalle3_prompt": "",
+  "genetic_ancestry": {},
+  "ancestry_detail": {},
+  "neural_abilities": []
+}

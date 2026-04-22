@@ -1,0 +1,149 @@
+{
+  "id": "019db33aeb6b729988da2cecd03d6898",
+  "rating": 0,
+  "vote_count": 0,
+  "type": "character",
+  "name": "Dr. Yuna Ferreira",
+  "aliases": [],
+  "species": "human",
+  "gender": "",
+  "pronouns": "",
+  "role": "",
+  "age": 0,
+  "status": "alive",
+  "location": "",
+  "description": "Auto-scaffolded. First mentioned: \u0022Extract Dr. Yuna Ferreira before 0600. She\u0027s been flagged internally.\u0022",
+  "psychology": {
+    "facet_weights": {
+      "wound": 0,
+      "ideal": 0,
+      "id": 0,
+      "shadow": 0,
+      "mask": 0,
+      "ghost": 0
+    },
+    "core_fears": [],
+    "core_desires": [],
+    "coping_mechanisms": [],
+    "blind_spots": [],
+    "secret": ""
+  },
+  "speech_patterns": {
+    "vocabulary": "",
+    "cadence": "",
+    "verbal_tics": [],
+    "example_lines": [],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
+  },
+  "relationships": [
+    {
+      "name": "",
+      "type": "researcher held at Ferrogate BioSystems secondary facility",
+      "description": "researcher held at Ferrogate BioSystems secondary facility",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "",
+      "type": "flagged internally by Ferrogate BioSystems",
+      "description": "flagged internally by Ferrogate BioSystems",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "",
+      "type": "scheduled to be moved to a secure wing at 0600",
+      "description": "scheduled to be moved to a secure wing at 0600",
+      "emotional_core": "",
+      "story_tension": ""
+    },
+    {
+      "name": "",
+      "type": "listed as extraction target on contract routed by Sable",
+      "description": "listed as extraction target on contract routed by Sable",
+      "emotional_core": "",
+      "story_tension": ""
+    }
+  ],
+  "story_hooks": [],
+  "narrative_function": "",
+  "augmentations": "",
+  "daily_life": "",
+  "affiliation": "",
+  "uses_facets": false,
+  "narration_voice": "",
+  "stats": {
+    "physical": {},
+    "mental": {},
+    "social": {},
+    "personality": {},
+    "drives": [],
+    "thresholds": {},
+    "strengths": [],
+    "weaknesses": [],
+    "tags": []
+  },
+  "behavioral": {
+    "decision_rules": [],
+    "escalation_ladder": [],
+    "interpersonal_modes": {},
+    "stress_responses": {},
+    "contradictions": [],
+    "habits": [],
+    "breaking_points": []
+  },
+  "cyberware_inventory": [],
+  "belongings": {
+    "primary_weapon": "",
+    "secondary_weapon": "",
+    "armor": "",
+    "vehicle": "",
+    "residence": "",
+    "clothing_style": "",
+    "favorite_drink": "",
+    "favorite_food": "",
+    "stimulant": "",
+    "comm_device": "",
+    "signature_gear": [],
+    "pharmaceuticals": [],
+    "other": {}
+  },
+  "archetypes": {},
+  "operating_territory": {
+    "home_turf": "",
+    "familiar_zones": [],
+    "zone_reputation": {},
+    "no_go_zones": [],
+    "range": "local"
+  },
+  "timeline": [],
+  "changelog": [],
+  "tags": [
+    "auto-scaffolded",
+    "needs-review"
+  ],
+  "physical_description": {
+    "heritage": "",
+    "height_cm": 0,
+    "weight_kg": 0,
+    "build": "",
+    "hair_color": "",
+    "hair_style": "",
+    "hair_length": "",
+    "eye_color": "",
+    "skin_tone": "",
+    "complexion": "",
+    "distinguishing_marks": [],
+    "visible_augmentations": "",
+    "posture_movement": "",
+    "clothing_style": ""
+  },
+  "image_prompt": "",
+  "dalle3_prompt": "",
+  "genetic_ancestry": {},
+  "ancestry_detail": {},
+  "neural_abilities": []
+}

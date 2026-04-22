@@ -141,8 +141,19 @@ public class OutlineReviewService
         string response;
         try
         {
-            response = await llm.GenerateAsync(system, user, 0.7, 8192, ct: ct);
+            response = await llm.GenerateAsync(system, user, 0.7, 16384, ct: ct);
             log.LogDebug("OutlineReview LLM response: {Len} chars", response.Length);
+        }
+        catch (OperationCanceledException) when (ct.IsCancellationRequested)
+        {
+            // Expected — user cancelled (navigated away, clicked Cancel, etc). No stack-trace noise.
+            log.LogDebug("OutlineReview cancelled");
+            return new OutlineReviewResult
+            {
+                RevisedOutline = outline,
+                Critique = "Review cancelled",
+                Warnings = ["Cancelled"]
+            };
         }
         catch (Exception ex)
         {

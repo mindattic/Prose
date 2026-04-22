@@ -16,6 +16,13 @@
             <span class="topnav-crumb-sep">›</span>
             @* Mobile: icons only *@
             <span class="d-flex d-md-none align-items-center gap-1">
+                @if (crumb.Grandparent != null && crumb.GrandparentIcon != null)
+                {
+                    <a href="@crumb.GrandparentUrl" class="topnav-crumb-icon-link">
+                        <i class="bi @crumb.GrandparentIcon topnav-crumb-icon"></i>
+                    </a>
+                    <span class="topnav-crumb-sep">›</span>
+                }
                 @if (crumb.CatIcon != null && crumb.PageIcon != null)
                 {
                     <a href="@crumb.CatUrl" class="topnav-crumb-icon-link">
@@ -31,6 +38,11 @@
             </span>
             @* Desktop: text *@
             <span class="d-none d-md-flex align-items-center gap-1">
+                @if (crumb.Grandparent != null)
+                {
+                    <a href="@crumb.GrandparentUrl" class="topnav-crumb-link">@crumb.Grandparent</a>
+                    <span class="topnav-crumb-sep">›</span>
+                }
                 @if (crumb.Category != null && crumb.PageName != null)
                 {
                     <a href="@crumb.CatUrl" class="topnav-crumb-link">@crumb.Category</a>
@@ -119,7 +131,10 @@
 
     // ── Breadcrumb ───────────────────────────────────────────
 
-    private record CrumbInfo(string? Category, string? CatUrl, string? PageName, string? CatIcon = null, string? PageIcon = null);
+    private record CrumbInfo(
+        string? Category, string? CatUrl, string? PageName,
+        string? CatIcon = null, string? PageIcon = null,
+        string? Grandparent = null, string? GrandparentUrl = null, string? GrandparentIcon = null);
 
     private CrumbInfo? GetCrumb()
     {
@@ -145,7 +160,8 @@
             "generators"      => new("Tools",         "/board/tools",         "Generator Console", "bi-grid-3x3-gap", "bi-terminal"),
             "stories"         => new("Tools",         "/board/tools",         "Stories",           "bi-grid-3x3-gap", "bi-pencil-square"),
             _ when seg.StartsWith("stories/write/")
-                              => new("Stories",       "/stories",             "Write Story",       "bi-pencil-square", "bi-pencil-fill"),
+                              => new("Stories",       "/stories",             "Write",             "bi-pencil-square", "bi-pencil-fill",
+                                     "Tools",         "/board/tools",         "bi-grid-3x3-gap"),
             "contracts"       => new(null,            null,                   "Contracts",       null,                   "bi-file-earmark-text"),
             "characters"      => new("Characters",    "/board/characters",    "People",          "bi-people-fill",       "bi-person"),
             "synthetics"      => new("Characters",    "/board/characters",    "Synthetic Life",  "bi-people-fill",       "bi-cpu-fill"),

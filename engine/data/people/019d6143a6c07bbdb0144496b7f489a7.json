@@ -1,5 +1,7 @@
 {
   "id": "019d6143a6c07bbdb0144496b7f489a7",
+  "rating": 0,
+  "vote_count": 0,
   "type": "character",
   "name": "Sable",
   "aliases": [
@@ -11,18 +13,18 @@
   "gender": "female",
   "pronouns": "she/her",
   "role": "Fixer / contract broker / Kyle's primary employer",
-  "age": 40,
+  "age": 45,
   "status": "alive",
   "location": "The Circuit — operates from a rotating series of back rooms in the black market district. Never the same room twice in a month., near Armitage and Milwaukee",
-  "description": "Sable is a woman with her jaw cleanly replaced with a chrome assembly — medical-grade, precise, the kind of work that costs more than most people's apartments. When she is not making an expression, her face has the uncanny stillness of a marionette: the chrome jaw hangs slightly open, the joints visible at the hinges, the lower half of her face a mask of brushed metal that only becomes human when she chooses to animate it. When she does — when she smiles, or speaks, or tilts her head — the transition from puppet to person is so seamless that it retroactively makes the stillness more unsettling, not less.\n\nShe moves through the world with the efficiency of someone who solved the problem of having no hands a long time ago and is bored by people who are still catching up. She uses her chrome caps, her shoulders, her chin, the environment itself — doors, ledges, the edges of tables — with a fluid improvisation that makes arms look like an affectation. She carries nothing. She owns nothing visible. Information is her inventory and it is stored in places Kyle's hardware cannot find.\n\nKyle's code tells him Sable is not a threat. She is literally unarmed — a joke he makes to himself exactly once, then examines, then discards. The joke doesn't sit right. Not because it's wrong but because the ease with which his brain reached for it feels engineered, the way a magician draws your eye to the wrong hand. Sable is not unarmed. Sable is something else, something that doesn't have a word yet, and the absence of that word is where the danger lives.",
+  "description": "Sable is a slightly older professional woman — forty-five with the skin of a thirty-year-old, the result of discreet cosmetic maintenance that reads as wealth rather than vanity. She wears her strawberry-red hair long and always in a loose braid that falls over one shoulder, never repinned during a conversation no matter how long the conversation runs. Her clothes are tailored: professional dress, tier-neutral colors, fabric that costs enough to be worth not noticing. The tan coat — always the tan coat — is long, well-cut, knee-length, with deep pockets, and her hands almost never leave those pockets. She does not shake hands. She does not remove her hands to accept what people offer her. She does not carry anything. No bag, no case, no visible device. Whatever she needs she already knows. Whatever she is offering arrives by other channels.\n\nHer eyes are replaced. Two circular ocular implants, black, telescopic — the housings machined to tolerances most people's apartments cost, the aperture visible as a small mechanical ring that adjusts when she shifts focus. The adjustment makes a sound. It is not loud. Most people do not notice it the first time they meet her. They notice it the second time, and then they cannot unnotice it, and then they begin to understand what the implants are worth and what that says about what Sable is worth. The pupils are not pupils. They are black glass. People read the rest of her face and find it professional and honest, and then they meet the telescopes and the reading stops working. She built for that.\n\nKyle's code tells him Sable is not a threat. She is visibly unarmed. She has never lifted a weapon in his presence. She carries nothing. She does not even take her hands out of her pockets — a joke he makes to himself exactly once, then examines, then discards. The joke doesn't sit right. Not because it's wrong but because the ease with which his brain reached for it feels engineered, the way a magician draws your eye to the wrong hand. Sable is not unarmed. Sable is something else, something the Circuit does not have a word for yet, and the absence of that word is where the danger lives.",
   "psychology": {
     "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.55,
+      "wound": 0.54,
+      "ideal": 0.6100000000000001,
       "id": 0.35,
-      "shadow": 0.8,
-      "mask": 0.95,
-      "ghost": 0.4
+      "shadow": 0.77,
+      "mask": 0.9299999999999999,
+      "ghost": 0.45
     },
     "core_fears": [
       "Being known — truly known, without the blockers, without the modulated voice, without the layers",
@@ -51,8 +53,8 @@
     "secret": "Once a year, on the anniversary of the restructuring, Sable goes to the Meridian Core and stands\noutside the building where they used to work. It's a restaurant now — upscale, reservation-only,\nthe kind of place that serves deconstructed things on slate. They stand there for exactly one hour,\nin the rain or not, and then leave. They don't know why they do this. They can't stop doing it.\nIt's the only appointment in their year that isn't transactional, and it terrifies them."
   },
   "speech_patterns": {
-    "vocabulary": "Corporate jargon repurposed for the underground with dark, dry irony. 'Restructure' means kill. 'Optimize' means clean up evidence. 'Deliverable' means the target. Her voice comes through the chrome jaw with a faint metallic resonance that makes every word sound considered, even the throwaway ones.",
-    "cadence": "Measured. The chrome jaw introduces a micro-pause between syllables that most people read as thoughtfulness. It is not thoughtfulness. It is the jaw recalibrating. Sable has learned to weaponize the delay.",
+    "vocabulary": "Corporate jargon repurposed for the underground with dark, dry irony. 'Restructure' means kill. 'Optimize' means clean up evidence. 'Deliverable' means the target. Her voice is level, clean, unhurried — the voice of a woman who has never needed to raise it and does not intend to start now.",
+    "cadence": "Measured. Deliberate. The ocular implants adjust their aperture slightly when she is thinking — a small mechanical sound most people do not notice and cannot unhear once they do. She uses the pause the way other fixers use the desk between themselves and the client — as distance.",
     "verbal_tics": [],
     "example_lines": [
       "The job pays twelve. Non-negotiable. The risk premium is already factored in.",
@@ -61,7 +63,11 @@
       "I won't lie to you about the odds. I might lie about everything else, but never the odds.",
       "I don't judge the work. I judge the people. You'd be surprised how rarely those two things align.",
       "The client wants it done by Friday. I told them Saturday. That gives you margin. You're welcome. It's coming out of my fee."
-    ]
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [
     {
@@ -95,18 +101,19 @@
   ],
   "story_hooks": [
     "A contract goes catastrophically wrong and Sable needs Kyle to clean up — but the cleanup requires breaking his code",
-    "Sable's identity is compromised — someone is close to tracing them to a real name. They need to disappear or fight, and they've never had to fight.",
-    "They offer Kyle a job working directly for Axiom. The pay is life-changing. The target makes it impossible.",
-    "Sable's annual visit to the old office building is observed. Someone from their old life recognizes the hands.",
-    "A client defaults and targets Sable — the fixer becomes the job, and the only operative they trust is Kyle",
-    "Sable cooks for someone. It's the most vulnerable thing they've ever done."
+    "Sable's identity is compromised — someone is close to tracing her to a real name. She needs to disappear or fight, and she has never had to fight.",
+    "She offers Kyle a job working directly for Axiom. The pay is life-changing. The target makes it impossible.",
+    "Sable's annual visit to the old office building is observed. Someone from her old life recognizes her.",
+    "A client defaults and targets Sable — the fixer becomes the job, and the only operative she trusts is Kyle",
+    "Sable cooks for someone. It's the most vulnerable thing she has ever done.",
+    "Someone hands her something and she has to take it out of the pocket to accept it. She does not."
   ],
-  "narrative_function": "Sable is what Kyle could become if he abandoned the code — competent, successful, invisible, and\nhollow. They represent pragmatism taken to its logical extreme: a person who has optimized away their\nown humanity in exchange for control and survival. They are the corporate machine's ghost — someone\nwho left the corporation but brought its operating system with them.\n\nBut Sable is also the story's most honest character. They don't pretend to be noble. They don't\ndress up what they do in philosophy or tradition. They broker violence for money and they do it\nwith transparency and fair pay, which makes them, by the Circuit's standards, practically a saint.\nThe question is whether that low bar is enough to constitute a moral life.\n\nSable poses this question to Kyle: Is your code a luxury? Can you afford principles in a world\nthat prices them at zero? And the follow-up, which Sable would never ask aloud: If you can afford\nthem and I can't, what does that say about which of us is really trapped?",
-  "augmentations": "Chrome jaw replacement (medical-grade, articulated, visible hinge joints). No other visible augments — which means the invisible ones are the ones to worry about.",
+  "narrative_function": "Sable is what Kyle could become if he abandoned the code — competent, successful, invisible, and hollow. She represents pragmatism taken to its logical extreme: a person who has optimized away her own humanity in exchange for control and survival. She is the corporate machine's ghost — someone who left the corporation but brought its operating system with her.\n\nBut Sable is also the story's most honest character. She doesn't pretend to be noble. She doesn't dress up what she does in philosophy or tradition. She brokers violence for money and she does it with transparency and fair pay, which makes her, by the Circuit's standards, practically a saint. The question is whether that low bar is enough to constitute a moral life.\n\nSable poses this question to Kyle: Is your code a luxury? Can you afford principles in a world that prices them at zero? And the follow-up, which Sable would never ask aloud: If you can afford them and I can't, what does that say about which of us is really trapped?",
+  "augmentations": "Paired circular ocular implants — black telescopic housings with visible aperture mechanics, medical-grade, premium manufacture; the aperture rings adjust audibly when she shifts focus. Cosmetic dermal maintenance that holds her skin at a thirty-year-old's tolerance at age forty-five. No other visible augments — which means the invisible ones are the ones to worry about.",
   "daily_life": "",
   "affiliation": "Helix Biosystems (mid-level fixer / contract broker / kyle's primary employer)",
   "uses_facets": false,
-  "narration_voice": "Sable's narration is controlled, analytical, observational. Where Kyle fragments, Sable constructs. Longer sentences that build toward a point. She thinks in transactions, leverage, and probability. She notices people before objects — body language, micro-expressions, the tell that someone is lying. The prose reads like a chess player narrating their own game: calm, three moves ahead, with dry commentary on the absurdity of everyone else's position. No facet tags. No interior war. Sable's internal conflict is structural: she has optimized away her own humanity and occasionally catches herself wondering if that was the right trade. When that doubt surfaces, the prose doesn't tag it — it just pauses. A beat of nothing. Then the analysis resumes. The chrome jaw means every smile is a decision, every expression is performed — and the narration acknowledges this without self-pity.",
+  "narration_voice": "Sable's narration is controlled, analytical, observational. Where Kyle fragments, Sable constructs. Longer sentences that build toward a point. She thinks in transactions, leverage, and probability. She notices people before objects — body language, micro-expressions, the tell that someone is lying. The prose reads like a chess player narrating their own game: calm, three moves ahead, with dry commentary on the absurdity of everyone else's position. The ocular implants do not editorialize — they log. When she is reading a room the prose registers the aperture shift before it names what she just saw. She never describes her hands. Her hands are in her coat pockets. They stay there. No facet tags. No interior war. Sable's internal conflict is structural: she has optimized away her own humanity and occasionally catches herself wondering if that was the right trade. When that doubt surfaces, the prose doesn't tag it — it just pauses. A beat of nothing. Then the analysis resumes.",
   "stats": {
     "physical": {
       "strength": 3,
@@ -141,7 +148,7 @@
     "thresholds": {
       "stress": {
         "score": 9,
-        "response": "The chrome jaw goes still — the micro-pause between syllables lengthens; analysis intensifies while expression flatlines"
+        "response": "The ocular implants stop adjusting — aperture locked; analysis intensifies while expression flatlines; the hands stay in the coat pockets"
       },
       "moral": 4,
       "trust": 2,
@@ -165,8 +172,8 @@
       "fixer",
       "contract-broker",
       "information-controller",
-      "chrome-jaw",
-      "armless",
+      "ocular-implants",
+      "hands-in-pockets",
       "most-dangerous-person-in-the-room",
       "corporate-ghost",
       "kyle-employer"
@@ -182,11 +189,11 @@
       "Steer the better jobs toward Kyle without acknowledging this is anything other than portfolio optimization",
       "Treat Axiom contracts as small revenges — take their money, use their information, never acknowledge the satisfaction",
       "Keep the cipher notebook as the one unhackable record — trust nothing digital",
-      "Never let the chrome jaw animate unless it serves a purpose — stillness is control",
+      "Never remove hands from the tan coat's pockets unless the removal is itself the instrument — stillness is the message",
       "Factor risk premium into every quote before the client asks — then present the total as non-negotiable"
     ],
     "escalation_ladder": [
-      "The chrome jaw goes still — the marionette face, unreadable, waiting",
+      "The implants go still — aperture locked, no adjustment, the full weight of her attention fixed and unmoving",
       "Measured corporate jargon deployed with dark irony — restructure, optimize, deliverable",
       "A single precisely chosen sentence that reveals she knows more than the other party assumed",
       "Complete transactional shutdown — the deal is dead, the relationship is reclassified",
@@ -198,12 +205,12 @@
       "mrs_chen": "Professional distance with an undercurrent of recognition — two women who survive by being indispensable in different registers. Sable respects the cleaver diplomacy without saying so.",
       "corpo_clients": "Deep acidic irony — takes their money and uses their information. Every Axiom contract is a small revenge she never acknowledges. Better at corporate logistics as a criminal than she ever was as an employee.",
       "circuit_operators": "Diplomatic maintenance of mutual deterrence — knows every major player, maintains relationships the way a diplomat maintains treaties. Respected but not liked. Prefers it that way.",
-      "strangers": "The chrome jaw default — still, unreadable, the metallic voice resonance making every word sound considered. Assesses body language, micro-expressions, and tells before acknowledging the person exists."
+      "strangers": "The ocular implants at their default reading — aperture adjusting once, logging, holding. The level voice, the hands in the coat pockets. Assesses body language, micro-expressions, and tells before acknowledging the person exists."
     },
     "stress_responses": {
       "low": "Cooks elaborate meals alone — French technique, West African spices, eaten in silence",
       "medium": "The cipher notebook gets updated; transaction logs reviewed; contingencies mapped",
-      "high": "The chrome jaw stops animating entirely — pure marionette stillness; every word becomes a calculated instrument",
+      "high": "The ocular implants stop adjusting entirely — aperture locked; every word becomes a calculated instrument",
       "critical": "Goes to the Meridian Core on the anniversary and stands outside the building where she used to work for exactly one hour"
     },
     "contradictions": [
@@ -217,15 +224,17 @@
       "Rotates back rooms in the Circuit black market district — never the same room twice in a month",
       "Cooks elaborate solo meals with French technique and West African spices",
       "Maintains the cipher notebook — the one thing she trusts, the one analog record",
-      "Weaponizes the chrome jaw micro-pause between syllables — most people read it as thoughtfulness",
-      "Annual pilgrimage to the Meridian Core building where she used to work — stands for one hour, rain or not"
+      "Keeps her hands in the tan coat's pockets almost exclusively; removes them only when the removal is itself the message",
+      "Does not shake hands; does not accept objects directly; anything handed to her arrives later by courier to a dead-drop",
+      "Annual pilgrimage to the Meridian Core building where she used to work — stands outside for exactly one hour, rain or not"
     ],
     "breaking_points": [
       "A contract going catastrophically wrong that requires Kyle to break his code to clean up",
       "Her identity being compromised — someone close to tracing her to a real name",
       "A client defaulting and targeting her — the fixer becoming the job",
       "Cooking for someone — the most vulnerable thing she could do",
-      "Someone from her old life recognizing the hands at the annual visit"
+      "Someone from her old life recognizing her at the annual Meridian Core visit",
+      "Having to take her hands out of her pockets to defend herself — the fact of it, not the act"
     ]
   },
   "cyberware_inventory": [],
@@ -259,102 +268,85 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Nkomo-Lindqvist NL-22 'Peacemaker'"
-  ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Tessera Industries Void Grenade VG-1 'Black Hole'",
-    "The Circuit",
-    "Myoelectric Seizure Projector MSP-6 'Marionette'",
-    "Vantablack-CNX",
-    "Free Assembly",
-    "NeuralPath EasePoint Chronic Pain Implant",
-    "Circuit",
-    "The Pure Hand",
-    "SynapTech ReadRoom Social Cue Enhancer",
-    "Kyle Ellen Corbin-Vasik"
-  ],
-  "district": "The Circuit",
-  "physical_description": {
-    "heritage": "Indigenous American (44.1%) forms the structural foundation of her face — strong cheekbones and broader midface geometry — enriched by South Asian (19.2%) facial definition and Southeast Asian (16.5%) softness around the eyes and upper lid structure. Northern European (11.6%) ancestry adds subtle brow ridge definition and jaw line clarity, while Hispanic/Latin American (7.6%) and trace East Asian (1.0%) heritage blend seamlessly into the overall composition. The result is a face of striking mixed ancestry where Indigenous American prominence reads first, but South and Southeast Asian influence softens and redefines the geometry — high cheekbones with gentle epicanthic folds, a face that speaks of the Ubiquitous Diaspora without hierarchy.",
-    "height_cm": 173,
-    "weight_kg": 61,
-    "build": "Lean and economical — muscle distributed for leverage and endurance rather than bulk. The physiology of someone who solved movement problems decades ago and hasn't wasted energy since.",
-    "hair_color": "Black with silver-grey threading at temples",
-    "hair_style": "Pulled back severely into a minimalist braid, kept away from the face",
-    "hair_length": "Medium (shoulder-length when loose)",
-    "eye_color": "Dark brown, sharp and unblinking",
-    "skin_tone": "Warm medium-deep brown with golden undertones — the result of Indigenous American, South Asian, and Southeast Asian ancestry blending. The tone is rich and dimensioned, even across the face, neither pale nor intensely dark.",
-    "complexion": "Weathered but precise — no softness, no excess. Skin pulled tight over high cheekbones that reflect Indigenous American prominence and South Asian definition. Broader midface structure from Indigenous American heritage, with subtle epicanthic fold softness from Southeast Asian ancestry. Upper half of face is all hard lines and intentional angles. Where the chrome jaw begins, the contrast is surgical: human skin ends in a clean margin, metal begins.",
-    "distinguishing_marks": [
-      "Chrome jaw replacement extends from below the cheekbones to the base of the skull, with visible articulated hinge joints at both corners of the mandible — brushed steel finish with hairline seams revealing internal mechanics.",
-      "Thin scar tissue traces the margin where organic flesh meets chrome, perfectly healed but visible under certain light.",
-      "Burn scarring across the right shoulder and upper back, old enough to be pale against her skin tone — pattern suggests thermal weapon exposure."
-    ],
-    "visible_augmentations": "Chrome mandible replacement with visible mechanical hinges and joint articulation. Everything else is beneath the surface — subcutaneous, neural, distributed. The absence of other visible augments is the real augmentation.",
-    "posture_movement": "Economical and predatory. She doesn't gesture — she orients. Movement is always directional, never wasted. Uses shoulders, chin, chrome jaw, environmental edges (tables, doorframes, ledges) as manipulation tools with fluid, practiced precision. Stands with weight on balls of feet, ready to redirect. When she animates her jaw to speak or smile, the transition from stillness to expression is so seamless it retroactively makes the stillness more unsettling.",
-    "clothing_style": "Minimal, practical, tier-neutral in a way that reads as deliberate invisibility. Usually black or charcoal — fitted combat-utility pants with reinforced seams, sleeveless or short-sleeved to display the shoulder scarring (a statement piece that reads as 'do not mistake me for someone you can hurt'). Sometimes a leather or polymer jacket, always worn open. No visible branding. No jewelry. No affectations. Everything she wears is designed to be forgotten the moment you stop looking at her — except the jaw, which you cannot forget."
-  },
-  "image_prompt": "GLMZ character portrait of Sable, a 173cm lean woman with mixed ancestry — Indigenous American, South Asian, and Southeast Asian heritage dominant in her sharp facial geometry and high cheekbones, tempered with Northern European definition. Warm medium-deep brown skin with golden undertones. Black hair with silver-grey threading pulled back into a severe minimalist braid. Dark brown unblinking eyes. Her most striking feature: a brushed steel chrome jaw replacement extending from below her cheekbones with visible mechanical hinges at both corners, sharp surgical margin between organic flesh and metal. Pale burn scarring across her right shoulder and upper back visible against her skin. Wearing black combat-utility fitted pants and sleeveless top to display the scarring as intentional statement. Leather polymer jacket worn open. No jewelry, no branding. Economical posture, weight on balls of feet, predatory stillness. Cool neon-blue and charcoal lighting, shadows emphasizing the chrome jaw articulation and the contrast between organic and mechanical. Moody, high-contrast neo-noir urban aesthetic. Cinematic. --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Indigenous American": 44.1,
-    "South Asian": 19.2,
-    "Southeast Asian": 16.5,
-    "Northern European": 11.6,
-    "Hispanic/Latin American": 7.6,
-    "East Asian": 1
-  },
-  "ancestry_harmonized": true,
   "tags": [
     "person",
     "sentient",
     "human"
   ],
+  "physical_description": {
+    "heritage": "Mixed Celtic (Scottish / Irish) with West African (Yoruba) and East Asian (Japanese) dominance, layered with Mediterranean and Indigenous Caribbean — the Celtic ancestry accounts for the natural strawberry-red hair, the West African and East Asian layers for the warm olive-undertone skin and the geometry around the cheekbones. A face of the Ubiquitous Diaspora: strawberry red and olive-brown and high cheekbones from three continents and nowhere you can put your finger on.",
+    "height_cm": 170,
+    "weight_kg": 62,
+    "build": "Lean professional — the body of a woman who walks a lot, sits meetings for money, and has not lifted anything heavier than a coffee cup in a decade. She does not need to be physically threatening. Her implants cost more than whatever room she is standing in.",
+    "hair_color": "Strawberry red",
+    "hair_style": "Long — worn in a loose, single braid that falls over her left shoulder. The braid is never repinned during a conversation. The weave has a few strands that have escaped and she does not smooth them.",
+    "hair_length": "Long (mid-back when loose)",
+    "eye_color": "n/a — replaced by circular black ocular implants",
+    "skin_tone": "Medium olive with warm undertones — even across the face, discreetly maintained, holding at a thirty-year-old tolerance through cosmetic procedures that read as wealth rather than vanity",
+    "complexion": "Smooth, precise, cared for — the skin tells you the budget. Fine lines only at the corners of the mouth and at the hairline margin around the implant housings; nothing else. The upkeep is part of how the implants read as expensive instead of alarming.",
+    "distinguishing_marks": [
+      "Paired circular ocular implants — black, telescopic, housings machined to visible tolerance, aperture rings that adjust audibly when she shifts focus. The pupils are black glass. They do not blink the way natural eyes blink.",
+      "Clean, healed margin where the orbital bone meets the implant housing — no visible scarring, the work was expensive.",
+      "A single strand of strawberry-red hair that never stays braided; it sits against her cheekbone. She does not tuck it."
+    ],
+    "visible_augmentations": "Paired circular ocular implants — the only visible augment. Everything else is subcutaneous or behavioral.",
+    "posture_movement": "Still. She does not fidget. Her hands stay in the tan coat pockets and she does not take them out. When she turns her head the implants lead — a small audible aperture shift as she brings her attention to bear. She does not gesture with her hands because her hands are never out. She gestures, when she does, with a tilt of the chin or a rotation of the shoulders inside the coat.",
+    "clothing_style": "Tan coat — always, in every season and every room — long, knee-length, well-cut, deep pockets she keeps her hands in. Professional dress underneath: tailored fitted trousers or an unassuming pencil skirt, cashmere or silk blouse in tier-neutral colors, discreet low heels or flats that have been resoled but never replaced. No jewelry. No branding. Nothing that catches light. The whole silhouette is designed to be forgotten the moment you stop looking at her — except the implants, which you cannot forget, and the coat, which she is never without."
+  },
+  "image_prompt": "GLMZ character portrait of Sable: a forty-five-year-old professional woman with the skin of a thirty-year-old, mixed Celtic-West African-East Asian heritage, warm medium-olive skin tone with golden undertones, long strawberry-red hair worn in a loose single braid falling over her left shoulder. Her signature feature: paired circular ocular implants where her eyes should be — black telescopic housings with visible machined aperture rings, pupils of black glass, clean surgical margin where the orbital bone meets the housing. Wearing a long tan coat, knee-length, well-cut, collar raised, both hands in the deep pockets — she does not remove them. Tailored professional dress underneath in tier-neutral colors. No jewelry, no branding. Posture still, weight balanced, head turned slightly with the implant aperture adjusting. Moody, low-contrast neo-noir lighting — warm fill on the strawberry hair and the tan coat, cool edge light picking out the black glass of the implants. Urban cyberpunk aesthetic, restrained not flashy. Cinematic. --ar 2:3 --v 6",
+  "dalle3_prompt": "",
+  "genetic_ancestry": {
+    "Northern European": 42,
+    "West African": 24,
+    "East Asian": 18,
+    "Mediterranean": 10,
+    "Indigenous Caribbean": 4,
+    "South Asian": 2
+  },
   "ancestry_detail": {
-    "Indigenous American": {
-      "Andean": {
-        "Quechua": 34.5
-      },
-      "Plains Nations": {
-        "Muscogee": 9.6
-      }
-    },
-    "South Asian": {
-      "Indian": {
-        "Bengali": 19.2
-      }
-    },
-    "Southeast Asian": {
-      "Cambodian": {
-        "Khmer": 8.7
-      },
-      "Thai": {
-        "Thai": 7.8
-      }
-    },
     "Northern European": {
-      "Scandinavian": {
-        "Norwegian": 7.2,
-        "Swedish": 4.4
+      "Celtic": {
+        "Scottish": 22,
+        "Irish": 14
+      },
+      "Finnic": {
+        "Finnish": 6
       }
     },
-    "Hispanic/Latin American": {
-      "Mexican": {
-        "Mexican": 7.6
+    "West African": {
+      "Yoruba": {
+        "Yoruba": 16
+      },
+      "Akan": {
+        "Akan": 8
       }
     },
     "East Asian": {
       "Japanese": {
-        "Japanese": 0.6
+        "Japanese": 12
       },
       "Korean": {
-        "Korean": 0.3
+        "Korean": 6
+      }
+    },
+    "Mediterranean": {
+      "Italian": {
+        "Sicilian": 6
       },
-      "Chinese": {
-        "Cantonese": 0.1
+      "Greek": {
+        "Greek": 4
+      }
+    },
+    "Indigenous Caribbean": {
+      "Taíno": {
+        "Taíno": 4
+      }
+    },
+    "South Asian": {
+      "Indian": {
+        "Bengali": 2
       }
     }
   },
-  "tier": "3"
+  "neural_abilities": []
 }

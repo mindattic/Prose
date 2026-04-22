@@ -150,6 +150,7 @@
 
     DotNetObjectReference<StoryShapeChart>? dotnetRef;
     List<OutlineBeat>? AllBeats;
+    bool disposed;
 
     static readonly Dictionary<string, string> ArchetypeLabels = new()
     {
@@ -180,6 +181,8 @@
 
     protected override async Task OnAfterRenderAsync(bool firstRender)
     {
+        if (disposed) return;
+
         if (firstRender)
             dotnetRef = DotNetObjectReference.Create(this);
 
@@ -192,19 +195,31 @@
 
     async Task RenderChart()
     {
+        if (disposed) return;
         var beats = BuildBeatDtos();
-        await JS.InvokeVoidAsync("storyShape.render", chartId, beats, selectedArchetype, Compact ? null : (object?)dotnetRef, Compact);
-        if (!string.IsNullOrEmpty(TrackScrollOf))
-            await JS.InvokeVoidAsync("storyShape.trackScroll", TrackScrollOf, chartId);
+        try
+        {
+            await JS.InvokeVoidAsync("storyShape.render", chartId, beats, selectedArchetype, Compact ? null : (object?)dotnetRef, Compact);
+            if (!disposed && !string.IsNullOrEmpty(TrackScrollOf))
+                await JS.InvokeVoidAsync("storyShape.trackScroll", TrackScrollOf, chartId);
+        }
+        catch (ObjectDisposedException) { }
+        catch (JSDisconnectedException) { }
     }
 
     async Task SwitchArchetype(string key)
     {
+        if (disposed) return;
         selectedArchetype = key;
         var beats = BuildBeatDtos();
-        await JS.InvokeVoidAsync("storyShape.update", chartId, beats, selectedArchetype, Compact ? null : (object?)dotnetRef, Compact);
-        if (!string.IsNullOrEmpty(TrackScrollOf))
-            await JS.InvokeVoidAsync("storyShape.trackScroll", TrackScrollOf, chartId);
+        try
+        {
+            await JS.InvokeVoidAsync("storyShape.update", chartId, beats, selectedArchetype, Compact ? null : (object?)dotnetRef, Compact);
+            if (!disposed && !string.IsNullOrEmpty(TrackScrollOf))
+                await JS.InvokeVoidAsync("storyShape.trackScroll", TrackScrollOf, chartId);
+        }
+        catch (ObjectDisposedException) { }
+        catch (JSDisconnectedException) { }
     }
 
     void SelectBeatFromList(int index)
@@ -241,7 +256,9 @@
 
     public async ValueTask DisposeAsync()
     {
+        disposed = true;
         try { await JS.InvokeVoidAsync("storyShape.destroy", chartId); } catch { }
         dotnetRef?.Dispose();
+        dotnetRef = null;
     }
 }

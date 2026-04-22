@@ -13,7 +13,13 @@
 
 <div class="d-flex justify-content-between align-items-center mb-3">
     <h4 class="text-danger mb-0">Stories</h4>
-    <div class="d-flex gap-2">
+    <div class="d-flex gap-2 align-items-center">
+        <div class="form-check form-switch me-2" title="When on, autonomous stories are saved as Markdown (editor-native). When off, they are wrapped in HTML like the legacy pipeline.">
+            <input class="form-check-input" type="checkbox" id="markdownToggle" @bind="saveAsMarkdown" />
+            <label class="form-check-label small text-muted" for="markdownToggle">
+                @(saveAsMarkdown ? "Markdown" : "HTML")
+            </label>
+        </div>
         <button class="btn btn-sm btn-outline-primary" @onclick="SurpriseMe" disabled="@generating">
             <i class="bi bi-lightning"></i><div class="btn-lbl"> Surprise Me</div>
         </button>
@@ -73,13 +79,14 @@
                                placeholder="Search characters..."
                                @bind="protagonistQuery" @bind:event="oninput" @onkeydown="OnProtagonistKeyDown" />
 
-                        @* Always-visible scrollable suggestion list *@
+                        @* Dropdown: only visible when query has >=3 chars AND at least one name match *@
                         @{
-                            var matches = FilteredCharacters().Take(12).ToList();
+                            var showDropdown = protagonistQuery.Trim().Length >= 3;
+                            var matches = showDropdown ? FilteredCharacters().Take(12).ToList() : [];
                         }
-                        <div class="list-group mt-1" style="max-height:220px;overflow-y:auto;">
-                            @if (matches.Any())
-                            {
+                        @if (matches.Count > 0)
+                        {
+                            <div class="list-group mt-1" style="max-height:220px;overflow-y:auto;">
                                 @foreach (var c in matches)
                                 {
                                     <button type="button"
@@ -87,22 +94,10 @@
                                             @onclick="() => AddProtagonist(c.Name)">
                                         <i class="bi bi-plus-circle text-warning"></i>
                                         <span class="fw-semibold text-light">@c.Name</span>
-                                        @if (!string.IsNullOrEmpty(c.Role))
-                                        {
-                                            <span class="text-muted">— @c.Role</span>
-                                        }
                                     </button>
                                 }
-                            }
-                            else
-                            {
-                                <div class="list-group-item list-group-item-dark small text-muted fst-italic py-2">
-                                    @(string.IsNullOrWhiteSpace(protagonistQuery)
-                                        ? "All characters added."
-                                        : $"No canon character matches \"{protagonistQuery}\". Only defined characters can be selected.")
-                                </div>
-                            }
-                        </div>
+                            </div>
+                        }
                     </div>
 
                     @* Synopsis *@
@@ -269,27 +264,32 @@
 @if (failedCheckpoints.Any() && !generating)
 {
     <div class="mb-3">
-        <h6 class="text-warning"><i class="bi bi-exclamation-triangle"></i> Failed / Partial Stories</h6>
+        <h6 class="text-warning"><i class="bi bi-exclamation-triangle"></i> Damaged Stories</h6>
         @foreach (var cp in failedCheckpoints)
         {
+            var state = StoryDamage.Classify(cp);
+            var canSuggest = state == StoryDamageState.BeatsIncomplete && cp.Beats.Count > 0 && cp.Outline != null;
             <div class="card bg-dark border-warning mb-2">
                 <div class="card-body py-2 d-flex justify-content-between align-items-center">
                     <div>
-                        <span class="fw-bold text-light">@(string.IsNullOrWhiteSpace(cp.Title) ? Constants.Defaults.UntitledStory : cp.Title)</span>
-                        <small class="text-muted ms-2">@cp.Beats.Count beats written</small>
+                        <span class="fw-bold text-light">@(string.IsNullOrWhiteSpace(cp.Title) || cp.Title.Equals("Outline generation failed", StringComparison.OrdinalIgnoreCase) ? Constants.Defaults.UntitledStory : cp.Title)</span>
+                        <div class="small text-warning mt-1">@StoryDamage.Describe(cp)</div>
                         @if (!string.IsNullOrEmpty(cp.FailureReason))
                         {
-                            <div class="small text-warning mt-1">@cp.FailureReason</div>
+                            <div class="small text-muted fst-italic">@cp.FailureReason</div>
                         }
                     </div>
                     <div class="d-flex gap-1">
-                        <button class="btn btn-sm btn-outline-info" @onclick="() => GetSuggestions(cp)" disabled="@suggestionsLoading">
-                            <i class="bi bi-signpost-split"></i><div class="btn-lbl"> What Next?</div>
+                        @if (canSuggest)
+                        {
+                            <button class="btn btn-sm btn-outline-info" @onclick="() => GetSuggestions(cp)" disabled="@suggestionsLoading">
+                                <i class="bi bi-signpost-split"></i><div class="btn-lbl"> What Next?</div>
+                            </button>
+                        }
+                        <button class="btn btn-sm btn-outline-primary" @onclick="() => RepairCheckpoint(cp)" title="@StoryDamage.Describe(cp)">
+                            <i class="bi bi-wrench-adjustable"></i><div class="btn-lbl"> Repair</div>
                         </button>
-                        <button class="btn btn-sm btn-outline-primary" @onclick="() => ResumeCheckpoint(cp)">
-                            <i class="bi bi-play-fill"></i><div class="btn-lbl"> Resume</div>
-                        </button>
-                        <button class="btn btn-sm btn-outline-secondary" @onclick="() => ArchiveCheckpoint(cp.ProjectId)">
+                        <button class="btn btn-sm btn-outline-secondary" @onclick="() => ArchiveCheckpoint(cp.ProjectId)" title="Archive">
                             <i class="bi bi-archive"></i>
                         </button>
                     </div>
@@ -352,6 +352,8 @@ else if (!generating)
     private List<AutonomousStory> failedCheckpoints = [];
     private string? confirmArchiveId;
     private bool generating;
+    // Autonomous-story output format. Default: Markdown (editor-native). False = legacy HTML pipeline.
+    private bool saveAsMarkdown = true;
     private bool suggestionsLoading;
     private string progressMessage = "";
     private int progressCurrent, _progressTotal;
@@ -412,26 +414,25 @@ else if (!generating)
             .Select(x => x.Char);
     }
 
-    // Rank: 0 exact, 1 name starts-with, 2 token starts-with, 3 name ends-with,
-    // 4 name contains, 5 alias match, 6 role match. int.MaxValue = no match.
+    // Matches Name and Aliases only — never Role or description.
+    // Rank: 0 exact, 1 starts-with, 2 token starts-with, 3 contains. int.MaxValue = no match.
     private static int MatchRank(CharacterData c, string q)
     {
         var cmp = StringComparison.OrdinalIgnoreCase;
-        var name = c.Name ?? "";
+        var candidates = new List<string> { c.Name ?? "" };
+        if (c.Aliases != null) candidates.AddRange(c.Aliases);
 
-        if (name.Equals(q, cmp)) return 0;
-        if (name.StartsWith(q, cmp)) return 1;
-
-        foreach (var token in name.Split(' ', StringSplitOptions.RemoveEmptyEntries))
-            if (token.StartsWith(q, cmp)) return 2;
-
-        if (name.EndsWith(q, cmp)) return 3;
-        if (name.Contains(q, cmp)) return 4;
-
-        if (c.Aliases?.Any(a => a.Contains(q, cmp)) == true) return 5;
-        if (!string.IsNullOrEmpty(c.Role) && c.Role.Contains(q, cmp)) return 6;
-
-        return int.MaxValue;
+        var best = int.MaxValue;
+        foreach (var s in candidates)
+        {
+            if (string.IsNullOrEmpty(s)) continue;
+            if (s.Equals(q, cmp)) return 0;
+            if (s.StartsWith(q, cmp)) { best = Math.Min(best, 1); continue; }
+            foreach (var token in s.Split(' ', StringSplitOptions.RemoveEmptyEntries))
+                if (token.StartsWith(q, cmp)) { best = Math.Min(best, 2); break; }
+            if (best > 3 && s.Contains(q, cmp)) best = 3;
+        }
+        return best;
     }
 
     // Only canon characters (those with a character file) can be selected.
@@ -497,7 +498,7 @@ else if (!generating)
                     Id = autonomousStory.ProjectId,
                     Title = autonomousStory.Title,
                     Characters = autonomousStory.Characters,
-                    Html = ConvertToHtml(autonomousStory),
+                    Html = saveAsMarkdown ? ConvertToMarkdown(autonomousStory) : ConvertToHtml(autonomousStory),
                     Status = Constants.Status.Draft,
                 };
                 Repo.SaveProject(project);
@@ -576,7 +577,7 @@ else if (!generating)
                     Id = autonomousStory.ProjectId,
                     Title = autonomousStory.Title,
                     Characters = autonomousStory.Characters,
-                    Html = ConvertToHtml(autonomousStory),
+                    Html = saveAsMarkdown ? ConvertToMarkdown(autonomousStory) : ConvertToHtml(autonomousStory),
                     Status = Constants.Status.Draft,
                 };
                 Repo.SaveProject(project);
@@ -611,7 +612,7 @@ else if (!generating)
                     Id = autonomousStory.ProjectId,
                     Title = autonomousStory.Title,
                     Characters = autonomousStory.Characters,
-                    Html = ConvertToHtml(autonomousStory),
+                    Html = saveAsMarkdown ? ConvertToMarkdown(autonomousStory) : ConvertToHtml(autonomousStory),
                     Status = Constants.Status.Draft,
                 };
                 Repo.SaveProject(project);
@@ -650,7 +651,47 @@ else if (!generating)
                     Id = autonomousStory.ProjectId,
                     Title = autonomousStory.Title,
                     Characters = autonomousStory.Characters,
-                    Html = ConvertToHtml(autonomousStory),
+                    Html = saveAsMarkdown ? ConvertToMarkdown(autonomousStory) : ConvertToHtml(autonomousStory),
+                    Status = Constants.Status.Draft,
+                };
+                Repo.SaveProject(project);
+                projects = Repo.ListProjects();
+                LoadFailedCheckpoints();
+                Nav.NavigateTo($"/stories/write/{project.Id}");
+            }
+            else
+            {
+                LoadFailedCheckpoints();
+            }
+        }
+        catch (OperationCanceledException) { progressMessage = "Cancelled."; }
+        catch (Exception ex) { progressMessage = $"Error: {ex.Message}"; LoadFailedCheckpoints(); }
+        finally { generating = false; }
+    }
+
+    private async Task RepairCheckpoint(AutonomousStory checkpoint)
+    {
+        generating = true;
+        liveBeats = new List<GeneratedStoryBeat>(checkpoint.Beats);
+        autonomousStory = checkpoint;
+        progressMessage = $"Repairing: {StoryDamage.Describe(checkpoint)}";
+        progressCurrent = checkpoint.Beats.Count;
+        _progressTotal = checkpoint.Outline?.Acts.Sum(a => a.Beats.Count) ?? 0;
+        cts = new CancellationTokenSource();
+        StateHasChanged();
+
+        try
+        {
+            autonomousStory = await Director.RepairStoryAsync(checkpoint, cts.Token);
+
+            if (autonomousStory.Complete)
+            {
+                var project = new StoryProject
+                {
+                    Id = autonomousStory.ProjectId,
+                    Title = autonomousStory.Title,
+                    Characters = autonomousStory.Characters,
+                    Html = saveAsMarkdown ? ConvertToMarkdown(autonomousStory) : ConvertToHtml(autonomousStory),
                     Status = Constants.Status.Draft,
                 };
                 Repo.SaveProject(project);
@@ -744,5 +785,38 @@ else if (!generating)
         }
 
         return sb.ToString();
+    }
+
+    // Markdown output — preferred format for autonomous stories. The WriteStory editor
+    // treats StoryProject.Html as Markdown source (MarkdownService.RenderToHtml renders it
+    // for display), so emitting Markdown here keeps the round-trip lossless: inline
+    // *italics*, em-dashes, and section breaks survive unchanged instead of being
+    // HtmlEncoded into literal asterisks on save.
+    private static string ConvertToMarkdown(AutonomousStory story)
+    {
+        var sb = new System.Text.StringBuilder();
+        sb.AppendLine($"# {story.Title}");
+        sb.AppendLine();
+        sb.AppendLine($"*Protagonist: {story.Protagonist}*");
+        sb.AppendLine();
+
+        int lastAct = 0;
+        foreach (var beat in story.Beats)
+        {
+            if (beat.Act != lastAct)
+            {
+                var actName = story.Outline?.Acts.FirstOrDefault(a => a.ActNumber == beat.Act)?.Name ?? $"Act {beat.Act}";
+                sb.AppendLine($"## Act {beat.Act}: {actName}");
+                sb.AppendLine();
+                lastAct = beat.Act;
+            }
+
+            sb.AppendLine(beat.Text.Trim());
+            sb.AppendLine();
+            sb.AppendLine("---");
+            sb.AppendLine();
+        }
+
+        return sb.ToString().TrimEnd();
     }
 }
