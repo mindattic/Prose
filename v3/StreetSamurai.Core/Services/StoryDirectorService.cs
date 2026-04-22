@@ -326,6 +326,149 @@ public class StoryDirectorService : IStoryDirectorService
     }
 
     /// <summary>
+    /// Generate a story guided by the user: they supply the protagonist(s), a
+    /// synopsis of what the story should be about, and optionally a location.
+    /// The synopsis becomes the premise verbatim (plus the standard GLMZ-battle
+    /// injection), skipping agenda premise discovery. Supporting cast is filled
+    /// in from the primary protagonist's relationships when fewer than two
+    /// protagonists are supplied.
+    /// </summary>
+    public async Task<AutonomousStory> GuidedStoryAsync(
+        List<string> protagonists, string synopsis, string? location = null, int targetBeats = 8, CancellationToken ct = default)
+    {
+        // Clamp to a sane range — 3 is the minimum for a 3-act arc, 16 is the
+        // upper bound before context pressure starts degrading beat quality.
+        targetBeats = Math.Clamp(targetBeats, 3, 16);
+
+        log.LogInformation("=== GuidedStoryAsync: protagonists=[{Protagonists}], synopsis={SynLen} chars, location={Location}, beats={Beats} ===",
+            string.Join(", ", protagonists), synopsis?.Length ?? 0, location ?? "random", targetBeats);
+
+        var story = new AutonomousStory();
+        IsGenerating = true;
+        CurrentStory = story;
+
+        try
+        {
+            if (protagonists == null || protagonists.Count == 0)
+                throw new ArgumentException("At least one protagonist is required.", nameof(protagonists));
+            if (string.IsNullOrWhiteSpace(synopsis))
+                throw new ArgumentException("A synopsis is required.", nameof(synopsis));
+
+            Report("Building cast...");
+            var allChars = db.Characters;
+            var primaryName = protagonists[0];
+            var primary = allChars.FirstOrDefault(c => c.Name.Equals(primaryName, StringComparison.OrdinalIgnoreCase))
+                ?? new CharacterData { Name = primaryName };
+
+            // Cast = user-supplied protagonists + relationship fill if <2 total
+            var cast = new List<string> { primary.Name };
+            foreach (var name in protagonists.Skip(1))
+            {
+                if (!cast.Contains(name, StringComparer.OrdinalIgnoreCase))
+                    cast.Add(name);
+            }
+            if (cast.Count < 2)
+            {
+                foreach (var rel in primary.Relationships.Take(3))
+                {
+                    var relChar = allChars.FirstOrDefault(c => c.Name == rel.Name && c.Status != "dead");
+                    if (relChar != null && !cast.Contains(relChar.Name, StringComparer.OrdinalIgnoreCase))
+                        cast.Add(relChar.Name);
+                    if (cast.Count >= 3) break;
+                }
+            }
+            while (cast.Count < 2)
+            {
+                var random = allChars
+                    .Where(c => !cast.Contains(c.Name, StringComparer.OrdinalIgnoreCase) && c.Status != "dead")
+                    .OrderBy(_ => Random.Shared.Next()).FirstOrDefault();
+                if (random == null) break;
+                cast.Add(random.Name);
+            }
+
+            story.Protagonist = primary.Name;
+            story.Characters = cast;
+
+            // Location: user-supplied (validated loosely) or random fallback
+            var districts = db.Districts;
+            var chosenLocation = !string.IsNullOrWhiteSpace(location)
+                ? location!
+                : (districts.Count > 0
+                    ? districts[Random.Shared.Next(districts.Count)].Name
+                    : "the Gray Zone");
+            story.Location = chosenLocation;
+
+            // Synopsis IS the premise — no agenda discovery
+            story.Premise = synopsis.Trim();
+
+            Report("Architecting story arc...");
+            var consequenceContext = consequences.BuildConsequenceContext(primary.Name);
+            var guidedPremise =
+                $"USER-SUPPLIED SYNOPSIS (this is the story the user asked for — honor its premise, characters, and direction):\n{synopsis.Trim()}"
+                + "\n\nIMPORTANT: GLMZ is a dangerous world. This story MUST include at least one battle/combat/violent conflict scene. Random crime and violence can erupt at any time. Include at least one beat specifically tagged for combat."
+                + (consequenceContext.Length > 0 ? $"\n\nWORLD CONSEQUENCES FROM PREVIOUS STORIES:\n{consequenceContext}" : "");
+
+            var outline = await outlineSvc.GenerateOutlineAsync(guidedPremise, cast, chosenLocation, targetBeats, ct);
+            story.Outline = outline;
+            story.Title = outline.Title;
+
+            EnsureBattleBeat(outline);
+
+            // Assign project ID and save the checkpoint with outline (before any beats)
+            var projectId = Guid.CreateVersion7().ToString("N");
+            story.ProjectId = projectId;
+            outlineSvc.Save(projectId, outline);
+
+            Report("Reviewing story arc...");
+            try
+            {
+                var reviewResult = await outlineReview.ReviewAsync(outline, ct);
+                story.OutlineReview = reviewResult;
+                if (reviewResult.RevisedOutline.Acts.Count > 0)
+                {
+                    outline = reviewResult.RevisedOutline;
+                    story.Outline = outline;
+                    log.LogInformation("Guided outline revised by review: moral={Moral}/10, strength={Strength}/10",
+                        reviewResult.MoralAmbiguityScore, reviewResult.NarrativeStrength);
+                }
+                outlineReview.Save(projectId, reviewResult);
+            }
+            catch (Exception ex)
+            {
+                log.LogWarning(ex, "Outline review failed on guided story — proceeding with original outline");
+            }
+
+            SaveCheckpoint(story);
+            log.LogInformation("Guided outline checkpoint saved: {ProjectId}", projectId);
+
+            storyState.InitializeCharacter(projectId, primary.Name, chosenLocation);
+            foreach (var c in cast.Where(c => c != primary.Name))
+                storyState.InitializeCharacter(projectId, c);
+
+            await WritBeatsWithResilience(story, outline, (primary.Name, cast), chosenLocation, ct);
+        }
+        catch (OperationCanceledException)
+        {
+            log.LogWarning("Guided story generation cancelled — saving partial story");
+            story.FailureReason = "Cancelled by user";
+            SaveCheckpoint(story);
+        }
+        catch (Exception ex)
+        {
+            log.LogError(ex, "Guided story generation failed");
+            story.FailureReason = $"Pipeline failure: {ex.Message}";
+            SaveCheckpoint(story);
+        }
+        finally
+        {
+            IsGenerating = false;
+            CurrentStory = null;
+        }
+
+        return story;
+    }
+
+    /// <summary>
     /// Resume a previously failed or partially generated story from its last checkpoint.
     /// Loads the saved outline and continues from the first unwritten beat.
     /// </summary>

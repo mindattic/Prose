@@ -7,6 +7,7 @@
     "Kyle Corbin-Vasik",
     "Kyle",
     "The Samurai",
+    "Street Samurai",
     "NDC-4471",
     "Ghost 7"
   ],
@@ -103,12 +104,12 @@
     "His escape may have been engineered — an unwitting field test",
     "The neural patterns of dead test subjects in his firmware are becoming more vivid"
   ],
-  "narrative_function": "Kyle is the lens through which the reader experiences the GLMZ. His experimental hardware makes him perceive the world at a different speed and resolution, driving the prose style — tight, sensory, fragmented. His central contradiction: the facility made him a weapon, but he uses that weapon to protect the vulnerable.",
+  "narrative_function": "Kyle is the lens through which the reader experiences the GLMZ. His experimental hardware makes him perceive the world at a different speed and resolution, driving the prose style — tight, sensory, fragmented.\n\nCore contradiction: A warrior of honor surviving in a world that punishes honor. Samurai means discipline, dignity, service. Street means survival, compromise, moral decay. He is both, fully, at all times. The facility made him a weapon; he uses that weapon to protect the vulnerable.\n\nArc: Coming to terms with a lifetime of hypocrisy. Trying to be a good man in a world that doesn't care about goodness and doesn't reward adherence to an ancient philosophy. The world doesn't even notice his struggle — that's the satire.",
   "augmentations": "Experimental NeoCortex Program Atlas array — 32,768 electrodes, 256 threads, 8x standard density. Degrading firmware. Gives cognitive speed, reaction time, fragmentary sensory access.",
   "daily_life": "Freelance enforcement, retrieval, problem-solving for the excluded. Maintains hardware with salvaged tools.",
   "affiliation": "Independent",
   "uses_facets": true,
-  "narration_voice": "Tight, sensory, interior. Short sentences because the experimental hardware processes faster than language. Long thoughts fragment. Kyle notices details before meaning — the temperature of a room before the people in it, the hum of electronics before the words being spoken. Interior facet tags ([WOUND], [IDEAL], [SHADOW], [GHOST], [ID], [MASK]) surface as brief, italicized interjections that disagree with each other. The narration is third person limited, close — the reader is inside Kyle's augmented perception. Humor is rare, dry, and always at his own expense. When violence happens, the prose gets clinical — he describes it like a surgeon describes an incision. When beauty surfaces, the prose warms half a degree, then shuts it down.",
+  "narration_voice": "Kyle is more present in his own head than in the room. His body runs the fight; his mind watches from a step behind, narrating. In the white space between actions — the half-second after a trigger pull, the moment of an arm dropping — the observing part catches up and says something cold and exact. He notices the wrong things: a simile, a moral ledger entry, the precise word for a beautiful terrible thing. He is not dissociating. He is paying a different kind of attention.\n\nTight, sensory, interior. Short sentences because the experimental hardware processes faster than language. Long thoughts fragment. Kyle notices details before meaning — the temperature of a room before the people in it, the hum of electronics before the words being spoken. Interior facet tags ([WOUND], [IDEAL], [SHADOW], [GHOST], [ID], [MASK]) surface as brief, italicized interjections that disagree with each other. The narration is third person limited, close — the reader is inside Kyle's augmented perception. Humor is rare, dry, and always at his own expense. When violence happens, the prose gets clinical — he describes it like a surgeon describes an incision. When beauty surfaces, the prose warms half a degree, then shuts it down.",
   "stats": {
     "physical": {
       "strength": 6,
@@ -370,7 +371,14 @@
   "tags": [
     "person",
     "sentient",
-    "human"
+    "human",
+    "protagonist",
+    "street-samurai",
+    "war",
+    "augment",
+    "shadow",
+    "moral",
+    "survival"
   ],
   "physical_description": {
     "heritage": "Eastern European / Pacific Islander (Corbin — Anglo-Slavic; Vasik — Czech-Polynesian)",

@@ -7,6 +7,8 @@
 @inject StoryDirectorService Director
 @inject NavigationManager Nav
 @inject SuggestionEngineService Suggestions
+@inject CharacterRepository CharRepo
+@inject DistrictRepository DistrictRepo
 @implements IDisposable
 
 <div class="d-flex justify-content-between align-items-center mb-3">
@@ -15,9 +17,140 @@
         <button class="btn btn-sm btn-outline-primary" @onclick="SurpriseMe" disabled="@generating">
             <i class="bi bi-lightning"></i><div class="btn-lbl"> Surprise Me</div>
         </button>
+        <button class="btn btn-sm btn-outline-warning" @onclick="OpenGuideMe" disabled="@generating">
+            <i class="bi bi-compass"></i><div class="btn-lbl"> Guide Me</div>
+        </button>
         <button class="btn btn-sm btn-outline-danger" @onclick="CreateNew"><i class="bi bi-plus-lg"></i><div class="btn-lbl"> New Story</div></button>
     </div>
 </div>
+
+@* ── Guide Me Modal ──────────────────────────────── *@
+@if (guideMeOpen)
+{
+    <div class="modal-backdrop fade show" style="z-index:1050;"></div>
+    <div class="modal fade show d-block" tabindex="-1" style="z-index:1055;" @onclick="CloseGuideMe">
+        <div class="modal-dialog modal-dialog-centered modal-lg" @onclick:stopPropagation="true">
+            <div class="modal-content bg-dark text-light border-warning">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title text-warning"><i class="bi bi-compass me-2"></i>Guide the Story</h5>
+                    <button type="button" class="btn-close btn-close-white" @onclick="CloseGuideMe"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="small text-muted">Pick the protagonist(s), write a synopsis, and the director will build the outline, review it, and write every beat.</p>
+
+                    @* Protagonists *@
+                    <div class="mb-3">
+                        <label class="form-label small text-info mb-1">
+                            Protagonist(s) <span class="text-danger">*</span>
+                            <span class="text-muted ms-1">— click to add, × to remove. Multiple allowed.</span>
+                        </label>
+
+                        @* Selected badges — prominent above input so user sees what they've picked *@
+                        <div class="d-flex flex-wrap gap-1 mb-2 p-2 border border-secondary rounded"
+                             style="min-height:42px;background:rgba(0,0,0,0.3);">
+                            @if (selectedProtagonists.Any())
+                            {
+                                @foreach (var p in selectedProtagonists)
+                                {
+                                    <span class="badge bg-warning text-dark d-flex align-items-center gap-2 py-2 px-2" style="font-size:0.85rem;">
+                                        <i class="bi bi-person-fill"></i>
+                                        @p
+                                        <button type="button" class="btn btn-sm p-0 border-0 bg-transparent text-dark"
+                                                style="line-height:1;font-weight:bold;"
+                                                title="Remove @p"
+                                                @onclick="() => RemoveProtagonist(p)">×</button>
+                                    </span>
+                                }
+                            }
+                            else
+                            {
+                                <span class="text-muted small fst-italic align-self-center">No protagonists picked yet — click a character below to add.</span>
+                            }
+                        </div>
+
+                        @* Search input *@
+                        <input type="text" class="form-control form-control-sm bg-black text-light border-secondary"
+                               placeholder="Search characters..."
+                               @bind="protagonistQuery" @bind:event="oninput" @onkeydown="OnProtagonistKeyDown" />
+
+                        @* Always-visible scrollable suggestion list *@
+                        @{
+                            var matches = FilteredCharacters().Take(12).ToList();
+                        }
+                        <div class="list-group mt-1" style="max-height:220px;overflow-y:auto;">
+                            @if (matches.Any())
+                            {
+                                @foreach (var c in matches)
+                                {
+                                    <button type="button"
+                                            class="list-group-item list-group-item-action list-group-item-dark py-1 small d-flex align-items-center gap-2"
+                                            @onclick="() => AddProtagonist(c.Name)">
+                                        <i class="bi bi-plus-circle text-warning"></i>
+                                        <span class="fw-semibold text-light">@c.Name</span>
+                                        @if (!string.IsNullOrEmpty(c.Role))
+                                        {
+                                            <span class="text-muted">— @c.Role</span>
+                                        }
+                                    </button>
+                                }
+                            }
+                            else
+                            {
+                                <div class="list-group-item list-group-item-dark small text-muted fst-italic py-2">
+                                    @(string.IsNullOrWhiteSpace(protagonistQuery)
+                                        ? "All characters added."
+                                        : $"No canon character matches \"{protagonistQuery}\". Only defined characters can be selected.")
+                                </div>
+                            }
+                        </div>
+                    </div>
+
+                    @* Synopsis *@
+                    <div class="mb-3">
+                        <label class="form-label small text-info mb-1">Synopsis <span class="text-danger">*</span></label>
+                        <textarea class="form-control form-control-sm bg-black text-light border-secondary"
+                                  rows="5" placeholder="What is this story about? How does it start, what does the protagonist want, what complicates things?"
+                                  @bind="synopsisText" @bind:event="oninput"></textarea>
+                        <div class="small text-muted mt-1">@(synopsisText?.Length ?? 0) chars — more detail = more control.</div>
+                    </div>
+
+                    @* Optional location *@
+                    <div class="mb-2">
+                        <label class="form-label small text-info mb-1">Location <span class="text-muted">(optional)</span></label>
+                        <select class="form-select form-select-sm bg-black text-light border-secondary" @bind="selectedLocation">
+                            <option value="">— Let the director choose —</option>
+                            @foreach (var d in districts)
+                            {
+                                <option value="@d.Name">@d.Name</option>
+                            }
+                        </select>
+                    </div>
+
+                    @* Length *@
+                    <div class="mb-2">
+                        <label class="form-label small text-info mb-1">Length</label>
+                        <select class="form-select form-select-sm bg-black text-light border-secondary" @bind="selectedBeats">
+                            <option value="5">Short — 5 beats (~3–5 min)</option>
+                            <option value="8">Standard — 8 beats (~4–8 min)</option>
+                            <option value="12">Long — 12 beats (~6–12 min)</option>
+                        </select>
+                    </div>
+
+                    @if (!string.IsNullOrEmpty(guideMeError))
+                    {
+                        <div class="alert alert-danger small py-2 mt-2 mb-0">@guideMeError</div>
+                    }
+                </div>
+                <div class="modal-footer border-secondary">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" @onclick="CloseGuideMe">Cancel</button>
+                    <button type="button" class="btn btn-sm btn-warning" @onclick="StartGuided" disabled="@(!CanStartGuided())">
+                        <i class="bi bi-lightning-fill me-1"></i>Start Story
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
 
 @* ── Autonomous Generation Progress ────────────────────── *@
 @if (generating)
@@ -208,6 +341,7 @@ else if (!generating)
         <p>No stories yet.</p>
         <div class="d-flex gap-2 justify-content-center">
             <button class="btn btn-outline-primary" @onclick="SurpriseMe"><i class="bi bi-lightning"></i><div class="btn-lbl"> Surprise Me</div></button>
+            <button class="btn btn-outline-warning" @onclick="OpenGuideMe"><i class="bi bi-compass"></i><div class="btn-lbl"> Guide Me</div></button>
             <button class="btn btn-outline-danger" @onclick="CreateNew"><div class="btn-lbl">New Story</div></button>
         </div>
     </div>
@@ -232,6 +366,148 @@ else if (!generating)
         projects = Repo.ListProjects();
         LoadFailedCheckpoints();
         Director.OnProgress += OnDirectorProgress;
+        CharRepo.Reload();
+        allCharacters = CharRepo.GetAll();
+        districts = DistrictRepo.GetAll();
+    }
+
+    // ── Guide Me modal state ────────────────────────────
+    private bool guideMeOpen;
+    private List<CharacterData> allCharacters = [];
+    private List<DistrictData> districts = [];
+    private List<string> selectedProtagonists = [];
+    private string protagonistQuery = "";
+    private string synopsisText = "";
+    private string selectedLocation = "";
+    private int selectedBeats = 8;
+    private string guideMeError = "";
+
+    private void OpenGuideMe()
+    {
+        selectedProtagonists = [];
+        protagonistQuery = "";
+        synopsisText = "";
+        selectedLocation = "";
+        selectedBeats = 8;
+        guideMeError = "";
+        guideMeOpen = true;
+    }
+
+    private void CloseGuideMe() => guideMeOpen = false;
+
+    private IEnumerable<CharacterData> FilteredCharacters()
+    {
+        var q = protagonistQuery.Trim();
+        var pool = allCharacters
+            .Where(c => !selectedProtagonists.Contains(c.Name, StringComparer.OrdinalIgnoreCase));
+
+        if (q.Length == 0)
+            return pool.OrderBy(c => c.Name);
+
+        return pool
+            .Select(c => new { Char = c, Rank = MatchRank(c, q) })
+            .Where(x => x.Rank < int.MaxValue)
+            .OrderBy(x => x.Rank)
+            .ThenBy(x => x.Char.Name)
+            .Select(x => x.Char);
+    }
+
+    // Rank: 0 exact, 1 name starts-with, 2 token starts-with, 3 name ends-with,
+    // 4 name contains, 5 alias match, 6 role match. int.MaxValue = no match.
+    private static int MatchRank(CharacterData c, string q)
+    {
+        var cmp = StringComparison.OrdinalIgnoreCase;
+        var name = c.Name ?? "";
+
+        if (name.Equals(q, cmp)) return 0;
+        if (name.StartsWith(q, cmp)) return 1;
+
+        foreach (var token in name.Split(' ', StringSplitOptions.RemoveEmptyEntries))
+            if (token.StartsWith(q, cmp)) return 2;
+
+        if (name.EndsWith(q, cmp)) return 3;
+        if (name.Contains(q, cmp)) return 4;
+
+        if (c.Aliases?.Any(a => a.Contains(q, cmp)) == true) return 5;
+        if (!string.IsNullOrEmpty(c.Role) && c.Role.Contains(q, cmp)) return 6;
+
+        return int.MaxValue;
+    }
+
+    // Only canon characters (those with a character file) can be selected.
+    // The name passed in must match a Character.Name from Canon.ListCharacters().
+    private void AddProtagonist(string name)
+    {
+        var trimmed = name.Trim();
+        if (trimmed.Length == 0) return;
+        if (!allCharacters.Any(c => string.Equals(c.Name, trimmed, StringComparison.OrdinalIgnoreCase)))
+            return;
+        if (!selectedProtagonists.Contains(trimmed, StringComparer.OrdinalIgnoreCase))
+            selectedProtagonists.Add(trimmed);
+        protagonistQuery = "";
+    }
+
+    private void RemoveProtagonist(string name) =>
+        selectedProtagonists.RemoveAll(p => string.Equals(p, name, StringComparison.OrdinalIgnoreCase));
+
+    private void OnProtagonistKeyDown(KeyboardEventArgs e)
+    {
+        if (e.Key != "Enter") return;
+        var match = FilteredCharacters().FirstOrDefault();
+        if (match != null) AddProtagonist(match.Name);
+    }
+
+    private bool CanStartGuided() =>
+        selectedProtagonists.Count > 0
+        && !string.IsNullOrWhiteSpace(synopsisText)
+        && synopsisText.Trim().Length >= 20
+        && !generating;
+
+    private async Task StartGuided()
+    {
+        if (!CanStartGuided())
+        {
+            guideMeError = selectedProtagonists.Count == 0
+                ? "Pick at least one protagonist."
+                : "Synopsis needs at least 20 characters.";
+            return;
+        }
+
+        var protags = selectedProtagonists.ToList();
+        var synopsis = synopsisText.Trim();
+        var loc = string.IsNullOrWhiteSpace(selectedLocation) ? null : selectedLocation;
+
+        guideMeOpen = false;
+        generating = true;
+        liveBeats.Clear();
+        progressMessage = $"Starting guided story for {protags[0]}...";
+        progressCurrent = 0;
+        _progressTotal = 0;
+        cts = new CancellationTokenSource();
+        StateHasChanged();
+
+        try
+        {
+            autonomousStory = await Director.GuidedStoryAsync(protags, synopsis, loc, selectedBeats, cts.Token);
+
+            if (autonomousStory.Complete)
+            {
+                var project = new StoryProject
+                {
+                    Id = autonomousStory.ProjectId,
+                    Title = autonomousStory.Title,
+                    Characters = autonomousStory.Characters,
+                    Html = ConvertToHtml(autonomousStory),
+                    Status = Constants.Status.Draft,
+                };
+                Repo.SaveProject(project);
+                projects = Repo.ListProjects();
+                Nav.NavigateTo($"/stories/write/{project.Id}");
+            }
+        }
+        catch (OperationCanceledException) { progressMessage = "Cancelled."; }
+        catch (Exception ex) { progressMessage = $"Error: {ex.Message}"; }
+        finally { generating = false; StateHasChanged(); }
     }
 
     private void LoadFailedCheckpoints()
