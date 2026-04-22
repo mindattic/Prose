@@ -90,7 +90,7 @@ public class OutlineService
         {
             response = await llm.GenerateAsync(system,
                 $"PREMISE: {premise}\nCHARACTERS: {string.Join(", ", characters)}\nTARGET BEATS: {targetBeats}",
-                0.8, 8192, ct: ct);
+                0.8, 16384, ct: ct);
 
             log.LogDebug("Outline LLM response received: {ResponseLen} chars", response.Length);
         }
@@ -210,39 +210,91 @@ public class OutlineService
     /// </summary>
     private static string RepairTruncatedJson(string json)
     {
-        // Trim to the last complete value boundary we can find
-        // Walk backwards to find a reasonable cut point
+        // Walk forward tracking structure, detect what state we ended in,
+        // then trim back to the last safe boundary before closing braces.
         var trimmed = json.TrimEnd();
 
-        // If we're mid-string, close the string and trim the incomplete value
         var inString = false;
         var escaped = false;
-        var stack = new Stack<char>(); // tracks { and [
+        var stack = new Stack<char>();
+        var lastColon = -1;        // byte index of the last ':' seen at current depth
+        var lastComma = -1;        // byte index of the last ',' seen at current depth
+        var stringStart = -1;      // byte index of the last opening '"'
 
         for (int i = 0; i < trimmed.Length; i++)
         {
             var c = trimmed[i];
             if (escaped) { escaped = false; continue; }
             if (c == '\\' && inString) { escaped = true; continue; }
-            if (c == '"') { inString = !inString; continue; }
+            if (c == '"') { if (!inString) stringStart = i; inString = !inString; continue; }
             if (inString) continue;
 
-            if (c == '{') stack.Push('}');
-            else if (c == '[') stack.Push(']');
-            else if (c == '}' || c == ']')
-            {
-                if (stack.Count > 0 && stack.Peek() == c) stack.Pop();
-            }
+            if (c == '{') { stack.Push('}'); lastColon = -1; lastComma = -1; }
+            else if (c == '[') { stack.Push(']'); lastColon = -1; lastComma = -1; }
+            else if (c == '}' || c == ']') { if (stack.Count > 0 && stack.Peek() == c) stack.Pop(); }
+            else if (c == ':') lastColon = i;
+            else if (c == ',') lastComma = i;
         }
 
-        // If we ended inside a string, close it
-        if (inString) trimmed += "\"";
+        // Case 1: ended inside a string. Decide if it's a value or an orphan key.
+        if (inString)
+        {
+            // A value-string always comes after a ':'. A key-string comes after '{' or ','.
+            // If the last ':' we saw is BEFORE the string start, this is an orphan key — trim it.
+            if (lastColon < stringStart)
+            {
+                // Trim back to the last comma or opening brace at this depth
+                var cut = Math.Max(lastComma, stringStart - 1);
+                // Walk back past whitespace to find the comma or opening brace
+                while (cut > 0 && (trimmed[cut] == ',' || char.IsWhiteSpace(trimmed[cut]))) cut--;
+                trimmed = trimmed[..(cut + 1)];
+            }
+            else
+            {
+                // It's a value — just close the string
+                trimmed += "\"";
+            }
+        }
+        else if (lastComma > lastColon && lastColon >= 0)
+        {
+            // Case 2: ended after a ':' but before a value, or after a key with no value.
+            // If there's a dangling "key": with nothing after, trim back to the previous comma.
+            var tail = trimmed[(lastColon + 1)..].TrimEnd();
+            if (tail.Length == 0 || tail == "," || !HasValueChar(tail))
+            {
+                // Walk back to before the orphan key
+                var cut = FindKeyStart(trimmed, lastColon);
+                if (cut > 0) trimmed = trimmed[..cut].TrimEnd(',', ' ', '\t', '\r', '\n');
+            }
+        }
 
         // Close all open structures
         while (stack.Count > 0)
             trimmed += stack.Pop();
 
         return trimmed;
+    }
+
+    private static bool HasValueChar(string s)
+    {
+        foreach (var c in s) if (!char.IsWhiteSpace(c) && c != ',') return true;
+        return false;
+    }
+
+    private static int FindKeyStart(string json, int colonIndex)
+    {
+        // Walk backwards from the colon: skip whitespace, then skip the key string,
+        // then return the index right after the preceding comma or opening brace.
+        int i = colonIndex - 1;
+        while (i >= 0 && char.IsWhiteSpace(json[i])) i--;
+        if (i < 0 || json[i] != '"') return -1;
+        i--; // inside the key
+        while (i >= 0 && json[i] != '"') i--;
+        i--; // before the opening quote
+        while (i >= 0 && char.IsWhiteSpace(json[i])) i--;
+        if (i < 0) return -1;
+        if (json[i] == ',' || json[i] == '{' || json[i] == '[') return i;
+        return -1;
     }
 
     /// <summary>Save outline to disk alongside the story project.</summary>

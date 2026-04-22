@@ -1122,6 +1122,175 @@ public class StoryDirectorService : IStoryDirectorService
         ProgressTotal = total;
         OnProgress?.Invoke(new DirectorProgress { Message = message, CurrentBeat = current, TotalBeats = total });
     }
+
+    /// <summary>
+    /// Repair a damaged story checkpoint. Inspects what's present on disk and
+    /// re-enters the pipeline at the earliest broken stage — regenerating the
+    /// outline if it's empty, re-running the review if it's missing/broken, or
+    /// just continuing beat writing. The preserved premise, cast, and location
+    /// from the checkpoint are reused so the story keeps its original intent.
+    /// </summary>
+    public async Task<AutonomousStory> RepairStoryAsync(AutonomousStory story, CancellationToken ct = default)
+    {
+        if (story.Complete)
+        {
+            log.LogWarning("RepairStoryAsync called on already-complete story {ProjectId}", story.ProjectId);
+            return story;
+        }
+
+        var state = StoryDamage.Classify(story);
+        log.LogInformation("=== RepairStoryAsync: {ProjectId} damage={State} ===", story.ProjectId, state);
+
+        story.FailureReason = null;
+        IsGenerating = true;
+        CurrentStory = story;
+
+        try
+        {
+            var location = string.IsNullOrWhiteSpace(story.Location) ? "the Gray Zone" : story.Location;
+            var primary = string.IsNullOrWhiteSpace(story.Protagonist)
+                ? (story.Characters.FirstOrDefault() ?? "Kyle")
+                : story.Protagonist;
+            var cast = story.Characters.Count > 0 ? story.Characters : [primary];
+            if (!cast.Contains(primary, StringComparer.OrdinalIgnoreCase))
+                cast.Insert(0, primary);
+            story.Protagonist = primary;
+            story.Characters = cast;
+
+            // Stage 1 — rebuild outline if missing
+            if (state == StoryDamageState.OutlineMissing)
+            {
+                if (string.IsNullOrWhiteSpace(story.Premise))
+                {
+                    story.FailureReason = "Cannot repair — no premise preserved in checkpoint";
+                    SaveCheckpoint(story);
+                    return story;
+                }
+
+                Report("Rebuilding outline from preserved premise...");
+                var consequenceContext = consequences.BuildConsequenceContext(primary);
+                var premise =
+                    $"USER-SUPPLIED SYNOPSIS (this is the story the user asked for — honor its premise, characters, and direction):\n{story.Premise.Trim()}"
+                    + "\n\nIMPORTANT: GLMZ is a dangerous world. This story MUST include at least one battle/combat/violent conflict scene. Random crime and violence can erupt at any time. Include at least one beat specifically tagged for combat."
+                    + (consequenceContext.Length > 0 ? $"\n\nWORLD CONSEQUENCES FROM PREVIOUS STORIES:\n{consequenceContext}" : "");
+
+                var outline = await outlineSvc.GenerateOutlineAsync(premise, cast, location, targetBeats: 8, ct);
+                if (outline.Acts.Count == 0)
+                {
+                    story.FailureReason = "Outline rebuild failed — outline still empty";
+                    SaveCheckpoint(story);
+                    return story;
+                }
+
+                story.Outline = outline;
+                story.Title = outline.Title;
+                EnsureBattleBeat(outline);
+                outlineSvc.Save(story.ProjectId, outline);
+                SaveCheckpoint(story);
+                state = StoryDamageState.OutlineReviewMissing;
+            }
+
+            // Stage 2 — re-run outline review if missing or broken
+            if (state == StoryDamageState.OutlineReviewMissing)
+            {
+                Report("Reviewing story arc...");
+                try
+                {
+                    var reviewResult = await outlineReview.ReviewAsync(story.Outline!, ct);
+                    story.OutlineReview = reviewResult;
+                    if (reviewResult.RevisedOutline.Acts.Count > 0)
+                        story.Outline = reviewResult.RevisedOutline;
+                    outlineReview.Save(story.ProjectId, reviewResult);
+                }
+                catch (Exception ex)
+                {
+                    log.LogWarning(ex, "Outline review failed during repair — proceeding with current outline");
+                }
+                SaveCheckpoint(story);
+            }
+
+            // Stage 3 — continue beat writing from wherever we are
+            var finalOutline = story.Outline!;
+            foreach (var existing in story.Beats)
+                outlineSvc.MarkBeatWritten(finalOutline, existing.BeatIndex);
+
+            storyState.InitializeCharacter(story.ProjectId, primary, location);
+            foreach (var c in cast.Where(c => c != primary))
+                storyState.InitializeCharacter(story.ProjectId, c);
+
+            await WritBeatsWithResilience(story, finalOutline, (primary, cast), location, ct);
+        }
+        catch (OperationCanceledException)
+        {
+            log.LogWarning("Story repair cancelled — saving partial story");
+            story.FailureReason = "Cancelled by user";
+            SaveCheckpoint(story);
+        }
+        catch (Exception ex)
+        {
+            log.LogError(ex, "Story repair failed");
+            story.FailureReason = $"Repair failure: {ex.Message}";
+            SaveCheckpoint(story);
+        }
+        finally
+        {
+            IsGenerating = false;
+            CurrentStory = null;
+        }
+
+        return story;
+    }
+}
+
+public enum StoryDamageState
+{
+    Healthy,
+    OutlineMissing,
+    OutlineReviewMissing,
+    BeatsIncomplete
+}
+
+public static class StoryDamage
+{
+    public static StoryDamageState Classify(AutonomousStory s)
+    {
+        if (s.Complete) return StoryDamageState.Healthy;
+
+        var outline = s.Outline;
+        var totalBeats = outline?.Acts.Sum(a => a.Beats.Count) ?? 0;
+        if (outline == null || outline.Acts.Count == 0 || totalBeats == 0)
+            return StoryDamageState.OutlineMissing;
+
+        if (ReviewIsBroken(s.OutlineReview))
+            return StoryDamageState.OutlineReviewMissing;
+
+        return StoryDamageState.BeatsIncomplete;
+    }
+
+    public static string Describe(AutonomousStory s)
+    {
+        var total = s.Outline?.Acts.Sum(a => a.Beats.Count) ?? 0;
+        return Classify(s) switch
+        {
+            StoryDamageState.OutlineMissing => "Outline generation failed — full rebuild from premise",
+            StoryDamageState.OutlineReviewMissing => total > 0
+                ? $"Outline OK, review incomplete — re-review and write {total} beats"
+                : "Outline OK, review incomplete",
+            StoryDamageState.BeatsIncomplete => total > 0
+                ? $"Writing stopped at beat {s.Beats.Count}/{total} — continue from where it left off"
+                : $"Writing stopped at beat {s.Beats.Count} — continue from where it left off",
+            _ => "Healthy"
+        };
+    }
+
+    private static bool ReviewIsBroken(OutlineReviewResult? r)
+    {
+        if (r == null) return true;
+        if (string.IsNullOrWhiteSpace(r.Critique)) return true;
+        if (r.Critique.Contains("parse fail", StringComparison.OrdinalIgnoreCase)) return true;
+        if (r.Warnings.Any(w => w.Contains("Parse error", StringComparison.OrdinalIgnoreCase))) return true;
+        return false;
+    }
 }
 
 public class DirectorProgress

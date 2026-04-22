@@ -1,5 +1,7 @@
 {
   "id": "019d6143a67b74e493bf132b136710e7",
+  "rating": 0,
+  "vote_count": 0,
   "type": "character",
   "name": "Ash Madrigal-Vestergaard",
   "aliases": [],
@@ -10,19 +12,19 @@
   "age": 58,
   "status": "active",
   "location": "Kenosha Crossing, rotating between hyperlane rest stops, near beyond the Western Perimeter",
-  "description": "Ash Madrigal-Vestergaard is a broad-shouldered man whose skin has the weathered texture of someone who has slept under more open skies than ceilings. His face is mapped with deep sun-lines and three horizontal scarification marks across each cheek — family marks from a grandmother he never met, replicated from a photograph. He keeps his silver-streaked hair in compressed locs wound tight against his skull, and his left eye is a replacement — milky synthetic glass with a faint amber glow that never quite matches the warm brown of his right. He wears a patchwork coat assembled from fabric scraps collected across twenty years of travel: Sahel weave, Andean fleece, Siberian synthetic fur stitched together into something ungainly and unmistakable.\n\nAsh Madrigal-Vestergaard does not use navigation apps. He carries the hyperlane network in his head — every checkpoint, every informal rest stop, every E.L.F. shrine worth stopping at between here and the Escanaba Gateway. He sells information as readily as the salvaged electronics and dried foodstuffs strapped to his cargo cart. He is unhurried in a way that unnerves people who are used to the city's pace, and he has a habit of studying strangers as if cataloguing them for a story he will tell somewhere else, to someone else, years from now.",
+  "description": "Ash Madrigal-Vestergaard is a broad-shouldered man whose skin has the weathered texture of someone who has slept under more open skies than ceilings. His face is mapped with deep sun-lines and three horizontal scarification marks across each cheek \u2014 family marks from a grandmother he never met, replicated from a photograph. He keeps his silver-streaked hair in compressed locs wound tight against his skull, and his left eye is a replacement \u2014 milky synthetic glass with a faint amber glow that never quite matches the warm brown of his right. He wears a patchwork coat assembled from fabric scraps collected across twenty years of travel: Sahel weave, Andean fleece, Siberian synthetic fur stitched together into something ungainly and unmistakable.\n\nAsh Madrigal-Vestergaard does not use navigation apps. He carries the hyperlane network in his head \u2014 every checkpoint, every informal rest stop, every E.L.F. shrine worth stopping at between here and the Escanaba Gateway. He sells information as readily as the salvaged electronics and dried foodstuffs strapped to his cargo cart. He is unhurried in a way that unnerves people who are used to the city\u0027s pace, and he has a habit of studying strangers as if cataloguing them for a story he will tell somewhere else, to someone else, years from now.",
   "psychology": {
     "facet_weights": {
-      "wound": 0.5,
-      "ideal": 0.7,
-      "id": 0.4,
-      "shadow": 0.3,
-      "mask": 0.4,
-      "ghost": 0.6
+      "wound": 0.6900000000000002,
+      "ideal": 0.9200000000000002,
+      "id": 0.4800000000000001,
+      "shadow": 0.32,
+      "mask": 0.32000000000000006,
+      "ghost": 0.8900000000000002
     },
     "core_fears": [
       "Being forgotten before he has passed on what he knows",
-      "Losing the mental maps — cognitive decline"
+      "Losing the mental maps \u2014 cognitive decline"
     ],
     "core_desires": [
       "To be the thread that connects isolated communities",
@@ -42,23 +44,27 @@
     "vocabulary": "Measured, archaic-flavored. Uses geographic metaphors constantly. Switches between at least three creolized languages mid-sentence without noticing.",
     "cadence": "Slow and deliberate, with long pauses before important information as if checking internal files.",
     "verbal_tics": [
-      "'You understand where I am?' (checking comprehension)",
-      "'Mark it.'",
+      "\u0027You understand where I am?\u0027 (checking comprehension)",
+      "\u0027Mark it.\u0027",
       "Long exhalations before disagreement"
     ],
     "example_lines": [
-      "'The checkpoint at Iron Bend is kinder on Tuesdays. The inspector there, she prays to a water E.L.F. — leave something wet at the shrine and she softens.'",
-      "'I have walked that road four hundred times. It has never walked back to me. That is the arrangement.'"
-    ]
+      "\u0027The checkpoint at Iron Bend is kinder on Tuesdays. The inspector there, she prays to a water E.L.F. \u2014 leave something wet at the shrine and she softens.\u0027",
+      "\u0027I have walked that road four hundred times. It has never walked back to me. That is the arrangement.\u0027"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
     "He is carrying a sealed data-chip someone pressed into his hand three weeks ago in Manitowoc Drydock, begging him to deliver it. He does not know what is on it and is beginning to suspect it is dangerous.",
-    "His internal maps include routes that no longer officially exist — pre-Ferrogate Transit routes that certain powerful people would prefer stayed forgotten."
+    "His internal maps include routes that no longer officially exist \u2014 pre-Ferrogate Transit routes that certain powerful people would prefer stayed forgotten."
   ],
-  "narrative_function": "Information broker and world-expander — he can tell players about routes, checkpoints, people, and rumors across the wider hyperlane network. Quest giver for courier or retrieval jobs. Living encyclopedia of the city's edges.",
-  "augmentations": "Synthetic replacement left eye (functional, older model — amber-glowing, basic vision enhancement only). No other augmentations.",
-  "daily_life": "Rises before dawn to check his cart inventory and whisper a short prayer to the transit E.L.F. at Kenosha Crossing's pillar shrine; spends mornings trading and afternoons walking the lanes, mentally updating his internal route maps.",
+  "narrative_function": "Information broker and world-expander \u2014 he can tell players about routes, checkpoints, people, and rumors across the wider hyperlane network. Quest giver for courier or retrieval jobs. Living encyclopedia of the city\u0027s edges.",
+  "augmentations": "Synthetic replacement left eye (functional, older model \u2014 amber-glowing, basic vision enhancement only). No other augmentations.",
+  "daily_life": "Rises before dawn to check his cart inventory and whisper a short prayer to the transit E.L.F. at Kenosha Crossing\u0027s pillar shrine; spends mornings trading and afternoons walking the lanes, mentally updating his internal route maps.",
   "affiliation": "Unaffiliated; loose ties to the Crossing Caravan Collective",
   "uses_facets": false,
   "narration_voice": "",
@@ -102,7 +108,7 @@
   },
   "behavioral": {
     "decision_rules": [
-      "Never carry contraband knowingly — information only",
+      "Never carry contraband knowingly \u2014 information only",
       "Always leave a location with more knowledge than he arrived with",
       "Honor a promise made at a shrine, no exceptions"
     ],
@@ -119,7 +125,7 @@
     "stress_responses": {
       "low": "Recites route mnemonics under his breath",
       "medium": "Becomes very still and very formal, voice drops",
-      "high": "Moves — just starts walking, needs to physically relocate to think"
+      "high": "Moves \u2014 just starts walking, needs to physically relocate to think"
     },
     "contradictions": [
       "Preaches the value of connection but has systematically avoided his deepest one for a decade"
@@ -174,52 +180,39 @@
   },
   "timeline": [],
   "changelog": [],
-  "related_entities": [
-    "Manitowoc Drydock",
-    "Ferrogate Transit",
-    "Escanaba Gateway",
-    "Kenosha Crossing",
-    "Grandmother",
-    "TESSERA ES-4 'Perimeter'",
-    "Silver",
-    "Glass",
-    "Cargo Tacos",
-    "Nightlight"
-  ],
-  "district": "The Wasteland",
-  "physical_description": {
-    "heritage": "Northern European (57.7%, Scandinavian/Germanic) with significant Hispanic/Latin American (21.6%, Central/South American mestizo) and East Asian (20.7%, Southeast/East Asian) ancestry—a striking Pan-diaspora blend. Facial structure combines Northern European angularity with the wider cheekbones and softer contours of Hispanic/Latin American and East Asian heritage. The blend creates a unique phenotype: high, prominent cheekbones from East Asian ancestry, angular jaw from Northern European heritage, and broad face structure from Hispanic/Latin American lineage.",
-    "height_cm": 185,
-    "weight_kg": 94,
-    "build": "Broad-shouldered and thick-framed, carrying the solid mass of decades of manual labor and long-distance walking. Not muscular in a refined sense, but densely built — the frame of someone who loads and unloads carts without machinery.",
-    "hair_color": "Silver-streaked black",
-    "hair_style": "Compressed locs wound tight against the skull",
-    "hair_length": "Medium (locs approximately 8-10cm in length)",
-    "eye_color": "Right eye: warm amber-brown natural; Left eye: milky synthetic glass with faint amber glow",
-    "skin_tone": "Golden-olive medium brown with warm undertones—a balanced blend of Northern European fairness warmed and deepened by East Asian and Hispanic/Latin American melanin contribution. Sun-darkened and weathered across exposed surfaces from chronic equatorial and subtropical exposure, creating a rich caramel-bronze patina.",
-    "complexion": "Deeply lined face, particularly around the eyes and mouth from decades of sun exposure and smiling. Wide cheekbones and defined jawline showing the combined influence of all three ancestries: Eastern geometry softened by Latin warmth and Nordic definition. Three horizontal scarification marks across each cheek—deliberate family markings, cleanly healed. Weathered but well-maintained; grooming is sparse but intentional.",
-    "distinguishing_marks": [
-      "Three horizontal scarification marks across the left cheek, approximately 5cm each, evenly spaced 2cm apart — family marks deliberately replicated from family photograph",
-      "Three matching horizontal scarification marks across the right cheek, mirror placement to the left side",
-      "Deep sun-weathering and permanent creases across forehead and around eyes from chronic sun exposure",
-      "Calloused hands with permanent staining on fingertips suggesting decades of handling worn fabrics and salvaged materials"
-    ],
-    "visible_augmentations": "Left eye replacement: milky synthetic glass sphere with faint amber luminescence, visibly older model with slight mechanical iris movement. Sits slightly more recessed than natural eye. Otherwise no visible augmentations.",
-    "posture_movement": "Unhurried and deliberate in movement — a man comfortable with silence and observation. Tends to stand with weight distributed evenly, as if always ready to walk long distances. Eyes move methodically across environments, cataloguing details. Rarely makes rapid gestures; speaks with long pauses between thoughts.",
-    "clothing_style": "Patchwork long-coat assembled from twenty years of fabric scraps: visible panels of Sahel weave (rust and indigo tones), Andean fleece (cream and earth red), Siberian synthetic fur (silver-gray) stitched together into an ungainly but distinctive silhouette. Underneath: worn neutral-toned utilitarian layers suitable for variable climates. Footwear: heavily repaired all-terrain boots showing multiple generations of patches. No corporate branding; Tier 4-5 aesthetic through necessity rather than choice. Carries a battered leather satchel worn across his body — color faded to caramel from decades of use."
-  },
-  "image_prompt": "Ash Madrigal-Vestergaard, 185cm tall broad-shouldered man with golden-olive sun-weathered skin, high East Asian cheekbones blended with Nordic jawline and Latin facial width. Silver-streaked black compressed locs wound tight. Right eye warm amber-brown, left eye milky synthetic glass with amber glow and mechanical iris. Deep sun-lines around eyes and mouth, three parallel scarification marks across each cheek. Wearing elaborate patchwork long-coat stitched from rust indigo Sahel weave, cream earth-red Andean fleece, and silver-gray Siberian fur panels. Worn utilitarian layers beneath, heavily patched all-terrain boots, caramel leather satchel across body. Standing in GLMZ Great Lakes Metropolitan Zone, unhurried posture, methodical gaze, dystopian evening lighting with neon signs reflecting off wet pavement, film noir atmosphere, solo figure in crowded lower-tier district, atmospheric depth, cinematic composition --ar 2:3 --v 6",
-  "genetic_ancestry": {
-    "Northern European": 57.7,
-    "Hispanic/Latin American": 21.6,
-    "East Asian": 20.7
-  },
-  "ancestry_harmonized": true,
   "tags": [
     "person",
     "sentient",
     "human"
   ],
+  "physical_description": {
+    "heritage": "Northern European (57.7%, Scandinavian/Germanic) with significant Hispanic/Latin American (21.6%, Central/South American mestizo) and East Asian (20.7%, Southeast/East Asian) ancestry\u2014a striking Pan-diaspora blend. Facial structure combines Northern European angularity with the wider cheekbones and softer contours of Hispanic/Latin American and East Asian heritage. The blend creates a unique phenotype: high, prominent cheekbones from East Asian ancestry, angular jaw from Northern European heritage, and broad face structure from Hispanic/Latin American lineage.",
+    "height_cm": 185,
+    "weight_kg": 94,
+    "build": "Broad-shouldered and thick-framed, carrying the solid mass of decades of manual labor and long-distance walking. Not muscular in a refined sense, but densely built \u2014 the frame of someone who loads and unloads carts without machinery.",
+    "hair_color": "Silver-streaked black",
+    "hair_style": "Compressed locs wound tight against the skull",
+    "hair_length": "Medium (locs approximately 8-10cm in length)",
+    "eye_color": "Right eye: warm amber-brown natural; Left eye: milky synthetic glass with faint amber glow",
+    "skin_tone": "Golden-olive medium brown with warm undertones\u2014a balanced blend of Northern European fairness warmed and deepened by East Asian and Hispanic/Latin American melanin contribution. Sun-darkened and weathered across exposed surfaces from chronic equatorial and subtropical exposure, creating a rich caramel-bronze patina.",
+    "complexion": "Deeply lined face, particularly around the eyes and mouth from decades of sun exposure and smiling. Wide cheekbones and defined jawline showing the combined influence of all three ancestries: Eastern geometry softened by Latin warmth and Nordic definition. Three horizontal scarification marks across each cheek\u2014deliberate family markings, cleanly healed. Weathered but well-maintained; grooming is sparse but intentional.",
+    "distinguishing_marks": [
+      "Three horizontal scarification marks across the left cheek, approximately 5cm each, evenly spaced 2cm apart \u2014 family marks deliberately replicated from family photograph",
+      "Three matching horizontal scarification marks across the right cheek, mirror placement to the left side",
+      "Deep sun-weathering and permanent creases across forehead and around eyes from chronic sun exposure",
+      "Calloused hands with permanent staining on fingertips suggesting decades of handling worn fabrics and salvaged materials"
+    ],
+    "visible_augmentations": "Left eye replacement: milky synthetic glass sphere with faint amber luminescence, visibly older model with slight mechanical iris movement. Sits slightly more recessed than natural eye. Otherwise no visible augmentations.",
+    "posture_movement": "Unhurried and deliberate in movement \u2014 a man comfortable with silence and observation. Tends to stand with weight distributed evenly, as if always ready to walk long distances. Eyes move methodically across environments, cataloguing details. Rarely makes rapid gestures; speaks with long pauses between thoughts.",
+    "clothing_style": "Patchwork long-coat assembled from twenty years of fabric scraps: visible panels of Sahel weave (rust and indigo tones), Andean fleece (cream and earth red), Siberian synthetic fur (silver-gray) stitched together into an ungainly but distinctive silhouette. Underneath: worn neutral-toned utilitarian layers suitable for variable climates. Footwear: heavily repaired all-terrain boots showing multiple generations of patches. No corporate branding; Tier 4-5 aesthetic through necessity rather than choice. Carries a battered leather satchel worn across his body \u2014 color faded to caramel from decades of use."
+  },
+  "image_prompt": "Ash Madrigal-Vestergaard, 185cm tall broad-shouldered man with golden-olive sun-weathered skin, high East Asian cheekbones blended with Nordic jawline and Latin facial width. Silver-streaked black compressed locs wound tight. Right eye warm amber-brown, left eye milky synthetic glass with amber glow and mechanical iris. Deep sun-lines around eyes and mouth, three parallel scarification marks across each cheek. Wearing elaborate patchwork long-coat stitched from rust indigo Sahel weave, cream earth-red Andean fleece, and silver-gray Siberian fur panels. Worn utilitarian layers beneath, heavily patched all-terrain boots, caramel leather satchel across body. Standing in GLMZ Great Lakes Metropolitan Zone, unhurried posture, methodical gaze, dystopian evening lighting with neon signs reflecting off wet pavement, film noir atmosphere, solo figure in crowded lower-tier district, atmospheric depth, cinematic composition --ar 2:3 --v 6",
+  "dalle3_prompt": "",
+  "genetic_ancestry": {
+    "Northern European": 57.7,
+    "Hispanic/Latin American": 21.6,
+    "East Asian": 20.7
+  },
   "ancestry_detail": {
     "Northern European": {
       "Germanic": {
@@ -241,5 +234,5 @@
       }
     }
   },
-  "tier": "2"
+  "neural_abilities": []
 }

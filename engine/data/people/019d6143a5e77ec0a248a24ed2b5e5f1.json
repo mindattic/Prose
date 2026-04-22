@@ -1,70 +1,76 @@
 {
   "id": "019d6143a5e77ec0a248a24ed2b5e5f1",
+  "rating": 0,
+  "vote_count": 0,
   "type": "character",
   "name": "Arden Ekwensi-Odinga",
   "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Structural breach and explosive ordnance specialist — demolitions expert",
+  "role": "Structural breach and explosive ordnance specialist \u2014 demolitions expert",
   "age": 59,
   "status": "active",
-  "location": "Geartown — industrial district of chop shops and fabricators, near Armitage and Milwaukee",
-  "description": "Arden Ekwensi-Odinga is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 59, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a demolitions expert out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nArden Ekwensi-Odinga is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "location": "Geartown \u2014 industrial district of chop shops and fabricators, near Armitage and Milwaukee",
+  "description": "Arden Ekwensi-Odinga is athletic and fluid, the kind of body that suggests either dancer or fighter \u2014 and in GLMZ, the distinction is academic. At 59, she has soft features that belie the chrome underneath \u2014 people underestimate her once, usually only once. The chrome is visible \u2014 neural interface jack at base of skull \u2014 standard runner-grade, allows direct ne \u2014 and she makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation \u2014 she has the city in her blood, its rhythms in her bones, its cruelty in her expectations. She works as a demolitions expert out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nArden Ekwensi-Odinga is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
-      "wound": 0.91,
-      "ideal": 0.89,
-      "id": 0.28,
-      "shadow": 0.47,
-      "mask": 0.33,
-      "ghost": 0.94
+      "wound": 0.9600000000000001,
+      "ideal": 1,
+      "id": 0.31000000000000005,
+      "shadow": 0.49,
+      "mask": 0.31999999999999995,
+      "ghost": 1
     },
     "core_fears": [
-      "That they're fundamentally alone and connection is just a vulnerability",
+      "That they\u0027re fundamentally alone and connection is just a vulnerability",
       "Dying alone in some alley and nobody noticing for weeks",
-      "Being identified by corporate facial recognition — living off-grid is survival"
+      "Being identified by corporate facial recognition \u2014 living off-grid is survival"
     ],
     "core_desires": [
-      "The perfect run — one job so clean it becomes legend",
-      "A crew worth trusting — people who stay when the shooting starts",
-      "Justice — the corporate kind, where the punishment fits the profit margin"
+      "The perfect run \u2014 one job so clean it becomes legend",
+      "A crew worth trusting \u2014 people who stay when the shooting starts",
+      "Justice \u2014 the corporate kind, where the punishment fits the profit margin"
     ],
     "coping_mechanisms": [
-      "Overwork — takes every contract offered because idleness invites thinking",
-      "Violence — hits something when they can't process emotions, preferably something that deserves it",
-      "Connection — finds someone to talk to, even if it's a bartender or a cat"
+      "Overwork \u2014 takes every contract offered because idleness invites thinking",
+      "Violence \u2014 hits something when they can\u0027t process emotions, preferably something that deserves it",
+      "Connection \u2014 finds someone to talk to, even if it\u0027s a bartender or a cat"
     ],
     "blind_spots": [
-      "Thinks speed can substitute for planning because it's worked so far",
+      "Thinks speed can substitute for planning because it\u0027s worked so far",
       "Assumes the worst in corporate people, missing the rare ones who could be allies",
       "Assumes their skill set is more transferable than it actually is"
     ],
     "secret": ""
   },
   "speech_patterns": {
-    "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
+    "vocabulary": "Old-fashioned formal diction \u2014 sounds like they learned to speak from pre-collapse recordings.",
     "cadence": "Staccato bursts separated by calculating silences.",
     "verbal_tics": [
-      "Pauses mid-sentence to listen — combat habit that bleeds into conversation",
+      "Pauses mid-sentence to listen \u2014 combat habit that bleeds into conversation",
       "Uses technical jargon for everything, including emotions"
     ],
     "example_lines": [
-      "\"Explosives are just engineering with a deadline. Usually a very short deadline.\"",
-      "\"I don't blow things up. I perform structural rearrangement.\"",
-      "\"The blast radius is your problem. My problem is making sure there's a blast.\""
-    ]
+      "\u0022Explosives are just engineering with a deadline. Usually a very short deadline.\u0022",
+      "\u0022I don\u0027t blow things up. I perform structural rearrangement.\u0022",
+      "\u0022The blast radius is your problem. My problem is making sure there\u0027s a blast.\u0022"
+    ],
+    "avoidances": [],
+    "subtext": "",
+    "under_pressure": "",
+    "intimacy_register": ""
   },
   "relationships": [],
   "story_hooks": [
-    "A former associate resurfaces with evidence that could destroy Daulet Edlund-Gyan's reputation — and a price for silence",
-    "A crew member from Daulet Edlund-Gyan's past shows up in GLMZ, carrying old grievances and new chrome",
+    "A former associate resurfaces with evidence that could destroy Daulet Edlund-Gyan\u0027s reputation \u2014 and a price for silence",
+    "A crew member from Daulet Edlund-Gyan\u0027s past shows up in GLMZ, carrying old grievances and new chrome",
     "Daulet Edlund-Gyan intercepts intelligence about a threat to their district and must decide between profit and protection"
   ],
-  "narrative_function": "Daulet Edlund-Gyan is a pressure point — the kind of character whose choices ripple outward. When she makes a decision, other people's lives change. That weight is the engine of her stories.",
-  "augmentations": "Neural interface jack at base of skull — standard runner-grade, allows direct net access. Thermal masking system — body heat signature can be suppressed or spoofed",
+  "narrative_function": "Daulet Edlund-Gyan is a pressure point \u2014 the kind of character whose choices ripple outward. When she makes a decision, other people\u0027s lives change. That weight is the engine of her stories.",
+  "augmentations": "Neural interface jack at base of skull \u2014 standard runner-grade, allows direct net access. Thermal masking system \u2014 body heat signature can be suppressed or spoofed",
   "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
-  "affiliation": "Semi-independent — recurring contracts with mid-tier fixers",
+  "affiliation": "Semi-independent \u2014 recurring contracts with mid-tier fixers",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -152,13 +158,13 @@
       "loyalty_break": 7
     },
     "strengths": [
-      "multilingual — speaks 4+ languages fluently",
+      "multilingual \u2014 speaks 4\u002B languages fluently",
       "exceptional close-quarters combat",
       "intimidating physical presence"
     ],
     "weaknesses": [
       "poor impulse control in specific triggers",
-      "substance dependency — functional but fragile",
+      "substance dependency \u2014 functional but fragile",
       "grudge-holding that compromises rational decision-making"
     ],
     "tags": [
@@ -174,23 +180,23 @@
   },
   "behavioral": {
     "decision_rules": [
-      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
+      "Will abandon a job if the intel was deliberately falsified \u2014 being set up violates the contract",
       "Always verifies target identity independently before lethal contracts",
       "Never discusses active contracts with anyone not directly involved",
       "Will not betray a client who paid in full, regardless of better offers"
     ],
     "escalation_ladder": [
-      "1. Observe — gather information before acting",
-      "2. Evade — avoid the problem entirely if possible",
-      "3. Misdirect — create a distraction, redirect attention",
-      "4. Disable — targeted takedowns, quiet and efficient",
-      "5. Eliminate — when silence is no longer an option",
-      "6. Vanish — disappear completely, burn identity if necessary"
+      "1. Observe \u2014 gather information before acting",
+      "2. Evade \u2014 avoid the problem entirely if possible",
+      "3. Misdirect \u2014 create a distraction, redirect attention",
+      "4. Disable \u2014 targeted takedowns, quiet and efficient",
+      "5. Eliminate \u2014 when silence is no longer an option",
+      "6. Vanish \u2014 disappear completely, burn identity if necessary"
     ],
     "interpersonal_modes": {
       "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
       "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
       "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
     },
     "stress_responses": {
@@ -206,14 +212,14 @@
     ],
     "habits": [
       "Maintains a dead drop with emergency supplies in three separate districts",
-      "Never drinks anything they didn't see poured or open themselves",
+      "Never drinks anything they didn\u0027t see poured or open themselves",
       "Checks exits within 10 seconds of entering any room",
-      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle"
+      "Takes a specific route home every time, varying only one block per trip \u2014 paranoia as lifestyle"
     ],
     "breaking_points": [
       "A child being put in danger as leverage against them",
-      "Complete isolation — cut off from network, contacts, and purpose simultaneously",
-      "Losing their primary augmentation — the one that defines their professional identity"
+      "Complete isolation \u2014 cut off from network, contacts, and purpose simultaneously",
+      "Losing their primary augmentation \u2014 the one that defines their professional identity"
     ]
   },
   "cyberware_inventory": [
@@ -224,7 +230,7 @@
       "tier": "",
       "condition": "pristine",
       "installed_date": "",
-      "description": "Neural interface jack at base of skull — standard runner-grade, allows direct net access",
+      "description": "Neural interface jack at base of skull \u2014 standard runner-grade, allows direct net access",
       "replaces": ""
     },
     {
@@ -234,7 +240,7 @@
       "tier": "",
       "condition": "pristine",
       "installed_date": "",
-      "description": "Thermal masking system — body heat signature can be suppressed or spoofed",
+      "description": "Thermal masking system \u2014 body heat signature can be suppressed or spoofed",
       "replaces": ""
     }
   ],
@@ -269,42 +275,33 @@
   },
   "timeline": [],
   "changelog": [],
-  "carried_weapons": [
-    "Meridian Munitions Snapper-22 'Cricket'",
-    "Forge-Smith Collective Trench Knuckles 'Anvil'"
+  "tags": [
+    "person",
+    "sentient",
+    "human"
   ],
-  "registered_firearms": [],
-  "related_entities": [
-    "Geartown",
-    "Neural Palate",
-    "Lazarus LX-2 'Lab Rat'",
-    "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
-    "Slagworks Industrial",
-    "GLMZ",
-    "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
-  ],
-  "district": "The Circuit",
   "physical_description": {
     "heritage": "Sub-Saharan African dominant (42.5%) layered with Central Asian (26.4%), East Asian (18.3%), Indigenous American (8.0%), and South Asian (4.8%) ancestry. The genetic fusion creates striking polycontinental features: Sub-Saharan African bone structure and complexion depth interwoven with Central Asian facial proportions and cheekbone prominence, East Asian eye shape and lid characteristics, Indigenous American nasal bridge refinement, and South Asian undertone warmth. A true diaspora phenotype reflecting the Ubiquitous Mixing of 2226.",
     "height_cm": 172,
     "weight_kg": 62,
-    "build": "Athletic and lean with defined musculature — the physique of someone who maintains strength through discipline rather than bulk. Shoulders broad, core tight, no excess. Moves like a dancer or climber, economical and precise.",
-    "skin_tone": "Deep warm mahogany — the result of Sub-Saharan African baseline enriched by Central Asian golden undertones, East Asian luminosity, and South Asian amber complexity. Displays significant depth in shadow, warm radiance in direct light, with complex mid-tone richness across the spectrum.",
-    "complexion": "High, prominent cheekbones shaped by Central Asian and Sub-Saharan African ancestry, paired with refined East Asian eye structure, subtle epicanthic fold, and slightly upturned lid shape. Nose straight and refined with characteristically broad nostrils reflecting Sub-Saharan heritage, balanced by Central Asian bridge definition. Forehead broad, jawline strong and defined. Skin shows the wear of nocturnal work and age — fine lines around eyes and mouth, minor scarring on left temple. Complexion is clear but weathered, the kind of skin that doesn't see sunlight regularly. Facial structure reflects genuine multicontinental fusion: facial width and bone prominence from Sub-Saharan heritage, cheekbone geometry from Central Asian ancestry, eye shape and lid characteristics from East Asian genetics, nasal proportions refined by Indigenous American ancestry, and warm undertone complexity from South Asian admixture.",
-    "eye_color": "Dark brown",
+    "build": "Athletic and lean with defined musculature \u2014 the physique of someone who maintains strength through discipline rather than bulk. Shoulders broad, core tight, no excess. Moves like a dancer or climber, economical and precise.",
     "hair_color": "Steel gray with natural dark roots showing",
     "hair_style": "Pulled back in a tight, functional braid; pragmatic rather than fashionable",
     "hair_length": "Medium",
+    "eye_color": "Dark brown",
+    "skin_tone": "Deep warm mahogany \u2014 the result of Sub-Saharan African baseline enriched by Central Asian golden undertones, East Asian luminosity, and South Asian amber complexity. Displays significant depth in shadow, warm radiance in direct light, with complex mid-tone richness across the spectrum.",
+    "complexion": "High, prominent cheekbones shaped by Central Asian and Sub-Saharan African ancestry, paired with refined East Asian eye structure, subtle epicanthic fold, and slightly upturned lid shape. Nose straight and refined with characteristically broad nostrils reflecting Sub-Saharan heritage, balanced by Central Asian bridge definition. Forehead broad, jawline strong and defined. Skin shows the wear of nocturnal work and age \u2014 fine lines around eyes and mouth, minor scarring on left temple. Complexion is clear but weathered, the kind of skin that doesn\u0027t see sunlight regularly. Facial structure reflects genuine multicontinental fusion: facial width and bone prominence from Sub-Saharan heritage, cheekbone geometry from Central Asian ancestry, eye shape and lid characteristics from East Asian genetics, nasal proportions refined by Indigenous American ancestry, and warm undertone complexity from South Asian admixture.",
     "distinguishing_marks": [
-      "Neural interface jack at base of skull — chrome port, roughly 2cm diameter, slightly raised and scarred around the edges from repeated use",
-      "Burn scar on right forearm, approximately 8cm long, pale and smooth — old demolition job gone wrong",
+      "Neural interface jack at base of skull \u2014 chrome port, roughly 2cm diameter, slightly raised and scarred around the edges from repeated use",
+      "Burn scar on right forearm, approximately 8cm long, pale and smooth \u2014 old demolition job gone wrong",
       "Tactical tattoo on left bicep: schematic of a blast radius pattern in black ink, faded from age"
     ],
     "visible_augmentations": "Neural interface jack at base of skull is the only visible chrome. The thermal masking system is subcutaneous and invisible, but someone who works with her might notice her heat signature fluctuates or disappears entirely on thermal imaging.",
-    "posture_movement": "Stands with a slight forward lean, weight balanced on the balls of her feet — ready. Moves without wasted motion, joints loose but controlled. When relaxed, there's still an underlying tension, like a loaded spring. Hands are steady and precise.",
-    "clothing_style": "Tier 3-4 functional aesthetic. Black reinforced cargo pants with multiple pockets and wear patterns from equipment. Dark fitted shirt — often with a tactical vest or harness over top, industrial grade. Steel-toed boots, well-maintained. A long coat or jacket in charcoal or dark olive, worn and practical. No corporate branding. All pieces chosen for durability and utility, not fashion. Jewelry is minimal — worn metal wedding band on left ring finger, no other ornamentation."
+    "posture_movement": "Stands with a slight forward lean, weight balanced on the balls of her feet \u2014 ready. Moves without wasted motion, joints loose but controlled. When relaxed, there\u0027s still an underlying tension, like a loaded spring. Hands are steady and precise.",
+    "clothing_style": "Tier 3-4 functional aesthetic. Black reinforced cargo pants with multiple pockets and wear patterns from equipment. Dark fitted shirt \u2014 often with a tactical vest or harness over top, industrial grade. Steel-toed boots, well-maintained. A long coat or jacket in charcoal or dark olive, worn and practical. No corporate branding. All pieces chosen for durability and utility, not fashion. Jewelry is minimal \u2014 worn metal wedding band on left ring finger, no other ornamentation."
   },
   "image_prompt": "Arden Ekwenski-Odinga, lean athletic woman, deep warm mahogany skin with Sub-Saharan and Central Asian features, high prominent cheekbones, refined East Asian eye shape with subtle upturned lids, strong defined jawline, steel gray hair pulled back in tight functional braid, dark brown eyes with fine lines from nocturnal work, burn scar on right forearm, chrome neural interface jack visible at base of skull, black reinforced cargo pants, dark fitted tactical vest over dark shirt, charcoal worn practical jacket, steel-toed boots, metal wedding band, standing in ready stance weight on balls of feet, slight forward lean, moody neo-noir lighting, neon shadows, industrial nocturnal setting, 2226 Great Lakes Metropolitan Zone, tension and precision in posture, dystopian professional augmented operative, film noir lighting --ar 2:3 --v 6",
+  "dalle3_prompt": "",
   "genetic_ancestry": {
     "Sub-Saharan African": 42.5,
     "Central Asian": 26.4,
@@ -312,12 +309,6 @@
     "Indigenous American": 8,
     "South Asian": 4.8
   },
-  "ancestry_harmonized": true,
-  "tags": [
-    "person",
-    "sentient",
-    "human"
-  ],
   "ancestry_detail": {
     "Sub-Saharan African": {
       "East African": {
@@ -364,5 +355,5 @@
       }
     }
   },
-  "tier": "1"
+  "neural_abilities": []
 }

@@ -1,0 +1,178 @@
+{
+  "source_context": "story:019db31fe8887c97a04965978b5ccdb3 \u0022Street Meat\u0022",
+  "analyzed_at": "2026-04-22T03:27:56.2676352Z",
+  "resolved": [
+    {
+      "name": "Kyle",
+      "entity_type": "character",
+      "entity_id": "019d6143a648787696880f6d38d70075"
+    },
+    {
+      "name": "Mrs. Chen",
+      "entity_type": "character",
+      "entity_id": "019d6143a5d87a399b889edf096d0fc0"
+    },
+    {
+      "name": "Uncle Noodle",
+      "entity_type": "synthetic",
+      "entity_id": "019d6143a70c77aca24def843ec0f2a7"
+    },
+    {
+      "name": "Sable",
+      "entity_type": "character",
+      "entity_id": "019d6143a6c07bbdb0144496b7f489a7"
+    },
+    {
+      "name": "Pixel",
+      "entity_type": "character",
+      "entity_id": "019d6143c1d5e7f8a92b34068c150e4d"
+    },
+    {
+      "name": "Axiom Industries",
+      "entity_type": "faction",
+      "entity_id": "019d6143a889778c9f3ad3be882c901f"
+    },
+    {
+      "name": "Meridian Core",
+      "entity_type": "place",
+      "entity_id": "019d6143a927795e9e407c13b0809907"
+    },
+    {
+      "name": "GLMZ",
+      "entity_type": "place",
+      "entity_id": "019d6143a92773acabfa37c77f9cff8d"
+    }
+  ],
+  "unresolved": [
+    {
+      "name": "Dr. Yuna Ferreira",
+      "inferred_type": "character",
+      "context_snippet": "Extract Dr. Yuna Ferreira before 0600. She\u0027s been flagged internally.",
+      "relationship_claims": [
+        "researcher held at Ferrogate BioSystems secondary facility",
+        "flagged internally by Ferrogate BioSystems",
+        "scheduled to be moved to a secure wing at 0600",
+        "listed as extraction target on contract routed by Sable"
+      ],
+      "scaffolded": true,
+      "scaffolded_id": "019db33aeb6b729988da2cecd03d6898"
+    },
+    {
+      "name": "Seo",
+      "inferred_type": "character",
+      "context_snippet": "the blade that Seo handed to him with both hands the way you hand someone a thing that matters",
+      "relationship_claims": [
+        "trained Kyle in blade work",
+        "gave Kyle his katana",
+        "listed as program consultant on Ferrogate BioSystems manifest",
+        "contribution record active from 2189 through 2193",
+        "status listed as deceased, file closed",
+        "Kyle was not informed of his funeral",
+        "connected to the program that produced Kyle and Seven"
+      ],
+      "scaffolded": true,
+      "scaffolded_id": "019db33aec877a2e9ac8b7500486c747"
+    },
+    {
+      "name": "Seven",
+      "inferred_type": "character",
+      "context_snippet": "She is perhaps eleven. She is sitting on the bunk with her knees drawn up... After a long silence, she says: \u0027They call me Seven.\u0027",
+      "relationship_claims": [
+        "held in Ferrogate BioSystems secondary facility",
+        "subject designation Seven on the active manifest",
+        "age approximately eleven",
+        "has chrome leads at the base of her skull with fresh surgical wounds",
+        "array has 32,768 electrode density",
+        "listed as Axiom property on manifest",
+        "asset valuation \u03A60.00, subject integrity compromised, array non-proprietary",
+        "extracted by Kyle",
+        "sent by Kyle to a Gray Zone contact",
+        "arrives at Mrs. Chen\u0027s stall",
+        "called xiao gui by Mrs. Chen"
+      ],
+      "scaffolded": true,
+      "scaffolded_id": "019db33aedd17097b813f9e28da1ba5f"
+    },
+    {
+      "name": "HX-7741",
+      "inferred_type": "character",
+      "context_snippet": "The badge number: HX-7741, Helix subcontractor, laminate worn at the upper left corner.",
+      "relationship_claims": [
+        "Helix subcontractor working at Ferrogate BioSystems secondary facility",
+        "badge reader frequency harvested by Kyle",
+        "said the phrase \u0027street meat, bay three\u0027"
+      ],
+      "scaffolded": true,
+      "scaffolded_id": "019db33aef337ef89a675b95e02a939b"
+    },
+    {
+      "name": "Ferrogate BioSystems",
+      "inferred_type": "faction",
+      "context_snippet": "Ferrogate BioSystems. Secondary facility, buffer zone. Extract Dr. Yuna Ferreira before 0600.",
+      "relationship_claims": [
+        "operates a secondary facility in the buffer zone",
+        "employs Helix subcontractors",
+        "holds flagged researchers in a secure wing",
+        "operates cold storage and cadaver transport",
+        "holds subjects One through Fourteen including Seven",
+        "connected to Axiom Industries as client or contractor"
+      ],
+      "scaffolded": false,
+      "scaffolded_id": null
+    },
+    {
+      "name": "Helix",
+      "inferred_type": "faction",
+      "context_snippet": "The research wing is marked with a Helix biosystems secondary-site designation \u2014 the same taxonomy he has seen on three other facilities.",
+      "relationship_claims": [
+        "operates or co-operates the secondary facility with Ferrogate BioSystems",
+        "uses a standard secondary-site designation taxonomy seen at multiple facilities",
+        "employs subcontractors including HX-7741",
+        "uses three-factor locks",
+        "territory borders Axiom territory in the buffer zone"
+      ],
+      "scaffolded": false,
+      "scaffolded_id": null
+    },
+    {
+      "name": "Axiom",
+      "inferred_type": "faction",
+      "context_snippet": "the client who hired this contract was Axiom Industries... Seven is listed as Axiom property.",
+      "relationship_claims": [
+        "hired the extraction contract through Sable",
+        "used internal compliance team as researcher cover",
+        "lists Seven as Axiom property",
+        "territory borders Helix territory in the buffer zone",
+        "connected to the program that produced Kyle and Seven"
+      ],
+      "scaffolded": false,
+      "scaffolded_id": null
+    },
+    {
+      "name": "Gray Zone",
+      "inferred_type": "place",
+      "context_snippet": "Mrs. Chen moves behind the counter with the economy of someone who has been doing this longer than the Gray Zone has existed.",
+      "relationship_claims": [
+        "located within GLMZ",
+        "receives redistributed precipitation from Meridian Core",
+        "location of Mrs. Chen\u0027s food stall",
+        "location of Kyle\u0027s residence",
+        "location of the parts shop with Sable\u0027s terminal",
+        "bordered by or containing Axiom and Helix buffer zone territory"
+      ],
+      "scaffolded": false,
+      "scaffolded_id": null
+    },
+    {
+      "name": "Ringo",
+      "inferred_type": "place",
+      "context_snippet": "East Coast Standard with a Ringo transit worker\u0027s vowel compression.",
+      "relationship_claims": [
+        "associated with transit workers whose speech has a distinctive vowel compression"
+      ],
+      "scaffolded": false,
+      "scaffolded_id": null
+    }
+  ],
+  "entities_scaffolded": 4
+}

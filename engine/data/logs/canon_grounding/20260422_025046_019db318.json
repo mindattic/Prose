@@ -1,0 +1,177 @@
+{
+  "source_context": "story:019db2d5f5e37f3da915275c01bb15ec \u0022Every Road Leads Back\u0022",
+  "analyzed_at": "2026-04-22T02:50:45.7886702Z",
+  "resolved": [
+    {
+      "name": "Ash Madrigal-Vestergaard",
+      "entity_type": "character",
+      "entity_id": "019d6143a67b74e493bf132b136710e7"
+    },
+    {
+      "name": "Kenosha Crossing",
+      "entity_type": "place",
+      "entity_id": "019d6143a9227ba79d942be99982ebf0"
+    },
+    {
+      "name": "Archer\u0027s Line",
+      "entity_type": "place",
+      "entity_id": "019d6143a90c76e185a43403b9410b30"
+    },
+    {
+      "name": "Iron Bend",
+      "entity_type": "place",
+      "entity_id": "019d6143a9217821bb73c2ac2f281256"
+    },
+    {
+      "name": "Old Harbor",
+      "entity_type": "place",
+      "entity_id": "019d6143a92b7a70a77023efb936f255"
+    },
+    {
+      "name": "Ferrogate Transit",
+      "entity_type": "corponation",
+      "entity_id": "019d6143a7aa7ce28a575b78e5c63d88"
+    },
+    {
+      "name": "AtmoSync",
+      "entity_type": "vocabulary",
+      "entity_id": "019d6143aa7a7e86abd8e9c26b68d027"
+    },
+    {
+      "name": "the Spire",
+      "entity_type": "place",
+      "entity_id": "019d6143a94f7de9aae6566bb8f60803"
+    },
+    {
+      "name": "GLMZ",
+      "entity_type": "place",
+      "entity_id": "019d6143a92773acabfa37c77f9cff8d"
+    }
+  ],
+  "unresolved": [
+    {
+      "name": "Arden",
+      "inferred_type": "character",
+      "context_snippet": "She says, not as greeting but as inventory. She is giving him her name the way you give someone a tool.",
+      "relationship_claims": [
+        "hired Ash to transport a package",
+        "works with Briar via neural jack relay",
+        "has expertise in structural demolition assessment",
+        "was not called for the Escanaba demolition job",
+        "accompanies Ash north toward Escanaba"
+      ],
+      "scaffolded": true,
+      "scaffolded_id": "019db318e29d7d02b2ac749fda4b0ab8"
+    },
+    {
+      "name": "Briar",
+      "inferred_type": "character",
+      "context_snippet": "He has still not seen Briar. What he has seen is the drone, and the relay light blinking amber at Arden\u0027s neural jack",
+      "relationship_claims": [
+        "operates drones remotely in support of Arden and Ash",
+        "communicates through Arden\u0027s neural jack relay",
+        "has an intelligence network that was compromised from inside",
+        "cross-references residential registries and ACS contractor data",
+        "pulls drone net north toward Escanaba to cover the block"
+      ],
+      "scaffolded": true,
+      "scaffolded_id": "019db318e3b87203998ae0bd84554a31"
+    },
+    {
+      "name": "Marisol",
+      "inferred_type": "character",
+      "context_snippet": "He says, without preamble: \u0027Her name is Marisol. She is fourteen.\u0027",
+      "relationship_claims": [
+        "daughter of Ash Madrigal-Vestergaard",
+        "named in a custody filing dated eleven years prior",
+        "was three years old at time of filing",
+        "lives or lived in unit four-eleven of the twelve-story Escanaba block"
+      ],
+      "scaffolded": true,
+      "scaffolded_id": "019db318e4c8711493be89882896e356"
+    },
+    {
+      "name": "Waukegan",
+      "inferred_type": "place",
+      "context_snippet": "Waukegan light comes in flat and gray through gaps in the roofing.",
+      "relationship_claims": [
+        "location of the cr\u00E8che/processing shed where the story opens",
+        "connected to the Kenosha Crossing by routes Ash has memorized",
+        "has a lateral route bearing two-seven-zero toward an overpass"
+      ],
+      "scaffolded": false,
+      "scaffolded_id": null
+    },
+    {
+      "name": "Escanaba",
+      "inferred_type": "place",
+      "context_snippet": "He touches the \u03A6800 written on the paper she hands him, and he thinks: Escanaba.",
+      "relationship_claims": [
+        "destination of the package delivery",
+        "location of the twelve-story poured-concrete residential block",
+        "location where Marisol lives or lived",
+        "location of the legal office three blocks from the northern loading dock"
+      ],
+      "scaffolded": false,
+      "scaffolded_id": null
+    },
+    {
+      "name": "Kenosha",
+      "inferred_type": "place",
+      "context_snippet": "a man who drank too much at a rest stop in Kenosha and told him everything",
+      "relationship_claims": [
+        "location of a rest stop where Ash learned Ferrogate Transit maintenance schedules",
+        "location of a woman who holds messages for Ash through intermediaries"
+      ],
+      "scaffolded": false,
+      "scaffolded_id": null
+    },
+    {
+      "name": "Lateral Junction",
+      "inferred_type": "place",
+      "context_snippet": "the Lateral Junction \u2014 this specific junction, the one with the collapsed signal housing and the three converging rail lines",
+      "relationship_claims": [
+        "site of the ACS contractor ambush",
+        "located between Waukegan and Escanaba",
+        "has a chain-link gap forming a natural bottleneck",
+        "covered by Briar\u0027s drone net"
+      ],
+      "scaffolded": false,
+      "scaffolded_id": null
+    },
+    {
+      "name": "ACS",
+      "inferred_type": "faction",
+      "context_snippet": "Four contractors. ACS-stamped vests, the good ones with the stiffened front panels",
+      "relationship_claims": [
+        "employs or contracts the four ambush contractors at the Lateral Junction",
+        "has sub-contractor routing accounts used to push coordinates",
+        "issued internal code designations on contractor vest panels"
+      ],
+      "scaffolded": false,
+      "scaffolded_id": null
+    },
+    {
+      "name": "Arcturus",
+      "inferred_type": "faction",
+      "context_snippet": "There is no checkpoint between them that runs Arcturus credentials.",
+      "relationship_claims": [
+        "operates credential checks at certain checkpoints between the Escanaba loading dock and the legal office"
+      ],
+      "scaffolded": false,
+      "scaffolded_id": null
+    },
+    {
+      "name": "Alpine Morning",
+      "inferred_type": "technology",
+      "context_snippet": "Not AtmoSync\u0027s calculated seasonal palette, not Alpine Morning piped into clean air.",
+      "relationship_claims": [
+        "precipitation or atmospheric profile product of AtmoSync",
+        "piped into corporate zone clean air systems"
+      ],
+      "scaffolded": false,
+      "scaffolded_id": null
+    }
+  ],
+  "entities_scaffolded": 3
+}
