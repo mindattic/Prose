@@ -2,16 +2,19 @@
   "id": "019d6143a62e7ad5b5ae65b3b9d0d6bb",
   "rating": 70,
   "type": "character",
-  "name": "Kai Malhotra-Fredriksen",
-  "aliases": [],
+  "name": "Ashia Malhotra-Fredriksen",
+  "aliases": [
+    "Kai Malhotra-Fredriksen",
+    "Kai"
+  ],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
-  "role": "Network intrusion and digital warfare specialist \u2014 netrunner",
+  "role": "Network intrusion and digital warfare specialist — netrunner",
   "age": 25,
   "status": "active",
-  "location": "The Canopy \u2014 elevated walkway district above Geartown, near Clark and Addison",
-  "description": "Kai Malhotra-Fredriksen are tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 25, they have the kind of face that changes depending on the light \u2014 trustworthy in daylight, dangerous after dark. The chrome is visible \u2014 cyberears with directional microphones and sound dampening \u2014 can hear whispers a \u2014 and they make no effort to hide it.\n\nBorn and raised in GLMZ, third generation \u2014 they have the city in their blood, its rhythms in their bones, its cruelty in their expectations. They work as a netrunner out of The Canopy, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nEveryone who\u0027s worked with Kai Malhotra-Fredriksen agrees on two things: they are worth the fee, and they are terrible company at dinner.",
+  "location": "The Canopy — elevated walkway district above Geartown, near Clark and Addison",
+  "description": "Kai Malhotra-Fredriksen are tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 25, they have the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and they make no effort to hide it.\n\nBorn and raised in GLMZ, third generation — they have the city in their blood, its rhythms in their bones, its cruelty in their expectations. They work as a netrunner out of The Canopy, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nEveryone who's worked with Kai Malhotra-Fredriksen agrees on two things: they are worth the fee, and they are terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.74,
@@ -22,38 +25,38 @@
       "ghost": 0.53
     },
     "core_fears": [
-      "Being captured alive \u2014 death is preferable to corporate interrogation",
+      "Being captured alive — death is preferable to corporate interrogation",
       "Becoming obsolete as augmentation technology outpaces their chrome",
       "That their reputation is built on luck, not skill, and the luck is finite"
     ],
     "core_desires": [
-      "The perfect run \u2014 one job so clean it becomes legend",
-      "Knowledge \u2014 to understand the systems that grind people down",
+      "The perfect run — one job so clean it becomes legend",
+      "Knowledge — to understand the systems that grind people down",
       "To build something that outlasts the next contract cycle"
     ],
     "coping_mechanisms": [
-      "Connection \u2014 finds someone to talk to, even if it\u0027s a bartender or a cat",
-      "Compartmentalization \u2014 work feelings and personal feelings exist in separate boxes",
-      "Control \u2014 micromanages everything within reach to compensate for the chaos everywhere else"
+      "Connection — finds someone to talk to, even if it's a bartender or a cat",
+      "Compartmentalization — work feelings and personal feelings exist in separate boxes",
+      "Control — micromanages everything within reach to compensate for the chaos everywhere else"
     ],
     "blind_spots": [
-      "Refuses to update their mental model of people \u2014 first impressions calcify into permanent judgments",
-      "Thinks speed can substitute for planning because it\u0027s worked so far",
+      "Refuses to update their mental model of people — first impressions calcify into permanent judgments",
+      "Thinks speed can substitute for planning because it's worked so far",
       "Assumes their skill set is more transferable than it actually is"
     ],
     "secret": ""
   },
   "speech_patterns": {
-    "vocabulary": "Old-fashioned formal diction \u2014 sounds like they learned to speak from pre-collapse recordings.",
-    "cadence": "Low and even \u2014 the vocal equivalent of still water.",
+    "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
+    "cadence": "Low and even — the vocal equivalent of still water.",
     "verbal_tics": [
       "Uses technical jargon for everything, including emotions",
-      "Hums tunelessly when planning \u2014 the team has learned to wait for the humming to stop"
+      "Hums tunelessly when planning — the team has learned to wait for the humming to stop"
     ],
     "example_lines": [
-      "\u0022Every system has a door. Most of them have a door the architect forgot about.\u0022",
-      "\u0022I don\u0027t hack networks. I have conversations with them. Most of them are lonely.\u0022",
-      "\u0022The ice they\u0027re running is military-grade. That means expensive, not impenetrable.\u0022"
+      "\"Every system has a door. Most of them have a door the architect forgot about.\"",
+      "\"I don't hack networks. I have conversations with them. Most of them are lonely.\"",
+      "\"The ice they're running is military-grade. That means expensive, not impenetrable.\""
     ],
     "avoidances": [],
     "subtext": "",
@@ -62,14 +65,14 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A former associate resurfaces with evidence that could destroy Ilhan Strom-Duah\u0027s reputation \u2014 and a price for silence",
+    "A former associate resurfaces with evidence that could destroy Ilhan Strom-Duah's reputation — and a price for silence",
     "A high-paying contract turns out to target someone Ilhan Strom-Duah owes a personal debt to",
     "Ilhan Strom-Duah intercepts intelligence about a threat to their district and must decide between profit and protection"
   ],
-  "narrative_function": "Ilhan Strom-Duah represents the working professional of the runner world \u2014 competent, reliable, and slowly being consumed by a lifestyle that doesn\u0027t accommodate aging or doubt. Their stories explore what happens when skill meets systemic injustice.",
-  "augmentations": "Cyberears with directional microphones and sound dampening \u2014 can hear whispers at 50 meters. Synthetic blood with oxygen-carrying nanites \u2014 doesn\u0027t tire, heals faster",
-  "daily_life": "Between contracts, maintains a cover identity \u2014 mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
-  "affiliation": "Semi-independent \u2014 recurring contracts with mid-tier fixers",
+  "narrative_function": "Ilhan Strom-Duah represents the working professional of the runner world — competent, reliable, and slowly being consumed by a lifestyle that doesn't accommodate aging or doubt. Their stories explore what happens when skill meets systemic injustice.",
+  "augmentations": "Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters. Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster",
+  "daily_life": "Between contracts, maintains a cover identity — mundane work, mundane hours, mundane neighbors. The transition from civilian to runner and back requires a conscious effort that gets easier with practice and more disturbing with self-awareness.",
+  "affiliation": "Semi-independent — recurring contracts with mid-tier fixers",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -163,7 +166,7 @@
     ],
     "weaknesses": [
       "risk-averse to the point of missed opportunities",
-      "inability to delegate \u2014 must control everything personally"
+      "inability to delegate — must control everything personally"
     ],
     "tags": [
       "runner",
@@ -184,18 +187,18 @@
       "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns"
     ],
     "escalation_ladder": [
-      "1. De-escalate \u2014 talk first, assess options, buy time",
-      "2. Reposition \u2014 move to advantage, control sightlines and exits",
-      "3. Threaten \u2014 make consequences clear without committing to them",
-      "4. Non-lethal force \u2014 incapacitate, restrain, disable",
-      "5. Lethal force \u2014 only when other options are exhausted or time runs out",
-      "6. Scorched earth \u2014 everything burns, survival takes priority over everything"
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
     ],
     "interpersonal_modes": {
       "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
       "crew": "Loyal but reserved. Trusts their competence, withholds personal information by reflex.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
-      "threats": "Calm escalation. Each response is proportional until it isn\u0027t, and the transition is seamless."
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
     },
     "stress_responses": {
       "low": "Heightened awareness, sharper focus. Low stress is fuel.",
@@ -204,18 +207,18 @@
       "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
     },
     "contradictions": [
-      "Projects confidence but makes decisions from a foundation of fear they\u0027ve never examined",
+      "Projects confidence but makes decisions from a foundation of fear they've never examined",
       "Despises corporate culture but has unconsciously adopted its efficiency metrics and self-optimization language",
       "Values loyalty intensely but has betrayed someone in the past to survive"
     ],
     "habits": [
-      "Counts ammunition obsessively \u2014 knows the exact round count at all times",
-      "Sleeps with one hand on a weapon \u2014 has done this for so long it\u0027s not deliberate anymore",
+      "Counts ammunition obsessively — knows the exact round count at all times",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore",
       "Practices a kata or fighting form every morning regardless of circumstances"
     ],
     "breaking_points": [
-      "Losing their primary augmentation \u2014 the one that defines their professional identity",
-      "Being forced to harm a civilian \u2014 collateral damage that can\u0027t be rationalized",
+      "Losing their primary augmentation — the one that defines their professional identity",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized",
       "Discovering their employer deliberately sent them into a death trap"
     ]
   },
@@ -227,7 +230,7 @@
       "tier": "",
       "condition": "degraded",
       "installed_date": "",
-      "description": "Cyberears with directional microphones and sound dampening \u2014 can hear whispers at 50 meters",
+      "description": "Cyberears with directional microphones and sound dampening — can hear whispers at 50 meters",
       "replaces": ""
     },
     {
@@ -237,7 +240,7 @@
       "tier": "",
       "condition": "refurbished",
       "installed_date": "",
-      "description": "Synthetic blood with oxygen-carrying nanites \u2014 doesn\u0027t tire, heals faster",
+      "description": "Synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster",
       "replaces": ""
     }
   ],
@@ -275,26 +278,26 @@
     "human"
   ],
   "physical_description": {
-    "heritage": "Ubiquitous Diaspora synthesis \u2014 predominantly Southeast Asian structure (48.4%) with substantial South Asian influence (25.7%), significant Hispanic/Latin American ancestry (18.0%), and Eastern European undertones (7.9%). The face blends high, defined cheekbones and angular jaw from Southeast and South Asian genetics with warm golden undertones from Latin American heritage, cooled subtly by Eastern European genetics. Epicanthic fold markers visible, dark intelligent eyes with characteristic structure from primary ancestries. The result is a complexion that authentically synthesizes tropical and temperate genetic markers into something genuinely global.",
+    "heritage": "Ubiquitous Diaspora synthesis — predominantly Southeast Asian structure (48.4%) with substantial South Asian influence (25.7%), significant Hispanic/Latin American ancestry (18.0%), and Eastern European undertones (7.9%). The face blends high, defined cheekbones and angular jaw from Southeast and South Asian genetics with warm golden undertones from Latin American heritage, cooled subtly by Eastern European genetics. Epicanthic fold markers visible, dark intelligent eyes with characteristic structure from primary ancestries. The result is a complexion that authentically synthesizes tropical and temperate genetic markers into something genuinely global.",
     "height_cm": 188,
     "weight_kg": 72,
-    "build": "Rawboned and efficiently lean \u2014 long limbs with minimal subcutaneous fat, the frame of someone who runs on function rather than bulk. Suggests either deliberate asceticism or the metabolic reality of synthetic blood.",
-    "hair_color": "Dark brown with faded blonde undertones \u2014 natural color allowed to fade under city light and neglect",
+    "build": "Rawboned and efficiently lean — long limbs with minimal subcutaneous fat, the frame of someone who runs on function rather than bulk. Suggests either deliberate asceticism or the metabolic reality of synthetic blood.",
+    "hair_color": "Dark brown with faded blonde undertones — natural color allowed to fade under city light and neglect",
     "hair_style": "Shoulder-length, often pulled back asymmetrically or left to fall across one side of the face",
     "hair_length": "Long",
-    "eye_color": "Pale grey with networked microvasculature visible at the corners \u2014 indication of synthetic blood circulation",
-    "skin_tone": "Warm medium bronze \u2014 Southeast Asian and South Asian base with golden undertones from Latin American ancestry, cooled by subtle Eastern European influence, further desaturated by sun-deprivation from nights in the Canopy and jacked-in to networks",
-    "complexion": "High, defined cheekbones with prominent structure reflecting Southeast and South Asian ancestry, strong angular jaw typical of the genetic combination, dark intelligent eyes with subtle epicanthic fold markers. Skin is clear but shows the faint texture of someone who doesn\u0027t prioritize sleep \u2014 fine lines around the eyes from screen fatigue and focus-locked concentration. Undertone blends warm bronze from South and Southeast Asian heritage with golden warmth from Latin American ancestry and subtle cool notes from Eastern European genetics. No visible scarring on the face; the damage is internal.",
+    "eye_color": "Pale grey with networked microvasculature visible at the corners — indication of synthetic blood circulation",
+    "skin_tone": "Warm medium bronze — Southeast Asian and South Asian base with golden undertones from Latin American ancestry, cooled by subtle Eastern European influence, further desaturated by sun-deprivation from nights in the Canopy and jacked-in to networks",
+    "complexion": "High, defined cheekbones with prominent structure reflecting Southeast and South Asian ancestry, strong angular jaw typical of the genetic combination, dark intelligent eyes with subtle epicanthic fold markers. Skin is clear but shows the faint texture of someone who doesn't prioritize sleep — fine lines around the eyes from screen fatigue and focus-locked concentration. Undertone blends warm bronze from South and Southeast Asian heritage with golden warmth from Latin American ancestry and subtle cool notes from Eastern European genetics. No visible scarring on the face; the damage is internal.",
     "distinguishing_marks": [
-      "Surgical scars at both temples where cyberear neural interface ports integrate with the skull \u2014 thin, precise lines barely visible unless the light hits at certain angles",
-      "A thin white line running from left wrist to mid-forearm, old enough to be almost invisible but present under certain lighting \u2014 a reminder of early-career mistakes with jack-in equipment",
+      "Surgical scars at both temples where cyberear neural interface ports integrate with the skull — thin, precise lines barely visible unless the light hits at certain angles",
+      "A thin white line running from left wrist to mid-forearm, old enough to be almost invisible but present under certain lighting — a reminder of early-career mistakes with jack-in equipment",
       "Faint tattoo along the right collarbone: a stylized circuit pattern that mirrors actual neural pathways, done in conductive ink that glows faintly when jacked into a live network"
     ],
-    "visible_augmentations": "Cyberears dominate the visual profile \u2014 brushed titanium and dark chrome, slightly larger than baseline human ears with visible directional microphone arrays at the auricle edge and faint LED indicators that pulse with incoming audio data. The ears have minimal attempt at cosmetic blending; they announce themselves. Wrists show subtle port scars where jack-in cables connect, usually hidden by clothing but visible when they move.",
-    "posture_movement": "Economical and purposeful \u2014 no wasted motion, but not rigid. Moves with the particular grace of someone who\u0027s spent significant time in VR spaces and has to relearn physical embodiment daily. Head positioning is deliberate; they orient toward sound sources with the precision of someone using directional microphones rather than moving naturally. Eyes track movement in their peripheral vision with unusual attentiveness. When relaxed (rare), there\u0027s a slight tremor in the hands \u2014 the physical price of synthetic blood and enhanced neural firing rates.",
-    "clothing_style": "Tier 3-4 utilitarian with deliberately non-descript elements. Black or dark grey reinforced synthetic jacket (thermal regulation for temperature-spiked rig sessions), loose cargo pants with multiple sealed pockets (some for hardware, some as misdirection), unmarked steel-toed boots with reinforced ankle support (never know when you need to move fast through physical space). Underneath: fitted black layer that wouldn\u0027t stand out in either a corpo lobby or a Tier 5 dive. No logos, no brand signaling \u2014 visibility is operational liability. One piece of visible jewelry: a silver ring on the right thumb, always worn, possibly functional (induction point for wireless data transfer) or possibly just a talisman from before they fully committed to the life."
+    "visible_augmentations": "Cyberears dominate the visual profile — brushed titanium and dark chrome, slightly larger than baseline human ears with visible directional microphone arrays at the auricle edge and faint LED indicators that pulse with incoming audio data. The ears have minimal attempt at cosmetic blending; they announce themselves. Wrists show subtle port scars where jack-in cables connect, usually hidden by clothing but visible when they move.",
+    "posture_movement": "Economical and purposeful — no wasted motion, but not rigid. Moves with the particular grace of someone who's spent significant time in VR spaces and has to relearn physical embodiment daily. Head positioning is deliberate; they orient toward sound sources with the precision of someone using directional microphones rather than moving naturally. Eyes track movement in their peripheral vision with unusual attentiveness. When relaxed (rare), there's a slight tremor in the hands — the physical price of synthetic blood and enhanced neural firing rates.",
+    "clothing_style": "Tier 3-4 utilitarian with deliberately non-descript elements. Black or dark grey reinforced synthetic jacket (thermal regulation for temperature-spiked rig sessions), loose cargo pants with multiple sealed pockets (some for hardware, some as misdirection), unmarked steel-toed boots with reinforced ankle support (never know when you need to move fast through physical space). Underneath: fitted black layer that wouldn't stand out in either a corpo lobby or a Tier 5 dive. No logos, no brand signaling — visibility is operational liability. One piece of visible jewelry: a silver ring on the right thumb, always worn, possibly functional (induction point for wireless data transfer) or possibly just a talisman from before they fully committed to the life."
   },
-  "image_prompt": "Kai Malhotra-Fredriksen, 188cm tall lean frame with rawboned efficiency, warm medium bronze skin blending Southeast Asian, South Asian, Latin American, and Eastern European ancestry \u2014 high defined cheekbones, angular jaw, dark eyes with subtle epicanthic fold markers. Shoulder-length dark brown hair with blonde fade, pulled back asymmetrically. Pale grey eyes with visible synthetic blood microvasculature. Distinctive brushed titanium and chrome cyberears with directional microphone arrays and pulsing LED indicators. Fine lines around eyes from screen fatigue, thin surgical scars at temples from neural ports, faint glowing circuit tattoo on right collarbone. Black reinforced synthetic jacket, loose cargo pants, steel-toed boots, silver ring on right thumb. GLMZ 2200s aesthetic, standing in neon-lit Great Lakes Metropolitan Zone Canopy district, cool LED lighting casting sharp shadows across angular features, slight tremor in hands suggesting synthetic blood metabolism, posture economical and purposeful, VR-weary elegance, moody urban night atmosphere, dramatic side lighting highlighting temple scars and cyberear detail --ar 2:3 --v 6",
+  "image_prompt": "Kai Malhotra-Fredriksen, 188cm tall lean frame with rawboned efficiency, warm medium bronze skin blending Southeast Asian, South Asian, Latin American, and Eastern European ancestry — high defined cheekbones, angular jaw, dark eyes with subtle epicanthic fold markers. Shoulder-length dark brown hair with blonde fade, pulled back asymmetrically. Pale grey eyes with visible synthetic blood microvasculature. Distinctive brushed titanium and chrome cyberears with directional microphone arrays and pulsing LED indicators. Fine lines around eyes from screen fatigue, thin surgical scars at temples from neural ports, faint glowing circuit tattoo on right collarbone. Black reinforced synthetic jacket, loose cargo pants, steel-toed boots, silver ring on right thumb. GLMZ 2200s aesthetic, standing in neon-lit Great Lakes Metropolitan Zone Canopy district, cool LED lighting casting sharp shadows across angular features, slight tremor in hands suggesting synthetic blood metabolism, posture economical and purposeful, VR-weary elegance, moody urban night atmosphere, dramatic side lighting highlighting temple scars and cyberear detail --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "Southeast Asian": 48.4,

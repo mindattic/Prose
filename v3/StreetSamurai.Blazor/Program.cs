@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.RateLimiting;
 using Serilog;
 using Serilog.Events;
 using StreetSamurai.Blazor.Auth;
+using StreetSamurai.Blazor.Cli;
 using StreetSamurai.Blazor.Components;
 using StreetSamurai.Blazor.Services;
 using StreetSamurai.Core.Extensions;
@@ -26,6 +27,28 @@ if (args.Contains("--rebuild-graph"))
     Console.WriteLine("[rebuild-graph] Rebuilding world graph from source data...");
     graph.Rebuild();
     Console.WriteLine($"[rebuild-graph] Done: {graph.NodeCount} nodes, {graph.EdgeCount} edges saved to world_graph.json");
+    return;
+}
+
+// CLI mode: dotnet run --project ... -- --write-story <mode> [options]
+// Generates a story via the same pipeline as the /stories UI and saves it as a StoryProject.
+if (args.Contains("--write-story"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await StoryWriterCli.RunAsync(args, cliApp.Services);
+    return;
+}
+
+// CLI mode: dotnet run --project ... -- --refine-story <projectId> [-o notes.json]
+// Analyzes a completed story and writes refinement notes (no rewrites).
+if (args.Contains("--refine-story"))
+{
+    var cliBuilder = WebApplication.CreateBuilder(args);
+    cliBuilder.Services.AddStreetSamuraiServices();
+    var cliApp = cliBuilder.Build();
+    Environment.ExitCode = await StoryRefineCli.RunAsync(args, cliApp.Services);
     return;
 }
 

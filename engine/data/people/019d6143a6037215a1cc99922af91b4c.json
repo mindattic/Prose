@@ -2,16 +2,19 @@
   "id": "019d6143a6037215a1cc99922af91b4c",
   "rating": 70,
   "type": "character",
-  "name": "Vale Kang-Shirazi",
-  "aliases": [],
+  "name": "Bakari Kang-Shirazi",
+  "aliases": [
+    "Vale Kang-Shirazi",
+    "Vale"
+  ],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Contract broker and resource coordinator \u2014 fixer",
+  "role": "Contract broker and resource coordinator — fixer",
   "age": 37,
   "status": "active",
-  "location": "Ashfield \u2014 former residential district, half-burned, now squatter territory, near Kedzie and Division",
-  "description": "Vale Kang-Shirazi is compact and densely muscled, built low to the ground like something designed to survive impacts. At 37, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible \u2014 gecko-grip fingertip implants and toe pads \u2014 can climb smooth surfaces \u2014 and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a fixer out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nVale Kang-Shirazi has built a reputation on reliability rather than flash \u2014 she shows up, she delivers, she collects.",
+  "location": "Ashfield — former residential district, half-burned, now squatter territory, near Kedzie and Division",
+  "description": "Vale Kang-Shirazi is compact and densely muscled, built low to the ground like something designed to survive impacts. At 37, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a fixer out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nVale Kang-Shirazi has built a reputation on reliability rather than flash — she shows up, she delivers, she collects.",
   "psychology": {
     "facet_weights": {
       "wound": 0.39,
@@ -22,38 +25,38 @@
       "ghost": 0.22
     },
     "core_fears": [
-      "That they\u0027re fundamentally alone and connection is just a vulnerability",
+      "That they're fundamentally alone and connection is just a vulnerability",
       "That the work they do makes the city worse, not better",
-      "Being identified by corporate facial recognition \u2014 living off-grid is survival"
+      "Being identified by corporate facial recognition — living off-grid is survival"
     ],
     "core_desires": [
-      "A crew worth trusting \u2014 people who stay when the shooting starts",
-      "Freedom from augmentation debt \u2014 the interest compounds like a tumor",
+      "A crew worth trusting — people who stay when the shooting starts",
+      "Freedom from augmentation debt — the interest compounds like a tumor",
       "To prove everyone who dismissed them catastrophically wrong"
     ],
     "coping_mechanisms": [
-      "Substances \u2014 stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
-      "Isolates \u2014 retreats into their space when overwhelmed, emerges only for work",
-      "Violence \u2014 hits something when they can\u0027t process emotions, preferably something that deserves it"
+      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
+      "Isolates — retreats into their space when overwhelmed, emerges only for work",
+      "Violence — hits something when they can't process emotions, preferably something that deserves it"
     ],
     "blind_spots": [
       "Cannot distinguish between caution and cowardice in themselves or others",
-      "Trusts technology more than people \u2014 machines don\u0027t betray",
+      "Trusts technology more than people — machines don't betray",
       "Fails to notice when their own behavior mirrors the people they despise"
     ],
     "secret": ""
   },
   "speech_patterns": {
     "vocabulary": "Quiet and precise. Every word is measured. Silence does the heavy lifting.",
-    "cadence": "Rhythmic, almost musical \u2014 the sentence structure has a pattern even when the words are brutal.",
+    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
     "verbal_tics": [
-      "Never uses contractions when lying \u2014 \u0027I did not\u0027 instead of \u0027I didn\u0027t\u0027",
-      "Ends statements with \u0027yeah?\u0027 \u2014 not a question, a dare"
+      "Never uses contractions when lying — 'I did not' instead of 'I didn't'",
+      "Ends statements with 'yeah?' — not a question, a dare"
     ],
     "example_lines": [
-      "\u0022I know a person who knows a person. That\u0027s not evasion \u2014 that\u0027s the service.\u0022",
-      "\u0022My commission is fifteen percent. You\u0027re welcome to find someone cheaper. You won\u0027t find someone better.\u0022",
-      "\u0022The job isn\u0027t dangerous. The people involved are dangerous. The job is just logistics.\u0022"
+      "\"I know a person who knows a person. That's not evasion — that's the service.\"",
+      "\"My commission is fifteen percent. You're welcome to find someone cheaper. You won't find someone better.\"",
+      "\"The job isn't dangerous. The people involved are dangerous. The job is just logistics.\""
     ],
     "avoidances": [],
     "subtext": "",
@@ -63,13 +66,13 @@
   "relationships": [],
   "story_hooks": [
     "Erkin Inoue-Aidoo discovers a job they completed last year was a setup for something much larger and much worse",
-    "The fixer who handles Erkin Inoue-Aidoo\u0027s contracts goes silent \u2014 dead, disappeared, or turned",
+    "The fixer who handles Erkin Inoue-Aidoo's contracts goes silent — dead, disappeared, or turned",
     "A high-paying contract turns out to target someone Erkin Inoue-Aidoo owes a personal debt to"
   ],
-  "narrative_function": "Erkin Inoue-Aidoo is a pressure point \u2014 the kind of character whose choices ripple outward. When she makes a decision, other people\u0027s lives change. That weight is the engine of her stories.",
-  "augmentations": "Gecko-grip fingertip implants and toe pads \u2014 can climb smooth surfaces. Synthetic muscle fiber replacement in legs \u2014 doubles sprint speed, terrible on stairs",
+  "narrative_function": "Erkin Inoue-Aidoo is a pressure point — the kind of character whose choices ripple outward. When she makes a decision, other people's lives change. That weight is the engine of her stories.",
+  "augmentations": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces. Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
   "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
-  "affiliation": "Semi-independent \u2014 recurring contracts with mid-tier fixers",
+  "affiliation": "Semi-independent — recurring contracts with mid-tier fixers",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -161,7 +164,7 @@
       "ability to remain calm under fire"
     ],
     "weaknesses": [
-      "augmentation dependency \u2014 performance drops sharply if chrome malfunctions",
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
       "physical limitation from incomplete augmentation"
     ],
     "tags": [
@@ -178,18 +181,18 @@
   "behavioral": {
     "decision_rules": [
       "Never discusses active contracts with anyone not directly involved",
-      "Never works with the same crew twice in a row \u2014 pattern avoidance as survival strategy",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
       "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
       "Will not betray a client who paid in full, regardless of better offers",
-      "Will not take contracts against children or families \u2014 the line is hard and non-negotiable"
+      "Will not take contracts against children or families — the line is hard and non-negotiable"
     ],
     "escalation_ladder": [
-      "1. Assess \u2014 read the situation, identify threats and advantages",
-      "2. Negotiate \u2014 try to find a solution that doesn\u0027t cost ammunition",
-      "3. Intimidate \u2014 make the cost of conflict clear",
-      "4. Precision violence \u2014 surgical, targeted, minimal collateral",
-      "5. Full engagement \u2014 overwhelming force, no half measures",
-      "6. Emergency protocol \u2014 abort mission, survival priority, deal with consequences later"
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
     ],
     "interpersonal_modes": {
       "employers": "Carefully managed deference that conceals a thorough assessment of their vulnerabilities.",
@@ -199,25 +202,25 @@
     },
     "stress_responses": {
       "low": "Becomes more talkative, working through scenarios verbally.",
-      "medium": "Physical agitation \u2014 pacing, fidgeting, compulsive equipment checks.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
       "high": "Hyper-focused tunnel vision. Peripheral concerns disappear. Only the threat exists.",
       "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
     },
     "contradictions": [
-      "Advocates caution to others but takes insane risks personally \u2014 double standard they can\u0027t see",
+      "Advocates caution to others but takes insane risks personally — double standard they can't see",
       "Insists they work alone but performs noticeably better in a team",
       "Presents as emotionless professional but is deeply affected by collateral damage"
     ],
     "habits": [
-      "Wears the same item of clothing for luck \u2014 a scarf, a glove, a specific pair of boots",
+      "Wears the same item of clothing for luck — a scarf, a glove, a specific pair of boots",
       "Checks exits within 10 seconds of entering any room",
-      "Never drinks anything they didn\u0027t see poured or open themselves",
-      "Sleeps with one hand on a weapon \u2014 has done this for so long it\u0027s not deliberate anymore"
+      "Never drinks anything they didn't see poured or open themselves",
+      "Sleeps with one hand on a weapon — has done this for so long it's not deliberate anymore"
     ],
     "breaking_points": [
       "Discovering their employer deliberately sent them into a death trap",
-      "Betrayal by the one person they actually trust \u2014 the single point of failure in their emotional architecture",
-      "Losing their primary augmentation \u2014 the one that defines their professional identity"
+      "Betrayal by the one person they actually trust — the single point of failure in their emotional architecture",
+      "Losing their primary augmentation — the one that defines their professional identity"
     ]
   },
   "cyberware_inventory": [
@@ -228,7 +231,7 @@
       "tier": "",
       "condition": "good",
       "installed_date": "",
-      "description": "Gecko-grip fingertip implants and toe pads \u2014 can climb smooth surfaces",
+      "description": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces",
       "replaces": ""
     },
     {
@@ -238,7 +241,7 @@
       "tier": "",
       "condition": "worn",
       "installed_date": "",
-      "description": "Synthetic muscle fiber replacement in legs \u2014 doubles sprint speed, terrible on stairs",
+      "description": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
       "replaces": ""
     }
   ],
@@ -278,24 +281,24 @@
     "human"
   ],
   "physical_description": {
-    "heritage": "Predominantly East Asian (41.9%) with substantial Pacific Islander (19.0%) and Sub-Saharan African (16.8%) ancestry, layered with Middle Eastern (9.8%), Southeast Asian (8.5%), and South Asian (4.0%) heritage. The phenotype is distinctly hybrid \u2014 East Asian bone structure and eye geometry enriched by African facial depth and warmth, Pacific Islander robustness and sun-darkened undertones, with subtle Middle Eastern olive notes and South Asian width through the face creating a luminous, complex appearance that reflects true global mixing.",
+    "heritage": "Predominantly East Asian (41.9%) with substantial Pacific Islander (19.0%) and Sub-Saharan African (16.8%) ancestry, layered with Middle Eastern (9.8%), Southeast Asian (8.5%), and South Asian (4.0%) heritage. The phenotype is distinctly hybrid — East Asian bone structure and eye geometry enriched by African facial depth and warmth, Pacific Islander robustness and sun-darkened undertones, with subtle Middle Eastern olive notes and South Asian width through the face creating a luminous, complex appearance that reflects true global mixing.",
     "height_cm": 158,
     "weight_kg": 62,
-    "build": "Compact and densely muscled, low center of gravity \u2014 built for confined spaces and vertical movement. Shoulders broad relative to frame, legs thick with visible synthetic fiber bundling beneath skin.",
+    "build": "Compact and densely muscled, low center of gravity — built for confined spaces and vertical movement. Shoulders broad relative to frame, legs thick with visible synthetic fiber bundling beneath skin.",
     "hair_color": "Black with premature silver threading at temples",
     "hair_style": "Pulled back tight, military-practical",
     "hair_length": "Short",
     "eye_color": "Dark brown, alert and unreadable",
-    "skin_tone": "Rich warm bronze \u2014 the luminous interplay of East Asian golden undertones deepened by African and Pacific Islander sun-responsiveness, with subtle Middle Eastern olive and South Asian warmth creating a mid-to-deep complexion with distinctive catch-light properties.",
+    "skin_tone": "Rich warm bronze — the luminous interplay of East Asian golden undertones deepened by African and Pacific Islander sun-responsiveness, with subtle Middle Eastern olive and South Asian warmth creating a mid-to-deep complexion with distinctive catch-light properties.",
     "complexion": "High, defined cheekbones with East Asian structure broadened and softened by African and Pacific Islander heritage. Varied epicanthic fold reflecting mixed ancestry across both eyes. Broad nose with substantial nasal bridge from African and South Asian heritage, moderate flare at base. Full lips with natural darker pigmentation from multiple ancestry lines. Monolid variation across eyelids showing East Asian and African genetic contribution. Scars on knuckles and forearms show use rather than decay. Minimal makeup. Jaw set in habitual neutrality. No soft edges.",
     "distinguishing_marks": [
-      "Parallel burn scars on left ribs, faint but visible when unclothed \u2014 old thermal damage, Narrows incident",
+      "Parallel burn scars on left ribs, faint but visible when unclothed — old thermal damage, Narrows incident",
       "Three-stitch scar along right eyebrow, silvered from age",
-      "Webbed scarring across both hands between thumb and forefinger \u2014 climbing equipment friction over years"
+      "Webbed scarring across both hands between thumb and forefinger — climbing equipment friction over years"
     ],
-    "visible_augmentations": "Chrome gecko-grip implants visible on fingertips and toe pads \u2014 metallic catch-light, articulated polymer casing. Slight chrome seam-work visible at ankle joints where synthetic leg fibers interface with biological tissue. Subcutaneous line visible along left forearm where maintenance port sits beneath skin.",
-    "posture_movement": "Economical and precise. Stands with weight distributed low. Moves without wasted motion \u2014 every step calibrated. Eyes track exits and high ground automatically. Hands rest open, fingers slightly curved as if ready to grip or climb. When still, she\u0027s genuinely still.",
-    "clothing_style": "Tier 3-4 practical: reinforced charcoal cargo pants with climbing loops, worn microflex jacket with reflective threading, soft-soled boots with aggressive treads. No logos or corp affiliation. Neutral colors. Everything fitted for movement. One worn leather carry pouch on hip. No jewelry. A smart-linked watch on left wrist \u2014 old model, functional, not flash."
+    "visible_augmentations": "Chrome gecko-grip implants visible on fingertips and toe pads — metallic catch-light, articulated polymer casing. Slight chrome seam-work visible at ankle joints where synthetic leg fibers interface with biological tissue. Subcutaneous line visible along left forearm where maintenance port sits beneath skin.",
+    "posture_movement": "Economical and precise. Stands with weight distributed low. Moves without wasted motion — every step calibrated. Eyes track exits and high ground automatically. Hands rest open, fingers slightly curved as if ready to grip or climb. When still, she's genuinely still.",
+    "clothing_style": "Tier 3-4 practical: reinforced charcoal cargo pants with climbing loops, worn microflex jacket with reflective threading, soft-soled boots with aggressive treads. No logos or corp affiliation. Neutral colors. Everything fitted for movement. One worn leather carry pouch on hip. No jewelry. A smart-linked watch on left wrist — old model, functional, not flash."
   },
   "image_prompt": "Vale Kang-Shirazi, 158cm compact muscular frame, rich bronze skin with warm golden-brown undertones, high defined cheekbones blending East Asian structure with African and Pacific Islander heritage, varied monolids, broad nose with substantial bridge, full darker lips, dark alert eyes. Black hair pulled back tight with silver at temples. Visible chrome gecko-grip implants on fingertips, chrome ankle seam-work, scars on knuckles and webbed between thumbs. Wearing reinforced charcoal cargo pants with climbing loops, worn microflex jacket with reflective threading, aggressive-tread boots. Old functional smart-linked watch. Economical posture, low center of gravity, hands curved ready to grip. GLMZ Great Lakes Metropolitan Zone, neon-lit urban vertical space, caught mid-movement against industrial architecture, moody blue and amber lighting, gritty tactical aesthetic --ar 2:3 --v 6",
   "dalle3_prompt": "",

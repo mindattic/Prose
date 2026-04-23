@@ -3,8 +3,11 @@
   "rating": 60,
   "vote_count": 1,
   "type": "character",
-  "name": "Rowan Konat\u00E9",
-  "aliases": [],
+  "name": "Bashiru Konaté",
+  "aliases": [
+    "Rowan Konaté",
+    "Rowan"
+  ],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -12,7 +15,7 @@
   "age": 29,
   "status": "active",
   "location": "The Underworld - B2-B12, near sub-level access near LaSalle and Congress",
-  "description": "Rowan Konat\u00E9 the Underworld communications mesh. Neutral. The fastest fiber splicer in complete darkness.",
+  "description": "Rowan Konaté the Underworld communications mesh. Neutral. The fastest fiber splicer in complete darkness.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -101,7 +104,7 @@
     "human"
   ],
   "physical_description": {
-    "heritage": "Multiheritag\u00E9 diaspora blend: dominant East Asian (36.6%) and Southeast Asian (18.6%) ancestry combined with substantial Sub-Saharan African (22.0%) and Northern European (19.8%) genetic contribution, plus minor Hispanic/Latin American (3.0%) admixture. This complex genetic combination produces warm medium-to-deep brown skin with golden and olive undertones, facial structure balancing East Asian angularity with West African fullness in the mid-face, creating striking cross-heritage features with refined bone definition.",
+    "heritage": "Multiheritagé diaspora blend: dominant East Asian (36.6%) and Southeast Asian (18.6%) ancestry combined with substantial Sub-Saharan African (22.0%) and Northern European (19.8%) genetic contribution, plus minor Hispanic/Latin American (3.0%) admixture. This complex genetic combination produces warm medium-to-deep brown skin with golden and olive undertones, facial structure balancing East Asian angularity with West African fullness in the mid-face, creating striking cross-heritage features with refined bone definition.",
     "height_cm": 178,
     "weight_kg": 71,
     "build": "Lean and wiry with developed forearms and shoulders from years of precision fiber work. Minimal body fat, efficient musculature.",
@@ -114,13 +117,13 @@
     "distinguishing_marks": [
       "Thin white scar running 3cm along right temple to hairline, smooth and old",
       "Calluses across palms and fingertips, especially index and middle fingers of both hands, from splicer work",
-      "Small burn mark on left wrist \u2014 diameter of a soldering iron tip, approximately 2cm, pale and years-old"
+      "Small burn mark on left wrist — diameter of a soldering iron tip, approximately 2cm, pale and years-old"
     ],
     "visible_augmentations": "None visible. Operates in complete darkness regularly, suggesting possible subcutaneous low-light enhancement or neural adaptations, but no external chrome.",
-    "posture_movement": "Moves with deliberate efficiency, minimal wasted motion. Hands rest in ready position. Inhabits spaces quietly, comfortable in darkness. Head tilts slightly when listening \u2014 suggests enhanced auditory processing or intense focus habit.",
+    "posture_movement": "Moves with deliberate efficiency, minimal wasted motion. Hands rest in ready position. Inhabits spaces quietly, comfortable in darkness. Head tilts slightly when listening — suggests enhanced auditory processing or intense focus habit.",
     "clothing_style": "Tier 4 working-class practicality. Dark tactical pants with multiple utility pockets, fitted black or grey merino wool base layers for temperature control in cold server rooms. Fingerless work gloves or thin tactile gloves always accessible. Worn tech-fabric jacket with Blackwire insignia patches. Comfortable steel-toed boots, scuffed from underground work. No visible jewelry except a flat black wedding band."
   },
-  "image_prompt": "Rowan Konat\u00E9, 2226 neo-noir splicer, medium-deep warm brown skin with golden undertones, angular East Asian cheekbones softened by African fullness, dark brown eyes with fine concentration lines, short dark hair with silver at temples. Perpetual stubble, thin white scar on right temple. Lean muscular build, 178cm tall. Wearing dark tactical pants, fitted grey merino base layer, worn tech-fabric jacket with Blackwire patches, steel-toed boots, fingerless work gloves. Standing in dim server room lit by blue cable light, hands in ready position, head tilted with focused intensity. Cool underground neo-noir urban aesthetic, low-light atmosphere, photorealistic portrait --ar 2:3 --v 6",
+  "image_prompt": "Rowan Konaté, 2226 neo-noir splicer, medium-deep warm brown skin with golden undertones, angular East Asian cheekbones softened by African fullness, dark brown eyes with fine concentration lines, short dark hair with silver at temples. Perpetual stubble, thin white scar on right temple. Lean muscular build, 178cm tall. Wearing dark tactical pants, fitted grey merino base layer, worn tech-fabric jacket with Blackwire patches, steel-toed boots, fingerless work gloves. Standing in dim server room lit by blue cable light, hands in ready position, head tilted with focused intensity. Cool underground neo-noir urban aesthetic, low-light atmosphere, photorealistic portrait --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "East Asian": 36.6,

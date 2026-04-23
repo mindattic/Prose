@@ -760,63 +760,9 @@ else if (!generating)
 
     private void ClearSuggestions() => suggestedBeats.Clear();
 
-    private static string ConvertToHtml(AutonomousStory story)
-    {
-        var sb = new System.Text.StringBuilder();
-        sb.Append($"<h1>{System.Web.HttpUtility.HtmlEncode(story.Title)}</h1>");
-        sb.Append($"<p><em>Protagonist: {System.Web.HttpUtility.HtmlEncode(story.Protagonist)}</em></p>");
+    private static string ConvertToHtml(AutonomousStory story) =>
+        AutonomousStoryFormatter.ToHtml(story);
 
-        int lastAct = 0;
-        foreach (var beat in story.Beats)
-        {
-            if (beat.Act != lastAct)
-            {
-                var actName = story.Outline?.Acts.FirstOrDefault(a => a.ActNumber == beat.Act)?.Name ?? $"Act {beat.Act}";
-                sb.Append($"<h2>Act {beat.Act}: {System.Web.HttpUtility.HtmlEncode(actName)}</h2>");
-                lastAct = beat.Act;
-            }
-
-            // Convert newlines to paragraphs
-            var paragraphs = beat.Text.Split(["\n\n", "\r\n\r\n"], StringSplitOptions.RemoveEmptyEntries);
-            foreach (var p in paragraphs)
-                sb.Append($"<p>{System.Web.HttpUtility.HtmlEncode(p.Trim())}</p>");
-
-            sb.Append("<hr/>");
-        }
-
-        return sb.ToString();
-    }
-
-    // Markdown output — preferred format for autonomous stories. The WriteStory editor
-    // treats StoryProject.Html as Markdown source (MarkdownService.RenderToHtml renders it
-    // for display), so emitting Markdown here keeps the round-trip lossless: inline
-    // *italics*, em-dashes, and section breaks survive unchanged instead of being
-    // HtmlEncoded into literal asterisks on save.
-    private static string ConvertToMarkdown(AutonomousStory story)
-    {
-        var sb = new System.Text.StringBuilder();
-        sb.AppendLine($"# {story.Title}");
-        sb.AppendLine();
-        sb.AppendLine($"*Protagonist: {story.Protagonist}*");
-        sb.AppendLine();
-
-        int lastAct = 0;
-        foreach (var beat in story.Beats)
-        {
-            if (beat.Act != lastAct)
-            {
-                var actName = story.Outline?.Acts.FirstOrDefault(a => a.ActNumber == beat.Act)?.Name ?? $"Act {beat.Act}";
-                sb.AppendLine($"## Act {beat.Act}: {actName}");
-                sb.AppendLine();
-                lastAct = beat.Act;
-            }
-
-            sb.AppendLine(beat.Text.Trim());
-            sb.AppendLine();
-            sb.AppendLine("---");
-            sb.AppendLine();
-        }
-
-        return sb.ToString().TrimEnd();
-    }
+    private static string ConvertToMarkdown(AutonomousStory story) =>
+        AutonomousStoryFormatter.ToMarkdown(story);
 }

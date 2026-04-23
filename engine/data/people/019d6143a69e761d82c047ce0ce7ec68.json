@@ -2,16 +2,19 @@
   "id": "019d6143a69e761d82c047ce0ce7ec68",
   "rating": 70,
   "type": "character",
-  "name": "Phoenix Olofsson-Baiseitov",
-  "aliases": [],
+  "name": "Alondra Olofsson-Baiseitov",
+  "aliases": [
+    "Phoenix Olofsson-Baiseitov",
+    "Phoenix"
+  ],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
-  "role": "Forensic Technician, Arcturus Defense Solutions \u2014 Civil Security Division",
+  "role": "Forensic Technician, Arcturus Defense Solutions — Civil Security Division",
   "age": 29,
   "status": "active",
   "location": "Deepwell Station, near sub-level access near LaSalle and Congress",
-  "description": "Phoenix Olofsson-Baiseitov is angular and precise \u2014 sharp cheekbones, long fingers perpetually stained faint violet from reactant solution, hair grown out in loose curls they keep loosely pinned and often forget about. Their skin is a warm amber-brown, and they have a single cosmetic mod \u2014 a patterned iris treatment that makes their eyes look like cracked obsidian with gold underneath, chosen because they liked the aesthetic at twenty-two and have never bothered to change it. They dress with the particular carelessness of someone who knows they\u0027ll be in a lab coat within twenty minutes of leaving home anyway.\n\nDeepwell Station\u0027s forensic lab is their kingdom, and they are a benevolent but absolute ruler of it. They speak to evidence the way other people speak to colleagues \u2014 with expectation, with argument, with occasional grudging respect. They are extraordinarily good at their job and have the low-grade social difficulty of someone who spent their developmental years more interested in trace analysis than people. They are not unkind \u2014 they are simply operating on a slightly different frequency, one that detects molecular traces and misses tone of voice. They have a fierce, private ethical core and a growing horror at the gap between what their lab reports show and what the official case conclusions say.",
+  "description": "Phoenix Olofsson-Baiseitov is angular and precise — sharp cheekbones, long fingers perpetually stained faint violet from reactant solution, hair grown out in loose curls they keep loosely pinned and often forget about. Their skin is a warm amber-brown, and they have a single cosmetic mod — a patterned iris treatment that makes their eyes look like cracked obsidian with gold underneath, chosen because they liked the aesthetic at twenty-two and have never bothered to change it. They dress with the particular carelessness of someone who knows they'll be in a lab coat within twenty minutes of leaving home anyway.\n\nDeepwell Station's forensic lab is their kingdom, and they are a benevolent but absolute ruler of it. They speak to evidence the way other people speak to colleagues — with expectation, with argument, with occasional grudging respect. They are extraordinarily good at their job and have the low-grade social difficulty of someone who spent their developmental years more interested in trace analysis than people. They are not unkind — they are simply operating on a slightly different frequency, one that detects molecular traces and misses tone of voice. They have a fierce, private ethical core and a growing horror at the gap between what their lab reports show and what the official case conclusions say.",
   "psychology": {
     "facet_weights": {
       "wound": 0.35,
@@ -26,32 +29,32 @@
       "Being the only person in the room who can see what actually happened and being unable to make anyone care"
     ],
     "core_desires": [
-      "For their findings to mean something \u2014 for evidence to have actual consequence",
+      "For their findings to mean something — for evidence to have actual consequence",
       "To be understood by at least one person without having to translate themselves"
     ],
     "coping_mechanisms": [
       "Obsessive methodological precision as an act of faith",
-      "Naming their instruments and speaking to them \u2014 the centrifuge is \u0027Gavril\u0027, the mass spec is \u0027the Oracle\u0027",
+      "Naming their instruments and speaking to them — the centrifuge is 'Gavril', the mass spec is 'the Oracle'",
       "Long swim sessions at the Deepwell public tank"
     ],
     "blind_spots": [
       "They are so focused on what evidence shows that they sometimes miss what people need in a conversation",
-      "They underestimate how vulnerable their shadow-log makes them if it\u0027s ever found"
+      "They underestimate how vulnerable their shadow-log makes them if it's ever found"
     ],
-    "secret": "Their shadow-log now contains suppressed forensic data from fourteen cases, including two in which the Metro-official perpetrator was demonstrably not present at the crime scene. They have been sitting on this for two years and they do not know what they\u0027re waiting for \u2014 courage, or the right person, or proof that either of those things exists."
+    "secret": "Their shadow-log now contains suppressed forensic data from fourteen cases, including two in which the Metro-official perpetrator was demonstrably not present at the crime scene. They have been sitting on this for two years and they do not know what they're waiting for — courage, or the right person, or proof that either of those things exists."
   },
   "speech_patterns": {
-    "vocabulary": "Technical when discussing their work \u2014 precise, specific, full of discipline jargon. In personal conversation: slightly stilted, over-explains things, sometimes trails off mid-sentence when something more interesting occurs to them.",
-    "cadence": "Fast when engaged with an interesting problem. Slow and careful when they\u0027re saying something they\u0027ve decided matters.",
+    "vocabulary": "Technical when discussing their work — precise, specific, full of discipline jargon. In personal conversation: slightly stilted, over-explains things, sometimes trails off mid-sentence when something more interesting occurs to them.",
+    "cadence": "Fast when engaged with an interesting problem. Slow and careful when they're saying something they've decided matters.",
     "verbal_tics": [
-      "\u0027Specifically\u0027 as a frequent interjection",
+      "'Specifically' as a frequent interjection",
       "Referring to their instruments by name in conversation as though others know them",
-      "\u0027What the evidence shows and what the record says are not always the same thing\u0027 \u2014 delivered very quietly"
+      "'What the evidence shows and what the record says are not always the same thing' — delivered very quietly"
     ],
     "example_lines": [
-      "\u0027The reactant profile is specific to industrial-grade solvents from the Harrowgate plateau. Specifically the eastern processing block. Gavril doesn\u0027t lie.\u0027",
-      "\u0027I can tell you what happened here. I cannot always tell you what happens next with that information.\u0027",
-      "\u0027You\u0027re asking me to trust a person. I\u0027m much better at trusting trace evidence. But. I\u0027m trying.\u0027"
+      "'The reactant profile is specific to industrial-grade solvents from the Harrowgate plateau. Specifically the eastern processing block. Gavril doesn't lie.'",
+      "'I can tell you what happened here. I cannot always tell you what happens next with that information.'",
+      "'You're asking me to trust a person. I'm much better at trusting trace evidence. But. I'm trying.'"
     ],
     "avoidances": [],
     "subtext": "",
@@ -60,13 +63,13 @@
   },
   "relationships": [],
   "story_hooks": [
-    "They are ready to give their shadow-log to someone, but they need to trust that person completely first \u2014 and they are very bad at trust.",
+    "They are ready to give their shadow-log to someone, but they need to trust that person completely first — and they are very bad at trust.",
     "A current case has forensic signatures that exactly match a suppressed case from three years ago, which means either the wrong person is in detention or the perpetrator has been free this whole time."
   ],
   "narrative_function": "Technical information source. The person who knows what actually happened versus what the record says. Moral witness to institutional corruption. Can provide forensic context for past events or reveal inconvenient truths that someone powerful wants buried.",
-  "augmentations": "Patterned obsidian-gold iris mod (cosmetic). Neural processing chip for accelerated data correlation \u2014 Metro standard for forensics. Olfactory enhancement mods (professional \u2014 dramatically increased scent discrimination, hence \u0027the Bloodhound\u0027). Fingertip haptic sensors for trace texture detection.",
-  "daily_life": "They arrive at the Deepwell lab before anyone else and leave after everyone. They subsist on vending machine protein bricks and the very good coffee they make in the lab\u0027s corner unit. They keep a private shadow-log of every case where their forensic conclusions were altered or buried before trial.",
-  "affiliation": "Arcturus Defense Solutions \u2014 Civil Security Division, Forensic Division, Deepwell Station Lab",
+  "augmentations": "Patterned obsidian-gold iris mod (cosmetic). Neural processing chip for accelerated data correlation — Metro standard for forensics. Olfactory enhancement mods (professional — dramatically increased scent discrimination, hence 'the Bloodhound'). Fingertip haptic sensors for trace texture detection.",
+  "daily_life": "They arrive at the Deepwell lab before anyone else and leave after everyone. They subsist on vending machine protein bricks and the very good coffee they make in the lab's corner unit. They keep a private shadow-log of every case where their forensic conclusions were altered or buried before trial.",
+  "affiliation": "Arcturus Defense Solutions — Civil Security Division, Forensic Division, Deepwell Station Lab",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -110,36 +113,36 @@
   "behavioral": {
     "decision_rules": [
       "Document everything, always, even if the documentation can never be used",
-      "Do not alter findings \u2014 ever, for anyone, under any pressure",
+      "Do not alter findings — ever, for anyone, under any pressure",
       "Do not lie about what the evidence shows, but choose carefully who you tell"
     ],
     "escalation_ladder": [
-      "Passive non-compliance \u2014 submit accurate reports without comment",
-      "Shadow documentation \u2014 logging suppression for the record",
-      "Quiet approach to someone they\u0027ve assessed as trustworthy",
+      "Passive non-compliance — submit accurate reports without comment",
+      "Shadow documentation — logging suppression for the record",
+      "Quiet approach to someone they've assessed as trustworthy",
       "Full disclosure if the situation is bad enough and the person is right"
     ],
     "interpersonal_modes": {
       "strangers": "Polite, slightly absent, measuring whether the person is scientifically honest before engaging",
-      "friends": "Intensely loyal, will work exhausting hours to help, brings food without being asked and doesn\u0027t mention it"
+      "friends": "Intensely loyal, will work exhausting hours to help, brings food without being asked and doesn't mention it"
     },
     "stress_responses": {
       "low": "More talkative about evidence, less about anything else",
       "medium": "Goes very quiet and works through the night",
-      "high": "Shaking hands, precision suffers, retreats to the most mechanical tasks \u2014 cleaning, calibrating"
+      "high": "Shaking hands, precision suffers, retreats to the most mechanical tasks — cleaning, calibrating"
     },
     "contradictions": [
-      "Believes evidence must be acted on while sitting on the most important evidence they\u0027ve ever collected",
+      "Believes evidence must be acted on while sitting on the most important evidence they've ever collected",
       "Socially avoidant but desperately wants to be understood"
     ],
     "habits": [
       "Names and speaks to instruments",
       "Brings exactly the same lunch they will not eat",
-      "Checks the shadow-log is still encrypted and intact at the start and end of every shift \u2014 a ritual as much as a precaution"
+      "Checks the shadow-log is still encrypted and intact at the start and end of every shift — a ritual as much as a precaution"
     ],
     "breaking_points": [
       "Watching a conviction stand that they have forensic proof is wrong",
-      "Being directly ordered to alter a finding \u2014 the first time this happened they complied; they have not forgiven themselves"
+      "Being directly ordered to alter a finding — the first time this happened they complied; they have not forgiven themselves"
     ]
   },
   "cyberware_inventory": [
@@ -154,13 +157,13 @@
       "replaces": ""
     },
     {
-      "name": "Neural processing chip \u2014 data correlation accelerant (Metro Forensics standard)",
+      "name": "Neural processing chip — data correlation accelerant (Metro Forensics standard)",
       "body_location": "",
       "manufacturer": "",
       "tier": "",
       "condition": "functional",
       "installed_date": "",
-      "description": "Neural processing chip \u2014 data correlation accelerant (Metro Forensics standard)",
+      "description": "Neural processing chip — data correlation accelerant (Metro Forensics standard)",
       "replaces": ""
     },
     {
@@ -239,7 +242,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2196: First case suppression \u2014 complied under pressure; began shadow-log the next day",
+      "event": "2196: First case suppression — complied under pressure; began shadow-log the next day",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -265,19 +268,19 @@
     "weight_kg": 62,
     "build": "Angular and lean, all sharp planes and efficient geometry. Long-limbed with a slight forward hunch from years bent over lab benches. Chest narrow, shoulders slightly rounded from posture. Wrists thin enough to slip easily into precision-work gloves.",
     "hair_color": "Natural dark brown with warm undertones",
-    "hair_style": "Loose, loose curls worn long and typically half-pinned with whatever clip was closest at hand \u2014 usually a pen, sometimes a lab marker. Frequently escapes.",
+    "hair_style": "Loose, loose curls worn long and typically half-pinned with whatever clip was closest at hand — usually a pen, sometimes a lab marker. Frequently escapes.",
     "hair_length": "Long (shoulder-length, often longer on one side)",
     "eye_color": "Patterned iris mod: obsidian-black base with fine gold fracture-pattern throughout, giving the appearance of cracked stone with warm metal underneath. Natural pupil and sclera structure preserved.",
     "skin_tone": "Warm medium brown with golden and olive undertones, reflecting Southeast Asian and Central Asian dominance with warmer contributions from South Asian, North African, and Sub-Saharan African heritage",
-    "complexion": "Clean, minimal grooming emphasis. Prominent high cheekbones and defined jawline characteristic of Southeast and South Asian features with subtle warmth from North African ancestry. Skin clear but with faint violet staining around the cuticles and under fingernails from reactant solutions \u2014 a mark they don\u0027t bother to remove. Small scar on left temple, barely visible, from a lab accident at twenty-five.",
+    "complexion": "Clean, minimal grooming emphasis. Prominent high cheekbones and defined jawline characteristic of Southeast and South Asian features with subtle warmth from North African ancestry. Skin clear but with faint violet staining around the cuticles and under fingernails from reactant solutions — a mark they don't bother to remove. Small scar on left temple, barely visible, from a lab accident at twenty-five.",
     "distinguishing_marks": [
       "Faint violet reactant staining on fingertips and cuticles, chronic and deep enough to be part of their visual identity",
-      "Small 2cm scar on left temple, thin and clean, angled slightly upward \u2014 result of a centrifuge incident",
+      "Small 2cm scar on left temple, thin and clean, angled slightly upward — result of a centrifuge incident",
       "Patterned iris modification visible in both eyes: gold fracture-lines on obsidian base, deliberately aesthetic choice made at age 22"
     ],
-    "visible_augmentations": "Obsidian-gold patterned iris mods (immediately visible). Fingertips show minimal scarring and unusual smoothness from haptic sensor integration \u2014 noticeable under close inspection. No visible chrome or external augmentation hardware. Olfactory and neural processing mods are subcutaneous/internal.",
-    "posture_movement": "Forward-leaning stance, shoulders slightly hunched as if perpetually leaning toward a microscope or evidence table. Movements are precise and economical \u2014 no wasted motion. Hands are active, often gesturing when explaining trace evidence. Walking gait is slightly hurried, rhythm of someone moving between tasks. Resting expression is faintly distant, as if processing multiple data streams.",
-    "clothing_style": "Tier 3 working-class pragmatism: dark neutral colors (charcoal, black, muted blue) chosen for lab practicality rather than fashion. Standard-fit synthetic-blend cargo pants with deep pockets, usually containing evidence bags, calipers, or sampling equipment. Loose long-sleeved shirts or fitted tech-weave tops that allow arm mobility. Worn grey or black lab coat, perpetually wrinkled, with pens and markers in the breast pocket. Comfortable, scuffed ankle boots with good grip for wet lab floors. Almost no jewelry except a worn titanium watch that syncs to the lab database. No corporate branding visible \u2014 their uniform is function, not affiliation."
+    "visible_augmentations": "Obsidian-gold patterned iris mods (immediately visible). Fingertips show minimal scarring and unusual smoothness from haptic sensor integration — noticeable under close inspection. No visible chrome or external augmentation hardware. Olfactory and neural processing mods are subcutaneous/internal.",
+    "posture_movement": "Forward-leaning stance, shoulders slightly hunched as if perpetually leaning toward a microscope or evidence table. Movements are precise and economical — no wasted motion. Hands are active, often gesturing when explaining trace evidence. Walking gait is slightly hurried, rhythm of someone moving between tasks. Resting expression is faintly distant, as if processing multiple data streams.",
+    "clothing_style": "Tier 3 working-class pragmatism: dark neutral colors (charcoal, black, muted blue) chosen for lab practicality rather than fashion. Standard-fit synthetic-blend cargo pants with deep pockets, usually containing evidence bags, calipers, or sampling equipment. Loose long-sleeved shirts or fitted tech-weave tops that allow arm mobility. Worn grey or black lab coat, perpetually wrinkled, with pens and markers in the breast pocket. Comfortable, scuffed ankle boots with good grip for wet lab floors. Almost no jewelry except a worn titanium watch that syncs to the lab database. No corporate branding visible — their uniform is function, not affiliation."
   },
   "image_prompt": "Phoenix Olofsson-Baiseitov, 178cm lean angular frame with slight forward hunch, warm medium-brown skin with golden-olive undertones from Southeast Asian-Central Asian-South Asian heritage blend. High prominent cheekbones, defined jawline. Long dark brown curly hair shoulder-length, half-pinned with lab pen, loose tendrils escaping. Patterned iris modification: obsidian base with fine gold fracture-lines like cracked stone. Small temple scar. Violet staining visible on fingertips from reactant solutions. Wearing wrinkled grey lab coat over dark synthetic tech-weave top, cargo pants with equipment pockets, scuffed black ankle boots. Hunched posture over microscope or evidence table in modern GLMZ forensics lab, cool LED lighting casting gold fractals from iris augmentation across lab equipment. Tired, focused expression, hands active near trace evidence samples. GLMZ, meticulous trace analyst aesthetic, functional working-class gear, no corporate branding. --ar 2:3 --v 6",
   "dalle3_prompt": "",

@@ -3,16 +3,19 @@
   "rating": 70,
   "vote_count": 1,
   "type": "character",
-  "name": "Juno Zidane",
-  "aliases": [],
+  "name": "Durojaiye Zidane",
+  "aliases": [
+    "Juno Zidane",
+    "Juno"
+  ],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Personal security and threat neutralization \u2014 bodyguard",
+  "role": "Personal security and threat neutralization — bodyguard",
   "age": 45,
   "status": "active",
-  "location": "Ashfield \u2014 former residential district, half-burned, now squatter territory, near Ashland and Division",
-  "description": "Juno Zidane is compact and densely muscled, built low to the ground like something designed to survive impacts. At 45, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible \u2014 synthetic muscle fiber replacement in legs \u2014 doubles sprint speed, terrible on s \u2014 and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a bodyguard out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who\u0027s worked with Juno Zidane agrees on two things: he is worth the fee, and he is terrible company at dinner.",
+  "location": "Ashfield — former residential district, half-burned, now squatter territory, near Ashland and Division",
+  "description": "Juno Zidane is compact and densely muscled, built low to the ground like something designed to survive impacts. At 45, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a bodyguard out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Juno Zidane agrees on two things: he is worth the fee, and he is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.62,
@@ -23,19 +26,19 @@
       "ghost": 0.81
     },
     "core_fears": [
-      "Never being able to stop running \u2014 the lifestyle is a trap disguised as freedom",
-      "Going cyberpsycho \u2014 losing the boundary between human and machine",
-      "Being identified by corporate facial recognition \u2014 living off-grid is survival"
+      "Never being able to stop running — the lifestyle is a trap disguised as freedom",
+      "Going cyberpsycho — losing the boundary between human and machine",
+      "Being identified by corporate facial recognition — living off-grid is survival"
     ],
     "core_desires": [
-      "To protect the people in their district who can\u0027t protect themselves",
-      "The perfect run \u2014 one job so clean it becomes legend",
+      "To protect the people in their district who can't protect themselves",
+      "The perfect run — one job so clean it becomes legend",
       "To matter to someone for who they are, not what they can do"
     ],
     "coping_mechanisms": [
-      "Isolates \u2014 retreats into their space when overwhelmed, emerges only for work",
-      "Drinks methodically \u2014 not to get drunk, to maintain a specific level of not-caring",
-      "Maintains weapons obsessively \u2014 cleaning guns is meditation"
+      "Isolates — retreats into their space when overwhelmed, emerges only for work",
+      "Drinks methodically — not to get drunk, to maintain a specific level of not-caring",
+      "Maintains weapons obsessively — cleaning guns is meditation"
     ],
     "blind_spots": [
       "Assumes their skill set is more transferable than it actually is",
@@ -46,15 +49,15 @@
   },
   "speech_patterns": {
     "vocabulary": "Warm and personable on the surface, with an undertone that suggests the warmth is a professional tool.",
-    "cadence": "Conversational and disarming \u2014 sounds like a neighbor until the content registers.",
+    "cadence": "Conversational and disarming — sounds like a neighbor until the content registers.",
     "verbal_tics": [
-      "Pauses mid-sentence to listen \u2014 combat habit that bleeds into conversation",
-      "Ends statements with \u0027yeah?\u0027 \u2014 not a question, a dare"
+      "Pauses mid-sentence to listen — combat habit that bleeds into conversation",
+      "Ends statements with 'yeah?' — not a question, a dare"
     ],
     "example_lines": [
-      "\u0022You\u0027re paying me to be the thing between you and everything else. Stay behind me.\u0022",
-      "\u0022I don\u0027t protect people I don\u0027t respect. Lucky for you, I respect your money.\u0022",
-      "\u0022The threat you see isn\u0027t the one that kills you. Watch my eyes, not my hands.\u0022"
+      "\"You're paying me to be the thing between you and everything else. Stay behind me.\"",
+      "\"I don't protect people I don't respect. Lucky for you, I respect your money.\"",
+      "\"The threat you see isn't the one that kills you. Watch my eyes, not my hands.\""
     ],
     "avoidances": [],
     "subtext": "",
@@ -63,14 +66,14 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A dead drop Cem Osei-Petrov maintains is found and cleaned out \u2014 whoever did it now has leverage",
+    "A dead drop Cem Osei-Petrov maintains is found and cleaned out — whoever did it now has leverage",
     "Someone is impersonating Cem Osei-Petrov on jobs, and the impersonator is better at the work than the original",
-    "The fixer who handles Cem Osei-Petrov\u0027s contracts goes silent \u2014 dead, disappeared, or turned"
+    "The fixer who handles Cem Osei-Petrov's contracts goes silent — dead, disappeared, or turned"
   ],
-  "narrative_function": "Cem Osei-Petrov is a pressure point \u2014 the kind of character whose choices ripple outward. When he makes a decision, other people\u0027s lives change. That weight is the engine of his stories.",
-  "augmentations": "Synthetic muscle fiber replacement in legs \u2014 doubles sprint speed, terrible on stairs. Gecko-grip fingertip implants and toe pads \u2014 can climb smooth surfaces",
+  "narrative_function": "Cem Osei-Petrov is a pressure point — the kind of character whose choices ripple outward. When he makes a decision, other people's lives change. That weight is the engine of his stories.",
+  "augmentations": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs. Gecko-grip fingertip implants and toe pads — can climb smooth surfaces",
   "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
-  "affiliation": "Freelance \u2014 Geartown regular",
+  "affiliation": "Freelance — Geartown regular",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -183,26 +186,26 @@
       "Always has an exit route planned before agreeing to any meeting",
       "Never discusses active contracts with anyone not directly involved",
       "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
-      "Maintains a personal blacklist of clients who\u0027ve burned runners \u2014 checks it religiously"
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously"
     ],
     "escalation_ladder": [
-      "1. Assess \u2014 read the situation, identify threats and advantages",
-      "2. Negotiate \u2014 try to find a solution that doesn\u0027t cost ammunition",
-      "3. Intimidate \u2014 make the cost of conflict clear",
-      "4. Precision violence \u2014 surgical, targeted, minimal collateral",
-      "5. Full engagement \u2014 overwhelming force, no half measures",
-      "6. Emergency protocol \u2014 abort mission, survival priority, deal with consequences later"
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
     ],
     "interpersonal_modes": {
       "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
       "crew": "Competitive but reliable. Will challenge decisions but never abandon the team.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
-      "threats": "Calm escalation. Each response is proportional until it isn\u0027t, and the transition is seamless."
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
+      "threats": "Calm escalation. Each response is proportional until it isn't, and the transition is seamless."
     },
     "stress_responses": {
-      "low": "Channels it into preparation \u2014 checks gear, reviews plans, contacts sources.",
+      "low": "Channels it into preparation — checks gear, reviews plans, contacts sources.",
       "medium": "Becomes curt and demanding. Efficiency overrides courtesy.",
-      "high": "Goes quiet. The silence is not calm \u2014 it\u0027s the sound of every contingency being evaluated simultaneously.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
       "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
     },
     "contradictions": [
@@ -211,15 +214,15 @@
       "Claims not to care about reputation but monitors what people say about them obsessively"
     ],
     "habits": [
-      "Counts ammunition obsessively \u2014 knows the exact round count at all times",
+      "Counts ammunition obsessively — knows the exact round count at all times",
       "Practices a kata or fighting form every morning regardless of circumstances",
       "Checks exits within 10 seconds of entering any room",
-      "Takes a specific route home every time, varying only one block per trip \u2014 paranoia as lifestyle"
+      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle"
     ],
     "breaking_points": [
-      "Losing their primary augmentation \u2014 the one that defines their professional identity",
-      "Being forced to harm a civilian \u2014 collateral damage that can\u0027t be rationalized",
-      "Their body rejecting their cyberware \u2014 chrome rot, immune rejection, the nightmare scenario"
+      "Losing their primary augmentation — the one that defines their professional identity",
+      "Being forced to harm a civilian — collateral damage that can't be rationalized",
+      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario"
     ]
   },
   "cyberware_inventory": [
@@ -230,7 +233,7 @@
       "tier": "",
       "condition": "degraded",
       "installed_date": "",
-      "description": "Synthetic muscle fiber replacement in legs \u2014 doubles sprint speed, terrible on stairs",
+      "description": "Synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on stairs",
       "replaces": ""
     },
     {
@@ -240,7 +243,7 @@
       "tier": "",
       "condition": "pristine",
       "installed_date": "",
-      "description": "Gecko-grip fingertip implants and toe pads \u2014 can climb smooth surfaces",
+      "description": "Gecko-grip fingertip implants and toe pads — can climb smooth surfaces",
       "replaces": ""
     }
   ],
@@ -283,25 +286,25 @@
     "heritage": "North African (43.1%), Central Asian (24.1%), Pacific Islander (23.5%), and Hispanic/Latin American (9.3%) blend. Dominant North African bone structure with Central Asian cheekbone prominence creates angular mid-face; Pacific Islander heritage contributes broader facial proportions and robust build; Hispanic/Latin American ancestry adds warm golden undertones to skin. Strong jawline characteristic of North African and Pacific Islander ancestry, with Central Asian depth in eye sockets.",
     "height_cm": 168,
     "weight_kg": 89,
-    "build": "Compact and densely muscled, low center of gravity \u2014 built for impact absorption and close-quarters combat. Shoulders broad, legs thick with visible synthetic fiber cabling, minimal body fat.",
+    "build": "Compact and densely muscled, low center of gravity — built for impact absorption and close-quarters combat. Shoulders broad, legs thick with visible synthetic fiber cabling, minimal body fat.",
     "hair_color": "Black with premature silver at temples",
     "hair_style": "Short, functional cut, often unwashed or slicked back",
     "hair_length": "Short",
     "eye_color": "Dark brown, slight yellow undertone in low light (subcutaneous neural implant feedback)",
-    "skin_tone": "Rich mahogany bronze \u2014 North African warmth (43%) deepened by Pacific Islander depth (23.5%), lifted by Hispanic/Latin American golden warmth (9.3%), with Central Asian (24.1%) coolness creating complex undertones. Subtle bronze highlights in direct light, cooler in shadows.",
-    "complexion": "Weathered and scarred \u2014 face mapped with pale scar tissue from impact trauma, jaw clenched often, stubble permanent fixture due to nocturnal schedule. Crow\u0027s feet deep. Small burn scar on left cheekbone. Skin has the leathery quality of someone who sleeps during daylight and exists in artificial light. High, prominent cheekbones from Central Asian ancestry, broad nose bridge and powerful jaw from North African and Pacific Islander heritage, creating strong angular mid-face structure.",
+    "skin_tone": "Rich mahogany bronze — North African warmth (43%) deepened by Pacific Islander depth (23.5%), lifted by Hispanic/Latin American golden warmth (9.3%), with Central Asian (24.1%) coolness creating complex undertones. Subtle bronze highlights in direct light, cooler in shadows.",
+    "complexion": "Weathered and scarred — face mapped with pale scar tissue from impact trauma, jaw clenched often, stubble permanent fixture due to nocturnal schedule. Crow's feet deep. Small burn scar on left cheekbone. Skin has the leathery quality of someone who sleeps during daylight and exists in artificial light. High, prominent cheekbones from Central Asian ancestry, broad nose bridge and powerful jaw from North African and Pacific Islander heritage, creating strong angular mid-face structure.",
     "distinguishing_marks": [
-      "Jagged scar running from left temple to jaw \u2014 pale and deep, clearly from blade or shrapnel",
+      "Jagged scar running from left temple to jaw — pale and deep, clearly from blade or shrapnel",
       "Burn scar on left cheekbone, roughly 3cm diameter, tissue slightly depressed",
-      "Network of white scars across knuckles and forearms \u2014 accumulated impact damage",
+      "Network of white scars across knuckles and forearms — accumulated impact damage",
       "Surgical scar along left knee where synthetic muscle fiber replacement was installed, visible chrome port visible beneath skin",
-      "Small tattoo on inner right wrist \u2014 faded Geartown sigil in blue ink, amateur work"
+      "Small tattoo on inner right wrist — faded Geartown sigil in blue ink, amateur work"
     ],
-    "visible_augmentations": "Both legs show synthetic muscle fiber replacement \u2014 visible chrome-gray cabling running along outer thighs and calves beneath translucent skin panels, especially when moving. Fingertips show faint metallic sheen from gecko-grip implants, subtle LED indicator lights at nail beds when activated. Toes slightly bulkier than normal from toe pad augmentations.",
-    "posture_movement": "Moves economically and quietly despite muscular build \u2014 predatory economy of motion. Stands with weight forward on balls of feet, ready to move vertically or horizontally instantly. Head often tilted slightly, assessing. Rarely relaxes shoulders. Grips things with unnecessary force. Ascends stairs slowly and deliberately (chrome legs perform poorly on inclines), but descends rapidly. Avoids crowds, positions himself with back to wall and exit visible.",
-    "clothing_style": "Tier 3-4 functional wear \u2014 dark synthetic cargo pants with reinforced seams and \u03A6150\u002B knee armor inserts, black under-armor compression shirt (heat regulation for augmentations), gray Kevlar-weave overshirt or unmarked tactical jacket. Steel-toed boots, worn and re-soled multiple times. Minimal accessories \u2014 no jewelry, simple analog watch (rejects neural time implants), concealed carry holster worn loose. Everything chosen for durability and mobility over aesthetics. Clothes smell like synthetic oil and industrial soap."
+    "visible_augmentations": "Both legs show synthetic muscle fiber replacement — visible chrome-gray cabling running along outer thighs and calves beneath translucent skin panels, especially when moving. Fingertips show faint metallic sheen from gecko-grip implants, subtle LED indicator lights at nail beds when activated. Toes slightly bulkier than normal from toe pad augmentations.",
+    "posture_movement": "Moves economically and quietly despite muscular build — predatory economy of motion. Stands with weight forward on balls of feet, ready to move vertically or horizontally instantly. Head often tilted slightly, assessing. Rarely relaxes shoulders. Grips things with unnecessary force. Ascends stairs slowly and deliberately (chrome legs perform poorly on inclines), but descends rapidly. Avoids crowds, positions himself with back to wall and exit visible.",
+    "clothing_style": "Tier 3-4 functional wear — dark synthetic cargo pants with reinforced seams and Φ150+ knee armor inserts, black under-armor compression shirt (heat regulation for augmentations), gray Kevlar-weave overshirt or unmarked tactical jacket. Steel-toed boots, worn and re-soled multiple times. Minimal accessories — no jewelry, simple analog watch (rejects neural time implants), concealed carry holster worn loose. Everything chosen for durability and mobility over aesthetics. Clothes smell like synthetic oil and industrial soap."
   },
-  "image_prompt": "Juno Zidane, 168cm compact muscular figure, rich mahogany bronze skin tone from North African, Central Asian, Pacific Islander, Hispanic ancestry blend. Strong angular cheekbones, broad nose bridge, powerful jaw. Dark brown eyes with neural implant yellow undertone. Black hair with silver temples, short functional cut. Weathered face mapped with scars \u2014 jagged scar temple to jaw, burn scar left cheekbone, crow\u0027s feet, nocturnal pallor. Visible chrome-gray synthetic muscle fiber cabling visible on outer thighs and calves beneath translucent skin panels. Gecko-grip implant fingertips with faint metallic sheen. Dark tactical gear \u2014 reinforced cargo pants, black compression shirt, gray Kevlar overshirt, worn steel-toed boots. Concealed carry holster, analog watch. Stands weight-forward predatory posture, slight head tilt assessing. Neon-soaked neo-noir alley at night, harsh LED lighting casting shadows across scarred face, chrome limbs gleaming. Mood: lethal calm, ready for violence. GLMZ, GLMZ --ar 2:3 --v 6",
+  "image_prompt": "Juno Zidane, 168cm compact muscular figure, rich mahogany bronze skin tone from North African, Central Asian, Pacific Islander, Hispanic ancestry blend. Strong angular cheekbones, broad nose bridge, powerful jaw. Dark brown eyes with neural implant yellow undertone. Black hair with silver temples, short functional cut. Weathered face mapped with scars — jagged scar temple to jaw, burn scar left cheekbone, crow's feet, nocturnal pallor. Visible chrome-gray synthetic muscle fiber cabling visible on outer thighs and calves beneath translucent skin panels. Gecko-grip implant fingertips with faint metallic sheen. Dark tactical gear — reinforced cargo pants, black compression shirt, gray Kevlar overshirt, worn steel-toed boots. Concealed carry holster, analog watch. Stands weight-forward predatory posture, slight head tilt assessing. Neon-soaked neo-noir alley at night, harsh LED lighting casting shadows across scarred face, chrome limbs gleaming. Mood: lethal calm, ready for violence. GLMZ, GLMZ --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "North African": 43.1,

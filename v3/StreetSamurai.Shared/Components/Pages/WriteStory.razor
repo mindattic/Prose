@@ -20,6 +20,8 @@
 @inject KnowledgeMapService KnowledgeMap
 @inject AgendaEngine Agenda
 @inject OutlineService OutlineSvc
+@inject StoryRefinementService Refinement
+@inject IStoryDirectorService Director
 @inject SemanticIndexService SemanticIndex
 @inject InferenceService Inference
 @inject IJSRuntime JS
@@ -429,7 +431,7 @@
 </div>
 
 <div class="row g-2">
-    <div class="@(showSceneSidebar ? "col-md-8" : "col-12")">
+    <div class="@((showSceneSidebar || showRefinementPanel) ? "col-md-8" : "col-12")">
 
         @* ── Split pane: editor left, preview right on desktop ── *@
         <div class="row g-1 mb-1">
@@ -547,6 +549,11 @@
                 </button>
                 <button class="btn btn-sm btn-outline-warning" @onclick="RunValidation" disabled="@(busy || !hasExistingText)">
                     <i class="bi bi-shield-check"></i><div class="btn-lbl"> Validate</div>
+                </button>
+                <button class="btn btn-sm @(showRefinementPanel ? "btn-info text-dark" : "btn-outline-info")" @onclick="ToggleRefinePanel" disabled="@(busy || !hasExistingText)" title="Refine — LLM flags impactful, cluttered, underdeveloped, and context-gap moments">
+                    @if (refining) { <span class="spinner-border spinner-border-sm"></span> }
+                    else { <i class="bi bi-magic"></i> }
+                    <div class="btn-lbl"> Refine</div>
                 </button>
                 <button class="btn btn-sm btn-outline-info" @onclick="() => showAskModal = true" disabled="@busy">
                     <i class="bi bi-chat-dots"></i><div class="btn-lbl"> Ask</div>
@@ -709,6 +716,109 @@
             </div>
         </div>
     }
+
+    @* ── Refinement Panel ────────────────────────────── *@
+    @if (showRefinementPanel)
+    {
+        <div class="col-md-4">
+            <div class="card bg-dark text-light border-info mb-2">
+                <div class="card-header py-1 d-flex justify-content-between align-items-center border-secondary">
+                    <span class="text-info fw-bold small"><i class="bi bi-magic"></i> Refinement Notes</span>
+                    <div class="d-flex gap-1">
+                        <button class="btn btn-sm btn-outline-info py-0 px-2" @onclick="RunRefinement" disabled="@refining" title="Re-analyze the current draft">
+                            @if (refining) { <span class="spinner-border spinner-border-sm"></span> }
+                            else { <i class="bi bi-arrow-repeat"></i> }
+                        </button>
+                        <button class="btn btn-sm btn-outline-secondary py-0 px-2" @onclick="() => showRefinementPanel = false"><i class="bi bi-x"></i></button>
+                    </div>
+                </div>
+                <div class="card-body py-2 small" style="max-height: calc(100vh - 260px); overflow-y: auto;">
+                    @if (refining)
+                    {
+                        <div class="d-flex align-items-center gap-2 text-info">
+                            <div class="spinner-border spinner-border-sm"></div>
+                            <span>@refineStatus</span>
+                        </div>
+                    }
+                    else if (refinement == null || refinement.Notes.Count == 0)
+                    {
+                        <div class="text-muted">
+                            @if (refinement == null)
+                            {
+                                <div>No refinement report yet.</div>
+                                <button class="btn btn-sm btn-info text-dark mt-2" @onclick="RunRefinement" disabled="@(busy || !hasExistingText)">
+                                    <i class="bi bi-magic"></i><div class="btn-lbl"> Run analysis</div>
+                                </button>
+                            }
+                            else { <div>No notes. The draft is clean — or the analyzer had nothing to say.</div> }
+                        </div>
+                    }
+                    else
+                    {
+                        var pendingCount = refinement.Notes.Count(n => n.Status == RefinementNoteStatus.Pending);
+                        var acceptedCount = refinement.Notes.Count(n => n.Status == RefinementNoteStatus.Accepted);
+                        var skippedCount = refinement.Notes.Count(n => n.Status == RefinementNoteStatus.Skipped);
+
+                        <div class="mb-2 d-flex gap-2 flex-wrap">
+                            <span class="badge bg-info text-dark">@pendingCount pending</span>
+                            @if (acceptedCount > 0) { <span class="badge bg-success">@acceptedCount accepted</span> }
+                            @if (skippedCount > 0) { <span class="badge bg-secondary">@skippedCount skipped</span> }
+                        </div>
+
+                        @foreach (var note in refinement.Notes.Where(n => n.Status == RefinementNoteStatus.Pending).OrderBy(n => n.BeatIndex))
+                        {
+                            var n = note;
+                            var cls = RefineKindClass(n.Kind);
+                            <div class="card bg-black border-@cls mb-2">
+                                <div class="card-header py-1 px-2 d-flex justify-content-between align-items-center">
+                                    <span>
+                                        <span class="badge bg-@cls me-1" style="font-size: 0.6rem;">@n.Kind</span>
+                                        <small class="text-muted">Beat @(n.BeatIndex + 1)</small>
+                                    </span>
+                                    @if (applyingNoteId == n.Id) { <span class="spinner-border spinner-border-sm text-info"></span> }
+                                </div>
+                                <div class="card-body py-2 px-2">
+                                    <div class="text-muted fst-italic mb-1" style="font-size: 0.75rem; border-left: 2px solid #444; padding-left: 0.5rem;">&ldquo;@n.Quote&rdquo;</div>
+                                    <div class="mb-1"><strong class="text-info">Why:</strong> @n.Rationale</div>
+
+                                    @if (editingNoteId == n.Id)
+                                    {
+                                        <div class="mb-2">
+                                            <strong class="text-info d-block">Suggestion:</strong>
+                                            <textarea class="form-control form-control-sm bg-dark text-light border-secondary" rows="3" @bind="editBuffer"></textarea>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="mb-2"><strong class="text-info">Suggestion:</strong> @n.Suggestion</div>
+                                    }
+
+                                    @if (!string.IsNullOrWhiteSpace(n.CanonFact))
+                                    {
+                                        <div class="mb-2" style="font-size: 0.75rem;"><strong class="text-warning">Canon:</strong> <span class="text-muted">@n.CanonFact</span></div>
+                                    }
+
+                                    <div class="d-flex gap-1">
+                                        @if (editingNoteId == n.Id)
+                                        {
+                                            <button class="btn btn-sm btn-success py-0 px-2" @onclick="() => AcceptNote(n, true)" disabled="@(applyingNoteId != null)"><i class="bi bi-check"></i><div class="btn-lbl"> Apply edit</div></button>
+                                            <button class="btn btn-sm btn-outline-secondary py-0 px-2" @onclick="CancelEdit"><div class="btn-lbl">Cancel</div></button>
+                                        }
+                                        else
+                                        {
+                                            <button class="btn btn-sm btn-outline-success py-0 px-2" @onclick="() => AcceptNote(n, false)" disabled="@(applyingNoteId != null)" title="Rewrite the paragraph incorporating the suggestion"><i class="bi bi-check"></i><div class="btn-lbl"> Accept</div></button>
+                                            <button class="btn btn-sm btn-outline-info py-0 px-2" @onclick="() => StartEdit(n)" disabled="@(applyingNoteId != null)" title="Edit the suggestion before applying"><i class="bi bi-pencil"></i><div class="btn-lbl"> Edit</div></button>
+                                            <button class="btn btn-sm btn-outline-secondary py-0 px-2" @onclick="() => SkipNote(n)" disabled="@(applyingNoteId != null)" title="Dismiss this note"><i class="bi bi-x"></i><div class="btn-lbl"> Skip</div></button>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    }
 </div>
 
 @if (error != null)
@@ -801,6 +911,15 @@
     private string viewMode = "editor"; // "editor" or "preview" (mobile only; desktop shows both)
     private string printHtml = "";
 
+    // ── Refinement ──
+    private bool showRefinementPanel;
+    private bool refining;
+    private string refineStatus = "";
+    private RefinementReport? refinement;
+    private string? editingNoteId;
+    private string editBuffer = "";
+    private string? applyingNoteId;
+
     // ── Scene sidebar ──
     private bool showSceneSidebar;
     private List<(string id, string name, string nodeType)> _sceneEntities = [];
@@ -832,6 +951,7 @@
         }
         storyText = project.Html;
         currentOutline = OutlineSvc.Load(project.Id);
+        refinement = Refinement.LoadReport(project.Id);
         validationResults = LoadValidation();
         if (validationResults.Count > 0) showValidateModal = true;
         UpdateWordCount();
@@ -1757,4 +1877,167 @@
     }
 
     private record SelectionInfo(int Start, int End, string Text);
+
+    // ── Refinement handlers ──────────────────────────────────────────
+
+    private async Task ToggleRefinePanel()
+    {
+        if (showRefinementPanel) { showRefinementPanel = false; return; }
+        showSceneSidebar = false;
+        showRefinementPanel = true;
+        if (refinement == null) await RunRefinement();
+    }
+
+    private async Task RunRefinement()
+    {
+        if (refining) return;
+        refining = true;
+        refineStatus = "Loading story...";
+        StateHasChanged();
+
+        try
+        {
+            // The analyzer needs the structured AutonomousStory checkpoint, not the flat markdown.
+            var story = Director.LoadCheckpoint(project.Id);
+            if (story == null || story.Beats.Count == 0)
+            {
+                error = "No story checkpoint available — this editor can refine stories generated through the Stories pipeline.";
+                return;
+            }
+
+            refineStatus = $"Analyzing {story.Beats.Count} beats...";
+            StateHasChanged();
+
+            // Preserve any prior status (accepted/skipped) when re-analyzing by id match.
+            var prior = refinement?.Notes.ToDictionary(n => n.Id, n => (n.Status, n.AppliedAt)) ?? new();
+
+            refinement = await Refinement.AnalyzeAsync(story);
+
+            foreach (var n in refinement.Notes)
+            {
+                if (prior.TryGetValue(n.Id, out var prev))
+                {
+                    n.Status = prev.Status;
+                    n.AppliedAt = prev.AppliedAt;
+                }
+            }
+            Refinement.SaveReport(refinement);
+        }
+        catch (Exception ex) { error = $"Refinement failed: {ex.Message}"; }
+        finally
+        {
+            refining = false;
+            refineStatus = "";
+            StateHasChanged();
+        }
+    }
+
+    private void StartEdit(RefinementNote note)
+    {
+        editingNoteId = note.Id;
+        editBuffer    = note.Suggestion;
+    }
+
+    private void CancelEdit()
+    {
+        editingNoteId = null;
+        editBuffer    = "";
+    }
+
+    private async Task AcceptNote(RefinementNote note, bool useEditedSuggestion)
+    {
+        if (refinement == null || applyingNoteId != null) return;
+
+        // Apply the edit if the user was editing the suggestion text.
+        if (useEditedSuggestion)
+        {
+            if (string.IsNullOrWhiteSpace(editBuffer)) return;
+            note.Suggestion = editBuffer.Trim();
+        }
+
+        applyingNoteId = note.Id;
+        StateHasChanged();
+
+        try
+        {
+            var (original, startIdx, endIdx) = FindParagraphContaining(storyText, note.Quote);
+            if (original == null)
+            {
+                error = "Could not locate the quoted paragraph in the current text — it may have been edited.";
+                return;
+            }
+
+            var rewritten = await Refinement.ApplyNoteAsync(original, note);
+            if (string.IsNullOrWhiteSpace(rewritten))
+            {
+                error = "The rewrite came back empty; leaving the paragraph unchanged.";
+                return;
+            }
+
+            storyText = storyText[..startIdx] + rewritten + storyText[endIdx..];
+            project.Html = storyText;
+            await JS.InvokeVoidAsync("writeInterop.setText", "story-surface", storyText);
+            Save();
+            UpdateWordCount();
+            printHtml = Markdown.RenderToPrintHtml(storyText);
+
+            note.Status     = RefinementNoteStatus.Accepted;
+            note.AppliedAt  = DateTime.UtcNow;
+            Refinement.SaveReport(refinement);
+
+            editingNoteId = null;
+            editBuffer    = "";
+        }
+        catch (Exception ex) { error = $"Could not apply refinement: {ex.Message}"; }
+        finally
+        {
+            applyingNoteId = null;
+            StateHasChanged();
+        }
+    }
+
+    private void SkipNote(RefinementNote note)
+    {
+        if (refinement == null) return;
+        note.Status = RefinementNoteStatus.Skipped;
+        Refinement.SaveReport(refinement);
+    }
+
+    // Finds the paragraph containing `quote` in `text`, bounded by blank lines or a horizontal-rule
+    // scene break. Returns (paragraph, startIndex, endIndex) or (null, -1, -1) if not found.
+    private static (string? paragraph, int start, int end) FindParagraphContaining(string text, string quote)
+    {
+        if (string.IsNullOrEmpty(text) || string.IsNullOrEmpty(quote)) return (null, -1, -1);
+
+        var hit = text.IndexOf(quote, StringComparison.Ordinal);
+        if (hit < 0) hit = text.IndexOf(quote, StringComparison.OrdinalIgnoreCase);
+        if (hit < 0) return (null, -1, -1);
+
+        // Paragraph start: previous blank line or scene break (---), or text start.
+        int start = 0;
+        int blank = text.LastIndexOf("\n\n", hit, StringComparison.Ordinal);
+        if (blank >= 0) start = blank + 2;
+        int rule  = text.LastIndexOf("\n---\n", hit, StringComparison.Ordinal);
+        if (rule >= 0 && rule + 5 > start) start = rule + 5;
+
+        // Paragraph end: next blank line or scene break, or text end.
+        int end = text.Length;
+        int nextBlank = text.IndexOf("\n\n", hit, StringComparison.Ordinal);
+        if (nextBlank >= 0) end = nextBlank;
+        int nextRule  = text.IndexOf("\n---\n", hit, StringComparison.Ordinal);
+        if (nextRule >= 0 && nextRule < end) end = nextRule;
+
+        var paragraph = text[start..end].Trim();
+        return (paragraph, start, end);
+    }
+
+    private static string RefineKindClass(RefinementKind kind) => kind switch
+    {
+        RefinementKind.Impactful      => "success",
+        RefinementKind.Cluttered      => "warning",
+        RefinementKind.Underdeveloped => "info",
+        RefinementKind.ContextGap     => "danger",
+        RefinementKind.PacingMismatch => "secondary",
+        _                             => "secondary",
+    };
 }

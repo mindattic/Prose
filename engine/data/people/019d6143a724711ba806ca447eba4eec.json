@@ -3,8 +3,11 @@
   "rating": 30,
   "vote_count": 1,
   "type": "character",
-  "name": "Zara Sesay-Sow",
-  "aliases": [],
+  "name": "Aybike Sesay-Sow",
+  "aliases": [
+    "Zara Sesay-Sow",
+    "Zara"
+  ],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -116,15 +119,15 @@
     "hair_length": "Long (past shoulders when unbound)",
     "eye_color": "Deep brown with warm amber undertones",
     "skin_tone": "Warm deep brown with golden undertones, even complexion with subtle richness from South Asian heritage blending with West African ancestry",
-    "complexion": "Sharp cheekbones with high prominence reflecting blended West African and South Asian heritage, defined jawline with subtle fullness in the lower face characteristic of South Asian ancestry, thin scar running from left temple to cheekbone (faded but visible under direct light), minimal makeup\u2014just mascara and a neutral lip. Skin is clear and well-maintained with a natural luminosity, suggesting access to quality dermal care. Warm undertones distributed across forehead, bridge of nose, and upper cheeks.",
+    "complexion": "Sharp cheekbones with high prominence reflecting blended West African and South Asian heritage, defined jawline with subtle fullness in the lower face characteristic of South Asian ancestry, thin scar running from left temple to cheekbone (faded but visible under direct light), minimal makeup—just mascara and a neutral lip. Skin is clear and well-maintained with a natural luminosity, suggesting access to quality dermal care. Warm undertones distributed across forehead, bridge of nose, and upper cheeks.",
     "distinguishing_marks": [
       "Thin white scar running from left temple toward cheekbone, approximately 8cm long, from a blade encounter circa age 23",
       "Small circular burn mark on the inside of right wrist, subcutaneous implant entry point, barely noticeable unless pointed out",
-      "Faint tattoo on the nape of neck: a stylized \u24C8 in minimal line-work (Sterling-Nakamura corporate sigil, covered by hair most of the time)"
+      "Faint tattoo on the nape of neck: a stylized Ⓢ in minimal line-work (Sterling-Nakamura corporate sigil, covered by hair most of the time)"
     ],
     "visible_augmentations": "None immediately obvious. Subcutaneous neural array operates behind the eyes (undetectable without scanning). Subdermal reinforcement plating along left forearm is concealed beneath tailored sleeves but occasionally visible as a subtle metallic sheen when light hits at certain angles.",
-    "posture_movement": "Moves with controlled precision; economical gestures that convey authority without aggression. Stands with weight balanced, never flat-footed. Eyes track multiple vectors simultaneously\u2014habit of someone trained in threat assessment. Speaks quietly but commands attention through cadence and tone rather than volume.",
-    "clothing_style": "Tier 1-2 corporate aesthetic. Tailored charcoal suit jacket (Italian wool-synthetic blend, Sterling-Nakamura house cut) over a cream silk undershirt. Dark trousers with minimal ornamentation. Understated \u03A62,400 smart-fabric belt (color-shifting nano-weave, subtle flex of wealth). Black leather ankle boots with reinforced soles (customized for urban parkour). A thin platinum chain around her neck (tasteful, barely visible). No visible jewelry except a discrete tactical watch on her wrist. Wardrobe conveys approachability while maintaining professional distance\u2014form-fitting enough to suggest athleticism, formal enough to remind people she answers to Sterling-Nakamura."
+    "posture_movement": "Moves with controlled precision; economical gestures that convey authority without aggression. Stands with weight balanced, never flat-footed. Eyes track multiple vectors simultaneously—habit of someone trained in threat assessment. Speaks quietly but commands attention through cadence and tone rather than volume.",
+    "clothing_style": "Tier 1-2 corporate aesthetic. Tailored charcoal suit jacket (Italian wool-synthetic blend, Sterling-Nakamura house cut) over a cream silk undershirt. Dark trousers with minimal ornamentation. Understated Φ2,400 smart-fabric belt (color-shifting nano-weave, subtle flex of wealth). Black leather ankle boots with reinforced soles (customized for urban parkour). A thin platinum chain around her neck (tasteful, barely visible). No visible jewelry except a discrete tactical watch on her wrist. Wardrobe conveys approachability while maintaining professional distance—form-fitting enough to suggest athleticism, formal enough to remind people she answers to Sterling-Nakamura."
   },
   "image_prompt": "Zara Sesay-Sow, 172cm athletic fixer in 2226 near-future megacity setting. Deep warm brown skin with golden undertones, sharp West African and South Asian bone structure with prominent cheekbones and defined jawline. Deep brown eyes with amber warmth. Dark brown hair with auburn hints pulled back in tight crown braid, silver streaks at temples. Thin white scar running left temple to cheekbone. Tailored charcoal suit jacket over cream silk undershirt, dark trousers, black leather reinforced ankle boots. Thin platinum chain at neck, discrete tactical watch. Controlled, precise posture suggesting threat assessment training. Cool corporate elegance balanced with dangerous competence. Indoor lighting catching subtle metallic sheen on concealed left forearm plating. Calm, commanding presence. Neo-noir noir, professional fixer aesthetic. --ar 2:3 --v 6",
   "dalle3_prompt": "",

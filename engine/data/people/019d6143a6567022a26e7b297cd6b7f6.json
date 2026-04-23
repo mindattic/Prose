@@ -2,8 +2,11 @@
   "id": "019d6143a6567022a26e7b297cd6b7f6",
   "rating": 70,
   "type": "character",
-  "name": "Briar Tofauti-Cardenas",
-  "aliases": [],
+  "name": "Eliseo Tofauti-Cardenas",
+  "aliases": [
+    "Briar Tofauti-Cardenas",
+    "Briar"
+  ],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -11,7 +14,7 @@
   "age": 28,
   "status": "active",
   "location": "Geartown, Bay 14 of the Rusted Meridian self-service garage complex on Spindle Row, near Milwaukee and Damen",
-  "description": "Briar Tofauti-Cardenas is lean and angular, with the kind of wiry upper-body strength that comes from torquing bolts rather than lifting weights. His skin is a warm medium brown and his hair is a close-cropped natural that he bleeds into bioluminescent blue at the tips \u2014 a cheap geneware dye job he redoes every two months, currently fading to a greenish teal at the ends. He has a Palladian corporate tattoo on his left forearm that he has partially covered with an amateur geometric overlay \u2014 the original mark of a three-year apprenticeship contract he bought out early at significant personal cost. His hands are perpetually stained and he has stopped being embarrassed about it.\n\nHe is intensely focused when working and almost incoherent when not, as if the part of his brain that manages conversation runs on whatever processing power the mechanical problem in front of him does not require. He is not unkind \u2014 genuinely not \u2014 but he will trail off mid-sentence if a sound from an engine catches his attention. He has strong opinions about Ferrogate Transit\u0027s maintenance culture that he will share with anyone who stands still long enough.",
+  "description": "Briar Tofauti-Cardenas is lean and angular, with the kind of wiry upper-body strength that comes from torquing bolts rather than lifting weights. His skin is a warm medium brown and his hair is a close-cropped natural that he bleeds into bioluminescent blue at the tips — a cheap geneware dye job he redoes every two months, currently fading to a greenish teal at the ends. He has a Palladian corporate tattoo on his left forearm that he has partially covered with an amateur geometric overlay — the original mark of a three-year apprenticeship contract he bought out early at significant personal cost. His hands are perpetually stained and he has stopped being embarrassed about it.\n\nHe is intensely focused when working and almost incoherent when not, as if the part of his brain that manages conversation runs on whatever processing power the mechanical problem in front of him does not require. He is not unkind — genuinely not — but he will trail off mid-sentence if a sound from an engine catches his attention. He has strong opinions about Ferrogate Transit's maintenance culture that he will share with anyone who stands still long enough.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -40,15 +43,15 @@
     "secret": "The buyout of his Palladian contract was not funded by his own savings. A woman named Vesna who ran a chop operation in Geartown paid his debt in exchange for two years of off-books work modifying vehicles she did not explain the purpose of. He never asked. He finished the two years, she disappeared, and he has not thought carefully about what those vehicles were used for."
   },
   "speech_patterns": {
-    "vocabulary": "Technical-heavy, precise when talking about machines, vague and trailing when talking about people or feelings. Occasional Romanian phrases inherited from his Dr\u0103ghici grandmother.",
+    "vocabulary": "Technical-heavy, precise when talking about machines, vague and trailing when talking about people or feelings. Occasional Romanian phrases inherited from his Drăghici grandmother.",
     "cadence": "Bursts of fast, detailed explanation followed by long pauses when he loses the thread.",
     "verbal_tics": [
-      "says \u0027so, basically\u0027 before any explanation that is not actually basic",
-      "trails off with \u0027...yeah\u0027 when he has lost interest in his own sentence"
+      "says 'so, basically' before any explanation that is not actually basic",
+      "trails off with '...yeah' when he has lost interest in his own sentence"
     ],
     "example_lines": [
       "So, basically your motivator coupling is shearing because whoever installed it cross-threaded the mount, which is a Palladian-certified mistake, which, yeah.",
-      "I can have it done by \u2014 actually wait, listen to that. You hear that? That\u0027s a bearing. That\u0027s \u2014 sorry, what were you asking."
+      "I can have it done by — actually wait, listen to that. You hear that? That's a bearing. That's — sorry, what were you asking."
     ],
     "avoidances": [],
     "subtext": "",
@@ -57,13 +60,13 @@
   },
   "relationships": [],
   "story_hooks": [
-    "He recognizes a vehicle brought in for routine work as one of the units he modified for Vesna \u2014 and the client\u0027s story about where they got it does not add up.",
-    "His Bay 14 lease is up for renewal and the Rusted Meridian complex has been quietly bought by a Palladian subsidiary \u2014 which means his former employer is now his landlord.",
+    "He recognizes a vehicle brought in for routine work as one of the units he modified for Vesna — and the client's story about where they got it does not add up.",
+    "His Bay 14 lease is up for renewal and the Rusted Meridian complex has been quietly bought by a Palladian subsidiary — which means his former employer is now his landlord.",
     "The hauler cab restoration has revealed a hidden compartment behind the original dash that contains something sealed in a Zheng-Dao evidence bag."
   ],
-  "narrative_function": "Technical resource and repair contact. A way into Geartown\u0027s informal economy. His partial Palladian history can complicate or enable stories involving that corponation.",
-  "augmentations": "Bioluminescent hair-tip geneware (teal, fading). Palladian-branded haptic feedback glove on his right hand \u2014 leftover from the apprenticeship, still works, he refuses to remove it on principle. Basic retinal overlay for schematic reading (no network, air-gapped).",
-  "daily_life": "Arrives at Bay 14 by 08:00, takes whatever walk-in work the board lists, eats lunch inside the bay over whatever he is currently dismantling, and runs his own project \u2014 restoring a 2180s Ferrogate cargo hauler cab \u2014 during evening hours when paying work is done.",
+  "narrative_function": "Technical resource and repair contact. A way into Geartown's informal economy. His partial Palladian history can complicate or enable stories involving that corponation.",
+  "augmentations": "Bioluminescent hair-tip geneware (teal, fading). Palladian-branded haptic feedback glove on his right hand — leftover from the apprenticeship, still works, he refuses to remove it on principle. Basic retinal overlay for schematic reading (no network, air-gapped).",
+  "daily_life": "Arrives at Bay 14 by 08:00, takes whatever walk-in work the board lists, eats lunch inside the bay over whatever he is currently dismantling, and runs his own project — restoring a 2180s Ferrogate cargo hauler cab — during evening hours when paying work is done.",
   "affiliation": "Independent (formerly Palladian apprentice program)",
   "uses_facets": false,
   "narration_voice": "",
@@ -107,18 +110,18 @@
   },
   "behavioral": {
     "decision_rules": [
-      "Will not knowingly work on anything with active Palladian tracking firmware \u2014 checks first, every time",
+      "Will not knowingly work on anything with active Palladian tracking firmware — checks first, every time",
       "Quotes fair price, does not haggle down, will haggle up if you argue with his diagnosis",
       "Does not work on weapons systems, period"
     ],
     "escalation_ladder": [
       "Ignores social friction and keeps working",
-      "Gives a flat \u0027not interested\u0027 with no elaboration",
+      "Gives a flat 'not interested' with no elaboration",
       "Puts down tools and gives full attention to the problem, which is rare and signals seriousness",
       "Asks the person to leave the bay"
     ],
     "interpersonal_modes": {
-      "strangers": "Distracted but not unwelcoming \u2014 will answer questions while continuing to work",
+      "strangers": "Distracted but not unwelcoming — will answer questions while continuing to work",
       "friends": "Remembers details about their vehicles with unnerving precision, occasionally forgets their birthdays"
     },
     "stress_responses": {
@@ -131,7 +134,7 @@
     ],
     "habits": [
       "Wipes his hands on a rag before touching anything he considers finished or beautiful",
-      "Keeps a small ELF icon cable-tied to the hauler cab\u0027s steering column \u2014 doesn\u0027t pray, just leaves it there"
+      "Keeps a small ELF icon cable-tied to the hauler cab's steering column — doesn't pray, just leaves it there"
     ],
     "breaking_points": [
       "Learning what those vehicles were actually used for",
@@ -173,24 +176,24 @@
     "human"
   ],
   "physical_description": {
-    "heritage": "Predominantly Pacific Islander ancestry (85.6%) with secondary influences from Hispanic/Latin American (6.4%), South Asian (5.0%), and Sub-Saharan African (3.0%) heritage. The genetic blend produces characteristic Pacific Islander bone structure and facial features\u2014broad face, fuller features, strong jaw\u2014with warm, melanin-rich skin that reflects the multi-regional ancestry. The darker complexion carries undertones of warmth from both South Asian and Sub-Saharan heritage, creating depth and richness typical of oceanic-diaspora populations rather than any single continental ancestry.",
+    "heritage": "Predominantly Pacific Islander ancestry (85.6%) with secondary influences from Hispanic/Latin American (6.4%), South Asian (5.0%), and Sub-Saharan African (3.0%) heritage. The genetic blend produces characteristic Pacific Islander bone structure and facial features—broad face, fuller features, strong jaw—with warm, melanin-rich skin that reflects the multi-regional ancestry. The darker complexion carries undertones of warmth from both South Asian and Sub-Saharan heritage, creating depth and richness typical of oceanic-diaspora populations rather than any single continental ancestry.",
     "height_cm": 178,
     "weight_kg": 68,
-    "build": "Lean and angular with concentrated wiry muscle across shoulders and forearms \u2014 the build of someone who applies precision force repeatedly rather than bulk. Minimal body fat, visible tendon definition in hands and wrists.",
+    "build": "Lean and angular with concentrated wiry muscle across shoulders and forearms — the build of someone who applies precision force repeatedly rather than bulk. Minimal body fat, visible tendon definition in hands and wrists.",
     "hair_color": "Natural dark brown at roots, transitioning to bioluminescent teal at the tips, currently fading toward greenish-teal at the very ends",
     "hair_style": "Close-cropped natural cut, textured and even, with deliberate gradient fade applied via cheap geneware dye",
     "hair_length": "Short",
-    "eye_color": "Dark brown with subtle retinal overlay grid visible under bright light \u2014 air-gapped schematic overlay, non-networked",
-    "skin_tone": "Warm deep brown with golden undertones, sun-weathered and luminous \u2014 reflects Pacific Islander genetic dominance (85.6%) with subtle warmth and depth from South Asian and Sub-Saharan heritage blending. Melanin-rich skin catches light with natural radiance characteristic of tropical ancestry.",
-    "complexion": "Clear, unremarkable skin with permanent minor scarring on knuckles and across the back of both hands. Cuticles perpetually stained with machine oil and grease that he no longer bothers to fully clean. Stubble-beard kept at 1-2 days growth, neither maintained nor fully grown. Expression defaults to focused intensity even at rest. Broad facial structure with fuller features characteristic of Pacific Islander heritage\u2014wider nose bridge, prominent cheekbones, substantial jaw\u2014complemented by warm depth and richness of complexion.",
+    "eye_color": "Dark brown with subtle retinal overlay grid visible under bright light — air-gapped schematic overlay, non-networked",
+    "skin_tone": "Warm deep brown with golden undertones, sun-weathered and luminous — reflects Pacific Islander genetic dominance (85.6%) with subtle warmth and depth from South Asian and Sub-Saharan heritage blending. Melanin-rich skin catches light with natural radiance characteristic of tropical ancestry.",
+    "complexion": "Clear, unremarkable skin with permanent minor scarring on knuckles and across the back of both hands. Cuticles perpetually stained with machine oil and grease that he no longer bothers to fully clean. Stubble-beard kept at 1-2 days growth, neither maintained nor fully grown. Expression defaults to focused intensity even at rest. Broad facial structure with fuller features characteristic of Pacific Islander heritage—wider nose bridge, prominent cheekbones, substantial jaw—complemented by warm depth and richness of complexion.",
     "distinguishing_marks": [
       "Palladian corporate apprenticeship tattoo on left forearm (three interlocking gears in corporate blue), partially covered by an amateur geometric overlay of black lines and angles applied post-buyout",
-      "Scattered oil-burn scars across both hands and forearms \u2014 minor, faded, accumulated",
+      "Scattered oil-burn scars across both hands and forearms — minor, faded, accumulated",
       "Small circular scar on right temple where retinal overlay was installed, now barely visible"
     ],
-    "visible_augmentations": "Palladian-branded haptic feedback glove on right hand \u2014 matte black leather with faint blue circuit tracery visible at wrist seam, still functional, deliberately never removed. Bioluminescent hair tips emit faint teal glow in low light. Retinal overlay barely visible in direct light as a faint geometric grid pattern in dark eyes.",
-    "posture_movement": "Stands with weight forward slightly, hands active and restless when not working \u2014 fingers unconsciously mimicking mechanical motions. Moves with economical efficiency, no wasted motion. When focused on machinery, entire body locks into stillness. When not working, appears slightly disconnected, gaze unfocused, as if processing power is allocated elsewhere. Often mid-sentence trails off if mechanical sound interrupts attention.",
-    "clothing_style": "Tier 4 utilitarian \u2014 work-worn Carhartt-equivalent synthdenim coveralls in faded gray, perpetually stained with machine oil and coolant. Base layer typically a cheap thermal undershirt in dark gray or black, sleeves rolled or pushed up. Steel-toed work boots, scuffed and practical. Leather apron hung in bay, not on body. A single silver chain around his neck (no pendant) \u2014 inherited, not augmented. No jewelry. Clothes are functional maintenance gear, not fashion, but worn with unconscious confidence. Smells consistently of synthetic machine oil and welding flux."
+    "visible_augmentations": "Palladian-branded haptic feedback glove on right hand — matte black leather with faint blue circuit tracery visible at wrist seam, still functional, deliberately never removed. Bioluminescent hair tips emit faint teal glow in low light. Retinal overlay barely visible in direct light as a faint geometric grid pattern in dark eyes.",
+    "posture_movement": "Stands with weight forward slightly, hands active and restless when not working — fingers unconsciously mimicking mechanical motions. Moves with economical efficiency, no wasted motion. When focused on machinery, entire body locks into stillness. When not working, appears slightly disconnected, gaze unfocused, as if processing power is allocated elsewhere. Often mid-sentence trails off if mechanical sound interrupts attention.",
+    "clothing_style": "Tier 4 utilitarian — work-worn Carhartt-equivalent synthdenim coveralls in faded gray, perpetually stained with machine oil and coolant. Base layer typically a cheap thermal undershirt in dark gray or black, sleeves rolled or pushed up. Steel-toed work boots, scuffed and practical. Leather apron hung in bay, not on body. A single silver chain around his neck (no pendant) — inherited, not augmented. No jewelry. Clothes are functional maintenance gear, not fashion, but worn with unconscious confidence. Smells consistently of synthetic machine oil and welding flux."
   },
   "image_prompt": "Briar Tofauti-Cardenas, a lean 178cm Pacific Islander-diaspora mechanic with warm deep brown skin and golden undertones, close-cropped dark hair fading to bioluminescent teal at tips. Broad Pacific Islander facial features, dark eyes with faint retinal grid overlay. Wearing faded gray Carhartt-equivalent work coveralls stained with machine oil, dark thermal undershirt, steel-toed boots. Black leather haptic feedback glove on right hand with blue circuit tracery. Oil-burn scars across knuckles and forearms, geometric tattoo overlay on left forearm. Silver chain around neck, 1-2 days stubble. Standing in GLMZ industrial workshop bay, hands active and restless, weight forward. Economical posture, unfocused gaze as if processing elsewhere. Machine oil and welding flux scents. Moody workshop lighting with blue-teal neon accents reflecting off metal surfaces and his glowing hair. GLMZ 2200s gritty aesthetic. --ar 2:3 --v 6",
   "dalle3_prompt": "",

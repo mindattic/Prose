@@ -3,8 +3,10 @@
   "rating": 0,
   "vote_count": 0,
   "type": "character",
-  "name": "Arden",
-  "aliases": [],
+  "name": "Brisa",
+  "aliases": [
+    "Arden"
+  ],
   "species": "human",
   "gender": "",
   "pronouns": "",
@@ -12,7 +14,7 @@
   "age": 0,
   "status": "alive",
   "location": "",
-  "description": "Auto-scaffolded. First mentioned: \u0022She says, not as greeting but as inventory. She is giving him her name the way you give someone a tool.\u0022",
+  "description": "Auto-scaffolded. First mentioned: \"She says, not as greeting but as inventory. She is giving him her name the way you give someone a tool.\"",
   "psychology": {
     "facet_weights": {
       "wound": 0,

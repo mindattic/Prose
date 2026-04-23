@@ -3,16 +3,19 @@
   "rating": 80,
   "vote_count": 1,
   "type": "character",
-  "name": "Kira Leota",
-  "aliases": [],
+  "name": "Birgitta Leota",
+  "aliases": [
+    "Kira Leota",
+    "Kira"
+  ],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Food stall operator \u2014 spiced protein wraps and fermented grain drinks",
+  "role": "Food stall operator — spiced protein wraps and fermented grain drinks",
   "age": 58,
   "status": "active",
   "location": "The Oxidian Market, Geartown, near Halsted and Chicago Ave",
-  "description": "Kira Leota is a broad-shouldered woman with deep umber skin mapped by laugh lines and old burn scars across her left forearm she never bothered to have reskinned. Her hair is a natural silver-white cloud she pins back with copper rods engraved with Yoruba blessing glyphs. Her eyes have patterned irises \u2014 concentric rings of amber and forest green she got in her forties as a birthday gift to herself \u2014 and they miss nothing. She smells permanently of turmeric, fermented sorghum, and the faint electric tang of her portable heat coils. She moves behind her stall with the unhurried authority of someone who has occupied this exact twelve square meters for twenty-three years and intends to occupy it for twenty-three more.\n\nKira Leota is the unofficial den mother of the Oxidian Market\u0027s food row. She gives short credit to vendors she trusts, keeps a mental ledger of everyone\u0027s debts and feuds, and dispenses advice with the bluntness of someone who ran out of softening words a decade ago. Her wraps are legendary \u2014 she sources cultured insect protein from three different brokers and blends her spice paste from a recipe her grandmother brought from Lagos via Helsinki. She is warm to a fault with regular customers, glacially cold to anyone she suspects of disrespecting her stall or her neighbors, and completely incapable of pretending to like someone she doesn\u0027t.",
+  "description": "Kira Leota is a broad-shouldered woman with deep umber skin mapped by laugh lines and old burn scars across her left forearm she never bothered to have reskinned. Her hair is a natural silver-white cloud she pins back with copper rods engraved with Yoruba blessing glyphs. Her eyes have patterned irises — concentric rings of amber and forest green she got in her forties as a birthday gift to herself — and they miss nothing. She smells permanently of turmeric, fermented sorghum, and the faint electric tang of her portable heat coils. She moves behind her stall with the unhurried authority of someone who has occupied this exact twelve square meters for twenty-three years and intends to occupy it for twenty-three more.\n\nKira Leota is the unofficial den mother of the Oxidian Market's food row. She gives short credit to vendors she trusts, keeps a mental ledger of everyone's debts and feuds, and dispenses advice with the bluntness of someone who ran out of softening words a decade ago. Her wraps are legendary — she sources cultured insect protein from three different brokers and blends her spice paste from a recipe her grandmother brought from Lagos via Helsinki. She is warm to a fault with regular customers, glacially cold to anyone she suspects of disrespecting her stall or her neighbors, and completely incapable of pretending to like someone she doesn't.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -23,7 +26,7 @@
       "ghost": 0.7
     },
     "core_fears": [
-      "Losing the stall \u2014 her last connection to her late husband who built it with her",
+      "Losing the stall — her last connection to her late husband who built it with her",
       "The market being demolished by a corponation development deal"
     ],
     "core_desires": [
@@ -36,23 +39,23 @@
       "Keeping busy from before dawn to collapse"
     ],
     "blind_spots": [
-      "Overprotective of people she\u0027s decided are \u0027hers\u0027 \u2014 she enables dependency",
+      "Overprotective of people she's decided are 'hers' — she enables dependency",
       "Refuses to see that the guild leadership is corrupt"
     ],
-    "secret": "Her fermented grain drink, \u0027Saarela Sour,\u0027 has a micro-dose of a mild mood stabilizer she sources from a street pharmacist friend. She started adding it during the food riots of 2189 to keep her customers calm enough not to destroy her stall. She never stopped. She tells herself it\u0027s negligible and harmless and has never once asked anyone else if that\u0027s true."
+    "secret": "Her fermented grain drink, 'Saarela Sour,' has a micro-dose of a mild mood stabilizer she sources from a street pharmacist friend. She started adding it during the food riots of 2189 to keep her customers calm enough not to destroy her stall. She never stopped. She tells herself it's negligible and harmless and has never once asked anyone else if that's true."
   },
   "speech_patterns": {
-    "vocabulary": "Plain and direct; mixes Yoruba endearments (\u0027omo,\u0027 \u0027egbon\u0027) with Finnish-inflected cadences from her paternal grandmother\u0027s side; uses food metaphors for everything",
-    "cadence": "Unhurried and deliberate, like someone who knows she\u0027ll finish her sentence whether you wait or not",
+    "vocabulary": "Plain and direct; mixes Yoruba endearments ('omo,' 'egbon') with Finnish-inflected cadences from her paternal grandmother's side; uses food metaphors for everything",
+    "cadence": "Unhurried and deliberate, like someone who knows she'll finish her sentence whether you wait or not",
     "verbal_tics": [
-      "\u0027You hear me?\u0027 at the end of serious statements",
+      "'You hear me?' at the end of serious statements",
       "Clicks her tongue before delivering bad news",
-      "Calls everyone \u0027omo\u0027 regardless of age"
+      "Calls everyone 'omo' regardless of age"
     ],
     "example_lines": [
-      "\u0027Omo, you look like you haven\u0027t eaten since Tuesday. Sit down. I\u0027m not asking.\u0027",
-      "\u0027You want to tell me that man\u0027s trustworthy? I\u0027ve been watching him shortchange the noodle girl for six weeks. You hear me?\u0027",
-      "\u0027The wrap is \u03A68. For you, \u03A67. Don\u0027t tell anyone or I\u0027ll charge you \u03A612 next time.\u0027"
+      "'Omo, you look like you haven't eaten since Tuesday. Sit down. I'm not asking.'",
+      "'You want to tell me that man's trustworthy? I've been watching him shortchange the noodle girl for six weeks. You hear me?'",
+      "'The wrap is Φ8. For you, Φ7. Don't tell anyone or I'll charge you Φ12 next time.'"
     ],
     "avoidances": [],
     "subtext": "",
@@ -62,11 +65,11 @@
   "relationships": [],
   "story_hooks": [
     "A Tessera development rep has been photographing the market for three weeks. Thembi knows something is coming and wants someone to find out what the corponation actually filed.",
-    "One of her regulars \u2014 a young man she\u0027s been feeding on credit \u2014 has gone missing, and she found a Ringo gang tattoo stub in his jacket he left behind her stall.",
-    "Her late husband\u0027s brother has appeared after fifteen years claiming the stall is half his by inheritance law. Thembi needs someone to dig up the original incorporation records before the guild tribunal meets."
+    "One of her regulars — a young man she's been feeding on credit — has gone missing, and she found a Ringo gang tattoo stub in his jacket he left behind her stall.",
+    "Her late husband's brother has appeared after fifteen years claiming the stall is half his by inheritance law. Thembi needs someone to dig up the original incorporation records before the guild tribunal meets."
   ],
   "narrative_function": "Local color and neighborhood anchor; information source about Oxidian Market dynamics; potential quest giver when someone threatens her stall or her neighbors; moral compass character who grounds street-level stories.",
-  "augmentations": "Patterned irises (amber/green concentric rings, cosmetic). Thermal-sense fingertip pads \u2014 low-grade utility aug for monitoring her heat coils. No other chrome.",
+  "augmentations": "Patterned irises (amber/green concentric rings, cosmetic). Thermal-sense fingertip pads — low-grade utility aug for monitoring her heat coils. No other chrome.",
   "daily_life": "Up before dawn to receive protein deliveries and prep her spice paste; stall open by 06:00, closed when the food runs out (usually 20:00). Thursdays she closes early to attend guild meetings at the Bronzeline community hall.",
   "affiliation": "Independent; dues-paying member of The Oxidian Market Vendors Guild; The Ferment",
   "uses_facets": false,
@@ -111,7 +114,7 @@
   },
   "behavioral": {
     "decision_rules": [
-      "Feed first, ask questions second \u2014 no one who\u0027s hungry gets turned away empty",
+      "Feed first, ask questions second — no one who's hungry gets turned away empty",
       "Never extend credit to strangers, never deny it to regulars",
       "Protect the market before protecting herself"
     ],
@@ -122,21 +125,21 @@
       "Refusing service and telling every vendor on the row why"
     ],
     "interpersonal_modes": {
-      "strangers": "Watchful and correct \u2014 polite service, minimal information, assessing continuously",
+      "strangers": "Watchful and correct — polite service, minimal information, assessing continuously",
       "friends": "Aggressively nurturing; will feed, advise, scold, and defend with equal energy"
     },
     "stress_responses": {
       "low": "Gets quieter and more efficient",
-      "medium": "Starts narrating what she\u0027s doing out loud as if explaining to herself",
+      "medium": "Starts narrating what she's doing out loud as if explaining to herself",
       "high": "Goes completely silent and cold; begins making decisions unilaterally"
     },
     "contradictions": [
-      "Preaches community and mutual aid but secretly controls the neighborhood\u0027s mood through her drink without consent"
+      "Preaches community and mutual aid but secretly controls the neighborhood's mood through her drink without consent"
     ],
     "habits": [
       "Wipes down her counter three times before opening, always in the same order",
-      "Leaves a small bowl of spiced grain at the base of the market\u0027s E.L.F. shrine every morning",
-      "Hums old Finnish folk songs her grandmother taught her when she\u0027s nervous"
+      "Leaves a small bowl of spiced grain at the base of the market's E.L.F. shrine every morning",
+      "Hums old Finnish folk songs her grandmother taught her when she's nervous"
     ],
     "breaking_points": [
       "Someone physically threatening one of her regulars in front of her stall",
@@ -181,24 +184,24 @@
     "human"
   ],
   "physical_description": {
-    "heritage": "Sub-Saharan African (45.2%) / Pacific Islander (29.4%) / Southeast Asian (15.5%) / South Asian (8.0%) / East Asian (1.9%) \u2014 a striking Ubiquitous Diaspora blend. The genetic dominance of Sub-Saharan African and Pacific Islander ancestry creates broad, generous facial proportions with fuller features and pronounced cheekbones. Southeast Asian heritage adds subtle epicanthic variation to the eye shape and contributes to overall facial harmony. South Asian ancestry manifests in warm, complex skin depth modulation. East Asian trace ancestry barely registers phenotypically. The result is a luminous, unmistakably diaspora appearance: warm-toned, broadly structured, radiating quiet presence.",
+    "heritage": "Sub-Saharan African (45.2%) / Pacific Islander (29.4%) / Southeast Asian (15.5%) / South Asian (8.0%) / East Asian (1.9%) — a striking Ubiquitous Diaspora blend. The genetic dominance of Sub-Saharan African and Pacific Islander ancestry creates broad, generous facial proportions with fuller features and pronounced cheekbones. Southeast Asian heritage adds subtle epicanthic variation to the eye shape and contributes to overall facial harmony. South Asian ancestry manifests in warm, complex skin depth modulation. East Asian trace ancestry barely registers phenotypically. The result is a luminous, unmistakably diaspora appearance: warm-toned, broadly structured, radiating quiet presence.",
     "height_cm": 172,
     "weight_kg": 82,
-    "build": "Broad-shouldered and sturdy, with the compact musculature of someone who stands for sixteen hours daily moving and lifting. Not heavy, but solid \u2014 built for work and endurance.",
+    "build": "Broad-shouldered and sturdy, with the compact musculature of someone who stands for sixteen hours daily moving and lifting. Not heavy, but solid — built for work and endurance.",
     "hair_color": "Natural silver-white",
     "hair_style": "Pinned back with copper rods engraved with Yoruba blessing glyphs; kept in a neat, controlled arrangement",
     "hair_length": "Medium to Long",
-    "eye_color": "Patterned irises \u2014 concentric rings of amber (outer) and forest green (inner), cosmetic augmentation",
-    "skin_tone": "Deep warm umber with golden and honey undertones \u2014 luminous bronze that catches light distinctively. The blend of Sub-Saharan African and Pacific Islander ancestry creates rich chromatic depth with radiant warmth; South Asian heritage adds subtle undertonal complexity that shifts in different lighting.",
-    "complexion": "Face mapped by laugh lines and character; unblemished apart from old burn scarring on left forearm. Cheekbones broad and well-defined from Sub-Saharan African and Pacific Islander ancestry, nose bridge moderate with fuller nasal structure, face shape reflecting generous proportions characteristic of the diaspora mix. No cosmetic vanity \u2014 wrinkles earned and kept. Perennially carries faint turmeric stains on her hands.",
+    "eye_color": "Patterned irises — concentric rings of amber (outer) and forest green (inner), cosmetic augmentation",
+    "skin_tone": "Deep warm umber with golden and honey undertones — luminous bronze that catches light distinctively. The blend of Sub-Saharan African and Pacific Islander ancestry creates rich chromatic depth with radiant warmth; South Asian heritage adds subtle undertonal complexity that shifts in different lighting.",
+    "complexion": "Face mapped by laugh lines and character; unblemished apart from old burn scarring on left forearm. Cheekbones broad and well-defined from Sub-Saharan African and Pacific Islander ancestry, nose bridge moderate with fuller nasal structure, face shape reflecting generous proportions characteristic of the diaspora mix. No cosmetic vanity — wrinkles earned and kept. Perennially carries faint turmeric stains on her hands.",
     "distinguishing_marks": [
-      "Burn scars across entire left forearm \u2014 old, deliberate choice not to have reskinned, pale and textured against warm umber skin",
-      "Laugh lines radiating from corners of eyes and mouth \u2014 deep grooves from decades of genuine smiling",
+      "Burn scars across entire left forearm — old, deliberate choice not to have reskinned, pale and textured against warm umber skin",
+      "Laugh lines radiating from corners of eyes and mouth — deep grooves from decades of genuine smiling",
       "Faint turmeric discoloration on fingertips and cuticles, permanent occupational marking"
     ],
     "visible_augmentations": "Patterned irises with concentric amber-green rings (cosmetic, immediately noticeable). Thermal-sense fingertip pads visible as faint metallic stippling on fingertips (diagnostic/functional, subtle but present if examined). Copper blessing-rod hair pins with Yoruba glyphs (cultural adornment, not augmentation).",
-    "posture_movement": "Moves with unhurried authority and economic efficiency \u2014 every gesture purposeful. Stands with weight balanced, ready to pivot. Hands constantly occupied (prepping, arranging, gesturing). Makes direct eye contact. No fidgeting; complete comfort in her own space.",
-    "clothing_style": "Tier 3-4 practical wear: reinforced linen wrap dress in earth tones (ochre, burnt orange) for mobility and heat tolerance; sturdy synthetic-leather apron with deep pockets for tools and ledger; worn canvas slip-ons. Minimal jewelry except for the copper hair rods. No corporate branding. Clothes are clean and well-maintained but show honest use \u2014 this is a working wardrobe, not a display."
+    "posture_movement": "Moves with unhurried authority and economic efficiency — every gesture purposeful. Stands with weight balanced, ready to pivot. Hands constantly occupied (prepping, arranging, gesturing). Makes direct eye contact. No fidgeting; complete comfort in her own space.",
+    "clothing_style": "Tier 3-4 practical wear: reinforced linen wrap dress in earth tones (ochre, burnt orange) for mobility and heat tolerance; sturdy synthetic-leather apron with deep pockets for tools and ledger; worn canvas slip-ons. Minimal jewelry except for the copper hair rods. No corporate branding. Clothes are clean and well-maintained but show honest use — this is a working wardrobe, not a display."
   },
   "image_prompt": "Kira Leota, 172cm tall dark-skinned woman with broad African and Pacific Islander features, deep warm umber skin with golden honey undertones, silver-white hair pinned back with engraved copper rods, patterned cosmetic irises with amber-green concentric rings, pronounced cheekbones, laugh lines around eyes and mouth, deliberate pale burn scars across left forearm, faint turmeric stains on hands. Wearing reinforced ochre-burnt orange linen wrap dress, sturdy synthetic-leather apron, worn canvas slip-ons. Standing with unhurried authority in a GLMZ workspace, direct gaze, economical purposeful posture. Warm overhead lighting catching her luminous bronze skin and metallic hair ornaments, neo-noir market or workshop setting, no corporate branding. Authentic working aesthetic, seasoned presence. --ar 2:3 --v 6",
   "dalle3_prompt": "",

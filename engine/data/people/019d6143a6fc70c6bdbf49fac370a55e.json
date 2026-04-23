@@ -3,8 +3,11 @@
   "rating": 20,
   "vote_count": 3,
   "type": "character",
-  "name": "Frost Boudiaf",
-  "aliases": [],
+  "name": "Folakemi Boudiaf",
+  "aliases": [
+    "Frost Boudiaf",
+    "Frost"
+  ],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -106,7 +109,7 @@
     "human"
   ],
   "physical_description": {
-    "heritage": "A striking blend of East Asian (31.4%), Sub-Saharan African (28.1%), North African (24.3%), and Southeast Asian (16.2%) ancestry. The East Asian and Southeast Asian elements contribute angular cheekbones and a moderate nose bridge, while Sub-Saharan and North African heritage manifests in warm skin depth and prominent facial structure. Complex phenotype reflecting true cosmopolitan genetic signature of the Ubiquitous Diaspora\u2014no single lineage dominates, creating balanced, multifaceted features.",
+    "heritage": "A striking blend of East Asian (31.4%), Sub-Saharan African (28.1%), North African (24.3%), and Southeast Asian (16.2%) ancestry. The East Asian and Southeast Asian elements contribute angular cheekbones and a moderate nose bridge, while Sub-Saharan and North African heritage manifests in warm skin depth and prominent facial structure. Complex phenotype reflecting true cosmopolitan genetic signature of the Ubiquitous Diaspora—no single lineage dominates, creating balanced, multifaceted features.",
     "height_cm": 182,
     "weight_kg": 89,
     "build": "Broad-shouldered and sturdy, with the weathered muscularity of someone who spent decades on water. Slight thickening at the midsection from age and desk work, but core strength evident in posture.",
@@ -115,7 +118,7 @@
     "hair_length": "Short",
     "eye_color": "Amber-brown with darker striations",
     "skin_tone": "Medium to medium-deep brown with warm golden undertones, reflecting the balanced blend of East Asian, Sub-Saharan, North African, and Southeast Asian heritage. Sun-darkened and weathered from years of harbor exposure, creating a rich, complex complexion with subtle warmth beneath.",
-    "complexion": "Weathered and lined, particularly around the eyes and forehead. Facial bone structure reflects the multilayered ancestry\u2014prominent angular cheekbones, moderate nose bridge width characteristic of the genetic blend, subtle fullness balanced across the face. Jaw remains sharp despite weathering. Three-day stubble is his default grooming state. Crow\u0027s feet suggest a history of squinting into glare off the water.",
+    "complexion": "Weathered and lined, particularly around the eyes and forehead. Facial bone structure reflects the multilayered ancestry—prominent angular cheekbones, moderate nose bridge width characteristic of the genetic blend, subtle fullness balanced across the face. Jaw remains sharp despite weathering. Three-day stubble is his default grooming state. Crow's feet suggest a history of squinting into glare off the water.",
     "distinguishing_marks": [
       "Faded anchor tattoo on left forearm, ink bleeding slightly with age",
       "Surgical scar along left collarbone, approximately 8cm, from a dock accident in his thirties",
@@ -123,10 +126,10 @@
       "Deep vertical crease between eyebrows from decades of concentration and frowning"
     ],
     "visible_augmentations": "None visible. Favors invisibility in his work.",
-    "posture_movement": "Moves with measured deliberation, economical gestures. Stands with weight balanced, feet shoulder-width apart\u2014a harbor man\u0027s stance. Hands often rest on table or lap. Direct eye contact. Minimal facial expression; communication relies on tone and word choice rather than animation.",
-    "clothing_style": "Tier 3-4 practical wear. Heavy canvas work jacket, navy or charcoal, with deep pockets and reinforced seams. Thermal undershirt. Worn denim or canvas trousers with tool loops. Steel-toed boots, scuffed and well-maintained. A simple titanium ring on his left ring finger\u2014no wedding band, just a memorial marker. Occasionally wears a faded GLMZ Harbor Authority cap from a previous life. No visible corpo branding; clothes are functional, durable, replaceable."
+    "posture_movement": "Moves with measured deliberation, economical gestures. Stands with weight balanced, feet shoulder-width apart—a harbor man's stance. Hands often rest on table or lap. Direct eye contact. Minimal facial expression; communication relies on tone and word choice rather than animation.",
+    "clothing_style": "Tier 3-4 practical wear. Heavy canvas work jacket, navy or charcoal, with deep pockets and reinforced seams. Thermal undershirt. Worn denim or canvas trousers with tool loops. Steel-toed boots, scuffed and well-maintained. A simple titanium ring on his left ring finger—no wedding band, just a memorial marker. Occasionally wears a faded GLMZ Harbor Authority cap from a previous life. No visible corpo branding; clothes are functional, durable, replaceable."
   },
-  "image_prompt": "Frost Boudiaf, 182cm tall man with medium-deep warm brown skin blending East Asian, Sub-Saharan, North African and Southeast Asian heritage. Salt-and-pepper gray hair slicked back, short sides. Angular weathered face with prominent cheekbones, moderate nose bridge, amber-brown eyes with striations, deep frown crease between brows. Three-day stubble. Crow\u0027s feet from years of harbor work. Faded anchor tattoo on left forearm. Surgical scar on left collarbone visible at neckline. Wears heavy navy canvas work jacket, thermal undershirt, worn denim trousers, scuffed steel-toed boots. Simple titanium memorial ring on left ring finger. Broad-shouldered sturdy build with subtle age at midsection. Standing with balanced harbor worker\u0027s stance, hands relaxed. Direct gaze, minimal expression. Dim neon-lit harbor district setting, cool blues and amber dock lights reflecting off wet concrete. GLMZ, utilitarian aesthetic, measured deliberate presence. --ar 2:3 --v 6",
+  "image_prompt": "Frost Boudiaf, 182cm tall man with medium-deep warm brown skin blending East Asian, Sub-Saharan, North African and Southeast Asian heritage. Salt-and-pepper gray hair slicked back, short sides. Angular weathered face with prominent cheekbones, moderate nose bridge, amber-brown eyes with striations, deep frown crease between brows. Three-day stubble. Crow's feet from years of harbor work. Faded anchor tattoo on left forearm. Surgical scar on left collarbone visible at neckline. Wears heavy navy canvas work jacket, thermal undershirt, worn denim trousers, scuffed steel-toed boots. Simple titanium memorial ring on left ring finger. Broad-shouldered sturdy build with subtle age at midsection. Standing with balanced harbor worker's stance, hands relaxed. Direct gaze, minimal expression. Dim neon-lit harbor district setting, cool blues and amber dock lights reflecting off wet concrete. GLMZ, utilitarian aesthetic, measured deliberate presence. --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "East Asian": 31.4,

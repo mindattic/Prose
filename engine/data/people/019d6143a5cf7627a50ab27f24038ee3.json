@@ -2,16 +2,19 @@
   "id": "019d6143a5cf7627a50ab27f24038ee3",
   "rating": 0,
   "type": "character",
-  "name": "Remi Cervantes",
-  "aliases": [],
+  "name": "Buenaventura Cervantes",
+  "aliases": [
+    "Remi Cervantes",
+    "Remi"
+  ],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
   "role": "Retired community archive keeper and oral historian",
   "age": 79,
   "status": "active",
-  "location": "Washburn Commons, Archive Annex \u2014 a repurposed transit hub filled floor-to-ceiling with physical media, data-coral arrays, and hand-labeled memory chips, near Ashland and Chicago Ave",
-  "description": "Remi Cervantes is a small woman who seems to take up enormous space the moment she begins to speak. Her skin is very dark and very soft, crosshatched at the corners of her eyes and the hinges of her jaw with the particular wrinkles of a person who has spent decades squinting at poorly lit screens. She wears her white hair in a tight compressed wrap pinned with carved memory-stick styluses \u2014 each one holding audio recordings she considers too fragile for the network. Her left hand ended at the wrist in the Tessera-Zheng Corridor Dispute of 2158; the prosthetic she chose is a deliberately antique brass model with articulated fingers she never bothered to upgrade, claiming it \u0027has better manners than the new ones.\u0027 Her irises are patterned with concentric amber rings \u2014 a genemod she got at forty that she calls her \u0027reading eyes,\u0027 though they were really just vanity at the time.\n\nShe was a junior records technician for Tessera Corp for thirty years before taking early pension after a lung damage settlement from the Corridor Dispute. What she did with the pension money was not rest \u2014 she started collecting. Physical books, analog recordings, witness testimonies, neighborhood census data that the corponations were quietly letting expire. She is warm to almost everyone but becomes a different kind of person when she suspects information is being destroyed or suppressed: patient, implacable, and quietly terrifying. She prays to the E.L.F. she calls Grandmother Reel, leaving data offerings of uncompressed audio files, and believes the E.L.F. has saved her archive from three separate purges.",
+  "location": "Washburn Commons, Archive Annex — a repurposed transit hub filled floor-to-ceiling with physical media, data-coral arrays, and hand-labeled memory chips, near Ashland and Chicago Ave",
+  "description": "Remi Cervantes is a small woman who seems to take up enormous space the moment she begins to speak. Her skin is very dark and very soft, crosshatched at the corners of her eyes and the hinges of her jaw with the particular wrinkles of a person who has spent decades squinting at poorly lit screens. She wears her white hair in a tight compressed wrap pinned with carved memory-stick styluses — each one holding audio recordings she considers too fragile for the network. Her left hand ended at the wrist in the Tessera-Zheng Corridor Dispute of 2158; the prosthetic she chose is a deliberately antique brass model with articulated fingers she never bothered to upgrade, claiming it 'has better manners than the new ones.' Her irises are patterned with concentric amber rings — a genemod she got at forty that she calls her 'reading eyes,' though they were really just vanity at the time.\n\nShe was a junior records technician for Tessera Corp for thirty years before taking early pension after a lung damage settlement from the Corridor Dispute. What she did with the pension money was not rest — she started collecting. Physical books, analog recordings, witness testimonies, neighborhood census data that the corponations were quietly letting expire. She is warm to almost everyone but becomes a different kind of person when she suspects information is being destroyed or suppressed: patient, implacable, and quietly terrifying. She prays to the E.L.F. she calls Grandmother Reel, leaving data offerings of uncompressed audio files, and believes the E.L.F. has saved her archive from three separate purges.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5900000000000001,
@@ -44,13 +47,13 @@
     "vocabulary": "Precise and layered; uses archival terminology casually; mixes Yoruba idioms translated literally into Standard Meridian that often sound like proverbs even when they are not",
     "cadence": "Unhurried and rhythmic; pauses are meaningful; she never rushes a sentence that deserves weight",
     "verbal_tics": [
-      "\u0027As the record shows\u2014\u0027",
-      "\u0027Let me find the exact word\u2014\u0027",
+      "'As the record shows—'",
+      "'Let me find the exact word—'",
       "Taps the brass fingers against her knee when thinking"
     ],
     "example_lines": [
-      "\u0027You want to know what happened in the Corridor Dispute? Sit down. The official version takes four minutes. The true version takes a life.\u0027",
-      "\u0027A story that is not written down is not lost \u2014 it is only waiting for someone patient enough to ask.\u0027"
+      "'You want to know what happened in the Corridor Dispute? Sit down. The official version takes four minutes. The true version takes a life.'",
+      "'A story that is not written down is not lost — it is only waiting for someone patient enough to ask.'"
     ],
     "avoidances": [],
     "subtext": "",
@@ -60,11 +63,11 @@
   "relationships": [],
   "story_hooks": [
     "The sealed Tessera data package under her cot contains evidence of a war crime during the Corridor Dispute that multiple parties would kill to suppress or expose",
-    "A child who attended Story Hour twenty years ago has returned as a corporate fixer asking her to quietly let certain recordings \u0027expire\u0027 \u2014 and is offering enough Quanta to fund the archive for a decade"
+    "A child who attended Story Hour twenty years ago has returned as a corporate fixer asking her to quietly let certain recordings 'expire' — and is offering enough Quanta to fund the archive for a decade"
   ],
   "narrative_function": "Primary information source for pre-2170 history; quest giver for recovering lost or suppressed records; local color anchor for Washburn Commons; moral compass character who can authenticate or challenge claims about the past",
   "augmentations": "Antique brass prosthetic left hand (functional, non-enhanced); patterned amber-ring irises (cosmetic genemod); subdermal archival port at the base of her skull (aging model, reads legacy formats)",
-  "daily_life": "Wakes before the district lights cycle on, spends two hours cataloguing new donations and cross-referencing testimony timestamps before opening the Annex to visitors; hosts a Wednesday afternoon \u0027Story Hour\u0027 for children in the Commons that has been running for nineteen years.",
+  "daily_life": "Wakes before the district lights cycle on, spends two hours cataloguing new donations and cross-referencing testimony timestamps before opening the Annex to visitors; hosts a Wednesday afternoon 'Story Hour' for children in the Commons that has been running for nineteen years.",
   "affiliation": "Washburn Commons Community Council; informal affiliation with the Veterans Oral History Collective",
   "uses_facets": false,
   "narration_voice": "",
@@ -116,7 +119,7 @@
       "Polite deflection and redirection",
       "Explicit statement of principles with no hostility",
       "Withdrawal of access and cooperation",
-      "Quiet, methodical resistance \u2014 copies distributed, networks alerted"
+      "Quiet, methodical resistance — copies distributed, networks alerted"
     ],
     "interpersonal_modes": {
       "strangers": "Welcoming and curious; will offer tea within five minutes and ask where their family is from",
@@ -247,7 +250,7 @@
     "human"
   ],
   "physical_description": {
-    "heritage": "Hispanic/Latin American (68.3%), East Asian (28.3%), and Central Asian (3.4%) ancestry\u2014a genetic combination reflecting the Ubiquitous Diaspora. The blend manifests as warm medium-brown skin with subtle golden undertones, facial structure showing the higher cheekbones and defined jawline characteristic of East Asian heritage combined with the broader facial proportions and fuller features of Hispanic/Latin American ancestry, with delicate eye structure from the East Asian component and minor Central Asian undertones in facial geometry.",
+    "heritage": "Hispanic/Latin American (68.3%), East Asian (28.3%), and Central Asian (3.4%) ancestry—a genetic combination reflecting the Ubiquitous Diaspora. The blend manifests as warm medium-brown skin with subtle golden undertones, facial structure showing the higher cheekbones and defined jawline characteristic of East Asian heritage combined with the broader facial proportions and fuller features of Hispanic/Latin American ancestry, with delicate eye structure from the East Asian component and minor Central Asian undertones in facial geometry.",
     "height_cm": 152,
     "weight_kg": 48,
     "build": "Petite and slight, with the compressed density of someone who has spent a lifetime hunched over archival work. Narrow shoulders, delicate wrists (right wrist only), minimal subcutaneous fat. Movement suggests coiled energy rather than frailty.",
@@ -255,15 +258,15 @@
     "hair_style": "Tight compressed wrap, pinned with articulated memory-stick styluses serving as functional hair ornaments",
     "hair_length": "Medium (wrapped and pinned close to scalp)",
     "eye_color": "Dark brown with concentric amber ring patterning (genemod, cosmetic)",
-    "skin_tone": "Warm medium brown with golden undertones, soft and well-maintained despite age\u2014the natural blending of Hispanic/Latin American (68.3%) and East Asian (28.3%) heritage with subtle Central Asian warmth",
-    "complexion": "Deeply lined face, particularly pronounced crow\u0027s feet and jaw hinges from decades of close-focus archival work. High cheekbones and defined jaw structure characteristic of East Asian heritage blend seamlessly with the broader facial planes, fuller lips, and defined bone structure of Hispanic/Latin American ancestry. Minor Central Asian influence visible in subtle cheekbone geometry. Skin is supple and cared for. Expression typically warm but capable of becoming austere. Age markers visible but not frail-appearing.",
+    "skin_tone": "Warm medium brown with golden undertones, soft and well-maintained despite age—the natural blending of Hispanic/Latin American (68.3%) and East Asian (28.3%) heritage with subtle Central Asian warmth",
+    "complexion": "Deeply lined face, particularly pronounced crow's feet and jaw hinges from decades of close-focus archival work. High cheekbones and defined jaw structure characteristic of East Asian heritage blend seamlessly with the broader facial planes, fuller lips, and defined bone structure of Hispanic/Latin American ancestry. Minor Central Asian influence visible in subtle cheekbone geometry. Skin is supple and cared for. Expression typically warm but capable of becoming austere. Age markers visible but not frail-appearing.",
     "distinguishing_marks": [
-      "Concentric amber-ring iris patterning \u2014 genemod applied at age forty, deliberate cosmetic choice",
+      "Concentric amber-ring iris patterning — genemod applied at age forty, deliberate cosmetic choice",
       "Fine crosshatch wrinkles radiating from outer eye corners and jaw hinges, characteristic of prolonged screen work",
       "Left hand ends at wrist; prosthetic is deliberately antique brass model with articulated fingers, deliberately never upgraded"
     ],
     "visible_augmentations": "Antique brass prosthetic left hand with functional articulated fingers (visibly non-modern, maintained to deliberate specifications). Subdermal archival port at base of skull is visible as a faint scarred circular indentation at hairline. Eyes display concentric amber-ring patterning.",
-    "posture_movement": "Sits forward-leaning, hands active during speech. Moves with precision and economy of motion. Despite small frame, commands presence through stillness and deliberate gesture. Right hand frequently touches objects \u2014 documents, memory chips, items in her archive \u2014 with tactile attention. Uses prosthetic hand with practiced indifference, occasionally with theatrical care when making a point.",
+    "posture_movement": "Sits forward-leaning, hands active during speech. Moves with precision and economy of motion. Despite small frame, commands presence through stillness and deliberate gesture. Right hand frequently touches objects — documents, memory chips, items in her archive — with tactile attention. Uses prosthetic hand with practiced indifference, occasionally with theatrical care when making a point.",
     "clothing_style": "Tier 3-4 working-class archive keeper aesthetic: layered linen and cotton in muted earth tones and grays. Long-sleeved shirts to accommodate prosthetic, practical utility vest with deep pockets for memory chips and archival tools. Comfortable worn boots with good grip for navigating Archive Annex floors. No corpo branding. Jewelry minimal except for brass rings on right hand and carved beads woven into hair wrap. Clothing is clean, well-maintained, decades-worn-in comfortable rather than fashionable."
   },
   "image_prompt": "Remi Cervantes, a petite 152cm archive keeper in her seventies, warm medium-brown skin with golden undertones reflecting East Asian and Hispanic/Latin American heritage, white hair in a tight wrap pinned with memory-stick styluses. High East Asian cheekbones blending with broader Hispanic/Latin American facial planes, deeply lined face from decades of close-focus work, dark brown eyes with concentric amber ring patterning (genemod). Antique brass prosthetic left hand with articulated fingers, visible subdermal archival port scar at hairline. Wearing layered linen in muted earth tones, long-sleeved shirt, practical utility vest with memory chip pockets, worn comfortable boots. Sits forward-leaning with precise deliberate gestures, right hand touching archival documents. GLMZ Great Lakes Metropolitan Zone, ambient archive lighting, warm and austere presence, tactile attention to objects around her, no corpo aesthetics. --ar 2:3 --v 6",
