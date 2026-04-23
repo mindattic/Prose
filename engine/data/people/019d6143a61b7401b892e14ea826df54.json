@@ -2,16 +2,19 @@
   "id": "019d6143a61b7401b892e14ea826df54",
   "rating": 70,
   "type": "character",
-  "name": "Quinn Wojciechowski",
-  "aliases": [],
+  "name": "Clarisa Wojciechowski",
+  "aliases": [
+    "Quinn Wojciechowski",
+    "Quinn"
+  ],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Lead information broker and network curator \u2014 The Quiet Table",
+  "role": "Lead information broker and network curator — The Quiet Table",
   "age": 61,
   "status": "active",
-  "location": "The Circuit \u2014 operates from a private booth in a members-only tea house called The Leaf, near Damen and Armitage",
-  "description": "Quinn Wojciechowski has been trading information in GLMZ for longer than most runners have been alive. He started as a corporate intelligence analyst for a pharmaceutical conglomerate that no longer exists \u2014 consumed by Veridian Health Sciences in the consolidation wave of the 2180s. When the acquisition happened, Glass walked away with two things: his contact network and an understanding that information only has value if you control its context.\n\nHe built The Quiet Table over twenty years \u2014 a three-person operation that competes with Sable\u0027s network by occupying a different ecological niche. Where Sable trades in urgent, operational intelligence \u2014 who\u0027s doing what right now \u2014 the Quiet Table trades in deep context. History. Relationships. The slow-moving currents that determine which corporations will merge, which jurisdictions will shift, which politicians will fall. Their clients are patient people who plan in years, not hours.\n\nGlass is tall, thin, with a face that has weathered into distinguished rather than old. Silver hair, clean-shaven, clothes that are twenty years out of fashion and perfectly maintained. He moves slowly because speed is for people who haven\u0027t planned far enough ahead. His voice is the kind of quiet that makes other people lean in. He has never raised it in public. He has never needed to.",
+  "location": "The Circuit — operates from a private booth in a members-only tea house called The Leaf, near Damen and Armitage",
+  "description": "Quinn Wojciechowski has been trading information in GLMZ for longer than most runners have been alive. He started as a corporate intelligence analyst for a pharmaceutical conglomerate that no longer exists — consumed by Veridian Health Sciences in the consolidation wave of the 2180s. When the acquisition happened, Glass walked away with two things: his contact network and an understanding that information only has value if you control its context.\n\nHe built The Quiet Table over twenty years — a three-person operation that competes with Sable's network by occupying a different ecological niche. Where Sable trades in urgent, operational intelligence — who's doing what right now — the Quiet Table trades in deep context. History. Relationships. The slow-moving currents that determine which corporations will merge, which jurisdictions will shift, which politicians will fall. Their clients are patient people who plan in years, not hours.\n\nGlass is tall, thin, with a face that has weathered into distinguished rather than old. Silver hair, clean-shaven, clothes that are twenty years out of fashion and perfectly maintained. He moves slowly because speed is for people who haven't planned far enough ahead. His voice is the kind of quiet that makes other people lean in. He has never raised it in public. He has never needed to.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -22,38 +25,38 @@
       "ghost": 0.5
     },
     "core_fears": [
-      "That his memory is beginning to fail \u2014 the eidetic cortex artifacts are small but growing",
+      "That his memory is beginning to fail — the eidetic cortex artifacts are small but growing",
       "That the world has accelerated past the pace at which deep intelligence matters",
-      "That the information he\u0027s collected over three decades makes him a target no security arrangement can protect against"
+      "That the information he's collected over three decades makes him a target no security arrangement can protect against"
     ],
     "core_desires": [
-      "To understand the full picture \u2014 the complete network of power in GLMZ \u2014 before his memory degrades beyond reliability",
+      "To understand the full picture — the complete network of power in GLMZ — before his memory degrades beyond reliability",
       "To protect the two people who trust him enough to work alongside him",
       "To be remembered as someone who understood how things worked, not just someone who sold that understanding"
     ],
     "coping_mechanisms": [
       "Maintains rigid daily routines to compensate for the uncertainty of aging cognition",
-      "Controls conversations rather than participating in them \u2014 the one asking questions never has to answer",
+      "Controls conversations rather than participating in them — the one asking questions never has to answer",
       "Archives everything because the external record protects against the internal decay"
     ],
     "blind_spots": [
       "His patience reads as arrogance to people who operate on shorter timescales",
-      "He underestimates physical threats because his world is informational \u2014 he has not been in danger of violence in years",
+      "He underestimates physical threats because his world is informational — he has not been in danger of violence in years",
       "He cannot distinguish between protecting his crew and controlling them"
     ],
-    "secret": "He has a complete dossier on every major power player in GLMZ \u2014 including Sable. It is stored in his physical archive. If released, it would destabilize the city\u0027s power structure. He has never decided whether it is a weapon, an insurance policy, or an obituary."
+    "secret": "He has a complete dossier on every major power player in GLMZ — including Sable. It is stored in his physical archive. If released, it would destabilize the city's power structure. He has never decided whether it is a weapon, an insurance policy, or an obituary."
   },
   "speech_patterns": {
-    "vocabulary": "Elevated, precise, occasionally archaic. He uses words the way a jeweler uses tools \u2014 each one selected for exact purpose.",
+    "vocabulary": "Elevated, precise, occasionally archaic. He uses words the way a jeweler uses tools — each one selected for exact purpose.",
     "cadence": "Slow, deliberate. Long pauses between sentences. Questions that are really statements. Statements that are really questions.",
     "verbal_tics": [
-      "Begins responses with \u0027Consider\u2014\u0027 when he wants you to reconsider everything you just said",
-      "Uses \u0027interesting\u0027 to mean \u0027you\u0027ve told me more than you intended\u0027",
-      "Never says \u0027I don\u0027t know.\u0027 Says \u0027That question deserves more context than I currently have.\u0027",
-      "Refers to information as \u0027the record\u0027 \u2014 \u0027the record suggests,\u0027 \u0027the record is incomplete\u0027"
+      "Begins responses with 'Consider—' when he wants you to reconsider everything you just said",
+      "Uses 'interesting' to mean 'you've told me more than you intended'",
+      "Never says 'I don't know.' Says 'That question deserves more context than I currently have.'",
+      "Refers to information as 'the record' — 'the record suggests,' 'the record is incomplete'"
     ],
     "example_lines": [
-      "Consider \u2014 if they wanted you to know, they would not have buried it in a subsidiary filing.",
+      "Consider — if they wanted you to know, they would not have buried it in a subsidiary filing.",
       "Interesting. You believe that because someone arranged for you to believe it.",
       "The record is patient. The record outlasts everyone who tries to edit it."
     ],
@@ -66,34 +69,34 @@
     {
       "name": "Noor Farouk",
       "type": "crew / analyst",
-      "description": "Noor is Glass\u0027s analytical engine \u2014 she processes the raw data he collects into actionable intelligence. He recruited her from a failed academic career and gave her purpose. He worries he also gave her his paranoia.",
-      "emotional_core": "The closest thing Glass has to a protege \u2014 intellectual kinship expressed through shared obsession",
+      "description": "Noor is Glass's analytical engine — she processes the raw data he collects into actionable intelligence. He recruited her from a failed academic career and gave her purpose. He worries he also gave her his paranoia.",
+      "emotional_core": "The closest thing Glass has to a protege — intellectual kinship expressed through shared obsession",
       "story_tension": "Noor is developing her own network of contacts independent of Glass. He noticed. He has not decided whether this is growth or betrayal."
     },
     {
       "name": "Felix Drum",
       "type": "crew / field operative",
-      "description": "Felix is the Quiet Table\u0027s only member who leaves the Circuit. He handles meetings that require physical presence, dead-drop servicing, and the rare occasion when information must be accompanied by intimidation. Glass values him and does not fully understand him.",
-      "emotional_core": "Dependency Glass will not name \u2014 Felix is his eyes and hands in the physical world",
+      "description": "Felix is the Quiet Table's only member who leaves the Circuit. He handles meetings that require physical presence, dead-drop servicing, and the rare occasion when information must be accompanied by intimidation. Glass values him and does not fully understand him.",
+      "emotional_core": "Dependency Glass will not name — Felix is his eyes and hands in the physical world",
       "story_tension": "Felix is the crew member most likely to encounter violence, and Glass is the crew member least equipped to deal with that."
     },
     {
       "name": "Sable",
       "type": "competitor / mutual respect",
-      "description": "Glass and Sable occupy adjacent niches in GLMZ\u0027s information economy. They have never directly confronted each other but maintain a careful awareness. Glass considers Sable brilliant but dangerously fast \u2014 she trades in the now, which means she occasionally sells context she doesn\u0027t fully understand.",
+      "description": "Glass and Sable occupy adjacent niches in GLMZ's information economy. They have never directly confronted each other but maintain a careful awareness. Glass considers Sable brilliant but dangerously fast — she trades in the now, which means she occasionally sells context she doesn't fully understand.",
       "emotional_core": "Professional rivalry seasoned with genuine intellectual respect",
-      "story_tension": "If the information market contracts, one of them will have to absorb the other\u0027s territory. Neither wants this fight."
+      "story_tension": "If the information market contracts, one of them will have to absorb the other's territory. Neither wants this fight."
     }
   ],
   "story_hooks": [
-    "The eidetic cortex begins failing in noticeable ways \u2014 Glass forgets a name, a date, a connection. The archive becomes his lifeline and his vulnerability.",
-    "A client requests information from the dossier collection \u2014 someone knows it exists",
+    "The eidetic cortex begins failing in noticeable ways — Glass forgets a name, a date, a connection. The archive becomes his lifeline and his vulnerability.",
+    "A client requests information from the dossier collection — someone knows it exists",
     "A Quiet Table analysis correctly predicts a major corporate merger, making Glass simultaneously valuable and dangerous to every party involved",
     "Sable approaches Glass with a proposal: merge operations against a common threat. The political thriller becomes a trust exercise."
   ],
-  "narrative_function": "Glass is the long game personified. His stories are political thrillers where the stakes are measured in influence rather than blood. He represents the intelligence world that exists above the street level \u2014 the slow, patient, devastating maneuvering that determines which streets exist at all. His competition with Sable adds texture to the information economy of GLMZ.",
-  "augmentations": "Eidetic memory cortex (early-generation, pharmaceutical-grade) \u2014 perfect recall of conversations, documents, and spatial layouts. The implant is thirty years old and beginning to develop minor retrieval artifacts. Cochlear enhancement for directional audio filtering \u2014 he can isolate a single conversation in a crowded room. No visible augmentations.",
-  "daily_life": "Arrives at The Leaf at 0800. Reads physical newspapers \u2014 three of them, from different jurisdictions. Takes meetings throughout the day, never more than four. Each meeting involves tea, small talk that is actually reconnaissance, and an exchange of information that both parties believe they won. Evenings he maintains his archive \u2014 a physical filing system in a secure location that only he can access. Sleeps at a residence he has never disclosed to anyone, including his crew.",
+  "narrative_function": "Glass is the long game personified. His stories are political thrillers where the stakes are measured in influence rather than blood. He represents the intelligence world that exists above the street level — the slow, patient, devastating maneuvering that determines which streets exist at all. His competition with Sable adds texture to the information economy of GLMZ.",
+  "augmentations": "Eidetic memory cortex (early-generation, pharmaceutical-grade) — perfect recall of conversations, documents, and spatial layouts. The implant is thirty years old and beginning to develop minor retrieval artifacts. Cochlear enhancement for directional audio filtering — he can isolate a single conversation in a crowded room. No visible augmentations.",
+  "daily_life": "Arrives at The Leaf at 0800. Reads physical newspapers — three of them, from different jurisdictions. Takes meetings throughout the day, never more than four. Each meeting involves tea, small talk that is actually reconnaissance, and an exchange of information that both parties believe they won. Evenings he maintains his archive — a physical filing system in a secure location that only he can access. Sleeps at a residence he has never disclosed to anyone, including his crew.",
   "affiliation": "Lazarus Pharmaceuticals (mid-level lead information broker and network curator)",
   "uses_facets": false,
   "narration_voice": "",
@@ -110,25 +113,25 @@
   },
   "behavioral": {
     "decision_rules": [
-      "Will never sell information without understanding the buyer\u0027s intended use \u2014 context determines price",
+      "Will never sell information without understanding the buyer's intended use — context determines price",
       "Will not provide intelligence that directly endangers children or medical infrastructure",
       "Will maintain at least two independent verification sources for any claim before selling it as fact",
       "Will not meet clients outside The Leaf unless Felix has secured the location first",
-      "Will burn a contact permanently if they sell fabricated intelligence through his network \u2014 reputation is the product",
+      "Will burn a contact permanently if they sell fabricated intelligence through his network — reputation is the product",
       "Will never discuss the physical archive with anyone, including crew members"
     ],
     "escalation_ladder": [
-      "1. Redirect \u2014 change the subject. Control the conversation. Make the threat discuss something else.",
-      "2. Leverage \u2014 deploy information. Remind the threatening party what you know about them.",
-      "3. Delay \u2014 buy time. Schedule a follow-up. Information people are patient people; use that patience as a weapon.",
-      "4. Alert \u2014 contact Felix. The Quiet Table\u0027s physical security is Felix\u0027s domain.",
-      "5. Release \u2014 threaten to publish. The dossier collection is a dead man\u0027s switch he has never activated but everyone knows exists.",
-      "6. Vanish \u2014 Glass has maintained an exit identity for fifteen years. It has never been used. He hopes it never needs to be."
+      "1. Redirect — change the subject. Control the conversation. Make the threat discuss something else.",
+      "2. Leverage — deploy information. Remind the threatening party what you know about them.",
+      "3. Delay — buy time. Schedule a follow-up. Information people are patient people; use that patience as a weapon.",
+      "4. Alert — contact Felix. The Quiet Table's physical security is Felix's domain.",
+      "5. Release — threaten to publish. The dossier collection is a dead man's switch he has never activated but everyone knows exists.",
+      "6. Vanish — Glass has maintained an exit identity for fifteen years. It has never been used. He hopes it never needs to be."
     ],
     "interpersonal_modes": {
       "noor": "Socratic. He teaches through questions and lets her arrive at conclusions he reached three steps ago. The pride he feels in her growth is the most human thing about him.",
-      "felix": "Respectful, slightly formal. Glass does not fully understand people who operate in physical space, and Felix\u0027s comfort with violence is a language Glass speaks only theoretically.",
-      "clients": "Controlled warmth. The tea, the booth, the unhurried conversation \u2014 all of it is theater designed to make people comfortable enough to reveal more than they intended. He is very good at this.",
+      "felix": "Respectful, slightly formal. Glass does not fully understand people who operate in physical space, and Felix's comfort with violence is a language Glass speaks only theoretically.",
+      "clients": "Controlled warmth. The tea, the booth, the unhurried conversation — all of it is theater designed to make people comfortable enough to reveal more than they intended. He is very good at this.",
       "sable": "Careful, measured, slightly performative. When they interact, both are aware that the other is playing several games simultaneously. The mutual awareness is itself a form of respect.",
       "alone": "The mask comes off and what remains is a tired man with an excellent memory and a growing fear that the memory is the only thing that makes him valuable."
     },
@@ -139,23 +142,23 @@
       "critical": "Writes letters. Unsealed, undated, placed in the archive alongside the dossiers. They are addressed to Noor and Felix and contain instructions he hopes they never need. This is as close as Glass gets to prayer."
     },
     "contradictions": [
-      "He values truth but sells it selectively \u2014 the broker\u0027s paradox is that complete honesty would destroy his business model",
+      "He values truth but sells it selectively — the broker's paradox is that complete honesty would destroy his business model",
       "He wants to protect Noor and Felix but the best protection would be disbanding the crew, which he refuses to consider",
       "He fears his memory failing but resists medical evaluation because the diagnosis might be worse than the uncertainty",
-      "He competes with Sable professionally but recognizes that the information ecosystem needs both of them \u2014 competition and dependency coexist"
+      "He competes with Sable professionally but recognizes that the information ecosystem needs both of them — competition and dependency coexist"
     ],
     "habits": [
-      "Reads three physical newspapers every morning \u2014 the redundancy is both analytical and ritualistic",
-      "Drinks green tea exclusively \u2014 has done so for thirty years. The type changes seasonally; the habit does not.",
+      "Reads three physical newspapers every morning — the redundancy is both analytical and ritualistic",
+      "Drinks green tea exclusively — has done so for thirty years. The type changes seasonally; the habit does not.",
       "Arrives at The Leaf at exactly 0800. Leaves at exactly 1800. The regularity is both discipline and vulnerability.",
-      "Writes in a leather journal every evening \u2014 not a diary, a cross-reference index for the archive",
-      "Touches his left temple when retrieving a specific memory \u2014 a gesture that started as conscious and became involuntary"
+      "Writes in a leather journal every evening — not a diary, a cross-reference index for the archive",
+      "Touches his left temple when retrieving a specific memory — a gesture that started as conscious and became involuntary"
     ],
     "breaking_points": [
-      "The eidetic cortex failing catastrophically \u2014 losing the memory is losing himself",
-      "Noor or Felix being killed because of information Glass provided \u2014 the broker\u0027s hands are clean until they aren\u0027t",
-      "The dossier collection being discovered and published without his control \u2014 the weapon firing without his hand on it",
-      "Being proven wrong about a major analysis \u2014 his identity rests on being the person who understands the full picture"
+      "The eidetic cortex failing catastrophically — losing the memory is losing himself",
+      "Noor or Felix being killed because of information Glass provided — the broker's hands are clean until they aren't",
+      "The dossier collection being discovered and published without his control — the weapon firing without his hand on it",
+      "Being proven wrong about a major analysis — his identity rests on being the person who understands the full picture"
     ]
   },
   "cyberware_inventory": [],
@@ -195,24 +198,24 @@
     "human"
   ],
   "physical_description": {
-    "heritage": "Eastern European (28.9%), East Asian (25.2%), Southeast Asian (25.1%), Pacific Islander (11.9%), Sub-Saharan African (4.9%), and South Asian (4.0%) ancestry\u2014a complex genetic blend reflecting the Ubiquitous Diaspora. The phenotype reflects balanced contributions across multiple continental lineages: moderate East and Southeast Asian skeletal structure tempered by Eastern European bone density and frame, creating a tall lean silhouette. Warm medium-brown skin tone with amber and bronze undertones from the layered contributions of Southeast Asian, Pacific Islander, and Sub-Saharan African ancestry, creating a sun-kissed appearance maintained through consistent protection and indoor work habits.",
+    "heritage": "Eastern European (28.9%), East Asian (25.2%), Southeast Asian (25.1%), Pacific Islander (11.9%), Sub-Saharan African (4.9%), and South Asian (4.0%) ancestry—a complex genetic blend reflecting the Ubiquitous Diaspora. The phenotype reflects balanced contributions across multiple continental lineages: moderate East and Southeast Asian skeletal structure tempered by Eastern European bone density and frame, creating a tall lean silhouette. Warm medium-brown skin tone with amber and bronze undertones from the layered contributions of Southeast Asian, Pacific Islander, and Sub-Saharan African ancestry, creating a sun-kissed appearance maintained through consistent protection and indoor work habits.",
     "height_cm": 188,
     "weight_kg": 74,
-    "build": "Lean and angular, the frame of someone who has never carried excess \u2014 shoulders still straight despite age, but with the subtle stoop of someone who has spent decades bent over documents and archives",
+    "build": "Lean and angular, the frame of someone who has never carried excess — shoulders still straight despite age, but with the subtle stoop of someone who has spent decades bent over documents and archives",
     "hair_color": "Silver-white, naturally transitioned from dark brown over the last decade",
-    "hair_style": "Parted to the left, combed back in a style unchanged since the 2190s \u2014 carefully maintained rather than fashionable",
+    "hair_style": "Parted to the left, combed back in a style unchanged since the 2190s — carefully maintained rather than fashionable",
     "hair_length": "Medium, just touching the collar",
-    "eye_color": "Deep brown with subtle warmth, sharp and attentive, with faint cataracts beginning at the edges \u2014 a sign of age he refuses to have corrected surgically",
-    "skin_tone": "Warm medium brown with amber and bronze undertones, the result of Eastern European, East Asian, Southeast Asian, Pacific Islander, and Sub-Saharan African genetic contributions\u2014sun-kissed and maintained by consistent sun discipline and indoor work habits",
-    "complexion": "Clean-shaven, skin weathered into careful lines rather than deep wrinkles \u2014 a face that reads as distinguished rather than aged. Fine capillaries visible at the temples. Small scar at the left jawline, thin and old, possibly from a blade or surgical incision from his corporate days. Balanced cheekbone prominence and defined jawline reflecting the confluence of East Asian and Eastern European bone structure, with moderate facial width from Southeast Asian and Pacific Islander heritage, and subtle warm undertones from Sub-Saharan African ancestry.",
+    "eye_color": "Deep brown with subtle warmth, sharp and attentive, with faint cataracts beginning at the edges — a sign of age he refuses to have corrected surgically",
+    "skin_tone": "Warm medium brown with amber and bronze undertones, the result of Eastern European, East Asian, Southeast Asian, Pacific Islander, and Sub-Saharan African genetic contributions—sun-kissed and maintained by consistent sun discipline and indoor work habits",
+    "complexion": "Clean-shaven, skin weathered into careful lines rather than deep wrinkles — a face that reads as distinguished rather than aged. Fine capillaries visible at the temples. Small scar at the left jawline, thin and old, possibly from a blade or surgical incision from his corporate days. Balanced cheekbone prominence and defined jawline reflecting the confluence of East Asian and Eastern European bone structure, with moderate facial width from Southeast Asian and Pacific Islander heritage, and subtle warm undertones from Sub-Saharan African ancestry.",
     "distinguishing_marks": [
       "Thin surgical scar running 2cm along the left jawline, pale and precise, dating from his pharmaceutical analyst years (likely implant insertion scar)",
       "Age spots on the back of his hands, small and regular, suggesting careful sun protection throughout life",
       "Callus on the middle finger of his right hand from thirty years of fountain pen use"
     ],
     "visible_augmentations": "None visible. The eidetic memory cortex is implanted subdermally at the temporal lobe; no external ports or indicators. Cochlear enhancement is entirely internal.",
-    "posture_movement": "Moves with deliberate slowness \u2014 not infirmity, but intention. Sits with perfect posture, hands folded or occupied with tea. Eyes track conversations without head movement. Speaks rarely and only to make a point; long silences are comfortable for him. Walks as if conserving energy, each step measured.",
-    "clothing_style": "Tier 2-3 aesthetic frozen in time: charcoal or navy wool slacks tailored to fit his lean frame, linen shirts in cream or pale blue with mother-of-pearl buttons, always pressed. A dark wool blazer (the same one, rotated through careful dry cleaning) with a subtle sheen from age. A silk scarf in neutral tones, tied with precision. Shoes are oxford loafers, black leather, maintained to mirror polish. A mechanical watch (not smart, not networked) with a leather band. Everything is expensive and nothing is new \u2014 the wardrobe of someone who understands that fashion changes but quality endures."
+    "posture_movement": "Moves with deliberate slowness — not infirmity, but intention. Sits with perfect posture, hands folded or occupied with tea. Eyes track conversations without head movement. Speaks rarely and only to make a point; long silences are comfortable for him. Walks as if conserving energy, each step measured.",
+    "clothing_style": "Tier 2-3 aesthetic frozen in time: charcoal or navy wool slacks tailored to fit his lean frame, linen shirts in cream or pale blue with mother-of-pearl buttons, always pressed. A dark wool blazer (the same one, rotated through careful dry cleaning) with a subtle sheen from age. A silk scarf in neutral tones, tied with precision. Shoes are oxford loafers, black leather, maintained to mirror polish. A mechanical watch (not smart, not networked) with a leather band. Everything is expensive and nothing is new — the wardrobe of someone who understands that fashion changes but quality endures."
   },
   "image_prompt": "Quinn Wojciechowski, distinguished 2226 archival researcher, warm medium-brown skin with amber undertones, silver-white hair parted left and combed back, deep attentive brown eyes with age-softened edges. Lean 188cm frame in tailored charcoal wool slacks, cream linen shirt with pearl buttons, aged dark wool blazer with subtle sheen, silk scarf in neutral tones tied with precision. Black oxford loafers polished to mirror shine. Mechanical watch with leather band. Clean-shaven face marked by fine weathered lines and a thin surgical scar along left jawline, age spots on hands from decades of sun discipline. Posture perfectly straight, movement deliberate and measured. GLMZ 2200s archive setting, warm amber and indigo lighting, background of holographic data and vintage documents, introspective mood of measured contemplation, subtle exhaustion of lifelong institutional work. High resolution, sharp focus on facial dignity and worn quality of timeless clothing. --ar 2:3 --v 6",
   "dalle3_prompt": "",

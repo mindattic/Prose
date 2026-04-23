@@ -3,8 +3,11 @@
   "rating": 30,
   "vote_count": 2,
   "type": "character",
-  "name": "Lyric Odinga-Mbekele",
-  "aliases": [],
+  "name": "Gotthard Odinga-Mbekele",
+  "aliases": [
+    "Lyric Odinga-Mbekele",
+    "Lyric"
+  ],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -112,19 +115,19 @@
     "weight_kg": 62,
     "build": "Lean and angular, with defined shoulders from decades of fieldwork. Minimal body fat, efficient musculature suggesting regular maintenance rather than vanity fitness.",
     "hair_color": "Natural dark brown with silver-gray threading at temples and crown",
-    "hair_style": "Pulled back into a tight, geometric braid that wraps around her skull\u2014practical, intimidating, signature",
+    "hair_style": "Pulled back into a tight, geometric braid that wraps around her skull—practical, intimidating, signature",
     "hair_length": "Medium (when unbound)",
     "eye_color": "Natural brown, right eye replaced with a 2nd-gen OPTIC-7 chrono-tracking augment (amber-gold lens with faint reticle grid visible at certain angles)",
     "skin_tone": "Deep warm brown with golden and amber undertones from Sub-Saharan African ancestry, subtly cooled by Northern European heritage. Pacific Islander warmth adds richness to the mid-deep complexion. Sun-weathered and uneven from asymmetrical scarring.",
     "complexion": "Strong, prominent cheekbones reflecting Sub-Saharan African heritage blended with the facial geometry of Northern European and Pacific Islander ancestry. Long face with slight underbite. Fine scar tissue across left cheekbone and temple. No wrinkles; her face has the taut, preserved quality of someone using mid-tier dermaplast treatments.",
     "distinguishing_marks": [
-      "Surgical scar running from left temple to jawline, pale and thin but visible under overhead light\u2014result of optic augmentation procedure at age 28",
-      "Burn scarring on right forearm (inside of wrist to elbow) in an irregular oval pattern\u2014plasma discharge incident, circa 2208",
-      "Small tattoo on inner left wrist: three stacked \u03A6 symbols in silver ink, Tessera affiliation marker"
+      "Surgical scar running from left temple to jawline, pale and thin but visible under overhead light—result of optic augmentation procedure at age 28",
+      "Burn scarring on right forearm (inside of wrist to elbow) in an irregular oval pattern—plasma discharge incident, circa 2208",
+      "Small tattoo on inner left wrist: three stacked Φ symbols in silver ink, Tessera affiliation marker"
     ],
     "visible_augmentations": "Right eye is a chro-amber lens with visible gold circuitry at the iris edge. Right arm from mid-forearm down is brushed-steel synthetic (smooth, articulated fingers with pressure-sensitive pads). The transition at the elbow is covered by a fitted gray tactical sleeve. Neural interface port at base of skull (covered by hair).",
-    "posture_movement": "Stands with shoulders back, weight centered. Her movements are economical\u2014no wasted motion. She walks with an even, measured pace despite the synthetic arm. Makes deliberate eye contact and rarely blinks with her augmented eye, which can unsettle people.",
-    "clothing_style": "Tier 2 utilitarian-chic. Dark charcoal second-skin bodysuit under a tailored matte-black tactical jacket (Korin Industries, mid-grade chrome-weave lining). Fitted tactical pants with too many pockets. Boots: unmarked matte-black combat boots, expensive but anonymous. Single chrome pendant (Tessera marker) worn under her shirt. No jewelry. Her entire ensemble costs 15,000 \u03A6 and looks it only to those who know the brands."
+    "posture_movement": "Stands with shoulders back, weight centered. Her movements are economical—no wasted motion. She walks with an even, measured pace despite the synthetic arm. Makes deliberate eye contact and rarely blinks with her augmented eye, which can unsettle people.",
+    "clothing_style": "Tier 2 utilitarian-chic. Dark charcoal second-skin bodysuit under a tailored matte-black tactical jacket (Korin Industries, mid-grade chrome-weave lining). Fitted tactical pants with too many pockets. Boots: unmarked matte-black combat boots, expensive but anonymous. Single chrome pendant (Tessera marker) worn under her shirt. No jewelry. Her entire ensemble costs 15,000 Φ and looks it only to those who know the brands."
   },
   "image_prompt": "Lyric Odinga-Mbekele, a 168cm lean operative with deep warm brown skin rich with golden undertones, standing in a GLMZ urban environment. Her tight geometric braids frame her strong cheekbones and long face, reflecting Sub-Saharan African, Northern European, and Pacific Islander heritage. Thin surgical scar visible along her left temple and jawline. Right eye is a chro-amber augmented lens with gold circuitry. Right arm is brushed-steel synthetic from mid-forearm down with pressure-sensitive pads. She wears a tailored matte-black tactical jacket over a dark charcoal second-skin bodysuit, tactical pants with numerous pockets, and unmarked combat boots. Gray tactical sleeve covers the elbow joint of her synthetic arm. Her posture is centered and confident, movements economical. She stands in dramatic neon-shadow lighting, the amber glow of her augmented eye catching light. Cool blue and warm orange neo-noir lighting creates depth. Serious, measured expression. Tessera affiliation pendant visible at her neck. Professional operative aesthetic, mid-tier gear quality evident to trained eyes. --ar 2:3 --v 6",
   "dalle3_prompt": "",

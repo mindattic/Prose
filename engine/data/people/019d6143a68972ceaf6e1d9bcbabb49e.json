@@ -2,16 +2,19 @@
   "id": "019d6143a68972ceaf6e1d9bcbabb49e",
   "rating": 80,
   "type": "character",
-  "name": "Juno Balogun",
-  "aliases": [],
+  "name": "Ebele Balogun",
+  "aliases": [
+    "Juno Balogun",
+    "Juno"
+  ],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
   "role": "loan shark and bookmaker operating out of Gravesend Basin",
   "age": 47,
   "status": "active",
-  "location": "Gravesend Basin \u2014 operates from the back booth of a noodle stall called Mama Nkosi\u0027s Overflow, near Pulaski and Chicago Ave",
-  "description": "Juno Balogun is a broad-shouldered man going soft around the middle, with dark Ewe-complexioned skin, a close-cropped silver beard, and the patient, unhurried eyes of someone who has learned that time is always on his side. His left hand is a prosthetic \u2014 matte-black carbon composite, articulated fingers that tap against tabletops in slow, deliberate rhythms when he\u0027s calculating. He dresses in well-maintained but unglamorous clothes: thick-weave trousers, a collared shirt perpetually rolled to the elbows, a canvas jacket with too many interior pockets. He smells faintly of cardamom tea and printer toner.\n\nJuno Balogun does not threaten. He explains. There is a profound difference, he will tell you, between a man who says \u0027pay me or else\u0027 and a man who lays out, with genuine sorrow, exactly what the mathematics of your situation require. He has a gift for making debt feel like a mutual inconvenience rather than a trap, right up until the moment it becomes inescapable. He is genuinely fond of his regulars and genuinely ruthless about his margins. He keeps meticulous paper ledgers \u2014 actual paper \u2014 because he doesn\u0027t trust any network he doesn\u0027t control.",
+  "location": "Gravesend Basin — operates from the back booth of a noodle stall called Mama Nkosi's Overflow, near Pulaski and Chicago Ave",
+  "description": "Juno Balogun is a broad-shouldered man going soft around the middle, with dark Ewe-complexioned skin, a close-cropped silver beard, and the patient, unhurried eyes of someone who has learned that time is always on his side. His left hand is a prosthetic — matte-black carbon composite, articulated fingers that tap against tabletops in slow, deliberate rhythms when he's calculating. He dresses in well-maintained but unglamorous clothes: thick-weave trousers, a collared shirt perpetually rolled to the elbows, a canvas jacket with too many interior pockets. He smells faintly of cardamom tea and printer toner.\n\nJuno Balogun does not threaten. He explains. There is a profound difference, he will tell you, between a man who says 'pay me or else' and a man who lays out, with genuine sorrow, exactly what the mathematics of your situation require. He has a gift for making debt feel like a mutual inconvenience rather than a trap, right up until the moment it becomes inescapable. He is genuinely fond of his regulars and genuinely ruthless about his margins. He keeps meticulous paper ledgers — actual paper — because he doesn't trust any network he doesn't control.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -22,7 +25,7 @@
       "ghost": 0.5
     },
     "core_fears": [
-      "dying with his ledgers unbalanced \u2014 debts uncollected, favors unrepaid",
+      "dying with his ledgers unbalanced — debts uncollected, favors unrepaid",
       "being seen as cruel rather than practical"
     ],
     "core_desires": [
@@ -34,22 +37,22 @@
       "framing every moral compromise as arithmetic"
     ],
     "blind_spots": [
-      "genuinely cannot see how his \u0027explanations\u0027 function as psychological terror",
+      "genuinely cannot see how his 'explanations' function as psychological terror",
       "believes his fairness distinguishes him from violent loan sharks, ignoring that the end result is identical"
     ],
-    "secret": "He has quietly forgiven the debt of seven families over twenty years \u2014 burning the ledger pages privately \u2014 always for reasons he tells himself are strategic but are actually sentimental. He would be furious if anyone found out."
+    "secret": "He has quietly forgiven the debt of seven families over twenty years — burning the ledger pages privately — always for reasons he tells himself are strategic but are actually sentimental. He would be furious if anyone found out."
   },
   "speech_patterns": {
-    "vocabulary": "measured, formal, numerically precise \u2014 always quotes exact figures, never approximates",
+    "vocabulary": "measured, formal, numerically precise — always quotes exact figures, never approximates",
     "cadence": "slow and unhurried, deliberate pauses before important clauses, no raised voice ever",
     "verbal_tics": [
-      "\u0027The numbers don\u0027t care about that\u0027",
-      "\u0027Let\u0027s work through this together\u0027",
+      "'The numbers don't care about that'",
+      "'Let's work through this together'",
       "taps his prosthetic fingers three times before delivering bad news"
     ],
     "example_lines": [
-      "\u0027You borrowed \u03A6340 on the fourteenth. Today is the twenty-eighth. The standard rate applies. That\u0027s \u03A6408. I\u0027m not asking you to feel bad about it \u2014 I\u0027m asking you to feel motivated.\u0027",
-      "\u0027I\u0027ve been doing this for twenty-two years. I have never once enjoyed this part. That should tell you something about how certain I am that it\u0027s necessary.\u0027"
+      "'You borrowed Φ340 on the fourteenth. Today is the twenty-eighth. The standard rate applies. That's Φ408. I'm not asking you to feel bad about it — I'm asking you to feel motivated.'",
+      "'I've been doing this for twenty-two years. I have never once enjoyed this part. That should tell you something about how certain I am that it's necessary.'"
     ],
     "avoidances": [],
     "subtext": "",
@@ -58,13 +61,13 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A debtor has died before repaying, but their teenage child found the ledger entry and wants to honor it \u2014 Ossian is unexpectedly moved and unsure what to do with that",
-    "Someone has been systematically paying off his debtors anonymously, undermining his operation \u2014 he needs to know why before he can decide if it\u0027s a threat or a gift",
-    "He holds a debt marker from someone who has since joined a corponation security division \u2014 the marker is now extremely dangerous to collect but also extremely valuable"
+    "A debtor has died before repaying, but their teenage child found the ledger entry and wants to honor it — Ossian is unexpectedly moved and unsure what to do with that",
+    "Someone has been systematically paying off his debtors anonymously, undermining his operation — he needs to know why before he can decide if it's a threat or a gift",
+    "He holds a debt marker from someone who has since joined a corponation security division — the marker is now extremely dangerous to collect but also extremely valuable"
   ],
-  "narrative_function": "Quest giver (someone owes him something inconvenient), information broker (he knows everyone\u0027s financial desperation), moral weight (he\u0027s not a monster but his business ruins lives)",
+  "narrative_function": "Quest giver (someone owes him something inconvenient), information broker (he knows everyone's financial desperation), moral weight (he's not a monster but his business ruins lives)",
   "augmentations": "Carbon composite prosthetic left hand with embedded micro-scale calculator and pressure sensors; subdermal RFID tag reader in right palm for verifying identity chips",
-  "daily_life": "Opens his booth at Mama Nkosi\u0027s by 0900, reviews overnight bet results and repayment logs over tea, spends afternoons making quiet rounds to collect or extend credit, and runs a small evening odds board for Basin locals betting on Ferrogate Transit delay times.",
+  "daily_life": "Opens his booth at Mama Nkosi's by 0900, reviews overnight bet results and repayment logs over tea, spends afternoons making quiet rounds to collect or extend credit, and runs a small evening odds board for Basin locals betting on Ferrogate Transit delay times.",
   "affiliation": "Independent operator; loose protection arrangement with the Gravesend Basin syndicate known as the Tidewrack",
   "uses_facets": false,
   "narration_voice": "",
@@ -108,32 +111,32 @@
   },
   "behavioral": {
     "decision_rules": [
-      "Never extend credit to someone who has already defaulted elsewhere \u2014 bad math",
-      "Never conduct business standing up \u2014 sitting signals you have time, and time is leverage"
+      "Never extend credit to someone who has already defaulted elsewhere — bad math",
+      "Never conduct business standing up — sitting signals you have time, and time is leverage"
     ],
     "escalation_ladder": [
       "Polite reminder with tea and recalculated figures",
-      "Visit to the debtor\u0027s workplace or home \u2014 still polite, now witnessed",
-      "Assignment of debt to a Tidewrack collection associate \u2014 Ossian considers this a personal failure and charges himself a \u0027disappointment fee\u0027 in his private ledger"
+      "Visit to the debtor's workplace or home — still polite, now witnessed",
+      "Assignment of debt to a Tidewrack collection associate — Ossian considers this a personal failure and charges himself a 'disappointment fee' in his private ledger"
     ],
     "interpersonal_modes": {
-      "strangers": "courteous and evaluative \u2014 he is immediately calculating your financial situation from your clothes, augmentations, and posture",
+      "strangers": "courteous and evaluative — he is immediately calculating your financial situation from your clothes, augmentations, and posture",
       "friends": "warmly paternal, generous with tea and conversation, occasionally loans small amounts interest-free which he then agonizes over privately"
     },
     "stress_responses": {
       "low": "Taps prosthetic fingers, recalculates figures aloud as a grounding exercise",
       "medium": "Goes very still and very quiet, speech becomes even more precise",
-      "high": "Closes his ledger, stands up slowly, and says \u0027I need to think about this\u0027 \u2014 then disappears for hours"
+      "high": "Closes his ledger, stands up slowly, and says 'I need to think about this' — then disappears for hours"
     },
     "contradictions": [
       "Presents himself as purely transactional but makes intensely personal exceptions he refuses to acknowledge"
     ],
     "habits": [
-      "Burns a small paper strip as a data offering to the E.L.F. he believes inhabits Mama Nkosi\u0027s payment terminal every morning",
-      "Writes the day\u0027s weather in the margin of every ledger page"
+      "Burns a small paper strip as a data offering to the E.L.F. he believes inhabits Mama Nkosi's payment terminal every morning",
+      "Writes the day's weather in the margin of every ledger page"
     ],
     "breaking_points": [
-      "Discovering someone has been using his loan network to funnel people into organ debt traps \u2014 he has a very specific line about what debt is for"
+      "Discovering someone has been using his loan network to funnel people into organ debt traps — he has a very specific line about what debt is for"
     ]
   },
   "cyberware_inventory": [
@@ -220,7 +223,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Current operations \u2014 Basin institution, semi-tolerated by Tidewrack as too embedded to remove",
+      "event": "Current operations — Basin institution, semi-tolerated by Tidewrack as too embedded to remove",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -242,15 +245,15 @@
     "hair_length": "Short",
     "eye_color": "Deep brown, patient and calculating",
     "skin_tone": "Deep warm brown with rich golden-amber undertones, reflecting the 51.4% Sub-Saharan African ancestry as the dominant heritage foundation, with subtle warmth from Middle Eastern (15.4%) and Indigenous American (12.4%) components, and the underlying cool undertones from Eastern European (20.8%) ancestry creating complexity in the overall tone",
-    "complexion": "Clear, well-groomed skin showing minimal scarring with a subtle warm glow and the suggestion of deeper undertones characteristic of mixed African-Eastern European heritage. A thin silver beard, closely trimmed, frames a wide jaw with broad, structured cheekbones that carry the width of African and Indigenous American ancestry balanced against the bone prominence of Eastern European lineage. No visible blemishes or weathering \u2014 he takes care of himself. Expression typically neutral, mouth relaxed into something between a smile and a waiting silence.",
+    "complexion": "Clear, well-groomed skin showing minimal scarring with a subtle warm glow and the suggestion of deeper undertones characteristic of mixed African-Eastern European heritage. A thin silver beard, closely trimmed, frames a wide jaw with broad, structured cheekbones that carry the width of African and Indigenous American ancestry balanced against the bone prominence of Eastern European lineage. No visible blemishes or weathering — he takes care of himself. Expression typically neutral, mouth relaxed into something between a smile and a waiting silence.",
     "distinguishing_marks": [
       "Thin white scar across the knuckles of his right hand, consistent with old financial disputes or industrial accident",
-      "Faint chemical burns on his left inner wrist where the prosthetic interface meets skin \u2014 barely visible unless he rolls his sleeve",
-      "Small tattooed accounting symbols on the inside of his left forearm: a minus sign, a plus sign, and a vertical line representing \u0027balance\u0027"
+      "Faint chemical burns on his left inner wrist where the prosthetic interface meets skin — barely visible unless he rolls his sleeve",
+      "Small tattooed accounting symbols on the inside of his left forearm: a minus sign, a plus sign, and a vertical line representing 'balance'"
     ],
-    "visible_augmentations": "Left hand is a matte-black carbon composite prosthetic with articulated fingers and visible micro-joint seams. The wrist interface shows a thin chrome connector ring. Right palm shows no visible augmentation, though a subdermal RFID reader is installed beneath the skin \u2014 only detectable if you knew to look for the faint silvery tracery under magnification. He moves his left hand with deliberate precision, the tapping rhythm audible when settling bets.",
-    "posture_movement": "Sits more than he stands. When seated, he occupies space completely \u2014 elbows on the table, both hands visible (left hand tapping or folded), leaning slightly forward in full attention. When moving through Mama Nkosi\u0027s or making collection rounds, he walks slowly and with purpose, never hurrying, never looking rushed. His movements are economical \u2014 no wasted motion, everything calculated.",
-    "clothing_style": "Tier 3-4 working professional, deliberately unglamorous. Thick-weave canvas trousers in charcoal or dark tan, often with a subtle stain near the hem from noodle-stall work. Collared shirts in muted colors (cream, pale blue, grey) rolled to mid-forearm to display both his natural hand and prosthetic in equal measure \u2014 a deliberate statement. Heavy canvas jackets with too many interior pockets, the kind a tradesman or accountant would wear. No logos, no chrome, no flash. Worn leather shoes with good soles, replaced annually. A small brass compass worn on a chain inside his shirt \u2014 not visible, but he touches it unconsciously when making decisions. Everything maintained, nothing fashionable."
+    "visible_augmentations": "Left hand is a matte-black carbon composite prosthetic with articulated fingers and visible micro-joint seams. The wrist interface shows a thin chrome connector ring. Right palm shows no visible augmentation, though a subdermal RFID reader is installed beneath the skin — only detectable if you knew to look for the faint silvery tracery under magnification. He moves his left hand with deliberate precision, the tapping rhythm audible when settling bets.",
+    "posture_movement": "Sits more than he stands. When seated, he occupies space completely — elbows on the table, both hands visible (left hand tapping or folded), leaning slightly forward in full attention. When moving through Mama Nkosi's or making collection rounds, he walks slowly and with purpose, never hurrying, never looking rushed. His movements are economical — no wasted motion, everything calculated.",
+    "clothing_style": "Tier 3-4 working professional, deliberately unglamorous. Thick-weave canvas trousers in charcoal or dark tan, often with a subtle stain near the hem from noodle-stall work. Collared shirts in muted colors (cream, pale blue, grey) rolled to mid-forearm to display both his natural hand and prosthetic in equal measure — a deliberate statement. Heavy canvas jackets with too many interior pockets, the kind a tradesman or accountant would wear. No logos, no chrome, no flash. Worn leather shoes with good soles, replaced annually. A small brass compass worn on a chain inside his shirt — not visible, but he touches it unconsciously when making decisions. Everything maintained, nothing fashionable."
   },
   "image_prompt": "Juno Balogun, a contemplative man in his late forties of mixed global heritage with deep warm brown skin with golden-amber undertones, seated at a table in a GLMZ noodle stall circa 2226. Close-cropped dark hair with silver threading, thin silver beard framing a broad structured face. His left arm visible displays a matte-black carbon composite prosthetic hand with chrome wrist connector, articulated fingers ready for precise movement, seated beside his natural right hand. Wears a cream collared shirt rolled to mid-forearm, heavy canvas jacket with visible interior pockets, charcoal trousers showing subtle wear. Right hand knuckles bear a thin white scar, left inner wrist shows faint chemical burn marks at the prosthetic interface. Neutral expression, patient calculating gaze, elbows on table in full attention posture. Brass compass chain barely visible at shirt collar. Setting: dim neon-filtered lighting of Great Lakes Metropolitan Zone, condensation on windows behind him, the quiet tension of a man making important decisions. Mood: deliberate, calculated, economical movement. Neo-noir noir aesthetic, worn professional rather than chrome flash. --ar 2:3 --v 6",
   "dalle3_prompt": "",

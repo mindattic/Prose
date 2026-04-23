@@ -19,13 +19,16 @@ public class NpcGenerator
     private readonly DatabaseService db;
     private readonly CharacterRepository charRepo;
     private readonly WorldGraphService graph;
+    private readonly NamePoolService namePool;
 
-    public NpcGenerator(ILlmService llm, DatabaseService db, CharacterRepository charRepo, WorldGraphService graph)
+    public NpcGenerator(ILlmService llm, DatabaseService db, CharacterRepository charRepo,
+        WorldGraphService graph, NamePoolService namePool)
     {
         this.llm = llm;
         this.db = db;
         this.charRepo = charRepo;
         this.graph = graph;
+        this.namePool = namePool;
     }
 
     /// <summary>
@@ -37,16 +40,32 @@ public class NpcGenerator
         string? affiliation = null, CancellationToken ct = default)
     {
         var existingNames = db.Characters.Select(c => c.Name).ToHashSet();
+        var preferredNames = namePool.SamplePreferredNames(40);
+        var usedFirstNames = namePool.SampleUsedFirstNames(60);
 
         var system = """
             You are a character designer for near-future fiction set in GLMZ (2100).
             Create a COMPLETE character. This person is not disposable — they will persist
             in the world and may recur in future stories.
 
+            NAMING RULES — NON-NEGOTIABLE:
+              • GLMZ follows the Ubiquitous Diaspora pattern: mixed heritage from unexpected
+                global combinations. Pair a first name and a surname from DIFFERENT cultural
+                lineages (e.g., Slavic × Vietnamese, Yoruba × Georgian, Tamil × Finnish).
+              • The first name must be UNIQUE in canon — do not reuse any name listed below
+                under USED FIRST NAMES.
+              • FORBIDDEN first names (never use): Sarah, Lee, Bekka, Karen.
+              • Avoid the cyberpunk-generator defaults: Zara, Slate, Echo, Nova, Haze, Atlas,
+                Nyx, Flux, Remi, Kit, Kai, Sage, Rio, Phoenix, Juno, Reed, Rowan, Soren, Mika,
+                Wren, Rune, Orion, Onyx, Lark, Drift, Ash, Ember, Vega, Indigo, Arden, Zephyr,
+                Quinn, Vale, Sterling, Briar. These have been overused.
+              • Prefer names from the PREFERRED NAMES list below, or use other authentic
+                diaspora names of comparable specificity.
+
             Return a JSON object matching this EXACT structure:
             {
               "type": "character",
-              "name": "Full Name (culturally diverse, avoid generic Anglo names)",
+              "name": "First Surname — first name unique in canon, mixed-heritage surname",
               "aliases": ["street name or alias"],
               "gender": "male/female/nonbinary",
               "pronouns": "he/him, she/her, they/them",
@@ -92,7 +111,10 @@ public class NpcGenerator
         var user = $"Create a character for this role: {role}\nContext: {context}" +
             (location != null ? $"\nLocation: {location}" : "") +
             (affiliation != null ? $"\nAffiliation: {affiliation}" : "") +
-            $"\n\nDo NOT use any of these existing names: {string.Join(", ", existingNames.Take(20))}";
+            $"\n\nUSED FIRST NAMES (do NOT reuse any of these as the character's first name):\n  {string.Join(", ", usedFirstNames)}" +
+            (preferredNames.Count > 0
+                ? $"\n\nPREFERRED FIRST NAMES (pick one of these, or a diaspora name of similar specificity):\n  {string.Join(", ", preferredNames)}"
+                : "");
 
         try
         {
@@ -106,7 +128,12 @@ public class NpcGenerator
 
             if (character != null && !string.IsNullOrWhiteSpace(character.Name))
             {
-                // Ensure no name collision
+                // Guarantee first-name uniqueness — swap from pool if LLM picked a colliding
+                // or forbidden first name. Preserves surname, logs swap in aliases[].
+                namePool.EnsureUniqueFirstName(character);
+
+                // Belt-and-suspenders: if the full name still collides (shouldn't, after the
+                // first-name swap above, unless an identical surname is in play), disambiguate.
                 if (existingNames.Contains(character.Name))
                     character.Name += $" ({Random.Shared.Next(100, 999)})";
 

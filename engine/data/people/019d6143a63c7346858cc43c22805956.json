@@ -2,16 +2,19 @@
   "id": "019d6143a63c7346858cc43c22805956",
   "rating": 70,
   "type": "character",
-  "name": "Nova Achebe",
-  "aliases": [],
+  "name": "Daryanaz Achebe",
+  "aliases": [
+    "Nova Achebe",
+    "Nova"
+  ],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Cross-district contraband specialist \u2014 smuggler",
+  "role": "Cross-district contraband specialist — smuggler",
   "age": 39,
   "status": "active",
-  "location": "Kessler Row \u2014 arms dealers and augmentation clinics, near Western and Chicago Ave",
-  "description": "Nova Achebe is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 39, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible \u2014 internal air filtration system \u2014 lungs replaced with synthetic equivalents, immu \u2014 and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate \u2014 low-tier security, the kind that teaches you exactly how the system\u0027s defenses fail. She works as a smuggler out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nEveryone who\u0027s worked with Nova Achebe agrees on two things: she is worth the fee, and she is terrible company at dinner.",
+  "location": "Kessler Row — arms dealers and augmentation clinics, near Western and Chicago Ave",
+  "description": "Nova Achebe is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 39, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a smuggler out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Nova Achebe agrees on two things: she is worth the fee, and she is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -24,36 +27,36 @@
     "core_fears": [
       "That the work they do makes the city worse, not better",
       "Becoming obsolete as augmentation technology outpaces their chrome",
-      "Losing their edge to age \u2014 the body slows before the mind accepts it"
+      "Losing their edge to age — the body slows before the mind accepts it"
     ],
     "core_desires": [
       "To build something that outlasts the next contract cycle",
-      "Freedom from augmentation debt \u2014 the interest compounds like a tumor",
+      "Freedom from augmentation debt — the interest compounds like a tumor",
       "To prove everyone who dismissed them catastrophically wrong"
     ],
     "coping_mechanisms": [
-      "Substances \u2014 stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
-      "Violence \u2014 hits something when they can\u0027t process emotions, preferably something that deserves it",
-      "Connection \u2014 finds someone to talk to, even if it\u0027s a bartender or a cat"
+      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
+      "Violence — hits something when they can't process emotions, preferably something that deserves it",
+      "Connection — finds someone to talk to, even if it's a bartender or a cat"
     ],
     "blind_spots": [
       "Cannot see that their independence is actually isolation wearing a better outfit",
       "Cannot accept help without interpreting it as leverage",
       "Believes their trauma makes them special instead of recognizing it as damage to manage"
     ],
-    "secret": "Kadiatou Kobayashi-Appiah-Kubi can\u0027t read. Hides it behind voice interfaces and memorization. The shame is older than the chrome."
+    "secret": "Kadiatou Kobayashi-Appiah-Kubi can't read. Hides it behind voice interfaces and memorization. The shame is older than the chrome."
   },
   "speech_patterns": {
-    "vocabulary": "Old-fashioned formal diction \u2014 sounds like they learned to speak from pre-collapse recordings.",
-    "cadence": "Rhythmic, almost musical \u2014 the sentence structure has a pattern even when the words are brutal.",
+    "vocabulary": "Old-fashioned formal diction — sounds like they learned to speak from pre-collapse recordings.",
+    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
     "verbal_tics": [
-      "Pauses mid-sentence to listen \u2014 combat habit that bleeds into conversation",
+      "Pauses mid-sentence to listen — combat habit that bleeds into conversation",
       "Uses old pre-collapse slang that nobody else remembers"
     ],
     "example_lines": [
-      "\u0022Contraband is just cargo that hasn\u0027t been properly introduced to the right people.\u0022",
-      "\u0022Every border is a suggestion. Every checkpoint is a negotiation.\u0022",
-      "\u0022I move things from where they are to where they need to be. The legality is your problem.\u0022"
+      "\"Contraband is just cargo that hasn't been properly introduced to the right people.\"",
+      "\"Every border is a suggestion. Every checkpoint is a negotiation.\"",
+      "\"I move things from where they are to where they need to be. The legality is your problem.\""
     ],
     "avoidances": [],
     "subtext": "",
@@ -62,14 +65,14 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A former associate resurfaces with evidence that could destroy Kadiatou Kobayashi-Appiah-Kubi\u0027s reputation \u2014 and a price for silence",
+    "A former associate resurfaces with evidence that could destroy Kadiatou Kobayashi-Appiah-Kubi's reputation — and a price for silence",
     "A high-paying contract turns out to target someone Kadiatou Kobayashi-Appiah-Kubi owes a personal debt to",
-    "A Tier 4 executive offers Kadiatou Kobayashi-Appiah-Kubi a permanent position \u2014 the pay is obscene and the strings are invisible until they tighten"
+    "A Tier 4 executive offers Kadiatou Kobayashi-Appiah-Kubi a permanent position — the pay is obscene and the strings are invisible until they tighten"
   ],
-  "narrative_function": "Kadiatou Kobayashi-Appiah-Kubi is a pressure point \u2014 the kind of character whose choices ripple outward. When she makes a decision, other people\u0027s lives change. That weight is the engine of her stories.",
-  "augmentations": "Internal air filtration system \u2014 lungs replaced with synthetic equivalents, immune to gas attacks. Chemical analyzer in nasal passages \u2014 can identify substances by scent alone",
+  "narrative_function": "Kadiatou Kobayashi-Appiah-Kubi is a pressure point — the kind of character whose choices ripple outward. When she makes a decision, other people's lives change. That weight is the engine of her stories.",
+  "augmentations": "Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks. Chemical analyzer in nasal passages — can identify substances by scent alone",
   "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
-  "affiliation": "Semi-independent \u2014 has standing arrangements with several crews",
+  "affiliation": "Semi-independent — has standing arrangements with several crews",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -161,7 +164,7 @@
       "pain tolerance beyond normal limits"
     ],
     "weaknesses": [
-      "substance dependency \u2014 functional but fragile",
+      "substance dependency — functional but fragile",
       "emotional volatility under extreme stress"
     ],
     "tags": [
@@ -183,12 +186,12 @@
       "Will not betray a client who paid in full, regardless of better offers"
     ],
     "escalation_ladder": [
-      "1. Observe \u2014 gather information before acting",
-      "2. Evade \u2014 avoid the problem entirely if possible",
-      "3. Misdirect \u2014 create a distraction, redirect attention",
-      "4. Disable \u2014 targeted takedowns, quiet and efficient",
-      "5. Eliminate \u2014 when silence is no longer an option",
-      "6. Vanish \u2014 disappear completely, burn identity if necessary"
+      "1. Observe — gather information before acting",
+      "2. Evade — avoid the problem entirely if possible",
+      "3. Misdirect — create a distraction, redirect attention",
+      "4. Disable — targeted takedowns, quiet and efficient",
+      "5. Eliminate — when silence is no longer an option",
+      "6. Vanish — disappear completely, burn identity if necessary"
     ],
     "interpersonal_modes": {
       "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
@@ -198,24 +201,24 @@
     },
     "stress_responses": {
       "low": "Heightened awareness, sharper focus. Low stress is fuel.",
-      "medium": "Physical agitation \u2014 pacing, fidgeting, compulsive equipment checks.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
       "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
       "critical": "Shutdown. Freezes for 2-3 seconds while the system resets, then acts with mechanical precision. Those frozen seconds are the vulnerability."
     },
     "contradictions": [
-      "Advocates caution to others but takes insane risks personally \u2014 double standard they can\u0027t see",
+      "Advocates caution to others but takes insane risks personally — double standard they can't see",
       "Claims to work only for money but regularly takes underpriced jobs that serve personal justice",
-      "Projects confidence but makes decisions from a foundation of fear they\u0027ve never examined"
+      "Projects confidence but makes decisions from a foundation of fear they've never examined"
     ],
     "habits": [
-      "Keeps a physical paper notebook \u2014 no digital record of personal thoughts",
-      "Never drinks anything they didn\u0027t see poured or open themselves",
-      "Carries a specific caliber round as a lucky charm \u2014 has never fired it",
-      "Takes a specific route home every time, varying only one block per trip \u2014 paranoia as lifestyle"
+      "Keeps a physical paper notebook — no digital record of personal thoughts",
+      "Never drinks anything they didn't see poured or open themselves",
+      "Carries a specific caliber round as a lucky charm — has never fired it",
+      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle"
     ],
     "breaking_points": [
       "A child being put in danger as leverage against them",
-      "Being publicly exposed \u2014 name, face, address, all of it blown"
+      "Being publicly exposed — name, face, address, all of it blown"
     ]
   },
   "cyberware_inventory": [
@@ -226,7 +229,7 @@
       "tier": "",
       "condition": "good",
       "installed_date": "",
-      "description": "Internal air filtration system \u2014 lungs replaced with synthetic equivalents, immune to gas attacks",
+      "description": "Internal air filtration system — lungs replaced with synthetic equivalents, immune to gas attacks",
       "replaces": ""
     },
     {
@@ -236,7 +239,7 @@
       "tier": "",
       "condition": "good",
       "installed_date": "",
-      "description": "Chemical analyzer in nasal passages \u2014 can identify substances by scent alone",
+      "description": "Chemical analyzer in nasal passages — can identify substances by scent alone",
       "replaces": ""
     }
   ],
@@ -276,27 +279,27 @@
     "human"
   ],
   "physical_description": {
-    "heritage": "Eastern European (49.3%), Sub-Saharan African (36.5%), South Asian (14.2%) \u2014 a striking diaspora blend. The genetic mixture creates a distinctive phenotype: Eastern European bone structure with Sub-Saharan African melanin richness and warmth, South Asian skin depth, creating a unified complexion with remarkable depth and warmth beneath the surface.",
+    "heritage": "Eastern European (49.3%), Sub-Saharan African (36.5%), South Asian (14.2%) — a striking diaspora blend. The genetic mixture creates a distinctive phenotype: Eastern European bone structure with Sub-Saharan African melanin richness and warmth, South Asian skin depth, creating a unified complexion with remarkable depth and warmth beneath the surface.",
     "height_cm": 168,
     "weight_kg": 78,
-    "build": "Stocky and heavily muscled \u2014 shoulders broad and dense, upper body strength evident. No visible fat; the weight is compact, functional. Forearms thick-boned and corded with scar tissue from years of handling hot equipment and restraint work.",
+    "build": "Stocky and heavily muscled — shoulders broad and dense, upper body strength evident. No visible fat; the weight is compact, functional. Forearms thick-boned and corded with scar tissue from years of handling hot equipment and restraint work.",
     "hair_color": "Natural black with silver streaking at the temples",
     "hair_style": "Pulled back into a tight, practical braid; often wrapped in a dark cloth when working",
     "hair_length": "Medium (shoulder-length when loose)",
-    "eye_color": "Deep brown, natural \u2014 no chrome optics",
-    "skin_tone": "Rich deep brown with warm golden undertones \u2014 a harmonious blend of Eastern European undertones, Sub-Saharan African melanin depth, and South Asian warmth creating a unified, dark complexion that glows with subtle richness beneath surface wear.",
-    "complexion": "Weathered and angular \u2014 high, prominent cheekbones reflecting Eastern European and Sub-Saharan heritage blend, strong defined jaw structure shaped by genetic mixing, a nose that has been broken and reset badly. Minimal cosmetic interest; skin bears the wear of chemical exposure and climate variance across districts. Small burn scars visible along her left temple from old augmentation work. Facial structure shows the distinctive blending of her genetic ancestry \u2014 wide-set eyes with natural depth and warmth, prominent facial bones with the pronounced architecture of both Eastern European and Sub-Saharan African heritage creating distinctive angular definition.",
+    "eye_color": "Deep brown, natural — no chrome optics",
+    "skin_tone": "Rich deep brown with warm golden undertones — a harmonious blend of Eastern European undertones, Sub-Saharan African melanin depth, and South Asian warmth creating a unified, dark complexion that glows with subtle richness beneath surface wear.",
+    "complexion": "Weathered and angular — high, prominent cheekbones reflecting Eastern European and Sub-Saharan heritage blend, strong defined jaw structure shaped by genetic mixing, a nose that has been broken and reset badly. Minimal cosmetic interest; skin bears the wear of chemical exposure and climate variance across districts. Small burn scars visible along her left temple from old augmentation work. Facial structure shows the distinctive blending of her genetic ancestry — wide-set eyes with natural depth and warmth, prominent facial bones with the pronounced architecture of both Eastern European and Sub-Saharan African heritage creating distinctive angular definition.",
     "distinguishing_marks": [
-      "Pale surgical scar running vertically down the center of her chest, approximately 20cm long \u2014 marks the original synthetic lung installation",
-      "Thin, raised scars crossing both forearms in parallel lines \u2014 evidence of restraint experience or early augmentation rejection",
-      "Faint chemical burn discoloration on her right hand (knuckles and palm), lighter than her natural skin tone \u2014 occupational hazard",
-      "A crude tattoo on her left inner wrist: a smuggler\u0027s mark (vertical line with three horizontal crosses) \u2014 gang affiliation from early career"
+      "Pale surgical scar running vertically down the center of her chest, approximately 20cm long — marks the original synthetic lung installation",
+      "Thin, raised scars crossing both forearms in parallel lines — evidence of restraint experience or early augmentation rejection",
+      "Faint chemical burn discoloration on her right hand (knuckles and palm), lighter than her natural skin tone — occupational hazard",
+      "A crude tattoo on her left inner wrist: a smuggler's mark (vertical line with three horizontal crosses) — gang affiliation from early career"
     ],
-    "visible_augmentations": "Synthetic lung visible as faint metallic sheen and geometric microcircuitry visible beneath the skin around her sternum and upper chest where the surgical scar runs. When she breathes deeply, a subtle mechanical whisper is audible. Chrome plating around her nasal passages when viewed closely \u2014 the chemical analyzer hardware creates a slight reflective distortion around her septum.",
-    "posture_movement": "Moves with economical precision \u2014 no wasted motion. Shoulders slightly forward, hands rarely still. Walks heel-first, a runner\u0027s gait. Often stands with weight on her back foot, body angled to keep her peripheral vision open. Her baseline expression is a slight frown; she smiles rarely and without warmth.",
-    "clothing_style": "Tier 3-4 utilitarian \u2014 functional, not fashionable. Favors reinforced cargo pants (gray or dark blue, Raven Manufacturing), layered tops that allow for concealment of gear, and a heavy jacket of synthetic leather with internal pockets and burn-resistant lining. Steel-toed boots, scuffed and well-maintained. No jewelry or decoration. Clothing is frequently stained with machine oil or chemical residue; she replaces items only when they become unsafe."
+    "visible_augmentations": "Synthetic lung visible as faint metallic sheen and geometric microcircuitry visible beneath the skin around her sternum and upper chest where the surgical scar runs. When she breathes deeply, a subtle mechanical whisper is audible. Chrome plating around her nasal passages when viewed closely — the chemical analyzer hardware creates a slight reflective distortion around her septum.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Shoulders slightly forward, hands rarely still. Walks heel-first, a runner's gait. Often stands with weight on her back foot, body angled to keep her peripheral vision open. Her baseline expression is a slight frown; she smiles rarely and without warmth.",
+    "clothing_style": "Tier 3-4 utilitarian — functional, not fashionable. Favors reinforced cargo pants (gray or dark blue, Raven Manufacturing), layered tops that allow for concealment of gear, and a heavy jacket of synthetic leather with internal pockets and burn-resistant lining. Steel-toed boots, scuffed and well-maintained. No jewelry or decoration. Clothing is frequently stained with machine oil or chemical residue; she replaces items only when they become unsafe."
   },
-  "image_prompt": "Nova Achebe, 2226 neo-noir, 168cm stocky muscular woman with rich deep brown skin and warm golden undertones blending Eastern European, Sub-Saharan African, and South Asian ancestry. Natural deep brown eyes, black hair with silver temples pulled into tight braid. Weathered angular face with prominent cheekbones, broken nose reset badly, high facial definition. Visible 20cm pale surgical scar down center of chest from synthetic lung installation, faint metallic sheen and microcircuitry visible around sternum. Small burn scars left temple. Chemical burn discoloration right hand lighter than skin tone. Crude smuggler\u0027s tattoo left inner wrist. Chrome plating visible around nasal passages from chemical analyzer augmentation. Muscular corded forearms with parallel restraint scars. Moves with economical precision, shoulders forward, slight frown baseline expression. Wearing reinforced gray cargo pants, layered utilitarian tops, heavy synthetic leather jacket with burn-resistant lining stained with machine oil, steel-toed scuffed boots. No jewelry. Standing in industrial facility with dramatic neon lighting, cool blues and oranges, mechanical whisper of synthetic lungs audible, peripheral vision open tactical stance, GLMZ 2200s gritty aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Nova Achebe, 2226 neo-noir, 168cm stocky muscular woman with rich deep brown skin and warm golden undertones blending Eastern European, Sub-Saharan African, and South Asian ancestry. Natural deep brown eyes, black hair with silver temples pulled into tight braid. Weathered angular face with prominent cheekbones, broken nose reset badly, high facial definition. Visible 20cm pale surgical scar down center of chest from synthetic lung installation, faint metallic sheen and microcircuitry visible around sternum. Small burn scars left temple. Chemical burn discoloration right hand lighter than skin tone. Crude smuggler's tattoo left inner wrist. Chrome plating visible around nasal passages from chemical analyzer augmentation. Muscular corded forearms with parallel restraint scars. Moves with economical precision, shoulders forward, slight frown baseline expression. Wearing reinforced gray cargo pants, layered utilitarian tops, heavy synthetic leather jacket with burn-resistant lining stained with machine oil, steel-toed scuffed boots. No jewelry. Standing in industrial facility with dramatic neon lighting, cool blues and oranges, mechanical whisper of synthetic lungs audible, peripheral vision open tactical stance, GLMZ 2200s gritty aesthetic --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "Eastern European": 49.3,

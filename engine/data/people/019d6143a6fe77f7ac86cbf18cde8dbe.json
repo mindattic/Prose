@@ -2,8 +2,11 @@
   "id": "019d6143a6fe77f7ac86cbf18cde8dbe",
   "rating": 80,
   "type": "character",
-  "name": "Kai Amrani-Halverson",
-  "aliases": [],
+  "name": "Ashvin Amrani-Halverson",
+  "aliases": [
+    "Kai Amrani-Halverson",
+    "Kai"
+  ],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -11,7 +14,7 @@
   "age": 22,
   "status": "active",
   "location": "The Narrows, running between Chatham Flats and Grand Crossing Gate, near Ashland and Division",
-  "description": "Kai Amrani-Halverson is young in a way that still surprises people when they see the operation he runs \u2014 twenty-two with the face of someone seventeen if he\u0027s relaxed and thirty if he\u0027s working, a long-limbed Igbo-Greek-Hungarian mix with deep brown skin, an expressive mouth that defaults to a salesperson\u0027s easy grin, and eyes that are doing financial calculations behind whatever expression he\u0027s performing. He keeps his hair grown out into a soft cloud that he touches when thinking, and he has purely cosmetic cat ears in deep amber \u2014 a mod he got at sixteen and still maintains because they genuinely help him gauge crowd mood at events (they swivel toward sound, a secondary function the modder threw in for free). He dresses up \u2014 always, even when it\u0027s unnecessary, because he understood early that clothes are information.\n\nKai Amrani-Halverson runs numbers for the Chatham Flats syndicate and manages his own secondary book on the side, a fact the syndicate suspects but hasn\u0027t confirmed. He is fast \u2014 fast with numbers, fast with people, fast with exits \u2014 and he has the particular gift of making everyone feel like his most valued client while simultaneously extracting the maximum from them. He is not cynical about this; he genuinely likes people, the way a card player likes cards. He is also genuinely frightened, most of the time, because he is twenty-two and running credit for people who will break his hands if the math goes wrong, and the math going wrong is always one bad fight result away.",
+  "description": "Kai Amrani-Halverson is young in a way that still surprises people when they see the operation he runs — twenty-two with the face of someone seventeen if he's relaxed and thirty if he's working, a long-limbed Igbo-Greek-Hungarian mix with deep brown skin, an expressive mouth that defaults to a salesperson's easy grin, and eyes that are doing financial calculations behind whatever expression he's performing. He keeps his hair grown out into a soft cloud that he touches when thinking, and he has purely cosmetic cat ears in deep amber — a mod he got at sixteen and still maintains because they genuinely help him gauge crowd mood at events (they swivel toward sound, a secondary function the modder threw in for free). He dresses up — always, even when it's unnecessary, because he understood early that clothes are information.\n\nKai Amrani-Halverson runs numbers for the Chatham Flats syndicate and manages his own secondary book on the side, a fact the syndicate suspects but hasn't confirmed. He is fast — fast with numbers, fast with people, fast with exits — and he has the particular gift of making everyone feel like his most valued client while simultaneously extracting the maximum from them. He is not cynical about this; he genuinely likes people, the way a card player likes cards. He is also genuinely frightened, most of the time, because he is twenty-two and running credit for people who will break his hands if the math goes wrong, and the math going wrong is always one bad fight result away.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -22,36 +25,36 @@
       "ghost": 0.2
     },
     "core_fears": [
-      "the syndicate discovering his secondary book before he\u0027s big enough to buy his independence",
-      "being physically hurt \u2014 he has a deep and specific fear of pain he considers shameful"
+      "the syndicate discovering his secondary book before he's big enough to buy his independence",
+      "being physically hurt — he has a deep and specific fear of pain he considers shameful"
     ],
     "core_desires": [
-      "to be independent \u2014 his own operation, nobody\u0027s employee",
+      "to be independent — his own operation, nobody's employee",
       "to be genuinely respected rather than liked, which he suspects are different things"
     ],
     "coping_mechanisms": [
       "charm and humor as deflection",
-      "constant motion \u2014 if he\u0027s moving he feels safer",
+      "constant motion — if he's moving he feels safer",
       "compulsive probability calculation applied to all situations including social ones"
     ],
     "blind_spots": [
       "underestimates how much people like him versus respect him, and how that gap could be exploited",
       "believes his math is always right even when his data is wrong"
     ],
-    "secret": "He has been quietly skimming the Chatham syndicate\u0027s book by fractional rounding errors \u2014 fractions too small to notice individually, substantial over volume \u2014 and has accumulated nearly \u03A64,000 in a hidden account he intends to use as seed money to go independent"
+    "secret": "He has been quietly skimming the Chatham syndicate's book by fractional rounding errors — fractions too small to notice individually, substantial over volume — and has accumulated nearly Φ4,000 in a hidden account he intends to use as seed money to go independent"
   },
   "speech_patterns": {
     "vocabulary": "quick and street-inflected, numerical metaphors everywhere, mixes Igbo terms of address with Greek exclamations he picked up from his yiayia",
     "cadence": "fast, overlapping itself, ideas arriving faster than sentences can contain them",
     "verbal_tics": [
-      "\u0027The line is the line, yeah?\u0027",
+      "'The line is the line, yeah?'",
       "re-explains odds even when nobody asked",
-      "\u0027Malakas, that\u0027s not how probability works\u0027",
-      "calls everyone \u0027boss\u0027 regardless of actual hierarchy"
+      "'Malakas, that's not how probability works'",
+      "calls everyone 'boss' regardless of actual hierarchy"
     ],
     "example_lines": [
-      "\u0027Look, I\u0027m not saying the Ironvein Rippers can\u0027t win \u2014 I\u0027m saying at these odds, your \u03A620 bet needs them to win, not just not lose badly, you feel the difference? You want that action or do you want to make money?\u0027",
-      "\u0027Boss, I like you, which is why I\u0027m telling you \u2014 take the under. The line\u0027s wrong and I know why and I can\u0027t tell you why but trust the math.\u0027"
+      "'Look, I'm not saying the Ironvein Rippers can't win — I'm saying at these odds, your Φ20 bet needs them to win, not just not lose badly, you feel the difference? You want that action or do you want to make money?'",
+      "'Boss, I like you, which is why I'm telling you — take the under. The line's wrong and I know why and I can't tell you why but trust the math.'"
     ],
     "avoidances": [],
     "subtext": "",
@@ -60,12 +63,12 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A result was fixed without Tobi being told \u2014 he took heavy action on the wrong side and now owes the syndicate more than he has, and the skimmed account is his only way out, which means his secret comes out",
-    "He has accidentally taken a bet from someone who cannot lose \u2014 a Tessera corp-sec captain who will make the result come out correctly regardless of what happens \u2014 and now Tobi knows something dangerous"
+    "A result was fixed without Tobi being told — he took heavy action on the wrong side and now owes the syndicate more than he has, and the skimmed account is his only way out, which means his secret comes out",
+    "He has accidentally taken a bet from someone who cannot lose — a Tessera corp-sec captain who will make the result come out correctly regardless of what happens — and now Tobi knows something dangerous"
   ],
   "narrative_function": "Information source (knows who owes who across the Narrows criminal economy), local color, potential quest giver when his secondary book gets him in trouble, comic-tragic figure of young ambition overreaching",
   "augmentations": "Cosmetic cat ears (amber, sound-swivel enabled), subdermal quick-calc implant for rapid probability calculation, retinal display overlay for live odds management",
-  "daily_life": "Spends mornings collecting prior-day settlements and making payouts across a circuit of Chatham Flats to Grand Crossing Gate; afternoons taking new action; evenings at whatever venue has the highest-traffic betting event \u2014 fights, racing, corporate sports feeds.",
+  "daily_life": "Spends mornings collecting prior-day settlements and making payouts across a circuit of Chatham Flats to Grand Crossing Gate; afternoons taking new action; evenings at whatever venue has the highest-traffic betting event — fights, racing, corporate sports feeds.",
   "affiliation": "Chatham Flats syndicate (numbers runner, salaried), independent secondary book (unsanctioned)",
   "uses_facets": false,
   "narration_voice": "",
@@ -110,13 +113,13 @@
   "behavioral": {
     "decision_rules": [
       "always know two exits from every room",
-      "never extend credit past what he can personally absorb \u2014 except when he does",
+      "never extend credit past what he can personally absorb — except when he does",
       "keep everyone feeling good even when delivering bad news"
     ],
     "escalation_ladder": [
       "charm and redirection",
       "invoking syndicate backing as implied threat",
-      "running \u2014 literal physical running",
+      "running — literal physical running",
       "desperate negotiation while running"
     ],
     "interpersonal_modes": {
@@ -126,11 +129,11 @@
     "stress_responses": {
       "low": "talks faster and funnier",
       "medium": "goes very still and very quiet, which frightens people who know him",
-      "high": "makes a joke that doesn\u0027t land and then looks genuinely young and scared"
+      "high": "makes a joke that doesn't land and then looks genuinely young and scared"
     },
     "contradictions": [
       "presents as fearless risk-taker while being privately terrified of pain and confrontation",
-      "insists he\u0027s loyal to the syndicate while systematically stealing from them"
+      "insists he's loyal to the syndicate while systematically stealing from them"
     ],
     "habits": [
       "touches his cat ears when calculating something difficult",
@@ -144,33 +147,33 @@
   },
   "cyberware_inventory": [
     {
-      "name": "Cosmetic cat ears \u2014 amber, with active sound-swivel",
+      "name": "Cosmetic cat ears — amber, with active sound-swivel",
       "body_location": "",
       "manufacturer": "",
       "tier": "",
       "condition": "functional",
       "installed_date": "",
-      "description": "Cosmetic cat ears \u2014 amber, with active sound-swivel",
+      "description": "Cosmetic cat ears — amber, with active sound-swivel",
       "replaces": ""
     },
     {
-      "name": "Subdermal quick-calc implant \u2014 probability calculation assist",
+      "name": "Subdermal quick-calc implant — probability calculation assist",
       "body_location": "",
       "manufacturer": "",
       "tier": "",
       "condition": "functional",
       "installed_date": "",
-      "description": "Subdermal quick-calc implant \u2014 probability calculation assist",
+      "description": "Subdermal quick-calc implant — probability calculation assist",
       "replaces": ""
     },
     {
-      "name": "Retinal display overlay \u2014 live odds management interface",
+      "name": "Retinal display overlay — live odds management interface",
       "body_location": "",
       "manufacturer": "",
       "tier": "",
       "condition": "functional",
       "installed_date": "",
-      "description": "Retinal display overlay \u2014 live odds management interface",
+      "description": "Retinal display overlay — live odds management interface",
       "replaces": ""
     }
   ],
@@ -236,7 +239,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "2200: Current \u2014 managing escalating risk as secondary book grows and skimming total approaches dangerous threshold",
+      "event": "2200: Current — managing escalating risk as secondary book grows and skimming total approaches dangerous threshold",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -249,23 +252,23 @@
     "human"
   ],
   "physical_description": {
-    "heritage": "Kaleidoscopic diaspora blend: Southeast Asian (34.6%) forms the foundational phenotype with soft facial geometry and warm undertones; North African (24.1%) adds sharp definition to the jawline and prominent cheekbone structure; Hispanic/Latin American (22.3%) contributes golden warmth and luminosity throughout the complexion; Northern European (19.0%) provides fine-featured balance and lighter undertones that create subtle complexity in skin depth. The result is a warm medium-to-deep brown with honey-to-amber shifts depending on light \u2014 a truly global phenotype that reads as \u0027everywhere and nowhere\u0027 simultaneously.",
+    "heritage": "Kaleidoscopic diaspora blend: Southeast Asian (34.6%) forms the foundational phenotype with soft facial geometry and warm undertones; North African (24.1%) adds sharp definition to the jawline and prominent cheekbone structure; Hispanic/Latin American (22.3%) contributes golden warmth and luminosity throughout the complexion; Northern European (19.0%) provides fine-featured balance and lighter undertones that create subtle complexity in skin depth. The result is a warm medium-to-deep brown with honey-to-amber shifts depending on light — a truly global phenotype that reads as 'everywhere and nowhere' simultaneously.",
     "height_cm": 183,
     "weight_kg": 68,
-    "build": "Long-limbed and lean with minimal muscle definition; the physique of someone who moves constantly but doesn\u0027t lift \u2014 all angles and nervous energy, built for speed and slipping through crowds rather than standing ground",
+    "build": "Long-limbed and lean with minimal muscle definition; the physique of someone who moves constantly but doesn't lift — all angles and nervous energy, built for speed and slipping through crowds rather than standing ground",
     "hair_color": "Natural dark brown with slight reddish undertone",
     "hair_style": "Soft, voluminous natural cloud; kept deliberately untamed, often touched unconsciously when concentrating or calculating",
     "hair_length": "Medium (8-10cm when fully grown out)",
     "eye_color": "Deep brown with faint retinal display overlay visible as subtle iridescent shimmer in bright light",
     "skin_tone": "Warm medium-to-deep brown with honey-to-amber undertones; the luminous complexion shifts subtly with light angle, reflecting the sophisticated blend of Southeast Asian base, North African definition, Latin warmth, and Northern European fine detailing",
-    "complexion": "Youthful face with balanced structure \u2014 soft cheekbone geometry (Southeast Asian influence) counterbalanced by sharp, defined jawline (North African and Latin heritage); fine features with slight width through the face (Northern European trace); expressive mouth and bright, calculating eyes; skin clear and well-maintained; a softness around the eyes that contradicts the calculating sharpness behind them when working",
+    "complexion": "Youthful face with balanced structure — soft cheekbone geometry (Southeast Asian influence) counterbalanced by sharp, defined jawline (North African and Latin heritage); fine features with slight width through the face (Northern European trace); expressive mouth and bright, calculating eyes; skin clear and well-maintained; a softness around the eyes that contradicts the calculating sharpness behind them when working",
     "distinguishing_marks": [
       "Cosmetic amber cat ears mounted subdermal at temples, fully articulated and sound-reactive; they swivel independently toward noise sources",
       "Faint scar tissue along left inner wrist from early implant installation (subdermal quick-calc), barely visible but noticeable up close"
     ],
     "visible_augmentations": "Amber cat ears are immediately obvious and intentional; retinal display overlay only visible in certain lighting angles as a faint iridescent flicker. The subdermal quick-calc implant is completely invisible.",
-    "posture_movement": "Constantly in motion \u2014 fidgeting, weight shifting, fingers moving through rapid counting gestures even when empty-handed. When relaxed, he appears seventeen: slouched, open-faced, boyish. When working, his spine straightens, his expression hardens into focused calculation, and he appears five to ten years older. His movements are fluid and economical; he never wastes motion but creates the impression of casual ease.",
-    "clothing_style": "High-tier Chatham Flats casual: tailored but not formal. Recent \u03A62,400-3,200 investment pieces \u2014 smart-fabric shirts that shift subtle iridescence, fitted synthlinen slacks in charcoal or deep blue, vintage leather blazers from early-2200s stock (a status marker in the Narrows). Always wears a chain bracelet of mixed metals (gold, silver, chrome) \u2014 a gift from his first major score, never removed. Shoes are always pristine: current rotation is high-end synth-leather street runners in black or deep gray. The overall effect is carefully curated to signal: young, successful, trustworthy, and smart enough to know how much to spend without looking desperate."
+    "posture_movement": "Constantly in motion — fidgeting, weight shifting, fingers moving through rapid counting gestures even when empty-handed. When relaxed, he appears seventeen: slouched, open-faced, boyish. When working, his spine straightens, his expression hardens into focused calculation, and he appears five to ten years older. His movements are fluid and economical; he never wastes motion but creates the impression of casual ease.",
+    "clothing_style": "High-tier Chatham Flats casual: tailored but not formal. Recent Φ2,400-3,200 investment pieces — smart-fabric shirts that shift subtle iridescence, fitted synthlinen slacks in charcoal or deep blue, vintage leather blazers from early-2200s stock (a status marker in the Narrows). Always wears a chain bracelet of mixed metals (gold, silver, chrome) — a gift from his first major score, never removed. Shoes are always pristine: current rotation is high-end synth-leather street runners in black or deep gray. The overall effect is carefully curated to signal: young, successful, trustworthy, and smart enough to know how much to spend without looking desperate."
   },
   "image_prompt": "Kai Amrani-Halverson, 183cm tall lean neo-noir figure with warm medium-deep brown skin with honey-amber undertones, soft Southeast Asian facial geometry balanced with sharp North African jawline definition, expressive deep brown eyes with faint retinal display shimmer, natural dark brown voluminous cloud hair with reddish undertone. Articulated amber cat ears mounted at temples, sound-reactive and swiveling. Wearing tailored smart-fabric shirt with subtle iridescence, charcoal synthlinen slacks, vintage early-2200s leather blazer, pristine black synth-leather runners, mixed-metal chain bracelet. Fidgeting posture with nervous energy, fingers making rapid counting gestures, boyish open expression. Chatham Flats setting, neon-lit urban environment, GLMZ Great Lakes Metropolitan Zone, moody evening lighting with accent light catching iridescent details and cat ear articulation, confident young hacker aesthetic --ar 2:3 --v 6",
   "dalle3_prompt": "",

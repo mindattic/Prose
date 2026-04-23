@@ -3,16 +3,19 @@
   "rating": 70,
   "vote_count": 1,
   "type": "character",
-  "name": "Reed Lewandowski-Hossain",
-  "aliases": [],
+  "name": "Apolo Lewandowski-Hossain",
+  "aliases": [
+    "Reed Lewandowski-Hossain",
+    "Reed"
+  ],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Prototype theft and corporate tech acquisition \u2014 tech retriever",
+  "role": "Prototype theft and corporate tech acquisition — tech retriever",
   "age": 25,
   "status": "active",
-  "location": "Steamvent Alley \u2014 geothermal district, hot and chemical-smelling, near Milwaukee and North Ave",
-  "description": "Reed Lewandowski-Hossain is compact and densely muscled, built low to the ground like something designed to survive impacts. At 25, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible \u2014 wired reflexes with adrenaline pump \u2014 chemical-mechanical hybrid augmentation \u2014 and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago \u2014 the mentor\u0027s gear, contacts, and unfinished business all came with it. He works as a tech retriever out of Steamvent Alley, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nReed Lewandowski-Hossain has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
+  "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near Milwaukee and North Ave",
+  "description": "Reed Lewandowski-Hossain is compact and densely muscled, built low to the ground like something designed to survive impacts. At 25, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a tech retriever out of Steamvent Alley, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nReed Lewandowski-Hossain has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.45,
@@ -23,38 +26,38 @@
       "ghost": 0.51
     },
     "core_fears": [
-      "Going cyberpsycho \u2014 losing the boundary between human and machine",
-      "Losing their edge to age \u2014 the body slows before the mind accepts it",
-      "Their past catching up \u2014 debts, enemies, broken promises"
+      "Going cyberpsycho — losing the boundary between human and machine",
+      "Losing their edge to age — the body slows before the mind accepts it",
+      "Their past catching up — debts, enemies, broken promises"
     ],
     "core_desires": [
       "To matter to someone for who they are, not what they can do",
-      "Enough Quanta to buy out of the life \u2014 a clean identity and passage out of GLMZ",
-      "Knowledge \u2014 to understand the systems that grind people down"
+      "Enough Quanta to buy out of the life — a clean identity and passage out of GLMZ",
+      "Knowledge — to understand the systems that grind people down"
     ],
     "coping_mechanisms": [
-      "Denial \u2014 nothing is wrong, everything is fine, they are fine, shut up",
-      "Substances \u2014 stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
-      "Exercises compulsively \u2014 the body must be ready, always"
+      "Denial — nothing is wrong, everything is fine, they are fine, shut up",
+      "Substances — stims to stay sharp, downers to sleep, a careful pharmaceutical tightrope",
+      "Exercises compulsively — the body must be ready, always"
     ],
     "blind_spots": [
-      "Thinks speed can substitute for planning because it\u0027s worked so far",
-      "Refuses to update their mental model of people \u2014 first impressions calcify into permanent judgments",
+      "Thinks speed can substitute for planning because it's worked so far",
+      "Refuses to update their mental model of people — first impressions calcify into permanent judgments",
       "Assumes their skill set is more transferable than it actually is"
     ],
-    "secret": "Suki Ekberg-Asare betrayed their previous crew to survive a corporate raid. The crew didn\u0027t survive. Nobody in GLMZ knows this."
+    "secret": "Suki Ekberg-Asare betrayed their previous crew to survive a corporate raid. The crew didn't survive. Nobody in GLMZ knows this."
   },
   "speech_patterns": {
     "vocabulary": "Flat affect, monotone delivery. The content is terrifying but the voice never rises.",
-    "cadence": "Rhythmic, almost musical \u2014 the sentence structure has a pattern even when the words are brutal.",
+    "cadence": "Rhythmic, almost musical — the sentence structure has a pattern even when the words are brutal.",
     "verbal_tics": [
-      "Calls everyone \u0027friend\u0027 \u2014 the warmth varies from genuine to threatening",
-      "Never uses contractions when lying \u2014 \u0027I did not\u0027 instead of \u0027I didn\u0027t\u0027"
+      "Calls everyone 'friend' — the warmth varies from genuine to threatening",
+      "Never uses contractions when lying — 'I did not' instead of 'I didn't'"
     ],
     "example_lines": [
-      "\u0022Corporate R\u0026D security is built to stop amateurs. I\u0027m a professional.\u0022",
-      "\u0022The prototype is worth more than both our lives combined. Handle it carefully.\u0022",
-      "\u0022I steal things that haven\u0027t been invented yet. The future is always in transit.\u0022"
+      "\"Corporate R&D security is built to stop amateurs. I'm a professional.\"",
+      "\"The prototype is worth more than both our lives combined. Handle it carefully.\"",
+      "\"I steal things that haven't been invented yet. The future is always in transit.\""
     ],
     "avoidances": [],
     "subtext": "",
@@ -63,14 +66,14 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A dead drop Suki Ekberg-Asare maintains is found and cleaned out \u2014 whoever did it now has leverage",
-    "A Tier 4 executive offers Suki Ekberg-Asare a permanent position \u2014 the pay is obscene and the strings are invisible until they tighten",
-    "Suki Ekberg-Asare is offered a contract that would clear all their debts \u2014 the target is someone they respect"
+    "A dead drop Suki Ekberg-Asare maintains is found and cleaned out — whoever did it now has leverage",
+    "A Tier 4 executive offers Suki Ekberg-Asare a permanent position — the pay is obscene and the strings are invisible until they tighten",
+    "Suki Ekberg-Asare is offered a contract that would clear all their debts — the target is someone they respect"
   ],
   "narrative_function": "As a tech retriever, Suki Ekberg-Asare embodies the tension between independence and isolation. He is a lens for examining how people maintain humanity in a profession that incentivizes its erosion.",
-  "augmentations": "Wired reflexes with adrenaline pump \u2014 chemical-mechanical hybrid augmentation. Cybernetic arm \u2014 right, full replacement from shoulder \u2014 stronger than organic, obvious chrome",
+  "augmentations": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation. Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome",
   "daily_life": "Wakes early, runs maintenance on gear, checks dead drops and message boards for contracts. Eats when convenient, sleeps when possible. The days between jobs are spent maintaining contacts, updating equipment, and performing the low-grade paranoia that passes for self-care in the runner community.",
-  "affiliation": "Freelance \u2014 works the Gray Zone circuit exclusively",
+  "affiliation": "Freelance — works the Gray Zone circuit exclusively",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -159,10 +162,10 @@
     },
     "strengths": [
       "photographic memory for faces and layouts",
-      "social chameleon \u2014 adapts to any environment"
+      "social chameleon — adapts to any environment"
     ],
     "weaknesses": [
-      "augmentation dependency \u2014 performance drops sharply if chrome malfunctions",
+      "augmentation dependency — performance drops sharply if chrome malfunctions",
       "old injury that flares under specific conditions"
     ],
     "tags": [
@@ -179,19 +182,19 @@
   "behavioral": {
     "decision_rules": [
       "Will take lower-paying jobs from trusted fixers over higher-paying jobs from unknowns",
-      "Never works with the same crew twice in a row \u2014 pattern avoidance as survival strategy",
+      "Never works with the same crew twice in a row — pattern avoidance as survival strategy",
       "Will work with anyone once. Second time requires vouching from someone trusted.",
       "Always has an exit route planned before agreeing to any meeting",
-      "Will abandon a job if the intel was deliberately falsified \u2014 being set up violates the contract",
-      "Always demands half payment upfront \u2014 trust is a luxury, Quanta is concrete"
+      "Will abandon a job if the intel was deliberately falsified — being set up violates the contract",
+      "Always demands half payment upfront — trust is a luxury, Quanta is concrete"
     ],
     "escalation_ladder": [
-      "1. De-escalate \u2014 talk first, assess options, buy time",
-      "2. Reposition \u2014 move to advantage, control sightlines and exits",
-      "3. Threaten \u2014 make consequences clear without committing to them",
-      "4. Non-lethal force \u2014 incapacitate, restrain, disable",
-      "5. Lethal force \u2014 only when other options are exhausted or time runs out",
-      "6. Scorched earth \u2014 everything burns, survival takes priority over everything"
+      "1. De-escalate — talk first, assess options, buy time",
+      "2. Reposition — move to advantage, control sightlines and exits",
+      "3. Threaten — make consequences clear without committing to them",
+      "4. Non-lethal force — incapacitate, restrain, disable",
+      "5. Lethal force — only when other options are exhausted or time runs out",
+      "6. Scorched earth — everything burns, survival takes priority over everything"
     ],
     "interpersonal_modes": {
       "employers": "Guarded respect. They pay, the job gets done. Anything beyond that is liability.",
@@ -201,7 +204,7 @@
     },
     "stress_responses": {
       "low": "Becomes more talkative, working through scenarios verbally.",
-      "medium": "Physical agitation \u2014 pacing, fidgeting, compulsive equipment checks.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
       "high": "Controlled aggression. The training takes over. Emotions are packed into a box for later.",
       "critical": "Disassociation. The body operates on training while the mind retreats to somewhere safe. Comes back disoriented."
     },
@@ -212,11 +215,11 @@
     "habits": [
       "Checks exits within 10 seconds of entering any room",
       "Maintains a dead drop with emergency supplies in three separate districts",
-      "Arrives fifteen minutes early to everything \u2014 late once, nearly died, never again",
-      "Taps a specific rhythm on hard surfaces when thinking \u2014 Morse code for a word they won\u0027t say"
+      "Arrives fifteen minutes early to everything — late once, nearly died, never again",
+      "Taps a specific rhythm on hard surfaces when thinking — Morse code for a word they won't say"
     ],
     "breaking_points": [
-      "Being publicly exposed \u2014 name, face, address, all of it blown",
+      "Being publicly exposed — name, face, address, all of it blown",
       "Discovering their employer deliberately sent them into a death trap"
     ]
   },
@@ -228,7 +231,7 @@
       "tier": "",
       "condition": "pristine",
       "installed_date": "",
-      "description": "Wired reflexes with adrenaline pump \u2014 chemical-mechanical hybrid augmentation",
+      "description": "Wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation",
       "replaces": ""
     },
     {
@@ -238,7 +241,7 @@
       "tier": "",
       "condition": "degraded",
       "installed_date": "",
-      "description": "Cybernetic arm \u2014 right, full replacement from shoulder \u2014 stronger than organic, obvious chrome",
+      "description": "Cybernetic arm — right, full replacement from shoulder — stronger than organic, obvious chrome",
       "replaces": ""
     }
   ],
@@ -279,24 +282,24 @@
     "human"
   ],
   "physical_description": {
-    "heritage": "Striking blend of Eastern European (40.4%), South Asian (37.4%), Northern European (18.1%), and Sub-Saharan African (4.1%) ancestry. Eastern European bone structure and base complexion provide foundational features, while substantial South Asian ancestry contributes warm undertones, eye depth, and facial proportions. Northern European elements create cool counterpoints and lighter overall tone. Trace Sub-Saharan African heritage adds subtle warmth and richness to skin undertones. The result is a sophisticated, balanced phenotype \u2014 warm medium brown with complex golden-olive undertones and cooler notes, neither pale nor deeply saturated.",
+    "heritage": "Striking blend of Eastern European (40.4%), South Asian (37.4%), Northern European (18.1%), and Sub-Saharan African (4.1%) ancestry. Eastern European bone structure and base complexion provide foundational features, while substantial South Asian ancestry contributes warm undertones, eye depth, and facial proportions. Northern European elements create cool counterpoints and lighter overall tone. Trace Sub-Saharan African heritage adds subtle warmth and richness to skin undertones. The result is a sophisticated, balanced phenotype — warm medium brown with complex golden-olive undertones and cooler notes, neither pale nor deeply saturated.",
     "height_cm": 167,
     "weight_kg": 72,
-    "build": "Compact and densely muscled, low center of gravity \u2014 built for impact absorption and explosive movement rather than reach. Shoulders broad relative to frame, legs thick and powerful.",
+    "build": "Compact and densely muscled, low center of gravity — built for impact absorption and explosive movement rather than reach. Shoulders broad relative to frame, legs thick and powerful.",
     "hair_color": "Black, natural",
     "hair_style": "Closely cropped, functional, minimal styling",
     "hair_length": "Short",
     "eye_color": "Dark brown, natural",
-    "skin_tone": "Medium warm brown with golden-olive and cool undertones \u2014 the natural result of Eastern European and Northern European base with significant South Asian warmth and trace Sub-Saharan African depth. Complexion ranges from light tan to warm bronze depending on light, carrying both golden and subtle cooler notes. Skin shows refined clarity typical of Eastern European heritage enhanced by South Asian depth.",
-    "complexion": "Strong, defined facial structure with prominent cheekbones and straight nose bridge showing Eastern European influence, balanced by South Asian eye depth and warm undertones. Facial contours carry subtle warmth from mixed ancestry. Skin shows weathering from chemical exposure in Steamvent Alley \u2014 slight discoloration around left temple and jawline from ambient pollution. Clean-shaven, minimal grooming beyond necessity.",
+    "skin_tone": "Medium warm brown with golden-olive and cool undertones — the natural result of Eastern European and Northern European base with significant South Asian warmth and trace Sub-Saharan African depth. Complexion ranges from light tan to warm bronze depending on light, carrying both golden and subtle cooler notes. Skin shows refined clarity typical of Eastern European heritage enhanced by South Asian depth.",
+    "complexion": "Strong, defined facial structure with prominent cheekbones and straight nose bridge showing Eastern European influence, balanced by South Asian eye depth and warm undertones. Facial contours carry subtle warmth from mixed ancestry. Skin shows weathering from chemical exposure in Steamvent Alley — slight discoloration around left temple and jawline from ambient pollution. Clean-shaven, minimal grooming beyond necessity.",
     "distinguishing_marks": [
-      "Faint chemical burn scars along left side of neck and upper chest \u2014 pale against warm brown skin, barely raised, from industrial accident or extraction gone wrong",
-      "Surgical scar tissue where right arm connects at shoulder \u2014 visible chrome interface point, slightly raised and darker than surrounding skin",
-      "Small tattoo on inner left wrist \u2014 minimalist circuit pattern, functional marker rather than artistic statement"
+      "Faint chemical burn scars along left side of neck and upper chest — pale against warm brown skin, barely raised, from industrial accident or extraction gone wrong",
+      "Surgical scar tissue where right arm connects at shoulder — visible chrome interface point, slightly raised and darker than surrounding skin",
+      "Small tattoo on inner left wrist — minimalist circuit pattern, functional marker rather than artistic statement"
     ],
-    "visible_augmentations": "Right arm is full cybernetic replacement from shoulder \u2014 brushed steel and gunmetal chrome with visible articulation joints. Wired reflexes manifested as fine servo-assist lines visible under skin at temples, neck, and along spine when moving quickly. Adrenaline pump port visible as sealed chrome nub on right collarbone, faint hydraulic scarring around it.",
-    "posture_movement": "Moves with economical precision \u2014 no wasted motion. Stands in slight forward lean, weight distributed low. Right arm hangs with subtle mechanical fluidity that marks him as augmented to anyone paying attention. Eyes track constantly, environmental awareness default state. When relaxed, tension never fully leaves his frame.",
-    "clothing_style": "Tier 4 utilitarian \u2014 function over aesthetic. Reinforced synthweave jacket with chemical-resistant coating, worn gray. Cargo pants with deep pockets and cable management loops. Steel-toed work boots, scuffed and well-maintained. Under-layer is reactive mesh undershirt, barely visible at collar. No corporate logos, no team colors. Everything modular and replaceable. Weathered from Steamvent humidity and chemical exposure."
+    "visible_augmentations": "Right arm is full cybernetic replacement from shoulder — brushed steel and gunmetal chrome with visible articulation joints. Wired reflexes manifested as fine servo-assist lines visible under skin at temples, neck, and along spine when moving quickly. Adrenaline pump port visible as sealed chrome nub on right collarbone, faint hydraulic scarring around it.",
+    "posture_movement": "Moves with economical precision — no wasted motion. Stands in slight forward lean, weight distributed low. Right arm hangs with subtle mechanical fluidity that marks him as augmented to anyone paying attention. Eyes track constantly, environmental awareness default state. When relaxed, tension never fully leaves his frame.",
+    "clothing_style": "Tier 4 utilitarian — function over aesthetic. Reinforced synthweave jacket with chemical-resistant coating, worn gray. Cargo pants with deep pockets and cable management loops. Steel-toed work boots, scuffed and well-maintained. Under-layer is reactive mesh undershirt, barely visible at collar. No corporate logos, no team colors. Everything modular and replaceable. Weathered from Steamvent humidity and chemical exposure."
   },
   "image_prompt": "Reed Lewandowski-Hossain, compact muscular man with warm medium brown skin and golden-olive undertones, dark brown natural eyes. Eastern European bone structure with South Asian depth, prominent cheekbones, straight nose bridge. Short black closely-cropped hair. Right arm full brushed steel cybernetic replacement with visible chrome joints, servo-assist lines visible at temples and neck. Faint chemical burn scars on left neck and upper chest. Minimalist circuit tattoo on inner left wrist. Wearing reinforced gray synthweave jacket with chemical-resistant coating, cargo pants with cable loops, scuffed steel-toed boots. Reactive mesh undershirt visible at collar. Standing in economical forward lean, weight low, constant environmental awareness. Steamvent Alley industrial setting, humid air with chemical haze, neon glow reflecting off chrome augmentation. Moody neo-noir atmosphere, weathered and utilitarian. --ar 2:3 --v 6",
   "dalle3_prompt": "",

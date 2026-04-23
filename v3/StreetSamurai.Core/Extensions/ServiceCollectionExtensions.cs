@@ -291,6 +291,7 @@ public static class ServiceCollectionExtensions
 
         // Freelancer story systems
         services.AddSingleton<ContractGenerator>();
+        services.AddSingleton<NamePoolService>();
         services.AddSingleton<NpcGenerator>();
         services.AddSingleton<RandomEncounterService>();
         services.AddSingleton<ReputationTracker>();
@@ -341,6 +342,7 @@ public static class ServiceCollectionExtensions
         });
         services.AddSingleton<LLMVotingService>();
         services.AddSingleton<StoryQualityService>();
+        services.AddSingleton<StoryRefinementService>();
         services.AddSingleton<CanonGroundingService>();
         services.AddSingleton<WorldOracleService>();
         services.AddSingleton<EntityRatingService>();

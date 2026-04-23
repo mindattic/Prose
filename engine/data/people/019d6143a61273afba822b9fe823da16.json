@@ -3,16 +3,19 @@
   "rating": 70,
   "vote_count": 1,
   "type": "character",
-  "name": "Diego Villalobos",
-  "aliases": [],
+  "name": "Gudrun Villalobos",
+  "aliases": [
+    "Diego Villalobos",
+    "Diego"
+  ],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
-  "role": "Target acquisition and fugitive recovery \u2014 bounty hunter",
+  "role": "Target acquisition and fugitive recovery — bounty hunter",
   "age": 27,
   "status": "active",
-  "location": "The Rookery \u2014 dense vertical housing, gang-controlled, near Western and Chicago Ave",
-  "description": "Diego Villalobos is athletic and fluid, the kind of body that suggests either dancer or fighter \u2014 and in GLMZ, the distinction is academic. At 27, there\u0027s something unfinished about her face, like a sculpture the artist walked away from \u2014 striking rather than beautiful. The chrome is visible \u2014 smartgun link in right forearm \u2014 interfaces directly with compatible weapons \u2014 and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a bounty hunter out of The Rookery, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented bounty hunter in GLMZ, but she might be the most stubborn, and in this city that\u0027s worth more.",
+  "location": "The Rookery — dense vertical housing, gang-controlled, near Western and Chicago Ave",
+  "description": "Diego Villalobos is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 27, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a bounty hunter out of The Rookery, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented bounty hunter in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -25,36 +28,36 @@
     "core_fears": [
       "Becoming obsolete as augmentation technology outpaces their chrome",
       "That their reputation is built on luck, not skill, and the luck is finite",
-      "Never being able to stop running \u2014 the lifestyle is a trap disguised as freedom"
+      "Never being able to stop running — the lifestyle is a trap disguised as freedom"
     ],
     "core_desires": [
-      "Control \u2014 over their body, their schedule, their future",
+      "Control — over their body, their schedule, their future",
       "To build something that outlasts the next contract cycle",
-      "Stability \u2014 a place to sleep that\u0027s the same place two nights running"
+      "Stability — a place to sleep that's the same place two nights running"
     ],
     "coping_mechanisms": [
-      "Humor \u2014 deflects everything serious with jokes until the joke becomes the personality",
-      "Violence \u2014 hits something when they can\u0027t process emotions, preferably something that deserves it",
-      "Control \u2014 micromanages everything within reach to compensate for the chaos everywhere else"
+      "Humor — deflects everything serious with jokes until the joke becomes the personality",
+      "Violence — hits something when they can't process emotions, preferably something that deserves it",
+      "Control — micromanages everything within reach to compensate for the chaos everywhere else"
     ],
     "blind_spots": [
       "Assumes the worst in corporate people, missing the rare ones who could be allies",
       "Cannot accept help without interpreting it as leverage",
       "Believes their trauma makes them special instead of recognizing it as damage to manage"
     ],
-    "secret": "Fatoumata Ramos-Mensah once worked for corporate intelligence and still has a handler who calls in favors. Each favor erodes what\u0027s left of their independence."
+    "secret": "Fatoumata Ramos-Mensah once worked for corporate intelligence and still has a handler who calls in favors. Each favor erodes what's left of their independence."
   },
   "speech_patterns": {
     "vocabulary": "Flat affect, monotone delivery. The content is terrifying but the voice never rises.",
     "cadence": "Staccato bursts separated by calculating silences.",
     "verbal_tics": [
       "Swears in three languages, often in the same sentence",
-      "Whispers when angry \u2014 the quieter the voice, the worse the situation"
+      "Whispers when angry — the quieter the voice, the worse the situation"
     ],
     "example_lines": [
-      "\u0022Everyone has a pattern. Patterns are addresses waiting to be read.\u0022",
-      "\u0022I find people. Whether they\u0027re alive when I bring them back depends on their behavior.\u0022",
-      "\u0022You can run. It\u0027s cardiovascular exercise for both of us.\u0022"
+      "\"Everyone has a pattern. Patterns are addresses waiting to be read.\"",
+      "\"I find people. Whether they're alive when I bring them back depends on their behavior.\"",
+      "\"You can run. It's cardiovascular exercise for both of us.\""
     ],
     "avoidances": [],
     "subtext": "",
@@ -63,14 +66,14 @@
   },
   "relationships": [],
   "story_hooks": [
-    "Fatoumata Ramos-Mensah\u0027s augmentations begin malfunctioning in the field \u2014 sabotage or degradation, and either answer is bad",
-    "A Tier 4 executive offers Fatoumata Ramos-Mensah a permanent position \u2014 the pay is obscene and the strings are invisible until they tighten",
-    "Fatoumata Ramos-Mensah is offered a contract that would clear all their debts \u2014 the target is someone they respect"
+    "Fatoumata Ramos-Mensah's augmentations begin malfunctioning in the field — sabotage or degradation, and either answer is bad",
+    "A Tier 4 executive offers Fatoumata Ramos-Mensah a permanent position — the pay is obscene and the strings are invisible until they tighten",
+    "Fatoumata Ramos-Mensah is offered a contract that would clear all their debts — the target is someone they respect"
   ],
-  "narrative_function": "Fatoumata Ramos-Mensah functions as a connector \u2014 her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
-  "augmentations": "Smartgun link in right forearm \u2014 interfaces directly with compatible weapons. Cranial bomb defuser \u2014 specialized implant that detects and neutralizes cortex bombs in others",
+  "narrative_function": "Fatoumata Ramos-Mensah functions as a connector — her work puts her in contact with multiple factions, classes, and agendas. Stories involving her naturally cross boundaries between districts, tiers, and moral categories.",
+  "augmentations": "Smartgun link in right forearm — interfaces directly with compatible weapons. Cranial bomb defuser — specialized implant that detects and neutralizes cortex bombs in others",
   "daily_life": "Lives nocturnally. The work happens at night, so the body follows. Days are for sleeping, equipment maintenance, and the occasional meeting with fixers who keep normal hours. The circadian disruption is permanent and accepted.",
-  "affiliation": "Semi-independent \u2014 recurring contracts with mid-tier fixers",
+  "affiliation": "Semi-independent — recurring contracts with mid-tier fixers",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -180,43 +183,43 @@
   "behavioral": {
     "decision_rules": [
       "Will not betray a client who paid in full, regardless of better offers",
-      "Maintains a personal blacklist of clients who\u0027ve burned runners \u2014 checks it religiously",
+      "Maintains a personal blacklist of clients who've burned runners — checks it religiously",
       "Will work with anyone once. Second time requires vouching from someone trusted.",
-      "Will not take contracts against children or families \u2014 the line is hard and non-negotiable"
+      "Will not take contracts against children or families — the line is hard and non-negotiable"
     ],
     "escalation_ladder": [
-      "1. Assess \u2014 read the situation, identify threats and advantages",
-      "2. Negotiate \u2014 try to find a solution that doesn\u0027t cost ammunition",
-      "3. Intimidate \u2014 make the cost of conflict clear",
-      "4. Precision violence \u2014 surgical, targeted, minimal collateral",
-      "5. Full engagement \u2014 overwhelming force, no half measures",
-      "6. Emergency protocol \u2014 abort mission, survival priority, deal with consequences later"
+      "1. Assess — read the situation, identify threats and advantages",
+      "2. Negotiate — try to find a solution that doesn't cost ammunition",
+      "3. Intimidate — make the cost of conflict clear",
+      "4. Precision violence — surgical, targeted, minimal collateral",
+      "5. Full engagement — overwhelming force, no half measures",
+      "6. Emergency protocol — abort mission, survival priority, deal with consequences later"
     ],
     "interpersonal_modes": {
       "employers": "Professional and transactional. The relationship is defined by the contract and nothing else.",
       "crew": "Warm and protective within the crew, cold to everyone outside it. The circle is small by design.",
-      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn\u0027t.",
+      "strangers": "Superficially friendly, internally cataloguing exits and weapons. The smile is real; the relaxation isn't.",
       "threats": "Predatory focus. Threats are problems, and problems have solutions. The solution is usually kinetic."
     },
     "stress_responses": {
       "low": "Becomes more talkative, working through scenarios verbally.",
-      "medium": "Physical agitation \u2014 pacing, fidgeting, compulsive equipment checks.",
-      "high": "Goes quiet. The silence is not calm \u2014 it\u0027s the sound of every contingency being evaluated simultaneously.",
+      "medium": "Physical agitation — pacing, fidgeting, compulsive equipment checks.",
+      "high": "Goes quiet. The silence is not calm — it's the sound of every contingency being evaluated simultaneously.",
       "critical": "Berserker clarity. Everything becomes simple: survive. Deal with the rest later. The simplicity is almost peaceful."
     },
     "contradictions": [
       "Insists they work alone but performs noticeably better in a team",
       "Preaches independence but is desperate for approval from people they respect",
-      "Advocates caution to others but takes insane risks personally \u2014 double standard they can\u0027t see"
+      "Advocates caution to others but takes insane risks personally — double standard they can't see"
     ],
     "habits": [
-      "Counts ammunition obsessively \u2014 knows the exact round count at all times",
-      "Takes a specific route home every time, varying only one block per trip \u2014 paranoia as lifestyle",
-      "Carries a specific caliber round as a lucky charm \u2014 has never fired it"
+      "Counts ammunition obsessively — knows the exact round count at all times",
+      "Takes a specific route home every time, varying only one block per trip — paranoia as lifestyle",
+      "Carries a specific caliber round as a lucky charm — has never fired it"
     ],
     "breaking_points": [
-      "Being forced to harm a civilian \u2014 collateral damage that can\u0027t be rationalized",
-      "Their body rejecting their cyberware \u2014 chrome rot, immune rejection, the nightmare scenario"
+      "Being forced to harm a civilian — collateral damage that can't be rationalized",
+      "Their body rejecting their cyberware — chrome rot, immune rejection, the nightmare scenario"
     ]
   },
   "cyberware_inventory": [
@@ -227,7 +230,7 @@
       "tier": "",
       "condition": "good",
       "installed_date": "",
-      "description": "Smartgun link in right forearm \u2014 interfaces directly with compatible weapons",
+      "description": "Smartgun link in right forearm — interfaces directly with compatible weapons",
       "replaces": ""
     },
     {
@@ -237,7 +240,7 @@
       "tier": "",
       "condition": "pristine",
       "installed_date": "",
-      "description": "Cranial bomb defuser \u2014 specialized implant that detects and neutralizes cortex bombs in others",
+      "description": "Cranial bomb defuser — specialized implant that detects and neutralizes cortex bombs in others",
       "replaces": ""
     }
   ],
@@ -280,20 +283,20 @@
     "heritage": "Complex diaspora blend reflecting Sub-Saharan African (50.9%), Hispanic/Latin American (37.1%), Southeast Asian (7.7%), and Eastern European (4.3%) ancestry. The dominant African and Latin American heritage creates a rich, warm phenotype with subtle Southeast Asian bone structure refinement and Eastern European undertones in skin depth.",
     "height_cm": 172,
     "weight_kg": 62,
-    "build": "Athletic and lean with dense muscle \u2014 dancer\u0027s posture married to fighter\u0027s tension. Shoulders broad, hips narrow, no excess. Moves like someone who\u0027s spent years in close-quarters combat.",
+    "build": "Athletic and lean with dense muscle — dancer's posture married to fighter's tension. Shoulders broad, hips narrow, no excess. Moves like someone who's spent years in close-quarters combat.",
     "hair_color": "Natural black with metallic bronze highlights (micro-LED threading)",
     "hair_style": "Pulled back in a tight, functional braid that exposes her neck and jawline",
     "hair_length": "Long",
     "eye_color": "Dark brown, natural",
-    "skin_tone": "Deep warm brown with golden undertones \u2014 the result of 50.9% Sub-Saharan African ancestry blended with 37.1% Hispanic/Latin American, enriched by subtle Southeast Asian warmth and Eastern European depth. Rich enough to catch light, radiant in its complexity.",
-    "complexion": "Strong, angular facial structure with prominent high cheekbones and defined jawline \u2014 features reflecting Sub-Saharan African and Southeast Asian bone structure refined by Iberian heritage. Nose is proportionate and refined. Eyes set with slight Southeast Asian epicanthic character. Skin shows the wear of nocturnal living: faint fatigue lines under eyes, minimal scarring from old street fights. Grooming is functional rather than decorative.",
+    "skin_tone": "Deep warm brown with golden undertones — the result of 50.9% Sub-Saharan African ancestry blended with 37.1% Hispanic/Latin American, enriched by subtle Southeast Asian warmth and Eastern European depth. Rich enough to catch light, radiant in its complexity.",
+    "complexion": "Strong, angular facial structure with prominent high cheekbones and defined jawline — features reflecting Sub-Saharan African and Southeast Asian bone structure refined by Iberian heritage. Nose is proportionate and refined. Eyes set with slight Southeast Asian epicanthic character. Skin shows the wear of nocturnal living: faint fatigue lines under eyes, minimal scarring from old street fights. Grooming is functional rather than decorative.",
     "distinguishing_marks": [
       "Thin white scar running from left temple to cheekbone, approximately 8cm, barely visible but catches light",
-      "Burn scar on inner left wrist, 4cm diameter, from a failed incendiary round ricochet \u2014 pale and smooth",
+      "Burn scar on inner left wrist, 4cm diameter, from a failed incendiary round ricochet — pale and smooth",
       "Faded tattoo on right shoulder blade: a compass rose in black ink, done by hand in the Narrows"
     ],
-    "visible_augmentations": "Right forearm features a polished chrome smartgun link port \u2014 approximately 12cm of exposed metallic integration at the wrist, with faint neural interface scars radiating upward. The prosthetic is seamless with her skin but unmistakably non-organic. No visible evidence of the cranial bomb defuser, which sits subcutaneous behind her right ear.",
-    "posture_movement": "Stands with weight balanced on the balls of her feet \u2014 ready to move in any direction instantly. Moves through space economically, no wasted motion. Eyes constantly track exits and threats. At rest, her right hand unconsciously hovers near her forearm. When walking, there\u0027s a predatory fluidity \u2014 someone comfortable in confined spaces and tight corners.",
+    "visible_augmentations": "Right forearm features a polished chrome smartgun link port — approximately 12cm of exposed metallic integration at the wrist, with faint neural interface scars radiating upward. The prosthetic is seamless with her skin but unmistakably non-organic. No visible evidence of the cranial bomb defuser, which sits subcutaneous behind her right ear.",
+    "posture_movement": "Stands with weight balanced on the balls of her feet — ready to move in any direction instantly. Moves through space economically, no wasted motion. Eyes constantly track exits and threats. At rest, her right hand unconsciously hovers near her forearm. When walking, there's a predatory fluidity — someone comfortable in confined spaces and tight corners.",
     "clothing_style": "Tier 3-4 utilitarian. Black synthetic-leather jacket (water-resistant, scored with small cuts and scuffs), fitted enough to move but loose enough to conceal gear. Charcoal tactical pants with reinforced knees and thigh pockets holding small tools and ammunition. Combat boots, black, scuffed. Underneath: a grey undershirt with discreet ballistic weave. No jewelry except a cracked smart-watch on her left wrist (functional, not fashion). All clothing shows the patina of actual use."
   },
   "image_prompt": "Diego Villalobos, GLMZ, woman with deep golden-brown skin tone, angular high cheekbones, defined jawline, subtle Southeast Asian bone structure, dark brown eyes with slight epicanthic fold, natural black hair in tight functional braid with bronze micro-LED threading, 172cm athletic lean build. Thin white scar temple to cheekbone, burn scar inner left wrist. Right forearm polished chrome smartgun link port with neural scars. Wears black scuffed synthetic-leather jacket, charcoal tactical pants with reinforced knees, grey ballistic weave undershirt, black combat boots, cracked smart-watch. Stands weight-balanced on balls of feet, predatory posture, right hand hovering near augmented forearm. Nocturnal fatigue lines under eyes, functional grooming. Great Lakes Metropolitan Zone neon-lit alley setting, cool blue and amber lighting catching the warmth of her skin and the chrome of her augmentation, moody neo-noir atmosphere --ar 2:3 --v 6",

@@ -3,8 +3,11 @@
   "rating": 30,
   "vote_count": 2,
   "type": "character",
-  "name": "Briar Arakawa",
-  "aliases": [],
+  "name": "Elina Arakawa",
+  "aliases": [
+    "Briar Arakawa",
+    "Briar"
+  ],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -121,11 +124,11 @@
       "Faded tattoo on right forearm: a symbol combining geometric South Asian, Middle Eastern, and East Asian motifs, partially obscured by age and fading",
       "Pronounced calluses on both palms and fingers from decades of handling tools and weapons"
     ],
-    "visible_augmentations": "None visible; augmentations are strictly subcutaneous if present at all\u2014consistent with her philosophy of discretion",
+    "visible_augmentations": "None visible; augmentations are strictly subcutaneous if present at all—consistent with her philosophy of discretion",
     "posture_movement": "Moves with deliberate, economical grace; stands slightly forward on the balls of her feet as if always ready to move. Direct eye contact, minimal unnecessary gesture. Speaks slowly and rarely, but commands full attention when she does.",
-    "clothing_style": "Tier 3-4 practical wear: reinforced dark denim jacket with internal pockets, gray thermal base layer, heavy-duty canvas pants with cargo pockets. Black steel-toed boots, scuffed and well-maintained. Minimal jewelry\u2014only a simple silver ring on left ring finger. No corp branding; all clothing is utilitarian, durable, and sourced from secondary markets. Watch is mechanical, not digital."
+    "clothing_style": "Tier 3-4 practical wear: reinforced dark denim jacket with internal pockets, gray thermal base layer, heavy-duty canvas pants with cargo pockets. Black steel-toed boots, scuffed and well-maintained. Minimal jewelry—only a simple silver ring on left ring finger. No corp branding; all clothing is utilitarian, durable, and sourced from secondary markets. Watch is mechanical, not digital."
   },
-  "image_prompt": "Portrait of Briar Arakawa, a 168cm stocky woman with broad shoulders and functional muscle tone, standing in GLMZ Great Lakes Metropolitan Zone. Medium steel-gray hair with dark roots pulled tight in practical braid. Deep brown assessing eyes. Warm bronze skin with golden-amber undertones reflecting tricontinent ancestry\u2014sharp South Asian-Middle Eastern cheekbones refined by East Asian heritage, warmed by Pacific Islander genetics into prominent, defined facial structure. Weathered complexion with visible sun damage, pronounced laugh lines, thin white scar from left cheekbone to jawline, faded geometric tattoo on right forearm. Wearing reinforced dark denim jacket over gray thermal layer, heavy-duty canvas pants, black steel-toed boots. Simple silver ring on left ring finger. Mechanical watch. Standing forward on balls of feet, direct gaze, economical posture. Dystopian urban background with neon glow, shadows emphasizing facial angles and scars. Cinematic lighting highlighting warm bronze undertones and character lines. Serious, composed expression. Neo-noir utilitarian aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Briar Arakawa, a 168cm stocky woman with broad shoulders and functional muscle tone, standing in GLMZ Great Lakes Metropolitan Zone. Medium steel-gray hair with dark roots pulled tight in practical braid. Deep brown assessing eyes. Warm bronze skin with golden-amber undertones reflecting tricontinent ancestry—sharp South Asian-Middle Eastern cheekbones refined by East Asian heritage, warmed by Pacific Islander genetics into prominent, defined facial structure. Weathered complexion with visible sun damage, pronounced laugh lines, thin white scar from left cheekbone to jawline, faded geometric tattoo on right forearm. Wearing reinforced dark denim jacket over gray thermal layer, heavy-duty canvas pants, black steel-toed boots. Simple silver ring on left ring finger. Mechanical watch. Standing forward on balls of feet, direct gaze, economical posture. Dystopian urban background with neon glow, shadows emphasizing facial angles and scars. Cinematic lighting highlighting warm bronze undertones and character lines. Serious, composed expression. Neo-noir utilitarian aesthetic. --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "South Asian": 26.2,

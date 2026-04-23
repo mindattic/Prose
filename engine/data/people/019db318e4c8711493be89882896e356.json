@@ -3,8 +3,10 @@
   "rating": 0,
   "vote_count": 0,
   "type": "character",
-  "name": "Marisol",
-  "aliases": [],
+  "name": "Hadi",
+  "aliases": [
+    "Marisol"
+  ],
   "species": "human",
   "gender": "",
   "pronouns": "",
@@ -12,7 +14,7 @@
   "age": 0,
   "status": "alive",
   "location": "",
-  "description": "Auto-scaffolded. First mentioned: \u0022He says, without preamble: \u0027Her name is Marisol. She is fourteen.\u0027\u0022",
+  "description": "Auto-scaffolded. First mentioned: \"He says, without preamble: 'Her name is Marisol. She is fourteen.'\"",
   "psychology": {
     "facet_weights": {
       "wound": 0,

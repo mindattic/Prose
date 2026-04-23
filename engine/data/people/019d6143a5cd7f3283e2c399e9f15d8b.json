@@ -3,16 +3,19 @@
   "rating": 80,
   "vote_count": 1,
   "type": "character",
-  "name": "Flux Cervantes",
-  "aliases": [],
+  "name": "Aytan Cervantes",
+  "aliases": [
+    "Flux Cervantes",
+    "Flux"
+  ],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
   "role": "Loan shark and protection racket enforcer for the Gravesend Basin neighborhood",
   "age": 52,
   "status": "active",
-  "location": "Gravesend Basin \u2014 operates from a laundromat called Ou\u00E9draogo Clean on Silt Row, near Halsted and Chicago Ave",
-  "description": "Flux Cervantes is a broad-shouldered woman whose posture alone reads like a debt notice. Her skin is a deep umber, draped in faded keloid scars along her left forearm from a press-iron incident she doesn\u0027t discuss. She keeps her silver-shot hair in a tight wrap of amber-colored cloth, and her eyes \u2014 retrofitted with amber thermal optics she bought secondhand \u2014 glow faintly like coal when the light hits them right. She dresses in layered thermal vests and heavy skirts, always clean, always pressed; cleanliness is her one vanity in a neighborhood that smells of brine and machine oil.\n\nShe has lived in Gravesend Basin for thirty-one years and considers herself its true government. She does not yell. She does not threaten twice. Her particular genius is in making people feel grateful while she extracts from them \u2014 she lends at ruinous rates but remembers every birthday, every sick child, every funeral. The neighborhood loves her and pays her and is afraid of her in roughly equal measure. She believes, without irony, that she is keeping people alive that the corponations would simply forget.",
+  "location": "Gravesend Basin — operates from a laundromat called Ouédraogo Clean on Silt Row, near Halsted and Chicago Ave",
+  "description": "Flux Cervantes is a broad-shouldered woman whose posture alone reads like a debt notice. Her skin is a deep umber, draped in faded keloid scars along her left forearm from a press-iron incident she doesn't discuss. She keeps her silver-shot hair in a tight wrap of amber-colored cloth, and her eyes — retrofitted with amber thermal optics she bought secondhand — glow faintly like coal when the light hits them right. She dresses in layered thermal vests and heavy skirts, always clean, always pressed; cleanliness is her one vanity in a neighborhood that smells of brine and machine oil.\n\nShe has lived in Gravesend Basin for thirty-one years and considers herself its true government. She does not yell. She does not threaten twice. Her particular genius is in making people feel grateful while she extracts from them — she lends at ruinous rates but remembers every birthday, every sick child, every funeral. The neighborhood loves her and pays her and is afraid of her in roughly equal measure. She believes, without irony, that she is keeping people alive that the corponations would simply forget.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -38,19 +41,19 @@
       "Cannot see how her lending has trapped families across generations",
       "Believes her affection for individuals excuses systemic harm"
     ],
-    "secret": "Her husband didn\u0027t die in a factory accident as the neighborhood believes \u2014 she reported him to Ferrogate Transit security after discovering he was skimming from her collections. She has lit a data-candle at the local E.L.F. shrine every week for twelve years asking for forgiveness."
+    "secret": "Her husband didn't die in a factory accident as the neighborhood believes — she reported him to Ferrogate Transit security after discovering he was skimming from her collections. She has lit a data-candle at the local E.L.F. shrine every week for twelve years asking for forgiveness."
   },
   "speech_patterns": {
-    "vocabulary": "Formal, measured, old-world courteous \u2014 code-switches into Basin Creole when she wants to signal intimacy or menace",
+    "vocabulary": "Formal, measured, old-world courteous — code-switches into Basin Creole when she wants to signal intimacy or menace",
     "cadence": "Slow and deliberate; she rarely finishes a threat because she stops before the threat and lets silence do it",
     "verbal_tics": [
-      "\u0027You understand me, yes?\u0027",
-      "Refers to money as \u0027the weight\u0027",
-      "Never says \u0027no\u0027 \u2014 says \u0027that\u0027s not something we\u0027ll be doing\u0027"
+      "'You understand me, yes?'",
+      "Refers to money as 'the weight'",
+      "Never says 'no' — says 'that's not something we'll be doing'"
     ],
     "example_lines": [
-      "\u0027I have known your mother since before you were a problem she had. Sit down. Have tea. Let\u0027s talk about the weight you\u0027re carrying.\u0027",
-      "\u0027I don\u0027t want trouble. Trouble is expensive and I am a businesswoman. But I want you to understand \u2014 clearly, yes? \u2014 what inconvenience looks like when I am inconvenienced.\u0027"
+      "'I have known your mother since before you were a problem she had. Sit down. Have tea. Let's talk about the weight you're carrying.'",
+      "'I don't want trouble. Trouble is expensive and I am a businesswoman. But I want you to understand — clearly, yes? — what inconvenience looks like when I am inconvenienced.'"
     ],
     "avoidances": [],
     "subtext": "",
@@ -59,13 +62,13 @@
   },
   "relationships": [],
   "story_hooks": [
-    "A young family has defaulted on a loan and Briseis has sent notice \u2014 but the family patriarch has information about a Ferrogate Transit smuggling operation that could bring outside heat down on the whole basin",
-    "Someone is leaving forged debt-release notices under doors in Gravesend Basin, and Briseis wants to know who \u2014 and whether they\u0027re Robin Hood or a rival cutting her out"
+    "A young family has defaulted on a loan and Briseis has sent notice — but the family patriarch has information about a Ferrogate Transit smuggling operation that could bring outside heat down on the whole basin",
+    "Someone is leaving forged debt-release notices under doors in Gravesend Basin, and Briseis wants to know who — and whether they're Robin Hood or a rival cutting her out"
   ],
-  "narrative_function": "Quest giver, power broker, moral gray zone \u2014 she can offer protection, information, or financing; she can also be the threat that drives a plot. Represents the way crime fills governance vacuums.",
+  "narrative_function": "Quest giver, power broker, moral gray zone — she can offer protection, information, or financing; she can also be the threat that drives a plot. Represents the way crime fills governance vacuums.",
   "augmentations": "Secondhand thermal optic implants (amber-tinted, slightly mismatched); reinforced knuckle plating beneath the skin of her right hand (subtle, not obvious)",
-  "daily_life": "She opens the laundromat at 0600, takes payments from 0700 to 1000 behind the sorting counter, walks the basin perimeter in the afternoon to be seen, and holds \u0027consultations\u0027 for new loan applicants in the back room every evening over tea she brews herself.",
-  "affiliation": "Independent \u2014 commands a loose neighborhood syndicate she calls \u0027the Silt Circle\u0027",
+  "daily_life": "She opens the laundromat at 0600, takes payments from 0700 to 1000 behind the sorting counter, walks the basin perimeter in the afternoon to be seen, and holds 'consultations' for new loan applicants in the back room every evening over tea she brews herself.",
+  "affiliation": "Independent — commands a loose neighborhood syndicate she calls 'the Silt Circle'",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -108,18 +111,18 @@
   },
   "behavioral": {
     "decision_rules": [
-      "Never make a threat you haven\u0027t already decided to carry out",
+      "Never make a threat you haven't already decided to carry out",
       "Always give a person one dignified exit before consequences arrive",
-      "Never harm a child or allow it \u2014 this is the one absolute"
+      "Never harm a child or allow it — this is the one absolute"
     ],
     "escalation_ladder": [
       "Warm reminder over tea",
-      "Public social pressure \u2014 everyone in the basin knows",
+      "Public social pressure — everyone in the basin knows",
       "Asset seizure via her enforcers",
       "Physical consequences, delivered by proxy, never witnessed"
     ],
     "interpersonal_modes": {
-      "strangers": "Watchful hospitality \u2014 warm surface, calculating interior; she\u0027s cataloguing leverage before they\u0027ve finished their sentence",
+      "strangers": "Watchful hospitality — warm surface, calculating interior; she's cataloguing leverage before they've finished their sentence",
       "friends": "Genuine warmth that coexists with transactional awareness; she keeps score even with people she loves"
     },
     "stress_responses": {
@@ -128,12 +131,12 @@
       "high": "Leaves the room, returns in twenty minutes, never explains where she went"
     },
     "contradictions": [
-      "Genuinely mourns when people she\u0027s broken financially suffer \u2014 and then continues doing it",
+      "Genuinely mourns when people she's broken financially suffer — and then continues doing it",
       "Preaches community solidarity while running a system that atomizes it"
     ],
     "habits": [
       "Presses and folds a cloth square every morning before opening",
-      "Leaves a data-prayer at the basin\u0027s E.L.F. shrine every Sunday \u2014 a small sum transferred to a null account",
+      "Leaves a data-prayer at the basin's E.L.F. shrine every Sunday — a small sum transferred to a null account",
       "Tastes the laundry chemicals by smell to check quality, a habit from her first job"
     ],
     "breaking_points": [
@@ -207,18 +210,18 @@
     "hair_color": "Silver with dark roots",
     "hair_style": "Wrapped tightly in amber-colored cloth in a traditional head wrap; no visible loose hair",
     "hair_length": "Long (worn wrapped)",
-    "eye_color": "Amber thermal optics with a faint bioluminescent glow; the irises are mismatched \u2014 one slightly brighter than the other, indicating secondhand installation",
+    "eye_color": "Amber thermal optics with a faint bioluminescent glow; the irises are mismatched — one slightly brighter than the other, indicating secondhand installation",
     "skin_tone": "Warm deep brown with golden undertones; even depth across the face reflecting the balanced three-way heritage blend of Hispanic/Latin American, Sub-Saharan African, and Southeast Asian ancestry. Subtle luminosity suggests sun exposure and age, with no stark contrasts.",
     "complexion": "Weathered but meticulously maintained; minimal makeup, skin shows the texture of age and exposure but is kept scrupulously clean. Cheekbones high and gently rounded (Southeast Asian influence), jaw defined and strong (Sub-Saharan African structure), with warm golden undertones throughout (Hispanic/Latin American ancestry). The overall facial geometry shows balanced blending across her three primary ancestries. Expression typically neutral or faintly expectant.",
     "distinguishing_marks": [
-      "Faded keloid scarring runs along the entire left forearm in a pattern consistent with a press-iron injury \u2014 raised, slightly darker than surrounding skin, approximately 20cm in length",
+      "Faded keloid scarring runs along the entire left forearm in a pattern consistent with a press-iron injury — raised, slightly darker than surrounding skin, approximately 20cm in length",
       "Small burn marks (old, pale) across the knuckles of both hands, occupational wear"
     ],
-    "visible_augmentations": "The thermal optics are visible as a slight amber luminescence in low light and a faint geometric artifact around the iris when viewed directly. The reinforced knuckle plating is not visibly obvious at rest but creates a subtle asymmetry in hand structure and a faint metallic sheen across the right hand\u0027s dorsal surface when light hits it a certain way.",
-    "posture_movement": "She carries her weight forward slightly, shoulders back. Her movements are economical and deliberate \u2014 she does not fidget or waste motion. When sitting, she occupies space fully without sprawling. She walks with a measured pace, feet placed with precision. Her default expression is watchful neutrality.",
-    "clothing_style": "Tier 3-4 practical wear. Multiple layered thermal vests in muted grays and deep blues, always pristine and well-fitted. Long heavy skirts (dark wool or synthetic blend) that fall to mid-calf, paired with reinforced slip-on shoes suitable for standing all day. A large canvas apron with multiple pockets when working the counter. No jewelry except a thin metal band on her right ring finger (worn, not ornamental). All clothing is clean, pressed, and shows signs of careful maintenance. The aesthetic is working-class dignity \u2014 nothing fashionable, everything functional and respected."
+    "visible_augmentations": "The thermal optics are visible as a slight amber luminescence in low light and a faint geometric artifact around the iris when viewed directly. The reinforced knuckle plating is not visibly obvious at rest but creates a subtle asymmetry in hand structure and a faint metallic sheen across the right hand's dorsal surface when light hits it a certain way.",
+    "posture_movement": "She carries her weight forward slightly, shoulders back. Her movements are economical and deliberate — she does not fidget or waste motion. When sitting, she occupies space fully without sprawling. She walks with a measured pace, feet placed with precision. Her default expression is watchful neutrality.",
+    "clothing_style": "Tier 3-4 practical wear. Multiple layered thermal vests in muted grays and deep blues, always pristine and well-fitted. Long heavy skirts (dark wool or synthetic blend) that fall to mid-calf, paired with reinforced slip-on shoes suitable for standing all day. A large canvas apron with multiple pockets when working the counter. No jewelry except a thin metal band on her right ring finger (worn, not ornamental). All clothing is clean, pressed, and shows signs of careful maintenance. The aesthetic is working-class dignity — nothing fashionable, everything functional and respected."
   },
-  "image_prompt": "Flux Cervantes, a 172cm woman with warm deep brown skin with golden undertones, captured in GLMZ Great Lakes Metropolitan Zone. Her face shows harmonious blending of Hispanic/Latin American, Sub-Saharan African, and Southeast Asian heritage\u2014gently rounded cheekbones, strong defined jaw, even warm brown complexion. Silver hair with dark roots wrapped in amber cloth traditional headwrap. Amber thermal optics with faint bioluminescent glow, mismatched brightness, set in weathered but meticulously maintained face. Broad-shouldered, muscular build, economical posture. Wearing layered muted gray and deep blue thermal vests, long dark wool skirt to mid-calf, reinforced slip-on shoes. Faded keloid scarring visible along left forearm. Reinforced metal knuckle plating on right hand with metallic sheen. Thin worn metal ring on right ring finger. Canvas apron with multiple pockets. Watchful neutral expression, precise deliberate movement. Clean, pressed working-class dignity aesthetic. Neon-lit counter or industrial workspace background, warm practical lighting highlighting her deep brown skin tone and amber optics glow --ar 2:3 --v 6",
+  "image_prompt": "Flux Cervantes, a 172cm woman with warm deep brown skin with golden undertones, captured in GLMZ Great Lakes Metropolitan Zone. Her face shows harmonious blending of Hispanic/Latin American, Sub-Saharan African, and Southeast Asian heritage—gently rounded cheekbones, strong defined jaw, even warm brown complexion. Silver hair with dark roots wrapped in amber cloth traditional headwrap. Amber thermal optics with faint bioluminescent glow, mismatched brightness, set in weathered but meticulously maintained face. Broad-shouldered, muscular build, economical posture. Wearing layered muted gray and deep blue thermal vests, long dark wool skirt to mid-calf, reinforced slip-on shoes. Faded keloid scarring visible along left forearm. Reinforced metal knuckle plating on right hand with metallic sheen. Thin worn metal ring on right ring finger. Canvas apron with multiple pockets. Watchful neutral expression, precise deliberate movement. Clean, pressed working-class dignity aesthetic. Neon-lit counter or industrial workspace background, warm practical lighting highlighting her deep brown skin tone and amber optics glow --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "Hispanic/Latin American": 61.2,

@@ -3,8 +3,11 @@
   "rating": 30,
   "vote_count": 1,
   "type": "character",
-  "name": "Slate Baek-Popescu",
-  "aliases": [],
+  "name": "Benjamim Baek-Popescu",
+  "aliases": [
+    "Slate Baek-Popescu",
+    "Slate"
+  ],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -108,7 +111,7 @@
     "heritage": "Complex pan-continental ancestry dominated by Eastern European (31.8%) foundation with substantial East Asian (19.8%) and South Asian (17.2%) admixture, strengthened by Hispanic/Latin American (14.6%), Northern European (11.7%), and Sub-Saharan African (4.9%) components. Creates a striking phenotype blending Central European bone structure with warm South and East Asian undertones, broad Pan-Eurasian features suggesting multiple ancestral migrations, resulting in a genuinely cosmopolitan appearance that defies singular geographic origin.",
     "height_cm": 182,
     "weight_kg": 78,
-    "build": "Athletic, slightly soft at the middle from decades of club-sitting and \u03A6-backed meals. Broad shoulders, compact frame suggesting careful maintenance rather than active fitness.",
+    "build": "Athletic, slightly soft at the middle from decades of club-sitting and Φ-backed meals. Broad shoulders, compact frame suggesting careful maintenance rather than active fitness.",
     "hair_color": "Salt-and-pepper gray, natural with silver threading",
     "hair_style": "Slicked back with pomade, precise side part",
     "hair_length": "Medium (3-4cm)",
@@ -118,11 +121,11 @@
     "distinguishing_marks": [
       "Thin scar across left cheekbone, barely visible, suggesting old knife work or a close negotiation gone physical.",
       "Faded tattoo of a playing card (Ace of Spades) on right inner wrist, barely visible under cuff unless forearm exposed.",
-      "Burn scar on right ring finger and pinkie, old and pale\u2014cigarette or cards-table accident origin."
+      "Burn scar on right ring finger and pinkie, old and pale—cigarette or cards-table accident origin."
     ],
     "visible_augmentations": "None visible. Moves with the practiced fluidity of someone carrying subcutaneous neural enhancements, likely decision-support or financial parsing implants, but nothing chrome-obvious.",
-    "posture_movement": "Centered weight, economical movement. Rarely gestures\u2014when he does, it\u0027s precise and meaningful. Habitually makes eye contact. Tendency to tap fingers rhythmically when thinking, as if mentally shuffling a deck.",
-    "clothing_style": "Tier 2 independent: tailored charcoal suits from corporate-fringe tailors, silk shirts in muted colors (navy, cream, charcoal), Italian leather shoes kept obsessively polished. Omnipresent wrist accessories: vintage mechanical watch \u002B discrete neural-link interface wrapped as a platinum bracelet. Overcoat in winter\u2014wool blend, no logo. Jewelry minimal: gold wedding band (worn despite marital status unclear), one silver signet ring."
+    "posture_movement": "Centered weight, economical movement. Rarely gestures—when he does, it's precise and meaningful. Habitually makes eye contact. Tendency to tap fingers rhythmically when thinking, as if mentally shuffling a deck.",
+    "clothing_style": "Tier 2 independent: tailored charcoal suits from corporate-fringe tailors, silk shirts in muted colors (navy, cream, charcoal), Italian leather shoes kept obsessively polished. Omnipresent wrist accessories: vintage mechanical watch + discrete neural-link interface wrapped as a platinum bracelet. Overcoat in winter—wool blend, no logo. Jewelry minimal: gold wedding band (worn despite marital status unclear), one silver signet ring."
   },
   "image_prompt": "Slate Baek-Popescu, 182cm tall, athletic frame with slight middle softness, cosmopolitan pan-continental ancestry visible in warm golden-olive skin tone and refined East-Central European facial structure with East Asian eye placement and South Asian warmth. Salt-and-pepper hair slicked back with pomade, dark brown eyes with amber undertones, clean-shaven with subtle jowl softening from age. Thin scar barely visible across left cheekbone. Wearing tailored charcoal suit with navy silk shirt, Italian leather shoes gleaming with obsessive polish. Platinum bracelet concealing neural-link interface on wrist, vintage mechanical watch, minimal gold jewelry. Centered posture suggesting subcutaneous neural enhancements. GLMZ, moody club lighting casting cool shadows across his golden complexion, deep neon blues and warm amber uplighting, sophisticated corporate-fringe aesthetic, late-night poker den or financial district lounge setting, air of quiet calculation and perpetual wakefulness --ar 2:3 --v 6",
   "dalle3_prompt": "",

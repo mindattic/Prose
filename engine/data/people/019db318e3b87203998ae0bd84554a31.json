@@ -3,8 +3,10 @@
   "rating": 0,
   "vote_count": 0,
   "type": "character",
-  "name": "Briar",
-  "aliases": [],
+  "name": "Emeka",
+  "aliases": [
+    "Briar"
+  ],
   "species": "human",
   "gender": "",
   "pronouns": "",
@@ -12,7 +14,7 @@
   "age": 0,
   "status": "alive",
   "location": "",
-  "description": "Auto-scaffolded. First mentioned: \u0022He has still not seen Briar. What he has seen is the drone, and the relay light blinking amber at Arden\u0027s neural jack\u0022",
+  "description": "Auto-scaffolded. First mentioned: \"He has still not seen Briar. What he has seen is the drone, and the relay light blinking amber at Arden's neural jack\"",
   "psychology": {
     "facet_weights": {
       "wound": 0,
@@ -48,8 +50,8 @@
     },
     {
       "name": "",
-      "type": "communicates through Arden\u0027s neural jack relay",
-      "description": "communicates through Arden\u0027s neural jack relay",
+      "type": "communicates through Arden's neural jack relay",
+      "description": "communicates through Arden's neural jack relay",
       "emotional_core": "",
       "story_tension": ""
     },
