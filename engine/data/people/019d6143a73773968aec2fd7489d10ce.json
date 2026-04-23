@@ -2,10 +2,7 @@
   "id": "019d6143a73773968aec2fd7489d10ce",
   "type": "character",
   "name": "Fritz Montalvo-Balasanyan",
-  "aliases": [
-    "Emiliano Montalvo-Balasanyan",
-    "Emiliano"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 44,
   "status": "active",
   "location": "Gravesend Basin — runs her operation from a repurposed fish-processing barge called the Mercy Float, near Kedzie and Division",
-  "description": "Emiliano Montalvo-Balasanyan is a compact, broad-shouldered woman with deeply weathered brown skin and silver-streaked locs she keeps pinned under a battered captain's cap. Her eyes have been modded with abacus-patterned irises — concentric rings of amber and black that scroll subtly when she's calculating, which is always. She dresses in practical waterproofed layers, always with a ledger-shaped datapad holstered at her hip like a sidearm. A faded tattoo of a Polynesian wave pattern wraps her left forearm, overlaid years later with a Czech geometric border she had done in a moment of sentimental reclamation.\n\nEmiliano Montalvo-Balasanyan speaks softly and precisely, the way a person does when they've learned that volume is for people who aren't sure they'll be obeyed. She extends credit with genuine warmth — she believes in people, or she says she does — and collects with a patience that her debtors consistently mistake for mercy until they understand it is something far more calculated. She keeps meticulous handwritten backups of every transaction because she trusts no network she doesn't own.",
+  "description": "Fritz Montalvo-Balasanyan is a compact, broad-shouldered woman with deeply weathered brown skin and silver-streaked locs she keeps pinned under a battered captain's cap. Her eyes have been modded with abacus-patterned irises — concentric rings of amber and black that scroll subtly when she's calculating, which is always. She dresses in practical waterproofed layers, always with a ledger-shaped datapad holstered at her hip like a sidearm. A faded tattoo of a Polynesian wave pattern wraps her left forearm, overlaid years later with a Czech geometric border she had done in a moment of sentimental reclamation.\n\nFritz Montalvo-Balasanyan speaks softly and precisely, the way a person does when they've learned that volume is for people who aren't sure they'll be obeyed. She extends credit with genuine warmth — she believes in people, or she says she does — and collects with a patience that her debtors consistently mistake for mercy until they understand it is something far more calculated. She keeps meticulous handwritten backups of every transaction because she trusts no network she doesn't own.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -183,7 +180,7 @@
     "Silver",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Nesting Doll",
-    "Haze Johansson"
+    "Akosua Johansson"
   ],
   "district": "the Gray Zone",
   "physical_description": {
@@ -207,7 +204,7 @@
     "posture_movement": "Moves with economical precision — no wasted motion. Stands with weight distributed low and balanced, as if ready to adjust to deck movement. Speaks softly but with absolute certainty; her stillness is more commanding than gesture. Rarely raises her voice. Her eyes do the work of her tone — the scrolling irises calculate while she listens.",
     "clothing_style": "Practical waterproofed layers in muted grays, blacks, and deep blues; worn cargo pants with reinforced knees and thighs; waterproof jacket with multiple pockets. A battered captain's cap (faded navy with grease stains) pinned over her locs. Heavy-soled boots, salt-stained and scarred. A ledger-shaped datapad holstered at her hip like a weapon. No jewelry except a thick ring of tarnished silver on her right ring finger — possibly a keepsake. Overall appearance is Tier 4-5: functional, durable, unmarked by status symbols."
   },
-  "image_prompt": "Emiliano Montalvo-Balasanyan, 162cm compact frame with broad shoulders and functional muscle, standing still with economical precision on a weathered basin dock at dusk. Deep warm brown skin with complex multi-regional undertones—olive-bronze from East and South Asian heritage blending into gold-bronze from Latin American and Middle Eastern ancestry, enriched by Sub-Saharan African genetics. Deeply weathered face with defined cheekbones and creased lines from decades squinting at water glare. Long brown locs with silver streaking, pinned up under a salt-stained faded navy captain's cap. Augmented eyes with concentric amber and black abacus-pattern rings that scroll subtly—visible during calculation. Faded Polynesian wave tattoo on left forearm overlaid with sharp Czech geometric border lines. Horizontal 6cm scar across right cheekbone. Callused hands with visible subdermal grip-texture dimpling, marked by scattered thumb-sized burn scars. Dressed in practical waterproofed layers—muted grays, blacks, deep blues; reinforced cargo pants, waterproof jacket with multiple pockets, heavy salt-stained boots. Tarnished silver ring on right ring finger. Ledger-shaped datapad holstered at hip. Industrial basin lighting, cool shadows and warm dock lamplight, GLMZ atmosphere, moody and grounded. --ar 2:3 --v 6",
+  "image_prompt": "Fritz Montalvo-Balasanyan, 162cm compact frame with broad shoulders and functional muscle, standing still with economical precision on a weathered basin dock at dusk. Deep warm brown skin with complex multi-regional undertones—olive-bronze from East and South Asian heritage blending into gold-bronze from Latin American and Middle Eastern ancestry, enriched by Sub-Saharan African genetics. Deeply weathered face with defined cheekbones and creased lines from decades squinting at water glare. Long brown locs with silver streaking, pinned up under a salt-stained faded navy captain's cap. Augmented eyes with concentric amber and black abacus-pattern rings that scroll subtly—visible during calculation. Faded Polynesian wave tattoo on left forearm overlaid with sharp Czech geometric border lines. Horizontal 6cm scar across right cheekbone. Callused hands with visible subdermal grip-texture dimpling, marked by scattered thumb-sized burn scars. Dressed in practical waterproofed layers—muted grays, blacks, deep blues; reinforced cargo pants, waterproof jacket with multiple pockets, heavy salt-stained boots. Tarnished silver ring on right ring finger. Ledger-shaped datapad holstered at hip. Industrial basin lighting, cool shadows and warm dock lamplight, GLMZ atmosphere, moody and grounded. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 33.7,
     "Middle Eastern": 24.3,

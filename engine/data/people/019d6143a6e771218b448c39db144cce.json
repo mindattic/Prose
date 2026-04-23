@@ -2,10 +2,7 @@
   "id": "019d6143a6e771218b448c39db144cce",
   "type": "character",
   "name": "Ghaith Árnason",
-  "aliases": [
-    "Atlas Árnason",
-    "Atlas"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 34,
   "status": "active",
   "location": "Shallowgrave, operates from a converted cold-storage unit beneath the Midden Market, near Ashland and Division",
-  "description": "Atlas Árnason is built compact and efficient, dark-skinned with close-cropped hair she dyes a deep arterial red — not geneware, just dye, because she likes having a choice about it. She has bioluminescent capillary lines mapped faintly across both forearms, a cosmetic mod she got at nineteen that she now finds embarrassing but can't afford to remove, which she will tell you about if you ask and sometimes if you don't. Her surgical augments are serious: stabilizer rigs in both hands, haptic-magnification implants behind her eyes, a subdermal sterile field generator she refers to as 'the bubble.'\n\nShe was two years into a Helix Biosystems surgical residency when she was caught diverting a cadaver organ to a patient who couldn't pay the licensing fees. She does not think she did anything wrong. She thinks Helix Biosystems is wrong, the organ licensing system is wrong, and the entire apparatus that let that patient die six weeks after her termination is wrong. She has constructed an entire ethical framework around her current work — she harvests from the willing (paid donors, usually desperate Tier 1s), she maintains sterile conditions that would shame most licensed clinics, and she charges sliding scale. She genuinely saves lives. She also genuinely sells kidneys to Axiom black-market med-brokers for Φ4,000 a unit. Both things are true.",
+  "description": "Ghaith Árnason is built compact and efficient, dark-skinned with close-cropped hair she dyes a deep arterial red — not geneware, just dye, because she likes having a choice about it. She has bioluminescent capillary lines mapped faintly across both forearms, a cosmetic mod she got at nineteen that she now finds embarrassing but can't afford to remove, which she will tell you about if you ask and sometimes if you don't. Her surgical augments are serious: stabilizer rigs in both hands, haptic-magnification implants behind her eyes, a subdermal sterile field generator she refers to as 'the bubble.'\n\nShe was two years into a Helix Biosystems surgical residency when she was caught diverting a cadaver organ to a patient who couldn't pay the licensing fees. She does not think she did anything wrong. She thinks Helix Biosystems is wrong, the organ licensing system is wrong, and the entire apparatus that let that patient die six weeks after her termination is wrong. She has constructed an entire ethical framework around her current work — she harvests from the willing (paid donors, usually desperate Tier 1s), she maintains sterile conditions that would shame most licensed clinics, and she charges sliding scale. She genuinely saves lives. She also genuinely sells kidneys to Axiom black-market med-brokers for Φ4,000 a unit. Both things are true.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -263,7 +260,7 @@
     "Irontide Tidal Energy",
     "Kang-Petrov Arms KPM-15R 'Reclaim'",
     "Axiom Systems White Noise Bubble Generator WNB-1",
-    "Atlas",
+    "Ghaith",
     "The Pure Hand"
   ],
   "district": "the Gray Zone",
@@ -287,7 +284,7 @@
     "posture_movement": "Economical and controlled. Hands move with surgical precision even when casual; she's learned not to make sudden gestures in clinical spaces. Stands with weight balanced forward slightly, ready to move. Rarely touches her own face. When focused on work, enters a state of almost meditative concentration — everything extraneous falls away.",
     "clothing_style": "Tier 3-4 utilitarian. Loose dark scrubs or surgical-grade clothing in charcoal or black, often with visible staining from work that she doesn't fully clean out because she'll just get more on them. Reinforced cargo pants with deep pockets for tools and supplies. A weathered synth-leather jacket (high-quality, probably five years old, maintained obsessively) for moving through Shallowgrave proper. No jewelry — too much contamination risk. Wears disposable nitrile gloves constantly, carries multiple pairs in jacket pockets."
   },
-  "image_prompt": "Atlas Árnason, a 162cm lean compact figure with warm olive-tan medium skin tone and golden undertones reflecting Middle Eastern, South Asian, and Northern European ancestry. Deep arterial red short hair with precise fade styling. Dark brown eyes with faint silver neural scarring at inner corners. Fine-lined face with strong cheekbones and defined jawline, surgical precision in posture. Bioluminescent neon-blue capillary tracery glowing across both forearms in vascular patterns, brightest at wrists. Metallic stabilizer rig articulation visible at knuckles and wrist joints. Wearing dark charcoal surgical-grade scrubs with work stains, reinforced cargo pants, weathered synth-leather jacket. Disposable nitrile gloves. Underground clinic lighting casting cool shadows across face. Meditative concentration, economical controlled movement. GLMZ, Great Lakes Metropolitan Zone, clinical precision meets augmented capability. --ar 2:3 --v 6",
+  "image_prompt": "Ghaith Árnason, a 162cm lean compact figure with warm olive-tan medium skin tone and golden undertones reflecting Middle Eastern, South Asian, and Northern European ancestry. Deep arterial red short hair with precise fade styling. Dark brown eyes with faint silver neural scarring at inner corners. Fine-lined face with strong cheekbones and defined jawline, surgical precision in posture. Bioluminescent neon-blue capillary tracery glowing across both forearms in vascular patterns, brightest at wrists. Metallic stabilizer rig articulation visible at knuckles and wrist joints. Wearing dark charcoal surgical-grade scrubs with work stains, reinforced cargo pants, weathered synth-leather jacket. Disposable nitrile gloves. Underground clinic lighting casting cool shadows across face. Meditative concentration, economical controlled movement. GLMZ, Great Lakes Metropolitan Zone, clinical precision meets augmented capability. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Middle Eastern": 58.5,
     "Northern European": 21.2,

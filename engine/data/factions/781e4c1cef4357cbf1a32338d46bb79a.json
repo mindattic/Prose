@@ -1,11 +1,11 @@
 {
   "id": "781e4c1cef4357cbf1a32338d46bb79a",
   "type": "faction",
-  "name": "The Threshold",
+  "name": "The Seam",
   "aliases": [],
   "motto": "The line between legal and illegal is where we live.",
-  "description": "The Threshold is a fixer network — a group of approximately 35 intermediaries who connect clients with operators, negotiate contracts, manage logistics, and take a percentage for making things happen. They are not mercenaries themselves. They are the people mercenaries call when they need work, and the people clients call when they need a mercenary but don't know one.\n\nEvery fixer in the Threshold maintains a roster of reliable operators — runners, fighters, technicians, specialists of every kind — and a list of clients who need services they can't obtain through legitimate channels. When a match is made, the fixer negotiates terms, handles payment escrow, and manages the relationship between parties who usually prefer not to know each other's names. The fixer's value is trust: both parties trust the fixer to be honest, to hold the money, and to enforce the deal.\n\nThe Threshold is not a hierarchy — it's a professional association of independent fixers who share information, refer clients, and maintain shared standards of practice. A fixer who cheats a client or an operator gets expelled, and expulsion means losing access to the network that makes the business possible. This self-regulation produces a level of reliability that the gray market otherwise lacks.",
-  "ideology": "The market exists. People need things done. Other people can do those things. We connect them. The Threshold's fixers are pragmatists who view themselves as facilitators of inevitable transactions.",
+  "description": "The Seam is a fixer network — a group of approximately 35 intermediaries who connect clients with operators, negotiate contracts, manage logistics, and take a percentage for making things happen. They are not mercenaries themselves. They are the people mercenaries call when they need work, and the people clients call when they need a mercenary but don't know one.\n\nEvery fixer in the Seam maintains a roster of reliable operators — runners, fighters, technicians, specialists of every kind — and a list of clients who need services they can't obtain through legitimate channels. When a match is made, the fixer negotiates terms, handles payment escrow, and manages the relationship between parties who usually prefer not to know each other's names. The fixer's value is trust: both parties trust the fixer to be honest, to hold the money, and to enforce the deal.\n\nThe Seam is not a hierarchy — it's a professional association of independent fixers who share information, refer clients, and maintain shared standards of practice. A fixer who cheats a client or an operator gets expelled, and expulsion means losing access to the network that makes the business possible. This self-regulation produces a level of reliability that the gray market otherwise lacks.",
+  "ideology": "The market exists. People need things done. Other people can do those things. We connect them. The Seam's fixers are pragmatists who view themselves as facilitators of inevitable transactions.",
   "territory": "Fixers operate from personal offices, bars, and meeting spaces throughout GLMZ. No central headquarters.",
   "leadership": "No formal leader. The longest-serving fixer, a man named Solomon Reyes-Nakamura, is considered first among equals and mediates disputes between fixers.",
   "methods": [
@@ -22,13 +22,13 @@
     "Client lists spanning corporate, criminal, and individual needs",
     "Financial escrow systems ensuring honest dealing",
     "Solomon's decades of experience and network",
-    "The collective reputation of the Threshold network"
+    "The collective reputation of the Seam network"
   ],
   "goals": [],
   "relationships": [],
-  "narrative_function": "The Threshold represents the connective tissue of the gray market — the invisible intermediaries without whom the entire system of freelance operations would collapse.",
+  "narrative_function": "The Seam represents the connective tissue of the gray market — the invisible intermediaries without whom the entire system of freelance operations would collapse.",
   "story_hooks": [
-    "A fixer has been murdered — the first killing of a Threshold member in twelve years. The fixers' neutrality has always protected them. Someone has decided that protection no longer applies, and the entire network is at risk.",
+    "A fixer has been murdered — the first killing of a Seam member in twelve years. The fixers' neutrality has always protected them. Someone has decided that protection no longer applies, and the entire network is at risk.",
     "Solomon has received a contract request that he can't place through normal channels — the client wants something done that every operator on every fixer's roster has refused. The job is either too dangerous, too immoral, or something else entirely."
   ],
   "tags": [
@@ -41,7 +41,6 @@
   ],
   "related_entities": [
     "Tendai Mensah-Konaté",
-    "Threshold",
     "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Blackmarket",
     "Honest Burger"

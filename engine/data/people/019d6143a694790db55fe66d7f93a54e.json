@@ -2,10 +2,7 @@
   "id": "019d6143a694790db55fe66d7f93a54e",
   "type": "character",
   "name": "Calixto Solberg-Anang",
-  "aliases": [
-    "Remi Solberg-Anang",
-    "Remi"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
@@ -13,7 +10,7 @@
   "age": 28,
   "status": "active",
   "location": "The Stockyard — Bay 7 of the Grainfort vehicle warehouse complex, third sublevel, near sub-level access near State and Van Buren",
-  "description": "Remi Solberg-Anang is lean and angular with deep brown skin, a shaved head, and a geneware modification that makes the left half of their jaw and cheekbone emit a faint copper-toned bioluminescence under stress or exertion — a cosmetic mod they got at nineteen that they've grown to dislike but can't afford to remove. Their arms are heavily modified: one is a full prosthetic replacement below the elbow, matte black with exposed joint mechanisms they consider aesthetically correct; the other has a subdermal toolkit implanted along the forearm. They are almost always covered in vehicle lubricant and almost never bother apologizing for it. They wear a mechanics' coverall with the arms torn off and a collection of salvaged badges and patches that function as neighborhood ID.\n\nRemi Solberg-Anang has the particular charisma of someone who is genuinely exceptional at a physical craft — they can strip a Ferrogate Transit hauler of its marketable components in forty minutes flat, and people who watch them work go quiet the way people go quiet watching any form of mastery. Off the tools they are restless, impatient, and prone to saying true things in the bluntest possible configuration. They have strong opinions about which E.L.F.s are worth propitiating and which are noise: they maintain a small shrine to a data-spirit they believe inhabits the Grainfort warehouse's aging electrical grid, which they call 'the Socket,' and they leave it burned-out components as offerings.",
+  "description": "Calixto Solberg-Anang is lean and angular with deep brown skin, a shaved head, and a geneware modification that makes the left half of their jaw and cheekbone emit a faint copper-toned bioluminescence under stress or exertion — a cosmetic mod they got at nineteen that they've grown to dislike but can't afford to remove. Their arms are heavily modified: one is a full prosthetic replacement below the elbow, matte black with exposed joint mechanisms they consider aesthetically correct; the other has a subdermal toolkit implanted along the forearm. They are almost always covered in vehicle lubricant and almost never bother apologizing for it. They wear a mechanics' coverall with the arms torn off and a collection of salvaged badges and patches that function as neighborhood ID.\n\nCalixto Solberg-Anang has the particular charisma of someone who is genuinely exceptional at a physical craft — they can strip a Ferrogate Transit hauler of its marketable components in forty minutes flat, and people who watch them work go quiet the way people go quiet watching any form of mastery. Off the tools they are restless, impatient, and prone to saying true things in the bluntest possible configuration. They have strong opinions about which E.L.F.s are worth propitiating and which are noise: they maintain a small shrine to a data-spirit they believe inhabits the Grainfort warehouse's aging electrical grid, which they call 'the Socket,' and they leave it burned-out components as offerings.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -251,7 +248,7 @@
     "Grainfort",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Copper",
-    "Frost Boudiaf",
+    "Folakemi Boudiaf",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
   "district": "The Underworld",
@@ -275,7 +272,7 @@
     "posture_movement": "Economical and precise; moves like someone who has trained their body for repetitive mechanical work; stands with weight distributed for balance and quick access to tools; hands are rarely still, frequently manipulating objects or making small adjustments; maintains steady eye contact but with a restless quality, as if calculating disassembly sequences even during conversation",
     "clothing_style": "Mechanics' coverall in faded grey industrial fabric with both sleeves torn off at mid-bicep, exposing the prosthetic and implant work; chest and shoulders covered in salvaged badges, patches, and neighborhood identification markers sewn or pinned directly to the fabric; boots are heavy-treaded work grade, reinforced at the heel and toe; no jewelry or decorative items except the functional patches"
   },
-  "image_prompt": "Remi Solberg-Anang, 172cm lean mechanic with warm bronze skin and golden undertones, shaved head revealing high cheekbones and angular jawline, dark brown eyes with slight upward cant, faint copper bioluminescent geneware tracery visible on left jaw under stress. Full matte-black prosthetic left arm below elbow with exposed joint mechanisms and articulated finger servos. Right forearm bears visible subdermal implant scarring with integrated tool ports. Wearing faded grey mechanics' coverall with both sleeves torn off at mid-bicep, chest covered in salvaged badges and patches. Heavy-treaded work boots. Hands marked with chronic mechanical lubricant stains. Standing in economical posture with restless hands, steady gaze. GLMZ Great Lakes Metropolitan Zone, industrial workshop setting, neon accent lighting catching the bioluminescent geneware, gritty and determined atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Calixto Solberg-Anang, 172cm lean mechanic with warm bronze skin and golden undertones, shaved head revealing high cheekbones and angular jawline, dark brown eyes with slight upward cant, faint copper bioluminescent geneware tracery visible on left jaw under stress. Full matte-black prosthetic left arm below elbow with exposed joint mechanisms and articulated finger servos. Right forearm bears visible subdermal implant scarring with integrated tool ports. Wearing faded grey mechanics' coverall with both sleeves torn off at mid-bicep, chest covered in salvaged badges and patches. Heavy-treaded work boots. Hands marked with chronic mechanical lubricant stains. Standing in economical posture with restless hands, steady gaze. GLMZ Great Lakes Metropolitan Zone, industrial workshop setting, neon accent lighting catching the bioluminescent geneware, gritty and determined atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Southeast Asian": 65.2,
     "Indigenous American": 25.2,

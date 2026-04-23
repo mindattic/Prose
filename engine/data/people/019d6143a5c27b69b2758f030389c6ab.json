@@ -2,10 +2,7 @@
   "id": "019d6143a5c27b69b2758f030389c6ab",
   "type": "character",
   "name": "Emi Mbekele",
-  "aliases": [
-    "Daniela Mbekele",
-    "Daniela"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 61,
   "status": "active",
   "location": "Geartown, Little Furnace, near Milwaukee and North Ave",
-  "description": "Daniela Mbekele is a big man gone soft at the middle, with dark brown skin, a white-streaked beard he keeps neatly shaped, and deep-set amber eyes behind magnification lenses permanently clipped to his face like a second pair. His right arm from the elbow down is his own oldest prototype — a functional prosthetic he built thirty years ago and has upgraded piece by piece ever since, currently somewhere around its fourteenth major revision. He finds this funny. He calls it his 'living resume.' His workshop smells of industrial lubricant and warm solder and the dried herbs he burns as offerings to the Gray Zone-mounted E.L.F. shrine in the corner.\n\nHe is patient, unhurried, and has a gift for understanding what a client actually needs from a prosthetic as opposed to what they say they want. He asks about their job, their hobbies, whether they have a partner who touches their hands, what they're afraid they won't be able to do anymore. He fits accordingly. He doesn't stock the highest-end components and doesn't pretend to — his clients are Tier 1 and 2 workers who need something durable and honest, not something that impresses people at a corporate mixer. He is deeply proud of this.",
+  "description": "Emi Mbekele is a big man gone soft at the middle, with dark brown skin, a white-streaked beard he keeps neatly shaped, and deep-set amber eyes behind magnification lenses permanently clipped to his face like a second pair. His right arm from the elbow down is his own oldest prototype — a functional prosthetic he built thirty years ago and has upgraded piece by piece ever since, currently somewhere around its fourteenth major revision. He finds this funny. He calls it his 'living resume.' His workshop smells of industrial lubricant and warm solder and the dried herbs he burns as offerings to the Gray Zone-mounted E.L.F. shrine in the corner.\n\nHe is patient, unhurried, and has a gift for understanding what a client actually needs from a prosthetic as opposed to what they say they want. He asks about their job, their hobbies, whether they have a partner who touches their hands, what they're afraid they won't be able to do anymore. He fits accordingly. He doesn't stock the highest-end components and doesn't pretend to — his clients are Tier 1 and 2 workers who need something durable and honest, not something that impresses people at a corporate mixer. He is deeply proud of this.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -269,7 +266,7 @@
     "posture_movement": "Moves with deliberate, economical grace — no wasted motion. Stands slightly forward-leaning as if habitually bending toward work. His right prosthetic arm moves with precise, measured control; he favors his biological left for fine work. Speaks with his hands when engaged. Tends to remove his magnification lenses and clean them while listening to clients — a meditative gesture.",
     "clothing_style": "Tier 3-4 working professional: weathered canvas shop apron in charcoal over a long-sleeved cotton undershirt (sleeves rolled to mid-forearm), worn to soften the appearance of the prosthetic. Dark durable pants with reinforced pockets. Slip-on boots with oil-resistant soles, scuffed and practical. A worn linen jacket hangs on a hook for when he leaves the workshop — Geartown-made, unpretentious. No jewelry except for a small bronze E.L.F. charm on a simple cord around his neck (worn under his shirt). His clothing is clean but never new; everything is maintained rather than replaced."
   },
-  "image_prompt": "Daniela Mbekele, tall broad-shouldered man with deep rich brown skin carrying reddish-golden undertones, strong angular cheekbones from Afro-Latin and South Asian heritage. Dark brown hair with white at temples and full medium beard, naturally deep-set amber-brown eyes. Worn workshop setting under industrial fluorescent lights, 2226. Face lined from decades of precision work, visible pale linear scar on left neck. Left hand shows fine retractable claw extensions and old burn scars; right arm is matte-black weathered prosthetic with aluminum joints and tool-interface ports, visibly patched and re-welded. Brass-framed magnification lenses clip across face. Wearing charcoal canvas apron over long-sleeved rolled cotton shirt, dark reinforced pants, oil-resistant boots. Leans forward habitually. Standing near workbench, hands ready for fine work, quiet concentration. GLMZ 2200s, gritty Geartown workshop aesthetic, practical and precise. --ar 2:3 --v 6",
+  "image_prompt": "Emi Mbekele, tall broad-shouldered man with deep rich brown skin carrying reddish-golden undertones, strong angular cheekbones from Afro-Latin and South Asian heritage. Dark brown hair with white at temples and full medium beard, naturally deep-set amber-brown eyes. Worn workshop setting under industrial fluorescent lights, 2226. Face lined from decades of precision work, visible pale linear scar on left neck. Left hand shows fine retractable claw extensions and old burn scars; right arm is matte-black weathered prosthetic with aluminum joints and tool-interface ports, visibly patched and re-welded. Brass-framed magnification lenses clip across face. Wearing charcoal canvas apron over long-sleeved rolled cotton shirt, dark reinforced pants, oil-resistant boots. Leans forward habitually. Standing near workbench, hands ready for fine work, quiet concentration. GLMZ 2200s, gritty Geartown workshop aesthetic, practical and precise. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 60.9,
     "Sub-Saharan African": 29,

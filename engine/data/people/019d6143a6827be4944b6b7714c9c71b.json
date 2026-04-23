@@ -2,10 +2,7 @@
   "id": "019d6143a6827be4944b6b7714c9c71b",
   "type": "character",
   "name": "Hilal Arredondo",
-  "aliases": [
-    "Alejandro Arredondo",
-    "Alejandro"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 47,
   "status": "active",
   "location": "The Narrows, beneath Ferrogate Transit overpass junction 14-C, near North Ave and Milwaukee",
-  "description": "Alejandro Arredondo is a broad-shouldered man with deep umber skin that carries the scattered shine of old bioluminescent ink — a cosmetic mod from his twenties that has faded unevenly, leaving constellations of dim gold light across his forearms and collarbone. His hair is close-cropped and salted at the temples, and he wears magnifying lenses that flip down over his eyes during procedures, giving him the look of a very calm insect. He smells perpetually of antiseptic and bitter karité tea. His hands are impossibly steady.\n\nTobi trained two years of a proper surgical residency at Aurochs Medical Complex before a licensing dispute with Helix Biosystems — they claimed he used proprietary gene-threading techniques without a corporate contract — ended his formal career. He does not speak of this with bitterness anymore, at least not where anyone can hear. He is meticulous, unhurried, and prone to explaining exactly what he is doing and why, as though every patient is also a student. He charges what people can pay and writes the rest off in a ledger he keeps but never balances.",
+  "description": "Hilal Arredondo is a broad-shouldered man with deep umber skin that carries the scattered shine of old bioluminescent ink — a cosmetic mod from his twenties that has faded unevenly, leaving constellations of dim gold light across his forearms and collarbone. His hair is close-cropped and salted at the temples, and he wears magnifying lenses that flip down over his eyes during procedures, giving him the look of a very calm insect. He smells perpetually of antiseptic and bitter karité tea. His hands are impossibly steady.\n\nTobi trained two years of a proper surgical residency at Aurochs Medical Complex before a licensing dispute with Helix Biosystems — they claimed he used proprietary gene-threading techniques without a corporate contract — ended his formal career. He does not speak of this with bitterness anymore, at least not where anyone can hear. He is meticulous, unhurried, and prone to explaining exactly what he is doing and why, as though every patient is also a student. He charges what people can pay and writes the rest off in a ledger he keeps but never balances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -220,7 +217,7 @@
     "The Narrows Compact",
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "VitaCore FlowGuard Hemodynamic Regulator",
-    "Haze Johansson",
+    "Akosua Johansson",
     "The Pure Hand",
     "Compass Rose",
     "Gold"
@@ -246,7 +243,7 @@
     "posture_movement": "Moves with deliberate, economical gestures. Stands with weight evenly distributed, ready for long hours of work. His hands are almost preternaturally steady—he does not fidget or adjust his clothing compulsively. Speaks slowly, often pausing mid-sentence to demonstrate or clarify a point. When focused on a procedure, his entire body quiets into absolute stillness.",
     "clothing_style": "Tier 3-4 working professional. Wears a heavy canvas work apron over plain grey or navy scrubs—the apron pocketed and stained with antiseptic, iodine, and trace amounts of blood. Under the apron, usually a long-sleeved undershirt in grey or cream to cover the augmentation scars. Worn but well-maintained leather work boots with good grip. A faded tactical vest in charcoal (original purpose unknown, repurposed as storage) worn on cooler days. No visible corpo branding or luxury items; everything is functional and replaceable. Wears a single piece of jewelry: a worn bronze ring on his right ring finger, unmarked and very old."
   },
-  "image_prompt": "Alejandro Arredondo, 188cm tall surgeon with warm bronze-olive skin reflecting Hispanic/Mesoamerican-East Asian-Central Asian heritage blend, prominent cheekbones and slightly flattened nasal bridge, dark brown eyes with warm undertone. Salt-grey at temples, close-cropped dark brown hair, clean-shaven. Wears grey scrubs under worn canvas work apron stained with iodine and antiseptic, faded charcoal tactical vest, leather work boots. Flip-down magnifying lens goggles around neck, scratched and taped. Faded gold bioluminescent ink constellation tattoos visible on forearms and collarbone, patchy from age. Worn bronze ring on right ring finger. Posture deliberate and steady, hands preternaturally still. Standing in dim clinic lighting, surgical precision and weathered professionalism evident. GLMZ setting, gritty medical underground aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Hilal Arredondo, 188cm tall surgeon with warm bronze-olive skin reflecting Hispanic/Mesoamerican-East Asian-Central Asian heritage blend, prominent cheekbones and slightly flattened nasal bridge, dark brown eyes with warm undertone. Salt-grey at temples, close-cropped dark brown hair, clean-shaven. Wears grey scrubs under worn canvas work apron stained with iodine and antiseptic, faded charcoal tactical vest, leather work boots. Flip-down magnifying lens goggles around neck, scratched and taped. Faded gold bioluminescent ink constellation tattoos visible on forearms and collarbone, patchy from age. Worn bronze ring on right ring finger. Posture deliberate and steady, hands preternaturally still. Standing in dim clinic lighting, surgical precision and weathered professionalism evident. GLMZ setting, gritty medical underground aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 60.8,
     "East Asian": 20.2,

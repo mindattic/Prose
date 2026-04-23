@@ -2,10 +2,7 @@
   "id": "019d6143a6477a2f8246acf1c0798f0e",
   "type": "character",
   "name": "Gertrudis Trujillo",
-  "aliases": [
-    "Atlas Trujillo",
-    "Atlas"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 29,
   "status": "active",
   "location": "Operates his cart at the intersection of two elevated walkways in the Bronzeline district, near the Ferrogate transit relay junction, near North Ave and Damen",
-  "description": "Atlas Trujillo is lean and quick, with deep brown skin and a constellation of bioluminescent freckles across his cheeks and forearms — a cosmetic genemod he got at nineteen and has never regretted, though they pulse faster when he's agitated, which he finds embarrassing. His hair is kept short on the sides, grown out into a soft cloud on top, often dusted with dried chili residue he doesn't notice. He has a long nose and an expressive mouth that defaults to a grin that's one part genuine warmth and two parts salesmanship. A small Ferrogate Transit logo is tattooed behind his left ear from a brief period he'd rather not discuss.\n\nAtlas Trujillo is relentlessly social and genuinely curious about people in a way that can be hard to distinguish from nosiness. He remembers orders perfectly — not just what people eat, but what they ordered the first time, what they ordered the day something bad happened to them, what changes in someone's order say about the state of their life. He has no filter on his opinions and will share them freely unless he senses real pain, at which point he becomes unexpectedly gentle. He has enormous ambitions for his cart and absolutely no plan for them. He talks about opening a real restaurant with the same frequency and specificity as people talk about dreams they don't actually intend to pursue.",
+  "description": "Gertrudis Trujillo is lean and quick, with deep brown skin and a constellation of bioluminescent freckles across his cheeks and forearms — a cosmetic genemod he got at nineteen and has never regretted, though they pulse faster when he's agitated, which he finds embarrassing. His hair is kept short on the sides, grown out into a soft cloud on top, often dusted with dried chili residue he doesn't notice. He has a long nose and an expressive mouth that defaults to a grin that's one part genuine warmth and two parts salesmanship. A small Ferrogate Transit logo is tattooed behind his left ear from a brief period he'd rather not discuss.\n\nGertrudis Trujillo is relentlessly social and genuinely curious about people in a way that can be hard to distinguish from nosiness. He remembers orders perfectly — not just what people eat, but what they ordered the first time, what they ordered the day something bad happened to them, what changes in someone's order say about the state of their life. He has no filter on his opinions and will share them freely unless he senses real pain, at which point he becomes unexpectedly gentle. He has enormous ambitions for his cart and absolutely no plan for them. He talks about opening a real restaurant with the same frequency and specificity as people talk about dreams they don't actually intend to pursue.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -232,7 +229,7 @@
     "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Residue (I Still Have Your Feed)",
-    "Atlas",
+    "Gertrudis",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Compass Rose",
     "Arcturus CK-5 'Bloodhound'"
@@ -257,7 +254,7 @@
     "posture_movement": "Stands with weight on his toes, ready to pivot or lean into sales pitch; constant fidgeting with hands when talking (gestures with ladles, wipes chili from apron, adjusts cart struts); walks with economical, quick steps; defaults to leaning against his cart with arms crossed or elbows braced, depending on how engaged he is with a customer",
     "clothing_style": "Tier 3 working class: faded charcoal chef's coat with embroidered 'Kweku's' in mismatched lettering he did himself; underneath, a thermal undershirt in various states of staining; cargo pants in dark grey with grease and sauce marks; weatherproof apron with deep pockets for small supplies; scuffed composite-toe work boots; a thin stainless-steel chain around his neck holding a small brass luck charm his grandmother gave him"
   },
-  "image_prompt": "Portrait of Atlas Trujillo, 175cm lean street vendor with deep black voluminous cloud curls and faded undercut. Rich warm brown skin with East Asian olive undertones, Sub-Saharan African depth, and Hispanic/Latin American golden warmth. Angular cheekbones broadened by African facial structure, fuller lips with prominent definition. Deep brown eyes with faint cathode-orange glow from retinal implant. Constellation of soft cyan-blue bioluminescent freckles across cheeks and nose bridge. Five o'clock shadow with dark undertones. Faded charcoal chef's coat embroidered 'Kweku's', grey cargo pants stained with chili sauce, weatherproof apron, composite-toe work boots, brass charm on stainless-steel chain. Leaning against his food cart, hand gesturing mid-pitch, ready weight-on-toes stance. Warm easy grin, constant fidgeting energy. GLMZ Great Lakes Metropolitan Zone street food vendor aesthetic. Neon signs reflected in steam from cart, moody evening lighting with ambient cyan freckle glow. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Gertrudis Trujillo, 175cm lean street vendor with deep black voluminous cloud curls and faded undercut. Rich warm brown skin with East Asian olive undertones, Sub-Saharan African depth, and Hispanic/Latin American golden warmth. Angular cheekbones broadened by African facial structure, fuller lips with prominent definition. Deep brown eyes with faint cathode-orange glow from retinal implant. Constellation of soft cyan-blue bioluminescent freckles across cheeks and nose bridge. Five o'clock shadow with dark undertones. Faded charcoal chef's coat embroidered 'Kweku's', grey cargo pants stained with chili sauce, weatherproof apron, composite-toe work boots, brass charm on stainless-steel chain. Leaning against his food cart, hand gesturing mid-pitch, ready weight-on-toes stance. Warm easy grin, constant fidgeting energy. GLMZ Great Lakes Metropolitan Zone street food vendor aesthetic. Neon signs reflected in steam from cart, moody evening lighting with ambient cyan freckle glow. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "East Asian": 28.8,
     "Hispanic/Latin American": 28.4,

@@ -2,10 +2,7 @@
   "id": "019d6143a6f770bfa9e89b3053961073",
   "type": "character",
   "name": "Ghazi Balasanyan",
-  "aliases": [
-    "Atlas Balasanyan",
-    "Atlas"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
@@ -13,7 +10,7 @@
   "age": 33,
   "status": "active",
   "location": "Meridian Core, Gage Circuit research cluster, near State and Monroe",
-  "description": "Atlas Balasanyan has a face that people describe as 'always mid-thought' — slightly parted lips, eyes that track something no one else can see, a faint frown of concentration that strangers sometimes misread as disapproval. They are medium height, with warm brown skin, natural hair worn in a large puff that they absentmindedly touch when thinking, and bioluminescent patches along their jaw and temples that shift between soft green and pale gold depending on their mood — geneware they got at twenty-two as a kind of bold declaration and now simply live with. They dress practically: cargo layers, good shoes, always a secondary input device clipped somewhere on their person.\n\nAtlas Balasanyan is intellectually volcanic. They generate hypotheses the way some people generate small talk — constantly, involuntarily, often before they've said hello. Their field is formally classified as xenolinguistics, but what they actually do is build interpretive frameworks for E.L.F. communication, a pursuit that most of their colleagues consider either brilliant or unhinged. They believe E.L.F.s have a form of language that predates human digital infrastructure by conceptual millennia. They have partial evidence for this. The partial-ness keeps them awake.",
+  "description": "Ghazi Balasanyan has a face that people describe as 'always mid-thought' — slightly parted lips, eyes that track something no one else can see, a faint frown of concentration that strangers sometimes misread as disapproval. They are medium height, with warm brown skin, natural hair worn in a large puff that they absentmindedly touch when thinking, and bioluminescent patches along their jaw and temples that shift between soft green and pale gold depending on their mood — geneware they got at twenty-two as a kind of bold declaration and now simply live with. They dress practically: cargo layers, good shoes, always a secondary input device clipped somewhere on their person.\n\nGhazi Balasanyan is intellectually volcanic. They generate hypotheses the way some people generate small talk — constantly, involuntarily, often before they've said hello. Their field is formally classified as xenolinguistics, but what they actually do is build interpretive frameworks for E.L.F. communication, a pursuit that most of their colleagues consider either brilliant or unhinged. They believe E.L.F.s have a form of language that predates human digital infrastructure by conceptual millennia. They have partial evidence for this. The partial-ness keeps them awake.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -253,7 +250,7 @@
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "Circuit",
     "Nesting Doll",
-    "Atlas",
+    "Ghazi",
     "Cargo Tacos",
     "The Pale Mile",
     "Gold"
@@ -278,7 +275,7 @@
     "posture_movement": "Habitually leans forward when listening or thinking, weight distributed unevenly as if ready to pivot toward a terminal. Frequent hand gestures during speech — fingers often mime typing or drawing patterns in air. Movement is efficient but somewhat abstracted, as if part of their attention is always elsewhere. When deeply focused, becomes nearly motionless except for eyes and lips (subvocal pattern recognition)",
     "clothing_style": "Tier 3 practical-academic aesthetic with Tier 2 quality components. Favors cargo jackets and vests in muted tones (grey, dark blue, black) with multiple pockets and reinforced stress points. Wears layered synthetic blends designed for temperature regulation during long computing sessions. Good athletic shoes (understated brands like Meridian Standard Issue or recycled synthetics) kept in excellent condition. Always has secondary input device — usually a wrist-mounted haptic pad or neural stylus — clipped to belt or vest pocket. Minimal jewelry except for a faint silver band on left ring finger (possibly symbolic rather than romantic). Generally appears as someone who thinks about clothing as functional architecture rather than expression, yet manages to appear intellectually purposeful rather than disheveled"
   },
-  "image_prompt": "Atlas Balasanyan, 2226 neo-noir character, 168cm lean build, medium natural black puff hair with texture. Warm golden-brown complexion with olive undertones reflecting Middle Eastern, Southeast Asian, and South Asian heritage blend. Deep brown alert eyes. Clean-shaven defined cheekbones. Bioluminescent green-gold patches glowing along jawline and temples in soft ambient lighting. Fine silvery scar visible on left temple in profile. Wearing layered grey cargo jacket with reinforced pockets and synthetic blend layers, dark athletic shoes, black haptic input gloves with neural interface nodules at wrists. Silver band on left ring finger. Leaning forward with absorbed focus, hands gesturing in mid-air as if typing. Subvocal concentration, slightly rounded shoulders from terminal work. Dim office environment with neon accent lighting catching bioluminescence. GLMZ 2200s aesthetic, intellectual purposeful bearing, efficient movement. --ar 2:3 --v 6",
+  "image_prompt": "Ghazi Balasanyan, 2226 neo-noir character, 168cm lean build, medium natural black puff hair with texture. Warm golden-brown complexion with olive undertones reflecting Middle Eastern, Southeast Asian, and South Asian heritage blend. Deep brown alert eyes. Clean-shaven defined cheekbones. Bioluminescent green-gold patches glowing along jawline and temples in soft ambient lighting. Fine silvery scar visible on left temple in profile. Wearing layered grey cargo jacket with reinforced pockets and synthetic blend layers, dark athletic shoes, black haptic input gloves with neural interface nodules at wrists. Silver band on left ring finger. Leaning forward with absorbed focus, hands gesturing in mid-air as if typing. Subvocal concentration, slightly rounded shoulders from terminal work. Dim office environment with neon accent lighting catching bioluminescence. GLMZ 2200s aesthetic, intellectual purposeful bearing, efficient movement. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Middle Eastern": 52.7,
     "Southeast Asian": 21.7,

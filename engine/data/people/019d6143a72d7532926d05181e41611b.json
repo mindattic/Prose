@@ -2,10 +2,7 @@
   "id": "019d6143a72d7532926d05181e41611b",
   "type": "character",
   "name": "Geir Jaramillo-Konaté",
-  "aliases": [
-    "Soledad Jaramillo-Konaté",
-    "Soledad"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 71,
   "status": "active",
   "location": "Montclare Quiet — a ground-floor unit in a Ferrogate Transit pension block, unit 3, near Milwaukee and Damen",
-  "description": "Soledad Jaramillo-Konaté is built like something that was once very large and has been slowly compressed by time — broad shoulders still present but rounded, a barrel chest that has dropped an inch or two, hands that could palm a person's skull still steady and enormous. His skin is a warm mid-brown with reddish undertones, and his face is a landscape of old decisions: a jaw broken twice and reset imperfectly, a nose that went left somewhere in the Kenosha Crossing siege of 2154, a ragged scar running from his right temple into his hairline where his combat geneware was surgically removed after decommissioning. His remaining hair is white and kept in a close crop. He walks with a slight forward lean, always, like he's still expecting incoming.\n\nHe fought thirteen years for Ringo Corporation's private military division, first as infantry, then as a squad sergeant during the Corporate Wars' most brutal middle phase. He came home to a pension that looked decent on paper and has eroded to almost nothing through inflation, while Ringo's lobbying ensured veteran benefits stayed frozen. He is not a bitter man — not exactly — but he has an acute and permanent awareness of exactly how much he was worth to the people who used him, which is different from bitterness the way a bone fracture is different from a bruise. He has three grandchildren living with him and that, he will tell you, is the only math that matters.",
+  "description": "Geir Jaramillo-Konaté is built like something that was once very large and has been slowly compressed by time — broad shoulders still present but rounded, a barrel chest that has dropped an inch or two, hands that could palm a person's skull still steady and enormous. His skin is a warm mid-brown with reddish undertones, and his face is a landscape of old decisions: a jaw broken twice and reset imperfectly, a nose that went left somewhere in the Kenosha Crossing siege of 2154, a ragged scar running from his right temple into his hairline where his combat geneware was surgically removed after decommissioning. His remaining hair is white and kept in a close crop. He walks with a slight forward lean, always, like he's still expecting incoming.\n\nHe fought thirteen years for Ringo Corporation's private military division, first as infantry, then as a squad sergeant during the Corporate Wars' most brutal middle phase. He came home to a pension that looked decent on paper and has eroded to almost nothing through inflation, while Ringo's lobbying ensured veteran benefits stayed frozen. He is not a bitter man — not exactly — but he has an acute and permanent awareness of exactly how much he was worth to the people who used him, which is different from bitterness the way a bone fracture is different from a bruise. He has three grandchildren living with him and that, he will tell you, is the only math that matters.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -287,7 +284,7 @@
     "posture_movement": "Slight forward lean—habitual, automatic, as though still braced for incoming fire. Movements economical and precise despite age. Hands are steady and purposeful. When at rest, an underlying tension in shoulders and chest, never fully relaxed.",
     "clothing_style": "Tier 4 practical: faded Ringo Corporation retro-issue grey work shirt (kept for sentimental/identity reasons, worn soft), black synthetic cargo pants with reinforced knees, scuffed composite work boots. A vest in faded navy, pockets filled with maintenance tools and small repair supplies. No jewelry. Wears a digital wristband—old model, probably non-functional subdermal comms interface monitor. Everything is clean and maintained with care, but all items are years old and showing wear."
   },
-  "image_prompt": "Soledad Jaramillo-Konaté, 188cm tall broad-shouldered man with deep mahogany skin and warm brown undertones, weathered face with asymmetrical jaw, deviated nose, prominent scars from combat extraction at right temple and across knuckles, white military-crop hair, dark brown eyes, seated in dimly-lit industrial setting. Wearing faded grey Ringo Corporation work shirt, black reinforced cargo pants, faded navy vest filled with repair tools, scuffed composite boots. Hands show visible knuckle plates under dark skin. Posture tense, forward-leaning, habitual vigilance despite seven decades of life. Subtle cybernetic augmentation visible in stiff leg movement and surgical scar tissue at temple. GLMZ, neon rim lighting, industrial backdrop, photorealistic, dignified worn professionalism --ar 2:3 --v 6",
+  "image_prompt": "Geir Jaramillo-Konaté, 188cm tall broad-shouldered man with deep mahogany skin and warm brown undertones, weathered face with asymmetrical jaw, deviated nose, prominent scars from combat extraction at right temple and across knuckles, white military-crop hair, dark brown eyes, seated in dimly-lit industrial setting. Wearing faded grey Ringo Corporation work shirt, black reinforced cargo pants, faded navy vest filled with repair tools, scuffed composite boots. Hands show visible knuckle plates under dark skin. Posture tense, forward-leaning, habitual vigilance despite seven decades of life. Subtle cybernetic augmentation visible in stiff leg movement and surgical scar tissue at temple. GLMZ, neon rim lighting, industrial backdrop, photorealistic, dignified worn professionalism --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 60.6,
     "Sub-Saharan African": 23.2,

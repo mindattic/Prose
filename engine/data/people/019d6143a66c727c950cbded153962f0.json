@@ -2,10 +2,7 @@
   "id": "019d6143a66c727c950cbded153962f0",
   "type": "character",
   "name": "Ayaan Matsumoto-Valenzuela",
-  "aliases": [
-    "Zara Matsumoto-Valenzuela",
-    "Zara"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 33,
   "status": "active",
   "location": "Tessera Compliance Hub, Edgewater Prism, near Clark and Belmont",
-  "description": "Zara Matsumoto-Valenzuela sits in front of screens for ten hours a day and has developed the particular physical vocabulary of someone who lives in their eyes — she hunches forward when interested, goes completely still when she has found something, and has a habit of touching her temple like she's adjusting an aug that isn't there. Her skin is a deep warm brown, her hair grown out into a large, loose natural that she pins back at work and lets expand freely everywhere else. She has chromatic hair dye that shifts between deep violet and black depending on ambient temperature — a mod she refreshes every few months because it is, she says, the only beautiful thing in her workspace.\n\nShe is Tessera's best surveillance operator in the Edgewater district and she knows it and has stopped pretending she doesn't, which makes her exactly the kind of person her supervisors quietly resent while continuing to rely on. She tracks, correlates, and reconstructs — pieces together narratives from fragmented camera data, transit pings, purchase records, biometric trails. She is very fast and very thorough and occasionally she finds things that nobody asked her to look for, and those are the moments that have started to keep her awake.",
+  "description": "Ayaan Matsumoto-Valenzuela sits in front of screens for ten hours a day and has developed the particular physical vocabulary of someone who lives in their eyes — she hunches forward when interested, goes completely still when she has found something, and has a habit of touching her temple like she's adjusting an aug that isn't there. Her skin is a deep warm brown, her hair grown out into a large, loose natural that she pins back at work and lets expand freely everywhere else. She has chromatic hair dye that shifts between deep violet and black depending on ambient temperature — a mod she refreshes every few months because it is, she says, the only beautiful thing in her workspace.\n\nShe is Tessera's best surveillance operator in the Edgewater district and she knows it and has stopped pretending she doesn't, which makes her exactly the kind of person her supervisors quietly resent while continuing to rely on. She tracks, correlates, and reconstructs — pieces together narratives from fragmented camera data, transit pings, purchase records, biometric trails. She is very fast and very thorough and occasionally she finds things that nobody asked her to look for, and those are the moments that have started to keep her awake.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -265,7 +262,7 @@
     "posture_movement": "Default forward lean with shoulders tensed. Stillness is her baseline when concentrating — she becomes almost statue-like when locked into data work. Frequent unconscious temple-touching gesture (old habit checking for aug adjustments). Deliberate, economical movements outside work context. Rarely makes eye contact during conversations, attention naturally drawn to screens or middle distance.",
     "clothing_style": "Tier 3 pragmatist. At work: fitted dark compression wear (charcoal, navy) with Tessera-issued access badge worn on retention cord. Off-duty: oversized vintage band tees (salvaged from Tier 5 markets), fitted black cargo pants with multiple pockets, worn synthetic leather jacket with internal wiring channels. Always carries handheld secondhand datapad. Minimal jewelry except for a singular thin titanium ring on left index finger. Shoes are practical runner-grade, well-maintained."
   },
-  "image_prompt": "Zara Matsumoto-Valenzuela, 168cm lean neo-noir hacker woman, warm medium-golden brown skin tone blending East Asian, South Asian, and Latin American heritage, pronounced high cheekbones, almond-shaped deep brown eyes with faint analytical overlay, natural shoulder-length coils dyed thermochromic violet-to-black. Slight forward lean, statue-still concentration pose. Temple-touching gesture near concealed neural uplink port. Wearing dark charcoal compression work wear with Tessera access badge over oversized vintage band tee, fitted black cargo pants, worn synthetic leather jacket with internal wiring channels visible. Secondhand datapad in hand, thin titanium ring on left index finger. Nocturnal pallid complexion with fine eye-line creases. Minimal makeup, pragmatic grooming. GLMZ Great Lakes Metropolitan Zone, moody blue-teal neon ambient lighting, screens glowing in background, cinematic future-noir atmosphere. --ar 2:3 --v 6",
+  "image_prompt": "Ayaan Matsumoto-Valenzuela, 168cm lean neo-noir hacker woman, warm medium-golden brown skin tone blending East Asian, South Asian, and Latin American heritage, pronounced high cheekbones, almond-shaped deep brown eyes with faint analytical overlay, natural shoulder-length coils dyed thermochromic violet-to-black. Slight forward lean, statue-still concentration pose. Temple-touching gesture near concealed neural uplink port. Wearing dark charcoal compression work wear with Tessera access badge over oversized vintage band tee, fitted black cargo pants, worn synthetic leather jacket with internal wiring channels visible. Secondhand datapad in hand, thin titanium ring on left index finger. Nocturnal pallid complexion with fine eye-line creases. Minimal makeup, pragmatic grooming. GLMZ Great Lakes Metropolitan Zone, moody blue-teal neon ambient lighting, screens glowing in background, cinematic future-noir atmosphere. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "East Asian": 43.7,
     "South Asian": 28.5,

@@ -2,10 +2,7 @@
   "id": "019d6143a5a97ac1949470d3cc41d849",
   "type": "character",
   "name": "Beliz Wójcik-Malhotra",
-  "aliases": [
-    "Slate Wójcik-Malhotra",
-    "Slate"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
@@ -13,7 +10,7 @@
   "age": 37,
   "status": "active",
   "location": "Kessler Row — arms dealers and augmentation clinics, near Kedzie and Division",
-  "description": "Slate Wójcik-Malhotra are slight and easy to overlook, which is exactly the point. At 37, the augmentation scarring around their temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — bioware adrenaline regulator — keeps calm under fire, controlled hormone release — and they make no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left them with skills and night terrors in equal measure. They work as a poisoner out of Kessler Row, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nWhat Slate Wójcik-Malhotra lacks in subtlety, they compensate for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "description": "Beliz Wójcik-Malhotra are slight and easy to overlook, which is exactly the point. At 37, the augmentation scarring around their temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — bioware adrenaline regulator — keeps calm under fire, controlled hormone release — and they make no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left them with skills and night terrors in equal measure. They work as a poisoner out of Kessler Row, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nWhat Beliz Wójcik-Malhotra lacks in subtlety, they compensate for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.31,
@@ -280,7 +277,7 @@
     "Masquerade",
     "The Unfinished Theorem",
     "The Nearfield",
-    "Slate",
+    "Beliz",
     "SynapTech ReadRoom Social Cue Enhancer",
     "GLMZ"
   ],
@@ -306,7 +303,7 @@
     "posture_movement": "Moves with economical precision — no wasted motion. Sits at angles that favor surveillance of exits. Eyes track sound sources constantly due to the directional mics. Hands are steady, almost unnaturally calm even when discussing lethal compounds. A baseline of contained intensity.",
     "clothing_style": "Tier 4 functional aesthetic — matte black reinforced jacket with internal pockets for equipment, tactical pants with cargo reinforcement, non-descript dark boots with good traction. No logos, no branding, nothing that would catch in a struggle or be memorable to witnesses. Gloves are common. Wears a data-resistant bag across the chest. Everything is chosen for operational efficiency, not aesthetics. Nighttime-appropriate colors across the board."
   },
-  "image_prompt": "Slate Wójcik-Malhotra, 2226 GLMZ operative, 168cm wiry frame. Deep warm brown skin with golden undertones, luminous complexion. High angular cheekbones blending East Asian and South Asian structure with African warmth. Dark brown eyes with amber ring, natural. Dark brown hair with silver threading, pulled back tight. Visible matte black chrome cyberears with LED indicators on temples, surgical scarring unobscured. Jagged scar along right jawline from adrenaline regulator implant, pale chemical burn marks on inner left forearm, faded needle-track scarring on elbows. Economical posture, contained intensity. Wears matte black reinforced tactical jacket, reinforced cargo pants, dark boots, gloves, data-resistant chest bag. No logos or branding. Nighttime-appropriate, operational aesthetic. Sits at exit-surveillance angles. GLMZ 2200s, moody neon-lit industrial setting, cool blue and black shadows, functional not aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Beliz Wójcik-Malhotra, 2226 GLMZ operative, 168cm wiry frame. Deep warm brown skin with golden undertones, luminous complexion. High angular cheekbones blending East Asian and South Asian structure with African warmth. Dark brown eyes with amber ring, natural. Dark brown hair with silver threading, pulled back tight. Visible matte black chrome cyberears with LED indicators on temples, surgical scarring unobscured. Jagged scar along right jawline from adrenaline regulator implant, pale chemical burn marks on inner left forearm, faded needle-track scarring on elbows. Economical posture, contained intensity. Wears matte black reinforced tactical jacket, reinforced cargo pants, dark boots, gloves, data-resistant chest bag. No logos or branding. Nighttime-appropriate, operational aesthetic. Sits at exit-surveillance angles. GLMZ 2200s, moody neon-lit industrial setting, cool blue and black shadows, functional not aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 35.6,
     "Eastern European": 26.3,

@@ -2,10 +2,7 @@
   "id": "019d6143a6577662adc2cfd1be4642c3",
   "type": "character",
   "name": "Farzaneh Prempeh-Citlali",
-  "aliases": [
-    "Aponi Prempeh-Citlali",
-    "Aponi"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 51,
   "status": "active",
   "location": "Irkalla, deep shrine level, in a repurposed transit control room she calls the Index, near Halsted and Division",
-  "description": "Aponi Prempeh-Citlali is a compact, precise woman who moves like she is conscious of leaving no unnecessary impression — small steps, still hands, a habit of placing herself where light doesn't quite reach. Her hair has gone to silver-grey and she wears it very short; her face is sharp-featured, with dark eyes that retain the particular focused quality of someone who spent decades professionally categorizing things. She is fifty-one but looks it honestly, without apology. She has no augmentations and has removed two she previously had, leaving faint scar traces at her temples where a standard cognition-assist had been wired in. The removal of those implants was the last step of erasing herself.\n\nShe was, in her surface life, a senior archivist for a Palladian data governance subsidiary — one of the people who decides what information exists and in what form. She knows how corporate memory works, how records are structured, how deletion operates, and what can and cannot truly be made to disappear. She used that knowledge to vanish twelve years ago, and she now runs the Index: a physical archive of documents, handwritten records, and memorized information that exists nowhere in any network. People come to her to find things that have been deleted from all accessible systems. She charges in labor, not currency.",
+  "description": "Farzaneh Prempeh-Citlali is a compact, precise woman who moves like she is conscious of leaving no unnecessary impression — small steps, still hands, a habit of placing herself where light doesn't quite reach. Her hair has gone to silver-grey and she wears it very short; her face is sharp-featured, with dark eyes that retain the particular focused quality of someone who spent decades professionally categorizing things. She is fifty-one but looks it honestly, without apology. She has no augmentations and has removed two she previously had, leaving faint scar traces at her temples where a standard cognition-assist had been wired in. The removal of those implants was the last step of erasing herself.\n\nShe was, in her surface life, a senior archivist for a Palladian data governance subsidiary — one of the people who decides what information exists and in what form. She knows how corporate memory works, how records are structured, how deletion operates, and what can and cannot truly be made to disappear. She used that knowledge to vanish twelve years ago, and she now runs the Index: a physical archive of documents, handwritten records, and memorized information that exists nowhere in any network. People come to her to find things that have been deleted from all accessible systems. She charges in labor, not currency.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -235,7 +232,7 @@
     "Silver",
     "The Pure Hand",
     "Slagworks Industrial",
-    "Zara Bergqvist",
+    "Auni Bergqvist",
     "Hearthstone Firearms Trail-357 'Pathfinder'"
   ],
   "district": "the Gray Zone",
@@ -258,7 +255,7 @@
     "posture_movement": "Moves in economical, deliberate steps with minimal displacement of air or attention. Hands remain still until needed. She positions herself in shadows or at the edge of rooms as if conscious of occupying as little space as possible. When she does move, it is purposeful — no wasted motion.",
     "clothing_style": "Tier 4 utilitarian, worn with precision. Dark grey or black cotton layers — loose long-sleeved shirt over fitted tank, practical cargo pants with multiple pockets for documents and writing implements. Worn leather journal bag across her body. No visible logos or corporate markers. Shoes are scuffed grey canvas, comfortable for the Irkalla tunnels. Everything is maintained but deliberately aged; nothing new enough to draw attention."
   },
-  "image_prompt": "Aponi Prempeh-Citlali, 158cm tall, compact lean frame, standing in shadow at edge of Irkalla tunnel. Silver-grey cropped short hair, warm deep brown skin with golden reddish undertones, high angular cheekbones, defined jawline, dark unaugmented eyes with archivist's focus. Small temple scars barely visible. 51 years old, clear skin, controlled expression. Wearing dark grey loose long-sleeved shirt over black fitted tank, practical cargo pants with multiple pockets, worn scuffed grey canvas shoes, leather journal bag across body. No augmentations visible. Minimal movement, economical posture, positioned to occupy little space. GLMZ, Great Lakes Metropolitan Zone, underground archive setting, cool dim lighting catching faint scars, moody introspective atmosphere, hyperreal detailed face showing diaspora features, utilitarian aged clothing, journalistic precision. --ar 2:3 --v 6",
+  "image_prompt": "Farzaneh Prempeh-Citlali, 158cm tall, compact lean frame, standing in shadow at edge of Irkalla tunnel. Silver-grey cropped short hair, warm deep brown skin with golden reddish undertones, high angular cheekbones, defined jawline, dark unaugmented eyes with archivist's focus. Small temple scars barely visible. 51 years old, clear skin, controlled expression. Wearing dark grey loose long-sleeved shirt over black fitted tank, practical cargo pants with multiple pockets, worn scuffed grey canvas shoes, leather journal bag across body. No augmentations visible. Minimal movement, economical posture, positioned to occupy little space. GLMZ, Great Lakes Metropolitan Zone, underground archive setting, cool dim lighting catching faint scars, moody introspective atmosphere, hyperreal detailed face showing diaspora features, utilitarian aged clothing, journalistic precision. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Indigenous American": 62.5,
     "Sub-Saharan African": 12.1,

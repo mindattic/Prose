@@ -2,10 +2,7 @@
   "id": "019d6143a63f735d8ca5b773d8b9ec6f",
   "type": "character",
   "name": "Armaan Bah",
-  "aliases": [
-    "Sterling Bah",
-    "Sterling"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 32,
   "status": "active",
   "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near Armitage and Milwaukee",
-  "description": "Sterling Bah is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 32, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a broker out of Steamvent Alley, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Sterling Bah describe him as a precision instrument — point him at a problem and get out of the way.",
+  "description": "Armaan Bah is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 32, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a broker out of Steamvent Alley, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Armaan Bah describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.66,
@@ -300,7 +297,7 @@
     "posture_movement": "Stands with economical stillness — every micro-movement deliberate. Walks with minimal wasted motion, weight balanced. Hands rest at sides or on lap when seated, fingers rarely fidget. Movements are smooth and precise when engaged. Eye contact is controlled, neither aggressive nor avoidant. Default expression: guarded neutrality.",
     "clothing_style": "Tier 3-4 functional wear — dark fitted synthetics, black tactical cargo pants with multiple sealed pockets, lightweight thermal undershirt. Carries a reinforced harness rig for equipment. Boots are matte black with reinforced toe caps (compatible with gecko-grip pads). No visible corp logos or status symbols. Layers suggest someone who works in Steamvent's heat and chemical air — practical, replaceable, purchased for durability not fashion."
   },
-  "image_prompt": "Sterling Bah, a 189cm lean muscular figure with deep warm brown skin and golden undertones, standing in a GLMZ industrial setting. Angular face with high cheekbones, dark brown eyes, straight nose, thin scar along left jawline. Black hair with gray at temples, kept short and neat. Matte black gecko-grip implants visible on fingertips and toe pads with subtle iridescent sheening. Wearing dark fitted synthetic tactical cargo pants with sealed pockets, lightweight thermal undershirt, reinforced black boots with toe caps. Reinforced equipment harness across chest. Posture is economical and still, expression guarded and neutral. Standing in Steamvent's chemical haze and heat, neon lighting catching the iridescence of augmented fingertips. Nocturnal living evident in slight fatigue under eyes. Cinematic neo-noir lighting, 2200s aesthetic, hyperrealistic, --ar 2:3 --v 6",
+  "image_prompt": "Armaan Bah, a 189cm lean muscular figure with deep warm brown skin and golden undertones, standing in a GLMZ industrial setting. Angular face with high cheekbones, dark brown eyes, straight nose, thin scar along left jawline. Black hair with gray at temples, kept short and neat. Matte black gecko-grip implants visible on fingertips and toe pads with subtle iridescent sheening. Wearing dark fitted synthetic tactical cargo pants with sealed pockets, lightweight thermal undershirt, reinforced black boots with toe caps. Reinforced equipment harness across chest. Posture is economical and still, expression guarded and neutral. Standing in Steamvent's chemical haze and heat, neon lighting catching the iridescence of augmented fingertips. Nocturnal living evident in slight fatigue under eyes. Cinematic neo-noir lighting, 2200s aesthetic, hyperrealistic, --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Eastern European": 40,
     "Sub-Saharan African": 34.8,

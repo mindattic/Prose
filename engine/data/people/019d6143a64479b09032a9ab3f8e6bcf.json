@@ -2,10 +2,7 @@
   "id": "019d6143a64479b09032a9ab3f8e6bcf",
   "type": "character",
   "name": "Flavia Sigurdsson-Morimoto",
-  "aliases": [
-    "Frost Sigurdsson-Morimoto",
-    "Frost"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 19,
   "status": "active",
   "location": "The Stockyard — runs routes between the Geartown transit hub and the southern Stockyard processing yards, near Ashland and Chicago Ave",
-  "description": "Frost Sigurdsson-Morimoto is nineteen years old and built like someone whose body is still negotiating its final dimensions — tall, a little loose in the joints, with the nervous energy of a person who has never in his life sat still for more than ten minutes voluntarily. His skin is a warm medium brown and he has geneware cat ears in a tawny orange that he got at sixteen with three months of saved courier income — they swivel when he's startled or excited, which is often. His hair is close-cropped on the sides and grows in a short natural taper on top. He moves through the Stockyard with the casual speed of someone who grew up learning which streets flow and which ones snag.\n\nKojo is sharp, quick, and has not yet fully processed that the work he does is dangerous. He has the operational competence of someone who's been running numbers since he was fourteen and the emotional development of someone who has never left a ten-block radius of the Stockyard in his life. He is loyal to his bookmaker — a woman named Dzintars Mbaya-Ferenczi who he calls 'the Operator' — with the uncomplicated devotion of a kid who needed a job and got one. He is also, quietly, very good at math, and has begun to understand the numbers he carries in ways that make Dzintars both pleased and slightly watchful.",
+  "description": "Flavia Sigurdsson-Morimoto is nineteen years old and built like someone whose body is still negotiating its final dimensions — tall, a little loose in the joints, with the nervous energy of a person who has never in his life sat still for more than ten minutes voluntarily. His skin is a warm medium brown and he has geneware cat ears in a tawny orange that he got at sixteen with three months of saved courier income — they swivel when he's startled or excited, which is often. His hair is close-cropped on the sides and grows in a short natural taper on top. He moves through the Stockyard with the casual speed of someone who grew up learning which streets flow and which ones snag.\n\nKojo is sharp, quick, and has not yet fully processed that the work he does is dangerous. He has the operational competence of someone who's been running numbers since he was fourteen and the emotional development of someone who has never left a ten-block radius of the Stockyard in his life. He is loyal to his bookmaker — a woman named Dzintars Mbaya-Ferenczi who he calls 'the Operator' — with the uncomplicated devotion of a kid who needed a job and got one. He is also, quietly, very good at math, and has begun to understand the numbers he carries in ways that make Dzintars both pleased and slightly watchful.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -203,7 +200,7 @@
     "Geartown",
     "Ringo DV-4 'Courier'",
     "Chicago",
-    "Frost",
+    "Flavia",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'"
   ],
   "district": "the Gray Zone",
@@ -227,7 +224,7 @@
     "posture_movement": "Perpetually forward-leaning, weight on the balls of his feet even when standing still. Moves with practiced speed and efficiency through familiar territory, but with a restlessness that suggests coiled tension. Hands are rarely still — fidgeting, gesturing, checking pockets. When startled or excited, his ears twitch and rotate sharply. His gait has a near-imperceptible catch in the left leg during quick acceleration.",
     "clothing_style": "Tier 3-4 working street wear: lightweight tactical-cut jacket in matte charcoal or rust grey over fitted synthetic base layers, cargo pants with reinforced seams and thigh pockets for route sheets and payment drops, scuffed composite runner shoes with good grip. No visible corp branding. A cheap neural-link wrist display (refurbished Shallowgrave model) showing odds and route data. Thin silver chain around his neck, probably a charm or talisman. Clothing shows regular wear and mending but is kept functional and clean — the appearance of someone who respects his work without vanity."
   },
-  "image_prompt": "Frost Sigurdsson-Morimoto, 185cm tall lean androgynous courier, rich warm medium-brown skin with golden undertones reflecting East Asian, Southeast Asian, and African heritage. Angular youthful face with high pronounced cheekbones, darker brown eyes, broader nasal base, fuller lips, clean-shaven. Natural dark brown hair in close-cropped fade with 4-5cm natural taper on top. Tawny orange geneware cat ears with visible wear, implanted at skull base, swiveling with tension. Wearing matte charcoal tactical jacket over synthetic base layer, reinforced cargo pants, scuffed composite runners. Refurbished neural-link wrist display, thin silver chain necklace. Slight nervous energy visible, hands fidgeting, forward-leaning posture with weight on balls of feet. Fine white scar across right hand knuckles, faint acne scarring on shoulders. GLMZ, Great Lakes Metropolitan Zone street-level courier, neon urban lighting casting shadows across genetically mosaic features, restless coiled tension, cinematic mood lighting --ar 2:3 --v 6",
+  "image_prompt": "Flavia Sigurdsson-Morimoto, 185cm tall lean androgynous courier, rich warm medium-brown skin with golden undertones reflecting East Asian, Southeast Asian, and African heritage. Angular youthful face with high pronounced cheekbones, darker brown eyes, broader nasal base, fuller lips, clean-shaven. Natural dark brown hair in close-cropped fade with 4-5cm natural taper on top. Tawny orange geneware cat ears with visible wear, implanted at skull base, swiveling with tension. Wearing matte charcoal tactical jacket over synthetic base layer, reinforced cargo pants, scuffed composite runners. Refurbished neural-link wrist display, thin silver chain necklace. Slight nervous energy visible, hands fidgeting, forward-leaning posture with weight on balls of feet. Fine white scar across right hand knuckles, faint acne scarring on shoulders. GLMZ, Great Lakes Metropolitan Zone street-level courier, neon urban lighting casting shadows across genetically mosaic features, restless coiled tension, cinematic mood lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
     "East Asian": 54.6,
     "Southeast Asian": 22.6,

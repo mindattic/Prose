@@ -2,10 +2,7 @@
   "id": "019d6143a7307f989974283f94470e47",
   "type": "character",
   "name": "Hipolito Park",
-  "aliases": [
-    "Zofia Park",
-    "Zofia"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 12,
   "status": "active",
   "location": "the Gray Zone — Tier Four, near Western and Division",
-  "description": "Zofia Park is twelve going on forty. She has her mother's build compressed into a child's frame — square shoulders, strong hands, a jaw that sets when she is angry in a way that makes adults take a step back. She speaks perfect unaccented English because the Gray Zone's children learn from feeds, not parents. She translates for her mother with the weary competence of a UN interpreter. She has seen things a twelve-year-old should not see. She has cataloged them. She does not cry about them. She has a notebook where she writes down everything that happens in the Gray Zone — who did what to whom, who owes what, who is afraid of whom. She calls it 'homework.' It is an intelligence network maintained by a child. She followed Kyle to the loading dock because she needed to see. Not wanted — needed. She is her father's daughter: she has to understand how things work, even the terrible things. Especially the terrible things. The teeth in her hands are the heaviest thing she has ever carried.",
+  "description": "Hipolito Park is twelve going on forty. She has her mother's build compressed into a child's frame — square shoulders, strong hands, a jaw that sets when she is angry in a way that makes adults take a step back. She speaks perfect unaccented English because the Gray Zone's children learn from feeds, not parents. She translates for her mother with the weary competence of a UN interpreter. She has seen things a twelve-year-old should not see. She has cataloged them. She does not cry about them. She has a notebook where she writes down everything that happens in the Gray Zone — who did what to whom, who owes what, who is afraid of whom. She calls it 'homework.' It is an intelligence network maintained by a child. She followed Kyle to the loading dock because she needed to see. Not wanted — needed. She is her father's daughter: she has to understand how things work, even the terrible things. Especially the terrible things. The teeth in her hands are the heaviest thing she has ever carried.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -248,7 +245,7 @@
     "posture_movement": "Moves with deliberate control, economical. No fidgeting. Sits spine-straight, even when exhausted. Walks with her shoulders slightly forward, head level, eyes tracking. Reminiscent of a hunter or a soldier in miniature. When angry, her jaw locks and her hands clench.",
     "clothing_style": "Tier Four utilitarian — worn black synth-cotton leggings, oversized gray hoodie (probably belonged to Demyan; she has grown into it partially), scuffed black runner-shoes held together with synthlace. A canvas messenger bag (khaki, faded) slung across her chest containing her notebook and writing supplies. No jewelry, no adornments, no status markers. Clothing is clean but worn, patched once at the left knee."
   },
-  "image_prompt": "Zofia Park, 152cm tall, compact wiry frame with dense shoulder musculature. Eastern European-East Asian-Middle Eastern blend: high defined cheekbones with warm olive-golden medium skin tone, strong jawline, dark brown eyes with amber warmth, angular features. Dark brown nearly-black hair pulled back in practical braid with loose strands. Exhausted observational expression, rarely smiling, jaw often tense. Tier Four GLMZ setting, gritty Great Lakes Metropolitan Zone. Wearing oversized gray hoodie, worn black synth-cotton leggings, scuffed black runner-shoes, khaki canvas messenger bag across chest. Thin white scar on left jawline visible. Bruised right inner wrist. Calloused hands. Analog, no visible augmentations. Deliberate controlled posture, shoulders slightly forward, head level. Dim industrial lighting, urban decay background, moody serious atmosphere. --ar 2:3 --v 6",
+  "image_prompt": "Hipolito Park, 152cm tall, compact wiry frame with dense shoulder musculature. Eastern European-East Asian-Middle Eastern blend: high defined cheekbones with warm olive-golden medium skin tone, strong jawline, dark brown eyes with amber warmth, angular features. Dark brown nearly-black hair pulled back in practical braid with loose strands. Exhausted observational expression, rarely smiling, jaw often tense. Tier Four GLMZ setting, gritty Great Lakes Metropolitan Zone. Wearing oversized gray hoodie, worn black synth-cotton leggings, scuffed black runner-shoes, khaki canvas messenger bag across chest. Thin white scar on left jawline visible. Bruised right inner wrist. Calloused hands. Analog, no visible augmentations. Deliberate controlled posture, shoulders slightly forward, head level. Dim industrial lighting, urban decay background, moody serious atmosphere. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Eastern European": 47.7,
     "East Asian": 39.5,

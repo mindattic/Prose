@@ -2,10 +2,7 @@
   "id": "019d6143a5bf790ca1bf7c839e4ff37f",
   "type": "character",
   "name": "Auni Bergqvist",
-  "aliases": [
-    "Zara Bergqvist",
-    "Zara"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 34,
   "status": "active",
   "location": "the Gray Zone, stall cluster near the Deepwell Station transit entrance, near sub-level access near Dearborn and Jackson",
-  "description": "Zara Bergqvist has the look of someone who sleeps too little and reads too much — slight build, perpetually ink-stained fingers from his analog printing hobby, eyes with cosmetic irises designed to look like camera apertures (a mod he got as a joke at nineteen and has grown genuinely fond of). His Ghanaian-Indian heritage gives him warm brown skin and dense, curly hair he keeps at medium length and usually tucked under a wide soft cap from which he's hung three or four data chips like earrings. He is almost always seated, almost always behind a screen, and almost always eating something wrapped in paper.\n\nHe sells everything you're not supposed to have: archived broadcasts from before the Corponation Consolidation, cracked Axiom media libraries, full recording histories of public figures who paid to have them scrubbed, bootleg copies of academic research locked behind Palladian's paywall, and — for the right price and the right trust level — assembled intelligence packages on individuals or organizations. He insists loudly that he's just a media vendor. This is technically true in the way that a locksmith who teaches classes is technically just an educator. He has an E.L.F. he calls the Archivist-Below living in his primary storage node, to whom he dedicates every new acquisition.",
+  "description": "Auni Bergqvist has the look of someone who sleeps too little and reads too much — slight build, perpetually ink-stained fingers from his analog printing hobby, eyes with cosmetic irises designed to look like camera apertures (a mod he got as a joke at nineteen and has grown genuinely fond of). His Ghanaian-Indian heritage gives him warm brown skin and dense, curly hair he keeps at medium length and usually tucked under a wide soft cap from which he's hung three or four data chips like earrings. He is almost always seated, almost always behind a screen, and almost always eating something wrapped in paper.\n\nHe sells everything you're not supposed to have: archived broadcasts from before the Corponation Consolidation, cracked Axiom media libraries, full recording histories of public figures who paid to have them scrubbed, bootleg copies of academic research locked behind Palladian's paywall, and — for the right price and the right trust level — assembled intelligence packages on individuals or organizations. He insists loudly that he's just a media vendor. This is technically true in the way that a locksmith who teaches classes is technically just an educator. He has an E.L.F. he calls the Archivist-Below living in his primary storage node, to whom he dedicates every new acquisition.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -255,7 +252,7 @@
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Gravimetric Collapse Charge GCC-9",
-    "Frost Boudiaf"
+    "Folakemi Boudiaf"
   ],
   "district": "The Underworld",
   "physical_description": {
@@ -277,7 +274,7 @@
     "posture_movement": "Habitually seated, shoulders slightly rolled forward from screen time. When standing, moves with economical precision — no wasted motion. Hands gesture frequently while speaking, fingers constantly arranging or manipulating small objects (data chips, paper, printouts). Eyes track rapidly across multiple focal points simultaneously. Rarely makes direct eye contact — the aperture irises make prolonged staring uncomfortable for others.",
     "clothing_style": "Tier 3-4 functional pragmatism. Favors loose black or charcoal cargo pants with multiple pockets, worn work boots (Yokai brand, practical rather than fashionable), layered tops in muted grays and blacks. Signature soft wide-brimmed cap (linen, faded navy) worn at all hours. Often wears a knee-length canvas apron with deep pockets when working at stall, stained with ink and dust. Minimal visible branding — everything chosen for function. Fingers bare of rings due to printing hazards. No jewelry except data chips hanging from cap."
   },
-  "image_prompt": "Zara Bergqvist, 2226 neo-noir hacker, mixed Southeast Asian and East Asian heritage with Eastern European undertones, warm golden-bronze skin with cool shadows, almond-shaped eyes with chrome metal-ring aperture iris augmentations that contract and dilate, high angular cheekbones, dark circled eyes from sleep deprivation, dark brown curly medium-length hair tucked under faded navy linen wide-brimmed cap with data chips hanging like earrings, ink-stained fingers and old burn scar on left forearm, wiry athletic build, seated hunched over screens in cluttered tech stall, wearing layered black and charcoal functional clothes, loose cargo pants, worn boots, canvas apron stained with ink, hands manipulating data cards and paper, dim neon-filtered underground market lighting with amber and cool blue neo-noir ambience, tired focused expression, no direct eye contact, economical precise movements, GLMZ 2200s Great Lakes Metropolitan Zone aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Auni Bergqvist, 2226 neo-noir hacker, mixed Southeast Asian and East Asian heritage with Eastern European undertones, warm golden-bronze skin with cool shadows, almond-shaped eyes with chrome metal-ring aperture iris augmentations that contract and dilate, high angular cheekbones, dark circled eyes from sleep deprivation, dark brown curly medium-length hair tucked under faded navy linen wide-brimmed cap with data chips hanging like earrings, ink-stained fingers and old burn scar on left forearm, wiry athletic build, seated hunched over screens in cluttered tech stall, wearing layered black and charcoal functional clothes, loose cargo pants, worn boots, canvas apron stained with ink, hands manipulating data cards and paper, dim neon-filtered underground market lighting with amber and cool blue neo-noir ambience, tired focused expression, no direct eye contact, economical precise movements, GLMZ 2200s Great Lakes Metropolitan Zone aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Southeast Asian": 46.6,
     "East Asian": 32.6,

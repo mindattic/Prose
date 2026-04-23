@@ -2,10 +2,7 @@
   "id": "019d6143a6ce7d168578967a6da7aa48",
   "type": "character",
   "name": "Ankur Malhotra",
-  "aliases": [
-    "Szymon Malhotra",
-    "Szymon"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 33,
   "status": "active",
   "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Oak",
-  "description": "Szymon Malhotra is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a extraction specialist out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented extraction specialist in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
+  "description": "Ankur Malhotra is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a extraction specialist out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented extraction specialist in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.1,
@@ -299,7 +296,7 @@
     "posture_movement": "Moves with deliberate economy — every motion calculated and efficient. Stands with weight slightly forward, ready to shift direction instantly. Eyes rarely still; constant thermal and visual scanning of his environment. No wasted gestures. Handshake firm but not aggressive. In conversation, he maintains eye contact unflinchingly, the chrome rings catching light.",
     "clothing_style": "Tier 2-3 functional aesthetic — tailored but utilitarian. Dark monochrome palette: charcoal tactical jacket with internal holsters and cargo placement, black reinforced pants with thigh pockets, grey compression base layer visible at collar and wrists. Unmarked boots (reinforced soles, good traction). Minimal branding; quality is visible but anonymous. Jacket shows subtle wear patterns consistent with field use. No jewelry except a worn titanium watch with military-style face."
   },
-  "image_prompt": "Szymon Malhotra, tall lean male with warm medium-brown skin and golden undertones, sharp defined cheekbones and angular jawline blending South Asian and Northern European features. Black hair with silver temples, closely cropped and sharp-edged. Chrome iris rings glowing faintly in his dark eyes with visible LED circuitry, unblinking thermal-vision augment. Thin white surgical scars around eye sockets, clean-shaven. Dressed in charcoal tactical jacket and black reinforced pants over grey compression base layer, unmarked reinforced boots. Military-style titanium watch. Worn titanium watch. Standing in low-light neo-noir environment—neon edge lighting catching the chrome iris rings—scanning surroundings with intense focus, posture forward-ready, every movement economical and calculated. GLMZ 2200s Great Lakes Metropolitan Zone operative. Film noir lighting, moody and tense. --ar 2:3 --v 6",
+  "image_prompt": "Ankur Malhotra, tall lean male with warm medium-brown skin and golden undertones, sharp defined cheekbones and angular jawline blending South Asian and Northern European features. Black hair with silver temples, closely cropped and sharp-edged. Chrome iris rings glowing faintly in his dark eyes with visible LED circuitry, unblinking thermal-vision augment. Thin white surgical scars around eye sockets, clean-shaven. Dressed in charcoal tactical jacket and black reinforced pants over grey compression base layer, unmarked reinforced boots. Military-style titanium watch. Worn titanium watch. Standing in low-light neo-noir environment—neon edge lighting catching the chrome iris rings—scanning surroundings with intense focus, posture forward-ready, every movement economical and calculated. GLMZ 2200s Great Lakes Metropolitan Zone operative. Film noir lighting, moody and tense. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 61.4,
     "Eastern European": 19.6,

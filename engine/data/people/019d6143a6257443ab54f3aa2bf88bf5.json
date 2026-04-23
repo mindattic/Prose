@@ -2,10 +2,7 @@
   "id": "019d6143a6257443ab54f3aa2bf88bf5",
   "type": "character",
   "name": "Ala Mukherjee",
-  "aliases": [
-    "Haze Mukherjee",
-    "Haze"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 28,
   "status": "active",
   "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Michigan Ave South and Cermak",
-  "description": "Haze Mukherjee is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 28, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — subdermal armor plating across torso and forearms — military surplus, scratched  — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a fixer out of Old Harbor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nHaze Mukherjee operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Ala Mukherjee is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 28, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — subdermal armor plating across torso and forearms — military surplus, scratched  — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a fixer out of Old Harbor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nAla Mukherjee operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.11,
@@ -306,7 +303,7 @@
     "posture_movement": "Moves with precision and minimal wasted motion — body always positioned for lateral shift or rapid response. Walks quietly despite height. Sits with spine straight, weight forward on thighs. Eyes track movement even when body is still. Rests rarely and incompletely — appears coiled even when stationary.",
     "clothing_style": "Tier 3-4 practical wear. Black reinforced cargo pants with utility webbing (worn brands, functional). Sleeveless or short-sleeved tops that expose the arm plating deliberately — a display of capability and commitment. Dark colors dominating (charcoal, black, deep blue). Jackets are oversized and layered for utility and concealment. Heavy boots — scuffed, rebanded multiple times. No visible branding or corpo insignia. Clothing shows wear consistent with active work rather than poverty."
   },
-  "image_prompt": "Haze Mukherjee, 182cm tall lean athletic male with warm deep brown skin and golden-olive undertones, dark brown close-cropped hair, sharp angular features blending Latin American and South Asian heritage. Prominent cheekbones, defined jawline, chrome iris rings surrounding dark brown cybernetic eyes with visible scarring at left temple. Visible subdermal military-grade armor plating across torso and forearms with scratched metallic seams visible beneath warm brown skin. Burn scars and micro-scarring on forearms. Sleeveless black top exposing arm plating, oversized dark reinforced jacket, black cargo pants with utility webbing, heavy scuffed boots. Coiled posture, intense focused gaze, precision movement. GLMZ, Great Lakes Metropolitan Zone, neon-lit industrial setting, cool blue and warm amber lighting, gritty worn aesthetic, film noir atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Ala Mukherjee, 182cm tall lean athletic male with warm deep brown skin and golden-olive undertones, dark brown close-cropped hair, sharp angular features blending Latin American and South Asian heritage. Prominent cheekbones, defined jawline, chrome iris rings surrounding dark brown cybernetic eyes with visible scarring at left temple. Visible subdermal military-grade armor plating across torso and forearms with scratched metallic seams visible beneath warm brown skin. Burn scars and micro-scarring on forearms. Sleeveless black top exposing arm plating, oversized dark reinforced jacket, black cargo pants with utility webbing, heavy scuffed boots. Coiled posture, intense focused gaze, precision movement. GLMZ, Great Lakes Metropolitan Zone, neon-lit industrial setting, cool blue and warm amber lighting, gritty worn aesthetic, film noir atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 62.6,
     "South Asian": 32.8,

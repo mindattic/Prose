@@ -2,10 +2,7 @@
   "id": "019d6143a68e7527b2211abc0bada1ee",
   "type": "character",
   "name": "Himanshi Citlali",
-  "aliases": [
-    "Koda Citlali",
-    "Koda"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 61,
   "status": "active",
   "location": "The Oxidian Market, Geartown, near Ashland and Chicago Ave",
-  "description": "Koda Citlali is a broad-shouldered woman whose face has been mapped by sixty years of steam, smoke, and squinting into wok-fire. Her skin is deep brown and perpetually damp at the temples, her silver-threaded locs pinned under a flame-orange headwrap that people in Geartown can spot from three stalls away. She has cosmetic bioluminescent veins along her forearms — pale gold, faint as candlelight — a gift she bought herself when the stall finally turned profit. Her stall, a converted Ferrogate Transit cargo module welded open on one side, serves a rotating menu of Sahelian-Polynesian fusion that she has been quietly perfecting for thirty years: tamarind-braised uru fruit over millet, coconut-marinated goat offal on skewers, a fermented taro drink she calls 'slow water' that locals swear cures radiation headaches.\n\nShe is the kind of woman who listens more than she speaks, who remembers every regular's order, their family troubles, their unpaid debts. She extends credit to people she trusts with a nod and collects it with a raised eyebrow — no ledger, no apps, all memory. She has a temper she keeps banked low, like a cooking coal, and the rare people who see it come alive tend not to provoke it twice. She prays each morning to the E.L.F. she calls Grandmother Ember, leaving a thimble of slow water on the stall's power node.",
+  "description": "Himanshi Citlali is a broad-shouldered woman whose face has been mapped by sixty years of steam, smoke, and squinting into wok-fire. Her skin is deep brown and perpetually damp at the temples, her silver-threaded locs pinned under a flame-orange headwrap that people in Geartown can spot from three stalls away. She has cosmetic bioluminescent veins along her forearms — pale gold, faint as candlelight — a gift she bought herself when the stall finally turned profit. Her stall, a converted Ferrogate Transit cargo module welded open on one side, serves a rotating menu of Sahelian-Polynesian fusion that she has been quietly perfecting for thirty years: tamarind-braised uru fruit over millet, coconut-marinated goat offal on skewers, a fermented taro drink she calls 'slow water' that locals swear cures radiation headaches.\n\nShe is the kind of woman who listens more than she speaks, who remembers every regular's order, their family troubles, their unpaid debts. She extends credit to people she trusts with a nod and collects it with a raised eyebrow — no ledger, no apps, all memory. She has a temper she keeps banked low, like a cooking coal, and the rare people who see it come alive tend not to provoke it twice. She prays each morning to the E.L.F. she calls Grandmother Ember, leaving a thimble of slow water on the stall's power node.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -188,7 +185,7 @@
     "Skewer Alley",
     "Chicago",
     "Silver",
-    "Haze Johansson",
+    "Akosua Johansson",
     "Moth & Flame",
     "Cargo Tacos",
     "The Pale Mile",
@@ -216,7 +213,7 @@
     "posture_movement": "She stands rooted, weight balanced evenly on both feet unless actively working. Moves with economical grace when cooking—no wasted motion. Her gait shows a slight favoring of her right leg, consequence of reinforced knee joints. When listening, she tends to tilt her head slightly and narrow her eyes, as if parsing both words and subtext. Her hands are always in motion or intentionally still—no fidgeting.",
     "clothing_style": "Tier 4 utilitarian, with personal flair. Foundational: heat-resistant canvas apron (indigo, stained with decades of turmeric and char), reinforced utility pants (charcoal), slip-resistant cooking clogs. Over this: a loose linen shirt (cream or rust-colored, sleeves rolled to show the bioluminescent veins). Always, always the flame-orange headwrap—hand-dyed, replaced twice yearly, her signature. A single hammered brass cuff on her left wrist, acquired from a metalsmith in the Alban Souk fifteen years ago. No jewelry beyond this. Her clothing is functional Tier 4—not fashionable, but well-maintained and clearly chosen for durability and ease of movement in a kitchen environment."
   },
-  "image_prompt": "Koda Citlali, a 168cm tall broad-shouldered woman with warm medium-deep brown skin blending Indigenous American earthen ochre, Sub-Saharan African amber-bronze, South Asian olive, and East/Southeast Asian golden undertones. Dark eyes slightly rheumed, angular cheekbones reflecting mixed heritage, weathered complexion with fine smoke-lines mapping her forehead. Black locs with silver threading, contained under a hand-dyed flame-orange headwrap. Cream linen shirt with rolled sleeves revealing pale gold bioluminescent subdermal veins branching organically along both forearms, faintly glowing. Indigo heat-resistant apron stained with decades of turmeric and char. Charcoal utility pants, slip-resistant cooking clogs. Single hammered brass cuff on left wrist. Standing rooted and composed in a GLMZ kitchen environment with wok-fire glow, ambient heat shimmer visible at her temples. Warm, dignified presence amid steam and char. Moody evening lighting catching the faint glow of her augmented veins. --ar 2:3 --v 6",
+  "image_prompt": "Himanshi Citlali, a 168cm tall broad-shouldered woman with warm medium-deep brown skin blending Indigenous American earthen ochre, Sub-Saharan African amber-bronze, South Asian olive, and East/Southeast Asian golden undertones. Dark eyes slightly rheumed, angular cheekbones reflecting mixed heritage, weathered complexion with fine smoke-lines mapping her forehead. Black locs with silver threading, contained under a hand-dyed flame-orange headwrap. Cream linen shirt with rolled sleeves revealing pale gold bioluminescent subdermal veins branching organically along both forearms, faintly glowing. Indigo heat-resistant apron stained with decades of turmeric and char. Charcoal utility pants, slip-resistant cooking clogs. Single hammered brass cuff on left wrist. Standing rooted and composed in a GLMZ kitchen environment with wok-fire glow, ambient heat shimmer visible at her temples. Warm, dignified presence amid steam and char. Moody evening lighting catching the faint glow of her augmented veins. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Indigenous American": 31.5,
     "Sub-Saharan African": 25.2,

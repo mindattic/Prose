@@ -2,10 +2,7 @@
   "id": "019d6143a6c27bebb7a83393a7acaf82",
   "type": "character",
   "name": "Chihiro Vasquez-Alfarsi",
-  "aliases": [
-    "Tarn Vasquez-Alfarsi",
-    "Tarn"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 64,
   "status": "active",
   "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Oak",
-  "description": "Tarn Vasquez-Alfarsi is average height but with a presence that fills more space than the body accounts for. At 64, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a smuggler out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Tarn Vasquez-Alfarsi is known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "description": "Chihiro Vasquez-Alfarsi is average height but with a presence that fills more space than the body accounts for. At 64, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a smuggler out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Chihiro Vasquez-Alfarsi is known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
       "wound": 0.81,
@@ -302,7 +299,7 @@
     "posture_movement": "Economical movement — nothing wasted, nothing showy. Shifts weight forward slightly when standing still, as if ready to move in any direction. Eyes track edges and exits automatically. When sitting, occupies minimal space but radiates controlled tension. Handshake is firm but not aggressive. Speaks quietly; people lean in to listen.",
     "clothing_style": "Tier 3-4 practical wear. Dark synthetic fibers — charcoal, black, dark grey — that don't reflect light or show wear easily. Mid-grade tactical jacket with internal pockets (Zenith or Kessler brand), reinforced seams. Unmarked cargo pants with knife holsters on thighs. Boots are worn but maintained — professional grade, not flashy. No corpo logos, no faction colors. A single piece of jewelry: worn silver ring on left ring finger, military-issue design, never removed. Carries a long coat for The Spires' climate-controlled corridors, aged leather with interior mesh lining."
   },
-  "image_prompt": "Tarn Vasquez-Alfarsi, 172cm lean compact build, weathered face with multicontinental features: Middle Eastern bone structure, East Asian-refined cheekbones, African-warm skin depth, Hispanic expressiveness, Indigenous geometry. Warm golden-olive medium-tan complexion, warm in direct light with cooler olive shadows. Asymmetrical sharp cheekbones, set jaw, shallow creases from low-light squinting. Salt-and-pepper cropped military-cut hair, dark brown eyes with faint chromatic aberration left eye. Jagged scar temple-to-jaw (cortical bomb removal), pale and raised. Lattice scars across knuckles and forearms. Subtle chromatic shimmer dermal camouflage on neck and shoulders visible under neon. Pale crescent burn scar left wrist. Wearing dark charcoal tactical jacket Zenith brand, unmarked cargo pants, worn professional boots, aged leather long coat. Silver military ring left ring finger. Standing in GLMZ neon-lit corridor or shadowed street, economical posture, controlled tension, eyes tracking edges. GLMZ aesthetic, cool neon and warm practical lighting, gritty street-level atmosphere. --ar 2:3 --v 6",
+  "image_prompt": "Chihiro Vasquez-Alfarsi, 172cm lean compact build, weathered face with multicontinental features: Middle Eastern bone structure, East Asian-refined cheekbones, African-warm skin depth, Hispanic expressiveness, Indigenous geometry. Warm golden-olive medium-tan complexion, warm in direct light with cooler olive shadows. Asymmetrical sharp cheekbones, set jaw, shallow creases from low-light squinting. Salt-and-pepper cropped military-cut hair, dark brown eyes with faint chromatic aberration left eye. Jagged scar temple-to-jaw (cortical bomb removal), pale and raised. Lattice scars across knuckles and forearms. Subtle chromatic shimmer dermal camouflage on neck and shoulders visible under neon. Pale crescent burn scar left wrist. Wearing dark charcoal tactical jacket Zenith brand, unmarked cargo pants, worn professional boots, aged leather long coat. Silver military ring left ring finger. Standing in GLMZ neon-lit corridor or shadowed street, economical posture, controlled tension, eyes tracking edges. GLMZ aesthetic, cool neon and warm practical lighting, gritty street-level atmosphere. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 30.9,
     "Middle Eastern": 27.5,

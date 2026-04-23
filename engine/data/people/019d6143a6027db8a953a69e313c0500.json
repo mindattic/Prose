@@ -2,18 +2,15 @@
   "id": "019d6143a6027db8a953a69e313c0500",
   "type": "character",
   "name": "Arian Raghavan-Bergqvist-Magnúsdóttir",
-  "aliases": [
-    "Sterling Raghavan-Bergqvist-Magnúsdóttir",
-    "Sterling"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
-  "role": "Climate scientist and lake ecology researcher, Sterling-Nakamura Environmental R&D division",
+  "role": "Climate scientist and lake ecology researcher, Arian-Nakamura Environmental R&D division",
   "age": 43,
   "status": "active",
-  "location": "Edgewater Prism — Sterling-Nakamura Lacustrine Research Facility, Lake Michigan interface level, near Clark and Belmont",
-  "description": "Sterling Raghavan-Bergqvist-Magnúsdóttir is a tall man gone slightly soft in the middle, with medium-brown skin, a neatly trimmed beard threaded with premature grey, and eyes he had refracted with a patterned iris modification years ago — they shift between amber and green depending on ambient light, something he originally got for vanity and now barely notices. He moves with the economical ease of someone who spent a decade doing field research in difficult conditions and still carries that competence in his body even when he's at a desk. His workspace at Edgewater Prism is a controlled chaos of physical samples, holographic lake-floor maps, and three different coffee vessels in varying states of consumption.\n\nHe is professionally optimistic and personally terrified, which gives his public presentations a motivational quality and his private conversations a rawness his colleagues find either refreshing or exhausting. He genuinely believes the lake can be saved — or saved enough — and this belief functions as his operating system. He is kind, a bit scattered, deeply committed to his students even though he's at a corporate R&D division now, and he has been lying to his employers about what his most recent deep-substrate analysis actually found for eight months.",
+  "location": "Edgewater Prism — Arian-Nakamura Lacustrine Research Facility, Lake Michigan interface level, near Clark and Belmont",
+  "description": "Arian Raghavan-Bergqvist-Magnúsdóttir is a tall man gone slightly soft in the middle, with medium-brown skin, a neatly trimmed beard threaded with premature grey, and eyes he had refracted with a patterned iris modification years ago — they shift between amber and green depending on ambient light, something he originally got for vanity and now barely notices. He moves with the economical ease of someone who spent a decade doing field research in difficult conditions and still carries that competence in his body even when he's at a desk. His workspace at Edgewater Prism is a controlled chaos of physical samples, holographic lake-floor maps, and three different coffee vessels in varying states of consumption.\n\nHe is professionally optimistic and personally terrified, which gives his public presentations a motivational quality and his private conversations a rawness his colleagues find either refreshing or exhausting. He genuinely believes the lake can be saved — or saved enough — and this belief functions as his operating system. He is kind, a bit scattered, deeply committed to his students even though he's at a corporate R&D division now, and he has been lying to his employers about what his most recent deep-substrate analysis actually found for eight months.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -25,7 +22,7 @@
     },
     "core_fears": [
       "That the lake is past the threshold of recovery and he has dedicated his life to a lost cause",
-      "That Sterling-Nakamura will find out what he's suppressing and he will lose the platform and funding that let him do any good at all"
+      "That Arian-Nakamura will find out what he's suppressing and he will lose the platform and funding that let him do any good at all"
     ],
     "core_desires": [
       "To produce the paper that genuinely changes GLMZ's water policy",
@@ -40,7 +37,7 @@
       "Rationalizes the data suppression as temporary and strategic when it has been eight months and there is no plan",
       "Underestimates how much his graduate students depend on him being honest with them"
     ],
-    "secret": "His deep-substrate analysis from eight months ago shows a novel microbial consortium thriving at depth that is producing a compound he cannot identify — and that compound is accumulating in the water column at a rate that will reach detectable surface concentrations within three years. He doesn't know if it's harmless, beneficial, or catastrophic. He suppressed the finding because he needed more time to understand it and was terrified Sterling-Nakamura would either bury it or exploit it before he could. He hasn't told anyone."
+    "secret": "His deep-substrate analysis from eight months ago shows a novel microbial consortium thriving at depth that is producing a compound he cannot identify — and that compound is accumulating in the water column at a rate that will reach detectable surface concentrations within three years. He doesn't know if it's harmless, beneficial, or catastrophic. He suppressed the finding because he needed more time to understand it and was terrified Arian-Nakamura would either bury it or exploit it before he could. He hasn't told anyone."
   },
   "speech_patterns": {
     "vocabulary": "Technical fluency delivered accessibly — he is a natural science communicator who defaults to concrete metaphors; Twi phrases appear when he's emotional, Russian ones when he's being sardonic",
@@ -57,14 +54,14 @@
   },
   "relationships": [],
   "story_hooks": [
-    "He approaches someone discreetly for help analyzing a compound his own lab equipment cannot identify — he needs outside analysis without Sterling-Nakamura's knowledge",
+    "He approaches someone discreetly for help analyzing a compound his own lab equipment cannot identify — he needs outside analysis without Arian-Nakamura's knowledge",
     "One of his graduate students has independently noticed anomalous data in the monitoring array and is coming to him with questions he doesn't know how to answer without revealing the suppressed finding",
-    "Sterling-Nakamura's division director schedules an unexpected full audit of the last eighteen months of research data — Emiliano has seventy-two hours to decide what to do"
+    "Arian-Nakamura's division director schedules an unexpected full audit of the last eighteen months of research data — Emiliano has seventy-two hours to decide what to do"
   ],
   "narrative_function": "Information source on lake ecology, environmental corporate politics, and what is actually happening to the water table under GLMZ; quest giver for retrieving deep-lake samples or sensor data; represents the tension between corporate employment and scientific integrity.",
-  "augmentations": "Patterned iris modification (amber-to-green spectral shift, cosmetic geneware, 10+ years old); internal data-recording implant in the right forearm (corporate-issued, standard Sterling-Nakamura field-researcher kit).",
+  "augmentations": "Patterned iris modification (amber-to-green spectral shift, cosmetic geneware, 10+ years old); internal data-recording implant in the right forearm (corporate-issued, standard Arian-Nakamura field-researcher kit).",
   "daily_life": "Morning review of overnight sensor data from the lake's monitoring array, followed by either lab analysis or weekly meetings with the division director, lunch eaten in the facility atrium near the lake-view window, afternoon research or writing; Tuesdays he travels to University Spine to meet his graduate students.",
-  "affiliation": "Sterling-Nakamura Environmental R&D, Lacustrine Division — on secondment from University Spine where he holds a honorary lectureship he uses to recruit graduate research assistants",
+  "affiliation": "Arian-Nakamura Environmental R&D, Lacustrine Division — on secondment from University Spine where he holds a honorary lectureship he uses to recruit graduate research assistants",
   "uses_facets": false,
   "narration_voice": "",
   "stats": {
@@ -198,9 +195,9 @@
     ],
     "visible_augmentations": "The patterned iris modification is immediately visible — both eyes display the amber-to-green spectral shift with concentric ring geometry when light hits them, unmistakably cosmetic geneware. No external chrome or subdermal visible; the forearm data-recording implant lies beneath the skin with only a faint surgical scar as evidence.",
     "posture_movement": "Moves with economical, deliberate gestures; walks slightly forward-leaning as if still listening to field instruments; sits with one hand always on a coffee cup or a data tablet; has the unconscious posture of someone used to explaining technical concepts to others — hands move often, shoulders open",
-    "clothing_style": "Tier 2-3 blend: Sterling-Nakamura corporate field jacket (grey-green technical fabric with embedded sensor pockets) worn over a weathered henley or lab shirt; cargo pants with multiple utility pockets, some worn from use; expensive but scuffed field boots that have seen actual use; rarely wears the full Sterling-Nakamura corporate kit, preferring functional field wear. Accessories: a frayed paracord wristband, a water-resistant smartwatch, often a lanyard with a multifunction tool and research keycard. No jewelry except a plain titanium band on his left ring finger."
+    "clothing_style": "Tier 2-3 blend: Arian-Nakamura corporate field jacket (grey-green technical fabric with embedded sensor pockets) worn over a weathered henley or lab shirt; cargo pants with multiple utility pockets, some worn from use; expensive but scuffed field boots that have seen actual use; rarely wears the full Arian-Nakamura corporate kit, preferring functional field wear. Accessories: a frayed paracord wristband, a water-resistant smartwatch, often a lanyard with a multifunction tool and research keycard. No jewelry except a plain titanium band on his left ring finger."
   },
-  "image_prompt": "Sterling Raghavan-Bergqvist-Magnúsdóttir, 188cm tall mixed-heritage man with warm medium-brown skin and golden undertones, refined South Asian cheekbones and jawline softened by broader Northern European-Southeast Asian facial width. Dark brown hair with silver threading, neatly combed back with well-trimmed 1-2cm beard. Patterned iris modification shifting between amber and forest green with concentric ring geometry. Weathered complexion with sun-exposed tan lines at wrists and jaw, faint laugh lines, age spots on hands. Wearing Sterling-Nakamura grey-green technical field jacket over weathered henley, cargo pants with utility pockets, scuffed field boots. Frayed paracord wristband, smartwatch, research lanyard visible. Plain titanium band on left ring finger. Standing in dimly-lit corporate research facility or field lab setting, leaning slightly forward with hands open in explanation gesture, coffee cup nearby. GLMZ aesthetic, overhead neon-tinged lighting catching the iridescence of his modified eyes. --ar 2:3 --v 6",
+  "image_prompt": "Arian Raghavan-Bergqvist-Magnúsdóttir, 188cm tall mixed-heritage man with warm medium-brown skin and golden undertones, refined South Asian cheekbones and jawline softened by broader Northern European-Southeast Asian facial width. Dark brown hair with silver threading, neatly combed back with well-trimmed 1-2cm beard. Patterned iris modification shifting between amber and forest green with concentric ring geometry. Weathered complexion with sun-exposed tan lines at wrists and jaw, faint laugh lines, age spots on hands. Wearing Arian-Nakamura grey-green technical field jacket over weathered henley, cargo pants with utility pockets, scuffed field boots. Frayed paracord wristband, smartwatch, research lanyard visible. Plain titanium band on left ring finger. Standing in dimly-lit corporate research facility or field lab setting, leaning slightly forward with hands open in explanation gesture, coffee cup nearby. GLMZ aesthetic, overhead neon-tinged lighting catching the iridescence of his modified eyes. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Northern European": 41.9,
     "South Asian": 29.3,

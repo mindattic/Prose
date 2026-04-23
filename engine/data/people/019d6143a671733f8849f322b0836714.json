@@ -2,10 +2,7 @@
   "id": "019d6143a671733f8849f322b0836714",
   "type": "character",
   "name": "Dilek Haddad-Mwangi",
-  "aliases": [
-    "Wren Haddad-Mwangi",
-    "Wren"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 33,
   "status": "active",
   "location": "Kessler Row — arms dealers and augmentation clinics, near Halsted and Chicago Ave",
-  "description": "Wren Haddad-Mwangi is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 33, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a street samurai out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Wren Haddad-Mwangi describe her as a precision instrument — point her at a problem and get out of the way.",
+  "description": "Dilek Haddad-Mwangi is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 33, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a street samurai out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Dilek Haddad-Mwangi describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.78,
@@ -306,7 +303,7 @@
     "posture_movement": "Economical, controlled. Stands with weight evenly distributed — ready to move in any direction without telegraph. Walks with purpose and minimal wasted motion. Eyes track threats constantly. Default expression is careful neutrality. Hands at rest, not fidgeting.",
     "clothing_style": "Tier 3-4 street samurai practical. Black tactical cargo pants with deep pockets and reinforced seams. Form-fitting black synthetic polymer shirt showing the chromatic shimmer of dermal augmentation. Over this, a charcoal-gray reinforced jacket with articulated panels and integrated ammunition storage — no corporate logos, clean lines, built for function. Steel-toed combat boots, well-maintained. Minimal jewelry — a chrome knuckle duster on right hand, functional rather than decorative."
   },
-  "image_prompt": "GLMZ street samurai Wren Haddad-Mwangi, 178cm tall, heavily muscled compact frame. Warm olive-brown skin with golden amber undertones, reflecting blended Middle Eastern, East Asian, Hispanic, and Sub-Saharan African heritage. Strong defined cheekbones, defined nose bridge, prominent jaw. Short dark brown fade haircut. Augmented chrome iris rings with faint luminescent glow, visible thin white scar on left cheekbone. Chromatic dermal camouflage shimmer shifting blue-teal-green across shoulders and chest. Black tactical cargo pants, form-fitting black polymer shirt, charcoal-gray reinforced jacket with articulated panels, steel-toed combat boots. Chrome knuckle duster on right hand. Economical controlled posture, neutral expression, eyes tracking with street-honed awareness. Minimal wasted motion. Neon-lit urban alleyway, moody atmospheric lighting, gritty Great Lakes Metropolitan Zone setting, cinematic depth of field --ar 2:3 --v 6",
+  "image_prompt": "GLMZ street samurai Dilek Haddad-Mwangi, 178cm tall, heavily muscled compact frame. Warm olive-brown skin with golden amber undertones, reflecting blended Middle Eastern, East Asian, Hispanic, and Sub-Saharan African heritage. Strong defined cheekbones, defined nose bridge, prominent jaw. Short dark brown fade haircut. Augmented chrome iris rings with faint luminescent glow, visible thin white scar on left cheekbone. Chromatic dermal camouflage shimmer shifting blue-teal-green across shoulders and chest. Black tactical cargo pants, form-fitting black polymer shirt, charcoal-gray reinforced jacket with articulated panels, steel-toed combat boots. Chrome knuckle duster on right hand. Economical controlled posture, neutral expression, eyes tracking with street-honed awareness. Minimal wasted motion. Neon-lit urban alleyway, moody atmospheric lighting, gritty Great Lakes Metropolitan Zone setting, cinematic depth of field --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Middle Eastern": 50.1,
     "East Asian": 21.8,

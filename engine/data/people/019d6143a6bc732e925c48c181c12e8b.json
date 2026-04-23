@@ -2,10 +2,7 @@
   "id": "019d6143a6bc732e925c48c181c12e8b",
   "type": "character",
   "name": "Dmitry Olofsson",
-  "aliases": [
-    "Cleo Olofsson",
-    "Cleo"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 34,
   "status": "active",
   "location": "The Narrows, Irkalla district — operates from a converted laundry kiosk two blocks from the Deepwell Station entrance, near sub-level access near Dearborn and Jackson",
-  "description": "Cleo Olofsson has the kind of face that makes people feel immediately like he already knows what they need, which is either a gift or a vulnerability depending on the day. He is lean and medium-height, olive-skinned with his Uzbek grandmother's dark eyes and his Nigerian grandfather's wide mouth, with natural color-changing hair he keeps in tight curls that shift from blue-black to deep copper depending on his mood — an older geneware modification that he got cheap and has grown fond of. He wears clean clothes, which is notable in the Narrows, and keeps his hands conspicuously steady at all times, which is also notable.\n\nHe is the thing people need him to be when they come to him, which is not the same as being dishonest — he is genuinely trying to help. He believes harm reduction is a moral act and that the people who have criminalized it are the ones who should be ashamed. He has a rigorous self-taught pharmacological education that would probably have qualified him for a Helix Biosystems lab position if he had the citizenship grade. He prays to the Deepwell E.L.F. — a transit spirit he's come to think of as his silent partner — and leaves small offerings of stabilized compound residue in its shrine nook every time he passes.",
+  "description": "Dmitry Olofsson has the kind of face that makes people feel immediately like he already knows what they need, which is either a gift or a vulnerability depending on the day. He is lean and medium-height, olive-skinned with his Uzbek grandmother's dark eyes and his Nigerian grandfather's wide mouth, with natural color-changing hair he keeps in tight curls that shift from blue-black to deep copper depending on his mood — an older geneware modification that he got cheap and has grown fond of. He wears clean clothes, which is notable in the Narrows, and keeps his hands conspicuously steady at all times, which is also notable.\n\nHe is the thing people need him to be when they come to him, which is not the same as being dishonest — he is genuinely trying to help. He believes harm reduction is a moral act and that the people who have criminalized it are the ones who should be ashamed. He has a rigorous self-taught pharmacological education that would probably have qualified him for a Helix Biosystems lab position if he had the citizenship grade. He prays to the Deepwell E.L.F. — a transit spirit he's come to think of as his silent partner — and leaves small offerings of stabilized compound residue in its shrine nook every time he passes.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -271,7 +268,7 @@
     "posture_movement": "Stands with economical stillness — hands kept visible and low, movements deliberate and non-threatening. His steadiness is cultivated; he moves like someone who has learned that trembling hands inspire distrust in a pharmacist. When listening to a customer, he leans in slightly with genuine focus. Gait is quick but unhurried.",
     "clothing_style": "Clean clothes in a district where cleanliness is conspicuous — worn synthetics in muted colors (grey, charcoal, deep olive), well-maintained but visibly cheap. A long-sleeved shirt or thin jacket worn even in warm weather, covering his ritual scar. No corporate branding. Practical pockets. Footwear is functional and worn but not falling apart. Overall appearance: someone who respects himself and his customers despite operating in a Tier 5 location. His cleanliness reads as both a choice and a quiet act of resistance."
   },
-  "image_prompt": "GLMZ, Cleo Olofsson, 173cm lean wiry pharmacist with mood-responsive copper-bronze to blue-black geneware curls, dark brown alert eyes with Southeast Asian eye-set, angular face with prominent Central Asian cheekbones softened by warm golden-bronze skin tone with olive undertones blending Sub-Saharan and Hispanic warmth, gaunt focused expression with permanent dark circles, ritual burn scar on right wrist, chemical-stained fingertips, steady hands, long dexterous fingers, muted grey-charcoal long-sleeved synthetic shirt, practical worn but maintained footwear, standing with economical stillness in Tier 5 location pharmacy interior, faint red irritation around nostril hint of olfactory augmentation, neon-dim overhead lighting casting shadows on angular features, cinematic depth of field, moody atmospheric ambiance, defiant cleanliness in gritty environment --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, Dmitry Olofsson, 173cm lean wiry pharmacist with mood-responsive copper-bronze to blue-black geneware curls, dark brown alert eyes with Southeast Asian eye-set, angular face with prominent Central Asian cheekbones softened by warm golden-bronze skin tone with olive undertones blending Sub-Saharan and Hispanic warmth, gaunt focused expression with permanent dark circles, ritual burn scar on right wrist, chemical-stained fingertips, steady hands, long dexterous fingers, muted grey-charcoal long-sleeved synthetic shirt, practical worn but maintained footwear, standing with economical stillness in Tier 5 location pharmacy interior, faint red irritation around nostril hint of olfactory augmentation, neon-dim overhead lighting casting shadows on angular features, cinematic depth of field, moody atmospheric ambiance, defiant cleanliness in gritty environment --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Southeast Asian": 24.6,
     "Northern European": 23.6,

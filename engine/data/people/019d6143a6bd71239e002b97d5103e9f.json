@@ -2,10 +2,7 @@
   "id": "019d6143a6bd71239e002b97d5103e9f",
   "type": "character",
   "name": "Hildur Hernández",
-  "aliases": [
-    "Alejandro Hernández",
-    "Alejandro"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 27,
   "status": "active",
   "location": "Aurochs Medical Complex, service sublevel corridors, near sub-level access near Dearborn and Jackson",
-  "description": "Alejandro Hernández is lean and angular, with the particular pallor of someone who works night shifts in fluorescent-lit sublevels, though his Ugandan-Hungarian ancestry gives his skin a warm undertone that fights back. He keeps his head shaved close and has a constellation of small bioluminescent freckle-mods across his left temple and jaw — a cosmetic geneware treatment he had done at eighteen that pulses faintly blue when his heart rate elevates, which he finds mortifying in tense situations. He moves through the hospital's service corridors like someone who has memorized every turn and wants to be finished before anyone notices him.\n\nHe is sharper than his job suggests and acutely aware of that gap, which produces a chip on his shoulder he tries to sand down with self-deprecating humor. He has worked the bio-waste runs at Aurochs for four years and in that time has accidentally become something of an expert in what the hospital throws away — which procedures are spiking, which departments are over-ordering which compounds, which disposal manifests do not match the volumes going into the incinerators. He notices things. He has not yet decided what to do with what he notices.",
+  "description": "Hildur Hernández is lean and angular, with the particular pallor of someone who works night shifts in fluorescent-lit sublevels, though his Ugandan-Hungarian ancestry gives his skin a warm undertone that fights back. He keeps his head shaved close and has a constellation of small bioluminescent freckle-mods across his left temple and jaw — a cosmetic geneware treatment he had done at eighteen that pulses faintly blue when his heart rate elevates, which he finds mortifying in tense situations. He moves through the hospital's service corridors like someone who has memorized every turn and wants to be finished before anyone notices him.\n\nHe is sharper than his job suggests and acutely aware of that gap, which produces a chip on his shoulder he tries to sand down with self-deprecating humor. He has worked the bio-waste runs at Aurochs for four years and in that time has accidentally become something of an expert in what the hospital throws away — which procedures are spiking, which departments are over-ordering which compounds, which disposal manifests do not match the volumes going into the incinerators. He notices things. He has not yet decided what to do with what he notices.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -246,7 +243,7 @@
     "posture_movement": "Moves with economical precision through tight spaces, shoulders slightly forward, head slightly down in the default posture of service-corridor navigation. Walks as though he has already memorized the route and is mentally three steps ahead. Tendency to stand at angles rather than face-on, a habit from navigating around equipment and maintaining peripheral awareness. Fidgets with fingernails when anxious.",
     "clothing_style": "Tier 2 contractor: regulation Aurochs-issue hazmat oversuit (navy with reflective trim) worn over cheap synthetic base layers. Off-duty clothing is thrifted and practical — faded work pants, thermal shirts, a battered Ironvein transit hoodie with the crest half-faded. No jewelry. Cheap steel-toed boots, well-maintained. Overall appearance is scrupulously clean but threadbare, with the precision of someone who cannot afford replacements but refuses to look slovenly."
   },
-  "image_prompt": "Alejandro Hernández, 178cm lean-angular build, shaved black hair, dark brown eyes. Medium-deep warm golden-brown skin with subtle richness blending Southeast Asian, Hispanic, African, and South Asian heritage. High defined cheekbones, angular jawline with balanced proportions. Clean-shaven, chronically alert expression with slight tension around eyes. Bioluminescent blue freckle-mods constellation across left temple and jaw faintly glowing. Navy Aurochs-issue hazmat oversuit with reflective trim over thermal layers, steel-toed boots. Standing at slight angle with shoulders forward, economical posture of service-corridor navigation. GLMZ, neon-lit industrial corridor setting with fluorescent overhead lighting, faint atmospheric haze. Mood: meticulously alert, exhausted precision, quiet global presence. Cinematic lighting, photorealistic, --ar 2:3 --v 6",
+  "image_prompt": "Hildur Hernández, 178cm lean-angular build, shaved black hair, dark brown eyes. Medium-deep warm golden-brown skin with subtle richness blending Southeast Asian, Hispanic, African, and South Asian heritage. High defined cheekbones, angular jawline with balanced proportions. Clean-shaven, chronically alert expression with slight tension around eyes. Bioluminescent blue freckle-mods constellation across left temple and jaw faintly glowing. Navy Aurochs-issue hazmat oversuit with reflective trim over thermal layers, steel-toed boots. Standing at slight angle with shoulders forward, economical posture of service-corridor navigation. GLMZ, neon-lit industrial corridor setting with fluorescent overhead lighting, faint atmospheric haze. Mood: meticulously alert, exhausted precision, quiet global presence. Cinematic lighting, photorealistic, --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Southeast Asian": 38.3,
     "Hispanic/Latin American": 30.4,

@@ -4,10 +4,7 @@
   "vote_count": 1,
   "type": "character",
   "name": "Apolo Lewandowski-Hossain",
-  "aliases": [
-    "Reed Lewandowski-Hossain",
-    "Reed"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -15,7 +12,7 @@
   "age": 25,
   "status": "active",
   "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near Milwaukee and North Ave",
-  "description": "Reed Lewandowski-Hossain is compact and densely muscled, built low to the ground like something designed to survive impacts. At 25, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a tech retriever out of Steamvent Alley, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nReed Lewandowski-Hossain has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
+  "description": "Apolo Lewandowski-Hossain is compact and densely muscled, built low to the ground like something designed to survive impacts. At 25, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a tech retriever out of Steamvent Alley, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nApolo Lewandowski-Hossain has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.45,
@@ -301,7 +298,7 @@
     "posture_movement": "Moves with economical precision — no wasted motion. Stands in slight forward lean, weight distributed low. Right arm hangs with subtle mechanical fluidity that marks him as augmented to anyone paying attention. Eyes track constantly, environmental awareness default state. When relaxed, tension never fully leaves his frame.",
     "clothing_style": "Tier 4 utilitarian — function over aesthetic. Reinforced synthweave jacket with chemical-resistant coating, worn gray. Cargo pants with deep pockets and cable management loops. Steel-toed work boots, scuffed and well-maintained. Under-layer is reactive mesh undershirt, barely visible at collar. No corporate logos, no team colors. Everything modular and replaceable. Weathered from Steamvent humidity and chemical exposure."
   },
-  "image_prompt": "Reed Lewandowski-Hossain, compact muscular man with warm medium brown skin and golden-olive undertones, dark brown natural eyes. Eastern European bone structure with South Asian depth, prominent cheekbones, straight nose bridge. Short black closely-cropped hair. Right arm full brushed steel cybernetic replacement with visible chrome joints, servo-assist lines visible at temples and neck. Faint chemical burn scars on left neck and upper chest. Minimalist circuit tattoo on inner left wrist. Wearing reinforced gray synthweave jacket with chemical-resistant coating, cargo pants with cable loops, scuffed steel-toed boots. Reactive mesh undershirt visible at collar. Standing in economical forward lean, weight low, constant environmental awareness. Steamvent Alley industrial setting, humid air with chemical haze, neon glow reflecting off chrome augmentation. Moody neo-noir atmosphere, weathered and utilitarian. --ar 2:3 --v 6",
+  "image_prompt": "Apolo Lewandowski-Hossain, compact muscular man with warm medium brown skin and golden-olive undertones, dark brown natural eyes. Eastern European bone structure with South Asian depth, prominent cheekbones, straight nose bridge. Short black closely-cropped hair. Right arm full brushed steel cybernetic replacement with visible chrome joints, servo-assist lines visible at temples and neck. Faint chemical burn scars on left neck and upper chest. Minimalist circuit tattoo on inner left wrist. Wearing reinforced gray synthweave jacket with chemical-resistant coating, cargo pants with cable loops, scuffed steel-toed boots. Reactive mesh undershirt visible at collar. Standing in economical forward lean, weight low, constant environmental awareness. Steamvent Alley industrial setting, humid air with chemical haze, neon glow reflecting off chrome augmentation. Moody neo-noir atmosphere, weathered and utilitarian. --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "Eastern European": 40.4,

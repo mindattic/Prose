@@ -2,10 +2,7 @@
   "id": "019d6143a5b77ca09ce9b9b939cac74b",
   "type": "character",
   "name": "Bartosz Cho",
-  "aliases": [
-    "Rowan Cho",
-    "Rowan"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 29,
   "status": "active",
   "location": "Geartown — industrial district of chop shops and fabricators, near Fullerton and Damen",
-  "description": "Rowan Cho is lean and angular, all sharp edges and visible tension. At 29, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and she makes no effort to hide it.\n\nShe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a counterintelligence specialist out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nRowan Cho has built a reputation on reliability rather than flash — she shows up, she delivers, she collects.",
+  "description": "Bartosz Cho is lean and angular, all sharp edges and visible tension. At 29, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and she makes no effort to hide it.\n\nShe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a counterintelligence specialist out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nBartosz Cho has built a reputation on reliability rather than flash — she shows up, she delivers, she collects.",
   "psychology": {
     "facet_weights": {
       "wound": 0.58,
@@ -301,7 +298,7 @@
     "posture_movement": "Economical and precise — minimal wasted motion. Walks with weight on balls of feet, ready to shift direction. Sits with back to wall and clear sightlines. Hands rest within 15cm of body. Eyes track movement constantly. Overall impression: coiled spring.",
     "clothing_style": "Tier 4 utilitarian — function over aesthetics. Dark textiles (charcoal, black, deep blue) in durable synthetics and treated canvas. Reinforced cargo pants with custom thigh holster rig. Fitted tactical jacket (matte black, multiple pockets, cable management built in). Worn Geartown-manufacture climbing boots with custom grip soles. No logos or visible branding. Jewelry: only a scratched chronometer on left wrist, military-grade, probably scavenged. Overall aesthetic: prepared for immediate action, zero flash."
   },
-  "image_prompt": "Rowan Cho, 172cm lean angular frame, warm deep brown skin with golden honey undertones blending South Asian, East Asian, and Southeast Asian heritage. Sharp high prominent cheekbones, weathered complexion. Long dark brown hair with silver threading pulled in tight functional braid. Deep brown eyes with pale grey-blue rim. Three parallel blade scars on left cheekbone, crescent scar on right temple, faint burn mark along jawline, surgical scar on left wrist. Chrome reflex booster nodes visible along spine with luminescent tracery, gecko-grip geometric patterning on fingertips. Wearing dark utilitarian tactical jacket, reinforced cargo pants with thigh holster, worn climbing boots. Coiled posture, economical movement, weight on balls of feet. GLMZ GLMZ operative. Neon-lit industrial setting, cool blue and amber lighting, ready stance against blurred urban backdrop, cinematic depth of field --ar 2:3 --v 6",
+  "image_prompt": "Bartosz Cho, 172cm lean angular frame, warm deep brown skin with golden honey undertones blending South Asian, East Asian, and Southeast Asian heritage. Sharp high prominent cheekbones, weathered complexion. Long dark brown hair with silver threading pulled in tight functional braid. Deep brown eyes with pale grey-blue rim. Three parallel blade scars on left cheekbone, crescent scar on right temple, faint burn mark along jawline, surgical scar on left wrist. Chrome reflex booster nodes visible along spine with luminescent tracery, gecko-grip geometric patterning on fingertips. Wearing dark utilitarian tactical jacket, reinforced cargo pants with thigh holster, worn climbing boots. Coiled posture, economical movement, weight on balls of feet. GLMZ GLMZ operative. Neon-lit industrial setting, cool blue and amber lighting, ready stance against blurred urban backdrop, cinematic depth of field --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 49,
     "East Asian": 37.2,

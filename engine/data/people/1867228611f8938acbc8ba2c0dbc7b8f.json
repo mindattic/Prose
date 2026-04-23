@@ -3,10 +3,7 @@
   "rating": 80,
   "type": "character",
   "name": "Demetria Malhotra",
-  "aliases": [
-    "Nova Malhotra",
-    "Nova"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "",
   "pronouns": "",
@@ -14,7 +11,7 @@
   "age": 0,
   "status": "alive",
   "location": "A climate-controlled server closet she converted into a living space in the Canopy district — three monitors, a cot, and nothing else, near Clark and Addison",
-  "description": "Nova Malhotra is what happens when a prodigy is raised entirely inside the mesh. Born to a Nigerian-Chinese family in the Narrows, she was coding before she could write her own name and had her first BCI at fourteen — illegally young, installed by a back-alley surgeon her parents paid in food credits. By twenty she was the most effective skip-tracer in the mid-tiers, finding people who had paid professionals to make them unfindable.\n\nHer method is pure data. She doesn't interview witnesses. She doesn't tail suspects. She sits in her closet-office and pulls the threads of a person's digital existence until the whole tapestry unravels. Every purchase, every biometric reading, every BCI ambient ping, every social media interaction — she weaves it into a pattern that tells her not just where someone is, but where they'll be tomorrow. Her clients are typically corporate or upper-tier — people who can afford her rates and who need someone found without the mess of physical investigation.\n\nThe limitation is obvious to everyone but her: she cannot find people who don't leave digital traces. The unaugmented, the deliberately analog, the Gray Zone-dwellers who live in cash economies — they are invisible to her. She's been beaten on three cases by Kofi Nakamura-Singh, a man she's never met and whose methods she considers prehistoric, and each loss infuriates her because she cannot understand how someone without a BCI could possibly outperform her algorithms.",
+  "description": "Demetria Malhotra is what happens when a prodigy is raised entirely inside the mesh. Born to a Nigerian-Chinese family in the Narrows, she was coding before she could write her own name and had her first BCI at fourteen — illegally young, installed by a back-alley surgeon her parents paid in food credits. By twenty she was the most effective skip-tracer in the mid-tiers, finding people who had paid professionals to make them unfindable.\n\nHer method is pure data. She doesn't interview witnesses. She doesn't tail suspects. She sits in her closet-office and pulls the threads of a person's digital existence until the whole tapestry unravels. Every purchase, every biometric reading, every BCI ambient ping, every social media interaction — she weaves it into a pattern that tells her not just where someone is, but where they'll be tomorrow. Her clients are typically corporate or upper-tier — people who can afford her rates and who need someone found without the mess of physical investigation.\n\nThe limitation is obvious to everyone but her: she cannot find people who don't leave digital traces. The unaugmented, the deliberately analog, the Gray Zone-dwellers who live in cash economies — they are invisible to her. She's been beaten on three cases by Famke Nakamura-Singh, a man she's never met and whose methods she considers prehistoric, and each loss infuriates her because she cannot understand how someone without a BCI could possibly outperform her algorithms.",
   "psychology": {
     "facet_weights": {
       "wound": 0,
@@ -42,7 +39,7 @@
   },
   "relationships": [
     {
-      "name": "Kofi Nakamura-Singh",
+      "name": "Famke Nakamura-Singh",
       "type": "unknowing rival",
       "description": "Has never met him but has lost three cases to him and considers him an inexplicable anomaly in her models",
       "emotional_core": "",
@@ -144,7 +141,7 @@
     "posture_movement": "Sits in a pronounced slouch, fingers constantly twitching (muscle memory from typing). When standing, shifts weight frequently as if uncomfortable outside confined spaces. Moves with efficiency but no grace — economical, purposeful, slightly jerky. Makes minimal eye contact; tends to look through people rather than at them. Speaks in clipped, precise sentences, pauses mid-thought as if accessing data.",
     "clothing_style": "Tier 3 functional minimalism — grey and black synthetic fabrics, pockets for tools and interface cables. Worn black utility jacket with internal pockets for datacards. Frayed cuffs, small stains from coffee and old code-testing spills. No jewelry except a battered titanium ring on her left middle finger (a gift from her mother, worn for luck). Feet are always bare or in worn black slip-ons because she refuses to wear anything that restricts sensation when seated. Everything is cheap, replaceable, and optimized for server-room life."
   },
-  "image_prompt": "Nova Malhotra, 26-year-old hacker with warm golden-brown skin bearing subtle amber undertones, dark brown eyes with faint golden neural implant visible in iris. Black hair with blue iridescent streaks pulled back in severe knot, loose strands escaping. Wiry lean build, 168cm tall, slight forward shoulder hunch. Faded 3cm temple scar from illegal BCI insertion. Minimal external augmentation. Wearing frayed black utility jacket over grey synthetic fabrics, torn cuffs stained with coffee. Battered titanium ring on left middle finger. Slouched posture, fingers twitching, dark circles under eyes from chronic minimal sun exposure. GLMZ Great Lakes Metropolitan Zone setting, server room or neon-lit hacker den background, cool blue and amber lighting emphasizing neural implant glow, dystopian atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Demetria Malhotra, 26-year-old hacker with warm golden-brown skin bearing subtle amber undertones, dark brown eyes with faint golden neural implant visible in iris. Black hair with blue iridescent streaks pulled back in severe knot, loose strands escaping. Wiry lean build, 168cm tall, slight forward shoulder hunch. Faded 3cm temple scar from illegal BCI insertion. Minimal external augmentation. Wearing frayed black utility jacket over grey synthetic fabrics, torn cuffs stained with coffee. Battered titanium ring on left middle finger. Slouched posture, fingers twitching, dark circles under eyes from chronic minimal sun exposure. GLMZ Great Lakes Metropolitan Zone setting, server room or neon-lit hacker den background, cool blue and amber lighting emphasizing neural implant glow, dystopian atmosphere --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "Hispanic/Latin American": 50.9,

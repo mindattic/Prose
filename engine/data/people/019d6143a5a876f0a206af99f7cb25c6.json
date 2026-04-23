@@ -2,10 +2,7 @@
   "id": "019d6143a5a876f0a206af99f7cb25c6",
   "type": "character",
   "name": "Baek Migizi-Thammasak",
-  "aliases": [
-    "Vale Migizi-Thammasak",
-    "Vale"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 30,
   "status": "active",
   "location": "The Rookery — dense vertical housing, gang-controlled, near Halsted and Chicago Ave",
-  "description": "Vale Migizi-Thammasak is compact and densely muscled, built low to the ground like something designed to survive impacts. At 30, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and he makes no effort to hide it.\n\nHe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a smuggler out of The Rookery, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Vale Migizi-Thammasak is one of the ones who actually does it.",
+  "description": "Baek Migizi-Thammasak is compact and densely muscled, built low to the ground like something designed to survive impacts. At 30, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and he makes no effort to hide it.\n\nHe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a smuggler out of The Rookery, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Baek Migizi-Thammasak is one of the ones who actually does it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -305,7 +302,7 @@
     "posture_movement": "Economical and predatory. Moves from the hips and shoulders, not the limbs. No wasted motion. Stands with weight distributed on the balls of his feet, ready to shift in any direction instantly. Eyes track movement constantly. Default expression is neutral-to-hostile. When at rest, he's coiled rather than relaxed.",
     "clothing_style": "Tier 4 utilitarian. Black reinforced work pants with cargo pockets and tool loops—worn, maintained, practical. Sleeveless compression undershirt showing off the augmented forearms deliberately. Matte-black tactical jacket with Velcro patch sections for identification—usually blank. Scuffed combat boots, steel-toed, broken in through heavy use. Everything is dark, everything is functional, nothing is decorative. Designed to survive contact with edges, heat, and blood. No corporate logos, no gang colors, no affiliation markers—deliberate neutrality."
   },
-  "image_prompt": "Vale Migizi-Thammasak, mixed-heritage neo-noir operative, 2226. Medium-brown skin with golden-copper Indigenous American base tone, olive-jade cheekbones from Southeast Asian heritage, cool undertones on jawline from Northern European ancestry. 168cm tall, compact muscular build, wide shoulders. Short black hair with silver temples, dark brown alert eyes, weathered complexion with blade scar running left temple to jaw, broken nose. Sleeveless black compression undershirt revealing augmented forearms with visible subdermal blade mount scarring and geneware muscle ripple shimmer. Matte-black tactical jacket, reinforced black cargo pants, steel-toed boots. Coiled predatory posture, weight on balls of feet, neutral-hostile expression. Dark gritty Great Lakes Metropolitan Zone interior, neon rim lighting casting cool shadows, industrial neo-noir urban aesthetic, moody tension --ar 2:3 --v 6",
+  "image_prompt": "Baek Migizi-Thammasak, mixed-heritage neo-noir operative, 2226. Medium-brown skin with golden-copper Indigenous American base tone, olive-jade cheekbones from Southeast Asian heritage, cool undertones on jawline from Northern European ancestry. 168cm tall, compact muscular build, wide shoulders. Short black hair with silver temples, dark brown alert eyes, weathered complexion with blade scar running left temple to jaw, broken nose. Sleeveless black compression undershirt revealing augmented forearms with visible subdermal blade mount scarring and geneware muscle ripple shimmer. Matte-black tactical jacket, reinforced black cargo pants, steel-toed boots. Coiled predatory posture, weight on balls of feet, neutral-hostile expression. Dark gritty Great Lakes Metropolitan Zone interior, neon rim lighting casting cool shadows, industrial neo-noir urban aesthetic, moody tension --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Indigenous American": 70.5,
     "Southeast Asian": 17.2,

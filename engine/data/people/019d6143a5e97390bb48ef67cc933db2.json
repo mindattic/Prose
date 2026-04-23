@@ -2,10 +2,7 @@
   "id": "019d6143a5e97390bb48ef67cc933db2",
   "type": "character",
   "name": "Etsuko Suzuki",
-  "aliases": [
-    "Indigo Suzuki",
-    "Indigo"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
@@ -13,7 +10,7 @@
   "age": 28,
   "status": "active",
   "location": "Geartown — lives in a worker housing block; operates across Aurochs Medical Complex, Geartown clinic strip, and occasional pickups in The Narrows, near Milwaukee and Damen",
-  "description": "Indigo Suzuki is compact and sharp-featured, with Croatian-Ghanaian heritage expressed in light brown skin, high cheekbones, and eyes that are a very pale hazel — almost gold — with cat-slit pupils from a geneware mod they got at twenty-two and have never regretted. Their hair is kept shaved on the sides and dyed an aggressive copper on top, the color of old wiring. They are almost always in their work coveralls, which are immaculate — they have a protocol for decontamination that borders on ceremonial and makes their colleagues slightly nervous.\n\nBio-waste disposal for a medical complex is, they will tell you, the most undervalued intelligence-gathering position in the building. What a hospital throws away is a complete record of what it does, and Indigo Suzuki has been reading that record for six years with increasing fascination. They are not doing anything with the information yet. They are cataloguing it. They have a particular running interest in the discrepancy between what Aurochs Medical Complex's public reporting says it disposes of and what Indigo Suzuki actually removes — the numbers do not match in ways that do not have an obvious innocent explanation, and Indigo Suzuki is by temperament someone who finds the non-obvious explanation more interesting.",
+  "description": "Etsuko Suzuki is compact and sharp-featured, with Croatian-Ghanaian heritage expressed in light brown skin, high cheekbones, and eyes that are a very pale hazel — almost gold — with cat-slit pupils from a geneware mod they got at twenty-two and have never regretted. Their hair is kept shaved on the sides and dyed an aggressive copper on top, the color of old wiring. They are almost always in their work coveralls, which are immaculate — they have a protocol for decontamination that borders on ceremonial and makes their colleagues slightly nervous.\n\nBio-waste disposal for a medical complex is, they will tell you, the most undervalued intelligence-gathering position in the building. What a hospital throws away is a complete record of what it does, and Etsuko Suzuki has been reading that record for six years with increasing fascination. They are not doing anything with the information yet. They are cataloguing it. They have a particular running interest in the discrepancy between what Aurochs Medical Complex's public reporting says it disposes of and what Etsuko Suzuki actually removes — the numbers do not match in ways that do not have an obvious innocent explanation, and Etsuko Suzuki is by temperament someone who finds the non-obvious explanation more interesting.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -250,7 +247,7 @@
     "The Heritage Vault",
     "Geartown",
     "The Gradient Compact",
-    "Indigo",
+    "Etsuko",
     "Copper",
     "Hazel Brink",
     "The Pale Mile",
@@ -276,7 +273,7 @@
     "posture_movement": "Moves with precision and economy — no wasted motion. Slight forward tilt when concentrating. Hands positioned ready, fingers often alert as though evaluating a space for contamination vectors. Eyes track detail obsessively.",
     "clothing_style": "Almost exclusively in immaculate work coveralls — Aurochs Medical Complex issue, graphite gray, modified with extra cargo pockets and sealed seams. Decontamination protocol means they are perpetually pristine despite the work. Beneath: plain gray thermals. Worn tactical boots rated for chemical splash. Thin nitrile gloves often tucked into coverall waistband even off-hours. Tier 4 working-class aesthetic with obsessive maintenance."
   },
-  "image_prompt": "Indigo Suzuki, GLMZ, compact 163cm biohazard processor with multi-continental phenotype: warm golden-brown skin blending East Asian cheekbone structure with Sub-Saharan African feature fullness, pale hazel-gold eyes with vertical cat-slit geneware pupils, copper-dyed crown undercut with dark regrown sides. Immaculate graphite gray Aurochs Medical Complex coveralls with sealed seams, tactical boots, nitrile gloves tucked at waist. Faded chemical scars visible on inner forearms, small biosafety tattoo on right wrist. Precise posture, hands alert and ready, eyes tracking detail. Sterile laboratory or decontamination chamber background, cool clinical lighting with slight amber warmth reflecting skin tone, slight forward lean, obsessive spatial awareness. Neo-noir work-tier aesthetic, cleanroom-pristine despite hazardous environment. --ar 2:3 --v 6",
+  "image_prompt": "Etsuko Suzuki, GLMZ, compact 163cm biohazard processor with multi-continental phenotype: warm golden-brown skin blending East Asian cheekbone structure with Sub-Saharan African feature fullness, pale hazel-gold eyes with vertical cat-slit geneware pupils, copper-dyed crown undercut with dark regrown sides. Immaculate graphite gray Aurochs Medical Complex coveralls with sealed seams, tactical boots, nitrile gloves tucked at waist. Faded chemical scars visible on inner forearms, small biosafety tattoo on right wrist. Precise posture, hands alert and ready, eyes tracking detail. Sterile laboratory or decontamination chamber background, cool clinical lighting with slight amber warmth reflecting skin tone, slight forward lean, obsessive spatial awareness. Neo-noir work-tier aesthetic, cleanroom-pristine despite hazardous environment. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "East Asian": 40.9,
     "Southeast Asian": 29.1,

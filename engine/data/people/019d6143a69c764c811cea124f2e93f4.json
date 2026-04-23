@@ -2,10 +2,7 @@
   "id": "019d6143a69c764c811cea124f2e93f4",
   "type": "character",
   "name": "Gita Tamale",
-  "aliases": [
-    "Koffi Tamale",
-    "Koffi"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 34,
   "status": "active",
   "location": "Grand Corridor, Ringo Consumer Logistics Processing Campus, QA Division Block C",
-  "description": "Koffi Tamale is medium height, medium build, medium everything on purpose — he discovered early that being forgettable at work was a form of protection, and he has refined it into an art. His skin is a warm medium brown, his hair is kept close-cropped with no mods, his work clothes are always within Ringo's corporate palette of grey-teal without being fashionable. His one visible geneware mod is a cat tail, burnt-orange with a black tip, which he got at twenty-two for reasons he'd describe as 'a moment of optimism' and which he's kept because removal costs three months of UBC supplemental and also because he's attached to it in ways he won't discuss. The tail moves with his moods in ways he can't fully control. His coworkers have learned to read it like a weather system.\n\nHe has worked QA at Ringo for nine years. He is not passionate about quality assurance. He is, however, deeply curious about the things that are wrong — not as a professional concern but in the way a person follows a crack in the ceiling, wondering where it leads. He has a gift for finding errors that aren't supposed to be findable and a corresponding instinct to not always report them immediately, to sit with them first and understand their shape. He reads a lot. He is polite to everyone. He has four close friends and would die before admitting how much he values them. He prays to the QA division's resident ELF — a twitchy spirit called Margin who lives in the error-logging system — more than he prays to anything else.",
+  "description": "Gita Tamale is medium height, medium build, medium everything on purpose — he discovered early that being forgettable at work was a form of protection, and he has refined it into an art. His skin is a warm medium brown, his hair is kept close-cropped with no mods, his work clothes are always within Ringo's corporate palette of grey-teal without being fashionable. His one visible geneware mod is a cat tail, burnt-orange with a black tip, which he got at twenty-two for reasons he'd describe as 'a moment of optimism' and which he's kept because removal costs three months of UBC supplemental and also because he's attached to it in ways he won't discuss. The tail moves with his moods in ways he can't fully control. His coworkers have learned to read it like a weather system.\n\nHe has worked QA at Ringo for nine years. He is not passionate about quality assurance. He is, however, deeply curious about the things that are wrong — not as a professional concern but in the way a person follows a crack in the ceiling, wondering where it leads. He has a gift for finding errors that aren't supposed to be findable and a corresponding instinct to not always report them immediately, to sit with them first and understand their shape. He reads a lot. He is polite to everyone. He has four close friends and would die before admitting how much he values them. He prays to the QA division's resident ELF — a twitchy spirit called Margin who lives in the error-logging system — more than he prays to anything else.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -266,7 +263,7 @@
     "posture_movement": "Economical and controlled. Moves without flourish, hands steady for fine detail work. Walks with even rhythm. The tail's movements are the only thing about him that appears spontaneous or unguarded.",
     "clothing_style": "Ringo Corporate Standard: grey-teal work tunic and trousers, fit within regulation tolerances, no personalization. Cheap synthetic material, well-maintained but not new. Work boots, also grey-teal. No jewelry, no visible brands, no accessories except the embedded tail. Dresses identically most days — a form of disappearance."
   },
-  "image_prompt": "Koffi Tamale, GLMZ, deep rich brown skin with warm golden undertones, refined South Asian-influenced cheekbones blended with broader Sub-Saharan African facial structure, dark brown eyes with subtle corneal latticing under light, close-cropped dark hair, clean-shaven corporate grooming. Burnt-orange geneware cat tail with black tip affixed at spine base, subtly curved. Wearing regulation grey-teal Ringo Corporate work tunic and trousers, grey-teal boots, perfectly maintained but worn. Posture contained and economical, expressionless corporate worker face. Standing in industrial office lighting or warehouse setting, stark and utilitarian, portrait-style, atmospheric, Great Lakes Metropolitan Zone aesthetic. Tail is only element showing personality. --ar 2:3 --v 6",
+  "image_prompt": "Gita Tamale, GLMZ, deep rich brown skin with warm golden undertones, refined South Asian-influenced cheekbones blended with broader Sub-Saharan African facial structure, dark brown eyes with subtle corneal latticing under light, close-cropped dark hair, clean-shaven corporate grooming. Burnt-orange geneware cat tail with black tip affixed at spine base, subtly curved. Wearing regulation grey-teal Ringo Corporate work tunic and trousers, grey-teal boots, perfectly maintained but worn. Posture contained and economical, expressionless corporate worker face. Standing in industrial office lighting or warehouse setting, stark and utilitarian, portrait-style, atmospheric, Great Lakes Metropolitan Zone aesthetic. Tail is only element showing personality. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 78.2,
     "South Asian": 14.5,

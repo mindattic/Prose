@@ -2,10 +2,7 @@
   "id": "019d6143a69e7ec0b423b3979668d534",
   "type": "character",
   "name": "Erling Bautista-Horváth-Petrović",
-  "aliases": [
-    "Rio Bautista-Horváth-Petrović",
-    "Rio"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 34,
   "status": "active",
   "location": "South Deering Sump, Sublevel 4 — a former water treatment annex converted into an unlicensed surgical suite she calls 'the pantry', near sub-level access near State and Van Buren",
-  "description": "Rio Bautista-Horváth-Petrović is small, lean, and precise — a former Helix Biosystems surgical technician who was quietly terminated after falsifying organ provenance records for a side arrangement she ran for two years before anyone noticed. She has warm umber skin and close-cropped natural hair she keeps covered under surgical caps out of habit even when she's not working. Her most striking feature is her eyes: she paid for patterned irises that look like cracked amber, threaded with faint gold lines she chose because they match the color of preserved tissue in nutrient solution. She finds this funny. Nobody else does.\n\nShe is brisk, technically focused, and runs her operation with clinical precision — she insists on basic sanitation, proper cold-chain storage, and documented tissue typing even in this context, because sloppy work kills customers and dead customers tell no one but also buy nothing. She maintains a complicated ideology about her work: she believes the official organ allocation system is a mechanism for tier sorting the deserving dead, and that she is simply an alternative distribution network. She has said this enough times that she half believes it. The other half of her knows she harvests from people who cannot say no.",
+  "description": "Erling Bautista-Horváth-Petrović is small, lean, and precise — a former Helix Biosystems surgical technician who was quietly terminated after falsifying organ provenance records for a side arrangement she ran for two years before anyone noticed. She has warm umber skin and close-cropped natural hair she keeps covered under surgical caps out of habit even when she's not working. Her most striking feature is her eyes: she paid for patterned irises that look like cracked amber, threaded with faint gold lines she chose because they match the color of preserved tissue in nutrient solution. She finds this funny. Nobody else does.\n\nShe is brisk, technically focused, and runs her operation with clinical precision — she insists on basic sanitation, proper cold-chain storage, and documented tissue typing even in this context, because sloppy work kills customers and dead customers tell no one but also buy nothing. She maintains a complicated ideology about her work: she believes the official organ allocation system is a mechanism for tier sorting the deserving dead, and that she is simply an alternative distribution network. She has said this enough times that she half believes it. The other half of her knows she harvests from people who cannot say no.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -201,7 +198,7 @@
       "Small burn scar on right forearm, pale and old, from lab accident during her Helix employment"
     ]
   },
-  "image_prompt": "GLMZ, Rio Bautista-Horváth-Petrović, 158cm lean surgical technician with warm olive-bronze skin and golden undertones. Pan-European-Latin-African ancestry visible in high cheekbones and angular jawline, direct clinical gaze with augmented amber eyes showing gold cracked-glass pattern. Close-cropped black hair, surgical precision aesthetic. Bioluminescent pale blue fingernail beds glowing softly, subdermal chrome plating visible at wrist joints and knuckles. Thin temple scar from retinal implant partially hidden by hairline. Wearing dark compression bodysuit, reinforced cargo pants, unmarked black field jacket, clinical clogs. Faded Helix Biosystems ID badge on gray lanyard. Hands steady and controlled, upright economical posture. Sterile, meticulous appearance like a walking surgical field. Neo-noir Tier 4-5 utilitarian aesthetic, cool clinical lighting casting subtle shadows across augmented features, industrial facility background, clinical precision mood, photography-realistic style --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, Erling Bautista-Horváth-Petrović, 158cm lean surgical technician with warm olive-bronze skin and golden undertones. Pan-European-Latin-African ancestry visible in high cheekbones and angular jawline, direct clinical gaze with augmented amber eyes showing gold cracked-glass pattern. Close-cropped black hair, surgical precision aesthetic. Bioluminescent pale blue fingernail beds glowing softly, subdermal chrome plating visible at wrist joints and knuckles. Thin temple scar from retinal implant partially hidden by hairline. Wearing dark compression bodysuit, reinforced cargo pants, unmarked black field jacket, clinical clogs. Faded Helix Biosystems ID badge on gray lanyard. Hands steady and controlled, upright economical posture. Sterile, meticulous appearance like a walking surgical field. Neo-noir Tier 4-5 utilitarian aesthetic, cool clinical lighting casting subtle shadows across augmented features, industrial facility background, clinical precision mood, photography-realistic style --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Eastern European": 54.8,
     "Hispanic/Latin American": 33.5,

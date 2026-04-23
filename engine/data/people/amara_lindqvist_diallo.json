@@ -2,12 +2,9 @@
   "id": "eeb9a904e3a8156bd57b9a83188d9114",
   "name": "Edgardo Lindqvist-Diallo",
   "type": "character",
-  "aliases": [
-    "Amara Lindqvist-Diallo",
-    "Amara"
-  ],
+  "aliases": [],
   "role": "Private Investigator",
-  "description": "Amara Lindqvist-Diallo runs Bright Path Recovery, the most effective missing-child operation in the Gray Zone. She is forty-seven years old, Swedish-Malian heritage evident in her honey-brown skin and angular features, and she has been doing this work for twenty-two years — ever since her own younger sister vanished into the Gray Zone's underworld and was never found.\n\nHer method is fundamentally relational. She has spent two decades building a network of contacts among the people who see everything but are never asked: street vendors, waste collectors, tunnel dwellers, feral children, shelter workers, and the quiet army of grandmothers who sit on the Gray Zone stoops watching the world. When a child goes missing, Amara activates this network like a nervous system, and information flows to her from a thousand points simultaneously. No technology can replicate what she's built because it's based on trust, and trust takes years.\n\nThe work pays well — desperate parents will mortgage everything for their child's return — and Amara charges on a sliding scale, taking corporate rates from those who can afford it and working for free for those who can't. She is chronically exhausted, carries the psychological weight of every child she's failed to find, and refuses to take a vacation because every day off is a day someone's kid is still out there. Her junior associates worry about her. They're right to worry.",
+  "description": "Edgardo Lindqvist-Diallo runs Bright Path Recovery, the most effective missing-child operation in the Gray Zone. She is forty-seven years old, Swedish-Malian heritage evident in her honey-brown skin and angular features, and she has been doing this work for twenty-two years — ever since her own younger sister vanished into the Gray Zone's underworld and was never found.\n\nHer method is fundamentally relational. She has spent two decades building a network of contacts among the people who see everything but are never asked: street vendors, waste collectors, tunnel dwellers, feral children, shelter workers, and the quiet army of grandmothers who sit on the Gray Zone stoops watching the world. When a child goes missing, Edgardo activates this network like a nervous system, and information flows to her from a thousand points simultaneously. No technology can replicate what she's built because it's based on trust, and trust takes years.\n\nThe work pays well — desperate parents will mortgage everything for their child's return — and Edgardo charges on a sliding scale, taking corporate rates from those who can afford it and working for free for those who can't. She is chronically exhausted, carries the psychological weight of every child she's failed to find, and refuses to take a vacation because every day off is a day someone's kid is still out there. Her junior associates worry about her. They're right to worry.",
   "affiliation": "Bright Path Recovery — her own firm, employing three junior associates",
   "tier": "3",
   "location": "A converted ground-floor storefront in the Narrows, deliberately non-threatening — children's drawings on the walls, tea always available",
@@ -31,7 +28,7 @@
     "Non-lethal weapons only — stun baton and tranquilizer darts",
     "Encrypted communicator linked to her associate network"
   ],
-  "personality": "Amara is the kind of person who radiates safety the way some people radiate threat. She's large — tall and broad-shouldered with strong hands that have held a lot of shaking children. Her voice is low and steady and she never raises it, ever, because she learned early that volume triggers the people she's trying to help. She carries an enormous well of patience and an equally enormous well of rage — patience for the victims, rage for the people who create them. She has been known to weep openly after a recovery and then, hours later, beat critical information out of a trafficker with methodical calm.",
+  "personality": "Edgardo is the kind of person who radiates safety the way some people radiate threat. She's large — tall and broad-shouldered with strong hands that have held a lot of shaking children. Her voice is low and steady and she never raises it, ever, because she learned early that volume triggers the people she's trying to help. She carries an enormous well of patience and an equally enormous well of rage — patience for the victims, rage for the people who create them. She has been known to weep openly after a recovery and then, hours later, beat critical information out of a trafficker with methodical calm.",
   "relationships": [
     {
       "name": "Kwesi Park-Traore",
@@ -41,11 +38,11 @@
     {
       "name": "Mama Ito",
       "type": "informant",
-      "description": "An elderly woman who runs a soup kitchen in the Narrows and sees every child who passes through — Amara's most valuable single source"
+      "description": "An elderly woman who runs a soup kitchen in the Narrows and sees every child who passes through — Edgardo's most valuable single source"
     }
   ],
   "story_hooks": [
-    "A child Amara recovered years ago has gone missing again — but this time they left voluntarily, and finding them means confronting whether recovery was the right choice in the first place",
+    "A child Edgardo recovered years ago has gone missing again — but this time they left voluntarily, and finding them means confronting whether recovery was the right choice in the first place",
     "Someone is systematically killing her network of street-kid informants, and she can't go to CorpSec because they don't investigate the Gray Zone murders",
     "She receives credible information that her missing sister is alive, somewhere in the Underbelly, after twenty-two years"
   ],

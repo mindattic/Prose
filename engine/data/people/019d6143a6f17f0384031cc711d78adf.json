@@ -2,10 +2,7 @@
   "id": "019d6143a6f17f0384031cc711d78adf",
   "type": "character",
   "name": "Gunther Bautista",
-  "aliases": [
-    "Odalys Bautista",
-    "Odalys"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 41,
   "status": "active",
   "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Oak",
-  "description": "Odalys Bautista is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 41, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a extraction specialist out of The Spires, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Odalys Bautista is one of the ones who actually does it.",
+  "description": "Gunther Bautista is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 41, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a extraction specialist out of The Spires, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Gunther Bautista is one of the ones who actually does it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.25,
@@ -302,7 +299,7 @@
     "posture_movement": "Economical and precise — never wasted motion. Stands with weight distributed for immediate movement in any direction. When moving through space, she's fluid but controlled, the way someone moves when they've trained to clear rooms and extract targets. Rarely still; fingers often drum patterns on surfaces or flex unconsciously. Her breathing is slightly audible at rest — a subtle mechanical whisper beneath natural respiration.",
     "clothing_style": "Functional Tier-2 hybrid aesthetic — form-fitting synthetic fiber tactical pants in matte grey-black with reinforced seams and utility pockets; lightweight responsive-fabric compression shirt under a fitted, cropped jacket in charcoal with subtle reflective threading. High-grade boots (Aegis-brand, military-spec) with memory-foam soles for silent movement. Minimal jewelry except a worn stainless steel bracelet (likely sentimental from her mentor). When undercover in civilian life, she shifts to unmarked streetwear that still reads as 'prepared' — dark colors, functional silhouettes, nothing that draws attention but nothing that advertises vulnerability."
   },
-  "image_prompt": "Odalys Bautista, 172cm athletic frame, deep golden-brown skin with warm amber undertones, sculpted cheekbones and angular jawline reflecting African and Latin heritage with refined Northern European and North African structure. Dark brown eyes with amber glint. Black hair with silver threading pulled tight in functional braid. Chrome neural interface ports visible at temples with brushed titanium flanges, surgical scars along jawline and temples. Small burn scar on left forearm, kanji tattoo on inner wrist. Wearing charcoal tactical jacket over compression shirt, matte grey-black tactical pants, military-spec boots. Precise, economical posture ready for extraction. GLMZ, noir extraction operative, moody neon-lit industrial setting with overhead lighting catching chrome augmentations, gritty Great Lakes Metropolitan Zone dystopian environment, cinematic --ar 2:3 --v 6",
+  "image_prompt": "Gunther Bautista, 172cm athletic frame, deep golden-brown skin with warm amber undertones, sculpted cheekbones and angular jawline reflecting African and Latin heritage with refined Northern European and North African structure. Dark brown eyes with amber glint. Black hair with silver threading pulled tight in functional braid. Chrome neural interface ports visible at temples with brushed titanium flanges, surgical scars along jawline and temples. Small burn scar on left forearm, kanji tattoo on inner wrist. Wearing charcoal tactical jacket over compression shirt, matte grey-black tactical pants, military-spec boots. Precise, economical posture ready for extraction. GLMZ, noir extraction operative, moody neon-lit industrial setting with overhead lighting catching chrome augmentations, gritty Great Lakes Metropolitan Zone dystopian environment, cinematic --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 39.5,
     "Sub-Saharan African": 33.5,

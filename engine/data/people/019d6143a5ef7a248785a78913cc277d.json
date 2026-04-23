@@ -2,10 +2,7 @@
   "id": "019d6143a5ef7a248785a78913cc277d",
   "type": "character",
   "name": "Fuat Hernández",
-  "aliases": [
-    "Orion Hernández",
-    "Orion"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 31,
   "status": "active",
   "location": "Geartown, Ferrogate Line 7 depot; lives in a studio in Bronzeline, near North Ave and Damen",
-  "description": "Orion Hernández is lean and hollow-eyed in the way of someone who has worked nights for so long that daylight feels personally hostile. His skin is a cool amber-brown, his hair grown long enough to tie back but short enough to stuff under a Ferrogate cap, and he has a geneware modification — pale silver irises that glow faintly in low light, bought secondhand from a clinic in the Narrows when he was twenty-two because he thought it would make him look interesting. It does. He has a fine-boned face that people often assume is younger than it is, and a habit of blinking very slowly, like a bird deciding whether to trust you.\n\nHe loves the empty train. From 02:00 to 05:00 on Line 7, when the cars are nearly hollow and the city slides past the glass like a fever dream, Orion Hernández is genuinely content in a way he can't replicate anywhere else. He is kind to passengers in distress and has developed an informal taxonomy of the people who ride at night: the workers, the lost, the running-from-something crowd, and what he privately calls the 'just-needed-to-move' folk. He does not intervene in people's business unless they're bleeding. He does, however, remember faces.",
+  "description": "Fuat Hernández is lean and hollow-eyed in the way of someone who has worked nights for so long that daylight feels personally hostile. His skin is a cool amber-brown, his hair grown long enough to tie back but short enough to stuff under a Ferrogate cap, and he has a geneware modification — pale silver irises that glow faintly in low light, bought secondhand from a clinic in the Narrows when he was twenty-two because he thought it would make him look interesting. It does. He has a fine-boned face that people often assume is younger than it is, and a habit of blinking very slowly, like a bird deciding whether to trust you.\n\nHe loves the empty train. From 02:00 to 05:00 on Line 7, when the cars are nearly hollow and the city slides past the glass like a fever dream, Fuat Hernández is genuinely content in a way he can't replicate anywhere else. He is kind to passengers in distress and has developed an informal taxonomy of the people who ride at night: the workers, the lost, the running-from-something crowd, and what he privately calls the 'just-needed-to-move' folk. He does not intervene in people's business unless they're bleeding. He does, however, remember faces.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -276,7 +273,7 @@
     "posture_movement": "Moves with economical grace through crowded or confined spaces. Often stands very still, as if conserving energy. Blinks slowly and deliberately, a bird-like mannerism that suggests careful observation rather than engagement. Rarely makes sudden movements. His default posture is slightly hunched, the result of long hours in operator's seats.",
     "clothing_style": "Ferrogate uniform during shifts: charcoal grey utility jacket with reflective trim, company badge clipped to chest, comfortable black cargo trousers, non-slip boots rated for platform work. Off-duty: dark jeans, thermal layers, oversized hoodies or a worn canvas field jacket in greyish-green. Aesthetic is Tier 2-3 working class — functional, durable, minimal ornamentation. No jewelry. His only visible accessory is a worn Ferrogate employee pin on his jacket collar."
   },
-  "image_prompt": "Orion Hernández, 178cm lean angular neo-noir operative, olive-bronze skin with golden undertones blending East Asian, Middle Eastern, and Latin American heritage. High defined cheekbones, moderately prominent jawline, pale silver bioluminescent eyes glowing softly in low light, dark brown shoulder-length hair tied back loosely. Fatigued complexion with permanent dark circles, minimal facial hair. Faint needle-track scars on left inner elbow, thin white scar along right temple. Subtle titanium neural port visible behind left ear. Ferrogate charcoal grey utility jacket with reflective trim, company badge, black cargo trousers, non-slip platform boots. Hunched posture from operator's fatigue, bird-like stillness, economical movement. Nocturnal dimly-lit industrial setting, neon glow reflecting off wet metal surfaces, GLMZ Great Lakes Metropolitan Zone aesthetic, atmospheric haze, moody introspective expression --ar 2:3 --v 6",
+  "image_prompt": "Fuat Hernández, 178cm lean angular neo-noir operative, olive-bronze skin with golden undertones blending East Asian, Middle Eastern, and Latin American heritage. High defined cheekbones, moderately prominent jawline, pale silver bioluminescent eyes glowing softly in low light, dark brown shoulder-length hair tied back loosely. Fatigued complexion with permanent dark circles, minimal facial hair. Faint needle-track scars on left inner elbow, thin white scar along right temple. Subtle titanium neural port visible behind left ear. Ferrogate charcoal grey utility jacket with reflective trim, company badge, black cargo trousers, non-slip platform boots. Hunched posture from operator's fatigue, bird-like stillness, economical movement. Nocturnal dimly-lit industrial setting, neon glow reflecting off wet metal surfaces, GLMZ Great Lakes Metropolitan Zone aesthetic, atmospheric haze, moody introspective expression --ar 2:3 --v 6",
   "genetic_ancestry": {
     "East Asian": 34.3,
     "Middle Eastern": 30.8,

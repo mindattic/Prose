@@ -3,10 +3,7 @@
   "rating": 70,
   "type": "character",
   "name": "Arjav Thakur",
-  "aliases": [
-    "Sterling Thakur",
-    "Sterling"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -14,7 +11,7 @@
   "age": 30,
   "status": "active",
   "location": "The Overhang — residential shelves built onto megastructure exteriors, near Ashland and Chicago Ave",
-  "description": "Sterling Thakur is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 30, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a extraction specialist out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented extraction specialist in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
+  "description": "Arjav Thakur is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 30, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and she makes no effort to hide it.\n\nShe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. She works as a extraction specialist out of The Overhang, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented extraction specialist in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.46,
@@ -302,7 +299,7 @@
     "posture_movement": "Stands with weight balanced, ready to move in any direction. Movement is economical and fluid — no wasted motion, no flourish. Eyes constantly scanning, cataloging exits and threats. She moves like someone who has learned that survival is a series of micro-decisions made at speed.",
     "clothing_style": "Tier 3-4 practical: reinforced synthetic-leather jacket (charcoal grey, well-maintained), fitted tactical pants with cargo pockets, heavy-duty boots with grip-soles. Minimal jewelry except a worn silver ring on her right hand (inherited from mentor). Gear is always accessible, always ready. Fabrics are functional — nothing that catches or restricts. She dresses for the job, not the social tier."
   },
-  "image_prompt": "Sterling Thakur, GLMZ, 172cm athletic lean woman with warm caramel-bronze skin blending South Asian, Hispanic, Southeast Asian, Northern European, and Sub-Saharan African heritage. High prominent cheekbones, almond-shaped deep brown eyes, defined jawline, dark brown hair pulled into tight high bun. Thin white scar from left temple to ear. Charcoal grey reinforced synthetic-leather jacket, fitted tactical pants, heavy-duty grip-sole boots. Chrome reflex booster ports visible at base of skull glowing faintly amber. Three interlocking circle tattoo on right forearm. Worn silver ring on right hand. Standing balanced and alert in dimly-lit GLMZ corridor or rooftop, ready stance, constant threat-assessment scanning expression. Economical posture, fluid movement ready. Neon and industrial lighting catching the luminescence of her augmentation ports. Gritty neo-noir atmosphere, function over form aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Arjav Thakur, GLMZ, 172cm athletic lean woman with warm caramel-bronze skin blending South Asian, Hispanic, Southeast Asian, Northern European, and Sub-Saharan African heritage. High prominent cheekbones, almond-shaped deep brown eyes, defined jawline, dark brown hair pulled into tight high bun. Thin white scar from left temple to ear. Charcoal grey reinforced synthetic-leather jacket, fitted tactical pants, heavy-duty grip-sole boots. Chrome reflex booster ports visible at base of skull glowing faintly amber. Three interlocking circle tattoo on right forearm. Worn silver ring on right hand. Standing balanced and alert in dimly-lit GLMZ corridor or rooftop, ready stance, constant threat-assessment scanning expression. Economical posture, fluid movement ready. Neon and industrial lighting catching the luminescence of her augmentation ports. Gritty neo-noir atmosphere, function over form aesthetic --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "South Asian": 26.3,

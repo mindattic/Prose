@@ -2,10 +2,7 @@
   "id": "019d6143a6dd7ad889ca5d682e6a1bbe",
   "type": "character",
   "name": "Arslan Ingebrigtsen",
-  "aliases": [
-    "Sterling Ingebrigtsen",
-    "Sterling"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
@@ -13,7 +10,7 @@
   "age": 24,
   "status": "active",
   "location": "Deepwell Station (surface apartment) / sub-level tunnel network below Deepwell (performance venues), near sub-level access near State and Van Buren",
-  "description": "Sterling Ingebrigtsen is compact and perpetually in motion, with quick dark eyes and a grin that appears suddenly and fully, like a door flung open. Their heritage traces a line from the Cambodian plateau through the Andean highlands to the Sahel coast, and their features carry that long migration in the planes of their face — high cheekbones, a broad nose, skin the color of weathered teak. They've had color-shift hair installed, currently running through a slow amber-to-blue cycle that completes every six hours, and they wear the same battered canvas jacket every day regardless of weather, its back covered in hand-stitched patches from every illegal venue they've played.\n\nSterling Ingebrigtsen's art is tactile — they design sound that you feel in your sternum before you hear it with your ears, building frequencies that interact with the biological resonance of a crowd. In the tunnel spaces below Deepwell, where the old transit infrastructure creates natural acoustic chambers, their sets have reportedly made people hallucinate colors or weep without knowing why. They are not a philosophical person about this; they find discussions of art theory excruciating and will physically walk away from them mid-sentence. What drives them is pure, inarticulate appetite — for the moment when a crowd stops being separate people and becomes a single breathing thing. They collect sounds obsessively, carrying a modified audio recorder everywhere and harvesting the acoustic signatures of spaces, machines, and weather systems.",
+  "description": "Arslan Ingebrigtsen is compact and perpetually in motion, with quick dark eyes and a grin that appears suddenly and fully, like a door flung open. Their heritage traces a line from the Cambodian plateau through the Andean highlands to the Sahel coast, and their features carry that long migration in the planes of their face — high cheekbones, a broad nose, skin the color of weathered teak. They've had color-shift hair installed, currently running through a slow amber-to-blue cycle that completes every six hours, and they wear the same battered canvas jacket every day regardless of weather, its back covered in hand-stitched patches from every illegal venue they've played.\n\nArslan Ingebrigtsen's art is tactile — they design sound that you feel in your sternum before you hear it with your ears, building frequencies that interact with the biological resonance of a crowd. In the tunnel spaces below Deepwell, where the old transit infrastructure creates natural acoustic chambers, their sets have reportedly made people hallucinate colors or weep without knowing why. They are not a philosophical person about this; they find discussions of art theory excruciating and will physically walk away from them mid-sentence. What drives them is pure, inarticulate appetite — for the moment when a crowd stops being separate people and becomes a single breathing thing. They collect sounds obsessively, carrying a modified audio recorder everywhere and harvesting the acoustic signatures of spaces, machines, and weather systems.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -172,7 +169,7 @@
     "The Heritage Vault",
     "The Gradient Compact",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
-    "Frost Boudiaf",
+    "Folakemi Boudiaf",
     "Zheng-Dao Heavy Industries Space Elevator Tether System",
     "Arcturus CK-5 'Bloodhound'",
     "Teak"
@@ -198,7 +195,7 @@
     "posture_movement": "Never still for more than a few seconds. Fidgets constantly with hands, tapping rhythms on surfaces, fingers moving as if mixing invisible decks. Leans forward when listening intently. Moves through space with economical efficiency — no wasted motion, but perpetually restless. When engaged with sound equipment, all extraneous movement stops and becomes entirely focused.",
     "clothing_style": "Tier 4 working class underground aesthetic with intentional anti-fashion. Battered canvas jacket (faded navy, heavily patched with hand-stitched fabric scraps from venues and friends) worn over layers of cheap synthetic tank tops in varying disrepair. Cargo pants with pockets filled with audio equipment, patch cables, recording devices. Scuffed utility boots with untied laces. Paracord harness across chest when performing for equipment anchoring and cable management. Homemade copper wire bracelet wound around left wrist. Clothes permanently smell of machine oil, tunnel dampness, cigarette smoke."
   },
-  "image_prompt": "Sterling Ingebrigtsen, GLMZ, compact wiry figure 162cm tall with warm mid-brown skin blending East Asian, Middle Eastern, Northern European and Sub-Saharan heritage, angular East Asian bone structure balanced by broad Middle Eastern cheekbones and full lips, dark alert eyes, shoulder-length hair with color-shift augmentation cycling electric blue and amber, visible pale scarring on inner forearms, stick-and-poke sound wave tattoos on knuckles, dark circles under eyes, restless fidgeting hands. Wearing heavily patched faded navy canvas jacket over cheap synthetic tank top, cargo pants filled with audio equipment, scuffed utility boots, paracord harness across chest, copper wire bracelet on left wrist. Standing at underground sound deck in neon-lit tunnel venue, hands mid-motion mixing invisible controls, perpetually restless energy, moody blue-amber lighting catching the color-shift hair, smell of machine oil and cigarette smoke in the air, Great Lakes Metropolitan Zone underground aesthetic, --ar 2:3 --v 6",
+  "image_prompt": "Arslan Ingebrigtsen, GLMZ, compact wiry figure 162cm tall with warm mid-brown skin blending East Asian, Middle Eastern, Northern European and Sub-Saharan heritage, angular East Asian bone structure balanced by broad Middle Eastern cheekbones and full lips, dark alert eyes, shoulder-length hair with color-shift augmentation cycling electric blue and amber, visible pale scarring on inner forearms, stick-and-poke sound wave tattoos on knuckles, dark circles under eyes, restless fidgeting hands. Wearing heavily patched faded navy canvas jacket over cheap synthetic tank top, cargo pants filled with audio equipment, scuffed utility boots, paracord harness across chest, copper wire bracelet on left wrist. Standing at underground sound deck in neon-lit tunnel venue, hands mid-motion mixing invisible controls, perpetually restless energy, moody blue-amber lighting catching the color-shift hair, smell of machine oil and cigarette smoke in the air, Great Lakes Metropolitan Zone underground aesthetic, --ar 2:3 --v 6",
   "genetic_ancestry": {
     "East Asian": 42.1,
     "Middle Eastern": 27.3,

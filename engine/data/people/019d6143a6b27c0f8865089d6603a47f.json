@@ -2,10 +2,7 @@
   "id": "019d6143a6b27c0f8865089d6603a47f",
   "type": "character",
   "name": "Everardo Wickramasinghe-Delgado-Wickramasinghe",
-  "aliases": [
-    "Indigo Wickramasinghe-Delgado-Wickramasinghe",
-    "Indigo"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 33,
   "status": "active",
   "location": "the Gray Zone — lower loading docks, near Halsted and Chicago Ave",
-  "description": "Indigo Wickramasinghe-Delgado-Wickramasinghe is the angriest person in the Lower Dock Crew and possibly in the Gray Zone. He lost three fingers on his right hand to the katana and most of his upper teeth to the flat of the blade. His replacement fingers are industrial salvage — thick, clumsy, meant for cargo work. His dental work is Tier 1 ceramic that doesn't match, giving him a checkerboard smile he refuses to show.\n\nRodney grew up in the Exclusion Zone between Gary and Hammond — the same ungoverned corridors Kyle survived as a child, though they never crossed paths. He has a daughter, Keisha (age 9), from a relationship that ended when the mother, Trina, relocated to the Milwaukee Zone. Rodney has not seen Keisha in two years. He sends messages. Keisha responds with single-word answers. He reads each one forty times.\n\nOf all the crew, Rodney is the most likely to do something stupid and solo. He has the least to lose and the most anger. He went back to the loading dock the day after the Prologue and collected Kyle's spent shell casings. He keeps them in a jar on his shelf. He does not know why. He looks at them every night. They are the closest thing he has to a relationship with the man who broke him.",
+  "description": "Everardo Wickramasinghe-Delgado-Wickramasinghe is the angriest person in the Lower Dock Crew and possibly in the Gray Zone. He lost three fingers on his right hand to the katana and most of his upper teeth to the flat of the blade. His replacement fingers are industrial salvage — thick, clumsy, meant for cargo work. His dental work is Tier 1 ceramic that doesn't match, giving him a checkerboard smile he refuses to show.\n\nRodney grew up in the Exclusion Zone between Gary and Hammond — the same ungoverned corridors Kyle survived as a child, though they never crossed paths. He has a daughter, Keisha (age 9), from a relationship that ended when the mother, Trina, relocated to the Milwaukee Zone. Rodney has not seen Keisha in two years. He sends messages. Keisha responds with single-word answers. He reads each one forty times.\n\nOf all the crew, Rodney is the most likely to do something stupid and solo. He has the least to lose and the most anger. He went back to the loading dock the day after the Prologue and collected Kyle's spent shell casings. He keeps them in a jar on his shelf. He does not know why. He looks at them every night. They are the closest thing he has to a relationship with the man who broke him.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -229,7 +226,7 @@
     "Coherent Radiation Scalpel CRS-7 'Suture'",
     "ARCTURUS DEFENSE Bastion Subdermal Armor Mesh",
     "Chicago",
-    "Indigo",
+    "Everardo",
     "Arcturus KS-7 'Nursery'",
     "Lazarus IDP-1 'Teeth'",
     "Cargo Tacos"
@@ -256,7 +253,7 @@
     "posture_movement": "Hunched slightly forward, as if perpetually bracing for impact or leaning into work. His right hand (the salvage one) is held stiffly, claw-like, when at rest. He moves with purpose but without fluidity — economical, efficient, no wasted motion. His left hand fidgets constantly: rubbing his jaw, touching the jar in his pocket, balling into a fist. When standing still, he rocks slightly heel-to-toe, never truly at rest.",
     "clothing_style": "Tier 4-5 dock worker uniform: reinforced canvas work pants with tool pockets, faded to a grimy gray. Steel-toed boots, scuffed and held together with epoxy and habit. A sleeveless compression vest (black, Tier 3 brand, worn under an oversized gray longshoreman's coat). The coat is missing one button. He wears no jewelry except a fraying cordage bracelet on his left wrist — a gift from Keisha, two years old, unwashed. His hands are perpetually stained with grease and rust. His clothes smell like diesel and desperation."
   },
-  "image_prompt": "Indigo Wickramasinghe-Delgado-Wickramasinghe, dark warm brown skin with golden undertones from blended Sub-Saharan African, South Asian, and Hispanic ancestry, 178cm tall, lean muscular dock worker build. Angular cheekbones, broad nose bridge, clenched jaw with visible mismatched white ceramic teeth gap. Dark brown eyes with amber undertones, bloodshot from exhaustion. Short dark brown hair graying at temples. Thin pale scar running left temple to jawline. Right hand: three industrial salvage chrome and polymer fingers (index, middle, ring), matte gray, mechanical. Pale pink circular burn scar on inner right forearm. Worn Tier 4-5 dock worker: faded gray reinforced canvas pants, scuffed steel-toed boots, black compression vest under oversized gray longshoreman's coat missing one button. Fraying cordage bracelet on left wrist. Hands stained with grease and rust. Posture hunched forward, right hand claw-like at rest, left hand fidgeting. GLMZ Great Lakes dock at night, neon signs reflecting off wet concrete and shipping containers, dramatic shadows, gritty industrial atmosphere, perpetually tense and weathered expression --ar 2:3 --v 6",
+  "image_prompt": "Everardo Wickramasinghe-Delgado-Wickramasinghe, dark warm brown skin with golden undertones from blended Sub-Saharan African, South Asian, and Hispanic ancestry, 178cm tall, lean muscular dock worker build. Angular cheekbones, broad nose bridge, clenched jaw with visible mismatched white ceramic teeth gap. Dark brown eyes with amber undertones, bloodshot from exhaustion. Short dark brown hair graying at temples. Thin pale scar running left temple to jawline. Right hand: three industrial salvage chrome and polymer fingers (index, middle, ring), matte gray, mechanical. Pale pink circular burn scar on inner right forearm. Worn Tier 4-5 dock worker: faded gray reinforced canvas pants, scuffed steel-toed boots, black compression vest under oversized gray longshoreman's coat missing one button. Fraying cordage bracelet on left wrist. Hands stained with grease and rust. Posture hunched forward, right hand claw-like at rest, left hand fidgeting. GLMZ Great Lakes dock at night, neon signs reflecting off wet concrete and shipping containers, dramatic shadows, gritty industrial atmosphere, perpetually tense and weathered expression --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 42.2,
     "South Asian": 34.9,

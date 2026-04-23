@@ -4,10 +4,7 @@
   "vote_count": 1,
   "type": "character",
   "name": "Hachiro Lindström-Bustamante",
-  "aliases": [
-    "Marisol Lindström-Bustamante",
-    "Marisol"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -15,7 +12,7 @@
   "age": 28,
   "status": "active",
   "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Chicago Ave",
-  "description": "Marisol Lindström-Bustamante is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 28, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a data thief out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented data thief in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
+  "description": "Hachiro Lindström-Bustamante is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 28, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a data thief out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented data thief in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.2,
@@ -302,7 +299,7 @@
     "posture_movement": "Moves with calculated precision, every motion economical and reversible. Stands with weight distributed evenly, ready to shift direction instantly. Head positioned to keep both ears clear — auditory awareness is tactical. Breathing patterns visible in chest movement due to synthetic lungs; no unconscious fidgeting, no wasted gesture. When at rest, appears coiled rather than relaxed.",
     "clothing_style": "Tier 3-4 runner aesthetic with corporate-side maintenance. Dark fitted synthweave jacket (matte grey, reinforced seams) over a black responsive-weave shirt that dampens biosignature. Custom cargo pants with sealed pockets and internal organizing webbing — urban grey. Nondescript ankle boots with grip soles and hidden reinforcement. Minimal jewelry except a worn silver signet ring (family, kept as talisman). No corporate logos or affiliations visible — deliberately nondescript. Clothes show signs of field use but meticulous maintenance. Small messenger bag (black leather-composite hybrid) worn crossbody, positioned for quick access and concealment."
   },
-  "image_prompt": "GLMZ runner portrait: Marisol Lindström-Bustamante, 188cm tall lean figure with warm bronze-golden medium brown skin blending Latin American and East Asian features with Northern and Eastern European softness. Dark brown hair with grey undertone, short faded sides with longer crown. Strong angular East Asian cheekbones softened by warm Latin American and European depth, clean-shaven with pronounced jawline. Dark brown eyes with silver threading, dark circles from sleep deficit, small scars at temples. Translucent dermal panels on upper torso revealing blue-glowing synthetic lungs with chrome filtration visible. Chrome neural jack at skull base. Wearing matte grey reinforced synthweave jacket over black biosignature-dampening shirt, grey cargo pants, dark ankle boots with reinforced soles. Silver signet ring. Corded muscle definition, coiled posture radiating calculated precision. Neon-lit urban environment with cool blue and warm neon glow casting shadows across taut features. Serious expression, tactical awareness. Black leather-composite messenger bag slung crossbody. Cinematic neo-noir lighting, gritty dystopian setting --ar 2:3 --v 6",
+  "image_prompt": "GLMZ runner portrait: Hachiro Lindström-Bustamante, 188cm tall lean figure with warm bronze-golden medium brown skin blending Latin American and East Asian features with Northern and Eastern European softness. Dark brown hair with grey undertone, short faded sides with longer crown. Strong angular East Asian cheekbones softened by warm Latin American and European depth, clean-shaven with pronounced jawline. Dark brown eyes with silver threading, dark circles from sleep deficit, small scars at temples. Translucent dermal panels on upper torso revealing blue-glowing synthetic lungs with chrome filtration visible. Chrome neural jack at skull base. Wearing matte grey reinforced synthweave jacket over black biosignature-dampening shirt, grey cargo pants, dark ankle boots with reinforced soles. Silver signet ring. Corded muscle definition, coiled posture radiating calculated precision. Neon-lit urban environment with cool blue and warm neon glow casting shadows across taut features. Serious expression, tactical awareness. Black leather-composite messenger bag slung crossbody. Cinematic neo-noir lighting, gritty dystopian setting --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "Hispanic/Latin American": 42.4,

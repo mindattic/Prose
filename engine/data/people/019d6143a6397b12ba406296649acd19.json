@@ -2,10 +2,7 @@
   "id": "019d6143a6397b12ba406296649acd19",
   "type": "character",
   "name": "Amaka Sigurdsson",
-  "aliases": [
-    "Liv Sigurdsson",
-    "Liv"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
@@ -13,7 +10,7 @@
   "age": 26,
   "status": "active",
   "location": "The Ferment Quarter — works at a bar called Undertow, near North Ave and Milwaukee",
-  "description": "Liv Sigurdsson is slight and sharp-featured, with warm golden-brown skin and hair that shifts color via geneware — it cycles through a slow gradient of deep teal to burgundy to bone white over the course of an evening, and they have learned to read their own hair as a mood indicator better than most people read their own faces. Their irises are patterned in concentric rings of silver and violet. They have a small retractable claw implant in the right hand — not for violence but because they work in a bar and opening things quickly matters.\n\nUndertow is loud and low-ceilinged and smells of fermented kelp spirits and someone's illicit smoke, and Liv Sigurdsson moves through it with the calm authority of someone who has memorized every regular's drink and every stranger's threat level within ninety seconds of arrival. They are funny in a bone-dry way that most people don't catch until three seconds after the joke has passed, and they collect secrets the way other people collect debt — not intentionally, but inevitably. They pray quietly to a small E.L.F. they call Lathis that they believe inhabits the bar's ancient refrigeration unit, leaving it data packets of good music.",
+  "description": "Amaka Sigurdsson is slight and sharp-featured, with warm golden-brown skin and hair that shifts color via geneware — it cycles through a slow gradient of deep teal to burgundy to bone white over the course of an evening, and they have learned to read their own hair as a mood indicator better than most people read their own faces. Their irises are patterned in concentric rings of silver and violet. They have a small retractable claw implant in the right hand — not for violence but because they work in a bar and opening things quickly matters.\n\nUndertow is loud and low-ceilinged and smells of fermented kelp spirits and someone's illicit smoke, and Amaka Sigurdsson moves through it with the calm authority of someone who has memorized every regular's drink and every stranger's threat level within ninety seconds of arrival. They are funny in a bone-dry way that most people don't catch until three seconds after the joke has passed, and they collect secrets the way other people collect debt — not intentionally, but inevitably. They pray quietly to a small E.L.F. they call Lathis that they believe inhabits the bar's ancient refrigeration unit, leaving it data packets of good music.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -269,7 +266,7 @@
     "posture_movement": "Moves with deliberate economy — no wasted motion. Stands with weight slightly forward, ready to move. Leans against the bar when not actively working, shoulders relaxed but eyes constantly tracking the room. Hand gestures are minimal but precise. Walks with a measured pace, never hurried, conveying calm authority.",
     "clothing_style": "Mid-grade Ferment Quarter practical: fitted black synthetic shirt or turtleneck (sweat-resistant), dark cargo pants or tailored utility trousers with deep pockets. Shoes are black non-slip service footwear. A lightweight overshirt in charcoal or deep blue worn open during shifts. Jewelry is minimal — a simple silver ring on the left hand, possibly a family piece. No corporate branding or status signifiers; clothing prioritizes function and neutrality. Budget appears to be around 800-1200 Φ total outfit value."
   },
-  "image_prompt": "Liv Sigurdsson, 168cm lean bartender with striking multiethnic features blending Northern European and Asian heritage—defined cheekbones, angular jawline softened by broader face shape, warm ivory-tan skin with golden undertones. Shoulder-length hair in chromatic geneware shifting between teal and burgundy. Augmented violet-and-silver concentric ring eyes with penetrating gaze. Dressed in fitted black synthetic turtleneck, dark utility cargo pants, charcoal overshirt worn open. Chrome-finished retractable claw implant visible along right hand knuckles. Silver minimalist refrigeration coil tattoo on left inner elbow. Standing behind a dimly-lit neo-noir bar in 2226, leaning against counter with economical posture, eyes tracking the room. Moody neon-tinged lighting, cool blues and warm amber from behind the bar. Calm, professional authority. GLMZ 2200s atmosphere, Ferment Quarter setting. --ar 2:3 --v 6",
+  "image_prompt": "Amaka Sigurdsson, 168cm lean bartender with striking multiethnic features blending Northern European and Asian heritage—defined cheekbones, angular jawline softened by broader face shape, warm ivory-tan skin with golden undertones. Shoulder-length hair in chromatic geneware shifting between teal and burgundy. Augmented violet-and-silver concentric ring eyes with penetrating gaze. Dressed in fitted black synthetic turtleneck, dark utility cargo pants, charcoal overshirt worn open. Chrome-finished retractable claw implant visible along right hand knuckles. Silver minimalist refrigeration coil tattoo on left inner elbow. Standing behind a dimly-lit neo-noir bar in 2226, leaning against counter with economical posture, eyes tracking the room. Moody neon-tinged lighting, cool blues and warm amber from behind the bar. Calm, professional authority. GLMZ 2200s atmosphere, Ferment Quarter setting. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Northern European": 57.7,
     "East Asian": 22.3,

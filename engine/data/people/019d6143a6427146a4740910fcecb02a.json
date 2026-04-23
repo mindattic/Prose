@@ -2,10 +2,7 @@
   "id": "019d6143a6427146a4740910fcecb02a",
   "type": "character",
   "name": "Chidera Ibarra",
-  "aliases": [
-    "Paloma Ibarra",
-    "Paloma"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 44,
   "status": "active",
   "location": "Kessler Row — arms dealers and augmentation clinics, near Ashland and Chicago Ave",
-  "description": "Paloma Ibarra is compact and densely muscled, built low to the ground like something designed to survive impacts. At 44, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a ghost out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nPaloma Ibarra has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
+  "description": "Chidera Ibarra is compact and densely muscled, built low to the ground like something designed to survive impacts. At 44, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — wired reflexes with adrenaline pump — chemical-mechanical hybrid augmentation — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a ghost out of Kessler Row, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nChidera Ibarra has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.18,
@@ -308,7 +305,7 @@
     "posture_movement": "Moves with economical precision — no wasted motion. His weight is distributed low, center of gravity dropped slightly as if perpetually braced for impact. He favors his left side, trusting the right arm's augmented reflexes for reactive work. His eyes move constantly, scanning exits and threats before his body shifts. When still, he appears coiled rather than relaxed.",
     "clothing_style": "Tier 4 utilitarian: reinforced cargo pants in matte black with internal holster stitching, worn synthetic leather jacket with oversized pockets and internal webbing, subdued colors (grays, blacks, dark greens). No logos or corporate branding — anonymity is the goal. Boots are serious — steel-toed, scuffed, maintained for function over appearance. A single piece of genuine hardware: a worn steel watch with a cracked face, kept for unknown sentimental reasons."
   },
-  "image_prompt": "Paloma Ibarra, 168cm tall compact muscular operative with rich warm brown skin blending East Asian, Hispanic, South Asian, and African heritage. Close-cropped dark hair with silver threading, hooded dark eyes perpetually scanning, broad cheekbones, wide nasal bridge, full lips. Thin pale scar from left temple to cheekbone, mottled burn scarring on right neck. Right forearm with chrome smartgun-link augmentation and visible mechanical ports. Neural-link ports at skull base. Dark gray synthetic leather jacket with oversized pockets, matte black cargo pants, steel-toed boots. Low coiled posture, economical movement. Worn steel watch with cracked face visible. GLMZ, neon-lit Great Lakes Metropolitan Zone, moody blue-amber lighting, industrial warehouse setting, tense hypervigilant mood, cinematic depth of field --ar 2:3 --v 6",
+  "image_prompt": "Chidera Ibarra, 168cm tall compact muscular operative with rich warm brown skin blending East Asian, Hispanic, South Asian, and African heritage. Close-cropped dark hair with silver threading, hooded dark eyes perpetually scanning, broad cheekbones, wide nasal bridge, full lips. Thin pale scar from left temple to cheekbone, mottled burn scarring on right neck. Right forearm with chrome smartgun-link augmentation and visible mechanical ports. Neural-link ports at skull base. Dark gray synthetic leather jacket with oversized pockets, matte black cargo pants, steel-toed boots. Low coiled posture, economical movement. Worn steel watch with cracked face visible. GLMZ, neon-lit Great Lakes Metropolitan Zone, moody blue-amber lighting, industrial warehouse setting, tense hypervigilant mood, cinematic depth of field --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 35.6,
     "East Asian": 26,

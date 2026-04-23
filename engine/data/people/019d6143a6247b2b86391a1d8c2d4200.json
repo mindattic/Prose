@@ -2,10 +2,7 @@
   "id": "019d6143a6247b2b86391a1d8c2d4200",
   "type": "character",
   "name": "Futaba Sigurdsson",
-  "aliases": [
-    "Orion Sigurdsson",
-    "Orion"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 23,
   "status": "active",
   "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near Milwaukee and North Ave",
-  "description": "Orion Sigurdsson is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 23, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a saboteur out of Steamvent Alley, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nOrion Sigurdsson operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Futaba Sigurdsson is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 23, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a saboteur out of Steamvent Alley, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nFutaba Sigurdsson operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.77,
@@ -300,7 +297,7 @@
     "posture_movement": "Moves with economical precision — no wasted motion. Shoulders slightly forward, head level. Walk is steady and low-center-gravity, weight distributed for balance. In repose, jaw is slightly tight, eyes tracking. Default state suggests controlled readiness rather than relaxation. Hands rest with fingers naturally curled, never fully open.",
     "clothing_style": "Tier 3-4 utilitarian. Favors dark technical fabrics — black or dark grey cargo pants with reinforced pockets and subdermal-compatible sleeve design. Fitted long-sleeve compression shirts or modified jackets that don't restrict forearm mobility. Steel-toed boots with good ankle support, laces kept tight. Outer layers are functional: a worn grey synth-leather jacket or industrial coveralls depending on the work. No corpo logos. No bright colors. Everything is built for movement and work, not presentation. Wears a battered smartwatch on left wrist — vintage model, clearly maintained, no display of Φ status."
   },
-  "image_prompt": "Orion Sigurdsson, tall lean mixed-heritage operative in GLMZ, warm medium-brown skin with golden undertones, high cheekbones and angular features blending East Asian and Northern European ancestry, dark brown eyes with tired intensity, black hair pulled back tight in a braid. Visible subdermal chrome weapon mounts in both forearms glinting beneath skin, dark red neural jack port at base of skull, thin white scar on right cheekbone. Wearing black cargo pants and fitted dark compression shirt with grey worn synth-leather jacket, steel-toed boots, vintage smartwatch. Posture economical and precise, shoulders slightly forward, standing in industrial low-light neo-noir corridor with neon reflecting off metal surfaces, hands at ready, controlled expression, no emotion, cinematic noir lighting with cool shadows and warm accent light catching the subdermal chrome, 2200s dystopian setting --ar 2:3 --v 6",
+  "image_prompt": "Futaba Sigurdsson, tall lean mixed-heritage operative in GLMZ, warm medium-brown skin with golden undertones, high cheekbones and angular features blending East Asian and Northern European ancestry, dark brown eyes with tired intensity, black hair pulled back tight in a braid. Visible subdermal chrome weapon mounts in both forearms glinting beneath skin, dark red neural jack port at base of skull, thin white scar on right cheekbone. Wearing black cargo pants and fitted dark compression shirt with grey worn synth-leather jacket, steel-toed boots, vintage smartwatch. Posture economical and precise, shoulders slightly forward, standing in industrial low-light neo-noir corridor with neon reflecting off metal surfaces, hands at ready, controlled expression, no emotion, cinematic noir lighting with cool shadows and warm accent light catching the subdermal chrome, 2200s dystopian setting --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Northern European": 40.6,
     "Southeast Asian": 18.2,

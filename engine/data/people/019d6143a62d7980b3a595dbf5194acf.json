@@ -2,10 +2,7 @@
   "id": "019d6143a62d7980b3a595dbf5194acf",
   "type": "character",
   "name": "Gregoria Bautista",
-  "aliases": [
-    "Leila Bautista",
-    "Leila"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
@@ -13,7 +10,7 @@
   "age": 29,
   "status": "active",
   "location": "Meridian Station — central transit nexus, neutral ground, near LaSalle and Madison",
-  "description": "Leila Bautista are broad-shouldered and heavy, carrying their weight like armor rather than burden. At 29, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and they make no effort to hide it.\n\nThey used to be somebody else, in another city, with another name — that person is officially dead, and Leila Bautista plans to keep it that way. They work as a cleaner out of Meridian Station, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nEveryone who's worked with Leila Bautista agrees on two things: they are worth the fee, and they are terrible company at dinner.",
+  "description": "Gregoria Bautista are broad-shouldered and heavy, carrying their weight like armor rather than burden. At 29, their expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and they make no effort to hide it.\n\nThey used to be somebody else, in another city, with another name — that person is officially dead, and Gregoria Bautista plans to keep it that way. They work as a cleaner out of Meridian Station, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nEveryone who's worked with Gregoria Bautista agrees on two things: they are worth the fee, and they are terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.56,
@@ -295,7 +292,7 @@
     "posture_movement": "Moves with controlled efficiency — no wasted motion, no restlessness. Stands with weight slightly forward, ready to shift. Hands stay visible and relaxed; someone who understands threat assessment. Default expression reads as patient, but there's tension underneath. They don't fidget, don't look away, don't apologize for existing.",
     "clothing_style": "Tier 3-4 utilitarian. Dark synthetic fabrics — charcoal, midnight blue, matte black. Reinforced jacket with internal pockets (equipment, tools, cash). Cargo pants with tactical weave. Boots are functional and scuffed. No jewelry, no insignia, no markers of affiliation. Everything is designed to be forgettable and cleanable. Operates in clothes they can bleach."
   },
-  "image_prompt": "Leila Bautista, 182cm tall broad-shouldered operative with warm medium-deep brown skin blending Hispanic, Middle Eastern, and Southeast Asian heritage. Short black hair with silver at temples, dark steady gaze, neutral expression. Angular facial structure with prominent cheekbones, weathered matte complexion. Subdermal chrome weapon mounts visible beneath forearms, augmentation seams glowing faintly at wrists. Wearing dark tactical jacket and cargo pants, scuffed boots, hands relaxed but ready. Controlled posture, weight forward, standing in shadow-lit industrial corridor. GLMZ GLMZ setting, neon light catching chrome implants, tension and patient danger in stillness. Cinematic, gritty, professional operative aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Gregoria Bautista, 182cm tall broad-shouldered operative with warm medium-deep brown skin blending Hispanic, Middle Eastern, and Southeast Asian heritage. Short black hair with silver at temples, dark steady gaze, neutral expression. Angular facial structure with prominent cheekbones, weathered matte complexion. Subdermal chrome weapon mounts visible beneath forearms, augmentation seams glowing faintly at wrists. Wearing dark tactical jacket and cargo pants, scuffed boots, hands relaxed but ready. Controlled posture, weight forward, standing in shadow-lit industrial corridor. GLMZ GLMZ setting, neon light catching chrome implants, tension and patient danger in stillness. Cinematic, gritty, professional operative aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 46.7,
     "Middle Eastern": 31.3,

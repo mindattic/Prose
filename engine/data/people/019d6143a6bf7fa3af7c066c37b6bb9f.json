@@ -2,10 +2,7 @@
   "id": "019d6143a6bf7fa3af7c066c37b6bb9f",
   "type": "character",
   "name": "Akanbi Vasquez-Alfarsi-Ixchel",
-  "aliases": [
-    "Vega Vasquez-Alfarsi-Ixchel",
-    "Vega"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 34,
   "status": "active",
   "location": "Ironvein Station, with a rented bunk in the Ferrogate Transit crew dormitory at Jefferson Switch, near Fullerton and Damen",
-  "description": "Vega Vasquez-Alfarsi-Ixchel is lean and angular with East Slavic cheekbones and deep brown skin, his hair grown into loose, shaggy locs that he pins back with a battered Ferrogate Transit cap that has seen better years. He has geneware irises — rings of luminous amber that shift slightly in low light, a cheap mod he got at nineteen that he now considers a mistake but can't afford to reverse. A long procedural scar runs from his left jaw to his collarbone, the souvenir of a platform incident three years ago that Ferrogate classified as 'operator error' and he knows was not.\n\nHe is naturally funny in the wry, sideways way of someone who has processed a lot of institutional disappointment. He knows every regular on the 0430 Ironvein run by face if not by name, and he has opinions about all of them. He is the kind of person who is beloved by strangers and slightly maddening to people close to him, because he extends his easy warmth to everyone equally and it can feel, to the people who want more of him, like he is giving nothing specific at all.",
+  "description": "Akanbi Vasquez-Alfarsi-Ixchel is lean and angular with East Slavic cheekbones and deep brown skin, his hair grown into loose, shaggy locs that he pins back with a battered Ferrogate Transit cap that has seen better years. He has geneware irises — rings of luminous amber that shift slightly in low light, a cheap mod he got at nineteen that he now considers a mistake but can't afford to reverse. A long procedural scar runs from his left jaw to his collarbone, the souvenir of a platform incident three years ago that Ferrogate classified as 'operator error' and he knows was not.\n\nHe is naturally funny in the wry, sideways way of someone who has processed a lot of institutional disappointment. He knows every regular on the 0430 Ironvein run by face if not by name, and he has opinions about all of them. He is the kind of person who is beloved by strangers and slightly maddening to people close to him, because he extends his easy warmth to everyone equally and it can feel, to the people who want more of him, like he is giving nothing specific at all.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -277,7 +274,7 @@
     "posture_movement": "Economical movements, slight forward lean from occupational posture. Walks with purpose but not aggression. Hands gesture frequently when speaking — expressive despite reserved demeanor. Often glances at surroundings with operator's habit of threat assessment.",
     "clothing_style": "Tier 3-4 working class. Standard Ferrogate Transit uniform (navy shirt with faded logo, grey trousers, worn) worn during shifts. Off-duty: layered practical wear — thermal underlayer, durable grey or brown jacket (synth-leather, scuffed), jeans patched at one knee. Battered Ferrogate cap, always. Worn transit-issue boots. No jewelry except a small E.L.F. token on a cord around his neck. Everything functional, nothing decorative."
   },
-  "image_prompt": "Vega Vasquez-Alfarsi-Ixchel, lean 178cm tall transit operator with deep warm bronze skin and golden-amber undertones, angular Indigenous-influenced cheekbones refined by South Asian features, dark shoulder-length locs pinned under worn Ferrogate Transit cap. Deep brown eyes with faint luminescent amber geneware rings glowing subtly in dim light. Pale raised scar from jaw to collarbone. Wearing faded navy Ferrogate Transit uniform, synth-leather jacket, patched jeans, worn boots. Small E.L.F. token on cord. Slight forward lean from years at tram controls. Tired alert expression, hands mid-gesture, threat-assessment glance. GLMZ Great Lakes Metropolitan Zone platform at dusk, neon transit signs reflecting off wet metal, moody cool-warm lighting highlighting skin tone complexity, urban industrial background, photorealistic, cinematic depth --ar 2:3 --v 6",
+  "image_prompt": "Akanbi Vasquez-Alfarsi-Ixchel, lean 178cm tall transit operator with deep warm bronze skin and golden-amber undertones, angular Indigenous-influenced cheekbones refined by South Asian features, dark shoulder-length locs pinned under worn Ferrogate Transit cap. Deep brown eyes with faint luminescent amber geneware rings glowing subtly in dim light. Pale raised scar from jaw to collarbone. Wearing faded navy Ferrogate Transit uniform, synth-leather jacket, patched jeans, worn boots. Small E.L.F. token on cord. Slight forward lean from years at tram controls. Tired alert expression, hands mid-gesture, threat-assessment glance. GLMZ Great Lakes Metropolitan Zone platform at dusk, neon transit signs reflecting off wet metal, moody cool-warm lighting highlighting skin tone complexity, urban industrial background, photorealistic, cinematic depth --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 23.2,
     "Middle Eastern": 22.7,

@@ -2,10 +2,7 @@
   "id": "019d6143a5d87d1797c4e9994e8d220b",
   "type": "character",
   "name": "Ayman Nwosu",
-  "aliases": [
-    "Jabari Nwosu",
-    "Jabari"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
@@ -13,7 +10,7 @@
   "age": 26,
   "status": "active",
   "location": "Deepwell Station plaza, cart pitch #14 — also moves to Ironvein on Tuesdays and Grainfort market on weekends, near sub-level access near State and Van Buren",
-  "description": "Jabari Nwosu is short and round-shouldered with a persistent air of someone who is running calculations nobody else can see. Their heritage is Oromo-Yoruba-Finnish and their coloring reflects it in interesting ways — medium brown skin with faint golden undertones, dark eyes, and thick natural hair they keep pulled back under a food-safe wrap during service hours, though on off days it erupts into a cloud they seem delighted by. They have color-changing hair geneware that shifts the outer layers through amber, copper, and deep red over the course of several hours — slow enough that you don't notice it happening, startling when you look up and realize the color has moved. They've also got cat ears, velvet-dark and expressive, which they got at nineteen and regard as the best decision of their life.\n\nJabari Nwosu runs their cart with the focused intensity of a surgeon. They make three broths — a sour tamarind pork, a clear Dashi-adjacent stock they keep secret, and a rotating seasonal — and they do not offer substitutions. They are funny in short bursts and opinionated about food in a way that's charming rather than exhausting. They have a loud laugh they seem surprised by every time it comes out. They are also deeply ambitious in a way they haven't fully admitted to themselves yet, keeping a private ledger of savings and a folder of business license applications they keep almost submitting.",
+  "description": "Ayman Nwosu is short and round-shouldered with a persistent air of someone who is running calculations nobody else can see. Their heritage is Oromo-Yoruba-Finnish and their coloring reflects it in interesting ways — medium brown skin with faint golden undertones, dark eyes, and thick natural hair they keep pulled back under a food-safe wrap during service hours, though on off days it erupts into a cloud they seem delighted by. They have color-changing hair geneware that shifts the outer layers through amber, copper, and deep red over the course of several hours — slow enough that you don't notice it happening, startling when you look up and realize the color has moved. They've also got cat ears, velvet-dark and expressive, which they got at nineteen and regard as the best decision of their life.\n\nAyman Nwosu runs their cart with the focused intensity of a surgeon. They make three broths — a sour tamarind pork, a clear Dashi-adjacent stock they keep secret, and a rotating seasonal — and they do not offer substitutions. They are funny in short bursts and opinionated about food in a way that's charming rather than exhausting. They have a loud laugh they seem surprised by every time it comes out. They are also deeply ambitious in a way they haven't fully admitted to themselves yet, keeping a private ledger of savings and a folder of business license applications they keep almost submitting.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -244,7 +241,7 @@
     "Ironvein",
     "Nesting Doll",
     "Copper",
-    "Haze Johansson",
+    "Akosua Johansson",
     "Pellucid Systems"
   ],
   "district": "The Underworld",
@@ -267,7 +264,7 @@
     "posture_movement": "Slightly forward-leaning from years of cart work, shoulders rounded inward. Moves with economical precision during prep and service — no wasted motion. Off-duty posture is more relaxed but still contains underlying tension. Ears twitch and swivel frequently in response to ambient sound and emotional state. Hands fidget with small objects (spoon, coin, cloth) when stationary and thinking.",
     "clothing_style": "Tier 4 working-class practicality: food-service-rated synthetic apron over recycled-material base layers (grays, blacks, deep blues). Shoes are scuffed but functional. On off-hours, slightly better-maintained vintage clothing (thrifted from Tier 3 markets) — faded band shirts, worn jeans. Hair wrap is food-safe but colorful, often clashing intentionally with their mood. No jewelry except the wrist tattoo and occasional temporary jewelry swaps on days off."
   },
-  "image_prompt": "Jabari Nwosu, 157cm tall short-framed food cart operator with rich deep warm brown skin, prominent cheekbones and defined jaw, dark brown eyes, thick voluminous dark brown hair with color-shifting geneware (amber, copper, red shifting), functional pair of dark brown velvet cat ears on crown rotating with attention. Scuffed food-service synthetic apron over recycled gray-blue base layers, worn but functional shoes. Faint burn scar on left inner forearm, bowl-and-spoon tattoo on right wrist. Economical movements, forward-leaning posture from cart work, hands fidgeting. GLMZ Great Lakes Metropolitan Zone setting, Tier 4 working-class district, warm overhead lighting on food preparation area, neon glow from nearby storefronts, gritty urban environment, concentrated expression while prepping meals. Multiethnic Southeast Asian and Hispanic/Latin American features blended with Sub-Saharan African heritage. --ar 2:3 --v 6",
+  "image_prompt": "Ayman Nwosu, 157cm tall short-framed food cart operator with rich deep warm brown skin, prominent cheekbones and defined jaw, dark brown eyes, thick voluminous dark brown hair with color-shifting geneware (amber, copper, red shifting), functional pair of dark brown velvet cat ears on crown rotating with attention. Scuffed food-service synthetic apron over recycled gray-blue base layers, worn but functional shoes. Faint burn scar on left inner forearm, bowl-and-spoon tattoo on right wrist. Economical movements, forward-leaning posture from cart work, hands fidgeting. GLMZ Great Lakes Metropolitan Zone setting, Tier 4 working-class district, warm overhead lighting on food preparation area, neon glow from nearby storefronts, gritty urban environment, concentrated expression while prepping meals. Multiethnic Southeast Asian and Hispanic/Latin American features blended with Sub-Saharan African heritage. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 59.1,
     "Southeast Asian": 21.9,

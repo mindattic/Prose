@@ -2,10 +2,7 @@
   "id": "019d6143a6d977e590156c2710100923",
   "type": "character",
   "name": "Adalberto Mohammadi",
-  "aliases": [
-    "Soren Mohammadi",
-    "Soren"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 41,
   "status": "active",
   "location": "Fort Anchor, GLMZ, near Ashland and Chicago Ave",
-  "description": "Soren Mohammadi is a lean, angular woman whose Igbo-Icelandic heritage settled into something striking and hard to read — dark brown skin that catches fluorescent light like burnished copper, pale grey eyes that her colleagues call 'interrogation eyes' because they seem to wait rather than look. She keeps her natural hair close-cropped and does not bother with cosmetic geneware, which in itself feels like a statement of seriousness in a precinct full of color-shifted irises and decorative claw-tips. She moves through the Fort Anchor bullpen with the careful economy of someone who has spent two decades watching other people make mistakes.\n\nSoren Mohammadi is not cruel, but she is relentless. She became Internal Affairs after her partner of six years was found selling seized evidence back into Copperhead's black market circuits — a betrayal she discovered herself and reported herself, and which she has not spoken about voluntarily since. She believes the Arcturus Civil Security is worth saving, which is the most dangerous possible disposition for an IA investigator to have. She keeps a small data-shrine to the E.L.F. called the Ledger in her desk drawer, feeding it transaction logs and anonymized tip files in hope of some pattern-blessing she would never admit to hoping for.",
+  "description": "Adalberto Mohammadi is a lean, angular woman whose Igbo-Icelandic heritage settled into something striking and hard to read — dark brown skin that catches fluorescent light like burnished copper, pale grey eyes that her colleagues call 'interrogation eyes' because they seem to wait rather than look. She keeps her natural hair close-cropped and does not bother with cosmetic geneware, which in itself feels like a statement of seriousness in a precinct full of color-shifted irises and decorative claw-tips. She moves through the Fort Anchor bullpen with the careful economy of someone who has spent two decades watching other people make mistakes.\n\nAdalberto Mohammadi is not cruel, but she is relentless. She became Internal Affairs after her partner of six years was found selling seized evidence back into Copperhead's black market circuits — a betrayal she discovered herself and reported herself, and which she has not spoken about voluntarily since. She believes the Arcturus Civil Security is worth saving, which is the most dangerous possible disposition for an IA investigator to have. She keeps a small data-shrine to the E.L.F. called the Ledger in her desk drawer, feeding it transaction logs and anonymized tip files in hope of some pattern-blessing she would never admit to hoping for.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -186,7 +183,7 @@
     "Chicago",
     "Copper",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Haze Johansson",
+    "Akosua Johansson",
     "The Pale Mile",
     "GLMZ"
   ],
@@ -211,7 +208,7 @@
     "clothing_style": "Standard-issue Arcturus Civil Security internal affairs uniform: charcoal grey duty jacket over black synthetic-weave shirt, both tailored to fit without excess fabric. Black utility pants with minimal visible pockets — most gear is internal or digital. Steel-toed boots, well-maintained. When off-duty, she wears similar utilitarian clothing: dark neutral colors, high-performance synthetics, nothing decorative. No jewelry. Her badge and department credentials are always within arm's reach.",
     "mood_notes": "Uncompromising watchfulness, alert readiness, professional detachment"
   },
-  "image_prompt": "Soren Mohammadi, lean 172cm woman with warm medium-brown skin, golden and copper undertones, high angular cheekbones, pale grey-blue eyes striking against her complexion, military close-cropped dark brown hair nearly black. Faint jawline scar, burn scars on hands, stress lines between brows. Charcoal grey Arcturus Civil Security internal affairs duty jacket over black synthetic-weave shirt, black utility pants, steel-toed boots. Economical controlled posture, watchful expression, standing in neon-lit police bullpen or interrogation room. GLMZ, fluorescent and cool LED lighting, professional detachment, alert readiness. --ar 2:3 --v 6",
+  "image_prompt": "Adalberto Mohammadi, lean 172cm woman with warm medium-brown skin, golden and copper undertones, high angular cheekbones, pale grey-blue eyes striking against her complexion, military close-cropped dark brown hair nearly black. Faint jawline scar, burn scars on hands, stress lines between brows. Charcoal grey Arcturus Civil Security internal affairs duty jacket over black synthetic-weave shirt, black utility pants, steel-toed boots. Economical controlled posture, watchful expression, standing in neon-lit police bullpen or interrogation room. GLMZ, fluorescent and cool LED lighting, professional detachment, alert readiness. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Middle Eastern": 33.9,
     "Southeast Asian": 16,

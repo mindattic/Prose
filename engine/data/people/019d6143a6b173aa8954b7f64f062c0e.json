@@ -3,10 +3,7 @@
   "rating": 70,
   "type": "character",
   "name": "Beatriz Villalobos-Kimura",
-  "aliases": [
-    "Rowan Villalobos-Kimura",
-    "Rowan"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -14,7 +11,7 @@
   "age": 31,
   "status": "active",
   "location": "The Narrows, Blackpipe Corridor, near Milwaukee and Damen",
-  "description": "Rowan Villalobos-Kimura is a lean, angular man of Georgian and South Indian-Kenyan descent, with warm olive-brown skin, a sharp jaw perpetually shadowed with stubble, and dark eyes fitted with patterned irises — a helix of deep violet spiraling toward the pupil, which he claims help him read documents faster but which are mostly just something to look at when people are looking at him. He dresses in deliberately forgettable layers: grey over grey, muted enough to vanish in a crowd, with the one vanity of a handmade brass collar pin in the shape of a cartographer's compass. He keeps his data tools in a modified food vendor's tray he wheels through the Narrows, looking at a glance like a snack cart.\n\nRowan Villalobos-Kimura is clever in the specific, anxious way of people who got out of a bad situation through intelligence alone and haven't yet decided whether they're safe. He is charming in short bursts, funny in a dry, deflecting way, and quietly reads every room for threat vectors before he's finished his first sentence. He takes professional pride in the quality of his forgeries — considers bad ID work a moral failing — and holds himself to a standard most of his customers couldn't distinguish from a real document.",
+  "description": "Beatriz Villalobos-Kimura is a lean, angular man of Georgian and South Indian-Kenyan descent, with warm olive-brown skin, a sharp jaw perpetually shadowed with stubble, and dark eyes fitted with patterned irises — a helix of deep violet spiraling toward the pupil, which he claims help him read documents faster but which are mostly just something to look at when people are looking at him. He dresses in deliberately forgettable layers: grey over grey, muted enough to vanish in a crowd, with the one vanity of a handmade brass collar pin in the shape of a cartographer's compass. He keeps his data tools in a modified food vendor's tray he wheels through the Narrows, looking at a glance like a snack cart.\n\nBeatriz Villalobos-Kimura is clever in the specific, anxious way of people who got out of a bad situation through intelligence alone and haven't yet decided whether they're safe. He is charming in short bursts, funny in a dry, deflecting way, and quietly reads every room for threat vectors before he's finished his first sentence. He takes professional pride in the quality of his forgeries — considers bad ID work a moral failing — and holds himself to a standard most of his customers couldn't distinguish from a real document.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -264,7 +261,7 @@
     "posture_movement": "Moves with deliberate control and minimal wasted motion; shoulders slightly forward in a habitual posture of guarded attention; head tilts slightly when listening, reading rooms for threat vectors; hands move with practiced precision even during casual gestures; overall carriage suggests someone perpetually aware of exits and sightlines, but performed subtly enough to avoid drawing attention",
     "clothing_style": "Deliberately forgettable layered neutrals: grey on grey, muted tones designed for invisibility in crowds. Worn but well-maintained synthetic blend fabrics typical of Tier 4 working-class wear. One deliberate vanity: a handmade brass collar pin in the shape of a cartographer's compass, suggesting both his care for craft and his need for a small marker of identity. Worn canvas messenger bag across chest, practical and nondescript. No visible gang colors, corporate logos, or tier markers."
   },
-  "image_prompt": "Rowan Villalobos-Kimura, GLMZ, Pan-Asian-Hispanic male, 178cm lean angular frame, warm golden-bronze skin with amber undertones, sharp jawline with 2-day stubble, high cheekbones, dark brown eyes with deep violet helix augmentation pattern, short dark brown hair tousled and ungroomed. Positioned in dim industrial workspace, careful deliberate posture with shoulders slightly forward, hands with visible calluses poised over precision tools, faint scar visible on left inner wrist. Wearing layered grey-on-grey neutral synthetic fabrics, worn canvas messenger bag across chest, brass cartographer's compass collar pin catching sparse overhead light. Indoor fluorescent and cool blue accent lighting, cinematic shadow detail showing faint subcutaneous texture on left palm. Neo-noir neo-noir atmosphere, high-detail portraiture, photorealistic --ar 2:3 --v 6",
+  "image_prompt": "Beatriz Villalobos-Kimura, GLMZ, Pan-Asian-Hispanic male, 178cm lean angular frame, warm golden-bronze skin with amber undertones, sharp jawline with 2-day stubble, high cheekbones, dark brown eyes with deep violet helix augmentation pattern, short dark brown hair tousled and ungroomed. Positioned in dim industrial workspace, careful deliberate posture with shoulders slightly forward, hands with visible calluses poised over precision tools, faint scar visible on left inner wrist. Wearing layered grey-on-grey neutral synthetic fabrics, worn canvas messenger bag across chest, brass cartographer's compass collar pin catching sparse overhead light. Indoor fluorescent and cool blue accent lighting, cinematic shadow detail showing faint subcutaneous texture on left palm. Neo-noir neo-noir atmosphere, high-detail portraiture, photorealistic --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "East Asian": 36.8,

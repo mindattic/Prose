@@ -2,10 +2,7 @@
   "id": "019d6143a62170bdb97c4a3d7795dbb6",
   "type": "character",
   "name": "Cemal Hernández",
-  "aliases": [
-    "Luca Hernández",
-    "Luca"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 30,
   "status": "active",
   "location": "The Spires — mid-level corporate residential towers, near Lake Shore Drive and Division",
-  "description": "Luca Hernández is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 30, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a ghost out of The Spires, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nLuca Hernández operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Cemal Hernández is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 30, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — dermal camouflage — chromatic skin pigment cells, limited active camouflage — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a ghost out of The Spires, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nCemal Hernández operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.76,
@@ -303,7 +300,7 @@
     "posture_movement": "Compact, economical — shoulders slightly forward, weight centered. Moves like someone trained in close-quarters work, every gesture calculated for minimal wasted motion. Stillness is her default state; when she moves, it's with purpose. Eyes track entry/exit points and high-ground positions automatically.",
     "clothing_style": "Tier 2-3 practical — matte-black reinforced synthweave jacket over fitted base layer, cargo pants with titanium-reinforced pockets, low-profile ankle boots with steel toe caps. No logos or corp insignia. All gear is functional, minimal ornamentation. Colors are blacks, grays, deep blues — nothing that stands out in the Spires or the Gray Zone. Clothing is designed for mobility and concealment, not status."
   },
-  "image_prompt": "Luca Hernández, 178cm tall, deep warm brown skin with golden undertones, strong angular cheekbones and defined jaw, shoulder-length black hair pulled back tight with titanium clasp, iridescent chrome dermal augmentation shimmering across shoulders and upper back in blues and greens. Dark brown eyes. Broad muscular build, functional density. Wearing matte-black reinforced synthweave jacket, fitted base layer, cargo pants with titanium pockets, steel-toed ankle boots. Thin white scar from left temple to ear. Compact posture, economical movement, still and controlled. GLMZ Great Lakes Metropolitan Zone, Spires aesthetic, moody neon-touched lighting, neutral shadows, professional fixer energy. --ar 2:3 --v 6",
+  "image_prompt": "Cemal Hernández, 178cm tall, deep warm brown skin with golden undertones, strong angular cheekbones and defined jaw, shoulder-length black hair pulled back tight with titanium clasp, iridescent chrome dermal augmentation shimmering across shoulders and upper back in blues and greens. Dark brown eyes. Broad muscular build, functional density. Wearing matte-black reinforced synthweave jacket, fitted base layer, cargo pants with titanium pockets, steel-toed ankle boots. Thin white scar from left temple to ear. Compact posture, economical movement, still and controlled. GLMZ Great Lakes Metropolitan Zone, Spires aesthetic, moody neon-touched lighting, neutral shadows, professional fixer energy. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 85.4,
     "Sub-Saharan African": 11.9,

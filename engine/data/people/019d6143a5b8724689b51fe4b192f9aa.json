@@ -4,10 +4,7 @@
   "vote_count": 1,
   "type": "character",
   "name": "Daksh Bautista-Vestergaard",
-  "aliases": [
-    "Nyx Bautista-Vestergaard",
-    "Nyx"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -15,7 +12,7 @@
   "age": 64,
   "status": "active",
   "location": "Geartown — industrial district of chop shops and fabricators, near North Ave and Milwaukee",
-  "description": "Nyx Bautista-Vestergaard is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 64, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a street samurai out of Geartown, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nNyx Bautista-Vestergaard has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
+  "description": "Daksh Bautista-Vestergaard is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 64, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a street samurai out of Geartown, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nDaksh Bautista-Vestergaard has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -303,7 +300,7 @@
     "posture_movement": "Restless and economical — no wasted motion, but constant small adjustments (weight shifting, hand repositioning). Sits at angles, never fully relaxing into a chair. Eyes track movement reflexively. When standing still, he appears coiled rather than relaxed. Walks with a slight forward lean, as though perpetually ready to sprint.",
     "clothing_style": "Tier 3-4 utilitarian streetwear. Favors dark colors (blacks, grays, muted olives). Typically wears reinforced canvas tactical jackets with visible zipper pockets and stitched seams, showing wear and repair. Undershirts are plain synthetic blend or moisture-wicking synthetics. Cargo pants or modified jeans with strategic pockets and reinforced knees. Boots are worn tactical-grade — no logos, scuffed, replaced every 2-3 years. A long coat (leather or synthetic leather, weathered dark brown) over his working gear. Minimal jewelry — one silver ring on left hand, likely sentimental or lucky. No visible corpo branding. Everything is functional; nothing is fashionable."
   },
-  "image_prompt": "Nyx Bautista-Vestergaard, 64-year-old street operative, GLMZ, medium-rich brown skin with golden-olive undertones, broad Sub-Saharan African nasal bridge, prominent high cheekbones with East Asian structure, subtle epicanthic fold dark brown eyes, salt-and-pepper gray slicked-back short hair with two-day stubble. Deep facial lines and weathering, diagonal white scar across left cheekbone, crescent scar on left temple, chrome nasal duct analyzer glinting at nostrils. Wiry lean 177cm frame, corded forearms, minimal body fat. Wearing dark weathered tactical canvas jacket with zipper pockets, reinforced cargo pants, worn tactical boots, long dark leather coat, silver ring on left hand. Coiled restless posture, slight forward lean, eyes tracking movement. Industrial Great Lakes zone lighting, neon and sodium vapor ambiance, sitting at an angle in shadows, tense focused expression. Neo-noir near-future grit and wear throughout. --ar 2:3 --v 6",
+  "image_prompt": "Daksh Bautista-Vestergaard, 64-year-old street operative, GLMZ, medium-rich brown skin with golden-olive undertones, broad Sub-Saharan African nasal bridge, prominent high cheekbones with East Asian structure, subtle epicanthic fold dark brown eyes, salt-and-pepper gray slicked-back short hair with two-day stubble. Deep facial lines and weathering, diagonal white scar across left cheekbone, crescent scar on left temple, chrome nasal duct analyzer glinting at nostrils. Wiry lean 177cm frame, corded forearms, minimal body fat. Wearing dark weathered tactical canvas jacket with zipper pockets, reinforced cargo pants, worn tactical boots, long dark leather coat, silver ring on left hand. Coiled restless posture, slight forward lean, eyes tracking movement. Industrial Great Lakes zone lighting, neon and sodium vapor ambiance, sitting at an angle in shadows, tense focused expression. Neo-noir near-future grit and wear throughout. --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "Northern European": 31.1,

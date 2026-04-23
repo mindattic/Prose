@@ -3,10 +3,7 @@
   "rating": 70,
   "type": "character",
   "name": "Daliborka Montalvo",
-  "aliases": [
-    "Nyx Montalvo",
-    "Nyx"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -14,7 +11,7 @@
   "age": 33,
   "status": "active",
   "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Lake Shore and Wacker",
-  "description": "Nyx Montalvo is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 33, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a face out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nWhat Nyx Montalvo lacks in subtlety, he compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "description": "Daliborka Montalvo is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 33, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — synthetic blood with oxygen-carrying nanites — doesn't tire, heals faster — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a face out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nWhat Daliborka Montalvo lacks in subtlety, he compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.99,
@@ -303,7 +300,7 @@
     "posture_movement": "Economy of motion — every gesture serves a purpose. Stands with shoulders relaxed but alert, weight distributed for quick lateral movement. Eyes move independently of head, characteristic of cybernetic optical systems. Speech is measured; he pauses before responding, suggesting calculation rather than hesitation. When negotiating, remains perfectly still — unnerving for most people.",
     "clothing_style": "Tier 3-4 practical: dark synthetic fabrics (charcoal, slate, near-black), layered for easy access and concealment. Fitted tactical jacket over a gray crew-neck shirt. Reinforced cargo pants with subdued pockets and ankle cuffs. Steel-toed boots scuffed from actual use. A single accessory — a worn silver watch, analog, probably a gift. Nothing flashy, nothing that draws the eye. Clothing maintains corporate-adjacent professionalism while operating in runner space — the uniform of someone who knows both worlds."
   },
-  "image_prompt": "Nyx Montalvo, a 188cm lean neo-noir operative standing in moody neon shadows. Mediterranean-Levantine-Indigenous blended features with sharp angular cheekbones, straight nose with subtle width, fuller warm-toned lips. Warm golden-brown skin with olive and copper undertones, appearing faintly waxy and translucent. Dark brown hair swept back with premature silver at temples. Chrome iris rings circling pale gray eyes with faint luminescent glow. Visible chrome tracery of synthetic blood visible in forearms and wrists. Thin white scar from left temple to jawline. Faint geometric scarring at base of neck from implant ports. Dressed in dark charcoal tactical jacket over gray crew-neck shirt, reinforced cargo pants, scuffed steel-toed boots. Worn analog silver watch. Perfectly still posture with alert, predatory relaxation. GLMZ, Great Lakes Metropolitan Zone, thermal lighting casting his augmented systems into sharp relief. Cool blue and orange neon ambiance. Introspective, calculating expression. --ar 2:3 --v 6",
+  "image_prompt": "Daliborka Montalvo, a 188cm lean neo-noir operative standing in moody neon shadows. Mediterranean-Levantine-Indigenous blended features with sharp angular cheekbones, straight nose with subtle width, fuller warm-toned lips. Warm golden-brown skin with olive and copper undertones, appearing faintly waxy and translucent. Dark brown hair swept back with premature silver at temples. Chrome iris rings circling pale gray eyes with faint luminescent glow. Visible chrome tracery of synthetic blood visible in forearms and wrists. Thin white scar from left temple to jawline. Faint geometric scarring at base of neck from implant ports. Dressed in dark charcoal tactical jacket over gray crew-neck shirt, reinforced cargo pants, scuffed steel-toed boots. Worn analog silver watch. Perfectly still posture with alert, predatory relaxation. GLMZ, Great Lakes Metropolitan Zone, thermal lighting casting his augmented systems into sharp relief. Cool blue and orange neon ambiance. Introspective, calculating expression. --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "Hispanic/Latin American": 39.8,

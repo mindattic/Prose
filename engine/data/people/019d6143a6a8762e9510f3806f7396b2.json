@@ -2,10 +2,7 @@
   "id": "019d6143a6a8762e9510f3806f7396b2",
   "type": "character",
   "name": "Diyaa Lindström-Zidane-Banerjee",
-  "aliases": [
-    "Cleo Lindström-Zidane-Banerjee",
-    "Cleo"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 51,
   "status": "active",
   "location": "Edgewater Prism — office above a bioluminescent algae bar called Photikar, near Lincoln and Addison",
-  "description": "Cleo Lindström-Zidane-Banerjee is a big man going soft in the middle, with dark olive-bronze skin, heavy grey-salted hair he keeps pulled back with a rubber band, and the kind of face that has been patient for so long it has settled permanently into patience. He dresses in the same rotation of rumpled linen jackets in muted terracotta and grey, never quite formal and never quite casual, and he has a geneware tail — a long, unhurried thing in rust-brown fur — that he got in his thirties when tails were newly fashionable and has kept because he grew fond of it. It curls around chair legs when he's thinking and goes very still when he's alarmed.\n\nHe has been a licensed PI for nineteen years. He started as Arcturus Civil Security, left without drama, and built his solo practice from debt-recovery cases so dull that most investigators wouldn't touch them. He is extraordinarily good at finding people who do not want to be found, not because he is relentless but because he is patient and because he understands that almost everyone leaves one thread they don't notice. He charges fairly, keeps meticulous case notes, and has a long-standing rule against working cases that involve children. His office has a dedicated E.L.F. shrine — a small mahogany cabinet, always open — that he calls Ledger and which he believes keeps running tallies of debts, moral and financial, across the city. He consults it before taking unusual cases.",
+  "description": "Diyaa Lindström-Zidane-Banerjee is a big man going soft in the middle, with dark olive-bronze skin, heavy grey-salted hair he keeps pulled back with a rubber band, and the kind of face that has been patient for so long it has settled permanently into patience. He dresses in the same rotation of rumpled linen jackets in muted terracotta and grey, never quite formal and never quite casual, and he has a geneware tail — a long, unhurried thing in rust-brown fur — that he got in his thirties when tails were newly fashionable and has kept because he grew fond of it. It curls around chair legs when he's thinking and goes very still when he's alarmed.\n\nHe has been a licensed PI for nineteen years. He started as Arcturus Civil Security, left without drama, and built his solo practice from debt-recovery cases so dull that most investigators wouldn't touch them. He is extraordinarily good at finding people who do not want to be found, not because he is relentless but because he is patient and because he understands that almost everyone leaves one thread they don't notice. He charges fairly, keeps meticulous case notes, and has a long-standing rule against working cases that involve children. His office has a dedicated E.L.F. shrine — a small mahogany cabinet, always open — that he calls Ledger and which he believes keeps running tallies of debts, moral and financial, across the city. He consults it before taking unusual cases.",
   "psychology": {
     "facet_weights": {
       "wound": 0.45,
@@ -212,7 +209,7 @@
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Mahogany",
     "Bronze",
-    "Haze Johansson",
+    "Akosua Johansson",
     "Handed"
   ],
   "district": "The Laceworks",
@@ -235,7 +232,7 @@
     "posture_movement": "Deliberate and economical. Moves with a patient, unhurried gait — no wasted motion. Often sits with his weight distributed across both sides of a chair, tail curling around the leg or draped across his lap. His default expression is patient, almost meditative. Eyes tend to rest on people or objects for longer than is typical, as if cataloging. Rarely gestures expansively; most communication happens in the set of his shoulders or the tilt of his head.",
     "clothing_style": "Consistent rotation of rumpled linen jackets in muted terracotta, grey, or taupe over plain t-shirts in charcoal or cream. Dark trousers, usually cotton or linen blend, showing wear at the cuffs. Worn leather shoes — oxfords or brogues in dark brown, maintained but not polished to shine. No jewelry beyond a single worn silver ring on his left middle finger. Belongs to Tier 3–4 working professional; functional, modest, not concerned with fashion."
   },
-  "image_prompt": "Cleo Lindström-Zidane-Banerjee, 188cm tall neo-noir professional in 2226, golden-bronze skin with warm honey undertones blending South Asian, Hispanic, Indigenous American, North African and Northern European heritage. Broad facial planes, full bridge nose, rounded cheeks, weathered lines from decades of concentration. Dark brown eyes. Long dark brown hair heavily salted with grey, pulled back tight at nape with escaping strands. Heavy-set, broad-shouldered frame in rumpled terracotta linen jacket over cream t-shirt. Dark worn cotton trousers and weathered dark brown oxfords. A striking 1.2-meter rust-brown geneware tail with dense fur coils around his leg. Silver scar visible on left forearm. Worn silver ring on left middle finger. Patient, meditative expression. Seated deliberately in office chair, tail curled around leg. Warm indoor lighting, neo-noir workspace setting with subtle neon accents casting gentle light on his golden-bronze complexion. Quiet dignity in modest, functional clothing --ar 2:3 --v 6",
+  "image_prompt": "Diyaa Lindström-Zidane-Banerjee, 188cm tall neo-noir professional in 2226, golden-bronze skin with warm honey undertones blending South Asian, Hispanic, Indigenous American, North African and Northern European heritage. Broad facial planes, full bridge nose, rounded cheeks, weathered lines from decades of concentration. Dark brown eyes. Long dark brown hair heavily salted with grey, pulled back tight at nape with escaping strands. Heavy-set, broad-shouldered frame in rumpled terracotta linen jacket over cream t-shirt. Dark worn cotton trousers and weathered dark brown oxfords. A striking 1.2-meter rust-brown geneware tail with dense fur coils around his leg. Silver scar visible on left forearm. Worn silver ring on left middle finger. Patient, meditative expression. Seated deliberately in office chair, tail curled around leg. Warm indoor lighting, neo-noir workspace setting with subtle neon accents casting gentle light on his golden-bronze complexion. Quiet dignity in modest, functional clothing --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 28.7,
     "Hispanic/Latin American": 27.2,

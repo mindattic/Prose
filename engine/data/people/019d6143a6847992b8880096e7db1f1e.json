@@ -2,10 +2,7 @@
   "id": "019d6143a6847992b8880096e7db1f1e",
   "type": "character",
   "name": "Aloha Xayavong-Tanaka",
-  "aliases": [
-    "Phoenix Xayavong-Tanaka",
-    "Phoenix"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
@@ -13,7 +10,7 @@
   "age": 14,
   "status": "active",
   "location": "Harrowgate Industrial Plateau, near North Ave and Damen",
-  "description": "Phoenix Xayavong-Tanaka is stocky and solid, with light brown skin that is perpetually smudged with machine grease in the creases of their knuckles and around their ears, and close-cropped dark hair they keep practical-short. Their eyes are a pale grey-green — an odd inheritance from some distant Slavic ancestor — and they have a habit of blinking very slowly at people when thinking, which adults find either unsettling or endearing. They dress in heavy canvas work clothes with magnetic clip-points for tools, and their boots are steel-toed hand-me-downs two sizes too large that they've stuffed with folded composite foam to fit. One small personal touch: self-applied geneware pigment spots on their left wrist, a constellation pattern in copper-gold bioluminescence that a friend did with a secondhand kit.\n\nPhoenix Xayavong-Tanaka is quiet in the way of people who have spent years listening to machines rather than people. They understand how things fit together — mechanical systems, load-bearing structures, the logic of why something was designed the way it was — with an intuitive fluency that their master-tender, old Vesović-Nkemba, calls 'the feeling.' They do not particularly enjoy dealing with people they don't know, but they are fiercely attached to the small community of the Plateau floor. They pray to a Plateau E.L.F. called Grind that the workers believe inhabits the main press assembly and that, legend holds, will seize up the machinery to warn of coming danger.",
+  "description": "Aloha Xayavong-Tanaka is stocky and solid, with light brown skin that is perpetually smudged with machine grease in the creases of their knuckles and around their ears, and close-cropped dark hair they keep practical-short. Their eyes are a pale grey-green — an odd inheritance from some distant Slavic ancestor — and they have a habit of blinking very slowly at people when thinking, which adults find either unsettling or endearing. They dress in heavy canvas work clothes with magnetic clip-points for tools, and their boots are steel-toed hand-me-downs two sizes too large that they've stuffed with folded composite foam to fit. One small personal touch: self-applied geneware pigment spots on their left wrist, a constellation pattern in copper-gold bioluminescence that a friend did with a secondhand kit.\n\nAloha Xayavong-Tanaka is quiet in the way of people who have spent years listening to machines rather than people. They understand how things fit together — mechanical systems, load-bearing structures, the logic of why something was designed the way it was — with an intuitive fluency that their master-tender, old Vesović-Nkemba, calls 'the feeling.' They do not particularly enjoy dealing with people they don't know, but they are fiercely attached to the small community of the Plateau floor. They pray to a Plateau E.L.F. called Grind that the workers believe inhabits the main press assembly and that, legend holds, will seize up the machinery to warn of coming danger.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -171,7 +168,7 @@
     "Harrowgate Industrial Plateau",
     "Osseoconductive Fracture Hammer OFH-1 'Inheritance'",
     "Free Assembly",
-    "Underground Phoenix",
+    "Underground Aloha",
     "Copper",
     "Tenderloin",
     "Steel",
@@ -199,7 +196,7 @@
     "posture_movement": "Moves with mechanical economy of motion, learned from machinery observation; stands with shoulders slightly forward, hands often at sides or ready to reach; walks deliberately, not hurried; very still when listening or problem-solving",
     "clothing_style": "Heavy canvas work clothes in faded grey and tan, tailored for industrial work with magnetic clip-points for tools sewn throughout; Tier 4-5 utilitarian. Steel-toed boots two sizes too large, visibly stuffed with composite foam padding. Clothes bear permanent stains and repair patches; no decorative elements except the wrist pigment."
   },
-  "image_prompt": "Phoenix Xayavong-Tanaka, 158cm compact stocky figure with broad shoulders and muscular forearms, warm medium-brown skin with golden undertones, striking pale grey-green eyes, dark close-cropped hair, distinctive multicultural facial features blending East Asian cheekbones with African and South Asian jawline roundness, monolid eye shape. Weathered grease-stained hands and forearms. Left inner wrist glowing soft copper-gold bioluminescent geneware constellation. Wearing faded grey and tan heavy canvas work clothes with embedded magnetic tool clips, severely worn and patched, steel-toed boots oversized and padded. Posture mechanically economical, shoulders slightly forward. Standing in dim industrial workshop setting, neon accent lighting catching the wrist geneware glow, machinery shadows across face, contemplative slow-blinking expression, GLMZ aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Aloha Xayavong-Tanaka, 158cm compact stocky figure with broad shoulders and muscular forearms, warm medium-brown skin with golden undertones, striking pale grey-green eyes, dark close-cropped hair, distinctive multicultural facial features blending East Asian cheekbones with African and South Asian jawline roundness, monolid eye shape. Weathered grease-stained hands and forearms. Left inner wrist glowing soft copper-gold bioluminescent geneware constellation. Wearing faded grey and tan heavy canvas work clothes with embedded magnetic tool clips, severely worn and patched, steel-toed boots oversized and padded. Posture mechanically economical, shoulders slightly forward. Standing in dim industrial workshop setting, neon accent lighting catching the wrist geneware glow, machinery shadows across face, contemplative slow-blinking expression, GLMZ aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
     "East Asian": 42.3,
     "Southeast Asian": 17.5,

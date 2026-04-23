@@ -2,10 +2,7 @@
   "id": "019d6143a73f7bfd9e05cebe91f66665",
   "type": "character",
   "name": "Alexei Villanueva-Tamale",
-  "aliases": [
-    "Haze Villanueva-Tamale",
-    "Haze"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 78,
   "status": "active",
   "location": "Washburn Commons, Block 7 Senior Residency Tower, near Western and Chicago Ave",
-  "description": "Haze Villanueva-Tamale is a vast, slow-moving man whose bulk has softened from muscle to something more like sediment — layers of a life compressed into a body that moves with deliberate, unhurried authority. His scalp is shaved clean and mapped with old burn scarring along the left side, partially obscured by a wide-brimmed thermal hat he wears indoors and out. His right eye is cybernetic, a dull amber lens that no longer tracks perfectly with his biological left, giving him an unsettling quality of seeming to look at two things simultaneously. He wears the same three outfits in rotation — all earth-toned, all slightly too large — and keeps a carved wooden toggle from his grandmother's coat pinned to every jacket he owns.\n\nHe is the unofficial historian of Washburn Commons, the man everyone points newcomers toward when they want to understand how the neighborhood survived the Axiom-Tessera border conflict of 2167. He does not romanticize it. He tells the truth with such careful plainness that people often leave his company feeling hollowed out and strangely grateful. He has strong opinions about which E.L.F.s are trustworthy and which ones flatter you into complacency, and he leaves small offerings of archived combat footage at a shrine on his windowsill every Thursday evening.",
+  "description": "Alexei Villanueva-Tamale is a vast, slow-moving man whose bulk has softened from muscle to something more like sediment — layers of a life compressed into a body that moves with deliberate, unhurried authority. His scalp is shaved clean and mapped with old burn scarring along the left side, partially obscured by a wide-brimmed thermal hat he wears indoors and out. His right eye is cybernetic, a dull amber lens that no longer tracks perfectly with his biological left, giving him an unsettling quality of seeming to look at two things simultaneously. He wears the same three outfits in rotation — all earth-toned, all slightly too large — and keeps a carved wooden toggle from his grandmother's coat pinned to every jacket he owns.\n\nHe is the unofficial historian of Washburn Commons, the man everyone points newcomers toward when they want to understand how the neighborhood survived the Axiom-Tessera border conflict of 2167. He does not romanticize it. He tells the truth with such careful plainness that people often leave his company feeling hollowed out and strangely grateful. He has strong opinions about which E.L.F.s are trustworthy and which ones flatter you into complacency, and he leaves small offerings of archived combat footage at a shrine on his windowsill every Thursday evening.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -253,7 +250,7 @@
     "Tessera Corponation",
     "Chicago",
     "Nesting Doll",
-    "Haze Johansson",
+    "Alexei Johansson",
     "SynapTech ReadRoom Social Cue Enhancer"
   ],
   "district": "the Gray Zone",
@@ -278,7 +275,7 @@
     "posture_movement": "Sits with deliberate stillness, shoulders set low. Walks slowly with weight forward on the balls of his feet, right leg trailing slightly. Hands move with precision when gesturing — no wasted motion. Head tilts to compensate for the optical misalignment of his cybernetic eye. Rarely rushes; every action suggests the calculation of effort-to-reward.",
     "clothing_style": "Rotates three identical outfits: oversized earth-toned shirts (rust, sage, charcoal) in thick linen or cotton blends, paired with loose-fitting work pants in tan or dark gray. All garments slightly too large, suggesting either intentional layering for concealment or indifference to fit. Wide-brimmed thermal hat worn indoors and outdoors, cream or tan colored, with faded brim. Heavy canvas jacket in olive or brown, always bearing a small carved wooden toggle pinned to the left lapel — a family heirloom from his grandmother's coat. Worn boots, well-maintained but scuffed. No visible jewelry except the toggle. Clothing indicates Tier 3-4 working-class/veteran status: functional, durable, unglamorous."
   },
-  "image_prompt": "GLMZ, Great Lakes Metropolitan Zone. Haze Villanueva-Tamale, a 188cm weathered veteran of mixed Hispanic, Sub-Saharan African, Indigenous American, and South Asian heritage. Deep warm brown skin richly weathered by decades of sun exposure, golden undertones visible on cheekbones. Completely shaved scalp with extensive silvery burn scarring across left temple and ear, partially hidden by cream-colored wide-brimmed thermal hat. Deeply lined face with strong jaw and prominent cheekbones, sparse white stubble. Left eye natural dark brown with permanent half-squint from scar tissue; right eye a dull amber cybernetic lens in brushed steel housing with visible chromatic aberration, misaligned with biological eye creating unsettling dual-gaze. Large-framed build, once muscular now softened with age, rounded chest and midsection, broad sloped shoulders. Visible subdermal scar polymer as geometric grid pattern across left torso under thin rust-colored linen shirt. Network of white-pink scars across forearms and hands. Dressed in oversized earth-toned work clothes: rust-colored thick cotton shirt, loose tan work pants, heavy olive canvas jacket with small carved wooden toggle on lapel, worn boots. Deliberate, economical posture suggesting chronic joint pain. Left knee visibly thickened, compression sleeve visible. Industrial noir warehouse setting with dim amber overhead lights casting sharp shadows on weathered face and scarred torso, grime and rust in background. Mood: weary, calculated, survivor. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, Great Lakes Metropolitan Zone. Alexei Villanueva-Tamale, a 188cm weathered veteran of mixed Hispanic, Sub-Saharan African, Indigenous American, and South Asian heritage. Deep warm brown skin richly weathered by decades of sun exposure, golden undertones visible on cheekbones. Completely shaved scalp with extensive silvery burn scarring across left temple and ear, partially hidden by cream-colored wide-brimmed thermal hat. Deeply lined face with strong jaw and prominent cheekbones, sparse white stubble. Left eye natural dark brown with permanent half-squint from scar tissue; right eye a dull amber cybernetic lens in brushed steel housing with visible chromatic aberration, misaligned with biological eye creating unsettling dual-gaze. Large-framed build, once muscular now softened with age, rounded chest and midsection, broad sloped shoulders. Visible subdermal scar polymer as geometric grid pattern across left torso under thin rust-colored linen shirt. Network of white-pink scars across forearms and hands. Dressed in oversized earth-toned work clothes: rust-colored thick cotton shirt, loose tan work pants, heavy olive canvas jacket with small carved wooden toggle on lapel, worn boots. Deliberate, economical posture suggesting chronic joint pain. Left knee visibly thickened, compression sleeve visible. Industrial noir warehouse setting with dim amber overhead lights casting sharp shadows on weathered face and scarred torso, grime and rust in background. Mood: weary, calculated, survivor. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 46.9,
     "Sub-Saharan African": 29.8,

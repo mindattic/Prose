@@ -2,10 +2,7 @@
   "id": "019d6143a5c27f7898bc879dd9abd521",
   "type": "character",
   "name": "Chunhua Agyemang-Watanabe",
-  "aliases": [
-    "Quinn Agyemang-Watanabe",
-    "Quinn"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 38,
   "status": "active",
   "location": "Geartown — operates her cart at the corner of Smelter's Passage and the main Geartown transit underpass, 05:30 to 14:00, near North Ave and Milwaukee",
-  "description": "Quinn Agyemang-Watanabe is a solid, energetic woman who smells permanently of star anise and chili oil, a fact she considers an asset. Her skin is warm dark brown, her hair dyed a shifting copper-red that she touches up every three weeks with geneware dye she dilutes to stretch the bottle. She has a cat tail — rust-orange, thick, and expressive — that she got at nineteen during what she describes as 'a phase that became a personality.' It is genuinely expressive: anyone who knows her can read her mood from it before she's opened her mouth. She runs her cart with the systematic ferocity of someone who has learned that every Quanta counts, and she has optimized her workflow to a degree that would impress an industrial engineer.\n\nShe is loud, warm, and mercilessly funny, the kind of person who remembers your order and your name and your mother's name and will ask after all three. She extends credit to regulars who are short at the end of the month and maintains a running mental ledger that she rarely actually collects on. Her noodles are genuinely excellent — a recipe that is a fusion of her grandmother's Turkish-inflected broth technique and a Ghanaian pepper base she learned from the previous cart owner — and this is not incidental to her identity. She is aware that she is feeding people who cannot afford to eat otherwise and takes this seriously without making anyone feel it.",
+  "description": "Chunhua Agyemang-Watanabe is a solid, energetic woman who smells permanently of star anise and chili oil, a fact she considers an asset. Her skin is warm dark brown, her hair dyed a shifting copper-red that she touches up every three weeks with geneware dye she dilutes to stretch the bottle. She has a cat tail — rust-orange, thick, and expressive — that she got at nineteen during what she describes as 'a phase that became a personality.' It is genuinely expressive: anyone who knows her can read her mood from it before she's opened her mouth. She runs her cart with the systematic ferocity of someone who has learned that every Quanta counts, and she has optimized her workflow to a degree that would impress an industrial engineer.\n\nShe is loud, warm, and mercilessly funny, the kind of person who remembers your order and your name and your mother's name and will ask after all three. She extends credit to regulars who are short at the end of the month and maintains a running mental ledger that she rarely actually collects on. Her noodles are genuinely excellent — a recipe that is a fusion of her grandmother's Turkish-inflected broth technique and a Ghanaian pepper base she learned from the previous cart owner — and this is not incidental to her identity. She is aware that she is feeding people who cannot afford to eat otherwise and takes this seriously without making anyone feel it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -209,7 +206,7 @@
     "Thermite Cavity Disbursement Shell TCDS-3",
     "Copper",
     "Arcturus KS-7 'Nursery'",
-    "Haze Johansson",
+    "Akosua Johansson",
     "Corner Slice",
     "Compass Rose",
     "Celeste Abram"
@@ -236,7 +233,7 @@
     "posture_movement": "Always in motion — economical, efficient movements honed by years of cart work. She carries herself with a kind of compressed energy, ready to pivot from taking an order to chopping vegetables to handling change without hesitation. Her tail moves independently of her conscious attention, serving as a barometer of her mood that her face might not express. When standing still (rare), she shifts her weight to one leg, typically favoring her left.",
     "clothing_style": "Practical Tier 3-4 workwear: reinforced apron with deep pockets (usually stained with turmeric, chili oil, broth) worn over a fitted long-sleeved undershirt, sleeves pushed up to mid-forearm. Cargo pants in dark gray or black, pockets full of tools (peeler, lighter, change purse, wrapped mints). Non-slip boots rated for wet surfaces and heat. A lightweight overshirt hanging nearby for when she steps away from the cart. No jewelry except a simple brass ring her daughter made her, worn on her right middle finger. Her appearance is deliberately practical — every item serves a function — but maintained with enough care that it's clear she takes pride in her work."
   },
-  "image_prompt": "Quinn Agyemang-Watanabe, 167cm tall, solid muscular build, warm deep brown skin with golden undertones, weathered face with high cheekbones reflecting South Asian, East Asian, Sub-Saharan African, and Hispanic heritage. Copper-red geneware-dyed shoulder-length textured hair pulled back in a functional braid, dark brown observant eyes with laugh lines. Rust-orange cat tail augmentation visible at base of spine, subdermal heat-resistant pads on palms showing as translucent patches. Wearing practical work apron stained with turmeric and chili oil over long-sleeved undershirt with rolled sleeves, dark cargo pants, heat-resistant boots. Simple brass ring on right middle finger. Standing at a street food cart in the Great Lakes Metropolitan Zone, steam rising around her, neon signs reflecting off wet surfaces, GLMZ 2200s urban setting, concentrated expression while preparing food, tail swishing with focus, morning light mixed with artificial glow, cinematic depth --ar 2:3 --v 6",
+  "image_prompt": "Chunhua Agyemang-Watanabe, 167cm tall, solid muscular build, warm deep brown skin with golden undertones, weathered face with high cheekbones reflecting South Asian, East Asian, Sub-Saharan African, and Hispanic heritage. Copper-red geneware-dyed shoulder-length textured hair pulled back in a functional braid, dark brown observant eyes with laugh lines. Rust-orange cat tail augmentation visible at base of spine, subdermal heat-resistant pads on palms showing as translucent patches. Wearing practical work apron stained with turmeric and chili oil over long-sleeved undershirt with rolled sleeves, dark cargo pants, heat-resistant boots. Simple brass ring on right middle finger. Standing at a street food cart in the Great Lakes Metropolitan Zone, steam rising around her, neon signs reflecting off wet surfaces, GLMZ 2200s urban setting, concentrated expression while preparing food, tail swishing with focus, morning light mixed with artificial glow, cinematic depth --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 33.7,
     "East Asian": 30,

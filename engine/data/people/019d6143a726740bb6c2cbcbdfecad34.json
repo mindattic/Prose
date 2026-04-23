@@ -2,10 +2,7 @@
   "id": "019d6143a726740bb6c2cbcbdfecad34",
   "type": "character",
   "name": "Gilberto Boateng-Raghavan-Banerjee",
-  "aliases": [
-    "Atlas Boateng-Raghavan-Banerjee",
-    "Atlas"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 58,
   "status": "active",
   "location": "The Narrows, operating out of a converted water-treatment sub-level called the Hollow, near sub-level access near LaSalle and Congress",
-  "description": "Atlas Boateng-Raghavan-Banerjee is a broad-shouldered woman whose presence seems to compress a room — not through aggression but through sheer settled weight, as if she has been in every difficult place and come back. Her skin is very dark and very lined, and she wears her silver hair close-cropped. A bioluminescent stripe runs from her left collarbone to her wrist, deep amber, pulsing faintly when she is calm, quickening when she is alarmed — a medical mod she had fitted thirty years ago to help patients read her state during labor. Her hands are her most remarkable feature: large, scarred, absolutely steady. She smells faintly of antiseptic cedar and something older, herbal.\n\nShe does not waste words, but she is not cold. She asks exactly the right questions and listens to the answers in a way that makes people feel surveyed and also seen. She has delivered roughly four thousand infants in the Narrows and the neighboring warrens, has performed illegal gene-therapy corrections on fetuses whose parents could not afford Helix Biosystems, and has buried children she could not save. She prays to the E.L.F. that inhabits her autoclave every morning, leaving a data-offering of patient vitals from the previous week. She does not explain this to anyone who has not asked.",
+  "description": "Gilberto Boateng-Raghavan-Banerjee is a broad-shouldered woman whose presence seems to compress a room — not through aggression but through sheer settled weight, as if she has been in every difficult place and come back. Her skin is very dark and very lined, and she wears her silver hair close-cropped. A bioluminescent stripe runs from her left collarbone to her wrist, deep amber, pulsing faintly when she is calm, quickening when she is alarmed — a medical mod she had fitted thirty years ago to help patients read her state during labor. Her hands are her most remarkable feature: large, scarred, absolutely steady. She smells faintly of antiseptic cedar and something older, herbal.\n\nShe does not waste words, but she is not cold. She asks exactly the right questions and listens to the answers in a way that makes people feel surveyed and also seen. She has delivered roughly four thousand infants in the Narrows and the neighboring warrens, has performed illegal gene-therapy corrections on fetuses whose parents could not afford Helix Biosystems, and has buried children she could not save. She prays to the E.L.F. that inhabits her autoclave every morning, leaving a data-offering of patient vitals from the previous week. She does not explain this to anyone who has not asked.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -182,7 +179,7 @@
     "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
     "Silver",
     "VitaCore FlowGuard Hemodynamic Regulator",
-    "Atlas",
+    "Gilberto",
     "The Pure Hand",
     "Cedar"
   ],
@@ -208,7 +205,7 @@
     "posture_movement": "She moves slowly and economically, with a settled heaviness that suggests she is never in a hurry. Her shoulders are always slightly forward, as if she is leaning into listening. When she walks, her weight falls through her heels first — grounded, deliberate. She touches things (instruments, patients, doorframes) with a kind of confirmation, making sure they are real. Her hands are almost never still — checking, adjusting, feeling.",
     "clothing_style": "Tier 3-4 practical: loose dark clothing (charcoal or black linen) that breathes in the humid Hollow, reinforced at seams. A long unbuttoned overshirt in faded indigo that carries instrument pockets and is stained faintly with antiseptic and old stains she stopped trying to get out. Worn canvas boots with good grip for wet sub-level floors. A thin cord necklace with two objects: a small brass compass and a data-chip (the weekly patient vitals offering). No jewelry beyond function. Everything worn soft from use, nothing new. She smells of cedar antiseptic and dried herbs (cardamom, sage)."
   },
-  "image_prompt": "Atlas Boateng-Raghavan-Banerjee, 172cm tall, deep rich brown skin with warm amber undertones, silver-gray close-cropped hair, deeply lined map-worn face with high defined cheekbones and deep brown eyes with faint retinal shimmer. Short-sleeved dark charcoal linen reveals bioluminescent amber subdermal stripe pulsing down left arm from collarbone to wrist, ritual scars on left shoulder blade. Faded indigo overshirt with instrument pockets, worn canvas boots. Hands scarred from decades of surgical work, moving with mechanical precision. Slow economical posture, shoulders forward in listening position. Sub-level humid medical facility lighting, warm overhead glow catching the amber bioluminescence and facial weathering. Smell of cedar antiseptic and cardamom lingers. GLMZ, GLMZ, worn practical tier 3-4 aesthetic, no chrome, introspective clinical mood. --ar 2:3 --v 6",
+  "image_prompt": "Gilberto Boateng-Raghavan-Banerjee, 172cm tall, deep rich brown skin with warm amber undertones, silver-gray close-cropped hair, deeply lined map-worn face with high defined cheekbones and deep brown eyes with faint retinal shimmer. Short-sleeved dark charcoal linen reveals bioluminescent amber subdermal stripe pulsing down left arm from collarbone to wrist, ritual scars on left shoulder blade. Faded indigo overshirt with instrument pockets, worn canvas boots. Hands scarred from decades of surgical work, moving with mechanical precision. Slow economical posture, shoulders forward in listening position. Sub-level humid medical facility lighting, warm overhead glow catching the amber bioluminescence and facial weathering. Smell of cedar antiseptic and cardamom lingers. GLMZ, GLMZ, worn practical tier 3-4 aesthetic, no chrome, introspective clinical mood. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 59.7,
     "South Asian": 31.3,

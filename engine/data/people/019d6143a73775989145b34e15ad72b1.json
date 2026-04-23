@@ -2,10 +2,7 @@
   "id": "019d6143a73775989145b34e15ad72b1",
   "type": "character",
   "name": "Efigenia Baek-Nakamura",
-  "aliases": [
-    "Delta Baek-Nakamura",
-    "Delta"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
@@ -13,7 +10,7 @@
   "age": 26,
   "status": "active",
   "location": "Hamtramck Enclave, 'Marta's Canteen' — technically named after the original owner, Zipporah runs the 2200-0600 shift, near Pulaski and Chicago Ave",
-  "description": "Delta Baek-Nakamura is wiry and restless in the way of someone whose body has never learned to be still — they bounce a knee, tap a rhythm on the counter, flip a spatula even when nothing is cooking. Their skin is a warm medium brown and their geneware includes bioluminescent freckles across their cheeks and collarbones that pulse faintly blue when their heart rate elevates, which is often. They keep their hair buzzed on the sides and natural on top, currently dyed a deep copper that doesn't quite match their natural dark brown at the roots. They have one retractable claw mod on their right hand's index finger that they got at seventeen and use almost exclusively to open packaging.\n\nDelta Baek-Nakamura is the night canteen's entire personality. The Enclave's late-shift workers — third-shift Ferrogate operators, clinic nurses, waste handlers — come as much for the conversation as the food. Zip has a gift for making people feel found rather than seen, which is different. They are also running on a permanent low-grade sleep deficit that they treat as a point of pride, are catastrophically bad with money, and have recently become slightly obsessed with the E.L.F. they believe inhabits the canteen's ancient griddle — they call it Sizzle and have begun leaving it tiny sculptures made of food scraps shaped into abstract geometric forms.",
+  "description": "Efigenia Baek-Nakamura is wiry and restless in the way of someone whose body has never learned to be still — they bounce a knee, tap a rhythm on the counter, flip a spatula even when nothing is cooking. Their skin is a warm medium brown and their geneware includes bioluminescent freckles across their cheeks and collarbones that pulse faintly blue when their heart rate elevates, which is often. They keep their hair buzzed on the sides and natural on top, currently dyed a deep copper that doesn't quite match their natural dark brown at the roots. They have one retractable claw mod on their right hand's index finger that they got at seventeen and use almost exclusively to open packaging.\n\nEfigenia Baek-Nakamura is the night canteen's entire personality. The Enclave's late-shift workers — third-shift Ferrogate operators, clinic nurses, waste handlers — come as much for the conversation as the food. Zip has a gift for making people feel found rather than seen, which is different. They are also running on a permanent low-grade sleep deficit that they treat as a point of pride, are catastrophically bad with money, and have recently become slightly obsessed with the E.L.F. they believe inhabits the canteen's ancient griddle — they call it Sizzle and have begun leaving it tiny sculptures made of food scraps shaped into abstract geometric forms.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -218,7 +215,7 @@
     "Tamale Marta",
     "Chicago",
     "Copper",
-    "Zara Bergqvist"
+    "Auni Bergqvist"
   ],
   "district": "the Gray Zone",
   "physical_description": {
@@ -240,7 +237,7 @@
     "posture_movement": "Perpetually in motion — bouncing knee when seated, constant finger-tapping rhythms on any surface, restless hand gestures while speaking. Moves through space with efficient kitchen choreography, economical but never still. Fidgets with objects compulsively (spatula flips, claw clicks, patch adjustments)",
     "clothing_style": "Tier 3-4 working class. Standard black nonslip kitchen pants (reinforced weave), loose-fitting grey or faded band-logo t-shirt under an oversized, grease-stained denim jacket with rolled sleeves. Worn black canvas work shoes with visible copper-wire zipper pulls for durability. Small silver chain necklace (repurposed from broken jewelry). Nicotine patches visible on left forearm. No formal grooming — practical and minimal, everything chosen for function over appearance"
   },
-  "image_prompt": "Delta Baek-Nakamura, 168cm wiry lean figure, warm medium-deep brown skin with golden-amber undertones reflecting East Asian-African heritage blend. Sharp East Asian facial structure with full Sub-Saharan cheek contours, dark brown alert eyes constantly scanning. Deep copper-dyed hair with dark roots, asymmetrical undercut with buzzed sides fading to stubble, longer texture-styled top. Faint bioluminescent blue freckles across cheekbones pulsing with restless energy. Weathered kitchen-worker complexion, perpetually flushed. Right index finger showing chrome claw seam, left forearm nicotine patch port visible with metallurgical sheen. Wearing oversized grease-stained denim jacket over faded band-logo t-shirt, black reinforced kitchen pants, worn black canvas work shoes. Small silver chain necklace. Fidgeting with hands, restless energy radiating. GLMZ GLMZ kitchen worker on break, moody blue-tinted neon lighting, industrial kitchen background with stainless steel surfaces reflecting faint bioluminescence, gritty urban dystopian aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Efigenia Baek-Nakamura, 168cm wiry lean figure, warm medium-deep brown skin with golden-amber undertones reflecting East Asian-African heritage blend. Sharp East Asian facial structure with full Sub-Saharan cheek contours, dark brown alert eyes constantly scanning. Deep copper-dyed hair with dark roots, asymmetrical undercut with buzzed sides fading to stubble, longer texture-styled top. Faint bioluminescent blue freckles across cheekbones pulsing with restless energy. Weathered kitchen-worker complexion, perpetually flushed. Right index finger showing chrome claw seam, left forearm nicotine patch port visible with metallurgical sheen. Wearing oversized grease-stained denim jacket over faded band-logo t-shirt, black reinforced kitchen pants, worn black canvas work shoes. Small silver chain necklace. Fidgeting with hands, restless energy radiating. GLMZ GLMZ kitchen worker on break, moody blue-tinted neon lighting, industrial kitchen background with stainless steel surfaces reflecting faint bioluminescence, gritty urban dystopian aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
     "East Asian": 85.6,
     "Sub-Saharan African": 7.3,

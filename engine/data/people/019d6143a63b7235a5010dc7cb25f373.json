@@ -2,10 +2,7 @@
   "id": "019d6143a63b7235a5010dc7cb25f373",
   "type": "character",
   "name": "Ekaterina Zielinski-Kulkarni",
-  "aliases": [
-    "Drift Zielinski-Kulkarni",
-    "Drift"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 14,
   "status": "active",
   "location": "Kessler Interchange, near Fullerton and Damen",
-  "description": "Drift Zielinski-Kulkarni is stocky and square-shouldered for his age, with warm brown skin perpetually streaked with grease that never fully washes out of the creases of his knuckles. His hair is dark and kept short — he learned early that loose hair and moving machinery are a bad combination. He has ordinary, honest eyes and a wide mouth that defaults to a slight frown of concentration. His uniform is an adult-sized Ferrogate apprentice coverall, cut down and re-hemmed by his grandmother with surgical precision.\n\nHe was placed into the Ferrogate apprentice program through a Tier 2 vocational track at thirteen, the year after his father was injured on the same rail line he now maintains. He has complicated feelings about this that he has organized into a box he does not open. He is genuinely gifted with mechanical systems — his crew chief says he has 'the ears,' meaning he can hear when something is about to go wrong before the diagnostics catch it. He is not a talker. He communicates mainly through the quality of his work.",
+  "description": "Ekaterina Zielinski-Kulkarni is stocky and square-shouldered for his age, with warm brown skin perpetually streaked with grease that never fully washes out of the creases of his knuckles. His hair is dark and kept short — he learned early that loose hair and moving machinery are a bad combination. He has ordinary, honest eyes and a wide mouth that defaults to a slight frown of concentration. His uniform is an adult-sized Ferrogate apprentice coverall, cut down and re-hemmed by his grandmother with surgical precision.\n\nHe was placed into the Ferrogate apprentice program through a Tier 2 vocational track at thirteen, the year after his father was injured on the same rail line he now maintains. He has complicated feelings about this that he has organized into a box he does not open. He is genuinely gifted with mechanical systems — his crew chief says he has 'the ears,' meaning he can hear when something is about to go wrong before the diagnostics catch it. He is not a talker. He communicates mainly through the quality of his work.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -175,7 +172,7 @@
     "Ferrogate Transit",
     "The Wire Taps",
     "Honest Burger",
-    "Drift"
+    "Ekaterina"
   ],
   "district": "The Circuit",
   "physical_description": {
@@ -198,7 +195,7 @@
     "posture_movement": "Economical and purposeful. Stands with weight balanced, shoulders slightly forward in habitual lean suggesting someone accustomed to bending over machinery. Moves with quiet confidence in physical spaces, minimal wasted motion. Hands rarely still—fidgets with tools or small objects when thinking. Walking pace steady and measured, never rushed.",
     "clothing_style": "Adult-sized Ferrogate Transit apprentice coverall, cut down and re-hemmed with surgical precision. Faded gray-blue with darker grease stains along front and sleeves resistant to washing. Ferrogate insignia (rail transit emblem) stitched on shoulders. Practical steel-toed work boots, scuffed and well-broken-in. Plain dark gray or black crew-neck shirt beneath coverall. No visible jewelry or personal customization. Everything suggests Tier 3-4 working class utility with precise care."
   },
-  "image_prompt": "GLMZ, portrait of Drift Zielinski-Kulkarni, 165cm stocky adolescent with square shoulders and muscular forearms. Warm golden-brown skin with olive undertones, youthful face with prominent Eastern European cheekbones, slightly rounded lower face, wide mouth in slight frown of concentration. Brown unaugmented eyes with subtle East Asian upper lid influence. Closely cropped dark brown hair. Baseline human, entirely unaugmented. Hands show permanent dark staining under fingernails and cuticles from machinery lubricant, thin white scar on back of left hand, small pale burn scar on right forearm. Perpetually grimy from industrial work, machine oil embedded in skin creases. Wearing faded gray-blue Ferrogate Transit apprentice coverall cut down and re-hemmed, darker grease stains along front and sleeves, Ferrogate rail transit emblems on shoulders, practical scuffed steel-toed work boots, dark crew-neck shirt beneath. Posture slightly forward-leaning, hands fidgeting with tool. Industrial Great Lakes Metropolitan Zone setting, overhead work lighting casting shadows across grease-stained uniform, gritty urban train yard environment, concentrated expression --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Ekaterina Zielinski-Kulkarni, 165cm stocky adolescent with square shoulders and muscular forearms. Warm golden-brown skin with olive undertones, youthful face with prominent Eastern European cheekbones, slightly rounded lower face, wide mouth in slight frown of concentration. Brown unaugmented eyes with subtle East Asian upper lid influence. Closely cropped dark brown hair. Baseline human, entirely unaugmented. Hands show permanent dark staining under fingernails and cuticles from machinery lubricant, thin white scar on back of left hand, small pale burn scar on right forearm. Perpetually grimy from industrial work, machine oil embedded in skin creases. Wearing faded gray-blue Ferrogate Transit apprentice coverall cut down and re-hemmed, darker grease stains along front and sleeves, Ferrogate rail transit emblems on shoulders, practical scuffed steel-toed work boots, dark crew-neck shirt beneath. Posture slightly forward-leaning, hands fidgeting with tool. Industrial Great Lakes Metropolitan Zone setting, overhead work lighting casting shadows across grease-stained uniform, gritty urban train yard environment, concentrated expression --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Eastern European": 40.5,
     "South Asian": 32.8,

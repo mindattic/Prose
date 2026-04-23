@@ -2,10 +2,7 @@
   "id": "019d6143a5eb78e688e790c495e2d894",
   "type": "character",
   "name": "Firas Krishnamurthy",
-  "aliases": [
-    "Frost Krishnamurthy",
-    "Frost"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 34,
   "status": "active",
   "location": "The Alban Souk, lower concourse, booth behind the noodle counter, Blackpipe Corridor, near Halsted and Division",
-  "description": "Frost Krishnamurthy is lean and angular with long fingers that move constantly — tapping, folding, straightening invisible things. His skin is a warm dark brown and he keeps his face clean-shaved and deliberately unremarkable, which is itself a kind of artistry. He has pattern-shifting irises — a geneware cosmetic mod that cycles slowly between amber and deep violet — which is the one vanity he permits himself, since everything else about his appearance is engineered for forgettability. He dresses in mid-tier corp-drone neutrals: gray, slate, muted tan. He could pass for a Tessera clerk or an Arcturus transit worker or a Ferrogate maintenance supervisor. That's the point.\n\nHe is intensely professional and slightly cold in the way of someone who learned early that warmth is a vector for exploitation. He runs his forgery operation with a paranoid precision: no regulars, no loyalty discounts, no names if he can help it. He calls himself an 'identity cartographer' and has strong philosophical opinions about the tyranny of documentation systems that he will share if he trusts you enough, which takes a long time. Behind the professionalism is a man who genuinely believes in the freedom to be someone else — and who has quietly used that belief to help dozens of undocumented people access housing credits they were locked out of. He doesn't call this charity. He calls it market correction.",
+  "description": "Firas Krishnamurthy is lean and angular with long fingers that move constantly — tapping, folding, straightening invisible things. His skin is a warm dark brown and he keeps his face clean-shaved and deliberately unremarkable, which is itself a kind of artistry. He has pattern-shifting irises — a geneware cosmetic mod that cycles slowly between amber and deep violet — which is the one vanity he permits himself, since everything else about his appearance is engineered for forgettability. He dresses in mid-tier corp-drone neutrals: gray, slate, muted tan. He could pass for a Tessera clerk or an Arcturus transit worker or a Ferrogate maintenance supervisor. That's the point.\n\nHe is intensely professional and slightly cold in the way of someone who learned early that warmth is a vector for exploitation. He runs his forgery operation with a paranoid precision: no regulars, no loyalty discounts, no names if he can help it. He calls himself an 'identity cartographer' and has strong philosophical opinions about the tyranny of documentation systems that he will share if he trusts you enough, which takes a long time. Behind the professionalism is a man who genuinely believes in the freedom to be someone else — and who has quietly used that belief to help dozens of undocumented people access housing credits they were locked out of. He doesn't call this charity. He calls it market correction.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -254,7 +251,7 @@
     "GLMZ",
     "Tessera Corponation",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Frost",
+    "Firas",
     "Slate",
     "Tessera TK-5 Compact 'Clerk'"
   ],
@@ -277,7 +274,7 @@
     "posture_movement": "Stillness punctuated by constant micro-movements — fingers tap, fold, and straighten invisible objects; jaw subtly shifts; eyes scan without apparent focus. Sits with hands positioned on table or lap, ready to move. Walks with economical gait, minimal wasted motion. Projects clinical detachment and wariness.",
     "clothing_style": "Mid-tier corporate drone neutrals — slate gray composite jacket (Arcturus Systems house brand), muted tan undershirt, charcoal synth-weave trousers, unremarkable black polymer boots. No visible branding or status symbols. Clothing is clean, well-fitted, utterly forgettable. One deviation: thin silver ring on left index finger (appears plain, actually contains encrypted data access)."
   },
-  "image_prompt": "Frost Krishnamurthy, 178cm lean angular neo-noir figure in slate gray Arcturus Systems corporate jacket and muted tan undershirt, charcoal synth-weave trousers, black polymer boots. Warm golden-brown harmoniously blended skin tone reflecting South Asian, Eastern European, Middle Eastern, Southeast Asian, Central Asian, and Sub-Saharan African ancestry. Black closely cropped hair, clean-shaven face with balanced cheekbones and subtle eye shape variation. Eyes with slowly cycling amber-to-violet geneware modification, scanning cautiously. Fine linear neck scar barely visible below larynx. Posture of economical stillness with micro-movements—fingers ready, jaw subtly shifting, clinical detachment radiating from expression. Silver encrypted data ring on left index finger. Ultra-modern 2226 GLMZ corporate interior, cool neon-tinted lighting casting sharp shadows across angular features, motion-blur background suggesting urban surveillance. Mood: wary, precision-focused, deliberately unremarkable yet intensely present. Neo-noir noir aesthetic, high contrast lighting --ar 2:3 --v 6",
+  "image_prompt": "Firas Krishnamurthy, 178cm lean angular neo-noir figure in slate gray Arcturus Systems corporate jacket and muted tan undershirt, charcoal synth-weave trousers, black polymer boots. Warm golden-brown harmoniously blended skin tone reflecting South Asian, Eastern European, Middle Eastern, Southeast Asian, Central Asian, and Sub-Saharan African ancestry. Black closely cropped hair, clean-shaven face with balanced cheekbones and subtle eye shape variation. Eyes with slowly cycling amber-to-violet geneware modification, scanning cautiously. Fine linear neck scar barely visible below larynx. Posture of economical stillness with micro-movements—fingers ready, jaw subtly shifting, clinical detachment radiating from expression. Silver encrypted data ring on left index finger. Ultra-modern 2226 GLMZ corporate interior, cool neon-tinted lighting casting sharp shadows across angular features, motion-blur background suggesting urban surveillance. Mood: wary, precision-focused, deliberately unremarkable yet intensely present. Neo-noir noir aesthetic, high contrast lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 29.8,
     "Eastern European": 23.6,

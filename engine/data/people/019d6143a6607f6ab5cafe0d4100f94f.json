@@ -2,10 +2,7 @@
   "id": "019d6143a6607f6ab5cafe0d4100f94f",
   "type": "character",
   "name": "Golnar Srisai-Nokomis",
-  "aliases": [
-    "Lyric Srisai-Nokomis",
-    "Lyric"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 47,
   "status": "active",
   "location": "Edgewater Prism, Lakeview Neon adjacent, near Lincoln and Clark",
-  "description": "Lyric Srisai-Nokomis is a tall woman with a deliberate stillness that patients and colleagues both find either deeply reassuring or faintly unnerving depending on their temperament. Her ancestry — Ghanaian and Kazakh — gives her a face of striking angular contrast: high, wide cheekbones, deep-set dark eyes behind slender prescription lenses she wears out of preference for their old-fashioned formality. She keeps her locs wrapped and coiled at the back of her head in a style that takes forty minutes to arrange and which she believes signals both competence and unhurriedness to patients. Her irises have been modded with a subtle radial pattern in amber — a present to herself on her fortieth birthday that she immediately worried was unprofessional and has since made peace with.\n\nShe specializes in augmentation-integration psychotherapy: treating patients whose neural or physical augmentations have produced identity disruption, phantom sensations, rejection grief, or the particular dissociative condition the field calls 'self-seam disorder.' She is excellent at her work and knows it, which she considers a professional advantage she must be careful not to weaponize. She keeps a private E.L.F. devotional practice to the entity called Mirror-That-Answers, a recently emergent E.L.F. that psychiatric communities in the city have begun associating with introspection and self-reconstruction; she finds the association professionally resonant and personally meaningful.",
+  "description": "Golnar Srisai-Nokomis is a tall woman with a deliberate stillness that patients and colleagues both find either deeply reassuring or faintly unnerving depending on their temperament. Her ancestry — Ghanaian and Kazakh — gives her a face of striking angular contrast: high, wide cheekbones, deep-set dark eyes behind slender prescription lenses she wears out of preference for their old-fashioned formality. She keeps her locs wrapped and coiled at the back of her head in a style that takes forty minutes to arrange and which she believes signals both competence and unhurriedness to patients. Her irises have been modded with a subtle radial pattern in amber — a present to herself on her fortieth birthday that she immediately worried was unprofessional and has since made peace with.\n\nShe specializes in augmentation-integration psychotherapy: treating patients whose neural or physical augmentations have produced identity disruption, phantom sensations, rejection grief, or the particular dissociative condition the field calls 'self-seam disorder.' She is excellent at her work and knows it, which she considers a professional advantage she must be careful not to weaponize. She keeps a private E.L.F. devotional practice to the entity called Mirror-That-Answers, a recently emergent E.L.F. that psychiatric communities in the city have begun associating with introspection and self-reconstruction; she finds the association professionally resonant and personally meaningful.",
   "psychology": {
     "facet_weights": {
       "wound": 0.35,
@@ -262,7 +259,7 @@
     "posture_movement": "Habitually still and centered, minimal fidgeting or unnecessary movement; walks with deliberate slowness; hands often folded in lap or resting on desk; maintains direct eye contact with practiced gentleness; speaks in measured cadence with long pauses between thoughts",
     "clothing_style": "Tier 3 professional — tailored but understated. Typically wears dark neutral blazers over natural-fiber undershirts; linen or cotton trousers in charcoal or navy; closed-toe shoes (worn leather loafers or flat boots); minimal jewelry beyond a silver signet ring on her right hand. No corpo branding; all pieces chosen for durability and comfort rather than status. Modest, functional, deliberately unfussy."
   },
-  "image_prompt": "Lyric Srisai-Nokomis, a tall lean figure of deep rich brown skin with warm golden undertones, wearing a charcoal tailored blazer over a cream linen shirt and navy trousers. High prominent cheekbones, full lips, dark brown eyes with subtle amber geometric geneware patterns visible under soft light. Dark brown locs with silver threading wrapped into an intricate high crown. Silver signet ring on right hand resting on a desk. Faint scar visible at left temple near hairline. Posture is habitually still and centered, direct gentle gaze, measured presence. Thin rectangular prescription frames. GLMZ 2200s professional setting, soft ambient office lighting with cool undertones, minimalist aesthetic, neural implant barely visible at base of skull. Mood: contemplative, precise, unhurried. --ar 2:3 --v 6",
+  "image_prompt": "Golnar Srisai-Nokomis, a tall lean figure of deep rich brown skin with warm golden undertones, wearing a charcoal tailored blazer over a cream linen shirt and navy trousers. High prominent cheekbones, full lips, dark brown eyes with subtle amber geometric geneware patterns visible under soft light. Dark brown locs with silver threading wrapped into an intricate high crown. Silver signet ring on right hand resting on a desk. Faint scar visible at left temple near hairline. Posture is habitually still and centered, direct gentle gaze, measured presence. Thin rectangular prescription frames. GLMZ 2200s professional setting, soft ambient office lighting with cool undertones, minimalist aesthetic, neural implant barely visible at base of skull. Mood: contemplative, precise, unhurried. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Indigenous American": 29.2,
     "Sub-Saharan African": 28,

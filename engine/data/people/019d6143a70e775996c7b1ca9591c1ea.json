@@ -2,10 +2,7 @@
   "id": "019d6143a70e775996c7b1ca9591c1ea",
   "type": "character",
   "name": "Bertha Touré-Najjar",
-  "aliases": [
-    "Slate Touré-Najjar",
-    "Slate"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 41,
   "status": "active",
   "location": "Gravesend Basin, operating out of a decommissioned Ferrogate Transit maintenance shed, near Ashland and Chicago Ave",
-  "description": "Slate Touré-Najjar is a broad-shouldered woman with the particular kind of calm that comes from having done terrible things enough times that they no longer register as remarkable. Her skin is deep brown and unmarked except for a long scar along her left jaw that she refuses to have cosmetically repaired — a reminder, she says, to stay humble. Her hair is cut close on the sides and left natural on top, shot through with gray she doesn't bother hiding. She wears surgical-grade contact lenses that tint her irises pale gold, useful for the magnification assists built into the lens substrate. She moves with the unhurried efficiency of a woman who has learned that urgency creates mistakes.\n\nShe was a licensed surgical technician for Aurochs Medical Complex for eleven years before a licensing dispute — she maintains it was fabricated by a superior who wanted her caseload — ended her legitimate career. She drifted sideways into the gray market, then further. Now she runs a small but reliable operation: procurement, preservation, brokerage. She tells herself she mostly sources from consenting donors and the already-dead, and this is true often enough that she can sleep. She is professional, fair by the standards of Gravesend Basin, and genuinely good at her work. The horror of her trade does not read on her face.",
+  "description": "Bertha Touré-Najjar is a broad-shouldered woman with the particular kind of calm that comes from having done terrible things enough times that they no longer register as remarkable. Her skin is deep brown and unmarked except for a long scar along her left jaw that she refuses to have cosmetically repaired — a reminder, she says, to stay humble. Her hair is cut close on the sides and left natural on top, shot through with gray she doesn't bother hiding. She wears surgical-grade contact lenses that tint her irises pale gold, useful for the magnification assists built into the lens substrate. She moves with the unhurried efficiency of a woman who has learned that urgency creates mistakes.\n\nShe was a licensed surgical technician for Aurochs Medical Complex for eleven years before a licensing dispute — she maintains it was fabricated by a superior who wanted her caseload — ended her legitimate career. She drifted sideways into the gray market, then further. Now she runs a small but reliable operation: procurement, preservation, brokerage. She tells herself she mostly sources from consenting donors and the already-dead, and this is true often enough that she can sleep. She is professional, fair by the standards of Gravesend Basin, and genuinely good at her work. The horror of her trade does not read on her face.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -259,7 +256,7 @@
     "Chicago",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Arcturus KS-7 'Nursery'",
-    "Slate",
+    "Bertha",
     "SynapTech ReadRoom Social Cue Enhancer",
     "The Pale Mile",
     "Gold"
@@ -283,7 +280,7 @@
     "posture_movement": "Moves with deliberate economy — no wasted motion, no unnecessary speed. Hands are always slightly relaxed and ready. Eyes register everything. Sits upright. When she pauses, she becomes still in a way that reads as attentiveness rather than idleness.",
     "clothing_style": "Practical Tier 4 workwear: surgical-grade gray-blue scrubs under a weathered black synthleather apron with deep pockets, kept obsessively clean. Insulated field jacket in dark charcoal for transport work. Steel-toed boots, well-maintained. No jewelry. Clothing prioritizes function and easy sterilization over appearance. Everything fits precisely."
   },
-  "image_prompt": "Slate Touré-Najjar, 178cm surgical specialist in 2226, deep warm-brown skin with multivalent undertones blending Sub-Saharan African, Southeast Asian, and East Asian heritage. Angular, geometric cheekbones, subtle Middle Eastern refinement, natural dark brown eyes behind pale gold surgical magnification lenses. Black hair with salt-gray threading, undercut style — shaved sides, full natural texture on crown. Thin precise scar along left jawline. Muscular, broad-shouldered frame. Wearing surgical-grade gray-blue scrubs under weathered black synthleather apron, dark charcoal insulated jacket, steel-toed boots. Faint metallic scarring on hands from haptic feedback nodes, subdermal thermal discoloration visible on left forearm. Utterly composed, efficient posture, hands slightly ready. GLMZ GLMZ setting, clinical lighting, hyper-competent surgical professional aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Bertha Touré-Najjar, 178cm surgical specialist in 2226, deep warm-brown skin with multivalent undertones blending Sub-Saharan African, Southeast Asian, and East Asian heritage. Angular, geometric cheekbones, subtle Middle Eastern refinement, natural dark brown eyes behind pale gold surgical magnification lenses. Black hair with salt-gray threading, undercut style — shaved sides, full natural texture on crown. Thin precise scar along left jawline. Muscular, broad-shouldered frame. Wearing surgical-grade gray-blue scrubs under weathered black synthleather apron, dark charcoal insulated jacket, steel-toed boots. Faint metallic scarring on hands from haptic feedback nodes, subdermal thermal discoloration visible on left forearm. Utterly composed, efficient posture, hands slightly ready. GLMZ GLMZ setting, clinical lighting, hyper-competent surgical professional aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 63,
     "Southeast Asian": 11.8,

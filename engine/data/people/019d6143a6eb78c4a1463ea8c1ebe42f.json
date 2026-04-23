@@ -2,10 +2,7 @@
   "id": "019d6143a6eb78c4a1463ea8c1ebe42f",
   "type": "character",
   "name": "Hatice Nygaard",
-  "aliases": [
-    "Isadora Nygaard",
-    "Isadora"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 38,
   "status": "active",
   "location": "Deepwell Station, subterranean Ferrogate Transit maintenance corridors beneath Geartown, near sub-level access near State and Van Buren",
-  "description": "Isadora Nygaard is a lean, medium-height man with warm ochre skin, close-cropped hair going early gray at the temples, and the particular stillness of someone who has spent a lot of time in confined spaces where noise carries badly. His eyes are a natural dark brown but he has a set of patterned irises — concentric geometric rings, copper and black — that were a gift from a coworker years ago and that he wears with quiet pride. His left forearm is sleeved in a standard Ferrogate-issue haptic interface overlay, which lets him read the tunnel's sensor grid through his skin. He smells faintly of machine oil and ozone regardless of how recently he showered.\n\nIsadora Nygaard communicates in minimal but precise sentences and has an almost eerie patience with complex mechanical problems. He is not cold — he laughs genuinely, and he will help without being asked — but he finds social performance exhausting and makes little effort to seem warm to people he doesn't know yet. He has developed a private relationship with the E.L.F.s that inhabit Deepwell Station's infrastructure, leaving data offerings of ambient tunnel-sound recordings, and he believes — privately, without urgency — that the tunnels are slowly becoming aware of themselves as a single thing.",
+  "description": "Hatice Nygaard is a lean, medium-height man with warm ochre skin, close-cropped hair going early gray at the temples, and the particular stillness of someone who has spent a lot of time in confined spaces where noise carries badly. His eyes are a natural dark brown but he has a set of patterned irises — concentric geometric rings, copper and black — that were a gift from a coworker years ago and that he wears with quiet pride. His left forearm is sleeved in a standard Ferrogate-issue haptic interface overlay, which lets him read the tunnel's sensor grid through his skin. He smells faintly of machine oil and ozone regardless of how recently he showered.\n\nHatice Nygaard communicates in minimal but precise sentences and has an almost eerie patience with complex mechanical problems. He is not cold — he laughs genuinely, and he will help without being asked — but he finds social performance exhausting and makes little effort to seem warm to people he doesn't know yet. He has developed a private relationship with the E.L.F.s that inhabit Deepwell Station's infrastructure, leaving data offerings of ambient tunnel-sound recordings, and he believes — privately, without urgency — that the tunnels are slowly becoming aware of themselves as a single thing.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -264,7 +261,7 @@
     "posture_movement": "Economical and deliberate movement; walks with the careful balance of someone navigating narrow catwalks and low tunnels; stands with slight forward lean as if listening to something. Stillness is default state — does not fidget or perform energy.",
     "clothing_style": "Tier 4 working-class utilitarian: Ferrogate Transit-issued gray-blue coveralls with reflective piping and multiple utility pockets, worn but well-maintained. Under-layer is a black thermal mesh shirt. Work boots are reinforced with steel toe and grip soles, scuffed from tunnel work. No jewelry except a battered analog watch on right wrist. Carries a Ferrogate-issued toolkit on a worn canvas belt. No corporate logos or status markers — pure function."
   },
-  "image_prompt": "Isadora Nygaard, 173cm tall, lean muscular underground transit worker, deep warm golden-brown skin with olive-amber undertones, slightly widened South Asian cheekbones, defined Northern European jaw, dark brown hair close-cropped with gray at temples, augmented eyes with copper-and-black concentric geometric rings, calm patient expression, slight forward lean posture. Left forearm displays semi-transparent Ferrogate haptic interface overlay with visible circuitry and bioluminescent readouts. Wearing gray-blue Ferrogate Transit coveralls with reflective piping over black thermal mesh, reinforced steel-toe work boots, worn canvas tool belt, battered analog watch. Standing in dimly-lit underground tunnel with industrial lighting, still and economical bearing, surrounded by machinery and metal frameworks. GLMZ, nocturnal underground aesthetic, cool blue-gray industrial lighting with warm practical work lights, rich atmospheric shadows. --ar 2:3 --v 6",
+  "image_prompt": "Hatice Nygaard, 173cm tall, lean muscular underground transit worker, deep warm golden-brown skin with olive-amber undertones, slightly widened South Asian cheekbones, defined Northern European jaw, dark brown hair close-cropped with gray at temples, augmented eyes with copper-and-black concentric geometric rings, calm patient expression, slight forward lean posture. Left forearm displays semi-transparent Ferrogate haptic interface overlay with visible circuitry and bioluminescent readouts. Wearing gray-blue Ferrogate Transit coveralls with reflective piping over black thermal mesh, reinforced steel-toe work boots, worn canvas tool belt, battered analog watch. Standing in dimly-lit underground tunnel with industrial lighting, still and economical bearing, surrounded by machinery and metal frameworks. GLMZ, nocturnal underground aesthetic, cool blue-gray industrial lighting with warm practical work lights, rich atmospheric shadows. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 45.3,
     "Northern European": 22.7,

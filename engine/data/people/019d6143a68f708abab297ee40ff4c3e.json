@@ -2,10 +2,7 @@
   "id": "019d6143a68f708abab297ee40ff4c3e",
   "type": "character",
   "name": "Hanan Chakraborty-Thorvaldsdóttir",
-  "aliases": [
-    "Farhan Chakraborty-Thorvaldsdóttir",
-    "Farhan"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 11,
   "status": "active",
   "location": "the Gray Zone, Blackpipe Corridor, near Pulaski and Chicago Ave",
-  "description": "Farhan Chakraborty-Thorvaldsdóttir is small even for eleven, with deep umber skin, a gap-toothed grin she's not shy about, and natural hair sectioned into uneven puffs held together by whatever elastic she could find that morning. Her eyes are quick and dark, always cataloguing exits. She wears a patchwork jacket she stitched herself from three dead jackets — hence the alias — with pockets sewn into places no tailor would think of: the lining of the hood, behind the collar, inside the cuffs. She smells faintly of the solvent she uses to peel address-tags off packages.\n\nFarhan Chakraborty-Thorvaldsdóttir is relentlessly cheerful in a way that unsettles adults who look closely enough to see how deliberate it is. She learned early that a smiling kid gets waved through checkpoints a sullen one does not. She collects information the way other children collect toys — who owes whom, which corridor the Ferrogate patrol skips at shift change, whose E.L.F. shrine is still active in the Blackpipe utility alcove — and she stores it all behind that gap-toothed smile. She is fiercely protective of the two younger kids she runs messages with, and will not admit this even to herself.",
+  "description": "Hanan Chakraborty-Thorvaldsdóttir is small even for eleven, with deep umber skin, a gap-toothed grin she's not shy about, and natural hair sectioned into uneven puffs held together by whatever elastic she could find that morning. Her eyes are quick and dark, always cataloguing exits. She wears a patchwork jacket she stitched herself from three dead jackets — hence the alias — with pockets sewn into places no tailor would think of: the lining of the hood, behind the collar, inside the cuffs. She smells faintly of the solvent she uses to peel address-tags off packages.\n\nHanan Chakraborty-Thorvaldsdóttir is relentlessly cheerful in a way that unsettles adults who look closely enough to see how deliberate it is. She learned early that a smiling kid gets waved through checkpoints a sullen one does not. She collects information the way other children collect toys — who owes whom, which corridor the Ferrogate patrol skips at shift change, whose E.L.F. shrine is still active in the Blackpipe utility alcove — and she stores it all behind that gap-toothed smile. She is fiercely protective of the two younger kids she runs messages with, and will not admit this even to herself.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -200,7 +197,7 @@
     "posture_movement": "Constantly in motion even when standing still—weight shifts between feet, eyes cataloguing exits and sightlines, hands restless. Moves with economical precision through crowded spaces; no wasted energy. Smile deployed deliberately, switching on and off like a data toggle.",
     "clothing_style": "Signature patchwork jacket assembled from three salvaged jackets—tan synthleather, faded blue denim, charcoal poly-blend—stitched together with visible black thread in chaotic patchwork. Pockets everywhere: hood lining, collar reverse, cuff interiors, thigh patches. Underneath: cheap long-sleeve thermal to cut solvent contact. Tier 5 scavenger aesthetic: everything repurposed, nothing new, all functional."
   },
-  "image_prompt": "GLMZ portrait of Farhan, a 135cm tall young street courier with mixed Northern European, South Asian, and Eastern European ancestry. Medium warm brown skin with golden undertones and matte finish from indoor living. High angular cheekbones, gap-toothed smile, thin scar on left cheek. Dark alert eyes. Natural black hair in uneven puffs tied with mismatched elastics. Wearing a chaotic patchwork jacket made from tan synthleather, faded blue denim, and charcoal poly-blend, heavily patched and stitched with black thread, covered in visible salvage pockets. Long-sleeve cheap thermal underneath. Chemical stains on fingernails, callus marks on grip fingers, small burn scar on inner wrist. Slight wiry build, constantly restless posture. Great Lakes Metropolitan Zone Tier 5 scavenger aesthetic. Neon-lit underpass or warehouse setting, cool LED lighting casting shadows across angular features. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ portrait of Hanan, a 135cm tall young street courier with mixed Northern European, South Asian, and Eastern European ancestry. Medium warm brown skin with golden undertones and matte finish from indoor living. High angular cheekbones, gap-toothed smile, thin scar on left cheek. Dark alert eyes. Natural black hair in uneven puffs tied with mismatched elastics. Wearing a chaotic patchwork jacket made from tan synthleather, faded blue denim, and charcoal poly-blend, heavily patched and stitched with black thread, covered in visible salvage pockets. Long-sleeve cheap thermal underneath. Chemical stains on fingernails, callus marks on grip fingers, small burn scar on inner wrist. Slight wiry build, constantly restless posture. Great Lakes Metropolitan Zone Tier 5 scavenger aesthetic. Neon-lit underpass or warehouse setting, cool LED lighting casting shadows across angular features. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Northern European": 39.2,
     "South Asian": 38.6,

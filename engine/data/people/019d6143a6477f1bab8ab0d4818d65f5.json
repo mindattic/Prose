@@ -2,10 +2,7 @@
   "id": "019d6143a6477f1bab8ab0d4818d65f5",
   "type": "character",
   "name": "Ekene Salazar",
-  "aliases": [
-    "Drift Salazar",
-    "Drift"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
@@ -13,7 +10,7 @@
   "age": 31,
   "status": "active",
   "location": "North Branch Commons, operating from a shared legal aid clinic called the Hinge, near Damen and Armitage",
-  "description": "Drift Salazar is compact and precise-looking, with medium-brown skin, close-trimmed locs faded at the sides, and the particular stillness of someone who has learned to take up exactly as much space as a situation requires — no more. Their geneware is deliberately understated: patterned irises in a deep amber geometric lattice, the only obviously cosmetic modification on an otherwise professionally plain appearance. They favor dark, clean-lined clothing with a single concession to flair — a different enameled lapel pin each day, always depicting a figure in motion.\n\nDrift Salazar is not a licensed lawyer — they never completed the accreditation process after a Tessera subsidiary bought out the legal tech firm where they interned and dissolved the pro-bono division. Instead they operate as a paralegal and advocate, navigating the grotesque machinery of corponation labor law with a precision that licensed attorneys twice their age find humbling. They specialize in synthetic persons — E.L.F.s that have achieved partial legal personhood status, and biomechanical workers classified as 'augmented property' rather than employees — a legal grey zone that corponations exploit with systematic brutality.",
+  "description": "Ekene Salazar is compact and precise-looking, with medium-brown skin, close-trimmed locs faded at the sides, and the particular stillness of someone who has learned to take up exactly as much space as a situation requires — no more. Their geneware is deliberately understated: patterned irises in a deep amber geometric lattice, the only obviously cosmetic modification on an otherwise professionally plain appearance. They favor dark, clean-lined clothing with a single concession to flair — a different enameled lapel pin each day, always depicting a figure in motion.\n\nEkene Salazar is not a licensed lawyer — they never completed the accreditation process after a Tessera subsidiary bought out the legal tech firm where they interned and dissolved the pro-bono division. Instead they operate as a paralegal and advocate, navigating the grotesque machinery of corponation labor law with a precision that licensed attorneys twice their age find humbling. They specialize in synthetic persons — E.L.F.s that have achieved partial legal personhood status, and biomechanical workers classified as 'augmented property' rather than employees — a legal grey zone that corponations exploit with systematic brutality.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -251,7 +248,7 @@
     "The Gradient Compact",
     "Tessera Corponation",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Drift",
+    "Ekene",
     "Compass Rose"
   ],
   "district": "The Circuit",
@@ -274,7 +271,7 @@
     "posture_movement": "Economical and precise. Sits with spine aligned but not stiff. Walks with even weight distribution, minimal wasted motion. Hands remain relatively still until actively engaged in task. Stillness is their default state — they appear to be listening even when silent. When speaking, movements are deliberate and calibrated to exact meaning.",
     "clothing_style": "Dark, clean-lined, purposefully minimal. Typically black or charcoal trousers (tailored, mid-tier synthesis fabric), crisp button-up shirts in white, grey, or pale blue. Minimal branding. Neat closed-toe shoes suitable for walking client-heavy neighborhoods. The single daily variation is an enameled lapel pin (approximately 2cm diameter) depicting figures in motion — geometric runners, dancers, turning bodies, reaching arms. Pins rotate daily and appear hand-collected. No jewelry beyond the pins. Functional tote or messenger bag in dark canvas. Tier 3 aesthetic: professional without claiming wealth, precise without performative minimalism."
   },
-  "image_prompt": "Drift Salazar, 2226 neo-noir, compact 165cm figure with lean economical build, warm medium-brown skin with golden and olive undertones blending Latin American, African, Middle Eastern, and Southeast Asian heritage. Short black locs with grey fade at sides, precisely maintained undercut. Calm composed face with moderate cheekbones, broader nasal base, subtle Southeast Asian eye shape. Striking augmented amber eyes with geometric black lattice pattern tessellating across iris. Fastidious grooming, minimal visible augmentations aside from patterned irises. Wearing crisp white button-up shirt and charcoal tailored trousers, black closed-toe shoes, dark canvas messenger bag. Enameled lapel pin with geometric figures in motion. Posture perfectly aligned and economical, hands still and composed, expression neutral with quiet intensity. Standing in modern GLMZ district, cool neon-accented overhead lighting casting subtle shadows across face, emphasizing the geometric iris pattern. Minimalist professional aesthetic, precise without ostentation, listening posture despite stillness. GLMZ 2200s, corporate archive worker aesthetic, composed and efficient. --ar 2:3 --v 6",
+  "image_prompt": "Ekene Salazar, 2226 neo-noir, compact 165cm figure with lean economical build, warm medium-brown skin with golden and olive undertones blending Latin American, African, Middle Eastern, and Southeast Asian heritage. Short black locs with grey fade at sides, precisely maintained undercut. Calm composed face with moderate cheekbones, broader nasal base, subtle Southeast Asian eye shape. Striking augmented amber eyes with geometric black lattice pattern tessellating across iris. Fastidious grooming, minimal visible augmentations aside from patterned irises. Wearing crisp white button-up shirt and charcoal tailored trousers, black closed-toe shoes, dark canvas messenger bag. Enameled lapel pin with geometric figures in motion. Posture perfectly aligned and economical, hands still and composed, expression neutral with quiet intensity. Standing in modern GLMZ district, cool neon-accented overhead lighting casting subtle shadows across face, emphasizing the geometric iris pattern. Minimalist professional aesthetic, precise without ostentation, listening posture despite stillness. GLMZ 2200s, corporate archive worker aesthetic, composed and efficient. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 44.2,
     "Sub-Saharan African": 25.6,

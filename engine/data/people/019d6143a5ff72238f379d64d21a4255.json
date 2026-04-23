@@ -2,10 +2,7 @@
   "id": "019d6143a5ff72238f379d64d21a4255",
   "type": "character",
   "name": "Firdaus Matai-Fassi",
-  "aliases": [
-    "Frost Matai-Fassi",
-    "Frost"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
@@ -13,7 +10,7 @@
   "age": 29,
   "status": "active",
   "location": "The Garret, rents a room in a converted water tower shared with five others, near Damen and Armitage",
-  "description": "Frost Matai-Fassi moves through spaces with the particular quality of someone who is always listening — head slightly tilted, eyes unfocused, processing acoustic information before visual. Their Igbo-Polish-Malagasy heritage has produced a face that strangers frequently find difficult to read and then realize they've been trying to categorize incorrectly: a long jaw, widely-spaced dark eyes with yellow-ringed irises (geneware, chosen deliberately to resemble a secondary predator), skin the deep warm brown of their father's Igbo family with the occasional Malagasy undertone that shifts in certain light. Their hair is shaved close at the temples and maintained in a structured vertical ridge down the center that they dye in bands of frequency-reactive pigment — it shifts color with ambient sound, which means at their own sets it becomes a visual instrument.\n\nFrost Matai-Fassi does not play music so much as engineer environments. Their sets at the Garret's underground circuit are classified by regular attendees as physically affecting — subsonic layers, frequencies that produce specific emotional states, structures that take an hour to resolve and leave people feeling like they've been somewhere. They are precise about sound in the way a surgeon is precise about incision, and they have a corresponding social bluntness — they find small talk genuinely effortful and do not produce it. People who understand what they do treat them with considerable respect. People who don't frequently mistake their quietness for shyness, which is incorrect.",
+  "description": "Firdaus Matai-Fassi moves through spaces with the particular quality of someone who is always listening — head slightly tilted, eyes unfocused, processing acoustic information before visual. Their Igbo-Polish-Malagasy heritage has produced a face that strangers frequently find difficult to read and then realize they've been trying to categorize incorrectly: a long jaw, widely-spaced dark eyes with yellow-ringed irises (geneware, chosen deliberately to resemble a secondary predator), skin the deep warm brown of their father's Igbo family with the occasional Malagasy undertone that shifts in certain light. Their hair is shaved close at the temples and maintained in a structured vertical ridge down the center that they dye in bands of frequency-reactive pigment — it shifts color with ambient sound, which means at their own sets it becomes a visual instrument.\n\nFirdaus Matai-Fassi does not play music so much as engineer environments. Their sets at the Garret's underground circuit are classified by regular attendees as physically affecting — subsonic layers, frequencies that produce specific emotional states, structures that take an hour to resolve and leave people feeling like they've been somewhere. They are precise about sound in the way a surgeon is precise about incision, and they have a corresponding social bluntness — they find small talk genuinely effortful and do not produce it. People who understand what they do treat them with considerable respect. People who don't frequently mistake their quietness for shyness, which is incorrect.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -235,7 +232,7 @@
     "Irkalla",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Nesting Doll",
-    "Frost",
+    "Firdaus",
     "Zheng-Dao Heavy Industries Space Elevator Tether System"
   ],
   "district": "The Circuit",
@@ -258,7 +255,7 @@
     "posture_movement": "Moves with deliberate, economical precision. Head frequently tilted at slight angle as if listening to distant sound. Eyes unfocused or gazing past immediate surroundings. Rarely makes unnecessary gestures. When standing still, weight balanced evenly. When walking, movement is fluid but purposeful, not casual. Minimal fidgeting. Gives impression of someone internally focused, processing invisible data.",
     "clothing_style": "Tier 2 working-artist aesthetic with deliberate sonic/technical elements. Favors sleeveless or mesh-back garments to display haptic feedback array and allow skin contact with air for acoustic sensitivity. Primary colors: blacks, deep greys, occasionally matte metallics. Clothing is well-maintained but not luxurious—functional, modular pieces from mid-range corpo brands. Often wears a custom rig vest with integrated haptic feedback visualization (LEDs that mirror the subdermal array's activation patterns). Minimalist jewelry: small geometric earrings or ear cuffs that complement the hairline tattoos. Footwear is practical—modified boots with enhanced grip for standing long hours at equipment."
   },
-  "image_prompt": "Frost Matai-Fassi, GLMZ, lean angular figure with warm medium-brown luminous skin blending Pacific Islander, North African, and Indigenous American heritage. High cheekbones, defined jawline, widely-spaced dark eyes with distinctive bright yellow iris rings (geneware modification). Black hair with frequency-reactive purple-teal-magenta pigment bands forming vertical ridge down center, shaved temples exposing geometric hairline frequency-waveform tattoos. Sleeveless mesh-back technical rig vest in black and matte grey displaying subdermal haptic feedback array on upper back and shoulders (subtle surface texture variation visible). Minimalist geometric earrings complementing tattoos. Modified boots with enhanced grip. Head tilted as if listening, expression neutral and internally focused, eyes slightly unfocused as if processing invisible data. Cochlear implant ports visible behind ears. Standing in urban sonic workspace with ambient acoustic lighting, atmospheric synth glow, GLMZ 2200s aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Firdaus Matai-Fassi, GLMZ, lean angular figure with warm medium-brown luminous skin blending Pacific Islander, North African, and Indigenous American heritage. High cheekbones, defined jawline, widely-spaced dark eyes with distinctive bright yellow iris rings (geneware modification). Black hair with frequency-reactive purple-teal-magenta pigment bands forming vertical ridge down center, shaved temples exposing geometric hairline frequency-waveform tattoos. Sleeveless mesh-back technical rig vest in black and matte grey displaying subdermal haptic feedback array on upper back and shoulders (subtle surface texture variation visible). Minimalist geometric earrings complementing tattoos. Modified boots with enhanced grip. Head tilted as if listening, expression neutral and internally focused, eyes slightly unfocused as if processing invisible data. Cochlear implant ports visible behind ears. Standing in urban sonic workspace with ambient acoustic lighting, atmospheric synth glow, GLMZ 2200s aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Pacific Islander": 54,
     "North African": 28.5,

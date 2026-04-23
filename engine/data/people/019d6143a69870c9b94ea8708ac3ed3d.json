@@ -2,10 +2,7 @@
   "id": "019d6143a69870c9b94ea8708ac3ed3d",
   "type": "character",
   "name": "Banafsheh Valenzuela",
-  "aliases": [
-    "Vale Valenzuela",
-    "Vale"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 51,
   "status": "active",
   "location": "Deepwell Station depot, Route 14 loop, near sub-level access near LaSalle and Congress",
-  "description": "Vale Valenzuela is a heavy, deliberate man with a broad forehead, close-trimmed gray beard, and the particular kind of stillness that comes from spending twenty-two years driving the same route through the same city. His skin is dark brown and weathered from the years before he got the depot job, when he worked outdoor shifts in all weather. He has no cosmetic mods and refuses them on principle, though he doesn't lecture anyone about it. His Ferrogate uniform fits him like a second skin — he irons it himself, every morning — and his driver's cabin is decorated with a string of hand-painted prayer beads from his Ghanaian grandmother's tradition, a small paper icon from the Orthodox Easter tradition of his Russian grandfather's family, and a data tablet loaded with offerings for the route's E.L.F., which he calls 'the Conductor.'\n\nVale Valenzuela has driven Route 14 long enough that he's watched the neighborhoods it passes through be demolished, rebuilt, flooded, rezoned, and gentrified. He carries this history with a kind of weathered grief that is not bitterness — he has made his peace with impermanence in the abstract while remaining entirely resistant to it in the specific. He knows his regulars by name and schedule, and when they stop appearing, he notices. He is not a man who talks much, but when he does, people listen — there is a gravity to him that age and consistency have built.",
+  "description": "Banafsheh Valenzuela is a heavy, deliberate man with a broad forehead, close-trimmed gray beard, and the particular kind of stillness that comes from spending twenty-two years driving the same route through the same city. His skin is dark brown and weathered from the years before he got the depot job, when he worked outdoor shifts in all weather. He has no cosmetic mods and refuses them on principle, though he doesn't lecture anyone about it. His Ferrogate uniform fits him like a second skin — he irons it himself, every morning — and his driver's cabin is decorated with a string of hand-painted prayer beads from his Ghanaian grandmother's tradition, a small paper icon from the Orthodox Easter tradition of his Russian grandfather's family, and a data tablet loaded with offerings for the route's E.L.F., which he calls 'the Conductor.'\n\nBanafsheh Valenzuela has driven Route 14 long enough that he's watched the neighborhoods it passes through be demolished, rebuilt, flooded, rezoned, and gentrified. He carries this history with a kind of weathered grief that is not bitterness — he has made his peace with impermanence in the abstract while remaining entirely resistant to it in the specific. He knows his regulars by name and schedule, and when they stop appearing, he notices. He is not a man who talks much, but when he does, people listen — there is a gravity to him that age and consistency have built.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -214,7 +211,7 @@
     "posture_movement": "Upright, deliberate, economical in gesture. Moves with the slow certainty of someone who has spent decades in confined spaces and knows every inch of his territory. Stands still when listening — no fidgeting. Hands at rest or engaged in purposeful tasks; never idle.",
     "clothing_style": "Ferrogate Transit regulation uniform (dark navy base layer, lighter blue overshirt with reflective piping, company logo centered on chest). Uniform is immaculately maintained — creases sharp, fabric lint-free, buttons polished. Black work boots, well-worn but clean. Wears a simple analog watch (brass, vintage-style) on left wrist alongside the ID badge on a lanyard. A woven cord bracelet — prayer beads from his grandmother — visible on right wrist. Tier 4 working-class grooming: functional, dignified, no affectation."
   },
-  "image_prompt": "Vale Valenzuela, 183cm tall broad-shouldered transit operator with warm medium-deep brown skin blending Southeast Asian, Middle Eastern, and Hispanic heritage. Dark gray close-trimmed beard, deep-set dark brown eyes with faint amber retinal overlay glow. Immaculate Ferrogate Transit navy and light blue uniform with reflective piping, polished buttons, black work boots. Brass vintage watch on left wrist, woven prayer bead bracelet on right wrist. Pale 12cm burn scar visible on inner left forearm. Faded Adinkra symbol tattoo on right inner wrist. Upright posture, focused expression, standing in dimly-lit transit depot with overhead industrial lighting. GLMZ, gritty working-class dignity, realistic character portrait, --ar 2:3 --v 6",
+  "image_prompt": "Banafsheh Valenzuela, 183cm tall broad-shouldered transit operator with warm medium-deep brown skin blending Southeast Asian, Middle Eastern, and Hispanic heritage. Dark gray close-trimmed beard, deep-set dark brown eyes with faint amber retinal overlay glow. Immaculate Ferrogate Transit navy and light blue uniform with reflective piping, polished buttons, black work boots. Brass vintage watch on left wrist, woven prayer bead bracelet on right wrist. Pale 12cm burn scar visible on inner left forearm. Faded Adinkra symbol tattoo on right inner wrist. Upright posture, focused expression, standing in dimly-lit transit depot with overhead industrial lighting. GLMZ, gritty working-class dignity, realistic character portrait, --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Southeast Asian": 29.6,
     "Middle Eastern": 25.8,

@@ -2,10 +2,7 @@
   "id": "019d6143a67c7dd896762715db8e2d80",
   "type": "character",
   "name": "Hadia Kjellberg-Björnsdóttir",
-  "aliases": [
-    "Elsa Kjellberg-Björnsdóttir",
-    "Elsa"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 52,
   "status": "active",
   "location": "Hamtramck Enclave, corner of the Brewer's Spine transit junction, near Ashland and Chicago Ave",
-  "description": "Elsa Kjellberg-Björnsdóttir is a broad-shouldered woman whose face is a topographic map of decades in open-air heat and cold — deep laugh lines, a permanent squint from watching steam rise, skin the color of dark teak that goes ashy at the knuckles. Her hair is close-cropped and she has a geneware patch of bioluminescent freckles across her nose and cheekbones, a gift to herself on her fortieth birthday that she's never stopped being quietly pleased about. She moves with the unhurried authority of someone who has run the same twelve square feet of pavement for twenty years and knows exactly how much space she needs.\n\nShe is warm in the way that efficient people are warm — she remembers your order, not your name, but she'll ask about your knee or your kid with total sincerity. She has strong opinions about broth clarity and almost no opinions about politics, which is a deliberate policy. The cart is named 'Auntie' on the permit but nobody calls it that. They call it Oge's, and the regulars consider that a kind of citizenship.",
+  "description": "Hadia Kjellberg-Björnsdóttir is a broad-shouldered woman whose face is a topographic map of decades in open-air heat and cold — deep laugh lines, a permanent squint from watching steam rise, skin the color of dark teak that goes ashy at the knuckles. Her hair is close-cropped and she has a geneware patch of bioluminescent freckles across her nose and cheekbones, a gift to herself on her fortieth birthday that she's never stopped being quietly pleased about. She moves with the unhurried authority of someone who has run the same twelve square feet of pavement for twenty years and knows exactly how much space she needs.\n\nShe is warm in the way that efficient people are warm — she remembers your order, not your name, but she'll ask about your knee or your kid with total sincerity. She has strong opinions about broth clarity and almost no opinions about politics, which is a deliberate policy. The cart is named 'Auntie' on the permit but nobody calls it that. They call it Oge's, and the regulars consider that a kind of citizenship.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -200,7 +197,7 @@
     "posture_movement": "Moves with unhurried efficiency — economical, deliberate. She doesn't gesture much, but when she does it's precise. Stands with weight balanced on both feet, ready to move in any direction. Her hands are always in use or ready. She makes direct eye contact and holds it without aggression — the gaze of someone accustomed to reading the faces of tired people ordering breakfast.",
     "clothing_style": "Tier 4 working-class practical. Loose dark linen tunic or long-sleeved shirt, rolled to the elbows (shows the reinforced wrists), black or dark gray cargo trousers with deep pockets. Worn synthetic-leather apron over everything, stained with old broth splashes and marked by years of use. Rubber-soled work clogs with reinforced toe caps. A headwrap or scarf on cold mornings. No jewelry except a simple stainless steel wedding band. No visible logos or corp branding."
   },
-  "image_prompt": "GLMZ, portrait of Elsa Kjellberg-Björnsdóttir, a 168cm broad-shouldered Scandinavian-Southeast Asian-East Asian woman with fair cool-toned skin warming to peachy-gold across cheekbones, deeply lined weathered face with laugh lines and prominent bioluminescent blue freckles scattered across nose and cheekbones glowing faintly in dimlight, short black hair with iron-gray temples, deep warm brown eyes with crow's feet, wearing dark rolled-sleeve linen shirt exposing wrist augmentations and burn scar, dark cargo trousers, worn synthetic-leather kitchen apron stained from years of work, reinforced rubber-soled clogs, simple steel wedding band, standing with economical balanced posture in a small kitchen space with steam rising, industrial lighting, geneware augmentations visible, working-class practical aesthetic, Great Lakes Metropolitan Zone diner setting, direct gaze, fatigue but dignity --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Hadia Kjellberg-Björnsdóttir, a 168cm broad-shouldered Scandinavian-Southeast Asian-East Asian woman with fair cool-toned skin warming to peachy-gold across cheekbones, deeply lined weathered face with laugh lines and prominent bioluminescent blue freckles scattered across nose and cheekbones glowing faintly in dimlight, short black hair with iron-gray temples, deep warm brown eyes with crow's feet, wearing dark rolled-sleeve linen shirt exposing wrist augmentations and burn scar, dark cargo trousers, worn synthetic-leather kitchen apron stained from years of work, reinforced rubber-soled clogs, simple steel wedding band, standing with economical balanced posture in a small kitchen space with steam rising, industrial lighting, geneware augmentations visible, working-class practical aesthetic, Great Lakes Metropolitan Zone diner setting, direct gaze, fatigue but dignity --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Northern European": 52.8,
     "Southeast Asian": 37.6,

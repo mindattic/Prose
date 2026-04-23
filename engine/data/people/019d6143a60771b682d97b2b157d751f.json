@@ -2,10 +2,7 @@
   "id": "019d6143a60771b682d97b2b157d751f",
   "type": "character",
   "name": "Dieter Sokolov",
-  "aliases": [
-    "Wren Sokolov",
-    "Wren"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 31,
   "status": "active",
   "location": "Burnside Corridor — transit hub connecting the Gray Zone to Circuit, near North Ave and Damen",
-  "description": "Wren Sokolov is lean and angular, all sharp edges and visible tension. At 31, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a sniper out of Burnside Corridor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented sniper in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
+  "description": "Dieter Sokolov is lean and angular, all sharp edges and visible tension. At 31, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — chemical analyzer in nasal passages — can identify substances by scent alone — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a sniper out of Burnside Corridor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented sniper in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.32,
@@ -306,7 +303,7 @@
     "posture_movement": "He moves with economical precision — no wasted motion. His posture is slightly forward-leaning, as if perpetually tracking something. His head tracks slowly, methodically, eyes registering details. When he sits, he positions himself with clear sight lines to exits. There's a stillness to him when focused, an absence of fidgeting or nervous energy. When not focused, he exhibits minor tremors in his hands — either from stimulant use or the edge that chronic pain-dampening creates.",
     "clothing_style": "Tier 4 pragmatist. Dark colors — charcoal, black, deep gray. Worn tactical cargo pants with multiple pockets and reinforced seams, synthetic blend that sheds dirt and dries fast. Layered tops: usually a dark long-sleeve compression shirt under a heavier jacket (synthetic leather or ballistic nylon, no visible branding). Boots are military-grade, scuffed, laces double-knotted. A worn canvas messenger bag (faded black, multiple repair patches) carries his essentials. No jewelry except a faded paracord bracelet on his left wrist. His jacket has several deep pockets and one internal pocket where he keeps dead-drop messages. Everything is functional, nothing is fashionable."
   },
-  "image_prompt": "Wren Sokolov, lean 178cm neo-noir operative, medium tan skin with olive and golden undertones blending Eastern European, South Asian, and North African heritage. Angular face with high Slavic cheekbones, narrow tapering jaw, broader nasal bridge, deep brown eyes with warm undertones. Dark brown hair cut short with slight curl at temples. Faint white scar on left temple partially obscured by hair, pale pink chemical burn scars on right neck side, barely visible chrome shimmer around nostrils and bridge from nasal passage augmentation. Day-old stubble. Wearing dark tactical cargo pants and long-sleeve compression shirt layered under synthetic leather jacket, military-grade boots, worn canvas messenger bag. Paracord bracelet on left wrist, small black crosshair tattoo on inner wrist. Coiled, economical posture with forward lean, methodical head movement, slight hand tremors at rest. GLMZ Great Lakes Metropolitan Zone, neon-lit industrial setting with rain-slicked concrete, moody blue and amber lighting catching chrome augmentations, introspective and dangerous atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Dieter Sokolov, lean 178cm neo-noir operative, medium tan skin with olive and golden undertones blending Eastern European, South Asian, and North African heritage. Angular face with high Slavic cheekbones, narrow tapering jaw, broader nasal bridge, deep brown eyes with warm undertones. Dark brown hair cut short with slight curl at temples. Faint white scar on left temple partially obscured by hair, pale pink chemical burn scars on right neck side, barely visible chrome shimmer around nostrils and bridge from nasal passage augmentation. Day-old stubble. Wearing dark tactical cargo pants and long-sleeve compression shirt layered under synthetic leather jacket, military-grade boots, worn canvas messenger bag. Paracord bracelet on left wrist, small black crosshair tattoo on inner wrist. Coiled, economical posture with forward lean, methodical head movement, slight hand tremors at rest. GLMZ Great Lakes Metropolitan Zone, neon-lit industrial setting with rain-slicked concrete, moody blue and amber lighting catching chrome augmentations, introspective and dangerous atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Eastern European": 60.5,
     "South Asian": 19,

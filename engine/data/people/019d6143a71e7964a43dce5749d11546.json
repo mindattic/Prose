@@ -2,10 +2,7 @@
   "id": "019d6143a71e7964a43dce5749d11546",
   "type": "character",
   "name": "Gia-hoa Echeverría",
-  "aliases": [
-    "Atlas Echeverría",
-    "Atlas"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 13,
   "status": "active",
   "location": "Geartown, Dearborn Forge district, near Armitage and Milwaukee",
-  "description": "Atlas Echeverría is compact and strong for her age, with deep reddish-brown skin perpetually smudged with lubricant and composite dust. She keeps her hair in two thick plaits that she tucks into her collar when working and her hands are already showing the slight callus-thickening of someone who has used tools since she was eight. She has a bioluminescent birthmark — a faint greenish patch along her right collarbone, natural, not modded — that glows slightly in low light and which her coworkers call her 'running light.' She wears salvaged Ferrogate Transit safety goggles pushed up on her forehead like a permanent crown.\n\nAtlas Echeverría is formally registered as an apprentice with the Geartown Forge Collective under a provision that technically requires parental consent, which her uncle signed for. She earns Φ40/month — supplement to her household's UBC — doing frame alignment, bolt torque checks, and increasingly complex hydraulic diagnostics that her supervisor Adebowale trusts her with because she makes fewer errors than the adult apprentices. She is serious about the work with a seriousness that occasionally breaks into a very young, loud laugh when something surprises her.",
+  "description": "Gia-hoa Echeverría is compact and strong for her age, with deep reddish-brown skin perpetually smudged with lubricant and composite dust. She keeps her hair in two thick plaits that she tucks into her collar when working and her hands are already showing the slight callus-thickening of someone who has used tools since she was eight. She has a bioluminescent birthmark — a faint greenish patch along her right collarbone, natural, not modded — that glows slightly in low light and which her coworkers call her 'running light.' She wears salvaged Ferrogate Transit safety goggles pushed up on her forehead like a permanent crown.\n\nGia-hoa Echeverría is formally registered as an apprentice with the Geartown Forge Collective under a provision that technically requires parental consent, which her uncle signed for. She earns Φ40/month — supplement to her household's UBC — doing frame alignment, bolt torque checks, and increasingly complex hydraulic diagnostics that her supervisor Adebowale trusts her with because she makes fewer errors than the adult apprentices. She is serious about the work with a seriousness that occasionally breaks into a very young, loud laugh when something surprises her.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -171,7 +168,7 @@
     "The Accidental",
     "Free Assembly",
     "The Gradient Compact",
-    "Atlas",
+    "Gia-hoa",
     "The Pure Hand",
     "Flux Strömqvist-Villalobos"
   ],
@@ -196,7 +193,7 @@
     "posture_movement": "Alert and efficient in movement; unconscious habit of keeping hands ready for work. Stands with slight forward lean from years hunching over machinery. Walks with purpose, economical gestures. Occasional explosive laugh punctuates otherwise serious demeanor.",
     "clothing_style": "Salvaged Ferrogate Transit worker-tier clothing: reinforced synthetic pants with oil-resistant coating, multiple pockets worn smooth; oversized gray work shirt (likely handed down or scavenged) with sleeves rolled to elbows; heavy canvas apron with tool loops. Worn synthetic boots with steel toe reinforcement. No jewelry or decoration. Tier 4 working-class practical aesthetic — function over fashion, everything repurposed or work-issued."
   },
-  "image_prompt": "Atlas Echeverría, 145cm tall compact wiry young woman with warm deep brown skin and golden undertones, blended Indigenous American, Hispanic/Latin American, and Southeast Asian phenotype. Sharp defined cheekbones, refined facial structure, dark brown eyes. Dark brown hair with reddish undertones worn in two thick plaits tucked at collar. Bioluminescent greenish birthmark glowing softly on right collarbone. Hands stained with grease and lubricant, premature calluses visible. Wearing oversized gray work shirt with rolled sleeves, reinforced oil-resistant synthetic pants, heavy canvas work apron with tool loops, worn steel-toe boots. Ferrogate-issued haptic feedback work glove on right hand. Safety goggles pushed up on forehead. Alert posture with slight forward lean from machinery work. Standing in dim Forge district workshop with industrial lighting, machine parts and hydraulic equipment in background. GLMZ Great Lakes Metropolitan Zone aesthetic. Serious demeanor, functional worker-tier fashion. --ar 2:3 --v 6",
+  "image_prompt": "Gia-hoa Echeverría, 145cm tall compact wiry young woman with warm deep brown skin and golden undertones, blended Indigenous American, Hispanic/Latin American, and Southeast Asian phenotype. Sharp defined cheekbones, refined facial structure, dark brown eyes. Dark brown hair with reddish undertones worn in two thick plaits tucked at collar. Bioluminescent greenish birthmark glowing softly on right collarbone. Hands stained with grease and lubricant, premature calluses visible. Wearing oversized gray work shirt with rolled sleeves, reinforced oil-resistant synthetic pants, heavy canvas work apron with tool loops, worn steel-toe boots. Ferrogate-issued haptic feedback work glove on right hand. Safety goggles pushed up on forehead. Alert posture with slight forward lean from machinery work. Standing in dim Forge district workshop with industrial lighting, machine parts and hydraulic equipment in background. GLMZ Great Lakes Metropolitan Zone aesthetic. Serious demeanor, functional worker-tier fashion. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Indigenous American": 48.1,
     "Hispanic/Latin American": 32.9,

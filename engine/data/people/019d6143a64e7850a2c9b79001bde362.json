@@ -2,10 +2,7 @@
   "id": "019d6143a64e7850a2c9b79001bde362",
   "type": "character",
   "name": "Flavio Echeverría",
-  "aliases": [
-    "Frost Echeverría",
-    "Frost"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
@@ -13,7 +10,7 @@
   "age": 19,
   "status": "active",
   "location": "Currently grounded at Escanaba Gateway airship mooring, waiting for a berth on anything heading south, near Michigan Ave and Roosevelt",
-  "description": "Frost Echeverría has bioluminescent skin — faint blue-gold pulses that move under the surface of their brown skin like something swimming beneath still water, brightest at their temples and collarbones. It's a natural geneware expression that came through their father's side and they have done nothing to modify or suppress it; up in the dark of an airship cargo hold at three in the morning, they are their own light source. They are lean and quick, with dark eyes that are always slightly too aware — always tracking exits, always calculating load weights. They have a scar across their left palm from a cargo strap incident two years ago that they are irrationally proud of.\n\nThey grew up on airships and know no other life — their parents were both drifters and they were born somewhere over Lake Superior during a cargo run. They are nineteen but have the practical knowledge of someone much older and the emotional regulation of someone much younger. Lumi is bright and genuinely funny, with a quick warm laugh that surprises people, but they crash into loneliness hard and often. They have been in GLMZ exactly twice before and each time felt like being asked to live inside a machine. They find ground-level cities claustrophobic. They pray to the ELF they call the Ballast Keeper, who they believe lives in the pressure gauges of every lift-gas rig on the northern routes.",
+  "description": "Flavio Echeverría has bioluminescent skin — faint blue-gold pulses that move under the surface of their brown skin like something swimming beneath still water, brightest at their temples and collarbones. It's a natural geneware expression that came through their father's side and they have done nothing to modify or suppress it; up in the dark of an airship cargo hold at three in the morning, they are their own light source. They are lean and quick, with dark eyes that are always slightly too aware — always tracking exits, always calculating load weights. They have a scar across their left palm from a cargo strap incident two years ago that they are irrationally proud of.\n\nThey grew up on airships and know no other life — their parents were both drifters and they were born somewhere over Lake Superior during a cargo run. They are nineteen but have the practical knowledge of someone much older and the emotional regulation of someone much younger. Lumi is bright and genuinely funny, with a quick warm laugh that surprises people, but they crash into loneliness hard and often. They have been in GLMZ exactly twice before and each time felt like being asked to live inside a machine. They find ground-level cities claustrophobic. They pray to the ELF they call the Ballast Keeper, who they believe lives in the pressure gauges of every lift-gas rig on the northern routes.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -226,7 +223,7 @@
     "The Meridian Drift",
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Pressure Drop",
-    "Frost",
+    "Flavio",
     "Cargo Tacos",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Palm Leaf",
@@ -255,7 +252,7 @@
     "posture_movement": "Alert, economical movement with an instinctive awareness of vertical space and weight distribution. They move like someone comfortable in confined quarters and moving cargo — balance-first, every step calculated. Fidgets with hands when stationary (picking at scar, testing rope knots, checking equipment). When tired or lonely, they slouch slightly, making themselves smaller. Quick, infectious smile that doesn't reach their eyes until they trust someone.",
     "clothing_style": "Pure Tier 4-5 transient: layered insulation wear in grays and deep blues, cargo pants with reinforced thigh and shin pockets, worn synthetic-leather boots with aggressive tread, salvaged thermal wrap worn as a coat or blanket depending on need. No corporate branding. Patches and repairs are functional, not aesthetic. Carries a battered chest harness with carabiners, rope, and cargo assessment tools. Everything smells faintly of lift-gas, ozone, and Lake Superior wind. Wears a single brass pressure gauge on a cord around their neck as a prayer object — the Ballast Keeper token."
   },
-  "image_prompt": "Frost Echeverría, 19-year-old airship cargo worker, lean angular build with warm medium-deep brown skin glowing faintly with bioluminescent blue-gold pathways along collarbones and temples. Dark brown eyes, practical medium-length dark hair in a cargo-strap-secured braid, sun-worn face with fine lines around eyes and angular cheekbones blending Latin, East Asian, Sub-Saharan, and South Asian features. Visible white diagonal scar across left palm, thermal burn on right forearm, extensive hand calluses. Wearing layered gray-blue insulation wear, reinforced cargo pants, worn synthetic-leather boots, battered chest harness with carabiners and rope, salvaged thermal wrap draped as coat. Brass pressure gauge prayer token on cord around neck. Alert, economical posture. Neo-noir 2220s Great Lakes Metropolitan airship aesthetic. Wind-swept, ozone-tinged atmosphere, cold northern lighting with glow from bioluminescent activation. Transient warehouse worker aesthetic, no corporate branding. --ar 2:3 --v 6",
+  "image_prompt": "Flavio Echeverría, 19-year-old airship cargo worker, lean angular build with warm medium-deep brown skin glowing faintly with bioluminescent blue-gold pathways along collarbones and temples. Dark brown eyes, practical medium-length dark hair in a cargo-strap-secured braid, sun-worn face with fine lines around eyes and angular cheekbones blending Latin, East Asian, Sub-Saharan, and South Asian features. Visible white diagonal scar across left palm, thermal burn on right forearm, extensive hand calluses. Wearing layered gray-blue insulation wear, reinforced cargo pants, worn synthetic-leather boots, battered chest harness with carabiners and rope, salvaged thermal wrap draped as coat. Brass pressure gauge prayer token on cord around neck. Alert, economical posture. Neo-noir 2220s Great Lakes Metropolitan airship aesthetic. Wind-swept, ozone-tinged atmosphere, cold northern lighting with glow from bioluminescent activation. Transient warehouse worker aesthetic, no corporate branding. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 37.8,
     "East Asian": 26.2,

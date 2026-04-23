@@ -2,10 +2,7 @@
   "id": "019d6143a6c179eca60837ef2eb4e499",
   "type": "character",
   "name": "Amilcar Fredriksen-Banerjee",
-  "aliases": [
-    "Zephyr Fredriksen-Banerjee",
-    "Zephyr"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 26,
   "status": "active",
   "location": "The Spires — mid-level corporate residential towers, near Michigan Ave and Oak",
-  "description": "Zephyr Fredriksen-Banerjee is average height but with a presence that fills more space than the body accounts for. At 26, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a infiltrator out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Zephyr Fredriksen-Banerjee is one of the ones who actually does it.",
+  "description": "Amilcar Fredriksen-Banerjee is average height but with a presence that fills more space than the body accounts for. At 26, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a infiltrator out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Amilcar Fredriksen-Banerjee is one of the ones who actually does it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.9,
@@ -301,7 +298,7 @@
     "posture_movement": "Economy of motion — every movement serves a purpose. Posture is relaxed but alert, shoulders naturally slightly forward. Gait is quiet and balanced, weight centered low for quick directional changes. His presence fills space through attention rather than volume — people orient toward him in crowded rooms without him demanding it.",
     "clothing_style": "Tier 3-4 utilitarian — high-end runner gear masquerading as casual. Fitted charcoal tactical pants with discreet cargo pockets and reinforced seams, neutral-tone compression layer or fitted turtleneck, outer layer is either a charcoal bomber jacket with smart-fabric lining or a custom black peacoat with subtle armor plating (visible only as structural weight). Minimalist chrome accessory — wrist comm or small jewelry that matches his eye augmentation chrome. No logos, no corporate branding. Everything worn has function; nothing is for show."
   },
-  "image_prompt": "Zephyr Fredriksen-Banerjee, 2226 neo-noir infiltrator, 177cm lean and muscular build. Medium-deep warm bronze skin tone blending South Asian, Southeast Asian, East Asian, Sub-Saharan African, and Northern European genetics. High defined cheekbones, Southeast Asian facial proportions, full lips, dark eyes with chrome iris rings that glow faintly with thermal augmentation. Short dark brown hair, clean-shaven. Chrome hydraulic joint augmentations visible at elbows and knees. Dressed in charcoal tactical pants, fitted compression layer, black peacoat with armor plating. Minimalist chrome wrist accessories. Surgical scar on left temple. Economy of motion, quiet and centered posture. Standing in neon-lit Great Lakes Metropolitan Zone street, low-light near-future megacity setting, cool blue and warm amber volumetric lighting hitting chrome augmentations. Moody, alert presence. --ar 2:3 --v 6",
+  "image_prompt": "Amilcar Fredriksen-Banerjee, 2226 neo-noir infiltrator, 177cm lean and muscular build. Medium-deep warm bronze skin tone blending South Asian, Southeast Asian, East Asian, Sub-Saharan African, and Northern European genetics. High defined cheekbones, Southeast Asian facial proportions, full lips, dark eyes with chrome iris rings that glow faintly with thermal augmentation. Short dark brown hair, clean-shaven. Chrome hydraulic joint augmentations visible at elbows and knees. Dressed in charcoal tactical pants, fitted compression layer, black peacoat with armor plating. Minimalist chrome wrist accessories. Surgical scar on left temple. Economy of motion, quiet and centered posture. Standing in neon-lit Great Lakes Metropolitan Zone street, low-light near-future megacity setting, cool blue and warm amber volumetric lighting hitting chrome augmentations. Moody, alert presence. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 50.2,
     "Southeast Asian": 27.4,

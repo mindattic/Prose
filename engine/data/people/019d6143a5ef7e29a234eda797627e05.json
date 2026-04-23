@@ -4,10 +4,7 @@
   "vote_count": 1,
   "type": "character",
   "name": "Bashiru Konaté",
-  "aliases": [
-    "Rowan Konaté",
-    "Rowan"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -15,7 +12,7 @@
   "age": 29,
   "status": "active",
   "location": "The Underworld - B2-B12, near sub-level access near LaSalle and Congress",
-  "description": "Rowan Konaté the Underworld communications mesh. Neutral. The fastest fiber splicer in complete darkness.",
+  "description": "Bashiru Konaté the Underworld communications mesh. Neutral. The fastest fiber splicer in complete darkness.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -123,7 +120,7 @@
     "posture_movement": "Moves with deliberate efficiency, minimal wasted motion. Hands rest in ready position. Inhabits spaces quietly, comfortable in darkness. Head tilts slightly when listening — suggests enhanced auditory processing or intense focus habit.",
     "clothing_style": "Tier 4 working-class practicality. Dark tactical pants with multiple utility pockets, fitted black or grey merino wool base layers for temperature control in cold server rooms. Fingerless work gloves or thin tactile gloves always accessible. Worn tech-fabric jacket with Blackwire insignia patches. Comfortable steel-toed boots, scuffed from underground work. No visible jewelry except a flat black wedding band."
   },
-  "image_prompt": "Rowan Konaté, 2226 neo-noir splicer, medium-deep warm brown skin with golden undertones, angular East Asian cheekbones softened by African fullness, dark brown eyes with fine concentration lines, short dark hair with silver at temples. Perpetual stubble, thin white scar on right temple. Lean muscular build, 178cm tall. Wearing dark tactical pants, fitted grey merino base layer, worn tech-fabric jacket with Blackwire patches, steel-toed boots, fingerless work gloves. Standing in dim server room lit by blue cable light, hands in ready position, head tilted with focused intensity. Cool underground neo-noir urban aesthetic, low-light atmosphere, photorealistic portrait --ar 2:3 --v 6",
+  "image_prompt": "Bashiru Konaté, 2226 neo-noir splicer, medium-deep warm brown skin with golden undertones, angular East Asian cheekbones softened by African fullness, dark brown eyes with fine concentration lines, short dark hair with silver at temples. Perpetual stubble, thin white scar on right temple. Lean muscular build, 178cm tall. Wearing dark tactical pants, fitted grey merino base layer, worn tech-fabric jacket with Blackwire patches, steel-toed boots, fingerless work gloves. Standing in dim server room lit by blue cable light, hands in ready position, head tilted with focused intensity. Cool underground neo-noir urban aesthetic, low-light atmosphere, photorealistic portrait --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "East Asian": 36.6,

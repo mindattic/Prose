@@ -4,10 +4,7 @@
   "vote_count": 1,
   "type": "character",
   "name": "Araceli Dlamini-Touré",
-  "aliases": [
-    "Reed Dlamini-Touré",
-    "Reed"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -15,7 +12,7 @@
   "age": 30,
   "status": "active",
   "location": "Geartown — industrial district of chop shops and fabricators, near Fullerton and Damen",
-  "description": "Reed Dlamini-Touré is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 30, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a rigger out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Reed Dlamini-Touré describe her as a precision instrument — point her at a problem and get out of the way.",
+  "description": "Araceli Dlamini-Touré is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 30, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a rigger out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Araceli Dlamini-Touré describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -302,7 +299,7 @@
     "posture_movement": "Moves with controlled efficiency, no wasted motion. Sits slightly forward, always aware of exits and sightlines. Hands are restless when stationary — fidgets with tools, cables, or interface hardware. When focused on a task, becomes almost unnervingly still. Walks fast, bounces slightly on the balls of her feet.",
     "clothing_style": "Tier 3-4 working professional. Armored tactical vest over a fitted black or grey undershirt — visibly modular with quick-release panels. Reinforced cargo pants with tool loops and data-port pockets. Steel-toed boots, worn but maintained. A lightweight overjacket with internal pockets for gear. No visible branding — everything is functional, replaceable, and built for field work. Minor telltale signs of poverty: clothes are well-cared-for but mended, layered for insulation rather than style."
   },
-  "image_prompt": "Reed Dlamini-Touré, a neo-noir field operative in 2226 GLMZ, portrait in neon-lit urban environment. Deep warm brown skin with golden luminosity, sharp South Asian cheekbones combined with broad African facial structure. Dark brown alert eyes. Long black braided hair pulled back, revealing pale surgical scar at base of skull from neural interface jack. Wiry 168cm frame with geneware-enhanced muscle definition visible in corded forearms. Wearing modular armored tactical vest over grey fitted shirt, reinforced cargo pants, steel-toed boots. Chrome neural port with faint LED at skull base visible. Stress lines around eyes, weathered skin, old surgical and burn scars. Restless hands near gear. Controlled, efficient posture. GLMZ 2200s aesthetic, cool blue and neon pink lighting, industrial background with data streams, cinematic depth --ar 2:3 --v 6",
+  "image_prompt": "Araceli Dlamini-Touré, a neo-noir field operative in 2226 GLMZ, portrait in neon-lit urban environment. Deep warm brown skin with golden luminosity, sharp South Asian cheekbones combined with broad African facial structure. Dark brown alert eyes. Long black braided hair pulled back, revealing pale surgical scar at base of skull from neural interface jack. Wiry 168cm frame with geneware-enhanced muscle definition visible in corded forearms. Wearing modular armored tactical vest over grey fitted shirt, reinforced cargo pants, steel-toed boots. Chrome neural port with faint LED at skull base visible. Stress lines around eyes, weathered skin, old surgical and burn scars. Restless hands near gear. Controlled, efficient posture. GLMZ 2200s aesthetic, cool blue and neon pink lighting, industrial background with data streams, cinematic depth --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "Sub-Saharan African": 43.4,

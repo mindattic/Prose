@@ -2,10 +2,7 @@
   "id": "019d6143a6017190924a0e2dadb4adc4",
   "type": "character",
   "name": "Artur Magnúsdóttir",
-  "aliases": [
-    "Bjorn Magnúsdóttir",
-    "Bjorn"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 24,
   "status": "active",
   "location": "The Circuit / the Gray Zone (transient between both), near Halsted and Division",
-  "description": "Bjorn Magnúsdóttir is a small, wiry mixed-race woman — Cornish-Czech on her mother's side, Jamaican on her father's — with the particular kind of physical confidence that comes not from size but from having spent years moving through spaces that were not designed for her survival. She keeps her hair close-cropped on the sides and longer on top, usually shoved under a cap with the logo of a company that no longer exists. Her face is expressive in motion and surprisingly unreadable at rest, a combination that makes her hard to clock in a crowd. She has the faint, systematic scarring along her left forearm from an augmentation removal she paid for herself at nineteen, and she does not cover it.",
+  "description": "Artur Magnúsdóttir is a small, wiry mixed-race woman — Cornish-Czech on her mother's side, Jamaican on her father's — with the particular kind of physical confidence that comes not from size but from having spent years moving through spaces that were not designed for her survival. She keeps her hair close-cropped on the sides and longer on top, usually shoved under a cap with the logo of a company that no longer exists. Her face is expressive in motion and surprisingly unreadable at rest, a combination that makes her hard to clock in a crowd. She has the faint, systematic scarring along her left forearm from an augmentation removal she paid for herself at nineteen, and she does not cover it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.63,
@@ -267,7 +264,7 @@
     "posture_movement": "Economical, precise movement — no wasted motion. Walks with weight distributed low and forward, ready to shift direction rapidly. Stands with one foot slightly advanced, shoulders loose. Eyes constantly moving, particularly vertical scanning. When sitting, feet remain planted or in ready position. Hands move deliberately; left hand compensates for partial numbness with conscious placement.",
     "clothing_style": "Tier 4-5 function-first aesthetic. Worn synthetic jacket (charcoal gray, water-resistant, multiple internal pockets) over thermal base layers. Cargo pants in olive, reinforced at stress points. Scuffed utility boots with good traction, laces double-knotted. Old company-logo cap (faded, unidentifiable branding). No corporate sigils or status indicators. Worn leather messenger bag, multiple compartments, overstuffed with routes notebook and small music player. All clothing shows heavy use, patched rather than replaced. No jewelry except a thin, dented silver ring on her right index finger (inherited or salvaged, kept without sentimentality)."
   },
-  "image_prompt": "Bjorn Magnúsdóttir, 158cm wiry frame, golden-brown skin with rich warmth and subtle cool undertones, sharp angular features blending multiple ancestries. Dark brown hair with reddish undertones, close-cropped fade sides with longer crown pushed back under worn faded cap. Warm brown alert eyes, sun-weathered complexion, pale linear scarring visible on left inner forearm. Metallic cochlear filter hardware behind left ear with faint blue LED. Charcoal gray water-resistant jacket over thermal base, olive cargo pants, scuffed utility boots, worn leather messenger bag. Standing in low urban evening light, posture economical and ready, weight forward, vertical eye-scan. GLMZ, Great Lakes Metropolitan Zone, street-worn survivor aesthetic, no augmentation excess, moody neon-touch lighting, gritty metropolitan background --ar 2:3 --v 6",
+  "image_prompt": "Artur Magnúsdóttir, 158cm wiry frame, golden-brown skin with rich warmth and subtle cool undertones, sharp angular features blending multiple ancestries. Dark brown hair with reddish undertones, close-cropped fade sides with longer crown pushed back under worn faded cap. Warm brown alert eyes, sun-weathered complexion, pale linear scarring visible on left inner forearm. Metallic cochlear filter hardware behind left ear with faint blue LED. Charcoal gray water-resistant jacket over thermal base, olive cargo pants, scuffed utility boots, worn leather messenger bag. Standing in low urban evening light, posture economical and ready, weight forward, vertical eye-scan. GLMZ, Great Lakes Metropolitan Zone, street-worn survivor aesthetic, no augmentation excess, moody neon-touch lighting, gritty metropolitan background --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Northern European": 36.6,
     "South Asian": 32.6,

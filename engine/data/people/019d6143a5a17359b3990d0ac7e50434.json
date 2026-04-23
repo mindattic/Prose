@@ -2,10 +2,7 @@
   "id": "019d6143a5a17359b3990d0ac7e50434",
   "type": "character",
   "name": "Alhassan Zidane-Phommasack",
-  "aliases": [
-    "Phoenix Zidane-Phommasack",
-    "Phoenix"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 52,
   "status": "active",
   "location": "Hamtramck Enclave, Unit 7 of the Pressed & Clean cooperative on Bogdanow Street, near Ashland and Division",
-  "description": "Phoenix Zidane-Phommasack is a broad-shouldered woman with deep umber skin that has gone leathery at the knuckles from decades of hot water and chemical detergents. Her natural hair is gathered into a high wrap of faded indigo cloth, shot through with actual silver thread she stitched in herself for her fiftieth birthday. Her eyes are a watery hazel that turns almost gold under fluorescent light — a cosmetic iris mod she saved for six months to afford — and she wears no other augmentation. She moves with the unhurried authority of someone who has already decided she will not be rushed today or any other day.\n\nShe is known in the Enclave for two things: the sharpest crease in GLMZ and a bluntness that borders on prophecy. She will tell you exactly what is wrong with your relationship, your posture, and your collar stay in the same breath, and she will be correct on all three counts. She keeps a small shrine to the ELF she calls Grandma Rinse above her industrial press — offerings of fabric swatches and tiny bottles of softener — and she genuinely believes the old machine runs quieter when the shrine is tended.",
+  "description": "Alhassan Zidane-Phommasack is a broad-shouldered woman with deep umber skin that has gone leathery at the knuckles from decades of hot water and chemical detergents. Her natural hair is gathered into a high wrap of faded indigo cloth, shot through with actual silver thread she stitched in herself for her fiftieth birthday. Her eyes are a watery hazel that turns almost gold under fluorescent light — a cosmetic iris mod she saved for six months to afford — and she wears no other augmentation. She moves with the unhurried authority of someone who has already decided she will not be rushed today or any other day.\n\nShe is known in the Enclave for two things: the sharpest crease in GLMZ and a bluntness that borders on prophecy. She will tell you exactly what is wrong with your relationship, your posture, and your collar stay in the same breath, and she will be correct on all three counts. She keeps a small shrine to the ELF she calls Grandma Rinse above her industrial press — offerings of fabric swatches and tiny bottles of softener — and she genuinely believes the old machine runs quieter when the shrine is tended.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -177,7 +174,7 @@
   "related_entities": [
     "Hamtramck Enclave",
     "Tessera Corponation",
-    "Underground Phoenix",
+    "Underground Alhassan",
     "Indigo",
     "Silver",
     "Harbor Fish Shack",
@@ -206,7 +203,7 @@
     "posture_movement": "Moves with deliberate slowness, never hurried—shoulders back, head level. She walks like someone who has already decided the world will wait for her. Stands with weight evenly distributed, ready to lean into a pressing motion at any moment. Hands rarely still; fingers often air-pressing seams or adjusting invisible wrinkles.",
     "clothing_style": "Tier 4 workwear: heavy cotton apron in faded navy over a plain long-sleeved shirt (always with sleeves rolled to mid-forearm to show compression sleeves), dark work trousers with reinforced pockets, sturdy non-slip shoes worn smooth at the heel. She owns three identical aprons and rotates them. No jewelry except a thin silver band on her right ring finger—handmade, dented slightly, older than her marriage."
   },
-  "image_prompt": "Phoenix Zidane-Phommasack, 168cm tall, dense muscular build, deep warm brown skin with golden-amber undertones from blended Southeast Asian, Sub-Saharan African, and North African heritage. Angular cheekbones softened by fullness through mid-face, weathered complexion creased around eyes and mouth. Natural black hair with silver-grey temples, wrapped high in faded indigo cloth with silver thread. Hazel-gold cosmetic iris mod. Wearing faded navy cotton apron over plain long-sleeved shirt with dark grey compression sleeves visible at forearms, dark work trousers, worn non-slip shoes. Silver handmade band on right ring finger. Deliberate posture, shoulders back, fingers subtly air-pressing invisible seams. Tier 4 enclave industrial setting, warm amber and cool fluorescent lighting mixing over work station, GLMZ 2200s aesthetic, worn fabric textures, documentary realism, --ar 2:3 --v 6",
+  "image_prompt": "Alhassan Zidane-Phommasack, 168cm tall, dense muscular build, deep warm brown skin with golden-amber undertones from blended Southeast Asian, Sub-Saharan African, and North African heritage. Angular cheekbones softened by fullness through mid-face, weathered complexion creased around eyes and mouth. Natural black hair with silver-grey temples, wrapped high in faded indigo cloth with silver thread. Hazel-gold cosmetic iris mod. Wearing faded navy cotton apron over plain long-sleeved shirt with dark grey compression sleeves visible at forearms, dark work trousers, worn non-slip shoes. Silver handmade band on right ring finger. Deliberate posture, shoulders back, fingers subtly air-pressing invisible seams. Tier 4 enclave industrial setting, warm amber and cool fluorescent lighting mixing over work station, GLMZ 2200s aesthetic, worn fabric textures, documentary realism, --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Southeast Asian": 44.1,
     "Sub-Saharan African": 23.5,

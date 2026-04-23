@@ -4,10 +4,7 @@
   "vote_count": 1,
   "type": "character",
   "name": "Elena Ekwensi-Wojciechowski",
-  "aliases": [
-    "Ifeanyi Ekwensi-Wojciechowski",
-    "Ifeanyi"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -15,7 +12,7 @@
   "age": 33,
   "status": "active",
   "location": "Kessler Row — arms dealers and augmentation clinics, near Halsted and Division",
-  "description": "Ifeanyi Ekwensi-Wojciechowski is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — thermal masking system — body heat signature can be suppressed or spoofed — and she makes no effort to hide it.\n\nShe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a wheelman out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIfeanyi Ekwensi-Wojciechowski operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Elena Ekwensi-Wojciechowski is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — thermal masking system — body heat signature can be suppressed or spoofed — and she makes no effort to hide it.\n\nShe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a wheelman out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nElena Ekwensi-Wojciechowski operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.64,
@@ -300,7 +297,7 @@
     "posture_movement": "Moves with economical precision — every motion calculated and minimal. Sits in positions that allow rapid deployment. Eyes constantly tracking sightlines and exit routes. In civilian mode, consciously relaxes this intensity, but the underlying tension never fully dissipates. Hands are steady and expressive only when necessary.",
     "clothing_style": "During operations: form-fitting tactical gear in grays and blacks — Kessler Row brands that prioritize function over aesthetics. Reinforced synthetic leather jacket with integrated pockets and cable routing. During civilian cover: deliberately unremarkable — mid-tier workwear, neutral colors, brands that blend into Tier 4 background. Minimal jewelry except for a single worn silver band on her right wrist."
   },
-  "image_prompt": "Ifeanyi Ekwenski-Wojciechowski, 183cm tall lean operative with rich warm golden-amber skin tone blending Eastern European, Sub-Saharan African and Southeast Asian ancestry. Prominent cheekbones and defined jawline, deep brown eyes with amber flecks, long dark brown hair with copper undertones pulled into tactical braid. Visible subdermal thermal masking system as fine chrome lines down right neck and collarbone, iridescent chromatic camouflage patches on left forearm and upper back. Wearing form-fitting black tactical synthetic leather jacket with integrated tech routing, GLMZ Great Lakes Metropolitan Zone. Economical precise posture, constantly alert, hands steady. Cool blue-gray neon ambient lighting casting shadows across face, emphasizing augmentation networks. Professional tactical operative aesthetic, genre-defining GLMZ 2200s soldier, high-resolution detailed portrait --ar 2:3 --v 6",
+  "image_prompt": "Elena Ekwenski-Wojciechowski, 183cm tall lean operative with rich warm golden-amber skin tone blending Eastern European, Sub-Saharan African and Southeast Asian ancestry. Prominent cheekbones and defined jawline, deep brown eyes with amber flecks, long dark brown hair with copper undertones pulled into tactical braid. Visible subdermal thermal masking system as fine chrome lines down right neck and collarbone, iridescent chromatic camouflage patches on left forearm and upper back. Wearing form-fitting black tactical synthetic leather jacket with integrated tech routing, GLMZ Great Lakes Metropolitan Zone. Economical precise posture, constantly alert, hands steady. Cool blue-gray neon ambient lighting casting shadows across face, emphasizing augmentation networks. Professional tactical operative aesthetic, genre-defining GLMZ 2200s soldier, high-resolution detailed portrait --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "Eastern European": 52.8,

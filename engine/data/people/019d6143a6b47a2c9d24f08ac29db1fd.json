@@ -2,10 +2,7 @@
   "id": "019d6143a6b47a2c9d24f08ac29db1fd",
   "type": "character",
   "name": "Boutros Erikstad",
-  "aliases": [
-    "Arden Erikstad",
-    "Arden"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 46,
   "status": "active",
   "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Wacker and State",
-  "description": "Arden Erikstad is lean and angular, all sharp edges and visible tension. At 46, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a netrunner out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nArden Erikstad is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
+  "description": "Boutros Erikstad is lean and angular, all sharp edges and visible tension. At 46, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a netrunner out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nBoutros Erikstad is the kind of runner other runners tell stories about, though the stories vary depending on who he burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.22,
@@ -279,7 +276,7 @@
   ],
   "district": "Old Harbor",
   "physical_description": {
-    "heritage": "Arden is a striking product of the Ubiquitous Diaspora—a complex genetic blend where East Asian (23.5%), Central Asian (23.1%), and Southeast Asian (22.6%) ancestry forms the dominant phenotype, tempered by significant Northern European (20.6%), Hispanic/Latin American (8.0%), and trace Sub-Saharan African (2.2%) contributions. This creates a truly cosmopolitan face that resists singular categorization. His bone structure reflects the high, sharp cheekbones of Central and East Asian genetics, the refined orbital structure of Southeast Asian ancestry, and the skeletal efficiency of Northern European lineage—resulting in an angular, balanced intersection of multiple continental features rather than a dominant heritage.",
+    "heritage": "Boutros is a striking product of the Ubiquitous Diaspora—a complex genetic blend where East Asian (23.5%), Central Asian (23.1%), and Southeast Asian (22.6%) ancestry forms the dominant phenotype, tempered by significant Northern European (20.6%), Hispanic/Latin American (8.0%), and trace Sub-Saharan African (2.2%) contributions. This creates a truly cosmopolitan face that resists singular categorization. His bone structure reflects the high, sharp cheekbones of Central and East Asian genetics, the refined orbital structure of Southeast Asian ancestry, and the skeletal efficiency of Northern European lineage—resulting in an angular, balanced intersection of multiple continental features rather than a dominant heritage.",
     "height_cm": 178,
     "weight_kg": 68,
     "build": "Lean and angular with visible musculature—the stripped-down frame of someone who carries only functional mass. His shoulders are broad but not heavy; his limbs show the kind of definition that comes from maintenance, not vanity.",
@@ -298,7 +295,7 @@
     "posture_movement": "Economical and controlled—no wasted motion. He stands with a slight forward lean, hands often resting near his sides or pockets. Walks with a networker's alertness, eyes tracking patterns and exits. When seated, he's coiled rather than relaxed. His movements suggest he's always calculating distance and angle.",
     "clothing_style": "Tier 4 utilitarian—functional over fashion. Black or dark gray synth-leather jacket, worn at the cuffs, over an unmarked compression shirt. Loose tactical pants with reinforced pockets and cargo straps, worn matte black. Feet in scuffed runners with custom insoles. A worn braided cord around his wrist (memento or talisman—unclear to outsiders). Everything is practical; nothing is pristine. Occasional neural interface jack visible at the base of his neck, partially hidden by collar."
   },
-  "image_prompt": "Arden Erikstad, GLMZ, cosmopolitan mixed-heritage man with warm golden-tan medium brown skin, sharp high cheekbones and angular jawline, dark brown eyes bloodshot from neural jacking, salt-and-pepper gray hair kept short and unwashed, three-day stubble. Pale 8cm scar visible from left temple to jawline. Chrome pain editor augmentation visible at left temple with exposed metallic panels and wiring catching sharp light. Lean 178cm frame with visible musculature, wearing worn black synth-leather jacket over compression shirt, tactical cargo pants with reinforced pockets, scuffed runners. Visible burn scar on right forearm. Neural interface jack at base of neck. Standing in forward lean posture with coiled alertness, eyes tracking. Worn braided cord around left wrist. Matte black utilitarian aesthetic. Gritty Great Lakes Metropolitan Zone industrial setting, cool neon accent lighting, worn concrete environment, urban neo-noir atmosphere. High contrast, cinematic lighting --ar 2:3 --v 6",
+  "image_prompt": "Boutros Erikstad, GLMZ, cosmopolitan mixed-heritage man with warm golden-tan medium brown skin, sharp high cheekbones and angular jawline, dark brown eyes bloodshot from neural jacking, salt-and-pepper gray hair kept short and unwashed, three-day stubble. Pale 8cm scar visible from left temple to jawline. Chrome pain editor augmentation visible at left temple with exposed metallic panels and wiring catching sharp light. Lean 178cm frame with visible musculature, wearing worn black synth-leather jacket over compression shirt, tactical cargo pants with reinforced pockets, scuffed runners. Visible burn scar on right forearm. Neural interface jack at base of neck. Standing in forward lean posture with coiled alertness, eyes tracking. Worn braided cord around left wrist. Matte black utilitarian aesthetic. Gritty Great Lakes Metropolitan Zone industrial setting, cool neon accent lighting, worn concrete environment, urban neo-noir atmosphere. High contrast, cinematic lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
     "East Asian": 23.5,
     "Central Asian": 23.1,

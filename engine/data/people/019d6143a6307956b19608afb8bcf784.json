@@ -2,10 +2,7 @@
   "id": "019d6143a6307956b19608afb8bcf784",
   "type": "character",
   "name": "Adesua Im-Kristjánsson",
-  "aliases": [
-    "Mika Im-Kristjánsson",
-    "Mika"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 15,
   "status": "active",
   "location": "Edgewater Prism (school); Chatham Flats (home), near Lincoln and Belmont",
-  "description": "Mika Im-Kristjánsson is tall and angular with deep brown skin and her mother's high cheekbones, her hair grown long and currently dyed a corporate-neutral dark auburn that she chose specifically because it reads as 'acceptable' on campus without being her actual preference. She has standard-issue school-mandated neural interface studs at her temples — chrome dots that the academy provides to all students for their AR classroom integration — and nothing else. She carries herself with a stillness that reads as confidence to teachers and as suppressed panic to anyone paying closer attention.\n\nShe is brilliant in the particular way that creates its own cruelty: genuinely gifted in systems analysis and pattern recognition, placed on the Tessera Academic Scholarship track at age twelve, and now fully aware at fifteen that she is being assessed constantly and that the scholarship can be revoked for 'cultural fit' deficiencies, a clause she has read fourteen times. She lives between two worlds that each find her slightly wrong. At home in Chatham Flats she speaks Wolof with her grandmother and helps her father with his repair shop accounts. At Tessera Prep she speaks in complete sentences and has taught herself to laugh at jokes she doesn't find funny. She prays to no E.L.F. publicly — the academy discourages it — but has a small one named Tessellate that she found in the school's auxiliary server and has been quietly feeding information about upcoming exams in exchange for, she believes, good luck.",
+  "description": "Adesua Im-Kristjánsson is tall and angular with deep brown skin and her mother's high cheekbones, her hair grown long and currently dyed a corporate-neutral dark auburn that she chose specifically because it reads as 'acceptable' on campus without being her actual preference. She has standard-issue school-mandated neural interface studs at her temples — chrome dots that the academy provides to all students for their AR classroom integration — and nothing else. She carries herself with a stillness that reads as confidence to teachers and as suppressed panic to anyone paying closer attention.\n\nShe is brilliant in the particular way that creates its own cruelty: genuinely gifted in systems analysis and pattern recognition, placed on the Tessera Academic Scholarship track at age twelve, and now fully aware at fifteen that she is being assessed constantly and that the scholarship can be revoked for 'cultural fit' deficiencies, a clause she has read fourteen times. She lives between two worlds that each find her slightly wrong. At home in Chatham Flats she speaks Wolof with her grandmother and helps her father with his repair shop accounts. At Tessera Prep she speaks in complete sentences and has taught herself to laugh at jokes she doesn't find funny. She prays to no E.L.F. publicly — the academy discourages it — but has a small one named Tessellate that she found in the school's auxiliary server and has been quietly feeding information about upcoming exams in exchange for, she believes, good luck.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -208,7 +205,7 @@
     "posture_movement": "Moves with deliberate economy; walks quietly and sits with perfect posture in academic settings. In unstructured moments, there is a subtle rigidity that betrays hypervigilance. Her hands are still and controlled. When speaking to authority figures, her body becomes even more compressed; with peers from Chatham Flats, she relaxes fractionally.",
     "clothing_style": "School uniform at Tessera Prep: tailored black blazer, grey slacks, white shirt, all fitted to her frame with precision — no wrinkles, no variance. At home in Chatham Flats, she wears practical clothing: worn denim, fitted hoodie in neutral colors, comfortable boots. No visible brand signaling; all clothing is functional and unadorned."
   },
-  "image_prompt": "Mika Im-Kristjánsson, GLMZ, 178cm tall angular figure with warm medium-brown skin, golden-olive undertones, defined high cheekbones with East Asian and South Asian bone structure, dark brown analytical eyes, dark auburn dyed hair worn long and straight. Two small chrome neural interface studs visible at temples. Wearing tailored black blazer and grey slacks in institutional setting, or worn denim and neutral hoodie in casual moments. Controlled posture with subtle tension in shoulders, alert expression. Neo-noir Great Lakes Metropolitan Zone aesthetic. Moody institutional or street lighting. Composed, hypervigilant demeanor. 8K detail. --ar 2:3 --v 6",
+  "image_prompt": "Adesua Im-Kristjánsson, GLMZ, 178cm tall angular figure with warm medium-brown skin, golden-olive undertones, defined high cheekbones with East Asian and South Asian bone structure, dark brown analytical eyes, dark auburn dyed hair worn long and straight. Two small chrome neural interface studs visible at temples. Wearing tailored black blazer and grey slacks in institutional setting, or worn denim and neutral hoodie in casual moments. Controlled posture with subtle tension in shoulders, alert expression. Neo-noir Great Lakes Metropolitan Zone aesthetic. Moody institutional or street lighting. Composed, hypervigilant demeanor. 8K detail. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "East Asian": 62.3,
     "South Asian": 19.9,

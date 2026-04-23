@@ -2,10 +2,7 @@
   "id": "019d6143a72a7ec783c2bd6fc5fdc92d",
   "type": "character",
   "name": "Hanin Cisneros",
-  "aliases": [
-    "Anya Cisneros",
-    "Anya"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 58,
   "status": "active",
   "location": "the Gray Zone, near Halsted and Chicago Ave",
-  "description": "Anya Cisneros is a large man going soft at the middle, with the build of someone who used to do heavy work and now does a different kind of heavy work. His skin is very dark with warm undertones, and he keeps a close beard going grey in patches. His right eye is a prosthetic — the iris cycles slowly through amber and gold, an older geneware-adjacent bioluminescent model he has never upgraded because, he says, 'it still works and there are people who need the Quanta more than I need a new eye.' He dresses in layered practical clothes that somehow always look intentional, and he carries a battered data tablet in a hand-stitched case his daughter made him.\n\nAnya Cisneros has run the Gray Zone Mutual Aid Compact for eleven years, coordinating food distribution, medical triage referrals, emergency housing, and legal support for the roughly four thousand tier-1 residents packed into the Gray Zone's stacked industrial housing modules. He is patient in the manner of someone who has learned that patience is a tool and not a virtue, and he carries a deep, undisguised grief for what the city has done to his neighbors that he converts, daily, into logistics.",
+  "description": "Hanin Cisneros is a large man going soft at the middle, with the build of someone who used to do heavy work and now does a different kind of heavy work. His skin is very dark with warm undertones, and he keeps a close beard going grey in patches. His right eye is a prosthetic — the iris cycles slowly through amber and gold, an older geneware-adjacent bioluminescent model he has never upgraded because, he says, 'it still works and there are people who need the Quanta more than I need a new eye.' He dresses in layered practical clothes that somehow always look intentional, and he carries a battered data tablet in a hand-stitched case his daughter made him.\n\nHanin Cisneros has run the Gray Zone Mutual Aid Compact for eleven years, coordinating food distribution, medical triage referrals, emergency housing, and legal support for the roughly four thousand tier-1 residents packed into the Gray Zone's stacked industrial housing modules. He is patient in the manner of someone who has learned that patience is a tool and not a virtue, and he carries a deep, undisguised grief for what the city has done to his neighbors that he converts, daily, into logistics.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -259,7 +256,7 @@
     "posture_movement": "Moves with economic efficiency, no wasted motion. Carries weight low through the hips. Stands with weight balanced; gives the impression of listening rather than waiting. Habitual gesture of touching the hand-stitched tablet case when thinking.",
     "clothing_style": "Layered practical wear suggesting Tier 4-5 working class: worn canvas work pants, undershirts visible at the neck, a heavy oversized collar jacket in faded grey that has been repaired multiple times, steel-toed boots scuffed from years of warehouse and distribution center work. Everything fits the logic of durability and function over aesthetic. Carries a battered data tablet in a visibly hand-stitched fabric case — the craftsmanship of it marks it as personally meaningful rather than issued."
   },
-  "image_prompt": "Anya Cisneros, tall 188cm Ubiquitous Diaspora man with deep warm brown skin holding golden and amber undertones from blended Eastern European, Pacific Islander, Hispanic, and Sub-Saharan African ancestry. Strong wide cheekbones, prominent jawline, wider-set eyes with subtle epicanthal variation. Dark brown left eye, right eye glowing amber-gold bioluminescent prosthetic cycling slowly. Short dark hair greying at temples, close-trimmed beard with grey patches. Weather-worn, lined face suggesting decades in industrial spaces. Broad shoulders, large-framed build softening through middle. Wearing layered working-class practical wear: faded grey repaired jacket with heavy collar, worn canvas work pants, visible undershirts, scuffed steel-toed boots. Carries hand-stitched fabric tablet case. Posture economical and balanced, attentive expression. GLMZ, Great Lakes Metropolitan Zone warehouse district, neon-adjacent lighting with warm industrial ambiance, portrait-focused composition --ar 2:3 --v 6",
+  "image_prompt": "Hanin Cisneros, tall 188cm Ubiquitous Diaspora man with deep warm brown skin holding golden and amber undertones from blended Eastern European, Pacific Islander, Hispanic, and Sub-Saharan African ancestry. Strong wide cheekbones, prominent jawline, wider-set eyes with subtle epicanthal variation. Dark brown left eye, right eye glowing amber-gold bioluminescent prosthetic cycling slowly. Short dark hair greying at temples, close-trimmed beard with grey patches. Weather-worn, lined face suggesting decades in industrial spaces. Broad shoulders, large-framed build softening through middle. Wearing layered working-class practical wear: faded grey repaired jacket with heavy collar, worn canvas work pants, visible undershirts, scuffed steel-toed boots. Carries hand-stitched fabric tablet case. Posture economical and balanced, attentive expression. GLMZ, Great Lakes Metropolitan Zone warehouse district, neon-adjacent lighting with warm industrial ambiance, portrait-focused composition --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Eastern European": 37,
     "Pacific Islander": 26.7,

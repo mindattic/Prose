@@ -2,10 +2,7 @@
   "id": "019d6143a5f07eca818af1298ae6f585",
   "type": "character",
   "name": "Anchal Nakamura",
-  "aliases": [
-    "Kit Nakamura",
-    "Kit"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 34,
   "status": "active",
   "location": "Geartown, Gage Circuit, near Milwaukee and North Ave",
-  "description": "Kit Nakamura is tall with the slightly uneven posture of someone who spends hours hunched over neural interface rigs, one shoulder perpetually lower than the other. His ancestry — Filipino-Hungarian with a grandmother from the Visayas and a grandfather from Budapest — gives him a face that people find difficult to categorize and easy to trust: broad cheekbones, warm amber eyes behind precision-ground optical overlays he wears on the job. His hair is geneware-treated to shift through a slow gradient from black at the roots to deep copper at the tips, a cosmetic mod he got when he turned thirty and considers mildly embarrassing now.\n\nKit Nakamura is the sort of person who explains things patiently once, twice, and then simply does it himself rather than explain a third time. He has a gift for making the terrifying — having someone else's hands in your neural architecture — feel routine and boring, which is exactly what his clients need. He keeps a small pocket E.L.F. altar on his workstation: a cracked tablet running a looping devotional animation for the E.L.F. called Tremor-Null, patron of stable calibrations. He touches it before every session.",
+  "description": "Anchal Nakamura is tall with the slightly uneven posture of someone who spends hours hunched over neural interface rigs, one shoulder perpetually lower than the other. His ancestry — Filipino-Hungarian with a grandmother from the Visayas and a grandfather from Budapest — gives him a face that people find difficult to categorize and easy to trust: broad cheekbones, warm amber eyes behind precision-ground optical overlays he wears on the job. His hair is geneware-treated to shift through a slow gradient from black at the roots to deep copper at the tips, a cosmetic mod he got when he turned thirty and considers mildly embarrassing now.\n\nAnchal Nakamura is the sort of person who explains things patiently once, twice, and then simply does it himself rather than explain a third time. He has a gift for making the terrifying — having someone else's hands in your neural architecture — feel routine and boring, which is exactly what his clients need. He keeps a small pocket E.L.F. altar on his workstation: a cracked tablet running a looping devotional animation for the E.L.F. called Tremor-Null, patron of stable calibrations. He touches it before every session.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -243,7 +240,7 @@
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Genetically diverse: Middle Eastern (28.2%), Hispanic/Latin American (26.3%), East Asian (21.8%), Southeast Asian (18.6%), Sub-Saharan African (5.1%). Kit's features reflect this balanced global blend—angular cheekbones and almond-shaped eyes from East Asian ancestry, warmth and facial structure from Middle Eastern and Latin heritage, skin depth enriched by Sub-Saharan undertones, and the broader facial geometry influenced by Southeast Asian genetics. The combination creates striking, attentive features with warm undertones and angular definition.",
+    "heritage": "Genetically diverse: Middle Eastern (28.2%), Hispanic/Latin American (26.3%), East Asian (21.8%), Southeast Asian (18.6%), Sub-Saharan African (5.1%). Anchal's features reflect this balanced global blend—angular cheekbones and almond-shaped eyes from East Asian ancestry, warmth and facial structure from Middle Eastern and Latin heritage, skin depth enriched by Sub-Saharan undertones, and the broader facial geometry influenced by Southeast Asian genetics. The combination creates striking, attentive features with warm undertones and angular definition.",
     "height_cm": 188,
     "weight_kg": 78,
     "build": "Tall and lean with a slight forward stoop in the shoulders from decades of close technical work. Wiry musculature without bulk; posture asymmetrical—left shoulder chronically lower than right from hunched positioning over neural rigs.",
@@ -261,7 +258,7 @@
     "posture_movement": "Habitually hunched forward at the shoulders, as though leaning over a workstation even when standing. Movements are deliberate and economical—no wasted motion. Hands move with practiced precision when engaged in technical work; otherwise they rest naturally at sides or in pockets. He walks with a slight list to the left. His default expression is calm, attentive, and patient.",
     "clothing_style": "Tier 3-4 working professional. Wears durable, function-first clinic wear: fitted charcoal tech-weave utility shirt with breast patch pockets (Gage Circuit Wellness Collective logo embroidered), tapered dark gray synthetic pants with reinforced knees, scuffed black composite-toe work boots rated for chemical exposure. Over this, a sleeveless insulated vest in muted teal with interior pockets for diagnostic tools. His personal touches are minimal—a worn leather bracelet on his left wrist and a small chain around his neck (barely visible beneath his collar) holding a tiny cracked tablet charm. No flashy jewelry. Everything about his appearance suggests careful maintenance and practical investment in longevity over fashion."
   },
-  "image_prompt": "Kit Nakamura, mid-30s, tall lean neo-noir technician with warm bronze skin and golden-olive undertones reflecting Middle Eastern, Hispanic, East Asian, Southeast Asian and Sub-Saharan heritage. Angular cheekbones, almond-shaped amber eyes with prescription-style titanium optical overlay lenses. Black hair with deep copper gradient tips, shoulder-length, neatly maintained. Slight forward stoop from technical work, asymmetrical posture. Charcoal tech-weave utility shirt with Gage Circuit Wellness Collective logo, dark gray synthetic pants, scuffed black work boots, muted teal sleeveless insulated vest. Black haptic feedback gloves with bioluminescent fingertip threads. Worn leather bracelet and hidden pendant chain. Thin white scar on right forearm, small E.L.F. devotional tattoo on left wrist. Clinical lighting, neural rig workstation background, calm attentive expression, GLMZ --ar 2:3 --v 6",
+  "image_prompt": "Anchal Nakamura, mid-30s, tall lean neo-noir technician with warm bronze skin and golden-olive undertones reflecting Middle Eastern, Hispanic, East Asian, Southeast Asian and Sub-Saharan heritage. Angular cheekbones, almond-shaped amber eyes with prescription-style titanium optical overlay lenses. Black hair with deep copper gradient tips, shoulder-length, neatly maintained. Slight forward stoop from technical work, asymmetrical posture. Charcoal tech-weave utility shirt with Gage Circuit Wellness Collective logo, dark gray synthetic pants, scuffed black work boots, muted teal sleeveless insulated vest. Black haptic feedback gloves with bioluminescent fingertip threads. Worn leather bracelet and hidden pendant chain. Thin white scar on right forearm, small E.L.F. devotional tattoo on left wrist. Clinical lighting, neural rig workstation background, calm attentive expression, GLMZ --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Middle Eastern": 28.2,
     "Hispanic/Latin American": 26.3,

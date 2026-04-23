@@ -2,10 +2,7 @@
   "id": "019d6143a70672b8893f1cdd3dcf8180",
   "type": "character",
   "name": "Bertel Okonkwo-Traoré",
-  "aliases": [
-    "Slate Okonkwo-Traoré",
-    "Slate"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
@@ -13,7 +10,7 @@
   "age": 26,
   "status": "active",
   "location": "Bronzeline, operates Phantom Chair barbershop out of a converted shipping container unit, near Damen and Armitage",
-  "description": "Slate Okonkwo-Traoré is slight and quick-moving, with Mongolian features softened by their Ghanaian grandmother's bone structure — high cheekbones, wide-set dark eyes, a mouth that defaults to a half-suppressed grin. Their hair cycles through colors using a geneware dye-follicle mod, currently a deep ox-blood red fading to copper at the tips. They have bioluminescent subcutaneous tracery along both forearms — thin branching lines in pale blue that pulse faintly when they are excited or anxious, which they find embarrassing and try to cover with long sleeves in professional settings. Their hands are their real instrument: extraordinarily steady, with the unconscious precision of someone who has been practicing since age fourteen.\n\nPhantom Chair operates out of a three-chair container unit that Slate Okonkwo-Traoré has customized over four years into something genuinely beautiful — cracked leather chairs reupholstered with fabric from the Burnished Market, mirrors ringed with hand-soldered E.L.F. offerings (USB stubs, old SIM cards, a broken haptic stylus for the Barber E.L.F. they call Bladewind), and a hand-painted ceiling mural depicting the Bronzeline skyline in exaggerated neon. They are fast, technically excellent, and socially combustible — they ask too many questions, form too-strong opinions too quickly, and have started at least four ongoing feuds with neighboring businesses over noise, parking, and once, a vigorously disputed question of who invented a particular fade technique.",
+  "description": "Bertel Okonkwo-Traoré is slight and quick-moving, with Mongolian features softened by their Ghanaian grandmother's bone structure — high cheekbones, wide-set dark eyes, a mouth that defaults to a half-suppressed grin. Their hair cycles through colors using a geneware dye-follicle mod, currently a deep ox-blood red fading to copper at the tips. They have bioluminescent subcutaneous tracery along both forearms — thin branching lines in pale blue that pulse faintly when they are excited or anxious, which they find embarrassing and try to cover with long sleeves in professional settings. Their hands are their real instrument: extraordinarily steady, with the unconscious precision of someone who has been practicing since age fourteen.\n\nPhantom Chair operates out of a three-chair container unit that Bertel Okonkwo-Traoré has customized over four years into something genuinely beautiful — cracked leather chairs reupholstered with fabric from the Burnished Market, mirrors ringed with hand-soldered E.L.F. offerings (USB stubs, old SIM cards, a broken haptic stylus for the Barber E.L.F. they call Bladewind), and a hand-painted ceiling mural depicting the Bronzeline skyline in exaggerated neon. They are fast, technically excellent, and socially combustible — they ask too many questions, form too-strong opinions too quickly, and have started at least four ongoing feuds with neighboring businesses over noise, parking, and once, a vigorously disputed question of who invented a particular fade technique.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -193,7 +190,7 @@
     "Leather",
     "Copper",
     "VitaCore FlowGuard Hemodynamic Regulator",
-    "Slate",
+    "Bertel",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "The Pure Hand",
     "The Pale Mile"
@@ -219,7 +216,7 @@
     "posture_movement": "Quick and economical in motion, with the coiled readiness of someone used to precise, delicate work. Tends to fidget with their hands—rotating wrists, flexing fingers—a nervous habit. When focused on barbering or tattooing, movement becomes unnaturally still and precise. Makes direct eye contact, often too much of it. Leans forward when listening, creating an impression of intensity even in casual conversation.",
     "clothing_style": "Tier 3 practical with intentional style. Typically wears well-fitted black or charcoal work pants (often Carhartt or similar utility brand) with deep pockets. Tops are a mix of vintage band tees, fitted long-sleeve shirts (worn to cover the forearm tracery in professional contexts), and a custom sleeveless apron with hand-embroidered Bronzeline landmarks over the Phantom Chair logo. Heavy-soled work boots, often scuffed. A battered leather jacket (Tier 3 vintage, well-loved) worn over everything in winter. Minimal jewelry except for a hand-soldered ring on the left index finger made from salvaged wire and a tiny opalescent bead—their own work. Practical, worn, and carefully maintained; nothing new or status-signaling, but nothing neglected either."
   },
-  "image_prompt": "Slate Okonkwo-Traoré, compact wiry 163cm figure with deep warm brown skin glowing with golden and reddish undertones, strong Sub-Saharan African cheekbones with delicate East Asian epicanthal variation, wide-set dark brown eyes bright with suppressed amusement. Shoulder-length textured hair in ox-blood red fading to copper, asymmetrical undercut on left. Sleeveless apron with hand-embroidered Bronzeline landmarks over dark long-sleeve shirt, heavy work boots scuffed from use. Pale blue bioluminescent branching tracery visible on forearms, pulsing gently. Hand-soldered wire ring on left index finger catching light. Coiled posture leaning forward with intense focus, fingers flexing in habitual fidget. Phantom Chair barbershop interior, warm amber work lighting casting shadows across face, neon Bronzeline glow reflected on dark surfaces. GLMZ, gritty Tier 3 aesthetic, professional but worn, meticulous care amidst industrial surroundings. --ar 2:3 --v 6",
+  "image_prompt": "Bertel Okonkwo-Traoré, compact wiry 163cm figure with deep warm brown skin glowing with golden and reddish undertones, strong Sub-Saharan African cheekbones with delicate East Asian epicanthal variation, wide-set dark brown eyes bright with suppressed amusement. Shoulder-length textured hair in ox-blood red fading to copper, asymmetrical undercut on left. Sleeveless apron with hand-embroidered Bronzeline landmarks over dark long-sleeve shirt, heavy work boots scuffed from use. Pale blue bioluminescent branching tracery visible on forearms, pulsing gently. Hand-soldered wire ring on left index finger catching light. Coiled posture leaning forward with intense focus, fingers flexing in habitual fidget. Phantom Chair barbershop interior, warm amber work lighting casting shadows across face, neon Bronzeline glow reflected on dark surfaces. GLMZ, gritty Tier 3 aesthetic, professional but worn, meticulous care amidst industrial surroundings. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 82.3,
     "East Asian": 7.2,

@@ -2,10 +2,7 @@
   "id": "019d6143a71574719af6a27215d9203c",
   "type": "character",
   "name": "Chike Sigurdsson",
-  "aliases": [
-    "Tarn Sigurdsson",
-    "Tarn"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 38,
   "status": "active",
   "location": "Milwaukee Core — operates from a rented office space disguised as an HVAC consulting firm",
-  "description": "Tarn Sigurdsson the way other people play chess — five moves ahead, every contingency mapped, every variable assigned a probability. She spent twelve years as a logistics coordinator for Torii Security Group before the corp restructured her division and offered her a severance package worth less than her monthly augmentation maintenance. She walked out with her skills, her contacts, and a very detailed understanding of how corporate security systems fail.\n\nShe built the Thermite Collective from the ground up over six years, hand-picking operators who could execute clean work without the ego that gets people killed. The crew's reputation is their product — no collateral damage, no witnesses, no mess. Clients pay a premium because Vesper's plans work. When they don't, she has three backup plans that do.\n\nPhysically unremarkable by design. Medium height, brown hair kept short, clothes that say middle management. She could walk through any lobby in GLMZ without triggering a second glance. This is the most dangerous thing about her. The only augmentation visible is a faint dermal port behind her left ear — the rest is all internal, all quiet, all precise.",
+  "description": "Chike Sigurdsson the way other people play chess — five moves ahead, every contingency mapped, every variable assigned a probability. She spent twelve years as a logistics coordinator for Torii Security Group before the corp restructured her division and offered her a severance package worth less than her monthly augmentation maintenance. She walked out with her skills, her contacts, and a very detailed understanding of how corporate security systems fail.\n\nShe built the Thermite Collective from the ground up over six years, hand-picking operators who could execute clean work without the ego that gets people killed. The crew's reputation is their product — no collateral damage, no witnesses, no mess. Clients pay a premium because Vesper's plans work. When they don't, she has three backup plans that do.\n\nPhysically unremarkable by design. Medium height, brown hair kept short, clothes that say middle management. She could walk through any lobby in GLMZ without triggering a second glance. This is the most dangerous thing about her. The only augmentation visible is a faint dermal port behind her left ear — the rest is all internal, all quiet, all precise.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -226,7 +223,7 @@
     "posture_movement": "Economical and controlled. Stands with weight slightly forward on balls of feet — never fully relaxed, always ready to move. Walks with minimal arm swing, gaze fixed two meters ahead and slightly elevated (tactical awareness pattern). Hands rest palms-down on thighs or table — never fidgeting, never crossing arms. Speaks quietly; makes people lean in. Makes eye contact deliberately, not reflexively — every glance is tactical.",
     "clothing_style": "Middle-management aggressively neutral. Blazers from corporate surplus retailers (Tier 3 brands like Prometheus Corp Fashions), usually in charcoal or navy. Under-blazer: clean white or gray t-shirts with no graphics or branding. Trousers: dark, tailored, pockets modified for discrete equipment carry. Shoes: black or charcoal, function-focused, worn-in enough to avoid attention. A single piece of jewelry — a watch, utilitarian, possibly with encrypted data access. Deliberately erases herself from memory; someone would struggle to describe her five minutes after meeting."
   },
-  "image_prompt": "Portrait of Tarn Sigurdsson, 167cm lean woman with warm medium-brown skin blending Northern European, East Asian, South Asian, and African ancestry. Dark brown hair cropped short and asymmetrical, longer on left side covering a subtle dermal port scar. High defined cheekbones, fuller lips, angular jaw, warm brown eyes with amber undertones. Faint stress creases around eyes, light freckling across nose bridge. Small linear scar along left jawline. Wearing charcoal Prometheus Corp blazer over clean white t-shirt, dark tailored trousers, black functional shoes. Minimalist silver watch. Standing with weight forward on balls of feet, hands resting palm-down, two-meter tactical gaze. GLMZ Great Lakes Metropolitan Zone, low ambient lighting, cool corporate office setting with subtle neon edge, hyper-realistic, intricate detail on scar tissue and port scarring, intense but controlled presence --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Chike Sigurdsson, 167cm lean woman with warm medium-brown skin blending Northern European, East Asian, South Asian, and African ancestry. Dark brown hair cropped short and asymmetrical, longer on left side covering a subtle dermal port scar. High defined cheekbones, fuller lips, angular jaw, warm brown eyes with amber undertones. Faint stress creases around eyes, light freckling across nose bridge. Small linear scar along left jawline. Wearing charcoal Prometheus Corp blazer over clean white t-shirt, dark tailored trousers, black functional shoes. Minimalist silver watch. Standing with weight forward on balls of feet, hands resting palm-down, two-meter tactical gaze. GLMZ Great Lakes Metropolitan Zone, low ambient lighting, cool corporate office setting with subtle neon edge, hyper-realistic, intricate detail on scar tissue and port scarring, intense but controlled presence --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Northern European": 37.6,
     "East Asian": 26,

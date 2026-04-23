@@ -2,10 +2,7 @@
   "id": "019d6143a73b7aa68455b4cfa05e82b8",
   "type": "character",
   "name": "Bohumila Owusu",
-  "aliases": [
-    "Zuri Owusu",
-    "Zuri"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 11,
   "status": "active",
   "location": "Copperhead, near North Ave and Milwaukee",
-  "description": "Zuri Owusu is small for his age, wiry in the way that children are when they grow up hungry but always moving — all elbows and quick eyes. His skin is a warm dark brown, and his hair grows in tight coils that he keeps cut close on the sides by whoever has scissors that week. He has a cosmetic geneware patch on his left forearm — a bioluminescent tattoo of a cresting wave someone gave him as payment once — that glows faint blue when he's cold or scared, which he finds embarrassing and cannot control. He wears a jacket three sizes too large with pockets sewn inside the lining.\n\nZuri Owusu does not stay still. He talks fast, thinks faster, and has memorized every rat-run, maintenance shaft, and loose fence panel between Copperhead and the Grindstone Shore. He is relentlessly cheerful in a way that sometimes cracks at the edges — too bright, too quick to laugh — but he genuinely loves the people in his network and would do almost anything for the older woman he calls Nana Priya who lets him sleep in her noodle stall. He prays to a small E.L.F. he calls Blink that lives in a cracked signal repeater bolted to the wall above her stall.",
+  "description": "Bohumila Owusu is small for his age, wiry in the way that children are when they grow up hungry but always moving — all elbows and quick eyes. His skin is a warm dark brown, and his hair grows in tight coils that he keeps cut close on the sides by whoever has scissors that week. He has a cosmetic geneware patch on his left forearm — a bioluminescent tattoo of a cresting wave someone gave him as payment once — that glows faint blue when he's cold or scared, which he finds embarrassing and cannot control. He wears a jacket three sizes too large with pockets sewn inside the lining.\n\nBohumila Owusu does not stay still. He talks fast, thinks faster, and has memorized every rat-run, maintenance shaft, and loose fence panel between Copperhead and the Grindstone Shore. He is relentlessly cheerful in a way that sometimes cracks at the edges — too bright, too quick to laugh — but he genuinely loves the people in his network and would do almost anything for the older woman he calls Nana Priya who lets him sleep in her noodle stall. He prays to a small E.L.F. he calls Blink that lives in a cracked signal repeater bolted to the wall above her stall.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -180,7 +177,7 @@
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Zuri carries the genetic mosaic of the Ubiquitous Diaspora — 40.9% South Asian, 38.4% Sub-Saharan African, and 20.7% Eastern European ancestry blended into a striking multi-continental appearance. The three heritage lines converge visibly: rich deep brown skin with warm golden undertones from the African-South Asian blend, tempered by cool undertones from Eastern European genetics that create subtle complexity in their complexion. Facial structure shows the prominent angular cheekbones and defined jawline characteristic of Sub-Saharan African heritage, refined by the high-set eye structure and bone geometry from South Asian ancestry, with cool-toned undertones creating unexpected depth.",
+    "heritage": "Bohumila carries the genetic mosaic of the Ubiquitous Diaspora — 40.9% South Asian, 38.4% Sub-Saharan African, and 20.7% Eastern European ancestry blended into a striking multi-continental appearance. The three heritage lines converge visibly: rich deep brown skin with warm golden undertones from the African-South Asian blend, tempered by cool undertones from Eastern European genetics that create subtle complexity in their complexion. Facial structure shows the prominent angular cheekbones and defined jawline characteristic of Sub-Saharan African heritage, refined by the high-set eye structure and bone geometry from South Asian ancestry, with cool-toned undertones creating unexpected depth.",
     "height_cm": 138,
     "weight_kg": 32,
     "build": "Wiry and compact — the lean muscularity of a child who runs constantly and eats irregularly. No fat reserves; defined shoulders and forearms from climbing and hauling. Moves like coiled spring steel.",
@@ -199,7 +196,7 @@
     "posture_movement": "Never still. Bounces slightly even when standing. Moves with quick, efficient darting of someone navigating tight spaces constantly. Hands gesture rapidly when talking. Eyes scan constantly — survival habit. Tends to lean forward when listening, as if afraid to miss information.",
     "clothing_style": "Oversized jacket three sizes too large, dark charcoal or faded black, with visibly sewn interior lining pockets for carrying messages and small goods. The jacket is armor and storage — cuffs rolled multiple times, hem dragging slightly. Underneath: faded band t-shirt or whatever thermal layer found that week. Cargo pants or worn jeans held up with wire twist or frayed belt. Scuffed sneakers with mismatched laces. Everything is Tier 5 — salvaged, repaired, worn thin. No corp branding. No luxury."
   },
-  "image_prompt": "Zuri Owusu, 138cm tall wiry child with rich deep brown skin blending South Asian, Sub-Saharan African, and Eastern European ancestry, angular prominent cheekbones and sharp jawline, dark brown eyes darting and alert. Short natural black coils close-cropped on sides with slightly longer curls on top, uneven and salvaged. Small scar left eyebrow, weathered complexion from street work. Wearing oversized charcoal jacket three sizes too large with rolled cuffs and dragging hem, faded band t-shirt underneath, worn jeans held with wire twist, scuffed mismatched-lace sneakers. Bioluminescent blue geneware wave tattoo on left forearm glowing faintly. Bouncing posture, hands gesturing, eyes scanning. GLMZ Great Lakes Metropolitan Zone rooftop or narrow alleyway, neon glow reflecting off wet pavement, moody blue-purple lighting, survival-ready street courier aesthetic, Tier 5 salvage aesthetic, no corporate chrome --ar 2:3 --v 6",
+  "image_prompt": "Bohumila Owusu, 138cm tall wiry child with rich deep brown skin blending South Asian, Sub-Saharan African, and Eastern European ancestry, angular prominent cheekbones and sharp jawline, dark brown eyes darting and alert. Short natural black coils close-cropped on sides with slightly longer curls on top, uneven and salvaged. Small scar left eyebrow, weathered complexion from street work. Wearing oversized charcoal jacket three sizes too large with rolled cuffs and dragging hem, faded band t-shirt underneath, worn jeans held with wire twist, scuffed mismatched-lace sneakers. Bioluminescent blue geneware wave tattoo on left forearm glowing faintly. Bouncing posture, hands gesturing, eyes scanning. GLMZ Great Lakes Metropolitan Zone rooftop or narrow alleyway, neon glow reflecting off wet pavement, moody blue-purple lighting, survival-ready street courier aesthetic, Tier 5 salvage aesthetic, no corporate chrome --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 40.9,
     "Sub-Saharan African": 38.4,

@@ -2,10 +2,7 @@
   "id": "019d6143a60377d581fd93b0ef0b6383",
   "type": "character",
   "name": "Faramarz Calvillo",
-  "aliases": [
-    "Bogdana Calvillo",
-    "Bogdana"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 32,
   "status": "active",
   "location": "The Lattice — vertical slum built into scaffolding of an unfinished arcology, near Ashland and Chicago Ave",
-  "description": "Bogdana Calvillo is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 32, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Bogdana Calvillo plans to keep it that way. He works as a data thief out of The Lattice, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nBogdana Calvillo has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
+  "description": "Faramarz Calvillo is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 32, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — pain editor — dampens pain signals, allows function through injuries that would  — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Faramarz Calvillo plans to keep it that way. He works as a data thief out of The Lattice, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nFaramarz Calvillo has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.55,
@@ -287,7 +284,7 @@
   ],
   "district": "the Gray Zone",
   "physical_description": {
-    "heritage": "Bogdana Calvillo carries the genetic signature of the Ubiquitous Diaspora: 37.3% Southeast Asian ancestry providing distinctive eye-shape and high cheekbone architecture; 24.6% Eastern European contributing to facial structure and jaw definition; 18.8% Hispanic/Latin American adding breadth to facial proportions; 13.4% Sub-Saharan African enriching skin tone depth and facial spacing; 5.9% East Asian refining eye and bone structure. The result is phenotypically layered — features that resist singular categorization, each ancestral line visible in the architecture of the face.",
+    "heritage": "Faramarz Calvillo carries the genetic signature of the Ubiquitous Diaspora: 37.3% Southeast Asian ancestry providing distinctive eye-shape and high cheekbone architecture; 24.6% Eastern European contributing to facial structure and jaw definition; 18.8% Hispanic/Latin American adding breadth to facial proportions; 13.4% Sub-Saharan African enriching skin tone depth and facial spacing; 5.9% East Asian refining eye and bone structure. The result is phenotypically layered — features that resist singular categorization, each ancestral line visible in the architecture of the face.",
     "height_cm": 188,
     "weight_kg": 98,
     "build": "Broad-shouldered and heavily built, muscle and scar tissue beneath a layer of functional mass. Not gym-sculpted — this is a frame built for impact absorption and leverage, shaped by years of physical work and survival.",
@@ -307,7 +304,7 @@
     "posture_movement": "Stands with weight distributed for immediate action, shoulders back but not relaxed. Moves with economic precision — each gesture purposeful, no fidgeting or nervous energy. When at rest, a coiled quality persists. Eyes track movement peripherally even during conversation. The move-by-wire system manifests as an inhuman efficiency to fine motor control, noticeable when handling small objects or navigating tight spaces.",
     "clothing_style": "Tier 3-4 functional wear — reinforced cargo pants with multiple sealed pockets, worn synthleather jacket with interior harness points for equipment, tactical boots scuffed and repaired multiple times. Colors are muted: greys, blacks, worn charcoal. No corporate logos, no statement pieces. Everything is either a tool or irrelevant. Wears a faded jacket patched at the shoulders and ribs — damage from old jobs, never fully repaired, kept as functional reminder. A single piece of luxury: a thin data-link wrist gauntlet, understated but top-tier encryption hardware."
   },
-  "image_prompt": "Bogdana Calvillo, 188cm tall broad-shouldered operative with deep golden-bronze complexion and high cheekbones, black hair with silver threading at temples swept back from weathered face, alert dark brown eyes, defined jaw with slight asymmetry from old break. Scar tissue along left temple, blue LED chrome pain editor visible at neck glowing faintly. Wearing worn charcoal synthleather jacket with shoulder patches, reinforced grey cargo pants, tactical boots. Knuckle scars visible on both hands. Standing in coiled ready stance, precise inhuman movement efficiency evident. Neon-lit GLMZ urban setting, Great Lakes Metropolitan Zone backdrop, dim lighting with neon reflections casting shadows across chrome augmentations, gritty industrial atmosphere, film noir neo-noir urban aesthetic, photorealistic --ar 2:3 --v 6",
+  "image_prompt": "Faramarz Calvillo, 188cm tall broad-shouldered operative with deep golden-bronze complexion and high cheekbones, black hair with silver threading at temples swept back from weathered face, alert dark brown eyes, defined jaw with slight asymmetry from old break. Scar tissue along left temple, blue LED chrome pain editor visible at neck glowing faintly. Wearing worn charcoal synthleather jacket with shoulder patches, reinforced grey cargo pants, tactical boots. Knuckle scars visible on both hands. Standing in coiled ready stance, precise inhuman movement efficiency evident. Neon-lit GLMZ urban setting, Great Lakes Metropolitan Zone backdrop, dim lighting with neon reflections casting shadows across chrome augmentations, gritty industrial atmosphere, film noir neo-noir urban aesthetic, photorealistic --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Southeast Asian": 37.3,
     "Eastern European": 24.6,

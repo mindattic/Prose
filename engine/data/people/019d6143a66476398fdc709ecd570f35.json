@@ -2,10 +2,7 @@
   "id": "019d6143a66476398fdc709ecd570f35",
   "type": "character",
   "name": "Dong Erikstad",
-  "aliases": [
-    "Ama Erikstad",
-    "Ama"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 34,
   "status": "active",
   "location": "the Gray Zone, near Western and Chicago Ave",
-  "description": "Ama Erikstad is a compact, dark-skinned woman of Nigerian-Dutch descent with close-cropped hair shaved to geometric patterns on one side — a style she touches up herself with a straight razor. Her hands are her most notable feature: surgeon-precise, perpetually slightly stained with biosynthetic sealant, adorned with a lattice of fine silver conductive thread she stitched into her own skin to improve haptic feedback during procedures. She works out of a converted shipping container wedged beneath the Gray Zone's elevated roadways, a space she calls the Parlour, decorated with hand-drawn anatomical diagrams and the occasional wilting plant.\n\nShe trained as a licensed biomedical technician in the Meridian Core before her credentials were revoked following an incident she describes only as 'a disagreement about who deserves to live.' Since sliding down to the Gray Zone, she has built a reputation as the most reliable unlicensed augmentation installer in the district — someone who will not butcher you, will not sell your biometric data, and will remember your name next time. Her waiting list is three weeks long and she accepts payment in currency, favors, or occasionally food.\n\nAma Erikstad is not idealistic about the people she helps, but she is consistent. She patches up runners, gang members, runaways, and anyone who cannot access or afford licensed care. She has a dry, unhurried manner that people frequently mistake for coldness until the moment she says exactly the right thing. She keeps a battered handwritten ledger of every patient she has treated, not for blackmail but because she believes someone should know these people existed and were cared for.",
+  "description": "Dong Erikstad is a compact, dark-skinned woman of Nigerian-Dutch descent with close-cropped hair shaved to geometric patterns on one side — a style she touches up herself with a straight razor. Her hands are her most notable feature: surgeon-precise, perpetually slightly stained with biosynthetic sealant, adorned with a lattice of fine silver conductive thread she stitched into her own skin to improve haptic feedback during procedures. She works out of a converted shipping container wedged beneath the Gray Zone's elevated roadways, a space she calls the Parlour, decorated with hand-drawn anatomical diagrams and the occasional wilting plant.\n\nShe trained as a licensed biomedical technician in the Meridian Core before her credentials were revoked following an incident she describes only as 'a disagreement about who deserves to live.' Since sliding down to the Gray Zone, she has built a reputation as the most reliable unlicensed augmentation installer in the district — someone who will not butcher you, will not sell your biometric data, and will remember your name next time. Her waiting list is three weeks long and she accepts payment in currency, favors, or occasionally food.\n\nDong Erikstad is not idealistic about the people she helps, but she is consistent. She patches up runners, gang members, runaways, and anyone who cannot access or afford licensed care. She has a dry, unhurried manner that people frequently mistake for coldness until the moment she says exactly the right thing. She keeps a battered handwritten ledger of every patient she has treated, not for blackmail but because she believes someone should know these people existed and were cared for.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -251,7 +248,7 @@
     "Carrion Defense Works Bone Saw BS-3 'Butcher'",
     "Chicago",
     "Silver",
-    "Haze Johansson",
+    "Akosua Johansson",
     "The Pure Hand",
     "Slagworks Industrial"
   ],
@@ -277,7 +274,7 @@
     "posture_movement": "Moves with deliberate efficiency, economical gestures. Stands slightly forward at the hips, a habitual surgical posture. Hands are rarely still — they gesture during conversation or rest in a ready position. When focused, she becomes almost motionless. Walking pace is steady and unhurried even when moving quickly; she does not hurry unnecessarily.",
     "clothing_style": "Tier 4 utilitarian with no concession to fashion. Black or dark gray reinforced polymer work pants with multiple pockets (carries supplies: bandages, micro-sutures, diagnostic tools). Loose-fitting long-sleeve compression shirts in charcoal or dark teal, sleeves often pushed to elbow to expose her hands and thread work. Over this: a heavily modified white lab coat that has been reinforced at stress points with darker fabric patches; the original corporate branding long since removed or covered. Worn gray canvas field jacket over everything during winter or when leaving the Parlour. Practical black boots with reinforced soles, approximately five years old, meticulously maintained. A single piece of jewelry: a thin silver bracelet on right wrist, dented from years of work, possibly a memento — never removed."
   },
-  "image_prompt": "Ama Erikstad, a lean 163cm surgical tech with rich warm brown skin blending Sub-Saharan African, East Asian, and Central Asian heritage. Close-cropped black hair with geometric razor patterns on left side, right side at 2cm. Naturally dark brown right eye, left eye augmented with subtle opalescent optical magnification. Sharp cheekbones with faint old scar tissue on right cheek and jaw. Impeccably clean hands covered in gleaming silver conductive thread lattice in geometric patterns from wrist to fingertips. Wearing dark teal compression shirt with sleeves pushed to elbows, revealing hand augmentations, dark gray reinforced work pants with multiple pockets, white reinforced lab coat with darker fabric patches, worn gray canvas field jacket. Thin silver dented bracelet on right wrist. Surgical posture, standing slightly forward at hips, hands in ready position. GLMZ Great Lakes Metropolitan Zone underground clinic setting, fluorescent overhead lights catching the gleam of her hand threads and left eye augmentation. Moody, focused, efficient. Professional and slightly worn but meticulously maintained. --ar 2:3 --v 6",
+  "image_prompt": "Dong Erikstad, a lean 163cm surgical tech with rich warm brown skin blending Sub-Saharan African, East Asian, and Central Asian heritage. Close-cropped black hair with geometric razor patterns on left side, right side at 2cm. Naturally dark brown right eye, left eye augmented with subtle opalescent optical magnification. Sharp cheekbones with faint old scar tissue on right cheek and jaw. Impeccably clean hands covered in gleaming silver conductive thread lattice in geometric patterns from wrist to fingertips. Wearing dark teal compression shirt with sleeves pushed to elbows, revealing hand augmentations, dark gray reinforced work pants with multiple pockets, white reinforced lab coat with darker fabric patches, worn gray canvas field jacket. Thin silver dented bracelet on right wrist. Surgical posture, standing slightly forward at hips, hands in ready position. GLMZ Great Lakes Metropolitan Zone underground clinic setting, fluorescent overhead lights catching the gleam of her hand threads and left eye augmentation. Moody, focused, efficient. Professional and slightly worn but meticulously maintained. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 43.2,
     "East Asian": 18.9,

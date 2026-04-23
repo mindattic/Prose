@@ -2,10 +2,7 @@
   "id": "019d6143a71877338ed17402e0faf80a",
   "type": "character",
   "name": "Amlan Bhattacharya",
-  "aliases": [
-    "Zephyr Bhattacharya",
-    "Zephyr"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 60,
   "status": "active",
   "location": "Crucible Square — open-air market, Tier 1-2 commerce, near Halsted and Chicago Ave",
-  "description": "Zephyr Bhattacharya is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 60, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nShe taught herself the trade through trial, error, and a pain tolerance that concerns the people who know her best. She works as a tech retriever out of Crucible Square, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Zephyr Bhattacharya lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "description": "Amlan Bhattacharya is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 60, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nShe taught herself the trade through trial, error, and a pain tolerance that concerns the people who know her best. She works as a tech retriever out of Crucible Square, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nWhat Amlan Bhattacharya lacks in subtlety, she compensates for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.31,
@@ -303,7 +300,7 @@
     "posture_movement": "Stands with weight distributed forward on the balls of her feet, shoulders slightly elevated — a ready stance she never quite relaxes from. Moves economically, no wasted motion. Breathing is audibly synthetic when exertion is high, a faint mechanical wheeze beneath organic effort.",
     "clothing_style": "Tier 2 utilitarian — reinforced tactical jacket in matte black with internal pockets for tools and contracts. Worn cargo pants with cargo pockets and reinforced knees. Steel-toed boots, well-maintained but scuffed from field work. No jewelry. Clothes are functional, durable, and completely devoid of status markers or aesthetics beyond practicality."
   },
-  "image_prompt": "Zephyr Bhattacharya, 178cm tall, broad-shouldered heavy-set muscular woman with deep warm brown skin blending Sub-Saharan African, South Asian, East Asian, and Latin American ancestry. High prominent cheekbones, East Asian eye shape with deep brown eyes containing faint micro-circuitry, angular carved features lined from age. Silver-grey hair with dark roots in tight functional braid, medium length. Vertical scar from left temple to jawline. Chrome interface ports at base of neck glowing faintly, neural link port at right temple. Burn mark scarification on right inner forearm. Standing in ready stance, weight forward on balls of feet, shoulders elevated. Wearing matte black reinforced tactical jacket with internal pockets, worn cargo pants with reinforced knees, scuffed steel-toed boots. GLMZ, Great Lakes Metropolitan Zone, gritty industrial setting, cool blue and amber neon lighting, atmospheric haze, her synthetic lung system audible in the stillness, ready and unsentimental, no status markers, purely functional augmentations visible and deliberately exposed --ar 2:3 --v 6",
+  "image_prompt": "Amlan Bhattacharya, 178cm tall, broad-shouldered heavy-set muscular woman with deep warm brown skin blending Sub-Saharan African, South Asian, East Asian, and Latin American ancestry. High prominent cheekbones, East Asian eye shape with deep brown eyes containing faint micro-circuitry, angular carved features lined from age. Silver-grey hair with dark roots in tight functional braid, medium length. Vertical scar from left temple to jawline. Chrome interface ports at base of neck glowing faintly, neural link port at right temple. Burn mark scarification on right inner forearm. Standing in ready stance, weight forward on balls of feet, shoulders elevated. Wearing matte black reinforced tactical jacket with internal pockets, worn cargo pants with reinforced knees, scuffed steel-toed boots. GLMZ, Great Lakes Metropolitan Zone, gritty industrial setting, cool blue and amber neon lighting, atmospheric haze, her synthetic lung system audible in the stillness, ready and unsentimental, no status markers, purely functional augmentations visible and deliberately exposed --ar 2:3 --v 6",
   "genetic_ancestry": {
     "East Asian": 38.5,
     "South Asian": 31.7,

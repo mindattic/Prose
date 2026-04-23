@@ -4,9 +4,7 @@
   "vote_count": 0,
   "type": "character",
   "name": "Emeka",
-  "aliases": [
-    "Briar"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "",
   "pronouns": "",
@@ -14,7 +12,7 @@
   "age": 0,
   "status": "alive",
   "location": "",
-  "description": "Auto-scaffolded. First mentioned: \"He has still not seen Briar. What he has seen is the drone, and the relay light blinking amber at Arden's neural jack\"",
+  "description": "Auto-scaffolded. First mentioned: \"He has still not seen Emeka. What he has seen is the drone, and the relay light blinking amber at Brisa's neural jack\"",
   "psychology": {
     "facet_weights": {
       "wound": 0,
@@ -42,16 +40,16 @@
   },
   "relationships": [
     {
-      "name": "Arden and Ash",
+      "name": "Brisa and Ash",
       "type": "operates drones remotely in support",
-      "description": "operates drones remotely in support of Arden and Ash",
+      "description": "operates drones remotely in support of Brisa and Ash",
       "emotional_core": "",
       "story_tension": ""
     },
     {
       "name": "",
-      "type": "communicates through Arden's neural jack relay",
-      "description": "communicates through Arden's neural jack relay",
+      "type": "communicates through Brisa's neural jack relay",
+      "description": "communicates through Brisa's neural jack relay",
       "emotional_core": "",
       "story_tension": ""
     },

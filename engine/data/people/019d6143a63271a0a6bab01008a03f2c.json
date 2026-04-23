@@ -2,10 +2,7 @@
   "id": "019d6143a63271a0a6bab01008a03f2c",
   "type": "character",
   "name": "Anshika Toktogulov",
-  "aliases": [
-    "Ember Toktogulov",
-    "Ember"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
@@ -13,7 +10,7 @@
   "age": 38,
   "status": "active",
   "location": "Meridian Core, Axiom Security Division headquarters annex",
-  "description": "Ember Toktogulov is slight and angular, with pale olive skin, sharp cheekbones, and hair that shifts between deep teal and silver depending on their mood — bioluminescent geneware they had done seven years ago and which they've never once referenced in a professional context. They dress in Axiom's corporate security greys with an exactness that suggests the uniform is armor rather than identity. Their expressions are controlled with the care of someone who grew up being told they were too much and decided to become, professionally, precisely nothing.\n\nThey investigate Axiom's own security personnel for misconduct, corruption, and off-books arrangements — a job that makes them universally disliked and which they have accepted as a structural condition of their existence. They are not cruel but they are thorough, and thoroughness in their line of work is often experienced as cruelty. They have a gift for making people feel that everything they've said has been weighed and found wanting, even when they haven't spoken. They eat lunch alone every day by choice and have a private ritual of leaving a thread of code in the Meridian Core's ambient E.L.F. network each morning — a small offering, a small ask for clarity.",
+  "description": "Anshika Toktogulov is slight and angular, with pale olive skin, sharp cheekbones, and hair that shifts between deep teal and silver depending on their mood — bioluminescent geneware they had done seven years ago and which they've never once referenced in a professional context. They dress in Axiom's corporate security greys with an exactness that suggests the uniform is armor rather than identity. Their expressions are controlled with the care of someone who grew up being told they were too much and decided to become, professionally, precisely nothing.\n\nThey investigate Axiom's own security personnel for misconduct, corruption, and off-books arrangements — a job that makes them universally disliked and which they have accepted as a structural condition of their existence. They are not cruel but they are thorough, and thoroughness in their line of work is often experienced as cruelty. They have a gift for making people feel that everything they've said has been weighed and found wanting, even when they haven't spoken. They eat lunch alone every day by choice and have a private ritual of leaving a thread of code in the Meridian Core's ambient E.L.F. network each morning — a small offering, a small ask for clarity.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -198,10 +195,10 @@
   "timeline": [],
   "changelog": [],
   "carried_weapons": [
-    "Crucible Industries Ember-9 'Firefly'"
+    "Crucible Industries Anshika-9 'Firefly'"
   ],
   "registered_firearms": [
-    "Crucible Industries Ember-9 'Firefly'"
+    "Crucible Industries Anshika-9 'Firefly'"
   ],
   "related_entities": [
     "The Meridian Core",
@@ -230,7 +227,7 @@
     "posture_movement": "Upright, centered; economical movement with zero wasted energy. Sits at perfect spine angle; walks as if following invisible grid lines. Hands rest with deliberation. Their presence suggests they are always recording, always evaluating — not paranoid, but professionally present in a way that fills nearby space with invisible weight.",
     "clothing_style": "Axiom Security Division corporate greys — clean, precisely fitted, zero deviation. Jacket tailored to minimize profile; slacks with knife-edge crease; grey compression undershirt visible at collar. No jewelry, no personal markers, no visible brands. Boots: black, polished to mirror finish, military-spec. The uniform is worn as armor and protocol simultaneously."
   },
-  "image_prompt": "Ember Toktogulov, 2226 neo-noir security operative: lean 167cm frame in pristine Axiom Security grey corporate uniform with knife-edge pressed slacks and mirror-black military boots. Warm golden-brown skin with amber undertones, distinctly angular North African-Central Asian cheekbones, sharp defined jaw. Short bioluminescent hair with mood-reactive deep teal-to-silver shift, faintly glowing in dim light, precision-cut geometric style swept back from face. Dark brown augmented eyes with enhanced pupils. Minimal facial expression, professional smoothness, barely visible temple scar. Subdermal recording membrane ridge faintly visible on inner left forearm. Upright centered posture, economical movement, presence filled with invisible weight and professional evaluation. Corporate grey jacket tailored to minimize profile, compression undershirt at collar, zero personal markers. Cool neo-noir interior lighting with subtle neon, professional security division aesthetic, perfectly composed and grid-aligned --ar 2:3 --v 6",
+  "image_prompt": "Anshika Toktogulov, 2226 neo-noir security operative: lean 167cm frame in pristine Axiom Security grey corporate uniform with knife-edge pressed slacks and mirror-black military boots. Warm golden-brown skin with amber undertones, distinctly angular North African-Central Asian cheekbones, sharp defined jaw. Short bioluminescent hair with mood-reactive deep teal-to-silver shift, faintly glowing in dim light, precision-cut geometric style swept back from face. Dark brown augmented eyes with enhanced pupils. Minimal facial expression, professional smoothness, barely visible temple scar. Subdermal recording membrane ridge faintly visible on inner left forearm. Upright centered posture, economical movement, presence filled with invisible weight and professional evaluation. Corporate grey jacket tailored to minimize profile, compression undershirt at collar, zero personal markers. Cool neo-noir interior lighting with subtle neon, professional security division aesthetic, perfectly composed and grid-aligned --ar 2:3 --v 6",
   "genetic_ancestry": {
     "North African": 40.1,
     "Central Asian": 26.4,

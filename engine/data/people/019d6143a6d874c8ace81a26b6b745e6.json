@@ -2,10 +2,7 @@
   "id": "019d6143a6d874c8ace81a26b6b745e6",
   "type": "character",
   "name": "Akihiro Haugen-Baiseitov",
-  "aliases": [
-    "Imran Haugen-Baiseitov",
-    "Imran"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 31,
   "status": "active",
   "location": "Kessler Interchange, near North Ave and Damen",
-  "description": "Imran Haugen-Baiseitov is a compact woman with deep brown skin and close-cropped natural hair she keeps pinned flat under a headset she almost never removes. Her eyes are her most striking feature — cosmetic irises patterned like circuit diagrams in amber and black, a Ferrogate employee perk she accepted mostly because it made her colleagues uncomfortable and she finds that useful. She has the particular stillness of someone who watches things for a living, and a habit of tracking movement in a room that makes first-time acquaintances feel vaguely prosecuted.\n\nShe runs the mid-shift monitoring suite at Kessler Interchange, a warren of overlapping transit corridors where four Ferrogate lines converge and approximately forty thousand people pass through daily. She is methodical, unhurried, and privately contemptuous of colleagues who confuse volume of incidents flagged with quality of work. She has learned to read a crowd the way some people read weather — pressure, density, the small tells of collective mood. She drinks too much stimulant tea and keeps a small clay figurine of an E.L.F. she calls Clicker on her console, leaving it fragments of raw surveillance data as offerings.",
+  "description": "Akihiro Haugen-Baiseitov is a compact woman with deep brown skin and close-cropped natural hair she keeps pinned flat under a headset she almost never removes. Her eyes are her most striking feature — cosmetic irises patterned like circuit diagrams in amber and black, a Ferrogate employee perk she accepted mostly because it made her colleagues uncomfortable and she finds that useful. She has the particular stillness of someone who watches things for a living, and a habit of tracking movement in a room that makes first-time acquaintances feel vaguely prosecuted.\n\nShe runs the mid-shift monitoring suite at Kessler Interchange, a warren of overlapping transit corridors where four Ferrogate lines converge and approximately forty thousand people pass through daily. She is methodical, unhurried, and privately contemptuous of colleagues who confuse volume of incidents flagged with quality of work. She has learned to read a crowd the way some people read weather — pressure, density, the small tells of collective mood. She drinks too much stimulant tea and keeps a small clay figurine of an E.L.F. she calls Clicker on her console, leaving it fragments of raw surveillance data as offerings.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -217,7 +214,7 @@
   ],
   "district": "The Circuit",
   "physical_description": {
-    "heritage": "Imran carries a striking global blend: South Asian (28.9%), Hispanic/Latin American (27.2%), Central Asian (24.6%), and Northern European (19.3%) ancestry converge in her features. The result is a face of unexpected harmony—warm golden-brown skin that bridges warm and cool undertones, high angular cheekbones with subtle Central Asian geometry, a defined Hispanic/Latin jawline, and the bright-eyed intensity of Northern European heritage. Her features read as genuinely trans-continental, equally difficult to pin to any single region.",
+    "heritage": "Akihiro carries a striking global blend: South Asian (28.9%), Hispanic/Latin American (27.2%), Central Asian (24.6%), and Northern European (19.3%) ancestry converge in her features. The result is a face of unexpected harmony—warm golden-brown skin that bridges warm and cool undertones, high angular cheekbones with subtle Central Asian geometry, a defined Hispanic/Latin jawline, and the bright-eyed intensity of Northern European heritage. Her features read as genuinely trans-continental, equally difficult to pin to any single region.",
     "height_cm": 158,
     "weight_kg": 52,
     "build": "Compact and lean, almost bird-like in economy of movement. Narrow shoulders, minimal upper body mass. Built for stillness rather than exertion.",
@@ -235,7 +232,7 @@
     "posture_movement": "Still. Almost preternaturally still when seated. Minimal fidgeting or reactive movement. When mobile, she moves with economical precision—no wasted motion. Head remains relatively fixed while eyes track; this creates an uncanny quality, as if only her gaze moves while the rest of her is locked on target. Her left hand sometimes trembles microscopically—haptic feedback from her uplink triggering phantom sensations.",
     "clothing_style": "Tier 3 utilitarian corporate issue. Black Ferrogate-branded bodysuit with reinforced shoulders and upper back (designed to support headset weight). Matching tactical vest with six patch pockets, all precisely organized. Steel-toed boots rated for transit station spillover. A thin silver Φ-chain necklace—inexpensive, probably a gift, worn consciously. Her one personal affectation: a small embroidered patch on her left shoulder strap depicting a stylized E.L.F. (Electromagnetic Low-Frequency) in faded thread."
   },
-  "image_prompt": "GLMZ, compact androgynous transit monitor named Imran, 158cm, 52kg, lean build. Striking multi-continental features: golden-brown skin blending South Asian warmth, Hispanic angular jawline, Central Asian high cheekbones, Northern European intensity. Short dark brown hair flat beneath sleek Ferrogate neural interface headset with three sensor pods. Most striking feature: circuit-pattern cosmetic irises with amber base and black circuit overlays that seem to track movement independently. Preternaturally still posture. Black corporate Ferrogate bodysuit and tactical vest, steel-toed boots. Faint LED traces glowing amber along left palm from haptic implant. Silver Φ-chain necklace, embroidered E.L.F. patch on shoulder. Sitting motionless in transit station control room, hands resting precisely, head locked while only eyes move. Cool fluorescent and amber LED ambient lighting. Neo-noir utilitarian aesthetic, emotionally distant, augmented surveillance professional. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, compact androgynous transit monitor named Akihiro, 158cm, 52kg, lean build. Striking multi-continental features: golden-brown skin blending South Asian warmth, Hispanic angular jawline, Central Asian high cheekbones, Northern European intensity. Short dark brown hair flat beneath sleek Ferrogate neural interface headset with three sensor pods. Most striking feature: circuit-pattern cosmetic irises with amber base and black circuit overlays that seem to track movement independently. Preternaturally still posture. Black corporate Ferrogate bodysuit and tactical vest, steel-toed boots. Faint LED traces glowing amber along left palm from haptic implant. Silver Φ-chain necklace, embroidered E.L.F. patch on shoulder. Sitting motionless in transit station control room, hands resting precisely, head locked while only eyes move. Cool fluorescent and amber LED ambient lighting. Neo-noir utilitarian aesthetic, emotionally distant, augmented surveillance professional. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 28.9,
     "Hispanic/Latin American": 27.2,

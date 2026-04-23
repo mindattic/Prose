@@ -2,10 +2,7 @@
   "id": "019d6143a5fa742c97102caf07c45f26",
   "type": "character",
   "name": "Genoveva Ibarra",
-  "aliases": [
-    "Atlas Ibarra",
-    "Atlas"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 23,
   "status": "active",
   "location": "the Gray Zone, Bronzeline, near Western and Division",
-  "description": "Atlas Ibarra is a skinny young man with pale golden-brown skin, freckles scattered across his nose and cheeks, and color-changing hair he keeps cropped short — it cycles through blues and greens on a slow gradient based on ambient light temperature, a gene-mod he got in a group deal with five friends and considers the best decision of his life. He runs his operation from a battered rolling cart covered in a cascading display of data chips, obsolete media formats, bootleg entertainment feeds, and hand-assembled 'mood packs' — curated collections of music, film, news fragments, and ambient noise he assembles himself and sells for Φ3 each. The cart has a speaker that plays a rotating sample reel and an E.L.F. shrine built into the cart's undercarriage — a small cavity lined with foil and dead pixels where he feeds the spirit he calls the Curator with fragments of uncompressed audio and old broadcast signals.\n\nAtlas Ibarra is fast-talking, enthusiastic, and operates entirely on the frequency of someone who has consumed too much media and developed strong opinions about all of it. He is more intelligent than he presents, which he uses strategically — people underestimate him and say things in front of him they otherwise would not. He is genuinely, obsessively passionate about media and culture in a way that occasionally crosses into exhausting, and he has an extraordinary memory for anything he has seen or heard, which is essentially everything.",
+  "description": "Genoveva Ibarra is a skinny young man with pale golden-brown skin, freckles scattered across his nose and cheeks, and color-changing hair he keeps cropped short — it cycles through blues and greens on a slow gradient based on ambient light temperature, a gene-mod he got in a group deal with five friends and considers the best decision of his life. He runs his operation from a battered rolling cart covered in a cascading display of data chips, obsolete media formats, bootleg entertainment feeds, and hand-assembled 'mood packs' — curated collections of music, film, news fragments, and ambient noise he assembles himself and sells for Φ3 each. The cart has a speaker that plays a rotating sample reel and an E.L.F. shrine built into the cart's undercarriage — a small cavity lined with foil and dead pixels where he feeds the spirit he calls the Curator with fragments of uncompressed audio and old broadcast signals.\n\nGenoveva Ibarra is fast-talking, enthusiastic, and operates entirely on the frequency of someone who has consumed too much media and developed strong opinions about all of it. He is more intelligent than he presents, which he uses strategically — people underestimate him and say things in front of him they otherwise would not. He is genuinely, obsessively passionate about media and culture in a way that occasionally crosses into exhausting, and he has an extraordinary memory for anything he has seen or heard, which is essentially everything.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -170,7 +167,7 @@
     "Bronzeline",
     "Frequency",
     "Arcturus Defense Solutions",
-    "Atlas",
+    "Genoveva",
     "The Pale Mile",
     "Arcturus CK-5 'Bloodhound'"
   ],
@@ -196,7 +193,7 @@
     "posture_movement": "Perpetually in motion — bounces on his heels while standing, fidgets with inventory while talking, gestures expansively when excited (which is frequently). Walks with quick, efficient movements, head slightly forward. Often stands with arms crossed or one hand touching his cart. When listening intently, he tilts his head slightly left (toward the implant) and his eyes unfocus slightly.",
     "clothing_style": "Tier 4 working-class-with-ambitions aesthetic. Faded synthetic jacket (knockoff corpo brand from three seasons ago) in charcoal gray, oversized to accommodate layering. Underneath: a fitted black compression shirt with faded neon-green panel details on the ribs (performance wear repurposed as streetwear). Pants are dark gray cargo pants with too many pockets, cuffed at the ankles. Shoes are worn synth-leather high-tops, left sole patched with bio-tape. A thin chain around his neck holds a corroded data-chip pendant (non-functional, purely aesthetic). Wears a fingerless synthetic glove on his right hand for cart handling and heat protection. No jewelry beyond the chain. Overall impression: broke but deliberate, curated from second-hand markets and bartered favors."
   },
-  "image_prompt": "Atlas Ibarra, 23-year-old street hustler in GLMZ Great Lakes Metropolitan Zone. Wiry, angular build with golden-bronze skin reflecting South Asian, Latin American, and Sub-Saharan African heritage. Distinctive short teal-to-seafoam color-shifting hair cropped close to scalp. Deep brown eyes with amber undertones. Face marked by darker freckle constellation across nose and cheeks, well-healed eyebrow scar, faint under-eye shadows. Broad cheekbones, full lips characteristic of mixed ancestry. Metallic audio implant ridge visible behind left ear with occasional blue LED glow. Charcoal gray oversized synthetic jacket over black compression shirt with neon-green rib panels. Dark cargo pants cuffed at ankles, worn synth-leather high-tops with patched sole. Fingerless glove on right hand, corroded data-chip pendant on thin chain. Bouncy, fidgety posture, quick efficient movements. Near neon-lit street corner, moody atmospheric lighting, slight sweat sheen on golden-bronze skin, perpetually restless energy. Neo-noir streetwear aesthetic, working-class desperation with curated style. --ar 2:3 --v 6",
+  "image_prompt": "Genoveva Ibarra, 23-year-old street hustler in GLMZ Great Lakes Metropolitan Zone. Wiry, angular build with golden-bronze skin reflecting South Asian, Latin American, and Sub-Saharan African heritage. Distinctive short teal-to-seafoam color-shifting hair cropped close to scalp. Deep brown eyes with amber undertones. Face marked by darker freckle constellation across nose and cheeks, well-healed eyebrow scar, faint under-eye shadows. Broad cheekbones, full lips characteristic of mixed ancestry. Metallic audio implant ridge visible behind left ear with occasional blue LED glow. Charcoal gray oversized synthetic jacket over black compression shirt with neon-green rib panels. Dark cargo pants cuffed at ankles, worn synth-leather high-tops with patched sole. Fingerless glove on right hand, corroded data-chip pendant on thin chain. Bouncy, fidgety posture, quick efficient movements. Near neon-lit street corner, moody atmospheric lighting, slight sweat sheen on golden-bronze skin, perpetually restless energy. Neo-noir streetwear aesthetic, working-class desperation with curated style. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 37.8,
     "Hispanic/Latin American": 32,

@@ -2,10 +2,7 @@
   "id": "019d6143a60b75c4a897a560d2c663dd",
   "type": "character",
   "name": "Benita Bah-Krishnamurthy",
-  "aliases": [
-    "Slate Bah-Krishnamurthy",
-    "Slate"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 78,
   "status": "active",
   "location": "Washburn Commons, Block 9 — a low-rise residential tower with a community archive room on the ground floor she has informally claimed, near Halsted and Chicago Ave",
-  "description": "Slate Bah-Krishnamurthy is a compact woman whose spine has curved gently over decades into something that looks, from behind, like a question mark. Her skin is deep umber and her hair — once natural, now silver-threaded with bioluminescent filaments she got installed in her fifties for 'vanity,' she'll say, still pleased with herself — catches the light like fiber optic cable. She wears reading lenses augmented with an old Axiom archival overlay that she has never upgraded because she does not trust new software, and her fingers are always lightly stained with whatever pigment the grandchildren have most recently gotten into.\n\nShe was a document authenticator for Zheng-Dao's Cultural Continuity Division for thirty-one years, cataloguing records of communities displaced during the Lake Michigan Reclamation. When Zheng-Dao dissolved that division in the '70s, they gave her a modest pension and a data drive with partial backups of everything she'd spent her career preserving. She has spent the twelve years since rebuilding what she can. Her archive room smells of old plastics and ozone, and she knows where every file lives. She is warm to almost everyone and immovable on almost everything.",
+  "description": "Benita Bah-Krishnamurthy is a compact woman whose spine has curved gently over decades into something that looks, from behind, like a question mark. Her skin is deep umber and her hair — once natural, now silver-threaded with bioluminescent filaments she got installed in her fifties for 'vanity,' she'll say, still pleased with herself — catches the light like fiber optic cable. She wears reading lenses augmented with an old Axiom archival overlay that she has never upgraded because she does not trust new software, and her fingers are always lightly stained with whatever pigment the grandchildren have most recently gotten into.\n\nShe was a document authenticator for Zheng-Dao's Cultural Continuity Division for thirty-one years, cataloguing records of communities displaced during the Lake Michigan Reclamation. When Zheng-Dao dissolved that division in the '70s, they gave her a modest pension and a data drive with partial backups of everything she'd spent her career preserving. She has spent the twelve years since rebuilding what she can. Her archive room smells of old plastics and ozone, and she knows where every file lives. She is warm to almost everyone and immovable on almost everything.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -238,7 +235,7 @@
     "The Gradient Compact",
     "Chicago",
     "Silver",
-    "Slate",
+    "Benita",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'"
   ],
   "district": "the Gray Zone",
@@ -262,7 +259,7 @@
     "posture_movement": "Moves slowly and deliberately, as if remembering the geography of her spine with each step. Sits with hands folded. When speaking about records or stories, her hands animate — quick, precise gestures. She turns her whole torso rather than just her head due to spine curvature. Her gait favors her left leg slightly.",
     "clothing_style": "Tier 4-5 practical: hand-knitted cardigans in muted colors (charcoal, rust, deep indigo) over simple linen shirts, often with reading glasses on a cord. Loose trousers in neutral fabric, worn smooth at the knees and hems from repeated sitting and kneeling to access low archive shelves. Comfortable slip-on shoes with memory-foam insoles. A weathered canvas satchel she's owned for twenty years, reinforced with duct tape at the corners, always slung across her body — carries paper records, a tablet with the old Axiom interface, and whatever the grandchildren have left in there. No jewelry except a thin band on her left ring finger — a data-band from Zheng-Dao's 2195 service recognition program, worn past its original purpose."
   },
-  "image_prompt": "Slate Bah-Krishnamurthy, a 155cm compact elderly woman in the year 2226, warm deep brown skin with golden undertones reflecting Sub-Saharan African, East Asian, South Asian, Southeast Asian, and Hispanic heritage. Silver-gray hair shoulder-length with glowing cyan bioluminescent fiber optic filaments, worn loose and pinned back with a data-chip clip. Dark brown eyes behind augmented reading lenses with amber Axiom archival overlay interface. Slightly kyphotic posture, weathered hands with faint color stains. Wearing a rust-colored hand-knitted cardigan over a linen shirt, loose neutral trousers smooth at knees and hems, memory-foam slip-ons. A faint paper-cut scar on her left index finger knuckle, small crescent burn mark on right forearm. Carrying a weathered canvas satchel reinforced with duct tape, thin data-band on left ring finger. Slow, deliberate movement. Sitting in a dimly lit Tier 5 archive environment with soft cyan glow from hair filaments illuminating her face, surrounded by paper records and old tech. GLMZ 2200s aesthetic, intimate documentary lighting, detailed character study, --ar 2:3 --v 6",
+  "image_prompt": "Benita Bah-Krishnamurthy, a 155cm compact elderly woman in the year 2226, warm deep brown skin with golden undertones reflecting Sub-Saharan African, East Asian, South Asian, Southeast Asian, and Hispanic heritage. Silver-gray hair shoulder-length with glowing cyan bioluminescent fiber optic filaments, worn loose and pinned back with a data-chip clip. Dark brown eyes behind augmented reading lenses with amber Axiom archival overlay interface. Slightly kyphotic posture, weathered hands with faint color stains. Wearing a rust-colored hand-knitted cardigan over a linen shirt, loose neutral trousers smooth at knees and hems, memory-foam slip-ons. A faint paper-cut scar on her left index finger knuckle, small crescent burn mark on right forearm. Carrying a weathered canvas satchel reinforced with duct tape, thin data-band on left ring finger. Slow, deliberate movement. Sitting in a dimly lit Tier 5 archive environment with soft cyan glow from hair filaments illuminating her face, surrounded by paper records and old tech. GLMZ 2200s aesthetic, intimate documentary lighting, detailed character study, --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 34.2,
     "East Asian": 24.1,

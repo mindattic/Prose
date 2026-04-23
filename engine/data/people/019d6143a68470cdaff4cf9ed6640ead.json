@@ -4,10 +4,7 @@
   "vote_count": 1,
   "type": "character",
   "name": "Armin Björnsdóttir-Saidov",
-  "aliases": [
-    "Sterling Björnsdóttir-Saidov",
-    "Sterling"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -15,7 +12,7 @@
   "age": 29,
   "status": "active",
   "location": "Kenwood Gate, near North Ave and Damen",
-  "description": "Sterling Björnsdóttir-Saidov is the kind of person you forget while he is still in the room. Medium height, lean, with warm brown skin and features that sit in a pleasant unremarkable arrangement — nothing that catches the eye or holds it. His most notable feature is his eyes: irises modded to a pale silver-grey with a faint concentric ring pattern, the visible marker of his optical augmentation suite. He favors nondescript corporate casual clothing in muted greens and greys, nothing that reads as either security or civilian from a distance.\n\nHe is genuinely intellectually curious — absorbed by patterns, systems, the way data accumulates into narrative. He treats surveillance as a kind of archaeology, layering behavioral records until a person's life emerges in cross-section. He does not think of this as an invasion. He has thought carefully about whether it should bother him and arrived at a complicated peace with it that he occasionally revisits at 3 a.m. He is quick to laugh, slow to trust, and has a gift for seeming entirely present in a conversation while processing something else entirely.",
+  "description": "Armin Björnsdóttir-Saidov is the kind of person you forget while he is still in the room. Medium height, lean, with warm brown skin and features that sit in a pleasant unremarkable arrangement — nothing that catches the eye or holds it. His most notable feature is his eyes: irises modded to a pale silver-grey with a faint concentric ring pattern, the visible marker of his optical augmentation suite. He favors nondescript corporate casual clothing in muted greens and greys, nothing that reads as either security or civilian from a distance.\n\nHe is genuinely intellectually curious — absorbed by patterns, systems, the way data accumulates into narrative. He treats surveillance as a kind of archaeology, layering behavioral records until a person's life emerges in cross-section. He does not think of this as an invasion. He has thought carefully about whether it should bother him and arrived at a complicated peace with it that he occasionally revisits at 3 a.m. He is quick to laugh, slow to trust, and has a gift for seeming entirely present in a conversation while processing something else entirely.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -263,7 +260,7 @@
     "posture_movement": "Moves with deliberate economy of motion; sits with spine neutral and shoulders relaxed, the posture of professional observers trained to remain unobtrusive. Eyes are in constant subtle motion — scanning, tracking, cataloging — even during casual conversation. Hands gesture minimally. When walking, maintains steady pace with occasional 90-degree turns as if mentally plotting grid coordinates. Gives impression of being physically present while mentally distributed across multiple data streams.",
     "clothing_style": "Corporate casual, aggressively nondescript — muted greens, greys, charcoal, and stone tones. Generic poly-blend button-ups from mid-tier retailers, well-maintained but not fashionable. Dark grey trousers. Comfortable low-profile shoes suitable for extended wear. No visible branding or status markers. Clothing reads as 'background,' intentionally occupying no visual hierarchy. Tier 3-4 professional without aspiration toward higher or lower."
   },
-  "image_prompt": "Sterling Björnsdóttir-Saidov, mixed-heritage professional with warm medium-brown skin and golden-olive undertones reflecting East Asian, Central Asian, South Asian, and Sub-Saharan African ancestry. Slight high cheekbones softened by Eastern European bone structure. Short deep brown hair, close-cropped sides with length on top. Pale silver-grey eyes with luminescent concentric ring augmentation patterns, faintly glowing under neon light. Faint old surgical scar barely visible on right temple. Clean-shaven, night-shift puffiness under eyes. Wearing muted grey poly-blend button-up shirt and charcoal trousers, corporate nondescript styling. Neutral posture, deliberate economical movements, scanning gaze. Sitting in dimly-lit neo-noir office or data hub, surrounded by soft blue-green interface glow, professional surveillance aesthetic. GLMZ Great Lakes Metropolitan Zone. Cool atmospheric lighting catching the luminescence of augmented irises. --ar 2:3 --v 6",
+  "image_prompt": "Armin Björnsdóttir-Saidov, mixed-heritage professional with warm medium-brown skin and golden-olive undertones reflecting East Asian, Central Asian, South Asian, and Sub-Saharan African ancestry. Slight high cheekbones softened by Eastern European bone structure. Short deep brown hair, close-cropped sides with length on top. Pale silver-grey eyes with luminescent concentric ring augmentation patterns, faintly glowing under neon light. Faint old surgical scar barely visible on right temple. Clean-shaven, night-shift puffiness under eyes. Wearing muted grey poly-blend button-up shirt and charcoal trousers, corporate nondescript styling. Neutral posture, deliberate economical movements, scanning gaze. Sitting in dimly-lit neo-noir office or data hub, surrounded by soft blue-green interface glow, professional surveillance aesthetic. GLMZ Great Lakes Metropolitan Zone. Cool atmospheric lighting catching the luminescence of augmented irises. --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "East Asian": 29.3,

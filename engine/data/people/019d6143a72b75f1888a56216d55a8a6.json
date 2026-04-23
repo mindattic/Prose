@@ -2,10 +2,7 @@
   "id": "019d6143a72b75f1888a56216d55a8a6",
   "type": "character",
   "name": "Hee-young Subramaniam-Zielinski",
-  "aliases": [
-    "Esteban Subramaniam-Zielinski",
-    "Esteban"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 47,
   "status": "active",
   "location": "The Narrows, operating out of a converted laundry unit behind Grainfort Market, near Armitage and Milwaukee",
-  "description": "Esteban Subramaniam-Zielinski is a broad-shouldered woman with deep brown skin mapped by decades of chemical burns and old suture scars on her forearms — souvenirs of other people's emergencies. Her hair is grown out in thick silver-streaked locs that she ties back with surgical tubing when she works. Her left eye is a cheap medical-grade optical implant that glows faint amber in low light, the iris never quite tracking in sync with her natural right eye. She moves with the deliberate economy of someone who has spent years working in cramped spaces, never wasting motion.\n\nShe is blunt to the point of rudeness but has a laugh that fills a room when something genuinely amuses her. She charges what people can pay, keeps a sliding scale scratched on a laminated card in her coat pocket, and has been known to operate on kitchen tables, in transit cars, and once in the cargo hold of a Ferrogate freight hauler. She prays to the E.L.F. of her autoclave — a small copper idol bolted to its side — before every difficult procedure, muttering calibration codes she treats as liturgy.",
+  "description": "Hee-young Subramaniam-Zielinski is a broad-shouldered woman with deep brown skin mapped by decades of chemical burns and old suture scars on her forearms — souvenirs of other people's emergencies. Her hair is grown out in thick silver-streaked locs that she ties back with surgical tubing when she works. Her left eye is a cheap medical-grade optical implant that glows faint amber in low light, the iris never quite tracking in sync with her natural right eye. She moves with the deliberate economy of someone who has spent years working in cramped spaces, never wasting motion.\n\nShe is blunt to the point of rudeness but has a laugh that fills a room when something genuinely amuses her. She charges what people can pay, keeps a sliding scale scratched on a laminated card in her coat pocket, and has been known to operate on kitchen tables, in transit cars, and once in the cargo hold of a Ferrogate freight hauler. She prays to the E.L.F. of her autoclave — a small copper idol bolted to its side — before every difficult procedure, muttering calibration codes she treats as liturgy.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -261,7 +258,7 @@
     "posture_movement": "Moves with surgical economy — no wasted motion, deliberate and efficient. Stands with weight balanced slightly forward, shoulders relaxed but ready. Hands move with precision even during casual gestures. Habitual glancing at work surfaces and environmental hazards. When focused, entire body goes still except for hands",
     "clothing_style": "Tier 4 practical: white or grey lab coat (often stained, frequently rewashed) worn over heavy canvas work pants with deep pockets. Steel-toed boots (Shenyang manufacture, well-maintained). A heavy wool overcoat for transit, patched at the elbows. Surgical gloves hanging from coat pockets. Minimal jewelry except a thin copper wire threaded through left earlobe — salvage from autoclave's previous life. No corporate branding; everything is utilitarian and replaceable"
   },
-  "image_prompt": "Esteban Subramaniam-Zielinski, mixed-heritage street surgeon in GLMZ, stands in industrial clinic lighting. Warm golden-brown skin reflecting South Asian, East Asian, Hispanic, and Eastern European ancestry in harmonious blend. Strong cheekbones and defined jawline with tapered face geometry. One amber-glowing optical implant with slight tracking lag, natural dark brown eye. Weathered forearms marked with chemical burn scars and suture lines. Black locs with silver streaks, shoulder-length, pulled back with surgical tubing. Muscular build, broad shoulders, slight midsection thickening. Wearing stained grey lab coat over heavy canvas work pants, steel-toed boots, wool overcoat with elbow patches. Surgical gloves in coat pockets. Copper wire through left earlobe. Hands show faint subdermal metallic shimmer on fingertips. Precise, economical posture. Fluorescent and neon ambient lighting casting sharp shadows. Clinical but worn environment, neo-noir grit, focused intensity --ar 2:3 --v 6",
+  "image_prompt": "Hee-young Subramaniam-Zielinski, mixed-heritage street surgeon in GLMZ, stands in industrial clinic lighting. Warm golden-brown skin reflecting South Asian, East Asian, Hispanic, and Eastern European ancestry in harmonious blend. Strong cheekbones and defined jawline with tapered face geometry. One amber-glowing optical implant with slight tracking lag, natural dark brown eye. Weathered forearms marked with chemical burn scars and suture lines. Black locs with silver streaks, shoulder-length, pulled back with surgical tubing. Muscular build, broad shoulders, slight midsection thickening. Wearing stained grey lab coat over heavy canvas work pants, steel-toed boots, wool overcoat with elbow patches. Surgical gloves in coat pockets. Copper wire through left earlobe. Hands show faint subdermal metallic shimmer on fingertips. Precise, economical posture. Fluorescent and neon ambient lighting casting sharp shadows. Clinical but worn environment, neo-noir grit, focused intensity --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 34.2,
     "Hispanic/Latin American": 26.5,

@@ -2,10 +2,7 @@
   "id": "019d6143a69b7da3a006fad207ac9917",
   "type": "character",
   "name": "Borna Sefanaia",
-  "aliases": [
-    "Arden Sefanaia",
-    "Arden"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 19,
   "status": "active",
   "location": "the Gray Zone lower levels, primarily between Blackpipe Corridor and Burnside Pocket, near Ashland and Chicago Ave",
-  "description": "Arden Sefanaia is slight and quick, built like someone who learned early that the best defense is to be somewhere else before trouble registers he's present. He has his father's Polynesian bone structure — broad jaw, wide-set eyes — and his Ghanaian grandmother's coily black hair, grown out into a chaotic halo he never bothers to maintain. His irises have been modded with a tide-pattern: rings of blue-green that ripple outward slowly, a mod he saved eight months of UBC stipend to afford because he thought it would make him look memorable. He has since realized this was a professional error. A thin scar crosses his left eyebrow from a run-in he doesn't discuss.\n\nPik is bright in the animal way of someone who has never had the luxury of being stupid — fast to read a room, faster to find an exit, with a memory for numbers that his handlers find more useful than he realizes. He moves through the Gray Zone's lower corridors with the particular ease of someone raised in them, knows which maintenance corridors flood at high tide, which E.L.F. shrines get the most foot traffic and therefore the most witnesses. He's not cruel. He's not ambitious in the way that gets people hurt. He's nineteen and mostly trying to afford better tier food and keep his younger sister in school, and he's chosen the tools available to him.",
+  "description": "Borna Sefanaia is slight and quick, built like someone who learned early that the best defense is to be somewhere else before trouble registers he's present. He has his father's Polynesian bone structure — broad jaw, wide-set eyes — and his Ghanaian grandmother's coily black hair, grown out into a chaotic halo he never bothers to maintain. His irises have been modded with a tide-pattern: rings of blue-green that ripple outward slowly, a mod he saved eight months of UBC stipend to afford because he thought it would make him look memorable. He has since realized this was a professional error. A thin scar crosses his left eyebrow from a run-in he doesn't discuss.\n\nPik is bright in the animal way of someone who has never had the luxury of being stupid — fast to read a room, faster to find an exit, with a memory for numbers that his handlers find more useful than he realizes. He moves through the Gray Zone's lower corridors with the particular ease of someone raised in them, knows which maintenance corridors flood at high tide, which E.L.F. shrines get the most foot traffic and therefore the most witnesses. He's not cruel. He's not ambitious in the way that gets people hurt. He's nineteen and mostly trying to afford better tier food and keep his younger sister in school, and he's chosen the tools available to him.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -266,7 +263,7 @@
     "posture_movement": "Moves with economical grace through crowds and corridors, weight balanced on the balls of his feet as if perpetually ready to change direction. Habitually scans rooms for exits and sight lines. Fast twitchy movements when nervous or in transit; can appear jittery under pressure. Favors doorways and wall positions in conversation.",
     "clothing_style": "Tier 4 casual: worn synthweave jacket in charcoal gray with internal pockets for slips and currency bundles, loose thermal underlayer, cargo pants with reinforced pockets, scuffed low-profile runners. Nothing that marks him as wealthy or corpo — everything is functional, easily replaceable, designed not to snag or impede movement. Carries a messenger bag, nondescript dark fabric, worn soft from use."
   },
-  "image_prompt": "Arden Sefanaia, lean 168cm wiry frame, medium-deep warm brown skin with golden undertones, broad angular face with high cheekbones and wide-set eyes, natural black coiled hair in medium chaotic halo falling across forehead, pale scar crossing left eyebrow, distinctive tide-pattern iris mods with rippling blue-green rings in brown eyes, thin facial structure showing Pacific Islander, Latin American and Sub-Saharan African blend, worn appearance from poor sleep, charcoal gray synthweave jacket with internal pockets, loose thermal underlayer, reinforced cargo pants, scuffed runners, nondescript dark messenger bag, weight balanced on balls of feet in alert posture, scanning room nervously, positioned near doorway in shadows, GLMZ Great Lakes Metropolitan Zone, moody blue-green neon backlighting catching his skin tone and eye augmentations, gritty urban corridor setting, cinematic lighting --ar 2:3 --v 6",
+  "image_prompt": "Borna Sefanaia, lean 168cm wiry frame, medium-deep warm brown skin with golden undertones, broad angular face with high cheekbones and wide-set eyes, natural black coiled hair in medium chaotic halo falling across forehead, pale scar crossing left eyebrow, distinctive tide-pattern iris mods with rippling blue-green rings in brown eyes, thin facial structure showing Pacific Islander, Latin American and Sub-Saharan African blend, worn appearance from poor sleep, charcoal gray synthweave jacket with internal pockets, loose thermal underlayer, reinforced cargo pants, scuffed runners, nondescript dark messenger bag, weight balanced on balls of feet in alert posture, scanning room nervously, positioned near doorway in shadows, GLMZ Great Lakes Metropolitan Zone, moody blue-green neon backlighting catching his skin tone and eye augmentations, gritty urban corridor setting, cinematic lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Pacific Islander": 50.8,
     "Hispanic/Latin American": 26.3,

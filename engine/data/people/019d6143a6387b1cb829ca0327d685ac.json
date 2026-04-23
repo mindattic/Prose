@@ -2,10 +2,7 @@
   "id": "019d6143a6387b1cb829ca0327d685ac",
   "type": "character",
   "name": "Desta Watanabe",
-  "aliases": [
-    "Echo Watanabe",
-    "Echo"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 41,
   "status": "active",
   "location": "Aurochs Medical Complex, Trauma Bay Seven, near Fullerton and Damen",
-  "description": "Echo Watanabe is tall and angular, with light brown skin and the kind of posture that comes from years of standing over operating tables — slightly forward in the shoulders, weight balanced, always ready. She has gene-modded bioluminescent tracery along her collarbones and upper arms: a delicate pattern of cool blue that pulses faintly when her heart rate elevates. She got it years ago as an aesthetic choice and now she regrets it, because it functions as an involuntary stress indicator in high-stakes situations. She compensates by wearing high collars when she can. Her dark hair is cut in a precise bob that she maintains herself with surgical shears.\n\nShe is formidable in the OR and genuinely difficult outside of it. Her intelligence is not subtle — she does not soften assessments, she does not cushion bad news, and she has very limited patience for institutional inefficiency, which means she is in a state of near-constant low-grade conflict with Helix Biosystems administration. She is not cruel; she is exact. She saves lives with focused ferocity and then goes home to an apartment she has never bothered to furnish properly and eats takeout alone, which she insists she prefers. The gap between those two versions of herself is something she doesn't look at directly.",
+  "description": "Desta Watanabe is tall and angular, with light brown skin and the kind of posture that comes from years of standing over operating tables — slightly forward in the shoulders, weight balanced, always ready. She has gene-modded bioluminescent tracery along her collarbones and upper arms: a delicate pattern of cool blue that pulses faintly when her heart rate elevates. She got it years ago as an aesthetic choice and now she regrets it, because it functions as an involuntary stress indicator in high-stakes situations. She compensates by wearing high collars when she can. Her dark hair is cut in a precise bob that she maintains herself with surgical shears.\n\nShe is formidable in the OR and genuinely difficult outside of it. Her intelligence is not subtle — she does not soften assessments, she does not cushion bad news, and she has very limited patience for institutional inefficiency, which means she is in a state of near-constant low-grade conflict with Helix Biosystems administration. She is not cruel; she is exact. She saves lives with focused ferocity and then goes home to an apartment she has never bothered to furnish properly and eats takeout alone, which she insists she prefers. The gap between those two versions of herself is something she doesn't look at directly.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -273,7 +270,7 @@
     "posture_movement": "Weight balanced forward on the balls of her feet, shoulders held slightly high and forward in perpetual surgical readiness. Movements are economical and precise; no wasted motion. In conversation, she maintains steady eye contact and does not soften her expression. Walks with purpose; never appears to be in transit, always en route to something specific.",
     "clothing_style": "Aurochs Medical Complex trauma surgeon — Tier 3 salaried. Off-duty: high-collared shirts and sweaters to obscure the bioluminescent tracery, charcoal and black baseline. Dark tailored slacks, minimal jewelry. Commute apparel is functional and unremarkable. When not in scrubs, she dresses like someone who views clothing as a problem to solve rather than an expression. No logos, no aspirational branding; quality materials, zero ornamentation."
   },
-  "image_prompt": "Echo Watanabe, 182cm tall trauma surgeon in GLMZ, sharp angular features blending East Asian, South Asian, and Sub-Saharan African heritage. Warm golden-brown skin tone, high defined cheekbones, dark brown eyes with subtle metallic iridescence from ocular implants. Short precision-cut dark brown bob with blunt edges. Cool blue bioluminescent tracery branches delicately across exposed collarbones and upper arms, pulsing faintly. Lean muscular build, shoulders slightly forward in surgical readiness. Wearing high-collared black sweater and charcoal tailored slacks, standing with economical posture and steady eye contact. Minimalist, purposeful presence. Great Lakes Metropolitan Zone setting, cool clinical lighting with accent glow from bioluminescent implants, atmospheric neo-noir ambiance, moody and precise --ar 2:3 --v 6",
+  "image_prompt": "Desta Watanabe, 182cm tall trauma surgeon in GLMZ, sharp angular features blending East Asian, South Asian, and Sub-Saharan African heritage. Warm golden-brown skin tone, high defined cheekbones, dark brown eyes with subtle metallic iridescence from ocular implants. Short precision-cut dark brown bob with blunt edges. Cool blue bioluminescent tracery branches delicately across exposed collarbones and upper arms, pulsing faintly. Lean muscular build, shoulders slightly forward in surgical readiness. Wearing high-collared black sweater and charcoal tailored slacks, standing with economical posture and steady eye contact. Minimalist, purposeful presence. Great Lakes Metropolitan Zone setting, cool clinical lighting with accent glow from bioluminescent implants, atmospheric neo-noir ambiance, moody and precise --ar 2:3 --v 6",
   "genetic_ancestry": {
     "East Asian": 41.5,
     "South Asian": 25.4,

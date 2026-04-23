@@ -2,10 +2,7 @@
   "id": "019d6143a6ac78a48a3707dbe29a57ad",
   "type": "character",
   "name": "Bernedette Fredriksen",
-  "aliases": [
-    "Slate Fredriksen",
-    "Slate"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 68,
   "status": "active",
   "location": "The Narrows, Ironhaven side, under the third support column of the Brewer's Spine overpass, near Damen and Armitage",
-  "description": "Slate Fredriksen is small and dry and ancient-looking in the way of people who have been weathered rather than aged — she has deep lines around her eyes and mouth that she makes no effort to minimize, and her movements carry the economy of someone who has long since stopped spending energy on anything unnecessary. Her skin is a cool dark brown, her eyes are pale grey with fully natural irises that are unusually light for her complexion, an inheritance from her Armenian grandmother's side that she has always considered significant. Her hair is white and kept in a single heavy braid down her back. She wears layered grey and brown, and over everything a vest sewn with small metal tokens — transit passes, circuit board fragments, old coin-sized data chips — each one an offering made to her or given in trade over decades of practice.\n\nShe sells futures. Her method is what she calls 'signal reading' — she uses a modified data-trawling rig to pull latent metadata patterns from a client's personal devices, network traces, purchasing history, location ghosts, and biometric residue, then interprets what she finds through a system she developed over thirty years that blends statistical pattern recognition with an elaborate mythology of digital spirits she treats as genuinely real. Whether it's mysticism or advanced intuitive data analysis is a distinction she finds uninteresting. Her predictions are accurate at a rate that disturbs people. The E.L.F. community in The Narrows considers her an intermediary of unusual sensitivity. She charges what she thinks someone can afford and has never once been wrong about that.",
+  "description": "Bernedette Fredriksen is small and dry and ancient-looking in the way of people who have been weathered rather than aged — she has deep lines around her eyes and mouth that she makes no effort to minimize, and her movements carry the economy of someone who has long since stopped spending energy on anything unnecessary. Her skin is a cool dark brown, her eyes are pale grey with fully natural irises that are unusually light for her complexion, an inheritance from her Armenian grandmother's side that she has always considered significant. Her hair is white and kept in a single heavy braid down her back. She wears layered grey and brown, and over everything a vest sewn with small metal tokens — transit passes, circuit board fragments, old coin-sized data chips — each one an offering made to her or given in trade over decades of practice.\n\nShe sells futures. Her method is what she calls 'signal reading' — she uses a modified data-trawling rig to pull latent metadata patterns from a client's personal devices, network traces, purchasing history, location ghosts, and biometric residue, then interprets what she finds through a system she developed over thirty years that blends statistical pattern recognition with an elaborate mythology of digital spirits she treats as genuinely real. Whether it's mysticism or advanced intuitive data analysis is a distinction she finds uninteresting. Her predictions are accurate at a rate that disturbs people. The E.L.F. community in The Narrows considers her an intermediary of unusual sensitivity. She charges what she thinks someone can afford and has never once been wrong about that.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -257,7 +254,7 @@
     "Residue (I Still Have Your Feed)",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Chromeworks Silhouette-S Ghost Walker Leg",
-    "Slate",
+    "Bernedette",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
     "The Pale Mile"
   ],
@@ -283,7 +280,7 @@
     "posture_movement": "She sits perfectly still for hours, hands folded or working methodically over her rig. When she moves, it is with absolute economy — no wasted gesture, no flourish. She turns her whole body rather than just her head. Her movements are slow but precise, suggesting chronic pain she has learned to work around rather than eliminate.",
     "clothing_style": "Layered grey and brown linen and cotton, practical and worn but meticulously maintained — the clothes of someone who respects fabric. Over everything, a grey canvas vest heavily sewn with small metal tokens: old transit passes, circuit board fragments, coin-sized data chips, small offerings from clients and trade goods from three decades of practice. The vest is her history made visible. No cosmetic branding, no tier indicators except the handmade quality of her work."
   },
-  "image_prompt": "Slate Fredriksen, 68-year-old data-trawler in GLMZ Great Lakes Metropolitan Zone, sitting motionless under industrial overpass. Deep warm brown skin with golden and olive undertones, mahogany-darkened from sun exposure. Severe face etched with deep lines — pronounced crow's feet, furrowed brow — intense brown eyes with amber flecks. Long white hair in single tight braid down back. Lean, wiry build concentrated in shoulders and forearms. Wearing layered grey and brown linen, grey canvas vest covered in soldered metal tokens — circuit fragments, old transit passes, data chips from thirty years of clients. Custom-built neurointerface headset across forehead and temples — exposed circuit boards, copper coils, bio-luminescent traces on left side. Bone-conduction implant visible behind ear with anchor scar. Hands show heavy callusing and electronic burn marks. Posture: perfectly still, methodical, economical movement. Overhead industrial lighting casts harsh shadows across weathered features. Atmosphere: gritty, focused, survival-worn dignity. Neo-noir technology meeting aged resilience. --ar 2:3 --v 6",
+  "image_prompt": "Bernedette Fredriksen, 68-year-old data-trawler in GLMZ Great Lakes Metropolitan Zone, sitting motionless under industrial overpass. Deep warm brown skin with golden and olive undertones, mahogany-darkened from sun exposure. Severe face etched with deep lines — pronounced crow's feet, furrowed brow — intense brown eyes with amber flecks. Long white hair in single tight braid down back. Lean, wiry build concentrated in shoulders and forearms. Wearing layered grey and brown linen, grey canvas vest covered in soldered metal tokens — circuit fragments, old transit passes, data chips from thirty years of clients. Custom-built neurointerface headset across forehead and temples — exposed circuit boards, copper coils, bio-luminescent traces on left side. Bone-conduction implant visible behind ear with anchor scar. Hands show heavy callusing and electronic burn marks. Posture: perfectly still, methodical, economical movement. Overhead industrial lighting casts harsh shadows across weathered features. Atmosphere: gritty, focused, survival-worn dignity. Neo-noir technology meeting aged resilience. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Southeast Asian": 41.2,
     "Sub-Saharan African": 22.7,

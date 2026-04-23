@@ -2,10 +2,7 @@
   "id": "019d6143a6d7774eb5d35f47d8c109d1",
   "type": "character",
   "name": "Ashraf Kristjánsson",
-  "aliases": [
-    "Kai Kristjánsson",
-    "Kai"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 34,
   "status": "active",
   "location": "The Narrows, Ironvein sub-district — a basement apartment beneath a legitimate alterations shop, near Damen and Armitage",
-  "description": "Kai Kristjánsson is compact and precise, the kind of person whose stillness in a crowded room makes you notice her eventually, like a stone in moving water. Her heritage is Aleutian-Ghanaian, and her face carries both — broad cheekbones, deep brown skin, eyes the color of sea ice that shift to something almost golden in certain lights, a geneware mod she got at nineteen and never bothered reversing. Her hair is natural and enormous, usually pinned up under a faded headscarf when she works. Her hands are her most remarkable feature: surgeon-steady, ink-stained at the cuticles, and capable of replicating any biometric signature with enough reference material and time.\n\nShe does not think of herself as a criminal. She thinks of herself as a documentarian of alternate lives — she makes real what should already be real, papers for people whose papers were stolen, burned, or never issued. She charges a sliding scale that she determines unilaterally and that no one argues with because her work is simply that good. She is funny in a dry, sideways way, and she will feed you while you wait because she believes hungry clients make bad decisions and bad decisions make her work harder.",
+  "description": "Ashraf Kristjánsson is compact and precise, the kind of person whose stillness in a crowded room makes you notice her eventually, like a stone in moving water. Her heritage is Aleutian-Ghanaian, and her face carries both — broad cheekbones, deep brown skin, eyes the color of sea ice that shift to something almost golden in certain lights, a geneware mod she got at nineteen and never bothered reversing. Her hair is natural and enormous, usually pinned up under a faded headscarf when she works. Her hands are her most remarkable feature: surgeon-steady, ink-stained at the cuticles, and capable of replicating any biometric signature with enough reference material and time.\n\nShe does not think of herself as a criminal. She thinks of herself as a documentarian of alternate lives — she makes real what should already be real, papers for people whose papers were stolen, burned, or never issued. She charges a sliding scale that she determines unilaterally and that no one argues with because her work is simply that good. She is funny in a dry, sideways way, and she will feed you while you wait because she believes hungry clients make bad decisions and bad decisions make her work harder.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -275,7 +272,7 @@
     "posture_movement": "Moves with deliberate stillness — economical, precise gestures with no wasted motion. Sits very still for extended periods. When she walks, her gait is measured and grounded. Hands are constantly in motion during work, steady as surgical instruments.",
     "clothing_style": "Tier 3-4 working class with intentional understatement. Upstairs: functional alterations-shop wear — fitted black pants, neutral linen shirts with sleeves rolled, tool apron. Downstairs: looser clothing that allows fine motor work without restriction, often layered sweaters, vintage or thrifted pieces. Faded headscarf in muted colors (indigo, charcoal, rust). Worn boots with good ankle support. No corpo branding, no status markers — the uniform of someone who values function over appearance."
   },
-  "image_prompt": "Kai Kristjánsson, a 158cm petite East Asian-dominant mixed heritage woman with warm deep brown skin with golden undertones, striking geneware-modified sea-ice blue eyes that shift amber in certain light, voluminous natural black curls pinned under a faded indigo headscarf, fine-featured face with blended East Asian and Sub-Saharan African structure, ink-stained fingers from precision work. Wearing fitted black pants and neutral linen shirt with sleeves rolled, tool apron, worn boots. GLMZ, GLMZ alterations shop setting, seated at workbench under warm overhead lighting, hands steady and deliberate mid-task, minimal jewelry, no augmentation marks visible except subtle eye modification, atmosphere of focused craftsmanship and practiced economy of motion, moody workshop ambiance with shadow and warm tungsten light --ar 2:3 --v 6",
+  "image_prompt": "Ashraf Kristjánsson, a 158cm petite East Asian-dominant mixed heritage woman with warm deep brown skin with golden undertones, striking geneware-modified sea-ice blue eyes that shift amber in certain light, voluminous natural black curls pinned under a faded indigo headscarf, fine-featured face with blended East Asian and Sub-Saharan African structure, ink-stained fingers from precision work. Wearing fitted black pants and neutral linen shirt with sleeves rolled, tool apron, worn boots. GLMZ, GLMZ alterations shop setting, seated at workbench under warm overhead lighting, hands steady and deliberate mid-task, minimal jewelry, no augmentation marks visible except subtle eye modification, atmosphere of focused craftsmanship and practiced economy of motion, moody workshop ambiance with shadow and warm tungsten light --ar 2:3 --v 6",
   "genetic_ancestry": {
     "East Asian": 55.9,
     "Sub-Saharan African": 22.1,

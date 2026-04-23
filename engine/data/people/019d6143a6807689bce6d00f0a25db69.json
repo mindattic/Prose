@@ -2,10 +2,7 @@
   "id": "019d6143a6807689bce6d00f0a25db69",
   "type": "character",
   "name": "Alejandra Holm-Somchai-Hossain",
-  "aliases": [
-    "Haze Holm-Somchai-Hossain",
-    "Haze"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 54,
   "status": "active",
   "location": "University Spine, Brewer's Spine sub-campus — Sublevel Archive 7, near sub-level access near Dearborn and Jackson",
-  "description": "Haze Holm-Somchai-Hossain is a heavyset woman with deep umber skin mapped by a constellation of self-applied subcutaneous luminescence — tiny bioluminescent nodes she had implanted one by one over thirty years, each marking a major excavation site she has documented. In low light she glows faintly blue-green, like something dragged from lake bottom. Her hair is kept short and silver at the temples, and she habitually wears magnification lenses perched on her head even when she doesn't need them. Her hands are perpetually stained with archival solvents and the orange pigment of corroded pre-flood polymers.\n\nShe is blunt in the way of someone who has spent decades arguing with colleagues who don't read the primary sources. She has little patience for speculation that outpaces evidence, and even less for academics who treat the drowned city as metaphor rather than physical record. But she softens completely in the presence of objects — she will hold a corroded transit token or a water-damaged photograph with a tenderness that surprises people who only know her from faculty meetings. She believes the city beneath the city is more honest than anything built above it.",
+  "description": "Alejandra Holm-Somchai-Hossain is a heavyset woman with deep umber skin mapped by a constellation of self-applied subcutaneous luminescence — tiny bioluminescent nodes she had implanted one by one over thirty years, each marking a major excavation site she has documented. In low light she glows faintly blue-green, like something dragged from lake bottom. Her hair is kept short and silver at the temples, and she habitually wears magnification lenses perched on her head even when she doesn't need them. Her hands are perpetually stained with archival solvents and the orange pigment of corroded pre-flood polymers.\n\nShe is blunt in the way of someone who has spent decades arguing with colleagues who don't read the primary sources. She has little patience for speculation that outpaces evidence, and even less for academics who treat the drowned city as metaphor rather than physical record. But she softens completely in the presence of objects — she will hold a corroded transit token or a water-damaged photograph with a tenderness that surprises people who only know her from faculty meetings. She believes the city beneath the city is more honest than anything built above it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -266,7 +263,7 @@
     "posture_movement": "Moves deliberately, with the careful economy of someone accustomed to handling irreplaceable objects. Tendency to hunch slightly forward, shoulders curved inward as if protecting something fragile. Hands are precise and steady; she rarely gestures broadly when speaking. Her default expression is focused concentration, interrupted by rare, genuine smiles when discussing artifacts.",
     "clothing_style": "Tier 2/3 academic utility wear: archival-grade lab coat (University Spine insignia faded from repeated washing), reinforced field vest with multiple pockets containing calibrated tools and specimen bags. Underneath, simple high-collar thermal underlayer in charcoal. Heavy-soled archival boots, scuffed from decades of sublevel work. Wears a worn leather journal clipped to her belt. No jewelry except a simple band on her left ring finger — oxidized silver, pre-flood era, salvaged from a 2087 domestic site."
   },
-  "image_prompt": "Haze Holm-Somchai-Hossain, middle-aged woman with warm golden-medium skin tone, faint blue-green bioluminescent tracery visible beneath collarbone and forearms in dim lighting, short silver-and-charcoal cropped hair, hooded eyes with subtle epicanthic fold and amber-tinted ocular implant, sun-weathered face with fine lines, high-set cheekbones reflecting Southeast and East Asian ancestry blended with South Asian breadth. Heavyset broad-shouldered build. Wearing faded archival-grade lab coat over reinforced field vest and charcoal thermal underlayer, heavy scuffed boots. Magnification lenses perched on head. Hunched posture, hands stained with orange-rust archival compound residue. Worn pre-flood silver band on left ring finger. GLMZ sublevel archive setting, cool blue and amber accent lighting emphasizing bioluminescence, focused expression studying an artifact. GLMZ 2200s academic archaeologist aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Alejandra Holm-Somchai-Hossain, middle-aged woman with warm golden-medium skin tone, faint blue-green bioluminescent tracery visible beneath collarbone and forearms in dim lighting, short silver-and-charcoal cropped hair, hooded eyes with subtle epicanthic fold and amber-tinted ocular implant, sun-weathered face with fine lines, high-set cheekbones reflecting Southeast and East Asian ancestry blended with South Asian breadth. Heavyset broad-shouldered build. Wearing faded archival-grade lab coat over reinforced field vest and charcoal thermal underlayer, heavy scuffed boots. Magnification lenses perched on head. Hunched posture, hands stained with orange-rust archival compound residue. Worn pre-flood silver band on left ring finger. GLMZ sublevel archive setting, cool blue and amber accent lighting emphasizing bioluminescence, focused expression studying an artifact. GLMZ 2200s academic archaeologist aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Southeast Asian": 27.6,
     "East Asian": 22,

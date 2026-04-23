@@ -2,10 +2,7 @@
   "id": "019d6143a6ad72619e4dc15cfd389a8f",
   "type": "character",
   "name": "Eva Salazar-Khorasani",
-  "aliases": [
-    "Indigo Salazar-Khorasani",
-    "Indigo"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 19,
   "status": "active",
   "location": "Blackpipe Corridor, sub-levels beneath Copperhead, near sub-level access near Dearborn and Jackson",
-  "description": "Indigo Salazar-Khorasani is nineteen years old and has the kind of energy that fills a tunnel before he enters it. He is short and compact, with medium-brown skin, a wide gap-toothed grin, and ears that have been modified with geneware into something remarkable: larger than baseline, with delicate internal structures visible as subtle ridges beneath the skin, and the ability to tilt and orient like a fennec's. He doesn't try to hide them — they're the most important tool he has. His hair is a wild cloud of tight curls that he refuses to cut because he claims it helps with acoustic dampening of background resonance, which is almost certainly not true but also might be slightly true.\n\nEcho hunters are a Bore Rat tradition with practical roots: someone has to map the sounds of the tunnels, track structural changes by acoustic signature, find water sources by vibration, locate other communities by the echo-fingerprint of their settlements. Rashaad learned from his grandmother, who learned from hers. But where the tradition is usually patient, methodical work, Rashaad treats it like sport. He runs the tunnels, pressing his palms to walls, pressing his ear-tips to pipes, cataloguing resonances in a battered voice-recorder he wears on a cord around his neck. He has found three collapsed chambers the Bore Rat community didn't know existed, a buried pre-Meridian transit car still containing cargo, and what he is increasingly convinced is a second, non-human acoustic presence in the deep tunnels below Sub-Level 11 — a rhythmic pulse he cannot explain.",
+  "description": "Eva Salazar-Khorasani is nineteen years old and has the kind of energy that fills a tunnel before he enters it. He is short and compact, with medium-brown skin, a wide gap-toothed grin, and ears that have been modified with geneware into something remarkable: larger than baseline, with delicate internal structures visible as subtle ridges beneath the skin, and the ability to tilt and orient like a fennec's. He doesn't try to hide them — they're the most important tool he has. His hair is a wild cloud of tight curls that he refuses to cut because he claims it helps with acoustic dampening of background resonance, which is almost certainly not true but also might be slightly true.\n\nEcho hunters are a Bore Rat tradition with practical roots: someone has to map the sounds of the tunnels, track structural changes by acoustic signature, find water sources by vibration, locate other communities by the echo-fingerprint of their settlements. Rashaad learned from his grandmother, who learned from hers. But where the tradition is usually patient, methodical work, Rashaad treats it like sport. He runs the tunnels, pressing his palms to walls, pressing his ear-tips to pipes, cataloguing resonances in a battered voice-recorder he wears on a cord around his neck. He has found three collapsed chambers the Bore Rat community didn't know existed, a buried pre-Meridian transit car still containing cargo, and what he is increasingly convinced is a second, non-human acoustic presence in the deep tunnels below Sub-Level 11 — a rhythmic pulse he cannot explain.",
   "psychology": {
     "facet_weights": {
       "wound": 0.2,
@@ -252,10 +249,10 @@
     "GLMZ",
     "Dearborn Forge",
     "The Gradient Compact",
-    "Indigo",
+    "Eva",
     "Kang-Petrov Arms KP-22 Sport 'Plinkmaster'",
     "Cargo Tacos",
-    "Frost Boudiaf",
+    "Folakemi Boudiaf",
     "Subacoustic Vestibular Collapse Drone SVCD-1 'Tilt'"
   ],
   "district": "The Underworld",
@@ -279,7 +276,7 @@
     "posture_movement": "Restless and kinetic; rarely still; frequently tilts head to angle ears toward sound sources; moves with a runner's efficiency through spaces; hands gesture expressively when talking; leans in close when listening intently; moves through environments with practiced familiarity suggesting deep spatial memory",
     "clothing_style": "Tier 5 practical wear: reinforced canvas utility pants with multiple pockets (some containing audio equipment); worn thermal underlayer; heavy canvas jacket with reflective patches; sturdy scuffed boots with good traction. Clothing shows regular wear and minor repairs but is well-maintained. Carries frequency analyzer and voice-recorder as constant accessories."
   },
-  "image_prompt": "Indigo Salazar-Khorasani, GLMZ, compact wiry figure 163cm tall with lean tunnel-runner muscle. Medium-deep warm brown skin with golden luminous undertones from Sub-Saharan African, Middle Eastern, Northern European, and Hispanic/Latin American ancestry blend. Young face with prominent high cheekbones, strong angular features, gap-toothed grin. Long dark brown hair with reddish undertones in wild shoulder-length tight curls. Dark brown alert eyes. Distinctive enlarged geneware-modified ears with visible internal ridge patterns, slightly paler tissue, tilted in active listening position. Small burn scar on left forearm. Restless kinetic posture, head tilted toward sound. Wearing reinforced canvas utility pants with multiple pockets, worn thermal underlayer, heavy canvas jacket with reflective patches, scuffed boots. Battered voice-recorder on frayed fabric cord around neck. Industrial tunnel setting with moody cyan and amber lighting, pipes and metal surfaces. Neo-noir urban aesthetic, realistic portraiture, candid moment of intense focus --ar 2:3 --v 6",
+  "image_prompt": "Eva Salazar-Khorasani, GLMZ, compact wiry figure 163cm tall with lean tunnel-runner muscle. Medium-deep warm brown skin with golden luminous undertones from Sub-Saharan African, Middle Eastern, Northern European, and Hispanic/Latin American ancestry blend. Young face with prominent high cheekbones, strong angular features, gap-toothed grin. Long dark brown hair with reddish undertones in wild shoulder-length tight curls. Dark brown alert eyes. Distinctive enlarged geneware-modified ears with visible internal ridge patterns, slightly paler tissue, tilted in active listening position. Small burn scar on left forearm. Restless kinetic posture, head tilted toward sound. Wearing reinforced canvas utility pants with multiple pockets, worn thermal underlayer, heavy canvas jacket with reflective patches, scuffed boots. Battered voice-recorder on frayed fabric cord around neck. Industrial tunnel setting with moody cyan and amber lighting, pipes and metal surfaces. Neo-noir urban aesthetic, realistic portraiture, candid moment of intense focus --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 27.7,
     "Middle Eastern": 24.3,

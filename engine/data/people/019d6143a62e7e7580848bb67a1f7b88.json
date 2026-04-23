@@ -2,10 +2,7 @@
   "id": "019d6143a62e7e7580848bb67a1f7b88",
   "type": "character",
   "name": "Edmundo Petelo-Faalele-Tofauti",
-  "aliases": [
-    "Delta Petelo-Faalele-Tofauti",
-    "Delta"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 35,
   "status": "active",
   "location": "The Rookery — dense vertical housing, gang-controlled, near Halsted and Division",
-  "description": "Delta Petelo-Faalele-Tofauti is compact and densely muscled, built low to the ground like something designed to survive impacts. At 35, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a tech retriever out of The Rookery, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Delta Petelo-Faalele-Tofauti describe her as a precision instrument — point her at a problem and get out of the way.",
+  "description": "Edmundo Petelo-Faalele-Tofauti is compact and densely muscled, built low to the ground like something designed to survive impacts. At 35, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a tech retriever out of The Rookery, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Edmundo Petelo-Faalele-Tofauti describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.48,
@@ -280,7 +277,7 @@
   ],
   "district": "the Gray Zone",
   "physical_description": {
-    "heritage": "Delta's ancestry is a striking Pacific Islander foundation (56.8%) creating warm, luminous melanin with golden undertones, substantially deepened by Sub-Saharan African heritage (9.9%) that adds richness and defined bone structure. South Asian ancestry (17.4%) contributes the prominent, high cheekbones and distinctive eye shape. Middle Eastern (9.9%) and Hispanic/Latin American (6.0%) heritage layer additional warmth and undertone complexity throughout. The result is a medium-to-deep warm complexion with bronze-gold fusion and sophisticated multi-layered undertones — distinctly Polynesian-influenced with South Asian definition and African depth.",
+    "heritage": "Edmundo's ancestry is a striking Pacific Islander foundation (56.8%) creating warm, luminous melanin with golden undertones, substantially deepened by Sub-Saharan African heritage (9.9%) that adds richness and defined bone structure. South Asian ancestry (17.4%) contributes the prominent, high cheekbones and distinctive eye shape. Middle Eastern (9.9%) and Hispanic/Latin American (6.0%) heritage layer additional warmth and undertone complexity throughout. The result is a medium-to-deep warm complexion with bronze-gold fusion and sophisticated multi-layered undertones — distinctly Polynesian-influenced with South Asian definition and African depth.",
     "height_cm": 162,
     "weight_kg": 68,
     "build": "Compact and densely muscled, low center of gravity with broad shoulders tapering to a narrow waist. Built for impact absorption and explosive movement rather than reach — every visible muscle has definition but not bulk.",
@@ -300,7 +297,7 @@
     "posture_movement": "Moves with economical precision — no wasted motion, no flourish. Stands with weight balanced on the balls of her feet, ready to shift instantly. Resting posture is coiled rather than relaxed. Eyes track targets with mechanical smoothness. When engaging, her movements are sharp and deliberate, powered by the hydraulic augmentations.",
     "clothing_style": "Tier 3-4 utilitarian: matte-black reinforced synth-weave tactical jacket with hidden pocket architecture, form-fitted to avoid snagging. Underneath, charcoal compression undershirt with integrated cooling channels. Cargo pants in dark gray with reinforced stitching and magnetic tool fasteners at the thighs. Steel-toed boots with grip-enhanced soles — no logos, all function. A single item of visible non-utility clothing: a faded silver pendant worn under the shirt, just visible at the neckline."
   },
-  "image_prompt": "Delta Petelo-Faalele-Tofauti, 162cm tall, compact and densely muscled figure with low center of gravity, broad shoulders tapering to narrow waist. Medium deep warm skin tone with rich bronze-gold luminosity and multi-layered undertones from Pacific Islander, South Asian, Sub-Saharan African, Middle Eastern and Hispanic heritage. Striking angular face with high prominent cheekbones, strong defined jawline, faint surgical scar from left temple to cheekbone, dark brown hair with copper undertones pulled back in tight functional steel-wire secured braid. Cybernetic eyes with chrome iris rings and faint blue-green LED glow. Visible metallic threading around elbows and knees from hydraulic joint augmentations. Dark tactical utilitarian clothing: matte-black reinforced synth-weave jacket, charcoal compression undershirt, dark gray cargo pants with magnetic tool fasteners, steel-toed boots. Faded silver pendant visible at neckline. Coiled posture, economical precise movement, weight balanced on balls of feet. GLMZ Great Lakes Metropolitan Zone, moody neon-lit industrial setting, cool blue and amber accent lighting, mechanical precision in every gesture, ready stance. --ar 2:3 --v 6",
+  "image_prompt": "Edmundo Petelo-Faalele-Tofauti, 162cm tall, compact and densely muscled figure with low center of gravity, broad shoulders tapering to narrow waist. Medium deep warm skin tone with rich bronze-gold luminosity and multi-layered undertones from Pacific Islander, South Asian, Sub-Saharan African, Middle Eastern and Hispanic heritage. Striking angular face with high prominent cheekbones, strong defined jawline, faint surgical scar from left temple to cheekbone, dark brown hair with copper undertones pulled back in tight functional steel-wire secured braid. Cybernetic eyes with chrome iris rings and faint blue-green LED glow. Visible metallic threading around elbows and knees from hydraulic joint augmentations. Dark tactical utilitarian clothing: matte-black reinforced synth-weave jacket, charcoal compression undershirt, dark gray cargo pants with magnetic tool fasteners, steel-toed boots. Faded silver pendant visible at neckline. Coiled posture, economical precise movement, weight balanced on balls of feet. GLMZ Great Lakes Metropolitan Zone, moody neon-lit industrial setting, cool blue and amber accent lighting, mechanical precision in every gesture, ready stance. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Pacific Islander": 56.8,
     "South Asian": 17.4,

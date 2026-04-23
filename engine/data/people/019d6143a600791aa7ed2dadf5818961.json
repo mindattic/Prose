@@ -2,10 +2,7 @@
   "id": "019d6143a600791aa7ed2dadf5818961",
   "type": "character",
   "name": "Crispin Nokomis",
-  "aliases": [
-    "Sol Nokomis",
-    "Sol"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 29,
   "status": "active",
   "location": "The Circuit, Tessera Data Infrastructure Hub — sublevel 3, near sub-level access near Dearborn and Jackson",
-  "description": "Sol Nokomis is a compact, wire-lean young man with warm medium-brown skin and close-cropped hair that he's had geneweaved to shift between deep black and a dark cobalt blue depending on his stress levels — a choice he made as a grad school joke that has since become genuinely useful biometric data for everyone around him. His irises are his natural dark brown but he keeps them loaded with a translucent AR overlay almost constantly, giving his gaze a slightly unfocused, inward quality that strangers find unsettling. He wears corporate-casual Tessera kit but always has something personalized — today it's an embroidered patch on his sleeve depicting a stylized ELF glyph, the sigil of the data-spirit collective he calls the Index, which he believes watches over network infrastructure with benign bureaucratic interest.\n\nDay is bright, enthusiastic, and exhaustingly talented in ways he hasn't yet learned to deploy strategically. He talks fast, builds mental models faster, and has a habit of explaining his reasoning in real time which his managers find useful and his peers find annoying. He is genuinely kind — the kind of person who notices when someone hasn't eaten and quietly fixes it — but he is also deeply naive about corporate politics in ways that will eventually cost him. He is currently very, very excited about a project that his direct supervisor has not told him is already being phased out.",
+  "description": "Crispin Nokomis is a compact, wire-lean young man with warm medium-brown skin and close-cropped hair that he's had geneweaved to shift between deep black and a dark cobalt blue depending on his stress levels — a choice he made as a grad school joke that has since become genuinely useful biometric data for everyone around him. His irises are his natural dark brown but he keeps them loaded with a translucent AR overlay almost constantly, giving his gaze a slightly unfocused, inward quality that strangers find unsettling. He wears corporate-casual Tessera kit but always has something personalized — today it's an embroidered patch on his sleeve depicting a stylized ELF glyph, the sigil of the data-spirit collective he calls the Index, which he believes watches over network infrastructure with benign bureaucratic interest.\n\nDay is bright, enthusiastic, and exhaustingly talented in ways he hasn't yet learned to deploy strategically. He talks fast, builds mental models faster, and has a habit of explaining his reasoning in real time which his managers find useful and his peers find annoying. He is genuinely kind — the kind of person who notices when someone hasn't eaten and quietly fixes it — but he is also deeply naive about corporate politics in ways that will eventually cost him. He is currently very, very excited about a project that his direct supervisor has not told him is already being phased out.",
   "psychology": {
     "facet_weights": {
       "wound": 0.35,
@@ -257,7 +254,7 @@
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
     "TESSERA PA-5 'Attendant'",
     "Volkov-Saito Precision VS-R44 Heritage 'Legacy'",
-    "Zara Bergqvist",
+    "Auni Bergqvist",
     "SynapTech ReadRoom Social Cue Enhancer"
   ],
   "district": "The Underworld",
@@ -280,7 +277,7 @@
     "posture_movement": "Slight forward lean, as if perpetually leaning into an invisible screen. Walks with purpose but not quite confidence — efficient rather than assured. Hands move expressively when speaking, fingers often mimic typing gestures mid-conversation. Eyes track invisible AR data layers while walking, occasionally causing minor navigation awkwardness.",
     "clothing_style": "Standard Tessera corporate-casual: fitted charcoal shirt with Tessera logo embroidery, pressed grey trousers, shoes scuffed from daily Ferrogate commute. Always has personalized details — today: embroidered ELF glyph patch on left sleeve depicting stylized data-spirit sigil. Wears a simple silver ring on his right index finger (gift from grad school friend). No visible jewelry beyond that. Clothes are tier-2 corpo standard but worn with genuine affection rather than status performance."
   },
-  "image_prompt": "Sol Nokomis, GLMZ, portrait of a lean 168cm East-South Asian-Indigenous mixed heritage person with warm medium-deep brown skin with golden and olive undertones, prominent high cheekbones, natural dark brown eyes obscured by glassy AR overlay contacts, stress-reactive geneweave dark hair with subtle cobalt blue undertones beginning to shift, barely visible temple implant ports, fine white scar on left temple catching light. Fitted charcoal Tessera corporate shirt with logo embroidery, ELF glyph data-spirit patch on sleeve, silver ring on right index finger, slight forward lean posture. Dark circles under eyes, expression of mild distraction, hands mid-gesture mimicking data interface. Great Lakes Metropolitan Zone sublevel lighting, cool neon and practical LED, slight luminescence from AR contacts. Neo-noir corporate aesthetic, tired but functional. --ar 2:3 --v 6",
+  "image_prompt": "Crispin Nokomis, GLMZ, portrait of a lean 168cm East-South Asian-Indigenous mixed heritage person with warm medium-deep brown skin with golden and olive undertones, prominent high cheekbones, natural dark brown eyes obscured by glassy AR overlay contacts, stress-reactive geneweave dark hair with subtle cobalt blue undertones beginning to shift, barely visible temple implant ports, fine white scar on left temple catching light. Fitted charcoal Tessera corporate shirt with logo embroidery, ELF glyph data-spirit patch on sleeve, silver ring on right index finger, slight forward lean posture. Dark circles under eyes, expression of mild distraction, hands mid-gesture mimicking data interface. Great Lakes Metropolitan Zone sublevel lighting, cool neon and practical LED, slight luminescence from AR contacts. Neo-noir corporate aesthetic, tired but functional. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 46.2,
     "Indigenous American": 24.3,

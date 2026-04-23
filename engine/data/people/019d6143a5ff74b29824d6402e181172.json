@@ -2,10 +2,7 @@
   "id": "019d6143a5ff74b29824d6402e181172",
   "type": "character",
   "name": "Einar Haraldsen",
-  "aliases": [
-    "Drift Haraldsen",
-    "Drift"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 46,
   "status": "active",
   "location": "Geartown, operates from a licensed bay at the Kessler Interchange motor court, near Fullerton and Damen",
-  "description": "Drift Haraldsen is a big man going soft at the middle, with his Nigerian father's broad forehead and his Norwegian mother's pale blue eyes that have always startled people in a face as dark and richly toned as his. He has retractable claw mods on his right hand — not for fighting, but because forty years ago his grandfather lost two fingers to a torque wrench and Dayo decided the human hand was simply not engineered for engine work. The claws give him precision grip on components that would take a standard hand twice as long. He smells perpetually of synthetic lubricant and a particular cedar-note cologne he has worn since he was twenty, and which he applies over the grease rather than instead of it.\n\nHis bay is controlled chaos — towers of salvaged parts catalogued in a system only he understands, three different radios playing simultaneously (one for news, one for music, one permanently tuned to a Geartown E.L.F. frequency that outputs as static but which Dayo insists contains diagnostic information), and a small shrine to the Wrench E.L.F. on the tool chest consisting of a disassembled carburetor arranged like a mandala. He is not a warm man in the Blessing sense — he does not offer food or ask about your feelings. But he is deeply, uncomplicatedly fair, charges exactly what the work costs, and has an allergic reaction to being lied to that is nearly physical in its intensity.",
+  "description": "Einar Haraldsen is a big man going soft at the middle, with his Nigerian father's broad forehead and his Norwegian mother's pale blue eyes that have always startled people in a face as dark and richly toned as his. He has retractable claw mods on his right hand — not for fighting, but because forty years ago his grandfather lost two fingers to a torque wrench and Dayo decided the human hand was simply not engineered for engine work. The claws give him precision grip on components that would take a standard hand twice as long. He smells perpetually of synthetic lubricant and a particular cedar-note cologne he has worn since he was twenty, and which he applies over the grease rather than instead of it.\n\nHis bay is controlled chaos — towers of salvaged parts catalogued in a system only he understands, three different radios playing simultaneously (one for news, one for music, one permanently tuned to a Geartown E.L.F. frequency that outputs as static but which Dayo insists contains diagnostic information), and a small shrine to the Wrench E.L.F. on the tool chest consisting of a disassembled carburetor arranged like a mandala. He is not a warm man in the Blessing sense — he does not offer food or ask about your feelings. But he is deeply, uncomplicatedly fair, charges exactly what the work costs, and has an allergic reaction to being lied to that is nearly physical in its intensity.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -201,7 +198,7 @@
     "Frequency",
     "Geartown",
     "Arcturus KS-7 'Nursery'",
-    "Drift",
+    "Einar",
     "Cedar",
     "The Pale Mile"
   ],
@@ -226,7 +223,7 @@
     "posture_movement": "Stands with the weight-forward stance of someone who has spent decades leaning into work; moves deliberately and without wasted motion, with a mechanic's economy of gesture; right hand often held at chest level when idle, claws partially extended or twitching slightly as if restless; left eye occasionally focuses with an intensity disconnected from what he is actually looking at (optical zoom engaging). Despite his size, his movements are controlled and precise.",
     "clothing_style": "Tier 3 working-class practical: heavy-duty Ferrogate-branded coveralls (faded indigo, extensively patched at knees and elbows), worn over a simple gray tecnocotton undershirt; steel-toed workboots scuffed to near-matte finish; a worn leather jacket (dark brown, creased at the elbows, with the sleeves pushed up to his forearms) that he shrugs on when leaving the bay. Accessory: a thin silver chain around his neck disappearing into his shirt (contains a small photo of his grandfather). His clothing always smells faintly of cedar cologne underneath the synthetic lubricant—a stubborn refusal to smell entirely like his work."
   },
-  "image_prompt": "Drift Haraldsen, 46-year-old neo-noir mechanic, 188cm tall with broad muscular build and accumulated weight at torso. Warm bronze-brown skin with luminous East Asian-Southeast Asian-Sub-Saharan blend complexion. Deep brown eyes with silvery-purple iridescent cybernetic ring in left eye. Dark brown hair with gray at temples, styled in short tight curls. Weather-creased face from decades of engine work, defined jaw with close-trimmed graying beard. Right hand replaced with five retractable brushed-steel precision claws with servo mechanics visible. Deep scar across right forearm, faint burn marks on left forearm, wrench-and-sun tattoo on left wrist. Wearing faded indigo Ferrogate coveralls heavily patched at knees and elbows, gray tecnocotton undershirt, dark brown leather jacket with pushed-up sleeves showing augmentations and scars, scuffed steel-toed boots. Silver chain necklace visible at collar. Stands with weight-forward mechanic's stance, claws partially extended at chest level. Strong presence despite controlled precise movements. Industrial workshop or neo-noir maintenance bay setting, cool blue-green LED lighting mixing with warm practical work lights, oil and metal reflections on skin. Mood: tired, focused, determined. Neo-noir 2220s aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Einar Haraldsen, 46-year-old neo-noir mechanic, 188cm tall with broad muscular build and accumulated weight at torso. Warm bronze-brown skin with luminous East Asian-Southeast Asian-Sub-Saharan blend complexion. Deep brown eyes with silvery-purple iridescent cybernetic ring in left eye. Dark brown hair with gray at temples, styled in short tight curls. Weather-creased face from decades of engine work, defined jaw with close-trimmed graying beard. Right hand replaced with five retractable brushed-steel precision claws with servo mechanics visible. Deep scar across right forearm, faint burn marks on left forearm, wrench-and-sun tattoo on left wrist. Wearing faded indigo Ferrogate coveralls heavily patched at knees and elbows, gray tecnocotton undershirt, dark brown leather jacket with pushed-up sleeves showing augmentations and scars, scuffed steel-toed boots. Silver chain necklace visible at collar. Stands with weight-forward mechanic's stance, claws partially extended at chest level. Strong presence despite controlled precise movements. Industrial workshop or neo-noir maintenance bay setting, cool blue-green LED lighting mixing with warm practical work lights, oil and metal reflections on skin. Mood: tired, focused, determined. Neo-noir 2220s aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
     "East Asian": 54.9,
     "Southeast Asian": 41.1,

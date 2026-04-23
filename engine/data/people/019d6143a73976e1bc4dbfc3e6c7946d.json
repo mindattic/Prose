@@ -2,10 +2,7 @@
   "id": "019d6143a73976e1bc4dbfc3e6c7946d",
   "type": "character",
   "name": "Hector Bustamante",
-  "aliases": [
-    "Valentina Bustamante",
-    "Valentina"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 61,
   "status": "active",
   "location": "Old Harbor — Pelletier's Wash & Press, a narrow shopfront on Gravesend Basin's lower commercial row, directly below an elevated transit line, near Michigan Ave South and Cermak",
-  "description": "Valentina Bustamante is small, precise, and seems to take up exactly the amount of space she has decided is appropriate — no more, no less. She has her Polish grandmother's cheekbones and her Japanese grandfather's stillness, and her skin has the particular texture of someone who has spent six decades in steam and detergent and doesn't mind. Her hair is white now and worn pinned close to her head; she had it dyed electric white at fifty and has maintained it since as a conscious aesthetic choice. Her hands have mild augmentation tremor from an older, cheaper nerve mod she can't afford to replace, which has the counterintuitive effect of making her sewing work more interesting — her stitch lines have a slight organic quality that customers have started requesting specifically.\n\nValentina Bustamante has the disposition of someone who has decided that most things are manageable if you deal with them before they become crises. She runs her shop with the authority of a small sovereign — her word on fabric, cleaning chemistry, and alteration timelines is final and she will explain herself exactly once. She has a genuine fondness for the domestic mathematics of laundry: temperature, cycle, fiber content, time. She finds it meditative in the way other people find walking meditative. She is not warm exactly — warm implies an outward emission, and Valentina Bustamante is more like a consistent ambient temperature. She's there, she's reliable, and you notice when she isn't.",
+  "description": "Hector Bustamante is small, precise, and seems to take up exactly the amount of space she has decided is appropriate — no more, no less. She has her Polish grandmother's cheekbones and her Japanese grandfather's stillness, and her skin has the particular texture of someone who has spent six decades in steam and detergent and doesn't mind. Her hair is white now and worn pinned close to her head; she had it dyed electric white at fifty and has maintained it since as a conscious aesthetic choice. Her hands have mild augmentation tremor from an older, cheaper nerve mod she can't afford to replace, which has the counterintuitive effect of making her sewing work more interesting — her stitch lines have a slight organic quality that customers have started requesting specifically.\n\nHector Bustamante has the disposition of someone who has decided that most things are manageable if you deal with them before they become crises. She runs her shop with the authority of a small sovereign — her word on fabric, cleaning chemistry, and alteration timelines is final and she will explain herself exactly once. She has a genuine fondness for the domestic mathematics of laundry: temperature, cycle, fiber content, time. She finds it meditative in the way other people find walking meditative. She is not warm exactly — warm implies an outward emission, and Hector Bustamante is more like a consistent ambient temperature. She's there, she's reliable, and you notice when she isn't.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -260,7 +257,7 @@
     "Handed",
     "Harbor Fish Shack",
     "The Pure Hand",
-    "Frost Boudiaf"
+    "Folakemi Boudiaf"
   ],
   "district": "Old Harbor",
   "physical_description": {
@@ -283,7 +280,7 @@
     "posture_movement": "Upright and economical. She moves with the precision of someone who has calculated every gesture's necessity. No wasted motion. When working with fabric, her movements become meditative and almost hypnotic — the tremor disappears into the organic rhythm of her hands. She sits on her work stool with the settled authority of someone occupying exactly the space she has decided to occupy.",
     "clothing_style": "Tier 4 functional — clean, worn, deliberately maintained. Typically wears a long-sleeved work apron in muted gray or taupe linen over simple black or dark-blue clothing. The apron has multiple pockets arranged for efficiency and is tailored to her exact measurements. Her shoes are orthopedic and waterproofed — practical, expensive, replaced every two years. A thin silver chain around her neck, always, with a small fabric-weight calibration token. No jewelry beyond the hearing amplifier earring and her work ring — a simple steel band worn on her left middle finger."
   },
-  "image_prompt": "Valentina Bustamante, 156cm textile artisan in GLMZ, warm bronze skin with golden undertones reflecting her Hispanic, Indigenous American, and Middle Eastern heritage blend. Electric white hair pinned close to head, deep brown eyes with subtle UV-filter lens shimmer. Fine facial lines from decades of precision work, broader nose and full lips characteristic of Indigenous American and Middle Eastern features. Compact lean build, wearing taupe linen work apron over dark blue clothing, long sleeves. Brushed steel hearing amplifier earring, thin silver calibration token chain. Hands showing permanent indentation marks from needlework, visible fine tremor. Sitting at work stool in fluorescent-lit textile workshop, neutral expression, meditative posture. Soft industrial lighting casting shadows across weathered bronze complexion. Functional, worn aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Hector Bustamante, 156cm textile artisan in GLMZ, warm bronze skin with golden undertones reflecting her Hispanic, Indigenous American, and Middle Eastern heritage blend. Electric white hair pinned close to head, deep brown eyes with subtle UV-filter lens shimmer. Fine facial lines from decades of precision work, broader nose and full lips characteristic of Indigenous American and Middle Eastern features. Compact lean build, wearing taupe linen work apron over dark blue clothing, long sleeves. Brushed steel hearing amplifier earring, thin silver calibration token chain. Hands showing permanent indentation marks from needlework, visible fine tremor. Sitting at work stool in fluorescent-lit textile workshop, neutral expression, meditative posture. Soft industrial lighting casting shadows across weathered bronze complexion. Functional, worn aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 52.6,
     "Indigenous American": 26.4,

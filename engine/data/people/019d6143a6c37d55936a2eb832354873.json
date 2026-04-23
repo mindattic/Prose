@@ -2,10 +2,7 @@
   "id": "019d6143a6c37d55936a2eb832354873",
   "type": "character",
   "name": "Florent Keomanivong-Calvillo",
-  "aliases": [
-    "Frost Keomanivong-Calvillo",
-    "Frost"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 58,
   "status": "active",
   "location": "The Oxidian Market, Geartown, near Ashland and Chicago Ave",
-  "description": "Frost Keomanivong-Calvillo is a broad-shouldered woman with deep umber skin mapped by decades of steam and spice smoke, her silver-streaked hair pinned under a faded yellow wrap she's worn so long it's become her trademark. Her left forearm is wrapped in a sleeve tattoo of a pepper vine that flowers whenever her skin temperature rises — a cheap bioink mod she got thirty years ago and has never seen reason to remove. She smells perpetually of fenugreek and charred chili, and her stall, a converted cargo container with a fold-out serving ledge, has been in the same spot in the Oxidian Market for twenty-two years. She speaks with the authority of a woman who has fed half of Geartown from infancy to old age.\n\nFrost Keomanivong-Calvillo is warmly domineering — she will decide what you are eating today, and you will thank her for it. She has strong opinions about everything from Zheng-Dao's latest transit fare hikes to which of her regulars is making poor romantic choices. Her memory for names, faces, and dietary restrictions is near-perfect, and she uses it like a gift. Beneath the maternal bluster is a woman who survived the displacement of Ironvein's old residential blocks twenty years ago and rebuilt her life around a single wok and a secondhand gas line.",
+  "description": "Florent Keomanivong-Calvillo is a broad-shouldered woman with deep umber skin mapped by decades of steam and spice smoke, her silver-streaked hair pinned under a faded yellow wrap she's worn so long it's become her trademark. Her left forearm is wrapped in a sleeve tattoo of a pepper vine that flowers whenever her skin temperature rises — a cheap bioink mod she got thirty years ago and has never seen reason to remove. She smells perpetually of fenugreek and charred chili, and her stall, a converted cargo container with a fold-out serving ledge, has been in the same spot in the Oxidian Market for twenty-two years. She speaks with the authority of a woman who has fed half of Geartown from infancy to old age.\n\nFlorent Keomanivong-Calvillo is warmly domineering — she will decide what you are eating today, and you will thank her for it. She has strong opinions about everything from Zheng-Dao's latest transit fare hikes to which of her regulars is making poor romantic choices. Her memory for names, faces, and dietary restrictions is near-perfect, and she uses it like a gift. Beneath the maternal bluster is a woman who survived the displacement of Ironvein's old residential blocks twenty years ago and rebuilt her life around a single wok and a secondhand gas line.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -187,7 +184,7 @@
     "Ironvein",
     "Chicago",
     "Silver",
-    "Frost",
+    "Florent",
     "Cargo Tacos",
     "Sterling-Nakamura PersonalAegis PA-7 'Rampart'"
   ],
@@ -212,7 +209,7 @@
     "posture_movement": "She stands with weight distributed evenly, ready to move in any direction—muscle memory from a lifetime of kitchen work. Her walk is economical and deliberate, never rushed but never idle. When at rest, she leans against her stall counter with one hip, arms crossed, watching her workspace with the focus of a conductor. Her default expression is slightly skeptical, eyebrows raised, as if assessing whether you're making good life choices.",
     "clothing_style": "Tier 3-4 working class, practical and worn. Her daily uniform: a faded yellow cotton wrap over her hair (same one for decades), a dark olive canvas apron stained with turmeric and soy sauce, and a loose linen tunic in cream or muted rust. Underneath, simple thermal base layer. On her feet: well-broken-in slip-on kitchen clogs, black synthetic, reinforced at the heel. A slim brass wedding band on her left ring finger, worn smooth. No jewelry otherwise—practical only. Her clothes smell permanently of fenugreek, charred chili, and woodsmoke."
   },
-  "image_prompt": "Frost Keomanivong-Calvillo, 168cm tall, sturdy and broad-shouldered Southeast Asian-dominant woman with warmth from Latin American and Middle Eastern heritage. Deep brown skin with golden undertones, luminous from decades of kitchen work. Lined face with crow's feet, rounded Southeast Asian facial structure with prominent cheekbones, small mole on left cheekbone. Long dark brown hair with silver streaks pinned under faded yellow cotton wrap worn smooth from 22 years of use. Deep brown eyes, right eye with subtle amber reading lens implant. Thick forearms bearing thermochromic pepper vine tattoo (green vines, red blooms when heated), network of faded burn scars on hands and wrists, pale horizontal scar on left shin. Wearing cream linen tunic, dark olive canvas apron stained with turmeric and soy, black kitchen clogs. Slim worn brass wedding band. Standing at her cooking stall counter in the Great Lakes Metropolitan Zone, 2226, leaning with weight on one hip, arms crossed, watching her workspace with slight skepticism. Steam rising from wok in background, warm amber kitchen lighting, smell of fenugreek and charred chili in the air. GLMZ 2200s street food vendor aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Florent Keomanivong-Calvillo, 168cm tall, sturdy and broad-shouldered Southeast Asian-dominant woman with warmth from Latin American and Middle Eastern heritage. Deep brown skin with golden undertones, luminous from decades of kitchen work. Lined face with crow's feet, rounded Southeast Asian facial structure with prominent cheekbones, small mole on left cheekbone. Long dark brown hair with silver streaks pinned under faded yellow cotton wrap worn smooth from 22 years of use. Deep brown eyes, right eye with subtle amber reading lens implant. Thick forearms bearing thermochromic pepper vine tattoo (green vines, red blooms when heated), network of faded burn scars on hands and wrists, pale horizontal scar on left shin. Wearing cream linen tunic, dark olive canvas apron stained with turmeric and soy, black kitchen clogs. Slim worn brass wedding band. Standing at her cooking stall counter in the Great Lakes Metropolitan Zone, 2226, leaning with weight on one hip, arms crossed, watching her workspace with slight skepticism. Steam rising from wok in background, warm amber kitchen lighting, smell of fenugreek and charred chili in the air. GLMZ 2200s street food vendor aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Southeast Asian": 73.7,
     "Hispanic/Latin American": 18.7,

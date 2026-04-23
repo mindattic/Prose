@@ -1366,8 +1366,8 @@
     },
     "MindAttic.LLMVoting/1.0.0": {
       "type": "project",
-      "path": "../../../LLMVoting/LLMVoting/LLMVoting.csproj",
-      "msbuildProject": "../../../LLMVoting/LLMVoting/LLMVoting.csproj"
+      "path": "../../LLMVoting/LLMVoting/LLMVoting.csproj",
+      "msbuildProject": "../../LLMVoting/LLMVoting/LLMVoting.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1420,8 +1420,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\Projects\\MindAttic\\LLMVoting\\LLMVoting\\LLMVoting.csproj": {
-              "projectPath": "D:\\Projects\\MindAttic\\LLMVoting\\LLMVoting\\LLMVoting.csproj"
+            "D:\\Projects\\MindAttic\\StreetSamurai\\LLMVoting\\LLMVoting\\LLMVoting.csproj": {
+              "projectPath": "D:\\Projects\\MindAttic\\StreetSamurai\\LLMVoting\\LLMVoting\\LLMVoting.csproj"
             }
           }
         }

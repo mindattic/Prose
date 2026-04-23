@@ -2,10 +2,7 @@
   "id": "019d6143a5e27912b40e0f8e81d95a96",
   "type": "character",
   "name": "Fermin Baiseitov",
-  "aliases": [
-    "Temur Baiseitov",
-    "Temur"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 34,
   "status": "active",
   "location": "Deepwell Station, lower Blackpipe Corridor — lives in transit housing on Avon Curve, near sub-level access near LaSalle and Congress",
-  "description": "Temur Baiseitov is lean and angular, with a long face, close-cropped hair, and the particular posture of someone who spends ten hours a day in a seated position in a tight cab: slightly hunched forward, neck perpetually stiff. His skin is a warm dark brown and he has a geneware mod — iridescent peacock-pattern irises — that he got done at nineteen when he had money for exactly one vanity thing and he chose to make it count. He keeps his fingernails very clean because the cab makes them filthy and cleanliness feels like the one thing he controls.\n\nTemur Baiseitov is not an unhappy man, but he is a careful one. He has seen too many things go wrong in the tunnels — mechanical failures, platform incidents, the odd person who steps onto the rail on purpose — to be loose with his attention. Off the clock he is surprisingly funny in a dry, deadpan way, a collector of absurd overheard conversations which he logs in a personal audio journal he has kept for eleven years. He has mild, undiagnosed tunnel fatigue — a known occupational condition among long-haul transit operators — which manifests as a need for open-sky time and a deep, inarticulate dread of any room without a visible exit.",
+  "description": "Fermin Baiseitov is lean and angular, with a long face, close-cropped hair, and the particular posture of someone who spends ten hours a day in a seated position in a tight cab: slightly hunched forward, neck perpetually stiff. His skin is a warm dark brown and he has a geneware mod — iridescent peacock-pattern irises — that he got done at nineteen when he had money for exactly one vanity thing and he chose to make it count. He keeps his fingernails very clean because the cab makes them filthy and cleanliness feels like the one thing he controls.\n\nFermin Baiseitov is not an unhappy man, but he is a careful one. He has seen too many things go wrong in the tunnels — mechanical failures, platform incidents, the odd person who steps onto the rail on purpose — to be loose with his attention. Off the clock he is surprisingly funny in a dry, deadpan way, a collector of absurd overheard conversations which he logs in a personal audio journal he has kept for eleven years. He has mild, undiagnosed tunnel fatigue — a known occupational condition among long-haul transit operators — which manifests as a need for open-sky time and a deep, inarticulate dread of any room without a visible exit.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -218,7 +215,7 @@
     "posture_movement": "Habitually slight forward lean even when standing, as if anticipating the need to engage controls. Neck carries perpetual tension. Movements are precise and economical — no wasted motion. When walking, takes measured, deliberate strides. Sits with ankles crossed or feet firmly planted. Eyes move with intense focus before head follows.",
     "clothing_style": "Tier 3-4 working class. Off-shift: well-maintained dark synthetic pants, long-sleeved shirt in muted colors (grey, charcoal, dark blue) for sun protection and concealment of sweat. Ferrogate-issued operator jacket — dark blue with reflective piping and Line 7 patches, worn during shifts. Practical shoes with good grip. Minimal jewelry except for a worn analog wristwatch and a simple brass ring on left middle finger. Everything is clean, functional, and chosen for durability over style. No visible corporate branding outside the transit uniform."
   },
-  "image_prompt": "Temur Baiseitov, transit operator in GLMZ, close-cropped black hair, striking iridescent peacock-blue-violet eyes with engineered geneware, warm tan skin with golden undertones and subtle East Asian features. Broad high cheekbones, straight jawline, slight forward lean from years at transit controls. Lean angular build, 178cm tall. Wearing dark charcoal long-sleeved shirt, dark blue Ferrogate operator jacket with reflective piping and Line 7 transit patches, practical dark pants. Worn analog wristwatch and simple brass ring visible. Faint white wrist scar barely visible, small burn mark on right hand. Tense focused expression, eyes intense and concentrated. Standing in neon-lit Great Lakes Metropolitan Zone transit hub, artificial station lighting casting cool shadows across his face, highlighting iridescent eyes. Precise measured posture, minimal movement. GLMZ 2200s aesthetic, gritty industrial setting, moody atmospheric lighting --ar 2:3 --v 6",
+  "image_prompt": "Fermin Baiseitov, transit operator in GLMZ, close-cropped black hair, striking iridescent peacock-blue-violet eyes with engineered geneware, warm tan skin with golden undertones and subtle East Asian features. Broad high cheekbones, straight jawline, slight forward lean from years at transit controls. Lean angular build, 178cm tall. Wearing dark charcoal long-sleeved shirt, dark blue Ferrogate operator jacket with reflective piping and Line 7 transit patches, practical dark pants. Worn analog wristwatch and simple brass ring visible. Faint white wrist scar barely visible, small burn mark on right hand. Tense focused expression, eyes intense and concentrated. Standing in neon-lit Great Lakes Metropolitan Zone transit hub, artificial station lighting casting cool shadows across his face, highlighting iridescent eyes. Precise measured posture, minimal movement. GLMZ 2200s aesthetic, gritty industrial setting, moody atmospheric lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Northern European": 38.8,
     "Central Asian": 24.5,

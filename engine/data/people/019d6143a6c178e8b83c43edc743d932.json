@@ -2,10 +2,7 @@
   "id": "019d6143a6c178e8b83c43edc743d932",
   "type": "character",
   "name": "Abril Johansson-Nygaard-Björnsdóttir",
-  "aliases": [
-    "Soren Johansson-Nygaard-Björnsdóttir",
-    "Soren"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 45,
   "status": "active",
   "location": "Crucible Square — open-air market, Tier 1-2 commerce, near Pulaski and Chicago Ave",
-  "description": "Soren Johansson-Nygaard-Björnsdóttir is slight and easy to overlook, which is exactly the point. At 45, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a counterintelligence specialist out of Crucible Square, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented counterintelligence specialist in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
+  "description": "Abril Johansson-Nygaard-Björnsdóttir is slight and easy to overlook, which is exactly the point. At 45, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a counterintelligence specialist out of Crucible Square, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented counterintelligence specialist in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.77,
@@ -306,7 +303,7 @@
     "posture_movement": "Economical and controlled; she moves with a deliberate, measured quality that suggests constant threat assessment. Her gait is symmetrical despite the chrome joints — a sign of long habituation to the augmentations. She doesn't fidget; stillness is her default state.",
     "clothing_style": "Tier 3-4 utilitarian: dark synthwool jacket with multiple sealed pockets and cable management loops; fitted tactical cargo pants with thigh holster and calf pouches; reinforced ankle boots rated for industrial use. She favors high necklines that partially conceal her jawline scarring. Her gear is maintained but worn; no logos, no affiliation colors. A digital timepiece with encrypted protocols on her left wrist."
   },
-  "image_prompt": "GLMZ, Soren Johansson-Nygaard-Björnsdóttir: lean 162cm augmented operative with medium warm olive skin and golden undertones, angular face with high cheekbones reflecting Northern European and Southeast Asian heritage. Deep brown eyes with visible microcircuitry at iris margin. Steel gray hair pulled back in tight braid. Visible polished chrome hydraulic joints at elbows and knees, subdermal neural scarring at temples and jawline, jagged scar tissue along right jaw, external audio receiver arrays at ear bases. Wearing dark synthwool tactical jacket with cable management, fitted tactical cargo pants with thigh holster, reinforced boots. High neckline concealing jawline scars. Economical posture, measured stillness, constant threat assessment bearing. Industrial utilitarian aesthetic, worn but maintained gear. Urban GLMZ nocturnal setting, cool neon and warehouse lighting casting sharp shadows across angular features and chrome augmentation surfaces. Mood: lethal professionalism, controlled intensity, seasoned operative in downtime moment --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, Abril Johansson-Nygaard-Björnsdóttir: lean 162cm augmented operative with medium warm olive skin and golden undertones, angular face with high cheekbones reflecting Northern European and Southeast Asian heritage. Deep brown eyes with visible microcircuitry at iris margin. Steel gray hair pulled back in tight braid. Visible polished chrome hydraulic joints at elbows and knees, subdermal neural scarring at temples and jawline, jagged scar tissue along right jaw, external audio receiver arrays at ear bases. Wearing dark synthwool tactical jacket with cable management, fitted tactical cargo pants with thigh holster, reinforced boots. High neckline concealing jawline scars. Economical posture, measured stillness, constant threat assessment bearing. Industrial utilitarian aesthetic, worn but maintained gear. Urban GLMZ nocturnal setting, cool neon and warehouse lighting casting sharp shadows across angular features and chrome augmentation surfaces. Mood: lethal professionalism, controlled intensity, seasoned operative in downtime moment --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Northern European": 40.7,
     "Hispanic/Latin American": 21.3,

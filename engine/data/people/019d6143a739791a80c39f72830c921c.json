@@ -2,10 +2,7 @@
   "id": "019d6143a739791a80c39f72830c921c",
   "type": "character",
   "name": "Beyza Charoenphol-Keïta",
-  "aliases": [
-    "Slate Charoenphol-Keïta",
-    "Slate"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 58,
   "status": "active",
   "location": "The Oxidian Market, Stall Row 7, Copperhead, near Pulaski and Chicago Ave",
-  "description": "Slate Charoenphol-Keïta is a broad-shouldered woman with deep brown skin mapped in fine wrinkles that bunch around her eyes when she laughs, which is often. Her silver-streaked hair is cropped close on one side and falls in a thick, loose braid on the other, threaded with tiny glass beads that click when she moves. She has no augmentations save for a thermal patch embedded in her left palm — an industrial mod repurposed for gauging the exact temperature of her woks without touching them. Her stall smells of fermented shrimp paste, ghost chili, and something sweet and unidentifiable that she claims is her grandmother's secret.\n\nShe is a woman of fierce opinions and genuine warmth, the kind of person who will berate you for putting too much salt on her food and then slip an extra dumpling into your bag when she thinks you look hungry. She has operated this same stall for twenty-two years and knows every vendor, enforcer, and regular by name, ailment, and preference. She carries grief quietly, tucked behind her humor, and speaks of her late husband only in the context of recipes he loved. The ELF she calls Mama Simmer lives in the ancient gas regulator under her wok — she leaves it a teaspoon of rendered fat every morning.",
+  "description": "Beyza Charoenphol-Keïta is a broad-shouldered woman with deep brown skin mapped in fine wrinkles that bunch around her eyes when she laughs, which is often. Her silver-streaked hair is cropped close on one side and falls in a thick, loose braid on the other, threaded with tiny glass beads that click when she moves. She has no augmentations save for a thermal patch embedded in her left palm — an industrial mod repurposed for gauging the exact temperature of her woks without touching them. Her stall smells of fermented shrimp paste, ghost chili, and something sweet and unidentifiable that she claims is her grandmother's secret.\n\nShe is a woman of fierce opinions and genuine warmth, the kind of person who will berate you for putting too much salt on her food and then slip an extra dumpling into your bag when she thinks you look hungry. She has operated this same stall for twenty-two years and knows every vendor, enforcer, and regular by name, ailment, and preference. She carries grief quietly, tucked behind her humor, and speaks of her late husband only in the context of recipes he loved. The ELF she calls Mama Simmer lives in the ancient gas regulator under her wok — she leaves it a teaspoon of rendered fat every morning.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -230,7 +227,7 @@
     "ShieldTech Enforcer DM-4 'Crossover'",
     "Chicago",
     "Silver",
-    "Slate",
+    "Beyza",
     "Glass",
     "The Paste Bar",
     "Palm Leaf"
@@ -256,7 +253,7 @@
     "posture_movement": "Stands with weight distributed solidly, shoulders back. Moves with economical precision — every gesture efficient from years of operating a confined wok space. Hands gesture expressively when speaking, beads in her braid clicking audibly with movement. Leans against her stall counter with the ease of someone in their own territory.",
     "clothing_style": "Practical Tier 3-4 streetwear: loose-fitting linen tunic in faded indigo or rust, stained with decades of cooking splatters that have become part of the fabric's character. Worn canvas apron with multiple deep pockets, secured over the tunic. Comfortable flat shoes, non-slip sole worn thin. A single strand of small copper beads around her wrist — not jewelry but a tally or ritual object. Minimal jewelry beyond the beads; her wealth is in her reputation, not her appearance."
   },
-  "image_prompt": "GLMZ, portrait of Slate Charoenphol-Keïta, a 172cm woman with warm deep brown skin with golden undertones, blended Southeast Asian, Sub-Saharan African, and Latin American heritage. High prominent cheekbones, fine wrinkles mapping decades of outdoor work, deep brown eyes with amber warmth. Asymmetrical black hair with silver streaks — cropped right side, thick three-strand braid with glass beads on left side clicking as she moves. Broad-shouldered, muscular build from wok work. Wearing faded indigo linen tunic stained with cooking splatters, worn canvas apron with deep pockets. Pale burn scars visible on backs of both hands. Left palm displays ornate copper filigree thermal sensing augmentation. Copper bead bracelet on wrist. Standing at her street food stall counter with solid posture, economical precision in gesture, leaning with territorial ease. Dim neon glow from nearby signage, warm steam rising from unseen wok, practical street market atmosphere, evening lighting with amber and blue neon accents casting shadows across her weathered but dignified face. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Beyza Charoenphol-Keïta, a 172cm woman with warm deep brown skin with golden undertones, blended Southeast Asian, Sub-Saharan African, and Latin American heritage. High prominent cheekbones, fine wrinkles mapping decades of outdoor work, deep brown eyes with amber warmth. Asymmetrical black hair with silver streaks — cropped right side, thick three-strand braid with glass beads on left side clicking as she moves. Broad-shouldered, muscular build from wok work. Wearing faded indigo linen tunic stained with cooking splatters, worn canvas apron with deep pockets. Pale burn scars visible on backs of both hands. Left palm displays ornate copper filigree thermal sensing augmentation. Copper bead bracelet on wrist. Standing at her street food stall counter with solid posture, economical precision in gesture, leaning with territorial ease. Dim neon glow from nearby signage, warm steam rising from unseen wok, practical street market atmosphere, evening lighting with amber and blue neon accents casting shadows across her weathered but dignified face. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Southeast Asian": 47.4,
     "Sub-Saharan African": 21,

@@ -4,10 +4,7 @@
   "vote_count": 1,
   "type": "character",
   "name": "Ayushi Thorvaldsdóttir",
-  "aliases": [
-    "Flux Thorvaldsdóttir",
-    "Flux"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -15,7 +12,7 @@
   "age": 45,
   "status": "active",
   "location": "The Narrows — cramped residential corridors between megastructures, near Armitage and Milwaukee",
-  "description": "Flux Thorvaldsdóttir is slight and easy to overlook, which is exactly the point. At 45, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a cleaner out of The Narrows, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nFlux Thorvaldsdóttir operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Ayushi Thorvaldsdóttir is slight and easy to overlook, which is exactly the point. At 45, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and he makes no effort to hide it.\n\nHe taught himself the trade through trial, error, and a pain tolerance that concerns the people who know him best. He works as a cleaner out of The Narrows, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nAyushi Thorvaldsdóttir operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.96,
@@ -297,7 +294,7 @@
     "posture_movement": "Still. Conserves motion. Walks with minimal upper body movement, lets hips lead. Stands in corners when stationary, back always positioned with sightline control. Doesn't fidget. His stillness is his primary invisibility asset — easier to overlook someone who isn't performing visibility.",
     "clothing_style": "Tier 3-4 utilitarian. Charcoal gray tech-weave utility jacket with reinforced forearm panels — practical, worn enough to be invisible but maintained. Black cargo pants with custom pockets. Steel-toed boots, scuffed but functional. Thin high-neck undershirt in black, covers any subdermal scarring. No branding visible. Everything selected for silence — no rustling fabrics, muted colors, nothing that broadcasts presence."
   },
-  "image_prompt": "Flux Thorvaldsdóttir, androgynous operative with mixed East Asian, Middle Eastern, and Sub-Saharan African heritage, deep warm golden-brown skin tone with angular cheekbones and precise jawline. Dark brown eyes with alert, measuring gaze. Dark brown hair with silver at temples, pulled back tight. Visible smartgun link port array in right forearm with polished stainless chrome. White scar through left eyebrow, two parallel scars on right cheekbone. Lean 168cm frame with corded muscle definition from geneware enhancement. Wearing charcoal gray tech-weave utility jacket with reinforced forearm panels, black cargo pants, scuffed steel-toed boots, high-neck black undershirt. Standing in corner with minimal posture, back to wall, sightline control position. GLMZ Great Lakes Metropolitan Zone setting, neon-lit industrial backdrop, moody shadows, cool blue-gray lighting with accent highlights on augmentation ports. Expression neutral and measured. Silent operative aesthetic, invisible in plainness, functional over flashy. --ar 2:3 --v 6",
+  "image_prompt": "Ayushi Thorvaldsdóttir, androgynous operative with mixed East Asian, Middle Eastern, and Sub-Saharan African heritage, deep warm golden-brown skin tone with angular cheekbones and precise jawline. Dark brown eyes with alert, measuring gaze. Dark brown hair with silver at temples, pulled back tight. Visible smartgun link port array in right forearm with polished stainless chrome. White scar through left eyebrow, two parallel scars on right cheekbone. Lean 168cm frame with corded muscle definition from geneware enhancement. Wearing charcoal gray tech-weave utility jacket with reinforced forearm panels, black cargo pants, scuffed steel-toed boots, high-neck black undershirt. Standing in corner with minimal posture, back to wall, sightline control position. GLMZ Great Lakes Metropolitan Zone setting, neon-lit industrial backdrop, moody shadows, cool blue-gray lighting with accent highlights on augmentation ports. Expression neutral and measured. Silent operative aesthetic, invisible in plainness, functional over flashy. --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "East Asian": 50.9,

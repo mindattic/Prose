@@ -2,10 +2,7 @@
   "id": "019d6143a60f7e7f989cd1744012a826",
   "type": "character",
   "name": "Griselda Song",
-  "aliases": [
-    "Meera Song",
-    "Meera"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 33,
   "status": "active",
   "location": "the Gray Zone — lower district tenements near the old lakeshore, near Halsted and Chicago Ave",
-  "description": "Meera Song is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a demolitions expert out of the Gray Zone, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Meera Song describe him as a precision instrument — point him at a problem and get out of the way.",
+  "description": "Griselda Song is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 33, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a demolitions expert out of the Gray Zone, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Griselda Song describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.34,
@@ -303,7 +300,7 @@
     "posture_movement": "Stands with weight balanced and centered, never fully relaxed but never tense — a coiled baseline. Moves with deliberate efficiency; no extraneous gestures. Eyes track threat vectors habitually. When handling equipment or working a site, his movements become almost meditative — slow, precise, repeatable. Natural left-hand dominant but practiced ambidextrous.",
     "clothing_style": "Tier 3-4 utilitarian: reinforced cargo pants (gray or black synthweave blend), durable work boots (steel-toed, modified), fitted tactical tank or henley (dark colors, moisture-wicking fabric). Oversized work jacket or reinforced denim over layers — pockets loaded with tools, dead drop tokens, secure comms units. No chrome jewelry or aesthetic chrome — everything is functional. No corporate branding. Carries himself like someone who owns nothing valuable except knowledge and capability."
   },
-  "image_prompt": "Meera Song, tall lean man with warm medium brown skin, golden undertones blending South Asian, East Asian, Central Asian, and subtle Hispanic heritage. High angular cheekbones, sharp jawline, warm brown amber-tinted eyes with East Asian epicanthic fold. Dark brown close-cropped fade haircut. Visible pale surgical scars on both wrists, ragged scar tissue web across right temple where hair doesn't grow. Burn mark on left forearm. Small circuit-board tattoo on right inner wrist. Standing coiled and balanced in dark synthetic tactical clothing: black cargo pants, steel-toed work boots, dark henley, oversized reinforced work jacket. Subtle chrome glinting beneath skin at joints under neon lighting. GLMZ, Great Lakes Metropolitan Zone, industrial demolition site with cool blue-green neon casting sharp shadows, photorealistic, gritty neo-noir urban aesthetic, dust and concrete in background, focused intense expression, occupational wear, functional gear, no ornamental chrome --ar 2:3 --v 6",
+  "image_prompt": "Griselda Song, tall lean man with warm medium brown skin, golden undertones blending South Asian, East Asian, Central Asian, and subtle Hispanic heritage. High angular cheekbones, sharp jawline, warm brown amber-tinted eyes with East Asian epicanthic fold. Dark brown close-cropped fade haircut. Visible pale surgical scars on both wrists, ragged scar tissue web across right temple where hair doesn't grow. Burn mark on left forearm. Small circuit-board tattoo on right inner wrist. Standing coiled and balanced in dark synthetic tactical clothing: black cargo pants, steel-toed work boots, dark henley, oversized reinforced work jacket. Subtle chrome glinting beneath skin at joints under neon lighting. GLMZ, Great Lakes Metropolitan Zone, industrial demolition site with cool blue-green neon casting sharp shadows, photorealistic, gritty neo-noir urban aesthetic, dust and concrete in background, focused intense expression, occupational wear, functional gear, no ornamental chrome --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 38.4,
     "East Asian": 33.7,

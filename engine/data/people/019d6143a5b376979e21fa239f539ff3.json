@@ -2,10 +2,7 @@
   "id": "019d6143a5b376979e21fa239f539ff3",
   "type": "character",
   "name": "Anouk Okafor-Möller",
-  "aliases": [
-    "Ember Okafor-Möller",
-    "Ember"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 32,
   "status": "active",
   "location": "Aurochs Medical Complex — sub-basement waste processing facility; lives in Blackpipe Corridor, near Armitage and Milwaukee",
-  "description": "Ember Okafor-Möller is a compact, deliberately unmemorable woman who has spent years perfecting the skill of being overlooked. She wears the grey-green uniform of Aurochs support services, keeps her dark hair pulled back in a practical bun, and has the kind of face that is genuinely warm in repose and genuinely blank on demand — she switches between them like a light. Her skin is a deep warm brown and her eyes are standard-issue dark, though the left one occasionally produces a faint violet phosphorescence from a bioluminescent mod she got second-hand and can't fully suppress, which she covers with a tinted contact lens that she hates. Her hands are permanently chemical-stained at the knuckles from the sterilization protocols.\n\nShe processes medical waste: sharps, expired biologics, surgical byproducts, and — this is where it gets complicated — the medications that are technically expired but functionally still effective, which Aurochs destroys by protocol and she intercepts by system. She has built a careful, small operation: she identifies medications that are safe and functional, diverts them before incineration, and routes them to four street clinics in The Narrows and Blackpipe Corridor at cost or below. She does not think of this as heroic. She thinks of it as the obvious thing that someone in her position could do, and she cannot understand why more people in her position don't do it. This is perhaps the most dangerous thing about her.",
+  "description": "Anouk Okafor-Möller is a compact, deliberately unmemorable woman who has spent years perfecting the skill of being overlooked. She wears the grey-green uniform of Aurochs support services, keeps her dark hair pulled back in a practical bun, and has the kind of face that is genuinely warm in repose and genuinely blank on demand — she switches between them like a light. Her skin is a deep warm brown and her eyes are standard-issue dark, though the left one occasionally produces a faint violet phosphorescence from a bioluminescent mod she got second-hand and can't fully suppress, which she covers with a tinted contact lens that she hates. Her hands are permanently chemical-stained at the knuckles from the sterilization protocols.\n\nShe processes medical waste: sharps, expired biologics, surgical byproducts, and — this is where it gets complicated — the medications that are technically expired but functionally still effective, which Aurochs destroys by protocol and she intercepts by system. She has built a careful, small operation: she identifies medications that are safe and functional, diverts them before incineration, and routes them to four street clinics in The Narrows and Blackpipe Corridor at cost or below. She does not think of this as heroic. She thinks of it as the obvious thing that someone in her position could do, and she cannot understand why more people in her position don't do it. This is perhaps the most dangerous thing about her.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -205,7 +202,7 @@
     "GLMZ",
     "The Gradient Compact",
     "The Pure Hand",
-    "Frost Boudiaf"
+    "Folakemi Boudiaf"
   ],
   "district": "The Circuit",
   "physical_description": {
@@ -227,7 +224,7 @@
     "posture_movement": "Moves with economical precision—no wasted motion. Quiet walker. Tends to keep her hands visible and still when not in use. Stands slightly angled, as if ready to pivot away. Makes deliberate eye contact when she decides to be memorable, none when she doesn't. Carries herself with the specific posture of someone who has learned to occupy minimal space.",
     "clothing_style": "Grey-green Aurochs Medical Complex support staff uniform during shifts—regulation poly-blend coverall with name badge, latex gloves, reinforced apron. Off-shift: practical Tier 4 clothing—worn dark jeans, fitted grey or black thermal shirts, a heavy olive canvas jacket patched at both elbows, practical boots (black synthetic leather, steel-toed). No jewelry except a cheap stainless steel watch. Her clothes are clean but deliberately unremarkable, chosen to not draw attention or memory."
   },
-  "image_prompt": "Ember Okafor-Möller, a compact 158cm woman with deep warm brown skin reflecting Sub-Saharan African, South Asian, and Southeast Asian heritage. High prominent cheekbones, expressive warm brown eyes with subtle amber undertones—left eye hidden behind amber-tinted contact lens concealing violet bioluminescence beneath. Black hair pulled back in tight bun with grey clip. Small scar visible on right temple. Chemical-stained yellowed discoloration on knuckles and first hand joints. Wearing grey-green Aurochs Medical Complex uniform with poly-blend coverall, name badge, latex gloves, reinforced apron during work shift. Off-shift in worn dark jeans, fitted grey thermal shirt, heavy olive canvas jacket with elbow patches, black synthetic leather steel-toed boots. Moves with economical precision, minimal wasted motion. GLMZ 2200s Great Lakes Metropolitan Zone setting, industrial medical facility or urban tier-4 district. Cool atmospheric lighting emphasizing skin tone warmth and the contrast of her unaugmented features against augmented details. Serious, observant expression. Minimal jewelry—only cheap stainless steel watch. Deliberately unremarkable, forgettable appearance by design --ar 2:3 --v 6",
+  "image_prompt": "Anouk Okafor-Möller, a compact 158cm woman with deep warm brown skin reflecting Sub-Saharan African, South Asian, and Southeast Asian heritage. High prominent cheekbones, expressive warm brown eyes with subtle amber undertones—left eye hidden behind amber-tinted contact lens concealing violet bioluminescence beneath. Black hair pulled back in tight bun with grey clip. Small scar visible on right temple. Chemical-stained yellowed discoloration on knuckles and first hand joints. Wearing grey-green Aurochs Medical Complex uniform with poly-blend coverall, name badge, latex gloves, reinforced apron during work shift. Off-shift in worn dark jeans, fitted grey thermal shirt, heavy olive canvas jacket with elbow patches, black synthetic leather steel-toed boots. Moves with economical precision, minimal wasted motion. GLMZ 2200s Great Lakes Metropolitan Zone setting, industrial medical facility or urban tier-4 district. Cool atmospheric lighting emphasizing skin tone warmth and the contrast of her unaugmented features against augmented details. Serious, observant expression. Minimal jewelry—only cheap stainless steel watch. Deliberately unremarkable, forgettable appearance by design --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 75.8,
     "South Asian": 12.2,

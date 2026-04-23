@@ -4,10 +4,7 @@
   "vote_count": 1,
   "type": "character",
   "name": "Bahram Baek",
-  "aliases": [
-    "Vale Baek",
-    "Vale"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
@@ -15,7 +12,7 @@
   "age": 33,
   "status": "active",
   "location": "The Lattice — vertical slum built into scaffolding of an unfinished arcology, near Halsted and Chicago Ave",
-  "description": "Vale Baek are athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 33, scars map their face like a transit diagram of bad decisions and worse luck. The chrome is visible — bioware adrenaline regulator — keeps calm under fire, controlled hormone release — and they make no effort to hide it.\n\nThey inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. They work as a combat medic out of The Lattice, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nVale Baek operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Bahram Baek are athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 33, scars map their face like a transit diagram of bad decisions and worse luck. The chrome is visible — bioware adrenaline regulator — keeps calm under fire, controlled hormone release — and they make no effort to hide it.\n\nThey inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. They work as a combat medic out of The Lattice, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nBahram Baek operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.96,
@@ -302,7 +299,7 @@
     "posture_movement": "Moves with economical precision — dancer's flow combined with predator's readiness. Weight distributed for instant directional change. Eyes constantly cataloging environment and threat vectors. Stillness when stationary is absolute, no fidgeting. In conversation, maintains visual contact with the cybernetic eye slightly longer than natural (unconscious habit). Walks with slightly favored left side — old injury memory in the body.",
     "clothing_style": "Tier 4 utilitarian — high-function field medic aesthetic. Black synthetic reinforced jacket (thermal-regulated, pressure-sealed for contamination), kevlar-weave underlayer visible at wrists and collar. Cargo pants with reinforced thigh and calf pockets for medical supplies and tools. Modular belt system with quick-release medical kit attachments. Steel-toed boots rated for industrial hazard zones. Minimal jewelry except for a scratched medical alert chip embedded in left wrist. Everything is maintained, practical, and selected for rapid field deployment. No branding, no status symbols — survival aesthetic."
   },
-  "image_prompt": "Vale Baek, 178cm field medic operative, warm medium-deep brown skin with complex global undertones, sharp defined jawline with moderate prominent cheekbones reflecting pan-Asian and African heritage, surgical scars across left cheekbone and right brow, dark hair in practical braid with silver threading at temples. Left eye warm organic brown, right eye unmistakable chrome cybernetic with iridescent iris glowing faintly. Chrome bioware neck interface visible along jawline. Black reinforced synthetic jacket with thermal regulation, kevlar underlayer at wrists and collar, military cargo pants with equipment pockets, steel-toed boots, modular medical belt. Lean athletic build, economical precise posture, neutral observation-focused expression. Nocturnal urban environment, neon-edged shadows, cool blue-green neo-noir lighting casting highlights on chrome eye and neck interface, industrial zone background with rain-slicked surfaces reflecting neon. Mood: alert, functional, predatory calm. Professional field operator aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Bahram Baek, 178cm field medic operative, warm medium-deep brown skin with complex global undertones, sharp defined jawline with moderate prominent cheekbones reflecting pan-Asian and African heritage, surgical scars across left cheekbone and right brow, dark hair in practical braid with silver threading at temples. Left eye warm organic brown, right eye unmistakable chrome cybernetic with iridescent iris glowing faintly. Chrome bioware neck interface visible along jawline. Black reinforced synthetic jacket with thermal regulation, kevlar underlayer at wrists and collar, military cargo pants with equipment pockets, steel-toed boots, modular medical belt. Lean athletic build, economical precise posture, neutral observation-focused expression. Nocturnal urban environment, neon-edged shadows, cool blue-green neo-noir lighting casting highlights on chrome eye and neck interface, industrial zone background with rain-slicked surfaces reflecting neon. Mood: alert, functional, predatory calm. Professional field operator aesthetic. --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "Eastern European": 33.3,

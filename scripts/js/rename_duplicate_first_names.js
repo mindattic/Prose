@@ -10,12 +10,23 @@
 //   - Pool names currently used by any canon character are excluded to prevent new collisions.
 //
 // Phases:
-//   phase1 — rename people files; emit rename_map.json
-//   phase2 — read rename_map.json; update full-name references in every other JSON under engine/data and ghostwriter
+//   phase1 — rename people files (name + aliases); emit rename_map.json
+//   phase2 — read rename_map.json; update full-name references in every other JSON
+//            under engine/data and ghostwriter (SKIPS engine/data/people/)
+//   phase3 — fix internal prose in each renamed character's OWN file (description,
+//            role, narrative_function, etc.). Phase 1 only updated name+aliases,
+//            so prose still said "Soren Guerrero is a tall..." when name was now
+//            "Aarush Guerrero". Preserves top-level aliases intact.
+//   phase4 — cross-character sweep of PEOPLE files (phase 2 skipped these).
+//            For each people file, apply EVERY rename in the map to string values,
+//            except the owner file's own name/id/aliases. Fixes stale references
+//            like "Soren Guerrero, my friend" in another character's relationships.
 //
 // Usage:
 //   node scripts/js/rename_duplicate_first_names.js --phase1 [--dry-run]
 //   node scripts/js/rename_duplicate_first_names.js --phase2 [--dry-run]
+//   node scripts/js/rename_duplicate_first_names.js --phase3 [--dry-run]
+//   node scripts/js/rename_duplicate_first_names.js --phase4 [--dry-run]
 
 const fs   = require('fs');
 const path = require('path');
@@ -39,10 +50,14 @@ function args() {
   return {
     phase1:  a.includes('--phase1'),
     phase2:  a.includes('--phase2'),
+    phase3:  a.includes('--phase3'),
+    phase4:  a.includes('--phase4'),
     dryRun:  a.includes('--dry-run'),
     sample:  a.includes('--sample'),
   };
 }
+
+function escapeRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
 
 function listPeople() {
   return fs.readdirSync(PEOPLE_DIR)
@@ -247,16 +262,179 @@ function phase2(dryRun) {
   console.log(`[phase2] ${touched} files ${dryRun ? 'would be' : 'were'} updated; ${replaced} replacements ${dryRun ? 'proposed' : 'applied'}`);
 }
 
+// ── Phase 3 ───────────────────────────────────────────────────
+//
+// Fix internal self-references inside each renamed character's own file.
+// Phase 1 swapped top-level `name` + stashed old names in `aliases`, but every
+// other prose field (description, role, narrative_function, relationships,
+// speech_patterns, etc.) still named the character by their old first name.
+// This phase walks the JSON and replaces:
+//   - oldFullName  →  newFullName  (e.g. "Soren Guerrero" → "Aarush Guerrero")
+//   - \boldFirst\b →  newFirst     (e.g. bare "Soren" → "Aarush")
+// in every string value EXCEPT top-level `name`, `id`, and `aliases`.
+
+function phase3(dryRun) {
+  if (!fs.existsSync(MAP_FILE)) {
+    throw new Error(`missing ${MAP_FILE} — run --phase1 first`);
+  }
+  const map = JSON.parse(fs.readFileSync(MAP_FILE, 'utf8'));
+  console.log(`[phase3] loaded ${map.length} renames`);
+
+  let touched = 0, replaced = 0;
+  const samples = [];
+
+  for (const r of map) {
+    const file = path.resolve(REPO_ROOT, r.file);
+    if (!fs.existsSync(file)) continue;
+
+    let data;
+    try { data = JSON.parse(fs.readFileSync(file, 'utf8')); }
+    catch { continue; }
+
+    const oldFirst = r.oldName.split(/\s+/)[0];
+    const newFirst = r.newName.split(/\s+/)[0];
+    // Full-name pattern first (longer, more specific); then bare first-name with \b.
+    const fullRe  = new RegExp(escapeRe(r.oldName), 'g');
+    const firstRe = new RegExp(`\\b${escapeRe(oldFirst)}\\b`, 'g');
+
+    let fileReplaced = 0;
+
+    function rewriteString(s) {
+      if (typeof s !== 'string' || s.length === 0) return s;
+      const before = s;
+      s = s.replace(fullRe, r.newName);
+      s = s.replace(firstRe, newFirst);
+      if (s !== before) fileReplaced++;
+      return s;
+    }
+
+    function walk(node, isTopLevel = false) {
+      if (typeof node === 'string') return rewriteString(node);
+      if (Array.isArray(node)) return node.map(x => walk(x));
+      if (node && typeof node === 'object') {
+        const out = {};
+        for (const [k, v] of Object.entries(node)) {
+          // At top level, preserve name/id/aliases. `name` was already set by phase1;
+          // `aliases` intentionally holds old names for backward resolution.
+          if (isTopLevel && (k === 'name' || k === 'id' || k === 'aliases')) {
+            out[k] = v;
+            continue;
+          }
+          out[k] = walk(v);
+        }
+        return out;
+      }
+      return node;
+    }
+
+    const updated = walk(data, true);
+
+    if (fileReplaced > 0) {
+      touched++;
+      replaced += fileReplaced;
+      if (samples.length < 3) samples.push({ id: r.id, oldName: r.oldName, newName: r.newName, count: fileReplaced });
+      if (!dryRun) fs.writeFileSync(file, JSON.stringify(updated, null, 2) + '\n');
+    }
+  }
+
+  console.log(`[phase3] ${touched} files ${dryRun ? 'would be' : 'were'} updated; ${replaced} internal replacements ${dryRun ? 'proposed' : 'applied'}`);
+  if (samples.length) {
+    console.log('\nSample:');
+    for (const s of samples)
+      console.log(`  ${s.oldName} → ${s.newName}  (${s.count} internal refs in ${s.id})`);
+  }
+}
+
+// ── Phase 4 ───────────────────────────────────────────────────
+//
+// Cross-character sweep through people files. Phase 2 skipped these by design;
+// Phase 3 only fixed each file's OWN rename. Phase 4 handles refs like
+// "Aarush's mentor was Soren Guerrero" where Kyle's file references a renamed
+// character by their old full name — the kind of cross-character connection
+// that lives in relationships[], story_hooks[], and prose descriptions.
+//
+// Compiles regexes for every rename, walks each people file's JSON, replaces
+// every old full name → new full name in all string values except the owner
+// file's top-level name/id/aliases (which Phase 1 set correctly and which
+// intentionally preserve old names).
+
+function phase4(dryRun) {
+  if (!fs.existsSync(MAP_FILE)) {
+    throw new Error(`missing ${MAP_FILE} — run --phase1 first`);
+  }
+  const map = JSON.parse(fs.readFileSync(MAP_FILE, 'utf8'));
+  console.log(`[phase4] loaded ${map.length} renames`);
+
+  // Longest-first ordering so "Soren Hinojosa-Agyemang-Achebe" is tried before
+  // a hypothetically-shorter "Soren Hinojosa" that could collide as a substring.
+  const pairs = map
+    .slice()
+    .sort((a, b) => b.oldName.length - a.oldName.length)
+    .map(r => ({ re: new RegExp(escapeRe(r.oldName), 'g'), to: r.newName, old: r.oldName }));
+
+  const peopleFiles = listPeople();
+  console.log(`[phase4] scanning ${peopleFiles.length} people files`);
+
+  let touched = 0, replaced = 0;
+
+  for (const file of peopleFiles) {
+    let data;
+    try { data = JSON.parse(fs.readFileSync(file, 'utf8')); }
+    catch { continue; }
+
+    let fileReplaced = 0;
+
+    function rewrite(s) {
+      if (typeof s !== 'string' || s.length === 0) return s;
+      let v = s, before = s;
+      for (const p of pairs) {
+        if (v.indexOf(p.old) !== -1) v = v.replace(p.re, p.to);
+      }
+      if (v !== before) fileReplaced++;
+      return v;
+    }
+
+    function walk(node, isTopLevel = false) {
+      if (typeof node === 'string') return rewrite(node);
+      if (Array.isArray(node)) return node.map(x => walk(x));
+      if (node && typeof node === 'object') {
+        const out = {};
+        for (const [k, v] of Object.entries(node)) {
+          if (isTopLevel && (k === 'name' || k === 'id' || k === 'aliases')) {
+            out[k] = v;
+            continue;
+          }
+          out[k] = walk(v);
+        }
+        return out;
+      }
+      return node;
+    }
+
+    const updated = walk(data, true);
+
+    if (fileReplaced > 0) {
+      touched++;
+      replaced += fileReplaced;
+      if (!dryRun) fs.writeFileSync(file, JSON.stringify(updated, null, 2) + '\n');
+    }
+  }
+
+  console.log(`[phase4] ${touched} files ${dryRun ? 'would be' : 'were'} updated; ${replaced} strings ${dryRun ? 'proposed' : 'rewritten'}`);
+}
+
 // ── Main ──────────────────────────────────────────────────────
 
 function main() {
   const a = args();
-  if (!a.phase1 && !a.phase2) {
-    console.error('usage: node rename_duplicate_first_names.js --phase1 [--dry-run] | --phase2 [--dry-run]');
+  if (!a.phase1 && !a.phase2 && !a.phase3 && !a.phase4) {
+    console.error('usage: node rename_duplicate_first_names.js --phase1 | --phase2 | --phase3 | --phase4  [--dry-run]');
     process.exit(1);
   }
   if (a.phase1) phase1(a.dryRun);
   if (a.phase2) phase2(a.dryRun);
+  if (a.phase3) phase3(a.dryRun);
+  if (a.phase4) phase4(a.dryRun);
 }
 
 main();

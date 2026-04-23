@@ -3,10 +3,7 @@
   "rating": 80,
   "type": "character",
   "name": "Berko Hong-Árnason-Rentería",
-  "aliases": [
-    "Slate Hong-Árnason-Rentería",
-    "Slate"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -14,7 +11,7 @@
   "age": 58,
   "status": "active",
   "location": "Pilsen Veil, basement workshop beneath a decommissioned Ferrogate Transit relay station, near Western and Chicago Ave",
-  "description": "Slate Hong-Árnason-Rentería is a large, slow-moving man with the quiet authority of someone who has simply outlasted most arguments. His skin is very dark, his grey-streaked locs gathered at the back of his neck, and his hands are enormous — scarred across the knuckles from decades of working with salvaged metal and resonant polymers. He has no cosmetic mods but wears a cochlear amplifier behind his left ear that lets him hear frequencies beyond normal human range; he chose that over anything decorative. He moves through spaces as if listening to them.\n\nSlate Hong-Árnason-Rentería builds instruments that are also sculptures and then performs with them in spaces most people would call acoustically hostile: drainage tunnels, abandoned transit shafts, the concrete bellies of flood-control cisterns. His work is ambient, slow, and enormous in scale — single notes held for minutes, harmonics that make walls breathe. He is not famous outside of a small devoted community, and he prefers it exactly that way. He is a father figure to younger artists in the Pilsen Veil, blunt about craft and surprisingly gentle about everything else.",
+  "description": "Berko Hong-Árnason-Rentería is a large, slow-moving man with the quiet authority of someone who has simply outlasted most arguments. His skin is very dark, his grey-streaked locs gathered at the back of his neck, and his hands are enormous — scarred across the knuckles from decades of working with salvaged metal and resonant polymers. He has no cosmetic mods but wears a cochlear amplifier behind his left ear that lets him hear frequencies beyond normal human range; he chose that over anything decorative. He moves through spaces as if listening to them.\n\nBerko Hong-Árnason-Rentería builds instruments that are also sculptures and then performs with them in spaces most people would call acoustically hostile: drainage tunnels, abandoned transit shafts, the concrete bellies of flood-control cisterns. His work is ambient, slow, and enormous in scale — single notes held for minutes, harmonics that make walls breathe. He is not famous outside of a small devoted community, and he prefers it exactly that way. He is a father figure to younger artists in the Pilsen Veil, blunt about craft and surprisingly gentle about everything else.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -194,7 +191,7 @@
     "posture_movement": "Moves slowly and with deliberate weight, as if always listening to the acoustic properties of each space he enters; stands with his shoulders slightly forward, head often tilted as if attending to distant frequencies; his enormous hands move with surprising gentleness and precision; rarely hurries; speaks from stillness rather than animation",
     "clothing_style": "Tier 4 working-artist aesthetic: worn but clean linen and heavy cotton work clothes in blacks, greys, and deep blues; a faded wool overshirt with fraying at the cuffs; sturdy boots with reinforced soles for workshop use and tunnel navigation; no logos, no chrome, no status markers — function over presentation; a single woven bracelet in earth tones on his left wrist"
   },
-  "image_prompt": "Slate Hong-Árnason-Rentería, 60-year-old craftsman with warm caramel-bronze skin blending East Asian, Southeast Asian, and Hispanic ancestry; deep brown eyes slightly hooded with age, broad facial structure with high cheekbones and full features; dark hair with grey threading in shoulder-length locs tied at nape; 188cm tall, dense broad-shouldered build; extensive white scarring across knuckles, pale forearm scar, faded burn marks on wrists; matte-gunmetal cochlear amplifier visible behind left ear; wearing faded black linen and heavy cotton work clothes, fraying wool overshirt, reinforced boots, woven earth-tone bracelet; standing in dim workshop or tunnel space, shoulders slightly forward, hands still and precise, listening; warm atmospheric lighting catching the golden undertones in his skin and the metallic gleam of his augmentations; GLMZ, function over chrome, the presence of earned time and intention --ar 2:3 --v 6",
+  "image_prompt": "Berko Hong-Árnason-Rentería, 60-year-old craftsman with warm caramel-bronze skin blending East Asian, Southeast Asian, and Hispanic ancestry; deep brown eyes slightly hooded with age, broad facial structure with high cheekbones and full features; dark hair with grey threading in shoulder-length locs tied at nape; 188cm tall, dense broad-shouldered build; extensive white scarring across knuckles, pale forearm scar, faded burn marks on wrists; matte-gunmetal cochlear amplifier visible behind left ear; wearing faded black linen and heavy cotton work clothes, fraying wool overshirt, reinforced boots, woven earth-tone bracelet; standing in dim workshop or tunnel space, shoulders slightly forward, hands still and precise, listening; warm atmospheric lighting catching the golden undertones in his skin and the metallic gleam of his augmentations; GLMZ, function over chrome, the presence of earned time and intention --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "East Asian": 49.9,

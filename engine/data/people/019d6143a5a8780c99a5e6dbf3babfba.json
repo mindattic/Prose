@@ -2,10 +2,7 @@
   "id": "019d6143a5a8780c99a5e6dbf3babfba",
   "type": "character",
   "name": "Bart Montalvo",
-  "aliases": [
-    "Rowan Montalvo",
-    "Rowan"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 40,
   "status": "active",
   "location": "Ashfield — former residential district, half-burned, now squatter territory, near Western and Chicago Ave",
-  "description": "Rowan Montalvo is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 40, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Rowan Montalvo plans to keep it that way. He works as a surveillance specialist out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Rowan Montalvo describe him as a precision instrument — point him at a problem and get out of the way.",
+  "description": "Bart Montalvo is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 40, the augmentation scarring around his temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — subdermal weapon mount — pop-out blade in each forearm — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Bart Montalvo plans to keep it that way. He works as a surveillance specialist out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Bart Montalvo describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.38,
@@ -306,7 +303,7 @@
     "posture_movement": "Stands with weight balanced forward on the balls of his feet, a runner's ready stance. Moves deliberately, economically — no wasted motion. His right arm compensates with slight mechanical hesitation on fast movements, but he's so practiced with it that the hesitation reads as control rather than disability. Hands rest in fists more often than open palms. His gaze is active, tracking, never settling — the paranoia is embedded in his body language.",
     "clothing_style": "Tier 5 utilitarian — worn synthweave cargo pants with visible equipment loops, reinforced at stress points. Sleeveless or short-sleeved tops to keep the right arm visible and unobstructed, usually unmarked dark gray or black. Over this, a faded ballistic jacket with multiple pockets, patched at the elbows, missing the logo from its original brand. Steel-toed boots, scuffed, re-soled multiple times. No jewelry, no identifying markers beyond his augmentations. Clothing is functional and replaceable, not an investment."
   },
-  "image_prompt": "Rowan Montalvo, 2226 neo-noir operative, 178cm stocky solid frame. Warm medium-deep golden-olive tan skin, weathered Pacific Islander and Indigenous American features with prominent squared jaw and defined high cheekbones. Dark brown hair graying at temples, cropped short. Pale gray baseline eyes, deep-set and tired. Five-o'clock shadow. Pale pink horseshoe augmentation scarring at temples, old white jaw scar, heavy keloid forearm scarring visible. Full-replacement right arm cybernetic chrome and steel with visible synthetic muscle at elbow, pop-out blade mount slots along forearms. Sleeveless dark gray shirt, worn synthweave cargo pants with equipment loops, faded ballistic jacket patched at elbows, scuffed steel-toed boots. Stands in ready stance, weight forward on balls of feet. Hands in fists. Active, tracking gaze. Industrial Ashfield setting, polluted gray-blue neon lighting, paranoid body language, economical movement. GLMZ 2200s aesthetic, functional and replaceable. --ar 2:3 --v 6",
+  "image_prompt": "Bart Montalvo, 2226 neo-noir operative, 178cm stocky solid frame. Warm medium-deep golden-olive tan skin, weathered Pacific Islander and Indigenous American features with prominent squared jaw and defined high cheekbones. Dark brown hair graying at temples, cropped short. Pale gray baseline eyes, deep-set and tired. Five-o'clock shadow. Pale pink horseshoe augmentation scarring at temples, old white jaw scar, heavy keloid forearm scarring visible. Full-replacement right arm cybernetic chrome and steel with visible synthetic muscle at elbow, pop-out blade mount slots along forearms. Sleeveless dark gray shirt, worn synthweave cargo pants with equipment loops, faded ballistic jacket patched at elbows, scuffed steel-toed boots. Stands in ready stance, weight forward on balls of feet. Hands in fists. Active, tracking gaze. Industrial Ashfield setting, polluted gray-blue neon lighting, paranoid body language, economical movement. GLMZ 2200s aesthetic, functional and replaceable. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Pacific Islander": 40.2,
     "Hispanic/Latin American": 39.3,

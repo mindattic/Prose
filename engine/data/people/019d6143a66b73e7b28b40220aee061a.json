@@ -3,10 +3,7 @@
   "rating": 70,
   "type": "character",
   "name": "Dyani Venkatesh",
-  "aliases": [
-    "Juno Venkatesh",
-    "Juno"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -14,7 +11,7 @@
   "age": 32,
   "status": "active",
   "location": "The Circuit — neon-lit entertainment and vice district, near Milwaukee and Damen",
-  "description": "Juno Venkatesh is compact and densely muscled, built low to the ground like something designed to survive impacts. At 32, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a infiltrator out of The Circuit, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Juno Venkatesh agrees on two things: he is worth the fee, and he is terrible company at dinner.",
+  "description": "Dyani Venkatesh is compact and densely muscled, built low to the ground like something designed to survive impacts. At 32, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a infiltrator out of The Circuit, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Dyani Venkatesh agrees on two things: he is worth the fee, and he is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.24,
@@ -300,7 +297,7 @@
     "posture_movement": "Moves with minimal wasted motion — economy of gesture suggests either military training or years of infiltration work. His center of gravity is low. He doesn't fidget. In conversation, he maintains unbroken eye contact in a way that makes most people uncomfortable. His hands remain visible and still unless he's working. Breathing is shallow and controlled even at rest.",
     "clothing_style": "Tier 3-4 functional minimalism. Dark synthweave jacket with internal pockets and subdued reflective panels for low-light movement. Unmarked black cargo pants with reinforced seams and hidden utility slots. Steel-toed boots, scuffed and well-maintained. No corporate logos, no gang colors, no fashion statements. Everything is optimized for concealment, durability, and rapid movement. When covering his identity as 'mundane,' he switches to generic corporate casual — polo shirts, neutral slacks, the kind of uniform that erases identity in a crowd."
   },
-  "image_prompt": "GLMZ operative Juno Venkatesh, portrait, 168cm compact muscular frame, deep warm brown skin with golden undertones reflecting South Asian, East Asian, and African heritage blend, sharp defined cheekbones and jawline, broad facial structure, subtle East Asian lid characteristics, pale keloid scar crossing left temple and cheekbone, thin scar bisecting upper lip, perpetual stubble, flat predatory expression, dark brown eyes with faint cybernetic reflective sheen, close-cropped dark brown hair, chrome cyberears with visible pickup arrays and luminescent chambers, integration seams along jawline, both forearms scarred with chrome weapon mount ports, network of combat scars on knuckles, faded geometric blue tattoo on right forearm partially obscured by cyberware, wearing dark synthweave tactical jacket with reflective panels, black reinforced cargo pants, scuffed steel-toed boots, hands visible and still, low center of gravity, controlled breathing, intimidating unbroken eye contact, minimalist functional appearance optimized for concealment and infiltration, neon-lit urban setting, cinematic lighting with deep shadows, photorealistic, --ar 2:3 --v 6",
+  "image_prompt": "GLMZ operative Dyani Venkatesh, portrait, 168cm compact muscular frame, deep warm brown skin with golden undertones reflecting South Asian, East Asian, and African heritage blend, sharp defined cheekbones and jawline, broad facial structure, subtle East Asian lid characteristics, pale keloid scar crossing left temple and cheekbone, thin scar bisecting upper lip, perpetual stubble, flat predatory expression, dark brown eyes with faint cybernetic reflective sheen, close-cropped dark brown hair, chrome cyberears with visible pickup arrays and luminescent chambers, integration seams along jawline, both forearms scarred with chrome weapon mount ports, network of combat scars on knuckles, faded geometric blue tattoo on right forearm partially obscured by cyberware, wearing dark synthweave tactical jacket with reflective panels, black reinforced cargo pants, scuffed steel-toed boots, hands visible and still, low center of gravity, controlled breathing, intimidating unbroken eye contact, minimalist functional appearance optimized for concealment and infiltration, neon-lit urban setting, cinematic lighting with deep shadows, photorealistic, --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "South Asian": 48,

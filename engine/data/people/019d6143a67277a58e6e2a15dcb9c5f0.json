@@ -2,10 +2,7 @@
   "id": "019d6143a67277a58e6e2a15dcb9c5f0",
   "type": "character",
   "name": "Dalinda Najjar-Khorasani",
-  "aliases": [
-    "Nyx Najjar-Khorasani",
-    "Nyx"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 52,
   "status": "active",
   "location": "Bay View Docks, GLMZ, near Michigan Ave South and Cermak",
-  "description": "Nyx Najjar-Khorasani is a broad-shouldered man whose body carries the evidence of three decades of physical labor — thick-knuckled hands, a fused vertebra from a crane accident, and a jaw that juts forward like the prow of a barge. His skin is deep umber, and he keeps his silver-streaked hair in tight locs that he pins back with a carved bone toggle that belonged to his grandfather. He wears old Ferrogate Transit coveralls he refuses to surrender even though he no longer works the lines, the company patch scratched out and replaced with a hand-stitched wave.\n\nNzu is deliberate in everything — the way he speaks, the way he listens, the way he lets silence do the heavy lifting in a negotiation. He has the patience of a man who has watched union drives fail and succeed and fail again over thirty years, and he does not celebrate early or panic easily. What looks like calm is actually compressed fury, carefully managed. He genuinely loves the workers he represents, and this is the thing that keeps him from becoming cynical. He prays to the dock E.L.F.s every morning before meetings, leaving shipping manifests with handwritten notes in the margins.",
+  "description": "Dalinda Najjar-Khorasani is a broad-shouldered man whose body carries the evidence of three decades of physical labor — thick-knuckled hands, a fused vertebra from a crane accident, and a jaw that juts forward like the prow of a barge. His skin is deep umber, and he keeps his silver-streaked hair in tight locs that he pins back with a carved bone toggle that belonged to his grandfather. He wears old Ferrogate Transit coveralls he refuses to surrender even though he no longer works the lines, the company patch scratched out and replaced with a hand-stitched wave.\n\nNzu is deliberate in everything — the way he speaks, the way he listens, the way he lets silence do the heavy lifting in a negotiation. He has the patience of a man who has watched union drives fail and succeed and fail again over thirty years, and he does not celebrate early or panic easily. What looks like calm is actually compressed fury, carefully managed. He genuinely loves the workers he represents, and this is the thing that keeps him from becoming cynical. He prays to the dock E.L.F.s every morning before meetings, leaving shipping manifests with handwritten notes in the margins.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -206,7 +203,7 @@
     "posture_movement": "Deliberate and economical in movement; walks with a slight forward cant due to spinal fusion; moves with the careful precision of a man managing chronic pain; settles into stillness rather than fidgeting; nods slowly when listening; speaks with long measured pauses; hands stay relatively still when not making a specific point",
     "clothing_style": "Worn Ferrogate Transit coveralls (Tier 3-4 workwear, faded navy blue with company patch deliberately scratched out and replaced with a hand-stitched wave emblem in white thread); thermal undershirt beneath; steel-toed work boots scuffed and resoled multiple times; brass union pin on coverall chest; wool watch cap (charcoal) worn most mornings; no jewelry except grandfather's bone toggle in hair and a simple steel wedding band"
   },
-  "image_prompt": "Nyx Najjar-Khorasani, a weathered 188cm dock worker in his sixties with burnished olive-bronze skin reflecting Middle Eastern, North African, Latin American, and Sub-Saharan African heritage. Black hair with silver streaks pulled into shoulder-length locs pinned with a carved bone toggle. Deep-set dark brown eyes, strong angular features, aquiline nose. Wearing faded navy Ferrogate Transit coveralls with hand-stitched white wave emblem, brass union pin, thermal undershirt, scuffed steel-toed boots. Hands scarred and calloused from decades of labor. Moves with deliberate precision, slight forward cant from spinal fusion. Subtle metallic ridge visible along spine. Setting: Great Lakes Metropolitan Zone dockside, late afternoon light catching rope-scarred forearms and subdermal contact patch on left arm. GLMZ, gritty industrial atmosphere, weathered and functional aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Dalinda Najjar-Khorasani, a weathered 188cm dock worker in his sixties with burnished olive-bronze skin reflecting Middle Eastern, North African, Latin American, and Sub-Saharan African heritage. Black hair with silver streaks pulled into shoulder-length locs pinned with a carved bone toggle. Deep-set dark brown eyes, strong angular features, aquiline nose. Wearing faded navy Ferrogate Transit coveralls with hand-stitched white wave emblem, brass union pin, thermal undershirt, scuffed steel-toed boots. Hands scarred and calloused from decades of labor. Moves with deliberate precision, slight forward cant from spinal fusion. Subtle metallic ridge visible along spine. Setting: Great Lakes Metropolitan Zone dockside, late afternoon light catching rope-scarred forearms and subdermal contact patch on left arm. GLMZ, gritty industrial atmosphere, weathered and functional aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Middle Eastern": 44.4,
     "North African": 25.4,

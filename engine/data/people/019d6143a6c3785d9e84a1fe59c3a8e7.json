@@ -2,10 +2,7 @@
   "id": "019d6143a6c3785d9e84a1fe59c3a8e7",
   "type": "character",
   "name": "Fabienne Kovács",
-  "aliases": [
-    "Sage Kovács",
-    "Sage"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 52,
   "status": "active",
   "location": "Irkalla district, operates out of a narrow apartment above a prosthetic repair shop, near Ashland and Chicago Ave",
-  "description": "Sage Kovács has the kind of face that people describe afterward as calm, though in the moment of meeting her they're not sure why — she has sharp Malian cheekbones and Iranian eyes that are a pale amber, and her expression in repose is something between watchful and patient. Her hair is natural and grown large, threaded through with small copper discs that catch light and make a very soft sound when she moves quickly. She has no visible augmentations save for a faint color-shifting quality to her skin under direct light — a cosmetic geneware inheritance from her grandmother's generation, a barely-perceptible rainbow sheen that she has never tried to suppress.\n\nShe is one of the few certified death midwives in Irkalla, a district with a high mortality rate and historically poor access to formal end-of-life care. Her work involves sitting with the dying, helping families understand what is happening physiologically and spiritually, guiding the final upload or data-will processes for those who want them, and performing the closing rites of whatever tradition the dying person holds. She is also one of three guides who regularly leads pilgrimage walks through the city's memorial infrastructure — the ghost-bridges, the data shrines, the submerged neighborhood markers. She does not advertise. People find her when they need her.",
+  "description": "Fabienne Kovács has the kind of face that people describe afterward as calm, though in the moment of meeting her they're not sure why — she has sharp Malian cheekbones and Iranian eyes that are a pale amber, and her expression in repose is something between watchful and patient. Her hair is natural and grown large, threaded through with small copper discs that catch light and make a very soft sound when she moves quickly. She has no visible augmentations save for a faint color-shifting quality to her skin under direct light — a cosmetic geneware inheritance from her grandmother's generation, a barely-perceptible rainbow sheen that she has never tried to suppress.\n\nShe is one of the few certified death midwives in Irkalla, a district with a high mortality rate and historically poor access to formal end-of-life care. Her work involves sitting with the dying, helping families understand what is happening physiologically and spiritually, guiding the final upload or data-will processes for those who want them, and performing the closing rites of whatever tradition the dying person holds. She is also one of three guides who regularly leads pilgrimage walks through the city's memorial infrastructure — the ghost-bridges, the data shrines, the submerged neighborhood markers. She does not advertise. People find her when they need her.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -256,7 +253,7 @@
     "posture_movement": "Moves with deliberate slowness even when unhurried — a practice of presence. Sits with perfect spinal alignment, knees slightly bent, hands visible and open. Her default expression is between watchful and patient, with the kind of calm that invites speech",
     "clothing_style": "Tier 3 functional — well-maintained second-hand or co-op linen and cotton, earth tones and deep blues. Loose layers that allow long sitting. Worn leather slip-ons for quick response calls. No jewelry except the copper discs in her hair and a thin steel band on her right ring finger — simple, nothing decorative. Her clothes smell faintly of incense and cleaning herbs"
   },
-  "image_prompt": "Sage Kovács, a serene woman with warm medium-bronze skin glowing with golden undertones, visible faint iridescent cosmetic geneware shimmer. Black hair with silver temples, voluminous and adorned with small copper discs. Deep warm brown eyes with amber flecks, angular cheekbones, unlined face with striking Central European and South Asian bone structure. Lean 168cm frame in loose-fitting earth-tone and deep blue linen layers, worn leather slip-ons visible. Thin steel ring on right hand, pale 8cm scar on inner left wrist. Perfect upright posture, watchful-patient expression, hands open and visible. GLMZ GLMZ setting, moody warm lighting catching the subtle color-shift of inherited geneware on her skin, incense smoke wisping in background, serene meditative atmosphere. Tier 3 functional aesthetic, second-hand co-op clothing. --ar 2:3 --v 6",
+  "image_prompt": "Fabienne Kovács, a serene woman with warm medium-bronze skin glowing with golden undertones, visible faint iridescent cosmetic geneware shimmer. Black hair with silver temples, voluminous and adorned with small copper discs. Deep warm brown eyes with amber flecks, angular cheekbones, unlined face with striking Central European and South Asian bone structure. Lean 168cm frame in loose-fitting earth-tone and deep blue linen layers, worn leather slip-ons visible. Thin steel ring on right hand, pale 8cm scar on inner left wrist. Perfect upright posture, watchful-patient expression, hands open and visible. GLMZ GLMZ setting, moody warm lighting catching the subtle color-shift of inherited geneware on her skin, incense smoke wisping in background, serene meditative atmosphere. Tier 3 functional aesthetic, second-hand co-op clothing. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 35.2,
     "Eastern European": 33.9,

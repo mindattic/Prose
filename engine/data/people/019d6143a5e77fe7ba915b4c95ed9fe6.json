@@ -2,10 +2,7 @@
   "id": "019d6143a5e77fe7ba915b4c95ed9fe6",
   "type": "character",
   "name": "Aurora Tovar",
-  "aliases": [
-    "Zara Tovar",
-    "Zara"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 42,
   "status": "active",
   "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Wacker and State",
-  "description": "Zara Tovar is lean and angular, all sharp edges and visible tension. At 42, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and he makes no effort to hide it.\n\nHe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a combat medic out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Zara Tovar agrees on two things: he is worth the fee, and he is terrible company at dinner.",
+  "description": "Aurora Tovar is lean and angular, all sharp edges and visible tension. At 42, there's something unfinished about his face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and he makes no effort to hide it.\n\nHe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a combat medic out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Aurora Tovar agrees on two things: he is worth the fee, and he is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -307,7 +304,7 @@
     "posture_movement": "Economical and precise. Moves with the kind of controlled tension that suggests combat training or years of high-stakes fieldwork. When still, there's a baseline readiness in the shoulders and hands — never fully relaxed. Climbs with unnatural ease due to gecko-grip augmentations, ascending vertical surfaces with spider-like efficiency. Hand movements are surgical-grade steady, even when sleep-deprived.",
     "clothing_style": "Tier 3-4 utilitarian. Dark technical fabrics (synthetic blends designed for low visibility and durability) — charcoal, black, deep blue. Cargo pants with reinforced thigh pockets for medical gear. Modular tactical vest over form-fitting base layer, often armored or padded in critical zones. Durable boots with traction-enhanced soles, scuffed and maintained rather than new. Minimal jewelry aside from functional gear. No corpo branding or status symbols — clothes serve survival and work, not identity. Carries medical pack on left shoulder, always accessible."
   },
-  "image_prompt": "Zara Tovar, lean 178cm operative with deep warm brown skin bearing golden-olive undertones, gaunt weathered face with sharp architectural cheekbones and defined jaw catching bronze light. Dark brown hair with silver threading, swept back practical cut. Left eye natural dark brown, right eye chrome cybernetic with amber glow, faded temple scar visible. Muscular wiry build in dark charcoal tactical gear, reinforced cargo pants, modular armor vest over base layer. Chrome gecko-grip visible on both hands, burn scarring on right dorsal hand. Medical caduceus tattoo on left forearm. Poised with combat readiness, baseline tension in shoulders. Dockside industrial setting, moody cyan and amber neon lighting, shadows emphasizing angular features and chrome augmentations. GLMZ Great Lakes Metropolitan aesthetic, functional survivor not corporate asset. --ar 2:3 --v 6",
+  "image_prompt": "Aurora Tovar, lean 178cm operative with deep warm brown skin bearing golden-olive undertones, gaunt weathered face with sharp architectural cheekbones and defined jaw catching bronze light. Dark brown hair with silver threading, swept back practical cut. Left eye natural dark brown, right eye chrome cybernetic with amber glow, faded temple scar visible. Muscular wiry build in dark charcoal tactical gear, reinforced cargo pants, modular armor vest over base layer. Chrome gecko-grip visible on both hands, burn scarring on right dorsal hand. Medical caduceus tattoo on left forearm. Poised with combat readiness, baseline tension in shoulders. Dockside industrial setting, moody cyan and amber neon lighting, shadows emphasizing angular features and chrome augmentations. GLMZ Great Lakes Metropolitan aesthetic, functional survivor not corporate asset. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 49.3,
     "South Asian": 20.6,

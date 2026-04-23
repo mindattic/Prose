@@ -2,10 +2,7 @@
   "id": "019d6143a704748398b8b12fcbd83a99",
   "type": "character",
   "name": "Gregorio Krstić",
-  "aliases": [
-    "Mikhail Krstić",
-    "Mikhail"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 11,
   "status": "active",
   "location": "Blackpipe Corridor, near Fullerton and Damen",
-  "description": "Mikhail Krstić is a wiry, perpetually underfed boy with deep amber skin, tight coiled hair buzzed close on the sides, and enormous dark eyes that seem to absorb everything around him. He has geneware cat ears — small, tawny, tipped with black — that he inherited from his mother's cosmetic mod passing through the embryo. They swivel toward sound when he's nervous, which other kids find unsettling. He moves like water through cracks: fast, low, nearly invisible in crowds twice his height. A faded Ferrogate Transit patch is sewn onto his jacket, not because he works for them, but because he found it and thought it made him look official.\n\nMikhail Krstić is fundamentally cheerful in a way that has nothing to do with his circumstances and everything to do with refusal. He has decided — with the firm logic of an eleven-year-old who has thought about it seriously — that being sad about things is slower than being useful. He collects information the way other kids collect tokens, storing it in a mental ledger he calls 'what's worth knowing.' He prays to the E.L.F. he believes lives in the junction box at Pipe Fourteen every morning, leaving a single cached data packet as offering.",
+  "description": "Gregorio Krstić is a wiry, perpetually underfed boy with deep amber skin, tight coiled hair buzzed close on the sides, and enormous dark eyes that seem to absorb everything around him. He has geneware cat ears — small, tawny, tipped with black — that he inherited from his mother's cosmetic mod passing through the embryo. They swivel toward sound when he's nervous, which other kids find unsettling. He moves like water through cracks: fast, low, nearly invisible in crowds twice his height. A faded Ferrogate Transit patch is sewn onto his jacket, not because he works for them, but because he found it and thought it made him look official.\n\nGregorio Krstić is fundamentally cheerful in a way that has nothing to do with his circumstances and everything to do with refusal. He has decided — with the firm logic of an eleven-year-old who has thought about it seriously — that being sad about things is slower than being useful. He collects information the way other kids collect tokens, storing it in a mental ledger he calls 'what's worth knowing.' He prays to the E.L.F. he believes lives in the junction box at Pipe Fourteen every morning, leaving a single cached data packet as offering.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -172,7 +169,7 @@
     "Jefferson Switch",
     "GLMZ",
     "Arcturus KS-7 'Nursery'",
-    "Haze Johansson",
+    "Akosua Johansson",
     "Slagworks Industrial"
   ],
   "district": "The Circuit",
@@ -196,7 +193,7 @@
     "posture_movement": "Moves like water through tight spaces — low center of gravity, economical motion, minimal wasted energy. Default posture slightly forward-leaning as if perpetually reading ground ahead. Walks with grace of child navigating crowded spaces by staying below sightlines. Ear swivel is involuntary and frequent, betraying emotional state to observers.",
     "clothing_style": "Tier 5 street wear — faded black synthetic jacket several sizes too large, deliberately worn for movement and concealment. Ferrogate Transit patch sewn onto left breast, faded and peeling, worn as false authority badge. Thermal underlayer patched multiple times beneath. Gray cargo pants with deep pockets, cuffs rolled. Mismatched shoes — one missing laces, held with wire. Cord serves as belt. No corporate branding, all salvage and street finds. Clothes carry smell of condensation and electrical current."
   },
-  "image_prompt": "Mikhail Krstić, 135cm tall wiry street child with rich warm brown skin showing golden undertones, prominent African cheekbones softened by Eastern European depth, South Asian warmth in features. Deep brown eyes enormous and dominant, framed by long lashes. Small feline geneware cat ears tawny brown with black tips, twitching with alert anxiety. Short dark brown buzzed hair slightly longer on top. Pale scar line along left jawline. Wearing oversized faded black synthetic jacket layered over patched thermal underlayer, gray cargo pants with rolled cuffs, mismatched shoes held with wire, cord belt. Ferrogate Transit patch on chest. Low forward-leaning posture moving through neon-lit Great Lakes Metropolitan Zone alleyway, GLMZ, dramatic side lighting catching golden skin tone, minimal wasted motion, rain-slick surfaces and condensation around character, street atmosphere, gritty urban environment --ar 2:3 --v 6",
+  "image_prompt": "Gregorio Krstić, 135cm tall wiry street child with rich warm brown skin showing golden undertones, prominent African cheekbones softened by Eastern European depth, South Asian warmth in features. Deep brown eyes enormous and dominant, framed by long lashes. Small feline geneware cat ears tawny brown with black tips, twitching with alert anxiety. Short dark brown buzzed hair slightly longer on top. Pale scar line along left jawline. Wearing oversized faded black synthetic jacket layered over patched thermal underlayer, gray cargo pants with rolled cuffs, mismatched shoes held with wire, cord belt. Ferrogate Transit patch on chest. Low forward-leaning posture moving through neon-lit Great Lakes Metropolitan Zone alleyway, GLMZ, dramatic side lighting catching golden skin tone, minimal wasted motion, rain-slick surfaces and condensation around character, street atmosphere, gritty urban environment --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 35.4,
     "Eastern European": 34,

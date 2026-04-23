@@ -2,10 +2,7 @@
   "id": "019d6143a64a76d592b4102c066bf5f6",
   "type": "character",
   "name": "Adaora Volkov",
-  "aliases": [
-    "Tatiana Volkov",
-    "Tatiana"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 63,
   "status": "active",
   "location": "Edgewater Prism — a converted monitoring station that serves as both apartment and field lab, directly on the lake-facing edge, near Clark and Addison",
-  "description": "Tatiana Volkov is a tall man gone broad in the shoulders and soft around the middle, with dark brown skin weathered by decades of outdoor fieldwork and close-cropped white hair that he keeps because it makes him look distinguished and he is not above vanity. His eyes are natural — a warm, medium brown — which is unusual enough in his social circles that people sometimes comment on it, which he finds mildly funny. He has a prosthetic left hand from a fieldwork accident in 2181 that he has declined to upgrade past basic functionality because he likes the old model and refuses to explain this to anyone.\n\nHe spent twenty-two years as Arcturus's senior climate modeler before his models started showing lake-system instabilities that Arcturus's infrastructure division did not want modeled, at which point his funding was quietly restructured and his team was dissolved. He now works alone out of Edgewater Prism, maintaining a network of self-built sensor buoys across the lake, and publishes through whatever venue will take him. He is not bitter in an active way — bitterness requires energy he'd rather spend — but he has a very clear view of exactly what happened and exactly who made which decision and why, and this clarity gives him a quality that people find alternately comforting and unsettling, like someone who has already done the math on the worst outcome.",
+  "description": "Adaora Volkov is a tall man gone broad in the shoulders and soft around the middle, with dark brown skin weathered by decades of outdoor fieldwork and close-cropped white hair that he keeps because it makes him look distinguished and he is not above vanity. His eyes are natural — a warm, medium brown — which is unusual enough in his social circles that people sometimes comment on it, which he finds mildly funny. He has a prosthetic left hand from a fieldwork accident in 2181 that he has declined to upgrade past basic functionality because he likes the old model and refuses to explain this to anyone.\n\nHe spent twenty-two years as Arcturus's senior climate modeler before his models started showing lake-system instabilities that Arcturus's infrastructure division did not want modeled, at which point his funding was quietly restructured and his team was dissolved. He now works alone out of Edgewater Prism, maintaining a network of self-built sensor buoys across the lake, and publishes through whatever venue will take him. He is not bitter in an active way — bitterness requires energy he'd rather spend — but he has a very clear view of exactly what happened and exactly who made which decision and why, and this clarity gives him a quality that people find alternately comforting and unsettling, like someone who has already done the math on the worst outcome.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -238,7 +235,7 @@
     "clothing_style": "Tier 3-4 practical. Favors heavy thermal layering even in moderate weather — old Arcturus field jackets (now patched, still bearing faded company branding he has not bothered to remove), functional waterproof pants in dark blue or black, work boots maintained obsessively. Wears a weathered wool watch cap indoors sometimes. No affectation, no brand-signaling beyond the utility of things that last.",
     "jewelry_accessories": "Scratched titanium ring on right ring finger and a woven cordage bracelet on right wrist made from research buoys' mooring line, made by one of his University Spine mentees"
   },
-  "image_prompt": "Tatiana Volkov, 188cm tall weathered man with warm medium-brown skin and olive undertones reflecting Eastern European, South Asian, and Southeast Asian heritage. White close-cropped hair, medium brown natural eyes, deeply lined face from decades of fieldwork. Visible older prosthetic left hand with mechanical joints in dark synthetic material. Scarred left temple partially hidden by hairline. Solar keratoses on ears and shoulders. Standing with slight forward lean, eyes in middle-distance focus. Wearing patched Arcturus field jacket with faded branding, dark waterproof pants, work boots, weathered wool watch cap. Titanium ring and woven cordage bracelet. GLMZ, Great Lakes Metropolitan Zone research station setting, cool fluorescent and ambient lighting, utilitarian aesthetic, no affectation --ar 2:3 --v 6",
+  "image_prompt": "Adaora Volkov, 188cm tall weathered man with warm medium-brown skin and olive undertones reflecting Eastern European, South Asian, and Southeast Asian heritage. White close-cropped hair, medium brown natural eyes, deeply lined face from decades of fieldwork. Visible older prosthetic left hand with mechanical joints in dark synthetic material. Scarred left temple partially hidden by hairline. Solar keratoses on ears and shoulders. Standing with slight forward lean, eyes in middle-distance focus. Wearing patched Arcturus field jacket with faded branding, dark waterproof pants, work boots, weathered wool watch cap. Titanium ring and woven cordage bracelet. GLMZ, Great Lakes Metropolitan Zone research station setting, cool fluorescent and ambient lighting, utilitarian aesthetic, no affectation --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Eastern European": 59.7,
     "South Asian": 17.2,

@@ -4,10 +4,7 @@
   "vote_count": 3,
   "type": "character",
   "name": "Bedrettin Fujiwara",
-  "aliases": [
-    "Rowan Fujiwara",
-    "Rowan"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -128,7 +125,7 @@
     "posture_movement": "Moves with economical precision — no wasted motion. Stands with weight balanced, always angled to keep both exits in peripheral vision. Handshake is firm but controlled. Speaks quietly, forcing others to lean in; listens more than talks. Eyes track fast movement on instinct.",
     "clothing_style": "Tier 2-3 hybrid: expensive basics over cheaper layers. Usually wears tailored grey or charcoal wool trousers, neutral-tone merino undershirt, tactical overshirt or unbranded tech-weave jacket (water-resistant, micromesh pockets). Hiking boots — practical, durable, good ankle support. One silver chain bracelet (family heirloom, kept). No visible logos. Everything is functional; nothing screams wealth or status. Wears a weathered leather wrist cuff on left arm with embedded RFID reader (for safe houses)."
   },
-  "image_prompt": "Rowan Fujiwara, 184cm tall athletic man in his 50s with warm golden-brown skin blending South Asian, East Asian, Hispanic and Northern European heritage. High prominent cheekbones, dark brown eyes with amber undertones, salt-and-pepper black hair with silver temples, kept short and faded. Clean-shaven with visible 8cm white scar along left jawline. Crow's feet from chronic stress. Wears tailored charcoal wool trousers, neutral merino undershirt, tactical tech-weave jacket, weathered leather boots. Silver chain bracelet visible, RFID-embedded wrist cuff. Faint subdermal neural interface nodes at base of skull. Standing in low-light urban setting, posture economical and balanced, eyes alert and tracking. GLMZ aesthetic, muted color palette, moody atmospheric lighting, slightly hardened expression suggesting mixed heritage and complex history. --ar 2:3 --v 6",
+  "image_prompt": "Bedrettin Fujiwara, 184cm tall athletic man in his 50s with warm golden-brown skin blending South Asian, East Asian, Hispanic and Northern European heritage. High prominent cheekbones, dark brown eyes with amber undertones, salt-and-pepper black hair with silver temples, kept short and faded. Clean-shaven with visible 8cm white scar along left jawline. Crow's feet from chronic stress. Wears tailored charcoal wool trousers, neutral merino undershirt, tactical tech-weave jacket, weathered leather boots. Silver chain bracelet visible, RFID-embedded wrist cuff. Faint subdermal neural interface nodes at base of skull. Standing in low-light urban setting, posture economical and balanced, eyes alert and tracking. GLMZ aesthetic, muted color palette, moody atmospheric lighting, slightly hardened expression suggesting mixed heritage and complex history. --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "South Asian": 33.7,

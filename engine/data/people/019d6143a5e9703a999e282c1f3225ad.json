@@ -2,10 +2,7 @@
   "id": "019d6143a5e9703a999e282c1f3225ad",
   "type": "character",
   "name": "Denzel Huitzil",
-  "aliases": [
-    "Echo Huitzil",
-    "Echo"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 19,
   "status": "active",
   "location": "Highland Park Autonomous Zone, sleeping in a rotating series of squats; works primarily along the Blackpipe Corridor, near Michigan Ave and Walton",
-  "description": "Echo Huitzil is slight and quick, the kind of person who seems to occupy less space than his dimensions suggest — useful when you're tagging corponation infrastructure at three in the morning. He has his mother's Nigerien cheekbones and his father's Romanian pallor, a combination that gives his face an angular quality that reads differently in different lights. His hair is grown out into a soft cloud he's bleached pale gold; he's got cat ears installed — small, tufted, matte black — that he paid for with three months of odd jobs and wears with the slightly self-conscious pride of someone whose first big purchase was purely for joy. His clothes are perpetually paint-stained in colors that don't match what he's currently working on.",
+  "description": "Denzel Huitzil is slight and quick, the kind of person who seems to occupy less space than his dimensions suggest — useful when you're tagging corponation infrastructure at three in the morning. He has his mother's Nigerien cheekbones and his father's Romanian pallor, a combination that gives his face an angular quality that reads differently in different lights. His hair is grown out into a soft cloud he's bleached pale gold; he's got cat ears installed — small, tufted, matte black — that he paid for with three months of odd jobs and wears with the slightly self-conscious pride of someone whose first big purchase was purely for joy. His clothes are perpetually paint-stained in colors that don't match what he's currently working on.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -238,7 +235,7 @@
     "posture_movement": "Moves with deliberate lightness, economical gestures. Frequently hunches shoulders as if ready to slip through narrow spaces. Makes eye contact rarely and only with people he trusts. Has a habit of tilting his head slightly upward when listening, ears repositioning unconsciously. Restless hands — fidgets with paint caps, spray nozzles, markers when stationary",
     "clothing_style": "Tier 4-5 street aesthetic: paint-stained cargo pants in faded black or grey, mismatched layers including at least one oversized hoodie (currently rotating between a faded navy that might once have been corpo merch and a charcoal tech-wear knockoff). Worn canvas sneakers with rubber reinforced at the toes. A long, patched denim jacket covered in embroidered patches, pins, and hand-stitched designs — each one a project or crew marker. Fingerless gloves in cool months (paint-stained). A bandana or balaclava always accessible. Jewelry is minimal: a thin silver chain (possibly stolen, possibly salvaged) and a single brass knuckle ring on his right index finger. Everything smells faintly of solvent and spray paint"
   },
-  "image_prompt": "Echo Huitzil, 168cm wiry street artist in GLMZ, warm deep brown skin with golden copper undertones from Indigenous American, South Asian, and Sub-Saharan African heritage, angular fine-featured face with prominent high cheekbones, dark brown eyes with amber flecks, shoulder-length pale gold textured hair in soft cloud style, matte black articulated cat ears on subdermal posts. Paint-stained faded cargo pants, oversized charcoal hoodie, worn canvas sneakers, long patched denim jacket covered in hand-stitched patches and pins, fingerless paint-stained gloves, thin silver chain, brass knuckle ring. Faint chemical burns on knuckles, silvery scar along left jawline, chronic dark circles, paint splatters on ears and hairline. Posture hunched and light, restless fidgeting hands, economic movements. Urban rooftop setting with neon glow, spray paint cans scattered, street art murals in background, cool synthetic lighting casting warm shadows on skin, solvent and spray paint atmosphere, neo-noir urban aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Denzel Huitzil, 168cm wiry street artist in GLMZ, warm deep brown skin with golden copper undertones from Indigenous American, South Asian, and Sub-Saharan African heritage, angular fine-featured face with prominent high cheekbones, dark brown eyes with amber flecks, shoulder-length pale gold textured hair in soft cloud style, matte black articulated cat ears on subdermal posts. Paint-stained faded cargo pants, oversized charcoal hoodie, worn canvas sneakers, long patched denim jacket covered in hand-stitched patches and pins, fingerless paint-stained gloves, thin silver chain, brass knuckle ring. Faint chemical burns on knuckles, silvery scar along left jawline, chronic dark circles, paint splatters on ears and hairline. Posture hunched and light, restless fidgeting hands, economic movements. Urban rooftop setting with neon glow, spray paint cans scattered, street art murals in background, cool synthetic lighting casting warm shadows on skin, solvent and spray paint atmosphere, neo-noir urban aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Indigenous American": 44.3,
     "South Asian": 25.3,

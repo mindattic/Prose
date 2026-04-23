@@ -2,10 +2,7 @@
   "id": "019d6143a71173b99e9b07763ed7bcc0",
   "type": "character",
   "name": "Amira Pathak",
-  "aliases": [
-    "Zephyr Pathak",
-    "Zephyr"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 44,
   "status": "active",
   "location": "Gravesend Basin, third sublevel — a waterlogged print shop behind the Gorgon Laundry, near sub-level access near LaSalle and Congress",
-  "description": "Zephyr Pathak is a compact, unhurried woman with deep umber skin mapped by a web of fine scar lines across her right hand — remnants of a chemical burn from a botched laminate batch two decades ago. She keeps her silver-streaked hair pinned severely back, and her eyes have been fitted with patterned irises that shift between amber and pale green depending on the light, a cosmetic mod she chose purely because it unsettles clients enough to keep them respectful. She wears reading lenses on a chain around her neck that she rarely actually uses; it's theater, part of the persona of a woman who does serious paperwork. She smells always faintly of solvent and cardamom tea.\n\nShe is meticulous to the point of ceremony — she will not begin a forgery until she has reviewed a client's source documentation twice, made handwritten notes, and brewed a fresh cup of tea. She finds sloppiness morally offensive, and genuinely takes pride in work that is beautiful as well as functional. She keeps a personal ethics ledger: she will not forge documents for labor traffickers, will not fabricate child identities for anything she deems suspect, and has turned down lucrative contracts on these grounds without visible regret. This does not make her kind. She is professional, which is a different thing entirely.",
+  "description": "Amira Pathak is a compact, unhurried woman with deep umber skin mapped by a web of fine scar lines across her right hand — remnants of a chemical burn from a botched laminate batch two decades ago. She keeps her silver-streaked hair pinned severely back, and her eyes have been fitted with patterned irises that shift between amber and pale green depending on the light, a cosmetic mod she chose purely because it unsettles clients enough to keep them respectful. She wears reading lenses on a chain around her neck that she rarely actually uses; it's theater, part of the persona of a woman who does serious paperwork. She smells always faintly of solvent and cardamom tea.\n\nShe is meticulous to the point of ceremony — she will not begin a forgery until she has reviewed a client's source documentation twice, made handwritten notes, and brewed a fresh cup of tea. She finds sloppiness morally offensive, and genuinely takes pride in work that is beautiful as well as functional. She keeps a personal ethics ledger: she will not forge documents for labor traffickers, will not fabricate child identities for anything she deems suspect, and has turned down lucrative contracts on these grounds without visible regret. This does not make her kind. She is professional, which is a different thing entirely.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -248,7 +245,7 @@
     "Tessera Corponation",
     "Silver",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Haze Johansson",
+    "Akosua Johansson",
     "The Pale Mile"
   ],
   "district": "The Underworld",
@@ -271,7 +268,7 @@
     "posture_movement": "Economical and precise. She moves without wasted motion, shoulders slightly forward from decades of desk work. When handling objects—paper, documents, tools—her movements become almost ritualistic in their deliberation. Her hands are steady. She does not fidget. Her default expression is professional distance verging on coldness, but her eyes—those unsettling, color-shifting eyes—suggest someone calculating several steps ahead.",
     "clothing_style": "Tier 3 / working professional: well-maintained but worn. Dark, neutral palette (charcoal, deep navy, black). Favors structured, practical pieces: heavy cotton or wool blend shirts; precise tailoring despite the garments' age; a long canvas apron (invariably stained with inks and solvents) worn during work hours. Wears good gloves—leather, supple from oil, often removed but always within reach. A long coat of unknown original color, faded to a uniform grey-brown from solvent exposure and time, worn unbuttoned. Practical footwear, well-maintained. No jewelry except the reading lens chain and, possibly, a small religious token worn discretely beneath her collar."
   },
-  "image_prompt": "Zephyr Pathak, 158cm compact-build mixed heritage woman of South Asian, Sub-Saharan African, Indigenous American, and East Asian descent, rich warm golden-brown skin tone. Finely lined face with defined cheekbones, stronger jawline, fuller lips, subtle eye geometry—continental features blended seamlessly. Natural black hair with silver streaking severely pinned in tight crown braid. Striking cosmetic dual-iris implants shifting between deep amber and pale celadon green—unsettling kaleidoscopic effect. Fine white scar tissue webbing right hand and wrist from chemical burn. Small typographic tattoo on left inner wrist. Wearing faded grey-brown long coat over dark structured shirt, worn canvas apron stained with inks and solvents, leather gloves, practical boots. Reading lens beaded chain around neck. Professional distance expression, calculating gaze. Hands steady and precise. GLMZ Great Lakes Metropolitan Zone setting, overhead workshop lighting casting shadows on her weathered features, color-shifting eyes catching ambient light, solvent-dry skin texture visible, economy of movement, precision and ritual evident in her posture. Noir aesthetic, cool film lighting, slight desaturated color palette with jewel-tone emphasis on her eyes. --ar 2:3 --v 6",
+  "image_prompt": "Amira Pathak, 158cm compact-build mixed heritage woman of South Asian, Sub-Saharan African, Indigenous American, and East Asian descent, rich warm golden-brown skin tone. Finely lined face with defined cheekbones, stronger jawline, fuller lips, subtle eye geometry—continental features blended seamlessly. Natural black hair with silver streaking severely pinned in tight crown braid. Striking cosmetic dual-iris implants shifting between deep amber and pale celadon green—unsettling kaleidoscopic effect. Fine white scar tissue webbing right hand and wrist from chemical burn. Small typographic tattoo on left inner wrist. Wearing faded grey-brown long coat over dark structured shirt, worn canvas apron stained with inks and solvents, leather gloves, practical boots. Reading lens beaded chain around neck. Professional distance expression, calculating gaze. Hands steady and precise. GLMZ Great Lakes Metropolitan Zone setting, overhead workshop lighting casting shadows on her weathered features, color-shifting eyes catching ambient light, solvent-dry skin texture visible, economy of movement, precision and ritual evident in her posture. Noir aesthetic, cool film lighting, slight desaturated color palette with jewel-tone emphasis on her eyes. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 35.2,
     "Sub-Saharan African": 32.1,

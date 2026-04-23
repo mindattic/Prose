@@ -3,10 +3,7 @@
   "rating": 70,
   "type": "character",
   "name": "Carlota Magnúsdóttir",
-  "aliases": [
-    "Lark Magnúsdóttir",
-    "Lark"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -14,7 +11,7 @@
   "age": 52,
   "status": "active",
   "location": "Hamtramck Enclave — her shop, Scalp Meridian, is wedged between a dumpling stall and a prayer-data kiosk on Volt Street, near Western and Division",
-  "description": "Lark Magnúsdóttir is a broad-shouldered woman with hands that move like water — fast, precise, never wasted. Her skin is deep brown with a warm undertone, and she keeps her own hair in an elaborate crown of interlocked locs threaded with copper wire and small LED beads that pulse amber when she's working. She has a tattoo of a scissors-and-comb motif along her left forearm that she got at nineteen from a street artist in what used to be called Nairobi before the Corponation Accords. Her eyes are the grey-green of old lake glass, an inheritance from her Hungarian grandmother whose name she barely remembers.\n\nShe is patient in the way that only people who have survived a lot of nonsense can be patient — a deep, deliberate stillness that makes customers feel held. She will not rush a cut, will not shortchange a scalp massage, will not tolerate disrespect in her chair. She talks constantly while she works, a warm river of local gossip, neighborhood history, and unsolicited wisdom that customers either love or eventually learn to love. She has cut the hair of three generations of some Hamtramck families and considers this her real legacy.",
+  "description": "Carlota Magnúsdóttir is a broad-shouldered woman with hands that move like water — fast, precise, never wasted. Her skin is deep brown with a warm undertone, and she keeps her own hair in an elaborate crown of interlocked locs threaded with copper wire and small LED beads that pulse amber when she's working. She has a tattoo of a scissors-and-comb motif along her left forearm that she got at nineteen from a street artist in what used to be called Nairobi before the Corponation Accords. Her eyes are the grey-green of old lake glass, an inheritance from her Hungarian grandmother whose name she barely remembers.\n\nShe is patient in the way that only people who have survived a lot of nonsense can be patient — a deep, deliberate stillness that makes customers feel held. She will not rush a cut, will not shortchange a scalp massage, will not tolerate disrespect in her chair. She talks constantly while she works, a warm river of local gossip, neighborhood history, and unsolicited wisdom that customers either love or eventually learn to love. She has cut the hair of three generations of some Hamtramck families and considers this her real legacy.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -252,7 +249,7 @@
     "posture_movement": "Moves with economical grace—no wasted motion; stands with weight balanced, ready to shift; hands are constantly in motion even at rest, fingers finding rhythm in air; head tilts when listening, a habit of attentive care; walks with the steady pace of someone who has nowhere to rush",
     "clothing_style": "Tier 3-4 practical comfort: well-maintained linen tunics or cotton button-ups in earth tones and jewel hues, often with sleeves rolled to mid-forearm to show the tattoo; neutral-colored work pants with deep pockets; soft leather slip-ons worn thin at the heel; a worn leather apron with small tool slots, patched and re-stitched multiple times; silver and brass jewelry—bangles, rings set with semi-precious stones, a small pendant combining Christian and indigenous Kenyan motifs"
   },
-  "image_prompt": "Lark Magnúsdóttir, GLMZ, 173cm tall with broad shoulders and dense musculature; striking mixed heritage phenotype with warm deep brown skin and golden-bronze undertones; monolid deep brown eyes with amber luminescence; prominent East Asian cheekbones blended with African breadth and feature prominence; elaborate shoulder-length crown of interlocked locs adorned with copper wire threading and amber LED beads; scissors-and-comb indigo tattoo visible on left forearm; reading glasses with LED frame lights worn on beaded chain; pearlescent tactile-feedback pads visible at fingertips; worn leather apron with tool slots over earth-tone linen tunic with rolled sleeves; silver and brass bangles and semi-precious stone rings; faint smile lines indicating chronic warmth; economical posture with hands in constant motion; warm, attentive presence; Great Lakes Metropolitan Zone workshop setting with soft amber and cool blue lighting, depth of field emphasizing her focused, capable presence --ar 2:3 --v 6",
+  "image_prompt": "Carlota Magnúsdóttir, GLMZ, 173cm tall with broad shoulders and dense musculature; striking mixed heritage phenotype with warm deep brown skin and golden-bronze undertones; monolid deep brown eyes with amber luminescence; prominent East Asian cheekbones blended with African breadth and feature prominence; elaborate shoulder-length crown of interlocked locs adorned with copper wire threading and amber LED beads; scissors-and-comb indigo tattoo visible on left forearm; reading glasses with LED frame lights worn on beaded chain; pearlescent tactile-feedback pads visible at fingertips; worn leather apron with tool slots over earth-tone linen tunic with rolled sleeves; silver and brass bangles and semi-precious stone rings; faint smile lines indicating chronic warmth; economical posture with hands in constant motion; warm, attentive presence; Great Lakes Metropolitan Zone workshop setting with soft amber and cool blue lighting, depth of field emphasizing her focused, capable presence --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "East Asian": 57.4,

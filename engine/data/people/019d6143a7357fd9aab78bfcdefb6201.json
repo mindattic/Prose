@@ -2,10 +2,7 @@
   "id": "019d6143a7357fd9aab78bfcdefb6201",
   "type": "character",
   "name": "Anuhea Rattanavong",
-  "aliases": [
-    "Ember Rattanavong",
-    "Ember"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 29,
   "status": "active",
   "location": "Hamtramck Enclave, subsection called The Rust Nave, near Kedzie and Division",
-  "description": "Ember Rattanavong is tall and angular with deep umber skin mapped in slow-pulsing bioluminescent tracery she designed herself — pale greenish lines that follow her veins like a circuit diagram gone feral. Her hair is kept in tight locks threaded with micro-speakers that emit subsonic hum when she walks, a habit she claims is involuntary but suspects is not. She has one natural eye, dark brown and unreadable, and one eye replaced with a matte ceramic disc she deliberately left unconnected — a fashion choice that unsettles everyone who meets her, which is the point.\n\nShe builds sound sculptures from salvaged corponation hardware — dead Ferrogate transit beacons, cracked Axiom data-hubs — and makes them scream. Her performances are felt as much as heard, bass frequencies vibrating teeth and sternum. Offstage she is quiet to the point of being mistaken for mute, communicating in short declarative sentences or pointed silences. She is genuinely curious about people but expresses it by staring at them for long unbroken intervals, which most find alarming and a few find magnetic.",
+  "description": "Anuhea Rattanavong is tall and angular with deep umber skin mapped in slow-pulsing bioluminescent tracery she designed herself — pale greenish lines that follow her veins like a circuit diagram gone feral. Her hair is kept in tight locks threaded with micro-speakers that emit subsonic hum when she walks, a habit she claims is involuntary but suspects is not. She has one natural eye, dark brown and unreadable, and one eye replaced with a matte ceramic disc she deliberately left unconnected — a fashion choice that unsettles everyone who meets her, which is the point.\n\nShe builds sound sculptures from salvaged corponation hardware — dead Ferrogate transit beacons, cracked Axiom data-hubs — and makes them scream. Her performances are felt as much as heard, bass frequencies vibrating teeth and sternum. Offstage she is quiet to the point of being mistaken for mute, communicating in short declarative sentences or pointed silences. She is genuinely curious about people but expresses it by staring at them for long unbroken intervals, which most find alarming and a few find magnetic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -276,7 +273,7 @@
     "posture_movement": "Moves with deliberate slowness offstage, as if conserving energy. Her gait is fluid but slightly asymmetrical, favoring her left side. Long silences between movements. When working or performing, her hands move with precision and purpose. Stares directly at people for uncomfortably long intervals without breaking eye contact.",
     "clothing_style": "Tier 4 / working-class artist aesthetic. Favors oversized utility vests with salvaged pockets and cable loops, worn over fitted black undershirts. Frequently wears distressed grey or black cargo pants with tool belts. Footwear: scuffed steel-toed boots or worn canvas sneakers. Minimal jewelry aside from augmentations. Clothes show signs of solder burns, soot, and workshop wear. No corporate branding. Practical rather than fashionable, but the arrangement suggests intentional aesthetic—controlled chaos."
   },
-  "image_prompt": "Ember Rattanavong, tall angular neo-noir artist, 183cm wiry frame, warm golden-bronze skin with red-ochre undertones blending Southeast Asian, South Asian, Latin American, African and Middle Eastern heritage. Left eye deep brown, right eye matte pale ceramic prosthetic disc, deliberately non-functional. Black shoulder-length interlocked locs with embedded micro-speaker filaments creating metallic glints. Slow-pulsing pale greenish bioluminescent circuit-pattern tracery mapping across entire body, brightest on forearms and neck, glowing like neon veins. Subdermal haptic resonators visible as geometric scars in palms. Wearing oversized salvaged utility vest over fitted black undershirt, distressed grey cargo pants with tool belt, scuffed steel-toed boots. Solder burns and soot marks on clothing. Fluid but asymmetrical gait, direct unsettling stare. GLMZ workshop setting, neon bioluminescence casting green shadows, moody atmospheric lighting, hands poised with precision, expression neutral and intense --ar 2:3 --v 6",
+  "image_prompt": "Anuhea Rattanavong, tall angular neo-noir artist, 183cm wiry frame, warm golden-bronze skin with red-ochre undertones blending Southeast Asian, South Asian, Latin American, African and Middle Eastern heritage. Left eye deep brown, right eye matte pale ceramic prosthetic disc, deliberately non-functional. Black shoulder-length interlocked locs with embedded micro-speaker filaments creating metallic glints. Slow-pulsing pale greenish bioluminescent circuit-pattern tracery mapping across entire body, brightest on forearms and neck, glowing like neon veins. Subdermal haptic resonators visible as geometric scars in palms. Wearing oversized salvaged utility vest over fitted black undershirt, distressed grey cargo pants with tool belt, scuffed steel-toed boots. Solder burns and soot marks on clothing. Fluid but asymmetrical gait, direct unsettling stare. GLMZ workshop setting, neon bioluminescence casting green shadows, moody atmospheric lighting, hands poised with precision, expression neutral and intense --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Southeast Asian": 36.3,
     "South Asian": 28.6,

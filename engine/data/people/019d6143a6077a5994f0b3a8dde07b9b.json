@@ -2,10 +2,7 @@
   "id": "019d6143a6077a5994f0b3a8dde07b9b",
   "type": "character",
   "name": "Ezenwa Szabó-Vestergaard",
-  "aliases": [
-    "Sage Szabó-Vestergaard",
-    "Sage"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 25,
   "status": "active",
   "location": "Dockside — Lake Michigan waterfront, smuggler territory, near Wacker and State",
-  "description": "Sage Szabó-Vestergaard is lean and angular, all sharp edges and visible tension. At 25, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a data thief out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented data thief in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
+  "description": "Ezenwa Szabó-Vestergaard is lean and angular, all sharp edges and visible tension. At 25, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nHis entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. He works as a data thief out of Dockside, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nhe is not the most talented data thief in GLMZ, but he might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.44,
@@ -306,7 +303,7 @@
     "posture_movement": "Stands with weight balanced on the balls of his feet, ready to move in any direction. Eyes constantly scan horizontal and vertical space — doors, windows, exits. Moves with economy of motion, nothing wasted. Sits with his back to walls. Handshake grip is firm but not aggressive — testing baseline tension. When thinking, his right hand unconsciously touches the cortical scar, a tell he's aware of but hasn't broken.",
     "clothing_style": "Tier 3-4 practical runner wear. Black or dark gray synth-weave jacket with internal cargo pockets — nothing visible, everything accessible. Fitted dark cargo pants with reinforced knees and thigh pockets for tools and data slicers. Worn black tactical boots with grip soles for the wet dockside environment. No logos, no corpo branding, no affiliation markers. Layers beneath in case of quick climate change or blood. A single chain around his neck, industrial steel, holding a small encrypted data key he never removes. Everything fits tight — nothing loose to snag or slow him down."
   },
-  "image_prompt": "Sage Szabó-Vestergaard, GLMZ, warm medium-deep brown skin with golden-olive undertones, Southeast Asian-influenced features with defined jawline, slightly hooded amber-brown eyes with predatory alertness, dark cropped hair with gray temples, lean muscular 178cm frame. Prominent silvery-pink scar tissue along right temple and upper ear from cortical bomb extraction. No facial hair. Wearing fitted black synth-weave tactical jacket with concealed cargo pockets, dark reinforced cargo pants, worn black grip-sole boots. Industrial steel chain necklace with encrypted data key. Standing balanced on balls of feet, eyes scanning exits, back-wall positioning. Urban dockside setting, cool neon-tinged lighting highlighting scar tissue and skin undertones, wet reflective surfaces, dystopian GLMZ atmosphere, gritty street-level aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Ezenwa Szabó-Vestergaard, GLMZ, warm medium-deep brown skin with golden-olive undertones, Southeast Asian-influenced features with defined jawline, slightly hooded amber-brown eyes with predatory alertness, dark cropped hair with gray temples, lean muscular 178cm frame. Prominent silvery-pink scar tissue along right temple and upper ear from cortical bomb extraction. No facial hair. Wearing fitted black synth-weave tactical jacket with concealed cargo pockets, dark reinforced cargo pants, worn black grip-sole boots. Industrial steel chain necklace with encrypted data key. Standing balanced on balls of feet, eyes scanning exits, back-wall positioning. Urban dockside setting, cool neon-tinged lighting highlighting scar tissue and skin undertones, wet reflective surfaces, dystopian GLMZ atmosphere, gritty street-level aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Southeast Asian": 31.2,
     "Northern European": 20,
