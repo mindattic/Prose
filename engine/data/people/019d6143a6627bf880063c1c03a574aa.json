@@ -2,10 +2,7 @@
   "id": "019d6143a6627bf880063c1c03a574aa",
   "type": "character",
   "name": "Ante Salazar",
-  "aliases": [
-    "Ember Salazar",
-    "Ember"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 33,
   "status": "active",
   "location": "Ashfield — former residential district, half-burned, now squatter territory, near Ashland and Division",
-  "description": "Ember Salazar is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 33, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a extraction specialist out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented extraction specialist in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
+  "description": "Ante Salazar is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 33, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — reflex boosters wired into spinal column — shaves reaction time by 40ms — and she makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left her with skills and night terrors in equal measure. She works as a extraction specialist out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented extraction specialist in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.31,
@@ -305,7 +302,7 @@
     "posture_movement": "Economical and controlled — no wasted motion. Stands with weight balanced toward the balls of her feet, ready for immediate action. Moves like she's always calculating distance and angles. Hands are rarely still; fidgets with equipment, adjusts straps, tests weapon weight. Eye contact direct and held slightly too long — unsettling to most people.",
     "clothing_style": "Tier 3-4 functional gear — well-maintained but worn. Black synthetic bodysuit with reinforced panels at shoulders, ribs, and thighs (impact protection). Armored jacket over top — matte tactical weave with cargo pockets, sleeves cut short to reveal forearm augmentation scars. Combat boots, laced tight. Webbing harness for tools and weapons — organized with military precision. No decoration, no excess. Everything serves a purpose or doesn't exist."
   },
-  "image_prompt": "Ember Salazar, GLMZ, female fighter with deep warm bronze skin and golden undertones, prominent high cheekbones and angular jawline blending South Asian and Latin American heritage, light grey-blue alert eyes, dark blonde hair with silver threading pulled in tight functional braid, 172cm athletic lean build with defined musculature. Iridescent titanium cervical spine ports visible, thin white temple scar, surgical marks on forearms. Black reinforced tactical bodysuit, matte weave armored jacket with cut sleeves, combat boots, tool harness. Standing in ready posture, economical movement, cool focused expression. Neon-lit industrial setting, cool blue and amber lighting catching her cheekbones and chrome augmentations, neo-noir urban environment, professional action pose --ar 2:3 --v 6",
+  "image_prompt": "Ante Salazar, GLMZ, female fighter with deep warm bronze skin and golden undertones, prominent high cheekbones and angular jawline blending South Asian and Latin American heritage, light grey-blue alert eyes, dark blonde hair with silver threading pulled in tight functional braid, 172cm athletic lean build with defined musculature. Iridescent titanium cervical spine ports visible, thin white temple scar, surgical marks on forearms. Black reinforced tactical bodysuit, matte weave armored jacket with cut sleeves, combat boots, tool harness. Standing in ready posture, economical movement, cool focused expression. Neon-lit industrial setting, cool blue and amber lighting catching her cheekbones and chrome augmentations, neo-noir urban environment, professional action pose --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 46.2,
     "Hispanic/Latin American": 43.5,

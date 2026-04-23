@@ -2,10 +2,7 @@
   "id": "019d6143a6107bcab58a6a26142fe3b1",
   "type": "character",
   "name": "Alina Björnsdóttir",
-  "aliases": [
-    "Phoenix Björnsdóttir",
-    "Phoenix"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 29,
   "status": "active",
   "location": "The Spires — mid-level corporate residential towers, near Lake Shore Drive and North",
-  "description": "Phoenix Björnsdóttir is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 29, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — move-by-wire system — full nervous system augmentation, makes the body a weapon  — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a demolitions expert out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Phoenix Björnsdóttir is known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "description": "Alina Björnsdóttir is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 29, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — move-by-wire system — full nervous system augmentation, makes the body a weapon  — and he makes no effort to hide it.\n\nHe inherited the role from a mentor who disappeared on a job four years ago — the mentor's gear, contacts, and unfinished business all came with it. He works as a demolitions expert out of The Spires, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Alina Björnsdóttir is known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
       "wound": 0.9,
@@ -275,7 +272,7 @@
   "related_entities": [
     "The Unfinished Theorem",
     "The Nearfield",
-    "Underground Phoenix",
+    "Underground Alina",
     "Lazarus LX-2 'Lab Rat'",
     "Slagworks Industrial",
     "Compass Rose",
@@ -301,7 +298,7 @@
     "posture_movement": "Moves with deliberate economy — no excess motion, no fidgeting. Posture is upright but relaxed, suggesting coiled readiness rather than tension. Every movement appears calculated. Eyes track peripherals constantly, habit from years of work in dangerous spaces. When still, he becomes nearly invisible through sheer neutrality.",
     "clothing_style": "Tier 3-4 pragmatist. Usually wears reinforced tactical wear — matte black or dark gray utility pants with multiple sealed pockets, sleeveless or short-sleeved shirts to display the chrome augmentation with obvious intentionality. Favors synthetic materials resistant to chemical residue and thermal stress. Heavy insulated jacket for site work, unmarked and nondescript. Minimal branding. Boots are always practical footwear — grip soles, ankle support, built for movement on unstable surfaces. No jewelry. Everything serves function."
   },
-  "image_prompt": "Phoenix Björnsdóttir, GLMZ, mixed-heritage operative with East Asian-Northern European features: prominent cheekbones, distinctive epicanthic fold eyes, warm medium tan complexion with golden undertones, black close-cropped fade. 182cm lean athletic build, dark brown observant eyes, smooth unblemished skin with subtle temple scar. Iridescent chrome subcutaneous neural threading visible along arms and neck, glowing faintly. Wearing matte black sleeveless tactical shirt revealing augmentation, dark reinforced utility pants, practical grip-sole boots. Posture radiates coiled readiness, movements economical and calculated. Standing in neon-lit industrial zone, blue-purple neo-noir lighting casting shadows across angular face and chrome implants. Cold professional demeanor, peripheral awareness captured in gaze. High contrast lighting emphasizing the luminous quality of skin tone and opalescent chrome networks. --ar 2:3 --v 6",
+  "image_prompt": "Alina Björnsdóttir, GLMZ, mixed-heritage operative with East Asian-Northern European features: prominent cheekbones, distinctive epicanthic fold eyes, warm medium tan complexion with golden undertones, black close-cropped fade. 182cm lean athletic build, dark brown observant eyes, smooth unblemished skin with subtle temple scar. Iridescent chrome subcutaneous neural threading visible along arms and neck, glowing faintly. Wearing matte black sleeveless tactical shirt revealing augmentation, dark reinforced utility pants, practical grip-sole boots. Posture radiates coiled readiness, movements economical and calculated. Standing in neon-lit industrial zone, blue-purple neo-noir lighting casting shadows across angular face and chrome implants. Cold professional demeanor, peripheral awareness captured in gaze. High contrast lighting emphasizing the luminous quality of skin tone and opalescent chrome networks. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Northern European": 37.3,
     "East Asian": 32.2,

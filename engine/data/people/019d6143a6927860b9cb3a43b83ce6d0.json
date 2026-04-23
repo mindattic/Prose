@@ -2,10 +2,7 @@
   "id": "019d6143a6927860b9cb3a43b83ce6d0",
   "type": "character",
   "name": "Gagan Esquivel-Kowalczyk",
-  "aliases": [
-    "Orion Esquivel-Kowalczyk",
-    "Orion"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
@@ -13,7 +10,7 @@
   "age": 13,
   "status": "active",
   "location": "Copperhead, near North Ave and Milwaukee",
-  "description": "Orion Esquivel-Kowalczyk is small for their age, with a compact, quick frame, golden-brown skin and dark hair worn in a dozen small braids they refresh obsessively whenever they're nervous. They have cosmetic pattern irises — a gift from an older Red who paid for them as a recruitment sweetener — a shifting honeycomb geometry in amber and copper that makes their gaze feel like being examined by something not quite human. Their Red colors are a strip of copper-dyed fabric knotted around their left forearm, always.\n\nOrion Esquivel-Kowalczyk lost their mother to a Helix Biosystems credit-debt collection action when they were nine — not violence, just the slow bureaucratic violence of a medical debt accruing until their mother's housing, work permits, and finally custody were seized. They have been in and out of a Copperhead community house since then, edging toward the Reds not from ideology but because the Reds are there and present and feed you. They are a gifted distraction artist — they can become whatever the room needs: loud, invisible, charming, pathetic. They switch registers with an actor's ease. Privately they are extremely funny and also very afraid.",
+  "description": "Gagan Esquivel-Kowalczyk is small for their age, with a compact, quick frame, golden-brown skin and dark hair worn in a dozen small braids they refresh obsessively whenever they're nervous. They have cosmetic pattern irises — a gift from an older Red who paid for them as a recruitment sweetener — a shifting honeycomb geometry in amber and copper that makes their gaze feel like being examined by something not quite human. Their Red colors are a strip of copper-dyed fabric knotted around their left forearm, always.\n\nGagan Esquivel-Kowalczyk lost their mother to a Helix Biosystems credit-debt collection action when they were nine — not violence, just the slow bureaucratic violence of a medical debt accruing until their mother's housing, work permits, and finally custody were seized. They have been in and out of a Copperhead community house since then, edging toward the Reds not from ideology but because the Reds are there and present and feed you. They are a gifted distraction artist — they can become whatever the room needs: loud, invisible, charming, pathetic. They switch registers with an actor's ease. Privately they are extremely funny and also very afraid.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -201,7 +198,7 @@
     "posture_movement": "Moves with quick, efficient gestures — no wasted motion. Tends toward small, compressed posture when uncertain (hunching shoulders, making themselves smaller). When performing (as distraction artist), shifts entirely: becomes expansive, bouncy, takes up more space. Baseline resting state is alertness; eyes track movement in rooms automatically.",
     "clothing_style": "Tier 4-5 scavenge: oversized hand-me-down hoodie (usually gray or black, Copperhead colors when available), cargo pants with multiple pockets and fraying hems, cheap knock-off trainers with mismatched socks. Layers against cold. Copper-dyed fabric on wrist is the only intentional styling. Grooming is inconsistent — depends on whether they slept at the community house (where water is available) or the stash house. Hygiene matters to them but is secondary to survival."
   },
-  "image_prompt": "Orion Esquivel-Kowalczyk, 148cm pre-teen with warm medium-deep brown skin, golden undertones, high angular cheekbones blending Eastern European structure with South Asian softness, almond-shaped eyes with augmented honeycomb amber-copper pattern irises that catch light unnaturally, full lips, black hair in small braids with copper-dyed sections adorned with cheap thread and beads. Compact bird-like build, wiry pre-adolescent frame. Wearing oversized gray hoodie, fraying cargo pants with multiple pockets, mismatched socks in knock-off trainers. Copper-dyed fabric affiliation marker knotted around left forearm, worn and fraying. Small scar visible on right palm. Sleep-deprived appearance, alert posture with shoulders slightly hunched. GLMZ GLMZ setting, urban decay background, neon accent lighting catching the unsettling geometric patterns of augmented irises, gritty street-level perspective, moody atmospheric lighting. --ar 2:3 --v 6",
+  "image_prompt": "Gagan Esquivel-Kowalczyk, 148cm pre-teen with warm medium-deep brown skin, golden undertones, high angular cheekbones blending Eastern European structure with South Asian softness, almond-shaped eyes with augmented honeycomb amber-copper pattern irises that catch light unnaturally, full lips, black hair in small braids with copper-dyed sections adorned with cheap thread and beads. Compact bird-like build, wiry pre-adolescent frame. Wearing oversized gray hoodie, fraying cargo pants with multiple pockets, mismatched socks in knock-off trainers. Copper-dyed fabric affiliation marker knotted around left forearm, worn and fraying. Small scar visible on right palm. Sleep-deprived appearance, alert posture with shoulders slightly hunched. GLMZ GLMZ setting, urban decay background, neon accent lighting catching the unsettling geometric patterns of augmented irises, gritty street-level perspective, moody atmospheric lighting. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 29.5,
     "Eastern European": 25.7,

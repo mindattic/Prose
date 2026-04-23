@@ -2,10 +2,7 @@
   "id": "019d6143a72e769395802164e2e8fa3f",
   "type": "character",
   "name": "Aigerim Larsdóttir-Haddad-Thakur",
-  "aliases": [
-    "Rune Larsdóttir-Haddad-Thakur",
-    "Rune"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 34,
   "status": "active",
   "location": "Ashfeld — behind a legitimate small-run printing concern called Kamara Press on Cinder Row, near Pulaski and Chicago Ave",
-  "description": "Rune Larsdóttir-Haddad-Thakur is lean and precise-looking, with close-cropped natural hair dyed in shifting copper tones via a low-grade follicular mod, and deep brown skin marked with three ritual scarification lines below her left eye — a gift from her maternal grandmother and the only thing she's never altered. She dresses practically: dark composite-fiber work clothes, fingerless gloves, a craftsperson's apron with tools she actually uses. Her eyes have patterned irises in a swirling amber-and-black design that she chose at seventeen, and she has the steady, unhurried hands of someone who does delicate work for hours at a time.\n\nRune Larsdóttir-Haddad-Thakur considers herself an artist first and a criminal by necessity. She takes genuine pride in her forgeries — biometric registration chains, corp employment histories, corponation citizenship transfers, medical background edits. Her work is flawless and she charges accordingly. She is not warm with clients but she is professional, which in Ashfeld counts for more. She has strong opinions about quality and will turn down work she considers beneath her skill level or too traceable. She prays to the E.L.F. called the Blank Page, a spirit said to inhabit pre-loaded identity matrices, leaving offerings of raw data-blank chips at a small shrine she keeps inside a hollowed-out printing press.",
+  "description": "Aigerim Larsdóttir-Haddad-Thakur is lean and precise-looking, with close-cropped natural hair dyed in shifting copper tones via a low-grade follicular mod, and deep brown skin marked with three ritual scarification lines below her left eye — a gift from her maternal grandmother and the only thing she's never altered. She dresses practically: dark composite-fiber work clothes, fingerless gloves, a craftsperson's apron with tools she actually uses. Her eyes have patterned irises in a swirling amber-and-black design that she chose at seventeen, and she has the steady, unhurried hands of someone who does delicate work for hours at a time.\n\nAigerim Larsdóttir-Haddad-Thakur considers herself an artist first and a criminal by necessity. She takes genuine pride in her forgeries — biometric registration chains, corp employment histories, corponation citizenship transfers, medical background edits. Her work is flawless and she charges accordingly. She is not warm with clients but she is professional, which in Ashfeld counts for more. She has strong opinions about quality and will turn down work she considers beneath her skill level or too traceable. She prays to the E.L.F. called the Blank Page, a spirit said to inhabit pre-loaded identity matrices, leaving offerings of raw data-blank chips at a small shrine she keeps inside a hollowed-out printing press.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -255,7 +252,7 @@
     "Copper",
     "SynapTech IrisBloom Ocular Color Modulator",
     "VitaCore FlowGuard Hemodynamic Regulator",
-    "Frost Boudiaf",
+    "Folakemi Boudiaf",
     "The Pure Hand"
   ],
   "district": "the Gray Zone",
@@ -277,7 +274,7 @@
     "posture_movement": "Economical and controlled; moves with deliberate precision; hands held with an almost martial calm; minimal wasted motion; sits still for extended periods without fidgeting; presence is quiet rather than commanding",
     "clothing_style": "Practical Tier 4 workwear: dark charcoal composite-fiber trousers and fitted tunic; reinforced apron with multiple tool pockets worn during active work; fingerless thermal gloves (midnight blue); worn boots with good ankle support; no jewelry or ornamentation except for the ritual scars; everything chosen for function and durability over aesthetics"
   },
-  "image_prompt": "Rune Larsdóttir-Haddad-Thakur, a 168cm lean precision-calibrated woman with warm golden-brown skin blending South Asian, Middle Eastern, and Latin American heritage, high angular cheekbones with penetrating gaze, short dark brown hair with copper undertones cycling through follicular mods. Three pale ritual scars stripe below her left eye. Her augmented irises display swirling amber-and-black patterned design. She wears practical Tier 4 dark charcoal workwear, fitted tunic, reinforced tool apron, midnight blue fingerless composite gloves concealing hand augmentation, worn supportive boots. Economical controlled posture, quiet precision presence. GLMZ Great Lakes Metropolitan Zone, working in low maintenance light, cool industrial setting, moody atmospheric lighting highlighting her genetic constellation of features and subtle copper shimmer, stark minimalist aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Aigerim Larsdóttir-Haddad-Thakur, a 168cm lean precision-calibrated woman with warm golden-brown skin blending South Asian, Middle Eastern, and Latin American heritage, high angular cheekbones with penetrating gaze, short dark brown hair with copper undertones cycling through follicular mods. Three pale ritual scars stripe below her left eye. Her augmented irises display swirling amber-and-black patterned design. She wears practical Tier 4 dark charcoal workwear, fitted tunic, reinforced tool apron, midnight blue fingerless composite gloves concealing hand augmentation, worn supportive boots. Economical controlled posture, quiet precision presence. GLMZ Great Lakes Metropolitan Zone, working in low maintenance light, cool industrial setting, moody atmospheric lighting highlighting her genetic constellation of features and subtle copper shimmer, stark minimalist aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 44.3,
     "Hispanic/Latin American": 23,

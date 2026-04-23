@@ -2,10 +2,7 @@
   "id": "019d6143a6e870b7be2af7b3c7120c71",
   "type": "character",
   "name": "Ghaliya Wickramasinghe-Calvillo",
-  "aliases": [
-    "Atlas Wickramasinghe-Calvillo",
-    "Atlas"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 67,
   "status": "active",
   "location": "Montclare Quiet, Terrace Row Housing Unit 14, near Milwaukee and Damen",
-  "description": "Atlas Wickramasinghe-Calvillo is a slender, slightly stooped man who still dresses as though he is going to stand in front of a classroom — collared shirt, pressed, one color of ink on his pocket, chalk residue on his left hand even though he hasn't taught in four years, because he cannot stop teaching things to whoever is nearby. His hair is gone except for a precise white beard he maintains with what his grandchildren call 'weird dedication.' He has cat ears — a geneware choice from his mid-forties, the soft grey kind with slight tabby markings, that he got because his students loved them and he never had them reversed. They fold slightly when he is embarrassed, which he finds mortifying because it cannot be hidden.\n\nHe is raising Amara, 9, and Deshi, 12, his daughter Priya's children, since Priya's disappearance into a Helix Biosystems labor contract three years ago that has not produced reliable contact in eighteen months. He does not use the word 'disappeared' in front of the children. He is calm about it in public and wakes at 3 AM about it in private. His pension from the GLMZ Municipal Education Authority does not cover three people adequately, and he has begun supplementing it by tutoring neighborhood children for small fees, which the MEA has quietly informed him may technically violate his pension terms. He is currently ignoring this letter.",
+  "description": "Ghaliya Wickramasinghe-Calvillo is a slender, slightly stooped man who still dresses as though he is going to stand in front of a classroom — collared shirt, pressed, one color of ink on his pocket, chalk residue on his left hand even though he hasn't taught in four years, because he cannot stop teaching things to whoever is nearby. His hair is gone except for a precise white beard he maintains with what his grandchildren call 'weird dedication.' He has cat ears — a geneware choice from his mid-forties, the soft grey kind with slight tabby markings, that he got because his students loved them and he never had them reversed. They fold slightly when he is embarrassed, which he finds mortifying because it cannot be hidden.\n\nHe is raising Amara, 9, and Deshi, 12, his daughter Priya's children, since Priya's disappearance into a Helix Biosystems labor contract three years ago that has not produced reliable contact in eighteen months. He does not use the word 'disappeared' in front of the children. He is calm about it in public and wakes at 3 AM about it in private. His pension from the GLMZ Municipal Education Authority does not cover three people adequately, and he has begun supplementing it by tutoring neighborhood children for small fees, which the MEA has quietly informed him may technically violate his pension terms. He is currently ignoring this letter.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -247,7 +244,7 @@
     "Residue (I Still Have Your Feed)",
     "IRONLIMB Spectre SV-4 Stealth Arm",
     "Arcturus KS-7 'Nursery'",
-    "Atlas",
+    "Ghaliya",
     "Electrolytic Bone Density Projector EBDP-4 'Chalk'",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "GLMZ"
@@ -273,7 +270,7 @@
     "posture_movement": "Walks with slight forward lean from spinal compression, movements deliberate and economical. Tends to stand with hands clasped or one hand resting on a surface for stability. Frequently pauses mid-conversation to consider phrasing — a teacher's habit. Ears fold noticeably when embarrassed or uncertain, which he finds involuntarily revealing.",
     "clothing_style": "Tier 4 (working class, careful). Wears pressed collared shirts in neutral colors (white, pale blue, tan) with visible wear at collar and cuffs — garments mended carefully rather than replaced. Dark trousers, always clean, slightly bagged at the knees. Worn leather shoes, resoled twice. A cardigan sweater, grey wool, over everything in cool months. No visible corporate affiliation or status markers. Clothing suggests a man maintaining personal dignity on a fixed and inadequate income."
   },
-  "image_prompt": "Portrait of Atlas Wickramasinghe-Calvillo, 172cm tall elderly man with warm medium-deep brown skin blending South Asian, Hispanic, and African heritage. Bald head with meticulously trimmed white beard, 2cm length. Functional grey tabby geneware cat ears with realistic fur and tabby markings protruding from skull. Deep warm brown eyes, patient and contemplative. Slight forward spinal lean, dignified posture. Wearing pressed pale blue collared shirt with careful mending at cuffs, dark trousers with visible wear at knees, grey wool cardigan over shoulders. Wire-rimmed reading glasses. Fine white scar on right wrist. Standing in soft indoor lighting suggesting a modest apartment or library setting. GLMZ, working-class aesthetic, quiet dignity, warm atmospheric lighting. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Ghaliya Wickramasinghe-Calvillo, 172cm tall elderly man with warm medium-deep brown skin blending South Asian, Hispanic, and African heritage. Bald head with meticulously trimmed white beard, 2cm length. Functional grey tabby geneware cat ears with realistic fur and tabby markings protruding from skull. Deep warm brown eyes, patient and contemplative. Slight forward spinal lean, dignified posture. Wearing pressed pale blue collared shirt with careful mending at cuffs, dark trousers with visible wear at knees, grey wool cardigan over shoulders. Wire-rimmed reading glasses. Fine white scar on right wrist. Standing in soft indoor lighting suggesting a modest apartment or library setting. GLMZ, working-class aesthetic, quiet dignity, warm atmospheric lighting. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 44.5,
     "Hispanic/Latin American": 25.4,

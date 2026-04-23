@@ -2,10 +2,7 @@
   "id": "019d6143a5a27fbfa04f271ab26cfcf1",
   "type": "character",
   "name": "Amarachi Okada-Madrigal",
-  "aliases": [
-    "Zephyr Okada-Madrigal",
-    "Zephyr"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 34,
   "status": "active",
   "location": "Fort Anchor, near Western and Chicago Ave",
-  "description": "Zephyr Okada-Madrigal is built like a structural column — wide shoulders, thick neck, hands that look like they could stop a mag-train. Her skin is deep brown and she keeps her hair cropped close to the skull, the only concession to vanity being a single bioluminescent stripe of violet running temple to nape that pulses faintly when her blood pressure spikes. A network of old scar tissue along her left forearm maps the shape of a crowd-crush incident she doesn't discuss. Her face defaults to studied neutrality, the kind you practice until it becomes reflex.\n\nShe joined ADS Civil Security because her uncle did, and stayed because she's genuinely good at de-escalation — ironic given her assignment. She reads crowd energy the way some people read weather: a shift in noise pitch, the clustering of bodies, the particular quality of silence before things go wrong. She is not cruel, which makes her unusual in her unit, and she knows it. She keeps her head down, does the job, and goes home to her two cats and a shrine to the E.L.F. she calls Makovitch, a minor digital spirit she believes inhabits her riot shield.",
+  "description": "Amarachi Okada-Madrigal is built like a structural column — wide shoulders, thick neck, hands that look like they could stop a mag-train. Her skin is deep brown and she keeps her hair cropped close to the skull, the only concession to vanity being a single bioluminescent stripe of violet running temple to nape that pulses faintly when her blood pressure spikes. A network of old scar tissue along her left forearm maps the shape of a crowd-crush incident she doesn't discuss. Her face defaults to studied neutrality, the kind you practice until it becomes reflex.\n\nShe joined ADS Civil Security because her uncle did, and stayed because she's genuinely good at de-escalation — ironic given her assignment. She reads crowd energy the way some people read weather: a shift in noise pitch, the clustering of bodies, the particular quality of silence before things go wrong. She is not cruel, which makes her unusual in her unit, and she knows it. She keeps her head down, does the job, and goes home to her two cats and a shrine to the E.L.F. she calls Makovitch, a minor digital spirit she believes inhabits her riot shield.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -273,7 +270,7 @@
     "posture_movement": "Stands with weight evenly distributed, shoulders back — the posture of someone trained to hold ground. Moves with economical precision; no wasted motion. Default facial expression is studied neutrality. Eyes track crowd dynamics even in casual settings. Favors a loose, ready stance; hands rarely fully relaxed at her sides.",
     "clothing_style": "Off-duty: GLMZ ADS Civil Security standard-issue riot suppression gear when on-shift — reinforced polymer combat vest in high-visibility orange/reflective gray, tactical cargo pants with utility webbing, steel-toed boots rated for impact. Off-duty casual is military-lean: matte black compression shirts, gray cargo trousers, unmarked tactical jacket (Tier 3 quality, durable rather than fashionable). Wears a small brass charm on a thin cord around her neck — a personal totem, possibly related to her E.L.F. practice. No jewelry beyond functional gear attachment points. Overall aesthetic is utilitarian, tier 3-4 working-class cop: built for function, indifferent to style."
   },
-  "image_prompt": "Zephyr Okada-Madrigal, 183cm tall, muscular riot cop with pan-Asian-Hispanic heritage. Medium-tan golden-amber skin with Southeast Asian-East Asian cheekbones set wide, defined Hispanic mandible, deep brown eyes with warm undertones, black military-cropped hair with violet bioluminescent stripe from temple to nape pulsing softly. Weathered 12-year-old complexion with sun freckling across cheekbones, visible white crush-fracture scarring across left forearm, faint silvered geometric subdermal augmentation mesh patterns on forearms. Neutral analytical expression, steady crowd-aware eyes. Wearing unmarked tactical jacket in matte black, gray cargo trousers, steel-toed boots, small brass charm on cord at neck. Standing in economical ready posture, weight evenly distributed, shoulders back. GLMZ GLMZ Metropolitan Zone setting, night-shift lighting with ambient city glow, utilitarian working-class aesthetic, functional over fashionable, aged leather quality to bearing. --ar 2:3 --v 6",
+  "image_prompt": "Amarachi Okada-Madrigal, 183cm tall, muscular riot cop with pan-Asian-Hispanic heritage. Medium-tan golden-amber skin with Southeast Asian-East Asian cheekbones set wide, defined Hispanic mandible, deep brown eyes with warm undertones, black military-cropped hair with violet bioluminescent stripe from temple to nape pulsing softly. Weathered 12-year-old complexion with sun freckling across cheekbones, visible white crush-fracture scarring across left forearm, faint silvered geometric subdermal augmentation mesh patterns on forearms. Neutral analytical expression, steady crowd-aware eyes. Wearing unmarked tactical jacket in matte black, gray cargo trousers, steel-toed boots, small brass charm on cord at neck. Standing in economical ready posture, weight evenly distributed, shoulders back. GLMZ GLMZ Metropolitan Zone setting, night-shift lighting with ambient city glow, utilitarian working-class aesthetic, functional over fashionable, aged leather quality to bearing. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 30.5,
     "Southeast Asian": 24.9,

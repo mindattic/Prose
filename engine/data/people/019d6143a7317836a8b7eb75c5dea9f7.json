@@ -2,10 +2,7 @@
   "id": "019d6143a7317836a8b7eb75c5dea9f7",
   "type": "character",
   "name": "Aysel Kovalenko-Ogawa",
-  "aliases": [
-    "Arc Kovalenko-Ogawa",
-    "Arc"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 19,
   "status": "active",
   "location": "Shallowgrave — lives in a bunk hostel on Carrion Alley, works the market corridors between the Sump and Ironvein, near Western and Division",
-  "description": "Arc Kovalenko-Ogawa is nineteen years old and moves like she expects the ground to give way. She's thin in the way of someone whose calories are unreliable, with close-cropped natural hair dyed in two bands — natural black at the roots, then a vivid synthetic orange at the tips — and a set of geneware cat ears she bought secondhand with three months of saved wages; they're tawny gold and slightly too large for her head, which she is sensitive about. Her skin is a warm dark brown, her eyes quick and dark, her grin infectious and slightly desperate. She has a long scar across her left shin from a close call with a Ferrogate transit barrier she vaulted at full speed.\n\nShe is fast — genuinely, almost recklessly fast — and has built her entire professional identity around it. She runs bets and payouts for a bookmaker named Sołtys Kowalczyk-Fanuanuu who she calls 'the Old Man,' carrying chips, physical slips, and occasionally small packages she's been told not to think about through the market crowds. She is saving money for something she hasn't named yet but pictures vaguely as 'away.' She is not cynical about this. She still believes in the vagueness of away.",
+  "description": "Aysel Kovalenko-Ogawa is nineteen years old and moves like she expects the ground to give way. She's thin in the way of someone whose calories are unreliable, with close-cropped natural hair dyed in two bands — natural black at the roots, then a vivid synthetic orange at the tips — and a set of geneware cat ears she bought secondhand with three months of saved wages; they're tawny gold and slightly too large for her head, which she is sensitive about. Her skin is a warm dark brown, her eyes quick and dark, her grin infectious and slightly desperate. She has a long scar across her left shin from a close call with a Ferrogate transit barrier she vaulted at full speed.\n\nShe is fast — genuinely, almost recklessly fast — and has built her entire professional identity around it. She runs bets and payouts for a bookmaker named Sołtys Kowalczyk-Fanuanuu who she calls 'the Old Man,' carrying chips, physical slips, and occasionally small packages she's been told not to think about through the market crowds. She is saving money for something she hasn't named yet but pictures vaguely as 'away.' She is not cynical about this. She still believes in the vagueness of away.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -226,7 +223,7 @@
     "posture_movement": "She moves with coiled readiness, weight always balanced on the balls of her feet. Her gait is economical and fast even when she's not running. Her head turns frequently, tracking movement in her peripheral vision. When still, she fidgets — fingers drumming, weight shifting. There's an underlying desperation in her movement, masked by practiced speed.",
     "clothing_style": "Tier 4 working-class courier aesthetic. Black synthetic runner's jacket with reflective threading (worn, patches at the elbows). Fitted dark gray compression pants with cargo pockets for slip-packs and chips. Worn synth-leather ankle boots with grip-soles rated for market floor surfaces. A faded teal hoodie underneath, visible at the collar. No jewelry except a cheap digital wrist-timer for tracking run schedules. Her clothes are functional, slightly too large in places (hand-me-down hostel-trade economy), and bear the wear of constant movement through crowded, grimy corridors."
   },
-  "image_prompt": "Arc Kovalenko-Ogawa, 163cm tall wiry courier with warm medium-brown skin (Eastern European-Hispanic-East Asian mix), high angular cheekbones, dark alert eyes. Short black hair with neon orange dyed tips, close-cropped sides. Tawny gold geneware cat ears with visible seams twitching slightly. Black worn synthetic runner's jacket with reflective threading and elbow patches, dark gray compression pants, worn synth-leather grip-sole boots. Faded teal hoodie collar visible. Cheap digital wrist-timer. Coiled posture, weight on balls of feet, watchful expression with grin lines. Faint scar across left shin, subcutaneous adrenal spike implant bulge visible on left forearm. GLMZ Great Lakes Metropolitan Zone, industrial corridor lighting casting slight shadows, grimy market floor atmosphere, neon signage reflection, desperate hunger masked by practiced speed. --ar 2:3 --v 6",
+  "image_prompt": "Aysel Kovalenko-Ogawa, 163cm tall wiry courier with warm medium-brown skin (Eastern European-Hispanic-East Asian mix), high angular cheekbones, dark alert eyes. Short black hair with neon orange dyed tips, close-cropped sides. Tawny gold geneware cat ears with visible seams twitching slightly. Black worn synthetic runner's jacket with reflective threading and elbow patches, dark gray compression pants, worn synth-leather grip-sole boots. Faded teal hoodie collar visible. Cheap digital wrist-timer. Coiled posture, weight on balls of feet, watchful expression with grin lines. Faint scar across left shin, subcutaneous adrenal spike implant bulge visible on left forearm. GLMZ Great Lakes Metropolitan Zone, industrial corridor lighting casting slight shadows, grimy market floor atmosphere, neon signage reflection, desperate hunger masked by practiced speed. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Eastern European": 38.8,
     "Hispanic/Latin American": 37.9,

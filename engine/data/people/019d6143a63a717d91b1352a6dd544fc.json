@@ -2,10 +2,7 @@
   "id": "019d6143a63a717d91b1352a6dd544fc",
   "type": "character",
   "name": "Firouz Nazari-Jaramillo-Sesay",
-  "aliases": [
-    "Frost Nazari-Jaramillo-Sesay",
-    "Frost"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 28,
   "status": "active",
   "location": "the Gray Zone — lower loading docks, near Halsted and Chicago Ave",
-  "description": "Frost Nazari-Jaramillo-Sesay was a biomedical engineering student at Meridian Technical before the tuition hikes priced him out. He was eighteen months from a degree that would have put him in a Helix BioSystems lab. Instead he ended up maintaining chrome for dock workers who couldn't afford licensed technicians. The crew found him. Or he found the crew. The distinction blurred the way it always does in the Gray Zone.\n\nKyle severed both his wrists at the chrome joints with two precise cuts. He now has mismatched replacement hands: the left is a delicate surgical model (too small, meant for a woman's frame), the right is a heavy industrial gripper (too large, meant for cargo work). Together they make him look like a crab having an identity crisis. He calls them Lefty and The Situation.\n\nJin-seo is the most intelligent member of the crew and the only one who understood immediately what Kyle was: not a man fighting seven, but a system processing seven inputs simultaneously. He has been diagramming Kyle's fighting patterns from memory. He does not want revenge. He wants to understand Kyle's hardware. He has a younger sister, Minji, who is sixteen and still at Meridian Technical on a partial scholarship. He sends her half his cut. She thinks he works in legitimate tech repair.",
+  "description": "Firouz Nazari-Jaramillo-Sesay was a biomedical engineering student at Meridian Technical before the tuition hikes priced him out. He was eighteen months from a degree that would have put him in a Helix BioSystems lab. Instead he ended up maintaining chrome for dock workers who couldn't afford licensed technicians. The crew found him. Or he found the crew. The distinction blurred the way it always does in the Gray Zone.\n\nKyle severed both his wrists at the chrome joints with two precise cuts. He now has mismatched replacement hands: the left is a delicate surgical model (too small, meant for a woman's frame), the right is a heavy industrial gripper (too large, meant for cargo work). Together they make him look like a crab having an identity crisis. He calls them Lefty and The Situation.\n\nJin-seo is the most intelligent member of the crew and the only one who understood immediately what Kyle was: not a man fighting seven, but a system processing seven inputs simultaneously. He has been diagramming Kyle's fighting patterns from memory. He does not want revenge. He wants to understand Kyle's hardware. He has a younger sister, Minji, who is sixteen and still at Meridian Technical on a partial scholarship. He sends her half his cut. She thinks he works in legitimate tech repair.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -236,7 +233,7 @@
     "Big Rig",
     "Chicago",
     "SynapTech Resonance Direct Neural-to-Medium Creative Interfa",
-    "Frost",
+    "Firouz",
     "The Pure Hand",
     "Cargo Tacos",
     "Slagworks Industrial"
@@ -263,7 +260,7 @@
     "posture_movement": "Hunched forward, shoulders curled inward—protective posture. Moves with deliberate precision, economical gestures. Uses his hands constantly while talking, making the mismatch deeply visible. Right hand (gripper) moves with heavier, more deliberate hydraulic lag; left hand twitches occasionally from miscalibration. When concentrating, completely still except for micro-adjustments.",
     "clothing_style": "Tier 4-5 working crew: grease-stained grey syndicate-knockoff maintenance jacket with rolled sleeves (showing wrist augmentation scars), cheap black thermostat undershirt with small tears. Cargo pants with multiple pockets filled with diagnostic tools and calibration leads. Steel-toe boots worn through at the heel. No jewelry. Wears a frayed Meridian Technical ID badge clipped to a lanyard despite no longer being a student—a ghost of who he was supposed to become."
   },
-  "image_prompt": "Frost Nazari-Jaramillo-Sesay, 172cm lean wiry frame, warm medium-brown skin with golden-mahogany undertones blending Sub-Saharan African, South Asian, Middle Eastern, Eastern European, and Southeast Asian features. Angular cheekbones with rounded lower face, dark alert eyes shadowed by exhaustion, thin scar temple to jaw. Black hair with silver threading, undercut style swept back, matted with workshop grime. Mismatched prosthetic hands: delicate surgical chrome left hand (too small, articulated fingers) and heavy industrial gripper right hand (too large, hydraulic). Hands shake slightly. Hunched protective posture, wearing grease-stained grey maintenance jacket with rolled sleeves exposing scarred wrist interfaces, cheap black undershirt with tears, cargo pants with tools, worn steel-toe boots. Frayed Meridian Technical ID badge. Industrial neo-noir workshop setting, cool fluorescent lighting casting shadows across uneven skin tone, detail-focused face processing diagnostic work, hands trembling at rest. Gritty, worn-down aesthetic. GLMZ, Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
+  "image_prompt": "Firouz Nazari-Jaramillo-Sesay, 172cm lean wiry frame, warm medium-brown skin with golden-mahogany undertones blending Sub-Saharan African, South Asian, Middle Eastern, Eastern European, and Southeast Asian features. Angular cheekbones with rounded lower face, dark alert eyes shadowed by exhaustion, thin scar temple to jaw. Black hair with silver threading, undercut style swept back, matted with workshop grime. Mismatched prosthetic hands: delicate surgical chrome left hand (too small, articulated fingers) and heavy industrial gripper right hand (too large, hydraulic). Hands shake slightly. Hunched protective posture, wearing grease-stained grey maintenance jacket with rolled sleeves exposing scarred wrist interfaces, cheap black undershirt with tears, cargo pants with tools, worn steel-toe boots. Frayed Meridian Technical ID badge. Industrial neo-noir workshop setting, cool fluorescent lighting casting shadows across uneven skin tone, detail-focused face processing diagnostic work, hands trembling at rest. Gritty, worn-down aesthetic. GLMZ, Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 22.2,
     "South Asian": 18.9,

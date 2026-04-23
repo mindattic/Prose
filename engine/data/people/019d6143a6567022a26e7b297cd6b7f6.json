@@ -3,10 +3,7 @@
   "rating": 70,
   "type": "character",
   "name": "Eliseo Tofauti-Cardenas",
-  "aliases": [
-    "Briar Tofauti-Cardenas",
-    "Briar"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -14,7 +11,7 @@
   "age": 28,
   "status": "active",
   "location": "Geartown, Bay 14 of the Rusted Meridian self-service garage complex on Spindle Row, near Milwaukee and Damen",
-  "description": "Briar Tofauti-Cardenas is lean and angular, with the kind of wiry upper-body strength that comes from torquing bolts rather than lifting weights. His skin is a warm medium brown and his hair is a close-cropped natural that he bleeds into bioluminescent blue at the tips — a cheap geneware dye job he redoes every two months, currently fading to a greenish teal at the ends. He has a Palladian corporate tattoo on his left forearm that he has partially covered with an amateur geometric overlay — the original mark of a three-year apprenticeship contract he bought out early at significant personal cost. His hands are perpetually stained and he has stopped being embarrassed about it.\n\nHe is intensely focused when working and almost incoherent when not, as if the part of his brain that manages conversation runs on whatever processing power the mechanical problem in front of him does not require. He is not unkind — genuinely not — but he will trail off mid-sentence if a sound from an engine catches his attention. He has strong opinions about Ferrogate Transit's maintenance culture that he will share with anyone who stands still long enough.",
+  "description": "Eliseo Tofauti-Cardenas is lean and angular, with the kind of wiry upper-body strength that comes from torquing bolts rather than lifting weights. His skin is a warm medium brown and his hair is a close-cropped natural that he bleeds into bioluminescent blue at the tips — a cheap geneware dye job he redoes every two months, currently fading to a greenish teal at the ends. He has a Palladian corporate tattoo on his left forearm that he has partially covered with an amateur geometric overlay — the original mark of a three-year apprenticeship contract he bought out early at significant personal cost. His hands are perpetually stained and he has stopped being embarrassed about it.\n\nHe is intensely focused when working and almost incoherent when not, as if the part of his brain that manages conversation runs on whatever processing power the mechanical problem in front of him does not require. He is not unkind — genuinely not — but he will trail off mid-sentence if a sound from an engine catches his attention. He has strong opinions about Ferrogate Transit's maintenance culture that he will share with anyone who stands still long enough.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -195,7 +192,7 @@
     "posture_movement": "Stands with weight forward slightly, hands active and restless when not working — fingers unconsciously mimicking mechanical motions. Moves with economical efficiency, no wasted motion. When focused on machinery, entire body locks into stillness. When not working, appears slightly disconnected, gaze unfocused, as if processing power is allocated elsewhere. Often mid-sentence trails off if mechanical sound interrupts attention.",
     "clothing_style": "Tier 4 utilitarian — work-worn Carhartt-equivalent synthdenim coveralls in faded gray, perpetually stained with machine oil and coolant. Base layer typically a cheap thermal undershirt in dark gray or black, sleeves rolled or pushed up. Steel-toed work boots, scuffed and practical. Leather apron hung in bay, not on body. A single silver chain around his neck (no pendant) — inherited, not augmented. No jewelry. Clothes are functional maintenance gear, not fashion, but worn with unconscious confidence. Smells consistently of synthetic machine oil and welding flux."
   },
-  "image_prompt": "Briar Tofauti-Cardenas, a lean 178cm Pacific Islander-diaspora mechanic with warm deep brown skin and golden undertones, close-cropped dark hair fading to bioluminescent teal at tips. Broad Pacific Islander facial features, dark eyes with faint retinal grid overlay. Wearing faded gray Carhartt-equivalent work coveralls stained with machine oil, dark thermal undershirt, steel-toed boots. Black leather haptic feedback glove on right hand with blue circuit tracery. Oil-burn scars across knuckles and forearms, geometric tattoo overlay on left forearm. Silver chain around neck, 1-2 days stubble. Standing in GLMZ industrial workshop bay, hands active and restless, weight forward. Economical posture, unfocused gaze as if processing elsewhere. Machine oil and welding flux scents. Moody workshop lighting with blue-teal neon accents reflecting off metal surfaces and his glowing hair. GLMZ 2200s gritty aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Eliseo Tofauti-Cardenas, a lean 178cm Pacific Islander-diaspora mechanic with warm deep brown skin and golden undertones, close-cropped dark hair fading to bioluminescent teal at tips. Broad Pacific Islander facial features, dark eyes with faint retinal grid overlay. Wearing faded gray Carhartt-equivalent work coveralls stained with machine oil, dark thermal undershirt, steel-toed boots. Black leather haptic feedback glove on right hand with blue circuit tracery. Oil-burn scars across knuckles and forearms, geometric tattoo overlay on left forearm. Silver chain around neck, 1-2 days stubble. Standing in GLMZ industrial workshop bay, hands active and restless, weight forward. Economical posture, unfocused gaze as if processing elsewhere. Machine oil and welding flux scents. Moody workshop lighting with blue-teal neon accents reflecting off metal surfaces and his glowing hair. GLMZ 2200s gritty aesthetic. --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "Pacific Islander": 85.6,

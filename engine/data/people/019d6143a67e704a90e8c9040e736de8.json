@@ -2,10 +2,7 @@
   "id": "019d6143a67e704a90e8c9040e736de8",
   "type": "character",
   "name": "Birendra Nygaard-Haugen",
-  "aliases": [
-    "Kira Nygaard-Haugen",
-    "Kira"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 14,
   "status": "active",
   "location": "Engelheim, Axiom Meridian Youth Preparatory Campus, near Lincoln and Belmont",
-  "description": "Kira Nygaard-Haugen is a tall, soft-faced fourteen-year-old with his father's Ukrainian pallor cut through with his grandfather's Ghanaian bone structure, resulting in something that looks like a sculptor started with two different models and found the intersection interesting. His geneware is modest — his parents approved a bioluminescent vein treatment in pale gold that shows at his temples and wrists when he's excited or stressed, something he deeply regrets as it is essentially a visible anxiety indicator. He keeps his school uniform impeccably pressed to compensate.\n\nHe is enrolled at Axiom Meridian Youth Prep on a partial academic scholarship, meaning his family stretches Tier 3 income to cover the gap. He is genuinely brilliant at systems architecture and has parlayed that into a small private operation: for a fee, he fixes other students' academic scores, not by hacking the official records (too dangerous) but by finding the legitimate alternate-submission loopholes buried in the campus governance code that no one else reads. He calls this 'procedural advocacy.' He is aware this is thin moral ice and he keeps skating.",
+  "description": "Birendra Nygaard-Haugen is a tall, soft-faced fourteen-year-old with his father's Ukrainian pallor cut through with his grandfather's Ghanaian bone structure, resulting in something that looks like a sculptor started with two different models and found the intersection interesting. His geneware is modest — his parents approved a bioluminescent vein treatment in pale gold that shows at his temples and wrists when he's excited or stressed, something he deeply regrets as it is essentially a visible anxiety indicator. He keeps his school uniform impeccably pressed to compensate.\n\nHe is enrolled at Axiom Meridian Youth Prep on a partial academic scholarship, meaning his family stretches Tier 3 income to cover the gap. He is genuinely brilliant at systems architecture and has parlayed that into a small private operation: for a fee, he fixes other students' academic scores, not by hacking the official records (too dangerous) but by finding the legitimate alternate-submission loopholes buried in the campus governance code that no one else reads. He calls this 'procedural advocacy.' He is aware this is thin moral ice and he keeps skating.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -233,7 +230,7 @@
     "posture_movement": "Sits very straight, shoulders held rigid — habitual tension from self-consciousness about his height and his glowing veins. Moves with the careful precision of someone who knows they're being watched. Fidgets with hands when thinking, particularly picking at the cuffs of his uniform.",
     "clothing_style": "Axiom Meridian regulation uniform: pressed charcoal blazer with embroidered school crest, white dress shirt (always tucked), dark trousers with a sharp crease, school-issued tie. Everything maintained obsessively — no wrinkles, no stains. Off-campus wears similar Tier 3 corporate-casual: clean neutral tones, expensive-looking but not ostentatiously so, always fitted. No logos. Minimal jewelry except a thin silver wristband that hides his bioluminescent veins."
   },
-  "image_prompt": "Kira Nygaard-Haugen, 178cm tall androgynous teenager with warm olive-beige skin and golden undertones blending Middle Eastern, Northern European, and Latin American heritage. Dark brown nearly-black hair, neatly parted left, short length. Warm brown eyes with amber undertones. Fine-featured angular face with rounded jawline and prominent nasal bridge. Wearing pressed charcoal Axiom Meridian regulation blazer, white tucked dress shirt, dark trousers with sharp crease, school tie. Silver wristband visible on one wrist. Bioluminescent gold vein tracery faintly visible along temples and inner wrists. Rigid posture, shoulders tense, expression slightly concentrated. GLMZ Great Lakes Metropolitan Zone, cool neon-lit corridor or academy setting, subtle cool lighting highlighting skin's luminous olive quality, minimal jewelry, obsessively groomed appearance, subtle stress glow emanating from temple veins --ar 2:3 --v 6",
+  "image_prompt": "Birendra Nygaard-Haugen, 178cm tall androgynous teenager with warm olive-beige skin and golden undertones blending Middle Eastern, Northern European, and Latin American heritage. Dark brown nearly-black hair, neatly parted left, short length. Warm brown eyes with amber undertones. Fine-featured angular face with rounded jawline and prominent nasal bridge. Wearing pressed charcoal Axiom Meridian regulation blazer, white tucked dress shirt, dark trousers with sharp crease, school tie. Silver wristband visible on one wrist. Bioluminescent gold vein tracery faintly visible along temples and inner wrists. Rigid posture, shoulders tense, expression slightly concentrated. GLMZ Great Lakes Metropolitan Zone, cool neon-lit corridor or academy setting, subtle cool lighting highlighting skin's luminous olive quality, minimal jewelry, obsessively groomed appearance, subtle stress glow emanating from temple veins --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Middle Eastern": 47.5,
     "Northern European": 39.4,

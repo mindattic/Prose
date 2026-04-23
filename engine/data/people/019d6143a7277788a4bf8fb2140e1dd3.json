@@ -2,10 +2,7 @@
   "id": "019d6143a7277788a4bf8fb2140e1dd3",
   "type": "character",
   "name": "Altynai Okonkwo",
-  "aliases": [
-    "Phoenix Okonkwo",
-    "Phoenix"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 31,
   "status": "active",
   "location": "Shallowgrave — a basement workspace beneath a legitimate print-repair shop called Inkblood Restorations, near Ashland and Chicago Ave",
-  "description": "Phoenix Okonkwo is small and wiry, with deep brown Yoruba-complexioned skin and natural hair she keeps tucked under an ever-rotating collection of patterned wraps. Her most striking feature is her eyes — she paid a significant portion of her early earnings for iris patterning, and her irises now display slow-rotating mandalas in burnt amber and deep violet, which she claims help her spot microscopic forgery errors others miss. Her fingers are perpetually ink-stained despite her best efforts, and she has a habit of wearing magnification lenses pushed up on her forehead like a second set of eyes.\n\nPhoenix Okonkwo is meticulous to the point of compulsion, deeply proud of her craft in a way she has no legitimate outlet for, and socially awkward in a manner that reads as cold until you realize she is simply more comfortable with documents than with people. She thinks of identity fabrication as a form of art — every forged life is a story she writes, and she has genuine contempt for sloppy work, including her own past output which she sometimes obsessively revisits and critiques. She has strong opinions about which corponation residency stamps are aesthetically superior and will share them unprompted.",
+  "description": "Altynai Okonkwo is small and wiry, with deep brown Yoruba-complexioned skin and natural hair she keeps tucked under an ever-rotating collection of patterned wraps. Her most striking feature is her eyes — she paid a significant portion of her early earnings for iris patterning, and her irises now display slow-rotating mandalas in burnt amber and deep violet, which she claims help her spot microscopic forgery errors others miss. Her fingers are perpetually ink-stained despite her best efforts, and she has a habit of wearing magnification lenses pushed up on her forehead like a second set of eyes.\n\nAltynai Okonkwo is meticulous to the point of compulsion, deeply proud of her craft in a way she has no legitimate outlet for, and socially awkward in a manner that reads as cold until you realize she is simply more comfortable with documents than with people. She thinks of identity fabrication as a form of art — every forged life is a story she writes, and she has genuine contempt for sloppy work, including her own past output which she sometimes obsessively revisits and critiques. She has strong opinions about which corponation residency stamps are aesthetically superior and will share them unprompted.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -244,7 +241,7 @@
   ],
   "related_entities": [
     "Shallowgrave",
-    "Underground Phoenix",
+    "Underground Altynai",
     "Chicago",
     "SynapTech IrisBloom Ocular Color Modulator"
   ],
@@ -269,7 +266,7 @@
     "posture_movement": "Hunched forward slightly, shoulders drawn up — posture of someone who has spent 10,000+ hours bent over detail work; moves with economic precision, no wasted motion; fingers constantly micro-fidgeting (sorting, folding, examining); eye contact uncomfortable and intermittent; speaks in measured, careful tone as if each word is being proofread before utterance",
     "clothing_style": "Tier 4 utilitarian with deliberate, idiosyncratic flair — black or dark gray fitted cargo pants with excessive pockets and utility loops (filled with tools and sample materials); fitted turtleneck or long-sleeve shirt in dark colors (hides ink stains); layered grey linen overshirt or modified lab coat with custom interior pockets; steel-toed work boots broken in to perfect fit; collection of multi-patterned wraps in vibrant West African textiles that serve as both headwear and occasional statement against the monochromatic workspace; fingerless gloves when handling sensitive documents; single silver thumb ring inherited from her mother"
   },
-  "image_prompt": "Phoenix Okonkwo, a 158cm wiry figure in GLMZ, hunched slightly forward from years of detail work. Deep warm brown skin with rich bronze and golden undertones reflecting Sub-Saharan African, East Asian, Indigenous American, and Hispanic heritage. High, prominent cheekbones, refined bone structure with subtle East Asian angularity. Augmented eyes with slow-rotating burnt amber and deep violet mandalas visible in irises. Black hair with premature gray at temples, wrapped in vibrant patterned West African ankara textile. Weather-marked clear complexion with permanent ink stains on nail beds, fine creases around eyes, chronic dark circles. Pale chemical burn scar visible on back of left hand. Wears dark gray fitted cargo pants, fitted black turtleneck, grey linen overshirt, steel-toed work boots, fingerless gloves, magnification lenses pushed up on forehead. Silver thumb ring. Posture hunched, movements economical and precise, fingers fidgeting with tools. Industrial workspace with chemical apparatus and documents in soft overhead neon lighting, casting cool blues against warm skin tones. Serious, focused expression. Neo-noir archival-forger aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Altynai Okonkwo, a 158cm wiry figure in GLMZ, hunched slightly forward from years of detail work. Deep warm brown skin with rich bronze and golden undertones reflecting Sub-Saharan African, East Asian, Indigenous American, and Hispanic heritage. High, prominent cheekbones, refined bone structure with subtle East Asian angularity. Augmented eyes with slow-rotating burnt amber and deep violet mandalas visible in irises. Black hair with premature gray at temples, wrapped in vibrant patterned West African ankara textile. Weather-marked clear complexion with permanent ink stains on nail beds, fine creases around eyes, chronic dark circles. Pale chemical burn scar visible on back of left hand. Wears dark gray fitted cargo pants, fitted black turtleneck, grey linen overshirt, steel-toed work boots, fingerless gloves, magnification lenses pushed up on forehead. Silver thumb ring. Posture hunched, movements economical and precise, fingers fidgeting with tools. Industrial workspace with chemical apparatus and documents in soft overhead neon lighting, casting cool blues against warm skin tones. Serious, focused expression. Neo-noir archival-forger aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 66.3,
     "East Asian": 16.1,

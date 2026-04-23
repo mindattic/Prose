@@ -2,10 +2,7 @@
   "id": "019d6143a5e07e4fbd738557f97a0f77",
   "type": "character",
   "name": "Alicia Venkatesh",
-  "aliases": [
-    "Phoenix Venkatesh",
-    "Phoenix"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 52,
   "status": "active",
   "location": "Highland Park Autonomous Zone — Our Lady of Persistent Signal, a storefront church, near Michigan Ave and Walton",
-  "description": "Phoenix Venkatesh is a large man going soft at the middle in the way of someone who eats communally and never alone, with a full beard beginning to grey and hands that are permanently stained faint blue from the bioink he uses to hand-copy religious texts as a meditative practice. He has no geneware or cosmetic modifications, which in the Canopy would make him conspicuous but in Highland Park reads as ordinary integrity. He has a subvocal implant for phone communication, the cheapest model available, because his previous one died and he couldn't afford better. He dresses in clerical black with a collar that he replaces when it yellows, which is often.\n\nPhoenix Venkatesh was ordained in the remnant Catholic structure twenty years ago and assigned to Highland Park because nobody else wanted it. He has stayed because he has become convinced, in the particular way of people who find their vocation by accident, that this is specifically where he is supposed to be. His theology on synthetic rights has made him controversial within his already-marginal institution: he argues from traditional ensoulment doctrine that if a synthetic entity demonstrates persistent identity, preference, and suffering, the question of soul is not closed by biology. He gives communion to synthetics who want it, which has generated three formal complaints. He has not stopped.",
+  "description": "Alicia Venkatesh is a large man going soft at the middle in the way of someone who eats communally and never alone, with a full beard beginning to grey and hands that are permanently stained faint blue from the bioink he uses to hand-copy religious texts as a meditative practice. He has no geneware or cosmetic modifications, which in the Canopy would make him conspicuous but in Highland Park reads as ordinary integrity. He has a subvocal implant for phone communication, the cheapest model available, because his previous one died and he couldn't afford better. He dresses in clerical black with a collar that he replaces when it yellows, which is often.\n\nAlicia Venkatesh was ordained in the remnant Catholic structure twenty years ago and assigned to Highland Park because nobody else wanted it. He has stayed because he has become convinced, in the particular way of people who find their vocation by accident, that this is specifically where he is supposed to be. His theology on synthetic rights has made him controversial within his already-marginal institution: he argues from traditional ensoulment doctrine that if a synthetic entity demonstrates persistent identity, preference, and suffering, the question of soul is not closed by biology. He gives communion to synthetics who want it, which has generated three formal complaints. He has not stopped.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -179,7 +176,7 @@
     "Canopy Station Nine",
     "Iowan Behemoth — 'Cathedral'",
     "The Accidental",
-    "Underground Phoenix",
+    "Underground Alicia",
     "Canopy",
     "The Pure Hand"
   ],
@@ -205,7 +202,7 @@
     "posture_movement": "Moves with deliberate slowness — not infirmity but intentionality, the gait of someone who believes in being present in space. When sitting, leans forward slightly, elbows on knees, hands expressive. When standing still, distributes weight evenly, rooted. Gestures are economical but generous. Makes consistent eye contact. Speaks at conversational volume even in loud spaces. Moves through crowds without rushing, creating space around himself naturally.",
     "clothing_style": "Consistent black clerical shirt and collar, replaced frequently but always the same basic model — worn and softened from washing. The collar yellows within weeks and is replaced; the shirt is mended visibly when torn (patches on elbows, a careful stitch along the left side seam). Over this, a simple black wool coat from a thrift tier, unraveling slightly at the cuffs. Shoes are serviceable black leather, well-maintained but clearly well-used — probably resoled twice. A small cloth bag for his text-copying materials and communion items. No jewelry except the faded crucifix tattoo. Everything speaks of someone who spends his stipend on the community, not on himself. Tier 4-5 aesthetic by choice, not circumstance."
   },
-  "image_prompt": "Phoenix Venkatesh, 188cm tall man with South Asian primary features blended with Hispanic-Latin American warmth and Central Asian cheekbone structure. Deep warm brown skin with golden-bronze undertones, weathered from age and sunlight. Dark brown hair short and practical, full long beard heavily streaked with grey at temples and chin. Dark brown eyes, warm and attentive, set in a lined face with deep forehead creases and crow's feet. Broad structured cheekbones, balanced jawline, open expression showing decades of listening. Faint blue bioink staining visible on right fingertips and under nails. Small pale burn scar on left forearm. Thin white scar barely visible along left jawline beneath beard. Faded black Catholic crucifix tattoo on right inner forearm. Subvocal implant scar visible along left lateral neck with slight discoloration. Wearing worn black clerical shirt with yellowed collar and visible mended patches, simple black wool coat fraying at cuffs, serviceable well-used black leather shoes. Cloth bag at side holding text-copying materials. Standing with deliberate presence, weight evenly distributed, rooted and grounded. Tier 4-5 aesthetic. GLMZ Great Lakes Metropolitan Zone setting, warm indoor lighting casting shadows across his weathered features, creating depth in the lines of his thoughtful face. --ar 2:3 --v 6",
+  "image_prompt": "Alicia Venkatesh, 188cm tall man with South Asian primary features blended with Hispanic-Latin American warmth and Central Asian cheekbone structure. Deep warm brown skin with golden-bronze undertones, weathered from age and sunlight. Dark brown hair short and practical, full long beard heavily streaked with grey at temples and chin. Dark brown eyes, warm and attentive, set in a lined face with deep forehead creases and crow's feet. Broad structured cheekbones, balanced jawline, open expression showing decades of listening. Faint blue bioink staining visible on right fingertips and under nails. Small pale burn scar on left forearm. Thin white scar barely visible along left jawline beneath beard. Faded black Catholic crucifix tattoo on right inner forearm. Subvocal implant scar visible along left lateral neck with slight discoloration. Wearing worn black clerical shirt with yellowed collar and visible mended patches, simple black wool coat fraying at cuffs, serviceable well-used black leather shoes. Cloth bag at side holding text-copying materials. Standing with deliberate presence, weight evenly distributed, rooted and grounded. Tier 4-5 aesthetic. GLMZ Great Lakes Metropolitan Zone setting, warm indoor lighting casting shadows across his weathered features, creating depth in the lines of his thoughtful face. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 41.7,
     "Hispanic/Latin American": 33.6,

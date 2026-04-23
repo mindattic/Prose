@@ -2,10 +2,7 @@
   "id": "019d6143a5b77b0a9559e006ad5308f3",
   "type": "character",
   "name": "Diamantino Salazar-Morimoto-Pathak",
-  "aliases": [
-    "Wren Salazar-Morimoto-Pathak",
-    "Wren"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 38,
   "status": "active",
   "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near Milwaukee and North Ave",
-  "description": "Wren Salazar-Morimoto-Pathak is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 38, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — vocal modulator — can replicate any voice after 30 seconds of sample audio — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a courier out of Glassway, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Wren Salazar-Morimoto-Pathak agrees on two things: he is worth the fee, and he is terrible company at dinner.",
+  "description": "Diamantino Salazar-Morimoto-Pathak is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 38, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — vocal modulator — can replicate any voice after 30 seconds of sample audio — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a courier out of Glassway, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Diamantino Salazar-Morimoto-Pathak agrees on two things: he is worth the fee, and he is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.37,
@@ -309,7 +306,7 @@
     "posture_movement": "Never still. Even seated, fingers tap or hands fidget. Walks with economic efficiency — no wasted motion, but the efficiency of someone channeling restlessness into purpose. Eyes track exits and entrances unconsciously. Stands at angles to walls, never center-room. Voice control is deliberate and measured, suggesting active suppression of baseline anxiety.",
     "clothing_style": "Tier 3-4 pragmatism with security contractor undertones. Favors dark, form-fitting synthwear (black or deep charcoal) that doesn't catch light or snag. Reinforced jacket with interior pockets for equipment — could be corp-adjacent tactical wear or high-end street gear, hard to pin down exactly. Gloves most of the time, fingerless or tactical, worn more for hand protection than style. Boots are heavy and scuffed, made for running or kicking. No visible corporate logos, no team affiliation. Everything looks maintained, not fashionable. Minimal jewelry — possibly a neural-link accessible through wrist interface, but nothing decorative."
   },
-  "image_prompt": "GLMZ character portrait of Wren Salazar-Morimoto-Pathak: 178cm tall lean East-Hispanic-South Asian fusion with warm olive-bronze skin and golden undertones, sharp high cheekbones and angular geometric facial structure, hazel eyes with neural interface dilation, dark brown hair with silver temples in close-cropped military cut. Visible 7cm surgical scar from left ear to jaw, burn scar on right hand. Subdermal gunmetal armor plating visible on both forearms with worn scratches, chrome vocal modulator shimmer at neck angle. Black form-fitting synthwear tactical jacket, reinforced and minimal, fingerless tactical gloves, scuffed heavy boots. Standing at three-quarter angle to wall, fidgeting with barely-suppressed restless energy, tracking environment. Pale ashen complexion from stimulant use and irregular sleep. Neon-lit Great Lakes Metropolitan Zone setting with industrial backdrop, cool blue and amber atmospheric lighting, shadows across angular face, photorealistic neo-noir urban aesthetic --ar 2:3 --v 6",
+  "image_prompt": "GLMZ character portrait of Diamantino Salazar-Morimoto-Pathak: 178cm tall lean East-Hispanic-South Asian fusion with warm olive-bronze skin and golden undertones, sharp high cheekbones and angular geometric facial structure, hazel eyes with neural interface dilation, dark brown hair with silver temples in close-cropped military cut. Visible 7cm surgical scar from left ear to jaw, burn scar on right hand. Subdermal gunmetal armor plating visible on both forearms with worn scratches, chrome vocal modulator shimmer at neck angle. Black form-fitting synthwear tactical jacket, reinforced and minimal, fingerless tactical gloves, scuffed heavy boots. Standing at three-quarter angle to wall, fidgeting with barely-suppressed restless energy, tracking environment. Pale ashen complexion from stimulant use and irregular sleep. Neon-lit Great Lakes Metropolitan Zone setting with industrial backdrop, cool blue and amber atmospheric lighting, shadows across angular face, photorealistic neo-noir urban aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 26.9,
     "South Asian": 25.8,

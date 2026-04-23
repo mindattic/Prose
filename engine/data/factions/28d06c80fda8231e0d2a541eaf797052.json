@@ -1,13 +1,13 @@
 {
   "id": "c7be3b067eabab1cc7565d18e7077434",
   "type": "faction",
-  "name": "The Undertow",
+  "name": "The Rip",
   "aliases": [],
   "motto": "Everybody drowns eventually. We decide when.",
-  "description": "The Undertow is an Old Harbor gang of about 60 members that controls the waterfront's most dangerous stretch — the derelict section of shoreline known as the Drowning Mile, where abandoned industrial piers, collapsed seawalls, and flooded basements create a landscape that is half land and half water and entirely lawless. The gang takes its name from the treacherous currents that make the Drowning Mile's waters lethal to the unprepared, and from their preferred method of disposing of enemies.\n\nThe Undertow's primary business is waterborne smuggling — using small boats and submersible drones to move contraband along the coastline, bypassing the port where the Harbor Rats charge tolls. They also control a modest extortion operation targeting the Drowning Mile's desperate inhabitants (people living in partially flooded structures who have nowhere else to go), run an illegal fishing operation that provides food to Old Harbor's poorest residents, and offer a disposal service that the Bleach Boys respect for its simplicity: the ocean asks no questions.\n\nThe gang is hardened by its environment. Undertow members live in the Drowning Mile's worst conditions — wet, cold, exposed to industrial toxins — and this shared hardship creates a bond that more comfortable criminal organizations lack. They are fewer and poorer than many the Gray Zone gangs, but they fight with a ferocity born from having nothing to lose and nowhere to retreat to.",
-  "ideology": "The water takes everything eventually. Until then, survival is all that matters. The Undertow's worldview is shaped by their environment: everything decays, everything floods, and the only thing worth holding onto is the people next to you.",
+  "description": "The Rip is an Old Harbor gang of about 60 members that controls the waterfront's most dangerous stretch — the derelict section of shoreline known as the Drowning Mile, where abandoned industrial piers, collapsed seawalls, and flooded basements create a landscape that is half land and half water and entirely lawless. The gang takes its name from the treacherous currents that make the Drowning Mile's waters lethal to the unprepared, and from their preferred method of disposing of enemies.\n\nThe Rip's primary business is waterborne smuggling — using small boats and submersible drones to move contraband along the coastline, bypassing the port where the Harbor Rats charge tolls. They also control a modest extortion operation targeting the Drowning Mile's desperate inhabitants (people living in partially flooded structures who have nowhere else to go), run an illegal fishing operation that provides food to Old Harbor's poorest residents, and offer a disposal service that the Bleach Boys respect for its simplicity: the ocean asks no questions.\n\nThe gang is hardened by its environment. Rip members live in the Drowning Mile's worst conditions — wet, cold, exposed to industrial toxins — and this shared hardship creates a bond that more comfortable criminal organizations lack. They are fewer and poorer than many the Gray Zone gangs, but they fight with a ferocity born from having nothing to lose and nowhere to retreat to.",
+  "ideology": "The water takes everything eventually. Until then, survival is all that matters. The Rip's worldview is shaped by their environment: everything decays, everything floods, and the only thing worth holding onto is the people next to you.",
   "territory": "The Drowning Mile — a derelict stretch of Old Harbor's waterfront.",
-  "leadership": "A woman called 'Captain' (real name: Nkechi Johansson-Alvarez) who earned the title by being the only person in the Undertow who can navigate the Drowning Mile's currents in total darkness.",
+  "leadership": "A woman called 'Captain' (real name: Nkechi Johansson-Alvarez) who earned the title by being the only person in the Rip who can navigate the Drowning Mile's currents in total darkness.",
   "methods": [
     "Waterborne smuggling along GLMZ's coastline",
     "Submersible drone operations for underwater cargo movement",
@@ -29,7 +29,7 @@
     {
       "name": "The Harbor Rats",
       "type": "rival",
-      "description": "The Undertow's coastline smuggling routes compete with the Rats' port-based operations. The rivalry is violent but constrained by geography — the Rats control the port, the Undertow controls the Drowning Mile, and the space between is contested.",
+      "description": "The Rip's coastline smuggling routes compete with the Rats' port-based operations. The rivalry is violent but constrained by geography — the Rats control the port, the Rip controls the Drowning Mile, and the space between is contested.",
       "tags": [
         "criminal",
         "territorial"
@@ -51,10 +51,10 @@
       "reason": "Provides harbor export routes for Nails cargo"
     }
   ],
-  "narrative_function": "The Undertow is survival at its rawest — a gang that exists because a group of people in the worst conditions imaginable decided to organize rather than die alone.",
+  "narrative_function": "The Rip is survival at its rawest — a gang that exists because a group of people in the worst conditions imaginable decided to organize rather than die alone.",
   "story_hooks": [
-    "The ocean has delivered something to the Drowning Mile — a sealed container from a ship that sank decades ago, containing cargo that multiple powerful factions want and the Undertow has no way to defend.",
-    "Captain Nkechi has discovered a flooded tunnel system beneath the Drowning Mile that connects to the Underworld. This discovery could transform the Undertow's smuggling business — or attract attention that destroys them."
+    "The ocean has delivered something to the Drowning Mile — a sealed container from a ship that sank decades ago, containing cargo that multiple powerful factions want and the Rip has no way to defend.",
+    "Captain Nkechi has discovered a flooded tunnel system beneath the Drowning Mile that connects to the Underworld. This discovery could transform the Rip's smuggling business — or attract attention that destroys them."
   ],
   "tags": [
     "faction",

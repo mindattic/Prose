@@ -3,10 +3,7 @@
   "rating": 70,
   "type": "character",
   "name": "Akshara Sigurdsson-Shimizu",
-  "aliases": [
-    "Haze Sigurdsson-Shimizu",
-    "Haze"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -14,7 +11,7 @@
   "age": 45,
   "status": "active",
   "location": "Geartown — industrial district of chop shops and fabricators, near North Ave and Milwaukee",
-  "description": "Haze Sigurdsson-Shimizu is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 45, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — geneware muscle density treatment — looks natural, hits like chrome — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a street samurai out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nHaze Sigurdsson-Shimizu is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
+  "description": "Akshara Sigurdsson-Shimizu is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 45, her face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — geneware muscle density treatment — looks natural, hits like chrome — and she makes no effort to hide it.\n\nHer entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. She works as a street samurai out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nAkshara Sigurdsson-Shimizu is the kind of runner other runners tell stories about, though the stories vary depending on who she burned last.",
   "psychology": {
     "facet_weights": {
       "wound": 0.99,
@@ -296,7 +293,7 @@
     "posture_movement": "Economical and alert — never fully relaxed, baseline awareness maintained even in cover identity mode. Movement is fluid and precise, minimal wasted motion. When armed or in operational context, posture becomes predatory and coiled. Eye contact duration calibrated; she watches before engaging. Walks with slight forward lean, weight centered on balls of feet — ready for explosive movement",
     "clothing_style": "Tier 3-4 pragmatism — functional streetwear that accommodates concealed weapons and augmentations. Off-duty: loose-fitting long-sleeve synthweave tops (dark colors) that allow subdermal armor to move freely, worn tactical pants with reinforced thigh pockets, scuffed runner boots with reinforced soles. On-contract: armored jacket — unmarked, modular, with integrated holsters. No logos, no corp affiliation visible. Minimal jewelry except functional watch with subdued face. Overall impression: someone who buys clothes to wear, not to signal status"
   },
-  "image_prompt": "Haze Sigurdsson-Shimizu, 2226 neo-noir operative, 173cm athletic frame with lean musculature. Warm deep brown skin with golden undertones reflecting East Asian, Southeast Asian, Sub-Saharan African, and Middle Eastern heritage blend. Almond-shaped amber-brown eyes, prominent cheekbones, defined jawline. Dark brown hair with silver at temples pulled back in tight functional braid. Subdermal armor plating creates subtle geometric ridges visible beneath skin across chest and forearms, scarred and worn. Pale burn scar on left collarbone. Faded claw-rake scars on right forearm. Dark synthweave long-sleeve top, tactical reinforced pants, scuffed runner boots. Posture alert and coiled, weight on balls of feet. Industrial neon lighting casting shadows across her augmented frame. Gritty Great Lakes Metropolitan Zone alleyway setting, rain-slicked pavement, neo-noir urban aesthetics. Mood: predatory readiness, economical precision, dangerous capability. --ar 2:3 --v 6",
+  "image_prompt": "Akshara Sigurdsson-Shimizu, 2226 neo-noir operative, 173cm athletic frame with lean musculature. Warm deep brown skin with golden undertones reflecting East Asian, Southeast Asian, Sub-Saharan African, and Middle Eastern heritage blend. Almond-shaped amber-brown eyes, prominent cheekbones, defined jawline. Dark brown hair with silver at temples pulled back in tight functional braid. Subdermal armor plating creates subtle geometric ridges visible beneath skin across chest and forearms, scarred and worn. Pale burn scar on left collarbone. Faded claw-rake scars on right forearm. Dark synthweave long-sleeve top, tactical reinforced pants, scuffed runner boots. Posture alert and coiled, weight on balls of feet. Industrial neon lighting casting shadows across her augmented frame. Gritty Great Lakes Metropolitan Zone alleyway setting, rain-slicked pavement, neo-noir urban aesthetics. Mood: predatory readiness, economical precision, dangerous capability. --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "East Asian": 42.5,

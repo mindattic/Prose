@@ -2,10 +2,7 @@
   "id": "019d6143a5fe7cbfb0d8ef2662e21ad9",
   "type": "character",
   "name": "Gladys Kettani-Haraldsen",
-  "aliases": [
-    "Fatima Kettani-Haraldsen",
-    "Fatima"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 9,
   "status": "active",
   "location": "Copperhead, near Fullerton and Damen",
-  "description": "Fatima Kettani-Haraldsen is small even for nine, with close-cropped natural hair and enormous dark eyes that seem to be processing information on a continuous loop. Her Barański great-grandmother's pallor didn't quite make it through four generations but left her with an unusual warm-olive undertone beneath her brown skin that makes her look perpetually lit from within. She wears whatever fits and has developed an uncanny eye for what is sturdy versus what merely looks sturdy. She has no geneware and no augs — she is very physically ordinary, which she has learned to use.\n\nThe Copperhead Reclaimers use her as a look-out and occasional distraction because she looks like a lost child, which she also is, though she would be furious at anyone who said so. She has an intense, almost reverent relationship with a cracked data-terminal in the Reclaimers' squat that she has named 'Mbe' and leaves small offerings for — bits of copper wire, interesting pebbles, once a dead battery that she insists the E.L.F. inside appreciated. She is a child who has organized her world into a system of loyalties and debts she tracks with absolute precision.",
+  "description": "Gladys Kettani-Haraldsen is small even for nine, with close-cropped natural hair and enormous dark eyes that seem to be processing information on a continuous loop. Her Barański great-grandmother's pallor didn't quite make it through four generations but left her with an unusual warm-olive undertone beneath her brown skin that makes her look perpetually lit from within. She wears whatever fits and has developed an uncanny eye for what is sturdy versus what merely looks sturdy. She has no geneware and no augs — she is very physically ordinary, which she has learned to use.\n\nThe Copperhead Reclaimers use her as a look-out and occasional distraction because she looks like a lost child, which she also is, though she would be furious at anyone who said so. She has an intense, almost reverent relationship with a cracked data-terminal in the Reclaimers' squat that she has named 'Mbe' and leaves small offerings for — bits of copper wire, interesting pebbles, once a dead battery that she insists the E.L.F. inside appreciated. She is a child who has organized her world into a system of loyalties and debts she tracks with absolute precision.",
   "psychology": {
     "facet_weights": {
       "wound": 0.9,
@@ -195,7 +192,7 @@
     "posture_movement": "Moves with economical precision, minimal wasted motion. Stands with weight on her toes, ready to move. Eyes constantly tracking: people, exits, objects of value. Speaks rarely and quietly, but listens intently. When focused on a task or problem, her entire body goes still.",
     "clothing_style": "Tier 5 salvage aesthetic: mismatched layers, all oversized and worn from previous owners. Cargo pants with multiple pockets (half-empty, half-full of trading items), a faded long-sleeve shirt under a vest made from old climbing harness webbing. Shoes are too large but wrapped tight with wire to stay on. Her only personal item: a length of braided copper wire worn as a bracelet, constantly twisted between her fingers."
   },
-  "image_prompt": "Fatima Kettani-Haraldsen, 125cm tall, slight wiry child in GLMZ Great Lakes Metropolitan Zone. Deep warm bronze skin with golden-amber undertones reflecting North African, Southeast Asian, Sub-Saharan African, and Latin American ancestry blend. High prominent cheekbones, slightly wider face with warm richness, dark nearly-black eyes constantly tracking. Short close-cropped black hair. Wearing oversized Tier 5 salvage layers: faded long-sleeve shirt, climbing harness vest, cargo pants with wire-wrapped oversized shoes. Copper wire bracelet twisted between fingers. Thin white wrist scar, copper-stained fingertips, healed burn mark on left hand. Standing alert on toes, economical posture, ready to move. Neon-lit industrial salvage district, harsh overhead lighting casting dramatic shadows, rain-slicked pavement reflecting blue-red neon. Neo-noir atmosphere, worn survival aesthetic, intense focus. --ar 2:3 --v 6",
+  "image_prompt": "Gladys Kettani-Haraldsen, 125cm tall, slight wiry child in GLMZ Great Lakes Metropolitan Zone. Deep warm bronze skin with golden-amber undertones reflecting North African, Southeast Asian, Sub-Saharan African, and Latin American ancestry blend. High prominent cheekbones, slightly wider face with warm richness, dark nearly-black eyes constantly tracking. Short close-cropped black hair. Wearing oversized Tier 5 salvage layers: faded long-sleeve shirt, climbing harness vest, cargo pants with wire-wrapped oversized shoes. Copper wire bracelet twisted between fingers. Thin white wrist scar, copper-stained fingertips, healed burn mark on left hand. Standing alert on toes, economical posture, ready to move. Neon-lit industrial salvage district, harsh overhead lighting casting dramatic shadows, rain-slicked pavement reflecting blue-red neon. Neo-noir atmosphere, worn survival aesthetic, intense focus. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "North African": 42.9,
     "Southeast Asian": 34.8,

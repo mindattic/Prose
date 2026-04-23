@@ -2,12 +2,9 @@
   "id": "ddcd432e4aebe7db3b3b96d4a7bf913b",
   "name": "Fakir Karunaratne-Appiah",
   "type": "character",
-  "aliases": [
-    "Kofi Karunaratne-Appiah",
-    "Kofi"
-  ],
+  "aliases": [],
   "role": "Private Investigator",
-  "description": "Kofi Karunaratne-Appiah is the PI that fraud investigators dream of and fraudsters have nightmares about — a methodical, meticulous, mathematically minded investigator who specializes in the art of proving that the numbers don't lie, even when people do.\n\nHis professional life is insurance fraud. He works on retainer for three of GLMZ's largest insurance underwriters and two corporate risk assessment firms, investigating claims that statistical analysis has flagged as potentially fraudulent. His cases range from individual claimants faking cyberware injuries to elaborate multi-year fraud operations involving dozens of participants and millions of Quanta. He approaches every case with the same patient methodology: gather the numbers, analyze the patterns, find the anomaly, prove the fraud.\n\nThe mundanity of his work is his greatest asset. Nobody pays attention to the insurance investigator. He moves through corporate offices, medical facilities, repair shops, and financial institutions with the invisibility of someone who belongs everywhere and nowhere. His interviews are so bland that subjects relax and contradict themselves. His reports are so thorough that legal challenges are futile. He is not exciting, not dramatic, and not interested in being either. He is simply very, very good at mathematics, and in a city built on financial transactions, mathematics is power.",
+  "description": "Fakir Karunaratne-Appiah is the PI that fraud investigators dream of and fraudsters have nightmares about — a methodical, meticulous, mathematically minded investigator who specializes in the art of proving that the numbers don't lie, even when people do.\n\nHis professional life is insurance fraud. He works on retainer for three of GLMZ's largest insurance underwriters and two corporate risk assessment firms, investigating claims that statistical analysis has flagged as potentially fraudulent. His cases range from individual claimants faking cyberware injuries to elaborate multi-year fraud operations involving dozens of participants and millions of Quanta. He approaches every case with the same patient methodology: gather the numbers, analyze the patterns, find the anomaly, prove the fraud.\n\nThe mundanity of his work is his greatest asset. Nobody pays attention to the insurance investigator. He moves through corporate offices, medical facilities, repair shops, and financial institutions with the invisibility of someone who belongs everywhere and nowhere. His interviews are so bland that subjects relax and contradict themselves. His reports are so thorough that legal challenges are futile. He is not exciting, not dramatic, and not interested in being either. He is simply very, very good at mathematics, and in a city built on financial transactions, mathematics is power.",
   "affiliation": "Helix Biosystems (mid-level private investigator)",
   "tier": "3",
   "location": "A boring office in Glassway designed to be forgettable — beige walls, standard furniture, nothing that reveals personality, near Milwaukee and North Ave",
@@ -39,7 +36,7 @@
       "description": "A medical professional he consults on healthcare fraud cases — provides the clinical knowledge he lacks"
     },
     {
-      "name": "Thandiwe Karlsen-Boateng",
+      "name": "Hafsteinn Karlsen-Boateng",
       "type": "occasional collaborator",
       "description": "Refers corporate fraud cases down to Cezar when they're beneath her tier — he refers corporate espionage up to her when they're above his"
     }
@@ -91,7 +88,7 @@
     "posture_movement": "Deliberate and economical. Moves with minimal wasted motion. Sits with perfect posture at a terminal but slouches slightly when walking, as if conserving energy for thought. Hands move with precision when gesturing — no flourish, no emphasis, just necessary communication.",
     "clothing_style": "Aggressively forgettable. Gray or navy slacks, white or light blue dress shirts, dark blazers from mid-tier retailers (Nexus Professional, Meridian). No logos, no chrome accents, no smart-fabric displays. Shoes are black leather, well-maintained but unremarkable. Watch is a simple digital with no AR functions — practical, not status-signaling. Dresses for Tier 3 corporate environments deliberately, never standing out."
   },
-  "image_prompt": "Kofi Karunaratne-Appiah, a lean 178cm neo-noir corporate analyst in 2226, warm medium-brown skin with golden undertones blending South Asian, Sub-Saharan African, and Southeast Asian heritage. Sharp, well-defined cheekbones, refined straight nose, dark brown eyes with subtle Southeast Asian eye shape. Black hair with silver at temples, clean-shaven, neutral expression. Wearing crisp light blue dress shirt and dark navy blazer from Nexus Professional, simple digital watch. Seated at a holographic terminal in a Tier 3 corporate office, cool blue-gray lighting casting subtle shadows on his face. Posture perfect but tense, shoulders slightly forward. Minimal augmentation visible. Background shows floor-to-ceiling windows overlooking the Great Lakes Metropolitan Zone skyline at dusk, neon-tinged clouds. Mood: focused, guarded, unremarkable. GLMZ 2200s aesthetic, corporate noir lighting --ar 2:3 --v 6",
+  "image_prompt": "Fakir Karunaratne-Appiah, a lean 178cm neo-noir corporate analyst in 2226, warm medium-brown skin with golden undertones blending South Asian, Sub-Saharan African, and Southeast Asian heritage. Sharp, well-defined cheekbones, refined straight nose, dark brown eyes with subtle Southeast Asian eye shape. Black hair with silver at temples, clean-shaven, neutral expression. Wearing crisp light blue dress shirt and dark navy blazer from Nexus Professional, simple digital watch. Seated at a holographic terminal in a Tier 3 corporate office, cool blue-gray lighting casting subtle shadows on his face. Posture perfect but tense, shoulders slightly forward. Minimal augmentation visible. Background shows floor-to-ceiling windows overlooking the Great Lakes Metropolitan Zone skyline at dusk, neon-tinged clouds. Mood: focused, guarded, unremarkable. GLMZ 2200s aesthetic, corporate noir lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 49,
     "Sub-Saharan African": 35.5,

@@ -2,10 +2,7 @@
   "id": "019d6143a6db7f2f878128abef605d4a",
   "type": "character",
   "name": "Eefje Kristjánsson",
-  "aliases": [
-    "Delta Kristjánsson",
-    "Delta"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 31,
   "status": "active",
   "location": "Shallowgrave — runs his operation from a basement unit below a legitimate nail salon called Copper Chrysalis on Render Street, near Kedzie and Division",
-  "description": "Delta Kristjánsson is lean and slightly stooped, a body that learned to make itself smaller in rooms it didn't belong in. He has warm brown skin with pink undertones, close-cropped dark hair, and eyes that are medically wrong in a way it takes people a moment to identify — his left iris is a geneware violet, his right is original dark brown, and neither pupil dilates at the same rate. He wears clean, nondescript clothing at all times — his one professional conviction is that he never looks like what he is. His hands are his pride: steady, careful, the hands of someone who learned field surgery from pirated Helix Biosystems tutorials and three years of necessity.\n\nSorin is not comfortable with what he does, which makes him more dangerous than someone who is. He has constructed an elaborate ethical framework around his work — he takes from people who consent (usually), never from people who don't know (usually), and he has a sliding scale of payment that genuinely attempts to compensate donors fairly for the Shallowgrave market. He wants to believe he's closer to underground medicine than to predation. This framework cracks visibly when the money gets tight and the clients get impatient, and he knows it cracks, and that knowledge has settled into him as a chronic low-grade self-loathing he medicates with a mild stimulant he synthesizes himself.",
+  "description": "Eefje Kristjánsson is lean and slightly stooped, a body that learned to make itself smaller in rooms it didn't belong in. He has warm brown skin with pink undertones, close-cropped dark hair, and eyes that are medically wrong in a way it takes people a moment to identify — his left iris is a geneware violet, his right is original dark brown, and neither pupil dilates at the same rate. He wears clean, nondescript clothing at all times — his one professional conviction is that he never looks like what he is. His hands are his pride: steady, careful, the hands of someone who learned field surgery from pirated Helix Biosystems tutorials and three years of necessity.\n\nSorin is not comfortable with what he does, which makes him more dangerous than someone who is. He has constructed an elaborate ethical framework around his work — he takes from people who consent (usually), never from people who don't know (usually), and he has a sliding scale of payment that genuinely attempts to compensate donors fairly for the Shallowgrave market. He wants to believe he's closer to underground medicine than to predation. This framework cracks visibly when the money gets tight and the clients get impatient, and he knows it cracks, and that knowledge has settled into him as a chronic low-grade self-loathing he medicates with a mild stimulant he synthesizes himself.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -204,7 +201,7 @@
     "Copper",
     "Electrostatic Adipose Polarization Drone EAPD-2 'Render'",
     "The Pure Hand",
-    "Frost Boudiaf"
+    "Folakemi Boudiaf"
   ],
   "district": "the Gray Zone",
   "physical_description": {
@@ -227,7 +224,7 @@
       "Faint tremor in his hands when holding them still, visible only under close observation"
     ]
   },
-  "image_prompt": "GLMZ, Delta Kristjánsson — lean 172cm tall figure with warm medium-brown skin and golden-honey undertones, complex diaspora features blending Southeast Asian cheekbones with Sub-Saharan African depth and Eastern European bone structure. Mismatched eyes: vivid violet geneware left iris with metallic sheen, dark brown natural right iris. Short dark brown hair, precisely maintained. Clean-shaven with fine tension lines around mouth. Dressed in nondescript charcoal coat, dark synthetic fiber shirt, plain trousers, latex gloves. Slight forward stoop, hands held perfectly still. Standing in dim climate-controlled medical facility or industrial workspace, cool blue-green overhead lighting casting subtle shadows across his distinctive diaspora face. Faint tremor visible in gloved hands. Precise, unsettling posture. Professional and forgettable. Melancholic, precise atmosphere. Neo-noir dystopia, 2200s tech aesthetic --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, Eefje Kristjánsson — lean 172cm tall figure with warm medium-brown skin and golden-honey undertones, complex diaspora features blending Southeast Asian cheekbones with Sub-Saharan African depth and Eastern European bone structure. Mismatched eyes: vivid violet geneware left iris with metallic sheen, dark brown natural right iris. Short dark brown hair, precisely maintained. Clean-shaven with fine tension lines around mouth. Dressed in nondescript charcoal coat, dark synthetic fiber shirt, plain trousers, latex gloves. Slight forward stoop, hands held perfectly still. Standing in dim climate-controlled medical facility or industrial workspace, cool blue-green overhead lighting casting subtle shadows across his distinctive diaspora face. Faint tremor visible in gloved hands. Precise, unsettling posture. Professional and forgettable. Melancholic, precise atmosphere. Neo-noir dystopia, 2200s tech aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Southeast Asian": 53.9,
     "Sub-Saharan African": 20.4,

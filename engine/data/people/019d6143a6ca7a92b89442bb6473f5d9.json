@@ -2,10 +2,7 @@
   "id": "019d6143a6ca7a92b89442bb6473f5d9",
   "type": "character",
   "name": "Bernhard Banerjee-Larsdóttir",
-  "aliases": [
-    "Slate Banerjee-Larsdóttir",
-    "Slate"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 22,
   "status": "active",
   "location": "Old Harbor, mobile cart — regular pitch near the Bay View Docks morning market and Gravesend Basin evening crowd, near Lake Shore and Wacker",
-  "description": "Slate Banerjee-Larsdóttir is twenty-two going on forty-five, with a lean face that looks like it got serious too fast, sharp cheekbones, and eyes that are a little too watchful for someone handing out soup. He has deep brown skin and keeps his hair twisted into small knots he wraps in a length of indigo fabric. He has one cosmetic mod — a faint cat tail, short-furred and charcoal grey, which he got on a dare at eighteen and has made peace with — it curls around his leg when he's nervous, which he considers embarrassing and can't control. He wears a padded work jacket covered in small embroidered patches from places he's never been, bought from a vendor in the Burnished Market.\n\nHe runs his grandmother's cart, ostensibly temporarily, going on two years now. The original plan was six months while she recovered from a surgery; then her recovery stalled, then the medical debt compounded, and now the cart is effectively his. He makes decent money on good days at the docks — his grandmother's broth recipe, which involves a fermented base that takes four days to prepare, has a small and devoted following — and barely enough on bad ones. He is not unhappy, exactly. He is twenty-two and he was supposed to be somewhere else by now and he has not quite grieved that yet.",
+  "description": "Bernhard Banerjee-Larsdóttir is twenty-two going on forty-five, with a lean face that looks like it got serious too fast, sharp cheekbones, and eyes that are a little too watchful for someone handing out soup. He has deep brown skin and keeps his hair twisted into small knots he wraps in a length of indigo fabric. He has one cosmetic mod — a faint cat tail, short-furred and charcoal grey, which he got on a dare at eighteen and has made peace with — it curls around his leg when he's nervous, which he considers embarrassing and can't control. He wears a padded work jacket covered in small embroidered patches from places he's never been, bought from a vendor in the Burnished Market.\n\nHe runs his grandmother's cart, ostensibly temporarily, going on two years now. The original plan was six months while she recovered from a surgery; then her recovery stalled, then the medical debt compounded, and now the cart is effectively his. He makes decent money on good days at the docks — his grandmother's broth recipe, which involves a fermented base that takes four days to prepare, has a small and devoted following — and barely enough on bad ones. He is not unhappy, exactly. He is twenty-two and he was supposed to be somewhere else by now and he has not quite grieved that yet.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -233,7 +230,7 @@
     "Big Rig",
     "Indigo",
     "Harbor Fish Shack",
-    "Slate",
+    "Bernhard",
     "Cargo Tacos"
   ],
   "district": "Old Harbor",
@@ -257,7 +254,7 @@
     "posture_movement": "Hunched slightly forward, as if perpetually leaning toward a cart counter. Hands move with precision and efficiency—trained by four days of broth preparation and countless transactions. Eyes dart often, scanning for customers, weather changes, trouble. When standing still, weight shifts to one foot; the other leg slightly bent, ready to move. The tail twitches when he's thinking hard or stressed, which he's aware of and resents.",
     "clothing_style": "Padded grey work jacket (synthetic insulation, worn but maintained) covered entirely in small embroidered patches from places he's never been—purchased piecemeal from Burnished Market vendors. Each patch is a different size and style: neon stitching on matte fabric, retro travel logos, fictional city names. Under the jacket: plain grey or cream thermal shirt, frequently stained with broth splatter despite his care. Black reinforced work pants with utility pockets. Waterproof apron when at the cart. Worn canvas slip-on shoes with good tread. A thin indigo string bracelet that matches his hair wrap. No jewellery. Tier 4 working-class aesthetic—functional, carefully maintained, slightly personalized as a quiet form of resistance."
   },
-  "image_prompt": "Slate Banerjee-Larsdóttir, mixed-heritage neo-noir character, 173cm lean wiry build with sun-darkened golden-brown skin blended from Southeast Asian, South Asian, Hispanic/Latin American, Pacific Islander, and Sub-Saharan African ancestry. High defined cheekbones, strong jawline, deep-set brown eyes with gentle epicanthic folds, fuller lips. Shoulder-length black locs wrapped in indigo fabric trailing down back. Small charcoal-grey cat tail extending from spine, soft and groomed. Wearing worn padded grey work jacket covered in mismatched embroidered patches—neon stitching, retro logos, fictional city names. Plain cream thermal shirt beneath, black utility work pants, worn canvas shoes. Indigo string bracelet. Hunched posture as if perpetually leaning toward a cart counter. Eyes squinted from dock work, faint sun damage around mouth and eyes. Faint steam burn marks visible on inside of forearms. Standing in Great Lakes Metropolitan Zone dockside setting, early morning light, industrial warehouse background, slight fog from water. Serious expression, tail twitching with anxiety. GLMZ, working-class street aesthetic, 8K cinematic --ar 2:3 --v 6",
+  "image_prompt": "Bernhard Banerjee-Larsdóttir, mixed-heritage neo-noir character, 173cm lean wiry build with sun-darkened golden-brown skin blended from Southeast Asian, South Asian, Hispanic/Latin American, Pacific Islander, and Sub-Saharan African ancestry. High defined cheekbones, strong jawline, deep-set brown eyes with gentle epicanthic folds, fuller lips. Shoulder-length black locs wrapped in indigo fabric trailing down back. Small charcoal-grey cat tail extending from spine, soft and groomed. Wearing worn padded grey work jacket covered in mismatched embroidered patches—neon stitching, retro logos, fictional city names. Plain cream thermal shirt beneath, black utility work pants, worn canvas shoes. Indigo string bracelet. Hunched posture as if perpetually leaning toward a cart counter. Eyes squinted from dock work, faint sun damage around mouth and eyes. Faint steam burn marks visible on inside of forearms. Standing in Great Lakes Metropolitan Zone dockside setting, early morning light, industrial warehouse background, slight fog from water. Serious expression, tail twitching with anxiety. GLMZ, working-class street aesthetic, 8K cinematic --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Southeast Asian": 39.6,
     "South Asian": 22.9,

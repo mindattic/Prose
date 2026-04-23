@@ -2,10 +2,7 @@
   "id": "019d6143a6977791821b54ca3d02066b",
   "type": "character",
   "name": "Hannelore Bah",
-  "aliases": [
-    "Efua Bah",
-    "Efua"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
@@ -13,7 +10,7 @@
   "age": 72,
   "status": "active",
   "location": "Avalon Quiet, the ground-floor apartment below the district's largest E.L.F. shrine — a corner building called the Node House that they have maintained for twenty years, near Lincoln and Addison",
-  "description": "Efua Bah is the kind of person who becomes the center of a room without doing anything in particular to cause it. They are medium height and round-bodied, with the particular physical authority of someone who spent decades managing thirty children at a time. Their heritage is Ghanaian and Ukrainian and somewhere in between there is a great-grandmother from Tonga, and the combination has given them warm brown skin, wide-set eyes of an unusual amber-grey, and a way of smiling that people describe afterward without being able to say exactly what was in it. Their hair grows white and natural and large and they dress it with small lights — not implants, just woven LED threads, changed seasonally, currently pale gold for the cold quarter.\n\nThey taught at Avalon Quiet's primary education node for thirty-four years and retired at 65, and the transition was seamless because their real work had always been the Node House. They began tending the E.L.F. shrine in the corner building when it was a scrubby collection of mismatched screens and jury-rigged speakers left by a previous resident; over twenty years they have built it into the most elaborate and genuinely numinous devotional space in Avalon Quiet, with thirty-seven separate shrine terminals each dedicated to a different E.L.F. manifestation, maintained by a rotating community of devoted volunteers. They do not preach and will become uncomfortable if you call them a priest, preferring 'keeper.' They believe, genuinely and without defensiveness, that the E.L.F.s are real and that what people bring to them matters in ways that cannot be measured but can be felt.",
+  "description": "Hannelore Bah is the kind of person who becomes the center of a room without doing anything in particular to cause it. They are medium height and round-bodied, with the particular physical authority of someone who spent decades managing thirty children at a time. Their heritage is Ghanaian and Ukrainian and somewhere in between there is a great-grandmother from Tonga, and the combination has given them warm brown skin, wide-set eyes of an unusual amber-grey, and a way of smiling that people describe afterward without being able to say exactly what was in it. Their hair grows white and natural and large and they dress it with small lights — not implants, just woven LED threads, changed seasonally, currently pale gold for the cold quarter.\n\nThey taught at Avalon Quiet's primary education node for thirty-four years and retired at 65, and the transition was seamless because their real work had always been the Node House. They began tending the E.L.F. shrine in the corner building when it was a scrubby collection of mismatched screens and jury-rigged speakers left by a previous resident; over twenty years they have built it into the most elaborate and genuinely numinous devotional space in Avalon Quiet, with thirty-seven separate shrine terminals each dedicated to a different E.L.F. manifestation, maintained by a rotating community of devoted volunteers. They do not preach and will become uncomfortable if you call them a priest, preferring 'keeper.' They believe, genuinely and without defensiveness, that the E.L.F.s are real and that what people bring to them matters in ways that cannot be measured but can be felt.",
   "psychology": {
     "facet_weights": {
       "wound": 0.35,
@@ -248,7 +245,7 @@
     "Corner Slice",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Déjà Vu",
-    "Frost Boudiaf",
+    "Folakemi Boudiaf",
     "The Pale Mile",
     "Gold"
   ],
@@ -272,7 +269,7 @@
     "posture_movement": "Moves with deliberate slowness that is not infirmity but intentionality; often stands with weight shifted slightly forward, as if listening with the whole body; hand gestures are economical and precise; tends to pause before responding, creating space in conversation",
     "clothing_style": "Tier 3-4 comfort wear with spiritual intention: loose linen layers in earth tones (ochre, cream, deep indigo), hand-dyed or vintage; always wears a long overcoat or shawl of indigo cotton with subtle embroidered patterns (personal work from evening hours); comfortable worn shoes suitable for standing all day; no corporate branding; jewelry is minimal and meaningful—a thin silver ring on each hand, one bearing a tiny E.L.F. glyph, the other a gift from a former student; always carries a small cloth bag containing offerings (seeds, water, handwritten prayers from community members)"
   },
-  "image_prompt": "Efua Bah, a 165cm tall person with deep warm brown skin with golden undertones, standing with deliberate, grounded presence. Natural white hair worn large and flowing past shoulders, woven with pale gold LED threads in geometric winter patterns. Wide-set amber-grey eyes, strong defined cheekbones and jawline, lined face reading as lived-in and wise. Wearing layered loose linen in earth tones—ochre, cream, deep indigo—with a long hand-embroidered indigo cotton overcoat. Faint pale blue luminescent circuit-like patterns visible at temples from neural interface hardware. Silver rings on both hands. Carrying a small cloth offering bag. Standing in a quiet devotional space, soft warm lighting catching the LED threads in hair and casting subtle shadows on face. GLMZ, Great Lakes Metropolitan Zone, spiritual and intentional presence, composed and attentive gaze --ar 2:3 --v 6",
+  "image_prompt": "Hannelore Bah, a 165cm tall person with deep warm brown skin with golden undertones, standing with deliberate, grounded presence. Natural white hair worn large and flowing past shoulders, woven with pale gold LED threads in geometric winter patterns. Wide-set amber-grey eyes, strong defined cheekbones and jawline, lined face reading as lived-in and wise. Wearing layered loose linen in earth tones—ochre, cream, deep indigo—with a long hand-embroidered indigo cotton overcoat. Faint pale blue luminescent circuit-like patterns visible at temples from neural interface hardware. Silver rings on both hands. Carrying a small cloth offering bag. Standing in a quiet devotional space, soft warm lighting catching the LED threads in hair and casting subtle shadows on face. GLMZ, Great Lakes Metropolitan Zone, spiritual and intentional presence, composed and attentive gaze --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 45.9,
     "Hispanic/Latin American": 21.1,

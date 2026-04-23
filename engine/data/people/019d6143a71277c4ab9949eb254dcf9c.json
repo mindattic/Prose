@@ -2,10 +2,7 @@
   "id": "019d6143a71277c4ab9949eb254dcf9c",
   "type": "character",
   "name": "Azucena Sow",
-  "aliases": [
-    "Flux Sow",
-    "Flux"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 28,
   "status": "active",
   "location": "Whitecap — lakefront district, tourist traps over criminal infrastructure, near Wacker and State",
-  "description": "Flux Sow is lean and angular, all sharp edges and visible tension. At 28, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a tech retriever out of Whitecap, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nFlux Sow has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
+  "description": "Azucena Sow is lean and angular, all sharp edges and visible tension. At 28, he has soft features that belie the chrome underneath — people underestimate him once, usually only once. The chrome is visible — neural interface jack at base of skull — standard runner-grade, allows direct ne — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a tech retriever out of Whitecap, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nAzucena Sow has survived long enough in the runner game to be either very good or very lucky, and he cultivates ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.42,
@@ -306,7 +303,7 @@
     "posture_movement": "Stands with minimal wasted position — weight forward on the balls of his feet, ready for quick transition. His movements are economical and controlled, each gesture purposeful. There is a coiled quality to him even at rest, as though the move-by-wire system has encoded constant readiness into muscle memory. He makes eye contact. He doesn't blink as often as baseline humans.",
     "clothing_style": "Tier 3-4 utilitarian runner aesthetic. Black or dark gray synthetic weave jacket with reinforced panels — not armored, but durable. Understated corporate-adjacent pieces underneath: neutral shirts, fitted but not tailored. Dark pants with cargo pockets. Footwear is serious — matte black smartboots with responsive soles for traction and impact absorption. No visible branding, no flashing chrome accessories. Everything is functional. He dresses like someone who might need to move fast, climb, or fight without warning. Minimal jewelry — only a data-thin bracelet on his left wrist, barely visible unless you're looking for it."
   },
-  "image_prompt": "Flux Sow, 2226 neo-noir runner, portrait. Deep warm brown skin with golden iridescent undertones, sharp East Asian-influenced cheekbones blending with broader African ancestry facial structure. Dark brown hair with silver at temples, swept back. 178cm lean angular build with visible move-by-wire musculature. Direct intense deep brown eyes, minimal blinking. Brushed chrome neural interface jack visible at base of skull. Thin white scar on left inner forearm, subtle circuit tattoo on right wrist. Black synthetic weave utilitarian jacket, dark cargo pants, matte black smartboots. Data-thin bracelet. Neon-lit runner environment, moody neo-noir lighting, cold blue and warm amber color grading. Coiled ready posture, predatory precision. Nocturnal intensity. --ar 2:3 --v 6",
+  "image_prompt": "Azucena Sow, 2226 neo-noir runner, portrait. Deep warm brown skin with golden iridescent undertones, sharp East Asian-influenced cheekbones blending with broader African ancestry facial structure. Dark brown hair with silver at temples, swept back. 178cm lean angular build with visible move-by-wire musculature. Direct intense deep brown eyes, minimal blinking. Brushed chrome neural interface jack visible at base of skull. Thin white scar on left inner forearm, subtle circuit tattoo on right wrist. Black synthetic weave utilitarian jacket, dark cargo pants, matte black smartboots. Data-thin bracelet. Neon-lit runner environment, moody neo-noir lighting, cold blue and warm amber color grading. Coiled ready posture, predatory precision. Nocturnal intensity. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "North African": 53.9,
     "Sub-Saharan African": 27.5,

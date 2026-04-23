@@ -3,10 +3,7 @@
   "rating": 70,
   "type": "character",
   "name": "Concepcion Rentería",
-  "aliases": [
-    "Cipher Rentería",
-    "Cipher"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -14,7 +11,7 @@
   "age": 45,
   "status": "active",
   "location": "Old Harbor — repurposed shipping infrastructure turned black market hub, near Michigan Ave South and Cermak",
-  "description": "Cipher Rentería is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 45, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — retractable monofilament whip in left forearm — concealed weapon, devastating in — and he makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — he has the city in his blood, its rhythms in his bones, its cruelty in his expectations. He works as a wheelman out of Old Harbor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Cipher Rentería describe him as a precision instrument — point him at a problem and get out of the way.",
+  "description": "Concepcion Rentería is tall and loose-limbed, moving with the deliberate economy of someone who has trained every motion. At 45, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — retractable monofilament whip in left forearm — concealed weapon, devastating in — and he makes no effort to hide it.\n\nBorn and raised in GLMZ, third generation — he has the city in his blood, its rhythms in his bones, its cruelty in his expectations. He works as a wheelman out of Old Harbor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Concepcion Rentería describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.89,
@@ -279,7 +276,7 @@
     "human"
   ],
   "physical_description": {
-    "heritage": "Northern European (31.9%) / South Asian (24.4%) / Hispanic/Latin American (18.5%) / Eastern European (13.5%) / Sub-Saharan African (11.7%). Cipher's ancestry creates a striking convergence: Northern European bone structure and fair undertones blend with South Asian warmth and facial geometry, Latin American golden midtones, Eastern European pallor in certain lights, and Sub-Saharan richness in skin depth. The result is a face that reads differently depending on angle and lighting—sometimes cool, sometimes warm, always complex.",
+    "heritage": "Northern European (31.9%) / South Asian (24.4%) / Hispanic/Latin American (18.5%) / Eastern European (13.5%) / Sub-Saharan African (11.7%). Concepcion's ancestry creates a striking convergence: Northern European bone structure and fair undertones blend with South Asian warmth and facial geometry, Latin American golden midtones, Eastern European pallor in certain lights, and Sub-Saharan richness in skin depth. The result is a face that reads differently depending on angle and lighting—sometimes cool, sometimes warm, always complex.",
     "height_cm": 188,
     "weight_kg": 82,
     "build": "Lean and loose-limbed with corded muscle definition. Low body fat, long-limbed frame optimized for fluid movement rather than bulk. Shoulders broad but not overdeveloped; everything spare and functional.",
@@ -298,7 +295,7 @@
     "posture_movement": "Moves with deliberate economy of motion. No wasted gesture. Posture upright but not rigid—spine aligned, shoulders relaxed. Walks with measured, ground-eating stride. Stillness is his default state; motion is always purposeful. Eyes track continuously in peripheral vision. Hands remain loose and available.",
     "clothing_style": "Tier 3-4 practical hybrid. Matte-finish aramid-weave jacket (charcoal, no logos) layered over a fitted compression shirt in black. Tactical trousers with reinforced seams and thigh cargo pockets, worn gray. Scuffed military-grade combat boots, black leather, recently maintained. Minimalist smart-watch on right wrist (encrypted, GLMZ-tier infrastructure compatible). No unnecessary ornamentation. Everything serviceable, replaceable, unremarkable."
   },
-  "image_prompt": "Cipher Rentería, 188cm tall lean-muscled operative, mixed-ancestry face with Northern European bone structure softened by South Asian geometry and enriched by Sub-Saharan depth. Warm medium-brown skin with complex undertones, high cheekbones, strong mandible. Short black hair with silver at temples, dark unaugmented eyes. Clean-shaven with surgical scars along right mandible and temple, burn scarring on right forearm. Matte charcoal aramid jacket over black compression shirt, gray tactical trousers, military combat boots. Faint chrome plating visible on forearms beneath skin where blade housings sit. Posture upright and economical, hands loose and ready. Standing in dim GLMZ corridor lit by cool neon-blue emergency strips and warm amber ambient lighting, creating complex shadows across his face. GLMZ, functional and dangerous, utterly unremarkable appearance concealing lethal augmentations. --ar 2:3 --v 6",
+  "image_prompt": "Concepcion Rentería, 188cm tall lean-muscled operative, mixed-ancestry face with Northern European bone structure softened by South Asian geometry and enriched by Sub-Saharan depth. Warm medium-brown skin with complex undertones, high cheekbones, strong mandible. Short black hair with silver at temples, dark unaugmented eyes. Clean-shaven with surgical scars along right mandible and temple, burn scarring on right forearm. Matte charcoal aramid jacket over black compression shirt, gray tactical trousers, military combat boots. Faint chrome plating visible on forearms beneath skin where blade housings sit. Posture upright and economical, hands loose and ready. Standing in dim GLMZ corridor lit by cool neon-blue emergency strips and warm amber ambient lighting, creating complex shadows across his face. GLMZ, functional and dangerous, utterly unremarkable appearance concealing lethal augmentations. --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "Northern European": 31.9,

@@ -2,10 +2,7 @@
   "id": "019d6143a5fc7845baa3839a4121ca39",
   "type": "character",
   "name": "Eyvindur Villalobos",
-  "aliases": [
-    "Sage Villalobos",
-    "Sage"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
@@ -13,7 +10,7 @@
   "age": 27,
   "status": "active",
   "location": "The Lattice — vertical slum built into scaffolding of an unfinished arcology, near Pulaski and Chicago Ave",
-  "description": "Sage Villalobos are tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 27, they have soft features that belie the chrome underneath — people underestimate them once, usually only once. The chrome is visible — subdermal armor plating across torso and forearms — military surplus, scratched  — and they make no effort to hide it.\n\nThey came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see them surpass them. They work as a breacher out of The Lattice, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nSage Villalobos have survived long enough in the runner game to be either very good or very lucky, and they cultivate ambiguity on the topic.",
+  "description": "Eyvindur Villalobos are tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 27, they have soft features that belie the chrome underneath — people underestimate them once, usually only once. The chrome is visible — subdermal armor plating across torso and forearms — military surplus, scratched  — and they make no effort to hide it.\n\nThey came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see them surpass them. They work as a breacher out of The Lattice, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nEyvindur Villalobos have survived long enough in the runner game to be either very good or very lucky, and they cultivate ambiguity on the topic.",
   "psychology": {
     "facet_weights": {
       "wound": 0.67,
@@ -305,7 +302,7 @@
     "posture_movement": "Economical and alert — minimal wasted motion. Shoulders slightly forward, suggesting constant readiness. Moves with deliberate control, never rushed. Eyes track exits and potential threats passively. When seated, positions body for rapid deployment. Speech cadence is measured, few wasted words.",
     "clothing_style": "Tier 3-4 utilitarian — reinforced cargo pants in muted grays or blacks, high-wear synthetic blend. Worn boots with reinforced toe caps and independent ankle support. Layers: undershirt beneath open technical jacket with interior pockets modified for tool/weapon carry. Colors favor grays, blacks, deep blues — allows rapid transition between breacher and civilian cover identity. Fabrics show staining, small burns, fraying consistent with field work. No corporate branding visible. Minimal jewelry except worn silver ring on right middle finger — appears ancestral rather than fashionable."
   },
-  "image_prompt": "Sage Villalobos, tall rawboned operative with deep bronze-gold skin reflecting pan-tropical Hispanic, Southeast Asian, and South Asian ancestry. High cheekbones, defined jaw, warm brown eyes with subtle epicanthic character. Short dark brown hair with auburn undertones, unstyled. Three pale rake scars across left cheekbone, burn scar on right collarbone. Military subdermal armor plating visible across torso and forearms, scratched chrome. Worn utilitarian jacket over cargo pants, dark colors, reinforced boots. Economical posture, alert bearing, minimal wasted motion. GLMZ GLMZ operative, gritty industrial setting, harsh neon and shadow lighting, moody and dangerous. --ar 2:3 --v 6",
+  "image_prompt": "Eyvindur Villalobos, tall rawboned operative with deep bronze-gold skin reflecting pan-tropical Hispanic, Southeast Asian, and South Asian ancestry. High cheekbones, defined jaw, warm brown eyes with subtle epicanthic character. Short dark brown hair with auburn undertones, unstyled. Three pale rake scars across left cheekbone, burn scar on right collarbone. Military subdermal armor plating visible across torso and forearms, scratched chrome. Worn utilitarian jacket over cargo pants, dark colors, reinforced boots. Economical posture, alert bearing, minimal wasted motion. GLMZ GLMZ operative, gritty industrial setting, harsh neon and shadow lighting, moody and dangerous. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 66,
     "Southeast Asian": 10.8,

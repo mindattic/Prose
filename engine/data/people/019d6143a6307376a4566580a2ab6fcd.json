@@ -4,10 +4,7 @@
   "vote_count": 1,
   "type": "character",
   "name": "Clemente Tran",
-  "aliases": [
-    "Quinn Tran",
-    "Quinn"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -15,7 +12,7 @@
   "age": 24,
   "status": "active",
   "location": "Mexicantown Libre, the Arroyo Block community childcare center (a converted ground-floor retail unit in a residential stack), near Ashland and Division",
-  "description": "Quinn Tran is slight and quick, with a long face, deep-set dark eyes, and tawny-brown skin that freckles across the nose in summer. She has color-changing hair (geneware) that she keeps short and lets cycle between whatever she feels like — currently a slow rotation from copper to emerald that takes about eight hours per cycle. She moves through the childcare space with a distinctive economy of motion, always oriented toward the highest-need point in the room, a habit so ingrained she does it at parties.\n\nShe is twenty-four and has been doing this work since she was eighteen and too old for the same creche herself. She is not sentimental about children — she finds them genuinely interesting and often funnier than adults — but she has no illusions about the structural underfunding that defines every day of her work. She earns near-UBC wages for a job that requires genuine skill and drains her emotionally in ways she is still learning to manage. She has an analytical streak that people tend to underestimate because of her age and the nature of her work.",
+  "description": "Clemente Tran is slight and quick, with a long face, deep-set dark eyes, and tawny-brown skin that freckles across the nose in summer. She has color-changing hair (geneware) that she keeps short and lets cycle between whatever she feels like — currently a slow rotation from copper to emerald that takes about eight hours per cycle. She moves through the childcare space with a distinctive economy of motion, always oriented toward the highest-need point in the room, a habit so ingrained she does it at parties.\n\nShe is twenty-four and has been doing this work since she was eighteen and too old for the same creche herself. She is not sentimental about children — she finds them genuinely interesting and often funnier than adults — but she has no illusions about the structural underfunding that defines every day of her work. She earns near-UBC wages for a job that requires genuine skill and drains her emotionally in ways she is still learning to manage. She has an analytical streak that people tend to underestimate because of her age and the nature of her work.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -197,7 +194,7 @@
     "posture_movement": "Economical movement with constant low-level scanning of the environment. Stands balanced as if ready to move in any direction. Even at rest, her attention distributes across multiple points — a habit carried from childcare into all contexts. Moves quickly but never frantically. Sits upright, rarely fully relaxes posture.",
     "clothing_style": "Tier 4 practical — durable, washable, functional. Cotton and synthetic blend work clothes: fitted long-sleeve shirt or lightweight sweater (in muted earth tones or jewel tones that complement her hair cycle), dark cargo pants or work leggings with deep pockets. Practical slip-on shoes (canvas or synthetic). No logos or brand signaling. Occasionally wears a lightweight utility jacket over everything. Minimal jewelry — possibly a simple bracelet or watch. Everything is chosen for durability and ease of cleaning. Thrift or secondhand sourcing evident in fit/styling."
   },
-  "image_prompt": "Quinn Tran, 162cm lean wiry frame, warm golden-tan complexion with honeyed undertones blending Southeast Asian, East Asian, Hispanic, South Asian, Sub-Saharan African and Middle Eastern heritage, moderately angular face with prominent cheekbones and deep brown eyes, short textured hair with color-cycling geneware shifting copper-to-emerald spectrum currently mid-cycle toward emerald, practical Tier 4 clothing in muted earth and jewel tones, dark cargo pants, worn canvas shoes, faint hand scars from childcare work visible, economical posture with alert environmental scanning, GLMZ Great Lakes Metropolitan Zone, cool neon ambient lighting with warm practical work-space setting, focused determined expression, documentary-style portrait --ar 2:3 --v 6",
+  "image_prompt": "Clemente Tran, 162cm lean wiry frame, warm golden-tan complexion with honeyed undertones blending Southeast Asian, East Asian, Hispanic, South Asian, Sub-Saharan African and Middle Eastern heritage, moderately angular face with prominent cheekbones and deep brown eyes, short textured hair with color-cycling geneware shifting copper-to-emerald spectrum currently mid-cycle toward emerald, practical Tier 4 clothing in muted earth and jewel tones, dark cargo pants, worn canvas shoes, faint hand scars from childcare work visible, economical posture with alert environmental scanning, GLMZ Great Lakes Metropolitan Zone, cool neon ambient lighting with warm practical work-space setting, focused determined expression, documentary-style portrait --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "Southeast Asian": 33.4,

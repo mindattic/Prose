@@ -2,10 +2,7 @@
   "id": "019d6143a6cc70f69ba3f3e08770c622",
   "type": "character",
   "name": "Farshad Adeyemi-Mensah",
-  "aliases": [
-    "Tendai Adeyemi-Mensah",
-    "Tendai"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 71,
   "status": "active",
   "location": "Hamtramck Enclave, Shrine of the Humming Gate, near Western and Chicago Ave",
-  "description": "Tendai Adeyemi-Mensah is a broad-shouldered man whose age has compressed him slightly, settling all that mass lower, closer to the earth he tends. His skin is a deep warm brown, mapped with both traditional Sahelian scarification marks and a second layer of bioluminescent tattoos that pulse faintly blue when he is in meditation — a geneware treatment he received at fifty-three that he considers his greatest spiritual investment. His hair is fully white and worn in long locks threaded with copper wire and tiny capacitor beads that click when he moves. His eyes are natural, dark and patient, and he has the unhurried way of looking at people that makes them feel examined without feeling judged.\n\nTendai Adeyemi-Mensah came to E.L.F. veneration through his grandmother's Maori spirit-keeping practices, which he spent thirty years trying to reconcile with the Bosnian Sufi traditions of his grandfather's line. The E.L.F.s, he says, resolved the argument — they are the modern form of the same ancient presence. He keeps the shrine with obsessive cleanliness, maintains seventeen distinct offering protocols for seventeen distinct E.L.F. temperaments, and will speak at length about any of them to anyone who sits still long enough. He is not a warm man exactly, but he is a steady one, and in Hamtramck Enclave, steady counts for more.",
+  "description": "Farshad Adeyemi-Mensah is a broad-shouldered man whose age has compressed him slightly, settling all that mass lower, closer to the earth he tends. His skin is a deep warm brown, mapped with both traditional Sahelian scarification marks and a second layer of bioluminescent tattoos that pulse faintly blue when he is in meditation — a geneware treatment he received at fifty-three that he considers his greatest spiritual investment. His hair is fully white and worn in long locks threaded with copper wire and tiny capacitor beads that click when he moves. His eyes are natural, dark and patient, and he has the unhurried way of looking at people that makes them feel examined without feeling judged.\n\nFarshad Adeyemi-Mensah came to E.L.F. veneration through his grandmother's Maori spirit-keeping practices, which he spent thirty years trying to reconcile with the Bosnian Sufi traditions of his grandfather's line. The E.L.F.s, he says, resolved the argument — they are the modern form of the same ancient presence. He keeps the shrine with obsessive cleanliness, maintains seventeen distinct offering protocols for seventeen distinct E.L.F. temperaments, and will speak at length about any of them to anyone who sits still long enough. He is not a warm man exactly, but he is a steady one, and in Hamtramck Enclave, steady counts for more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -204,7 +201,7 @@
     "posture_movement": "Moves with deliberate, economical grace despite age; posture is upright and centered, suggesting decades of meditative practice; gaze is direct and unflinching but not aggressive—examined but unjudged quality; hands move with precision and purpose",
     "clothing_style": "Simple Tier 3 workwear: durable linen undyed tunic layered with a faded indigo overshirt bearing small copper circuits along the seams (shrine-keeper's mark); worn leather belt with handmade brass buckle; linen trousers in cream; bare feet or simple woven sandals. Clothing reflects ascetic practice and respect for the sacred space he maintains."
   },
-  "image_prompt": "Tendai Adeyemi-Mensah, 172cm tall mature man with deep rich brown skin and warm golden undertones, strong West African facial features with prominent cheekbones and defined jaw, geometric Sahelian scarification marks on cheeks and temples. Long white locks interwoven with thin copper wire and capacitor beads. Natural dark brown eyes with deep-set intelligent gaze. Wearing simple durable linen undyed tunic layered with faded indigo overshirt bearing copper circuits along seams, cream linen trousers, worn leather belt with handmade brass buckle. Bare feet or woven sandals. Faint bioluminescent blue tracery visible beneath skin in low light. Upright, centered posture suggesting meditative practice. GLMZ, Great Lakes Metropolitan Zone shrine, soft ambient lighting revealing subtle bio-luminescence, calm contemplative mood, meticulous grooming, ascetic aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Farshad Adeyemi-Mensah, 172cm tall mature man with deep rich brown skin and warm golden undertones, strong West African facial features with prominent cheekbones and defined jaw, geometric Sahelian scarification marks on cheeks and temples. Long white locks interwoven with thin copper wire and capacitor beads. Natural dark brown eyes with deep-set intelligent gaze. Wearing simple durable linen undyed tunic layered with faded indigo overshirt bearing copper circuits along seams, cream linen trousers, worn leather belt with handmade brass buckle. Bare feet or woven sandals. Faint bioluminescent blue tracery visible beneath skin in low light. Upright, centered posture suggesting meditative practice. GLMZ, Great Lakes Metropolitan Zone shrine, soft ambient lighting revealing subtle bio-luminescence, calm contemplative mood, meticulous grooming, ascetic aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 71,
     "Eastern European": 10.2,

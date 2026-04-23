@@ -2,10 +2,7 @@
   "id": "019d6143a6d5708ea3947b74d69d206a",
   "type": "character",
   "name": "Bariga Malhotra",
-  "aliases": [
-    "Vale Malhotra",
-    "Vale"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 9,
   "status": "active",
   "location": "The Narrows, Blackpipe Corridor, near Milwaukee and North Ave",
-  "description": "Vale Malhotra is small even for nine, with deep brown skin mapped by old scrapes and one faded chemical burn along her left forearm she got from a leaking pipe in the Blackpipe tunnels. Her hair is coiled tight and usually stuffed under a too-large knit cap she refuses to remove. Her eyes are large and very dark, permanently watchful, the way only children who sleep lightly develop. She has geneware cat-whisker sensory implants — not her choice, inherited from her mother — and they twitch involuntarily when she's nervous, which other kids tease her about.\n\nVale Malhotra runs messages between the Blackpipe fences and the Narrows stall-vendors, earning a few Φ per run. She's illiterate in formal script but has memorized dozens of symbols by shape and can navigate the Corridor's maze of maintenance corridors better than most adults. She laughs easily and loudly but goes very quiet the instant something feels wrong — other runners have learned to watch her like a weather vane. She has a fierce attachment to a cracked ELF shrine wedged in a drainage alcove that she tends with water-drop offerings every morning.",
+  "description": "Bariga Malhotra is small even for nine, with deep brown skin mapped by old scrapes and one faded chemical burn along her left forearm she got from a leaking pipe in the Blackpipe tunnels. Her hair is coiled tight and usually stuffed under a too-large knit cap she refuses to remove. Her eyes are large and very dark, permanently watchful, the way only children who sleep lightly develop. She has geneware cat-whisker sensory implants — not her choice, inherited from her mother — and they twitch involuntarily when she's nervous, which other kids tease her about.\n\nBariga Malhotra runs messages between the Blackpipe fences and the Narrows stall-vendors, earning a few Φ per run. She's illiterate in formal script but has memorized dozens of symbols by shape and can navigate the Corridor's maze of maintenance corridors better than most adults. She laughs easily and loudly but goes very quiet the instant something feels wrong — other runners have learned to watch her like a weather vane. She has a fierce attachment to a cracked ELF shrine wedged in a drainage alcove that she tends with water-drop offerings every morning.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -198,7 +195,7 @@
     "posture_movement": "Moves with practiced economy—crouching, sliding, climbing rather than walking. Head held slightly tilted, as if always listening. Goes from loose and laughing to perfectly still and silent in milliseconds when danger is sensed. Fidgets with the brim of her cap when anxious.",
     "clothing_style": "Tier 5 street kid. Oversized knit cap (charcoal, holes patched with thread). Mismatched compression layer under a faded gray tech-fabric hoodie two sizes too large, stolen or scavenged. Cargo pants with more pockets than seams intact, one leg cuffed shorter where a burn melted the original hem. Worn synthetic sneakers held together with e-tape, sole separating at the toe. A length of cord around her waist holds a water bottle and a small shrine-maintenance kit. No jewelry except a twisted bit of copper wire looped around her wrist—a talisman or marker."
   },
-  "image_prompt": "Vale Malhotra, 125cm tall wiry street kid, warm golden-brown skin with olive undertones blending South Asian, Southeast Asian, East Asian, and Central Asian heritage. Angular Pan-Asian face with defined cheekbones, very dark brown nearly-black eyes with subtle East Asian fold, natural deep black hair hidden under oversized charcoal knit cap pulled low. Faded chemical burn scar on left forearm, silver sensory whisker filaments along cheekbones visible in light. Wears two-sizes-too-large faded gray tech-fabric hoodie, mismatched compression layer, torn cargo pants cuffed unevenly, worn synthetic sneakers held with e-tape. Copper wire talisman looped around wrist. Crouching pose, head tilted as if listening, perpetually alert expression. Dark industrial setting, neon glow from distance, moody GLMZ Great Lakes Metropolitan Zone aesthetic, shadow and ambient light catching silver augmentations --ar 2:3 --v 6",
+  "image_prompt": "Bariga Malhotra, 125cm tall wiry street kid, warm golden-brown skin with olive undertones blending South Asian, Southeast Asian, East Asian, and Central Asian heritage. Angular Pan-Asian face with defined cheekbones, very dark brown nearly-black eyes with subtle East Asian fold, natural deep black hair hidden under oversized charcoal knit cap pulled low. Faded chemical burn scar on left forearm, silver sensory whisker filaments along cheekbones visible in light. Wears two-sizes-too-large faded gray tech-fabric hoodie, mismatched compression layer, torn cargo pants cuffed unevenly, worn synthetic sneakers held with e-tape. Copper wire talisman looped around wrist. Crouching pose, head tilted as if listening, perpetually alert expression. Dark industrial setting, neon glow from distance, moody GLMZ Great Lakes Metropolitan Zone aesthetic, shadow and ambient light catching silver augmentations --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 63.8,
     "Southeast Asian": 15.8,

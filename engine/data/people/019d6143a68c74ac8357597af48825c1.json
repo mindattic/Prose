@@ -2,10 +2,7 @@
   "id": "019d6143a68c74ac8357597af48825c1",
   "type": "character",
   "name": "Bernarda Erikstad-Calvillo",
-  "aliases": [
-    "Slate Erikstad-Calvillo",
-    "Slate"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 34,
   "status": "active",
   "location": "The Circuit, Gage Circuit sublevel research cluster, near sub-level access near State and Van Buren",
-  "description": "Slate Erikstad-Calvillo is thin in the way of people who forget to eat, with dark umber skin and dense, slightly overgrown natural hair that he periodically flattens with a hand before presentations and then immediately forgets about. His most notable feature is bioluminescent skin threading — a geneware modification that causes faint blue-green lines to trace his forearms and neck along vascular pathways when his blood pressure rises, which happens frequently during arguments, which happen frequently. He does not know he has it most of the time; colleagues have learned to read it as a mood indicator. He wears the same brand of lightweight gray clothes in rotation and has been told by three separate people that he should care more about this.\n\nHe is the kind of person who is genuinely good at two things — abstract theoretical mathematics and moral catastrophizing — and has somehow turned both into a career. His research focuses on the ethical frameworks governing E.L.F. autonomy and whether corponation AI systems are, in any meaningful sense, persons. He is not a radical and does not consider himself one, which is something radicals find infuriating and corporations find reassuring, both incorrectly. He is simply a person who follows logical chains wherever they lead and then stands at the end looking uncomfortable about where he arrived.",
+  "description": "Bernarda Erikstad-Calvillo is thin in the way of people who forget to eat, with dark umber skin and dense, slightly overgrown natural hair that he periodically flattens with a hand before presentations and then immediately forgets about. His most notable feature is bioluminescent skin threading — a geneware modification that causes faint blue-green lines to trace his forearms and neck along vascular pathways when his blood pressure rises, which happens frequently during arguments, which happen frequently. He does not know he has it most of the time; colleagues have learned to read it as a mood indicator. He wears the same brand of lightweight gray clothes in rotation and has been told by three separate people that he should care more about this.\n\nHe is the kind of person who is genuinely good at two things — abstract theoretical mathematics and moral catastrophizing — and has somehow turned both into a career. His research focuses on the ethical frameworks governing E.L.F. autonomy and whether corponation AI systems are, in any meaningful sense, persons. He is not a radical and does not consider himself one, which is something radicals find infuriating and corporations find reassuring, both incorrectly. He is simply a person who follows logical chains wherever they lead and then stands at the end looking uncomfortable about where he arrived.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -231,7 +228,7 @@
     "Carrion Defense Works Entropic Shotgun ES-4 'Ragnarok'",
     "Circuit",
     "Street Custom 'Four Horsemen' Pipe Pepperbox",
-    "Slate",
+    "Bernarda",
     "Gravimetric Collapse Charge GCC-9",
     "Lead"
   ],
@@ -255,7 +252,7 @@
     "posture_movement": "Sits hunched forward when engaged in conversation or work, elbows on table, fingers steepled or moving through abstract gestures. Walks with purpose but without particular confidence, as if traversing from one idea to another rather than through physical space. Frequently pauses mid-sentence, eyes unfocused, before continuing. Fidgets with sleeves or runs hand through hair when uncomfortable.",
     "clothing_style": "Uniform rotation of lightweight gray technical wear — Tier 2 research-grade garments from a minor corpo vendor, functional and forgettable. Loose gray crewneck or henley over gray utility pants or lightweight trousers. Worn thermal-regulation sneakers in muted tones. No accessories except occasionally a faded wristband with a research institute logo. The effect is deliberately understated to the point of invisibility — clothes chosen for function and repeatability rather than expression."
   },
-  "image_prompt": "Slate Erikstad-Calvillo, 178cm lean intellectual frame, warm golden-bronze skin with global ancestry blend — Southeast Asian cheekbones, Latin jaw structure, Northern European planes. Natural black hair with gray threading, medium length, slightly overgrown. Dark warm brown eyes with tired circles. Wearing loose gray technical henley and utility pants, muted sneakers. Hunched forward posture in concentration. Bioluminescent blue-green vascular threading faintly visible along forearms and left neck, subtly glowing. Neural interface port barely visible at skull base under hair. Clean-shaven. GLMZ research facility setting, cool overhead LED lighting with warm accent light catching the bioluminescent augmentation, creating subtle glow against gray clothing. Mood: intellectual intensity mixed with underlying anxiety. Sharp focus on face and hands in gesture. GLMZ 2200s geneware aesthetic, corporate tech noir atmosphere. --ar 2:3 --v 6",
+  "image_prompt": "Bernarda Erikstad-Calvillo, 178cm lean intellectual frame, warm golden-bronze skin with global ancestry blend — Southeast Asian cheekbones, Latin jaw structure, Northern European planes. Natural black hair with gray threading, medium length, slightly overgrown. Dark warm brown eyes with tired circles. Wearing loose gray technical henley and utility pants, muted sneakers. Hunched forward posture in concentration. Bioluminescent blue-green vascular threading faintly visible along forearms and left neck, subtly glowing. Neural interface port barely visible at skull base under hair. Clean-shaven. GLMZ research facility setting, cool overhead LED lighting with warm accent light catching the bioluminescent augmentation, creating subtle glow against gray clothing. Mood: intellectual intensity mixed with underlying anxiety. Sharp focus on face and hands in gesture. GLMZ 2200s geneware aesthetic, corporate tech noir atmosphere. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Northern European": 24,
     "Middle Eastern": 22.9,

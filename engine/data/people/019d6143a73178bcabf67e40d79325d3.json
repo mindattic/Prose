@@ -2,10 +2,7 @@
   "id": "019d6143a73178bcabf67e40d79325d3",
   "type": "character",
   "name": "Hajar Nazari",
-  "aliases": [
-    "Soraya Nazari",
-    "Soraya"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 54,
   "status": "active",
   "location": "the Gray Zone — the Masjid al-Barzakh, a converted warehouse space above a water recycling plant, near Halsted and Division",
-  "description": "Soraya Nazari is a compact, carefully composed man with close-trimmed gray at his temples and a beard he trims every third day without fail. His eyes are his most striking feature — he had them modded fifteen years ago with geometric patterned irises, deep green lattices that his congregation debated fiercely and that he defended from the pulpit as 'the geometry of creation written in the body.' He dresses simply, always clean despite the Gray Zone's perpetual grime, and his left hand is extensively modified: a chrome prosthetic from the wrist down, its surface etched with Quranic verses in his own handwriting before the plating was laid, so the words are pressed into the metal from beneath.\n\nHe is a man of precise intellectual convictions that he holds without brittleness — he has changed his mind publicly three times in twenty years and considers it among his proudest acts. His masjid serves roughly three hundred regular worshippers across a tangle of traditions: Sunni, Ismaili, Ahmadiyya, and several families who blend Islamic practice with E.L.F. veneration in ways that Soraya Nazari engages with theologically rather than dismissing. He moonlights as a chrome prayer practitioner, offering a practice that treats augmentation as a form of devotion — the modification of the God-given body as an act of trust rather than transgression.",
+  "description": "Hajar Nazari is a compact, carefully composed man with close-trimmed gray at his temples and a beard he trims every third day without fail. His eyes are his most striking feature — he had them modded fifteen years ago with geometric patterned irises, deep green lattices that his congregation debated fiercely and that he defended from the pulpit as 'the geometry of creation written in the body.' He dresses simply, always clean despite the Gray Zone's perpetual grime, and his left hand is extensively modified: a chrome prosthetic from the wrist down, its surface etched with Quranic verses in his own handwriting before the plating was laid, so the words are pressed into the metal from beneath.\n\nHe is a man of precise intellectual convictions that he holds without brittleness — he has changed his mind publicly three times in twenty years and considers it among his proudest acts. His masjid serves roughly three hundred regular worshippers across a tangle of traditions: Sunni, Ismaili, Ahmadiyya, and several families who blend Islamic practice with E.L.F. veneration in ways that Hajar Nazari engages with theologically rather than dismissing. He moonlights as a chrome prayer practitioner, offering a practice that treats augmentation as a form of devotion — the modification of the God-given body as an act of trust rather than transgression.",
   "psychology": {
     "facet_weights": {
       "wound": 0.45,
@@ -214,7 +211,7 @@
     "posture_movement": "Upright, composed, economical in gesture. Moves with deliberate slowness — no wasted motion. Hands gesture when speaking but the chrome left hand moves with slightly more caution, as if aware of its weight and edge. When sitting, he sits fully upright rather than slouching. When standing, feet shoulder-width apart, grounded.",
     "clothing_style": "Simple, clean, Tier 3 practical. Usually a loose cotton thobe or simple long-sleeved shirt in cream, off-white, or pale gray — fabric choices that hide the Gray Zone's dust. Dark trousers, well-maintained. Leather prayer cap (kufi) worn during formal hours, removed during informal counsel. No jewelry except occasionally a very old silver ring on his right hand. Shoes are sensible, worn but cared for. Clothing never bearing corporate logos or tier markers — deliberately unmarked."
   },
-  "image_prompt": "Soraya Nazari, Middle Eastern man with golden-olive complexion and warm amber undertones, 168cm, lean and compact build. Dark brown hair with silver temples, close-trimmed geometric beard, deep green geometric-patterned eyes. Wearing simple cream cotton thobe and dark trousers, sensible worn leather shoes. Left hand is matte patina-green chrome prosthetic with etched Quranic verse relief patterns. Fine prayer-line callus visible on forehead, small pale burn scar on right forearm. Upright posture, deliberate composed movement. Standing in industrial the Gray Zone lighting with soft shadows emphasizing angular face and the greenish patina of the chrome hand. GLMZ setting, low-key warm lighting, contemplative mood. --ar 2:3 --v 6",
+  "image_prompt": "Hajar Nazari, Middle Eastern man with golden-olive complexion and warm amber undertones, 168cm, lean and compact build. Dark brown hair with silver temples, close-trimmed geometric beard, deep green geometric-patterned eyes. Wearing simple cream cotton thobe and dark trousers, sensible worn leather shoes. Left hand is matte patina-green chrome prosthetic with etched Quranic verse relief patterns. Fine prayer-line callus visible on forehead, small pale burn scar on right forearm. Upright posture, deliberate composed movement. Standing in industrial the Gray Zone lighting with soft shadows emphasizing angular face and the greenish patina of the chrome hand. GLMZ setting, low-key warm lighting, contemplative mood. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Middle Eastern": 80.8,
     "Hispanic/Latin American": 11.1,

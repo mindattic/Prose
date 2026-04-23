@@ -2,10 +2,7 @@
   "id": "019d6143a6377d78a14438af63cae902",
   "type": "character",
   "name": "Abeesh Dalgaard-Arredondo",
-  "aliases": [
-    "Soren Dalgaard-Arredondo",
-    "Soren"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 13,
   "status": "active",
   "location": "The Narrows, Copperhead border, near North Ave and Damen",
-  "description": "Soren Dalgaard-Arredondo is all sharp angles and nervous energy, a thin boy with dark olive skin, a shaved head that's grown out uneven, and a jaw that's set in a permanent expression somewhere between defiance and plea. His left eye has a cosmetic mod — a slit pupil in amber, gift from an older gang prospect who found it in a pawn bin and thought it was funny — that he wears with more pride than anything else he owns. He has a long scar across his right palm that he tells different stories about every time someone asks. He smells of the cheap rehydrated noodles sold from the Narrows carts, and his jacket has someone else's name stenciled on the inside lining.\n\nSoren Dalgaard-Arredondo is auditioning for membership in the Copperhead Lacunae — a street organization that controls mid-tier contraband flow through the Narrows — and he knows it's an audition. He's smart enough to know that being smart isn't enough here; he's trying to learn what enough looks like. He runs small errands, holds packages he's not allowed to look inside, laughs at the right moments. Underneath this performance he is a child who has not slept in a bed with clean sheets in two years and who is starting to forget that this isn't just how things are.",
+  "description": "Abeesh Dalgaard-Arredondo is all sharp angles and nervous energy, a thin boy with dark olive skin, a shaved head that's grown out uneven, and a jaw that's set in a permanent expression somewhere between defiance and plea. His left eye has a cosmetic mod — a slit pupil in amber, gift from an older gang prospect who found it in a pawn bin and thought it was funny — that he wears with more pride than anything else he owns. He has a long scar across his right palm that he tells different stories about every time someone asks. He smells of the cheap rehydrated noodles sold from the Narrows carts, and his jacket has someone else's name stenciled on the inside lining.\n\nAbeesh Dalgaard-Arredondo is auditioning for membership in the Copperhead Lacunae — a street organization that controls mid-tier contraband flow through the Narrows — and he knows it's an audition. He's smart enough to know that being smart isn't enough here; he's trying to learn what enough looks like. He runs small errands, holds packages he's not allowed to look inside, laughs at the right moments. Underneath this performance he is a child who has not slept in a bed with clean sheets in two years and who is starting to forget that this isn't just how things are.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -183,7 +180,7 @@
     "The Narrows Compact",
     "Copperhead",
     "NeuralPath ClearRun Focus Regulation Implant",
-    "Haze Johansson",
+    "Akosua Johansson",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Compass Rose",
     "Palm Leaf"
@@ -209,7 +206,7 @@
     "posture_movement": "Restless and kinetic — fidgets constantly with hands, shifts weight foot-to-foot even when standing still. Moves quickly through space with the efficiency of someone accustomed to needing to leave fast. Makes frequent eye contact (especially with older prospects) as if seeking validation. Flinches occasionally at loud noises. Shoulders habitually raised slightly toward ears.",
     "clothing_style": "Tier 5/sub-grade streetwear. Oversized dark gray synthetic jacket with faded stencil lettering inside lining reading 'DONOVAN' (not his name). Underneath: layered mismatched thermals — one long-sleeve shirt in brown-black, another in navy with small hole near shoulder seam. Dark cargo pants with multiple pockets and external patches, cuffs frayed and caked with street dust. Cheap high-top synth-leather boots, one lace missing, replaced with frayed synthetic cord. No jewelry except a thin copper wire wrapped loosely around left wrist (gang indicator, loose/unofficial). Jacket hood worn frequently, pulled low."
   },
-  "image_prompt": "GLMZ, portrait of Soren Dalgaard-Arredondo, 155cm wiry frame with sharp elbows and collarbones, warm medium-brown skin with golden olive undertones blending Hispanic/Latin American, South Asian, and Southeast Asian heritage, dark circles under eyes, full lips and strong jawline, patchy black hair shaved short with 1-2cm regrowth, right eye deep brown, left eye amber with cosmetic slit pupil mod glitching to full dilation, pale pink scar across right palm, cigarette burn on left wrist, fading yellowish-green bruise on left ribs, wearing oversized dark gray synthetic jacket with 'DONOVAN' lettering, layered mismatched thermals (brown-black and navy), dark frayed cargo pants, high-top synth-leather boots with missing lace, hood pulled low over anxious expression, copper wire around left wrist, restless fidgeting hands, hunched posture, neon-lit Great Lakes Metropolitan Zone alley at night, gritty street lighting, rain-slicked pavement, moody and tense atmosphere --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Abeesh Dalgaard-Arredondo, 155cm wiry frame with sharp elbows and collarbones, warm medium-brown skin with golden olive undertones blending Hispanic/Latin American, South Asian, and Southeast Asian heritage, dark circles under eyes, full lips and strong jawline, patchy black hair shaved short with 1-2cm regrowth, right eye deep brown, left eye amber with cosmetic slit pupil mod glitching to full dilation, pale pink scar across right palm, cigarette burn on left wrist, fading yellowish-green bruise on left ribs, wearing oversized dark gray synthetic jacket with 'DONOVAN' lettering, layered mismatched thermals (brown-black and navy), dark frayed cargo pants, high-top synth-leather boots with missing lace, hood pulled low over anxious expression, copper wire around left wrist, restless fidgeting hands, hunched posture, neon-lit Great Lakes Metropolitan Zone alley at night, gritty street lighting, rain-slicked pavement, moody and tense atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 43,
     "Northern European": 22.2,

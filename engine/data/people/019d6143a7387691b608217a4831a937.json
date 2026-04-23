@@ -2,10 +2,7 @@
   "id": "019d6143a7387691b608217a4831a937",
   "type": "character",
   "name": "Ginette Ozcoidi-Baek",
-  "aliases": [
-    "Atlas Ozcoidi-Baek",
-    "Atlas"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 27,
   "status": "active",
   "location": "Chatham Flats, near Kedzie and Division",
-  "description": "Atlas Ozcoidi-Baek is young in a way he is painfully aware of — broad-shouldered and physically impressive, with medium brown skin, a slightly too-eager manner, and retractable claw geneware on both hands that he got at nineteen because he thought it would make him look serious and has since decided he was right for the wrong reasons. He keeps the claws sheathed almost always; extending them feels like admitting he's nervous. His hair is grown out past his shoulders, dyed in shifting red-orange bioluminescence that he tells people is a professional investment because people remember you, which is true and also not really why he did it.\n\nHe works skip tracing and debt-compliance pickups for Tessera — locating people who have defaulted on Tessera contracts, service agreements, or residential obligations and facilitating their 'voluntary return to compliance,' which in practice means finding them and making very clear what Tessera's options are. He is not violent by preference and not comfortable when situations require it. He is, however, genuinely good at the finding — spatial memory, social intuition, and a disarming quality that makes people underestimate him until he's already confirmed what he came to know. He keeps a small E.L.F. prayer card tucked in his jacket — Our Finder, patron of lost things — and touches it before starting a new case.",
+  "description": "Ginette Ozcoidi-Baek is young in a way he is painfully aware of — broad-shouldered and physically impressive, with medium brown skin, a slightly too-eager manner, and retractable claw geneware on both hands that he got at nineteen because he thought it would make him look serious and has since decided he was right for the wrong reasons. He keeps the claws sheathed almost always; extending them feels like admitting he's nervous. His hair is grown out past his shoulders, dyed in shifting red-orange bioluminescence that he tells people is a professional investment because people remember you, which is true and also not really why he did it.\n\nHe works skip tracing and debt-compliance pickups for Tessera — locating people who have defaulted on Tessera contracts, service agreements, or residential obligations and facilitating their 'voluntary return to compliance,' which in practice means finding them and making very clear what Tessera's options are. He is not violent by preference and not comfortable when situations require it. He is, however, genuinely good at the finding — spatial memory, social intuition, and a disarming quality that makes people underestimate him until he's already confirmed what he came to know. He keeps a small E.L.F. prayer card tucked in his jacket — Our Finder, patron of lost things — and touches it before starting a new case.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -211,7 +208,7 @@
     "Ossuary Arms Memento Vivere OA-7 'Momento'",
     "Tessera Corponation",
     "Arcturus KS-7 'Nursery'",
-    "Atlas",
+    "Ginette",
     "The Pure Hand",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Slagworks Industrial",
@@ -237,7 +234,7 @@
     "posture_movement": "Carries himself with deliberate, measured stillness — the kind of person who doesn't fidget because he's learning to control nervous energy. When moving through crowds, his gait is efficient and observational; he takes in exits, sight lines, and people's positions. His hands rest openly visible, fingers relaxed — a conscious choice to appear non-threatening. When speaking with a contact, he leans in slightly and makes steady eye contact, which reads as earnest and disarming until you realize he's also cataloging everything",
     "clothing_style": "Tier 3 working-class professional — Tessera contractor gear. Typically wears: a matte-gray synthetic jacket (Tessera-issued, logo embroidered at shoulder), reinforced cargo pants with Φ-credit reader pocket, worn composite boots with good grip. Under the jacket: plain fitted shirts in dark colors (blue, black, charcoal). A small laminated prayer card (E.L.F. patron saint) hangs on a cord inside his jacket collar, visible if he moves. His aesthetic reads as 'young professional trying to look older' — functional, deliberate, slightly overdressed for the neighborhood"
   },
-  "image_prompt": "Atlas Ozcoidi-Baek, 188cm tall athletic male with warm medium-brown skin and golden-amber undertones, reflecting globally blended East Asian, Indigenous American, Northern European, South Asian, Hispanic and Sub-Saharan African ancestry. Prominent East Asian cheekbones blended with Indigenous American jaw width, balanced South Asian facial proportions. Dark brown hair with bioluminescent red-orange undertone cycling in low light, grown past shoulders and loosely framed around his face. Medium brown eyes with guarded but earnest expression. Clean-shaven with faint scar through left eyebrow. Wearing matte-gray Tessera-issued synthetic jacket over dark fitted shirt, reinforced cargo pants, worn composite boots. Faint neural interface port visible at base of skull. Retractable black keratin claws visible as thickened nail beds on both hands. Measured posture, hands openly visible and relaxed. GLMZ Great Lakes Metropolitan Zone, professional contractor aesthetic, slight forward lean, observational gaze, low neon lighting casting subtle shadows, urban industrial background. Mood: deliberate, controlled, earnest but cataloging. Professional and non-threatening presence. --ar 2:3 --v 6",
+  "image_prompt": "Ginette Ozcoidi-Baek, 188cm tall athletic male with warm medium-brown skin and golden-amber undertones, reflecting globally blended East Asian, Indigenous American, Northern European, South Asian, Hispanic and Sub-Saharan African ancestry. Prominent East Asian cheekbones blended with Indigenous American jaw width, balanced South Asian facial proportions. Dark brown hair with bioluminescent red-orange undertone cycling in low light, grown past shoulders and loosely framed around his face. Medium brown eyes with guarded but earnest expression. Clean-shaven with faint scar through left eyebrow. Wearing matte-gray Tessera-issued synthetic jacket over dark fitted shirt, reinforced cargo pants, worn composite boots. Faint neural interface port visible at base of skull. Retractable black keratin claws visible as thickened nail beds on both hands. Measured posture, hands openly visible and relaxed. GLMZ Great Lakes Metropolitan Zone, professional contractor aesthetic, slight forward lean, observational gaze, low neon lighting casting subtle shadows, urban industrial background. Mood: deliberate, controlled, earnest but cataloging. Professional and non-threatening presence. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "East Asian": 31,
     "Indigenous American": 18.4,

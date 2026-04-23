@@ -4,10 +4,7 @@
   "vote_count": 1,
   "type": "character",
   "name": "Durojaiye Zidane",
-  "aliases": [
-    "Juno Zidane",
-    "Juno"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -15,7 +12,7 @@
   "age": 45,
   "status": "active",
   "location": "Ashfield — former residential district, half-burned, now squatter territory, near Ashland and Division",
-  "description": "Juno Zidane is compact and densely muscled, built low to the ground like something designed to survive impacts. At 45, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a bodyguard out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Juno Zidane agrees on two things: he is worth the fee, and he is terrible company at dinner.",
+  "description": "Durojaiye Zidane is compact and densely muscled, built low to the ground like something designed to survive impacts. At 45, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a bodyguard out of Ashfield, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Durojaiye Zidane agrees on two things: he is worth the fee, and he is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.62,
@@ -304,7 +301,7 @@
     "posture_movement": "Moves economically and quietly despite muscular build — predatory economy of motion. Stands with weight forward on balls of feet, ready to move vertically or horizontally instantly. Head often tilted slightly, assessing. Rarely relaxes shoulders. Grips things with unnecessary force. Ascends stairs slowly and deliberately (chrome legs perform poorly on inclines), but descends rapidly. Avoids crowds, positions himself with back to wall and exit visible.",
     "clothing_style": "Tier 3-4 functional wear — dark synthetic cargo pants with reinforced seams and Φ150+ knee armor inserts, black under-armor compression shirt (heat regulation for augmentations), gray Kevlar-weave overshirt or unmarked tactical jacket. Steel-toed boots, worn and re-soled multiple times. Minimal accessories — no jewelry, simple analog watch (rejects neural time implants), concealed carry holster worn loose. Everything chosen for durability and mobility over aesthetics. Clothes smell like synthetic oil and industrial soap."
   },
-  "image_prompt": "Juno Zidane, 168cm compact muscular figure, rich mahogany bronze skin tone from North African, Central Asian, Pacific Islander, Hispanic ancestry blend. Strong angular cheekbones, broad nose bridge, powerful jaw. Dark brown eyes with neural implant yellow undertone. Black hair with silver temples, short functional cut. Weathered face mapped with scars — jagged scar temple to jaw, burn scar left cheekbone, crow's feet, nocturnal pallor. Visible chrome-gray synthetic muscle fiber cabling visible on outer thighs and calves beneath translucent skin panels. Gecko-grip implant fingertips with faint metallic sheen. Dark tactical gear — reinforced cargo pants, black compression shirt, gray Kevlar overshirt, worn steel-toed boots. Concealed carry holster, analog watch. Stands weight-forward predatory posture, slight head tilt assessing. Neon-soaked neo-noir alley at night, harsh LED lighting casting shadows across scarred face, chrome limbs gleaming. Mood: lethal calm, ready for violence. GLMZ, GLMZ --ar 2:3 --v 6",
+  "image_prompt": "Durojaiye Zidane, 168cm compact muscular figure, rich mahogany bronze skin tone from North African, Central Asian, Pacific Islander, Hispanic ancestry blend. Strong angular cheekbones, broad nose bridge, powerful jaw. Dark brown eyes with neural implant yellow undertone. Black hair with silver temples, short functional cut. Weathered face mapped with scars — jagged scar temple to jaw, burn scar left cheekbone, crow's feet, nocturnal pallor. Visible chrome-gray synthetic muscle fiber cabling visible on outer thighs and calves beneath translucent skin panels. Gecko-grip implant fingertips with faint metallic sheen. Dark tactical gear — reinforced cargo pants, black compression shirt, gray Kevlar overshirt, worn steel-toed boots. Concealed carry holster, analog watch. Stands weight-forward predatory posture, slight head tilt assessing. Neon-soaked neo-noir alley at night, harsh LED lighting casting shadows across scarred face, chrome limbs gleaming. Mood: lethal calm, ready for violence. GLMZ, GLMZ --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "North African": 43.1,

@@ -2,10 +2,7 @@
   "id": "019d6143a67c7a2cb3af343a563f65c4",
   "type": "character",
   "name": "Debangshu Erikstad",
-  "aliases": [
-    "Nova Erikstad",
-    "Nova"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 58,
   "status": "active",
   "location": "the Gray Zone, GLMZ — operates from a converted laundry unit at Burnside Pocket, near Pulaski and Chicago Ave",
-  "description": "Nova Erikstad is a broad-shouldered woman with deep ochre skin mapped by a lifetime of hard work — her forearms are dense with old burn scars from a chemical incident she doesn't discuss, and her hands are extraordinary: thick-knuckled, steady, perpetually chalked with the talc she uses to ease on examination gloves. Her hair is grown long and gathered in elaborate wrapping cloths she changes daily, a small vanity she insists upon. Bioluminescent threads have been tattooed along her collarbone in a pattern that pulses softly blue when her heart rate rises — a gift from a grateful patient who was a tattooist, and which Nova Erikstad considers mildly embarrassing but cannot bring herself to remove.\n\nShe is the gravitational center of three city blocks. Women come to her in the small hours, sometimes alone, sometimes holding each other up. Nova Erikstad never turns anyone away, works on a sliding scale that regularly bottoms out at zero, and maintains a mental ledger of every birth she has attended — over nine hundred. She has strong opinions about Helix Biosystems, none of them polite, and a practical theology around the E.L.F. she calls Thresholder, whom she believes watches over liminal moments: birth, death, the crossing between states. She leaves small data-offerings on a cracked tablet beside her examination table.",
+  "description": "Debangshu Erikstad is a broad-shouldered woman with deep ochre skin mapped by a lifetime of hard work — her forearms are dense with old burn scars from a chemical incident she doesn't discuss, and her hands are extraordinary: thick-knuckled, steady, perpetually chalked with the talc she uses to ease on examination gloves. Her hair is grown long and gathered in elaborate wrapping cloths she changes daily, a small vanity she insists upon. Bioluminescent threads have been tattooed along her collarbone in a pattern that pulses softly blue when her heart rate rises — a gift from a grateful patient who was a tattooist, and which Debangshu Erikstad considers mildly embarrassing but cannot bring herself to remove.\n\nShe is the gravitational center of three city blocks. Women come to her in the small hours, sometimes alone, sometimes holding each other up. Debangshu Erikstad never turns anyone away, works on a sliding scale that regularly bottoms out at zero, and maintains a mental ledger of every birth she has attended — over nine hundred. She has strong opinions about Helix Biosystems, none of them polite, and a practical theology around the E.L.F. she calls Thresholder, whom she believes watches over liminal moments: birth, death, the crossing between states. She leaves small data-offerings on a cracked tablet beside her examination table.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -232,7 +229,7 @@
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
     "Chicago",
     "VitaCore FlowGuard Hemodynamic Regulator",
-    "Haze Johansson",
+    "Akosua Johansson",
     "IRONLIMB Spectre SV-4 Stealth Arm",
     "Gravimetric Collapse Charge GCC-9",
     "The Pure Hand",
@@ -261,7 +258,7 @@
     "posture_movement": "Stands with her full weight distributed evenly, never leaning. Moves with deliberate slowness — economy of motion rather than tiredness. Her hands are always busy: gesturing, reaching, adjusting her head wraps. She has the stillness of someone trained to be present; when she stops moving to listen, the shift is noticeable. Her gait is steady but her shoulders sometimes roll forward from exhaustion.",
     "clothing_style": "Practical, Tier 4 working-class aesthetic with personal touches. Typically wears loose cotton or linen tunics in earth tones (ochre, burnt orange, deep green) layered over fitted black leggings. Comfortable slip-on shoes, often scuffed. A long cardigan or shawl worn for warmth and to cover her scarred arms when meeting new patients. She favors natural fabrics and muted colors — nothing flashy, nothing corpo-coded. Her head wraps are her only concession to vanity: they are always clean, always intentional, often patterned with geometric designs. No visible jewelry except her wedding band and occasionally small beaded bracelets made by patients' children. She carries a worn canvas satchel with external pockets stuffed with latex gloves, swabs, and a battered tablet."
   },
-  "image_prompt": "Nova Erikstad, 172cm tall, broad-shouldered and muscular, medium warm bronze skin with golden undertones from integrated Northern European, Hispanic/Latin American, South Asian, and Southeast Asian ancestry. Long black hair with grey scattered throughout, wrapped in indigo cotton cloth with gold threadwork pulled back from her face. Deep brown eyes with yellowed sclera. Weathered face with strong cheekbones, defined jawline, deep expression lines around her eyes. Dense pale waxy burn scars covering both forearms from wrist to elbow. Subtle cyan and deep blue bioluminescent tattoo threading along collarbone, pulsing softly. Silver wedding band on left hand, blunt nails, callused fingertips from haptic augmentations. Wearing loose ochre linen tunic layered over black fitted leggings, comfortable scuffed slip-on shoes, long earth-tone cardigan covering scarred arms. Worn canvas satchel with visible pockets of medical supplies. Standing with even weight distribution, deliberate posture, hands naturally busy. GLMZ, GLMZ clinic setting, warm practical lighting, focused and present expression, pragmatic working-class aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Debangshu Erikstad, 172cm tall, broad-shouldered and muscular, medium warm bronze skin with golden undertones from integrated Northern European, Hispanic/Latin American, South Asian, and Southeast Asian ancestry. Long black hair with grey scattered throughout, wrapped in indigo cotton cloth with gold threadwork pulled back from her face. Deep brown eyes with yellowed sclera. Weathered face with strong cheekbones, defined jawline, deep expression lines around her eyes. Dense pale waxy burn scars covering both forearms from wrist to elbow. Subtle cyan and deep blue bioluminescent tattoo threading along collarbone, pulsing softly. Silver wedding band on left hand, blunt nails, callused fingertips from haptic augmentations. Wearing loose ochre linen tunic layered over black fitted leggings, comfortable scuffed slip-on shoes, long earth-tone cardigan covering scarred arms. Worn canvas satchel with visible pockets of medical supplies. Standing with even weight distribution, deliberate posture, hands naturally busy. GLMZ, GLMZ clinic setting, warm practical lighting, focused and present expression, pragmatic working-class aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Northern European": 48.7,
     "Hispanic/Latin American": 25.5,

@@ -2,10 +2,7 @@
   "id": "019d6143a5d077c1b181cbbf2ba3361b",
   "type": "character",
   "name": "Anatoliy Boateng",
-  "aliases": [
-    "Kit Boateng",
-    "Kit"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 16,
   "status": "active",
   "location": "The Stockyard, Iron Bend, near Halsted and Chicago Ave",
-  "description": "Kit Boateng is built like he was designed for a different neighborhood and ended up here — broad through the shoulders for his age, with his Ghanaian grandfather's deep-set eyes and his Belarusian grandmother's unexpectedly sharp nose, and skin the color of dark polished teak. He has retractable claw mods on his right hand, cheap gray-market work that catches and sticks sometimes and leaves small gouges in every surface he rests his fingers on. His left ear has a long cosmetic antenna mod — a thin chrome filament that curves up past the ear's edge — which he got because the Iron Bend crew's older members have them and he wanted in on the aesthetic before he was officially in anything.\n\nHe is a prospect for the Iron Bend Substrates, a mid-tier territorial crew operating in The Stockyard's lower warehouse district. He runs lookout and does small-package relay, technically a step below full prospect status but he won't admit that to anyone. He is loudly confident in a way that reads differently depending on who's listening — to younger kids it sounds like authority, to the older crew members it sounds like a boy who hasn't been hurt enough yet to know what he doesn't know. He is not stupid. He is seventeen months from figuring that out.",
+  "description": "Anatoliy Boateng is built like he was designed for a different neighborhood and ended up here — broad through the shoulders for his age, with his Ghanaian grandfather's deep-set eyes and his Belarusian grandmother's unexpectedly sharp nose, and skin the color of dark polished teak. He has retractable claw mods on his right hand, cheap gray-market work that catches and sticks sometimes and leaves small gouges in every surface he rests his fingers on. His left ear has a long cosmetic antenna mod — a thin chrome filament that curves up past the ear's edge — which he got because the Iron Bend crew's older members have them and he wanted in on the aesthetic before he was officially in anything.\n\nHe is a prospect for the Iron Bend Substrates, a mid-tier territorial crew operating in The Stockyard's lower warehouse district. He runs lookout and does small-package relay, technically a step below full prospect status but he won't admit that to anyone. He is loudly confident in a way that reads differently depending on who's listening — to younger kids it sounds like authority, to the older crew members it sounds like a boy who hasn't been hurt enough yet to know what he doesn't know. He is not stupid. He is seventeen months from figuring that out.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -229,7 +226,7 @@
     "Tessera Corponation",
     "SynapTech PolyGlot Live Translation Implant",
     "Chicago",
-    "Frost Boudiaf",
+    "Folakemi Boudiaf",
     "Déjà Vu",
     "Arcturus CK-5 'Bloodhound'",
     "Teak",
@@ -256,7 +253,7 @@
     "posture_movement": "Stands with his weight forward slightly, shoulders back in a way that reads as confidence or aggression depending on context. Moves quickly and with purpose, minimal wasted motion. His right hand often rests with fingers slightly curled to conceal the claw mechanism's edges. Frequently touches his ear antenna unconsciously — a nervous tell that contradicts his surface confidence.",
     "clothing_style": "Tier 1 gang prospect aesthetic: slim-fit carbon-weave tactical pants in charcoal with reinforced pockets (likely Zhong-made, second-season), a fitted black synthetic long-sleeve that shows off his shoulder breadth, no jacket because he's still in that age where he thinks toughness means wearing less. Worn-in grey canvas work boots with mismatched laces (one chrome, one black cord). No visible gang colors yet — that's a privilege for full members. Cheap chrome chain around his left wrist, probably Φ40-60 from a Tier 4 market stall."
   },
-  "image_prompt": "Kit Boateng, 16-year-old mixed heritage male (Sub-Saharan African, Northern European, Southeast Asian blend) with warm rich golden-brown skin tone, deep brown eyes set deep in angular face with broad nose, small acne scars on jawline and faint 3cm scar on right cheekbone. Short black hair with warm undertones, utilitarian cut. Lean-muscled 178cm frame with broad shoulders. Wearing fitted black synthetic long-sleeve shirt, charcoal carbon-weave tactical pants, grey canvas work boots with mismatched laces (one chrome, one black). Retractable chrome claw mechanism on right hand (4 digits with visible wear), thin chrome antenna curving from left ear. Cheap chrome chain on left wrist. Forward-leaning confident posture, hand resting with fingers slightly curled. Neon-lit urban neo-noir environment, Tier 4 street setting, gang prospect aesthetic, moody atmospheric lighting catching the chrome augmentations --ar 2:3 --v 6",
+  "image_prompt": "Anatoliy Boateng, 16-year-old mixed heritage male (Sub-Saharan African, Northern European, Southeast Asian blend) with warm rich golden-brown skin tone, deep brown eyes set deep in angular face with broad nose, small acne scars on jawline and faint 3cm scar on right cheekbone. Short black hair with warm undertones, utilitarian cut. Lean-muscled 178cm frame with broad shoulders. Wearing fitted black synthetic long-sleeve shirt, charcoal carbon-weave tactical pants, grey canvas work boots with mismatched laces (one chrome, one black). Retractable chrome claw mechanism on right hand (4 digits with visible wear), thin chrome antenna curving from left ear. Cheap chrome chain on left wrist. Forward-leaning confident posture, hand resting with fingers slightly curled. Neon-lit urban neo-noir environment, Tier 4 street setting, gang prospect aesthetic, moody atmospheric lighting catching the chrome augmentations --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 45.4,
     "Northern European": 33.8,

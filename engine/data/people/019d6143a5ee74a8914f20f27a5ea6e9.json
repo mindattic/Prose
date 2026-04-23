@@ -3,10 +3,7 @@
   "rating": 70,
   "type": "character",
   "name": "Elif Tofauti-Adu",
-  "aliases": [
-    "Briar Tofauti-Adu",
-    "Briar"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -14,7 +11,7 @@
   "age": 33,
   "status": "active",
   "location": "the Gray Zone — lower district tenements near the old lakeshore, near Ashland and Division",
-  "description": "Briar Tofauti-Adu is slight and easy to overlook, which is exactly the point. At 33, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cranial bomb defuser — specialized implant that detects and neutralizes cortex b — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a wheelman out of the Gray Zone, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Briar Tofauti-Adu agrees on two things: he is worth the fee, and he is terrible company at dinner.",
+  "description": "Elif Tofauti-Adu is slight and easy to overlook, which is exactly the point. At 33, he has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — cranial bomb defuser — specialized implant that detects and neutralizes cortex b — and he makes no effort to hide it.\n\nHe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. He works as a wheelman out of the Gray Zone, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Elif Tofauti-Adu agrees on two things: he is worth the fee, and he is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.35,
@@ -301,7 +298,7 @@
     "posture_movement": "Economical and alert. Sits with spine straight, eyes tracking entrances and exits reflexively. Moves like someone counting milliseconds — no wasted motion, each gesture purposeful. Hands are steady and quick. When still, he has an uncanny calm that makes people uncomfortable; when moving, he's already three steps ahead of the room.",
     "clothing_style": "Tier 3-4 utilitarian. Matte-black reinforced jacket with integrated comms pockets, custom-fitted for concealed hardware. Underneath: gray synthetic undershirt designed for rapid cooling. Worn cargo pants in dark gray with cargo pockets reinforced for equipment — no corporate logos, no flash. Steel-toed boots with grip-soled treads, scuffed from actual use. A thin chain with a non-functional key around his neck — the only personal item, kept for reasons he won't explain."
   },
-  "image_prompt": "Briar Tofauti-Adu, 172cm lean neo-noir operative with Central Asian-Pacific Islander-South Asian heritage, warm bronze-gold skin with golden undertones, pronounced high cheekbones, strong jawline, dark brown hair with gray at temples cut short at 2cm. Deep brown eyes with chrome surgical scarring around sockets. Visible chrome cranial implant circuitry at left temple in geometric patterns, subcutaneous wiring traces on neck and upper chest. Thin scar along left temple, chemical burn mark on right forearm, webbed scarring on right wrist, Cyrillic tattoo on left collarbone. Clean-shaven, military-precise grooming. Wearing matte-black reinforced jacket with integrated pockets, gray synthetic undershirt, dark gray reinforced cargo pants, steel-toed scuffed boots, thin chain with non-functional key. Economical posture, alert and composed. GLMZ Great Lakes Metropolitan Zone, sitting in dimly-lit facility with neon accent lighting, hands steady and ready, the uncanny calm of someone three steps ahead. Cinematic, gritty, utilitarian aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Elif Tofauti-Adu, 172cm lean neo-noir operative with Central Asian-Pacific Islander-South Asian heritage, warm bronze-gold skin with golden undertones, pronounced high cheekbones, strong jawline, dark brown hair with gray at temples cut short at 2cm. Deep brown eyes with chrome surgical scarring around sockets. Visible chrome cranial implant circuitry at left temple in geometric patterns, subcutaneous wiring traces on neck and upper chest. Thin scar along left temple, chemical burn mark on right forearm, webbed scarring on right wrist, Cyrillic tattoo on left collarbone. Clean-shaven, military-precise grooming. Wearing matte-black reinforced jacket with integrated pockets, gray synthetic undershirt, dark gray reinforced cargo pants, steel-toed scuffed boots, thin chain with non-functional key. Economical posture, alert and composed. GLMZ Great Lakes Metropolitan Zone, sitting in dimly-lit facility with neon accent lighting, hands steady and ready, the uncanny calm of someone three steps ahead. Cinematic, gritty, utilitarian aesthetic --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "Central Asian": 58.1,

@@ -2,10 +2,7 @@
   "id": "019d6143a69e7905b003070d523b3f96",
   "type": "character",
   "name": "Ahmed Delgado",
-  "aliases": [
-    "Rune Delgado",
-    "Rune"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 58,
   "status": "active",
   "location": "Hamtramck Enclave, shop front on Czerny Row beneath the Ferrogate overpass, near Ashland and Chicago Ave",
-  "description": "Rune Delgado is a broad-shouldered woman whose hands tell her whole biography — thick calluses on her fingertips, ink stains in the whorls of her thumb, and a faint chemical burn scar along her left palm from an incident with synth-dye she doesn't discuss. Her hair is silver-streaked black, worn in a tight bun stabbed through with two long needles she uses as both tools and weapons of emphasis, jabbing the air when she makes a point. Her skin is deep brown and she has the mild bioluminescent pattern along her clavicle and shoulders — a pale amber tracery she got at forty as a birthday gift to herself, though she admits it's harder to see now that her skin has 'settled,' as she calls it.\n\nShe speaks plainly and fast, with a West African lilt layered under a flat Midwestern vowel she picked up from forty years in the Enclave. She is not warm exactly, but she is fair — customers who come in broke and come back with money find she remembers. She hoards thread colors obsessively, labeling them with her own taxonomy: 'lake green,' 'rust that means something,' 'the blue they stopped making.' She prays to the ELF that lives in her industrial sewing machine every morning, leaving a small data chip of her stitch-count logs as offering.",
+  "description": "Ahmed Delgado is a broad-shouldered woman whose hands tell her whole biography — thick calluses on her fingertips, ink stains in the whorls of her thumb, and a faint chemical burn scar along her left palm from an incident with synth-dye she doesn't discuss. Her hair is silver-streaked black, worn in a tight bun stabbed through with two long needles she uses as both tools and weapons of emphasis, jabbing the air when she makes a point. Her skin is deep brown and she has the mild bioluminescent pattern along her clavicle and shoulders — a pale amber tracery she got at forty as a birthday gift to herself, though she admits it's harder to see now that her skin has 'settled,' as she calls it.\n\nShe speaks plainly and fast, with a West African lilt layered under a flat Midwestern vowel she picked up from forty years in the Enclave. She is not warm exactly, but she is fair — customers who come in broke and come back with money find she remembers. She hoards thread colors obsessively, labeling them with her own taxonomy: 'lake green,' 'rust that means something,' 'the blue they stopped making.' She prays to the ELF that lives in her industrial sewing machine every morning, leaving a small data chip of her stitch-count logs as offering.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -265,7 +262,7 @@
       "Permanent ink staining in the whorls of both thumbs and two fingers of right hand from years of marking fabric"
     ]
   },
-  "image_prompt": "Rune Delgado, 168cm tall broad-shouldered woman with warm golden-brown skin and olive undertones, sharp dark brown eyes lined by decades of detail work, black hair with silver streaking pinned in bun with steel needles. Warm-toned complexion with South Asian cheekbone fullness balanced by Northern European definition, freckling across nose and cheekbones, lined face showing her age. Rolled-up grey long-sleeved shirt exposing scarred hands with visible calluses and pale webbed chemical burn scar on left palm, permanent ink stains on thumbs. Indigo work apron over grey trousers, worn leather slip-ons. Faint amber bioluminescent tracery visible along clavicles and shoulders, subtle mechanical precision in hand movements, standing with perfect posture in a small GLMZ textile studio, warm studio lighting catching the lines of her face and the scarred detail work of her hands, contemplative and focused, Tier 3 working-class aesthetic, --ar 2:3 --v 6",
+  "image_prompt": "Ahmed Delgado, 168cm tall broad-shouldered woman with warm golden-brown skin and olive undertones, sharp dark brown eyes lined by decades of detail work, black hair with silver streaking pinned in bun with steel needles. Warm-toned complexion with South Asian cheekbone fullness balanced by Northern European definition, freckling across nose and cheekbones, lined face showing her age. Rolled-up grey long-sleeved shirt exposing scarred hands with visible calluses and pale webbed chemical burn scar on left palm, permanent ink stains on thumbs. Indigo work apron over grey trousers, worn leather slip-ons. Faint amber bioluminescent tracery visible along clavicles and shoulders, subtle mechanical precision in hand movements, standing with perfect posture in a small GLMZ textile studio, warm studio lighting catching the lines of her face and the scarred detail work of her hands, contemplative and focused, Tier 3 working-class aesthetic, --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 49.3,
     "South Asian": 25.6,

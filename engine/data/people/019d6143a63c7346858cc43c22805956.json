@@ -3,10 +3,7 @@
   "rating": 70,
   "type": "character",
   "name": "Daryanaz Achebe",
-  "aliases": [
-    "Nova Achebe",
-    "Nova"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -14,7 +11,7 @@
   "age": 39,
   "status": "active",
   "location": "Kessler Row — arms dealers and augmentation clinics, near Western and Chicago Ave",
-  "description": "Nova Achebe is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 39, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a smuggler out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Nova Achebe agrees on two things: she is worth the fee, and she is terrible company at dinner.",
+  "description": "Daryanaz Achebe is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 39, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nBefore the runner life, she worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. She works as a smuggler out of Kessler Row, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Daryanaz Achebe agrees on two things: she is worth the fee, and she is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -299,7 +296,7 @@
     "posture_movement": "Moves with economical precision — no wasted motion. Shoulders slightly forward, hands rarely still. Walks heel-first, a runner's gait. Often stands with weight on her back foot, body angled to keep her peripheral vision open. Her baseline expression is a slight frown; she smiles rarely and without warmth.",
     "clothing_style": "Tier 3-4 utilitarian — functional, not fashionable. Favors reinforced cargo pants (gray or dark blue, Raven Manufacturing), layered tops that allow for concealment of gear, and a heavy jacket of synthetic leather with internal pockets and burn-resistant lining. Steel-toed boots, scuffed and well-maintained. No jewelry or decoration. Clothing is frequently stained with machine oil or chemical residue; she replaces items only when they become unsafe."
   },
-  "image_prompt": "Nova Achebe, 2226 neo-noir, 168cm stocky muscular woman with rich deep brown skin and warm golden undertones blending Eastern European, Sub-Saharan African, and South Asian ancestry. Natural deep brown eyes, black hair with silver temples pulled into tight braid. Weathered angular face with prominent cheekbones, broken nose reset badly, high facial definition. Visible 20cm pale surgical scar down center of chest from synthetic lung installation, faint metallic sheen and microcircuitry visible around sternum. Small burn scars left temple. Chemical burn discoloration right hand lighter than skin tone. Crude smuggler's tattoo left inner wrist. Chrome plating visible around nasal passages from chemical analyzer augmentation. Muscular corded forearms with parallel restraint scars. Moves with economical precision, shoulders forward, slight frown baseline expression. Wearing reinforced gray cargo pants, layered utilitarian tops, heavy synthetic leather jacket with burn-resistant lining stained with machine oil, steel-toed scuffed boots. No jewelry. Standing in industrial facility with dramatic neon lighting, cool blues and oranges, mechanical whisper of synthetic lungs audible, peripheral vision open tactical stance, GLMZ 2200s gritty aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Daryanaz Achebe, 2226 neo-noir, 168cm stocky muscular woman with rich deep brown skin and warm golden undertones blending Eastern European, Sub-Saharan African, and South Asian ancestry. Natural deep brown eyes, black hair with silver temples pulled into tight braid. Weathered angular face with prominent cheekbones, broken nose reset badly, high facial definition. Visible 20cm pale surgical scar down center of chest from synthetic lung installation, faint metallic sheen and microcircuitry visible around sternum. Small burn scars left temple. Chemical burn discoloration right hand lighter than skin tone. Crude smuggler's tattoo left inner wrist. Chrome plating visible around nasal passages from chemical analyzer augmentation. Muscular corded forearms with parallel restraint scars. Moves with economical precision, shoulders forward, slight frown baseline expression. Wearing reinforced gray cargo pants, layered utilitarian tops, heavy synthetic leather jacket with burn-resistant lining stained with machine oil, steel-toed scuffed boots. No jewelry. Standing in industrial facility with dramatic neon lighting, cool blues and oranges, mechanical whisper of synthetic lungs audible, peripheral vision open tactical stance, GLMZ 2200s gritty aesthetic --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "Eastern European": 49.3,

@@ -2,10 +2,7 @@
   "id": "019d6143a5fc7699910157090995efc1",
   "type": "character",
   "name": "Celio Asomaning-Ito",
-  "aliases": [
-    "Luca Asomaning-Ito",
-    "Luca"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 37,
   "status": "active",
   "location": "Meridian Station — central transit nexus, neutral ground, near State and Madison",
-  "description": "Luca Asomaning-Ito is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 37, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — neural dampener — blocks external hacking attempts, passive ice in the brain — and she makes no effort to hide it.\n\nShe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a sniper out of Meridian Station, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Luca Asomaning-Ito describe her as a precision instrument — point her at a problem and get out of the way.",
+  "description": "Celio Asomaning-Ito is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 37, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — neural dampener — blocks external hacking attempts, passive ice in the brain — and she makes no effort to hide it.\n\nShe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a sniper out of Meridian Station, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Celio Asomaning-Ito describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -302,7 +299,7 @@
     "posture_movement": "Stands with weight distributed evenly, ready to shift laterally. Movements economical and precise — no wasted motion. When seated, positions herself with clear sight lines and exits in mind. Walks with a slight forward lean from the hips. Noticeably stiff on stairs — the synthetic leg fibers cause her to take them slowly, methodically, which she does without apparent frustration.",
     "clothing_style": "Tier 4 practical — function over presentation. Dark neutral base layers (charcoal, black, muted grey) in breathable synth-cotton blend. Oversized tactical vest or reinforced jacket in worn charcoal with multiple pockets and modular attachment points — patched multiple times, clearly maintained rather than replaced. Cargo pants in dark grey with thigh pockets for ammunition or tools. Footwear is heavy-soled tactical boots, scuffed and broken in. Minimal jewelry — a single worn silver ring on left hand, possibly crew or family marker. No corporate branding visible. Clothing shows practical damage — minor tears, slight discoloration from equipment oil, the aesthetic of someone who cares about function over upkeep."
   },
-  "image_prompt": "Luca Asomaning-Ito, 168cm stocky gunsmith with warm bronze skin reflecting East Asian, Southeast Asian, African, and Northern European ancestry. Dark almond eyes set in broad-cheeked, angular face with substantial jawline. Black hair in tight functional braid, silver threading at temples. Temple temples bear dull gunmetal chrome neural dampener visible behind crude surgical scarring. Jagged scar tissue runs left jawline. Faded tattoo on right wrist, burn scarring on right hand. Wearing dark charcoal tactical vest over black synth-cotton layers, grey cargo pants, heavy tactical boots. Standing alert with even weight distribution, slight forward hip lean. Nocturnal fatigue etched into weathered face. GLMZ Great Lakes Metropolitan Zone, cold overhead warehouse lighting casting sharp shadows, moody atmospheric haze, cinematic realism --ar 2:3 --v 6",
+  "image_prompt": "Celio Asomaning-Ito, 168cm stocky gunsmith with warm bronze skin reflecting East Asian, Southeast Asian, African, and Northern European ancestry. Dark almond eyes set in broad-cheeked, angular face with substantial jawline. Black hair in tight functional braid, silver threading at temples. Temple temples bear dull gunmetal chrome neural dampener visible behind crude surgical scarring. Jagged scar tissue runs left jawline. Faded tattoo on right wrist, burn scarring on right hand. Wearing dark charcoal tactical vest over black synth-cotton layers, grey cargo pants, heavy tactical boots. Standing alert with even weight distribution, slight forward hip lean. Nocturnal fatigue etched into weathered face. GLMZ Great Lakes Metropolitan Zone, cold overhead warehouse lighting casting sharp shadows, moody atmospheric haze, cinematic realism --ar 2:3 --v 6",
   "genetic_ancestry": {
     "East Asian": 28.9,
     "Southeast Asian": 23.4,

@@ -4,10 +4,7 @@
   "vote_count": 1,
   "type": "character",
   "name": "Bhoomika Magnúsdóttir",
-  "aliases": [
-    "Kira Magnúsdóttir",
-    "Kira"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -15,7 +12,7 @@
   "age": 35,
   "status": "active",
   "location": "The Rookery — dense vertical housing, gang-controlled, near Halsted and Chicago Ave",
-  "description": "Kira Magnúsdóttir is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 35, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Kira Magnúsdóttir plans to keep it that way. He works as a bodyguard out of The Rookery, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Kira Magnúsdóttir describe him as a precision instrument — point him at a problem and get out of the way.",
+  "description": "Bhoomika Magnúsdóttir is tall and rawboned, the kind of frame that suggests either malnutrition or efficiency depending on the decade. At 35, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Bhoomika Magnúsdóttir plans to keep it that way. He works as a bodyguard out of The Rookery, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Bhoomika Magnúsdóttir describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.35,
@@ -300,7 +297,7 @@
     "posture_movement": "Moves with deliberate economy — no flourish, no wasted motion. Stands at angles rather than head-on, shoulders relaxed but never fully slack. Weight balanced on the balls of his feet even when stationary. Eyes track constantly, threat assessment running on automatic. When she walks, there's a mechanical precision to the leg movement, the stride too perfect, too controlled.",
     "clothing_style": "Tier 4 utilitarian — dark synthetic shell jacket with modular pockets, worn over fitted charcoal compression shirt. Carbon-weave pants, reinforced at knees and thighs. Tactical boots, scuffed, broken in. Minimal branding. No jewelry. All clothing is functional, replaceable, untraceable. Carries a messenger bag across the chest — worn leather, contents unknown."
   },
-  "image_prompt": "Kira Magnúsdóttir, tall androgynous figure, 188cm, lean muscular build. Mixed heritage face: Northern European angular bone structure with warm olive skin, golden undertones, prominent cheekbones, defined jaw. Dark brown eyes with subtle East Asian eye shape. Black hair cropped short with gray at temples. Fine lines around eyes. Faded thermal burn scar on left neck, barely visible. Surgical chrome lattice vents visible on sternum under open charcoal compression shirt. Dark synthetic tactical jacket with modular pockets. Carbon-weave reinforced pants. Scuffed tactical boots. Worn leather messenger bag across chest. Standing at deliberate angle, weight on balls of feet, constant threat assessment in gaze. GLMZ, Great Lakes Metropolitan Zone, neon-lit urban setting, cool blue and amber lighting, moody cinematic atmosphere, photorealistic, high contrast --ar 2:3 --v 6",
+  "image_prompt": "Bhoomika Magnúsdóttir, tall androgynous figure, 188cm, lean muscular build. Mixed heritage face: Northern European angular bone structure with warm olive skin, golden undertones, prominent cheekbones, defined jaw. Dark brown eyes with subtle East Asian eye shape. Black hair cropped short with gray at temples. Fine lines around eyes. Faded thermal burn scar on left neck, barely visible. Surgical chrome lattice vents visible on sternum under open charcoal compression shirt. Dark synthetic tactical jacket with modular pockets. Carbon-weave reinforced pants. Scuffed tactical boots. Worn leather messenger bag across chest. Standing at deliberate angle, weight on balls of feet, constant threat assessment in gaze. GLMZ, Great Lakes Metropolitan Zone, neon-lit urban setting, cool blue and amber lighting, moody cinematic atmosphere, photorealistic, high contrast --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "Northern European": 40.1,

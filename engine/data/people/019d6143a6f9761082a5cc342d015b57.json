@@ -2,10 +2,7 @@
   "id": "019d6143a6f9761082a5cc342d015b57",
   "type": "character",
   "name": "Eloka Baek",
-  "aliases": [
-    "Briar Baek",
-    "Briar"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 27,
   "status": "active",
   "location": "the Gray Zone, operating a mobile print node out of a converted food-stall chassis, near Ashland and Division",
-  "description": "Briar Baek is wiry and perpetually in motion, with warm terracotta skin, loose natural curls he dyes in rotating colors — currently a deep arterial red — and bioluminescent tattoos along his collarbones that pulse faintly blue when his heart rate rises (an unlicensed geneware side effect he never had properly stabilized). He is almost always seen wearing multiple layers of breathable mesh, pockets stuffed with data chips, print cartridges, and folded broadsheets still warm from the press. His eyes are quick and rarely meet anyone's gaze for long — not from shyness, but from constant peripheral threat assessment.\n\nThéo runs Ghostprint, a one-person underground broadsheet that covers what no licensed outlet will: corporate safety violations, enclave demolition orders, disappeared activists, synthetic-person abuse by Axiom security contractors. He writes fast and loose and brilliant, trading some accuracy for urgency, a habit that has landed him in trouble more than once. He believes — genuinely, almost religiously — that information is the only weapon that cannot be confiscated if you distribute it fast enough.",
+  "description": "Eloka Baek is wiry and perpetually in motion, with warm terracotta skin, loose natural curls he dyes in rotating colors — currently a deep arterial red — and bioluminescent tattoos along his collarbones that pulse faintly blue when his heart rate rises (an unlicensed geneware side effect he never had properly stabilized). He is almost always seen wearing multiple layers of breathable mesh, pockets stuffed with data chips, print cartridges, and folded broadsheets still warm from the press. His eyes are quick and rarely meet anyone's gaze for long — not from shyness, but from constant peripheral threat assessment.\n\nThéo runs Ghostprint, a one-person underground broadsheet that covers what no licensed outlet will: corporate safety violations, enclave demolition orders, disappeared activists, synthetic-person abuse by Axiom security contractors. He writes fast and loose and brilliant, trading some accuracy for urgency, a habit that has landed him in trouble more than once. He believes — genuinely, almost religiously — that information is the only weapon that cannot be confiscated if you distribute it fast enough.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -266,7 +263,7 @@
     "posture_movement": "Rarely still — fingers tap, shoulders shift, eyes dart in constant low-grade threat assessment. Leans forward when speaking, as if sharing a secret. Walks quickly with economical steps. Sits on the edge of chairs, never fully relaxed. When focused on text, his entire body goes motionless.",
     "clothing_style": "Multiple layers of breathable mesh vests and reclaimed-fabric overshirts in muted grays and blacks, intentionally worn. Pockets stuffed visibly with data chips, print cartridges, folded broadsheets, encrypted key-fobs. Worn canvas trousers with reinforced knees. Steel-toed boots patched multiple times. No corporate branding. Tier 5 / working-poor aesthetic — function over fashion, but curated within that constraint."
   },
-  "image_prompt": "Briar Baek, GLMZ, mixed-heritage underground typesetter with warm deep brown skin and golden undertones, angular East Asian facial structure blended with broader Indigenous American and Sub-Saharan cheekbones, dark brown eyes with amber flecks. Shoulder-length loose natural curls dyed arterial red, half-knotted with data chip. Lean wiry build, 172cm tall. Layered mesh vests over reclaimed gray-black overshirts, multiple visible pockets stuffed with print cartridges and data chips, worn canvas trousers, patched steel-toed boots. Bioluminescent circuit-pattern tattoo geneware glowing faint blue across collarbones. Thin scar bisecting left eyebrow. Tense posture, leaning forward, fingers restless, eyes alert. Underground print shop or cramped safehouse setting, low warm lighting casting shadows, intimate near-whisper energy. Neo-noir urban aesthetic, working-poor functionality, threat-aware. --ar 2:3 --v 6",
+  "image_prompt": "Eloka Baek, GLMZ, mixed-heritage underground typesetter with warm deep brown skin and golden undertones, angular East Asian facial structure blended with broader Indigenous American and Sub-Saharan cheekbones, dark brown eyes with amber flecks. Shoulder-length loose natural curls dyed arterial red, half-knotted with data chip. Lean wiry build, 172cm tall. Layered mesh vests over reclaimed gray-black overshirts, multiple visible pockets stuffed with print cartridges and data chips, worn canvas trousers, patched steel-toed boots. Bioluminescent circuit-pattern tattoo geneware glowing faint blue across collarbones. Thin scar bisecting left eyebrow. Tense posture, leaning forward, fingers restless, eyes alert. Underground print shop or cramped safehouse setting, low warm lighting casting shadows, intimate near-whisper energy. Neo-noir urban aesthetic, working-poor functionality, threat-aware. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "East Asian": 34.5,
     "Indigenous American": 31.4,

@@ -2,10 +2,7 @@
   "id": "019d6143a6c475b3bdb0aabbfe507da5",
   "type": "character",
   "name": "Apollonia Espinoza",
-  "aliases": [
-    "Reed Espinoza",
-    "Reed"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
@@ -13,7 +10,7 @@
   "age": 27,
   "status": "active",
   "location": "The Alban Souk, Hamtramck Enclave, near Pulaski and Chicago Ave",
-  "description": "Reed Espinoza is the kind of person you notice and immediately forget, which is the point. Medium height, medium build, features that read as generically pleasant — warm light-brown skin, dark eyes, hair that is currently an unremarkable chin-length black but was a different color last week and will be again next week. They have a cosmetic geneware mod that lets them adjust their hair color through a dermal panel on the back of their neck, and they use it strategically to match moods, blend into crowds, or signal to regular clients what kind of day it is (black means business, dark red means they're watching, deep green means come back later). The only consistent physical detail is a small tattoo of an open eye on the inside of their left wrist, which they cover when working.\n\nTheir stall front is officially a document services and notarization kiosk — perfectly legal, mildly boring, doing a modest but real trade in legitimate bureaucratic services for the enclave's large population of people whose papers are perpetually in some state of incompleteness. The back half of the business happens in a rented room above a noodle shop forty meters away, which they visit by a route they vary daily. They are calm, precise, and give off a faint air of someone taking a very long test that never ends.",
+  "description": "Apollonia Espinoza is the kind of person you notice and immediately forget, which is the point. Medium height, medium build, features that read as generically pleasant — warm light-brown skin, dark eyes, hair that is currently an unremarkable chin-length black but was a different color last week and will be again next week. They have a cosmetic geneware mod that lets them adjust their hair color through a dermal panel on the back of their neck, and they use it strategically to match moods, blend into crowds, or signal to regular clients what kind of day it is (black means business, dark red means they're watching, deep green means come back later). The only consistent physical detail is a small tattoo of an open eye on the inside of their left wrist, which they cover when working.\n\nTheir stall front is officially a document services and notarization kiosk — perfectly legal, mildly boring, doing a modest but real trade in legitimate bureaucratic services for the enclave's large population of people whose papers are perpetually in some state of incompleteness. The back half of the business happens in a rented room above a noodle shop forty meters away, which they visit by a route they vary daily. They are calm, precise, and give off a faint air of someone taking a very long test that never ends.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -178,7 +175,7 @@
     "The Alban Souk",
     "ShieldTech Enforcer DM-4 'Crossover'",
     "Chicago",
-    "Haze Johansson",
+    "Akosua Johansson",
     "Déjà Vu"
   ],
   "district": "the Gray Zone",
@@ -201,7 +198,7 @@
     "posture_movement": "Stands with weight centered, shoulders relaxed but not slouched — a neutral baseline posture that broadcasts neither confidence nor anxiety. Moves with deliberate precision; economical gestures. Hands move with practiced control. Overall impression is of someone perpetually in a state of calm focus, as if solving a complex problem in real time. Maintains slight distance in social contexts; does not fidget.",
     "clothing_style": "Tier 3-4 blend: functional, well-maintained, deliberately unmemorable. Typically wears neutral-toned layered clothing — charcoal or dark gray long-sleeved shirts, sometimes a fitted dark vest without logos. Dark trousers (black or dark gray), always with functional pockets. Shoes are practical and worn: good-condition but aging synthetic leather boots or slip-ons, kept clean but not polished. A dark hooded jacket or long coat for movement between locations. No visible jewelry except occasionally a simple wrist cuff in matte black that covers the eye tattoo. Accessorizes with a shoulder bag or messenger satchel (no obvious branding, worn leather, practical organization). Overall aesthetic: someone dressing for utility and invisibility, not expression. Clothes are replaced before they become notable; nothing torn, nothing flashy."
   },
-  "image_prompt": "GLMZ, portrait of Reed Espinoza, 168cm lean mixed-heritage figure with warm golden-tan skin reflecting East Asian, Latin American, and South Asian ancestry. Dark brown eyes with subtle epicanthic fold, defined cheekbones, softly angular face with mid-face fullness. Chin-length blunt black hair, neutral expression of calm focus. Wears dark charcoal long-sleeved layered shirt, fitted dark vest, aged synthetic leather boots. Matte black wrist cuff covering small eye tattoo on left inner wrist. Faint silver-gray lattice of subdermal microfabricator array visible on right palm under bright neon-blue accent lighting. Shoulder messenger satchel, worn leather. Neutral posture, centered weight, precise economical movement. Standing in dimly lit GLMZ corridor or indistinct urban setting, sharp focus on face and hands. Neo-noir dystopian atmosphere with subtle neon accent lighting. High detail, photorealistic, cinematic. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Apollonia Espinoza, 168cm lean mixed-heritage figure with warm golden-tan skin reflecting East Asian, Latin American, and South Asian ancestry. Dark brown eyes with subtle epicanthic fold, defined cheekbones, softly angular face with mid-face fullness. Chin-length blunt black hair, neutral expression of calm focus. Wears dark charcoal long-sleeved layered shirt, fitted dark vest, aged synthetic leather boots. Matte black wrist cuff covering small eye tattoo on left inner wrist. Faint silver-gray lattice of subdermal microfabricator array visible on right palm under bright neon-blue accent lighting. Shoulder messenger satchel, worn leather. Neutral posture, centered weight, precise economical movement. Standing in dimly lit GLMZ corridor or indistinct urban setting, sharp focus on face and hands. Neo-noir dystopian atmosphere with subtle neon accent lighting. High detail, photorealistic, cinematic. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "East Asian": 45.2,
     "Hispanic/Latin American": 32.8,

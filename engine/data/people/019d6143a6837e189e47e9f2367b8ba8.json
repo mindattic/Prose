@@ -2,10 +2,7 @@
   "id": "019d6143a6837e189e47e9f2367b8ba8",
   "type": "character",
   "name": "Fridrik Venkatesh-Dlamini-Montalvo",
-  "aliases": [
-    "Emiliano Venkatesh-Dlamini-Montalvo",
-    "Emiliano"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 58,
   "status": "active",
   "location": "The Narrows, beneath the Kessler Interchange overpass, near Fullerton and Damen",
-  "description": "Emiliano Venkatesh-Dlamini-Montalvo is a broad-shouldered woman with deep umber skin mapped by a lifetime of work — knuckles scarred from decades of suturing in bad light, forearms ropy with muscle. Her hair is kept in tight silver locs pinned up with surgical clamps she forgets to remove. She has no cosmetic mods; the only thing artificial on her body is a secondhand haptic glove on her left hand that gives her fine motor feedback when her arthritis flares. She smells of antiseptic, clove oil, and something warm and starchy — she keeps a rice cooker running in the back of the container at all times, because she refuses to let a patient leave hungry.\n\nShe is the definition of steady. In thirty years of practicing medicine without a Helix Biosystems license, she has delivered over four hundred babies, set more bones than she can count, and talked down at least a dozen people who came to her with something other than a physical wound. She does not panic. She does not moralize. She charges what people can pay and writes off the rest in a ledger she keeps in her head, not on paper. Her authority in the community is absolute and quietly terrifying — she is the person even the gang lieutenants send their mothers to.",
+  "description": "Fridrik Venkatesh-Dlamini-Montalvo is a broad-shouldered woman with deep umber skin mapped by a lifetime of work — knuckles scarred from decades of suturing in bad light, forearms ropy with muscle. Her hair is kept in tight silver locs pinned up with surgical clamps she forgets to remove. She has no cosmetic mods; the only thing artificial on her body is a secondhand haptic glove on her left hand that gives her fine motor feedback when her arthritis flares. She smells of antiseptic, clove oil, and something warm and starchy — she keeps a rice cooker running in the back of the container at all times, because she refuses to let a patient leave hungry.\n\nShe is the definition of steady. In thirty years of practicing medicine without a Helix Biosystems license, she has delivered over four hundred babies, set more bones than she can count, and talked down at least a dozen people who came to her with something other than a physical wound. She does not panic. She does not moralize. She charges what people can pay and writes off the rest in a ledger she keeps in her head, not on paper. Her authority in the community is absolute and quietly terrifying — she is the person even the gang lieutenants send their mothers to.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -243,7 +240,7 @@
     "Crucible Industries Cryogenic Projector CP-7 'Absolute'",
     "Silver",
     "VitaCore FlowGuard Hemodynamic Regulator",
-    "Haze Johansson"
+    "Akosua Johansson"
   ],
   "district": "The Circuit",
   "physical_description": {
@@ -268,7 +265,7 @@
     "posture_movement": "She stands with her weight balanced, feet shoulder-width apart — a stance built for stability during procedures. Her movements are efficient and economical; she does not waste energy on gesture. When examining a patient, her posture bends forward with gravitational certainty, her hands moving with practiced precision. Her gait is steady but deliberate, favoring her right leg slightly when tired.",
     "clothing_style": "Tier 4 utilitarian. A worn steel-gray Carhartt work apron over layers of long-sleeved cotton and linen, pockets stuffed with bandages, vials, and instruments. Beneath: simple black or dark olive underlayers that don't show stains. Steel-toed medical clogs, scuffed and comfortable. A faded Iowan Collective surplus jacket hangs on a hook in the container. No jewelry except a thin brass ring on her right ring finger — never removed, origin unknown. She smells persistently of antiseptic, clove oil, and rice starch."
   },
-  "image_prompt": "Emiliano Venkatesh-Dlamini-Montalvo, 50s, multiethnic diaspora features — deep warm golden-brown skin reflecting African, Latin American, East Asian, and South Asian ancestry, moderate cheekbones, deep laugh lines, weathered face showing five decades of medical work. Silver-gray locs pinned in a crown with surgical clamps. Sharp brown eyes. Scarred knuckles, weathered medical-grade haptic glove on left hand with exposed sensor nodes, subdermal thermometer glinting in right index finger. Steel-gray Carhartt work apron over dark underlayers, steel-toed clogs. Standing in a cramped Great Lakes Metropolitan Zone med-container clinic, 2226, neon lights reflecting off her brown skin, surgical instruments visible in apron pockets, expression neutral but alert. Efficient posture, weight balanced. GLMZ 2200s medical practitioner aesthetic. Cinematic lighting, slightly cool overhead surgical lamp mixing with warm ambient neon. Dignified, weathered, uncompromising. --ar 2:3 --v 6",
+  "image_prompt": "Fridrik Venkatesh-Dlamini-Montalvo, 50s, multiethnic diaspora features — deep warm golden-brown skin reflecting African, Latin American, East Asian, and South Asian ancestry, moderate cheekbones, deep laugh lines, weathered face showing five decades of medical work. Silver-gray locs pinned in a crown with surgical clamps. Sharp brown eyes. Scarred knuckles, weathered medical-grade haptic glove on left hand with exposed sensor nodes, subdermal thermometer glinting in right index finger. Steel-gray Carhartt work apron over dark underlayers, steel-toed clogs. Standing in a cramped Great Lakes Metropolitan Zone med-container clinic, 2226, neon lights reflecting off her brown skin, surgical instruments visible in apron pockets, expression neutral but alert. Efficient posture, weight balanced. GLMZ 2200s medical practitioner aesthetic. Cinematic lighting, slightly cool overhead surgical lamp mixing with warm ambient neon. Dignified, weathered, uncompromising. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 26.5,
     "Sub-Saharan African": 26.5,

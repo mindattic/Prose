@@ -2,10 +2,7 @@
   "id": "019d6143a73d79a9b07a41036123a4a9",
   "type": "character",
   "name": "Chimamanda Fredriksen",
-  "aliases": [
-    "Tarn Fredriksen",
-    "Tarn"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 55,
   "status": "active",
   "location": "Steamvent Alley — geothermal district, hot and chemical-smelling, near Armitage and Milwaukee",
-  "description": "Tarn Fredriksen is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 55, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Tarn Fredriksen plans to keep it that way. She works as a extraction specialist out of Steamvent Alley, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Tarn Fredriksen is known for getting the job done and not asking questions that would make the job harder to stomach.",
+  "description": "Chimamanda Fredriksen is broad-shouldered and heavy, carrying their weight like armor rather than burden. At 55, she has soft features that belie the chrome underneath — people underestimate her once, usually only once. The chrome is visible — hydraulic joints in knees and elbows — absorbs falls, amplifies strikes — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Chimamanda Fredriksen plans to keep it that way. She works as a extraction specialist out of Steamvent Alley, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nIn the runner community, Chimamanda Fredriksen is known for getting the job done and not asking questions that would make the job harder to stomach.",
   "psychology": {
     "facet_weights": {
       "wound": 0.92,
@@ -300,7 +297,7 @@
     "posture_movement": "Moves with economical precision — every motion calculated for efficiency and minimal energy waste. Sits with weight distributed to absorb quick vertical movement. Favors her left side slightly when standing. Stance is wide, grounded. When at rest, she is truly still — no fidgeting, no nervous tells. When moving, the hydraulics whisper.",
     "clothing_style": "Tier 4 practicality — reinforced cargo pants with thigh pockets for tools or sidearm, tactical vest over a loose-fitting thermal base layer to accommodate augmentation cooling ports. Weather-resistant synthetic jacket with hood. Heavy boots with reinforced heel plating. No logos, no flash, no color beyond functional black and dark gray. Clothing shows wear and careful repair. No jewelry. All garments have concealment capability."
   },
-  "image_prompt": "Tarn Fredriksen, 2226 neo-noir character, 178cm tall broad-shouldered muscular build. Warm bronze-toned skin blending Indigenous American, Northern European, East Asian, and South Asian heritage — medium-brown complexion with golden olive undertones. Deep brown left eye, chrome cybernetic right eye with amber LED reticle. Steel gray hair braided back. Prominent cheekbones, laugh lines, left temple scar fading into hairline. Exposed chrome hydraulic framework visible at elbows and knees integrated with muscle tissue. Old burn scarring on right shoulder and arm. Wearing black reinforced cargo tactical vest over thermal base layer, weather-resistant jacket with hood, heavy reinforced boots. Faded geometric tactical tattoo on left wrist. Grounded wide stance, economical movement. Geothermal Steamvent district setting, low industrial lighting casting amber and blue shadows, slight chemical atmospheric haze, chrome framework catching light. GLMZ 2200s aesthetic, utilitarian and worn but functional. --ar 2:3 --v 6",
+  "image_prompt": "Chimamanda Fredriksen, 2226 neo-noir character, 178cm tall broad-shouldered muscular build. Warm bronze-toned skin blending Indigenous American, Northern European, East Asian, and South Asian heritage — medium-brown complexion with golden olive undertones. Deep brown left eye, chrome cybernetic right eye with amber LED reticle. Steel gray hair braided back. Prominent cheekbones, laugh lines, left temple scar fading into hairline. Exposed chrome hydraulic framework visible at elbows and knees integrated with muscle tissue. Old burn scarring on right shoulder and arm. Wearing black reinforced cargo tactical vest over thermal base layer, weather-resistant jacket with hood, heavy reinforced boots. Faded geometric tactical tattoo on left wrist. Grounded wide stance, economical movement. Geothermal Steamvent district setting, low industrial lighting casting amber and blue shadows, slight chemical atmospheric haze, chrome framework catching light. GLMZ 2200s aesthetic, utilitarian and worn but functional. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Indigenous American": 43.9,
     "Northern European": 26.1,

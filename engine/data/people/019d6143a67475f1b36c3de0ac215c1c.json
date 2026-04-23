@@ -2,10 +2,7 @@
   "id": "019d6143a67475f1b36c3de0ac215c1c",
   "type": "character",
   "name": "Albrecht Lindström",
-  "aliases": [
-    "Haze Lindström",
-    "Haze"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 12,
   "status": "active",
   "location": "Copperhead, near Fullerton and Damen",
-  "description": "Haze Lindström is twelve going on thirty-five, with the calculating eyes of someone who has been studying people for survival since he was old enough to read danger in a posture. He is slight and quick, with close-cropped hair he keeps tight because loose hair catches in the machinery of the Copperhead alleys. His skin is very dark with a reddish undertone, his nose his Malawian grandmother's, his mouth his Portuguese grandfather's — a wide, expressive mouth he has learned to keep still. He has one cosmetic modification: cat ears, pale gold, that a Cuts lieutenant gave him eight months ago as a mark of favor. He knows they are a leash as much as an ornament. He wears them anyway.\n\nHaze Lindström runs errands for the Copperhead Cuts — nothing criminal yet, carefully not yet, because the Cuts' local lieutenant Somebody-Somebody has a rule about under-fourteens and what they carry. Haze Lindström fetches food, delivers verbal messages, watches corners and whistles a particular pattern if Ferrogate Transit enforcers appear. He is saving every coin he does not spend on food, for a reason he has not told anyone. He is smarter than almost everyone around him gives him credit for, and he knows this, and has decided that being underestimated is a resource.",
+  "description": "Albrecht Lindström is twelve going on thirty-five, with the calculating eyes of someone who has been studying people for survival since he was old enough to read danger in a posture. He is slight and quick, with close-cropped hair he keeps tight because loose hair catches in the machinery of the Copperhead alleys. His skin is very dark with a reddish undertone, his nose his Malawian grandmother's, his mouth his Portuguese grandfather's — a wide, expressive mouth he has learned to keep still. He has one cosmetic modification: cat ears, pale gold, that a Cuts lieutenant gave him eight months ago as a mark of favor. He knows they are a leash as much as an ornament. He wears them anyway.\n\nAlbrecht Lindström runs errands for the Copperhead Cuts — nothing criminal yet, carefully not yet, because the Cuts' local lieutenant Somebody-Somebody has a rule about under-fourteens and what they carry. Albrecht Lindström fetches food, delivers verbal messages, watches corners and whistles a particular pattern if Ferrogate Transit enforcers appear. He is saving every coin he does not spend on food, for a reason he has not told anyone. He is smarter than almost everyone around him gives him credit for, and he knows this, and has decided that being underestimated is a resource.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -192,7 +189,7 @@
     "posture_movement": "Moves with economical precision, never wasting motion. Stands with weight balanced on the balls of his feet, ready to shift direction instantly. Eyes track corners and movement instinctively. Keeps his hands visible and his body language neutral—survival-trained in reading and avoiding escalation. Sits in corners when at rest, back against walls.",
     "clothing_style": "Tier 3-4 street wear: oversized gray synthetic hoodie (salvaged, frayed at cuffs), dark gray cargo pants with multiple pockets (Cuts-issue, standard runner kit), worn black synth-leather boots resoled twice, a faded red Ferrogate Transit baseball cap worn low. A thin braided cord around his left wrist (no apparent function—personal talisman or gang marker, unclear). No jewelry. Clothes are functional, durable, and worn—tier-appropriate for a kid on the margins."
   },
-  "image_prompt": "GLMZ street character portrait: Haze Lindström, 142cm tall, wiry 14-year-old with warm medium-brown skin blending Southeast Asian, Indigenous American, East Asian, and Hispanic/Latin heritage. High prominent cheekbones and sharp jawline, dark intense eyes, pale gold cosmetic cat ear geneware implants above natural ears marking gang status. Black close-cropped hair, wearing oversized gray synthetic hoodie with frayed cuffs, dark gray Cuts-issue cargo pants, worn black resoled synth-leather boots, faded red Ferrogate Transit baseball cap worn low. Thin braided cord around left wrist. Economical posture, weight on balls of feet, eyes tracking movement. Urban alley setting, neon-lit industrial backdrop, cool blues and amber streetlight catching golden undertones in skin. Gritty, street-level perspective, survival-worn but maintained appearance. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ street character portrait: Albrecht Lindström, 142cm tall, wiry 14-year-old with warm medium-brown skin blending Southeast Asian, Indigenous American, East Asian, and Hispanic/Latin heritage. High prominent cheekbones and sharp jawline, dark intense eyes, pale gold cosmetic cat ear geneware implants above natural ears marking gang status. Black close-cropped hair, wearing oversized gray synthetic hoodie with frayed cuffs, dark gray Cuts-issue cargo pants, worn black resoled synth-leather boots, faded red Ferrogate Transit baseball cap worn low. Thin braided cord around left wrist. Economical posture, weight on balls of feet, eyes tracking movement. Urban alley setting, neon-lit industrial backdrop, cool blues and amber streetlight catching golden undertones in skin. Gritty, street-level perspective, survival-worn but maintained appearance. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Southeast Asian": 31.9,
     "Indigenous American": 30.6,

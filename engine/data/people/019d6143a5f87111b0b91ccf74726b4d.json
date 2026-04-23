@@ -2,10 +2,7 @@
   "id": "019d6143a5f87111b0b91ccf74726b4d",
   "type": "character",
   "name": "Dakota Okafor",
-  "aliases": [
-    "Kwame Okafor",
-    "Kwame"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 34,
   "status": "active",
   "location": "The Narrows — a cramped workshop above a noodle stall on Fistula Passage, near the Blackpipe Corridor junction, near Damen and Armitage",
-  "description": "Kwame Okafor is slight and precise in the way of someone who has learned that carelessness is fatal. He stands just under average height, with warm brown skin, a narrow jaw perpetually shadowed with stubble he never quite shaves, and long fingers that move with the focused economy of a surgeon. His hair is cropped to an undifferentiated fuzz. The only cosmetic mod he's invested in is a bioluminescent pigment woven into the skin of his forearms — pale blue-white lines that trace the paths of his veins, which he uses as his own light source when working in the dark. He smells faintly of solder and the particular chemical tang of biosynthetic epidermal overlay.\n\nHe has an almost pathological need to be underestimated. He cultivates a nervous, apologetic manner — averted eyes, self-deprecating half-laughs, reflexive deference — that causes people to discount him immediately. In reality he is one of the finest identity fabricators working below Tier 3, capable of producing documents and biometric overlays that pass Axiom checkpoint scanners. He finds deep, quiet satisfaction in the craft of making someone new — he thinks of it as giving people second chances, even when the people paying are not looking for redemption.",
+  "description": "Dakota Okafor is slight and precise in the way of someone who has learned that carelessness is fatal. He stands just under average height, with warm brown skin, a narrow jaw perpetually shadowed with stubble he never quite shaves, and long fingers that move with the focused economy of a surgeon. His hair is cropped to an undifferentiated fuzz. The only cosmetic mod he's invested in is a bioluminescent pigment woven into the skin of his forearms — pale blue-white lines that trace the paths of his veins, which he uses as his own light source when working in the dark. He smells faintly of solder and the particular chemical tang of biosynthetic epidermal overlay.\n\nHe has an almost pathological need to be underestimated. He cultivates a nervous, apologetic manner — averted eyes, self-deprecating half-laughs, reflexive deference — that causes people to discount him immediately. In reality he is one of the finest identity fabricators working below Tier 3, capable of producing documents and biometric overlays that pass Axiom checkpoint scanners. He finds deep, quiet satisfaction in the craft of making someone new — he thinks of it as giving people second chances, even when the people paying are not looking for redemption.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -211,7 +208,7 @@
     "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
     "Noir Dining",
     "GLMZ",
-    "Frost Boudiaf",
+    "Folakemi Boudiaf",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane",
     "Hearthstone Firearms Trail-357 'Pathfinder'",
     "The Pale Mile"
@@ -236,7 +233,7 @@
     "posture_movement": "Habitually apologetic and self-effacing — shoulders slightly rounded, head often tilted in a listening posture, averted eyes that dart upward only when addressed directly. Movements are economical and precise, with no wasted motion. His hands move with surgical deliberation when working, but twitch slightly with nervous energy when in conversation or waiting.",
     "clothing_style": "Tier 4 utilitarian wear favoring dark colors and loose fit. Black or charcoal thermal underlayers, often visible at the cuffs. A worn synthetic jacket from a generic corpo supplier (faded Axiom logistics branding, pockets modified for tool storage). Loose-fitting cargo pants with multiple sealed pockets. No jewelry except a scratched titanium watch with a cracked face that he never bothers to repair. Shoes are generic black synthetics, scuffed and comfortable. Everything is maintained but not maintained — clean enough, but with the patina of constant use."
   },
-  "image_prompt": "Kwame Okafor, a mixed-heritage neo-noir technician from GLMZ 2226. Deep warm-brown complexion with golden and earthy undertones reflecting South Asian, Sub-Saharan African, Middle Eastern, and Indigenous American ancestry blended seamlessly. Dark eyes with faint luminescent grid overlay visible under direct light. Bioluminescent blue-white tracery glowing along both forearms, illuminating vein pathways. Short dark brown hair cropped to uniform fuzz, perpetual three-day stubble darkening his defined jawline. Lean, wiry frame hunched in apologetic posture. Wearing black thermal underlayer visible at cuffs, worn faded Axiom logistics synthetic jacket with modified tool pockets, dark cargo pants, scuffed black shoes. Scratched titanium watch with cracked face. Standing under neon workshop lighting, caught mid-fine-work with precise hand positioning. Nervous energy in his twitching fingers. Nocturnal pallor despite warm heritage complexion. Neo-noir 2220s aesthetic, gritty industrial setting, moody cool-blue and warm-amber lighting casting his bioluminescent arms in sharp relief. --ar 2:3 --v 6",
+  "image_prompt": "Dakota Okafor, a mixed-heritage neo-noir technician from GLMZ 2226. Deep warm-brown complexion with golden and earthy undertones reflecting South Asian, Sub-Saharan African, Middle Eastern, and Indigenous American ancestry blended seamlessly. Dark eyes with faint luminescent grid overlay visible under direct light. Bioluminescent blue-white tracery glowing along both forearms, illuminating vein pathways. Short dark brown hair cropped to uniform fuzz, perpetual three-day stubble darkening his defined jawline. Lean, wiry frame hunched in apologetic posture. Wearing black thermal underlayer visible at cuffs, worn faded Axiom logistics synthetic jacket with modified tool pockets, dark cargo pants, scuffed black shoes. Scratched titanium watch with cracked face. Standing under neon workshop lighting, caught mid-fine-work with precise hand positioning. Nervous energy in his twitching fingers. Nocturnal pallor despite warm heritage complexion. Neo-noir 2220s aesthetic, gritty industrial setting, moody cool-blue and warm-amber lighting casting his bioluminescent arms in sharp relief. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 35.9,
     "Sub-Saharan African": 32,

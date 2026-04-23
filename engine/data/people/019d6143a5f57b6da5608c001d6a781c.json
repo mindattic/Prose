@@ -2,10 +2,7 @@
   "id": "019d6143a5f57b6da5608c001d6a781c",
   "type": "character",
   "name": "Epifanio Erikstad",
-  "aliases": [
-    "Rio Erikstad",
-    "Rio"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 34,
   "status": "active",
   "location": "The Circuit — neon-lit entertainment and vice district, near Damen and Armitage",
-  "description": "Rio Erikstad is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 34, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Rio Erikstad plans to keep it that way. She works as a surveillance specialist out of The Circuit, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Rio Erikstad describe her as a precision instrument — point her at a problem and get out of the way.",
+  "description": "Epifanio Erikstad is stocky and solid, with hands that look like they were built for breaking things and a face that confirms it. At 34, her face is memorable in a profession that rewards forgettability, and she has learned to compensate. The chrome is visible — cyberears with directional microphones and sound dampening — can hear whispers a — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Epifanio Erikstad plans to keep it that way. She works as a surveillance specialist out of The Circuit, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Epifanio Erikstad describe her as a precision instrument — point her at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.41,
@@ -301,7 +298,7 @@
     "posture_movement": "Moves with deliberate economy — no wasted motion, weight always centered over the balls of her feet. Stands in slight forward lean, shoulders rounded inward as if perpetually listening or preparing for threat assessment. Head rotates to track sounds independently of body movement. Hands rest in neutral position, ready. Rarely relaxes the baseline tension in her frame.",
     "clothing_style": "Tier 3-4 functional wardrobe optimized for surveillance and fieldwork — matte-black synthleather jacket with multiple interior pockets for equipment, reinforced cuffs. Cargo pants or tactical trousers in dark charcoal, fitted enough for mobility. Steel-toed boots, broken in and scarred. Wears no jewelry except a cheap analog watch and a small RFID key fob on a carabiner. Clothing shows wear and patching, but is meticulously maintained."
   },
-  "image_prompt": "Rio Erikstad, 168cm tall, stocky muscular build, medium-warm brown skin with golden undertones reflecting Southeast Asian, Sub-Saharan African, Latin American, and Eastern European ancestry. Angular weathered face with prominent cheekbones, squared jaw, deep warm brown eyes. Dark brown hair with silver threading pulled into tight braid. Sleek chrome cyberears with black acoustic baffles and visible temporal ports. Multiple scars visible: semicircular scar at skull base, linear forearm scar, knuckle impact scars, collarbone burn scar. Wearing matte-black synthleather jacket with reinforced cuffs, dark charcoal tactical trousers, steel-toed scarred boots. Slight forward lean, hands in neutral ready position, perpetual listening posture. GLMZ 2200s aesthetic, nocturnal surveillance operative, moody cool lighting with subtle amber highlights catching skin and chrome, gritty industrial setting, photorealistic --ar 2:3 --v 6",
+  "image_prompt": "Epifanio Erikstad, 168cm tall, stocky muscular build, medium-warm brown skin with golden undertones reflecting Southeast Asian, Sub-Saharan African, Latin American, and Eastern European ancestry. Angular weathered face with prominent cheekbones, squared jaw, deep warm brown eyes. Dark brown hair with silver threading pulled into tight braid. Sleek chrome cyberears with black acoustic baffles and visible temporal ports. Multiple scars visible: semicircular scar at skull base, linear forearm scar, knuckle impact scars, collarbone burn scar. Wearing matte-black synthleather jacket with reinforced cuffs, dark charcoal tactical trousers, steel-toed scarred boots. Slight forward lean, hands in neutral ready position, perpetual listening posture. GLMZ 2200s aesthetic, nocturnal surveillance operative, moody cool lighting with subtle amber highlights catching skin and chrome, gritty industrial setting, photorealistic --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Southeast Asian": 33.6,
     "Hispanic/Latin American": 22,

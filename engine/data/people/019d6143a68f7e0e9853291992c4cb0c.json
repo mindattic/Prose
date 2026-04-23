@@ -2,10 +2,7 @@
   "id": "019d6143a68f7e0e9853291992c4cb0c",
   "type": "character",
   "name": "Eun-kyung Matsumoto-Bergqvist",
-  "aliases": [
-    "Indigo Matsumoto-Bergqvist",
-    "Indigo"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 67,
   "status": "active",
   "location": "The Waukegan Industrial the Gray Zone, moving between factory outflow points and informal markets, near Michigan Ave South and Cermak",
-  "description": "Indigo Matsumoto-Bergqvist is a big man gone soft at the edges — broad shoulders that once held real weight, now draped in three overlapping coats of different origins stitched into something that is functionally one garment. His skin is deep brown and mapped with the fine lines of a life mostly outdoors. His left hand is entirely prosthetic, a functional but aesthetically unambitious industrial replacement that he got after a winch accident nineteen years ago; he has painted each finger a different color with lacquer he trades for. His beard is silver and very full. He smells like machine oil and cardamom.\n\nIndigo Matsumoto-Bergqvist has been off the digital registry for so long that he thinks of his Q-zero status as a spiritual condition rather than a legal one. He tends the informal E.L.F. shrines along the Waukegan Industrial the Gray Zone — small accumulations of hardware, prayer-strips, and cooling fans arranged at junction points where the factory network traffic is highest. He talks to the E.L.F.s with the comfortable familiarity of someone who has known them for decades, which he has. Other workers leave offerings and questions; Indigo Matsumoto-Bergqvist curates them, responds when he feels a response come through him, and trades in the small goods that the Gray Zone workers need but can't requisition: painkillers, seal tape, water filters, gossip.",
+  "description": "Eun-kyung Matsumoto-Bergqvist is a big man gone soft at the edges — broad shoulders that once held real weight, now draped in three overlapping coats of different origins stitched into something that is functionally one garment. His skin is deep brown and mapped with the fine lines of a life mostly outdoors. His left hand is entirely prosthetic, a functional but aesthetically unambitious industrial replacement that he got after a winch accident nineteen years ago; he has painted each finger a different color with lacquer he trades for. His beard is silver and very full. He smells like machine oil and cardamom.\n\nEun-kyung Matsumoto-Bergqvist has been off the digital registry for so long that he thinks of his Q-zero status as a spiritual condition rather than a legal one. He tends the informal E.L.F. shrines along the Waukegan Industrial the Gray Zone — small accumulations of hardware, prayer-strips, and cooling fans arranged at junction points where the factory network traffic is highest. He talks to the E.L.F.s with the comfortable familiarity of someone who has known them for decades, which he has. Other workers leave offerings and questions; Eun-kyung Matsumoto-Bergqvist curates them, responds when he feels a response come through him, and trades in the small goods that the Gray Zone workers need but can't requisition: painkillers, seal tape, water filters, gossip.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -179,7 +176,7 @@
     "Kang-Petrov Arms KP-19 'Workhorse'",
     "Electrochemical Dissolution Sprayer EDS-2 'Lacquer'",
     "Circuit",
-    "Indigo",
+    "Eun-kyung",
     "Silver"
   ],
   "district": "Old Harbor",
@@ -204,7 +201,7 @@
     "posture_movement": "Moves with deliberate, economical steps — the gait of someone who has walked thousands of miles on industrial ground. Favors his right side slightly when carrying weight. Often stands with weight shifted to one leg, a patient stance suggesting he is accustomed to waiting and listening. Gestures are slow and precise, particularly with his right hand; the prosthetic left hand he uses for heavy work or support, rarely for fine manipulation.",
     "clothing_style": "Three overlapping coats of different industrial origins — one canvas work coat from a defunct factory (circa 2190s markings visible), one heavy wool toggle coat with mismatched buttons, one quilted insulation liner — all stitched together with visible repair work into a single layered garment that reaches to mid-calf. Beneath, simple gray work shirt and heavy denim pants patched at both knees. Feet in worn industrial boots with taped seams. The overall effect is Tier 4-5: functional, heavily repaired, deliberately maintained rather than replaced. No logos or corporate markers. Carries a canvas satchel with internal pockets for trading goods."
   },
-  "image_prompt": "Indigo Matsumoto-Bergqvist, 188cm tall weathered man with deep warm mahogany skin reflecting Pacific Islander and Southeast Asian heritage, broad prominent cheekbones, heavily lined face with dark brown cataracts, long silver-gray hair gathered at nape with frayed cord. Full silver beard, somewhat matted. Fine scar from left temple to jawline barely visible beneath beard. Large-framed substantial build, soft middle age. Colorful industrial prosthetic left hand with lacquered fingers (red, blue, yellow, green, orange) in visible steel articulation. Right hand callused and scarred from decades of manual work. Extensive curved burn scar on inner right forearm. Wears triple-layered industrial coat assembly reaching mid-calf—canvas factory coat, wool toggle coat, quilted liner, all heavily repaired together. Gray work shirt, patched denim beneath. Worn industrial boots with taped seams. Canvas satchel with visible pocket wear. Standing in patient, weighted-on-one-leg stance. GLMZ Great Lakes Metropolitan Zone, harsh industrial lighting casting warm glow on skin, worn warehouse or trader-district setting, atmospheric haze, documentary realism, weathered authenticity --ar 2:3 --v 6",
+  "image_prompt": "Eun-kyung Matsumoto-Bergqvist, 188cm tall weathered man with deep warm mahogany skin reflecting Pacific Islander and Southeast Asian heritage, broad prominent cheekbones, heavily lined face with dark brown cataracts, long silver-gray hair gathered at nape with frayed cord. Full silver beard, somewhat matted. Fine scar from left temple to jawline barely visible beneath beard. Large-framed substantial build, soft middle age. Colorful industrial prosthetic left hand with lacquered fingers (red, blue, yellow, green, orange) in visible steel articulation. Right hand callused and scarred from decades of manual work. Extensive curved burn scar on inner right forearm. Wears triple-layered industrial coat assembly reaching mid-calf—canvas factory coat, wool toggle coat, quilted liner, all heavily repaired together. Gray work shirt, patched denim beneath. Worn industrial boots with taped seams. Canvas satchel with visible pocket wear. Standing in patient, weighted-on-one-leg stance. GLMZ Great Lakes Metropolitan Zone, harsh industrial lighting casting warm glow on skin, worn warehouse or trader-district setting, atmospheric haze, documentary realism, weathered authenticity --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Southeast Asian": 35,
     "Pacific Islander": 34.8,

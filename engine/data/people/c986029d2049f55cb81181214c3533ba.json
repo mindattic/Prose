@@ -3,10 +3,7 @@
   "rating": 80,
   "type": "character",
   "name": "Alfonso Magnúsdóttir-Shin-Bui",
-  "aliases": [
-    "Haze Magnúsdóttir-Shin-Bui",
-    "Haze"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "",
   "pronouns": "",
@@ -14,7 +11,7 @@
   "age": 0,
   "status": "alive",
   "location": "An office in the Canopy decorated with Turing test memorabilia and philosophical texts — clients aren't sure if the decor is ironic, near Clark and Addison",
-  "description": "Haze Magnúsdóttir-Shin-Bui occupies a professional niche that barely existed fifteen years ago and is now one of the fastest-growing specializations in investigative work: synthetic cases. As synthetic beings become more sophisticated, more prevalent, and more capable of operating undetected among humans, the demand for someone who can tell the difference — and who can investigate crimes involving synthetics with nuance rather than prejudice — has exploded.\n\nLucien was a philosophy professor before he was an investigator, and he approaches every case with the analytical rigor of an academic and the practical urgency of a PI. His work involves identity verification (is this person human or synthetic?), behavioral analysis (is this synthetic acting within its programming or has it deviated?), and crime investigation (when a synthetic is accused of a crime, what actually happened — and when a crime is committed against a synthetic, does anyone care?). The last question troubles him more than he admits.\n\nHis reputation is built on fairness. In a city where synthetics are legally property, Lucien is one of the few investigators who treats them as subjects rather than objects. This has made him simultaneously popular with the underground synthetic community and unpopular with certain corporate clients who want their synthetic problems solved with a power switch, not an investigation. He maintains that his approach produces better results, which is true, but that's not why he does it. He does it because he genuinely isn't sure synthetics aren't people, and he'd rather err on the side of decency.",
+  "description": "Alfonso Magnúsdóttir-Shin-Bui occupies a professional niche that barely existed fifteen years ago and is now one of the fastest-growing specializations in investigative work: synthetic cases. As synthetic beings become more sophisticated, more prevalent, and more capable of operating undetected among humans, the demand for someone who can tell the difference — and who can investigate crimes involving synthetics with nuance rather than prejudice — has exploded.\n\nLucien was a philosophy professor before he was an investigator, and he approaches every case with the analytical rigor of an academic and the practical urgency of a PI. His work involves identity verification (is this person human or synthetic?), behavioral analysis (is this synthetic acting within its programming or has it deviated?), and crime investigation (when a synthetic is accused of a crime, what actually happened — and when a crime is committed against a synthetic, does anyone care?). The last question troubles him more than he admits.\n\nHis reputation is built on fairness. In a city where synthetics are legally property, Lucien is one of the few investigators who treats them as subjects rather than objects. This has made him simultaneously popular with the underground synthetic community and unpopular with certain corporate clients who want their synthetic problems solved with a power switch, not an investigation. He maintains that his approach produces better results, which is true, but that's not why he does it. He does it because he genuinely isn't sure synthetics aren't people, and he'd rather err on the side of decency.",
   "psychology": {
     "facet_weights": {
       "wound": 0,
@@ -59,7 +56,7 @@
   "story_hooks": [
     "Lucien is hired to verify whether a specific individual is human or synthetic — and his investigation reveals that the subject genuinely doesn't know the answer themselves",
     "A synthetic client asks Lucien to investigate their own past — their memories begin abruptly four years ago and they want to know who they were before",
-    "Lucien discovers that Idris Forsberg-Quaye, a respected fellow PI, is actually a synthetic — and has to decide whether his professional obligation to report overrides his personal ethic of treating synthetics as persons"
+    "Lucien discovers that Atharv Forsberg-Quaye, a respected fellow PI, is actually a synthetic — and has to decide whether his professional obligation to report overrides his personal ethic of treating synthetics as persons"
   ],
   "narrative_function": "",
   "augmentations": "",
@@ -144,7 +141,7 @@
     "posture_movement": "Walks with deliberate slowness, as if always thinking through a problem. Hands are expressive when speaking but otherwise remain still. Makes direct eye contact even when uncomfortable — a habit from his philosophy teaching days. Often leans forward when listening, genuinely engaged.",
     "clothing_style": "Tier 2-3 professional: tailored but worn. Favors high-quality neutral fabrics — grey linen, charcoal wool, cream cotton. His jacket is always pressed but never new. Wire-rimmed glasses on a worn leather cord. No visible corporate logos or status markers. Wears a vintage analog watch (mechanical, not net-connected) on a faded cloth band. His shoes are good leather, well-maintained but scuffed from walking. He dresses like someone who has money but doesn't care about displaying it."
   },
-  "image_prompt": "GLMZ portrait of Haze Magnúsdóttir-Shin-Bui, a lean 178cm tall mixed-heritage investigator with warm medium tan skin and golden undertones. Southeast Asian-dominant phenotype with refined angular cheekbones, Northern European definition, and Sub-Saharan African warmth blended through his features. Deep brown eyes with amber undertones, naturally black hair with silver at temples swept back with a small temple braid. Faint surgical scar through left eyebrow. Wire-rimmed glasses on worn leather cord. Wearing well-tailored grey linen jacket, charcoal wool, and cream cotton — professional but deliberately unworn-looking. Vintage mechanical watch on faded cloth band. Small indigo Turing machine tattoo visible on left inner wrist. Direct, engaged expression. Standing in dim neon-lit urban Great Lakes setting, cool blue and warm amber lighting reflecting off wet pavement. Thoughtful posture, hands still and composed. Neo-noir neo-noir atmosphere, 2200s aesthetics, scholarly but street-worn. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ portrait of Alfonso Magnúsdóttir-Shin-Bui, a lean 178cm tall mixed-heritage investigator with warm medium tan skin and golden undertones. Southeast Asian-dominant phenotype with refined angular cheekbones, Northern European definition, and Sub-Saharan African warmth blended through his features. Deep brown eyes with amber undertones, naturally black hair with silver at temples swept back with a small temple braid. Faint surgical scar through left eyebrow. Wire-rimmed glasses on worn leather cord. Wearing well-tailored grey linen jacket, charcoal wool, and cream cotton — professional but deliberately unworn-looking. Vintage mechanical watch on faded cloth band. Small indigo Turing machine tattoo visible on left inner wrist. Direct, engaged expression. Standing in dim neon-lit urban Great Lakes setting, cool blue and warm amber lighting reflecting off wet pavement. Thoughtful posture, hands still and composed. Neo-noir neo-noir atmosphere, 2200s aesthetics, scholarly but street-worn. --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "Southeast Asian": 39.8,

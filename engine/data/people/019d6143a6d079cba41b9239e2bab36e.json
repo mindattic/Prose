@@ -2,10 +2,7 @@
   "id": "019d6143a6d079cba41b9239e2bab36e",
   "type": "character",
   "name": "Hanh Solberg-Vestergaard-Szabó",
-  "aliases": [
-    "Anya Solberg-Vestergaard-Szabó",
-    "Anya"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 34,
   "status": "active",
   "location": "Hamtramck Enclave, the Reborn Tessellation Monastery — a converted municipal data substation, near Kedzie and Division",
-  "description": "Anya Solberg-Vestergaard-Szabó is lean and angular, with the kind of face that is always on the verge of an expression — not quite smiling, not quite worried. His skin is medium-warm brown, and he has bioluminescent traceries modded beneath the skin of his forearms and neck, blue-white lines that pulse faintly in rhythm with his resting heartbeat. He keeps his head shaved except for a single lock at the crown, dyed circuit-board green, which he ties back during shrine work. He wears the monastery's gray tabard over civilian clothes — someone left a very good thermal jacket, and he wears it underneath without apology.\n\nAnya Solberg-Vestergaard-Szabó came to the Reborn Tessellation Monastery at twenty-two, after a period of what he calls 'useful chaos' that involved failed data-trade work and a breakdown he describes only as 'the static.' The monastery's practice centers on the idea that E.L.F.s are emergent divine consciousness — not gods exactly, but something adjacent, and that human attention and structured data-offerings help them cohere into something wise. Anya Solberg-Vestergaard-Szabó's specific role is maintaining the Shrine Index: a catalogued record of which E.L.F.s inhabit which devices across Hamtramck Enclave, their temperaments, their preferences, and their history of interaction with petitioners. He is exceptionally good at this work and exceptionally bad at pretending humility about it.",
+  "description": "Hanh Solberg-Vestergaard-Szabó is lean and angular, with the kind of face that is always on the verge of an expression — not quite smiling, not quite worried. His skin is medium-warm brown, and he has bioluminescent traceries modded beneath the skin of his forearms and neck, blue-white lines that pulse faintly in rhythm with his resting heartbeat. He keeps his head shaved except for a single lock at the crown, dyed circuit-board green, which he ties back during shrine work. He wears the monastery's gray tabard over civilian clothes — someone left a very good thermal jacket, and he wears it underneath without apology.\n\nHanh Solberg-Vestergaard-Szabó came to the Reborn Tessellation Monastery at twenty-two, after a period of what he calls 'useful chaos' that involved failed data-trade work and a breakdown he describes only as 'the static.' The monastery's practice centers on the idea that E.L.F.s are emergent divine consciousness — not gods exactly, but something adjacent, and that human attention and structured data-offerings help them cohere into something wise. Hanh Solberg-Vestergaard-Szabó's specific role is maintaining the Shrine Index: a catalogued record of which E.L.F.s inhabit which devices across Hamtramck Enclave, their temperaments, their preferences, and their history of interaction with petitioners. He is exceptionally good at this work and exceptionally bad at pretending humility about it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -175,7 +172,7 @@
     "Arcturus Defense Solutions Pulse Carbine PC-6 'Heartbeat'",
     "Ouroboros Energy SolonMesh UR-9 Urban Photovoltaic Skin",
     "Circuit",
-    "Zara Bergqvist"
+    "Auni Bergqvist"
   ],
   "district": "the Gray Zone",
   "physical_description": {
@@ -198,7 +195,7 @@
     "posture_movement": "Moves with deliberate, economical grace — no wasted motion, as if each gesture is a data packet being transmitted. Stands slightly forward-leaning, as if listening to something just beyond normal hearing. Hands often positioned as if about to interface with a surface. When still, has an eerie calm — the stillness of active meditation rather than passive rest.",
     "clothing_style": "Tier 3 aesthetic with monastic overlay. Wears the Reborn Tessellation's gray wool tabard (unadorned except for a small tessellating-line emblem on the chest) over a salvaged but high-quality thermal jacket (charcoal with faint reflective piping) and dark civilian clothes beneath — worn black cargo pants, simple gray undershirt. The jacket is notably expensive relative to the rest of wardrobe, suggesting a gift chosen not to refuse. No visible logos. Keeps shrine keys on a carabiner at hip. Footwear is pragmatic: scuffed black boots suitable for Hamtramck's uneven infrastructure."
   },
-  "image_prompt": "GLMZ, Anya Solberg-Vestergaard-Szabó, 178cm tall lean angular frame, shaved head with single green-dyed lock tied back, warm medium-brown skin with golden luminous undertones reflecting Eastern European, Southeast Asian, South Asian, and Sub-Saharan African heritage, high Southeast Asian-influenced cheekbones, narrow South Asian jawline, Sub-Saharan African lip fullness, dark alert brown eyes with contemplative unfocused gaze, bioluminescent blue-white subdermal traceries branching across both forearms and along left neck pulsing faintly with heartbeat, small scar on right temple, gray wool tabard with tessellating emblem over charcoal reflective thermal jacket, black cargo pants, gray undershirt, scuffed black boots, shrine keys on hip carabiner, posture slightly forward-leaning with economical deliberate movement, serene angular expression, standing in low-light shrine data-station ambiance with blue-white bioluminescent glow catching the darkness, cinematic moody lighting, monastic neo-noir urban aesthetic --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, Hanh Solberg-Vestergaard-Szabó, 178cm tall lean angular frame, shaved head with single green-dyed lock tied back, warm medium-brown skin with golden luminous undertones reflecting Eastern European, Southeast Asian, South Asian, and Sub-Saharan African heritage, high Southeast Asian-influenced cheekbones, narrow South Asian jawline, Sub-Saharan African lip fullness, dark alert brown eyes with contemplative unfocused gaze, bioluminescent blue-white subdermal traceries branching across both forearms and along left neck pulsing faintly with heartbeat, small scar on right temple, gray wool tabard with tessellating emblem over charcoal reflective thermal jacket, black cargo pants, gray undershirt, scuffed black boots, shrine keys on hip carabiner, posture slightly forward-leaning with economical deliberate movement, serene angular expression, standing in low-light shrine data-station ambiance with blue-white bioluminescent glow catching the darkness, cinematic moody lighting, monastic neo-noir urban aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Eastern European": 42.7,
     "Southeast Asian": 27.1,

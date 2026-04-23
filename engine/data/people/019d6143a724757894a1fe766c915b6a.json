@@ -2,10 +2,7 @@
   "id": "019d6143a724757894a1fe766c915b6a",
   "type": "character",
   "name": "Farhad Chatterjee",
-  "aliases": [
-    "Bogdana Chatterjee",
-    "Bogdana"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 29,
   "status": "active",
   "location": "Gage Circuit, near Milwaukee and North Ave",
-  "description": "Bogdana Chatterjee is built like someone who grew up hauling things — broad-shouldered, compact, with the particular kind of stillness that comes from years of standing on corners watching people lie to her. Her skin is a deep umber that catches neon in purples and greens, and she has cosmetic bioluminescent freckles across her cheekbones that pulse faintly when her heart rate elevates — a mod she got at nineteen and now deeply regrets on the job because perps can read her stress. Her hair is kept in tight, practical coils under her regulation cap. She has the face of someone who wanted to believe in something and is still deciding whether she does.\n\nOn the street she is patient in a way that unnerves people — she listens longer than cops are supposed to, takes notes by hand on a battered paper notepad even though her neural uplink could record everything. She genuinely knows the Gage Circuit block-by-block, knows which E.L.F. shrines get fresh data offerings and which are abandoned, knows whose kids go to which school. She has not yet become cynical, but she is working on it, and that tension — between the person she came into the job as and the person the job is making — is visible in everything she does.",
+  "description": "Farhad Chatterjee is built like someone who grew up hauling things — broad-shouldered, compact, with the particular kind of stillness that comes from years of standing on corners watching people lie to her. Her skin is a deep umber that catches neon in purples and greens, and she has cosmetic bioluminescent freckles across her cheekbones that pulse faintly when her heart rate elevates — a mod she got at nineteen and now deeply regrets on the job because perps can read her stress. Her hair is kept in tight, practical coils under her regulation cap. She has the face of someone who wanted to believe in something and is still deciding whether she does.\n\nOn the street she is patient in a way that unnerves people — she listens longer than cops are supposed to, takes notes by hand on a battered paper notepad even though her neural uplink could record everything. She genuinely knows the Gage Circuit block-by-block, knows which E.L.F. shrines get fresh data offerings and which are abandoned, knows whose kids go to which school. She has not yet become cynical, but she is working on it, and that tension — between the person she came into the job as and the person the job is making — is visible in everything she does.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -249,7 +246,7 @@
     "posture_movement": "She stands still for long periods with her weight balanced evenly. When she moves, it is economical and unhurried — she does not gesture while talking. Her default expression is patient and slightly inward-focused, as if she is listening to something just beneath the ambient noise. She has the particular physical stillness of someone trained to observe without reacting. Her gaze settles on people for longer than is comfortable.",
     "clothing_style": "Regulation Arcturus Defense Solutions Civil Security uniform: dark blue cargo pants with reflective striping, standard-issue tactical boots (maintained but not polished), grey-blue uniform shirt under a heavier tactical vest with department insignia. Her regulation cap is standard-issue and worn daily. Off-duty: simple, practical Tier 3-4 wear — durable synthetic blend pants, understated hoodies, no visible branding. Everything she wears is functional and worn until it stops working. She does not accessorize."
   },
-  "image_prompt": "Bogdana Chatterjee, Arcturus Defense Solutions Civil Security officer, 2226. Medium-deep warm brown skin with golden and olive undertones, luminous in harsh neon light. High Slavic cheekbones softened by South Asian facial geometry, subtle East Asian refinement around the eyes. Deep brown unaugmented eyes with patient, unnerving gaze. Short natural black hair in tight coils pinned close to scalp. Cosmetic bioluminescent freckles pulse faint blue-green across cheekbones and bridge of nose. Strong angular face, hairline-thin scar on left jawline. In regulation tactical uniform: dark blue cargo pants, grey-blue shirt, tactical vest with Metro insignia, standard-issue cap. Standing still with balanced posture, economical stillness of trained observer. Cold blue neon fills shadows under harsh overhead precinct lighting. Industrial background, GLMZ 2200s. Mood: watchful, patient, slightly unsettling presence. --ar 2:3 --v 6",
+  "image_prompt": "Farhad Chatterjee, Arcturus Defense Solutions Civil Security officer, 2226. Medium-deep warm brown skin with golden and olive undertones, luminous in harsh neon light. High Slavic cheekbones softened by South Asian facial geometry, subtle East Asian refinement around the eyes. Deep brown unaugmented eyes with patient, unnerving gaze. Short natural black hair in tight coils pinned close to scalp. Cosmetic bioluminescent freckles pulse faint blue-green across cheekbones and bridge of nose. Strong angular face, hairline-thin scar on left jawline. In regulation tactical uniform: dark blue cargo pants, grey-blue shirt, tactical vest with Metro insignia, standard-issue cap. Standing still with balanced posture, economical stillness of trained observer. Cold blue neon fills shadows under harsh overhead precinct lighting. Industrial background, GLMZ 2200s. Mood: watchful, patient, slightly unsettling presence. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Eastern European": 46.5,
     "South Asian": 38.4,

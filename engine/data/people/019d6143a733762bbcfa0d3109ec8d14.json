@@ -2,10 +2,7 @@
   "id": "019d6143a733762bbcfa0d3109ec8d14",
   "type": "character",
   "name": "Amparo Hernández-Olofsson",
-  "aliases": [
-    "Zephyr Hernández-Olofsson",
-    "Zephyr"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 44,
   "status": "active",
   "location": "The Burnished Market, stall cluster near the Alban Souk border, Calumet Rise, near Halsted and Division",
-  "description": "Zephyr Hernández-Olofsson is a compact man with a permanent five-day beard the colour of iron filings and a complexion that sits somewhere between olive and warm brown depending on the light — an inheritance from a Polish grandfather and a Ghanaian grandmother that he describes as 'maximum average.' His eyes are augmented with data-overlay lenses that give his irises a faint amber grid pattern; the left one has a slow drift that he's never gotten fixed because the repair estimate was 'an absolute scandal.' He dresses in the studied nondescriptness of someone who doesn't want to be remembered: mid-grey layers, nothing with a logo, shoes that could belong to six different professions. His stall front is officially a media archive service — data recovery, legacy file transfer, antique format conversion — which is completely true and also a cover for everything else.\n\nHe's been in the Burnished Market for eleven years and has a quality that experienced market-walkers learn to recognise: the stillness of someone who is always listening more than they appear to be. He is affable in a careful, calibrated way, and his sense of humour is so dry it can take a full beat for people to realise a joke has been made. He has never been arrested. He considers this his primary professional achievement.",
+  "description": "Amparo Hernández-Olofsson is a compact man with a permanent five-day beard the colour of iron filings and a complexion that sits somewhere between olive and warm brown depending on the light — an inheritance from a Polish grandfather and a Ghanaian grandmother that he describes as 'maximum average.' His eyes are augmented with data-overlay lenses that give his irises a faint amber grid pattern; the left one has a slow drift that he's never gotten fixed because the repair estimate was 'an absolute scandal.' He dresses in the studied nondescriptness of someone who doesn't want to be remembered: mid-grey layers, nothing with a logo, shoes that could belong to six different professions. His stall front is officially a media archive service — data recovery, legacy file transfer, antique format conversion — which is completely true and also a cover for everything else.\n\nHe's been in the Burnished Market for eleven years and has a quality that experienced market-walkers learn to recognise: the stillness of someone who is always listening more than they appear to be. He is affable in a careful, calibrated way, and his sense of humour is so dry it can take a full beat for people to realise a joke has been made. He has never been arrested. He considers this his primary professional achievement.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -227,7 +224,7 @@
     "posture_movement": "Stillness is his default — minimal gesture, economical motion. Hands rest in lap or on counter surface. When he moves through the market, he navigates without apparent urgency, head tracking conversations and movement around him. Doesn't make eye contact unless necessary; when he does, it's deliberate. Turns to face people only partially, as if ready to pivot away.",
     "clothing_style": "Deliberately unremarkable: mid-grey merino layers, matte textiles, nothing with visible branding. Worn jacket in charcoal, practical pockets, no decoration. Shoes are functional and forgettable — could be construction worker, data courier, or archival technician. A scarf in neutral tone, wrapped once, used interchangeably for warmth or to obscure the lower face. The effect is studied nondescriptness — expensive enough to suggest competence, generic enough to resist memory."
   },
-  "image_prompt": "GLMZ, portrait of Zephyr Hernández-Olofsson, 168cm compact build, warm golden-brown skin with honeyed undertones, high East Asian cheekbones softened by South Asian fullness, five-day iron-grey stubble, dark brown hair with grey threading swept back short, left eye with subtle amber augmented grid pattern and slight inward drift, natural brown right eye, faint silvery scar on underside of left forearm, augmentation port scar behind left ear barely visible, minimal expression, deliberate stillness, wearing mid-grey merino layers under charcoal jacket with practical pockets, neutral grey scarf wrapped once, functional forgettable shoes, nondescript aesthetic suggesting competence and erasure, standing partially turned as if ready to pivot, dim market lighting catching the amber grid in left eye, shallow depth of field, cinematic, moody and restrained, --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Amparo Hernández-Olofsson, 168cm compact build, warm golden-brown skin with honeyed undertones, high East Asian cheekbones softened by South Asian fullness, five-day iron-grey stubble, dark brown hair with grey threading swept back short, left eye with subtle amber augmented grid pattern and slight inward drift, natural brown right eye, faint silvery scar on underside of left forearm, augmentation port scar behind left ear barely visible, minimal expression, deliberate stillness, wearing mid-grey merino layers under charcoal jacket with practical pockets, neutral grey scarf wrapped once, functional forgettable shoes, nondescript aesthetic suggesting competence and erasure, standing partially turned as if ready to pivot, dim market lighting catching the amber grid in left eye, shallow depth of field, cinematic, moody and restrained, --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 31.8,
     "Hispanic/Latin American": 27.2,

@@ -2,10 +2,7 @@
   "id": "019d6143a5be7a94be476c8e81a1e8bf",
   "type": "character",
   "name": "Eidur Mwangi-Kabwit",
-  "aliases": [
-    "Drift Mwangi-Kabwit",
-    "Drift"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 58,
   "status": "active",
   "location": "The Burnished Market, permanent pitch at the corner of Grainfort and Ironvein, near North Ave and Damen",
-  "description": "Drift Mwangi-Kabwit is a large, slow-moving man with the kind of bulk that was once muscle and has settled into something more geological. His skin is dark walnut brown, his beard full and peppered grey-white, worn in four loose plaits he ties back during service hours. His Turkish grandmother gave him the Öztürk and a nose like a falcon's beak; his Samoan great-grandfather gave him the Savea and shoulders like a doorframe. He wears the same thing every day: a heat-resistant apron over a sleeveless thermal, arms bare to show the geometric Samoan-style tattoo that wraps from his left wrist to his shoulder, and under it on the inside of his wrist, half-hidden, a small Yoruba adinkra symbol his mother pressed there with a needle when he was seven. Behind the cart he moves with surprising economy, three things happening in each hand simultaneously.\n\nHe doesn't talk much while working, but when the lunch rush ebbs he will lean on the cart and hold a conversation that feels unhurried in a way that is almost physically restful. He has opinions about everything — city politics, the flavor profile of various E.L.F.s' preferred data offerings, whether the Ferrogate expansion is actually gentrification in a steel tube — but he delivers them the way he delivers broth: slow, hot, with depth that surprises you. He has been at this corner for twenty-two years. He knows every face.",
+  "description": "Eidur Mwangi-Kabwit is a large, slow-moving man with the kind of bulk that was once muscle and has settled into something more geological. His skin is dark walnut brown, his beard full and peppered grey-white, worn in four loose plaits he ties back during service hours. His Turkish grandmother gave him the Öztürk and a nose like a falcon's beak; his Samoan great-grandfather gave him the Savea and shoulders like a doorframe. He wears the same thing every day: a heat-resistant apron over a sleeveless thermal, arms bare to show the geometric Samoan-style tattoo that wraps from his left wrist to his shoulder, and under it on the inside of his wrist, half-hidden, a small Yoruba adinkra symbol his mother pressed there with a needle when he was seven. Behind the cart he moves with surprising economy, three things happening in each hand simultaneously.\n\nHe doesn't talk much while working, but when the lunch rush ebbs he will lean on the cart and hold a conversation that feels unhurried in a way that is almost physically restful. He has opinions about everything — city politics, the flavor profile of various E.L.F.s' preferred data offerings, whether the Ferrogate expansion is actually gentrification in a steel tube — but he delivers them the way he delivers broth: slow, hot, with depth that surprises you. He has been at this corner for twenty-two years. He knows every face.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -204,7 +201,7 @@
     "Walnut",
     "Arcturus KS-7 'Nursery'",
     "Corner Slice",
-    "Drift",
+    "Eidur",
     "Steel",
     "Compass Rose",
     "Arcturus CK-5 'Bloodhound'"
@@ -229,7 +226,7 @@
     "posture_movement": "Stands with weight distributed evenly, slightly forward-leaning when at rest against the cart. Moves with surprising grace and efficiency despite bulk—three simultaneous hand movements are fluid and economical. Carries himself with the unhurried confidence of someone rooted in place.",
     "clothing_style": "Uniform consistency: heat-resistant work apron (charcoal-grey, oil-stained at edges, patches from years of service) worn over sleeveless thermal shirt in cream or faded black. Arms always bare to display tattoo. Worn steel-toed work shoes, practical rather than fashionable. No jewelry except occasional cord tie for plaits. Tier 4 working-class functionality—built for durability and heat management, not status."
   },
-  "image_prompt": "Drift Mwangi-Kabwit, 188cm tall heavyweight man with deep warm brown skin with golden-olive undertones reflecting Sub-Saharan African, East Asian, South Asian and Hispanic/Latin American heritage blend. Weathered face with broad cheekbones, strong jaw, peppered full beard close to jawline. Dark brown eyes. Dark brown hair with grey threading, arranged in four loose plaits hanging mid-back. Large geometric Samoan-style black tattoo with bioluminescent blue-gold threading wrapping left wrist to shoulder, glowing faintly. Smaller faded Yoruba adinkra symbol on inner left wrist. Both palms show thermal-resistant chrome dermal plating with matte finish. Wearing charcoal-grey heat-resistant work apron over sleeveless cream thermal shirt, arms bare to show tattoos. Steel-toed work shoes, worn. Hands show calluses and minor scars from kitchen work. Standing with calm, rooted confidence, weight forward-leaning against cart. GLMZ Great Lakes Metropolitan Zone street food vendor setting, evening atmosphere, neon-tinged ambient lighting highlighting the bioluminescent tattoo glow, industrial food cart environment, utilitarian work-class aesthetic, deep shadows and warm practical lighting --ar 2:3 --v 6",
+  "image_prompt": "Eidur Mwangi-Kabwit, 188cm tall heavyweight man with deep warm brown skin with golden-olive undertones reflecting Sub-Saharan African, East Asian, South Asian and Hispanic/Latin American heritage blend. Weathered face with broad cheekbones, strong jaw, peppered full beard close to jawline. Dark brown eyes. Dark brown hair with grey threading, arranged in four loose plaits hanging mid-back. Large geometric Samoan-style black tattoo with bioluminescent blue-gold threading wrapping left wrist to shoulder, glowing faintly. Smaller faded Yoruba adinkra symbol on inner left wrist. Both palms show thermal-resistant chrome dermal plating with matte finish. Wearing charcoal-grey heat-resistant work apron over sleeveless cream thermal shirt, arms bare to show tattoos. Steel-toed work shoes, worn. Hands show calluses and minor scars from kitchen work. Standing with calm, rooted confidence, weight forward-leaning against cart. GLMZ Great Lakes Metropolitan Zone street food vendor setting, evening atmosphere, neon-tinged ambient lighting highlighting the bioluminescent tattoo glow, industrial food cart environment, utilitarian work-class aesthetic, deep shadows and warm practical lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 75.2,
     "East Asian": 12,

@@ -2,10 +2,7 @@
   "id": "019d6143a67878b4bea39fbce693c0d3",
   "type": "character",
   "name": "Dayo Traoré-Villanueva",
-  "aliases": [
-    "Nova Traoré-Villanueva",
-    "Nova"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 14,
   "status": "active",
   "location": "The sub-level junctions beneath Garfield Rack and Grand Crossing Gate, Undertow eastern reaches, near sub-level access near LaSalle and Congress",
-  "description": "Nova Traoré-Villanueva is small for fourteen and has the particular wiry quality of a child raised on irregular calories and constant movement — he is not malnourished exactly, but he is built close to the bone. His skin is a deep warm brown with a slight grey cast from tunnel particulate that no amount of washing fully removes. He has no geneware modifications, no augmentations — he has a kid's face, still round at the cheeks, with large dark eyes that have a near-photoreceptive quality honed by years of navigating low-light environments without tech. His hair grows in dense spirals, usually crammed under a salvaged transit worker's hard hat three sizes too large for his head.\n\nHe is the thing that tunnels make of children when they're loved but not wealthy: resourceful past the point of impressiveness, with a child's emotional rawness operating inside an adult's practical competence. He knows which Ferrogate Transit maintenance schedules to memorize, which decommissioned sections still carry live current, and which ELF-haunted junction boxes might shock you if you reach in without speaking first. He has never been to the surface. This is not a wound yet — at fourteen it still feels more like a fact — but it is becoming a question. He is beginning to want to see it, and beginning to be afraid of what that wanting will cost him.",
+  "description": "Dayo Traoré-Villanueva is small for fourteen and has the particular wiry quality of a child raised on irregular calories and constant movement — he is not malnourished exactly, but he is built close to the bone. His skin is a deep warm brown with a slight grey cast from tunnel particulate that no amount of washing fully removes. He has no geneware modifications, no augmentations — he has a kid's face, still round at the cheeks, with large dark eyes that have a near-photoreceptive quality honed by years of navigating low-light environments without tech. His hair grows in dense spirals, usually crammed under a salvaged transit worker's hard hat three sizes too large for his head.\n\nHe is the thing that tunnels make of children when they're loved but not wealthy: resourceful past the point of impressiveness, with a child's emotional rawness operating inside an adult's practical competence. He knows which Ferrogate Transit maintenance schedules to memorize, which decommissioned sections still carry live current, and which ELF-haunted junction boxes might shock you if you reach in without speaking first. He has never been to the surface. This is not a wound yet — at fourteen it still feels more like a fact — but it is becoming a question. He is beginning to want to see it, and beginning to be afraid of what that wanting will cost him.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -204,7 +201,7 @@
     "Lacuna Genomics",
     "Aphelion",
     "Gravimetric Collapse Charge GCC-9",
-    "Frost Boudiaf"
+    "Folakemi Boudiaf"
   ],
   "district": "The Underworld",
   "physical_description": {
@@ -227,7 +224,7 @@
     "posture_movement": "Moves with economical precision — no wasted motion. Head slightly forward, shoulders inward, knees perpetually ready to crouch or climb. Walk is quiet and flat-footed, adapted for moving across uneven tunnel floors in darkness. Sits with one leg folded, the other ready to spring. Eyes track details obsessively — light sources, cable runs, structural weak points. Fidgets with salvage pieces in idle moments.",
     "clothing_style": "Tier 5 subterranean salvager aesthetic. Oversized grey canvas transit worker's hard hat (three sizes too large, secured with knotted cord under chin). Layered in mismatched synthetics and canvas salvage: a faded blue transit authority work shirt (sleeves rolled), grey cargo pants with multiple pockets stuffed with tools and salvage snippets, patched at both knees with darker fabric. Worn canvas boots held together with cord lacing and adhesive patches. A salvaged reflective safety vest worn open over everything, its high-visibility orange faded to pale coral. Cloth strap wrapped around one wrist — a child's superstition or a structural reminder. Everything smells faintly of mineral oil, dust, and ozone."
   },
-  "image_prompt": "Nova Traoré-Villanueva, a 152cm wiry subterranean salvager child with deep warm brown skin enriched by golden and olive undertones, characteristic of Sub-Saharan African, Latin American, Indigenous American, and South Asian ancestry. Prominent cheekbones, dark brown almost-black eyes with unusual clarity, black spiral hair compressed under an oversized grey transit hard hat secured with knotted cord. Fine grey dust ingrained in neck creases. Wearing layered salvage: faded blue transit authority shirt, grey cargo pants with knee patches, worn canvas boots, and a faded coral reflective safety vest. Pale burn scars on inner left forearm visible, thin temple scar mostly faded. Economical posture, ready to crouch, holding salvaged multimeter and wooden calibration tools. Standing in dim tunnel environment with ozone-scented air, subtle metallic cables visible behind, low-light GLMZ Great Lakes Metropolitan Zone setting, moody underground lighting, dust particles visible in air, weathered and determined expression. --ar 2:3 --v 6",
+  "image_prompt": "Dayo Traoré-Villanueva, a 152cm wiry subterranean salvager child with deep warm brown skin enriched by golden and olive undertones, characteristic of Sub-Saharan African, Latin American, Indigenous American, and South Asian ancestry. Prominent cheekbones, dark brown almost-black eyes with unusual clarity, black spiral hair compressed under an oversized grey transit hard hat secured with knotted cord. Fine grey dust ingrained in neck creases. Wearing layered salvage: faded blue transit authority shirt, grey cargo pants with knee patches, worn canvas boots, and a faded coral reflective safety vest. Pale burn scars on inner left forearm visible, thin temple scar mostly faded. Economical posture, ready to crouch, holding salvaged multimeter and wooden calibration tools. Standing in dim tunnel environment with ozone-scented air, subtle metallic cables visible behind, low-light GLMZ Great Lakes Metropolitan Zone setting, moody underground lighting, dust particles visible in air, weathered and determined expression. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 61.8,
     "Hispanic/Latin American": 19.6,

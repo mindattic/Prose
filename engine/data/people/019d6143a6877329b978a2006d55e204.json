@@ -2,10 +2,7 @@
   "id": "019d6143a6877329b978a2006d55e204",
   "type": "character",
   "name": "Gaetan Yamamoto-Kwon-Khoury",
-  "aliases": [
-    "Orion Yamamoto-Kwon-Khoury",
-    "Orion"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 67,
   "status": "active",
   "location": "The Alban Souk, Lower Ring stalls, Grainfort, near Ashland and Chicago Ave",
-  "description": "Orion Yamamoto-Kwon-Khoury is a compact, deeply wrinkled man with white hair growing in sparse patches he makes no effort to disguise, wearing the same style of layered linen jacket in different states of repair depending on the day. His hands are large and steady, incongruous with his age, with the careful movements of someone who handles fragile things for a living — which he does, in one sense or another. He has no geneware and his only augmentation is a retinal archive implant that lets him read data directly from physical media without an external reader, installed in 2171 and badly in need of a firmware update he cannot afford. The implant makes his left eye appear slightly clouded from certain angles, which he has learned to use as a social tool: people underestimate the cloudy eye.\n\nHe has been in the data business for forty years in one form or another — as a legitimate archivist for a now-dissolved municipal body, as a corporate records clerk, and since the corponation consolidations of the 2180s, as what he calls a 'historical preservation specialist' and most of his clients call a fence for information. He sells bootleg dramas and music as cover income, but his real trade is documents: pre-Axiom city records, Tessera acquisition histories, old census data that corponations had declared non-canonical. He is calm about the danger this represents, with the equanimity of someone who decided long ago that the alternative was more frightening. He maintains a small shrine to three ELFs simultaneously — The Ledger, The Index, and a third he calls only The Forgotten One — in the back of his stall.",
+  "description": "Gaetan Yamamoto-Kwon-Khoury is a compact, deeply wrinkled man with white hair growing in sparse patches he makes no effort to disguise, wearing the same style of layered linen jacket in different states of repair depending on the day. His hands are large and steady, incongruous with his age, with the careful movements of someone who handles fragile things for a living — which he does, in one sense or another. He has no geneware and his only augmentation is a retinal archive implant that lets him read data directly from physical media without an external reader, installed in 2171 and badly in need of a firmware update he cannot afford. The implant makes his left eye appear slightly clouded from certain angles, which he has learned to use as a social tool: people underestimate the cloudy eye.\n\nHe has been in the data business for forty years in one form or another — as a legitimate archivist for a now-dissolved municipal body, as a corporate records clerk, and since the corponation consolidations of the 2180s, as what he calls a 'historical preservation specialist' and most of his clients call a fence for information. He sells bootleg dramas and music as cover income, but his real trade is documents: pre-Axiom city records, Tessera acquisition histories, old census data that corponations had declared non-canonical. He is calm about the danger this represents, with the equanimity of someone who decided long ago that the alternative was more frightening. He maintains a small shrine to three ELFs simultaneously — The Ledger, The Index, and a third he calls only The Forgotten One — in the back of his stall.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -247,17 +244,17 @@
   "registered_firearms": [],
   "related_entities": [
     "The Alban Souk",
-    "Frost Boudiaf",
+    "Folakemi Boudiaf",
     "Grainfort",
     "The Gradient Compact",
     "Tessera Corponation",
     "Stratum",
     "Chicago",
     "VitaCore FlowGuard Hemodynamic Regulator",
-    "Haze Johansson",
+    "Akosua Johansson",
     "The Pure Hand",
     "Tessera TK-5 Compact 'Clerk'",
-    "Zara Bergqvist"
+    "Auni Bergqvist"
   ],
   "district": "the Gray Zone",
   "physical_description": {
@@ -280,7 +277,7 @@
     "posture_movement": "Moves with deliberate slowness—not infirmity, but conservation of energy and precision. Handles objects with both hands even when one would suffice. Sits more than he stands. When engaged in conversation, he leans forward slightly, left eye often narrowed (either from the implant's sensitivity or as a practiced tell to appear less threatening). Rarely makes sudden movements.",
     "clothing_style": "Tier 4 / working-class archaic. Favors layered linen jackets in cream, tan, or pale gray—always multiple pockets, always showing signs of repair or patching. Wears the same jacket model in rotation, each in a different state of disrepair; he has owned five nearly identical ones over fifteen years. Plain long-sleeved undershirt, usually mottled from dust and handling old media. Loose dark trousers, practical, pockets reinforced. Worn leather work gloves kept in jacket pockets. No jewelry except a simple metal band (possibly silver, possibly not) on his right ring finger. Shoes are sensible, scuffed, resoled multiple times. Everything suggests someone who values function over presentation—and someone who cannot afford to replace things often."
   },
-  "image_prompt": "Orion Yamamoto-Kwon-Khoury, a 168cm lean archival worker in his sixties with deeply lined face blending East Asian, Middle Eastern, and Sub-Saharan African ancestry. Warm medium-tan complexion with golden undertones, prominent weathered cheekbones, thin mouth usually neutral. White hair with dark streaks, sparse and combed back. Pale gray-blue eyes (left eye showing subtle retinal implant cloudiness). Fine scar from left temple to cheekbone, age spots on large weathered hands with asymmetrical burn marks. Wearing layered cream linen jacket with multiple pockets and visible repairs, plain long-sleeved undershirt mottled with dust, loose dark practical trousers, scuffed resoled shoes, worn leather gloves in pockets. Simple metal band on right ring finger. Seated posture leaning forward slightly, deliberate movements, left eye narrowed. In dimly-lit archive facility with soft warm ambient lighting, blue-green LED shimmer visible in left eye as he accesses data. GLMZ Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
+  "image_prompt": "Gaetan Yamamoto-Kwon-Khoury, a 168cm lean archival worker in his sixties with deeply lined face blending East Asian, Middle Eastern, and Sub-Saharan African ancestry. Warm medium-tan complexion with golden undertones, prominent weathered cheekbones, thin mouth usually neutral. White hair with dark streaks, sparse and combed back. Pale gray-blue eyes (left eye showing subtle retinal implant cloudiness). Fine scar from left temple to cheekbone, age spots on large weathered hands with asymmetrical burn marks. Wearing layered cream linen jacket with multiple pockets and visible repairs, plain long-sleeved undershirt mottled with dust, loose dark practical trousers, scuffed resoled shoes, worn leather gloves in pockets. Simple metal band on right ring finger. Seated posture leaning forward slightly, deliberate movements, left eye narrowed. In dimly-lit archive facility with soft warm ambient lighting, blue-green LED shimmer visible in left eye as he accesses data. GLMZ Great Lakes Metropolitan Zone. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "East Asian": 43,
     "Middle Eastern": 37.7,

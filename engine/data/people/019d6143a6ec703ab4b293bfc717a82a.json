@@ -2,10 +2,7 @@
   "id": "019d6143a6ec703ab4b293bfc717a82a",
   "type": "character",
   "name": "Hakeem Szczypiński-Petrović",
-  "aliases": [
-    "Ngozi Szczypiński-Petrović",
-    "Ngozi"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 38,
   "status": "active",
   "location": "The Circuit, near North Ave and Damen",
-  "description": "Ngozi Szczypiński-Petrović the most boring man in GLMZ, and he has cultivated this presentation with the care of a topiarist. He is medium height, medium build, with a forgettable face he keeps clean-shaven and hair he keeps the color and style of someone who doesn't think about his hair. His suits are expensive in ways that read as merely appropriate. He smiles at exactly the right frequency. He brokers commercial leases in The Circuit and lower Meridian Core — warehouses, storefronts, sublevel office space — and he is very good at it, and this is genuinely not the interesting thing about him.\n\nThe interesting thing is that Tavish has spent fifteen years quietly embedding himself in the physical infrastructure of GLMZ's middle layers, and in doing so has accumulated something more valuable than money: he knows who is in every room. His properties house everything from courier fronts to unlicensed server farms to the private meeting spaces where deals that can't happen in public happen. He doesn't ask what his tenants are doing. He charges accordingly. And he listens, through the walls he owns, through the maintenance contracts he controls, through the augmented spatial memory that lets him reconstruct a floorplan — and the conversations within it — from a single walkthrough.\n\nHe is not cruel and he is not ideological and this is perhaps the most unsettling thing about him. He doesn't have a side. He has a ledger. The information he collects is a commodity like any other, and he sells it to whoever can pay, with the single operational rule that he never sells information that would get a tenant killed on his property — too messy, too bad for business. This rule has a name among the people who know about him: they call it 'Ohlendorf's exception,' and the fact that it exists is the only reason anyone trusts him at all.",
+  "description": "Hakeem Szczypiński-Petrović the most boring man in GLMZ, and he has cultivated this presentation with the care of a topiarist. He is medium height, medium build, with a forgettable face he keeps clean-shaven and hair he keeps the color and style of someone who doesn't think about his hair. His suits are expensive in ways that read as merely appropriate. He smiles at exactly the right frequency. He brokers commercial leases in The Circuit and lower Meridian Core — warehouses, storefronts, sublevel office space — and he is very good at it, and this is genuinely not the interesting thing about him.\n\nThe interesting thing is that Tavish has spent fifteen years quietly embedding himself in the physical infrastructure of GLMZ's middle layers, and in doing so has accumulated something more valuable than money: he knows who is in every room. His properties house everything from courier fronts to unlicensed server farms to the private meeting spaces where deals that can't happen in public happen. He doesn't ask what his tenants are doing. He charges accordingly. And he listens, through the walls he owns, through the maintenance contracts he controls, through the augmented spatial memory that lets him reconstruct a floorplan — and the conversations within it — from a single walkthrough.\n\nHe is not cruel and he is not ideological and this is perhaps the most unsettling thing about him. He doesn't have a side. He has a ledger. The information he collects is a commodity like any other, and he sells it to whoever can pay, with the single operational rule that he never sells information that would get a tenant killed on his property — too messy, too bad for business. This rule has a name among the people who know about him: they call it 'Ohlendorf's exception,' and the fact that it exists is the only reason anyone trusts him at all.",
   "psychology": {
     "facet_weights": {
       "wound": 0.45,
@@ -248,7 +245,7 @@
     "Circuit",
     "Ringo DV-4 'Courier'",
     "Nesting Doll",
-    "Haze Johansson",
+    "Akosua Johansson",
     "Pellucid Systems",
     "Compass Rose",
     "GLMZ"
@@ -272,7 +269,7 @@
     "posture_movement": "Moves with measured efficiency. Never hurried, never lingering. Stands with weight balanced evenly on both feet. His head turns in controlled arcs rather than snapping attention. When he walks through a space, his eyes track in a systematic pattern — ceiling, walls, floor, fixtures — as if cataloguing. His smile appears at socially appropriate intervals and disappears at socially appropriate intervals. No fidgeting.",
     "clothing_style": "Expensive suits in neutral colors (charcoal, navy, warm gray) that read as 'appropriate' rather than 'statement.' Shirts in white or pale blue, always pressed. Ties in muted patterns or solid colors. Shoes are well-maintained leather in black or brown. A watch — mechanical, not smart, mid-tier brand, Swiss — on his left wrist. No jewelry beyond this. Jacket pockets contain: a pen, a small leather notebook, sometimes a lens fragment he's currently cataloguing. The overall effect is of a man who dressed himself once and then stopped thinking about clothing."
   },
-  "image_prompt": "Portrait of Ngozi Szczypiński-Petrović, a 178cm tall mixed-heritage man with warm medium brown skin and subtle olive undertones, high prominent cheekbones reflecting Slavic and West African ancestry, slight lower-face fullness from Hispanic/Latin American heritage. Short neat salt-and-pepper hair, side-parted. Gray-blue eyes with warm depth. Clean-shaven, symmetrical face, entirely unremarkable and forgettable by design. Wearing expensive charcoal suit, crisp white dress shirt, muted tie, black leather shoes. Mechanical Swiss watch on left wrist. Cold fluorescent indoor lighting. Measured posture, even weight distribution, systematic gaze tracking environment. Faint surgical scar at base of skull barely visible. GLMZ, corporate espionage agent aesthetic, professional and deliberately unmemorable. --ar 2:3 --v 6",
+  "image_prompt": "Portrait of Hakeem Szczypiński-Petrović, a 178cm tall mixed-heritage man with warm medium brown skin and subtle olive undertones, high prominent cheekbones reflecting Slavic and West African ancestry, slight lower-face fullness from Hispanic/Latin American heritage. Short neat salt-and-pepper hair, side-parted. Gray-blue eyes with warm depth. Clean-shaven, symmetrical face, entirely unremarkable and forgettable by design. Wearing expensive charcoal suit, crisp white dress shirt, muted tie, black leather shoes. Mechanical Swiss watch on left wrist. Cold fluorescent indoor lighting. Measured posture, even weight distribution, systematic gaze tracking environment. Faint surgical scar at base of skull barely visible. GLMZ, corporate espionage agent aesthetic, professional and deliberately unmemorable. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Eastern European": 62.6,
     "Sub-Saharan African": 22,

@@ -2,10 +2,7 @@
   "id": "019d6143a5bd7e0eae0714d6a2552d1b",
   "type": "character",
   "name": "Beluchi Kulkarni-Nokomis",
-  "aliases": [
-    "Slate Kulkarni-Nokomis",
-    "Slate"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 52,
   "status": "active",
   "location": "The Canopy, Lakeview Neon district, third floor of a mixed-use residence above a fabrication stall, near Clark and Addison",
-  "description": "Slate Kulkarni-Nokomis is a woman of middling height with a deliberate presence that makes her seem taller — she stands very straight and tilts her head slightly to the left when listening, like something tuning itself. Her skin is a deep even brown, and she does not wear geneware mods, a choice she has made vocally and repeatedly. Her hair is natural and full, wrapped most days in handwoven fabric she sources from a woman in Mexicantown Libre. One eye is her birth eye, dark brown. The other was replaced after an accident in her thirties — the replacement looks almost identical, but if you watch it long enough, it tracks slightly ahead of the left, as if it is seeing something a half-second sooner.\n\nSlate Kulkarni-Nokomis was raised in a household that mixed her Malian grandmother's Islamic practice with her Swedish grandfather's residual Lutheranism and her Malawian father's older ancestor-lineage traditions, and she has spent her adult life finding the structural similarities between all three rather than the contradictions. She interprets dreams, yes — but she understands dream interpretation as a social practice as much as a spiritual one: the dream tells you what the dreamer cannot say in waking language. She charges a sliding scale, sees clients by appointment in a room hung with handwritten prayer-papers in four languages, and maintains a small shrine to an E.L.F. she has never named, preferring to call it 'the Listener.'",
+  "description": "Beluchi Kulkarni-Nokomis is a woman of middling height with a deliberate presence that makes her seem taller — she stands very straight and tilts her head slightly to the left when listening, like something tuning itself. Her skin is a deep even brown, and she does not wear geneware mods, a choice she has made vocally and repeatedly. Her hair is natural and full, wrapped most days in handwoven fabric she sources from a woman in Mexicantown Libre. One eye is her birth eye, dark brown. The other was replaced after an accident in her thirties — the replacement looks almost identical, but if you watch it long enough, it tracks slightly ahead of the left, as if it is seeing something a half-second sooner.\n\nBeluchi Kulkarni-Nokomis was raised in a household that mixed her Malian grandmother's Islamic practice with her Swedish grandfather's residual Lutheranism and her Malawian father's older ancestor-lineage traditions, and she has spent her adult life finding the structural similarities between all three rather than the contradictions. She interprets dreams, yes — but she understands dream interpretation as a social practice as much as a spiritual one: the dream tells you what the dreamer cannot say in waking language. She charges a sliding scale, sees clients by appointment in a room hung with handwritten prayer-papers in four languages, and maintains a small shrine to an E.L.F. she has never named, preferring to call it 'the Listener.'",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -179,7 +176,7 @@
     "Canopy Station Nine",
     "The Accidental",
     "Canopy",
-    "Slate",
+    "Beluchi",
     "SynapTech ReadRoom Social Cue Enhancer"
   ],
   "district": "The Laceworks",
@@ -203,7 +200,7 @@
     "posture_movement": "Upright, economical. Tilts head slightly left when listening — a habit that reads as active tuning rather than distraction. Moves slowly and with intention; no unnecessary gestures. Hands remain still or engaged in purpose (writing, arranging prayer-papers). Eye contact is direct and maintained without aggression.",
     "clothing_style": "Practical and layered, Tier 3-4 aesthetic. Prefers natural fibers: linen, cotton, wool. Favors earth tones (ochre, indigo, rust, cream). Daily uniform consists of a long-sleeved tunic (custom-sewn, likely from a Mexicantown tailor), loose trousers, and handwoven shawl. Wears minimal jewelry — a small wooden prayer bead on her left wrist, a gift from her grandmother. Footwear is simple and well-maintained (cloth slippers indoors, sturdy canvas walking shoes for the district). Nothing corporate, nothing flashy, nothing that signals wealth or status-seeking."
   },
-  "image_prompt": "Slate Kulkarni-Nokomis, a 52-year-old woman with deep warm brown skin and golden-bronze undertones, reflecting South Asian (58%) and Indigenous American (36%) ancestry. High, prominent cheekbones with strong Indigenous structure, warm deep brown natural left eye, nearly-invisible prosthetic right eye with subtle tracking differences. Black hair with silver threads, wrapped in handwoven indigo and rust fabric, shoulder-length when loose. Lean dancer's build, upright posture. Wearing a long-sleeved ochre linen tunic, loose cream trousers, and handwoven rust-colored shawl. Simple wooden prayer bead on left wrist. Direct gaze, calm expression, minimal augmentation visible. Standing in warm natural light in a modest Great Lakes Metropolitan Zone interior, 2226. Neo-noir practical aesthetic, earth tones, no chrome or flashy tech. Mood: contemplative, grounded, deeply present. --ar 2:3 --v 6",
+  "image_prompt": "Beluchi Kulkarni-Nokomis, a 52-year-old woman with deep warm brown skin and golden-bronze undertones, reflecting South Asian (58%) and Indigenous American (36%) ancestry. High, prominent cheekbones with strong Indigenous structure, warm deep brown natural left eye, nearly-invisible prosthetic right eye with subtle tracking differences. Black hair with silver threads, wrapped in handwoven indigo and rust fabric, shoulder-length when loose. Lean dancer's build, upright posture. Wearing a long-sleeved ochre linen tunic, loose cream trousers, and handwoven rust-colored shawl. Simple wooden prayer bead on left wrist. Direct gaze, calm expression, minimal augmentation visible. Standing in warm natural light in a modest Great Lakes Metropolitan Zone interior, 2226. Neo-noir practical aesthetic, earth tones, no chrome or flashy tech. Mood: contemplative, grounded, deeply present. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 58.1,
     "Indigenous American": 36.5,

@@ -2,10 +2,7 @@
   "id": "019d6143a5fb7432a0f7f881c5daca4c",
   "type": "character",
   "name": "Eiman Tehrani",
-  "aliases": [
-    "Drift Tehrani",
-    "Drift"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 44,
   "status": "active",
   "location": "Gravesend Basin, sublevel print shop behind a legitimate copy-and-bind front, near sub-level access near State and Van Buren",
-  "description": "Drift Tehrani is a lean, deliberate man with Baltic-pale skin running to amber at the hands and forearms from decades of chemical exposure, and the deep-set eyes of someone who has spent a lifetime examining tiny details under magnification. His hair is a close-cropped salt-and-pepper, and he keeps a neat mustache that his Ghanaian grandmother's photographs suggest he borrowed from a great-uncle. His fingers are his most distinctive feature — long, ink-stained, extraordinarily precise, the nails trimmed to the millimeter. He wears an optical monocle implant in his left eye with three selectable magnification tiers, and his right forearm has a subdermal haptic printer interface that lets him test embossing patterns against his own skin before committing to substrate.\n\nDrift Tehrani is professorial and unhurried in a way that unnerves people who come to him in desperation. He will make tea. He will ask about your grandmother. He will explain, in exhausting and genuine detail, why the Tessera holographic threading changed in 2197 and why that matters to you. He is not cruel but he is expensive, and he holds himself to a craftsman's code that he treats with religious seriousness — a bad document is a sin, a sloppy document is an insult, and a client who tries to skip payment will discover that the backup copies he quietly retains of every fabricated identity can become extremely inconvenient.",
+  "description": "Eiman Tehrani is a lean, deliberate man with Baltic-pale skin running to amber at the hands and forearms from decades of chemical exposure, and the deep-set eyes of someone who has spent a lifetime examining tiny details under magnification. His hair is a close-cropped salt-and-pepper, and he keeps a neat mustache that his Ghanaian grandmother's photographs suggest he borrowed from a great-uncle. His fingers are his most distinctive feature — long, ink-stained, extraordinarily precise, the nails trimmed to the millimeter. He wears an optical monocle implant in his left eye with three selectable magnification tiers, and his right forearm has a subdermal haptic printer interface that lets him test embossing patterns against his own skin before committing to substrate.\n\nEiman Tehrani is professorial and unhurried in a way that unnerves people who come to him in desperation. He will make tea. He will ask about your grandmother. He will explain, in exhausting and genuine detail, why the Tessera holographic threading changed in 2197 and why that matters to you. He is not cruel but he is expensive, and he holds himself to a craftsman's code that he treats with religious seriousness — a bad document is a sin, a sloppy document is an insult, and a client who tries to skip payment will discover that the backup copies he quietly retains of every fabricated identity can become extremely inconvenient.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -261,7 +258,7 @@
     "Umbraline PhoneShell PS-X 'Last Call'",
     "Bathysphere Networks",
     "Tessera Corponation",
-    "Drift",
+    "Eiman",
     "The Pure Hand",
     "Flux Strömqvist-Villalobos",
     "The Coffin Nails",
@@ -288,7 +285,7 @@
     "posture_movement": "Deliberately slow and measured, economical in gesture. Sits with perfect posture. Hands rest flat and still until needed, then move with surgical precision. Makes intense eye contact when listening, as if cataloging details. Walks with even, unhurried stride. Overall demeanor suggests absolute confidence in his own expertise and complete disinterest in rushing.",
     "clothing_style": "Tier 3-4 working professional. White or pale gray cotton dress shirts with sleeves rolled to the forearm, worn under unstructured wool vests in charcoal or navy—allows visibility of his hands and the forearm interface. Black or charcoal trousers, well-maintained, creased sharply. Soft leather apron in dark brown worn during work hours. Reading glasses on a chain around his neck (separate from his implant monocle). No visible corporate branding; all clothing is utilitarian and built for durability. Wears a simple stainless-steel analog watch—affectation of someone who does not trust digital time-keeping. Leather messenger bag in dark cognac, worn and creased from years of carrying substrate samples and specification documents."
   },
-  "image_prompt": "Drift Tehrani, 178cm lean angular build, salt-and-pepper close-cropped hair, neat mustache. Golden-bronze luminous skin with warm amber undertones blending Middle Eastern, East Asian, and Sub-Saharan African heritage. High prominent cheekbones, refined nose, deep-set focused eyes. Left eye features polished titanium optical monocle implant with blue-green LEDs. Right forearm shows discrete subdermal interface panel under skin. Hands weathered with pale solvent scars like cartography across bronze complexion, permanent ink staining around nail beds. Wearing pale gray cotton dress shirt with rolled sleeves, charcoal wool vest, dark trousers, leather apron, reading glasses on chain. Messenger bag in dark cognac. Sitting with perfect posture, hands resting flat. GLMZ, professional precision craftsman aesthetic, warm overhead workshop lighting catching the depth of his skin tone and the geometric shadows of his augmentations, photorealistic, moody professional atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Eiman Tehrani, 178cm lean angular build, salt-and-pepper close-cropped hair, neat mustache. Golden-bronze luminous skin with warm amber undertones blending Middle Eastern, East Asian, and Sub-Saharan African heritage. High prominent cheekbones, refined nose, deep-set focused eyes. Left eye features polished titanium optical monocle implant with blue-green LEDs. Right forearm shows discrete subdermal interface panel under skin. Hands weathered with pale solvent scars like cartography across bronze complexion, permanent ink staining around nail beds. Wearing pale gray cotton dress shirt with rolled sleeves, charcoal wool vest, dark trousers, leather apron, reading glasses on chain. Messenger bag in dark cognac. Sitting with perfect posture, hands resting flat. GLMZ, professional precision craftsman aesthetic, warm overhead workshop lighting catching the depth of his skin tone and the geometric shadows of his augmentations, photorealistic, moody professional atmosphere --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Middle Eastern": 45.2,
     "East Asian": 34.5,

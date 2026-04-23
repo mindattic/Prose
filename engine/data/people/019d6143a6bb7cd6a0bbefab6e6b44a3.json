@@ -2,10 +2,7 @@
   "id": "019d6143a6bb7cd6a0bbefab6e6b44a3",
   "type": "character",
   "name": "Dinara Hwang",
-  "aliases": [
-    "Wren Hwang",
-    "Wren"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 52,
   "status": "active",
   "location": "the Gray Zone — operates from a community center three blocks from Mrs. Chen's shop, near Ashland and Chicago Ave",
-  "description": "Wren Hwang is the lowest-paid runner in GLMZ and the most respected person below Tier 3. Last Light takes contracts that nobody else will touch: protecting excluded families from eviction squads, escorting debt-marked citizens through corporate checkpoints, standing between the Gray Zone communities and the security forces that treat them as jurisdictional noise. The pay is whatever the clients can afford, which is usually nothing. Ruth doesn't care. The work is the work.\n\nShe was a public defender in GLMZ's municipal court system for eighteen years — one of the last attorneys who represented excluded citizens in jurisdictional disputes. When the court system was privatized and representation became a billable service priced beyond the excluded's reach, Ruth kept working. Pro bono. For free. The bar association suspended her license for 'unprofessional conduct.' She appealed. The appeal court was also privatized. She stopped appealing and started operating outside the legal system that had abandoned the people she served.\n\nRuth is tall, broad, with the bearing of a woman who has stood in courtrooms and stared down corporate attorneys and felt nothing but the certainty of purpose. Her hair is silver, worn natural, and her face carries the particular beauty of someone who has been angry for thirty years and hasn't let the anger eat her. She wears practical clothes and carries herself like a person who has decided what she is for and will not be moved.",
+  "description": "Dinara Hwang is the lowest-paid runner in GLMZ and the most respected person below Tier 3. Last Light takes contracts that nobody else will touch: protecting excluded families from eviction squads, escorting debt-marked citizens through corporate checkpoints, standing between the Gray Zone communities and the security forces that treat them as jurisdictional noise. The pay is whatever the clients can afford, which is usually nothing. Ruth doesn't care. The work is the work.\n\nShe was a public defender in GLMZ's municipal court system for eighteen years — one of the last attorneys who represented excluded citizens in jurisdictional disputes. When the court system was privatized and representation became a billable service priced beyond the excluded's reach, Ruth kept working. Pro bono. For free. The bar association suspended her license for 'unprofessional conduct.' She appealed. The appeal court was also privatized. She stopped appealing and started operating outside the legal system that had abandoned the people she served.\n\nRuth is tall, broad, with the bearing of a woman who has stood in courtrooms and stared down corporate attorneys and felt nothing but the certainty of purpose. Her hair is silver, worn natural, and her face carries the particular beauty of someone who has been angry for thirty years and hasn't let the anger eat her. She wears practical clothes and carries herself like a person who has decided what she is for and will not be moved.",
   "psychology": {
     "facet_weights": {
       "wound": 0.55,
@@ -205,7 +202,7 @@
     "Chicago",
     "Lazarus LX-2 'Lab Rat'",
     "Silver",
-    "Frost Boudiaf",
+    "Folakemi Boudiaf",
     "Glass",
     "GLMZ"
   ],
@@ -230,7 +227,7 @@
     "posture_movement": "Stands with weight distributed evenly, ready to move in any direction without telegraph. Moves with economy of motion — no wasted gesture. Walks slowly but with intent. In conversation, she maintains direct eye contact and rarely looks away. Her hands are still when at rest. When she speaks with her voice amplified, there's a slight shift in her shoulders as the implant engages.",
     "clothing_style": "Tier 4 practical — durable, non-corporate. Typically wears a dark grey or charcoal work jacket with deep pockets (often holding legal data-chips, communication devices, and community contact lists). Underneath, plain long-sleeve shirts in muted colors. Worn jeans with reinforced knees and a heavy canvas belt with a simple buckle. Work boots — practical, maintained, not fashionable. A thin watch on her left wrist, older model, still functional. No jewelry except the faded wrist tattoo. In colder months, a long coat that has been patched multiple times. Everything is functional. Nothing is ornamental."
   },
-  "image_prompt": "Wren Hwang, 183cm tall woman with warm medium-deep brown skin blending Hispanic/Latin American golden tones with East Asian and South Asian warmth. Natural silver-gray medium-length hair, strong defined cheekbones with subtle East Asian monolid influences, direct dark brown eyes reading decades of experience. Three-inch pale scar across left cheekbone, faint burn mark on right hand. Dressed in worn charcoal work jacket over muted long-sleeve shirt, reinforced jeans, practical work boots. Faded gavel-and-hand tattoo on inner right wrist. Standing with even weight distribution, hands still at rest, direct eye contact. 2226 neo-noir Great Lakes Metropolitan Zone, dim industrial lighting with cool neon undertones, worn community center or legal aid office background. Cinematic photorealism, weathered dignity, justice worker aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Dinara Hwang, 183cm tall woman with warm medium-deep brown skin blending Hispanic/Latin American golden tones with East Asian and South Asian warmth. Natural silver-gray medium-length hair, strong defined cheekbones with subtle East Asian monolid influences, direct dark brown eyes reading decades of experience. Three-inch pale scar across left cheekbone, faint burn mark on right hand. Dressed in worn charcoal work jacket over muted long-sleeve shirt, reinforced jeans, practical work boots. Faded gavel-and-hand tattoo on inner right wrist. Standing with even weight distribution, hands still at rest, direct eye contact. 2226 neo-noir Great Lakes Metropolitan Zone, dim industrial lighting with cool neon undertones, worn community center or legal aid office background. Cinematic photorealism, weathered dignity, justice worker aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 49.4,
     "East Asian": 32,

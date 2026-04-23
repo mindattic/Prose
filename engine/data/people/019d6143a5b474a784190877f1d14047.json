@@ -2,10 +2,7 @@
   "id": "019d6143a5b474a784190877f1d14047",
   "type": "character",
   "name": "Belma Hinojosa-Sefanaia",
-  "aliases": [
-    "Slate Hinojosa-Sefanaia",
-    "Slate"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
@@ -13,7 +10,7 @@
   "age": 26,
   "status": "active",
   "location": "The cart circuit: mornings at Calumet Rise worker gate, afternoons at Deepwell Station plaza, evenings outside the Ferment Quarter, near sub-level access near State and Van Buren",
-  "description": "Slate Hinojosa-Sefanaia has the kind of face that changes depending on what they're feeling — not through any augmentation, but because their expressions are theatrical and unguarded, eyebrows mobile as flags. Their skin is deep brown with a warm undertone, and they have a bioluminescent patterning along their collarbone and upper arms: a cascade of soft teal dots that pulse gently when their body temperature rises — which it frequently does over a cooking cart. Their hair is kept in a high puff wrapped in orange synthetic silk, and they wear a secondhand Arcturus-branded apron they've covered in patches, safety pins, and one embroidered patch that reads 'ASK ME ABOUT BABA STOCK' in blocky letters.\n\nThe cart is called Threefold, named for the three broths Slate Hinojosa-Sefanaia cycles through depending on their mood and what they could source cheaply. They are exuberantly social, know regulars by name and usual order, and maintain a strict policy of sliding-scale pricing that they enforce entirely based on vibes — they have never written it down and deny having a system, but longtime customers know that if Slate Hinojosa-Sefanaia likes you and you look hungry, you pay less. They pray to a small E.L.F. they call the Burner before every cook session, leaving a data-chip with a new recipe they've invented as an offering. They believe sincerely that the Burner makes the broth better.",
+  "description": "Belma Hinojosa-Sefanaia has the kind of face that changes depending on what they're feeling — not through any augmentation, but because their expressions are theatrical and unguarded, eyebrows mobile as flags. Their skin is deep brown with a warm undertone, and they have a bioluminescent patterning along their collarbone and upper arms: a cascade of soft teal dots that pulse gently when their body temperature rises — which it frequently does over a cooking cart. Their hair is kept in a high puff wrapped in orange synthetic silk, and they wear a secondhand Arcturus-branded apron they've covered in patches, safety pins, and one embroidered patch that reads 'ASK ME ABOUT BABA STOCK' in blocky letters.\n\nThe cart is called Threefold, named for the three broths Belma Hinojosa-Sefanaia cycles through depending on their mood and what they could source cheaply. They are exuberantly social, know regulars by name and usual order, and maintain a strict policy of sliding-scale pricing that they enforce entirely based on vibes — they have never written it down and deny having a system, but longtime customers know that if Belma Hinojosa-Sefanaia likes you and you look hungry, you pay less. They pray to a small E.L.F. they call the Burner before every cook session, leaving a data-chip with a new recipe they've invented as an offering. They believe sincerely that the Burner makes the broth better.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -246,7 +243,7 @@
     "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
     "Circuit",
     "TESSERA TK-4 'Hellhound'",
-    "Slate",
+    "Belma",
     "Silk"
   ],
   "district": "The Underworld",
@@ -269,7 +266,7 @@
     "posture_movement": "Moves with quick, efficient energy; stands with weight shifted forward slightly, ready to move or gesture; hands animate constantly while speaking; leans into conversations; posture relaxes when focused on cooking but becomes restless during downtime",
     "clothing_style": "Tier 4 working-class, secondhand and personalized; worn Arcturus-branded apron (secondhand, covered in embroidered patches including 'ASK ME ABOUT BABA STOCK', safety pins, and accumulated vendor cooperative pins); layered with heat-resistant synthetic undergarments; practical closed-toe shoes suitable for cart work; orange synthetic silk head wrap; minimal jewelry except for a small charm or talisman worn on a cord"
   },
-  "image_prompt": "Slate Hinojosa-Sefanaia, lean 168cm figure with warm medium-brown skin glowing with golden and olive undertones, black hair in high puff wrapped in bright orange synthetic silk. Bioluminescent teal biophotonic dots cascade across collarbone and upper arms, pulsing softly. Heat-scarred callused hands visible beneath heat-resistant synthetic layers. Wearing secondhand Arcturus apron covered in patches and cooperative pins, practical closed-toe shoes. Face animated and expressive with prominent cheekbones, deep brown eyes, mobile eyebrows reflecting East Asian and Middle Eastern features blended with broader Pacific Islander face structure. Quick, efficient movement, weight forward, hands gesturing. GLMZ Great Lakes Metropolitan Zone, warm ambient lighting catching the bioluminescent geneware, gritty vendor cart aesthetic, working-class dignity, neon-tinged shadows, cinematic depth --ar 2:3 --v 6",
+  "image_prompt": "Belma Hinojosa-Sefanaia, lean 168cm figure with warm medium-brown skin glowing with golden and olive undertones, black hair in high puff wrapped in bright orange synthetic silk. Bioluminescent teal biophotonic dots cascade across collarbone and upper arms, pulsing softly. Heat-scarred callused hands visible beneath heat-resistant synthetic layers. Wearing secondhand Arcturus apron covered in patches and cooperative pins, practical closed-toe shoes. Face animated and expressive with prominent cheekbones, deep brown eyes, mobile eyebrows reflecting East Asian and Middle Eastern features blended with broader Pacific Islander face structure. Quick, efficient movement, weight forward, hands gesturing. GLMZ Great Lakes Metropolitan Zone, warm ambient lighting catching the bioluminescent geneware, gritty vendor cart aesthetic, working-class dignity, neon-tinged shadows, cinematic depth --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 48.6,
     "Pacific Islander": 18.7,

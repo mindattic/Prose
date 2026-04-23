@@ -2,10 +2,7 @@
   "id": "019d6143a71f705589e69f119ebd259a",
   "type": "character",
   "name": "Badr Kulkarni",
-  "aliases": [
-    "Flux Kulkarni",
-    "Flux"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
@@ -13,7 +10,7 @@
   "age": 28,
   "status": "active",
   "location": "The Circuit — neon-lit entertainment and vice district, near Fullerton and Damen",
-  "description": "Flux Kulkarni are average height but with a presence that fills more space than the body accounts for. At 28, there's something unfinished about their face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a bounty hunter out of The Circuit, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nWhat Flux Kulkarni lacks in subtlety, they compensate for in thoroughness. No loose ends, no unfinished business, no second chances.",
+  "description": "Badr Kulkarni are average height but with a presence that fills more space than the body accounts for. At 28, there's something unfinished about their face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and they make no effort to hide it.\n\nTheir entry into running was involuntary — a debt to the wrong people, a choice between working it off or losing parts — and the debt is still not fully paid. They work as a bounty hunter out of The Circuit, taking contracts that match their skills and their risk tolerance, which are higher than most people consider healthy.\n\nWhat Badr Kulkarni lacks in subtlety, they compensate for in thoroughness. No loose ends, no unfinished business, no second chances.",
   "psychology": {
     "facet_weights": {
       "wound": 0.59,
@@ -303,7 +300,7 @@
     "posture_movement": "Stands with weight balanced, shoulders squared, never fully relaxed. Moves with economical precision — no wasted motion, every step deliberate. Eyes track threats in regular sweeps. Fingers twitchy at rest, fingers steady under pressure. Slight forward lean when concentrating, as if physically pulling information from the air.",
     "clothing_style": "Tier 3-4 streetwear: reinforced cargo pants (matte black, multiple pockets for gear), sleeveless compression shirt or tactical vest depending on contract temperature. Worn leather jacket (unmarked, functional, no corp branding). Steel-toed boots scuffed from field work. Minimal jewelry except functional gear — wrist display, credchip, encrypted comms. No vanity, all utility."
   },
-  "image_prompt": "Flux Kulkarni, GLMZ operative, 172cm lean muscular frame with functional density. Medium warm golden-brown skin with subtle olive undertones, sun-weathered from street work. Angular face with high cheekbones, amber-brown eyes with slight epicanthic fold, dark brown hair buzzed short on sides with longer asymmetrical top and blonde regrowth at roots. Ragged scar tissue across left temple (cortical bomb extraction site), thin white scar from right ear to jaw angle, faint burn marks on forearms. Neural interface ports visible at base of skull. Dark tactical outfit: matte black reinforced cargo pants, sleeveless compression shirt, worn unmarked leather jacket, steel-toed boots. Wrist display and encrypted comms visible. Posture balanced and alert, economical movements, default state of tactical assessment. Urban neon-lit Great Lakes Metropolitan Zone setting, moody blue and amber lighting, slight forward lean suggesting focus and intensity. Neo-noir street operative aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Badr Kulkarni, GLMZ operative, 172cm lean muscular frame with functional density. Medium warm golden-brown skin with subtle olive undertones, sun-weathered from street work. Angular face with high cheekbones, amber-brown eyes with slight epicanthic fold, dark brown hair buzzed short on sides with longer asymmetrical top and blonde regrowth at roots. Ragged scar tissue across left temple (cortical bomb extraction site), thin white scar from right ear to jaw angle, faint burn marks on forearms. Neural interface ports visible at base of skull. Dark tactical outfit: matte black reinforced cargo pants, sleeveless compression shirt, worn unmarked leather jacket, steel-toed boots. Wrist display and encrypted comms visible. Posture balanced and alert, economical movements, default state of tactical assessment. Urban neon-lit Great Lakes Metropolitan Zone setting, moody blue and amber lighting, slight forward lean suggesting focus and intensity. Neo-noir street operative aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 31.3,
     "East Asian": 26.8,

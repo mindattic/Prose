@@ -2,10 +2,7 @@
   "id": "019d6143a645793cb840931b02258602",
   "type": "character",
   "name": "Berenice Björnsdóttir",
-  "aliases": [
-    "Slate Björnsdóttir",
-    "Slate"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 29,
   "status": "active",
   "location": "Geartown, Pit Row Annex (a licensed repair bay squeezed between two Ferrogate-contracted shops), near Fullerton and Damen",
-  "description": "Slate Björnsdóttir is lean in the way of someone who forgets to eat when he is interested in something, with long fingers permanently stained in the particular blue-grey of ferrogate hydraulic fluid. His heritage is Ghanaian-Finnish-Bolivian and it shows in the warm amber of his skin and the pale green of his eyes, which are his most striking feature — not augmented, just genuinely that color, something he enjoys confirming when people ask. He has bioluminescent stripe mods down the outsides of both forearms in amber, purely aesthetic, which happen to be useful when working in dark undercarriages. His hair is kept very short except for a small braid at the nape of his neck that his younger sister did for him three years ago and that he has never cut.\n\nHe talks to machines the way other people talk to pets — low, encouraging, occasionally frustrated but never cruel. His shop is chaotic by any outside metric but internally logical: he knows where every part is and will become briefly offended if anyone moves something. He is generous with his time for people who cannot afford repairs and quietly inflexible with corporate contractors who try to lowball him. He has a running, entirely one-sided argument with the Ferrogate Transit Authority about their maintenance schedules that he prosecutes through strongly worded data-messages and occasional passive-aggressive comments when he fixes something their own crews certified as fine.",
+  "description": "Berenice Björnsdóttir is lean in the way of someone who forgets to eat when he is interested in something, with long fingers permanently stained in the particular blue-grey of ferrogate hydraulic fluid. His heritage is Ghanaian-Finnish-Bolivian and it shows in the warm amber of his skin and the pale green of his eyes, which are his most striking feature — not augmented, just genuinely that color, something he enjoys confirming when people ask. He has bioluminescent stripe mods down the outsides of both forearms in amber, purely aesthetic, which happen to be useful when working in dark undercarriages. His hair is kept very short except for a small braid at the nape of his neck that his younger sister did for him three years ago and that he has never cut.\n\nHe talks to machines the way other people talk to pets — low, encouraging, occasionally frustrated but never cruel. His shop is chaotic by any outside metric but internally logical: he knows where every part is and will become briefly offended if anyone moves something. He is generous with his time for people who cannot afford repairs and quietly inflexible with corporate contractors who try to lowball him. He has a running, entirely one-sided argument with the Ferrogate Transit Authority about their maintenance schedules that he prosecutes through strongly worded data-messages and occasional passive-aggressive comments when he fixes something their own crews certified as fine.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -225,7 +222,7 @@
     "Ferrogate Transit",
     "The Heritage Vault",
     "Geartown",
-    "Slate",
+    "Berenice",
     "Cargo Tacos",
     "The Pale Mile"
   ],
@@ -250,7 +247,7 @@
     "posture_movement": "Perpetually slightly hunched from bench work, shoulders rolled forward. Walks with purposeful efficiency, minimal wasted motion. Hands move with mechanical precision when working, but otherwise held loosely at sides. When engaged with machines or problems, entire body becomes still and focused. Makes direct eye contact when discussing technical matters but avoids it during small talk.",
     "clothing_style": "Tier 3 working mechanic; permanently oil-stained coveralls (dark blue, Ferrogate-branded but unlicensed customizations) worn over faded cotton t-shirts. Heavy reinforced work boots (scuffed, resoled multiple times). A battered synthetic leather jacket for transit between jobs, pockets stuffed with diagnostic tools, cabling, and salvaged components. No corporate branding beyond the unavoidable Ferrogate logo. Accessories minimal: worn steel-band watch inherited from his father, single copper ring on right index finger (from the same source), small rucksack containing spare gloves and tools. Everything functional, nothing decorative except the braid and bioluminescent mods."
   },
-  "image_prompt": "Slate Björnsdóttir, 178cm lean mechanic with warm golden-amber skin, pale green eyes, high Southeast Asian cheekbones blended with Northern European heritage. Black hair in short crop with single copper-wire-wrapped braid at nape. Bioluminescent amber parallel stripes glowing faintly down both forearms. Wearing oil-stained dark blue Ferrogate coveralls over faded t-shirt, heavily modified haptic feedback gloves with visible wear, scuffed reinforced work boots. Slight forward shoulder hunch from bench work. GLMZ Great Lakes Metropolitan Zone, under warm workshop lighting in an industrial undercity garage, surrounded by partially disassembled machinery. Direct eye contact, focused expression, hands positioned with mechanical precision. Battered synthetic leather jacket visible nearby, diagnostic tools scattered across workbench. Atmosphere: gritty, competent, driven by purpose. --ar 2:3 --v 6",
+  "image_prompt": "Berenice Björnsdóttir, 178cm lean mechanic with warm golden-amber skin, pale green eyes, high Southeast Asian cheekbones blended with Northern European heritage. Black hair in short crop with single copper-wire-wrapped braid at nape. Bioluminescent amber parallel stripes glowing faintly down both forearms. Wearing oil-stained dark blue Ferrogate coveralls over faded t-shirt, heavily modified haptic feedback gloves with visible wear, scuffed reinforced work boots. Slight forward shoulder hunch from bench work. GLMZ Great Lakes Metropolitan Zone, under warm workshop lighting in an industrial undercity garage, surrounded by partially disassembled machinery. Direct eye contact, focused expression, hands positioned with mechanical precision. Battered synthetic leather jacket visible nearby, diagnostic tools scattered across workbench. Atmosphere: gritty, competent, driven by purpose. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Northern European": 41.2,
     "Southeast Asian": 39.2,

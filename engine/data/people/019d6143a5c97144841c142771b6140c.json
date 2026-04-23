@@ -2,10 +2,7 @@
   "id": "019d6143a5c97144841c142771b6140c",
   "type": "character",
   "name": "Benedikt Björnsdóttir-Kwon",
-  "aliases": [
-    "Slate Björnsdóttir-Kwon",
-    "Slate"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 68,
   "status": "active",
   "location": "the Gray Zone, Block 7, stall 7-F (lives in a converted shipping container unit), near Halsted and Division",
-  "description": "Slate Björnsdóttir-Kwon is a lean, angular man with close-cropped grey hair and the particular economy of movement that marks people trained to conserve energy over long distances. His skin is dark brown with pronounced keloid scarring across his right shoulder and clavicle — he does not cover it and does not explain it to strangers. He has cosmetic geneware: a cat's tail, russet-orange with a dark tip, that he got as a joke in 2168 when his unit was celebrating surviving the Kessler Corridor engagement. He has kept it because it amuses him that it annoys people who expect a veteran to be more serious. His left hand has a visible subdermal port on the back where a tactical datalink was removed — the flesh around it never quite healed smooth.\n\nSlate Björnsdóttir-Kwon served twelve years as an Axiom ground contractor during the Corporate Wars, and he came back from them with a pension that covers his container unit on the Gray Zone, two meals a day if he is careful, and nothing else. He is not bitter about this in the operatic way — he is bitter in the quiet, functional way of someone who made his peace with it and is now simply watching to see what happens next. He runs a small informal counseling operation for other veterans on the Gray Zone, not because anyone asked him to or pays him to, but because he watched two friends die from nothing that could have been prevented if anyone had been paying attention. He has no license, no credentials, and a long waiting list.",
+  "description": "Benedikt Björnsdóttir-Kwon is a lean, angular man with close-cropped grey hair and the particular economy of movement that marks people trained to conserve energy over long distances. His skin is dark brown with pronounced keloid scarring across his right shoulder and clavicle — he does not cover it and does not explain it to strangers. He has cosmetic geneware: a cat's tail, russet-orange with a dark tip, that he got as a joke in 2168 when his unit was celebrating surviving the Kessler Corridor engagement. He has kept it because it amuses him that it annoys people who expect a veteran to be more serious. His left hand has a visible subdermal port on the back where a tactical datalink was removed — the flesh around it never quite healed smooth.\n\nBenedikt Björnsdóttir-Kwon served twelve years as an Axiom ground contractor during the Corporate Wars, and he came back from them with a pension that covers his container unit on the Gray Zone, two meals a day if he is careful, and nothing else. He is not bitter about this in the operatic way — he is bitter in the quiet, functional way of someone who made his peace with it and is now simply watching to see what happens next. He runs a small informal counseling operation for other veterans on the Gray Zone, not because anyone asked him to or pays him to, but because he watched two friends die from nothing that could have been prevented if anyone had been paying attention. He has no license, no credentials, and a long waiting list.",
   "psychology": {
     "facet_weights": {
       "wound": 0.75,
@@ -260,7 +257,7 @@
   ],
   "related_entities": [
     "GLMZ",
-    "Slate",
+    "Benedikt",
     "Arcturus Defense Solutions SentinelSkin VS-4 Embedded Structural Acoustic Surveillance Membrane"
   ],
   "district": "the Gray Zone",
@@ -284,7 +281,7 @@
     "posture_movement": "Economy of motion ingrained to the point of unconscious habit. Walks with measured pace, never rushed. Stands with weight balanced slightly forward on the balls of his feet as if ready to move. Hands rarely gesture; communication is primarily facial and postural. Moves through space as someone aware of sightlines and exits, a reconnaissance habit he cannot disable.",
     "clothing_style": "Tier 4 functional — worn but maintained Axiom-era fatigue pants, deep grey with reinforced pockets; layered shirts in muted colors (charcoal, slate, dark green) that show careful mending. A long coat from the 2190s, still waterproofed, with internal pockets used for tools and small repair items. Worn synthetic boots with good tread, resoled multiple times. A single piece of jewelry: a thin braided wire bracelet on his right wrist, knotted with small loops he fidgets with during counseling sessions. No visible branding or corpo affiliations — all markings have been removed or faded."
   },
-  "image_prompt": "Slate Björnsdóttir-Kwon, lean 178cm mixed-heritage neo-noir operative, warm medium-brown skin with golden undertones, high angular cheekbones blending East Asian characteristics with broad African heritage nose bridge, deep brown eyes with amber warmth, grey close-cropped military cut hair, clean-shaven weather-worn face etched with decades of controlled expression. Pronounced radiating keloid scarring across right shoulder and clavicle left deliberately visible, animate russet-orange cat tail with dark tip extending from base of spine, subdermal port scar on left hand. Wearing faded Axiom-era deep grey fatigue pants with reinforced pockets, layered muted-color shirts showing careful mending, long waterproofed 2190s coat, worn synthetic boots. Thin braided wire bracelet on right wrist. Standing with weight balanced on balls of feet, economy of motion, aware of sightlines. GLMZ Great Lakes Metropolitan Zone aesthetic. Cool neon-tinged overhead lighting casting subtle shadows across weathered features, industrial background with faded corporate signage, meditative isolated mood, gritty realism --ar 2:3 --v 6",
+  "image_prompt": "Benedikt Björnsdóttir-Kwon, lean 178cm mixed-heritage neo-noir operative, warm medium-brown skin with golden undertones, high angular cheekbones blending East Asian characteristics with broad African heritage nose bridge, deep brown eyes with amber warmth, grey close-cropped military cut hair, clean-shaven weather-worn face etched with decades of controlled expression. Pronounced radiating keloid scarring across right shoulder and clavicle left deliberately visible, animate russet-orange cat tail with dark tip extending from base of spine, subdermal port scar on left hand. Wearing faded Axiom-era deep grey fatigue pants with reinforced pockets, layered muted-color shirts showing careful mending, long waterproofed 2190s coat, worn synthetic boots. Thin braided wire bracelet on right wrist. Standing with weight balanced on balls of feet, economy of motion, aware of sightlines. GLMZ Great Lakes Metropolitan Zone aesthetic. Cool neon-tinged overhead lighting casting subtle shadows across weathered features, industrial background with faded corporate signage, meditative isolated mood, gritty realism --ar 2:3 --v 6",
   "genetic_ancestry": {
     "East Asian": 45.6,
     "Sub-Saharan African": 22.8,

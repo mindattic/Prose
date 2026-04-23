@@ -2,18 +2,15 @@
   "id": "019d6143a6877ae297dd60f3284b0680",
   "type": "character",
   "name": "Gencer Konaté-Sesay-Deshpande",
-  "aliases": [
-    "Aditya Konaté-Sesay-Deshpande",
-    "Aditya"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
   "role": "Tailor and seamstress, runs a small alterations shop",
   "age": 58,
   "status": "active",
-  "location": "Hamtramck Enclave, unit 4 of the Briar Arcade — a narrow shopfront wedged between a dumpling counter and a prosthetic repair stall, near Ashland and Division",
-  "description": "Aditya Konaté-Sesay-Deshpande is a compact, heavyset woman whose hands are the most expressive thing about her — calloused at the fingertips from decades of needle work, stained faintly indigo from fabric dye she never quite gets out. Her hair is bone-white, worn in tight loops pinned close to her skull, and her skin is deep brown with an undertone of reddish amber. A cosmetic mod gives her irises a slow geometric shimmer, silver hexagons rotating lazily — a gift from her daughter she's never removed even though she found it frivolous at the time. She dresses simply but always immaculately; her clothes fit her like testimony.\n\nShe has a particular stillness to her that people mistake for coldness until she starts talking, at which point they realize it's actually patience. She will hold a pin in her teeth and listen to a customer describe a wedding, a funeral, a job interview, a first date, while her hands move without her eyes watching them. She's witnessed thirty years of human milestone dressed in fabric, and she has quiet opinions about all of it. She doesn't share them unless asked. When she does, they tend to land.",
+  "location": "Hamtramck Enclave, unit 4 of the Emeka Arcade — a narrow shopfront wedged between a dumpling counter and a prosthetic repair stall, near Ashland and Division",
+  "description": "Gencer Konaté-Sesay-Deshpande is a compact, heavyset woman whose hands are the most expressive thing about her — calloused at the fingertips from decades of needle work, stained faintly indigo from fabric dye she never quite gets out. Her hair is bone-white, worn in tight loops pinned close to her skull, and her skin is deep brown with an undertone of reddish amber. A cosmetic mod gives her irises a slow geometric shimmer, silver hexagons rotating lazily — a gift from her daughter she's never removed even though she found it frivolous at the time. She dresses simply but always immaculately; her clothes fit her like testimony.\n\nShe has a particular stillness to her that people mistake for coldness until she starts talking, at which point they realize it's actually patience. She will hold a pin in her teeth and listen to a customer describe a wedding, a funeral, a job interview, a first date, while her hands move without her eyes watching them. She's witnessed thirty years of human milestone dressed in fabric, and she has quiet opinions about all of it. She doesn't share them unless asked. When she does, they tend to land.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -227,7 +224,7 @@
     {
       "date": "",
       "story_id": "",
-      "event": "Received Tessera buyout offer for the Briar Arcade unit",
+      "event": "Received Tessera buyout offer for the Emeka Arcade unit",
       "consequences": "",
       "body_changes": [],
       "status_change": ""
@@ -273,7 +270,7 @@
     "posture_movement": "Centered and still, almost meditative in repose. When working, her hands move with unconscious precision while her eyes focus on customer faces rather than the fabric. Walking gait is economical and grounded. She favors leaning against her work table when listening, weight distributed evenly. Stillness is her default state; people often mistake it for coldness until she speaks",
     "clothing_style": "Simple but immaculate — always self-tailored to perfection. Favors neutral earth tones (charcoal, taupe, cream, deep indigo) and natural fabrics (linen, cotton, wool blends). Her apron is a toolkit: multiple pockets, deep and organized, always worn over her clothes. Clothes fit her like they were grown on her body — a walking advertisement for her craftsmanship. Tier 3 quality materials, but executed at Tier 1 precision. Comfortable footwear (worn leather shoes, meticulously maintained). No visible jewelry except for a simple gold band on her left ring finger, worn smooth"
   },
-  "image_prompt": "Aditya Konaté-Sesay-Deshpande, 158cm compact heavyset woman with deep warm brown skin and golden undertones, mixed South Asian-African-East Asian heritage evident in defined cheekbones and subtle angular eyes. Bone white short coiled hair pinned neatly. Cosmetic iris mod with rotating silver hexagons, deep brown base. Age 58, standing in GLMZ textile shop, leaning against worn work table, meditative stillness. Calloused hands with permanent indigo staining from decades of dye work, scarred wrists from articular stabilizers. Wearing self-tailored charcoal linen apron over cream wool blend, practical leather shoes worn smooth. Neutral earth tone palette, immaculate despite age. Soft workshop lighting casting shadows across her thoughtful face, gold band ring catching light. Neo-noir urban aesthetic meets human craftsmanship, grounded presence, economical movement, digital age mastery through analog precision. --ar 2:3 --v 6",
+  "image_prompt": "Gencer Konaté-Sesay-Deshpande, 158cm compact heavyset woman with deep warm brown skin and golden undertones, mixed South Asian-African-East Asian heritage evident in defined cheekbones and subtle angular eyes. Bone white short coiled hair pinned neatly. Cosmetic iris mod with rotating silver hexagons, deep brown base. Age 58, standing in GLMZ textile shop, leaning against worn work table, meditative stillness. Calloused hands with permanent indigo staining from decades of dye work, scarred wrists from articular stabilizers. Wearing self-tailored charcoal linen apron over cream wool blend, practical leather shoes worn smooth. Neutral earth tone palette, immaculate despite age. Soft workshop lighting casting shadows across her thoughtful face, gold band ring catching light. Neo-noir urban aesthetic meets human craftsmanship, grounded presence, economical movement, digital age mastery through analog precision. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 41.8,
     "Sub-Saharan African": 33.5,

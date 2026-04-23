@@ -2,10 +2,7 @@
   "id": "019d6143a63b779798b37ddc55ccd8be",
   "type": "character",
   "name": "Alisha Krishnamurthy",
-  "aliases": [
-    "Phoenix Krishnamurthy",
-    "Phoenix"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 27,
   "status": "active",
   "location": "The Narrows — cramped residential corridors between megastructures, near Fullerton and Damen",
-  "description": "Phoenix Krishnamurthy is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 27, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — eye replacement — one organic, one cybernetic with recording capability and zoom — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Phoenix Krishnamurthy plans to keep it that way. She works as a saboteur out of The Narrows, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nPhoenix Krishnamurthy operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Alisha Krishnamurthy is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 27, the augmentation scarring around her temples and jawline tells a story of installation by someone who prioritized function over aesthetics. The chrome is visible — eye replacement — one organic, one cybernetic with recording capability and zoom — and she makes no effort to hide it.\n\nShe used to be somebody else, in another city, with another name — that person is officially dead, and Alisha Krishnamurthy plans to keep it that way. She works as a saboteur out of The Narrows, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nAlisha Krishnamurthy operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.39,
@@ -274,7 +271,7 @@
   "related_entities": [
     "Masquerade",
     "The Narrows Compact",
-    "Underground Phoenix",
+    "Underground Alisha",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "SynapTech ReadRoom Social Cue Enhancer",
     "Slagworks Industrial",
@@ -302,7 +299,7 @@
     "posture_movement": "Stands with weight forward, ready to move. Walks with economical efficiency — no wasted motion. Fingers often fidgeting or checking equipment. Head moves constantly, cataloguing exits and threats. Right eye often seems to be recording — slight focus shift and micro-adjustments of the iris aperture. Restless even at rest — constant low-level physical tension.",
     "clothing_style": "Tier 4-5 functional minimalism. Black or dark grey fitted cargo pants with reinforced knees and thigh pockets — worn Syndicate Industrial brand. Tight-fitting compression shirt under a worn leather jacket (grey-brown, creased from use, multiple hidden pockets added by hand). Fingerless gloves with exposed knuckle reinforcement. Steel-toed boots, scuffed and practical. No jewelry or decoration. Everything designed for quick movement and access to tools."
   },
-  "image_prompt": "Phoenix Krishnamurthy, 2226 neo-noir operative, 168cm lean and wiry frame, deep warm brown skin with golden undertones reflecting South Asian, North African and Sub-Saharan heritage, high angular cheekbones with sharp jawline, eyes with slight East Asian epicanthic fold, left eye warm brown, right eye pure chrome circuitry with adjustable aperture lens, dark brown hair with grey threads pulled back in tight functional braid, weathered face with faint stress lines, surgical scarring at temples and jawline, burn marks on knuckles, chrome plating visible beneath skin at shoulders and forearms, wearing black cargo pants and worn grey-brown leather jacket with added pockets, fingerless gloves, steel-toed boots, standing in forward-ready posture with restless kinetic energy, head angled to catalogue environment, chrome eye recording and processing, urban GLMZ neon-lit alley background, cool blue and amber lighting casting shadows across augmented features, GLMZ 2200s aesthetic, high contrast, gritty and functional --ar 2:3 --v 6",
+  "image_prompt": "Alisha Krishnamurthy, 2226 neo-noir operative, 168cm lean and wiry frame, deep warm brown skin with golden undertones reflecting South Asian, North African and Sub-Saharan heritage, high angular cheekbones with sharp jawline, eyes with slight East Asian epicanthic fold, left eye warm brown, right eye pure chrome circuitry with adjustable aperture lens, dark brown hair with grey threads pulled back in tight functional braid, weathered face with faint stress lines, surgical scarring at temples and jawline, burn marks on knuckles, chrome plating visible beneath skin at shoulders and forearms, wearing black cargo pants and worn grey-brown leather jacket with added pockets, fingerless gloves, steel-toed boots, standing in forward-ready posture with restless kinetic energy, head angled to catalogue environment, chrome eye recording and processing, urban GLMZ neon-lit alley background, cool blue and amber lighting casting shadows across augmented features, GLMZ 2200s aesthetic, high contrast, gritty and functional --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 21.4,
     "North African": 20.3,

@@ -2,10 +2,7 @@
   "id": "019d6143a5a3758b808257979bd63b17",
   "type": "character",
   "name": "Anas Solberg",
-  "aliases": [
-    "Kit Solberg",
-    "Kit"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 56,
   "status": "active",
   "location": "the Gray Zone lower levels — her workshop is inside a legitimate print-shop called Meridian Keepsakes in the Gray Zone's Level 3 commercial strip, near Ashland and Division",
-  "description": "Kit Solberg is a small, round-faced woman in her mid-fifties with the unhurried quality of someone who has already survived things that should have killed her. Her skin is deep brown and she wears her grey-streaked hair in long thin braids she pins up during work hours and lets fall loose on the rare occasion she relaxes. Her fingers are perennially stained with chromatic ink residue in colors that shift with the angle of light — an occupational mark she stopped trying to remove decades ago. Her eyes have patterned irises: a geneware mod that prints faint text-like symbols in the iris ring, which she had installed as a joke about her profession and has kept because she's grown fond of it.\n\nShe has been doing this work for thirty years and has the professional satisfaction of a master craftsperson. Adefunke does not rush, does not cut corners, and charges accordingly. She refers to her forgeries as 'documents' and to real identity papers as 'originals,' a distinction she maintains with dry humor. She is not ideological about her work — she doesn't particularly care whether her clients are refugees, criminals, or corporate embarrassments, as long as their Quanta are real and they don't bring surveillance to her door. She is, however, one of the few people in the Gray Zone's lower levels who will offer a genuine discount to people fleeing documented abuse, which she doesn't advertise and explains, when pressed, as 'good for the market.'",
+  "description": "Anas Solberg is a small, round-faced woman in her mid-fifties with the unhurried quality of someone who has already survived things that should have killed her. Her skin is deep brown and she wears her grey-streaked hair in long thin braids she pins up during work hours and lets fall loose on the rare occasion she relaxes. Her fingers are perennially stained with chromatic ink residue in colors that shift with the angle of light — an occupational mark she stopped trying to remove decades ago. Her eyes have patterned irises: a geneware mod that prints faint text-like symbols in the iris ring, which she had installed as a joke about her profession and has kept because she's grown fond of it.\n\nShe has been doing this work for thirty years and has the professional satisfaction of a master craftsperson. Adefunke does not rush, does not cut corners, and charges accordingly. She refers to her forgeries as 'documents' and to real identity papers as 'originals,' a distinction she maintains with dry humor. She is not ideological about her work — she doesn't particularly care whether her clients are refugees, criminals, or corporate embarrassments, as long as their Quanta are real and they don't bring surveillance to her door. She is, however, one of the few people in the Gray Zone's lower levels who will offer a genuine discount to people fleeing documented abuse, which she doesn't advertise and explains, when pressed, as 'good for the market.'",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -228,7 +225,7 @@
       "Fine network of ink-like micro-abrasions across both palms from decades of precision handwork"
     ]
   },
-  "image_prompt": "Kit Solberg, 155cm compact figure with warm medium-brown skin blending Southeast Asian, Hispanic/Latin American, and Sub-Saharan African heritage, broad cheekbones, round face, dark brown hair with grey threading worn in long braids pinned up, deep brown eyes with faint symbolic text geneware in the iris. Seated at precision work in a dimly lit neo-noir workspace, wearing a grey linen overshirt over charcoal long-sleeved shirt, neutral tones. Her hands show iridescent chromatic ink stains in blues, greens, magentas with micro-abrasions from decades of detailed work. Meditative stillness, careful posture, unhurried deliberate movement. GLMZ, Great Lakes Metropolitan Zone aesthetic, soft LED work-lighting, patient concentrated expression, Tier 4 practical grooming, silver ring visible, reading glasses on chain nearby. --ar 2:3 --v 6",
+  "image_prompt": "Anas Solberg, 155cm compact figure with warm medium-brown skin blending Southeast Asian, Hispanic/Latin American, and Sub-Saharan African heritage, broad cheekbones, round face, dark brown hair with grey threading worn in long braids pinned up, deep brown eyes with faint symbolic text geneware in the iris. Seated at precision work in a dimly lit neo-noir workspace, wearing a grey linen overshirt over charcoal long-sleeved shirt, neutral tones. Her hands show iridescent chromatic ink stains in blues, greens, magentas with micro-abrasions from decades of detailed work. Meditative stillness, careful posture, unhurried deliberate movement. GLMZ, Great Lakes Metropolitan Zone aesthetic, soft LED work-lighting, patient concentrated expression, Tier 4 practical grooming, silver ring visible, reading glasses on chain nearby. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Southeast Asian": 64.4,
     "Hispanic/Latin American": 19.9,

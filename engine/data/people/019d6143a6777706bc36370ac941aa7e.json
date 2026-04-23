@@ -2,10 +2,7 @@
   "id": "019d6143a6777706bc36370ac941aa7e",
   "type": "character",
   "name": "Elke Im-Ingebrigtsen",
-  "aliases": [
-    "Briar Im-Ingebrigtsen",
-    "Briar"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 34,
   "status": "active",
   "location": "Highland Park Autonomous Zone — rents a room above a fabrication collective, conducts fieldwork across the Gray Zone, near Michigan Ave and Walton",
-  "description": "Briar Im-Ingebrigtsen is lean and long-limbed, with dark reddish-brown skin and a close beard going patchy at the jaw — he's been meaning to fix that for two years. His irises have been modded with a slow-rotating geometric pattern in amber and charcoal, which he got as a fieldwork gift-exchange gesture with a community he was studying and then couldn't bring himself to reverse. He wears the same three outfits in rotation and takes extremely good notes. He looks younger than thirty-four in bad light and much older in good light, depending on whether the worry lines are catching the glow.\n\nHe is one of the few Tier 3 academics who has chosen, deliberately and against significant professional advice, to live embedded in Tier 1-2 communities rather than commuting from the University Spine. His research on the Gray Zone informal economies — the gift networks, the barter systems, the E.L.F. offering economies, the nested mutual aid webs that allow people to survive well below the UBC stipend line — is quietly groundbreaking. He is uncomfortable with how groundbreaking it is, because breakthrough research means exposure, and exposure means the people he studies become subjects rather than neighbors. He has turned down two Axiom R&D grants and is running out of independent funding. He is cheerful about this in a way that does not fool anyone who knows him.",
+  "description": "Elke Im-Ingebrigtsen is lean and long-limbed, with dark reddish-brown skin and a close beard going patchy at the jaw — he's been meaning to fix that for two years. His irises have been modded with a slow-rotating geometric pattern in amber and charcoal, which he got as a fieldwork gift-exchange gesture with a community he was studying and then couldn't bring himself to reverse. He wears the same three outfits in rotation and takes extremely good notes. He looks younger than thirty-four in bad light and much older in good light, depending on whether the worry lines are catching the glow.\n\nHe is one of the few Tier 3 academics who has chosen, deliberately and against significant professional advice, to live embedded in Tier 1-2 communities rather than commuting from the University Spine. His research on the Gray Zone informal economies — the gift networks, the barter systems, the E.L.F. offering economies, the nested mutual aid webs that allow people to survive well below the UBC stipend line — is quietly groundbreaking. He is uncomfortable with how groundbreaking it is, because breakthrough research means exposure, and exposure means the people he studies become subjects rather than neighbors. He has turned down two Axiom R&D grants and is running out of independent funding. He is cheerful about this in a way that does not fool anyone who knows him.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -205,7 +202,7 @@
     "Chrome Don't Cry (It Conducts)",
     "SynapTech IrisBloom Ocular Color Modulator",
     "Iron Meridian Cooperative Backbone IMC-3 'Spine'",
-    "Frost Boudiaf",
+    "Folakemi Boudiaf",
     "Nightlight"
   ],
   "district": "The Spires",
@@ -229,7 +226,7 @@
     "posture_movement": "Forward-leaning walk as if always listening; hands gesture while speaking but palms-up rather than dominant; habitually touches temple (neural recorder engagement); sits with knees drawn up even in formal contexts; eyes track foot traffic and social groupings even during conversation — occupational observation habit",
     "clothing_style": "Tier 3 working academic: three-outfit rotation of durable, mended cotton-blend layers (grays, dark blues, earth tones); one slightly better set for University Spine presentations (unfashionable, carefully maintained); worn hiking boots resoled twice; carries a canvas fieldwork satchel with visible stains from multiple neighborhoods; no corporate logos; clothes show authentic wear rather than styled distress; thermal undershirt visible at collar in cold months"
   },
-  "image_prompt": "Briar Im-Ingebrigtsen, 34-year-old fieldwork academic in GLMZ 2226, medium golden-brown skin with warm peachy and subtle olive undertones reflecting mixed heritage—Northern European, East Asian, Indigenous American, Southeast Asian, South Asian, and Latin American ancestry. Angular face with moderate East Asian cheekbones, dark brown eyes with slow-rotating amber and charcoal geometric cybernetic implants, visible faint scars on left knuckle and right forearm. Short dark brown hair with auburn highlights, patchy unkempt beard. Tall lean frame (183cm), slight forward stoop from years of fieldwork. Wearing worn three-outfit rotation of mended gray and dark blue cotton-blend layers, thermal undershirt visible at collar, resoled hiking boots. Canvas fieldwork satchel with visible stains. Neural recorder port at left temple hairline. Forward-leaning posture, hands gesture with palms-up, knees drawn up. Occupational observer's gaze tracking surroundings. Neo-noir academic aesthetic, worn authentic clothing, deep worry lines from chronic sleep deficit, minimal chrome augmentation. Indoor university or field documentation setting, cool overhead lighting casting sharp shadows that emphasize orbital hollows and facial structure, slightly tired but alert expression. --ar 2:3 --v 6",
+  "image_prompt": "Elke Im-Ingebrigtsen, 34-year-old fieldwork academic in GLMZ 2226, medium golden-brown skin with warm peachy and subtle olive undertones reflecting mixed heritage—Northern European, East Asian, Indigenous American, Southeast Asian, South Asian, and Latin American ancestry. Angular face with moderate East Asian cheekbones, dark brown eyes with slow-rotating amber and charcoal geometric cybernetic implants, visible faint scars on left knuckle and right forearm. Short dark brown hair with auburn highlights, patchy unkempt beard. Tall lean frame (183cm), slight forward stoop from years of fieldwork. Wearing worn three-outfit rotation of mended gray and dark blue cotton-blend layers, thermal undershirt visible at collar, resoled hiking boots. Canvas fieldwork satchel with visible stains. Neural recorder port at left temple hairline. Forward-leaning posture, hands gesture with palms-up, knees drawn up. Occupational observer's gaze tracking surroundings. Neo-noir academic aesthetic, worn authentic clothing, deep worry lines from chronic sleep deficit, minimal chrome augmentation. Indoor university or field documentation setting, cool overhead lighting casting sharp shadows that emphasize orbital hollows and facial structure, slightly tired but alert expression. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Northern European": 36.8,
     "East Asian": 24.7,

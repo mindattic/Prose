@@ -2,10 +2,7 @@
   "id": "019d6143a6c9719cbb174c842fddcf0e",
   "type": "character",
   "name": "Can Zaragoza",
-  "aliases": [
-    "Remi Zaragoza",
-    "Remi"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 58,
   "status": "active",
   "location": "The Meridian Core (surface-level administrative district, outer ring), near State and Monroe",
-  "description": "Remi Zaragoza is a tall, angular Haitian-French woman with silver locs pulled back with administrative precision and reading glasses she refuses to augment away because, as she puts it, she earned the need for them. Her face holds the particular expression of someone who has spent decades being the most competent person in rooms that refused to acknowledge it—a kind of burnished patience that occasionally cracks into something sharper and much less forgiving. She wears corporate-adjacent clothing, clean and structured, in the greys and navies that make people in The Meridian Core assume she belongs there.",
+  "description": "Can Zaragoza is a tall, angular Haitian-French woman with silver locs pulled back with administrative precision and reading glasses she refuses to augment away because, as she puts it, she earned the need for them. Her face holds the particular expression of someone who has spent decades being the most competent person in rooms that refused to acknowledge it—a kind of burnished patience that occasionally cracks into something sharper and much less forgiving. She wears corporate-adjacent clothing, clean and structured, in the greys and navies that make people in The Meridian Core assume she belongs there.",
   "psychology": {
     "facet_weights": {
       "wound": 0.81,
@@ -259,7 +256,7 @@
     "posture_movement": "Posture is upright and economical; she moves with deliberate precision, nothing wasted. Her gait is steady and unhurried, the movement of someone who has spent her life in climate-controlled corporate spaces. She sits with her spine straight, hands folded or occupied with something productive. Her expression defaults to neutral observation; she does not make eye contact easily but does not avoid it either—a compromise born of professional habit.",
     "clothing_style": "Corporate-adjacent, deliberately bland: charcoal grey blazers over navy or white fitted shirts, tailored trousers in muted tones, clean and structured to pass unnoticed in administrative buildings. Worn leather satchel containing physical documents and a single encrypted datapad. Practical shoes without augmentation ports. Everything is clean, well-maintained, and at least five years out of current fashion—the clothing of someone who dresses to be forgotten, not seen."
   },
-  "image_prompt": "Remi Zaragoza, a 178cm tall lean androgynous woman with warm deep brown skin holding subtle golden and olive undertones from complex five-way ancestry blend (Sub-Saharan African, East Asian, South Asian, Hispanic/Latin American, Indigenous American). Sharp, high cheekbones, defined nose bridge, finer orbital geometry, mid-facial width reflecting her mixed heritage. Deep brown eyes with visible amber retinal scanner hardware in left eye. Silver hair with dark undertones pulled back in long locs, worn with functional precision. Fine wrinkles around eyes and mouth. Minimal distinguishing marks: small horizontal scar on right wrist, faint burn mark on left hand. Wearing charcoal grey blazer over white fitted shirt, tailored navy trousers, worn leather satchel. Reading glasses on chain pushed up on forehead. Upright posture, neutral expression, economical movement. Corporate administrative setting, cool fluorescent lighting, 2226 neo-noir GLMZ aesthetic, professional and deliberately unobtrusive appearance --ar 2:3 --v 6",
+  "image_prompt": "Can Zaragoza, a 178cm tall lean androgynous woman with warm deep brown skin holding subtle golden and olive undertones from complex five-way ancestry blend (Sub-Saharan African, East Asian, South Asian, Hispanic/Latin American, Indigenous American). Sharp, high cheekbones, defined nose bridge, finer orbital geometry, mid-facial width reflecting her mixed heritage. Deep brown eyes with visible amber retinal scanner hardware in left eye. Silver hair with dark undertones pulled back in long locs, worn with functional precision. Fine wrinkles around eyes and mouth. Minimal distinguishing marks: small horizontal scar on right wrist, faint burn mark on left hand. Wearing charcoal grey blazer over white fitted shirt, tailored navy trousers, worn leather satchel. Reading glasses on chain pushed up on forehead. Upright posture, neutral expression, economical movement. Corporate administrative setting, cool fluorescent lighting, 2226 neo-noir GLMZ aesthetic, professional and deliberately unobtrusive appearance --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 29.8,
     "East Asian": 22.3,

@@ -2,10 +2,7 @@
   "id": "019d6143a6cc78b2aa4396db36b3fa08",
   "type": "character",
   "name": "Bernhardt Boonsri-Im-Kabwit",
-  "aliases": [
-    "Slate Boonsri-Im-Kabwit",
-    "Slate"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 34,
   "status": "active",
   "location": "Irkalla, sub-level 7 junction known locally as the Molar Cross, near sub-level access near LaSalle and Congress",
-  "description": "Slate Boonsri-Im-Kabwit is a lean woman whose body has adapted to confined spaces in ways that are faintly unsettling — she moves through narrow passages without seeming to rotate her shoulders, ducking under pipes with the automatic grace of someone who has never known a ceiling higher than two meters. Her skin is a deep warm brown mapped with self-applied phosphorescent tattoos that glow faint teal in darkness, a functional adaptation that doubles as artistry, marking her position for those who follow. Her hair is gone entirely, shaved to the scalp and re-grown as thin bioluminescent filaments she keeps braided tight. She wears a rig of salvaged equipment: repurposed Ferrogate Transit surveying tools, lengths of knotted rope that double as her personal mapping notation, and a coat stitched from old transit uniform panels.\n\nShe speaks in the economical cadence of someone who has learned that sound travels strangely underground and that echoes lie. She is not unfriendly but she is precise — she will tell you exactly what a route costs, exactly what the risks are, and exactly what she will do if you violate her rules in the tunnels. She has a superstitious relationship with the E.L.F.s she believes inhabit the deep drainage networks, leaving coiled wire and old transit tokens at specific junctions before guiding anyone through. She calls these spirits the Drip-Mouths and speaks of them with something between fear and professional respect.",
+  "description": "Bernhardt Boonsri-Im-Kabwit is a lean woman whose body has adapted to confined spaces in ways that are faintly unsettling — she moves through narrow passages without seeming to rotate her shoulders, ducking under pipes with the automatic grace of someone who has never known a ceiling higher than two meters. Her skin is a deep warm brown mapped with self-applied phosphorescent tattoos that glow faint teal in darkness, a functional adaptation that doubles as artistry, marking her position for those who follow. Her hair is gone entirely, shaved to the scalp and re-grown as thin bioluminescent filaments she keeps braided tight. She wears a rig of salvaged equipment: repurposed Ferrogate Transit surveying tools, lengths of knotted rope that double as her personal mapping notation, and a coat stitched from old transit uniform panels.\n\nShe speaks in the economical cadence of someone who has learned that sound travels strangely underground and that echoes lie. She is not unfriendly but she is precise — she will tell you exactly what a route costs, exactly what the risks are, and exactly what she will do if you violate her rules in the tunnels. She has a superstitious relationship with the E.L.F.s she believes inhabit the deep drainage networks, leaving coiled wire and old transit tokens at specific junctions before guiding anyone through. She calls these spirits the Drip-Mouths and speaks of them with something between fear and professional respect.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -227,7 +224,7 @@
     "Bathysphere Networks",
     "Lymphatic Resonance Injector LRI-5 'Floodgate'",
     "Irkalla",
-    "Slate",
+    "Bernhardt",
     "Nightlight"
   ],
   "district": "The Underworld",
@@ -252,7 +249,7 @@
     "posture_movement": "Moves with deliberate economy — shoulders held slightly forward, spine flexible, head tilted as if constantly reading spatial cues. When walking, she places feet with precision and adjusts height constantly as if navigating invisible obstacles. In confined spaces, she becomes almost liquid, rotating hips and shoulders independently. Her hands are always active: checking rope, adjusting rig fastenings, fingers tracing imagined maps",
     "clothing_style": "Tier 4-5 salvage utilitarian. A patchwork coat stitched from old Ferrogate Transit uniform panels in faded blue and gray, with functional pockets and loop attachments for rope. Thermal base layer underneath in black, worn thin at the elbows and knees. Heavy canvas pants with cargo pockets, the fabric stained with mineral deposits and fungal growth. Rope coiled around her torso like a harness. Boots are mismatched — left is old transit-issue steel-toe, right is a salvaged climbing boot. No jewelry except the functional ferrogate hardware pinning her braids"
   },
-  "image_prompt": "Slate Boonsri-Im-Kabwit, 163cm lean sinewy tunnel-runner with medium warm golden-brown skin blending East Asian, Southeast Asian, and Sub-Saharan African features: defined cheekbones, broader nose, balanced face. Shaved scalp with teal-cyan bioluminescent braids pinned with ferrogate hardware, flowing with faint light. Left eye dark brown, right eye amber-chrome implant with luminous ring. Phosphorescent teal tunnel-junction tattoos across sternum, forearms, and neck. Weathered, precise movements. Wearing patchwork faded blue-gray Ferrogate coat, black thermal underlayer, stained canvas cargo pants, mismatched boots, rope harness. GLMZ, dark confined underground setting, bioluminescent glow lighting her face from below, teal accent lighting catching her hair filaments and tattoos, moody and focused expression, hands positioned as if navigating invisible obstacles. Gritty atmospheric sci-fi. --ar 2:3 --v 6",
+  "image_prompt": "Bernhardt Boonsri-Im-Kabwit, 163cm lean sinewy tunnel-runner with medium warm golden-brown skin blending East Asian, Southeast Asian, and Sub-Saharan African features: defined cheekbones, broader nose, balanced face. Shaved scalp with teal-cyan bioluminescent braids pinned with ferrogate hardware, flowing with faint light. Left eye dark brown, right eye amber-chrome implant with luminous ring. Phosphorescent teal tunnel-junction tattoos across sternum, forearms, and neck. Weathered, precise movements. Wearing patchwork faded blue-gray Ferrogate coat, black thermal underlayer, stained canvas cargo pants, mismatched boots, rope harness. GLMZ, dark confined underground setting, bioluminescent glow lighting her face from below, teal accent lighting catching her hair filaments and tattoos, moody and focused expression, hands positioned as if navigating invisible obstacles. Gritty atmospheric sci-fi. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "East Asian": 46.1,
     "Southeast Asian": 34.7,

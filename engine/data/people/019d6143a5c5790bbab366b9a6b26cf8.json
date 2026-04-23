@@ -2,10 +2,7 @@
   "id": "019d6143a5c5790bbab366b9a6b26cf8",
   "type": "character",
   "name": "Dora Okonkwo-Petrović-Volkov",
-  "aliases": [
-    "Binta Okonkwo-Petrović-Volkov",
-    "Binta"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 44,
   "status": "active",
   "location": "Hamtramck Enclave, operating out of a converted transit depot called the Carriage House, near Halsted and Division",
-  "description": "Binta Okonkwo-Petrović-Volkov is a broad-shouldered woman with deep umber skin, close-cropped natural hair shot through with threads of silver she refuses to dye, and hands that show thirty years of physical work before she moved into organizing full-time. Her left eye is a basic-model optical aug — the iris replaced with a fixed amber ring, a reminder of the Ferrogate line collapse of 2184 that took her depth perception and gave her a cause. She dresses in layers of salvaged workwear, always with a Ferrogate transit badge pinned upside-down on her chest — the traditional gesture of solidarity among workers who refuse to 'clock in to a system that clocks out on you.'\n\nBinta Okonkwo-Petrović-Volkov is methodical to the point of stubbornness. She keeps physical ledgers — actual paper notebooks — of every grievance filed, every promise broken, every quanta owed to injured workers and their families. She is not charismatic in the traditional sense; she does not rouse crowds with fire. She wins people over by knowing their names, their children's names, their shift rotations, and every clause of their employment contract. The nickname 'The Ledger' is both tribute and warning: she remembers everything.",
+  "description": "Dora Okonkwo-Petrović-Volkov is a broad-shouldered woman with deep umber skin, close-cropped natural hair shot through with threads of silver she refuses to dye, and hands that show thirty years of physical work before she moved into organizing full-time. Her left eye is a basic-model optical aug — the iris replaced with a fixed amber ring, a reminder of the Ferrogate line collapse of 2184 that took her depth perception and gave her a cause. She dresses in layers of salvaged workwear, always with a Ferrogate transit badge pinned upside-down on her chest — the traditional gesture of solidarity among workers who refuse to 'clock in to a system that clocks out on you.'\n\nDora Okonkwo-Petrović-Volkov is methodical to the point of stubbornness. She keeps physical ledgers — actual paper notebooks — of every grievance filed, every promise broken, every quanta owed to injured workers and their families. She is not charismatic in the traditional sense; she does not rouse crowds with fire. She wins people over by knowing their names, their children's names, their shift rotations, and every clause of their employment contract. The nickname 'The Ledger' is both tribute and warning: she remembers everything.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -256,7 +253,7 @@
     "Ringo Corponation SlipThread MX-3 Urban Cable Micro-Mobility Rig",
     "Silver",
     "Nesting Doll",
-    "Haze Johansson",
+    "Akosua Johansson",
     "The Pure Hand"
   ],
   "district": "the Gray Zone",
@@ -281,7 +278,7 @@
     "posture_movement": "Stands with weight evenly distributed, shoulders slightly forward — a loader's stance. Moves with purpose and minimal wasted motion; she does not hurry but does not linger. When listening to someone, her head tilts slightly toward them (compensation for lost left-eye depth perception). Hands are frequently in motion: taking notes, gesturing to clarify contract language, fingers drum on table edges while thinking",
     "clothing_style": "Layers of salvaged and repaired workwear in muted earth tones: insulated Carhartt vest over a thermal underlayer, canvas pants with reinforced seams, steel-toed boots worn to comfort rather than shine. A faded Ferrogate jacket (circa 2190s, patched multiple times) worn as an outer layer in cooler months. No jewelry except the inverted transit badge. Clothing is Tier 4 working-class utility — function over presentation, but maintained with deliberate care. Carries a canvas satchel worn soft with use, perpetually full of paper ledgers and union documents"
   },
-  "image_prompt": "Binta Okonkwo-Petrović-Volkov, 44-year-old woman with deep warm brown skin with golden undertones, short natural black hair with silver threads, standing in GLMZ industrial rail depot setting. Angular face with prominent cheekbones and strong jawline, weathered from decades of outdoor labor work, thin pale thermal burn scar running from left temple to cheekbone. Right eye dark brown, left eye replaced with amber fixed-focus optical implant with visible iris ring. Wearing layered salvaged workwear: faded Ferrogate jacket patched multiple times, insulated Carhartt vest, canvas pants with reinforced seams, steel-toed boots. Rudimentary haptic data-sleeve on right forearm with exposed circuit seams and glitch patterns. Upside-down Ferrogate Transit badge pinned over left breast. Canvas satchel worn soft with use. Stands with loader's posture, weight evenly distributed, shoulders slightly forward. Industrial warehouse lighting, moody evening atmosphere, neon accent lights reflecting off metal depot infrastructure, gritty neo-noir urban aesthetic, portrait framing from waist up, functional working-class dignity, documentary realism --ar 2:3 --v 6",
+  "image_prompt": "Dora Okonkwo-Petrović-Volkov, 44-year-old woman with deep warm brown skin with golden undertones, short natural black hair with silver threads, standing in GLMZ industrial rail depot setting. Angular face with prominent cheekbones and strong jawline, weathered from decades of outdoor labor work, thin pale thermal burn scar running from left temple to cheekbone. Right eye dark brown, left eye replaced with amber fixed-focus optical implant with visible iris ring. Wearing layered salvaged workwear: faded Ferrogate jacket patched multiple times, insulated Carhartt vest, canvas pants with reinforced seams, steel-toed boots. Rudimentary haptic data-sleeve on right forearm with exposed circuit seams and glitch patterns. Upside-down Ferrogate Transit badge pinned over left breast. Canvas satchel worn soft with use. Stands with loader's posture, weight evenly distributed, shoulders slightly forward. Industrial warehouse lighting, moody evening atmosphere, neon accent lights reflecting off metal depot infrastructure, gritty neo-noir urban aesthetic, portrait framing from waist up, functional working-class dignity, documentary realism --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 40.1,
     "Eastern European": 29.4,

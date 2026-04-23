@@ -4,10 +4,7 @@
   "vote_count": 1,
   "type": "character",
   "name": "Dalila Abdykadyrov-Dalgaard",
-  "aliases": [
-    "Nyx Abdykadyrov-Dalgaard",
-    "Nyx"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -15,7 +12,7 @@
   "age": 33,
   "status": "active",
   "location": "Geartown — industrial district of chop shops and fabricators, near Milwaukee and North Ave",
-  "description": "Nyx Abdykadyrov-Dalgaard is lean and angular, all sharp edges and visible tension. At 33, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a breacher out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented breacher in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
+  "description": "Dalila Abdykadyrov-Dalgaard is lean and angular, all sharp edges and visible tension. At 33, she has the kind of face that changes depending on the light — trustworthy in daylight, dangerous after dark. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and she makes no effort to hide it.\n\nShe arrived in GLMZ six years ago with nothing but chrome and debts, and has been working off both ever since. She works as a breacher out of Geartown, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented breacher in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.19,
@@ -304,7 +301,7 @@
     "posture_movement": "She stands like a coiled spring, weight forward on the balls of her feet even at rest. Her movements are economical and precise — no wasted motion. When she walks, there's a subtle rhythm discontinuity between her upper body and her augmented legs, a reminder that they don't quite move in sync with her natural reflexes. In high-stress moments, she twitches — fingers drumming, jaw clenching — the chemical-mechanical hybrid augmentation pushing her toward action.",
     "clothing_style": "Tier 4 utilitarian. Dark tactical pants with reinforced knees and cargo pockets, usually gray or matte black. Steel-toed boots, always laced tight. Sleeveless tank or fitted long-sleeve shirt under a reinforced jacket — the kind designed for industrial work, with hidden pockets and durable synthetic fabric. Everything is worn, tested, patched where necessary. No logos, no flash. A tool belt or chest rig depending on the job. Her jacket has a faint smell of machine oil and ozone."
   },
-  "image_prompt": "Nyx Abdykadyrov-Dalgaard, 168cm lean angular frame, Central Asian high cheekbones with warm golden-honey brown skin, deep-set brown eyes with neural tremor. Dark brown hair with silver temples pulled in tight functional braid, mid-back length. Sleeveless tactical tank under reinforced industrial jacket, dark gray cargo pants, steel-toed boots. Synthetic muscle augmentations visible in both legs—chrome sheaths with metallic sheen, too-perfect symmetry. Fine white burn scars across palms and forearms, surgical scars along thighs. Standing coiled and tense, weight forward on balls of feet, economical dangerous readiness. GLMZ Great Lakes Metropolitan Zone, industrial setting with neon edge lighting casting shadows across her augmented frame, cool blue and warm amber light playing off the chrome in her legs, gritty utilitarian aesthetic, photorealistic, high contrast, --ar 2:3 --v 6",
+  "image_prompt": "Dalila Abdykadyrov-Dalgaard, 168cm lean angular frame, Central Asian high cheekbones with warm golden-honey brown skin, deep-set brown eyes with neural tremor. Dark brown hair with silver temples pulled in tight functional braid, mid-back length. Sleeveless tactical tank under reinforced industrial jacket, dark gray cargo pants, steel-toed boots. Synthetic muscle augmentations visible in both legs—chrome sheaths with metallic sheen, too-perfect symmetry. Fine white burn scars across palms and forearms, surgical scars along thighs. Standing coiled and tense, weight forward on balls of feet, economical dangerous readiness. GLMZ Great Lakes Metropolitan Zone, industrial setting with neon edge lighting casting shadows across her augmented frame, cool blue and warm amber light playing off the chrome in her legs, gritty utilitarian aesthetic, photorealistic, high contrast, --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "Central Asian": 66,

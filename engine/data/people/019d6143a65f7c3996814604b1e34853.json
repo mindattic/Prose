@@ -2,10 +2,7 @@
   "id": "019d6143a65f7c3996814604b1e34853",
   "type": "character",
   "name": "Grimur Tetteh-Yoon",
-  "aliases": [
-    "Aiyana Tetteh-Yoon",
-    "Aiyana"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 22,
   "status": "active",
   "location": "Works in Meridian Core; lives in a shared flat in Archer's Line, near State and Jackson",
-  "description": "Aiyana Tetteh-Yoon is a young woman with her Gujarati father's compact build and her Quechua mother's dark, straight-cut hair — which she keeps in a single practical braid that she tucks into her collar during shift. She has no cosmetic mods, though she's been quietly saving toward a bioluminescence mod she has already designed in her head: constellations mapped on her collarbone, named after the mountains her mother described to her. She has the slightly hyperaware eyes of someone who has learned to notice everything in rooms she is supposed to be invisible in. Her hands are chapped and she keeps a small pot of petroleum-analogous salve in her apron pocket.\n\nAiyana Tetteh-Yoon works the 23:00–07:00 rotation across three Axiom tower floors, which means she mops boardrooms where decisions affecting millions were made that afternoon, empties the bins of executives who do not register her existence, and reads, from what they leave behind, a vivid and disturbing picture of how the city is run. She is not naive — she grew up in Archer's Line, she knows what tier three looks like from below — but the gap between what she knew intellectually and what she witnesses nightly has been doing something complicated to her politics. She is curious, careful, and genuinely funny in a dry understated way that emerges fully only with people she trusts.",
+  "description": "Grimur Tetteh-Yoon is a young woman with her Gujarati father's compact build and her Quechua mother's dark, straight-cut hair — which she keeps in a single practical braid that she tucks into her collar during shift. She has no cosmetic mods, though she's been quietly saving toward a bioluminescence mod she has already designed in her head: constellations mapped on her collarbone, named after the mountains her mother described to her. She has the slightly hyperaware eyes of someone who has learned to notice everything in rooms she is supposed to be invisible in. Her hands are chapped and she keeps a small pot of petroleum-analogous salve in her apron pocket.\n\nGrimur Tetteh-Yoon works the 23:00–07:00 rotation across three Axiom tower floors, which means she mops boardrooms where decisions affecting millions were made that afternoon, empties the bins of executives who do not register her existence, and reads, from what they leave behind, a vivid and disturbing picture of how the city is run. She is not naive — she grew up in Archer's Line, she knows what tier three looks like from below — but the gap between what she knew intellectually and what she witnesses nightly has been doing something complicated to her politics. She is curious, careful, and genuinely funny in a dry understated way that emerges fully only with people she trusts.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -183,7 +180,7 @@
     "IRONLIMB Spectre SV-4 Stealth Arm",
     "The Pure Hand",
     "Slagworks Industrial",
-    "Frost Boudiaf"
+    "Folakemi Boudiaf"
   ],
   "district": "Meridian Core",
   "physical_description": {
@@ -206,7 +203,7 @@
     "posture_movement": "Moves with deliberate economy—no wasted motion. Shoulders slightly forward from hours bent over cleaning equipment. Walking pace is steady and measured. Eyes are constantly moving, cataloging details in rooms and spaces. When she sits, she sits fully, not perched. Hands are often in motion: fidgeting with fabric, adjusting her braid, unconsciously reaching for the petroleum salve in her apron pocket.",
     "clothing_style": "Tier 3 practical utilitarian. During work shifts: unbranded gray or navy Brightclean Services uniform polo (synthetic blend, starting to pill at the shoulders), dark cargo pants with reinforced knees, scuffed non-slip safety shoes, a worn gray apron with multiple pockets holding cleaning supplies and personal items. Off-shift: layered secondhand clothing from thrift networks in Archer's Line—oversized sweaters, faded jeans, a well-maintained jacket of indeterminate age that belonged to her mother. No jewelry except a thin silver ring on her right ring finger (inherited). A small cloth bag for work supplies and a transit pass on a worn lanyard."
   },
-  "image_prompt": "Aiyana Tetteh-Yoon, 158cm compact build, GLMZ Great Lakes Metropolitan Zone. Close portrait of a woman with rich warm medium-brown skin with golden undertones, high defined cheekbones, broad facial structure reflecting Indigenous American and Sub-Saharan heritage with East Asian luminosity. Dark brown eyes nearly black, natural black long hair in a practical braid tucked into worn gray Brightclean Services polo uniform. Clear complexion with tired quality, fine lines at eye corners, naturally full lips. Small pale burn scar visible on left inner wrist, callused fingers from cleaning work. Wearing cargo pants with reinforced knees, worn gray apron with supply pockets, scuffed safety shoes. Hands in motion, eyes cataloging details, posture slightly forward. Neon-lit corridor lighting, nocturnal shift atmosphere, practical utilitarian setting, photorealistic, documentary style, moody atmospheric lighting --ar 2:3 --v 6",
+  "image_prompt": "Grimur Tetteh-Yoon, 158cm compact build, GLMZ Great Lakes Metropolitan Zone. Close portrait of a woman with rich warm medium-brown skin with golden undertones, high defined cheekbones, broad facial structure reflecting Indigenous American and Sub-Saharan heritage with East Asian luminosity. Dark brown eyes nearly black, natural black long hair in a practical braid tucked into worn gray Brightclean Services polo uniform. Clear complexion with tired quality, fine lines at eye corners, naturally full lips. Small pale burn scar visible on left inner wrist, callused fingers from cleaning work. Wearing cargo pants with reinforced knees, worn gray apron with supply pockets, scuffed safety shoes. Hands in motion, eyes cataloging details, posture slightly forward. Neon-lit corridor lighting, nocturnal shift atmosphere, practical utilitarian setting, photorealistic, documentary style, moody atmospheric lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Indigenous American": 31.6,
     "Sub-Saharan African": 27.3,

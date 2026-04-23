@@ -2,10 +2,7 @@
   "id": "019d6143a72c74b19097809b62868711",
   "type": "character",
   "name": "Aydan Zidane",
-  "aliases": [
-    "Zara Zidane",
-    "Zara"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 44,
   "status": "active",
   "location": "Fort Anchor, Internal Affairs Division, Sub-Level 3",
-  "description": "Zara Zidane is a compact, broad-shouldered woman with deep umber skin and close-cropped silver hair she has made no effort to color back to black. Her eyes carry augmented irises patterned like the rings of a tree — concentric amber and dark brown — which she had installed not for fashion but because the integrated microfilament sensors help her read micro-expressions during interrogations. She dresses in Arcturus Civil Security plainclothes that are always a half-step too formal: pressed collar, exact trouser crease, shoes that cost more than a Tier 2 weekly budget. There is a deliberateness to every movement she makes, like a surgeon who has stopped wasting motion.\n\nZara Zidane has been investigating corrupt officers for nineteen years and has developed the particular coldness of someone who was once deeply idealistic and refuses to admit that idealism calcified into something less generous. She believes in the institution of law enforcement with a fervor that is almost theological, which makes her merciless toward officers who violate it — and almost willfully blind to structural failures that can't be solved by prosecuting individuals. She speaks rarely in social settings and listens with an attention that makes people feel they are being archived.",
+  "description": "Aydan Zidane is a compact, broad-shouldered woman with deep umber skin and close-cropped silver hair she has made no effort to color back to black. Her eyes carry augmented irises patterned like the rings of a tree — concentric amber and dark brown — which she had installed not for fashion but because the integrated microfilament sensors help her read micro-expressions during interrogations. She dresses in Arcturus Civil Security plainclothes that are always a half-step too formal: pressed collar, exact trouser crease, shoes that cost more than a Tier 2 weekly budget. There is a deliberateness to every movement she makes, like a surgeon who has stopped wasting motion.\n\nAydan Zidane has been investigating corrupt officers for nineteen years and has developed the particular coldness of someone who was once deeply idealistic and refuses to admit that idealism calcified into something less generous. She believes in the institution of law enforcement with a fervor that is almost theological, which makes her merciless toward officers who violate it — and almost willfully blind to structural failures that can't be solved by prosecuting individuals. She speaks rarely in social settings and listens with an attention that makes people feel they are being archived.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -265,7 +262,7 @@
     "posture_movement": "Moves with surgical efficiency — no wasted motion, no fidgeting. Shoulders squared, spine straight. Walks with measured pace. Hands remain still at rest. During conversation, maintains still facial expression while augmented eyes track micro-expressions in others with almost predatory focus.",
     "clothing_style": "ADS Civil Security plainclothes: pressed collar shirts (neutral grays, blacks, whites), tailored trousers with exact creases, leather shoes that cost Φ800+ (tier 1 quality on tier 3 salary — indicates personal priority or questionable funding). Minimal jewelry except service chronometer. Blazer worn on rotation. Everything fits precisely, nothing rumpled, nothing worn soft by time."
   },
-  "image_prompt": "Zara Zidane, compact muscular woman of 162cm with silver close-cropped hair and warm olive-bronze skin reflecting Eastern European, North African, and East Asian heritage. Augmented eyes with concentric amber-brown rings and visible microfilament threading. Unlined complexion, broad cheekbones, refined East Asian eye shape, strong jawline. Faint scar along left jaw. Dressed in pressed Arcturus Civil Security plainclothes: crisp gray collar shirt, perfectly creased trousers, expensive leather shoes. Surgical posture, squared shoulders, still hands, neutral expression. Service chronometer visible. GLMZ Great Lakes Metropolitan Zone setting, cool neon accent lighting catching the metallic threading in her augmented irises, sharp focus, professional portrait style, moody atmosphere. --ar 2:3 --v 6",
+  "image_prompt": "Aydan Zidane, compact muscular woman of 162cm with silver close-cropped hair and warm olive-bronze skin reflecting Eastern European, North African, and East Asian heritage. Augmented eyes with concentric amber-brown rings and visible microfilament threading. Unlined complexion, broad cheekbones, refined East Asian eye shape, strong jawline. Faint scar along left jaw. Dressed in pressed Arcturus Civil Security plainclothes: crisp gray collar shirt, perfectly creased trousers, expensive leather shoes. Surgical posture, squared shoulders, still hands, neutral expression. Service chronometer visible. GLMZ Great Lakes Metropolitan Zone setting, cool neon accent lighting catching the metallic threading in her augmented irises, sharp focus, professional portrait style, moody atmosphere. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Eastern European": 65.2,
     "North African": 16.3,

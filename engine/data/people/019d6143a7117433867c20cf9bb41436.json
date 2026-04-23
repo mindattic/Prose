@@ -2,10 +2,7 @@
   "id": "019d6143a7117433867c20cf9bb41436",
   "type": "character",
   "name": "Filomena Bangura",
-  "aliases": [
-    "Yasmin Bangura",
-    "Yasmin"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
@@ -13,7 +10,7 @@
   "age": 34,
   "status": "active",
   "location": "Geartown — Ironvein Augmentation Clinic, Level 2 Bay, near North Ave and Milwaukee",
-  "description": "Yasmin Bangura is slight and precise, with warm amber skin, shaved temples, and a crown of loose dark curls that they dye in shifting gradients — currently deep violet fading to copper. Their irises are calibration-patterned, concentric rings of grey and gold that pulse faintly when they're running a neural diagnostic, a mod they had installed as both a professional tool and an aesthetic statement. They wear clean white clinical uniforms with a single personal touch: a small embroidered patch of their home district stitched to the shoulder. Their hands are rarely still — they tap rhythms on surfaces when thinking, flex their fingers between sessions.\n\nYasmin Bangura is the person who sees patients after the glamorous augmentation surgery is done and the reality sets in — the migraines, the dissociation, the body-horror of a new sense that the brain doesn't yet recognize as self. They are enormously patient in a way that reads almost inhuman until you catch the flash of genuine distress behind their eyes when a patient is struggling. They have opinions about augmentation culture that they mostly keep to themselves, believing that the industry sells transformation without adequately preparing people for the grief that sometimes accompanies it.",
+  "description": "Filomena Bangura is slight and precise, with warm amber skin, shaved temples, and a crown of loose dark curls that they dye in shifting gradients — currently deep violet fading to copper. Their irises are calibration-patterned, concentric rings of grey and gold that pulse faintly when they're running a neural diagnostic, a mod they had installed as both a professional tool and an aesthetic statement. They wear clean white clinical uniforms with a single personal touch: a small embroidered patch of their home district stitched to the shoulder. Their hands are rarely still — they tap rhythms on surfaces when thinking, flex their fingers between sessions.\n\nFilomena Bangura is the person who sees patients after the glamorous augmentation surgery is done and the reality sets in — the migraines, the dissociation, the body-horror of a new sense that the brain doesn't yet recognize as self. They are enormously patient in a way that reads almost inhuman until you catch the flash of genuine distress behind their eyes when a patient is struggling. They have opinions about augmentation culture that they mostly keep to themselves, believing that the industry sells transformation without adequately preparing people for the grief that sometimes accompanies it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.5,
@@ -274,7 +271,7 @@
     "posture_movement": "Precise and economical — minimal wasted motion. Hands in near-constant subtle movement (finger flexing, rhythm-tapping on surfaces) when thinking or between patients. Stands slightly forward-leaning when listening, suggesting active engagement. Movements are deliberate, unhurried, almost meditative.",
     "clothing_style": "Clean white clinical uniform as standard work attire, well-maintained but not expensive. Single personal embellishment: small embroidered patch of home district on shoulder. Off-shift: Tier 3 casual — functional layers, muted colors, minimal branding. Footwear practical (clinic clogs at work, transit-grade shoes commuting). Jewelry sparse: possibly a single thin ring or wrist cuff with subtle circuitry aesthetic."
   },
-  "image_prompt": "Yasmin Bangura, 168cm lean clinical professional in GLMZ, warm caramel-bronze skin with golden undertones reflecting blended South Asian, Hispanic, Sub-Saharan African, East Asian and Eastern European heritage. High defined cheekbones, sharp jawline softened by Latin warmth, subtle East Asian eye shape. Asymmetrical hairstyle: deep violet fading to copper curls at crown, shaved temples. Pulsing grey-gold calibration-ring irises with diagnostic glow. Pale blue-white bioluminescent constellation patterns on bare forearms. White clinical uniform, neutral expression, precise meditative posture. Neural interface port scar visible at skull base. Minimalist professional aesthetic, muted colors, clinical lighting emphasizing skin tone and bioluminescent tracery. GLMZ 2200s clinic setting, quiet intensity, forward-leaning engaged posture. --ar 2:3 --v 6",
+  "image_prompt": "Filomena Bangura, 168cm lean clinical professional in GLMZ, warm caramel-bronze skin with golden undertones reflecting blended South Asian, Hispanic, Sub-Saharan African, East Asian and Eastern European heritage. High defined cheekbones, sharp jawline softened by Latin warmth, subtle East Asian eye shape. Asymmetrical hairstyle: deep violet fading to copper curls at crown, shaved temples. Pulsing grey-gold calibration-ring irises with diagnostic glow. Pale blue-white bioluminescent constellation patterns on bare forearms. White clinical uniform, neutral expression, precise meditative posture. Neural interface port scar visible at skull base. Minimalist professional aesthetic, muted colors, clinical lighting emphasizing skin tone and bioluminescent tracery. GLMZ 2200s clinic setting, quiet intensity, forward-leaning engaged posture. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 45.4,
     "Hispanic/Latin American": 24.7,

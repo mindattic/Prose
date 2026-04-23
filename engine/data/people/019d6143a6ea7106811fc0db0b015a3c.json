@@ -2,10 +2,7 @@
   "id": "019d6143a6ea7106811fc0db0b015a3c",
   "type": "character",
   "name": "Haruto Prempeh",
-  "aliases": [
-    "Nneka Prempeh",
-    "Nneka"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 29,
   "status": "active",
   "location": "Hamtramck Enclave, near Western and Division",
-  "description": "Nneka Prempeh is whip-thin and restless, with deep brown skin and a shaved head except for a single long braid down the back, tipped with a small copper weight that clicks against his collar when he moves. His irises have been modded to shift color with his emotional state — not at his conscious control, which he finds embarrassing and everyone else finds fascinating. He wears the same kind of clothes every day: dark, layered, functional, pockets everywhere, usually with at least one grease stain from working on his equipment.\n\nHis art is built around infrasound — frequencies below human hearing that he mixes into otherwise ordinary music to produce physical and emotional responses in his audience: unease, euphoria, the sensation of being watched. He's passionate about this to a degree that makes him exhausting at parties, because he cannot stop talking about psychoacoustics once the subject comes up. Off that topic he's warm and self-deprecating, quick to laugh at himself, genuinely curious about other people's work. He plays three nights a week in a basement venue under a pierogi shop and spends the other nights building custom transducer rigs from salvage.",
+  "description": "Haruto Prempeh is whip-thin and restless, with deep brown skin and a shaved head except for a single long braid down the back, tipped with a small copper weight that clicks against his collar when he moves. His irises have been modded to shift color with his emotional state — not at his conscious control, which he finds embarrassing and everyone else finds fascinating. He wears the same kind of clothes every day: dark, layered, functional, pockets everywhere, usually with at least one grease stain from working on his equipment.\n\nHis art is built around infrasound — frequencies below human hearing that he mixes into otherwise ordinary music to produce physical and emotional responses in his audience: unease, euphoria, the sensation of being watched. He's passionate about this to a degree that makes him exhausting at parties, because he cannot stop talking about psychoacoustics once the subject comes up. Off that topic he's warm and self-deprecating, quick to laugh at himself, genuinely curious about other people's work. He plays three nights a week in a basement venue under a pierogi shop and spends the other nights building custom transducer rigs from salvage.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -178,7 +175,7 @@
     "Pierogi Corner",
     "Copper",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Frost Boudiaf",
+    "Folakemi Boudiaf",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "Ringo Corponation"
   ],
@@ -204,7 +201,7 @@
     "posture_movement": "Perpetually restless, fidgeting with objects in his pockets or air-conducting invisible frequencies with his hands. His movements are precise and musical even when still — a tendency to sway slightly as if listening to inaudible sound. When engaged in conversation about his work, his whole body becomes animated. At rest or in social discomfort, he tends to fold inward, arms crossed or hands busy with something small.",
     "clothing_style": "Uniform-like consistency: dark (black or charcoal) loose-fitting tech wear with multiple chest pockets, cargo pants with deep pockets for tools and salvage, worn worker's jacket (usually Dickies or equivalent surplus). Functional, Tier 4 aesthetic — neither corpo-clean nor destitute, but worn through genuine use rather than fashion statement. Boots are always heavy-duty (steel-toed, repaired multiple times). Copper or dark metal jewelry minimal — usually just the braid weight. Perpetual faint smell of solder flux and machine oil."
   },
-  "image_prompt": "Nneka Prempeh, 173cm wiry tech worker in 2226 Great Lakes Metropolitan Zone, warm deep brown skin with golden undertones, angular cheekbones and sharp jawline, shaved head with single long black braid tipped in copper down the back. Emotional-state irises glowing deep amber with creative focus. Visible subdermal vibration receiver port implants along inner forearms, solder burn scars on neck, permanent grease stains on dark tech-wear jacket. Short sleeves rolled up showing augmentation ports and work-worn hands with calluses. Posture slightly animated mid-gesture, conducting invisible frequencies with precise hand movements. Dark Dickies cargo pants, heavy steel-toed boots, minimal copper jewelry. Neo-noir workshop lighting with cool neon accents reflecting off machinery. Focused, restless energy, surrounded by faint haze of solder flux. Mood: intense concentration mixed with fidgeting restlessness. --ar 2:3 --v 6",
+  "image_prompt": "Haruto Prempeh, 173cm wiry tech worker in 2226 Great Lakes Metropolitan Zone, warm deep brown skin with golden undertones, angular cheekbones and sharp jawline, shaved head with single long black braid tipped in copper down the back. Emotional-state irises glowing deep amber with creative focus. Visible subdermal vibration receiver port implants along inner forearms, solder burn scars on neck, permanent grease stains on dark tech-wear jacket. Short sleeves rolled up showing augmentation ports and work-worn hands with calluses. Posture slightly animated mid-gesture, conducting invisible frequencies with precise hand movements. Dark Dickies cargo pants, heavy steel-toed boots, minimal copper jewelry. Neo-noir workshop lighting with cool neon accents reflecting off machinery. Focused, restless energy, surrounded by faint haze of solder flux. Mood: intense concentration mixed with fidgeting restlessness. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Eastern European": 38.8,
     "Sub-Saharan African": 37,

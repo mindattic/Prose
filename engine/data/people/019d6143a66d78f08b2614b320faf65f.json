@@ -2,10 +2,7 @@
   "id": "019d6143a66d78f08b2614b320faf65f",
   "type": "character",
   "name": "Ergun Hinojosa",
-  "aliases": [
-    "Rio Hinojosa",
-    "Rio"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 34,
   "status": "active",
   "location": "Highland Park Autonomous Zone, near Michigan Ave and Chicago Ave",
-  "description": "Rio Hinojosa is a compact woman with deep brown skin and close-cropped natural hair shot through with copper-dyed locs she clips back when she's working. Her left eye is a salvaged optic implant she bought secondhand — it glows a faint amber in low light and sometimes stutters, giving her an unsettling blink lag. She wears the same canvas jacket most days, patched at the elbows and covered in hand-stitched slogans in four languages. There's a quality to her stillness that makes people think she's always listening, because she is.\n\nRio Hinojosa runs 'Groundwave,' an unlicensed audio-visual broadcast that goes out three nights a week through a rotating network of transmitter nodes hidden across the HPAZ. She's brilliant, paranoid in ways that have saved her life twice, and has a gift for making complex political theory sound like something you'd argue about over bad synthetic coffee. She has little patience for performative activism and a sharp tongue for anyone she suspects is building a personal brand on other people's suffering.",
+  "description": "Ergun Hinojosa is a compact woman with deep brown skin and close-cropped natural hair shot through with copper-dyed locs she clips back when she's working. Her left eye is a salvaged optic implant she bought secondhand — it glows a faint amber in low light and sometimes stutters, giving her an unsettling blink lag. She wears the same canvas jacket most days, patched at the elbows and covered in hand-stitched slogans in four languages. There's a quality to her stillness that makes people think she's always listening, because she is.\n\nErgun Hinojosa runs 'Groundwave,' an unlicensed audio-visual broadcast that goes out three nights a week through a rotating network of transmitter nodes hidden across the HPAZ. She's brilliant, paranoid in ways that have saved her life twice, and has a gift for making complex political theory sound like something you'd argue about over bad synthetic coffee. She has little patience for performative activism and a sharp tongue for anyone she suspects is building a personal brand on other people's suffering.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -267,7 +264,7 @@
     "posture_movement": "Still and economical. Sits with her spine straight, shoulders held back—listening posture. Moves with minimal wasted motion, each gesture deliberate. Her head tilts slightly when processing audio, a habit from favoring her functional right eye. Rarely makes eye contact with both eyes simultaneously due to the left implant's lag",
     "clothing_style": "Tier 4 workwear aesthetic with political intent. Primary garment: a weathered canvas jacket (off-white, now gray from use) with hand-stitched slogans in Twi, Polish, English, and Arabic across the back and sleeves—rotating messages changed weekly. Underneath: plain dark fitted shirt or tank, worn for freedom of movement. Black cargo pants with reinforced pockets for recording equipment. Scuffed steel-toe boots, salvage-market brand. No jewelry except a data-jack adapter on a cord around her neck. Bag: a modified canvas messenger sling with signal-dampening lining"
   },
-  "image_prompt": "Rio Hinojosa, GLMZ, compact wiry woman with Indigenous American and Central Asian heritage—warm golden-brown skin with olive undertones, angular high cheekbones, lean jawline. Short deep brown hair with copper locs clipped back. Right eye deep brown, left eye amber-glowing salvaged optic implant with visible micro-servos and occasional stutter. Small scar tissue on left temple. Subdermal forearm cache with faint bioluminescent traces under skin. Burn scar across back of right hand. Radio wave tattoo on inner left wrist. Straight posture, economical movement. Wearing weathered off-white canvas jacket with hand-stitched multilingual slogans, dark fitted shirt, black cargo pants, scuffed steel-toe boots. Data-jack adapter on cord around neck. In dimly lit underground broadcast studio, atmospheric particulates catching golden light across her face, left eye amber-lit in shadow, tension around cybernetic eye, listening posture, deliberate stillness, GLMZ neon-tinged ambient lighting, intimate portrait --ar 2:3 --v 6",
+  "image_prompt": "Ergun Hinojosa, GLMZ, compact wiry woman with Indigenous American and Central Asian heritage—warm golden-brown skin with olive undertones, angular high cheekbones, lean jawline. Short deep brown hair with copper locs clipped back. Right eye deep brown, left eye amber-glowing salvaged optic implant with visible micro-servos and occasional stutter. Small scar tissue on left temple. Subdermal forearm cache with faint bioluminescent traces under skin. Burn scar across back of right hand. Radio wave tattoo on inner left wrist. Straight posture, economical movement. Wearing weathered off-white canvas jacket with hand-stitched multilingual slogans, dark fitted shirt, black cargo pants, scuffed steel-toe boots. Data-jack adapter on cord around neck. In dimly lit underground broadcast studio, atmospheric particulates catching golden light across her face, left eye amber-lit in shadow, tension around cybernetic eye, listening posture, deliberate stillness, GLMZ neon-tinged ambient lighting, intimate portrait --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Indigenous American": 44.9,
     "Hispanic/Latin American": 28.2,

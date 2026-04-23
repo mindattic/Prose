@@ -2,10 +2,7 @@
   "id": "019d6143a5d27cb2b82688d79146236c",
   "type": "character",
   "name": "Arewa Owusu",
-  "aliases": [
-    "Sterling Owusu",
-    "Sterling"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "nonbinary",
   "pronouns": "they/them",
@@ -13,7 +10,7 @@
   "age": 29,
   "status": "active",
   "location": "Lives in Lockhaven South; works the overnight cleaning circuit through Meridian Core towers, near State and Madison",
-  "description": "Sterling Owusu is lean and long-limbed, with the particular stillness of someone who has learned to move through spaces without being seen. Their skin is a warm medium brown with a subtle bioluminescent stripe along each collarbone — a geneware mod they got cheap from a Geartown parlor, and which they keep dialed down to nearly nothing most of the time, a faint blue-green pulse visible only in total darkness. Their hair is kept very short on the sides, left soft and natural on top, and they have a habit of covering it with a knit cap that's been mended so many times the original color is unknowable. They are not quiet because they are timid — they are quiet because they were trained, very young, to be invisible in places where being noticed was dangerous.\n\nThey clean the towers of Meridian Core from 2200 to 0600 — the lobbies and conference rooms and executive bathrooms of corponation affiliate offices that are empty except for security drones and the occasional insomniac analyst. They know these buildings the way a doctor knows a body — every duct access point, every camera blind spot, every floor where the ELF spirits are strong (they feel it as a low hum in their teeth and they leave small folded-paper offerings behind the baseboards). They have no particular agenda. They are just paying rent. But they have accidentally become, by virtue of occupying the ghost hours of powerful spaces, one of the most accidentally well-informed people in the city.",
+  "description": "Arewa Owusu is lean and long-limbed, with the particular stillness of someone who has learned to move through spaces without being seen. Their skin is a warm medium brown with a subtle bioluminescent stripe along each collarbone — a geneware mod they got cheap from a Geartown parlor, and which they keep dialed down to nearly nothing most of the time, a faint blue-green pulse visible only in total darkness. Their hair is kept very short on the sides, left soft and natural on top, and they have a habit of covering it with a knit cap that's been mended so many times the original color is unknowable. They are not quiet because they are timid — they are quiet because they were trained, very young, to be invisible in places where being noticed was dangerous.\n\nThey clean the towers of Meridian Core from 2200 to 0600 — the lobbies and conference rooms and executive bathrooms of corponation affiliate offices that are empty except for security drones and the occasional insomniac analyst. They know these buildings the way a doctor knows a body — every duct access point, every camera blind spot, every floor where the ELF spirits are strong (they feel it as a low hum in their teeth and they leave small folded-paper offerings behind the baseboards). They have no particular agenda. They are just paying rent. But they have accidentally become, by virtue of occupying the ghost hours of powerful spaces, one of the most accidentally well-informed people in the city.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -212,7 +209,7 @@
     "posture_movement": "Moves with deliberate quietness and spatial awareness — fluid, economical gestures that minimize unnecessary motion. Stands with slight forward lean, weight distributed to the balls of their feet, ready to shift direction. Eyes habitually track exits, camera angles, and ambient light sources. Stillness is their default state.",
     "clothing_style": "Tier 3-4 utilitarian: work-issued gray maintenance coveralls (Clearpath logo on chest, worn smooth from laundering), gray or black merino base layer underneath, scuffed synthetic-leather work boots with reinforced toe caps. Off-shift: the same mended knit cap, fitted dark jeans, oversized layered tees, a long charcoal hoodie with a broken zipper they've never bothered to replace. No logos, no aspirational branding. Everything chosen for durability and the ability to move without sound."
   },
-  "image_prompt": "Sterling Owusu, lean 178cm figure in worn gray Clearpath maintenance coveralls, bronze-mahogany skin with golden undertones reflecting Sub-Saharan, South Asian, North African, and Latin American heritage blend, dark brown eyes, angular high cheekbones, cropped dark brown hair partially hidden under mended knit cap, faint bioluminescent blue-green collarbone stripes dimmed in daylight, scuffed work boots, posture of someone ready to move, eyes tracking exits and ambient light, GLMZ Great Lakes Metropolitan Zone maintenance worker, industrial fluorescent overhead lighting with deep shadows, gritty urban infrastructure backdrop, composed and unmemorable expression, economical and silent presence, --ar 2:3 --v 6",
+  "image_prompt": "Arewa Owusu, lean 178cm figure in worn gray Clearpath maintenance coveralls, bronze-mahogany skin with golden undertones reflecting Sub-Saharan, South Asian, North African, and Latin American heritage blend, dark brown eyes, angular high cheekbones, cropped dark brown hair partially hidden under mended knit cap, faint bioluminescent blue-green collarbone stripes dimmed in daylight, scuffed work boots, posture of someone ready to move, eyes tracking exits and ambient light, GLMZ Great Lakes Metropolitan Zone maintenance worker, industrial fluorescent overhead lighting with deep shadows, gritty urban infrastructure backdrop, composed and unmemorable expression, economical and silent presence, --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 42.6,
     "South Asian": 30.9,

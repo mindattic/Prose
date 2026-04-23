@@ -2,10 +2,7 @@
   "id": "019d6143a5c37a1093e00a9aab1de995",
   "type": "character",
   "name": "Amari Traoré-Solberg",
-  "aliases": [
-    "Zephyr Traoré-Solberg",
-    "Zephyr"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 52,
   "status": "active",
   "location": "Geartown, corner of Ironvein Passage and the Sixth Lateral, near Milwaukee and North Ave",
-  "description": "Zephyr Traoré-Solberg is a wide-shouldered woman with close-cropped silver-streaked hair and dark amber skin mapped with decades of small burn scars from broth splatter. Her left eye has been replaced with a simple optical implant — utilitarian amber glass, no cosmetic flourish — and she keeps a row of mismatched E.L.F. shrine tokens zip-tied to the roof of her cart's canopy: a cracked tablet, a dead phone, a bent transit card. She believes the E.L.F. that lives in her cart's heating element blesses the broth. She has never given it a name because she says that would be presumptuous.\n\nShe is brisk, efficient, and faintly terrifying to newcomers who don't know how to order. Her menu is three items and she will not deviate. She has been at the same corner for nineteen years and knows every shift-change, every backroom deal, and every failing marriage in a four-block radius. She does not gossip. She observes. She is saving for something she will not discuss.",
+  "description": "Amari Traoré-Solberg is a wide-shouldered woman with close-cropped silver-streaked hair and dark amber skin mapped with decades of small burn scars from broth splatter. Her left eye has been replaced with a simple optical implant — utilitarian amber glass, no cosmetic flourish — and she keeps a row of mismatched E.L.F. shrine tokens zip-tied to the roof of her cart's canopy: a cracked tablet, a dead phone, a bent transit card. She believes the E.L.F. that lives in her cart's heating element blesses the broth. She has never given it a name because she says that would be presumptuous.\n\nShe is brisk, efficient, and faintly terrifying to newcomers who don't know how to order. Her menu is three items and she will not deviate. She has been at the same corner for nineteen years and knows every shift-change, every backroom deal, and every failing marriage in a four-block radius. She does not gossip. She observes. She is saving for something she will not discuss.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -253,7 +250,7 @@
     "posture_movement": "Stands with feet shoulder-width apart, weight balanced. Moves with efficient, economical gestures—no wasted motion. Her gaze is direct and lingering; people feel observed. She has a habit of tilting her head slightly when listening, favoring her right eye. When working the cart, she moves with practiced rhythm, hands moving through the same sequences thousands of times.",
     "clothing_style": "Tier 4 utilitarian. Wears a faded charcoal coverall with deep pockets and reinforced seams, sleeves rolled to mid-forearm. Over it: a long, stained apron in faded burgundy canvas, sectioned with loops for tools and small jars of spices. Beneath: a plain cream undershirt, collar darkened with old sweat stains. Feet clad in heavy, scuffed black synthetic boots with good tread—built for standing. A threadbare woolen cardigan, moss-gray, hangs on a hook under the cart for afternoon cooldown. No jewelry. A single faded transit pass hangs from a cord around her neck, years past expiration."
   },
-  "image_prompt": "Zephyr Traoré-Solberg, GLMZ street vendor, 172cm tall with sturdy athletic build. Deep warm brown skin with golden undertones reflecting Sub-Saharan African, Northern European, Hispanic, South Asian, and Eastern European heritage. Broad nose, fuller lips, prominent high cheekbones. Silver-streaked dark brown hair close-cropped to scalp. Left eye is brushed steel and amber glass optical implant, right eye natural dark brown. Dense pale burn scars across forearms and neck from decades of cooking, fine silvery scar on left temple. Weathered, aged face with deep creases, direct piercing gaze. Wearing faded charcoal coverall with sleeves rolled mid-forearm over cream undershirt, long stained burgundy canvas apron with spice jars and tools, heavy black synthetic boots. Standing at food cart in Great Lakes Metropolitan Zone neon-lit street market, late evening, practical hands positioned ready for work, economical movement, observant expression. Harsh LED and neon overhead lighting casting sharp shadows. Gritty, worn aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Amari Traoré-Solberg, GLMZ street vendor, 172cm tall with sturdy athletic build. Deep warm brown skin with golden undertones reflecting Sub-Saharan African, Northern European, Hispanic, South Asian, and Eastern European heritage. Broad nose, fuller lips, prominent high cheekbones. Silver-streaked dark brown hair close-cropped to scalp. Left eye is brushed steel and amber glass optical implant, right eye natural dark brown. Dense pale burn scars across forearms and neck from decades of cooking, fine silvery scar on left temple. Weathered, aged face with deep creases, direct piercing gaze. Wearing faded charcoal coverall with sleeves rolled mid-forearm over cream undershirt, long stained burgundy canvas apron with spice jars and tools, heavy black synthetic boots. Standing at food cart in Great Lakes Metropolitan Zone neon-lit street market, late evening, practical hands positioned ready for work, economical movement, observant expression. Harsh LED and neon overhead lighting casting sharp shadows. Gritty, worn aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 59.7,
     "Northern European": 16.4,

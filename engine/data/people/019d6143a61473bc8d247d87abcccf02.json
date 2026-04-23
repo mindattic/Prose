@@ -2,10 +2,7 @@
   "id": "019d6143a61473bc8d247d87abcccf02",
   "type": "character",
   "name": "Ender Mwangi-Siripong-Pathak",
-  "aliases": [
-    "Sibusiso Mwangi-Siripong-Pathak",
-    "Sibusiso"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 34,
   "status": "active",
   "location": "Edison Grid, corner of Copper Row and the 14th underpass, near Armitage and Milwaukee",
-  "description": "Sibusiso Mwangi-Siripong-Pathak is a lean, unhurried man of medium height with deep umber skin and close-cropped hair that he keeps dyed a matte rust-red. He has a bioluminescent mod along his forearms — thin lines of blue-white light under the skin that pulse gently with his heartbeat, which he originally got because it helped him keep time when cooking stock. He wears the same canvas apron every day, bleached and re-stained so many times it has developed a geological stratigraphy of meals past. His cart, 'The Long Burn,' is a retrofitted maintenance vehicle he rebuilt himself over eighteen months, and he knows its every rattle and squeak as personally as a language.\n\nSibusiso Mwangi-Siripong-Pathak moves through the world with a quality of stillness that some people mistake for slowness and others, correctly, read as patience. He is not a talker — his cart is not a place for conversation so much as a place for eating — but he notices everything: who looks hungry versus broke, who's been crying, who's scanning the crowd too carefully. He keeps a small E.L.F. shrine rigged into the cart's boiler panel, a data-spirit he calls 'the Pilot Light' to whom he murmurs thanks each morning before ignition.",
+  "description": "Ender Mwangi-Siripong-Pathak is a lean, unhurried man of medium height with deep umber skin and close-cropped hair that he keeps dyed a matte rust-red. He has a bioluminescent mod along his forearms — thin lines of blue-white light under the skin that pulse gently with his heartbeat, which he originally got because it helped him keep time when cooking stock. He wears the same canvas apron every day, bleached and re-stained so many times it has developed a geological stratigraphy of meals past. His cart, 'The Long Burn,' is a retrofitted maintenance vehicle he rebuilt himself over eighteen months, and he knows its every rattle and squeak as personally as a language.\n\nEnder Mwangi-Siripong-Pathak moves through the world with a quality of stillness that some people mistake for slowness and others, correctly, read as patience. He is not a talker — his cart is not a place for conversation so much as a place for eating — but he notices everything: who looks hungry versus broke, who's been crying, who's scanning the crowd too carefully. He keeps a small E.L.F. shrine rigged into the cart's boiler panel, a data-spirit he calls 'the Pilot Light' to whom he murmurs thanks each morning before ignition.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -200,7 +197,7 @@
     "posture_movement": "Moves with deliberate economy. Stands still frequently, observing rather than fidgeting. When working the cart, movements are precise and rhythmic — choreographed by repetition. Does not rush. Carries a quality of groundedness even in crowded grid intersections.",
     "clothing_style": "The same bleached canvas apron daily, layered with the stains of hundreds of meals — a geological record of his work. Beneath it: simple tier-4 workwear (faded gray or black thermal, worn jeans, steel-toed boots suitable for standing 16+ hours). No corporate logos. Everything practical, nothing decorative. Moves like someone who owns very little and maintains what he has."
   },
-  "image_prompt": "GLMZ, Sibusiso Mwangi-Siripong-Pathak, 172cm lean wiry South Asian-African-Southeast Asian fusion heritage, deep warm umber skin with golden undertones, refined high cheekbones, dark brown eyes with laugh lines, short close-cropped rust-red dyed hair. Weathered face marked by years of steam exposure, subtle almond-shaped eyes. Forearms bearing bioluminescent subdermal lines glowing soft blue-white in steady pulse rhythm, thin old burn scar on left wrist inside, calloused turmeric-stained hands. Wearing bleached canvas apron layered with meal stains over faded gray thermal, worn jeans, steel-toed boots. Standing with deliberate stillness at food cart in Edison Grid evening, pulsing blue bioluminescence visible on bare forearms against neon grid backdrop, soft ambient lighting catching the golden undertones of skin, weathered but clean, groundedness and quiet observation in posture, Great Lakes Metropolitan Zone 2226 neo-noir urban aesthetic --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, Ender Mwangi-Siripong-Pathak, 172cm lean wiry South Asian-African-Southeast Asian fusion heritage, deep warm umber skin with golden undertones, refined high cheekbones, dark brown eyes with laugh lines, short close-cropped rust-red dyed hair. Weathered face marked by years of steam exposure, subtle almond-shaped eyes. Forearms bearing bioluminescent subdermal lines glowing soft blue-white in steady pulse rhythm, thin old burn scar on left wrist inside, calloused turmeric-stained hands. Wearing bleached canvas apron layered with meal stains over faded gray thermal, worn jeans, steel-toed boots. Standing with deliberate stillness at food cart in Edison Grid evening, pulsing blue bioluminescence visible on bare forearms against neon grid backdrop, soft ambient lighting catching the golden undertones of skin, weathered but clean, groundedness and quiet observation in posture, Great Lakes Metropolitan Zone 2226 neo-noir urban aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 27,
     "South Asian": 25.3,

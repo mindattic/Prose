@@ -2,10 +2,7 @@
   "id": "019d6143a70375f4b6baa7968f6671ee",
   "type": "character",
   "name": "Ekow Huitzil",
-  "aliases": [
-    "Drift Huitzil",
-    "Drift"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 22,
   "status": "active",
   "location": "the Gray Zone, Lower Level 9 — rents a two-room unit in the Blackpipe Corridor that doubles as his print shop, near Pulaski and Chicago Ave",
-  "description": "Drift Huitzil is whip-thin with a restless, bird-quick way of moving — he is always slightly in motion, tapping, shifting, scanning the room. He has his father's Croatian bone structure and his Malian grandmother's complexion, a warm dark brown, and he grows a patchy beard he refuses to admit is patchy. His geneware is expressive: color-shifting hair he keeps cycling through ambers and deep reds, and patterned irises that he updates seasonally through a subscription service — currently sporting a fine hexagonal grid in pale gold. He looks younger than 22 and has learned to use this strategically.\n\nHe came to counterfeiting through graphic design — he was genuinely talented, got a Tessera scholarship to an applied arts program, washed out in the second year when he couldn't keep up with the social and academic debt load, and discovered that the skills transferred perfectly to a more immediately lucrative application. He is not violent, not particularly brave, and deeply aware that he is one forensic audit away from a serious corporate jurisdiction charge. He manages this anxiety through manic productivity and a carefully cultivated reputation for quality. His work is, genuinely, exceptional. He talks about it the way a craftsman talks about joinery.",
+  "description": "Ekow Huitzil is whip-thin with a restless, bird-quick way of moving — he is always slightly in motion, tapping, shifting, scanning the room. He has his father's Croatian bone structure and his Malian grandmother's complexion, a warm dark brown, and he grows a patchy beard he refuses to admit is patchy. His geneware is expressive: color-shifting hair he keeps cycling through ambers and deep reds, and patterned irises that he updates seasonally through a subscription service — currently sporting a fine hexagonal grid in pale gold. He looks younger than 22 and has learned to use this strategically.\n\nHe came to counterfeiting through graphic design — he was genuinely talented, got a Tessera scholarship to an applied arts program, washed out in the second year when he couldn't keep up with the social and academic debt load, and discovered that the skills transferred perfectly to a more immediately lucrative application. He is not violent, not particularly brave, and deeply aware that he is one forensic audit away from a serious corporate jurisdiction charge. He manages this anxiety through manic productivity and a carefully cultivated reputation for quality. His work is, genuinely, exceptional. He talks about it the way a craftsman talks about joinery.",
   "psychology": {
     "facet_weights": {
       "wound": 0.4,
@@ -183,7 +180,7 @@
     "Tessera Corponation",
     "Chicago",
     "SynapTech IrisBloom Ocular Color Modulator",
-    "Drift",
+    "Ekow",
     "Meridian Munitions Compact Machine Pistol CMP-4 'Jackrabbit'",
     "The Pale Mile",
     "Gold"
@@ -208,7 +205,7 @@
     "posture_movement": "Perpetually in low-level motion — tapping fingers, shifting weight, scanning rooms with quick bird-like head turns. When seated at work, becomes hyperfocused and nearly motionless. When walking, moves with quick, economical steps. Nervous tics are self-aware and sometimes deliberately performed.",
     "clothing_style": "Tier 4 utilitarian with deliberate thrift-store layering. Favors oversized hoodies and worn mesh tank tops that expose the arm scars. Black synthetic pants with multiple pockets and visible tool loops, most pockets actually empty. Worn Neo-Keds or unlaced boots. Occasionally wears a faded Tessera program hoodie as a deliberate reminder/irony piece. No corporate branding. Accessories are functional: phone tether, worn carabiner, sometimes a grease pencil tucked behind his ear."
   },
-  "image_prompt": "Drift Huitzil, 22-year-old neo-noir netrunner in the GLMZ 2226, medium build 172cm tall, wiry frame. Warm medium-brown skin with golden undertones reflecting South Asian and Indigenous American heritage blend, angular face with pronounced cheekbones and East Asian-influenced eye shape. Color-shifting geneware hair in amber and crimson cycles, medium length and deliberately tousled. Eyes display hexagonal grid pattern in pale gold (cosmetic augmentation). Patchy facial hair, sleep-shifted dark circles. Worn oversized hoodie over mesh tank top revealing minor chemical burn scars on left forearm. Black utilitarian synthetic pants with multiple pockets, unlaced boots. Tapping fingers nervously, perpetual low-level motion. Dark moody interior setting with neon accents and scattered tech equipment. Neo-noir urban aesthetic, atmospheric lighting with blue-purple glow. Character exudes restless energy and deliberate carelessness. --ar 2:3 --v 6",
+  "image_prompt": "Ekow Huitzil, 22-year-old neo-noir netrunner in the GLMZ 2226, medium build 172cm tall, wiry frame. Warm medium-brown skin with golden undertones reflecting South Asian and Indigenous American heritage blend, angular face with pronounced cheekbones and East Asian-influenced eye shape. Color-shifting geneware hair in amber and crimson cycles, medium length and deliberately tousled. Eyes display hexagonal grid pattern in pale gold (cosmetic augmentation). Patchy facial hair, sleep-shifted dark circles. Worn oversized hoodie over mesh tank top revealing minor chemical burn scars on left forearm. Black utilitarian synthetic pants with multiple pockets, unlaced boots. Tapping fingers nervously, perpetual low-level motion. Dark moody interior setting with neon accents and scattered tech equipment. Neo-noir urban aesthetic, atmospheric lighting with blue-purple glow. Character exudes restless energy and deliberate carelessness. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 42.3,
     "Indigenous American": 28.1,

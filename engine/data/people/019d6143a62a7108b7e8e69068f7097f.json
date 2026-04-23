@@ -4,10 +4,7 @@
   "vote_count": 1,
   "type": "character",
   "name": "Dadzie Kristjánsson",
-  "aliases": [
-    "Aero Kristjánsson",
-    "Aero"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -15,7 +12,7 @@
   "age": 44,
   "status": "active",
   "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near Damen and Armitage",
-  "description": "Aero Kristjánsson is compact and densely muscled, built low to the ground like something designed to survive impacts. At 44, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nShe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a rigger out of Glassway, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Aero Kristjánsson agrees on two things: she is worth the fee, and she is terrible company at dinner.",
+  "description": "Dadzie Kristjánsson is compact and densely muscled, built low to the ground like something designed to survive impacts. At 44, scars map her face like a transit diagram of bad decisions and worse luck. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and she makes no effort to hide it.\n\nShe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see her surpass them. She works as a rigger out of Glassway, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nEveryone who's worked with Dadzie Kristjánsson agrees on two things: she is worth the fee, and she is terrible company at dinner.",
   "psychology": {
     "facet_weights": {
       "wound": 0.23,
@@ -302,7 +299,7 @@
     "posture_movement": "Moves with economy and precision — no wasted motion. Shoulders squared and balanced. Head stays level. Eyes constantly tracking, peripheral vision well-used. Sits in ways that allow quick movement. Doesn't fidget; doesn't relax into furniture. Default resting expression is neutral to slightly suspicious.",
     "clothing_style": "Tier 3-4 pragmatic runner aesthetic. Insulated jacket in charcoal gray or black — modular, many pockets, reinforced at elbows and shoulders. Utility pants with cargo pockets, worn at cuffs and knees. Steel-toed boots, scuffed and maintained. No logos or corp branding. Undersuit visible at neck and wrists — thin thermal layer for temp regulation and minor impact protection. A leather biker jacket over top on colder days, weather-beaten and patched. Minimal jewelry except a worn metal cuff on right wrist (datum counter or personal talisman). Everything is black, gray, or dark blue — nothing draws attention."
   },
-  "image_prompt": "Aero Kristjánsson, compact athletic woman of mixed East Asian-African-European descent, height 158cm. Deep bronze skin with golden undertones, burnished copper in light. High sculpted cheekbones, dark brown eyes assessing and alert. Black hair pulled back tight in functional braid, silver at temples. Face weathered with old combat scars: thin white line bisecting left cheekbone, burn scars at jaw, jagged forehead scar. No makeup, weathered skin. Chrome and silver breathing apparatus visible at collarbone and neck with pale blue LED pulses, chrome plating on shoulders and upper chest. Wearing modular charcoal insulated jacket with reinforced elbows, cargo utility pants worn at cuffs, steel-toed scuffed boots, thin thermal undersuit visible at neck and wrists. Worn leather biker jacket overtop. Metal cuff on right wrist. Posture rigid and balanced, eyes tracking, no wasted movement. Neutral suspicious expression. GLMZ aesthetic, gritty industrial setting, cool overhead lighting, shadows emphasizing scar tissue and chrome augmentation. Mood: dangerous, focused, experienced runner. --ar 2:3 --v 6",
+  "image_prompt": "Dadzie Kristjánsson, compact athletic woman of mixed East Asian-African-European descent, height 158cm. Deep bronze skin with golden undertones, burnished copper in light. High sculpted cheekbones, dark brown eyes assessing and alert. Black hair pulled back tight in functional braid, silver at temples. Face weathered with old combat scars: thin white line bisecting left cheekbone, burn scars at jaw, jagged forehead scar. No makeup, weathered skin. Chrome and silver breathing apparatus visible at collarbone and neck with pale blue LED pulses, chrome plating on shoulders and upper chest. Wearing modular charcoal insulated jacket with reinforced elbows, cargo utility pants worn at cuffs, steel-toed scuffed boots, thin thermal undersuit visible at neck and wrists. Worn leather biker jacket overtop. Metal cuff on right wrist. Posture rigid and balanced, eyes tracking, no wasted movement. Neutral suspicious expression. GLMZ aesthetic, gritty industrial setting, cool overhead lighting, shadows emphasizing scar tissue and chrome augmentation. Mood: dangerous, focused, experienced runner. --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "East Asian": 61,

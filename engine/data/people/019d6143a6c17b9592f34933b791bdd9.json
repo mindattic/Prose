@@ -2,10 +2,7 @@
   "id": "019d6143a6c17b9592f34933b791bdd9",
   "type": "character",
   "name": "Ekin Ingebrigtsen",
-  "aliases": [
-    "Drift Ingebrigtsen",
-    "Drift"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 45,
   "status": "active",
   "location": "Glassway — corporate-adjacent retail district, heavy surveillance, near Milwaukee and Damen",
-  "description": "Drift Ingebrigtsen is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 45, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nHe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a face out of Glassway, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nDrift Ingebrigtsen operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
+  "description": "Ekin Ingebrigtsen is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 45, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cortical bomb (employer installed, removed by street doc, scar tissue remains) — and he makes no effort to hide it.\n\nHe came up through the Gray Zone's informal apprentice system, learning the trade from runners who didn't survive long enough to see him surpass them. He works as a face out of Glassway, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEkin Ingebrigtsen operates in a narrow band between competence and recklessness that makes fixers nervous and clients satisfied.",
   "psychology": {
     "facet_weights": {
       "wound": 0.94,
@@ -273,7 +270,7 @@
     "The Heritage Vault",
     "Diaspora Table",
     "Stratum",
-    "Drift",
+    "Ekin",
     "Slagworks Industrial",
     "Pellucid Systems",
     "GLMZ"
@@ -299,7 +296,7 @@
     "posture_movement": "Moves with economical grace — no wasted motion, every gesture calibrated. Stands with weight distributed for rapid directional change. Eyes track exits and sight lines automatically. When sitting, shoulders remain loose but alert; when speaking to targets, he leans in slightly, voice controlled and measured. Right hand moves slightly slower than left (old injury accommodation). Breathes from the diaphragm — boxer's breathing, controlled and deep.",
     "clothing_style": "Tier 3-4 streetwear with corporate-adjacent polish. Favors fitted charcoal or dark gray tactical jackets with subtle armor weave — visible stitching patterns indicate high-end fabrication. Underneath: clean, well-fitted shirts in neutral colors, often with subtle data-port access panels at the wrists. Dark fitted trousers with reinforced seams and concealed pockets. Chrome or matte black boots, expensive but worn in. Accessories minimal: worn leather cuff on left wrist (covers augmentation port), stainless steel watch with analog face (no wireless vulnerability), encrypted data chip on a thin chain under his shirt. No jewelry. The overall effect is 'expensive enough to be credible, unremarkable enough to move through Tier 3-4 spaces unnoticed.'"
   },
-  "image_prompt": "GLMZ, portrait of Drift Ingebrigtsen, 178cm lean athletic runner, warm bronze-gold skin with golden undertones from East Asian Southeast Asian Middle Eastern diaspora blend, high sharp cheekbones, sharp jawline, dark brown hair with silver at temples swept back, dark brown eyes with amber flecks alert and intense, light stubble, crow's feet from stress, pale circular scar tissue on right temple from cortical bomb removal 4cm diameter, thin white scar on left knuckles, burn mark on inner right wrist. Wearing charcoal tactical jacket with armor weave, neutral fitted shirt with data-port panels, dark fitted reinforced trousers, chrome boots, worn leather cuff on left wrist, stainless steel analog watch, encrypted data chip on thin chain under shirt. Posture economical and alert, weight distributed for rapid movement, shoulders loose but ready, eyes tracking exits. Neon-lit Great Lakes Metropolitan Zone night setting, Tier 3-4 corporate-adjacent streetwear aesthetic, professional fixer vibe, moody cinematic lighting, high contrast shadows, gritty urban neo-noir atmosphere, --ar 2:3 --v 6",
+  "image_prompt": "GLMZ, portrait of Ekin Ingebrigtsen, 178cm lean athletic runner, warm bronze-gold skin with golden undertones from East Asian Southeast Asian Middle Eastern diaspora blend, high sharp cheekbones, sharp jawline, dark brown hair with silver at temples swept back, dark brown eyes with amber flecks alert and intense, light stubble, crow's feet from stress, pale circular scar tissue on right temple from cortical bomb removal 4cm diameter, thin white scar on left knuckles, burn mark on inner right wrist. Wearing charcoal tactical jacket with armor weave, neutral fitted shirt with data-port panels, dark fitted reinforced trousers, chrome boots, worn leather cuff on left wrist, stainless steel analog watch, encrypted data chip on thin chain under shirt. Posture economical and alert, weight distributed for rapid movement, shoulders loose but ready, eyes tracking exits. Neon-lit Great Lakes Metropolitan Zone night setting, Tier 3-4 corporate-adjacent streetwear aesthetic, professional fixer vibe, moody cinematic lighting, high contrast shadows, gritty urban neo-noir atmosphere, --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Middle Eastern": 43.5,
     "East Asian": 41.3,

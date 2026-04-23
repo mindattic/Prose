@@ -3,10 +3,7 @@
   "rating": 70,
   "type": "character",
   "name": "Bakari Kang-Shirazi",
-  "aliases": [
-    "Vale Kang-Shirazi",
-    "Vale"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -14,7 +11,7 @@
   "age": 37,
   "status": "active",
   "location": "Ashfield — former residential district, half-burned, now squatter territory, near Kedzie and Division",
-  "description": "Vale Kang-Shirazi is compact and densely muscled, built low to the ground like something designed to survive impacts. At 37, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a fixer out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nVale Kang-Shirazi has built a reputation on reliability rather than flash — she shows up, she delivers, she collects.",
+  "description": "Bakari Kang-Shirazi is compact and densely muscled, built low to the ground like something designed to survive impacts. At 37, her expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a fixer out of Ashfield, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nBakari Kang-Shirazi has built a reputation on reliability rather than flash — she shows up, she delivers, she collects.",
   "psychology": {
     "facet_weights": {
       "wound": 0.39,
@@ -300,7 +297,7 @@
     "posture_movement": "Economical and precise. Stands with weight distributed low. Moves without wasted motion — every step calibrated. Eyes track exits and high ground automatically. Hands rest open, fingers slightly curved as if ready to grip or climb. When still, she's genuinely still.",
     "clothing_style": "Tier 3-4 practical: reinforced charcoal cargo pants with climbing loops, worn microflex jacket with reflective threading, soft-soled boots with aggressive treads. No logos or corp affiliation. Neutral colors. Everything fitted for movement. One worn leather carry pouch on hip. No jewelry. A smart-linked watch on left wrist — old model, functional, not flash."
   },
-  "image_prompt": "Vale Kang-Shirazi, 158cm compact muscular frame, rich bronze skin with warm golden-brown undertones, high defined cheekbones blending East Asian structure with African and Pacific Islander heritage, varied monolids, broad nose with substantial bridge, full darker lips, dark alert eyes. Black hair pulled back tight with silver at temples. Visible chrome gecko-grip implants on fingertips, chrome ankle seam-work, scars on knuckles and webbed between thumbs. Wearing reinforced charcoal cargo pants with climbing loops, worn microflex jacket with reflective threading, aggressive-tread boots. Old functional smart-linked watch. Economical posture, low center of gravity, hands curved ready to grip. GLMZ Great Lakes Metropolitan Zone, neon-lit urban vertical space, caught mid-movement against industrial architecture, moody blue and amber lighting, gritty tactical aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Bakari Kang-Shirazi, 158cm compact muscular frame, rich bronze skin with warm golden-brown undertones, high defined cheekbones blending East Asian structure with African and Pacific Islander heritage, varied monolids, broad nose with substantial bridge, full darker lips, dark alert eyes. Black hair pulled back tight with silver at temples. Visible chrome gecko-grip implants on fingertips, chrome ankle seam-work, scars on knuckles and webbed between thumbs. Wearing reinforced charcoal cargo pants with climbing loops, worn microflex jacket with reflective threading, aggressive-tread boots. Old functional smart-linked watch. Economical posture, low center of gravity, hands curved ready to grip. GLMZ Great Lakes Metropolitan Zone, neon-lit urban vertical space, caught mid-movement against industrial architecture, moody blue and amber lighting, gritty tactical aesthetic --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "East Asian": 41.9,

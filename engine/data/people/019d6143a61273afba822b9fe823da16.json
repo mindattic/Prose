@@ -4,10 +4,7 @@
   "vote_count": 1,
   "type": "character",
   "name": "Gudrun Villalobos",
-  "aliases": [
-    "Diego Villalobos",
-    "Diego"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -15,7 +12,7 @@
   "age": 27,
   "status": "active",
   "location": "The Rookery — dense vertical housing, gang-controlled, near Western and Chicago Ave",
-  "description": "Diego Villalobos is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 27, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a bounty hunter out of The Rookery, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented bounty hunter in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
+  "description": "Gudrun Villalobos is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 27, there's something unfinished about her face, like a sculpture the artist walked away from — striking rather than beautiful. The chrome is visible — smartgun link in right forearm — interfaces directly with compatible weapons — and she makes no effort to hide it.\n\nShe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. She works as a bounty hunter out of The Rookery, taking contracts that match her skills and her risk tolerance, which is higher than most people consider healthy.\n\nshe is not the most talented bounty hunter in GLMZ, but she might be the most stubborn, and in this city that's worth more.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -299,7 +296,7 @@
     "posture_movement": "Stands with weight balanced on the balls of her feet — ready to move in any direction instantly. Moves through space economically, no wasted motion. Eyes constantly track exits and threats. At rest, her right hand unconsciously hovers near her forearm. When walking, there's a predatory fluidity — someone comfortable in confined spaces and tight corners.",
     "clothing_style": "Tier 3-4 utilitarian. Black synthetic-leather jacket (water-resistant, scored with small cuts and scuffs), fitted enough to move but loose enough to conceal gear. Charcoal tactical pants with reinforced knees and thigh pockets holding small tools and ammunition. Combat boots, black, scuffed. Underneath: a grey undershirt with discreet ballistic weave. No jewelry except a cracked smart-watch on her left wrist (functional, not fashion). All clothing shows the patina of actual use."
   },
-  "image_prompt": "Diego Villalobos, GLMZ, woman with deep golden-brown skin tone, angular high cheekbones, defined jawline, subtle Southeast Asian bone structure, dark brown eyes with slight epicanthic fold, natural black hair in tight functional braid with bronze micro-LED threading, 172cm athletic lean build. Thin white scar temple to cheekbone, burn scar inner left wrist. Right forearm polished chrome smartgun link port with neural scars. Wears black scuffed synthetic-leather jacket, charcoal tactical pants with reinforced knees, grey ballistic weave undershirt, black combat boots, cracked smart-watch. Stands weight-balanced on balls of feet, predatory posture, right hand hovering near augmented forearm. Nocturnal fatigue lines under eyes, functional grooming. Great Lakes Metropolitan Zone neon-lit alley setting, cool blue and amber lighting catching the warmth of her skin and the chrome of her augmentation, moody neo-noir atmosphere --ar 2:3 --v 6",
+  "image_prompt": "Gudrun Villalobos, GLMZ, woman with deep golden-brown skin tone, angular high cheekbones, defined jawline, subtle Southeast Asian bone structure, dark brown eyes with slight epicanthic fold, natural black hair in tight functional braid with bronze micro-LED threading, 172cm athletic lean build. Thin white scar temple to cheekbone, burn scar inner left wrist. Right forearm polished chrome smartgun link port with neural scars. Wears black scuffed synthetic-leather jacket, charcoal tactical pants with reinforced knees, grey ballistic weave undershirt, black combat boots, cracked smart-watch. Stands weight-balanced on balls of feet, predatory posture, right hand hovering near augmented forearm. Nocturnal fatigue lines under eyes, functional grooming. Great Lakes Metropolitan Zone neon-lit alley setting, cool blue and amber lighting catching the warmth of her skin and the chrome of her augmentation, moody neo-noir atmosphere --ar 2:3 --v 6",
   "dalle3_prompt": "",
   "genetic_ancestry": {
     "Sub-Saharan African": 50.9,

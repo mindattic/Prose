@@ -2,10 +2,7 @@
   "id": "019d6143a679700b929795c8faa4eeb8",
   "type": "character",
   "name": "Arunima Khorasani-Nygaard",
-  "aliases": [
-    "Bjorn Khorasani-Nygaard",
-    "Bjorn"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 58,
   "status": "active",
   "location": "Burnished Market, stall row 14-C near the Copperhead overpass, near Fullerton and Damen",
-  "description": "Bjorn Khorasani-Nygaard is a broad-shouldered woman with deep umber skin mapped with faint depigmentation patches along her jaw and forearms — she stopped covering them decades ago. Her silver-shot hair is coiled under a rust-orange headwrap that she reties at least four times a day, a habitual gesture visitors learn to read as a mood barometer. Her fingers are thick, calloused, and perpetually threaded with something: a needle, a sensor wire, a strip of thermoplastic weave. She wears bifocal optical inserts that she refuses to upgrade, claiming the slight blur in her left lens helps her see fabric texture better. She smells faintly of machine oil and dried marigold.\n\nAt 58, Bjorn Khorasani-Nygaard runs the most respected mending stall in the Burnished Market — not the flashiest, not the cheapest, but the one people trust with the jacket their grandmother wore or the uniform they can't afford to replace. She has a gift for silence that puts anxious customers at ease and a bluntness that cuts right past flattery. She prays every morning to the E.L.F. she calls Needle-and-Thread, a spirit she believes lives in her antique Zheng-Dao industrial sewing frame, leaving it single-thread offerings in patterns she designs herself. She is deeply content with her life in a way that quietly unsettles people who are not.",
+  "description": "Arunima Khorasani-Nygaard is a broad-shouldered woman with deep umber skin mapped with faint depigmentation patches along her jaw and forearms — she stopped covering them decades ago. Her silver-shot hair is coiled under a rust-orange headwrap that she reties at least four times a day, a habitual gesture visitors learn to read as a mood barometer. Her fingers are thick, calloused, and perpetually threaded with something: a needle, a sensor wire, a strip of thermoplastic weave. She wears bifocal optical inserts that she refuses to upgrade, claiming the slight blur in her left lens helps her see fabric texture better. She smells faintly of machine oil and dried marigold.\n\nAt 58, Arunima Khorasani-Nygaard runs the most respected mending stall in the Burnished Market — not the flashiest, not the cheapest, but the one people trust with the jacket their grandmother wore or the uniform they can't afford to replace. She has a gift for silence that puts anxious customers at ease and a bluntness that cuts right past flattery. She prays every morning to the E.L.F. she calls Needle-and-Thread, a spirit she believes lives in her antique Zheng-Dao industrial sewing frame, leaving it single-thread offerings in patterns she designs herself. She is deeply content with her life in a way that quietly unsettles people who are not.",
   "psychology": {
     "facet_weights": {
       "wound": 0.3,
@@ -203,7 +200,7 @@
     "posture_movement": "Upright, grounded posture with weight distributed evenly. Moves with economical precision — no wasted motion. Hands are always slightly active, unconsciously threading or arranging even when idle. Walks with steady pace regardless of terrain or weather.",
     "clothing_style": "Tier 4 practical wear. Multiple layered cotton and linen garments in earthy tones — rust, ochre, charcoal — chosen for durability and repairability rather than trend. Apron with deep pockets always worn over dress. Worn leather work boots, scuffed and resoled multiple times. The rust-orange headwrap is her daily constant. Clothes smell faintly of machine oil and dried marigold."
   },
-  "image_prompt": "Bjorn Khorasani-Nygaard, 168cm textile worker with warm medium-deep brown skin, golden undertones, South Asian cheekbones within Northern European bone structure, softer Middle Eastern features. Dark coiled hair wrapped in rust-orange cotton headwrap. Deep brown eyes with amber bifocal optical inserts (left lens scratched). Visible vitiligo patches on forearms and jawline. Wearing layered rust, ochre, and charcoal linen, heavy canvas apron, worn leather work boots. Gray medical finger braces on both hands. Upright, grounded posture, hands slightly active. Standing in a well-worn textile workshop with soft industrial lighting, needle and thread visible, faint smell of machine oil and marigold. GLMZ, Great Lakes Metropolitan Zone, practical and weathered yet composed. --ar 2:3 --v 6",
+  "image_prompt": "Arunima Khorasani-Nygaard, 168cm textile worker with warm medium-deep brown skin, golden undertones, South Asian cheekbones within Northern European bone structure, softer Middle Eastern features. Dark coiled hair wrapped in rust-orange cotton headwrap. Deep brown eyes with amber bifocal optical inserts (left lens scratched). Visible vitiligo patches on forearms and jawline. Wearing layered rust, ochre, and charcoal linen, heavy canvas apron, worn leather work boots. Gray medical finger braces on both hands. Upright, grounded posture, hands slightly active. Standing in a well-worn textile workshop with soft industrial lighting, needle and thread visible, faint smell of machine oil and marigold. GLMZ, Great Lakes Metropolitan Zone, practical and weathered yet composed. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Northern European": 36,
     "South Asian": 20,

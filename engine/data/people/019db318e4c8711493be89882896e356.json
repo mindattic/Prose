@@ -4,9 +4,7 @@
   "vote_count": 0,
   "type": "character",
   "name": "Hadi",
-  "aliases": [
-    "Marisol"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "",
   "pronouns": "",
@@ -14,7 +12,7 @@
   "age": 0,
   "status": "alive",
   "location": "",
-  "description": "Auto-scaffolded. First mentioned: \"He says, without preamble: 'Her name is Marisol. She is fourteen.'\"",
+  "description": "Auto-scaffolded. First mentioned: \"He says, without preamble: 'Her name is Hadi. She is fourteen.'\"",
   "psychology": {
     "facet_weights": {
       "wound": 0,
@@ -42,9 +40,9 @@
   },
   "relationships": [
     {
-      "name": "Ash Madrigal-Vestergaard",
+      "name": "Felicitas Madrigal-Vestergaard",
       "type": "daughter",
-      "description": "daughter of Ash Madrigal-Vestergaard",
+      "description": "daughter of Felicitas Madrigal-Vestergaard",
       "emotional_core": "",
       "story_tension": ""
     },

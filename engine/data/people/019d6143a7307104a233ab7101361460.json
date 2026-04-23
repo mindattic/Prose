@@ -2,10 +2,7 @@
   "id": "019d6143a7307104a233ab7101361460",
   "type": "character",
   "name": "Evren Bah-Tamale",
-  "aliases": [
-    "Indigo Bah-Tamale",
-    "Indigo"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 29,
   "status": "alive",
   "location": "Meridian Core — Axiom Industries Security Division, Floor 47. Clean apartment in the corporate residential block, Level 30.",
-  "description": "Indigo Bah-Tamale moves like someone who has been evaluated her entire adult life and has decided to make every\nevaluation flawless. Not arrogant — precise. Every step measured, every gesture controlled, every\nword vetted by some internal review board that never adjourns. She is 5'8\", athletic, with the\nparticular build that comes from corporate training programs designed to maximize combat efficiency\nwithout sacrificing the professional appearance Axiom demands of its security personnel. Her black\nhair is kept in a regulation-length bob that frames a face built for stillness — high cheekbones,\ndark eyes that assess before they acknowledge, a mouth that defaults to a neutral line that gives\naway nothing.\n\nHer uniform is always immaculate. Her augments are always calibrated. Her quarterly performance\nreviews are always exceptional. She is, on paper and in practice, the model Axiom operative: a\nproduct of the Gray Zone who climbed out through sheer competence and disciplined compliance. The\ncorporation holds her up as proof that the system works — that anyone with talent and willingness\ncan ascend. They do not mention what she had to leave behind to do it.\n\nFirst impression: a professional. Competent, controlled, slightly cold. The kind of person you\nrespect and don't approach. Second impression, available only to those who knew her before: a\nwoman who is performing the role of herself with such precision that the performance has become\nindistinguishable from reality. She's not pretending. She's not honest either. She's something\nworse — she's forgotten where the mask ends.",
+  "description": "Evren Bah-Tamale moves like someone who has been evaluated her entire adult life and has decided to make every\nevaluation flawless. Not arrogant — precise. Every step measured, every gesture controlled, every\nword vetted by some internal review board that never adjourns. She is 5'8\", athletic, with the\nparticular build that comes from corporate training programs designed to maximize combat efficiency\nwithout sacrificing the professional appearance Axiom demands of its security personnel. Her black\nhair is kept in a regulation-length bob that frames a face built for stillness — high cheekbones,\ndark eyes that assess before they acknowledge, a mouth that defaults to a neutral line that gives\naway nothing.\n\nHer uniform is always immaculate. Her augments are always calibrated. Her quarterly performance\nreviews are always exceptional. She is, on paper and in practice, the model Axiom operative: a\nproduct of the Gray Zone who climbed out through sheer competence and disciplined compliance. The\ncorporation holds her up as proof that the system works — that anyone with talent and willingness\ncan ascend. They do not mention what she had to leave behind to do it.\n\nFirst impression: a professional. Competent, controlled, slightly cold. The kind of person you\nrespect and don't approach. Second impression, available only to those who knew her before: a\nwoman who is performing the role of herself with such precision that the performance has become\nindistinguishable from reality. She's not pretending. She's not honest either. She's something\nworse — she's forgotten where the mask ends.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -263,7 +260,7 @@
     "Carrion Defense Works Pathogen Delivery System PDS-4 'Typhoid'",
     "Clearpath",
     "Specter ID Spoofer — 'Janus Mask'",
-    "Indigo",
+    "Evren",
     "Honest Burger",
     "Slagworks Industrial"
   ],
@@ -287,7 +284,7 @@
     "posture_movement": "Moves with measured efficiency — no wasted motion, no casual slouching. Steps are deliberate and grounded. Hands remain visible and controlled. Head positioning suggests constant environmental assessment. Stands at attention even when nominally at rest. Movement is precise enough to unsettle observers who expect human variability.",
     "clothing_style": "Axiom security uniform when on-duty: tailored charcoal tactical weave, minimal insignia, matte finish. Off-duty: high-tier Tier 1-2 minimalist corporate wear — monochromatic, fitted, expensive in restraint rather than embellishment. No jewelry. No personal customization. Every garment is neutral, functional, and perfectly maintained."
   },
-  "image_prompt": "Indigo Bah-Tamale, GLMZ, 173cm athletic security operative with deep warm brown luminous skin and rich golden undertones from sub-Saharan African and East Asian heritage. High prominent cheekbones, subtle almond eye shape, dark brown analytical gaze, short blunt-cut black bob framing jaw. Immaculate complexion, corporate-grade skincare. Wearing tailored charcoal tactical weave security uniform with minimal insignia, matte finish. Posture rigidly efficient and alert, movement precise and measured. Professional neural enhancement suggested by preternatural control. Standing in neon-lit corporate hallway, Great Lakes Metropolitan Zone floor 47, cool blue-white lighting casting subtle shadows across defined facial structure. No visible augmentations, no jewelry, perfect restraint. Expression neutral, calculating, ready. Neo-noir corporate aesthetic, photorealistic, cinematic lighting --ar 2:3 --v 6",
+  "image_prompt": "Evren Bah-Tamale, GLMZ, 173cm athletic security operative with deep warm brown luminous skin and rich golden undertones from sub-Saharan African and East Asian heritage. High prominent cheekbones, subtle almond eye shape, dark brown analytical gaze, short blunt-cut black bob framing jaw. Immaculate complexion, corporate-grade skincare. Wearing tailored charcoal tactical weave security uniform with minimal insignia, matte finish. Posture rigidly efficient and alert, movement precise and measured. Professional neural enhancement suggested by preternatural control. Standing in neon-lit corporate hallway, Great Lakes Metropolitan Zone floor 47, cool blue-white lighting casting subtle shadows across defined facial structure. No visible augmentations, no jewelry, perfect restraint. Expression neutral, calculating, ready. Neo-noir corporate aesthetic, photorealistic, cinematic lighting --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Sub-Saharan African": 74.8,
     "East Asian": 18.9,

@@ -2,12 +2,9 @@
   "id": "697f88d0434a04979fa998f738688428",
   "name": "Hafsteinn Karlsen-Boateng",
   "type": "character",
-  "aliases": [
-    "Thandiwe Karlsen-Boateng",
-    "Thandiwe"
-  ],
+  "aliases": [],
   "role": "Private Investigator",
-  "description": "Thandiwe Karlsen-Boateng is the person corporations call when they suspect the rot is coming from inside. Her firm, Meridian Corporate Intelligence Group, serves exclusively Tier 4 and Tier 5 clients — the corponations and the mega-wealthy individuals who orbit them. She investigates espionage, internal theft, executive misconduct, and the kind of byzantine corporate betrayals that can cost billions of Quanta and topple divisions.\n\nSouth African-Norwegian heritage, forty-one years old, with dark skin, sharp cheekbones, and eyes that evaluate everything they see like an appraiser assessing collateral. She wears severity like other people wear cologne. Her rise from the Gray Zone to the Spires is a story she never tells because it would reveal vulnerabilities she's spent decades armoring over. What matters is the present: she is the best corporate investigator in GLMZ, and everyone who matters knows it.\n\nHer methods are exhaustive and merciless. When she's hired to find a mole, the mole is found. When she's hired to prove fraud, the fraud is proven. She has never failed to deliver a result, though the results aren't always what her clients wanted to hear — she has, on three occasions, identified the client themselves as the source of the problem they hired her to investigate. She presents these findings with the same glacial professionalism as any other report, which is why she gets hired again despite making powerful people very uncomfortable.",
+  "description": "Hafsteinn Karlsen-Boateng is the person corporations call when they suspect the rot is coming from inside. Her firm, Meridian Corporate Intelligence Group, serves exclusively Tier 4 and Tier 5 clients — the corponations and the mega-wealthy individuals who orbit them. She investigates espionage, internal theft, executive misconduct, and the kind of byzantine corporate betrayals that can cost billions of Quanta and topple divisions.\n\nSouth African-Norwegian heritage, forty-one years old, with dark skin, sharp cheekbones, and eyes that evaluate everything they see like an appraiser assessing collateral. She wears severity like other people wear cologne. Her rise from the Gray Zone to the Spires is a story she never tells because it would reveal vulnerabilities she's spent decades armoring over. What matters is the present: she is the best corporate investigator in GLMZ, and everyone who matters knows it.\n\nHer methods are exhaustive and merciless. When she's hired to find a mole, the mole is found. When she's hired to prove fraud, the fraud is proven. She has never failed to deliver a result, though the results aren't always what her clients wanted to hear — she has, on three occasions, identified the client themselves as the source of the problem they hired her to investigate. She presents these findings with the same glacial professionalism as any other report, which is why she gets hired again despite making powerful people very uncomfortable.",
   "affiliation": "Meridian Corporate Intelligence Group — a boutique firm serving Tier 4-5 clients",
   "tier": "4",
   "location": "A fortified suite on the 87th floor of the Tessera-adjacent Pinnacle Tower, Spires district",
@@ -31,7 +28,7 @@
     "A wardrobe that costs more than a the Gray Zone apartment per outfit — appearances are investigative tools in the Spires",
     "Retinal scanner spoofing device for accessing secured corporate facilities during investigations"
   ],
-  "personality": "Thandiwe is cold the way a scalpel is cold — it's not personal, it's functional. She grew up Tier 2 and clawed her way to the Spires through intelligence, ruthlessness, and an absolute refusal to be impressed by anyone's title or wealth. She treats every person she meets as a potential subject of investigation and maintains files on her own clients because trust is a vulnerability she can't afford. She is impeccably professional, never drinks at business functions, laughs rarely and never spontaneously, and has a reputation for destroying careers with the same emotional affect as someone filing paperwork. Under the armor, she is deeply lonely and aware that she has optimized herself for success at the cost of everything else.",
+  "personality": "Hafsteinn is cold the way a scalpel is cold — it's not personal, it's functional. She grew up Tier 2 and clawed her way to the Spires through intelligence, ruthlessness, and an absolute refusal to be impressed by anyone's title or wealth. She treats every person she meets as a potential subject of investigation and maintains files on her own clients because trust is a vulnerability she can't afford. She is impeccably professional, never drinks at business functions, laughs rarely and never spontaneously, and has a reputation for destroying careers with the same emotional affect as someone filing paperwork. Under the armor, she is deeply lonely and aware that she has optimized herself for success at the cost of everything else.",
   "relationships": [
     {
       "name": "Director Kaito Bergstrom-Osei",
@@ -41,11 +38,11 @@
     {
       "name": "Vesna Medina-Appiah",
       "type": "former protege",
-      "description": "Left Thandiwe's firm to start a competing practice — Thandiwe considers this a betrayal and monitors her operations"
+      "description": "Left Hafsteinn's firm to start a competing practice — Hafsteinn considers this a betrayal and monitors her operations"
     }
   ],
   "story_hooks": [
-    "Thandiwe is hired to investigate a data breach at Axiom, but the trail leads to Director Kaito himself — her biggest client and the source of 40% of her revenue",
+    "Hafsteinn is hired to investigate a data breach at Axiom, but the trail leads to Director Kaito himself — her biggest client and the source of 40% of her revenue",
     "Someone is feeding information about her ongoing investigations to the subjects she's investigating, and the leak is inside her own firm",
     "A the Gray Zone-level PI contacts her with evidence of a corporate crime so large it could destabilize GLMZ's economy — but the evidence was obtained illegally and she has to decide whether her ethics or her effectiveness takes priority"
   ],

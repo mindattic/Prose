@@ -2,10 +2,7 @@
   "id": "019d6143a5d67d48b37d26a06d556da1",
   "type": "character",
   "name": "Ewout Faalele",
-  "aliases": [
-    "Sage Faalele",
-    "Sage"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 38,
   "status": "active",
   "location": "Burnside Corridor — transit hub connecting the Gray Zone to Circuit, near North Ave and Damen",
-  "description": "Sage Faalele is slight and easy to overlook, which is exactly the point. At 38, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a tech retriever out of Burnside Corridor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nSage Faalele has built a reputation on reliability rather than flash — he shows up, he delivers, he collects.",
+  "description": "Ewout Faalele is slight and easy to overlook, which is exactly the point. At 38, his expression defaults to a careful neutrality that took years of practice to maintain. The chrome is visible — internal air filtration system — lungs replaced with synthetic equivalents, immu — and he makes no effort to hide it.\n\nMilitary training — one of the private security corps that folded during the consolidation wars — left him with skills and night terrors in equal measure. He works as a tech retriever out of Burnside Corridor, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nEwout Faalele has built a reputation on reliability rather than flash — he shows up, he delivers, he collects.",
   "psychology": {
     "facet_weights": {
       "wound": 0.23,
@@ -309,7 +306,7 @@
     "posture_movement": "Sits and stands with economical stillness — no fidgeting, no wasted motion. Moves through space like he's mapping exits. When walking, his gait is even and measured, shoulders loose but controlled. His hands rest naturally, fingers slightly curved — ready position. Eye contact is deliberate and unsettling; he holds it a beat too long, processing information. When speaking, his voice remains level; he doesn't use hand gestures.",
     "clothing_style": "Tier 4 functional — dark synthetic jacket with reinforced seams, black smart-fabric cargo pants with hidden pockets, neutral gray thermal under-layer. Boots are practical work boots, well-maintained, with subtle grip-enhanced soles. No logos or branding that declares affiliation. Everything is durable, replaceable, and dark. In his cover identity, he wears slightly less careful versions of the same aesthetic — still dark, still functional, but with a layer of deliberate mundanity. No jewelry. A faded GLMZ transit pass visible on a lanyard inside his collar."
   },
-  "image_prompt": "Sage Faalele, GLMZ, Pacific Islander-dominant mixed heritage with warm golden-bronze skin and subtle olive undertones, broad defined cheekbones, dark brown eyes with amber flecks, dark graying temples, short swept-back hair. Lean 172cm frame, economical posture. Faint surgical scar on left neck, white scar temple-to-cheekbone, military burn scars on right wrist. Chrome subdermal weapon grid patterns across both forearms, brushed metallic finish. Faint chrome mesh air filtration system visible along neck. Clinical augmentations, no flashy chrome. Wearing dark synthetic reinforced jacket, black smart-fabric cargo pants, gray thermal underlayer, practical work boots. Standing with perfect stillness, economical posture, hands in ready position, flat affect, dangerous neutrality. GLMZ transit pass lanyard visible. Moody industrial neo-noir setting, neon glow from distance, cool shadows, utilitarian warehouse backdrop, deliberate and composed. Photography style, high contrast lighting, clinical precision --ar 2:3 --v 6",
+  "image_prompt": "Ewout Faalele, GLMZ, Pacific Islander-dominant mixed heritage with warm golden-bronze skin and subtle olive undertones, broad defined cheekbones, dark brown eyes with amber flecks, dark graying temples, short swept-back hair. Lean 172cm frame, economical posture. Faint surgical scar on left neck, white scar temple-to-cheekbone, military burn scars on right wrist. Chrome subdermal weapon grid patterns across both forearms, brushed metallic finish. Faint chrome mesh air filtration system visible along neck. Clinical augmentations, no flashy chrome. Wearing dark synthetic reinforced jacket, black smart-fabric cargo pants, gray thermal underlayer, practical work boots. Standing with perfect stillness, economical posture, hands in ready position, flat affect, dangerous neutrality. GLMZ transit pass lanyard visible. Moody industrial neo-noir setting, neon glow from distance, cool shadows, utilitarian warehouse backdrop, deliberate and composed. Photography style, high contrast lighting, clinical precision --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Pacific Islander": 45.3,
     "Indigenous American": 23.3,

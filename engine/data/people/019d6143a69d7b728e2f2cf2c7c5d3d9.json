@@ -2,10 +2,7 @@
   "id": "019d6143a69d7b728e2f2cf2c7c5d3d9",
   "type": "character",
   "name": "Aolani Tlemcani-Holm",
-  "aliases": [
-    "Reed Tlemcani-Holm",
-    "Reed"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 44,
   "status": "active",
   "location": "Fort Anchor, administrative wing, Precinct Seven sub-office, near Halsted and Chicago Ave",
-  "description": "Reed Tlemcani-Holm is a lean woman with deep ochre skin, close-cropped natural hair going silver at the temples, and eyes fitted with patterned irises — concentric hexagons in grey and amber, a cosmetic mod she got after her divorce and has never explained to anyone. She dresses in plain charcoal suits that hang precisely, never wrinkled, and moves through rooms the way water moves through pipe: economical, purposeful, without waste. Her face is a professional neutral that colleagues have learned to read like weather — when her jaw tightens slightly on the left side, someone in the room is about to have a very bad week.\n\nShe has been investigating police corruption for eleven years and it has made her a figure of genuine dread inside Fort Anchor. She is not cruel, not performatively righteous — she is simply relentless. She keeps a small data shrine to the E.L.F. called the Unblinking Witness in her desk drawer, leaving it precise timestamps of cases opened and closed. She genuinely believes the institution can be cleaned, and that belief — which many consider delusional — is the only thing that has kept her from going private.",
+  "description": "Aolani Tlemcani-Holm is a lean woman with deep ochre skin, close-cropped natural hair going silver at the temples, and eyes fitted with patterned irises — concentric hexagons in grey and amber, a cosmetic mod she got after her divorce and has never explained to anyone. She dresses in plain charcoal suits that hang precisely, never wrinkled, and moves through rooms the way water moves through pipe: economical, purposeful, without waste. Her face is a professional neutral that colleagues have learned to read like weather — when her jaw tightens slightly on the left side, someone in the room is about to have a very bad week.\n\nShe has been investigating police corruption for eleven years and it has made her a figure of genuine dread inside Fort Anchor. She is not cruel, not performatively righteous — she is simply relentless. She keeps a small data shrine to the E.L.F. called the Unblinking Witness in her desk drawer, leaving it precise timestamps of cases opened and closed. She genuinely believes the institution can be cleaned, and that belief — which many consider delusional — is the only thing that has kept her from going private.",
   "psychology": {
     "facet_weights": {
       "wound": 0.7,
@@ -236,7 +233,7 @@
     "posture_movement": "Moves with economic precision, no wasted gesture. Walks through rooms as though following invisible lines. Sits perfectly upright, hands often folded or positioned for note-taking. Does not fidget. Breathing is controlled and measured. When listening, her stillness becomes almost unsettling — she appears to be downloading rather than conversing.",
     "clothing_style": "Plain charcoal suits in expensive, understated fabrics that hang with precision. Never wrinkled, suggesting either obsessive maintenance or regular dry-cleaning access. White or pale grey undershirts, minimal jewelry (small stainless steel watch, no rings). Closed-toe boots in matte black leather, polished. Overall presentation: Tier 1-2 professional restraint, deliberately stripped of personality. No corpo logos or status symbols. Clothing is armor presented as uniform."
   },
-  "image_prompt": "Reed Tlemcani-Holm, 172cm lean professional woman with warm medium-deep brown skin with golden and olive undertones, angular cheekbones and jawline reflecting East Asian and Middle Eastern heritage, short dark brown hair with silver at temples, striking geometric hexagon iris augmentations in grey and amber that glow unnaturally. Faint scar on right jawline, subdermal data node ridge visible on left forearm. Dressed in immaculate charcoal suit, white undershirt, matte black polished boots. Perfectly upright posture, controlled stillness, hands folded. GLMZ GLMZ setting, cool corporate lighting with neon underglow, background suggests high-tier office or secure facility, her expression neutral and downloadlike, geometric architectural elements. Professional restraint, no wasted movement, armor-like presentation, 2200s aesthetic. --ar 2:3 --v 6",
+  "image_prompt": "Aolani Tlemcani-Holm, 172cm lean professional woman with warm medium-deep brown skin with golden and olive undertones, angular cheekbones and jawline reflecting East Asian and Middle Eastern heritage, short dark brown hair with silver at temples, striking geometric hexagon iris augmentations in grey and amber that glow unnaturally. Faint scar on right jawline, subdermal data node ridge visible on left forearm. Dressed in immaculate charcoal suit, white undershirt, matte black polished boots. Perfectly upright posture, controlled stillness, hands folded. GLMZ GLMZ setting, cool corporate lighting with neon underglow, background suggests high-tier office or secure facility, her expression neutral and downloadlike, geometric architectural elements. Professional restraint, no wasted movement, armor-like presentation, 2200s aesthetic. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Middle Eastern": 32.1,
     "East Asian": 25.5,

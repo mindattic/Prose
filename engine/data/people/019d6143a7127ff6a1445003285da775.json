@@ -2,10 +2,7 @@
   "id": "019d6143a7127ff6a1445003285da775",
   "type": "character",
   "name": "Henrieta Fredriksen",
-  "aliases": [
-    "Britt Fredriksen",
-    "Britt"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 52,
   "status": "active",
   "location": "Lakeview Neon, near Damen and Armitage",
-  "description": "Britt Fredriksen is a broad-shouldered woman with hands permanently stained violet from decades of working with reactive phosphor compounds. Her skin has been lightly treated with bioluminescent dermal patches — subtle, cream-colored glows along her collarbone and forearms that she uses as a living proof-of-concept for clients. Her hair is cropped close on the sides, left long and white on top, the natural silver of age she refuses to alter. Her face is deeply lined around the eyes from squinting at hot glass tubes, and she wears thick-framed optical enhancers on a beaded cord around her neck.\n\nShe is unhurried and slightly theatrical in conversation, with a habit of holding her hands up near her face to demonstrate scale when describing her work. She's not warm exactly — more like a fire that's comfortable to sit near once you learn the distance. She has opinions about everything and shares them without apology, but listens with genuine interest when someone surprises her. Her installations are known for depicting the ELFs of Lakeview in enormous luminous murals — branching signal-forms and recursive spirals that locals believe please the local grid-spirits.",
+  "description": "Henrieta Fredriksen is a broad-shouldered woman with hands permanently stained violet from decades of working with reactive phosphor compounds. Her skin has been lightly treated with bioluminescent dermal patches — subtle, cream-colored glows along her collarbone and forearms that she uses as a living proof-of-concept for clients. Her hair is cropped close on the sides, left long and white on top, the natural silver of age she refuses to alter. Her face is deeply lined around the eyes from squinting at hot glass tubes, and she wears thick-framed optical enhancers on a beaded cord around her neck.\n\nShe is unhurried and slightly theatrical in conversation, with a habit of holding her hands up near her face to demonstrate scale when describing her work. She's not warm exactly — more like a fire that's comfortable to sit near once you learn the distance. She has opinions about everything and shares them without apology, but listens with genuine interest when someone surprises her. Her installations are known for depicting the ELFs of Lakeview in enormous luminous murals — branching signal-forms and recursive spirals that locals believe please the local grid-spirits.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -197,7 +194,7 @@
     "posture_movement": "Unhurried and deliberate. She moves with the confidence of someone who knows the exact reach of her body in space. Habit of holding her hands up near her face when speaking, fingers gesturing to demonstrate scale and dimension. When working, she hunches slightly forward, shoulders relaxed, entering a focused state. Standing still, she often rests weight on one leg, hip cocked slightly.",
     "clothing_style": "Functional Tier 3-4 workwear with artistic flourish. Heavy canvas work apron (often stained with phosphor compounds and soot) over sturdy linen or cotton shirts in muted earth tones. Wide-legged trousers in charcoal or dark indigo, reinforced at knees and hems. Worn leather boots with good grip for warehouse flooring. She favors natural fibers and practical layers. Occasionally wears a vintage denim jacket with hand-stitched patches commemorating major installations. No corporate branding, but well-maintained — the aesthetic of someone who respects her tools and workspace."
   },
-  "image_prompt": "Britt Fredriksen, 172cm tall, Scandinavian-Eastern European features with fair skin and subtle olive undertones, silver-white hair cropped at sides with long swept-back top, light gray-blue eyes. Deep forehead wrinkles, weathered complexion, bioluminescent cream-white patches glowing faintly along collarbones and inner forearms in branching neon patterns. Silvered burn scar on right hand, callused palms with faint violet phosphor staining. Wearing heavy canvas work apron stained with phosphor compounds over muted earth-tone linen shirt, dark charcoal trousers, worn leather work boots. Vintage beaded cord with optical enhancers around neck. Hunched forward posture, deliberate movement, hands raised near face. Industrial glass furnace workshop setting, warm amber and neon lighting, GLMZ, moody dusk atmosphere, functional artist, dense musculature, sturdy broad-shouldered frame --ar 2:3 --v 6",
+  "image_prompt": "Henrieta Fredriksen, 172cm tall, Scandinavian-Eastern European features with fair skin and subtle olive undertones, silver-white hair cropped at sides with long swept-back top, light gray-blue eyes. Deep forehead wrinkles, weathered complexion, bioluminescent cream-white patches glowing faintly along collarbones and inner forearms in branching neon patterns. Silvered burn scar on right hand, callused palms with faint violet phosphor staining. Wearing heavy canvas work apron stained with phosphor compounds over muted earth-tone linen shirt, dark charcoal trousers, worn leather work boots. Vintage beaded cord with optical enhancers around neck. Hunched forward posture, deliberate movement, hands raised near face. Industrial glass furnace workshop setting, warm amber and neon lighting, GLMZ, moody dusk atmosphere, functional artist, dense musculature, sturdy broad-shouldered frame --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Northern European": 58.2,
     "Eastern European": 35.7,

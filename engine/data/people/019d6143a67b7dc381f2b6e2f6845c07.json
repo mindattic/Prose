@@ -2,10 +2,7 @@
   "id": "019d6143a67b7dc381f2b6e2f6845c07",
   "type": "character",
   "name": "Ellinor Park-Banerjee",
-  "aliases": [
-    "Briar Park-Banerjee",
-    "Briar"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "female",
   "pronouns": "she/her",
@@ -13,7 +10,7 @@
   "age": 11,
   "status": "active",
   "location": "The Narrows, Blackpipe Corridor, near Fullerton and Damen",
-  "description": "Briar Park-Banerjee is a small, wiry girl with deep brown skin dusted in a faint bioluminescent sheen inherited from her Faleolo grandmother's cosmetic geneware — it glows a soft sea-green under stress or excitement, which she hates because it gives her away at the worst moments. She keeps her hair in tight twists pinned with salvaged circuit-board clips, and her fingers are perpetually stained with marker ink from the hand-drawn maps she sells to other runners. Her eyes are large and watchful, taking in every detail of a corridor before her feet follow.\n\nShe is relentlessly cheerful in a way that is clearly armor — she laughs at danger and talks too fast when she's scared. She has memorized the pipe-routes and maintenance shafts of Blackpipe Corridor better than any adult who works there, and she treats this knowledge like a personal treasury. She is fiercely protective of two younger kids she considers her responsibility and deeply suspicious of anyone who is too kind too quickly.",
+  "description": "Ellinor Park-Banerjee is a small, wiry girl with deep brown skin dusted in a faint bioluminescent sheen inherited from her Faleolo grandmother's cosmetic geneware — it glows a soft sea-green under stress or excitement, which she hates because it gives her away at the worst moments. She keeps her hair in tight twists pinned with salvaged circuit-board clips, and her fingers are perpetually stained with marker ink from the hand-drawn maps she sells to other runners. Her eyes are large and watchful, taking in every detail of a corridor before her feet follow.\n\nShe is relentlessly cheerful in a way that is clearly armor — she laughs at danger and talks too fast when she's scared. She has memorized the pipe-routes and maintenance shafts of Blackpipe Corridor better than any adult who works there, and she treats this knowledge like a personal treasury. She is fiercely protective of two younger kids she considers her responsibility and deeply suspicious of anyone who is too kind too quickly.",
   "psychology": {
     "facet_weights": {
       "wound": 0.6,
@@ -197,7 +194,7 @@
     "posture_movement": "Constantly in motion even when still — fidgeting, re-pinning hair clips, tapping fingers. Moves through space with practiced efficiency, favoring low, quick routes. Shoulders slightly hunched as if perpetually ready to duck. Eyes never stay fixed; they scan entry points, shadows, potential exits.",
     "clothing_style": "Tier 4 utilitarian with scavenged upgrades: oversized grey thermal-lined hoodie (salvaged corpo-grade, one size too big to hide her frame and provide range of motion), black cargo pants with at least eight functional pockets (filled with markers, map scraps, lockpicks, salvage bits), mismatched compression socks in faded neon colors. Worn synthetic boots with reinforced toe-caps from repeated pipe climbing. A paracord belt looped with carabiners and a dead smartwatch she keeps as a lucky talisman. No brands visible — everything is utility or salvage."
   },
-  "image_prompt": "Briar Park-Banerjee, 142cm tall lean wiry figure, deep mahogany brown skin with golden undertones, faint sea-green bioluminescent sheen across collarbone and shoulders, natural black hair with reddish tones in tight braided twists pinned with glowing circuit-board clips, deep brown alert eyes with thin pale scar through left eyebrow, perpetual smudges of blue and black marker ink on fingers and cheekbones, hunched posture ready to duck, constantly fidgeting. Wearing oversized grey thermal-lined hoodie, black cargo pants with eight pockets, mismatched neon compression socks, reinforced synthetic boots, paracord belt with carabiners and dead smartwatch talisman. GLMZ Great Lakes Metropolitan Zone, scanner-heavy moody lighting casting shadows across maintenance shaft or rooftop setting, low angle emphasizing compact efficiency, nervous energy visible in micro-expressions and hand movement, utilitarian scavenger aesthetic --ar 2:3 --v 6",
+  "image_prompt": "Ellinor Park-Banerjee, 142cm tall lean wiry figure, deep mahogany brown skin with golden undertones, faint sea-green bioluminescent sheen across collarbone and shoulders, natural black hair with reddish tones in tight braided twists pinned with glowing circuit-board clips, deep brown alert eyes with thin pale scar through left eyebrow, perpetual smudges of blue and black marker ink on fingers and cheekbones, hunched posture ready to duck, constantly fidgeting. Wearing oversized grey thermal-lined hoodie, black cargo pants with eight pockets, mismatched neon compression socks, reinforced synthetic boots, paracord belt with carabiners and dead smartwatch talisman. GLMZ Great Lakes Metropolitan Zone, scanner-heavy moody lighting casting shadows across maintenance shaft or rooftop setting, low angle emphasizing compact efficiency, nervous energy visible in micro-expressions and hand movement, utilitarian scavenger aesthetic --ar 2:3 --v 6",
   "genetic_ancestry": {
     "South Asian": 44.7,
     "East Asian": 43.9,

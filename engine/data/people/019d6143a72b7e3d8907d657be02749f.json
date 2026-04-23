@@ -2,10 +2,7 @@
   "id": "019d6143a72b7e3d8907d657be02749f",
   "type": "character",
   "name": "Amobi Árnason",
-  "aliases": [
-    "Zephyr Árnason",
-    "Zephyr"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 62,
   "status": "active",
   "location": "Brightmoor Reclamation — the cooperative is in a converted two-story auto-shop called The Mending Ground, near Ashland and Chicago Ave",
-  "description": "Zephyr Árnason is tall and angular in the way of men who were once broader and have shed weight across decades of physical work. His Ethiopian-Samoan heritage gives him a face that reads as ageless to people who do not look carefully — the lines around his eyes are deep but his posture is impeccable, a side effect of forty years of correcting other people's. His hair is white and he keeps it in tight locks, usually pinned back. His left arm from the elbow down is a prosthetic — a practical, unglamorous Ferrogate Transit worker's model he has refused to upgrade because, he says, it does exactly what he needs and he is not performing affluence.\n\nHe founded The Mending Ground cooperative twenty years ago after a Ferrogate Transit industrial accident took his forearm and the company's rehabilitation program discharged him after six weeks with paperwork he did not have the corporate literacy to challenge. He taught himself physiotherapy from archived textbooks and eventually brought in two trained practitioners. He is gruff in the way of people who have been in pain and do not find sentiment useful, but he remembers every patient's name and the specific injury that brought them to him, and he asks after their families.",
+  "description": "Amobi Árnason is tall and angular in the way of men who were once broader and have shed weight across decades of physical work. His Ethiopian-Samoan heritage gives him a face that reads as ageless to people who do not look carefully — the lines around his eyes are deep but his posture is impeccable, a side effect of forty years of correcting other people's. His hair is white and he keeps it in tight locks, usually pinned back. His left arm from the elbow down is a prosthetic — a practical, unglamorous Ferrogate Transit worker's model he has refused to upgrade because, he says, it does exactly what he needs and he is not performing affluence.\n\nHe founded The Mending Ground cooperative twenty years ago after a Ferrogate Transit industrial accident took his forearm and the company's rehabilitation program discharged him after six weeks with paperwork he did not have the corporate literacy to challenge. He taught himself physiotherapy from archived textbooks and eventually brought in two trained practitioners. He is gruff in the way of people who have been in pain and do not find sentiment useful, but he remembers every patient's name and the specific injury that brought them to him, and he asks after their families.",
   "psychology": {
     "facet_weights": {
       "wound": 0.8,
@@ -246,7 +243,7 @@
     "posture_movement": "Impeccable posture — shoulders squared, spine neutral, a side effect of four decades of correcting other people's alignment. Moves with economic precision, no wasted motion. When standing still, his weight is balanced between both feet despite the prosthetic's motor lag. His gaze is direct and evaluative. When working with patients, his body language shifts to attentive stillness.",
     "clothing_style": "Tier 3 practical laborer aesthetic. Unbranded charcoal work shirt or grey long-sleeved thermal, usually with a reinforced canvas apron worn at The Mending Ground. Dark cargo pants with multiple pockets (tools, patient records, comm device). Black utility boots, well-maintained but not new. A worn fleece jacket in winter, sometimes a Brightmoor Reclamation cooperative pin on the collar. No jewelry except a simple watch on his right wrist. His clothing shows maintenance and care rather than affluence — visible mending on seams, faded from repeated washing, but clean."
   },
-  "image_prompt": "GLMZ portrait of Zephyr Árnason, 62-year-old trauma physician with Pan-Asian features and warm medium tan complexion. East Asian cheekbones and eye structure prominent beneath golden undertones. Short white locks pinned back, deep brown eyes, weathered face with laugh lines and sparse white facial hair. Tall angular frame (188cm), impeccable posture. Left arm is industrial-grade prosthetic from elbow down—matte grey-black anodized aluminum with segmented fingers and visible mechanical joints, twenty years old. Wearing charcoal work shirt, reinforced canvas apron, dark cargo pants, black utility boots. Faint scars visible on right jawline and left forearm. Direct evaluative gaze. Standing in workshop-clinic setting with warm overhead lighting casting soft shadows across his face. Professional, focused demeanor. Neo-noir clinical environment. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ portrait of Amobi Árnason, 62-year-old trauma physician with Pan-Asian features and warm medium tan complexion. East Asian cheekbones and eye structure prominent beneath golden undertones. Short white locks pinned back, deep brown eyes, weathered face with laugh lines and sparse white facial hair. Tall angular frame (188cm), impeccable posture. Left arm is industrial-grade prosthetic from elbow down—matte grey-black anodized aluminum with segmented fingers and visible mechanical joints, twenty years old. Wearing charcoal work shirt, reinforced canvas apron, dark cargo pants, black utility boots. Faint scars visible on right jawline and left forearm. Direct evaluative gaze. Standing in workshop-clinic setting with warm overhead lighting casting soft shadows across his face. Professional, focused demeanor. Neo-noir clinical environment. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "East Asian": 33.5,
     "Southeast Asian": 27.4,

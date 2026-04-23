@@ -2,10 +2,7 @@
   "id": "019d6143a670725fad842cf61963bf04",
   "type": "character",
   "name": "Akachi Subramaniam",
-  "aliases": [
-    "Vega Subramaniam",
-    "Vega"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 45,
   "status": "active",
   "location": "The Narrows — cramped residential corridors between megastructures, near Fullerton and Damen",
-  "description": "Vega Subramaniam is average height but with a presence that fills more space than the body accounts for. At 45, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a breacher out of The Narrows, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Vega Subramaniam describe him as a precision instrument — point him at a problem and get out of the way.",
+  "description": "Akachi Subramaniam is average height but with a presence that fills more space than the body accounts for. At 45, scars map his face like a transit diagram of bad decisions and worse luck. The chrome is visible — gecko-grip fingertip implants and toe pads — can climb smooth surfaces — and he makes no effort to hide it.\n\nHe grew up in the Narrows, where the walls are so close together you learn to fight in confined spaces or you learn to lose. He works as a breacher out of The Narrows, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nThe fixers who work with Akachi Subramaniam describe him as a precision instrument — point him at a problem and get out of the way.",
   "psychology": {
     "facet_weights": {
       "wound": 0.33,
@@ -303,7 +300,7 @@
     "posture_movement": "Compact and economical. Doesn't waste motion — shoulders stay slightly forward, weight balanced on the balls of his feet even when stationary. Eyes track movement in his peripheral constantly, a habit from tight-quarters work. When he moves through doorways or narrow spaces, he moves sideways or at angles, a learned efficiency. In conversation, he is still — minimal hand movement, minimal facial expression, all attention concentrated. The bioware adrenaline regulator shows as an absence of fidgeting, a deliberate calmness that reads as practiced rather than natural.",
     "clothing_style": "Tier 4 working-class pragmatism with Tier 3 aspiration. Black matte combat pants with reinforced thigh pockets and drop-leg rig points — worn but maintained. Fitted tactical shirt in dark gray or charcoal, usually long-sleeve despite warmth to conceal the forearm augmentation and scars. Unbuttoned overshirt in black Cordura-composite, sleeveless or removable, branded with faint wear patterns where gear harnesses have rubbed. Ankle boots with reinforced toecaps — practical climbing footwear. No visible corporate branding. Minimal jewelry except a worn steel cuff on his left wrist, dented but functional. Carries himself like the gear is not a costume but an extension of his body."
   },
-  "image_prompt": "Vega Subramaniam, GLMZ, portrait of a mixed-heritage operative with warm deep brown skin and golden undertones. South Asian and East Asian cheekbone structure balanced with African jaw prominence, creating striking angular features. Slightly hooded eyes with amber-brown depth, day-old stubble across strong jaw. Diagonal scar across left cheekbone, thin blade scar from eye toward jaw. Short dark brown hair with silver temples. Chrome titanium fingertip implants visible on both hands showing wear from climbing work. Wearing dark charcoal tactical long-sleeve shirt under sleeveless black Cordura overshirt, black reinforced combat pants. Worn steel cuff on left wrist. Posture compact and economical, shoulders slightly forward, alert and controlled. Nocturnal lighting casting sharp shadows across scarred, determined features. Urban rooftop or narrow corridor setting, Great Lakes Metropolitan Zone night aesthetic. Tense, professional, lethal efficiency. --ar 2:3 --v 6",
+  "image_prompt": "Akachi Subramaniam, GLMZ, portrait of a mixed-heritage operative with warm deep brown skin and golden undertones. South Asian and East Asian cheekbone structure balanced with African jaw prominence, creating striking angular features. Slightly hooded eyes with amber-brown depth, day-old stubble across strong jaw. Diagonal scar across left cheekbone, thin blade scar from eye toward jaw. Short dark brown hair with silver temples. Chrome titanium fingertip implants visible on both hands showing wear from climbing work. Wearing dark charcoal tactical long-sleeve shirt under sleeveless black Cordura overshirt, black reinforced combat pants. Worn steel cuff on left wrist. Posture compact and economical, shoulders slightly forward, alert and controlled. Nocturnal lighting casting sharp shadows across scarred, determined features. Urban rooftop or narrow corridor setting, Great Lakes Metropolitan Zone night aesthetic. Tense, professional, lethal efficiency. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "East Asian": 21.9,
     "Hispanic/Latin American": 21.7,

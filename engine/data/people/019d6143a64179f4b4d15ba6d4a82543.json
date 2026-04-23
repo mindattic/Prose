@@ -2,10 +2,7 @@
   "id": "019d6143a64179f4b4d15ba6d4a82543",
   "type": "character",
   "name": "Gerhild Montalvo-Tlaloc",
-  "aliases": [
-    "Atlas Montalvo-Tlaloc",
-    "Atlas"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 41,
   "status": "active",
   "location": "Geartown — industrial district of chop shops and fabricators, near Damen and Armitage",
-  "description": "Atlas Montalvo-Tlaloc is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 41, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Atlas Montalvo-Tlaloc plans to keep it that way. He works as a cleaner out of Geartown, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nAtlas Montalvo-Tlaloc has built a reputation on reliability rather than flash — he shows up, he delivers, he collects.",
+  "description": "Gerhild Montalvo-Tlaloc is athletic and fluid, the kind of body that suggests either dancer or fighter — and in GLMZ, the distinction is academic. At 41, his face carries the layered heritage of generations of diaspora mixing — features that resist easy categorization and reward attention. The chrome is visible — cybernetic eyes with thermal overlay and low-light enhancement — chrome iris rin — and he makes no effort to hide it.\n\nHe used to be somebody else, in another city, with another name — that person is officially dead, and Gerhild Montalvo-Tlaloc plans to keep it that way. He works as a cleaner out of Geartown, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nGerhild Montalvo-Tlaloc has built a reputation on reliability rather than flash — he shows up, he delivers, he collects.",
   "psychology": {
     "facet_weights": {
       "wound": 0.99,
@@ -278,7 +275,7 @@
     "Diaspora Table",
     "Geartown",
     "Stratum",
-    "Atlas",
+    "Gerhild",
     "Slagworks Industrial",
     "Pellucid Systems",
     "GLMZ"
@@ -304,7 +301,7 @@
     "posture_movement": "Moves with controlled economy — no wasted motion. Appears to be scanning environments constantly, head movements precise. Stands with weight slightly forward, ready to shift direction. Handshakes are firm but measured. Speech patterns are clipped, direct — minimal affect. Resting state is alert.",
     "clothing_style": "Tier 3-4 functional wear — fitted dark synthweave cargo pants with subtle reinforced seams, technical-grade footwear (non-branded, maintenance-focused). Layered tops allow thermal regulation and concealment — typically dark colors. Minimal branding. Everything is chosen for mobility and durability over fashion. A lightweight jacket with multiple sealed pockets is standard. No jewelry. No personal flair."
   },
-  "image_prompt": "Atlas Montalvo-Tlaloc, GLMZ, Great Lakes Metropolitan Zone. Athletic 178cm frame with warm golden-bronze skin bearing subtle industrial scars. Sharp Indigenous American cheekbones and broad Pacific Islander jaw structure; dark eyes with visible chrome cybernetic iris rings catching neon light. Black hair with silver threading at temples, close-cropped and precise. Clean-shaven. Dressed in dark technical synthweave cargo pants and layered dark tops with sealed pockets, lightweight tactical jacket. Posture alert and economical, weight forward. Standing in rain-slicked industrial zone with holographic signage reflecting off wet pavement. Cool blue and amber neon lighting. Neo-noir urban aesthetic, high-contrast shadows, moody atmospheric fog. Thermal imaging data visible as digital artifacts around shoulders. Expression neutral, observant. --ar 2:3 --v 6",
+  "image_prompt": "Gerhild Montalvo-Tlaloc, GLMZ, Great Lakes Metropolitan Zone. Athletic 178cm frame with warm golden-bronze skin bearing subtle industrial scars. Sharp Indigenous American cheekbones and broad Pacific Islander jaw structure; dark eyes with visible chrome cybernetic iris rings catching neon light. Black hair with silver threading at temples, close-cropped and precise. Clean-shaven. Dressed in dark technical synthweave cargo pants and layered dark tops with sealed pockets, lightweight tactical jacket. Posture alert and economical, weight forward. Standing in rain-slicked industrial zone with holographic signage reflecting off wet pavement. Cool blue and amber neon lighting. Neo-noir urban aesthetic, high-contrast shadows, moody atmospheric fog. Thermal imaging data visible as digital artifacts around shoulders. Expression neutral, observant. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Hispanic/Latin American": 46.5,
     "Indigenous American": 13,

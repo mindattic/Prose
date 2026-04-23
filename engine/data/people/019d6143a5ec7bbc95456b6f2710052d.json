@@ -2,10 +2,7 @@
   "id": "019d6143a5ec7bbc95456b6f2710052d",
   "type": "character",
   "name": "Bilal Duong",
-  "aliases": [
-    "Kira Duong",
-    "Kira"
-  ],
+  "aliases": [],
   "species": "human",
   "gender": "male",
   "pronouns": "he/him",
@@ -13,7 +10,7 @@
   "age": 45,
   "status": "active",
   "location": "The Narrows — cramped residential corridors between megastructures, near Fullerton and Damen",
-  "description": "Kira Duong is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 45, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a extraction specialist out of The Narrows, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Kira Duong is one of the ones who actually does it.",
+  "description": "Bilal Duong is wiry and quick-moving, with the restless energy of someone who converts anxiety into velocity. At 45, his face is memorable in a profession that rewards forgettability, and he has learned to compensate. The chrome is visible — synthetic muscle fiber replacement in legs — doubles sprint speed, terrible on s — and he makes no effort to hide it.\n\nBefore the runner life, he worked corporate — low-tier security, the kind that teaches you exactly how the system's defenses fail. He works as a extraction specialist out of The Narrows, taking contracts that match his skills and his risk tolerance, which is higher than most people consider healthy.\n\nIn a city full of people who talk about what they'll do, Bilal Duong is one of the ones who actually does it.",
   "psychology": {
     "facet_weights": {
       "wound": 0.66,
@@ -303,7 +300,7 @@
     "posture_movement": "Perpetually coiled — standing weight forward on the balls of feet. Movement is economical and sudden; he does not amble. Hands rarely still, often checking cuffs, adjusting jacket, touching the chrome at his ears. Eyes constantly tracking exits, angles, sight lines. Conversation posture is slightly angled — cyberears allow him to monitor peripheral audio.",
     "clothing_style": "Tier 3-4 utilitarian — durable synthweave in dark colors (charcoal, black, deep navy). Multi-pocket cargo jacket worn open over fitted base layers. Reinforced knuckle gloves, often not removed indoors. Durable boots with high ankle support rated for urban infiltration. A single piece of visible hardware: brushed steel chain on left wrist, practical rather than decorative. Everything functional, nothing that announces itself. No corporate logos or runner affectations — he dresses like someone whose appearance should be forgotten in two minutes."
   },
-  "image_prompt": "GLMZ portrait of Kira Duong, Southeast Asian-East Asian blend with olive skin and golden undertones, dark brown hair with silver at temples, sharp angular cheekbones, alert dark eyes weathered from focus work. 178cm tall, lean wiry build. Wearing dark charcoal synthweave cargo jacket over fitted base layer, reinforced knuckle gloves, high-ankle urban boots. Chrome bezels visible at ears from cyberear housing, matte gunmetal synthetic muscle fiber visible on calves below the knee. Brushed steel chain on left wrist. Five o'clock shadow, perpetually coiled posture with weight forward. Standing in dimly-lit industrial setting, neon accent lighting casting shadows across defined features, slightly angled conversation posture, eyes tracking exits. Atmospheric megacity environment, moody tungsten and cool blue lighting, forgotten-in-two-minutes aesthetic, functional and lethal. --ar 2:3 --v 6",
+  "image_prompt": "GLMZ portrait of Bilal Duong, Southeast Asian-East Asian blend with olive skin and golden undertones, dark brown hair with silver at temples, sharp angular cheekbones, alert dark eyes weathered from focus work. 178cm tall, lean wiry build. Wearing dark charcoal synthweave cargo jacket over fitted base layer, reinforced knuckle gloves, high-ankle urban boots. Chrome bezels visible at ears from cyberear housing, matte gunmetal synthetic muscle fiber visible on calves below the knee. Brushed steel chain on left wrist. Five o'clock shadow, perpetually coiled posture with weight forward. Standing in dimly-lit industrial setting, neon accent lighting casting shadows across defined features, slightly angled conversation posture, eyes tracking exits. Atmospheric megacity environment, moody tungsten and cool blue lighting, forgotten-in-two-minutes aesthetic, functional and lethal. --ar 2:3 --v 6",
   "genetic_ancestry": {
     "Southeast Asian": 67,
     "East Asian": 30.6,
