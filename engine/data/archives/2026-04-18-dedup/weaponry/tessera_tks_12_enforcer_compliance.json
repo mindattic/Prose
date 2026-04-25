@@ -14,7 +14,7 @@
     "Less-lethal/lethal selector",
     "Discharge telemetry"
   ],
-  "specifications": "caliber: 12 gauge\neffective_range: 35 meters (lethal), 20 meters (less-lethal)\nrate_of_fire: Semi-automatic\nmagazine_capacity: 4+4 rounds (dual tube)\nweight: 4.2 kg",
+  "specifications": "caliber: 12 gauge effective_range: 35 meters (lethal), 20 meters (less-lethal) rate_of_fire: Semi-automatic magazine_capacity: 4+4 rounds (dual tube) weight: 4.2 kg",
   "tactical_use": "A force-escalation shotgun providing instant switching between lethal and less-lethal ammunition. The dual-tube system maintains loaded capability with both ammunition types simultaneously. The biometric lock and telemetry system provide accountability and prevent unauthorized use. Best deployed in scenarios requiring graduated force response — crowd control that might escalate, facility defense with mixed threat levels.",
   "cultural_context": "The Compliance is the most hated weapon in Tessera's arsenal among the populations it's used against. The less-lethal rounds are painful, the lethal rounds are final, and the operator's ability to switch between them with a thumb movement feels arbitrary to the person on the receiving end. The weapon's telemetry-driven accountability means nothing to someone being shot with a bean bag.",
   "known_users": [

@@ -202,6 +202,7 @@ public class SettingsService : IDisposable
     public string FontFamily { get => data.FontFamily; set { data.FontFamily = value; ScheduleSave(); } }
     public bool RepoListOnRight { get => data.RepoListOnRight; set { data.RepoListOnRight = value; ScheduleSave(); } }
     public bool EnablePlainTextNer { get => data.EnablePlainTextNer; set { data.EnablePlainTextNer = value; ScheduleSave(); } }
+    public bool SaveStoriesAsMarkdown { get => data.SaveStoriesAsMarkdown; set { data.SaveStoriesAsMarkdown = value; ScheduleSave(); } }
 
     // SMTP — outbound email for password reset codes
     public string SmtpHost { get => Env("SS_SMTP_HOST", data.SmtpHost); set { data.SmtpHost = value; ScheduleSave(); } }
@@ -399,6 +400,7 @@ public class SettingsService : IDisposable
         public string FontFamily { get; set; } = "Outfit";
         public bool RepoListOnRight { get; set; } = true;
         public bool EnablePlainTextNer { get; set; } = false;
+        public bool SaveStoriesAsMarkdown { get; set; } = true;
         public string SmtpHost { get; set; } = "";
         public int SmtpPort { get; set; } = 587;
         public string SmtpUsername { get; set; } = "";

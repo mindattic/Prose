@@ -5,18 +5,18 @@
   "type": "weapon",
   "aliases": [],
   "category": "cyber",
-  "description": "The Cochlear Resonant Hemorrhage Projector generates a tightly focused beam of modulated infrasonic and ultrasonic waveforms tuned to the resonant frequency of the cochlear microvascular bed. At operational intensity, the weapon induces rapid capillary rupture within the inner ear, flooding the cochlear duct with blood and destroying the hair cell architecture within seconds. The victim experiences a sensation described as a \u0027wet crunch\u0027 followed by total sensorineural deafness and catastrophic loss of vestibular function.\n\nWhat distinguishes the CRHP-2 from cruder acoustic weapons is its dual-band targeting algorithm, which first performs a half-second passive sonar sweep to map the target\u0027s skull geometry and canal orientation before locking the destructive waveform. This bone-conduction mapping bypasses conventional ear protection entirely \u2014 plugs, dampeners, and cybernetic audio filters are useless because the weapon couples directly through the temporal bone. Operators refer to this as \u0027going through the wall.\u0027\n\nThe projector\u0027s barrel houses a phased array of forty-eight piezoelectric ceramic emitters arranged in a parabolic configuration, allowing effective range out to roughly thirty meters before waveform coherence degrades. The weapon\u0027s most chilling feature is its near-silence during operation \u2014 the emitted frequencies are largely imperceptible to bystanders, meaning a target simply collapses without any obvious cause.",
+  "description": "The Cochlear Resonant Hemorrhage Projector generates a tightly focused beam of modulated infrasonic and ultrasonic waveforms tuned to the resonant frequency of the cochlear microvascular bed. At operational intensity, the weapon induces rapid capillary rupture within the inner ear, flooding the cochlear duct with blood and destroying the hair cell architecture within seconds. The victim experiences a sensation described as a 'wet crunch' followed by total sensorineural deafness and catastrophic loss of vestibular function.\n\nWhat distinguishes the CRHP-2 from cruder acoustic weapons is its dual-band targeting algorithm, which first performs a half-second passive sonar sweep to map the target's skull geometry and canal orientation before locking the destructive waveform. This bone-conduction mapping bypasses conventional ear protection entirely — plugs, dampeners, and cybernetic audio filters are useless because the weapon couples directly through the temporal bone. Operators refer to this as 'going through the wall.'\n\nThe projector's barrel houses a phased array of forty-eight piezoelectric ceramic emitters arranged in a parabolic configuration, allowing effective range out to roughly thirty meters before waveform coherence degrades. The weapon's most chilling feature is its near-silence during operation — the emitted frequencies are largely imperceptible to bystanders, meaning a target simply collapses without any obvious cause.",
   "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
-  "tier_availability": "Tier 4\u002B",
+  "tier_availability": "Tier 4+",
   "legality": "Prohibited",
   "base_technologies": [
     "Phased piezoelectric acoustic focusing",
     "Bone-conduction resonance mapping",
     "Cochlear microvascular targeting"
   ],
-  "specifications": "effective range: 4\u201330 meters\ntargeting sweep duration: 0.4 seconds\nemitter array: 48-element parabolic piezoelectric ceramic\nfrequency bands: 18\u201322 Hz (infrasonic) / 28\u201334 kHz (ultrasonic) dual-band\npower source: High-density capacitor cell, 14 discharges per charge\nweight: 3.1 kg\nform factor: Carbine-length, matte composite housing\nonboard processor: Skull geometry adaptive targeting unit (SGATU-3)",
-  "tactical_use": "Primarily used for silent incapacitation of high-value targets in enclosed environments where gunfire would compromise the operator. Favored in close-protection assassination contracts where the client requires deniability \u2014 a victim found collapsed with burst eardrums can be attributed to an aneurysm. Operators are trained to keep the sweep phase brief to avoid alerting cyber-augmented targets whose implants may detect the preliminary scan frequency.",
-  "cultural_context": "In GLMZ\u0027s underground enforcement circles, being \u0027earwormed\u0027 has become slang for a particularly clean, professional kill. Corporate fixers who carry the CRHP-2 are considered high-tier professionals \u2014 the weapon is expensive, finicky, and requires licensing through a shell company at minimum. Street-level gangers rarely possess them, which means their appearance in a crime scene signals corporate or state-level involvement. Victims who survive partial exposure and live with permanent deafness often become vocal activists in the city\u0027s growing anti-bioweapon movement.",
+  "specifications": "effective range: 4–30 meters targeting sweep duration: 0.4 seconds emitter array: 48-element parabolic piezoelectric ceramic frequency bands: 18–22 Hz (infrasonic) / 28–34 kHz (ultrasonic) dual-band power source: High-density capacitor cell, 14 discharges per charge weight: 3.1 kg form factor: Carbine-length, matte composite housing onboard processor: Skull geometry adaptive targeting unit (SGATU-3)",
+  "tactical_use": "Primarily used for silent incapacitation of high-value targets in enclosed environments where gunfire would compromise the operator. Favored in close-protection assassination contracts where the client requires deniability — a victim found collapsed with burst eardrums can be attributed to an aneurysm. Operators are trained to keep the sweep phase brief to avoid alerting cyber-augmented targets whose implants may detect the preliminary scan frequency.",
+  "cultural_context": "In GLMZ's underground enforcement circles, being 'earwormed' has become slang for a particularly clean, professional kill. Corporate fixers who carry the CRHP-2 are considered high-tier professionals — the weapon is expensive, finicky, and requires licensing through a shell company at minimum. Street-level gangers rarely possess them, which means their appearance in a crime scene signals corporate or state-level involvement. Victims who survive partial exposure and live with permanent deafness often become vocal activists in the city's growing anti-bioweapon movement.",
   "known_users": [
     "Corporate wetwork specialists",
     "ARCTURUS field contractors",
@@ -24,10 +24,10 @@
     "High-end private security leads"
   ],
   "story_hooks": [
-    "A series of seemingly natural deaths in the financial district all share the same inner ear pathology \u2014 someone is using a CRHP-2 to silence witnesses to a merger fraud.",
-    "A black market CRHP-2 unit surfaces with a modified sweep algorithm that targets cybernetic audio implants specifically, destroying expensive hearing augmentations rather than biological tissue \u2014 someone is sending a message to the augmented community.",
-    "An operator who survived a CRHP-2 attack with partial hearing retains a persistent tonal hallucination at exactly 19 Hz \u2014 a frequency that, when analyzed, encodes a data packet.",
-    "A CRHP-2 prototype with an extended range module of 80 meters is stolen from an ARCTURUS test facility, and the thief\u0027s last known location is a crowded transit hub."
+    "A series of seemingly natural deaths in the financial district all share the same inner ear pathology — someone is using a CRHP-2 to silence witnesses to a merger fraud.",
+    "A black market CRHP-2 unit surfaces with a modified sweep algorithm that targets cybernetic audio implants specifically, destroying expensive hearing augmentations rather than biological tissue — someone is sending a message to the augmented community.",
+    "An operator who survived a CRHP-2 attack with partial hearing retains a persistent tonal hallucination at exactly 19 Hz — a frequency that, when analyzed, encodes a data packet.",
+    "A CRHP-2 prototype with an extended range module of 80 meters is stolen from an ARCTURUS test facility, and the thief's last known location is a crowded transit hub."
   ],
   "ammunition_type": [
     "energy_cell"
@@ -63,22 +63,22 @@
     "Arcturus Defense Solutions",
     "Breck Tannen",
     "GLMZ",
-    "Iowan Behemoth \u2014 \u0027Palisade\u0027",
+    "Iowan Behemoth — 'Palisade'",
     "Magpie",
     "Piezoelectric Ceramic",
     "The Resonance Communion"
   ],
   "physical_description": {
-    "visual_profile": "A sleek, angular carbine resembling a futuristic rifle, but with an unusually bulbous, asymmetrical muzzle assembly. The barrel section flares into a parabolic housing that dominates the weapon\u0027s front end \u2014 organic and almost biological in its curves, contrasting sharply with the rigid geometry of the stock and receiver. At rest, it appears eerily quiet and unassuming, like medical equipment rather than a weapon.",
+    "visual_profile": "A sleek, angular carbine resembling a futuristic rifle, but with an unusually bulbous, asymmetrical muzzle assembly. The barrel section flares into a parabolic housing that dominates the weapon's front end — organic and almost biological in its curves, contrasting sharply with the rigid geometry of the stock and receiver. At rest, it appears eerily quiet and unassuming, like medical equipment rather than a weapon.",
     "dimensions": "Overall length: 78 cm | Barrel/emitter housing: 22 cm | Muzzle diameter: 8 cm | Stock to trigger: 35 cm",
-    "weight_description": "Deceptively light and balanced \u2014 3.1 kg distributed forward into the parabolic muzzle assembly. Feels almost delicate in the hand despite the precision engineering, creating a false sense of fragility that belies its lethality.",
+    "weight_description": "Deceptively light and balanced — 3.1 kg distributed forward into the parabolic muzzle assembly. Feels almost delicate in the hand despite the precision engineering, creating a false sense of fragility that belies its lethality.",
     "primary_material": "Matte composite polymer frame with carbon-fiber reinforced stock. Muzzle housing is brushed titanium-aluminum alloy to dissipate heat from the piezoelectric array. Internal ceramics and phased emitter matrix visible through subtle transparent polymer window panels.",
-    "finish": "Matte charcoal gray composite with brushed metallic titanium accents. No gloss \u2014 all surfaces are deliberately non-reflective. Thermal management vents along the muzzle housing show faint burnishing from heat cycling.",
+    "finish": "Matte charcoal gray composite with brushed metallic titanium accents. No gloss — all surfaces are deliberately non-reflective. Thermal management vents along the muzzle housing show faint burnishing from heat cycling.",
     "color_scheme": "Gunmetal gray primary with titanium silver accent bands around the muzzle. Small sections of the parabolic housing feature dark metallic blue where the phased emitter array sits beneath.",
-    "grip_texture": "Textured polymer grip with subtle ergonomic contouring. Wraparound finger grooves suggest precision targeting. Cool, slightly tacky to the touch \u2014 designed for gloved operation in cold or high-stress scenarios.",
+    "grip_texture": "Textured polymer grip with subtle ergonomic contouring. Wraparound finger grooves suggest precision targeting. Cool, slightly tacky to the touch — designed for gloved operation in cold or high-stress scenarios.",
     "distinctive_features": [
       "Parabolic muzzle assembly with visible piezoelectric ceramic segments arranged in concentric rings beneath translucent housing panels",
-      "Discreet LED status indicator array (three small lights) on the right side of the receiver \u2014 cyan for standby, amber for targeting lock, red for firing ready",
+      "Discreet LED status indicator array (three small lights) on the right side of the receiver — cyan for standby, amber for targeting lock, red for firing ready",
       "Bone-conduction mapping port: a small circular aperture with diagnostic connector just above the trigger guard",
       "Thermal management vents arranged in organic, asymmetrical patterns along the muzzle barrel",
       "Custom mil-spec rail system along the top for integrated targeting scope or sensor package",
@@ -86,8 +86,8 @@
       "Capacitor discharge port with warning stripe (silver/black chevron) on the lower receiver",
       "Minimalist charging port (flush-mounted) accessible from the left side"
     ],
-    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS logo (stylized hexagon with compass rose) stamped in raised relief on the upper receiver, just forward of the safety selector. Serial plate mounted on the lower receiver features alphanumeric code and production date. Small \u0027SGATU-3\u0027 marking etched near the muzzle aperture, indicating the onboard targeting processor.",
-    "condition_typical": "Exceptionally well-maintained. Professional-grade weapons rarely show battle wear \u2014 they\u0027re tools of assassination and precision work, not field combat. Surface may show minor micro-abrasions from handling, but no gouges or scoring. Thermal vents occasionally show faint carbon residue from capacitor discharge, suggesting recent operational use."
+    "manufacturer_markings": "ARCTURUS DEFENSE SOLUTIONS logo (stylized hexagon with compass rose) stamped in raised relief on the upper receiver, just forward of the safety selector. Serial plate mounted on the lower receiver features alphanumeric code and production date. Small 'SGATU-3' marking etched near the muzzle aperture, indicating the onboard targeting processor.",
+    "condition_typical": "Exceptionally well-maintained. Professional-grade weapons rarely show battle wear — they're tools of assassination and precision work, not field combat. Surface may show minor micro-abrasions from handling, but no gouges or scoring. Thermal vents occasionally show faint carbon residue from capacitor discharge, suggesting recent operational use."
   },
   "visual_prompt": "Sleek matte charcoal neo-noir acoustic weapon on a dark brushed steel surface, angled 45 degrees to show the distinctive parabolic muzzle assembly with visible piezoelectric ceramic emitters glowing subtly beneath translucent panels. Dramatic side-lighting from upper left casts sharp shadows across the composite frame, highlighting the titanium-silver accent bands and thermal management vents. Close-up detail of the minimalist LED status array (cyan-amber-red) glowing on the receiver. Gloved hand (tactical black leather) gripping the ergonomic stock, fingers positioned on trigger guard. Sharp focus on the organic, almost biological muzzle design contrasting with rigid geometric receiver. Neo-noir urban aesthetic with industrial lighting, no visible ammunition, sterile laboratory-clean condition suggesting cutting-edge ARCTURUS Defense Solutions engineering. --ar 3:2 --v 6"
 }

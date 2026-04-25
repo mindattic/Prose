@@ -2,11 +2,11 @@
   "id": "019d6143ab227731af6824abc11d2cd8",
   "rating": 80,
   "vote_count": 1,
-  "name": "Dermal Induction Flayer DIF-2 \u0027Saltwater\u0027",
+  "name": "Dermal Induction Flayer DIF-2 'Saltwater'",
   "type": "weapon",
   "aliases": [],
   "category": "exotic",
-  "description": "The DIF-2 exploits the electrochemical conductivity differential between the outer epidermal layer and the subdermal tissue beneath it. By projecting a modulated galvanic induction field tuned specifically to the resistivity of keratin and melanin-dense skin cells, the Flayer induces rapid, uncontrolled ion migration across the dermal barrier \u2014 effectively causing the outer skin layer to experience electrochemical dissolution while deeper tissue remains unaffected. The result is an intensely painful surface-level effect that produces the sensation of being flayed alive without immediately life-threatening damage. Extended exposure causes genuine dermal separation.\n\nHelix Biosystems developed the DIF-2 originally as a dermatological instrument for accelerated wound debridement in field surgery \u2014 removing necrotic tissue via targeted induction rather than physical scraping. The weaponized variant was a modification that required minimal engineering effort: simply increasing field intensity and broadening the emission cone from surgical precision to area coverage. The weapon\u0027s emitter looks almost identical to a medical debridement wand, a fact that has been exploited extensively for smuggling.\n\nAt non-lethal settings the DIF-2 is one of the most effective interrogation and compliance tools available \u2014 subjects describe the sensation as fire being poured under their skin, and the psychological impact of watching their own skin begin to separate is significant even before serious physiological damage occurs. At maximum output sustained for more than four seconds, tissue damage becomes permanent and potentially fatal through shock and infection exposure.",
+  "description": "The DIF-2 exploits the electrochemical conductivity differential between the outer epidermal layer and the subdermal tissue beneath it. By projecting a modulated galvanic induction field tuned specifically to the resistivity of keratin and melanin-dense skin cells, the Flayer induces rapid, uncontrolled ion migration across the dermal barrier — effectively causing the outer skin layer to experience electrochemical dissolution while deeper tissue remains unaffected. The result is an intensely painful surface-level effect that produces the sensation of being flayed alive without immediately life-threatening damage. Extended exposure causes genuine dermal separation.\n\nHelix Biosystems developed the DIF-2 originally as a dermatological instrument for accelerated wound debridement in field surgery — removing necrotic tissue via targeted induction rather than physical scraping. The weaponized variant was a modification that required minimal engineering effort: simply increasing field intensity and broadening the emission cone from surgical precision to area coverage. The weapon's emitter looks almost identical to a medical debridement wand, a fact that has been exploited extensively for smuggling.\n\nAt non-lethal settings the DIF-2 is one of the most effective interrogation and compliance tools available — subjects describe the sensation as fire being poured under their skin, and the psychological impact of watching their own skin begin to separate is significant even before serious physiological damage occurs. At maximum output sustained for more than four seconds, tissue damage becomes permanent and potentially fatal through shock and infection exposure.",
   "manufacturer": "HELIX BIOSYSTEMS",
   "tier_availability": "Black market",
   "legality": "Prohibited",
@@ -15,9 +15,9 @@
     "Electrochemical ion migration",
     "Dermal conductivity differential targeting"
   ],
-  "specifications": "effective range: Contact to 6 meters (cone emission)\nemission cone: 45 degrees at maximum spread\npower source: Helix BioCell Mk.2 (continuous 90-second operation per cell)\nweight: 0.9 kg\nlength: 34 cm (wand form factor)\nintensity settings: Variable dial, 1\u201310\nmedical certification: Carries forged Helix Biosystems surgical instrument certification\nthermal signature: Negligible \u2014 passes most scanner profiles as medical equipment",
-  "tactical_use": "The DIF-2 is primarily a compliance and interrogation weapon rather than a combat tool. Enforcement operators use it at low settings to rapidly clear confined spaces \u2014 the effect is too overwhelming for most subjects to push through. In interrogation contexts it is valued for leaving minimal lasting evidence at low settings while being psychologically catastrophic. Combat-trained operators occasionally use it as a close-range deterrent, sweeping the cone across a group to break formation.",
-  "cultural_context": "The DIF-2 occupies a specific place in GLMZ\u0027s underground economy: it is the weapon most associated with private detention facilities, corporate black sites, and the interrogation wings of organized crime operations. Its medical origins give it a veneer of clinical detachment that many users find either reassuring or deeply disturbing depending on their perspective. Street medics who discover a DIF-2 in a patient\u0027s belongings know to ask very careful questions about where that patient has been.",
+  "specifications": "effective range: Contact to 6 meters (cone emission) emission cone: 45 degrees at maximum spread power source: Helix BioCell Mk.2 (continuous 90-second operation per cell) weight: 0.9 kg length: 34 cm (wand form factor) intensity settings: Variable dial, 1–10 medical certification: Carries forged Helix Biosystems surgical instrument certification thermal signature: Negligible — passes most scanner profiles as medical equipment",
+  "tactical_use": "The DIF-2 is primarily a compliance and interrogation weapon rather than a combat tool. Enforcement operators use it at low settings to rapidly clear confined spaces — the effect is too overwhelming for most subjects to push through. In interrogation contexts it is valued for leaving minimal lasting evidence at low settings while being psychologically catastrophic. Combat-trained operators occasionally use it as a close-range deterrent, sweeping the cone across a group to break formation.",
+  "cultural_context": "The DIF-2 occupies a specific place in GLMZ's underground economy: it is the weapon most associated with private detention facilities, corporate black sites, and the interrogation wings of organized crime operations. Its medical origins give it a veneer of clinical detachment that many users find either reassuring or deeply disturbing depending on their perspective. Street medics who discover a DIF-2 in a patient's belongings know to ask very careful questions about where that patient has been.",
   "known_users": [
     "Corporate black site interrogators",
     "Private security contractors specializing in asset recovery",
@@ -25,10 +25,10 @@
     "Underground debt enforcement operators"
   ],
   "story_hooks": [
-    "A street medic treating a patient with unusual dermal injuries recognizes them as DIF-2 exposure \u2014 the patient claims they\u0027ve never been detained.",
-    "The party recovers a shipment of what appears to be Helix surgical equipment; half the \u0027debridement wands\u0027 are DIF-2s with the intensity limiters removed.",
-    "A whistleblower from a corporate black site wants to expose DIF-2 use but needs the party to retrieve physical evidence before it\u0027s sanitized.",
-    "Someone is using a DIF-2 at maximum setting as a murder weapon, targeting people with specific dermal augmentations \u2014 the conductivity differential is even more extreme in modded skin."
+    "A street medic treating a patient with unusual dermal injuries recognizes them as DIF-2 exposure — the patient claims they've never been detained.",
+    "The party recovers a shipment of what appears to be Helix surgical equipment; half the 'debridement wands' are DIF-2s with the intensity limiters removed.",
+    "A whistleblower from a corporate black site wants to expose DIF-2 use but needs the party to retrieve physical evidence before it's sanitized.",
+    "Someone is using a DIF-2 at maximum setting as a murder weapon, targeting people with specific dermal augmentations — the conductivity differential is even more extreme in modded skin."
   ],
   "ammunition_type": [
     "Helix Biosystems Compact Power Cell HB-3"
@@ -57,37 +57,37 @@
     "water",
     "less_lethal"
   ],
-  "image_prompt": "Midjourney product photograph of a sleek white surgical-grade wand weapon resting on matte black surface, shot from angled three-quarter view. Dramatic side-lighting from cool blue surgical light source highlights the brushed aluminum emission head and reveals the visible geometric galvanic grid pattern beneath translucent lens. Shallow depth of field keeps focus on the variable intensity dial and power indicator strip. Gloved hand (medical latex) partially grips the textured polymer shaft, fingers positioned near thumb-control dial. Fine details visible: Helix Biosystems logo, microscopic corona scarring on emission head, heat vents along barrel. Cold, clinical aesthetic \u2014 the weapon looks disturbingly like legitimate medical equipment. Dark studio background with subtle chromatic aberration. High resolution, cinematic medical-laboratory lighting, neo-noir minimalist composition --ar 3:2 --v 6",
+  "image_prompt": "Midjourney product photograph of a sleek white surgical-grade wand weapon resting on matte black surface, shot from angled three-quarter view. Dramatic side-lighting from cool blue surgical light source highlights the brushed aluminum emission head and reveals the visible geometric galvanic grid pattern beneath translucent lens. Shallow depth of field keeps focus on the variable intensity dial and power indicator strip. Gloved hand (medical latex) partially grips the textured polymer shaft, fingers positioned near thumb-control dial. Fine details visible: Helix Biosystems logo, microscopic corona scarring on emission head, heat vents along barrel. Cold, clinical aesthetic — the weapon looks disturbingly like legitimate medical equipment. Dark studio background with subtle chromatic aberration. High resolution, cinematic medical-laboratory lighting, neo-noir minimalist composition --ar 3:2 --v 6",
   "dalle3_prompt": "",
   "parent_corponation": "",
   "related_entities": [
     "Carrion Defense Works Field Surgical Kit FSK-6",
     "GLMZ",
     "Helix Biosystems",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 \u0027Compliance\u0027",
-    "TESSERA PG-2 \u0027Signature\u0027",
-    "Variable Impedance Rifle VIR-9 \u0027Switchback\u0027",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "TESSERA PG-2 'Signature'",
+    "Variable Impedance Rifle VIR-9 'Switchback'",
     "Zheng-Dao Bioelectric CellStack BM-3 Biological Microbial Fuel Cell Implant"
   ],
   "physical_description": {
-    "visual_profile": "A sleek, medical-grade wand resembling a dermatological instrument \u2014 cylindrical with a slightly tapered emission head. The design is deliberately clinical and surgical, with smooth curves that obscure its true purpose. At first glance, it could pass as legitimate medical equipment.",
+    "visual_profile": "A sleek, medical-grade wand resembling a dermatological instrument — cylindrical with a slightly tapered emission head. The design is deliberately clinical and surgical, with smooth curves that obscure its true purpose. At first glance, it could pass as legitimate medical equipment.",
     "dimensions": "34 cm length overall; emission head approximately 4 cm diameter; grip section 2.5 cm diameter",
-    "weight_description": "Light and perfectly balanced \u2014 0.9 kg feels almost negligible in hand, designed for extended handheld use without fatigue. The low mass belies its intensity.",
+    "weight_description": "Light and perfectly balanced — 0.9 kg feels almost negligible in hand, designed for extended handheld use without fatigue. The low mass belies its intensity.",
     "primary_material": "Reinforced polymer composite frame with embedded conductive grid; emission head housing is aerospace-grade aluminum with internal galvanic matrix",
     "finish": "Clinical white polymer with brushed aluminum accents around the emission head; subtle metallic sheen suggests medical-grade engineering. Minimal weathering suggests maintained equipment.",
     "color_scheme": "Surgical white primary with gunmetal gray emission head; accents of pale blue around power indicators and the variable intensity dial",
-    "grip_texture": "Textured polymer grip with microscopic pattern \u2014 designed for precision handling while wearing latex or nitrile gloves; slightly tacky to prevent slip during wet conditions",
+    "grip_texture": "Textured polymer grip with microscopic pattern — designed for precision handling while wearing latex or nitrile gloves; slightly tacky to prevent slip during wet conditions",
     "distinctive_features": [
       "Prominent variable intensity dial (1-10) positioned for thumb control",
       "Faint blue LED indicator strip running along the grip (power status and heat warning)",
-      "Emission head has visible geometric grid pattern \u2014 galvanic induction lattice visible beneath translucent emission lens",
+      "Emission head has visible geometric grid pattern — galvanic induction lattice visible beneath translucent emission lens",
       "Small medical certification plate (forged Helix Biosystems) etched into lower grip",
-      "Microscopic scarring around the emission head from field use \u2014 minute carbonization marks from ion discharge",
+      "Microscopic scarring around the emission head from field use — minute carbonization marks from ion discharge",
       "Heat sink vents along the barrel, barely visible unless viewed at angle",
       "BioCell charging port recessed into the grip base with subtle magnetic alignment guides"
     ],
-    "manufacturer_markings": "Helix Biosystems logo (stylized double helix) stamped on the grip in matte gray; serial number and certification plate affixed near the power cell compartment; model designation \u0027DIF-2\u0027 engraved subtly into the aluminum head housing",
-    "condition_typical": "Meticulously maintained \u2014 appearing almost pristine, which itself is suspicious. Field units show minimal visible damage, though close inspection reveals faint corona discharge patterns on the emission lens and microscopic pitting from prolonged ion field exposure. The weapon looks too clean for legitimate medical use."
+    "manufacturer_markings": "Helix Biosystems logo (stylized double helix) stamped on the grip in matte gray; serial number and certification plate affixed near the power cell compartment; model designation 'DIF-2' engraved subtly into the aluminum head housing",
+    "condition_typical": "Meticulously maintained — appearing almost pristine, which itself is suspicious. Field units show minimal visible damage, though close inspection reveals faint corona discharge patterns on the emission lens and microscopic pitting from prolonged ion field exposure. The weapon looks too clean for legitimate medical use."
   },
-  "visual_prompt": "Midjourney product photograph of a sleek white surgical-grade wand weapon resting on matte black surface, shot from angled three-quarter view. Dramatic side-lighting from cool blue surgical light source highlights the brushed aluminum emission head and reveals the visible geometric galvanic grid pattern beneath translucent lens. Shallow depth of field keeps focus on the variable intensity dial and power indicator strip. Gloved hand (medical latex) partially grips the textured polymer shaft, fingers positioned near thumb-control dial. Fine details visible: Helix Biosystems logo, microscopic corona scarring on emission head, heat vents along barrel. Cold, clinical aesthetic \u2014 the weapon looks disturbingly like legitimate medical equipment. Dark studio background with subtle chromatic aberration. High resolution, cinematic medical-laboratory lighting, neo-noir minimalist composition --ar 3:2 --v 6"
+  "visual_prompt": "Midjourney product photograph of a sleek white surgical-grade wand weapon resting on matte black surface, shot from angled three-quarter view. Dramatic side-lighting from cool blue surgical light source highlights the brushed aluminum emission head and reveals the visible geometric galvanic grid pattern beneath translucent lens. Shallow depth of field keeps focus on the variable intensity dial and power indicator strip. Gloved hand (medical latex) partially grips the textured polymer shaft, fingers positioned near thumb-control dial. Fine details visible: Helix Biosystems logo, microscopic corona scarring on emission head, heat vents along barrel. Cold, clinical aesthetic — the weapon looks disturbingly like legitimate medical equipment. Dark studio background with subtle chromatic aberration. High resolution, cinematic medical-laboratory lighting, neo-noir minimalist composition --ar 3:2 --v 6"
 }

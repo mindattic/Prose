@@ -165,12 +165,23 @@
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <label class="form-label text-muted">Plain-text dynamic entity linking (NER). Disable until link quality improves.</label>
+                        <label class="form-label text-muted">Auto-link capitalized entity names in plain prose. Explicit [[wiki]] links always work.</label>
                         <div class="form-check form-switch mt-1">
                             <input type="checkbox" class="form-check-input" id="enableNer"
                                    checked="@SettingsSvc.EnablePlainTextNer"
                                    @onchange="e => SettingsSvc.EnablePlainTextNer = (bool)(e.Value ?? false)" />
-                            <label class="form-check-label text-muted small" for="enableNer">Dynamic entity linking (NER)</label>
+                            <label class="form-check-label text-muted small" for="enableNer">Dynamic Entity Linking</label>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label text-muted">Output format for autonomous stories. Markdown is editor-native; HTML is the legacy wrapper.</label>
+                        <div class="form-check form-switch mt-1">
+                            <input type="checkbox" class="form-check-input" id="saveStoriesAsMarkdown"
+                                   checked="@SettingsSvc.SaveStoriesAsMarkdown"
+                                   @onchange="e => SettingsSvc.SaveStoriesAsMarkdown = (bool)(e.Value ?? false)" />
+                            <label class="form-check-label text-muted small" for="saveStoriesAsMarkdown">
+                                Save stories as @(SettingsSvc.SaveStoriesAsMarkdown ? "Markdown" : "HTML")
+                            </label>
                         </div>
                     </div>
                     @* Publish button removed — deploying via Azure CI/CD *@

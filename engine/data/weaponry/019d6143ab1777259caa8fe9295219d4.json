@@ -2,26 +2,26 @@
   "id": "019d6143ab1777259caa8fe9295219d4",
   "rating": 80,
   "vote_count": 1,
-  "name": "Axiom Systems Synapse Interruptor SI-3 \u0027Stutter\u0027",
+  "name": "Axiom Systems Synapse Interruptor SI-3 'Stutter'",
   "type": "weapon",
   "aliases": [],
   "category": "electromagnetic",
-  "description": "A pistol-format directed electromagnetic weapon that fires a precisely modulated pulse targeting the motor cortex through neural interface pathways. Targets hit by the SI-3 experience a temporary but complete disruption of voluntary motor control \u2014 muscles fire randomly, coordination collapses, speech becomes incoherent, and fine motor skills disappear for 20-30 seconds. The effect resembles a severe seizure without the associated neurological damage, though repeated exposure has been linked to cumulative motor pathway degradation. Axiom describes it as a \u0027motor compliance tool\u0027 in internal documentation.",
+  "description": "A pistol-format directed electromagnetic weapon that fires a precisely modulated pulse targeting the motor cortex through neural interface pathways. Targets hit by the SI-3 experience a temporary but complete disruption of voluntary motor control — muscles fire randomly, coordination collapses, speech becomes incoherent, and fine motor skills disappear for 20-30 seconds. The effect resembles a severe seizure without the associated neurological damage, though repeated exposure has been linked to cumulative motor pathway degradation. Axiom describes it as a 'motor compliance tool' in internal documentation.",
   "manufacturer": "AXIOM SYSTEMS",
-  "tier_availability": "Tier 3\u002B",
-  "legality": "Restricted \u2014 authorized compliance enforcement",
+  "tier_availability": "Tier 3+",
+  "legality": "Restricted — authorized compliance enforcement",
   "base_technologies": [
     "Motor cortex electromagnetic disruption",
     "Neural interface pathway targeting",
     "Modulated compliance pulse generation"
   ],
-  "specifications": "pulse type: Modulated motor cortex disruption\neffective range: 3-15 meters\neffect on augmented: Total motor control loss, 20-30 seconds\neffect on unaugmented: Reduced \u2014 mild coordination disruption, 5-10 seconds\npulses per charge: 20\nrecharge: 2 seconds between pulses\nweight: 0.6 kg\npower source: Integrated capacitor pack\ncumulative effect: Motor pathway degradation with repeated exposure",
+  "specifications": "pulse type: Modulated motor cortex disruption effective range: 3-15 meters effect on augmented: Total motor control loss, 20-30 seconds effect on unaugmented: Reduced — mild coordination disruption, 5-10 seconds pulses per charge: 20 recharge: 2 seconds between pulses weight: 0.6 kg power source: Integrated capacitor pack cumulative effect: Motor pathway degradation with repeated exposure",
   "tactical_use": "",
   "cultural_context": "",
   "known_users": [],
   "story_hooks": [
-    "A security contractor has been using an SI-3 repeatedly on the same detainee during interrogation \u2014 the cumulative motor damage has left the victim with permanent tremors and the contractor is claiming standard procedure.",
-    "Modified SI-3 units have appeared that affect the autonomic motor system instead of voluntary \u2014 targets stop breathing for 20 seconds, turning a compliance tool into an assassination weapon."
+    "A security contractor has been using an SI-3 repeatedly on the same detainee during interrogation — the cumulative motor damage has left the victim with permanent tremors and the contractor is claiming standard procedure.",
+    "Modified SI-3 units have appeared that affect the autonomic motor system instead of voluntary — targets stop breathing for 20 seconds, turning a compliance tool into an assassination weapon."
   ],
   "ammunition_type": [],
   "tags": [
@@ -43,27 +43,27 @@
   "related_entities": [
     "Aminata Vargas-Baffour",
     "Kamala Blomberg-Konadu",
-    "Sterling-Nakamura Legal Override Pistol LOP-1 \u0027Compliance\u0027",
-    "Synaptic Overload Gauntlet SOG-3 \u0027Seizure\u0027",
+    "Sterling-Nakamura Legal Override Pistol LOP-1 'Compliance'",
+    "Synaptic Overload Gauntlet SOG-3 'Seizure'",
     "Vuk Jorgensen-Toure"
   ],
   "physical_description": {
-    "visual_profile": "A compact, angular pistol with an unusually broad muzzle assembly. The design prioritizes the electromagnetic emitter array over traditional ballistics \u2014 the front end flares outward in a distinctive hexagonal aperture, giving it an almost insectoid appearance. Chrome accents frame the muzzle while the grip tapers sharply toward the rear.",
+    "visual_profile": "A compact, angular pistol with an unusually broad muzzle assembly. The design prioritizes the electromagnetic emitter array over traditional ballistics — the front end flares outward in a distinctive hexagonal aperture, giving it an almost insectoid appearance. Chrome accents frame the muzzle while the grip tapers sharply toward the rear.",
     "dimensions": "22 cm overall length, 5.5 cm width at widest point (muzzle flare), 13 cm grip-to-muzzle. Muzzle aperture diameter: 4.2 cm",
-    "weight_description": "Light and front-heavy \u2014 the electromagnetic coil assembly pulls weight forward, creating an unbalanced feel in sustained aim. Approximately 600 grams total, but distributes as if heavier due to the concentrated muzzle mass.",
+    "weight_description": "Light and front-heavy — the electromagnetic coil assembly pulls weight forward, creating an unbalanced feel in sustained aim. Approximately 600 grams total, but distributes as if heavier due to the concentrated muzzle mass.",
     "primary_material": "Aircraft-grade aluminum alloy frame with steel reinforcement around the muzzle assembly. Capacitor housing is dense thermoplastic composite.",
     "finish": "Matte gunmetal gray with brushed chrome accents around the muzzle flare. The grip area features a subtly worn polymer coating, suggesting frequent handling. Micro-scale abrasion marks visible under harsh light.",
     "color_scheme": "Gunmetal gray body, polished chrome muzzle assembly, black rubberized grip. Faint blue status indicators glow faintly along the trigger guard when charged.",
     "grip_texture": "Deeply knurled rubberized polymer with thin grooves for moisture management. Deliberately textured for secure handling even when wet. Slightly warm to touch due to capacitor proximity.",
     "distinctive_features": [
-      "Hexagonal electromagnetic emitter array at muzzle \u2014 appears as a six-pointed aperture with visible coil geometry beneath translucent housing",
+      "Hexagonal electromagnetic emitter array at muzzle — appears as a six-pointed aperture with visible coil geometry beneath translucent housing",
       "Blue-tinted capacitor pack visible through partial transparent window on left side of frame",
-      "Heat vents along the barrel section \u2014 crucial for thermal dissipation during rapid-fire pulses",
+      "Heat vents along the barrel section — crucial for thermal dissipation during rapid-fire pulses",
       "Tiny LED status indicator (faint blue when armed) beneath the trigger guard",
-      "Axiom Systems serial plate laser-etched on the right frame \u2014 raised lettering with holographic anti-counterfeiting patch",
-      "Faint electromagnetic field distortion visible as slight shimmer around the muzzle when powered \u2014 barely perceptible but disconcerting",
+      "Axiom Systems serial plate laser-etched on the right frame — raised lettering with holographic anti-counterfeiting patch",
+      "Faint electromagnetic field distortion visible as slight shimmer around the muzzle when powered — barely perceptible but disconcerting",
       "Wear-resistant chrome edges showing micro-scratches from holster contact",
-      "Trigger guard slightly overbuilt and reinforced \u2014 indicator of high capacitor discharge feedback"
+      "Trigger guard slightly overbuilt and reinforced — indicator of high capacitor discharge feedback"
     ],
     "manufacturer_markings": "AXIOM SYSTEMS logo stamped on the lower left frame in anodized silver. Serial number laser-etched horizontally beneath the charging port. Small certification glyph near the trigger guard indicating Tier 3 compliance authorization.",
     "condition_typical": "Field-maintained but showing operational wear. Well-cared-for examples feature polished chrome, while enforcement units show scuffed polymer and heat-stress discoloration around the muzzle. Active-use units often have scorched residue around the aperture from electromagnetic discharge."

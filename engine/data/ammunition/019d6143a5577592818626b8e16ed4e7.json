@@ -9,7 +9,7 @@
   "manufacturer": "Unlicensed black market production",
   "tier_availability": "Black market only",
   "legality": "Prohibited — radiological material, unlicensed manufacturing, weapons trafficking",
-  "specifications": "weight_per_round: 2.9g (vs 2.1g for standard TCF-322)\nmuzzle_velocity: 980 m/s (reduced from 1,050 due to increased mass)\npenetration_rating: Enhanced — defeats light hard armor that tungsten-ceramic cannot\neffective_against: Hard-armored personnel, light vehicle plating (sustained fire)\ncountermeasures: Heavy composite armor, distance, sealed respiratory protection (dust)\nhazard: Radiological and chemical toxicity from depleted uranium dust on impact",
+  "specifications": "weight_per_round: 2.9g (vs 2.1g for standard TCF-322) muzzle_velocity: 980 m/s (reduced from 1,050 due to increased mass) penetration_rating: Enhanced — defeats light hard armor that tungsten-ceramic cannot effective_against: Hard-armored personnel, light vehicle plating (sustained fire) countermeasures: Heavy composite armor, distance, sealed respiratory protection (dust) hazard: Radiological and chemical toxicity from depleted uranium dust on impact",
   "compatible_weapons": [
     "Gauss Flechette Repeater GFR-3 'Needlerain'"
   ],

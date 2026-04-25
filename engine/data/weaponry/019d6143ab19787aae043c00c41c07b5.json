@@ -1,22 +1,22 @@
 {
   "id": "019d6143ab19787aae043c00c41c07b5",
   "rating": 90,
-  "name": "Bioluminescent Acoustic Disruptor BAD-2 \u0027Choral\u0027",
+  "name": "Bioluminescent Acoustic Disruptor BAD-2 'Choral'",
   "type": "weapon",
   "aliases": [],
   "category": "exotic",
-  "description": "The BAD-2 \u0027Choral\u0027 is a shoulder-mounted acoustic weapon that generates precisely tuned resonant frequencies through a series of bioluminescent fluid chambers derived from deep-sea cephalopod tissue cultures maintained under pressure within the weapon\u0027s central column. When triggered, the fluid chambers vibrate at cascading harmonic intervals, producing a layered acoustic beam that penetrates most soft body armor by exploiting the natural resonant frequencies of human bone and fluid-filled cavities. The weapon\u0027s distinctive blue-green glow pulses rhythmically during operation, a byproduct of the bioluminescent reaction that stabilizes the fluid medium between firing cycles.\n\nWhat distinguishes the \u0027Choral\u0027 from conventional acoustic weapons is its dual-mode operation. In its primary \u0027Cantata\u0027 mode, the weapon delivers a sustained directional beam capable of inducing progressive disorientation, nausea, and structural micro-fractures in bone tissue at ranges up to forty meters. Its secondary \u0027Fugue\u0027 mode releases a short omnidirectional pulse that overwhelms auditory processing in all targets within a twelve-meter radius, causing temporary neural cascade feedback that mimics the sensation of drowning. Operators describe the effect on victims as \u0027watching someone forget how to be a body.\u0027\n\nHelix Biosystems engineered the living fluid chambers to self-replenish through a nutrient cartridge system, meaning the weapon never truly runs dry so long as the operator maintains the biological medium \u2014 a process that requires daily feeding and temperature regulation. This maintenance burden has made the \u0027Choral\u0027 beloved by dedicated specialists and loathed by everyone who has to share a safehouse with one.",
+  "description": "The BAD-2 'Choral' is a shoulder-mounted acoustic weapon that generates precisely tuned resonant frequencies through a series of bioluminescent fluid chambers derived from deep-sea cephalopod tissue cultures maintained under pressure within the weapon's central column. When triggered, the fluid chambers vibrate at cascading harmonic intervals, producing a layered acoustic beam that penetrates most soft body armor by exploiting the natural resonant frequencies of human bone and fluid-filled cavities. The weapon's distinctive blue-green glow pulses rhythmically during operation, a byproduct of the bioluminescent reaction that stabilizes the fluid medium between firing cycles.\n\nWhat distinguishes the 'Choral' from conventional acoustic weapons is its dual-mode operation. In its primary 'Cantata' mode, the weapon delivers a sustained directional beam capable of inducing progressive disorientation, nausea, and structural micro-fractures in bone tissue at ranges up to forty meters. Its secondary 'Fugue' mode releases a short omnidirectional pulse that overwhelms auditory processing in all targets within a twelve-meter radius, causing temporary neural cascade feedback that mimics the sensation of drowning. Operators describe the effect on victims as 'watching someone forget how to be a body.'\n\nHelix Biosystems engineered the living fluid chambers to self-replenish through a nutrient cartridge system, meaning the weapon never truly runs dry so long as the operator maintains the biological medium — a process that requires daily feeding and temperature regulation. This maintenance burden has made the 'Choral' beloved by dedicated specialists and loathed by everyone who has to share a safehouse with one.",
   "manufacturer": "HELIX BIOSYSTEMS",
-  "tier_availability": "Tier 4\u002B",
+  "tier_availability": "Tier 4+",
   "legality": "Prohibited",
   "base_technologies": [
     "Bioluminescent resonance stabilization",
     "Harmonic bone-frequency targeting",
     "Living fluid acoustic amplification"
   ],
-  "specifications": "weight: 6.8 kg (loaded, fluid chambers full)\nlength: 94 cm\nrange primary: 40 m directional beam\nrange secondary: 12 m omnidirectional pulse\npower source: Nutrient cartridge (72-hour cycle) \u002B capacitor cell\nchamber fluid volume: 340 mL bioluminescent cephalopod-derived medium\nfire modes: Cantata (sustained beam), Fugue (omnidirectional pulse)\nrecharge cycle: 8 seconds between Fugue pulses\noperating temperature: 12\u201328\u00B0C (fluid viability range)\narmor penetration: Bypasses Class III soft armor; ineffective against rigid plate",
-  "tactical_use": "The \u0027Choral\u0027 is predominantly used in close-to-medium engagements where operators need to incapacitate multiple targets without lethal collateral damage to infrastructure. Fugue mode is favored for crowd suppression in enclosed corridors, while Cantata mode is used to systematically degrade a single hardened target\u0027s capacity to fight. Operators almost always work in pairs \u2014 one running the \u0027Choral\u0027 while a partner manages the biological cartridge and handles close threats, since the weapon\u0027s operator is effectively committed to a fixed firing stance during sustained beam discharge.",
-  "cultural_context": "The \u0027Choral\u0027 has developed a deeply unsettling reputation in GLMZ\u0027s underground medical community, where it is associated with a cluster of long-term neurological conditions collectively called \u0027Song Sickness\u0027 \u2014 a suite of chronic tinnitus, balance disorders, and auditory hallucinations documented in survivors of repeated exposure. This has made the weapon a subject of quiet horror among street-level communities who have seen its aftermath. Paradoxically, certain fringe collectors prize the weapon as an art object, drawn to its eerie bioluminescent glow and the almost musical quality of its discharge. Helix Biosystems officially denies any ongoing production.",
+  "specifications": "weight: 6.8 kg (loaded, fluid chambers full) length: 94 cm range primary: 40 m directional beam range secondary: 12 m omnidirectional pulse power source: Nutrient cartridge (72-hour cycle) + capacitor cell chamber fluid volume: 340 mL bioluminescent cephalopod-derived medium fire modes: Cantata (sustained beam), Fugue (omnidirectional pulse) recharge cycle: 8 seconds between Fugue pulses operating temperature: 12–28°C (fluid viability range) armor penetration: Bypasses Class III soft armor; ineffective against rigid plate",
+  "tactical_use": "The 'Choral' is predominantly used in close-to-medium engagements where operators need to incapacitate multiple targets without lethal collateral damage to infrastructure. Fugue mode is favored for crowd suppression in enclosed corridors, while Cantata mode is used to systematically degrade a single hardened target's capacity to fight. Operators almost always work in pairs — one running the 'Choral' while a partner manages the biological cartridge and handles close threats, since the weapon's operator is effectively committed to a fixed firing stance during sustained beam discharge.",
+  "cultural_context": "The 'Choral' has developed a deeply unsettling reputation in GLMZ's underground medical community, where it is associated with a cluster of long-term neurological conditions collectively called 'Song Sickness' — a suite of chronic tinnitus, balance disorders, and auditory hallucinations documented in survivors of repeated exposure. This has made the weapon a subject of quiet horror among street-level communities who have seen its aftermath. Paradoxically, certain fringe collectors prize the weapon as an art object, drawn to its eerie bioluminescent glow and the almost musical quality of its discharge. Helix Biosystems officially denies any ongoing production.",
   "known_users": [
     "Helix Biosystems black-site extraction teams",
     "GLMZ deep-cover interrogators",
@@ -25,10 +25,10 @@
     "Underground pit-fight enforcers (modified for lethality)"
   ],
   "story_hooks": [
-    "A \u0027Choral\u0027 has gone missing from a Helix Biosystems research transport \u2014 along with the only technician who knew how to keep its fluid chambers alive past 96 hours.",
-    "A neighborhood in the Rust Margin is reporting a mass outbreak of Song Sickness symptoms, but no weapon discharge has been recorded. Someone is using a \u0027Choral\u0027 in a mode that doesn\u0027t appear in any known manual.",
-    "An underground musician has reverse-engineered the \u0027Choral\u0027s\u0027 fluid resonance into a performance instrument. Her concerts are drawing crowds \u2014 and corporate assassins.",
-    "The player characters are hired to retrieve a \u0027Choral\u0027 from a collector\u0027s estate, only to discover the weapon\u0027s biological medium has been contaminated with something that shouldn\u0027t be alive."
+    "A 'Choral' has gone missing from a Helix Biosystems research transport — along with the only technician who knew how to keep its fluid chambers alive past 96 hours.",
+    "A neighborhood in the Rust Margin is reporting a mass outbreak of Song Sickness symptoms, but no weapon discharge has been recorded. Someone is using a 'Choral' in a mode that doesn't appear in any known manual.",
+    "An underground musician has reverse-engineered the 'Choral's' fluid resonance into a performance instrument. Her concerts are drawing crowds — and corporate assassins.",
+    "The player characters are hired to retrieve a 'Choral' from a collector's estate, only to discover the weapon's biological medium has been contaminated with something that shouldn't be alive."
   ],
   "ammunition_type": [
     "Nutrient Cartridge Biological Sustenance Pack BSP-72",
@@ -51,7 +51,7 @@
     "tier 4",
     "lethal"
   ],
-  "image_prompt": "Product photography of the Bioluminescent Acoustic Disruptor BAD-2 \u0027Choral\u0027 mounted on a black carbon fiber rest, angled 45 degrees to showcase the translucent central column glowing with ethereal blue-green bioluminescent fluid. Dramatic side-lighting from above casts sharp shadows across brushed steel components while illuminating the pulsing interior chambers. Close detail shot of the nutrient cartridge slot and pressure seals. Neo-noir urban aesthetic: wet-lab meets military hardware, organic horror meets precision engineering. The glowing fluid inside should appear to move and shimmer independently of the weapon\u0027s physical form. Shot against a dark composite surface with subtle reflection. Include blurred HELIX BIOSYSTEMS logo in soft focus background. --ar 3:2 --v 6",
+  "image_prompt": "Product photography of the Bioluminescent Acoustic Disruptor BAD-2 'Choral' mounted on a black carbon fiber rest, angled 45 degrees to showcase the translucent central column glowing with ethereal blue-green bioluminescent fluid. Dramatic side-lighting from above casts sharp shadows across brushed steel components while illuminating the pulsing interior chambers. Close detail shot of the nutrient cartridge slot and pressure seals. Neo-noir urban aesthetic: wet-lab meets military hardware, organic horror meets precision engineering. The glowing fluid inside should appear to move and shimmer independently of the weapon's physical form. Shot against a dark composite surface with subtle reflection. Include blurred HELIX BIOSYSTEMS logo in soft focus background. --ar 3:2 --v 6",
   "dalle3_prompt": "",
   "parent_corponation": "",
   "related_entities": [
@@ -60,18 +60,18 @@
     "GLMZ",
     "Helix Biosystems",
     "Nenad Vargas-Baffour",
-    "Neural Feedback Carbine NFC-3 \u0027Mirrorgun\u0027",
+    "Neural Feedback Carbine NFC-3 'Mirrorgun'",
     "NeuralPath HarmonicRoot Perfect Pitch Mod",
     "Palladian Construction",
-    "Phased Acoustic Neurostimulator PAN-3 \u0027Tinnitus\u0027",
-    "Sterling-Nakamura Cascade Projector SN-7 \u0027Monsoon\u0027",
-    "Street Custom \u0027Four Horsemen\u0027 Pipe Pepperbox",
+    "Phased Acoustic Neurostimulator PAN-3 'Tinnitus'",
+    "Sterling-Nakamura Cascade Projector SN-7 'Monsoon'",
+    "Street Custom 'Four Horsemen' Pipe Pepperbox",
     "The Resonance Communion"
   ],
   "physical_description": {
-    "visual_profile": "A grotesque marriage of organic and mechanical engineering\u2014a shoulder-mounted cannon with a translucent central column that glows with bioluminescent fluid. The silhouette suggests both a deep-sea creature and a piece of laboratory equipment. When dormant, it resembles a pressurized biological containment unit; when active, it pulses with an eerie blue-green luminescence that dominates the entire form.",
-    "dimensions": "94 cm length overall; central column diameter 8 cm; shoulder mount base 22 cm wide; breech assembly extends 12 cm behind operator\u0027s shoulder",
-    "weight_description": "Hefty and deliberate\u20146.8 kg demands respect and commitment. The weight distribution favors the central column, creating a forward-heavy feel that locks the operator into a braced stance. Feels alive in a way that unsettles most handlers.",
+    "visual_profile": "A grotesque marriage of organic and mechanical engineering—a shoulder-mounted cannon with a translucent central column that glows with bioluminescent fluid. The silhouette suggests both a deep-sea creature and a piece of laboratory equipment. When dormant, it resembles a pressurized biological containment unit; when active, it pulses with an eerie blue-green luminescence that dominates the entire form.",
+    "dimensions": "94 cm length overall; central column diameter 8 cm; shoulder mount base 22 cm wide; breech assembly extends 12 cm behind operator's shoulder",
+    "weight_description": "Hefty and deliberate—6.8 kg demands respect and commitment. The weight distribution favors the central column, creating a forward-heavy feel that locks the operator into a braced stance. Feels alive in a way that unsettles most handlers.",
     "primary_material": "Reinforced polymer composite frame with transparent polycarbonate pressure sleeves; stainless steel mounting brackets and articulation joints; medical-grade silicone seals throughout",
     "finish": "Matte black polymer with brushed steel accents; the central column is crystal-clear polycarbonate to showcase the bioluminescent fluid within. Heat vents along the barrel assembly are anodized gunmetal gray.",
     "color_scheme": "Primary matte black frame with pulsing blue-green interior (fluid-dependent coloration); brushed steel hardware; accent lines in wet-chrome where mechanical components meet biological chambers",
@@ -79,14 +79,14 @@
     "distinctive_features": [
       "Central translucent column containing visible bioluminescent fluid that glows passively and pulses rhythmically during operation",
       "Three graduated pressure-sealed chambers stacked within the main barrel, each visibly distinct through transparent walls",
-      "Nutrient cartridge slot with biometric lock on the rear mount\u2014requires daily feeding ritual",
+      "Nutrient cartridge slot with biometric lock on the rear mount—requires daily feeding ritual",
       "Harmonic tuning rings etched into barrel exterior, visibly resonating when weapon is armed",
       "Small exhaust vents that produce faint condensation during the 8-second recharge cycle",
       "Capacitor cell housing with health indicator strip (glows amber when depleted)",
       "Operator feedback display showing fluid viability percentage and temperature status"
     ],
-    "manufacturer_markings": "HELIX BIOSYSTEMS logo embossed in the rear mounting plate; weapon designation \u0027BAD-2\u0027 stenciled in white on the left side of the stock; biological media batch number and expiration date printed on a laminated strip attached to the nutrient cartridge slot; serial number engraved into the polycarbonate column itself, visible from all angles",
-    "condition_typical": "Well-maintained examples show meticulous care\u2014operators know that neglect kills the living medium. Field-worn specimens display condensation residue inside the polycarbonate (mineral deposits from repeated thermal cycling), faded batch-number stickers, and scuff marks from careless mounting/unmounting. Battle-scarred units show cracks in the pressure sleeves (sealed with biopolymer patch tape), discolored fluid (age-darkened from optimal blue-green), and corrosion around the nutrient cartridge slot from repeated biological feeding cycles."
+    "manufacturer_markings": "HELIX BIOSYSTEMS logo embossed in the rear mounting plate; weapon designation 'BAD-2' stenciled in white on the left side of the stock; biological media batch number and expiration date printed on a laminated strip attached to the nutrient cartridge slot; serial number engraved into the polycarbonate column itself, visible from all angles",
+    "condition_typical": "Well-maintained examples show meticulous care—operators know that neglect kills the living medium. Field-worn specimens display condensation residue inside the polycarbonate (mineral deposits from repeated thermal cycling), faded batch-number stickers, and scuff marks from careless mounting/unmounting. Battle-scarred units show cracks in the pressure sleeves (sealed with biopolymer patch tape), discolored fluid (age-darkened from optimal blue-green), and corrosion around the nutrient cartridge slot from repeated biological feeding cycles."
   },
-  "visual_prompt": "Product photography of the Bioluminescent Acoustic Disruptor BAD-2 \u0027Choral\u0027 mounted on a black carbon fiber rest, angled 45 degrees to showcase the translucent central column glowing with ethereal blue-green bioluminescent fluid. Dramatic side-lighting from above casts sharp shadows across brushed steel components while illuminating the pulsing interior chambers. Close detail shot of the nutrient cartridge slot and pressure seals. Neo-noir urban aesthetic: wet-lab meets military hardware, organic horror meets precision engineering. The glowing fluid inside should appear to move and shimmer independently of the weapon\u0027s physical form. Shot against a dark composite surface with subtle reflection. Include blurred HELIX BIOSYSTEMS logo in soft focus background. --ar 3:2 --v 6"
+  "visual_prompt": "Product photography of the Bioluminescent Acoustic Disruptor BAD-2 'Choral' mounted on a black carbon fiber rest, angled 45 degrees to showcase the translucent central column glowing with ethereal blue-green bioluminescent fluid. Dramatic side-lighting from above casts sharp shadows across brushed steel components while illuminating the pulsing interior chambers. Close detail shot of the nutrient cartridge slot and pressure seals. Neo-noir urban aesthetic: wet-lab meets military hardware, organic horror meets precision engineering. The glowing fluid inside should appear to move and shimmer independently of the weapon's physical form. Shot against a dark composite surface with subtle reflection. Include blurred HELIX BIOSYSTEMS logo in soft focus background. --ar 3:2 --v 6"
 }

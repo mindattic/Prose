@@ -9,7 +9,7 @@
   "manufacturer": "Unlicensed street armorer production",
   "tier_availability": "Black market only",
   "legality": "Prohibited — modified lethal ammunition, unlicensed manufacturing",
-  "specifications": "weight_per_round: 0.9g\nmuzzle_velocity: 210 m/s (unchanged from PGM-4)\npenetration_rating: None (non-penetrating)\nelectrical_output: ~3x standard PGM-4\neffective_against: Biological targets at close range, cardiac arrest capable\ncountermeasures: Same as PGM-4 (rigid armor, heavy clothing, Faraday weave)\nhazard: 3-month Gray Zone life, premature activation risk in expired beads",
+  "specifications": "weight_per_round: 0.9g muzzle_velocity: 210 m/s (unchanged from PGM-4) penetration_rating: None (non-penetrating) electrical_output: ~3x standard PGM-4 effective_against: Biological targets at close range, cardiac arrest capable countermeasures: Same as PGM-4 (rigid armor, heavy clothing, Faraday weave) hazard: 3-month Gray Zone life, premature activation risk in expired beads",
   "compatible_weapons": [
     "Capillary Disruption Pistol CDP-2 'Bruiser'"
   ],

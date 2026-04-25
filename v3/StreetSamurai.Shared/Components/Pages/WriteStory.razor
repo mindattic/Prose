@@ -24,7 +24,7 @@
 @inject IStoryDirectorService Director
 @inject SemanticIndexService SemanticIndex
 @inject InferenceService Inference
-@inject ClaudeCliService ClaudeCli
+@inject StreetSamurai.Core.Services.Operator.WriterOperatorService Operator
 @inject IJSRuntime JS
 @implements IDisposable
 
@@ -435,12 +435,13 @@
     <div class="@((showSceneSidebar || showRefinementPanel) ? "col-md-8" : "col-12")">
 
         @* ── Split pane: editor left, preview right on desktop ── *@
-        <div class="row g-1 mb-1">
+        @* Both panes use --editor-h so the drag handle below can resize them together. *@
+        <div id="editor-split" class="row g-1" style="--editor-h: calc(100vh - 545px);">
 
             @* Editor pane: full width on mobile (hidden when preview mode), half on desktop always *@
             <div class="col-12 col-md-6 @(viewMode == "preview" ? "d-none d-md-block" : "")">
                 <textarea id="story-surface" class="form-control bg-dark text-light border-secondary md-editor"
-                          style="height: calc(100vh - 345px); resize: none; overflow-y: auto; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 14px; line-height: 1.6;"
+                          style="height: var(--editor-h); resize: none; overflow-y: auto; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 14px; line-height: 1.6;"
                           spellcheck="true" autocorrect="off" autocapitalize="off"
                           @bind="storyText"
                           @bind:event="oninput"
@@ -451,13 +452,21 @@
 
             @* Preview pane: hidden on mobile when editing, always shown on desktop *@
             <div class="col-12 col-md-6 @(viewMode == "editor" ? "d-none d-md-block" : "")">
-                <div id="preview-scroll-container" class="border border-secondary rounded" style="height: calc(100vh - 345px); overflow-y: auto;">
+                <div id="preview-scroll-container" class="border border-secondary rounded" style="height: var(--editor-h); overflow-y: auto;">
                     <div id="md-preview" class="story-preview-print bg-white text-dark p-4" style="font-family: Georgia, serif; font-size: 16px; line-height: 2; max-width: 700px; margin: 0 auto;">
                         <p style="color:#6c757d;text-align:center;padding:2rem;font-style:italic;">Preview</p>
                     </div>
                 </div>
             </div>
 
+        </div>
+
+        @* Drag handle — lower-right, resizes both editor and preview together via --editor-h *@
+        <div class="d-flex justify-content-end mb-1">
+            <div id="editor-resize-handle" title="Drag to resize editor and preview"
+                 style="cursor: ns-resize; user-select: none; padding: 2px 10px; color: #6c757d; font-size: 0.85rem; line-height: 1; border: 1px solid #495057; border-top: none; border-radius: 0 0 4px 4px; background: #1a1d20;">
+                ⠿ resize
+            </div>
         </div>
 
         @* Story Shape Progress moved to bottom drawer — see Story Arc drawer below *@
@@ -505,7 +514,7 @@
         {
             <div class="bg-dark border border-info rounded mt-1 p-2">
                 <div class="d-flex justify-content-between align-items-center mb-1">
-                    <small class="text-info fw-bold"><i class="bi bi-chat-dots"></i> Claude Code</small>
+                    <small class="text-info fw-bold"><i class="bi bi-chat-dots"></i> Refine</small>
                     <button class="btn btn-sm btn-outline-secondary" @onclick="() => showChatDrawer = false"><i class="bi bi-x-lg"></i></button>
                 </div>
                 <div id="chat-history" class="bg-black rounded p-2 mb-2"
@@ -525,10 +534,30 @@
                     @foreach (var msg in chatMessages)
                     {
                         <div class="mb-2">
-                            <div class="@(msg.Role == "user" ? "text-info" : "text-warning") fw-bold small">
-                                @(msg.Role == "user" ? "You" : "Claude")
-                            </div>
-                            <div class="text-light" style="white-space: pre-wrap;">@msg.Text</div>
+                            @switch (msg.Role)
+                            {
+                                case "user":
+                                    <div class="text-info fw-bold small">You</div>
+                                    <div class="text-light" style="white-space: pre-wrap;">@msg.Text</div>
+                                    break;
+                                case "assistant":
+                                    <div class="text-warning fw-bold small">Operator</div>
+                                    <div class="text-light" style="white-space: pre-wrap;">@msg.Text</div>
+                                    break;
+                                case "tool":
+                                    <div class="bg-black border border-secondary rounded p-1 ps-2 small" style="border-left-width: 3px !important; border-left-color: #6f42c1 !important;">
+                                        <div class="text-purple fw-bold" style="color: #b78ff3;">→ @msg.Text</div>
+                                    </div>
+                                    break;
+                                case "tool-result":
+                                    <div class="bg-black border border-secondary rounded p-1 ps-2 small" style="border-left-width: 3px !important; border-left-color: #198754 !important;">
+                                        <div class="text-success">← @msg.Text</div>
+                                    </div>
+                                    break;
+                                case "error":
+                                    <div class="text-danger small fw-bold">⚠ @msg.Text</div>
+                                    break;
+                            }
                         </div>
                     }
                     @if (chatBusy)
@@ -566,6 +595,83 @@
                                 <i class="bi bi-trash"></i>
                             </button>
                         }
+                    </div>
+                </div>
+            </div>
+        }
+
+        @* ── Modal: review pending edit proposals from the operator ── *@
+        @if (showEditProposalModal && pendingEdits.Count > 0)
+        {
+            <div class="modal-backdrop" style="position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 1050;"
+                 @onclick="CancelEditProposal"></div>
+            <div style="position: fixed; inset: 24px; z-index: 1051; overflow: auto;">
+                <div class="card bg-dark text-light border-info shadow-lg" style="max-width: 1400px; margin: 0 auto;"
+                     @onclick:stopPropagation="true">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <strong><i class="bi bi-pencil-square"></i> Operator proposes @pendingEdits.Count edit@(pendingEdits.Count == 1 ? "" : "s")</strong>
+                        <button class="btn btn-sm btn-outline-secondary" @onclick="CancelEditProposal">
+                            <i class="bi bi-x-lg"></i>
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <p class="small text-muted mb-2">
+                            Check the edits you want, uncheck the rest. Tweak the combined preview at the bottom before applying.
+                        </p>
+                        @for (int i = 0; i < pendingEdits.Count; i++)
+                        {
+                            var ix = i;
+                            var edit = pendingEdits[ix];
+                            <div class="mb-3 p-2 border border-secondary rounded">
+                                <div class="d-flex align-items-start gap-2 mb-1">
+                                    <input type="checkbox" class="form-check-input mt-1"
+                                           checked="@edit.Approved"
+                                           @onchange="e => OnEditToggled(ix, (bool)(e.Value ?? false))" />
+                                    <div class="flex-grow-1">
+                                        <strong class="text-info">@edit.Label</strong>
+                                        @if (edit.MatchCount != 1)
+                                        {
+                                            <span class="badge bg-danger ms-2">
+                                                @(edit.MatchCount == 0 ? "no match" : $"{edit.MatchCount} matches — ambiguous")
+                                            </span>
+                                        }
+                                        @if (!string.IsNullOrEmpty(edit.Rationale))
+                                        {
+                                            <div class="small text-muted">@edit.Rationale</div>
+                                        }
+                                    </div>
+                                </div>
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <div class="small text-secondary mb-1">Original</div>
+                                        <pre class="bg-black p-2 rounded m-0" style="white-space: pre-wrap; color: #ff8a8a; font-family: Georgia, serif; font-size: 0.85rem; max-height: 240px; overflow-y: auto;">@edit.Find</pre>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="small text-secondary mb-1">Rewrite</div>
+                                        <pre class="bg-black p-2 rounded m-0" style="white-space: pre-wrap; color: #8aff8a; font-family: Georgia, serif; font-size: 0.85rem; max-height: 240px; overflow-y: auto;">@edit.Replace</pre>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                        <hr class="border-secondary" />
+                        <div class="mb-2">
+                            <strong>Combined preview</strong>
+                            <span class="small text-muted ms-2">— this is the exact text that will replace the document. Edit freely.</span>
+                        </div>
+                        <textarea class="form-control bg-black text-light border-secondary"
+                                  rows="20"
+                                  style="font-family: Georgia, serif; font-size: 0.95rem; min-height: 400px; line-height: 1.5;"
+                                  @bind="combinedPreview" @bind:event="oninput"></textarea>
+                    </div>
+                    <div class="card-footer d-flex justify-content-end gap-2">
+                        <button class="btn btn-outline-secondary" @onclick="CancelEditProposal">Cancel</button>
+                        <button class="btn btn-outline-info" @onclick="RebuildCombinedPreview" title="Recompute the preview from the currently-checked edits, discarding manual tweaks">
+                            <i class="bi bi-arrow-repeat"></i> Recompute
+                        </button>
+                        <button class="btn btn-info text-dark" @onclick="ApplyEditProposal"
+                                disabled="@(string.IsNullOrEmpty(combinedPreview))">
+                            <i class="bi bi-check-lg"></i> Apply to story
+                        </button>
                     </div>
                 </div>
             </div>
@@ -638,9 +744,9 @@
                 <button class="btn btn-sm @(viewMode == "preview" ? "btn-danger" : "btn-outline-secondary")" style="width: 100px;" @onclick='() => SwitchViewMode("preview")'><i class="bi bi-printer"></i><div class="btn-lbl"> Preview</div></button>
             </div>
             <div class="ms-auto d-flex gap-2">
-                <button class="btn btn-sm @(showChatDrawer ? "btn-info text-dark" : "btn-outline-info")"
+                <button class="btn btn-sm @(showChatDrawer ? "btn-secondary" : "btn-outline-secondary")"
                         @onclick='() => ToggleDrawer("chat")'>
-                    <i class="bi bi-chat-dots"></i><div class="btn-lbl"> Claude</div>
+                    <i class="bi bi-chat-dots"></i><div class="btn-lbl"> Refine</div>
                 </button>
                 <button class="btn btn-sm @(showTtsDrawer ? "btn-secondary" : "btn-outline-secondary")"
                         @onclick='() => ToggleDrawer("tts")'>
@@ -1074,46 +1180,60 @@
         var userText = chatInput.Trim();
         chatInput = "";
         chatMessages.Add(new ChatMessage("user", userText));
-        var assistant = new ChatMessage("assistant", "");
-        chatMessages.Add(assistant);
 
         chatBusy = true;
-        chatStatus = "Spawning claude CLI...";
+        chatStatus = "Operator working...";
         chatCts = new CancellationTokenSource();
         StateHasChanged();
 
+        var operatorCtx = new StreetSamurai.Core.Services.Operator.OperatorContext
+        {
+            ProjectId = project.Id,
+            StoryText = storyText ?? "",
+            StoryTitle = project.Title,
+        };
+
+        StreetSamurai.Core.Services.Operator.OperatorEvent? lastEvent = null;
         try
         {
-            var prompt = BuildChatPrompt(userText);
-            var workingDir = Paths.DataRoot;
-
-            await foreach (var chunk in ClaudeCli.SendAsync(prompt, workingDir, chatCts.Token))
+            await foreach (var ev in Operator.SendAsync(userText, operatorCtx, chatCts.Token))
             {
-                assistant.Text += (assistant.Text.Length == 0 ? "" : "\n") + chunk;
-                chatStatus = "Streaming response...";
+                lastEvent = ev;
+                switch (ev)
+                {
+                    case StreetSamurai.Core.Services.Operator.OperatorEvent.AssistantText txt:
+                        chatMessages.Add(new ChatMessage("assistant", txt.Text));
+                        chatStatus = "Operator working...";
+                        break;
+                    case StreetSamurai.Core.Services.Operator.OperatorEvent.ToolStarted started:
+                        chatMessages.Add(new ChatMessage("tool", $"{started.Name}({CompactArgs(started.ArgsJson)})"));
+                        chatStatus = $"Calling {started.Name}…";
+                        if (started.Name == "propose_story_edits")
+                        {
+                            CaptureEditProposal(started.ArgsJson);
+                        }
+                        break;
+                    case StreetSamurai.Core.Services.Operator.OperatorEvent.ToolCompleted done:
+                        chatMessages.Add(new ChatMessage("tool-result", $"{done.Name} {(done.IsError ? "errored" : "returned")} ({done.ResultJson.Length} chars)"));
+                        chatStatus = "Operator working...";
+                        break;
+                    case StreetSamurai.Core.Services.Operator.OperatorEvent.Error err:
+                        chatMessages.Add(new ChatMessage("error", err.Message));
+                        break;
+                }
+
                 StateHasChanged();
-                // Keep the chat scrolled to the bottom as new chunks arrive.
                 try { await JS.InvokeVoidAsync("eval", "var c = document.getElementById('chat-history'); if (c) c.scrollTop = c.scrollHeight;"); }
                 catch { /* JS interop unavailable during prerender — ignore */ }
-            }
-
-            // After the CLI finishes, the story file may have been edited on disk.
-            // Reload so the editor reflects whatever Claude wrote.
-            var reloaded = Repo.LoadProject(project.Id);
-            if (reloaded != null && reloaded.Html != storyText)
-            {
-                project = reloaded;
-                storyText = project.Html;
-                chatStatus = "Story updated on disk — reloaded.";
             }
         }
         catch (OperationCanceledException)
         {
-            assistant.Text += "\n[cancelled]";
+            chatMessages.Add(new ChatMessage("error", "[cancelled]"));
         }
         catch (Exception ex)
         {
-            assistant.Text += $"\n[error] {ex.Message}";
+            chatMessages.Add(new ChatMessage("error", ex.Message));
         }
         finally
         {
@@ -1125,52 +1245,12 @@
         }
     }
 
-    private string BuildChatPrompt(string userText)
+    private static string CompactArgs(string json)
     {
-        // Hand Claude Code the full story context AND a directive to use the
-        // existing services (CombatSceneWriter, OutlineService, ValidationService,
-        // WorldGraphService, etc.) rather than free-form prose. The CLI runs in
-        // the project root, so it can read canon JSON, the graph, and source.
-        var sb = new System.Text.StringBuilder();
-        sb.AppendLine("You are working inside the StreetSamurai Writer screen, called from a chat panel embedded in WriteStory.razor.");
-        sb.AppendLine();
-        sb.AppendLine("RULES — read these before doing anything:");
-        sb.AppendLine("- The project has dedicated services: CombatSceneWriter, StoryDirectorService, OutlineService, OutlineReviewService,");
-        sb.AppendLine("  StoryQualityService, AgendaEngine, ValidationService, StoryRefinementService, WorldGraphService, DatabaseService,");
-        sb.AppendLine("  NarrativeSessionContext, EntityExtractionService. Use them — do not free-form prose that bypasses canon.");
-        sb.AppendLine("- For combat scenes: invoke CombatSceneWriter via `dotnet run --project v3/StreetSamurai.Blazor -- --write-story guideme ...` or read its source and replicate its prompt structure faithfully.");
-        sb.AppendLine("- For canon questions: read the JSON under engine/data/, v3/StreetSamurai.Blazor/wwwroot/data/, or query world_graph.json.");
-        sb.AppendLine("- For validation: run ValidationService logic by reading its source.");
-        sb.AppendLine("- For code/UI fixes: edit the relevant file, then build with `dotnet build v3/StreetSamurai.sln`.");
-        sb.AppendLine("- Push back when the user asks for something that contradicts canon, world rules, or graph state.");
-        sb.AppendLine("- Symbol Φ is QUANTA currency, never phi. Iowan Behemoths are autonomous machines, not alive. There is no GLMZ police.");
-        sb.AppendLine("- If you edit the active story file, save it as JSON under the project's story path so the UI reload picks it up.");
-        sb.AppendLine();
-        sb.AppendLine($"Active story: {project.Id}");
-        sb.AppendLine($"Title: {(string.IsNullOrWhiteSpace(project.Title) ? "(untitled)" : project.Title)}");
-        sb.AppendLine($"Word count: {wordCount}");
-        sb.AppendLine();
-        sb.AppendLine("--- CURRENT STORY TEXT (markdown) ---");
-        sb.AppendLine(string.IsNullOrWhiteSpace(storyText) ? "(empty)" : storyText);
-        sb.AppendLine("--- END STORY ---");
-        sb.AppendLine();
-
-        if (chatMessages.Count > 2)
-        {
-            sb.AppendLine("--- PRIOR CHAT (for context, oldest first) ---");
-            // Skip the just-appended user msg + empty assistant placeholder (last 2 entries)
-            for (int i = 0; i < chatMessages.Count - 2; i++)
-            {
-                var m = chatMessages[i];
-                sb.AppendLine($"[{m.Role}] {m.Text}");
-            }
-            sb.AppendLine("--- END PRIOR CHAT ---");
-            sb.AppendLine();
-        }
-
-        sb.AppendLine("USER REQUEST:");
-        sb.AppendLine(userText);
-        return sb.ToString();
+        if (string.IsNullOrEmpty(json)) return "";
+        // Strip whitespace and truncate so the tool-call line stays one row.
+        var compact = System.Text.RegularExpressions.Regex.Replace(json, @"\s+", " ");
+        return compact.Length > 90 ? compact[..87] + "…" : compact;
     }
 
     private void CancelChat()
@@ -1181,6 +1261,122 @@
     private void ClearChat()
     {
         chatMessages.Clear();
+    }
+
+    // ── Edit-proposal review modal ──
+    // The propose_story_edits operator tool sends a tool_use block whose args
+    // are find/replace pairs. We intercept the ToolStarted event in the chat
+    // stream, parse the args, and pop a side-by-side diff modal for review.
+    private sealed class EditProposal
+    {
+        public string Label { get; set; } = "";
+        public string Find { get; set; } = "";
+        public string Replace { get; set; } = "";
+        public string Rationale { get; set; } = "";
+        public int MatchCount { get; set; }
+        public bool Approved { get; set; } = true;
+    }
+
+    private readonly List<EditProposal> pendingEdits = [];
+    private bool showEditProposalModal;
+    private string combinedPreview = "";
+
+    private void CaptureEditProposal(string argsJson)
+    {
+        try
+        {
+            using var doc = System.Text.Json.JsonDocument.Parse(argsJson);
+            if (!doc.RootElement.TryGetProperty("edits", out var arr) ||
+                arr.ValueKind != System.Text.Json.JsonValueKind.Array) return;
+
+            pendingEdits.Clear();
+            var sourceText = storyText ?? "";
+            foreach (var e in arr.EnumerateArray())
+            {
+                var find = e.TryGetProperty("find", out var f) ? f.GetString() ?? "" : "";
+                var matchCount = string.IsNullOrEmpty(find) ? 0 : CountOccurrences(sourceText, find);
+                pendingEdits.Add(new EditProposal
+                {
+                    Label = e.TryGetProperty("label", out var l) ? l.GetString() ?? "" : "",
+                    Find = find,
+                    Replace = e.TryGetProperty("replace", out var r) ? r.GetString() ?? "" : "",
+                    Rationale = e.TryGetProperty("rationale", out var ra) ? ra.GetString() ?? "" : "",
+                    MatchCount = matchCount,
+                    Approved = matchCount == 1,
+                });
+            }
+            if (pendingEdits.Count > 0)
+            {
+                RebuildCombinedPreview();
+                showEditProposalModal = true;
+            }
+        }
+        catch
+        {
+            // If args don't parse, the operator's proposal is malformed —
+            // leave it visible in chat but don't open the modal.
+        }
+    }
+
+    private void OnEditToggled(int index, bool approved)
+    {
+        if (index < 0 || index >= pendingEdits.Count) return;
+        pendingEdits[index].Approved = approved;
+        RebuildCombinedPreview();
+    }
+
+    private void RebuildCombinedPreview()
+    {
+        var working = storyText ?? "";
+        foreach (var edit in pendingEdits)
+        {
+            if (!edit.Approved) continue;
+            if (edit.MatchCount != 1) continue;
+            var idx = working.IndexOf(edit.Find, StringComparison.Ordinal);
+            if (idx < 0) continue;
+            working = working[..idx] + edit.Replace + working[(idx + edit.Find.Length)..];
+        }
+        combinedPreview = working;
+    }
+
+    private async Task ApplyEditProposal()
+    {
+        // Close the modal first so the user sees it dismiss immediately,
+        // even if the save / JS interop takes a moment.
+        var newText = combinedPreview;
+        pendingEdits.Clear();
+        combinedPreview = "";
+        showEditProposalModal = false;
+        StateHasChanged();
+
+        storyText = newText;
+        project.Html = newText;
+        Repo.SaveProject(project);
+        try { await JS.InvokeVoidAsync("writeInterop.setText", "story-surface", storyText); }
+        catch { /* prerender — ignore */ }
+        UpdateWordCount();
+        chatMessages.Add(new ChatMessage("tool-result", "edits applied to story"));
+        StateHasChanged();
+    }
+
+    private void CancelEditProposal()
+    {
+        pendingEdits.Clear();
+        combinedPreview = "";
+        showEditProposalModal = false;
+        StateHasChanged();
+    }
+
+    private static int CountOccurrences(string haystack, string needle)
+    {
+        if (string.IsNullOrEmpty(haystack) || string.IsNullOrEmpty(needle)) return 0;
+        int count = 0, idx = 0;
+        while ((idx = haystack.IndexOf(needle, idx, StringComparison.Ordinal)) >= 0)
+        {
+            count++;
+            idx += needle.Length;
+        }
+        return count;
     }
 
     // ── Lifecycle ──
@@ -1214,6 +1410,7 @@
         {
             await JS.InvokeVoidAsync("writeInterop.initMdPreview", "story-surface", "md-preview");
             await JS.InvokeVoidAsync("writeInterop.syncScroll", "story-surface", "preview-scroll-container");
+            await JS.InvokeVoidAsync("writeInterop.initEditorResizer");
         }
     }
 

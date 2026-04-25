@@ -2,25 +2,25 @@
   "id": "019d6143ab457ae7855256cd90ec9459",
   "rating": 80,
   "vote_count": 1,
-  "name": "Street Custom \u0027Baptism\u0027 Electrified Water Cannon",
+  "name": "Street Custom 'Baptism' Electrified Water Cannon",
   "type": "weapon",
   "aliases": [],
   "category": "improvised",
-  "description": "A garden hose or pressure washer connected to a water supply that has been spiked with conductive salt solution, with a high-voltage electrode mounted at the nozzle. The result is a stream of electrified salt water that delivers a sustained electrical shock to anything it contacts. The Baptism is crude, dangerous to the operator, and effective only at close range \u2014 but it can incapacitate multiple targets simultaneously by spraying a conductive water stream across a group. The weapon has been adopted by defense-minded communities in Tier 1 who mount it at choke points and doorways as an area denial tool, powered by salvaged electrical panels.",
+  "description": "A garden hose or pressure washer connected to a water supply that has been spiked with conductive salt solution, with a high-voltage electrode mounted at the nozzle. The result is a stream of electrified salt water that delivers a sustained electrical shock to anything it contacts. The Baptism is crude, dangerous to the operator, and effective only at close range — but it can incapacitate multiple targets simultaneously by spraying a conductive water stream across a group. The weapon has been adopted by defense-minded communities in Tier 1 who mount it at choke points and doorways as an area denial tool, powered by salvaged electrical panels.",
   "manufacturer": "Street Custom",
-  "tier_availability": "Tier 1\u002B",
-  "legality": "Prohibited \u2014 improvised electrical weapon",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited — improvised electrical weapon",
   "base_technologies": [
     "Conductive fluid electrical delivery",
     "Improvised high-voltage systems"
   ],
-  "specifications": "range: 3-8 meters depending on water pressure\nvoltage: 500-2,000V depending on power source\nconductivity enhancement: Salt solution in water supply\npower source: Salvaged electrical panel or vehicle battery\nwater consumption: 5-15 liters per minute\nweight: Variable \u2014 typically fixed installation\noperator risk: Extreme if grounding is improper",
+  "specifications": "range: 3-8 meters depending on water pressure voltage: 500-2,000V depending on power source conductivity enhancement: Salt solution in water supply power source: Salvaged electrical panel or vehicle battery water consumption: 5-15 liters per minute weight: Variable — typically fixed installation operator risk: Extreme if grounding is improper",
   "tactical_use": "",
   "cultural_context": "",
   "known_users": [],
   "story_hooks": [
-    "A Baptism system installed at a community entrance killed an intruder when the voltage source overloaded \u2014 the community faces prosecution while the intruder was carrying weapons intended for a raid.",
-    "Someone is setting up concealed Baptism systems in storm drains that activate when anyone steps in the water \u2014 the trap is indiscriminate and has injured several children."
+    "A Baptism system installed at a community entrance killed an intruder when the voltage source overloaded — the community faces prosecution while the intruder was carrying weapons intended for a raid.",
+    "Someone is setting up concealed Baptism systems in storm drains that activate when anyone steps in the water — the trap is indiscriminate and has injured several children."
   ],
   "ammunition_type": [],
   "tags": [
@@ -40,13 +40,13 @@
   "related_entities": [
     "Alper Holmberg-Dembele",
     "Fanta Kato-Adomako",
-    "Lazarus MN-1 \u0027Angler\u0027",
-    "Variable Impedance Rifle VIR-9 \u0027Switchback\u0027"
+    "Lazarus MN-1 'Angler'",
+    "Variable Impedance Rifle VIR-9 'Switchback'"
   ],
   "physical_description": {
-    "visual_profile": "A brutalist amalgamation of industrial plumbing and electrical infrastructure\u2014heavy-duty pressure washer nozzle grafted onto reinforced rubber hose, with a crude electrode assembly bolted to the spray head. The entire rig looks like it was assembled in a basement by someone with more determination than formal training.",
+    "visual_profile": "A brutalist amalgamation of industrial plumbing and electrical infrastructure—heavy-duty pressure washer nozzle grafted onto reinforced rubber hose, with a crude electrode assembly bolted to the spray head. The entire rig looks like it was assembled in a basement by someone with more determination than formal training.",
     "dimensions": "Nozzle head: 12cm diameter, Electrode prongs: 8cm separation, Effective hose length: 2-4 meters (coiled or mounted), Total reach with full deployment: up to 8 meters",
-    "weight_description": "Substantial when pressurized\u2014the nozzle assembly alone carries 2-3kg, but the anchored mounting and hose weight makes it feel immobile and brutishly heavy. Operator must brace or mount on fixed frame.",
+    "weight_description": "Substantial when pressurized—the nozzle assembly alone carries 2-3kg, but the anchored mounting and hose weight makes it feel immobile and brutishly heavy. Operator must brace or mount on fixed frame.",
     "primary_material": "Salvaged industrial pressure washer body (reinforced polycarbonate and cast aluminum), braided rubber hose with conductive wire threaded through, electrode assembly from copper plating or salvaged electrical conduit",
     "finish": "Weathered matte black and oxidized copper, salt-corroded brass fittings, exposed wire wrapping held with industrial tape, rust blooms at connection points where water seeps",
     "color_scheme": "Weathered black with bright copper/brass electrode contacts, acid-yellow warning tape wrapped around electrode section, faded stenciled warning text in white and red",
@@ -55,14 +55,14 @@
       "Dual copper electrode prongs at nozzle tip, separated and slightly bowed to maximize contact spray pattern",
       "High-voltage warning labels (faded, partially peeled)",
       "Bare copper wire visible along hose runs, some sections wrapped in cracked electrical tape",
-      "Mineral salt crust buildup around nozzle\u2014white-gray residue that looks like limestone",
+      "Mineral salt crust buildup around nozzle—white-gray residue that looks like limestone",
       "Crude pressure gauge bolted to the side, needle often pinned or broken",
       "Grounding cable coiled at base of fixed installations, heavy-duty automotive jumper cable with missing insulation",
       "Fresh electrical burn marks on nozzle housing from arc scarring",
       "Custom solder joints visible where modifications were made, amateur-grade metalwork"
     ],
-    "manufacturer_markings": "Original pressure washer brand barely visible under grime (Karcher, DeWalt, or similar); crude hand-stenciled \u0027BAPTISM\u0027 in red spray paint across the hose length; no serial number or registration marks (intentionally removed)",
-    "condition_typical": "Perpetually battle-worn and corroded\u2014salt water and electrical arcing leave constant damage. Nozzles are frequently replaced. Hose develops pinhole leaks and requires patching with industrial epoxy or electric tape wraps. Electrode surfaces pit and degrade, requiring scraping and re-tinning. Field units show heavy wear: scorch marks, mineral encrustation, missing warning labels, and improvised reinforcement bands"
+    "manufacturer_markings": "Original pressure washer brand barely visible under grime (Karcher, DeWalt, or similar); crude hand-stenciled 'BAPTISM' in red spray paint across the hose length; no serial number or registration marks (intentionally removed)",
+    "condition_typical": "Perpetually battle-worn and corroded—salt water and electrical arcing leave constant damage. Nozzles are frequently replaced. Hose develops pinhole leaks and requires patching with industrial epoxy or electric tape wraps. Electrode surfaces pit and degrade, requiring scraping and re-tinning. Field units show heavy wear: scorch marks, mineral encrustation, missing warning labels, and improvised reinforcement bands"
   },
   "visual_prompt": "Product photograph of an improvised electrified water cannon nozzle assembly mounted on industrial pressure washer body, held at angle in a chrome-gloved tactical hand against dark matte surface. Extreme close-up on copper electrode prongs showing oxidation and arc burn marks. Dramatic side-lighting with blue electrical accent light reflecting off wet salt-crusted brass fittings. Include coiled conductive hose, exposed wiring, weathered yellow warning tape, and salt mineral buildup. Neo-noir dystopian street-tech aesthetic, harsh contrast between corroded copper and matte black polymer. Gritty, dangerous, field-maintained feel. --ar 3:2 --v 6"
 }

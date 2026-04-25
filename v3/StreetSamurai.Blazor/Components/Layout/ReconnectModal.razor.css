@@ -1,3 +1,15 @@
+/* Suppress the reconnect modal entirely — both hide and show states. The
+   default Blazor styles flash the modal during transient SignalR hiccups,
+   which on this page reads as "click anywhere → modal flashes". User
+   prefers silent reconnect attempts; manual refresh is the fallback. */
+.components-reconnect-hide,
+.components-reconnect-show,
+#components-reconnect-modal,
+#components-reconnect-modal.components-reconnect-hide,
+#components-reconnect-modal.components-reconnect-show {
+    display: none !important;
+}
+
 .components-reconnect-first-attempt-visible,
 .components-reconnect-repeated-attempt-visible,
 .components-reconnect-failed-visible,

@@ -9,7 +9,7 @@
   "manufacturer": "HELIX BIOSYSTEMS",
   "tier_availability": "Tier 3+",
   "legality": "Restricted — dual-use classification, licensed for structural engineering applications",
-  "specifications": "weight_per_round: 1.2g\nmuzzle_velocity: 95 m/s (compressed gas)\npenetration_rating: Embeds in most materials to a depth of 3-8mm depending on density\neffective_against: Structural materials (concrete, steel, composite), armor panels, bone, glass\ncountermeasures: Material-dampened construction, vibration-absorbing coatings, regular structural inspection",
+  "specifications": "weight_per_round: 1.2g muzzle_velocity: 95 m/s (compressed gas) penetration_rating: Embeds in most materials to a depth of 3-8mm depending on density effective_against: Structural materials (concrete, steel, composite), armor panels, bone, glass countermeasures: Material-dampened construction, vibration-absorbing coatings, regular structural inspection",
   "compatible_weapons": [
     "Piezoelectric Fracture Pistol PFP-7 'Hairline'"
   ],

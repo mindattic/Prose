@@ -745,6 +745,60 @@ window.profileInterop = {
     document.addEventListener('enhancedload', setup);
 })();
 
+// ── Editor / preview vertical resize ─────────────────────────────────
+// Drag handle below the split pane sets --editor-h on #editor-split,
+// so the textarea and preview scroll container resize together.
+window.writeInterop.initEditorResizer = function () {
+    var split = document.getElementById('editor-split');
+    var handle = document.getElementById('editor-resize-handle');
+    if (!split || !handle || handle.dataset.bound === '1') return;
+    handle.dataset.bound = '1';
+
+    var dragging = false;
+    var startY = 0;
+    var startHeightPx = 0;
+
+    function currentHeightPx() {
+        // Read the resolved pixel height from the textarea (one of the panes)
+        var ta = document.getElementById('story-surface');
+        return ta ? ta.getBoundingClientRect().height : 400;
+    }
+
+    function onMove(e) {
+        if (!dragging) return;
+        var clientY = (e.touches && e.touches[0]) ? e.touches[0].clientY : e.clientY;
+        var delta = clientY - startY;
+        var next = Math.max(160, startHeightPx + delta);
+        split.style.setProperty('--editor-h', next + 'px');
+        e.preventDefault();
+    }
+
+    function onEnd() {
+        if (!dragging) return;
+        dragging = false;
+        document.body.style.cursor = '';
+        document.removeEventListener('mousemove', onMove);
+        document.removeEventListener('mouseup', onEnd);
+        document.removeEventListener('touchmove', onMove);
+        document.removeEventListener('touchend', onEnd);
+    }
+
+    function onStart(e) {
+        dragging = true;
+        startY = (e.touches && e.touches[0]) ? e.touches[0].clientY : e.clientY;
+        startHeightPx = currentHeightPx();
+        document.body.style.cursor = 'ns-resize';
+        document.addEventListener('mousemove', onMove);
+        document.addEventListener('mouseup', onEnd);
+        document.addEventListener('touchmove', onMove, { passive: false });
+        document.addEventListener('touchend', onEnd);
+        e.preventDefault();
+    }
+
+    handle.addEventListener('mousedown', onStart);
+    handle.addEventListener('touchstart', onStart, { passive: false });
+};
+
 // ── Search viewport sync ──────────────────────────────────────────────
 window.setupSearchSync = function (dotNetRef) {
     var mq = window.matchMedia('(min-width: 768px)');

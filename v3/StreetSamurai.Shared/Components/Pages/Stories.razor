@@ -9,17 +9,12 @@
 @inject SuggestionEngineService Suggestions
 @inject CharacterRepository CharRepo
 @inject DistrictRepository DistrictRepo
+@inject SettingsService SettingsSvc
 @implements IDisposable
 
 <div class="d-flex justify-content-between align-items-center mb-3">
     <h4 class="text-danger mb-0">Stories</h4>
     <div class="d-flex gap-2 align-items-center">
-        <div class="form-check form-switch me-2" title="When on, autonomous stories are saved as Markdown (editor-native). When off, they are wrapped in HTML like the legacy pipeline.">
-            <input class="form-check-input" type="checkbox" id="markdownToggle" @bind="saveAsMarkdown" />
-            <label class="form-check-label small text-muted" for="markdownToggle">
-                @(saveAsMarkdown ? "Markdown" : "HTML")
-            </label>
-        </div>
         <button class="btn btn-sm btn-outline-primary" @onclick="SurpriseMe" disabled="@generating">
             <i class="bi bi-lightning"></i><div class="btn-lbl"> Surprise Me</div>
         </button>
@@ -352,8 +347,6 @@ else if (!generating)
     private List<AutonomousStory> failedCheckpoints = [];
     private string? confirmArchiveId;
     private bool generating;
-    // Autonomous-story output format. Default: Markdown (editor-native). False = legacy HTML pipeline.
-    private bool saveAsMarkdown = true;
     private bool suggestionsLoading;
     private string progressMessage = "";
     private int progressCurrent, _progressTotal;
@@ -498,7 +491,7 @@ else if (!generating)
                     Id = autonomousStory.ProjectId,
                     Title = autonomousStory.Title,
                     Characters = autonomousStory.Characters,
-                    Html = saveAsMarkdown ? ConvertToMarkdown(autonomousStory) : ConvertToHtml(autonomousStory),
+                    Html = SettingsSvc.SaveStoriesAsMarkdown ? ConvertToMarkdown(autonomousStory) : ConvertToHtml(autonomousStory),
                     Status = Constants.Status.Draft,
                 };
                 Repo.SaveProject(project);
@@ -577,7 +570,7 @@ else if (!generating)
                     Id = autonomousStory.ProjectId,
                     Title = autonomousStory.Title,
                     Characters = autonomousStory.Characters,
-                    Html = saveAsMarkdown ? ConvertToMarkdown(autonomousStory) : ConvertToHtml(autonomousStory),
+                    Html = SettingsSvc.SaveStoriesAsMarkdown ? ConvertToMarkdown(autonomousStory) : ConvertToHtml(autonomousStory),
                     Status = Constants.Status.Draft,
                 };
                 Repo.SaveProject(project);
@@ -612,7 +605,7 @@ else if (!generating)
                     Id = autonomousStory.ProjectId,
                     Title = autonomousStory.Title,
                     Characters = autonomousStory.Characters,
-                    Html = saveAsMarkdown ? ConvertToMarkdown(autonomousStory) : ConvertToHtml(autonomousStory),
+                    Html = SettingsSvc.SaveStoriesAsMarkdown ? ConvertToMarkdown(autonomousStory) : ConvertToHtml(autonomousStory),
                     Status = Constants.Status.Draft,
                 };
                 Repo.SaveProject(project);
@@ -651,7 +644,7 @@ else if (!generating)
                     Id = autonomousStory.ProjectId,
                     Title = autonomousStory.Title,
                     Characters = autonomousStory.Characters,
-                    Html = saveAsMarkdown ? ConvertToMarkdown(autonomousStory) : ConvertToHtml(autonomousStory),
+                    Html = SettingsSvc.SaveStoriesAsMarkdown ? ConvertToMarkdown(autonomousStory) : ConvertToHtml(autonomousStory),
                     Status = Constants.Status.Draft,
                 };
                 Repo.SaveProject(project);
@@ -691,7 +684,7 @@ else if (!generating)
                     Id = autonomousStory.ProjectId,
                     Title = autonomousStory.Title,
                     Characters = autonomousStory.Characters,
-                    Html = saveAsMarkdown ? ConvertToMarkdown(autonomousStory) : ConvertToHtml(autonomousStory),
+                    Html = SettingsSvc.SaveStoriesAsMarkdown ? ConvertToMarkdown(autonomousStory) : ConvertToHtml(autonomousStory),
                     Status = Constants.Status.Draft,
                 };
                 Repo.SaveProject(project);

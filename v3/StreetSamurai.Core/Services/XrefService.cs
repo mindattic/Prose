@@ -18,6 +18,37 @@ public class XrefService
     private static readonly Regex WikiLinkRe =
         new(@"\[\[([^\]|]+?)(?:\|([^\]]+?))?\]\]", RegexOptions.Compiled);
 
+    // Plain-text auto-linking heuristics:
+    //   • Min length 4 — shorter strings produce too many false positives (e.g. "AI", "Pulse").
+    //   • Must start with an uppercase letter (proper-noun rule) OR a recognized symbol (Φ, $, #).
+    //   • First-character case-sensitive match required against source (skips "the war" → "War").
+    //   • Stop list filters very common English words that share spelling with entity names.
+    // Explicit [[wiki|id]] markup bypasses every rule above and links anything in the index.
+    private const int MinAutoLinkLength = 4;
+
+    private static readonly HashSet<string> AutoLinkStopWords = new(StringComparer.OrdinalIgnoreCase)
+    {
+        "The", "This", "That", "These", "Those", "There", "Their", "Them", "They",
+        "What", "When", "Where", "Which", "While", "Whose",
+        "Have", "Will", "Would", "Could", "Should", "Were", "Been", "Being",
+        "From", "With", "Into", "Onto", "Over", "Under", "After", "Before",
+        "About", "Above", "Across", "Against", "Among", "Around", "Behind",
+        "Some", "Many", "Much", "More", "Most", "Less", "Least", "Each", "Every",
+        "Year", "Years", "Time", "Times", "Days", "Hour", "Week", "Month",
+        "Long", "Last", "Next", "Same", "Such", "Just", "Only", "Then", "Than",
+        "Once", "Here", "Even", "Also", "Both", "Other", "Another", "Until",
+        "Like", "Want", "Need", "Make", "Take", "Find", "Know", "Tell", "Say",
+        "Come", "Came", "Going", "Goes", "Went", "Done", "Made", "Said",
+        "Good", "Best", "Better", "Best", "Bad", "Right", "Left", "Back",
+        "True", "False", "Real", "Sure", "Maybe", "Yeah", "Okay",
+        "Mind", "Hand", "Foot", "Head", "Face", "Eyes", "Body",
+        "City", "Town", "Home", "Door", "Wall", "Road", "Path", "Place",
+        "Light", "Dark", "Cold", "Warm", "Hard", "Soft", "Slow", "Fast",
+        "Open", "Close", "Stop", "Start", "Wait", "Hold", "Turn", "Move",
+        "Look", "Watch", "Hear", "Feel", "Touch", "Walk", "Talk",
+        "First", "Second", "Third", "Final",
+    };
+
     private readonly CharacterRepository characters;
     private readonly SyntheticLifeRepository synthetics;
     private readonly DistrictRepository districts;
@@ -352,15 +383,35 @@ public class XrefService
         if (!settings.EnablePlainTextNer)
             return pass1;
 
-        var sortedNames = index.Keys.OrderByDescending(k => k.Length).ToList();
+        // Auto-link candidates: filter out names too short, lowercase-only, or stop-listed.
+        // Sort longest-first so "Smith & Wesson Vector .45" beats "Smith & Wesson" at the same position.
+        var autoLinkNames = index.Keys
+            .Where(IsAutoLinkable)
+            .OrderByDescending(k => k.Length)
+            .ToList();
+
         var result = new List<TextSegment>();
         foreach (var seg in pass1)
         {
             if (seg is not PlainSegment plain) { result.Add(seg); continue; }
-            result.AddRange(ScanPlainText(plain.Text, sortedNames));
+            result.AddRange(ScanPlainText(plain.Text, autoLinkNames));
         }
         return result;
     }
+
+    private static bool IsAutoLinkable(string name)
+    {
+        if (name.Length < MinAutoLinkLength) return false;
+        if (AutoLinkStopWords.Contains(name)) return false;
+        // Require the name to begin with an uppercase letter or recognized symbol.
+        // Lowercase-only slang ("ghosting") is too easy to confuse with verbs in narration —
+        // explicit [[ghosting]] markup still works for those.
+        var first = name[0];
+        if (char.IsLetter(first) && !char.IsUpper(first)) return false;
+        return true;
+    }
+
+    private static bool IsWordChar(char c) => char.IsLetterOrDigit(c);
 
     private IEnumerable<TextSegment> ScanPlainText(string text, List<string> sortedNames)
     {
@@ -369,17 +420,25 @@ public class XrefService
         while (pos < text.Length)
         {
             // Only try matching at word boundaries (start of string or after non-word char)
-            bool atBoundary = pos == 0 || !char.IsLetterOrDigit(text[pos - 1]);
+            bool atBoundary = pos == 0 || !IsWordChar(text[pos - 1]);
             if (atBoundary)
             {
                 bool matched = false;
                 foreach (var name in sortedNames)
                 {
                     if (pos + name.Length > text.Length) continue;
-                    if (!text.AsSpan(pos, name.Length).Equals(name, StringComparison.OrdinalIgnoreCase)) continue;
-                    // Verify word boundary on the right side
+
+                    var span = text.AsSpan(pos, name.Length);
+
+                    // Case-sensitive first character: an entity named "War" only links when
+                    // the source also has a capital W. Mid-sentence "the war drums" stays plain.
+                    if (char.IsLetter(name[0]) && span[0] != name[0]) continue;
+
+                    if (!span.Equals(name, StringComparison.OrdinalIgnoreCase)) continue;
+
+                    // Verify word boundary on the right side.
                     int end = pos + name.Length;
-                    if (end < text.Length && char.IsLetterOrDigit(text[end])) continue;
+                    if (end < text.Length && IsWordChar(text[end])) continue;
 
                     if (pos > plainStart)
                         yield return new PlainSegment(text[plainStart..pos]);

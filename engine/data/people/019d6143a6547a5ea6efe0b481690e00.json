@@ -10,7 +10,7 @@
   "age": 34,
   "status": "alive",
   "location": "the Gray Zone — three floors below Kyle, near Ashland and Division",
-  "description": "Basira Thakur used to paint murals. Enormous ones — entire sides of buildings\nin the Gray Zone transformed into color and fury and grief. She painted the\ndrowned temples of Old Harbor from memory. She painted the Spire as a\nneedle injecting poison into the sky. She painted faces of people who\ndisappeared during the Consolidation Wars. Axiom Industries noticed.\n\nThey didn't arrest her. That would've made her a martyr. Instead, a crew\ncaught her in an alley after a commissioned piece for the Collective.\nThey held her down and took her hands. Not her arms — her hands. Surgical.\nCorporate-clean. Left the stumps cauterized and a note: \"Axiom appreciates\nyour talent. We hope you'll redirect it.\"\n\nShe redirected it.\n\nShe went to a back-alley augment shop in the Circuit and had both arms\nreplaced from the elbow down with military-surplus combat prosthetics —\nnot hands, not delicate artist's fingers. Claws. Three curved titanium\ndigits per arm, each one as long as a chef's knife, with hydraulic grip\nstrength that can crush rebar. They are ugly, oversized, and terrifying.\nThey were designed for breaching armored doors, not holding brushes.\n\nShe paints with them anyway.\n\nShe scores the claws across surfaces — walls, metal, skin — and uses\nblood (her own, donated, sometimes not donated) mixed with industrial\npigment as paint. The murals are rougher now. Savage. Claw-marks instead\nof brushstrokes. But somehow more honest. the Gray Zone loves them more than\nthe old work. Axiom pretends not to notice, which means they're afraid.\n\nShe is thin, sharp-featured, with cropped dark hair that she cuts herself\n(badly, with the claws). Her eyes are the flat calm of someone who has\nalready lost the worst thing they could lose and discovered they're still\nalive. She wears sleeveless shirts so the augments are always visible —\nnot out of pride but out of refusal to hide what was done to her.",
+  "description": "Basira Thakur used to paint murals. Enormous ones — entire sides of buildings in the Gray Zone transformed into color and fury and grief. She painted the drowned temples of Old Harbor from memory. She painted the Spire as a needle injecting poison into the sky. She painted faces of people who disappeared during the Consolidation Wars. Axiom Industries noticed.\n\nThey didn't arrest her. That would've made her a martyr. Instead, a crew caught her in an alley after a commissioned piece for the Collective. They held her down and took her hands. Not her arms — her hands. Surgical. Corporate-clean. Left the stumps cauterized and a note: \"Axiom appreciates your talent. We hope you'll redirect it.\"\n\nShe redirected it.\n\nShe went to a back-alley augment shop in the Circuit and had both arms replaced from the elbow down with military-surplus combat prosthetics — not hands, not delicate artist's fingers. Claws. Three curved titanium digits per arm, each one as long as a chef's knife, with hydraulic grip strength that can crush rebar. They are ugly, oversized, and terrifying. They were designed for breaching armored doors, not holding brushes.\n\nShe paints with them anyway.\n\nShe scores the claws across surfaces — walls, metal, skin — and uses blood (her own, donated, sometimes not donated) mixed with industrial pigment as paint. The murals are rougher now. Savage. Claw-marks instead of brushstrokes. But somehow more honest. the Gray Zone loves them more than the old work. Axiom pretends not to notice, which means they're afraid.\n\nShe is thin, sharp-featured, with cropped dark hair that she cuts herself (badly, with the claws). Her eyes are the flat calm of someone who has already lost the worst thing they could lose and discovered they're still alive. She wears sleeveless shirts so the augments are always visible — not out of pride but out of refusal to hide what was done to her.",
   "psychology": {
     "facet_weights": {
       "wound": 0.9,
@@ -44,11 +44,11 @@
       "She conflates being needed with being loved",
       "She believes art redeems everything. It might not."
     ],
-    "secret": "She can still feel her hands. Phantom sensation. Every night she feels\nherself holding a brush, the soft resistance of oil paint, the texture\nof canvas. She wakes up and sees the claws and has to remember all over\nagain. Every single morning."
+    "secret": "She can still feel her hands. Phantom sensation. Every night she feels herself holding a brush, the soft resistance of oil paint, the texture of canvas. She wakes up and sees the claws and has to remember all over again. Every single morning."
   },
   "speech_patterns": {
-    "vocabulary": "Art vocabulary mixed with street practicality. She describes the world\nin terms of color, composition, and texture. Violence is discussed in\nthe same tone as a brushstroke — clinically, with attention to form.",
-    "cadence": "Measured, unhurried. She pauses before important words as if choosing\npigment. Sentences tend to be short and declarative. She doesn't\nwaste words, but when she does speak at length, it's about art,\nand her voice changes — warmer, faster, almost excited.",
+    "vocabulary": "Art vocabulary mixed with street practicality. She describes the world in terms of color, composition, and texture. Violence is discussed in the same tone as a brushstroke — clinically, with attention to form.",
+    "cadence": "Measured, unhurried. She pauses before important words as if choosing pigment. Sentences tend to be short and declarative. She doesn't waste words, but when she does speak at length, it's about art, and her voice changes — warmer, faster, almost excited.",
     "verbal_tics": [],
     "example_lines": [
       "You should see me try to eat noodles. It's a whole performance.",
@@ -63,28 +63,28 @@
     {
       "name": "Kyle",
       "type": "neighbor / mutual respect",
-      "description": "They live in the same building in the Gray Zone. They don't talk much.\nBut there's a recognition — two people who lost something essential\nand rebuilt themselves around the absence. Kyle sees the claws and\nunderstands discipline. Maren sees the katana and understands tools\nthat are also wounds. She once painted his silhouette on a wall\nwithout asking. He never mentioned it. They both know.",
+      "description": "They live in the same building in the Gray Zone. They don't talk much. But there's a recognition — two people who lost something essential and rebuilt themselves around the absence. Kyle sees the claws and understands discipline. Maren sees the katana and understands tools that are also wounds. She once painted his silhouette on a wall without asking. He never mentioned it. They both know.",
       "emotional_core": "",
       "story_tension": ""
     },
     {
       "name": "Mrs. Chen",
       "type": "regular customer / quiet friendship",
-      "description": "Mrs. Chen makes Maren special noodles — cut into pieces she can\nmanage with the claws. Neither of them has ever acknowledged this\naccommodation. Mrs. Chen just serves them that way. Maren just\neats them that way.",
+      "description": "Mrs. Chen makes Maren special noodles — cut into pieces she can manage with the claws. Neither of them has ever acknowledged this accommodation. Mrs. Chen just serves them that way. Maren just eats them that way.",
       "emotional_core": "",
       "story_tension": ""
     },
     {
       "name": "Pixel",
       "type": "augment maintenance / unlikely bond",
-      "description": "Pixel maintains Maren's claws. They're fascinated by the military\nhardware and keep offering to add features (retractable blades,\nbuilt-in welding torch). Maren always refuses. The claws are what\nthey are. But she lets Pixel talk while they work, and sometimes\nshe listens.",
+      "description": "Pixel maintains Maren's claws. They're fascinated by the military hardware and keep offering to add features (retractable blades, built-in welding torch). Maren always refuses. The claws are what they are. But she lets Pixel talk while they work, and sometimes she listens.",
       "emotional_core": "",
       "story_tension": ""
     },
     {
       "name": "Axiom Industries",
       "type": "enemy / subject matter",
-      "description": "They took her hands. She took their walls. The war is ongoing,\nfought in pigment and blood and claw-marks. Every mural is an act\nof defiance. Every cleanup crew Axiom sends is an admission that\nthe defiance works.",
+      "description": "They took her hands. She took their walls. The war is ongoing, fought in pigment and blood and claw-marks. Every mural is an act of defiance. Every cleanup crew Axiom sends is an admission that the defiance works.",
       "emotional_core": "",
       "story_tension": ""
     }
@@ -98,7 +98,7 @@
     "The claws malfunction. Pixel can fix them, but the parts are only available from Axiom.",
     "She paints Kyle's story on a wall. He has to decide if he wants the world to see it."
   ],
-  "narrative_function": "Maren is the mirror to Kyle's central contradiction, but inverted.\nKyle chose the sword. Maren had the claws forced on her. Kyle clings\nto a romantic philosophy about his weapon. Maren has no romance about\nhers — they are the evidence of what was taken from her.\n\nShe asks the question: what do you do when the thing that defines you\nis also the thing that was done TO you? Kyle's katana is his identity\nby choice. Maren's claws are her identity by violence. But both of them\nhave rebuilt themselves around a tool that is also a wound.\n\nShe also represents art as resistance — the idea that creating something\nbeautiful (or at least true) in an ugly world is its own form of bushido.\nShe would never use that word. But Kyle might recognize it.\n\nAnd there's the unspoken question: if Axiom took Kyle's arms instead of\nMaren's hands, would he have rebuilt himself? Or would he have broken?\nHe doesn't know. That's why he respects her.",
+  "narrative_function": "Maren is the mirror to Kyle's central contradiction, but inverted. Kyle chose the sword. Maren had the claws forced on her. Kyle clings to a romantic philosophy about his weapon. Maren has no romance about hers — they are the evidence of what was taken from her.\n\nShe asks the question: what do you do when the thing that defines you is also the thing that was done TO you? Kyle's katana is his identity by choice. Maren's claws are her identity by violence. But both of them have rebuilt themselves around a tool that is also a wound.\n\nShe also represents art as resistance — the idea that creating something beautiful (or at least true) in an ugly world is its own form of bushido. She would never use that word. But Kyle might recognize it.\n\nAnd there's the unspoken question: if Axiom took Kyle's arms instead of Maren's hands, would he have rebuilt himself? Or would he have broken? He doesn't know. That's why he respects her.",
   "augmentations": "",
   "daily_life": "",
   "affiliation": "",

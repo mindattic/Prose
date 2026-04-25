@@ -220,6 +220,93 @@ public class XrefServiceTests
         Assert.That(xrefs[0].Text, Is.EqualTo("The Circuit"));
     }
 
+    // ── Heuristics: capital-letter rule, longest-match, stop words ──────────────
+
+    [Test]
+    public void ParseSegments_LowercaseSourceDoesNotMatchProperNoun()
+    {
+        // Entity "War Machine" (4471-K codename, hypothetical) should not link in
+        // a sentence where the source word is lowercase ("war").
+        factions.Save(new FactionData { Name = "Storm Brigade", Motto = "Ride or die." });
+
+        var segments = svc.ParseSegments("a storm brigade of cyclists rolled past");
+
+        // Source is fully lowercase — should remain plain.
+        var xrefs = segments.OfType<XrefSegment>().ToList();
+        Assert.That(xrefs, Is.Empty);
+    }
+
+    [Test]
+    public void ParseSegments_FirearmBeatsManufacturer_LongestMatchWins()
+    {
+        // Classic case: corporation "Vector Arms" makes firearm "Vector Arms M9".
+        // Text mentions the firearm — the firearm's longer name should win.
+        corps.Save(new CorponationData { Name = "Vector Arms", Sector = "Firearms" });
+        weaponry.Save(new WeaponryData { Name = "Vector Arms M9", Category = "pistol" });
+
+        var segments = svc.ParseSegments("She drew a Vector Arms M9 from her holster.");
+
+        var xrefs = segments.OfType<XrefSegment>().ToList();
+        Assert.That(xrefs, Has.Count.EqualTo(1));
+        Assert.That(xrefs[0].Text, Is.EqualTo("Vector Arms M9"));
+        Assert.That(xrefs[0].Entry.Type, Is.EqualTo("weapon"));
+    }
+
+    [Test]
+    public void ParseSegments_StopWordsNotLinked_EvenWhenIndexed()
+    {
+        // If someone names a faction "There" or "Time", common-word stop list
+        // should keep narration prose ("Time is money") from auto-linking it.
+        factions.Save(new FactionData { Name = "There", Motto = "test" });
+        factions.Save(new FactionData { Name = "Time",  Motto = "test" });
+
+        var segments = svc.ParseSegments("There is no Time like the present.");
+
+        var xrefs = segments.OfType<XrefSegment>().ToList();
+        Assert.That(xrefs, Is.Empty);
+    }
+
+    [Test]
+    public void ParseSegments_ShortNamesNotAutoLinked()
+    {
+        // 3-character names land in the index but are too noisy for plain-text auto-linking.
+        // Explicit [[wiki]] markup should still resolve them (covered in Pass 1).
+        chars.Save(new CharacterData { Name = "Kai", Role = "Runner" });
+
+        var segments = svc.ParseSegments("Kai walks the wire.");
+
+        var xrefs = segments.OfType<XrefSegment>().ToList();
+        Assert.That(xrefs, Is.Empty);
+    }
+
+    [Test]
+    public void ParseSegments_ExplicitWikiLinkBypassesAutoLinkRules()
+    {
+        // Even if "Kai" is too short for auto-linking, [[Kai]] markup must still resolve.
+        chars.Save(new CharacterData { Name = "Kai", Role = "Runner" });
+
+        var segments = svc.ParseSegments("[[Kai]] walks the wire.");
+
+        var xrefs = segments.OfType<XrefSegment>().ToList();
+        Assert.That(xrefs, Has.Count.EqualTo(1));
+        Assert.That(xrefs[0].Text, Is.EqualTo("Kai"));
+    }
+
+    [Test]
+    public void ParseSegments_LowercaseEntityNotAutoLinked_ButExplicitWorks()
+    {
+        // Lowercase slang ("ghosting") should not auto-link in narration —
+        // prose like "she was ghosting him" would false-positive.
+        // Explicit [[ghosting]] markup should still resolve.
+        vocabulary.Save(new VocabularyData { Term = "ghosting", Definition = "Erasing trail." });
+
+        var auto = svc.ParseSegments("She was ghosting him for weeks.");
+        Assert.That(auto.OfType<XrefSegment>(), Is.Empty);
+
+        var explicitSeg = svc.ParseSegments("[[ghosting]] is the move.");
+        Assert.That(explicitSeg.OfType<XrefSegment>().Count(), Is.EqualTo(1));
+    }
+
     // ── AllEntries ────────────────────────────────────────────────────────────
 
     [Test]

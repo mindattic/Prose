@@ -275,8 +275,27 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<StoryDirectorService>();
         services.AddSingleton<IStoryDirectorService>(sp => sp.GetRequiredService<StoryDirectorService>());
 
-        // Claude Code CLI bridge — Writer chat routes prompts through `claude -p` subprocess
+        // Claude Code CLI bridge — legacy Writer-chat path (kept until UI fully migrated to operator)
         services.AddSingleton<ClaudeCliService>();
+
+        // Writer operator — interactive chat partner that drives StreetSamurai services
+        // via Anthropic tool-use, replacing per-message CLI spawn. Scoped per Blazor circuit
+        // so each writing session has its own chat history.
+        services.AddHttpClient<Services.Operator.AnthropicToolClient>();
+        services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.QueryWorldGraphTool>();
+        services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.ValidateCanonTool>();
+        services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.DraftCombatSceneTool>();
+        services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.OutlineChapterTool>();
+        services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.ScoreStoryQualityTool>();
+        services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.RefineStoryTool>();
+        services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.ExtractEntitiesTool>();
+        services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.PredictBehaviorTool>();
+        services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.GetVoiceContextTool>();
+        services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.GetConsequencesTool>();
+        services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.RecordCanonChangeTool>();
+        services.AddSingleton<Services.Operator.IWriterTool, Services.Operator.Tools.ProposeStoryEditsTool>();
+        services.AddSingleton<Services.Operator.WriterToolRegistry>();
+        services.AddScoped<Services.Operator.WriterOperatorService>();
 
         // Geographic navigation, pathfinding, and dynamic place generation
         services.AddSingleton<NavigationService>();

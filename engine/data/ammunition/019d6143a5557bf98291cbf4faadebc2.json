@@ -9,7 +9,7 @@
   "manufacturer": "TESSERA CORPONATION",
   "tier_availability": "Tier 3+",
   "legality": "Restricted",
-  "specifications": "weight_per_round: 2.1g\nmuzzle_velocity: 1,050 m/s\npenetration_rating: Individual: soft armor only / Cumulative: degrades hard armor over sustained fire\neffective_against: Personnel, light vehicles (sustained fire), drones, soft-skinned targets\ncountermeasures: Hard plate armor (individual rounds), sealed respiratory protection (ceramic dust), magnetic deflection fields",
+  "specifications": "weight_per_round: 2.1g muzzle_velocity: 1,050 m/s penetration_rating: Individual: soft armor only / Cumulative: degrades hard armor over sustained fire effective_against: Personnel, light vehicles (sustained fire), drones, soft-skinned targets countermeasures: Hard plate armor (individual rounds), sealed respiratory protection (ceramic dust), magnetic deflection fields",
   "compatible_weapons": [
     "Gauss Flechette Repeater GFR-3 'Needlerain'"
   ],

@@ -15,7 +15,7 @@
     "Pre-motor intent reading",
     "Pattern prediction"
   ],
-  "specifications": "caliber: 12 gauge\neffective_range: 55 meters (smart-linked slug), 30 meters (smart-linked buckshot)\nrate_of_fire: Semi-automatic (0.4s ammunition type transition)\nmagazine_capacity: 6 rounds (3+3 dual-stack)\nweight: 4.1 kg\nBCI_latency: <8ms",
+  "specifications": "caliber: 12 gauge effective_range: 55 meters (smart-linked slug), 30 meters (smart-linked buckshot) rate_of_fire: Semi-automatic (0.4s ammunition type transition) magazine_capacity: 6 rounds (3+3 dual-stack) weight: 4.1 kg BCI_latency: <8ms",
   "tactical_use": "A smart-linked shotgun with automated ammunition selection based on the operator's targeting intent. The dual-stack magazine maintains loaded status with two ammunition types simultaneously. The BCI system reads targeting intent and chambers the appropriate round automatically. Pattern prediction displays expected impact area before firing. Reduces cognitive load in multi-threat environments by eliminating ammunition-selection decisions. Limited magazine capacity requires frequent reloading.",
   "cultural_context": "The Oathkeeper crosses a line that many weapons professionals are uncomfortable with. The automated ammunition selection means the weapon is making tactical decisions — choosing what kind of violence to deliver based on its reading of the operator's neural state. Proponents argue the operator retains trigger control. Critics argue that a weapon choosing its own ammunition type is one step from choosing its own targets. The debate is ongoing and unlikely to resolve.",
   "known_users": [
