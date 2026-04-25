@@ -197,7 +197,7 @@ public static class ServiceCollectionExtensions
         // socket-stability tuning (PooledConnectionLifetime, etc.) lives there.
         services.AddSingleton<ClaudeService>();
         services.AddSingleton<OpenAiService>();
-        services.AddHttpClient<DallEService>();
+        services.AddSingleton<DallEService>();
         services.AddSingleton<LlmRouter>(sp => new LlmRouter(
             sp.GetRequiredService<ClaudeService>(),
             sp.GetRequiredService<OpenAiService>(),

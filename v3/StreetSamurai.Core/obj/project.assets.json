@@ -1366,8 +1366,8 @@
     },
     "MindAttic.Legion/2.0.0": {
       "type": "project",
-      "path": "../../LLMVoting/MindAttic.Legion/MindAttic.Legion.csproj",
-      "msbuildProject": "../../LLMVoting/MindAttic.Legion/MindAttic.Legion.csproj"
+      "path": "../../MindAttic.Legion/MindAttic.Legion/MindAttic.Legion.csproj",
+      "msbuildProject": "../../MindAttic.Legion/MindAttic.Legion/MindAttic.Legion.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1420,8 +1420,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\Projects\\MindAttic\\StreetSamurai\\LLMVoting\\MindAttic.Legion\\MindAttic.Legion.csproj": {
-              "projectPath": "D:\\Projects\\MindAttic\\StreetSamurai\\LLMVoting\\MindAttic.Legion\\MindAttic.Legion.csproj"
+            "D:\\Projects\\MindAttic\\StreetSamurai\\MindAttic.Legion\\MindAttic.Legion\\MindAttic.Legion.csproj": {
+              "projectPath": "D:\\Projects\\MindAttic\\StreetSamurai\\MindAttic.Legion\\MindAttic.Legion\\MindAttic.Legion.csproj"
             }
           }
         }
