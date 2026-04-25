@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "dgSpecHash": "T8si7ojbqoU=",
-  "success": false,
+  "dgSpecHash": "j5FQYnZlCX4=",
+  "success": true,
   "projectFilePath": "D:\\Projects\\MindAttic\\StreetSamurai\\v3\\StreetSamurai.Blazor\\StreetSamurai.Blazor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ryand\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
@@ -27,17 +27,5 @@
     "C:\\Users\\ryand\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.11\\sqlitepclraw.provider.e_sqlite3.2.1.11.nupkg.sha512",
     "C:\\Users\\ryand\\.nuget\\packages\\system.speech\\10.0.5\\system.speech.10.0.5.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1105",
-      "level": "Error",
-      "message": "Unable to find project information for 'D:\\Projects\\MindAttic\\StreetSamurai\\LLMVoting\\MindAttic.Legion\\MindAttic.Legion.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
-      "projectPath": "D:\\Projects\\MindAttic\\StreetSamurai\\v3\\StreetSamurai.Blazor\\StreetSamurai.Blazor.csproj",
-      "filePath": "D:\\Projects\\MindAttic\\StreetSamurai\\v3\\StreetSamurai.Blazor\\StreetSamurai.Blazor.csproj",
-      "libraryId": "D:\\Projects\\MindAttic\\StreetSamurai\\LLMVoting\\MindAttic.Legion\\MindAttic.Legion.csproj",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    }
-  ]
+  "logs": []
 }
