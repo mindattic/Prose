@@ -1,7 +1,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Microsoft.Extensions.Logging;
-using MindAttic.LLMVoting;
+using MindAttic.Legion;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;

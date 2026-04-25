@@ -1,4 +1,4 @@
-using MindAttic.LLMVoting;
+using MindAttic.Legion;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;

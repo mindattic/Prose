@@ -28,6 +28,7 @@
 @inject NewsRepository NewsRepo
 @inject EntertainmentRepository EntertainmentRepo
 @inject ConsumerGoodRepository GoodsRepo
+@inject IWriteAccessProvider Access
 
 
 @if (tiles.Count == 0)
@@ -63,13 +64,14 @@ else
     {
         title = Slug?.ToLower() switch
         {
-            "characters"    => "Characters",
-            "organizations" => "Organizations",
-            "gear"          => "Gear",
-            "world"         => "World",
-            "culture"       => "Culture",
-            "tools"         => "Tools",
-            _               => Slug ?? "Board"
+            "characters"     => "Characters",
+            "organizations"  => "Organizations",
+            "gear"           => "Gear",
+            "world"          => "World",
+            "culture"        => "Culture",
+            "tools"          => "Tools",
+            "visualizations" => "Visualizations",
+            _                => Slug ?? "Board"
         };
 
         tiles = title switch
@@ -115,16 +117,29 @@ else
                 new("bi-film",                "/entertainment",   "Entertainment",   EntertainmentRepo.GetAll().Count),
                 new("bi-basket",              "/goods",           "Consumer Goods",  GoodsRepo.GetAll().Count),
             ],
-            "Tools" =>
+            "Tools" => BuildToolsTiles(),
+            "Visualizations" =>
             [
-                new("bi-speedometer2",        "/dashboard",       "Dashboard",       0, true),
                 new("bi-diagram-3",           "/graph",           "World Graph",     0, true),
-                new("bi-map",                 "/map",             "Map",             0, true),
-                new("bi-check2-circle",       "/facts",           "Fact Discovery",  0, true),
-                new("bi-globe-americas",      "/heritage",        "Heritage",        0, true),
-                new("bi-book-half",           "/oracle",          "World Oracle",    0, true),
+                new("bi-map-fill",            "/map",             "Map",             0, true),
+                new("bi-tree-fill",           "/heritage",        "Heritage",        0, true),
             ],
             _ => []
         };
+    }
+
+    private List<BoardTile> BuildToolsTiles()
+    {
+        var list = new List<BoardTile>
+        {
+            new("bi-speedometer2", "/dashboard", "Dashboard",    0, true),
+            new("bi-book-half",    "/oracle",    "World Oracle", 0, true),
+        };
+        if (Access.CanWrite)
+        {
+            list.Add(new("bi-journal-richtext", "/stories", "Stories",        0, true));
+            list.Add(new("bi-lightbulb",        "/facts",   "Fact Discovery", 0, true));
+        }
+        return list;
     }
 }

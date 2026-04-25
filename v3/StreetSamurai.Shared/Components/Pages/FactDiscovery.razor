@@ -1,4 +1,5 @@
 @page "/facts"
+@attribute [Authorize(Roles = "Contributor,Administrator")]
 @inject FactDiscoveryService Facts
 @inject FactExtractionService Extraction
 @inject FactResolutionService Resolution

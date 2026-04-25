@@ -430,24 +430,14 @@
           }
         }
       },
-      "MindAttic.LLMVoting/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v10.0",
-        "compile": {
-          "bin/placeholder/MindAttic.LLMVoting.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/MindAttic.LLMVoting.dll": {}
-        }
-      },
       "StreetSamurai.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
           "BCrypt.Net-Next": "4.0.3",
+          "D:\\Projects\\MindAttic\\StreetSamurai\\LLMVoting\\MindAttic.Legion\\MindAttic.Legion.csproj": "1.0.0",
           "Markdig": "1.1.2",
           "Microsoft.Data.Sqlite": "10.0.5",
-          "MindAttic.LLMVoting": "1.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -1011,11 +1001,6 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "MindAttic.LLMVoting/1.0.0": {
-      "type": "project",
-      "path": "../../LLMVoting/LLMVoting/LLMVoting.csproj",
-      "msbuildProject": "../../LLMVoting/LLMVoting/LLMVoting.csproj"
-    },
     "StreetSamurai.Core/1.0.0": {
       "type": "project",
       "path": "../StreetSamurai.Core/StreetSamurai.Core.csproj",
@@ -1542,5 +1527,16 @@
         }
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'D:\\Projects\\MindAttic\\StreetSamurai\\LLMVoting\\MindAttic.Legion\\MindAttic.Legion.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
+      "libraryId": "D:\\Projects\\MindAttic\\StreetSamurai\\LLMVoting\\MindAttic.Legion\\MindAttic.Legion.csproj",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\LLMVoting\LLMVoting\LLMVoting.csproj" />
+    <ProjectReference Include="..\..\LLMVoting\MindAttic.Legion\MindAttic.Legion.csproj" />
   </ItemGroup>
 
 </Project>
