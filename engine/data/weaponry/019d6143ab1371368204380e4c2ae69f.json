@@ -2,26 +2,26 @@
   "id": "019d6143ab1371368204380e4c2ae69f",
   "rating": 60,
   "vote_count": 1,
-  "name": "Arcturus Defense Solutions Kinetic Impactor Round KIR-10 \u0027Hammerfall\u0027",
+  "name": "Arcturus Defense Solutions Kinetic Impactor Round KIR-10 'Hammerfall'",
   "type": "weapon",
   "aliases": [],
   "category": "rifle",
-  "description": "A heavy-caliber anti-materiel round designed for the Arcturus AM-10 platform that uses a two-stage propulsion system \u2014 conventional propellant for initial acceleration followed by a secondary rocket motor that ignites after 50 meters, boosting the 20mm tungsten penetrator to a terminal velocity that exceeds any conventional rifle round. The KIR-10 was designed to defeat next-generation reactive armor systems that use explosive countermeasures to deflect standard anti-materiel rounds \u2014 the rocket-boosted second stage arrives too fast for reactive systems to respond. Against personnel, the round is grotesquely excessive, but its use against augmented targets with military-grade armor implants has been documented.",
+  "description": "A heavy-caliber anti-materiel round designed for the Arcturus AM-10 platform that uses a two-stage propulsion system — conventional propellant for initial acceleration followed by a secondary rocket motor that ignites after 50 meters, boosting the 20mm tungsten penetrator to a terminal velocity that exceeds any conventional rifle round. The KIR-10 was designed to defeat next-generation reactive armor systems that use explosive countermeasures to deflect standard anti-materiel rounds — the rocket-boosted second stage arrives too fast for reactive systems to respond. Against personnel, the round is grotesquely excessive, but its use against augmented targets with military-grade armor implants has been documented.",
   "manufacturer": "ARCTURUS DEFENSE SOLUTIONS",
   "tier_availability": "Tier 5",
-  "legality": "Military restricted \u2014 anti-materiel authorization",
+  "legality": "Military restricted — anti-materiel authorization",
   "base_technologies": [
     "Dual-stage propulsion projectile engineering",
     "Rocket-boosted anti-materiel design",
     "Reactive armor defeat ballistics"
   ],
-  "specifications": "caliber: 20mm tungsten penetrator\nstage 1: Conventional propellant, 600 m/s\nstage 2: Rocket motor ignition at 50m, terminal velocity 1,800 m/s\neffective range: 100-1,500 meters\nreactive armor defeat: Arrives before countermeasure activation\nmagazine: 5 rounds in AM-10 platform\nround weight: 180g\nrifle weight: 14 kg\npropellant: Dual-stage \u2014 chemical \u002B solid rocket",
+  "specifications": "caliber: 20mm tungsten penetrator stage 1: Conventional propellant, 600 m/s stage 2: Rocket motor ignition at 50m, terminal velocity 1,800 m/s effective range: 100-1,500 meters reactive armor defeat: Arrives before countermeasure activation magazine: 5 rounds in AM-10 platform round weight: 180g rifle weight: 14 kg propellant: Dual-stage — chemical + solid rocket",
   "tactical_use": "",
   "cultural_context": "",
   "known_users": [],
   "story_hooks": [
-    "A KIR-10 round was fired through the engine block of an armored convoy vehicle, punching through both sides \u2014 the shooter was over a kilometer away and the reactive armor never triggered.",
-    "Arcturus is field testing KIR-10 rounds with a third stage \u2014 a terminal guidance package that allows the round to adjust course in the final 100 meters of flight."
+    "A KIR-10 round was fired through the engine block of an armored convoy vehicle, punching through both sides — the shooter was over a kilometer away and the reactive armor never triggered.",
+    "Arcturus is field testing KIR-10 rounds with a third stage — a terminal guidance package that allows the round to adjust course in the final 100 meters of flight."
   ],
   "ammunition_type": [],
   "tags": [
@@ -35,7 +35,7 @@
     "tier 5",
     "lethal"
   ],
-  "image_prompt": "Professional weapons catalog photograph of the Arcturus KIR-10 \u0027Hammerfall\u0027 20mm kinetic impactor round. The cartridge is positioned horizontally on a matte black steel surface, slightly angled to showcase the two-stage separation seam and burnt-orange rocket motor collar. Dramatic side-lighting from the left creates sharp shadows defining the ogival tungsten penetrator tip and emphasizes the material transitions between brass casing and anodized aluminum sections. The penetrator tip catches cool rim-light. Shallow depth of field keeps the round in sharp focus. Hyperrealistic detail showing serial markings, ablation scarring on the tip, and the faint propellant charge inspection window. Neo-noir urban aesthetic: cool color grading with slight teal tint in shadows, slight chromatic aberration at edges, subtle holographic lens flare suggesting military targeting systems. Technical overlay visible in corner (barely): ballistic trajectory data. Stealth-tech matte textures contrasted against polished metals. --ar 3:2 --v 6",
+  "image_prompt": "Professional weapons catalog photograph of the Arcturus KIR-10 'Hammerfall' 20mm kinetic impactor round. The cartridge is positioned horizontally on a matte black steel surface, slightly angled to showcase the two-stage separation seam and burnt-orange rocket motor collar. Dramatic side-lighting from the left creates sharp shadows defining the ogival tungsten penetrator tip and emphasizes the material transitions between brass casing and anodized aluminum sections. The penetrator tip catches cool rim-light. Shallow depth of field keeps the round in sharp focus. Hyperrealistic detail showing serial markings, ablation scarring on the tip, and the faint propellant charge inspection window. Neo-noir urban aesthetic: cool color grading with slight teal tint in shadows, slight chromatic aberration at edges, subtle holographic lens flare suggesting military targeting systems. Technical overlay visible in corner (barely): ballistic trajectory data. Stealth-tech matte textures contrasted against polished metals. --ar 3:2 --v 6",
   "dalle3_prompt": "",
   "parent_corponation": "Arcturus Defense Solutions",
   "related_entities": [
@@ -43,17 +43,17 @@
     "Charnel Propulsion",
     "Nika Svensson-Kone",
     "Tessera Corponation Palimpsest Identity Engine",
-    "The Riveters\u0027 Round",
-    "Vantablack FH-20 \u0027Convoy\u0027"
+    "The Riveters' Round",
+    "Vantablack FH-20 'Convoy'"
   ],
   "physical_description": {
-    "visual_profile": "A brutalist cartridge with an aggressive, military aesthetic. The round presents as a massive cylindrical projectile with a pronounced ogival tip and a distinctly segmented body \u2014 the separation between conventional and rocket-boosted stages is visibly marked by a circumferential seam and heat-scorched aluminum ring. The entire assembly has the menacing geometry of purpose-built destruction.",
+    "visual_profile": "A brutalist cartridge with an aggressive, military aesthetic. The round presents as a massive cylindrical projectile with a pronounced ogival tip and a distinctly segmented body — the separation between conventional and rocket-boosted stages is visibly marked by a circumferential seam and heat-scorched aluminum ring. The entire assembly has the menacing geometry of purpose-built destruction.",
     "dimensions": "Overall length: 127mm. Bullet diameter (20mm tungsten penetrator): 20.3mm. Case length: 98mm. Rocket motor housing diameter: 22mm. Appears oversized even compared to other anti-materiel rounds.",
-    "weight_description": "Exceptionally dense and hefty \u2014 180g creates a substantial feel despite compact form factor. The tungsten penetrator core loads forward weight, creating an unbalanced, nose-heavy impression that suggests kinetic power.",
+    "weight_description": "Exceptionally dense and hefty — 180g creates a substantial feel despite compact form factor. The tungsten penetrator core loads forward weight, creating an unbalanced, nose-heavy impression that suggests kinetic power.",
     "primary_material": "Tungsten carbide penetrator core, brass composite case with embedded aluminum alloy rocket motor housing. Structural integrity reinforced with carbon-polymer sabot collar.",
     "finish": "Satin brass casing with oxidized dark patches from manufacturing heat stress. The rocket motor section features a distinctive burnt-orange anodized aluminum collar. Tungsten tip has a gunmetal gray, slightly textured finish from tungsten carbide working.",
     "color_scheme": "Burnished brass primary, charcoal-gray tungsten penetrator, burnt-orange rocket motor band accent. Subtle scorch marks and carbon streaking suggest field use or bench-testing.",
-    "grip_texture": "Not applicable \u2014 designed as a magazine-loaded projectile. The case neck features subtle knurling for loading assistance.",
+    "grip_texture": "Not applicable — designed as a magazine-loaded projectile. The case neck features subtle knurling for loading assistance.",
     "distinctive_features": [
       "Visible circumferential seam marking stage separation point at 50mm mark",
       "Burnt-orange anodized aluminum rocket motor housing ring",
@@ -63,8 +63,8 @@
       "Hermetically sealed rocket motor ignition port (threaded brass plug)",
       "Propellant charge inspection window on aft section (transparent polymer inlay)"
     ],
-    "manufacturer_markings": "Arcturus Defense Solutions logo embossed on brass case at midpoint. Text reads: \u0027ARCTURUS KIR-10 HAMMERFALL | 20MM | DUAL-STAGE | MIL-RESTRICTED\u0027 in 2mm serif lettering. Serial batch code stamped in tiny characters on the aluminum rocket collar. NATO compliance marking laser-etched on penetrator.",
+    "manufacturer_markings": "Arcturus Defense Solutions logo embossed on brass case at midpoint. Text reads: 'ARCTURUS KIR-10 HAMMERFALL | 20MM | DUAL-STAGE | MIL-RESTRICTED' in 2mm serif lettering. Serial batch code stamped in tiny characters on the aluminum rocket collar. NATO compliance marking laser-etched on penetrator.",
     "condition_typical": "Field-ready, pristine specimens show minimal wear; however, ammunition typically exhibits micro-oxidation on brass casings and slight polymer discoloration from thermal cycling in combat conditions. Storage marks from magazine compression visible on sabot collar."
   },
-  "visual_prompt": "Professional weapons catalog photograph of the Arcturus KIR-10 \u0027Hammerfall\u0027 20mm kinetic impactor round. The cartridge is positioned horizontally on a matte black steel surface, slightly angled to showcase the two-stage separation seam and burnt-orange rocket motor collar. Dramatic side-lighting from the left creates sharp shadows defining the ogival tungsten penetrator tip and emphasizes the material transitions between brass casing and anodized aluminum sections. The penetrator tip catches cool rim-light. Shallow depth of field keeps the round in sharp focus. Hyperrealistic detail showing serial markings, ablation scarring on the tip, and the faint propellant charge inspection window. Neo-noir urban aesthetic: cool color grading with slight teal tint in shadows, slight chromatic aberration at edges, subtle holographic lens flare suggesting military targeting systems. Technical overlay visible in corner (barely): ballistic trajectory data. Stealth-tech matte textures contrasted against polished metals. --ar 3:2 --v 6"
+  "visual_prompt": "Professional weapons catalog photograph of the Arcturus KIR-10 'Hammerfall' 20mm kinetic impactor round. The cartridge is positioned horizontally on a matte black steel surface, slightly angled to showcase the two-stage separation seam and burnt-orange rocket motor collar. Dramatic side-lighting from the left creates sharp shadows defining the ogival tungsten penetrator tip and emphasizes the material transitions between brass casing and anodized aluminum sections. The penetrator tip catches cool rim-light. Shallow depth of field keeps the round in sharp focus. Hyperrealistic detail showing serial markings, ablation scarring on the tip, and the faint propellant charge inspection window. Neo-noir urban aesthetic: cool color grading with slight teal tint in shadows, slight chromatic aberration at edges, subtle holographic lens flare suggesting military targeting systems. Technical overlay visible in corner (barely): ballistic trajectory data. Stealth-tech matte textures contrasted against polished metals. --ar 3:2 --v 6"
 }

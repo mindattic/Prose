@@ -9,7 +9,7 @@
   "manufacturer": "Blackwood Commercial Group",
   "tier_availability": "Tier 4+",
   "legality": "Restricted — anti-materiel classification, requires ADS-issued operator license",
-  "specifications": "weight_per_round: 42g (penetrator + sleeve)\nmuzzle_velocity: 4,200 m/s\npenetration_rating: Defeats all personal armor classifications, effective against light vehicle armor and reinforced structural elements\neffective_against: Armored vehicles, fortified positions, heavy synthetic combatants, hardened infrastructure\ncountermeasures: Heavy reactive armor (partially effective), active defense systems, extreme distance (energy dissipation)",
+  "specifications": "weight_per_round: 42g (penetrator + sleeve) muzzle_velocity: 4,200 m/s penetration_rating: Defeats all personal armor classifications, effective against light vehicle armor and reinforced structural elements effective_against: Armored vehicles, fortified positions, heavy synthetic combatants, hardened infrastructure countermeasures: Heavy reactive armor (partially effective), active defense systems, extreme distance (energy dissipation)",
   "compatible_weapons": [
     "Helical Vortex Penetrator HVP-4 'Corkscrew'"
   ],

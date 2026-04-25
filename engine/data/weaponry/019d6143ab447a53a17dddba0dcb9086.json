@@ -1,26 +1,26 @@
 {
   "id": "019d6143ab447a53a17dddba0dcb9086",
   "rating": 70,
-  "name": "Sterling-Nakamura Subsonic Eliminator SE-9 \u0027Hush\u0027",
+  "name": "Sterling-Nakamura Subsonic Eliminator SE-9 'Hush'",
   "type": "weapon",
   "aliases": [],
   "category": "pistol",
-  "description": "A purpose-built suppressed pistol designed from the ground up for silent operation rather than having a suppressor added as an afterthought. The SE-9 uses an integral suppressor barrel, subsonic ammunition with a specialized wipe system, and a locked-breech action that eliminates the mechanical noise of a cycling slide. The result is a pistol with an acoustic signature of 22 dB \u2014 quieter than a whispered conversation. Sterling-Nakamura designed it for executive protection details who need to neutralize threats in environments where gunfire would cause panic \u2014 corporate events, diplomatic functions, crowded transit hubs. The weapon\u0027s existence is an open secret in security circles.",
+  "description": "A purpose-built suppressed pistol designed from the ground up for silent operation rather than having a suppressor added as an afterthought. The SE-9 uses an integral suppressor barrel, subsonic ammunition with a specialized wipe system, and a locked-breech action that eliminates the mechanical noise of a cycling slide. The result is a pistol with an acoustic signature of 22 dB — quieter than a whispered conversation. Sterling-Nakamura designed it for executive protection details who need to neutralize threats in environments where gunfire would cause panic — corporate events, diplomatic functions, crowded transit hubs. The weapon's existence is an open secret in security circles.",
   "manufacturer": "STERLING-NAKAMURA",
-  "tier_availability": "Tier 4\u002B",
-  "legality": "Issued \u2014 Sterling-Nakamura security details",
+  "tier_availability": "Tier 4+",
+  "legality": "Issued — Sterling-Nakamura security details",
   "base_technologies": [
     "Integral suppressor barrel design",
     "Locked-breech silent action",
     "Subsonic wipe-system sound elimination"
   ],
-  "specifications": "caliber: 9mm subsonic, proprietary wipe-suppressed\nacoustic signature: 22 dB at 1 meter\nmagazine: 8 rounds\neffective range: 5-25 meters\naction: Locked-breech, no slide cycling noise\nweight: 0.95 kg\nsuppressor: Integral, non-removable\nwipe replacement: Every 50 rounds\nbarrel length: 22 cm including integral suppressor",
+  "specifications": "caliber: 9mm subsonic, proprietary wipe-suppressed acoustic signature: 22 dB at 1 meter magazine: 8 rounds effective range: 5-25 meters action: Locked-breech, no slide cycling noise weight: 0.95 kg suppressor: Integral, non-removable wipe replacement: Every 50 rounds barrel length: 22 cm including integral suppressor",
   "tactical_use": "",
   "cultural_context": "",
   "known_users": [],
   "story_hooks": [
-    "A man was shot dead at a crowded gala and nobody heard anything \u2014 the body was not discovered for twelve minutes despite hundreds of people in the room.",
-    "A forensic acoustic analyst has developed a method to detect the 22 dB signature of an SE-9 firing using ambient microphone arrays \u2014 Sterling-Nakamura wants the research buried."
+    "A man was shot dead at a crowded gala and nobody heard anything — the body was not discovered for twelve minutes despite hundreds of people in the room.",
+    "A forensic acoustic analyst has developed a method to detect the 22 dB signature of an SE-9 firing using ambient microphone arrays — Sterling-Nakamura wants the research buried."
   ],
   "ammunition_type": [],
   "tags": [
@@ -35,36 +35,36 @@
     "tier 4",
     "lethal"
   ],
-  "image_prompt": "Neo-noir product photography of Sterling-Nakamura SE-9 \u0027Hush\u0027 pistol lying on dark charcoal composite surface, shot from 45-degree angle. Dramatic side-lighting emphasizing the integral suppressor barrel\u0027s geometric heat vents and the seamless frame-to-suppressor integration. Hand in tactical glove (black neoprene with smart-fiber threading) holding grip at bottom frame. Shallow depth of field with shallow focus on the sight line. GLMZ corporate security aesthetic: clean, clinical, professional. Stainless and titanium surfaces catching cold blue-white accent light. Minimize background \u2014 dark gradient fading to near-black. No blood, no grit, no worn aesthetics \u2014 this is a precision instrument of executive protection. Include barely-visible Sterling-Nakamura logo catch under dramatic lighting. --ar 3:2 --v 6",
+  "image_prompt": "Neo-noir product photography of Sterling-Nakamura SE-9 'Hush' pistol lying on dark charcoal composite surface, shot from 45-degree angle. Dramatic side-lighting emphasizing the integral suppressor barrel's geometric heat vents and the seamless frame-to-suppressor integration. Hand in tactical glove (black neoprene with smart-fiber threading) holding grip at bottom frame. Shallow depth of field with shallow focus on the sight line. GLMZ corporate security aesthetic: clean, clinical, professional. Stainless and titanium surfaces catching cold blue-white accent light. Minimize background — dark gradient fading to near-black. No blood, no grit, no worn aesthetics — this is a precision instrument of executive protection. Include barely-visible Sterling-Nakamura logo catch under dramatic lighting. --ar 3:2 --v 6",
   "dalle3_prompt": "",
   "parent_corponation": "",
   "related_entities": [
-    "Brecken Y\u0131lmaz-Osei",
+    "Brecken Yılmaz-Osei",
     "Atharv Forsberg-Quaye",
     "Nika Svensson-Kone",
-    "TESSERA PG-2 \u0027Signature\u0027",
+    "TESSERA PG-2 'Signature'",
     "The Quiet Room"
   ],
   "physical_description": {
-    "visual_profile": "A compact, almost elegant pistol with an unusually long, tapered barrel that seamlessly integrates into the frame \u2014 no visible suppressor threads or muzzle crown. The profile is understated and deliberately non-threatening, resembling a precision instrument more than a weapon. The overall silhouette is sleek and purposeful, with minimal protruding edges.",
+    "visual_profile": "A compact, almost elegant pistol with an unusually long, tapered barrel that seamlessly integrates into the frame — no visible suppressor threads or muzzle crown. The profile is understated and deliberately non-threatening, resembling a precision instrument more than a weapon. The overall silhouette is sleek and purposeful, with minimal protruding edges.",
     "dimensions": "Length: 24.5 cm (including integral suppressor barrel), Width: 3.2 cm, Height: 13 cm, Barrel length: 22 cm",
-    "weight_description": "Light in hand at 0.95 kg \u2014 balanced and refined, sitting comfortably in a palm without the heft expected of a full-size pistol. The weight distribution is forward-heavy due to the integrated suppressor, but feels deliberate and controlled rather than cumbersome.",
+    "weight_description": "Light in hand at 0.95 kg — balanced and refined, sitting comfortably in a palm without the heft expected of a full-size pistol. The weight distribution is forward-heavy due to the integrated suppressor, but feels deliberate and controlled rather than cumbersome.",
     "primary_material": "Aerospace-grade aluminum alloy frame with stainless steel slide and barrel components. The integral suppressor housing is reinforced titanium composite for durability and thermal management.",
-    "finish": "Deep matte graphite with subdued brushed stainless accents on the suppressor housing. The frame has a subtle satin finish to minimize light reflection. No glossy surfaces \u2014 purely functional aesthetics.",
-    "color_scheme": "Charcoal gray frame with gunmetal suppressor housing and matte black internal components visible through machined gaps. Minimal contrast \u2014 designed to disappear visually.",
-    "grip_texture": "Microgrooved polymer grip with a fine crosshatch pattern \u2014 secure without being aggressive. The texture is almost invisible to the eye but provides positive purchase. Completely non-reflective.",
+    "finish": "Deep matte graphite with subdued brushed stainless accents on the suppressor housing. The frame has a subtle satin finish to minimize light reflection. No glossy surfaces — purely functional aesthetics.",
+    "color_scheme": "Charcoal gray frame with gunmetal suppressor housing and matte black internal components visible through machined gaps. Minimal contrast — designed to disappear visually.",
+    "grip_texture": "Microgrooved polymer grip with a fine crosshatch pattern — secure without being aggressive. The texture is almost invisible to the eye but provides positive purchase. Completely non-reflective.",
     "distinctive_features": [
       "Integral suppressor barrel with no removable components or visible seams",
-      "Recessed loading port flush with the frame \u2014 no traditional slide serrations",
+      "Recessed loading port flush with the frame — no traditional slide serrations",
       "Tiny maintenance hatch behind the trigger guard (wipe system access every 50 rounds)",
-      "Minimal sight profile \u2014 low-profile night sights integrated into the slide top",
+      "Minimal sight profile — low-profile night sights integrated into the slide top",
       "Heat dissipation vents machined along the suppressor housing in geometric patterns",
-      "No external magazine release \u2014 magnetic catch concealed in the grip",
+      "No external magazine release — magnetic catch concealed in the grip",
       "Whisper-quiet mechanical components with dampening elastomers visible through frame cutouts",
-      "Sterling-Nakamura logo subtly etched on the slide \u2014 barely perceptible unless light hits it directly"
+      "Sterling-Nakamura logo subtly etched on the slide — barely perceptible unless light hits it directly"
     ],
-    "manufacturer_markings": "Sterling-Nakamura corporate logo etched in matte finish on the slide near the rear sight. \u0027SE-9 HUSH\u0027 stamped discreetly on the frame below the grip. Serial number laser-marked on the barrel extension, visible only when field-stripped. Compliance markings in microfont inside the trigger guard.",
-    "condition_typical": "Pristine to well-maintained \u2014 these weapons are issued to professional security personnel and rarely see prolonged field use. Surfaces remain unmarked and unscratched. Any wear appears as subtle patina from careful handling rather than battle damage."
+    "manufacturer_markings": "Sterling-Nakamura corporate logo etched in matte finish on the slide near the rear sight. 'SE-9 HUSH' stamped discreetly on the frame below the grip. Serial number laser-marked on the barrel extension, visible only when field-stripped. Compliance markings in microfont inside the trigger guard.",
+    "condition_typical": "Pristine to well-maintained — these weapons are issued to professional security personnel and rarely see prolonged field use. Surfaces remain unmarked and unscratched. Any wear appears as subtle patina from careful handling rather than battle damage."
   },
-  "visual_prompt": "Neo-noir product photography of Sterling-Nakamura SE-9 \u0027Hush\u0027 pistol lying on dark charcoal composite surface, shot from 45-degree angle. Dramatic side-lighting emphasizing the integral suppressor barrel\u0027s geometric heat vents and the seamless frame-to-suppressor integration. Hand in tactical glove (black neoprene with smart-fiber threading) holding grip at bottom frame. Shallow depth of field with shallow focus on the sight line. GLMZ corporate security aesthetic: clean, clinical, professional. Stainless and titanium surfaces catching cold blue-white accent light. Minimize background \u2014 dark gradient fading to near-black. No blood, no grit, no worn aesthetics \u2014 this is a precision instrument of executive protection. Include barely-visible Sterling-Nakamura logo catch under dramatic lighting. --ar 3:2 --v 6"
+  "visual_prompt": "Neo-noir product photography of Sterling-Nakamura SE-9 'Hush' pistol lying on dark charcoal composite surface, shot from 45-degree angle. Dramatic side-lighting emphasizing the integral suppressor barrel's geometric heat vents and the seamless frame-to-suppressor integration. Hand in tactical glove (black neoprene with smart-fiber threading) holding grip at bottom frame. Shallow depth of field with shallow focus on the sight line. GLMZ corporate security aesthetic: clean, clinical, professional. Stainless and titanium surfaces catching cold blue-white accent light. Minimize background — dark gradient fading to near-black. No blood, no grit, no worn aesthetics — this is a precision instrument of executive protection. Include barely-visible Sterling-Nakamura logo catch under dramatic lighting. --ar 3:2 --v 6"
 }

@@ -2,25 +2,25 @@
   "id": "019d6143ab477e90a3f35999a3042d03",
   "rating": 80,
   "vote_count": 1,
-  "name": "Street Custom \u0027Ghostwriter\u0027 Grafitti Flamethrower",
+  "name": "Street Custom 'Ghostwriter' Grafitti Flamethrower",
   "type": "weapon",
   "aliases": [],
   "category": "improvised",
-  "description": "A modified paint sprayer loaded with a flammable gel mixture \u2014 typically a combination of spray paint, petroleum jelly, and grain alcohol \u2014 that produces a sticky, burning stream used for both arson and literal weaponized graffiti. The Ghostwriter fires a 2-meter stream of flaming gel that adheres to surfaces and burns for 30-60 seconds, long enough to permanently mark concrete and steel with scorched patterns. Operators use it to burn political messages, territorial markers, and threat sigils directly into building facades. It is simultaneously a weapon and an art tool, and the most skilled Ghostwriters are respected in Tier 1 culture for their ability to burn elaborate images under pressure.",
+  "description": "A modified paint sprayer loaded with a flammable gel mixture — typically a combination of spray paint, petroleum jelly, and grain alcohol — that produces a sticky, burning stream used for both arson and literal weaponized graffiti. The Ghostwriter fires a 2-meter stream of flaming gel that adheres to surfaces and burns for 30-60 seconds, long enough to permanently mark concrete and steel with scorched patterns. Operators use it to burn political messages, territorial markers, and threat sigils directly into building facades. It is simultaneously a weapon and an art tool, and the most skilled Ghostwriters are respected in Tier 1 culture for their ability to burn elaborate images under pressure.",
   "manufacturer": "Street Custom",
-  "tier_availability": "Tier 1\u002B",
-  "legality": "Prohibited \u2014 improvised incendiary",
+  "tier_availability": "Tier 1+",
+  "legality": "Prohibited — improvised incendiary",
   "base_technologies": [
     "Flammable gel adhesion chemistry",
     "Modified sprayer delivery systems"
   ],
-  "specifications": "range: 1-3 meters gel stream\nfuel: Flammable gel mixture (paint \u002B petroleum jelly \u002B alcohol)\nburn duration: 30-60 seconds on surfaces\nreservoir: 1-2 liters, good for 3-5 tags or 15 seconds continuous\nweight: 1.5-3 kg loaded\nignition: Piezoelectric lighter element at nozzle\nadherence: Gel sticks to vertical and overhead surfaces\nconstruction: Modified pump-action paint sprayer",
+  "specifications": "range: 1-3 meters gel stream fuel: Flammable gel mixture (paint + petroleum jelly + alcohol) burn duration: 30-60 seconds on surfaces reservoir: 1-2 liters, good for 3-5 tags or 15 seconds continuous weight: 1.5-3 kg loaded ignition: Piezoelectric lighter element at nozzle adherence: Gel sticks to vertical and overhead surfaces construction: Modified pump-action paint sprayer",
   "tactical_use": "",
   "cultural_context": "",
   "known_users": [],
   "story_hooks": [
-    "A Ghostwriter artist known only by their burn-mark style has been leaving prophetic messages scorched into corporate buildings \u2014 the messages have been accurately predicting corporate actions weeks before they happen.",
-    "A Ghostwriter attack on a residential building went wrong when the gel ignited inside the sprayer, killing the operator \u2014 their dying burn-mark is being treated as a martyr\u0027s last word."
+    "A Ghostwriter artist known only by their burn-mark style has been leaving prophetic messages scorched into corporate buildings — the messages have been accurately predicting corporate actions weeks before they happen.",
+    "A Ghostwriter attack on a residential building went wrong when the gel ignited inside the sprayer, killing the operator — their dying burn-mark is being treated as a martyr's last word."
   ],
   "ammunition_type": [],
   "tags": [
@@ -35,25 +35,25 @@
     "tier 1",
     "lethal"
   ],
-  "image_prompt": "Product photo of a modified industrial paint sprayer reimagined as a flamethrower, mounted on a dark concrete surface. The weapon is positioned at a 45-degree angle to emphasize the modified nozzle assembly and reinforced pump mechanism. Dramatic side-lighting from a single harsh light source casts sharp shadows, highlighting the heat-scorched aluminum body, welded steel bands, and textured grip tape. The nozzle glows faintly warm, suggesting active readiness. Include detail of dried flammable gel residue on the trigger guard and streaked burn marks on the casing. Industrial neo-noir aesthetic \u2014 gritty, street-level engineering, no chrome polish, raw functionality. Dark background emphasizes the weapon\u0027s utilitarian brutalism. --ar 3:2 --v 6",
+  "image_prompt": "Product photo of a modified industrial paint sprayer reimagined as a flamethrower, mounted on a dark concrete surface. The weapon is positioned at a 45-degree angle to emphasize the modified nozzle assembly and reinforced pump mechanism. Dramatic side-lighting from a single harsh light source casts sharp shadows, highlighting the heat-scorched aluminum body, welded steel bands, and textured grip tape. The nozzle glows faintly warm, suggesting active readiness. Include detail of dried flammable gel residue on the trigger guard and streaked burn marks on the casing. Industrial neo-noir aesthetic — gritty, street-level engineering, no chrome polish, raw functionality. Dark background emphasizes the weapon's utilitarian brutalism. --ar 3:2 --v 6",
   "dalle3_prompt": "",
   "parent_corponation": "",
   "related_entities": [
     "Alper Holmberg-Dembele",
-    "Dielectric Filament Anchor Drone DFAD-1 \u0027Cobweb\u0027",
+    "Dielectric Filament Anchor Drone DFAD-1 'Cobweb'",
     "Last Word",
-    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 \u0027Kitestring\u0027"
+    "Tethered Orbital Reconnaissance and Suppression Drone TORSD-7 'Kitestring'"
   ],
   "physical_description": {
-    "visual_profile": "A heavily modified industrial paint sprayer with an aggressive, purpose-built aesthetic. The body has been reinforced and customized with visible welds, heat-resistant cladding, and an oversized nozzle assembly. It reads as part tool, part weapon \u2014 brutalist and functional, with the worn patina of street-level engineering.",
+    "visual_profile": "A heavily modified industrial paint sprayer with an aggressive, purpose-built aesthetic. The body has been reinforced and customized with visible welds, heat-resistant cladding, and an oversized nozzle assembly. It reads as part tool, part weapon — brutalist and functional, with the worn patina of street-level engineering.",
     "dimensions": "68 cm overall length, 12 cm width at widest point (pump handle), 28 cm height including nozzle assembly. Nozzle extends 8 cm from main body.",
-    "weight_description": "Hefty when loaded (2.5-3 kg), with a low center of gravity that settles into the operator\u0027s grip. The weight distribution favors the pump mechanism, making it feel controlled rather than unwieldy despite the bulk.",
+    "weight_description": "Hefty when loaded (2.5-3 kg), with a low center of gravity that settles into the operator's grip. The weight distribution favors the pump mechanism, making it feel controlled rather than unwieldy despite the bulk.",
     "primary_material": "Modified aluminum pressure vessel (original sprayer core), reinforced with welded steel bands and heat-treated steel around the ignition assembly. Grip reinforced with carbon-fiber-reinforced polymer overlay.",
-    "finish": "Matte industrial gunmetal with scorched and discolored patches from repeated use. Heat damage visible around the nozzle assembly \u2014 anodizing burned away in patches, exposing raw metal. Polymer grip shows scratches and grip tape wear.",
-    "color_scheme": "Predominant gunmetal gray with charred black streaking around the nozzle. Accent colors vary \u2014 custom crews often add single-color band wraps or spray-painted markers (red, silver, or phosphorescent yellow) on the reservoir body as signatures.",
+    "finish": "Matte industrial gunmetal with scorched and discolored patches from repeated use. Heat damage visible around the nozzle assembly — anodizing burned away in patches, exposing raw metal. Polymer grip shows scratches and grip tape wear.",
+    "color_scheme": "Predominant gunmetal gray with charred black streaking around the nozzle. Accent colors vary — custom crews often add single-color band wraps or spray-painted markers (red, silver, or phosphorescent yellow) on the reservoir body as signatures.",
     "grip_texture": "Textured grip tape (skateboard-style, worn smooth in high-contact areas), wrapped around a reinforced polymer handle. The trigger area is bare textured polymer, slightly tacky from residual gel overspray.",
     "distinctive_features": [
-      "Oversized piezoelectric ignition assembly at nozzle tip \u2014 visible ceramic element with copper contact points",
+      "Oversized piezoelectric ignition assembly at nozzle tip — visible ceramic element with copper contact points",
       "Heat vents along the nozzle housing to prevent gel ignition in the barrel",
       "Pressure gauge mounted on the side of the reservoir (analog dial, often removed or obscured)",
       "Custom welded steel reinforcement bands around the pump mechanism",
@@ -61,8 +61,8 @@
       "Quick-release safety collar around the pump trigger guard",
       "Etched or spray-painted crew tags or artist signatures on the underside of the reservoir"
     ],
-    "manufacturer_markings": "Original manufacturer logos (Devolt or similar industrial brand) are often scratched or deliberately obscured. Street Custom builders typically add unsigned marks \u2014 crew symbols burned or scratched into the steel bands, or temporary stickers applied to the reservoir that are regularly replaced.",
-    "condition_typical": "Field-worn and personalized. Signs of heavy use include scorching around the nozzle, gel residue crusted on the pump handle, slight corrosion on exposed welds, and grip tape worn to bare polymer. Custom modifications are visible \u2014 aftermarket nozzles, rewrapped handles, added pressure vents. Each unit is unique and bears the marks of its operator\u0027s technique."
+    "manufacturer_markings": "Original manufacturer logos (Devolt or similar industrial brand) are often scratched or deliberately obscured. Street Custom builders typically add unsigned marks — crew symbols burned or scratched into the steel bands, or temporary stickers applied to the reservoir that are regularly replaced.",
+    "condition_typical": "Field-worn and personalized. Signs of heavy use include scorching around the nozzle, gel residue crusted on the pump handle, slight corrosion on exposed welds, and grip tape worn to bare polymer. Custom modifications are visible — aftermarket nozzles, rewrapped handles, added pressure vents. Each unit is unique and bears the marks of its operator's technique."
   },
-  "visual_prompt": "Product photo of a modified industrial paint sprayer reimagined as a flamethrower, mounted on a dark concrete surface. The weapon is positioned at a 45-degree angle to emphasize the modified nozzle assembly and reinforced pump mechanism. Dramatic side-lighting from a single harsh light source casts sharp shadows, highlighting the heat-scorched aluminum body, welded steel bands, and textured grip tape. The nozzle glows faintly warm, suggesting active readiness. Include detail of dried flammable gel residue on the trigger guard and streaked burn marks on the casing. Industrial neo-noir aesthetic \u2014 gritty, street-level engineering, no chrome polish, raw functionality. Dark background emphasizes the weapon\u0027s utilitarian brutalism. --ar 3:2 --v 6"
+  "visual_prompt": "Product photo of a modified industrial paint sprayer reimagined as a flamethrower, mounted on a dark concrete surface. The weapon is positioned at a 45-degree angle to emphasize the modified nozzle assembly and reinforced pump mechanism. Dramatic side-lighting from a single harsh light source casts sharp shadows, highlighting the heat-scorched aluminum body, welded steel bands, and textured grip tape. The nozzle glows faintly warm, suggesting active readiness. Include detail of dried flammable gel residue on the trigger guard and streaked burn marks on the casing. Industrial neo-noir aesthetic — gritty, street-level engineering, no chrome polish, raw functionality. Dark background emphasizes the weapon's utilitarian brutalism. --ar 3:2 --v 6"
 }

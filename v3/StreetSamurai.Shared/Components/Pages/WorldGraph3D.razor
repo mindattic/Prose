@@ -1,0 +1,312 @@
+@page "/graph-3d"
+@inject WorldGraphService Graph
+@inject IJSRuntime JS
+@implements IDisposable
+
+
+<h4 class="text-danger mb-3">World Graph 3D <small class="text-muted" style="font-size: 0.7rem;">WebGL · three.js · hardware-accelerated</small></h4>
+<div class="row g-2">
+    @* ── Left: Filters + Node List ─────────────────────── *@
+    <div class="col-md-3">
+        <div class="card bg-dark text-light border-secondary mb-2">
+            <div class="card-body py-2">
+                <div class="mb-2">
+                    <select class="form-select form-select-sm bg-dark text-light border-secondary" @bind="filterType" @bind:after="ApplyFilters">
+                        <option value="">All types</option>
+                        <option value="character">Characters</option>
+                        <option value="organization">Corponations</option>
+                        <option value="place">Places</option>
+                        <option value="faction">Factions</option>
+                        <option value="weapon">Weaponry</option>
+                        <option value="equipment">Equipment</option>
+                        <option value="technology">Technology</option>
+                    </select>
+                </div>
+                <div class="mb-2">
+                    <input type="text" class="form-control form-control-sm bg-dark text-light border-secondary"
+                           placeholder="Search..." @bind="searchFilter" @bind:event="oninput" @bind:after="ApplyFilters" />
+                </div>
+                <div class="d-flex gap-2 flex-wrap">
+                    <button class="btn btn-sm btn-outline-danger" @onclick="LoadAll" title="Load all nodes into the graph">
+                        <i class="bi bi-globe"></i><div class="btn-lbl"> Load All</div>
+                    </button>
+                    <button class="btn btn-sm btn-outline-secondary" @onclick="UnpinAll" title="Reheat simulation">
+                        <i class="bi bi-pin-angle"></i><div class="btn-lbl"> Reheat</div>
+                    </button>
+                    <button class="btn btn-sm btn-outline-secondary" @onclick="ClearCanvas" title="Clear the canvas">
+                        <i class="bi bi-eraser"></i><div class="btn-lbl"> Clear</div>
+                    </button>
+                </div>
+                <small class="text-muted mt-1 d-block" style="font-size: 0.7rem;">
+                    left-drag: orbit &middot; right-drag: pan &middot; scroll: zoom &middot; right-click node: expand
+                </small>
+            </div>
+        </div>
+
+        @* ── Node list (click to add to graph) ─────────── *@
+        <div class="card bg-dark text-light border-secondary" style="max-height: calc(100vh - var(--titlebar-offset) - var(--gutter) - 80px); overflow-y: auto;">
+            <div class="card-header text-muted py-1 small">Click to explore (@filteredNodes.Count)</div>
+            <div class="list-group list-group-flush">
+                @foreach (var node in filteredNodes.Take(100))
+                {
+                    <button class="list-group-item list-group-item-action bg-dark text-light border-secondary py-1 d-flex justify-content-between align-items-center small @(selectedNode?.Id == node.Id ? "active" : "")"
+                            @onclick="() => ExploreNode(node)">
+                        <span>
+                            <span class="badge @GetTypeBadgeClass(node.NodeType) me-1" style="font-size: 0.6rem;">@node.NodeType[..1].ToUpper()</span>
+                            @node.Name
+                        </span>
+                        <span class="badge bg-secondary rounded-pill" style="font-size: 0.6rem;">@GetEdgeCount(node.Id)</span>
+                    </button>
+                }
+            </div>
+        </div>
+    </div>
+
+    @* ── Center: WebGL Canvas + Detail ──────────────── *@
+    <div class="col-md-9">
+        <div id="graphCanvas3d" class="border border-secondary rounded mb-2"
+             style="width: 100%; height: calc(100vh - var(--titlebar-offset) - var(--gutter) - 80px); background: #0a0a0a; overflow: hidden;"></div>
+
+        @if (selectedNode != null)
+        {
+            <div class="card bg-dark text-light border-secondary">
+                <div class="card-header d-flex justify-content-between align-items-center py-1">
+                    <span>
+                        <span class="badge @GetTypeBadgeClass(selectedNode.NodeType) me-1">@selectedNode.NodeType</span>
+                        <strong>@selectedNode.Name</strong>
+                    </span>
+                    <button class="btn btn-sm btn-outline-secondary py-0" @onclick="() => selectedNode = null"><i class="bi bi-x"></i></button>
+                </div>
+                <div class="card-body py-2 small" style="max-height: 30vh; overflow-y: auto;">
+                    @if (selectedNode.Properties.TryGetValue("description", out var desc) && desc.Length > 0)
+                    {
+                        <div class="text-muted mb-2" style="line-height: 1.4;">@(desc.Length > 500 ? desc[..497] + "..." : desc)</div>
+                    }
+                    @foreach (var key in new[] { "role", "affiliation", "status", "category", "sector", "manufacturer", "tier_availability", "legality" })
+                    {
+                        if (selectedNode.Properties.TryGetValue(key, out var val) && val.Length > 0)
+                        {
+                            <div><span class="text-info">@key:</span> @val</div>
+                        }
+                    }
+                    @if (nodeEdges.Any())
+                    {
+                        <div class="mt-2">
+                            <small class="text-muted fw-bold">Connections (@nodeEdges.Count):</small>
+                            @foreach (var edge in nodeEdges.Take(20))
+                            {
+                                var other = edge.Source == selectedNode.Id ? edge.Target : edge.Source;
+                                var otherNode = Graph.GetNode(other);
+                                <div class="d-flex align-items-center gap-1" style="cursor: pointer;" @onclick="() => ExploreById(other)">
+                                    <span class="badge @GetRelBadgeClass(edge.RelationType)" style="font-size: 0.65rem;">@edge.RelationType</span>
+                                    <span>@(otherNode?.Name ?? other)</span>
+                                </div>
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    private List<WorldNode> allNodes = [];
+    private List<WorldEdge> allEdges = [];
+    private List<WorldNode> filteredNodes = [];
+    private WorldNode? selectedNode;
+    private List<WorldEdge> nodeEdges = [];
+    private string filterType = "";
+    private string searchFilter = "";
+
+    private HashSet<string> canvasNodeIds = new();
+    private DotNetObjectReference<WorldGraph3D>? selfRef;
+
+    protected override void OnInitialized()
+    {
+        Graph.EnsureLoaded();
+        allNodes = Graph.AllNodes();
+        allEdges = allNodes.SelectMany(n => Graph.GetAllEdges(n.Id))
+            .DistinctBy(e => (e.Source, e.Target, e.RelationType)).ToList();
+        ApplyFilters();
+    }
+
+    protected override void OnAfterRender(bool firstRender)
+    {
+        if (firstRender)
+        {
+            selfRef = DotNetObjectReference.Create(this);
+        }
+    }
+
+    private void ApplyFilters()
+    {
+        filteredNodes = allNodes
+            .Where(n => string.IsNullOrEmpty(filterType) || n.NodeType == filterType)
+            .Where(n => string.IsNullOrEmpty(searchFilter) ||
+                        n.Name.Contains(searchFilter, StringComparison.OrdinalIgnoreCase) ||
+                        n.Id.Contains(searchFilter, StringComparison.OrdinalIgnoreCase))
+            .OrderBy(n => n.Name)
+            .ToList();
+    }
+
+    private async Task LoadAll()
+    {
+        canvasNodeIds = new HashSet<string>(allNodes.Select(n => n.Id));
+        await Render(allNodes, allEdges);
+    }
+
+    private async Task ClearCanvas()
+    {
+        canvasNodeIds.Clear();
+        selectedNode = null;
+        try { await JS.InvokeVoidAsync("graph3dInterop.destroy"); } catch { }
+        StateHasChanged();
+    }
+
+    private async Task UnpinAll()
+    {
+        try { await JS.InvokeVoidAsync("graph3dInterop.unpinAll"); } catch { }
+    }
+
+    private async Task ExploreNode(WorldNode node)
+    {
+        selectedNode = node;
+        nodeEdges = allEdges.Where(e => e.Source == node.Id || e.Target == node.Id).OrderBy(e => e.RelationType).ToList();
+
+        var neighbors = Graph.GetNeighbors(node.Id, 2);
+        var nodeIds = new HashSet<string>(neighbors.Select(n => n.Id)) { node.Id };
+
+        if (canvasNodeIds.Count == 0)
+        {
+            canvasNodeIds = nodeIds;
+            var nodes = nodeIds.Select(id => Graph.GetNode(id)).Where(n => n != null).ToList();
+            var edges = allEdges.Where(e => nodeIds.Contains(e.Source) && nodeIds.Contains(e.Target)).ToList();
+            await Render(nodes!, edges);
+        }
+        else
+        {
+            var newIds = nodeIds.Except(canvasNodeIds).ToHashSet();
+            if (newIds.Count > 0)
+            {
+                canvasNodeIds.UnionWith(newIds);
+                var newNodes = newIds.Select(id => Graph.GetNode(id)).Where(n => n != null).ToList();
+                var newEdges = allEdges.Where(e =>
+                    canvasNodeIds.Contains(e.Source) && canvasNodeIds.Contains(e.Target) &&
+                    (newIds.Contains(e.Source) || newIds.Contains(e.Target))).ToList();
+                await Grow(newNodes!, newEdges);
+            }
+            await JS.InvokeVoidAsync("graph3dInterop.highlight", node.Id);
+        }
+    }
+
+    private async Task ExploreById(string nodeId)
+    {
+        var node = Graph.GetNode(nodeId);
+        if (node != null) await ExploreNode(node);
+    }
+
+    private async Task Render(List<WorldNode> nodes, List<WorldEdge> edges)
+    {
+        if (selfRef == null) return;
+        var renderedIds = new HashSet<string>(nodes.Select(n => n.Id));
+
+        var jsNodes = nodes.Select(n => new
+        {
+            id = n.Id,
+            name = n.Name,
+            nodeType = n.NodeType,
+            edgeCount = allEdges.Count(e => e.Source == n.Id || e.Target == n.Id)
+        }).ToArray();
+
+        var jsEdges = edges
+            .Where(e => renderedIds.Contains(e.Source) && renderedIds.Contains(e.Target))
+            .Select(e => new
+            {
+                source = e.Source,
+                target = e.Target,
+                relationType = e.RelationType,
+                weight = e.Weight,
+                sentiment = e.Sentiment,
+            }).ToArray();
+
+        await JS.InvokeVoidAsync("graph3dInterop.init", "graphCanvas3d", selfRef, jsNodes, jsEdges);
+    }
+
+    private async Task Grow(List<WorldNode> newNodes, List<WorldEdge> newEdges)
+    {
+        var jsNodes = newNodes.Select(n => new
+        {
+            id = n.Id,
+            name = n.Name,
+            nodeType = n.NodeType,
+            edgeCount = allEdges.Count(e => e.Source == n.Id || e.Target == n.Id)
+        }).ToArray();
+
+        var jsEdges = newEdges
+            .Where(e => canvasNodeIds.Contains(e.Source) && canvasNodeIds.Contains(e.Target))
+            .Select(e => new
+            {
+                source = e.Source,
+                target = e.Target,
+                relationType = e.RelationType,
+                weight = e.Weight,
+                sentiment = e.Sentiment,
+            }).ToArray();
+
+        await JS.InvokeVoidAsync("graph3dInterop.addData", jsNodes, jsEdges);
+    }
+
+    [JSInvokable]
+    public void OnNodeClicked(string nodeId)
+    {
+        var node = Graph.GetNode(nodeId);
+        if (node != null)
+        {
+            selectedNode = node;
+            nodeEdges = allEdges.Where(e => e.Source == node.Id || e.Target == node.Id).OrderBy(e => e.RelationType).ToList();
+        }
+        StateHasChanged();
+    }
+
+    [JSInvokable]
+    public async Task OnNodeExpand(string nodeId)
+    {
+        var node = Graph.GetNode(nodeId);
+        if (node != null) await ExploreNode(node);
+        StateHasChanged();
+    }
+
+    [JSInvokable]
+    public void OnBackgroundClicked()
+    {
+        selectedNode = null;
+        nodeEdges = [];
+        StateHasChanged();
+    }
+
+    private int GetEdgeCount(string nodeId) =>
+        allEdges.Count(e => e.Source == nodeId || e.Target == nodeId);
+
+    private static string GetTypeBadgeClass(string type) => Constants.TypeBadge.For(type);
+
+    private static string GetRelBadgeClass(string relType) => relType?.ToLowerInvariant() switch
+    {
+        "alliance" or "allied" => "bg-success",
+        "rivalry" or "rival" or "enemy" => "bg-danger",
+        "kinship" or "family" => "bg-info",
+        "mentor" or "mentorship" => "bg-warning text-dark",
+        "operates_in" or "located_in" or "frequents" or "adjacent_to" or "controls_territory" => "bg-secondary",
+        "employs" or "member_of" or "employed_by" or "affiliated_with" => "bg-primary",
+        "manufactured_by" or "developed_by" => "bg-warning text-dark",
+        "wields" or "uses" => "bg-info",
+        "built_on" or "depends_on" or "enables" => "bg-cyan",
+        _ => "bg-dark border border-secondary",
+    };
+
+    public void Dispose()
+    {
+        _ = JS.InvokeVoidAsync("graph3dInterop.destroy");
+        selfRef?.Dispose();
+    }
+}

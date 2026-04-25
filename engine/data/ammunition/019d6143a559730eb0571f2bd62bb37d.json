@@ -9,7 +9,7 @@
   "manufacturer": "Unlicensed independent weapons engineers",
   "tier_availability": "Black market only",
   "legality": "Prohibited — modified military ammunition, unlicensed manufacturing",
-  "specifications": "weight_per_round: 32g (heavier than TCS-11 due to tuning mechanism)\nmuzzle_velocity: 650 m/s (reduced from 680)\npenetration_rating: ~60% of TCS-11 resonance effect\neffective_against: Hard armor (degraded), reinforced structures (degraded)\ncountermeasures: Same as TCS-11 plus the slug's own unreliability\nhazard: 8% catastrophic barrel failure rate",
+  "specifications": "weight_per_round: 32g (heavier than TCS-11 due to tuning mechanism) muzzle_velocity: 650 m/s (reduced from 680) penetration_rating: ~60% of TCS-11 resonance effect effective_against: Hard armor (degraded), reinforced structures (degraded) countermeasures: Same as TCS-11 plus the slug's own unreliability hazard: 8% catastrophic barrel failure rate",
   "compatible_weapons": [
     "Ballistic Resonance Carbine BRC-6 'Kettledrum'"
   ],
