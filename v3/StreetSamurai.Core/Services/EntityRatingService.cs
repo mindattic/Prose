@@ -1,5 +1,5 @@
 using Microsoft.Extensions.Logging;
-using MindAttic.LLMVoting;
+using MindAttic.Legion;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Models.Canon;
 

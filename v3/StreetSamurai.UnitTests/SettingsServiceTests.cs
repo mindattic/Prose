@@ -7,11 +7,16 @@ public class SettingsServiceTests
 {
     private SettingsService svc = null!;
     private string tempDir = null!;
+    private string? prevCredsEnv;
 
     [SetUp]
     public void Setup()
     {
         tempDir = Path.Combine(Path.GetTempPath(), "ss_settings_test_" + Guid.NewGuid().ToString("N")[..8]);
+        // Redirect the shared MindAttic credential store to a per-test directory so we
+        // don't read/write the user's real %APPDATA%/MindAttic/LLM/ folder.
+        prevCredsEnv = Environment.GetEnvironmentVariable("MINDATTIC_LLM_CREDENTIALS");
+        Environment.SetEnvironmentVariable("MINDATTIC_LLM_CREDENTIALS", Path.Combine(tempDir, "creds"));
         svc = new SettingsService(tempDir);
     }
 
@@ -19,6 +24,7 @@ public class SettingsServiceTests
     public void Teardown()
     {
         svc.Dispose();
+        Environment.SetEnvironmentVariable("MINDATTIC_LLM_CREDENTIALS", prevCredsEnv);
         if (Directory.Exists(tempDir))
             Directory.Delete(tempDir, true);
     }

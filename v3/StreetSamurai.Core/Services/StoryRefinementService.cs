@@ -1,8 +1,8 @@
 using System.Text;
 using System.Text.Json;
 using Microsoft.Extensions.Logging;
-using MindAttic.LLMVoting;
-using MindAttic.LLMVoting.Providers;
+using MindAttic.Legion;
+using MindAttic.Legion.Providers;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Models;
 

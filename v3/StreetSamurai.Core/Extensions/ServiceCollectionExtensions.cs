@@ -1,8 +1,8 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using System.Net;
-using MindAttic.LLMVoting;
-using MindAttic.LLMVoting.Providers;
+using MindAttic.Legion;
+using MindAttic.Legion.Providers;
 using StreetSamurai.Core.Interfaces;
 using StreetSamurai.Core.Services;
 
@@ -15,7 +15,9 @@ public static class ServiceCollectionExtensions
         // Application logging — reads daily Serilog log files for the UI viewer
         services.AddSingleton<LoggingService>();
 
-        // Settings auto-detects canon root path on first run
+        // Settings auto-detects canon root path on first run.
+        // API keys route through MindAttic.Legion.MindAtticCredentialStore at
+        // %APPDATA%/MindAttic/LLM/ — shared across every MindAttic app.
         services.AddSingleton<SettingsService>();
         services.AddSingleton<ISecurePreferences, FileSecurePreferences>();
         services.AddSingleton<IPathProvider, FileSystemPathProvider>();
@@ -222,9 +224,9 @@ public static class ServiceCollectionExtensions
         // Audio file service
         services.AddSingleton<IAudioFileService, AudioFileService>();
 
-        // Multi-LLM service — calls multiple providers for majority voting
-        services.AddHttpClient<MultiLlmService>()
-            .ConfigurePrimaryHttpMessageHandler(() => new HttpClientHandler { CheckCertificateRevocationList = false });
+        // Multi-LLM service — calls multiple providers for majority voting.
+        // Wire transport delegated to MindAttic.Legion's LegionClient.
+        services.AddSingleton<MultiLlmService>();
 
         // TTS enhancement — adds ElevenLabs audio tags before synthesis
         services.AddSingleton<TtsEnhancementService>();
@@ -285,6 +287,9 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<StoryDirectorService>();
         services.AddSingleton<IStoryDirectorService>(sp => sp.GetRequiredService<StoryDirectorService>());
 
+        // Claude Code CLI bridge — Writer chat routes prompts through `claude -p` subprocess
+        services.AddSingleton<ClaudeCliService>();
+
         // Geographic navigation, pathfinding, and dynamic place generation
         services.AddSingleton<NavigationService>();
         services.AddSingleton<DynamicPlaceGenerator>();
@@ -310,7 +315,10 @@ public static class ServiceCollectionExtensions
         // Milestone 3 — outline review + quality feedback loop
         services.AddSingleton<OutlineReviewService>();
 
-        // LLMVoting — multi-provider consensus voting, wired into StoryQualityService
+        // MindAttic.Legion — universal LLM-call client (LegionClient) and the
+        // multi-provider voting machinery. Both LlmVotingProvider and the
+        // standalone MultiLlmService delegate wire transport here.
+        services.AddLegionClient();
         services.AddHttpClient<LlmVotingProvider>();
         services.AddSingleton<VotingConfiguration>(sp =>
         {

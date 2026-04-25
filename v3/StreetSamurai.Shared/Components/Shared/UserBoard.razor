@@ -59,9 +59,12 @@
                     <a href="/profile" class="user-board-tile">
                         <i class="bi bi-person"></i><span>Profile</span>
                     </a>
-                    <a href="/stories" class="user-board-tile">
-                        <i class="bi bi-journal-richtext"></i><span>Stories</span>
-                    </a>
+                    @if (Access.CanWrite)
+                    {
+                        <a href="/stories" class="user-board-tile">
+                            <i class="bi bi-journal-richtext"></i><span>Stories</span>
+                        </a>
+                    }
                 }
                 <div class="user-board-logout">
                     <form method="post" action="/api/auth/logout">

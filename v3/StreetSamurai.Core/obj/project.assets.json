@@ -556,7 +556,7 @@
           }
         }
       },
-      "MindAttic.LLMVoting/1.0.0": {
+      "MindAttic.Legion/2.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
@@ -565,10 +565,10 @@
           "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
         },
         "compile": {
-          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+          "bin/placeholder/MindAttic.Legion.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+          "bin/placeholder/MindAttic.Legion.dll": {}
         }
       }
     }
@@ -1364,10 +1364,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "MindAttic.LLMVoting/1.0.0": {
+    "MindAttic.Legion/2.0.0": {
       "type": "project",
-      "path": "../../LLMVoting/LLMVoting/LLMVoting.csproj",
-      "msbuildProject": "../../LLMVoting/LLMVoting/LLMVoting.csproj"
+      "path": "../../LLMVoting/MindAttic.Legion/MindAttic.Legion.csproj",
+      "msbuildProject": "../../LLMVoting/MindAttic.Legion/MindAttic.Legion.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1377,7 +1377,7 @@
       "Microsoft.Data.Sqlite >= 10.0.5",
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 10.0.5",
       "Microsoft.Extensions.Http >= 10.0.5",
-      "MindAttic.LLMVoting >= 1.0.0",
+      "MindAttic.Legion >= 2.0.0",
       "QuikGraph >= 2.5.0",
       "QuikGraph.Serialization >= 2.5.0",
       "Serilog >= 4.3.1",
@@ -1420,8 +1420,8 @@
           "framework": "net10.0",
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\Projects\\MindAttic\\StreetSamurai\\LLMVoting\\LLMVoting\\LLMVoting.csproj": {
-              "projectPath": "D:\\Projects\\MindAttic\\StreetSamurai\\LLMVoting\\LLMVoting\\LLMVoting.csproj"
+            "D:\\Projects\\MindAttic\\StreetSamurai\\LLMVoting\\MindAttic.Legion\\MindAttic.Legion.csproj": {
+              "projectPath": "D:\\Projects\\MindAttic\\StreetSamurai\\LLMVoting\\MindAttic.Legion\\MindAttic.Legion.csproj"
             }
           }
         }

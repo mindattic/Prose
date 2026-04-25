@@ -1,4 +1,5 @@
 using System.Text.Json;
+using MindAttic.Legion;
 using StreetSamurai.Core.Interfaces;
 
 namespace StreetSamurai.Core.Services;
@@ -22,6 +23,7 @@ public class SettingsService : IDisposable
         settingsPath = Path.Combine(storageDir, "Settings.json");
         defaultsPath = Path.Combine(storageDir, "Defaults.json");
         Load();
+        MigrateLegacyCredentialsToSharedStore();
 
         // Auto-detect canon root if not set or current path has insufficient data
         var engineDir = string.IsNullOrWhiteSpace(data.CanonRootPath)
@@ -85,32 +87,94 @@ public class SettingsService : IDisposable
     private static string Env(string key, string fallback) =>
         Environment.GetEnvironmentVariable(key) is { Length: > 0 } v ? v : fallback;
 
-    public string ApiKey { get => Env("SS_CLAUDE_API_KEY", data.ApiKey); set { data.ApiKey = value; ScheduleSave(); } }
+    // Credential resolution: env var → shared %APPDATA%/MindAttic/LLM/ store → legacy Settings.json.
+    // The shared store (MindAtticCredentialStore from the LLMVoting library) is the canonical
+    // "first stop" so credentials propagate across every MindAttic application.
+    // Override the store location with the MINDATTIC_LLM_CREDENTIALS env var.
+    private static string ResolveApiKey(string envVar, string providerId, string legacyValue)
+    {
+        if (Environment.GetEnvironmentVariable(envVar) is { Length: > 0 } v) return v;
+        var fromStore = MindAtticCredentialStore.GetKey(providerId);
+        return !string.IsNullOrEmpty(fromStore) ? fromStore : legacyValue;
+    }
+
+    // API keys route through MindAtticCredentialStore (LLMVoting library) at %APPDATA%/MindAttic/LLM/.
+    // Resolution: env var → shared store → legacy Settings.json field.
+    // Models, voice prefs, and other non-credential settings stay in Settings.json (per-app).
+    public string ApiKey
+    {
+        get => ResolveApiKey("SS_CLAUDE_API_KEY", "claude", data.ApiKey);
+        set { MindAtticCredentialStore.SetKey("claude", value); data.ApiKey = value; ScheduleSave(); }
+    }
     public string Model { get => data.Model; set { data.Model = value; ScheduleSave(); } }
     public string Theme { get => data.Theme; set { data.Theme = value; ScheduleSave(); } }
     public string CanonRootPath { get => data.CanonRootPath; set { data.CanonRootPath = value; ScheduleSave(); } }
     public int MaxTokens { get => data.MaxTokens; set { data.MaxTokens = value; ScheduleSave(); } }
-    public string ElevenLabsApiKey { get => Env("SS_ELEVENLABS_API_KEY", data.ElevenLabsApiKey); set { data.ElevenLabsApiKey = value; ScheduleSave(); } }
+    public string ElevenLabsApiKey
+    {
+        get => ResolveApiKey("SS_ELEVENLABS_API_KEY", "elevenlabs", data.ElevenLabsApiKey);
+        set { MindAtticCredentialStore.SetKey("elevenlabs", value); data.ElevenLabsApiKey = value; ScheduleSave(); }
+    }
     public string ElevenLabsVoiceId { get => data.ElevenLabsVoiceId; set { data.ElevenLabsVoiceId = value; ScheduleSave(); } }
     public string NarratorVoiceName { get => data.NarratorVoiceName; set { data.NarratorVoiceName = value; ScheduleSave(); } }
     public string TtsModel { get => data.TtsModel; set { data.TtsModel = value; ScheduleSave(); } }
     public double TtsStability { get => data.TtsStability; set { data.TtsStability = value; ScheduleSave(); } }
     public double TtsSimilarityBoost { get => data.TtsSimilarityBoost; set { data.TtsSimilarityBoost = value; ScheduleSave(); } }
     public double TtsStyle { get => data.TtsStyle; set { data.TtsStyle = value; ScheduleSave(); } }
-    public string OpenAiApiKey { get => Env("SS_OPENAI_API_KEY", data.OpenAiApiKey); set { data.OpenAiApiKey = value; ScheduleSave(); } }
+    public string OpenAiApiKey
+    {
+        get => ResolveApiKey("SS_OPENAI_API_KEY", "openai", data.OpenAiApiKey);
+        set { MindAtticCredentialStore.SetKey("openai", value); data.OpenAiApiKey = value; ScheduleSave(); }
+    }
     public string OpenAiModel { get => data.OpenAiModel; set { data.OpenAiModel = value; ScheduleSave(); } }
     public string ActiveLlmProvider { get => data.ActiveLlmProvider; set { data.ActiveLlmProvider = value; ScheduleSave(); } }
     public int EditorFontSize { get => data.EditorFontSize; set { data.EditorFontSize = value; ScheduleSave(); } }
     public int AutoSaveIntervalMs { get => data.AutoSaveIntervalMs; set { data.AutoSaveIntervalMs = value; ScheduleSave(); } }
-    public string GeminiApiKey { get => Env("SS_GEMINI_API_KEY", data.GeminiApiKey); set { data.GeminiApiKey = value; ScheduleSave(); } }
-    public string DeepSeekApiKey { get => Env("SS_DEEPSEEK_API_KEY", data.DeepSeekApiKey); set { data.DeepSeekApiKey = value; ScheduleSave(); } }
-    public string MistralApiKey { get => Env("SS_MISTRAL_API_KEY", data.MistralApiKey); set { data.MistralApiKey = value; ScheduleSave(); } }
-    public string GrokApiKey { get => Env("SS_GROK_API_KEY", data.GrokApiKey); set { data.GrokApiKey = value; ScheduleSave(); } }
-    public string GroqApiKey { get => Env("SS_GROQ_API_KEY", data.GroqApiKey); set { data.GroqApiKey = value; ScheduleSave(); } }
-    public string TogetherApiKey { get => Env("SS_TOGETHER_API_KEY", data.TogetherApiKey); set { data.TogetherApiKey = value; ScheduleSave(); } }
-    public string OpenRouterApiKey { get => Env("SS_OPENROUTER_API_KEY", data.OpenRouterApiKey); set { data.OpenRouterApiKey = value; ScheduleSave(); } }
-    public string FireworksApiKey { get => Env("SS_FIREWORKS_API_KEY", data.FireworksApiKey); set { data.FireworksApiKey = value; ScheduleSave(); } }
-    public string CohereApiKey { get => Env("SS_COHERE_API_KEY", data.CohereApiKey); set { data.CohereApiKey = value; ScheduleSave(); } }
+    public string GeminiApiKey
+    {
+        get => ResolveApiKey("SS_GEMINI_API_KEY", "gemini", data.GeminiApiKey);
+        set { MindAtticCredentialStore.SetKey("gemini", value); data.GeminiApiKey = value; ScheduleSave(); }
+    }
+    public string DeepSeekApiKey
+    {
+        get => ResolveApiKey("SS_DEEPSEEK_API_KEY", "deepseek", data.DeepSeekApiKey);
+        set { MindAtticCredentialStore.SetKey("deepseek", value); data.DeepSeekApiKey = value; ScheduleSave(); }
+    }
+    public string MistralApiKey
+    {
+        get => ResolveApiKey("SS_MISTRAL_API_KEY", "mistral", data.MistralApiKey);
+        set { MindAtticCredentialStore.SetKey("mistral", value); data.MistralApiKey = value; ScheduleSave(); }
+    }
+    public string GrokApiKey
+    {
+        get => ResolveApiKey("SS_GROK_API_KEY", "xai", data.GrokApiKey);
+        set { MindAtticCredentialStore.SetKey("xai", value); data.GrokApiKey = value; ScheduleSave(); }
+    }
+    public string GroqApiKey
+    {
+        get => ResolveApiKey("SS_GROQ_API_KEY", "groq", data.GroqApiKey);
+        set { MindAtticCredentialStore.SetKey("groq", value); data.GroqApiKey = value; ScheduleSave(); }
+    }
+    public string TogetherApiKey
+    {
+        get => ResolveApiKey("SS_TOGETHER_API_KEY", "together", data.TogetherApiKey);
+        set { MindAtticCredentialStore.SetKey("together", value); data.TogetherApiKey = value; ScheduleSave(); }
+    }
+    public string OpenRouterApiKey
+    {
+        get => ResolveApiKey("SS_OPENROUTER_API_KEY", "openrouter", data.OpenRouterApiKey);
+        set { MindAtticCredentialStore.SetKey("openrouter", value); data.OpenRouterApiKey = value; ScheduleSave(); }
+    }
+    public string FireworksApiKey
+    {
+        get => ResolveApiKey("SS_FIREWORKS_API_KEY", "fireworks", data.FireworksApiKey);
+        set { MindAtticCredentialStore.SetKey("fireworks", value); data.FireworksApiKey = value; ScheduleSave(); }
+    }
+    public string CohereApiKey
+    {
+        get => ResolveApiKey("SS_COHERE_API_KEY", "cohere", data.CohereApiKey);
+        set { MindAtticCredentialStore.SetKey("cohere", value); data.CohereApiKey = value; ScheduleSave(); }
+    }
     public string GeminiModel { get => data.GeminiModel; set { data.GeminiModel = value; ScheduleSave(); } }
     public string DeepSeekModel { get => data.DeepSeekModel; set { data.DeepSeekModel = value; ScheduleSave(); } }
     public string MistralModel { get => data.MistralModel; set { data.MistralModel = value; ScheduleSave(); } }
@@ -122,8 +186,16 @@ public class SettingsService : IDisposable
     public string CohereModel { get => data.CohereModel; set { data.CohereModel = value; ScheduleSave(); } }
     public string MapService { get => data.MapService; set { data.MapService = value; ScheduleSave(); } }
     public string MapAppId { get => Env("SS_MAP_APP_ID", data.MapAppId); set { data.MapAppId = value; ScheduleSave(); } }
-    public string MapApiKey { get => Env("SS_MAP_API_KEY", data.MapApiKey); set { data.MapApiKey = value; ScheduleSave(); } }
-    public string GoogleMapsApiKey { get => Env("SS_GOOGLE_MAPS_API_KEY", data.GoogleMapsApiKey); set { data.GoogleMapsApiKey = value; ScheduleSave(); } }
+    public string MapApiKey
+    {
+        get => ResolveApiKey("SS_MAP_API_KEY", "here-maps", data.MapApiKey);
+        set { MindAtticCredentialStore.SetKey("here-maps", value); data.MapApiKey = value; ScheduleSave(); }
+    }
+    public string GoogleMapsApiKey
+    {
+        get => ResolveApiKey("SS_GOOGLE_MAPS_API_KEY", "google-maps", data.GoogleMapsApiKey);
+        set { MindAtticCredentialStore.SetKey("google-maps", value); data.GoogleMapsApiKey = value; ScheduleSave(); }
+    }
     public string MapMode { get => data.MapMode; set { data.MapMode = value; ScheduleSave(); } }
     public string TimestampFormat { get => data.TimestampFormat; set { data.TimestampFormat = value; ScheduleSave(); } }
     public string TimezoneId { get => data.TimezoneId; set { data.TimezoneId = value; ScheduleSave(); } }
@@ -176,7 +248,10 @@ public class SettingsService : IDisposable
         File.WriteAllText(defaultsPath, json);
     }
 
-    /// <summary>Reset all settings to the saved defaults snapshot (includes secrets).</summary>
+    /// <summary>Reset all settings to the saved defaults snapshot (includes secrets).
+    /// Also overwrites the shared MindAttic credential store with the reset values so
+    /// the next read doesn't pick up stale "first-stop" keys. This intentionally
+    /// affects every MindAttic app — resetting one app's credentials is a fresh slate.</summary>
     public void ResetToDefaults()
     {
         if (File.Exists(defaultsPath))
@@ -189,6 +264,25 @@ public class SettingsService : IDisposable
             data = new SettingsData();
         }
         Flush();
+        SyncCredentialStoreFromData();
+    }
+
+    private void SyncCredentialStoreFromData()
+    {
+        MindAtticCredentialStore.SetKey("claude",      data.ApiKey);
+        MindAtticCredentialStore.SetKey("openai",      data.OpenAiApiKey);
+        MindAtticCredentialStore.SetKey("gemini",      data.GeminiApiKey);
+        MindAtticCredentialStore.SetKey("deepseek",    data.DeepSeekApiKey);
+        MindAtticCredentialStore.SetKey("mistral",     data.MistralApiKey);
+        MindAtticCredentialStore.SetKey("xai",         data.GrokApiKey);
+        MindAtticCredentialStore.SetKey("groq",        data.GroqApiKey);
+        MindAtticCredentialStore.SetKey("together",    data.TogetherApiKey);
+        MindAtticCredentialStore.SetKey("openrouter",  data.OpenRouterApiKey);
+        MindAtticCredentialStore.SetKey("fireworks",   data.FireworksApiKey);
+        MindAtticCredentialStore.SetKey("cohere",      data.CohereApiKey);
+        MindAtticCredentialStore.SetKey("elevenlabs",  data.ElevenLabsApiKey);
+        MindAtticCredentialStore.SetKey("here-maps",   data.MapApiKey);
+        MindAtticCredentialStore.SetKey("google-maps", data.GoogleMapsApiKey);
     }
 
     private void Load()
@@ -198,6 +292,37 @@ public class SettingsService : IDisposable
             var json = File.ReadAllText(settingsPath);
             data = JsonSerializer.Deserialize<SettingsData>(json) ?? new();
         }
+    }
+
+    /// <summary>
+    /// One-shot copy of any legacy credentials from Settings.json into the shared
+    /// MindAttic credential store at %APPDATA%/MindAttic/LLM/. Idempotent: only writes
+    /// when the shared store has no key for that provider yet, so it never overwrites
+    /// a credential another MindAttic app may have rotated.
+    /// </summary>
+    private void MigrateLegacyCredentialsToSharedStore()
+    {
+        void MigrateIfMissing(string providerId, string legacyKey)
+        {
+            if (string.IsNullOrEmpty(legacyKey)) return;
+            if (!string.IsNullOrEmpty(MindAtticCredentialStore.GetKey(providerId))) return;
+            MindAtticCredentialStore.SetKey(providerId, legacyKey);
+        }
+
+        MigrateIfMissing("claude",      data.ApiKey);
+        MigrateIfMissing("openai",      data.OpenAiApiKey);
+        MigrateIfMissing("gemini",      data.GeminiApiKey);
+        MigrateIfMissing("deepseek",    data.DeepSeekApiKey);
+        MigrateIfMissing("mistral",     data.MistralApiKey);
+        MigrateIfMissing("xai",         data.GrokApiKey);
+        MigrateIfMissing("groq",        data.GroqApiKey);
+        MigrateIfMissing("together",    data.TogetherApiKey);
+        MigrateIfMissing("openrouter",  data.OpenRouterApiKey);
+        MigrateIfMissing("fireworks",   data.FireworksApiKey);
+        MigrateIfMissing("cohere",      data.CohereApiKey);
+        MigrateIfMissing("elevenlabs",  data.ElevenLabsApiKey);
+        MigrateIfMissing("here-maps",   data.MapApiKey);
+        MigrateIfMissing("google-maps", data.GoogleMapsApiKey);
     }
 
     private void ScheduleSave()

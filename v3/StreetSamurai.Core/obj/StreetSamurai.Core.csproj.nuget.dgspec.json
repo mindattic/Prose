@@ -4,14 +4,14 @@
     "D:\\Projects\\MindAttic\\StreetSamurai\\v3\\StreetSamurai.Core\\StreetSamurai.Core.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\MindAttic\\StreetSamurai\\LLMVoting\\LLMVoting\\LLMVoting.csproj": {
-      "version": "1.0.0",
+    "D:\\Projects\\MindAttic\\StreetSamurai\\LLMVoting\\MindAttic.Legion\\MindAttic.Legion.csproj": {
+      "version": "2.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\MindAttic\\StreetSamurai\\LLMVoting\\LLMVoting\\LLMVoting.csproj",
-        "projectName": "MindAttic.LLMVoting",
-        "projectPath": "D:\\Projects\\MindAttic\\StreetSamurai\\LLMVoting\\LLMVoting\\LLMVoting.csproj",
+        "projectUniqueName": "D:\\Projects\\MindAttic\\StreetSamurai\\LLMVoting\\MindAttic.Legion\\MindAttic.Legion.csproj",
+        "projectName": "MindAttic.Legion",
+        "projectPath": "D:\\Projects\\MindAttic\\StreetSamurai\\LLMVoting\\MindAttic.Legion\\MindAttic.Legion.csproj",
         "packagesPath": "C:\\Users\\ryand\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\MindAttic\\StreetSamurai\\LLMVoting\\LLMVoting\\obj\\",
+        "outputPath": "D:\\Projects\\MindAttic\\StreetSamurai\\LLMVoting\\MindAttic.Legion\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -390,8 +390,8 @@
             "framework": "net10.0",
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\Projects\\MindAttic\\StreetSamurai\\LLMVoting\\LLMVoting\\LLMVoting.csproj": {
-                "projectPath": "D:\\Projects\\MindAttic\\StreetSamurai\\LLMVoting\\LLMVoting\\LLMVoting.csproj"
+              "D:\\Projects\\MindAttic\\StreetSamurai\\LLMVoting\\MindAttic.Legion\\MindAttic.Legion.csproj": {
+                "projectPath": "D:\\Projects\\MindAttic\\StreetSamurai\\LLMVoting\\MindAttic.Legion\\MindAttic.Legion.csproj"
               }
             }
           }

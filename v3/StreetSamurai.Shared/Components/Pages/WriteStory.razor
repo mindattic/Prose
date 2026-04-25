@@ -24,6 +24,7 @@
 @inject IStoryDirectorService Director
 @inject SemanticIndexService SemanticIndex
 @inject InferenceService Inference
+@inject ClaudeCliService ClaudeCli
 @inject IJSRuntime JS
 @implements IDisposable
 
@@ -459,15 +460,7 @@
 
         </div>
 
-        @* ── Story Shape Progress ───────────────────────── *@
-        @if (currentOutline != null)
-        {
-            <div class="mt-1 border border-secondary rounded px-2 pt-1 pb-0" style="background:#0d1117;">
-                <StoryShapeChart Outline="currentOutline"
-                                 Compact="true"
-                                 TrackScrollOf="preview-scroll-container" />
-            </div>
-        }
+        @* Story Shape Progress moved to bottom drawer — see Story Arc drawer below *@
 
         @* ── Image Insert Panel ────────────────────────── *@
         @* ── Image Insert Modal ─────────────────────── *@
@@ -504,62 +497,158 @@
         }
 
 
-        @* ── Audio Player ──────────────────────────── *@
-        <AudioPlayer @ref="audioPlayer"
-                     Visible="true"
-                     OnDismissed="() => {}"
-                     OnInsertTag="InsertTag"
-                     OnReadSelected="ReadSelected"
-                     OnReadAll="ReadAll"
-                     HasSelection="hasSelection"
-                     Engine="@ttsEngine"
-                     EngineChanged="e => ttsEngine = e"
-                     ShowTagInserter="false"
-                     CssClass="mt-1" />
+        @* Audio Player + TTS Tag Bar moved to TTS drawer (see drawers below) *@
+        @* Action buttons (Outline / What Next? / Validate / Refine / Ask / Write) replaced by Claude chat drawer *@
 
-        @* ── ElevenLabs Tag Bar ────────────────────── *@
-        <div class="bg-dark border border-secondary rounded mt-1 d-flex align-items-center gap-1 px-3 py-1 flex-wrap" style="font-size: 0.75rem;">
-            <small class="text-muted fw-bold me-1">TTS Tags</small>
-            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[short pause]")'><div class="btn-lbl">short pause</div></button>
-            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[long pause]")'><div class="btn-lbl">long pause</div></button>
-            <span class="text-secondary mx-1">|</span>
-            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[whispers]")'><div class="btn-lbl">whispers</div></button>
-            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[sighs]")'><div class="btn-lbl">sighs</div></button>
-            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[laughs]")'><div class="btn-lbl">laughs</div></button>
-            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[chuckles]")'><div class="btn-lbl">chuckles</div></button>
-            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[clears throat]")'><div class="btn-lbl">clears throat</div></button>
-            <span class="text-secondary mx-1">|</span>
-            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[exhales]")'><div class="btn-lbl">exhales</div></button>
-            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[exhales sharply]")'><div class="btn-lbl">sharp exhale</div></button>
-            <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[inhales deeply]")'><div class="btn-lbl">deep inhale</div></button>
-        </div>
+        @* ── Drawer: Claude Chat ─────────────────────────────── *@
+        @if (showChatDrawer)
+        {
+            <div class="bg-dark border border-info rounded mt-1 p-2">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                    <small class="text-info fw-bold"><i class="bi bi-chat-dots"></i> Claude Code</small>
+                    <button class="btn btn-sm btn-outline-secondary" @onclick="() => showChatDrawer = false"><i class="bi bi-x-lg"></i></button>
+                </div>
+                <div id="chat-history" class="bg-black rounded p-2 mb-2"
+                     style="height: 280px; overflow-y: auto; font-family: 'JetBrains Mono', 'Fira Code', monospace; font-size: 0.85rem;">
+                    @if (chatMessages.Count == 0)
+                    {
+                        <div class="text-muted small">
+                            Talk to Claude Code about this story. Examples:
+                            <ul class="mb-0 mt-1 ps-3">
+                                <li>"write a combat scene where Sasha ambushes the runner in The Spine"</li>
+                                <li>"check the last three paragraphs against canon"</li>
+                                <li>"who is currently in The Loop and why"</li>
+                                <li>"the export-to-PDF button is broken — investigate"</li>
+                            </ul>
+                        </div>
+                    }
+                    @foreach (var msg in chatMessages)
+                    {
+                        <div class="mb-2">
+                            <div class="@(msg.Role == "user" ? "text-info" : "text-warning") fw-bold small">
+                                @(msg.Role == "user" ? "You" : "Claude")
+                            </div>
+                            <div class="text-light" style="white-space: pre-wrap;">@msg.Text</div>
+                        </div>
+                    }
+                    @if (chatBusy)
+                    {
+                        <div class="d-flex align-items-center gap-2">
+                            <div class="spinner-border spinner-border-sm text-info"></div>
+                            <small class="text-muted">@chatStatus</small>
+                        </div>
+                    }
+                </div>
+                <div class="d-flex gap-1">
+                    <textarea class="form-control form-control-sm bg-dark text-light border-secondary"
+                              rows="3"
+                              placeholder="Ask Claude to write a scene, query the canon, fix a bug, edit JSON... (Ctrl+Enter to send)"
+                              @bind="chatInput" @bind:event="oninput"
+                              @onkeydown="HandleChatKeyDown"
+                              disabled="@chatBusy"
+                              style="font-family: Georgia, serif;"></textarea>
+                    <div class="d-flex flex-column gap-1">
+                        <button class="btn btn-sm btn-info text-dark"
+                                @onclick="SendChatAsync"
+                                disabled="@(chatBusy || string.IsNullOrWhiteSpace(chatInput))"
+                                title="Send (Ctrl+Enter)">
+                            <i class="bi bi-send"></i>
+                        </button>
+                        @if (chatBusy)
+                        {
+                            <button class="btn btn-sm btn-outline-danger" @onclick="CancelChat" title="Cancel">
+                                <i class="bi bi-stop-circle"></i>
+                            </button>
+                        }
+                        else if (chatMessages.Count > 0)
+                        {
+                            <button class="btn btn-sm btn-outline-secondary" @onclick="ClearChat" title="Clear history">
+                                <i class="bi bi-trash"></i>
+                            </button>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
 
-        @* ── Bottom bar: view toggle left (mobile only), Ask/Write right ── *@
+        @* ── Drawer: Narration (TTS) ─────────────────────────── *@
+        @if (showTtsDrawer)
+        {
+            <div class="bg-dark border border-secondary rounded mt-1 p-2">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                    <small class="text-muted fw-bold"><i class="bi bi-volume-up"></i> Narration</small>
+                    <button class="btn btn-sm btn-outline-secondary" @onclick="() => showTtsDrawer = false"><i class="bi bi-x-lg"></i></button>
+                </div>
+                <AudioPlayer @ref="audioPlayer"
+                             Visible="true"
+                             OnDismissed="() => {}"
+                             OnInsertTag="InsertTag"
+                             OnReadSelected="ReadSelected"
+                             OnReadAll="ReadAll"
+                             HasSelection="hasSelection"
+                             Engine="@ttsEngine"
+                             EngineChanged="e => ttsEngine = e"
+                             ShowTagInserter="false"
+                             CssClass="" />
+                <div class="bg-dark border border-secondary rounded mt-1 d-flex align-items-center gap-1 px-3 py-1 flex-wrap" style="font-size: 0.75rem;">
+                    <small class="text-muted fw-bold me-1">TTS Tags</small>
+                    <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[short pause]")'><div class="btn-lbl">short pause</div></button>
+                    <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[long pause]")'><div class="btn-lbl">long pause</div></button>
+                    <span class="text-secondary mx-1">|</span>
+                    <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[whispers]")'><div class="btn-lbl">whispers</div></button>
+                    <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[sighs]")'><div class="btn-lbl">sighs</div></button>
+                    <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[laughs]")'><div class="btn-lbl">laughs</div></button>
+                    <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[chuckles]")'><div class="btn-lbl">chuckles</div></button>
+                    <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[clears throat]")'><div class="btn-lbl">clears throat</div></button>
+                    <span class="text-secondary mx-1">|</span>
+                    <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[exhales]")'><div class="btn-lbl">exhales</div></button>
+                    <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[exhales sharply]")'><div class="btn-lbl">sharp exhale</div></button>
+                    <button class="btn btn-dark btn-sm py-0 px-2 text-light" @onclick='() => InsertTag("[inhales deeply]")'><div class="btn-lbl">deep inhale</div></button>
+                </div>
+            </div>
+        }
+
+        @* ── Drawer: Story Arc ───────────────────────────────── *@
+        @if (showArcDrawer)
+        {
+            <div class="bg-dark border border-secondary rounded mt-1 p-2">
+                <div class="d-flex justify-content-between align-items-center mb-1">
+                    <small class="text-muted fw-bold"><i class="bi bi-graph-up"></i> Story Arc</small>
+                    <button class="btn btn-sm btn-outline-secondary" @onclick="() => showArcDrawer = false"><i class="bi bi-x-lg"></i></button>
+                </div>
+                @if (currentOutline != null)
+                {
+                    <div class="px-2 pt-1 pb-0" style="background:#0d1117;">
+                        <StoryShapeChart Outline="currentOutline"
+                                         Compact="true"
+                                         TrackScrollOf="preview-scroll-container" />
+                    </div>
+                }
+                else
+                {
+                    <small class="text-muted">No outline yet. Ask Claude to "outline a 12-beat arc about &lt;your premise&gt;".</small>
+                }
+            </div>
+        }
+
+        @* ── Bottom toggle bar: view toggle (mobile) + drawer buttons ── *@
         <div class="d-flex align-items-center mt-1">
             <div class="btn-group d-flex d-md-none">
                 <button class="btn btn-sm @(viewMode == "editor" ? "btn-danger" : "btn-outline-secondary")" style="width: 100px;" @onclick='() => SwitchViewMode("editor")'><i class="bi bi-brush"></i><div class="btn-lbl"> Editor</div></button>
                 <button class="btn btn-sm @(viewMode == "preview" ? "btn-danger" : "btn-outline-secondary")" style="width: 100px;" @onclick='() => SwitchViewMode("preview")'><i class="bi bi-printer"></i><div class="btn-lbl"> Preview</div></button>
             </div>
             <div class="ms-auto d-flex gap-2">
-                <button class="btn btn-sm btn-outline-success" @onclick="ShowOutlineModal" disabled="@busy">
-                    <i class="bi bi-list-ol"></i><div class="btn-lbl"> Outline</div>
+                <button class="btn btn-sm @(showChatDrawer ? "btn-info text-dark" : "btn-outline-info")"
+                        @onclick='() => ToggleDrawer("chat")'>
+                    <i class="bi bi-chat-dots"></i><div class="btn-lbl"> Claude</div>
                 </button>
-                <button class="btn btn-sm btn-outline-primary" @onclick="WhatNext" disabled="@(busy || project.Characters.Count == 0)">
-                    <i class="bi bi-lightning"></i><div class="btn-lbl"> What Next?</div>
+                <button class="btn btn-sm @(showTtsDrawer ? "btn-secondary" : "btn-outline-secondary")"
+                        @onclick='() => ToggleDrawer("tts")'>
+                    <i class="bi bi-volume-up"></i><div class="btn-lbl"> TTS</div>
                 </button>
-                <button class="btn btn-sm btn-outline-warning" @onclick="RunValidation" disabled="@(busy || !hasExistingText)">
-                    <i class="bi bi-shield-check"></i><div class="btn-lbl"> Validate</div>
-                </button>
-                <button class="btn btn-sm @(showRefinementPanel ? "btn-info text-dark" : "btn-outline-info")" @onclick="ToggleRefinePanel" disabled="@(busy || !hasExistingText)" title="Refine — LLM flags impactful, cluttered, underdeveloped, and context-gap moments">
-                    @if (refining) { <span class="spinner-border spinner-border-sm"></span> }
-                    else { <i class="bi bi-magic"></i> }
-                    <div class="btn-lbl"> Refine</div>
-                </button>
-                <button class="btn btn-sm btn-outline-info" @onclick="() => showAskModal = true" disabled="@busy">
-                    <i class="bi bi-chat-dots"></i><div class="btn-lbl"> Ask</div>
-                </button>
-                <button class="btn btn-sm btn-outline-danger" @onclick="() => showWriteModal = true" disabled="@busy">
-                    <i class="bi bi-pen"></i><div class="btn-lbl"> Write</div>
+                <button class="btn btn-sm @(showArcDrawer ? "btn-secondary" : "btn-outline-secondary")"
+                        @onclick='() => ToggleDrawer("arc")'>
+                    <i class="bi bi-graph-up"></i><div class="btn-lbl"> Story Arc</div>
                 </button>
             </div>
         </div>
@@ -938,6 +1027,161 @@
 
     private bool dirty;
     private bool hasExistingText => !string.IsNullOrWhiteSpace(storyText);
+
+    // ── Bottom drawers (Claude / TTS / Story Arc) ──
+    private bool showChatDrawer;
+    private bool showTtsDrawer;
+    private bool showArcDrawer;
+
+    private void ToggleDrawer(string which)
+    {
+        // One-at-a-time: opening one closes the others.
+        var openSelf = which switch
+        {
+            "chat" => !showChatDrawer,
+            "tts"  => !showTtsDrawer,
+            "arc"  => !showArcDrawer,
+            _ => false,
+        };
+        showChatDrawer = which == "chat" && openSelf;
+        showTtsDrawer  = which == "tts"  && openSelf;
+        showArcDrawer  = which == "arc"  && openSelf;
+    }
+
+    // ── Claude Code CLI chat ──
+    private record ChatMessage(string Role, string Text)
+    {
+        public string Text { get; set; } = Text;
+    }
+    private readonly List<ChatMessage> chatMessages = [];
+    private string chatInput = "";
+    private bool chatBusy;
+    private string chatStatus = "";
+    private CancellationTokenSource? chatCts;
+
+    private async Task HandleChatKeyDown(KeyboardEventArgs e)
+    {
+        if (e.Key == "Enter" && (e.CtrlKey || e.MetaKey))
+        {
+            await SendChatAsync();
+        }
+    }
+
+    private async Task SendChatAsync()
+    {
+        if (chatBusy || string.IsNullOrWhiteSpace(chatInput)) return;
+
+        var userText = chatInput.Trim();
+        chatInput = "";
+        chatMessages.Add(new ChatMessage("user", userText));
+        var assistant = new ChatMessage("assistant", "");
+        chatMessages.Add(assistant);
+
+        chatBusy = true;
+        chatStatus = "Spawning claude CLI...";
+        chatCts = new CancellationTokenSource();
+        StateHasChanged();
+
+        try
+        {
+            var prompt = BuildChatPrompt(userText);
+            var workingDir = Paths.DataRoot;
+
+            await foreach (var chunk in ClaudeCli.SendAsync(prompt, workingDir, chatCts.Token))
+            {
+                assistant.Text += (assistant.Text.Length == 0 ? "" : "\n") + chunk;
+                chatStatus = "Streaming response...";
+                StateHasChanged();
+                // Keep the chat scrolled to the bottom as new chunks arrive.
+                try { await JS.InvokeVoidAsync("eval", "var c = document.getElementById('chat-history'); if (c) c.scrollTop = c.scrollHeight;"); }
+                catch { /* JS interop unavailable during prerender — ignore */ }
+            }
+
+            // After the CLI finishes, the story file may have been edited on disk.
+            // Reload so the editor reflects whatever Claude wrote.
+            var reloaded = Repo.LoadProject(project.Id);
+            if (reloaded != null && reloaded.Html != storyText)
+            {
+                project = reloaded;
+                storyText = project.Html;
+                chatStatus = "Story updated on disk — reloaded.";
+            }
+        }
+        catch (OperationCanceledException)
+        {
+            assistant.Text += "\n[cancelled]";
+        }
+        catch (Exception ex)
+        {
+            assistant.Text += $"\n[error] {ex.Message}";
+        }
+        finally
+        {
+            chatBusy = false;
+            chatStatus = "";
+            chatCts?.Dispose();
+            chatCts = null;
+            StateHasChanged();
+        }
+    }
+
+    private string BuildChatPrompt(string userText)
+    {
+        // Hand Claude Code the full story context AND a directive to use the
+        // existing services (CombatSceneWriter, OutlineService, ValidationService,
+        // WorldGraphService, etc.) rather than free-form prose. The CLI runs in
+        // the project root, so it can read canon JSON, the graph, and source.
+        var sb = new System.Text.StringBuilder();
+        sb.AppendLine("You are working inside the StreetSamurai Writer screen, called from a chat panel embedded in WriteStory.razor.");
+        sb.AppendLine();
+        sb.AppendLine("RULES — read these before doing anything:");
+        sb.AppendLine("- The project has dedicated services: CombatSceneWriter, StoryDirectorService, OutlineService, OutlineReviewService,");
+        sb.AppendLine("  StoryQualityService, AgendaEngine, ValidationService, StoryRefinementService, WorldGraphService, DatabaseService,");
+        sb.AppendLine("  NarrativeSessionContext, EntityExtractionService. Use them — do not free-form prose that bypasses canon.");
+        sb.AppendLine("- For combat scenes: invoke CombatSceneWriter via `dotnet run --project v3/StreetSamurai.Blazor -- --write-story guideme ...` or read its source and replicate its prompt structure faithfully.");
+        sb.AppendLine("- For canon questions: read the JSON under engine/data/, v3/StreetSamurai.Blazor/wwwroot/data/, or query world_graph.json.");
+        sb.AppendLine("- For validation: run ValidationService logic by reading its source.");
+        sb.AppendLine("- For code/UI fixes: edit the relevant file, then build with `dotnet build v3/StreetSamurai.sln`.");
+        sb.AppendLine("- Push back when the user asks for something that contradicts canon, world rules, or graph state.");
+        sb.AppendLine("- Symbol Φ is QUANTA currency, never phi. Iowan Behemoths are autonomous machines, not alive. There is no GLMZ police.");
+        sb.AppendLine("- If you edit the active story file, save it as JSON under the project's story path so the UI reload picks it up.");
+        sb.AppendLine();
+        sb.AppendLine($"Active story: {project.Id}");
+        sb.AppendLine($"Title: {(string.IsNullOrWhiteSpace(project.Title) ? "(untitled)" : project.Title)}");
+        sb.AppendLine($"Word count: {wordCount}");
+        sb.AppendLine();
+        sb.AppendLine("--- CURRENT STORY TEXT (markdown) ---");
+        sb.AppendLine(string.IsNullOrWhiteSpace(storyText) ? "(empty)" : storyText);
+        sb.AppendLine("--- END STORY ---");
+        sb.AppendLine();
+
+        if (chatMessages.Count > 2)
+        {
+            sb.AppendLine("--- PRIOR CHAT (for context, oldest first) ---");
+            // Skip the just-appended user msg + empty assistant placeholder (last 2 entries)
+            for (int i = 0; i < chatMessages.Count - 2; i++)
+            {
+                var m = chatMessages[i];
+                sb.AppendLine($"[{m.Role}] {m.Text}");
+            }
+            sb.AppendLine("--- END PRIOR CHAT ---");
+            sb.AppendLine();
+        }
+
+        sb.AppendLine("USER REQUEST:");
+        sb.AppendLine(userText);
+        return sb.ToString();
+    }
+
+    private void CancelChat()
+    {
+        chatCts?.Cancel();
+    }
+
+    private void ClearChat()
+    {
+        chatMessages.Clear();
+    }
 
     // ── Lifecycle ──
 

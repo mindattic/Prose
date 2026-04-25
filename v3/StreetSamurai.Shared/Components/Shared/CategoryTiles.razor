@@ -23,6 +23,7 @@
 @inject EntertainmentRepository EntertainmentRepo
 @inject ConsumerGoodRepository GoodsRepo
 @inject ContractRepository ContractRepo
+@inject IWriteAccessProvider Access
 
 <div class="home-sections">
 
@@ -116,14 +117,21 @@
                 <i class="bi bi-speedometer2 board-tile-icon"></i>
                 <div class="board-tile-name">Dashboard</div>
             </a>
-            <a href="stories" class="board-tile board-tile-tool">
-                <i class="bi bi-journal-richtext board-tile-icon"></i>
-                <div class="board-tile-name">Stories</div>
+            <a href="oracle" class="board-tile board-tile-tool">
+                <i class="bi bi-book-half board-tile-icon"></i>
+                <div class="board-tile-name">World Oracle</div>
             </a>
-            <a href="facts" class="board-tile board-tile-tool">
-                <i class="bi bi-lightbulb board-tile-icon"></i>
-                <div class="board-tile-name">Fact Discovery</div>
-            </a>
+            @if (Access.CanWrite)
+            {
+                <a href="stories" class="board-tile board-tile-tool">
+                    <i class="bi bi-journal-richtext board-tile-icon"></i>
+                    <div class="board-tile-name">Stories</div>
+                </a>
+                <a href="facts" class="board-tile board-tile-tool">
+                    <i class="bi bi-lightbulb board-tile-icon"></i>
+                    <div class="board-tile-name">Fact Discovery</div>
+                </a>
+            }
         </div>
     </div>
 
