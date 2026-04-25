@@ -192,23 +192,11 @@ public static class ServiceCollectionExtensions
         });
 
         // LLM services — multi-provider with router
-        // PooledConnectionLifetime prevents stale socket reuse: Anthropic's TLS terminator
-        // silently closes idle connections; without a lifetime the pool reuses the dead socket,
-        // and every retry in the same attempt window hits the same dead connection.
-        services.AddHttpClient<ClaudeService>()
-            .ConfigurePrimaryHttpMessageHandler(() => new SocketsHttpHandler
-            {
-                PooledConnectionLifetime = TimeSpan.FromMinutes(2),
-                PooledConnectionIdleTimeout = TimeSpan.FromSeconds(90),
-                ConnectTimeout = TimeSpan.FromSeconds(30),
-            });
-        services.AddHttpClient<OpenAiService>()
-            .ConfigurePrimaryHttpMessageHandler(() => new SocketsHttpHandler
-            {
-                PooledConnectionLifetime = TimeSpan.FromMinutes(2),
-                PooledConnectionIdleTimeout = TimeSpan.FromSeconds(90),
-                ConnectTimeout = TimeSpan.FromSeconds(30),
-            });
+        // ClaudeService + OpenAiService are now thin Legion adapters — no
+        // dedicated HttpClient needed; LegionClient owns the socket pool, and
+        // socket-stability tuning (PooledConnectionLifetime, etc.) lives there.
+        services.AddSingleton<ClaudeService>();
+        services.AddSingleton<OpenAiService>();
         services.AddHttpClient<DallEService>();
         services.AddSingleton<LlmRouter>(sp => new LlmRouter(
             sp.GetRequiredService<ClaudeService>(),
