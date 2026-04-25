@@ -47,15 +47,30 @@ public class DallEService
 
         log.LogInformation("DALL·E 3 generate via Legion: entityId={EntityId}, promptLen={Len}", entityId, cleanPrompt.Length);
 
-        var images = await legion.GenerateImageBytesAsync(
-            providerId: "openai",
-            apiKey: settings.OpenAiApiKey,
-            model: "dall-e-3",
-            prompt: cleanPrompt,
-            size: "1024x1792",
-            quality: "standard",
-            n: 1,
-            ct: ct);
+        IReadOnlyList<byte[]> images;
+        try
+        {
+            images = await legion.GenerateImageBytesAsync(
+                providerId: "openai",
+                apiKey: settings.OpenAiApiKey,
+                model: "dall-e-3",
+                prompt: cleanPrompt,
+                size: "1024x1792",
+                quality: "standard",
+                n: 1,
+                ct: ct);
+        }
+        catch (CircuitBreakerOpenException ex)
+        {
+            log.LogWarning("[StreetSamurai] DALL·E circuit breaker open: {Message}", ex.Message);
+            throw;
+        }
+        catch (HttpRequestException ex)
+        {
+            log.LogError(ex, "[StreetSamurai] DALL·E generation failed (entityId={EntityId}, status={Status})",
+                entityId, ex.StatusCode);
+            throw;
+        }
 
         if (images.Count == 0 || images[0].Length == 0)
             throw new InvalidOperationException("DALL·E 3 returned no image data.");

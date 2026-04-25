@@ -49,7 +49,7 @@ public class MultiLlmService
         => providers.Where(p => !string.IsNullOrWhiteSpace(GetApiKey(p.Id))).ToList();
 
     /// <summary>Call a single provider via Legion.</summary>
-    public Task<string> CallProviderAsync(string providerId, string system, string user, CancellationToken ct = default)
+    public async Task<string> CallProviderAsync(string providerId, string system, string user, CancellationToken ct = default)
     {
         var provider = providers.FirstOrDefault(p => p.Id == providerId)
                        ?? throw new ArgumentException($"Unknown provider: {providerId}");
@@ -57,15 +57,29 @@ public class MultiLlmService
         var key = GetApiKey(providerId);
         if (string.IsNullOrWhiteSpace(key)) throw new InvalidOperationException($"No API key for {providerId}");
 
-        return legion.CallAsync(
-            providerId: providerId,
-            apiKey: key,
-            model: provider.Model,
-            systemPrompt: system,
-            userMessage: user,
-            maxTokens: 2048,
-            temperature: 0.3,
-            ct: ct);
+        try
+        {
+            return await legion.CallAsync(
+                providerId: providerId,
+                apiKey: key,
+                model: provider.Model,
+                systemPrompt: system,
+                userMessage: user,
+                maxTokens: 2048,
+                temperature: 0.3,
+                ct: ct);
+        }
+        catch (CircuitBreakerOpenException ex)
+        {
+            Serilog.Log.Warning("[StreetSamurai] Legion circuit breaker open for {Provider}: {Message}", providerId, ex.Message);
+            throw;
+        }
+        catch (HttpRequestException ex)
+        {
+            Serilog.Log.Error(ex, "[StreetSamurai] Legion call failed for {Provider} (model={Model}, status={Status})",
+                providerId, provider.Model, ex.StatusCode);
+            throw;
+        }
     }
 
     /// <summary>
