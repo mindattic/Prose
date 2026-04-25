@@ -695,7 +695,7 @@
           }
         }
       },
-      "MindAttic.LLMVoting/1.0.0": {
+      "MindAttic.Legion/2.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v10.0",
         "dependencies": {
@@ -704,10 +704,10 @@
           "Microsoft.Extensions.Logging.Abstractions": "10.0.5"
         },
         "compile": {
-          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+          "bin/placeholder/MindAttic.Legion.dll": {}
         },
         "runtime": {
-          "bin/placeholder/MindAttic.LLMVoting.dll": {}
+          "bin/placeholder/MindAttic.Legion.dll": {}
         }
       },
       "StreetSamurai.Core/1.0.0": {
@@ -719,7 +719,7 @@
           "Microsoft.Data.Sqlite": "10.0.5",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "10.0.5",
           "Microsoft.Extensions.Http": "10.0.5",
-          "MindAttic.LLMVoting": "1.0.0",
+          "MindAttic.Legion": "2.0.0",
           "QuikGraph": "2.5.0",
           "QuikGraph.Serialization": "2.5.0",
           "Serilog": "4.3.1",
@@ -1672,10 +1672,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "MindAttic.LLMVoting/1.0.0": {
+    "MindAttic.Legion/2.0.0": {
       "type": "project",
-      "path": "../../LLMVoting/LLMVoting/LLMVoting.csproj",
-      "msbuildProject": "../../LLMVoting/LLMVoting/LLMVoting.csproj"
+      "path": "../../MindAttic.Legion/MindAttic.Legion/MindAttic.Legion.csproj",
+      "msbuildProject": "../../MindAttic.Legion/MindAttic.Legion/MindAttic.Legion.csproj"
     },
     "StreetSamurai.Core/1.0.0": {
       "type": "project",
