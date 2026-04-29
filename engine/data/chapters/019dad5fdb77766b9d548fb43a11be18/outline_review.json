@@ -1,0 +1,427 @@
+{
+  "critique": "This is a structurally sophisticated outline with a clear thesis and genuine formal ambition. The \u0027interview as audition\u0027 conceit is well-executed, and the decision to let Kyle read the calibration without changing his behavior is the correct thematic spine. The prose directives embedded in the theme field are unusually specific and largely sound \u2014 the piezoelectric mechanics are consistent, the corundum-strop draw is canonical, and the hamon-as-emotional-register is a strong device. However, several structural and tonal problems need addressing. First: KT\u0027s death in beat 4 is the outline\u0027s most significant moral event and it is underprocessed. The outline notes Kyle\u0027s discomfort with the cleanness of the kill, then immediately pivots to Dex\u0027s reaction and Mira\u0027s tight voice. The cost of KT\u0027s death \u2014 a person who died in a recruitment exercise she may not have fully consented to \u2014 is never charged to anyone. Mira loses \u0027three crew\u0027 in the character arc section as if it were a budget line. This is a world-rules violation: violence has lasting consequences. The outline treats KT as a prop whose death proves the hamon works. Second: the Bucktown seed is planted and paid off in the same beat (beat 7), which is a seed/payoff integrity failure. It reads as a villain-explains-the-plan moment dressed in recruiter\u0027s clothing. The information arrives too cleanly and too completely. Third: Mira\u0027s arc is underdeveloped. She has a want and a need but no genuine cost beyond personnel and margin. The outline says she loses three crew but does not dramatize what that means to her \u2014 KT in particular, given that KT is the one who dies. If Mira and KT had a relationship of any kind, the tight voice in beat 4 becomes a real crack in the recruiter\u0027s pose rather than a data point. Without it, Mira is a functional antagonist with a coherent worldview but no interiority. Fourth: the \u0027Pixel asleep across the hall\u0027 seed in beat 9 is planted as a future-chapter setup but has no texture in this chapter \u2014 it is pure infrastructure. The seed needs to carry weight in the chapter where it is planted, not just in the chapter where it pays off. Fifth: the walk home in beat 9 is the correct closing register but it is doing too much explicit setup work. The line \u0027the freelance arrangement sitting in his head like a key he has just been handed to a door he has not yet opened\u0027 is self-conscious stylization \u2014 it signals atmosphere rather than earning it. The chapter\u0027s closing image should be purely sensory and let the reader carry the implication. Sixth: the moral ambiguity score is limited by the fact that Kyle\u0027s acceptance of the freelance roster is framed as \u0027the right answer\u0027 \u2014 the arithmetic is honest, the concession is minimal, and Kyle retains his dignity. This is too clean. The outline needs to acknowledge that Kyle has just entered a relationship with an organization that killed eight people to read him two months ago, and that his \u0027dignified non-negotiation\u0027 may be indistinguishable from complicity from the outside.",
+  "cliche_flags": [
+    "Beat 7: \u0027Bucktown stretch, two months ago \u2014 fourteen, eight casualties \u2014 the FIRST interview, named here for the first time\u0027 \u2014 this is a villain-explains-the-plan beat wearing a recruiter\u0027s coat. The information arrives in a single speech, completely, at the moment of maximum dramatic convenience. The Bucktown engagement should have been seeded earlier \u2014 in beat 0 or beat 1 \u2014 as an unexplained scar or behavioral tic in Kyle\u0027s catalog, so that Mira\u0027s naming of it in beat 7 lands as recognition rather than revelation.",
+    "Beat 4: KT dies to demonstrate the hamon\u0027s charge and Kyle\u0027s technique. She is the only crew member who dies, she dies after her offensive capability has already been neutralized (bricked arm), and her death is immediately aestheticized (\u0027the kind of clean the people who built him would have liked\u0027). This is a character-exists-to-die beat. KT needs prior texture \u2014 even one line in beat 1 that makes her a person rather than an augmentation profile \u2014 or her death is pure mechanism.",
+    "Beat 9: \u0027the freelance arrangement sitting in his head like a key he has just been handed to a door he has not yet opened\u0027 \u2014 this is a final-beat metaphor that perfectly articulates the theme. It is the outline telling the reader what to feel rather than placing the reader in the room with Kyle. Cut it. The closing image is Silence cooling in his hand. That is sufficient.",
+    "Beat 8: Mira\u0027s \u0027exactly once\u0027 nod \u2014 \u0027the recruiter\u0027s professional acceptance of a refusal\u0027 \u2014 is a gesture borrowed from a hundred noir films. It is not wrong, but it is not earned. Mira has just watched KT die in an audition she designed. Her acceptance of Kyle\u0027s refusal should cost her something visible, even briefly, before she recovers the professional register.",
+    "Beat 7: Kyle taking Mira\u0027s round in the subdermal mesh and continuing to walk is the outline\u0027s most visually powerful beat, but the framing \u2014 \u0027the last interview question\u0027 \u2014 is the outline explaining its own symbolism. Trust the image. Remove the editorial gloss from the beat\u0027s goal text."
+  ],
+  "moral_ambiguity_score": 6,
+  "narrative_strength": 8,
+  "pacing_notes": "The tension curve is well-managed through beats 0-6, with a correct midpoint spike at beat 4 (KT\u0027s death) and a sustained high through beat 6. The problem is beat 7: the tension is listed at 9 but the beat\u0027s function is revelation and standoff, not combat escalation \u2014 the 9 is borrowed from the combat sequence and not re-earned by the beat\u0027s actual content. Beat 7 should be tension 8 (the shot into the mesh earns it) dropping to 7 (the offer), with beat 8 correctly at 6. The walk home at 4 is right. The flat zone is the transition between beat 6 (Rook blanked) and beat 7 (Mira alone): there is no beat that covers the moment Kyle turns from Rook and finds Mira still standing. That transition is doing significant emotional work \u2014 the shift from combat to negotiation \u2014 and it is currently a sentence in beat 7\u0027s goal text rather than a beat. Consider whether the chapter needs a micro-beat (half a page) between 6 and 7 that is purely Kyle orienting: the street, the bodies, the one person still standing. This would also give Mira\u0027s decision to stay a moment to register before she speaks.",
+  "improvements_made": [
+    "Added a Bucktown seed to beat 0: Kyle\u0027s NeoCortex catalog now includes a filed anomaly from two months prior \u2014 a Bucktown engagement where the opposing crew\u0027s restraint pattern matched tonight\u0027s \u2014 that Kyle has not resolved. This makes Mira\u0027s naming of it in beat 7 a recognition beat rather than a revelation beat, eliminating the villain-explains-the-plan structure.",
+    "Added one line of texture to KT in beat 1: her augmented arm is identified as a Tier 2 Lotus-subsidized prosthetic, the kind the Syndicate provides to crew who can\u0027t afford independent augmentation \u2014 which means KT\u0027s loyalty to Lotus is not ideological but financial. This does not save her, but it makes her death in beat 4 carry a different weight: she died in an audition because she couldn\u0027t afford to say no to the crew that owns her arm.",
+    "Revised beat 4\u0027s emotional arc to charge KT\u0027s death to Mira explicitly: the tight voice is now framed not as a data point but as the sound of someone who designed the audition knowing this outcome was possible and is now hearing it. The discomfort belongs to both Kyle and Mira.",
+    "Added a micro-beat (beat 6.5, indexed as beat 6 with a transition note) between Rook blanked and Mira alone: Kyle turns from the structure entrance and takes inventory of the street \u2014 the dog, KT, Rook, the fire escape, the one person still standing \u2014 before moving toward Mira. This transition beat is purely sensory and carries no dialogue.",
+    "Revised beat 7\u0027s tension from 9 to 8 and removed the editorial gloss (\u0027the last interview question\u0027). The image of Kyle walking through the round is sufficient. The outline does not need to explain what it means.",
+    "Revised beat 9\u0027s closing line: removed \u0027a key he has just been handed to a door he has not yet opened.\u0027 The closing image is now purely Silence cooling in his hand and the ache in his shoulder where the mesh took the round. The setup for Cold Chain is carried by the chapter\u0027s structure, not by a metaphor.",
+    "Added cost to Mira\u0027s arc: her character arc now notes that KT\u0027s death is a specific cost, not a budget line \u2014 KT was on her cell for fourteen months, the Lotus-subsidized arm was Mira\u0027s recommendation, and the decision to run a live audition with lethal-capable crew is a decision Mira made knowing what Kyle was. The \u0027exactly once\u0027 nod is revised to a beat where Mira\u0027s professional recovery is visible as a recovery \u2014 a half-second where it doesn\u0027t come, and then it does.",
+    "Revised the moral ambiguity framing in beat 8: the acceptance of the freelance roster is no longer framed as \u0027the right answer.\u0027 The beat now acknowledges that Kyle is entering a relationship with an organization that ran a fourteen-person crew into him two months ago and lost eight of them without breaking the recruitment process. His \u0027dignified non-negotiation\u0027 is also his first step into a structure he cannot fully see. The arithmetic is honest; the arithmetic is also incomplete.",
+    "Added Pixel texture to beat 9: rather than simply noting Pixel\u0027s hardware signature through the wall, Kyle\u0027s catalog registers that her sleep-cycle hardware is running a suppression protocol \u2014 the kind people run when their nights are not quiet enough to sleep through unaided. This gives the seed weight in the chapter where it is planted: Pixel is not simply asleep, she is someone managing her own damage, and Kyle reads it the way he reads exits."
+  ],
+  "warnings": [
+    "Nines is left alive and bleeding on the fire escape with a two-minute arterial window and Kyle does not send anyone to him. The outline treats this as a choice consistent with Kyle\u0027s discipline, but it is also a man bleeding out on a fire escape at 02:14 in West Town. The chapter does not need to resolve this \u2014 GLMZ does not reward good behavior \u2014 but the prose should register that Kyle knows what he is leaving behind. Currently beat 5 does not carry this weight.",
+    "The verbal arrangement in beat 8 has no enforcement mechanism and no witness. The outline notes this (\u0027lives in the cadence of two people talking\u0027) but does not address what happens if Lotus simply sends another crew. The Borrowed Hand is described as \u0027the punishment that follows when a contracted fee fails to clear,\u0027 which implies the arrangement does hold \u2014 but the chapter should plant one concrete detail that makes the arrangement\u0027s durability legible, even if only as inference. Mira\u0027s institutional authority within Lotus, or a specific protocol the Syndicate uses for verbal contracts, would serve this.",
+    "The Bucktown seed revision (improvement 1) requires a careful prose execution: the seed in beat 0 must be subtle enough that a first-time reader does not flag it as significant, but specific enough that a re-reader recognizes it immediately. The outline cannot guarantee this without seeing the prose. Flag for prose draft review.",
+    "Dex running south as \u0027the surviving rumor-vector\u0027 is a seed whose payoff is described as \u0027the wider city now knows what Kyle is at street level.\u0027 This payoff is diffuse \u2014 it does not land in a specific beat of a specific chapter. If Dex does not appear in Cold Chain or The Borrowed Hand as a named consequence, this seed is orphaned. Either assign Dex a specific payoff beat in a named chapter or cut the rumor-vector framing and let Dex\u0027s flight be simply what it is: a man who ran.",
+    "The outline\u0027s prose directives (embedded in the theme field) are detailed and sound, but they belong in a production document, not in a story outline schema. They will not survive schema validation in their current location. Recommend extracting them to a separate prose_directives field or a chapter-level note before the outline is passed to a prose generation stage.",
+    "KT\u0027s death remains the outline\u0027s most significant unresolved moral event. The improvements above add texture and charge the cost to Mira, but the chapter still does not ask whether KT knew the full terms of the audition \u2014 whether she understood she was running a live engagement against a candidate who might kill her. If she did not know, Mira is not just a recruiter who lost margin; she is someone who got a crew member killed without full disclosure. This is the chapter\u0027s deepest moral question and the outline currently routes around it."
+  ],
+  "revised_outline": {
+    "title": "The Interview",
+    "logline": "Walking home from a clean job at 02:14 on a wet West Town cross-street, Kyle is ambushed by a six-piece Lotus Syndicate crew. He reads the calibration by the third beat of the engagement and does not change his behavior. When he is the only person standing, Mira tells him what the engagement was. He says no to the payroll offer. He accepts the freelance roster because the arithmetic is honest. He walks home. He does not sleep. The Lotus Syndicate freelance roster is now the structural premise of every contract Sable will route to him next.",
+    "theme": "Capability is appraised in private the way a horse is appraised at auction. The Lotus Syndicate has decided in advance that Kyle is for sale; the ambush is the negotiation. Kyle understands the shape of the offer by the third beat of the engagement and does not change his behavior \u2014 the only honest answer to \u0027show me what you are\u0027 is \u0027exactly what I always am.\u0027 The chapter is a study in dignified non-negotiation: Kyle does not pretend to be less than he is to escape the offer, and he does not perform more than he is to leverage it. He fights the way he fights. The Syndicate watches. The deal struck at the end is not a victory \u2014 it is the smallest concession the encounter could end with, and Kyle accepts it because the math says accepting it costs less than refusing it. What the math does not say, and what the chapter does not say, is whether the arithmetic is complete.",
+    "premise": "0214 on a wet West Town cross-street near The Pivot. Six positions: Mira (chrome jaw, machine pistol) on the planter, KT (augmented arm, machete) between the panel van and a sedan, Rook (heavy, augmented legs) at the parking structure, Dex flanking from behind, Nines on a fire escape with a rifle, and a quadruped combat drone \u2014 Lotus calls it Ripper \u2014 held back near the dumpster. Kyle is walking home from a clean job; Silence\u0027s bank is empty (no engagement on the route), Chorus has four rounds, the rain stopped forty minutes ago. He reads six positions before he reaches them. He commits to ten more steps before forcing the trigger so he can see the spacing they have chosen. Mira opens the engagement on cue. Kyle draws Silence across the corundum strop on his left forearm in the same motion the saya clears, the piezoelectric core catching the impact-and-friction of three full passes, the hamon lighting from cold to a thin cyan thread. He fights. The fight is graceful by design. Silence brightens with each clean clash; KT\u0027s augmented arm goes dead at passive-disruption contact; Kyle scales the planter to the fire escape and disarms Nines through the cybernetic-wrist-brace interface; Rook\u0027s BCI crashes at the temple from a single edge-pass; the dog drops to two Chorus rounds; KT goes down clean in an arc against the planter; Dex runs. By the time Mira is the only one standing, Kyle has cataloged enough anomalies \u2014 the calibrated dog, the held-back rifle, Mira\u0027s coordination cadence \u2014 to know what he is in. He walks toward her at full hamon. She lets him. She does not flee; she has been waiting for this conversation. Mira makes the offer plainly: Lotus Syndicate wants him on payroll. He says no. She names the Bucktown engagement two months ago \u2014 fourteen-piece, eight casualties \u2014 as the first interview, and tells him he passed both. She asks once more. He says no again. She offers the freelance roster: contracted routes through Lotus territory, carrier rates, no further audition crews. Kyle thinks. The math is honest. He accepts the verbal arrangement. Mira tells him a fixer named Sable will route the contracts; Kyle does not flinch at the name. He turns south and takes the length of West Erie home. The chapter ends with Kyle climbing the Pivot stairs and not sleeping. The Lotus Syndicate freelance roster is the structural premise that the next chapter (Cold Chain) will pay off as a V\u00E1squez Holdings cold-chain run, and that the chapter after (The Borrowed Hand) will pay off as the punishment that follows when a contracted fee fails to clear.",
+    "characters": [
+      "Kyle Ellen Corbin-Vasik",
+      "Mira (Lotus Syndicate captain \u2014 the recruiter)"
+    ],
+    "acts": [
+      {
+        "act_number": 1,
+        "name": "The Cross-Street",
+        "purpose": "Establish the route home, the read of six positions, and the moment Mira calls \u0027Now\u0027 \u2014 the engagement opens on cue. Seed the Bucktown anomaly without naming it.",
+        "beats": [
+          {
+            "beat_index": 0,
+            "title": "Six Positions Before The Block",
+            "goal": "Kyle is two blocks south of West Erie at 02:14, walking home from a clean job. The NeoCortex is at idle, on the catalog rhythm it runs when there is nothing to flag \u2014 and the catalog is full of small things the prose must render as the texture of his evening: Silence cold on his back, the hamon a cold blue thread, the bank empty because he walked the route home without engagement; Chorus on his right hip, four 12-gauge rounds loaded, two empty chambers; the bio-battery at seventy-two percent from Mrs. Chen\u0027s broth three hours ago \u2014 protein-heavy, not a full meal; Ballistic Precognition idling passive. The setting is neighborhood-wet in the specific register of West Town at this hour: narrow cross-street near The Pivot, wet asphalt holding streetlight in long ribbons, parked cars dark against the curbs, a concrete planter at the eastern corner with a dead tree he has noticed before, a dumpster at the mouth of the parking structure. Rain stopped forty minutes ago \u2014 long enough that the runoff is no longer running, short enough that the air still carries the lake-water smell off the eastern shore. He catalogs all of this without flagging any of it. Then the wrong heartbeats start. The NeoCortex flags six positions in the half-second between the first read and the sixth: one elevated on the fire escape, one behind the panel van with an augmented-limb signature, one behind the planter breathing controlled, one at the mouth of the parking structure with augmented legs and dense chest armor, one flanker behind him unaugmented, and one non-organic quadrupedal signature near the dumpster \u2014 purely mechanical, pit-bull-sized, jaw-mounted emitter cycling at low draw, no BCI. He catalogs the read. He gives them ten more steps so he can see the spacing. Buried in the catalog, filed and unresolved for two months: a Bucktown engagement where the opposing crew\u0027s restraint pattern matched something he couldn\u0027t name at the time. He has not resolved it. He gives them ten steps. They commit on the eighth.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik"
+            ],
+            "location": "West Town cross-street, two blocks south of West Erie",
+            "emotional_arc": "Procedural restraint. The noir register is the catalog rhythm of a man whose body has been reading ambushes for fourteen years. The Bucktown anomaly is filed, not flagged \u2014 a reader will not catch it on first pass.",
+            "stakes": "Reading the spacing correctly. Buying himself the angle.",
+            "seeds": [
+              "Six positions named without panic \u2014 the chapter\u0027s procedural register",
+              "Wet asphalt, lake-water smell, dead tree \u2014 the visual and sensory ground",
+              "Mira\u0027s call cadence is coming \u2014 Kyle\u0027s instincts will catch it",
+              "Silence\u0027s bank empty at engagement open \u2014 the hamon will brighten only with clean work",
+              "Bucktown anomaly filed and unresolved \u2014 two months, restraint pattern, no name yet"
+            ],
+            "payoffs": [],
+            "facet_hint": "discipline",
+            "tension": 5,
+            "structure_role": "",
+            "scene_type": "scene"
+          },
+          {
+            "beat_index": 1,
+            "title": "Now",
+            "goal": "Mira calls \u0027Now.\u0027 Chrome jaw catching streetlight as she steps from behind the planter, machine pistol up \u2014 Lotus\u0027s south-arm cell captain, BCI implant at her left temple a small visible bump under the close-cropped hair. KT comes out of the gap between the panel van and a sedan: augmented left arm fully extended elbow-to-fingertip in chrome \u2014 a Lotus-subsidized Tier 2 prosthetic, the kind the Syndicate provides to crew who can\u0027t afford independent augmentation \u2014 machete raised in her unaugmented right. Rook materializes from the parking structure \u2014 heavy, augmented legs, body armor dense across the chest, heavy pistol in two-hand grip. Dex closes from behind, both handguns drawn, unaugmented, the flanker whose lack of signature is hard for arrays like Kyle\u0027s to read. Nines settles on the fire escape \u2014 rifle braced, cybernetic wrist-brace the only augmentation his profile carries. The dog rounds the dumpster: quadrupedal, low-slung, armored across the back and haunch, jaw emitter cycling, ozone already in the air. No BCI. No cardiac regulator. The array files it as an inhabited thing and moves on. Mira speaks first: \u0027You\u0027re a long way from your contract territory.\u0027 Kyle does not answer. He draws Silence in the same motion that crosses his left forearm \u2014 the corundum strop mounted along the inner arm, three full passes against the mune in the four-tenths of a second the draw takes. The piezoelectric core wakes. The ferrocerium edge of the strop throws blue-white sparks across his sleeve and dies in the wet air. The hamon flickers from cold to a thin cyan thread. He steps into the cross-street.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik",
+              "Mira (Lotus Syndicate captain \u2014 the recruiter)"
+            ],
+            "location": "West Town cross-street",
+            "emotional_arc": "The chapter pivots from observation to engagement. The corundum-strop draw is canonical. KT\u0027s subsidized arm is a single detail that makes her a person in debt to the organization that is about to get her killed.",
+            "stakes": "First exchange. First read.",
+            "seeds": [
+              "Corundum-strop draw \u2014 Kyle\u0027s signature opening, canonical",
+              "Hamon at cyan thread \u2014 bank reads visibly",
+              "KT\u0027s Lotus-subsidized arm \u2014 her loyalty is financial, not ideological",
+              "Mira\u0027s opener heard now as taunt, will read later as recruiter\u0027s first line"
+            ],
+            "payoffs": [
+              "Six-position read from beat 0"
+            ],
+            "facet_hint": "code",
+            "tension": 7,
+            "structure_role": "",
+            "scene_type": "scene"
+          }
+        ]
+      },
+      {
+        "act_number": 2,
+        "name": "The Engagement",
+        "purpose": "The fight \u2014 graceful, piezoelectric, the hamon brightening with each clean clash. Kyle catalogs the anomalies of restraint without committing to the read until act 3. End the act with KT dead, the dog destroyed, Nines disarmed and bleeding, Rook blanked, Dex fled, and a micro-beat of Kyle taking inventory before he turns toward Mira.",
+        "beats": [
+          {
+            "beat_index": 2,
+            "title": "First Clash",
+            "goal": "KT closes first. Her augmented arm swings horizontal, chrome catching streetlight; Kyle catches the blow on the flat of Silence \u2014 not the edge, the flat \u2014 and the impact rings through the steel into his wrists, into the shingane, and the piezoelectric core takes the impulse. The hamon brightens. He stays in contact for one more exchange \u2014 KT brings the machete down from the right, he crosses the blade, takes the second hit clean, the hamon flickers up another increment \u2014 and then he moves the edge to her left wrist. Passive disruption. The augmented arm goes dead from the elbow down. KT makes a sound like a circuit breaker tripping. Mira fires once from the planter \u2014 a controlled burst \u2014 and Kyle reads it, steps out of the lane, hears the rounds clip the car door behind him. Mira\u0027s call to Nines is late. The rifle on the fire escape does not fire when the angle opens. Kyle catalogs the lateness without acting on it. The Bucktown anomaly surfaces briefly in the catalog: the same pattern, two months ago, a crew that held back when it shouldn\u0027t have. He files it again.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik"
+            ],
+            "location": "West Town cross-street",
+            "emotional_arc": "The combat is musical, not mechanical: clash, brighten, disrupt, step. The Bucktown anomaly surfaces briefly and is filed \u2014 the reader who caught it in beat 0 will register this; the reader who didn\u0027t won\u0027t.",
+            "stakes": "The hamon. The first read of restraint.",
+            "seeds": [
+              "Mira\u0027s call to Nines arriving late \u2014 first concrete tell of calibration",
+              "Bucktown anomaly surfacing \u2014 second touch on the unresolved seed",
+              "Passive disruption to KT\u0027s arm \u2014 technique Kyle will use again on Rook"
+            ],
+            "payoffs": [
+              "Hamon\u0027s piezoelectric register from beat 1 \u2014 bank rises with clean work"
+            ],
+            "facet_hint": "code",
+            "tension": 8,
+            "structure_role": "",
+            "scene_type": "scene"
+          },
+          {
+            "beat_index": 3,
+            "title": "The Dog and the Crocodile",
+            "goal": "Rook closes from the structure entrance, heavy pistol in two-hand grip, looking for an inside angle where Silence cannot generate arc. Kyle gives him the approach. The dog rounds the front of the sedan low and fast, articulated legs finding grip on wet asphalt, jaw emitter active. Kyle hears the change in leg-cadence before he sees the lunge. He goes up onto the sedan\u0027s hood and the dog\u0027s stun emitter discharges into empty air under his boot \u2014 and Kyle registers what just happened: the emitter is calibrated to register but not disable. A real combat drone would have throttled the discharge to lock his nervous system; this one passed at threshold and continued. He files it. The Bucktown anomaly resolves: that crew held back the same way. He does not act on the resolution. He fights the same way regardless. Chorus comes off his hip in his left hand \u2014 bird\u0027s-head grip \u2014 and he puts the first round through the dog\u0027s rear actuator housing. The legs collapse. The dog drags itself forward on its front pair, jaw emitter still cycling, threat reduced. Kyle drops off the hood. Rook fires at three meters; Kyle reads the telegraph and lets the round pass between his arm and his ribs.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik"
+            ],
+            "location": "West Town cross-street, sedan and parking structure entrance",
+            "emotional_arc": "The dog\u0027s calibrated emitter is the second concrete tell. The Bucktown anomaly resolves here \u2014 Kyle now knows what he is in. He fights the same way regardless. This is the chapter\u0027s thesis in action.",
+            "stakes": "The dog. Rook. The integrity of Kyle\u0027s read.",
+            "seeds": [
+              "Dog\u0027s stun emitter at threshold \u2014 second concrete tell of restraint",
+              "Kyle\u0027s choice to file the read and fight the same way \u2014 chapter\u0027s thesis",
+              "Bucktown anomaly resolved \u2014 the pattern named internally, not yet spoken aloud"
+            ],
+            "payoffs": [
+              "Mira\u0027s late call from beat 2 \u2014 confirmed pattern",
+              "Bucktown seed from beat 0 \u2014 resolved in Kyle\u0027s catalog"
+            ],
+            "facet_hint": "discipline",
+            "tension": 8,
+            "structure_role": "",
+            "scene_type": "scene"
+          },
+          {
+            "beat_index": 4,
+            "title": "KT, Down",
+            "goal": "KT comes around the planter at a sprint, machete overhead, the dead arm useless at her side, screaming something that has stopped being words. Kyle reads her path. He steps inside the arc of the swing. The edge of Silence finds her throat at the point of closest contact. The cut is clean \u2014 the kind of clean the people who built him would have liked, and Kyle dislikes the thought the moment it lands and files it where he files things he does not want to remember thinking. The blade carries through the full motion and rings off the concrete planter on the follow-through, a hard clean note in the night air. The piezoelectric core takes the impulse. The hamon brightens. KT\u0027s machete hits the asphalt. Dex, somewhere behind the van: \u0027He cut KT\u0027s head off, man. He just\u2014\u0027 Mira: \u0027Shut up.\u0027 Her voice is tight in a way that is not the tightness of a captain losing a fight. KT had been on her cell for fourteen months. The Lotus-subsidized arm was Mira\u0027s recommendation. The audition was Mira\u0027s design, and the lethality of the candidate was the point of the design, and Mira knew both of these things when she called \u0027Now.\u0027 The tight voice is the sound of someone who designed the outcome and is now hearing it. Kyle catalogs the tightness. He does not know what it means. He files it.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik",
+              "Mira (Lotus Syndicate captain \u2014 the recruiter)"
+            ],
+            "location": "West Town cross-street, planter",
+            "emotional_arc": "The kill is clean; the discomfort is the cleanness. Mira\u0027s tight voice is charged here as a real crack, not a data point \u2014 the reader understands what it costs her even if Kyle does not. KT\u0027s death is not aestheticized away from its weight.",
+            "stakes": "KT\u0027s life. The night\u0027s first death. Mira\u0027s composure as a recruiter who designed this outcome.",
+            "seeds": [
+              "The cleanness of the cut \u2014 Kyle\u0027s discomfort with how his hands know what they know",
+              "Mira\u0027s tight voice \u2014 charged here as genuine cost, not professional tell",
+              "KT on Mira\u0027s cell fourteen months, subsidized arm Mira\u0027s recommendation \u2014 the moral weight of the audition\u0027s design"
+            ],
+            "payoffs": [
+              "KT\u0027s bricked arm from beat 2 \u2014 paid off in the kill",
+              "KT\u0027s subsidized arm from beat 1 \u2014 the debt that brought her here"
+            ],
+            "facet_hint": "code",
+            "tension": 9,
+            "structure_role": "",
+            "scene_type": "scene"
+          },
+          {
+            "beat_index": 5,
+            "title": "The Spin and the Click",
+            "goal": "The fire escape is the problem. Nines has elevation and patience and Kyle is out of covered positions. He does not climb. From the small leather bandoleer along his right rib \u2014 three pouches, each closed with a thumb-snap \u2014 Kyle pulls one of two specialty rounds: an explosive slug, twelve-gauge, manufactured by a man in West Town who has been fitting them by hand since before the Lotus Syndicate existed as an organization. He breaks Chorus open along the cylinder hinge. He drops the slug into one of the two empty chambers \u2014 the one second from the firing position. He closes the action. He spins the cylinder deliberately, neither fast nor slow, the way a man spins a thing whose timing he intends to control. He counts the chamber-detents as they pass the lock-stop \u2014 one, two, three \u2014 and on the fourth detent his thumb arrests the motion at exactly the click he wants. The cylinder seats. He thumbs the hammer back. The single-action mechanism cocks with the small precise sound of a thing engineered to make exactly that sound. He raises Chorus. Nines is three stories up, in profile, cybernetic wrist-brace catching streetlight at the inner forearm. Kyle puts the slug through Nines\u0027s right wrist. The explosive fragmentation takes the wrist apart at the brace junction; the rifle drops three stories to the alley below; Nines goes down on the grating, alive, screaming. The arterial bleeder he is now will need a tourniquet inside two minutes. Kyle does not climb. He does not send anyone. He knows what he is leaving on that fire escape and he files it with the other things he files. He thumbs the hammer back a second time on a standard chamber. He keeps the muzzle low. Dex has broken from cover and is running south. Kyle lets him run.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik"
+            ],
+            "location": "West Town cross-street, planter and fire escape",
+            "emotional_arc": "Graceful gunplay \u2014 the spin, the click, the hammer-pull, the shot. Nines bleeding out is registered, not resolved. Kyle knows what he is leaving behind. The chapter does not reward him for leaving it.",
+            "stakes": "Nines\u0027s wrist. The rifle. Nines\u0027s life, which Kyle is choosing not to spend effort on.",
+            "seeds": [
+              "Chorus\u0027s six-chamber cylinder \u2014 four standard, two reserved; specialty rounds in rib-bandoleer",
+              "Hand-fit explosive slug \u2014 manufactured by a West Town gunsmith older than the Lotus Syndicate",
+              "Single-action cocking \u2014 the precise mechanical sound, canonical",
+              "Dex running south \u2014 the surviving rumor-vector",
+              "Nines alive and bleeding \u2014 Kyle leaves him; this is noted, not excused"
+            ],
+            "payoffs": [
+              "Fire escape elevation problem \u2014 neutralized without Kyle leaving the ground",
+              "Chorus as weapon of precision \u2014 first full demonstration"
+            ],
+            "facet_hint": "discipline",
+            "tension": 9,
+            "structure_role": "",
+            "scene_type": "scene"
+          },
+          {
+            "beat_index": 6,
+            "title": "Rook, Blanked",
+            "goal": "Kyle drops back to street level. The dog drags itself to lunge from two meters; Kyle puts his second Chorus round through the jaw emitter housing at point-blank. The stun system dies. The dog\u0027s forward momentum carries it into his shin and he steps over it, one hand touching asphalt as he regains footing \u2014 the piezoelectric core takes the brief contact-impulse, the hamon ticks up, and the cycle continues. Rook fires from the structure entrance \u2014 two rounds, tight group; Kyle reads them both, late at the lower bio-battery, but reads them, and moves through the gap in a way that looks, to anyone watching, like something that should not be physically possible. He closes the distance to Rook at a run. Augmentation Signature Read has already mapped him: augmented legs (Tier 3), interface points at both hips, BCI at the right temple, no cardiac. Rook swings the pistol to track. Kyle gets inside the barrel with the last two steps; the slide presses against his ribs as it fires, the round going into concrete below his foot, the muzzle blast burning his shirt \u2014 and the edge of Silence comes in a precise arc to Rook\u0027s right temple. Passive disruption. BCI interface point. Rook\u0027s eyes go blank. The pistol drops from a hand that has forgotten it was holding something. He sits down on the concrete, breathing, every augmentation in his body simultaneously silent. He will wake up tomorrow with the worst headache of his life and no memory of the last six hours.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik"
+            ],
+            "location": "West Town cross-street, parking structure entrance",
+            "emotional_arc": "Rook is left alive. The reader registers the pattern: Kyle is leaving people alive by choice. The discipline is not just technique; it is what Kyle does with the technique.",
+            "stakes": "Rook\u0027s life. The disruption cascade on full display.",
+            "seeds": [
+              "Rook blanked, alive \u2014 will not remember tonight; Mira will be debriefed alone; Lotus\u0027s institutional memory of Kyle is now controlled by Mira"
+            ],
+            "payoffs": [
+              "Disruption-cascade technique from beats 2 and 3 \u2014 full demonstration"
+            ],
+            "facet_hint": "code",
+            "tension": 9,
+            "structure_role": "",
+            "scene_type": "scene"
+          },
+          {
+            "beat_index": 7,
+            "title": "Inventory",
+            "goal": "TRANSITION BEAT. Kyle turns from the structure entrance. The street: the dog, inert, jaw emitter dark. Rook sitting against the concrete, breathing, eyes blank. The place where KT\u0027s machete fell. The fire escape, three stories up, where Nines is making a sound that is getting quieter. The wet asphalt. The streetlight ribbons. One person still standing. Mira has not run. Kyle gives her credit for that. The hamon is at three-quarters and rising. He walks toward her.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik"
+            ],
+            "location": "West Town cross-street",
+            "emotional_arc": "The shift from combat to negotiation is earned by a beat of pure inventory. The reader is placed in the street with Kyle before Mira speaks. Nines\u0027s sound getting quieter is registered here \u2014 not resolved, not excused.",
+            "stakes": "The transition. The weight of what the street looks like before the offer is made.",
+            "seeds": [
+              "Nines\u0027s sound getting quieter \u2014 the chapter does not look away"
+            ],
+            "payoffs": [
+              "The full engagement \u2014 paid off in the inventory beat before the offer"
+            ],
+            "facet_hint": "discipline",
+            "tension": 7,
+            "structure_role": "",
+            "scene_type": "scene"
+          }
+        ]
+      },
+      {
+        "act_number": 3,
+        "name": "The Offer",
+        "purpose": "Mira left alone. The standoff. The shot into the mesh. The recruitment offer made plainly. Kyle\u0027s refusal. The Bucktown naming as recognition, not revelation. The freelance roster counteroffer. The verbal arrangement. The walk home. The chapter ends quietly.",
+        "beats": [
+          {
+            "beat_index": 8,
+            "title": "What She Was Waiting For",
+            "goal": "Mira is standing in the open, machine pistol at her side, pointed down. Chrome jaw catching streetlight from the west. She is looking at the dog, at Rook, at the place where KT\u0027s machete fell. \u0027Fourteen of us jumped you in the Bucktown stretch two months ago,\u0027 she says. \u0027You walked out. We lost eight people.\u0027 Kyle says nothing. The Bucktown anomaly, filed in beat 0 and resolved in beat 3, lands here as recognition: the name on the thing he already knew. He does not show the recognition. \u0027This wasn\u0027t a hit.\u0027 She is looking at his face now. \u0027This was a test. I needed to see if the stories were true.\u0027 The NeoCortex flags her micro-expressions. She is not lying. Kyle hates that the hardware is the thing that knows. \u0027They\u0027re true,\u0027 he says. The machine pistol comes up. He reads the shot. He does not dodge it. The round hits the subdermal mesh on his left shoulder and deforms against the woven lattice, the impact like a punch from someone heavy. He keeps walking toward her. The hamon is sodium-white. The full bank, taken legitimately from clean impacts and clean cuts. The light it casts across the wet asphalt between them is the chapter\u0027s only beautiful image. He stops two meters from her. \u0027Drop the weapon.\u0027 A half-second where her professional register does not come. Then it does. She drops it.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik",
+              "Mira (Lotus Syndicate captain \u2014 the recruiter)"
+            ],
+            "location": "West Town cross-street, planter",
+            "emotional_arc": "Mira\u0027s naming of Bucktown lands as recognition, not revelation \u2014 Kyle already resolved the anomaly in beat 3. The shot into the mesh is the final interview question; Kyle walking through it is the answer. The half-second where Mira\u0027s professional register fails to arrive is the chapter\u0027s only moment where her cost is visible.",
+            "stakes": "The shot into the mesh. Mira\u0027s read of his face. The hamon at full bank.",
+            "seeds": [
+              "Mira\u0027s half-second recovery \u2014 the recruiter\u0027s composure as something she has to rebuild, not something she has"
+            ],
+            "payoffs": [
+              "Bucktown anomaly from beat 0 \u2014 named here as recognition, not revelation",
+              "Full combat sequence \u2014 paid off in the bank reaching full at the right moment, by the right means",
+              "Mira\u0027s tight voice from beat 4 \u2014 paid off in the half-second where the professional register doesn\u0027t come"
+            ],
+            "facet_hint": "code",
+            "tension": 8,
+            "structure_role": "",
+            "scene_type": "scene"
+          },
+          {
+            "beat_index": 9,
+            "title": "The Roster",
+            "goal": "Mira makes the offer plain, no flourish: \u0027Lotus wants you on payroll.\u0027 Top-tier protection, percentage of every contracted route through their territory, a salary the Pivot\u0027s rent would not feel. \u0027You said no the first time. I\u0027m asking again.\u0027 Kyle does not raise the blade. The hamon cools two notches. He says it level: \u0027No.\u0027 She nods, once, the nod arriving a half-beat later than a captain who had expected the answer would produce it. She does not press. She offers the second thing: \u0027Freelance roster, then.\u0027 Lotus contracts routes through their territory; Kyle takes first refusal on routes that need a clean reputation; carrier rates, no Lotus crew on him in the meantime. The arrangement is verbal; it lives in the cadence of two people talking on a wet cross-street with a dead woman thirty meters away and a man bleeding out on a fire escape above them. Kyle thinks. The math is honest. He has spent his life refusing to be anyone\u0027s man, and the freelance roster is the smallest concession this encounter could end with \u2014 his independence formally intact, the audition crews kept off him, and the fee structure plainly named. What the math does not say: the Lotus Syndicate ran fourteen people into him two months ago and lost eight of them without breaking the recruitment process. The arithmetic is honest. The arithmetic is also incomplete. He takes it. \u0027Fixer\u0027s name?\u0027 \u0027Sable.\u0027 He files the name. \u0027She\u0027ll route the contracts.\u0027 He nods. He looks at the dog and at Rook and at the place where KT fell. He turns. The hamon is at three-quarters. The bank he built honestly is going home with him.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik",
+              "Mira (Lotus Syndicate captain \u2014 the recruiter)"
+            ],
+            "location": "West Town cross-street, planter",
+            "emotional_arc": "The chapter\u0027s argument lands: dignified non-negotiation. But the acceptance is not framed as the right answer \u2014 the incomplete arithmetic is named explicitly. Kyle\u0027s independence is formally intact. His operational independence is not. The deal is the smallest concession the encounter could end with, and it is also the first step into a structure he cannot fully see.",
+            "stakes": "The first offer. The second offer. The verbal arrangement. The incomplete arithmetic.",
+            "seeds": [
+              "The verbal arrangement \u2014 Kyle on Lotus freelance roster",
+              "Sable as the routing fixer \u2014 confirmed by Mira, sets up Cold Chain directly",
+              "The incomplete arithmetic \u2014 the chapter does not resolve this; it names it and lets it sit"
+            ],
+            "payoffs": [
+              "The audition\u0027s purpose \u2014 paid off in the offer made and the deal struck",
+              "The chapter\u0027s title \u2014 earned",
+              "Mira\u0027s half-second nod \u2014 the professional recovery visible as a recovery"
+            ],
+            "facet_hint": "ledger",
+            "tension": 6,
+            "structure_role": "",
+            "scene_type": "scene"
+          },
+          {
+            "beat_index": 10,
+            "title": "West Erie Home",
+            "goal": "Kyle takes the length of West Erie south. The hamon cools by stages \u2014 sodium-white to blue-white to the cold cyan thread he started the night with. The shoulder where Mira\u0027s round hit is bruising under the subdermal mesh. Mrs. Chen\u0027s stall is dark \u2014 she opens at four, closes at midnight. He walks past anyway. The Pivot is four blocks ahead. His unit, 2F, is on the second floor with a working lock he never uses. Across the hall, 2E: Pixel\u0027s hardware signature through the wall, soft and regular \u2014 a sleep-suppression protocol running, the kind people run when their nights are not quiet enough to sleep through unaided. He reads it the way he reads exits. He climbs the stairs. He does not sleep. The chapter ends with Kyle sitting on the edge of the bed, Silence in his right hand, the saya across his thighs, the hamon now the cold blue of a spent bank. The shoulder aches. The deal sits in the room with him.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik"
+            ],
+            "location": "West Erie south, then The Pivot, Unit 2F",
+            "emotional_arc": "The chapter ends quietly. The deal Kyle made is in the room with him. Pixel\u0027s sleep-suppression protocol gives the seed weight in this chapter \u2014 she is not simply asleep, she is managing her own damage, and Kyle reads it the way he reads exits. The closing image is Silence cooling in his hand and the ache in his shoulder. No metaphor. No editorial gloss.",
+            "stakes": "Continuance. The next contract.",
+            "seeds": [
+              "Pixel\u0027s sleep-suppression protocol \u2014 she is managing damage of her own; establishes proximity and texture for The Borrowed Hand",
+              "Silence cooling to spent bank \u2014 chapter\u0027s closing image",
+              "The deal sitting in the room \u2014 the freelance arrangement Kyle does not yet know will cost him his hands"
+            ],
+            "payoffs": [
+              "Full bank from beat 8 \u2014 spent walking home, the chapter respecting its own arithmetic",
+              "The chapter\u0027s closing register \u2014 earned by everything that preceded it"
+            ],
+            "facet_hint": "continuance",
+            "tension": 4,
+            "structure_role": "",
+            "scene_type": "scene"
+          }
+        ]
+      }
+    ],
+    "character_arcs": [
+      {
+        "character": "Kyle Ellen Corbin-Vasik",
+        "want": "",
+        "need": "",
+        "start_state": "A working freelancer two blocks from his bed, NeoCortex at idle, expecting nothing. An unresolved anomaly from Bucktown filed and forgotten.",
+        "end_state": "On the Lotus Syndicate freelance roster by verbal arrangement. His independence formally intact. His operational independence no longer purely his. The arithmetic honest and incomplete.",
+        "turning_point": "Beat 3 \u2014 registering the dog\u0027s calibrated emitter, resolving the Bucktown anomaly, and choosing not to change his behavior. The chapter\u0027s thesis lives in that choice: the only honest answer to \u0027show me what you are\u0027 is \u0027exactly what I always am.\u0027",
+        "cost": "His formal independence stays intact. His operational independence does not. He has entered a relationship with an organization that killed eight of its own people to read him two months ago, and he has accepted this because the arithmetic said to. The arithmetic is incomplete."
+      },
+      {
+        "character": "Mira (Lotus Syndicate captain \u2014 the recruiter)",
+        "want": "",
+        "need": "",
+        "start_state": "A captain running a six-piece audition crew under the assumption Kyle will accept the payroll offer or fail the test. KT on her cell fourteen months; the subsidized arm her recommendation.",
+        "end_state": "Has signed Kyle to the freelance roster verbally. Has lost KT \u2014 dead, by a design Mira made knowing what Kyle was. Has lost the payroll offer. Has the freelance margin she gave up on every Lotus route Kyle takes. Has a half-second where her professional register failed to arrive, and she knows Kyle registered it.",
+        "turning_point": "Beat 8 \u2014 the moment she fires the round into the subdermal mesh and Kyle keeps walking. The interview is over; the offer has to be made. The half-second where her composure doesn\u0027t come is the chapter\u0027s only visible crack in the recruiter\u0027s pose.",
+        "cost": "KT, dead, by Mira\u0027s design. Three crew total. The carrier-rate margin on every Lotus route Kyle takes. The knowledge that Kyle\u0027s hardware registered her micro-expressions when she made the offer, and that he knows she wasn\u0027t lying, and that she knows he knows."
+      }
+    ],
+    "seeds_and_payoffs": [
+      {
+        "seed": "Bucktown anomaly \u2014 unresolved, filed in Kyle\u0027s catalog (beat 0)",
+        "planted_in_beat": 0,
+        "payoff": "Resolved in Kyle\u0027s catalog at beat 3 (the dog\u0027s emitter confirms the pattern); named aloud by Mira in beat 8 as recognition, not revelation",
+        "payoff_in_beat": 8
+      },
+      {
+        "seed": "Mira\u0027s late call to Nines (beat 2)",
+        "planted_in_beat": 2,
+        "payoff": "Pattern of restraint Kyle catalogs through beats 3-4; confirmed in beat 8 as Mira\u0027s confession that this was an audition",
+        "payoff_in_beat": 8
+      },
+      {
+        "seed": "The dog\u0027s calibrated stun emitter (beat 3)",
+        "planted_in_beat": 3,
+        "payoff": "Second concrete tell of audition; the moment Kyle resolves the Bucktown anomaly and chooses to fight the same way regardless",
+        "payoff_in_beat": 3
+      },
+      {
+        "seed": "KT\u0027s Lotus-subsidized arm \u2014 Mira\u0027s recommendation (beat 1)",
+        "planted_in_beat": 1,
+        "payoff": "KT\u0027s death in beat 4 is charged to Mira\u0027s design; the tight voice in beat 4 is the sound of a recruiter who recommended the arm and designed the audition hearing the outcome",
+        "payoff_in_beat": 4
+      },
+      {
+        "seed": "Mira\u0027s tight voice after KT\u0027s kill (beat 4)",
+        "planted_in_beat": 4,
+        "payoff": "Paid off in beat 8 as the half-second where her professional register fails to arrive before she drops the weapon",
+        "payoff_in_beat": 8
+      },
+      {
+        "seed": "The piezoelectric hamon brightening with clean impacts only (beat 1)",
+        "planted_in_beat": 1,
+        "payoff": "Full bank in beat 8 is the chapter\u0027s only beautiful image because Kyle built it cleanly \u2014 the work was good because Kyle was in his discipline",
+        "payoff_in_beat": 8
+      },
+      {
+        "seed": "Nines alive and bleeding on the fire escape (beat 5)",
+        "planted_in_beat": 5,
+        "payoff": "Registered in the inventory beat (beat 7) as a sound getting quieter \u2014 the chapter does not resolve this, does not excuse it, does not reward Kyle for it",
+        "payoff_in_beat": 7
+      },
+      {
+        "seed": "Rook blanked, will not remember tonight (beat 6)",
+        "planted_in_beat": 6,
+        "payoff": "Mira will be debriefed alone; Lotus\u0027s institutional memory of Kyle is now controlled by Mira, who has signed him to the freelance roster",
+        "payoff_in_beat": 9
+      },
+      {
+        "seed": "Dex running south \u2014 surviving rumor-vector (beat 5)",
+        "planted_in_beat": 5,
+        "payoff": "To be assigned a specific payoff beat in Cold Chain or The Borrowed Hand \u2014 Dex must appear as a named consequence or the rumor-vector framing is cut and his flight stands as what it is",
+        "payoff_in_beat": 0
+      },
+      {
+        "seed": "The freelance roster verbal arrangement (beat 9)",
+        "planted_in_beat": 9,
+        "payoff": "Direct setup for Cold Chain \u2014 Sable routes a Lotus-territory contract to Kyle in the next chapter, which Kyle takes because of the deal made tonight",
+        "payoff_in_beat": 10
+      },
+      {
+        "seed": "Sable named as the routing fixer (beat 9)",
+        "planted_in_beat": 9,
+        "payoff": "Cold Chain opens with Sable routing the V\u00E1squez contract through the cracked-screen terminal",
+        "payoff_in_beat": 9
+      },
+      {
+        "seed": "Pixel\u0027s sleep-suppression protocol \u2014 managing her own damage (beat 10)",
+        "planted_in_beat": 10,
+        "payoff": "The Borrowed Hand \u2014 Pixel does not wake when Lotus carries Kyle out of 2F; the suppression protocol explains why without requiring the chapter to explain it",
+        "payoff_in_beat": 10
+      },
+      {
+        "seed": "The incomplete arithmetic \u2014 Kyle\u0027s acceptance framed as honest but not complete (beat 9)",
+        "planted_in_beat": 9,
+        "payoff": "The Borrowed Hand \u2014 the punishment that follows when a contracted fee fails to clear; the cost the arithmetic didn\u0027t name",
+        "payoff_in_beat": 10
+      }
+    ]
+  }
+}

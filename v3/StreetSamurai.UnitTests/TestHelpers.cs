@@ -43,7 +43,7 @@ public class TestPathProviderWithRoot : IPathProvider
     public string WorldDir => Path.Combine(root, "world");
     public string EngineDataDir => Path.Combine(root, "engine_data");
     public string MutableDataDir => Path.Combine(root, "engine_data");
-    public string StoriesDir => Path.Combine(root, "stories");
+    public string ChaptersDir => Path.Combine(root, "chapters");
     public string BooksDir => Path.Combine(root, "books");
     public string SeriesDir => Path.Combine(root, "series");
     public string GraphDir => Path.Combine(root, "engine_data", "graph");
@@ -71,7 +71,7 @@ public static class TestDatabaseFactory
             Directory.CreateDirectory(Path.Combine(engDir, dir));
         }
         Directory.CreateDirectory(Path.Combine(rootDir, "worldbuilding"));
-        Directory.CreateDirectory(Path.Combine(rootDir, "stories"));
+        Directory.CreateDirectory(Path.Combine(rootDir, "chapters"));
 
         var paths = new TestPathProviderWithRoot(rootDir);
         var db = new StreetSamurai.Core.Services.DatabaseService(

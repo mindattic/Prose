@@ -19,7 +19,7 @@ public partial class StoryService
 
     public List<Story> ListStories()
     {
-        var dir = paths.StoriesDir;
+        var dir = paths.ChaptersDir;
         if (!Directory.Exists(dir)) return [];
 
         return Directory.GetFiles(dir, "*.md")
@@ -31,7 +31,7 @@ public partial class StoryService
 
     public Story? LoadStory(string id)
     {
-        var dir = paths.StoriesDir;
+        var dir = paths.ChaptersDir;
         if (!Directory.Exists(dir)) return null;
 
         var file = Directory.GetFiles(dir, "*.md")
@@ -44,7 +44,7 @@ public partial class StoryService
     {
         var fileName = SanitizeFileName(story.Title) + ".md";
         var filePath = string.IsNullOrEmpty(story.FilePath)
-            ? Path.Combine(paths.StoriesDir, fileName)
+            ? Path.Combine(paths.ChaptersDir, fileName)
             : story.FilePath;
 
         var sb = new StringBuilder();
@@ -76,7 +76,7 @@ public partial class StoryService
             MarkdownContent = $"# {title}\n\n",
         };
         SaveStory(story);
-        return story with { FilePath = Path.Combine(paths.StoriesDir, SanitizeFileName(title) + ".md") };
+        return story with { FilePath = Path.Combine(paths.ChaptersDir, SanitizeFileName(title) + ".md") };
     }
 
     public void DeleteStory(string id)

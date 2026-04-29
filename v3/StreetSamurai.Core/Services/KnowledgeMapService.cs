@@ -217,7 +217,7 @@ public class KnowledgeMapService
     }
 
     private string GetPath(string projectId) =>
-        StoryFolderHelper.GetFilePath(paths.StoriesDir, projectId, "knowledge.json");
+        StoryFolderHelper.GetFilePath(paths.ChaptersDir, projectId, "knowledge.json");
 }
 
 public class KnowledgeMap

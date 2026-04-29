@@ -107,7 +107,7 @@ public class StoryRefinementService
     /// <summary>Load a saved refinement report for a story, if present.</summary>
     public RefinementReport? LoadReport(string projectId)
     {
-        var path = StoryFolderHelper.FindFile(paths.StoriesDir, projectId, "refinement_report.json");
+        var path = StoryFolderHelper.FindFile(paths.ChaptersDir, projectId, "refinement_report.json");
         if (path == null) return null;
         try { return JsonSerializer.Deserialize<RefinementReport>(File.ReadAllText(path)); }
         catch (Exception ex)
@@ -340,7 +340,7 @@ public class StoryRefinementService
     {
         try
         {
-            var path = StoryFolderHelper.GetFilePath(paths.StoriesDir, projectId, "refinement_report.json");
+            var path = StoryFolderHelper.GetFilePath(paths.ChaptersDir, projectId, "refinement_report.json");
             File.WriteAllText(path, JsonSerializer.Serialize(report, JsonDefaults.Indented));
             log.LogDebug("Refinement report saved to {Path}", path);
         }

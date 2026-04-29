@@ -7,10 +7,9 @@ using StreetSamurai.Core.Models;
 namespace StreetSamurai.Core.Services;
 
 /// <summary>
-/// Chapter repository — one folder per chapter under stories/.
-/// Folder naming: {title_slug}.{guid}/
-/// Files inside: story.json (legacy filename, kept for backward compat), checkpoint.json, outline.json, events.json, knowledge.json
-/// The on-disk filename stays "story.json" so existing data isn't migrated; the in-memory type is Chapter.
+/// Chapter repository — one folder per chapter under chapters/.
+/// Folder naming: {guid}/
+/// Files inside: chapter.json, checkpoint.json, outline.json, events.json, knowledge.json
 /// </summary>
 public class JsonChapterRepository : IChapterRepository
 {
@@ -21,7 +20,7 @@ public class JsonChapterRepository : IChapterRepository
         DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
     };
 
-    private string StoryDir => paths.StoriesDir;
+    private string ChapterDir => paths.ChaptersDir;
     private string ArchiveDir => paths.ArchiveDir;
 
     private readonly ILogger<JsonChapterRepository> log;
@@ -35,11 +34,11 @@ public class JsonChapterRepository : IChapterRepository
 
     public List<Chapter> ListChapters()
     {
-        var dir = StoryDir;
+        var dir = ChapterDir;
         if (!Directory.Exists(dir)) return [];
 
         return Directory.GetDirectories(dir)
-            .Select(d => LoadFromFile(Path.Combine(d, "story.json")))
+            .Select(d => LoadFromFile(Path.Combine(d, "chapter.json")))
             .Where(c => c != null)
             .DistinctBy(c => c!.Id)
             .OrderByDescending(c => c!.Modified)
@@ -48,7 +47,7 @@ public class JsonChapterRepository : IChapterRepository
 
     public Chapter? LoadChapter(string id)
     {
-        var path = StoryFolderHelper.FindFile(StoryDir, id, "story.json");
+        var path = StoryFolderHelper.FindFile(ChapterDir, id, "chapter.json");
         return path != null ? LoadFromFile(path) : null;
     }
 
@@ -58,8 +57,8 @@ public class JsonChapterRepository : IChapterRepository
 
         // Get or create folder, renaming if title changed
         var desiredName = StoryFolderHelper.BuildFolderName(chapter.Id, chapter.Title);
-        var desiredPath = Path.Combine(StoryDir, desiredName);
-        var existing = StoryFolderHelper.FindFolder(StoryDir, chapter.Id);
+        var desiredPath = Path.Combine(ChapterDir, desiredName);
+        var existing = StoryFolderHelper.FindFolder(ChapterDir, chapter.Id);
 
         if (existing != null && !string.Equals(existing, desiredPath, StringComparison.OrdinalIgnoreCase))
         {
@@ -71,14 +70,14 @@ public class JsonChapterRepository : IChapterRepository
             Directory.CreateDirectory(desiredPath);
         }
 
-        var storyPath = Path.Combine(desiredPath, "story.json");
-        log.LogDebug("Saving chapter {Id} to {Path}", chapter.Id, storyPath);
-        File.WriteAllText(storyPath, JsonSerializer.Serialize(chapter, JsonOpts));
+        var chapterPath = Path.Combine(desiredPath, "chapter.json");
+        log.LogDebug("Saving chapter {Id} to {Path}", chapter.Id, chapterPath);
+        File.WriteAllText(chapterPath, JsonSerializer.Serialize(chapter, JsonOpts));
     }
 
     public void DeleteChapter(string id)
     {
-        var folder = StoryFolderHelper.FindFolder(StoryDir, id);
+        var folder = StoryFolderHelper.FindFolder(ChapterDir, id);
         if (folder == null) return;
 
         var archiveFolder = Path.Combine(ArchiveDir, Path.GetFileName(folder));
@@ -90,7 +89,7 @@ public class JsonChapterRepository : IChapterRepository
     /// <summary>Migrate legacy flat files into folder structure on first run.</summary>
     private void MigrateFlatFiles()
     {
-        var dir = StoryDir;
+        var dir = ChapterDir;
         if (!Directory.Exists(dir)) return;
 
         var storyFiles = Directory.GetFiles(dir, "*.story.json");
@@ -105,7 +104,7 @@ public class JsonChapterRepository : IChapterRepository
                 var folderPath = Path.Combine(dir, folderName);
                 Directory.CreateDirectory(folderPath);
 
-                File.Move(storyFile, Path.Combine(folderPath, "story.json"), overwrite: true);
+                File.Move(storyFile, Path.Combine(folderPath, "chapter.json"), overwrite: true);
 
                 foreach (var suffix in new[] { "checkpoint", "outline", "events", "knowledge" })
                 {

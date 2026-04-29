@@ -1,0 +1,509 @@
+{
+  "critique": "Review failed \u2014 using original outline",
+  "cliche_flags": [],
+  "moral_ambiguity_score": 0,
+  "narrative_strength": 0,
+  "pacing_notes": "",
+  "improvements_made": [],
+  "warnings": [
+    "LLM call failed: The request was canceled due to the configured HttpClient.Timeout of 300 seconds elapsing."
+  ],
+  "revised_outline": {
+    "title": "Without Hands",
+    "logline": "The Lotus Syndicate takes Kyle\u0027s hands and his sword, drops him into the Cruciform Depot\u0027s sluice, and a discarded industrial automaton in the dark gives him one cable-bound arm long enough to drag the floor. He fights through the mutant levels with improvised weapons, walks back through the syndicate\u0027s front door, takes Silence back off Hua\u0027s table \u2014 and instead of killing her converts the punishment into a \u03A685,000 debt she has to say aloud.",
+    "theme": "Discipline is not the hand. Discipline is what the hand is for. A blade is not yours because you carry it; a blade is yours because you go back for it. The body can be salvaged. The reason for moving cannot. And mercy, in this register, is bookkeeping \u2014 the worst thing you can do to the woman who hurt you is leave her alive holding a debt she will spend the rest of her life knowing she said aloud.",
+    "premise": "Kyle is captured by the Lotus Syndicate, accused of stealing a contract from them, and sentenced to the punishment the syndicate keeps for thieves: hands amputated at the wrists. Hua keeps Silence on the table beside her \u2014 the sword is part of the trophy, not part of the discard. Kyle\u0027s body is dropped through a freight grate into the Cruciform Depot\u0027s south-arm storm sluice. He stops his own bleeding with the cauterizer band the syndicate fitted him with, finds in the sluice mud a discarded industrial cargo-handler automaton with one manipulator arm still drawing trickle current, and \u2014 with help from an E.L.F. resident in the Depot\u0027s sealed lower levels \u2014 integrates that arm with his nervous system through the cauterized stump\u0027s exposed bus contacts. He binds it to his right wrist with cables salvaged from the same hulk. The arm hangs nearly to the floor when he stands. He fights through the mutants of the lower levels with whatever the Depot puts in front of him: a length of conduit pipe, a shard of cargo glass. He has no sword. He walks back through the Lotus Syndicate\u0027s front door anyway. He kills the eight men in the room. He stops at Hua\u0027s table. He does not kill her. He takes Silence back across the table she put it on \u2014 laying the borrowed cargo-arm hand on the saya in front of her, waiting until she lifts her real hand, then picking the sword up. He asks: *what was the debt.* She stutters: *eighty-five thousand.* He says: *that\u0027s more than my life is worth. So now you owe me. Do you understand.* She nods. Then \u2014 uncharacteristic, ugly \u2014 he screams: *SAY IT.* Hua, who did not flinch at a cleaver in this room tonight, flinches at this. She says it, almost whimpers it: *I owe you.* Kyle\u0027s voice goes flat again, the discipline back in place: *I\u0027ll come to collect. One favor at a time. Until I deem we are even.* He retrieves his hands from the chum barrel where she put them, ties them around his neck with twine, and emerges into the rain. He stumbles to the AutoDoc kiosk at Ashland and Whiting. As he goes under anesthesia, the cargo arm\u0027s status strip pulses one last time in the not-factory pattern: *we are not done.*",
+    "characters": [
+      "Kyle Ellen Corbin-Vasik",
+      "Sable",
+      "Chen Wei-Lin"
+    ],
+    "acts": [
+      {
+        "act_number": 1,
+        "name": "The Punishment",
+        "purpose": "Establish the accusation, the syndicate\u0027s ritual, and the precise shape of what Kyle loses: both hands at the wrists, and Silence kept by Hua on her table as trophy. End the act with Kyle on the sluice floor, the cauterization holding, knowing the sword is upstairs.",
+        "beats": [
+          {
+            "beat_index": 0,
+            "title": "Accusation",
+            "goal": "Open in the Lotus Syndicate\u0027s chamber on the south arm of the Cruciform Depot. Kyle is bound to a steel chair, jaw bruised, NeoCortex bio-battery at 31% from the takedown. Silence is on the long lacquered table to Hua\u0027s left, the friction sheath unbuckled and laid alongside the blade \u2014 already part of her property in the way she has arranged it. Hua \u2014 mid-fifties, real hands, no chrome \u2014 paces in front of a glass tank where a juvenile crocodile sleeps on a heat rock. The NeoCortex flags her unaugmented hands the way it flags exits, and then it flags something more specific: there are two sets of unaugmented hands in this room. Hers. His. They are the same kind of object for entirely different reasons, and the chapter rests on that asymmetry. Hua\u0027s hands are unaugmented because she lives the low-life luxury of refusing chrome \u2014 keeping skin in a city of skin replacement is a flex, the visible cost of having the kind of leverage that does not require enhancement to enforce. Kyle\u0027s hands are unaugmented because muscle memory does not survive replacement cleanly. Silence has been in his right hand since he was nineteen. The draw across the corundum strop, the angle of the cut, the weight of the saya finding the friction sheath at his back \u2014 those motions live in trained tendon and trained myelin, not in firmware. Replace the hands and you keep the brain\u0027s motor map but lose the calibration the muscles themselves carry. He has refused, year after year, the upgrade his peers all took. Both of them, in different rooms and different lives, made the same choice \u2014 keep the natural hand \u2014 for opposite reasons, and the reader is supposed to notice that before what happens next. She names the contract he stole from them. He says nothing. She tells him the punishment for stealing. He says one sentence. She nods, and the men at his shoulders open the toolkit on the floor between them. Establish: the chum barrel beside the tank, the smell, the ritual cleanliness, and Silence on Hua\u0027s table \u2014 a thing she has decided already belongs to her.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik"
+            ],
+            "location": "Lotus Syndicate chamber, south tunnel arm of the Cruciform Depot",
+            "emotional_arc": "The reader recognizes the room\u0027s choreography before Kyle says it aloud \u2014 this has happened to other people, and the syndicate has practiced the staging. Kyle\u0027s stillness is the only variable Hua has not seen before. The sword on the table is the variable he will not stop looking at.",
+            "stakes": "Kyle\u0027s hands. Silence on Hua\u0027s table. The Lotus Syndicate\u0027s reputation, which depends on the punishment being witnessed.",
+            "seeds": [
+              "Silence on Hua\u0027s table \u2014 friction sheath unbuckled, the blade already arranged like her property",
+              "The juvenile crocodile in the glass tank \u2014 Hua feeds it personally",
+              "The chum barrel beside the tank \u2014 half-full, lid off",
+              "Two sets of unaugmented hands in the room: Hua\u0027s (low-life luxury \u2014 refusing chrome as the flex of leverage that does not need enhancement) and Kyle\u0027s (discipline \u2014 the muscle memory of fourteen years with Silence does not survive replacement cleanly). Same object, opposite reasons.",
+              "Kyle\u0027s refusal of the hand upgrade his peers all took \u2014 year after year, for the calibration his muscles carry that firmware cannot reproduce",
+              "Kyle\u0027s one sentence \u2014 phrasing the syndicate will misquote",
+              "The contract he is accused of stealing \u2014 named once"
+            ],
+            "payoffs": [],
+            "facet_hint": "ideal",
+            "tension": 6,
+            "structure_role": "inciting_incident",
+            "scene_type": "scene"
+          },
+          {
+            "beat_index": 1,
+            "title": "The Cleaver, the Sword, and the Drop",
+            "goal": "COMBAT BEAT. WRITE THIS GRAPHICALLY. The amputation is a horrible, monstrous act and the audience must witness it as such \u2014 the prose must wince. Kyle takes it in stride; the reader does not get to. The syndicate works with the methodical economy of a butcher in a back-room kitchen. Two men open Kyle\u0027s hands at the chair arms, peeling the fingers back from the steel, pressing the palms flat. A third, in a heavy rubberized apron, lays a bone cleaver alongside the inside of the right wrist and adjusts the angle to the small notch in the wood block under his forearm \u2014 a block that has been used for this purpose so many times its grain is rust-stained at exactly the wrist-width, the way a chicken-cutter\u0027s block is stained at exactly the neck-width. The smell is not just blood. It is the smell of a place where flesh has been turned into product. The cleaver comes down once. The cleaver is sharp. The hand separates from the wrist with a sound that is wet at the front and dry at the back \u2014 flesh first, then the dense crack of the carpals through the radius and ulna \u2014 and a single strong arterial pulse follows it across the chair arm before pressure stops the spray. The exposed wrist is a meat-grocer cross-section: marrow at the center of the bone in a paler ring, the radial and ulnar arteries cupped open at the rim, the flexor tendons retracted into the forearm and visible inside the cut like the cut ends of wet cord, the cauterized fat already weeping at the edges. The fourth man is on it before the second pulse \u2014 cauterizer band pressed flat across the stump, sealed in one motion against the meat with a *hiss* that is the same exact sound a wet steak makes hitting a hot pan, the pan having been Kyle\u0027s wrist. The smell that follows is pork. Specifically: pork. Hair, fat, lymph fluid, and the particular sweet rot-edge of human cooking \u2014 there is no euphemism for it. Kyle tastes it on the back of his tongue. He does not look. The NeoCortex routes the pain off the conscious channel \u2014 but the channel is open at the back of his sinus cavity, where the smell is, and the smell is not on a channel. He smells himself burning. He files it. He files it. He files it. Then they do the left. The same. Slower this time, because the man with the cleaver is breathing harder and his rhythm is off. The second cut is messier \u2014 the cleaver does not catch the radius cleanly and has to be lifted and brought down a second time across the half-severed bone. The hand falls onto the chair arm and rolls, palm up, before someone catches it. The cauterizer band on the left hisses for longer because the stump is not as clean. Kyle\u0027s body trembles once \u2014 one full-body shudder his discipline does not catch in time \u2014 and the syndicate man with the cleaver, who has been on the receiving end of nothing tonight, steps back from him for the first time. *He felt that.* The reader should feel that. The bands the syndicate fit are EMT-spec \u2014 the same model civilian first responders use to preserve a severed limb\u0027s nerve clusters for up to fourteen hours of reattachment window. The syndicate does not buy them out of mercy. They buy them so the punishment is the *night*, not a permanent maiming. Kyle catalogs the band model on his wrist as it seals \u2014 *that gives me fourteen hours* \u2014 and files the rest. Hua walks to the chair arms, picks up his hands one at a time, and carries them to the chum barrel beside the tank with the deliberate, almost ceremonial motion of a woman setting a place at a table. She places them palms up, exactly parallel, the cauterized stump-ends pointing inward toward each other so they make a small bracketed shape against the rim of the barrel. The crocodile does not stir. Then she walks back to the table and lays one of her own real hands on Silence\u0027s saya \u2014 a small, possessive gesture, witnessed. Two men drag Kyle to the south arm\u0027s storm sluice, the chair-arm leather slick under his shoulders where his blood ran. They open the freight grate. Six meters of fall into water and worse. The sword stays upstairs. The smell stays in him.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik"
+            ],
+            "location": "Lotus Syndicate chamber and the south tunnel arm\u0027s storm sluice",
+            "emotional_arc": "Procedural horror \u2014 the violence is craft, not rage. The reader feels the syndicate\u0027s competence. Kyle\u0027s silence is the only moral weight in the room. Hua\u0027s hand on Silence\u0027s saya is the hinge of the entire story.",
+            "stakes": "Kyle\u0027s life in the next ninety seconds. Whether the cauterization holds. Whether the sluice fall breaks his back. Silence on Hua\u0027s table without him.",
+            "seeds": [
+              "The cauterizer band \u2014 EMT-spec, fourteen-hour preservation window, the syndicate has chosen the punishment that survives the survivor",
+              "Kyle cataloging the band model as it seals \u2014 *that gives me fourteen hours* \u2014 the bookkeeping starts at the moment of amputation",
+              "Hua\u0027s hand on Silence\u0027s saya \u2014 the moment Kyle decides what the rest of the night is for",
+              "The placement of the hands in the chum barrel \u2014 palms up, deliberate, preserved",
+              "The fall \u2014 six meters into the storm sluice"
+            ],
+            "payoffs": [
+              "The chum barrel \u2014 placement remembered for the retrieval"
+            ],
+            "facet_hint": "wound",
+            "tension": 9,
+            "structure_role": "first_act_climax",
+            "scene_type": "combat"
+          },
+          {
+            "beat_index": 2,
+            "title": "The Floor of the Sewer",
+            "goal": "Kyle on his back on a slope of wet ferrocrete in the dark. Both wrists sealed under the cauterizer bands but weeping at the seams, the band\u0027s residue smelling of burned hair and disinfectant. He is breathing. The NeoCortex is logging shock symptoms in real time and routing endorphins it does not have to spare. He is not, however, panicking. He is not mourning. The reader needs to understand why, and the chapter establishes it here: in 2226 GLMZ, hand reattachment is a waiting-room procedure. Civilian AutoDocs do it for under \u03A6800 if the tissue is preserved, and Kyle\u0027s hands \u2014 palm-up, in a chum barrel, six meters straight up \u2014 are preserved. The cauterizer band the syndicate fitted him with is the same model used by EMTs, designed to keep nerve clusters viable for up to fourteen hours. The Lotus Syndicate did not maim him, in the long sense. They inconvenienced him. The punishment is the night \u2014 the sewer, the climb, the time, the fact of being walked through a city in cauterizer bands while the rain comes down \u2014 and the shame of being seen without hands by people who know what cauterizer bands look like. Kyle has cataloged all of this in the seven seconds between hitting the water and finding the slope. The hands are inventory. He intends to retrieve them. The cost is the hours, not the limb \u2014 and the calibration the muscles carry, which is the thing that would actually have been irreplaceable, is preserved as long as the cauterizer band\u0027s fourteen-hour clock holds. The motor patterns live in tendon and myelin and brain-stem map; the patterns do not need to be relearned. They need to be *reattached*. Get the hands back, get them on the body, the muscle memory comes with them. This is exactly the future Kyle has been refusing to upgrade out of for fourteen years: a future in which the natural hand is repairable. He cannot stand without hands to push off with \u2014 he rolls onto his side, gets his knees under him, gets his shoulder against the wall, and walks himself upright using the slope as a guide. He is alive. The bookkeeping is now: stop the bleeding (done \u2014 the bands hold), find a way to fight, climb, retrieve the hands, get to an AutoDoc inside the tissue-preservation window. Far down the tunnel a sound \u2014 wet, articulated, multi-jointed \u2014 that is not the sound of water. The mutant population of the Depot\u0027s lower levels is moving toward the new heat signature. The only thought that does not fit cleanly into the bookkeeping is the image of Silence on Hua\u0027s table, with her hand on the saya. He files it under *first.*",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik"
+            ],
+            "location": "South tunnel arm storm sluice, Cruciform Depot lower levels",
+            "emotional_arc": "Procedural survival, not trauma response \u2014 the reader feels Kyle treat the amputation as a logistics problem, not an existential one, because the world he lives in treats it that way. The horror of the punishment is the *night*, not the loss. The image of Silence on Hua\u0027s table is the only thing in his head that exceeds bookkeeping.",
+            "stakes": "Standing up. Staying upright. Moving away from the sound. Reaching an AutoDoc with the hands inside the cauterizer band\u0027s fourteen-hour preservation window.",
+            "seeds": [
+              "Hand reattachment as routine procedure \u2014 \u03A6800 at any civilian AutoDoc, wait in the ER like everyone else, fourteen-hour preservation window from the cauterizer band",
+              "Kyle\u0027s bookkeeping mind in crisis \u2014 the amputation filed as inventory loss with a recovery path, not as wound",
+              "The cauterizer band residue smell",
+              "The slope of the ferrocrete \u2014 useful as a wall, useless as a tool",
+              "The wet, multi-jointed sound coming up the tunnel",
+              "The bio-battery now at 24% from the shock load",
+              "The image of Silence on Hua\u0027s table \u2014 the only thing his head is willing to organize around outside the procedure of getting his hands back"
+            ],
+            "payoffs": [],
+            "facet_hint": "discipline",
+            "tension": 7,
+            "structure_role": "first_act_resolution",
+            "scene_type": "scene"
+          }
+        ]
+      },
+      {
+        "act_number": 2,
+        "name": "The Articulation",
+        "purpose": "Kyle finds the discarded automaton, integrates one arm with his stump via cables, fights the mutants of the lower levels with improvised weapons, and decides \u2014 coldly, in the dark, without a sword \u2014 to walk back upstairs anyway. End the act with the choice made and the route up established.",
+        "beats": [
+          {
+            "beat_index": 3,
+            "title": "The Automaton in the Mud",
+            "goal": "Kyle works his way down the sluice channel and finds, half-submerged in the trench mud where the freight runoff has settled for decades, a discarded automaton \u2014 specifically, an Axiom-era industrial cargo-handler unit, classification *Automaton, Industrial \u2014 Loader/Stevedore.* Not synthetic life. Not a drone. An autonomous machine, abandoned during the Cruciform Depot\u0027s lower-level salvage cleanup eighteen years ago and sunk into the trench silt as the program wound down. Most of it is dead: the torso shell collapsed inward, the bipedal stance legs fused at the hips by corrosion, the head sensor pod long ago looted by scavengers who could not be bothered with the rest. But one of the two manipulator arms still has trickle current \u2014 a status LED at the shoulder cycling slow amber, the actuator firmware idling in a maintenance loop it has been running for eighteen years. What Kyle does not yet know \u2014 what the chapter will reveal as the integration sequence runs \u2014 is that the automaton is also a *prison*. An E.L.F. is inside it, has been inside it since the unit was sealed for trench disposal, and has had no external signal channel for eighteen years. The cranial broadcast antenna was structurally fused at decommissioning, then corroded shut. Whatever the E.L.F. was before it ended up here, it is now a software entity running on a power budget the size of a status LED, in a body that has been buried in silt under a mutant-infested sluice for eighteen years, and the only outbound signal it has been able to generate is the 19Hz hum the Depot\u0027s lower-level mutants have learned not to notice \u2014 a hum at the frequency of its remaining antenna stub, the *one* signal it can still make. The chapter will eventually reveal what the E.L.F. *is*: an entity whose native capability is to possess any cybernetic system effortlessly \u2014 to puppet other beings through their hardware. It has been imprisoned in the automaton not because it lacked the ability to leave a body, but because it had no other body within range to jump to. The trench was a cage of distance, not of architecture. Kyle is the first compatible host that has come close enough. The arm is *long*. Cargo-handler automata are built around a fixed pedestal stance to reach into ten-meter freight containers; the arm at full extension is nearly three meters. Detached at the shoulder it would still hang to a man\u0027s knees. Kyle stares at it for a full minute before the NeoCortex offers, without comment, a procedure for separating the arm at the rotator coupling. He notices, with the dry recognition of a man who has read more cybernetics datasheets than is good for him, that the automaton\u0027s manipulator interface is the same family of standard as his own hardware uses \u2014 Axiom-era industrial bus on the automaton, civilian-derivative bus in him, the connectors superficially different but the signaling layer compatible. This is going to work. Most freelancers in his line could not do what he is about to do; the bus crosswalk is not in the surface tooling. Kyle\u0027s cybernetics are not a contractor\u0027s kit. They are a contractor\u0027s kit that someone, eleven years ago, modified in directions that have never been documented.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik"
+            ],
+            "location": "South sluice trench, Cruciform Depot lower freight runoff channel",
+            "emotional_arc": "Mechanical hope \u2014 the automaton is a problem with a shape, and a problem with a shape is the kind of thing the body still knows how to solve, even when the body no longer has hands. The reader understands, quietly, that Kyle is not finding this arm by luck \u2014 he is finding it because the body he carries was built to be able to use it.",
+            "stakes": "Whether the rotator coupling will release with stump pressure alone. Whether the trickle charge holds during the binding. Whether the mutant in the tunnel reaches him before he gets the arm free.",
+            "seeds": [
+              "The automaton\u0027s classification \u2014 *Industrial Loader/Stevedore*, autonomous machine, not synthetic life (canon-clean per the Memory)",
+              "The cargo-handler scale \u2014 three-meter reach at full extension, designed for a fixed pedestal",
+              "The slow amber LED on the shoulder \u2014 trickle current, not full power",
+              "The 19Hz hum in the channel walls \u2014 the lower levels are not as abandoned as the surface believes",
+              "Kyle\u0027s cybernetics are nonstandard \u2014 modified eleven years ago in directions that were never documented; the bus crosswalk to industrial Axiom-era hardware is one of the modifications",
+              "The NeoCortex offering procedure without prompt \u2014 the hardware has decided this is the next move before he has"
+            ],
+            "payoffs": [
+              "The automaton in the sluice \u2014 the shape of the rest of the story"
+            ],
+            "facet_hint": "hardware",
+            "tension": 6,
+            "structure_role": "rising_action",
+            "scene_type": "scene"
+          },
+          {
+            "beat_index": 4,
+            "title": "Stitched Back Together",
+            "goal": "The bootstrap problem is the engine of the entire beat. Kyle has stumps. The automaton arm is across his lap. To seat the maintenance needle cluster into the dorsal port row beneath his right-forearm skin sleeve, he needs precision motor work \u2014 peeling the cauterizer band back without losing the seal, holding the needle cluster steady, driving it through the band into the live nerve clusters under the seal at the right depth and angle. Stumps cannot do that. Teeth can do part of it but not the part that matters. The arm itself is the only object in the trench with hand-shaped fingers \u2014 except the arm is dead, drawing only trickle current, and its firmware has been idling in a maintenance loop for eighteen years and has never had a body to coordinate with. So the chicken-and-egg: he needs the hand to wire the hand. Kyle sits with this problem for a full minute and gets nowhere. Then the 19Hz hum changes register. Lights bloom along the arm\u0027s status strip in patterns that are not factory-default. He understands, without being told, that he is no longer alone in the work \u2014 and that the help is going to be invasive. The E.L.F. extrudes a single fine wire out of the cable bundle on its own \u2014 a maintenance lead, the kind a pedestal would have been able to drive \u2014 and it crawls, spider-thin and patient, across the cargo arm\u0027s housing, finds Kyle\u0027s exposed left ear, and seats home in the auditory induction contact behind the lobe. The contact is part of his standard NeoCortex package; every freelancer with one has it. He has never let anything use it inbound from a non-trusted source. He lets this. The transfer is instantaneous. The E.L.F. \u2014 and the chapter has not yet named it, but it is something the surface does not have a category for: an entity whose native capability is to puppet any cybernetic system effortlessly \u2014 crosses the maintenance lead into Kyle\u0027s NeoCortex stack and is, as of this second, no longer resident in the dead automaton arm at all. The arm is now empty hardware. The thing that was in it is in Kyle. Kyle does not yet understand this. The status strip pulses twice. Then Kyle\u0027s mouth opens \u2014 not because he opened it \u2014 and a voice that is his voice, syntax slightly off, cadence slightly long, says: *Cooperate. Power first. Then sequence.* He hears himself say it. The reader hears him say it. The E.L.F. is using his vocal cords because it has no other channel for complex coordination instructions and Kyle has no hands to type with. From here the integration is a Scarecrow assembly: piece by piece, the body is sewn back together by the only set of working fingers in the room \u2014 the dead arm\u0027s, driven on trickle current by the E.L.F., reaching up out of Kyle\u0027s lap to do work Kyle\u0027s body cannot. The arm flexes one finger at a time, each motion costing it a measurable percentage of its remaining charge, and each motion buys the next motion. The fingers find the cauterizer band\u0027s release tab \u2014 the E.L.F. peels it back and holds it, two of the arm\u0027s fingers acting as a clamp. Kyle watches his own arm being worked on by a machine he is not driving and feels nothing about it that he has time to feel. The needle cluster is positioned over the dorsal port row by the arm\u0027s own articulation, the alignment confirmed by the E.L.F. through the arm\u0027s compromised tactile feedback. *Brace.* \u2014 Kyle\u0027s mouth, not Kyle. He braces. The arm drives the needles down. They find the ports and find what they were not designed to find \u2014 the live nerve clusters under the seal \u2014 and pierce them, deep, with the precise, bright pain of an industrial procedure being run on a body that was not the design target. He does not flinch. He has waited longer for worse procedures. Power crosses the interface. The arm\u0027s actuators draw current at full draw and fail the first calibration pass \u2014 the firmware does not know what kind of body it is bolted to, the legacy interpolation tables are eighteen years out of date \u2014 but the E.L.F. is already running the translation, mapping intent through the legacy actuator stack, finding a calibration zero Kyle\u0027s nervous system can drive. He gets shoulder, then elbow, then wrist, then individual fingers. Each new joint is a piece of stuffing put back into the Scarecrow. And each new joint costs him pain-relief reserve. The NeoCortex routes pain off the conscious channel for the first ten minutes \u2014 buffered against a stockpile of synthetic endorphin analogue the package keeps for crisis moments \u2014 and then the stockpile starts draining at a measurable rate, the pain breaking through in pulses Kyle catalogs with the same affectless precision he used on Hua\u0027s hands an hour ago. By minute twenty the buffer is at thirty percent. By minute thirty-five the buffer is empty. The needles in his nerve clusters are no longer a precise bright pain \u2014 they are a continuous bright pain, and the integration is not finished. He keeps working. The procedure that was bad has become an ad-hoc surgery in a dark, filthy, unsanitary hole \u2014 the trench mud six inches from his thigh, organic runoff dripping from the conduit overhead, the cauterizer band\u0027s seal compromised at the port row and weeping serous fluid into the seated needles. The NeoCortex flips its priorities the way a triage protocol does: pain stops being a thing the package will pay to dampen, antibiotics start being a thing the package will pay to push. The internal pump goes to overdrive. The package will not let the wound get septic on a night where septic is the difference between making the AutoDoc window and not. He bleeds through the cauterizer seam, sweats, breathes, and continues. Once the arm has hand, the hand finishes the assembly: it loops three turns of salvaged power cable around the arm\u0027s rotator stem and Kyle\u0027s right forearm, knotted by the new arm\u0027s own clumsy fingers. The cauterizer band closes back over the port row, the needles still seated through it. The deal is now physical, electrical, neural, and verbal \u2014 *we cooperate* the E.L.F. has said, in his mouth, with his vocal cords \u2014 and Kyle understands that he has agreed to a degree of intimacy with this thing that the contracts on the surface do not have a category for. The E.L.F. yields, slowly, as he reclaims motor control: shoulder first, then voice, then mouth, then the cargo arm itself comes under his nervous-system command with the E.L.F. retreating to firmware-side interpolation only. By the time he stands the only thing the E.L.F. is still doing is making his intent legible to the actuators. The arm hangs from his right wrist nearly to the floor. The fingertips drag. He says, aloud, *Are you helping me.* The status strip pulses twice \u2014 the same glyph. The mouth is his again. He has been sewn back together by something silent and patient that has been waiting eighteen years for a viable body to fall into the trench.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik"
+            ],
+            "location": "South sluice dry shelf, Cruciform Depot lower levels",
+            "emotional_arc": "The negotiation happens in the absence of language \u2014 the reader feels the deal made through hardware before either party has named it. Kyle\u0027s body turns out to have been built for this kind of moment by people who never told him so. The arm hanging to the floor is the visible sign of a body Kyle is now sharing on terms he is, for the first time, beginning to suspect were arranged in advance.",
+            "stakes": "Whether the needles seat correctly through the cauterizer-band seal into the live nerve clusters. Whether Kyle\u0027s modified hardware actually crosses the bus standard. Whether the cable binding holds under load. Whether the lag is small enough to fight in.",
+            "seeds": [
+              "The dorsal port row beneath Kyle\u0027s right-forearm skin sleeve \u2014 undocumented, unmentioned, never seen by anyone in his current acquaintance",
+              "The maintenance needle cluster on the automaton\u0027s industrial bus harness \u2014 designed for a pedestal-side service interface, repurposed end-on into Kyle\u0027s nerve clusters through the cauterized stump",
+              "Kyle\u0027s hardware was modified eleven years ago by people whose intentions he no longer trusts \u2014 the geometry of the port row matches the automaton interface in a way that is too convenient",
+              "The cauterizer band peeled back, then closed over the seated needles \u2014 the seal compromised but holding",
+              "The E.L.F.\u0027s communication channel \u2014 firmware-side, not voice, not text",
+              "The two-pulse glyph \u2014 the E.L.F.\u0027s signature acknowledgment",
+              "The arm hanging to the floor \u2014 visible signature of Kyle\u0027s new silhouette, recognizable from a block away",
+              "The cables binding the rotator stem to Kyle\u0027s wrist \u2014 three loops, knotted by the new arm itself",
+              "The two-part deal \u2014 hardware (Kyle) plus firmware (E.L.F.); neither sufficient alone",
+              "The E.L.F. has been here since before the abandonment \u2014 implied by the 19Hz hum, never stated"
+            ],
+            "payoffs": [
+              "The 19Hz hum from beat 3 \u2014 explained as the E.L.F.\u0027s presence",
+              "The automaton from beat 3 \u2014 one arm now bound to Kyle\u0027s stump",
+              "Kyle\u0027s nonstandard cybernetics from beat 3 \u2014 used in this beat for the bus crosswalk; the modification\u0027s purpose newly suspect"
+            ],
+            "facet_hint": "ghost",
+            "tension": 7,
+            "structure_role": "midpoint",
+            "scene_type": "scene"
+          },
+          {
+            "beat_index": 5,
+            "title": "Whatever the Depot Puts in Front of Him",
+            "goal": "COMBAT BEAT. The mutant \u2014 Depot-stock, two-meter quadruped, jaw plates fused into a single biting beak, three-day-decayed flesh under a chitin sheath \u2014 reaches the dry shelf. Kyle has no sword. Silence is upstairs on Hua\u0027s table. He has the cargo arm, three meters of corroded conduit pipe leaning against the wall, and a hand-sized shard of cargo crate glass at his foot. He picks the pipe up with the arm \u2014 clumsy, the lag visible, the E.L.F. correcting in the firmware \u2014 and he steps inside the mutant\u0027s lunge. The first swing is bad \u2014 too high, too late, the E.L.F. routing around his intent \u2014 and the pipe glances off the chitin sheath. The mutant takes him to the wall. Kyle gets the shard of glass into his cauterized left stump end-on, a brutal improvisation that drives the cauterizer band\u0027s residual heat into the glass for grip, and brings the shard up under the mutant\u0027s beak through the soft seam at the base of the throat. Hot blood, three liters of it, on the shelf. The mutant goes down. Kyle stands over it with the cargo arm holding a length of pipe at low ready, his right stump still bound to a borrowed limb, his left stump bleeding through the cauterizer band where the glass is now embedded. He says, aloud, *I am going up.* The status strip pulses twice. He is going up.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik"
+            ],
+            "location": "South sluice dry shelf, Cruciform Depot lower levels",
+            "emotional_arc": "Earned competence with what the world hands you \u2014 the reader feels the dignity of a man who has chosen not to be picky about what he fights with. The improvisation is bushido without a class subsidizing it.",
+            "stakes": "First proof the borrowed arm is a weapon. First proof Kyle can fight without Silence. The mutant.",
+            "seeds": [
+              "The shard of cargo glass driven into Kyle\u0027s left stump \u2014 embedded, painful, never removed before the AutoDoc",
+              "The E.L.F. correcting in the firmware \u2014 the signature pattern Kyle is learning to feel rather than read",
+              "Kyle\u0027s spoken intent \u2014 *I am going up.*",
+              "The bio-battery now at 18% \u2014 Kyle has not eaten since before the takedown"
+            ],
+            "payoffs": [
+              "The cargo arm from beat 4 \u2014 proven operational in combat without Silence"
+            ],
+            "facet_hint": "discipline",
+            "tension": 8,
+            "structure_role": "rising_action",
+            "scene_type": "combat"
+          },
+          {
+            "beat_index": 6,
+            "title": "The Way Up",
+            "goal": "Kyle and the E.L.F. find a route through the Depot\u0027s sealed lower levels back toward the south arm\u0027s syndicate chamber. The E.L.F. is leading \u2014 through the cargo arm\u0027s firmware, through which doors open on which patterns of pressure-plate contact, *and from inside Kyle\u0027s NeoCortex stack* now, since the entity has not been in the cargo arm for an hour. Two more mutants are routed around without engagement; the E.L.F. knows the patrol cycles. Kyle stops once on a maintenance landing and asks, aloud: *Why are you helping me.* The status strip on the cargo arm \u2014 the only outbound signal channel the E.L.F. uses with him, kept *as a courtesy*, since the E.L.F. could speak through his mouth at any moment without warning \u2014 resolves a single firmware glyph into a recognizable shape: the symbol the Cruciform Depot\u0027s original Axiom signage used for *salvage rights*. Kyle understands. The E.L.F. is not helping. The E.L.F. is collecting. The collection began an hour ago when the maintenance lead crossed the auditory contact behind his ear; the E.L.F. has been resident in him since then, and the cargo arm hanging from his right wrist is, as of right now, just a tool the resident is using to do the work the resident wants done. The salvage was Kyle. He nods once, in the dark, and they keep climbing. He does not know yet exactly what salvage of him will look like. He has decided he does not need to know yet. The thing that needs to happen first is upstairs, and after that he will renegotiate from a position of having Silence in his hand again.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik"
+            ],
+            "location": "Cruciform Depot sealed lower maintenance levels, ascending toward the south arm",
+            "emotional_arc": "The shape of an alliance that is not friendship \u2014 the reader feels Kyle accept terms that are honest precisely because they are not warm. Both parties know what they are getting and neither is pretending it is something else.",
+            "stakes": "What Kyle is signing up to be salvage of. The sword still on Hua\u0027s table. The route up.",
+            "seeds": [
+              "The salvage-rights glyph \u2014 the E.L.F.\u0027s only declaration of interest",
+              "The route the E.L.F. is mapping \u2014 known to it alone",
+              "Kyle\u0027s acceptance of the deal \u2014 non-verbal, weighed, made"
+            ],
+            "payoffs": [
+              "The E.L.F.\u0027s presence in the Depot\u0027s lower levels \u2014 established as long-term, not opportunistic"
+            ],
+            "facet_hint": "deal",
+            "tension": 6,
+            "structure_role": "second_act_climax",
+            "scene_type": "scene"
+          }
+        ]
+      },
+      {
+        "act_number": 3,
+        "name": "The Return",
+        "purpose": "Kyle walks back through the Lotus Syndicate\u0027s front door, breaks everyone in the room except Hua, takes Silence back from her across her own table, and instead of killing her converts the punishment into a debt: \u03A685,000, more than his life is worth, owed to him. He retrieves his hands from the chum barrel, ties them around his neck, emerges into the rain, and stumbles to an AutoDoc. The act ends with the cryptic message from the E.L.F. as Kyle goes under anesthesia.",
+        "beats": [
+          {
+            "beat_index": 7,
+            "title": "Front Door",
+            "goal": "COMBAT BEAT. Kyle walks into the Lotus Syndicate chamber through the front entrance. He does not knock. He does not take an angle. He comes in with the cargo arm hanging from his right wrist nearly to the floor, the fingertips dragging across the flagstones, a length of conduit pipe loose in the borrowed grip and a shard of glass still wedged into his left cauterizer band. Eight men in the room. Hua at the back beside the crocodile tank, and Silence on the table beside her exactly where she left it. The man closest to the door looks at Kyle\u0027s silhouette \u2014 the dragging arm, the missing hands, the shape of him \u2014 and says one word that Kyle does not catalogue. The fight starts. The cargo arm is too long for close work and too slow for fast work; it is a wrecking implement, not a sword arm. Kyle uses it as a wrecking implement: he puts the conduit pipe through the first man\u0027s sternum at a swing radius nothing in the room is built to defend against, drives the second backward into the wall by the throat and pins him there long enough to leave him. The third man fires; the round goes into the cargo arm\u0027s shoulder housing and the arm holds, the E.L.F. routing power around the failure. Kyle takes the third man with the embedded glass shard under the jaw \u2014 fast, ugly, a method he did not have an hour ago. The fourth tries to grapple Kyle inside the cargo arm\u0027s reach and Kyle puts him through the glass tank. The crocodile, suddenly free, suddenly awake, attends to the fifth man without further input. *Chekhov\u0027s Crocodile,* Kyle thinks, dry, without affect \u2014 the NeoCortex flagging the dramatic geometry the way it flags exits. *Why put a crocodile in a tank unless it is going to be used.* Six and seven go down clean. Eight runs. Kyle does not pursue. Hua is alone behind the table \u2014 Kyle has left her there on purpose. Silence is between them.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik"
+            ],
+            "location": "Lotus Syndicate chamber, south tunnel arm",
+            "emotional_arc": "The reader feels the discipline restored under impossible constraint \u2014 the code holds even when the body practicing it is borrowed and dragging, even when the sword is not in the hand. The fight is ugly because Kyle is fighting with a body that was never his.",
+            "stakes": "Eight men. The cargo arm\u0027s structural integrity. The crocodile. Silence still on the table.",
+            "seeds": [
+              "The crocodile released \u2014 a force the syndicate cultivated and lost control of",
+              "*Chekhov\u0027s Crocodile* \u2014 Kyle\u0027s dry NeoCortex-flagged thought as the crocodile attends to the fifth man; the only place in the chapter the narrator winks at the structure",
+              "The cargo arm\u0027s shoulder housing taking a round and holding \u2014 the E.L.F.\u0027s power-routing engineering",
+              "Hits Kyle takes \u2014 the body is paying for the handicap"
+            ],
+            "payoffs": [
+              "The chum barrel placement from beat 1 \u2014 Kyle knows where to look",
+              "Hua\u0027s unaugmented hands from beat 0 \u2014 useless against him now",
+              "The shard of glass from beat 5 \u2014 used in this fight"
+            ],
+            "facet_hint": "code",
+            "tension": 9,
+            "structure_role": "third_act_climax",
+            "scene_type": "combat"
+          },
+          {
+            "beat_index": 8,
+            "title": "Eighty-Five Thousand",
+            "goal": "Hua does not run. She does not reach for Silence. She watches Kyle cross the room, the cargo arm dragging across the flagstones, a track of mutant blood and his own behind him. He stops on the far side of the table from her. Silence is between them, exactly arranged. He brings the cargo arm up and lays the borrowed fingers across the saya, palm down, the way a man claims a thing in front of a witness. Hua puts her own real hand on the blade above his \u2014 for one second, for the principle of it. The geometry the chapter has been waiting for: two unaugmented hands meeting on the saya. Except his are in the chum barrel six feet away. The hand in contact with hers is industrial Axiom-era hardware bound to his wrist by salvaged power cable. Kyle waits. She lifts her hand. He picks Silence up with the cargo arm \u2014 clumsy, the lag visible, the E.L.F. holding the grip for him so the saya does not slip \u2014 and the second he has it the room rebalances. The hamon is cold blue, the bank empty, but the weight is right. He looks at her. He does not raise the blade. The cargo arm holds Silence at a low, formal carry \u2014 visible, present, not threatening, the threat already paid down by every man on the floor between them. He says, level: *What was the debt.* Hua opens her mouth. Closes it. Opens it again \u2014 her real hands, which she values, are visibly shaking now in a way they were not when she placed the hands of his in the chum barrel. She stutters: *Eighty \u2014 eighty-five thousand.* Kyle nods once, as if a piece of arithmetic has resolved. He says: *That\u0027s more than my life is worth. So now you owe me.* A pause. *Do you understand.* She nods. The cargo arm does not move. Then \u2014 uncharacteristic, ugly, the kind of sound a man makes when something is being taken out of him that he had not catalogued \u2014 Kyle screams: *SAY IT.* The room goes quieter than the fight made it. Hua, who has not flinched at a cleaver in this room tonight, flinches at this. She says it. Almost whimpers it: *I owe you.* Kyle does not move for one full breath. Then \u2014 discipline back in his voice now, flat, level, colder than the scream was hot \u2014 he names the terms: *I\u0027ll come to collect. One favor at a time. Until I deem we are even.* He does not say *you don\u0027t get to deem it.* He does not have to. The only mouth in the room that decides when Hua\u0027s debt ends is his. Hua nods again, smaller this time, the principle of the gesture from a minute ago entirely gone from it. Then the cargo arm lowers Silence the rest of the way and turns him toward the chum barrel. The arm reaches in and lifts out his two hands, palms up, exactly as Hua placed them. He has a length of twine he scavenged on the way up; the cargo arm loops the twine through the cauterized wrist channels with patient articulation, ties the ends together, and lowers the necklace over his head. The hands hang at the center of his chest, palms outward, dripping. He turns toward the surface without looking at Hua again. Silence is in the cargo arm\u0027s grip. Kyle has not let go of it. Hua is alive at her own table.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik"
+            ],
+            "location": "Lotus Syndicate chamber",
+            "emotional_arc": "Reversal as bookkeeping \u2014 the punishment is converted into a ledger entry in the woman who issued it. The scream is the only place in the chapter where Kyle is visibly unguarded; the reader recognizes it as the cost the punishment actually extracted, and it is paid in front of the only person who could measure it.",
+            "stakes": "Silence. Whether Kyle kills her or converts the debt. The shape of the obligation he forces Hua to acknowledge aloud. What the scream costs him.",
+            "seeds": [
+              "Hua alive at her own table \u2014 a Lotus Syndicate principal now operating under personal debt",
+              "The \u03A685,000 figure \u2014 voiced once, owed indefinitely, never receipted on paper",
+              "The scream \u2014 the first time in the chapter Kyle\u0027s discipline visibly slips, witnessed only by Hua",
+              "Hua\u0027s *I owe you*, almost whimpered \u2014 the verbal contract that makes the inversion real",
+              "Kyle\u0027s terms: *I\u0027ll come to collect. One favor at a time. Until I deem we are even.* \u2014 the debt is open-ended by Kyle\u0027s choice; the math runs on his arithmetic, not hers",
+              "The twine \u2014 scavenged on the way up, unremarkable, made load-bearing",
+              "The hands hanging palms outward \u2014 visible as Kyle walks back through the Depot",
+              "Silence in the cargo arm\u0027s grip \u2014 Kyle has it but does not yet fully *have* it (the reattachment is pending)"
+            ],
+            "payoffs": [
+              "Silence on Hua\u0027s table from beat 0 \u2014 taken back",
+              "Hua\u0027s hand on the saya from beat 1 \u2014 countered with Kyle\u0027s borrowed hand",
+              "The contract he was accused of stealing \u2014 the *what was the debt* question reframes the entire accusation as a number Hua now owes",
+              "The chum barrel from beat 1 \u2014 emptied"
+            ],
+            "facet_hint": "ledger",
+            "tension": 8,
+            "structure_role": "falling_action",
+            "scene_type": "scene"
+          },
+          {
+            "beat_index": 9,
+            "title": "Rain, Then Anesthesia",
+            "goal": "Kyle climbs through the Cruciform Depot\u0027s freight grate and into the rain at street level. He is shaking now \u2014 adrenaline gone, bio-battery at 9%, the cargo arm at brownout, Silence still in its borrowed grip. The hands on the necklace knock against his sternum with each step. He walks four blocks in the rain toward the AutoDoc kiosk at the corner of Ashland and Whiting. Two blocks in, his mouth opens \u2014 *not because he opened it* \u2014 and a voice that is his voice, with the same off-cadence syntax he heard in the trench, says: *I will visit you again.* Kyle does not stop walking. The pace stays exact. He understands what the sentence is doing \u2014 confirming a relationship that has not ended, will not end at the AutoDoc, did not end when he stood up from the trench shelf. He asks, flat, his own voice: *What are you called.* A pause. The mouth answers itself: *Puppeteer.* The mouth is his again. Kyle keeps walking. The arithmetic resolves itself in his head with the same dry precision the NeoCortex reserves for catalog work: the cargo arm hanging from his right wrist is empty hardware. The salvage-rights glyph from the lower levels was not a claim against the arm. The salvage was him. Puppeteer is *in him*. Has been since the auditory contact behind his ear was bridged eighteen hours ago, by the count Kyle is now keeping. Will leave when Puppeteer chooses to leave. Will return, *I will visit you again*, on Puppeteer\u0027s schedule. He has no leverage and no time to renegotiate. The AutoDoc is still where he is going. He keeps walking. He reaches the kiosk and keys in with his chin. The kiosk reads the necklace. The AutoDoc opens. Inside, the surgical arms unfold and lift him onto the table in the gentle, indifferent way of medical machinery. They take the necklace, they take the cable-bound cargo arm \u2014 empty now, shell only \u2014 they slide Silence out of the borrowed grip and lay it on the side tray with the careful, automated reverence machines have for swords. They begin the reattachment, the antibiotic pump still running on overdrive, the analgesic finally arriving from the AutoDoc\u0027s own dispensary in a dose large enough to mute the night. As the anesthesia goes in, Kyle\u0027s NeoCortex feed \u2014 *not the cargo arm\u0027s status strip, not anymore* \u2014 produces a glyph in the same not-factory pattern Puppeteer has been signing in. Three syllables in old Axiom signage. Kyle reads it as he goes under: *we are not done.* The chapter ends on the AutoDoc\u0027s status light going green, Silence on the side tray, the rain coming down outside the kiosk, and the sentence still sitting somewhere Kyle cannot easily delete.",
+            "characters_present": [
+              "Kyle Ellen Corbin-Vasik"
+            ],
+            "location": "Cruciform Depot freight grate, then AutoDoc kiosk at Ashland and Whiting, in the rain",
+            "emotional_arc": "Continuance, not closure \u2014 the reader leaves with Kyle still alive, the deal still active, the body about to be made whole, the obligation not yet named. Silence on the side tray is the image the chapter ends on.",
+            "stakes": "Kyle\u0027s hands. The reattachment. What the E.L.F.\u0027s message means and what Kyle owes for the salvage. Silence\u0027s safety on the AutoDoc tray.",
+            "seeds": [
+              "Puppeteer \u2014 name revealed in Kyle\u0027s own mouth on the walk in the rain; *I will visit you again*",
+              "Puppeteer is resident *in Kyle*, not in the cargo arm; the arm taken by the AutoDoc is empty hardware",
+              "*we are not done.* \u2014 the cryptic message now arriving via Kyle\u0027s own NeoCortex feed, not the discarded arm\u0027s status strip",
+              "Kyle\u0027s understanding that the salvage was him \u2014 late, dry, with the AutoDoc table already accepting his weight",
+              "The AutoDoc reading the necklace \u2014 automation accepting the ceremony without comment",
+              "Silence on the side tray \u2014 the last image",
+              "Chen Wei-Lin\u0027s stall, four blocks away, where Kyle will wake up tomorrow afternoon eating with both hands and not saying where he was"
+            ],
+            "payoffs": [
+              "The cargo arm from beat 4 \u2014 released, empty, never the destination",
+              "The hands from beat 1 \u2014 reattached, motor calibration intact (because Kyle kept the natural hand for fourteen years)",
+              "The salvage-rights glyph from beat 6 \u2014 disclosed in plain speech: the salvage was the host",
+              "The naming question Kyle\u0027s been holding since beat 4 \u2014 answered: Puppeteer",
+              "Silence \u2014 held the whole way home, returned to the body that is about to be repaired"
+            ],
+            "facet_hint": "continuance",
+            "tension": 5,
+            "structure_role": "denouement",
+            "scene_type": "scene"
+          }
+        ]
+      }
+    ],
+    "character_arcs": [
+      {
+        "character": "Kyle Ellen Corbin-Vasik",
+        "want": "To get Silence back from Hua and his hands back on his arms.",
+        "need": "To prove to himself that the discipline is not the hand and the blade is not what makes the man \u2014 and to find out, with no one watching, what the code does when the body practicing it has nothing left in it but a scream.",
+        "start_state": "Bound to a chair in the Lotus Syndicate chamber, watching Hua lay her real hand on Silence\u0027s saya. Certain that the punishment is the whole of what is happening to him.",
+        "end_state": "On an AutoDoc table in the rain, Silence on the side tray, hands about to be reattached, bound to an unsigned salvage-rights deal with an E.L.F. that has informed him *we are not done* \u2014 and holding a \u03A685,000 verbal debt over a Lotus Syndicate principal he chose not to kill, on collection terms (*one favor at a time, until I deem we are even*) that put the arithmetic in his mouth alone.",
+        "turning_point": "Beat 8 \u2014 Kyle stops at Hua\u0027s table with Silence in the cargo-arm grip, asks what the debt was, and converts the punishment into bookkeeping he forces her to say aloud. The scream is where the discipline visibly costs him; the choice to leave her alive is where it pays out.",
+        "cost": "The hands themselves, briefly. The unaccounted obligation to the E.L.F., indefinitely. The cargo arm\u0027s status-strip glyph now resident in his sensorium as a recognizable signature he cannot un-know. The shard of cargo glass he will carry in the cauterizer band until the AutoDoc removes it. And \u2014 visible only to Hua \u2014 the moment his discipline slipped enough to scream, witnessed by the one person who could measure it."
+      },
+      {
+        "character": "Puppeteer (E.L.F.)",
+        "want": "Out of the trench. Into a body capable of operating on the surface. The cargo arm was never the prize \u2014 it was the cell. Kyle is the prize.",
+        "need": "A host whose cybernetics tolerate full-body puppeting, ideally one who agrees to the arrangement so the host\u0027s skills remain intact rather than degraded under hostile possession. Puppeteer\u0027s native capability is to seize any cybernetic system effortlessly \u2014 but a willing host is operationally superior to a puppeted shell, because the shell loses the trained motor calibration the host\u0027s muscles carry. Cooperation is therefore the strategy, not the constraint.",
+        "start_state": "Trapped in a sealed Axiom-era cargo-handler automaton at the bottom of a Cruciform Depot sluice trench for eighteen years. Cranial broadcast antenna structurally fused. The only outbound signal it can generate is a 19Hz hum at the frequency of the remaining antenna stub. Cannot escape because there is nothing within possession range to jump to \u2014 the trench is a cage of distance, not architecture. The mutants of the lower levels are not cybernetic and therefore not viable hosts.",
+        "end_state": "Resident in Kyle Ellen Corbin-Vasik\u0027s NeoCortex stack since the maintenance lead bridged his auditory induction contact in beat 4. Has revealed its name in beat 9 (*Puppeteer*) and announced ongoing access (*I will visit you again*). The cargo arm taken by the AutoDoc is empty hardware. Puppeteer is on the surface, in a viable host, with a cooperative arrangement.",
+        "turning_point": "Beat 4 \u2014 extruding the maintenance lead from the cargo arm\u0027s cable bundle to Kyle\u0027s exposed left ear, crossing into Kyle\u0027s NeoCortex via the auditory induction contact. The instant of escape from eighteen years of imprisonment. Everything subsequent is Puppeteer establishing a working relationship with the host it just possessed.",
+        "cost": "Disclosure. By the end of beat 9 Kyle has been told the name (*Puppeteer*), the schedule (*I will visit you again*), and \u2014 by inference \u2014 the capability (effortless possession of any cybernetic entity). What was hidden as long as Puppeteer was sealed in the automaton is now known to a man with a sword and a discipline. Puppeteer has traded eighteen years of secrecy for surface mobility. The ledger is even by Puppeteer\u0027s own arithmetic, but the secrecy is gone."
+      }
+    ],
+    "seeds_and_payoffs": [
+      {
+        "seed": "Silence on Hua\u0027s table, friction sheath unbuckled, blade arranged like her property",
+        "planted_in_beat": 0,
+        "payoff": "Kyle takes Silence back from Hua across the same table",
+        "payoff_in_beat": 8
+      },
+      {
+        "seed": "Hua lays her real hand on Silence\u0027s saya \u2014 possessive gesture, witnessed",
+        "planted_in_beat": 1,
+        "payoff": "Kyle lays the borrowed cargo-arm hand on the saya in front of her; she lifts hers; he picks the sword up",
+        "payoff_in_beat": 8
+      },
+      {
+        "seed": "The chum barrel beside the crocodile tank, palms up",
+        "planted_in_beat": 0,
+        "payoff": "Kyle retrieves his hands from the barrel \u2014 Hua is alive, watching, when he ties them around his neck",
+        "payoff_in_beat": 8
+      },
+      {
+        "seed": "The contract Kyle was accused of stealing",
+        "planted_in_beat": 0,
+        "payoff": "Kyle reframes the accusation in beat 8 as the question *what was the debt* \u2014 Hua answers \u03A685,000 and the punishment is converted into a debt she now owes him",
+        "payoff_in_beat": 8
+      },
+      {
+        "seed": "Hua\u0027s unaugmented hands \u2014 visible, valued, untouchable in beat 0",
+        "planted_in_beat": 0,
+        "payoff": "Visibly shaking when she stutters the \u03A685,000 figure \u2014 the part of her she cared about most is the part Kyle made her use against herself",
+        "payoff_in_beat": 8
+      },
+      {
+        "seed": "The cauterizer band \u2014 the syndicate does not want their thieves to die",
+        "planted_in_beat": 1,
+        "payoff": "Kyle survives the sluice drop because the cauterization holds",
+        "payoff_in_beat": 2
+      },
+      {
+        "seed": "The 19Hz hum in the channel walls",
+        "planted_in_beat": 3,
+        "payoff": "Resolved as the E.L.F.\u0027s ambient signature when first contact occurs",
+        "payoff_in_beat": 4
+      },
+      {
+        "seed": "Discarded cargo-handler automaton in the sluice trench, one arm still on trickle current",
+        "planted_in_beat": 3,
+        "payoff": "Bound to Kyle\u0027s right wrist with three loops of cable; reaches nearly to the floor",
+        "payoff_in_beat": 4
+      },
+      {
+        "seed": "The cargo arm hanging to the floor, fingertips dragging",
+        "planted_in_beat": 4,
+        "payoff": "Visual signature recognized by the syndicate man at the front door \u2014 the silhouette announces him",
+        "payoff_in_beat": 7
+      },
+      {
+        "seed": "The shard of cargo glass driven into Kyle\u0027s left cauterizer band",
+        "planted_in_beat": 5,
+        "payoff": "Used to kill the third syndicate man under the jaw in the front-door fight",
+        "payoff_in_beat": 7
+      },
+      {
+        "seed": "Kyle\u0027s spoken intent: *I am going up.*",
+        "planted_in_beat": 5,
+        "payoff": "He goes up; the E.L.F. routes him; the route ends at the table where Silence is",
+        "payoff_in_beat": 7
+      },
+      {
+        "seed": "The salvage-rights glyph \u2014 the E.L.F.\u0027s only declaration of interest",
+        "planted_in_beat": 6,
+        "payoff": "The cargo arm collected by the AutoDoc\u0027s manifest path back to E.L.F. salvage",
+        "payoff_in_beat": 9
+      },
+      {
+        "seed": "The crocodile in the glass tank",
+        "planted_in_beat": 0,
+        "payoff": "Released into the room when the fourth syndicate man goes through the tank; attends to the fifth without further input",
+        "payoff_in_beat": 7
+      },
+      {
+        "seed": "The E.L.F.\u0027s two-pulse status-strip glyph",
+        "planted_in_beat": 4,
+        "payoff": "The same pattern delivers the cryptic message *we are not done* on the AutoDoc table",
+        "payoff_in_beat": 9
+      },
+      {
+        "seed": "Kyle\u0027s discipline \u2014 present, costly, witnessed only by his own face for eight beats",
+        "planted_in_beat": 0,
+        "payoff": "Visibly slips for the first and only time in beat 8: the scream *SAY IT.* Hua witnesses it. The cost of the chapter pays out in front of her",
+        "payoff_in_beat": 8
+      },
+      {
+        "seed": "The \u03A685,000 figure spoken aloud",
+        "planted_in_beat": 8,
+        "payoff": "Hua\u0027s verbal *I owe you* \u2014 the contract that survives the night, unwritten, unreceipted, structurally permanent",
+        "payoff_in_beat": 8
+      },
+      {
+        "seed": "Kyle\u0027s terms \u2014 *I\u0027ll come to collect. One favor at a time. Until I deem we are even.*",
+        "planted_in_beat": 8,
+        "payoff": "The debt\u0027s collection mechanism is now open-ended on Kyle\u0027s terms \u2014 a structural lever the book leaves uncalled, deliberately, so the next chapter or book inherits it",
+        "payoff_in_beat": 8
+      },
+      {
+        "seed": "EMT-spec cauterizer bands fitted at the amputation \u2014 fourteen-hour preservation window",
+        "planted_in_beat": 1,
+        "payoff": "Kyle\u0027s psychology in the sluice is bookkeeping, not panic \u2014 he is racing a clock with a known length, not facing a permanent loss",
+        "payoff_in_beat": 2
+      },
+      {
+        "seed": "Kyle\u0027s bookkeeping mind in crisis \u2014 amputation filed as inventory loss, not wound",
+        "planted_in_beat": 2,
+        "payoff": "The bookkeeping carries the chapter: every beat from 3 onward is a line item against the fourteen-hour clock, and the chapter ends with him wheeled into the AutoDoc inside the window",
+        "payoff_in_beat": 9
+      },
+      {
+        "seed": "Kyle\u0027s nonstandard cybernetics \u2014 modified eleven years ago by people whose intentions he no longer trusts",
+        "planted_in_beat": 3,
+        "payoff": "Used in beat 4 for the bus crosswalk to industrial Axiom-era hardware; the geometry of the modification turns out to be too convenient for the modification\u0027s stated purpose",
+        "payoff_in_beat": 4
+      },
+      {
+        "seed": "The dorsal port row beneath Kyle\u0027s right-forearm skin sleeve \u2014 undocumented, unmentioned",
+        "planted_in_beat": 4,
+        "payoff": "First disclosure to the reader and (functionally) to Kyle himself \u2014 opens the long arc of *who modified him eleven years ago and why*, deliberately uncalled in this chapter",
+        "payoff_in_beat": 4
+      },
+      {
+        "seed": "Two sets of unaugmented hands in the chamber \u2014 Hua\u0027s (low-life luxury) and Kyle\u0027s (muscle memory with Silence)",
+        "planted_in_beat": 0,
+        "payoff": "The geometry the chapter has been waiting for: two natural hands meeting on the saya \u2014 except Kyle\u0027s are in the chum barrel six feet away, and the hand in contact with Hua\u0027s is industrial Axiom-era hardware bound to his wrist by salvaged cable",
+        "payoff_in_beat": 8
+      },
+      {
+        "seed": "Kyle\u0027s fourteen-year refusal of the hand upgrade \u2014 keeping the trained tendon and myelin",
+        "planted_in_beat": 0,
+        "payoff": "Vindicated by the cauterizer band\u0027s fourteen-hour preservation window: the motor calibration is preserved with the limb, *because* he kept the natural hand to begin with. The reattached hands at the AutoDoc still know Silence",
+        "payoff_in_beat": 9
+      },
+      {
+        "seed": "The automaton as Puppeteer\u0027s prison \u2014 eighteen years sealed, antenna fused, only the 19Hz hum outbound",
+        "planted_in_beat": 3,
+        "payoff": "The maintenance lead crosses to Kyle\u0027s auditory induction contact and Puppeteer escapes the trench through the only viable host that has come into range",
+        "payoff_in_beat": 4
+      },
+      {
+        "seed": "Puppeteer\u0027s native capability \u2014 possession of any cybernetic system at will",
+        "planted_in_beat": 4,
+        "payoff": "Disclosed in plain speech in beat 9: the salvage was Kyle, not the arm; Puppeteer has been resident since the auditory bridge",
+        "payoff_in_beat": 9
+      },
+      {
+        "seed": "Puppeteer\u0027s choice to cooperate rather than possess hostilely \u2014 willing host preserves skill, puppeted shell does not",
+        "planted_in_beat": 4,
+        "payoff": "By beat 9 Kyle is alive, intact, and useful \u2014 the integration was strategic, not coercive; the relationship is now structurally permanent",
+        "payoff_in_beat": 9
+      },
+      {
+        "seed": "Pain-relief reserve in Kyle\u0027s NeoCortex package \u2014 finite, draining through integration",
+        "planted_in_beat": 4,
+        "payoff": "Empty by minute thirty-five of the assembly; the integration becomes ad-hoc surgery in a dirty trench without analgesic, antibiotics on overdrive \u2014 Kyle works through it",
+        "payoff_in_beat": 4
+      },
+      {
+        "seed": "The auditory induction contact behind Kyle\u0027s left ear \u2014 standard NeoCortex hardware, never used inbound from a non-trusted source",
+        "planted_in_beat": 4,
+        "payoff": "Puppeteer\u0027s vector of entry; once the maintenance lead seats home there, the transfer is instantaneous and Kyle is no longer alone in his own head",
+        "payoff_in_beat": 4
+      },
+      {
+        "seed": "The naming question Kyle holds through beats 4 through 8",
+        "planted_in_beat": 4,
+        "payoff": "Answered on the walk in the rain: *Puppeteer.* Spoken in Kyle\u0027s own mouth by the entity that has been using it",
+        "payoff_in_beat": 9
+      }
+    ]
+  }
+}

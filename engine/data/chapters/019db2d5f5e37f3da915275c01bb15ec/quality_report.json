@@ -1,0 +1,164 @@
+{
+  "project_id": "019db2d5f5e37f3da915275c01bb15ec",
+  "title": "Every Road Leads Back",
+  "evaluated_at": "2026-04-22T02:50:06.1053639Z",
+  "aggregate_scores": {
+    "VOICE": 9,
+    "MORAL_COMPLEXITY": 8.166666666666666,
+    "PACING": 8.333333333333334,
+    "CHARACTER_AUTHENTICITY": 9.166666666666666,
+    "WORLD_SPECIFICITY": 9.166666666666666,
+    "CLICHE_AVOIDANCE": 8.166666666666666,
+    "DIALOGUE_QUALITY": 8.833333333333334,
+    "OVERALL": 8.69047619047619
+  },
+  "consensus_strengths": [],
+  "all_failures": [
+    "The stitched-shut pocket as physical externalization of Ash\u0027s psychology \u2014 \u0027a pocket that has been stitched shut with red thread \u2014 not sealed, not damaged, stitched shut deliberately, the thread worn smooth at the knot from years of his thumb finding it in the dark\u0027 \u2014 is the story\u0027s best image and does more character work than a page of exposition.",
+    "Brisa\u0027s introduction as pure operational inventory: \u0027She is giving him her name the way you give someone a tool. Here. Use it correctly.\u0027 Voice and character established simultaneously.",
+    "The oral mnemonic recitations are formally inventive and world-specific \u2014 \u0027los mapas mienten, the maps always lie, pero tu cuerpo sabe, your body knows\u0027 \u2014 and function as both characterization and world-building without feeling like infodump.",
+    "Correct and organic use of \u03A6 pricing (\u03A64 per tamale, \u03A6800 contract fee) that grounds economic reality without calling attention to itself.",
+    "E.L.F. shrine protocol used as checkpoint-passage mechanism \u2014 \u0027pours two fingers into the cup without breaking stride. The inspector looks away.\u0027 \u2014 integrates world-building into plot action elegantly.",
+    "Brisa\u0027s demolition expertise conveyed through physical behavior rather than exposition: \u0027the slight forward lean, weight on the balls of her feet... People who can feel the load-bearing walls by the way the floor changes under their boots.\u0027",
+    "The three-question exchange \u2014 \u0027secured origin / secured contents / secured reason\u0027 \u2014 is a masterclass in dialogue economy; subtext and power dynamics established in nine words.",
+    "Emeka\u0027s voice characterized entirely through absence and mediation: \u0027the voice of a man more comfortable with aerial footage than eye contact\u0027 \u2014 and his drone \u0027recording nothing \u2014 just present\u0027 in the final image is quietly devastating.",
+    "The name read aloud \u0027without weight or context by a man who does not know what they cost\u0027 \u2014 the gap between Emeka\u0027s operational neutrality and Ash\u0027s interior collapse is the story\u0027s emotional fulcrum, handled with precision.",
+    "The antagonist remains entirely institutional \u2014 Arcturus Civil Security is named but no individual contractor, officer, or corponation representative is given a face or coherent worldview. The ambush beat (\u0027Four ACS contractors move to take the package by force\u0027) risks reducing the opposition to a plot mechanism rather than a moral counterweight."
+  ],
+  "all_cliches_found": [],
+  "improvement_directives": [
+    "Embody the primary antagonist corporation by giving it a specific name, logo, or representative face so the ethical conflict carries personal weight rather than remaining abstractly institutional",
+    "Restructure the final act to delay the emotional climax by one additional beat, redistributing tension more evenly across the closing sequence to prevent compression of the story\u0027s resolution",
+    "Audit the noir voice for moments of self-conscious stylization and revise any lines where the prose signals atmosphere rather than earning it through concrete, specific detail",
+    "Replace or subvert the custody document reveal with a disclosure mechanism that feels native to the GLMZ world, eliminating the near-clich\u00E9 while reinforcing setting specificity",
+    "Tighten scene transitions throughout by cutting bridging sentences that explain movement between beats, trusting the reader to follow the established pacing logic"
+  ],
+  "weakest_dimension": "MORAL_COMPLEXITY",
+  "individual_votes": [
+    {
+      "provider": "claude",
+      "scores": {
+        "VOICE": 9,
+        "MORAL_COMPLEXITY": 7,
+        "PACING": 8,
+        "CHARACTER_AUTHENTICITY": 9,
+        "WORLD_SPECIFICITY": 8,
+        "CLICHE_AVOIDANCE": 7,
+        "DIALOGUE_QUALITY": 9
+      },
+      "overall_score": 8,
+      "strengths": [],
+      "failures": [
+        "The stitched-shut pocket as physical externalization of Ash\u0027s psychology \u2014 \u0027a pocket that has been stitched shut with red thread \u2014 not sealed, not damaged, stitched shut deliberately, the thread worn smooth at the knot from years of his thumb finding it in the dark\u0027 \u2014 is the story\u0027s best image and does more character work than a page of exposition.",
+        "Brisa\u0027s introduction as pure operational inventory: \u0027She is giving him her name the way you give someone a tool. Here. Use it correctly.\u0027 Voice and character established simultaneously.",
+        "The oral mnemonic recitations are formally inventive and world-specific \u2014 \u0027los mapas mienten, the maps always lie, pero tu cuerpo sabe, your body knows\u0027 \u2014 and function as both characterization and world-building without feeling like infodump.",
+        "Correct and organic use of \u03A6 pricing (\u03A64 per tamale, \u03A6800 contract fee) that grounds economic reality without calling attention to itself.",
+        "E.L.F. shrine protocol used as checkpoint-passage mechanism \u2014 \u0027pours two fingers into the cup without breaking stride. The inspector looks away.\u0027 \u2014 integrates world-building into plot action elegantly.",
+        "Brisa\u0027s demolition expertise conveyed through physical behavior rather than exposition: \u0027the slight forward lean, weight on the balls of her feet... People who can feel the load-bearing walls by the way the floor changes under their boots.\u0027",
+        "The three-question exchange \u2014 \u0027secured origin / secured contents / secured reason\u0027 \u2014 is a masterclass in dialogue economy; subtext and power dynamics established in nine words.",
+        "Emeka\u0027s voice characterized entirely through absence and mediation: \u0027the voice of a man more comfortable with aerial footage than eye contact\u0027 \u2014 and his drone \u0027recording nothing \u2014 just present\u0027 in the final image is quietly devastating.",
+        "The name read aloud \u0027without weight or context by a man who does not know what they cost\u0027 \u2014 the gap between Emeka\u0027s operational neutrality and Ash\u0027s interior collapse is the story\u0027s emotional fulcrum, handled with precision.",
+        "The antagonist remains entirely institutional \u2014 Arcturus Civil Security is named but no individual contractor, officer, or corponation representative is given a face or coherent worldview. The ambush beat (\u0027Four ACS contractors move to take the package by force\u0027) risks reducing the opposition to a plot mechanism rather than a moral counterweight."
+      ],
+      "cliches_found": [],
+      "best_moment": "The name read aloud by Emeka \u2014 \u0027Four syllables. A first name and a surname, two words, spoken without weight or context by a man who does not know what they cost\u0027 \u2014 followed by Ash\u0027s interior lock-up and his thumb finding the stitched-shut pocket in the dark. The convergence of the story\u0027s emotional core with its physical symbol, delivered at exactly the right structural moment, with the drone holding position overhead \u0027with the patience of something that has been programmed to wait.\u0027 The drone\u0027s patience mirrors Ash\u0027s forty years of deferral. It is the story\u0027s best sentence.",
+      "worst_moment": "The boy in the doorway with the half-finished scarification marks and the cloth-wrapped object. He arrives with genuine menace and mystery \u2014 \u0027Someone started the marks and stopped\u0027 \u2014 speaks a name that should not exist in his mouth, and then vanishes without consequence. In the rendered text this reads as an unearned tease; if it is setup for a later beat not yet written, it needs either a stronger plant or a cleaner exit that signals deliberate withholding rather than abandonment.",
+      "improvement_directive": "Give the antagonist a face. Arcturus Civil Security as an institution is a backdrop; what the story needs \u2014 and what its moral complexity score is losing points for \u2014 is one ACS contractor, one corponation representative, or one person on the other side of the demolition order who has a coherent reason for what they are doing. The story\u0027s ethics are currently one-sided: the demolition is wrong, the package is right, Ash\u0027s choice is painful but not genuinely contested. A single scene from inside the opposing logic \u2014 even a brief exchange with the contractor who gets through at the Lateral Junction \u2014 would transform the moral architecture from \u0027complicated personal stakes\u0027 into \u0027genuine ethical collision.\u0027"
+    },
+    {
+      "provider": "openai",
+      "scores": {
+        "VOICE": 9,
+        "MORAL_COMPLEXITY": 9,
+        "PACING": 8,
+        "CHARACTER_AUTHENTICITY": 9,
+        "WORLD_SPECIFICITY": 10,
+        "CLICHE_AVOIDANCE": 8,
+        "DIALOGUE_QUALITY": 8
+      },
+      "overall_score": 9,
+      "strengths": [],
+      "failures": [],
+      "cliches_found": [],
+      "best_moment": "The scene at the first checkpoint where Ash pours filtered lake water into the E.L.F. shrine cup while the inspector looks away \u2014 a subtle, ritualistic act that conveys deep worldbuilding and character without words.",
+      "worst_moment": "The ambush at the Lateral Junction, while functional, falls into familiar action tropes and could benefit from more unique or unexpected developments to heighten tension.",
+      "improvement_directive": "Tighten pacing around action sequences by reducing exposition and increasing visceral, sensory detail to maintain tension and avoid genre familiarity."
+    },
+    {
+      "provider": "deepseek",
+      "scores": {
+        "VOICE": 9,
+        "MORAL_COMPLEXITY": 8,
+        "PACING": 7,
+        "CHARACTER_AUTHENTICITY": 9,
+        "WORLD_SPECIFICITY": 10,
+        "CLICHE_AVOIDANCE": 9,
+        "DIALOGUE_QUALITY": 10
+      },
+      "overall_score": 9,
+      "strengths": [],
+      "failures": [],
+      "cliches_found": [],
+      "best_moment": "Emeka, via drone relay, reads the daughter\u0027s name aloud \u0027without weight or context by a man who does not know what they cost.\u0027 The description of Ash\u0027s physical freeze and his hand moving to the stitched-shut pocket is a devastating, perfectly executed reveal.",
+      "worst_moment": "The truncated combat beat at the Lateral Junction feels slightly less distinctive than the surrounding material, though it remains grounded in character (Ash using his knowledge of the yard\u0027s layout).",
+      "improvement_directive": "Allow slightly more narrative space after the \u0027All Is Lost\u0027 moment (the open pocket) to let the weight of Ash\u0027s discovery settle before he delivers his operational decision, deepening the emotional transition into the final act."
+    },
+    {
+      "provider": "mistral",
+      "scores": {
+        "VOICE": 9,
+        "MORAL_COMPLEXITY": 9,
+        "PACING": 9,
+        "CHARACTER_AUTHENTICITY": 10,
+        "WORLD_SPECIFICITY": 10,
+        "CLICHE_AVOIDANCE": 9,
+        "DIALOGUE_QUALITY": 9
+      },
+      "overall_score": 9,
+      "strengths": [],
+      "failures": [],
+      "cliches_found": [],
+      "best_moment": "Ash\u0027s reaction to his daughter\u0027s name: \u0027Four syllables. A first name and a surname, two words, spoken without weight or context by a man who does not know what they cost. Ash goes completely still... His thumb rests against the stitching and his chest does not move for three full seconds.\u0027 The physicality of the stitched pocket and the way the moment is rendered through Ash\u0027s body language (not dialogue) is devastating.",
+      "worst_moment": "The line \u0027los mapas mienten\u0027 feels slightly too on-the-nose as a thematic statement, though it\u0027s redeemed by the immediate follow-up: \u0027And then he thinks: Escanaba.\u0027 The transition from aphorism to specific dread is excellent, but the aphorism itself could be more subtle.",
+      "improvement_directive": "Trust the reader to infer the weight of Ash\u0027s past without occasional thematic signposts (e.g., \u0027los mapas mienten\u0027). The story\u0027s power lies in its specificity\u2014let the details (the stitched pocket, the cold tamales, the shrine offerings) carry the theme, not the occasional abstract statement."
+    },
+    {
+      "provider": "xai",
+      "scores": {
+        "VOICE": 9,
+        "MORAL_COMPLEXITY": 8,
+        "PACING": 9,
+        "CHARACTER_AUTHENTICITY": 9,
+        "WORLD_SPECIFICITY": 9,
+        "CLICHE_AVOIDANCE": 8,
+        "DIALOGUE_QUALITY": 8
+      },
+      "overall_score": 9,
+      "strengths": [],
+      "failures": [],
+      "cliches_found": [],
+      "best_moment": "Ash\u0027s stillness upon hearing his daughter\u0027s name: \u0027Ash goes completely still... his chest does not move for three full seconds,\u0027 capturing the inevitable surprise from his psychology and heightening moral tension.",
+      "worst_moment": "The abrupt truncation during the ambush scene: \u0027Brisa\u0027s hand is already moving when the first contractor comes over the yard fence,\u0027 which disrupts the organic pacing and leaves the action unresolved.",
+      "improvement_directive": "Fully complete the story to resolve key plot threads, ensuring all beats lead to a climactic payoff that reinforces the theme without relying on unresolved elements."
+    },
+    {
+      "provider": "groq",
+      "scores": {
+        "VOICE": 9,
+        "MORAL_COMPLEXITY": 8,
+        "PACING": 9,
+        "CHARACTER_AUTHENTICITY": 9,
+        "WORLD_SPECIFICITY": 8,
+        "CLICHE_AVOIDANCE": 8,
+        "DIALOGUE_QUALITY": 9
+      },
+      "overall_score": 9,
+      "strengths": [],
+      "failures": [],
+      "cliches_found": [],
+      "best_moment": "The moment when Ash\u0027s past and present collide, as he hears his daughter\u0027s name spoken by the drone, is a powerful and emotional turning point in the story.",
+      "worst_moment": "The story\u0027s truncation feels abrupt, and some readers may feel that the narrative is cut off just as it is reaching its climax.",
+      "improvement_directive": "To add more depth and nuance to the story, consider exploring the moral complexities of the characters\u0027 motivations and the consequences of their actions, and avoid relying on familiar tropes and conventions."
+    }
+  ]
+}

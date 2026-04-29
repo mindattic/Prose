@@ -902,14 +902,14 @@ public class StoryDirectorService : IStoryDirectorService
         return sb.ToString();
     }
 
-    private string StoriesDir => paths.StoriesDir;
+    private string ChaptersDir => paths.ChaptersDir;
 
     /// <summary>Save a partial or complete story as a checkpoint to disk.</summary>
     private void SaveCheckpoint(AutonomousStory story)
     {
         try
         {
-            var path = StoryFolderHelper.GetFilePath(StoriesDir, story.ProjectId, "checkpoint.json", story.Title);
+            var path = StoryFolderHelper.GetFilePath(ChaptersDir, story.ProjectId, "checkpoint.json", story.Title);
             var json = System.Text.Json.JsonSerializer.Serialize(story,
                 new System.Text.Json.JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(path, json);
@@ -923,7 +923,7 @@ public class StoryDirectorService : IStoryDirectorService
     /// <summary>Load a checkpoint from disk.</summary>
     public AutonomousStory? LoadCheckpoint(string projectId)
     {
-        var path = StoryFolderHelper.FindFile(StoriesDir, projectId, "checkpoint.json");
+        var path = StoryFolderHelper.FindFile(ChaptersDir, projectId, "checkpoint.json");
         if (path == null) return null;
         try
         {
@@ -940,7 +940,7 @@ public class StoryDirectorService : IStoryDirectorService
     /// <summary>List all available checkpoints (partial and complete stories).</summary>
     public List<AutonomousStory> ListCheckpoints()
     {
-        var dir = StoriesDir;
+        var dir = ChaptersDir;
         if (!Directory.Exists(dir)) return [];
         return Directory.GetDirectories(dir)
             .Select(d => Path.Combine(d, "checkpoint.json"))
@@ -953,7 +953,7 @@ public class StoryDirectorService : IStoryDirectorService
     /// <summary>Archive a failed story folder to archives/.</summary>
     public void ArchiveCheckpoint(string projectId)
     {
-        var folder = StoryFolderHelper.FindFolder(StoriesDir, projectId);
+        var folder = StoryFolderHelper.FindFolder(ChaptersDir, projectId);
         if (folder == null) return;
         var archiveDir = paths.ArchiveDir;
         Directory.CreateDirectory(archiveDir);

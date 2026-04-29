@@ -110,7 +110,7 @@ public class BookOutlineSyncTests
     {
         rootDir = Path.Combine(Path.GetTempPath(), $"ss_intercon_{Guid.NewGuid():N}");
         Directory.CreateDirectory(Path.Combine(rootDir, "books"));
-        Directory.CreateDirectory(Path.Combine(rootDir, "stories"));
+        Directory.CreateDirectory(Path.Combine(rootDir, "chapters"));
         paths = new TestPathProviderWithRoot(rootDir);
         books = new JsonBookRepository(paths, NullLoggers.For<JsonBookRepository>());
         chapters = new JsonChapterRepository(paths, NullLoggers.For<JsonChapterRepository>());

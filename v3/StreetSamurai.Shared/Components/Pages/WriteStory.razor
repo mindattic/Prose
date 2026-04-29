@@ -2133,7 +2133,7 @@
 
     private void SaveValidationState()
     {
-        var path = StoryFolderHelper.GetFilePath(Paths.StoriesDir, project.Id, "validation.json", project.Title);
+        var path = StoryFolderHelper.GetFilePath(Paths.ChaptersDir, project.Id, "validation.json", project.Title);
         var json = System.Text.Json.JsonSerializer.Serialize(validationResults,
             new System.Text.Json.JsonSerializerOptions { WriteIndented = true });
         System.IO.File.WriteAllText(path, json);
@@ -2141,7 +2141,7 @@
 
     private List<CanonIssue> LoadValidation()
     {
-        var path = StoryFolderHelper.FindFile(Paths.StoriesDir, project.Id, "validation.json");
+        var path = StoryFolderHelper.FindFile(Paths.ChaptersDir, project.Id, "validation.json");
         if (path == null) return [];
         try
         {

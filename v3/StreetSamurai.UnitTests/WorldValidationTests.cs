@@ -25,7 +25,7 @@ public class WorldValidationTests
     private XrefService xref = null!;
 
     private static readonly string[] ExcludedDirs =
-        ["archives", "logs", "graph", "stories", "exports", "media", "chromadb", "profiles"];
+        ["archives", "logs", "graph", "chapters", "exports", "media", "chromadb", "profiles"];
 
     [OneTimeSetUp]
     public void Setup()
@@ -265,7 +265,7 @@ public class WorldValidationTests
         public string EngineDataDir     => dataDir;
         public string MutableDataDir    => dataDir;
         public string DataRoot          => Path.GetDirectoryName(dataDir) ?? dataDir;
-        public string StoriesDir        => Path.Combine(dataDir, "stories");
+        public string ChaptersDir       => Path.Combine(dataDir, "chapters");
         public string BooksDir           => Path.Combine(dataDir, "books");
         public string SeriesDir          => Path.Combine(dataDir, "series");
         public string GraphDir          => Path.Combine(dataDir, "graph");

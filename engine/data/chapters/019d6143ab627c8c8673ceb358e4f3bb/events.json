@@ -1,0 +1,270 @@
+[
+  {
+    "id": "63042a0f",
+    "beat_index": 1,
+    "type": "departure",
+    "summary": "An unnamed man (Helix representative) left the ward without obtaining what he came for.",
+    "participants": [
+      "Helix man"
+    ],
+    "location": "ward/facility",
+    "object": "badge reader",
+    "consequence": "Ambrosia is left alone and free to act on the contract she received during his visit",
+    "emotional_weight": 5,
+    "tags": [
+      "tension",
+      "surveillance",
+      "power",
+      "survival"
+    ],
+    "timestamp": "2026-04-06T01:58:43.6644814Z"
+  },
+  {
+    "id": "e8448960",
+    "beat_index": 1,
+    "type": "discovery",
+    "summary": "Ambrosia received a contract at 02:11 \u2014 while the Helix man was still present \u2014 containing a patient symptom profile she recognized with disturbing familiarity.",
+    "participants": [
+      "Ambrosia"
+    ],
+    "location": "ward/facility",
+    "object": "contract",
+    "consequence": "Sets up Ambrosia\u0027s investigation and her decision to accept the contract despite red flags",
+    "emotional_weight": 7,
+    "tags": [
+      "recognition",
+      "intrigue",
+      "technology",
+      "neural interface"
+    ],
+    "timestamp": "2026-04-06T01:58:43.6645614Z"
+  },
+  {
+    "id": "5bc67af1",
+    "beat_index": 1,
+    "type": "discovery",
+    "summary": "Ambrosia found that the referring physician Dr. Cassius Vael does not exist in any of four licensed physician databases she checked.",
+    "participants": [
+      "Ambrosia"
+    ],
+    "location": "ward/facility",
+    "object": "",
+    "consequence": "Establishes the contract as suspicious or falsified, raising stakes of her acceptance",
+    "emotional_weight": 6,
+    "tags": [
+      "deception",
+      "investigation",
+      "false identity",
+      "danger"
+    ],
+    "timestamp": "2026-04-06T01:58:43.6645622Z"
+  },
+  {
+    "id": "b5b05c75",
+    "beat_index": 1,
+    "type": "decision",
+    "summary": "Ambrosia documented all discrepancies meticulously and then accepted the contract anyway.",
+    "participants": [
+      "Ambrosia"
+    ],
+    "location": "ward/facility",
+    "object": "contract",
+    "consequence": "Drives the entire subsequent plot; signals she is knowingly walking into danger",
+    "emotional_weight": 8,
+    "tags": [
+      "compulsion",
+      "self-awareness",
+      "risk",
+      "obsession",
+      "agency"
+    ],
+    "timestamp": "2026-04-06T01:58:43.6645626Z"
+  },
+  {
+    "id": "21f27efd",
+    "beat_index": 1,
+    "type": "arrival",
+    "summary": "Ambrosia arrived at Orsolya\u0027s shop in the Hamtramck Enclave in the early hours of the morning.",
+    "participants": [
+      "Ambrosia",
+      "Orsolya"
+    ],
+    "location": "Hamtramck Enclave, Orsolya\u0027s shop",
+    "object": "instrument case",
+    "consequence": "Initiates the relationship between Ambrosia and Orsolya; sets up the repair of the calibration unit",
+    "emotional_weight": 4,
+    "tags": [
+      "refuge",
+      "night",
+      "underground",
+      "community"
+    ],
+    "timestamp": "2026-04-06T01:58:43.6645631Z"
+  },
+  {
+    "id": "d3b037f3",
+    "beat_index": 1,
+    "type": "revelation",
+    "summary": "Orsolya read Ambrosia\u0027s recent fear and exhaustion from her physical bearing and the state of her coat without being told anything.",
+    "participants": [
+      "Orsolya",
+      "Ambrosia"
+    ],
+    "location": "Hamtramck Enclave, Orsolya\u0027s shop",
+    "object": "",
+    "consequence": "Establishes Orsolya as perceptive and trustworthy; shifts power dynamic toward Orsolya",
+    "emotional_weight": 5,
+    "tags": [
+      "perception",
+      "trust",
+      "vulnerability",
+      "reading people"
+    ],
+    "timestamp": "2026-04-06T01:58:43.6645638Z"
+  },
+  {
+    "id": "2507043d",
+    "beat_index": 1,
+    "type": "dialogue",
+    "summary": "Orsolya identified Ambrosia as the person Dariusz called about, assessed her instrument case, and instructed her to sit so she could examine it.",
+    "participants": [
+      "Orsolya",
+      "Ambrosia"
+    ],
+    "location": "Hamtramck Enclave, Orsolya\u0027s shop",
+    "object": "portable calibration unit",
+    "consequence": "Begins the practical transaction that serves as cover or entry point for a deeper relationship",
+    "emotional_weight": 3,
+    "tags": [
+      "trust",
+      "community",
+      "care",
+      "underground network"
+    ],
+    "timestamp": "2026-04-06T01:58:43.6645641Z"
+  },
+  {
+    "id": "8a659a38",
+    "beat_index": 2,
+    "type": "action",
+    "summary": "Orsolya repairs Ambrosia\u0027s instrument case and charges her forty Quanta without asking what it is for.",
+    "participants": [
+      "Orsolya",
+      "Ambrosia"
+    ],
+    "location": "Orsolya\u0027s shop",
+    "object": "instrument case, soldering iron",
+    "consequence": "Ambrosia has her equipment ready for the clandestine medical visit; Orsolya\u0027s silence implies tacit awareness of something irregular",
+    "emotional_weight": 4,
+    "tags": [
+      "tact",
+      "complicity",
+      "trust",
+      "discretion"
+    ],
+    "timestamp": "2026-04-06T01:59:45.0708586Z"
+  },
+  {
+    "id": "58183ea2",
+    "beat_index": 2,
+    "type": "arrival",
+    "summary": "Ambrosia boards the I-90 Vein maglev at 04:30 and travels ninety minutes toward the Ferrogate corridor.",
+    "participants": [
+      "Ambrosia"
+    ],
+    "location": "I-90 Vein maglev",
+    "object": "instrument case, patient file",
+    "consequence": "Ambrosia uses the transit time to study the patient file and map the decommissioned relay station, preparing for an off-grid medical examination",
+    "emotional_weight": 3,
+    "tags": [
+      "isolation",
+      "preparation",
+      "clandestine"
+    ],
+    "timestamp": "2026-04-06T01:59:45.0708596Z"
+  },
+  {
+    "id": "29dbb7c7",
+    "beat_index": 2,
+    "type": "arrival",
+    "summary": "Ambrosia arrives at the decommissioned relay station and meets Milo.",
+    "participants": [
+      "Ambrosia",
+      "Milo"
+    ],
+    "location": "decommissioned relay station, dead space outside Ferrogate sovereign strip",
+    "object": "",
+    "consequence": "The medical examination is initiated in a jurisdiction-free zone, outside any corporate oversight",
+    "emotional_weight": 5,
+    "tags": [
+      "clandestine",
+      "vulnerability",
+      "distrust",
+      "care"
+    ],
+    "timestamp": "2026-04-06T01:59:45.0708602Z"
+  },
+  {
+    "id": "68bda780",
+    "beat_index": 2,
+    "type": "dialogue",
+    "summary": "Milo tells Ambrosia his name, describes his symptoms \u2014 pressure behind his left ear, inaccessible information, false memories \u2014 and recounts receiving a clean bill of health from a Ferrogate contractor clinic eight months ago.",
+    "participants": [
+      "Milo",
+      "Ambrosia"
+    ],
+    "location": "decommissioned relay station",
+    "object": "transit worker loyalty card",
+    "consequence": "Establishes that Ferrogate\u0027s clinic either missed or concealed the secondary interface; sets up the revelation of corporate negligence or malfeasance",
+    "emotional_weight": 6,
+    "tags": [
+      "corporate complicity",
+      "vulnerability",
+      "distrust",
+      "medical neglect"
+    ],
+    "timestamp": "2026-04-06T01:59:45.0708623Z"
+  },
+  {
+    "id": "d379fbb7",
+    "beat_index": 2,
+    "type": "discovery",
+    "summary": "Ambrosia\u0027s instruments confirm a dormant secondary neural interface in Milo, architecturally identical to a ghost implant she has been concealing in her records for three months.",
+    "participants": [
+      "Ambrosia",
+      "Milo"
+    ],
+    "location": "decommissioned relay station",
+    "object": "medical instruments, lens overlay calibration map",
+    "consequence": "Confirms a pattern of covert implantation across multiple subjects; deepens Ambrosia\u0027s complicity and the stakes of her concealment",
+    "emotional_weight": 9,
+    "tags": [
+      "conspiracy",
+      "corporate malfeasance",
+      "hidden technology",
+      "pattern recognition"
+    ],
+    "timestamp": "2026-04-06T01:59:45.0708626Z"
+  },
+  {
+    "id": "602ba2e0",
+    "beat_index": 2,
+    "type": "decision",
+    "summary": "Ambrosia chooses to document the secondary interface in her private discrepancy file rather than report it through official channels, and notes that Milo is unaware of the implant.",
+    "participants": [
+      "Ambrosia"
+    ],
+    "location": "decommissioned relay station",
+    "object": "private discrepancy file",
+    "consequence": "Ambrosia deepens her off-record investigation and withholds the discovery from Milo, creating an ethical tension around informed consent",
+    "emotional_weight": 8,
+    "tags": [
+      "complicity",
+      "secrecy",
+      "ethics",
+      "protection",
+      "betrayal"
+    ],
+    "timestamp": "2026-04-06T01:59:45.0708628Z"
+  }
+]

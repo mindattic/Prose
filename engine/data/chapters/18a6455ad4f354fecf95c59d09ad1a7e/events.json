@@ -1,0 +1,897 @@
+[
+  {
+    "id": "019dd627",
+    "beat_index": 0,
+    "type": "arrival",
+    "summary": "Kyle arrives at the parts shop and positions himself at the counter with his hand near his katana\u0027s guard.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "parts shop",
+    "object": "katana",
+    "consequence": "Establishes Kyle\u0027s physical presence and habitual combat readiness as the scene\u0027s starting condition.",
+    "emotional_weight": 2,
+    "tags": [
+      "habit",
+      "vigilance",
+      "tension"
+    ],
+    "timestamp": "2026-04-28T22:13:01.7705559Z"
+  },
+  {
+    "id": "019dd627",
+    "beat_index": 0,
+    "type": "dialogue",
+    "summary": "Sable offers Kyle a cold-chain pharmaceutical courier job from Bucktown to eastern district 4 with an eleven-hour window at a rate of thirty-one thousand.",
+    "participants": [
+      "Sable",
+      "Kyle"
+    ],
+    "location": "parts shop",
+    "object": "",
+    "consequence": "Presents Kyle with the job offer that drives the scene\u0027s central decision.",
+    "emotional_weight": 4,
+    "tags": [
+      "negotiation",
+      "work",
+      "trust"
+    ],
+    "timestamp": "2026-04-28T22:13:01.7705774Z"
+  },
+  {
+    "id": "019dd627",
+    "beat_index": 0,
+    "type": "revelation",
+    "summary": "Kyle identifies the route as a Lotus Syndicate route, and Sable confirms the original courier was flagged as compromised.",
+    "participants": [
+      "Kyle",
+      "Sable"
+    ],
+    "location": "parts shop",
+    "object": "",
+    "consequence": "Introduces ambiguity and risk into the job offer, raising the stakes of Kyle\u0027s decision.",
+    "emotional_weight": 6,
+    "tags": [
+      "danger",
+      "deception",
+      "information withheld",
+      "criminal networks"
+    ],
+    "timestamp": "2026-04-28T22:13:01.7705776Z"
+  },
+  {
+    "id": "019dd627",
+    "beat_index": 0,
+    "type": "decision",
+    "summary": "Kyle types a question about why the courier was flagged, holds it for two seconds, then deletes it character by character and accepts the job.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "parts shop",
+    "object": "terminal",
+    "consequence": "Kyle commits to the job while deliberately choosing not to know information that might compel him to refuse it.",
+    "emotional_weight": 8,
+    "tags": [
+      "willful ignorance",
+      "complicity",
+      "self-preservation",
+      "moral compromise"
+    ],
+    "timestamp": "2026-04-28T22:13:01.7705778Z"
+  },
+  {
+    "id": "019dd627",
+    "beat_index": 0,
+    "type": "dialogue",
+    "summary": "Sable warns Kyle that the eleven-hour window is firm, replacing what Kyle perceives was a different, unspoken message.",
+    "participants": [
+      "Sable",
+      "Kyle"
+    ],
+    "location": "parts shop",
+    "object": "",
+    "consequence": "Suggests Sable withheld something significant, deepening the sense of concealed danger surrounding the job.",
+    "emotional_weight": 7,
+    "tags": [
+      "trust",
+      "information withheld",
+      "warning",
+      "ambiguity"
+    ],
+    "timestamp": "2026-04-28T22:13:01.7705789Z"
+  },
+  {
+    "id": "019dd627",
+    "beat_index": 0,
+    "type": "discovery",
+    "summary": "Kyle internally acknowledges that his NeoCortex has logged Sable\u0027s cadence shift forty-seven times across four years, indicating she regularly replaces what she intends to say.",
+    "participants": [
+      "Kyle",
+      "Sable"
+    ],
+    "location": "parts shop",
+    "object": "NeoCortex",
+    "consequence": "Reveals the depth of Kyle\u0027s surveillance of Sable and his deliberate choice never to confront her with it, establishing a mutual architecture of withheld knowledge.",
+    "emotional_weight": 7,
+    "tags": [
+      "surveillance",
+      "trust",
+      "secrets",
+      "power dynamics",
+      "intimacy"
+    ],
+    "timestamp": "2026-04-28T22:13:01.7705792Z"
+  },
+  {
+    "id": "019dd627",
+    "beat_index": 0,
+    "type": "departure",
+    "summary": "Kyle leaves the parts shop and walks out into the rain.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "parts shop",
+    "object": "",
+    "consequence": "Closes the negotiation scene and commits Kyle to the job\u0027s execution.",
+    "emotional_weight": 3,
+    "tags": [
+      "isolation",
+      "resolve",
+      "forward motion"
+    ],
+    "timestamp": "2026-04-28T22:13:01.7705794Z"
+  },
+  {
+    "id": "019dd628",
+    "beat_index": 1,
+    "type": "arrival",
+    "summary": "Kyle arrives at the warehouse seven minutes before the contracted hour and spends four minutes surveilling the entrance before entering.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "warehouse on a side street off Milwaukee",
+    "object": "",
+    "consequence": "Establishes Kyle\u0027s cautious, trained habits and his awareness of Lotus-adjacent transit nodes on his route.",
+    "emotional_weight": 3,
+    "tags": [
+      "caution",
+      "surveillance",
+      "paranoia",
+      "routine"
+    ],
+    "timestamp": "2026-04-28T22:14:34.5730921Z"
+  },
+  {
+    "id": "019dd628",
+    "beat_index": 1,
+    "type": "action",
+    "summary": "The clerk retrieves the intake manifest and pre-fills the consignment number before Kyle reaches the counter.",
+    "participants": [
+      "clerk"
+    ],
+    "location": "warehouse intake corridor",
+    "object": "intake manifest",
+    "consequence": "Signals the clerk\u0027s deep familiarity with the process and the routine, unremarkable nature of the transaction.",
+    "emotional_weight": 1,
+    "tags": [
+      "routine",
+      "bureaucracy",
+      "augmentation"
+    ],
+    "timestamp": "2026-04-28T22:14:34.5730935Z"
+  },
+  {
+    "id": "019dd628",
+    "beat_index": 1,
+    "type": "action",
+    "summary": "Kyle inspects the crate\u0027s tamper-evident seals and cold-chain diagnostic strip, confirming the cargo is intact and within temperature parameters.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "bay three, warehouse",
+    "object": "cold-chain sealed crate, Shen Pharmaceuticals",
+    "consequence": "Cargo is verified as undamaged and legitimate on the surface, clearing Kyle to take custody.",
+    "emotional_weight": 2,
+    "tags": [
+      "routine",
+      "verification",
+      "pharmaceutical",
+      "caution"
+    ],
+    "timestamp": "2026-04-28T22:14:34.5730938Z"
+  },
+  {
+    "id": "019dd628",
+    "beat_index": 1,
+    "type": "action",
+    "summary": "Kyle authenticates the chain-of-custody form by pressing his temple to the terminal, causing his NeoCortex to write his identity into the warehouse ledger.",
+    "participants": [
+      "Kyle",
+      "clerk"
+    ],
+    "location": "warehouse intake corridor",
+    "object": "NeoCortex interface, chain-of-custody terminal",
+    "consequence": "Kyle\u0027s name and a timestamped NeoCortex signature are recorded in a V\u00E1squez Holdings ledger he was never shown, creating a traceable record.",
+    "emotional_weight": 6,
+    "tags": [
+      "surveillance",
+      "identity",
+      "vulnerability",
+      "bureaucracy",
+      "unintended consequence"
+    ],
+    "timestamp": "2026-04-28T22:14:34.5730941Z"
+  },
+  {
+    "id": "019dd628",
+    "beat_index": 1,
+    "type": "discovery",
+    "summary": "The narration reveals that Kyle\u0027s authentication has written his identity into a ledger readable by anyone who knows what a NeoCortex signature looks like in a V\u00E1squez Holdings record \u2014 unknown to Kyle.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "warehouse intake corridor",
+    "object": "NeoCortex signature, V\u00E1squez Holdings chain-of-custody record",
+    "consequence": "Kyle is now traceable by unknown parties with the right knowledge, setting up potential future exposure or targeting.",
+    "emotional_weight": 8,
+    "tags": [
+      "betrayal",
+      "vulnerability",
+      "surveillance",
+      "dramatic irony",
+      "danger",
+      "unintended consequence"
+    ],
+    "timestamp": "2026-04-28T22:14:34.5730943Z"
+  },
+  {
+    "id": "019dd628",
+    "beat_index": 1,
+    "type": "departure",
+    "summary": "Kyle loads the crate onto a freelancer cart and walks it toward the bay door to leave the warehouse.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "warehouse bay three",
+    "object": "freelancer cart, crate",
+    "consequence": "Kyle departs with the cargo, unaware of the identity record left behind.",
+    "emotional_weight": 2,
+    "tags": [
+      "routine",
+      "obliviousness",
+      "departure"
+    ],
+    "timestamp": "2026-04-28T22:14:34.5730949Z"
+  },
+  {
+    "id": "019dd62b",
+    "beat_index": 3,
+    "type": "arrival",
+    "summary": "Kyle arrives at the receiving dock eight minutes ahead of schedule and rolls the cart to the inspection counter.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "V\u00E1squez Holdings Receiving Dock 4-East",
+    "object": "cart with crate (Consignment 0431-A)",
+    "consequence": "Initiates the delivery and inspection process",
+    "emotional_weight": 2,
+    "tags": [
+      "routine",
+      "punctuality",
+      "labor"
+    ],
+    "timestamp": "2026-04-28T22:17:42.321697Z"
+  },
+  {
+    "id": "019dd62b",
+    "beat_index": 3,
+    "type": "action",
+    "summary": "The clerk scans and identifies Consignment 0431-A using her Pellucid Systems eye augmentations in a four-second optimized sequence.",
+    "participants": [
+      "clerk"
+    ],
+    "location": "V\u00E1squez Holdings Receiving Dock 4-East",
+    "object": "Pellucid Systems eye augmentations",
+    "consequence": "Authentication is bypassed; the delivery is accepted without verbal verification",
+    "emotional_weight": 2,
+    "tags": [
+      "technology",
+      "surveillance",
+      "routine",
+      "labor"
+    ],
+    "timestamp": "2026-04-28T22:17:42.3216981Z"
+  },
+  {
+    "id": "019dd62b",
+    "beat_index": 3,
+    "type": "action",
+    "summary": "The clerk countersigns the chain-of-custody terminal without reading the form and releases the crate to the automated warehouse track.",
+    "participants": [
+      "clerk"
+    ],
+    "location": "V\u00E1squez Holdings Receiving Dock 4-East",
+    "object": "chain-of-custody terminal",
+    "consequence": "The crate passes through the interior doors and is formally received",
+    "emotional_weight": 2,
+    "tags": [
+      "routine",
+      "bureaucracy",
+      "labor",
+      "technology"
+    ],
+    "timestamp": "2026-04-28T22:17:42.3216983Z"
+  },
+  {
+    "id": "019dd62b",
+    "beat_index": 3,
+    "type": "action",
+    "summary": "Kyle presses his temple to the reader and receives delivery confirmation on his NeoCortex feed.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "V\u00E1squez Holdings Receiving Dock 4-East",
+    "object": "NeoCortex neural interface, receipt strip",
+    "consequence": "Delivery is logged as confirmed but payment is flagged as pending regulatory clearance",
+    "emotional_weight": 3,
+    "tags": [
+      "technology",
+      "labor",
+      "payment",
+      "bureaucracy"
+    ],
+    "timestamp": "2026-04-28T22:17:42.3216985Z"
+  },
+  {
+    "id": "019dd62b",
+    "beat_index": 3,
+    "type": "discovery",
+    "summary": "Kyle notices the \u0027PENDING REGULATORY CLEAR\u0027 flag on his delivery confirmation, signaling an unexpected hold on his payment.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "V\u00E1squez Holdings Receiving Dock 4-East",
+    "object": "NeoCortex feed",
+    "consequence": "Creates a twelve-hour delay between Kyle and his thirty-one thousand payment",
+    "emotional_weight": 6,
+    "tags": [
+      "bureaucracy",
+      "uncertainty",
+      "financial precarity",
+      "tension"
+    ],
+    "timestamp": "2026-04-28T22:17:42.3216992Z"
+  },
+  {
+    "id": "019dd62b",
+    "beat_index": 3,
+    "type": "revelation",
+    "summary": "The clerk explains that a Tier 4 customs review has placed a routine twelve-hour hold on the pharmaceutical consignment due to a SKU reclassification from Class B to Class A.",
+    "participants": [
+      "clerk",
+      "Kyle"
+    ],
+    "location": "V\u00E1squez Holdings Receiving Dock 4-East",
+    "object": "",
+    "consequence": "Kyle\u0027s payment is delayed by at least twelve hours; the hold is framed as routine but its impact on Kyle is unaddressed",
+    "emotional_weight": 5,
+    "tags": [
+      "bureaucracy",
+      "power imbalance",
+      "financial precarity",
+      "routine",
+      "surveillance"
+    ],
+    "timestamp": "2026-04-28T22:17:42.3216995Z"
+  },
+  {
+    "id": "019dd62b",
+    "beat_index": 3,
+    "type": "decision",
+    "summary": "Kyle chooses not to ask whether the regulatory hold will delay his fee, suppressing the question.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "V\u00E1squez Holdings Receiving Dock 4-East",
+    "object": "",
+    "consequence": "Kyle leaves without clarity on his payment, internalizing the powerlessness of his position",
+    "emotional_weight": 7,
+    "tags": [
+      "suppression",
+      "power imbalance",
+      "financial precarity",
+      "labor",
+      "resignation",
+      "self-censorship"
+    ],
+    "timestamp": "2026-04-28T22:17:42.3216997Z"
+  },
+  {
+    "id": "019dd62c",
+    "beat_index": 4,
+    "type": "decision",
+    "summary": "Kyle\u0027s body overrides his conscious intent and he turns left toward Mrs. Chen\u0027s stall in response to a persistent NeoCortex metabolism flag.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "Gray Zone western edge, four blocks from Chicago Ave",
+    "object": "NeoCortex metabolism flag",
+    "consequence": "Kyle stops for food before returning to The Pivot, delaying his route",
+    "emotional_weight": 3,
+    "tags": [
+      "autonomy",
+      "instinct",
+      "human-machine interface",
+      "routine"
+    ],
+    "timestamp": "2026-04-28T22:19:10.8289985Z"
+  },
+  {
+    "id": "019dd62c",
+    "beat_index": 4,
+    "type": "arrival",
+    "summary": "Kyle arrives at Mrs. Chen\u0027s stall and sits down without exchanging words.",
+    "participants": [
+      "Kyle",
+      "Mrs. Chen"
+    ],
+    "location": "Mrs. Chen\u0027s stall, Gray Zone",
+    "object": "",
+    "consequence": "Establishes the wordless ritual between Kyle and Mrs. Chen",
+    "emotional_weight": 4,
+    "tags": [
+      "routine",
+      "familiarity",
+      "silence",
+      "trust"
+    ],
+    "timestamp": "2026-04-28T22:19:10.8289993Z"
+  },
+  {
+    "id": "019dd62c",
+    "beat_index": 4,
+    "type": "action",
+    "summary": "Mrs. Chen sets a bowl of pork bone broth and chili oil in front of Kyle without being asked or told his order.",
+    "participants": [
+      "Mrs. Chen",
+      "Kyle"
+    ],
+    "location": "Mrs. Chen\u0027s stall, Gray Zone",
+    "object": "pork bone broth, chili oil",
+    "consequence": "Demonstrates the unspoken understanding and continuity of their relationship",
+    "emotional_weight": 5,
+    "tags": [
+      "tenderness",
+      "routine",
+      "wordless care",
+      "trust"
+    ],
+    "timestamp": "2026-04-28T22:19:10.8289996Z"
+  },
+  {
+    "id": "019dd62c",
+    "beat_index": 4,
+    "type": "action",
+    "summary": "Mrs. Chen refills Kyle\u0027s bowl unprompted partway through his meal.",
+    "participants": [
+      "Mrs. Chen",
+      "Kyle"
+    ],
+    "location": "Mrs. Chen\u0027s stall, Gray Zone",
+    "object": "pork bone broth",
+    "consequence": "Deepens the sense of unspoken attentiveness in their arrangement",
+    "emotional_weight": 5,
+    "tags": [
+      "tenderness",
+      "care",
+      "routine",
+      "wordless communication"
+    ],
+    "timestamp": "2026-04-28T22:19:10.8289997Z"
+  },
+  {
+    "id": "019dd62c",
+    "beat_index": 4,
+    "type": "emotional_shift",
+    "summary": "Kyle looks at his hands around the bowl and thinks about nothing in particular for the first time in eleven hours.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "Mrs. Chen\u0027s stall, Gray Zone",
+    "object": "",
+    "consequence": "Marks a rare moment of mental rest and relief for Kyle amid sustained operational tension",
+    "emotional_weight": 7,
+    "tags": [
+      "relief",
+      "stillness",
+      "exhaustion",
+      "respite",
+      "tenderness"
+    ],
+    "timestamp": "2026-04-28T22:19:10.8289999Z"
+  },
+  {
+    "id": "019dd62c",
+    "beat_index": 4,
+    "type": "departure",
+    "summary": "Kyle pays and leaves the stall without saying goodbye, in keeping with the unspoken terms of the arrangement.",
+    "participants": [
+      "Kyle",
+      "Mrs. Chen"
+    ],
+    "location": "Mrs. Chen\u0027s stall, Gray Zone",
+    "object": "",
+    "consequence": "Reinforces the specific social contract of continuity and non-acknowledgment that defines this relationship",
+    "emotional_weight": 4,
+    "tags": [
+      "routine",
+      "continuity",
+      "mercy",
+      "silence",
+      "ritual"
+    ],
+    "timestamp": "2026-04-28T22:19:10.8290049Z"
+  },
+  {
+    "id": "019dd62c",
+    "beat_index": 4,
+    "type": "arrival",
+    "summary": "Kyle walks the four blocks and arrives at The Pivot, climbing the stairs to 2F.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "The Pivot, 2F",
+    "object": "freelancer cart, receipt strip",
+    "consequence": "Kyle returns to base; the NeoCortex metabolism flag clears as the hardware registers the meal",
+    "emotional_weight": 2,
+    "tags": [
+      "routine",
+      "return",
+      "human-machine interface"
+    ],
+    "timestamp": "2026-04-28T22:19:10.8290053Z"
+  },
+  {
+    "id": "019dd62e",
+    "beat_index": 5,
+    "type": "discovery",
+    "summary": "The accounting reconciliation identifies an unrecovered route fee of \u03A631,000 tied to Kyle\u0027s authentication tag, generating a formal flag notation.",
+    "participants": [
+      "unnamed accountant",
+      "Kyle (Corbin-Vasik/Neo-A7)"
+    ],
+    "location": "accounting terminal",
+    "object": "authentication tag CORBIN-VASIK/NEO-A7",
+    "consequence": "Flag is routed up the chain, initiating a bureaucratic process that will lead to a recovery crew being dispatched against Kyle",
+    "emotional_weight": 6,
+    "tags": [
+      "surveillance",
+      "bureaucracy",
+      "identity",
+      "exposure",
+      "systemic threat"
+    ],
+    "timestamp": "2026-04-28T22:20:48.8300847Z"
+  },
+  {
+    "id": "019dd62e",
+    "beat_index": 5,
+    "type": "action",
+    "summary": "The \u03A631,000 flag passes through two intermediary desks without annotation and reaches the dispatch desk at twenty-two fourteen.",
+    "participants": [],
+    "location": "intermediary desks / dispatch desk",
+    "object": "flag notation",
+    "consequence": "Flag arrives at the desk with dispatch authority, enabling the takedown protocol to be triggered",
+    "emotional_weight": 3,
+    "tags": [
+      "bureaucracy",
+      "systemic threat",
+      "inevitability"
+    ],
+    "timestamp": "2026-04-28T22:20:48.8300853Z"
+  },
+  {
+    "id": "019dd62e",
+    "beat_index": 5,
+    "type": "action",
+    "summary": "Hua\u0027s certification number is used to authorize the crew dispatch form without her presence or knowledge.",
+    "participants": [
+      "Hua"
+    ],
+    "location": "dispatch desk",
+    "object": "authorization form",
+    "consequence": "A recovery crew is formally assigned and dispatched under Hua\u0027s authority, implicating her and sealing Kyle\u0027s fate",
+    "emotional_weight": 7,
+    "tags": [
+      "betrayal",
+      "identity theft",
+      "bureaucracy",
+      "complicity",
+      "systemic violence"
+    ],
+    "timestamp": "2026-04-28T22:20:48.8300859Z"
+  },
+  {
+    "id": "019dd62e",
+    "beat_index": 5,
+    "type": "decision",
+    "summary": "The terminal accepts the completed authorization form and transmits the crew assignment to a staging point eight blocks from The Pivot.",
+    "participants": [],
+    "location": "dispatch terminal",
+    "object": "crew assignment order",
+    "consequence": "A recovery crew is now en route or staged near Kyle\u0027s location, creating immediate physical danger",
+    "emotional_weight": 8,
+    "tags": [
+      "systemic threat",
+      "inevitability",
+      "violence",
+      "surveillance"
+    ],
+    "timestamp": "2026-04-28T22:20:48.8300861Z"
+  },
+  {
+    "id": "019dd62e",
+    "beat_index": 5,
+    "type": "departure",
+    "summary": "The recovery crew is dispatched at twenty-two twenty-one from a staging point eight blocks from The Pivot on Chicago Ave.",
+    "participants": [
+      "recovery crew"
+    ],
+    "location": "staging point near The Pivot, Chicago Ave",
+    "object": "",
+    "consequence": "The crew is minutes away from Kyle\u0027s location, making confrontation imminent",
+    "emotional_weight": 9,
+    "tags": [
+      "systemic violence",
+      "threat",
+      "inevitability",
+      "pursuit"
+    ],
+    "timestamp": "2026-04-28T22:20:48.8300863Z"
+  },
+  {
+    "id": "019dd630",
+    "beat_index": 6,
+    "type": "discovery",
+    "summary": "The NeoCortex detects four coordinated pressure signatures ascending the stairwell at 04:21:07, identifying them as armed, trained individuals.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "stairwell / Kyle\u0027s room",
+    "object": "NeoCortex",
+    "consequence": "Kyle is alerted to the incoming breach but lacks sufficient bio-battery charge to reach his katana in time.",
+    "emotional_weight": 6,
+    "tags": [
+      "threat detection",
+      "surveillance",
+      "vulnerability",
+      "technology"
+    ],
+    "timestamp": "2026-04-28T22:22:44.9966988Z"
+  },
+  {
+    "id": "019dd630",
+    "beat_index": 6,
+    "type": "conflict",
+    "summary": "Four armed individuals breach Kyle\u0027s door using a shock-baton and electromag pulse, plunging the corridor into darkness.",
+    "participants": [
+      "Kyle",
+      "unknown assailants"
+    ],
+    "location": "Kyle\u0027s room / corridor",
+    "object": "shock-baton, electromag pulse device",
+    "consequence": "Kyle is disoriented and unable to mount a defense; the breach succeeds.",
+    "emotional_weight": 7,
+    "tags": [
+      "violence",
+      "ambush",
+      "power",
+      "vulnerability"
+    ],
+    "timestamp": "2026-04-28T22:22:44.9966998Z"
+  },
+  {
+    "id": "019dd630",
+    "beat_index": 6,
+    "type": "injury",
+    "summary": "Kyle is struck twice with a shock-baton \u2014 first at the chrome bracket in his jaw, then a second blow that puts him on the floor.",
+    "participants": [
+      "Kyle",
+      "unknown assailants"
+    ],
+    "location": "Kyle\u0027s room",
+    "object": "shock-baton",
+    "consequence": "Kyle is incapacitated and unable to resist capture; the NeoCortex logs the injury clinically.",
+    "emotional_weight": 6,
+    "tags": [
+      "violence",
+      "injury",
+      "helplessness",
+      "technology"
+    ],
+    "timestamp": "2026-04-28T22:22:44.9967001Z"
+  },
+  {
+    "id": "019dd630",
+    "beat_index": 6,
+    "type": "action",
+    "summary": "The assailants hood Kyle and carry him down twenty-two stairs out of the building.",
+    "participants": [
+      "Kyle",
+      "unknown assailants"
+    ],
+    "location": "stairwell",
+    "object": "hood",
+    "consequence": "Kyle is removed from his room, leaving the katana behind and the cold-chain receipt still on his person.",
+    "emotional_weight": 5,
+    "tags": [
+      "capture",
+      "abduction",
+      "competence",
+      "powerlessness"
+    ],
+    "timestamp": "2026-04-28T22:22:44.9967011Z"
+  },
+  {
+    "id": "019dd630",
+    "beat_index": 6,
+    "type": "arrival",
+    "summary": "Kyle is brought to the south-arm chamber of the Cruciform Depot and bound to a steel chair with his wrists behind his back.",
+    "participants": [
+      "Kyle",
+      "unknown assailants"
+    ],
+    "location": "Cruciform Depot, south-arm chamber",
+    "object": "restraints, steel chair",
+    "consequence": "Kyle is fully captured in a location the NeoCortex assesses as having no favorable exits.",
+    "emotional_weight": 7,
+    "tags": [
+      "captivity",
+      "helplessness",
+      "threat",
+      "confinement"
+    ],
+    "timestamp": "2026-04-28T22:22:44.9967014Z"
+  },
+  {
+    "id": "019dd630",
+    "beat_index": 6,
+    "type": "discovery",
+    "summary": "Kyle\u0027s hood is removed and he observes a juvenile crocodile sleeping on a heat rock in the chamber.",
+    "participants": [
+      "Kyle"
+    ],
+    "location": "Cruciform Depot, south-arm chamber",
+    "object": "juvenile crocodile, heat rock, lamp",
+    "consequence": "The crocodile\u0027s presence signals something deliberate and unsettling about whoever controls this space.",
+    "emotional_weight": 5,
+    "tags": [
+      "unease",
+      "strangeness",
+      "power",
+      "patience",
+      "symbolism"
+    ],
+    "timestamp": "2026-04-28T22:22:44.9967016Z"
+  },
+  {
+    "id": "019dd631",
+    "beat_index": 7,
+    "type": "action",
+    "summary": "The reviewer opened consignment 0431-A at 04:38 and processed the Shen Pharmaceuticals pharmaceutical transit case.",
+    "participants": [
+      "the reviewer"
+    ],
+    "location": "customs processing station eleven",
+    "object": "consignment 0431-A",
+    "consequence": "initiates the chain of events leading to the regulatory hold being lifted",
+    "emotional_weight": 3,
+    "tags": [
+      "routine",
+      "bureaucracy",
+      "complicity"
+    ],
+    "timestamp": "2026-04-28T22:24:25.5145531Z"
+  },
+  {
+    "id": "019dd631",
+    "beat_index": 7,
+    "type": "decision",
+    "summary": "The reviewer paused at the authentication tag CORBIN-VASIK/NEO-A7 but chose to continue processing the case despite her instinctive hesitation.",
+    "participants": [
+      "the reviewer"
+    ],
+    "location": "customs processing station eleven",
+    "object": "chain-of-custody authentication tag",
+    "consequence": "her decision to override her instinct enables the fraudulent or criminal transaction to proceed",
+    "emotional_weight": 7,
+    "tags": [
+      "complicity",
+      "moral compromise",
+      "doubt",
+      "bureaucracy",
+      "suppression"
+    ],
+    "timestamp": "2026-04-28T22:24:25.5145545Z"
+  },
+  {
+    "id": "019dd631",
+    "beat_index": 7,
+    "type": "action",
+    "summary": "The reviewer clicked clear on consignment 0431-A, approving the release.",
+    "participants": [
+      "the reviewer"
+    ],
+    "location": "customs processing station eleven",
+    "object": "consignment 0431-A",
+    "consequence": "lifts the regulatory hold and triggers the automated financial settlement chain",
+    "emotional_weight": 6,
+    "tags": [
+      "complicity",
+      "bureaucracy",
+      "moral compromise",
+      "irreversibility"
+    ],
+    "timestamp": "2026-04-28T22:24:25.5145553Z"
+  },
+  {
+    "id": "019dd631",
+    "beat_index": 7,
+    "type": "action",
+    "summary": "The regulatory hold lifted and the buyer\u0027s banking system initiated a financial handshake one second after clearance.",
+    "participants": [],
+    "location": "inter-bank settlement layer",
+    "object": "carrier-level transaction",
+    "consequence": "sets a nine-hour settlement clock in motion, locking in the transaction",
+    "emotional_weight": 4,
+    "tags": [
+      "automation",
+      "irreversibility",
+      "systemic indifference"
+    ],
+    "timestamp": "2026-04-28T22:24:25.5145554Z"
+  },
+  {
+    "id": "019dd631",
+    "beat_index": 7,
+    "type": "revelation",
+    "summary": "It is revealed that the carrier whose authentication tag authorized the transaction is imprisoned in a concrete room with bound wrists and a crocodile nearby.",
+    "participants": [
+      "the carrier"
+    ],
+    "location": "concrete room",
+    "object": "",
+    "consequence": "recontextualizes the cleared transaction as fraudulent or coerced, raising stakes for all parties",
+    "emotional_weight": 9,
+    "tags": [
+      "captivity",
+      "coercion",
+      "danger",
+      "violence",
+      "fraud",
+      "dramatic irony"
+    ],
+    "timestamp": "2026-04-28T22:24:25.5145557Z"
+  },
+  {
+    "id": "019dd631",
+    "beat_index": 7,
+    "type": "departure",
+    "summary": "The reviewer left the terminal and walked out of the station before the queue advanced to the next case.",
+    "participants": [
+      "the reviewer"
+    ],
+    "location": "customs processing station eleven",
+    "object": "",
+    "consequence": "abandons her post mid-queue, leaving case forty unreviewed and distancing herself from what she has done",
+    "emotional_weight": 5,
+    "tags": [
+      "avoidance",
+      "complicity",
+      "guilt",
+      "routine",
+      "escape"
+    ],
+    "timestamp": "2026-04-28T22:24:25.5145559Z"
+  }
+]

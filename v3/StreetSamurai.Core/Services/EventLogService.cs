@@ -193,7 +193,7 @@ public class EventLogService
     }
 
     private string GetLogPath(string projectId) =>
-        StoryFolderHelper.GetFilePath(paths.StoriesDir, projectId, "events.json");
+        StoryFolderHelper.GetFilePath(paths.ChaptersDir, projectId, "events.json");
 }
 
 /// <summary>A discrete narrative event — something that HAPPENED in the story.</summary>

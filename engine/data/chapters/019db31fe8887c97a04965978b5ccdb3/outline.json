@@ -1,0 +1,428 @@
+{
+  "title": "Street Meat",
+  "logline": "A freelance enforcer hired to extract a compromised researcher from a Ferrogate lab discovers the target is not who his fixer claimed — and that the facility is a mirror of the one that made him.",
+  "theme": "A code of protection is only meaningful when it costs you something you cannot afford to lose.",
+  "premise": "USER-SUPPLIED SYNOPSIS (this is the story the user asked for — honor its premise, characters, and direction): Kyle is hired to extract a compromised ELF researcher from a Ferrogate lab before sunrise, but the target isn't who the fixer said they were. Kyle sneaks into the facility by stopping his own heart with his katana 's shock, he is wheeled in as a cadaver, \"Street Meat\" one of the technicians says, and when he wakes up his mission begins\n\nIMPORTANT: GLMZ is a dangerous world. This story MUST include at least one battle/combat/violent conflict scene. Random crime and violence can erupt at any time. Include at least one beat specifically tagged for combat.",
+  "characters": [
+    "Kyle Ellen Corbin-Vasik",
+    "Sable",
+    "Chen Wei-Lin"
+  ],
+  "acts": [
+    {
+      "act_number": 1,
+      "name": "The Arrangement",
+      "purpose": "Establish Kyle's world, his code, his hardware's fragility, and the contract that will crack all three open.",
+      "beats": [
+        {
+          "beat_index": 1,
+          "title": "Opening Image — Street Meat",
+          "goal": "Kyle sits at Mrs. Chen's counter at 0300, eating before a job. The broth steams. His stabilizer dose is two hours early — the hardware has been skipping. He counts her augmentations out of habit: zero. He has done this every morning for four years. The Gray Zone hums outside. Rain on tin roofs. Everything is in its place.",
+          "characters_present": [
+            "Kyle Ellen Corbin-Vasik",
+            "Chen Wei-Lin"
+          ],
+          "location": "Mrs. Chen's noodle shop, Gray Zone",
+          "emotional_arc": "Grounded familiarity shading into unease — the reader feels the routine as armor, and senses the armor is thin",
+          "stakes": "Kyle's equilibrium — the careful architecture of habit that keeps him functional",
+          "seeds": [
+            "Kyle's stabilizer dose is increasing — logged in the analog notebook, never discussed",
+            "Mrs. Chen adds extra protein without comment — he came in limping three days ago",
+            "Kyle checks the katana edge under the counter, one finger along the flat, while Mrs. Chen's back is turned — prayer disguised as maintenance",
+            "Mrs. Chen calls him 'xiao gui' when she sets the bowl down. He doesn't react. He always hears it."
+          ],
+          "payoffs": [],
+          "facet_hint": "ghost",
+          "tension": 3,
+          "structure_role": "Opening Image",
+          "scene_type": "sequel"
+        },
+        {
+          "beat_index": 2,
+          "title": "Theme Stated — 'The Broth Doesn't Care'",
+          "goal": "Mrs. Chen, wiping the counter without looking at him, says: 'You know what the difference is between my broth and that man's broth?' She means Uncle Noodle, her rival two blocks over. 'Mine costs me something every day. His is just formula.' She isn't talking about noodles. Kyle hears it as craft. He doesn't hear what she's actually saying about cost and code and whether discipline without sacrifice is just performance.",
+          "characters_present": [
+            "Kyle Ellen Corbin-Vasik",
+            "Chen Wei-Lin"
+          ],
+          "location": "Mrs. Chen's noodle shop, Gray Zone",
+          "emotional_arc": "Warmth with an undertone the reader catches before Kyle does — dramatic irony beginning",
+          "stakes": "The thematic question is planted: is Kyle's code genuine service, or is it formula dressed as honor?",
+          "seeds": [
+            "Mrs. Chen's oblique comment about cost — will resonate when Kyle must choose between the contract and the truth",
+            "Uncle Noodle's bowl of soup left at the corner every morning — Mrs. Chen has never acknowledged it. Kyle has seen it. He has never mentioned it either.",
+            "Mrs. Chen's hands — scarred along the knuckles in a pattern Kyle has catalogued but never asked about. Old work. Not kitchen work."
+          ],
+          "payoffs": [],
+          "facet_hint": "ideal",
+          "tension": 3,
+          "structure_role": "Theme Stated",
+          "scene_type": "sequel"
+        },
+        {
+          "beat_index": 3,
+          "title": "Debate — 'The Odds Are What They Are'",
+          "goal": "Sable contacts Kyle through a dead-drop relay — a message in a cracked-screen terminal in the back of a Gray Zone parts shop. The contract: extract Dr. Yuna Ferreira, an ELF researcher at Ferrogate BioSystems' secondary facility in the Meridian Core buffer zone, before sunrise. Φ18,000. Sable's voice through the speaker has the metallic resonance of the chrome jaw even through compression. 'She's been flagged internally. They'll move her to a secure wing at 0600. After that, she's a closed file.' Kyle asks one question: 'Who flagged her?' Sable pauses — the jaw recalibrating, or something else. 'Client didn't say. Odds are acceptable. I wouldn't send it if they weren't.' Kyle sits with the terminal for forty seconds. The hardware catalogues reasons not to take it: facility infiltration, no floor plan, solo extraction, dawn window. The code catalogues one reason to take it: someone will be disappeared by 0600 if he doesn't.",
+          "characters_present": [
+            "Kyle Ellen Corbin-Vasik",
+            "Sable"
+          ],
+          "location": "Gray Zone parts shop back room / Sable's current back room (remote contact)",
+          "emotional_arc": "Tension building through restraint — Kyle's deliberation feels like watching a man stand at the edge of something",
+          "stakes": "The contract itself; Kyle's hardware stability on a high-stress infiltration; the unnamed researcher's life",
+          "seeds": [
+            "Sable's pause when Kyle asks who flagged Ferreira — she knows more than she disclosed",
+            "Kyle accepts without asking for a floor plan — the code overrides caution",
+            "The Ferrogate facility is in the buffer zone between Axiom and Helix territories — neither corponation officially controls it",
+            "Φ18,000 — more than Sable usually quotes. The risk premium is already factored in. Kyle notices this and says nothing."
+          ],
+          "payoffs": [],
+          "facet_hint": "wound",
+          "tension": 5,
+          "structure_role": "Catalyst",
+          "scene_type": "scene"
+        },
+        {
+          "beat_index": 4,
+          "title": "B Story — 'The Neighbor Knocks'",
+          "goal": "Kyle returns to his apartment in the Gray Zone to prep. Pixel knocks — she has a scanner she wants to run on his NeoCortex array before he goes anywhere. 'Your delta-sync was off by eleven percent last calibration. That was two weeks ago. I'm not asking.' She's seventeen and she uses the tone of someone twice that. Kyle lets her in. She works in silence — the scanner pressed to the base of his skull, her augmented eyes reading data he can't access himself. She tells him the electrode array has three nodes showing thermal stress markers. She does not tell him what that means long-term because she doesn't have to. He already knows. He thanks her. She tells him he owes her Φ40 for the calibration. He pays her Φ60. Neither of them mentions the difference.",
+          "characters_present": [
+            "Kyle Ellen Corbin-Vasik",
+            "Pixel"
+          ],
+          "location": "Kyle's apartment, Unit 2F, Gray Zone residential block",
+          "emotional_arc": "Quiet intimacy that neither character will name — the reader feels the weight of what is not said",
+          "stakes": "Kyle's hardware is degrading faster than stabilizers can compensate — the infiltration may accelerate the process",
+          "seeds": [
+            "Three nodes with thermal stress markers — structural foreshadowing of hardware failure under duress",
+            "Pixel's calibration data — she has a baseline record of his array. This will matter.",
+            "Kyle pays Φ60 for a Φ40 job — a small act of care he disguises as rounding error",
+            "Pixel tells him: 'If the delta-sync drops past eight percent variance, you'll start losing the boundary between your signal and the bleed.' Kyle files this under 'the hardware' and does not examine it."
+          ],
+          "payoffs": [],
+          "facet_hint": "shadow",
+          "tension": 4,
+          "structure_role": "B Story",
+          "scene_type": "sequel"
+        }
+      ]
+    },
+    {
+      "act_number": 2,
+      "name": "The Facility",
+      "purpose": "Kyle infiltrates Ferrogate, discovers the target's true identity, and confronts the mirror of his own origin — while the hardware and the code both begin to fail him.",
+      "beats": [
+        {
+          "beat_index": 5,
+          "title": "Fun and Games — 'Cadaver Intake, Bay Three'",
+          "goal": "Kyle's infiltration method: he uses the katana's piezoelectric discharge function at minimum yield against his own sternum — a precise, controlled cardiac interruption lasting forty-five seconds. He has calculated the window. He has done this once before, under different circumstances, and he does not think about those circumstances. He is loaded onto a Gray Zone body transport — one of the unclaimed dead that Ferrogate BioSystems purchases weekly for tissue research — and wheeled through the service entrance. A technician with a Helix subcontractor badge looks at the manifest and says, without looking up: 'Street meat. Bay three.' Kyle is conscious enough to hear it. He catalogs the voice, the badge number, the cadence. When his heart restarts — the hardware managing the arrhythmia correction with clinical precision — he is alone in a cold storage anteroom. He sits up. Counts his heartbeats until they regularize. The room smells of preservative and recycled air. He knows this smell.",
+          "characters_present": [
+            "Kyle Ellen Corbin-Vasik"
+          ],
+          "location": "Ferrogate BioSystems secondary facility, service entrance and cadaver intake bay, Meridian Core buffer zone",
+          "emotional_arc": "Dark exhilaration — the audacity of the method lands as grim comedy before the weight arrives; the reader is getting the premise's promise",
+          "stakes": "Kyle's life — the cardiac interruption has a margin of error he has chosen not to calculate precisely",
+          "seeds": [
+            "Kyle knows the smell of the facility — preservative, recycled air, a specific electromagnetic hum. He has smelled it before. He does not follow this thought.",
+            "The technician's 'street meat' — will echo at the climax when Kyle must decide what that phrase means about the facility's purpose",
+            "The Helix subcontractor badge — Ferrogate is not operating independently",
+            "The hardware manages the arrhythmia correction. Kyle notes it did so faster than he expected. The hardware is adapting. He does not know if that is good."
+          ],
+          "payoffs": [],
+          "facet_hint": "mask",
+          "tension": 6,
+          "structure_role": "Fun and Games",
+          "scene_type": "scene"
+        },
+        {
+          "beat_index": 6,
+          "title": "Fun and Games — 'The Floor Plan Is Always Wrong'",
+          "goal": "Kyle moves through the facility's lower levels — maintenance corridors, camera dead zones he maps in real time using the hardware's spatial modeling. He neutralizes two security contractors with nerve strikes and joint locks, leaving them breathing and zip-tied to a coolant pipe. He finds the research wing. He finds the cell designated for Dr. Yuna Ferreira. He opens it. The person inside is not a researcher. She is nineteen, maybe twenty. She has a NeoCortex array at the base of her skull — fully integrated, insertion port long healed, the chrome leads buried under grown-in hair under skin that hasn't finished closing. She looks at Kyle with the particular stillness of someone who has learned not to react to strangers entering rooms. He knows that stillness. He was that stillness.",
+          "characters_present": [
+            "Kyle Ellen Corbin-Vasik"
+          ],
+          "location": "Ferrogate BioSystems research wing, sub-level two",
+          "emotional_arc": "The promise of a clean extraction collapses into something much heavier — the reader feels the floor drop",
+          "stakes": "The contract is now a lie; Sasha is now the mission; Kyle's code activates in a way that overrides every other calculation",
+          "seeds": [
+            "Sasha's NeoCortex scar — the same program, the same hardware, a new subject",
+            "Sasha's stillness — Kyle recognizes it as the learned behavior of a facility survivor. He does not say this aloud.",
+            "The facility layout matches a configuration Kyle has seen before — not from this contract. From somewhere else. He does not follow this thought yet.",
+            "Sasha's name, which she gives him after a long silence: 'They call me Sasha.'"
+          ],
+          "payoffs": [
+            "The Ferrogate facility is not an ELF research lab — it is a NeoCortex program continuation site, the same program that made Kyle"
+          ],
+          "facet_hint": "wound",
+          "tension": 7,
+          "structure_role": "Fun and Games",
+          "scene_type": "scene"
+        },
+        {
+          "beat_index": 7,
+          "title": "Midpoint — 'The Hardware Recognizes the Architecture'",
+          "goal": "Kyle gets Sasha moving toward the extraction route. Then the hardware does something it has never done before: it overlays a spatial memory onto the current floor plan — a memory that is not his. Corridors he has never walked, mapped with the precision of someone who knew this building. One of the dead test subjects knew this facility. The bleed is not random noise — it is navigation data. Kyle stops walking. Sasha watches him. The overlay shows a route to a server room on sub-level one. The dead subject's memory insists on it. Kyle understands, with a cold clarity that is entirely his own: the facility has records. Subject files. His file. Evidence of who is still funding this program. He has two choices. He can take Sasha out the way he came. Or he can go to the server room, get the evidence, and give someone — Sable, a journalist, anyone — the information that could shut this down. Going to the server room will cost him the extraction window. It might cost Sasha her life if security resets. The code says protect the vulnerable. Sasha is in front of him. The dead subjects are in his head, insisting.",
+          "characters_present": [
+            "Kyle Ellen Corbin-Vasik"
+          ],
+          "location": "Ferrogate BioSystems research wing corridor, sub-level two",
+          "emotional_arc": "False peak — Kyle has Sasha, has the route, seems to be winning; the memory bleed reveals a larger prize that complicates everything and raises the moral stakes to their highest point so far",
+          "stakes": "Sasha's safety versus evidence that could stop the program permanently; Kyle's fear that his escape was engineered is now directly testable",
+          "seeds": [
+            "The dead subject's navigational memory — someone died knowing this building, and that knowledge is now Kyle's only map to the truth",
+            "Kyle's core fear surfaces for the first time in the narrative: was his own escape genuine, or a field test? If the records exist, they would answer this.",
+            "Sasha watches Kyle's stillness during the bleed episode with recognition, not fear — she has seen this before. In herself.",
+            "Kyle chooses Sasha. He takes the extraction route. He does not go to the server room. He tells himself this is the code. The hardware disagrees."
+          ],
+          "payoffs": [],
+          "facet_hint": "ghost",
+          "tension": 8,
+          "structure_role": "Midpoint",
+          "scene_type": "sequel"
+        },
+        {
+          "beat_index": 8,
+          "title": "Bad Guys Close In — 'Asset Recovery'",
+          "goal": "Security has found the zip-tied contractors. The facility goes to containment protocol — a lockdown that seals the service entrance and reroutes all cadaver transport. Kyle's extraction route is closed. He has Sasha, a katana, and a hardware array running at thermal stress levels Pixel told him to avoid. Three Ferrogate security contractors — all augmented, Tier 2 combat chassis, coordinated through a shared tactical feed — corner them in the maintenance corridor. Kyle fights. It is not clean. He takes a hit to the shoulder from a piezoelectric disruption baton that the hardware partially absorbs and partially routes incorrectly — the feedback causes a micro-seizure, three seconds of lost time, during which Sasha drags him behind a coolant conduit by his jacket collar. When he comes back, one contractor is already down — he has no memory of how. The other two are recalibrating. He finishes the fight with controlled, methodical precision, but the cold technical quality of it frightens him more than the pain. The weapon ran while the man was absent. Sasha watches him come back to himself and says nothing. She is still not afraid of him. He doesn't know what to do with that.",
+          "characters_present": [
+            "Kyle Ellen Corbin-Vasik"
+          ],
+          "location": "Ferrogate BioSystems maintenance corridor, sub-level one",
+          "emotional_arc": "Visceral combat tension cut with horror — not at the enemy, but at Kyle's own dissociation; the reader feels the gap between the weapon and the man",
+          "stakes": "Kyle's physical survival; Sasha's extraction; Kyle's core fear that the hardware is erasing the distinction between him and the facility that made him",
+          "seeds": [
+            "The three-second gap — Kyle does not know what he did during the seizure. Sasha does. She will not tell him unless he asks directly.",
+            "Sasha calling him back by his jacket collar — a child protecting the man sent to protect her",
+            "The hardware routed the baton's feedback incorrectly — the thermal stress markers Pixel flagged are now active failures",
+            "Kyle's shoulder wound — he will not mention it to Mrs. Chen. She will add extra protein to his bowl anyway."
+          ],
+          "payoffs": [
+            "Pixel's warning about delta-sync variance and signal bleed — it arrives exactly as predicted, during the worst possible moment"
+          ],
+          "facet_hint": "shadow",
+          "tension": 9,
+          "structure_role": "Bad Guys Close In",
+          "scene_type": "scene"
+        },
+        {
+          "beat_index": 9,
+          "title": "All Is Lost — 'The Manifest'",
+          "goal": "Kyle finds an alternate exit — a loading dock used for outbound tissue shipments. It will work. He is three minutes from getting Sasha out. Then his hardware, rerouting around the damaged nodes, pulls a data fragment from the facility's local broadcast network — an administrative signal it was never meant to intercept. A manifest. Current active subjects: fourteen. Age range: eight to fifteen. Subject designations: the tissue-match catalog. Sasha is on the list. So is a name Kyle recognizes — not a subject number. A name. Dae-jung Seo. Not as a subject. As a program consultant. Deceased — the file is closed — but the contribution record is dated during the years Kyle knew him. The man who gave Kyle the code, the blade, the purpose, helped design the program that put the electrodes in Kyle's skull. The hardware goes very quiet. The boy from the Grind disappears. Kyle stands at the loading dock with Sasha's hand in his and cannot move.",
+          "characters_present": [
+            "Kyle Ellen Corbin-Vasik"
+          ],
+          "location": "Ferrogate BioSystems loading dock, sub-level one",
+          "emotional_arc": "Devastating — the reader has been given everything needed to feel this loss fully; the foundation of Kyle's identity collapses",
+          "stakes": "Kyle's entire framework — his code, his purpose, his grief, the blade he maintains as prayer — all rest on Seo being what he believed him to be",
+          "seeds": [
+            "Seo's name on the manifest — the mentor's complicity is now documented fact, not suspicion",
+            "Fourteen active subjects — Sasha is not the only one. Kyle extracted one. Thirteen remain.",
+            "Sasha still has her hand in his. She has not let go. Kyle is aware of this in a way that is not tactical.",
+            "The blade at Kyle's hip is Seo's blade. He has maintained it every morning as prayer. The prayer has become a question."
+          ],
+          "payoffs": [
+            "Kyle's core fear — that the facility is still operating and he could stop it — is confirmed and complicated simultaneously",
+            "Mrs. Chen's secret — she knew Seo's unit operated in the corridor where her son died — gains new, terrible weight in retrospect"
+          ],
+          "facet_hint": "wound",
+          "tension": 9,
+          "structure_role": "All Is Lost",
+          "scene_type": "scene"
+        },
+        {
+          "beat_index": 10,
+          "title": "Dark Night of the Soul — 'The Sound of Breathing'",
+          "goal": "Kyle gets Sasha out. They are in the loading dock's exterior alcove — pre-dawn, rain coming down in the redirected sheets that mean the atmospheric processors are running a Meridian Core flush. Sasha sits against the wall. Kyle sits next to her. He does not move for four minutes. The hardware is quiet — not processing, not cataloguing, just running. Sasha breathes. He listens to it. She asks him, after a long time: 'Did you know someone here?' He says yes. She asks if they were good. He says he thought so. She says: 'Sasha was good too. Before.' He doesn't ask what she means. He knows what she means. He looks at the blade across his knees — the blade Seo gave him, the blade he has maintained as a promise to a man who may have been the architect of his damage. He does not put it down. He does not know yet whether keeping it is forgiveness or stupidity or something that doesn't have a name. But Sasha is breathing next to him and that is a fact the hardware cannot complicate.",
+          "characters_present": [
+            "Kyle Ellen Corbin-Vasik"
+          ],
+          "location": "Ferrogate BioSystems loading dock exterior alcove, Meridian Core buffer zone",
+          "emotional_arc": "Quiet devastation followed by the first fragile movement toward something — not resolution, but the decision to keep moving",
+          "stakes": "Whether Kyle can function after the collapse of his foundational myth; whether he will choose paralysis or action for the thirteen remaining subjects",
+          "seeds": [
+            "Sasha's 'before' — she had a life before the facility. So did Kyle. The parallel is the decision.",
+            "Kyle does not put the blade down — ambiguous, unresolved, intentional",
+            "The thirteen remaining subjects — Kyle has not forgotten them. He is deciding what to do about them.",
+            "Kyle contacts Sable through his hardware's encrypted relay. He does not explain. He says: 'I need the server room data. I need a journalist. I need you to tell me everything you know about who hired this contract.' Sable is silent for three seconds. Then: 'The odds just changed.' 'I know.' 'I'm already moving.'"
+          ],
+          "payoffs": [],
+          "facet_hint": "ideal",
+          "tension": 2,
+          "structure_role": "Dark Night of the Soul",
+          "scene_type": "sequel"
+        }
+      ]
+    },
+    {
+      "act_number": 3,
+      "name": "The Cost",
+      "purpose": "Kyle acts on incomplete information, pays a real price, and arrives at a resolution that is honest rather than clean.",
+      "beats": [
+        {
+          "beat_index": 11,
+          "title": "Finale — 'The Server Room Is Always Sub-Level One'",
+          "goal": "Kyle leaves Sasha with a Gray Zone contact two blocks from the facility — a woman who owes him a debt, who will not ask questions, who has a locked room and food. He goes back in. The dead subject's navigational memory leads him to the server room with a precision that should be terrifying and is instead the most functional thing the bleed has ever done for him. Sable, working remotely through a cracked Ferrogate maintenance terminal she accessed through channels she will never explain, kills the server room's local security loop for ninety seconds. Kyle gets in. He pulls the drive. He also pulls the active subject manifest — all fourteen files, including his own. He reads three lines of his own file before the hardware does something unprecedented: it refuses to process the rest. Some boundary he did not know he had. He closes the file. He takes the drive. He walks out through the service entrance — the same door he was wheeled through as street meat — and into the pre-dawn rain. Sable's voice in his relay: 'The journalist is Meridian Free Press. They're expecting the package. Kyle.' A pause. The jaw recalibrating, or something else. 'The client who hired this contract was Axiom Industries. The researcher cover was their internal compliance team. They were trying to retrieve a subject they'd lost track of. Sasha is listed as Axiom property.' Kyle stops walking in the rain. 'She's not.' 'No,' Sable says. 'She's not.' Neither of them says anything else. The chrome jaw goes still. Kyle walks.",
+          "characters_present": [
+            "Kyle Ellen Corbin-Vasik",
+            "Sable"
+          ],
+          "location": "Ferrogate BioSystems server room / service entrance / Meridian Core buffer zone exterior",
+          "emotional_arc": "Controlled urgency resolving into something colder and more purposeful than triumph — the reader feels the weight of what has been spent",
+          "stakes": "The evidence that could expose the program; the thirteen remaining subjects; Kyle's decision about what the blade means now; Sable's implicit choice to help beyond the contract",
+          "seeds": [],
+          "payoffs": [
+            "The dead subject's navigational memory — it was never random noise. It was someone who died trying to get out, leaving directions.",
+            "Sable's pause when Kyle asked who flagged Ferreira — she suspected Axiom. She sent the contract anyway. She is now deciding if that makes her complicit.",
+            "Kyle's core fear about whether his escape was engineered — his own file exists. He did not read it. This is its own kind of answer: he is choosing not to know, which is different from being afraid to know.",
+            "Sable's 'I won't lie about the odds' — she told Kyle the odds were acceptable. They weren't. This is the first time she has been wrong about that in four years. She will not say so. She will factor it differently next time.",
+            "Sasha listed as Axiom property — the empty wallet motif: a child with a Φ0.00 balance of personhood in a corporate ledger"
+          ],
+          "facet_hint": "ideal",
+          "tension": 9,
+          "structure_role": "Finale",
+          "scene_type": "scene"
+        },
+        {
+          "beat_index": 12,
+          "title": "Final Image — 'Extra Protein'",
+          "goal": "0530. Kyle sits at Mrs. Chen's counter. The broth is already steaming — she started it at 0300, the way she always does. He has Sasha with him. Sasha sits on the stool next to his and looks at the counter with the stillness of someone who has learned not to expect things. Mrs. Chen sets a bowl in front of Kyle without looking at him. Then she sets a second bowl in front of Sasha — thick-cut noodles, extra protein, no bean sprouts — the same bowl she makes for Kyle. She has never seen this woman before. She does not ask. She goes back to the counter and wipes it. Kyle looks at his bowl. He looks at the blade leaning against the counter leg — Seo's blade, the blade he has maintained as prayer, the prayer that is now a question that may never resolve. He picks up his chopsticks. Sasha picks up hers. Outside, the rain continues — the atmospheric processors running their Meridian Core flush, the redistribution falling on the Gray Zone the way it always does. The hardware is quiet. Somewhere in it, the dead subjects are quiet too. Kyle eats. It is not a clean morning. It is a morning anyway. Mrs. Chen calls Sasha 'xiao gui' when she refills the tea. Sasha looks up. It is the first time in the entire story that she looks surprised.",
+          "characters_present": [
+            "Kyle Ellen Corbin-Vasik",
+            "Chen Wei-Lin"
+          ],
+          "location": "Mrs. Chen's noodle shop, Gray Zone",
+          "emotional_arc": "Bittersweet resolution — grief and purpose coexisting, neither canceling the other; the reader feels the world has changed in a way that cannot be undone and is not entirely bad",
+          "stakes": "Whether Kyle's code was worth its cost; whether the world is different because he acted; whether Mrs. Chen's act of feeding is its own kind of samurai code",
+          "seeds": [],
+          "payoffs": [
+            "The Opening Image mirrored and changed — Kyle at the counter, but not alone; the routine has absorbed something new",
+            "Mrs. Chen's 'xiao gui' — she called Kyle this in beat one. She calls Sasha this now. The reader understands what it means.",
+            "Extra protein without comment — Mrs. Chen sees the shoulder wound and says nothing. The bowl says everything.",
+            "The blade leaning against the counter leg — not maintained this morning, not prayed over. Set aside. Not discarded. The question left open.",
+            "Mrs. Chen's theme stated in beat two: 'Mine costs me something every day.' Kyle's code cost him Seo's myth. The broth is still worth making.",
+            "Sasha's surprise at 'xiao gui' — the first crack in the facility stillness. Something in her recognizes that this is not a transaction."
+          ],
+          "facet_hint": "ideal",
+          "tension": 3,
+          "structure_role": "Final Image",
+          "scene_type": "sequel"
+        }
+      ]
+    }
+  ],
+  "character_arcs": [
+    {
+      "character": "Kyle Ellen Corbin-Vasik",
+      "want": "Complete the extraction contract, get the target out before sunrise, maintain the code",
+      "need": "To accept that the code's value is not in its purity but in what it costs him — and that a mentor's complicity does not erase the truth the mentor taught",
+      "start_state": "Functional, disciplined, operating on a code inherited from a man he has never questioned — the hardware degrading slowly, the myth intact",
+      "end_state": "The myth is gone. The code remains, tested and proven at real cost. He does not know yet what to do about the thirteen remaining subjects. He knows he will do something. He sits and eats and the hardware is quiet.",
+      "turning_point": "Reading three lines of his own facility file and choosing not to read the rest — not from fear, but from the recognition that who he is now is not determined by what they made him",
+      "cost": "Seo's myth — the foundational story of his identity. The blade remains but the prayer it represented is now a question he may never answer. The thirteen subjects he did not extract. The hardware damage from the facility that will require Pixel's calibration and may not be fully fixable."
+    },
+    {
+      "character": "Sable",
+      "want": "Broker the contract cleanly, maintain her reputation for accurate odds, protect her operational anonymity",
+      "need": "To acknowledge that her pragmatism has a moral cost — that 'asset management' is a word she uses to avoid knowing what she's managing",
+      "start_state": "Fully masked, fully transactional, believing she is different from Axiom because she pays fairly and discloses risks",
+      "end_state": "She got the odds wrong. She knew more than she disclosed. She helped anyway — not for the fee, which she will not collect on a botched contract, but for something she will not name. She is not different from Axiom in structure. She may be different in the choice she made at 0430 when Kyle called from a loading dock in the rain.",
+      "turning_point": "The moment she tells Kyle that Sasha is listed as Axiom property and then says 'She's not' — an editorial judgment that has no place in a purely transactional relationship",
+      "cost": "The Axiom relationship — taking this action against an Axiom contract will register somewhere. Someone will notice. The annual visit to the Meridian Core building will be more dangerous next year. She will go anyway."
+    },
+    {
+      "character": "Chen Wei-Lin",
+      "want": "Keep the shop open, keep her regulars fed, maintain the structure that holds her together",
+      "need": "To allow the family she has rebuilt in the Gray Zone to be named as such — to let the feeding be love, not just service",
+      "start_state": "Feeding Kyle without naming it, mourning Seo without naming it, carrying the possibility about Seo's unit and her son without naming it",
+      "end_state": "She sets a bowl in front of a child she has never seen and calls her 'xiao gui.' She does not name what she is doing. But Sasha looks surprised, and Mrs. Chen sees it, and she goes back to wiping the counter before the feeling can be examined. It is enough. It is more than enough.",
+      "turning_point": "Setting the bowl in front of Sasha — the same bowl she makes for Kyle, without being asked, without explanation, at 0530 before she knows anything about the night except that Kyle came in with a child who has a scar at the base of her skull",
+      "cost": "Nothing, this morning. The cost was paid years ago, in Taipei, and again the day she threw the photographs into the harbor. This morning is what the cost bought."
+    }
+  ],
+  "seeds_and_payoffs": [
+    {
+      "seed": "Kyle's stabilizer dose is increasing — logged in the analog notebook, never discussed",
+      "planted_in_beat": 1,
+      "payoff": "The hardware routes the baton's piezoelectric feedback incorrectly during the combat beat — the thermal stress markers become active failures, confirming the notebook's trajectory",
+      "payoff_in_beat": 8
+    },
+    {
+      "seed": "Mrs. Chen's oblique comment about cost — 'Mine costs me something every day'",
+      "planted_in_beat": 2,
+      "payoff": "Kyle's code costs him Seo's myth — the foundational story of his identity. The broth is still worth making. The theme resolves through action, not speech.",
+      "payoff_in_beat": 12
+    },
+    {
+      "seed": "Sable's pause when Kyle asks who flagged Ferreira",
+      "planted_in_beat": 3,
+      "payoff": "Sable reveals that the client was Axiom Industries — she suspected this when Kyle asked, said nothing, and sent the contract anyway. The pause was the moment she chose not to disclose.",
+      "payoff_in_beat": 11
+    },
+    {
+      "seed": "Pixel's warning about delta-sync variance and signal bleed — 'you'll start losing the boundary between your signal and the bleed'",
+      "planted_in_beat": 4,
+      "payoff": "During the combat seizure, Kyle loses three seconds and the hardware runs autonomous threat response — exactly the boundary failure Pixel described",
+      "payoff_in_beat": 8
+    },
+    {
+      "seed": "The facility smell — preservative, recycled air, a specific electromagnetic hum that Kyle recognizes and does not follow",
+      "planted_in_beat": 5,
+      "payoff": "The dead subject's navigational memory of the facility confirms the connection — someone who died in a facility like this one left Kyle a map out of it",
+      "payoff_in_beat": 7
+    },
+    {
+      "seed": "Sasha's stillness — Kyle recognizes the learned behavior of a facility survivor",
+      "planted_in_beat": 6,
+      "payoff": "Sasha drags Kyle behind the coolant conduit during his seizure — the facility survivor protecting the man sent to protect her. The stillness was competence.",
+      "payoff_in_beat": 8
+    },
+    {
+      "seed": "The dead subject's navigational memory overlaying the current floor plan",
+      "planted_in_beat": 7,
+      "payoff": "The memory leads Kyle to the server room with precision — it was never random noise. Someone died knowing this building and left directions in the bleed.",
+      "payoff_in_beat": 11
+    },
+    {
+      "seed": "Seo's name on the program manifest as a deceased consultant",
+      "planted_in_beat": 9,
+      "payoff": "Kyle reads three lines of his own file and chooses not to read the rest — not from fear, but from the recognition that the mentor's complicity does not determine who Kyle is now. The blade remains. The prayer is now a question.",
+      "payoff_in_beat": 11
+    },
+    {
+      "seed": "Mrs. Chen's hands — scarred along the knuckles in a pattern Kyle has catalogued but never asked about. Old work. Not kitchen work.",
+      "planted_in_beat": 2,
+      "payoff": "Mrs. Chen sets a bowl in front of Sasha without hesitation — the hands that remember old work also remember what it means to be fed when you are not expected to survive. She does not explain. The hands already said it.",
+      "payoff_in_beat": 12
+    },
+    {
+      "seed": "Mrs. Chen calling Kyle 'xiao gui' when she sets the bowl down in beat one",
+      "planted_in_beat": 1,
+      "payoff": "Mrs. Chen calls Sasha 'xiao gui' when she refills the tea — Sasha looks surprised. It is the first crack in the facility stillness. The reader understands the weight of the word.",
+      "payoff_in_beat": 12
+    },
+    {
+      "seed": "Kyle pays Pixel Φ60 for a Φ40 calibration — disguised as rounding error",
+      "planted_in_beat": 4,
+      "payoff": "Kyle leaves Sasha with a Gray Zone contact who owes him a debt — the network of small, unremarkable care he has built through years of overpaying and underexplaining is the infrastructure that saves Sasha's life during the server room run",
+      "payoff_in_beat": 11
+    },
+    {
+      "seed": "Sable's code: 'I won't lie about the odds'",
+      "planted_in_beat": 3,
+      "payoff": "The odds were not acceptable — Sable knew more than she disclosed and sent the contract anyway. This is the first time in four years she has been wrong about the odds. She will not say so. She will factor it differently next time. The code bends. It does not break.",
+      "payoff_in_beat": 11
+    },
+    {
+      "seed": "Sasha listed as Axiom property on the active subject manifest",
+      "planted_in_beat": 9,
+      "payoff": "Sable says 'She's not' — an editorial judgment with no place in a purely transactional relationship. The chrome jaw animates for something other than a calculated purpose. This is the moment Sable's arc turns.",
+      "payoff_in_beat": 11
+    },
+    {
+      "seed": "The blade at Kyle's hip — Seo's blade, maintained every morning as prayer",
+      "planted_in_beat": 1,
+      "payoff": "The blade leans against the counter leg in the final image — not maintained this morning, not prayed over. Set aside. Not discarded. The question left open. The reader feels the difference between abandonment and suspension.",
+      "payoff_in_beat": 12
+    }
+  ]
+}

@@ -525,7 +525,7 @@ internal class RealDataPathProvider : IPathProvider
     public string WorldDir => Path.Combine(root, "world");
     public string EngineDataDir => engineData;
     public string MutableDataDir => engineData;
-    public string StoriesDir => Path.Combine(engineData, "stories");
+    public string ChaptersDir => Path.Combine(engineData, "chapters");
     public string BooksDir => Path.Combine(engineData, "books");
     public string SeriesDir => Path.Combine(engineData, "series");
     public string GraphDir => Path.Combine(engineData, "graph");

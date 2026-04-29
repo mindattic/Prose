@@ -1,0 +1,181 @@
+{
+  "project_id": "4553f4c6da5c4fe0acf572da970ca16b",
+  "character_knowledge": {
+    "Helix man": [
+      {
+        "fact": "An unnamed man (Helix representative) left the ward without obtaining what he came for.",
+        "learned_at_beat": 1,
+        "source": "participated"
+      }
+    ],
+    "Ambrosia": [
+      {
+        "fact": "Ambrosia received a contract at 02:11 \u2014 while the Helix man was still present \u2014 containing a patient symptom profile she recognized with disturbing familiarity.",
+        "learned_at_beat": 1,
+        "source": "participated"
+      },
+      {
+        "fact": "Ambrosia found that the referring physician Dr. Cassius Vael does not exist in any of four licensed physician databases she checked.",
+        "learned_at_beat": 1,
+        "source": "participated"
+      },
+      {
+        "fact": "Ambrosia documented all discrepancies meticulously and then accepted the contract anyway.",
+        "learned_at_beat": 1,
+        "source": "participated"
+      },
+      {
+        "fact": "Ambrosia arrived at Orsolya\u0027s shop in the Hamtramck Enclave in the early hours of the morning.",
+        "learned_at_beat": 1,
+        "source": "participated"
+      },
+      {
+        "fact": "Orsolya read Ambrosia\u0027s recent fear and exhaustion from her physical bearing and the state of her coat without being told anything.",
+        "learned_at_beat": 1,
+        "source": "participated"
+      },
+      {
+        "fact": "Orsolya identified Ambrosia as the person Dariusz called about, assessed her instrument case, and instructed her to sit so she could examine it.",
+        "learned_at_beat": 1,
+        "source": "participated"
+      },
+      {
+        "fact": "Orsolya repairs Ambrosia\u0027s instrument case and charges her forty Quanta without asking what it is for.",
+        "learned_at_beat": 2,
+        "source": "participated"
+      },
+      {
+        "fact": "Ambrosia boards the I-90 Vein maglev at 04:30 and travels ninety minutes toward the Ferrogate corridor.",
+        "learned_at_beat": 2,
+        "source": "participated"
+      },
+      {
+        "fact": "Ambrosia arrives at the decommissioned relay station and meets Milo.",
+        "learned_at_beat": 2,
+        "source": "participated"
+      },
+      {
+        "fact": "Milo tells Ambrosia his name, describes his symptoms \u2014 pressure behind his left ear, inaccessible information, false memories \u2014 and recounts receiving a clean bill of health from a Ferrogate contractor clinic eight months ago.",
+        "learned_at_beat": 2,
+        "source": "participated"
+      },
+      {
+        "fact": "Ambrosia\u0027s instruments confirm a dormant secondary neural interface in Milo, architecturally identical to a ghost implant she has been concealing in her records for three months.",
+        "learned_at_beat": 2,
+        "source": "participated"
+      },
+      {
+        "fact": "Ambrosia chooses to document the secondary interface in her private discrepancy file rather than report it through official channels, and notes that Milo is unaware of the implant.",
+        "learned_at_beat": 2,
+        "source": "participated"
+      }
+    ],
+    "Orsolya": [
+      {
+        "fact": "Ambrosia arrived at Orsolya\u0027s shop in the Hamtramck Enclave in the early hours of the morning.",
+        "learned_at_beat": 1,
+        "source": "participated"
+      },
+      {
+        "fact": "Orsolya read Ambrosia\u0027s recent fear and exhaustion from her physical bearing and the state of her coat without being told anything.",
+        "learned_at_beat": 1,
+        "source": "participated"
+      },
+      {
+        "fact": "Orsolya identified Ambrosia as the person Dariusz called about, assessed her instrument case, and instructed her to sit so she could examine it.",
+        "learned_at_beat": 1,
+        "source": "participated"
+      },
+      {
+        "fact": "Orsolya repairs Ambrosia\u0027s instrument case and charges her forty Quanta without asking what it is for.",
+        "learned_at_beat": 2,
+        "source": "participated"
+      }
+    ],
+    "Milo": [
+      {
+        "fact": "Ambrosia arrives at the decommissioned relay station and meets Milo.",
+        "learned_at_beat": 2,
+        "source": "participated"
+      },
+      {
+        "fact": "Milo tells Ambrosia his name, describes his symptoms \u2014 pressure behind his left ear, inaccessible information, false memories \u2014 and recounts receiving a clean bill of health from a Ferrogate contractor clinic eight months ago.",
+        "learned_at_beat": 2,
+        "source": "participated"
+      },
+      {
+        "fact": "Ambrosia\u0027s instruments confirm a dormant secondary neural interface in Milo, architecturally identical to a ghost implant she has been concealing in her records for three months.",
+        "learned_at_beat": 2,
+        "source": "participated"
+      }
+    ]
+  },
+  "reader_knowledge": [
+    {
+      "fact": "An unnamed man (Helix representative) left the ward without obtaining what he came for.",
+      "learned_at_beat": 1,
+      "source": "narration"
+    },
+    {
+      "fact": "Ambrosia received a contract at 02:11 \u2014 while the Helix man was still present \u2014 containing a patient symptom profile she recognized with disturbing familiarity.",
+      "learned_at_beat": 1,
+      "source": "narration"
+    },
+    {
+      "fact": "Ambrosia found that the referring physician Dr. Cassius Vael does not exist in any of four licensed physician databases she checked.",
+      "learned_at_beat": 1,
+      "source": "narration"
+    },
+    {
+      "fact": "Ambrosia documented all discrepancies meticulously and then accepted the contract anyway.",
+      "learned_at_beat": 1,
+      "source": "narration"
+    },
+    {
+      "fact": "Ambrosia arrived at Orsolya\u0027s shop in the Hamtramck Enclave in the early hours of the morning.",
+      "learned_at_beat": 1,
+      "source": "narration"
+    },
+    {
+      "fact": "Orsolya read Ambrosia\u0027s recent fear and exhaustion from her physical bearing and the state of her coat without being told anything.",
+      "learned_at_beat": 1,
+      "source": "narration"
+    },
+    {
+      "fact": "Orsolya identified Ambrosia as the person Dariusz called about, assessed her instrument case, and instructed her to sit so she could examine it.",
+      "learned_at_beat": 1,
+      "source": "narration"
+    },
+    {
+      "fact": "Orsolya repairs Ambrosia\u0027s instrument case and charges her forty Quanta without asking what it is for.",
+      "learned_at_beat": 2,
+      "source": "narration"
+    },
+    {
+      "fact": "Ambrosia boards the I-90 Vein maglev at 04:30 and travels ninety minutes toward the Ferrogate corridor.",
+      "learned_at_beat": 2,
+      "source": "narration"
+    },
+    {
+      "fact": "Ambrosia arrives at the decommissioned relay station and meets Milo.",
+      "learned_at_beat": 2,
+      "source": "narration"
+    },
+    {
+      "fact": "Milo tells Ambrosia his name, describes his symptoms \u2014 pressure behind his left ear, inaccessible information, false memories \u2014 and recounts receiving a clean bill of health from a Ferrogate contractor clinic eight months ago.",
+      "learned_at_beat": 2,
+      "source": "narration"
+    },
+    {
+      "fact": "Ambrosia\u0027s instruments confirm a dormant secondary neural interface in Milo, architecturally identical to a ghost implant she has been concealing in her records for three months.",
+      "learned_at_beat": 2,
+      "source": "narration"
+    },
+    {
+      "fact": "Ambrosia chooses to document the secondary interface in her private discrepancy file rather than report it through official channels, and notes that Milo is unaware of the implant.",
+      "learned_at_beat": 2,
+      "source": "narration"
+    }
+  ],
+  "secrets": []
+}

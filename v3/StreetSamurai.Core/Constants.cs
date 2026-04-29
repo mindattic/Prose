@@ -53,7 +53,7 @@ public static class Constants
     public static class Folders
     {
         public const string Engine = "engine";
-        public const string Stories = "stories";
+        public const string Chapters = "chapters";
         public const string Books = "books";
         public const string Series = "series";
         public const string Archives = "archives";
@@ -140,7 +140,7 @@ public static class Constants
             ("Gear", ["weaponry", "ammunition", "cyberware", "equipment", "apparel", "genemods", "pharmaceuticals"]),
             ("World", ["places", "transportation", "materials", "technology", "automata"]),
             ("Culture", ["documents", "quotes", "vocabulary", "news", "entertainment", "consumer_goods", "motifs"]),
-            ("Story", ["stories"]),
+            ("Chapter", ["chapters"]),
         ];
 
         /// <summary>Look up which group a repo belongs to.</summary>
